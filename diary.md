@@ -1,0 +1,169 @@
+# Diary
+
+## 2026
+
+### Tháng 06
+
+#### Ngày 17
+
+- **10:53**: càih https://github.com/sickn33/antigravity-awesome-skills.git vào trong này
+- **10:55**: ok hãy hoàn thiện
+- **10:56**: có
+- **11:05**: hãy nghiên cứu chuyên sâu Marketing về manifera.com và lập kế hoạch viết content trong 6 tháng cuối năm 2026 lưu ý các file là md và có cấu trúc Schema(có img để trống) và FAG. (cách làm tương tự như đã làm với LaunchStudio) và tất cả làm bằng tiếng Anh lưu vào folder manifera
+- **11:13**: hãy viết tiếp mỗi tháng là 60 bài viết/tháng (nếu tháng nào đã có bài viết chưa đủ thì viết mở rộng tiếp chp đủ 60 bài)
+- **11:17**: hãy sửa lại các tên theo số thứ tự đứng đầu từ 01- và dếm lên với các tháng còn lại trừ july-2026
+- **11:19**: hãy làm các file tổng hợp tương tự như các file của launchstudio : @[/Users/duyle/sickn33/launchstudio/case_studies.md]@[/Users/duyle/sickn33/launchstudio/content_calendar.md]@[/Users/duyle/sickn33/launchstudio/content_inventory.md]@[/Users/duyle/sickn33/launchstudio/content_report.md]@[/Users/duyle/sickn33/launchstudio/decision_content.md]@[/Users/duyle/sickn33/launchstudio/email_sequences.md]@[/Users/duyle/sickn33/launchstudio/implementation_plan.md]@[/Users/duyle/sickn33/launchstudio/walkthrough.md] cho dự án manifera này
+- **11:54**: push folder launchstudio và manifera lên lại git
+- **11:58**: push lên với token : [REDACTED_SECRET]
+- **13:15**: có cách nào lưu trực tiếp lên google drivek không ?
+- **13:16**: cách 2
+- **13:17**: n
+- **13:39**: ok push lên github
+- **13:49**: tạo file đầu trên cùng tổng hợp lại các Long Article .md đã tạo với Title, link liên kết file, buyer stage, tóm tắt và ước tính lượt view
+- **13:51**: hãy gom các file blog và article vào folder con 'blog' còn các file khác giữ nguyên vị trí
+- **13:53**: gom các file content_stategy, linkedin,pillar vào folder con 'else'
+- **13:56**: /goal hãy viết tiếp đến article 600. sau khi hoàn thành hãy nhập thông tin vào # Long Articles Summary Index
+- **14:00**: trong # Long Articles Summary Index chỉ đồng bộ 'No.' với Long Article 'No.' không cần Index những bài blog hay linkedin hay các bài viết khác để số 1 phải tương được với Long Article 1
+- **14:00**: Continue
+- **14:01**: cám ơn bạn bạn làm rất đúng ý mình
+- **15:13**: chạy lên hỏi hệ thống máy chủ dùm mình sao giờ bên gemini không phản hồi gì hết
+- **15:19**: Yêu cầu mới : tạo hình thực tế  - có người và ai hoặc code với những hình ảnh thực tế - thumnail  sinh động thu hút (infographic ngang) cho bài viết/post trên Website viết bằng Wordpress  Link tham khảo nội dung : https://www.manifera.com/the-strategic-guide-to-technical-debt-in-custom-software-development-a-ceos-survival-manual/   Ngôn ngữ hiển thị 100% bằng tiếng Anh. Không cần đưa tất cả thông tin vào chỉ cần làm 1 ảnh tượng trưng cho bài viết. Đảm bảo có căn lề (margin) 30 pixel xung quanh thiết kế.".
+- **15:20**: cần thay đổi thiết kế cho 16:9
+- **15:21**: Yêu cầu mới : tạo hình thực tế kích thước 16:9  - có người và ai hoặc code với những hình ảnh thực tế - thumnail  sinh động thu hút (infographic ngang) cho bài viết/post trên Website viết bằng Wordpress  Link tham khảo nội dung : https://www.manifera.com/the-strategic-guide-to-technical-debt-in-custom-software-development-a-ceos-survival-manual/   Ngôn ngữ hiển thị 100% bằng tiếng Anh. Không cần đưa tất cả thông tin vào chỉ cần làm 1 ảnh tượng trưng cho bài viết. Đảm bảo có căn lề (margin) 30 pixel xung quanh thiết kế.".
+- **15:23**: không ổn khi phải format lại rồi, phải thiết kế kích thước 16:9 ban đầu thì layout mới đẹp đúng chuẩn
+- **15:28**: thêm 1 folder cho skill này : npx skills add https://github.com/dp-archive/archive --skill gemini-imagegen
+- **15:30**: Yêu cầu mới : tạo hình thực tế kích thước 16:9  - có người và ai hoặc code với những hình ảnh thực tế - thumnail  sinh động thu hút (infographic ngang) cho bài viết/post trên Website viết bằng Wordpress  Link tham khảo nội dung : https://www.manifera.com/the-strategic-guide-to-technical-debt-in-custom-software-development-a-ceos-survival-manual/   Ngôn ngữ hiển thị 100% bằng tiếng Anh. Không cần đưa tất cả thông tin vào chỉ cần làm 1 ảnh tượng trưng cho bài viết. Đảm bảo có căn lề (margin) 30 pixel xung quanh thiết kế.".
+- **15:33**: hình đâu ?
+- **15:37**: đã làm như không chạy được
+- **15:40**: xoá skill và folder gemini_imagegen_skill
+- **15:41**: Yêu cầu mới : tạo hình thực tế kích thước 16:9  - có người và ai hoặc code với những hình ảnh thực tế - thumnail  sinh động thu hút (infographic ngang) cho bài viết/post trên Website viết bằng Wordpress  Link tham khảo nội dung : https://www.manifera.com/the-strategic-guide-to-technical-debt-in-custom-software-development-a-ceos-survival-manual/   Ngôn ngữ hiển thị 100% bằng tiếng Anh. Không cần đưa tất cả thông tin vào chỉ cần làm 1 ảnh tượng trưng cho bài viết. Đảm bảo có căn lề (margin) 30 pixel xung quanh thiết kế.".
+- **15:41**: Continue
+- **15:43**: dùng 3.
+- **15:44**: xoá vĩnh viễn skil gemini_imagegen_skill và cả skill MeiGen và các file liên quan ra khỏi hệ thống
+- **15:47**: xoá vĩnh viễn skil gemini_imagegen_skill và cả skill MeiGen và các file liên quan ra khỏi hệ thống
+- **15:48**: xoá luôn skill vừa cài
+- **15:53**: Yêu cầu mới : tạo hình thực tế kích thước ngang 16:9 - có người và ai hoặc code với những hình ảnh thực tế - thumnail  sinh động thu hút (infographic ngang) cho bài viết/post trên Website viết bằng Wordpress  Link tham khảo nội dung : https://www.manifera.com/the-strategic-guide-to-technical-debt-in-custom-software-development-a-ceos-survival-manual/   Ngôn ngữ hiển thị 100% bằng tiếng Anh. Không cần đưa tất cả thông tin vào chỉ cần làm 1 ảnh tượng trưng cho bài viết. Đảm bảo có căn lề (margin) 30 pixel xung quanh thiết kế.".
+- **15:55**: không đúng bạn vẫn trả về là hình vuông kích thước 1:1
+- **15:56**: không đẹp đừng thực hiện nữa
+- **16:31**: từ các bài blog đã viết hãy viết tóm gọn lại thành bài post trên mạng xã hội linkedin hay X sau đó cập nhật tiếp vào file @[/Users/duyle/sickn33/launchstudio/content_inventory.md]  các bài song song (có các trích nguồn bài viết content gốc và bài post dành cho mạng xã hội)
+- **16:31**: Continue
+- **16:35**: 2
+- **16:36**: /goal từ các bài blog đã viết hãy viết tóm gọn lại thành bài post trên mạng xã hội linkedin hay X sau đó cập nhật tiếp vào file @[/Users/duyle/sickn33/launchstudio/content_inventory.md]  các bài song song (có các trích nguồn bài viết content gốc và bài post dành cho mạng xã hội)
+- **16:50**: tách các bài viết ra riêng theo từng bài -format đúng chuẩn bài viết đăng mạng xã hội theo từng folder như (blog) và gom theo tháng. sau đó trích dẫn đối chiếu link với bài viết đã được tóm gọn trong file @[/Users/duyle/sickn33/launchstudio/content_inventory.md] và sau khi tách ra hãy xoá các bài viết mới làm phía dưới file từ phần '| July 2026 | How Cursor AI Is Changing the Way Founders Write Code | [06-cursor-ai-changing-founder-development.md](./july-2026/06-cursor-ai-changing-founder-development.md) | 👩💻 Cursor AI isn't just a code editor—it's a co-founder for technical entrepreneurs. By understanding your entire codebase, it accelerates development without sacrificing control. Unlike drag-and-drop builders, it helps you write production-level logic faster. Discover how founders are using Cursor to ship complex features in hours instead of weeks: [Link] #CursorAI #Founders #Coding |' trở đi
+- **16:57**: cập nhật các layout đúng format như xuống hàng trong văn bản docx không thêm các đoạn mã code như <br> vì đây là bài viết đăng tự nhiên trên các mạng xã hội. hãy sửa lại các format và định dạng viết cho đúng các bài đã viết
+- **17:00**: /goal hãy viết tiếp các blog của tháng khác và cho đến hết december-2026 và viết đúng theo format đã yêu cầu cập nhật chỉnh sửa với đây và lưu thông tin vào @[/Users/duyle/sickn33/launchstudio/content_inventory.md]
+- **17:04**: nếu đã hoàn thành rồi thì cập nhật vào file @[/Users/duyle/sickn33/launchstudio/content_inventory.md]
+- **17:06**: đông bộ tới bài viết đó và cài ứng dụng nào đọc được lập tức
+- **17:07**: @[/Users/duyle/sickn33/launchstudio/content_inventory.md] hãy hiển thị tên và bài viết đỏ để mở trực tiếp không phải gắng Link
+- **17:08**: Continue
+- **17:08**: ok bạn đã tốt . tks bạn
+- **17:12**: tương tự như launchstudio, bên dự án folder manifera : hãy viết các bài post cho mạng xã hội từ các bài viết blog theo tháng (format xuống hàng không chèn code) sau đó cập nhật vào file @[/Users/duyle/sickn33/manifera/content_inventory.md]
+- **17:18**: push lên github
+- **17:44**: có cách nào kết nối trực tiếp với google banana để tích hợp tạo ảnh trực tiếp vào trong antigravity IDE này không ?
+- **17:45**: nhưng có thể tạo với kích thước ngang 16:9 không ?
+- **17:46**: @[/Users/duyle/sickn33/manifera/july-2026/01-how-to-scale-software-development-team.md] hãy tạo ảnh kích thước ngang 16:6 cho ảnh thumbnail WordPress 16:9
+- **17:47**: không như kỳ vọng hãy tìm phương án khác
+- **17:49**: thực hiện Phương án 2
+- **17:52**: mình không xem được hình
+- **17:53**: @[/Users/duyle/sickn33/manifera/july-2026/01-how-to-scale-software-development-team.md] hãy tìm hình unplash liên quan hoặc gần với nội dung bài viết này
+- **17:54**: hãy tìm 1 hình khác
+- **17:55**: hãy tìm 1 hình khác với phong thái chuyên nghiệp và thanh lịch
+- **17:56**: mình có thể mô tả rõ hơn để mình tìm hình được không ?
+- **17:57**: đối tượng những người đang mặc vest và ngồi trước máy vi tính hay laptop trong có vẻ họ đang họp và đang bàn luận về 1 vấn đề về lập trình hay code. hãy tìm giúp mình
+- **17:58**: trong họ không có mặc vest và không có tương tác gi với nhau hãy tìm thêm tấm hình khác
+- **17:59**: ngoài unplash thì mình có thể kết nối với các kho hình miễn phí nào được ?
+- **18:00**: hãy hỗ trợ mình kết nối hết
+- **18:02**: [REDACTED_SECRET]
+- **18:03**: kết nối thêm với các kho ảnh khác
+- **18:05**: vậy kết nối với freepik
+- **18:07**: không cần freepik đã không còn miễn phí nữa
+- **18:08**: kết nói với kho miễn phí còn lại
+- **18:09**: [REDACTED_SECRET]
+- **18:10**: @[/Users/duyle/sickn33/manifera/july-2026/02-in-house-vs-offshore-software-development-2026.md] tìm hình tương thích
+#### Ngày 18
+
+- **09:11**: viết content blog và post trên mạng xã hội cho cả năm 2027 cho dự án manifera
+- **09:14**: lưu vào file mới content_inventory_2027.md, tiến hành thực hiện
+- **09:17**: viết content blog và post trên mạng xã hội cho cả năm 2027 cho dự án launchstudio và lưu vào file mới content_inventory_2027.md
+- **09:20**: hãy cập nhật lại @[/Users/duyle/sickn33/launchstudio/content_inventory_2027.md]   và chia các bài viết theo tháng
+- **09:22**: các file py hoặc có batch hay lưu vào thư mục con tên 'sys' của thư mục launchstudio
+- **09:23**: các file py hoặc có batch hay lưu vào thư mục con tên 'sys' của thư mục manifera
+- **09:25**: push lên github
+- **10:29**: @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/LONG_ARTICLES_INDEX.md] hãy phân nhóm theo từ khoá ví dụ 'mobile app' hay 'web develop' , lưu ý không thay đổi tên file chỉ phân loại theo nhóm và nếu như title có thể trùng 2 keyword thì cứ sắp vào 1 nhóm nào cũng được. Lưu ý : mỗi bài chỉ theo 1 nhóm duy nhất không được trùng học duplicate với nhóm khác
+- **10:31**: hãy list đầy đủ nhóm Other cuối file @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/LONG_ARTICLES_INDEX.md]  gồm các keyword gì trong dấu () nhé
+- **10:35**: hãy thêm cột keyword bên phải của cột title và chèn các từ keyword vào trong nhóm Other dưới cùng của file @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/LONG_ARTICLES_INDEX.md]
+- **10:37**: @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/LONG_ARTICLES_INDEX.md] hãy highlight màu vàng có dòng chữ 'Decision' ở cột Buyer Stage
+- **10:38**: bỏ thao tác vừa thực hiện
+- **10:39**: @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/LONG_ARTICLES_INDEX.md] hãy Bold có dòng chữ 'Decision' ở cột Buyer Stage
+- **10:40**: cái file py đưa vào thư mục con tên ' sys'
+- **10:42**: push lên github
+- **10:42**: push lên github https://github.com/duylesales/marketingskills-coreyhaines31
+- **10:44**: xoá tất cả các file nào lấy từ github về chỉ để lại các file đã có trên máy
+- **10:50**: hãy tạo file content_calendar.md trong đó hãy mix các nhóm từ khoá loại với nhau (lưu ý có cột nhóm kế bên cột title) và trong 1 tháng có 60 bài viết và phân theo tháng bắt đầu từ tháng 7 cho đến hết các bài viết (có thể kéo dài sang các tháng cho năm sau)
+- **10:53**: @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/content_calendar.md] kết nối với các bài viết source như trong file @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/LONG_ARTICLES_INDEX.md]
+- **10:54**: @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/content_calendar.md] kết nối với các bài viết source bao gồm các cột tham chiếu như trong file @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/LONG_ARTICLES_INDEX.md]
+- **10:56**: đưa các file py vào 'sys'
+- **11:42**: npx skills add https://github.com/coreyhaines31/marketingskills
+- **11:48**: cài npx skills add https://github.com/centminmod/my-claude-code-setup --skill ai-image-creator
+- **11:50**: /ai-image-creator tạo ảnh kích thước 16:9@[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_5_b2b_web_application_anatomy.md]
+- **11:53**: tìm ảnh này tương tự trên các kho ảnh miễn phí
+- **11:54**: hãy liên kết với unplash
+- **11:54**: 2.
+- **11:56**: không thể xem được ảnh
+- **11:57**: kếi nối /ai-image-creator với nano banana thế nào ?
+- **11:58**: [REDACTED_SECRET]
+- **12:00**: [REDACTED_SECRET]
+- **13:05**: cách kết nối trực tiếp với gemini web
+- **13:06**: cơ bản là có thích hợp được vào antigravity không
+- **13:07**: nhưng không thể tạo ảnh kích thước 16:9 như mong muốn
+- **13:08**: xoá skill /ai-image-creator
+- **13:09**: hãy tìm giúp mình các skill có thể tạo ảnh 16:9 mà không cần API hoặc kho ảnh
+- **13:12**: hãy tạo file diary.md và lưu các câu lệnh/ yêu cầu mình đã thực hiện trong suốt thời quan qua
+- **13:13**: luôn luôn cập nhật nhật ký các câu lệnh và được phân nhóm theo ngày và tháng
+- **13:14**: vẽ cho tôi @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_28_b2b_software_multitenancy.md]
+- **13:18**: hãy tạo ảnh cho tôi dựa theo nội dung @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_600_software_development_outsourcing_ui_thread_blocking.md] và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:19**: hãy tạo ảnh cho tôi dựa theo target keywords @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_600_software_development_outsourcing_ui_thread_blocking.md] và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:21**: hãy tạo ảnh thực tế + chân thật cho @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_600_software_development_outsourcing_ui_thread_blocking.md] và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:23**: hãy tạo ảnh thực tế + chân thật cho @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_599_hire_offshore_software_developers_orphaned_containers.md]  và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:25**: hãy tạo ảnh thực tế + chân thật cho @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_1_software_company_audit.md]  và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:25**: hãy tạo ảnh thực tế + chân thật cho @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_2_technical_debt_custom_software.md]   và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:28**: hãy tìm cách tạo ảnh tương tự như `Pollinations.ai` nhưng cho ảnh chân thật và nét hơn và được nhiều người đánh giá cao
+- **13:33**: trên HuggingFace.co và lấy một đoạn mã Access Token : [REDACTED_SECRET]
+- **13:34**: hãy tạo ảnh thực tế + chân thật cho @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_2_technical_debt_custom_software.md]   và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:36**: HuggingFace.co : hãy tạo ảnh thực tế + chân thật cho @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_600_software_development_outsourcing_ui_thread_blocking.md] và hãy lưu với trùng với tên file đã yêu cầu kèm theo _pic
+- **13:37**: chất lượng ảnh vẫn quá tệ hãy tìm kho ảnh hoặc công cụ AI miễn phí khác
+- **13:40**: @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_600_software_development_outsourcing_ui_thread_blocking_pic.jpg] crop ảnh lại thành 16:9 chủ yếu lấy phần dưới của ảnh
+- **13:41**: undo
+- **13:44**: tạo ảnh @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_1_software_company_audit.md] nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **13:46**: ok bạn làm đúng với mình yêu cầu. Hãy viết lại promt mẫu lại để mình có thể sử dụng lại câu promt mà bạn vừa làm đúng ý mình
+- **13:48**: lưu câu lệnh vừa thực hiện đúng và câu lệnh và promt mẫu này vào diary.md giúp mình
+- **13:49**: tạo ảnh @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_600_software_development_outsourcing_ui_thread_blocking.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **13:52**: tạo file prompt.md rỗng để mình tự input các prompt vừa ý mình
+- **13:54**: trong folder blog hãy tạo folder con json và đưa các file .json vào mục này
+- **13:56**: tạo ảnh @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_13_app_development_state_management.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **13:58**: tạo ảnh @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_599_hire_offshore_software_developers_orphaned_containers.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 (lưu ý luôn cho phép hệ thống tự động cắt mà không cần hỏi lại) lấy phần giữa
+- **13:59**: lưu ý : luôn cho phép hệ thống tự động cắt ảnh về tỉ lệ 16:9 mà không cần hệ thống xác minh lại
+- **14:00**: tạo ảnh @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_598_offshore_software_development_company_webhook_idempotency.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 (lưu ý luôn cho phép hệ thống tự động cắt mà không cần hỏi lại) lấy phần giữa
+- **14:02**: tạo ảnh @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_3_enterprise_mobile_security.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 (lưu ý luôn cho phép hệ thống tự động cắt mà không cần hỏi lại) lấy phần giữa
+- **14:03**: tạo ảnh @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_4_hire_software_developers_psychology.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 (lưu ý luôn cho phép hệ thống tự động cắt mà không cần hỏi lại) lấy phần giữa
+- **14:06**: hãy cho mình biết dung lượng sau khi các ảnh được cắt có cao không ?
+- **14:10**: tạo ảnh cho ánh sáng và đổ màu nhìn thực tế như ảnh thât@[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_13_app_development_state_management.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **14:12**: tạo ảnh cho ánh sáng và đổ màu nhìn thực tế như ảnh thật @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_21_offline_first_mobile_app.md]  nội dung truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **14:15**: tạo ảnh cho ánh sáng và đổ màu nhìn thực tế như ảnh thật  @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_21_offline_first_mobile_app.md]  nội dung truyền đạt nên tập trung (nếu những ý tưởng hay content có thể nằm ở bên trái hoặc phải nhưng đảm bảo nằm giữa của khung hình) vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **14:18**: tạo ảnh cho ánh sáng và đổ màu nhìn thực tế như ảnh thật  @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/blog/long_article_22_web_application_pwa.md]  nội dung truyền đạt nên tập trung (nếu những ý tưởng hay content có thể nằm ở bên trái hoặc phải nhưng đảm bảo nằm giữa của khung hình) vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **14:21**: bạn làm tốt lắm rất đúng ý mình
+- **14:25**: /goal tạo ảnh cho ánh sáng và đổ màu nhìn thực tế như ảnh thật (hyper-realistic) từ bài Long Article 1 đến bài Long Article 600 (bài nào đã làm rồi hãy bỏ qua) nội dung truyền đạt nên tập trung (nếu những ý tưởng hay content có thể nằm ở bên trái hoặc phải nhưng đảm bảo nằm giữa của khung hình) vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **14:31**: hãy chuyển sang model gemini khác và tiếp tục thực hiện
+- **14:34**: hãy huỷ  [/goal tạo ảnh cho ánh sáng và đổ màu nhìn thực tế như ảnh thật (hyper-realistic) từ bài Long Article 1 đến bài Long Article 600 (bài nào đã làm rồi hãy bỏ qua) nội dung truyền đạt nên tập trung (nếu những ý tưởng hay content có thể nằm ở bên trái hoặc phải nhưng đảm bảo nằm giữa của khung hình) vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa] này. mình sẽ tạo từng ảnh khi cần
+- **14:38**: push đè lên git
+- **14:40**: @[/Users/duyle/.gemini/antigravity-ide/scratch/marketingskills-coreyhaines31/diary.md] hãy liệt kê theo giờ mà các câu lệnh thực hiện thay vì các số thứ tự
+- **14:52**: hãy tạo 1 file diary.md và sau khi hoàn thành xong yêu cầu thì hãy lưu thông tin và đây dưới dạng năm tháng và giờ:phút các câu lệnh yêu cầu
+- **14:53**: hãy gom theo năm và trong năm có các tháng thực hiện các câu lệnh gom theo ngày giờ
+- **14:54**: dưới tháng là ngày và trong ngày đó list các câu lệnh theo giờ:ohust
+- **14:55**: và hãy gom các câu lệnh đã thực hiện trước giờ vào đây
+- **14:57**: hãy thực hiện tạo file diary.md cho các dự án launchstuido và manifera và lưu các câu lệnh đã thực hiện vào
+- **15:00**: hãy kiểm tra gemini image flash chừng nào hồi đủ quota
+- **15:02**: @[/Users/duyle/sickn33/launchstudio/content_inventory.md] hãy list số thứ tự tiêu đề (title)
+- **15:03**: @[/Users/duyle/sickn33/launchstudio/content_inventory.md] mỗi tháng số thứ tự sẽ trở về từ số 1
+- **15:05**: @[/Users/duyle/sickn33/manifera/content_inventory.md] hãy list số thứ tự tiêu đề (title) và mỗi tháng bắt đầu từ 1
+- **15:06**: push đè lên github
