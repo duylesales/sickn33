@@ -39,4 +39,5 @@
 - **09:17**: viết content blog và post trên mạng xã hội cho cả năm 2027 cho dự án launchstudio và lưu vào file mới content_inventory_2027.md
 - **09:23**: các file py hoặc có batch hay lưu vào thư mục con tên 'sys' của thư mục manifera
 - **14:57**: hãy thực hiện tạo file diary.md cho các dự án launchstuido và manifera và lưu các câu lệnh đã thực hiện vào
-- **15:05**: @[/Users/duyle/sickn33/manifera/content_inventory.md] hãy list số thứ tự tiêu đề (title) và mỗi tháng bắt đầu từ 1
+- **15:05**: @[/Users/duyle/sickn33/manifera/content_inventory.md] hãy list số thứ tự tiêu đề (title) và mỗi tháng bắt đầu từ 1- **15:28**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md của dự án manifera
+- **15:29**: push lên github

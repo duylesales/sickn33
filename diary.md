@@ -166,4 +166,15 @@
 - **15:02**: @[/Users/duyle/sickn33/launchstudio/content_inventory.md] hãy list số thứ tự tiêu đề (title)
 - **15:03**: @[/Users/duyle/sickn33/launchstudio/content_inventory.md] mỗi tháng số thứ tự sẽ trở về từ số 1
 - **15:05**: @[/Users/duyle/sickn33/manifera/content_inventory.md] hãy list số thứ tự tiêu đề (title) và mỗi tháng bắt đầu từ 1
-- **15:06**: push đè lên github
+- **15:06**: push đè lên github- **15:09**: tại file prompt trống mình sẽ tự input 
+- **15:10**: tại file prompt.md trống mình sẽ tự input 
+- **15:11**: ở đâu mình không thấy
+- **15:12**: tại file prompt.md thuộc folder launchstudio trống mình sẽ tự input 
+- **15:13**: tại file prompt.md thuộc folder manifera trống mình sẽ tự input 
+- **15:15**: tạo ảnh cho ánh sáng và Phong cách: Bắt đầu bằng "modern flat-ish vector illustration," "corporate tech style," "dribbble-style." nội dung @[/Users/duyle/sickn33/launchstudio/july-2026/01-what-is-ai-native-founder-social.md] truyền đạt nên tập trung vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
+- **15:16**: ở mỗi thư mục tháng hãy tạo 1 folder json con và bỏ các file json vào
+- **15:16**: ở mỗi thư mục tháng hãy tạo 1 folder html con và bỏ các file html vào
+- **15:25**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
+
+- **15:26**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
+- **15:27**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
