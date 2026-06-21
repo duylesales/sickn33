@@ -105,14 +105,18 @@ LaunchStudio helps AI-native founders get prototypes launch-ready with security,
 [Get a free quote today](https://launchstudio.eu/en/#contact) and transform your AI vision into a secure, scalable reality.
 
 ## Real example
-<div class="article-case">
-<div class="case-title">An AI-Native Founder in Action: The Physiotherapist</div>
-<p>Wouter, a physiotherapist with three clinic locations, had a deep domain problem: managing a chaotic 1,400-patient waiting list on Excel. Despite having no technical background, he embraced the <strong>AI-native founder</strong> approach. Using <strong>Bolt</strong>, he described what he needed and generated a functional web app prototype in just two evenings.</p>
-<p>While his AI-generated app worked perfectly on his local machine, it lacked the production requirements for a multi-location business—there was no shared database, multi-user login, or cloud hosting.</p>
-<p>This is where <strong>LaunchStudio (by Manifera)</strong> stepped in to bridge the gap. Instead of rebuilding from scratch, they took Wouter's AI prototype and added the necessary "last-mile" engineering: secure user accounts, a synchronized database, and robust hosting.</p>
-<p><strong>Result:</strong> Wouter's clinics now run on his custom software. The average wait time dropped from 6 to 3 weeks. <em>"The funny thing is: the app looks exactly like I built it. They just put the engine underneath."</em></p>
-<p><strong>Cost & Timeline:</strong> €1,200 (Launch Ready package) + €49/month hosting — deployed in just 5 business days (a fraction of traditional software development costs).</p>
-</div>
+
+### An AI-Native Founder in Action: The Physiotherapist
+
+Wouter, a physiotherapist with three clinic locations, had a deep domain problem: managing a chaotic 1,400-patient waiting list on Excel. Despite having no technical background, he embraced the **AI-native founder** approach. Using **Bolt**, he described what he needed and generated a functional web app prototype in just two evenings.
+
+While his AI-generated app worked perfectly on his local machine, it lacked the production requirements for a multi-location business—there was no shared database, multi-user login, or cloud hosting.
+
+This is where **LaunchStudio (by Manifera)** stepped in to bridge the gap. Instead of rebuilding from scratch, they took Wouter's AI prototype and added the necessary "last-mile" engineering: secure user accounts, a synchronized database, and robust hosting.
+
+**Result:** Wouter's clinics now run on his custom software. The average wait time dropped from 6 to 3 weeks. *"The funny thing is: the app looks exactly like I built it. They just put the engine underneath."*
+
+**Cost & Timeline:** €1,200 (Launch Ready package) + €49/month hosting — deployed in just 5 business days (a fraction of traditional software development costs).
 
 ---
 

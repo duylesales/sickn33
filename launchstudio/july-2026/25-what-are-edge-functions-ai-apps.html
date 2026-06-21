@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Are Edge Functions and Why Do AI Apps Use Them? — Launch Studio</title>
+    <meta name="description" content="A simple guide to Edge Functions for non-technical founders. Learn how they bridge the gap between frontend AI apps and backend security.">
+    <link rel="canonical" href="https://launchstudio.eu/en/insights/what-are-edge-functions-ai-apps/">
+    <meta property="og:title" content="What Are Edge Functions and Why Do AI Apps Use Them? — Launch Studio">
+    <meta property="og:description" content="A simple guide to Edge Functions for non-technical founders. Learn how they bridge the gap between frontend AI apps and backend security.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://launchstudio.eu/en/insights/what-are-edge-functions-ai-apps/">
+    <meta property="og:site_name" content="Launch Studio">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What Are Edge Functions and Why Do AI Apps Use Them?",
+        "description": "A simple guide to Edge Functions for non-technical founders. Learn how they bridge the gap between frontend AI apps and backend security.",
+        "image": "",
+        "author": { "@type": "Organization", "name": "Launch Studio", "url": "https://launchstudio.eu/en/" },
+        "publisher": { "@type": "Organization", "name": "Launch Studio", "logo": { "@type": "ImageObject", "url": "https://launchstudio.eu/wp-content/uploads/2026/04/cropped-favicon-192x192.png" } },
+        "datePublished": "2026-07-25",
+        "dateModified": "2026-07-25",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/insights/what-are-edge-functions-ai-apps/" }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is an Edge Function?",
+                "acceptedAnswer": { "@type": "Answer", "text": "An Edge Function is a small, specialized piece of backend code that runs on servers located globally, as close to the user as possible (the 'edge' of the network). Unlike a traditional server that runs continuously in one location, an Edge Function spins up instantly when a user makes a request, runs the code, returns the result, and immediately shuts down." }
+            },
+            {
+                "@type": "Question",
+                "name": "Why do AI builders use Edge Functions instead of normal servers?",
+                "acceptedAnswer": { "@type": "Answer", "text": "AI builders prefer serverless architectures (like Edge Functions) because they require zero infrastructure management. There is no server to configure, no operating system to update, and no need to manage scaling. The AI can just write a single JavaScript file, and platforms like Supabase or Vercel handle deploying it globally and scaling it infinitely." }
+            },
+            {
+                "@type": "Question",
+                "name": "When should I use an Edge Function in my app?",
+                "acceptedAnswer": { "@type": "Answer", "text": "You must use an Edge Function anytime your app needs to perform a secure action that requires a secret API key. The most common use cases are processing payments with Stripe, making requests to AI APIs (OpenAI, Anthropic), sending transactional emails (Resend), or performing complex database operations that bypass Row Level Security using a Service Role key." }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between a Supabase Edge Function and a Vercel Serverless Function?",
+                "acceptedAnswer": { "@type": "Answer", "text": "They serve the same architectural purpose but run on different infrastructure. Supabase Edge Functions run on Deno and are tightly integrated with your Supabase database and authentication. Vercel Serverless Functions typically run on Node.js and are integrated into your frontend hosting environment. Both are excellent choices for AI startups." }
+            },
+            {
+                "@type": "Question",
+                "name": "Can Edge Functions handle long-running tasks like video processing?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. Edge Functions are designed for speed and typically have strict execution time limits (usually between 10 and 60 seconds, depending on the platform). If your task takes longer than this limit, the function will timeout and fail. For long-running tasks, you must use a dedicated custom backend server or a specialized background worker service." }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>What Are Edge Functions and Why Do AI Apps Use Them?</h1>
+            <p class="meta">By <strong>Launch Studio</strong> · July 25, 2026 · 8 min read</p>
+        </header>
+
+        <section>
+            <p>If you are building an AI-native startup using a serverless architecture, you will eventually encounter the term "Edge Function." When you ask your AI builder to fix a security issue or hide an API key, the solution will almost always involve an Edge Function. But what exactly are they, and why are they the critical missing link between a frontend prototype and a secure production app?</p>
+        </section>
+
+        <section>
+            <h2>The Problem: The Frontend Cannot Keep Secrets</h2>
+            <p>Most AI-generated apps consist of a React frontend and a Supabase database. The React code runs directly in the user's browser (Chrome, Safari). Because it runs on the user's machine, the user can inspect it, modify it, and extract any data hidden within it.</p>
+            <p>This creates a massive problem: If you want to use the OpenAI API to generate text, or the Stripe API to process a payment, you need to provide a Secret Key. If you put that Secret Key in your React code, any user can steal it. You need a secure middleman—a server that you control, where the secrets are safe from prying eyes.</p>
+        </section>
+
+        <section>
+            <h2>Enter the Edge Function</h2>
+            <p>An Edge Function is that secure middleman. It is a tiny, specialized piece of backend code that lives on a server, not in the browser.</p>
+            <p>It is called "serverless" not because there is no server, but because you do not have to manage one. You write a single JavaScript file, upload it to Supabase or Vercel, and the platform handles the rest. It is called "edge" because the code is replicated and deployed to servers globally (the "edge" of the network), so it runs geographically close to the user making the request, ensuring lightning-fast response times.</p>
+            <p>When an Edge Function is called, it spins up in milliseconds, runs your code, returns the result, and immediately shuts down. You only pay for the exact milliseconds the code was executing.</p>
+        </section>
+
+        <section>
+            <h2>How It Works in Practice</h2>
+            <p>Let's look at the flow for generating AI text using an OpenAI key securely:</p>
+            <ol>
+                <li><strong>The Request</strong>: The user clicks "Generate" in your React app. The React app does <em>not</em> call OpenAI. Instead, it sends the user's prompt to your Edge Function (e.g., <code>https://your-project.supabase.co/functions/v1/generate-text</code>).</li>
+                <li><strong>The Secure Execution</strong>: The Edge Function wakes up. It reads the <code>OPENAI_SECRET_KEY</code> securely stored in its environment variables. It attaches the key to the user's prompt and makes the official request to OpenAI's servers.</li>
+                <li><strong>The Response</strong>: OpenAI processes the text and sends it back to the Edge Function.</li>
+                <li><strong>The Delivery</strong>: The Edge Function forwards the generated text back to the React app in the user's browser.</li>
+            </ol>
+            <p>Throughout this entire process, the OpenAI key never left the secure server. The user only ever saw their prompt and the final text.</p>
+        </section>
+
+        <section>
+            <h2>Common Use Cases for AI Startups</h2>
+            <p>You will need Edge Functions for any operation that requires a secret key or elevated database privileges:</p>
+            <ul>
+                <li><strong>Stripe Integration</strong>: Creating checkout sessions and processing webhooks requires the Stripe Secret Key.</li>
+                <li><strong>AI Inference</strong>: Calling OpenAI, Anthropic, or Replicate APIs securely.</li>
+                <li><strong>Sending Emails</strong>: Calling Resend or SendGrid APIs to send welcome emails or receipts.</li>
+                <li><strong>Bypassing RLS</strong>: Sometimes your app needs to perform an administrative database task that normal users are not allowed to do (like updating a global system counter). An Edge Function can use the Supabase Service Role Key to bypass Row Level Security safely.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>The Limitations</h2>
+            <p>Edge Functions are incredible for speed and scaling, but they have limits. Because they are designed to be fast and temporary, they typically time out after 10 to 60 seconds (depending on the platform). They also have strict memory limits. If your app needs to process a 1GB video file or run a complex background job that takes 5 minutes, an Edge Function will fail. You will need a traditional custom backend server for those heavy workloads.</p>
+        </section>
+
+        <section class="key-takeaway">
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li>Edge Functions are small, serverless backend scripts that run on global networks close to the user.</li>
+                <li>They act as a secure middleman between your frontend React app and third-party services.</li>
+                <li>You must use Edge Functions to hide Secret Keys (Stripe, OpenAI) from the user's browser.</li>
+                <li>They spin up instantly and you only pay for the exact compute time used.</li>
+                <li>They have execution time limits (usually under 60 seconds) and cannot handle long-running background tasks.</li>
+            </ul>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>What is an Edge Function?</h3>
+            <p>An Edge Function is a small piece of backend code that spins up instantly on global servers to handle a specific request, securely keeping secrets away from the user's browser.</p>
+
+            <h3>Why do AI builders use Edge Functions instead of normal servers?</h3>
+            <p>They require zero infrastructure management. There is no server to configure or scale. You write a script, deploy it, and the platform handles the rest.</p>
+
+            <h3>When should I use an Edge Function in my app?</h3>
+            <p>Anytime your app needs to perform a secure action requiring a secret API key, such as processing payments, calling AI models, or sending transactional emails.</p>
+
+            <h3>Can Edge Functions handle long-running tasks like video processing?</h3>
+            <p>No. They have strict execution time limits (10–60 seconds). For heavy workloads, you must use a dedicated custom backend server.</p>
+        </section>
+
+        <section class="cta">
+            <h2>Secure Your Architecture</h2>
+            <p>Are your API keys exposed? LaunchStudio audits your codebase and securely migrates all sensitive operations into robust Edge Functions. <a href="https://launchstudio.eu/en/#contact">Get a free quote today</a>.</p>
+        </section>
+    </article>
+</body>
+</html>

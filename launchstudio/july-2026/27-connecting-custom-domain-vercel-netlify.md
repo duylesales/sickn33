@@ -6,89 +6,99 @@ Buyer Stage: Awareness
 
 # Connecting a Custom Domain to Your Vercel or Netlify App
 
-## Nội dung
 Moving your AI-built app from a preview URL (like `my-project.vercel.app`) to your own custom domain (`myapp.com`) is the moment your prototype becomes a real product. While the process involves intimidating acronyms like DNS, A Records, and CNAMEs, it actually takes less than 10 minutes to complete. Here is the non-technical guide to securely connecting your custom domain.
 
-            ## Step 1: Buy Your Domain
+## Step 1: Buy Your Domain
 
-            If you haven't already, purchase your domain from a reputable registrar. Namecheap, Google Domains (now Squarespace), and Cloudflare are popular choices. You do not need to buy web hosting or SSL certificates from the registrar—Vercel or Netlify will handle that for free. You only need the domain name itself.
+If you haven't already, purchase your domain from a reputable registrar. Namecheap, Google Domains (now Squarespace), and Cloudflare are popular choices. You do not need to buy web hosting or SSL certificates from the registrar—Vercel or Netlify will handle that for free. You only need the domain name itself.
 
-            ## Step 2: Add the Domain to Your Hosting Platform
+## Step 2: Add the Domain to Your Hosting Platform
 
-            Log into your Vercel or Netlify dashboard, select your project, and navigate to the **Domains** settings (Settings > Domains in Vercel; Domain Management in Netlify).
+Log into your Vercel or Netlify dashboard, select your project, and navigate to the **Domains** settings (Settings > Domains in Vercel; Domain Management in Netlify).
 
-            Type in your custom domain (e.g., `myapp.com`) and click Add. The platform will then ask if you want to also add the `www.` subdomain (e.g., `www.myapp.com`). Say yes. The platform will automatically set up a redirect so that if a user types either version, they land on the same site.
+Type in your custom domain (e.g., `myapp.com`) and click Add. The platform will then ask if you want to also add the `www.` subdomain (e.g., `www.myapp.com`). Say yes. The platform will automatically set up a redirect so that if a user types either version, they land on the same site.
 
-            ## Step 3: Configure DNS Records
+## Step 3: Configure DNS Records
 
-            The hosting platform will now show you an error indicating the domain is "Unverified" or "Invalid Configuration." Below that error, it will provide you with specific DNS records. You must copy these records and paste them into your domain registrar.
+The hosting platform will now show you an error indicating the domain is "Unverified" or "Invalid Configuration." Below that error, it will provide you with specific DNS records. You must copy these records and paste them into your domain registrar.
 
-            Usually, you are given two records to create:
+Usually, you are given two records to create:
 
-                <li>**The A Record (for the root domain)**
+    - **The A Record (for the root domain)**
 
-                        - Type: `A`
+            - Type: `A`
 
-                        - Name/Host: `@` (or leave blank, depending on the registrar)
+            - Name/Host: `@` (or leave blank, depending on the registrar)
 
-                        - Value/Target: An IP address provided by the platform (e.g., `76.76.21.21` for Vercel)
+            - Value/Target: An IP address provided by the platform (e.g., `76.76.21.21` for Vercel)
+    - **The CNAME Record (for the www subdomain)**
 
-                </li>
-                <li>**The CNAME Record (for the www subdomain)**
+            - Type: `CNAME`
 
-                        - Type: `CNAME`
+            - Name/Host: `www`
 
-                        - Name/Host: `www`
+            - Value/Target: A URL provided by the platform (e.g., `cname.vercel-dns.com`)
 
-                        - Value/Target: A URL provided by the platform (e.g., `cname.vercel-dns.com`)
+## Step 4: Update Your Registrar
 
-                </li>
+Log into the website where you bought the domain (Namecheap, GoDaddy, etc.) and find the **DNS Settings** or **Advanced DNS** page.
 
-            ## Step 4: Update Your Registrar
+Look for existing A Records or CNAME records that might conflict. Delete any default A records that point to the registrar's parking page. Then, add the two new records exactly as Vercel/Netlify provided them.
 
-            Log into the website where you bought the domain (Namecheap, GoDaddy, etc.) and find the **DNS Settings** or **Advanced DNS** page.
+## Step 5: Wait for Propagation and SSL
 
-            Look for existing A Records or CNAME records that might conflict. Delete any default A records that point to the registrar's parking page. Then, add the two new records exactly as Vercel/Netlify provided them.
+Once you save the records in your registrar, return to your Vercel or Netlify dashboard. You will need to wait for "DNS Propagation"—the process of updating the global internet phonebook with your new address.
 
-            ## Step 5: Wait for Propagation and SSL
+This usually takes 5 to 15 minutes, though it can occasionally take a few hours. Once the platform detects the correct DNS records, the error message will disappear, and the status will change to "Valid Configuration."
 
-            Once you save the records in your registrar, return to your Vercel or Netlify dashboard. You will need to wait for "DNS Propagation"—the process of updating the global internet phonebook with your new address.
+At this moment, the platform will automatically generate and apply a free SSL certificate. When you visit `myapp.com`, you will see the secure lock icon in the browser. Your site is live.
 
-            This usually takes 5 to 15 minutes, though it can occasionally take a few hours. Once the platform detects the correct DNS records, the error message will disappear, and the status will change to "Valid Configuration."
+## Key Takeaways
 
-            At this moment, the platform will automatically generate and apply a free SSL certificate. When you visit `myapp.com`, you will see the secure lock icon in the browser. Your site is live.
+- You only need to buy the domain name from a registrar; Vercel/Netlify provides the hosting and SSL for free.
 
-            ## Key Takeaways
+- You must configure DNS records to connect the domain to the host.
 
-                - You only need to buy the domain name from a registrar; Vercel/Netlify provides the hosting and SSL for free.
+- The A Record connects the root domain (myapp.com) via an IP address.
 
-                - You must configure DNS records to connect the domain to the host.
+- The CNAME Record connects the subdomain (www.myapp.com) via a URL.
 
-                - The A Record connects the root domain (myapp.com) via an IP address.
+- SSL certificates are automatically generated by the hosting platform once the DNS records are verified.
 
-                - The CNAME Record connects the subdomain (www.myapp.com) via a URL.
+## Domain Settings Confusing You?
 
-                - SSL certificates are automatically generated by the hosting platform once the DNS records are verified.
+LaunchStudio handles DNS configuration, SSL setup, and environment variable security to get your app live safely.
 
-            ## Domain Settings Confusing You?
+LaunchStudio is operated by **Manifera**, an international software engineering company led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420) and development hubs in **Singapore** and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. [Get a free quote today](https://launchstudio.eu/en/#contact).
 
-            LaunchStudio handles DNS configuration, SSL setup, and environment variable security to get your app live safely. [Get a free quote today](https://launchstudio.eu/en/#contact).
+## Real example
 
+### An AI-Native Founder in Action: Venture Deal Flow Portal
+
+Alexander, a startup founder, used **Bolt** to build a venture deal flow portal prototype. While the application was functional, it faced invalid SSL certificate errors and DNS routing loops on his custom startup domain name.
+
+Alexander partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team reconfigured Cloudflare DNS settings, set up proper SSL/TLS encryption, and configured canonical redirect rules.
+
+**Result:** Alexander secured the portal with HTTPS, resolving browser security warning alerts for visitors.
+
+**Cost & Timeline:** €800 (Domain Configuration Package) — production-ready and deployed in 2 business days.
+
+---
 ## FAQ
 ## Frequently Asked Questions
 
-            ### What is a DNS record?
+### What is a DNS record?
 
-            DNS is the phonebook of the internet. A DNS record tells browsers which server to contact when someone types your domain name.
+DNS is the phonebook of the internet. A DNS record tells browsers which server to contact when someone types your domain name.
 
-            ### What is the difference between an A Record and a CNAME?
+### What is the difference between an A Record and a CNAME?
 
-            An A Record maps a domain directly to an IP address (usually for the root domain). A CNAME maps a domain to another domain name (usually for subdomains like 'www').
+An A Record maps a domain directly to an IP address (usually for the root domain). A CNAME maps a domain to another domain name (usually for subdomains like 'www').
 
-            ### How do I get an SSL certificate?
+### How do I get an SSL certificate?
 
-            You do not need to buy one. Vercel and Netlify automatically provision and install a free Let's Encrypt SSL certificate once your DNS is configured correctly.
+You do not need to buy one. Vercel and Netlify automatically provision and install a free Let's Encrypt SSL certificate once your DNS is configured correctly.
 
-            ### Should I use 'www.myapp.com' or just 'myapp.com'?
+### Should I use 'www.myapp.com' or just 'myapp.com'?
 
-            Modern web standards favor the clean, root domain. Add both to your host, set the root as primary, and the host will automatically redirect 'www' traffic to the root.
+Modern web standards favor the clean, root domain. Add both to your host, set the root as primary, and the host will automatically redirect 'www' traffic to the root.

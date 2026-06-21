@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 20-Point Launch Readiness Checklist for AI Prototypes — Launch Studio</title>
+    <meta name="description" content="Is your AI-built prototype ready for real users? Use this 20-point checklist covering security, payments, deployment, performance, and legal compliance to find out before you launch.">
+    <link rel="canonical" href="https://launchstudio.eu/en/insights/launch-readiness-checklist-ai-prototypes/">
+    <meta property="og:title" content="The 20-Point Launch Readiness Checklist for AI Prototypes — Launch Studio">
+    <meta property="og:description" content="Is your AI-built prototype ready for real users? Use this 20-point checklist covering security, payments, deployment, performance, and legal compliance.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://launchstudio.eu/en/insights/launch-readiness-checklist-ai-prototypes/">
+    <meta property="og:site_name" content="Launch Studio">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The 20-Point Launch Readiness Checklist for AI Prototypes",
+        "description": "Is your AI-built prototype ready for real users? Use this 20-point checklist covering security, payments, deployment, performance, and legal compliance to find out before you launch.",
+        "image": "",
+        "author": {
+            "@type": "Organization",
+            "name": "Launch Studio",
+            "url": "https://launchstudio.eu/en/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Launch Studio",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://launchstudio.eu/wp-content/uploads/2026/04/cropped-favicon-192x192.png"
+            }
+        },
+        "datePublished": "2026-07-09",
+        "dateModified": "2026-07-09",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://launchstudio.eu/en/insights/launch-readiness-checklist-ai-prototypes/"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How many checklist items must pass before I can launch?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All 5 security items are mandatory — launching without them exposes your users' data and creates legal liability. Payment items are required if you accept payments. Deployment items 11-14 are essential for a professional launch. Performance and legal items are strongly recommended but some can be addressed shortly after launch. We recommend passing at least 16 out of 20 items before going live."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the most commonly failed checklist item?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Row Level Security (item 3) is the most commonly failed item. Approximately 80% of AI-built Supabase applications we review have RLS either disabled or incorrectly configured. This means any authenticated user can read, modify, or delete any other user's data — a critical vulnerability that must be fixed before launch."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use this checklist for apps not built with AI?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, this checklist applies to any web application preparing for launch. The items are universal production readiness requirements. However, AI-built applications fail these checks more frequently because AI generators prioritize functionality and UI over security and operational readiness. The checklist is equally valuable for hand-coded applications."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does it take to fix failed checklist items?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For an experienced developer, most individual items take 1-4 hours to implement. The full set of fixes for a typical AI-built application takes 1-3 weeks when done professionally. LaunchStudio handles all checklist items as part of our launch packages, priced at €800-€7,500 depending on application complexity."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens if I launch without completing the security checklist?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Launching without security measures exposes you to data breaches, unauthorized access to user accounts, potential GDPR violations (with fines up to 4% of annual revenue or €20 million), loss of user trust, and potential legal action from affected users. The reputational damage from a security incident in your first weeks can be fatal for a startup."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>The 20-Point Launch Readiness Checklist for AI Prototypes</h1>
+            <p class="meta">By <strong>Launch Studio</strong> · July 9, 2026 · 12 min read</p>
+        </header>
+
+        <section>
+            <p>Before launching your AI-built prototype to real users, verify these 20 critical items across security, payments, deployment, performance, and legal compliance. Approximately 95% of AI-generated applications fail at least 10 of these checks. Each failed item represents a risk to your users, your revenue, or your reputation. This checklist helps you identify and fix the gaps before they become problems.</p>
+
+            <p>This checklist is based on our experience reviewing hundreds of AI-built prototypes at LaunchStudio. We have identified the 20 items that most frequently cause problems after launch — ranked by severity and grouped by category. Use it as your pre-launch audit before accepting your first real user.</p>
+        </section>
+
+        <section>
+            <h2>Security (Items 1–5) — Mandatory</h2>
+
+            <p>All five security items must pass before launch. Skipping any of these creates immediate risk to your users and potential legal liability for you.</p>
+
+            <h3>1. Authentication Uses a Proven Provider</h3>
+            <p><strong>Check</strong>: Your app uses Supabase Auth, Firebase Authentication, Auth0, or another established authentication provider — not a custom-built login system.</p>
+            <p><strong>Why it matters</strong>: Custom authentication is the most common source of security vulnerabilities in web applications. Proven providers handle password hashing, session management, token rotation, and brute force protection correctly.</p>
+            <p><strong>How to verify</strong>: Check your codebase for the authentication library or service being used. If you see password comparison logic in your own code, you are likely using custom authentication and should switch to a provider.</p>
+
+            <h3>2. API Keys and Secrets Are in Environment Variables</h3>
+            <p><strong>Check</strong>: No API keys, database URLs, secret keys, or credentials are hardcoded in your frontend JavaScript files.</p>
+            <p><strong>Why it matters</strong>: Any value in your frontend code is visible to users via browser developer tools. Exposed secret keys can lead to unauthorized database access, fraudulent API usage, and data breaches.</p>
+            <p><strong>How to verify</strong>: Search your codebase for strings starting with "sk_", "secret", "password", or your Supabase/Stripe secret keys. Check your deployed application's JavaScript bundle by viewing the page source.</p>
+
+            <h3>3. Database Has Row Level Security Enabled</h3>
+            <p><strong>Check</strong>: Every table in your Supabase database has RLS enabled with appropriate policies that restrict users to their own data.</p>
+            <p><strong>Why it matters</strong>: Without RLS, any authenticated user can query, modify, or delete any row in any table — including other users' data. This is the most critical and most commonly missed security measure in AI-built applications.</p>
+            <p><strong>How to verify</strong>: Open your Supabase dashboard, go to each table, and check that RLS is enabled (the lock icon should be active). Review the policies to ensure they restrict access by user ID.</p>
+
+            <h3>4. HTTPS Is Enforced on All Pages</h3>
+            <p><strong>Check</strong>: Your application redirects all HTTP traffic to HTTPS and has a valid SSL certificate.</p>
+            <p><strong>Why it matters</strong>: Without HTTPS, user data (including login credentials) is transmitted in plain text and can be intercepted by anyone on the same network.</p>
+            <p><strong>How to verify</strong>: Visit your application URL with http:// — it should automatically redirect to https://. Check that the browser shows a lock icon in the address bar.</p>
+
+            <h3>5. Input Validation on All User-Submitted Data</h3>
+            <p><strong>Check</strong>: Every form and API endpoint validates and sanitizes user input before processing or storing it.</p>
+            <p><strong>Why it matters</strong>: Without validation, attackers can inject malicious scripts (XSS), SQL commands (SQL injection), or corrupt your database with invalid data.</p>
+            <p><strong>How to verify</strong>: Try submitting forms with empty fields, extremely long text, HTML tags, and special characters. The application should reject invalid input with clear error messages.</p>
+        </section>
+
+        <section>
+            <h2>Payments (Items 6–9) — Required If You Accept Payments</h2>
+
+            <h3>6. Stripe Is in Live Mode</h3>
+            <p><strong>Check</strong>: Your Stripe integration uses live API keys (starting with pk_live and sk_live), not test keys.</p>
+            <p><strong>How to verify</strong>: Check your environment variables for the Stripe publishable key prefix. Process a small real transaction (€0.50) and verify it appears in your Stripe dashboard under live mode.</p>
+
+            <h3>7. Webhooks Are Configured and Verified</h3>
+            <p><strong>Check</strong>: Stripe webhooks are configured to send events to your production endpoint, and your code verifies the webhook signature before processing.</p>
+            <p><strong>Why it matters</strong>: Without webhook verification, attackers could send fake payment confirmation events to grant themselves free access. Without webhooks at all, your application cannot respond to payment events like successful payments, cancellations, and failed charges.</p>
+
+            <h3>8. Failed Payments Are Handled Gracefully</h3>
+            <p><strong>Check</strong>: When a payment fails (declined card, insufficient funds, expired card), your application shows a clear error message and does not grant access to paid features.</p>
+            <p><strong>How to verify</strong>: Use Stripe's test card numbers for declined payments and verify your application handles each scenario correctly.</p>
+
+            <h3>9. Users Get Access Only After Confirmed Payment</h3>
+            <p><strong>Check</strong>: Premium features are gated behind verified payment status, not just the completion of a checkout form.</p>
+            <p><strong>Why it matters</strong>: Without proper verification, users might access paid features by navigating directly to URLs or manipulating client-side state.</p>
+        </section>
+
+        <section>
+            <h2>Deployment (Items 10–14) — Essential</h2>
+
+            <h3>10. App Runs on Your Own Domain</h3>
+            <p><strong>Check</strong>: Your application is accessible at yourdomain.com, not a preview URL like project-abc123.vercel.app.</p>
+
+            <h3>11. Environment Variables Are Set for Production</h3>
+            <p><strong>Check</strong>: All configuration values (API keys, database URLs, feature flags) are stored as environment variables in your hosting platform, not in code files.</p>
+
+            <h3>12. Build Process Works Without Manual Steps</h3>
+            <p><strong>Check</strong>: Pushing code to your repository automatically triggers a build and deployment without any manual intervention.</p>
+
+            <h3>13. Error Tracking Is Set Up</h3>
+            <p><strong>Check</strong>: An error tracking service (Sentry, LogRocket, Bugsnag) is configured to capture and alert you about production errors.</p>
+
+            <h3>14. Backup Strategy Exists for Your Database</h3>
+            <p><strong>Check</strong>: Your database has automated daily backups enabled and you have tested restoring from a backup at least once.</p>
+        </section>
+
+        <section>
+            <h2>Performance (Items 15–18) — Strongly Recommended</h2>
+
+            <h3>15. Page Loads in Under 3 Seconds</h3>
+            <p><strong>Check</strong>: Test your application on Google PageSpeed Insights — aim for a performance score above 70 on mobile.</p>
+
+            <h3>16. Works on Mobile</h3>
+            <p><strong>Check</strong>: All pages and features work correctly on mobile devices with touch-friendly buttons, readable text, and proper layouts.</p>
+
+            <h3>17. Handles Errors Without Crashing</h3>
+            <p><strong>Check</strong>: Network failures, API errors, and missing data show user-friendly error messages instead of white screens or technical error dumps.</p>
+
+            <h3>18. No Console Errors in Production</h3>
+            <p><strong>Check</strong>: Open browser developer tools on your production site — there should be no JavaScript errors in the console during normal usage.</p>
+        </section>
+
+        <section>
+            <h2>Legal and Launch (Items 19–20) — Required for EU</h2>
+
+            <h3>19. Terms of Service and Privacy Policy in Place</h3>
+            <p><strong>Check</strong>: Your application has accessible pages for Terms of Service and Privacy Policy, and users agree to these during registration.</p>
+
+            <h3>20. Tested with at Least 3 Real People</h3>
+            <p><strong>Check</strong>: At least 3 people from your target audience have used the application without guidance and you have addressed the issues they found.</p>
+        </section>
+
+        <section>
+            <h2>Scoring Your Application</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Score</th>
+                        <th>Assessment</th>
+                        <th>Recommendation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>18–20 passed</td>
+                        <td>Launch ready</td>
+                        <td>You are ready to accept real users. Launch with confidence.</td>
+                    </tr>
+                    <tr>
+                        <td>14–17 passed</td>
+                        <td>Almost ready</td>
+                        <td>Fix the remaining items before launch. Most gaps can be addressed in a few days.</td>
+                    </tr>
+                    <tr>
+                        <td>8–13 passed</td>
+                        <td>Needs work</td>
+                        <td>Your prototype is a strong starting point but needs professional production readiness work.</td>
+                    </tr>
+                    <tr>
+                        <td>0–7 passed</td>
+                        <td>Not ready</td>
+                        <td>Do not launch yet. Get professional help to address the critical gaps.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Most AI-built prototypes score between 4 and 8 on this checklist. That is completely normal — it reflects the gap between prototype and production that all AI-generated applications share. The important thing is knowing the score and addressing the gaps before your first real user.</p>
+        </section>
+
+        <section class="key-takeaway">
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li>Use this 20-point checklist to assess your AI-built prototype's production readiness</li>
+                <li>All 5 security items are mandatory — never launch without them</li>
+                <li>Most AI-built prototypes pass only 4–8 of the 20 items</li>
+                <li>Row Level Security is the most commonly failed and most critical item</li>
+                <li>Professional launch services can address all failed items in 1–3 weeks</li>
+            </ul>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>How many checklist items must pass before I can launch?</h3>
+            <p>All 5 security items are mandatory — launching without them exposes your users' data and creates legal liability. Payment items are required if you accept payments. We recommend passing at least 16 out of 20 items before going live.</p>
+
+            <h3>What is the most commonly failed checklist item?</h3>
+            <p>Row Level Security (item 3) is the most commonly failed item. Approximately 80% of AI-built Supabase applications we review have RLS either disabled or incorrectly configured, meaning any authenticated user can access any other user's data.</p>
+
+            <h3>Can I use this checklist for apps not built with AI?</h3>
+            <p>Yes, this checklist applies to any web application preparing for launch. The items are universal production readiness requirements. However, AI-built applications fail these checks more frequently because AI generators prioritize functionality and UI over security and operational readiness.</p>
+
+            <h3>How long does it take to fix failed checklist items?</h3>
+            <p>For an experienced developer, most individual items take 1–4 hours to implement. The full set of fixes for a typical AI-built application takes 1–3 weeks when done professionally. LaunchStudio handles all checklist items as part of our launch packages, priced at €800–€7,500.</p>
+
+            <h3>What happens if I launch without completing the security checklist?</h3>
+            <p>Launching without security measures exposes you to data breaches, unauthorized access to user accounts, potential GDPR violations (with fines up to 4% of annual revenue or €20 million), loss of user trust, and potential legal action from affected users.</p>
+        </section>
+
+        <section class="cta">
+            <h2>Scored Below 16? We Can Help</h2>
+            <p>LaunchStudio fixes every item on this checklist. We take your AI-built prototype and make it production-ready with security, payments, hosting, and deployment. <a href="https://launchstudio.eu/en/#contact">Get a free quote today</a>.</p>
+        </section>
+    </article>
+</body>
+</html>

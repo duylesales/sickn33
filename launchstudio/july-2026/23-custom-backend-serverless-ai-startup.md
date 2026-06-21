@@ -6,78 +6,92 @@ Buyer Stage: Awareness
 
 # Do I Need a Custom Backend for My AI Startup?
 
-## Nội dung
 If you used Lovable, Bolt, or Cursor to build your MVP, you likely have a "serverless" application. There is a frontend (React), a database (Supabase), but no traditional backend server running Node.js or Python. For many first-time technical founders, this feels wrong. "Don't I need a backend?" The short answer is: probably not. The serverless architecture is more than capable for 95% of AI startups, but understanding its limits is crucial before you launch.
 
-            ## The Traditional vs. Serverless Architecture
+## The Traditional vs. Serverless Architecture
 
-            **Traditional Architecture**: Your React frontend sends a request to your custom Node.js server. The server verifies the user, securely holds all API keys, queries the database, processes the data, and sends it back to the frontend. You must rent a server (like an EC2 instance on AWS), keep it running 24/7, and manage scaling.
+**Traditional Architecture**: Your React frontend sends a request to your custom Node.js server. The server verifies the user, securely holds all API keys, queries the database, processes the data, and sends it back to the frontend. You must rent a server (like an EC2 instance on AWS), keep it running 24/7, and manage scaling.
 
-            **The Serverless (AI Builder) Architecture**: Your React frontend talks directly to the database (Supabase). Security is handled at the database level via Row Level Security (RLS). When you need to hide a secret key (like connecting to Stripe or OpenAI), the frontend calls a "Serverless Function" or "Edge Function"—a tiny, temporary piece of backend code that spins up just to handle that one request, then disappears.
+**The Serverless (AI Builder) Architecture**: Your React frontend talks directly to the database (Supabase). Security is handled at the database level via Row Level Security (RLS). When you need to hide a secret key (like connecting to Stripe or OpenAI), the frontend calls a "Serverless Function" or "Edge Function"—a tiny, temporary piece of backend code that spins up just to handle that one request, then disappears.
 
-            ## Why Serverless is Perfect for AI Startups
+## Why Serverless is Perfect for AI Startups
 
-            AI tools default to the serverless pattern because it eliminates massive amounts of boilerplate code and infrastructure management.
+AI tools default to the serverless pattern because it eliminates massive amounts of boilerplate code and infrastructure management.
 
-                - **Infinite Scaling**: If your app goes viral, Vercel and Supabase handle the traffic spikes automatically. You do not need to configure load balancers.
+- **Infinite Scaling**: If your app goes viral, Vercel and Supabase handle the traffic spikes automatically. You do not need to configure load balancers.
 
-                - **Lower Costs**: You only pay for the exact compute time your Serverless Functions use, rather than paying for a server to sit idle at 3 AM.
+- **Lower Costs**: You only pay for the exact compute time your Serverless Functions use, rather than paying for a server to sit idle at 3 AM.
 
-                - **Faster Development**: The frontend developer (or the AI) can dictate data requirements directly to the database without waiting for a backend engineer to build an API endpoint.
+- **Faster Development**: The frontend developer (or the AI) can dictate data requirements directly to the database without waiting for a backend engineer to build an API endpoint.
 
-            ## How to Handle "Backend" Tasks in a Serverless App
+## How to Handle "Backend" Tasks in a Serverless App
 
-            Founders often assume they need a custom backend to handle sensitive tasks. In reality, modern serverless tools handle these securely:
+Founders often assume they need a custom backend to handle sensitive tasks. In reality, modern serverless tools handle these securely:
 
-                - **Hiding API Keys (Stripe, OpenAI)**: Use Edge Functions. The frontend calls the Edge Function, which securely accesses the API key from environment variables, makes the third-party request, and returns the data.
+- **Hiding API Keys (Stripe, OpenAI)**: Use Edge Functions. The frontend calls the Edge Function, which securely accesses the API key from environment variables, makes the third-party request, and returns the data.
 
-                - **Database Security**: Instead of a backend checking permissions, Supabase Row Level Security (RLS) ensures users can only access their own data.
+- **Database Security**: Instead of a backend checking permissions, Supabase Row Level Security (RLS) ensures users can only access their own data.
 
-                - **Scheduled Tasks (Cron Jobs)**: Need to send weekly summary emails? Use Supabase Edge Functions triggered by a scheduled Cron job within the Supabase dashboard.
+- **Scheduled Tasks (Cron Jobs)**: Need to send weekly summary emails? Use Supabase Edge Functions triggered by a scheduled Cron job within the Supabase dashboard.
 
-            ## When You Actually Need a Custom Backend
+## When You Actually Need a Custom Backend
 
-            Despite its power, the serverless architecture has hard limitations. You must build a traditional custom backend if your startup relies on:
+Despite its power, the serverless architecture has hard limitations. You must build a traditional custom backend if your startup relies on:
 
-                1. **Long-Running Processes**: Serverless functions usually time out after 10 to 60 seconds. If your app processes heavy video files, scrapes massive amounts of data, or runs complex ML models that take minutes to execute, serverless will fail.
+1. **Long-Running Processes**: Serverless functions usually time out after 10 to 60 seconds. If your app processes heavy video files, scrapes massive amounts of data, or runs complex ML models that take minutes to execute, serverless will fail.
 
-                2. **Heavy Background Queues**: If you need to reliably queue and process 100,000 tasks (like sending a massive email blast over several hours), you need a dedicated backend worker (like Redis + BullMQ).
+2. **Heavy Background Queues**: If you need to reliably queue and process 100,000 tasks (like sending a massive email blast over several hours), you need a dedicated backend worker (like Redis + BullMQ).
 
-                3. **Persistent Connections**: While Supabase offers real-time subscriptions, highly complex, high-frequency multiplayer games or intense financial trading dashboards often require custom WebSocket servers running continuously.
+3. **Persistent Connections**: While Supabase offers real-time subscriptions, highly complex, high-frequency multiplayer games or intense financial trading dashboards often require custom WebSocket servers running continuously.
 
-            ## The Verdict
+## The Verdict
 
-            Do not build a custom backend "just in case." If you are building a standard B2B SaaS, an AI wrapper, a marketplace, or a productivity tool, the serverless architecture generated by your AI builder is entirely sufficient for production—provided you configure security (RLS) and Edge Functions correctly.
+Do not build a custom backend "just in case." If you are building a standard B2B SaaS, an AI wrapper, a marketplace, or a productivity tool, the serverless architecture generated by your AI builder is entirely sufficient for production—provided you configure security (RLS) and Edge Functions correctly.
 
-            ## Key Takeaways
+## Key Takeaways
 
-                - AI builders generate "serverless" architectures where the frontend communicates directly with managed services like Supabase.
+- AI builders generate "serverless" architectures where the frontend communicates directly with managed services like Supabase.
 
-                - Serverless is cheaper, scales infinitely, and is more than sufficient for 95% of standard SaaS applications.
+- Serverless is cheaper, scales infinitely, and is more than sufficient for 95% of standard SaaS applications.
 
-                - You can securely hide API keys (Stripe, OpenAI) using Edge/Serverless Functions instead of a dedicated backend server.
+- You can securely hide API keys (Stripe, OpenAI) using Edge/Serverless Functions instead of a dedicated backend server.
 
-                - You only need a custom backend if your app performs tasks that take longer than 60 seconds, requires complex background task queuing, or needs heavy persistent connections.
+- You only need a custom backend if your app performs tasks that take longer than 60 seconds, requires complex background task queuing, or needs heavy persistent connections.
 
-            ## Make Your Serverless Architecture Bulletproof
+## Make Your Serverless Architecture Bulletproof
 
-            LaunchStudio audits your AI-generated code, secures your API keys with Edge Functions, and ensures your Supabase RLS is production-ready. [Get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio audits your AI-generated code, secures your API keys with Edge Functions, and ensures your Supabase RLS is production-ready.
 
+LaunchStudio is operated by **Manifera**, an international software engineering company led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420) and development hubs in **Singapore** and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. [Get a free quote today](https://launchstudio.eu/en/#contact).
+
+## Real example
+
+### An AI-Native Founder in Action: Social Media Scheduler
+
+James, a startup founder, used **Cursor** to build a social media scheduler prototype. While the application was functional, it had key components crashing due to heavy client-side API requests exceeding browser execution limits.
+
+James partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team migrated heavy media-processing tasks to a serverless backend environment and set up an async queue.
+
+**Result:** James stabilized the client UI, allowing seamless scheduling of 100+ posts in batch operations.
+
+**Cost & Timeline:** €2,200 (Custom Backend Package) — production-ready and deployed in 7 business days.
+
+---
 ## FAQ
 ## Frequently Asked Questions
 
-            ### What does 'serverless' mean in the context of an AI-built app?
+### What does 'serverless' mean in the context of an AI-built app?
 
-            It means you don't manage a dedicated server running 24/7. Your frontend talks directly to managed services (Supabase) and uses temporary 'Edge Functions' for secure tasks.
+It means you don't manage a dedicated server running 24/7. Your frontend talks directly to managed services (Supabase) and uses temporary 'Edge Functions' for secure tasks.
 
-            ### Can a serverless app scale to thousands of users?
+### Can a serverless app scale to thousands of users?
 
-            Yes. Managed services like Vercel and Supabase automatically handle scaling. You don't need to worry about load balancing when traffic spikes.
+Yes. Managed services like Vercel and Supabase automatically handle scaling. You don't need to worry about load balancing when traffic spikes.
 
-            ### When does my startup actually need a custom backend server?
+### When does my startup actually need a custom backend server?
 
-            When you have long-running tasks (over 60 seconds) like video processing, complex background job queues, or high-frequency real-time requirements.
+When you have long-running tasks (over 60 seconds) like video processing, complex background job queues, or high-frequency real-time requirements.
 
-            ### How do I hide my OpenAI API key without a backend server?
+### How do I hide my OpenAI API key without a backend server?
 
-            You use Edge Functions. The frontend calls the Edge Function, which securely retrieves the key from environment variables on the server, makes the request, and returns the result.
+You use Edge Functions. The frontend calls the Edge Function, which securely retrieves the key from environment variables on the server, makes the request, and returns the result.

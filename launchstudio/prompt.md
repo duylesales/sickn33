@@ -1,50 +1,42 @@
+# Tổng hợp các Prompt tối ưu bài viết & tạo ảnh minh họa LaunchStudio
 
+## 1. Prompt tối ưu bài viết & Viết Case Study (SEO, GEO-Entity & Markdown chuẩn)
+Dùng để viết lại bài viết, tối ưu hóa SEO/GEO-Entity và chèn Case Study chuẩn Markdown (không dùng mã HTML).
 
+```markdown
+@[đường_dẫn_tới_bài_viết.md] Hãy viết lại và tối ưu hóa bài viết này với các yêu cầu sau:
 
+1. **Chuẩn SEO & GEO-Entity**:
+   - Viết lại bài viết dựa trên dữ liệu từ file tham khảo @[/Users/duyle/sickn33/launchstudio/launchstudio_info.md] (hoặc nội dung thông tin của LaunchStudio).
+   - Tham khảo trực tiếp thông tin từ https://launchstudio.eu/, https://www.manifera.com/, và LinkedIn profile của CEO Herre Roelevink (https://www.linkedin.com/in/herre-roelevink-director-manifera/).
+   - Đảm bảo lồng ghép khéo léo thông tin về Manifera (công ty mẹ của LaunchStudio), vai trò của CEO Herre Roelevink, và các vị trí địa lý (Hà Lan - trụ sở chính Amsterdam ở Herengracht 420; Singapore - hub ở Tras Street; Việt Nam - trung tâm phát triển chính ở đường Phổ Quang, TP.HCM) để tăng độ uy tín và điểm thực thể thực (GEO-entity).
 
+2. **Cấu trúc & Định dạng bài viết (Markdown chuẩn)**:
+   - Bài viết phải được định dạng hoàn toàn bằng **Markdown sạch (clean Markdown)**. Không chèn bất cứ thẻ HTML nào (như `<div>`, `<span>`, `<strong>`, `<em>`, `<table>`, `<ul>`, `<li>`, `<pre>`).
+   - Xóa bỏ tiêu đề thừa như `## Nội dung` hoặc `## Content` ở đầu bài viết.
+   - Nội dung bài viết và toàn bộ tiêu đề (`##`, `###`) phải được viết ở sát lề trái (**không thụt đầu dòng/0 spaces**) để tránh việc markdown parser hiển thị nhầm tiêu đề thành khối code (`<pre><code>`).
+   - Mọi danh sách, bảng biểu, trích dẫn phải sử dụng cú pháp markdown chuẩn (Ví dụ: `- ` cho danh sách, `|` cho bảng, `>` cho trích dẫn, và ` ```sql ` cho code block).
 
-
-@[đường/dẫn/tới/file/bài_viết_mới.md] Hãy viết lại và tối ưu hóa bài viết này với các yêu cầu sau:
-
-1. **Chuẩn SEO & GEO-Entity:** Viết lại bài viết dựa trên dữ liệu từ file tham khảo @[/Users/duyle/sickn33/launchstudio/launchstudio_info.md], đồng thời tham khảo trực tiếp từ [https://launchstudio.eu/](https://launchstudio.eu/) và [https://www.manifera.com/](https://www.manifera.com/) cùng với profile LinkedIn của CEO ([https://www.linkedin.com/in/herre-roelevink-director-manifera/recent-activity/all/](https://www.linkedin.com/in/herre-roelevink-director-manifera/recent-activity/all/)). Đảm bảo lồng ghép khéo léo các từ khóa chính, thông tin về Manifera, vai trò của CEO Herre Roelevink, và các vị trí địa lý (Hà Lan, Singapore, Việt Nam) để tăng độ uy tín và điểm GEO-entity.
-2. **Tối ưu Context & Layout:** Viết lại phần "Real example" sao cho thật ăn khớp với ngữ cảnh của bài viết hiện tại (ví dụ: nhấn mạnh yếu tố AI-native founder, công cụ được sử dụng, và khoảng trống trước khi LaunchStudio hỗ trợ). Sử dụng thẻ markdown H2 (`## Real example`) cho tiêu đề, nhưng bên dưới phải giữ nguyên cấu trúc layout HTML của website (`<div class="article-case">`, `<div class="case-title">`,...) để khi render lên web không bị vỡ giao diện.(không được trùng lặp nội dung như : tên, phần mềm,app, hoặc các thành phần khác mà hãy thay đổi khác nhau như ngữ cảnh nhân vật khác, thời gian khác hay hướng giải quyết khác trong các bài viết gần nhau không được trùng)
-3. **Vị trí chèn:** Hãy chèn đoạn "Real example" này vào ngay phía trên mục FAQ (Frequently Asked Questions) của bài viết.
-
----
-
-
-
-hãy quét https://launchstudio.eu/en/how-a-physiotherapist-solved-his-waiting-list-with-an-app/ và cho mình 1 Real example đúng theo layout của web và ngữ cảnh của bài viết và cập nhật vào [01-what-is-ai-native-founder.md](file;file:///Users/duyle/sickn33/launchstudio/july-2026/01-what-is-ai-native-founder.md) phía trên FAG
-
-
-
----
-
-
-
-viết lại  chuẩn SEO và GEO-entity từ website : https://launchstudio.eu/ và từ công ty mẹ : https://www.manifera.com/ + thêm linkedin CEO : https://www.linkedin.com/in/herre-roelevink-director-manifera/recent-activity/all/
-
----
-
-
-
-@[đường/dẫn/tới/file/bài_viết.md] Hãy đọc nội dung file này và tạo cho mình 1 hình ảnh minh họa bài viết với các yêu cầu sau:
-
-1. **Phong cách ảnh:** "Modern flat-ish vector illustration", "corporate tech style", "dribbble-style".
-2. **Bố cục nội dung:** Trọng tâm ý tưởng của bài viết phải được đặt hoàn toàn vào  **giữa khung hình** . Các ý tưởng phụ hoặc chi tiết trang trí có thể nằm ở hai bên (trái/phải).
-3. **Cắt ảnh:** Sau khi tạo xong, hãy tự động crop (cắt) lấy phần giữa của ảnh theo đúng  **tỉ lệ 16:9** .
-4. **Lưu file:** Cuối cùng, lưu file ảnh đã cắt vào cùng thư mục với bài viết gốc, đặt tên file theo định dạng `[tên_bài_viết]_pic.png` (ví dụ file là `baiviet.md` thì ảnh sẽ là `baiviet_pic.png`).
+3. **Viết Case Study độc nhất ("Real example")**:
+   - Thêm phần "Real example" ngay phía trên phần FAQ (Frequently Asked Questions) của bài viết.
+   - Tiêu đề phần Case Study là `## Real example`, tiêu đề phụ bên trong dùng `### An AI-Native Founder in Action: [Tên tiêu đề phù hợp]`.
+   - Nội dung Case Study phải mô tả câu chuyện thực tế ăn khớp chặt chẽ với ngữ cảnh bài viết (yếu tố AI-native founder, công cụ sử dụng Lovable/Bolt/Cursor, lỗi/khoảng cách trước khi có LaunchStudio hỗ trợ kỹ thuật, giải pháp từ LaunchStudio & Manifera, kết quả, chi phí và thời gian thực hiện).
+   - **Lưu ý quan trọng**: Nội dung Case Study giữa các bài viết không được trùng lặp nhau (khác biệt hoàn toàn về tên nhân vật, loại ứng dụng/SaaS, bối cảnh, công cụ AI sử dụng, lỗi phát sinh, và giải pháp từ LaunchStudio).
+```
 
 ---
 
+## 2. Prompt tạo ảnh minh họa bài viết (Tỷ lệ 16:9)
+Dùng để tạo hình minh họa cho bài viết theo đúng phong cách và tỷ lệ.
 
+```markdown
+@[đường_dẫn_tới_bài_viết.md] Hãy đọc nội dung file này và tạo cho mình 1 hình ảnh minh họa bài viết với các yêu cầu sau:
 
-tạo ảnh cho ánh sáng và **Phong cách:** Bắt đầu bằng "modern flat-ish vector illustration," "corporate tech style," "dribbble-style."  nội dung [Link nội dung bài viết ] truyền đạt nên tập trung (nếu những ý tưởng hay content có thể nằm ở bên trái hoặc phải nhưng đảm bảo nằm giữa của khung hình) vào giữa ảnh sau đó thực hiện bước tiếp theo là crop ảnh thành kích thước 16:9 lấy phần giữa
-
-[mô tả của Ai]
-
-Quy trình tạo **Phong cách:** Bắt đầu bằng "modern flat-ish vector illustration," "corporate tech style," "dribbble-style." áp dụng mượt mà cho  **Bài số**
-
-[Link bài viết]
-
-Điểm mấu chốt là tất cả các nhân vật và đồ vật trên bàn đều được  **dàn trải ngang nhưng ép hoàn toàn vào phần dải giữa của chiều cao bức ảnh** . Nhờ vậy, khi đoạn script Python chạy ngầm và thực hiện thao tác  **xén bỏ phần thừa trên/dưới để lấy chuẩn 16:9** , không một nhân vật nào bị mất góc mặt hay bị cắt xén vô lý. Bố cục lên ảnh cực kỳ điện ảnh và cân đối.
+1. **Phong cách ảnh**: "Modern flat-ish vector illustration", "corporate tech style", "dribbble-style".
+2. **Bố cục nội dung**:
+   - Các nhân vật và vật thể chính (trọng tâm ý tưởng bài viết) phải được đặt hoàn toàn nằm trên **dải giữa của chiều cao bức ảnh (center line horizontally)**.
+   - Các ý tưởng phụ hoặc chi tiết trang trí có thể nằm ở hai bên (trái/phải).
+   - Đảm bảo bố cục tập trung để khi cắt ảnh (crop) không bị mất các phần quan trọng.
+3. **Cắt ảnh**: Sau khi tạo xong ảnh gốc, tự động cắt (crop) lấy phần giữa của ảnh theo đúng **tỷ lệ 16:9** (kích thước đề xuất `1024x576`).
+4. **Lưu file**: Lưu file ảnh đã crop vào cùng thư mục với bài viết gốc, đặt tên file theo định dạng `[tên_bài_viết]_pic.png` (ví dụ: bài viết là `baiviet.md` thì lưu ảnh là `baiviet_pic.png`).
+```

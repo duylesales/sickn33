@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Up Error Tracking: Why You Need Sentry Before You Launch — Launch Studio</title>
+    <meta name="description" content="Stop relying on users to tell you when your app breaks. Learn why setting up error tracking tools like Sentry is mandatory for AI-built SaaS applications.">
+    <link rel="canonical" href="https://launchstudio.eu/en/insights/setting-up-error-tracking-sentry/"/>
+    <meta property="og:title" content="Setting Up Error Tracking: Why You Need Sentry Before You Launch — Launch Studio">
+    <meta property="og:description" content="Stop relying on users to tell you when your app breaks. Learn why error tracking is mandatory.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://launchstudio.eu/en/insights/setting-up-error-tracking-sentry/">
+    <meta property="og:site_name" content="Launch Studio">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Setting Up Error Tracking: Why You Need Sentry Before You Launch",
+        "description": "Stop relying on users to tell you when your app breaks. Learn why setting up error tracking tools like Sentry is mandatory for AI-built SaaS applications.",
+        "image": "",
+        "author": { "@type": "Organization", "name": "Launch Studio", "url": "https://launchstudio.eu/en/" },
+        "publisher": { "@type": "Organization", "name": "Launch Studio", "logo": { "@type": "ImageObject", "url": "https://launchstudio.eu/wp-content/uploads/2026/04/cropped-favicon-192x192.png" } },
+        "datePublished": "2026-07-30",
+        "dateModified": "2026-07-30",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/insights/setting-up-error-tracking-sentry/" }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Why can't I just look at the Vercel or Supabase logs to find errors?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Platform logs are useful, but they only show backend server errors. If a React component crashes in the user's browser, or a button click fails silently, Vercel and Supabase never see it. Error tracking tools like Sentry capture frontend browser crashes, device information, and the exact steps the user took before the crash, which standard logs cannot provide." }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Sentry?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Sentry is an industry-standard error tracking and performance monitoring platform. You install a small Sentry script in your React application. When your app crashes or throws an exception for a user, Sentry captures the error, groups it with similar errors, and sends an alert to your phone or Slack with the exact line of code that caused the problem." }
+            },
+            {
+                "@type": "Question",
+                "name": "Do users actually report bugs when they find them?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. Industry statistics show that fewer than 5% of users will contact support when they encounter a bug. The vast majority of users will simply close the tab, assume your product is broken, and never return. Relying on user reports means you are blind to 95% of your application's failures." }
+            },
+            {
+                "@type": "Question",
+                "name": "Are there free alternatives to Sentry?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Sentry itself has a very generous free Developer tier that is perfectly adequate for launching an MVP. Other excellent alternatives with robust free tiers include LogRocket (which also records video sessions of bugs) and GlitchTip (an open-source Sentry alternative). The tool you choose matters less than having the monitoring in place." }
+            },
+            {
+                "@type": "Question",
+                "name": "Is setting up error tracking difficult?",
+                "acceptedAnswer": { "@type": "Answer", "text": "For standard React/Vite apps, it takes about 10 minutes. You create an account, install the npm package, and initialize the tracker with a provided DSN key. For Next.js apps on Vercel, it is even easier, as Vercel offers a one-click Sentry integration that automatically configures source maps and environment variables." }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Setting Up Error Tracking: Why You Need Sentry Before You Launch</h1>
+            <p class="meta">By <strong>Launch Studio</strong> · July 30, 2026 · 7 min read</p>
+        </header>
+
+        <section>
+            <p>One of the most dangerous assumptions technical founders make is believing that users will tell them when the product breaks. They won't. When a user clicks "Checkout" and the screen goes blank, they do not email support to explain the bug. They close the tab and go to your competitor. Launching an AI-built app without error tracking means you are flying completely blind. Here is why installing a tool like Sentry is a mandatory pre-launch step.</p>
+        </section>
+
+        <section>
+            <h2>The Silent Failure Problem</h2>
+            <p>When you build in Cursor or Lovable, you constantly monitor your local terminal and browser console. If a variable is undefined, a bright red error message tells you exactly what went wrong. You fix it and move on.</p>
+            <p>In production, those bright red errors still happen, but they happen inside the user's browser, thousands of miles away. Your Vercel logs look fine because the server responded correctly, but the React frontend crashed on the user's specific Android device. You have zero visibility into this failure.</p>
+            <p>Without error tracking, your only metric for failure is a low conversion rate. You will spend weeks tweaking marketing copy, completely unaware that a JavaScript error is preventing 30% of users from submitting the signup form.</p>
+        </section>
+
+        <section>
+            <h2>How Error Tracking Works</h2>
+            <p>Tools like Sentry, LogRocket, or Bugsnag solve this problem by sitting quietly inside your application code.</p>
+            <p>When an unhandled exception occurs (a crash), the tool immediately captures the error details, the stack trace (the exact line of code that failed), the user's browser and operating system, and the sequence of clicks that led to the crash. It bundles this information and sends it to a dashboard, pinging your phone or Slack channel instantly.</p>
+            <p>Instead of receiving a vague user email saying "it doesn't work," you get a notification saying: "TypeError: Cannot read properties of null (reading 'stripe_id') on line 42 of Checkout.tsx for a user on Mobile Safari." You can fix the bug before the user even has time to complain.</p>
+        </section>
+
+        <section>
+            <h2>Setting Up Sentry for AI Apps</h2>
+            <p>Sentry is the industry standard and offers a free tier perfect for MVPs. Integrating it is fast, but AI builders often need a nudge to do it correctly.</p>
+            <ol>
+                <li><strong>Create a Sentry Account</strong>: Sign up and create a new project for your framework (e.g., React or Next.js).</li>
+                <li><strong>Install the SDK</strong>: Ask your AI builder to <code>npm install @sentry/react</code> or <code>@sentry/nextjs</code>.</li>
+                <li><strong>Initialize Sentry</strong>: Provide the AI with the initialization code snippet from the Sentry dashboard (which includes your unique DSN key) and instruct it to place it in your root entry file (<code>main.tsx</code> for Vite, or via the Vercel integration for Next.js).</li>
+                <li><strong>Upload Source Maps</strong>: This is critical. Production code is minified and unreadable. Source maps allow Sentry to translate the minified error back into your original, readable code so you can find the exact line. If you use Vercel, the Sentry integration handles this automatically.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>The "Alert Fatigue" Warning</h2>
+            <p>Once you install Sentry, you will likely discover that the internet is a messy place. Browser extensions, ad blockers, and network timeouts generate harmless errors constantly. If you send an email for every single error, you will quickly ignore them all—a phenomenon known as alert fatigue.</p>
+            <p><strong>Best Practice</strong>: Configure your alerts so you are only notified when a <em>new</em> issue occurs for the first time, or when an error occurs during critical paths (like <code>/checkout</code> or <code>/signup</code>). Ignore errors related to third-party scripts or ad blockers.</p>
+        </section>
+
+        <section class="key-takeaway">
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li>Users rarely report bugs; they simply abandon your product. Error tracking is the only way to know when your frontend crashes.</li>
+                <li>Tools like Sentry capture the exact line of code, browser type, and user actions that caused the crash.</li>
+                <li>Integration takes 10 minutes and should be completed before your first real user logs in.</li>
+                <li>Configuring source maps is essential so errors point to readable code rather than minified production bundles.</li>
+                <li>Filter your alerts to focus on critical paths (signup, checkout) to avoid alert fatigue from harmless browser noise.</li>
+            </ul>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>Why can't I just look at the Vercel or Supabase logs?</h3>
+            <p>Platform logs only show backend errors. If a React component crashes in the user's browser, Vercel and Supabase never see it. You need frontend error tracking.</p>
+
+            <h3>Do users actually report bugs when they find them?</h3>
+            <p>No. Fewer than 5% of users will report a bug. The rest assume the product is broken and leave.</p>
+
+            <h3>Are there free alternatives to Sentry?</h3>
+            <p>Sentry has a generous free tier. Other excellent alternatives with free tiers include LogRocket and Bugsnag.</p>
+
+            <h3>Is setting up error tracking difficult?</h3>
+            <p>For standard apps, it takes about 10 minutes to install the package and initialize the tracker. Next.js on Vercel offers a simple one-click integration.</p>
+        </section>
+
+        <section class="cta">
+            <h2>Stop Flying Blind</h2>
+            <p>LaunchStudio implements comprehensive error tracking, performance monitoring, and alerting systems so you know exactly when and why issues happen in production. <a href="https://launchstudio.eu/en/#contact">Get a free quote today</a>.</p>
+        </section>
+    </article>
+</body>
+</html>

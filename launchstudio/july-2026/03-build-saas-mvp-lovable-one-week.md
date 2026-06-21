@@ -138,14 +138,18 @@ By combining *"Dutch management with Vietnamese mastery,"* Manifera provides a w
 LaunchStudio takes your AI-built prototype and handles security, payments, hosting, and deployment so you can launch with confidence. Backed by Manifera's global software expertise, you get top-tier engineering without the agency price tag. Fixed prices from €800. [Get a free quote today](https://launchstudio.eu/en/#contact).
 
 ## Real example
-<div class="article-case">
-<div class="case-title">An AI-Native Founder in Action: Logistics Dashboard in 4 Days</div>
-<p>Mark, an operations manager at a regional logistics company, struggled with tracking freelance delivery drivers across multiple spreadsheets. Taking the <strong>AI-native founder</strong> route, he spent his weekend using <strong>Lovable</strong>. By Day 4, he had a fully functioning SaaS MVP that allowed drivers to log routes and update delivery statuses via a clean Supabase backend.</p>
-<p>The prototype was an instant hit internally, but launching it as a standalone SaaS product to other logistics firms exposed critical gaps: there was no payment gateway, and the database lacked Row Level Security, meaning driver data wasn't properly isolated between different companies.</p>
-<p>Mark turned to <strong>LaunchStudio (by Manifera)</strong>. Instead of throwing away his Lovable code, the engineering team hardened the Supabase backend, implemented Stripe subscriptions, and deployed the app on a secure, production-grade cloud environment.</p>
-<p><strong>Result:</strong> Mark launched his logistics SaaS to his first paying customers just two weeks later. <em>"Lovable helped me build the car, but LaunchStudio built the engine and the brakes so I could safely drive it on the highway."</em></p>
-<p><strong>Cost & Timeline:</strong> €1,800 (Scale Package) — production-ready and deployed in 8 business days.</p>
-</div>
+
+### An AI-Native Founder in Action: Logistics Dashboard in 4 Days
+
+Mark, an operations manager at a regional logistics company, struggled with tracking freelance delivery drivers across multiple spreadsheets. Taking the **AI-native founder** route, he spent his weekend using **Lovable**. By Day 4, he had a fully functioning SaaS MVP that allowed drivers to log routes and update delivery statuses via a clean Supabase backend.
+
+The prototype was an instant hit internally, but launching it as a standalone SaaS product to other logistics firms exposed critical gaps: there was no payment gateway, and the database lacked Row Level Security, meaning driver data wasn't properly isolated between different companies.
+
+Mark turned to **LaunchStudio (by Manifera)**. Instead of throwing away his Lovable code, the engineering team hardened the Supabase backend, implemented Stripe subscriptions, and deployed the app on a secure, production-grade cloud environment.
+
+**Result:** Mark launched his logistics SaaS to his first paying customers just two weeks later. *"Lovable helped me build the car, but LaunchStudio built the engine and the brakes so I could safely drive it on the highway."*
+
+**Cost & Timeline:** €1,800 (Scale Package) — production-ready and deployed in 8 business days.
 
 ---
 
