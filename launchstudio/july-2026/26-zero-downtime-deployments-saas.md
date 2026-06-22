@@ -89,7 +89,6 @@ Ella partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €1,400 (CI/CD Pipeline Package) — production-ready and deployed in 5 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is a zero-downtime deployment?

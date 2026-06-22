@@ -116,7 +116,6 @@ David partnered with **LaunchStudio (by Manifera)** to handle the transition. Th
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### Can AI builders create a fully production-ready application?

@@ -77,7 +77,6 @@ James partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €2,200 (Custom Backend Package) — production-ready and deployed in 7 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What does 'serverless' mean in the context of an AI-built app?

@@ -91,7 +91,6 @@ Logan partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,100 (Webhook Integration Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What exactly is a Stripe webhook?

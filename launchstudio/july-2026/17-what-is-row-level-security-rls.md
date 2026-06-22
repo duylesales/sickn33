@@ -82,7 +82,6 @@ Mason partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,200 (Security Hardening Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What exactly is Row Level Security (RLS)?

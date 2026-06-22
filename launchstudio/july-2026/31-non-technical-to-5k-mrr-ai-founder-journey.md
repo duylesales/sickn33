@@ -97,7 +97,6 @@ Daniel partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €1,200 (Monetization Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Can I really build a SaaS without knowing how to code?

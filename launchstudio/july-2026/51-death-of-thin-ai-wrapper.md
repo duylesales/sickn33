@@ -87,7 +87,6 @@ Dominic partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €3,600 (Vector Integration Package) — production-ready and deployed in 10 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What exactly is a 'thin wrapper'?

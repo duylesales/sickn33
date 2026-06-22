@@ -85,7 +85,6 @@ Stella partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €4,200 (AI Infrastructure Package) — production-ready and deployed in 14 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Which is cheaper: OpenAI or hosting my own model?

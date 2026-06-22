@@ -69,7 +69,6 @@ Hazel partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €4,800 (Vertical Integration Package) — production-ready and deployed in 14 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is a Horizontal AI?

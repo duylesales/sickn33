@@ -73,7 +73,6 @@ Skylar partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €6,500 (Enterprise Privacy Package) — production-ready and deployed in 18 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is PII Scrubbing?

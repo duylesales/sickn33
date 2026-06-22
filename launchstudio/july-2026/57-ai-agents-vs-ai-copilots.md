@@ -77,7 +77,6 @@ Ryder partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €3,800 (Agent Safeguards Package) — production-ready and deployed in 11 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is an AI Copilot?

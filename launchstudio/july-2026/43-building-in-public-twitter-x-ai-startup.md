@@ -69,7 +69,6 @@ Wyatt partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,350 (Launch Readiness Package) — production-ready and deployed in 5 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What exactly does 'Building in Public' mean?

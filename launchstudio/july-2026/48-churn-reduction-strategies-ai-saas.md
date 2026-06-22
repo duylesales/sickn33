@@ -69,7 +69,6 @@ Peyton partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €1,250 (Churn & Portal Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why do AI wrappers have such high churn rates?

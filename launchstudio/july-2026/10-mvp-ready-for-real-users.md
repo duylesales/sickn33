@@ -167,7 +167,6 @@ Mia partnered with **LaunchStudio (by Manifera)**. The engineering team left her
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### What is the difference between an MVP and a prototype?

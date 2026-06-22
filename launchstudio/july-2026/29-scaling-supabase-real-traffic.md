@@ -69,7 +69,6 @@ Michael partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €2,600 (Scaling & Optimization Package) — production-ready and deployed in 9 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why is my AI-built app suddenly loading so slowly?

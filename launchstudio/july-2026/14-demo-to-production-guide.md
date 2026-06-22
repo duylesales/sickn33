@@ -144,7 +144,6 @@ Ethan partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,500 (Demo to Production Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is the difference between a demo and a production application?

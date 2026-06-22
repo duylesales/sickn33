@@ -96,7 +96,6 @@ Lily partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €2,100 (Production Launch Package) — production-ready and deployed in 7 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### How much does it cost to build a prototype with AI?

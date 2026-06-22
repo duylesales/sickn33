@@ -105,7 +105,6 @@ Mia partnered with **LaunchStudio (by Manifera)** to make the product launch-rea
 **Cost & Timeline:** €1,400 (Subscription Ops Package) — production-ready and deployed in 5 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why isn't a Stripe Checkout button enough for a SaaS app?

@@ -83,7 +83,6 @@ Leo partnered with **LaunchStudio (by Manifera)** to make the product launch-rea
 **Cost & Timeline:** €1,100 (API Optimization Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is the 'OpenAI API Trap'?

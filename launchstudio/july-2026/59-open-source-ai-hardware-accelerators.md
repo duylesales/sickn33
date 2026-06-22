@@ -71,7 +71,6 @@ Lincoln partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €4,400 (GPU Optimization Package) — production-ready and deployed in 12 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why do AI startups rely so heavily on Nvidia?

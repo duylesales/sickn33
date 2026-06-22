@@ -85,7 +85,6 @@ Stella partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €5,200 (EU Compliance Package) — production-ready and deployed in 16 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is the EU AI Act?

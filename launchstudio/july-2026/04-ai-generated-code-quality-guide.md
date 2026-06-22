@@ -177,7 +177,6 @@ Emma reached out to **LaunchStudio (by Manifera)**. The engineering team kept he
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### Is AI-generated code safe to use in production?

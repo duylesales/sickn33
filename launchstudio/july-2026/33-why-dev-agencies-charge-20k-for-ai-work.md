@@ -83,7 +83,6 @@ Henry partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €3,200 (Hardening & Integration Package) — production-ready and deployed in 10 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Are traditional development agencies ripping me off?

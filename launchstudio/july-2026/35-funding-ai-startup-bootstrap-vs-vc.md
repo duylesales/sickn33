@@ -79,7 +79,6 @@ Jackson partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €3,500 (Enterprise Hardening Package) — production-ready and deployed in 12 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why is bootstrapping more viable now than 5 years ago?

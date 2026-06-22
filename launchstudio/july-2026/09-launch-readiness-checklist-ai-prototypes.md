@@ -173,7 +173,6 @@ Lucas partnered with **LaunchStudio (by Manifera)**. The engineering team secure
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### How many checklist items must pass before I can launch?

@@ -130,7 +130,6 @@ Sophia partnered with **LaunchStudio (by Manifera)** to bridge these gaps. The e
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### Why does my AI-built app look ready but isn't?

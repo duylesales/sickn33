@@ -75,7 +75,6 @@ Harper partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €1,300 (Database Tuning Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is Supabase?

@@ -75,7 +75,6 @@ Dylan partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €3,800 (Scale & Queue Package) — production-ready and deployed in 10 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why is influencer marketing better than Google Ads for AI tools?

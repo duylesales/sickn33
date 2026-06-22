@@ -73,7 +73,6 @@ Victoria partnered with **LaunchStudio (by Manifera)** to make the product launc
 **Cost & Timeline:** €950 (Error Monitoring Package) — production-ready and deployed in 3 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why can't I just look at the Vercel or Supabase logs?

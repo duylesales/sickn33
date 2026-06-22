@@ -85,7 +85,6 @@ Layla partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €2,800 (Relaunch & Scale Package) — production-ready and deployed in 8 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why did the first launch fail?

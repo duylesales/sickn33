@@ -75,7 +75,6 @@ Nova partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €2,900 (Large File Processing Package) — production-ready and deployed in 9 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is multi-modal AI?

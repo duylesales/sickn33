@@ -71,7 +71,6 @@ Xavier partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €3,100 (UX Refactoring Package) — production-ready and deployed in 9 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why is the chatbot interface considered flawed for SaaS?

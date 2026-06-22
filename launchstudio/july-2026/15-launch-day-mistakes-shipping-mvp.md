@@ -95,7 +95,6 @@ Noah partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €1,900 (Launch Guard Package) — production-ready and deployed in 6 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is the worst day of the week to launch?

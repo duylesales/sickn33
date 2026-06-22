@@ -107,7 +107,6 @@ Oliver partnered with **LaunchStudio (by Manifera)**. The engineering team secur
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### When should I get professional help with my AI-built prototype?

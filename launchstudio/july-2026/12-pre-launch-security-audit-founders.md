@@ -168,7 +168,6 @@ Lucas partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €2,400 (Audit & Hardening Package) — production-ready and deployed in 8 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### How do I perform a security audit on my AI-built application?

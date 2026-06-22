@@ -71,7 +71,6 @@ Greyson partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €2,200 (Future-Proofing Package) — production-ready and deployed in 7 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is Artificial General Intelligence (AGI)?

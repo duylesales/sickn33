@@ -87,7 +87,6 @@ Maya partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €1,700 (Secure Uploads Package) — production-ready and deployed in 6 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why is my cold email open rate so low?

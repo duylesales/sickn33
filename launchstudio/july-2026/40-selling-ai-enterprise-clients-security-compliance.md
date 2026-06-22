@@ -79,7 +79,6 @@ Violet partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €4,500 (Compliance & Security Package) — production-ready and deployed in 15 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why do enterprise clients reject standard AI wrappers?

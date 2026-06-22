@@ -83,7 +83,6 @@ Gavin partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,100 (Bot Mitigation Package) — production-ready and deployed in 4 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is an 'engineering as marketing' lead magnet?

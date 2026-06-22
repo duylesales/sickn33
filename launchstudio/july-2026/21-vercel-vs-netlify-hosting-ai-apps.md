@@ -99,7 +99,6 @@ Elijah partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €850 (Hosting & Deployment Package) — production-ready and deployed in 3 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Should I host my Lovable/Bolt app on Vercel or Netlify?

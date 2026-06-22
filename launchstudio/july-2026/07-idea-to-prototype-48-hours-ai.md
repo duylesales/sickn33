@@ -172,7 +172,6 @@ Thomas reached out to **LaunchStudio (by Manifera)**. The engineering team left 
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### Can you really build a prototype in 48 hours?

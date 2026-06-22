@@ -87,7 +87,6 @@ Lucas partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,500 (Usage Billing Package) — production-ready and deployed in 5 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why is pricing an AI app different from traditional SaaS?

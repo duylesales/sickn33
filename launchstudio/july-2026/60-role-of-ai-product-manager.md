@@ -71,7 +71,6 @@ Sadie partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €3,000 (SaaS MVP Launch Package) — production-ready and deployed in 9 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What does an AI Product Manager do?

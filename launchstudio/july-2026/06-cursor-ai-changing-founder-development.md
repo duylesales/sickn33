@@ -146,7 +146,6 @@ Elena reached out to **LaunchStudio (by Manifera)**. The engineering team review
 
 ---
 
-## FAQ
 ## Frequently Asked Questions
 
 ### What is Cursor AI and how does it work?

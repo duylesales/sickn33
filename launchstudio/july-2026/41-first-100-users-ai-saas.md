@@ -73,7 +73,6 @@ Connor partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €1,600 (SaaS Tax Integration Package) — production-ready and deployed in 5 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Should I run Facebook or Google ads to get my first 100 users?

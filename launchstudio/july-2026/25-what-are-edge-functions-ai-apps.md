@@ -83,7 +83,6 @@ William partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €1,750 (Edge Architecture Package) — production-ready and deployed in 6 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is an Edge Function?

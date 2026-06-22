@@ -102,7 +102,6 @@ Scarlett partnered with **LaunchStudio (by Manifera)** to make the product launc
 **Cost & Timeline:** €1,850 (Migration & Schema Package) — production-ready and deployed in 6 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is a database migration?

@@ -133,7 +133,6 @@ Chloe partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,800 (Launch Ready Package) — production-ready and deployed in 5 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why do AI prototypes fail with real users when they work fine for the builder?

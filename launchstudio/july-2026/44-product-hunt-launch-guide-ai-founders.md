@@ -79,7 +79,6 @@ Clara partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €2,500 (Scale & Stress Test Package) — production-ready and deployed in 8 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is the best day of the week to launch on Product Hunt?

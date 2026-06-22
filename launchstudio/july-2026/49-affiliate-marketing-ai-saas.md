@@ -73,7 +73,6 @@ Jaxon partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,500 (Affiliate Setup Package) — production-ready and deployed in 5 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### How does an affiliate program work for SaaS?

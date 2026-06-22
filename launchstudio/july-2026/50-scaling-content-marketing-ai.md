@@ -83,7 +83,6 @@ Audrey partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €1,800 (SEO & Load Tuning Package) — production-ready and deployed in 6 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Will Google penalize me if I use AI to write my blog posts?

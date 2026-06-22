@@ -84,7 +84,6 @@ Alexander partnered with **LaunchStudio (by Manifera)** to make the product laun
 **Cost & Timeline:** €800 (Domain Configuration Package) — production-ready and deployed in 2 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### What is a DNS record?

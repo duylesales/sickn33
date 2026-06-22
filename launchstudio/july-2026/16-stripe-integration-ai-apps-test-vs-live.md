@@ -81,7 +81,6 @@ Aria partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €950 (Billing Integration Package) — production-ready and deployed in 3 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### Why do AI builders like Lovable leave Stripe in test mode?

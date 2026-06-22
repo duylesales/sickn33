@@ -75,7 +75,6 @@ Isabella partnered with **LaunchStudio (by Manifera)** to make the product launc
 **Cost & Timeline:** €800 (Secrets Security Package) — production-ready and deployed in 3 business days.
 
 ---
-## FAQ
 ## Frequently Asked Questions
 
 ### How do hackers find API keys in my frontend code?
