@@ -1,6 +1,6 @@
 <style>
   body {
-    font-size: 36% !important;
+    font-size: 18% !important;
   }
   table, th, td {
     white-space: nowrap !important;
