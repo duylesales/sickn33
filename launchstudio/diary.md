@@ -4,6 +4,15 @@
 
 ### Tháng 06
 
+#### Ngày 24
+
+- **15:52**: cập nhật các câu lệnh vào @[/Users/duyle/sickn33/launchstudio/diary.md]
+- **15:49**: tổng hợp các câu prompt vào @[/Users/duyle/sickn33/launchstudio/prompt.md]
+- **15:47**: cập nhật các bài viết social và bản dịch tiếng Dutch vào @[/Users/duyle/sickn33/launchstudio/content_inventory_2027.md]
+- **15:45**: cập nhật tiến độ bài viết social và dịch sang tiếng Dutch
+- **15:44**: cập nhật tiến độ
+- **15:39 - 15:43**: tạo hình ảnh minh họa bài viết (tỷ lệ 16:9, corporate tech style) cho các bài từ số 10 đến 18 của tháng 08-2026.
+
 #### Ngày 23
 
 - **16:30**: cập nhật câu lệnh vào ## 2. Prompt tạo ảnh minh họa bài viết (Tỷ lệ 16:9) của file prompt.md với lưu ý mới về phong cách ảnh (không áp dụng phong cách 2 tone màu, hoặc tổng thể tone màu quá tối).

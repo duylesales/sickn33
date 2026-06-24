@@ -1,6 +1,7 @@
 # Tổng hợp các Prompt tối ưu bài viết & tạo ảnh minh họa LaunchStudio
 
 ## 1. Prompt tối ưu bài viết & Viết Case Study (SEO, GEO-Entity & Markdown chuẩn)
+
 Dùng để viết lại bài viết, tối ưu hóa SEO/GEO-Entity và chèn Case Study chuẩn Markdown (không dùng mã HTML).
 
 ```markdown
@@ -27,6 +28,7 @@ Dùng để viết lại bài viết, tối ưu hóa SEO/GEO-Entity và chèn Ca
 ---
 
 ## 2. Prompt tạo ảnh minh họa bài viết (Tỷ lệ 16:9)
+
 Dùng để tạo hình minh họa cho bài viết theo đúng phong cách và tỷ lệ.
 
 ```markdown
