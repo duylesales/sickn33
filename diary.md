@@ -178,3 +178,12 @@
 
 - **15:26**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
 - **15:27**: sau mỗi câu lệnh yêu cầu hãy ghi vào file nhật ký diary.md
+
+#### Ngày 29
+
+- **22:00**: Tạo loạt 10 ảnh minh họa chất lượng cao (tỷ lệ 16:9, với các phong cách đa dạng: Vector Flat-ish, 3D Clay, Minimalist Line Art, Cyberpunk, Glassmorphism) cho 10 bài viết chuyên sâu của Tháng 2/2027 (từ bài `01-scaling-nextjs-supabase-multi-tenant-ai-saas.md` đến `10-securing-vector-database-endpoints-prompt-injection.md`), tự động cắt (crop) về kích thước chuẩn 1024x576 và lưu thành `[tên_bài_viết]_pic.png`.
+- **16:12**: Xóa toàn bộ bài viết, thư mục của năm 2028 cùng file danh sách `content_inventory_2028.md` theo yêu cầu.
+- **16:10**: Sửa lỗi hiển thị ký tự xuống dòng trong `content_inventory_2027.md` giúp bảng thống kê hiển thị chuẩn xác.
+- **16:01**: Viết và thực thi kịch bản Python (Programmatic SEO) để sinh tự động 50 bài viết chất lượng cao mới cho tháng 2/2027 (tổng 200 files gồm bài gốc, dịch Dutch và bài đăng Social) và nối thêm vào `content_inventory_2027.md`.
+- **15:55**: Thực hiện dọn dẹp hàng nghìn file rác (spam) từ tháng 2 đến tháng 12/2027, làm sạch bảng thống kê `content_inventory_2027.md`. Lên danh sách và viết 10 bài viết chuyên sâu đầu tiên cho Tháng 2/2027.
+
