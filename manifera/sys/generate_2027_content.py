@@ -369,8 +369,8 @@ def main():
         
         # Monthly section in inventory
         inventory_lines.append(f"\n## Tháng: {month.replace('-', ' ').title()}\n\n")
-        inventory_lines.append("| STT | Tiêu đề (Title) | Từ khóa (Keywords) | Giai đoạn (Buyer Stage) | Đoạn trích (Snippet) | Bài Social Media |\n")
-        inventory_lines.append("|---|---|---|---|---|---|\n")
+        inventory_lines.append("| STT | Tiêu đề (Title) | Từ khóa (Keywords) | Giai đoạn (Buyer Stage) | Bài viết (Article) | Đoạn trích (Snippet) | Bài Social Media |\n")
+        inventory_lines.append("|---|---|---|---|---|---|---|\n")
         
         # We need exactly 60 articles.
         # Loop sub_topics (6) and industries (10). 6 * 10 = 60 unique articles.
@@ -406,9 +406,10 @@ def main():
                     
                 # Inventory entry
                 snippet = f"A detailed analysis of {sub_topic.lower()} for {industry} in 2027."
+                blog_link = f"[{blog_filename}](./{month}/{blog_filename})"
                 social_link = f"[{social_filename}](./{month}/{social_filename})"
                 
-                inventory_line = f"| {article_num} | {title} | {keywords} | Consideration | {snippet} | {social_link} |\n"
+                inventory_line = f"| {article_num} | {title} | {keywords} | Consideration | {blog_link} | {snippet} | {social_link} |\n"
                 inventory_lines.append(inventory_line)
                 
                 article_num += 1
