@@ -4,6 +4,10 @@
 
 ### Tháng 06
 
+#### Ngày 29
+
+- **22:10**: Xóa toàn bộ nội dung trùng lặp cũ của năm 2027 trong Manifera, thiết kế lại kịch bản Python `generate_2027_content.py` với cấu trúc 12 chủ đề tháng riêng biệt, 6 sub-topics và 10 industry angles để tạo 720 bài viết hoàn toàn độc nhất (60 bài/tháng) và cập nhật thành công vào `content_inventory_2027.md`.
+
 #### Ngày 23
 
 - **10:29**: cập nhật các câu lệnh vào
