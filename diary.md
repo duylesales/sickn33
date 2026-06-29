@@ -181,6 +181,14 @@
 
 #### Ngày 29
 
+- **22:49**: Tổng kết lại số lượng file sau khi lọc bỏ toàn bộ kỹ năng kỹ thuật: Tổng số tệp tin giảm từ 10,071 xuống còn 5,386 tệp tin. Thư mục .agents/ rút gọn xuống chỉ còn 199 tệp tin.
+- **22:47**: Tiến hành lọc và xóa bỏ các kỹ năng (skills) kỹ thuật (lập trình, testing, database, infrastructure, devops, framework) trong thư mục .agents/skills/, chỉ giữ lại 103 kỹ năng liên quan đến Marketing, Sales, kinh doanh, viết lách và tâm lý học hành vi.
+- **22:42**: Quét toàn bộ workspace để kiểm tra số lượng và phân loại tệp tin: Tổng cộng có 10,071 tệp tin (không tính .git và .DS_Store), phân bổ tại .agents/ (4,884 tệp), launchstudio/ (3,007 tệp), manifera/ (2,177 tệp) và root/ (3 tệp).
+- **22:40**: Tối ưu hóa không gian làm việc bằng cách xóa bỏ các tệp tin và thư mục không sử dụng ở cấp độ root bao gồm rclone, các script sinh bài viết cũ và file test HTML.
+- **22:37**: Quét dọn các thư mục kỹ năng (skills/agents) bị trùng lặp: sao chép 9 kỹ năng bổ sung từ thư mục `skills` vào thư mục chuẩn `.agents/skills`, sau đó xóa bỏ hai thư mục trùng lặp là `skills/` và `agent/` ở thư mục gốc của workspace.
+- **22:33**: Chèn thêm 2 cột trống mới (cột trống bên phải cột Bài viết và cột trống bên phải cột Bài Social Media) cho bảng tổng hợp năm 2027 content_inventory_2027.md của dự án Manifera.
+- **22:32**: Chèn thêm 2 cột trống mới (cột trống bên phải cột Bài viết và cột trống bên phải cột Bài Social Media) cho bảng tổng hợp năm 2026 content_inventory.md của dự án Manifera.
+- **22:27**: Dừng việc tự động push lên GitHub sau mỗi task; kiểm tra hệ thống cấu hình, xóa nhiệm vụ push khỏi task.md và walkthrough.md.
 - **22:20**: Thực hiện bổ sung cột liên kết Bài viết (Article) cho file tổng hợp năm 2026 `content_inventory.md` của Manifera, cấu trúc lại STT và thêm khối CSS giúp giao diện bảng nhỏ gọn giống như bản 2027.
 - **22:15**: Cấu trúc lại bảng tổng hợp `content_inventory_2027.md` thành các phần/bảng riêng biệt cho mỗi tháng (mỗi tháng có 60 bài viết, số thứ tự STT bắt đầu lại từ 1), bổ sung thêm định dạng CSS hiển thị table giống bên LaunchStudio.
 - **22:10**: Xóa toàn bộ nội dung trùng lặp cũ của năm 2027 trong Manifera, thiết kế lại kịch bản Python `generate_2027_content.py` với cấu trúc 12 chủ đề tháng riêng biệt, 6 sub-topics và 10 industry angles để tạo 720 bài viết hoàn toàn độc nhất (60 bài/tháng) và cập nhật thành công vào `content_inventory_2027.md`.
