@@ -4,6 +4,13 @@
 
 ### Tháng 06
 
+#### Ngày 29
+
+- **16:12**: Xóa toàn bộ bài viết, thư mục của năm 2028 cùng file danh sách `content_inventory_2028.md` theo yêu cầu.
+- **16:10**: Sửa lỗi hiển thị ký tự xuống dòng trong `content_inventory_2027.md` giúp bảng thống kê hiển thị chuẩn xác.
+- **16:01**: Viết và thực thi kịch bản Python (Programmatic SEO) để sinh tự động 50 bài viết chất lượng cao mới cho tháng 2/2027 (tổng 200 files gồm bài gốc, dịch Dutch và bài đăng Social) và nối thêm vào `content_inventory_2027.md`.
+- **15:55**: Thực hiện dọn dẹp hàng nghìn file rác (spam) từ tháng 2 đến tháng 12/2027, làm sạch bảng thống kê `content_inventory_2027.md`. Lên danh sách và viết 10 bài viết chuyên sâu đầu tiên cho Tháng 2/2027.
+
 #### Ngày 26
 
 - **17:43**: Ghi nhận lỗi hết hạn mức API tạo ảnh (Quota Exhausted - 429 Too Many Requests) khi cố gắng tạo ảnh cho bài viết `8-serverless-functions-vs-containers-ai-workloads.md` và đã thông báo lại.
