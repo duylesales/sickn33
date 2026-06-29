@@ -181,6 +181,7 @@
 
 #### Ngày 29
 
+- **22:15**: Cấu trúc lại bảng tổng hợp `content_inventory_2027.md` thành các phần/bảng riêng biệt cho mỗi tháng (mỗi tháng có 60 bài viết, số thứ tự STT bắt đầu lại từ 1), bổ sung thêm định dạng CSS hiển thị table giống bên LaunchStudio.
 - **22:10**: Xóa toàn bộ nội dung trùng lặp cũ của năm 2027 trong Manifera, thiết kế lại kịch bản Python `generate_2027_content.py` với cấu trúc 12 chủ đề tháng riêng biệt, 6 sub-topics và 10 industry angles để tạo 720 bài viết hoàn toàn độc nhất (60 bài/tháng) và cập nhật thành công vào `content_inventory_2027.md`.
 - **22:00**: Tạo loạt 10 ảnh minh họa chất lượng cao (tỷ lệ 16:9, với các phong cách đa dạng: Vector Flat-ish, 3D Clay, Minimalist Line Art, Cyberpunk, Glassmorphism) cho 10 bài viết chuyên sâu của Tháng 2/2027 (từ bài `01-scaling-nextjs-supabase-multi-tenant-ai-saas.md` đến `10-securing-vector-database-endpoints-prompt-injection.md`), tự động cắt (crop) về kích thước chuẩn 1024x576 và lưu thành `[tên_bài_viết]_pic.png`.
 - **16:12**: Xóa toàn bộ bài viết, thư mục của năm 2028 cùng file danh sách `content_inventory_2028.md` theo yêu cầu.
