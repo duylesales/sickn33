@@ -345,8 +345,17 @@ At Manifera, we help European and global firms scale their engineering capacity 
 
 def main():
     inventory_lines = [
-        "| STT | Tiêu đề (Title) | Từ khóa (Keywords) | Giai đoạn (Buyer Stage) | Đoạn trích (Snippet) | Bài Social Media |\n",
-        "|---|---|---|---|---|---|\n"
+        "<style>\n",
+        "  body {\n",
+        "    font-size: 36% !important;\n",
+        "  }\n",
+        "  table, th, td {\n",
+        "    white-space: nowrap !important;\n",
+        "    word-break: keep-all !important;\n",
+        "    overflow-wrap: normal !important;\n",
+        "  }\n",
+        "</style>\n\n",
+        "# 📚 Bảng Tổng Hợp Content Manifera 2027\n"
     ]
     
     count = 0
@@ -357,6 +366,11 @@ def main():
         month_data = MONTHLY_DATA[month]
         theme = month_data["theme"]
         sub_topics = month_data["sub_topics"]
+        
+        # Monthly section in inventory
+        inventory_lines.append(f"\n## Tháng: {month.replace('-', ' ').title()}\n\n")
+        inventory_lines.append("| STT | Tiêu đề (Title) | Từ khóa (Keywords) | Giai đoạn (Buyer Stage) | Đoạn trích (Snippet) | Bài Social Media |\n")
+        inventory_lines.append("|---|---|---|---|---|---|\n")
         
         # We need exactly 60 articles.
         # Loop sub_topics (6) and industries (10). 6 * 10 = 60 unique articles.
