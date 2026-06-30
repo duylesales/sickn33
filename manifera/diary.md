@@ -4,6 +4,10 @@
 
 ### Tháng 06
 
+#### Ngày 30
+
+- **22:00**: Kéo các thay đổi mới nhất từ GitHub về (chạy lệnh git pull). Khôi phục thư mục .git bị iCloud đổi tên nhầm thành .git 2 trước khi thực hiện.
+
 #### Ngày 29
 
 - **22:49**: Tổng kết lại số lượng file sau khi lọc bỏ toàn bộ kỹ năng kỹ thuật: Tổng số tệp tin giảm từ 10,071 xuống còn 5,386 tệp tin. Thư mục .agents/ rút gọn xuống chỉ còn 199 tệp tin.

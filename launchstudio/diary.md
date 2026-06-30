@@ -4,6 +4,27 @@
 
 ### Tháng 06
 
+#### Ngày 30
+
+- **22:15**: Hoàn thành ảnh minh họa bài 35 `35-educating-client-managing-ai-expectations.md` (robot thực tập sinh đeo cà vạt và nút phê duyệt Verify của con người, nền tím nhạt) và tự động cắt chuẩn 1024x576, lưu là `35-educating-client-managing-ai-expectations_pic.png`.
+- **22:14**: Hoàn thành ảnh minh họa bài 34 `34-structuring-slas-probabilistic-ai-software.md` (hợp đồng SLA cán cân đối trọng, định tuyến fallback tự động sang server dự phòng, nền cam đào) và tự động cắt chuẩn 1024x576, lưu là `34-structuring-slas-probabilistic-ai-software_pic.png`.
+- **22:13**: Hoàn thành ảnh minh họa bài 33 `33-why-freemium-fails-enterprise-ai-saas.md` (dashboard credit 0/50, paywall khóa và thẻ API Key cắm vào khe BYOK, nền xanh lục) và tự động cắt chuẩn 1024x576, lưu là `33-why-freemium-fails-enterprise-ai-saas_pic.png`.
+- **22:12**: Hoàn thành ảnh minh họa bài 32 `32-trojan-horse-strategy-b2b-ai-sales.md` (con ngựa thành Troy cơ khí cyan/white chứa robot AI chui qua cổng thành, nền tím nhạt) và tự động cắt chuẩn 1024x576, lưu là `32-trojan-horse-strategy-b2b-ai-sales_pic.png`.
+- **22:11**: Hoàn thành ảnh minh họa bài 31 `31-navigating-procurement-selling-ai-to-the-ciso.md` (khiên SOC 2 vàng gold làm chìa khóa mở cổng phê duyệt của CISO, nền đào nhạt) và tự động cắt chuẩn 1024x576, lưu là `31-navigating-procurement-selling-ai-to-the-ciso_pic.png`.
+- **22:10**: Hoàn thành ảnh minh họa bài 30 `30-auditing-ai-outputs-regulatory-compliance.md` (sơ đồ tracing luồng tư duy AI và tủ lưu vết bất biến, nền xanh lá nhạt) và tự động cắt chuẩn 1024x576, lưu là `30-auditing-ai-outputs-regulatory-compliance_pic.png`.
+- **22:09**: Hoàn thành ảnh minh họa bài 29 `29-data-privacy-preventing-cross-tenant-data-leaks-ai.md` (phân vùng dữ liệu Tenant A & B ngăn bởi lá chắn neon RLS, nền vàng nhạt) và tự động cắt chuẩn 1024x576, lưu là `29-data-privacy-preventing-cross-tenant-data-leaks-ai_pic.png`.
+- **22:08**: Hoàn thành ảnh minh họa bài 28 `28-integrating-notion-salesforce-into-ai-agents.md` (kết nối Notion/Salesforce qua cổng OAuth an toàn vào AI dome, nền xanh lam nhạt) và tự động cắt chuẩn 1024x576, lưu là `28-integrating-notion-salesforce-into-ai-agents_pic.png`.
+- **22:07**: Hoàn thành ảnh minh họa bài 27 `27-knowledge-graphs-vs-vector-dbs-ai-architecture.md` (so sánh đối chiếu Vector DB và Đồ thị tri thức, nền tím nhạt) và tự động cắt chuẩn 1024x576, lưu là `27-knowledge-graphs-vs-vector-dbs-ai-architecture_pic.png`.
+- **22:06**: Hoàn thành ảnh minh họa bài 22 đến 26 (tự động cắt về kích thước 1024x576):
+  - Bài 22: Toán học embeddings biểu diễn đối tượng chó/xe trong không gian vector (`22-mathematics-of-embeddings-similarity-search_pic.png`).
+  - Bài 23: So sánh lựa chọn cơ sở dữ liệu vector Pinecone vs pgvector vs Weaviate (`23-choosing-the-right-vector-database-tech-stack_pic.png`).
+  - Bài 24: Nhà máy chuyển đổi dữ liệu và nạp vào vector DB thời gian thực (`24-data-pipelines-feeding-vector-db-real-time_pic.png`).
+  - Bài 25: Phân đoạn dữ liệu (Chunking) và quan hệ cha-con Parent-child (`25-overcoming-context-window-with-chunking-strategies_pic.png`).
+  - Bài 26: Lọc hai giai đoạn sử dụng Vector DB và mô hình Re-ranker (`26-re-ranking-secret-high-accuracy-rag_pic.png`).
+- **22:07**: Tạo ảnh minh họa cho bài viết `21-why-llm-is-hallucinating-rag-architecture-solution.md` (tỷ lệ 16:9, phong cách "Modern flat-ish vector illustration" kết hợp isometric 3D, "corporate tech style", có nhân vật lập trình viên và robot kéo tệp tin từ tủ dữ liệu sang AI dome, tông màu tím/xanh cobalt/neon cyan, nền sáng) và tự động cắt thành kích thước 1024x576, lưu là `21-why-llm-is-hallucinating-rag-architecture-solution_pic.png`.
+- **22:05**: Tạo ảnh minh họa cho bài viết `20-building-custom-tool-chains-niche-industries-ai.md` (tỷ lệ 16:9, phong cách "Modern flat-ish vector illustration", "corporate tech style", có nhân vật nhà phát triển và robot lắp ráp chuỗi API custom, nền sáng tươi sáng) và tự động cắt thành kích thước 1024x576, lưu là `20-building-custom-tool-chains-niche-industries-ai_pic.png`.
+- **22:00**: Kéo các thay đổi mới nhất từ GitHub về (chạy lệnh git pull). Khôi phục thư mục .git bị iCloud đổi tên nhầm thành .git 2 trước khi thực hiện.
+
 #### Ngày 29
 
 - **22:00**: Tạo loạt 10 ảnh minh họa chất lượng cao (tỷ lệ 16:9, với các phong cách đa dạng: Vector Flat-ish, 3D Clay, Minimalist Line Art, Cyberpunk, Glassmorphism) cho 10 bài viết chuyên sâu của Tháng 2/2027 (từ bài `01-scaling-nextjs-supabase-multi-tenant-ai-saas.md` đến `10-securing-vector-database-endpoints-prompt-injection.md`), tự động cắt (crop) về kích thước chuẩn 1024x576 và lưu thành `[tên_bài_viết]_pic.png`.

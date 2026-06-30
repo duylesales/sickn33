@@ -1,0 +1,3455 @@
+{
+  "version": 1,
+  "skills": {
+    "codebase-audit-pre-push": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ac5c78d84aa4667bda9c812b4144bdd97382a70fcce834d327f66eeb2cf52a50"
+    },
+    "codebase-cleanup-deps-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6e99b232b1ac337d5f5ba8c545c32600d33b1e290af0089c2d96a8690031a48c"
+    },
+    "codebase-cleanup-refactor-clean": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b474e6e47f76ca5fe6537bba30e9a062e6317caf41c239030d766c0e48d33763"
+    },
+    "codebase-cleanup-tech-debt": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "35afd556a583b5d1307bf332e200a3f5d05698b2c081f72f5ca026769244dcea"
+    },
+    "codebase-to-wordpress-converter": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ebd7cfe236f8fe889768467575e38457120cfd7b61228258f40ab61ea59aac08"
+    },
+    "codex-fable5": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4faf58454dec60574adfac67ceb7778b2317bd3d8d48237562ec73de82f974c6"
+    },
+    "codex-review": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7190105f98e70bad7620cc204ba19ba77ee2a594356a3a4297f3acb57dce8299"
+    },
+    "cold-email": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ca5efc7db44e580dd14888c00f770a49ab7ba1f74666c2fc25d06c49b2a20462"
+    },
+    "comfyui-gateway": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "67b23fbc9e82f98cda96e59687654400e3272b7cb72fa24b8821218f9a05ad49"
+    },
+    "commit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3bcf0ec3de92c660eaa10d6882ab0a2bcd25f565492556dcbf92946c09f20f5a"
+    },
+    "competitive-landscape": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a74f0614fcc7f45c20781dd9271b9633c7da4588b2d2fba6d36c814e7f9e604e"
+    },
+    "competitor-alternatives": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7fbab31288349fc65843a8f5267bcaa9d3186ae3567f4e109be31a11cf1aa690"
+    },
+    "complexity-cuts": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dd4faa9ad77e7d242a76b5fca49e88641e4a652564e1fbbefac60ef39f041bd0"
+    },
+    "composition-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "288b7fa1555998c332e9aa79f7e3b809b225ac9f3828115ddf91cb13e30e142b"
+    },
+    "comprehensive-review-full-review": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9e843243635d761c8e8a5b55ea63d96dedc8b28304a837d81f15a54738aff286"
+    },
+    "comprehensive-review-pr-enhance": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4fb55ce6290339dc37eb1bccf0badbc93379e6a9df9195051797b4b893949394"
+    },
+    "computer-use-agents": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e70048e35cbda147200d37ffcdb4130562dcc57d046815b3087c041176eb34f8"
+    },
+    "computer-vision-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "931eaf6fbe54ec9c9f6453a516d465137f0608cde3b8ffbb4c298a10931215ee"
+    },
+    "concise-planning": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cb2c73dab72634e8e0095247f7991c2db61354449aed619a9af8ec8ea45a8e24"
+    },
+    "conductor-implement": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4e32df0f9db4386649cb804496199c70d6131630bef45bc96a97160b771f2cb3"
+    },
+    "conductor-manage": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c342d7b64562841460d185b14bba02f3d01b20dcf42f31d448e9b1e02a4689c9"
+    },
+    "conductor-new-track": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "722946d246bff7aa624b256ee77b883cd3e263e7524fd577ed9336356528db45"
+    },
+    "conductor-revert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8c387bbcf4ea36905e132af3eb3c3b052593de751c4c4f5d20bb7e7155d0f811"
+    },
+    "conductor-setup": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "125693caf5a5ce35bd31185ba0b001fc118d380f8cceb5850de7245869fc0f46"
+    },
+    "conductor-status": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f6b3a046c35814c82ee72fdedc248f54008027c8c147c3e4c19db7aa22584a86"
+    },
+    "conductor-validator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "698569ee879baf229e7e7011baf51632dbd78754c3d4da210a2f46b32a6d3d37"
+    },
+    "confluence-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b136122521524b78ff4d11d56ea62eefac9562d93b5ffcd7478dddaceb369b26"
+    },
+    "constant-time-analysis": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0b84bbdcd76972bdceafe44fd6adf9022e27445946b5fb504a6414fb69554a47"
+    },
+    "container-security-hardening": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f8e515a8f6b189678c06495f1b96e10227c36ad6a2105ce5196a52f6d548e424"
+    },
+    "content-creator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2c1d8c2d2c9eb78af4dab3c33d638d7855a469dc10c3e9361ad7524088a0624d"
+    },
+    "content-marketer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3d5d56912cc26b353f9872537988c49f537d84a21933d1280c331e73f35efac5"
+    },
+    "content-strategy": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "14de4907b881528606d60862815e5d0fe09b7978e9379d99c5a3f71c8eefbeb6"
+    },
+    "context-agent": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c13f2bdc9a562cf7c2dbee92f39586af3d7914c4c4bf48a848cf4ad46185d604"
+    },
+    "context-compression": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e66ed44b030836765e0adc6e922154de2a4bb48712b159170c5c0fe211d5a383"
+    },
+    "context-degradation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e5c5ab182fce53ee9c421b75e3beaa1e74a3c6d2668e3b157895aeb8e31a405c"
+    },
+    "context-driven-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "142e089163b07d7c24ee44c35c614d3ac296466419eb336b2a4ad88004eb2852"
+    },
+    "context-fundamentals": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "68e0ed0858458b60be5a384c7515bf5d7218878c6ecb11642cb26c003007d13b"
+    },
+    "context-guardian": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0c0ed09592a1dfd534d220e3d6f4ab1ba8a773a31a589e41554d2ca4d87c1e23"
+    },
+    "context-management-context-restore": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "25f76c80a098272a07fce0478471a103586ae7b6dba7423fed70507c0f0090fc"
+    },
+    "context-management-context-save": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e1bfa62041533dc681d9575a39c4b464fa5cb26a1cdc0378929a1e487bf05321"
+    },
+    "context-manager": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "20b32ef68a2dc185c0816c483a78dd6589f356eaf34b5450ecdaf3ad9ca59ccc"
+    },
+    "context-optimization": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dd7c296bb0ad4974a25a36d6b9bc93c24b3b62e129bba4f19e5c41b1c0f46968"
+    },
+    "context-window-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "485ef49d6b8beb10ae2e0685c940be8b78778fd77e2a30b2ec29b0e27ce87d79"
+    },
+    "context7-auto-research": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f1391637f475291e78383aa2ab2662e737e3a5c697a25b7003e4ef4364e4b848"
+    },
+    "conversation-memory": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6ef663c6cec4334033080cbaf84491ee757492f1c5c0d5d2d6f360743340ec39"
+    },
+    "convertkit-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8a148689f8261dc1225defee23f4b2a3eefc880881e87f85b59bbc68ee342755"
+    },
+    "convex": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e6ee3954b3786d75ef3f133bdb4f838a991f1b5c6af5e1167f4c4b16c70faea5"
+    },
+    "copilot-sdk": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "198cac4ba521f51aa28aa394a5039369b3e955dd764c3ca27853aaaddded1112"
+    },
+    "copy-editing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "77f2eb2413301d095b4a774acfe9b2b7a590514b06ec5b53cee1f306fa01a040"
+    },
+    "copywriting": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dcbfcfcce735fc93cc9f3071499375c3eff51908d02fcbedc060cb47b8ad08c1"
+    },
+    "copywriting-psychologist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "27cf4b5b7121705093f71277dfba1bf5a9128d938be8f16f5e8c8c4182005aaa"
+    },
+    "core-components": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a4a221b886dc48abbc3809025a375964d38b97366d6b7b3fc5904dda46a7ea84"
+    },
+    "cost-optimization": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "061beacb2f0b0114e7bf95276390f29481440aaa405e7012cfa361437411e1de"
+    },
+    "cpp-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "40f7b3e8ba9cfa9f50402375b4d981ab1d8dba865744bc169c25aa036a383101"
+    },
+    "cqrs-implementation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "514ed54b2e1aac9d71a23ebf141c807447081b585ba63e1c5b3623877199d3bd"
+    },
+    "create-branch": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bdfc831a74a747e05ec784df541ae60ae99b71e3b014a607d7b7c5954571376a"
+    },
+    "create-issue-gate": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "61cc32262af9336ecdb230a860cb87b77df8de0b09f8577594c2b051cc584b76"
+    },
+    "create-pr": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "97158fc03d4c8859703ed3fa9827b0692af3790f35cbfef6a0832b027c2baa57"
+    },
+    "cred-omega": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cdac35365fac0ce402a61fd186671893b5509caf5f76607113db7987875f9e4c"
+    },
+    "crewai": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8abebb2054143df1c389c67cd92f75820f76efa0d84e371e0c7b7a153f844fe4"
+    },
+    "crypto-bd-agent": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "db1f63ea349262d2178d60263459763f46669d7701321e93551996cd7d6717d7"
+    },
+    "csharp-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "db966ef07021a6575b67fbb1bd0c62dc70e56ebabb825a3a5bf09e2f93979fb6"
+    },
+    "customer-psychographic-profiler": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c943ea41376403069438dedc248abe13455368f4f1161738669f728ca547ce5a"
+    },
+    "customer-support": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "725b87b28a43b3553cf8e4097b5ba5b6523d6589a5b6c251ddaa1c6e2c3f1218"
+    },
+    "customs-trade-compliance": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d562e0bd552c65fc8fd9cddcb9bd00a0483247ed063e3e251e2089d9a667aa14"
+    },
+    "cv-generator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a666f415c22d33704bd93c44fa5cc1ca4d7b6de2af81e0a1422153bd59db80fe"
+    },
+    "daily": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "67921032f6bbad47072708d1b2dca25e3458ab4585aed4446bb6a5f1446d4a2c"
+    },
+    "daily-gift": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a0aca3682adce830e4b95889d3b6f97fb467047ca1e5cd53b57125142323cb33"
+    },
+    "daily-news-report": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f644427f65539e412fd496cec339ec9c46f989173a3f6c7712d1c91aeb247099"
+    },
+    "data-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0cbff8cab74971202adee0bd3c4f62ab79c3a25e7ab05cc19564185fa0baa2bd"
+    },
+    "data-engineering-data-driven-feature": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8b80c05cc09fa04a6f18e4754ba4e5d1cacc091d4090fc65562557630a6e2e68"
+    },
+    "data-engineering-data-pipeline": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f39e6e69ed395d4fbeba8c7b28f0afea90d109abe2b6ba6b4ee2acc2630587b1"
+    },
+    "data-quality-frameworks": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "011001fa3612c95c1986e58f8e711c9146c5fc23937fe6e866b98fec81ba4880"
+    },
+    "data-scientist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d8f3cad7d2c76a6495165979d6879574c66827a5287e05400b2f8042a8b1c781"
+    },
+    "data-storytelling": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dabb795bbec5743a6401b0594a263a085faa78f54692fd72b53ce8d26ccbe281"
+    },
+    "data-structure-protocol": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f066a4340c4a07c6b639d56fd6e353f638fea73e6cdc6dbe3bcc23047fcd994a"
+    },
+    "database": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c426e20f40448ddaccf86fcade3bf0ef4a08baf23837a21f055468006174881d"
+    },
+    "database-admin": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b3de6c8f1791c06f7b313abe5ed6fee383aa7246172aad1a968cd6e32718d222"
+    },
+    "database-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f4540da3010d7322e83766266306bf617e6aba0ba226c588504f19245be9a0f3"
+    },
+    "database-cloud-optimization-cost-optimize": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c676a31d06a54115fe093ac2d7fd44d3f6210de67da7da553d8251571ca8a41e"
+    },
+    "database-design": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9a4a5f3bd05183eb75e860261763fc75c0fc38d9b5ac0fa1a64e2cf6cceed2fc"
+    },
+    "database-migration": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "14d01c56d60a6a04376435453d8e5c785c80bcdfd13c09b9e4e36a48d0b9c327"
+    },
+    "database-migrations-migration-observability": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "91ec11847cca33571c71c01ed0ea9b663259ff3dc6fb1dddfdc665a1410ab484"
+    },
+    "database-migrations-sql-migrations": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3e75bcf30642cb6e4c4709d76b87e3bdcae66b5f4efab0287d5e3cdf26fac881"
+    },
+    "database-optimizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "124f11f6b7a93001325f09f1c4be41a9b50349d2235fac43048953adbcbd5373"
+    },
+    "datadog-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "aa58793edd0a8e21ed008dc0f36a3843202976bf2964ce724ed77555f59b9f6b"
+    },
+    "dbos-golang": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d1beeea9d79a1303eb1aef0df2907e63e3188f23c8e9af52aca981b0ae307563"
+    },
+    "dbos-python": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e85e34d800d4fef0aba685b3040a252f6d1205866c9358ccf8ff0a7b36b1c7ea"
+    },
+    "dbos-typescript": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e2f3faa1ac5734525e6df5f088dbf91233d6fe9bf2fe72ef3bca1b2caa33b235"
+    },
+    "hugging-face-model-trainer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "31674a3d848dc82fe567c4f5fb3b056413472f89d412c337cd2a4233aaa6e05f"
+    },
+    "hugging-face-paper-publisher": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "822dd1ba494a562dbfb89231e810df2fc2f5520ddeb44496e520f4b0d96bb8b8"
+    },
+    "hugging-face-papers": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "72f4f5a25ad47dea595678c26bf56d3a11b7b06e34fa695782e2746578254fe9"
+    },
+    "hugging-face-tool-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b5bfae919633afed89901a54f1fc350b6b97da94242b67e44fac91d637917fc8"
+    },
+    "hugging-face-trackio": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "848f1e1ca564996cb661d251cecf994480edda122db0ef79b7df5e11a1d0944c"
+    },
+    "hugging-face-vision-trainer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "91a0f7356ce20321766a035ed0d9512ad859f5820ec1ba4284e3cc49291a0561"
+    },
+    "humanize-chinese": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5693169a802f77c674a5a0c0b92b1021666296f3317ac44e91535dcc74075df0"
+    },
+    "hybrid-cloud-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "68762d46540191329730d666ff6ebf03d2f45dabb31e53af1b703acaeec81059"
+    },
+    "hybrid-cloud-networking": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e23c514fa18301f47c0fd66e029cf5b2dda83e9efadbf1901002fd254bd4a777"
+    },
+    "hybrid-search-implementation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9e9a7d62c23fad643345d90d52c31721410ed1cfb6143dc96950ab39b3e9f549"
+    },
+    "i18n-localization": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ea5d6d0faa9fabd6a8a3165dca69dac9ab7c622dc130bdce3f1dfa88e02ba948"
+    },
+    "idea-darwin": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3fa0138d47cbe38e357a2772a3fcf16f933d3307d0ff7ffed31e4280bb3c96b1"
+    },
+    "idea-os": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1ef7f703c08efcf5cb790b727b6c64055e3ba8524529bdeb1729603a882cb3cb"
+    },
+    "identity-mirror": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bf04f96ad4b9206885c98409f18158ad2fd860da4bd3564958582b9903b1ab45"
+    },
+    "idor-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6f100962f5a7f5ffe94ee2c63ca66bbd0618cbe3d56439033f5b70613c15be04"
+    },
+    "ii-commons": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1cf7a8af8430c0deb4c57928564b34925c8ab8bf2a0f069926f7e6e898ec3f82"
+    },
+    "ilya-sutskever": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "50fff322fbc4c8ebb9bc3187324dcd1a44a26058275591d8037422b86b6a0425"
+    },
+    "image-studio": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "16d646e83473434d456e6bf0d0e558cc4df5dc7e19a85f3b5f6ca75d95039433"
+    },
+    "imagen": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8da307c4c03c6f2a3ac3fb0bab968c659af599f13a3a09c1ae3e562c463eb11d"
+    },
+    "incident-responder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b3567a675318c16eeec390de9a4d74fab31d74ec68d4df0cfc572eca474813be"
+    },
+    "incident-response-incident-response": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2bc04b78c37ae9aa0f44b1c4a490d1137078b861b25d2636c67d41e74dd4a916"
+    },
+    "incident-response-smart-fix": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "81547625138bef0e5f49dfaa1ae45017944c663a14c70b65a6bccaac19288d6a"
+    },
+    "incident-runbook-templates": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f73050a991659ef21a9f36ffc516a58cdf1baa3c68568a16cdd52b762a19268f"
+    },
+    "indexing-issue-auditor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e155c87a9022e4d1a4d048bede2bafbffa98c7c0f4b8374623700b14aaf83292"
+    },
+    "industrial-brutalist-ui": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a0ed0a750b082b7de7a40f76bc0cca59c151ec047ae8cd20bcdb73a6846ccdf9"
+    },
+    "infinite-gratitude": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b2a466c06aecdc39e522b7bb4d1b2b7306e9b0fa48ab7b9a0e33cdb3e1db8cae"
+    },
+    "ingest-youtube": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0ed713f9dfd47c4891bea512453262f5484f00fbec2f23fbc00b8d02547f9a5e"
+    },
+    "inngest": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d87a515d2d4aec89a399321808c500545a4b2e47821f4a886802db4bba01f6d7"
+    },
+    "instagram": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c5f803d5f0b5f25e81a5e053ef90f3ef18502cf85be3e86e65dfaa4b70359ffd"
+    },
+    "instagram-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f4e5391b003a8464708fd9683f269deb2fcab8f30724decec49eab8ffb459a74"
+    },
+    "interactive-portfolio": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "918d7e69a49cf8162c26c822ee3449cb2630173ac6f48a384da0b108961d03d9"
+    },
+    "intercom-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1cadd7208ea9143dcf0a7b302d49058e38486b5f3d2259003ae5e8370b40ba7c"
+    },
+    "internal-comms": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "06956d38803a280ea6a18ad667b9194fb58ff6a87debc864a6d87b6b145bc72b"
+    },
+    "internal-comms-anthropic": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a1539635806a0b2ffd7d984e17e473b2b49a0a9b2709f5ae2af1a7bdaeb35a4d"
+    },
+    "internal-comms-community": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "34347f90ba78c8db8b5707f7b5321393b548239d5bf0cea908f0e3e23f4eb8f7"
+    },
+    "interview-coach": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e4d778899a932edbda178da9aaccc11be89322588bdabd05474de18e55430d60"
+    },
+    "invariant-guard": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3f53ce5dc0fe3f87a012ea3d6ac4bbc096ef2bd71ab1b06827f1e31739e0a63d"
+    },
+    "inventory-demand-planning": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "af4071e457313cc2df46137a025596eb958be55eedf41d1d7a700eb39667af20"
+    },
+    "ios-debugger-agent": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "78cdb1c285ccd0ed9feeeea858a33c36985cf221f85183eeb420fad1f161debf"
+    },
+    "ios-developer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "05368506f581b694ca654b7bb379539f794c1956eac76de12be2628b455c1fab"
+    },
+    "issues": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "780b35c822ed2786fd2887e6f8517c9982dc178f9ad8f1ed0ff4419ee6e5e205"
+    },
+    "istio-traffic-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fa157a2dc7c317f2f9af5596f2460620c19b628e05b62ad9be101f52077c7d76"
+    },
+    "it-manager-hospital": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4453d56538ace764d9753f0661865196a9324065f984976ac4fde91afde6dbf0"
+    },
+    "it-manager-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f11d16d0552d777349a95f5ef74bfce3ddaa6ccbe8ae9858d2f51c07664efc66"
+    },
+    "iterate-pr": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6b3a56c30a10eb2d504df6236805d47d4d7f642291b8a20dd98b63faa00b51c6"
+    },
+    "itil-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b7ccb34e54783ed7c63ad177d5bff7e608b1c882c0c4a1f556c41407f129ba9a"
+    },
+    "java-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fb45d2d618fc01b622c6c8d06abc9fcb538f52085789ee26baacec5fde35ebd6"
+    },
+    "javascript-mastery": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ac6d598ca4e8e2b988bd3e8d7dfb45845a0d8d4876e519e97c0116cefd323b8e"
+    },
+    "javascript-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "455b01f015d389f056b78d975af55d5b297a97319cc0331a0c6f4f40f2920baa"
+    },
+    "javascript-testing-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6413ffd7e6949747c300eb0d739862574e724ece491630feb8c03780e85f7dc0"
+    },
+    "javascript-typescript-typescript-scaffold": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "670e217b2258e9fe0c210fc4c2e187e9dfd9a4bcdb48b2111607dd963ff7b9c1"
+    },
+    "jira-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "283e6f605265b581ea9c57d853613950cb102ca73ff3842c4ebac86070570c28"
+    },
+    "jobgpt": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2f834a4f44821e7c0dc440c8ef2f903f4b9194edbfd8cdd11fd27e436a1c4db6"
+    },
+    "jobs-to-be-done-analyst": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "32da9ae5eee5bda43f4c378da12c07c6434fe3461904368a4eb0f7da31a6183e"
+    },
+    "jq": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f4fc98e8e85b572332b63a15d84f34a0c7fd6e47b0c6576cfa4c689b9270e46c"
+    },
+    "json-canvas": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "720bf71ce8e4d89be74eed212367bbf1b55408efc297e2a29e1cf95edee36091"
+    },
+    "julia-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "61c1d58e6885d3374426266e9f661df9a9cb2268bca4edb932cfe22fac3d050a"
+    },
+    "junta-leiloeiros": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3352a92ac03f895be08f9f28c1b236a31ae77e65f3f920cc8af19adba9647535"
+    },
+    "k6-load-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b79cf26834c9bf77c193b5e07c00d70a904f51ffbf665e6ffbe43782876a4253"
+    },
+    "k8s-manifest-generator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9cf24f9f2e76c1d8b280366ba457f1d278104f77a1f43555aa9faf840b58bbae"
+    },
+    "k8s-security-policies": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c9f6f8453db719c9d4eda3bba2d8f85c7fd6a27f2b9f8c57df7bfb1a5c6925aa"
+    },
+    "kaizen": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2a95e36f94a82d3ec005855f597b3149580878e7ee5753a74bf96e47d20c88ab"
+    },
+    "keyword-extractor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "adac2c8362c057e5bdbbf622b1e370ff5b8931d0f498fc07d36ab2349231efb6"
+    },
+    "klaviyo-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3c4e2af4b261dcd4290de220b7906bb70bd46a89de9f1c075c33387806aac61e"
+    },
+    "kotler-macro-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "992c5bf8638d7cf5fd6f756b2508e0ca0011fc544457693b16f2c5edb3b3a06d"
+    },
+    "kotlin-coroutines-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "af03d7291c6785aa6d0123a0da93b0f261546ba2706c687e787b60b9969bb28e"
+    },
+    "kpi-dashboard-design": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "27640218409d51f47f46dbd079c6bce6fe863aff01964fab1fc93afd06079072"
+    },
+    "kubernetes-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f428f018d3989df322372c0b951c389c9ea0efd5d158a4d51e3945ff7745c132"
+    },
+    "kubernetes-deployment": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4b9f8711399afe9b963992f89d6572c7dcab17c2357d88a265ea4992fd1af0b4"
+    },
+    "kubestellar-console": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "974af8f54a9d3dff6ac92160305a57c0e8bb8f548b30f214a9a350c38f93beae"
+    },
+    "lambda-lang": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ac3139ec4513f02634866462505be651c29c4295b54a4c49a7dd08afa5cb6d6b"
+    },
+    "lambdatest-agent-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1b6c1ce90a1203bc98db7c1e15b4df4ab46f509a85b1e212060ee814a1434c4f"
+    },
+    "landing-page-generator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "749028608fd236b417406eac18c1c75c646eb088f3ee1b91f0cf31c9b080a83e"
+    },
+    "langchain-architecture": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "00751d08438c2de939624deb6434a2b7c9a1b90e47505eaa0af70b782399218c"
+    },
+    "langfuse": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "33a67962a9f5e892f275f13ff685a8976ce4aefb8b62b78f28eb5adf585b4b4d"
+    },
+    "langgraph": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4a2ab8a8444cae1ef3e714c37725e693e64c9cdad63c2fc72406e3f6cb5b7c5f"
+    },
+    "laravel-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f62283f8b992fad54a2a9fd8d59326cc7ed1fabbd54e94810ebe6e6431428282"
+    },
+    "laravel-security-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "221f61ac5c95ab3d708f232fa51511c51eed3495f7d0e99fdc247d2823b4bf04"
+    },
+    "last30days": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1361f86a19e97eba06bbbc60d9bde79ffc2d90ea6f47b31588b1fcdb51b617ba"
+    },
+    "latex-paper-conversion": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6cf71f1f7c0c837a4bd712cfc1a6ae91fa0efdfb0d6935847d2bbb3847227ee2"
+    },
+    "launch-strategy": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b8d92fd36be1b422d92a69a5e664e80fa395e08d0aef5f356d6ec3ad38d1d18d"
+    },
+    "lead-magnets": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "76086cbd72aeb34af4426467e036550257f747761976bdb1ba4fd556d52442d1"
+    },
+    "legacy-modernizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f9ab334609a11506b9a71582c9f5dbb408d24e5e865eb6d4c25c55452ae6dc09"
+    },
+    "legal-advisor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6ece92eaae5dab4feedf9d188bb1c27711abe580b1a07e9ce4628940ab762cf0"
+    },
+    "leiloeiro-avaliacao": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a44021ed81914c62620ca0d476864657573dd8002c31aa699bba09c193dcc6c0"
+    },
+    "leiloeiro-edital": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "008f777c62f84183fef69401d7a2e31ed0998724b836cd71c6553b04478480a8"
+    },
+    "leiloeiro-ia": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "de5785dee0ae549a3f70557d1421ef9db74ab5143fcc34a6d5512b7fefd850f5"
+    },
+    "leiloeiro-juridico": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "add4994dbd5be1a1b8f5cb28ea7c1986b9c2b848087097b0b4d350c5471b1de2"
+    },
+    "leiloeiro-mercado": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "44a97c01b04368b23aef03fd42f107e633af65a1cf3cdd559d4d5bd4a2fe3f0e"
+    },
+    "leiloeiro-risco": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5c25306ec073be1b702f64c2d894105b72191a6ff9282b1f4a920c8a97030830"
+    },
+    "lemmaly": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a1920c41f6366fa9ad2239747e73210747dd5a3ca077946dcbfa1f4841908562"
+    },
+    "lex": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "875b2c16214682a342298b6ebdfc61cb639327eca8d3341b23bc752e1d3ebb6f"
+    },
+    "lightning-architecture-review": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "45cb0fbe0b0244490022185a8662406c2eb4c00cdec7dcbf8c9e15a0f702b305"
+    },
+    "lightning-channel-factories": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c10e6e2a238511192db8d791037dd65140f9d6851578f1194b62a0f6e4ebcbe3"
+    },
+    "lightning-factory-explainer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b69047559990fe9547cc3b4e2a3c15e68d4e1056daba0bdb3a27491cc5bb1223"
+    },
+    "linear-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "620d16ba9cb26f3ba0b73e2c6fa865cdf0e653d7f8ca74a03a93f7af31c4a8d7"
+    },
+    "linear-claude-skill": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0585af56bcea1c7030faced15008fbce469474147a46d08ee6e92be036dc89b1"
+    },
+    "linkedin-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8a9d8b0db15fd4bb844005e3c64845adc56aaf2f5e9eb39e27ca3053c40f39ed"
+    },
+    "linkedin-cli": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "89444d988439494f389befd0f3ac259977f58a1d0a18f29873ad3794780351f9"
+    },
+    "linkedin-content-generator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "14352d6af98382482a1fcdf456c192d9fb2c3e66a42c492ee19540822299e2c7"
+    },
+    "linkedin-profile-optimizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9e0e8dfb518eafd21d37b42f322dd7b93fbcb6792bdcbd3e5af511f386949910"
+    },
+    "linkerd-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "693ce20129d7e1d97b22e93b657af2ba249209e359e75ab65a599bb7672edf65"
+    },
+    "lint-and-validate": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "37854110489e24a286c4ef95629e9eac158f4f63464ab02c02983c3d51ef9561"
+    },
+    "linux-privilege-escalation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "471ef2726787ce68f2d5dd21ae29320803f4010cf9c66c52fdd577a725d8df30"
+    },
+    "linux-shell-scripting": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7837dc1464d5ab0709bd55c0cd6849b1985c8525d1305bb8d1175e96a13b1f6b"
+    },
+    "linux-troubleshooting": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f951abe271b0fee0b1d4e2e5a51063edde5846f6e4f581ecbdf97f73b003dd43"
+    },
+    "llm-app-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5276020a23e4c13f8c3c2f37ec7245449b1518467cb7144391ebd965a1c2c81a"
+    },
+    "llm-application-dev-ai-assistant": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c03fa1fb154f951d9afd7d51ef0d68648f72c3d389fda78653449c6ce7011c35"
+    },
+    "llm-application-dev-langchain-agent": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c424833bea5255bd37824a17c6ece3569e884aec9abf0fe7154913c2cefafb92"
+    },
+    "llm-application-dev-prompt-optimize": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a8414217bf8888700247bd2c1b525b774bfc3f17e3d2ff214ea0629212a2d6c9"
+    },
+    "llm-evaluation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d1c55a7640031a4683c5e9b1333eae0ccb4812c8271ee07a9cf2340cd76dc318"
+    },
+    "llm-ops": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "72e50f28e3528235081b9a6267c437507aa619b0da85a088e939ef8a0917639e"
+    },
+    "llm-prompt-optimizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "eef460bc1c02545bc7754e0b8f113e662a3294fad1ea2bfd92f0385efb2c42d4"
+    },
+    "llm-structured-output": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "280b9f14e0bcaa283a26e0b769ddaea19c5b044ec4f412bcd2dc91f10de578db"
+    },
+    "local-legal-seo-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b84e3e0496aeed77902fda7cae063ff164ec1ca8edfcce14760569b32312cbb1"
+    },
+    "local-llm-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bd9d33c912759416b417adc9dbdd95f592b69cded3f01602c9ed142caf63e975"
+    },
+    "logic-lens": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "52edc575355f46f144f681760f243b40611688ca9fbb838120a13d7a3f20f214"
+    },
+    "logistics-exception-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dc5a667daa47058c3dc0a915044922404e0f8b3e5af7086b6c9bd1c15acb19df"
+    },
+    "loki-mode": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8b16a2a50a7e9b7790d644479ac44937c2a95bd5be49a5353b633526e011b77c"
+    },
+    "longbridge": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "732e65e229c9500878fc95aa4ed4f15e119485801bc8bb7c32884a876dda0693"
+    },
+    "loss-aversion-designer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "562c6e18145b761f7b89a90cc534ae4fabdf2964bfb6c30f6ff77a8d51befb20"
+    },
+    "lovable-cleanup": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fe15ef0f27c57501c56f612266747dbeed5e592d6d1126d19e21114d5d86d545"
+    },
+    "m365-agents-dotnet": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a447e8d436ff1c5df9bc15b550520ac5814bdb822856f4b9788a71e74ad8fbc4"
+    },
+    "m365-agents-py": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "061852071d3738bbd22889eca99633b724652bf72bff197d0352157cf28d2378"
+    },
+    "m365-agents-ts": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a9b8ec93ff7e36994efddf1c7dd80f927a73d5ddfcf4fadacc4936749b4a610c"
+    },
+    "machine-learning-ops-ml-pipeline": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "76d79f95b0d75139c919f73981cb83f14958717af1b50e08b2c26b25691f1715"
+    },
+    "macos-menubar-tuist-app": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e6c0dc412183a3516f05780eb822861883ac9ea5018991a4c0f7433950351c7d"
+    },
+    "macos-spm-app-packaging": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4df597a351e4d6146beddafb8a0c0d17c3428b4eb3aa4dc774b9b580656a865c"
+    },
+    "mailchimp-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "836912979c1b5932316527ab52914a4c12011c11e058b9cffa2670242cb8a1d9"
+    },
+    "make-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2085fe8b819424a3d872a7afbff4751801b2466637323fb89757e43bd43e2cf2"
+    },
+    "makepad-animation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "01a2e8e5dc6a905aefdeb2cef26243e05b4ed71de94e2bc5bd140f6a8ee3a346"
+    },
+    "makepad-basics": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a19b957e234cbf05ee2699fb48a22578d914d0d94c8b6a1c57fa340496c5145a"
+    },
+    "makepad-deployment": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1c3bd7aadb82eeabf402aae56357f2d2592f95f7b001011e556523e6ed673b0e"
+    },
+    "makepad-dsl": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e7e9fa25070993ca964dfef843f01e154a8c56fcbd9d538d1850c84ae56f1cff"
+    },
+    "makepad-event-action": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e2b36d55cdc9ff1b4e1423716ee30e73aa6107d183221df4398d89a3b6422d66"
+    },
+    "makepad-font": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7c32a7a77fb17e1d7588dba0b412fee51af22818989edd1b5a3bcb96d686ae13"
+    },
+    "makepad-layout": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b71d3e1329d6d886757e75e69056ac5a04e40157e954df7256192bdafb6b4c24"
+    },
+    "makepad-platform": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "95711906fec63084cf31fd9ef277baf2e45066112cb7d5070fe9c3a8fc983030"
+    },
+    "makepad-reference": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e0575e2543790fc938ce090bc2e3631182eb599c703e0d88f6a6bde6b07bdb0f"
+    },
+    "makepad-shaders": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f950a41f0ba27c20c08f6ebecf1c902dd619220d2625843eb80c1830822ca43a"
+    },
+    "makepad-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ebc8b5365f68d32de5c68e9a58e086f8fb8bf088d921939af495e080b431b8dc"
+    },
+    "makepad-splash": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e59dd51f8715b00d125a5a17c7fa5e64c13471ec07c14596c53c37fb42da6326"
+    },
+    "makepad-widgets": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "46c13dd81e499cb372f5b0b52992d0019075ecf780a33200fe840de9f7f4792e"
+    },
+    "malware-analyst": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "187d56728000a0bba24ebefdcd7ed6717f78f14e3df6abf8d334e0315decc26b"
+    },
+    "manage-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "688f3c676810bd0afb5d7774f0cdc54c2df9fc873abb703e4109d6a2e2ad44f6"
+    },
+    "manifest": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "559d0732cc6ed3d9c0d7c0cd15b304870e4349fac35f3c905e26ab2c7e03cd2b"
+    },
+    "market-sizing-analysis": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "aaafb694be20f230405c9c75fedc182b7c5a5c5511e3299ae9ec92796f356ca8"
+    },
+    "marketing-ideas": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dcacc55c273a178b3bc508ffaaba799d31b3ce5ede114579b5b46e05856fa57d"
+    },
+    "marketing-psychology": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "138facd4c51ff0384dfb30970831b277c5aa7709ad279a7a7608600ea46685ca"
+    },
+    "matematico-tao": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4b1ae01685cc7295c36b69b48641d272391218f3bef79a4dc33318bf25d577d8"
+    },
+    "mathguard": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "53bf58c1809c9526576ae3e4201860ea471a2e427b712fe90990afd87de2f909"
+    },
+    "matplotlib": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ff136eddeba86f3126c557855888934f0b3bb88eeccc28b5a8aeed5e3ce7ea82"
+    },
+    "maxia": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6b027d41986294437e259256419cd794ab933052e8bee40b5b31e87bc62c07f2"
+    },
+    "mcp-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7d85b2761016512557dabf450afabc34bee8ead8abfbd852a4ad6d8d50a3b456"
+    },
+    "mcp-builder-ms": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9d030aa94f09c5354168b8bcca61e95399f2a696daed1d1f37a3b47bf8bcda70"
+    },
+    "mcp-tool-developer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "69de2537cb8634661296578a9073555e28c8c4ede13411f33876bda3b90a0b83"
+    },
+    "memory-forensics": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "929ae25a8699867e0529b143f5daf0d78df07db95a9d391c6ff0edfb03285927"
+    },
+    "memory-safety-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3bae85adc31602213f71faa68b013bd85ade9172e643314992a70332d7e1eac3"
+    },
+    "memory-systems": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fb07053bb23cd7bff85dcdbca0fb775d4105e03a22ff478180003a67ef335310"
+    },
+    "mental-health-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bb57d0c99cce741e400907ed78220ef2a9ac50605eeb828e1cd599f37b97a906"
+    },
+    "mercury-mcp": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4eacf7809656bf9de115219e0a16505f8e422e4fb3bf39cbd504f40fa3857117"
+    },
+    "mermaid-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6dae987d8d84e071e106d7f181a07dd85ae1b62292891cf524addea7048f179d"
+    },
+    "mesh-memory": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "56f4b0727d4961a18d4cff5b1b51e590c77ff48de29de6620899caf56cf8c1e1"
+    },
+    "metasploit-framework": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bcd346155c42b73a382ea165fda89ff0b017a21246663d2790c0c39cab8ae3b7"
+    },
+    "micro-saas-launcher": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "611c8c7c3a2b8c89efce424ca1532a9888afe34cfb26dfc2614f842af06efb3b"
+    },
+    "microservices-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f86f022e1aa3f4378e2d9ca24191a557b29f3fc84029bbcb28ea227ca16689c2"
+    },
+    "microsoft-azure-webjobs-extensions-authentication-events-dotnet": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b9827d625e85c99fa1608c82759aba694b1f652081c61ee1763f4cc38419d7f1"
+    },
+    "microsoft-teams-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4e1bb3ac896720cfd33d2c258be2f151579446ce96d80470e3e3efefa42c0850"
+    },
+    "minecraft-bukkit-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "afb56869425b6d963792e92b14ade4d4bc2eda07541c351300074a0a1d6d5281"
+    },
+    "minimalist-ui": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9402dce3f1220cb91168bbe2bb0dc6a3a87af38d28525fba0de5783381028f4b"
+    },
+    "miro-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3c466db4fee3451986fe488137e6c6d6c0d21fe0a303ef26196931efd2810d2d"
+    },
+    "mise-configurator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "696eeb54b100091124646bebc1e5c4f6c4887167379971aa2b70b2bfb814c947"
+    },
+    "mixpanel-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ac6859f2ff239cf39c243f659c6d49bccf02b6518e04dd478d66a60dfcff10e7"
+    },
+    "ml-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9072f64717686c44f84f7ece6f57aa30db02d5b4ca3ea0c584717372b21ddac0"
+    },
+    "ml-pipeline-workflow": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5e41d3262e5f80e33d14d3ab2702053197037ef7d6932e8a7e165a3dfd2b72fc"
+    },
+    "mlops-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "459ed1246f84d39152f53ac6ca8eec386eb4e34afd4ae9db316ac03727287595"
+    },
+    "mmx-cli": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "efa6246923f2e8e59dbaaf488490c2c5b0f9692e4614a5583d0a1f1b2164ed57"
+    },
+    "moatmri": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3e350e9f55ab442620264c6b76806346deb8d0c9c49bb56544fcb928e76f5d84"
+    },
+    "mobile-design": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ba174c1095bcdda7a135622361778568589922fae7d932d822c5daba94e12318"
+    },
+    "mobile-developer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f708d655e9c9d5c484f054474c51df2815c434e8193c713bbd179efcb65c0b8d"
+    },
+    "mobile-security-coder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "96380500369a505168da9363b00e4ed3255be8dfae911851fa15aac8c70b23e2"
+    },
+    "mock-hunter": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6855a7f543ad9b139666dedd00eb4b59ee202294f7e1bad1f902359f525c4b01"
+    },
+    "modern-javascript-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ee7414361412eeee5be6afc43d294e779eead04cdcc5b5799d335431c332f10d"
+    },
+    "molykit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a989b5d0f1a618c4d45c9e1ad96c4a48c0f5fd88129573406e372bb84e79f8b3"
+    },
+    "monday-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1a81016fd95644c9e5fdfcb15b6fb385b93a0bc210d334fb3dc5412a7717fae9"
+    },
+    "monetization": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "41ffbd7fc20bbe6384cb27968881f0d50925d1f61a71aabf923cebfaa69153d6"
+    },
+    "monopoly": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5cf0dc3e7eb389a04eebe0b9be601a902b39abf7bce6fe3b5b6910f0739a0750"
+    },
+    "monorepo-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "af072fb671eab947e4d374dcc19e270e696201edc2a97433b4ace7d0d5eb3128"
+    },
+    "monorepo-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6812a72aa5936fc21b09b11e818868b56ec2f6082cb2eff2af3088c7833ea62a"
+    },
+    "monte-carlo-monitor-creation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d8794e8d83c0ab747c1ef3509f1f34b7489a4c31bb33a0b87733e478e18582db"
+    },
+    "monte-carlo-prevent": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d8cf437d9a2999293c6a8ef8357170188f0240cfe520bae2271e087b60796ace"
+    },
+    "monte-carlo-push-ingestion": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "331350734ffe93d12f5ea1b9e0d6ffdb45665af9894fb6f00f159d1b1105f578"
+    },
+    "react-component-performance": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e34279fe3d30ad747eaeb5676ed75ec3a42df727fb033121d11de8feee59cc41"
+    },
+    "react-flow-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bde9db472ec38b8b750fce1b350433d2513d5ad714103de890c49af04adb8c55"
+    },
+    "react-flow-node-ts": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0ff6bd453985b0bc0c104ed371af88a00a4a9456100e1360b56a84a8dca9f01a"
+    },
+    "react-modernization": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "82d879e1ebe27df98ee3de75985047df9cbe9827c99d8862c782628eef9930a6"
+    },
+    "react-native-architecture": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f8709fd6a17ea0d0ea4cb769d3ee01c02b1fe173ccd0d9d4bca9599397c56d23"
+    },
+    "react-native-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0198943d401ab18725be767d6c3bcba0acfecb4e6926905254d62b9fb73d994c"
+    },
+    "react-nextjs-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f6fccc099580762dc1ffe48d8462c9183f14225a6dd28679cb56a0e5b011669a"
+    },
+    "react-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "af8463c224dc911e56233db2c67bceb944099f764d77e34600cd951e85558081"
+    },
+    "react-state-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2c45808afe0def0497626cdb4fdd37feeb8c3de49ce3d1a0e89c069df681f492"
+    },
+    "react-ui-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6cf16ff01d66cf827c99ea0fdd215e6f2a62b1999737baabc4a85fb8e28adf94"
+    },
+    "readme": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0ff1f12f888fe06872574a39b4716a916f7b3e554423655bf2308b8e123861c6"
+    },
+    "recallmax": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "696f087087132111699c64763e31c6f0634196254f6ee629eac939f5b4501073"
+    },
+    "receiving-code-review": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d2894259919d0a42cda8adf88250b0610e1fddbe07502973772036202e060dee"
+    },
+    "recsys-pipeline-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "33124cb56da45248cf49710113149fb753be1baa00fe6695b6333f9cf23c983d"
+    },
+    "recursive-context-pruning-token-budgeting": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5d19cb9d50b1874fe574f30004d37dff29a25a9f1175e38cf906850b1f5f0a68"
+    },
+    "red-team-tactics": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e2885a30e1403a820227c572c449a8902eccfb972d1584de7c19dc5376549ca2"
+    },
+    "red-team-tools": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "adefb7e9b7cbe8103fa719d9fcfb427a2664fde7eb902658ba5b59c5d54b5a1c"
+    },
+    "reddit-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1cfa476aff58d4152868ba2167d30ce351168db056d69cee67aa8dc6eae96f7c"
+    },
+    "redesign-existing-projects": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b96db9a87ede33d0de850b8b23f3a46817ed0d4b3d9c787a06fb5bdf147c2c8c"
+    },
+    "reference-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "15761876d31c8242e1ef13772478844e5012a795f809f67fd79ad3a4d35276a1"
+    },
+    "referral-program": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3a4efb07c7ca55d2480663a0943d3e3d7a81404483c480fab6505547ba202834"
+    },
+    "rehabilitation-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "88510414b52c4d0e7c2a234645440d06bbd1c2ac4f3c4e8d30302ba0389a3f15"
+    },
+    "remotion": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "68d9f20ab31b503f88016ecef5724a3c7877691a4a08dcbec17588f1268aa1c0"
+    },
+    "remotion-best-practices": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a9933e46ef5216582024d9cbfc539acf69dd57f8d697621f873765c8727437a5"
+    },
+    "render-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0c72a14b62fcecec34e057759b1eba058da55f0c7213a58e9577da11909a70dd"
+    },
+    "requesting-code-review": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e6367f02fe8c5d8a529d799568d57f0be31f3bb3c23093f2ae7c5049c8d15256"
+    },
+    "returns-reverse-logistics": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f3bdf6eb81e9fa1ce5fd343a82f449987f6901c01a9b8faaf9cb85446fd6f778"
+    },
+    "reverse-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d0b1f3ed78c602a3a730c963a173fdbd36953a70cea1845cebf6dc8ca8e5dba6"
+    },
+    "revops": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f29387101563aa7d0ae9ced4d7723004be1a7dab5f119083d0c570c714dc0431"
+    },
+    "rich-elicitation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "952a0b85173437cf25ba71c4d804c88d22a55f2bcf84a5c01830881748e0d396"
+    },
+    "risk-manager": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f00e9b250c78bdbb8c6761ef5e0ec05777540ac66080dd37a965678342e1b70a"
+    },
+    "risk-metrics-calculation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "63dcac790f5b557a4845ff0b8cce2bfd112bc596eb14bce3023fa7628700f7e3"
+    },
+    "robius-app-architecture": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b0c1f21167cccf7a98569d33e837b3212fc81593e6d4e01175edab4f74ccc7f3"
+    },
+    "robius-event-action": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "739051f2bc7b26d9f685ede7fb8ed6a09ee08e78603036270dceaddf680e4dcf"
+    },
+    "robius-matrix-integration": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8e0335585e18b9bab86a66775047ffd52a46411d5ff4ebc85fb024db2224fde8"
+    },
+    "robius-state-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9692a886174c08b4a392e3c1c8a7f8c55bcc5a89ede2b2d0770c63599cabac5e"
+    },
+    "robius-widget-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "712ebfa350664425f4c86476e2a15116f39aa51baf6772e88026bcf71bb56c6f"
+    },
+    "ruby-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8ca25a0c0934fcf9a32978e2cd5684fd8ba522024c0b7024abb509a4dd436305"
+    },
+    "runapi-cli": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "486d0b4895cc2fb5172c0f35a6154cd26b2ec7b301120025b18745dba53a817b"
+    },
+    "runaway-guard": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0adba717482d399c3115c5d2aa41a126629fdf10bec30fbb0f7ca0803ee62981"
+    },
+    "rust-async-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "25ac8c037fb98d5a7838457f0acab729b88184ae99f2c3ff0f1f6e94476dedf6"
+    },
+    "rust-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d6c417eaf1d57ffc2a6760ed5f2486b206ed3c5a547fa7857555c1643ad2095e"
+    },
+    "saas-multi-tenant": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c67ac3b17628050ec82c774840e7f0c2dbff75c3e95814c2c2a970842e04a93c"
+    },
+    "saas-mvp-launcher": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "367186d594e8690794aa36bc88cc60b8e4c4e5edf97cb5713bb91367738f4aa4"
+    },
+    "saga-orchestration": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ada37a890be2cdf3560e1758bd10439276b6a65196c87eece27b667be4af1d13"
+    },
+    "sales-automator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "82f6346a8292db5555dd10e11a4e68b1ece6ae1dc871678131f3d62ab17f8cc7"
+    },
+    "sales-enablement": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6935f85bdfb61835413078e5e8762ef9c82ddca433f34b9a11d7fe9519efb302"
+    },
+    "salesforce-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "de7dc38d13b743251cc80f7d0af853ec963c146798fccb375ca0fae2cd5f22ba"
+    },
+    "salesforce-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9b335f0e972e90ece1bc49d3e7f6b74afb417cf0a379f611c3fb85e801e7fb65"
+    },
+    "sam-altman": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d8634a95ce2de32a60dbbea3c9449c80e15b5d8e19a354ec964a1d66b34d6833"
+    },
+    "sankhya-dashboard-html-jsp-custom-best-pratices": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a151aecb2a5bef04cf094bc4293b21ddf96aa46223d310b59e8ce4d220992c06"
+    },
+    "sast-configuration": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d0e0d25ad6d09a1c876069396eb50e30d4839923ebe8d1ec915673e3cee762e2"
+    },
+    "satori": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9a6946796494a1e0d9e66eb890231a6b7fcc140c5c764c0d043b5e08ceea9c13"
+    },
+    "scala-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f320d9a5ef15cff5aa284a73bd53273e056e54f7ad357b495a82f6fe3b5236e0"
+    },
+    "scanning-tools": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "56463333916eafe0eb8ab5dc561c58b822cc0d118d9d1fc80742d4aa2dbdab34"
+    },
+    "scanpy": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1cb646843eda5e2a2b72b6e6c19420c73786ba67e0e527e849163ecd9cdbd1fa"
+    },
+    "scarcity-urgency-psychologist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bc3735b216d6e41804a9420e439fbf8757a56f7fc614a08d5f26fd94e3c324b5"
+    },
+    "schema-markup": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f3cd6e36091bb83821ed95930e1ffdf52802aeca99f4592ac129a26d8d66427d"
+    },
+    "schema-markup-generator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4b3897752f31c2a3171b7e39a5197e82f0342d2fb97070c72d544636dda092a4"
+    },
+    "scientific-writing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c4b13d8d37049f4d02609e65e190e0a32c20f14d544c5757ba152ee4f5849826"
+    },
+    "scikit-learn": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dc9e9ace90ee63669b01a96157b6068f96d8bbff2023c5db234f02155440e3e5"
+    },
+    "screen-reader-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0583e45b3efba366883d7aba8cd2cd6f28175bf35352d24fd4a10885eac29c74"
+    },
+    "screenshots": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "eef391b428fbc77395e1ccc8ce9a4ebdc5400e3b3901b09be728e17e10f1d9c8"
+    },
+    "scroll-experience": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "585612d4791ec9d05843661ce0995d2e65ae18585f5c55287412ee5eb7ca40a7"
+    },
+    "seaborn": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c778e8319c6bc26594fc3454f6ddca0e6395cb89c80e2ca89baaec59a7d66175"
+    },
+    "search-specialist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "618ae3d617bb1a0d368c5cf8153eb373698f2a62ab1ca5a52f47fd7873517248"
+    },
+    "secrets-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bdf148b586f59d8bf02f403bad303ebcbd2eba2ab6d24722e561a1b5a728bfdb"
+    },
+    "security-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d2939884d0b0631675555fc02cf86283d749b56d02d1378e7a7bf99312bad262"
+    },
+    "security-auditor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "771d0b237eb7557818e4350488f266faf35c883b643c9ab375d14e19141882f8"
+    },
+    "security-bluebook-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0ec20be918845c1c48876969aec8ef52276e751ee90007c1368e7c4949199f58"
+    },
+    "security-compliance-compliance-check": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2d33196014d57075f8b442bdfff8383797157617baa4f7701fda4478b7caa03b"
+    },
+    "security-requirement-extraction": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b8d197ff11d2b2c1c186f81e6def66dbb90efd938b949555c7e90b857c41303e"
+    },
+    "security-scanning-security-dependencies": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "28be70858a96903444f461debdd101cd25af82c1fa92f92c3c2513bd247961c3"
+    },
+    "security-scanning-security-hardening": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f829788584fdd90797d829c8f6c095aaa8423a3c3671dc3761fd35dab68c8c4c"
+    },
+    "security-scanning-security-sast": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "432a3eea84fceea5785cdfb0cda6ecf9258f8aab27d54a660313f063669253fd"
+    },
+    "seek-and-analyze-video": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3ce5051f8edd2418660656bd82e8e4d3859bf5f1dc393345387657a3dc207a4d"
+    },
+    "segment-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cbd25527f5947019df138d72eae11e64fdd9a42957b023743eb897fa5f482fe9"
+    },
+    "segment-cdp": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c3f0158d53da8e83e04bd6cdfc61e114804b83c11846e01f75ac9597421e57b9"
+    },
+    "semgrep-rule-creator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8d03a48d434de74c49b765c7396f6100dba33ce40cec3a8071bd51dee3da026f"
+    },
+    "semgrep-rule-variant-creator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1b0c1f12d865709b43c9b5e08f9f4b5b482b9ec0d17ed16b9b6dd76f027e46ae"
+    },
+    "sendgrid-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e1d44c587c1528d7bf0be1f06b82780a9ad284434660b35d54ef45224df2e091"
+    },
+    "senior-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9bbe574ab4a0b6c7183e5631386b2bc44b31eaaa5d7843dd5d332631d8c25fe6"
+    },
+    "senior-frontend": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "431bc32af5d82ceb3d0ad781c7c0ca2f0a585df5e7a768af85e23f0f67641e65"
+    },
+    "senior-fullstack": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "337a526661c4ab6916cf399209bc41628605b6299cb080cd5cddf9c587939af9"
+    },
+    "sentry-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "02120a4a96cded0aeff2cdadbe913765e5901a478b77302857959f6eb926c1ff"
+    },
+    "seo": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f6f64ecf31f112c07ea1e3d49d52994e2067d85fed3ee9b0b03cdc7fcc2220cc"
+    },
+    "seo-aeo-blog-writer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "95f440dc3dfc84610a0cc00f73e7b89ffd10b2782397bdc421cd8c7e8b8beef1"
+    },
+    "seo-aeo-content-cluster": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "566b5f6adb7203759d79c7c35d723129f54e41a64226d150fe303ec8f17fbd05"
+    },
+    "seo-aeo-content-quality-auditor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9618f9d2f80a96d393912d7d57c02a9933260da59ede153c0f678b2e1d004777"
+    },
+    "seo-aeo-internal-linking": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f04b472f63a99115d23013b7201358a7df306f6d17d2e49ad5037174f02b0e50"
+    },
+    "seo-aeo-keyword-research": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b76ab6097e089c11602d23be83b126138b5287a7fb3af7c35813842f6fcf634f"
+    },
+    "seo-aeo-landing-page-writer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "38eda1571b4035905db81debc7bd80f1d28d432d4b2c2b3d319a82194abd3a36"
+    },
+    "seo-aeo-meta-description-generator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c8c9a054f208b01f0ccd0d941ecfe324e8f21d062161f26e3799a781a291cbe4"
+    },
+    "seo-aeo-schema-generator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f74850e40641f54e3fb4408347691b0d757611d00d7b936ea45b733de90ac406"
+    },
+    "seo-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "50abed9d8282dc3512802f3295e3adfad1aaf8f5a00b66a8e054d446f0c4c2ca"
+    },
+    "seo-authority-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c342aa60c5399e32a808a61ead626e82cef449510d40214360622a871ac42448"
+    },
+    "seo-cannibalization-detector": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "642858d04f6e8d23ed4433626dd70acb7d885d98fcfaed382afa7585c0fe4788"
+    },
+    "seo-competitor-pages": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "55c19ee4804dc0e2db487210dd6caafc795e0280be66ff7c763e843eed8b01a6"
+    },
+    "seo-content": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5984d96240576dd49f9ee17eaebaf92a54bb8e9038ecbc79b5008b50d669ca74"
+    },
+    "seo-content-auditor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5b0ed60ea082a30648c01f6d7b2f3765af1a2ccd513e57eaaeb94e2d4cc72224"
+    },
+    "seo-content-planner": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "55c53d05a1adfea13133d5126c9cf38287755c066c070bfeb4a9a4b4d6bc07c4"
+    },
+    "seo-content-refresher": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a36f5fdb756207eca17db5c1bb6e7f83d663945e5e0dc3421c06d5a7b5adf5a6"
+    },
+    "seo-content-writer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cd831e2fdb14cce372d5c6772d4c7724fb26a490cb779c2b839cccbf508b6204"
+    },
+    "seo-dataforseo": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dc2f35466b35aad4dd18939b6079cf70df1dbb064922a170728c065261f2f767"
+    },
+    "seo-forensic-incident-response": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "50e50aa2a84897516c8c2ac78cdf8158428aa3b8307b1a82767ff8145b870757"
+    },
+    "seo-fundamentals": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "683257758560206f495d2a133b0ff5d5275da7c428aba2d5bf86f9502d5dcf20"
+    },
+    "seo-geo": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "414be823cfceafa2d2048c1bd66c7053d5d5e59235a3e5b828a9c838c44fd27e"
+    },
+    "seo-hreflang": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4e0ab94bb07ab182e64b10cb49896a485a854355cb715549f0bdd58b7746ee4c"
+    },
+    "seo-image-gen": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d3cf6dec3ec77d4d635c4a5e071eb09eb2297c49acf82fd5c991d778d144d69a"
+    },
+    "seo-images": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2a775509affb0260cbd9855807320d54395dcf2d771f1d8321a3666a45612255"
+    },
+    "seo-keyword-strategist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "05fd1b9dd84a2f195cc846bbeff75cc53ca8cacb4e2707b4d86f5b21f17d2a53"
+    },
+    "seo-meta-optimizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ddb1656865c95db0cc5e736f3cfdd2d4d281cefee8d440576d74d1241cba4451"
+    },
+    "seo-page": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "620f4bc58853639b9da73ca6cf5acaf32ada129d8b3ef631738cacf537329a93"
+    },
+    "seo-plan": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "deb71a3f01df37a653abeca13aade8562e9be1a270ffa8fbfe8d3dcd3481b1bd"
+    },
+    "seo-programmatic": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a549cd1f5b4cd50fb0056b965f69e46f12b1b7b337d9164e31517d01383bae2f"
+    },
+    "seo-schema": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ca136565a03419faf0a5745fd644fef5010c72b072c6d4cd035a72eef6b960d2"
+    },
+    "seo-sitemap": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "94b86769203b3c55d38a4a8c2517f97ae110001ca4cec461d4f9c0db0135eabf"
+    },
+    "seo-snippet-hunter": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2a50588831d6c9ed426c2a5ba45390cb1a7ed206eb2850167bf05b28e62b0320"
+    },
+    "seo-structure-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "33dcb4806c81dd577afc87ebeda090ffff133bfbda7201764e75ea44de8d5ac4"
+    },
+    "seo-technical": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "83c3307161ce9b424a51a5bbe8fafcee326f349a3b4566cf3fba278963370690"
+    },
+    "sequence-psychologist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fc7233525b82a42501ee4a88f50801c3516fdc8fcfa685d8d0a735129b24d1a6"
+    },
+    "server-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cf0100433ebd5b8a8338fe15d11ac00df3725214b734b2069097c5503d380654"
+    },
+    "service-mesh-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "141fdb8bb41fceeafde867c04f7af826485a0e6a0d9a8246c8f182393e9905ec"
+    },
+    "service-mesh-observability": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c6f2e0cc340ce6a290163ca54c440a9a5262e961772c6072008c82d2c5dcb4cf"
+    },
+    "sexual-health-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ddfdd504b6b60feb03e835e221dc1e3403b8d093c2a816eccf4117b77972d538"
+    },
+    "shadcn": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1d9eca48714f0298a91c2743d05b7f45bacd2ff1d44ece55c3ff32f4a93cf3b8"
+    },
+    "shader-programming-glsl": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bbc8c0dc848f09994e49c055b41791c23ed3b4404ddde799b754ea00748e07ae"
+    },
+    "sharp-coder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "254581f89bf1cede1ff04de2f9fd55760d1b661c540446da10195cc096417a80"
+    },
+    "sharp-edges": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "31f0d1c782c13255dc9796340369accea6b7433ff7eae1ec61ad97fd64f249a7"
+    },
+    "shellcheck-configuration": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "123c45e3c14046cd14ced825483c642e6ba27be1f8d7cc7827b9f60381886a60"
+    },
+    "shodan-reconnaissance": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b1464afbeac9d18868ab454129cc1267beee4d27eb1da02e2beb261227ca5c54"
+    },
+    "shopify-apps": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2e4f5a3fcddd0051d51ba5b4fb537444e015b9e123c996c042f98f11bbeb8747"
+    },
+    "shopify-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "58e12aa708447c1851164d8cc91aab8770bc8532dfe1ed6b234cca54a36e0597"
+    },
+    "shopify-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d313d08c047304de15381b672aeb940b7fd0b2487213f00b4c1041ed17413138"
+    },
+    "signup-flow-cro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "04ea784c8eb11585b2dfd7a3e7dcaf11dbc9fa81d1d3615adc10f095c869a7d1"
+    },
+    "similarity-search-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "557a5bf9bf0ac2b0127d286cb01564c9022efab45a993e4ac242c1cf04126f5a"
+    },
+    "simplify-code": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6ed13a18c5aa533063a87895a4532938c23bb5e489ae1198cac3e36c708e2a22"
+    },
+    "site-architecture": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7df2e00a343231596677202dfb991509cb28bd5ffe4af0d71e1907cffe7117d5"
+    },
+    "skill-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "aa7ab898de9b95937431f697e12a73049eb855b22c7961d2818c1615724b7e2e"
+    },
+    "skill-check": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a708ec15862dcf212011b804b46c6f62d4cdfc4ed4c1075cb7365311523f8972"
+    },
+    "skill-creator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7dd56bb412e0b17ef0fc3e910286a552479210713dcb2107fc35c482f5355156"
+    },
+    "skill-creator-ms": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "07cab2862038516e2f3dafb6120f24e072d69182971c0bfb4650267e7032f045"
+    },
+    "skill-developer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cccfa376c7f538ec619179ac6a0ec4646c56181fbd916b1063adb9d649a20973"
+    },
+    "skill-improver": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1d478c318543af34285e2395ff392157fe43bf44e3cd4833398bd5675db69e0b"
+    },
+    "skill-installer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "eef32de1591c93030021b3bf9f87a566df1db4954da0b5c2659105983a3e83b0"
+    },
+    "skill-issue": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e97070ae80dad7883c3ba3eb8ec12994e6669656f229d2159de96206530b7d69"
+    },
+    "skill-optimizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5c52ef94e9c7da46d7208b0202f10e3ee3bec604c2f371182f989ea3a4d5222e"
+    },
+    "skill-rails-upgrade": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "82c9c2532f91cb247057dcec1ec239c1e08a4254896d61e7b864dcefd488c6ec"
+    },
+    "skill-router": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "64565e26b20d5025d54da5e3f8ec10de2dbcd29af9fd61e742ded4c5c3025571"
+    },
+    "skill-scanner": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4892b2a9a013a83ed0ff6fabb5a69f44dc7244aac77687c0c0690eeee8fdf97f"
+    },
+    "skill-seekers": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "124c139f850d43688ac38d5234d837ef88b96ac6f19b6422db8a29f0d23c7b71"
+    },
+    "skill-sentinel": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7cdde851a54d48ebfc1b26d6257997bd800d71a14b0fa9b0b50726b4f110fba7"
+    },
+    "skill-suggester": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "79b5b4546aa8d9488322d0a8827c2bcab48c899305485bfadd425618777a604d"
+    },
+    "skill-writer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ee345d5aa98d1c7327f0e2cf352379e2013b7905203093f0c05960a472d57628"
+    },
+    "skin-health-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "31d48b4f05e17b3ac7cf8e53d3ebef80f64d07629f37e96c83473ab66a5e1df9"
+    },
+    "skyvern-browser-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "236077f85c465ce6fde7fb69d7157599bb405904109a90617692083b2152da16"
+    },
+    "slack-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1c98f052412d0315b67847c4c7ea251193b94c0ba6674b11b718e23fead56d69"
+    },
+    "slack-bot-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d52ac2f407c909ba12eedabd7a4fc4fa6710c697130ea87a2d87fd11e24cafe0"
+    },
+    "slack-gif-creator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5df05f798a95a006d4e1823d67a7eedf67afd616b79fe5a436ff40ad6a608bff"
+    },
+    "sleep-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f44b74934e25299168bc3e0e700cb15b0cea8ad85fb4fe9fe563ef28c7397177"
+    },
+    "slo-implementation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "45c38922b6bfe4bf4f3d4489bdf8c124b2ab176e7f57fa9e025861fd29d13ec8"
+    },
+    "smart-git-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fdd869df0df47d74239da6da59ac6708945ec4e4f0748bf068031b2bae2f4d02"
+    },
+    "smtp-penetration-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0938b5ecda29e62c549c97c75450e61ca4112d39e294b6e4a20008efaf64acb9"
+    },
+    "snowflake-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "47634a2be9c8bad0c209db4b388629cea303969e4fc0c901620ce57b9afaf2a7"
+    },
+    "social-content": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "943cec2b49f9a3f09de2d3ec02f4ea383bc4896cde5179c39eab9ebd308be943"
+    },
+    "social-metadata-hardening": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5b5eeb1f78bb3316a3e08ea094ef0838df906519063021cbc2248d22662d23d5"
+    },
+    "social-orchestrator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f2bc57ed5c87a06474bcaef489963bcebf8f6ea4da4966582d7f8d6b6a74b3a0"
+    },
+    "social-post-writer-seo": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cd3f8b7150024825d83aa3181580ed0db4bc8ef43b4f0b31eafe8f32e1485d47"
+    },
+    "social-proof-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a3f5f4d304b1440620999445b47eabb6475c756796e337893e3b9de9c43f0aaf"
+    },
+    "socialclaw": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3bddf06f6946b1971fd2842f361ec763bfbdb1bc8a4d41e334a398b5e9f86435"
+    },
+    "software-architecture": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "19ee028010077ff687e3fcf9613b4f9b9d6c839a15396007d9ba263f6930ec6a"
+    },
+    "solidity-security": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b0bc3b4b5566d8f2a37145658dab9ba2b2a5ed530a6a831cb1a929f1b2ef9fa7"
+    },
+    "spark-optimization": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "df87e34f9732a0550fb8f250cdf4ce5708a46adb2241fa26d40188db31c4d725"
+    },
+    "spec-to-code-compliance": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4a8466eae5bc2c283afe2d98c3aa2a82ed513a151012292d0a3b1367d18f58b7"
+    },
+    "speckit-updater": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "41da374152e5670a6b69b80719e45ebb902d9a81bd728822419ee5201380bae1"
+    },
+    "speed": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ae3641d06783d7bef80d47c72a5e9acf9bcd2c07696aef667f9a4165222370da"
+    },
+    "spline-3d-integration": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8d0f0281d9eca2dc7143eff52ece481f721abafa61dde37b12965b6a5e722159"
+    },
+    "sql-injection-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a5d4187784cbbffb0ea5b6a3f3b2e8806280a2e563aed271ac98fc1adc44516e"
+    },
+    "sql-optimization-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "45e7aa6aebd2b6fdd349b0970d76e63c8011959915aaaba425454dcbb50ad179"
+    },
+    "sql-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b745f81c2fb823c1b263ef2ca95e036615707cb840d2109925d47c1f4258fedc"
+    },
+    "sqlmap-database-pentesting": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ee1300465d2a59610f1e10e31cbf2900576bc32bd3b1d2de043918e17d758d19"
+    },
+    "square-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "be223e4aba94a1c4cfc94b33a86705a04a0eb2faec4b56b6f231111bc5c651ac"
+    },
+    "squirrel": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "aaee7e54c902c657c8810f370f28da07095eddd8942f2cf425fe9f885b685cf5"
+    },
+    "sred-project-organizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "35b964e98a8c9dc3dbb65a4c9fd12a2ee7993bdb1c68153037bb0b3aa53b65c7"
+    },
+    "sred-work-summary": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "57b8542ad2e128c17da76982d0a02878644e76db23aaa47ed44d0ae88b21259d"
+    },
+    "ssh-penetration-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "adf4ca5ed55525153a76f6698d5122373e75314e8d6f8d7dde85eaa717d85c23"
+    },
+    "stability-ai": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a485348561e951cba3716a9f1a56ba292d5ec47b94807072481ec942dec5b533"
+    },
+    "startup-analyst": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "76519916664bd868597f1259ec1080ef4e915df78031cb0473d15f79b4d3846d"
+    },
+    "startup-business-analyst-business-case": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "87302c1b4226e335994baee297eea503d121d36086c29f63fcc6f78a680c5f98"
+    },
+    "startup-business-analyst-financial-projections": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c5422d297d2fba556c1f839470a33145c27f59c1b85e31dc72a0a2876898e29c"
+    },
+    "startup-business-analyst-market-opportunity": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "53f14ec643bed486b24f299ad4d580be7db1a693d2421dd1dc66eaab469c56b9"
+    },
+    "startup-financial-modeling": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d8908bd14398b80355f2157d2749ab8d92f8b99d1fa9e3045913b462d8a8c401"
+    },
+    "startup-metrics-framework": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4bdcb1ca6b1809daf19a4753198aa89928fec32d869cf5c330da7f3cba53e6ab"
+    },
+    "statsmodels": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3141e20f6385e6a27d9cf6ec678a77baf8e88eb6912a40b86e9819aecf03b33d"
+    },
+    "steve-jobs": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "da366c52f19dbcf2ba49f5b994b150588f5f7d3de7bfddc2c4d472f97cd1760a"
+    },
+    "stitch-design-taste": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "df46755cdf47c67244b757071a3fdced4458374a7c0521ad141bc5b49a44f5cc"
+    },
+    "stitch-loop": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2e04b8fbe04aab56529774e75c17734e7f6451d4d9e5808243d12b4990e5382b"
+    },
+    "stitch-ui-design": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e022358fdb6d75b003dce7ad457456952f594c409a0238eb7893971bb1c0e756"
+    },
+    "stride-analysis-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4b7224b7c8287a82844cc4f5e2d53ee523182659f7a7bc7904b5e9eac3c50665"
+    },
+    "stripe-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6432cecb50a0337d253ed373980d7e1ee032948ff68a3b3902ac7a5b907a329c"
+    },
+    "stripe-integration": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "da37981061c0514228d1703a25912a0fef4d2ece1418fab836affff360b2fd67"
+    },
+    "subagent-driven-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "21dc38e2291b4229224aab9066445578037a87f7cd4216eea85bb12ca187b65e"
+    },
+    "subagent-orchestrator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f92d54c9186b69971d52cffc39e76f52a2c1e24b1db972b36178e7d1655e3a48"
+    },
+    "subject-line-psychologist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b4fce638e17ae478d511c22a6c9ecf2d30d71b8c2eb5baf2e33ac7097dffbd32"
+    },
+    "supabase-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ea2fdfbaa09092313e32cdf18811f61cb983056769e62f7ceb231cff8da85b43"
+    },
+    "superpowers-lab": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "83fd1cc3c110b61f86a8b063160edced700fb24dab7e8a917510e37a7bfa5510"
+    },
+    "supply-chain-risk-auditor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fa26ac559262aec1e9a31f36df8940a4194cd37daf7a5fb7a8f61a8d9ef07661"
+    },
+    "sveltekit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ff11bd8e8918a61b4cfbc403350d8a64a971d2914716a72c5746255220e50d94"
+    },
+    "swift-concurrency-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6b6ae8278282b3baac9ac35791054e0e8a063bea76de3eb4ca25f2fb767bedb3"
+    },
+    "swiftui-expert-skill": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "715cc05f9b573ec232fe0c56ced8ad9a3203c8558b0a248c68b38476eec9c06b"
+    },
+    "swiftui-liquid-glass": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6cd50b03624fcaf1d6d4d48fb4d8c364c637116c766a1c5057a80b518103bb23"
+    },
+    "swiftui-performance-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c827c08027bd086d5f55987fc1958a5285393a86516caa8c1fefc986703bdef9"
+    },
+    "swiftui-ui-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5d01f474ca9302c5b386e9edb9824053286729192ba64b3efcd6a3205e321fea"
+    },
+    "swiftui-view-refactor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "579a4d160c5f5db422f2b2add6903e79153aa74a01bbcee1d186c66dbef76e09"
+    },
+    "sympy": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e45b4ee60524b8cc45c8c1beb4ca79b9f57584e35d0813b115c8fc9867dca60a"
+    },
+    "systematic-debugging": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7ac937f9ad4e74f5d441340f314ec2dbc70ed678d90889f6789091e5863d9aa4"
+    },
+    "systems-programming-rust-project": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "60e65397f1992b2081cdb8447a0159c52f1862091f624934de64a4ed18c37700"
+    },
+    "tailwind-design-system": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8bf7b1946042609fb682e41d822f875208ac4d6383037c170675a8bbe52f9ba5"
+    },
+    "tailwind-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "54ea413749acbfadc152864d73e16e6cf5d13f8c88c7fbf8f84693988789c30a"
+    },
+    "tanstack-query-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "24ca57d13931ad57ce26e8e28abbffdec424a2e1ce159b3f4a20a6aa6c01003a"
+    },
+    "task-intelligence": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ce80321ff83bd7d3bf36f3ac54cfe48a1d154b291908ceb975db853215b336cc"
+    },
+    "tavily-web": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9c19f6d5c82b5470c95e821251815171d7809e32c55c0aa8f8ffc893b5565b3a"
+    },
+    "tcm-constitution-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2d159874ac1d234973dce9dc459cabfe110e1a6fda66fe3bdfad15f1963295a9"
+    },
+    "tdd-orchestrator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d9d32fa1b5c2d6d0a66ef4bf689157ce4a9a475ddd137b0beceafff11d62e62e"
+    },
+    "tdd-workflow": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9224d1024d1164ef2243358c40397a70f65800b6c431b92f6fbac42afcf4902e"
+    },
+    "tdd-workflows": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2697b93135830e90ace00257b4a1735a8d421e39b613a5e52863cacccd375076"
+    },
+    "tdd-workflows-tdd-cycle": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f4a0c4d39a1bc794a2fa79aa2752cf542aaa93b731e3b78c20fdbdecae56a60d"
+    },
+    "tdd-workflows-tdd-green": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0d10c8fc2b690ee668ee5f1f57449631a9a5e21f3757759bee87c24f360f6fde"
+    },
+    "tdd-workflows-tdd-red": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "71bc840d72bcfcaf46fd2c90916aae1f5674cf4754e3532ccf0b93cc0662f203"
+    },
+    "tdd-workflows-tdd-refactor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fc0ea20c8fe8cdb31d1df2d173225cd906828918a801c0040ef855dc14d8d39e"
+    },
+    "team-collaboration-issue": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cc81769695c046ccfe22828451949d51f8654e2e2e95bde132d550f26bb5150f"
+    },
+    "team-collaboration-standup-notes": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d0a1ef3ccfc68d7bb9c5b3911c56fb86ef1f70c56a2ddc9363b091119eaaa3f6"
+    },
+    "team-composition-analysis": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fdd6952637618f56d9855d8c7bc775fbabe0ad9c896075e1a863a27e75f4b908"
+    },
+    "technical-change-tracker": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4d0f013966237f97123cd63d9e9ddb1d35d371cd35216e355abfa08a45b9183a"
+    },
+    "telegram": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "18dfd6ccfcd200de54337b3fc53b412ece0344cd5d8d13d4b9dd3c29ebecb216"
+    },
+    "telegram-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1b7cbdaab50a8cc85a724685fc2272e9626eda92c21a624d58ebaa9b391650ad"
+    },
+    "telegram-bot-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a57b1413132d277829e3e357270e993a5ae67a41fa757c9b201d46c30c6289fc"
+    },
+    "telegram-mini-app": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e19acb241d3d9d8dd2f275be5588dd129fd36f97f93d0dd18fa7b93b67d2e205"
+    },
+    "temporal-golang-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0e226506938f9be31f0a0e6dd0e1a7549ebce3565451d723818b7013e72c3292"
+    },
+    "temporal-python-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "51802a432009241ffbf0178d2316686f62adb718d31d73fae30ec7b4fc28f8f5"
+    },
+    "temporal-python-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0eebf531d28991d0730c2a9a90e95a8e75ea2b6362197abe09353b16febe25a8"
+    },
+    "terraform-aws-modules": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "781c9895515fd35fa240ab0e6e2b336c52189be531ab0290d844e68c7d4623f4"
+    },
+    "terraform-infrastructure": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "02630b449eb181a8d5bebe70240d151cc9498cc2eaa1eea5be897e6da15104a5"
+    },
+    "terraform-module-library": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2229762ef5431c56733329c978c46d32ccba9661dd07a52306dd4d499202adc8"
+    },
+    "terraform-skill": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5121a8fb94218a835da2d858b9a015017158dd186cab5ed538cc1dab1e529be3"
+    },
+    "terraform-specialist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fca06dbedbdf6fb65ff725b8f57b2217e760963adb8d298cd01a79f4b705ba46"
+    },
+    "test-automator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b8dcb786287f7fdf0aa4768e9cc0e3e5d4e96cb992da036788bca404dde4386e"
+    },
+    "test-driven-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "eded5969b12613d1cc0a454b9a5eb4839fcfdfaea2bc52c423e18b4b13da2312"
+    },
+    "test-fixing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d478821a82e73a39e2d5150e42fea982af1bfd53716614f8c5622581780edaa8"
+    },
+    "testing-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "028a768cc83e90ef6dcd96bc067dcc5d271eaca44d4f86ecf28bf39e5e32b8a6"
+    },
+    "testing-qa": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "600265f8f7e46637bcd103626256cf05079365ae0a120a7bfee4c9150ae3f539"
+    },
+    "theme-factory": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4f140b148ee7e9a276ac9bdf8dc3d91ce0c9749bd335c07f86fa388810261a19"
+    },
+    "threat-mitigation-mapping": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4b35c000d8fb5d7d6a8c5129f4df1ed01195d9fcd1b4160ac232055daab39fd3"
+    },
+    "threat-modeling-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "276c2c50ce42ee4be6882ac2fe57d7ee9a142c5ab456b949dd10ea88b1aecfe4"
+    },
+    "threejs-animation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e45ee9d8c4137a1f3515301e647dacb9159674ce2ba9a13e162089961cc7653b"
+    },
+    "threejs-fundamentals": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ea5a8aca5399727efcd4733ddcf77963659f16d3cb78590d2909d5fe646b9b5e"
+    },
+    "threejs-geometry": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "62e7e8ce42d5933f37692e2b2124e71a422858ddd56afb4595a4171bd94a49c0"
+    },
+    "threejs-interaction": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7c26d647f71e716edd520b4a68321dd3c172bf6490b115182754a5eb7eaa5227"
+    },
+    "threejs-lighting": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "47fd186f5ef02f3c2b3173ee48e4fc3adbaa533275efaa89bbcf2ddab0491d48"
+    },
+    "threejs-loaders": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0176b26acdf716f734966e07aa21e6a7b6f534cf6da0374d0e271bdc0fa9ca74"
+    },
+    "threejs-materials": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5385e09304a133b997b90d385a062f95fcb13e5af121d6ae2a2764fd05d84a79"
+    },
+    "threejs-postprocessing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "eb3b8b641be13abdc29610df937627c7c1c6b92078be279ef4e051567ad83d43"
+    },
+    "threejs-shaders": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "446a5073ce21fb0f05f646d54ab275ee4d57d3700c1abebcf0019716a4710b1d"
+    },
+    "threejs-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f466cf2a9d0cfb3018ca3c3fc4f99989bfd74ca9b9cdb22fca323b2da1b41ca2"
+    },
+    "threejs-textures": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "596bd30a7b2b6cc0eeb12b36e3864faf022ecc7d428fb6b00377e0187aab2ac5"
+    },
+    "tiktok-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c3ef15682b7e85926b80dcb6e57c8ab3f08def55b97ebab505e2ca152705caf6"
+    },
+    "tmux": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7254bb355b3744cd6e4c0fb8d023a053385997b130da339cf4145e2301a2d5c2"
+    },
+    "todoist-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "163ac1af2c25edf99c53cfbb198ebf979017ea01ba3dd5e8df6d227a6bdec66f"
+    },
+    "tokenwise": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f30e010d53e8aa6ba67db0f8527b0d9cec5051504f52940cd71ae27c7c929e6e"
+    },
+    "tool-design": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "36938a1c544658e4eb9c83ff01a46494c1cebb4df3506643c60d824a23532f35"
+    },
+    "tool-use-guardian": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8b6c5ee74331e09da57398cb7182c733d87e609ecfd8ec8e0a01427f3d08b610"
+    },
+    "top-web-vulnerabilities": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6e87994dbb192001cad571d4011156030c37d7d8794e8bdd981294fd8cbf5ed1"
+    },
+    "track-management": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fc6c452a1e6c8f2ba8afcb4dcfe1f1a0d9e8ea8f2cca8703acbe480cf1467e2a"
+    },
+    "transformers-js": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bdcb4771343c145c54d5cfc6778b507737c5daa95f478ee79c7b45e7d52e2224"
+    },
+    "travel-health-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2b342f684a7f424491cc39b9d798df0630319080c765ff31832c97246601605a"
+    },
+    "trello-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "92178ab88992a1cfe988164286bde178741de5f98328f46f0ad41edad28f6652"
+    },
+    "trigger-dev": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6a2da9b438663fa3fdf093cb24351ecc5fcbcbcf1fa25976af9c71f81b16483c"
+    },
+    "trpc-fullstack": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d05f923976eef24a0800cd8e83a391b3aba1394f4d18b515c8c0d444d2587a53"
+    },
+    "trust-calibrator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b005d5ff5db22c1554e9e464363deff88924998077ad66814f6fc3854fcd3869"
+    },
+    "turborepo-caching": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "da2293bdc7e11f8b4ec5bf1194aa0008b7270142f094b94c4a3907290eef700b"
+    },
+    "tutorial-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e09a18ef696663d575b2ba31ce41d2d72e9099dcb323b1f45e618f234cf2aaf7"
+    },
+    "twilio-communications": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "27526feb794d3cda586f1ed983b6aa476e85b5d4b29348e0cfb94f2493bfac78"
+    },
+    "twitter-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "26432d69c777dbb9ad5d067ff731f65d26a9c33aa486f96ea14d62caea91ddfd"
+    },
+    "typescript-advanced-types": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "73556f974c748e2294304a9471ea60727f1c7d2ed35ee59a3a5a5e61423e6701"
+    },
+    "typescript-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "525e74a7220ed67832001ca89b46deae8f2bab1abc9d25c56c8716d6550c795f"
+    },
+    "typescript-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "166981fe3092b01ea6f8d0ec2d7aa00454d0efc8d178f0f35ac17d54b92c9cd8"
+    },
+    "ui-a11y": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "1ec02fc98f134603a279bd37efb000cb8f22d3889e1b5dfae14a0eb6990ebd25"
+    },
+    "ui-component": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dd8959b41425232210fa7aff9e99fa61c17f124b6b58f0c1ae3ba3c659d110c1"
+    },
+    "ui-page": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7ced97158cbf3e35d32713abe15a513d554af8a3523596cd637f1d518ac4df15"
+    },
+    "ui-pattern": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "7881f82731aadb696f6aa59f60551a8fc6bcffab962775c16f457e23cfa29b8b"
+    },
+    "ui-review": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d3771b6916c25bac66cfb0abf17692af8763ace1c1a858c6e960b78d2f9a5f74"
+    },
+    "ui-setup": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e3722f9e0d9e7980fdc655464223667c4c354f69e6c71543f00839cd765d57db"
+    },
+    "ui-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "884bb7abf09022a46d647775f81abba174df51a585dfc0b894b052b6d0fa4d44"
+    },
+    "ui-tokens": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a45198752c4640282f4072219f9c20e04820ac9a9c88b06eb15ac01ce1d207df"
+    },
+    "ui-ux-designer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2f0bcb6b7a81fbd31575b78a3d777d4b43fc8a2f602db46ad027dbbb6adc9a0f"
+    },
+    "ui-ux-pro-max": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "703dda85be57e33ee32212488e017be0863bc796dfbe41bfad273e457648d42a"
+    },
+    "ui-visual-validator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2b0bee7f6a42011ff76e70737b33bcd4aa87849a669cf9a52349b0591da767b3"
+    },
+    "uncle-bob-craft": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f902899dbf63345ad3f84c0147885134fadf1d00c03da2702c81d8c0dee98df6"
+    },
+    "uniprot-database": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c7b0e1fa89ba9d079238bb1bcc1285e8d7bbfdfecc9b799c39b73e8fcd4084f9"
+    },
+    "unit-testing-test-generate": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "60b0c33801210bd79b53f05c6466cc32e77fbbfd9538b1d1ba2958ed78c723e3"
+    },
+    "unity-ai-game-creator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c3d63b35033e20d9eb7ff0d6a0a8ab6d34897b2e9baf6de8499bfdff18641bfe"
+    },
+    "unity-developer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "41f6a749e73f50b2f866877174ca9046143b8190da07c6d112b007035d7465b0"
+    },
+    "unity-ecs-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0718e4acc5815273257dc771bc477a2ba182cf741ab21cb2a8f64756dbdbbb14"
+    },
+    "unreal-engine-cpp-pro": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2662396c939172e1328040cf98c59eefb8c40fbc59d0ec0bfb9c3fafd3a09305"
+    },
+    "unship": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c0a61896e5120e07e3b083b41eff670fd11ffa68b9bc2aab0a3b28eddb7eda7d"
+    },
+    "unslop": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5e5852f3e0842e71b6b86cdad9c66976b7ffdaabeccc0c005d24f97367982d07"
+    },
+    "upgrading-expo": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "770d42223636242368fa889d1a4e12424a0074349d0616230bbf4f6fbe8e55bf"
+    },
+    "upstash-qstash": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a392497876826e0d23e6ecc536db9b67bbb4158838d4e6a6a0af4bd43ee59dbe"
+    },
+    "user-thoughts": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b1b14e06bd6b1a02a2b636af844a7b568dbf80d85cec225983237a24d7a4e660"
+    },
+    "using-git-worktrees": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8529505ce1756a5bc6c56921af4c3ced575d7530553a2ddbff30cebefd95f036"
+    },
+    "using-neon": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9939e8a8db53879288d306b1d243bd34be8bb72a453850498ed9ee12f9381ce0"
+    },
+    "using-superpowers": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e530636aebd22c2dcd683fe6926701c917bcb236e31cfd5f97cff6488e1747d5"
+    },
+    "uv-package-manager": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5cd490fe3e357822a7ee32da693ba038b3a72065b57ce5a3a7b0e4c114a9f7d4"
+    },
+    "ux-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2da145bda5d98b8d8cf2c11b8547ce0d72bf4792dcf2b2d442270602a92ad676"
+    },
+    "ux-copy": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4eca770ca842d3d395f7256dfe94dfad69fc0aee2ec7195f5d848f6ab92b1c2b"
+    },
+    "ux-feedback": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "570cc3e6e8277af4c56b92cd31f54ea88b416eed096776881a2917b41d37134c"
+    },
+    "ux-flow": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "31f982b7504c0ccfea42cdd67fdbf6d5dfcc862b5089bff7db665afdb13f4a25"
+    },
+    "ux-persuasion-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2310d500a1883d582f6c680923d9b6bcd70445338021be8225ca985844b2a3fb"
+    },
+    "uxui-principles": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "bff6634ee66bdd1e20bf9e4c181ac84ecd163e25287112dc7aea56d83ed1d3df"
+    },
+    "variant-analysis": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9249fb345e80dffda319a93cff49db6adbd4c4fab94d28672885f253ba5e9f02"
+    },
+    "varlock": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c7f871f8713385ab83f924a10f29b53023962c8e88bbf38f1d762aa2df2656c6"
+    },
+    "varlock-claude-skill": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "e83b887ec51000a7c9c541750c999167ea2995bb5e44a648b95434d18ddb120a"
+    },
+    "vector-database-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d54e23ba1f14e389ade3ee9f04ab147e98324ce6165bd3020e9a48106c23dd0f"
+    },
+    "vector-index-tuning": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2e57ed2ad792b220d6a97de679b329549d13d1c24439fe52d6d12157771e258c"
+    },
+    "vercel-ai-sdk-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "80e610470cb230fed8668a7bbd9d1a5acb9d01a445449625f73fb082c4296cd1"
+    },
+    "vercel-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "846083f7cee67317a338828c7984936684571b91527e3de705d05e37a461ad41"
+    },
+    "vercel-cli-with-tokens": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "047b56ec3423478f97bf482dbc51820b3b27088aa0dc1f1e3712f3671dd0e33b"
+    },
+    "vercel-deployment": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5ec751a3485d545bb0eb259b0a624cd84738e69298380f46dd9bbb52fd814e06"
+    },
+    "vercel-optimize": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "77d793a9177298a84779c37c5c46ae48147c68f1c56937fd4f3afd7a9b4968e8"
+    },
+    "vercel-react-view-transitions": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9025dd3883186051b23fe539105eab6872f7c7601c460f7cf5edc6aa37862048"
+    },
+    "verification-before-completion": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a1f33fe6482d116a6e7d9db3883370dfe827eca5fcf1b2ad0048d6d8945ee9b5"
+    },
+    "vexor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b57ecc6efb114fea71c1c7e76a6b8502c753babfa3cf42780ba4255bdc1bbacd"
+    },
+    "vexor-cli": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3ba9739070a39a367e5f45c32974727e722cce4a97ae425f06738cb1b3a68fc7"
+    },
+    "vibe-code-auditor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c1562d4b9408acf3011599dc14672da7074e025030164d5cf4b277c56c1dadac"
+    },
+    "vibe-code-cleanup": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ae49932bfb1d96309f227ffb7ca991deb8aad8c000feb8f6581ff72ef89dd673"
+    },
+    "vibecode-production-qa-validator": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d7a41cbb4fc171a1c7c0cfc1f992b785d36dd0d24a2a781dcb61cf4471637fc6"
+    },
+    "vibers-code-review": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4d51e6ae6fbdd0df331603cf94a79716913fcb11e2b7b7d7d989ca77fef0c625"
+    },
+    "viboscope": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "896e4224eba3ef93c94a2d894af03d18fc084fd16e48b5e21d68e7ebd4c36479"
+    },
+    "video-content-extractor": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3e57e9ec2854df204d72e8b43c4f6290be5364d30e4ab60be96e0a1efea6b228"
+    },
+    "videodb": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "71e9d76848f9a653f3e900a4096e20d65210ad9146b8f76ef8b5590fd0c0a541"
+    },
+    "videodb-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c09ba9a965d3e44d20b0b4c64d701521d5bbd6ccbc2218a5638740a84aa5cb7f"
+    },
+    "viral-generator-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "beece3b72045da7ac34bcf305ba1f7dcdc256f2045aa9910c391f702d39ca8dc"
+    },
+    "visual-emotion-engineer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "cc9a7c3d240bd5fe08b4b648101a8e8e6e924d403c47c872ddb02c590ae0469f"
+    },
+    "voice-agents": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "04fa9f9982a23f661db3e79198982ef3a29c4c7fce3b56a4456f9dc02a89b124"
+    },
+    "voice-ai-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b712d275068667c006327540cc2ab960f905630c2395ddbb90dfd4a0fc5dd572"
+    },
+    "voice-ai-engine-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0762dfa07a60bd340a0616a99b64453d5fd0e18ae314c9c5cd44e45f80557bec"
+    },
+    "vscode-extension-guide-en": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b00fca82851fb3ae6bd297dd7af36f694bab431b6c4708ca0c8540f9b50c6a8e"
+    },
+    "vulnerability-scanner": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d457720ffbf8f1245e387b38f006a041e6c130e3434bb5b6a92b0be072409c3b"
+    },
+    "warren-buffett": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c0aaa8fa03ca536dd1768f008c19b9cc63bd5835bea7a59e499af6a2fbb1ae84"
+    },
+    "wcag-audit-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5d1d9c36047f3b072b6dca7a12c93fc33c4828c9fabf5d93d195fc32d7605a96"
+    },
+    "web-artifacts-builder": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9d02791df00b5d6dd92ba5558545eb740ac61d1b406fb768b3dd3b730281dbf9"
+    },
+    "web-design-guidelines": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "de44ccda534f5eaf1595f0d2c6403bcaaf96d6f060fa0bb1cdf0037fe1867c6c"
+    },
+    "web-performance-optimization": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b1f46c736054422a4854c7d5fbbe3397e8ac48dddb81da05ade5d83cef2cfb73"
+    },
+    "web-scraper": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "510df9f2e925a7daf7551bea94d1070c6f150e27c9562e55da96b2e840e46728"
+    },
+    "web-security-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b9ab37bfdc67232e22456fc993892e3e9059180260004a3c6bb816b70a05fae9"
+    },
+    "web3-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "db47137af209a2dbc9b412609039d15ba27c59dd1a7fdd9cd366918834fb1cd9"
+    },
+    "webapp-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d82a5132fcca4b2896fc9fd54a70f733b57898d1cf1c5dfff5269f92e3bd235a"
+    },
+    "webflow-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "004671019b6c53f21d8c608bcc59df1b8aabb201405252eb6b7d119d7da10c1e"
+    },
+    "wechat-official-account-strategist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fb392882f61b90111bf85adf020e75864ddb7bd1c231254879c1f35acd0bb32e"
+    },
+    "weightloss-analyzer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "004d8c55e0a67b2be8f1ec7479b6480ed3d2868b0407b4c428df3d15b3cf84cb"
+    },
+    "wellally-tech": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d448bea9ffc08faf21612f9f3aff27570eae4ea97afb88050c1a60a3e78c893f"
+    },
+    "whatsapp-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "23b759792c99a492630c2f1a9e78bbf23a812852b04721a6dc3dcc6928ff5b00"
+    },
+    "whatsapp-cloud-api": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ad1a83ac3d510d92ebfc97e335f45b6055b9a0a7703f9dca7ee53da36a6e7e5f"
+    },
+    "wiki-architect": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "ece001411997080fd7e852a6662b352d0714014a841bc816291c352780eeac75"
+    },
+    "wiki-changelog": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fbed8e3451527f61fca243b786cc7b76b774a27bccad4e27951423e441bf2ea6"
+    },
+    "wiki-onboarding": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "22b5388a409a62aae6b6f84537a257a8242d30098c4145dcfb4045dfbc096420"
+    },
+    "wiki-page-writer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "fb8e9c77ddff8738f8bc522384d9b0806a03bcf22a6f3c90fa57deb686b6fc81"
+    },
+    "wiki-qa": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "99c4beaa1f3d0bdf84990c32ddcee16d2490bcb54b5980a8159bb9dadc612b0a"
+    },
+    "wiki-researcher": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "dd02a3eb7b854f953caf087748aeddc00b1721cca1dbb8b0936a8b6ea56bb0cc"
+    },
+    "wiki-vitepress": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8c83627bbb49967f1ffd4baefcccc1dfa45e4640001b0823492ee9b52eee0e4a"
+    },
+    "windows-privilege-escalation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "44b34b2de31df034693a03a319160067f371e35ca8784b7a993adce3c712d4c8"
+    },
+    "windows-shell-reliability": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5e57ec26b781b60a3b54187fd10838bfa2f75fdc407c7234e3295fbec8aace44"
+    },
+    "wireshark-analysis": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a7907ac515910b6345cd078d30a4f7ca75f889d49a7de1c80583c684f86e25d4"
+    },
+    "wordpress": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f6e71a454ad4dfe7fdef052ce04d54ee1514a1af6ef458d2f39a7e4429dde976"
+    },
+    "wordpress-centric-high-seo-optimized-blogwriting-skill": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "3a5679c3debbd2a853f355a3cc064a1a63e5eb8023093d8e4c92f88d55d7c27a"
+    },
+    "wordpress-penetration-testing": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "f98d1d372af69cddcc74de06ad7f553ad91cdae5b0234b0569874ddd1f4482a4"
+    },
+    "wordpress-plugin-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b5a8c01a08d322544ae36da2ab71876b4b822a005fa1e2622f8288d576a44462"
+    },
+    "wordpress-theme-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "5e9d061bf3eb13c24e790db766b606d5034519a6413babf37b29bc25f3c517e8"
+    },
+    "wordpress-woocommerce-development": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "551afc339f7ba5646dad69e6b60ae80bb45966ea302caa54a688a04b3200864e"
+    },
+    "workflow-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "319735806dfa030f82ed7606c32f3beca038966d9383aeb6513a008171f3537e"
+    },
+    "workflow-orchestration-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "6b95d6ada668965306a4580e9adce921a37a2ce86061f42a3df849bd206530b5"
+    },
+    "workflow-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "27b4fbbef25cc7ac539d98c5eff646b2f807bff1b2c629c39f6d41f55f08d179"
+    },
+    "wrike-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "72cd95e54933c24dd9e43523596f0bd905150ea1368bdb29e52e546eb4fcf6e7"
+    },
+    "writing-plans": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a87a54f16f5a95a920efd739db9d12991f0eb724d6def53bc1fb3852136cbe91"
+    },
+    "writing-skills": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "223a7811871d7e559db6b746c7f02d10e68359e7b4643cdeefa611b6c9342ac8"
+    },
+    "x-article-publisher-skill": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "66bca15a0e504cd8139c33101b44eca441175cbe65dfade708233d84c1841466"
+    },
+    "x-twitter-scraper": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "835bbb1b2148462554bef759fa355f106820af2fab8a6bea84343c266f12285f"
+    },
+    "x402-express-wrapper": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9aa9225e0a15c444abfa1e217c71eb7cdc3d5eacd671a271ef7a328d85e726c5"
+    },
+    "xiaohongshu-content-strategist": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4f15996f139e3896e62e5a339162467b612b8ea50c5d9545fc57acb81da18b08"
+    },
+    "xlsx-official": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "41427ff53766a1cf049f5013c260d3988bec7c489302efc352c1163b613bbcbb"
+    },
+    "xss-html-injection": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "a8a3228b1e60175247b3ab3dba7cd9a71299fd92a90511991d4387e03c98b97a"
+    },
+    "xvary-stock-research": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d7f5db11f576eb9dd21e076f84a227c2a1f5afdf235a35c3d6a7d1590786e7e5"
+    },
+    "yann-lecun": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "0fddf14e7df9299d624c3492ef79bc9c36857d03559e86832bc1de2aa4e356c5"
+    },
+    "yann-lecun-debate": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "60cb14c2133b09fea7338df77c5f6442d0671c57dc6fb7fcd370046e8f61a3af"
+    },
+    "yann-lecun-filosofia": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9a652d6044a0c871e90616cbbb271fe95dfc62d560cdba85452043e2b6873d45"
+    },
+    "yann-lecun-tecnico": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c49e3ec857cc067b2baa6161d440edc9510a9dc008ede0ec8d6e1fffb0ace5b5"
+    },
+    "yes-md": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "42fb755c3b7ea1a9ac13cc08605d7e19f0190c8059ff40b7bd4b2a72d9da9235"
+    },
+    "yield-intelligence": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "06dc78967afd4846bfdc0b7e606c3d0b73a6383a9c67085ba9aa33e55d067209"
+    },
+    "youtube-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "2947522923f412badf0fca60f93e87b592d0f704663419b9a3a3242615344a80"
+    },
+    "youtube-full": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "739c6bae51633e5cdec0e6171d1811e8fc6e87ee087330791ad21beee9c5ad40"
+    },
+    "youtube-summarizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "06b34537aa7cac5999bb316b195e6aa73ec394eb55ce92b01d0092198f00c12b"
+    },
+    "zapier-make-patterns": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "8e665999a14ca2a5070a67fd6fd4dafa0bfd8e0c95a701be6988533406c73f15"
+    },
+    "zendesk-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "565cfc2b85c8eb5628b4ffc922f182e9033d426fbd4b3fe0dc5d953766e6c912"
+    },
+    "zeroize-audit": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "05df3758752a505c0589188ee62737a85bfad5b594b17d9155c0aec0c359eda9"
+    },
+    "zipai-optimizer": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "c394ef70a11c35518b15fda7d32b945e75cf08c502c3fee9292aed2acd93fdb5"
+    },
+    "zod-validation-expert": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "d973af5f5bb353b6793ba2516bc11f17d6df6e505e787e774611a05e182db16a"
+    },
+    "zoho-crm-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "9863a506273420c9d2cd5c9c1e20e35a9ad3d0c4731e1b176f3b08cbb778a83d"
+    },
+    "zoom-automation": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "4709be82a20405a4d064f74b48f879fed5b7f1abf0f7b4075bf0f833969e99e5"
+    },
+    "zustand-store-ts": {
+      "source": "/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/skills",
+      "sourceType": "local",
+      "computedHash": "b66ed7ed7978bae5de8d2a5552fbf11c317de347e39bc1cea9f9a817d2a8179d"
+    }
+  }
+}
