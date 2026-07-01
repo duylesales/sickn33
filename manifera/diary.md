@@ -2,6 +2,35 @@
 
 ## 2026
 
+### Tháng 07
+
+#### Ngày 01
+
+- **22:36**: cập nhật nhật ký vào @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/diary.md]
+- **22:33**: mình đặt ngay trong đây vào lúc khoảng 17h50 đến 18h
+- **22:31**: không phải, lịch hẹn của mình set lúc gần 18h hôm nay
+- **22:30**: lịch hẹn 9:10 ngày mai là gì ? show ra cho mình
+- **22:29**: ý mình là làm luôn tác vụ của lịch hẹn đó ngay bây giờ luôn
+- **22:28**: lấy lịch hẹn vào mai 9:10
+- **21:50**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/17-security-considerations-for-quality-assurance-volume-17.md]
+- **21:49**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/16-cost-analysis-of-react-native-frameworks-volume-16.md]
+- **21:48**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/15-future-trends-in-offshore-software-teams-volume-15.md]
+- **21:48**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/14-best-practices-for-devops-automation-volume-14.md]
+- **21:47**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/13-how-to-scale-mobile-app-development-volume-13.md]
+- **21:46**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/12-why-ctos-choose-b2b-saas-architecture-volume-12.md]
+- **21:45**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/11-the-ultimate-guide-to-quality-assurance-volume-11.md]
+- **21:44**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/10-understanding-the-roi-of-react-native-frameworks-volume-10.md]
+- **21:44**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/09-a-strategic-approach-to-offshore-software-teams-volume-9.md]
+- **21:43**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/08-common-mistakes-in-devops-automation-volume-8.md]
+- **21:42**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/07-security-considerations-for-mobile-app-development-volume-7.md]
+- **21:41**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/06-cost-analysis-of-b2b-saas-architecture-volume-6.md]
+- **21:40**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/05-future-trends-in-quality-assurance-volume-5.md]
+- **21:40**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/04-best-practices-for-react-native-frameworks-volume-4.md]
+- **21:38**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/03-how-to-scale-offshore-software-teams-volume-3.md]
+- **21:36**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/02-in-house-vs-offshore-software-development-2026.md]
+- **21:36**: @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/2026/july-2026/01-how-to-scale-software-development-team.md]
+- **21:32**: github pull
+
 ### Tháng 06
 
 #### Ngày 30
