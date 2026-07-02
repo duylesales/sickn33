@@ -77,6 +77,9 @@ No. While automated testing should cover 90% of your regression testing (verifyi
 ### How does Manifera integrate offshore QA with our local developers?
 We integrate them tightly into your Agile Pods. Our offshore QA engineers do not work in a silo. They attend your daily stand-ups and work side-by-side with your developers. When a developer begins writing a feature, the offshore QA engineer simultaneously begins writing the automated test script for that feature, ensuring the feature can be tested and deployed the moment it is finished.
 
+### How does Manifera guarantee high-quality offshore engineering (Focus: Scale QA)?
+Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This is especially critical to ensure your Scale QA initiatives are executed with absolute precision.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -112,6 +115,14 @@ We integrate them tightly into your Agile Pods. Our offshore QA engineers do not
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We integrate them tightly into your Agile Pods. Our offshore QA engineers do not work in a silo. They attend your daily stand-ups and work side-by-side with your developers. When a developer begins writing a feature, the offshore QA engineer simultaneously begins writing the automated test script for that feature, ensuring the feature can be tested and deployed the moment it is finished."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Manifera guarantee high-quality offshore engineering (Focus: Scale QA)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This is especially critical to ensure your Scale QA initiatives are executed with absolute precision."
       }
     }
   ]

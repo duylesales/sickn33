@@ -74,6 +74,9 @@ Manifera enforces strict secure coding guidelines established by our Dutch manag
 ### Is React Native less secure than fully native apps?
 Not if built correctly. React Native can be just as secure as native apps when developers properly utilize bridges to native secure storage (Keychain/Keystore) and implement standard security practices like obfuscation and secure network layers.
 
+### What is Manifera's approach to offshore B2B software quality (Focus: Mobile App Security)?
+We treat offshore teams as core extensions of your business. Quality is enforced through continuous integration, strict code reviews, and adherence to European engineering best practices. This is especially critical to ensure your Mobile App Security initiatives are executed with absolute precision.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -109,6 +112,14 @@ Not if built correctly. React Native can be just as secure as native apps when d
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Not if built correctly. React Native can be just as secure as native apps when developers properly utilize bridges to native secure storage (Keychain/Keystore) and implement standard security practices like obfuscation and secure network layers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Manifera's approach to offshore B2B software quality (Focus: Mobile App Security)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We treat offshore teams as core extensions of your business. Quality is enforced through continuous integration, strict code reviews, and adherence to European engineering best practices. This is especially critical to ensure your Mobile App Security initiatives are executed with absolute precision."
       }
     }
   ]

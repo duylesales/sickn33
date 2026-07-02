@@ -76,6 +76,9 @@ Mobile apps can be decompiled by hackers to view the source code and find vulner
 ### How does Manifera ensure the security of the apps they build?
 Manifera integrates security into the CI/CD pipeline (DevSecOps). Every time a developer commits code, automated Static Application Security Testing (SAST) tools scan the codebase for vulnerabilities. Furthermore, our European headquarters mandates strict adherence to GDPR and OWASP Mobile Top 10 security standards.
 
+### How does the hybrid offshore model maintain software quality (Focus: Mobile Security)?
+By combining local European account management with elite offshore talent, we ensure nothing is lost in translation. Our Vietnam and Singapore teams follow strict coding standards validated by our lead architects. This is especially critical to ensure your Mobile Security initiatives are executed with absolute precision.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,6 +114,14 @@ Manifera integrates security into the CI/CD pipeline (DevSecOps). Every time a d
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Manifera integrates security into the CI/CD pipeline (DevSecOps). Every time a developer commits code, automated Static Application Security Testing (SAST) tools scan the codebase for vulnerabilities. Furthermore, our European headquarters mandates strict adherence to GDPR and OWASP Mobile Top 10 security standards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the hybrid offshore model maintain software quality (Focus: Mobile Security)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By combining local European account management with elite offshore talent, we ensure nothing is lost in translation. Our Vietnam and Singapore teams follow strict coding standards validated by our lead architects. This is especially critical to ensure your Mobile Security initiatives are executed with absolute precision."
       }
     }
   ]

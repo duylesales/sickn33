@@ -80,6 +80,9 @@ Yes, but not out-of-the-box. When a React Native app is minimized, the JavaScrip
 ### How does Manifera rescue a poorly performing React Native app?
 We deploy our Senior Tech Leads to perform a deep codebase audit using profiling tools (like Flipper or React DevTools). We identify exactly which components are causing unnecessary re-renders and memory leaks. We then provide a targeted refactoring roadmap, replacing slow Bridge communications with Native animations and optimizing the global state architecture.
 
+### How does Manifera guarantee high-quality offshore engineering (Focus: React Native Mistakes)?
+Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This is especially critical to ensure your React Native Mistakes initiatives are executed with absolute precision.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +118,14 @@ We deploy our Senior Tech Leads to perform a deep codebase audit using profiling
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy our Senior Tech Leads to perform a deep codebase audit using profiling tools (like Flipper or React DevTools). We identify exactly which components are causing unnecessary re-renders and memory leaks. We then provide a targeted refactoring roadmap, replacing slow Bridge communications with Native animations and optimizing the global state architecture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Manifera guarantee high-quality offshore engineering (Focus: React Native Mistakes)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This is especially critical to ensure your React Native Mistakes initiatives are executed with absolute precision."
       }
     }
   ]
