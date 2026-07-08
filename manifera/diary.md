@@ -4,6 +4,32 @@
 
 ### Tháng 07
 
+#### Ngày 08
+
+- **17:45**: cập nhật vào @[/Users/duyle/sickn33/manifera/diary.md] toàn bộ các câu lệnh tới giờ
+- **17:45**: không, gemini à, cầu viết dỡ hơn claude AI lắm nên càng viết càng tệ hà. mình sẽ đợi Claude AI hồi quota để viết tiếp thôi
+- **17:43**: hãy cập nhật THÊM câu lệnh mình yêu cầu viết các bài chuyên sâu vừa rồi vào trong file @[/Users/duyle/sickn33/manifera/prompt.md] để mình có thể yêu cầu nữa vào ngày mai 
+- **17:39**: ok tiếp tục nhưng vãn thiếu chiều sâu hãy dành nhiều thời gian và quota để viết, mình cần độ nghiên cứu sâu. thật sâu
+- **17:00**: ok hãy viết tiếp với thời gian cho nghiên cứu lâu hơn sâu hơn và tốn nhiều quota hơn với các skill : /content-creator /content-marketer /copy-editing /copywriting /copywriting-psychologist 
+- **16:45**: ok hãy viết tiếp chuyên sâu nhiều hơn và chuyên nghiệp hơn lôi cuốn hơn 
+- **16:30**: viết tiếp hãy nhớ viết luôn những keywords ít tìm kiếm coi như đây là bài viết ngách nhé !
+- **16:15**: ok hãy viết tiếp, tuy nhiên nếu có thể thêm được testimonial từ các đối tác của manifera.com, những đối tác đã sử dụng dịch vụ của manifera thì hãy trích dẫn ngẫy nhiên vào các bài viết (nếu có thể và có thể để nơi phù hợp cho phần trích testimonial này)
+- **16:00**: viết lại bài từ bài 10 của august-2026 chuẩn nghiên cứu chuyên sâu có dẫn internal link trong web manifera.com và các dịch vụ , nhưng vãn phải chuẩn SEO/GEO theo file @[/Users/duyle/sickn33/manifera/manifera_info.md] có kèm các trích dẫn testimonial ngẫu nhiên không trùng nhau hãy cách nhau 5 bài, hoặc kèm theo các trích lời từ các chuyên gia trừ các đối tượng hoặc chủ đề mà đoạn/bài viết đề cập.
+- **15:45**: viết lại bài từ bài 9 của august-2026 chuẩn nghiên cứu chuyên sâu có dẫn internal link trong web manifera.com và các dịch vụ , nhưng vãn phải chuẩn SEO/GEO theo file @[/Users/duyle/sickn33/manifera/manifera_info.md] có kèm các trích dẫn testimonial ngẫu nhiên không trùng nhau hãy cách nhau 5 bài, hoặc kèm theo các trích lời từ các chuyên gia trừ các đối tượng hoặc chủ đề mà đoạn/bài viết đề cập.
+- **15:30**: viết lại bài từ bài 9 của august-2026 chuẩn nghiên cứu chuyên sâu, nhưng vãn phải chuẩn SEO/GEO theo file @[/Users/duyle/sickn33/manifera/manifera_info.md] có kèm các trích dẫn testimonial ngẫu nhiên không trùng nhau hãy cách nhau 5 bài, hoặc kèm theo các trích lời từ các chuyên gia trừ các đối tượng hoặc chủ đề mà đoạn/bài viết đề cập.
+- **15:15**: thực hiện tiếp yêu cầu trên tuy nhiên bài viết social phải sinh động hơn nhiều hơn và thu hút hơn giống như các bài july-2026 có nơi trích dẫn link cho bài viết trên web nhé !
+- **15:00**: thực hiện yêu cầu trên nhưng tiếp tục viết tiếp từ bài 10 đến bài 60 cho tháng august-2026
+- **14:45**: hãy viết tiếp cho tháng august-2026 nhiều chữ chuyên sâu hơn và cho phép tốn nhiều quota hơn chỉ cần hay hơn @[/Users/duyle/sickn33/manifera/keyword-planner-manifera.com-2026-06-12 (1).csv] và hãy khai thác các keywords có tìm kiếm thấp luôn nhé ! Lưu ý tilte phải có keywords chính trên title. 
+
+#### Ngày 07
+
+- **14:36**: Yêu cầu tạo ảnh minh họa chuẩn 16:9 cho bài 27-why-ai-loading-states-matter-for-retention.md (phong cách modern flat-ish, corporate tech style).
+- **14:34**: Yêu cầu tạo ảnh minh họa chuẩn 16:9 cho bài 26-designing-prompts-as-code-configuration-pattern.md.
+- **14:33**: Yêu cầu tạo ảnh minh họa chuẩn 16:9 cho bài 25-fallback-pattern-graceful-degradation-ai-apps.md.
+- **14:32**: Yêu cầu tạo ảnh minh họa chuẩn 16:9 cho bài 24-generative-ui-streaming-react-components-ai.md.
+- **14:32**: Yêu cầu tạo ảnh minh họa chuẩn 16:9 cho bài 23-building-trust-citation-provenance-ui-ai.md.
+- **14:31**: Yêu cầu tạo ảnh minh họa chuẩn 16:9 cho bài 22-designing-human-in-the-loop-workflows-ai.md.
+
 #### Ngày 01
 
 - **22:36**: cập nhật nhật ký vào @[/Users/duynode/Library/Mobile Documents/com~apple~CloudDocs/sickn33/manifera/diary.md]
