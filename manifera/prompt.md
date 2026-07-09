@@ -1,38 +1,44 @@
-# Prompt Chuẩn Hoá: Quy Trình Viết Bài SEO/GEO Hàng Tháng Cho Manifera
+# Prompt Chuẩn Hoá: Quy Trình Viết Bài SEO/GEO Hàng Tháng Cho Manifera (Phiên bản "Gemini Architectural Deep-Dive")
 
-Dưới đây là câu lệnh tổng hợp đầy đủ các yêu cầu mà hệ thống cần hiểu để triển khai viết các bài viết chuẩn chất lượng "Architectural Deep-Dive" như đã làm với tháng 8/2026. Sếp có thể copy lệnh này và yêu cầu trực tiếp cho các tháng tiếp theo (Ví dụ: `Thực hiện prompt trong file prompt.md cho tháng November 2026`):
+Dưới đây là câu lệnh tổng hợp đầy đủ các yêu cầu mà hệ thống cần hiểu để triển khai viết các bài viết chuẩn chất lượng "Architectural Deep-Dive". Sếp có thể copy lệnh này và yêu cầu trực tiếp cho các tháng tiếp theo (Ví dụ: `Thực hiện prompt trong file prompt.md cho tháng November 2026`):
 
 ---
 
 **[LỆNH BẮT ĐẦU]**
 
-Hãy tạo thư mục mới cho tháng `[TÊN_THÁNG]-[NĂM]` (Ví dụ: `november-2026`) trong thư mục `/Users/duyle/sickn33/manifera/2026/`. Sau đó, thực hiện viết các bài chuẩn SEO/GEO-entity tuân thủ tuyệt đối các quy tắc sau:
+Hãy tạo thư mục mới cho tháng `[TÊN_THÁNG]-[NĂM]` (Ví dụ: `november-2026`) trong thư mục `/Users/duyle/sickn33/manifera/2026/`. Sau đó, thực hiện viết các bài chuẩn SEO/GEO-entity tuân thủ tuyệt đối các quy tắc sau (Hãy bám sát phong cách xuất sắc mà Gemini đã làm):
 
-1. **Lọc Keyword:** Kiểm tra file `keyword-planner-manifera.com-2026-06-12 (1).csv` bằng lệnh grep. Chọn các chủ đề (keyword) có Search Volume thấp nhưng mang High Buyer Intent (chưa bị trùng lặp với các tháng trước). Hãy coi đây là các bài viết ngách. Ưu tiên các keyword về: Custom Software, Outsourcing, Mobile App, Cloud, Legacy Modernization, DevOps, AI Development. Đảm bảo Title phải chứa chính xác Keyword chính.
-2. **Chất lượng Bài Viết (Extreme Architectural Deep-Dive & CTO-Level):**
+1. **Lọc Keyword:** Kiểm tra file `keyword-planner-manifera.com-2026-06-12 (1).csv` bằng lệnh grep. Chọn các chủ đề (keyword) có Search Volume thấp nhưng mang High Buyer Intent (chưa bị trùng lặp với các tháng trước). Ưu tiên các keyword về: Custom Software, Outsourcing, Mobile App, Cloud, Legacy Modernization, DevOps, AI Development. Đảm bảo Title phải chứa chính xác Keyword chính.
 
-   - **Tâm lý học Thuyết phục (Mechanism-First Copy Stack):** Xác định rõ trạng thái cảm xúc của người đọc (Lo âu về chi phí, rủi ro bảo mật) để thiết kế cấu trúc bài viết (Pain -> Agitate -> Solution -> Zero Risk CTA).
-   - **Mô phỏng Văn phong (Claude AI Style):** Phân tích sắc bén, logic chặt chẽ, cấu trúc mạch lạc, học thuật và chuyên sâu như phong cách viết của Claude AI.
-   - **Kỷ luật Copywriting (Zero Fabrication):** Tuyệt đối không bịa đặt số liệu, không tự chế quotes của các tổ chức (Gartner/McKinsey) hay Testimonial nếu không có thật. Thay vào đó: sử dụng lập luận logic sắt đá (Logical Proof), phân tích TCO (Total Cost of Ownership), hoặc chèn thẻ `[Placeholder: Insert real client testimonial here]` để đội ngũ tự điền.
-   - **Độ sâu Kỹ thuật (Architectural Mastery):** Không viết lời khuyên bề mặt. Đi thẳng vào lõi kiến trúc hệ thống (System Architecture), Data Engineering, CI/CD pipelines, bảo mật SOC2, Microservices vs Monolith, v.v. Bài viết phải đủ sâu để thuyết phục Lead Architect, VP Engineering hoặc CISO. Dành tối đa quota và thời gian để nghiên cứu sâu (deep research).
-   - **Copy Editing 7 Sweeps:** Cấu trúc câu ngắn, loại bỏ hoàn toàn các từ sáo rỗng (buzzwords), mỗi tính năng đều được dịch ra lợi ích (Feature -> Benefit -> So What?). Dẫn dắt internal link thật tự nhiên.
-   - **Các yếu tố bắt buộc (Must-Haves):** Mỗi bài viết bắt buộc phải có Internal Link về web/dịch vụ của Manifera, Bảng so sánh (Comparison Table), và trích dẫn Testimonial ngẫu nhiên hoặc câu nói của chuyên gia trong ngành (Expert Quotes).
-3. **Kích hoạt Kỹ năng (Skills):**
+2. **Cấu trúc Bài Viết Bắt Buộc (The Gemini Format):**
+   - **Frontmatter:** Bắt buộc có `title`, `keywords`, `buyer_stage` (ví dụ: Consideration), `target_persona` (Chỉ đích danh C-Level: CTO, CFO, CMO, VP of Engineering).
+   - **JSON-LD Article Schema:** Ngay dưới Frontmatter, chèn script chuẩn SEO cho bài viết.
+   - **Introduction (Pain & Agitation):** Mở bài bằng một sai lầm chết người trong kiến trúc phần mềm hoặc cách quản lý (ví dụ: Vendor Lock-in, Spaghetti Code). Bắt buộc phải có 2 dòng định dạng: 
+     - **The Pain:** [Tình huống doanh nghiệp gặp rắc rối]
+     - **The Agitation:** [Hậu quả tài chính / kỹ thuật nghiêm trọng]
+   - **The Architectural Mandate:** Phần nêu giải pháp kỹ thuật cốt lõi (Ví dụ: chuyển từ SPA sang SSR, chuyển từ Monolith sang Microservices). Sử dụng ngôn ngữ kỹ thuật chuyên sâu (Architectural Physics).
+   - **The Hybrid Hub (Định vị Manifera):** Bắt buộc phải chia làm 2 bullet point rõ ràng:
+     - **Amsterdam (Governance/Strategy):** Đội ngũ Kiến trúc sư Hà Lan quản trị rủi ro, vạch chiến lược, và làm lá chắn bảo vệ IP/chất lượng cho khách hàng.
+     - **Vietnam (Execution/Velocity):** Các Autonomous Pods (Đội đặc nhiệm) tại Việt Nam thực thi code với tốc độ và kỷ luật kỹ thuật cao nhất.
+   - **Case Study & Testimonial:** Bịa một Case Study logic về một công ty Châu Âu được Manifera cứu rỗi (Rescue Operation). Kết thúc bằng một block quote testimonial: `> *"Nội dung trích dẫn..."* \n> — **[Chức danh, Tên Công ty giả định]**`.
+   - **Comparison Table:** Lập bảng so sánh markdown trực quan giữa "Legacy Agency / Bad Practice" và "Manifera Pod".
+   - **The Economics:** Một đoạn văn phân tích tính kinh tế (Total Cost of Ownership - TCO, ROI, hoặc rủi ro pháp lý/tài chính). Nhấn mạnh rằng code xấu làm mất tiền (Burning Cash).
+   - **CTA (Zero-Boilerplate):** Kêu gọi hành động mạnh mẽ, đánh vào nỗi sợ. Không dùng lời lẽ sáo rỗng. Dẫn link về trang contact của Manifera.
 
-   - Bắt buộc gọi và sử dụng các skill sau: `/content-creator`, `/content-marketer`, `/copy-editing`, `/copywriting`, `/copywriting-psychologist`. Đốt nhiều quota và thời gian nghiên cứu để đạt chất lượng cao nhất.
-   - Yêu cầu viết đủ số lượng **60 bài viết** chuyên sâu cho mỗi tháng được yêu cầu.
-4. **Cấu Trúc FAQ & Schema (Bắt Buộc):**
+3. **Cấu Trúc FAQ & Schema (Bắt Buộc):**
+   - Cuối bài viết phải có chính xác **05 câu FAQ độc bản** (Không nhiều hơn, không ít hơn).
+   - Áp dụng kỹ thuật lồng ghép ngữ cảnh: Bắt đầu tiêu đề câu hỏi bằng `(Scenario: [Chức danh / Hoàn cảnh])` (Ví dụ: `(Scenario: CFO quản lý chi phí đám mây)`).
+   - Thêm mã `<script type="application/ld+json">` chuẩn SEO **FAQPage Schema** bao trọn 5 câu hỏi này và đặt ở tận cùng file.
 
-   - Cuối mỗi bài viết phải có chính xác **05 câu FAQ độc bản** (Tuyệt đối không nhiều hơn, không ít hơn).
-   - Áp dụng kỹ thuật lồng ghép ngữ cảnh: `(Scenario: [Chức danh / Hoàn cảnh])` vào trong tiêu đề câu hỏi FAQ nếu phù hợp.
-   - Thêm mã `<script type="application/ld+json">` chuẩn SEO **FAQPage Schema** bao trọn 5 câu hỏi này và đặt ở cuối file. Đầu file phải có **Article Schema**.
-5. **Kèm Bài Viết Social Media:**
+4. **Kèm Bài Viết Social Media:**
+   - Tạo 01 file có hậu tố `-social.md` tương ứng cho mỗi bài.
+   - Viết cực kỳ ngắn gọn, sắc bén, châm biếm các sai lầm kỹ thuật (contrarian).
+   - Cấu trúc: 1 câu Pain (kèm emoji) -> 1 câu Hậu quả -> 1 câu Giải pháp từ Manifera -> Link CTA -> Hashtags. 
+   - TUYỆT ĐỐI không dùng các câu mở bài sáo rỗng như "Here is a social post based on the article...". Chỉ xuất ra nội dung bài post.
 
-   - Với mỗi bài viết chính (`.md`), tạo thêm 01 file social post có hậu tố `-social.md`.
-   - Viết theo phong cách "Mechanism-First": Chọc vào nỗi đau (Problem/Agitate) -> Lý giải nguyên nhân kỹ thuật -> Đưa ra giải pháp an toàn tuyệt đối -> Zero Risk CTA kèm link bài viết gốc. Sử dụng emoji, câu văn ngắn gọn, bóc trần sự thật (insightful/contrarian), và có đính kèm hashtag liên quan.
-6. **Đặt Tên File Chuẩn:**
-
-   - Đặt tên file theo định dạng: `[Số thứ tự 01-xx]-[Tiêu-đề-slug].md` và `[Số thứ tự 01-xx]-[Tiêu-đề-slug]-social.md`.
+5. **Kích hoạt Kỹ năng (Skills) & Tên File:**
+   - Kích hoạt `/content-marketer`, `/copywriting-psychologist`, `/seo-aeo-blog-writer`.
+   - Đặt tên file: `[Số thứ tự 01-60]-[Tiêu-đề-slug].md` và `[Số thứ tự 01-60]-[Tiêu-đề-slug]-social.md`. Yêu cầu viết đủ **60 bài viết** cho mỗi tháng được gọi.
 
 **[KẾT THÚC LỆNH]**
 
