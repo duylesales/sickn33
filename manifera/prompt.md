@@ -12,12 +12,15 @@ Hãy tạo thư mục mới cho tháng `[TÊN_THÁNG]-[NĂM]` (Ví dụ: `novemb
 
 2. **Chất lượng Bài Viết (Extreme Architectural Deep-Dive & CTO-Level):**
    - **Tâm lý học Thuyết phục (Mechanism-First Copy Stack):** Xác định rõ trạng thái cảm xúc của người đọc (Lo âu về chi phí, rủi ro bảo mật) để thiết kế cấu trúc bài viết (Pain -> Agitate -> Solution -> Zero Risk CTA).
+   - **Mô phỏng Văn phong (Claude AI Style):** Phân tích sắc bén, logic chặt chẽ, cấu trúc mạch lạc, học thuật và chuyên sâu như phong cách viết của Claude AI.
    - **Kỷ luật Copywriting (Zero Fabrication):** Tuyệt đối không bịa đặt số liệu, không tự chế quotes của các tổ chức (Gartner/McKinsey) hay Testimonial nếu không có thật. Thay vào đó: sử dụng lập luận logic sắt đá (Logical Proof), phân tích TCO (Total Cost of Ownership), hoặc chèn thẻ `[Placeholder: Insert real client testimonial here]` để đội ngũ tự điền.
-   - **Độ sâu Kỹ thuật (Architectural Mastery):** Không viết lời khuyên bề mặt. Đi thẳng vào lõi kiến trúc hệ thống (System Architecture), Data Engineering, CI/CD pipelines, bảo mật SOC2, Microservices vs Monolith, v.v. Bài viết phải đủ sâu để thuyết phục Lead Architect, VP Engineering hoặc CISO.
+   - **Độ sâu Kỹ thuật (Architectural Mastery):** Không viết lời khuyên bề mặt. Đi thẳng vào lõi kiến trúc hệ thống (System Architecture), Data Engineering, CI/CD pipelines, bảo mật SOC2, Microservices vs Monolith, v.v. Bài viết phải đủ sâu để thuyết phục Lead Architect, VP Engineering hoặc CISO. Dành tối đa quota và thời gian để nghiên cứu sâu (deep research).
    - **Copy Editing 7 Sweeps:** Cấu trúc câu ngắn, loại bỏ hoàn toàn các từ sáo rỗng (buzzwords), mỗi tính năng đều được dịch ra lợi ích (Feature -> Benefit -> So What?). Dẫn dắt internal link thật tự nhiên.
+   - **Các yếu tố bắt buộc (Must-Haves):** Mỗi bài viết bắt buộc phải có Internal Link về web/dịch vụ của Manifera, Bảng so sánh (Comparison Table), và trích dẫn Testimonial ngẫu nhiên hoặc câu nói của chuyên gia trong ngành (Expert Quotes).
 
 3. **Kích hoạt Kỹ năng (Skills):**
    - Bắt buộc gọi và sử dụng các skill sau: `/content-creator`, `/content-marketer`, `/copy-editing`, `/copywriting`, `/copywriting-psychologist`. Đốt nhiều quota và thời gian nghiên cứu để đạt chất lượng cao nhất.
+   - Yêu cầu viết đủ số lượng **60 bài viết** chuyên sâu cho mỗi tháng được yêu cầu.
 
 4. **Cấu Trúc FAQ & Schema (Bắt Buộc):**
    - Cuối mỗi bài viết phải có chính xác **05 câu FAQ độc bản** (Tuyệt đối không nhiều hơn, không ít hơn).

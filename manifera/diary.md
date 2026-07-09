@@ -6,6 +6,14 @@
 
 #### Ngày 08
 
+- **19:00**: hoàn thành viết đủ bài 42 đến 60 cho tháng august-2026, cập nhật prompt.md và push lên github
+- **18:50**: tiếp tục các bài viết nghiên cứu chuyên sâu dành nhiều quota nghiên cứu hơn và viết giống với Claude Ai hơn cho đủ 60 bài viết , có trích nguồn internal link, có trích dẫn testimonial ngẫu nhiên hoặc các câu trích của chuyên gia ngành, có bảng so sánh. hãy dự vào cấu trúc các bài ... để hiểu rõ hơn yêu cầu và viết giống Claude AI
+- **18:45**: tiếp tục các bài viết nghiên cứu chuyên sâu dành nhiều quota nghiên cứu hơn và viết giống với Claude Ai hơn cho đủ 60 bài viết
+- **18:30**: hãy viết tiếp bài viết chuẩn SEO/GEO cho tháng august-2026 từ bài 33 trở đi , các bài chuẩn SEO/GEO-entity với thông tin @[/Users/duyle/sickn33/manifera/manifera_info.md] và website : manifera.com tuân thủ tuyệt đối các quy tắc...
+- **18:25**: push lên github
+- **18:20**: các ngày 2 đến ngày 7 nữa
+- **18:15**: cập nhật vào @[/Users/duyle/sickn33/manifera/diary.md] toàn bộ các câu lệnh tới giờ
+- **18:10**: cập nhật vào @[/Users/duyle/sickn33/manifera/diary.md] 
 - **17:45**: cập nhật vào @[/Users/duyle/sickn33/manifera/diary.md] toàn bộ các câu lệnh tới giờ
 - **17:45**: không, gemini à, cầu viết dỡ hơn claude AI lắm nên càng viết càng tệ hà. mình sẽ đợi Claude AI hồi quota để viết tiếp thôi
 - **17:43**: hãy cập nhật THÊM câu lệnh mình yêu cầu viết các bài chuyên sâu vừa rồi vào trong file @[/Users/duyle/sickn33/manifera/prompt.md] để mình có thể yêu cầu nữa vào ngày mai 
