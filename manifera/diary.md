@@ -4,6 +4,10 @@
 
 ### Tháng 07
 
+#### Ngày 13
+
+- **09:50**: Tạo ảnh minh họa siêu thực (hyper-realistic) chuẩn 16:9 cho các bài viết từ 35 đến 41 của tháng august-2026. Chuẩn bị xong lệnh cho bài 42 (đang chờ quota).
+
 #### Ngày 08
 
 - **19:00**: hoàn thành viết đủ bài 42 đến 60 cho tháng august-2026, cập nhật prompt.md và push lên github
