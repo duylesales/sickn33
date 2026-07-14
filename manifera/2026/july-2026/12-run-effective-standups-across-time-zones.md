@@ -1,18 +1,18 @@
 ---
-Title: "How to Run Effective Standups Across 6 Time Zones"
+Title: "How to Run Effective Standups Across 6 Time Zones for Offshore Software Development Teams"
 Keywords: offshore software development, dedicated development team, distributed teams, remote engineering
 Buyer Stage: Consideration
 Target Persona: A (CTO / VP Engineering)
 Content Format: How-To Guide
 ---
 
-# How to Run Effective Standups Across 6 Time Zones
+# How to Run Effective Standups Across 6 Time Zones for Offshore Software Development Teams
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to Run Effective Standups Across 6 Time Zones",
+  "name": "How to Run Effective Standups Across 6 Time Zones for Offshore Software Development Teams",
   "description": "A tactical guide for engineering managers running daily standups with distributed teams spanning multiple time zones.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
