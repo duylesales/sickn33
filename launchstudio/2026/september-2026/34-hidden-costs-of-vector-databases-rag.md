@@ -1,10 +1,10 @@
 ---
-Title: The Hidden Costs of Vector Databases
-Keywords: Hidden, Costs, Vector, Databases
+Title: The Hidden Costs of Vector Databases - Best Of Ai
+Keywords: Best Of Ai, Hidden, Costs, Vector, Databases
 Buyer Stage: Consideration
 ---
 
-# The Hidden Costs of Vector Databases
+# The Hidden Costs of Vector Databases - Best Of Ai
 Retrieval-Augmented Generation (RAG) is the backbone of enterprise AI. To build a RAG pipeline, you must utilize a Vector Database to store and search documents. While providers like Pinecone, Weaviate, and Milvus offer seamless developer experiences, founders are often blindsided when their startup scales. The physics of vector search makes it fundamentally more expensive than traditional SQL storage. Here is how to navigate the hidden costs of vector infrastructure.
 
 ## The RAM Premium

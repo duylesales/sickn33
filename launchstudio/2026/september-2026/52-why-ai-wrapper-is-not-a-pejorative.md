@@ -1,10 +1,10 @@
 ---
-Title: Why the 'AI Wrapper' is Not a Pejorative
-Keywords: AI, Wrapper, Pejorative
+Title: Why the 'AI Wrapper' is Not a Pejorative - Make A Ai
+Keywords: Make A Ai, AI, Wrapper, Pejorative
 Buyer Stage: Awareness
 ---
 
-# Why the 'AI Wrapper' is Not a Pejorative
+# Why the 'AI Wrapper' is Not a Pejorative - Make A Ai
 If you launch an AI startup today, someone on HackerNews will immediately dismiss it as a "Thin AI Wrapper." The implication is that because you did not spend $100 million training your own foundational model, your software has no value and will be destroyed the next time OpenAI updates ChatGPT. This is the most financially destructive myth in the industry. Embracing the "Wrapper" model is the most rational path to B2B profitability.
 
 ## The Myth of the 'Technical Moat'

@@ -1,10 +1,10 @@
 ---
-Title: Reducing Churn in Generative AI Products
-Keywords: Reducing, Churn, Generative, AI, Products
+Title: Reducing Churn in Generative AI Products - Ai In Software Engineering
+Keywords: Ai In Software Engineering, Reducing, Churn, Generative, AI, Products
 Buyer Stage: Awareness
 ---
 
-# Reducing Churn in Generative AI Products
+# Reducing Churn in Generative AI Products - Ai In Software Engineering
 Generative AI apps are famous for massive virality and equally massive churn. A founder will celebrate acquiring 5,000 users in January, only to discover that 4,000 of them cancelled their subscriptions by March. The novelty of AI wears off quickly. To build a sustainable, highly-valued SaaS business, you must transition your product from a "cool toy" into an indispensable utility. Here is the architecture of retention.
 
 ## The 'System of Record' Mandate

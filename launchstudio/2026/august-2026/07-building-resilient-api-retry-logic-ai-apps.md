@@ -1,10 +1,10 @@
 ---
-Title: Building Resilient API Retry Logic for AI Applications
-Keywords: Building, Resilient, API, Retry, Logic, AI, Applications
+Title: Building Resilient API Retry Logic for AI Applications - Ai For Coding
+Keywords: Ai For Coding, Building, Resilient, API, Retry, Logic, AI, Applications
 Buyer Stage: Awareness
 ---
 
-# Building Resilient API Retry Logic for AI Applications
+# Building Resilient API Retry Logic for AI Applications - Ai For Coding
 If you build a SaaS on top of the Stripe API, you can reasonably expect 99.99% uptime. If you build a SaaS on top of an LLM API, you must expect failure. Generative AI is computationally constrained. During peak hours, API providers frequently throw 429 (Rate Limit) and 503 (Server Overload) errors. If your code simply throws a raw error to the frontend when this happens, your users will churn. Here is how to build resilient, fault-tolerant AI applications.
 
 ## The Naive Approach (And Why It Fails)

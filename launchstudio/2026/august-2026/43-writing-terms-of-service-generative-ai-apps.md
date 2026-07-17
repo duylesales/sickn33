@@ -1,10 +1,10 @@
 ---
-Title: Writing Terms of Service for Generative AI Apps
-Keywords: Writing, Terms, Service, Generative, AI, Apps
+Title: Writing Terms of Service for Generative AI Apps - Ai For Coding
+Keywords: Ai For Coding, Writing, Terms, Service, Generative, AI, Apps
 Buyer Stage: Awareness
 ---
 
-# Writing Terms of Service for Generative AI Apps
+# Writing Terms of Service for Generative AI Apps - Ai For Coding
 For most bootstrapped founders, the Terms of Service (ToS) is a copied-and-pasted afterthought. In traditional SaaS, this is risky. In Generative AI, it is catastrophic. AI introduces novel legal liabilities—hallucinations causing financial damage, generation of illegal deepfakes, and massive copyright ambiguities. Your ToS is your only shield. Here is how to architect it for an AI startup.
 
 ## The Hallucination Disclaimer

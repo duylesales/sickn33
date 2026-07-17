@@ -1,12 +1,11 @@
 ---
-Title: The Cross-Contamination Catastrophe: Securing Multi-Tenant AI Architectures
-Keywords: Multi-Tenant Architecture, Row-Level Security, Supabase RLS, AI database isolation, B2B SaaS security, LaunchStudio, Manifera, RAG security
+Title: The Cross-Contamination Catastrophe: Securing Multi-Tenant AI Architectures - Day Ai
+Keywords: Day Ai, Multi-Tenant Architecture, Row-Level Security, Supabase RLS, AI database isolation, B2B SaaS security, LaunchStudio, Manifera, RAG security
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)
 ---
 
-# The Cross-Contamination Catastrophe: Securing Multi-Tenant AI Architectures
-
+# The Cross-Contamination Catastrophe: Securing Multi-Tenant AI Architectures - Day Ai
 When you build a B2B SaaS, your database architecture usually follows a "Multi-Tenant" model. To save money, you store the data of Company A and Company B in the exact same database, often in the exact same table. 
 
 In a traditional web app, separating this data is easy. Your backend simply adds a `WHERE tenant_id = 'CompanyA'` to every SQL query. 

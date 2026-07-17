@@ -1,10 +1,10 @@
 ---
-Title: Community-Led Growth for Developer Tools
-Keywords: Community, Led, Growth, Developer, Tools
+Title: Community-Led Growth for Developer Tools - Ai For Coding
+Keywords: Ai For Coding, Community, Led, Growth, Developer, Tools
 Buyer Stage: Awareness
 ---
 
-# Community-Led Growth for Developer Tools
+# Community-Led Growth for Developer Tools - Ai For Coding
 If you are building an AI tool for developers—like a new code-generation Copilot, a vector database, or an LLM orchestration framework—you must throw away the traditional B2B marketing playbook. Developers use ad-blockers. They ignore cold emails. They mock corporate buzzwords on Twitter. The only way to acquire developers at scale is through **Community-Led Growth (CLG)**.
 
 ## The Developer Mindset

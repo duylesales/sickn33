@@ -1,10 +1,10 @@
 ---
-Title: Extracting Structured Data from PDFs with AI
-Keywords: Extracting, Structured, Data, PDFs, AI
+Title: Extracting Structured Data from PDFs with AI - Code With Ai
+Keywords: Code With Ai, Extracting, Structured, Data, PDFs, AI
 Buyer Stage: Awareness
 ---
 
-# Extracting Structured Data from PDFs with AI
+# Extracting Structured Data from PDFs with AI - Code With Ai
 In B2B software, data is everything. Yet, the vast majority of valuable corporate data—invoices, legal contracts, medical records, and supply chain manifests—is trapped inside PDFs. Historically, extracting this data required fragile OCR (Optical Character Recognition) templates that broke the moment a vendor changed their logo. Today, multi-modal AI models have solved this problem entirely, opening massive opportunities for vertical AI startups.
 
 ## The Failure of Traditional Parsers

@@ -1,12 +1,11 @@
 ---
-Title: Engineering for the Law: Surviving EU AI Act Compliance
-Keywords: EU AI Act compliance, AI regulation, Dutch AI startups, LaunchStudio, Manifera, B2B SaaS compliance, AI transparency
+Title: Engineering for the Law: Surviving EU AI Act Compliance - Ai For Software Engineering
+Keywords: Ai For Software Engineering, EU AI Act compliance, AI regulation, Dutch AI startups, LaunchStudio, Manifera, B2B SaaS compliance, AI transparency
 Buyer Stage: Decision
 Target Persona: D (SaaS Founder Scale-Up)
 ---
 
-# Engineering for the Law: Surviving EU AI Act Compliance
-
+# Engineering for the Law: Surviving EU AI Act Compliance - Ai For Software Engineering
 The "Wild West" of Artificial Intelligence in Europe is officially over. 
 
 The European Union has rolled out the **EU AI Act**, and it is sending shockwaves through the Dutch startup ecosystem. For years, founders moved fast and broke things, plugging OpenAI APIs into their apps without thinking twice about data governance or algorithmic transparency. 

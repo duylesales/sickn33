@@ -1,10 +1,10 @@
 ---
-Title: Tracking the Right KPIs for Generative SaaS
-Keywords: Tracking, Right, KPIs, Generative, SaaS
+Title: Tracking the Right KPIs for Generative SaaS - Ai For Coding
+Keywords: Ai For Coding, Tracking, Right, KPIs, Generative, SaaS
 Buyer Stage: Awareness
 ---
 
-# Tracking the Right KPIs for Generative SaaS
+# Tracking the Right KPIs for Generative SaaS - Ai For Coding
 If you run a traditional SaaS company, a spike in Daily Active Users (DAU) is a cause for celebration. If you run a generative AI startup, a sudden, unmonitored spike in heavy usage could mean you are losing thousands of dollars a day in API fees. The unit economics of AI require an entirely new set of Key Performance Indicators (KPIs). If you are only looking at MRR (Monthly Recurring Revenue), you are flying blind.
 
 ## KPI 1: AI Gross Margin per User

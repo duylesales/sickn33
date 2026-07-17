@@ -1,10 +1,10 @@
 ---
-Title: Handling 10k Concurrent SSE Connections in Node.js
-Keywords: Handling, Concurrent, SSE, Connections, Node
+Title: Handling 10k Concurrent SSE Connections in Node.js - Ai In Software Engineering
+Keywords: Ai In Software Engineering, Handling, Concurrent, SSE, Connections, Node
 Buyer Stage: Awareness
 ---
 
-# Handling 10k Concurrent SSE Connections in Node.js
+# Handling 10k Concurrent SSE Connections in Node.js - Ai In Software Engineering
 To build a B2B AI product that feels magical, you must stream the LLM response word-by-word to the user interface using Server-Sent Events (SSE). This "typewriter effect" proves the system is working and drops perceived latency to near zero. However, architecturally, SSE is a ticking time bomb. Holding thousands of long-lived HTTP connections open simultaneously will exhaust your Node.js server's memory and connection pools, causing catastrophic crashes during traffic spikes.
 
 ## The Connection Pool Exhaustion Problem

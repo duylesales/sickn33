@@ -1,10 +1,10 @@
 ---
-Title: Data Exfiltration Risks in RAG Pipelines
-Keywords: Data, Exfiltration, Risks, RAG, Pipelines
+Title: Data Exfiltration Risks in RAG Pipelines - Ai In Software Engineering
+Keywords: Ai In Software Engineering, Data, Exfiltration, Risks, RAG, Pipelines
 Buyer Stage: Awareness
 ---
 
-# Data Exfiltration Risks in RAG Pipelines
+# Data Exfiltration Risks in RAG Pipelines - Ai In Software Engineering
 The magic of a RAG (Retrieval-Augmented Generation) pipeline is that it makes all of a company's disparate knowledge instantly searchable. The terror of a RAG pipeline is exactly the same thing. If you index an enterprise's entire Google Drive into a Vector Database without architecting strict security controls, you have just built the ultimate tool for corporate espionage. Securing a RAG pipeline against internal data exfiltration is critical.
 
 ## The Internal Exfiltration Threat

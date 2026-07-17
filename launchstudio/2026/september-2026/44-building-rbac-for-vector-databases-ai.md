@@ -1,10 +1,10 @@
 ---
-Title: Building Role-Based Access Control (RBAC) for Vector DBs
-Keywords: Building, Role, Based, Access, Control, RBAC, Vector, DBs
+Title: Building Role-Based Access Control (RBAC) for Vector DBs - Ai For Coding
+Keywords: Ai For Coding, Building, Role, Based, Access, Control, RBAC, Vector, DBs
 Buyer Stage: Awareness
 ---
 
-# Building Role-Based Access Control (RBAC) for Vector DBs
+# Building Role-Based Access Control (RBAC) for Vector DBs - Ai For Coding
 One of the fatal mistakes SaaS founders make when building "AI for the Enterprise" is treating the company's knowledge base as a monolith. They dump the HR handbook, the sales collateral, and the CEO's highly classified M&A strategy documents into a single Vector Database. Without strict **Role-Based Access Control (RBAC)**, the AI will happily summarize the M&A strategy for a summer intern. Enterprise security requires granular, hardware-level access restrictions.
 
 ## The Danger of the Monolithic Index

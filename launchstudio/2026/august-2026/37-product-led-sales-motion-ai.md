@@ -1,10 +1,10 @@
 ---
-Title: The 'Product-Led Sales' Motion for AI
-Keywords: Product, Led, Sales, Motion, AI
+Title: The 'Product-Led Sales' Motion for AI - Ai For Coding
+Keywords: Ai For Coding, Product, Led, Sales, Motion, AI
 Buyer Stage: Awareness
 ---
 
-# The 'Product-Led Sales' Motion for AI
+# The 'Product-Led Sales' Motion for AI - Ai For Coding
 Founders are obsessed with Product-Led Growth (PLG)—the dream of building a software tool so good that thousands of users sign up and swipe their credit cards while the founder sleeps. But PLG has a ceiling. A Fortune 500 company will not buy a 1,000-seat software license through a self-serve checkout page. To break the $1M ARR barrier, you must layer a human sales team on top of your self-serve funnel. This is the **Product-Led Sales (PLS)** motion.
 
 ## The Limitations of Pure PLG

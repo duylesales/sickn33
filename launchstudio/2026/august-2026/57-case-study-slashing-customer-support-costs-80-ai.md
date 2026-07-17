@@ -1,10 +1,10 @@
 ---
-Title: Case Study: Slashing Customer Support Costs by 80%
-Keywords: Case, Study, Slashing, Customer, Support, Costs
+Title: Case Study: Slashing Customer Support Costs by 80% - ai software development
+Keywords: ai software development, Case, Study, Slashing, Customer, Support, Costs
 Buyer Stage: Consideration
 ---
 
-# Case Study: Slashing Customer Support Costs by 80%
+# Case Study: Slashing Customer Support Costs by 80% - ai software development
 For high-growth startups, customer support is often a victim of success. The faster you acquire users, the faster your support queue swells, forcing you to hire armies of Tier 1 agents. This case study details how LaunchStudio helped a Series B FinTech startup ("PayFlow") break this linear cost curve by deploying a custom Retrieval-Augmented Generation (RAG) architecture, autonomously resolving 62% of their tickets and saving $800,000 in projected payroll.
 
 ## The Crisis: The Tier 1 Ticket Avalanche

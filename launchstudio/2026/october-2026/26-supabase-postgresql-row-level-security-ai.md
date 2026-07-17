@@ -1,12 +1,11 @@
 ---
-Title: Supabase & AI — Why Row Level Security is Non-Negotiable for SaaS
-Keywords: supabase, postgresql, row level security, rls, LaunchStudio, Manifera, AI saas
+Title: Supabase & AI — Why Row Level Security is Non-Negotiable for SaaS - Security For Ai
+Keywords: Security For Ai, supabase, postgresql, row level security, rls, LaunchStudio, Manifera, AI saas
 Buyer Stage: Decision
 Target Persona: B (Technical Solo Founder)
 ---
 
-# Supabase & AI — Why Row Level Security is Non-Negotiable for SaaS
-
+# Supabase & AI — Why Row Level Security is Non-Negotiable for SaaS - Security For Ai
 When you are a technical solo founder building an AI application, speed is everything. You use Bolt.new or Cursor to generate your React frontend, and you reach for Supabase as your backend. 
 
 Supabase—an open-source Firebase alternative built on top of PostgreSQL—is arguably the best database choice for modern AI startups. It offers instant APIs, real-time subscriptions, and built-in vector support (`pgvector`) for storing AI embeddings. 

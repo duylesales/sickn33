@@ -1,12 +1,11 @@
 ---
-Title: Surviving OpenAI API Costs: How to Build Metered SaaS Billing with Stripe
-Keywords: saas billing, Stripe metered billing, AI tokens, LaunchStudio, Manifera, B2B SaaS architecture, API costs
+Title: Surviving OpenAI API Costs: How to Build Metered SaaS Billing with Stripe - Build App With Ai
+Keywords: Build App With Ai, saas billing, Stripe metered billing, AI tokens, LaunchStudio, Manifera, B2B SaaS architecture, API costs
 Buyer Stage: Decision
 Target Persona: B (Technical Solo Founder)
 ---
 
-# Surviving OpenAI API Costs: How to Build Metered SaaS Billing with Stripe
-
+# Surviving OpenAI API Costs: How to Build Metered SaaS Billing with Stripe - Build App With Ai
 As a technical solo founder, launching an AI SaaS is deceptively easy. You spin up a Next.js frontend, connect the OpenAI API, and charge a flat $20/month subscription.
 
 In month one, it works perfectly. You have 50 users generating a few dozen reports a week, and your OpenAI API bill is a manageable $30. 

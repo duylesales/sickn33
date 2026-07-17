@@ -1,11 +1,10 @@
 ---
-Title: Programmatic SEO: The Ultimate Growth Hack for AI Wrappers
-Keywords: Programmatic, Ultimate, Growth, Wrappers
+Title: Programmatic SEO: The Ultimate Growth Hack for AI Wrappers - Ai For Coding
+Keywords: Ai For Coding, Programmatic, Ultimate, Growth, Wrappers
 Buyer Stage: Awareness
 ---
 
-# Programmatic SEO: The Ultimate Growth Hack for AI Wrappers
-
+# Programmatic SEO: The Ultimate Growth Hack for AI Wrappers - Ai For Coding
 You built a brilliant AI tool that generates custom cover letters. You want to rank on Google. So, you write a blog post targeting the keyword "AI Cover Letter Generator." You publish it, wait three months, and get exactly zero traffic. Why? Because you are fighting multi-million dollar companies for that keyword. The solution is not writing better blog posts; the solution is Programmatic SEO (pSEO). Here is how AI founders use code to dominate Google search.
 
 ## The Long-Tail Goldmine

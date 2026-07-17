@@ -1,10 +1,10 @@
 ---
-Title: Generative UI: Streaming React Components from LLMs
-Keywords: Generative, UI, Streaming, React, Components, LLMs
+Title: Generative UI: Streaming React Components from LLMs - ai software development
+Keywords: ai software development, Generative, UI, Streaming, React, Components, LLMs
 Buyer Stage: Awareness
 ---
 
-# Generative UI: Streaming React Components from LLMs
+# Generative UI: Streaming React Components from LLMs - ai software development
 The defining characteristic of the first generation of AI applications was the "Wall of Text." You asked the AI a complex data question, and it enthusiastically printed out five paragraphs of dense, unreadable text. In a B2B environment, humans do not want to read paragraphs about data; they want to look at charts. The next evolution of SaaS architecture is **Generative UI**—allowing the LLM to dynamically render functional, interactive frontend components.
 
 ## Beyond Markdown

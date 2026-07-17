@@ -1,10 +1,10 @@
 ---
-Title: The Rise of the Vertical AI Agent
-Keywords: Rise, Vertical, AI, Agent
+Title: The Rise of the Vertical AI Agent - Best Of Ai
+Keywords: Best Of Ai, Rise, Vertical, AI, Agent
 Buyer Stage: Awareness
 ---
 
-# The Rise of the Vertical AI Agent
+# The Rise of the Vertical AI Agent - Best Of Ai
 When OpenAI launched ChatGPT, it created the ultimate "Horizontal" tool—an omniscient assistant that could help a high school student write an essay or help a developer write Python. However, as the initial novelty fades, enterprises are realizing that a generalist tool is not enough to run a business. A hospital does not need a chatbot that writes poetry; it needs a hyper-specialized system to process medical billing. Welcome to the era of the **Vertical AI Agent**.
 
 ## The Problem with Horizontal AI in B2B

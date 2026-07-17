@@ -1,10 +1,10 @@
 ---
-Title: How Generative AI is Reshaping B2B Procurement
-Keywords: Generative, AI, Reshaping, B2B, Procurement
+Title: How Generative AI is Reshaping B2B Procurement - Day Ai
+Keywords: Day Ai, Generative, AI, Reshaping, B2B, Procurement
 Buyer Stage: Awareness
 ---
 
-# How Generative AI is Reshaping B2B Procurement
+# How Generative AI is Reshaping B2B Procurement - Day Ai
 Much of the discourse around AI focuses on how software is built and operated. However, a silent revolution is occurring in how software is *bought*. The enterprise procurement cycle—historically a grueling, six-month ordeal of spreadsheets, legal redlines, and 200-page Request for Proposals (RFPs)—is being completely automated by LLM agents. For B2B founders, you are no longer just selling to human executives; you are selling to their AI evaluators.
 
 ## The Automation of the RFP

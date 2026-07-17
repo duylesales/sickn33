@@ -1,11 +1,10 @@
 ---
-Title: Setting Up Error Tracking: Why You Need Sentry Before You Launch
-Keywords: Setting, Error, Tracking, Sentry, Before
+Title: Setting Up Error Tracking: Why You Need Sentry Before You Launch - For You Ai
+Keywords: For You Ai, Setting, Error, Tracking, Sentry, Before
 Buyer Stage: Decision
 ---
 
-# Setting Up Error Tracking: Why You Need Sentry Before You Launch
-
+# Setting Up Error Tracking: Why You Need Sentry Before You Launch - For You Ai
 One of the most dangerous assumptions technical founders make is believing that users will tell them when the product breaks. They won't. When a user clicks "Checkout" and the screen goes blank, they do not email support to explain the bug. They close the tab and go to your competitor. Launching an AI-built app without error tracking means you are flying completely blind. Here is why installing a tool like Sentry is a mandatory pre-launch step.
 
 ## The Silent Failure Problem

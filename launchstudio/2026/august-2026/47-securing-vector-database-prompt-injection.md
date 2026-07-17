@@ -1,10 +1,10 @@
 ---
-Title: Securing Your Vector Database Against Prompt Injection
-Keywords: Securing, Vector, Database, Against, Prompt, Injection
+Title: Securing Your Vector Database Against Prompt Injection - Ai Database
+Keywords: Ai Database, Securing, Vector, Database, Against, Prompt, Injection
 Buyer Stage: Awareness
 ---
 
-# Securing Your Vector Database Against Prompt Injection
+# Securing Your Vector Database Against Prompt Injection - Ai Database
 In 1998, web developers learned about SQL Injection—the realization that users could type malicious code into login forms to delete entire databases. In 2026, the AI industry is facing its own existential cybersecurity crisis: **Prompt Injection**. If you are building a B2B SaaS that connects an LLM to a vector database full of enterprise data, a successful prompt injection attack will result in a catastrophic data breach.
 
 ## The Anatomy of Prompt Injection

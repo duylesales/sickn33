@@ -1,11 +1,10 @@
 ---
-Title: Database Migrations Explained: How to Change Your Supabase Schema Safely
-Keywords: Database, Migrations, Explained, Change, Supabase
+Title: Database Migrations Explained: How to Change Your Supabase Schema Safely - Ai To Code
+Keywords: Ai To Code, Database, Migrations, Explained, Change, Supabase
 Buyer Stage: Consideration
 ---
 
-# Database Migrations Explained: How to Change Your Supabase Schema Safely
-
+# Database Migrations Explained: How to Change Your Supabase Schema Safely - Ai To Code
 During the prototype phase, your AI builder likely generated a Supabase database schema, and you happily tweaked tables directly in the dashboard UI. But once you have live users, manually clicking "Delete Column" is a recipe for disaster. Changing a production database requires a controlled, code-based process called "migrations." Here is how to evolve your Supabase database safely without causing downtime or losing user data.
 
 ## The Problem with Dashboard Editing
