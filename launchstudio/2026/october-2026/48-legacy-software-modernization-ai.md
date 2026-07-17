@@ -1,11 +1,11 @@
 ---
-Title: The Trojan Horse: Selling AI Through Legacy Software Modernization
+Title: AI And Software Development: Selling Modernization as a Trojan Horse
 Keywords: AI And Software Development, legacy software modernization, AI integration, digital agency, custom software development, LaunchStudio, Manifera, tech debt
-Buyer Stage: Awareness
-Target Persona: C (Digital Agency Owner)
+Buyer Stage: Consideration
+Target Persona: C (Agency / Freelancer White-Label Partner)
 ---
 
-# The Trojan Horse: Selling AI Through Legacy Software Modernization
+# AI And Software Development: Selling Modernization as a Trojan Horse
 Every enterprise client wants "Artificial Intelligence." As an agency owner, you are constantly asked to pitch AI ideas to your corporate accounts. 
 
 You pitch an incredible, futuristic AI Agent that automatically drafts sales proposals. The client's CEO loves it. But when the project goes to the IT department for feasibility, it gets killed instantly. 
