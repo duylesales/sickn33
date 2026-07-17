@@ -1,10 +1,10 @@
 ---
-Title: Negotiating B2B SaaS Enterprise Contracts - Ai Saas
-Keywords: Ai Saas, Negotiating, B2B, SaaS, Enterprise, Contracts
+Title: Negotiating B2B SaaS Enterprise Contracts - AI Saas
+Keywords: AI Saas, Negotiating, B2B, SaaS, Enterprise, Contracts
 Buyer Stage: Awareness
 ---
 
-# Negotiating B2B SaaS Enterprise Contracts - Ai Saas
+# Negotiating B2B SaaS Enterprise Contracts - AI Saas
 You have convinced the executive team. They love your software and the $100,000 price tag. But the deal isn't closed. You have merely advanced to the final boss: Procurement. The procurement department's sole job is to protect the enterprise from risk and extract maximum concessions from vendors. If you do not understand the legal levers of a B2B SaaS contract, you will sign a deal that could bankrupt your startup.
 
 ## The Battle of 'The Paper'

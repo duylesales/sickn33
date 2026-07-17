@@ -1,6 +1,6 @@
 ---
 Title: "What Does 'AI Native' Actually Mean? Reimagining Data Flow and UI"
-Keywords: ai native, ai software, ai architecture, LaunchStudio, Manifera
+Keywords: AI native, AI software, AI architecture, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Founder / Lead Architect
 ---

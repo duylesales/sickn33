@@ -1,6 +1,6 @@
 ---
 Titel: Van AI-prototype naar betalende klanten — De 14-stappen lanceringsroadmap
-Trefwoorden: ai saas, app bouwen met ai, ai software engineering, LaunchStudio, Manifera, Bolt, Lovable
+Trefwoorden: AI saas, app bouwen met AI, AI software engineering, LaunchStudio, Manifera, Bolt, Lovable
 Koperfase: Beslissing
 Doelpersona: D (SaaS Oprichter Scale-Up)
 ---

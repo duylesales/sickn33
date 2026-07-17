@@ -1,10 +1,10 @@
 ---
-Title: Selling AI to the Enterprise CFO - Ai To Code
-Keywords: Ai To Code, Selling, AI, Enterprise, CFO
+Title: Selling AI to the Enterprise CFO - AI To Code
+Keywords: AI To Code, Selling, AI, Enterprise, CFO
 Buyer Stage: Awareness
 ---
 
-# Selling AI to the Enterprise CFO - Ai To Code
+# Selling AI to the Enterprise CFO - AI To Code
 Technical founders are obsessed with architecture. When they finally secure a meeting with an Enterprise buyer, they proudly open a slide deck detailing their multi-agent orchestration, pgvector implementation, and sub-second token latency. The Chief Financial Officer (CFO) tunes out within three minutes, and the $100k contract dies. To sell AI to the enterprise, you must ruthlessly eliminate technical jargon and speak the only language the C-Suite understands: Return on Investment (ROI).
 
 ## Stop Selling 'Artificial Intelligence'

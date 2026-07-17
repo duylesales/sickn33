@@ -1,6 +1,6 @@
 ---
 Titel: Het Juridische Mijneveld: Zo Maak je Jouw AI Chatbot AVG (GDPR) Conform
-Trefwoorden: ai chatbot gdpr compliance, AI chatbot, GDPR, LaunchStudio, Manifera, Europese AI wetgeving, data privacy
+Trefwoorden: AI chatbot gdpr compliance, AI chatbot, GDPR, LaunchStudio, Manifera, Europese AI wetgeving, data privacy
 Koperfase: Overweging
 Doelpersona: C (Bureau) / D (SaaS Founder Scale-Up)
 ---

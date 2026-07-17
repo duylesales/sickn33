@@ -1,6 +1,6 @@
 ---
 Title: "AI That Fixes Code: The Shift from Auto-Complete to Auto-Remediation"
-Keywords: ai that fixes code, ai coding, ai software engineering, LaunchStudio, Manifera
+Keywords: AI that fixes code, AI coding, AI software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: VP of Engineering / CTO
 ---

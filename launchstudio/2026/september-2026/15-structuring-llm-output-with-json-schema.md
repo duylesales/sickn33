@@ -1,10 +1,10 @@
 ---
-Title: Structuring LLM Output with JSON Schema - Code With Ai
-Keywords: Code With Ai, Structuring, LLM, Output, JSON, Schema
+Title: Structuring LLM Output with JSON Schema - Code With AI
+Keywords: Code With AI, Structuring, LLM, Output, JSON, Schema
 Buyer Stage: Awareness
 ---
 
-# Structuring LLM Output with JSON Schema - Code With Ai
+# Structuring LLM Output with JSON Schema - Code With AI
 If you are building an AI chatbot, raw text output is fine. If you are building a B2B SaaS where AI agents execute database operations, update CRM records, or trigger API webhooks, raw text is a disaster. Traditional software requires structured, predictable data. You cannot insert conversational poetry into a PostgreSQL integer column. To bridge the gap between probabilistic AI and deterministic backends, you must master JSON Schema and Structured Outputs.
 
 ## The Regex Nightmare

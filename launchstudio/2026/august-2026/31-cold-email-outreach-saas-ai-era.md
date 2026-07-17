@@ -1,10 +1,10 @@
 ---
-Title: Cold Email Outreach for SaaS in the AI Era - Ai In Saas
-Keywords: Ai In Saas, Cold, Email, Outreach, SaaS, AI, Era
+Title: Cold Email Outreach for SaaS in the AI Era - AI In Saas
+Keywords: AI In Saas, Cold, Email, Outreach, SaaS, AI, Era
 Buyer Stage: Awareness
 ---
 
-# Cold Email Outreach for SaaS in the AI Era - Ai In Saas
+# Cold Email Outreach for SaaS in the AI Era - AI In Saas
 Generative AI has fundamentally broken traditional outbound sales. Because any junior sales rep can now use ChatGPT to blast 10,000 generic emails a day, the inboxes of decision-makers are overflowing with AI-generated noise. Consequently, Google and Microsoft have drastically tightened their spam filters. To succeed in B2B SaaS cold email in 2026, you must use AI not to send *more* emails, but to send *better* emails.
 
 ## The Death of 'Spray and Pray'

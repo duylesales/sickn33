@@ -1,6 +1,6 @@
 ---
 Title: "AI Software Engineering: Keiharde Engineering Toepassen Op AI-Gegenereerde Code"
-Keywords: ai software engineering, ai and software engineering, ai in software engineering, LaunchStudio, Manifera
+Keywords: AI software engineering, AI and software engineering, AI in software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---

@@ -1,10 +1,10 @@
 ---
-Title: The Danger of Exposed API Keys in Your Frontend Code - Api In Ai
-Keywords: Api In Ai, Danger, Exposed, Frontend
+Title: The Danger of Exposed API Keys in Your Frontend Code - Api In AI
+Keywords: Api In AI, Danger, Exposed, Frontend
 Buyer Stage: Awareness
 ---
 
-# The Danger of Exposed API Keys in Your Frontend Code - Api In Ai
+# The Danger of Exposed API Keys in Your Frontend Code - Api In AI
 One of the most frequent and severe vulnerabilities in AI-generated code is the exposure of sensitive API keys directly in the frontend JavaScript. When you prompt an AI to "integrate OpenAI" or "connect to Stripe," the fastest way for it to produce working code is to hardcode your secret keys right into the React components. While this makes the prototype function immediately, it leaves the keys visible to anyone who knows how to press F12.
 
 ## How Exposure Happens

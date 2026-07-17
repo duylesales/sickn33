@@ -1,6 +1,6 @@
 ---
 Title: "What Founders Got Wrong About AI in 2026"
-Keywords: ai mistakes founders 2026, lessons learned, ai startup failures, LaunchStudio, Manifera
+Keywords: AI mistakes founders 2026, lessons learned, AI startup failures, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

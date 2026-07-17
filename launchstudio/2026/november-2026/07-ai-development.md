@@ -1,6 +1,6 @@
 ---
 Title: "AI Development for Non-Engineers: What the Tutorials Never Tell You"
-Keywords: ai development, dev ai, ai for development, ai in development, LaunchStudio, Manifera
+Keywords: AI development, dev AI, AI for development, AI in development, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

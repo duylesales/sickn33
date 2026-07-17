@@ -1,10 +1,10 @@
 ---
-Title: Building Custom AI Agents from Scratch - Day Ai
-Keywords: Day Ai, Building, Custom, AI, Agents, Scratch
+Title: Building Custom AI Agents from Scratch - Day AI
+Keywords: Day AI, Building, Custom, AI, Agents, Scratch
 Buyer Stage: Awareness
 ---
 
-# Building Custom AI Agents from Scratch - Day Ai
+# Building Custom AI Agents from Scratch - Day AI
 The tech industry throws the word "Agent" around loosely. A chatbot that generates an email is not an Agent. An Agent is an autonomous system capable of reasoning through a complex goal, executing multiple sequential actions via APIs, and course-correcting if a step fails. While many founders rely on heavy frameworks like LangChain to build Agents, the underlying architecture is surprisingly simple. Here is how to build a custom, highly reliable AI Agent in Node.js from scratch.
 
 ## The Core Prerequisite: Tool Calling

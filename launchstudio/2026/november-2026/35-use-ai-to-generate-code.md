@@ -1,6 +1,6 @@
 ---
 Title: "Use AI to Generate Code, Use Humans to Govern It: The Rise of the Internal Developer Portal"
-Keywords: use ai to generate code, ai can code, ai code governance, LaunchStudio, Manifera
+Keywords: use AI to generate code, AI can code, AI code governance, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: VP of Engineering / CTO
 ---

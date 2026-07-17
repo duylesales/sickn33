@@ -1,6 +1,6 @@
 ---
 Title: AI Deployment — Vercel vs. Netlify vs. Railway for React Apps
-Keywords: ai deployment, ai database, ai native, LaunchStudio, Manifera, Cursor, Bolt
+Keywords: AI deployment, AI database, AI native, LaunchStudio, Manifera, Cursor, Bolt
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---

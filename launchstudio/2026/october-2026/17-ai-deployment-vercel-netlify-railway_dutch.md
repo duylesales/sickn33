@@ -1,6 +1,6 @@
 ---
 Titel: AI Deployment — Vercel vs. Netlify vs. Railway voor React Apps
-Trefwoorden: ai deployment, ai database, ai native, LaunchStudio, Manifera, Cursor, Bolt
+Trefwoorden: AI deployment, AI database, AI native, LaunchStudio, Manifera, Cursor, Bolt
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

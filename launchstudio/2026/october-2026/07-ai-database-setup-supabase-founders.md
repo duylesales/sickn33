@@ -1,6 +1,6 @@
 ---
 Title: AI Database Setup — Why Your Supabase Prototype Will Collapse Under 100 Real Users
-Keywords: ai deployment, ai security, secure ai, supabase setup, LaunchStudio, Manifera, Cursor, AI database
+Keywords: AI deployment, AI security, secure AI, supabase setup, LaunchStudio, Manifera, Cursor, AI database
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---

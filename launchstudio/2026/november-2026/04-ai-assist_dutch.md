@@ -1,6 +1,6 @@
 ---
 Title: "AI Assist Tools Zijn Geen Vervanging Voor Engineering: Wat Oprichters Verkeerd Begrijpen"
-Keywords: ai assist, ai for coding, ai code tool, code with ai, LaunchStudio, Manifera
+Keywords: AI assist, AI for coding, AI code tool, code with AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---

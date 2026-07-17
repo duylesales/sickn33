@@ -1,6 +1,6 @@
 ---
 Titel: AI-app authenticatie — Waarom je gebruikers elkaars data kunnen zien
-Trefwoorden: ai security, ai beveiligingskwetsbaarheden, ai deployment, secure ai, LaunchStudio, Manifera, Cursor, AI database
+Trefwoorden: AI security, AI beveiligingskwetsbaarheden, AI deployment, secure AI, LaunchStudio, Manifera, Cursor, AI database
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

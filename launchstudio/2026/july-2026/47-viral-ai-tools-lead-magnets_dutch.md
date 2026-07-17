@@ -74,7 +74,7 @@ LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engine
 
 ### Een AI-native oprichter in actie: AI Logo Maker (gratis tool)
 
-Gavin, de oprichter van een startup, gebruikte **Lovable** om een prototype van een ai-logomaker (gratis tool) te bouwen. Hoewel de applicatie functioneel was, werd zijn gratis krediettoewijzing binnen vier uur opgebruikt door API-bots, wat van de ene op de andere dag een OpenAI-factuur van € 600 opleverde.
+Gavin, de oprichter van een startup, gebruikte **Lovable** om een prototype van een AI-logomaker (gratis tool) te bouwen. Hoewel de applicatie functioneel was, werd zijn gratis krediettoewijzing binnen vier uur opgebruikt door API-bots, wat van de ene op de andere dag een OpenAI-factuur van € 600 opleverde.
 
 Gavin werkte samen met **LaunchStudio (door Manifera)** om het product lanceringsklaar te maken. Het technische team integreerde Cloudflare Turnstile CAPTCHA en server-side IP-snelheidsbeperking op eindpunten voor het maken van tokens.
 

@@ -1,6 +1,6 @@
 ---
 Title: "From Internal Script to B2B SaaS: Productizing an AI Generated Tool"
-Keywords: ai generated tool, productize ai tool, ai saas platform, LaunchStudio, Manifera
+Keywords: AI generated tool, productize AI tool, AI saas platform, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Non-Technical Founder / Agency Owner
 ---

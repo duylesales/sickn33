@@ -1,6 +1,6 @@
 ---
 Title: "De Beste AI Code Tool Kan Niet Vervangen Wat Er Gebeurt Nádat De Code Is Geschreven"
-Keywords: ai code tool, ai code development, ai that fixes code, use ai to generate code, LaunchStudio, Manifera
+Keywords: AI code tool, AI code development, AI that fixes code, use AI to generate code, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---

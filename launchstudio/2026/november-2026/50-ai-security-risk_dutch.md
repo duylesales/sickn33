@@ -1,6 +1,6 @@
 ---
 Title: "AI Security Risk: Auditen en Voorkomen van Data-Exfiltratie via Prompt Injectie"
-Keywords: ai security risk, ai security vulnerabilities, security ai, LaunchStudio, Manifera
+Keywords: AI security risk, AI security vulnerabilities, security AI, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: Security Engineer / CISO
 ---

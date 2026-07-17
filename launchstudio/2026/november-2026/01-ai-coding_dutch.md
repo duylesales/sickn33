@@ -1,6 +1,6 @@
 ---
 Title: "AI Coding in 2026: Waarom Uw Gegenereerde Code Nog Steeds Menselijke Architectuur Nodig Heeft"
-Keywords: ai coding, ai to code, ai code tool, code with ai, LaunchStudio, Manifera
+Keywords: AI coding, AI to code, AI code tool, code with AI, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

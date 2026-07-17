@@ -1,6 +1,6 @@
 ---
 Title: "AI Data Security: Waarom 'Zero Data Retention' de Nieuwe Enterprise Standaard Is"
-Keywords: ai data security, ai security, enterprise ai, LaunchStudio, Manifera
+Keywords: AI data security, AI security, enterprise AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CISO / Data Protection Officer (DPO)
 ---

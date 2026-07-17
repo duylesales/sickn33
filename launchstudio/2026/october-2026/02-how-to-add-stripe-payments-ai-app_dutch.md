@@ -1,6 +1,6 @@
 ---
 Titel: Hoe voeg je Stripe-betalingen toe aan je door AI gebouwde app — Een gids voor niet-technische oprichters
-Trefwoorden: ai deployment, app bouwen met ai, ai saas, Stripe-betalingen, LaunchStudio, Manifera, Lovable, Bolt
+Trefwoorden: AI deployment, app bouwen met AI, AI saas, Stripe-betalingen, LaunchStudio, Manifera, Lovable, Bolt
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

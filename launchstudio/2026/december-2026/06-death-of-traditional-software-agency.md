@@ -1,6 +1,6 @@
 ---
 Title: "The Death of the Traditional Software Agency"
-Keywords: software agency disruption, ai development, traditional agency vs ai, LaunchStudio, Manifera
+Keywords: software agency disruption, AI development, traditional agency vs AI, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

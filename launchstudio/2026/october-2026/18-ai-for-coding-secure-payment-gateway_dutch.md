@@ -1,6 +1,6 @@
 ---
 Titel: AI for Coding — Waarom je AI-tool geen veilige betalingsgateway kan bouwen
-Trefwoorden: ai for coding, ai code tool, LaunchStudio, Manifera, Stripe, payments, SaaS
+Trefwoorden: AI for coding, AI code tool, LaunchStudio, Manifera, Stripe, payments, SaaS
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

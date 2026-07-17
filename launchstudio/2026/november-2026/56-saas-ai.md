@@ -1,6 +1,6 @@
 ---
 Title: "SaaS AI: Why B2B Subscriptions are Shifting to Outcome-Based Pricing"
-Keywords: saas ai, ai saas, LaunchStudio, Manifera
+Keywords: saas AI, AI saas, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: SaaS Founder / CEO
 ---

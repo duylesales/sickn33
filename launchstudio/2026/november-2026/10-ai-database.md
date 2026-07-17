@@ -1,6 +1,6 @@
 ---
 Title: "AI Database Architecture: Stop Letting Your Frontend Talk Directly to Your Data"
-Keywords: ai database, ai for db, ai in database, ai frontend, LaunchStudio, Manifera
+Keywords: AI database, AI for db, AI in database, AI frontend, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---

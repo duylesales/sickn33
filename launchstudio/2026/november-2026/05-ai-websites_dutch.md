@@ -1,6 +1,6 @@
 ---
 Title: "AI-Websites Die Daadwerkelijk Converteren: Voorbij Het Mooie Prototype"
-Keywords: ai websites, ai best website, ai best websites, websites for ai, LaunchStudio, Manifera
+Keywords: AI websites, AI best website, AI best websites, websites for AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: AI-Native Founder (Non-Technical)
 ---

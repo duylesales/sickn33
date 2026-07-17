@@ -1,6 +1,6 @@
 ---
 Title: "Van AI Prototype naar Productie: De Complete Transitiegids voor 2026"
-Keywords: ai prototype, prototype ai, ai generated application, ai app dev, LaunchStudio, Manifera
+Keywords: AI prototype, prototype AI, AI generated application, AI app dev, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: AI-Native Founder (Non-Technical)
 ---

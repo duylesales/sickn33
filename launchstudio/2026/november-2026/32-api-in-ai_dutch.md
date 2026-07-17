@@ -1,6 +1,6 @@
 ---
 Title: "API in AI: Veerkrachtige Integraties Bouwen voor Onvoorspelbare Modellen"
-Keywords: api in ai, api and ai, ai api architecture, LaunchStudio, Manifera
+Keywords: api in AI, api and AI, AI api architecture, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Backend Developer / Technical Founder
 ---

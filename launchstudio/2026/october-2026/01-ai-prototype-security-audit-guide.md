@@ -1,6 +1,6 @@
 ---
 Title: AI Prototype Security Audit — The 10-Point Checklist Every Founder Needs Before Launch
-Keywords: ai secure, ai security vulnerabilities, ai code tool, AI prototype, LaunchStudio, Manifera, Herre Roelevink
+Keywords: AI secure, AI security vulnerabilities, AI code tool, AI prototype, LaunchStudio, Manifera, Herre Roelevink
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---

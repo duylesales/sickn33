@@ -1,10 +1,10 @@
 ---
-Title: Scaling Supabase: What to Do When Your App Gets Real Traffic - Ai To Code
-Keywords: Ai To Code, Scaling, Supabase, Traffic
+Title: Scaling Supabase: What to Do When Your App Gets Real Traffic - AI To Code
+Keywords: AI To Code, Scaling, Supabase, Traffic
 Buyer Stage: Awareness
 ---
 
-# Scaling Supabase: What to Do When Your App Gets Real Traffic - Ai To Code
+# Scaling Supabase: What to Do When Your App Gets Real Traffic - AI To Code
 You launched. The product hunt went well, a TikTok went viral, and suddenly you have 5,000 active users. Congratulations—you now have a scaling problem. For AI-built apps running on Supabase, the first signs of stress usually appear as slow page loads, timeout errors, or database connection warnings. Here is a founder's guide to the three immediate levers you must pull to scale your Supabase backend.
 
 ## Lever 1: The Missing Indexes
@@ -59,7 +59,7 @@ LaunchStudio is operated by **Manifera**, an international software engineering 
 
 ### An AI-Native Founder in Action: AI Customer Support Widget
 
-Michael, a startup founder, used **Cursor** to build a ai customer support widget prototype. While the application was functional, it crashed when a client newsletter brought 4,000 concurrent visitors, locking the Postgres database.
+Michael, a startup founder, used **Cursor** to build a AI customer support widget prototype. While the application was functional, it crashed when a client newsletter brought 4,000 concurrent visitors, locking the Postgres database.
 
 Michael partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team optimized database connections using Supabase Supavisor and implemented Redis caching for static responses.
 

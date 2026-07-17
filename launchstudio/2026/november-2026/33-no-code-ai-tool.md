@@ -1,6 +1,6 @@
 ---
 Title: "No Code AI vs. Generated Code AI: The Architectural Ceiling"
-Keywords: no code ai tool, no code ai software, free software ai, LaunchStudio, Manifera
+Keywords: no code AI tool, no code AI software, free software AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Non-Technical Founder / Operations Executive
 ---

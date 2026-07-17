@@ -1,11 +1,11 @@
 ---
-Title: How to Add Stripe Payments to Your AI-Built App — A Non-Technical Founder's Guide - Ai To Code
-Keywords: Ai To Code, ai deployment, build app with ai, ai saas, Stripe payments, LaunchStudio, Manifera, Lovable, Bolt
+Title: How to Add Stripe Payments to Your AI-Built App — A Non-Technical Founder's Guide - AI To Code
+Keywords: AI To Code, AI deployment, build app with AI, AI saas, Stripe payments, LaunchStudio, Manifera, Lovable, Bolt
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---
 
-# How to Add Stripe Payments to Your AI-Built App — A Non-Technical Founder's Guide - Ai To Code
+# How to Add Stripe Payments to Your AI-Built App — A Non-Technical Founder's Guide - AI To Code
 It is Friday evening. Your AI-built booking app looks perfect. The dashboard is clean, the user flow is smooth, and three friends have already tested it on their phones. You planned to start charging real users on Monday.
 
 Then you try to process your first payment. Stripe returns an error. You check the dashboard and realize: the app is still running in test mode. The credit card numbers that "worked" during testing were Stripe's fake test cards. Real Visa and Mastercard numbers are rejected entirely.

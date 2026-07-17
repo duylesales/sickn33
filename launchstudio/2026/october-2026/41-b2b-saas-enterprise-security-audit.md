@@ -1,11 +1,11 @@
 ---
-Title: The Agency's Guide to Passing a B2B SaaS Enterprise Security Audit - Ai To Code
-Keywords: Ai To Code, enterprise security audit, B2B SaaS, LaunchStudio, Manifera, IT compliance, digital agency, custom software development
+Title: The Agency's Guide to Passing a B2B SaaS Enterprise Security Audit - AI To Code
+Keywords: AI To Code, enterprise security audit, B2B SaaS, LaunchStudio, Manifera, IT compliance, digital agency, custom software development
 Buyer Stage: Decision
 Target Persona: C (Agency)
 ---
 
-# The Agency's Guide to Passing a B2B SaaS Enterprise Security Audit - Ai To Code
+# The Agency's Guide to Passing a B2B SaaS Enterprise Security Audit - AI To Code
 Your digital agency just pitched a brilliant AI-driven internal tool to a major European corporation. The stakeholders love the UX, the C-suite is sold on the ROI, and you are about to close a €150,000 contract. 
 
 Then, the client's procurement department sends over a 150-question **Vendor Security Assessment Questionnaire (VSAQ)**. 

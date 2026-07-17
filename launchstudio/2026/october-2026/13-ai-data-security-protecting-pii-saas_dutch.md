@@ -1,6 +1,6 @@
 ---
 Titel: AI Data Security — Bescherming van PII in je AI-gegenereerde SaaS
-Trefwoorden: ai data security, ai saas, LaunchStudio, Manifera, Cursor, Bolt
+Trefwoorden: AI data security, AI saas, LaunchStudio, Manifera, Cursor, Bolt
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

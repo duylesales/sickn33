@@ -1,11 +1,11 @@
 ---
-Title: The Technical Debt Timebomb: Refactoring Your No-Code AI MVP - Ai No Code
-Keywords: Ai No Code, MVP refactoring, technical debt AI, no-code to custom code, Bubble to Next.js, scaling AI SaaS, LaunchStudio, Manifera
+Title: The Technical Debt Timebomb: Refactoring Your No-Code AI MVP - AI No Code
+Keywords: AI No Code, MVP refactoring, technical debt AI, no-code to custom code, Bubble to Next.js, scaling AI SaaS, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---
 
-# The Technical Debt Timebomb: Refactoring Your No-Code AI MVP - Ai No Code
+# The Technical Debt Timebomb: Refactoring Your No-Code AI MVP - AI No Code
 As a non-technical founder, building your AI MVP on a no-code platform (like Bubble, Glide, or FlutterFlow) was the smartest business decision you ever made. It allowed you to test your hypothesis, acquire your first 100 paying customers, and prove market fit without spending €50,000 on a freelance development team.
 
 But now, you have a new problem: you are succeeding. 

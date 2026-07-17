@@ -1,6 +1,6 @@
 ---
 Title: "User AI Tools Without Getting Burned: A Founder's Survival Guide"
-Keywords: user ai, ai assist, ai works, all ai tools, LaunchStudio, Manifera
+Keywords: user AI, AI assist, AI works, all AI tools, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

@@ -1,6 +1,6 @@
 ---
 Title: "The 10x AI Software Developers: Why Systems Thinking is the New Syntax"
-Keywords: ai software developers, ai coding assistant, LaunchStudio, Manifera
+Keywords: AI software developers, AI coding assistant, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Engineering Manager
 ---

@@ -1,11 +1,11 @@
 ---
-Title: The Middleman: Securing Your AI App with Supabase Edge Functions - Build App With Ai
-Keywords: Build App With Ai, Supabase Edge Functions, LLM routing, AI security, custom backend, LaunchStudio, Manifera, API key security, Next.js
+Title: The Middleman: Securing Your AI App with Supabase Edge Functions - Build App With AI
+Keywords: Build App With AI, Supabase Edge Functions, LLM routing, AI security, custom backend, LaunchStudio, Manifera, API key security, Next.js
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---
 
-# The Middleman: Securing Your AI App with Supabase Edge Functions - Build App With Ai
+# The Middleman: Securing Your AI App with Supabase Edge Functions - Build App With AI
 When technical solo founders build their first AI app using Next.js, the architecture is usually terrifyingly simple. They put a text input box on the frontend, grab the user's text, and send it directly to the OpenAI API using an API key stored in their `.env.local` file.
 
 This "direct-to-frontend" architecture works perfectly on your localhost. But the moment you deploy to production, you have essentially handed your credit card to the internet.

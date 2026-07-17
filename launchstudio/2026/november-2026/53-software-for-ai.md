@@ -1,6 +1,6 @@
 ---
 Title: "Software for AI: The Definitive Enterprise Tech Stack for 2027"
-Keywords: software for ai, ai software products, build ai software, LaunchStudio, Manifera
+Keywords: software for AI, AI software products, build AI software, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CTO / Enterprise Architect
 ---

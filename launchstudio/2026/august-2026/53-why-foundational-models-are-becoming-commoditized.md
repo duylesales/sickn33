@@ -1,10 +1,10 @@
 ---
-Title: Why Foundational Models Are Becoming Commoditized - ai software development
-Keywords: ai software development, Foundational, Models, Becoming, Commoditized
+Title: Why Foundational Models Are Becoming Commoditized - AI software development
+Keywords: AI software development, Foundational, Models, Becoming, Commoditized
 Buyer Stage: Awareness
 ---
 
-# Why Foundational Models Are Becoming Commoditized - ai software development
+# Why Foundational Models Are Becoming Commoditized - AI software development
 In late 2022, access to GPT-3 felt like magic. Startups raised millions of dollars simply by building a nice UI on top of the OpenAI API because they were offering access to a scarce resource: intelligence. Fast forward to 2026, and that scarcity has evaporated. Foundational AI models are undergoing rapid commoditization. For founders, this changes the fundamental laws of gravity in the SaaS ecosystem.
 
 ## The Open Source Price War

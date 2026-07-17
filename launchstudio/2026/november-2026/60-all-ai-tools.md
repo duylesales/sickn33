@@ -1,6 +1,6 @@
 ---
 Title: "All AI Tools: How to Consolidate a Fragmented Enterprise Tech Stack"
-Keywords: all ai tools, ai tools, enterprise ai, LaunchStudio, Manifera
+Keywords: all AI tools, AI tools, enterprise AI, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CIO / CTO
 ---

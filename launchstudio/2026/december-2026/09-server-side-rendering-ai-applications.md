@@ -1,6 +1,6 @@
 ---
 Title: "The Comeback of Server-Side Rendering in AI Applications"
-Keywords: server side rendering ai, ssr nextjs, ai application performance, LaunchStudio, Manifera
+Keywords: server side rendering AI, ssr nextjs, AI application performance, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

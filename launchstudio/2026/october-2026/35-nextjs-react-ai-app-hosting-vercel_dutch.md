@@ -1,6 +1,6 @@
 ---
 Titel: Vercel vs. De Sandbox: Hoe Host je Jouw AI-Gegenereerde Next.js App?
-Trefwoorden: nextjs ai hosting, vercel deployment, LaunchStudio, Manifera, Bolt.new export, React AI app
+Trefwoorden: nextjs AI hosting, vercel deployment, LaunchStudio, Manifera, Bolt.new export, React AI app
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

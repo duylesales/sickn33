@@ -1,6 +1,6 @@
 ---
 Title: "Software With AI: When Does a Legacy Application Become Obsolete?"
-Keywords: software with ai, ai software products, ai software app, LaunchStudio, Manifera
+Keywords: software with AI, AI software products, AI software app, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: SaaS Founder / VP of Product
 ---

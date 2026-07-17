@@ -1,6 +1,6 @@
 ---
 Title: "Bolt AI for Founders: Build Fast, But Know When to Stop"
-Keywords: bolt ai, ai assist, ai websites, LaunchStudio, Manifera
+Keywords: bolt AI, AI assist, AI websites, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

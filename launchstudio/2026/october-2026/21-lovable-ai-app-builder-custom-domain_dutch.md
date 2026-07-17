@@ -1,6 +1,6 @@
 ---
 Titel: Lovable AI — Van Sandbox naar Custom Domain
-Trefwoorden: lovable ai, lovable app builder, LaunchStudio, Manifera, AI app, custom domain
+Trefwoorden: lovable AI, lovable app builder, LaunchStudio, Manifera, AI app, custom domain
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

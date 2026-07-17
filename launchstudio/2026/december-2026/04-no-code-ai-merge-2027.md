@@ -1,6 +1,6 @@
 ---
 Title: "How No-Code and AI Are Merging in 2027"
-Keywords: no code ai merge 2027, low code ai, ai development tools, LaunchStudio, Manifera
+Keywords: no code AI merge 2027, low code AI, AI development tools, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

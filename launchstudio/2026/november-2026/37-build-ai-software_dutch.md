@@ -1,6 +1,6 @@
 ---
 Title: "Bouw AI Software: De Transitie van Prompt Engineering naar AI Engineering"
-Keywords: build ai software, build ai app, ai engineering, LaunchStudio, Manifera
+Keywords: build AI software, build AI app, AI engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Senior Software Engineer
 ---

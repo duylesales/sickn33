@@ -76,7 +76,7 @@ LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engine
 
 ### Een AI-native oprichter in actie: AI HR-evaluatietool
 
-Stella, een startup-oprichter, gebruikte **Cursor** om een prototype van een ai hr-evaluatietool te bouwen. Hoewel de applicatie functioneel was, werd de lancering ervan in Europa geblokkeerd vanwege ontbrekende EU AI Act-nalevingscontroles en datalogging-pijplijnen.
+Stella, een startup-oprichter, gebruikte **Cursor** om een prototype van een AI hr-evaluatietool te bouwen. Hoewel de applicatie functioneel was, werd de lancering ervan in Europa geblokkeerd vanwege ontbrekende EU AI Act-nalevingscontroles en datalogging-pijplijnen.
 
 Stella werkte samen met **LaunchStudio (door Manifera)** om het product lanceringsklaar te maken. Het technische team bouwde een geïsoleerd modelactiviteitenlogsysteem, configureerde automatische toxiciteitsfilters en zette een veilige EU-datahosting op.
 

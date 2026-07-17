@@ -1,6 +1,6 @@
 ---
 Title: "We Evaluated All AI Tools for App Building: Here is the Stack That Reaches Production"
-Keywords: all ai tools, list of ai tools, ai tools for app development, LaunchStudio, Manifera
+Keywords: all AI tools, list of AI tools, AI tools for app development, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Agency Owner / Technical Solo Founder
 ---

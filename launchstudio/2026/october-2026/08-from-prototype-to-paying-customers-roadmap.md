@@ -1,6 +1,6 @@
 ---
 Title: From AI Prototype to Paying Customers — The 14-Step Launch Roadmap
-Keywords: ai saas, build app with ai, make a ai, ai software engineering, LaunchStudio, Manifera, Bolt, Lovable
+Keywords: AI saas, build app with AI, make a AI, AI software engineering, LaunchStudio, Manifera, Bolt, Lovable
 Buyer Stage: Decision
 Target Persona: D (SaaS Founder Scale-Up)
 ---

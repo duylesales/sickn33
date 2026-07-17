@@ -1,6 +1,6 @@
 ---
 Title: White-Label AI Launch Services — How Agencies Can Profit from AI Prototypes
-Keywords: ai saas, build app with ai, make a ai, ai deployment, LaunchStudio, Manifera, Lovable, Bolt
+Keywords: AI saas, build app with AI, make a AI, AI deployment, LaunchStudio, Manifera, Lovable, Bolt
 Buyer Stage: Consideration
 Target Persona: C (Agency / Freelancer White-Label Partner)
 ---

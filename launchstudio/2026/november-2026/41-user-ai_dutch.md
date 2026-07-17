@@ -1,6 +1,6 @@
 ---
 Title: "User AI Interfaces: Voorbij het Chatbot Paradigma met Generatieve UI"
-Keywords: user ai, ai user interface, ai ux design, LaunchStudio, Manifera
+Keywords: user AI, AI user interface, AI ux design, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: VP of Product / UX Architect
 ---

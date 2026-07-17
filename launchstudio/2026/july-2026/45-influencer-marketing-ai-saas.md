@@ -66,7 +66,7 @@ LaunchStudio is operated by **Manifera**, an international software engineering 
 
 ### An AI-Native Founder in Action: AI Portrait Generator
 
-Dylan, a startup founder, used **Lovable** to build a ai portrait generator prototype. While the application was functional, it contracted a tech influencer for a demo video but lacked GPU job-queue architecture to prevent concurrency crashes.
+Dylan, a startup founder, used **Lovable** to build a AI portrait generator prototype. While the application was functional, it contracted a tech influencer for a demo video but lacked GPU job-queue architecture to prevent concurrency crashes.
 
 Dylan partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team implemented a secure Redis-backed job queue with asynchronous Webhook notifications for completed generation jobs.
 

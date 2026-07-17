@@ -1,6 +1,6 @@
 ---
 Title: "De Juiste AI Code Tool Kiezen: Een CTO-Gids Voor Enterprise Compliancy"
-Keywords: ai code tool, ai developer tools, ai coding, LaunchStudio, Manifera
+Keywords: AI code tool, AI developer tools, AI coding, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CTO / CISO
 ---

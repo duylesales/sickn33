@@ -1,10 +1,10 @@
 ---
-Title: Crafting the Perfect B2B SaaS Landing Page - Ai Saas
-Keywords: Ai Saas, Crafting, Perfect, B2B, SaaS, Landing, Page
+Title: Crafting the Perfect B2B SaaS Landing Page - AI Saas
+Keywords: AI Saas, Crafting, Perfect, B2B, SaaS, Landing, Page
 Buyer Stage: Awareness
 ---
 
-# Crafting the Perfect B2B SaaS Landing Page - Ai Saas
+# Crafting the Perfect B2B SaaS Landing Page - AI Saas
 You can engineer the most advanced LLM orchestration layer in the world, but if your landing page fails to communicate its value in five seconds, your startup will die. A landing page is not a technical specification sheet; it is an exercise in human psychology. It must instantly answer three questions: What is this? Why should I care? How do I get it? Here is the architecture of a high-converting B2B SaaS landing page.
 
 ## The Hero Section: Clarity Over Cleverness

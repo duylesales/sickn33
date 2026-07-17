@@ -1,6 +1,6 @@
 ---
 Title: Bolt AI — From Generated App to Real-World Deployment Reality Check
-Keywords: bolt ai, bolt.new, LaunchStudio, Manifera, AI app, deployment
+Keywords: bolt AI, bolt.new, LaunchStudio, Manifera, AI app, deployment
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---

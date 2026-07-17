@@ -1,6 +1,6 @@
 ---
 Titel: Hoe bouw je een SaaS-product zonder te coderen — Een complete gids 2026 voor niet-technische oprichters
-Trefwoorden: app bouwen met ai, ai no code, ai saas, ai development, LaunchStudio, Manifera, Lovable, Bolt, Cursor
+Trefwoorden: app bouwen met AI, AI no code, AI saas, AI development, LaunchStudio, Manifera, Lovable, Bolt, Cursor
 Koperfase: Bewustzijn
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

@@ -1,6 +1,6 @@
 ---
 Title: "The 'AI Download' Illusion: Why You Cannot Just Download an AI App and Run a Business"
-Keywords: ai download, download ai, ai to download, LaunchStudio, Manifera
+Keywords: AI download, download AI, AI to download, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

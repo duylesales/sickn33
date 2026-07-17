@@ -1,6 +1,6 @@
 ---
 Titel: Je AI SaaS schalen van €10 naar €1.000 MRR — De infrastructuur die je nodig hebt
-Trefwoorden: ai saas, saas ai, LaunchStudio, Manifera, schalen, MVP
+Trefwoorden: AI saas, saas AI, LaunchStudio, Manifera, schalen, MVP
 Koperfase: Overweging
 Doelpersona: D (SaaS Founder Scale-Up)
 ---

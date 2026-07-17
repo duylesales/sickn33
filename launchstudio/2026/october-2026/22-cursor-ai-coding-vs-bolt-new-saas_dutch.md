@@ -1,6 +1,6 @@
 ---
 Titel: Cursor AI vs. Bolt.new — Welke Tool Bouwt een Betere Full-Stack SaaS?
-Trefwoorden: cursor ai, cursor coding, bolt.new, LaunchStudio, Manifera, AI app
+Trefwoorden: cursor AI, cursor coding, bolt.new, LaunchStudio, Manifera, AI app
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

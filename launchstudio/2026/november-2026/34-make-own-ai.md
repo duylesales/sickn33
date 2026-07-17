@@ -1,6 +1,6 @@
 ---
 Title: "Make Your Own AI: Why Fine-Tuning is the Most Expensive Mistake in SaaS"
-Keywords: make own ai, build your ai, custom ai model, LaunchStudio, Manifera
+Keywords: make own AI, build your AI, custom AI model, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Technical Founder
 ---

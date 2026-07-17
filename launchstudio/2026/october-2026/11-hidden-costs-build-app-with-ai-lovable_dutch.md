@@ -1,6 +1,6 @@
 ---
 Titel: De verborgen kosten van een app bouwen met AI — Waarom Lovable slechts stap 1 is
-Trefwoorden: build app met ai, ai saas, LaunchStudio, Manifera, Lovable, Bolt, Cursor
+Trefwoorden: build app met AI, AI saas, LaunchStudio, Manifera, Lovable, Bolt, Cursor
 Koperfase: Bewustwording
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

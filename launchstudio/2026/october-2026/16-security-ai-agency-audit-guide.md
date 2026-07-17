@@ -1,6 +1,6 @@
 ---
 Title: Security AI — The Agency Guide to Auditing AI-Generated Code
-Keywords: security ai, ai secure, LaunchStudio, Manifera, Cursor, Bolt
+Keywords: security AI, AI secure, LaunchStudio, Manifera, Cursor, Bolt
 Buyer Stage: Consideration
 Target Persona: C (Agency / Freelancer - White-Label Partner)
 ---

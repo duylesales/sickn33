@@ -1,10 +1,10 @@
 ---
-Title: Marketing Invisible AI Features - Day Ai
-Keywords: Day Ai, Marketing, Invisible, AI, Features
+Title: Marketing Invisible AI Features - Day AI
+Keywords: Day AI, Marketing, Invisible, AI, Features
 Buyer Stage: Awareness
 ---
 
-# Marketing Invisible AI Features - Day Ai
+# Marketing Invisible AI Features - Day AI
 The paradox of elite software design is that when it works perfectly, it becomes invisible. If you integrate an AI feature so seamlessly that the user never has to open a chat box or write a prompt, they might not realize the AI exists at all. If the B2B buyer does not perceive the advanced technology powering their workflow, they will refuse to pay a premium subscription price. You must explicitly market the "Invisible AI."
 
 ## Demanding Credit in the UI

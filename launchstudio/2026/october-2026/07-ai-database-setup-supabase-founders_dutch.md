@@ -1,6 +1,6 @@
 ---
 Titel: AI Database Setup — Waarom je Supabase-prototype zal instorten onder 100 echte gebruikers
-Trefwoorden: ai deployment, ai security, secure ai, supabase setup, LaunchStudio, Manifera, Cursor, AI database
+Trefwoorden: AI deployment, AI security, secure AI, supabase setup, LaunchStudio, Manifera, Cursor, AI database
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

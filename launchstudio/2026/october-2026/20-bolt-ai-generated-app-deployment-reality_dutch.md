@@ -1,6 +1,6 @@
 ---
 Titel: Bolt AI — Van Gegenereerde App naar Real-World Deployment Realiteitscheck
-Trefwoorden: bolt ai, bolt.new, LaunchStudio, Manifera, AI app, deployment
+Trefwoorden: bolt AI, bolt.new, LaunchStudio, Manifera, AI app, deployment
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

@@ -1,10 +1,10 @@
 ---
-Title: Building a Multi-Agent Architecture for Enterprise - Ai For Coding
-Keywords: Ai For Coding, Building, Multi, Agent, Architecture, Enterprise
+Title: Building a Multi-Agent Architecture for Enterprise - AI For Coding
+Keywords: AI For Coding, Building, Multi, Agent, Architecture, Enterprise
 Buyer Stage: Awareness
 ---
 
-# Building a Multi-Agent Architecture for Enterprise - Ai For Coding
+# Building a Multi-Agent Architecture for Enterprise - AI For Coding
 The instinct of most early-stage founders is to build a "God Agent." They write a massive 2,000-word System Prompt, equip the agent with 40 different API tools (database access, web scraping, email sending), and expect it to magically handle any enterprise request. This architecture inevitably collapses under its own weight. To build reliable, complex B2B workflows, you must abandon the God Agent and adopt a **Multi-Agent Architecture**.
 
 ## The Collapse of the God Agent

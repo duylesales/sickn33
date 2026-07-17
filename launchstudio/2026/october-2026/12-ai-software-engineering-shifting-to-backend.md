@@ -1,6 +1,6 @@
 ---
 Title: AI Software Engineering — Why Developers Are Shifting to the Backend
-Keywords: ai software engineering, ai native, ai code development, LaunchStudio, Manifera, Cursor, Bolt
+Keywords: AI software engineering, AI native, AI code development, LaunchStudio, Manifera, Cursor, Bolt
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---

@@ -1,6 +1,6 @@
 ---
 Title: "Best Software for AI: Benchmarking Databases, Orchestrators, and SDKs"
-Keywords: best software for ai, software for ai, ai developer tools, LaunchStudio, Manifera
+Keywords: best software for AI, software for AI, AI developer tools, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CTO / VP of Engineering
 ---

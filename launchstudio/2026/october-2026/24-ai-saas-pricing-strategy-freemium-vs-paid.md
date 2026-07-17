@@ -1,6 +1,6 @@
 ---
 Title: AI SaaS Pricing Strategy — Why Freemium Kills AI Startups
-Keywords: ai saas, saas ai, LaunchStudio, Manifera, pricing strategy, AI API costs
+Keywords: AI saas, saas AI, LaunchStudio, Manifera, pricing strategy, AI API costs
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)
 ---

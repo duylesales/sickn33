@@ -1,6 +1,6 @@
 ---
 Title: "AI Software Ontwikkeling Eet Traditionele Agencies Op — En Dat Is Goed Voor Oprichters"
-Keywords: ai software development, ai and software development, develop ai software, ai software engineering, LaunchStudio, Manifera
+Keywords: AI software development, AI and software development, develop AI software, AI software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: SaaS Founder Scale-Up
 ---

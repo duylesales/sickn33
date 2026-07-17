@@ -1,6 +1,6 @@
 ---
 Title: "AI Deployment Architecture: The CI/CD Pipeline for Non-Deterministic Code"
-Keywords: ai deployment, deploying ai apps, LaunchStudio, Manifera
+Keywords: AI deployment, deploying AI apps, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Founder / DevOps Engineer
 ---

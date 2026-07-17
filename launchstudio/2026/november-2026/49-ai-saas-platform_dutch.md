@@ -1,6 +1,6 @@
 ---
 Title: "AI SaaS Platform: Het Architecturale Verschil Tussen een Wrapper en een Platform"
-Keywords: ai saas platform, ai saas, build ai saas, LaunchStudio, Manifera
+Keywords: AI saas platform, AI saas, build AI saas, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: SaaS Founder / CTO
 ---

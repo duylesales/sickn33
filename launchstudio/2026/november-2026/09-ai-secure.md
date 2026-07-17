@@ -1,6 +1,6 @@
 ---
 Title: "AI Secure: How to Harden Your AI-Generated Application Before It Gets Hacked"
-Keywords: ai secure, security ai, ai and security, ai security issues, ai security risk, LaunchStudio, Manifera
+Keywords: AI secure, security AI, AI and security, AI security issues, AI security risk, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---

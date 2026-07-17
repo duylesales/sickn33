@@ -64,7 +64,7 @@ LaunchStudio is operated by **Manifera**, an international software engineering 
 
 ### An AI-Native Founder in Action: AI Invoice Extractor
 
-Connor, a startup founder, used **Cursor** to build a ai invoice extractor prototype. While the application was functional, it was afraid to launch his cold sales campaign because the billing system would crash on complex VAT configurations.
+Connor, a startup founder, used **Cursor** to build a AI invoice extractor prototype. While the application was functional, it was afraid to launch his cold sales campaign because the billing system would crash on complex VAT configurations.
 
 Connor partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team integrated Stripe Tax automated calculations and secured invoice PDF generation handlers.
 

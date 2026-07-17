@@ -1,6 +1,6 @@
 ---
 Title: "From Prototype to Enterprise: Deep Dive into Building an App with AI"
-Keywords: build app with ai, build an app with ai, ai build app, LaunchStudio, Manifera
+Keywords: build app with AI, build an app with AI, AI build app, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: B2B SaaS Founder / Industry Expert
 ---

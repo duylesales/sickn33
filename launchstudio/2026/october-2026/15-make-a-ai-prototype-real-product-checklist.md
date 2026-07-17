@@ -1,6 +1,6 @@
 ---
 Title: Make a AI Prototype a Real Product — The Founder's Checklist
-Keywords: make a ai, build ai, LaunchStudio, Manifera, Lovable, Bolt
+Keywords: make a AI, build AI, LaunchStudio, Manifera, Lovable, Bolt
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---

@@ -1,6 +1,6 @@
 ---
 Title: "Hoe Generatieve AI Onder de Motorkap Werkt: Een Gids voor Product Managers"
-Keywords: ai works, how ai works, generative ai explained, LaunchStudio, Manifera
+Keywords: AI works, how AI works, generative AI explained, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: Product Manager / Non-Technical Founder
 ---

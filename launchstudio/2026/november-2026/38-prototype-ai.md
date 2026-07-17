@@ -1,6 +1,6 @@
 ---
 Title: "Prototype AI to Production: The Hidden Cost of the 'Last 10%'"
-Keywords: prototype ai, ai prototype to production, LaunchStudio, Manifera
+Keywords: prototype AI, AI prototype to production, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Founder / CTO
 ---

@@ -1,10 +1,10 @@
 ---
-Title: The Role of the AI Product Manager in 2026 - Ai In Software Engineering
-Keywords: Ai In Software Engineering, Product, Manager
+Title: The Role of the AI Product Manager in 2026 - AI In Software Engineering
+Keywords: AI In Software Engineering, Product, Manager
 Buyer Stage: Awareness
 ---
 
-# The Role of the AI Product Manager in 2026 - Ai In Software Engineering
+# The Role of the AI Product Manager in 2026 - AI In Software Engineering
 For twenty years, the technology industry was defined by a strict hierarchy: Product Managers (PMs) decided what to build, Designers drew it, and Software Engineers typed the code to make it real. Generative AI has collapsed this hierarchy. When an AI can design a UI and write the React code in thirty seconds, the boundaries between roles vanish. The most critical role in the modern startup is the "AI Product Manager."
 
 ## The Shift from Syntax to Architecture
@@ -61,7 +61,7 @@ LaunchStudio is operated by **Manifera**, an international software engineering 
 
 ### An AI-Native Founder in Action: Retail Inventory AI Agent
 
-Sadie, a startup founder, used **Cursor** to build a retail inventory ai agent prototype. While the application was functional, it struggled to translate business logic requests into structured code schema, stalling MVP launch.
+Sadie, a startup founder, used **Cursor** to build a retail inventory AI agent prototype. While the application was functional, it struggled to translate business logic requests into structured code schema, stalling MVP launch.
 
 Sadie partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team partnered with LaunchStudio to define the target data structure, setup Supabase databases, and build API routing logic.
 

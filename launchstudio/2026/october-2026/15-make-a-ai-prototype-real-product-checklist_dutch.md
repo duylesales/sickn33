@@ -1,6 +1,6 @@
 ---
 Titel: Maak van een AI Prototype een Echt Product — De Oprichters Checklist
-Trefwoorden: make a ai, build ai, LaunchStudio, Manifera, Lovable, Bolt
+Trefwoorden: make a AI, build AI, LaunchStudio, Manifera, Lovable, Bolt
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

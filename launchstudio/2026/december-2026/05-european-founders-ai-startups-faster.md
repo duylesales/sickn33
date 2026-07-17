@@ -1,6 +1,6 @@
 ---
 Title: "Why European Founders Are Building AI Startups Faster Than Silicon Valley"
-Keywords: european ai startups, eu founders, ai startup speed, LaunchStudio, Manifera
+Keywords: european AI startups, eu founders, AI startup speed, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

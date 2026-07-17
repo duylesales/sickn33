@@ -1,6 +1,6 @@
 ---
 Title: "AI App Dev Architecture: Why the AI Frontend Needs a Human Backend"
-Keywords: ai app dev, ai frontend, ai generated application, build app with ai, LaunchStudio, Manifera
+Keywords: AI app dev, AI frontend, AI generated application, build app with AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: AI-Native Founder (Technical & Non-Technical)
 ---

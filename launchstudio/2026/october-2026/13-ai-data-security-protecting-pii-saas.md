@@ -1,6 +1,6 @@
 ---
 Title: AI Data Security — Protecting PII in Your AI-Generated SaaS
-Keywords: ai data security, ai saas, LaunchStudio, Manifera, Cursor, Bolt
+Keywords: AI data security, AI saas, LaunchStudio, Manifera, Cursor, Bolt
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---

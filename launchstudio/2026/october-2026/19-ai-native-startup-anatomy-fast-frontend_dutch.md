@@ -1,6 +1,6 @@
 ---
 Titel: De Anatomie van een AI-Native Startup — Snelle Frontends, Geharde Backends
-Trefwoorden: ai native, ai tech startup, LaunchStudio, Manifera, Cursor, Next.js
+Trefwoorden: AI native, AI tech startup, LaunchStudio, Manifera, Cursor, Next.js
 Koperfase: Bewustwording
 Doelpersona: B (Technische Solo-oprichter)
 ---

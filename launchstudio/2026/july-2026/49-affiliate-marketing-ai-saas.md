@@ -64,7 +64,7 @@ LaunchStudio is operated by **Manifera**, an international software engineering 
 
 ### An AI-Native Founder in Action: AI Copywriter SaaS
 
-Jaxon, a startup founder, used **Bolt** to build a ai copywriter saas prototype. While the application was functional, it had his referral link system broken, causing inaccurate commission splits for affiliate partners.
+Jaxon, a startup founder, used **Bolt** to build a AI copywriter saas prototype. While the application was functional, it had his referral link system broken, causing inaccurate commission splits for affiliate partners.
 
 Jaxon partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team integrated Rewardful API, set up reliable attribution scripts, and unified affiliate state databases.
 

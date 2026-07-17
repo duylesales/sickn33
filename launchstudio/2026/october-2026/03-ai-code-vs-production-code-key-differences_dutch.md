@@ -1,6 +1,6 @@
 ---
 Titel: AI-code vs productiecode — Wat er verandert voordat je app live gaat
-Trefwoorden: ai coding, ai code tool, ai software engineering, code met ai, LaunchStudio, Manifera, Herre Roelevink, Cursor, Lovable
+Trefwoorden: AI coding, AI code tool, AI software engineering, code met AI, LaunchStudio, Manifera, Herre Roelevink, Cursor, Lovable
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

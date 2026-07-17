@@ -1,10 +1,10 @@
 ---
-Title: Building an Audit Trail for AI Decisions - Ai For Coding
-Keywords: Ai For Coding, Building, Audit, Trail, AI, Decisions
+Title: Building an Audit Trail for AI Decisions - AI For Coding
+Keywords: AI For Coding, Building, Audit, Trail, AI, Decisions
 Buyer Stage: Consideration
 ---
 
-# Building an Audit Trail for AI Decisions - Ai For Coding
+# Building an Audit Trail for AI Decisions - AI For Coding
 If traditional software crashes, a developer can look at a stack trace, find the exact line of failing code, and explain why the crash occurred. If an LLM hallucinates a fake legal precedent, the explanation is hidden within billions of probabilistic neural weights—a "Black Box." Enterprise clients, particularly in finance and healthcare, cannot legally use Black Box software. To sell to them, you must engineer **Explainability** through rigorous audit trails.
 
 ## The Anatomy of an AI Log

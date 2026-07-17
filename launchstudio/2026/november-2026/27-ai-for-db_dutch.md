@@ -1,6 +1,6 @@
 ---
 Title: "AI Voor DB: PostgreSQL en Vector Databases Architecteren Voor AI Applicaties"
-Keywords: ai for db, ai in database, ai database architecture, vector database, LaunchStudio, Manifera
+Keywords: AI for db, AI in database, AI database architecture, vector database, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Founder / CTO
 ---

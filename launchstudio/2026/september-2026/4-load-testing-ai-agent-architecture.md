@@ -1,10 +1,10 @@
 ---
-Title: Load Testing Your AI Agent Architecture - Build Your Ai
-Keywords: Build Your Ai, Load, Testing, AI, Agent, Architecture
+Title: Load Testing Your AI Agent Architecture - Build Your AI
+Keywords: Build Your AI, Load, Testing, AI, Agent, Architecture
 Buyer Stage: Awareness
 ---
 
-# Load Testing Your AI Agent Architecture - Build Your Ai
+# Load Testing Your AI Agent Architecture - Build Your AI
 Your RAG pipeline works flawlessly when you test it locally. It generates a brilliant answer in 3 seconds. Then, you launch your B2B SaaS on Product Hunt. 500 users log in simultaneously and click "Generate." Your backend immediately throws a wall of `429 Too Many Requests` errors, the server runs out of memory, and your app goes offline. Scaling AI is fundamentally different from scaling a traditional web app because your primary bottleneck is a third-party API.
 
 ## The Rate Limit Avalanche

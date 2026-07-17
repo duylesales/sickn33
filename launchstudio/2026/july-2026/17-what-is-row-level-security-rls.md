@@ -1,10 +1,10 @@
 ---
-Title: What Is Row Level Security (RLS) and Why Does Your AI App Need It? - Ai And Security
-Keywords: Ai And Security, Level, Security
+Title: What Is Row Level Security (RLS) and Why Does Your AI App Need It? - AI And Security
+Keywords: AI And Security, Level, Security
 Buyer Stage: Awareness
 ---
 
-# What Is Row Level Security (RLS) and Why Does Your AI App Need It? - Ai And Security
+# What Is Row Level Security (RLS) and Why Does Your AI App Need It? - AI And Security
 If you used an AI tool like Lovable to build a SaaS prototype connected to Supabase, there is an 80% chance your database is fundamentally insecure. The culprit? Missing Row Level Security (RLS). Without RLS, any logged-in user can potentially access, modify, or delete the data of every other user in your system. Here is an explanation of what RLS is, why AI ignores it, and how to fix it.
 
 ## The Invisible Threat: A Public Database

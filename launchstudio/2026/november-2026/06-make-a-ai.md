@@ -1,6 +1,6 @@
 ---
 Title: "How to Make a AI Product That People Actually Pay For"
-Keywords: make a ai, build ai, ai build app, build app with ai, LaunchStudio, Manifera
+Keywords: make a AI, build AI, AI build app, build app with AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: AI-Native Founder (Non-Technical)
 ---

@@ -1,6 +1,6 @@
 ---
 Titel: Voorbij de Chatbot: Autonome AI Agents Bouwen voor B2B SaaS
-Trefwoorden: ai agent, autonome AI, B2B SaaS, LaunchStudio, Manifera, custom softwareontwikkeling, AI automatisering, LangChain
+Trefwoorden: AI agent, autonome AI, B2B SaaS, LaunchStudio, Manifera, custom softwareontwikkeling, AI automatisering, LangChain
 Koperfase: Bewustwording
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

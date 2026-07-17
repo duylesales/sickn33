@@ -1,10 +1,10 @@
 ---
-Title: Upselling AI Features to Existing SaaS Customers - Ai To Code
-Keywords: Ai To Code, Upselling, AI, Features, Existing, SaaS, Customers
+Title: Upselling AI Features to Existing SaaS Customers - AI To Code
+Keywords: AI To Code, Upselling, AI, Features, Existing, SaaS, Customers
 Buyer Stage: Awareness
 ---
 
-# Upselling AI Features to Existing SaaS Customers - Ai To Code
+# Upselling AI Features to Existing SaaS Customers - AI To Code
 If you run an established SaaS platform, integrating AI is a defensive necessity to prevent churn. However, because AI generation carries hard variable costs, giving these features away for free to your entire user base will destroy your margins. You must successfully monetize the new capabilities. Here is the playbook for upselling AI to your existing customers and increasing your ARPU (Average Revenue Per User).
 
 ## The 'Add-On' vs 'Tier Upgrade' Debate

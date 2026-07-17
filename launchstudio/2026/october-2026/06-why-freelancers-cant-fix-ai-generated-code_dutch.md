@@ -1,6 +1,6 @@
 ---
 Titel: Waarom freelancers door AI gegenereerde code niet kunnen fixen — En wat je in plaats daarvan moet doen
-Trefwoorden: ai coding, ai for coding, ai software developers, ai code tool, LaunchStudio, Manifera, Cursor, Lovable, Bolt
+Trefwoorden: AI coding, AI for coding, AI software developers, AI code tool, LaunchStudio, Manifera, Cursor, Lovable, Bolt
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

@@ -1,6 +1,6 @@
 ---
 Title: AI for Coding — Why Your Tool Cannot Build a Secure Payment Gateway
-Keywords: ai for coding, ai code tool, LaunchStudio, Manifera, Stripe, payments, SaaS
+Keywords: AI for coding, AI code tool, LaunchStudio, Manifera, Stripe, payments, SaaS
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---

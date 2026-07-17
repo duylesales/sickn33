@@ -1,10 +1,10 @@
 ---
-Title: Creating Viral AI Tools as Lead Magnets - All Ai Tools
-Keywords: All Ai Tools, Creating, Viral, Tools, Magnets
+Title: Creating Viral AI Tools as Lead Magnets - All AI Tools
+Keywords: All AI Tools, Creating, Viral, Tools, Magnets
 Buyer Stage: Awareness
 ---
 
-# Creating Viral AI Tools as Lead Magnets - All Ai Tools
+# Creating Viral AI Tools as Lead Magnets - All AI Tools
 For a decade, the standard B2B marketing playbook was simple: write a 20-page PDF "Whitepaper," hide it behind a form, and run LinkedIn ads to collect emails. In 2026, nobody wants your PDF. The modern executive wants instant, actionable utility. Enter "Engineering as Marketing"—using AI to build free, single-purpose micro-tools that generate thousands of highly qualified leads.
 
 ## The Psychology of the Micro-Tool
@@ -73,7 +73,7 @@ LaunchStudio is operated by **Manifera**, an international software engineering 
 
 ### An AI-Native Founder in Action: AI Logo Maker (Free Tool)
 
-Gavin, a startup founder, used **Lovable** to build a ai logo maker (free tool) prototype. While the application was functional, it had his free credit allocation depleted by API bots within 4 hours, causing a €600 OpenAI bill overnight.
+Gavin, a startup founder, used **Lovable** to build a AI logo maker (free tool) prototype. While the application was functional, it had his free credit allocation depleted by API bots within 4 hours, causing a €600 OpenAI bill overnight.
 
 Gavin partnered with **LaunchStudio (by Manifera)** to make the product launch-ready. The engineering team integrated Cloudflare Turnstile CAPTCHA and server-side IP rate limiting on token creation endpoints.
 

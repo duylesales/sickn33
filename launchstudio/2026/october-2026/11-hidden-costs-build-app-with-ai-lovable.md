@@ -1,6 +1,6 @@
 ---
 Title: The Hidden Costs to Build an App with AI — Why Lovable is Just Step 1
-Keywords: build app with ai, ai saas, LaunchStudio, Manifera, Lovable, Bolt, Cursor
+Keywords: build app with AI, AI saas, LaunchStudio, Manifera, Lovable, Bolt, Cursor
 Buyer Stage: Awareness
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---

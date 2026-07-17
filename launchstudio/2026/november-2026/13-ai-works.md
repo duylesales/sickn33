@@ -1,6 +1,6 @@
 ---
 Title: "How AI Works Behind the Interface: What Founders Need to Know About Backend Reality"
-Keywords: ai works, ai in app, app with ai, app ai free, LaunchStudio, Manifera
+Keywords: AI works, AI in app, app with AI, app AI free, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

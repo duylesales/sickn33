@@ -1,6 +1,6 @@
 ---
 Title: "AI and Privacy Issues: A Deep Dive into GDPR Compliance for AI-Native Startups"
-Keywords: ai and privacy issues, ai privacy issues, ai data security, LaunchStudio, Manifera
+Keywords: AI and privacy issues, AI privacy issues, AI data security, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: SaaS Founder Scale-Up
 ---

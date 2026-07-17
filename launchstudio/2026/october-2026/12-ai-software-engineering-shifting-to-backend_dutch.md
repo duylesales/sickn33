@@ -1,6 +1,6 @@
 ---
 Titel: AI Software Engineering — Waarom ontwikkelaars verschuiven naar de backend
-Trefwoorden: ai software engineering, ai native, ai code development, LaunchStudio, Manifera, Cursor, Bolt
+Trefwoorden: AI software engineering, AI native, AI code development, LaunchStudio, Manifera, Cursor, Bolt
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

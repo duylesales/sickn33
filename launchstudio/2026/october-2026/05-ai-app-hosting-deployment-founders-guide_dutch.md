@@ -1,6 +1,6 @@
 ---
 Titel: AI-app hosting en deployment — Een gids voor oprichters om live te gaan
-Trefwoorden: ai deployment, ai frontend, ai websites, build ai app, LaunchStudio, Manifera, Vercel, Netlify
+Trefwoorden: AI deployment, AI frontend, AI websites, build AI app, LaunchStudio, Manifera, Vercel, Netlify
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---

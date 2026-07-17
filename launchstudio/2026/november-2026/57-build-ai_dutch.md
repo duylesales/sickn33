@@ -1,6 +1,6 @@
 ---
 Title: "Build AI: Het Buy vs. Build Dilemma in Enterprise Software"
-Keywords: build ai, build ai software, build ai app, LaunchStudio, Manifera
+Keywords: build AI, build AI software, build AI app, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / VP of Engineering
 ---

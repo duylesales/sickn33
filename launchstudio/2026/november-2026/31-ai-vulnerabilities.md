@@ -1,6 +1,6 @@
 ---
 Title: "AI Vulnerabilities in Production: Defending Against Denial of Wallet and Prompt Injection"
-Keywords: ai vulnerabilities, ai security risks, ai hack, LaunchStudio, Manifera
+Keywords: AI vulnerabilities, AI security risks, AI hack, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Technical Founder
 ---

@@ -1,6 +1,6 @@
 ---
 Titel: Beveiligingsaudit van AI-prototypes — De 10-punten checklist die elke oprichter nodig heeft vóór de lancering
-Trefwoorden: ai beveiliging, ai kwetsbaarheden, ai code tool, AI-prototype, LaunchStudio, Manifera, Herre Roelevink
+Trefwoorden: AI beveiliging, AI kwetsbaarheden, AI code tool, AI-prototype, LaunchStudio, Manifera, Herre Roelevink
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---

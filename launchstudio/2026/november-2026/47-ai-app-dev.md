@@ -1,6 +1,6 @@
 ---
 Title: "AI App Dev: The Rise of the 'Full-AI-Stack' Developer"
-Keywords: ai app dev, ai development, LaunchStudio, Manifera
+Keywords: AI app dev, AI development, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / VP of Engineering
 ---

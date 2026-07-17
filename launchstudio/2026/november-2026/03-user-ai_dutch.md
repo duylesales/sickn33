@@ -1,6 +1,6 @@
 ---
 Title: "User AI Tools Zonder Je Vingers Te Branden: Een Survivalgids voor Oprichters"
-Keywords: user ai, ai assist, ai works, all ai tools, LaunchStudio, Manifera
+Keywords: user AI, AI assist, AI works, all AI tools, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---

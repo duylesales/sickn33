@@ -1,6 +1,6 @@
 ---
 Titel: AI SaaS Prijsstrategie — Waarom Freemium AI Startups Vernietigt
-Trefwoorden: ai saas, saas ai, LaunchStudio, Manifera, pricing strategy, AI API kosten
+Trefwoorden: AI saas, saas AI, LaunchStudio, Manifera, pricing strategy, AI API kosten
 Koperfase: Overweging
 Doelpersona: D (SaaS Founder Scale-Up)
 ---

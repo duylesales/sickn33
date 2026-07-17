@@ -1,10 +1,10 @@
 ---
-Title: The Complete Guide to AI-Generated Code Quality - Ai To Code
-Keywords: Ai To Code, Complete, Guide, AIGenerated, Quality
+Title: The Complete Guide to AI-Generated Code Quality - AI To Code
+Keywords: AI To Code, Complete, Guide, AIGenerated, Quality
 Buyer Stage: Consideration
 ---
 
-# The Complete Guide to AI-Generated Code Quality - Ai To Code
+# The Complete Guide to AI-Generated Code Quality - AI To Code
 AI-generated code in 2026 produces functional, visually impressive applications but consistently falls short on security, performance optimization, and production readiness. Based on our experience reviewing hundreds of AI-built prototypes at LaunchStudio, approximately 85% of AI-generated applications contain at least one critical security vulnerability, and virtually none arrive fully production-ready out of the box.
 
 This guide provides an honest, practical assessment of what AI code generation gets right, where it consistently fails, and what you need to fix before launching. Whether you built with Lovable, Bolt, Cursor, or another AI tool, understanding these quality patterns helps you make informed decisions about your path to production.

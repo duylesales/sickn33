@@ -1,6 +1,6 @@
 ---
 Title: "AI Tool voor Applicatie Modernisatie: Het Strangler Fig Patroon Ontmoet LLM's"
-Keywords: ai tool for application, application modernization, enterprise ai, LaunchStudio, Manifera
+Keywords: AI tool for application, application modernization, enterprise AI, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: Enterprise Architect / VP of Engineering
 ---

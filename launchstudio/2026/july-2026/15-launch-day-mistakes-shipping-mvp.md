@@ -1,10 +1,10 @@
 ---
-Title: Launch Day Mistakes: What Not to Do When Shipping Your MVP - Day Ai
-Keywords: Day Ai, Launch, Mistakes, Shipping
+Title: Launch Day Mistakes: What Not to Do When Shipping Your MVP - Day AI
+Keywords: Day AI, Launch, Mistakes, Shipping
 Buyer Stage: Decision
 ---
 
-# Launch Day Mistakes: What Not to Do When Shipping Your MVP - Day Ai
+# Launch Day Mistakes: What Not to Do When Shipping Your MVP - Day AI
 You survived the prototype phase, hardened your security, and configured your deployment. Launch day is finally here. Do not ruin it by making the five classic launch day mistakes: the Friday deploy, the big bang announcement, the silent error trap, the environment variable mismatch, and the unmonitored checkout. Here is what to avoid and what to do instead when shipping your AI-built MVP.
 
 ## Mistake 1: The Friday Deploy

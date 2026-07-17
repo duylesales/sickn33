@@ -1,6 +1,6 @@
 ---
 Title: "AI Secure: Establishing a Zero-Trust Boundary Around Your LLM"
-Keywords: ai secure, security ai, ai security risk, LaunchStudio, Manifera
+Keywords: AI secure, security AI, AI security risk, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CISO / Security Architect
 ---
