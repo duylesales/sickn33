@@ -1,10 +1,10 @@
 ---
-Title: Why Chatbots are a Terrible UX for B2B SaaS
+Title: Why Chatbots are a Terrible UX for B2B SaaS That Use AI For Coding
 Keywords: AI For Coding, Chatbots, Terrible, UX, B2B, SaaS
 Buyer Stage: Awareness
 ---
 
-# Why Chatbots are a Terrible UX for B2B SaaS
+# Why Chatbots are a Terrible UX for B2B SaaS That Use AI For Coding
 In 2023, every B2B startup essentially built the exact same product: a database wrapper with a ChatGPT clone slapped on the frontend. The assumption was that users wanted to "talk" to their data. We now have three years of retention analytics to prove this assumption wrong. Forcing enterprise users to write prompts is a massive UX failure. The future of B2B AI is not a chat window; it is Invisible AI.
 
 ## The Burden of Prompt Engineering

@@ -1,10 +1,10 @@
 ---
-Titel: Generatieve gebruikersinterface: React-componenten van LLM's streamen
-Trefwoorden: Generatief, UI, Streaming, Reageren, Componenten, LLM's
-Koperfase: Bewustzijn
+Titel: Generatieve gebruikersinterface in AI softwareontwikkeling: React-componenten van LLM's streamen
+Trefwoorden: AI softwareontwikkeling, Generatief, UI, Streaming, Reageren, Componenten, LLM's
+Koperfase: Bewustwording
 ---
 
-# Generatieve gebruikersinterface: streaming React-componenten van LLM's
+# Generatieve gebruikersinterface in AI softwareontwikkeling: React-componenten van LLM's streamen
 Het bepalende kenmerk van de eerste generatie AI-toepassingen was de ‘Wall of Text’. U stelde de AI een complexe datavraag en deze printte enthousiast vijf alinea's met compacte, onleesbare tekst uit. In een B2B-omgeving willen mensen geen paragrafen over data lezen; ze willen naar grafieken kijken. De volgende evolutie van de SaaS-architectuur is **Generatieve UI**, waardoor de LLM op dynamische wijze functionele, interactieve frontendcomponenten kan weergeven.
 
 ## Voorbij de prijsverlaging

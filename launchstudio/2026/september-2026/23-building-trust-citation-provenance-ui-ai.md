@@ -1,10 +1,10 @@
 ---
-Title: Building Trust with Citation and Provenance UI
+Title: Building Trust with Citation and Provenance UI in AI And Software Development
 Keywords: AI And Software Development, Building, Trust, Citation, Provenance, UI
-Buyer Stage: Awareness
+Buyer Stage: Consideration
 ---
 
-# Building Trust with Citation and Provenance UI
+# Building Trust with Citation and Provenance UI in AI And Software Development
 The barrier to enterprise AI adoption is not intelligence; it is trust. When an accountant uses a calculator to multiply two numbers, they trust the result implicitly. When an accountant uses an LLM to summarize a financial report, they harbor deep suspicion. Because LLMs are known to hallucinate, enterprise users will not act on AI-generated data unless they can verify it. If your B2B SaaS does not feature a robust **Citation and Provenance UI**, it will churn.
 
 ## The Importance of Data Provenance
