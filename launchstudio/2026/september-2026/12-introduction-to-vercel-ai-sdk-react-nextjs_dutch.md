@@ -1,10 +1,10 @@
 ---
-Titel: Inleiding tot de Vercel AI SDK
+Titel: Een inleiding tot de Vercel AI SDK bij het gebruik van AI om te coderen
 Trefwoorden: AI om te coderen, Introductie, Vercel, AI, SDK
-Koperfase: Bewustzijn
+Koperfase: Bewustwording
 ---
 
-# Inleiding tot de Vercel AI SDK
+# Een inleiding tot de Vercel AI SDK bij het gebruik van AI om te coderen
 Als je ooit hebt geprobeerd een ChatGPT-kloon te bouwen met onbewerkte React, dan ken je de pijn. Het beheren van een reeks berichten is eenvoudig, maar het parseren van een ruwe HTTP-stroom van Server-Sent Events (SSE), het stuk voor stuk toevoegen van de tokens aan de React-status zonder oneindige herhalingen te veroorzaken, en het afhandelen van verbindingsuitval is een absolute nachtmerrie. Dit is de reden waarom de **Vercel AI SDK** de onbetwiste industriestandaard is geworden voor Javascript-ontwikkelaars. Het maakt het streamen van AI-interfaces moeiteloos.
 
 ## De magie van `useChat`

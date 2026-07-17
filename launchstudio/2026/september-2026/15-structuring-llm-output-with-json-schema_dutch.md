@@ -1,10 +1,10 @@
 ---
-Titel: LLM-uitvoer structureren met JSON-schema
+Titel: LLM-uitvoer structureren met JSON-schema wanneer u gaat Coderen met AI
 Trefwoorden: Coderen met AI, Structureren, LLM, Output, JSON, Schema
-Koperfase: Bewustzijn
+Koperfase: Bewustwording
 ---
 
-# LLM-uitvoer structureren met JSON-schema
+# LLM-uitvoer structureren met JSON-schema wanneer u gaat Coderen met AI
 Als je een AI-chatbot bouwt, is de uitvoer van onbewerkte tekst prima. Als je een B2B SaaS bouwt waarin AI-agenten databasebewerkingen uitvoeren, CRM-records bijwerken of API-webhooks activeren, is onbewerkte tekst een ramp. Traditionele software vereist gestructureerde, voorspelbare gegevens. U kunt geen conversatiepoëzie invoegen in een PostgreSQL-kolom met gehele getallen. Om de kloof tussen probabilistische AI ​​en deterministische backends te overbruggen, moet u JSON Schema en Structured Outputs beheersen.
 
 ## De Regex-nachtmerrie
