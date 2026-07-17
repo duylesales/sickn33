@@ -1,11 +1,11 @@
 ---
-Title: The Final Boss of B2B AI: Integrating LLMs with Enterprise ERP Systems
+Title: The Final Boss When You Code With AI: Integrating LLMs with Enterprise ERP Systems
 Keywords: Code With AI, ERP integration, AI SAP integration, Microsoft Dynamics AI, digital agency, enterprise software development, LaunchStudio, Manifera
 Buyer Stage: Decision
-Target Persona: C (Digital Agency Owner)
+Target Persona: C (Agency / Freelancer White-Label Partner)
 ---
 
-# The Final Boss of B2B AI: Integrating LLMs with Enterprise ERP Systems
+# The Final Boss When You Code With AI: Integrating LLMs with Enterprise ERP Systems
 If you run a digital agency pitching AI to enterprise clients, you already know the drill. The CEO loves your pitch for an "AI Inventory Predictor." The marketing team loves the UX. You secure verbal approval for a €150k contract. 
 
 Then, the Chief Information Officer (CIO) walks into the room and asks the one question that kills the deal: *"How exactly is your AI going to talk to our SAP system?"*

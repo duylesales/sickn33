@@ -1,11 +1,11 @@
 ---
-Titel: De Eindbaas van B2B AI: LLM's Integreren met Enterprise ERP Systemen
+Titel: De Eindbaas Wanneer Je Gaat Coderen met AI: LLM's Integreren met Enterprise ERP Systemen
 Trefwoorden: Coderen met AI, ERP integration, AI SAP integratie, Microsoft Dynamics AI, digital agency, enterprise software ontwikkeling, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelpersona: C (Digital Agency Eigenaar)
+Doelpersona: C (Bureau / Freelancer White-Label Partner)
 ---
 
-# De Eindbaas van B2B AI: LLM's Integreren met Enterprise ERP Systemen
+# De Eindbaas Wanneer Je Gaat Coderen met AI: LLM's Integreren met Enterprise ERP Systemen
 Als je een digital agency runt die AI pitcht bij corporate klanten, ken je het script. De CEO is dolenthousiast over jouw concept voor een "AI Voorraad Voorspeller". Het marketingteam vindt het design prachtig. Je krijgt mondeling akkoord voor een contract van €150.000.
 
 En dan stapt de Chief Information Officer (CIO) de vergaderzaal binnen en stelt die ene vraag die de deal onmiddellijk vermoordt: *"Hoe gaat jullie AI precies praten met ons SAP-systeem?"*
