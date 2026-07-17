@@ -1,10 +1,10 @@
 ---
-Title: Caching Strategies for LLM Responses
+Title: AI For Coding: Caching Strategies for LLM Responses
 Keywords: AI For Coding, Caching, Strategies, LLM, Responses
 Buyer Stage: Awareness
 ---
 
-# Caching Strategies for LLM Responses
+# AI For Coding: Caching Strategies for LLM Responses
 The unit economics of a Generative AI startup are brutal. Every time a user clicks "Generate," your margin shrinks. If you run a B2B SaaS, you will quickly notice that enterprise users ask the same highly repetitive questions every single day. If you are paying an LLM to generate the exact same answer 500 times a week, you are burning capital. To survive, you must architect a highly efficient **Semantic Caching Layer**.
 
 ## The Failure of Exact-Match Caching

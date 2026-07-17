@@ -1,10 +1,10 @@
 ---
-Titel: De werkelijke kosten van hoge latentie in B2B SaaS
+Titel: AI in SaaS: De werkelijke kosten van hoge latentie voor B2B Platforms
 Trefwoorden: AI in SaaS, Waar, Kosten, Hoog, Latency, B2B, SaaS
-Koperfase: overweging
+Koperfase: Bewustwording
 ---
 
-# De werkelijke kosten van hoge latentie in B2B SaaS
+# AI in SaaS: De werkelijke kosten van hoge latentie voor B2B Platforms
 Als een dashboard in de wereld van standaard B2B SaaS drie seconden nodig heeft om te laden, is de gebruiker licht geïrriteerd. Als in de wereld van generatieve AI het genereren van een antwoord vijftien seconden duurt, gaat de gebruiker ervan uit dat de software kapot is, drukt hij op vernieuwen en gaat hij naar een concurrent. Generatieve AI is inherent traag omdat het tekst opeenvolgend berekent. Het beheren van deze latentie is geen technische optimalisatie; het is een fundamentele vereiste voor gebruikersbehoud.
 
 ## De psychologie van de laadspinner

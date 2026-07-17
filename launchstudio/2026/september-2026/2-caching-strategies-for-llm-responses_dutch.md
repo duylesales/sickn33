@@ -1,10 +1,10 @@
 ---
-Titel: Cachingstrategieën voor LLM-reacties
+Titel: AI om te coderen: Cachingstrategieën voor LLM-reacties
 Trefwoorden: AI om te coderen, Caching, Strategieën, LLM, Reacties
-Koperfase: Bewustzijn
+Koperfase: Bewustwording
 ---
 
-# Cachingstrategieën voor LLM-reacties
+# AI om te coderen: Cachingstrategieën voor LLM-reacties
 De eenheidseconomie van een generatieve AI-startup is wreed. Elke keer dat een gebruiker op 'Genereren' klikt, krimpt uw ​​marge. Als u een B2B SaaS gebruikt, zult u snel merken dat zakelijke gebruikers elke dag dezelfde, zeer repetitieve vragen stellen. Als u een LLM betaalt om 500 keer per week exact hetzelfde antwoord te genereren, verbrandt u kapitaal. Om te overleven moet je een zeer efficiënte **Semantische Caching-laag** ontwerpen.
 
 ## Het falen van exacte match-caching
