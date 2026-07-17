@@ -1,11 +1,11 @@
 ---
-Title: The Invisible Tax: Surviving Technical Debt in Your AI Scale-Up
+Title: AI In Software Engineering: Surviving Technical Debt in Your Scale-Up
 Keywords: AI In Software Engineering, technical debt, AI MVP, scale-up, LaunchStudio, Manifera, legacy code, software refactoring, tech debt
-Buyer Stage: Decision
+Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)
 ---
 
-# The Invisible Tax: Surviving Technical Debt in Your AI Scale-Up
+# AI In Software Engineering: Surviving Technical Debt in Your Scale-Up
 When you build your first AI Minimum Viable Product (MVP), speed is your only metric. You take shortcuts. You hardcode API keys to get the demo working. You skip writing automated tests. You cram all your business logic into massive, unreadable React components because you need to launch by Friday. 
 
 This approach is correct. In the beginning, the goal is to validate the market, not to build perfect software.

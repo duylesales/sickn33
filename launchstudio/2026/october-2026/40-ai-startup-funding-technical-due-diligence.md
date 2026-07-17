@@ -1,11 +1,11 @@
 ---
-Title: The Code Audit: Passing Technical Due Diligence for Your AI Startup
+Title: Passing Technical Due Diligence When You Use AI To Code
 Keywords: AI To Code, technical due diligence, AI startup funding, LaunchStudio, Manifera, Seed round, tech audit, code review
-Buyer Stage: Decision
-Target Persona: B (Technical Solo Founder)
+Buyer Stage: Consideration
+Target Persona: D (SaaS Founder Scale-Up)
 ---
 
-# The Code Audit: Passing Technical Due Diligence for Your AI Startup
+# Passing Technical Due Diligence When You Use AI To Code
 You built the prototype over the weekend using Cursor. You launched on Product Hunt, acquired 100 paying customers, and caught the attention of a prominent European Venture Capital (VC) firm. After three successful pitch meetings, the VC hands you a Term Sheet for a €1.5 Million Seed round. 
 
 But there is a catch. Before the money hits your bank account, you must pass **Technical Due Diligence (TDD)**. 

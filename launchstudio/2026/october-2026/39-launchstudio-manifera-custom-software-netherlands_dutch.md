@@ -1,11 +1,11 @@
 ---
-Titel: Het Nederlandse Voordeel: Maatwerk Softwareontwikkeling voor AI Startups
+Titel: AI en softwareontwikkeling: Het Nederlandse Voordeel voor Startups
 Trefwoorden: AI en softwareontwikkeling, custom software development netherlands, LaunchStudio, Manifera, Herre Roelevink, Nederlandse tech scene, AI startups, offshore engineering
-Koperfase: Bewustwording
-Doelpersona: A (AI-Native Oprichter, Niet-technisch)
+Koperfase: Overweging
+Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# Het Nederlandse Voordeel: Maatwerk Softwareontwikkeling voor AI Startups
+# AI en softwareontwikkeling: Het Nederlandse Voordeel voor Startups
 Nederland is stilletjes uitgegroeid tot een van de krachtigste technologiehubs van Europa. Met zijn digitale infrastructuur van wereldklasse, hoogopgeleide beroepsbevolking en strategische positie binnen de EU, is het de perfecte springplank voor B2B-startups.
 
 Echter, voor niet-technische oprichters die AI-gedreven SaaS-platforms bouwen, vormt de Nederlandse tech-scene een unieke uitdaging. Hoewel het makkelijk is om durfkapitaal te vinden in Amsterdam, is het inhuren van een intern team van senior software engineers peperduur. Een enkele senior React-developer in Nederland kost al snel meer dan €90.000 per jaar.
