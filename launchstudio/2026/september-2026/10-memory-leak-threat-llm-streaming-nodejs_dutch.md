@@ -1,10 +1,10 @@
 ---
-Titel: De bedreiging voor geheugenlekken in LLM-streaming
+Titel: De bedreiging voor geheugenlekken in LLM-streaming oplossen voor AI in software-engineering
 Trefwoorden: AI in software-engineering, geheugen, lek, bedreiging, LLM, streaming
-Koperfase: Bewustzijn
+Koperfase: Bewustwording
 ---
 
-# De bedreiging van geheugenlekken bij LLM-streaming
+# De bedreiging voor geheugenlekken in LLM-streaming oplossen voor AI in software-engineering
 Een van de meest verraderlijke bedreigingen voor een B2B AI-toepassing is niet een catastrofale crash, maar een langzame, stille dood. U implementeert uw Node.js-backend. Hij loopt perfect gedurende 12 uur. Vervolgens crasht de server om 14:00 uur willekeurig met de foutmelding 'JavaScript heap out of memory'. Je start het opnieuw op. Het werkt nog eens 12 uur prima en crasht dan opnieuw. Je bent het slachtoffer van een geheugenlek, en in de wereld van LLM-streaming zijn ze notoir gemakkelijk te maken en verschrikkelijk moeilijk te vinden.
 
 ## De werking van een streaminglek
