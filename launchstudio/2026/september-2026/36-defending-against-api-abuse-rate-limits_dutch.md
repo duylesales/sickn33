@@ -1,10 +1,10 @@
 ---
-Titel: Verdedigen tegen API-misbruik en tarieflimieten
-Trefwoorden: Verdedigen, Tegen, API, Misbruik, Tarief, Limieten
-Koperfase: Bewustzijn
+Titel: Verdedigen tegen misbruik en tarieflimieten wanneer u AI en Api combineert
+Trefwoorden: AI en Api, Verdedigen, Tegen, API, Misbruik, Tarief, Limieten
+Koperfase: Bewustwording
 ---
 
-# Verdedigen tegen API-misbruik en tarieflimieten
+# Verdedigen tegen misbruik en tarieflimieten wanneer u AI en Api combineert
 Als je een onbeveiligd eindpunt bouwt dat verbinding maakt met een LLM, zal het internet het vinden en leegmaken. Kwaadwillige actoren exploiteren enorme botnetwerken die speciaal zijn ontworpen om nieuwe AI SaaS-applicaties op te sporen en hun OpenAI API-sleutels over te hevelen. Als uw backend-architectuur ervan uitgaat dat elke gebruiker te goeder trouw handelt, bent u kwetsbaar voor een catastrofale 'Denial of Wallet'-aanval. Hier leest u hoe u uw AI-infrastructuur kunt vergrendelen.
 
 ## De ontkenning van een portemonnee-aanval

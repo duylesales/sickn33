@@ -1,10 +1,10 @@
 ---
-Titel: De wiskunde van OpenAI-winstmarges
+Titel: De wiskunde van OpenAI-winstmarges achter Het beste van AI
 Trefwoorden: Het beste van AI, Wiskunde, OpenAI, Winst, Marges
-Koperfase: Bewustzijn
+Koperfase: Overweging
 ---
 
-# De wiskunde van OpenAI-winstmarges
+# De wiskunde van OpenAI-winstmarges achter Het beste van AI
 Durfkapitalisten beoordelen softwarebedrijven op basis van brutomarges. Als je een prachtige AI-applicatie bouwt, maar het kost je $ 0,80 aan rekenkracht om $ 1,00 aan inkomsten te genereren, dan is je startup niet meer te investeren. De meeste oprichters raden hun abonnementsprijzen aan op basis van wat hun concurrenten vragen. In de AI-sector is gokken fataal. U moet uw eenheidseconomie wiskundig berekenen tot op het individuele token.
 
 ## Kosten per zoekopdracht (CPQ) berekenen

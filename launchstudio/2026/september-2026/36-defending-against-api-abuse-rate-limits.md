@@ -1,10 +1,10 @@
 ---
-Title: Defending Against API Abuse and Rate Limits
+Title: Defending Against Abuse and Rate Limits When You Combine AI And Api
 Keywords: AI And Api, Defending, Against, API, Abuse, Rate, Limits
 Buyer Stage: Awareness
 ---
 
-# Defending Against API Abuse and Rate Limits
+# Defending Against Abuse and Rate Limits When You Combine AI And Api
 If you build an unprotected endpoint that connects to an LLM, the internet will find it, and they will drain it. Malicious actors operate massive bot networks specifically designed to hunt down new AI SaaS applications and siphon off their OpenAI API keys. If your backend architecture assumes every user is acting in good faith, you are vulnerable to a catastrophic "Denial of Wallet" attack. Here is how to lock down your AI infrastructure.
 
 ## The Denial of Wallet Attack
