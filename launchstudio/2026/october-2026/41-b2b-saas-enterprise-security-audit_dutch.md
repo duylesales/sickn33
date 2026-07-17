@@ -1,12 +1,11 @@
 ---
-Titel: De Agency Gids voor het Slagen voor een B2B SaaS Enterprise Security Audit
-Trefwoorden: enterprise security audit, B2B SaaS, LaunchStudio, Manifera, IT compliance, digital agency, maatwerk softwareontwikkeling
+Titel: De Agency Gids voor het Slagen voor een B2B SaaS Enterprise Security Audit - AI om te coderen
+Trefwoorden: AI om te coderen, enterprise security audit, B2B SaaS, LaunchStudio, Manifera, IT compliance, digital agency, maatwerk softwareontwikkeling
 Koperfase: Beslissing
 Doelpersona: C (Bureau)
 ---
 
-# De Agency Gids voor het Slagen voor een B2B SaaS Enterprise Security Audit
-
+# De Agency Gids voor het Slagen voor een B2B SaaS Enterprise Security Audit - AI om te coderen
 Jouw digital agency heeft zojuist een briljante interne AI-tool gepitcht bij een grote Europese multinational. De stakeholders zijn dol op de UX, de directie is overtuigd van de ROI, en je staat op het punt een contract van €150.000 te sluiten.
 
 Dan stuurt de inkoopafdeling van de klant een **Vendor Security Assessment Questionnaire (VSAQ)** van 150 vragen.

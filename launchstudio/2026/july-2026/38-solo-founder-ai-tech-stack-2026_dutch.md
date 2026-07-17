@@ -1,6 +1,6 @@
 ---
-Titel: De AI Tech Stack van de solo-oprichter: schaalbare SaaS bouwen in 2026
-Trefwoorden: Founders, Stack, Building, Scalable
+Titel: De AI Tech Stack van de solo-oprichter: schaalbare SaaS bouwen in 2026 - AI in SaaS
+Trefwoorden: AI in SaaS, Founders, Stack, Building, Scalable
 Koperfase: Bewustzijn
 ---
 

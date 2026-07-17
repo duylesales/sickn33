@@ -1,11 +1,10 @@
 ---
-Titel: De impact van AGI op SaaS-startups: voorbereiding op de singulariteit
-Trefwoorden: Impact, Startups, Voorbereiden, Singulariteit
+Titel: De impact van AGI op SaaS-startups: voorbereiding op de singulariteit - AI om te coderen
+Trefwoorden: AI om te coderen, Impact, Startups, Voorbereiden, Singulariteit
 Koperfase: Bewustzijn
 ---
 
-# De impact van AGI op SaaS-startups: voorbereiding op de singulariteit
-
+# De impact van AGI op SaaS-startups: voorbereiding op de singulariteit - AI om te coderen
 Twintig jaar lang was het SaaS-bedrijfsmodel onberispelijk: schrijf één keer code en verhuur deze aan een miljoen mensen voor $ 29 per maand. In 2026 zijn we getuige van de nadagen van dit tijdperk. Nu fundamentele modellen snel in de buurt komen van Artificial General Intelligence (AGI) – AI die in staat is om op menselijk niveau te redeneren op elk domein – is de waarde van het ‘huren van code’ naar nul gedaald. Hier ziet u hoe AGI de traditionele SaaS-industrie zal ontmantelen, en hoe oprichters moeten draaien om te overleven.
 
 ## De ineenstorting van de SaaS-workflow

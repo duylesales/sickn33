@@ -1,6 +1,6 @@
 ---
-Titel: Cold Email Outreach voor SaaS in het AI-tijdperk
-Trefwoorden: Cold, E-mail, Outreach, SaaS, AI, Era
+Titel: Cold Email Outreach voor SaaS in het AI-tijdperk - AI in SaaS
+Trefwoorden: AI in SaaS, Cold, E-mail, Outreach, SaaS, AI, Era
 Koperfase: Bewustzijn
 ---
 

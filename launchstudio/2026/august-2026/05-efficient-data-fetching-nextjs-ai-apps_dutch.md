@@ -1,10 +1,10 @@
 ---
-Titel: Efficiënt gegevens ophalen in Next.js voor AI-apps
-Trefwoorden: Efficiënt, Data, Ophalen, Volgende, AI, Apps
+Titel: Efficiënt gegevens ophalen in Next.js voor AI-apps - AI om te coderen
+Trefwoorden: AI om te coderen, Efficiënt, Data, Ophalen, Volgende, AI, Apps
 Koperfase: Bewustzijn
 ---
 
-# Efficiënt gegevens ophalen in Next.js voor AI-apps
+# Efficiënt gegevens ophalen in Next.js voor AI-apps - AI om te coderen
 AI-toepassingen zijn ongelooflijk data-hongerig. U moet tegelijkertijd de abonnementsstatus van de gebruiker, zijn eerdere chatgeschiedenis uit een database en realtime streaming-tokens van een LLM ophalen. Als u deze gegevens slecht ophaalt, zal uw app last hebben van 'waterval'-laadschermen en zal de UX snel verslechteren. Next.js App Router biedt de tools om dit te verhelpen, op voorwaarde dat u ze correct gebruikt.
 
 ## De waterval doden

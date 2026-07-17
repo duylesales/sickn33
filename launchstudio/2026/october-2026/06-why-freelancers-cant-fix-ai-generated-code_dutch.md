@@ -1,12 +1,11 @@
 ---
-Titel: Waarom freelancers door AI gegenereerde code niet kunnen fixen — En wat je in plaats daarvan moet doen
-Trefwoorden: AI coding, AI for coding, AI software developers, AI code tool, LaunchStudio, Manifera, Cursor, Lovable, Bolt
+Titel: Waarom freelancers door AI gegenereerde code niet kunnen fixen — En wat je in plaats daarvan moet doen - AI om te coderen
+Trefwoorden: AI om te coderen, AI coding, AI for coding, AI software developers, AI code tool, LaunchStudio, Manifera, Cursor, Lovable, Bolt
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# Waarom freelancers door AI gegenereerde code niet kunnen fixen — En wat je in plaats daarvan moet doen
-
+# Waarom freelancers door AI gegenereerde code niet kunnen fixen — En wat je in plaats daarvan moet doen - AI om te coderen
 "Ik heb drie maanden lang heen en weer gecommuniceerd met een freelancer die mijn Cursor-code niet begreep." Dat is Marieke, een oprichter die een SaaS bouwde voor personal trainers. Haar verhaal — drie maanden heen en weer met een freelancer die haar door Cursor gegenereerde code niet kon lezen — is niet ongewoon. Het is de norm.
 
 Wanneer AI-native oprichters het punt bereiken waarop hun prototype professionele engineering nodig heeft, is hun eerste instinct een freelancer inhuren. Het klinkt logisch: freelancers zijn goedkoper dan bureaus, sneller in te schakelen en breed beschikbaar.

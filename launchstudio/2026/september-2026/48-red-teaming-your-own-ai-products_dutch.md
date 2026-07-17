@@ -1,6 +1,6 @@
 ---
-Titel: Red Teaming uw eigen AI-producten
-Trefwoorden: Rood, Teaming, AI, Producten
+Titel: Red Teaming uw eigen AI-producten - AI SaaS-producten
+Trefwoorden: AI SaaS-producten, Rood, Teaming, AI, Producten
 Koperfase: Bewustzijn
 ---
 

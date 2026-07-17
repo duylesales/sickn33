@@ -1,6 +1,6 @@
 ---
-Titel: LinkedIn Automation veilig inzetten voor B2B-verkoop
-Trefwoorden: Leveraging, LinkedIn, Automatisering, Veilig, B2B, Sales
+Titel: LinkedIn Automation veilig inzetten voor B2B-verkoop - AI om te coderen
+Trefwoorden: AI om te coderen, Leveraging, LinkedIn, Automatisering, Veilig, B2B, Sales
 Koperfase: Bewustzijn
 ---
 

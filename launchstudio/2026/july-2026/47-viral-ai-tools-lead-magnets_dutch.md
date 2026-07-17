@@ -1,6 +1,6 @@
 ---
-Titel: Virale AI-tools creëren als leidende magneten
-Trefwoorden: Creëren, Viraal, Gereedschap, Magneten
+Titel: Virale AI-tools creëren als leidende magneten - Alle AI-tools
+Trefwoorden: Alle AI-tools, Creëren, Viraal, Gereedschap, Magneten
 Koperfase: Bewustzijn
 ---
 

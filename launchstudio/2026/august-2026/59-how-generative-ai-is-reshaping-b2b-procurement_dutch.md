@@ -1,10 +1,10 @@
 ---
-Titel: Hoe generatieve AI de B2B-inkoop hervormt
-Trefwoorden: Generatief, AI, Hervormen, B2B, Inkoop
+Titel: Hoe generatieve AI de B2B-inkoop hervormt - Day AI
+Trefwoorden: Day AI, Generatief, AI, Hervormen, B2B, Inkoop
 Koperfase: Bewustzijn
 ---
 
-# Hoe generatieve AI de B2B-inkoop hervormt
+# Hoe generatieve AI de B2B-inkoop hervormt - Day AI
 Een groot deel van het discours rond AI richt zich op de manier waarop software wordt gebouwd en beheerd. Er vindt echter een stille revolutie plaats in de manier waarop software wordt *gekocht*. De inkoopcyclus voor ondernemingen – historisch gezien een slopende, zes maanden durende beproeving van spreadsheets, juridische redlines en 200 pagina’s tellende Request for Proposals (RFP’s) – wordt volledig geautomatiseerd door LLM-agenten. Voor B2B-oprichters verkoop je niet langer alleen maar aan menselijke leidinggevenden; u verkoopt aan hun AI-beoordelaars.
 
 ## De automatisering van de RFP

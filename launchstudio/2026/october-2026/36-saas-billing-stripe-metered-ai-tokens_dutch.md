@@ -1,12 +1,11 @@
 ---
-Titel: Overleef de OpenAI API Kosten: Hoe je Metered SaaS Billing Bouwt met Stripe
-Trefwoorden: saas billing, Stripe metered billing, AI tokens, LaunchStudio, Manifera, B2B SaaS architectuur, API kosten
+Titel: Overleef de OpenAI API Kosten: Hoe je Metered SaaS Billing Bouwt met Stripe - Bouw een app met AI
+Trefwoorden: Bouw een app met AI, saas billing, Stripe metered billing, AI tokens, LaunchStudio, Manifera, B2B SaaS architectuur, API kosten
 Koperfase: Beslissing
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# Overleef de OpenAI API Kosten: Hoe je Metered SaaS Billing Bouwt met Stripe
-
+# Overleef de OpenAI API Kosten: Hoe je Metered SaaS Billing Bouwt met Stripe - Bouw een app met AI
 Als technische solo-oprichter is het lanceren van een AI SaaS bedrieglijk eenvoudig. Je zet een Next.js frontend op, koppelt de OpenAI API en vraagt een vast bedrag van €20 per maand.
 
 In maand één werkt dit perfect. Je hebt 50 gebruikers die een paar rapporten per week genereren, en je OpenAI API-rekening is een beheersbare €30.

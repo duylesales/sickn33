@@ -1,6 +1,6 @@
 ---
-Titel: Bouwen aan een AI-leadmagneet die daadwerkelijk converteert
-Trefwoorden: Gebouw, AI, Lood, Magneet, Eigenlijk, Converteert
+Titel: Bouwen aan een AI-leadmagneet die daadwerkelijk converteert - Bouw een app met AI
+Trefwoorden: Bouw een app met AI, Gebouw, AI, Lood, Magneet, Eigenlijk, Converteert
 Koperfase: Bewustzijn
 ---
 

@@ -1,6 +1,6 @@
 ---
-Titel: Op gebruik gebaseerde versus stoelgebaseerde prijzen voor AI
-Trefwoorden: gebruik, gebaseerd, stoel, prijs, AI
+Titel: Op gebruik gebaseerde versus stoelgebaseerde prijzen voor AI - AI om te coderen
+Trefwoorden: AI om te coderen, gebruik, gebaseerd, stoel, prijs, AI
 Koperfase: overweging
 ---
 

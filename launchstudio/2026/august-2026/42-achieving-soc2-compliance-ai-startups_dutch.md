@@ -1,6 +1,6 @@
 ---
-Titel: Het bereiken van SOC2-compliance voor AI-startups
-Trefwoorden: Achieving, SOC2, Compliance, AI, Startups
+Titel: Het bereiken van SOC2-compliance voor AI-startups - AI om te coderen
+Trefwoorden: AI om te coderen, Achieving, SOC2, Compliance, AI, Startups
 Koperfase: overweging
 ---
 

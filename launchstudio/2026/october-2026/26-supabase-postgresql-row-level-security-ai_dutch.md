@@ -1,12 +1,11 @@
 ---
-Titel: Supabase & AI — Waarom Row Level Security Cruciaal is voor SaaS
-Trefwoorden: supabase, postgresql, row level security, rls, LaunchStudio, Manifera, AI saas
+Titel: Supabase & AI — Waarom Row Level Security Cruciaal is voor SaaS - Beveiliging voor AI
+Trefwoorden: Beveiliging voor AI, supabase, postgresql, row level security, rls, LaunchStudio, Manifera, AI saas
 Koperfase: Beslissing
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# Supabase & AI — Waarom Row Level Security Cruciaal is voor SaaS
-
+# Supabase & AI — Waarom Row Level Security Cruciaal is voor SaaS - Beveiliging voor AI
 Wanneer je als technische solo-oprichter een AI-applicatie bouwt, is snelheid alles. Je gebruikt Bolt.new of Cursor om je React frontend te genereren, en je kiest Supabase als je backend.
 
 Supabase—een open-source Firebase alternatief gebouwd op PostgreSQL—is waarschijnlijk de beste databasekeuze voor moderne AI-startups. Het biedt instant API's, real-time abonnementen en ingebouwde vectorondersteuning (`pgvector`) voor AI-embeddings.

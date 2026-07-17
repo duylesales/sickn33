@@ -1,10 +1,10 @@
 ---
-Titel: De rol van de AI-productmanager
-Trefwoorden: Rol, AI, Product, Manager
+Titel: De rol van de AI-productmanager - Het beste van AI
+Trefwoorden: Het beste van AI, Rol, AI, Product, Manager
 Koperfase: Bewustzijn
 ---
 
-# De rol van de AI-productmanager
+# De rol van de AI-productmanager - Het beste van AI
 Decennia lang was software-engineering **deterministisch**. Als een gebruiker X invoert, voert de database Y uit. Productmanagers bouwden rigoureuze wireframes, schreven exacte acceptatiecriteria en ontwikkelaars bouwden precies wat was gespecificeerd. Generatieve AI heeft dit paradigma doorbroken. LLM's zijn **probabilistisch**. Als een gebruiker X invoert, kan de AI Y, Z uitvoeren of vol vertrouwen een volledig verzonnen antwoord verzinnen. Om een ​​B2B AI SaaS te bouwen, moet de rol van de Product Manager fundamenteel evolueren van het beheren van functies naar het beheren van chaos.
 
 ## De foutmarge beheren

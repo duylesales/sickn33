@@ -1,10 +1,10 @@
 ---
-Titel: Implementatie van een Zero Data Retention-architectuur
-Trefwoorden: Implementeren, Zero, Data, Retentie, Architectuur
+Titel: Implementatie van een Zero Data Retention-architectuur - AI-gegevensbeveiliging
+Trefwoorden: AI-gegevensbeveiliging, Implementeren, Zero, Data, Retentie, Architectuur
 Koperfase: Bewustzijn
 ---
 
-# Implementatie van een Zero Data Retention-architectuur
+# Implementatie van een Zero Data Retention-architectuur - AI-gegevensbeveiliging
 Wanneer u AI-software probeert te verkopen aan banken, zorgaanbieders of defensie-aannemers, zal hun Chief Information Security Officer (CISO) u een beveiligingsvragenlijst van 200 pagina's overhandigen. Als uw architectuur afhankelijk is van het opslaan van zeer gevoelige documenten in de centrale PostgreSQL-database van uw startup, faalt u onmiddellijk voor de audit. Om aan de meest lucratieve sectoren te verkopen, moet u streven naar **Zero Data Retention**.
 
 ## De staatloze pijplijn

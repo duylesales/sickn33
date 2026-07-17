@@ -1,11 +1,10 @@
 ---
-Titel: AI verkopen aan zakelijke klanten: beveiliging, compliance en vertrouwen
-Trefwoorden: Verkopen, Onderneming, Klanten, Beveiliging, Compliance
+Titel: AI verkopen aan zakelijke klanten: beveiliging, compliance en vertrouwen - AI en beveiliging
+Trefwoorden: AI en beveiliging, Verkopen, Onderneming, Klanten, Beveiliging, Compliance
 Koperfase: Bewustzijn
 ---
 
-# AI verkopen aan zakelijke klanten: beveiliging, compliance en vertrouwen
-
+# AI verkopen aan zakelijke klanten: beveiliging, compliance en vertrouwen - AI en beveiliging
 Je hebt een AI-tool gebouwd die complexe juridische contracten in enkele seconden samenvat. Individuele advocaten zijn er dol op en betalen $ 30 per maand. Dus je pitcht het bij een groot advocatenkantoor om een ​​ondernemingscontract van $ 50.000 per jaar binnen te halen. De managing partner vindt de demo leuk, maar draagt ​​je vervolgens over aan IT Procurement en de Chief Information Security Officer (CISO). Ze vragen: "Waar gaan de gegevens naartoe?" Als uw antwoord is: "We sturen het gewoon naar OpenAI", is de deal dood. Hier leest u hoe u door de AI-handschoen voor ondernemingen kunt navigeren.
 
 ## De angst van bedrijven: gegevenslekken

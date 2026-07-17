@@ -1,11 +1,10 @@
 ---
-Titel: Heb ik een aangepaste backend nodig voor mijn AI-startup?
-Trefwoorden: Aangepast, Backend, Opstarten
+Titel: Heb ik een aangepaste backend nodig voor mijn AI-startup? - AI om te coderen
+Trefwoorden: AI om te coderen, Aangepast, Backend, Opstarten
 Koperfase: Bewustzijn
 ---
 
-# Heb ik een aangepaste backend nodig voor mijn AI-startup?
-
+# Heb ik een aangepaste backend nodig voor mijn AI-startup? - AI om te coderen
 Als je Lovable, Bolt of Cursor hebt gebruikt om je MVP te bouwen, heb je waarschijnlijk een "serverloze" applicatie. Er is een frontend (React), een database (Supabase), maar geen traditionele backend-server waarop Node.js of Python draait. Voor veel beginnende technische oprichters voelt dit verkeerd. "Heb ik geen backend nodig?" Het korte antwoord is: waarschijnlijk niet. De serverloze architectuur is meer dan geschikt voor 95% van de AI-startups, maar het begrijpen van de beperkingen ervan is van cruciaal belang voordat u start.
 
 ## De traditionele versus serverloze architectuur

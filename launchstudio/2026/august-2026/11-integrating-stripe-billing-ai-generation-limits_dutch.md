@@ -1,6 +1,6 @@
 ---
-Titel: Stripe Billing integreren met AI-generatielimieten
-Trefwoorden: Integreren, Stripe, Facturering, AI, Generatie, Limieten
+Titel: Stripe Billing integreren met AI-generatielimieten - Coderen met AI
+Trefwoorden: Coderen met AI, Integreren, Stripe, Facturering, AI, Generatie, Limieten
 Koperfase: Bewustzijn
 ---
 

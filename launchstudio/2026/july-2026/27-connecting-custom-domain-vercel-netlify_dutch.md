@@ -1,11 +1,10 @@
 ---
-Titel: Een aangepast domein verbinden met uw Vercel- of Netlify-app
-Trefwoorden: Verbinden, Maatwerk, Domein, Vercel, Netlify
+Titel: Een aangepast domein verbinden met uw Vercel- of Netlify-app - AI om te coderen
+Trefwoorden: AI om te coderen, Verbinden, Maatwerk, Domein, Vercel, Netlify
 Koperfase: Bewustzijn
 ---
 
-# Een aangepast domein verbinden met uw Vercel- of Netlify-app
-
+# Een aangepast domein verbinden met uw Vercel- of Netlify-app - AI om te coderen
 Het verplaatsen van uw door AI gebouwde app van een voorbeeld-URL (zoals `mijn-project.vercel.app`) naar uw eigen aangepaste domein (`myapp.com`) is het moment waarop uw prototype een echt product wordt. Hoewel het proces gepaard gaat met het intimideren van acroniemen als DNS, A Records en CNAMEs, duurt het in werkelijkheid minder dan 10 minuten. Hier vindt u de niet-technische handleiding voor het veilig verbinden van uw aangepaste domein.
 
 ## Stap 1: Koop uw domein

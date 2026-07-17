@@ -1,6 +1,6 @@
 ---
-Titel: Voorbereiding op de volgende AI-architectuurverschuiving
-Trefwoorden: Preparing, Next, AI, Architectuur, Shift
+Titel: Voorbereiding op de volgende AI-architectuurverschuiving - AI om te coderen
+Trefwoorden: AI om te coderen, Preparing, Next, AI, Architectuur, Shift
 Koperfase: Bewustzijn
 ---
 

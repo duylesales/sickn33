@@ -1,10 +1,10 @@
 ---
-Titel: Prompts ontwerpen als code: het configuratiepatroon
-Trefwoorden: ontwerpen, aanwijzingen, code, configuratie, patroon
+Titel: Prompts ontwerpen als code: het configuratiepatroon - AI om te coderen
+Trefwoorden: AI om te coderen, ontwerpen, aanwijzingen, code, configuratie, patroon
 Koperfase: Bewustzijn
 ---
 
-# Prompts ontwerpen als code: het configuratiepatroon
+# Prompts ontwerpen als code: het configuratiepatroon - AI om te coderen
 Prompt Engineering is geen eenmalige taak; het is een continue operationele cyclus. Een instructie die vandaag perfect werkt op GPT-4 kan morgen op onverklaarbare wijze mislukken op GPT-4o. Als uw technische team systeemprompts van 1000 woorden rechtstreeks in uw Node.js-controllers codeert, zal uw startup zichzelf lamleggen. Om flexibele AI-architecturen te bouwen, moet u prompts behandelen als configuratiegegevens, niet als bedrijfslogica.
 
 ## Het knelpunt van hardgecodeerde aanwijzingen

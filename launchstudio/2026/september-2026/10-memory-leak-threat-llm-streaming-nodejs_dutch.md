@@ -1,6 +1,6 @@
 ---
-Titel: De bedreiging voor geheugenlekken in LLM-streaming
-Trefwoorden: geheugen, lek, bedreiging, LLM, streaming
+Titel: De bedreiging voor geheugenlekken in LLM-streaming - AI in software-engineering
+Trefwoorden: AI in software-engineering, geheugen, lek, bedreiging, LLM, streaming
 Koperfase: Bewustzijn
 ---
 

@@ -1,11 +1,10 @@
 ---
-Titel: De rol van de AI-productmanager in 2026
-Trefwoorden: Product, Manager
+Titel: De rol van de AI-productmanager in 2026 - AI in software-engineering
+Trefwoorden: AI in software-engineering, Product, Manager
 Koperfase: Bewustzijn
 ---
 
-# De rol van de AI-productmanager in 2026
-
+# De rol van de AI-productmanager in 2026 - AI in software-engineering
 Twintig jaar lang werd de technologie-industrie gedefinieerd door een strikte hiërarchie: productmanagers (PM's) beslisten wat ze moesten bouwen, ontwerpers tekenden het en software-ingenieurs typten de code om het werkelijkheid te maken. Generatieve AI heeft deze hiërarchie doen instorten. Wanneer een AI in dertig seconden een gebruikersinterface kan ontwerpen en de React-code kan schrijven, verdwijnen de grenzen tussen rollen. De meest cruciale rol in de moderne startup is de ‘AI Product Manager’.
 
 ## De verschuiving van syntaxis naar architectuur

@@ -1,6 +1,6 @@
 ---
-Titel: Implementaties zonder downtime: hoe u uw SaaS kunt updaten zonder deze kapot te maken
-Trefwoorden: ZeroDowntime, Implementaties, Update, Zonder, Breaking
+Titel: Implementaties zonder downtime: hoe u uw SaaS kunt updaten zonder deze kapot te maken - AI om te coderen
+Trefwoorden: AI om te coderen, ZeroDowntime, Implementaties, Update, Zonder, Breaking
 Koperfase: overweging
 ---
 

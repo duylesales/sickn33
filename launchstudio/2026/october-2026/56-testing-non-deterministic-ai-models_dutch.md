@@ -1,12 +1,11 @@
 ---
-Titel: De TDD Nachtmerrie: Non-Deterministische AI Modellen Testen
-Trefwoorden: AI Application Testing, Test-Driven Development, unit tests, integratietesten, LLM evaluatie, LaunchStudio, Manifera, deterministische AI
+Titel: De TDD Nachtmerrie: Non-Deterministische AI Modellen Testen - Day AI
+Trefwoorden: Day AI, AI Application Testing, Test-Driven Development, unit tests, integratietesten, LLM evaluatie, LaunchStudio, Manifera, deterministische AI
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# De TDD Nachtmerrie: Non-Deterministische AI Modellen Testen
-
+# De TDD Nachtmerrie: Non-Deterministische AI Modellen Testen - Day AI
 Als je een ervaren software engineer bent, ken je de gouden regel van productie: zet nóóit code live zonder unit tests te schrijven. Test-Driven Development (TDD) geeft je het vertrouwen dat je app niet crasht wanneer een gebruiker op een knop klikt.
 
 Maar zodra je de overstap maakt naar het bouwen van een AI SaaS, breekt het TDD-model volledig in stukken.

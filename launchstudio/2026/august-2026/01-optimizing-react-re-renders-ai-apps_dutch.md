@@ -1,6 +1,6 @@
 ---
-Titel: React Re-renders optimaliseren in AI-toepassingen
-Trefwoorden: Optimaliseren, Reageren, AI, Applicaties
+Titel: React Re-renders optimaliseren in AI-toepassingen - AI in software-engineering
+Trefwoorden: AI in software-engineering, Optimaliseren, Reageren, AI, Applicaties
 Koperfase: Bewustzijn
 ---
 

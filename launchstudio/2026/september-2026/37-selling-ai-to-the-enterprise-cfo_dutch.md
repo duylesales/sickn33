@@ -1,10 +1,10 @@
 ---
-Titel: AI verkopen aan de CFO van de onderneming
-Trefwoorden: Verkopen, AI, Enterprise, CFO
+Titel: AI verkopen aan de CFO van de onderneming - AI om te coderen
+Trefwoorden: AI om te coderen, Verkopen, AI, Enterprise, CFO
 Koperfase: Bewustzijn
 ---
 
-# AI verkopen aan de CFO van de onderneming
+# AI verkopen aan de CFO van de onderneming - AI om te coderen
 Technische grondleggers zijn geobsedeerd door architectuur. Wanneer ze eindelijk een ontmoeting met een Enterprise-koper hebben geregeld, openen ze trots een diapresentatie met details over hun multi-agent-orkestratie, pgvector-implementatie en tokenlatentie van minder dan een seconde. De Chief Financial Officer (CFO) haakt binnen drie minuten af ​​en het contract van $100.000 loopt af. Om AI aan de onderneming te verkopen, moet u technisch jargon meedogenloos elimineren en de enige taal spreken die de C-Suite verstaat: Return on Investment (ROI).
 
 ## Stop met het verkopen van 'kunstmatige intelligentie'

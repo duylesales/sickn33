@@ -1,11 +1,10 @@
 ---
-Titel: De dood van de 'Thin Wrapper': de AI-shake-out in 2026 overleven
-Trefwoorden: Dood, Wrapper, Overleven, Shakeout
+Titel: De dood van de 'Thin Wrapper': de AI-shake-out in 2026 overleven - AI in software-engineering
+Trefwoorden: AI in software-engineering, Dood, Wrapper, Overleven, Shakeout
 Koperfase: Bewustzijn
 ---
 
-# De dood van de 'Thin Wrapper': de AI-shake-out in 2026 overleven
-
+# De dood van de 'Thin Wrapper': de AI-shake-out in 2026 overleven - AI in software-engineering
 In 2023 zou je een website kunnen bouwen die om het cv van een gebruiker vraagt, deze naar de OpenAI API stuurt met de prompt 'Maak dit beter', en een MRR van €10.000 genereert. Dat tijdperk is voorbij. De "Thin Wrapper" is dood en wordt systematisch met uitsterven bedreigd door OpenAI en Anthropic die voortdurend hun eigen consumenteninterfaces upgraden. Om in 2026 te overleven, moet je een 'Thick Wrapper' bouwen. Hier leest u wat dat betekent en hoe u er een kunt bouwen.
 
 ## De existentiële dreiging: native upgrades

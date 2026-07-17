@@ -1,12 +1,11 @@
 ---
-Titel: Het Paard van Troje: AI Verkopen via Legacy Software Modernisatie
-Trefwoorden: legacy software modernization, AI integratie, digital agency, custom softwareontwikkeling, LaunchStudio, Manifera, tech debt
+Titel: Het Paard van Troje: AI Verkopen via Legacy Software Modernisatie - AI en softwareontwikkeling
+Trefwoorden: AI en softwareontwikkeling, legacy software modernization, AI integratie, digital agency, custom softwareontwikkeling, LaunchStudio, Manifera, tech debt
 Koperfase: Bewustwording
 Doelpersona: C (Digital Agency Eigenaar)
 ---
 
-# Het Paard van Troje: AI Verkopen via Legacy Software Modernisatie
-
+# Het Paard van Troje: AI Verkopen via Legacy Software Modernisatie - AI en softwareontwikkeling
 Elke corporate klant wil "Artificial Intelligence". Als agency-eigenaar word je continu gevraagd om AI-ideeën te pitchen bij je grootste accounts.
 
 Je pitcht een briljante, futuristische AI Agent die automatisch verkoopoffertes opstelt. De CEO van de klant is enthousiast. Maar wanneer het project naar de IT-afdeling gaat voor goedkeuring, wordt het onmiddellijk afgeschoten.

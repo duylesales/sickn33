@@ -1,6 +1,6 @@
 ---
-Titel: Het klantverloop in generatieve AI-producten verminderen
-Trefwoorden: Reduceren, Churn, Generatief, AI, Producten
+Titel: Het klantverloop in generatieve AI-producten verminderen - AI in software-engineering
+Trefwoorden: AI in software-engineering, Reduceren, Churn, Generatief, AI, Producten
 Koperfase: Bewustzijn
 ---
 

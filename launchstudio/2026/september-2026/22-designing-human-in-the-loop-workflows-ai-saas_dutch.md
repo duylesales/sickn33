@@ -1,10 +1,10 @@
 ---
-Titel: 'Human-in-the-Loop'-workflows ontwerpen
-Trefwoorden: Ontwerpen, Mens, Loop, Workflows
+Titel: 'Human-in-the-Loop'-workflows ontwerpen - AI in software-engineering
+Trefwoorden: AI in software-engineering, Ontwerpen, Mens, Loop, Workflows
 Koperfase: Bewustzijn
 ---
 
-# 'Human-in-the-Loop'-workflows ontwerpen
+# 'Human-in-the-Loop'-workflows ontwerpen - AI in software-engineering
 De technologie-industrie is geobsedeerd door ‘Autonomous Agents’: AI-systemen die op de achtergrond draaien, beslissingen nemen en API’s uitvoeren zonder menselijke tussenkomst. Dit is een briljant concept voor een demo en een catastrofale aansprakelijkheid in een zakelijke productieomgeving. LLM's zijn probabilistisch; ze zullen uiteindelijk hallucineren. Om een ​​B2B SaaS te bouwen die bedrijven daadwerkelijk vertrouwen, moet u strikte **Human-in-the-Loop (HITL)**-goedkeuringsgateways ontwerpen.
 
 ## Het risico van autonomie in B2B

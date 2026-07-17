@@ -1,12 +1,11 @@
 ---
-Titel: Voorbij de Chatbot: Autonome AI Agents Bouwen voor B2B SaaS
-Trefwoorden: AI agent, autonome AI, B2B SaaS, LaunchStudio, Manifera, custom softwareontwikkeling, AI automatisering, LangChain
+Titel: Voorbij de Chatbot: Autonome AI Agents Bouwen voor B2B SaaS - AI om te coderen
+Trefwoorden: AI om te coderen, AI agent, autonome AI, B2B SaaS, LaunchStudio, Manifera, custom softwareontwikkeling, AI automatisering, LangChain
 Koperfase: Bewustwording
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# Voorbij de Chatbot: Autonome AI Agents Bouwen voor B2B SaaS
-
+# Voorbij de Chatbot: Autonome AI Agents Bouwen voor B2B SaaS - AI om te coderen
 Als jouw AI SaaS niet meer is dan een tekstvak waarin een gebruiker een vraag typt en een antwoord krijgt, loop je nu al achter.
 
 De eerste golf van generatieve AI draaide om *antwoorden geven*. De tweede golf—waar we nu middenin zitten—draait om *actie ondernemen*. B2B enterprise klanten willen niet meer chatten met een AI; ze willen een **AI Agent** inhuren. Ze willen een systeem dat kan inloggen op hun CRM, een boze e-mail van een klant leest, de benodigde korting berekent, een antwoord opstelt en een follow-up taak inplant—allemaal zonder menselijke tussenkomst.

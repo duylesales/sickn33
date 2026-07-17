@@ -1,6 +1,6 @@
 ---
-Titel: Hoe Acme Corp $1 miljoen bespaarde met AI-automatisering
-Trefwoorden: Acme, Corp, Saved, AI, Automation
+Titel: Hoe Acme Corp $1 miljoen bespaarde met AI-automatisering - Coderen met AI
+Trefwoorden: Coderen met AI, Acme, Corp, Saved, AI, Automation
 Koperfase: Bewustzijn
 ---
 

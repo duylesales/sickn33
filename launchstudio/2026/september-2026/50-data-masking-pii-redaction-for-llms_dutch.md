@@ -1,10 +1,10 @@
 ---
-Titel: Gegevensmaskering en PII-redactie voor LLM's
-Trefwoorden: gegevens, maskeren, PII, redactie, LLM's
+Titel: Gegevensmaskering en PII-redactie voor LLM's - AI om te coderen
+Trefwoorden: AI om te coderen, gegevens, maskeren, PII, redactie, LLM's
 Koperfase: Bewustzijn
 ---
 
-# Gegevensmaskering en PII-redactie voor LLM's
+# Gegevensmaskering en PII-redactie voor LLM's - AI om te coderen
 Als uw AI-startup medische dossiers, juridische contracten of financiële gegevens verwerkt, is het verzenden van onbewerkte tekst naar een LLM-API van derden (zoals OpenAI of Anthropic) een enorme schending van de naleving. Onder de AVG, CCPA en HIPAA staan ​​er catastrofale boetes op het verzenden van persoonlijk identificeerbare informatie (PII) naar niet-geverifieerde externe servers. Om AI aan gereguleerde industrieën te verkopen, moet je een ondoordringbare **Data Masking Pipeline** ontwerpen.
 
 ## De werking van realtime redactie

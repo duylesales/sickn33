@@ -1,12 +1,11 @@
 ---
-Titel: AI-app hosting en deployment — Een gids voor oprichters om live te gaan
-Trefwoorden: AI deployment, AI frontend, AI websites, build AI app, LaunchStudio, Manifera, Vercel, Netlify
+Titel: AI-app hosting en deployment — Een gids voor oprichters om live te gaan - AI om te coderen
+Trefwoorden: AI om te coderen, AI deployment, AI frontend, AI websites, build AI app, LaunchStudio, Manifera, Vercel, Netlify
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# AI-app hosting en deployment — Een gids voor oprichters om live te gaan
-
+# AI-app hosting en deployment — Een gids voor oprichters om live te gaan - AI om te coderen
 Robin bouwde zijn AI-planningstool in Lovable. De demo-URL werkte perfect — hij deelde het met drie bètatesters en ze waren enthousiast. Toen stelde zijn investeerder een eenvoudige vraag: "Wat is je productie-URL?"
 
 Robin keek naar zijn browser. De adresbalk toonde `lovable.dev/preview/abc123`. Hij had geen eigen domein. Geen SSL-certificaat. Geen deployment-pipeline. Zijn "live" product draaide op een tijdelijke preview-link die Lovable op elk moment kon intrekken.

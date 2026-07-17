@@ -1,6 +1,6 @@
 ---
-Titel: Navigeren door de EU AI Act: wat SaaS-oprichters moeten weten in 2026
-Trefwoorden: Navigeren, Stichters
+Titel: Navigeren door de EU AI Act: wat SaaS-oprichters moeten weten in 2026 - AI in SaaS
+Trefwoorden: AI in SaaS, Navigeren, Stichters
 Koperfase: Bewustzijn
 ---
 

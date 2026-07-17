@@ -1,10 +1,10 @@
 ---
-Titel: De dood van de 'Thin Wrapper'-startup
-Trefwoorden: Dood, Dun, Wrapper, Startup
+Titel: De dood van de 'Thin Wrapper'-startup - Het beste van AI
+Trefwoorden: Het beste van AI, Dood, Dun, Wrapper, Startup
 Koperfase: Bewustzijn
 ---
 
-# De dood van de 'Thin Wrapper'-startup
+# De dood van de 'Thin Wrapper'-startup - Het beste van AI
 Tijdens de Gold Rush van 2023 lanceerden duizenden startups met exact dezelfde architectuur: een gelikte Tailwind CSS-landingspagina, een Stripe-checkout en een backend die eenvoudig gebruikerstekst doorstuurde naar de OpenAI API. Dit waren de ‘dunne wikkels’. Ze boden tijdelijk enorme waarde omdat het grote publiek niet wist hoe ze ChatGPT moesten gebruiken. Maar toen de kennis over AI toenam en fundamentele modellen steeds populairder werden, werden de Thin Wrappers met massale uitsterving bedreigd. Als je wilt overleven, moet je een 'Thick Wrapper' bouwen.
 
 ## De kwetsbaarheid van de dunne verpakking

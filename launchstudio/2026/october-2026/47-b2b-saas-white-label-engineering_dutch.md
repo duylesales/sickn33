@@ -1,12 +1,11 @@
 ---
-Titel: De Agency Groeihack: White-Label Engineering voor Maatwerk AI Apps
-Trefwoorden: White-label engineering, digital agency, custom AI apps, LaunchStudio, Manifera, B2B SaaS, enterprise software, agencies schalen
+Titel: De Agency Groeihack: White-Label Engineering voor Maatwerk AI Apps - AI voor software-engineering
+Trefwoorden: AI voor software-engineering, White-label engineering, digital agency, custom AI apps, LaunchStudio, Manifera, B2B SaaS, enterprise software, agencies schalen
 Koperfase: Beslissing
 Doelpersona: C (Digital Agency Eigenaar)
 ---
 
-# De Agency Groeihack: White-Label Engineering voor Maatwerk AI Apps
-
+# De Agency Groeihack: White-Label Engineering voor Maatwerk AI Apps - AI voor software-engineering
 Als eigenaar van een succesvol digital marketing- of designbureau zit je op een goudmijn. Je hebt diepe, vertrouwde relaties met enterprise-klanten. Je kent hun pijnpunten, hun workflows en hun budgetten.
 
 Recentelijk vragen je klanten om meer dan alleen websites of branding. Ze vragen om maatwerk AI-software. Een logistieke klant wil een AI-tool voor route-optimalisatie. Een advocatenkantoor wil een beveiligd, intern RAG-systeem.

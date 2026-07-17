@@ -1,10 +1,10 @@
 ---
-Titel: Waarom LangChain te zwaar is voor productie
-Trefwoorden: LangChain, Zwaar, Productie
+Titel: Waarom LangChain te zwaar is voor productie - AI om te coderen
+Trefwoorden: AI om te coderen, LangChain, Zwaar, Productie
 Koperfase: overweging
 ---
 
-# Waarom LangChain te zwaar is voor productie
+# Waarom LangChain te zwaar is voor productie - AI om te coderen
 In de begindagen van de AI-boom was **LangChain** de onbetwiste koning. Hiermee kon een junior ontwikkelaar een vectordatabase, een LLM en een webschraper in 15 regels code aan elkaar rijgen. Het was een wonder voor het prototypen. Maar toen deze prototypes zich uitbreidden tot zakelijke B2B-applicaties, werd het wonder een nachtmerrie. In 2026 halen de beste technische teams LangChain actief uit hun productieomgevingen. Dit is de reden waarom extreme abstractie uw AI SaaS kapot maakt.
 
 ## Het 'Black Box'-abstractieprobleem

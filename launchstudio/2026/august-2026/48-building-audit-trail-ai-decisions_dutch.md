@@ -1,10 +1,10 @@
 ---
-Titel: Een audittrail bouwen voor AI-beslissingen
-Trefwoorden: Gebouw, Audit, Trail, AI, Beslissingen
+Titel: Een audittrail bouwen voor AI-beslissingen - AI om te coderen
+Trefwoorden: AI om te coderen, Gebouw, Audit, Trail, AI, Beslissingen
 Koperfase: overweging
 ---
 
-# Een audittrail bouwen voor AI-beslissingen
+# Een audittrail bouwen voor AI-beslissingen - AI om te coderen
 Als traditionele software crasht, kan een ontwikkelaar naar een stacktrace kijken, de exacte regel met falende code vinden en uitleggen waarom de crash plaatsvond. Als een LLM een vals juridisch precedent hallucineert, ligt de verklaring verborgen in miljarden probabilistische neurale gewichten – een ‘Black Box’. Zakelijke klanten, met name in de financiële sector en de gezondheidszorg, kunnen de Black Box-software niet legaal gebruiken. Om aan hen te kunnen verkopen, moet u **Verklaarbaarheid** creëren via strenge audittrails.
 
 ## De anatomie van een AI-logboek

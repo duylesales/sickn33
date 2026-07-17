@@ -1,11 +1,10 @@
 ---
-Titel: Foutopsporing instellen: waarom u Sentry nodig heeft voordat u start
-Trefwoorden: Instelling, Fout, Volgen, Sentry, Voor
+Titel: Foutopsporing instellen: waarom u Sentry nodig heeft voordat u start - Voor jou AI
+Trefwoorden: Voor jou AI, Instelling, Fout, Volgen, Sentry, Voor
 Koperfase: beslissing
 ---
 
-# Foutopsporing instellen: waarom u Sentry nodig heeft voordat u start
-
+# Foutopsporing instellen: waarom u Sentry nodig heeft voordat u start - Voor jou AI
 Een van de gevaarlijkste aannames die technische oprichters maken, is dat ze geloven dat gebruikers hen zullen vertellen wanneer het product kapot gaat. Dat zullen ze niet doen. Wanneer een gebruiker op "Afrekenen" klikt en het scherm leeg wordt, sturen ze geen e-mail naar ondersteuning om de bug uit te leggen. Ze sluiten het tabblad en gaan naar uw concurrent. Het lanceren van een door AI gebouwde app zonder foutopsporing betekent dat u volledig blind vliegt. Dit is de reden waarom het installeren van een tool als Sentry een verplichte pre-lanceringsstap is.
 
 ## Het probleem van stille mislukkingen

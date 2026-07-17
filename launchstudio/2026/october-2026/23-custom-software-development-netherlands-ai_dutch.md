@@ -1,12 +1,11 @@
 ---
-Titel: Maatwerk Software Ontwikkeling in Nederland — Overleven in het AI-Tijdperk
-Trefwoorden: custom software development, maatwerk software, LaunchStudio, Manifera, Nederland, AI coding
+Titel: Maatwerk Software Ontwikkeling in Nederland — Overleven in het AI-Tijdperk - AI en softwareontwikkeling
+Trefwoorden: AI en softwareontwikkeling, custom software development, maatwerk software, LaunchStudio, Manifera, Nederland, AI coding
 Koperfase: Bewustwording
 Doelpersona: C (Bureau / Freelancer - White-Label Partner)
 ---
 
-# Maatwerk Software Ontwikkeling in Nederland — Overleven in het AI-Tijdperk
-
+# Maatwerk Software Ontwikkeling in Nederland — Overleven in het AI-Tijdperk - AI en softwareontwikkeling
 Het afgelopen decennium volgde maatwerk software ontwikkeling (custom software development) in Nederland een voorspelbaar, zeer lucratief script. Een zakelijke klant vroeg om een intern dashboard. Een Nederlands digitaal bureau offreerde €50.000 en een doorlooptijd van 4 maanden. Het bureau bouwde het vanaf nul met React en Node.js, en de klant betaalde.
 
 In 2026 is dat model dood.

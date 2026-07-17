@@ -1,6 +1,6 @@
 ---
-Titel: Marketing van onzichtbare AI-functies
-Trefwoorden: Marketing, Onzichtbaar, AI, Functies
+Titel: Marketing van onzichtbare AI-functies - Day AI
+Trefwoorden: Day AI, Marketing, Onzichtbaar, AI, Functies
 Koperfase: Bewustzijn
 ---
 
