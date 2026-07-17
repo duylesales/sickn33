@@ -1,10 +1,10 @@
 ---
-Titel: Waarom open source AI bedrijfsrisico's vermindert - AI-beveiligingsrisico
+Titel: Waarom open source AI bedrijfsrisico's vermindert
 Trefwoorden: AI-beveiligingsrisico, Open, Bron, AI, Vermindert, Enterprise, Risico
 Koperfase: Bewustzijn
 ---
 
-# Waarom open source AI bedrijfsrisico's vermindert - AI-beveiligingsrisico
+# Waarom open source AI bedrijfsrisico's vermindert
 Het opbouwen van een miljoenenbedrijf uitsluitend bovenop de OpenAI API is als het bouwen van een wolkenkrabber op gehuurd land. Je hebt geen controle over de stichting. Dit staat bekend als ‘platformrisico’. Als de verhuurder besluit de huur te verdubbelen of het bestemmingsplan te wijzigen, stort uw gebouw in. Voor B2B SaaS-startups is het beperken van dit risico verplicht, en de oplossing maakt gebruik van Open Source AI-architectuur.
 
 ## Het gevaar van de Black Box API

@@ -1,10 +1,10 @@
 ---
-Title: Edge Computing for Low Latency AI: Moving the Model Closer to the User - User AI
+Title: Edge Computing for Low Latency AI: Moving the Model Closer to the User
 Keywords: User AI, Edge, Computing, Low, Latency, AI, Moving, Model, Closer, User
 Buyer Stage: Awareness
 ---
 
-# Edge Computing for Low Latency AI: Moving the Model Closer to the User - User AI
+# Edge Computing for Low Latency AI: Moving the Model Closer to the User
 In the world of AI SaaS, perceived speed is everything. If a user asks a question and the UI hangs for four seconds before the first word appears, they will assume the product is broken. A major hidden source of this lag is geography. If your user is in London, your server is in Virginia, and the OpenAI data center is in California, the physical distance the data travels ruins the experience. The solution is the Edge.
 
 ## The Anatomy of AI Latency

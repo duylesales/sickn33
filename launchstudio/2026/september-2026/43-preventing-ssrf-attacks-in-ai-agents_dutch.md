@@ -1,5 +1,5 @@
 ---
-Titel: Server-Side Request Forgery (SSRF) in agenten voorkomen - AI in software-engineering
+Titel: Server-Side Request Forgery (SSRF) in agenten voorkomen
 Trefwoorden: AI in software-engineering, Voorkomen, Server, Kant, Verzoek, Vervalsing, SSRF, Agenten
 Koperfase: Bewustzijn
 ---

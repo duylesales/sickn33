@@ -1,10 +1,10 @@
 ---
-Titel: AI-workflows controleren: een transparant activiteitenlogboek maken - Maak een AI
+Titel: AI-workflows controleren: een transparant activiteitenlogboek maken
 Trefwoorden: Maak een AI, Auditing, AI, Workflows, Creëren, Transparant, Activiteit, Logboek
 Koperfase: overweging
 ---
 
-# AI-workflows controleren: een transparant activiteitenlogboek maken - Maak een AI
+# AI-workflows controleren: een transparant activiteitenlogboek maken
 Wanneer een medewerker een catastrofale fout maakt, roept het management hem of haar naar een kantoor en vraagt: *"Waarom heb je dit gedaan?"* Wanneer een autonome AI-agent een catastrofale fout maakt, kun je hem niet interviewen. Als uw B2B SaaS functioneert als een niet-waarneembare ‘Black Box’, zullen IT-afdelingen van ondernemingen deze verbieden. Om bedrijfsschaal te bereiken, moet uw AI-architectuur een onveranderlijk, op de gebruiker gericht **Activiteitenlogboek** bevatten.
 
 ## Het nalevingsmandaat

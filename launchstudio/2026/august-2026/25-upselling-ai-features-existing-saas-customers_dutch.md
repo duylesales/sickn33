@@ -1,10 +1,10 @@
 ---
-Titel: Upselling van AI-functies aan bestaande SaaS-klanten - AI om te coderen
+Titel: Upselling van AI-functies aan bestaande SaaS-klanten
 Trefwoorden: AI om te coderen, Upselling, AI, Functies, Bestaand, SaaS, Klanten
 Koperfase: Bewustzijn
 ---
 
-# Upselling van AI-functies aan bestaande SaaS-klanten - AI om te coderen
+# Upselling van AI-functies aan bestaande SaaS-klanten
 Als u een gevestigd SaaS-platform beheert, is het integreren van AI een defensieve noodzaak om churn te voorkomen. Omdat het genereren van AI echter grote variabele kosten met zich meebrengt, zal het gratis weggeven van deze functies aan uw gehele gebruikersbestand uw marges vernietigen. U moet met succes inkomsten genereren met de nieuwe mogelijkheden. Hier is het draaiboek voor het upselling van AI aan uw bestaande klanten en het verhogen van uw ARPU (gemiddelde opbrengst per gebruiker).
 
 ## Het debat over 'Add-On' versus 'Tier Upgrade'

@@ -1,5 +1,5 @@
 ---
-Title: How Acme Corp Saved $1M with AI Automation - Code With AI
+Title: How Acme Corp Saved $1M with AI Automation
 Keywords: Code With AI, Acme, Corp, Saved, AI, Automation
 Buyer Stage: Awareness
 ---

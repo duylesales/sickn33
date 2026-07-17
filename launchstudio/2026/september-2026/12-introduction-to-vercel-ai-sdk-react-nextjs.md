@@ -1,10 +1,10 @@
 ---
-Title: Introduction to the Vercel AI SDK - AI To Code
+Title: Introduction to the Vercel AI SDK
 Keywords: AI To Code, Introduction, Vercel, AI, SDK
 Buyer Stage: Awareness
 ---
 
-# Introduction to the Vercel AI SDK - AI To Code
+# Introduction to the Vercel AI SDK
 If you have ever tried to build a ChatGPT clone using raw React, you know the pain. Managing an array of messages is easy, but parsing a raw HTTP stream of Server-Sent Events (SSE), appending the tokens chunk-by-chunk to the React state without causing infinite re-renders, and handling connection dropouts is an absolute nightmare. This is why the **Vercel AI SDK** has become the undisputed industry standard for Javascript developers. It makes streaming AI interfaces effortless.
 
 ## The Magic of `useChat`

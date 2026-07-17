@@ -1,10 +1,10 @@
 ---
-Titel: De val van traditionele contentmarketing - Het beste van AI
+Titel: De val van traditionele contentmarketing
 Trefwoorden: Het beste van AI, herfst, traditioneel, inhoud, marketing
 Koperfase: Bewustzijn
 ---
 
-# De val van traditionele contentmarketing - Het beste van AI
+# De val van traditionele contentmarketing
 In 2018 was contentmarketing een betrouwbare wiskundige vergelijking. U heeft Ahrefs gebruikt om een ​​zoekwoord te vinden met een hoog zoekvolume en weinig concurrentie (bijvoorbeeld 'Beste CRM voor tandartsen'). U betaalde een freelancer $ 150 om een ​​artikel van 2000 woorden te schrijven waarin het onderwerp werd samengevat. Drie maanden later stond u op pagina één en verzamelde u passieve leads. In 2026 is deze strategie dood. Generatieve AI heeft de waarde van informatieve inhoud vernietigd.
 
 ## De informatietsunami en AI-overzichten

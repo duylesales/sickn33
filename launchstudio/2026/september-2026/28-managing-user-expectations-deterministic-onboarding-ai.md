@@ -1,10 +1,10 @@
 ---
-Title: Managing User Expectations with Deterministic Onboarding - User AI
+Title: Managing User Expectations with Deterministic Onboarding
 Keywords: User AI, Managing, User, Expectations, Deterministic, Onboarding
 Buyer Stage: Awareness
 ---
 
-# Managing User Expectations with Deterministic Onboarding - User AI
+# Managing User Expectations with Deterministic Onboarding
 The marketing copy for your AI feature probably says, *"Our AI can do anything."* This is the fastest way to destroy retention. If you promise magic, the user will expect magic. They will ask your specialized B2B agent an incredibly complex, multi-layered question that no LLM on earth can solve. It will hallucinate, and the user will immediately churn. To retain enterprise users, you must design **Deterministic Onboarding** that strictly anchors their expectations.
 
 ## The 'Guaranteed Win' First Session

@@ -1,5 +1,5 @@
 ---
-Titel: 10k gelijktijdige SSE-verbindingen verwerken in Node.js - AI in software-engineering
+Titel: 10k gelijktijdige SSE-verbindingen verwerken in Node.js
 Trefwoorden: AI in software-engineering, afhandeling, gelijktijdig, SSE, verbindingen, knooppunt
 Koperfase: Bewustzijn
 ---

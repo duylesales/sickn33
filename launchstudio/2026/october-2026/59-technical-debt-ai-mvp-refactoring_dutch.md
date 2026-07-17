@@ -1,11 +1,11 @@
 ---
-Titel: De Technische Schuld Tijdbom: Het Refactoren van je No-Code AI MVP - AI no-code
+Titel: De Technische Schuld Tijdbom: Het Refactoren van je No-Code AI MVP
 Trefwoorden: AI no-code, MVP refactoring, technical debt AI, no-code naar custom code, Bubble naar Next.js, AI SaaS schalen, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# De Technische Schuld Tijdbom: Het Refactoren van je No-Code AI MVP - AI no-code
+# De Technische Schuld Tijdbom: Het Refactoren van je No-Code AI MVP
 Als niet-technische oprichter was het bouwen van je AI MVP op een no-code platform (zoals Bubble, Glide of FlutterFlow) de slimste zakelijke beslissing die je ooit hebt genomen. Het stelde je in staat om je idee te testen, je eerste 100 betalende klanten binnen te halen en 'product-market fit' te bewijzen, zonder €50.000 te verspillen aan een freelance development team.
 
 Maar nu heb je een nieuw probleem: je bent succesvol.

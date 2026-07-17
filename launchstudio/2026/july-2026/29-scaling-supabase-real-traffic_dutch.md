@@ -1,5 +1,5 @@
 ---
-Titel: Schalen Supabase: wat u moet doen als uw app echt verkeer krijgt - AI om te coderen
+Titel: Schalen Supabase: wat u moet doen als uw app echt verkeer krijgt
 Trefwoorden: AI om te coderen, Schaalvergroting, Supabase, Traffic
 Koperfase: Bewustzijn
 ---

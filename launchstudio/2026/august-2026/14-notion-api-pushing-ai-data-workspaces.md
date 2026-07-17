@@ -1,10 +1,10 @@
 ---
-Title: Notion API: Pushing AI Data to Workspaces - AI To Code
+Title: Notion API: Pushing AI Data to Workspaces
 Keywords: AI To Code, Notion, API, Pushing, AI, Data, Workspaces
 Buyer Stage: Awareness
 ---
 
-# Notion API: Pushing AI Data to Workspaces - AI To Code
+# Notion API: Pushing AI Data to Workspaces
 A persistent problem with generative AI apps is the "Copy-Paste Dead End." Your AI generates a brilliant, 10-page market research report. The user is thrilled. Then, they have to manually highlight it, copy it, open Notion, create a new page, paste it, and fix the broken formatting. Every manual step reduces the perceived value of your SaaS. The solution is building deep integrations via the Notion API.
 
 ## The Power of 'Push to Workspace'

@@ -1,11 +1,11 @@
 ---
-Titel: De B2B SaaS MVP Features Checklist voor AI-Oprichters - AI om te coderen
+Titel: De B2B SaaS MVP Features Checklist voor AI-Oprichters
 Trefwoorden: AI om te coderen, b2b saas mvp, b2b saas, LaunchStudio, Manifera, AI app, MVP features
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# De B2B SaaS MVP Features Checklist voor AI-Oprichters - AI om te coderen
+# De B2B SaaS MVP Features Checklist voor AI-Oprichters
 Wanneer je als niet-technische oprichter AI-tools zoals Bolt.new of Lovable gebruikt, is het verleidelijk om álles te bouwen. Omdat het genereren van een nieuw dashboard slechts een simpele tekstprompt vereist, overladen AI-oprichters hun applicaties vaak met overbodige features.
 
 In de B2B SaaS-wereld is "feature bloat" (te veel functies) de vijand van een succesvolle lancering. Als je drie maanden besteedt aan het prompten van 40 verschillende features, verspil je tijd. Een Minimum Viable Product (MVP) moet exact één ding ongelooflijk goed doen, verpakt in de fundamentele infrastructuur die nodig is om er geld voor te vragen.

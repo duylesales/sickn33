@@ -1,10 +1,10 @@
 ---
-Title: Why the EU AI Act Matters for US Startups - AI For Coding
+Title: Why the EU AI Act Matters for US Startups
 Keywords: AI For Coding, EU, AI, Act, Matters, Startups
 Buyer Stage: Awareness
 ---
 
-# Why the EU AI Act Matters for US Startups - AI For Coding
+# Why the EU AI Act Matters for US Startups
 Many US-based founders view European regulations as somebody else's problem. They assume their Silicon Valley SaaS is exempt from the bureaucratic reach of Brussels. This assumption is mathematically dangerous. The **EU AI Act** has "extraterritorial effect"—if a single user from Berlin logs into your AI application, you are subject to the law. With fines reaching up to 7% of global turnover, understanding the EU AI Act is mandatory for survival.
 
 ## The Risk-Based Classification System

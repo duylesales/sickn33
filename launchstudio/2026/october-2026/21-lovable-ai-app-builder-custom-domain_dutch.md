@@ -1,11 +1,11 @@
 ---
-Titel: Lovable AI — Van Sandbox naar Custom Domain - AI om te coderen
+Titel: AI om te coderen gebruiken met Lovable — Van Sandbox naar Custom Domain
 Trefwoorden: AI om te coderen, lovable AI, lovable app builder, LaunchStudio, Manifera, AI app, custom domain
-Koperfase: Overweging
+Koperfase: Beslissing
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# Lovable AI — Van Sandbox naar Custom Domain - AI om te coderen
+# AI om te coderen gebruiken met Lovable — Van Sandbox naar Custom Domain
 Je hebt het hele weekend geprompt in de Lovable AI app builder. Het resultaat is spectaculair. Je hebt een strak dashboard, een werkende dark mode en interactieve grafieken die perfect aansluiten bij je visie.
 
 Maar op dit moment leeft je meesterwerk op een URL die lijkt op `preview-xyz123.lovable.app`.

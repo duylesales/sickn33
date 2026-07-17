@@ -1,10 +1,10 @@
 ---
-Titel: Hoe u weet of uw door AI gebouwde MVP klaar is voor echte gebruikers - AI om te coderen
+Titel: Hoe u weet of uw door AI gebouwde MVP klaar is voor echte gebruikers
 Trefwoorden: AI om te coderen, Klaar, Gebruikers
 Koperfase: overweging
 ---
 
-# Hoe u weet of uw door AI gebouwde MVP klaar is voor echte gebruikers - AI om te coderen
+# Hoe u weet of uw door AI gebouwde MVP klaar is voor echte gebruikers
 Je door AI gebouwde MVP is klaar voor echte gebruikers als hij zeven concrete tests doorstaat: een vreemde kan zonder hulp je kernactie uitvoeren, je gebruikersgegevens zijn beschermd door de juiste beveiligingsmaatregelen, fouten worden netjes afgehandeld, de app laadt snel op mobiel, betalingen werken met echt geld (indien van toepassing), het draait op je eigen domein met HTTPS en je hebt een manier om te weten wanneer er iets kapot gaat. Als een van deze tests mislukt, is uw product nog steeds een prototype en geen lanceerbaar AI-product.
 
 De moeilijkste beslissing voor AI-native oprichters is weten wanneer ze moeten stoppen met het bouwen van functies en beginnen met het accepteren van gebruikers. Bouw te lang en je verspilt tijd aan functies die niemand wil. Als u te vroeg lanceert, stelt u gebruikers bloot aan bugs, beveiligingsrisico's en een slechte ervaring die hun perceptie van uw product permanent schaadt. Deze gids geeft u de concrete, toetsbare criteria voor het nemen van die beslissing.

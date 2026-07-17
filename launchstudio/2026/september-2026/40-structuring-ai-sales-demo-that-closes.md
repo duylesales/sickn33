@@ -1,10 +1,10 @@
 ---
-Title: Structuring an AI Sales Demo That Closes - Build An App With AI
+Title: Structuring an AI Sales Demo That Closes
 Keywords: Build An App With AI, Structuring, AI, Sales, Demo, Closes
 Buyer Stage: Awareness
 ---
 
-# Structuring an AI Sales Demo That Closes - Build An App With AI
+# Structuring an AI Sales Demo That Closes
 Technical founders are terrible at sales because they love their product too much. When they get a Fortune 500 Director on a Zoom call, they spend 30 minutes enthusiastically explaining how their RAG pipeline tokenizes PDFs. The Director smiles, nods, and never replies to the follow-up email. Enterprise buyers do not buy algorithms; they buy business outcomes. Here is the psychological framework for an AI sales demo that actually closes contracts.
 
 ## Phase 1: Anchoring the Pain (The Before State)

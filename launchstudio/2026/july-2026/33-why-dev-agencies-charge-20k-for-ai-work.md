@@ -1,10 +1,10 @@
 ---
-Title: Why Dev Agencies Charge €20k for What AI Does in a Weekend - AI For Coding
+Title: Why Dev Agencies Charge €20k for What AI Does in a Weekend
 Keywords: AI For Coding, Agencies, Charge, Weekend
 Buyer Stage: Awareness
 ---
 
-# Why Dev Agencies Charge €20k for What AI Does in a Weekend - AI For Coding
+# Why Dev Agencies Charge €20k for What AI Does in a Weekend
 If you pitched a SaaS idea to a development agency in 2023, you likely received a quote between €20,000 and €50,000, with a timeline of 3 to 6 months. Today, you can sign up for Lovable for $20 and build a functional prototype of that exact same idea over a weekend. Are agencies running a scam, or is the AI missing something critical? The answer lies in the shifting economics of software boilerplate.
 
 ## The Cost of Human Boilerplate

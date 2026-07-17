@@ -1,10 +1,10 @@
 ---
-Title: Do I Need a Custom Backend for My AI Startup? - AI For Coding
+Title: Do I Need a Custom Backend for My AI Startup?
 Keywords: AI For Coding, Custom, Backend, Startup
 Buyer Stage: Awareness
 ---
 
-# Do I Need a Custom Backend for My AI Startup? - AI For Coding
+# Do I Need a Custom Backend for My AI Startup?
 If you used Lovable, Bolt, or Cursor to build your MVP, you likely have a "serverless" application. There is a frontend (React), a database (Supabase), but no traditional backend server running Node.js or Python. For many first-time technical founders, this feels wrong. "Don't I need a backend?" The short answer is: probably not. The serverless architecture is more than capable for 95% of AI startups, but understanding its limits is crucial before you launch.
 
 ## The Traditional vs. Serverless Architecture

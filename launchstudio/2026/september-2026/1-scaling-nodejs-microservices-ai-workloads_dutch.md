@@ -1,10 +1,10 @@
 ---
-Titel: Node.js-microservices schalen voor AI-workloads - AI om te coderen
+Titel: Node.js-microservices schalen voor AI-workloads
 Trefwoorden: AI om te coderen, Schalen, Knooppunt, Microservices, AI, Workloads
 Koperfase: Bewustzijn
 ---
 
-# Node.js-microservices schalen voor AI-workloads - AI om te coderen
+# Node.js-microservices schalen voor AI-workloads
 Node.js is de ruggengraat van het moderne web. De asynchrone, gebeurtenisgestuurde architectuur maakt het ongeëvenaard in het verwerken van duizenden gelijktijdige webverzoeken. Wanneer B2B-startups echter generatieve AI in hun Node-backends injecteren, valt de architectuur uiteen. AI introduceert enorme, synchrone CPU-knelpunten. Als u uw Node.js-microservices niet opnieuw ontwerpt voor AI-workloads, zal uw app last hebben van catastrofale latentiepieken en servercrashes onder belasting.
 
 ## De valstrik met één draad

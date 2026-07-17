@@ -1,10 +1,10 @@
 ---
-Titel: Laad het testen van uw AI-agentarchitectuur - Bouw uw AI
+Titel: Laad het testen van uw AI-agentarchitectuur
 Trefwoorden: Bouw uw AI, Belasting, Testen, AI, Agent, Architectuur
 Koperfase: Bewustzijn
 ---
 
-# Laad het testen van uw AI-agentarchitectuur - Bouw uw AI
+# Laad het testen van uw AI-agentarchitectuur
 Uw RAG-pijplijn werkt feilloos als u deze lokaal test. Het genereert een briljant antwoord in 3 seconden. Vervolgens lanceert u uw B2B SaaS op Product Hunt. 500 gebruikers loggen tegelijkertijd in en klikken op 'Genereren'. Uw backend gooit onmiddellijk een muur van '429 Too Many Requests'-fouten op, de server heeft onvoldoende geheugen en uw app gaat offline. Het schalen van AI verschilt fundamenteel van het schalen van een traditionele web-app, omdat uw voornaamste knelpunt een API van derden is.
 
 ## De tarieflimiet-lawine

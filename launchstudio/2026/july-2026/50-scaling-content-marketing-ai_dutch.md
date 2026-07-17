@@ -1,10 +1,10 @@
 ---
-Titel: Contentmarketing opschalen met AI: het spamfilter vermijden - Coderen met AI
+Titel: Contentmarketing opschalen met AI: het spamfilter vermijden
 Trefwoorden: Coderen met AI, Schalen, Inhoud, Marketing, Vermijden, Filter
 Koperfase: Bewustzijn
 ---
 
-# Contentmarketing opschalen met AI: het spamfilter vermijden - Coderen met AI
+# Contentmarketing opschalen met AI: het spamfilter vermijden
 Contentmarketing is de levensader van de SaaS-groei. In het verleden betekende het opschalen van een blog het inhuren van een leger freelanceschrijvers. Tegenwoordig kan een AI-model in vier seconden een artikel van 2000 woorden genereren. De verleiding is groot om het hele proces te automatiseren en 100 artikelen per dag te publiceren. Doe dit en Google zal uw domein vernietigen. Hier leest u hoe u AI kunt gebruiken om uw contentmarketing veilig en effectief te schalen.
 
 ## De dreiging: het algoritme voor 'nuttige inhoud'

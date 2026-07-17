@@ -1,10 +1,10 @@
 ---
-Title: The Memory Leak Threat in LLM Streaming - AI In Software Engineering
+Title: The Memory Leak Threat in LLM Streaming
 Keywords: AI In Software Engineering, Memory, Leak, Threat, LLM, Streaming
 Buyer Stage: Awareness
 ---
 
-# The Memory Leak Threat in LLM Streaming - AI In Software Engineering
+# The Memory Leak Threat in LLM Streaming
 One of the most insidious threats to a B2B AI application is not a catastrophic crash, but a slow, silent death. You deploy your Node.js backend. It runs perfectly for 12 hours. Then, at 2:00 PM, the server randomly crashes with a `JavaScript heap out of memory` error. You reboot it. It runs fine for another 12 hours, then crashes again. You are the victim of a Memory Leak, and in the world of LLM streaming, they are notoriously easy to create and devastatingly hard to find.
 
 ## The Mechanics of a Streaming Leak

@@ -1,11 +1,11 @@
 ---
-Title: Beyond Chatbots: Building Autonomous AI Agents for B2B SaaS - AI For Coding
+Title: Beyond Chatbots: Building Autonomous AI Agents for B2B SaaS
 Keywords: AI For Coding, AI agent, autonomous AI, B2B SaaS, LaunchStudio, Manifera, custom software development, AI automation, LangChain
 Buyer Stage: Awareness
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---
 
-# Beyond Chatbots: Building Autonomous AI Agents for B2B SaaS - AI For Coding
+# Beyond Chatbots: Building Autonomous AI Agents for B2B SaaS
 If your AI SaaS is just a text box where a user types a prompt and receives a response, you are already behind. 
 
 The first wave of generative AI was about *answering*. The second wave—which we are in right now—is about *doing*. B2B enterprise clients no longer want to chat with an AI; they want to hire an **AI Agent**. They want a system that can log into their CRM, read an angry client email, determine the necessary discount, draft a response, and schedule a follow-up task—all without human intervention.

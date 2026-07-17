@@ -1,10 +1,10 @@
 ---
-Title: Navigating the EU AI Act: What SaaS Founders Must Know in 2026 - AI In Saas
+Title: Navigating the EU AI Act: What SaaS Founders Must Know in 2026
 Keywords: AI In Saas, Navigating, Founders
 Buyer Stage: Awareness
 ---
 
-# Navigating the EU AI Act: What SaaS Founders Must Know in 2026 - AI In Saas
+# Navigating the EU AI Act: What SaaS Founders Must Know in 2026
 For the first few years of the AI boom, startups operated in the Wild West. You could launch an AI resume screener or a predictive credit modeling tool over a weekend without a second thought. That era ended with the enforcement of the **European Union Artificial Intelligence Act (AI Act)**. Just as GDPR revolutionized data privacy, the AI Act is rewriting the rules for software development globally. Here is what every AI founder must know to avoid devastating fines.
 
 ## The Extraterritorial Reach

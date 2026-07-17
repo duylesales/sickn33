@@ -1,5 +1,5 @@
 ---
-Titel: Multimodale AI-workflows: tekst, afbeeldingen en audio combineren in SaaS - AI in SaaS
+Titel: Multimodale AI-workflows: tekst, afbeeldingen en audio combineren in SaaS
 Trefwoorden: AI in SaaS, MultiModaal, Workflows, Combineren, Beeld, Audio
 Koperfase: Bewustzijn
 ---

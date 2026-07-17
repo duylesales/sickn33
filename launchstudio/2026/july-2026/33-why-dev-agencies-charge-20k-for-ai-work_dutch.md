@@ -1,5 +1,5 @@
 ---
-Titel: Waarom ontwikkelaarsbureaus €20.000 vragen voor wat AI in een weekend doet - AI om te coderen
+Titel: Waarom ontwikkelaarsbureaus €20.000 vragen voor wat AI in een weekend doet
 Trefwoorden: AI om te coderen, Agentschappen, Charge, Weekend
 Koperfase: Bewustzijn
 ---

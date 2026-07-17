@@ -1,10 +1,10 @@
 ---
-Titel: Een verhaal over twee lanceringen: waarom deze AI-oprichter het twee keer moest proberen - AI om te coderen
+Titel: Een verhaal over twee lanceringen: waarom deze AI-oprichter het twee keer moest proberen
 Trefwoorden: AI om te coderen, lanceringen, oprichter, tweemaal
 Koperfase: beslissing
 ---
 
-# Een verhaal over twee lanceringen: waarom deze AI-oprichter het twee keer moest proberen - AI om te coderen
+# Een verhaal over twee lanceringen: waarom deze AI-oprichter het twee keer moest proberen
 Een product bouwen was nog nooit zo eenvoudig; Het starten van een bedrijf is nog nooit zo gevaarlijk geweest. Dit is het waargebeurde verhaal van Marcus, een domeinexpert in onroerend goed, die een AI-bouwer gebruikte om een ​​revolutionaire tool voor vastgoedbeheer te creëren. Zijn eerste lancering was een catastrofale mislukking die bijna het einde van zijn bedrijf betekende. Zijn tweede lancering, twee weken later, zette hem op weg naar een MRR van $10.000. Hier leest u wat er mis ging en hoe hij het heeft opgelost.
 
 ## Lancering 1: De 'Big Bang'-ramp

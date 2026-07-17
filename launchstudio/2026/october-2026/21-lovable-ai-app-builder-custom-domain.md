@@ -1,11 +1,11 @@
 ---
-Title: Lovable AI — From Sandbox to Custom Domain - AI To Code
+Title: Using AI To Code with Lovable — From Sandbox to Custom Domain
 Keywords: AI To Code, lovable AI, lovable app builder, LaunchStudio, Manifera, AI app, custom domain
-Buyer Stage: Consideration
+Buyer Stage: Decision
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---
 
-# Lovable AI — From Sandbox to Custom Domain - AI To Code
+# Using AI To Code with Lovable — From Sandbox to Custom Domain
 You just spent the weekend prompting the Lovable AI app builder. The result is spectacular. You have a sleek dashboard, a functioning dark mode, and interactive charts that perfectly match the vision in your head. 
 
 But right now, your masterpiece lives on a URL that looks something like `preview-xyz123.lovable.app`. 

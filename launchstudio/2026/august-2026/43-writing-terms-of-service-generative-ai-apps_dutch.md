@@ -1,10 +1,10 @@
 ---
-Titel: Servicevoorwaarden schrijven voor generatieve AI-apps - AI om te coderen
+Titel: Servicevoorwaarden schrijven voor generatieve AI-apps
 Trefwoorden: AI om te coderen, Schrijven, Voorwaarden, Service, Generatief, AI, Apps
 Koperfase: Bewustzijn
 ---
 
-# Servicevoorwaarden schrijven voor generatieve AI-apps - AI om te coderen
+# Servicevoorwaarden schrijven voor generatieve AI-apps
 Voor de meeste oprichters met een bootstrap zijn de Servicevoorwaarden (ToS) een gekopieerd en geplakt bijzaak. In traditionele SaaS is dit riskant. In generatieve AI is het catastrofaal. AI introduceert nieuwe juridische aansprakelijkheden: hallucinaties die financiële schade veroorzaken, het genereren van illegale deepfakes en enorme dubbelzinnigheden over auteursrechten. Uw ToS is uw enige schild. Hier leest u hoe u het kunt ontwerpen voor een AI-startup.
 
 ## De disclaimer van hallucinaties

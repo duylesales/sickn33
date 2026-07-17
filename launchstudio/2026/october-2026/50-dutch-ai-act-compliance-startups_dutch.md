@@ -1,11 +1,11 @@
 ---
-Titel: Coderen voor de Wet: EU AI Act Compliance Overleven - AI voor software-engineering
+Titel: Coderen voor de Wet: EU AI Act Compliance Overleven
 Trefwoorden: AI voor software-engineering, EU AI Act compliance, AI wetgeving, Nederlandse AI startups, LaunchStudio, Manifera, B2B SaaS compliance, AI transparantie
 Koperfase: Beslissing
 Doelpersona: D (SaaS Founder Scale-Up)
 ---
 
-# Coderen voor de Wet: EU AI Act Compliance Overleven - AI voor software-engineering
+# Coderen voor de Wet: EU AI Act Compliance Overleven
 Het "Wilde Westen" van Artificial Intelligence in Europa is officieel voorbij.
 
 De Europese Unie heeft de **EU AI Act** aangenomen, en dit stuurt schokgolven door het Nederlandse startup ecosysteem. Jarenlang konden oprichters in sneltreinvaart innoveren en blindelings OpenAI API's in hun apps pluggen, zonder ook maar één seconde na te denken over data governance of algoritmische transparantie.

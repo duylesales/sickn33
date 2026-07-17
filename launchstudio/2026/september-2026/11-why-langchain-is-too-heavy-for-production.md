@@ -1,10 +1,10 @@
 ---
-Title: Why LangChain is Too Heavy for Production - AI For Coding
+Title: Why LangChain is Too Heavy for Production
 Keywords: AI For Coding, LangChain, Heavy, Production
 Buyer Stage: Consideration
 ---
 
-# Why LangChain is Too Heavy for Production - AI For Coding
+# Why LangChain is Too Heavy for Production
 In the early days of the AI boom, **LangChain** was the undisputed king. It allowed a junior developer to string together a Vector Database, an LLM, and a web scraper in 15 lines of code. It was a miracle for prototyping. But as those prototypes scaled into enterprise B2B applications, the miracle became a nightmare. In 2026, top engineering teams are actively ripping LangChain out of their production environments. Here is why extreme abstraction is killing your AI SaaS.
 
 ## The 'Black Box' Abstraction Problem

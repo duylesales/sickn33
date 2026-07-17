@@ -1,10 +1,10 @@
 ---
-Titel: De psychologie van het verkopen van AI aan ondernemingen - AI om te coderen
+Titel: De psychologie van het verkopen van AI aan ondernemingen
 Trefwoorden: AI om te coderen, psychologie, verkopen, AI, ondernemingen
 Koperfase: Bewustzijn
 ---
 
-# De psychologie van het verkopen van AI aan ondernemingen - AI om te coderen
+# De psychologie van het verkopen van AI aan ondernemingen
 Voor het verkopen van een AI-tool van $ 20/maand aan een freelancer is een flitsende landingspagina vereist. Het verkopen van een AI-contract ter waarde van €50.000 per jaar aan een Fortune 500-bedrijf vereist een diepgaand inzicht in de bedrijfspsychologie. Zakelijke kopers – Chief Information Officers (CIO’s) en Chief Information Security Officers (CISO’s) – geven niets om het aantal parameters, contextvensters of hoe cool uw LLM is. Ze geven om risico, compliance en aantoonbare ROI. Hier leest u hoe u uw AI-startup kunt positioneren voor zakelijke verkoop.
 
 ## Stop met het verkopen van 'AI', begin met het verkopen van 'workflows'

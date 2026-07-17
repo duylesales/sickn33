@@ -1,10 +1,10 @@
 ---
-Titel: Gegevensprivacy in het tijdperk van LLM's: gebruikersgegevens beschermen tegen de AI - Gebruikers-AI
+Titel: Gegevensprivacy in het tijdperk van LLM's: gebruikersgegevens beschermen tegen de AI
 Trefwoorden: Gebruikers-AI, Privacy, Beschermen
 Koperfase: Bewustzijn
 ---
 
-# Gegevensprivacy in het tijdperk van LLM's: gebruikersgegevens beschermen tegen de AI - Gebruikers-AI
+# Gegevensprivacy in het tijdperk van LLM's: gebruikersgegevens beschermen tegen de AI
 Vroeger was gegevensprivacy eenvoudig: versleutel de database, dwing sterke wachtwoorden af en verkoop geen e-mails aan derden. Generatieve AI heeft dat paradigma doorbroken. Wanneer u een AI-wrapper bouwt, neemt u de meest gevoelige gegevens van uw gebruiker over en draagt ​​u deze over aan een supercomputer van derden (OpenAI, Anthropic). Als u deze pijpleiding verkeerd gebruikt, wordt u geconfronteerd met catastrofale wettelijke aansprakelijkheid. Hier ziet u hoe de moderne SaaS-oprichters AI-privacy ontwerpen.
 
 ## Het dreigingsmodel: de API van derden

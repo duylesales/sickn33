@@ -1,10 +1,10 @@
 ---
-Titel: Vertrouwen opbouwen met de gebruikersinterface voor citaten en herkomst - AI en softwareontwikkeling
+Titel: Vertrouwen opbouwen met de gebruikersinterface voor citaten en herkomst
 Trefwoorden: AI en softwareontwikkeling, Gebouw, Vertrouwen, Citaat, Herkomst, UI
 Koperfase: Bewustzijn
 ---
 
-# Vertrouwen opbouwen met de gebruikersinterface voor citaten en herkomst - AI en softwareontwikkeling
+# Vertrouwen opbouwen met de gebruikersinterface voor citaten en herkomst
 De barrière voor de adoptie van AI in ondernemingen is niet intelligentie; het is vertrouwen. Wanneer een accountant een rekenmachine gebruikt om twee getallen te vermenigvuldigen, vertrouwt hij impliciet op het resultaat. Wanneer een accountant een LLM gebruikt om een ​​financieel rapport samen te vatten, koestert hij een diep wantrouwen. Omdat bekend is dat LLM's hallucineren, zullen zakelijke gebruikers niet handelen op basis van door AI gegenereerde gegevens, tenzij ze deze kunnen verifiëren. Als uw B2B SaaS niet over een robuuste **Citation and Provenance UI** beschikt, zal deze gaan draaien.
 
 ## Het belang van de herkomst van gegevens

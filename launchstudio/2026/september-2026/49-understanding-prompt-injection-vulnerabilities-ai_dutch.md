@@ -1,10 +1,10 @@
 ---
-Titel: Kwetsbaarheden bij snelle injectie begrijpen - AI-beveiligingskwetsbaarheden
+Titel: Kwetsbaarheden bij snelle injectie begrijpen
 Trefwoorden: AI-beveiligingskwetsbaarheden, begrip, prompt, injectie, kwetsbaarheden
 Koperfase: Bewustzijn
 ---
 
-# Kwetsbaarheden bij snelle injectie begrijpen - AI-beveiligingskwetsbaarheden
+# Kwetsbaarheden bij snelle injectie begrijpen
 Aan het begin van de jaren 2000 was de grootste bedreiging voor webapplicaties de SQL-injectie: hackers die kwaadaardige code in een zoekvak invoerden om databases te verwijderen. Tegenwoordig is **Prompt Injection** de grootste bedreiging voor AI-toepassingen. Omdat grote taalmodellen taal verwerken in plaats van strikte code, zijn ze ongelooflijk gevoelig voor manipulatie. Het begrijpen van deze kwetsbaarheid is de eerste stap bij het verdedigen van uw bedrijfsarchitectuur.
 
 ## De kernfout: vervaging van instructies en gegevens

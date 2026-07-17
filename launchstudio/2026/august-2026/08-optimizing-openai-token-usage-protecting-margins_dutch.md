@@ -1,5 +1,5 @@
 ---
-Titel: Het gebruik van OpenAI-tokens optimaliseren: uw SaaS-marges beschermen - AI SaaS
+Titel: Het gebruik van OpenAI-tokens optimaliseren: uw SaaS-marges beschermen
 Trefwoorden: AI SaaS, Optimaliseren, OpenAI, Token, Gebruik, Beschermen, SaaS, Marges
 Koperfase: Bewustzijn
 ---

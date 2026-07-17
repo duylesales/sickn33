@@ -1,10 +1,10 @@
 ---
-Title: Data Masking and PII Redaction for LLMs - AI For Coding
+Title: Data Masking and PII Redaction for LLMs
 Keywords: AI For Coding, Data, Masking, PII, Redaction, LLMs
 Buyer Stage: Awareness
 ---
 
-# Data Masking and PII Redaction for LLMs - AI For Coding
+# Data Masking and PII Redaction for LLMs
 If your AI startup processes medical records, legal contracts, or financial data, sending raw text to a third-party LLM API (like OpenAI or Anthropic) is a massive compliance violation. Under GDPR, CCPA, and HIPAA, transmitting Personally Identifiable Information (PII) to unverified external servers carries catastrophic fines. To sell AI to regulated industries, you must architect an impenetrable **Data Masking Pipeline**.
 
 ## The Mechanics of Real-Time Redaction

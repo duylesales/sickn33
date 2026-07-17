@@ -1,5 +1,5 @@
 ---
-Titel: De bedreiging voor geheugenlekken in LLM-streaming - AI in software-engineering
+Titel: De bedreiging voor geheugenlekken in LLM-streaming
 Trefwoorden: AI in software-engineering, geheugen, lek, bedreiging, LLM, streaming
 Koperfase: Bewustzijn
 ---

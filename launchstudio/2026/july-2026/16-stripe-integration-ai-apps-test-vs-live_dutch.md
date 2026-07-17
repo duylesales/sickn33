@@ -1,10 +1,10 @@
 ---
-Titel: Stripe-integratie voor AI-apps: testmodus versus live-modus - AI om te coderen
+Titel: Stripe-integratie voor AI-apps: testmodus versus live-modus
 Trefwoorden: AI om te coderen, Streep, Integratie
 Koperfase: Bewustzijn
 ---
 
-# Stripe-integratie voor AI-apps: testmodus versus live-modus - AI om te coderen
+# Stripe-integratie voor AI-apps: testmodus versus live-modus
 Wanneer u een AI-bouwer zoals Lovable of Cursor vraagt om "Stripe-betalingen toe te voegen", genereert dit een testmodus-integratie. Het ziet er echt uit, het afrekenvenster wordt geopend en de succespagina wordt weergegeven, maar het kan geen echt geld verwerken. De overgang van een prototype in testmodus naar een live, productieklare Stripe-integratie is een van de meest kritische stappen vóór de lancering. Hier is de technische routekaart om die brug veilig over te steken.
 
 ## Waarom AI-bouwers stoppen bij de testmodus

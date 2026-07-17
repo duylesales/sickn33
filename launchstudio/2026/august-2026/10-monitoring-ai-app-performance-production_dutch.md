@@ -1,5 +1,5 @@
 ---
-Titel: De prestaties van AI-apps in productie monitoren - AI in app
+Titel: De prestaties van AI-apps in productie monitoren
 Trefwoorden: AI in app, Monitoring, AI, App, Prestaties, Productie
 Koperfase: overweging
 ---

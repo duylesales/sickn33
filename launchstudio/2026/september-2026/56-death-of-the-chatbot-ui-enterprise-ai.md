@@ -1,10 +1,10 @@
 ---
-Title: The Death of the 'Chatbot' UI - Best Of AI
+Title: The Death of the 'Chatbot' UI
 Keywords: Best Of AI, Death, Chatbot, UI
 Buyer Stage: Awareness
 ---
 
-# The Death of the 'Chatbot' UI - Best Of AI
+# The Death of the 'Chatbot' UI
 In 2023, every B2B SaaS company copy-pasted the ChatGPT UI into their application. They added a little "Sparkle" icon to the bottom right of the screen, opened a blank chat box, and expected their users to magically become prompt engineers. It failed. The engagement metrics on these embedded chatbots are abysmal. Enterprise users do not want to talk to their software; they want their software to do the work. The era of the blank chat box is over.
 
 ## The Cognitive Load of the Blank Page

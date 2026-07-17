@@ -1,10 +1,10 @@
 ---
-Title: Building in Public: How to Use Twitter/X to Launch Your AI Startup - Use AI To Generate Code
+Title: Building in Public: How to Use Twitter/X to Launch Your AI Startup
 Keywords: Use AI To Generate Code, Building, Public, TwitterX, Launch, Startup
 Buyer Stage: Consideration
 ---
 
-# Building in Public: How to Use Twitter/X to Launch Your AI Startup - Use AI To Generate Code
+# Building in Public: How to Use Twitter/X to Launch Your AI Startup
 If you build a SaaS product in a vacuum, launch it on a Tuesday, and expect the world to care, you will be met with deafening silence. The modern playbook for solo founders requires you to build an audience simultaneously with your product. The most effective framework for doing this is "Building in Public" (BIP) on Twitter/X. Here is how to use radical transparency to generate a waitlist before you write a single line of code.
 
 ## The Psychology of Building in Public

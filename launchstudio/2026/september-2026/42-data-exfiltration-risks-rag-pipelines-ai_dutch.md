@@ -1,5 +1,5 @@
 ---
-Titel: Risico's van gegevensexfiltratie in RAG-pijpleidingen - AI in software-engineering
+Titel: Risico's van gegevensexfiltratie in RAG-pijpleidingen
 Trefwoorden: AI in software-engineering, Data, Exfiltratie, Risico's, RAG, Pijpleidingen
 Koperfase: Bewustzijn
 ---

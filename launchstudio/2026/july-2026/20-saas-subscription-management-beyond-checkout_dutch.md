@@ -1,5 +1,5 @@
 ---
-Titel: SaaS-abonnementsbeheer: voorbij de afrekenknop - AI SaaS
+Titel: SaaS-abonnementsbeheer: voorbij de afrekenknop
 Trefwoorden: AI SaaS, Abonnement, Beheer, Verder, Afrekenen, Knop
 Koperfase: Bewustzijn
 ---

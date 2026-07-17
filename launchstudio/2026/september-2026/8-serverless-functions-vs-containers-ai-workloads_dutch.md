@@ -1,10 +1,10 @@
 ---
-Titel: Serverloze functies versus langlopende containers voor AI - AI om te coderen
+Titel: Serverloze functies versus langlopende containers voor AI
 Trefwoorden: AI om te coderen, Serverloos, Functies, Lang, Actief, Containers, AI
 Koperfase: overweging
 ---
 
-# Serverloze functies versus langlopende containers voor AI - AI om te coderen
+# Serverloze functies versus langlopende containers voor AI
 De afgelopen vijf jaar was de standaardimplementatiearchitectuur voor SaaS-startups Serverloos (Vercel, AWS Lambda, Netlify). Het bood oneindige schaalbaarheid en nul DevOps. Maar generatieve AI overtreedt fundamenteel de regels van serverloos computergebruik. AI-workloads zijn langzaam, geheugenintensief en vereisen permanente verbindingen. Als u standaard Serverless gebruikt voor een zware AI-toepassing, krijgt u te maken met time-outcrashes, geheugenlimieten en enorme latentiepieken.
 
 ## De time-outval van serverloos

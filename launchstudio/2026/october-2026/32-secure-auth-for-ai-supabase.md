@@ -1,11 +1,11 @@
 ---
-Title: Beyond the Login Screen: Secure Authentication for AI Apps using Supabase - AI For Coding
+Title: Beyond the Login Screen: Secure Authentication for AI Apps using Supabase
 Keywords: AI For Coding, secure auth, supabase authentication, AI SaaS, LaunchStudio, Manifera, Row Level Security, B2B SaaS security
 Buyer Stage: Decision
 Target Persona: B (Technical Solo Founder)
 ---
 
-# Beyond the Login Screen: Secure Authentication for AI Apps using Supabase - AI For Coding
+# Beyond the Login Screen: Secure Authentication for AI Apps using Supabase
 If you are a technical solo founder building an AI application in 2026, you probably aren't writing your own authentication system from scratch. You are using a Backend-as-a-Service (BaaS) like Supabase. 
 
 Setting up the initial login screen with Supabase Auth takes about five minutes. It handles the JSON Web Tokens (JWTs), the OAuth providers (Google, GitHub), and the magic links. But many solo developers make a fatal assumption: they believe that because a user has successfully logged in, the application is secure. 

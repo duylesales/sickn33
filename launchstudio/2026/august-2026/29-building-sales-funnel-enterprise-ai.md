@@ -1,10 +1,10 @@
 ---
-Title: Building a Sales Funnel for Enterprise AI Software - AI For Software Engineering
+Title: Building a Sales Funnel for Enterprise AI Software
 Keywords: AI For Software Engineering, Building, Sales, Funnel, Enterprise, AI, Software
 Buyer Stage: Awareness
 ---
 
-# Building a Sales Funnel for Enterprise AI Software - AI For Software Engineering
+# Building a Sales Funnel for Enterprise AI Software
 Self-serve SaaS ("Product-Led Growth") works brilliantly when you are selling a $29/month AI image generator to freelancers. It fails spectacularly when you are selling a $50,000/year autonomous data extraction pipeline to a multinational logistics firm. Enterprise sales require a fundamentally different architecture: Sales-Led Growth. Here is how to build a B2B AI sales funnel that converts massive contracts.
 
 ## The 'Book a Demo' Gateway

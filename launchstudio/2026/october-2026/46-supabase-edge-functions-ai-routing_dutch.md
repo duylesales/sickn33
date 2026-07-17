@@ -1,11 +1,11 @@
 ---
-Titel: De Tussenpersoon: Je AI App Beveiligen met Supabase Edge Functions - Bouw een app met AI
+Titel: De Tussenpersoon: Je AI App Beveiligen met Supabase Edge Functions
 Trefwoorden: Bouw een app met AI, Supabase Edge Functions, LLM routing, AI beveiliging, custom backend, LaunchStudio, Manifera, API key security, Next.js
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# De Tussenpersoon: Je AI App Beveiligen met Supabase Edge Functions - Bouw een app met AI
+# De Tussenpersoon: Je AI App Beveiligen met Supabase Edge Functions
 Wanneer technische solo-oprichters hun eerste AI-app bouwen met Next.js, is de architectuur vaak angstaanjagend simpel. Ze plaatsen een tekstvak in de frontend, pakken de tekst van de gebruiker, en sturen deze rechtstreeks naar de OpenAI API met een sleutel die is opgeslagen in een `.env.local` bestand.
 
 Deze "direct-naar-frontend" architectuur werkt perfect op je eigen laptop (localhost). Maar zodra je de app live zet, overhandig je in feite je creditcard aan het hele internet.

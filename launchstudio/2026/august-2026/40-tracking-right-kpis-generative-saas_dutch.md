@@ -1,10 +1,10 @@
 ---
-Titel: Het volgen van de juiste KPI's voor generatieve SaaS - AI om te coderen
+Titel: Het volgen van de juiste KPI's voor generatieve SaaS
 Trefwoorden: AI om te coderen, Tracking, Rechts, KPI's, Generatief, SaaS
 Koperfase: Bewustzijn
 ---
 
-# Het volgen van de juiste KPI's voor generatieve SaaS - AI om te coderen
+# Het volgen van de juiste KPI's voor generatieve SaaS
 Als u een traditioneel SaaS-bedrijf leidt, is een piek in het aantal dagelijkse actieve gebruikers (DAU) reden voor een feestje. Als u een generatieve AI-startup uitvoert, kan een plotselinge, ongecontroleerde piek in intensief gebruik betekenen dat u duizenden dollars per dag aan API-kosten verliest. De eenheidseconomie van AI vereist een geheel nieuwe reeks Key Performance Indicators (KPI’s). Als u alleen naar MRR (Monthly Recurring Revenue) kijkt, vliegt u blind.
 
 ## KPI 1: AI-brutomarge per gebruiker

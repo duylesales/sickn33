@@ -1,10 +1,10 @@
 ---
-Title: Usage-Based vs. Seat-Based Pricing for AI - AI For Coding
+Title: Usage-Based vs. Seat-Based Pricing for AI
 Keywords: AI For Coding, Usage, Based, Seat, Pricing, AI
 Buyer Stage: Consideration
 ---
 
-# Usage-Based vs. Seat-Based Pricing for AI - AI For Coding
+# Usage-Based vs. Seat-Based Pricing for AI
 The ultimate paradox of building AI software is that if you make your product too good, traditional pricing models will bankrupt you. Historically, B2B SaaS companies scaled revenue by selling more "Seats" to more employees. But the entire purpose of an AI Agent is to eliminate the need for human seats. If you are building an AI startup, you must fundamentally rethink how you capture value.
 
 ## The Seat-Based Death Spiral

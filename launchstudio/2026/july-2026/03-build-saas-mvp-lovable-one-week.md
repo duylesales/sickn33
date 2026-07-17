@@ -1,10 +1,10 @@
 ---
-Title: How to Build a SaaS MVP with Lovable in Under a Week - Build App With AI
+Title: How to Build a SaaS MVP with Lovable in Under a Week
 Keywords: Build App With AI, Build, Lovable, Under a week, SaaS MVP, LaunchStudio, Manifera, Herre Roelevink, Software Development
 Buyer Stage: Consideration
 ---
 
-# How to Build a SaaS MVP with Lovable in Under a Week - Build App With AI
+# How to Build a SaaS MVP with Lovable in Under a Week
 Building a SaaS MVP with Lovable takes 3 to 7 days when you follow a structured approach: define your core feature on day one, build the main interface on days two and three, connect your Supabase database on day four, add authentication on day five, and refine the user experience on days six and seven. This guide walks you through each step with practical prompting strategies and common pitfalls to avoid.
 
 Lovable has become the tool of choice for AI-native founders who want to create functional SaaS products without traditional development skills. But the difference between a polished MVP and a chaotic mess often comes down to process — how you structure your build, what you prompt first, and when you know to stop adding features and start launching.

@@ -1,10 +1,10 @@
 ---
-Titel: Van idee tot prototype in 48 uur met behulp van AI-tools - AI om te coderen
+Titel: Van idee tot prototype in 48 uur met behulp van AI-tools
 Trefwoorden: AI om te coderen, Prototype, Uren, Gebruik, Gereedschap
 Koperfase: Bewustzijn
 ---
 
-# Van idee tot prototype in 48 uur met behulp van AI-tools - AI om te coderen
+# Van idee tot prototype in 48 uur met behulp van AI-tools
 Je kunt binnen 48 uur van een startup-idee naar een werkend, klikbaar prototype gaan met behulp van AI-ontwikkeltools zoals Lovable en Supabase. De sleutel is een meedogenloze focus: besteed uren 1 tot en met 4 aan het plannen van je enige kernfunctie, uren 5 tot en met 24 aan het bouwen van de hoofdinterface en database, en uren 25 tot en met 48 aan het toevoegen van authenticatie, het polijsten van het ontwerp en het testen met echte mensen. Deze gids geeft u het exacte stappenplan.
 
 Twee jaar geleden betekende een prototype dat 48 uur duurde een ruw draadframe in Figma of een handvol statische HTML-pagina's. Tegenwoordig bouwen AI-native oprichters in hetzelfde tijdsbestek volledig functionele, database-verbonden webapplicaties met gebruikersauthenticatie. De tools zijn veranderd – en dat geldt ook voor de snelheid waarmee u uw startup-idee kunt valideren.

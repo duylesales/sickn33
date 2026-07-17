@@ -1,11 +1,11 @@
 ---
-Titel: De Onzichtbare Belasting: Hoe Je Technical Debt Overleeft in Je AI Scale-Up - AI in software-engineering
+Titel: De Onzichtbare Belasting: Hoe Je Technical Debt Overleeft in Je AI Scale-Up
 Trefwoorden: AI in software-engineering, technical debt, AI MVP, scale-up, LaunchStudio, Manifera, legacy code, software refactoring, technische schuld
 Koperfase: Beslissing
 Doelpersona: D (SaaS Founder Scale-Up)
 ---
 
-# De Onzichtbare Belasting: Hoe Je Technical Debt Overleeft in Je AI Scale-Up - AI in software-engineering
+# De Onzichtbare Belasting: Hoe Je Technical Debt Overleeft in Je AI Scale-Up
 Wanneer je je eerste AI Minimum Viable Product (MVP) bouwt, is snelheid je enige metriek. Je neemt sluiproutes. Je hardcodeert API-sleutels om de demo werkend te krijgen. Je slaat het schrijven van geautomatiseerde tests over. Je propt al je bedrijfslogica in gigantische, onleesbare React-componenten omdat je vóór vrijdag moet lanceren.
 
 Deze aanpak is juist. In het begin is het doel om de markt te valideren, niet om perfecte software te bouwen.

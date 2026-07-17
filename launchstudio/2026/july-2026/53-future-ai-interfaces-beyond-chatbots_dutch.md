@@ -1,5 +1,5 @@
 ---
-Titel: De toekomst van AI-interfaces: verder dan de chatbot - Het beste van AI
+Titel: De toekomst van AI-interfaces: verder dan de chatbot
 Trefwoorden: Het beste van AI, Toekomst, Interfaces, Bewegen, Beyond, Chatbot
 Koperfase: Bewustzijn
 ---

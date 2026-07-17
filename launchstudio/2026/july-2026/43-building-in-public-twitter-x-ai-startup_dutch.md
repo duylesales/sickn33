@@ -1,10 +1,10 @@
 ---
-Titel: Bouwen in het openbaar: Twitter/X gebruiken om uw AI-startup te starten - Gebruik AI om code te genereren
+Titel: Bouwen in het openbaar: Twitter/X gebruiken om uw AI-startup te starten
 Trefwoorden: Gebruik AI om code te genereren, Gebouw, Publiek, TwitterX, Lancering, Opstarten
 Koperfase: overweging
 ---
 
-# Bouwen in het openbaar: Twitter/X gebruiken om uw AI-startup te starten - Gebruik AI om code te genereren
+# Bouwen in het openbaar: Twitter/X gebruiken om uw AI-startup te starten
 Als je een SaaS-product in een vacuüm bouwt, het op dinsdag lanceert en verwacht dat de wereld erom geeft, zul je een oorverdovende stilte tegenkomen. Het moderne draaiboek voor solo-oprichters vereist dat je tegelijkertijd met je product een publiek opbouwt. Het meest effectieve raamwerk om dit te doen is ‘Building in Public’ (BIP) op Twitter/X. Hier leest u hoe u radicale transparantie kunt gebruiken om een ​​wachtlijst te genereren voordat u ook maar één regel code schrijft.
 
 ## De psychologie van bouwen in het openbaar

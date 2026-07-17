@@ -1,10 +1,10 @@
 ---
-Titel: Waarom chatbots een vreselijke UX zijn voor B2B SaaS - AI om te coderen
+Titel: Waarom chatbots een vreselijke UX zijn voor B2B SaaS
 Trefwoorden: AI om te coderen, Chatbots, Terrible, UX, B2B, SaaS
 Koperfase: Bewustzijn
 ---
 
-# Waarom chatbots een vreselijke UX zijn voor B2B SaaS - AI om te coderen
+# Waarom chatbots een vreselijke UX zijn voor B2B SaaS
 In 2023 bouwde elke B2B-startup in wezen exact hetzelfde product: een database-wrapper met een ChatGPT-kloon op de frontend. De veronderstelling was dat gebruikers met hun gegevens wilden ‘praten’. We hebben nu drie jaar retentieanalyses om te bewijzen dat deze veronderstelling onjuist is. Het dwingen van zakelijke gebruikers om prompts te schrijven is een enorme UX-fout. De toekomst van B2B AI is geen chatvenster; het is onzichtbare AI.
 
 ## De last van snelle engineering

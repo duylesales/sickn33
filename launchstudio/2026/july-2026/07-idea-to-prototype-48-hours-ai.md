@@ -1,10 +1,10 @@
 ---
-Title: From Idea to Prototype in 48 Hours Using AI Tools - AI To Code
+Title: From Idea to Prototype in 48 Hours Using AI Tools
 Keywords: AI To Code, Prototype, Hours, Using, Tools
 Buyer Stage: Awareness
 ---
 
-# From Idea to Prototype in 48 Hours Using AI Tools - AI To Code
+# From Idea to Prototype in 48 Hours Using AI Tools
 You can go from a startup idea to a working, clickable prototype in 48 hours using AI development tools like Lovable and Supabase. The key is ruthless focus: spend hours 1 through 4 planning your one core feature, hours 5 through 24 building the main interface and database, and hours 25 through 48 adding authentication, polishing the design, and testing with real people. This guide gives you the exact roadmap.
 
 Two years ago, a 48-hour prototype meant a rough wireframe in Figma or a handful of static HTML pages. Today, AI-native founders are building fully functional, database-connected web applications with user authentication in the same timeframe. The tools have changed — and so has the speed at which you can validate your startup idea.

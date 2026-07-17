@@ -1,10 +1,10 @@
 ---
-Title: Building Slack Apps with Embedded AI: The 'Invisible SaaS' Model - AI Saas
+Title: Building Slack Apps with Embedded AI: The 'Invisible SaaS' Model
 Keywords: AI Saas, Building, Slack, Apps, Embedded, AI, Invisible, SaaS, Model
 Buyer Stage: Awareness
 ---
 
-# Building Slack Apps with Embedded AI: The 'Invisible SaaS' Model - AI Saas
+# Building Slack Apps with Embedded AI: The 'Invisible SaaS' Model
 The biggest hurdle in B2B SaaS is not building the software; it is convincing an exhausted employee to log into yet another dashboard. In 2026, the most successful AI tools are skipping the dashboard entirely. They are adopting the "Invisible SaaS" model by embedding their AI directly into the platforms where teams already live: specifically, Slack. Here is how to architect an AI Slack app.
 
 ## The UX Advantage of Slack AI

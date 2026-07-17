@@ -1,11 +1,11 @@
 ---
-Titel: AI-app authenticatie — Waarom je gebruikers elkaars data kunnen zien - Bouw een app met AI
+Titel: Bouw een app met AI op een veilige manier: Waarom je gebruikers elkaars data kunnen zien
 Trefwoorden: Bouw een app met AI, AI security, AI beveiligingskwetsbaarheden, AI deployment, secure AI, LaunchStudio, Manifera, Cursor, AI database
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# AI-app authenticatie — Waarom je gebruikers elkaars data kunnen zien - Bouw een app met AI
+# Bouw een app met AI op een veilige manier: Waarom je gebruikers elkaars data kunnen zien
 Een gebruiker meldt zich aan voor je nieuwe app. Ze loggen in en beginnen hun dashboard te vullen met privégegevens. Een tweede gebruiker meldt zich aan. Wanneer zij inloggen, zien ze niet alleen hun eigen lege dashboard — ze zien ook de data van de eerste gebruiker. Je hebt op dag één een catastrofaal datalek en je hebt geen idee waarom.
 
 Dit scenario speelt zich constant af bij technische solo-oprichters die bouwen met Cursor, Bolt of Lovable. Je vroeg de AI om een "gebruikersdashboard met een inlogscherm". De AI leverde een prachtige React-frontend met een werkend inlogformulier. Maar wat het daadwerkelijk bouwde was een local state illusie, volledig losgekoppeld van veilige server-side authenticatie.

@@ -1,10 +1,10 @@
 ---
-Titel: Van niet-technisch tot $5k MRR: de reis van een AI-oprichter - AI om te coderen
+Titel: Van niet-technisch tot $5k MRR: de reis van een AI-oprichter
 Trefwoorden: AI om te coderen, niet-technisch, oprichters, reis
 Koperfase: Bewustzijn
 ---
 
-# Van niet-technisch tot $5k MRR: de reis van een AI-oprichter - AI om te coderen
+# Van niet-technisch tot $5k MRR: de reis van een AI-oprichter
 Sarah is logistiek manager, geen software-ingenieur. Drie jaar lang zag ze hoe haar bedrijf wekelijks uren verloor aan handmatige inventarisafstemming. Ze wist precies welke software nodig was om het probleem op te lossen, maar offertes van ontwikkelingsbureaus varieerden van €25.000 tot €40.000. Dus deed ze wat de nieuwe generatie AI-native oprichters doet: ze bouwde het zelf met behulp van AI, huurde LaunchStudio in om het productieklaar te maken en verdiende in minder dan 90 dagen $ 5.000 aan Monthly Recurring Revenue (MRR). Hier is haar exacte speelboek.
 
 ## De prototypefase: 48 uur met Lovable

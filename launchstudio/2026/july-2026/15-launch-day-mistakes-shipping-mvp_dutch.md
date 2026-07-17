@@ -1,5 +1,5 @@
 ---
-Titel: Fouten op de lanceringsdag: wat u niet moet doen als u uw MVP verzendt - Day AI
+Titel: Fouten op de lanceringsdag: wat u niet moet doen als u uw MVP verzendt
 Trefwoorden: Day AI, lancering, fouten, verzending
 Koperfase: beslissing
 ---

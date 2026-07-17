@@ -1,5 +1,5 @@
 ---
-Titel: Het bouwen van veerkrachtige API-retry-logica voor AI-applicaties - AI om te coderen
+Titel: Het bouwen van veerkrachtige API-retry-logica voor AI-applicaties
 Trefwoorden: AI om te coderen, Bouwen, Veerkrachtig, API, Opnieuw proberen, Logica, AI, Applicaties
 Koperfase: Bewustzijn
 ---

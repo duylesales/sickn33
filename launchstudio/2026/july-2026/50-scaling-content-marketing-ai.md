@@ -1,10 +1,10 @@
 ---
-Title: Scaling Content Marketing with AI: Avoiding the Spam Filter - Code With AI
+Title: Scaling Content Marketing with AI: Avoiding the Spam Filter
 Keywords: Code With AI, Scaling, Content, Marketing, Avoiding, Filter
 Buyer Stage: Awareness
 ---
 
-# Scaling Content Marketing with AI: Avoiding the Spam Filter - Code With AI
+# Scaling Content Marketing with AI: Avoiding the Spam Filter
 Content marketing is the lifeblood of SaaS growth. In the past, scaling a blog meant hiring an army of freelance writers. Today, an AI model can generate a 2,000-word article in four seconds. The temptation is to automate the entire process and publish 100 articles a day. Do this, and Google will destroy your domain. Here is how to use AI to scale your content marketing safely and effectively.
 
 ## The Threat: The 'Helpful Content' Algorithm

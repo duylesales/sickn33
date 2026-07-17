@@ -1,5 +1,5 @@
 ---
-Titel: LLM-contextvensters beheren - AI om te coderen
+Titel: LLM-contextvensters beheren
 Trefwoorden: AI om te coderen, Beheren, LLM, Context, Windows
 Koperfase: Bewustzijn
 ---

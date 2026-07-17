@@ -1,5 +1,5 @@
 ---
-Titel: Bouwen aan een multi-agentarchitectuur voor ondernemingen - AI om te coderen
+Titel: Bouwen aan een multi-agentarchitectuur voor ondernemingen
 Trefwoorden: AI om te coderen, Gebouw, Multi, Agent, Architectuur, Enterprise
 Koperfase: Bewustzijn
 ---

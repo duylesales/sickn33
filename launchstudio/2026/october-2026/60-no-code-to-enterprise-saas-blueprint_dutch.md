@@ -1,11 +1,11 @@
 ---
-Titel: De Ultieme Blauwdruk: Van No-Code AI MVP naar Enterprise Schaal - AI om te coderen
+Titel: De Ultieme Blauwdruk: Van No-Code AI MVP naar Enterprise Schaal
 Trefwoorden: AI om te coderen, Enterprise scale, AI SaaS architectuur, no-code naar custom code, startup blauwdruk, B2B SaaS opschalen, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# De Ultieme Blauwdruk: Van No-Code AI MVP naar Enterprise Schaal - AI om te coderen
+# De Ultieme Blauwdruk: Van No-Code AI MVP naar Enterprise Schaal
 Het leven van een niet-technische AI-oprichter bestaat uit twee totaal verschillende fases.
 
 **Fase 1** is de 'hustle'. Je bouwt in het weekend een rommelige no-code MVP. Je haalt handmatig je eerste 50 klanten binnen. Je gebruikt Zapier en Make om API's met ducttape aan elkaar te plakken. Het is fragiel, maar het bewijst dat je verdienmodel werkt.

@@ -1,5 +1,5 @@
 ---
-Titel: Aangepaste AI-agenten vanaf nul bouwen - Day AI
+Titel: Aangepaste AI-agenten vanaf nul bouwen
 Trefwoorden: Day AI, Gebouw, Aangepast, AI, Agenten, Scratch
 Koperfase: Bewustzijn
 ---

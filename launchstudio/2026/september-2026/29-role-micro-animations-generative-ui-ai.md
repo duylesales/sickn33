@@ -1,10 +1,10 @@
 ---
-Title: The Role of Micro-Animations in Generative UI - AI In Software Engineering
+Title: The Role of Micro-Animations in Generative UI
 Keywords: AI In Software Engineering, Role, Micro, Animations, Generative, UI
 Buyer Stage: Awareness
 ---
 
-# The Role of Micro-Animations in Generative UI - AI In Software Engineering
+# The Role of Micro-Animations in Generative UI
 Generative UI—where an AI dynamically renders React components instead of text—is the future of B2B applications. However, implementing it poorly creates a chaotic user experience. Because AI data generation is asynchronous and unpredictable, elements suddenly "popping" onto the screen feels broken and aggressive. To elevate an AI application from a cheap prototype to a premium enterprise tool, you must master **Micro-Animations**.
 
 ## The 'Pop' Problem in AI UI

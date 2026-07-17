@@ -1,5 +1,5 @@
 ---
-Titel: De 'Product-Led Sales'-beweging voor AI - AI om te coderen
+Titel: De 'Product-Led Sales'-beweging voor AI
 Trefwoorden: AI om te coderen, Product, Led, Sales, Motion, AI
 Koperfase: Bewustzijn
 ---

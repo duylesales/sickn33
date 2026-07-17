@@ -1,10 +1,10 @@
 ---
-Title: Efficient Data Fetching in Next.js for AI Apps - AI For Coding
+Title: Efficient Data Fetching in Next.js for AI Apps
 Keywords: AI For Coding, Efficient, Data, Fetching, Next, AI, Apps
 Buyer Stage: Awareness
 ---
 
-# Efficient Data Fetching in Next.js for AI Apps - AI For Coding
+# Efficient Data Fetching in Next.js for AI Apps
 AI applications are incredibly data-hungry. You must simultaneously fetch the user's subscription status, their past chat history from a database, and real-time streaming tokens from an LLM. If you architect these data fetches poorly, your app will suffer from "waterfall" loading screens, and the UX will degrade rapidly. Next.js App Router provides the tools to fix this, provided you use them correctly.
 
 ## Killing the Waterfall

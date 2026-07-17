@@ -1,10 +1,10 @@
 ---
-Titel: Waarom de EU AI Act belangrijk is voor Amerikaanse startups - AI om te coderen
+Titel: Waarom de EU AI Act belangrijk is voor Amerikaanse startups
 Trefwoorden: AI om te coderen, EU, AI, Act, Matters, Startups
 Koperfase: Bewustzijn
 ---
 
-# Waarom de EU AI Act belangrijk is voor Amerikaanse startups - AI om te coderen
+# Waarom de EU AI Act belangrijk is voor Amerikaanse startups
 Veel in de VS gevestigde oprichters beschouwen de Europese regelgeving als het probleem van iemand anders. Ze gaan ervan uit dat hun Silicon Valley SaaS is vrijgesteld van het bureaucratische bereik van Brussel. Deze veronderstelling is wiskundig gezien gevaarlijk. De **EU AI-wet** heeft een "extraterritoriale werking": als een enkele gebruiker uit Berlijn inlogt op uw AI-toepassing, bent u onderworpen aan de wet. Met boetes die kunnen oplopen tot 7% ​​van de mondiale omzet, is het begrijpen van de EU AI Act essentieel om te kunnen overleven.
 
 ## Het op risico gebaseerde classificatiesysteem

@@ -1,5 +1,5 @@
 ---
-Titel: Het auteursrechtdilemma: wie is de eigenaar van AI-uitvoer? - Day AI
+Titel: Het auteursrechtdilemma: wie is de eigenaar van AI-uitvoer?
 Trefwoorden: Day AI, Copyright, Dilemma, Eigendom, AI, Output
 Koperfase: Bewustzijn
 ---
