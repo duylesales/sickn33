@@ -1,10 +1,10 @@
 ---
-Titel: Het beheren van gebruikersverwachtingen met deterministische onboarding
+Titel: Het beheren van verwachtingen rondom Gebruikers-AI met deterministische onboarding
 Trefwoorden: Gebruikers-AI, Managen, Gebruiker, Verwachtingen, Deterministisch, Onboarding
-Koperfase: Bewustzijn
+Koperfase: Overweging
 ---
 
-# Het beheren van gebruikersverwachtingen met deterministische onboarding
+# Het beheren van verwachtingen rondom Gebruikers-AI met deterministische onboarding
 In de marketingtekst voor uw AI-functie staat waarschijnlijk: *"Onze AI kan alles."* Dit is de snelste manier om retentie te vernietigen. Als je magie belooft, zal de gebruiker magie verwachten. Ze zullen uw gespecialiseerde B2B-agent een ongelooflijk complexe, gelaagde vraag stellen die geen enkele LLM ter wereld kan oplossen. Het zal hallucineren en de gebruiker zal onmiddellijk karnen. Om zakelijke gebruikers te behouden, moet u **Deterministische Onboarding** ontwerpen die strikt aansluit bij hun verwachtingen.
 
 ## De eerste sessie 'Gegarandeerde winst'
