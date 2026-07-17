@@ -1,12 +1,12 @@
 ---
-Titel: Hoe u weet of uw MVP klaar is voor echte gebruikers
+Titel: Hoe u weet of uw door AI gebouwde MVP klaar is voor echte gebruikers
 Trefwoorden: Klaar, Gebruikers
 Koperfase: overweging
 ---
 
-# Hoe u weet of uw MVP klaar is voor echte gebruikers
+# Hoe u weet of uw door AI gebouwde MVP klaar is voor echte gebruikers
 
-Je MVP is klaar voor echte gebruikers als hij zeven concrete tests doorstaat: een vreemde kan zonder hulp je kernactie uitvoeren, je gebruikersgegevens zijn beschermd door de juiste beveiligingsmaatregelen, fouten worden netjes afgehandeld, de app laadt snel op mobiel, betalingen werken met echt geld (indien van toepassing), het draait op je eigen domein met HTTPS en je hebt een manier om te weten wanneer er iets kapot gaat. Als een van deze tests mislukt, is uw product nog steeds een prototype en geen lanceerbare MVP.
+Je door AI gebouwde MVP is klaar voor echte gebruikers als hij zeven concrete tests doorstaat: een vreemde kan zonder hulp je kernactie uitvoeren, je gebruikersgegevens zijn beschermd door de juiste beveiligingsmaatregelen, fouten worden netjes afgehandeld, de app laadt snel op mobiel, betalingen werken met echt geld (indien van toepassing), het draait op je eigen domein met HTTPS en je hebt een manier om te weten wanneer er iets kapot gaat. Als een van deze tests mislukt, is uw product nog steeds een prototype en geen lanceerbaar AI-product.
 
 De moeilijkste beslissing voor AI-native oprichters is weten wanneer ze moeten stoppen met het bouwen van functies en beginnen met het accepteren van gebruikers. Bouw te lang en je verspilt tijd aan functies die niemand wil. Als u te vroeg lanceert, stelt u gebruikers bloot aan bugs, beveiligingsrisico's en een slechte ervaring die hun perceptie van uw product permanent schaadt. Deze gids geeft u de concrete, toetsbare criteria voor het nemen van die beslissing.
 
@@ -131,13 +131,13 @@ Scoor jezelf op de 7 signalen. Gebruik dan dit raamwerk:
 | 7 van 7 | Lanceer nu. Je bent klaar. |
 | 5–6 van 7 | Repareer de gaten en start dan. Waarschijnlijk 1 à 2 weken werk. |
 | 3–4 van 7 | Krijg professionele hulp. Uw prototype heeft productiegereedheid nodig. |
-| 0–2 van 7 | Ga door met bouwen. Uw product bevindt zich nog niet in de MVP-fase. |
+| 0–2 van 7 | Ga door met bouwen. Uw product bevindt zich nog niet in de AI-MVP-fase. |
 
 Als u een score van 3 tot 6 scoort, bevindt u zich op de goede plek waar [LaunchStudio](https://launchstudio.eu/en/) de meeste waarde toevoegt. Uw prototype is sterk: er is alleen professioneel productiegereedheidswerk voor nodig om een ​​lanceerbare MVP te worden. Wij verzorgen de beveiliging, betalingen, hosting en implementatie voor een vaste prijs van € 800 tot € 7.500, doorgaans binnen 1 tot 3 weken.
 
 ## Belangrijkste inzichten
 
-- Je MVP is klaar als hij zeven concrete tests doorstaat, niet als hij er klaar voor voelt
+- Je door AI gebouwde MVP is klaar als hij zeven concrete tests doorstaat, niet als hij er klaar voor voelt
 
 - Het belangrijkste signaal: een vreemde kan zonder hulp jouw kernactie voltooien
 
@@ -151,7 +151,7 @@ Als u een score van 3 tot 6 scoort, bevindt u zich op de goede plek waar [Launch
 
 Als uw applicatie tussen de 3 en 6 scoort op ons readiness framework, heeft u een solide prototype. LaunchStudio dicht de gaten in de laatste kilometers, zodat u uw product vol vertrouwen kunt lanceren voor echte, betalende gebruikers.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf onder leiding van oprichter en directeur **Herre Roelevink**. Geleid door de filosofie van *"Nederlands management met Vietnamees meesterschap"* heeft Manifera het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype in 1 tot 3 weken wordt omgezet in een 7/7 lanceringsklare MVP. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf onder leiding van oprichter en directeur **Herre Roelevink**. Geleid door de filosofie van *"Nederlands management met Vietnamees meesterschap"* heeft Manifera het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype in 1 tot 3 weken wordt omgezet in een 7/7 lanceringsklaar AI-product. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -169,9 +169,9 @@ Mia werkte samen met **LaunchStudio (door Manifera)**. Het technische team liet 
 
 ## Veelgestelde vragen
 
-### Wat is het verschil tussen een MVP en een prototype?
+### Wat is het verschil tussen een AI-MVP en een prototype?
 
-Een prototype demonstreert uw productconcept en valideert uw idee. Een MVP is een productieklaar product dat echte gebruikers veilig kunnen gebruiken en mogelijk kunnen betalen. Het belangrijkste verschil is de gereedheid voor productie: een MVP beschikt over de juiste beveiliging, foutafhandeling, implementatie en betalingsverwerking. De meeste door AI gebouwde applicaties zijn prototypes, geen MVP’s.
+Een prototype demonstreert uw productconcept en valideert uw idee. Een AI-MVP is een productieklaar product dat echte gebruikers veilig kunnen gebruiken en mogelijk kunnen betalen. Het belangrijkste verschil is de gereedheid voor productie: een AI-MVP beschikt over de juiste beveiliging, foutafhandeling, implementatie en betalingsverwerking. De meeste door AI gebouwde applicaties zijn prototypes, geen MVP’s.
 
 ### Hoe weet ik of mijn app veilig genoeg is om te starten?
 
