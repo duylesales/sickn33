@@ -1,11 +1,11 @@
 ---
-Titel: Hoe voeg je Stripe-betalingen toe aan je door AI gebouwde app — Een gids voor niet-technische oprichters - AI om te coderen
+Titel: Stripe-betalingen toevoegen wanneer je een app bouwt met AI — Een gids voor niet-technische oprichters
 Trefwoorden: AI om te coderen, AI deployment, app bouwen met AI, AI saas, Stripe-betalingen, LaunchStudio, Manifera, Lovable, Bolt
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# Hoe voeg je Stripe-betalingen toe aan je door AI gebouwde app — Een gids voor niet-technische oprichters - AI om te coderen
+# Stripe-betalingen toevoegen wanneer je een app bouwt met AI — Een gids voor niet-technische oprichters
 Het is vrijdagavond. Je door AI gebouwde boekings-app ziet er perfect uit. Het dashboard is strak, de gebruikersstroom is soepel, en drie vrienden hebben het al op hun telefoon getest. Je was van plan om maandag echte gebruikers te laten betalen.
 
 Dan probeer je je eerste betaling te verwerken. Stripe geeft een fout. Je checkt het dashboard en beseft: de app draait nog steeds in testmodus. De creditcardnummers die "werkten" tijdens het testen waren Stripe's nep-testkaarten. Echte Visa- en Mastercard-nummers worden volledig geweigerd.

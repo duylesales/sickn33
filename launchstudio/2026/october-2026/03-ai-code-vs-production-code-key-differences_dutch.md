@@ -1,11 +1,11 @@
 ---
-Titel: AI-code vs productiecode — Wat er verandert voordat je app live gaat - AI om te coderen
+Titel: AI-code vs productiecode — Essentiële AI-coding wijzigingen voordat je app live gaat
 Trefwoorden: AI om te coderen, AI coding, AI code tool, AI software engineering, code met AI, LaunchStudio, Manifera, Herre Roelevink, Cursor, Lovable
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# AI-code vs productiecode — Wat er verandert voordat je app live gaat - AI om te coderen
+# AI-code vs productiecode — Essentiële AI-coding wijzigingen voordat je app live gaat
 "We zien een verschuiving in de softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen." Toen Herre Roelevink, Oprichter en Directeur van Manifera, deze observatie deelde, beschreef hij een patroon dat zijn team wekelijks tegenkomt: oprichters komen met door AI gegenereerde prototypes die er af uitzien maar architectonisch onvolledig zijn.
 
 De kloof tussen AI-code en productiecode gaat niet over kwaliteit in traditionele zin. AI-tools zoals Lovable, Cursor en Bolt genereren code die vaak goed gestructureerd en leesbaar is. De kloof gaat over wat de code niet bevat — de onzichtbare infrastructuur die een demo scheidt van een product waarvoor mensen veilig kunnen betalen.
