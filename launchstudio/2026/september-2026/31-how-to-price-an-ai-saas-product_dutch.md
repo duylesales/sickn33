@@ -1,10 +1,10 @@
 ---
-Titel: Hoe u een AI SaaS-product kunt prijzen
+Titel: Hoe u een AI SaaS-product kunt prijzen voor maximale inkomsten
 Trefwoorden: prijs, AI, SaaS, product
-Koperfase: overweging
+Koperfase: Bewustwording
 ---
 
-# Hoe u een AI SaaS-product kunt prijzen
+# Hoe u een AI SaaS-product kunt prijzen voor maximale inkomsten
 De afgelopen tien jaar hebben de oprichters van SaaS zich aan een simpele regel gehouden: bouw het één keer, verkoop het een miljoen keer en profiteer van een brutomarge van 90%. AI breekt deze wiskunde. LLM's hebben enorme variabele kosten. Elke keer dat een gebruiker op "Genereren" klikt, verlaat het geld uw bankrekening. Als u een AI-product prijst met een traditioneel vast abonnement van $ 20 per maand, zullen uw meest actieve gebruikers u failliet laten gaan. Hier leest u hoe u AI-producten winstgevend kunt prijzen.
 
 ## De dreiging van de hoofdgebruiker

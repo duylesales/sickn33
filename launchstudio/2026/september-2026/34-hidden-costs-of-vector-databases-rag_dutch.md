@@ -1,10 +1,10 @@
 ---
-Titel: De verborgen kosten van vectordatabases
+Titel: De verborgen kosten van vectordatabases achter de toepassingen met Het beste van AI
 Trefwoorden: Het beste van AI, Verborgen, Kosten, Vector, Databases
-Koperfase: overweging
+Koperfase: Bewustwording
 ---
 
-# De verborgen kosten van vectordatabases
+# De verborgen kosten van vectordatabases achter de toepassingen met Het beste van AI
 Retrieval-Augmented Generation (RAG) is de ruggengraat van zakelijke AI. Om een ​​RAG-pijplijn te bouwen, moet u een vectordatabase gebruiken om documenten op te slaan en te doorzoeken. Hoewel providers als Pinecone, Weaviate en Milvus naadloze ontwikkelaarservaringen bieden, zijn oprichters vaak verblind als hun startup opschaalt. De fysica van vectorzoekopdrachten maakt het fundamenteel duurder dan traditionele SQL-opslag. Hier leest u hoe u door de verborgen kosten van vectorinfrastructuur kunt navigeren.
 
 ## De RAM-premium

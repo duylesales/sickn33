@@ -1,10 +1,10 @@
 ---
-Titel: Op gebruik gebaseerde versus stoelgebaseerde prijzen voor AI
+Titel: Op gebruik gebaseerde versus stoelgebaseerde prijzen wanneer je AI om te coderen aanbiedt
 Trefwoorden: AI om te coderen, gebruik, gebaseerd, stoel, prijs, AI
-Koperfase: overweging
+Koperfase: Overweging
 ---
 
-# Gebruiksgebaseerde versus stoelgebaseerde prijzen voor AI
+# Op gebruik gebaseerde versus stoelgebaseerde prijzen wanneer je AI om te coderen aanbiedt
 De ultieme paradox bij het bouwen van AI-software is dat als je je product te goed maakt, traditionele prijsmodellen je failliet zullen laten gaan. Historisch gezien hebben B2B SaaS-bedrijven hun omzet geschaald door meer 'zetels' aan meer werknemers te verkopen. Maar het hele doel van een AI-agent is om de behoefte aan menselijke stoelen te elimineren. Als u een AI-startup bouwt, moet u fundamenteel heroverwegen hoe u waarde vastlegt.
 
 ## De op stoelen gebaseerde doodsspiraal

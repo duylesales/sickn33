@@ -1,10 +1,10 @@
 ---
-Titel: Kostenbewuste architectuur bouwen in Node.js
+Titel: Kostenbewuste architectuur bouwen in Node.js voor AI in software-engineering
 Trefwoorden: AI in software-engineering, Gebouw, Kosten, Bewust, Architectuur, Knooppunt
-Koperfase: overweging
+Koperfase: Overweging
 ---
 
-# Kostenbewuste architectuur bouwen in Node.js
+# Kostenbewuste architectuur bouwen in Node.js voor AI in software-engineering
 Bij traditionele webontwikkeling resulteert inefficiënte code in een hoge latentie. De gebruiker wacht een extra seconde, maar uw serverkosten blijven over het algemeen hetzelfde. Bij de ontwikkeling van AI resulteert inefficiënte code in onmiddellijk, catastrofaal financieel verlies. Een slecht ontworpen RAG-lus of een oneindige herhalingscyclus voor agenten kan in één weekend $5.000 aan OpenAI API-kosten besparen. Uw Node.js-backend moet expliciet ontworpen zijn om **Kostenbewust** te zijn.
 
 ## Tokens volgen op de Middleware-laag
