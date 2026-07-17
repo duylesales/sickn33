@@ -1,10 +1,10 @@
 ---
-Titel: De economie van open source-modellen versus API-providers
-Trefwoorden: Economie, Open, Bron, Modellen, API, Providers
-Koperfase: overweging
+Titel: De economie van open source-modellen versus providers voor AI en Api
+Trefwoorden: AI en Api, Economie, Open, Bron, Modellen, API, Providers
+Koperfase: Overweging
 ---
 
-# De economie van open-sourcemodellen versus API-providers
+# De economie van open source-modellen versus providers voor AI en Api
 Elke AI-startup begint op precies dezelfde manier: door een OpenAI API-sleutel in te pluggen. Het is wrijvingsloos, oneindig schaalbaar en vereist geen DevOps. Maar naarmate uw startup groeit van 100 gebruikers naar 100.000 gebruikers, verandert die API-sleutel van een zegen in een brutomargebelasting. Uiteindelijk zal uw CFO vragen: *"Waarom betalen we OpenAI $15.000 per maand? Kunnen we Llama niet gewoon gratis gebruiken?"* Het antwoord is ja, maar de verborgen kosten van open source-infrastructuur zijn enorm.
 
 ## De API-valkuil: variabele kosten op schaal
