@@ -1,10 +1,10 @@
 ---
-Title: SOC 2 Compliance for AI Startups
+Title: SOC 2 Compliance for Startups Building AI For Coding
 Keywords: AI For Coding, SOC, Compliance, AI, Startups
 Buyer Stage: Decision
 ---
 
-# SOC 2 Compliance for AI Startups
+# SOC 2 Compliance for Startups Building AI For Coding
 You can build the most advanced AI agent in the world, but if you do not have a SOC 2 Type II report, you will never close a Fortune 500 contract. Enterprise Chief Information Security Officers (CISOs) view AI startups as massive data exfiltration risks. They will not allow their employees to type proprietary data into your app unless an independent auditor has verified your security architecture. Here is what AI startups need to know about passing SOC 2.
 
 ## The Subprocessor Scrutiny

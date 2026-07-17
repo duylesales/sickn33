@@ -1,10 +1,10 @@
 ---
-Title: Preventing Server-Side Request Forgery (SSRF) in Agents
+Title: Preventing Server-Side Request Forgery (SSRF) in Agents for AI In Software Engineering
 Keywords: AI In Software Engineering, Preventing, Server, Side, Request, Forgery, SSRF, Agents
-Buyer Stage: Awareness
+Buyer Stage: Consideration
 ---
 
-# Preventing Server-Side Request Forgery (SSRF) in Agents
+# Preventing Server-Side Request Forgery (SSRF) in Agents for AI In Software Engineering
 Building an autonomous AI agent is easy; securing it is incredibly difficult. When you grant an LLM the ability to interact with the outside world via tools (like a "Web Browser" or "URL Fetcher"), you are handing over the keys to your server's network layer. If you do not explicitly sandbox these tools, hackers will use your helpful AI assistant to execute a catastrophic **Server-Side Request Forgery (SSRF)** attack, breaching your internal cloud infrastructure.
 
 ## The SSRF Vulnerability Explained
