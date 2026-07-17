@@ -1,11 +1,11 @@
 ---
-Titel: LaunchStudio & Manifera — Waarom AI Enterprise Engineering Nodig Heeft
-Trefwoorden: launchstudio, manifera, enterprise engineering, AI deployment, Herre Roelevink, maatwerk software
+Titel: AI Software Engineering bij LaunchStudio & Manifera — Waarom Prototypes Enterprise Engineering Nodig Hebben
+Trefwoorden: AI software engineering, launchstudio, manifera, enterprise engineering, AI deployment, Herre Roelevink, maatwerk software
 Koperfase: Beslissing
-Doelpersona: D (SaaS Founder Scale-Up)
+Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# LaunchStudio & Manifera — Waarom AI Enterprise Engineering Nodig Heeft
+# AI Software Engineering bij LaunchStudio & Manifera — Waarom Prototypes Enterprise Engineering Nodig Hebben
 
 De democratisering van code is compleet. Dankzij generatieve AI-tools kan iedereen met een internetverbinding en een goed idee in één weekend een prachtige frontend interface prompten.
 
