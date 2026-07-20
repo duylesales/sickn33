@@ -1,10 +1,10 @@
 ---
-Titel: Door de gemeenschap geleide groei voor ontwikkelaarstools
+Titel: Waarom het Bouwen van een For You AI Feed Betrokkenheid Vergroot
 Trefwoorden: AI om te coderen, Community, Led, Groei, Ontwikkelaar, Tools
 Koperfase: Bewustzijn
 ---
 
-# Door de gemeenschap geleide groei voor ontwikkelaarstools
+# Waarom het Bouwen van een For You AI Feed Betrokkenheid Vergroot
 Als je een AI-tool voor ontwikkelaars bouwt, zoals een nieuwe Copilot voor het genereren van code, een vectordatabase of een LLM-orkestratieframework, moet je het traditionele B2B-marketingplaybook weggooien. Ontwikkelaars gebruiken adblockers. Ze negeren koude e-mails. Op Twitter bespotten ze modewoorden uit het bedrijfsleven. De enige manier om ontwikkelaars op grote schaal te werven is door middel van **Community-Led Growth (CLG)**.
 
 ## De ontwikkelaarsmentaliteit

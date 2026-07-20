@@ -1,10 +1,10 @@
 ---
-Titel: Cold Email Outreach voor SaaS in het AI-tijdperk
+Titel: AI Based Security Implementeren in Oudere Apps
 Trefwoorden: AI in SaaS, Cold, E-mail, Outreach, SaaS, AI, Era
 Koperfase: Bewustzijn
 ---
 
-# Koude e-mailoutreach voor SaaS in het AI-tijdperk
+# AI Based Security Implementeren in Oudere Apps
 Generatieve AI heeft de traditionele uitgaande verkoop fundamenteel doorbroken. Omdat elke junior verkoper nu ChatGPT kan gebruiken om 10.000 generieke e-mails per dag te verzenden, lopen de inboxen van besluitvormers over van door AI gegenereerde ruis. Daarom hebben Google en Microsoft hun spamfilters drastisch aangescherpt. Om in 2026 te slagen in B2B SaaS koude e-mail, moet je AI gebruiken om niet *meer* e-mails te verzenden, maar om *betere* e-mails te verzenden.
 
 ## De dood van 'Spray and Pray'

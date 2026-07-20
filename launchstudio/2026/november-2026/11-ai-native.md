@@ -1,11 +1,11 @@
 ---
-Title: "AI Native Founders Are Rewriting the Startup Playbook — Here Is How"
+Title: How AI Native Founders Are Rewriting the Startup Playbook
 Keywords: AI native, AI no code, no code AI tool, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# AI Native Founders Are Rewriting the Startup Playbook — Here Is How
+# How AI Native Founders Are Rewriting the Startup Playbook
 
 <script type="application/ld+json">
 {

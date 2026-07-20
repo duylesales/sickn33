@@ -1,11 +1,11 @@
 ---
-Title: "API in AI: Building Resilient Integrations for Unpredictable Models"
+Title: Building Resilient Integrations and API in AI
 Keywords: api in AI, api and AI, AI api architecture, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Backend Developer / Technical Founder
 ---
 
-# API in AI: Building Resilient Integrations for Unpredictable Models
+# Building Resilient Integrations and API in AI
 
 <script type="application/ld+json">
 {

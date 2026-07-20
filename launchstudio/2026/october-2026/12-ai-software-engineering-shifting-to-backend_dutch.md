@@ -1,11 +1,11 @@
 ---
-Titel: AI Software Engineering — Waarom ontwikkelaars verschuiven naar de backend
+Titel: Waarom AI Software Engineering Verschuift naar de Backend
 Trefwoorden: AI software engineering, AI native, AI code development, LaunchStudio, Manifera, Cursor, Bolt
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# AI Software Engineering — Waarom ontwikkelaars verschuiven naar de backend
+# Waarom AI Software Engineering Verschuift naar de Backend
 
 "AI gaat alle software engineers vervangen." Deze kop is sinds 2024 zo vaak herhaald dat veel oprichters het geloven. Maar als je goed kijkt naar wat er daadwerkelijk gebeurt in de loopgraven van technische startups, zie je een compleet andere realiteit.
 

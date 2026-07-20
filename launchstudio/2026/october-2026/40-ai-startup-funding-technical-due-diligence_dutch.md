@@ -1,11 +1,11 @@
 ---
-Titel: Zo Slaag je voor de Technical Due Diligence Wanneer je AI om te coderen Gebruikt
+Titel: Technische Due Diligence Halen Wanneer u AI To Code Gebruikt
 Trefwoorden: AI om te coderen, technical due diligence, AI startup funding, LaunchStudio, Manifera, Seed round, tech audit, code review
 Koperfase: Overweging
 Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# Zo Slaag je voor de Technical Due Diligence Wanneer je AI om te coderen Gebruikt
+# Technische Due Diligence Halen Wanneer u AI To Code Gebruikt
 Je hebt het prototype in een weekend gebouwd met Cursor. Je lanceerde op Product Hunt, haalde 100 betalende klanten binnen en trok de aandacht van een prominente Europese Venture Capital (VC) investeerder. Na drie succesvolle pitches overhandigt de VC je een Term Sheet voor een Seed-ronde van €1,5 miljoen.
 
 Maar er is een addertje onder het gras. Voordat het geld op je bankrekening staat, moet je slagen voor de **Technical Due Diligence (TDD)**.

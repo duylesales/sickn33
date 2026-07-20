@@ -1,10 +1,10 @@
 ---
-Titel: Aangepaste AI-agenten vanaf nul bouwen met Day AI-technologieën
+Titel: Aangepaste Agenten Bouwen met Day AI Technologieën
 Trefwoorden: Day AI, Gebouw, Aangepast, AI, Agenten, Scratch
 Koperfase: Overweging
 ---
 
-# Aangepaste AI-agenten vanaf nul bouwen met Day AI-technologieën
+# Aangepaste Agenten Bouwen met Day AI Technologieën
 De technologie-industrie gooit het woord ‘agent’ losjes rond. Een chatbot die een e-mail genereert, is geen agent. Een Agent is een autonoom systeem dat een complex doel kan doordenken, meerdere opeenvolgende acties kan uitvoeren via API's en koers kan corrigeren als een stap mislukt. Hoewel veel oprichters vertrouwen op zware raamwerken zoals LangChain om agenten te bouwen, is de onderliggende architectuur verrassend eenvoudig. Hier leest u hoe u helemaal opnieuw een aangepaste, zeer betrouwbare AI-agent in Node.js kunt bouwen.
 
 ## De kernvereiste: gereedschapsoproep

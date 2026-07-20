@@ -1,11 +1,11 @@
 ---
-Title: "AI Software Engineering: Keiharde Engineering Toepassen Op AI-Gegenereerde Code"
+Title: Strengheid Toepassen op Code Generatie met AI Software Engineering
 Keywords: AI software engineering, AI and software engineering, AI in software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# AI Software Engineering: Keiharde Engineering Toepassen Op AI-Gegenereerde Code
+# Strengheid Toepassen op Code Generatie met AI Software Engineering
 
 <script type="application/ld+json">
 {

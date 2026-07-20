@@ -1,10 +1,10 @@
 ---
-Titel: De toekomst van AI in de Europese technologie
+Titel: De Toekomst van AI In Software Engineering
 Trefwoorden: AI in software-engineering, Toekomst, AI, Europees, Tech
 Koperfase: Bewustzijn
 ---
 
-# De toekomst van AI in de Europese technologie
+# De Toekomst van AI In Software Engineering
 Het verhaal in de mondiale technische media is simpel: de VS hebben het kapitaal, de GPU’s en de enorme fundamentele modellen (OpenAI, Anthropic, Google). Europa kent strenge toezichthouders en bureaucratie. Daarom heeft Europa de AI-race verloren. Dit verhaal begrijpt fundamenteel niet hoe de waarde van kunstmatige intelligentie de komende tien jaar daadwerkelijk zal worden gerealiseerd. Europa bevindt zich in een unieke positie om de B2B-applicatielaag te domineren.
 
 ## De modellaag versus de applicatielaag

@@ -1,10 +1,10 @@
 ---
-Titel: De EU AI Act: wat B2B-oprichters moeten weten
+Titel: Privacy Issues With AI Analytics Overwinnen
 Trefwoorden: EU, AI, Act, B2B, Founders, Must, Know
 Koperfase: Bewustzijn
 ---
 
-# De EU AI Act: wat B2B-oprichters moeten weten
+# Privacy Issues With AI Analytics Overwinnen
 Als u dacht dat de AVG hoofdpijn zou opleveren, bereid u dan voor op de Wet op de Kunstmatige Intelligentie van de Europese Unie. Als 's werelds eerste alomvattende wettelijke kader voor AI bepaalt het niet alleen hoe u met gegevens omgaat; het dicteert wat je wettelijk mag bouwen. Als u klanten in Europa heeft, moet u het ‘Risk Tier’-classificatiesysteem van de Act begrijpen, anders riskeert u boetes die uw startup van de ene op de andere dag failliet kunnen laten gaan.
 
 ## De risicogebaseerde aanpak

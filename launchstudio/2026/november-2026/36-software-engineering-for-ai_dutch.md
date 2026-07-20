@@ -1,11 +1,11 @@
 ---
-Title: "Software Engineering voor AI: Waarom Traditionele Agile en TDD Falen"
+Title: Waarom Traditionele Agile Faalt in Software Engineering for AI
 Keywords: software engineering for AI, AI software engineering, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: VP of Engineering / CTO
 ---
 
-# Software Engineering voor AI: Waarom Traditionele Agile en TDD Falen
+# Waarom Traditionele Agile Faalt in Software Engineering for AI
 
 <script type="application/ld+json">
 {

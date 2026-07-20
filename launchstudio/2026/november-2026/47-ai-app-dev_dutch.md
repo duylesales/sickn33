@@ -1,11 +1,11 @@
 ---
-Title: "AI App Dev: De Opkomst van de 'Full-AI-Stack' Developer"
+Title: De Opkomst van de Full-AI-Stack Developer in AI App Dev
 Keywords: AI app dev, AI development, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / VP of Engineering
 ---
 
-# AI App Dev: De Opkomst van de 'Full-AI-Stack' Developer
+# De Opkomst van de Full-AI-Stack Developer in AI App Dev
 
 <script type="application/ld+json">
 {

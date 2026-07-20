@@ -1,11 +1,11 @@
 ---
-Titel: Het beste van AI in Beeldgeneratie: De Verborgen API-Kosten Overleven
+Titel: Verborgen Kosten Overleven voor de Best Of AI Image Generation
 Trefwoorden: Het beste van AI, AI image generation, DALL-E 3, Midjourney API, SaaS facturatie, LaunchStudio, Manifera, custom backend, API kosten
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# Het beste van AI in Beeldgeneratie: De Verborgen API-Kosten Overleven
+# Verborgen Kosten Overleven voor de Best Of AI Image Generation
 Als je een AI SaaS bouwt, is het genereren van tekst ongelooflijk goedkoop. OpenAI's `gpt-4o-mini` kost een fractie van een cent per pagina tekst. Je kunt je gebruikers met gemak onbeperkte tekstgeneratie aanbieden voor een vast abonnement van €20 per maand, zonder dat je winstmarges in gevaar komen.
 
 Maar zodra je **AI-beeldgeneratie** toevoegt aan je app, verandert de wiskunde compleet.

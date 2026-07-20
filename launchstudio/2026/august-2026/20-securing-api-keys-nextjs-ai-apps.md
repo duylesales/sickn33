@@ -1,10 +1,10 @@
 ---
-Title: Securing Third-Party API Keys in Next.js AI Applications
+Title: Subscription Management Beyond the Checkout Button
 Keywords: Api In AI, Securing, Third, Party, API, Keys, Next, AI, Applications
 Buyer Stage: Awareness
 ---
 
-# Securing Third-Party API Keys in Next.js AI Applications
+# Subscription Management Beyond the Checkout Button
 If a hacker steals your Supabase URL, they can annoy you. If a hacker steals your OpenAI API key, they can bankrupt your startup in 48 hours. Malicious scripts actively scrape the internet searching for exposed `sk-proj-` strings, using stolen keys to run massive crypto mining operations or generate spam at your expense. If you are building with Next.js, you must architect your security flawlessly.
 
 ## The Client-Side Vulnerability

@@ -1,11 +1,11 @@
 ---
-Title: "The 10x AI Software Developers: Why Systems Thinking is the New Syntax"
+Title: Why Systems Thinking is the New Syntax for AI Software Developers
 Keywords: AI software developers, AI coding assistant, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Engineering Manager
 ---
 
-# The 10x AI Software Developers: Why Systems Thinking is the New Syntax
+# Why Systems Thinking is the New Syntax for AI Software Developers
 
 <script type="application/ld+json">
 {

@@ -1,10 +1,10 @@
 ---
-Titel: Het verminderen van LCP (Largest Contentful Paint) in AI SaaS-applicaties
+Titel: De Code of AI Ontcijferen voor Niet-Technische Oprichters
 Trefwoorden: Reduceren, LCP, Grootste, Inhoudelijk, Paint, AI, SaaS, Applicaties
 Koperfase: Bewustzijn
 ---
 
-# Vermindering van LCP (Largest Contentful Paint) in AI SaaS-applicaties
+# De Code of AI Ontcijferen voor Niet-Technische Oprichters
 AI-prototypes gebouwd met automatische generatoren zoals Lovable of Cursor zien er vaak prachtig uit, maar onder de motorkap kunnen het prestatie-nachtmerries zijn. De meest kritische prestatiestatistiek waarmee u na de lancering te maken krijgt, is Largest Contentful Paint (LCP). Als het langer dan 2,5 seconden duurt voordat uw app de hoofdinhoud op het scherm weergeeft, bestraft Google uw SEO en verlaten gebruikers uw trechter. Hier leest u hoe u LCP in complexe AI-toepassingen kunt repareren.
 
 ## De valkuil voor weergave aan de clientzijde

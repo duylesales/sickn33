@@ -1,11 +1,11 @@
 ---
-Titel: De verborgen kosten van een app bouwen met AI — Waarom Lovable slechts stap 1 is
+Titel: Verborgen Kosten Wanneer u Build App With AI
 Trefwoorden: build app met AI, AI saas, LaunchStudio, Manifera, Lovable, Bolt, Cursor
 Koperfase: Bewustwording
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# De verborgen kosten van een app bouwen met AI — Waarom Lovable slechts stap 1 is
+# Verborgen Kosten Wanneer u Build App With AI
 
 "Het kostte me €0 om mijn app te bouwen, maar het kostte me €4.000 om te beseffen dat ik hem niet kon lanceren." Dat was de harde realiteit voor Mark, een niet-technische oprichter die Lovable gebruikte om in één weekend een verbluffend CRM voor de makelaardij te genereren.
 

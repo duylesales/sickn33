@@ -1,10 +1,10 @@
 ---
-Titel: Top 5 B2B SaaS-trends voor 2027
+Titel: Top 5 B2B SaaS Trends voor 2027
 Trefwoorden: Top, B2B, SaaS, Trends
 Koperfase: Bewustzijn
 ---
 
-# Top 5 B2B SaaS-trends voor 2027
+# Top 5 B2B SaaS Trends voor 2027
 Het tempo van de technologische veranderingen in B2B-software versnelt. De 'AI Wrapper'-boom van 2023 is officieel dood en vervangen door een volwassen ecosysteem van zeer gespecialiseerde, resultaatgerichte architecturen. Als de roadmap van jouw startup er hetzelfde uitziet als 24 maanden geleden, ben je al achterhaald. Hier zijn de vijf belangrijkste trends die B2B SaaS in 2027 definiëren.
 
 ## 1. Van generatieve naar agentische workflows

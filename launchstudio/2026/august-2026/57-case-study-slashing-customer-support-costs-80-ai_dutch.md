@@ -1,10 +1,10 @@
 ---
-Titel: Casestudy: Kosten voor klantenondersteuning met 80% verlagen
+Titel: Ondersteunende Software For AI Infrastructuur Creëren
 Trefwoorden: Case, Studie, Snijden, Klant, Ondersteuning, Kosten
 Koperfase: overweging
 ---
 
-# Casestudy: kosten voor klantenondersteuning met 80% verlagen
+# Ondersteunende Software For AI Infrastructuur Creëren
 Voor snelgroeiende startups is klantenondersteuning vaak het slachtoffer van succes. Hoe sneller u gebruikers werft, hoe sneller uw ondersteuningswachtrij groeit, waardoor u gedwongen wordt legers van Tier 1-agenten in te huren. Deze casestudy beschrijft hoe LaunchStudio een Series B FinTech-startup ("PayFlow") hielp deze lineaire kostencurve te doorbreken door een aangepaste Retrieval-Augmented Generation (RAG)-architectuur in te zetten, waardoor 62% van hun tickets autonoom werd opgelost en $800.000 aan verwachte loonkosten werd bespaard.
 
 ## De crisis: de Tier 1-ticketlawine

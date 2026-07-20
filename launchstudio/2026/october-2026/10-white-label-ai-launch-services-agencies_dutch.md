@@ -1,11 +1,11 @@
 ---
-Titel: White-Label AI Lanceringsdiensten — Hoe bureaus kunnen profiteren van AI-prototypes
+Titel: White-Label Bureau Diensten voor AI SaaS
 Trefwoorden: AI saas, app bouwen met AI, AI deployment, LaunchStudio, Manifera, Lovable, Bolt
 Koperfase: Overweging
 Doelpersona: C (Bureau / Freelancer White-Label Partner)
 ---
 
-# White-Label AI Lanceringsdiensten — Hoe bureaus kunnen profiteren van AI-prototypes
+# White-Label Bureau Diensten voor AI SaaS
 
 Je klant stapt net je bureau binnen met een Lovable-prototype. Het ziet er prachtig uit. De UX is precies wat ze willen. Ze stellen een simpele vraag: "Kunnen jullie dit volgende maand live krijgen?"
 

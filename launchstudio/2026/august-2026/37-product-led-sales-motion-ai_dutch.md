@@ -1,10 +1,10 @@
 ---
-Titel: De 'Product-Led Sales'-beweging voor AI
+Titel: De Limieten van No Code AI Software voor Enterprise
 Trefwoorden: AI om te coderen, Product, Led, Sales, Motion, AI
 Koperfase: Bewustzijn
 ---
 
-# De 'Product-Led Sales'-motie voor AI
+# De Limieten van No Code AI Software voor Enterprise
 Oprichters zijn geobsedeerd door Product-Led Growth (PLG) – de droom om een softwaretool te bouwen die zo goed is dat duizenden gebruikers zich aanmelden en hun creditcards leeghalen terwijl de oprichter slaapt. Maar PLG heeft een plafond. Een Fortune 500-bedrijf koopt geen softwarelicentie voor 1.000 gebruikers via een zelfbedieningsafrekenpagina. Om de ARR-barrière van $ 1 miljoen te doorbreken, moet u een menselijk verkoopteam bovenop uw zelfbedieningstrechter plaatsen. Dit is de beweging **Product-Led Sales (PLS)**.
 
 ## De beperkingen van pure PLG

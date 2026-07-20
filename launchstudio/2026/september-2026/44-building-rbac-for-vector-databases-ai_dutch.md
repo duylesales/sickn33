@@ -1,10 +1,10 @@
 ---
-Titel: Op rollen gebaseerde toegangscontrole (RBAC) bouwen voor vector-DB's bij het gebruik van AI om te coderen
+Titel: Op Rollen Gebaseerde Toegangscontrole Bouwen voor Vector DBs Bij Gebruik van AI For Coding
 Trefwoorden: AI om te coderen, Gebouw, Rol, Gebaseerd, Toegang, Controle, RBAC, Vector, DB's
 Koperfase: Beslissing
 ---
 
-# Op rollen gebaseerde toegangscontrole (RBAC) bouwen voor vector-DB's bij het gebruik van AI om te coderen
+# Op Rollen Gebaseerde Toegangscontrole Bouwen voor Vector DBs Bij Gebruik van AI For Coding
 Een van de fatale fouten die SaaS-oprichters maken bij het bouwen van ‘AI for the Enterprise’ is het behandelen van de kennisbasis van het bedrijf als een monoliet. Ze dumpen het HR-handboek, het verkoopmateriaal en de zeer geheime fusie- en overnamestrategiedocumenten van de CEO in één enkele vectordatabase. Zonder strikte **Role-Based Access Control (RBAC)** vat de AI graag de M&A-strategie voor een zomerstagiaire samen. Bedrijfsbeveiliging vereist gedetailleerde toegangsbeperkingen op hardwareniveau.
 
 ## Het gevaar van de monolithische index

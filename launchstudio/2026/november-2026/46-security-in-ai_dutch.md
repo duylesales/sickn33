@@ -1,11 +1,11 @@
 ---
-Title: "Security in AI: Bedrijfsdata Beschermen Tegen Prompt Injections en Exfiltratie"
+Title: Enterprise Data Beschermen tegen Prompt Injections met Security in AI
 Keywords: security in AI, AI data security, AI security risk, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CISO / VP of Engineering
 ---
 
-# Security in AI: Bedrijfsdata Beschermen Tegen Prompt Injections en Exfiltratie
+# Enterprise Data Beschermen tegen Prompt Injections met Security in AI
 
 <script type="application/ld+json">
 {

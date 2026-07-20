@@ -1,10 +1,10 @@
 ---
-Titel: Verticale AI: dominante nichemarkten
+Titel: Verticale Modellen voor het Domineren van Niche Markten in Day AI
 Trefwoorden: Day AI, Verticaal, AI, Dominerend, Niche, Markten
 Koperfase: Bewustzijn
 ---
 
-# Verticale AI: dominante nichemarkten
+# Verticale Modellen voor het Domineren van Niche Markten in Day AI
 Als je een AI-tool bouwt die belooft ‘betere e-mails te schrijven’ of ‘documenten samen te vatten’, concurreer je met Microsoft, Google en OpenAI. Je zult verliezen. Het tijdperk van de ‘horizontale’ AI-startup is voorbij. De volgende generatie eenhoornbedrijven zal worden gebouwd in de diepe, niet-sexy loopgraven van specifieke industrieën. Welkom in het tijdperk van **Verticale AI**.
 
 ## Het falen van de generalist

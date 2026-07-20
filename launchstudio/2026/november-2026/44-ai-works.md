@@ -1,11 +1,11 @@
 ---
-Title: "How Generative AI Works Under the Hood: A Guide for Product Managers"
+Title: A Guide for Product Managers on How Generative AI Works
 Keywords: AI works, how AI works, generative AI explained, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: Product Manager / Non-Technical Founder
 ---
 
-# How Generative AI Works Under the Hood: A Guide for Product Managers
+# A Guide for Product Managers on How Generative AI Works
 
 <script type="application/ld+json">
 {

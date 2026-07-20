@@ -1,11 +1,11 @@
 ---
-Title: AI And Software Development: Surviving the Disruption in the Netherlands
+Title: Surviving Disruption in AI And Software Development
 Keywords: AI And Software Development, custom software development, custom software, LaunchStudio, Manifera, Netherlands, AI coding
 Buyer Stage: Awareness
 Target Persona: D (SaaS Founder Scale-Up)
 ---
 
-# AI And Software Development: Surviving the Disruption in the Netherlands
+# Surviving Disruption in AI And Software Development
 For the past decade, custom software development in the Netherlands followed a predictable, highly lucrative script. A corporate client requested an internal dashboard. A Dutch digital agency quoted €50,000 and a 4-month timeline. The agency built it from scratch using React and Node.js, and the client paid. 
 
 In 2026, that model is dead.

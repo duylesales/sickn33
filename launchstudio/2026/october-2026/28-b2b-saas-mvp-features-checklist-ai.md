@@ -1,11 +1,11 @@
 ---
-Title: Using AI For Coding: The B2B SaaS MVP Features Checklist
+Title: B2B SaaS MVP Features Checklist When Using AI For Coding
 Keywords: AI For Coding, b2b saas mvp, b2b saas, LaunchStudio, Manifera, AI app, MVP features
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---
 
-# Using AI For Coding: The B2B SaaS MVP Features Checklist
+# B2B SaaS MVP Features Checklist When Using AI For Coding
 When you are a non-technical founder using AI tools like Bolt.new or Lovable, it is tempting to build everything. Because generating a new dashboard or a settings page only takes a simple text prompt, AI founders often bloat their applications with features they do not need. 
 
 In the B2B SaaS world, feature bloat is the enemy of a successful launch. If you spend three months prompting an AI to build 40 different features, you are wasting time. A Minimum Viable Product (MVP) should do exactly one thing incredibly well, wrapped in the foundational infrastructure required to charge money for it. 

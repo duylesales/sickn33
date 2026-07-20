@@ -1,10 +1,10 @@
 ---
-Titel: Risico's van gegevensexfiltratie in RAG-pijpleidingen voor AI in software-engineering
+Titel: Data Exfiltration Risico's in RAG Pijplijnen voor AI In Software Engineering
 Trefwoorden: AI in software-engineering, Data, Exfiltratie, Risico's, RAG, Pijpleidingen
 Koperfase: Overweging
 ---
 
-# Risico's van gegevensexfiltratie in RAG-pijpleidingen voor AI in software-engineering
+# Data Exfiltration Risico's in RAG Pijplijnen voor AI In Software Engineering
 De magie van een RAG-pijplijn (Retrieval-Augmented Generation) is dat alle uiteenlopende kennis van een bedrijf direct doorzoekbaar wordt. De terreur van een RAG-pijpleiding is precies hetzelfde. Als u de volledige Google Drive van een onderneming in een vectordatabase indexeert zonder strikte beveiligingscontroles uit te voeren, heeft u zojuist het ultieme hulpmiddel voor bedrijfsspionage gebouwd. Het beveiligen van een RAG-pijplijn tegen interne data-exfiltratie is van cruciaal belang.
 
 ## De interne exfiltratiedreiging

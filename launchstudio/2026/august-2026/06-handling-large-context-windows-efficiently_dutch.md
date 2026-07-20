@@ -1,10 +1,10 @@
 ---
-Titel: Efficiënt omgaan met grote contextvensters in AI SaaS
+Titel: Veelvoorkomende AI Vulnerabilities in Early-Stage Producten
 Trefwoorden: Handling, Groot, Context, Windows, Efficiënt, AI, SaaS
 Koperfase: Bewustzijn
 ---
 
-# Efficiënt omgaan met grote contextvensters in AI SaaS
+# Veelvoorkomende AI Vulnerabilities in Early-Stage Producten
 In 2023 worstelden de oprichters met de 4k-tokenlimiet van GPT-3.5. Tegen 2026 bieden modellen van Anthropic en Google contextvensters van 200.000 tot 2 miljoen tokens. De verleiding is om simpelweg hele codebases of bibliotheken met PDF's rechtstreeks in de prompt te dumpen en de AI te vragen het uit te zoeken. Deze ‘brute force’-benadering is een enorme vergissing. Het vernietigt de winstmarges, introduceert ernstige latentie en verslechtert de nauwkeurigheid. Hier leest u hoe u efficiënt met enorme context omgaat.
 
 ## De financiële kosten van 'Context Stuffing'

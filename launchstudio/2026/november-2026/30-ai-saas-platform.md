@@ -1,11 +1,11 @@
 ---
-Title: "Defensible AI in SaaS: Moving Beyond the Thin Wrapper"
+Title: Moving Beyond the Thin Wrapper as an AI SaaS Platform
 Keywords: AI saas platform, AI in saas, AI saas products, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: B2B SaaS Founder / VCs
 ---
 
-# Defensible AI in SaaS: Moving Beyond the Thin Wrapper
+# Moving Beyond the Thin Wrapper as an AI SaaS Platform
 
 <script type="application/ld+json">
 {

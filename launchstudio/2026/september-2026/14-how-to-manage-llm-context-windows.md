@@ -1,10 +1,10 @@
 ---
-Title: How to Manage LLM Context Windows When Leveraging AI To Code
+Title: How to Manage Context Windows When Leveraging AI To Code
 Keywords: AI To Code, Manage, LLM, Context, Windows
 Buyer Stage: Consideration
 ---
 
-# How to Manage LLM Context Windows When Leveraging AI To Code
+# How to Manage Context Windows When Leveraging AI To Code
 In 2023, startups spent months building complex RAG pipelines because LLMs could only process 4,000 tokens at a time. Today, models like Claude 3 offer massive 200,000-token context windows. The temptation for developers is to abandon architecture entirely and simply dump entire SQL databases and 500-page PDFs into the prompt. This "Context Stuffing" approach is the fastest way to bankrupt your SaaS and destroy your response accuracy.
 
 ## The Unit Economics of Context Stuffing

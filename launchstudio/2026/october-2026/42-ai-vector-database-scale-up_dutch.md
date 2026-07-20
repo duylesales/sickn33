@@ -1,11 +1,11 @@
 ---
-Titel: De Zoek-Flessenhals: Vector Databases Schalen voor je AI SaaS
+Titel: Vector Database Infrastructuur Schalen voor AI SaaS
 Trefwoorden: vector database, RAG architectuur, AI SaaS schalen, LaunchStudio, Manifera, Pinecone, pgvector, embeddings
 Koperfase: Beslissing
 Doelpersona: D (SaaS Founder Scale-Up)
 ---
 
-# De Zoek-Flessenhals: Vector Databases Schalen voor je AI SaaS
+# Vector Database Infrastructuur Schalen voor AI SaaS
 
 In de MVP-fase van een AI-startup voelt het bouwen van een Retrieval-Augmented Generation (RAG) systeem als een weekendproject. Je knipt een paar honderd PDF's in stukjes, haalt ze door OpenAI’s embedding model, en dumpt de vectoren in een gratis 'managed' vector database zoals Pinecone.
 

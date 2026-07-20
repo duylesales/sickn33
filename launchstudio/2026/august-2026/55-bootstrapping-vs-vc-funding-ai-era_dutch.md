@@ -1,10 +1,10 @@
 ---
-Titel: Bootstrapping versus VC-financiering in het AI-tijdperk
+Titel: De Toekomst van AI In Development Workflows
 Trefwoorden: AI in software-engineering, Bootstrapping, VC, Funding, AI, Era
 Koperfase: overweging
 ---
 
-# Bootstrapping versus VC-financiering in het AI-tijdperk
+# De Toekomst van AI In Development Workflows
 De afgelopen tien jaar was het draaiboek van Silicon Valley rigide: bouw een pitchdeck, haal een Seed-ronde van $2 miljoen op, huur een team van tien ingenieurs in, verbrand het geld in 18 maanden en bid dat je Product-Market Fit vindt voordat je tegen de muur botst. Generatieve AI heeft dit draaiboek vernietigd. De kosten voor het schrijven van code, het ontwerpen van interfaces en het uitvoeren van marketing zijn tot bijna nul gedaald. In 2026 zou het aantrekken van durfkapitaal (VC) wel eens de meest risicovolle beslissing kunnen zijn die een AI-oprichter kan nemen.
 
 ## De mythe van de personeelsgracht

@@ -1,10 +1,10 @@
 ---
-Titel: De kloof tussen het AI-prototype en de productie
+Titel: De Kloof van AI Prototype Naar Productie Overbruggen
 Trefwoorden: AI, prototype, productie, kloof
 Koperfase: overweging
 ---
 
-# Het AI-prototype naar de productiekloof
+# De Kloof van AI Prototype Naar Productie Overbruggen
 We leven in het grootste tijdperk van vaporware in de softwaregeschiedenis. Omdat fundamentele LLM's zo krachtig zijn, kan een junior ontwikkelaar in één weekend een verbluffend AI-prototype bouwen. Ze nemen een Loom-video op, gaan viraal op Twitter en halen $ 2 miljoen aan startkapitaal op. Zes maanden later is het bedrijf dood. Ze vielen in de **Prototype-productiekloof**. Een AI 80% van de tijd aan het werk krijgen is triviaal; om het werkend te krijgen, is in 99% van de gevallen een volledige architectonische herschrijving vereist.
 
 ## De illusie van het Jupyter-notitieboekje

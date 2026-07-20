@@ -1,10 +1,10 @@
 ---
-Titel: De prestaties van AI-apps in productie monitoren
+Titel: Een Gids voor Oprichters over AI Tools For App Development
 Trefwoorden: AI in app, Monitoring, AI, App, Prestaties, Productie
 Koperfase: overweging
 ---
 
-# Monitoring van AI-app-prestaties in productie
+# Een Gids voor Oprichters over AI Tools For App Development
 Het lanceren van een AI-app is nog maar het begin. Zodra echte gebruikers uw eindpunten beginnen te raken, komt uw applicatie in het wild terecht. Traditionele monitoringtools zoals Sentry vertellen je of je server crasht, maar ze vertellen je niet of je AI nutteloze rommel genereert of in het geheim duizenden dollars aan API-credits verbrandt. Om in de productie te overleven, moet u AI-specifieke observatie (LLMOps) implementeren. Dit is wat u moet bijhouden.
 
 ## De UX-metriek: tijd tot eerste token (TTFT)

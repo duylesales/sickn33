@@ -1,11 +1,11 @@
 ---
-Title: "AI Software Development Is Eating Traditional Agencies — And That Is Good for Founders"
+Title: How AI Software Development Is Eating Traditional Agencies
 Keywords: AI software development, AI and software development, develop AI software, AI software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: SaaS Founder Scale-Up
 ---
 
-# AI Software Development Is Eating Traditional Agencies — And That Is Good for Founders
+# How AI Software Development Is Eating Traditional Agencies
 
 <script type="application/ld+json">
 {

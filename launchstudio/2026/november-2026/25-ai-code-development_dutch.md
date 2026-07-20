@@ -1,11 +1,11 @@
 ---
-Title: "AI Code Development Op Schaal: 100k+ Regels AI-Gegenereerde Code Beheren"
+Title: Grote Codebases Beheren Tijdens AI Code Development
 Keywords: AI code development, code with AI, AI software programming, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / CTO
 ---
 
-# AI Code Development Op Schaal: 100k+ Regels AI-Gegenereerde Code Beheren
+# Grote Codebases Beheren Tijdens AI Code Development
 
 <script type="application/ld+json">
 {

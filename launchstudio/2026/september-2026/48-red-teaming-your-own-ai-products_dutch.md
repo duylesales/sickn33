@@ -1,10 +1,10 @@
 ---
-Titel: Red Teaming uw eigen AI-producten
+Titel: Het Red Teamen van Uw Eigen AI Saas Products
 Trefwoorden: AI SaaS-producten, Rood, Teaming, AI, Producten
-Koperfase: Bewustzijn
+Koperfase: Bewustwording
 ---
 
-# Red Teaming van uw eigen AI-producten
+# Het Red Teamen van Uw Eigen AI Saas Products
 Traditionele software-QA zorgt ervoor dat een klik op de knop gegevens in de database opslaat. AI QA is heel anders. Omdat LLM's natuurlijke taal verwerken, is het aanvalsoppervlak oneindig. Een gebruiker kan letterlijk alles in uw chatinterface typen. Als u een AI-functie voor ondernemingen lanceert zonder deze zelf agressief aan te vallen, lanceert u een enorme kwetsbaarheid. Om te overleven moet je **Red Teaming** omarmen.
 
 ## De vijandige mentaliteit

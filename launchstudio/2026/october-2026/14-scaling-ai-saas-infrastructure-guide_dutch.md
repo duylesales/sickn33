@@ -1,11 +1,11 @@
 ---
-Titel: Je AI SaaS schalen van €10 naar €1.000 MRR — De infrastructuur die je nodig hebt
+Titel: Uw AI SaaS Schalen van $10 naar $1,000 MRR
 Trefwoorden: AI saas, saas AI, LaunchStudio, Manifera, schalen, MVP
 Koperfase: Overweging
 Doelpersona: D (SaaS Founder Scale-Up)
 ---
 
-# Je AI SaaS schalen van €10 naar €1.000 MRR — De infrastructuur die je nodig hebt
+# Uw AI SaaS Schalen van $10 naar $1,000 MRR
 
 Je eerste betalende klant binnenhalen voor een AI SaaS is een fantastische mijlpaal. Je bouwde de MVP met Lovable of Bolt, zette het handmatig live en overtuigde iemand om zijn creditcard te trekken. Maar de stap van je eerste €10 aan Monthly Recurring Revenue (MRR) naar je eerste €1.000 MRR vereist een fundamentele verandering in hoe je je software behandelt.
 

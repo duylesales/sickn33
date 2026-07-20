@@ -1,11 +1,11 @@
 ---
-Title: "Van Intern Script Naar B2B SaaS: Een AI Gegenereerde Tool Productiseren"
+Title: Uw Interne Script Productiseren naar een AI Generated Tool
 Keywords: AI generated tool, productize AI tool, AI saas platform, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Non-Technical Founder / Agency Owner
 ---
 
-# Van Intern Script Naar B2B SaaS: Een AI Gegenereerde Tool Productiseren
+# Uw Interne Script Productiseren naar een AI Generated Tool
 
 <script type="application/ld+json">
 {

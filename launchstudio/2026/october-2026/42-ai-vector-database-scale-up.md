@@ -1,11 +1,11 @@
 ---
-Title: The Retrieval Bottleneck: Scaling Vector Databases for Your AI SaaS
+Title: Scaling Vector Database Infrastructure for AI SaaS
 Keywords: vector database, RAG architecture, AI SaaS scale, LaunchStudio, Manifera, Pinecone, pgvector, embeddings
 Buyer Stage: Decision
 Target Persona: D (SaaS Founder Scale-Up)
 ---
 
-# The Retrieval Bottleneck: Scaling Vector Databases for Your AI SaaS
+# Scaling Vector Database Infrastructure for AI SaaS
 
 In the MVP stage of an AI startup, building a Retrieval-Augmented Generation (RAG) system feels like a weekend project. You chunk a few hundred PDFs, run them through OpenAI’s embedding model, and dump the vectors into a free tier of a managed vector database like Pinecone. 
 

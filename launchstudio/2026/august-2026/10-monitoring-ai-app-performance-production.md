@@ -1,10 +1,10 @@
 ---
-Title: Monitoring AI App Performance in Production
+Title: A Founder's Guide to AI Tools For App Development
 Keywords: AI In App, Monitoring, AI, App, Performance, Production
 Buyer Stage: Consideration
 ---
 
-# Monitoring AI App Performance in Production
+# A Founder's Guide to AI Tools For App Development
 Launching an AI app is only the beginning. Once real users start hitting your endpoints, your application enters the wild. Traditional monitoring tools like Sentry will tell you if your server crashes, but they will not tell you if your AI is generating useless garbage or secretly burning thousands of dollars in API credits. To survive in production, you must implement AI-specific observability (LLMOps). Here is what you need to track.
 
 ## The UX Metric: Time to First Token (TTFT)

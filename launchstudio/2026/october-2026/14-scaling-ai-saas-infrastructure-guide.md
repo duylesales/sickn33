@@ -1,11 +1,11 @@
 ---
-Title: Scaling Your AI SaaS from $10 to $1,000 MRR — The Infrastructure You Need
+Title: Scaling Your AI SaaS from $10 to $1,000 MRR
 Keywords: AI saas, saas AI, LaunchStudio, Manifera, scaling, MVP
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)
 ---
 
-# Scaling Your AI SaaS from $10 to $1,000 MRR — The Infrastructure You Need
+# Scaling Your AI SaaS from $10 to $1,000 MRR
 
 Getting your first paying customer for an AI SaaS is a thrilling milestone. You built the MVP with Lovable or Bolt, manually deployed it, and convinced someone to hand over their credit card. But moving from your first $10 in Monthly Recurring Revenue (MRR) to your first $1,000 MRR requires a fundamental shift in how you treat your software. 
 

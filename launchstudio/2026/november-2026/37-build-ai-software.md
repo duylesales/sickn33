@@ -1,11 +1,11 @@
 ---
-Title: "Build AI Software: The Transition from Prompt Engineering to AI Engineering"
+Title: Transitioning from Prompt Engineering to Build AI Software
 Keywords: build AI software, build AI app, AI engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Senior Software Engineer
 ---
 
-# Build AI Software: The Transition from Prompt Engineering to AI Engineering
+# Transitioning from Prompt Engineering to Build AI Software
 
 <script type="application/ld+json">
 {

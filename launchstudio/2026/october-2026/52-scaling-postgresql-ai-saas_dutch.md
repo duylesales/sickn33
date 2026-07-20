@@ -1,11 +1,11 @@
 ---
-Titel: Bezwijken onder Druk: PostgreSQL Schalen voor AI SaaS
+Titel: Bezwijken Onder Druk bij Scaling PostgreSQL voor AI SaaS
 Trefwoorden: Scaling PostgreSQL, AI SaaS, Supabase, database connection pooling, pgvector, LaunchStudio, Manifera, B2B SaaS architectuur
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# Bezwijken onder Druk: PostgreSQL Schalen voor AI SaaS
+# Bezwijken Onder Druk bij Scaling PostgreSQL voor AI SaaS
 
 PostgreSQL is de onbetwiste koning van moderne SaaS-databases. Met de toevoeging van de `pgvector` extensie is het ook de absolute standaard geworden voor AI-startups. Het stelt oprichters in staat om gebruikersaccounts, facturatiedata én AI-embeddings in één verenigde database op te slaan.
 

@@ -1,11 +1,11 @@
 ---
-Titel: AI SaaS Prijsstrategie — Waarom Freemium AI Startups Vernietigt
+Titel: Waarom Freemium AI SaaS Startups Doodt
 Trefwoorden: AI saas, saas AI, LaunchStudio, Manifera, pricing strategy, AI API kosten
 Koperfase: Overweging
 Doelpersona: D (SaaS Founder Scale-Up)
 ---
 
-# AI SaaS Prijsstrategie — Waarom Freemium AI Startups Vernietigt
+# Waarom Freemium AI SaaS Startups Doodt
 
 In de traditionele SaaS-wereld is het "freemium" model de heilige graal voor groei. Je laat gebruikers zich gratis aanmelden en converteert uiteindelijk een klein percentage naar betaalde abonnementen. Omdat traditionele SaaS vrijwel geen marginale kosten heeft, is het weggeven van serverruimte een berekende marketinguitgave.
 

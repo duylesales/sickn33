@@ -1,10 +1,10 @@
 ---
-Titel: Fouttolerante Pijplijnen Bouwen met BullMQ Wanneer Je Gaat Coderen met AI
+Titel: Fouttolerante Pijplijnen Bouwen Wanneer U Code With AI
 Trefwoorden: Coderen met AI, Gebouw, Fout, Tolerant, AI, Pijpleidingen, BullMQ
 Koperfase: Bewustwording
 ---
 
-# Fouttolerante Pijplijnen Bouwen met BullMQ Wanneer Je Gaat Coderen met AI
+# Fouttolerante Pijplijnen Bouwen Wanneer U Code With AI
 Als u een AI-applicatie bouwt waarbij de op de gebruiker gerichte webserver rechtstreeks verbinding maakt met de OpenAI API, is uw applicatie structureel kwetsbaar. LLM's van derden zijn traag, hanteren agressieve tarieflimieten en gaan regelmatig offline. Als uw Node.js-server crasht terwijl u wacht op een AI-generatie van 30 seconden, gaan de gegevens van die gebruiker permanent verloren. Om veerkracht op ondernemingsniveau op te bouwen, moet u opname en uitvoering loskoppelen met behulp van een berichtenwachtrij. In het Node-ecosysteem is **BullMQ** de gouden standaard, ondersteund door Redis.
 
 ## De architectuur van ontkoppeling

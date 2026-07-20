@@ -1,11 +1,11 @@
 ---
-Titel: AI in software-engineering: Hoe Je Technical Debt Overleeft in Je Scale-Up
+Titel: Technische Schuld Overleven met AI In Software Engineering
 Trefwoorden: AI in software-engineering, technical debt, AI MVP, scale-up, LaunchStudio, Manifera, legacy code, software refactoring, technische schuld
 Koperfase: Overweging
 Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# AI in software-engineering: Hoe Je Technical Debt Overleeft in Je Scale-Up
+# Technische Schuld Overleven met AI In Software Engineering
 Wanneer je je eerste AI Minimum Viable Product (MVP) bouwt, is snelheid je enige metriek. Je neemt sluiproutes. Je hardcodeert API-sleutels om de demo werkend te krijgen. Je slaat het schrijven van geautomatiseerde tests over. Je propt al je bedrijfslogica in gigantische, onleesbare React-componenten omdat je vóór vrijdag moet lanceren.
 
 Deze aanpak is juist. In het begin is het doel om de markt te valideren, niet om perfecte software te bouwen.

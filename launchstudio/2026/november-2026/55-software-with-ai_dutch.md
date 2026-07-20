@@ -1,11 +1,11 @@
 ---
-Title: "Software With AI: Wanneer Wordt een Legacy Applicatie Obsoleet?"
+Title: Wanneer Wordt een Legacy Applicatie Verouderde Software With AI?
 Keywords: software with AI, AI software products, AI software app, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: SaaS Founder / VP of Product
 ---
 
-# Software With AI: Wanneer Wordt een Legacy Applicatie Obsoleet?
+# Wanneer Wordt een Legacy Applicatie Verouderde Software With AI?
 
 <script type="application/ld+json">
 {

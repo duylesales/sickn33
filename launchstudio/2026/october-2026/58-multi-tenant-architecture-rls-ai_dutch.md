@@ -1,11 +1,11 @@
 ---
-Titel: Day AI: Multi-Tenant Architecturen Beveiligen Tegen Kruisbesmetting
+Titel: Multi-Tenant Architecturen Beveiligen voor Day AI
 Trefwoorden: Day AI, Multi-Tenant Architecture, Row-Level Security, Supabase RLS, AI database isolatie, B2B SaaS security, LaunchStudio, Manifera, RAG security
 Koperfase: Overweging
 Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# Day AI: Multi-Tenant Architecturen Beveiligen Tegen Kruisbesmetting
+# Multi-Tenant Architecturen Beveiligen voor Day AI
 Wanneer je een B2B SaaS bouwt, volgt je database-architectuur vrijwel altijd een "Multi-Tenant" model. Om serverkosten te besparen, sla je de data van Bedrijf A en Bedrijf B op in exact dezelfde database, vaak zelfs in exact dezelfde tabel.
 
 In een traditionele web-app is het scheiden van die data eenvoudig. Je backend plakt simpelweg `WHERE tenant_id = 'BedrijfA'` achter elke SQL-zoekopdracht.

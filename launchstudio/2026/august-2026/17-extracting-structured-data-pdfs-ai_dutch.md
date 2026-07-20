@@ -1,10 +1,10 @@
 ---
-Titel: Gestructureerde gegevens uit PDF's extraheren met AI
+Titel: Hoe u AI Bugs in Generatieve Outputs Vermijdt
 Trefwoorden: Coderen met AI, Extraheren, Gestructureerd, Gegevens, PDF's, AI
 Koperfase: Bewustzijn
 ---
 
-# Gestructureerde gegevens uit PDF's extraheren met AI
+# Hoe u AI Bugs in Generatieve Outputs Vermijdt
 In B2B-software zijn data alles. Toch zit de overgrote meerderheid van waardevolle bedrijfsgegevens (facturen, juridische contracten, medische dossiers en supply chain-manifesten) gevangen in PDF's. Historisch gezien waren voor het extraheren van deze gegevens kwetsbare OCR-sjablonen (Optical Character Recognition) nodig die kapot gingen zodra een leverancier zijn logo veranderde. Tegenwoordig hebben multimodale AI-modellen dit probleem volledig opgelost, waardoor enorme kansen zijn ontstaan ​​voor verticale AI-startups.
 
 ## Het falen van traditionele parsers

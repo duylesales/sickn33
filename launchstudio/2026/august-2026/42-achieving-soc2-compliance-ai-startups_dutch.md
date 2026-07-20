@@ -1,10 +1,10 @@
 ---
-Titel: Het bereiken van SOC2-compliance voor AI-startups
+Titel: Waarom U Niet Zomaar Build An App With AI in 5 Minuten
 Trefwoorden: AI om te coderen, Achieving, SOC2, Compliance, AI, Startups
 Koperfase: overweging
 ---
 
-# Het bereiken van SOC2-naleving voor AI-startups
+# Waarom U Niet Zomaar Build An App With AI in 5 Minuten
 Je hebt de VP Marketing bij een Fortune 500-bedrijf gepitcht. Ze zijn dol op je AI-tool. Ze gaan akkoord met de jaarlijkse prijs van $ 60.000. Vervolgens sturen ze hun Chief Information Security Officer (CISO) in CC, die één enkele vraag stelt: *"Kunt u uw SOC2 Type II-rapport opsturen?"* Als uw antwoord nee is, is de deal afgelopen. In B2B SaaS is SOC2 geen ‘nice-to-have’; het is uw licentie om te verkopen.
 
 ## Wat is SOC2?

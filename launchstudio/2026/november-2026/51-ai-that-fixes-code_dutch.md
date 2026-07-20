@@ -1,11 +1,11 @@
 ---
-Title: "AI That Fixes Code: De Verschuiving van Auto-Complete naar Auto-Remediation"
+Title: De Verschuiving van Auto-Complete naar AI That Fixes Code
 Keywords: AI that fixes code, AI coding, AI software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: VP of Engineering / CTO
 ---
 
-# AI That Fixes Code: De Verschuiving van Auto-Complete naar Auto-Remediation
+# De Verschuiving van Auto-Complete naar AI That Fixes Code
 
 <script type="application/ld+json">
 {

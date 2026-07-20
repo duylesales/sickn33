@@ -1,11 +1,11 @@
 ---
-Title: "AI Prototype: Waarom 90% van de AI Proof-of-Concepts Faalt in Productie"
+Title: Waarom Proof-of-Concepts Falen in Productie met een AI Prototype
 Keywords: AI prototype, prototype AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Founder
 ---
 
-# AI Prototype: Waarom 90% van de AI Proof-of-Concepts Faalt in Productie
+# Waarom Proof-of-Concepts Falen in Productie met een AI Prototype
 
 <script type="application/ld+json">
 {

@@ -1,11 +1,11 @@
 ---
-Titel: AI Deployment — Vercel vs. Netlify vs. Railway voor React Apps
+Titel: React App AI Deployment op Vercel vs. Netlify
 Trefwoorden: AI deployment, AI database, AI native, LaunchStudio, Manifera, Cursor, Bolt
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# AI Deployment — Vercel vs. Netlify vs. Railway voor React Apps
+# React App AI Deployment op Vercel vs. Netlify
 
 Je hebt Cursor gebruikt om een foutloos React-dashboard te genereren. Je hebt een Supabase-database gekoppeld. De app draait perfect op `localhost:3000`. Nu komt de bottleneck waar talloze technische solo-oprichters over struikelen: AI deployment.
 

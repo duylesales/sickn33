@@ -1,10 +1,10 @@
 ---
-Titel: De economie van open source versus API-modellen
+Titel: De Economics van Open-Source vs API Modellen
 Trefwoorden: Economie, Open, Bron, API, Modellen
 Koperfase: overweging
 ---
 
-# De economie van open source versus API-modellen
+# De Economics van Open-Source vs API Modellen
 Elke AI-oprichter komt uiteindelijk op een kruispunt: *"Mijn OpenAI API-rekening heeft deze maand net de $5.000 overschreden. Moet ik deze eruit halen en in plaats daarvan een gratis, open-sourcemodel zoals Llama 3 hosten?"* Het antwoord is zelden een eenvoudig "ja." De beslissing tussen het vertrouwen op beheerde API's versus zelf-hostende open-source LLM's is een complexe afweging die gepaard gaat met ruwe serverkosten, technische overhead en bedrijfsgegevensprivacy.
 
 ## De allure van de API

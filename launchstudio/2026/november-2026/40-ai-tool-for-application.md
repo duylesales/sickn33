@@ -1,11 +1,11 @@
 ---
-Title: "AI Tool for Application Modernization: The Strangler Fig Pattern Meets LLMs"
+Title: The Strangler Fig Pattern using an AI Tool for Application Modernization
 Keywords: AI tool for application, application modernization, enterprise AI, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: Enterprise Architect / VP of Engineering
 ---
 
-# AI Tool for Application Modernization: The Strangler Fig Pattern Meets LLMs
+# The Strangler Fig Pattern using an AI Tool for Application Modernization
 
 <script type="application/ld+json">
 {

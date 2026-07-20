@@ -1,11 +1,11 @@
 ---
-Titel: De Serverless Belasting: Kostenoptimalisatie voor Schalende AI SaaS
+Titel: Serverless Tax en Cost Optimization voor AI SaaS
 Trefwoorden: Cost optimization, serverless architectuur, dedicated servers, AI inference, AWS EC2, Vercel kosten, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: D (SaaS Founder Scale-Up)
 ---
 
-# De Serverless Belasting: Kostenoptimalisatie voor Schalende AI SaaS
+# Serverless Tax en Cost Optimization voor AI SaaS
 
 Serverless architectuur is de ultieme 'cheat code' voor het lanceren van een MVP. Platformen zoals Vercel en AWS Lambda stellen je in staat om binnen enkele minuten een AI-applicatie live te zetten, zónder ooit een Linux-server aan te raken. Je betaalt uitsluitend voor de exacte milliseconden dat je code draait.
 

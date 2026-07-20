@@ -1,11 +1,11 @@
 ---
-Titel: De Anatomie van een AI-Native Startup — Snelle Frontends, Geharde Backends
+Titel: Snelle Frontends en Verharde Backends in AI Native Startups
 Trefwoorden: AI native, AI tech startup, LaunchStudio, Manifera, Cursor, Next.js
 Koperfase: Bewustwording
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# De Anatomie van een AI-Native Startup — Snelle Frontends, Geharde Backends
+# Snelle Frontends en Verharde Backends in AI Native Startups
 Er ontstaat een nieuw soort bedrijf: de AI-native startup. Deze bedrijven gebruiken niet zomaar "AI-functies"; ze gebruiken AI om de manier waarop software wordt gebouwd fundamenteel te veranderen.
 
 Twee jaar geleden besteedde een technische solo-oprichter drie maanden aan het schrijven van React-componenten en CSS. Vandaag de dag genereert diezelfde oprichter de volledige frontend in één weekend met tools als Cursor of Bolt.

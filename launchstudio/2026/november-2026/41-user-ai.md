@@ -1,11 +1,11 @@
 ---
-Title: "User AI Interfaces: Moving Beyond the Chatbot Paradigm with Generative UI"
+Title: Moving Beyond the Chatbot Paradigm with User AI Interfaces
 Keywords: user AI, AI user interface, AI ux design, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: VP of Product / UX Architect
 ---
 
-# User AI Interfaces: Moving Beyond the Chatbot Paradigm with Generative UI
+# Moving Beyond the Chatbot Paradigm with User AI Interfaces
 
 <script type="application/ld+json">
 {

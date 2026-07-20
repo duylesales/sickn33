@@ -1,11 +1,11 @@
 ---
-Title: "Gebruik AI om Code te Genereren, Gebruik Mensen om het te Beheren: De Opkomst van het Internal Developer Portal"
+Title: Waarom Ontwikkelaars Use AI to Generate Code maar Mensen om het te Beheren
 Keywords: use AI to generate code, AI can code, AI code governance, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: VP of Engineering / CTO
 ---
 
-# Gebruik AI om Code te Genereren, Gebruik Mensen om het te Beheren: De Opkomst van het Internal Developer Portal
+# Waarom Ontwikkelaars Use AI to Generate Code maar Mensen om het te Beheren
 
 <script type="application/ld+json">
 {

@@ -1,10 +1,10 @@
 ---
-Titel: LLM-contextvensters beheren bij het benutten van AI om te coderen
+Titel: Hoe Context Windows te Beheren Bij Inzet van AI To Code
 Trefwoorden: AI om te coderen, Beheren, LLM, Context, Windows
 Koperfase: Overweging
 ---
 
-# LLM-contextvensters beheren bij het benutten van AI om te coderen
+# Hoe Context Windows te Beheren Bij Inzet van AI To Code
 In 2023 waren startups maanden bezig met het bouwen van complexe RAG-pijplijnen, omdat LLM’s slechts 4.000 tokens tegelijk konden verwerken. Tegenwoordig bieden modellen zoals Claude 3 enorme contextvensters van 200.000 tokens. De verleiding voor ontwikkelaars is om de architectuur volledig achter zich te laten en simpelweg hele SQL-databases en pdf's van 500 pagina's in de prompt te dumpen. Deze ‘Context Stuffing’-aanpak is de snelste manier om uw SaaS failliet te laten gaan en uw reactienauwkeurigheid te vernietigen.
 
 ## De eenheidseconomie van contextvulling

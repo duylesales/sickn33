@@ -1,10 +1,10 @@
 ---
-Title: The Mathematics of OpenAI Profit Margins Behind the Best Of AI
+Title: The Mathematics of Profit Margins Behind the Best Of AI
 Keywords: Best Of AI, Mathematics, OpenAI, Profit, Margins
 Buyer Stage: Consideration
 ---
 
-# The Mathematics of OpenAI Profit Margins Behind the Best Of AI
+# The Mathematics of Profit Margins Behind the Best Of AI
 Venture Capitalists evaluate software companies based on Gross Margins. If you build a beautiful AI application but it costs you $0.80 in compute to generate $1.00 in revenue, your startup is uninvestable. Most founders guess their subscription pricing based on what their competitors charge. In the AI sector, guessing is fatal. You must mathematically calculate your unit economics down to the individual token.
 
 ## Calculating Cost Per Query (CPQ)

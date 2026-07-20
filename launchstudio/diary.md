@@ -2,6 +2,18 @@
 
 ## 2026
 
+### Tháng 07
+
+#### Ngày 17
+
+- **16:19**: Cập nhật các việc đã làm trong ngày (xử lý nội dung hàng loạt cho content tháng 7-10/2026):
+  - Viết lại và dịch các bài social posts của các tháng 7, 8, 9, 10 năm 2026 sang tiếng Anh và tiếng Hà Lan (Dutch).
+  - Tối ưu SEO: cập nhật đồng loạt tiêu đề bài viết với từ khóa SEO, đồng thời dịch các từ khóa và tiêu đề sang tiếng Hà Lan.
+  - Chỉnh sửa và viết lại tiêu đề SEO thủ công (chia thành các batch nhỏ) cho các bài viết thuộc tháng 9 và tháng 10 năm 2026.
+  - Chuẩn hóa định dạng: sửa lỗi viết hoa từ khóa "AI" đồng loạt trên toàn bộ các file markdown.
+  - Dọn dẹp: xóa các file social posts tạo bị lỗi trùng lặp (do sai base name).
+  - Sử dụng các script Python (như `rewrite_batch_1.py`, `check_orphans.py`...) để xử lý file tự động và cập nhật tiến độ vào `content_inventory.md`.
+
 ### Tháng 06
 
 #### Ngày 30
@@ -146,4 +158,118 @@
 - **11:54**: push folder launchstudio và manifera lên lại git
 - **11:19**: hãy làm các file tổng hợp tương tự như các file của launchstudio : @[/Users/duyle/sickn33/launchstudio/case_studies.md]@[/Users/duyle/sickn33/launchstudio/content_calendar.md]@[/Users/duyle/sickn33/launchstudio/content_inventory.md]@[/Users/duyle/sickn33/launchstudio/content_report.md]@[/Users/duyle/sickn33/launchstudio/decision_content.md]@[/Users/duyle/sickn33/launchstudio/email_sequences.md]@[/Users/duyle/sickn33/launchstudio/implementation_plan.md]@[/Users/duyle/sickn33/launchstudio/walkthrough.md] cho dự án manifera này
 - **11:05**: hãy nghiên cứu chuyên sâu Marketing về manifera.com và lập kế hoạch viết content trong 6 tháng cuối năm 2026 lưu ý các file là md và có cấu trúc Schema(có img để trống) và FAG. (cách làm tương tự như đã làm với LaunchStudio) và tất cả làm bằng tiếng Anh lưu vào folder manifera
+
+
+
+## Lịch sử công việc hệ thống (Git Log - Từ trước tới nay)
+
+*Phần này tổng hợp toàn bộ các việc đã thực hiện (commits) cho dự án LaunchStudio từ ngày đầu tiên.*
+
+### Tháng 07
+
+#### Ngày 17
+
+- **16:05**: chore(seo): manually rewrite titles for files 41 to 45 in september 2026 (commit: `cfff6e0`)
+- **16:03**: chore(seo): manually rewrite titles for files 36 to 40 in september 2026 (commit: `2bad715`)
+- **16:02**: chore(seo): manually rewrite titles for files 31 to 35 in september 2026 (commit: `173c176`)
+- **16:00**: chore(seo): manually rewrite titles for files 26 to 30 in september 2026 (commit: `a6bbdc7`)
+- **15:57**: chore(seo): manually rewrite titles for files 21 to 25 in september 2026 (commit: `79565b2`)
+- **15:55**: chore(seo): manually rewrite titles for files 16 to 20 in september 2026 (commit: `8a35ed6`)
+- **15:53**: chore(seo): manually rewrite titles for files 11 to 15 in september 2026 (commit: `df01fc9`)
+- **15:51**: chore(seo): manually rewrite titles for files 6 to 10 in september 2026 (commit: `f2cd15e`)
+- **15:48**: chore(seo): manually rewrite titles for files 1 to 5 in september 2026 (commit: `7f8d6d9`)
+- **15:43**: chore(content): delete accidentally created duplicate social posts with wrong base names (commit: `6720c8e`)
+- **15:40**: chore(seo): manually rewrite titles for files 50 to 60 in october 2026 (commit: `075a830`)
+- **15:30**: chore(seo): manually rewrite titles for files 45 to 49 in october 2026 (commit: `1bd4d5b`)
+- **15:27**: chore(seo): manually rewrite titles for files 38 to 44 in october 2026 (commit: `b70f96c`)
+- **15:24**: chore(seo): manually rewrite titles for files 32 to 37 in october 2026 (commit: `5ae44ee`)
+- **15:21**: chore(seo): manually rewrite titles for files 26 to 30 in october 2026 (commit: `d6b21e5`)
+- **15:17**: chore(seo): remove automatically added keywords and manually rewrite 5 more titles (commit: `0e692ce`)
+- **15:11**: chore(seo): manually rewrite titles for first 5 articles in october 2026 (commit: `215030d`)
+- **15:04**: chore(seo): translate SEO keywords and update Dutch titles (commit: `8880813`)
+- **15:00**: style: fix capitalization of AI across all markdown files (commit: `122b52a`)
+- **14:58**: chore(seo): bulk update article titles with SEO keywords (commit: `8ae0457`)
+- **14:08**: feat(content): complete October 2026 social posts and update inventory (commit: `16b4637`)
+- **13:58**: Rewrite September 2026 social posts in English and Dutch (commit: `dd993f0`)
+- **13:49**: chore: rewrite 60 social posts for august 2026 in english and dutch (commit: `441da20`)
+- **13:34**: Add translated and restyled social media articles for July 2026 and December 2026 implementation plan (commit: `aa0a2fc`)
+
+#### Ngày 16
+
+- **17:35**: Update content inventory, prompts and generate December 2026 articles (commit: `094d819`)
+
+#### Ngày 14
+
+- **11:13**: Add generated images for September 2026 articles 01 to 15 (commit: `dcedd61`)
+
+#### Ngày 10
+
+- **10:42**: Update content inventory formatting and newly generated images (commit: `34232f2`)
+
+#### Ngày 01
+
+- **17:47**: Update SEO/GEO master briefs for Manifera and LaunchStudio, and clean up template articles (commit: `84d2827`)
+
+### Tháng 06
+
+#### Ngày 30
+
+- **22:17**: feat: generate and crop illustrations for LaunchStudio articles 20 to 35 (commit: `9fd3a24`)
+- **14:49**: Add illustrations for October 2026 articles (13 to 19) (commit: `abc2432`)
+- **10:31**: Add generated illustration images for October and December 2026 articles (commit: `0e64837`)
+
+#### Ngày 29
+
+- **22:02**: feat: generate 10 premium thumbnails for February 2027 articles, update diary (commit: `16fd23c`)
+- **16:15**: chore: update 2027 content strategy, generate february batch, remove 2028, update diary (commit: `00f6672`)
+- **10:27**: Add newly generated illustrations for articles 31-41 (commit: `d9d66eb`)
+
+#### Ngày 26
+
+- **17:44**: Add September 2026 article illustrations and update diary (commit: `3a411dc`)
+- **08:43**: feat(launchstudio): generate and crop illustrations for August & December 2026 articles, update diary (commit: `179cdeb`)
+
+#### Ngày 25
+
+- **17:31**: chore: SEO content optimization (2026-2028), structured folders, removed IDs and rewritten duplicates (commit: `165a1b4`)
+- **09:34**: Add newly generated images for articles 23-34 (commit: `73692de`)
+
+#### Ngày 24
+
+- **16:29**: Add newly generated social posts and translations (commit: `4c37845`)
+- **15:57**: Reduce font size to 12% in content_inventory (commit: `8f4d2b8`)
+- **15:56**: Reduce font size in content_inventory (commit: `454fa71`)
+- **15:54**: Move py files to sys folder (commit: `864c507`)
+- **15:53**: Update contents: 2027 inventory, diary, prompts, images (commit: `07079bf`)
+- **09:24**: Add generated illustrations for July 2026 articles and update diary/inventory (commit: `4694e24`)
+
+#### Ngày 23
+
+- **16:31**: chore: update prompt styles, log entries, and add new illustrations for posts 38 to 44 (commit: `fc51ee8`)
+
+#### Ngày 22
+
+- **17:06**: Translate all LaunchStudio articles to Dutch and fix markdown table alignment (commit: `e10ae91`)
+
+#### Ngày 21
+
+- **15:15**: feat(design): optimize articles and add custom illustrations for july-2026 (articles 12-15) (commit: `126e032`)
+- **14:54**: design: add cropped 16:9 illustration for 7 signs article (commit: `6cd412f`)
+- **13:54**: feat: optimize and clean up launchstudio articles for September, October, November, and December 2026, and update content inventory (commit: `d25a601`)
+
+#### Ngày 19
+
+- **17:59**: Optimize LaunchStudio SEO articles, add case studies, and images (commit: `7425be7`)
+
+#### Ngày 18
+
+- **15:30**: Organize html files and update diaries/prompts (commit: `db74b4e`)
+- **15:08**: Update diaries and numbering in content inventories (commit: `c301980`)
+- **09:25**: Generate 2027 content and reorganize sys folders (commit: `5d4e5f3`)
+
+#### Ngày 17
+
+- **17:19**: Add automatically generated social media posts and scripts for launchstudio and manifera (commit: `8714084`)
+- **10:46**: Add launchstudio directory with marketing assets and articles (commit: `5659836`)
+
 

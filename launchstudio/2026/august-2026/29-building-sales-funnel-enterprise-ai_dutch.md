@@ -1,10 +1,10 @@
 ---
-Titel: Een verkooptrechter bouwen voor AI-software voor ondernemingen
+Titel: Building een Verkooptrechter voor Enterprise AI Software
 Trefwoorden: AI voor software-engineering, Bouwen, Verkoop, Funnel, Enterprise, AI, Software
 Koperfase: Bewustzijn
 ---
 
-# Een verkooptrechter bouwen voor AI-software voor ondernemingen
+# Building een Verkooptrechter voor Enterprise AI Software
 Self-service SaaS ("Product-Led Growth") werkt uitstekend als u een AI-beeldgenerator van $ 29/maand aan freelancers verkoopt. Het mislukt spectaculair als je een autonome data-extractiepijplijn ter waarde van €50.000 per jaar verkoopt aan een multinationaal logistiek bedrijf. Enterprise-verkoop vereist een fundamenteel andere architectuur: Sales-Led Growth. Hier leest u hoe u een B2B AI-verkooptrechter kunt bouwen die enorme contracten omzet.
 
 ## De 'Boek een demo'-gateway

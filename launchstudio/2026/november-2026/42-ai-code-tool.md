@@ -1,11 +1,11 @@
 ---
-Title: "Selecting the Right AI Code Tool: A CTO's Guide to Enterprise Compliance"
+Title: A CTO's Guide to Selecting the Right AI Code Tool
 Keywords: AI code tool, AI developer tools, AI coding, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CTO / CISO
 ---
 
-# Selecting the Right AI Code Tool: A CTO's Guide to Enterprise Compliance
+# A CTO's Guide to Selecting the Right AI Code Tool
 
 <script type="application/ld+json">
 {

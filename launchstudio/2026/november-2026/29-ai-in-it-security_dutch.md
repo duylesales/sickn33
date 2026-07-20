@@ -1,11 +1,11 @@
 ---
-Title: "AI in IT Security: De CISO Audit Overleven Met Een AI-Native Applicatie"
+Title: De CISO Audit Halen met AI in IT Security
 Keywords: AI in it security, AI data security, AI security monitoring, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: B2B SaaS Founder / CTO
 ---
 
-# AI in IT Security: De CISO Audit Overleven Met Een AI-Native Applicatie
+# De CISO Audit Halen met AI in IT Security
 
 <script type="application/ld+json">
 {

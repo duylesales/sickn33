@@ -1,11 +1,11 @@
 ---
-Title: "AI Vulnerabilities in Production: Defending Against Denial of Wallet and Prompt Injection"
+Title: Defending Against Prompt Injection and AI Vulnerabilities
 Keywords: AI vulnerabilities, AI security risks, AI hack, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Technical Founder
 ---
 
-# AI Vulnerabilities in Production: Defending Against Denial of Wallet and Prompt Injection
+# Defending Against Prompt Injection and AI Vulnerabilities
 
 <script type="application/ld+json">
 {

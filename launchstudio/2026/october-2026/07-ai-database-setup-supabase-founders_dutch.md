@@ -1,11 +1,11 @@
 ---
-Titel: AI Database Setup — Waarom je Supabase-prototype zal instorten onder 100 echte gebruikers
+Titel: AI Deployment Gids voor het Beveiligen van Supabase
 Trefwoorden: AI deployment, AI security, secure AI, supabase setup, LaunchStudio, Manifera, Cursor, AI database
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# AI Database Setup — Waarom je Supabase-prototype zal instorten onder 100 echte gebruikers
+# AI Deployment Gids voor het Beveiligen van Supabase
 
 Je AI-tool genereerde een perfect ogend databaseschema. De tabellen zijn genormaliseerd, de foreign keys zijn correct gelinkt en de CRUD-operaties werken vlekkeloos in je lokale omgeving. Het voelt als een enorme overwinning. Hier is de ongemakkelijke waarheid: je door AI gegenereerde Supabase-backend zal waarschijnlijk instorten zodra je de grens van 100 gelijktijdige echte gebruikers passeert, en het zal hun gegevens blootstellen nog voordat dat gebeurt.
 

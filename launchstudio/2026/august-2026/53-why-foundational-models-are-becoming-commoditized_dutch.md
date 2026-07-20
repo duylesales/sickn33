@@ -1,10 +1,10 @@
 ---
-Titel: Waarom fundamentele modellen steeds meer gemeengoed worden
+Titel: Wanneer u Use AI To Generate Code in Productie
 Trefwoorden: Fundamenteel, Modellen, Worden, Commoditized
 Koperfase: Bewustzijn
 ---
 
-# Waarom fundamentele modellen steeds meer gecommoditiseerd worden
+# Wanneer u Use AI To Generate Code in Productie
 Eind 2022 voelde toegang tot GPT-3 als magie. Startups haalden miljoenen dollars op door simpelweg een mooie gebruikersinterface bovenop de OpenAI API te bouwen, omdat ze toegang boden tot een schaarse hulpbron: intelligentie. Fast forward naar 2026, en die schaarste is verdampt. Fundamentele AI-modellen ondergaan een snelle commoditisering. Voor oprichters verandert dit de fundamentele wetten van de zwaartekracht in het SaaS-ecosysteem.
 
 ## De open source-prijzenoorlog

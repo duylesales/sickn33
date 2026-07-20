@@ -1,11 +1,11 @@
 ---
-Title: "SaaS AI: Why B2B Subscriptions are Shifting to Outcome-Based Pricing"
+Title: Why Subscriptions are Shifting to Outcome-Based Pricing for SaaS AI
 Keywords: saas AI, AI saas, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: SaaS Founder / CEO
 ---
 
-# SaaS AI: Why B2B Subscriptions are Shifting to Outcome-Based Pricing
+# Why Subscriptions are Shifting to Outcome-Based Pricing for SaaS AI
 
 <script type="application/ld+json">
 {

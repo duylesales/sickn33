@@ -1,10 +1,10 @@
 ---
-Titel: Edge Computing voor AI met lage latentie: het model dichter bij de gebruiker brengen
+Titel: De Gevaren van een AI Code Download Begrijpen
 Trefwoorden: Gebruikers-AI, Edge, Computing, Laag, Latency, AI, Bewegend, Model, Dichterbij, Gebruiker
-Koperfase: Bewustzijn
+Koperfase: Overweging
 ---
 
-# Edge Computing voor AI met lage latentie: het model dichter bij de gebruiker brengen
+# De Gevaren van een AI Code Download Begrijpen
 In de wereld van AI SaaS is waargenomen snelheid alles. Als een gebruiker een vraag stelt en de gebruikersinterface vier seconden blijft hangen voordat het eerste woord verschijnt, gaan ze ervan uit dat het product kapot is. Een belangrijke verborgen bron van deze vertraging is de geografie. Als uw gebruiker zich in Londen bevindt, uw server in Virginia en het OpenAI-datacenter in Californië, verpest de fysieke afstand die de gegevens afleggen de ervaring. De oplossing is de Rand.
 
 ## De anatomie van AI-latentie

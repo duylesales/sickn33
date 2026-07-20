@@ -1,11 +1,11 @@
 ---
-Title: "Privacy Issues With AI: GDPR Compliance Engineeren in RAG Pipelines"
+Title: GDPR Compliance Ontwerpen in Pipelines met Privacy Issues With AI
 Keywords: privacy issues with AI, AI privacy, AI compliance, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Data Protection Officer (DPO)
 ---
 
-# Privacy Issues With AI: GDPR Compliance Engineeren in RAG Pipelines
+# GDPR Compliance Ontwerpen in Pipelines met Privacy Issues With AI
 
 <script type="application/ld+json">
 {

@@ -1,11 +1,11 @@
 ---
-Title: "Het Onzichtbare Debuggen: Een Deep Dive in AI Bugs en het Beheren van Hallucinaties"
+Title: Deep Dive in Hallucinatiebeheer en AI Bugs
 Keywords: AI bugs, AI bugs in code, fixing AI code, debugging AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / AI-Native Founder
 ---
 
-# Het Onzichtbare Debuggen: Een Deep Dive in AI Bugs en het Beheren van Hallucinaties
+# Deep Dive in Hallucinatiebeheer en AI Bugs
 
 <script type="application/ld+json">
 {

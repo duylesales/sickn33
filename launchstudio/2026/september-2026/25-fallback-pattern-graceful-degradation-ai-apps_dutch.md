@@ -1,10 +1,10 @@
 ---
-Titel: Het terugvalpatroon: sierlijke degradatie implementeren voor AI in software-engineering
+Titel: Graceful Degradation Implementeren voor AI In Software Engineering
 Trefwoorden: AI in software-engineering, Fallback, Patroon, Sierlijk, Degradatie, AI, Apps
 Koperfase: Overweging
 ---
 
-# Het terugvalpatroon: sierlijke degradatie implementeren voor AI in software-engineering
+# Graceful Degradation Implementeren voor AI In Software Engineering
 Wanneer u een startup bouwt die afhankelijk is van API's van derden, zoals OpenAI of Anthropic, erft u hun downtime. Uiteindelijk zal de API een 500-serverfout genereren of een enorme latentiepiek ervaren. Als uw B2B SaaS-applicatie zo strak rond de AI is ontworpen dat een API-storing uw gebruikersinterface volledig vergrendelt, verliest u ondernemingscontracten. Het kenmerk van volwassen techniek is ontwerpen voor falen door middel van **Graceful Degradation**.
 
 ## Het principe van sierlijke degradatie

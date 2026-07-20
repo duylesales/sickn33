@@ -1,10 +1,10 @@
 ---
-Title: The EU AI Act: What B2B Founders Must Know
+Title: Overcoming Privacy Issues With AI Analytics
 Keywords: AI Software Engineering, EU, AI, Act, B2B, Founders, Must, Know
 Buyer Stage: Awareness
 ---
 
-# The EU AI Act: What B2B Founders Must Know
+# Overcoming Privacy Issues With AI Analytics
 If you thought GDPR was a headache, prepare for the European Union Artificial Intelligence Act. As the world's first comprehensive legal framework for AI, it does not just dictate how you handle data; it dictates what you are legally allowed to build. If you have customers in Europe, you must understand the Act's "Risk Tier" classification system, or risk fines that could bankrupt your startup overnight.
 
 ## The Risk-Based Approach

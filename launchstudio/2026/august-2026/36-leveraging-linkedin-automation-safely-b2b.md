@@ -1,10 +1,10 @@
 ---
-Title: Leveraging LinkedIn Automation Safely for B2B Sales
+Title: How to Determine Your AI Software Price Strategy
 Keywords: AI For Coding, Leveraging, LinkedIn, Automation, Safely, B2B, Sales
 Buyer Stage: Awareness
 ---
 
-# Leveraging LinkedIn Automation Safely for B2B Sales
+# How to Determine Your AI Software Price Strategy
 If you are selling B2B SaaS, LinkedIn is the only database that matters. Unlike ZoomInfo or Apollo, LinkedIn data is updated by the users themselves in real-time when they change jobs. However, trying to manually prospect and message 100 people a day is an agonizing waste of founder time. You must automate the process. But be warned: LinkedIn's anti-bot algorithms are ruthless. A single mistake will result in a permanent ban.
 
 ## The Danger of Chrome Extensions

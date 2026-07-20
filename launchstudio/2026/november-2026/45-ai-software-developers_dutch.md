@@ -1,11 +1,11 @@
 ---
-Title: "De 10x AI Software Developers: Waarom Systems Thinking de Nieuwe Syntax Is"
+Title: Waarom Systeemdenken de Nieuwe Syntaxis is voor AI Software Developers
 Keywords: AI software developers, AI coding assistant, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Engineering Manager
 ---
 
-# De 10x AI Software Developers: Waarom Systems Thinking de Nieuwe Syntax Is
+# Waarom Systeemdenken de Nieuwe Syntaxis is voor AI Software Developers
 
 <script type="application/ld+json">
 {

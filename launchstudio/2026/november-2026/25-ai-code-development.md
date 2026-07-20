@@ -1,11 +1,11 @@
 ---
-Title: "AI Code Development at Scale: Managing 100k+ Lines of AI-Generated Code"
+Title: Managing Large Codebases During AI Code Development
 Keywords: AI code development, code with AI, AI software programming, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / CTO
 ---
 
-# AI Code Development at Scale: Managing 100k+ Lines of AI-Generated Code
+# Managing Large Codebases During AI Code Development
 
 <script type="application/ld+json">
 {

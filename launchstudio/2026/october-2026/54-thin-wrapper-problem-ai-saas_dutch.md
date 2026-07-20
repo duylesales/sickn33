@@ -1,11 +1,11 @@
 ---
-Titel: Het "Thin Wrapper" Probleem: Waarom 90% van de AI SaaS Startups Zal Falen
+Titel: Het Thin Wrapper Probleem dat AI SaaS Startups Doet Falen
 Trefwoorden: Thin wrapper, AI SaaS moat, custom data pipelines, RAG architectuur, LaunchStudio, Manifera, B2B SaaS defensibility, OpenAI API
 Koperfase: Bewustwording
 Doelpersona: A (AI-Native Oprichter, Niet-technisch)
 ---
 
-# Het "Thin Wrapper" Probleem: Waarom 90% van de AI SaaS Startups Zal Falen
+# Het Thin Wrapper Probleem dat AI SaaS Startups Doet Falen
 
 In 2023 was het bouwen van een AI SaaS kinderlijk eenvoudig. Je gebruikte een drag-and-drop tool, maakte een tekstvak, koppelde het aan de OpenAI API, en vroeg gebruikers €20 per maand om blogposts te genereren.
 

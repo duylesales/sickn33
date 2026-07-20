@@ -1,10 +1,10 @@
 ---
-Titel: Een AI-verkoopdemo structureren die wordt afgesloten wanneer u Bouw een app met AI toepast
+Titel: Een Verkoopdemo Structureren Die Sluit Wanneer U Build An App With AI
 Trefwoorden: Bouw een app met AI, Structureren, AI, Verkoop, Demo, Sluitingen
 Koperfase: Bewustwording
 ---
 
-# Een AI-verkoopdemo structureren die wordt afgesloten wanneer u Bouw een app met AI toepast
+# Een Verkoopdemo Structureren Die Sluit Wanneer U Build An App With AI
 Technische oprichters zijn slecht in de verkoop omdat ze te veel van hun product houden. Wanneer ze een Fortune 500-directeur tijdens een Zoom-gesprek krijgen, leggen ze 30 minuten enthousiast uit hoe hun RAG-pijplijn PDF's tokeniseert. De directeur glimlacht, knikt en antwoordt nooit op de vervolgmail. Enterprise-kopers kopen geen algoritmen; zij kopen bedrijfsresultaten. Hier is het psychologische raamwerk voor een AI-verkoopdemo die daadwerkelijk contracten sluit.
 
 ## Fase 1: De pijn verankeren (de vroegere toestand)

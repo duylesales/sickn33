@@ -1,11 +1,11 @@
 ---
-Titel: Voorbij het Inlogscherm: Veilige Authenticatie Wanneer je AI om te coderen Gebruikt
+Titel: Veilige Authenticatie Wanneer u AI For Coding Gebruikt
 Trefwoorden: AI om te coderen, secure auth, supabase authenticatie, AI SaaS, LaunchStudio, Manifera, Row Level Security, B2B SaaS beveiliging
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# Voorbij het Inlogscherm: Veilige Authenticatie Wanneer je AI om te coderen Gebruikt
+# Veilige Authenticatie Wanneer u AI For Coding Gebruikt
 Als je als technische solo-oprichter in 2026 een AI-applicatie bouwt, schrijf je waarschijnlijk niet zelf je authenticatiesysteem vanaf nul. Je gebruikt een Backend-as-a-Service (BaaS) zoals Supabase.
 
 Het opzetten van het initiële inlogscherm met Supabase Auth duurt ongeveer vijf minuten. Het handelt de JSON Web Tokens (JWT's), de OAuth-providers (Google, GitHub) en de magic links netjes af. Maar veel solo-ontwikkelaars maken een fatale denkfout: ze geloven dat omdat een gebruiker succesvol is ingelogd, de applicatie veilig is.

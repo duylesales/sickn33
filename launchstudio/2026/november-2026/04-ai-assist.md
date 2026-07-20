@@ -1,11 +1,11 @@
 ---
-Title: "AI Assist Tools Are Not a Substitute for Engineering: What Founders Get Wrong"
+Title: Why AI Assist Tools Cannot Substitute Real Engineering
 Keywords: AI assist, AI for coding, AI code tool, code with AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# AI Assist Tools Are Not a Substitute for Engineering: What Founders Get Wrong
+# Why AI Assist Tools Cannot Substitute Real Engineering
 
 <script type="application/ld+json">
 {

@@ -1,10 +1,10 @@
 ---
-Titel: Het bouwen van veerkrachtige API-retry-logica voor AI-applicaties
+Titel: Hoe Identificeert u de Best App AI voor Uw Bedrijf
 Trefwoorden: AI om te coderen, Bouwen, Veerkrachtig, API, Opnieuw proberen, Logica, AI, Applicaties
 Koperfase: Bewustzijn
 ---
 
-# Bouwen van veerkrachtige API-retry-logica voor AI-applicaties
+# Hoe Identificeert u de Best App AI voor Uw Bedrijf
 Als je een SaaS bovenop de Stripe API bouwt, kun je redelijkerwijs een uptime van 99,99% verwachten. Als je een SaaS bovenop een LLM API bouwt, kun je mislukkingen verwachten. Generatieve AI is rekentechnisch beperkt. Tijdens piekuren genereren API-providers vaak 429 (Rate Limit) en 503 (Server Overload) fouten. Als uw code eenvoudigweg een onbewerkte fout naar de frontend gooit wanneer dit gebeurt, zullen uw gebruikers churnen. Hier leest u hoe u veerkrachtige, fouttolerante AI-applicaties kunt bouwen.
 
 ## De naïeve aanpak (en waarom deze faalt)

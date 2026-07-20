@@ -1,11 +1,11 @@
 ---
-Titel: Beveiligingsaudit van AI-prototypes — De 10-punten checklist die elke oprichter nodig heeft vóór de lancering
+Titel: 10-Punten AI Secure Prototype Audit Checklist
 Trefwoorden: AI beveiliging, AI kwetsbaarheden, AI code tool, AI-prototype, LaunchStudio, Manifera, Herre Roelevink
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-oprichter)
 ---
 
-# Beveiligingsaudit van AI-prototypes — De 10-punten checklist die elke oprichter nodig heeft vóór de lancering
+# 10-Punten AI Secure Prototype Audit Checklist
 
 45% van door AI gegenereerde code bevat beveiligingskwetsbaarheden. Dat cijfer komt uit meerdere onafhankelijke code-audits die in 2025 en 2026 zijn uitgevoerd. Het betekent dat ruwweg de helft van elk prototype dat met Lovable, Bolt of Cursor is gebouwd, gaten heeft die een middelmatig bekwame aanvaller binnen enkele minuten kan misbruiken.
 

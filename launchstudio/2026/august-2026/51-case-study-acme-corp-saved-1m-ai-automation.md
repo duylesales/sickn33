@@ -1,10 +1,10 @@
 ---
-Title: How Acme Corp Saved $1M with AI Automation
+Title: Trusting the Security Of AI in FinTech
 Keywords: Code With AI, Acme, Corp, Saved, AI, Automation
 Buyer Stage: Awareness
 ---
 
-# Case Study: How Acme Corp Saved $1M with AI Automation
+# Trusting the Security Of AI in FinTech
 For B2B SaaS startups, the most powerful marketing asset is not a list of features; it is a proven ROI case study. Enterprise buyers do not care about the underlying neural architecture of your product; they care about how much money it will save them. This case study details how we helped "Acme Corp" (a pseudonym for a real mid-sized European logistics company) replace a massive manual data entry bottleneck with a multimodal AI pipeline, saving over $1 million annually.
 
 ## The Bottleneck: Unstructured PDFs

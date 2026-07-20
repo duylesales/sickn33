@@ -1,11 +1,11 @@
 ---
-Title: AI Prototype Security Audit — The 10-Point Checklist Every Founder Needs Before Launch
+Title: 10-Point AI Secure Prototype Audit Checklist
 Keywords: AI secure, AI security vulnerabilities, AI code tool, AI prototype, LaunchStudio, Manifera, Herre Roelevink
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---
 
-# AI Prototype Security Audit — The 10-Point Checklist Every Founder Needs Before Launch
+# 10-Point AI Secure Prototype Audit Checklist
 
 45% of AI-generated code contains security vulnerabilities. That number comes from multiple independent code audits conducted throughout 2025 and 2026. It means that roughly half of every prototype built with Lovable, Bolt, or Cursor ships with holes that a moderately skilled attacker can exploit within minutes.
 

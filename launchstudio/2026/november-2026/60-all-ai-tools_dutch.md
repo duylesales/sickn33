@@ -1,11 +1,11 @@
 ---
-Title: "All AI Tools: Hoe U een Gefragmenteerde Enterprise Tech Stack Consolideert"
+Title: Een Gefragmenteerde Enterprise Tech Stack van All AI Tools Consolideren
 Keywords: all AI tools, AI tools, enterprise AI, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CIO / CTO
 ---
 
-# All AI Tools: Hoe U een Gefragmenteerde Enterprise Tech Stack Consolideert
+# Een Gefragmenteerde Enterprise Tech Stack van All AI Tools Consolideren
 
 <script type="application/ld+json">
 {

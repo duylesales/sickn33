@@ -1,11 +1,11 @@
 ---
-Title: "Prototype AI to Production: The Hidden Cost of the 'Last 10%'"
+Title: The Hidden Cost of Taking Prototype AI to Production
 Keywords: prototype AI, AI prototype to production, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Founder / CTO
 ---
 
-# Prototype AI to Production: The Hidden Cost of the 'Last 10%'
+# The Hidden Cost of Taking Prototype AI to Production
 
 <script type="application/ld+json">
 {

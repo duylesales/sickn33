@@ -1,10 +1,10 @@
 ---
-Titel: 10k gelijktijdige SSE-verbindingen verwerken voor AI in software-engineering
+Titel: 10k Gelijktijdige SSE Verbindingen Beheren voor AI In Software Engineering
 Trefwoorden: AI in software-engineering, afhandeling, gelijktijdig, SSE, verbindingen, knooppunt
 Koperfase: Bewustwording
 ---
 
-# 10k gelijktijdige SSE-verbindingen verwerken voor AI in software-engineering
+# 10k Gelijktijdige SSE Verbindingen Beheren voor AI In Software Engineering
 Om een B2B AI-product te bouwen dat magisch aanvoelt, moet u het LLM-antwoord woord voor woord naar de gebruikersinterface streamen met behulp van Server-Sent Events (SSE). Dit "typemachine-effect" bewijst dat het systeem werkt en verlaagt de waargenomen latentie tot bijna nul. Architectonisch gezien is SSE echter een tikkende tijdbom. Als u duizenden langlevende HTTP-verbindingen tegelijkertijd open houdt, raakt het geheugen en de verbindingspools van uw Node.js-server uitgeput, wat catastrofale crashes veroorzaakt tijdens verkeerspieken.
 
 ## Het probleem van de uitputting van de verbindingspool

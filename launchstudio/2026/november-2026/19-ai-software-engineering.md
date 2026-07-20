@@ -1,11 +1,11 @@
 ---
-Title: "AI Software Engineering: Applying Rigor to AI-Generated Code"
+Title: Applying Rigor to Code Generation with AI Software Engineering
 Keywords: AI software engineering, AI and software engineering, AI in software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# AI Software Engineering: Applying Rigor to AI-Generated Code
+# Applying Rigor to Code Generation with AI Software Engineering
 
 <script type="application/ld+json">
 {

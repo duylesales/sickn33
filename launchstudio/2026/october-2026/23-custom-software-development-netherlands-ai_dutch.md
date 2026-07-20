@@ -1,11 +1,11 @@
 ---
-Titel: AI en softwareontwikkeling: Overleven in het AI-Tijdperk in Nederland
+Titel: Disruptie Overleven in AI And Software Development
 Trefwoorden: AI en softwareontwikkeling, custom software development, maatwerk software, LaunchStudio, Manifera, Nederland, AI coding
 Koperfase: Bewustwording
 Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# AI en softwareontwikkeling: Overleven in het AI-Tijdperk in Nederland
+# Disruptie Overleven in AI And Software Development
 Het afgelopen decennium volgde maatwerk software ontwikkeling (custom software development) in Nederland een voorspelbaar, zeer lucratief script. Een zakelijke klant vroeg om een intern dashboard. Een Nederlands digitaal bureau offreerde €50.000 en een doorlooptijd van 4 maanden. Het bureau bouwde het vanaf nul met React en Node.js, en de klant betaalde.
 
 In 2026 is dat model dood.

@@ -1,11 +1,11 @@
 ---
-Title: "Verdedigbare AI in SaaS: Voorbij de 'Thin Wrapper'"
+Title: Verder Kijken dan de Thin Wrapper als een AI SaaS Platform
 Keywords: AI saas platform, AI in saas, AI saas products, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: B2B SaaS Founder / VCs
 ---
 
-# Verdedigbare AI in SaaS: Voorbij de 'Thin Wrapper'
+# Verder Kijken dan de Thin Wrapper als een AI SaaS Platform
 
 <script type="application/ld+json">
 {

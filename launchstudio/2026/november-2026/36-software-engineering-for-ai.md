@@ -1,11 +1,11 @@
 ---
-Title: "Software Engineering for AI: Why Traditional Agile and TDD Break Down"
+Title: Why Traditional Agile Breaks Down in Software Engineering for AI
 Keywords: software engineering for AI, AI software engineering, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: VP of Engineering / CTO
 ---
 
-# Software Engineering for AI: Why Traditional Agile and TDD Break Down
+# Why Traditional Agile Breaks Down in Software Engineering for AI
 
 <script type="application/ld+json">
 {

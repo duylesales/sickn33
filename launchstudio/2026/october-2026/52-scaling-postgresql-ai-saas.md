@@ -1,11 +1,11 @@
 ---
-Title: Breaking Under Pressure: Scaling PostgreSQL for AI SaaS
+Title: Breaking Under Pressure When Scaling PostgreSQL for AI SaaS
 Keywords: Scaling PostgreSQL, AI SaaS, Supabase, database connection pooling, pgvector, LaunchStudio, Manifera, B2B SaaS architecture
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)
 ---
 
-# Breaking Under Pressure: Scaling PostgreSQL for AI SaaS
+# Breaking Under Pressure When Scaling PostgreSQL for AI SaaS
 
 PostgreSQL is the undisputed king of modern SaaS databases. With the addition of the `pgvector` extension, it has also become the default choice for AI startups, allowing founders to store user accounts, billing data, and AI embeddings in one unified place.
 

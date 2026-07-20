@@ -1,11 +1,11 @@
 ---
-Title: "Bolt AI voor Founders: Bouw Razendsnel, Maar Weet Wanneer Je Moet Stoppen"
+Title: Hoe Bolt AI Oprichters Helpt Snel Te Bouwen Zonder Te Stoppen
 Keywords: bolt AI, AI assist, AI websites, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# Bolt AI voor Founders: Bouw Razendsnel, Maar Weet Wanneer Je Moet Stoppen
+# Hoe Bolt AI Oprichters Helpt Snel Te Bouwen Zonder Te Stoppen
 
 <script type="application/ld+json">
 {

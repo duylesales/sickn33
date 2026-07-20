@@ -1,11 +1,11 @@
 ---
-Title: Make a AI Prototype a Real Product — The Founder's Checklist
+Title: Founder's Checklist to Make a AI Product
 Keywords: make a AI, build AI, LaunchStudio, Manifera, Lovable, Bolt
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)
 ---
 
-# Make a AI Prototype a Real Product — The Founder's Checklist
+# Founder's Checklist to Make a AI Product
 
 "Je hebt je prototype af. Het ziet er goed uit. Maar wat nu?" (You finished your prototype. It looks great. But what now?)
 

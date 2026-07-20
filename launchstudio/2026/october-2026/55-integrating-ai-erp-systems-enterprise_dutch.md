@@ -1,11 +1,11 @@
 ---
-Titel: De Eindbaas Wanneer Je Gaat Coderen met AI: LLM's Integreren met Enterprise ERP Systemen
+Titel: ERP Systemen Integreren Wanneer U Code With AI
 Trefwoorden: Coderen met AI, ERP integration, AI SAP integratie, Microsoft Dynamics AI, digital agency, enterprise software ontwikkeling, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: C (Bureau / Freelancer White-Label Partner)
 ---
 
-# De Eindbaas Wanneer Je Gaat Coderen met AI: LLM's Integreren met Enterprise ERP Systemen
+# ERP Systemen Integreren Wanneer U Code With AI
 Als je een digital agency runt die AI pitcht bij corporate klanten, ken je het script. De CEO is dolenthousiast over jouw concept voor een "AI Voorraad Voorspeller". Het marketingteam vindt het design prachtig. Je krijgt mondeling akkoord voor een contract van €150.000.
 
 En dan stapt de Chief Information Officer (CIO) de vergaderzaal binnen en stelt die ene vraag die de deal onmiddellijk vermoordt: *"Hoe gaat jullie AI precies praten met ons SAP-systeem?"*

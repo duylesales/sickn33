@@ -1,11 +1,11 @@
 ---
-Title: "AI Kwetsbaarheden in Productie: Verdedigen Tegen Denial of Wallet en Prompt Injection"
+Title: Verdedigen Tegen Prompt Injection en AI Vulnerabilities
 Keywords: AI vulnerabilities, AI security risks, AI hack, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Technical Founder
 ---
 
-# AI Kwetsbaarheden in Productie: Verdedigen Tegen Denial of Wallet en Prompt Injection
+# Verdedigen Tegen Prompt Injection en AI Vulnerabilities
 
 <script type="application/ld+json">
 {

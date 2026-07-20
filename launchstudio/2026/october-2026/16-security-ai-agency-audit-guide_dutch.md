@@ -1,11 +1,11 @@
 ---
-Titel: Security AI — De Gids voor Bureaus om door AI Gegenereerde Code te Auditen
+Titel: De Bureau Gids voor het Auditen van Security AI
 Trefwoorden: security AI, AI secure, LaunchStudio, Manifera, Cursor, Bolt
 Koperfase: Overweging
 Doelpersona: C (Bureau / Freelancer - White-Label Partner)
 ---
 
-# Security AI — De Gids voor Bureaus om door AI Gegenereerde Code te Auditen
+# De Bureau Gids voor het Auditen van Security AI
 
 Digitale bureaus worden geconfronteerd met een nieuw soort klantverzoek. Een oprichter stapt je kantoor binnen, legt een GitHub-link op tafel en zegt: "Ik heb dit prototype dit weekend met AI gebouwd. Kunnen jullie het afmaken en vrijdag lanceren?"
 

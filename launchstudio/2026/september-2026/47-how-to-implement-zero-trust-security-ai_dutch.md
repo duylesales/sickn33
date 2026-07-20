@@ -1,10 +1,10 @@
 ---
-Titel: Hoe u Zero-Trust-beveiliging in AI kunt implementeren
+Titel: Hoe Implementeert U Zero-Trust Security in AI
 Trefwoorden: Implementeren, ZeroTrust, Beveiliging, AI
 Koperfase: overweging
 ---
 
-# Hoe Zero-Trust-beveiliging in AI te implementeren
+# Hoe Implementeert U Zero-Trust Security in AI
 Het traditionele ‘Castle and Moat’-beveiligingsmodel – waarbij alles binnen de bedrijfsfirewall wordt vertrouwd – is dood. Als een hacker de gracht doorbreekt, wordt hij eigenaar van het kasteel. In het AI-tijdperk, waarin autonome agenten door databases navigeren en API-oproepen uitvoeren, is vertrouwen op het interne netwerk catastrofaal. Voor het voortbestaan ​​van een onderneming is een **Zero-Trust-architectuur** vereist: ga ervan uit dat de inbreuk al heeft plaatsgevonden en verifieer alles.
 
 ## Het principe: vertrouw nooit, verifieer altijd

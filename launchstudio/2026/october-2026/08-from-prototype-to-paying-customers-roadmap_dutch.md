@@ -1,11 +1,11 @@
 ---
-Titel: Van AI-prototype naar betalende klanten — De 14-stappen lanceringsroadmap
+Titel: 14-Stappen Lancering Roadmap voor uw AI SaaS
 Trefwoorden: AI saas, app bouwen met AI, AI software engineering, LaunchStudio, Manifera, Bolt, Lovable
 Koperfase: Beslissing
 Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# Van AI-prototype naar betalende klanten — De 14-stappen lanceringsroadmap
+# 14-Stappen Lancering Roadmap voor uw AI SaaS
 
 Je bouwde je SaaS-prototype in 48 uur. Het krijgen van je eerste betalende klant kost precies nog 14 stappen.
 

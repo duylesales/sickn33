@@ -1,11 +1,11 @@
 ---
-Title: "AI Software Producten: Architectuur voor Hoge Winstmarges (Unit Economics)"
+Title: High-Margin Unit Economics Architecteren voor AI Software Products
 Keywords: AI software products, AI software development, AI startup economics, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: SaaS Founder / CFO / CTO
 ---
 
-# AI Software Producten: Architectuur voor Hoge Winstmarges (Unit Economics)
+# High-Margin Unit Economics Architecteren voor AI Software Products
 
 <script type="application/ld+json">
 {

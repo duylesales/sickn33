@@ -1,10 +1,10 @@
 ---
-Titel: De dood van de 'Chatbot'-gebruikersinterface
+Titel: De Dood van de Chatbot UI in de Best Of AI Producten
 Trefwoorden: Het beste van AI, Dood, Chatbot, UI
 Koperfase: Bewustzijn
 ---
 
-# De dood van de 'Chatbot'-gebruikersinterface
+# De Dood van de Chatbot UI in de Best Of AI Producten
 In 2023 kopieerde elk B2B SaaS-bedrijf de ChatGPT-gebruikersinterface in hun applicatie. Ze voegden een klein "Sparkle"-pictogram toe rechtsonder in het scherm, openden een lege chatbox en verwachtten dat hun gebruikers op magische wijze snelle technici zouden worden. Het mislukte. De betrokkenheidsstatistieken van deze ingebedde chatbots zijn verschrikkelijk. Enterprise-gebruikers willen niet met hun software praten; ze willen dat hun software het werk doet. Het tijdperk van de lege chatbox is voorbij.
 
 ## De cognitieve lading van de blanco pagina

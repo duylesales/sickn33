@@ -1,11 +1,11 @@
 ---
-Title: "AI Data Security: Why 'Zero Data Retention' is the New Enterprise Standard"
+Title: Why Zero Data Retention is the New Standard for AI Data Security
 Keywords: AI data security, AI security, enterprise AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CISO / Data Protection Officer (DPO)
 ---
 
-# AI Data Security: Why 'Zero Data Retention' is the New Enterprise Standard
+# Why Zero Data Retention is the New Standard for AI Data Security
 
 <script type="application/ld+json">
 {

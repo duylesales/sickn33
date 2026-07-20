@@ -1,10 +1,10 @@
 ---
-Titel: Prompts ontwerpen als code: het configuratiepatroon wanneer u AI om te coderen gebruikt
+Titel: Prompts als Code Ontwerpen Wanneer U AI To Code Gebruikt
 Trefwoorden: AI om te coderen, ontwerpen, aanwijzingen, code, configuratie, patroon
 Koperfase: Overweging
 ---
 
-# Prompts ontwerpen als code: het configuratiepatroon wanneer u AI om te coderen gebruikt
+# Prompts als Code Ontwerpen Wanneer U AI To Code Gebruikt
 Prompt Engineering is geen eenmalige taak; het is een continue operationele cyclus. Een instructie die vandaag perfect werkt op GPT-4 kan morgen op onverklaarbare wijze mislukken op GPT-4o. Als uw technische team systeemprompts van 1000 woorden rechtstreeks in uw Node.js-controllers codeert, zal uw startup zichzelf lamleggen. Om flexibele AI-architecturen te bouwen, moet u prompts behandelen als configuratiegegevens, niet als bedrijfslogica.
 
 ## Het knelpunt van hardgecodeerde aanwijzingen

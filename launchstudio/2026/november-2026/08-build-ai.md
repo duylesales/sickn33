@@ -1,11 +1,11 @@
 ---
-Title: "Build AI Apps That Last: Architecture Decisions That Determine Your Startup's Fate"
+Title: Architecture Decisions to Build AI Apps That Last
 Keywords: build AI, build AI app, build app with AI, build an app with AI, build app AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# Build AI Apps That Last: Architecture Decisions That Determine Your Startup's Fate
+# Architecture Decisions to Build AI Apps That Last
 
 <script type="application/ld+json">
 {

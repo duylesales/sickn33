@@ -1,10 +1,10 @@
 ---
-Titel: Bouwen aan een AI-leadmagneet die daadwerkelijk converteert
+Titel: Uw Eerste AI Software App Lanceren naar Productie
 Trefwoorden: Bouw een app met AI, Gebouw, AI, Lood, Magneet, Eigenlijk, Converteert
 Koperfase: Bewustzijn
 ---
 
-# Een AI-leadmagneet bouwen die daadwerkelijk converteert
+# Uw Eerste AI Software App Lanceren naar Productie
 De afgelopen tien jaar was het standaard B2B-playbook voor het vastleggen van e-mailadressen het 'Gratis PDF-e-boek'. U liet een LinkedIn-advertentie zien waarin u een 'Definitieve Marketinggids' beloofde, waarbij u de gebruiker dwong zijn e-mailadres in te voeren om deze te downloaden, en vervolgens die e-mail door te geven aan uw verkoopteam. Generatieve AI heeft dit speelboek om zeep geholpen. Omdat iedereen binnen drie seconden een pdf van 50 pagina's kan genereren, is de waargenomen waarde van een e-boek tot nul gedaald. In 2026 moet u **Engineering-as-Marketing** gebruiken.
 
 ## De kracht van vrije softwarehulpprogramma's

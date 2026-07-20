@@ -1,10 +1,10 @@
 ---
-Titel: API-sleutels van derden beveiligen in Next.js AI-applicaties
+Titel: Abonnementenbeheer Beyond de Afrekenknop
 Trefwoorden: Beveiliging, Derde, Partij, API, Sleutels, Volgende, AI, Applicaties
 Koperfase: Bewustzijn
 ---
 
-# Beveiliging van API-sleutels van derden in Next.js AI-applicaties
+# Abonnementenbeheer Beyond de Afrekenknop
 Als een hacker uw Supabase-URL steelt, kunnen ze u irriteren. Als een hacker uw OpenAI API-sleutel steelt, kan hij of zij uw startup binnen 48 uur failliet laten gaan. Schadelijke scripts struinen actief het internet af op zoek naar blootgestelde `sk-proj-`-tekenreeksen, waarbij ze gestolen sleutels gebruiken om enorme cryptomining-operaties uit te voeren of op uw kosten spam te genereren. Als u met Next.js bouwt, moet u uw beveiliging feilloos ontwerpen.
 
 ## Het beveiligingslek aan de clientzijde

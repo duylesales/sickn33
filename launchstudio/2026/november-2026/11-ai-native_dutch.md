@@ -1,11 +1,11 @@
 ---
-Title: "AI Native Founders Herschrijven Het Startup-Draaiboek — Hier Is Hoe"
+Title: Hoe AI Native Oprichters Het Startup Draaiboek Herschrijven
 Keywords: AI native, AI no code, no code AI tool, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# AI Native Founders Herschrijven Het Startup-Draaiboek — Hier Is Hoe
+# Hoe AI Native Oprichters Het Startup Draaiboek Herschrijven
 
 <script type="application/ld+json">
 {
