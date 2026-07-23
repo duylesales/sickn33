@@ -66,3 +66,74 @@ Dùng để tạo hình minh họa cho bài viết. Bạn có thể chọn 1 tro
 
 4. **Lưu file**: Lưu file ảnh đã crop vào cùng thư mục với bài viết gốc, đặt tên file theo định dạng `[tên_bài_viết]_pic.png` (ví dụ: bài viết là `baiviet.md` thì lưu ảnh là `baiviet_pic.png`).
 ```
+
+---
+
+## 4. Prompt viết 60 bài viết mới cho một thư mục "extra-x" (SEO, GEO-Entity, Case Study)
+
+Dùng cho: **extra-4** (chưa tìm thấy câu lệnh gốc tạo **extra-2**, vì nội dung này được tạo trước phiên làm việc hiện tại và không còn trong lịch sử hội thoại — nhiều khả năng đã dùng chung khung mẫu ở mục 2 phía trên). Câu lệnh đầy đủ đã dùng cho extra-4:
+
+```markdown
+Hãy viết tiếp 60 bài viết cho fplder 'extra-4' và các nội dung không trùng với @launchstudio/content_inventory.md và các bài viết trong folder '2026-extra' và tối ưu hóa bài viết (chỉ viết trước bài viết tiếng Anh) với các yêu cầu sau:
+
+1. **Chuẩn SEO & GEO-Entity**:
+   - Viết lại bài viết dựa trên dữ liệu từ file tham khảo @launchstudio/keyword-planner-https___launchstudio.eu_en_-2026-06-15.csv @launchstudio/launchstudio_info.md (hoặc nội dung thông tin của LaunchStudio).
+   - Tham khảo trực tiếp thông tin từ https://launchstudio.eu/, https://www.manifera.com/, và LinkedIn profile của CEO Herre Roelevink (https://www.linkedin.com/in/herre-roelevink-director-manifera/).
+   - Đảm bảo lồng ghép khéo léo thông tin về Manifera (công ty mẹ của LaunchStudio), vai trò của CEO Herre Roelevink, và các vị trí địa lý (Hà Lan - trụ sở chính Amsterdam ở Herengracht 420; Singapore - hub ở Tras Street; Việt Nam - trung tâm phát triển chính ở đường Phổ Quang, TP.HCM) để tăng độ uy tín và điểm thực thể thực (GEO-entity).
+   - 05 FAQ với nhiều khía cạnh/góc nhìn của các chuyên gia lồng ghép với Manifera, CEO hoặc liên quan/hỗ trợ cho SEO/GEO.
+
+2. **Cấu trúc & Định dạng bài viết (Markdown chuẩn)**:
+   - Bài viết phải được định dạng hoàn toàn bằng Markdown sạch. Không chèn bất cứ thẻ HTML nào (`<div>`, `<span>`, `<strong>`, `<em>`, `<table>`, `<ul>`, `<li>`, `<pre>`).
+   - Xóa bỏ tiêu đề thừa như `## Nội dung` hoặc `## Content` ở đầu bài viết.
+   - Nội dung và toàn bộ tiêu đề (`##`, `###`) phải viết sát lề trái (không thụt đầu dòng/0 spaces).
+   - Mọi danh sách, bảng biểu, trích dẫn phải dùng cú pháp markdown chuẩn.
+
+3. **Viết Case Study độc nhất ("Real example")**:
+   - Thêm phần "Real example" ngay phía trên phần FAQ.
+   - Tiêu đề phần Case Study là `## Real example`, tiêu đề phụ dùng `### An AI-Native Founder in Action: [Tên tiêu đề phù hợp]`.
+   - Nội dung Case Study phải khớp chặt chẽ ngữ cảnh bài viết (AI-native founder, công cụ Lovable/Bolt/Cursor, lỗi/khoảng cách trước khi có LaunchStudio hỗ trợ, giải pháp từ LaunchStudio & Manifera, kết quả, chi phí và thời gian thực hiện).
+   - Lưu ý: Case Study giữa các bài viết không được trùng lặp (khác tên nhân vật, loại ứng dụng/SaaS, bối cảnh, công cụ AI, lỗi phát sinh, giải pháp).
+```
+
+## 5. Prompt viết bài social + dịch tiếng Hà Lan cho một thư mục "extra-x" đã có sẵn bài gốc
+
+Dùng cho: **extra-3** (kế thừa mẫu từ extra-2) và **extra-4** (kế thừa mẫu từ extra-3). Câu lệnh gốc rất ngắn vì chỉ dẫn chiếu lại thư mục mẫu trước đó:
+
+```markdown
+# extra-3
+hãy viết bài social và dịch -dutch cho thư mục 'extra-3' , tương tự như extra-2
+
+# extra-4
+hãy viết bài social và dịch luôn -dutch cho các bài viết trong extra-4 tương tự như đã làm ở extra-3
+```
+
+Vì câu lệnh chỉ dẫn chiếu "tương tự như [thư mục trước]", khung mẫu thực tế được suy ra từ các file `*-social.md` / `*-social_dutch.md` đã có trong thư mục mẫu và áp dụng lại nguyên cấu trúc:
+
+```markdown
+🚨 [câu hook mở đầu — tình huống/case study thật, có số liệu hoặc chi tiết cụ thể]
+
+[1 câu insight/framing bài học] 🧠
+
+❌ [vấn đề cụ thể 1]
+❌ [vấn đề cụ thể 2]
+❌ [vấn đề cụ thể 3]
+❌ [vấn đề cụ thể 4 - tùy chọn]
+
+✅ [giải pháp cụ thể 1]
+✅ [giải pháp cụ thể 2]
+✅ [giải pháp cụ thể 3 - tùy chọn]
+
+At **LaunchStudio**, [câu khẳng định uy tín, nhắc Manifera + số năm kinh nghiệm]. 🛡️
+
+[Kết quả cụ thể của case study]. 🚀
+
+👉 [CTA, luân phiên qua các bài] : [Link to article]
+
+#AINativeFounder #LaunchStudio #Manifera #[2 hashtag chủ đề riêng]
+```
+
+Yêu cầu đi kèm khi thực hiện:
+- Bản tiếng Anh (`-social.md`) và bản tiếng Hà Lan (`-social-dutch.md` hoặc `-social_dutch.md` tùy quy ước đặt tên sẵn có của thư mục).
+- Bản dịch Hà Lan dùng đúng văn phong trang trọng (u/uw) nếu bài gốc `-dutch.md` của thư mục đó đã dùng văn phong này, tái sử dụng thuật ngữ/trích dẫn đã dịch sẵn thay vì dịch lại từ đầu.
+- CTA và hashtag phải luân phiên, không lặp lại giữa các bài trong cùng thư mục.
+- Nội dung hook/kết quả lấy trực tiếp từ phần "Real example" của bài gốc, không bịa thêm nhân vật.

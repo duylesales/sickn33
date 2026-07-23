@@ -1,10 +1,10 @@
 ---
-Titel: Fouten op de lanceringsdag: wat u niet moet doen als u uw MVP verzendt
-Trefwoorden: Day AI, lancering, fouten, verzending
+Titel: "Fouten op de lanceringsdag: wat u niet moet doen wanneer u een AI-app bouwt"
+Trefwoorden: Day AI, Lancering, Fouten, SaaS MVP, Shipping
 Koperfase: beslissing
 ---
 
-# Fouten op de lanceringsdag: wat u niet moet doen bij het verzenden van uw MVP
+# Fouten op de lanceringsdag: wat u niet moet doen wanneer u een AI-app bouwt
 
 U heeft de prototypefase overleefd, uw beveiliging versterkt en uw implementatie geconfigureerd. De lanceringsdag is eindelijk daar. Verpest het niet door de vijf klassieke fouten op de lanceringsdag te maken: de vrijdagimplementatie, de big bang-aankondiging, de stille foutval, de mismatch van de omgevingsvariabelen en de ongecontroleerde check-out. Dit is wat u moet vermijden en wat u in plaats daarvan moet doen bij het verzenden van uw door AI gebouwde MVP.
 

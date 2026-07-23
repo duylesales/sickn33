@@ -1,10 +1,10 @@
 ---
-Titel: De toekomst van AI-interfaces: verder dan de chatbot
-Trefwoorden: Het beste van AI, Toekomst, Interfaces, Bewegen, Beyond, Chatbot
+Titel: "Verder dan de chatbot: de toekomst en het beste van AI-interfaces"
+Trefwoorden: Best Of AI, AI Interfaces, Toekomst, Chatbots
 Koperfase: Bewustzijn
 ---
 
-# De toekomst van AI-interfaces: verder gaan dan de chatbot
+# Verder dan de chatbot: de toekomst en het beste van AI-interfaces
 
 In 2023 zag elke AI-startup er precies hetzelfde uit: een wit scherm, een linkerzijbalk voor de geschiedenis en een knipperend tekstvak onderaan. We hebben lui de ChatGPT-interface gekopieerd. In 2026 wordt de chatinterface erkend als een ernstige UX-fout voor gespecialiseerde software. De volgende generatie AI-startups die miljarden waard zijn, verlaten de chatbox volledig. Dit is hoe de toekomst van AI UI eruit ziet.
 

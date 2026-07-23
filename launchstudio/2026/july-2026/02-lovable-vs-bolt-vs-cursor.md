@@ -1,5 +1,5 @@
 ---
-Title: Lovable vs Bolt vs Cursor: Which AI Builder Should You Use?
+Title: "Lovable vs Bolt vs Cursor: Which AI Builder Should You Use?"
 Keywords: Bolt AI, Lovable, Cursor, Bolt, Which Builder Should You Use, LaunchStudio, Manifera, Herre Roelevink, Software Development, AI-Native Founder
 Buyer Stage: Awareness
 ---

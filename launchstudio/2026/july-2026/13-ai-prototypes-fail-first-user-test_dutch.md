@@ -1,10 +1,10 @@
 ---
-Titel: Waarom de meeste AI-prototypes hun eerste echte gebruikerstest niet doorstaan
-Trefwoorden: prototypes, hun, eerst
+Titel: Waarom uw AI-prototype zal falen bij de eerste echte gebruikerstest
+Trefwoorden: AI Prototype, User Testing, UX, AI-app
 Koperfase: Bewustzijn
 ---
 
-# Waarom de meeste AI-prototypes hun eerste echte gebruikerstest niet doorstaan
+# Waarom uw AI-prototype zal falen bij de eerste echte gebruikerstest
 
 De meeste AI-prototypen slagen niet voor de eerste echte gebruikerstest omdat ze zijn gebouwd en getest door iemand die al weet hoe ze werken. Echte gebruikers klikken op onverwachte knoppen, voeren ongebruikelijke gegevens in, gebruiken mobiele apparaten, komen foutmeldingen tegen en navigeren op manieren die de bouwer nooit had verwacht. De vijf meest voorkomende foutpatronen zijn: crashes bij foutstatussen, verwarrende navigatie, kapotte mobiele ervaring, trage laadtijden en een onduidelijke waardepropositie. Alle vijf kunnen worden voorkomen door gestructureerde gebruikerstests vóór de lancering.
 

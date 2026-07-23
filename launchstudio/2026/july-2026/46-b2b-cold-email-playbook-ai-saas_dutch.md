@@ -1,6 +1,6 @@
 ---
 Titel: Het B2B Cold Email Playbook voor AI SaaS-startups
-Trefwoorden: e-mail, draaiboek, startups
+Trefwoorden: AI SaaS, B2B Cold Email, Playbook, AI Startup
 Koperfase: Bewustzijn
 ---
 

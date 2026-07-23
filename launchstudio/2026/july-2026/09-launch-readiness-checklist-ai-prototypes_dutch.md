@@ -1,10 +1,10 @@
 ---
-Titel: De 20-punten checklist voor lanceringsgereedheid voor AI-prototypes
-Trefwoorden: punt, lancering, gereedheid, checklist, prototypes
+Titel: De 20-punten lanceringschecklist voor AI-prototypes
+Trefwoorden: AI Prototype, Lancering, Checklist, Readiness
 Koperfase: beslissing
 ---
 
-# De 20-punts checklist voor lanceringsgereedheid voor AI-prototypes
+# De 20-punten lanceringschecklist voor AI-prototypes
 
 Voordat u uw door AI gebouwde prototype voor echte gebruikers lanceert, moet u deze 20 cruciale items op het gebied van beveiliging, betalingen, implementatie, prestaties en wettelijke naleving verifiëren. Ongeveer 95% van de door AI gegenereerde applicaties voldoet niet aan minstens tien van deze controles. Elk mislukt item vormt een risico voor uw gebruikers, uw inkomsten of uw reputatie. Deze checklist helpt u de hiaten te identificeren en op te lossen voordat ze problemen worden.
 

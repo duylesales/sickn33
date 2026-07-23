@@ -1,10 +1,10 @@
 ---
-Title: Affiliate Marketing for AI SaaS: Building a Commission-Only Sales Team
+Title: "Affiliate Marketing for AI SaaS: Building a Commission-Only Team"
 Keywords: Affiliate, Marketing, Building, CommissionOnly, Sales
 Buyer Stage: Awareness
 ---
 
-# Affiliate Marketing for AI SaaS: Building a Commission-Only Sales Team
+# Affiliate Marketing for AI SaaS: Building a Commission-Only Team
 
 If you have achieved Product-Market Fit (PMF) and your infrastructure is stable, your only goal is distribution. But hiring a sales team is expensive, and running paid ads is a gamble. The most capital-efficient growth engine in SaaS is an Affiliate Program. You essentially build an army of marketers who work for free, and you only pay them when they deliver a paying customer.
 

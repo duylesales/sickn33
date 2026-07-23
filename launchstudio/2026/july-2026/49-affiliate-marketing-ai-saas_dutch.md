@@ -1,10 +1,10 @@
 ---
-Titel: Affiliate marketing voor AI SaaS: een verkoopteam opbouwen dat alleen op commissie gebaseerd is
-Trefwoorden: Affiliate, Marketing, Bouwen, Alleen commissie, Verkoop
+Titel: "Affiliate Marketing voor AI SaaS: een team op commissiebasis bouwen"
+Trefwoorden: AI SaaS, Affiliate Marketing, Commission-Only, Sales
 Koperfase: Bewustzijn
 ---
 
-# Affiliate marketing voor AI SaaS: een verkoopteam opbouwen dat alleen op commissie gebaseerd is
+# Affiliate Marketing voor AI SaaS: een team op commissiebasis bouwen
 
 Als u Product-Market Fit (PMF) heeft bereikt en uw infrastructuur stabiel is, is distributie uw enige doel. Maar het inhuren van een verkoopteam is duur en het weergeven van betaalde advertenties is een gok. De meest kapitaalefficiënte groeimotor in SaaS is een affiliateprogramma. Je bouwt in feite een leger marketeers op die gratis werken, en je betaalt ze alleen als ze een betalende klant opleveren.
 

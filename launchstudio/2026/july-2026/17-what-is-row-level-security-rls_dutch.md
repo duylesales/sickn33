@@ -1,10 +1,10 @@
 ---
-Titel: Wat is Row Level Security (RLS) en waarom heeft uw AI-app dit nodig?
-Trefwoorden: AI en beveiliging, Niveau, Beveiliging
+Titel: "AI en beveiliging: Waarom uw app Row Level Security (RLS) nodig heeft"
+Trefwoorden: AI And Security, Row Level Security, RLS, AI-app, Database
 Koperfase: Bewustzijn
 ---
 
-# Wat is Row Level Security (RLS) en waarom heeft uw AI-app dit nodig?
+# AI en beveiliging: Waarom uw app Row Level Security (RLS) nodig heeft
 Als je een AI-tool zoals Lovable hebt gebruikt om een ​​SaaS-prototype te bouwen dat is verbonden met Supabase, is de kans 80% dat je database fundamenteel onveilig is. De dader? Ontbrekende beveiliging op rijniveau (RLS). Zonder RLS kan elke ingelogde gebruiker mogelijk de gegevens van elke andere gebruiker in uw systeem openen, wijzigen of verwijderen. Hier volgt een uitleg van wat RLS is, waarom AI het negeert en hoe u dit kunt oplossen.
 
 ## De onzichtbare dreiging: een openbare database

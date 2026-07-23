@@ -1,6 +1,6 @@
 ---
 Titel: 10 dingen die AI-bouwers niet kunnen doen voor uw startup
-Trefwoorden: AI om te coderen, Dingen, Bouwers, Kan niet, Opstarten
+Trefwoorden: AI For Coding, AI Builders, Startup, Beperkingen
 Koperfase: Bewustzijn
 ---
 

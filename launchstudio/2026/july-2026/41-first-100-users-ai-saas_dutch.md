@@ -1,10 +1,10 @@
 ---
-Titel: Hoe u de eerste 100 betalende gebruikers voor uw AI SaaS kunt krijgen
-Trefwoorden: Ten eerste, Betalen, Gebruikers
+Titel: Hoe u de eerste 100 betalende gebruikers voor uw AI SaaS krijgt
+Trefwoorden: AI SaaS, First 100 Users, Betalende Gebruikers, Growth
 Koperfase: overweging
 ---
 
-# Hoe u de eerste 100 betalende gebruikers voor uw AI SaaS kunt krijgen
+# Hoe u de eerste 100 betalende gebruikers voor uw AI SaaS krijgt
 
 Je hebt Lovable gebruikt om een prachtige app te bouwen. Je hebt LaunchStudio ingehuurd om de backend te beveiligen en Stripe te integreren. Je bent officieel live. Nu staar je naar een dashboard met nul actieve gebruikers. De kloof tussen 0 en 100 gebruikers is de moeilijkste kloof die in software kan worden overbrugd. Het kan niet worden gekocht met Facebook-advertenties; het moet verdiend worden met brute kracht. Hier is het onschaalbare draaiboek voor het werven van uw eerste 100 betalende klanten.
 

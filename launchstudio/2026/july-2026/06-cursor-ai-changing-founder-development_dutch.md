@@ -1,6 +1,6 @@
 ---
 Titel: Hoe Cursor AI de manier verandert waarop oprichters code schrijven
-Trefwoorden: AI om te coderen, Cursor, Veranderen, Stichters, Schrijven
+Trefwoorden: AI To Code, Cursor AI, Founders, Code With AI
 Koperfase: Bewustzijn
 ---
 

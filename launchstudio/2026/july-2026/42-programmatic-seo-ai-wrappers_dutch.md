@@ -1,10 +1,10 @@
 ---
-Titel: Programmatische SEO: de ultieme groeihack voor AI-wrappers
-Trefwoorden: AI om te coderen, Programmatisch, Ultiem, Groei, Wrappers
+Titel: "Programmatic SEO: de ultieme growth hack voor AI SaaS-producten"
+Trefwoorden: AI For Coding, Programmatic SEO, Growth Hack, AI-wrappers
 Koperfase: Bewustzijn
 ---
 
-# Programmatische SEO: de ultieme groeihack voor AI-wrappers
+# Programmatic SEO: de ultieme growth hack voor AI SaaS-producten
 Je hebt een briljante AI-tool gebouwd die aangepaste sollicitatiebrieven genereert. Je wilt hoog scoren in Google. U schrijft dus een blogpost die zich richt op het zoekwoord 'AI Cover Letter Generator'. Je publiceert het, wacht drie maanden en krijgt precies nul verkeer. Waarom? Omdat u voor dat trefwoord met miljoenenbedrijven vecht. De oplossing ligt niet in het schrijven van betere blogposts; de oplossing is Programmatische SEO (pSEO). Hier ziet u hoe AI-oprichters code gebruiken om de zoekfunctie van Google te domineren.
 
 ## De goudmijn met lange staart

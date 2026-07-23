@@ -1,10 +1,10 @@
 ---
-Titel: Het gevaar van blootliggende API-sleutels in uw frontendcode
-Trefwoorden: Gevaar, Blootgesteld, Frontend
+Titel: Het gevaar van blootgestelde sleutels voor API in AI frontend-code
+Trefwoorden: API in AI, Gevaar, API Keys, Frontend, Beveiliging
 Koperfase: Bewustzijn
 ---
 
-# Het gevaar van blootliggende API-sleutels in uw frontendcode
+# Het gevaar van blootgestelde sleutels voor API in AI frontend-code
 
 Een van de meest voorkomende en ernstige kwetsbaarheden in door AI gegenereerde code is het blootleggen van gevoelige API-sleutels rechtstreeks in het frontend JavaScript. Wanneer u een AI vraagt ​​om "OpenAI te integreren" of "verbinding te maken met Stripe", is de snelste manier om werkende code te produceren het hardcoderen van uw geheime sleutels rechtstreeks in de React-componenten. Hoewel hierdoor het prototype onmiddellijk functioneert, blijven de toetsen zichtbaar voor iedereen die weet hoe hij op F12 moet drukken.
 

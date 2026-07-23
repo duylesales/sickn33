@@ -1,10 +1,10 @@
 ---
-Title: Scaling Supabase: What to Do When Your App Gets Real Traffic
+Title: "Scaling Supabase: What to Do When Your AI App Gets Real Traffic"
 Keywords: AI To Code, Scaling, Supabase, Traffic
 Buyer Stage: Awareness
 ---
 
-# Scaling Supabase: What to Do When Your App Gets Real Traffic
+# Scaling Supabase: What to Do When Your AI App Gets Real Traffic
 You launched. The product hunt went well, a TikTok went viral, and suddenly you have 5,000 active users. Congratulations—you now have a scaling problem. For AI-built apps running on Supabase, the first signs of stress usually appear as slow page loads, timeout errors, or database connection warnings. Here is a founder's guide to the three immediate levers you must pull to scale your Supabase backend.
 
 ## Lever 1: The Missing Indexes

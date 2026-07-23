@@ -1,10 +1,10 @@
 ---
-Title: Connecting a Custom Domain to Your Vercel or Netlify App
+Title: Connecting a Custom Domain to the AI App You Build
 Keywords: AI To Code, Connecting, Custom, Domain, Vercel, Netlify
 Buyer Stage: Awareness
 ---
 
-# Connecting a Custom Domain to Your Vercel or Netlify App
+# Connecting a Custom Domain to the AI App You Build
 Moving your AI-built app from a preview URL (like `my-project.vercel.app`) to your own custom domain (`myapp.com`) is the moment your prototype becomes a real product. While the process involves intimidating acronyms like DNS, A Records, and CNAMEs, it actually takes less than 10 minutes to complete. Here is the non-technical guide to securely connecting your custom domain.
 
 ## Step 1: Buy Your Domain

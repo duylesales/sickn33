@@ -4,6 +4,20 @@
 
 ### Tháng 07
 
+#### Ngày 23
+
+- **15:27**: Cập nhật nhật ký cho các công việc thực hiện trong phiên làm việc (hoàn thiện extra-4, viết mới extra-5):
+  - **extra-4**: hoàn thành nốt các bài viết còn thiếu (sau khi phiên làm việc ngày 22 bị crash do giới hạn session giữa chừng), sửa các file bị thiếu schema JSON-LD và file bị đặt tên sai định dạng số.
+  - **extra-4**: viết bài social (tiếng Anh + tiếng Hà Lan) cho toàn bộ 60 bài viết, tái sử dụng bản dịch Dutch có sẵn để đồng bộ thuật ngữ/trích dẫn (tổng 120 file mới).
+  - **extra-5**: viết mới 60 bài viết tiếng Anh theo hướng local SEO — ghép từ khóa có search volume cao nhất trong `keyword-planner...csv` với 60 thành phố Hà Lan phủ đều cả 12 tỉnh (Noord-Holland, Zuid-Holland, Utrecht, Gelderland, Noord-Brabant, Limburg, Overijssel, Flevoland, Groningen, Friesland, Drenthe, Zeeland), mỗi bài có tên thành phố trong tiêu đề + nội dung, giữ chuẩn schema/FAQ/case study như extra-4; phát hiện và sửa 5 tên founder bị trùng giữa các batch viết song song.
+
+#### Ngày 22
+
+- **12:04**: Cập nhật các việc đã làm trong ngày (sửa lỗi frontmatter, viết content cho extra-3, bắt đầu extra-4):
+  - Sửa lỗi parse frontmatter YAML: quote lại giá trị `Title:`/`Titel:` chứa dấu `:` thứ hai (gây lỗi "Nested mappings are not allowed") cho 56 file trong `2026/july-2026/` (cả bản gốc và bản dịch Dutch).
+  - **extra-3**: viết bài social (tiếng Anh + tiếng Hà Lan) cho toàn bộ 60 bài viết đã có sẵn, theo đúng khung mẫu 🚨/🧠/❌/✅/🛡️/🚀/👉 + hashtag của extra-2 (tổng 120 file mới).
+  - **extra-4**: bắt đầu viết mới 60 bài viết tiếng Anh (chủ đề ngành dọc + kỹ thuật hoàn toàn không trùng với 538 bài đã có), mỗi bài có schema JSON-LD (Article + FAQPage), phần "Real example" (case study founder/sản phẩm/lỗi kỹ thuật duy nhất), 5 FAQ gắn với Manifera/CEO Herre Roelevink/văn phòng GEO (Amsterdam, Singapore, TP.HCM); phiên làm việc bị crash do giới hạn session giữa chừng, hoàn thành nốt trong ngày 23.
+
 #### Ngày 17
 
 - **16:19**: Cập nhật các việc đã làm trong ngày (xử lý nội dung hàng loạt cho content tháng 7-10/2026):

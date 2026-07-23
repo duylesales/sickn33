@@ -1,10 +1,10 @@
 ---
-Title: Selling AI to Enterprise Clients: Security, Compliance, and Trust
+Title: "Selling to Enterprise Clients: Compliance and Security AI"
 Keywords: AI And Security, Selling, Enterprise, Clients, Security, Compliance
 Buyer Stage: Awareness
 ---
 
-# Selling AI to Enterprise Clients: Security, Compliance, and Trust
+# Selling to Enterprise Clients: Compliance and Security AI
 You built an AI tool that summarizes complex legal contracts in seconds. Individual lawyers love it and pay $30/month. So, you pitch it to a massive corporate law firm to secure a $50k/year enterprise contract. The managing partner loves the demo, but then hands you off to IT Procurement and the Chief Information Security Officer (CISO). They ask: "Where does the data go?" If your answer is "We just send it to OpenAI," the deal is dead. Here is how to navigate the enterprise AI gauntlet.
 
 ## The Enterprise Fear: Data Leakage

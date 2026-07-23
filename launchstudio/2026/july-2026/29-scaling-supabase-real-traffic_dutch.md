@@ -1,10 +1,10 @@
 ---
-Titel: Schalen Supabase: wat u moet doen als uw app echt verkeer krijgt
-Trefwoorden: AI om te coderen, Schaalvergroting, Supabase, Traffic
+Titel: "Supabase schalen: wat u moet doen wanneer uw AI-app echt verkeer krijgt"
+Trefwoorden: AI To Code, Scaling, Supabase, AI-app, Verkeer
 Koperfase: Bewustzijn
 ---
 
-# Supabase schalen: wat u moet doen als uw app echt verkeer krijgt
+# Supabase schalen: wat u moet doen wanneer uw AI-app echt verkeer krijgt
 
 Jij bent gelanceerd. De productjacht ging goed, een TikTok ging viraal en ineens heb je 5.000 actieve gebruikers. Gefeliciteerd, u heeft nu een schaalprobleem. Voor door AI gebouwde apps die op Supabase draaien, verschijnen de eerste tekenen van stress meestal als langzaam laden van pagina's, time-outfouten of waarschuwingen voor databaseverbindingen. Hier is een handleiding voor de oprichters over de drie directe hefbomen die u moet gebruiken om uw Supabase-backend te schalen.
 

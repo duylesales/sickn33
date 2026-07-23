@@ -1,5 +1,5 @@
 ---
-Title: Managing Production Secrets: A Guide for AI-Native Founders
+Title: "Managing Production Secrets: A Guide for AI-Native Founders"
 Keywords: AI For Coding, Managing, Production, Secrets, Guide, AINative
 Buyer Stage: Consideration
 ---

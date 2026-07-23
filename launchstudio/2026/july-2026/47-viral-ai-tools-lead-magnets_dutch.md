@@ -1,10 +1,10 @@
 ---
-Titel: Virale AI-tools creëren als leidende magneten
-Trefwoorden: Alle AI-tools, Creëren, Viraal, Gereedschap, Magneten
+Titel: Virale Lead Magnets creëren die alle AI-tools verslaan
+Trefwoorden: All AI Tools, Viral AI, Lead Magnets, Growth
 Koperfase: Bewustzijn
 ---
 
-# Virale AI-tools creëren als leadmagneten
+# Virale Lead Magnets creëren die alle AI-tools verslaan
 
 Tien jaar lang was het standaard B2B-marketingplaybook eenvoudig: schrijf een pdf-whitepaper van twintig pagina's, verberg deze achter een formulier en plaats LinkedIn-advertenties om e-mails te verzamelen. In 2026 wil niemand jouw pdf. De moderne uitvoerende macht wil onmiddellijk bruikbaar nut. Voer 'Engineering as Marketing' in: gebruik AI om gratis microtools voor één doel te bouwen die duizenden hooggekwalificeerde leads genereren.
 

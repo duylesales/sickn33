@@ -1,10 +1,10 @@
 ---
-Titel: Productiegeheimen beheren: een gids voor AI-Native Founders
-Trefwoorden: AI om te coderen, Managen, Productie, Geheimen, Gids, AINatief
+Titel: "Productiegeheimen beheren: een gids voor AI-native oprichters"
+Trefwoorden: AI For Coding, Productiegeheimen, AI-native Founder, Beveiliging
 Koperfase: overweging
 ---
 
-# Productiegeheimen beheren: een gids voor AI-Native Founders
+# Productiegeheimen beheren: een gids voor AI-native oprichters
 Een van de gevaarlijkste gewoonten die AI-bouwers aanleren, is het hardcoderen van API-sleutels. Wanneer je Lovable vraagt ​​om Stripe toe te voegen, worden de sleutels vaak rechtstreeks in je React-componenten geplaatst, zodat de demo meteen werkt. Als u van een demo naar een productielancering gaat, moet u alle gevoelige strings uit uw codebase extraheren en deze beheren als omgevingsvariabelen. Hier is de niet-technische handleiding voor het beheren van productiegeheimen.
 
 ## Wat is een geheim?

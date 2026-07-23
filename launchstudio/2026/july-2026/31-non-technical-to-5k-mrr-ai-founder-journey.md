@@ -1,10 +1,10 @@
 ---
-Title: From Non-Technical to $5k MRR: An AI Founder's Journey
+Title: "From Non-Technical to $5k MRR: An AI To Code Founder's Journey"
 Keywords: AI To Code, NonTechnical, Founders, Journey
 Buyer Stage: Awareness
 ---
 
-# From Non-Technical to $5k MRR: An AI Founder's Journey
+# From Non-Technical to $5k MRR: An AI To Code Founder's Journey
 Sarah is a logistics manager, not a software engineer. For three years, she watched her company lose hours every week to manual inventory reconciliation. She knew exactly what software needed to exist to solve the problem, but quotes from development agencies ranged from €25,000 to €40,000. So, she did what the new generation of AI-native founders do: she built it herself using AI, hired LaunchStudio to make it production-ready, and hit $5,000 in Monthly Recurring Revenue (MRR) in under 90 days. Here is her exact playbook.
 
 ## The Prototype Phase: 48 Hours with Lovable

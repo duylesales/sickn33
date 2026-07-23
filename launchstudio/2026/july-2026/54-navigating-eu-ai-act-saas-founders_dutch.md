@@ -1,10 +1,10 @@
 ---
-Titel: Navigeren door de EU AI Act: wat SaaS-oprichters moeten weten in 2026
-Trefwoorden: AI in SaaS, Navigeren, Stichters
+Titel: "Navigeren door de EU AI Act: wat AI SaaS-oprichters moeten weten"
+Trefwoorden: AI In SaaS, EU AI Act, SaaS Founders, Compliance
 Koperfase: Bewustzijn
 ---
 
-# Navigeren door de EU AI-wet: wat SaaS-oprichters moeten weten in 2026
+# Navigeren door de EU AI Act: wat AI SaaS-oprichters moeten weten
 
 Gedurende de eerste paar jaar van de AI-boom waren startups actief in het Wilde Westen. U zou in een weekend zonder nadenken een AI-cv-screener of een tool voor voorspellende kredietmodellering kunnen lanceren. Dat tijdperk eindigde met de handhaving van de **Artificiële Intelligentiewet van de Europese Unie (AI Act)**. Net zoals de AVG een revolutie teweegbracht in de gegevensprivacy, herschrijft de AI Act de regels voor softwareontwikkeling wereldwijd. Dit is wat elke AI-oprichter moet weten om verwoestende boetes te voorkomen.
 

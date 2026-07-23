@@ -1,10 +1,10 @@
 ---
-Titel: Databasemigraties uitgelegd: hoe u uw Supabase-schema veilig kunt wijzigen
-Trefwoorden: AI om te coderen, Database, Migraties, Uitleg, Wijzigen, Supabase
+Titel: Databasemigraties uitgelegd voor uw Supabase AI-database
+Trefwoorden: AI To Code, Database Migrations, Supabase, Schema
 Koperfase: overweging
 ---
 
-# Databasemigraties uitgelegd: hoe u uw Supabase-schema veilig kunt wijzigen
+# Databasemigraties uitgelegd voor uw Supabase AI-database
 Tijdens de prototypefase heeft uw AI-bouwer waarschijnlijk een Supabase-databaseschema gegenereerd en heeft u met plezier de tabellen rechtstreeks in de dashboard-gebruikersinterface aangepast. Maar als u eenmaal live gebruikers heeft, is het handmatig klikken op 'Kolom verwijderen' een recept voor een ramp. Het wijzigen van een productiedatabase vereist een gecontroleerd, op code gebaseerd proces dat 'migraties' wordt genoemd. Hier leest u hoe u uw Supabase-database veilig kunt ontwikkelen zonder downtime te veroorzaken of gebruikersgegevens te verliezen.
 
 ## Het probleem met dashboardbewerking

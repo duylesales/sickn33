@@ -1,10 +1,10 @@
 ---
-Titel: Wat zijn Edge-functies en waarom gebruiken AI-apps ze?
-Trefwoorden: AI en softwareontwikkeling, Functies
+Titel: Wat zijn Edge Functions in AI-softwareontwikkeling?
+Trefwoorden: AI And Software Development, Edge Functions, AI-app, Serverless
 Koperfase: Bewustzijn
 ---
 
-# Wat zijn Edge-functies en waarom gebruiken AI-apps ze?
+# Wat zijn Edge Functions in AI-softwareontwikkeling?
 Als u een AI-native startup bouwt met behulp van een serverloze architectuur, zult u uiteindelijk de term ‘Edge Function’ tegenkomen. Wanneer u uw AI-bouwer vraagt ​​een beveiligingsprobleem op te lossen of een API-sleutel te verbergen, zal de oplossing vrijwel altijd een Edge-functie omvatten. Maar wat zijn ze precies, en waarom zijn ze de cruciale ontbrekende schakel tussen een frontend-prototype en een veilige productie-app?
 
 ## Het probleem: de frontend kan geen geheimen bewaren

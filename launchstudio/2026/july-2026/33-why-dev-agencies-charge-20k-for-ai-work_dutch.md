@@ -1,10 +1,10 @@
 ---
-Titel: Waarom ontwikkelaarsbureaus €20.000 vragen voor wat AI in een weekend doet
-Trefwoorden: AI om te coderen, Agentschappen, Charge, Weekend
+Titel: Waarom ontwikkelingsbureaus €20k rekenen voor AI-codering die u in een weekend doet
+Trefwoorden: AI For Coding, Dev Agencies, Kosten, Weekend, AI-ontwikkeling
 Koperfase: Bewustzijn
 ---
 
-# Waarom ontwikkelaarsbureaus € 20.000 vragen voor wat AI in een weekend doet
+# Waarom ontwikkelingsbureaus €20k rekenen voor AI-codering die u in een weekend doet
 
 Als u in 2023 een SaaS-idee aan een ontwikkelingsbureau pitchte, ontving u waarschijnlijk een offerte tussen € 20.000 en € 50.000, met een tijdlijn van 3 tot 6 maanden. Vandaag kun je je voor $ 20 aanmelden voor Lovable en in een weekend een functioneel prototype van precies hetzelfde idee bouwen. Zijn agentschappen bezig met oplichting, of mist de AI iets cruciaals? Het antwoord ligt in de veranderende economie van softwareboilerplate.
 
