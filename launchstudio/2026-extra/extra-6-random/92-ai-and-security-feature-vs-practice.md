@@ -1,0 +1,96 @@
+---
+Title: "The Difference Between 'AI and Security' as a Feature vs. as a Practice"
+Keywords: ai and security, security practice, ai security feature, application security
+Buyer Stage: Consideration
+Target Persona: AI-Native Founder (Non-Technical)
+---
+
+# The Difference Between 'AI and Security' as a Feature vs. as a Practice
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Difference Between 'AI and Security' as a Feature vs. as a Practice",
+  "description": "A single AI-powered security feature is not the same as a security practice. Here's why founders who confuse the two get an unpleasant surprise after launch.",
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
+  "datePublished": "2026-07-27",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/ai-and-security-feature-vs-practice" }
+}
+</script>
+
+Here's an opinion that will save you a bad week: a single AI-powered security feature in your product is marketing copy, not a security posture. It's a fine thing to have. It is not the thing that keeps your users' data safe. I've watched founders point at one impressive-sounding capability — anomaly detection, smart fraud flags, an "AI-monitored" badge — and treat the underlying question of "is this application actually secure?" as answered. It isn't. "AI and security" gets used as if it names one settled relationship, when in practice it names two very different things that founders keep confusing: a feature you ship, and a practice you maintain.
+
+## A feature is a checkbox. A practice is a calendar.
+
+A security feature is something you build once and point to. It goes in the pitch deck, it goes on the landing page, it makes a nice screenshot. A security practice is different in kind — it's the discipline of patching dependencies on a schedule, reviewing who has access to what and pruning it, reading logs for signs of abuse, and re-checking your own assumptions as the product grows. A feature has a finish line. A practice doesn't; it just continues or it lapses.
+
+## Why this distinction gets lost in AI-built products
+
+AI coding tools are genuinely good at producing an isolated feature that looks like a security win — an AI-flagged suspicious login, a smart content filter, an anomaly score attached to a transaction. These are real capabilities and they're not fake. The problem is that they answer a narrow question ("can we detect this one pattern?") while leaving the broad question ("is the system as a whole maintained safely?") completely untouched. A founder who ships the narrow win can walk away believing they've handled the broad one, because nothing in the tool's output flagged the difference.
+
+## What "practice" actually costs, and why it's invisible until it isn't
+
+Practice looks like unglamorous, recurring work: rotating credentials, reviewing which team members and integrations can still touch production data, patching a library with a known vulnerability before it's exploited rather than after, watching for repeated failed logins instead of just detecting the one flashy anomaly. None of this shows up in a demo. All of it shows up in an incident report when it's missing.
+
+## The honest question to ask before you ship
+
+Not "do we have an AI security feature?" but "who is doing the recurring work of keeping this system safe, and on what schedule?" If the honest answer is "no one, yet," that's the gap to close before the feature gets its next screenshot.
+
+Behind LaunchStudio's launches is Manifera's team of 120+ seasoned engineers, and our Singapore hub works with founders specifically on turning "we have a security feature" into "we have a security practice" — access reviews, patch cadence, and monitoring that runs quietly in the background instead of living in a pitch deck. If you want a sense of what that ongoing coverage looks like, our [support add-on details](https://launchstudio.eu/en/#packages) walk through it, and Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) practice applies the same discipline for enterprise clients at a much larger scale.
+
+## Real example
+
+### An AI-Native Founder in Action: The Feature That Wasn't the Practice
+
+Levi Uithoorn, founder in Uithoorn, built VeiligMeld — an incident-reporting tool — using Bolt. VeiligMeld shipped with a genuinely useful AI-powered flagging feature that highlighted reports likely to need urgent follow-up. Levi pointed to that feature, in investor conversations and to early users, as proof the app was secure. It was a reasonable-sounding shorthand. It was also wrong, because security as an ongoing practice — patching dependencies, reviewing who had admin access, monitoring for unusual account activity — had never actually been established. The flagging feature and the security posture of the system were two unrelated things wearing the same word.
+
+The gap surfaced when a routine dependency in VeiligMeld's stack was found to have a known vulnerability, months after release. Nobody had been tracking dependency advisories, because nobody had been assigned to. By the time Levi learned about it, the vulnerable version had been running in production for weeks, reachable by anyone who knew where to look.
+
+LaunchStudio's engineers, backed by Manifera, patched the vulnerable dependency, then set up an ongoing monitoring and patch-review cadence so the next known vulnerability wouldn't sit unnoticed for weeks. They also ran an access review, trimming a handful of stale admin accounts left over from early testing that nobody remembered granting.
+
+**Result:** VeiligMeld now has a documented monthly review cycle, and Levi treats the AI flagging feature as one input among several rather than as proof of security.
+
+> *"I thought having an AI security feature meant we were covered. It meant we had one good tool. The practice was the part nobody had built yet."*
+> — **Levi Uithoorn, Founder, VeiligMeld (Uithoorn)**
+
+**Cost & Timeline:** €900 (dependency patch, access review, and monitoring setup) — completed in 4 business days.
+
+---
+
+## Frequently Asked Questions
+
+### What's the actual difference between an AI security feature and a security practice?
+
+A feature is a single built capability, like anomaly detection on one type of event. A practice is the recurring discipline of patching, access review, and monitoring that keeps the whole system safe over time, not just the one thing the feature watches for.
+
+### Can an AI-built app be secure without a dedicated security team?
+
+Yes, but it needs someone — internal or external — responsible for the recurring practice: checking dependency advisories, reviewing access, and monitoring logs, even if that someone is a part-time engagement rather than a full hire.
+
+### How does LaunchStudio help with security practice, not just features?
+
+LaunchStudio's team, backed by Manifera's 120+ engineers, sets up ongoing patch cadences, access reviews, and monitoring for founders after launch, rather than treating security as a one-time build item.
+
+### Is having one AI-powered security feature a red flag by itself?
+
+No — it's a legitimate capability. The red flag is treating that one feature as evidence the whole system is secure, which is a different and much broader claim.
+
+### Where is LaunchStudio's team based for founders in Southeast Asia?
+
+LaunchStudio has a hub in Singapore serving the Southeast Asia region, alongside its European headquarters in Amsterdam and engineering center in Ho Chi Minh City.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the actual difference between an AI security feature and a security practice?", "acceptedAnswer": { "@type": "Answer", "text": "A feature is a single built capability. A practice is the recurring discipline of patching, access review, and monitoring that keeps the whole system safe over time." } },
+    { "@type": "Question", "name": "Can an AI-built app be secure without a dedicated security team?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but someone needs to own the recurring practice of checking advisories, reviewing access, and monitoring logs, even as a part-time engagement." } },
+    { "@type": "Question", "name": "How does LaunchStudio help with security practice, not just features?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's team, backed by Manifera's 120+ engineers, sets up ongoing patch cadences, access reviews, and monitoring after launch." } },
+    { "@type": "Question", "name": "Is having one AI-powered security feature a red flag by itself?", "acceptedAnswer": { "@type": "Answer", "text": "No, it's legitimate. The red flag is treating it as evidence the whole system is secure." } },
+    { "@type": "Question", "name": "Where is LaunchStudio's team based for founders in Southeast Asia?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio has a hub in Singapore serving Southeast Asia, alongside Amsterdam and Ho Chi Minh City." } }
+  ]
+}
+</script>

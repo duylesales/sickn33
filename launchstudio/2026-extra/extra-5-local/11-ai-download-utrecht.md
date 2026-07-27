@@ -46,7 +46,7 @@ The process is deliberately fast and fixed-scope, because most Utrecht founders 
 
 Merel Kramer, a Utrecht University graduate, built StudyLoop — a note-sharing platform for study groups — using Lovable. She downloaded the code, deployed it to a free hosting tier, and shared it with three study groups. Within a week, one student noticed she could see another user's private notes just by changing a number in the URL. There was no row-level security on the database; every note was technically public to anyone who knew where to look.
 
-Sanne sent LaunchStudio the exported Lovable codebase along with a description of the issue. Our engineers traced it to a missing authorization check at the database layer — a common gap in AI-generated backends, since the AI tool had built the query logic to fetch notes by ID without verifying the requester owned them. We implemented proper row-level security policies, added session-based authorization checks, and set up a staging environment so future changes could be tested before going live.
+Merel sent LaunchStudio the exported Lovable codebase along with a description of the issue. Our engineers traced it to a missing authorization check at the database layer — a common gap in AI-generated backends, since the AI tool had built the query logic to fetch notes by ID without verifying the requester owned them. We implemented proper row-level security policies, added session-based authorization checks, and set up a staging environment so future changes could be tested before going live.
 
 **Result:** StudyLoop now runs securely for over 200 active student users across three Utrecht study programs, with no unauthorized data access since the fix.
 

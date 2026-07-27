@@ -30,7 +30,7 @@ The honest answer to "which AI tool is best" is that all AI tools — Lovable, B
 
 ## Where the Gap Actually Shows Up
 
-For a founder in Eindhoven's startup scene, the gap tends to surface in one of three ways. First, database permissions: AI-generated backends frequently default to open read/write access because it's the fastest way to make a demo work. Second, secrets management: API keys for Stripe, OpenAI, or Supabase get pasted directly into frontend code because that's the path of least resistance the AI suggested. Third, and most common, authentication logic that works for one test user but breaks the moment two real accounts exist simultaneously — exactly what happened to Sanne.
+For a founder in Eindhoven's startup scene, the gap tends to surface in one of three ways. First, database permissions: AI-generated backends frequently default to open read/write access because it's the fastest way to make a demo work. Second, secrets management: API keys for Stripe, OpenAI, or Supabase get pasted directly into frontend code because that's the path of least resistance the AI suggested. Third, and most common, authentication logic that works for one test user but breaks the moment two real accounts exist simultaneously — exactly what happened to Ilona.
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience taking exactly this kind of prototype into production without asking founders to start over. The team's engineering hub, including staff based out of Herengracht 420 in Amsterdam, works specifically with founders across Noord-Brabant and the rest of the Netherlands who've hit this wall — not to replace what they built, but to make it safe to launch.
 
@@ -44,11 +44,11 @@ This is also where the "all AI tools are the same" myth causes real damage — f
 
 ### An AI-Native Founder in Action: Ilona Peters's Circuo Dashboard
 
-Sanne built Circuo, an IoT monitoring dashboard for small manufacturing floors, using Lovable over roughly two weeks of evenings. The frontend was polished enough that two Brainport-region manufacturers asked to pilot it. The problem surfaced during onboarding: Circuo's database had no row-level security configured, meaning any authenticated user could query any other company's sensor data simply by changing an ID in the URL. It worked flawlessly in the demo because there had only ever been one account.
+Ilona built Circuo, an IoT monitoring dashboard for small manufacturing floors, using Lovable over roughly two weeks of evenings. The frontend was polished enough that two Brainport-region manufacturers asked to pilot it. The problem surfaced during onboarding: Circuo's database had no row-level security configured, meaning any authenticated user could query any other company's sensor data simply by changing an ID in the URL. It worked flawlessly in the demo because there had only ever been one account.
 
-LaunchStudio's engineers audited the Supabase schema, implemented proper row-level security policies scoped to each company's account, and rebuilt the authentication flow so sessions couldn't leak across tenants — all without touching Sanne's Lovable-built frontend. They also moved her exposed API keys out of client-side code and into a secured backend layer.
+LaunchStudio's engineers audited the Supabase schema, implemented proper row-level security policies scoped to each company's account, and rebuilt the authentication flow so sessions couldn't leak across tenants — all without touching Ilona's Lovable-built frontend. They also moved her exposed API keys out of client-side code and into a secured backend layer.
 
-**Result:** Circuo went live with both pilot manufacturers within the same month, and Sanne signed a third client after passing their security questionnaire — something the original build would have failed outright.
+**Result:** Circuo went live with both pilot manufacturers within the same month, and Ilona signed a third client after passing their security questionnaire — something the original build would have failed outright.
 
 > *"I thought I'd built a finished product. I'd actually built a very convincing demo. LaunchStudio didn't touch my design — they fixed the part I didn't know was broken."*
 > — **Ilona Peters, Founder, Circuo (Eindhoven)**

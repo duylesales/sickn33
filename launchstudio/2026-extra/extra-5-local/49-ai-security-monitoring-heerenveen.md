@@ -48,7 +48,7 @@ The irony of AI security monitoring is that founders only tend to feel its absen
 
 ### An AI-Native Founder in Action: RinkReady, Heerenveen
 
-Renske de Boer built RinkReady, a SaaS platform helping ice rinks and skating clubs around Heerenveen manage ice-time bookings and membership across multiple facilities, using Lovable to get the product live quickly during a busy pre-season signup period. The app passed a pre-launch security review with no major issues. Three months later, RinkReady's login API started receiving thousands of automated login attempts a day, cycling through leaked password lists from unrelated breaches, trying to find a match against RinkReady accounts. Because there was no monitoring in place, the attack ran undetected for nearly two weeks before unusual server load prompted Femke to investigate.
+Renske de Boer built RinkReady, a SaaS platform helping ice rinks and skating clubs around Heerenveen manage ice-time bookings and membership across multiple facilities, using Lovable to get the product live quickly during a busy pre-season signup period. The app passed a pre-launch security review with no major issues. Three months later, RinkReady's login API started receiving thousands of automated login attempts a day, cycling through leaked password lists from unrelated breaches, trying to find a match against RinkReady accounts. Because there was no monitoring in place, the attack ran undetected for nearly two weeks before unusual server load prompted Renske to investigate.
 
 LaunchStudio's engineers set up authentication anomaly detection with automatic account lockouts after repeated failures, rate limiting on the login API, and real-time alerting so any future attack pattern gets flagged within minutes instead of weeks.
 

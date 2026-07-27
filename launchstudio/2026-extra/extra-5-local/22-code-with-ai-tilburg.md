@@ -44,9 +44,9 @@ None of this is an argument against AI-assisted development — quite the opposi
 
 Rick Damen spent years in Tilburg's freight forwarding sector before building Vracht360, a shipment-tracking tool for small logistics operators, using Bolt over three intense weeks. The app looked and functioned exactly like the SaaS products his former employer paid five figures a year for. He onboarded two beta customers before a third prospect asked a routine question during a demo: what happens to their data if he ever shuts the tool down, and where exactly is it hosted?
 
-Bram didn't have a confident answer, and neither did his code. Investigating further, LaunchStudio's engineers found that Vracht360's shipment records had no automated backups configured, its hosting environment mixed staging and production data in the same database, and several API endpoints returned full customer records with no field-level filtering — meaning any logged-in user could pull competitors' shipment volumes if they knew the right URL pattern.
+Rick didn't have a confident answer, and neither did his code. Investigating further, LaunchStudio's engineers found that Vracht360's shipment records had no automated backups configured, its hosting environment mixed staging and production data in the same database, and several API endpoints returned full customer records with no field-level filtering — meaning any logged-in user could pull competitors' shipment volumes if they knew the right URL pattern.
 
-**Result:** LaunchStudio separated staging from production, implemented automated daily backups, and added field-level access controls to every customer-facing endpoint, all without altering Bram's Bolt-built interface. Vracht360 passed its next prospect's data-security questions without hesitation.
+**Result:** LaunchStudio separated staging from production, implemented automated daily backups, and added field-level access controls to every customer-facing endpoint, all without altering Rick's Bolt-built interface. Vracht360 passed its next prospect's data-security questions without hesitation.
 
 > *"I could code fast. I couldn't answer 'what happens if this breaks.' That's the part LaunchStudio actually fixed."*
 > — **Rick Damen, Founder, Vracht360 (Tilburg)**
