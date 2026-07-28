@@ -152,19 +152,76 @@ Mark turned to **LaunchStudio (by Manifera)**. Instead of throwing away his Lova
 
 ---
 
+---
+
+---
 ## Frequently Asked Questions
 
 ### Can you really build a SaaS MVP with Lovable in under a week?
+
 Yes, you can build a functional SaaS MVP with Lovable in 3–7 days. This includes a working frontend with user interface, basic authentication via Supabase, database structure, and core business logic. However, this prototype will need additional work on security, payments, and deployment before it is ready for paying customers.
 
 ### What should I prepare before starting to build with Lovable?
+
 Before starting, prepare a clear description of your product's core feature (the one thing it does), identify your target user, sketch out the 3–5 main screens, decide on your data model (what information you need to store), and create a Supabase account for your backend. Having these ready dramatically improves the quality of Lovable's output.
 
 ### How do I connect Lovable to a database?
+
 Lovable has built-in Supabase integration. You connect your Supabase project by providing your project URL and anon key in Lovable's settings. Once connected, you can ask Lovable to create tables, set up authentication, and build CRUD operations that interact with your Supabase database directly.
 
 ### What is the most common mistake when building with Lovable?
+
 The most common mistake is trying to build everything at once. Founders who describe their entire product in one massive prompt get worse results than those who build incrementally — starting with core features and adding complexity step by step. Another common mistake is skipping the Supabase Row Level Security setup, which leaves your database exposed.
 
 ### Is a Lovable MVP good enough to show investors?
+
 A Lovable MVP is excellent for demonstrating your concept to investors. The generated UI is professional and interactive, which makes a strong impression. However, for investors who want to see a live product with real users, you will need to make the prototype production-ready with proper security, hosting, and potentially payment integration first. Services like LaunchStudio (backed by Manifera) specialize exactly in bridging this gap.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you really build a SaaS MVP with Lovable in under a week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can build a functional SaaS MVP with Lovable in 3–7 days. This includes a working frontend with user interface, basic authentication via Supabase, database structure, and core business logic. However, this prototype will need additional work on security, payments, and deployment before it is ready for paying customers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I prepare before starting to build with Lovable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Before starting, prepare a clear description of your product's core feature (the one thing it does), identify your target user, sketch out the 3–5 main screens, decide on your data model (what information you need to store), and create a Supabase account for your backend. Having these ready dramatically improves the quality of Lovable's output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I connect Lovable to a database?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lovable has built-in Supabase integration. You connect your Supabase project by providing your project URL and anon key in Lovable's settings. Once connected, you can ask Lovable to create tables, set up authentication, and build CRUD operations that interact with your Supabase database directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most common mistake when building with Lovable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common mistake is trying to build everything at once. Founders who describe their entire product in one massive prompt get worse results than those who build incrementally — starting with core features and adding complexity step by step. Another common mistake is skipping the Supabase Row Level Security setup, which leaves your database exposed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a Lovable MVP good enough to show investors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Lovable MVP is excellent for demonstrating your concept to investors. The generated UI is professional and interactive, which makes a strong impression. However, for investors who want to see a live product with real users, you will need to make the prototype production-ready with proper security, hosting, and potentially payment integration first. Services like LaunchStudio (backed by Manifera) specialize exactly in bridging this gap."
+      }
+    }
+  ]
+}
+</script>

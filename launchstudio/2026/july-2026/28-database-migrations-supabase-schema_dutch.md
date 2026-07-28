@@ -101,6 +101,8 @@ Scarlett werkte samen met **LaunchStudio (door Manifera)** om het product lancer
 **Kosten en tijdlijn:** € 1.850 (migratie- en schemapakket) — klaar voor productie en geïmplementeerd binnen 6 werkdagen.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is een databasemigratie?
@@ -118,3 +120,56 @@ AI blinkt uit in het schrijven van SQL. Vraag de AI om "een SQL-migratiescript t
 ### Wat moet ik doen voordat ik een migratie op productie uitvoer?
 
 Activeer altijd een handmatige databaseback-up in het Supabase-dashboard. Dit biedt een onmiddellijk herstelpunt als het migratiescript onbedoelde gevolgen heeft.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een databasemigratie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een migratie is een SQL-script dat op een veilige manier de structuur van uw database verandert (zoals het toevoegen van tabellen of kolommen) en tegelijkertijd een versiegestuurde geschiedenis van wijzigingen bijhoudt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom kan ik de tabel niet gewoon in het Supabase-dashboard bewerken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Handmatige bewerkingen in productie zijn gevaarlijk omdat het verwijderen of hernoemen van een kolom die actief wordt gebruikt door de live app onmiddellijke crashes zal veroorzaken. Handmatige bewerkingen verbreken ook de synchronisatie met lokale ontwikkeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe gaan AI-bouwers om met databasewijzigingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI blinkt uit in het schrijven van SQL. Vraag de AI om \"een SQL-migratiescript te genereren\" in plaats van vaag te vragen om de database bij te werken, en voer dat script vervolgens veilig uit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen voordat ik een migratie op productie uitvoer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Activeer altijd een handmatige databaseback-up in het Supabase-dashboard. Dit biedt een onmiddellijk herstelpunt als het migratiescript onbedoelde gevolgen heeft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

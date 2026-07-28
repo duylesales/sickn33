@@ -166,6 +166,7 @@ Mia werkte samen met **LaunchStudio (door Manifera)**. Het technische team liet 
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Wat is het verschil tussen een AI-MVP en een prototype?
@@ -187,3 +188,52 @@ Test met minimaal 5-10 mensen uit uw doelgroep. Dit moeten daadwerkelijke potent
 ### Wat is het grootste risico als je te vroeg lanceert?
 
 Het grootste risico is een inbreuk op de beveiliging waardoor gebruikersgegevens openbaar worden gemaakt. Naast directe schade leidt dit ook tot blijvende reputatieschade, potentiële AVG-boetes en verlies van vertrouwen dat uiterst moeilijk te herstellen is.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een AI-MVP en een prototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een prototype demonstreert uw productconcept en valideert uw idee. Een AI-MVP is een productieklaar product dat echte gebruikers veilig kunnen gebruiken en mogelijk kunnen betalen. Het belangrijkste verschil is de gereedheid voor productie: een AI-MVP beschikt over de juiste beveiliging, foutafhandeling, implementatie en betalingsverwerking. De meeste door AI gebouwde applicaties zijn prototypes, geen MVP’s."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn app veilig genoeg is om te starten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uw app is veilig genoeg als deze vijf controles doorstaat: authenticatie maakt gebruik van een beproefde provider, er zitten geen geheimen in de client-side code, database Row Level Security is ingeschakeld, HTTPS wordt afgedwongen en alle gebruikersinvoer wordt gevalideerd en opgeschoond."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik starten met een gratis niveau of moet ik vanaf dag één betalen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor de meeste AI-native oprichters wordt het aanbevolen om te starten met een gratis niveau of gratis proefperiode. Het vermindert de drempel voor adoptie en zorgt ervoor dat u snel feedback kunt verzamelen. Uw betalingsinfrastructuur moet echter gereed zijn vóór de lancering, zelfs als u gratis begint."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel testgebruikers moet ik hebben voordat ik het openbaar lanceer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test met minimaal 5-10 mensen uit uw doelgroep. Dit moeten daadwerkelijke potentiële gebruikers zijn, geen vrienden en familie. Kijk hoe ze het product zonder begeleiding gebruiken en de kritieke problemen oplossen die ze identificeren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het grootste risico als je te vroeg lanceert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het grootste risico is een inbreuk op de beveiliging waardoor gebruikersgegevens openbaar worden gemaakt. Naast directe schade leidt dit ook tot blijvende reputatieschade, potentiële AVG-boetes en verlies van vertrouwen dat uiterst moeilijk te herstellen is."
+      }
+    }
+  ]
+}
+</script>

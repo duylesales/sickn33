@@ -152,19 +152,74 @@ Mark wendde zich tot **LaunchStudio (door Manifera)**. In plaats van zijn Lovabl
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Kun je echt binnen een week een SaaS MVP bouwen met Lovable?
+
 Ja, je kunt met Lovable binnen 3 tot 7 dagen een functionele SaaS MVP bouwen. Dit omvat een werkende frontend met gebruikersinterface, basisauthenticatie via Supabase, databasestructuur en kernbedrijfslogica. Dit prototype zal echter extra werk vergen op het gebied van beveiliging, betalingen en implementatie voordat het klaar is voor betalende klanten.
 
 ### Wat moet ik voorbereiden voordat ik begin met bouwen met Lovable?
+
 Voordat u begint, bereidt u een duidelijke beschrijving voor van de kernfunctie van uw product (het enige dat het doet), identificeert u uw doelgroep, schetst u de drie tot vijf hoofdschermen, bepaalt u uw datamodel (welke informatie u moet opslaan) en maakt u een Supabase-account voor uw backend. Als u deze gereed heeft, wordt de kwaliteit van de output van Lovable dramatisch verbeterd.
 
 ### Hoe verbind ik Lovable met een database?
+
 Lovable heeft ingebouwde Supabase-integratie. U verbindt uw Supabase-project door uw project-URL en anon-sleutel op te geven in de instellingen van Lovable. Eenmaal verbonden, kunt u Lovable vragen om tabellen te maken, authenticatie in te stellen en CRUD-bewerkingen te bouwen die rechtstreeks communiceren met uw Supabase-database.
 
 ### Wat is de meest voorkomende fout bij het bouwen met Lovable?
+
 De meest voorkomende fout is dat je alles in één keer probeert te bouwen. Oprichters die hun hele product in één enorme prompt beschrijven, behalen slechtere resultaten dan degenen die stapsgewijs bouwen – te beginnen met de kernfuncties en stap voor stap de complexiteit toe te voegen. Een andere veelgemaakte fout is het overslaan van de Supabase Row Level Security-installatie, waardoor uw database zichtbaar blijft.
 
 ### Is een sympathieke MVP goed genoeg om aan investeerders te laten zien?
+
 Een sympathieke MVP is uitstekend geschikt om uw concept aan investeerders te demonstreren. De gegenereerde gebruikersinterface is professioneel en interactief, wat een sterke indruk maakt. Voor investeerders die een live product met echte gebruikers willen zien, moet u echter eerst het prototype productieklaar maken met de juiste beveiliging, hosting en mogelijk betalingsintegratie. Diensten zoals LaunchStudio (ondersteund door Manifera) zijn precies gespecialiseerd in het overbruggen van deze kloof.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kun je echt binnen een week een SaaS MVP bouwen met Lovable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, je kunt met Lovable binnen 3 tot 7 dagen een functionele SaaS MVP bouwen. Dit omvat een werkende frontend met gebruikersinterface, basisauthenticatie via Supabase, databasestructuur en kernbedrijfslogica. Dit prototype zal echter extra werk vergen op het gebied van beveiliging, betalingen en implementatie voordat het klaar is voor betalende klanten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik voorbereiden voordat ik begin met bouwen met Lovable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voordat u begint, bereidt u een duidelijke beschrijving voor van de kernfunctie van uw product (het enige dat het doet), identificeert u uw doelgroep, schetst u de drie tot vijf hoofdschermen, bepaalt u uw datamodel (welke informatie u moet opslaan) en maakt u een Supabase-account voor uw backend. Als u deze gereed heeft, wordt de kwaliteit van de output van Lovable dramatisch verbeterd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verbind ik Lovable met een database?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lovable heeft ingebouwde Supabase-integratie. U verbindt uw Supabase-project door uw project-URL en anon-sleutel op te geven in de instellingen van Lovable. Eenmaal verbonden, kunt u Lovable vragen om tabellen te maken, authenticatie in te stellen en CRUD-bewerkingen te bouwen die rechtstreeks communiceren met uw Supabase-database."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de meest voorkomende fout bij het bouwen met Lovable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meest voorkomende fout is dat je alles in één keer probeert te bouwen. Oprichters die hun hele product in één enorme prompt beschrijven, behalen slechtere resultaten dan degenen die stapsgewijs bouwen – te beginnen met de kernfuncties en stap voor stap de complexiteit toe te voegen. Een andere veelgemaakte fout is het overslaan van de Supabase Row Level Security-installatie, waardoor uw database zichtbaar blijft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is een sympathieke MVP goed genoeg om aan investeerders te laten zien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een sympathieke MVP is uitstekend geschikt om uw concept aan investeerders te demonstreren. De gegenereerde gebruikersinterface is professioneel en interactief, wat een sterke indruk maakt. Voor investeerders die een live product met echte gebruikers willen zien, moet u echter eerst het prototype productieklaar maken met de juiste beveiliging, hosting en mogelijk betalingsintegratie. Diensten zoals LaunchStudio (ondersteund door Manifera) zijn precies gespecialiseerd in het overbruggen van deze kloof."
+      }
+    }
+  ]
+}
+</script>

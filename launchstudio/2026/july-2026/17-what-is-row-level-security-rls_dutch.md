@@ -81,6 +81,8 @@ Mason werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 1.200 (Security Hardening Package) — productieklaar en binnen 4 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is Row Level Security (RLS) precies?
@@ -98,3 +100,56 @@ Log in op Supabase, ga naar de Tabeleditor en zoek naar een hangslotpictogram na
 ### Wat gebeurt er als ik start zonder RLS?
 
 Lanceren zonder RLS is een ernstige kwetsbaarheid. Elke gebruiker kan API-verzoeken manipuleren om toegang te krijgen tot de gegevens van andere gebruikers of deze te verwijderen, waardoor u wordt blootgesteld aan datalekken en juridische straffen.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is Row Level Security (RLS) precies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Row Level Security beperkt de databasetoegang per rij. Het fungeert als uitsmijter op databaseniveau en zorgt ervoor dat de gebruiker die een verzoek indient, toestemming heeft om met die specifieke rij gegevens te communiceren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom schakelen AI-bouwers RLS meestal uit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-tools geven prioriteit aan het snel functioneel krijgen van uw applicatie. Het schrijven van complex beleid vereist context over uw bedrijfslogica. Om databasetoestemmingsfouten te voorkomen die de demo verbreken, laten AI-generatoren RLS uitgeschakeld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of RLS is ingeschakeld voor mijn Supabase-project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Log in op Supabase, ga naar de Tabeleditor en zoek naar een hangslotpictogram naast uw tafels. Ontgrendeld betekent dat RLS is uitgeschakeld. Vergrendeld betekent dat het is ingeschakeld (maar u moet verifiëren dat het beleid correct is)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er als ik start zonder RLS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lanceren zonder RLS is een ernstige kwetsbaarheid. Elke gebruiker kan API-verzoeken manipuleren om toegang te krijgen tot de gegevens van andere gebruikers of deze te verwijderen, waardoor u wordt blootgesteld aan datalekken en juridische straffen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

@@ -173,6 +173,7 @@ Lucas werkte samen met **LaunchStudio (door Manifera)**. Het technische team bev
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Hoeveel checklistitems moeten er passeren voordat ik kan starten?
@@ -194,3 +195,52 @@ Voor een ervaren ontwikkelaar duurt de implementatie van de meeste afzonderlijke
 ### Wat gebeurt er als ik start zonder de beveiligingschecklist in te vullen?
 
 Als u zonder beveiligingsmaatregelen start, wordt u blootgesteld aan datalekken, ongeautoriseerde toegang tot gebruikersaccounts, potentiële AVG-schendingen (met boetes tot 4% van de jaarlijkse omzet of € 20 miljoen), verlies van gebruikersvertrouwen en mogelijke juridische stappen van getroffen gebruikers.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoeveel checklistitems moeten er passeren voordat ik kan starten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alle vijf de beveiligingsitems zijn verplicht. Als u zonder deze items start, worden de gegevens van uw gebruikers zichtbaar en ontstaat er juridische aansprakelijkheid. Als u betalingen accepteert, zijn betalingsitems vereist. We raden aan om minimaal 16 van de 20 items door te geven voordat je live gaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het vaakst mislukte item op de checklist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beveiliging op rijniveau (item 3) is het vaakst mislukte item. Bij ongeveer 80% van de door AI gebouwde Supabase-applicaties die we beoordelen, is RLS uitgeschakeld of onjuist geconfigureerd, wat betekent dat elke geverifieerde gebruiker toegang heeft tot de gegevens van andere gebruikers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik deze checklist gebruiken voor apps die niet met AI zijn gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, deze checklist is van toepassing op elke webapplicatie die zich voorbereidt op lancering. De artikelen voldoen aan universele vereisten voor productiegereedheid. Door AI gebouwde applicaties slagen echter vaker niet in deze controles, omdat AI-generatoren prioriteit geven aan functionaliteit en gebruikersinterface boven beveiliging en operationele gereedheid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt het om mislukte checklistitems te herstellen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor een ervaren ontwikkelaar duurt de implementatie van de meeste afzonderlijke items 1 tot 4 uur. De volledige set oplossingen voor een typische, door AI gebouwde applicatie duurt 1 tot 3 weken als deze professioneel wordt uitgevoerd. LaunchStudio verwerkt alle checklistitems als onderdeel van onze lanceringspakketten, geprijsd tussen € 800 en € 7.500."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er als ik start zonder de beveiligingschecklist in te vullen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als u zonder beveiligingsmaatregelen start, wordt u blootgesteld aan datalekken, ongeautoriseerde toegang tot gebruikersaccounts, potentiële AVG-schendingen (met boetes tot 4% van de jaarlijkse omzet of € 20 miljoen), verlies van gebruikersvertrouwen en mogelijke juridische stappen van getroffen gebruikers."
+      }
+    }
+  ]
+}
+</script>

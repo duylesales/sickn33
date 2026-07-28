@@ -76,6 +76,8 @@ James werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 2.200 (aangepast backendpakket) — klaar voor productie en geïmplementeerd binnen 7 werkdagen.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat betekent 'serverloos' in de context van een door AI gebouwde app?
@@ -93,3 +95,56 @@ Wanneer u langlopende taken heeft (meer dan 60 seconden), zoals videoverwerking,
 ### Hoe verberg ik mijn OpenAI API-sleutel zonder een backend-server?
 
 U gebruikt Edge-functies. De frontend roept de Edge-functie aan, die veilig de sleutel ophaalt uit omgevingsvariabelen op de server, het verzoek doet en het resultaat retourneert.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat betekent 'serverloos' in de context van een door AI gebouwde app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het betekent dat u geen dedicated server beheert die 24/7 draait. Uw frontend communiceert rechtstreeks met managed services (Supabase) en maakt gebruik van tijdelijke 'Edge Functions' voor beveiligde taken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een serverloze app worden geschaald naar duizenden gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Beheerde services zoals Vercel en Supabase verwerken automatisch de schaalvergroting. U hoeft zich geen zorgen te maken over taakverdeling wanneer het verkeer piekt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wanneer heeft mijn startup eigenlijk een aangepaste backend-server nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wanneer u langlopende taken heeft (meer dan 60 seconden), zoals videoverwerking, complexe wachtrijen voor taken op de achtergrond of hoogfrequente realtime vereisten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verberg ik mijn OpenAI API-sleutel zonder een backend-server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U gebruikt Edge-functies. De frontend roept de Edge-functie aan, die veilig de sleutel ophaalt uit omgevingsvariabelen op de server, het verzoek doet en het resultaat retourneert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

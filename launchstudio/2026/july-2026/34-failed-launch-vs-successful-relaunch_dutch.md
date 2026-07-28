@@ -1,103 +1,161 @@
 ---
-Titel: "Een verhaal over twee lanceringen: waarom deze AI SaaS-oprichter het twee keer moest proberen"
-Trefwoorden: AI To Code, Lancering, AI-native Founder, Relaunch
-Koperfase: beslissing
+Title: "Een verhaal over twee lanceringen: waarom deze AI SaaS-oprichter het twee keer moest proberen"
+Keywords: AI Secure, AI Kwetsbaarheden, AI Prototype, AI App Bouwen, Row Level Security, Stripe Webhooks, LaunchStudio, Manifera, Herre Roelevink, Cursor
+Buyer Stage: Decision
 ---
 
 # Een verhaal over twee lanceringen: waarom deze AI SaaS-oprichter het twee keer moest proberen
-Een product bouwen was nog nooit zo eenvoudig; Het starten van een bedrijf is nog nooit zo gevaarlijk geweest. Dit is het waargebeurde verhaal van Marcus, een domeinexpert in onroerend goed, die een AI-bouwer gebruikte om een ​​revolutionaire tool voor vastgoedbeheer te creëren. Zijn eerste lancering was een catastrofale mislukking die bijna het einde van zijn bedrijf betekende. Zijn tweede lancering, twee weken later, zette hem op weg naar een MRR van $10.000. Hier leest u wat er mis ging en hoe hij het heeft opgelost.
+
+Een product bouwen was nog nooit zo eenvoudig; een bedrijf starten is nog nooit zo gevaarlijk geweest. Dit is het waargebeurde verhaal van Marcus, een domeinexpert in vastgoed, die een AI-builder gebruikte om een revolutionaire tool voor vastgoedbeheer te creëren. Zijn eerste lancering was een catastrofale mislukking die zijn bedrijf bijna beëindigde voordat het goed en wel begonnen was. Zijn tweede lancering, twee weken later, zette hem op een koers richting $10.000 MRR. Hier leest u precies wat er onder de motorkap misging en welk specifieke engineeringwerk nodig was om het te herstellen.
 
 ## Lancering 1: De 'Big Bang'-ramp
 
-Marcus bracht drie weken door met het aansporen van Cursor. Hij bouwde een verbluffend dashboard dat AI gebruikte om complexe leaseovereenkomsten te ontleden en risicofactoren onder de aandacht te brengen. Opgetogen over het resultaat, stuurde hij het naar Vercel, koppelde een aangepast domein aan en e-mailde zijn lijst van 800 vastgoedprofessionals.
+Marcus bracht drie weken door met het schrijven van prompts in Cursor. Hij bouwde een prachtig dashboard dat AI gebruikte om complexe huurovereenkomsten te analyseren en risicofactoren te markeren — het soort tool waar een klein ontwikkelteam normaal gesproken een heel kwartaal over zou doen. Enthousiast over het resultaat deployde hij de app naar Vercel, koppelde een eigen domein en e-mailde zijn verzendlijst van 800 vastgoedprofessionals.
 
-Binnen twee uur stond zijn inbox in brand – en niet op een goede manier.
+Binnen twee uur stond zijn inbox in brand — en niet op een positieve manier.
 
-- **The Payment Black Hole**: Marcus gebruikte de door AI gegenereerde Stripe-integratie. Het was volledig frontend-gebaseerd zonder webhooks. Toen gebruikers op hun telefoon betaalden en het scherm werd vergrendeld, nam Stripe hun geld af, maar de app verleende hen nooit toegang. Marcus had 40 boze e-mails waarin om terugbetaling werd gevraagd.
+- **Het zwarte gat van betalingen**: Marcus gebruikte de door AI gegenereerde Stripe-integratie, die volledig client-side werkte. De checkout-flow stuurde gebruikers direct na betaling door naar een "succespagina", zonder server-side listener die controleerde of de betaling daadwerkelijk was verwerkt. Wanneer gebruikers op hun telefoon betaalden en het scherm vergrendelde of de verbinding wegviel voordat de redirect voltooid was, schreef Stripe het geld wel af — maar registreerde de server van Marcus de transactie nooit en werd er geen toegang verleend. Binnen een uur had Marcus 40 boze e-mails ontvangen waarin om terugbetaling werd gevraagd.
 
-- **De inbreuk op de privacy**: omdat Marcus niets wist van Supabase Row Level Security (RLS), werd deze uitgeschakeld gelaten. Eén gebruiker klikte op een verbroken link en bekeek per ongeluk het dashboard van een concurrent, waardoor gevoelige leasegegevens openbaar werden.
+- **Het datalek**: Cursor had de Supabase-database klaargezet met Row Level Security (RLS) aanwezig in het schema, maar dit was nooit daadwerkelijk ingeschakeld of op beleidsniveau gekoppeld aan `auth.uid()`. Elke tabel was technisch gezien opvraagbaar door elke geauthenticeerde sessie. Eén gebruiker klikte op een kapotte gedeelde link en kreeg per ongeluk het volledige huurdashboard van een directe concurrent te zien, inclusief gevoelige huuroverzichten en risicobeoordelingsdata die nooit het account hadden mogen verlaten.
 
-- **De stille crashes**: de app bleef crashen wanneer gebruikers specifieke PDF-typen uploadden. Omdat Marcus Sentry (foutopsporing) niet had geïnstalleerd, had hij geen idee wat er kapot was. Hij zag zojuist gebruikers van de site stuiteren.
+- **De stille crashes**: De app bleef crashen wanneer gebruikers specifieke PDF-typen uploadden — gescande huurcontracten met ingesloten lettertypen waar de parser op vastliep. Omdat Marcus geen enkele vorm van foutopsporing had geïnstalleerd (geen Sentry, geen logging-pijplijn), had hij nul inzicht in wat er daadwerkelijk kapotging. Hij zag in zijn analytics alleen maar gebruikers van het uploadscherm afhaken zonder enige verklaring.
 
-Om 16.00 uur haalde Marcus de site offline en gaf hij massale restituties uit. De lancering was een totale mislukking.
+Om 16:00 uur haalde Marcus de site offline en keerde hij massaal restituties uit. De lancering was een totale mislukking, en drie weken werk leken binnen een paar uur voor niets te zijn geweest.
 
-## De autopsie: prototype versus productie
+## De autopsie: Prototype versus Productie
 
-Marcus realiseerde zich dat de AI weliswaar een briljant *prototype* had gebouwd, maar geen *veilige bedrijfsinfrastructuur*. Hij had het juiste idee en de juiste gebruikersinterface, maar de basis was van glas.
+Marcus realiseerde zich dat Cursor weliswaar een briljant *prototype* had gebouwd, maar geen *veilige bedrijfsinfrastructuur*. Hij had het juiste idee, de juiste domeinkennis en een strakke UI — maar het fundament eronder was van glas. Deze kloof is niet uniek voor Marcus: branchegegevens over door AI gegenereerde codebases tonen consistent aan dat ongeveer 45% van de AI-gegenereerde code wordt uitgebracht met minstens één exploiteerbaar beveiligingslek, en naar schatting 80% van de door AI gebouwde projecten bereikt nooit een stabiele productielancering. Marcus' app was op dag één rechtstreeks in beide statistieken gelopen.
 
-Hij had twee opties: de komende drie maanden besteden aan het leren van backend-engineering om het zelf te repareren (waardoor hij al zijn momentum verloor), of het inschakelen van professionals.
+Hij had twee opties: de komende drie maanden besteden aan het leren van backend-engineering, databasebeveiliging en betalingsinfrastructuur om het zelf te repareren — waarbij hij al zijn momentum zou verliezen en zijn resterende runway zou opbranden — of engineers inschakelen die dit specifieke faalpatroon al precies begrepen.
 
-## De oplossing: samenwerken met LaunchStudio
+## De oplossing: Samenwerken met LaunchStudio
 
-Marcus nam de volgende ochtend contact op met LaunchStudio. Omdat hij de kernlogica en gebruikersinterface al had, hoefden we de app niet te herschrijven. We hoefden het alleen maar te verharden. Gedurende de volgende 14 dagen hebben we het **Launch & Grow**-playbook uitgevoerd:
+Marcus nam de volgende ochtend contact op met LaunchStudio. Omdat hij de kernlogica en de UI al had — het harde, creatieve werk — hoefde het engineeringteam de app niet vanaf nul opnieuw te schrijven. Ze moesten hem verharden (production hardening). LaunchStudio wordt aangedreven door Manifera, een internationaal softwareontwikkelingsbedrijf opgericht in 2014 door Herre Roelevink, met engineeringteams in Amsterdam, Singapore en Ho Chi Minh-stad. Gedurende de daaropvolgende 14 dagen voerde het team het **Launch & Grow**-playbook uit op Marcus' bestaande, met Cursor gebouwde frontend, zonder één regel van zijn UI-code aan te raken:
 
-1. **De gegevens beveiligd**: We hebben strikt Row Level Security (RLS)-beleid geïmplementeerd in Supabase, zodat het wiskundig gezien onmogelijk was voor gebruikers om elkaars gegevens te zien.
+1. **Beveiliging van de data**: Engineers implementeerden strikt Row Level Security-beleid in Supabase, waarbij elke query werd gekoppeld aan `auth.uid()`. Hierdoor werd het wiskundig onmogelijk voor het ene account om de rijen van een ander account te lezen — niet alleen verborgen door de frontend, maar geweigerd op het databaseniveau zelf.
 
-2. **Kogelvrije betalingen**: we hebben de Stripe-code van de frontend eruit gehaald en veilige backend-webhooks gebouwd. Zelfs als een gebruiker zijn telefoon direct na het betalen in de rivier zou gooien, zou onze server de webhook van Stripe ontvangen en zijn account upgraden.
+2. **Kogelvrije betalingen**: Het team verwijderde de frontend-only Stripe-flow en bouwde een ondertekende backend webhook-listener met idempotentie-afhandeling. Zelfs als een gebruiker zijn browser sloot of het signaal verloor direct na betaling, is het server-to-server event van Stripe — en niet een client-side redirect — wat de account-upgrade activeert. Een weggevallen verbinding kan een klant niet langer scheiden van de toegang waarvoor al is betaald.
 
-3. **Geheim beheer**: we hebben zijn blootgestelde OpenAI-sleutels naar veilige Edge-functies verplaatst om te voorkomen dat hackers zijn API-budget leegmaken.
+3. **Beheer van geheimen (Secret Management)**: Marcus' OpenAI API-sleutel stond in de JavaScript-code aan de client-side, zichtbaar voor iedereen die de dev-tools van zijn browser opende. Het team verplaatste deze sleutel naar een veilige server-side Edge Function, zodat de sleutel nooit naar de browser wordt gestuurd en niet kan worden gescraped of leeggezogen door een bot.
 
-4. **Foutopsporing**: We hebben Sentry geïnstalleerd. Als een PDF-upload mislukte, kreeg Marcus een Slack-bericht met de exacte coderegel die de fout veroorzaakte.
+4. **Foutopsporing (Error Tracking)**: Sentry werd geïnstalleerd en gekoppeld aan zowel de frontend als de backend. Als een PDF-upload nu mislukt, krijgt Marcus een Slack-melding met de exacte stacktrace en de coderegel die de fout veroorzaakte — in plaats van een stille crash zonder verklaring.
 
-## Lancering 2: De verlossing
+## Lancering 2: De revanche (De geslaagde relaunch)
 
-Nu de infrastructuur veilig was, bereidde Marcus zich voor op lancering 2. Hij nam een risico en koos voor transparantie. Hij e-mailde zijn lijst: *"Twee weken geleden heb ik een kapot product gelanceerd. Ik heb de afgelopen veertien dagen met beveiligingsingenieurs samengewerkt om de backend volledig opnieuw op te bouwen. Het is nu veilig, snel en klaar. Hier is een korting van 50% voor degenen onder jullie die bij mij zijn gebleven."*
+Met de infrastructuur beveiligd bereidde Marcus zich voor op Lancering 2. Hij nam een risico en koos voor transparantie in plaats van te doen alsof er niets was gebeurd. Hij e-mailde zijn verzendlijst: *"Twee weken geleden lanceerde ik een kapot product. Ik heb de afgelopen 14 dagen met beveiligingsengineers samengewerkt om de backend volledig opnieuw op te bouwen. Het is nu veilig, snel en klaar voor gebruik. Hier is een korting van 50% voor degenen die bij mij zijn gebleven."*
 
-Het resultaat was onberispelijk.
+Het resultaat was vlekkeloos.
 
-De webhooks verwerkten 120 betalingen automatisch, zonder dat er ook maar één account verloren ging. De Edge-functies hebben de OpenAI-verzoeken veilig afgehandeld. Sentry ontdekte op de eerste dag drie kleine bugs, die Marcus repareerde voordat gebruikers het merkten. Tegen het einde van de week had Marcus $ 2.500 aan MRR veiliggesteld.
+De nieuwe webhook-listener verwerkte 120 betalingen automatisch zonder dat er ook maar één account verloren ging. De Edge Functions handelden elk OpenAI-verzoek veilig af, zonder blootgestelde sleutels. Sentry verving op dag één drie kleine bugs — een probleem met de weergave van tijdzones en twee randgevallen in me PDF-parser — die allemaal werden opgelost voordat een gebruiker er iets van merkte. Tegen het einde van die eerste week terug had Marcus $ 2.500 aan MRR veiliggesteld, en het momentum bleef vanaf daar opbouwen terwijl het nieuws zich verspreidde onder professionals die zagen hoe hij het probleem in het openbaar oploste — wat hem op een helder pad zette richting $ 10.000 MRR in de daaropvolgende maanden.
 
 ## De les voor AI-oprichters
 
-Het verhaal van Marcus benadrukt de grote illusie van AI-bouwers: ze laten het moeilijkste deel van softwareontwikkeling (de logica en gebruikersinterface) er gemakkelijk uitzien, en het gevaarlijkste deel (beveiliging en infrastructuur) onzichtbaar.
+Het verhaal van Marcus belicht de grote illusie van AI-builders: ze laten het moeilijkst ogende deel van softwareontwikkeling — de logica, de UI, de "werkt het?" demo — er eenvoudig uitzien, terwijl het meest gevaarlijke deel — beveiliging, betrouwbaarheid van betalingen en infrastructuur — onzichtbaar blijft totdat het crasht ten overstaan van echte klanten.
 
-Je kunt de app zelf bouwen. Maar voordat u echte gebruikers uitnodigt om hun gegevens en creditcards erin te plaatsen, moet u ervoor zorgen dat de basis solide is.
+U kunt de app absoluut zelf bouwen met tools zoals Lovable, Bolt of Cursor. Maar voordat u echte gebruikers uitnodigt om hun data en creditcards in te voeren, moet de fundering onder de UI worden geverifieerd, niet aangenomen.
 
 ## Belangrijkste inzichten
 
-- Het lanceren van een AI-prototype zonder de backend te beveiligen leidt tot mislukte betalingen en datalekken.
+- Het lanceren van een AI-prototype zonder de backend te beveiligen leidt rechtstreeks tot mislukte betalingen en datalekken — niet pas na verloop van tijd, maar vaak al binnen enkele uren na het live gaan.
 
-- Frontend-only Stripe-integraties zijn kwetsbaar; u moet backend-webhooks implementeren voor betrouwbare betalingen.
+- Frontend-only Stripe-integraties zijn van nature kwetsbaar; betrouwbare betalingen vereisen een ondertekende backend webhook, geen client-side redirect.
 
-- Row Level Security (RLS) is niet onderhandelbaar voor SaaS-apps met meerdere gebruikers.
+- Row Level Security (RLS) gekoppeld aan de geauthenticeerde gebruiker is niet-onderhandelbaar voor elke SaaS-app met meer dan één account — RLS aanwezig in het schema maar niet ingeschakeld of op beleidsniveau ingesteld beschermt niets.
 
-- Transparantie over vroege fouten kan het vertrouwen van gebruikers terugwinnen als u de onderliggende technische problemen snel oplost.
+- Transparantie over vroege fouten kan het vertrouwen van gebruikers terugwinnen, maar alleen als het gepaard gaat met een snelle, verifieerbare oplossing voor het onderliggende technische probleem, niet alleen een verontschuldiging.
 
-- Door samen te werken met infrastructuurexperts zoals LaunchStudio kunt u zich concentreren op uw product, terwijl u ervan verzekerd bent dat uw lancering kogelvrij is.
+- Samenwerken met infrastructuurspecialisten zoals LaunchStudio (ondersteund door de 11+ jaar ervaring in production engineering van Manifera, vertrouwd door enterprise-klanten zoals Vodafone en TNO) stelt oprichters in staat hun bestaande frontend te behouden terwijl precies de hiaten worden gedicht die een eerste lancering doen mislukken.
 
-## Laat je lancering niet in een nachtmerrie veranderen
+## Laat uw lancering niet veranderen in een nachtmerrie
 
 Zorg ervoor dat uw door AI gebouwde app veilig, betrouwbaar en gereed is voor echt verkeer voordat u uw wachtlijst e-mailt.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf onder leiding van oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in 2014 en geleid door Oprichter & Managing Director **Herre Roelevink**. Zoals Roelevink het verwoordt: *"We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring in precies dat vakgebied."* Door "Nederlands management te combineren met Vietnamees meesterschap", onderhoudt Manifera hoofdkantoren in **Amsterdam, Nederland** (Herengracht 420), een Aziatische hub in **Singapore** (100 Tras Street) en een primair ontwikkelcentrum in **Ho Chi Minh-stad, Vietnam** (Pho Quang Street). Via LaunchStudio nemen senior engineeringteams uw bestaande door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring — waardoor uw prototype binnen 1 tot 3 weken verandert in een veilige, compliant MVP, zonder dat een volledige rebuild nodig is. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact) of bekijk hoe het [maatwerk software-ontwikkelteam van Manifera](https://www.manifera.com/services/custom-software-development/) production-hardening aanpakt voor AI-gegenereerde codebases.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: aandelenanalistplatform
+### Een AI-native oprichter in actie: Aandelenanalist-platform
 
-Layla, een startup-oprichter, gebruikte **Lovable** om een prototype van een platform voor aandelenanalisten te bouwen. Hoewel de applicatie functioneel was, ondervond deze een rampzalige eerste lancering toen databasevergrendelingen haar app crashten tijdens een Product Hunt-lancering.
+Layla, een startup-oprichter, gebruikte **Lovable** om een prototype voor een aandelenanalist-platform te bouwen. Hoewel de applicatie in elke demo functioneel was, leed ze onder een rampzalige eerste lancering toen niet-geïndexeerde databasequery's en het ontbreken van connection pooling leidden tot tabelvergrendelingen. Hierdoor crashte haar app midden in haar Product Hunt-lancering — precies het moment waarop ze zich geen downtime kon veroorloven.
 
-Layla werkte samen met **LaunchStudio (door Manifera)** om het product lanceringsklaar te maken. Het technische team migreerde databasequery's naar een replica, optimaliseerde tabelindexen en bracht verbindingspooling tot stand.
+Layla werkte samen met **LaunchStudio (door Manifera)** om het product lanceringsklaar te maken. Het engineeringteam migreerde leesintensieve query's naar een databasereplica, optimaliseerde tabelindexen voor haar meest frequente zoekopdrachten en stelde een goede connection pooling in, zodat gelijktijdige verzoeken niet langer streden om dezelfde vergrendelingen.
 
-**Resultaat:** Layla is succesvol opnieuw gelanceerd en heeft 12.000 pageviews behaald met een server-uptimescore van 100%.
+**Resultaat:** Layla herlanceerde met succes, verwerkte 12.000 paginaweergaven met een server-uptime van 100% — precies dezelfde verkeerspiek die haar app de eerste keer offline had gehaald.
 
-**Kosten en tijdlijn:** € 2.800 (herlancerings- en schaalpakket) — productieklaar en binnen 8 werkdagen geïmplementeerd.
+**Kosten & Doorlooptijd:** € 2.800 (Relaunch & Scale Pakket) — productieklaar en uitgerold in 8 werkdagen.
 
 ---
-## Veelgestelde vragen
+
+---
+
+---
+## Veelgestelde Vragen
 
 ### Waarom mislukte de eerste lancering?
 
-De oprichter implementeerde een prototype zonder de backend te beveiligen. De app ontbeerde Row Level Security, was afhankelijk van kwetsbare frontend-betalingen en had geen foutopsporing.
+De oprichter deployde een met Cursor gebouwd prototype zonder de backend te beveiligen. Row Level Security was wel aanwezig in het schema maar nooit ingeschakeld, de Stripe-integratie werkte uitsluitend aan de frontend zonder webhook om de betaling te bevestigen, en er was geen foutopsporing aanwezig om te detecteren dat de PDF-parser crashte.
 
 ### Hoe heeft het gebrek aan webhooks de lancering verpest?
 
-Zonder webhooks, als de browser van een gebruiker direct na het betalen de verbinding verbrak, nam Stripe het geld aan, maar de app verleende nooit toegang, wat leidde tot boze klanten en handmatige upgrades.
+Zonder server-side webhook vertrouwde de app erop dat de browser van de gebruiker lang genoeg verbonden bleef om te reageren op een redirect naar een 'succespagina'. Als de browser van een gebruiker direct na het betalen de verbinding verbrak — door een vergrendeld telefoonscherm of een weggevallen netwerk — schreef Stripe het geld wel af, maar verleende de app nooit toegang. Dit leidde tot boze klanten en handmatige, onbetrouwbare upgrades.
 
 ### Kun je herstellen van een mislukte lancering?
 
-Ja. Transparantie is de sleutel. Haal de app offline, repareer de technische infrastructuur en start hem opnieuw met een eerlijke verontschuldiging en korting voor early adopters.
+Ja. Transparantie gecombineerd met een daadwerkelijk hersteld fundament is wat werkt. Haal de app onmiddellijk offline, pak de specifieke technische hiaten aan — niet alleen de symptomen — en herlanceer met een eerlijke uitleg en, indien passend, een goodwill-korting voor vroege gebruikers die zijn gebleven.
 
 ### Hoe lang duurde het om de app te repareren voor de herlancering?
 
-LaunchStudio heeft de database beveiligd, webhooks geïmplementeerd en foutopsporing toegevoegd in slechts twee weken, waardoor de oprichter het momentum kon heroveren.
+De engineers van LaunchStudio beveiligden de Supabase-database met het juiste RLS-beleid, vervingen de frontend Stripe-flow door ondertekende backend-webhooks, verplaatsten openliggende API-sleutels naar veilige Edge Functions en voegden Sentry-foutopsporing toe — dit alles binnen 14 dagen onder het Launch & Grow-pakket, zonder dat Marcus zijn bestaande frontend opnieuw hoefde te bouwen.
+
+### Wat is de relatie van LaunchStudio met Manifera, en waarom is dat hier van belang?
+
+LaunchStudio is een initiatief van Manifera, een internationaal softwareontwikkelingsbedrijf opgericht in 2014 door Herre Roelevink, met meer dan 11 jaar ervaring in production engineering en enterprise-klanten waaronder Vodafone en TNO. Dat is specifiek van belang voor een verhaal zoals dat van Marcus omdat de doorgevoerde oplossingen — RLS-beleidsontwerp, webhook-handtekeningverificatie, geheimenbeheer via Edge Functions — dezelfde disciplines van productiebeveiliging zijn die de engineers van Manifera toepassen op enterprise-systemen, maar dan op maat gemaakt voor het budget en de doorlooptijd van een founder.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom mislukte de eerste lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De oprichter deployde een met Cursor gebouwd prototype zonder de backend te beveiligen. Row Level Security was wel aanwezig in het schema maar nooit ingeschakeld, de Stripe-integratie werkte uitsluitend aan de frontend zonder webhook om de betaling te bevestigen, en er was geen foutopsporing aanwezig om te detecteren dat de PDF-parser crashte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe heeft het gebrek aan webhooks de lancering verpest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zonder server-side webhook vertrouwde de app erop dat de browser van de gebruiker lang genoeg verbonden bleef om te reageren op een redirect naar een 'succespagina'. Als de browser van een gebruiker direct na het betalen de verbinding verbrak — door een vergrendeld telefoonscherm of een weggevallen netwerk — schreef Stripe het geld wel af, maar verleende de app nooit toegang. Dit leidde tot boze klanten en handmatige, onbetrouwbare upgrades."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kun je herstellen van een mislukte lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Transparantie gecombineerd met een daadwerkelijk hersteld fundament is wat werkt. Haal de app onmiddellijk offline, pak de specifieke technische hiaten aan — niet alleen de symptomen — en herlanceer met een eerlijke uitleg en, indien passend, een goodwill-korting voor vroege gebruikers die zijn gebleven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurde het om de app te repareren voor de herlancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De engineers van LaunchStudio beveiligden de Supabase-database met het juiste RLS-beleid, vervingen de frontend Stripe-flow door ondertekende backend-webhooks, verplaatsten openliggende API-sleutels naar veilige Edge Functions en voegden Sentry-foutopsporing toe — dit alles binnen 14 dagen onder het Launch & Grow-pakket, zonder dat Marcus zijn bestaande frontend opnieuw hoefde te bouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de relatie van LaunchStudio met Manifera, en waarom is dat hier van belang?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio is een initiatief van Manifera, een internationaal softwareontwikkelingsbedrijf opgericht in 2014 door Herre Roelevink, met meer dan 11 jaar ervaring in production engineering en enterprise-klanten waaronder Vodafone en TNO. Dat is specifiek van belang voor een verhaal zoals dat van Marcus omdat de doorgevoerde oplossingen — RLS-beleidsontwerp, webhook-handtekeningverificatie, geheimenbeheer via Edge Functions — dezelfde disciplines van productiebeveiliging zijn die de engineers van Manifera toepassen op enterprise-systemen, maar dan op maat gemaakt voor het budget en de doorlooptijd van een founder."
+      }
+    }
+  ]
+}
+</script>

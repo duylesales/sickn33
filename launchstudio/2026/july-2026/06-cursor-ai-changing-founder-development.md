@@ -145,6 +145,9 @@ Elena reached out to **LaunchStudio (by Manifera)**. The engineering team review
 
 ---
 
+---
+
+---
 ## Frequently Asked Questions
 
 ### What is Cursor AI and how does it work?
@@ -166,3 +169,52 @@ Yes, Cursor works excellently with Lovable-generated code. Since Lovable generat
 ### How much does Cursor cost?
 
 Cursor offers a free tier with limited AI completions and a Pro plan at $20 per month with unlimited completions and access to more powerful AI models. For most founders, the free tier is sufficient for evaluating the tool, and the Pro plan provides enough capacity for full-time development.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Cursor AI and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cursor AI is an AI-powered code editor built as a fork of Visual Studio Code. It understands your entire codebase and can generate, modify, and explain code in context. Unlike tools like Lovable that generate entire applications, Cursor works alongside you as an intelligent coding assistant that suggests completions, generates functions, and can make multi-file edits based on natural language instructions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Cursor better than GitHub Copilot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cursor offers deeper codebase understanding and more powerful multi-file editing compared to GitHub Copilot. While Copilot excels at single-line completions, Cursor can understand relationships across your entire project and generate coordinated changes across multiple files. For founders building products, Cursor's contextual understanding makes it more effective for complex development tasks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need coding experience to use Cursor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Cursor requires at least basic coding knowledge. Unlike Lovable or Bolt which generate complete applications from natural language descriptions, Cursor is a code editor that assists your development process. You need to understand programming concepts, be able to read and evaluate code, and make decisions about architecture and implementation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Cursor work with Lovable-generated code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Cursor works excellently with Lovable-generated code. Since Lovable generates standard React and TypeScript projects with a normal file structure, you can clone the GitHub repository and open it directly in Cursor. This is a popular workflow: founders use Lovable for the initial build and then switch to Cursor for customization, bug fixes, and feature additions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Cursor cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cursor offers a free tier with limited AI completions and a Pro plan at $20 per month with unlimited completions and access to more powerful AI models. For most founders, the free tier is sufficient for evaluating the tool, and the Pro plan provides enough capacity for full-time development."
+      }
+    }
+  ]
+}
+</script>

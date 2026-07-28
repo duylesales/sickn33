@@ -176,6 +176,7 @@ Emma nam contact op met **LaunchStudio (door Manifera)**. Het technische team hi
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Is door AI gegenereerde code veilig te gebruiken in de productie?
@@ -197,3 +198,52 @@ Ja, door AI gegenereerde code van tools als Lovable en Cursor produceert standaa
 ### Moet ik een ontwikkelaar inhuren om door AI gegenereerde code te beoordelen voordat ik deze lanceer?
 
 Ja, u moet door AI gegenereerde code altijd professioneel laten beoordelen voordat u deze voor echte gebruikers lanceert, vooral als uw applicatie gebruikersgegevens, betalingen of gevoelige informatie verwerkt. Diensten zoals LaunchStudio zijn gespecialiseerd in het beoordelen en repareren van door AI gegenereerde code zodat deze gereed is voor productie, wat doorgaans sneller en goedkoper is dan een volledige code-audit door een traditioneel adviesbureau.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is door AI gegenereerde code veilig te gebruiken in de productie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door AI gegenereerde code is niet inherent veilig voor productiegebruik zonder beoordeling. Hoewel het functionele applicaties produceert, bevat het vaak beveiligingsproblemen zoals blootgestelde API-sleutels, ontbrekende invoervalidatie en inadequate authenticatiepatronen. Professionele codebeoordeling en versterking van de beveiliging zijn essentieel voordat door AI gegenereerde code in productie wordt genomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verhoudt de kwaliteit van door AI gegenereerde code zich tot handgeschreven code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door AI gegenereerde code in 2026 produceert een gebruikersinterface en basisfunctionaliteit die vergelijkbaar is met de output van ontwikkelaars op junior- tot middenniveau. Het blinkt uit in het creëren van standaardpatronen zoals CRUD-bewerkingen, formulierverwerking en UI-componenten. Het schiet tekort op het gebied van complexe bedrijfslogica, beveiligingsimplementatie, prestatie-optimalisatie en foutafhandeling – gebieden waar de expertise van senior ontwikkelaars nog steeds essentieel is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de meest voorkomende kwaliteitsproblemen bij door AI gegenereerde code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meest voorkomende kwaliteitsproblemen zijn onder meer: ​​blootgelegde geheimen in code aan de clientzijde, ontbrekend of onjuist databasebeveiligingsbeleid, geen foutgrenzen of correcte foutafhandeling, onnodige herweergave van componenten die prestatieproblemen veroorzaken, inconsistente codepatronen in de hele applicatie en hardgecodeerde waarden in plaats van omgevingsvariabelen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan door AI gegenereerde code worden onderhouden en later worden uitgebreid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, door AI gegenereerde code van tools als Lovable en Cursor produceert standaard React- en TypeScript-code die door elke ontwikkelaar kan worden onderhouden. De code volgt algemene patronen en kan in elke code-editor worden geopend. Bij door AI gegenereerde code ontbreekt het soms echter aan een duidelijke organisatie en documentatie, wat het onderhoud moeilijker kan maken zonder enige initiële opschoning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik een ontwikkelaar inhuren om door AI gegenereerde code te beoordelen voordat ik deze lanceer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, u moet door AI gegenereerde code altijd professioneel laten beoordelen voordat u deze voor echte gebruikers lanceert, vooral als uw applicatie gebruikersgegevens, betalingen of gevoelige informatie verwerkt. Diensten zoals LaunchStudio zijn gespecialiseerd in het beoordelen en repareren van door AI gegenereerde code zodat deze gereed is voor productie, wat doorgaans sneller en goedkoper is dan een volledige code-audit door een traditioneel adviesbureau."
+      }
+    }
+  ]
+}
+</script>

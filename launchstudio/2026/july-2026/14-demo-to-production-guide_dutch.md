@@ -143,6 +143,8 @@ Ethan werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 1.500 (demo naar productiepakket) — productieklaar en binnen 4 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is het verschil tussen een demo- en een productieapplicatie?
@@ -164,3 +166,52 @@ Eerst beveiliging (gebruikersgegevens beschermen), dan implementatie (aangepast 
 ### Kan ik een gratis product lanceren zonder volledige productiegereedheid?
 
 U kunt de betalingsintegratie uitstellen voor een gratis bètaversie, maar over beveiligingsaspecten kan niet worden onderhandeld. Als uw app gebruikersgegevens verzamelt, bent u wettelijk verplicht deze te beschermen op grond van de AVG.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een demo- en een productieapplicatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een demo laat zien wat uw product kan doen onder ideale omstandigheden. Een productieapplicatie verwerkt echte gebruikers, echte gegevens, echte betalingen en echte problemen: inbreuken op de beveiliging, netwerkstoringen, gebruikersfouten en schaalgrootte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt de overgang van demo naar productie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Met professionele hulp, 1–3 weken. Doe-het-zelf als niet-technische oprichter, 4–8 weken met een hoger risico op beveiligingsproblemen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik mijn door AI gebouwde prototype opnieuw opbouwen voor productie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De frontend is doorgaans van productiekwaliteit. Wat werk nodig heeft, is de onderliggende infrastructuur: beveiliging, betalingen, implementatie, foutafhandeling en monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar moet ik prioriteit aan geven tijdens de transitie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eerst beveiliging (gebruikersgegevens beschermen), dan implementatie (aangepast domein), dan foutafhandeling, dan betalingen en dan monitoring. Beveiliging komt op de eerste plaats omdat het lanceren met kwetsbaarheden een onmiddellijk en potentieel onomkeerbaar risico met zich meebrengt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik een gratis product lanceren zonder volledige productiegereedheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U kunt de betalingsintegratie uitstellen voor een gratis bètaversie, maar over beveiligingsaspecten kan niet worden onderhandeld. Als uw app gebruikersgegevens verzamelt, bent u wettelijk verplicht deze te beschermen op grond van de AVG."
+      }
+    }
+  ]
+}
+</script>

@@ -75,6 +75,8 @@ Isabella werkte samen met **LaunchStudio (door Manifera)** om het product lancer
 **Kosten en tijdlijn:** € 800 (Secrets Security Package) — productieklaar en binnen 3 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Hoe vinden hackers API-sleutels in mijn frontend-code?
@@ -92,3 +94,56 @@ Ja, 'Publiceerbare' sleutels (zoals Stripe pk_live) en 'Anon'-sleutels (Supabase
 ### Als mijn sleutel zichtbaar is maar ik de code heb verwijderd, ben ik dan veilig?
 
 Nee. Bots schrapen repository's onmiddellijk. U moet ervan uitgaan dat de sleutel gecompromitteerd is, deze intrekken in het dashboard van de provider en een nieuwe genereren.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe vinden hackers API-sleutels in mijn frontend-code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hackers gebruiken geautomatiseerde bots die voortdurend openbare GitHub-repository's scannen en live websites schrapen, op zoek naar bekende sleutelvoorvoegsels zoals \"sk_live\" of \"secret\"."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kan iemand doen met mijn zichtbare Stripe Secret Key?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een blootgelegd Streepgeheim geeft administratieve controle. Aanvallers kunnen terugbetalingen doen, frauduleuze kosten op opgeslagen kaarten maken en producten verwijderen, waardoor financiële verliezen ontstaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn er API-sleutels die veilig openbaar kunnen worden gemaakt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, 'Publiceerbare' sleutels (zoals Stripe pk_live) en 'Anon'-sleutels (Supabase) zijn ontworpen voor frontend-gebruik, op voorwaarde dat uw backend strikte beveiligingsregels afdwingt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Als mijn sleutel zichtbaar is maar ik de code heb verwijderd, ben ik dan veilig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Bots schrapen repository's onmiddellijk. U moet ervan uitgaan dat de sleutel gecompromitteerd is, deze intrekken in het dashboard van de provider en een nieuwe genereren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

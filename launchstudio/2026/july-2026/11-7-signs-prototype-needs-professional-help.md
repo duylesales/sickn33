@@ -107,6 +107,9 @@ Oliver partnered with **LaunchStudio (by Manifera)**. The engineering team secur
 
 ---
 
+---
+
+---
 ## Frequently Asked Questions
 
 ### When should I get professional help with my AI-built prototype?
@@ -128,3 +131,52 @@ Launching with unresolved security issues can lead to data breaches and GDPR fin
 ### How long does it take to fix these issues?
 
 With a professional team, most prototypes can be made production-ready in 1–3 weeks. LaunchStudio's packages cover security, deployment, payment integration, and monitoring.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When should I get professional help with my AI-built prototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Get professional help when you see any of these signs: no Row Level Security, exposed API keys, test-mode Stripe, crash-on-error behavior, preview-URL deployment, no backups, or DIY fixes that keep breaking. Any single critical sign is reason enough to seek help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does professional production readiness help cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional production readiness work typically costs €800–€7,500 with LaunchStudio. This is significantly less than traditional development because only the production-critical gaps need addressing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fix these issues myself without coding experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some issues can be partially addressed by non-technical founders, but proper security hardening, payment integration, and production deployment require technical expertise. Attempting security fixes without experience often introduces new vulnerabilities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I ignore these warning signs and launch anyway?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Launching with unresolved security issues can lead to data breaches and GDPR fines up to €20 million. Broken payment flows mean lost revenue. Missing error handling means users encounter crashes that destroy trust."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to fix these issues?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a professional team, most prototypes can be made production-ready in 1–3 weeks. LaunchStudio's packages cover security, deployment, payment integration, and monitoring."
+      }
+    }
+  ]
+}
+</script>

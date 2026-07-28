@@ -90,6 +90,8 @@ Logan werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 1.100 (Webhook-integratiepakket) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is een Stripe-webhook precies?
@@ -107,3 +109,56 @@ Het is een cryptografische controle met behulp van een geheime sleutel van Strip
 ### Heb ik webhooks nodig voor abonnementen?
 
 Ja. Abonnementen activeren maanden in de toekomst terugkerende evenementen. Uw app weet alleen de toegang voor geweigerde kaarten in te trekken omdat Stripe een webhook verzendt.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een Stripe-webhook precies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een webhook is een geautomatiseerd HTTP POST-verzoek dat Stripe naar uw server verzendt om u over een gebeurtenis te informeren (zoals een succesvolle betaling of een geannuleerd abonnement)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom kan ik de database niet updaten vanaf de frontend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is onveilig (gebruikers kunnen het succesbericht faken) en onbetrouwbaar (als de browser sluit voordat de update is voltooid, betaalt de gebruiker maar krijgt hij geen toegang)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is verificatie van webhookhandtekeningen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een cryptografische controle met behulp van een geheime sleutel van Stripe. Het zorgt ervoor dat het webhookbericht daadwerkelijk afkomstig is van Stripe en niet van een kwaadwillende actor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik webhooks nodig voor abonnementen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Abonnementen activeren maanden in de toekomst terugkerende evenementen. Uw app weet alleen de toegang voor geweigerde kaarten in te trekken omdat Stripe een webhook verzendt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

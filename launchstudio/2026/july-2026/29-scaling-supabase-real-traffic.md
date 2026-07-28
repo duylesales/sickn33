@@ -68,6 +68,10 @@ Michael partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €2,600 (Scaling & Optimization Package) — production-ready and deployed in 9 business days.
 
 ---
+
+---
+
+---
 ## Frequently Asked Questions
 
 ### Why is my AI-built app suddenly loading so slowly?
@@ -85,3 +89,56 @@ Serverless apps can create thousands of simultaneous database connections, excee
 ### How do I upgrade my database compute power in Supabase?
 
 You can upgrade your compute instance (RAM and CPU) in the Supabase dashboard settings without migrating data or changing your code.
+
+### How does LaunchStudio ensure my app is ready for real users?
+
+LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is my AI-built app suddenly loading so slowly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common culprit is a lack of database indexes. AI tools generate queries but rarely generate the indexes needed to make those queries fast on large datasets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a database index?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An index prevents the database from scanning every row to find data. It acts like an index in a book, allowing the database to instantly jump to the exact row needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is connection pooling and why do I need it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Serverless apps can create thousands of simultaneous database connections, exceeding PostgreSQL limits. Connection pooling acts as a traffic cop, routing many requests through a smaller number of database connections to prevent crashes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I upgrade my database compute power in Supabase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can upgrade your compute instance (RAM and CPU) in the Supabase dashboard settings without migrating data or changing your code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does LaunchStudio ensure my app is ready for real users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely."
+      }
+    }
+  ]
+}
+</script>

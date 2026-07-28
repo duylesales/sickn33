@@ -129,6 +129,7 @@ Sophia werkte samen met **LaunchStudio (door Manifera)** om deze hiaten te overb
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Waarom lijkt mijn door AI gebouwde app klaar, maar is dat niet zo?
@@ -150,3 +151,52 @@ Het productieklaar maken van een AI-gebouwde applicatie kost doorgaans tussen de
 ### Kan ik problemen met de productiegereedheid zelf oplossen?
 
 Sommige problemen kunnen worden aangepakt door technisch onderlegde oprichters: het verplaatsen van API-sleutels naar omgevingsvariabelen, het inschakelen van Row Level Security in Supabase en het toevoegen van basisfoutafhandeling. Betalingsintegratie, een goede beveiliging, productie-implementatie en prestatie-optimalisatie vereisen echter doorgaans professionele expertise.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom lijkt mijn door AI gebouwde app klaar, maar is dat niet zo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-ontwikkeltools optimaliseren voor visuele output, want dat is wat u onmiddellijk kunt zien en evalueren. De gebruikersinterface ziet er professioneel uit omdat AI-modellen zijn getraind op duizenden moderne webontwerpen. De onzichtbare lagen – beveiliging, foutafhandeling, prestaties, betalingsverwerking en implementatieconfiguratie – ontbreken echter of zijn geïmplementeerd met basispatronen die onvoldoende zijn voor productiegebruik."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de gevaarlijkste kloof in door AI gebouwde applicaties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het gevaarlijkste gat is de veiligheid. Door AI gebouwde applicaties stellen vaak API-sleutels bloot in code aan de clientzijde, missen database Row Level Security-beleid, slaan invoervalidatie over en implementeren authenticatie zonder goed sessiebeheer. Deze kwetsbaarheden kunnen leiden tot datalekken, ongeautoriseerde toegang en gegevensverlies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn prototype productieklaar is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik een checklist voor productiegereedheid die vijf gebieden bestrijkt: beveiliging (authenticatie, RLS, geheimbeheer, invoervalidatie), betalingen (livemodus, webhookverificatie, foutafhandeling), implementatie (aangepast domein, SSL, omgevingsvariabelen, foutopsporing), prestaties (pagina laden binnen 3 seconden, mobiel reactievermogen) en juridisch (servicevoorwaarden, privacybeleid, naleving van de AVG)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost het om een ​​door AI gebouwde app productieklaar te maken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het productieklaar maken van een AI-gebouwde applicatie kost doorgaans tussen de €800 en €7.500 met een dienst als LaunchStudio, afhankelijk van de complexiteit van uw applicatie en de benodigde integraties. Dit is 5 tot 10% van wat een traditioneel bureau zou vragen om hetzelfde product helemaal opnieuw te bouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik problemen met de productiegereedheid zelf oplossen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sommige problemen kunnen worden aangepakt door technisch onderlegde oprichters: het verplaatsen van API-sleutels naar omgevingsvariabelen, het inschakelen van Row Level Security in Supabase en het toevoegen van basisfoutafhandeling. Betalingsintegratie, een goede beveiliging, productie-implementatie en prestatie-optimalisatie vereisen echter doorgaans professionele expertise."
+      }
+    }
+  ]
+}
+</script>

@@ -129,6 +129,9 @@ Sophia partnered with **LaunchStudio (by Manifera)** to bridge these gaps. The e
 
 ---
 
+---
+
+---
 ## Frequently Asked Questions
 
 ### Why does my AI-built app look ready but isn't?
@@ -150,3 +153,52 @@ Making an AI-built application production-ready typically costs between €800 a
 ### Can I fix production readiness issues myself?
 
 Some issues can be addressed by technically-minded founders: moving API keys to environment variables, enabling Row Level Security in Supabase, and adding basic error handling. However, payment integration, proper security hardening, production deployment, and performance optimization typically require professional expertise.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my AI-built app look ready but isn't?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI development tools optimize for visual output because that is what you can see and evaluate immediately. The UI looks professional because AI models are trained on thousands of modern web designs. However, the invisible layers — security, error handling, performance, payment processing, and deployment configuration — are either missing or implemented with basic patterns that are insufficient for production use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most dangerous gap in AI-built applications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most dangerous gap is security. AI-built applications frequently expose API keys in client-side code, lack database Row Level Security policies, skip input validation, and implement authentication without proper session management. These vulnerabilities can lead to data breaches, unauthorized access, and data loss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I tell if my prototype is production-ready?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a production readiness checklist that covers five areas: Security (authentication, RLS, secret management, input validation), Payments (live mode, webhook verification, error handling), Deployment (custom domain, SSL, environment variables, error tracking), Performance (page load under 3 seconds, mobile responsiveness), and Legal (terms of service, privacy policy, GDPR compliance)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to make an AI-built app production-ready?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Making an AI-built application production-ready typically costs between €800 and €7,500 with a service like LaunchStudio, depending on the complexity of your application and the integrations needed. This is 5–10% of what a traditional agency would charge to build the same product from scratch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fix production readiness issues myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some issues can be addressed by technically-minded founders: moving API keys to environment variables, enabling Row Level Security in Supabase, and adding basic error handling. However, payment integration, proper security hardening, production deployment, and performance optimization typically require professional expertise."
+      }
+    }
+  ]
+}
+</script>

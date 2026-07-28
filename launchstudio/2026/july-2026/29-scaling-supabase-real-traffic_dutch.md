@@ -69,6 +69,8 @@ Michael werkte samen met **LaunchStudio (door Manifera)** om het product lanceri
 **Kosten en tijdlijn:** € 2.600 (schaal- en optimalisatiepakket) — klaar voor productie en geïmplementeerd binnen 9 werkdagen.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Waarom laadt mijn AI-gebouwde app plotseling zo langzaam?
@@ -86,3 +88,56 @@ Serverloze apps kunnen duizenden gelijktijdige databaseverbindingen creëren, wa
 ### Hoe upgrade ik de rekenkracht van mijn database in Supabase?
 
 U kunt uw rekeninstantie (RAM en CPU) upgraden in de Supabase-dashboardinstellingen zonder gegevens te migreren of uw code te wijzigen.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom laadt mijn AI-gebouwde app plotseling zo langzaam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meest voorkomende boosdoener is een gebrek aan database-indexen. AI-tools genereren query's, maar genereren zelden de indexen die nodig zijn om die query's snel uit te voeren op grote datasets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een database-index?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een index voorkomt dat de database elke rij scant om gegevens te vinden. Het fungeert als een index in een boek, waardoor de database onmiddellijk naar de exacte rij kan springen die nodig is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het poolen van verbindingen en waarom heb ik het nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Serverloze apps kunnen duizenden gelijktijdige databaseverbindingen creëren, waardoor de PostgreSQL-limieten worden overschreden. Verbindingspooling fungeert als verkeersagent, waarbij veel verzoeken via een kleiner aantal databaseverbindingen worden geleid om crashes te voorkomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe upgrade ik de rekenkracht van mijn database in Supabase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U kunt uw rekeninstantie (RAM en CPU) upgraden in de Supabase-dashboardinstellingen zonder gegevens te migreren of uw code te wijzigen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

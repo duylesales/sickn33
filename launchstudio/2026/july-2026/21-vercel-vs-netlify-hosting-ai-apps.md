@@ -98,6 +98,10 @@ Elijah partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €850 (Hosting & Deployment Package) — production-ready and deployed in 3 business days.
 
 ---
+
+---
+
+---
 ## Frequently Asked Questions
 
 ### Should I host my Lovable/Bolt app on Vercel or Netlify?
@@ -115,3 +119,56 @@ Very easy. It takes less than 5 minutes to copy DNS records from Vercel/Netlify 
 ### What are environment variables?
 
 Secure settings stored on the hosting platform (like live API keys) so they are not exposed in your public codebase.
+
+### How does LaunchStudio ensure my app is ready for real users?
+
+LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I host my Lovable/Bolt app on Vercel or Netlify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your app is built with Vite (Lovable/Bolt default), either is excellent. If it is built with Next.js, Vercel is recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the free tiers enough for my launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technically, yes. However, Vercel's Terms of Service prohibit commercial use on the free tier. If you charge money, you must upgrade to the Pro plan ($20/mo)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How hard is it to connect a custom domain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very easy. It takes less than 5 minutes to copy DNS records from Vercel/Netlify into your domain registrar. SSL is provisioned automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are environment variables?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Secure settings stored on the hosting platform (like live API keys) so they are not exposed in your public codebase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does LaunchStudio ensure my app is ready for real users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely."
+      }
+    }
+  ]
+}
+</script>

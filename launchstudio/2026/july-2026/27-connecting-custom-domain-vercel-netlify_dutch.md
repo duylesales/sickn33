@@ -83,6 +83,8 @@ Alexander werkte samen met **LaunchStudio (door Manifera)** om het product lance
 **Kosten en tijdlijn:** € 800 (domeinconfiguratiepakket) — productieklaar en binnen 2 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is een DNS-record?
@@ -100,3 +102,56 @@ U hoeft er geen te kopen. Vercel en Netlify voorzien en installeren automatisch 
 ### Moet ik 'www.myapp.com' of alleen 'myapp.com' gebruiken?
 
 Moderne webstandaarden geven de voorkeur aan het schone rootdomein. Voeg beide toe aan uw host, stel de root in als primair en de host zal 'www'-verkeer automatisch omleiden naar de root.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een DNS-record?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DNS is het telefoonboek van internet. Een DNS-record vertelt browsers met welke server contact moet worden opgenomen wanneer iemand uw domeinnaam typt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een A-record en een CNAME?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een A-record wijst een domein rechtstreeks toe aan een IP-adres (meestal voor het hoofddomein). Een CNAME wijst een domein toe aan een andere domeinnaam (meestal voor subdomeinen zoals 'www')."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe krijg ik een SSL-certificaat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "U hoeft er geen te kopen. Vercel en Netlify voorzien en installeren automatisch een gratis Let's Encrypt SSL-certificaat zodra uw DNS correct is geconfigureerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik 'www.myapp.com' of alleen 'myapp.com' gebruiken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moderne webstandaarden geven de voorkeur aan het schone rootdomein. Voeg beide toe aan uw host, stel de root in als primair en de host zal 'www'-verkeer automatisch omleiden naar de root."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

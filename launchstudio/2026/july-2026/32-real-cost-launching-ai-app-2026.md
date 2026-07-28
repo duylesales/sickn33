@@ -95,6 +95,10 @@ Lily partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €2,100 (Production Launch Package) — production-ready and deployed in 7 business days.
 
 ---
+
+---
+
+---
 ## Frequently Asked Questions
 
 ### How much does it cost to build a prototype with AI?
@@ -112,3 +116,56 @@ The AI builds a visual prototype, not a secure business. Professionals ensure Ro
 ### How much does LaunchStudio charge for production readiness?
 
 Our fixed-price packages range from €800 to €7,500 depending on the complexity of your application and the integrations required.
+
+### How does LaunchStudio ensure my app is ready for real users?
+
+LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to build a prototype with AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually under $30. You need an AI builder subscription ($20/mo) and can use the free tiers of infrastructure providers like Supabase and Vercel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the recurring costs of hosting a live SaaS application?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Budget $45 to $80 per month. This covers a Vercel Pro account (commercial hosting) and a Supabase Pro account (automated backups and no-pause databases)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I need to pay a professional if the AI built the app for $20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The AI builds a visual prototype, not a secure business. Professionals ensure Row Level Security, live Stripe webhooks, and secure environment variables are implemented to prevent data breaches and revenue loss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does LaunchStudio charge for production readiness?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our fixed-price packages range from €800 to €7,500 depending on the complexity of your application and the integrations required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does LaunchStudio ensure my app is ready for real users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely."
+      }
+    }
+  ]
+}
+</script>

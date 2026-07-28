@@ -95,6 +95,8 @@ Noah werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 **Kosten en tijdlijn:** € 1.900 (Launch Guard-pakket) — klaar voor productie en geïmplementeerd binnen 6 werkdagen.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is de slechtste dag van de week om te lanceren?
@@ -108,3 +110,60 @@ Nee. Vermijd de 'big bang'-lancering. Voer een zachte lancering uit: nodig 10 ge
 ### Is het normaal dat er dingen kapot gaan op de lanceringsdag?
 
 Ja. Zelfs met grondige tests zullen echte gebruikers randgevallen vinden. Het doel is niet een perfecte lancering; het doel is om toezicht te hebben om te weten wanneer er iets kapot gaat en deze snel te repareren.
+
+### Hoe snel kan een prototype productieklaar worden gemaakt?
+
+De meeste prototypes kunnen binnen 1 tot 3 weken volledig worden gehard, beveiligd en uitgerold naar productie met behulp van fixed-scope engineeringpakketten.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is de slechtste dag van de week om te lanceren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vrijdag is de slechtste dag om te lanceren. Als er iets kapot gaat, repareert u het hele weekend bugs wanneer ondersteuningsteams voor uw infrastructuur niet beschikbaar zijn of langzamer reageren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik mijn lancering in één keer aan iedereen bekendmaken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Vermijd de 'big bang'-lancering. Voer een zachte lancering uit: nodig 10 gebruikers uit op dag 1 en 50 op dag 2. Hierdoor kunt u vroegtijdig bugs opsporen en oplossen zonder uw hele publiek te verbranden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het normaal dat er dingen kapot gaan op de lanceringsdag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Zelfs met grondige tests zullen echte gebruikers randgevallen vinden. Het doel is niet een perfecte lancering; het doel is om toezicht te hebben om te weten wanneer er iets kapot gaat en deze snel te repareren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan een prototype productieklaar worden gemaakt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meeste prototypes kunnen binnen 1 tot 3 weken volledig worden gehard, beveiligd en uitgerold naar productie met behulp van fixed-scope engineeringpakketten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

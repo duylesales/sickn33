@@ -95,6 +95,8 @@ Lily werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 **Kosten en tijdlijn:** € 2.100 (productielanceringspakket) — klaar voor productie en geïmplementeerd binnen 7 werkdagen.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Hoeveel kost het om een prototype met AI te bouwen?
@@ -112,3 +114,56 @@ De AI bouwt een visueel prototype, geen veilig bedrijf. Professionals zorgen erv
 ### Hoeveel rekent LaunchStudio voor productiegereedheid?
 
 Onze pakketten met een vaste prijs variëren van € 800 tot € 7.500, afhankelijk van de complexiteit van uw applicatie en de vereiste integraties.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost het om een prototype met AI te bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meestal minder dan $ 30. Je hebt een AI-builder-abonnement nodig ($20/maand) en je kunt de gratis lagen van infrastructuuraanbieders zoals Supabase en Vercel gebruiken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de terugkerende kosten voor het hosten van een live SaaS-applicatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Budget $ 45 tot $ 80 per maand. Dit omvat een Vercel Pro-account (commerciële hosting) en een Supabase Pro-account (geautomatiseerde back-ups en databases zonder pauze)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom moet ik een professional betalen als de AI de app voor $ 20 heeft gebouwd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De AI bouwt een visueel prototype, geen veilig bedrijf. Professionals zorgen ervoor dat Row Level Security, live Stripe-webhooks en veilige omgevingsvariabelen worden geïmplementeerd om datalekken en omzetverlies te voorkomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel rekent LaunchStudio voor productiegereedheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Onze pakketten met een vaste prijs variëren van € 800 tot € 7.500, afhankelijk van de complexiteit van uw applicatie en de vereiste integraties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

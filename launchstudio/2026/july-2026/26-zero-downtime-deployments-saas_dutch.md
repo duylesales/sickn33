@@ -89,6 +89,8 @@ Ella werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 **Kosten en tijdlijn:** € 1.400 (CI/CD Pipeline Package) — productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is een implementatie zonder downtime?
@@ -106,3 +108,56 @@ Omdat elke implementatie als momentopname wordt opgeslagen, kunt u in uw dashboa
 ### Veroorzaken databasewijzigingen downtime?
 
 Dat kunnen ze. Het wijzigen van een databasekolom die de live app gebruikt, zal crashes veroorzaken. Databasewijzigingen moeten in achterwaarts compatibele fasen worden uitgevoerd om downtime te voorkomen.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een implementatie zonder downtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een geautomatiseerd proces waarbij een nieuwe versie van uw applicatie wordt vrijgegeven voor productie zonder enige onderbreking van de service, waardoor 'onderhoudsschermen' worden vermeden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe bereiken Vercel of Netlify nul downtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ze gebruiken onveranderlijke implementaties. De nieuwe app is gebouwd in een geïsoleerde omgeving. Eenmaal voltooid, wordt het verkeer onmiddellijk verwisseld. De oude app blijft kort actief voor actieve gebruikers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er als een implementatie mijn live site verbreekt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat elke implementatie als momentopname wordt opgeslagen, kunt u in uw dashboard op 'Rollback' klikken om de live site direct terug te zetten naar de vorige, werkende versie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Veroorzaken databasewijzigingen downtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat kunnen ze. Het wijzigen van een databasekolom die de live app gebruikt, zal crashes veroorzaken. Databasewijzigingen moeten in achterwaarts compatibele fasen worden uitgevoerd om downtime te voorkomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

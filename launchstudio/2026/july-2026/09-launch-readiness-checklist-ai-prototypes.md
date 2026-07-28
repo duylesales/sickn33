@@ -173,6 +173,9 @@ Lucas partnered with **LaunchStudio (by Manifera)**. The engineering team secure
 
 ---
 
+---
+
+---
 ## Frequently Asked Questions
 
 ### How many checklist items must pass before I can launch?
@@ -194,3 +197,52 @@ For an experienced developer, most individual items take 1–4 hours to implemen
 ### What happens if I launch without completing the security checklist?
 
 Launching without security measures exposes you to data breaches, unauthorized access to user accounts, potential GDPR violations (with fines up to 4% of annual revenue or €20 million), loss of user trust, and potential legal action from affected users.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many checklist items must pass before I can launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All 5 security items are mandatory — launching without them exposes your users' data and creates legal liability. Payment items are required if you accept payments. We recommend passing at least 16 out of 20 items before going live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the most commonly failed checklist item?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Row Level Security (item 3) is the most commonly failed item. Approximately 80% of AI-built Supabase applications we review have RLS either disabled or incorrectly configured, meaning any authenticated user can access any other user's data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use this checklist for apps not built with AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, this checklist applies to any web application preparing for launch. The items are universal production readiness requirements. However, AI-built applications fail these checks more frequently because AI generators prioritize functionality and UI over security and operational readiness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to fix failed checklist items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For an experienced developer, most individual items take 1–4 hours to implement. The full set of fixes for a typical AI-built application takes 1–3 weeks when done professionally. LaunchStudio handles all checklist items as part of our launch packages, priced at €800–€7,500."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I launch without completing the security checklist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Launching without security measures exposes you to data breaches, unauthorized access to user accounts, potential GDPR violations (with fines up to 4% of annual revenue or €20 million), loss of user trust, and potential legal action from affected users."
+      }
+    }
+  ]
+}
+</script>

@@ -171,6 +171,7 @@ Thomas nam contact op met **LaunchStudio (door Manifera)**. Het technische team 
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Kun je echt binnen 48 uur een prototype bouwen?
@@ -192,3 +193,52 @@ De grootste fout is het proberen te veel functies te bouwen. Oprichters die binn
 ### Wat moet ik na de 48 uur met mijn prototype doen?
 
 Deel na uw sprint van 48 uur het prototype met 5 tot 10 potentiële gebruikers en verzamel feedback. Als de respons positief is, is de volgende stap het productieklaar maken van het prototype met de juiste beveiliging, betalingsintegratie en implementatie. Diensten zoals LaunchStudio zijn gespecialiseerd in deze transitie, waarbij uw door AI gebouwde prototype binnen 1 tot 3 weken wordt gelanceerd voor € 800 – € 7.500.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kun je echt binnen 48 uur een prototype bouwen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, met AI-tools zoals Lovable en Bolt kun je binnen 48 uur een functioneel prototype bouwen met een professionele gebruikersinterface, basisgebruikersauthenticatie en kernbedrijfslogica. Dit is geen mockup; het is een klikbare, database-verbonden applicatie die uw productconcept demonstreert. Het zal echter nog niet productieklaar zijn en er zijn beveiligings-, betalings- en implementatiewerkzaamheden nodig voordat het wordt gelanceerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke tools heb ik nodig voor een prototype-sprint van 48 uur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Voor een prototype-sprint van 48 uur heb je nodig: Lovable of Bolt voor het genereren van de applicatie, een Supabase-account voor database en authenticatie, Excalidraw of papier voor het schetsen van je schermen, en optioneel een domeinnaam als je een demo wilt doen op een aangepaste URL. Alle tools hebben gratis lagen die voldoende zijn voor prototyping. Totale kosten: $ 0 tot $ 20."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar moet ik op letten tijdens een build van 48 uur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Concentreer u uitsluitend op uw kernwaardepropositie: de enige eigenschap die uw product nuttig maakt. Bouw geen gebruikersinstellingen, beheerderspanelen, factureringspagina's of secundaire functies. Besteed de eerste vier uur aan plannen en schetsen, uur 5–24 aan het bouwen van de hoofdinterface en het verbinden van de database, en uren 25–48 aan het toevoegen van authenticatie, het verbeteren van de gebruikersinterface en het testen met vrienden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de grootste fout die oprichters maken tijdens rapid prototyping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De grootste fout is het proberen te veel functies te bouwen. Oprichters die binnen 48 uur een compleet product proberen te maken, eindigen met een onhandige, halfafgemaakte applicatie waar niemand indruk op maakt. Oprichters die zich op één briljant kenmerk concentreren, krijgen uiteindelijk een gepolijste demo die hun visie duidelijk overbrengt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik na de 48 uur met mijn prototype doen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deel na uw sprint van 48 uur het prototype met 5 tot 10 potentiële gebruikers en verzamel feedback. Als de respons positief is, is de volgende stap het productieklaar maken van het prototype met de juiste beveiliging, betalingsintegratie en implementatie. Diensten zoals LaunchStudio zijn gespecialiseerd in deze transitie, waarbij uw door AI gebouwde prototype binnen 1 tot 3 weken wordt gelanceerd voor € 800 – € 7.500."
+      }
+    }
+  ]
+}
+</script>

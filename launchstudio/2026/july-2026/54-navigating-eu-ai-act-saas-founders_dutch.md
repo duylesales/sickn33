@@ -250,7 +250,10 @@ Stella werkte samen met **LaunchStudio (door Manifera)** om het product lanceerp
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+---
+
+---
+## Veelgestelde Vragen
 
 ### Wat is de EU AI Act en wanneer treedt deze in werking?
 

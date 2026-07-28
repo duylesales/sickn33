@@ -76,6 +76,10 @@ James partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €2,200 (Custom Backend Package) — production-ready and deployed in 7 business days.
 
 ---
+
+---
+
+---
 ## Frequently Asked Questions
 
 ### What does 'serverless' mean in the context of an AI-built app?
@@ -93,3 +97,56 @@ When you have long-running tasks (over 60 seconds) like video processing, comple
 ### How do I hide my OpenAI API key without a backend server?
 
 You use Edge Functions. The frontend calls the Edge Function, which securely retrieves the key from environment variables on the server, makes the request, and returns the result.
+
+### How does LaunchStudio ensure my app is ready for real users?
+
+LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does 'serverless' mean in the context of an AI-built app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It means you don't manage a dedicated server running 24/7. Your frontend talks directly to managed services (Supabase) and uses temporary 'Edge Functions' for secure tasks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a serverless app scale to thousands of users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Managed services like Vercel and Supabase automatically handle scaling. You don't need to worry about load balancing when traffic spikes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does my startup actually need a custom backend server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you have long-running tasks (over 60 seconds) like video processing, complex background job queues, or high-frequency real-time requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I hide my OpenAI API key without a backend server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You use Edge Functions. The frontend calls the Edge Function, which securely retrieves the key from environment variables on the server, makes the request, and returns the result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does LaunchStudio ensure my app is ready for real users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely."
+      }
+    }
+  ]
+}
+</script>

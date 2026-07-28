@@ -98,6 +98,8 @@ Evelyn werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Kosten en tijdlijn:** € 1.600 (Security Recovery Package) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Wat is een omgevingsvariabele?
@@ -115,3 +117,56 @@ Deze voorvoegsels stellen de variabele opzettelijk bloot aan de frontendbrowser.
 ### Hoe beveilig ik een OpenAI API-sleutel als ik geen backend heb?
 
 Gebruik een Edge-functie op Vercel of Supabase. De frontend roept uw ​​Edge-functie aan, de functie haalt de beveiligde sleutel op, roept OpenAI aan en retourneert het resultaat.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een omgevingsvariabele?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een veilige tijdelijke aanduiding voor gevoelige informatie buiten uw broncode. Uw code leest tijdens runtime de waarde uit de beveiligde omgeving van het hostingplatform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is het gevaarlijk om een ​​.env-bestand naar GitHub te committen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geautomatiseerde bots zoeken binnen enkele seconden naar sleutels in openbare opslagplaatsen om bronnen te stelen. Zelfs in privérepository's worden live sleutels zichtbaar voor iedereen met leestoegang."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen de voorvoegsels VITE_ en NEXT_PUBLIC_?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deze voorvoegsels stellen de variabele opzettelijk bloot aan de frontendbrowser. Ze mogen ALLEEN worden gebruikt voor openbare sleutels (zoals Stripe Publishable Key), nooit voor geheimen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe beveilig ik een OpenAI API-sleutel als ik geen backend heb?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik een Edge-functie op Vercel of Supabase. De frontend roept uw ​​Edge-functie aan, de functie haalt de beveiligde sleutel op, roept OpenAI aan en retourneert het resultaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

@@ -107,6 +107,7 @@ Oliver werkte samen met **LaunchStudio (door Manifera)**. Het technische team he
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Wanneer moet ik professionele hulp krijgen bij mijn door AI gebouwde prototype?
@@ -128,3 +129,52 @@ Starten met onopgeloste beveiligingsproblemen kan leiden tot datalekken en AVG-b
 ### Hoe lang duurt het om deze problemen op te lossen?
 
 Met een professioneel team kunnen de meeste prototypes binnen 1 à 3 weken productieklaar worden gemaakt. De pakketten van LaunchStudio omvatten beveiliging, implementatie, betalingsintegratie en monitoring.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wanneer moet ik professionele hulp krijgen bij mijn door AI gebouwde prototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Krijg professionele hulp als u een van deze signalen opmerkt: geen beveiliging op rijniveau, zichtbare API-sleutels, Stripe in testmodus, crash-on-error-gedrag, implementatie van preview-URL, geen back-ups of doe-het-zelf-oplossingen die steeds kapot gaan. Elk enkel kritiek teken is reden genoeg om hulp te zoeken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost professionele productiegereedheid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professioneel productiegereed werk kost met LaunchStudio doorgaans €800-€7.500. Dit is aanzienlijk minder dan bij traditionele ontwikkeling, omdat alleen de productiekritieke hiaten moeten worden aangepakt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik deze problemen zelf oplossen zonder codeerervaring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sommige problemen kunnen gedeeltelijk worden aangepakt door niet-technische oprichters, maar een goede beveiliging, betalingsintegratie en productie-implementatie vereisen technische expertise. Het proberen van beveiligingsoplossingen zonder ervaring introduceert vaak nieuwe kwetsbaarheden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er als ik deze waarschuwingssignalen negeer en toch start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Starten met onopgeloste beveiligingsproblemen kan leiden tot datalekken en AVG-boetes tot € 20 miljoen. Gebroken betalingsstromen betekenen verloren inkomsten. Een ontbrekende foutafhandeling betekent dat gebruikers crashes tegenkomen die het vertrouwen vernietigen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt het om deze problemen op te lossen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Met een professioneel team kunnen de meeste prototypes binnen 1 à 3 weken productieklaar worden gemaakt. De pakketten van LaunchStudio omvatten beveiliging, implementatie, betalingsintegratie en monitoring."
+      }
+    }
+  ]
+}
+</script>

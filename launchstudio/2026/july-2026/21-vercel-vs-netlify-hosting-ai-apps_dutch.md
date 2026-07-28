@@ -98,6 +98,8 @@ Elijah werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Kosten en tijdlijn:** € 850 (hosting- en implementatiepakket) — productieklaar en binnen 3 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Moet ik mijn Lovable/Bolt-app hosten op Vercel of Netlify?
@@ -115,3 +117,56 @@ Heel gemakkelijk. Het duurt minder dan 5 minuten om DNS-records van Vercel/Netli
 ### Wat zijn omgevingsvariabelen?
 
 Beveilig de instellingen die zijn opgeslagen op het hostingplatform (zoals live API-sleutels), zodat ze niet zichtbaar zijn in uw openbare codebase.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Moet ik mijn Lovable/Bolt-app hosten op Vercel of Netlify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als uw app is gebouwd met Vite (standaard Lovable/Bolt), zijn beide uitstekend. Als het is gebouwd met Next.js, wordt Vercel aanbevolen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn de gratis niveaus voldoende voor mijn lancering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technisch gezien wel. De Servicevoorwaarden van Vercel verbieden echter commercieel gebruik op de gratis laag. Als u geld in rekening brengt, moet u upgraden naar het Pro-abonnement ($ 20/maand)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe moeilijk is het om een ​​aangepast domein te koppelen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heel gemakkelijk. Het duurt minder dan 5 minuten om DNS-records van Vercel/Netlify naar uw domeinregistrar te kopiëren. SSL wordt automatisch ingericht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn omgevingsvariabelen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beveilig de instellingen die zijn opgeslagen op het hostingplatform (zoals live API-sleutels), zodat ze niet zichtbaar zijn in uw openbare codebase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn app klaar is voor echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, Stripe webhook-idempotentie, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig opschaalt."
+      }
+    }
+  ]
+}
+</script>

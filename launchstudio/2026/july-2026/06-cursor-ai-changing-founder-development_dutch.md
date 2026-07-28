@@ -145,6 +145,7 @@ Elena nam contact op met **LaunchStudio (door Manifera)**. Het technische team b
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Wat is Cursor AI en hoe werkt het?
@@ -166,3 +167,52 @@ Ja, Cursor werkt uitstekend met door Lovable gegenereerde code. Omdat Lovable st
 ### Hoeveel kost Cursor?
 
 Cursor biedt een gratis laag met beperkte AI-voltooiingen en een Pro-abonnement voor $ 20 per maand met onbeperkte voltooiingen en toegang tot krachtigere AI-modellen. Voor de meeste oprichters is de gratis laag voldoende om de tool te evalueren, en het Pro-abonnement biedt voldoende capaciteit voor fulltime ontwikkeling.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is Cursor AI en hoe werkt het?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cursor AI is een door AI aangedreven code-editor die is gebouwd als een vork van Visual Studio Code. Het begrijpt uw ​​volledige codebase en kan code in context genereren, wijzigen en uitleggen. In tegenstelling tot tools zoals Lovable die volledige applicaties genereren, werkt Cursor met u samen als een intelligente codeerassistent die aanvullingen suggereert, functies genereert en bewerkingen in meerdere bestanden kan uitvoeren op basis van instructies in natuurlijke taal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Cursor beter dan GitHub Copilot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cursor biedt een dieper begrip van de codebase en krachtigere bewerking van meerdere bestanden in vergelijking met GitHub Copilot. Terwijl Copilot uitblinkt in het voltooien van één regel, kan Cursor de relaties binnen uw gehele project begrijpen en gecoördineerde wijzigingen in meerdere bestanden genereren. Voor oprichters die producten bouwen, maakt het contextuele begrip van Cursor het effectiever voor complexe ontwikkelingstaken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik codeerervaring nodig om Cursor te gebruiken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Cursor vereist minimaal basiskennis van coderen. In tegenstelling tot Lovable of Bolt, die complete applicaties genereren op basis van beschrijvingen in natuurlijke taal, is Cursor een code-editor die uw ontwikkelingsproces ondersteunt. Je moet programmeerconcepten begrijpen, code kunnen lezen en evalueren, en beslissingen kunnen nemen over architectuur en implementatie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan Cursor werken met door Lovable gegenereerde code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Cursor werkt uitstekend met door Lovable gegenereerde code. Omdat Lovable standaard React- en TypeScript-projecten met een normale bestandsstructuur genereert, kun je de GitHub-repository klonen en deze rechtstreeks in Cursor openen. Dit is een populaire workflow: oprichters gebruiken Lovable voor de eerste build en schakelen vervolgens over naar Cursor voor maatwerk, bugfixes en toevoegingen van functies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost Cursor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cursor biedt een gratis laag met beperkte AI-voltooiingen en een Pro-abonnement voor $ 20 per maand met onbeperkte voltooiingen en toegang tot krachtigere AI-modellen. Voor de meeste oprichters is de gratis laag voldoende om de tool te evalueren, en het Pro-abonnement biedt voldoende capaciteit voor fulltime ontwikkeling."
+      }
+    }
+  ]
+}
+</script>

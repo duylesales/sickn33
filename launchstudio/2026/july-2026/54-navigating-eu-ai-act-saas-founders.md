@@ -302,6 +302,9 @@ Stella partnered with **LaunchStudio (by Manifera)** to make the product launch-
 
 ---
 
+---
+
+---
 ## Frequently Asked Questions
 
 ### What is the EU AI Act and when does it take effect?
@@ -350,7 +353,7 @@ Penalties are structured in three tiers based on the severity of the violation. 
       "name": "How do I determine if my SaaS product is classified as 'High Risk'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your AI system is High Risk if it falls into one of the use cases listed in Annex III of the Act. The most common SaaS-relevant categories are: employment and worker management (AI for recruiting, CV screening, performance evaluation), access to essential services (credit scoring, insurance pricing, loan decisions), and education (grading, admissions decisions, exam proctoring). If your AI influences decisions about people's access to jobs, credit, insurance, education, or public services, it is almost certainly High Risk."
+        "text": "Your AI system is High Risk if it falls into one of the use cases listed in Annex III of the Act. The most common SaaS-relevant categories are: employment and worker management (AI for recruiting, CV screening, performance evaluation), access to essential services (credit scoring, insurance pricing, loan decisions), and education (grading, admissions decisions, exam proctoring). If your AI influences decisions about people's access to jobs, credit, insurance, education, or public services, it is almost certainly High Risk. When in doubt, consult legal counsel specializing in EU AI regulation and treat ambiguous cases as High Risk."
       }
     },
     {

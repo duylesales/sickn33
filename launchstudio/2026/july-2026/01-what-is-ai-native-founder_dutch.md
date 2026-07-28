@@ -119,22 +119,74 @@ Dit is waar **LaunchStudio (door Manifera)** tussenbeide kwam om de kloof te ove
 
 ---
 
+---
 ## Veelgestelde vragen
 
 ### Wat is een AI-native oprichter?
+
 Een AI-native oprichter is een ondernemer die door AI aangedreven ontwikkeltools zoals Lovable, Bolt of Cursor gebruikt om softwareproducten te bouwen in plaats van handmatig code te schrijven of traditionele ontwikkelingsteams in te huren. Deze oprichters maken gebruik van generatieve AI om in dagen in plaats van maanden functionele prototypes en MVP’s te creëren.
 
 ### Moeten AI-native oprichters weten hoe ze moeten coderen?
+
 Nee, AI-native oprichters hebben niet noodzakelijkerwijs traditionele codeervaardigheden nodig. Met tools als Lovable en Bolt kunnen oprichters in gewone taal beschrijven wat ze willen, en de AI genereert de code. Een basiskennis van softwareconcepten helpt echter bij het nemen van betere productbeslissingen en bij het communiceren met technische partners.
 
 ### Kunnen door AI gebouwde prototypes in de productie worden gebruikt?
+
 Door AI gebouwde prototypes hebben doorgaans extra werk nodig voordat ze productieklaar zijn. Hoewel ze er goed uitzien en goed functioneren in de demomodus, missen ze vaak de juiste beveiliging, betalingsintegratie, foutafhandeling en implementatieconfiguraties. Diensten zoals LaunchStudio zijn gespecialiseerd in het maken van door AI gebouwde prototypes en deze gereed maken voor lancering door op maat gemaakte softwareontwikkelingsstandaarden op ondernemingsniveau toe te passen.
 
 ### Wat is de relatie tussen LaunchStudio en Manifera?
+
 LaunchStudio is een initiatief van Manifera, een ervaren internationaal maatwerksoftwareontwikkelingsbedrijf onder leiding van oprichter en directeur Herre Roelevink. Hoewel LaunchStudio zich specifiek richt op het productieklaar maken van door AI gegenereerde prototypes, vertrouwt het op de robuuste engineeringteams van Manifera in Amsterdam (Nederland), Singapore en Ho Chi Minh-stad (Vietnam).
 
 ### Welke tools gebruiken AI-native oprichters doorgaans?
+
 De meest populaire tools onder AI-native oprichters in 2026 zijn Lovable (voor full-stack webapps), Bolt (voor rapid prototyping), Cursor (voor AI-ondersteunde codering), V0 van Vercel (voor UI-componenten) en Replit Agent (voor het volledig genereren van apps). De meeste oprichters combineren meerdere tools, afhankelijk van hun projectvereisten.
 
-### Hoeveel geld kunnen AI-native oprichters besparen op ontwikkeling?
-Oprichters met een AI-achtergrond kunnen 60 tot 80% besparen op de initiële ontwikkelingskosten in vergelijking met traditionele, door bureaus gebouwde software. Waar een traditioneel bureau € 20.000 tot € 500.000 vraagt ​​voor een volledige build, kunnen AI-native oprichters voor vrijwel nulkosten een werkend prototype maken en vervolgens diensten als LaunchStudio (€ 800 tot € 7.500) gebruiken om het productieklaar te maken.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een AI-native oprichter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een AI-native oprichter is een ondernemer die door AI aangedreven ontwikkeltools zoals Lovable, Bolt of Cursor gebruikt om softwareproducten te bouwen in plaats van handmatig code te schrijven of traditionele ontwikkelingsteams in te huren. Deze oprichters maken gebruik van generatieve AI om in dagen in plaats van maanden functionele prototypes en MVP’s te creëren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moeten AI-native oprichters weten hoe ze moeten coderen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, AI-native oprichters hebben niet noodzakelijkerwijs traditionele codeervaardigheden nodig. Met tools als Lovable en Bolt kunnen oprichters in gewone taal beschrijven wat ze willen, en de AI genereert de code. Een basiskennis van softwareconcepten helpt echter bij het nemen van betere productbeslissingen en bij het communiceren met technische partners."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen door AI gebouwde prototypes in de productie worden gebruikt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door AI gebouwde prototypes hebben doorgaans extra werk nodig voordat ze productieklaar zijn. Hoewel ze er goed uitzien en goed functioneren in de demomodus, missen ze vaak de juiste beveiliging, betalingsintegratie, foutafhandeling en implementatieconfiguraties. Diensten zoals LaunchStudio zijn gespecialiseerd in het maken van door AI gebouwde prototypes en deze gereed maken voor lancering door op maat gemaakte softwareontwikkelingsstandaarden op ondernemingsniveau toe te passen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de relatie tussen LaunchStudio en Manifera?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio is een initiatief van Manifera, een ervaren internationaal maatwerksoftwareontwikkelingsbedrijf onder leiding van oprichter en directeur Herre Roelevink. Hoewel LaunchStudio zich specifiek richt op het productieklaar maken van door AI gegenereerde prototypes, vertrouwt het op de robuuste engineeringteams van Manifera in Amsterdam (Nederland), Singapore en Ho Chi Minh-stad (Vietnam)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke tools gebruiken AI-native oprichters doorgaans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meest populaire tools onder AI-native oprichters in 2026 zijn Lovable (voor full-stack webapps), Bolt (voor rapid prototyping), Cursor (voor AI-ondersteunde codering), V0 van Vercel (voor UI-componenten) en Replit Agent (voor het volledig genereren van apps). De meeste oprichters combineren meerdere tools, afhankelijk van hun projectvereisten."
+      }
+    }
+  ]
+}
+</script>

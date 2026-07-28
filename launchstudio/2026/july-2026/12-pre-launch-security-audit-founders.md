@@ -167,6 +167,10 @@ Lucas partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €2,400 (Audit & Hardening Package) — production-ready and deployed in 8 business days.
 
 ---
+
+---
+
+---
 ## Frequently Asked Questions
 
 ### How do I perform a security audit on my AI-built application?
@@ -188,3 +192,52 @@ Before initial launch, after major feature additions, when adding new third-part
 ### What is Row Level Security and why is it critical?
 
 RLS restricts which database rows a user can access based on their identity. Without it, any authenticated user can read, modify, or delete any row — including other users' personal data. It is the most critical security feature for any multi-user application.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I perform a security audit on my AI-built application?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with four key areas: check for exposed credentials in frontend code, verify database Row Level Security, test authentication bypasses, and test input validation with malicious content. This covers the most critical vulnerabilities found in AI-built applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the most common security vulnerabilities in AI-generated code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The five most common are: exposed API keys, missing RLS, lack of input validation, insecure direct object references, and missing HTTPS enforcement. These appear in approximately 85% of AI-built applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a professional security audit before launching?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your application handles user data, personal information, or payments, a professional security audit is strongly recommended. Basic checks can be done yourself, but professionals identify subtle vulnerabilities that self-audits miss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I audit my application's security?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Before initial launch, after major feature additions, when adding new third-party integrations, and at least quarterly for ongoing operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Row Level Security and why is it critical?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RLS restricts which database rows a user can access based on their identity. Without it, any authenticated user can read, modify, or delete any row — including other users' personal data. It is the most critical security feature for any multi-user application."
+      }
+    }
+  ]
+}
+</script>

@@ -101,6 +101,10 @@ Scarlett partnered with **LaunchStudio (by Manifera)** to make the product launc
 **Cost & Timeline:** €1,850 (Migration & Schema Package) — production-ready and deployed in 6 business days.
 
 ---
+
+---
+
+---
 ## Frequently Asked Questions
 
 ### What is a database migration?
@@ -118,3 +122,56 @@ AI excels at writing SQL. Ask the AI to "generate a SQL migration script" rather
 ### What should I do before running any migration on production?
 
 Always trigger a manual database backup in the Supabase dashboard. This provides an immediate recovery point if the migration script has unintended consequences.
+
+### How does LaunchStudio ensure my app is ready for real users?
+
+LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a database migration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A migration is a SQL script that safely changes the structure of your database (like adding tables or columns) while maintaining a version-controlled history of changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I just edit the table in the Supabase dashboard?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manual edits in production are dangerous because deleting or renaming a column actively used by the live app will cause immediate crashes. Manual edits also break synchronization with local development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do AI builders handle database changes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI excels at writing SQL. Ask the AI to \"generate a SQL migration script\" rather than vaguely asking it to update the database, then run that script safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do before running any migration on production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always trigger a manual database backup in the Supabase dashboard. This provides an immediate recovery point if the migration script has unintended consequences."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does LaunchStudio ensure my app is ready for real users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, operated by senior engineers from Manifera (founded in 2014), implements row-level security, payment webhook idempotency, production secrets management, and automated monitoring to ensure your app scales safely."
+      }
+    }
+  ]
+}
+</script>

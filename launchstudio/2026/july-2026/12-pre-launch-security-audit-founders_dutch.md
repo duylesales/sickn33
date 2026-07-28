@@ -167,6 +167,8 @@ Lucas werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 2.400 (Audit- en verhardingspakket) — productieklaar en binnen 8 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Hoe voer ik een beveiligingsaudit uit op mijn door AI gebouwde applicatie?
@@ -188,3 +190,52 @@ Vóór de eerste lancering, na belangrijke toevoegingen van functies, bij het to
 ### Wat is beveiliging op rijniveau en waarom is dit van cruciaal belang?
 
 RLS beperkt tot welke databaserijen een gebruiker toegang heeft op basis van zijn identiteit. Zonder dit kan elke geverifieerde gebruiker elke rij lezen, wijzigen of verwijderen, inclusief de persoonlijke gegevens van andere gebruikers. Het is de meest kritische beveiligingsfunctie voor elke toepassing voor meerdere gebruikers.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe voer ik een beveiligingsaudit uit op mijn door AI gebouwde applicatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Begin met vier belangrijke gebieden: controleren op openbaar gemaakte inloggegevens in frontend-code, database-rijniveaubeveiliging verifiëren, verificatieomzeilingen testen en invoervalidatie met kwaadaardige inhoud testen. Dit omvat de meest kritieke kwetsbaarheden die worden aangetroffen in door AI gebouwde applicaties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de meest voorkomende beveiligingsproblemen in door AI gegenereerde code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De vijf meest voorkomende zijn: blootgestelde API-sleutels, ontbrekende RLS, gebrek aan invoervalidatie, onveilige directe objectreferenties en ontbrekende HTTPS-handhaving. Deze komen voor in ongeveer 85% van de door AI gebouwde applicaties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik een professionele beveiligingsaudit nodig voordat ik van start ga?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als uw applicatie gebruikersgegevens, persoonlijke informatie of betalingen verwerkt, wordt een professionele beveiligingsaudit ten zeerste aanbevolen. Basiscontroles kunt u zelf uitvoeren, maar professionals identificeren subtiele kwetsbaarheden die bij zelfaudits over het hoofd worden gezien."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe vaak moet ik de beveiliging van mijn applicatie controleren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vóór de eerste lancering, na belangrijke toevoegingen van functies, bij het toevoegen van nieuwe integraties van derden, en ten minste elk kwartaal voor lopende activiteiten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is beveiliging op rijniveau en waarom is dit van cruciaal belang?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RLS beperkt tot welke databaserijen een gebruiker toegang heeft op basis van zijn identiteit. Zonder dit kan elke geverifieerde gebruiker elke rij lezen, wijzigen of verwijderen, inclusief de persoonlijke gegevens van andere gebruikers. Het is de meest kritische beveiligingsfunctie voor elke toepassing voor meerdere gebruikers."
+      }
+    }
+  ]
+}
+</script>

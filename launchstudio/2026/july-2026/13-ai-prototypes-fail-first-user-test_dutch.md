@@ -133,6 +133,8 @@ Chloe werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 1.800 (lanceringsklaar pakket) — productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
+
+---
 ## Veelgestelde vragen
 
 ### Waarom mislukken AI-prototypes bij echte gebruikers als ze prima werken voor de bouwer?
@@ -154,3 +156,52 @@ Streef naar 2-3 rondes met elk 3-5 gebruikers. Los de belangrijkste problemen tu
 ### Moet ik mijn AI-prototype op mobiele apparaten testen?
 
 Absoluut ja. Meer dan 60% van het webverkeer is mobiel, en door AI gegenereerde lay-outs hebben vaak mobielspecifieke problemen. Test altijd op een echte telefoon.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom mislukken AI-prototypes bij echte gebruikers als ze prima werken voor de bouwer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bouwers weten hoe ze door de app moeten navigeren, instinctief randgevallen moeten vermijden en het gelukkige pad moeten gebruiken. Echte gebruikers klikken op onverwachte knoppen, voeren ongebruikelijke gegevens in en komen foutmeldingen tegen die de bouwer nooit heeft geactiveerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de meest voorkomende reden waarom AI-prototypes mislukken bij gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Slechte foutafhandeling. Echte gebruikers komen voortdurend situaties tegen waar de AI niet op had geanticipeerd, wat resulteert in crashes en verwarrende foutmeldingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe moet ik mijn AI-prototype testen met echte gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik hardopdenktesten: geef drie tot vijf doelgebruikers de URL en een eenvoudige taak. Vraag hen om hun gedachten hardop uit te spreken terwijl u toekijkt. Help niets en leg niets uit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel testrondes moet ik doen voordat ik lanceer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Streef naar 2-3 rondes met elk 3-5 gebruikers. Los de belangrijkste problemen tussen de rondes op. U bent klaar wanneer gebruikers de kernactie kunnen voltooien zonder vast te lopen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik mijn AI-prototype op mobiele apparaten testen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absoluut ja. Meer dan 60% van het webverkeer is mobiel, en door AI gegenereerde lay-outs hebben vaak mobielspecifieke problemen. Test altijd op een echte telefoon."
+      }
+    }
+  ]
+}
+</script>

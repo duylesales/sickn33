@@ -143,6 +143,10 @@ Ethan partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,500 (Demo to Production Package) — production-ready and deployed in 4 business days.
 
 ---
+
+---
+
+---
 ## Frequently Asked Questions
 
 ### What is the difference between a demo and a production application?
@@ -164,3 +168,52 @@ Security first (protect user data), then deployment (custom domain), then error 
 ### Can I launch a free product without full production readiness?
 
 You can defer payment integration for a free beta, but security items are non-negotiable. If your app collects user data, you are legally required to protect it under GDPR.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a demo and a production application?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A demo shows what your product can do under ideal conditions. A production application handles real users, real data, real payments, and real problems — security breaches, network failures, user errors, and scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the demo-to-production transition take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With professional help, 1–3 weeks. DIY as a non-technical founder, 4–8 weeks with higher risk of security issues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to rebuild my AI-built prototype for production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The frontend is typically production-quality. What needs work is the infrastructure underneath: security, payments, deployment, error handling, and monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I prioritize in the transition?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Security first (protect user data), then deployment (custom domain), then error handling, then payments, then monitoring. Security comes first because launching with vulnerabilities creates immediate and potentially irreversible risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I launch a free product without full production readiness?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can defer payment integration for a free beta, but security items are non-negotiable. If your app collects user data, you are legally required to protect it under GDPR."
+      }
+    }
+  ]
+}
+</script>

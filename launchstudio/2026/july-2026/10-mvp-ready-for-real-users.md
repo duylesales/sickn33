@@ -166,6 +166,9 @@ Mia partnered with **LaunchStudio (by Manifera)**. The engineering team left her
 
 ---
 
+---
+
+---
 ## Frequently Asked Questions
 
 ### What is the difference between an AI MVP and a prototype?
@@ -187,3 +190,52 @@ Test with at least 5–10 people from your target audience. These should be actu
 ### What is the biggest risk of launching too early?
 
 The biggest risk is a security breach that exposes user data. Beyond immediate damage, this creates lasting reputational harm, potential GDPR fines, and loss of trust that is extremely difficult to recover from.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between an AI MVP and a prototype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A prototype demonstrates your product concept and validates your idea. An AI MVP is a production-ready product that real users can safely use and potentially pay for. The key difference is production readiness: an AI MVP has proper security, error handling, deployment, and payment processing. Most AI-built applications are prototypes, not MVPs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my app is secure enough to launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your app is secure enough when it passes five checks: authentication uses a proven provider, no secrets are in client-side code, database Row Level Security is enabled, HTTPS is enforced, and all user input is validated and sanitized."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I launch with a free tier or require payment from day one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most AI-native founders, launching with a free tier or free trial is recommended. It reduces the barrier to adoption and lets you gather feedback quickly. However, your payment infrastructure should be ready before launch, even if you start free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many test users should I have before launching publicly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test with at least 5–10 people from your target audience. These should be actual potential users, not friends and family. Watch them use the product without guidance and fix the critical issues they identify."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the biggest risk of launching too early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The biggest risk is a security breach that exposes user data. Beyond immediate damage, this creates lasting reputational harm, potential GDPR fines, and loss of trust that is extremely difficult to recover from."
+      }
+    }
+  ]
+}
+</script>
