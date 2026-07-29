@@ -19,7 +19,7 @@ De AI de PDF laten lezen is slechts stap één. Als de AI antwoordt met een conv
 
 Je moet de AI dwingen **Gestructureerde gegevens** terug te sturen. Met behulp van de OpenAI of Anthropic SDK's geeft u een strikt JSON-schema door in uw API-verzoek:
 
-Door dit schema af te dwingen, wordt het model algoritmisch beperkt. Het zal *alleen* een perfect geformatteerd JSON-object uitvoeren dat uw Next.js-backend onmiddellijk in Supabase kan invoegen. Geen regex-parsering vereist.
+Door dit schema af te dwingen, wordt het model algoritmisch beperkt. Het zal *alleen* een perfect geformatteerd JSON-object uitvoeren dat uw Next. js-backend onmiddellijk in Supabase kan invoegen. Geen regex-parsering vereist.
 
 ## Efficiënt omgaan met documenten van meerdere pagina's
 
@@ -49,7 +49,7 @@ Deze architectuur verlaagt uw API-kosten met 95% terwijl de perfecte nauwkeurigh
 
 Verdrinken uw klanten in ongestructureerde PDF's? **LaunchStudio** bouwt sterk geoptimaliseerde, kosteneffectieve Vision AI-pijplijnen om perfecte JSON-gegevens uit de meest rommelige bedrijfsdocumenten te extraheren.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -62,6 +62,8 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om een ​​fallback OCR-
 **Resultaat:** De nauwkeurigheid van de gegevensextractie steeg tot 97% voor alle documenttypen, inclusief gescande bonnen.
 
 **Kosten en tijdlijn:** € 1.950 (OCR-integratiepakket) — klaar voor productie en geïmplementeerd binnen 5 werkdagen.
+
+---
 
 ---
 
@@ -84,3 +86,56 @@ Het betekent dat je de AI dwingt om gegevens in een strikt JSON-formaat (bijvoor
 ### Hoe dwing ik de AI om JSON terug te sturen?
 
 In de API-aanroep maak je gebruik van ‘Structured Outputs’. U levert een strikt JSON-schema waarin precies wordt aangegeven welke sleutels en gegevenstypen u nodig heeft, en het model wordt gedwongen alleen geldige JSON uit te voeren die overeenkomt met dat schema.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom is het extraheren van gegevens uit PDF's zo moeilijk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PDF-tekst wordt gepositioneerd met behulp van absolute X- en Y-coördinaten. Traditionele tools kunnen lay-outs met meerdere kolommen of tabellen zonder randen niet begrijpen, wat resulteert in vervormde tekstuitvoer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lossen Vision Models het PDF-probleem op?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vision Models (zoals GPT-4o) kijken eenvoudigweg naar een afbeelding van de PDF-pagina. Omdat ze ruimtelijk inzicht hebben, kunnen ze complexe tabellen en grafieken nauwkeurig 'lezen', precies zoals het menselijk oog dat zou doen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is 'gestructureerde gegevensextractie'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het betekent dat je de AI dwingt om gegevens in een strikt JSON-formaat (bijvoorbeeld {'factuurnummer': '123'}) terug te sturen in plaats van in een conversatieparagraaf, waardoor je backend de gegevens automatisch in een database kan opnemen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe dwing ik de AI om JSON terug te sturen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In de API-aanroep maak je gebruik van ‘Structured Outputs’. U levert een strikt JSON-schema waarin precies wordt aangegeven welke sleutels en gegevenstypen u nodig heeft, en het model wordt gedwongen alleen geldige JSON uit te voeren die overeenkomt met dat schema."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

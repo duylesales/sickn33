@@ -1,9 +1,19 @@
-🤖 Het bereiken van SOC2-compliance voor AI-startups
+🔒 Hazel, een kliniekmanager, gebruikte **Bolt** om een boekingsplatform te bouwen — waarna een zakelijke zorgklant SOC 2-auditlogs eiste voordat hij een pilot wilde tekenen, terwijl het platform geen enkele encryptiesleutel-rotatie of centrale toegangslog had. 📋
 
-Je hebt de VP Marketing bij een Fortune 500-bedrijf gepitcht.
+SOC 2-audits mislukken zelden door slechte architectuur — ze mislukken omdat er geen bewijsspoor is dat aantoont dat uw beheersmaatregelen daadwerkelijk functioneerden, en niet alleen op papier bestonden. 🧠
 
-Ze zijn dol op je AI-tool.
+❌ Geen rotatie van encryptiesleutels voor gevoelige gegevens
+❌ Geen centraal, onveranderlijk log van wie welke gegevens wanneer benaderde
+❌ Geen rolgebaseerde toegangscontrole gekoppeld aan de Trust Services Criteria van de auditor
 
-Ontdek meer strategieën voor uw startup-traject: [Link]
+✅ AWS KMS-encryptiesleutelrotatie volledig geïmplementeerd
+✅ Onveranderlijke audit trails voor elke gegevenstoegang
+✅ Strikte RBAC rechtstreeks gekoppeld aan de Trust Services Criteria die haar auditor hanteerde
 
-#B2B #SaaS #AI
+Bij **LaunchStudio** hebben we 160+ productieprojecten opgeleverd voor zakelijke klanten zoals Vodafone en TNO sinds de oprichting van Manifera in 2014 — 11+ jaar ervaring in het bouwen van precies dit soort auditeerbare infrastructuur. 🛡️
+
+Hazel behaalde SOC 2-gereedheidscertificering en tekende een zakelijke pilotdeal van €40.000. 🚀
+
+👉 Boek uw audit-gereedheidsreview: [Link naar artikel]
+
+#AINativeFounder #LaunchStudio #Manifera #SOC2Compliance #EnterpriseSales

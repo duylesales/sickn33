@@ -59,7 +59,7 @@ Als uw Helpcentrum verouderde artikelen uit 2024 bevat, zal de AI gebruikers vol
 
 Zorg ervoor dat supporttickets uw technische team niet overweldigen. **LaunchStudio** implementeert intelligente, autonome AI-ondersteuningsagenten in Intercom en Zendesk, waarmee 60% van de tickets direct kan worden opgelost.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -72,6 +72,8 @@ Ze nam contact op met **LaunchStudio (door Manifera)**. Het team implementeerde 
 **Resultaat:** De automatische resolutie van supporttickets is verhoogd tot 45%, zonder loops of dubbele spam.
 
 **Kosten en tijdlijn:** € 1.250 (Webhook Loop Fix) — productieklaar en binnen 3 werkdagen geïmplementeerd.
+
+---
 
 ---
 
@@ -94,3 +96,56 @@ Ja. Aan moderne AI-agenten kan API-toegang worden verleend. De AI kan Stripe vra
 ### Wanneer moet de AI het overdragen aan een mens?
 
 AI zou Tier 1-ondersteuning moeten afhandelen (wachtwoorden, basisfacturering). Het moet onmiddellijk naar een mens worden doorgestuurd als het grote gebruikersfrustratie detecteert, of als de vraag complexe technische foutopsporing met zich meebrengt.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een chatbot en een AI-ondersteuningsagent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oude chatbots gebruiken rigide beslissingsbomen. Een AI Support Agent gebruikt LLM's om natuurlijke taal te begrijpen, uw helpcentrum te doorzoeken en een conversatie, zeer specifiek antwoord te geven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet een AI-agent de antwoorden op mijn specifieke product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het maakt gebruik van Retrieval-Augmented Generation (RAG). Het doorzoekt eerst uw aangepaste Helpcentrum-artikelen en eerder opgeloste tickets, zodat er alleen antwoorden worden gegeven op basis van uw daadwerkelijke documentatie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een AI-agent acties uitvoeren, zoals restituties verlenen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Aan moderne AI-agenten kan API-toegang worden verleend. De AI kan Stripe vragen om een ​​betaling te verifiëren en autonoom een ​​terugbetaling activeren als dit in overeenstemming is met uw geschreven bedrijfsbeleid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wanneer moet de AI het overdragen aan een mens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI zou Tier 1-ondersteuning moeten afhandelen (wachtwoorden, basisfacturering). Het moet onmiddellijk naar een mens worden doorgestuurd als het grote gebruikersfrustratie detecteert, of als de vraag complexe technische foutopsporing met zich meebrengt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

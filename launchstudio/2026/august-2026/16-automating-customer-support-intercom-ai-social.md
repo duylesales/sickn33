@@ -1,13 +1,19 @@
-🤖 Drowning in support tickets as your SaaS scales? 📉
+🎧 Evelyn, an e-commerce store owner, used **Lovable** to build a customer support bot — but it fell into a continuous self-reply loop with Intercom's webhook, spamming customers dozens of times in seconds. 🔁
 
-Scaling your SaaS from 1,000 to 10,000 users without automating customer support will break your team and frustrate users waiting days for simple answers. 🛑
+An AI support agent is only as good as the plumbing underneath it — the same webhook that lets it reply autonomously can trap it in an infinite loop if you don't dedupe. 🧠
 
-At **LaunchStudio**, we build intelligent customer support workflows using Intercom AI:
-✅ Autonomous tier-1 ticket resolution ⚡
-✅ Seamless human handoffs for complex issues 🤝
-✅ Knowledge base integration for instant answers 📚
+❌ No check for the bot's own actor ID, so the AI replies to its own replies
+❌ No deduplication on Intercom's message ID, letting retried webhooks trigger duplicates
+❌ An outdated Help Center feeding the AI's RAG search stale or contradictory answers
 
-Turn your support center from a bottleneck into a competitive advantage. 🛡️
-👉 Learn how to automate customer support with Intercom AI: [Link]
+✅ Message source verification that ignores anything authored by the bot itself
+✅ Deduplication tags on every inbound webhook event before a reply is triggered
+✅ A strict escalation protocol handing off low-confidence or frustrated conversations to humans
 
-#IntercomAI #CustomerSupport #AIproduct #LaunchStudio #Founders #TechLeadership
+At **LaunchStudio**, backed by Manifera's 11+ years of production engineering across 160+ delivered projects for clients like Vodafone and TNO, this is the class of edge case we build for from day one. 🛡️
+
+Evelyn's support ticket auto-resolution rose to 45%, with zero loops or duplicate spam. 🚀
+
+👉 Read the full architecture: [Link to article]
+
+#AINativeFounder #LaunchStudio #Manifera #CustomerSupportAI #IntercomAI

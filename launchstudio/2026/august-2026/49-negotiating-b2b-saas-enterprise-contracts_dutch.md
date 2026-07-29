@@ -49,7 +49,7 @@ Duw onmiddellijk terug. Geef duidelijk aan: *"Als start-up in een vroeg stadium 
 
 Begraven inkoopteams van ondernemingen u in vijandige juridische rode lijnen? **LaunchStudio** adviseert technische oprichters over standaard B2B SaaS-contractstrategieën, zodat u de inkomsten veilig kunt stellen zonder catastrofale aansprakelijkheid te aanvaarden.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -62,6 +62,8 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om de app te containeriser
 **Resultaat:** Ondertekening van een jaarcontract van € 75.000, waardoor zakelijke B2B-verkoopkanalen worden geopend.
 
 **Kosten en tijdlijn:** € 5.200 (private cloudmigratie) — productieklaar en binnen 10 werkdagen geïmplementeerd.
+
+---
 
 ---
 
@@ -84,3 +86,56 @@ Als u onbeperkte aansprakelijkheid aanvaardt, kan een enkel datalek ertoe leiden
 ### Wat zijn 'Net 90'-betalingsvoorwaarden?
 
 Een clausule waarin staat dat de onderneming 90 dagen de tijd heeft om uw factuur te betalen. U moet dit agressief onderhandelen tot 'Net 30' om ervoor te zorgen dat uw startup een gezonde cashflow behoudt.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een MSA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een Master Services Agreement (MSA) is het fundamentele contract tussen uw startup en de onderneming. Het schetst de belangrijkste juridische relaties, aansprakelijkheidslimieten en intellectuele eigendomsrechten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een SLA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een Service Level Agreement is een garantie voor de uptime van uw software (bijvoorbeeld 99,9%). Als u er niet aan voldoet, moet u boetes uitdelen, die altijd gestructureerd moeten zijn in de vorm van servicecredits en nooit in contanten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is 'Vrijwaring' zo gevaarlijk voor startups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als u onbeperkte aansprakelijkheid aanvaardt, kan een enkel datalek ertoe leiden dat de onderneming uw startup aanklaagt voor tientallen miljoenen dollars, waardoor een onmiddellijk faillissement wordt afgedwongen. U moet uw aansprakelijkheid beperken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn 'Net 90'-betalingsvoorwaarden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een clausule waarin staat dat de onderneming 90 dagen de tijd heeft om uw factuur te betalen. U moet dit agressief onderhandelen tot 'Net 30' om ervoor te zorgen dat uw startup een gezonde cashflow behoudt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

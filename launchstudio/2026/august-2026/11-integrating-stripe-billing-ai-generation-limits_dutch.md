@@ -27,7 +27,7 @@ Uw database moet fungeren als de absolute bron van waarheid voor het saldo van e
 
 Vertrouw nooit de frontend. Als uw React-app het saldo controleert voordat OpenAI wordt aangeroepen, kan een kwaadwillende gebruiker de controle omzeilen met Chrome DevTools. De controle moet op de backend plaatsvinden:
 
-1. De gebruiker klikt op "Genereren" en verzendt een verzoek naar uw Next.js API-route.
+1. De gebruiker klikt op "Genereren" en verzendt een verzoek naar uw Next. js API-route.
 
 2. Je API-routequery's Supabase: *Heeft deze gebruiker > 0 credits?*
 
@@ -39,7 +39,7 @@ Vertrouw nooit de frontend. Als uw React-app het saldo controleert voordat OpenA
 
 Wanneer een gebruiker geen credits meer heeft, klikt hij op de knop 'Meer kopen', waardoor hij of zij naar een Stripe Checkout-sessie wordt geleid. Als ze betalen, moet Stripe op een of andere manier je database vertellen om 500 credits toe te voegen. Dit gebeurt via **Webhooks**.
 
-U moet een specifieke API-route bouwen (bijvoorbeeld `/api/webhooks/stripe`) die uitsluitend is ontworpen om naar berichten van Stripe te luisteren. Wanneer Stripe de `checkout.session.completed` gebeurtenis verzendt, moet uw route:
+U moet een specifieke API-route bouwen (bijvoorbeeld `/api/webhooks/stripe`) die uitsluitend is ontworpen om naar berichten van Stripe te luisteren. Wanneer Stripe de `checkout. session. completed` gebeurtenis verzendt, moet uw route:
 
 - Controleer de cryptografische handtekening van de webhook (om ervoor te zorgen dat een hacker geen betaling vervalst).
 
@@ -71,7 +71,7 @@ Hoewel Metered Billing geweldig is voor grootschalige B2B-apps, is het gevaarlij
 
 Een kapotte webhook betekent dat klanten tegoeden in rekening worden gebracht die ze nooit hebben ontvangen. **LaunchStudio** implementeert beproefde Stripe-integraties met veilige webhook-afhandeling om te garanderen dat uw factureringsarchitectuur nooit faalt.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -84,6 +84,8 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om server-side tokenquotum
 **Resultaat:** Het omzeilde API-gebruik is tot nul gedaald en de conversiepercentages naar betaalde abonnementen zijn met 30% gestegen.
 
 **Kosten en tijdlijn:** € 1.850 (Stripe Quota-pakket) — productieklaar en binnen 5 werkdagen geïmplementeerd.
+
+---
 
 ---
 
@@ -106,3 +108,56 @@ Dwing het nooit af op de frontend. Uw backend-server moet de database doorzoeken
 ### Hoe synchroniseer ik Stripe-betalingen met mijn database?
 
 Gebruik Stripe Webhooks. Wanneer een betaling is voltooid, stuurt Stripe een veilig HTTP-verzoek naar uw server. Uw server verifieert het verzoek en voegt de gekochte credits toe aan de database.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom zou ik geen 'onbeperkt' AI-gebruik aanbieden met een abonnement van $ 20/maand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat je OpenAI betaalt per gegenereerd woord. Als u onbeperkt gebruik aanbiedt, kan een hoofdgebruiker voor €200 aan tekst genereren, waardoor uw bedrijf met enorm verlies moet werken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een 'Credit-Based'-systeem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruikers betalen vooraf voor een bepaald aantal eigen 'credits'. Elke generatie trekt een krediet af. Wanneer ze nul bereiken, worden ze buitengesloten en moeten ze een opwaardeerpakket kopen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik de generatielimiet veilig afdwingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dwing het nooit af op de frontend. Uw backend-server moet de database doorzoeken om te verifiëren dat de gebruiker > 0 credits heeft voordat deze de aanroep naar de OpenAI API initieert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe synchroniseer ik Stripe-betalingen met mijn database?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik Stripe Webhooks. Wanneer een betaling is voltooid, stuurt Stripe een veilig HTTP-verzoek naar uw server. Uw server verifieert het verzoek en voegt de gekochte credits toe aan de database."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

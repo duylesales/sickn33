@@ -47,7 +47,7 @@ Je moet de toon en het sentiment van de *output* van de AI in de gaten houden. A
 
 Vlieg niet blind in de productie. **LaunchStudio** integreert uitgebreide LLMOps-telemetrie in uw backend, waardoor u realtime dashboards krijgt voor latentie, tokenkosten en AI-kwaliteit.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -60,6 +60,8 @@ Ze nam contact op met **LaunchStudio (door Manifera)**. Het team integreerde Sen
 **Resultaat:** Dankzij realtime waarschuwingen kon ze API-fouten herstellen voordat gebruikers deze merkten, waardoor het vertrouwen van de gebruiker werd veiliggesteld.
 
 **Kosten en tijdlijn:** € 1.300 (Monitoring-setuppakket) — klaar voor productie en geïmplementeerd binnen 3 werkdagen.
+
+---
 
 ---
 
@@ -82,3 +84,56 @@ Implementeer gebruikersgestuurde feedbackloops zoals 'Thumbs Down' en volg de kn
 ### Wat zijn LLMOps-tools?
 
 Platforms zoals LangSmith of Helicone die uw API-aanroepen proxy's, waarbij de exacte prompt, respons, latentie en tokenkosten van elke afzonderlijke AI-interactie in uw toepassing worden vastgelegd.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom zijn traditionele APM-tools niet voldoende voor AI-apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tools zoals de Sentry-vangcode crasht, maar ze kunnen je niet vertellen of een AI een feit heeft gehallucineerd of te veel tokens heeft verbruikt. U hebt LLMOps-platforms nodig om deze unieke generatieve statistieken bij te houden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is 'Time to First Token' (TTFT)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het meet de exacte duur in milliseconden tussen het initiëren van een prompt door een gebruiker en het allereerste woord dat op zijn scherm verschijnt. Het is de meest kritische UX-statistiek voor AI-apps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe monitor ik AI-hallucinaties in de productie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Implementeer gebruikersgestuurde feedbackloops zoals 'Thumbs Down' en volg de knop 'Regenereren'. Hoge regeneratiepercentages geven aan dat de AI niet voldoet aan de bedoeling van de gebruiker en een snelle herschrijving vereist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn LLMOps-tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Platforms zoals LangSmith of Helicone die uw API-aanroepen proxy's, waarbij de exacte prompt, respons, latentie en tokenkosten van elke afzonderlijke AI-interactie in uw toepassing worden vastgelegd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

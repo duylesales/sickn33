@@ -51,7 +51,7 @@ Als een accountantskantoor momenteel een junior analist $30 per uur betaalt om d
 
 Stop met het maken van generieke wrappers. **LaunchStudio** werkt samen met domeinexperts om zeer verdedigbare, datarijke verticale AI-agenten te bouwen die zijn afgestemd op specifieke sectoren.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -64,6 +64,8 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om aangepaste XML-over-HTT
 **Resultaat:** In de eerste week 12 tandheelkundige klinieken ondertekend, waardoor de boekingsstromen werden geautomatiseerd.
 
 **Kosten en tijdlijn:** € 3.100 (API-integratie oefenen) — productieklaar en binnen 7 werkdagen geïmplementeerd.
+
+---
 
 ---
 
@@ -86,3 +88,56 @@ Je verfijnt een model op basis van zeer gespecialiseerde, bedrijfseigen gegevens
 ### Wat is het bedrijfsmodel voor verticale AI?
 
 Op resultaten gebaseerde prijzen. In plaats van een maandelijks abonnement voor de software in rekening te brengen, brengt u kosten in rekening per voltooide eenheid (bijvoorbeeld $ 5 voor elke verzekeringsclaim die met succes door de AI is ingediend).
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is een horizontale AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een generalistisch model (zoals ChatGPT) ontworpen om alles adequaat te doen. Het kan code schrijven, talen vertalen en trivia beantwoorden. Het ontbreekt echter aan de gespecialiseerde kennis die nodig is voor diepgaande bedrijfsworkflows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een verticale AI-agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een AI die is ontworpen om precies één taak perfect uit te voeren. Bijvoorbeeld een agent die exclusief is gebouwd om tandheelkundige röntgenfoto's te lezen en zelfstandig specifieke tandartsverzekeringsclaims in te dienen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe bouw je een verticale AI-agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je verfijnt een model op basis van zeer gespecialiseerde, bedrijfseigen gegevens waarover algemene modellen niet beschikken. Vervolgens geef je dat model 'Tools' (API-toegang), zodat het acties kan ondernemen in plaats van alleen maar tekst te genereren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het bedrijfsmodel voor verticale AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Op resultaten gebaseerde prijzen. In plaats van een maandelijks abonnement voor de software in rekening te brengen, brengt u kosten in rekening per voltooide eenheid (bijvoorbeeld $ 5 voor elke verzekeringsclaim die met succes door de AI is ingediend)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

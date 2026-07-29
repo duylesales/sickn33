@@ -57,7 +57,7 @@ Als u fundamentele modellen bouwt (zoals OpenAI of Mistral), bevat de wet specif
 
 Bouwt u per ongeluk een ‘High-Risk’ systeem? **LaunchStudio** biedt technische en architecturale audits om ervoor te zorgen dat uw B2B SaaS voldoet aan de transparantie- en databeheervereisten van de EU AI Act voordat u deze in Europa lanceert.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -70,6 +70,8 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om geautomatiseerde databa
 **Resultaat:** De app voldeed aan de documentatievereisten van de EU AI Act, waardoor Europese expansie werd veiliggesteld.
 
 **Kosten en tijdlijn:** € 2.400 (AI Act Audit Trail) — klaar voor productie en geïmplementeerd binnen 6 werkdagen.
+
+---
 
 ---
 
@@ -92,3 +94,56 @@ AI die van invloed is op de werkgelegenheid (cv-screening), kredietscore of krit
 ### Welke AI-praktijken zijn ronduit verboden?
 
 Sociale scoresystemen, AI die menselijk gedrag manipuleert via subliminale technieken en het massaal schrapen van gezichtsbeelden om biometrische databases op te bouwen zijn ten strengste verboden.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is de EU AI-wet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is 's werelds eerste alomvattende wettelijke kader voor AI, dat systemen reguleert op basis van het risiconiveau dat zij vormen voor de veiligheid van burgers en de grondrechten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is de wet van toepassing op in de VS gevestigde startups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Als uw Amerikaanse startup AI-diensten aanbiedt aan Europese burgers, of als de output van uw AI in de EU wordt gebruikt, bent u wettelijk gebonden aan de wet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een 'High-Risk' AI-systeem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI die van invloed is op de werkgelegenheid (cv-screening), kredietscore of kritieke infrastructuur. Deze vereisen verplichte registratie, beperking van vooroordelen en menselijk toezicht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke AI-praktijken zijn ronduit verboden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sociale scoresystemen, AI die menselijk gedrag manipuleert via subliminale technieken en het massaal schrapen van gezichtsbeelden om biometrische databases op te bouwen zijn ten strengste verboden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

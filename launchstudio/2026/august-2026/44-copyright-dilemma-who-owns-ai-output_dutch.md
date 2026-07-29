@@ -49,7 +49,7 @@ Als de rechtbank uiteindelijk oordeelt dat het trainen van modellen op auteursre
 
 Zakelijke kopers zijn doodsbang voor inbreuk op intellectuele eigendomsrechten. **LaunchStudio** bouwt AI-architecturen met behulp van bedrijfsmodellen die beschermingsschermen voor auteursrechten omvatten, waardoor het inkoopproces voor uw B2B-klanten wordt verminderd.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -62,6 +62,8 @@ Ze werkte samen met **LaunchStudio (door Manifera)** om een ​​filter voor he
 **Resultaat:** Er werd voldaan aan de wettelijke voorschriften, waardoor de startup werd beschermd tegen risico's van inbreuk op het auteursrecht.
 
 **Kosten en tijdlijn:** € 1.900 (integratie van copyrightfilter) — klaar voor productie en geïmplementeerd binnen 5 werkdagen.
+
+---
 
 ---
 
@@ -84,3 +86,56 @@ Je moet significant 'menselijk auteurschap' toevoegen. Als u een AI-basisafbeeld
 ### Wat gebeurt er als twee gebruikers exact dezelfde uitvoer genereren?
 
 Omdat geen van beide gebruikers legaal auteursrecht op de onbewerkte uitvoer kan leggen, kan gebruiker A gebruiker B niet aanklagen wegens inbreuk op het auteursrecht als ze allebei dezelfde AI-paragraaf of afbeelding genereren en gebruiken.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kan een AI auteursrecht hebben?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Volgens de huidige uitspraken van het United States Copyright Office is de auteursrechtelijke bescherming strikt beperkt tot werken die door een mens zijn gemaakt. Algoritmen kunnen geen auteurs zijn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Als ik de prompt schrijf, ben ik dan de eigenaar van de AI-afbeelding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Het typen van een prompt wordt juridisch gezien als het geven van instructies aan een artiest in opdracht. Omdat de AI de daadwerkelijke uiteindelijke visuele uitvoering bepaalt, kan er geen auteursrecht op de onbewerkte afbeelding rusten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik auteursrecht verkrijgen op een door AI gegenereerd werk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je moet significant 'menselijk auteurschap' toevoegen. Als u een AI-basisafbeelding genereert en deze vervolgens urenlang in Photoshop aanpast, komt de uiteindelijke samengestelde afbeelding mogelijk in aanmerking voor auteursrecht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er als twee gebruikers exact dezelfde uitvoer genereren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat geen van beide gebruikers legaal auteursrecht op de onbewerkte uitvoer kan leggen, kan gebruiker A gebruiker B niet aanklagen wegens inbreuk op het auteursrecht als ze allebei dezelfde AI-paragraaf of afbeelding genereren en gebruiken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

@@ -57,7 +57,7 @@ De meest schokkende realiteit van SOC2 is dat startups zelden falen vanwege een 
 
 Voldoet uw startup niet aan de vragenlijsten over bedrijfsbeveiliging? **LaunchStudio** helpt oprichters bij het ontwerpen van SOC2-compatibele cloud-architecturen, het opzetten van Vanta-integraties en een strikt MDM-beleid, zodat u binnen 90 dagen klaar bent voor een audit.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -70,6 +70,8 @@ Ze werkte samen met **LaunchStudio (door Manifera)** om sleutelrotatie van AWS K
 **Resultaat:** Behaalde SOC2-gereedheidscertificering en tekende een zakelijke pilotovereenkomst ter waarde van € 40.000.
 
 **Kosten en tijdlijn:** € 4.800 (SOC2 Compliance Package) — gereed voor productie en geïmplementeerd binnen 12 werkdagen.
+
+---
 
 ---
 
@@ -92,3 +94,56 @@ Omdat AI sterk afhankelijk is van API’s van derden. U moet nauwgezet documente
 ### Wat zijn de meest voorkomende redenen waarom startups de audit niet doorstaan?
 
 Slechte administratieve hygiëne. Veelvoorkomende fouten zijn onder meer het niet dwingen van medewerkers om 2FA te gebruiken, het overslaan van antecedentenonderzoek bij nieuwe medewerkers en het vergeten de toegang tot de database in te trekken wanneer een medewerker ontslag neemt.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is SOC2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het is een auditstandaard die ervoor zorgt dat een SaaS-bedrijf gegevens veilig beheert om de privacy van zijn klanten te beschermen. Het is vereist voor grote ondernemingen voordat ze B2B-software aanschaffen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen SOC2 Type I en Type II?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Type I controleert uw beveiligingsbeleid op een specifieke dag (een momentopname). Type II evalueert uw systemen gedurende een aaneengesloten periode (meestal 3 tot 6 maanden) om te bewijzen dat u de regels consequent heeft gevolgd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is SOC2 moeilijker voor AI-startups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat AI sterk afhankelijk is van API’s van derden. U moet nauwgezet documenteren hoe gegevens naar OpenAI of Anthropic stromen, bewijzen dat deze leveranciers veilig zijn en garanderen dat gegevens niet voor training worden gebruikt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat zijn de meest voorkomende redenen waarom startups de audit niet doorstaan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Slechte administratieve hygiëne. Veelvoorkomende fouten zijn onder meer het niet dwingen van medewerkers om 2FA te gebruiken, het overslaan van antecedentenonderzoek bij nieuwe medewerkers en het vergeten de toegang tot de database in te trekken wanneer een medewerker ontslag neemt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

@@ -51,7 +51,7 @@ U moet een complexe infrastructuur implementeren: vLLM voor batchverwerking met 
 
 Verpletteren uw API-facturen uw marges? **LaunchStudio** helpt bij het schalen van startups de wiskunde te evalueren en naadloze migraties te ontwerpen van dure API's naar op maat gehoste, sterk geoptimaliseerde open-sourcemodellen.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -64,6 +64,8 @@ Ze werkte met **LaunchStudio (door Manifera)**. Het team migreerde de kernverwer
 **Resultaat:** De maandelijkse hostingkosten zijn gedaald naar € 350, waardoor de brutomarges zijn gestegen van 20% naar 85%.
 
 **Kosten en tijdlijn:** € 3.800 (GPU-hostingmigratie) — gereed voor productie en geïmplementeerd binnen 9 werkdagen.
+
+---
 
 ---
 
@@ -86,3 +88,56 @@ Gegevensprivacy. Sterk gereguleerde industrieën verbieden het verzenden van gev
 ### Wat is de beste strategie voor een nieuwe startup?
 
 Begin altijd met de API. Dankzij de snelheid van de ontwikkeling kunt u Product-Market Fit direct vinden zonder dat u servers hoeft te beheren. Overweeg alleen om naar open source te migreren als API-kosten uw grootste operationele last worden.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een API-model en een open source-model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een API-model (OpenAI) wordt gehost door een enorm bedrijf; u betaalt per gegenereerd woord. Een open source-model (Llama 3) is gratis software die u op uw eigen servers draait. U betaalt niet per woord, maar u betaalt maandelijks de serverhuur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het hosten van mijn eigen open-sourcemodel goedkoper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alleen op grote schaal. Als uw OpenAI-rekening klein is, is het huren van een speciale GPU-server geldverspilling. Als uw OpenAI-factuur $ 10.000/maand bedraagt, zal het verhuizen naar uw eigen servers uw winstmarges drastisch verhogen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom zou een onderneming open-sourcemodellen eisen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gegevensprivacy. Sterk gereguleerde industrieën verbieden het verzenden van gevoelige gegevens naar API's van derden. Het intern hosten van een open-sourcemodel garandeert dat de gegevens nooit de beveiligde bedrijfsomgeving verlaten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de beste strategie voor een nieuwe startup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Begin altijd met de API. Dankzij de snelheid van de ontwikkeling kunt u Product-Market Fit direct vinden zonder dat u servers hoeft te beheren. Overweeg alleen om naar open source te migreren als API-kosten uw grootste operationele last worden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

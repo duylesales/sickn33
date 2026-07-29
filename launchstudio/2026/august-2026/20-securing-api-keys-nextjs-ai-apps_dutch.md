@@ -5,29 +5,29 @@ Koperfase: Bewustzijn
 ---
 
 # Abonnementenbeheer Beyond de Afrekenknop
-Als een hacker uw Supabase-URL steelt, kunnen ze u irriteren. Als een hacker uw OpenAI API-sleutel steelt, kan hij of zij uw startup binnen 48 uur failliet laten gaan. Schadelijke scripts struinen actief het internet af op zoek naar blootgestelde `sk-proj-`-tekenreeksen, waarbij ze gestolen sleutels gebruiken om enorme cryptomining-operaties uit te voeren of op uw kosten spam te genereren. Als u met Next.js bouwt, moet u uw beveiliging feilloos ontwerpen.
+Als een hacker uw Supabase-URL steelt, kunnen ze u irriteren. Als een hacker uw OpenAI API-sleutel steelt, kan hij of zij uw startup binnen 48 uur failliet laten gaan. Schadelijke scripts struinen actief het internet af op zoek naar blootgestelde `sk-proj-`-tekenreeksen, waarbij ze gestolen sleutels gebruiken om enorme cryptomining-operaties uit te voeren of op uw kosten spam te genereren. Als u met Next. js bouwt, moet u uw beveiliging feilloos ontwerpen.
 
 ## Het beveiligingslek aan de clientzijde
 
 De meest verwoestende fout die een junior ontwikkelaar kan maken, is het rechtstreeks importeren van de OpenAI SDK in een React Client Component. Als uw code er zo uitziet:
 
-Je bent al gehackt. Het voorvoegsel `NEXT_PUBLIC_` vertelt Next.js expliciet om deze geheime sleutel in de openbare JavaScript-bundel te compileren. Elke gebruiker kan Chrome DevTools openen, het tabblad Netwerk controleren, uw API-sleutel kopiëren en deze wereldwijd gaan gebruiken.
+Je bent al gehackt. Het voorvoegsel `NEXT_PUBLIC_` vertelt Next. js expliciet om deze geheime sleutel in de openbare JavaScript-bundel te compileren. Elke gebruiker kan Chrome DevTools openen, het tabblad Netwerk controleren, uw API-sleutel kopiëren en deze wereldwijd gaan gebruiken.
 
 **De oplossing**: OpenAI API-sleutels mogen de browser nooit aanraken. Verwijder het voorvoegsel `NEXT_PUBLIC_` uit uw `.env`-bestand. API-aanroepen moeten volledig op de backend worden georkestreerd.
 
 ## Het ontwerpen van veilige API-routes
 
-In Next.js App Router omvat het beveiligde patroon serveracties of routehandlers.
+In Next. js App Router omvat het beveiligde patroon serveracties of routehandlers.
 
 1. De gebruiker klikt op "Genereren" op de frontend (Clientcomponent).
 
 2. De frontend doet een HTTP POST-verzoek naar uw backend (bijvoorbeeld `/api/generate`).
 
-3. Uw backend Route Handler (die veilig draait op de servers van Vercel) leest de `process.env.OPENAI_API_KEY`.
+3. Uw backend Route Handler (die veilig draait op de servers van Vercel) leest de `process. env. OPENAI_API_KEY`.
 
 4. De backend roept OpenAI aan, haalt de gegevens op en streamt deze veilig terug naar de frontend.
 
-Omdat de omgevingsvariabelen van Node.js nooit aan de client worden blootgesteld, blijft de sleutel volledig veilig.
+Omdat de omgevingsvariabelen van Node. js nooit aan de client worden blootgesteld, blijft de sleutel volledig veilig.
 
 ## Het 'Bring Your Own Key'-model (BYOK).
 
@@ -39,7 +39,7 @@ Dit introduceert een enorme aansprakelijkheid. Als uw Supabase-database wordt ge
 
 Als u gebruikers om hun API-sleutel vraagt:
 
-- Wanneer de gebruiker de sleutel indient, moet uw Next.js-server deze onmiddellijk coderen met behulp van een sterk algoritme (zoals AES-256-GCM) met een masterservergeheim.
+- Wanneer de gebruiker de sleutel indient, moet uw Next. js-server deze onmiddellijk coderen met behulp van een sterk algoritme (zoals AES-256-GCM) met een masterservergeheim.
 
 - Bewaar het *gecodeerde cijfer* in Supabase, niet de ruwe sleutel.
 
@@ -53,7 +53,7 @@ Log in op uw OpenAI API-dashboard en stel een **Harde factureringslimiet** in. A
 
 ## Belangrijkste inzichten
 
-- Stel nooit AI API-sleutels bloot op de frontend. Een geheime sleutel met het voorvoegsel `NEXT_PUBLIC_` in Next.js is openbaar zichtbaar voor iedereen die Chrome DevTools opent.
+- Stel nooit AI API-sleutels bloot op de frontend. Een geheime sleutel met het voorvoegsel `NEXT_PUBLIC_` in Next. js is openbaar zichtbaar voor iedereen die Chrome DevTools opent.
 
 - Organiseer AI API-aanroepen altijd via beveiligde backend-serveracties of routehandlers, waarbij omgevingsvariabelen verborgen blijven.
 
@@ -65,9 +65,9 @@ Log in op uw OpenAI API-dashboard en stel een **Harde factureringslimiet** in. A
 
 ## Controleer uw AI-beveiliging
 
-Eén enkele blootgestelde sleutel kan uw bedrijf vernietigen. **LaunchStudio** voert strenge beveiligingsaudits uit op Next.js AI-applicaties, waarbij robuuste encryptie en backend-orkestratie worden geïmplementeerd om uw infrastructuur veilig te houden.
+Eén enkele blootgestelde sleutel kan uw bedrijf vernietigen. **LaunchStudio** voert strenge beveiligingsaudits uit op Next. js AI-applicaties, waarbij robuuste encryptie en backend-orkestratie worden geïmplementeerd om uw infrastructuur veilig te houden.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -83,6 +83,8 @@ Ze werkte met **LaunchStudio (door Manifera)**. Het team heeft alle API-bewerkin
 
 ---
 
+---
+
 ## Veelgestelde vragen
 
 ## Veelgestelde vragen
@@ -93,12 +95,65 @@ De meest voorkomende manieren zijn het pushen van de sleutel naar een openbare G
 
 ### Wat is het voorvoegsel NEXT_PUBLIC_?
 
-In Next.js wordt elke omgevingsvariabele die begint met 'NEXT_PUBLIC_' gebundeld in het openbare JavaScript. Gebruik dit voorvoegsel nooit voor geheime API-sleutels.
+In Next. js wordt elke omgevingsvariabele die begint met 'NEXT_PUBLIC_' gebundeld in het openbare JavaScript. Gebruik dit voorvoegsel nooit voor geheime API-sleutels.
 
-### Hoe beveilig ik een OpenAI-oproep in Next.js?
+### Hoe beveilig ik een OpenAI-oproep in Next. js?
 
 Gebruik serveracties of routehandlers. De frontend stuurt de prompt naar uw backend. De backend leest de beveiligde omgevingsvariabele, roept OpenAI aan en stuurt het resultaat terug naar de frontend.
 
 ### Hoe bewaar ik de API-sleutel van een gebruiker veilig?
 
 Bewaar het nooit als platte tekst in uw database. Versleutel de API-sleutel op uw server voordat u deze naar Supabase schrijft, en decodeer deze alleen in het geheugen wanneer u namens hen de API-aanroep doet.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe wordt een API-sleutel gestolen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meest voorkomende manieren zijn het pushen van de sleutel naar een openbare GitHub-repository, of het uitvoeren van de OpenAI-aanroep op de React-code aan de clientzijde, zodat iedereen de sleutel in zijn browser kan vinden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het voorvoegsel NEXT_PUBLIC_?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Next. js wordt elke omgevingsvariabele die begint met 'NEXT_PUBLIC_' gebundeld in het openbare JavaScript. Gebruik dit voorvoegsel nooit voor geheime API-sleutels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe beveilig ik een OpenAI-oproep in Next. js?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik serveracties of routehandlers. De frontend stuurt de prompt naar uw backend. De backend leest de beveiligde omgevingsvariabele, roept OpenAI aan en stuurt het resultaat terug naar de frontend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe bewaar ik de API-sleutel van een gebruiker veilig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bewaar het nooit als platte tekst in uw database. Versleutel de API-sleutel op uw server voordat u deze naar Supabase schrijft, en decodeer deze alleen in het geheugen wanneer u namens hen de API-aanroep doet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>

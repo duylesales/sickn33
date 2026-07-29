@@ -57,7 +57,7 @@ U moet dit echter wel koppelen aan een **Overeenkomstdisclaimer**. Omdat LLM's p
 
 Wacht niet op een rechtszaak om te beseffen dat uw Servicevoorwaarden ontoereikend zijn. Hoewel **LaunchStudio** geen formeel juridisch advies biedt, begeleiden we oprichters met standaard best practices op het gebied van B2B-architectuur om ervoor te zorgen dat uw AI-compliance-infrastructuur robuust is.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -70,6 +70,8 @@ Hij werkte samen met **LaunchStudio (door Manifera)** om conforme servicevoorwaa
 **Resultaat:** App-registraties verliepen met duidelijke gebruikersovereenkomsten, waardoor de wettelijke aansprakelijkheid werd verminderd.
 
 **Kosten en tijdlijn:** € 800 (Legal Compliance Modals) — productieklaar en binnen 2 werkdagen geïmplementeerd.
+
+---
 
 ---
 
@@ -92,3 +94,56 @@ Ja. Een 'Pass-Through Liability'-clausule stelt dat als OpenAI plotseling offlin
 ### Wie is eigenaar van de output die door de AI wordt gegenereerd?
 
 De industriestandaard is om alle rechten van de 'Output' aan de gebruiker toe te wijzen. U moet hen echter waarschuwen dat door AI gegenereerde inhoud mogelijk niet in aanmerking komt voor traditionele wettelijke auteursrechtbescherming.
+
+### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
+
+LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema. org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom kan ik niet gewoon de Servicevoorwaarden van een ander SaaS-bedrijf kopiëren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generieke SaaS-sjablonen missen clausules met betrekking tot AI-hallucinaties, API-pass-through-voorwaarden van derden en expliciete waarschuwingen tegen het genereren van illegale inhoud. U wordt juridisch blootgesteld."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een 'disclaimer voor hallucinaties'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een clausule waarin de AI wordt vermeld, kan valse informatie genereren. Het verschuift de aansprakelijkheid naar de gebruiker en dwingt hen om in te stemmen met het onafhankelijk verifiëren van alle AI-outputs voordat ze erop kunnen vertrouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik mijn API-providers openbaar maken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Een 'Pass-Through Liability'-clausule stelt dat als OpenAI plotseling offline gaat of gebruikersinhoud verbiedt, uw startup niet juridisch of financieel aansprakelijk is voor het verlies van de service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie is eigenaar van de output die door de AI wordt gegenereerd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De industriestandaard is om alle rechten van de 'Output' aan de gebruiker toe te wijzen. U moet hen echter waarschuwen dat door AI gegenereerde inhoud mogelijk niet in aanmerking komt voor traditionele wettelijke auteursrechtbescherming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+      }
+    }
+  ]
+}
+</script>
