@@ -80,7 +80,7 @@ Koude e-mail eindigt niet bij het antwoord — het eindigt bij het ondertekende 
 
 Terwijl u uw koude outreach-engine optimaliseert, zorgt LaunchStudio ervoor dat uw backend-infrastructuur veilig is en gereed is voor zakelijke klanten om in te loggen — voordat het beveiligingsteam van een prospect de vraag stelt die uw deal doet stagneren. Dit is precies de leemte die Manifera, de moedermaatschappij van LaunchStudio opgericht in 2014, al elf jaar opvult voor zakelijke klanten zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en directeur van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten volwassen te maken. Wij hebben elf jaar ervaring in precies dat." Aangezien 45% van de door AI gegenereerde codebases minstens één uitbuitbaar beveiligingsprobleem bevat, is dit op orde krijgen vóór uw eerste zakelijke demo geen overbodige luxe — het is het verschil tussen het sluiten van de deal en het verliezen ervan tijdens due diligence.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf met hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ), met ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Manifera combineert 'Nederlands management met Vietnamees meesterschap', en onze senior engineeringteams implementeren uw door AI gebouwde frontend met productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP — voor ongeveer 20% van wat een traditioneel ontwikkelbureau zou rekenen. Bekijk hoe ons proces werkt via de [procespagina van LaunchStudio](https://launchstudio.eu/en/#process), of ontdek [Manifera's diensten voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), of [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf, opgericht in **2014** en met hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ), met ontwikkelingscentra in **Singapore** en **Ho Chi Minh City, Vietnam**. Manifera combineert 'Nederlands management met Vietnamees meesterschap', en onze senior engineeringteams implementeren uw door AI gebouwde frontend met productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP — voor ongeveer 20% van wat een traditioneel ontwikkelbureau zou rekenen. Bekijk hoe ons proces werkt via de [procespagina van LaunchStudio](https://launchstudio.eu/en/#process), of ontdek [Manifera's diensten voor maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/), of [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
@@ -93,8 +93,6 @@ Maya werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 **Resultaat:** Maya lanceerde haar verkooppijplijn veilig, waardoor de import van gegevens werd beveiligd zonder backend-systemen bloot te stellen aan bedreigingen.
 
 **Kosten en tijdlijn:** € 1.700 (Pakket voor beveiligde uploads) — productieklaar en binnen 6 werkdagen geïmplementeerd.
-
----
 
 ---
 ## Veelgestelde vragen
@@ -118,52 +116,3 @@ Nee. Links in eerste koude e-mails activeren spamfilters. Streef eerst naar een 
 ### Als mijn koude e-mailcampagne een zakelijke demo oplevert, houdt mijn door AI gebouwde backend dan stand tijdens hun beveiligingsbeoordeling?
 
 Niet automatisch. Zakelijke prospects stellen routinematig vragen over gegevensverwerking, versleuteling en compliance zodra een demo goed verloopt, en 45% van de door AI gegenereerde codebases bevat minstens één uitbuitbaar beveiligingsprobleem dat een echte due-diligence-beoordeling zal vinden. LaunchStudio, gesteund door elf jaar ervaring van Manifera in zakelijke engineering, verhelpt precies deze leemtes — authenticatie, databasebeleid, versleutelde opslag — voordat uw outreach begint te converteren naar serieuze gesprekken.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom is het openingspercentage van mijn koude e-mail zo laag?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "U beland waarschijnlijk in de spam. Dit gebeurt als u uw domein nog niet heeft opgewarmd, geen DMARC/DKIM-records heeft, spam-triggerwoorden gebruikt, te veel links opneemt of te veel volume vanaf één mailbox verzendt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe kan AI koude outreach verbeteren?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI kan het LinkedIn-profiel, bedrijfsnieuws en vacatures van een prospect doorzoeken om een hypergepersonaliseerde openingszin te genereren, waarmee u bewijst dat u uw onderzoek heeft gedaan zonder voor elke prospect handmatig te hoeven schrijven — maar controleer altijd handmatig een steekproef voordat u verzendt om gehallucineerde details op te sporen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is de ideale lengte voor een koude B2B-e-mail?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minder dan 75 woorden. Vertel wie u bent, identificeer een specifiek probleem, presenteer uw AI-oplossing en eindig met een laagdrempelige vraag in plaats van een open vraag."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet ik een link naar mijn app opnemen in de eerste e-mail?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nee. Links in eerste koude e-mails activeren spamfilters. Streef eerst naar een tekstantwoord. Zodra ze antwoorden, bent u gemarkeerd als veilig om links, Loom-demo's en agenda-uitnodigingen te verzenden."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Als mijn koude e-mailcampagne een zakelijke demo oplevert, houdt mijn door AI gebouwde backend dan stand tijdens hun beveiligingsbeoordeling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Niet automatisch. Zakelijke prospects stellen routinematig vragen over gegevensverwerking, versleuteling en compliance zodra een demo goed verloopt, en 45% van de door AI gegenereerde codebases bevat minstens één uitbuitbaar beveiligingsprobleem dat een echte due-diligence-beoordeling zal vinden. LaunchStudio, gesteund door elf jaar ervaring van Manifera in zakelijke engineering, verhelpt precies deze leemtes — authenticatie, databasebeleid, versleutelde opslag — voordat uw outreach begint te converteren naar serieuze gesprekken."
-      }
-    }
-  ]
-}
-</script>

@@ -66,7 +66,7 @@ Klaar om een aangesloten leger te lanceren? LaunchStudio configureert de complex
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten volwassen te maken. Wij hebben elf jaar ervaring in precies dat," aldus Herre Roelevink, oprichter en Managing Director van Manifera.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf, opgericht in **2014** en geleid door oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingscentra in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk onze [pakketopties](https://launchstudio.eu/en/#packages) of [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf, opgericht in **2014** en geleid door oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingscentra in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk onze [pakketopties](https://launchstudio.eu/en/#packages), [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact), of lees meer over [Manifera's aanpak van maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
@@ -79,8 +79,6 @@ Jaxon werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Resultaat:** Jaxon heeft 50 affiliates aangetrokken die meer dan € 12.000 aan verwijzingsverkopen genereerden met geautomatiseerde uitbetalingen.
 
 **Kosten en tijdlijn:** € 1.500 (Affiliate Setup Package) — productieklaar en binnen 5 werkdagen geïmplementeerd.
-
----
 
 ---
 ## Veelgestelde vragen
@@ -104,52 +102,3 @@ Ja. Door van gebruikers belangenbehartigers te maken, ontstaat een virale lus me
 ### Waar past Manifera in het bouwen van affiliate-infrastructuur voor mijn AI SaaS?
 
 Manifera is het engineeringbedrijf achter LaunchStudio. Wanneer een affiliateprogramma meer nodig heeft dan een kant-en-klare Rewardful-installatie — aangepaste attributielogica, meerlaagse commissiestructuren, of een Stripe-integratie die nooit verder is gehard dan de AI-prototypefase — scoped LaunchStudio dit als een vast, kort project en zet daarbij dezelfde senior engineers in die Manifera sinds 2014 heeft gebruikt voor productie-factureringssystemen.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Hoe werkt een partnerprogramma voor SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Derden promoten uw software met behulp van trackinglinks. Als iemand op de link klikt en iets koopt, ontvangt de affiliate een percentage van die inkomsten, meestal voor een vaste periode. Het is een marketingkanaal zonder risico, waarbij u alleen betaalt nadat er daadwerkelijk omzet is binnengekomen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoeveel commissie moet ik affiliates bieden?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SaaS-marges maken agressieve uitbetalingen mogelijk. De industriestandaard voor AI-tools biedt een terugkerende commissie van 20% tot 40% voor het eerste jaar van het abonnement van de klant, soms gecombineerd met een vaste bonus voor deals op enterprise-niveau."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe houd ik de verkopen van partners bij?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gebruik gevestigde platforms zoals Rewardful of PartnerStack. Ze integreren rechtstreeks met Stripe, houden automatisch verwijzingen bij via cookies of server-side attributie, en verwerken de complexe wiskunde van terugkerende uitbetalingen, terugbetalingsvensters en belastingrapportage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet ik mijn bestaande gebruikers affiliates laten worden?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja. Door van gebruikers belangenbehartigers te maken, ontstaat een virale lus met beter converterend verkeer dan koude outreach. Als gebruikers weten dat ze hun abonnement kunnen betalen door collega's door te verwijzen, zullen ze de tool voor u op de markt brengen zonder acquisitiekosten."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waar past Manifera in het bouwen van affiliate-infrastructuur voor mijn AI SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Manifera is het engineeringbedrijf achter LaunchStudio. Wanneer een affiliateprogramma meer nodig heeft dan een kant-en-klare Rewardful-installatie — aangepaste attributielogica, meerlaagse commissiestructuren, of een Stripe-integratie die nooit verder is gehard dan de AI-prototypefase — scoped LaunchStudio dit als een vast, kort project en zet daarbij dezelfde senior engineers in die Manifera sinds 2014 heeft gebruikt voor productie-factureringssystemen."
-      }
-    }
-  ]
-}
-</script>

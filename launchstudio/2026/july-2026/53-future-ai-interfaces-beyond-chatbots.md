@@ -88,10 +88,6 @@ Xavier partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €3,100 (UX Refactoring Package) — production-ready and deployed in 9 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### Why is the chatbot interface considered flawed for SaaS?
@@ -113,52 +109,3 @@ Replace the text box with structured forms. Use dropdowns and sliders to gather 
 ### How does LaunchStudio help a founder actually ship a Generative UI redesign?
 
 Most AI page builders generate the chat interface easily but don't wire up the typed tool schemas, streaming infrastructure, and persisted state a real Generative UI needs. LaunchStudio (operated by Manifera) takes the AI-built frontend and connects it to a production backend—secure APIs, real-time data, and proper state management—so the interface stops being a demo and starts being software your users can rely on.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why is the chatbot interface considered flawed for SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chatbots force users to do the hard work of prompt engineering. They present a blank canvas, lack feature discoverability, often return text when a visual format (like a chart) is needed, and suffer from state amnesia in long conversation threads."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Generative UI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is a system where the AI generates fully functional, interactive user interface components on the fly (like building an interactive dashboard) via typed tool schemas, rather than just returning text responses."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is an 'Invisible Agent'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An agent that operates in the background. It monitors workflows and proactively executes tasks (like creating tickets based on a meeting) without the user ever opening a chat interface, ideally with scoped permissions and a visible, undoable activity log."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I move my AI app away from a chat interface?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Replace the text box with structured forms. Use dropdowns and sliders to gather intent, translate that into a hidden, templated prompt on your backend, and return structured visual data to the user."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio help a founder actually ship a Generative UI redesign?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most AI page builders generate the chat interface easily but don't wire up the typed tool schemas, streaming infrastructure, and persisted state a real Generative UI needs. LaunchStudio (operated by Manifera) takes the AI-built frontend and connects it to a production backend—secure APIs, real-time data, and proper state management—so the interface stops being a demo and starts being software your users can rely on."
-      }
-    }
-  ]
-}
-</script>

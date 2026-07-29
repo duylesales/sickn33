@@ -80,10 +80,6 @@ Greyson partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €2,200 (Future-Proofing Package) — production-ready and deployed in 7 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What is Artificial General Intelligence (AGI)?
@@ -105,52 +101,3 @@ Build moats in the physical world (hardware, robotics, sensors) or secure genuin
 ### How does LaunchStudio help a SaaS founder prepare for an AGI-disrupted future?
 
 LaunchStudio (operated by Manifera) builds your production backend with model-agnostic abstraction layers instead of hard-coded calls to a single AI provider, so when the underlying models change—or when you need to pivot from selling software to selling outcomes—your infrastructure doesn't force a rebuild from scratch.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Artificial General Intelligence (AGI)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AGI is a theoretical form of AI that can understand, learn, and apply knowledge across any domain at a level equal to or better than a human, capable of autonomous reasoning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How will AGI kill traditional SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Instead of renting generic software like a CRM, a company will tell an AGI to instantly build, deploy, and maintain a custom CRM tailored perfectly to their specific needs, for free. This starts with the most templated, generic SaaS categories and expands from there."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is 'Services as Software'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Instead of selling a tool that helps a user do a task, you use AGI to autonomously complete the task entirely, and you charge the client for the finalized outcome—shifting your cost structure from near-zero marginal cost to a real, monitored cost per transaction."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can a startup defend against AGI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Build moats in the physical world (hardware, robotics, sensors) or secure genuinely exclusive legal rights to proprietary data that the AGI cannot access—not just data that happens to be hard to find today."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio help a SaaS founder prepare for an AGI-disrupted future?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio (operated by Manifera) builds your production backend with model-agnostic abstraction layers instead of hard-coded calls to a single AI provider, so when the underlying models change—or when you need to pivot from selling software to selling outcomes—your infrastructure doesn't force a rebuild from scratch."
-      }
-    }
-  ]
-}
-</script>

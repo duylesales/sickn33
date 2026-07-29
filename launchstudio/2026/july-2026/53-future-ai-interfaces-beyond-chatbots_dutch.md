@@ -89,8 +89,6 @@ Xavier werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Kosten en tijdlijn:** € 3.100 (UX Refactoring Package) — productieklaar en binnen 9 werkdagen geïmplementeerd.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Waarom wordt de chatbotinterface als gebrekkig beschouwd voor SaaS?
@@ -112,52 +110,3 @@ Vervang het tekstvak door gestructureerde formulieren. Gebruik vervolgkeuzelijst
 ### Hoe helpt LaunchStudio een oprichter om een Generatieve UI-redesign daadwerkelijk uit te leveren?
 
 De meeste AI-pagebuilders genereren de chatinterface eenvoudig, maar koppelen niet de getypeerde toolschema's, streaminginfrastructuur en persistente status die een echte Generatieve UI nodig heeft. LaunchStudio (beheerd door Manifera) neemt de door AI gebouwde frontend en koppelt deze aan een productiebackend — beveiligde API's, realtime gegevens en correct statusbeheer — zodat de interface stopt een demo te zijn en software wordt waar uw gebruikers op kunnen vertrouwen.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom wordt de chatbotinterface als gebrekkig beschouwd voor SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chatbots dwingen gebruikers om het harde werk van prompt engineering te doen. Ze presenteren een leeg canvas, ontberen de vindbaarheid van functies, retourneren vaak tekst wanneer een visueel formaat (zoals een diagram) nodig is, en lijden aan statusamnesie in lange gespreksthreads."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is generatieve gebruikersinterface?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het is een systeem waarbij de AI direct volledig functionele, interactieve componenten van de gebruikersinterface genereert (zoals het bouwen van een interactief dashboard) via getypeerde toolschema's, in plaats van alleen maar tekstreacties terug te sturen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is een 'onzichtbare agent'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een agent die op de achtergrond opereert. Deze bewaakt workflows en voert proactief taken uit (zoals het maken van tickets op basis van een vergadering) zonder dat de gebruiker ooit een chatinterface opent, idealiter met afgebakende rechten en een zichtbaar, terug te draaien activiteitenlogboek."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe verplaats ik mijn AI-app weg van een chatinterface?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Vervang het tekstvak door gestructureerde formulieren. Gebruik vervolgkeuzelijsten en schuifregelaars om de intentie te verzamelen, vertaal deze naar een verborgen, gesjabloneerde prompt op uw backend, en stuur gestructureerde visuele gegevens terug naar de gebruiker."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpt LaunchStudio een oprichter om een Generatieve UI-redesign daadwerkelijk uit te leveren?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "De meeste AI-pagebuilders genereren de chatinterface eenvoudig, maar koppelen niet de getypeerde toolschema's, streaminginfrastructuur en persistente status die een echte Generatieve UI nodig heeft. LaunchStudio (beheerd door Manifera) neemt de door AI gebouwde frontend en koppelt deze aan een productiebackend — beveiligde API's, realtime gegevens en correct statusbeheer — zodat de interface stopt een demo te zijn en software wordt waar uw gebruikers op kunnen vertrouwen."
-      }
-    }
-  ]
-}
-</script>

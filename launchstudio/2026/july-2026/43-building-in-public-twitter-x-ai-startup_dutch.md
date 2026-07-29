@@ -46,7 +46,7 @@ Wanneer de lanceringsdag aanbreekt, lanceert u niet eerst op Twitter/X; u lancee
 
 De meeste succesvolle indie-lanceringen stapelen twee doelgroepen op dezelfde dag: de opgewarmde Twitter/X-achterban die u maandenlang heeft opgebouwd, en een gecoördineerde Product Hunt-lancering. Plan uw Product Hunt-inzending op een dinsdag tot donderdag (het weekendverkeer is meetbaar lager), en post in de uren nadat deze live gaat de link naar uw Twitter/X-publiek met een verzoek om oprechte feedback en upvotes — geen generieke "upvote alstublieft", wat de Product Hunt-community doorziet en afstraft, maar een specifiek verzoek dat aansluit bij het verhaal dat u hen al vertelt. De twee kanalen versterken elkaar: Product Hunt-verkeer dat een actief, persoonlijk Twitter/X-account achter het product aantreft, converteert beter, en Twitter/X-berichten die linken naar een trending Product Hunt-pagina lenen dat platform-momentum en die sociale bewijskracht.
 
-Dit is ook precies het moment waarop uw infrastructuur het zwaarst wordt getest, en het is waar veel verder goed vermarkte lanceringen stilletjes falen. Een piek van een paar honderd gelijktijdige aanmeldingen is precies het soort belasting dat een ontbrekende e-mailverificatieflow blootlegt, een niet-geïndexeerde databasequery die prima werkte bij tien gebruikers maar vastloopt bij driehonderd, of een aanmeldtrigger die stilletjes faalt onder gelijktijdige schrijfacties. Ongeveer 80% van de met AI gebouwde projecten bereikt nooit een stabiele productiestatus, en een slecht getimede infrastructuurstoring tijdens uw ene gegarandeerde verkeerspiek van het jaar is een van de pijnlijkere, vermijdbare manieren waarop dat gebeurt — het publiek kwam opdagen; het product was niet klaar om het te ontvangen.
+Dit is ook precies het moment waarop uw infrastructuur het zwaarst wordt getest, en het is waar veel verder goed vermarkte lanceringen stilletjes falen. Een piek van een paar honderd gelijktijdige aanmeldingen is precies het soort belasting dat een ontbrekende e-mailverificatieflow blootlegt, een niet-geïndexeerde databasequery die prima werkte bij tien gebruikers maar vastloopt bij driehonderd, of een aanmeldtrigger die stilletjes faalt onder gelijktijdige schrijfacties. Ongeveer 80% van de met AI gebouwde projecten bereikt nooit een stabiele productiestatus, en een slecht getimede infrastructuurstoring tijdens uw ene gegarandeerde verkeerspiek van het jaar is een van de pijnlijkere, vermijdbare manieren waarop dat gebeurt — het publiek kwam opdagen; het product was niet klaar om het te ontvangen. Het is precies het faalscenario dat Manifera, de in 2014 opgerichte moedermaatschappij van LaunchStudio, al meer dan tien jaar helpt voorkomen voor bedrijfsklanten als Vodafone, op een veel grotere schaal.
 
 ## Belangrijkste inzichten
 
@@ -79,8 +79,6 @@ Wyatt werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 1.350 (Lanceringsgereedheidspakket) — productieklaar en binnen 5 werkdagen geïmplementeerd.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat betekent "Building in Public" precies?
@@ -102,52 +100,3 @@ Deel het proces. Plaats screenshots van uw AI die een gebruikersinterface genere
 ### Als LaunchStudio het product van Manifera is, waarom zou een solo indie hacker een 11 jaar oud enterprise-engineeringbedrijf nodig hebben?
 
 Omdat de kloof tussen "3.000 mensen op een wachtlijst" en "3.000 mensen die daadwerkelijk kunnen aanmelden" precies het soort productie-engineering is dat Manifera heeft geleverd voor meer dan 160 klanten, waaronder Vodafone en TNO, nu samengeperst tot een opdracht met vaste scope van dagen, niet maanden. U heeft geen ondernemingsbudget nodig om betrouwbaarheid op ondernemingsniveau te krijgen voor de ene dag waarop uw publiek daadwerkelijk komt opdagen.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat betekent \"Building in Public\" precies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het betekent dat u openlijk de reis achter de schermen van het opzetten van uw startup op sociale media deelt, inclusief omzetcijfers, technische uitdagingen en mislukkingen, om een emotioneel geïnvesteerd publiek op te bouwen voordat u hen ooit vraagt te betalen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Zal iemand mijn idee niet stelen als ik het deel voordat ik het lanceer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ideeën zijn goedkoop; uitvoering is alles, vooral nu AI-tools iedereen in staat stellen om in een weekend een werkend prototype te bouwen. Een copycat kan het publiek dat u opbouwt of de directe gebruikersfeedback die u verzamelt niet stelen. Verbergen garandeert dat u voor een publiek van nul lanceert. Houd alleen echt gevoelige infrastructuurdetails — API-sleutels, databaseschema's, beheerroutes — buiten uw screenshots."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ik heb geen volgers. Zal dit nog werken?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, maar u moet doelbewust netwerken. Ga in gesprek met andere oprichters, laat doordachte reacties achter op grotere accounts in uw niche, en gebruik hashtags zoals #buildinpublic om andere bouwers te helpen u te vinden. De meeste oprichters posten 3 tot 6 maanden consistent voordat hun eerste bericht echt doorbreekt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat moet ik posten als het product nog niet klaar is?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Deel het proces. Plaats screenshots van uw AI die een gebruikersinterface genereert, video's van bugs die u oplost, of vraag het publiek om te stemmen over prijsniveaus. Een authentiek proces is boeiender dan gepolijste marketing, en het is tegelijkertijd oprecht bruikbaar marktonderzoek."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Als LaunchStudio het product van Manifera is, waarom zou een solo indie hacker een 11 jaar oud enterprise-engineeringbedrijf nodig hebben?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Omdat de kloof tussen \"3.000 mensen op een wachtlijst\" en \"3.000 mensen die daadwerkelijk kunnen aanmelden\" precies het soort productie-engineering is dat Manifera heeft geleverd voor meer dan 160 klanten, waaronder Vodafone en TNO, nu samengeperst tot een opdracht met vaste scope van dagen, niet maanden. U heeft geen ondernemingsbudget nodig om betrouwbaarheid op ondernemingsniveau te krijgen voor de ene dag waarop uw publiek daadwerkelijk komt opdagen."
-      }
-    }
-  ]
-}
-</script>

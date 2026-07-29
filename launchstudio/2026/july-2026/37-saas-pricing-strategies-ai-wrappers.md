@@ -95,10 +95,6 @@ Lucas partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,500 (Usage Billing Package) — production-ready and deployed in 5 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### Why is pricing an AI app different from traditional SaaS?
@@ -120,52 +116,3 @@ Limits must be enforced at the database and server level, never trusted to front
 ### Does LaunchStudio only build the frontend, or does it also handle usage-based billing logic like this?
 
 LaunchStudio's work sits specifically in this gap — the backend billing enforcement, database-level usage tracking, and Stripe integration that AI page-builders don't generate by default. Because LaunchStudio is backed by Manifera, an 11-year enterprise engineering firm, the team builds the same server-side metering discipline used for large clients like Vodafone into a fixed-scope package sized for a solo AI-native founder's SaaS wrapper.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why is pricing an AI app different from traditional SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Traditional SaaS has near-zero marginal cost per action. In AI apps, every generation triggers a real, metered third-party API charge. Without careful pricing tied to that usage, you can easily lose money on your heaviest — and often most valuable — users."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I offer an unlimited usage tier?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely not. Heavy users, and especially automated bots specifically hunting for unlimited-tier AI products, will exploit it, driving your API costs through the roof and potentially bankrupting your unit economics within days."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the credit-based pricing model, and when should I use it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Users buy a bucket of credits, and each AI action consumes a set number of credits priced against the worst-case API cost of that action. It guarantees you never lose money on a user, but can cause hesitation and lower engagement due to \"credit anxiety.\""
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I implement hard or soft usage limits safely?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Limits must be enforced at the database and server level, never trusted to frontend code. A secure backend Edge Function should check a user's remaining allowance in an atomically-updated database counter before calling the AI API, rejecting or throttling the request if the limit is reached."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does LaunchStudio only build the frontend, or does it also handle usage-based billing logic like this?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio's work sits specifically in this gap — the backend billing enforcement, database-level usage tracking, and Stripe integration that AI page-builders don't generate by default. Because LaunchStudio is backed by Manifera, an 11-year enterprise engineering firm, the team builds the same server-side metering discipline used for large clients like Vodafone into a fixed-scope package sized for a solo AI-native founder's SaaS wrapper."
-      }
-    }
-  ]
-}
-</script>

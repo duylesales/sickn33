@@ -99,8 +99,6 @@ Stella werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Kosten en tijdlijn:** € 4.200 (AI-infrastructuurpakket) — klaar voor productie en geïmplementeerd binnen 14 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is goedkoper: OpenAI of mijn eigen model hosten?
@@ -122,52 +120,3 @@ U kunt en, voorbij een bepaalde schaal, waarschijnlijk zelfs beter wel. Hybride 
 ### Integreert LaunchStudio alleen propriëtaire API's, of kan het ook open-sourcemodellen voor mij implementeren?
 
 Beide. Omdat LaunchStudio wordt ondersteund door Manifera — een enterprise-engineeringbedrijf met elf jaar ervaring dat infrastructuur heeft gebouwd voor klanten als Vodafone en TNO — is het team even bedreven in het veilig integreren van een propriëtaire API voor een snelle MVP-lancering als in het opzetten van private GPU-infrastructuur om een open-weightsmodel zelf te hosten voor een compliance-gedreven zakelijke klant. De juiste architectuur hangt af van de daadwerkelijke beperkingen van uw product, niet van wat het makkelijkst te verkopen is.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is goedkoper: OpenAI of mijn eigen model hosten?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Voor vroege startups is OpenAI (of Anthropic/Gemini) exponentieel goedkoper, omdat u alleen betaalt per gebruikt token. Het hosten van open-weightsmodellen vereist het huren van GPU-servers die geld kosten, ongeacht of iemand uw app gebruikt. Zelf hosten wordt pas goedkoper zodra u tientallen miljoenen tokens per dag verwerkt met consequent hoge GPU-bezetting — daaronder is een inactieve GPU een slechtere deal dan een gemeten API-aanroep."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is het veiliger om open-sourcemodellen te gebruiken voor gevoelige gegevens?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Over het algemeen wel. Als u een open-weightsmodel host op private cloudinfrastructuur die u zelf beheert, verlaten de gegevens nooit uw grenzen, wat het veel makkelijker maakt om te voldoen aan HIPAA, EU-regels voor gegevensresidentie of contractuele eisen van zakelijke klanten. Dat gezegd hebbende, bieden propriëtaire aanbieders inmiddels Zero Data Retention-overeenkomsten op enterprise-niveau die een groot deel van dit bezwaar wegnemen voor minder gereguleerde toepassingen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe moeilijk is het om later over te stappen van OpenAI naar een open-sourcemodel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Makkelijker dan de meeste oprichters verwachten. De meeste open-weights hostingplatforms (Together AI, Fireworks, Replicate) bieden een API-formaat dat vrijwel identiek is aan dat van OpenAI, dus de overstap op codeniveau is vaak slechts een wijziging van basis-URL en API-sleutel. Het lastigere deel is het opnieuw valideren dat uw prompts, die waarschijnlijk zijn afgestemd op het specifieke gedrag van GPT-4o, ook op het nieuwe model goede resultaten opleveren."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet ik kiezen voor één modelarchitectuur, of kan ik beide combineren?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "U kunt en, voorbij een bepaalde schaal, waarschijnlijk zelfs beter wel. Hybride routering — goedkope open-weightsmodellen voor routinematige, hoogvolume verzoeken, met propriëtaire frontiermodellen gereserveerd voor complexe randgevallen — is hoe geraffineerde AI-native oprichters de kwaliteit hoog houden terwijl ze de gemengde kosten per verzoek beheersen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Integreert LaunchStudio alleen propriëtaire API's, of kan het ook open-sourcemodellen voor mij implementeren?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beide. Omdat LaunchStudio wordt ondersteund door Manifera — een enterprise-engineeringbedrijf met elf jaar ervaring dat infrastructuur heeft gebouwd voor klanten als Vodafone en TNO — is het team even bedreven in het veilig integreren van een propriëtaire API voor een snelle MVP-lancering als in het opzetten van private GPU-infrastructuur om een open-weightsmodel zelf te hosten voor een compliance-gedreven zakelijke klant. De juiste architectuur hangt af van de daadwerkelijke beperkingen van uw product, niet van wat het makkelijkst te verkopen is."
-      }
-    }
-  ]
-}
-</script>

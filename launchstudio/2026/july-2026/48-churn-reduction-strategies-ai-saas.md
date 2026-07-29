@@ -74,7 +74,7 @@ LaunchStudio configures secure Stripe Customer Portals, dunning sequences, and a
 
 "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, Founder & Managing Director of Manifera.
 
-LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. See our [pricing calculator](https://launchstudio.eu/en/#calculator) or [get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. See our [pricing calculator](https://launchstudio.eu/en/#calculator), [get a free quote today](https://launchstudio.eu/en/#contact), or read about [Manifera's custom software development practice](https://www.manifera.com/services/custom-software-development/).
 
 ## Real example
 
@@ -87,10 +87,6 @@ Peyton partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Result:** Peyton reduced involuntary churn by 22% and automated account adjustments for canceled users.
 
 **Cost & Timeline:** €1,250 (Churn & Portal Package) — production-ready and deployed in 4 business days.
-
----
-
----
 
 ---
 ## Frequently Asked Questions
@@ -114,52 +110,3 @@ Yes. When users try to cancel, ask them why and automatically offer a targeted i
 ### How does LaunchStudio's relationship with Manifera help with churn-focused billing work?
 
 LaunchStudio is the productized, fixed-scope front door to Manifera's engineering teams. When a churn-reduction project needs deeper Stripe webhook logic, dunning automation, or a custom retention data model, LaunchStudio scopes it as a short, fixed-price sprint and draws on the same senior engineers Manifera has used on enterprise billing systems since 2014, rather than handing you off to a generalist agency.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why do AI wrappers have such high churn rates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Many are 'one-and-done' utilities. A user gets the specific output they needed (e.g., a logo or a resume) and cancels because they have no recurring need for the tool, and no accumulated data or workflow dependency giving them a reason to stay."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I embed my tool into a user's workflow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Integrate with software they already use. Build Chrome extensions to work inside their email, or integrations (via Slack's Events API or Zapier) that push data directly into their Slack or Notion workspaces. Track your DAU/MAU ratio to see whether this is actually working."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is 'blank canvas syndrome'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It occurs when users face a blank prompt box, get frustrated because they don't know what to ask, and leave before finding value. Fix this by providing structured forms and dropdown menus that assemble the underlying AI prompt for them."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I use automated cancellation flows?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. When users try to cancel, ask them why and automatically offer a targeted incentive (like a 50% discount) based on their answer. This can save up to 15% of cancellations, and is separate from fixing involuntary churn caused by failed card payments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio's relationship with Manifera help with churn-focused billing work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio is the productized, fixed-scope front door to Manifera's engineering teams. When a churn-reduction project needs deeper Stripe webhook logic, dunning automation, or a custom retention data model, LaunchStudio scopes it as a short, fixed-price sprint and draws on the same senior engineers Manifera has used on enterprise billing systems since 2014, rather than handing you off to a generalist agency."
-      }
-    }
-  ]
-}
-</script>

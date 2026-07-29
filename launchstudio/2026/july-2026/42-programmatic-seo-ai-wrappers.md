@@ -36,7 +36,7 @@ Google is not stupid, and it has gotten considerably better at detecting program
 
 To succeed at pSEO in 2026, the generated pages must provide actual utility beyond the text on the page. For our cover letter example, the page shouldn't just be an SEO trap describing the concept; it should feature the actual AI tool right there on the page, pre-configured with a prompt tailored to that specific profession. If a user searches for "nurse cover letter," lands on the page, and immediately generates a working nurse cover letter without navigating anywhere else, Google's engagement signals (dwell time, bounce rate, return visits) reflect genuine utility, and the page earns its ranking rather than gaming it.
 
-A few additional technical safeguards matter at scale: submit an XML sitemap index (not a single flat sitemap) once you cross a few thousand URLs, since Google recommends splitting sitemaps at 50,000 URLs each; monitor Google Search Console's Coverage report weekly to catch indexing drops early; and add self-referencing canonical tags on every generated page to prevent parameter-based duplicate content from diluting your rankings. Crawl budget is also finite — a brand-new domain with low authority might only get a few hundred pages crawled per day, so launching all 5,000 pages simultaneously without an internal linking structure connecting them (a hub page linking to related job titles, for instance) leaves most of them undiscovered for weeks.
+A few additional technical safeguards matter at scale: submit an XML sitemap index (not a single flat sitemap) once you cross a few thousand URLs, since Google recommends splitting sitemaps at 50,000 URLs each; monitor Google Search Console's Coverage report weekly to catch indexing drops early; and add self-referencing canonical tags on every generated page to prevent parameter-based duplicate content from diluting your rankings. Crawl budget is also finite — a brand-new domain with low authority might only get a few hundred pages crawled per day, so launching all 5,000 pages simultaneously without an internal linking structure connecting them (a hub page linking to related job titles, for instance) leaves most of them undiscovered for weeks. This is the same server-side rendering and crawl-budget discipline Manifera, LaunchStudio's parent company founded in Amsterdam in 2014, applies when scaling enterprise web applications for clients like Vodafone and TNO.
 
 ## Key Takeaways
 
@@ -69,10 +69,6 @@ Elena partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €3,400 (Programmatic SEO Package) — production-ready and deployed in 11 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What is Programmatic SEO (pSEO)?
@@ -94,52 +90,3 @@ Yes, for the template and data layer — ask the AI builder to create a dynamic 
 ### Does LaunchStudio only fix security issues, or does it also handle growth infrastructure like pSEO?
 
 Both. LaunchStudio applies the same production-engineering discipline Manifera has used across 160+ enterprise projects to whatever is blocking your AI-built app from reaching real users — whether that's a security gap, a payment integration, or, as with Elena's directory, a rendering architecture that was silently invisible to Google despite the product itself working perfectly.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Programmatic SEO (pSEO)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is a strategy using a structured database and a code template to automatically generate hundreds or thousands of highly targeted landing pages (e.g., \"CRM for Dentists,\" \"CRM for Plumbers\") that each capture a specific long-tail search query, rather than relying on manually written blog content."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Will Google penalize me for AI-generated content?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you generate thousands of pages that are pure templated text with no unique value, yes — Google's Helpful Content system can deprioritize your entire domain, not just the offending pages. Successful pSEO provides genuine, structured data and interactive utility (ideally your actual product) on every page."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a \"long-tail keyword,\" and why does it matter more than volume?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A specific search phrase (e.g., \"AI resume builder for junior UX designers\") with low individual search volume but very high conversion intent, since the searcher already knows precisely what they want. It's dramatically easier to rank for than a generic keyword, and it converts at a much higher rate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use Lovable, Bolt, or Cursor to build pSEO myself?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for the template and data layer — ask the AI builder to create a dynamic route that fetches rows from a Supabase table, and it will generate that scaffolding in minutes. The part AI builders commonly get wrong is the rendering strategy: many default to client-side rendering, which search engines struggle to index reliably at scale, so that piece often needs a dedicated architecture review."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does LaunchStudio only fix security issues, or does it also handle growth infrastructure like pSEO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both. LaunchStudio applies the same production-engineering discipline Manifera has used across 160+ enterprise projects to whatever is blocking your AI-built app from reaching real users — whether that's a security gap, a payment integration, or, as with Elena's directory, a rendering architecture that was silently invisible to Google despite the product itself working perfectly."
-      }
-    }
-  ]
-}
-</script>

@@ -80,10 +80,6 @@ Skylar partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €6,500 (Enterprise Privacy Package) — production-ready and deployed in 18 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What is PII Scrubbing?
@@ -105,52 +101,3 @@ Deploying an open-source model (like Llama 3 or Mistral) inside a Virtual Privat
 ### How does LaunchStudio's relationship with Manifera help with AI privacy compliance specifically?
 
 LaunchStudio is Manifera's productized offering for AI-native founders, but the privacy and security engineering behind it draws directly on Manifera's decade-plus of enterprise work — including cybersecurity projects built in collaboration with TNO. When LaunchStudio configures your RLS policies or zero-data-retention API setup, it's the same engineering discipline Manifera has applied to enterprise clients like Vodafone since 2014.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is PII Scrubbing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is the process of intercepting user data before it is sent to an LLM and automatically redacting sensitive information (like Social Security Numbers, names, or financial details) using pattern matching and NER models, then re-injecting the real data only on your own server to protect user privacy."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use OpenAI for healthcare (HIPAA) apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, but you must use the enterprise API, sign a Business Associate Agreement (BAA) with the provider, ensure your own database infrastructure is HIPAA compliant, and confirm the specific API tier you're using is covered under that BAA — not every endpoint automatically qualifies."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a new Privacy Policy for an AI app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. You must explicitly state which third-party LLMs process user data, where that data is hosted (data residency matters under GDPR), how long they retain it, and unequivocally state whether or not user data is used for model training."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the safest architecture for data privacy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Deploying an open-source model (like Llama 3 or Mistral) inside a Virtual Private Cloud (VPC) dedicated to your application, served through an engine like vLLM. The data never touches a public, multi-tenant API, providing the strongest available guarantee short of fully on-premise hardware."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio's relationship with Manifera help with AI privacy compliance specifically?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio is Manifera's productized offering for AI-native founders, but the privacy and security engineering behind it draws directly on Manifera's decade-plus of enterprise work — including cybersecurity projects built in collaboration with TNO. When LaunchStudio configures your RLS policies or zero-data-retention API setup, it's the same engineering discipline Manifera has applied to enterprise clients like Vodafone since 2014."
-      }
-    }
-  ]
-}
-</script>

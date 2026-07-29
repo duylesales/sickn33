@@ -87,8 +87,6 @@ Nova werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 **Kosten en tijdlijn:** € 2.900 (pakket voor verwerking van grote bestanden) — gereed voor productie en geïmplementeerd binnen 9 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is multimodale AI?
@@ -110,52 +108,3 @@ Latentie en kostenbeheersing. Het genereren van afbeeldingen en audio kost tijd 
 ### Hoe helpt LaunchStudio een oprichter een multimodale AI-app productieklaar te maken?
 
 LaunchStudio (beheerd door Manifera) neemt een door AI gebouwd prototype en voegt de laag toe die echt verkeer overleeft: idempotente, handtekening-geverifieerde webhookhandlers, duurzame taakwachtrijen met retry-logica, gesegmenteerde uploads voor grote mediabestanden en een server-side kredietsysteem dat limieten atomair afdwingt — zodat de workflow die in een demo werkte, blijft werken wanneer 50 gebruikers er tegelijk gebruik van maken.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is multimodale AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het verwijst naar systemen die meerdere soorten gegevens (tekst, afbeeldingen, audio en video) tegelijkertijd kunnen verwerken en genereren, in plaats van alleen maar tekst."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom raken AI-wrappers met alleen tekst verouderd?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ze kunnen gemakkelijk worden gerepliceerd door concurrenten en native updates voor ChatGPT. Door verschillende modaliteiten aan elkaar te koppelen, ontstaan complexe workflows die zeer verdedigbaar zijn, omdat ze echte orkestratie-engineering vereisen, niet alleen een slimme prompt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe bouw ik een multimodale workflow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gebruik serverloze backend-functies of een duurzame workflow-engine (Temporal, Inngest, LangGraph) om API's te orkestreren. Geef bijvoorbeeld de afbeelding van een gebruiker door aan een Vision API, geef het resultaat door aan een Text API en geef dat door aan een Audio API, waarbij een gecombineerd multimedia-item wordt geretourneerd met herpogingen en idempotentie afgehandeld bij elke stap."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is de grootste technische uitdaging bij multimodale apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Latentie en kostenbeheersing. Het genereren van afbeeldingen en audio kost tijd en geld. U moet asynchrone achtergrondverwerking implementeren om gebruikers betrokken te houden terwijl ze wachten, plus een server-side kredietregister en rate limits zodat een golf van verzoeken uw marges niet kan opblazen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpt LaunchStudio een oprichter een multimodale AI-app productieklaar te maken?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio (beheerd door Manifera) neemt een door AI gebouwd prototype en voegt de laag toe die echt verkeer overleeft: idempotente, handtekening-geverifieerde webhookhandlers, duurzame taakwachtrijen met retry-logica, gesegmenteerde uploads voor grote mediabestanden en een server-side kredietsysteem dat limieten atomair afdwingt — zodat de workflow die in een demo werkte, blijft werken wanneer 50 gebruikers er tegelijk gebruik van maken."
-      }
-    }
-  ]
-}
-</script>

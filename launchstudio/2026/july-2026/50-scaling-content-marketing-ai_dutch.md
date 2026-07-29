@@ -77,7 +77,7 @@ Het schrijven van geweldige inhoud is stap één. Stap twee is ervoor te zorgen 
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten volwassen te maken. Wij hebben elf jaar ervaring in precies dat," aldus Herre Roelevink, oprichter en Managing Director van Manifera.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf, opgericht in **2014** en geleid door oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingscentra in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk hoe het proces werkt op onze [procespagina](https://launchstudio.eu/en/#process) of [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf, opgericht in **2014** en geleid door oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingscentra in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk hoe het proces werkt op onze [procespagina](https://launchstudio.eu/en/#process), [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact), of lees meer over [Manifera's aanpak van maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
@@ -90,8 +90,6 @@ Audrey werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Resultaat:** Audrey verbeterde de SEO-score van Lighthouse naar 99, waardoor het mobiele zoekverkeer in twee weken tijd verdubbelde.
 
 **Kosten en tijdlijn:** € 1.800 (SEO- en Load Tuning-pakket) — klaar voor productie en geïmplementeerd binnen 6 werkdagen.
-
----
 
 ---
 ## Veelgestelde vragen
@@ -115,52 +113,3 @@ Focus op kwaliteit boven volume. Het publiceren van drie grondig onderzochte, zw
 ### Helpt LaunchStudio, als onderdeel van Manifera, ook echt met content, of alleen met de techniek erachter?
 
 LaunchStudio schrijft uw artikelen niet — dat is de taak van de oprichter, aangezien alleen een mens de informatiewinst kan leveren die Google beloont. Wat de engineeringteams van Manifera wel verzorgen, is alles wat bepaalt of die content daadwerkelijk gaat ranken en converteren zodra deze is gepubliceerd: Next.js-prestatie-optimalisatie, Core Web Vitals, sitemap- en crawlconfiguratie, en veilige hosting — dezelfde productielaag die Manifera sinds 2014 bouwt voor zakelijke klanten.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Zal Google mij straffen als ik AI gebruik om mijn blogposts te schrijven?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google bestraft 'dunne inhoud' die geen nieuwe waarde biedt, wat onbewerkte AI-uitvoer vaak wel is, en de straf kan sitebreed gelden zodra er een patroon wordt herkend. Hoogwaardige, AI-ondersteunde inhoud met unieke menselijke inzichten en echte informatiewinst is volkomen veilig."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe zorg ik ervoor dat door AI gegenereerde inhoud menselijk klinkt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gebruik de AI voor structuur, maar injecteer handmatig specifieke anekdotes, eigen ervaring en gegevens uit de echte wereld. Het is van cruciaal belang dat u 'AI-buzzwoorden' zoals 'delve' of 'tapestry' verwijdert die onmiddellijk aangeven dat een bot de tekst heeft geschreven, en dat u elke door het model gegenereerde statistiek controleert."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is informatiewinst in SEO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het verwijst naar de unieke, nieuwe informatie die uw artikel biedt die de topzoekresultaten missen — een concept dat verbonden is met de eigen rankingoctrooien van Google en het bredere E-E-A-T-raamwerk. Omdat AI-modellen bestaande gegevens herkauwen, moet een mens informatiewinst toevoegen (zoals een bedrijfseigen casestudy of expertcitaat) om hoog te scoren."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoeveel artikelen moet ik per week publiceren met behulp van AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Focus op kwaliteit boven volume. Het publiceren van drie grondig onderzochte, zwaar bewerkte, AI-ondersteunde artikelen per week zal veel betere SEO-resultaten opleveren dan het spammen van 50 algemene berichten per dag, zeker omdat Helpful Content-straffen op domeinniveau gelden."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Helpt LaunchStudio, als onderdeel van Manifera, ook echt met content, of alleen met de techniek erachter?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio schrijft uw artikelen niet — dat is de taak van de oprichter, aangezien alleen een mens de informatiewinst kan leveren die Google beloont. Wat de engineeringteams van Manifera wel verzorgen, is alles wat bepaalt of die content daadwerkelijk gaat ranken en converteren zodra deze is gepubliceerd: Next.js-prestatie-optimalisatie, Core Web Vitals, sitemap- en crawlconfiguratie, en veilige hosting — dezelfde productielaag die Manifera sinds 2014 bouwt voor zakelijke klanten."
-      }
-    }
-  ]
-}
-</script>

@@ -105,10 +105,6 @@ Nora partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €1,900 (Solo Launch Package) — production-ready and deployed in 6 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What is the best AI builder for non-technical founders?
@@ -130,52 +126,3 @@ Use Stripe Checkout and the Stripe Customer Portal to handle payments, subscript
 ### Is LaunchStudio a replacement for this stack, or does it work with it?
 
 It works with it. LaunchStudio doesn't ask you to rebuild your Lovable, Bolt, or Cursor frontend — Manifera's engineering team plugs into the exact stack described here (Supabase, Vercel, Stripe) and hardens it: fixing RLS policies, verifying webhooks, securing API keys, and setting up monitoring, so the stack that got you to a demo also gets you safely to paying customers.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best AI builder for non-technical founders?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lovable, Bolt, and v0 are best for non-technical founders due to visual, chat-driven generation. Cursor (or Windsurf and Claude Code) is better suited to founders with some coding knowledge who want a deeply integrated AI IDE and finer control over the codebase."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is React the dominant frontend framework for AI-generated apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI models were trained on massive amounts of public React code, making them significantly more reliable at generating working components compared to newer or less-represented frameworks. This isn't a statement about which framework is technically best — it's a statement about training data density."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I use for a database as a solo founder?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Supabase is the overwhelming default choice. It provides PostgreSQL (including `pgvector` for AI embeddings), built-in Auth, Row Level Security, and auto-generated APIs, eliminating the need to write backend server code — provided RLS policies are actually configured, which AI builders don't always do by default."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I handle payments as a solo founder without a payments engineer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use Stripe Checkout and the Stripe Customer Portal to handle payments, subscriptions, and invoicing without building those complex interfaces yourself. Just make sure your webhook endpoint verifies Stripe's signature — an unverified webhook is one of the most common security gaps in AI-generated billing code."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is LaunchStudio a replacement for this stack, or does it work with it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It works with it. LaunchStudio doesn't ask you to rebuild your Lovable, Bolt, or Cursor frontend — Manifera's engineering team plugs into the exact stack described here (Supabase, Vercel, Stripe) and hardens it: fixing RLS policies, verifying webhooks, securing API keys, and setting up monitoring, so the stack that got you to a demo also gets you safely to paying customers."
-      }
-    }
-  ]
-}
-</script>

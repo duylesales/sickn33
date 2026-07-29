@@ -96,10 +96,6 @@ Dominic partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €3,600 (Vector Integration Package) — production-ready and deployed in 10 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What exactly is a 'thin wrapper'?
@@ -121,52 +117,3 @@ RAG securely searches a company's private vector database and feeds that context
 ### Is Manifera the same company as LaunchStudio, or a separate vendor I'd need to coordinate with?
 
 Manifera is the parent engineering company, founded in 2014, and LaunchStudio is its productized service for AI-native founders. There's no separate vendor to coordinate: when a thick-wrapper project needs deeper RAG architecture or enterprise security work than a fixed-scope LaunchStudio package covers, it's handled by the same Manifera engineering teams, out of the same Amsterdam, Singapore, and Ho Chi Minh City offices, without a handoff to a different company.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What exactly is a 'thin wrapper'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is an app that simply forwards user text to the OpenAI API without adding context or workflow integration. They provide no unique value beyond a basic UI and are easily replaced by ChatGPT or Claude's own native features."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are thin wrappers dying?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because OpenAI and Anthropic constantly release native features (like file uploading and data analysis) that make the wrappers obsolete, roughly every model release cycle. Users won't pay for what they can do natively for free."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I build a 'thick wrapper'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Add layers the native model cannot replicate: integrate with specific business APIs (like Salesforce or Zendesk) via agentic workflows, use RAG to inject private company data, and build team collaboration features like RBAC and SSO."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is RAG and why is it important?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "RAG securely searches a company's private vector database and feeds that context to the AI before it answers. It creates a moat because public models cannot access private corporate data — but it also introduces a security surface (tenant isolation, encrypted storage) that must be engineered correctly, since a meaningful share of AI-generated code ships with exploitable vulnerabilities."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Manifera the same company as LaunchStudio, or a separate vendor I'd need to coordinate with?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Manifera is the parent engineering company, founded in 2014, and LaunchStudio is its productized service for AI-native founders. There's no separate vendor to coordinate: when a thick-wrapper project needs deeper RAG architecture or enterprise security work than a fixed-scope LaunchStudio package covers, it's handled by the same Manifera engineering teams, out of the same Amsterdam, Singapore, and Ho Chi Minh City offices, without a handoff to a different company."
-      }
-    }
-  ]
-}
-</script>

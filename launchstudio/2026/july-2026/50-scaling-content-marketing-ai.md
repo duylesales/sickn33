@@ -77,7 +77,7 @@ Writing great content is step one. Step two is ensuring your blog infrastructure
 
 "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, Founder & Managing Director of Manifera.
 
-LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. See how the process works on our [process page](https://launchstudio.eu/en/#process) or [get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. See how the process works on our [process page](https://launchstudio.eu/en/#process), [get a free quote today](https://launchstudio.eu/en/#contact), or read about [Manifera's custom software development practice](https://www.manifera.com/services/custom-software-development/).
 
 ## Real example
 
@@ -90,10 +90,6 @@ Audrey partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Result:** Audrey improved Lighthouse SEO score to 99, doubling mobile search traffic in 2 weeks.
 
 **Cost & Timeline:** €1,800 (SEO & Load Tuning Package) — production-ready and deployed in 6 business days.
-
----
-
----
 
 ---
 ## Frequently Asked Questions
@@ -117,52 +113,3 @@ Focus on quality over volume. Publishing 3 highly researched, heavily edited, AI
 ### Does LaunchStudio, being part of Manifera, actually help with content or just the tech behind it?
 
 LaunchStudio doesn't write your articles — that's the founder's job, since only a human can supply the Information Gain Google rewards. What Manifera's engineering teams handle is everything that determines whether that content actually ranks and converts once published: Next.js performance tuning, Core Web Vitals, sitemap and crawl configuration, and secure hosting, the same production layer Manifera has built for enterprise clients since 2014.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Will Google penalize me if I use AI to write my blog posts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google penalizes 'thin content' that provides no new value, which unedited AI output often is, and the penalty can apply site-wide once a pattern is detected. High-quality, AI-assisted content that features unique human insights and real Information Gain is perfectly safe."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I make AI-generated content sound human?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use the AI for structure, but manually inject specific anecdotes, first-hand experience, and real-world data. Crucially, edit out 'AI buzzwords' like 'delve' or 'tapestry' that immediately signal a bot wrote the text, and fact-check any statistic the model generated."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Information Gain in SEO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It refers to the unique, new information your article provides that the top search results lack — a concept tied to Google's own ranking patents and its broader E-E-A-T framework. Since AI models regurgitate existing data, a human must add Information Gain (like a proprietary case study or expert quote) to rank highly."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many articles should I publish a week using AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Focus on quality over volume. Publishing 3 highly researched, heavily edited, AI-assisted articles a week will yield much better SEO results than spamming 50 generic posts a day, especially since Helpful Content penalties apply at the domain level."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does LaunchStudio, being part of Manifera, actually help with content or just the tech behind it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio doesn't write your articles — that's the founder's job, since only a human can supply the Information Gain Google rewards. What Manifera's engineering teams handle is everything that determines whether that content actually ranks and converts once published: Next.js performance tuning, Core Web Vitals, sitemap and crawl configuration, and secure hosting, the same production layer Manifera has built for enterprise clients since 2014."
-      }
-    }
-  ]
-}
-</script>

@@ -69,7 +69,7 @@ Oprichters die deze gefaseerde aanpak overslaan en rechtstreeks naar "volledig a
 
 Voor het bouwen van autonome agenten is een kogelvrije backend-infrastructuur nodig om API-fouten, achtergrondtaken en ratelimieten op een elegante manier af te handelen. LaunchStudio ontwerpt de veilige, serverloze backends die uw agenten nodig hebben om betrouwbaar te kunnen werken — de duurzame taakwachtrijen, statusmachines en auditlogboeken die van een broos demo software maken waarvoor u zakelijke klanten daadwerkelijk kunt laten betalen.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in **2014** onder leiding van oprichter en directeur **Herre Roelevink**. Manifera combineert "Nederlands management met Vietnamees meesterschap" en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en Ho Chi Minh City, Vietnam. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk [ons proces](https://launchstudio.eu/en/#process) of [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in **2014** onder leiding van oprichter en directeur **Herre Roelevink**. Manifera combineert "Nederlands management met Vietnamees meesterschap" en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420) en ontwikkelingscentra in **Singapore** en Ho Chi Minh City, Vietnam. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk [ons proces](https://launchstudio.eu/en/#process), [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact), of lees meer over [Manifera's team voor maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
@@ -82,8 +82,6 @@ Ryder werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Resultaat:** Ryder voorkwam dubbele berichtmeldingen volledig, wat zorgde voor stabiele en professionele communicatiestromen die zijn kopers konden vertrouwen.
 
 **Kosten en tijdlijn:** € 3.800 (Agent Safeguards Package) — klaar voor productie en geïmplementeerd binnen 11 werkdagen.
-
----
 
 ---
 ## Veelgestelde vragen
@@ -107,52 +105,3 @@ De industrie verschuift richting agenten. Zakelijke kopers geven steeds vaker de
 ### Hoe bepaalt LaunchStudio of mijn product als copiloot of als volledige agent moet worden verhard?
 
 Het technische team van LaunchStudio, gesteund door Manifera's meer dan elf jaar productie-software-ervaring, controleert de kosten van mislukking van uw specifieke workflow voordat het een architectuur aanbeveelt. Als een fout goedkoop te herstellen is, bouwen we de vangrails voor volledige autonomie; als dat niet zo is, helpen we u eerst een copiloot te lanceren en deze zo in te richten dat hij later veilig kan doorgroeien naar een agent.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is een AI-copiloot?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een AI-copiloot is een assistent die naast een mens werkt. De mens initieert de actie, beoordeelt de suggestie van de AI en neemt de uiteindelijke beslissing — de AI handelt nooit zonder toezicht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is een AI-agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een AI-agent opereert autonoom. Deze krijgt een doel, verdeelt het via een redeneerlus in stappen, roept externe tools en API's aan, en voltooit de hele workflow zonder menselijke tussenkomst totdat hij klaar is of een terugvaltrigger raakt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Welke is gemakkelijker te bouwen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Copiloten zijn veel gemakkelijker omdat de mens fungeert als vangnet voor hallucinaties. Agenten vereisen zeer complexe engineering — statusmachines, retries, ratelimieten, auditlogboeken — om te voorkomen dat onbewaakte fouten zich opstapelen tijdens een meerstapsrun."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Welke is de toekomst van SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "De industrie verschuift richting agenten. Zakelijke kopers geven steeds vaker de voorkeur aan software die het werk volledig voltooit (agenten) boven software die medewerkers alleen maar sneller maakt (copiloten), omdat agenten worden geprijsd en gerechtvaardigd als arbeidsvervanging, niet als een leuke extra voor de productiviteit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe bepaalt LaunchStudio of mijn product als copiloot of als volledige agent moet worden verhard?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het technische team van LaunchStudio, gesteund door Manifera's meer dan elf jaar productie-software-ervaring, controleert de kosten van mislukking van uw specifieke workflow voordat het een architectuur aanbeveelt. Als een fout goedkoop te herstellen is, bouwen we de vangrails voor volledige autonomie; als dat niet zo is, helpen we u eerst een copiloot te lanceren en deze zo in te richten dat hij later veilig kan doorgroeien naar een agent."
-      }
-    }
-  ]
-}
-</script>

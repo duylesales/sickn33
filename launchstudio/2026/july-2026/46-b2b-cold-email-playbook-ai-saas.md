@@ -80,7 +80,7 @@ Cold email doesn't end at the reply — it ends at the signed contract, and ente
 
 While you optimize your cold outreach engine, LaunchStudio ensures your backend infrastructure is secure and ready for enterprise clients to log in — before a prospect's security team asks the question that stalls your deal. This is precisely the gap Manifera, LaunchStudio's parent company founded in 2014, has spent eleven years closing for enterprise clients like Vodafone and TNO. As Herre Roelevink, Founder & Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Given that 45% of AI-generated codebases carry at least one exploitable security issue, getting this right before your first enterprise demo is not optional polish — it's the difference between closing the deal and losing it in due diligence.
 
-LaunchStudio is operated by **Manifera**, an international software engineering company headquartered in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ), with development hubs in **Singapore** and **Ho Chi Minh City, Vietnam**. Combining "Dutch management with Vietnamese mastery," our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks — for roughly 20% of what a traditional dev agency would charge. See how our process works via [LaunchStudio's process page](https://launchstudio.eu/en/#process), or explore [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/), or [get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and headquartered in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ), with development hubs in **Singapore** and **Ho Chi Minh City, Vietnam**. Combining "Dutch management with Vietnamese mastery," our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks — for roughly 20% of what a traditional dev agency would charge. See how our process works via [LaunchStudio's process page](https://launchstudio.eu/en/#process), or explore [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/), or [get a free quote today](https://launchstudio.eu/en/#contact).
 
 ## Real example
 
@@ -93,10 +93,6 @@ Maya partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Result:** Maya launched her sales pipeline safely, securing data imports without exposing backend systems to threats.
 
 **Cost & Timeline:** €1,700 (Secure Uploads Package) — production-ready and deployed in 6 business days.
-
----
-
----
 
 ---
 ## Frequently Asked Questions
@@ -120,52 +116,3 @@ No. Links in initial cold emails trigger spam filters. Aim for a text reply firs
 ### If my cold email campaign lands an enterprise demo, will my AI-built backend hold up to their security review?
 
 Not automatically. Enterprise prospects routinely ask about data handling, encryption, and compliance once a demo goes well, and 45% of AI-generated codebases carry at least one exploitable security gap that a real due-diligence review will find. LaunchStudio, backed by Manifera's eleven years of enterprise engineering experience, hardens exactly these gaps — authentication, database policies, encrypted storage — before your outreach starts converting into serious conversations.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why is my cold email open rate so low?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You are likely landing in spam. This happens if you haven't warmed up your domain, lack DMARC/DKIM records, use spam-trigger words, include too many links, or are sending too high a volume from a single mailbox."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can AI improve cold outreach?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI can scrape a prospect's LinkedIn, company news, and job postings to generate a hyper-personalized opening line, proving you did your research without requiring manual writing for every single prospect — but always spot-check a sample before sending to catch hallucinated details."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the ideal length for a B2B cold email?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Under 75 words. State who you are, identify a specific problem, present your AI solution, and end with a low-friction question rather than an open-ended ask."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I include a link to my app in the first email?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Links in initial cold emails trigger spam filters. Aim for a text reply first. Once they reply, you are marked safe to send links, Loom demos, and calendar invites."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "If my cold email campaign lands an enterprise demo, will my AI-built backend hold up to their security review?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not automatically. Enterprise prospects routinely ask about data handling, encryption, and compliance once a demo goes well, and 45% of AI-generated codebases carry at least one exploitable security gap that a real due-diligence review will find. LaunchStudio, backed by Manifera's eleven years of enterprise engineering experience, hardens exactly these gaps — authentication, database policies, encrypted storage — before your outreach starts converting into serious conversations."
-      }
-    }
-  ]
-}
-</script>

@@ -46,7 +46,7 @@ When launch day arrives, you do not launch to Twitter/X first; you launch via a 
 
 Most successful indie launches stack two audiences on the same day: the warmed-up Twitter/X following you built over months, and a coordinated Product Hunt launch. Schedule your Product Hunt submission for a Tuesday-Thursday (weekend traffic is measurably lower), and in the hours after it goes live, post the link to your Twitter/X audience asking for genuine feedback and upvotes — not a generic "please upvote," which Product Hunt's community can smell and penalize, but a specific ask tied to the story you've already been telling them. The two channels reinforce each other: Product Hunt traffic that finds an active, personable Twitter/X account behind the product converts better, and Twitter/X posts linking to a trending Product Hunt page borrow that platform's momentum and social proof.
 
-This is also precisely the moment your infrastructure gets tested hardest, and it's where a lot of otherwise well-marketed launches quietly fail. A spike of a few hundred simultaneous signups is exactly the kind of load that exposes a missing email verification flow, an unindexed database query that was fine at ten users and grinds to a halt at three hundred, or a signup trigger that silently fails under concurrent writes. Roughly 80% of AI-built projects never reach a stable production state, and a poorly timed infrastructure failure on your one guaranteed traffic spike of the year is one of the more painful, avoidable ways that happens — the audience showed up; the product wasn't ready to receive them.
+This is also precisely the moment your infrastructure gets tested hardest, and it's where a lot of otherwise well-marketed launches quietly fail. A spike of a few hundred simultaneous signups is exactly the kind of load that exposes a missing email verification flow, an unindexed database query that was fine at ten users and grinds to a halt at three hundred, or a signup trigger that silently fails under concurrent writes. Roughly 80% of AI-built projects never reach a stable production state, and a poorly timed infrastructure failure on your one guaranteed traffic spike of the year is one of the more painful, avoidable ways that happens — the audience showed up; the product wasn't ready to receive them. It's the exact failure mode Manifera, LaunchStudio's parent company founded in 2014, has spent over a decade helping enterprise clients like Vodafone avoid at far larger scale.
 
 ## Key Takeaways
 
@@ -79,10 +79,6 @@ Wyatt partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,350 (Launch Readiness Package) — production-ready and deployed in 5 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What exactly does "Building in Public" mean?
@@ -104,52 +100,3 @@ Share the process. Post screenshots of your AI generating UI, videos of bugs you
 ### If LaunchStudio is Manifera's product, why would a solo indie hacker need an 11-year enterprise engineering firm?
 
 Because the gap between "3,000 people on a waitlist" and "3,000 people who can actually sign up" is exactly the kind of production engineering Manifera has handled for 160+ clients, including Vodafone and TNO, just compressed into a fixed-scope, days-not-months engagement. You don't need an enterprise budget to get enterprise-grade reliability for the one day your audience actually shows up.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What exactly does \"Building in Public\" mean?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It means openly sharing the behind-the-scenes journey of creating your startup on social media, including revenue numbers, technical challenges, and failures, to build an emotionally invested audience before you ever ask them to pay you."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Won't someone steal my idea if I share it before launching?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ideas are cheap; execution is everything, especially now that AI tools let anyone build a working prototype in a weekend. A copycat cannot steal the audience you are building or the direct user feedback you are gathering. Hiding guarantees you launch to an audience of zero. Just keep genuinely sensitive infrastructure details — API keys, database schemas, admin routes — out of your screenshots."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "I don't have any followers. Will this still work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, but you must network deliberately. Engage with other founders, leave thoughtful comments on larger accounts in your niche, and use hashtags like #buildinpublic to help other builders find you. Most founders post for 3-6 months of consistent effort before their first post meaningfully breaks out."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I post if the product isn't finished yet?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Share the process. Post screenshots of your AI generating UI, videos of bugs you are fixing, or ask the audience to vote on pricing tiers. Authentic process is more engaging than polished marketing, and it's genuinely useful market research at the same time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "If LaunchStudio is Manifera's product, why would a solo indie hacker need an 11-year enterprise engineering firm?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because the gap between \"3,000 people on a waitlist\" and \"3,000 people who can actually sign up\" is exactly the kind of production engineering Manifera has handled for 160+ clients, including Vodafone and TNO, just compressed into a fixed-scope, days-not-months engagement. You don't need an enterprise budget to get enterprise-grade reliability for the one day your audience actually shows up."
-      }
-    }
-  ]
-}
-</script>

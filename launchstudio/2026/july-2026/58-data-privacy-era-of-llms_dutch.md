@@ -80,8 +80,6 @@ Skylar werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Kosten en tijdlijn:** € 6.500 (Enterprise Privacy Package) — klaar voor productie en geïmplementeerd binnen 18 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is PII-scrubben?
@@ -103,52 +101,3 @@ Implementatie van een open-sourcemodel (zoals Llama 3 of Mistral) in een Virtual
 ### Hoe helpt de relatie tussen LaunchStudio en Manifera specifiek bij AI-privacycompliance?
 
 LaunchStudio is Manifera's geproductiseerde aanbod voor AI-native oprichters, maar de privacy- en beveiligingstechniek erachter bouwt rechtstreeks voort op Manifera's ruim tien jaar zakelijke ervaring — inclusief cybersecurityprojecten die in samenwerking met TNO zijn gebouwd. Wanneer LaunchStudio uw RLS-beleid of zero-data-retention-API-configuratie instelt, is dat dezelfde technische discipline die Manifera sinds 2014 toepast bij zakelijke klanten zoals Vodafone.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is PII-scrubben?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het is het proces waarbij gebruikersgegevens worden onderschept voordat deze naar een LLM worden verzonden, waarbij gevoelige informatie (zoals burgerservicenummers, namen of financiële gegevens) automatisch wordt geredigeerd met behulp van patroonherkenning en NER-modellen, en pas op uw eigen server weer wordt geïnjecteerd om de privacy van gebruikers te beschermen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kan ik OpenAI voor de gezondheidszorg (HIPAA)-apps gebruiken?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, maar u moet de bedrijfs-API gebruiken, een Business Associate Agreement (BAA) met de aanbieder ondertekenen, ervoor zorgen dat uw eigen database-infrastructuur HIPAA-compatibel is, en bevestigen dat het specifieke API-niveau dat u gebruikt onder die BAA valt — niet elk eindpunt komt automatisch in aanmerking."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Heb ik een nieuw privacybeleid nodig voor een AI-app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absoluut. U moet expliciet vermelden welke LLM's van derden gebruikersgegevens verwerken, waar die gegevens worden gehost (gegevenslocatie is van belang onder de AVG), hoe lang zij deze bewaren, en ondubbelzinnig vermelden of gebruikersgegevens al dan niet worden gebruikt voor modeltraining."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is de veiligste architectuur voor gegevensprivacy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Implementatie van een open-sourcemodel (zoals Llama 3 of Mistral) in een Virtual Private Cloud (VPC) die speciaal voor uw toepassing is bedoeld, aangeboden via een engine zoals vLLM. De gegevens komen nooit in aanraking met een openbare, multi-tenant API, wat de sterkste beschikbare garantie biedt, op volledig on-premise hardware na."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpt de relatie tussen LaunchStudio en Manifera specifiek bij AI-privacycompliance?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio is Manifera's geproductiseerde aanbod voor AI-native oprichters, maar de privacy- en beveiligingstechniek erachter bouwt rechtstreeks voort op Manifera's ruim tien jaar zakelijke ervaring — inclusief cybersecurityprojecten die in samenwerking met TNO zijn gebouwd. Wanneer LaunchStudio uw RLS-beleid of zero-data-retention-API-configuratie instelt, is dat dezelfde technische discipline die Manifera sinds 2014 toepast bij zakelijke klanten zoals Vodafone."
-      }
-    }
-  ]
-}
-</script>

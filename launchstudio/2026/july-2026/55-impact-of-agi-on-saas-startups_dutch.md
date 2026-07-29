@@ -80,8 +80,6 @@ Greyson werkte samen met **LaunchStudio (door Manifera)** om het product lanceri
 **Kosten en tijdlijn:** € 2.200 (toekomstbestendig pakket) — klaar voor productie en geïmplementeerd binnen 7 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is kunstmatige algemene intelligentie (AGI)?
@@ -103,52 +101,3 @@ Bouw slotgrachten in de fysieke wereld (hardware, robotica, sensoren) of verzeke
 ### Hoe helpt LaunchStudio een SaaS-oprichter zich voor te bereiden op een door AGI verstoorde toekomst?
 
 LaunchStudio (beheerd door Manifera) bouwt uw productiebackend met model-agnostische abstractielagen in plaats van hardgecodeerde aanroepen naar één AI-leverancier, zodat wanneer de onderliggende modellen veranderen — of wanneer u moet overstappen van het verkopen van software naar het verkopen van resultaten — uw infrastructuur geen volledige herbouw afdwingt.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is kunstmatige algemene intelligentie (AGI)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AGI is een theoretische vorm van AI die kennis in elk domein kan begrijpen, leren en toepassen op een niveau dat gelijk is aan of beter dan dat van een mens, en die in staat is tot autonoom redeneren."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe zal AGI traditionele SaaS vernietigen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In plaats van generieke software zoals een CRM te huren, zal een bedrijf een AGI opdracht geven om onmiddellijk en gratis een aangepaste CRM te bouwen, implementeren en onderhouden die perfect is afgestemd op hun specifieke behoeften. Dit begint bij de meest sjabloonmatige, generieke SaaS-categorieën en breidt zich vandaaruit verder uit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is 'Services as Software'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In plaats van een tool te verkopen die een gebruiker helpt een taak uit te voeren, gebruikt u AGI om de taak volledig autonoom uit te voeren, en brengt u de klant kosten in rekening voor het uiteindelijke resultaat — waardoor uw kostenstructuur verandert van bijna nul marginale kosten naar een reële, bewaakte kost per transactie."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe kan een startup zich verdedigen tegen AGI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bouw slotgrachten in de fysieke wereld (hardware, robotica, sensoren) of verzeker daadwerkelijk exclusieve wettelijke rechten op bedrijfseigen gegevens waartoe de AGI geen toegang heeft — niet alleen gegevens die vandaag toevallig moeilijk te vinden zijn."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpt LaunchStudio een SaaS-oprichter zich voor te bereiden op een door AGI verstoorde toekomst?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio (beheerd door Manifera) bouwt uw productiebackend met model-agnostische abstractielagen in plaats van hardgecodeerde aanroepen naar één AI-leverancier, zodat wanneer de onderliggende modellen veranderen — of wanneer u moet overstappen van het verkopen van software naar het verkopen van resultaten — uw infrastructuur geen volledige herbouw afdwingt."
-      }
-    }
-  ]
-}
-</script>

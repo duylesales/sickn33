@@ -101,10 +101,6 @@ Jackson partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €3,500 (Enterprise Hardening Package) — production-ready and deployed in 12 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### Why is bootstrapping more viable now than 5 years ago?
@@ -126,52 +122,3 @@ Yes, and it is highly recommended. Bootstrapping to $10k MRR proves product-mark
 ### Does using a service like LaunchStudio instead of a technical co-founder affect how investors view my startup?
 
 If anything, it helps. Investors are wary of solo AI-native founders whose entire stack was AI-generated and never security-reviewed — that's exactly what technical due diligence is designed to catch. Because LaunchStudio is backed by Manifera, an 11-year enterprise engineering firm with clients like Vodafone and TNO, you can point investors to a real production-hardening track record rather than asking them to take your word for it.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why is bootstrapping more viable now than 5 years ago?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because the upfront cost of building software has plummeted. AI tools build the MVP for the cost of a $20/month subscription, and fixed-price services like LaunchStudio secure it for a few thousand euros, replacing the need for €50k-€150k engineering teams."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When does it actually make sense to raise VC funding?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you are in a \"winner-takes-all\" market requiring massive scale, or if you have heavy R&D/compute costs (like training foundational AI models) that cannot be bootstrapped. It also makes sense once you need an enterprise sales team that costs more than your revenue can currently support."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the downside of raising Venture Capital?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You sell control and agree to pursue a massive exit. A €10M acquisition that would make a bootstrapped founder rich is often viewed as a failure by a VC firm, and liquidation preferences mean you may walk away with less than you expect even in a decent exit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I bootstrap first and raise VC later?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, and it is highly recommended. Bootstrapping to $10k MRR proves product-market fit. If you raise money then, you do so with minimal risk and maximum leverage, and a technically hardened product speeds up due diligence considerably."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does using a service like LaunchStudio instead of a technical co-founder affect how investors view my startup?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If anything, it helps. Investors are wary of solo AI-native founders whose entire stack was AI-generated and never security-reviewed — that's exactly what technical due diligence is designed to catch. Because LaunchStudio is backed by Manifera, an 11-year enterprise engineering firm with clients like Vodafone and TNO, you can point investors to a real production-hardening track record rather than asking them to take your word for it."
-      }
-    }
-  ]
-}
-</script>

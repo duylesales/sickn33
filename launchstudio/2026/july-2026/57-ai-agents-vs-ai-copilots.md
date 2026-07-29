@@ -69,7 +69,7 @@ Founders who skip this staged approach and ship straight to "fully autonomous" w
 
 Building autonomous agents requires bulletproof backend infrastructure to handle API failures, background jobs, and rate limits gracefully. LaunchStudio architects the secure, serverless backends your agents need to run reliably — the durable job queues, state machines, and audit trails that turn a fragile demo into software you can actually charge enterprise customers for.
 
-LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420) and development hubs in **Singapore** and Ho Chi Minh City, Vietnam. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. See [our process](https://launchstudio.eu/en/#process) or [get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420) and development hubs in **Singapore** and Ho Chi Minh City, Vietnam. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. See [our process](https://launchstudio.eu/en/#process), [get a free quote today](https://launchstudio.eu/en/#contact), or read about [Manifera's custom software development team](https://www.manifera.com/services/custom-software-development/).
 
 ## Real example
 
@@ -82,10 +82,6 @@ Ryder partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Result:** Ryder prevented duplicate message notifications entirely, ensuring stable and professional communication flows his buyers could trust.
 
 **Cost & Timeline:** €3,800 (Agent Safeguards Package) — production-ready and deployed in 11 business days.
-
----
-
----
 
 ---
 ## Frequently Asked Questions
@@ -109,52 +105,3 @@ The industry is shifting toward Agents. Enterprise buyers increasingly prefer so
 ### How does LaunchStudio decide whether to harden my product as a Copilot or a full Agent?
 
 LaunchStudio's engineering team, backed by Manifera's eleven-plus years of production software experience, audits your specific workflow's cost of failure before recommending an architecture. If a mistake is cheap to undo, we build the safeguards for full autonomy; if it isn't, we help you ship a Copilot first and instrument it to safely graduate to an Agent later.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is an AI Copilot?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An AI Copilot is an assistant that works alongside a human. The human initiates the action, reviews the AI's suggestion, and makes the final decision — the AI never acts unsupervised."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is an AI Agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An AI Agent operates autonomously. It is given a goal, breaks it into steps using a reasoning loop, calls external tools and APIs, and completes the entire workflow without human intervention until it either finishes or hits a fallback trigger."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which one is easier to build?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Copilots are much easier because the human acts as the safety net for hallucinations. Agents require highly complex engineering — state machines, retries, rate limiting, audit logging — to prevent unattended errors from compounding across a multi-step run."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which one is the future of SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The industry is shifting toward Agents. Enterprise buyers increasingly prefer software that completes the work entirely (Agents) rather than software that just makes employees faster (Copilots), because Agents are priced and justified as labor replacement, not a productivity nice-to-have."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio decide whether to harden my product as a Copilot or a full Agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio's engineering team, backed by Manifera's eleven-plus years of production software experience, audits your specific workflow's cost of failure before recommending an architecture. If a mistake is cheap to undo, we build the safeguards for full autonomy; if it isn't, we help you ship a Copilot first and instrument it to safely graduate to an Agent later."
-      }
-    }
-  ]
-}
-</script>

@@ -67,7 +67,7 @@ You must protect your endpoints from malicious bots and overly enthusiastic powe
 
 - **Usage-Based Pricing as a Structural Fix**: For some products, the real fix isn't just capping usage—it's redesigning the pricing model itself. If your AI feature has genuinely variable, hard-to-predict cost per use, consider metered billing (via Stripe's usage-based pricing) that passes a marked-up version of the API cost directly to the customer, rather than trying to guess the right flat-fee tier in advance.
 
-This same discipline—engineering security and cost boundaries directly into the backend rather than trusting the frontend—is exactly what separates a weekend AI prototype from a product ready for paying customers. It's also connected to a wider pattern: alongside runaway API costs, roughly 45% of AI-generated code ships with exploitable security vulnerabilities, because AI builders optimize for a working demo, not a hardened, cost-controlled production system.
+This same discipline—engineering security and cost boundaries directly into the backend rather than trusting the frontend—is exactly what separates a weekend AI prototype from a product ready for paying customers. It's also connected to a wider pattern: alongside runaway API costs, roughly 45% of AI-generated code ships with exploitable security vulnerabilities, because AI builders optimize for a working demo, not a hardened, cost-controlled production system. It's the kind of gap Manifera's engineers—operating out of Amsterdam, Netherlands since the company's founding in 2014—have spent over a decade closing for clients who can't afford to discover it in production.
 
 ## Key Takeaways
 
@@ -85,7 +85,7 @@ This same discipline—engineering security and cost boundaries directly into th
 
 Is your API bill out of control? LaunchStudio implements model routing, semantic caching, and secure rate limiting to ensure your AI startup remains profitable at scale, typically at around 20% of what a traditional development agency would charge for the same hardening work.
 
-As **Herre Roelevink, Founder & Managing Director of Manifera**, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Roelevink. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and cost-aware API architecture, transforming your prototype into a secure, margin-protected MVP in 1 to 3 weeks. [Get a free quote today](https://launchstudio.eu/en/#contact) or [see how our pricing calculator estimates your project](https://launchstudio.eu/en/#calculator).
+As **Herre Roelevink, Founder & Managing Director of Manifera**, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Roelevink. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and cost-aware API architecture, transforming your prototype into a secure, margin-protected MVP in 1 to 3 weeks. [Get a free quote today](https://launchstudio.eu/en/#contact), [see how our pricing calculator estimates your project](https://launchstudio.eu/en/#calculator), or read more about [Manifera's custom software development practice](https://www.manifera.com/services/custom-software-development/).
 
 ## Real example
 
@@ -98,10 +98,6 @@ Leo partnered with **LaunchStudio (by Manifera)** to make the product launch-rea
 **Result:** Leo cut monthly OpenAI billing by 35% and stabilized UI responsiveness.
 
 **Cost & Timeline:** €1,100 (API Optimization Package) — production-ready and deployed in 4 business days.
-
----
-
----
 
 ---
 ## Frequently Asked Questions
@@ -125,52 +121,3 @@ Smaller models (like GPT-4o-mini or open-weight models on Groq) are exponentiall
 ### Is margin optimization something LaunchStudio handles, or only Manifera's larger enterprise clients?
 
 Both. LaunchStudio applies the same cost-engineering discipline Manifera has used across 160+ enterprise projects—for clients like Vodafone and TNO—to fixed-scope AI wrapper projects starting at €800, so early-stage founders get enterprise-grade token economics without an enterprise budget or timeline.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the 'OpenAI API Trap'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It's when a startup acquires users rapidly, but their underlying API costs scale faster than their revenue (often due to unoptimized prompts, missing caching, or unlimited tiers), leading to negative margins and even bankruptcy despite growth."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do system prompts affect my API bill?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You pay for both input and output tokens, and output tokens typically cost several times more than input tokens. If your system prompt is massive, you pay for that massive text block every single time any user makes a request—and if the model's response is verbose, that costs even more."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is semantic caching, and how is it different from a normal cache?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A normal cache only matches identical text. Semantic caching embeds each prompt into a vector and compares it against previously cached prompts by meaning, so two differently worded but equivalent questions can both be served the same cached answer for free instead of calling the expensive API again."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why should I use smaller models instead of GPT-4 for everything?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Smaller models (like GPT-4o-mini or open-weight models on Groq) are exponentially cheaper per token. Routing simple, high-volume tasks to them—while reserving flagship models for genuinely complex reasoning—can cut your total API bill by up to 90% without users noticing a quality drop."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is margin optimization something LaunchStudio handles, or only Manifera's larger enterprise clients?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both. LaunchStudio applies the same cost-engineering discipline Manifera has used across 160+ enterprise projects—for clients like Vodafone and TNO—to fixed-scope AI wrapper projects starting at €800, so early-stage founders get enterprise-grade token economics without an enterprise budget or timeline."
-      }
-    }
-  ]
-}
-</script>

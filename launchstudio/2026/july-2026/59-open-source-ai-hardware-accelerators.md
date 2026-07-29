@@ -78,10 +78,6 @@ Lincoln partnered with **LaunchStudio (by Manifera)** to make the product launch
 **Cost & Timeline:** €4,400 (GPU Optimization Package) — production-ready and deployed in 12 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### Why do AI startups rely so heavily on Nvidia?
@@ -103,52 +99,3 @@ Yes, for moderate-traffic inference workloads. Apple's Unified Memory allows mas
 ### How does LaunchStudio help founders lower their AI infrastructure costs specifically?
 
 LaunchStudio's engineering team, backed by Manifera's production infrastructure experience since 2014, audits your current inference pipeline and re-architects it around quantized models and cheaper alternative hardware where it makes sense, the same way it did for Lincoln's transcription workload — often cutting recurring compute spend by well over half without touching the product experience.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why do AI startups rely so heavily on Nvidia?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nvidia dominates because of CUDA, their proprietary software layer. Most AI frameworks were built to run exclusively on CUDA, locking the industry into buying Nvidia hardware even when cheaper alternatives exist on paper."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is an AI Accelerator chip?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A specialized microchip designed specifically for the mathematical operations of neural networks, such as Groq's LPU or Google's TPU. Unlike a general-purpose GPU, it is purpose-built for AI workloads, making it exponentially faster and more power-efficient for that narrow task."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is model quantization?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A software technique that shrinks an AI model's file size by roughly 70-75% by compressing its data precision from 16-bit or 32-bit floats down to 8-bit or 4-bit integers. This allows massive models to run on cheap hardware instead of requiring enterprise GPUs, with only a small, measurable accuracy trade-off."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Will Apple Silicon (Mac Studios) be used for AI servers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for moderate-traffic inference workloads. Apple's Unified Memory allows massive models to run entirely in RAM on a Mac Studio, creating a cheap, highly effective local server for teams prioritizing privacy and fixed cost, though it isn't the right choice for high-concurrency or training workloads."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio help founders lower their AI infrastructure costs specifically?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio's engineering team, backed by Manifera's production infrastructure experience since 2014, audits your current inference pipeline and re-architects it around quantized models and cheaper alternative hardware where it makes sense, the same way it did for Lincoln's transcription workload — often cutting recurring compute spend by well over half without touching the product experience."
-      }
-    }
-  ]
-}
-</script>

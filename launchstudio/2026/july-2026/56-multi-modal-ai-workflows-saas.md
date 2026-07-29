@@ -86,10 +86,6 @@ Nova partnered with **LaunchStudio (by Manifera)** to make the product launch-re
 **Cost & Timeline:** €2,900 (Large File Processing Package) — production-ready and deployed in 9 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What is multi-modal AI?
@@ -111,52 +107,3 @@ Latency and cost control. Generating images and audio takes time and money. You 
 ### How does LaunchStudio help a founder harden a multi-modal AI app for production?
 
 LaunchStudio (operated by Manifera) takes an AI-built prototype and adds the layer that survives real traffic: idempotent, signature-verified webhook handlers, durable job queues with retry logic, chunked file uploads for large media, and a server-side credit system that enforces limits atomically—so the workflow that worked in a demo keeps working when 50 users hit it at once.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is multi-modal AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It refers to systems that can process and generate multiple types of data—text, images, audio, and video—simultaneously, rather than just text."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are text-only AI wrappers becoming obsolete?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "They are easily replicated by competitors and native updates to ChatGPT. Chaining different modalities together creates complex workflows that are highly defensible because they require real orchestration engineering, not just a clever prompt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I build a multi-modal workflow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use backend serverless functions or a durable workflow engine (Temporal, Inngest, LangGraph) to orchestrate APIs. For example, pass a user's image to a Vision API, pass the result to a Text API, and pass that to an Audio API, returning a combined multimedia asset with retries and idempotency handled at every step."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the biggest technical challenge with multi-modal apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Latency and cost control. Generating images and audio takes time and money. You must implement asynchronous background processing to keep users engaged while they wait, plus a server-side credit ledger and rate limits so a burst of requests can't blow through your margins."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio help a founder harden a multi-modal AI app for production?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio (operated by Manifera) takes an AI-built prototype and adds the layer that survives real traffic: idempotent, signature-verified webhook handlers, durable job queues with retry logic, chunked file uploads for large media, and a server-side credit system that enforces limits atomically—so the workflow that worked in a demo keeps working when 50 users hit it at once."
-      }
-    }
-  ]
-}
-</script>

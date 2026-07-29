@@ -96,8 +96,6 @@ Dominic werkte samen met **LaunchStudio (door Manifera)** om het product lanceri
 **Kosten en tijdlijn:** € 3.600 (Vector-integratiepakket) — klaar voor productie en geïmplementeerd binnen 10 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is precies een 'dunne wrapper'?
@@ -119,52 +117,3 @@ RAG doorzoekt veilig de privé-vectordatabase van een bedrijf en stuurt die cont
 ### Is Manifera hetzelfde bedrijf als LaunchStudio, of een aparte leverancier waarmee ik moet afstemmen?
 
 Manifera is het moederbedrijf op het gebied van engineering, opgericht in 2014, en LaunchStudio is de geproductiseerde dienst daarvan voor AI-native oprichters. Er is geen aparte leverancier om mee af te stemmen: wanneer een thick-wrapper-project meer diepgaande RAG-architectuur of beveiligingswerk op bedrijfsniveau vereist dan een LaunchStudio-pakket met vaste scope dekt, wordt dit afgehandeld door dezelfde engineeringteams van Manifera, vanuit dezelfde kantoren in Amsterdam, Singapore en Ho Chi Minh City, zonder overdracht naar een ander bedrijf.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is precies een 'dunne wrapper'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het is een app die gebruikerstekst eenvoudig doorstuurt naar de OpenAI API zonder context of workflow-integratie toe te voegen. Ze bieden geen unieke waarde buiten een basisgebruikersinterface en kunnen eenvoudig worden vervangen door de eigen native functies van ChatGPT of Claude."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom sterven dunne wrappers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Omdat OpenAI en Anthropic voortdurend native functies vrijgeven (zoals het uploaden van bestanden en gegevensanalyse) die de wrappers overbodig maken, ongeveer bij elke releasecyclus van een model. Gebruikers betalen niet voor wat ze gratis native kunnen doen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe bouw ik een 'dikke wrapper'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Voeg lagen toe die het native model niet kan repliceren: integreer met specifieke zakelijke API's (zoals Salesforce of Zendesk) via agentic workflows, gebruik RAG om gegevens van privébedrijven te injecteren, en bouw functies voor teamsamenwerking zoals RBAC en SSO."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is RAG en waarom is het belangrijk?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "RAG doorzoekt veilig de privé-vectordatabase van een bedrijf en stuurt die context door naar de AI voordat deze antwoordt. Het creëert een gracht omdat publieke modellen geen toegang hebben tot particuliere bedrijfsgegevens — maar het introduceert ook een beveiligingsrisico (tenant-isolatie, versleutelde opslag) dat correct moet worden ontworpen, aangezien een aanzienlijk deel van de door AI gegenereerde code exploiteerbare kwetsbaarheden bevat."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Manifera hetzelfde bedrijf als LaunchStudio, of een aparte leverancier waarmee ik moet afstemmen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Manifera is het moederbedrijf op het gebied van engineering, opgericht in 2014, en LaunchStudio is de geproductiseerde dienst daarvan voor AI-native oprichters. Er is geen aparte leverancier om mee af te stemmen: wanneer een thick-wrapper-project meer diepgaande RAG-architectuur of beveiligingswerk op bedrijfsniveau vereist dan een LaunchStudio-pakket met vaste scope dekt, wordt dit afgehandeld door dezelfde engineeringteams van Manifera, vanuit dezelfde kantoren in Amsterdam, Singapore en Ho Chi Minh City, zonder overdracht naar een ander bedrijf."
-      }
-    }
-  ]
-}
-</script>

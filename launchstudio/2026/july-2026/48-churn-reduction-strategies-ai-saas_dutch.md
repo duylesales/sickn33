@@ -74,7 +74,7 @@ LaunchStudio configureert veilige Stripe-klantportals, dunning-reeksen en geauto
 
 "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten volwassen te maken. Wij hebben elf jaar ervaring in precies dat," aldus Herre Roelevink, oprichter en Managing Director van Manifera.
 
-LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf, opgericht in **2014** en geleid door oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingscentra in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk onze [prijscalculator](https://launchstudio.eu/en/#calculator) of [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+LaunchStudio wordt beheerd door **Manifera**, een internationaal software-engineeringbedrijf, opgericht in **2014** en geleid door oprichter en directeur **Herre Roelevink**. Manifera combineert 'Nederlands management met Vietnamees meesterschap' en heeft het hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingscentra in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**. Via LaunchStudio implementeren onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en monitoring, waardoor uw prototype binnen 1 tot 3 weken wordt getransformeerd in een veilige en compatibele MVP. Bekijk onze [prijscalculator](https://launchstudio.eu/en/#calculator), [ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact), of lees meer over [Manifera's aanpak van maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
@@ -87,8 +87,6 @@ Peyton werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Resultaat:** Peyton verminderde het onvrijwillige klantverloop met 22% en automatiseerde accountaanpassingen voor geannuleerde gebruikers.
 
 **Kosten en tijdlijn:** € 1.250 (Churn & Portal-pakket) — productieklaar en binnen 4 werkdagen geïmplementeerd.
-
----
 
 ---
 ## Veelgestelde vragen
@@ -112,52 +110,3 @@ Ja. Wanneer gebruikers proberen te annuleren, vraag hen dan waarom en bied autom
 ### Hoe helpt de relatie tussen LaunchStudio en Manifera bij churn-gericht factureringswerk?
 
 LaunchStudio is de geproductiseerde voordeur met vaste scope naar de engineeringteams van Manifera. Wanneer een churn-reductieproject diepere Stripe-webhooklogica, dunning-automatisering of een aangepast retentie-datamodel nodig heeft, scoped LaunchStudio dit als een korte sprint met een vaste prijs, en put daarbij uit dezelfde senior engineers die Manifera sinds 2014 heeft ingezet op factureringssystemen voor bedrijven, in plaats van u door te verwijzen naar een generalistisch bureau.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom hebben AI-wrappers zulke hoge churn-percentages?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Velen zijn 'one-and-done'-hulpprogramma's. Een gebruiker krijgt de specifieke uitvoer die hij of zij nodig heeft (bijvoorbeeld een logo of een cv) en annuleert omdat hij de tool niet steeds opnieuw nodig heeft, en er geen opgebouwde data of workflow-afhankelijkheid is die een reden geeft om te blijven."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe integreer ik mijn tool in de workflow van een gebruiker?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Integreer met software die ze al gebruiken. Bouw Chrome-extensies om binnen hun e-mail te werken, of integraties (via de Events API van Slack of Zapier) die gegevens rechtstreeks naar hun Slack- of Notion-werkruimten pushen. Houd uw DAU/MAU-ratio bij om te zien of dit daadwerkelijk werkt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is het 'blanco canvas-syndroom'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het komt voor wanneer gebruikers een leeg promptvenster zien, gefrustreerd raken omdat ze niet weten wat ze moeten vragen en weggaan voordat ze waarde ervaren. Los dit op door in plaats daarvan gestructureerde formulieren en vervolgkeuzemenu's aan te bieden die de onderliggende AI-prompt voor hen samenstellen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet ik geautomatiseerde annuleringsstromen gebruiken?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja. Wanneer gebruikers proberen te annuleren, vraag hen dan waarom en bied automatisch een gerichte incentive (zoals een korting van 50%) aan op basis van hun antwoord. Dit kan tot 15% aan annuleringen besparen, los van het oplossen van onvrijwillige churn door mislukte kaartbetalingen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpt de relatie tussen LaunchStudio en Manifera bij churn-gericht factureringswerk?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio is de geproductiseerde voordeur met vaste scope naar de engineeringteams van Manifera. Wanneer een churn-reductieproject diepere Stripe-webhooklogica, dunning-automatisering of een aangepast retentie-datamodel nodig heeft, scoped LaunchStudio dit als een korte sprint met een vaste prijs, en put daarbij uit dezelfde senior engineers die Manifera sinds 2014 heeft ingezet op factureringssystemen voor bedrijven, in plaats van u door te verwijzen naar een generalistisch bureau."
-      }
-    }
-  ]
-}
-</script>

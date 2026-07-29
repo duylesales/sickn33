@@ -99,10 +99,6 @@ Stella partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €4,200 (AI Infrastructure Package) — production-ready and deployed in 14 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### Which is cheaper: OpenAI or hosting my own model?
@@ -124,52 +120,3 @@ You can and, past a certain scale, probably should. Hybrid routing — cheap ope
 ### Does LaunchStudio only integrate proprietary APIs, or can it also deploy open-source models for me?
 
 Both. Because LaunchStudio is backed by Manifera — an 11-year enterprise engineering firm that has built infrastructure for clients like Vodafone and TNO — the team is equally comfortable securing a proprietary API integration for a fast MVP launch or standing up private GPU infrastructure to self-host an open-weights model for a compliance-driven enterprise client. The right architecture depends on your product's actual constraints, not on what's easiest to sell.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Which is cheaper: OpenAI or hosting my own model?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For early startups, OpenAI (or Anthropic/Gemini) is exponentially cheaper because you only pay per token used. Hosting open-weights models requires renting GPU servers that cost money whether or not anyone is using your app. Self-hosting only becomes cheaper once you're processing tens of millions of tokens a day with consistently high GPU utilization — below that, an idle GPU is a worse deal than a metered API call."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it safer to use open-source models for sensitive data?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, generally. If you host an open-weights model on private cloud infrastructure you control, the data never leaves your boundary, which makes it far easier to satisfy HIPAA, EU data residency rules, or contractual requirements from enterprise clients. That said, proprietary providers now offer Zero Data Retention agreements at the enterprise tier that close much of this gap for less regulated use cases."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How hard is it to switch from OpenAI to an open-source model later?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Easier than most founders expect. Most open-weights hosting platforms (Together AI, Fireworks, Replicate) expose an API format nearly identical to OpenAI's, so the code-level migration is often just a base URL and API key change. The harder part is re-validating that your prompts, which were likely tuned against GPT-4o's specific behavior, still produce good outputs on the new model."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I have to choose one model architecture, or can I mix both?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can and, past a certain scale, probably should. Hybrid routing — cheap open-weights models handling routine, high-volume requests, with frontier proprietary models reserved for complex edge cases — is how sophisticated AI-native founders keep quality high while controlling blended cost per request."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does LaunchStudio only integrate proprietary APIs, or can it also deploy open-source models for me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both. Because LaunchStudio is backed by Manifera — an 11-year enterprise engineering firm that has built infrastructure for clients like Vodafone and TNO — the team is equally comfortable securing a proprietary API integration for a fast MVP launch or standing up private GPU infrastructure to self-host an open-weights model for a compliance-driven enterprise client. The right architecture depends on your product's actual constraints, not on what's easiest to sell."
-      }
-    }
-  ]
-}
-</script>

@@ -78,8 +78,6 @@ Lincoln werkte samen met **LaunchStudio (door Manifera)** om het product lanceri
 **Kosten en tijdlijn:** € 4.400 (GPU-optimalisatiepakket) — klaar voor productie en geïmplementeerd binnen 12 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Waarom zijn AI-startups zo sterk afhankelijk van Nvidia?
@@ -101,52 +99,3 @@ Ja, voor inferentie-workloads met gematigde verkeersdrukte. Dankzij Apple's Unif
 ### Hoe helpt LaunchStudio oprichters specifiek om hun AI-infrastructuurkosten te verlagen?
 
 Het technische team van LaunchStudio, gesteund door Manifera's productie-infrastructuurervaring sinds 2014, controleert uw huidige inferentiepijplijn en herontwerpt deze rond gekwantiseerde modellen en goedkopere alternatieve hardware waar dat zinvol is, op dezelfde manier als bij Lincolns transcriptie-workload — waarbij de terugkerende rekenkosten vaak met ruim de helft worden verlaagd zonder de productervaring aan te tasten.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom zijn AI-startups zo sterk afhankelijk van Nvidia?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nvidia domineert vanwege CUDA, hun eigen softwarelaag. De meeste AI-frameworks zijn gebouwd om uitsluitend op CUDA te draaien, waardoor de industrie gedwongen werd Nvidia-hardware te kopen, zelfs wanneer er op papier goedkopere alternatieven bestaan."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is een AI Accelerator-chip?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een gespecialiseerde microchip die speciaal is ontworpen voor de wiskundige bewerkingen van neurale netwerken, zoals Groq's LPU of Google's TPU. In tegenstelling tot een algemene GPU is hij speciaal gebouwd voor AI-workloads, waardoor hij exponentieel sneller en energiezuiniger is voor die specifieke taak."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is modelkwantisering?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een softwaretechniek die de bestandsgrootte van een AI-model met ongeveer 70-75% verkleint door de gegevensprecisie te comprimeren van 16-bits of 32-bits floats naar gehele getallen van 8 of 4 bits. Hierdoor kunnen enorme modellen op goedkope hardware draaien in plaats van dat er zakelijke GPU's nodig zijn, met slechts een kleine, meetbare nauwkeurigheidsafweging."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Zal Apple Silicon (Mac Studios) worden gebruikt voor AI-servers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, voor inferentie-workloads met gematigde verkeersdrukte. Dankzij Apple's Unified Memory kunnen enorme modellen volledig in het RAM-geheugen van een Mac Studio draaien, waardoor een goedkope, zeer effectieve lokale server ontstaat voor teams die privacy en vaste kosten belangrijk vinden, hoewel het niet de juiste keuze is voor workloads met hoge concurrency of training."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpt LaunchStudio oprichters specifiek om hun AI-infrastructuurkosten te verlagen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het technische team van LaunchStudio, gesteund door Manifera's productie-infrastructuurervaring sinds 2014, controleert uw huidige inferentiepijplijn en herontwerpt deze rond gekwantiseerde modellen en goedkopere alternatieve hardware waar dat zinvol is, op dezelfde manier als bij Lincolns transcriptie-workload — waarbij de terugkerende rekenkosten vaak met ruim de helft worden verlaagd zonder de productervaring aan te tasten."
-      }
-    }
-  ]
-}
-</script>

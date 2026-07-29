@@ -84,8 +84,6 @@ Hazel werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 4.800 (verticaal integratiepakket) — klaar voor productie en geïmplementeerd binnen 14 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is een horizontale AI?
@@ -107,52 +105,3 @@ Zelden, en zelden goed. Grote technologiebedrijven hebben enorme schaalgrootte n
 ### Waar past LaunchStudio in het bouwen van een Vertical AI Agent?
 
 U brengt de domeinexpertise, de bedrijfseigen gegevens en de wrijving die u wilt automatiseren. LaunchStudio (beheerd door Manifera) brengt de productie-engineering: het verharden van uw RAG-pijplijn, het beveiligen van de vectordatabase, het bouwen van versleutelde webhookintegraties met legacy-branchesoftware, en het toevoegen van de auditsporen en toegangscontroles waarmee een compliance officer de agent goedkeurt voor echte klanten — doorgaans binnen 1 tot 3 weken.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is een horizontale AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tools zoals ChatGPT die zijn ontworpen om alles voor iedereen te doen. Ze zijn breed, maar missen de diepgaande, genuanceerde expertise die nodig is voor zeer gespecialiseerde professionele taken."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is een verticale AI-agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een AI die is ontworpen om één hyperspecifiek ding te doen voor één hyperspecifieke sector (bijvoorbeeld het lezen van commerciële vastgoedleases). Het maakt gebruik van fundamentele modellen, maar is beperkt tot een enkelvoudig domein, doorgaans via retrieval-augmented generation over bedrijfseigen branchegegevens."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom zijn verticale AI-agenten winstgevender?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Omdat ze diepgaande, dure bedrijfsproblemen oplossen. In plaats van € 10/maand in rekening te brengen voor een generieke schrijftool, kunt u € 500/maand vragen voor een tool die complexe gegevensinvoer in de sector automatiseert, geprijsd op basis van de arbeidskosten die het vervangt in plaats van de API-kosten om het te draaien."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Gaan de grote technologiebedrijven geen verticale AI bouwen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Zelden, en zelden goed. Grote technologiebedrijven hebben enorme schaalgrootte nodig. Ze zullen geen middelen besteden aan het bouwen van een tool specifiek voor een beperkte niche, en wanneer ze wel verticale functies toevoegen, ontbreekt het hen aan de workflow-integratie en het domeinvertrouwen die een oprichter die in de sector heeft geleefd, kan opbouwen. Deze winstgevende micromarkten behoren overwegend toe aan agile startups."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waar past LaunchStudio in het bouwen van een Vertical AI Agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "U brengt de domeinexpertise, de bedrijfseigen gegevens en de wrijving die u wilt automatiseren. LaunchStudio (beheerd door Manifera) brengt de productie-engineering: het verharden van uw RAG-pijplijn, het beveiligen van de vectordatabase, het bouwen van versleutelde webhookintegraties met legacy-branchesoftware, en het toevoegen van de auditsporen en toegangscontroles waarmee een compliance officer de agent goedkeurt voor echte klanten — doorgaans binnen 1 tot 3 weken."
-      }
-    }
-  ]
-}
-</script>

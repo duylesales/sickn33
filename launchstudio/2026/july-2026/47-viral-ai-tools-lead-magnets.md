@@ -95,10 +95,6 @@ Gavin partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €1,100 (Bot Mitigation Package) — production-ready and deployed in 4 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What is an 'engineering as marketing' lead magnet?
@@ -120,52 +116,3 @@ Implement strict IP rate limiting (e.g., max 3-5 uses per day), add CAPTCHA veri
 ### If LaunchStudio hardens my viral lead magnet, is that the same team building my core paid product too?
 
 Yes. LaunchStudio and your core product's production hardening are handled by the same Manifera engineering teams, so the rate limiting, authentication, and database architecture protecting your free tool are built consistently with what protects your paid app — you're not stitching together two different vendors' security models when the free tool sends a lead into your main product.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is an 'engineering as marketing' lead magnet?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is building a small, highly useful, free software tool instead of offering a traditional PDF ebook. Because tools provide instant, personalized value, they convert visitors into leads at a much higher rate, and each one doubles as proof that your core AI product actually works."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are AI tools specifically good for this?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "With AI builders like Lovable, Bolt, or v0, you can generate a single-feature micro-SaaS in one afternoon. The rapid development allows you to launch multiple viral tools cheaply to see what gains traction, turning marketing into a series of low-cost experiments rather than one expensive bet."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I capture leads with a free tool?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Let the user use the core feature for free to experience the value. Then, blur out the detailed results or advanced features, requiring an email address to unlock them — this routinely converts around 5x better than a generic newsletter signup form."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I prevent free tools from driving up my OpenAI bill?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Implement strict IP rate limiting (e.g., max 3-5 uses per day), add CAPTCHA verification on the generation endpoint itself (not just the page), use the cheapest possible AI model (like GPT-4o-mini or Claude Haiku), and set a hard daily spend ceiling at the API provider level."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "If LaunchStudio hardens my viral lead magnet, is that the same team building my core paid product too?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. LaunchStudio and your core product's production hardening are handled by the same Manifera engineering teams, so the rate limiting, authentication, and database architecture protecting your free tool are built consistently with what protects your paid app — you're not stitching together two different vendors' security models when the free tool sends a lead into your main product."
-      }
-    }
-  ]
-}
-</script>

@@ -36,7 +36,7 @@ Google is niet dom, en is aanzienlijk beter geworden in het detecteren van progr
 
 Om in 2026 te slagen in pSEO, moeten de gegenereerde pagina's daadwerkelijk nut bieden, verder dan de tekst op de pagina zelf. Voor ons voorbeeld van de sollicitatiebrief zou de pagina niet alleen een SEO-valstrik moeten zijn die het concept beschrijft; ze zou de daadwerkelijke AI-tool rechtstreeks op de pagina moeten bevatten, vooraf geconfigureerd met een prompt die is afgestemd op dat specifieke beroep. Als een gebruiker zoekt naar "sollicitatiebrief verpleegkundige", op de pagina terechtkomt en direct een werkende sollicitatiebrief voor een verpleegkundige genereert zonder ergens anders naartoe te navigeren, weerspiegelen de betrokkenheidssignalen van Google (verblijftijd, bouncepercentage, herhaalbezoeken) daadwerkelijk nut, en verdient de pagina haar ranking in plaats van deze te manipuleren.
 
-Enkele aanvullende technische maatregelen zijn belangrijk op schaal: dien een XML-sitemapindex in (geen enkele platte sitemap) zodra u een paar duizend URL's overschrijdt, aangezien Google aanraadt sitemaps op te splitsen bij 50.000 URL's per stuk; controleer wekelijks het Coverage-rapport van Google Search Console om indexeringsdalingen vroeg op te sporen; en voeg zelfverwijzende canonical-tags toe aan elke gegenereerde pagina om te voorkomen dat op parameters gebaseerde dubbele content uw rankings verwatert. Crawlbudget is ook eindig — een gloednieuw domein met een lage autoriteit krijgt mogelijk slechts een paar honderd pagina's per dag gecrawld, dus het gelijktijdig lanceren van alle 5.000 pagina's zonder een interne linkstructuur die ze verbindt (bijvoorbeeld een hub-pagina die linkt naar verwante functietitels) zorgt ervoor dat de meeste ervan wekenlang onontdekt blijven.
+Enkele aanvullende technische maatregelen zijn belangrijk op schaal: dien een XML-sitemapindex in (geen enkele platte sitemap) zodra u een paar duizend URL's overschrijdt, aangezien Google aanraadt sitemaps op te splitsen bij 50.000 URL's per stuk; controleer wekelijks het Coverage-rapport van Google Search Console om indexeringsdalingen vroeg op te sporen; en voeg zelfverwijzende canonical-tags toe aan elke gegenereerde pagina om te voorkomen dat op parameters gebaseerde dubbele content uw rankings verwatert. Crawlbudget is ook eindig — een gloednieuw domein met een lage autoriteit krijgt mogelijk slechts een paar honderd pagina's per dag gecrawld, dus het gelijktijdig lanceren van alle 5.000 pagina's zonder een interne linkstructuur die ze verbindt (bijvoorbeeld een hub-pagina die linkt naar verwante functietitels) zorgt ervoor dat de meeste ervan wekenlang onontdekt blijven. Dit is dezelfde discipline rond server-side rendering en crawlbudget die Manifera, de in 2014 in Amsterdam opgerichte moedermaatschappij van LaunchStudio, toepast bij het schalen van bedrijfsapplicaties voor klanten als Vodafone en TNO.
 
 ## Belangrijkste inzichten
 
@@ -69,8 +69,6 @@ Elena werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 3.400 (Programmatisch SEO-pakket) — productieklaar en binnen 11 werkdagen geïmplementeerd.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is Programmatische SEO (pSEO)?
@@ -92,52 +90,3 @@ Ja, voor de sjabloon- en gegevenslaag — vraag de AI-bouwer om een dynamische r
 ### Lost LaunchStudio alleen beveiligingsproblemen op, of ook groei-infrastructuur zoals pSEO?
 
 Beide. LaunchStudio past dezelfde discipline voor productie-engineering toe die Manifera heeft gebruikt bij meer dan 160 zakelijke projecten, op wat uw met AI gebouwde app ook tegenhoudt om echte gebruikers te bereiken — of dat nu een beveiligingslek is, een betalingsintegratie, of, zoals bij Elena's directory, een renderarchitectuur die stilletjes onzichtbaar was voor Google terwijl het product zelf perfect werkte.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is Programmatische SEO (pSEO)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het is een strategie die een gestructureerde database en een codesjabloon gebruikt om automatisch honderden of duizenden zeer gerichte landingspagina's te genereren (bijvoorbeeld \"CRM voor tandartsen\", \"CRM voor loodgieters\"), die elk een specifieke long-tail zoekopdracht vastleggen, in plaats van te vertrouwen op handmatig geschreven blogcontent."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Zal Google mij straffen voor door AI gegenereerde content?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Als u duizenden pagina's genereert die pure gesjabloneerde tekst zijn zonder unieke waarde, dan ja — het Helpful Content-systeem van Google kan uw hele domein lager rangschikken, niet alleen de overtredende pagina's. Succesvolle pSEO biedt echte, gestructureerde gegevens en interactief nut (idealiter uw daadwerkelijke product) op elke pagina."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is een \"long-tail zoekwoord\", en waarom is het belangrijker dan volume?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een specifieke zoekzin (bijvoorbeeld \"AI-cv-bouwer voor junior UX-ontwerpers\") met een laag individueel zoekvolume maar een zeer hoge conversie-intentie, omdat de zoeker al precies weet wat hij wil. Het is aanzienlijk gemakkelijker om ervoor te ranken dan voor een generiek zoekwoord, en het converteert tegen een veel hoger percentage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kan ik Lovable, Bolt of Cursor gebruiken om zelf pSEO te bouwen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, voor de sjabloon- en gegevenslaag — vraag de AI-bouwer om een dynamische route te maken die rijen ophaalt uit een Supabase-tabel, en deze genereert die scaffolding binnen enkele minuten. Het onderdeel dat AI-bouwers vaak fout doen, is de renderstrategie: velen kiezen standaard voor client-side rendering, wat zoekmachines op schaal lastig betrouwbaar kunnen indexeren, dus dat onderdeel heeft vaak een aparte architectuurbeoordeling nodig."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Lost LaunchStudio alleen beveiligingsproblemen op, of ook groei-infrastructuur zoals pSEO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beide. LaunchStudio past dezelfde discipline voor productie-engineering toe die Manifera heeft gebruikt bij meer dan 160 zakelijke projecten, op wat uw met AI gebouwde app ook tegenhoudt om echte gebruikers te bereiken — of dat nu een beveiligingslek is, een betalingsintegratie, of, zoals bij Elena's directory, een renderarchitectuur die stilletjes onzichtbaar was voor Google terwijl het product zelf perfect werkte."
-      }
-    }
-  ]
-}
-</script>

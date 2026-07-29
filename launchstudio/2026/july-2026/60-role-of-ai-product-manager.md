@@ -74,10 +74,6 @@ Sadie partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €3,000 (SaaS MVP Launch Package) — production-ready and deployed in 9 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What does an AI Product Manager do?
@@ -99,52 +95,3 @@ Domain expertise. Because building software is cheap, the winner is the team tha
 ### How does the relationship between an AI PM and LaunchStudio actually work?
 
 You stay the AI Product Manager throughout — you keep prompting features, testing with users, and owning the roadmap. LaunchStudio's engineers, operating under Manifera, step in specifically for the infrastructure layer: hardening the database schema you designed, closing security gaps, and wiring up payments, the same way the team did for Sadie's retail inventory schema in 9 business days.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What does an AI Product Manager do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "They act as the translator between business requirements and AI execution. They define the product architecture, prompt the AI to generate the code and UI, and QA the output to ensure it solves the user's problem and holds up as a coherent data structure."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to know how to code to be an AI PM?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You don't need to write syntax, but you must understand system architecture. You must know how databases relate and how APIs function so you can verify the AI isn't making structural errors that only surface once real users touch the product."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "If the PM builds the app, what do software engineers do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Engineers manage \"Production Readiness.\" They secure the database with Row Level Security, handle complex deployment pipelines, fix deep logical bugs the AI can't solve, and integrate secure payment infrastructure — the roughly 20% of the build that determines whether the other 80% survives contact with real traffic."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the most important skill for an AI PM?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Domain expertise. Because building software is cheap, the winner is the team that understands the customer's specific industry friction better than anyone else — a moat prompting skill alone cannot replicate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does the relationship between an AI PM and LaunchStudio actually work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You stay the AI Product Manager throughout — you keep prompting features, testing with users, and owning the roadmap. LaunchStudio's engineers, operating under Manifera, step in specifically for the infrastructure layer: hardening the database schema you designed, closing security gaps, and wiring up payments, the same way the team did for Sadie's retail inventory schema in 9 business days."
-      }
-    }
-  ]
-}
-</script>

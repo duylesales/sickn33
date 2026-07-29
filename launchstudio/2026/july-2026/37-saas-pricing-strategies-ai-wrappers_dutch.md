@@ -95,8 +95,6 @@ Lucas werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 1.500 (gebruiksfactureringspakket) — klaar voor productie en geïmplementeerd binnen 5 werkdagen.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Waarom verschilt de prijsstelling van een AI-app van traditionele SaaS?
@@ -118,52 +116,3 @@ Limieten moeten worden afgedwongen op database- en serverniveau, en nooit worden
 ### Bouwt LaunchStudio alleen de frontend, of regelt het ook op gebruik gebaseerde factureringslogica zoals deze?
 
 Het werk van LaunchStudio zit precies in dit gat — de backend-factureringshandhaving, gebruiksregistratie op databaseniveau, en Stripe-integratie die AI-pagebuilders niet standaard genereren. Omdat LaunchStudio wordt ondersteund door Manifera, een enterprise-engineeringbedrijf met elf jaar ervaring, bouwt het team dezelfde server-side meetdiscipline die wordt gebruikt voor grote klanten als Vodafone, in een pakket met vaste scope, toegesneden op de SaaS-wrapper van een solo AI-native oprichter.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom verschilt de prijsstelling van een AI-app van traditionele SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Traditionele SaaS heeft vrijwel geen marginale kosten per actie. Bij AI-apps activeert elke generatie een echte, gemeten kostenpost bij een externe API. Zonder zorgvuldige prijsstelling gekoppeld aan dat gebruik kunt u gemakkelijk geld verliezen aan uw zwaarste — en vaak meest waardevolle — gebruikers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet ik een onbeperkt gebruiksniveau aanbieden?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absoluut niet. Zware gebruikers, en vooral geautomatiseerde bots die specifiek jagen op AI-producten met een onbeperkt niveau, zullen er misbruik van maken, waardoor uw API-kosten de pan uit rijzen en uw margestructuur binnen enkele dagen kan instorten."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is het op krediet gebaseerde prijsmodel, en wanneer gebruik ik dit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gebruikers kopen een bucket met credits, en elke AI-actie verbruikt een vast aantal credits, geprijsd op de worst-case API-kosten van die actie. Het garandeert dat u nooit geld verliest aan een gebruiker, maar kan aarzeling en lagere betrokkenheid veroorzaken door \"kredietangst\"."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe implementeer ik harde of zachte gebruikslimieten veilig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Limieten moeten worden afgedwongen op database- en serverniveau, en nooit worden toevertrouwd aan frontend-code. Een beveiligde backend Edge-functie moet het resterende tegoed van een gebruiker controleren in een atomisch bijgewerkte databaseteller vóórdat de AI API wordt aangeroepen, en het verzoek afwijzen of vertragen zodra de limiet is bereikt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Bouwt LaunchStudio alleen de frontend, of regelt het ook op gebruik gebaseerde factureringslogica zoals deze?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het werk van LaunchStudio zit precies in dit gat — de backend-factureringshandhaving, gebruiksregistratie op databaseniveau, en Stripe-integratie die AI-pagebuilders niet standaard genereren. Omdat LaunchStudio wordt ondersteund door Manifera, een enterprise-engineeringbedrijf met elf jaar ervaring, bouwt het team dezelfde server-side meetdiscipline die wordt gebruikt voor grote klanten als Vodafone, in een pakket met vaste scope, toegesneden op de SaaS-wrapper van een solo AI-native oprichter."
-      }
-    }
-  ]
-}
-</script>

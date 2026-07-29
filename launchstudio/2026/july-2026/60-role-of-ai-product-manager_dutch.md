@@ -75,10 +75,6 @@ Sadie werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten & Doorlooptijd:** € 3.000 (SaaS MVP Launch Package) — productieklaar en geïmplementeerd binnen 9 werkdagen.
 
 ---
-
----
-
----
 ## Veelgestelde Vragen
 
 ### Wat doet een AI Product Manager?
@@ -100,52 +96,3 @@ Domeinexpertise. Omdat het bouwen van software goedkoop is, is de winnaar het te
 ### Hoe werkt de relatie tussen een AI PM en LaunchStudio in de praktijk?
 
 U blijft gedurende het hele proces de AI Product Manager — u blijft functies prompten, testen met gebruikers en eigenaar van de roadmap. De engineers van LaunchStudio, werkend onder Manifera, stappen specifiek in voor de infrastructuurlaag: het harden van het databaseschema dat u heeft ontworpen, het dichten van beveiligingsgaten en het aansluiten van betalingen, op dezelfde manier als het team deed voor het winkelvoorraadschema van Sadie in 9 werkdagen.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat doet een AI Product Manager?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Zij treden op als de vertaler tussen zakelijke vereisten en AI-uitvoering. Ze definiëren de productarchitectuur, prompten de AI om de code en UI te genereren, en voeren QA uit op de uitvoer om ervoor te zorgen dat deze het probleem van de gebruiker oplost en standhoudt als een coherente datastructuur."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet ik kunnen coderen om een AI PM te zijn?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "U hoeft geen syntaxis te schrijven, maar u moet wel de systeemarchitectuur begrijpen. U moet weten hoe databases zich tot elkaar verhouden en hoe API's functioneren, zodat u kunt controleren of de AI geen structurele fouten maakt die pas opduiken als echte gebruikers het product aanraken."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Als de PM de app bouwt, wat doen software-engineers dan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Engineers beheren \"Production Readiness.\" Ze beveiligen de database met Row Level Security, handelen complexe implementatiepijplijnen af, herstellen diepe logische bugs die de AI niet kan oplossen, en integreren veilige betalingsinfrastructuur — de ruwweg 20% van de bouw die bepaalt of de andere 80% het contact met echt verkeer overleeft."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is de belangrijkste vaardigheid voor een AI PM?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Domeinexpertise. Omdat het bouwen van software goedkoop is, is de winnaar het team dat de specifieke industriële wrijving van de klant beter begrijpt dan wie dan ook — een moat die promptvaardigheid alleen niet kan repliceren."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe werkt de relatie tussen een AI PM en LaunchStudio in de praktijk?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "U blijft gedurende het hele proces de AI Product Manager — u blijft functies prompten, testen met gebruikers en eigenaar van de roadmap. De engineers van LaunchStudio, werkend onder Manifera, stappen specifiek in voor de infrastructuurlaag: het harden van het databaseschema dat u heeft ontworpen, het dichten van beveiligingsgaten en het aansluiten van betalingen, op dezelfde manier als het team deed voor het winkelvoorraadschema van Sadie in 9 werkdagen."
-      }
-    }
-  ]
-}
-</script>

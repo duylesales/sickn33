@@ -91,8 +91,6 @@ Violet werkte samen met **LaunchStudio (door Manifera)** om het product lancerin
 **Kosten en tijdlijn:** € 4.500 (Compliance- en beveiligingspakket) — productieklaar en binnen 15 werkdagen geïmplementeerd.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Waarom wijzen zakelijke klanten standaard AI-wrappers af?
@@ -114,52 +112,3 @@ SOC 2 Type II is een overwegend Amerikaanse audit door een derde partij van uw b
 ### Hoe helpt de relatie tussen LaunchStudio en Manifera mij bij het doorstaan van een zakelijke beveiligingsbeoordeling?
 
 LaunchStudio past dezelfde discipline voor beveiligingsverharding toe die Manifera heeft gebruikt bij meer dan 160 zakelijke projecten — voor klanten zoals Vodafone en TNO — op AI-wrapperprojecten met een vaste scope. Dat telt direct mee in een zakelijk verkoopproces: u kunt een sceptische CISO verwijzen naar een 11 jaar oud, in Amsterdam gevestigd engineeringbedrijf met een echt compliance-trackrecord achter uw app, in plaats van hen te vragen de AI-gegenereerde codebase van een solo-oprichter op goed vertrouwen te accepteren.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom wijzen zakelijke klanten standaard AI-wrappers af?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ze zijn bang dat hun bedrijfseigen gegevens naar publieke modellen worden gestuurd en mogelijk worden gebruikt voor training, of blootgesteld raken door zwakke infrastructuur. Als uw app afhankelijk is van standaard-API's zonder een ondertekende Verwerkersovereenkomst, een gedocumenteerde lijst van subverwerkers en verharde databasebeveiliging, schendt dit de meeste bedrijfsbeveiligingsbeleidsregels nog voordat een mens uw product beoordeelt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Traint OpenAI op gegevens die via de API worden verzonden?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nee. Gegevens die naar de betaalde API van OpenAI worden verzonden, worden niet gebruikt voor modeltraining en worden slechts 30 dagen bewaard voor misbruikmonitoring (of nul dagen met een Zero Data Retention-overeenkomst). U moet dit onderscheid duidelijk maken aan inkoopteams, die de API vaak verwarren met het consumentenproduct ChatGPT — en het moet in uw DPA staan, niet alleen mondeling worden gezegd."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe kan ik een zakelijke klant volledige gegevensprivacy garanderen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Begin met Azure OpenAI Service of AWS Bedrock, die topmodellen laten draaien binnen de eigen cloudomgeving van de klant, met contractuele garanties dat er niet wordt getraind en met regionale gegevensresidentie. Bied voor de strengste kopers (defensie, sommige zorginstellingen) een volledig zelfgehost open-source model zoals Llama 3.1 of Mistral Large aan op een toegewezen Virtual Private Cloud, hoewel de GPU-infrastructuurkosten pas zinvol zijn zodra een contract dit rechtvaardigt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is SOC 2-compliance, en heb ik dit nodig — of moet ik in plaats daarvan ISO 27001 nastreven?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SOC 2 Type II is een overwegend Amerikaanse audit door een derde partij van uw beveiligingspraktijken over een observatieperiode van 3 tot 12 maanden; ISO 27001 is het equivalent waar de meeste zakelijke EU-kopers eerst om vragen. Beide vereisen sterke interne beveiligingscontroles en infrastructuurverharding om te slagen, en beide kosten echte tijd en geld — streef er pas naar zodra een concrete zakelijke deal erom vraagt, maar bouw uw infrastructuur vanaf dag één veilig, zodat de audit een formaliteit is."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpt de relatie tussen LaunchStudio en Manifera mij bij het doorstaan van een zakelijke beveiligingsbeoordeling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio past dezelfde discipline voor beveiligingsverharding toe die Manifera heeft gebruikt bij meer dan 160 zakelijke projecten — voor klanten zoals Vodafone en TNO — op AI-wrapperprojecten met een vaste scope. Dat telt direct mee in een zakelijk verkoopproces: u kunt een sceptische CISO verwijzen naar een 11 jaar oud, in Amsterdam gevestigd engineeringbedrijf met een echt compliance-trackrecord achter uw app, in plaats van hen te vragen de AI-gegenereerde codebase van een solo-oprichter op goed vertrouwen te accepteren."
-      }
-    }
-  ]
-}
-</script>

@@ -101,10 +101,6 @@ Jackson werkte samen met **LaunchStudio (door Manifera)** om het product lanceri
 **Kosten & Doorlooptijd:** € 3.500 (Enterprise Hardening Package) — productieklaar en geïmplementeerd binnen 12 werkdagen.
 
 ---
-
----
-
----
 ## Veelgestelde Vragen
 
 ### Waarom is bootstrapping nu levensvatbaarder dan 5 jaar geleden?
@@ -126,52 +122,3 @@ Ja, en het wordt sterk aanbevolen. Bootstrapping naar $ 10k MRR bewijst product-
 ### Beïnvloedt het gebruik van een dienst zoals LaunchStudio in plaats van een technische co-founder hoe investeerders mijn startup bekijken?
 
 Als er al iets is, helpt het juist. Investeerders zijn huiverig voor solo AI-native founders van wie de volledige stack door AI is gegenereerd en nooit op beveiliging is beoordeeld — dat is precies waar technische due diligence voor is ontworpen. Omdat LaunchStudio wordt ondersteund door Manifera, een 11 jaar oud enterprise engineeringbureau met klanten như Vodafone en TNO, kunt u investeerders wijzen op een echt trackrecord op het gebied van productieharden in plaats van hen te vragen uw woord te geloven.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom is bootstrapping nu levensvatbaarder dan 5 jaar geleden?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Omdat de initiële kosten van het bouwen van software kelderden. AI-tools bouwen de MVP voor de kosten van een abonnement van $ 20/maand, en vaste-prijsdiensten zoals LaunchStudio beveiligen het voor een paar duizend euro, ter vervanging van engineeringteams van € 50k-€ 150k."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wanneer is het daadwerkelijk zinvol om VC-financiering op te halen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Als u zich bevindt in een \"winner-takes-all\" markt die massale schaal vereist, of als u hoge R&D/compute-kosten heeft (zoals het trainen van fundamentele AI-modellen) die niet kunnen worden gebootstrapped. Het is ook zinvol zodra u een enterprise-salesteam nodig heeft dat meer kost dan uw inkomsten momenteel kunnen ondersteunen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is de keerzijde van het ophalen van Durfkapitaal (VC)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "U verkoopt controle en gaat ermee akkoord om een massale exit na te streven. Een overname van € 10M die een bootstrapped founder rijk zou maken, wordt door een VC-bedrijf vaak gezien als een mislukking, en liquidatievoorkeuren betekenen dat u zelfs bij een redelijke exit met minder weglopt dan verwacht."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kan ik eerst bootstrappen en later VC ophalen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, en het wordt sterk aanbevolen. Bootstrapping naar $ 10k MRR bewijst product-market fit. Als u dan geld ophaalt, doet u dat met minimaal risico en maximale hefboomwerking, en een technisch gehard product versnelt due diligence aanzienlijk."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Beïnvloedt het gebruik van een dienst zoals LaunchStudio in plaats van een technische co-founder hoe investeerders mijn startup bekijken?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Als er al iets is, helpt het juist. Investeerders zijn huiverig voor solo AI-native founders van wie de volledige stack door AI is gegenereerd en nooit op beveiliging is beoordeeld — dat is precies waar technische due diligence voor is ontworpen. Omdat LaunchStudio wordt ondersteund door Manifera, een 11 jaar oud enterprise engineeringbureau met klanten như Vodafone en TNO, kunt u investeerders wijzen op een echt trackrecord op het gebied van productieharden in plaats van hen te vragen uw woord te geloven."
-      }
-    }
-  ]
-}
-</script>

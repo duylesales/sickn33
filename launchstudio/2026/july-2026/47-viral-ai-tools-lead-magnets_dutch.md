@@ -95,8 +95,6 @@ Gavin werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 1.100 (Bot Mitigation Package) — productieklaar en binnen 4 werkdagen geïmplementeerd.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is een leadmagneet 'engineering als marketing'?
@@ -118,52 +116,3 @@ Implementeer strikte IP-snelheidsbeperkingen (bijvoorbeeld maximaal 3 tot 5 keer
 ### Als LaunchStudio mijn virale leadmagneet verstevigt, is dat dan hetzelfde team dat ook mijn betaalde kernproduct bouwt?
 
 Ja. LaunchStudio en de productieversteviging van uw kernproduct worden afgehandeld door dezelfde Manifera-engineeringteams, zodat de snelheidsbeperking, authenticatie en database-architectuur die uw gratis tool beschermen, consistent zijn gebouwd met wat uw betaalde app beschermt — u hoeft geen twee verschillende beveiligingsmodellen van verschillende leveranciers aan elkaar te knopen wanneer de gratis tool een lead naar uw hoofdproduct stuurt.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is een leadmagneet 'engineering als marketing'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het is het bouwen van een kleine, zeer nuttige, gratis softwaretool in plaats van een traditioneel pdf-e-boek aan te bieden. Omdat tools directe, gepersonaliseerde waarde bieden, converteren ze bezoekers veel sneller naar leads, en elke tool dient ook als bewijs dat uw kern-AI-product daadwerkelijk werkt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom zijn AI-tools hier specifiek goed voor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Met AI-bouwers zoals Lovable, Bolt of v0 kunt u in één middag een micro-SaaS met één functionaliteit genereren. Dankzij de snelle ontwikkeling kunt u goedkoop meerdere virale tools lanceren om te zien wat aan populariteit wint, waardoor marketing een reeks goedkope experimenten wordt in plaats van één dure gok."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe leg ik leads vast met een gratis tool?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Laat de gebruiker de kernfunctie gratis gebruiken om de waarde ervan te ervaren. Vervaag vervolgens de gedetailleerde resultaten of geavanceerde functies, waarvoor een e-mailadres nodig is om ze te ontgrendelen — dit converteert doorgaans ongeveer 5x beter dan een generiek nieuwsbriefaanmeldformulier."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe voorkom ik dat gratis tools mijn OpenAI-factuur opdrijven?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Implementeer strikte IP-snelheidsbeperkingen (bijvoorbeeld maximaal 3 tot 5 keer gebruik per dag), voeg CAPTCHA-verificatie toe aan het generatie-eindpunt zelf (niet alleen de pagina), gebruik het goedkoopst mogelijke AI-model (zoals GPT-4o-mini of Claude Haiku), en stel een hard dagelijks uitgavenplafond in op het niveau van de API-provider."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Als LaunchStudio mijn virale leadmagneet verstevigt, is dat dan hetzelfde team dat ook mijn betaalde kernproduct bouwt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja. LaunchStudio en de productieversteviging van uw kernproduct worden afgehandeld door dezelfde Manifera-engineeringteams, zodat de snelheidsbeperking, authenticatie en database-architectuur die uw gratis tool beschermen, consistent zijn gebouwd met wat uw betaalde app beschermt — u hoeft geen twee verschillende beveiligingsmodellen van verschillende leveranciers aan elkaar te knopen wanneer de gratis tool een lead naar uw hoofdproduct stuurt."
-      }
-    }
-  ]
-}
-</script>

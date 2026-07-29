@@ -84,10 +84,6 @@ Hazel partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €4,800 (Vertical Integration Package) — production-ready and deployed in 14 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### What is a Horizontal AI?
@@ -109,52 +105,3 @@ Rarely, and rarely well. Big tech needs massive scale. They won't spend resource
 ### Where does LaunchStudio fit into building a Vertical AI Agent?
 
 You bring the domain expertise, the proprietary data, and the friction you want to automate. LaunchStudio (operated by Manifera) brings the production engineering: hardening your RAG pipeline, securing the vector database, building the encrypted webhook integrations to legacy industry software, and adding the audit trails and access controls that let a compliance officer approve the agent for real clients—typically within 1 to 3 weeks.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a Horizontal AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tools like ChatGPT that are designed to do everything for everyone. They are broad but lack the deep, nuanced expertise required for highly specialized professional tasks."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a Vertical AI Agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An AI designed to do one hyper-specific thing for one hyper-specific industry (e.g., reading commercial real estate leases). It uses foundational models but is restricted to a singular domain, typically through retrieval-augmented generation over proprietary industry data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why are Vertical AI Agents more profitable?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because they solve deep, expensive business problems. Instead of charging $10/mo for a generic writing tool, you can charge $500/mo for a tool that automates complex industry data entry, priced against the labor cost it replaces rather than the API cost to run it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Aren't the big tech companies going to build Vertical AI?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Rarely, and rarely well. Big tech needs massive scale. They won't spend resources building a tool specifically for a narrow niche, and when they do bolt on vertical features, they lack the workflow integration and domain trust a founder who has lived in the industry can build. Those profitable micro-markets belong overwhelmingly to agile startups."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where does LaunchStudio fit into building a Vertical AI Agent?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You bring the domain expertise, the proprietary data, and the friction you want to automate. LaunchStudio (operated by Manifera) brings the production engineering: hardening your RAG pipeline, securing the vector database, building the encrypted webhook integrations to legacy industry software, and adding the audit trails and access controls that let a compliance officer approve the agent for real clients—typically within 1 to 3 weeks."
-      }
-    }
-  ]
-}
-</script>

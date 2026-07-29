@@ -68,7 +68,7 @@ U moet uw eindpunten beschermen tegen kwaadwillende bots en overdreven enthousia
 
 - **Gebruiksgebaseerde Prijsstelling als Structurele Oplossing**: Voor sommige producten is de echte oplossing niet alleen het begrenzen van het gebruik — het is het herontwerpen van het prijsmodel zelf. Als uw AI-functie een wezenlijk variabele, moeilijk te voorspellen kostprijs per gebruik heeft, overweeg dan facturering op basis van verbruik (via Stripe's usage-based pricing) die een opgeslagen versie van de API-kosten rechtstreeks doorberekent aan de klant, in plaats van van tevoren het juiste vaste tarief te proberen te raden.
 
-Deze zelfde discipline — het rechtstreeks in de backend bouwen van beveiligings- en kostengrenzen in plaats van op de frontend te vertrouwen — is precies wat een weekend-AI-prototype onderscheidt van een product dat klaar is voor betalende klanten. Het staat ook in verbinding met een breder patroon: naast uit de hand gelopen API-kosten wordt ongeveer 45% van de door AI gegenereerde code geleverd met exploiteerbare beveiligingskwetsbaarheden, omdat AI-builders optimaliseren voor een werkende demo, niet voor een gehard, kostengestuurd productiesysteem.
+Deze zelfde discipline — het rechtstreeks in de backend bouwen van beveiligings- en kostengrenzen in plaats van op de frontend te vertrouwen — is precies wat een weekend-AI-prototype onderscheidt van een product dat klaar is voor betalende klanten. Het staat ook in verbinding met een breder patroon: naast uit de hand gelopen API-kosten wordt ongeveer 45% van de door AI gegenereerde code geleverd met exploiteerbare beveiligingskwetsbaarheden, omdat AI-builders optimaliseren voor een werkende demo, niet voor een gehard, kostengestuurd productiesysteem. Het is precies het soort gat dat de engineers van Manifera — actief vanuit Amsterdam, Nederland, sinds de oprichting van het bedrijf in 2014 — al meer dan tien jaar dichten voor klanten die het zich niet kunnen veroorloven dit pas in productie te ontdekken.
 
 ## Belangrijkste inzichten
 
@@ -86,7 +86,7 @@ Deze zelfde discipline — het rechtstreeks in de backend bouwen van beveiliging
 
 Zijn uw API-kosten uit de hand gelopen? LaunchStudio implementeert model-routing, semantische caching en veilige rate-limiting om ervoor te zorgen dat uw AI-startup op schaal winstgevend blijft, doorgaans tegen ongeveer 20% van wat een traditioneel ontwikkelbureau zou vragen voor hetzelfde hardening-werk.
 
-Zoals **Herre Roelevink, Oprichter & Managing Director van Manifera**, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring in precies dat vakgebied." LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in **2014** en geleid door Roelevink. Door "Nederlands management te combineren met Vietnamees meesterschap", onderhoudt Manifera hoofdkantoren in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingshubs in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam**. Via LaunchStudio nemen onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en kostenbewuste API-architectuur — waardoor uw prototype in 1 tot 3 weken verandert in een veilige, marge-beschermde MVP. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact) of [bekijk hoe onze prijscalculator uw project inschat](https://launchstudio.eu/en/#calculator).
+Zoals **Herre Roelevink, Oprichter & Managing Director van Manifera**, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring in precies dat vakgebied." LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software-engineeringbedrijf opgericht in **2014** en geleid door Roelevink. Door "Nederlands management te combineren met Vietnamees meesterschap", onderhoudt Manifera hoofdkantoren in **Amsterdam, Nederland** (Herengracht 420, 1017 BZ) en ontwikkelingshubs in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam**. Via LaunchStudio nemen onze senior engineeringteams uw door AI gebouwde frontend en implementeren ze productieklare beveiligingscontroles, live betalingsgateways, veilige hosting en kostenbewuste API-architectuur — waardoor uw prototype in 1 tot 3 weken verandert in een veilige, marge-beschermde MVP. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact), [bekijk hoe onze prijscalculator uw project inschat](https://launchstudio.eu/en/#calculator), of lees meer over [Manifera's aanpak van maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
@@ -99,10 +99,6 @@ Leo werkte samen met **LaunchStudio (door Manifera)** om het product lanceringsk
 **Resultaat:** Leo verlaagde de maandelijkse OpenAI-facturering met 35% en stabiliseerde de responsiviteit van de gebruikersinterface.
 
 **Kosten & Doorlooptijd:** € 1.100 (API-optimalisatiepakket) — productieklaar en geïmplementeerd binnen 4 werkdagen.
-
----
-
----
 
 ---
 ## Veelgestelde Vragen
@@ -126,52 +122,3 @@ Kleinere modellen (zoals GPT-4o-mini of open-weight modellen op Groq) zijn expon
 ### Is marge-optimalisatie iets wat LaunchStudio afhandelt, of alleen de grotere enterprise-klanten van Manifera?
 
 Beide. LaunchStudio past dezelfde kosten-engineeringdiscipline toe die Manifera heeft gebruikt bij meer dan 160 enterprise-projecten — voor klanten als Vodafone en TNO — op fixed-scope AI wrapper-projecten vanaf € 800. Zo krijgen early-stage founders enterprise-grade token-economics zonder een enterprise-budget of -doorlooptijd.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is de 'OpenAI API Trap'?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het is de situatie waarin een startup snel gebruikers aantrekt, maar de onderliggende API-kosten sneller opschalen dan de abonnementsinkomsten (vaak door niet-geoptimaliseerde prompts, ontbrekende caching of onbeperkte pakketten), wat ondanks de groei leidt tot negatieve marges en zelfs een faillissement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Welke invloed hebben systeemprompts op mijn API-factuur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "U betaalt voor zowel invoer- als uitvoertokens, en uitvoertokens kosten doorgaans meerdere keren meer dan invoertokens. Als uw systeemprompt enorm is, betaalt u voor dat omvangrijke tekstblok elke keer dat een gebruiker een verzoek indient — en als de respons van het model langwerpig is, kost dat nog meer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat is semantische caching en waarin verschilt het van een normale cache?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Een normale cache vergelijkt alleen identieke tekst. Semantische caching zet elke prompt om in een vector en vergelijkt deze op betekenis met eerder gecachte prompts. Hierdoor kunnen twee anders geformuleerde maar inhoudelijk gelijke vragen beide gratis worden beantwoord met hetzelfde gecachte antwoord, zonder de dure API opnieuw aan te roepen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom zou ik kleinere modellen gebruiken in plaats van GPT-4 voor alles?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kleinere modellen (zoals GPT-4o-mini of open-weight modellen op Groq) zijn exponentieel goedkoper per token. Door eenvoudige taken met een hoog volume naar hen te routeren — en vlaggenschipmodellen te bewaren voor echt complexe redeneringen — kunt u uw totale API-factuur tot 90% verlagen zonder dat gebruikers kwaliteitsverlies merken."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is marge-optimalisatie iets wat LaunchStudio afhandelt, of alleen de grotere enterprise-klanten van Manifera?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beide. LaunchStudio past dezelfde kosten-engineeringdiscipline toe die Manifera heeft gebruikt bij meer dan 160 enterprise-projecten — voor klanten als Vodafone en TNO — op fixed-scope AI wrapper-projecten vanaf € 800. Zo krijgen early-stage founders enterprise-grade token-economics zonder een enterprise-budget of -doorlooptijd."
-      }
-    }
-  ]
-}
-</script>

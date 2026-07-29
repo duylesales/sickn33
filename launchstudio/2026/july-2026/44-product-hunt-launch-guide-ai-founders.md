@@ -75,7 +75,7 @@ One caution: Product Hunt is not the right channel for every AI SaaS. If you are
 
 Don't waste your launch day on server crashes. LaunchStudio stress-tests your database, secures your webhooks, and ensures your app can handle thousands of concurrent users — before you ever hit "Launch." You can see current fixed-price packages via the [LaunchStudio calculator](https://launchstudio.eu/en/#calculator).
 
-LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Managing Director **Herre Roelevink**. As Herre puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks — for roughly 20% of what a traditional dev agency would charge. [Get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Managing Director **Herre Roelevink**. As Herre puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks — for roughly 20% of what a traditional dev agency would charge. [Get a free quote today](https://launchstudio.eu/en/#contact) or read about [Manifera's custom software development practice](https://www.manifera.com/services/custom-software-development/).
 
 ## Real example
 
@@ -88,10 +88,6 @@ Clara partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Result:** Clara finished #3 Product of the Day, processing 18,000 unique sessions with zero database downtime.
 
 **Cost & Timeline:** €2,500 (Scale & Stress Test Package) — production-ready and deployed in 8 business days.
-
----
-
----
 
 ---
 ## Frequently Asked Questions
@@ -115,52 +111,3 @@ Failing to secure their backend infrastructure before the spike arrives. If your
 ### How does LaunchStudio relate to Manifera when it comes to launch-day readiness?
 
 LaunchStudio is Manifera's productized offering for AI-native founders: the same senior engineers who deliver enterprise projects for clients like Vodafone and TNO apply that production-hardening experience to AI-built prototypes on a fixed scope and timeline, so a Product Hunt launch doesn't buckle under infrastructure it was never built to survive.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best day of the week to launch on Product Hunt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tuesday and Wednesday have the highest traffic ceiling, but the fiercest competition from well-funded teams. For solo founders, launching on Monday or Thursday often provides an easier path to the top spots, since fewer heavyweight competitors launch on those days."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to hire a top 'Hunter' to submit my product?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Hunting it yourself allows you to tell your authentic story in the Maker comment, which often converts better than a corporate submission by a third party. A well-known Hunter can add a small early credibility boost, but it is not worth trading equity or cash for."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it okay to ask people to upvote my product?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Directly asking for upvotes violates Product Hunt rules and will result in algorithmic suppression — the platform detects unnatural voting patterns and can silently hide your listing from the homepage. Ask for 'support' and 'feedback' instead."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the most common mistake founders make on launch day?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Failing to secure their backend infrastructure before the spike arrives. If your database crashes or Stripe webhooks fail under load, negative comments accumulate in real time on your own launch page, and they will permanently damage your ranking and reputation for that launch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio relate to Manifera when it comes to launch-day readiness?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio is Manifera's productized offering for AI-native founders: the same senior engineers who deliver enterprise projects for clients like Vodafone and TNO apply that production-hardening experience to AI-built prototypes on a fixed scope and timeline, so a Product Hunt launch doesn't buckle under infrastructure it was never built to survive."
-      }
-    }
-  ]
-}
-</script>

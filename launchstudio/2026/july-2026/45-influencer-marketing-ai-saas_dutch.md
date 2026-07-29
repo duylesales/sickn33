@@ -87,8 +87,6 @@ Dylan werkte samen met **LaunchStudio (door Manifera)** om het product lancering
 **Kosten en tijdlijn:** € 3.800 (Schaal- en wachtrijpakket) — productieklaar en binnen 10 werkdagen geïmplementeerd.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Waarom is influencer marketing beter dan Google Ads voor AI-tools?
@@ -110,52 +108,3 @@ Ja. Een virale video zorgt voor enorme verkeerspieken geconcentreerd in de eerst
 ### Hoe helpen LaunchStudio en Manifera specifiek bij verkeerspieken door influencers?
 
 De engineers van LaunchStudio, gesteund door elf jaar productie-ervaring van Manifera, voeren stresstests uit op uw database-, wachtrij- en cachelagen voordat uw campagne live gaat — dezelfde discipline die wordt toegepast bij zakelijke klanten zoals Vodafone zorgt ervoor dat een virale YouTube-demo omzet oplevert in plaats van een muur van 500-fouten.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Waarom is influencer marketing beter dan Google Ads voor AI-tools?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI vereist een 'wow'-factor die het beste visueel wordt overgebracht. Een YouTuber die zijn scherm deelt en de magie van uw tool demonstreert, biedt sociaal bewijs en gericht bereik waar tekstadvertenties niet aan kunnen tippen, en in tegenstelling tot een advertentie blijft de video voor u werken lang nadat het campagnebudget op is."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moet ik influencers met miljoenen volgers targeten?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nee. Richt u op micro-influencers (10.000 tot 50.000 abonnees) in hyperspecifieke niches met een gezonde verhouding weergaven-tot-abonnees. Hun publiek is meer betrokken, hun kosten zijn lager (of nul) en hun conversiepercentages zijn exponentieel hoger voor B2B-tools."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoeveel moet ik een micro-influencer betalen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Probeer kosten vooraf te vermijden. Bied hen een terugkerende affiliatecommissie met een hoog percentage (bijvoorbeeld 30 tot 50% van de omzet van het eerste jaar) getrackt met een cookieduur van 60 dagen, plus een aangepaste kortingscode voor hun publiek als back-up-trackingpad."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kan een influencer-video mijn servers laten crashen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja. Een virale video zorgt voor enorme verkeerspieken geconcentreerd in de eerste 30 tot 90 minuten. Als uw infrastructuur (databaseverbindingspooling, asynchrone taakwachtrijen, edge caching) niet is beveiligd, crasht uw app, wat de campagne en uw reputatie verpest bij een publiek dat u wellicht nooit een tweede kans geeft."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe helpen LaunchStudio en Manifera specifiek bij verkeerspieken door influencers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "De engineers van LaunchStudio, gesteund door elf jaar productie-ervaring van Manifera, voeren stresstests uit op uw database-, wachtrij- en cachelagen voordat uw campagne live gaat — dezelfde discipline die wordt toegepast bij zakelijke klanten zoals Vodafone zorgt ervoor dat een virale YouTube-demo omzet oplevert in plaats van een muur van 500-fouten."
-      }
-    }
-  ]
-}
-</script>

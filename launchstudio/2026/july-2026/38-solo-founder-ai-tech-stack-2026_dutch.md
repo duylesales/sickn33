@@ -105,8 +105,6 @@ Nora werkte samen met **LaunchStudio (door Manifera)** om het product lancerings
 **Kosten en tijdlijn:** € 1.900 (Solo Launch Package) — productieklaar en binnen 6 werkdagen geïmplementeerd.
 
 ---
-
----
 ## Veelgestelde vragen
 
 ### Wat is de beste AI-bouwer voor niet-technische oprichters?
@@ -128,52 +126,3 @@ Gebruik Stripe Checkout en het Stripe Customer Portal om betalingen, abonnemente
 ### Vervangt LaunchStudio deze stack, of werkt het ermee samen?
 
 Het werkt ermee samen. LaunchStudio vraagt u niet om uw Lovable-, Bolt- of Cursor-frontend opnieuw te bouwen — het engineeringteam van Manifera sluit aan op precies de hier beschreven stack (Supabase, Vercel, Stripe) en verhardt deze: het herstellen van RLS-beleidsregels, het verifiëren van webhooks, het beveiligen van API-sleutels en het instellen van monitoring, zodat de stack die u naar een demo bracht, u ook veilig naar betalende klanten brengt.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Wat is de beste AI-bouwer voor niet-technische oprichters?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lovable, Bolt en v0 zijn het beste voor niet-technische oprichters vanwege visuele, chatgestuurde generatie. Cursor (of Windsurf en Claude Code) is beter geschikt voor oprichters met enige codeerkennis die een diep geïntegreerde AI IDE en fijnere controle over de codebase willen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Waarom is React het dominante frontend-framework voor door AI gegenereerde apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI-modellen zijn getraind op enorme hoeveelheden openbare React-code, waardoor ze aanzienlijk betrouwbaarder zijn in het genereren van werkende componenten vergeleken met nieuwere of minder vertegenwoordigde frameworks. Dit is geen uitspraak over welk framework technisch het beste is — het is een uitspraak over de dichtheid van trainingsdata."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat moet ik gebruiken voor een database als solo-oprichter?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Supabase is de overweldigende standaardkeuze. Het biedt PostgreSQL (inclusief `pgvector` voor AI-embeddings), ingebouwde Auth, Row Level Security en automatisch gegenereerde API's, waardoor het niet meer nodig is om backend-servercode te schrijven — mits de RLS-beleidsregels daadwerkelijk zijn geconfigureerd, wat AI-bouwers niet altijd standaard doen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hoe handel ik betalingen af als solo-oprichter zonder betalingsengineer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gebruik Stripe Checkout en het Stripe Customer Portal om betalingen, abonnementen en facturen af te handelen zonder zelf die complexe interfaces te bouwen. Zorg er wel voor dat uw webhook-eindpunt de handtekening van Stripe verifieert — een niet-geverifieerde webhook is een van de meest voorkomende beveiligingslekken in door AI gegenereerde factureringscode."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Vervangt LaunchStudio deze stack, of werkt het ermee samen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Het werkt ermee samen. LaunchStudio vraagt u niet om uw Lovable-, Bolt- of Cursor-frontend opnieuw te bouwen — het engineeringteam van Manifera sluit aan op precies de hier beschreven stack (Supabase, Vercel, Stripe) en verhardt deze: het herstellen van RLS-beleidsregels, het verifiëren van webhooks, het beveiligen van API-sleutels en het instellen van monitoring, zodat de stack die u naar een demo bracht, u ook veilig naar betalende klanten brengt."
-      }
-    }
-  ]
-}
-</script>

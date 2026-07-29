@@ -66,7 +66,7 @@ Ready to launch an affiliate army? LaunchStudio configures the complex Stripe an
 
 "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, Founder & Managing Director of Manifera.
 
-LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. Browse our [package options](https://launchstudio.eu/en/#packages) or [get a free quote today](https://launchstudio.eu/en/#contact).
+LaunchStudio is operated by **Manifera**, an international software engineering company founded in **2014** and led by Founder & Director **Herre Roelevink**. Combining "Dutch management with Vietnamese mastery," Manifera maintains headquarters in **Amsterdam, the Netherlands** (Herengracht 420, 1017 BZ) and development hubs in **Singapore** (100 Tras Street #16-01) and **Ho Chi Minh City, Vietnam**. Through LaunchStudio, our senior engineering teams take your AI-built frontend and implement production-ready security controls, live payment gateways, secure hosting, and monitoring, transforming your prototype into a secure and compliant MVP in 1 to 3 weeks. Browse our [package options](https://launchstudio.eu/en/#packages), [get a free quote today](https://launchstudio.eu/en/#contact), or read about [Manifera's custom software development practice](https://www.manifera.com/services/custom-software-development/).
 
 ## Real example
 
@@ -79,10 +79,6 @@ Jaxon partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Result:** Jaxon onboarded 50 affiliates who drove over €12,000 in referral sales with automated payouts.
 
 **Cost & Timeline:** €1,500 (Affiliate Setup Package) — production-ready and deployed in 5 business days.
-
----
-
----
 
 ---
 ## Frequently Asked Questions
@@ -106,52 +102,3 @@ Yes. Turning users into advocates creates a viral loop with higher-converting tr
 ### Where does Manifera fit into building affiliate infrastructure for my AI SaaS?
 
 Manifera is the engineering company behind LaunchStudio. When an affiliate program needs more than a plug-and-play Rewardful install — custom attribution logic, multi-tier commission structures, or a Stripe integration that was never hardened past the AI-prototype stage — LaunchStudio scopes it as a fixed, short project and pulls in the same senior engineers Manifera has used on production billing systems since 2014.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How does an affiliate program work for SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Third parties promote your software using tracking links. If someone clicks their link and buys, the affiliate receives a percentage of that revenue, typically for a fixed period. It is a zero-risk, performance-only marketing channel since you pay only after real revenue lands."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much commission should I offer affiliates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SaaS margins allow for aggressive payouts. The industry standard for AI tools is offering a 20% to 40% recurring commission for the first year of the customer's subscription, sometimes combined with a flat bounty for enterprise-tier deals."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I track affiliate sales?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use established platforms like Rewardful or PartnerStack. They integrate directly with Stripe, automatically track referrals via cookies or server-side attribution, and handle the complex math of recurring payouts, refund holdbacks, and tax reporting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I let my existing users become affiliates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Turning users into advocates creates a viral loop with higher-converting traffic than cold outreach. If users know they can pay for their subscription by referring colleagues, they will market the tool for you at no acquisition cost."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where does Manifera fit into building affiliate infrastructure for my AI SaaS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Manifera is the engineering company behind LaunchStudio. When an affiliate program needs more than a plug-and-play Rewardful install — custom attribution logic, multi-tier commission structures, or a Stripe integration that was never hardened past the AI-prototype stage — LaunchStudio scopes it as a fixed, short project and pulls in the same senior engineers Manifera has used on production billing systems since 2014."
-      }
-    }
-  ]
-}
-</script>

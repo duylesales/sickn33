@@ -87,10 +87,6 @@ Dylan partnered with **LaunchStudio (by Manifera)** to make the product launch-r
 **Cost & Timeline:** €3,800 (Scale & Queue Package) — production-ready and deployed in 10 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### Why is influencer marketing better than Google Ads for AI tools?
@@ -112,52 +108,3 @@ Yes. A viral video sends massive traffic spikes concentrated in the first 30-90 
 ### How does LaunchStudio and Manifera help specifically with influencer-driven traffic spikes?
 
 LaunchStudio's engineers, backed by Manifera's eleven years of production engineering experience, stress-test your database, queueing, and caching layers before your campaign goes live — the same discipline applied to enterprise clients like Vodafone is used to make sure a viral YouTube demo drives revenue instead of a wall of 500 errors.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why is influencer marketing better than Google Ads for AI tools?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI requires a 'wow' factor that is best conveyed visually. A YouTuber sharing their screen and demonstrating the magic of your tool provides social proof and targeted reach that text ads cannot match, and unlike an ad, the video keeps working for you long after the campaign budget runs out."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I target influencers with millions of followers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Target micro-influencers (10k-50k subscribers) in hyper-specific niches with a healthy views-to-subscribers ratio. Their audience is more engaged, their fees are lower (or zero), and their conversion rates are exponentially higher for B2B tools."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much should I pay a micro-influencer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Try to avoid upfront fees. Offer them a high-percentage recurring affiliate commission (e.g., 30-50% of the first year's revenue) tracked with a 60-day cookie window, plus a custom discount code for their audience as a backup attribution path."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can an influencer video crash my servers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. A viral video sends massive traffic spikes concentrated in the first 30-90 minutes. If your infrastructure (database connection pooling, async job queues, edge caching) isn't secured, your app will crash, ruining the campaign and your reputation with an audience that may never give you a second chance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio and Manifera help specifically with influencer-driven traffic spikes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio's engineers, backed by Manifera's eleven years of production engineering experience, stress-test your database, queueing, and caching layers before your campaign goes live — the same discipline applied to enterprise clients like Vodafone is used to make sure a viral YouTube demo drives revenue instead of a wall of 500 errors."
-      }
-    }
-  ]
-}
-</script>

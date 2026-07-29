@@ -91,10 +91,6 @@ Violet partnered with **LaunchStudio (by Manifera)** to make the product launch-
 **Cost & Timeline:** €4,500 (Compliance & Security Package) — production-ready and deployed in 15 business days.
 
 ---
-
----
-
----
 ## Frequently Asked Questions
 
 ### Why do enterprise clients reject standard AI wrappers?
@@ -116,52 +112,3 @@ SOC 2 Type II is a US-centric third-party audit of your security practices over 
 ### How does LaunchStudio's relationship with Manifera help when I'm trying to pass an enterprise security review?
 
 LaunchStudio applies the same security-hardening discipline Manifera has used across 160+ enterprise projects — for clients like Vodafone and TNO — to fixed-scope AI wrapper projects. That matters directly in an enterprise sales cycle: you can point a skeptical CISO to an 11-year-old, Amsterdam-headquartered engineering firm with a real compliance track record behind your app, rather than asking them to trust a solo founder's AI-generated codebase on faith.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why do enterprise clients reject standard AI wrappers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "They fear their proprietary data will be sent to public models and potentially used for training or exposed through weak infrastructure. If your app relies on standard APIs without a signed Data Processing Agreement, a documented sub-processor list, and hardened database security, it violates most corporate security policies before a human even reviews your product."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does OpenAI train on data sent through its API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Data submitted to OpenAI's paid API is not used for model training and is retained only 30 days for abuse monitoring (or zero days with a Zero Data Retention agreement). You must clarify this distinction to procurement teams, who frequently confuse the API with the consumer ChatGPT product — and you should have it written into your DPA, not just stated verbally."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I guarantee complete data privacy to an enterprise client?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Start with Azure OpenAI Service or AWS Bedrock, which run flagship-class models inside the client's own cloud tenant with contractual no-training guarantees and regional data residency. For the strictest buyers (defense, some healthcare systems), offer a fully self-hosted open-weight model like Llama 3.1 or Mistral Large on a dedicated Virtual Private Cloud, though the GPU infrastructure cost only makes sense once a contract justifies it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is SOC 2 compliance, and do I need it — or should I pursue ISO 27001 instead?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SOC 2 Type II is a US-centric third-party audit of your security practices over a 3-12 month observation period; ISO 27001 is the equivalent most EU enterprise buyers ask for first. Both require strong internal security controls and infrastructure hardening to pass, and both cost real time and money — pursue either only once a real enterprise deal is asking for it, but build your infrastructure securely from day one so the audit is a formality."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does LaunchStudio's relationship with Manifera help when I'm trying to pass an enterprise security review?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LaunchStudio applies the same security-hardening discipline Manifera has used across 160+ enterprise projects — for clients like Vodafone and TNO — to fixed-scope AI wrapper projects. That matters directly in an enterprise sales cycle: you can point a skeptical CISO to an 11-year-old, Amsterdam-headquartered engineering firm with a real compliance track record behind your app, rather than asking them to trust a solo founder's AI-generated codebase on faith."
-      }
-    }
-  ]
-}
-</script>
