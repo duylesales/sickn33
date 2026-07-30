@@ -63,7 +63,7 @@ Manifera's [custom software development practice](https://www.manifera.com/servi
 
 Logan, a sales analyst, used **Cursor** to build a contact scraping bot. The LLM response occasionally returned messy, unparseable text instead of the structured JSON required by his database.
 
-He reached out to **LaunchStudio (by Manifera)**. The team implemented strict Zod schema validation using OpenAI's structured outputs API.
+He reached out to **LaunchStudio (by Manifera, founded in 2014)**. The team implemented strict Zod schema validation using OpenAI's structured outputs API.
 
 **Result:** JSON parsing errors dropped to zero, ensuring reliable automated database imports.
 

@@ -69,7 +69,7 @@ Manifera's broader [custom software development services](https://www.manifera.c
 
 Elijah, a travel agent, used **Lovable** to build an AI trip planner. The general chatbot frequently went off-topic and failed to collect required booking information in sequence.
 
-He worked with **LaunchStudio (by Manifera)** to rebuild the planner using a deterministic, state-machine-driven agent flow.
+He worked with **LaunchStudio (by Manifera, founded in 2014)** to rebuild the planner using a deterministic, state-machine-driven agent flow.
 
 **Result:** Booking collection success rates rose from 40% to 95%, with the AI prompting users sequentially for missing details.
 

@@ -1,13 +1,19 @@
-🌡️ Is your AI generating inconsistent or wild responses? 🤪
+🚨 Charlotte, a finance coordinator, used **Bolt** to build an invoice classification bot — random hallucinations kept occurring because the temperature was left at the SDK default of 0.8, causing category labels and totals to drift between runs on identical invoices. 🧾
 
-Leaving your LLM's `temperature` setting at default when generating structured data (like JSON or code) guarantees syntax errors and broken application logic. 📉
+Temperature is math, not vibes — one overlooked parameter is the difference between a reliable software function and a coin flip. 🧠
 
-At **LaunchStudio**, we precisely calibrate LLM parameters for B2B use cases:
-✅ Temperature `0.0` for deterministic tasks like data extraction and routing 🎯
-✅ Temperature `0.7` for creative tasks like marketing copy generation 🎨
-✅ Adjusting `top_p` and `presence_penalty` to eliminate repetitive outputs ⚙️
+❌ Temperature left at the SDK default, tuned for consumer chat rather than B2B data work
+❌ Category labels and totals drifting between runs on the exact same document
+❌ No structured-output enforcement to catch malformed results before they hit the database
 
-Control your model's creativity to ensure predictable results. 🚀
-👉 Learn how to manage LLM temperature for predictable outputs: [Link]
+✅ Temperature hardcoded to 0.0 for near-deterministic, repeatable extraction
+✅ Strict system instructions removing ambiguity from every prompt
+✅ JSON schema enforcement rejecting malformed outputs before they reach the database
 
-#LLM #PromptEngineering #AIproduct #LaunchStudio #Founders #TechLeadership
+At **LaunchStudio**, we've applied this same rigor — temperature routing, structured outputs, and Eval-driven development — since 2014 through Manifera. 🛡️
+
+Charlotte's invoice classification became 100% deterministic, matching manual bookkeeping outcomes. 🚀
+
+👉 Read the full fix: [Link to article]
+
+#AINativeFounder #LaunchStudio #Manifera #LLMTemperature #AIReliability

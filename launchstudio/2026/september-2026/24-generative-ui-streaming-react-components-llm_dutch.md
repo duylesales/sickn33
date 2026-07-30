@@ -1,92 +1,138 @@
 ---
-Titel: React Componenten Streamen van LLMs in AI software development
-Trefwoorden: AI softwareontwikkeling, Generatief, UI, Streaming, Reageren, Componenten, LLM's
+Titel: React Componenten Streamen van LLMs in AI Softwareontwikkeling
+Trefwoorden: ai software engineering, ai app bouwen, ai en software ontwikkeling, ai frontend, ai native, ai saas, ai uitrol, ai prototype
 Koperfase: Bewustwording
 ---
 
-# React Componenten Streamen van LLMs in AI software development
-Het bepalende kenmerk van de eerste generatie AI-toepassingen was de ‘Wall of Text’. U stelde de AI een complexe datavraag en deze printte enthousiast vijf alinea's met compacte, onleesbare tekst uit. In een B2B-omgeving willen mensen geen paragrafen over data lezen; ze willen naar grafieken kijken. De volgende evolutie van de SaaS-architectuur is **Generatieve UI**, waardoor de LLM op dynamische wijze functionele, interactieve frontendcomponenten kan weergeven.
+# React Componenten Streamen van LLMs in AI Softwareontwikkeling
 
-## Voorbij de prijsverlaging
+Het kenmerk van de eerste generatie AI-toepassingen was de "Muur van Tekst" (Wall of Text). U vroeg de AI een complexe datavraag, en het printte enthousiast vijf alinea's aan onleesbare tekst uit. In een B2B-omgeving willen mensen geen alinea's over data lezen; ze willen grafieken bekijken. De volgende evolutie van SaaS-architectuur is **Generative UI**—het toelaten dat de LLM dynamisch functionele, interactieve frontend-componenten rendert.
 
-Vroege pogingen om AI-uitvoer te formatteren waren afhankelijk van Markdown. De LLM kan tekst vetgedrukt maken, eenvoudige tabellen maken en misschien een statisch Mermaid.js-diagram weergeven. Maar Markdown is volledig statisch. De gebruiker kan er geen interactie mee hebben, de tabel filteren of op een knop in de uitvoer klikken om verdere actie te ondernemen.
+## Verder dan Markdown
 
-De generatieve gebruikersinterface doorbreekt deze beperking. Als een gebruiker een Financial AI-agent vraagt: *"Wat waren onze top 3 uitgaven afgelopen maand?"*, antwoordt de AI niet met een sms. De AI streamt een volledig functioneel, interactief React-cirkeldiagram rechtstreeks naar de chatstream.
+Vroege pogingen om AI-output te formatteren vertrouwden op Markdown. De LLM kon tekst vetdrukken, eenvoudige tabellen maken en misschien een statisch Mermaid.js-diagram uitvoeren. Maar Markdown is volledig statisch. De gebruiker kan er niet mee interageren, de tabel niet filteren of op een knop in de output klikken.
 
-## Hoe het werkt: veilige componenttoewijzing
+Generative UI doorbreekt deze beperking. Als een gebruiker een Financiële AI Agent vraagt: *"Wat waren onze top 3 uitgaven vorige maand?"*, antwoordt de AI niet met tekst. De AI streamt een volledig functionele, interactieve React Taartgrafiek (Pie Chart) direct in de chat-stream, waarbij de categorieën als interactieve segmenten worden gerenderd.
 
-Een veel voorkomende misvatting is dat de LLM direct onbewerkte React-code schrijft en deze in de browser uitvoert. Dit zou traag en onbetrouwbaar zijn en een enorm beveiligingsprobleem met Cross-Site Scripting (XSS) vormen.
+## Hoe het Werkt: Veilige Component-Mapping
 
-Generatieve gebruikersinterface maakt gebruik van **Tool Calling en Component Mapping**.
+Een veelvoorkomend misverstand is dat de LLM op de achtergrond ruwe React-code schrijft en deze in de browser uitvoert. Dit zou traag, onbetrouwbaar en een enorm Cross-Site Scripting (XSS) beveiligingsrisico zijn.
 
-1. Uw frontend-ingenieurs bouwen vooraf veilige, mooie React-componenten (bijvoorbeeld `<ExpenseChart />`).
+Generative UI gebruikt in plaats daarvan **Tool Calling en Component Mapping**:
 
-2. U voorziet de LLM van een tool met de naam `render_expense_chart` en definieert het vereiste JSON-schema (bijvoorbeeld een reeks categorieën en bedragen).
+1. Uw frontend-engineers bouwen vooraf veilige React-componenten (bijv. `<ExpenseChart />`).
+2. U voorziet de LLM van een tool genaamd `render_expense_chart` en definieert het vereiste JSON-schema (bijv. een array van categorieën en bedragen), gecontroleerd via een validatiebibliotheek zoals Zod.
+3. Wanneer de gebruiker de vraag stelt, beslist de LLM de tool aan te roepen en voert de gestructureerde JSON-payload uit.
+4. Uw frontend (vaak met behulp van de Vercel AI SDK en React Server Components) vangt de JSON op, koppelt deze aan de `<ExpenseChart />` component en geeft de data door als props.
 
-3. Wanneer de gebruiker de vraag stelt, besluit de LLM de tool aan te roepen en voert de strikte JSON-payload uit.
+Het resultaat is een perfect gestyled UI-element dat op het scherm verschijnt en direct interactief is.
 
-4. Uw frontend (vaak gebruikmakend van de Vercel AI SDK en React Server Components) onderschept de JSON. In plaats van de onbewerkte JSON weer te geven, wordt deze toegewezen aan de component `<ExpenseChart />`, waarbij de gegevens van de AI dynamisch worden doorgegeven als rekwisieten.
+## Interactieve Output
 
-Het resultaat is een perfect vormgegeven, merkconform UI-element dat onmiddellijk op het scherm verschijnt.
+Omdat de gegenereerde UI een standaard React-component is, behoudt het de volledige functionaliteit. De gebruiker kan over de grafiek zweven voor tooltips, klikken om een categorie te isoleren of een datumbereik-schuifregelaar gebruiken om de data te herfilteren.
 
-## Interactieve uitvoer
+Belangrijker is dat u actiegerichte UI kunt renderen. Als de gebruiker de AI vraagt: *"Boek een vlucht naar Londen,"* kan de AI een `<FlightConfirmationCard />` renderen met een knop "Ticket Kopen". Wanneer de gebruiker op de knop klikt, triggert dit een echte Stripe API-call op uw backend.
 
-Omdat de gegenereerde gebruikersinterface een standaard React-component is, behoudt deze de volledige interactiviteit. De gebruiker kan over het door AI gegenereerde cirkeldiagram bewegen om tooltips te bekijken. 
+## Gedeeltelijke Payloads Streamen
 
-Wat nog belangrijker is, is dat u een bruikbare gebruikersinterface kunt maken. Als de gebruiker de AI vraagt ​​om *"Een vlucht naar Londen te boeken",* kan de AI een `<FlightConfirmationCard />` weergeven met daarin een grote groene knop "Ticket kopen". Wanneer de gebruiker op de knop in de chatballon van de AI klikt, wordt er een echte Stripe API-aanroep op uw backend geactiveerd. De AI verandert van adviseur naar interactieve software-operator.
+Een subtiliteit die veel teams missen: JSON streamt niet zo schoon als platte tekst. Als u wacht tot de hele tool-call payload binnen is, staart de gebruiker secondenlang naar een leeg vak. Een beter patroon is het gebruik van een streaming-JSON parser die een gedeeltelijk compleet object kan renderen terwijl het binnenkomt.
 
-## Het UX-voordeel in B2B SaaS
+## Het UX-Voordeel in B2B SaaS
 
-Dankzij de generatieve gebruikersinterface is uw SaaS oneindig kneedbaar. In plaats van gebruikers te dwingen door tien verschillende vaste dashboardpagina's te navigeren om specifieke statistieken te vinden, typt de gebruiker eenvoudigweg een verzoek en bouwt de AI dynamisch een aangepast, kortstondig dashboard direct in het gesprek, specifiek afgestemd op hun exacte vraag. Het is de ultieme gepersonaliseerde software-ervaring.
+Generative UI maakt uw SaaS oneindig aanpasbaar. In plaats van gebruikers door 10 verschillende vaste dashboardpagina's te laten navigeren, typt de gebruiker een verzoek, en de AI bouwt dynamisch een op maat gemaakt dashboard in de conversatie.
 
-## Belangrijkste afhaalrestaurants
+Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat." Generative UI is hiervan een schoolvoorbeeld — het idee is meeslepend, maar de veilige implementatie maakt het productie-rijp. Opgericht in **2014**, heeft Manifera dit soort componenten-architectuur gebouwd in meer dan 160 projecten, zoals gedocumenteerd op de [Manifera portfolio-pagina](https://www.manifera.com/portfolio/).
 
-- De 'Wall of Text' is een vreselijke UX voor B2B-data. Enterprise-gebruikers moeten complexe informatie visueel consumeren via grafieken, grafieken en tabellen.
+## Belangrijkste Inzichten
 
-- 'Generatieve UI' is een architectuur waarbij de AI op een vraag reageert door een volledig functionele, interactieve frontend-component (zoals een React-diagram) weer te geven in plaats van platte tekst.
+- De "Muur van Tekst" is een slechte UX voor B2B-data. Zakelijke gebruikers moeten complexe informatie visueel consumeren via grafieken en tabellen.
+- "Generative UI" is een architectuur waarbij de AI op een query reageert door een functioneel, interactief frontend-component (zoals een React-grafiek) te renderen.
+- De LLM schrijft geen ruwe React-code (wat een beveiligingsrisico is). Het voert gestructureerde JSON uit via Tool Calling, die door de frontend in vooraf gebouwde React-componenten wordt gestopt.
+- Omdat de UI native React is, is deze volledig interactief. Gebruikers kunnen over grafieken zweven, datatabellen sorteren of op actieknoppen klikken.
+- Generative UI (ondersteund door de Vercel AI SDK) transformeert een AI-chatbot in een dynamisch software-dashboard.
 
-- De LLM schrijft geen onbewerkte React-code (wat een veiligheidsrisico is). Het voert gestructureerde JSON uit via Tool Calling. De frontend onderschept de JSON en geeft deze als rekwisieten door aan vooraf gebouwde, veilige React-componenten.
+## Ontsnap aan de Muur van Tekst
 
-- Omdat de gebruikersinterface native React is, is deze volledig interactief. Gebruikers kunnen over grafieken bewegen, gegevenstabellen sorteren of op bruikbare knoppen klikken die direct in de AI-chatinterface worden weergegeven.
+Zijn uw zakelijke gebruikers moe van het lezen van eindeloze alinea's AI-gegenereerde tekst? **LaunchStudio** maakt gebruik van de Vercel AI SDK om "Generative UI" te ontwerpen.
 
-- Generatieve UI (sterk ondersteund door raamwerken zoals de Vercel AI SDK) transformeert een AI-chatbot van een tekstgenerator in een dynamisch, gepersonaliseerd softwaredashboard.
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanwege het tekort aan ervaren ontwikkelaars in Europa richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh City, Vietnam** (10 Pho Quang Street), om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze enterprise-grade wereldwijde softwareontwikkelingsexpertise om hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
 
-## Ontsnap aan de muur van tekst
+## Echt Voorbeeld
 
-Zijn uw zakelijke gebruikers moe van het lezen van eindeloze paragrafen met door AI gegenereerde tekst? **LaunchStudio** maakt gebruik van de Vercel AI SDK om een ​​geavanceerde 'Generatieve UI' te ontwerpen, waardoor uw AI-agenten onmiddellijk interactieve, prachtige datavisualisaties rechtstreeks in de gebruikersinterface kunnen weergeven.
+### Een AI-Native Oprichter in Actie: Generative UI Implementeren voor een AI Reisplanner
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+Grace, een reisblogger, gebruikte **Cursor** om een reisplanner te bouwen. De AI retourneerde tekstbeschrijvingen van hotels, wat statisch aanvoelde.
 
-## Echt voorbeeld
+Ze nam contact op met **LaunchStudio (door Manifera)**. Het engineeringteam integreerde Next.js generative UI componenten die interactieve boekingskaarten en kaarten renderen.
 
-### Een AI-native oprichter in actie: implementatie van generatieve gebruikersinterface voor een AI-reisrouteplanner
+**Resultaat:** App-interacties stegen met 150%, en conversies naar boekingslinks stegen met 40%.
 
-Grace, een reisblogger, gebruikte **Cursor** om een routebouwer te bouwen. De AI retourneerde tekstbeschrijvingen van hotels, die statisch en saai aanvoelden.
-
-Ze nam contact op met **LaunchStudio (door Manifera)**. Het technische team integreerde de generatieve UI-componenten van Next.js die interactieve boekingskaarten en kaarten weergeven.
-
-**Resultaat:** De app-interactiepercentages zijn met 150% gestegen en het aantal gebruikersconversies naar boekingslinks van partners is met 40% gestegen.
-
-**Kosten en tijdlijn:** € 2.400 (generatieve UI-integratie) — productieklaar en binnen 5 werkdagen geïmplementeerd.
+**Kosten en Tijdlijn:** € 2.400 (Generative UI Integration Package) — klaar voor productie en geïmplementeerd binnen 5 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-## Veelgestelde vragen
+### 1. Wat is Generative UI?
+Een architectuurpatroon waarbij een AI de data retourneert die nodig is om een functioneel, interactief frontend-component (zoals een React-datatabel) direct in de chat-interface te renderen.
 
-### Wat is generatieve gebruikersinterface?
+### 2. Waarom is tekstoutput slecht voor B2B-toepassingen?
+Complexe zakelijke data is moeilijk te lezen als een massale alinea tekst. Mensen hebben visuele grafieken en interactieve tabellen nodig om B2B-data snel te verwerken.
 
-Het is een architectonisch patroon waarbij een AI de gegevens retourneert die nodig zijn om een ​​volledig functionele, interactieve frontend-component (zoals een React-gegevenstabel) direct in de chatinterface weer te geven, in plaats van alleen maar tekst.
+### 3. Schrijft de AI daadwerkelijk de React-code?
+Nee, dat zou traag en onveilig zijn. De AI voert een zuivere JSON-payload uit. Uw frontend-applicatie vangt de JSON op en injecteert deze in veilige, vooraf gebouwde React-componenten.
 
-### Waarom is tekstuitvoer slecht voor B2B-applicaties?
+### 4. Zijn de gegenereerde componenten interactief?
+Ja. Omdat het native React-componenten zijn, kunnen gebruikers ermee interageren: zweven voor tooltips, data filteren of op actieknoppen klikken.
 
-Complexe bedrijfsgegevens (zoals uitsplitsingen van maandelijkse inkomsten) zijn uiterst moeilijk te lezen als een enorme paragraaf tekst. Mensen hebben visuele grafieken en interactieve tabellen nodig om B2B-gegevens snel te kunnen analyseren.
+### 5. Hoe past Manifera's ervaring toe op Generative UI?
+Generative UI vereist schemavalidatie, componenttesten en streaming-veilige rendering. LaunchStudio en Manifera implementeren deze laag op bestaande prototypes.
 
-### Schrijft de AI daadwerkelijk de React-code?
-
-Nee, dat zou traag en onzeker zijn. De AI voert een pure JSON-gegevenspayload uit. Uw frontend-applicatie onderschept de JSON en injecteert deze in veilige, vooraf gebouwde React-componenten die door uw technici zijn gemaakt.
-
-### Zijn de gegenereerde componenten interactief?
-
-Ja. Omdat het native React-componenten zijn, kunnen gebruikers er perfect mee communiceren. Ze kunnen de muisaanwijzer gebruiken voor tooltips of op de knoppen 'Goedkeuren' klikken die direct in de chatstream worden weergegeven.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is Generative UI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een patroon waarbij de AI gestructureerde JSON-data levert om dynamisch interactieve React-componenten (zoals grafieken) in de UI te renderen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waarom is tekstoutput slecht voor B2B-toepassingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat lappen tekst ongeschikt zijn voor het snel analyseren van complexe bedrijfsdata. Gebruikers hebben interactieve visuele dashboards nodig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Schrijft de AI daadwerkelijk de React-code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De AI stuurt uitsluitend JSON-data via Tool Calling, die door de frontend veilig in vooraf geschreven React-componenten wordt geladen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn de gegenereerde componenten interactief?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Het zijn volledige React-componenten waarmee gebruikers data kunnen filteren, tooltips kunnen bekijken en actieknoppen kunnen bedienen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe past Manifera's ervaring hierop toe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio en Manifera bouwen robuuste component-mapping en streaming JSON-pipelines om AI-prototypes om te zetten in productie-UI's."
+      }
+    }
+  ]
+}
+</script>

@@ -1,13 +1,19 @@
-💀 Is uw bedrijfs-AI-strategie slechts een chatbot? 🛑
+🚨 Audrey, een juridisch tekstschrijver, bouwde met **Bolt** een contractassistent. Gebruikers vonden de chatbotinterface traag en omslachtig — AI-suggesties uit de chat kopiëren en handmatig, clausule voor clausule, samenvoegen in een werkend concept. 📝
 
-Bedrijfswerknemers willen niet kletsen met hun gegevens; ze willen dat hun tools anticiperen op hun behoeften en vervelende taken automatiseren zonder dat ze daarom vragen. 📉
+De chatbot-UI sterft uit in B2B-software, omdat zakelijke gebruikers niet met hun software willen praten — ze willen dat het werk gewoon gedaan wordt. 🧠
 
-Bij **LaunchStudio** bouwen we aan de post-chatbot enterprise AI:
-✅ Het ontwerpen van "Invisible AI" die stil op de achtergrond van bestaande workflows werkt ⚙️
-✅ Implementeren van proactieve agenten die e-mails of rapporten opstellen voordat u er zelfs maar om vraagt 📝
-✅ AI diep integreren in commandopaletten en toetsenbordgestuurde interfaces ⌨️
+❌ Een leeg chatvenster dat gebruikers dwingt elke voorgestelde wijziging handmatig te kopiëren en plakken
+❌ Geen manier om AI-suggesties inline naast het daadwerkelijke document te zien
+❌ Bewerkingscycli die uitliepen omdat chat de verkeerde interface is voor documentwerk
 
-Zorg ervoor dat gebruikers niet langer met uw software praten. 🚀
-👉 Lees onze stelling over de dood van de chatbot-gebruikersinterface in enterprise AI: [Link]
+✅ Een interactief, naast elkaar geplaatst rich text editor-canvas, gebouwd op TipTap
+✅ AI-suggesties weergegeven als inline bijgehouden wijzigingen, met één klik te accepteren of af te wijzen
+✅ Een workflow waarbij nooit meer tekst uit een chatvenster hoefde te worden gekopieerd
 
-#UXDesign #EnterpriseAI #AIproduct #LaunchStudio #Founders #TechLeadership
+Bij **LaunchStudio** ontwerpen we sinds elf jaar, via Manifera, precies dit soort UX-gerichte AI-architectuur voor zakelijke klanten zoals Vodafone en TNO. 🛡️
+
+De bewerkingscycli van documenten halveerden voor Audrey's gebruikers, en de retentie steeg met 35%. 🚀
+
+👉 Ontdek waarom de chatbot-UI ten dode is opgeschreven: [Link naar artikel]
+
+#AINativeFounder #LaunchStudio #Manifera #InvisibleAI #ProductUX

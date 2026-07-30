@@ -1,13 +1,19 @@
-🇪🇺 Denkt u dat de EU AI-wet niet van toepassing is op uw in de VS gevestigde startup? 🛑
+🇪🇺 Wyatt, een HR-techoprichter, gebruikte **Cursor** om een cv-screeningapp te bouwen — maar liep juridisch vast bij zijn expansie naar Europa omdat hij geen AI Act-auditlogs had. 📋
 
-Als uw AI SaaS-product beschikbaar is voor gebruikers in Europa, of als het gegevens verwerkt die toebehoren aan EU-burgers, kan niet-naleving leiden tot boetes tot € 35 miljoen. 📉
+De EU AI Act heeft extraterritoriale werking: één gebruiker die inlogt vanuit Berlijn is genoeg om uw Amerikaanse startup onder de jurisdictie van Brussel te plaatsen, met boetes tot 7% van de wereldwijde omzet. 🧠
 
-Bij **LaunchStudio** helpen we startups te navigeren door de wereldwijde AI-compliance:
-✅ Het implementeren van strikte transparantiemaatregelen om door AI gegenereerde inhoud te classificeren 📝
-✅ Het documenteren van risicobeoordelingen voor AI-beslissingsworkflows waarbij veel op het spel staat 📋
-✅ Het opzetten van helder menselijk toezicht en terugvalmechanismen 🧑‍⚖️
+❌ Ervan uitgaan dat een puur Amerikaanse startup vrijgesteld is, alleen omdat de servers buiten de EU staan
+❌ High-Risk-systemen (HR-screening, kredietbeoordeling) die volledig autonoom draaien, zonder menselijke override
+❌ Denken dat "OpenAI is compliant" u ontslaat van verantwoordelijkheid — de downstream-deployer blijft aansprakelijk
 
-Laat onwetendheid op het gebied van de regelgeving uw wereldwijde expansie niet tot zinken brengen. 🚀
-👉 Lees waarom de EU AI Act belangrijk is voor startups in de VS: [Link]
+✅ Uw systeem correct classificeren onder de risiconiveaus van de wet vóórdat u lanceert, niet pas na het juridisch onderzoek van een prospect
+✅ Onveranderlijke, tijdgestempelde auditlogs die precies vastleggen waarom de AI elke score-beslissing nam
+✅ Een Human-in-the-Loop-controlepoort waarmee een compliance officer elke beslissing kan overrulen voordat deze definitief is
 
-#Compliance #EUAIAct #AIproduct #LaunchStudio #Founders #TechLeadership
+Bij **LaunchStudio**, aangedreven door Manifera sinds 2014, bouwen we exact dit soort compliance-architectuur, over 160+ opgeleverde projecten. 🛡️
+
+Wyatts app voldoet nu aan de documentatievereisten van de EU AI Act, wat zijn Europese verkoopkanalen ontsluit. 🚀
+
+👉 Laat uw AI Act-blootstelling controleren: [Link naar artikel]
+
+#AINativeFounder #LaunchStudio #Manifera #EUAIAct #AICompliance

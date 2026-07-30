@@ -1,13 +1,19 @@
-🕸️ Is your AI agent vulnerable to Server-Side Request Forgery? 🛑
+🚨 Owen, a price-tracker developer, used **Lovable** to build a scraper — but insecure browser requests got it flagged and blocked by nearly every target site it touched. 🕸️
 
-Giving an LLM unconstrained access to make HTTP requests (like browsing the web) means an attacker can trick the model into accessing internal microservices on your VPC. 📉
+Giving an AI agent a "fetch this URL" tool hands it the keys to your server's network layer, and one unsandboxed request can trigger a full-blown SSRF attack. 🧠
 
-At **LaunchStudio**, we sandbox AI agents to prevent SSRF attacks:
-✅ Constraining agent web browsing to isolated, ephemeral cloud functions 🛡️
-✅ Implementing strict URL allowlists and denying access to internal IP ranges 🚦
-✅ Running agent execution environments completely decoupled from core backend services ⚙️
+❌ A hacker prompting your agent to fetch `169.254.169.254`, the AWS metadata endpoint holding your live IAM credentials
+❌ DNS rebinding — a "safe" domain that resolves to an internal IP milliseconds after your denylist check passes
+❌ Open-source agent toolkits that ship with zero built-in SSRF protections
 
-Don't let a clever prompt compromise your internal network. 🚀
-👉 Read our guide on preventing SSRF attacks in AI agents: [Link]
+✅ Strict URL denylisting blocking localhost, internal IP ranges, metadata endpoints, and dangerous schemes like `file://`
+✅ Resolve-then-pin DNS handling so the domain can't switch targets after validation
+✅ Network-sandboxed tool execution in an isolated Lambda or container with zero access to production databases
 
-#Security #SSRF #AIproduct #LaunchStudio #Founders #TechLeadership
+At **LaunchStudio**, Manifera has spent 11+ years since 2014 hardening exactly this class of infrastructure risk across 160+ delivered projects. 🛡️
+
+Owen's scraper success rate reached 98%, securing reliable pricing data for his business. 🚀
+
+👉 See how we sandbox agent tool calls: [Link to article]
+
+#AINativeFounder #LaunchStudio #Manifera #SSRFPrevention #AIAgentSecurity

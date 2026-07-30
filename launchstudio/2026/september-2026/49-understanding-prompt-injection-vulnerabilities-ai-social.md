@@ -1,13 +1,19 @@
-💉 Is your AI application vulnerable to prompt injection? 🛑
+⚠️ Luke, a support lead, used **Lovable** to build a PDF search app — then watched a user bypass his document access controls with a single prompt injection. 💉
 
-Allowing user input to blindly override your system instructions can turn your helpful AI assistant into a spam generator or a tool for extracting sensitive proprietary logic. 📉
+LLMs process your system prompt and a user's input as one undifferentiated stream of tokens, so the model can't inherently tell which instruction actually has authority. 🧠
 
-At **LaunchStudio**, we implement defenses against prompt injection:
-✅ Using specialized prompt injection detection models (like ProtectAI) 🛡️
-✅ Hardening system prompts with strict instruction hierarchies and delimiters 🧩
-✅ Validating and sanitizing user inputs before they ever reach the LLM API 🚦
+❌ Trusting a "don't reveal confidential data" instruction buried in the system prompt
+❌ Indirect injections hidden in white-on-white PDF text, hijacking an agent the moment it reads the file
+❌ Assuming a single filter or vendor claim eliminates the risk — natural language has no formal grammar like SQL
 
-Don't let users hijack your AI's brain. 🚀
-👉 Learn about understanding and preventing prompt injection vulnerabilities: [Link]
+✅ Strict XML delimiters plus the "sandwiching" technique to mark untrusted data clearly
+✅ Least-privilege backend permissions (read-only DB roles) so a hijacked agent still can't execute destructive commands
+✅ A secondary guardrail model reviewing tool calls before they fire, re-tested on every deploy
 
-#PromptInjection #CyberSecurity #AIproduct #LaunchStudio #Founders #TechLeadership
+At **LaunchStudio**, we've engineered layered prompt injection defenses since 2014 through Manifera, across 160+ delivered projects. 🛡️
+
+Luke's prompt injection attempts were blocked, and his document separation is now fully secured. 🚀
+
+👉 Harden your prompt architecture today: [Link to article]
+
+#AINativeFounder #LaunchStudio #Manifera #PromptInjection #LLMSecurity

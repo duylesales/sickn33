@@ -1,13 +1,19 @@
-🧠 Vergeet uw AI de gespreksgeschiedenis? 📉
+🚨 Amelia, een advocaat, gebruikte **Bolt** om een jurisprudentie-zoekapp te bouwen — maar grote juridische documenten bleven het context window van de LLM vullen, wat de API-kosten opdreef en de nauwkeurigheid van de antwoorden verlaagde. ⚖️
 
-Het proppen van enorme documenten in een klein contextvenster dwingt het LLM om vroege berichten in te korten, waardoor de gespreksstroom en het vertrouwen van de gebruiker worden vernietigd. 📉
+Een groter context window betekent niet dat u het ook moet gebruiken — LLM's kampen met "Lost in the Middle" en verliezen feiten uit het oog die verscholen zitten in lange documenten. 🧠
 
-Bij **LaunchStudio** beheren we actief LLM-contextvensters voor naadloze chats:
-✅ Dynamische tokensamenvatting om gespreksgeschiedenis op lange termijn te behouden 📝
-✅ Schuifraamtechnieken om prioriteit te geven aan recente interacties 🔄
-✅ Hybride vectorzoeken om relevante eerdere context te injecteren, precies wanneer dat nodig is 🔍
+❌ Volledige documenten in elke prompt dumpen, en ze vervolgens bij elke vervolgvraag opnieuw versturen
+❌ Relevante feiten midden in het document die worden genegeerd of gehallucineerd, ook al staan ze technisch "in context"
+❌ Geen rangschikking of pruning, waardoor kosten en latency bij elke query oplopen
 
-Bouw AI-assistenten met een onberispelijk geheugen. 🚀
-👉 Lees onze gids over hoe u LLM-contextvensters effectief kunt beheren: [Link]
+✅ Een geautomatiseerd context-pruning-algoritme dat opgehaalde fragmenten op relevantie rangschikt
+✅ RAG-retrieval van alleen de top 3-5 meest relevante fragmenten in plaats van volledige documenten
+✅ Kleinere, scherpere prompts die kosten verlagen terwijl de nauwkeurigheid hoog blijft
 
-#ContextWindow #LLM #AIproduct #LaunchStudio #Founders #TechLeadership
+Bij **LaunchStudio** architecteren we sinds 2014 via Manifera geoptimaliseerde RAG-pipelines, met 11+ jaar ervaring over 160+ opgeleverde projecten voor klanten zoals Vodafone en TNO. 🛡️
+
+De gemiddelde promptgrootte van Amelia daalde met 50%, en haar API-kosten per zoekopdracht werden gehalveerd terwijl de nauwkeurigheid hoog bleef. 🚀
+
+👉 Bekijk het volledige context-pruningplan: [Link naar artikel]
+
+#AINativeFounder #LaunchStudio #Manifera #ContextWindow #RAG

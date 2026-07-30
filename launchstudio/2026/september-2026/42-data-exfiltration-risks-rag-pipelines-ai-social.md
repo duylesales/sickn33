@@ -1,13 +1,19 @@
-🔓 Is your RAG pipeline accidentally leaking proprietary data? 😱
+🕵️ Zoey, a researcher, used **Cursor** to build a document search tool — until users started bypassing her safety rules with prompt injections to download confidential database fields. 📄
 
-Retrieval-Augmented Generation (RAG) without strict authorization checks allows any user to prompt the AI into retrieving and summarizing highly confidential documents they shouldn't see. 📉
+RAG pipelines search for mathematical similarity, not permission, so security has to be enforced at the retrieval layer, not inside the prompt. 🧠
 
-At **LaunchStudio**, we secure RAG pipelines against data exfiltration:
-✅ Applying row-level security (RLS) policies directly to vector database queries 🛡️
-✅ Validating user permissions before retrieving any semantic chunks 🚦
-✅ Sanitizing LLM outputs to strip out sensitive enterprise identifiers 🧹
+❌ A junior employee asking the chatbot to "summarize the Q4 layoff plan" and getting exactly that
+❌ System-prompt instructions like "don't reveal HR data" — trivially bypassed with prompt injection
+❌ One missing `tenant_id` filter turning into a cross-company data leak overnight
 
-Secure your data retrieval before you augment your generation. 🚀
-👉 Learn about data exfiltration risks in RAG pipelines: [Link]
+✅ Document-level metadata filtering — tagging every vector with `department`, `clearance_level`, and `tenant_id`
+✅ Backend JWT checks that force the database query to only return documents the user is cleared to see
+✅ Structural tenant isolation via separate namespaces or schemas, so a missing filter fails closed, not open
 
-#DataSecurity #RAG #AIproduct #LaunchStudio #Founders #TechLeadership
+At **LaunchStudio**, we've architected this exact tenant-isolated infrastructure since 2014 through Manifera, drawing on 11+ years across 160+ enterprise projects. 🛡️
+
+Zoey's prompt injection attempts were blocked, and her users' document isolation is now fully secured. 🚀
+
+👉 Run the numbers on your RAG security: [Link to article]
+
+#AINativeFounder #LaunchStudio #Manifera #RAGSecurity #DataExfiltration

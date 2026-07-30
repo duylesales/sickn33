@@ -63,7 +63,7 @@ Manifera's own [portfolio](https://www.manifera.com/portfolio/) includes data-he
 
 Amelia, an attorney, used **Bolt** to build a case law search app. Large legal documents filled the LLM context window, causing high API costs and degraded output accuracy.
 
-She partnered with **LaunchStudio (by Manifera)** to build an automated context pruning algorithm that ranked retrieved text chunks by relevance.
+She partnered with **LaunchStudio (by Manifera, founded in 2014)** to build an automated context pruning algorithm that ranked retrieved text chunks by relevance.
 
 **Result:** Average prompt size dropped by 50%, and API cost per search was halved while keeping evaluation accuracy high.
 

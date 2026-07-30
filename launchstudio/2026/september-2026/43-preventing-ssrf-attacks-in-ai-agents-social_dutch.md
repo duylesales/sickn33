@@ -1,13 +1,19 @@
-🕸️ Is uw AI-agent kwetsbaar voor Server-Side Request Forgery? 🛑
+🚨 Owen, een ontwikkelaar van prijstrackers, gebruikte **Lovable** om een scraper te bouwen — maar onveilige browserverzoeken zorgden ervoor dat hij door bijna elke doelwebsite werd gemarkeerd en geblokkeerd. 🕸️
 
-Wanneer je een LLM onbeperkte toegang geeft om HTTP-verzoeken in te dienen (zoals internetten), kan een aanvaller het model misleiden door toegang te krijgen tot interne microservices op uw VPC. 📉
+Als u een AI-agent een tool geeft om "deze URL op te halen", geeft u de sleutels van de netwerklaag van uw server uit handen — en één niet-gesandboxed verzoek kan een volwaardige SSRF-aanval veroorzaken. 🧠
 
-Bij **LaunchStudio** plaatsen we AI-agenten in een sandbox om SSRF-aanvallen te voorkomen:
-✅ Beperken van het surfen op het web van agenten tot geïsoleerde, tijdelijke cloudfuncties 🛡️
-✅ Implementatie van strikte URL-toestemmingslijsten en weigering van toegang tot interne IP-reeksen 🚦
-✅ Het uitvoeren van agentuitvoeringsomgevingen, volledig losgekoppeld van de kernbackend-services ⚙️
+❌ Een hacker die uw agent vraagt om `169.254.169.254` op te halen, het AWS-metadata-endpoint met uw live IAM-inloggegevens
+❌ DNS rebinding — een "veilig" domein dat milliseconden na uw denylist-controle omvormt naar een intern IP-adres
+❌ Open-source agent-toolkits die zonder enige ingebouwde SSRF-bescherming worden geleverd
 
-Laat een slimme prompt uw interne netwerk niet in gevaar brengen. 🚀
-👉 Lees onze gids over het voorkomen van SSRF-aanvallen in AI-agenten: [Link]
+✅ Strikte URL-denylisting die localhost, interne IP-reeksen, metadata-endpoints en gevaarlijke schema's zoals `file://` blokkeert
+✅ Eerst DNS omzetten en vervolgens vastpinnen, zodat het domein na validatie niet van doel kan wisselen
+✅ Netwerk-gesandboxde tooluitvoering in een geïsoleerde Lambda of container zonder enige toegang tot productiedatabases
 
-#Security #SSRF #AIproduct #LaunchStudio #Founders #TechLeadership
+Bij **LaunchStudio** heeft Manifera sinds 2014, 11+ jaar lang, exact dit type infrastructuurrisico gehard over 160+ opgeleverde projecten. 🛡️
+
+Het slagingspercentage van Owens scraper steeg naar 98%, waardoor betrouwbare prijsdata voor zijn bedrijf gegarandeerd zijn. 🚀
+
+👉 Ontdek hoe wij tool-aanroepen van agents sandboxen: [Link naar artikel]
+
+#AINativeFounder #LaunchStudio #Manifera #SSRFPrevention #AIAgentSecurity

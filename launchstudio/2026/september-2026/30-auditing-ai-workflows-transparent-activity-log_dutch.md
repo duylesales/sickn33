@@ -1,90 +1,135 @@
 ---
-Titel: Workflows Auditen Wanneer u Make A AI Producten
-Trefwoorden: Maak een AI, Auditing, AI, Workflows, Creëren, Transparant, Activiteit, Logboek
+Titel: Workflows Auditeren bij het Maken van AI-Producten
+Trefwoorden: ai beveiliging, ai kwetsbaarheden, ai databeveiliging, ai saas, ai uitrol, ai native, ai beveiligingsrisico, ai app bouwen
 Koperfase: Beslissing
 ---
 
-# Workflows Auditen Wanneer u Make A AI Producten
-Wanneer een medewerker een catastrofale fout maakt, roept het management hem of haar naar een kantoor en vraagt: *"Waarom heb je dit gedaan?"* Wanneer een autonome AI-agent een catastrofale fout maakt, kun je hem niet interviewen. Als uw B2B SaaS functioneert als een niet-waarneembare ‘Black Box’, zullen IT-afdelingen van ondernemingen deze verbieden. Om bedrijfsschaal te bereiken, moet uw AI-architectuur een onveranderlijk, op de gebruiker gericht **Activiteitenlogboek** bevatten.
+# Workflows Auditeren bij het Maken van AI-Producten
 
-## Het nalevingsmandaat
+Wanneer een werknemer een catastrofale fout maakt, vraagt het management: *"Waarom heb je dit gedaan?"* Wanneer een autonome AI-agent een fout maakt — een lening weigert, een verkeerde e-mail stuurt — kunt u de agent niet interviewen. Het model heeft geen permanent geheugen buiten wat u heeft vastgelegd. Als uw B2B SaaS als een onobserveerbare "Black Box" werkt, zullen enterprise IT-afdelingen de software weigeren. Om te schalen moet uw AI-architectuur een onveranderlijk, gebruikersgericht **Activiteitenlogboek** (Activity Log) bevatten.
 
-In sterk gereguleerde sectoren (financiën, gezondheidszorg, juridisch) is verantwoording een wettelijke vereiste. Als uw AI-aangedreven software voor het verstrekken van leningen de aanvraag van een klant afwijst, zullen compliance-functionarissen (en mogelijk toezichthouders) willen weten hoe die beslissing precies is genomen.
+## De Compliance-Verplichting
 
-Als uw antwoord luidt: *"We hebben het naar OpenAI gestuurd en het model zei nee",* zal uw startup enorme boetes opgelegd krijgen. Je moet in staat zijn een onveranderlijk grootboek met tijdstempel te produceren waarin precies wordt bewezen welke gegevens zijn opgehaald en welke logica de AI heeft gevolgd.
+In gereguleerde sectoren (Financiën, Zorg, Juridisch, HR) is verantwoording een wettelijke vereiste. Kaders zoals de EU AI Act classificeren geautomatiseerde beslissystemen als "hoog-risico", waarvoor gedetailleerde logging en menselijk toezicht verplicht zijn. Als uw software een leningaanvraag weigert, zullen compliance-officers verlangen te weten hoe die beslissing is genomen en welke data is gebruikt.
 
-## Anatomie van een AI-auditlogboek
+Als uw antwoord is: *"We hebben het naar OpenAI gestuurd en het model zei nee,"* verliest u de enterprise-deal in de auditfase. U moet een onveranderlijk logboek kunnen tonen waaruit blijkt welke data is opgehaald, welke logica de AI heeft gevolgd en welke specifieke modelversie is gebruikt.
 
-Een standaard webserverlog (registratie van IP-adressen en eindpunten) is onvoldoende voor AI. Uw backend moet de toestand van het "brein" op het exacte moment van uitvoering nauwgezet registreren. De logpayload moet het volgende bevatten:
+## Anatomie van een AI Audit Logboek
 
-- **De volledige prompt:** De exacte systeemprompt en gebruikerscontext die in de API zijn geïnjecteerd.
+Een standaard webserver-logboek (IP-adressen, HTTP-statuscodes) is onvoldoende. Uw backend moet de staat van het systeem op het moment van uitvoering vastleggen:
 
-- **De modelstatus:** De exacte modelversie (bijvoorbeeld `claude-3-opus-20240229`) en de gebruikte temperatuurinstelling.
+- **De Volledige Prompt:** De exacte Systeemprompt en Gebruikerscontext, inclusief opgehaalde RAG-documenten.
+- **De Model-Staat:** De exacte modelversie (bijv. `claude-opus-4-20250514`), temperatuurinstelling en parameters.
+- **Tool-Uitvoering:** De exacte JSON-payload van database-query's of API-webhooks die door de AI zijn getriggerd, inclusief de respons.
+- **Retrieval-Herkomst:** Bij RAG-gebruik, de specifieke documentfragmenten met hun bron en gelijkvormigheidsscores.
+- **Menselijke Goedkeuring:** Indien van toepassing, de ID van de medewerker die op "Goedkeuren" heeft geklikt met tijdstempel.
 
-- **Tooluitvoering:** De precieze JSON-payload van databasequery's of API-webhooks die de AI heeft geactiveerd tijdens de ReAct-lus.
+Sla deze gegevens op in een append-only tabel zonder `UPDATE`- of `DELETE`-rechten voor de applicatierol.
 
-- **Menselijke aftekening:** Als de workflow gebruikmaakt van Human-in-the-Loop, registreer dan de specifieke werknemers-ID die op 'Goedkeuren' heeft geklikt.
+## Gebruikersgerichte Transparantie
 
-## Gebruikersgerichte transparantie
+Begraaf deze logs niet in een ontwikkelaarsdashboard. Transparantie is een UX-functie die vertrouwen bouwt bij zakelijke kopers.
 
-Begraaf deze logbestanden niet in een AWS CloudWatch-console die alleen toegankelijk is voor uw DevOps-team. Transparantie is een UX-functie die een enorm vertrouwen opbouwt bij zakelijke kopers.
+Bouw een "Agent-Geschiedenis" tabblad in uw SaaS-dashboard. Presenteer het als een chronologische tijdlijn. Laat managers op een geautomatiseerde actie klikken en een split-screen bekijken: het resultaat aan de linkerkant, en de exacte stappen en brondocumenten aan de rechterkant.
 
-Bouw een tabblad 'Agentgeschiedenis' rechtstreeks in uw SaaS-dashboard. Presenteer het als een schone, chronologische tijdlijn (vergelijkbaar met de commitgeschiedenis van GitHub). Laat managers op elke geautomatiseerde e-mail klikken die door de AI wordt verzonden en een gesplitst scherm bekijken: de laatste e-mail aan de linkerkant en de exacte logische stappen die de AI heeft genomen om deze op te stellen aan de rechterkant. Wanneer het systeem volledig waarneembaar is, neemt de angst af en schiet de adoptie omhoog.
+## Evals voor Continue Verbetering
 
-## De motor voor continue verbetering (evaluaties)
+Een Activiteitenlogboek is het fundament voor het verbeteren van uw AI. Wanneer een gebruiker op "Niet nuttig" klikt, moeten uw engineers begrijpen waarom het faalde.
 
-Een activiteitenlogboek is niet alleen bedoeld voor naleving; het is de levensader van uw technische team. Wanneer een zakelijke gebruiker op 'Duim omlaag' klikt op een AI-uitvoer, moeten uw technici weten waarom deze mislukte.
+Door de exacte sessie uit het Activiteitenlogboek te halen (volledige prompt, context, tool-calls, modelversie), kunnen engineers het exacte scenario lokaal naspelen. Ze kunnen de fout isoleren, de prompt aanpassen en de historische sessie toevoegen aan een automatische evaluatie-suite (Evals) om te controleren op regressies.
 
-Door de exacte sessie uit het activiteitenlogboek te halen, kunnen uw technici de exacte prompt lokaal uitvoeren. Ze kunnen de hallucinatie-trigger identificeren, de systeemprompt aanpassen en het historische logboek gebruiken als een testcase (een Eval) om ervoor te zorgen dat de nieuwe prompt de bug repareert zonder de eerdere logica te doorbreken.
+Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, het verwoordt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat." Opgericht in **2014**, vindt Manifera haar oorsprong in cybersecurity via CyberDevOps (nu CFLW Cyber Strategies), waar Herre hielp bij het bouwen van het Dark Web Monitor platform met TNO — kennis die wordt ingezet vanuit het kantoor in Amsterdam (Herengracht 420). Bekijk de [Manifera over ons pagina](https://www.manifera.com/about-us/) voor meer informatie.
 
-## Belangrijkste afhaalrestaurants
+## Belangrijkste Inzichten
 
-- Bedrijven zullen geen 'Black Box' AI kopen. Als een autonome agent een fout maakt, moeten managers in staat zijn om precies te controleren waarom dit is gebeurd. Over een onveranderlijk activiteitenlogboek kan niet worden onderhandeld.
+- Bedrijven kopen geen "Black Box" AI. Als een autonome agent een fout maakt, moeten managers precies kunnen auditeren waarom dat is gebeurd via een onveranderlijk Activiteitenlogboek.
+- In gereguleerde sectoren en onder kaders zoals de EU AI Act is het bijhouden van hoe beslissingen tot stand komen een strikte wettelijke verplichting.
+- Sla de volledige staat op: systeemprompt, exacte gepinde modelversie, RAG-bronnen, JSON van tool-calls en menselijke goedkeurings-ID's.
+- Toon de logs aan de gebruiker via een "Agent-Geschiedenis" tijdlijn in uw SaaS-dashboard om vertrouwen op te bouwen.
+- Gebruik logs voor evaluaties (Evals). Speel mislukte sessies lokaal na om prompts te verbeteren en regressietests te bouwen.
 
-- In gereguleerde sectoren (zoals de financiële sector of de gezondheidszorg) is het bijhouden van een gedetailleerd tijdstempel van de manier waarop algoritmische beslissingen worden genomen een strikte wettelijke en nalevingsvereiste.
+## Bereik Enterprise Compliance
 
-- Uw logbestanden moeten de exacte 'hersenstaat' vastleggen. Noteer de volledige systeemprompt, de specifieke modelversie, de exacte JSON van alle aangeroepen tools en de Human-in-the-Loop-goedkeurings-ID.
+Is uw AI-architectuur een 'black box'? **LaunchStudio** ontwerpt observeerbare multi-agent systemen met audit-trails die voldoen aan enterprise-eisen. Bekijk de [LaunchStudio pakketten](https://launchstudio.eu/en/#packages) voor meer informatie.
 
-- Maak de logbestanden zichtbaar voor de gebruiker. Bouw een prachtige 'Agent History'-tijdlijn in uw SaaS-dashboard. Door managers de interne logica van de AI te laten observeren, wordt enorm vertrouwen opgebouwd en wordt de adoptie versneld.
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanwege het tekort aan ervaren ontwikkelaars in Europa richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze enterprise-grade wereldwijde softwareontwikkelingsexpertise om hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
 
-- Logboeken zijn van cruciaal belang voor het opsporen van fouten. Wanneer een AI hallucineert, moeten ingenieurs de exacte prompt uit het logboek halen om het scenario lokaal opnieuw af te spelen, de fout te identificeren en een patch te schrijven.
+## Echt Voorbeeld
 
-## Bereik compliance voor ondernemingen
+### Een AI-Native Oprichter in Actie: Een Token Audit Trail Bouwen voor een AI Schrijfassistent
 
-Is uw AI-architectuur een black box die compliance-functionarissen zullen afwijzen? **LaunchStudio** ontwerpt volledig waarneembare, diepgaand gelogde Multi-Agent-systemen, zodat uw toepassing de strenge audit- en transparantie-eisen van bedrijfsinkoop overtreft.
+Chloe, eigenaar van een bureau, gebruikte **Cursor** om een AI-copywriter te bouwen. Ze kon tokenkosten niet bijhouden per klantorganisatie, wat leidde tot facturatieverliezen.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio.eu/en/#contact).
+Ze nam contact op met **LaunchStudio (door Manifera)** om een database audit-logboek te bouwen dat prompts, tokens, modelversies en kosten bijhoudt per generatie.
 
-## Echt voorbeeld
+**Resultaat:** Maakte nauwkeurige facturatie per organisatie mogelijk, wat de SaaS-winstgevendheid met 20% verhoogde.
 
-### Een AI-native oprichter in actie: een token-audittraject bouwen voor een AI-schrijfassistent
-
-Chloe, de eigenaar van een bureau, gebruikte **Cursor** om een AI-copywriter te bouwen. Ze kon de tokenkosten voor verschillende gebruikersorganisaties niet volgen, wat leidde tot factureringsverliezen.
-
-Ze nam contact op met **LaunchStudio (door Manifera)** om een ​​database-auditlogboek op te stellen met trackingprompts, tokens en factureringskosten voor elke generatie.
-
-**Resultaat:** Nauwkeurige facturering binnen de organisatie mogelijk gemaakt, waardoor de SaaS-winstgevendheid met 20% is gestegen.
-
-**Kosten en tijdlijn:** € 1.800 (Token Audit Integratie) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
+**Kosten en Tijdlijn:** € 1.800 (Token Audit Integration Package) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-## Veelgestelde vragen
+### 1. Waarom hebben AI-agenten een Activiteitenlogboek nodig?
+Omdat verantwoording verplicht is in B2B. Als een AI een record verwijdert of een verkeerde e-mail stuurt, heeft u een onveranderlijk logboek nodig om exact te achterhalen welke prompt en logica tot die beslissing leidden.
 
-### Waarom hebben AI-agenten een activiteitenlogboek nodig?
+### 2. Is een Activiteitenlogboek verplicht voor compliance?
+Ja, steeds vaker wel. Regelgeving in de financiële sector, zorg en de EU AI Act beperkt onobserveerbare beslissystemen bij hoog-risico toepassingen.
 
-Omdat verantwoording vereist is in B2B. Als een AI een record verwijdert of een slechte e-mail verzendt, heb je een 'Black Box' in een vliegtuig nodig om te controleren welke prompt en logica de AI precies tot die beslissing hebben gebracht.
+### 3. Wat moet er exact worden gelogd?
+De gebruikersinvoer, de volledige systeemprompt, de RAG-context met herkomst, de exacte modelversie, de JSON van tool-calls en de ID van de mens die de actie goedkeurde.
 
-### Is een activiteitenlogboek vereist voor naleving?
+### 4. Hoe moet dit worden getoond aan de gebruiker?
+Bied een schoon "Agent-Geschiedenis" tabblad in uw UI met toegangscontrole per rol. Presenteer de logs als een tijdlijn zodat managers de logica eenvoudig kunnen controleren.
 
-Ja. Toezichthouders in de financiële sector en de gezondheidszorg verbieden ten strengste 'Black Box'-algoritmen. U moet compliance-functionarissen voorzien van een traceerbaar grootboek waaruit blijkt hoe gegevens zijn verwerkt en hoe beslissingen zijn genomen.
+### 5. Hoe beïnvloedt Manifera's achtergrond de benadering van audit-logging?
+Manifera's oorsprong ligt in cybersecurity via CyberDevOps (Dark Web Monitor met TNO), waardoor LaunchStudio audit-logboeken ontwerpt vanuit een fundamentele beveiligingsachtergrond.
 
-### Wat moet er precies worden gelogd?
-
-De initiële gebruikersinvoer, de enorme verborgen systeemprompt, de exacte modelversie, de JSON van alle backend-tools die de AI heeft geactiveerd, de uiteindelijke uitvoer en de ID van de mens die de actie heeft goedgekeurd.
-
-### Hoe moet dit aan de gebruiker worden getoond?
-
-Zorg voor een schoon tabblad 'Agentgeschiedenis' of 'Audit' in de gebruikersinterface van uw app. Presenteer de logboeken als een chronologische tijdlijn, zodat managers eenvoudig eerdere AI-acties kunnen bekijken en de logica kunnen verifiëren zonder dat er een ontwikkelaar nodig is.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom hebben AI-agenten een Activiteitenlogboek nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Omdat verantwoording verplicht is in B2B. Bij fouten is een onveranderlijk logboek nodig om exact te achterhalen welke logica en data tot de beslissing leidden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is een Activiteitenlogboek verplicht voor compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Kaders zoals de EU AI Act en regelgeving in de zorg en financiën verplichten traceerbaarheid bij geautomatiseerde besluitvorming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet er exact worden gelogd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Systeemprompt, gepinde modelversie, RAG-bronnen, JSON van tool-calls en eventuele menselijke goedkeurings-ID's in een append-only structuur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe moet dit worden getoond aan de gebruiker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Via een 'Agent-Geschiedenis' tijdlijn in het SaaS-dashboard, zodat managers de interne stappen van de AI direct kunnen verifiëren."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de rol van LaunchStudio en Manifera?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio en Manifera bouwen enterprise-grade audit-trails en observeerbare AI-systemen die voldoen aan strikte compliance-eisen."
+      }
+    }
+  ]
+}
+</script>

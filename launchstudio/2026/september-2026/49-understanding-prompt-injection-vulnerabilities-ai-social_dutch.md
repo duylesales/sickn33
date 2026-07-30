@@ -1,13 +1,19 @@
-💉 Is uw AI-applicatie kwetsbaar voor prompte injectie? 🛑
+⚠️ Luke, een supportlead, gebruikte **Lovable** om een PDF-zoekapp te bouwen — en zag vervolgens hoe een gebruiker zijn documenttoegangscontroles omzeilde met één enkele prompt-injectie. 💉
 
-Door toe te staan ​​dat gebruikersinvoer blindelings de systeeminstructies overschrijft, kan uw behulpzame AI-assistent in een spamgenerator of een hulpmiddel veranderen voor het extraheren van gevoelige, bedrijfseigen logica. 📉
+LLM's verwerken uw systeemprompt en de invoer van een gebruiker als één ongedifferentieerde stroom tokens, waardoor het model intrinsiek niet kan bepalen welke instructie daadwerkelijk gezag heeft. 🧠
 
-Bij **LaunchStudio** implementeren we verdedigingen tegen prompte injecties:
-✅ Gebruik van gespecialiseerde modellen voor detectie van prompte injecties (zoals ProtectAI) 🛡️
-✅ Het versterken van systeemprompts met strikte instructiehiërarchieën en scheidingstekens 🧩
-✅ Validatie en opschoning van gebruikersinvoer voordat deze ooit de LLM API bereikt 🚦
+❌ Vertrouwen op een instructie zoals "onthul geen vertrouwelijke gegevens", verstopt in de systeemprompt
+❌ Indirecte injecties verborgen in wit-op-wit PDF-tekst, die een agent kapen zodra deze het bestand leest
+❌ Ervan uitgaan dat één filter of leveranciersbewering het risico wegneemt — natuurlijke taal kent geen formele grammatica zoals SQL
 
-Laat gebruikers de hersenen van uw AI niet kapen. 🚀
-👉 Meer informatie over het begrijpen en voorkomen van onmiddellijke injectiekwetsbaarheden: [Link]
+✅ Strikte XML-scheidingstekens, aangevuld met de "sandwiching"-techniek, om onbetrouwbare data duidelijk te markeren
+✅ Least-privilege backend-rechten (alleen-lezen databaserollen), zodat een gekaapte agent alsnog geen destructieve commando's kan uitvoeren
+✅ Een secundair guardrail-model dat tool-aanroepen controleert vóór uitvoering, opnieuw getest bij elke deploy
 
-#PromptInjection #CyberSecurity #AIproduct #LaunchStudio #Founders #TechLeadership
+Bij **LaunchStudio** ontwikkelen we sinds 2014, via Manifera, gelaagde verdedigingen tegen prompt-injectie, over 160+ opgeleverde projecten. 🛡️
+
+Lukes prompt-injectiepogingen werden geblokkeerd en zijn documentscheiding is nu volledig beveiligd. 🚀
+
+👉 Verstevig vandaag nog uw promptarchitectuur: [Link naar artikel]
+
+#AINativeFounder #LaunchStudio #Manifera #PromptInjection #LLMSecurity

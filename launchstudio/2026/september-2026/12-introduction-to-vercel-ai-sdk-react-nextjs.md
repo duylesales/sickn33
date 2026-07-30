@@ -71,7 +71,7 @@ For teams evaluating whether they need a full custom frontend rebuild or just an
 
 Charlotte, a career coach, used **Cursor** to build a resume optimizer. Managing the streaming chunks manually in React caused UI flickering and duplicate token rendering.
 
-She reached out to **LaunchStudio (by Manifera)**. The engineering team integrated the Vercel AI SDK's `useChat` hook and optimized the streaming JSON response parser.
+She reached out to **LaunchStudio (by Manifera, founded in 2014)**. The engineering team integrated the Vercel AI SDK's `useChat` hook and optimized the streaming JSON response parser.
 
 **Result:** Flickering resolved, providing a clean, word-by-word streaming animation for resume suggestions.
 

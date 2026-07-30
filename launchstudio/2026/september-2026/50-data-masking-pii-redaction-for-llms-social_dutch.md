@@ -1,13 +1,19 @@
-🕵️‍♂️ Stuurt u de SSN's van uw klanten rechtstreeks naar OpenAI? 😱
+🩺 Julian, een zorgconsultant, gebruikte **Bolt** om een samenvattingstool voor patiëntnotities te bouwen — maar ruwe PII van patiënten werd rechtstreeks naar de externe API van OpenAI verzonden. 🔏
 
-Het niet onleesbaar maken van persoonlijk identificeerbare informatie (PII) voordat gegevens naar een externe LLM-API worden verzonden, is een enorme schending van de AVG en vernietigt onmiddellijk het vertrouwen van de onderneming. 📉
+Het verzenden van niet-gemaskeerde namen, BSN's of rekeningnummers naar een externe LLM is een schending van de AVG, CCPA en HIPAA, met boetes tot 4% van de wereldwijde omzet. 🧠
 
-Bij **LaunchStudio** dwingen we strikte datamaskering en het redigeren van PII af:
-✅ Lokale NLP-modellen implementeren om gevoelige entiteiten (namen, e-mails, SSN's) te identificeren en onleesbaar te maken 🛡️
-✅ PII vervangen door synthetische tijdelijke aanduidingen voordat externe API's worden bereikt 🔄
-✅ Het veilig rehydrateren van de LLM-reactie met de originele data in uw backend 🧩
+❌ Ruwe PII die uw infrastructuur verlaat bij elke prompt die naar een externe LLM-API wordt gestuurd
+❌ Eenvoudige regex-redactie die een telefoonnummer mist dat getypt is als "bel me op vijf vijf vijf..."
+❌ Geen concreet antwoord hebben wanneer een CISO vraagt: "sturen jullie onze gegevens naar OpenAI?"
 
-Houd uw gegevens veilig zonder dat dit ten koste gaat van de AI-intelligentie. 🚀
-👉 Lees onze gids over gegevensmaskering en het redigeren van persoonsgegevens voor LLM's: [Link]
+✅ Een Data Masking-middleware-laag binnen uw eigen VPC, die PII vervangt door synthetische placeholders vóórdat deze uw infrastructuur verlaat
+✅ Contextbewuste NER-modellen zoals Microsoft Presidio, gecombineerd met regex voor structureel vaste data zoals creditcardnummers
+✅ Re-hydratie die de echte gegevens terugzet nadat de LLM heeft geantwoord, waarbij de mapping direct daarna wordt verwijderd
 
-#DataPrivacy #GDPR #AIproduct #LaunchStudio #Founders #TechLeadership
+Bij **LaunchStudio** bouwen we sinds 2014, via Manifera, exact dit soort compliance-waardige pijplijn, voor klanten zoals Vodafone en TNO. 🛡️
+
+Julian doorstond zijn HIPAA-compliancebeoordelingen en zette daarmee ziekenhuisimplementaties van zijn product veilig. 🚀
+
+👉 Laat uw data-maskeringspijplijn bouwen: [Link naar artikel]
+
+#AINativeFounder #LaunchStudio #Manifera #PIIRedaction #DataMasking
