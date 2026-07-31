@@ -1,5 +1,5 @@
 ---
-Title: Vercel AI SDK vs LangChain: Choosing the Right Framework
+Title: "Vercel AI SDK vs LangChain: Choosing the Right Framework"
 Keywords: ai code tool, ai app dev, build ai app, ai coding, dev ai, ai development, ai frontend, code with ai
 Buyer Stage: Consideration
 ---

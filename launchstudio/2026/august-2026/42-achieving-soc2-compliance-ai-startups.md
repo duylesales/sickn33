@@ -1,5 +1,5 @@
 ---
-Title: Achieving SOC 2 Compliance: A Roadmap for AI Startups
+Title: "Achieving SOC 2 Compliance: A Roadmap for AI Startups"
 Keywords: ai security, ai security vulnerabilities, ai saas platform, ai software engineering, ai data security, security ai, ai secure
 Buyer Stage: Consideration
 ---

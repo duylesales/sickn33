@@ -1,5 +1,5 @@
 ---
-Title: The Future of AI in European B2B Tech: Winning the Application Layer
+Title: "The Future of AI in European B2B Tech: Winning the Application Layer"
 Keywords: ai native, ai saas, ai security, ai data security, ai privacy issues, ai deployment, ai software engineering
 Buyer Stage: Awareness
 ---

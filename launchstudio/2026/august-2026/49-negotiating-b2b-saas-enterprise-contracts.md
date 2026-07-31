@@ -1,5 +1,5 @@
 ---
-Title: Negotiating B2B SaaS Enterprise Contracts: A Founder's Guide
+Title: "Negotiating B2B SaaS Enterprise Contracts: A Founder's Guide"
 Keywords: ai saas, ai saas platform, ai and software development, build app with ai, ai native, ai deployment
 Buyer Stage: Awareness
 ---

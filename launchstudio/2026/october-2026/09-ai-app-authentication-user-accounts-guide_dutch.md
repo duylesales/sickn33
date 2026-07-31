@@ -1,93 +1,99 @@
 ---
-Titel: Hoe u Veilig een Build App With AI Kunt Uitvoeren
-Trefwoorden: Bouw een app met AI, AI security, AI beveiligingskwetsbaarheden, AI deployment, secure AI, LaunchStudio, Manifera, Cursor, AI database
+Titel: Authenticatie Beveilingen in Uw met AI Gegenereerde App
+Trefwoorden: app bouwen met ai, veilige ai, ai beveiligingslekken, ai uitrol, launchstudio, manifera, cursor, ai database
 Koperfase: Overweging
-Doelpersona: B (Technische Solo-oprichter)
+Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Hoe u Veilig een Build App With AI Kunt Uitvoeren
-Een gebruiker meldt zich aan voor je nieuwe app. Ze loggen in en beginnen hun dashboard te vullen met privégegevens. Een tweede gebruiker meldt zich aan. Wanneer zij inloggen, zien ze niet alleen hun eigen lege dashboard — ze zien ook de data van de eerste gebruiker. Je hebt op dag één een catastrofaal datalek en je hebt geen idee waarom.
+# Authenticatie Beveilingen in Uw met AI Gegenereerde App
 
-Dit scenario speelt zich constant af bij technische solo-oprichters die bouwen met Cursor, Bolt of Lovable. Je vroeg de AI om een "gebruikersdashboard met een inlogscherm". De AI leverde een prachtige React-frontend met een werkend inlogformulier. Maar wat het daadwerkelijk bouwde was een local state illusie, volledig losgekoppeld van veilige server-side authenticatie.
+Een gebruiker meldt zich aan voor uw nieuwe app. Ze loggen in en beginnen hun dashboard te vullen met privégegevens. Een tweede gebruiker meldt zich aan. Wanneer ze inloggen, zien ze niet alleen hun eigen lege dashboard — ze zien ook de gegevens van de eerste gebruiker. U heeft op dag één een catastrofaal datalek, en u heeft geen idee waarom.
 
-Authenticatie is niet slechts een UI-component. Het is een fundamentele beveiligingsarchitectuur die dicteert hoe je server de client vertrouwt. AI-codegeneratoren begrijpen deze relatie vaak verkeerd, wat resulteert in drie enorme beveiligingsgaten.
+Dit scenario doet zich voortdurend voor bij technische solo-oprichters die bouwen met Cursor, Bolt of Lovable. U vroeg de AI om een "gebruikersdashboard met een inlogscherm." De AI leverde een prachtige React-frontend met een functioneel inlogformulier. Maar wat het daadwerkelijk bouwde was een illusie van lokale status, volledig losgekoppeld van veilige server-side authenticatie.
 
-## De 3 authenticatiefouten in door AI gegenereerde code
+Authenticatie is niet zomaar een UI-component. Het is een fundamentele beveiligingsarchitectuur die bepaalt hoe uw server de client vertrouwt. AI-codegeneratoren begrijpen deze relatie vaak verkeerd, wat resulteert in vier enorme beveiligingsgaten — en authenticatie-gerelateerde gaten komen onevenredig vaak voor in de 45% van de door AI gegenereerde codebases die misbruikbare kwetsbaarheden bevatten.
 
-Wanneer AI-tools authenticatiestromen bouwen, optimaliseren ze voor de visuele ervaring in plaats van de beveiligingsmechanismen.
+## De 4 Authenticatiefouten in met AI Gegenereerde Code
 
-### 1. De LocalStorage-valstrik
+Wanneer AI-tools authenticatiestromen bouwen, optimaliseren ze voor de visuele ervaring (het inlogformulier) in plaats van de beveiligingsmechanismen (sessiebeheer en toegangscontrole).
 
-De meest voorkomende AI-kortere weg is het opslaan van de authenticatiestatus in de `localStorage` van de browser.
+### 1. De LocalStorage-Valkuil
 
-**Waarom het faalt:** Elk JavaScript dat op je pagina draait — inclusief een kwaadaardig script dat is geïnjecteerd via een XSS-kwetsbaarheid — kan `localStorage` lezen. Zodra een aanvaller die token steelt, kunnen ze zich voor onbepaalde tijd voordoen als de gebruiker.
-**De Productie-Fix:** Authenticatietokens moeten worden opgeslagen in veilige, `httpOnly` cookies waar client-side JavaScript niet bij kan.
+De meest voorkomende AI-afsnijroute is het opslaan van de authenticatiestatus in de `localStorage` van de browser. De AI genereert een inlogfunctie die de referenties verifieert, een token ontvangt en dit opslaat: `localStorage.setItem('auth_token', token)`.
 
-### 2. Client-Side toegangscontrole
+**Waarom het faalt:** Elke JavaScript die op uw pagina draait — inclusief een kwaadaardig script geïnjecteerd via een bibliotheek of een XSS-kwetsbaarheid elders in de app — kan `localStorage` lezen. Zodra een aanvaller dat token steelt, kunnen ze de gebruiker voor onbepaalde tijd imiteren.
+**De Productie-oplossing:** Authenticatietokens moeten worden opgeslagen in veilige `httpOnly` cookies waar client-side JavaScript geen toegang toe heeft, gekoppeld aan een korte vervaltijd en rotatie van refresh-tokens.
 
-Een AI-tool genereert vrolijk code zoals deze: `if (user.role === 'admin') { showAdminDashboard(); }`.
+### 2. Client-Side Toegangscontrole
 
-**Waarom het faalt:** Dit is puur cosmetische beveiliging. Als de API-eindpunten niet onafhankelijk de rol van de gebruiker op de server verifiëren, kan een handige gebruiker de UI omzeilen en de API direct aanroepen.
-**De Productie-Fix:** Elk API-eindpunt moet onafhankelijk de identiteit en rechten van de gebruiker verifiëren op basis van een cryptografisch ondertekende token.
+Een AI-tool genereert graag code zoals deze: `if (user.role === 'admin') { showAdminDashboard(); }`.
 
-### 3. Ontbrekende sessie-intrekking
+**Waarom het faalt:** Dit is puur cosmetische beveiliging. Als de API-eindpunten die de beheerdersgegevens leveren de rol van de gebruiker niet onafhankelijk op de server verifiëren, kan een technisch onderlegde gebruiker de UI simpelweg omzeilen en de API rechtstreeks aanroepen.
+**De Productie-oplossing:** Elk API-eindpunt moet onafhankelijk de identiteit en machtigingen van de gebruiker verifiëren op basis van een cryptografisch ondertekend token.
 
-Wanneer je een AI-tool vraagt om een "uitlogknop", genereert het doorgaans code die de lokale token wist en de gebruiker omleidt.
+### 3. Ontbrekende Sessie-Intrekking
 
-**Waarom het faalt:** Het lokaal wissen van de token maakt deze niet ongeldig op de server. Als die token vóór het uitloggen was gekopieerd, kan deze nog steeds worden gebruikt totdat deze natuurlijk verloopt.
-**De Productie-Fix:** Uitlogacties moeten een server-eindpunt raken dat de actieve sessie expliciet intrekt in de database.
+Wanneer u een AI-tool vraagt om een "uitlogknop," genereert deze doorgaans code die het lokale token wist en de gebruiker omleidt naar het inlogscherm.
 
-## De authenticatiekloof dichten
+**Waarom het faalt:** Het lokaal wissen van het token maakt het niet ongeldig op de server. Als dat token voor het uitloggen is gekopieerd, kan het nog steeds worden gebruikt om toegang te krijgen tot het account van de gebruiker totdat het natuurlijk verloopt.
+**De Productie-oplossing:** Uitlogacties moeten een server-eindpunt raadplegen dat de actieve sessie expliciet intrekt in de database.
 
-Het verhelpen van deze fouten vereist het eruit slopen van de "neppe" client-side authenticatielogica en deze te vervangen door robuust server-side sessiebeheer.
+### 4. Gaten in de Wachtwoord-Resetstroom
 
-Bij [LaunchStudio](https://launchstudio.eu/) is authenticatiehardening een kerncomponent van ons Launch Ready-pakket. Gesteund door [Manifera's](https://www.manifera.com/) uitgebreide enterprise-ervaring, zijn onze engineeringteams vanuit ons ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City gespecialiseerd in het beveiligen van AI-codebases.
+Met AI gegenereerde "wachtwoord vergeten"-stromen slaan vaak een cruciale stap over: verifiëren dat de resetlink voor eenmalig gebruik is, tijdgebonden is en gekoppeld is aan het account dat erom heeft gevraagd.
+**De Productie-oplossing:** Reset-tokens moeten snel verlopen (15-60 minuten), onmiddellijk ongeldig worden gemaakt zodra ze eenmaal zijn gebruikt, en een snelheidsbeperking hebben.
 
-We herschrijven je inlogschermen niet en raken je UI niet aan. We verbinden je bestaande frontend aan een veilige, bewezen backend-architectuur.
+## De Authenticatiekloof Dichten
 
-## Belangrijkste conclusies
+Het herstellen van deze fouten vereist het verwijderen van de "nep" client-side authenticatielogica en het vervangen ervan door robuust server-side sessiebeheer. Voor Supabase-gebruikers betekent dit een juiste implementatie van Supabase Auth met Row Level Security (RLS) policies die rechtstreeks zijn gekoppeld aan `auth.uid()`.
 
-- AI-tools bouwen de *illusie* van authenticatie (inlogschermen) in plaats van veilig sessiebeheer.
-- Het opslaan van tokens in `localStorage` stelt gebruikers bloot aan sessie-hijacking.
-- Client-side checks zijn cosmetisch; ware beveiliging vereist server-side validatie.
-- LaunchStudio behoudt je UI terwijl het de onveilige authenticatielogica vervangt door enterprise-grade beveiliging.
+Bij [LaunchStudio](https://launchstudio.eu/en/) is authenticatiehardening een kernonderdeel van ons Launch Ready-pakket. Ondersteund door [Manifera's](https://www.manifera.com/) uitgebreide ervaring met enterprise-software, zijn onze engineeringteams gespecialiseerd in het beveiligen van met AI gegenereerde codebases vanuit Amsterdam en Ho Chi Minh City.
 
-[Stuur ons je prototype link — we geven je gratis advies over je huidige beveiligingsstatus](https://launchstudio.eu/#contact).
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-## Real example
+We herontwerpen uw inlogschermen niet en raken uw UI-componenten niet aan. We koppelen uw bestaande frontend aan een veilige backend-architectuur. Een typische authenticatie-hardening kost €800–€1.600 en duurt 3-5 werkdagen.
 
-### Een AI-Native oprichter in actie: De mentale gezondheidscoach
+## Belangrijkste Inzichten
 
-Noor, een mentale gezondheidscoach uit Rotterdam, ontwikkelde een journaling- en gewoonte-tracking-app met **Cursor** om te delen met haar privécliënten. De app had een prachtige, kalmerende UI waar cliënten veilig hun dagelijkse reflecties konden loggen.
+- AI-tools bouwen de *illusie* van authenticatie (inlogschermen en lokale status) in plaats van veilig sessiebeheer.
+- Het opslaan van authenticatietokens in `localStorage` stelt uw gebruikers bloot aan sessie-kaping via XSS.
+- Client-side controles zijn cosmetisch; echte beveiliging vereist server-side validatie bij elk API-verzoek.
+- LaunchStudio behoudt uw met AI gegenereerde UI terwijl we de onveilige authenticatielogica vervangen door robuuste beveiliging.
 
-Noor testte de app zelf en alles werkte perfect. Tijdens de eerste week dat haar cliënten de app gebruikten, kwam er echter een ernstig probleem aan het licht: één cliënt logde in en zag onmiddellijk de zeer persoonlijke dagboeknotities van een andere cliënt.
+## Echt Voorbeeld
 
-Noors door Cursor gegenereerde code had een werkend inlogscherm, maar het zette simpelweg een `loggedIn = true` vlaggetje in de local state van de browser. De Supabase-database stond volledig open. De frontend vroeg simpelweg "alle dagboeknotities" op en probeerde ze client-side te filteren op basis van een gebruikers-ID opgeslagen in leesbare tekst in `localStorage`. Er was nul server-side handhaving.
+### Een AI-Native Oprichter in Actie: De Geestelijke Gezondheidscoach
 
-**LaunchStudio (door Manifera)** auditeerde Noors prototype en vergrendelde onmiddellijk de database. Het team in het ontwikkelcentrum in Ho Chi Minh City implementeerde juiste Supabase Authenticatie, waarbij `httpOnly` cookies werden geconfigureerd voor veilig sessiebeheer. Cruciaal was dat ze Row Level Security (RLS) policies schreven die ervoor zorgden dat de database alleen dagboeknotities zou retourneren die overeenkwamen met de cryptografisch geverifieerde `auth.uid()` van de aanvragende gebruiker.
+Noor, een geestelijke gezondheidscoach in Rotterdam, ontwikkelde met **Cursor** een dagboek- en gewoonte-tracking app om te delen met haar particuliere klanten. De app bevatte een prachtige, rustgevende UI waar klanten hun dagelijkse reflecties konden vastleggen.
 
-**Resultaat:** Het datalek werd permanent gedicht. Noors cliënten kunnen de app nu met volledig vertrouwen in hun privacy gebruiken. De frontend-UI blijft exact zoals Noor het had ontworpen, maar de onderliggende motor is nu veilig genoeg voor gevoelige gezondheidsdata. *"Ik dacht dat een inlogscherm betekende dat de app veilig was. LaunchStudio liet me het verschil zien tussen een afgesloten deur en een foto van een afgesloten deur."*
+Noor testte de app zelf en alles werkte perfect. Tijdens de eerste week dat ze klanten aansloot, deed zich echter een ernstig probleem voor: een klant logde in en zag onmiddellijk de zeer persoonlijke dagboeknotities van een andere klant.
+
+Noor's met Cursor gegenereerde code had een functioneel inlogscherm, maar stelde simpelweg een `loggedIn = true` vlag in de lokale status van de browser. De Supabase-database was volledig open. De frontend vroeg simpelweg "alle dagboeknotities" op en probeerde ze client-side te filteren op basis van een gebruikers-ID dat in leesbare tekst in `localStorage` stond. Er was nul handhaving aan de serverzijde.
+
+**LaunchStudio (door Manifera)** auditte Noor's prototype en zette de database onmiddellijk dicht. Het team implementeerde de juiste Supabase Authenticatie, configureerde `httpOnly` cookies voor veilig sessiebeheer en schreef Row Level Security (RLS) policies die garanderen dat de database alleen dagboeknotities retourneert die overeenkomen met de cryptografisch geverifieerde `auth.uid()` van de verzoekende gebruiker.
+
+**Resultaat:** Het datalek werd definitief gedicht. Noor's klanten kunnen de app nu met het volste vertrouwen in hun privacy gebruiken. De frontend-UI blijft exact zoals Noor hem heeft ontworpen. *"Ik dacht dat een inlogscherm betekende dat de app veilig was. LaunchStudio liet me het verschil zien tussen een afgesloten deur en een foto van een afgesloten deur."*
 
 **Kosten & Doorlooptijd:** €950 (Security Hardening module) — afgerond in 4 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Waarom gebruiken AI-tools localStorage als het zo onveilig is?
-AI-tools optimaliseren voor de weg van de minste weerstand om een werkende demo te genereren. Het instellen van een token in `localStorage` vereist slechts één regel JavaScript, terwijl het configureren van veilige `httpOnly` cookies server-side logica, CORS-configuratie en goed headerbeheer vereist.
+### 1. Waarom gebruiken AI-tools localStorage als het zo onveilig is?
+AI-tools optimaliseren voor de weg van de minste weerstand om een werkende demo te genereren. Het instellen van een token in `localStorage` vereist slechts één regel client-side JavaScript, terwijl het configureren van veilige `httpOnly` cookies server-side logica en CORS-configuratie vereist.
 
-### Kan ik de AI niet gewoon vragen om in plaats daarvan httpOnly cookies te gebruiken?
-Je kunt het proberen, maar het werkt zelden end-to-end. Voor juiste cookie-gebaseerde authenticatie moeten zowel frontend als backend worden geconfigureerd. AI-tools raken hierin vaak verstrikt en produceren kapotte code.
+### 2. Kan ik de AI niet gewoon vragen om httpOnly cookies te gebruiken?
+U kunt het proberen, maar het werkt zelden van begin tot eind. Juiste cookie-gebaseerde authenticatie vereist het configureren van zowel de frontend als de backend om referenties veilig af te handelen. AI-tools raken vaak verstrikt in deze complexiteit en produceren defecte code.
 
-### Hoe weet ik of mijn prototype kwetsbaar is voor omzeiling van toegangscontrole?
-Een simpele test: log in als een normale gebruiker. Open DevTools, vind in de Network-tab een API-verzoek, kopieer het en probeer in de URL beheerdersdata op te vragen (bijv. verander `/api/users/me` naar `/api/users/all`). Als de server de data retourneert, is je beveiliging kapot.
+### 3. Hoe weet ik of mijn prototype kwetsbaar is voor omzeiling van client-side toegangscontrole?
+Een eenvoudige test: log in als een normale gebruiker. Open vervolgens de DevTools van uw browser, ga naar het netwerktabblad, zoek een API-verzoek, kopieer het en pas het aan om beheerdersgegevens op te vragen. Als de server de gegevens retourneert, is uw toegangscontrole gebroken.
 
-### Wat is Row Level Security (RLS) en waarom staat LaunchStudio hierop?
-RLS is een databasefunctie die rij-toegang beperkt op basis van de auth-token. Het dwingt beveiliging af op het laagste niveau. Zelfs als een API-eindpunt slecht geschreven is, weigert de database data te leveren aan een ongeautoriseerde gebruiker.
+### 4. Wat is Row Level Security (RLS) en waarom staat LaunchStudio hierop?
+RLS is een databasefunctie die beperkt welke rijen een gebruiker kan raadplegen op basis van hun authenticatietoken. In plaats van te vertrouwen op de API-laag om gegevens te filteren, dwingt RLS beveiliging af op het laagst mogelijke niveau.
 
-### Betekent het fixen van de authenticatie dat ik mijn hele app moet herschrijven?
-Nee. LaunchStudio behoudt je frontend-componenten volledig. We vervangen alleen de onderliggende functies die de authenticatiestatus afhandelen en configureren de backend-infrastructuur. Je gebruikers ervaren exact dezelfde app, maar dan veilig.
+### 5. Betekent het herstellen van de authenticatie dat mijn hele app opnieuw moet worden geschreven?
+Nee. Dit is de kernwaarde van LaunchStudio. We behouden uw React/frontend-componenten volledig. We vervangen alleen de onderliggende functies die de authenticatiestatus afhandelen en configureren de backend-infrastructuur.
 
 <script type="application/ld+json">
 {
@@ -99,7 +105,7 @@ Nee. LaunchStudio behoudt je frontend-componenten volledig. We vervangen alleen 
       "name": "Waarom gebruiken AI-tools localStorage als het zo onveilig is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI-tools optimaliseren voor de weg van de minste weerstand. Het is makkelijk voor een demo, terwijl veilige httpOnly cookies complexe server-side logica en CORS-configuratie vereisen."
+        "text": "AI-tools optimaliseren voor de weg van de minste weerstand voor een visuele demo. Het instellen van een token in localStorage kost 1 regel code. Veilige httpOnly cookies vereisen server-side logica en CORS-configuratie."
       }
     },
     {
@@ -107,7 +113,7 @@ Nee. LaunchStudio behoudt je frontend-componenten volledig. We vervangen alleen 
       "name": "Kan ik de AI niet gewoon vragen om httpOnly cookies te gebruiken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Je kunt het proberen, maar AI-tools raken vaak verstrikt in de cross-stack complexiteit van frontend en backend configuratie en produceren kapotte code."
+        "text": "U kunt het proberen, maar het werkt zelden van begin tot eind. Cookie-gebaseerde authenticatie vereist het configureren van zowel frontend als backend, waarin AI-tools vaak verstrikt raken."
       }
     },
     {
@@ -115,7 +121,7 @@ Nee. LaunchStudio behoudt je frontend-componenten volledig. We vervangen alleen 
       "name": "Hoe weet ik of mijn prototype kwetsbaar is voor omzeiling van toegangscontrole?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open DevTools, kopieer een API-verzoek en probeer handmatig beheerdersdata of data van een andere gebruiker op te vragen. Als de server dit retourneert, is je beveiliging kapot."
+        "text": "Open browser DevTools, kopieer een API-verzoek en probeer het aan te passen om beheerdersgegevens op te vragen. Als de server de onbevoegde gegevens retourneert, is uw toegangscontrole gebroken."
       }
     },
     {
@@ -123,15 +129,15 @@ Nee. LaunchStudio behoudt je frontend-componenten volledig. We vervangen alleen 
       "name": "Wat is Row Level Security (RLS) en waarom staat LaunchStudio hierop?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "RLS beperkt database-toegang op het laagste niveau op basis van de auth-token. Het vormt een waterdicht vangnet, zelfs als API's slecht geschreven zijn."
+        "text": "RLS is een databasefunctie die rijtoegang beperkt op basis van het auth-token. Het dwingt beveiliging af op het laagst mogelijke niveau als een waterdichte vangnet."
       }
     },
     {
       "@type": "Question",
-      "name": "Betekent het fixen van de authenticatie dat ik mijn hele app moet herschrijven?",
+      "name": "Betekent het herstellen van authenticatie dat mijn hele app opnieuw moet worden geschreven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. LaunchStudio behoudt je frontend-componenten volledig en vervangt alleen de onderliggende auth-functies en backend-infrastructuur."
+        "text": "Nee. LaunchStudio behoudt uw frontend-componenten volledig. We vervangen alleen de onderliggende functies die de auth-status afhandelen en configureren de backend."
       }
     }
   ]

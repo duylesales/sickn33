@@ -1,111 +1,125 @@
 ---
-Titel: B2B SaaS MVP Kenmerken Checklist bij Gebruik van AI For Coding
-Trefwoorden: AI om te coderen, b2b saas mvp, b2b saas, LaunchStudio, Manifera, AI app, MVP features
+Titel: B2B SaaS MVP Functies Checklist bij Gebruik van AI For Coding
+Trefwoorden: ai for coding, b2b saas mvp, b2b saas, launchstudio, manifera, ai app, mvp functies
 Koperfase: Overweging
-Doelpersona: B (Technische Solo-oprichter)
+Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# B2B SaaS MVP Kenmerken Checklist bij Gebruik van AI For Coding
-Wanneer je als niet-technische oprichter AI-tools zoals Bolt.new of Lovable gebruikt, is het verleidelijk om álles te bouwen. Omdat het genereren van een nieuw dashboard slechts een simpele tekstprompt vereist, overladen AI-oprichters hun applicaties vaak met overbodige features.
+# B2B SaaS MVP Functies Checklist bij Gebruik van AI For Coding
 
-In de B2B SaaS-wereld is "feature bloat" (te veel functies) de vijand van een succesvolle lancering. Als je drie maanden besteedt aan het prompten van 40 verschillende features, verspil je tijd. Een Minimum Viable Product (MVP) moet exact één ding ongelooflijk goed doen, verpakt in de fundamentele infrastructuur die nodig is om er geld voor te vragen.
+Wanneer u als niet-technische oprichter AI-tools zoals Bolt.new of Lovable gebruikt, is het verleidelijk om alles te bouwen. Omdat het genereren van een dashboard slechts een tekst-prompt kost, ontstaat er snel functie-overdaad.
 
-Voordat je jouw AI-gegenereerde app aan zakelijke klanten lanceert, moet je de ruis wegsnijden. Hier is de definitieve B2B SaaS MVP features checklist—wat je écht nodig hebt om naar de markt te gaan, en wat je moet negeren.
+In de B2B SaaS-wereld is functie-overdaad de vijand van een succesvolle lancering. Een Minimum Viable Product (MVP) moet exact één ding fantastisch doen, verpakt in de infrastructuur die nodig is om er geld voor te vragen. Ongeveer 80% van de met AI gebouwde producten bereikt nooit een stabiele productieomgeving, en functie-overdaad is daar een belangrijke oorzaak van.
 
-## 1. De Kern AI-Waardepropositie (Het "Ene Ding")
-Je B2B SaaS MVP moet zijn kernbelofte foutloos uitvoeren. Als je een AI-contractbeoordelaar bouwt, moet de AI contracten accuraat beoordelen.
+Hier is de definitieve B2B SaaS MVP-functies checklist.
 
-**Wat je nodig hebt:**
-- Een duidelijke, simpele UI voor de gebruiker om data in te voeren.
+## 1. De Kern AI-Waardepropositie ("Het Éne Ding")
+
+Uw MVP moet zijn kernbelofte vlekkeloos uitvoeren.
+
+**Wat u nodig heeft:**
+- Een heldere UI om data in te voeren.
 - Een robuuste backend-verbinding met de AI-provider (OpenAI, Anthropic).
-- Een overzichtelijke weergave van het resultaat.
+- Een schone weergave van het gegenereerde resultaat.
+- Foutafhandeling voor wanneer de AI-call faalt of een time-out heeft.
 
-**Wat je moet negeren:**
-- Bouw geen 15 verschillende sjablonen. Bouw er één die het grootste pijnpunt oplost.
-- Bouw geen complexe samenwerkingstools (zoals Google Docs-stijl live bewerken) voor versie 1.0.
+**Wat u kunt negeren:**
+- Bouw geen 15 verschillende sjablonen; focus op één sjabloon.
+- Bouw in v1.0 geen complexe samenwerkingstools.
+- Bouw geen maatwerk AI-model of fine-tuning pijplijn voordat de vraag is gevalideerd.
 
 ## 2. Multi-Tenant Authenticatie
-In B2B SaaS zijn je gebruikers meestal bedrijven (tenants). Je MVP moet authenticatie veilig afhandelen.
 
-**Wat je nodig hebt:**
-- Magic link of standaard E-mail/Wachtwoord login.
-- Een veilige database-architectuur (zoals Supabase) waarbij Gebruiker A de data van Gebruiker B niet kan zien (Row Level Security).
-- Wachtwoord reset functionaliteit.
+In B2B SaaS zijn uw gebruikers bedrijven (tenants).
 
-**Wat je moet negeren:**
-- Single Sign-On (SSO) via SAML. Tenzij je allereerste klant een multinational is die Okta eist, heb je geen enterprise SSO nodig voor een MVP.
-- Social logins (Google/Apple). Leuk om te hebben, maar niet strikt noodzakelijk.
+**Wat u nodig heeft:**
+- Login via Magic link of Email/Wachtwoord.
+- Een veilige database-architectuur (zoals Supabase) met Row Level Security (RLS) en een duidelijke `tenant_id`-kolom.
+- Basis wachtwoord-herstel.
+- Een minimale "collega uitnodigen"-flow.
+
+**Wat u kunt negeren:**
+- Single Sign-On (SSO) via SAML voor v1.0.
+- Social logins (Google/Apple).
+- Granulaire rolgebaseerde rechten (beheerder vs. bewerker).
 
 ## 3. De Omzetmotor (Stripe Integratie)
-Als je geen geld kunt incasseren, heb je geen B2B SaaS; dan heb je een hobbyproject. Omdat AI API-aanroepen duur zijn, moet je MVP vanaf dag één betalingen afdwingen.
 
-**Wat je nodig hebt:**
-- Stripe Checkout integratie voor creditcardbetalingen.
-- Veilige Stripe Webhooks om de database-status van de gebruiker te updaten (bijv. van "Free" naar "Pro" zodra de betaling binnen is).
-- Een basis billing portal zodat gebruikers zelf hun abonnement kunnen beheren.
+Omdat AI API-calls duur zijn, moet uw MVP vanaf dag één betalingen afdwingen.
 
-**Wat je moet negeren:**
-- Zeer complexe usage-based abonnementsvormen met meeneembare credits. Houd het bij een simpel abonnement (bijv. €49/mnd voor 100 generaties).
+**Wat u nodig heeft:**
+- Stripe Checkout-integratie voor creditcardbetalingen.
+- Veilige Stripe Webhooks om de databasestatus van de gebruiker bij te werken en toegang in te trekken bij annulering.
+- Een Stripe Customer Portal voor abonnementbeheer.
+- Automatische BTW-facturen voor B2B-kopers.
 
-## De MVP Kloof Overbruggen met LaunchStudio
+**Wat u kunt negeren:**
+- Complexe verbruiksgebaseerde staffels. Kies voor een eenvoudig abonnement (€49/maand voor 100 generaties).
+- Jaarlijkse kortingen en multi-valuta ondersteuning in de eerste fase.
 
-Voor een niet-technische oprichter is het prompten van de UI voor deze checklist makkelijk. Het daadwerkelijk technisch bouwen is ongelooflijk moeilijk. Stripe webhooks veilig koppelen en database Row Level Security implementeren vereist diepe backend expertise.
+## 4. Basis Vertrouwenssignalen voor Enterprise Kopers
 
-Als je een onveilige MVP deployt, zullen B2B-klanten je hun data niet toevertrouwen.
+**Wat u nodig heeft:**
+- Een zichtbaar privacybeleid en algemene voorwaarden.
+- Een "Exporteer mijn data" of "Verwijder mijn account" actie (AVG-naleving).
+- Basis monitoring en uptime.
 
-Dit is waar [LaunchStudio](https://launchstudio.eu/) je lancering versnelt. Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/), treden wij op als je backend deployment partner.
+**Wat u kunt negeren:**
+- Een volledige SOC2- of ISO 27001-certificering in de MVP-fase.
 
-Met ons "Launch Ready"-pakket stuur je ons je AI-frontend. Wij verwijderen de vluchtige sandbox-code en implementeren exact deze B2B SaaS MVP-checklist op een veilige, productie-klare architectuur. Binnen 1 tot 3 weken transformeren we je prototype in een veilige, omzet-genererende SaaS.
+## De MVP-Kloof Dichten met LaunchStudio
 
-## Belangrijkste conclusies
+Het schrijven van de UI voor deze checklist is eenvoudig met AI, maar het beveiligen van Stripe-webhooks en multi-tenant RLS vereist diepgaande backend-engineering. Audits tonen aan dat 45% van de AI-code kwetsbaarheden bevat.
 
-- AI-tools maken het gevaarlijk makkelijk om te veel te bouwen; focus op één kernwaardepropositie.
-- Je MVP móét veilige authenticatie, Row Level Security en Stripe-betalingen bevatten.
-- Negeer enterprise SSO en complexe samenwerkingstools voor versie 1.0.
-- LaunchStudio levert de expert backend engineering om deze kern-MVP features veilig te implementeren, zodat je met vertrouwen kunt lanceren.
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-[Klaar om je B2B SaaS MVP te lanceren? Neem vandaag nog contact op met LaunchStudio](https://launchstudio.eu/#contact).
+Hier versnelt [LaunchStudio](https://launchstudio.eu/en/) uw lancering. Ondersteund door [Manifera's](https://www.manifera.com/) enterprise-team vanuit Amsterdam, Singapore en Ho Chi Minh City, treden we op als backend-partner.
 
-## Real example
+Met ons "Klaar voor lancering" (Launch Ready) pakket implementeren we deze B2B SaaS MVP-checklist op een veilige architectuur. We configureren Supabase-authenticatie met tenant-scoping, beveiligen de database en koppelen Stripe-webhooks. In 1 tot 3 weken is uw prototype omgezet in een winstgevende SaaS.
 
-### Een AI-Native oprichter in actie: De Corporate Headshot Generator
+## Belangrijkste Inzichten
 
-Emma, een marketingconsultant in Amsterdam, gebruikte **Lovable** om een B2B SaaS MVP te bouwen die professionele portretfoto's genereerde voor remote teams. Haar AI-prototype had 50 verschillende kunststijlen, een social feed en een complex teambeheer-dashboard.
+- AI-tools maken het makkelijk om te veel te bouwen; focus op één kern-waardepropositie.
+- Uw MVP vereist multi-tenant authenticatie, RLS, Stripe-webhooks en BTW-facturering.
+- Negeer enterprise SSO, granulaire rollen en ingewikkelde prijsmodellen voor versie 1.0.
+- LaunchStudio biedt de backend-engineering om deze MVP-functies veilig te implementeren.
 
-Ze pitchte het prototype bij een lokaal accountantskantoor. Ze vonden het idee geweldig, maar de app was zo overladen met functies dat de HR-directeur het verwarrend vond. Bovendien had Emma nog niet uitgevogeld hoe ze veilig B2B-betalingen kon verwerken.
+## Echt Voorbeeld
 
-Emma nam contact op met **LaunchStudio (door Manifera)**. Onze ingenieurs adviseerden haar om drastisch functies te schrappen.
+### Een AI-Native Oprichter in Actie: De Zakelijke Foto-Generator
 
-We brachten de app terug naar de absolute B2B SaaS MVP kern:
-1. Eén uploadscherm voor ruwe foto's.
-2. Eén uitvoerstijl (Professioneel Corporate).
-3. Veilige Supabase authenticatie.
-4. Een strikte Stripe betaalmuur (€99 voor 10 foto's).
+Emma, een marketingconsultant in Amsterdam, gebruikte **Lovable** om een B2B SaaS MVP te bouwen voor zakelijke profielfoto's. Haar eerste prototype had 50 stijlen en een complex teambeheer-dashboard.
 
-We koppelden haar Lovable frontend aan een veilige backend en deployden het naar Vercel.
+Ze pitchte aan een accountantskantoor. Ze vonden het idee geweldig, maar het product was te ingewikkeld en miste een veilig betalingssysteem.
 
-**Resultaat:** Door de overbodige functies te elimineren, lanceerde Emma 4 weken eerder dan gepland. De versimpelde MVP was een hit bij HR-afdelingen. Het accountantskantoor tekende direct, gevolgd door drie andere Nederlandse bureaus. Ze bereikte €2.500 MRR in haar eerste maand. *"LaunchStudio hielp me focussen op de basis en bouwde de betaalmotor die daadwerkelijk geld oplevert."*
+Emma nam contact op met **LaunchStudio (door Manifera)**. Onze engineers hielpen haar functies te schrappen tot de kern:
+1. Één uploadscherm.
+2. Één stijl (Professioneel Zakelijk).
+3. Supabase-authenticatie per bedrijf.
+4. Een Stripe-betaalmuur ($99 voor 10 foto's) met automatische factuur.
 
-**Kosten & Doorlooptijd:** €2.000 (Launch Ready-pakket voor MVP deployment) — afgerond in 10 werkdagen.
+**Resultaat:** Door het schrappen van overtollige functies lanceerde Emma 4 weken sneller. Het accountantskantoor en drie andere bureaus sloten direct aan (€2.500 MRR in de eerste maand). *"LaunchStudio hielp me te focussen op de basis en bouwde de betalingsmotor."*
+
+**Kosten & Doorlooptijd:** €2.000 (Launch Ready-pakket voor MVP-uitrol) — afgerond in 10 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Moet ik echt geld vragen voor een MVP?
-Ja, absoluut—zeker voor een AI SaaS. Omdat elke AI-generatie je API-kosten oplevert, zal een volledig gratis MVP je bankrekening plunderen. Geld vragen valideert echte B2B-vraag.
+### 1. Moet ik echt geld vragen voor een MVP?
+Ja. Bij AI SaaS kost elke generatie u geld via API-kosten. Vanaf dag één geld vragen voorkomt faillissement en valideert de werkelijke vraag.
 
-### Waarom is Single Sign-On (SSO) niet vereist voor een B2B MVP?
-Enterprise SSO (zoals SAML of Okta) is zeer complex om te implementeren. Terwijl multinationals dit eisen, zijn kleinere B2B-bedrijven (je vroege klanten) prima bereid om standaard e-mail/wachtwoord logins te gebruiken voor een nieuwe, waardevolle tool.
+### 2. Waarom is Single Sign-On (SSO) niet vereist voor een B2B MVP?
+SSO (zoals SAML) is complex. Mkb-kopers (uw eerste klanten) gaan akkoord met een e-mail/wachtwoord login voor een waardevolle MVP.
 
-### Kan Bolt.new of Lovable mijn Stripe webhooks voor me bouwen?
-AI-generatoren kunnen de frontend UI voor een prijspagina schrijven, maar ze kunnen niet veilig de server-naar-database communicatie configureren die nodig is om daadwerkelijk geld te verwerken zonder menselijke technische interventie.
+### 3. Kunnen Bolt.new of Lovable mijn Stripe-webhooks bouwen?
+Ze kunnen prijs-UI's schrijven, maar geen veilige server-naar-database communicatie configureren die toegang intrekt bij mislukte betalingen.
 
-### Hoe beveiligt LaunchStudio B2B-data in een MVP?
-We implementeren Row Level Security (RLS) in PostgreSQL. Dit fungeert als een onkraakbare firewall die op databaseniveau garandeert dat Bedrijf A fysiek nooit de data van Bedrijf B kan inzien.
+### 4. Hoe beveiligd LaunchStudio B2B-gegevens in een MVP?
+We implementeren Row Level Security (RLS) met `tenant_id` in de database, zodat Bedrijf A fysiek geen toegang heeft tot gegevens van Bedrijf B.
 
-### Kan ik nog features toevoegen nadat LaunchStudio mijn MVP heeft gelanceerd?
-Ja. We zetten een automatische deployment pipeline op via GitHub. Je kunt je AI-tools blijven gebruiken om nieuwe features te ontwerpen, en die updates stromen automatisch naar je live domein terwijl de backend veilig blijft.
+### 5. Kan ik meer functies toevoegen nadat LaunchStudio mijn MVP heeft uitgerold?
+Ja. We stellen een GitHub CI/CD-pijplijn in, zodat u nieuwe functies kunt toevoegen met uw AI-tools zonder de beveiligde backend te verstoren.
 
 <script type="application/ld+json">
 {
@@ -117,39 +131,39 @@ Ja. We zetten een automatische deployment pipeline op via GitHub. Je kunt je AI-
       "name": "Moet ik echt geld vragen voor een MVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. AI API-aanroepen kosten direct geld. Een gratis AI MVP leidt razendsnel tot faillissement. Betaling afdwingen valideert bovendien dat B2B-klanten de tool echt nodig hebben."
+        "text": "Ja. AI-generaties kosten API-geld. Geld vragen vanaf dag één voorkomt financiële verliezen en valideert de werkelijke B2B-vraag."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom is Single Sign-On (SSO) niet vereist voor een B2B MVP?",
+      "name": "Waarom is Single Sign-On (SSO) niet vereist voor een MVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SSO vereist zware backend integraties. Terwijl corporates dit eisen, hebben kleine en middelgrote bedrijven er geen enkel probleem mee om via een simpele e-mail/wachtwoord combinatie in te loggen."
+        "text": "SSO is complex om in te richten. B2B early adopters accepteren een e-mail/wachtwoord login voor een waardevolle MVP."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan Bolt.new of Lovable mijn Stripe webhooks voor me bouwen?",
+      "name": "Kunnen AI-tools mijn Stripe-webhooks bouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI kan de visuele prijspagina maken, maar kan niet de complexe en risicovolle webhook serverlogica veilig opzetten die nodig is om betalingen te verifiëren in je database."
+        "text": "AI-tools bouwen prijs-UI's, maar kunnen niet de veilige server-webhooks en databasestatuses configureren die nodig zijn voor echt geld."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe beveiligt LaunchStudio B2B-data in een MVP?",
+      "name": "Hoe beveiligd LaunchStudio B2B-gegevens in een MVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We bouwen strikte Row Level Security (RLS) in de database. Dit garandeert dat de data van verschillende zakelijke klanten (tenants) strikt gescheiden en onbereikbaar voor elkaar blijft."
+        "text": "We dwingen tenant-scoping af via Row Level Security (RLS) in PostgreSQL, waardoor Bedrijf A nooit bij de data van Bedrijf B kan."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik nog features toevoegen nadat LaunchStudio mijn MVP heeft gelanceerd?",
+      "name": "Kan ik meer functies toevoegen na uitrol van mijn MVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, via onze CI/CD GitHub-pipeline kun je visuele updates in je AI-tools blijven maken. Deze worden dan met één druk op de knop veilig gedeployd naar je live productieomgeving."
+        "text": "Ja. We stellen een GitHub CI/CD-pijplijn in zodat u AI-tools kunt blijven gebruiken voor nieuwe functies zonder de backend te breken."
       }
     }
   ]

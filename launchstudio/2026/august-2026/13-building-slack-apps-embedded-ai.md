@@ -1,5 +1,5 @@
 ---
-Title: Building Slack Apps with Embedded AI: The Invisible SaaS Model
+Title: "Building Slack Apps with Embedded AI: The Invisible SaaS Model"
 Keywords: ai saas, build ai app, ai native, ai deployment, ai software engineering, build app with ai, ai code development
 Buyer Stage: Awareness
 ---

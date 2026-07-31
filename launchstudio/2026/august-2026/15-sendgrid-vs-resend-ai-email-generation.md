@@ -1,5 +1,5 @@
 ---
-Title: SendGrid vs Resend: The Best Email API for AI-Generated Content
+Title: "SendGrid vs Resend: The Best Email API for AI-Generated Content"
 Keywords: ai saas, build app with ai, ai deployment, ai native, ai code development, ai software engineering, saas ai
 Buyer Stage: Consideration
 ---

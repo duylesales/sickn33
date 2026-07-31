@@ -1,5 +1,5 @@
 ---
-Title: B2B AI Trials: Why Reverse Trials Beat Freemium
+Title: "B2B AI Trials: Why Reverse Trials Beat Freemium"
 Keywords: ai saas, saas ai, ai saas platform, build ai app, ai native, ai in saas, ai deployment, ai software engineering
 Buyer Stage: Consideration
 ---

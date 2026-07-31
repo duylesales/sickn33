@@ -1,96 +1,96 @@
 ---
-Titel: De Bureau Gids voor het Auditen van Security AI
-Trefwoorden: security AI, AI secure, LaunchStudio, Manifera, Cursor, Bolt
+Titel: De Bureaugids voor het Auditeren van AI Beveiliging
+Trefwoorden: beveiliging ai, veilige ai, launchstudio, manifera, cursor, bolt, white-label, bureau
 Koperfase: Overweging
 Doelpersona: C (Bureau / Freelancer - White-Label Partner)
 ---
 
-# De Bureau Gids voor het Auditen van Security AI
+# De Bureaugids voor het Auditeren van AI Beveiliging
 
-Digitale bureaus worden geconfronteerd met een nieuw soort klantverzoek. Een oprichter stapt je kantoor binnen, legt een GitHub-link op tafel en zegt: "Ik heb dit prototype dit weekend met AI gebouwd. Kunnen jullie het afmaken en vrijdag lanceren?"
+Digitale bureaus staan voor een nieuw type klantaanvraag. Een oprichter wandelt uw kantoor binnen, legt een GitHub-link op tafel en zegt: "Ik heb dit prototype in het weekend met AI gebouwd. Kunnen jullie het afmaken en tegen vrijdag lanceren?"
 
-Vijf jaar geleden wezen bureaus dit resoluut af en stonden ze op een herbouwfase van €30.000. Vandaag de dag betekent het afwijzen van AI-prototypes dat je business verliest aan concurrenten die zich wel aanpassen.
+Vijf jaar geleden zouden bureaus dit weigeren. Vandaag betekent het weigeren van AI-prototypes het verliezen van omzet aan concurrenten.
 
-Echter, het accepteren van een AI-gegenereerde codebase zonder een rigoureuze beveiligingsaudit is een enorme aansprakelijkheid. AI-tools optimaliseren voor visuele voltooiing, niet voor gegevensbescherming. Als jij de AI-app van een klant lanceert en er vindt een datalek plaats, valt de juridische en reputatieschade volledig op jouw bureau. Hier is het raamwerk om de beveiliging van AI-code te auditen voordat je ermee akkoord gaat deze te lanceren.
+Het accepteren van een met AI gegenereerde codebase zonder beveiligingsaudit is echter een enorme aansprakelijkheid. AI-tools optimaliseren voor visuele afronding, niet voor databescherming — audits tonen aan dat 45% van de AI-code minstens één misbruikbare kwetsbaarheid bevat.
 
-## De Security Audit Checklist voor Bureaus
+## De Beveiligingsaudit-Checklist voor Bureaus
 
-Wanneer je team een codebase erft die is gegenereerd door Lovable, Bolt of Cursor, moet je er standaard van uitgaan dat de backend is gecompromitteerd. Controleer direct deze drie gebieden.
+Wanneer uw team een codebase overneemt die is gegenereerd door Lovable, Bolt of Cursor, moet u aannemen dat de backend standaard niet beveiligd is. Controleer deze gebieden direct:
 
-### 1. Database Privilege Escalation (De BaaS Valstrik)
+### 1. Database Privilege Escalation (De BaaS Valkuil)
 
-AI-generatoren houden van Backend-as-a-Service (BaaS) platforms zoals Supabase, omdat ze makkelijk te prompten zijn. AI gebruikt echter vaak de generieke `anon`-sleutel om complexe queries direct vanaf de client uit te voeren.
+- **De Audit:** Zoek in de frontend-repository naar `supabase.from()`-query's. Wordt Row Level Security (RLS) omzeild of is het op tabellen helemaal niet ingeschakeld?
+- **Het Risico:** Als RLS niet strikt gedefinieerd is, kan elke gebruiker de JavaScript manipuleren om tabellen van andere huurders te lezen of te verwijderen.
 
-- **De Audit:** Zoek in de frontend repository naar `supabase.from()`. Omzeilen ze Row Level Security (RLS)?
-- **Het Risico:** Als RLS niet strikt is gedefinieerd, kan elke gebruiker de client-side JavaScript manipuleren om tabellen van andere huurders (tenants) te lezen of te verwijderen.
+### 2. Blootstelling van Geheimen in Client-Bundels
 
-### 2. Secret Exposure in Client Bundles
+- **De Audit:** Gebruik een scanner zoals `trufflehog` of `gitleaks` op de volledige commit-historie. Zoek handmatig naar Stripe-geheimen of Supabase-service-rollen in `NEXT_PUBLIC_`-variabelen.
+- **Het Risico:** Het blootstellen van een service_role-sleutel geeft kwaadwillenden volledige beheerderstoegang tot de database van uw klant.
 
-LLM's begrijpen het verschil niet tussen een veilige serveromgeving en een publieke client bundle. Ze zullen een API-sleutel uit je prompt vrolijk hardcoderen in een React-component.
+### 3. Ontbrekende Snelheidsbeperking (Rate Limiting) en DoS-Kwetsbaarheden
 
-- **De Audit:** Inspecteer de `.env.local` patronen. Zoek specifiek naar Stripe secret keys of database service roles in Next.js `NEXT_PUBLIC_` variabelen.
-- **Het Risico:** Het blootstellen van een service role key geeft kwaadwillenden volledige administratieve toegang tot de database van je klant.
+- **De Audit:** Inspecteer de API-routes. Is er middleware voor snelheidsbeperking toegepast op routes die dure operaties uitvoeren of e-mails versturen?
+- **Het Risico:** Een geautomatiseerd script kan een onbeschermd AI-generatie-eindpunt 10.000 keer aanroepen, wat leidt tot torenhoge kosten voor uw klant.
 
-### 3. Ontbrekende Rate Limiting en DoS Kwetsbaarheden
+### 4. Verwarring tussen Authenticatie en Autorisatie
 
-AI-modellen prompten zichzelf zelden om defensieve infrastructuur te bouwen. Als een AI een endpoint voor het resetten van wachtwoorden genereert, is deze vaak onbeschermd.
-
-- **De Audit:** Inspecteer de API-routes. Is er rate limiting middleware toegepast op zware operaties?
-- **Het Risico:** Een simpel script kan een onbeschermd AI-endpoint 10.000 keer raken, wat in enkele minuten een enorme OpenAI API-rekening voor je klant oplevert.
+- **De Audit:** Controleer of de backend verifieert dat de ingelogde gebruiker daadwerkelijk de eigenaar is van de specifieke bron die hij probeert te wijzigen.
+- **Het Risico:** Zonder eigendomscontrole kan elke ingelogde gebruiker gegevens van andere gebruikers bewerken of verwijderen door een ID in het verzoek aan te passen.
 
 ## De White-Label Oplossing voor Bureaus
 
-Het auditen en repareren van deze beveiligingslekken vereist zeer gespecialiseerde backend engineering. Veel creatieve of frontend-gerichte bureaus hebben simpelweg niet de in-house capaciteit om AI-backends rendabel te verharden.
+Het auditeren en herstellen van deze kwetsbaarheden vereist gespecialiseerde backend-engineering. Veel creatieve of frontend-gerichte bureaus hebben de in-house capaciteit niet.
 
-Dit is waarom [LaunchStudio](https://launchstudio.eu/) opereert als een stille, white-label productiepartner voor digitale bureaus in Europa. Gesteund door de 11+ jaar enterprise engineering-ervaring van [Manifera](https://www.manifera.com/), behandelen wij de "laatste mijl" beveiliging van het AI-prototype van je klant.
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
+
+Dit is waarom [LaunchStudio](https://launchstudio.eu/en/) optreedt als een stille, white-label productiepartner voor bureaus in Europa. Ondersteund door [Manifera's](https://www.manifera.com/) 11+ jaar ervaring vanuit Amsterdam, Singapore en Ho Chi Minh City, verzorgen wij de "laatste kilometer".
 
 Jouw branding, onze engineering.
 
-Jij beheert de klantrelatie en de frontend UX. Wij nemen de AI-codebase, voeren een uitgebreide veiligheidsaudit uit, implementeren Row Level Security, integreren webhooks en deployen het naar een geharde omgeving. We werken onder strikte NDA's.
+U beheert de klantrelatie en de frontend. Wij voeren een beveiligingsaudit uit, implementeren RLS, integreren betalings-webhooks en rollen uit naar een beveiligde omgeving onder strikte NDA.
 
-## Belangrijkste conclusies
+## Belangrijkste Inzichten
 
-- Bureaus moeten zich aanpassen aan klanten met AI-prototypes, maar lanceren zonder audit is een groot risico.
-- AI-tools stellen vaak gevoelige API-sleutels bloot in client bundles en missen Row Level Security.
-- Het auditen van AI-code vereist het zoeken naar ontbrekende defensieve infrastructuur, zoals rate limiting.
-- LaunchStudio biedt een white-label partnerschap voor bureaus om complexe backend-beveiliging af te handelen.
+- Bureaus moeten zich aanpassen aan AI-prototypes, maar lanceren zonder audit is een groot risico dat bij het bureau terechtkomt.
+- AI-tools stellen gevoelige sleutels bloot in client-bundels en commit-historie, en vergeten vaak RLS in databases.
+- Auditeren vereist controle op snelheidsbeperking en autorisatie (eigenaarschap van bronnen).
+- 45% van de AI-code bevat beveiligingslekken, wat een pre-launch audit noodzakelijk maakt.
+- LaunchStudio biedt een white-label partnerschap om de backend-beveiliging af te handelen.
 
-[Freelancer of bureau? Neem contact op om ons white-label partnerprogramma te bespreken](https://launchstudio.eu/#contact).
+## Echt Voorbeeld
 
-## Real example
+### Een Bureau in Actie: Het Boetiek Digitaal Bureau
 
-### Een AI-Native oprichter in actie: Het Boutique Digitale Bureau
+CreativeFlow, een digitaal ontwerpbureau in Antwerpen, had een uitdaging. Een klant gebruikte **Cursor** om een intern dashboard te bouwen en vroeg CreativeFlow om het live te zetten.
 
-CreativeFlow, een boutique designbureau in Antwerpen, had een probleem. Een grote klant, een logistiek bedrijf, gebruikte **Cursor** om een intern dashboard te bouwen voor het volgen van zendingen. De klant vroeg CreativeFlow om "het er professioneel uit te laten zien en op een echte server te zetten."
-
-De frontend-ontwerpers poetsten de UI makkelijk op, maar hun enige backend-developer raakte in paniek. De AI had de productie-database credentials hardcoded in de React-context gezet en de API-endpoints waren volledig ongeauthenticeerd. Iedereen met de URL kon zendingen verwijderen. CreativeFlow had niet de capaciteit om de hele Node.js backend te herbouwen binnen de strakke deadline.
+De ontwerpers verfijnden de UI, maar de backend-ontwikkelaar schrok toen hij ontdekte dat database-referenties gehardcodeerd waren in de React-context en dat API-eindpunten geen authenticatie hadden. Iedereen met de URL kon zendingen verwijderen.
 
 Ze benaderden **LaunchStudio (door Manifera)** als white-label partner.
 
-Volledig achter de schermen onder het merk van CreativeFlow, auditte ons team de codebase. We verwijderden de hardcoded credentials, verplaatsten database-interacties naar veilige server-side API's en implementeerden strikte JWT-authenticatie. Vervolgens deployden we de applicatie naar een beheerde AWS-omgeving.
+Achter de schermen onder het merk van CreativeFlow auditte ons team de codebase. We verwijderden gehardcodeerde sleutels, verplaatsten database-interacties naar veilige API-routes, implementeerden JWT-authenticatie en RLS, voegden snelheidsbeperking toe en rolden uit naar AWS.
 
-**Resultaat:** CreativeFlow leverde het project op tijd en rekende hun klant een premium tarief voor een veilige enterprise deployment. Het logistieke bedrijf wist nooit dat LaunchStudio betrokken was. *"Door samen te werken met LaunchStudio kunnen we 'ja' zeggen tegen AI-projecten zonder de reputatie van ons bureau te riskeren."*
+**Resultaat:** CreativeFlow leverde het project op tijd op en factureerde een premium tarief voor een veilige uitrol. De klant wist niet dat LaunchStudio betrokken was. *"Door samen te werken met LaunchStudio kunnen we 'ja' zeggen tegen AI-projecten zonder de reputatie van ons bureau te riskeren."*
 
 **Kosten & Doorlooptijd:** €3.500 (White-label Launch Ready-pakket) — afgerond in 12 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Waarom zou ons bureau de AI-code van de klant niet gewoon vanaf nul herbouwen?
-Herbouwen duurt maanden en kost tienduizenden euro's. Klanten met AI-prototypes verwachten snelheid. Als je 3 maanden offreert, vinden ze een ander bureau (of een LaunchStudio-partner) dat hun bestaande code in twee weken kan verharden.
+### 1. Waarom zou ons bureau de AI-code van de klant niet gewoon vanaf nul herbouwen?
+Herbouwen vanaf nul duurt maanden en kost tienduizenden euro's. Klanten die AI-prototypes meenemen verwachten snelheid en efficiëntie. Als u 3 maanden quoteert, zoeken ze een ander bureau.
 
-### Hoe werkt het white-label partnerschap van LaunchStudio?
-Wij fungeren als je stille backend-afdeling. We tekenen een NDA, en alle communicatie verloopt via jouw bureau. Jij factureert je klant met jouw eigen marge, en wij factureren jou een vaste prijs voor de beveiligings- en deployment-werkzaamheden.
+### 2. Hoe werkt het white-label partnerschap van LaunchStudio?
+Wij werken als uw stille backend-engineeringafdeling onder NDA. U factureert uw klant met uw eigen marge, en wij factureren u een vaste, voorspelbare prijs voor het werk.
 
-### Wat zijn de meest voorkomende kwetsbaarheden die LaunchStudio in AI-code vindt?
-De top drie zijn: 1) Gebrek aan Row Level Security (RLS) wat leidt tot datalekken, 2) Hardcoded secret keys in frontend bundles, en 3) Ontbrekende validatie op API-endpoints.
+### 3. Wat zijn de meest voorkomende kwetsbaarheden die LaunchStudio vindt in AI-code?
+Ontbrekende Row Level Security (RLS), gehardcodeerde sleutels in client-bundels en commit-historie, ontbrekende snelheidsbeperking en autorisatiegaten waar eigenaarschap niet wordt gecontroleerd.
 
-### Wijzigt LaunchStudio de frontend UI die ons bureau heeft ontworpen?
-Nee. We respecteren de scheiding van verantwoordelijkheden. We focussen uitsluitend op de backend-infrastructuur, databasebeveiliging en webhooks. Jouw bureau behoudt de volledige controle over de React/Next.js code en het UI/UX-design.
+### 4. Wijzigt LaunchStudio de frontend-UI die ons bureau heeft ontworpen?
+Nee. We richten ons uitsluitend op backend-infrastructuur, databasebeveiliging, betalings-webhooks en deployment. Uw bureau behoudt de volledige controle over de frontend-UI.
 
-### Kan LaunchStudio ook lopend onderhoud doen voor de klanten van ons bureau?
-Ja. Via ons "Lancering & Groei"-pakket kunnen we managed hosting, beveiligingsupdates en back-ups leveren als white-label dienst. Je kunt dit doorverkopen als een maandelijks onderhoudscontract voor extra terugkerende inkomsten voor je bureau.
+### 5. Kan LaunchStudio doorlopend onderhoud afhandelen voor klanten van ons bureau?
+Ja. Via ons "Launch & Grow"-pakket bieden we beheerde hosting en beveiligingsupdates aan die u kunt doorverkopen als een maandelijks onderhoudscontract.
 
 <script type="application/ld+json">
 {
@@ -99,10 +99,10 @@ Ja. Via ons "Lancering & Groei"-pakket kunnen we managed hosting, beveiligingsup
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom zou ons bureau de AI-code van de klant niet gewoon vanaf nul herbouwen?",
+      "name": "Waarom zou ons bureau de AI-code van de klant niet vanaf nul herbouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Klanten met AI-prototypes verwachten snelheid en kostenefficiëntie. Een herbouw duurt vaak maanden, terwijl het verharden van bestaande code in enkele weken kan."
+        "text": "Herbouwen duurt maanden en is duur. Klanten die AI-prototypes meenemen verwachten snelheid. Het beveiligen van bestaande code kan in weken."
       }
     },
     {
@@ -110,31 +110,31 @@ Ja. Via ons "Lancering & Groei"-pakket kunnen we managed hosting, beveiligingsup
       "name": "Hoe werkt het white-label partnerschap van LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We werken als een stille backend-afdeling onder NDA. Jouw bureau beheert de klant, bepaalt de eigen marge, en wij leveren de technische beveiliging tegen een vaste prijs."
+        "text": "Wij werken als uw stille backend-engineeringafdeling onder NDA. U factureert uw klant met uw marge, en wij factureren u een vaste prijs."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat zijn de meest voorkomende kwetsbaarheden die LaunchStudio in AI-code vindt?",
+      "name": "Wat zijn de meest voorkomende kwetsbaarheden in AI-code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De top drie kwetsbaarheden zijn het ontbreken van Row Level Security (RLS), hardcoded geheime sleutels in de frontend, en ongevalideerde API-endpoints."
+        "text": "Ontbrekende RLS, gehardcodeerde sleutels in client-bundels en commit-historie, ontbrekende snelheidsbeperking en autorisatiegaten."
       }
     },
     {
       "@type": "Question",
-      "name": "Wijzigt LaunchStudio de frontend UI die ons bureau heeft ontworpen?",
+      "name": "Wijzigt LaunchStudio de frontend-UI die ons bureau heeft ontworpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, we focussen uitsluitend op de backend-infrastructuur en beveiliging. Het bureau behoudt de volledige controle over het UI/UX-ontwerp."
+        "text": "Nee. We richten ons uitsluitend op backend-infrastructuur en beveiliging. Uw bureau behoudt volledige controle over het frontend-ontwerp."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio ook lopend onderhoud doen voor de klanten van ons bureau?",
+      "name": "Kan LaunchStudio doorlopend onderhoud afhandelen voor klanten van ons bureau?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. We bieden white-label managed hosting en beveiligingsupdates die jouw bureau kan doorverkopen als een maandelijks onderhoudscontract."
+        "text": "Ja. We bieden beheerde hosting en beveiligingsupdates die u kunt doorverkopen als maandelijks onderhoudscontract voor terugkerende omzet."
       }
     }
   ]

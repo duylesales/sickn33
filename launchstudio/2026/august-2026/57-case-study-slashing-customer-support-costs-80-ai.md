@@ -1,5 +1,5 @@
 ---
-Title: Case Study: Slashing Customer Support Costs with an AI RAG Agent
+Title: "Case Study: Slashing Customer Support Costs with an AI RAG Agent"
 Keywords: ai saas, ai deployment, ai security, ai vulnerabilities, build ai app, ai database, use ai to generate code
 Buyer Stage: Consideration
 ---

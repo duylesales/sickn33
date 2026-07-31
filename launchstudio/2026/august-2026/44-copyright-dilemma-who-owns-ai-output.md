@@ -1,5 +1,5 @@
 ---
-Title: The AI Copyright Dilemma: Who Owns What Your AI Generates
+Title: "The AI Copyright Dilemma: Who Owns What Your AI Generates"
 Keywords: ai generated application, generative ai, ai and software development, ai native, ai saas, ai security issues
 Buyer Stage: Awareness
 ---

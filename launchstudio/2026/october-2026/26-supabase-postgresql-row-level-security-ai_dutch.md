@@ -1,22 +1,21 @@
 ---
-Titel: Waarom Supabase Row Level Security Essentiële Security For AI Is
-Trefwoorden: Beveiliging voor AI, supabase, postgresql, row level security, rls, LaunchStudio, Manifera, AI saas
+Titel: Waarom Supabase Row Level Security Essentiële Beveiliging Voor AI is
+Trefwoorden: beveiliging voor ai, supabase, postgresql, row level security, rls, launchstudio, manifera, ai saas
 Koperfase: Overweging
-Doelpersona: B (Technische Solo-oprichter)
+Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Waarom Supabase Row Level Security Essentiële Security For AI Is
-Wanneer je als technische solo-oprichter een AI-applicatie bouwt, is snelheid alles. Je gebruikt Bolt.new of Cursor om je React frontend te genereren, en je kiest Supabase als je backend.
+# Waarom Supabase Row Level Security Essentiële Beveiliging Voor AI is
 
-Supabase—een open-source Firebase alternatief gebouwd op PostgreSQL—is waarschijnlijk de beste databasekeuze voor moderne AI-startups. Het biedt instant API's, real-time abonnementen en ingebouwde vectorondersteuning (`pgvector`) voor AI-embeddings.
+Wanneer u als technische solo-oprichter een AI-applicatie bouwt, is snelheid alles. U gebruikt Bolt.new of Cursor om uw React-frontend te genereren, en grijpt naar Supabase als uw backend.
 
-Echter, de eigenschap die Supabase zo snel maakt—de automatisch gegenereerde client-side API—is ook een massaal beveiligingsrisico als je niet weet hoe je deze moet afschermen. Als je Supabase direct vanuit je React frontend bevraagt zonder Row Level Security (RLS) te configureren, ligt je hele database open voor het publieke internet.
+Supabase — een open-source Firebase-alternatief gebouwd op PostgreSQL — is een fantastische databasekeuze voor AI-startups. Het biedt directe API's, realtime abonnementen en ingebouwde vectorondersteuning (`pgvector`) voor AI-embeddings.
 
-## Het Gevaar van Client-Side Database Queries
+De functie die Supabase zo snel maakt — de automatisch gegenereerde client-side API — is echter een beveiligingsrisico als u deze niet vergrendelt. Als u Supabase rechtstreeks vanuit uw React-frontend bevraagt zonder Row Level Security (RLS) te configureren, staat uw gehele database open voor het internet. Audits tonen aan dat 45% van de AI-codebases misbruikbare lekken bevat.
 
-In een traditionele architectuur praat je frontend met een Node.js backend server. De backend authenticeert de gebruiker en bevraagt PostgreSQL.
+## Het Gevaar van Client-Side Databasequeries
 
-Supabase draait dit om. Het levert een JavaScript-client waarmee je frontend direct de database kan bevragen:
+In een traditionele architectuur praat uw frontend met een Node.js-backend die de database bevraagt. Supabase biedt een JavaScript-client `supabase-js` waarmee uw frontend-code de database direct bevraagt.
 
 ```javascript
 // Dit draait in de browser van de gebruiker
@@ -25,7 +24,7 @@ const { data, error } = await supabase
   .select('*')
 ```
 
-Dit bouwt razendsnel. Maar let op: dit draait in de browser. Een kwaadwillende gebruiker kan de Chrome Developer Tools openen en dit uitvoeren:
+Dit is snel te bouwen, maar draait in de browser. Een kwaadwillende kan de Chrome Developer Tools openen en uitvoeren:
 
 ```javascript
 const { data, error } = await supabase
@@ -33,84 +32,81 @@ const { data, error } = await supabase
   .delete()
 ```
 
-Zonder Row Level Security wordt dat commando gewoon uitgevoerd. De hacker verwijdert direct je hele gebruikerstabel.
+Als u geen Row Level Security heeft ingeschakeld, wordt die opdracht uitgevoerd en wordt uw gebruikerstabel gewist.
 
-## De Oplossing: Row Level Security (RLS)
+## Maak Kennis met Row Level Security (RLS)
 
-PostgreSQL Row Level Security (RLS) voorkomt deze ramp. RLS stelt je in staat strikte database-policies te schrijven die fungeren als een firewall voor elke afzonderlijke rij data.
+PostgreSQL Row Level Security (RLS) voorkomt deze ramp. RLS stelt u in staat om strikte policies op databaseniveau te schrijven die fungeren als een firewall voor elke rij gegevens.
 
-Wanneer RLS is ingeschakeld, onderschept de database de query, controleert het JSON Web Token (JWT) en evalueert de policy voordat er data wordt teruggegeven.
+Wanneer RLS is ingeschakeld, controleert de database het JSON Web Token (JWT) van de gebruiker en evalueert het de policy:
 
-Een standaard RLS-policy:
 ```sql
-CREATE POLICY "Gebruikers zien alleen hun eigen rapporten" 
+CREATE POLICY "Users can only view their own reports" 
 ON public.ai_generated_reports 
 FOR SELECT 
 USING (auth.uid() = user_id);
 ```
 
-Zelfs als een hacker via de console de hele tabel probeert op te vragen, filtert PostgreSQL de resultaten en retourneert het *alleen* de rijen waar het `user_id` overeenkomt met de ingelogde gebruiker.
+### RLS Moet Elke Operatie Dekken
 
-### De AI Complicatie
+PostgreSQL evalueert `SELECT`, `INSERT`, `UPDATE` en `DELETE` onafhankelijk. Een tabel met alleen een `SELECT`-policy blokkeert ofwel alle schrijfopdrachten of laat ze onbeschermd. Een productie-tabel heeft vier expliciete policies nodig voor alle operaties met `WITH CHECK`-clausules bij schrijfacties.
 
-Voor AI-applicaties wordt RLS complexer. Je slaat vector embeddings en dure API-generatiegeschiedenis op. Bij een verkeerd geconfigureerde RLS kan een gebruiker niet alleen data stelen, maar ook gratis AI-generaties triggeren op jouw kosten, of je vector database vergiftigen met malafide data.
+### De AI-Complicatie
 
-## De Kloof Overbruggen met LaunchStudio
+Voor AI-toepassingen op basis van `pgvector` vergeten oprichters vaak de geassocieerde embeddings-tabel te beveiligen. Een aanvaller die de embeddings-tabel direct kan lezen, kan originele documenten reconstrueren. Bovendien omzeilen Edge Functions met een `service_role`-sleutel RLS; als die sleutel uitlekt naar de client, vervalt alle RLS-beveiliging.
 
-Het schrijven van veilige PostgreSQL RLS-policies vereist diepe database-expertise. Vertrouwen op een LLM zoals Cursor AI om je database te beveiligen tegen complexe injectie-aanvallen is een gevaarlijke gok.
+## De Kloof Dichten met LaunchStudio
 
-Hier wordt [LaunchStudio](https://launchstudio.eu/) je infrastructuurpartner.
+Het schrijven van veilige PostgreSQL RLS-policies vereist diepgaande database-expertise.
 
-Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/), zijn wij gespecialiseerd in het beveiligen van Supabase-architecturen. Jij bouwt de frontend; wij voeren de database-verharding uit.
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Met ons "Launch Ready"-pakket migreren we je codebase naar een veilige Supabase-omgeving, schakelen we RLS in op elke tabel en schrijven we de kogelvrije SQL-policies die nodig zijn voor multi-tenant SaaS-beveiliging.
+Ondersteund door [Manifera's](https://www.manifera.com/) enterprise-team vanuit Amsterdam, Singapore en Ho Chi Minh City, specialiseert [LaunchStudio](https://launchstudio.eu/en/) zich in het beveiligen van Supabase-architecturen voor AI-startups.
 
-## Belangrijkste conclusies
+Via ons "Klaar voor lancering" (Launch Ready) pakket migreren we uw codebase naar een veilige Supabase-omgeving, schakelen we RLS in voor alle operaties op elke tabel, en schrijven we waterdichte SQL-policies.
 
-- Supabase maakt snelle frontend-database queries mogelijk, maar stelt je hele database bloot als deze niet beveiligd is.
-- Row Level Security (RLS) fungeert als een firewall op rijniveau, zodat gebruikers alleen hun eigen data zien.
-- Slecht geconfigureerde RLS in een AI-app kan leiden tot gestolen vectordata en gekaapte API-credits.
-- Het schrijven van veilige RLS-policies vereist diepe PostgreSQL-expertise.
-- LaunchStudio beveiligt je Supabase-architectuur, zodat je veilig kunt schalen en voldoet aan de AVG/GDPR.
+## Belangrijkste Inzichten
 
-[Laat je database niet onbeveiligd. Neem vandaag nog contact op met LaunchStudio om je Supabase-architectuur te beveiligen](https://launchstudio.eu/#contact).
+- Supabase maakt snelle queries mogelijk, maar stelt de database open als deze onbeveiligd blijft.
+- Row Level Security (RLS) fungeert als een firewall op databaseniveau.
+- RLS moet worden toegepast op elke operatie (SELECT, INSERT, UPDATE, DELETE) met `WITH CHECK`-clausules.
+- Misgeconfigureerde RLS in een AI-app kan leiden tot gestolen vectordata en misbruikte API-credits.
+- LaunchStudio beveilig uw Supabase-architectuur zodat u veilig kunt schalen.
 
-## Real example
+## Echt Voorbeeld
 
-### Een AI-Native oprichter in actie: De Juridische AI Assistent
+### Een AI-Native Oprichter in Actie: De Juridische AI-Assistent
 
-David, een technische solo-oprichter in Amsterdam, bouwde een AI juridische assistent met Next.js en **Supabase**. Advocaten konden gevoelige contracten uploaden, die werden omgezet in vector embeddings (`pgvector`) voor AI-analyse.
+David, een solo-ontwikkelaar in Amsterdam, bouwde een AI-juridisch assistent met Next.js en **Supabase**. Advocaten uploadden contracten die werden omgezet in vector-embeddings (`pgvector`).
 
-Om snel te lanceren, bevroeg David Supabase direct vanuit de frontend. Hij schakelde authenticatie in, maar liet RLS uitstaan, denkend dat verborgen URL's genoeg bescherming boden.
+David bevraagde de database direct vanuit de React-frontend zonder RLS. Een week na de bèta zag hij een torenhoge OpenAI-rekening: één gebruiker had via de browserconsole meer dan 4.000 contracten van concurrerende advocatenkantoren gedownload.
 
-Een week na de lancering zag David een enorme piek in OpenAI API-kosten. In zijn Supabase-dashboard zag hij dat één account meer dan 4.000 contracten van andere advocatenkantoren had gedownload. Omdat RLS uitstond, had een tech-savvy gebruiker simpelweg `supabase.from('contracts').select('*')` uitgevoerd in de browserconsole.
+David nam de app direct offline en benaderde **LaunchStudio (door Manifera)**.
 
-Geconfronteerd met een catastrofaal AVG-datalek, haalde David de app direct offline en belde **LaunchStudio (door Manifera)**.
+Onze engineers schakelden RLS in over zijn gehele Supabase-schema (inclusief `pgvector`), schreven strikte SQL-policies en verplaatsten OpenAI API-calls naar veilige Supabase Edge Functions.
 
-Onze database-engineers grepen direct in. We schakelden RLS in voor zijn hele schema en schreven strikte SQL-policies zodat een actie alleen kon plaatsvinden als het `auth.uid()` overeenkwam met het `tenant_id` van het contract. Ook verplaatsten we zijn dure OpenAI API-calls naar veilige Supabase Edge Functions.
+**Resultaat:** David herlanceerde de app 5 dagen later. Hij slaagde voor een beveiligingsaudit van een groot Nederlands advocatenkantoor en sloot een €3.000 MRR-contract. *"LaunchStudio bewaakte mijn backend en redde mijn bedrijf."*
 
-**Resultaat:** David herlanceerde de app 5 dagen later. Het platform is nu cryptografisch beveiligd op databaseniveau. Hij doorstond recent een strenge beveiligingsaudit van een groot advocatenkantoor en sloot een enterprise-contract af. *"Ik bouwde een geweldige AI-tool, maar een waardeloze database. LaunchStudio beveiligde mijn backend en redde mijn bedrijf."*
-
-**Kosten & Doorlooptijd:** €2.800 (Launch Ready database verhardingspakket) — afgerond in 5 werkdagen.
+**Kosten & Doorlooptijd:** €2.800 (Launch Ready databasebeveiligingspakket) — afgerond in 5 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Wat gebeurt er als ik vergeet RLS in te schakelen in Supabase?
-Als RLS uitstaat en je gebruikt de publieke Supabase API-key in je frontend, kan iedereen op het internet elke rij in je database lezen, wijzigen of verwijderen via simpele HTTP-verzoeken.
+### 1. Wat gebeurt er als ik RLS in Supabase vergeet in te schakelen?
+Als RLS is uitgeschakeld, kan iedereen op het internet elke rij in uw database lezen, wijzigen of verwijderen via de openbare API.
 
-### Kan ik mijn Supabase URL en API-key niet gewoon verbergen?
-Nee. De 'anon' key en URL moeten naar de browser gestuurd worden om de frontend te laten werken. Ze zijn per definitie publiek. Je beveiliging is 100% afhankelijk van RLS-policies, niet van het verbergen van sleutels.
+### 2. Kan ik de Supabase URL en API-sleutel niet gewoon verbergen?
+Nee. De "anon"-sleutel en URL moeten naar de browser worden gestuurd om te werken. Beveiliging leunt 100% op RLS-policies, niet op het verbergen van sleutels.
 
-### Maakt RLS mijn database queries langzamer?
-Goed geschreven RLS-policies hebben vrijwel geen impact op de prestaties. Echter, door AI gegenereerde policies met inefficiënte subqueries kunnen de database ernstig vertragen. Efficiënte SQL is vereist.
+### 3. Vertraagt RLS database-queries?
+Goed geschreven policies op geïndexeerde kolommen (`user_id`) hebben vrijwel geen impact op prestaties. Slecht geschreven policies zonder indexen kunnen de database wel vertragen.
 
-### Hoe beveiligt LaunchStudio Supabase Edge Functions?
-We valideren de JWT binnen de functie en zorgen ervoor dat de functie draait met minimale database-rechten, wat voorkomt dat gebruikers onbetaalde API-aanroepen kunnen doen of betaalmuren omzeilen.
+### 4. Heb ik afzonderlijke policies nodig voor INSERT, UPDATE en DELETE?
+Ja. PostgreSQL evalueert alle operaties onafhankelijk. Een SELECT-policy alleen laat schrijfies onbeschermd.
 
-### Kan Cursor AI mijn RLS-policies voor me schrijven?
-Cursor kan de basissyntaxis genereren, maar vertrouwen op een LLM om een complexe multi-tenant database perfect te beveiligen zonder menselijke expert-audit is een extreem hoog risico.
+### 5. Hoe beveiligt LaunchStudio Supabase Edge Functions?
+We valideren het JWT van de gebruiker in de functie, auditeren het gebruik van de `service_role`-sleutel en zorgen dat functies met minimale rechten draaien.
 
 <script type="application/ld+json">
 {
@@ -119,26 +115,34 @@ Cursor kan de basissyntaxis genereren, maar vertrouwen op een LLM om een complex
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat gebeurt er als ik vergeet RLS in te schakelen in Supabase?",
+      "name": "Wat gebeurt er als ik RLS vergeet in te schakelen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zonder RLS kan iedereen met een internetverbinding je volledige database uitlezen, wijzigen of verwijderen via de publieke API."
+        "text": "Als RLS uitstaat, kan iedereen op het internet via de openbare API alle gegevens in uw database lezen, wijzigen of verwijderen."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik mijn Supabase URL en API-key niet gewoon verbergen?",
+      "name": "Kan ik de Supabase URL en API-sleutel verbergen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. De 'anon' sleutel is bedoeld om in de browser te draaien en is dus openbaar. De veiligheid ligt volledig in de RLS-policies in de database."
+        "text": "Nee. De 'anon'-sleutel en URL zijn openbaar ontworpen. Beveiliging leunt volledig op RLS-policies in de database."
       }
     },
     {
       "@type": "Question",
-      "name": "Maakt RLS mijn database queries langzamer?",
+      "name": "Vertraagt RLS database-queries?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Goed geschreven policies hebben nauwelijks impact. Slechte (AI-gegenereerde) policies met zware subqueries kunnen echter je hele database vertragen."
+        "text": "Goed geschreven policies op geïndexeerde kolommen hebben verwaarloosbare impact. Slechte policies zonder indexen kunnen vertraging veroorzaken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heb ik afzonderlijke policies nodig voor schrijfacties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. PostgreSQL evalueert SELECT, INSERT, UPDATE en DELETE afzonderlijk. U heeft voor elke operatie expliciete policies nodig."
       }
     },
     {
@@ -146,15 +150,7 @@ Cursor kan de basissyntaxis genereren, maar vertrouwen op een LLM om een complex
       "name": "Hoe beveiligt LaunchStudio Supabase Edge Functions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We valideren authenticatie-tokens binnen de functie en strippen onbevoegde verzoeken, zodat dure AI-generaties niet misbruikt kunnen worden."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kan Cursor AI mijn RLS-policies voor me schrijven?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cursor kan basis-SQL leveren, maar blind vertrouwen op AI voor de kernbeveiliging van je SaaS is zeer riskant. Menselijke controle is vereist."
+        "text": "We valideren JWT's in de functie, controleren service_role sleutels op lekken en zorgen dat functies met minimale database-rechten draaien."
       }
     }
   ]

@@ -1,5 +1,5 @@
 ---
-Title: AI SaaS Pricing: Usage-Based vs. Fixed Tiers vs. Hybrid Billing
+Title: "AI SaaS Pricing: Usage-Based vs. Fixed Tiers vs. Hybrid Billing"
 Keywords: ai saas, saas ai, ai saas platform, ai in saas, ai deployment, build ai app, ai software engineering, ai native
 Buyer Stage: Consideration
 ---

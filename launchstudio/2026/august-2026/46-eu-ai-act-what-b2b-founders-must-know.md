@@ -1,5 +1,5 @@
 ---
-Title: The EU AI Act: What B2B Founders Must Know Before Launch
+Title: "The EU AI Act: What B2B Founders Must Know Before Launch"
 Keywords: ai security risk, ai privacy issues, ai saas, ai native, ai deployment, ai and software development
 Buyer Stage: Awareness
 ---

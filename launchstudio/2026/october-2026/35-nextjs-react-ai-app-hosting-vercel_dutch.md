@@ -1,95 +1,95 @@
 ---
-Titel: Hoe Apps te Hosten Na Gebruik van AI To Code
-Trefwoorden: AI om te coderen, nextjs AI hosting, vercel deployment, LaunchStudio, Manifera, Bolt.new export, React AI app
+Titel: Hoe Apps te Hosten na het Gebruik van AI To Code
+Trefwoorden: ai to code, nextjs ai hosting, vercel uitrol, launchstudio, manifera, bolt.new export, react ai app
 Koperfase: Beslissing
-Doelpersona: B (Technische Solo-oprichter)
+Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Hoe Apps te Hosten Na Gebruik van AI To Code
-Als AI-native oprichter heb je waarschijnlijk de afgelopen weken in een sandbox doorgebracht. Met tools als Bolt.new, Lovable of v0 typ je een prompt en zie je voor je ogen een volledig functionele Next.js of React interface verschijnen.
+# Hoe Apps te Hosten na het Gebruik van AI To Code
 
-Deze sandbox-omgevingen zijn magisch om in te prototypen. Maar uiteindelijk moet je lanceren. Je kunt geen B2B SaaS verkopen aan een zakelijke klant zolang je app gehost wordt op een tijdelijke URL zoals `bolt-project-xyz123.web.app`.
+Als AI-native oprichter heeft u de afgelopen weken waarschijnlijk in een sandbox doorgebracht. Tools als Bolt.new, Lovable of v0 laten u prompts typen en een werkende Next.js- of React-interface genereren.
 
-Om je prototype om te zetten in een echt bedrijf, moet je de code exporteren en hosten op een professioneel infrastructuurplatform zoals Vercel. Echter, de overstap van een AI-sandbox naar een live productieserver is zelden zo simpel als klikken op "Export". Hier is wat je moet weten over het hosten van je AI-app, en waarom professionele deployment cruciaal is.
+Deze sandbox-omgevingen zijn magisch voor prototypes. Uiteindelijk moet u echter lanceren. U kunt geen B2B SaaS aan een enterprise-klant verkopen via een tijdelijke URL zoals `bolt-project-xyz123.web.app`.
 
-## Waarom Vercel de Standaard is voor AI Apps
+Om van uw prototype een echt bedrijf te maken, moet u de code exporteren en hosten op een professioneel platform zoals Vercel. Het overbrengen van een met AI gegenereerde Next.js-app van een sandbox naar een live productieserver is zelden simpel. Ongeveer 80% van de met AI gebouwde prototypes bereikt nooit een stabiele productie-uitrol.
 
-Wanneer AI-codegeneratoren frontend code schrijven, kiezen ze overweldigend vaak voor **Next.js** (een React-framework). Next.js is gemaakt door een bedrijf genaamd **Vercel**. Daarom is Vercel de absolute beste plek om een door AI gegenereerde Next.js applicatie te hosten.
+## Waarom Vercel de Standaard is voor AI-Apps
 
-### 1. Het Edge Netwerk
-In tegenstelling tot traditionele hosting (waarbij je app op één server in één stad staat), deployt Vercel je frontend naar een "Edge Netwerk". Dit betekent dat kopieën van je app worden gedistribueerd naar servers over de hele wereld. Laadt een klant in Amsterdam je app, dan verbinden ze met een Amsterdamse server, wat resulteert in razendsnelle laadtijden.
+Wanneer AI-generatoren frontend-code schrijven, kiezen ze massaal voor **Next.js**. Next.js is gemaakt door **Vercel**, wat het de beste plek maakt om uw app te hosten.
 
-### 2. Serverless API Routes
-AI-applicaties leunen zwaar op API-aanroepen (prompts sturen naar OpenAI). Vercel biedt "Serverless Functions". Hierdoor kan je Next.js app veilige backend API-aanroepen uitvoeren zonder dat jij een aparte Node.js server hoeft op te zetten en te onderhouden.
+### 1. Het Edge Network
+Vercel verdeelt uw frontend over een "Edge Network" met 100+ regio's wereldwijd. Een klant in Amsterdam verbindt met een Europees punt van aanwezigheid voor snelle laadtijden (<100ms).
 
-### 3. Continuous Deployment (CI/CD)
-Wanneer je host op Vercel, koppelt het direct met je GitHub-repository. Telkens wanneer jij een nieuwe feature genereert en de code pusht, detecteert Vercel de wijziging, bouwt het je app opnieuw op en updatet het je live website zonder enige downtime.
+### 2. Serverless en Edge Functions
+AI-apps leunen zwaar op API-calls. Vercel biedt Serverless en Edge Functions waarmee uw Next.js-app veilige backend API-calls en streaming-antwoorden kan uitvoeren zonder een eigen Node.js-server.
 
-## De Deployment-Val voor Niet-Technische Oprichters
+### 3. Continuous Deployment (CI/CD) en Preview Omgevingen
+Vercel verbindt direct met uw GitHub-repository. Elke push naar de main-branch activeert een uitrol zonder downtime. Elke pull request krijgt automatisch een eigen "Preview Deployment" URL.
 
-Hoewel Vercel enorm krachtig is, is het overzetten van een AI-sandbox app naar Vercel zeer technisch.
+## De Uitrol-Valkuil voor Niet-Technisch Oprichters
 
-Wanneer je code exporteert uit een AI-builder, is deze vaak incompleet. De AI gaat er vanuit dat je weet hoe je `.env` (environment variable) bestanden configureert om je OpenAI API-sleutels te verbergen. Het neemt aan dat je weet hoe je GitHub instelt. Het gaat er vanuit dat je CORS-policies begrijpt.
+Wanneer u code exporteert uit een AI-builder, is deze vaak onvolledig. De AI neemt aan dat u weet hoe u `.env`-bestanden (omgevingsvariabelen) moet instellen om OpenAI-sleutels te verbergen voor drie aparte omgevingen (Production, Preview, Development). Het neemt aan dat u weet hoe u GitHub, CORS-policies en DNS-records (`A`- en `CNAME`-records) moet configureren.
 
-Sla je deze stappen over, dan gebeurt er één van twee dingen:
-1. Je Vercel-deployment crasht met een "Build Error" die je niet snapt.
-2. Je app gaat live, maar je API-sleutels zijn zichtbaar voor het publieke internet, wat leidt tot massale diefstal van je AI-credits.
+Slaat u deze stappen over, dan gebeurt er het volgende:
+1. De Vercel-uitrol crasht met een "Build Error".
+2. De app gaat live, maar API-sleutels lekken uit in de client-side JavaScript.
+3. Een misgeconfigureerde CORS-policy blokkeert database-calls in productie.
 
-## LaunchStudio: Jouw Brug naar Productie
+Audits tonen aan dat 45% van de AI-code kwetsbaarheden bevat, waarbij gelekte API-sleutels veel voorkomen.
 
-Jij bent een oprichter, geen DevOps engineer. Je zou je moeten focussen op marketing en het werven van gebruikers, niet op het worstelen met Vercel build-logs.
+## LaunchStudio: Uw Brug naar Productie
 
-Hier versnelt [LaunchStudio](https://launchstudio.eu/) je lancering.
+U bent een oprichter, geen DevOps-engineer. U moet u richten op marketing en klanten.
 
-Gesteund door het expert engineeringteam van [Manifera](https://www.manifera.com/), is LaunchStudio gespecialiseerd in het uit de sandbox halen van AI-prototypes en ze te deployen naar enterprise-grade productieomgevingen.
+Hier versnelt [LaunchStudio](https://launchstudio.eu/en/) uw lancering.
 
-Met onze deployment-pakketten overhandig je ons simpelweg de door Bolt of Lovable gegenereerde codebase. Wij schonen de sandbox-resten op, configureren je GitHub-repo en leggen de Vercel-verbinding. Cruciaal: wij beveiligen je environment variables. We koppelen je custom domeinnaam, stellen de SSL-certificaten in en leveren jou een live, razendsnelle, veilige Next.js SaaS.
+Ondersteund door het enterprise-team van [Manifera](https://www.manifera.com/) (11+ jaar ervaring, 120+ engineers vanuit Amsterdam, Singapore en Ho Chi Minh City) specialiseert LaunchStudio zich in het overbrengen van AI-prototypes naar productieomgevingen.
 
-## Belangrijkste conclusies
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-- Sandbox-URL's zijn voor prototypes; B2B-klanten verwachten een snelle, veilige custom domeinnaam.
-- Vercel is de industriestandaard voor Next.js, met Edge netwerken en Serverless functies.
-- Het direct exporteren van AI-code naar Vercel vereist strikte configuratie om fatale fouten of beveiligingslekken te voorkomen.
-- LaunchStudio levert de expert DevOps engineering die nodig is om je AI-prototype vlekkeloos naar een veilige productieomgeving te migreren.
+Met onze uitrolpakketten levert u de code van Bolt.new, Lovable of v0 in. Wij schonen de sandbox-bestanden op, stellen GitHub en Vercel-omgevingsvariabelen in, beveiligen Stripe- en OpenAI-sleutels, en koppelen uw domein met DNS- en SSL-certificaten.
 
-[Stop met vechten tegen deployment errors. Laat LaunchStudio vandaag nog je AI app lanceren op Vercel](https://launchstudio.eu/#contact).
+## Belangrijkste Inzichten
 
-## Real example
+- Sandbox-URL's zijn voor prototypes; B2B-klanten verwachten een eigen domein en professionele hosting.
+- Vercel is de standaard voor Next.js-apps dankzij het Edge Network, Edge Functions en Preview Deployments.
+- Exporteren naar Vercel vereist strikte configuratie van omgevingsvariabelen, GitHub en CORS.
+- LaunchStudio biedt de DevOps-engineering om uw AI-prototype veilig naar productie te brengen.
 
-### Een AI-Native oprichter in actie: De E-Learning Quiz Generator
+## Echt Voorbeeld
 
-Sophia, een voormalig docent uit Utrecht, gebruikte **Bolt.new** om een Next.js app te genereren. Docenten konden een PDF uploaden, en de app gebruikte de Anthropic API om er een meerkeuzetoets van te maken.
+### Een AI-Native Oprichter in Actie: De E-Learning Quiz-Generator
 
-In de Bolt-sandbox werkte het foutloos. Sophia wilde lanceren voor het schooljaar begon en klikte op de "Deploy to Vercel" knop.
+Sophia, een voormalig docent in Utrecht, gebruikte **Bolt.new** om een Next.js-app te genereren voor quizzen op basis van PDF-syllabi via Claude API.
 
-De deployment faalde direct. De Vercel build-log spuwde rode foutmeldingen over "missing environment variables" die Sophia niet begreep. Ze besteedde drie frustrerende dagen aan het terugplakken van de foutcodes in ChatGPT, maar elke door AI voorgestelde "fix" leek iets anders te breken.
+In de sandbox werkte het perfect. Toen ze op "Deploy to Vercel" klikte, faalde de uitrol direct door ontbrekende omgevingsvariabelen en afhankelijkheidsproblemen. Drie dagen lang paste ze foutcodes in ChatGPT, wat de situatie alleen verergerde.
 
-Met de lancering in gevaar, nam Sophia contact op met **LaunchStudio (door Manifera)**.
+Ze nam contact op met **LaunchStudio (door Manifera)**.
 
-Onze DevOps engineers zagen het probleem direct. De sandbox verborg configuraties die niet mee-exporteerden. We plaatsten haar code in een nette GitHub-repository. We configureerden de ontbrekende `.env.production` bestanden en injecteerden haar API-sleutels veilig. We repareerden de gebroken dependencies en pushten de code naar Vercel.
+Onze engineers identificeerden de ontbrekende achtergrondconfiguraties, zetten de code in een GitHub-repository en configureerden `.env.production` en `.env.preview` met server-only variabelen.
 
-**Resultaat:** De app compileerde direct foutloos. We koppelden haar eigen domeinnaam (`quizgen.nl`), en Sophia was binnen 48 uur live. Ze lanceerde de app in haar docentennetwerk en haalde 150 betalende abonnees binnen in de eerste week. *"Ik wilde bijna opgeven omdat ik het niet live kreeg. LaunchStudio nam de server-nachtmerrie over zodat ik me op de verkoop kon richten."*
+**Resultaat:** De app compileerde op de eerste poging. We koppelden haar domein (`quizgen.nl`), stelden de DNS in en Sophia was binnen 48 uur live. Ze behaalde 150 betalende abonnees in de eerste week. *"LaunchStudio regelde de server-nachtmerrie zodat ik kon verkopen."*
 
-**Kosten & Doorlooptijd:** €900 (Rapid Vercel Deployment & GitHub Configuratie) — afgerond in 2 werkdagen.
+**Kosten & Doorlooptijd:** €900 (Snelle Vercel-uitrol & GitHub-configuratie) — afgerond in 2 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Kan ik mijn app niet gewoon op Bolt.new of Lovable gehost laten?
-Voor intern testen, ja. Voor een echt bedrijf, nee. Sandbox platforms zijn niet ontworpen voor high-traffic productie. Bovendien zullen zakelijke B2B-klanten nooit betalen voor software die gehost is op een tijdelijk `.web.app` subdomein. Je hebt een eigen domeinnaam nodig.
+### 1. Kan ik mijn app niet gewoon gehost laten op Bolt.new of Lovable?
+Nee. Sandbox-hosting is voor prototypes en heeft geen uptime-garanties, eigen domeinen of veilige variabelen. B2B-klanten betalen niet voor een tijdelijk subdomein.
 
-### Moet ik betalen voor Vercel?
-Vercel heeft een royale gratis "Hobby" tier voor persoonlijk gebruik. Zodra je gebruikers echter laat betalen voor een commerciële SaaS, eisen de servicevoorwaarden van Vercel dat je overstapt naar de "Pro" tier ($20 per maand).
+### 2. Moet ik betalen voor Vercel?
+Vercel heeft een gratis Hobby-niveau voor testen. Zodra u geld vraagt voor een commerciële SaaS, verplicht Vercel het Pro-niveau ($20/maand per teamlid).
 
-### Wat is een Environment Variable (`.env`)?
-Een environment variable is een veilige manier om gevoelige informatie (zoals je OpenAI API-sleutel) op je server op te slaan. Als je deze hardcoded in je React bestanden zet, worden ze gestolen. Vercel laat je deze sleutels veilig injecteren tijdens het bouwproces.
+### 3. Wat is een omgevingsvariabele (`.env`)?
+Een omgevingsvariabele is een manier om gevoelige API-sleutels buiten uw broncode op te slaan. Vercel biedt drie omgevingen (Production, Preview, Development) om sleutels gescheiden te houden.
 
-### Waarom heb ik GitHub nodig om te hosten op Vercel?
-Het koppelen van Vercel aan GitHub is de industriestandaard voor "Continuous Deployment". Telkens wanneer jij een code-update pusht naar GitHub, detecteert Vercel dit automatisch en wordt je live website geüpdatet, zonder dat de website offline hoeft.
+### 4. Waarom heb ik GitHub nodig om te hosten op Vercel?
+Koppelen met GitHub is de standaard voor Continuous Deployment. Elke push activeert een uitrol en elke pull request krijgt een eigen Preview Deployment URL.
 
-### Hoe helpt LaunchStudio met toekomstige updates?
-Wanneer wij je app deployen, zetten we de GitHub-naar-Vercel pijplijn op. Als je later een nieuwe feature genereert, kun je die code simpelweg naar GitHub committen. Vercel updatet je live website dan automatisch, zonder dat je ons opnieuw hoeft te betalen voor een deployment.
+### 5. Hoe helpt LaunchStudio met toekomstige updates?
+We stellen de geautomatiseerde GitHub-naar-Vercel pijplijn in. U kunt AI-tools blijven gebruiken voor nieuwe functies; bij een push naar GitHub werkt Vercel uw live site automatisch bij.
 
 <script type="application/ld+json">
 {
@@ -98,10 +98,10 @@ Wanneer wij je app deployen, zetten we de GitHub-naar-Vercel pijplijn op. Als je
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Kan ik mijn app niet gewoon op Bolt.new of Lovable gehost laten?",
+      "name": "Kan ik mijn app gehost laten op Bolt.new of Lovable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Sandbox omgevingen zijn bedoeld voor prototyping. Om een serieuze, schaalbare B2B SaaS te runnen heb je een professionele hosting-infrastructuur (zoals Vercel) en een custom domein nodig."
+        "text": "Nee. Sandbox-omgevingen zijn voor prototypes. Een commerciële SaaS vereist een uitrol naar een productiehost zoals Vercel met een eigen domein."
       }
     },
     {
@@ -109,23 +109,23 @@ Wanneer wij je app deployen, zetten we de GitHub-naar-Vercel pijplijn op. Als je
       "name": "Moet ik betalen voor Vercel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voor commerciële SaaS-applicaties (waarbij je geld verdient) vereisen de voorwaarden van Vercel dat je het Pro-abonnement afneemt, wat $20 per maand kost."
+        "text": "Vercel is gratis voor hobby's, maar voor commerciële SaaS verplichten de voorwaarden het Pro-niveau ($20/maand per teamlid)."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is een Environment Variable (.env)?",
+      "name": "Wat is een omgevingsvariabele (.env)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is een veilige manier om API-sleutels af te schermen. AI-tools configureren dit vaak verkeerd bij een export, wat de voornaamste reden is voor falende deployments."
+        "text": "Het is een methode om geheime API-sleutels buiten de broncode op te slaan in gescheiden omgevingen (Production, Preview, Development)."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom heb ik GitHub nodig om te hosten op Vercel?",
+      "name": "Waarom heb ik GitHub nodig voor Vercel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GitHub zorgt voor geautomatiseerde updates. Zodra nieuwe code op GitHub wordt geplaatst, trekt Vercel dit automatisch binnen en zet het de wijzigingen live zonder downtime."
+        "text": "GitHub maakt Continuous Deployment mogelijk. Elke push activeert een uitrol en elke pull request krijgt een automatische Preview URL."
       }
     },
     {
@@ -133,7 +133,7 @@ Wanneer wij je app deployen, zetten we de GitHub-naar-Vercel pijplijn op. Als je
       "name": "Hoe helpt LaunchStudio met toekomstige updates?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wij richten de pijplijn in. Als je later nieuwe frontend wijzigingen genereert, kun je deze zelf veilig pushen. Het systeem regelt dan automatisch de update van de live website."
+        "text": "We stellen de GitHub-naar-Vercel pijplijn in. U kunt AI-tools blijven gebruiken voor nieuwe functies en deze automatisch live laten gaan."
       }
     }
   ]

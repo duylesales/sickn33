@@ -1,5 +1,5 @@
 ---
-Title: Bootstrapping vs. VC Funding: The Calculus Has Changed in the AI Era
+Title: "Bootstrapping vs. VC Funding: The Calculus Has Changed in the AI Era"
 Keywords: build app with ai, ai native, ai saas, ai prototype, build ai app, ai development, dev ai
 Buyer Stage: Consideration
 ---

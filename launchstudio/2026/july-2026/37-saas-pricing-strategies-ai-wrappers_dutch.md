@@ -1,5 +1,5 @@
 ---
-Titel: AI SaaS-Prijsstrategieën voor Wrappers: Margedaling Voorkomen
+Titel: "AI SaaS-Prijsstrategieën voor Wrappers: Margedaling Voorkomen"
 Trefwoorden: ai saas, ai saas platform, ai in saas, saas ai, ai software engineering, app bouwen met ai, ai uitrol
 Koperfase: Overweging
 ---

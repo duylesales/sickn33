@@ -1,85 +1,86 @@
 ---
-Titel: Technische Due Diligence Halen Wanneer u AI To Code Gebruikt
-Trefwoorden: AI om te coderen, technical due diligence, AI startup funding, LaunchStudio, Manifera, Seed round, tech audit, code review
+Titel: Slagen voor Technische Due Diligence bij Gebruik van AI To Code
+Trefwoorden: ai to code, technische due diligence, ai startup financiering, launchstudio, manifera, seed ronde, tech audit, code review
 Koperfase: Overweging
 Doelpersona: D (SaaS Oprichter Scale-Up)
 ---
 
-# Technische Due Diligence Halen Wanneer u AI To Code Gebruikt
-Je hebt het prototype in een weekend gebouwd met Cursor. Je lanceerde op Product Hunt, haalde 100 betalende klanten binnen en trok de aandacht van een prominente Europese Venture Capital (VC) investeerder. Na drie succesvolle pitches overhandigt de VC je een Term Sheet voor een Seed-ronde van €1,5 miljoen.
+# Slagen voor Technische Due Diligence bij Gebruik van AI To Code
 
-Maar er is een addertje onder het gras. Voordat het geld op je bankrekening staat, moet je slagen voor de **Technical Due Diligence (TDD)**.
+U heeft in het weekend een prototype gebouwd via Cursor, 100 betalende abonnees geworven en de aandacht getrokken van een Europese Venture Capital (VC) investeerder. Na pitches ontvangt u een Term Sheet voor een €1,5 Miljoen Seed-ronde.
 
-De VC stuurt een onafhankelijke software-architect om je codebase binnenstebuiten te keren, je serverarchitectuur te onderzoeken en je te ondervragen over beveiligingsprotocollen. Voor een technische solo-oprichter die in no-time een MVP in elkaar heeft geflanst, is dit de meest angstaanjagende fase van fondsenwerving. Vindt de auditor fatale fouten in je architectuur? Dan halveert de VC je waardering, of blazen ze de deal volledig af. Hier is waar auditors anno 2026 op letten, en hoe jij zorgt dat je AI-startup slaagt.
+Er is echter één voorwaarde: u moet slagen voor de **Technische Due Diligence (TDD)**.
 
-## De Drie Pijlers van Technical Due Diligence
+De investeerder stuurt een onafhankelijke software-architect om uw codebase te inspecteren en uw beveiliging en serverinfrastructuur door te lichten. Als de auditor fatale architectuurfouten ontdekt, kan de investeerder uw waardering verlagen of de deal annuleren.
 
-Auditors weten dat je een vroege startup bent. Ze verwachten geen vlekkeloze, Google-achtige infrastructuur. Maar ze jagen meedogenloos op "existentiële tech-risico's"—architectonische fouten die het bedrijf kunnen vernietigen als de app schaalt.
+## De Drie Pijlers van Technische Due Diligence
 
-### 1. Databeveiliging & AVG (GDPR) Compliance
-Dit is in Europa de nummer één reden waarom AI-startups falen in de due diligence. De auditor kijkt nauwlettend naar hoe je omgaat met Persoonlijk Identificeerbare Informatie (PII). Zien ze dat je ruwe data van Europese gebruikers rechtstreeks naar Amerikaanse LLM's stuurt zonder anonimisering, of mist je database Row Level Security (RLS)? Dan markeren ze je startup als een enorm juridisch risico.
+Auditoren zoeken naar "existentiële technische risico's":
+
+### 1. Data-Beveiliging & AVG-Naleving
+Als u Europese persoonsgegevens ongeschoond naar Amerikaanse LLM's stuurt, of als Row Level Security (RLS) ontbreekt in uw database, faalt u wegens juridische risico's. Audits tonen aan dat 45% van de AI-code beveiligingslekken bevat.
 
 ### 2. De "Bus Factor" en Codekwaliteit
-De "Bus Factor" vraagt: *Als jij morgen onder een bus loopt, kan een andere engineer de code dan overnemen?* Als je hele applicatie bestaat uit één gigantisch React-bestand van 10.000 regels zonder comments, geen Git-historie en nul documentatie, is je bus factor nul. De auditor zal rapporteren dat de codebase ononderhoudbaar is en vanaf nul moet worden herschreven.
+*Als u morgen onder een bus komt, kan een andere engineer de code dan overnemen?* Een onleesbare codebase zonder documentatie verlaagt de waardering direct, omdat kapitaal naar een herschrijving moet gaan.
 
-### 3. Schaalbaarheid & API Economie
-De auditor berekent je 'unit economics' op serverniveau. Als je app sterk leunt op dure no-code workflows (zoals Zapier) of geen metered billing logica heeft, rekent de auditor direct uit dat je bedrijf actief geld gaat verliezen zodra het groeit. Ze willen maatwerk API-routes en slim LLM-tokenbeheer zien.
+### 3. Schaalbaarheid & API-Economie
+Als uw app leunt op dure no-code workflows (zoals Zapier) of geen facturering per verbruik heeft, berekent de auditor dat u geld verliest bij groei.
 
-## Hoe Bereid je je Voor: De "Audit-Ready" Refactor
+### 4. Afhankelijkheden en Licenties
+Auditoren vragen steeds vaker om een Software Bill of Materials (SBOM) om kwetsbare of restrictieve open-source licenties op te sporen die door AI-codegeneratoren zijn toegevoegd.
 
-Je kunt je niet door een Technical Due Diligence heen bluffen. De auditor eist toegang tot je GitHub-repository en je live servers.
+## De Gespreksronde: Wat Auditoren Vragen
+Naast code-reviews omvat TDD een interview over herstelplannen bij uitval, wie toegang heeft tot productie, en plannen bij model-wijzigingen van OpenAI of Anthropic.
 
-Als je weet dat de architectuur van je MVP met ducttape aan elkaar hangt, moet je een "Audit-Ready Refactor" uitvoeren vóórdat het technische team van de VC inlogt.
+## Voorbereiding: De "Audit-Klaar" Herstructurering
 
-Dit is exact waarom technische oprichters [LaunchStudio](https://launchstudio.eu/) inschakelen.
+U kunt TDD niet faken; auditoren eisen leesrechten op GitHub en uw servers.
 
-Gesteund door de ISO-gecertificeerde engineeringstandaarden van [Manifera](https://www.manifera.com/), is LaunchStudio gespecialiseerd in het opwaarderen van fragiele AI-MVP's naar investeerbare, enterprise-grade architecturen.
+Daarom schakelen technische oprichters [LaunchStudio](https://launchstudio.eu/en/) in.
 
-Als je LaunchStudio inhuurt voor een pre-funding tech audit, fungeren wij als een vriendelijk "Red Team". We auditen je codebase exact zoals een VC dat doet. Vervolgens repareren we in rap tempo de fatale fouten. We implementeren de verplichte PostgreSQL RLS-policies. We verplaatsen hardcoded API-sleutels naar veilige `.env` bestanden. We schrijven de ontbrekende technische documentatie en zetten geautomatiseerde CI/CD-pipelines op. We transformeren jouw chaotische sandbox-prototype in een gestructureerde, professionele codebase die "investeerbaar" schreeuwt.
+Ondersteund door [Manifera's](https://www.manifera.com/) enterprise-engineers (11+ jaar ervaring, 160+ projecten, kantoren in Amsterdam, Singapore en Ho Chi Minh City) voert LaunchStudio pre-financiering audits uit. We werken als een vriendelijk "Red Team": we auditeren de code, stellen Supabase RLS in, verplaatsen sleutels naar `.env`-bestanden, genereren een schone SBOM, en schrijven technische documentatie.
 
-## Belangrijkste conclusies
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-- Technical Due Diligence (TDD) is de laatste horde voor een investering; falen kost je de deal of een groot deel van je waardering.
-- Auditors zoeken naar existentiële risico's: AVG-datalekken, ononderhoudbare "spaghetti" code en negatieve API-marges.
-- Je móét je MVP refactoren om te bewijzen dat de architectuur de kapitaalinjectie van een VC veilig aankan.
-- LaunchStudio levert de expert enterprise engineering om je codebase te auditen, refactoren en documenteren, zodat je glansrijk slaagt voor de TDD.
+## Belangrijkste Inzichten
 
-[Laat slechte code je investeringsronde niet verpesten. Werk vandaag nog samen met LaunchStudio voor een pre-funding audit](https://launchstudio.eu/#contact).
+- Technische Due Diligence (TDD) is de laatste hordel voor financiering; falen verlaagt uw waardering of breekt de deal.
+- Auditoren letten op AVG-lekken, spaghetti-code, negatieve eenheidseconomie en onveilige afhankelijkheden.
+- Een gehaast opgeschoonde Git-historie vlak voor de audit valt direct op als verdacht.
+- LaunchStudio biedt de enterprise-engineering om uw codebase audit-klaar te maken en te documenteren.
 
-## Real example
+## Echt Voorbeeld
 
-### Een AI-Native oprichter in actie: De Financiële Forecasting AI
+### Een AI-Native Oprichter in Actie: De Financiële AI-Prognose SaaS
 
-Alex, een solo-developer in Frankfurt, bouwde een AI-platform dat CFO's hielp met financiële voorspellingen op basis van rommelige Excel-exports. De MVP kreeg enorme tractie en bereikte €20.000 MRR in vier maanden. Een top-tier Duitse VC bood een Seed-ronde van €2 miljoen aan, in afwachting van Technical Due Diligence.
+Alex, een solo-ontwikkelaar in Frankfurt, bouwde een AI-platform voor runway-prognoses voor CFO's. Na het behalen van €20.000 MRR bood een Duitse VC €2 Miljoen Seed-financiering onder voorbehoud van TDD.
 
-Alex raakte in paniek. Hij had de MVP gebouwd met een mix van Python-scripts op een onbeveiligde server, en een React frontend die volledig door v0 was gegenereerd. Er was geen staging-omgeving. Er waren geen back-ups. Het ergste van alles: zwaar gevoelige financiële data werd direct, zonder anonimisering, naar OpenAI gestuurd. Als de auditor van de VC dit zou zien, was de deal direct dood.
+Alex raakte in paniek: zijn backend draaide op een enkele onbeveiligde server zonder back-ups en stuurde financiële data onversleuteld naar OpenAI. Met 14 dagen tot de audit nam hij **LaunchStudio (door Manifera)** in de arm.
 
-Alex had 14 dagen tot de audit. Hij huurde **LaunchStudio (door Manifera)** in.
+Onze enterprise-architecten werkten klokrond: we migreerden de backend naar een veilige AWS-omgeving met back-ups en staging, bouwden een PII-maskeringsmiddleware, stelden een Git-strategie op met SBOM, en schreven een 20-pagina's tikkend architectuurdocument.
 
-Onze enterprise architecten werkten dag en nacht samen met Alex. We migreerden zijn hele backend naar een veilige AWS-omgeving met automatische dagelijkse back-ups en een aparte testserver. We schreven een maatwerk PII-masking middleware die bedrijfsnamen uit de financiële data stript vóórdat het naar de LLM gaat. We implementeerden een strikte Git-strategie en schreven een uitgebreid Architectuur Document van 20 pagina's.
+**Resultaat:** De auditor prees de PII-maskering en AWS-beveiligingsgroepen. Alex slaagde glansrijk voor de audit en ontving de €2 Miljoen op zijn rekening. *"LaunchStudio heeft mijn financieringsronde letterlijk gered."*
 
-**Resultaat:** De technisch auditor van de VC bracht drie dagen door in de code. De auditor prees expliciet de PII-masking middleware en de strikte AWS-beveiliging. Alex slaagde voor de audit zonder één enkele rode vlag, de €2 miljoen werd overgemaakt, en de VC noteerde dat zijn infrastructuur "ongewoon volwassen was voor een solo-oprichter." *"LaunchStudio heeft letterlijk mijn investeringsronde gered. Ze transformeerden mijn weekend-hackathon in een investeerbaar techbedrijf."*
-
-**Kosten & Doorlooptijd:** €9.500 (Spoed Infrastructuur Verharding & Documentatie) — afgerond in 10 werkdagen.
+**Kosten & Doorlooptijd:** €9.500 (Spoed Infrastructuur Beveiliging & Documentatie) — afgerond in 10 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Wat gebeurt er als ik faal voor de Technical Due Diligence?
-De VC heeft drie opties: 1) Ze blazen de investering af. 2) Ze verlagen je waardering (ze eisen bijv. 30% aandelen i.p.v. 20%) om het risico af te dekken. 3) Ze maken de investering voorwaardelijk; je móét een deel van het geld direct gebruiken om de app te herbouwen.
+### 1. Wat gebeurt er als ik zak voor de Technische Due Diligence?
+De investeerder heeft drie opties: 1) De deal annuleren; 2) De waardering drastisch verlagen; 3) Eisen dat een deel van het kapitaal wordt gebruikt om de software volledig te herbouwen.
 
-### Gaat de auditor mijn code daadwerkelijk lezen?
-Ja. Ze eisen read-only toegang tot je GitHub of GitLab repositories. Ze draaien geautomatiseerde tools om te zoeken naar veiligheidslekken (zoals zichtbare API-sleutels) en reviewen handmatig de structuur van je belangrijkste algoritmes.
+### 2. Leest de auditor mijn broncode echt?
+Ja. Ze vragen leesrechten voor GitHub/GitLab, voeren geautomatiseerde scans uit voor kwetsbaarheden en beoordelen handmatig uw database-schema's en Git-historie.
 
-### Heb ik geautomatiseerde tests nodig om te slagen voor TDD?
-Anno 2026, ja. Als een codebase nul geautomatiseerde tests heeft, gaan auditors ervan uit dat de software extreem fragiel is. Het hebben van een basis test-suite (zoals Jest of PyTest) bewijst dat je professionele engineeringstandaarden begrijpt.
+### 3. Heb ik geautomatiseerde testen nodig om te slagen voor TDD?
+Ja. Geen geautomatiseerde testen geeft het signaal dat de software kwetsbaar is. Een basistestset (zoals Jest of PyTest) bewijst professionele standaarden.
 
-### Hoe belangrijk is technische documentatie voor de audit?
-Cruciaal. De auditor moet je systeem snel kunnen doorgronden. Een goed geschreven `README.md`, een architectuurdiagram en API-documentatie bouwen direct vertrouwen op en bewijzen dat het project niet uitsluitend in jouw hoofd bestaat.
+### 4. Hoe belangrijk is technische documentatie voor de audit?
+Zeer belangrijk. Goede documentatie (`README.md`, architectuurdiagrammen, API-docs) bewijst dat de kennis van het systeem niet uitsluitend in uw hoofd zit.
 
-### Kan LaunchStudio optreden als mijn interim CTO tijdens de audit?
-Ja. Veel technische oprichters nemen een senior architect van LaunchStudio mee naar de due diligence interviews. Wij helpen je de diep-technische vragen van de auditor over opschalen, beveiliging en disaster recovery vol vertrouwen te beantwoorden.
+### 5. Kan LaunchStudio optreden als mijn interim CTO tijdens de audit?
+Ja. Onze senior architecten schuiven regelmatig aan bij technische interviews met VC's om vragen over schaalbaarheid, DevOps en beveiliging te beantwoorden.
 
 <script type="application/ld+json">
 {
@@ -88,26 +89,26 @@ Ja. Veel technische oprichters nemen een senior architect van LaunchStudio mee n
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat gebeurt er als ik faal voor de Technical Due Diligence?",
+      "name": "Wat gebeurt er als ik zak voor de Technische Due Diligence?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De investeerder trekt zich terug, eist veel meer aandelen voor hetzelfde geld, of dwingt je om het opgehaalde kapitaal direct te besteden aan een volledige softwareherbouw."
+        "text": "De VC zal de investering annuleren, een lagere waardering eisen, of u verplichten een deel van het geld te gebruiken om de app te herbouwen."
       }
     },
     {
       "@type": "Question",
-      "name": "Gaat de auditor mijn code daadwerkelijk lezen?",
+      "name": "Leest de auditor mijn broncode echt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Ze eisen toegang tot je GitHub, scannen op gehardcodeerde wachtwoorden, beoordelen de database-structuur en controleren of de code schaalbaar is geschreven."
+        "text": "Ja. Auditoren vragen leesrechten op GitHub. Ze scannen op gehardcodeerde sleutels, kwetsbaarheden in afhankelijkheden en beoordelen de codekwaliteit."
       }
     },
     {
       "@type": "Question",
-      "name": "Heb ik geautomatiseerde tests nodig om te slagen voor TDD?",
+      "name": "Heb ik geautomatiseerde testen nodig om te slagen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Het ontbreken van elke vorm van geautomatiseerde tests is voor een auditor een gigantische rode vlag (red flag) die wijst op een onprofessioneel en risicovol ontwikkelproces."
+        "text": "Ja. Het ontbreken van testen geeft de auditor het signaal dat de software kwetsbaar is en dat ontwikkelprocessen onvolwassen zijn."
       }
     },
     {
@@ -115,15 +116,15 @@ Ja. Veel technische oprichters nemen een senior architect van LaunchStudio mee n
       "name": "Hoe belangrijk is technische documentatie voor de audit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Extreem belangrijk. Zonder documentatie bent jij (de oprichter) een 'single point of failure'. Documentatie bewijst dat het systeem overdraagbaar is naar nieuwe werknemers."
+        "text": "Extreem belangrijk. Architectuurdiagrammen en API-docs bewijzen dat systeemkennis overdraagbaar is en niet vastzit in één persoon."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio optreden als mijn interim CTO tijdens de audit?",
+      "name": "Kan LaunchStudio optreden als interim CTO tijdens de audit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. We schuiven regelmatig aan bij technische interviews met VC's om complexe vragen over serverarchitectuur en beveiliging te beantwoorden en vertrouwen te wekken."
+        "text": "Ja. Wij schuiven aan bij technische interviews met VC's om vragen over schaalbaarheid, DevOps en beveiliging professioneel te beantwoorden."
       }
     }
   ]

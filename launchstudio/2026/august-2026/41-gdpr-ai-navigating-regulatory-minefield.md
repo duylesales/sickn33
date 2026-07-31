@@ -1,5 +1,5 @@
 ---
-Title: GDPR and AI: A B2B Founder's Guide to Compliant Architecture
+Title: "GDPR and AI: A B2B Founder's Guide to Compliant Architecture"
 Keywords: ai data security, ai privacy issues, ai security risk, ai saas, ai deployment, ai database, ai native
 Buyer Stage: Awareness
 ---

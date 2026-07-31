@@ -1,5 +1,5 @@
 ---
-Title: Web Scraping for AI Apps: Firecrawl vs Browserless in 2026
+Title: "Web Scraping for AI Apps: Firecrawl vs Browserless in 2026"
 Keywords: ai coding, ai code development, build ai app, ai saas, ai deployment, ai native, ai software engineering
 Buyer Stage: Awareness
 ---

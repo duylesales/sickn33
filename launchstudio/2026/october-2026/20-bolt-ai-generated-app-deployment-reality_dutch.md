@@ -1,95 +1,87 @@
 ---
-Titel: Echte Wereld Deployment Reality Check voor Bolt AI Apps
-Trefwoorden: bolt AI, bolt.new, LaunchStudio, Manifera, AI app, deployment
+Titel: Realistische Uitrolgids voor Bolt AI Apps
+Trefwoorden: bolt ai, bolt.new, launchstudio, manifera, ai app, uitrol, webcontainers
 Koperfase: Overweging
-Doelpersona: A (AI-Native Oprichter, Niet-technisch)
+Doelpersona: A (AI-Native Oprichter, Niet-Technisch)
 ---
 
-# Echte Wereld Deployment Reality Check voor Bolt AI Apps
+# Realistische Uitrolgids voor Bolt AI Apps
 
-Je typte een prompt in Bolt.new en binnen enkele minuten verscheen er een volledig functionerende webapplicatie in je browser. De UI was modern, de knoppen werkten en het voelde alsof je maanden aan dure softwareontwikkeling had overgeslagen.
+U voerde een prompt in op Bolt.new en binnen enkele minuten verscheen er een werkende webapplicatie in uw browser. De UI was modern, de knoppen werkten en het voelde alsof u maanden van softwareontwikkeling had overgeslagen.
 
-Bolt AI is ontegenzeggelijk een van de krachtigste tools voor het genereren van snelle prototypes. Het blinkt uit in het direct opzetten van Vite of Next.js omgevingen. Echter, zoals duizenden niet-technische oprichters ontdekken, is wat je in de Bolt.new browser-sandbox ziet géén productie-klaar product.
+Bolt AI is onmiskenbaar een van de krachtigste tools voor het genereren van snelle prototypes. Zoals duizenden niet-technische oprichters ontdekken, is wat u in de Bolt.new browser-sandbox ziet echter geen productie-klaar product.
 
-Wanneer je op "Deploy" klikt of de codebase downloadt, word je geconfronteerd met de realiteitscheck van deployment. De code die perfect draaide in de AI-sandbox gooit plotseling foutmeldingen, je databaseverbinding faalt, en je hebt geen idee hoe je betalingen moet instellen. Hier is de realiteit van het deployen van een Bolt AI app, en wat je daadwerkelijk nodig hebt om te lanceren.
+Wanneer u op "Deploy" klikt of de codebase downloadt, krijgt u te maken met de realiteit van de uitrol. De code die in de sandbox werkte geeft plotseling fouten, de databaseverbinding faalt en u heeft geen idee hoe u betalingen instelt. Hier is de realiteit van het uitrollen van een Bolt AI-app.
 
-## De Sandbox vs. De Productierealiteit
+## De Sandbox vs. Productie Realiteit
 
-Bolt AI gebruikt WebContainers om je app direct in je browser te draaien. Dit creëert een enorme kloof tussen de "sandbox" en het echte internet.
+Bolt AI gebruikt WebContainers om uw app direct in de browser te draaien. Dit creëert een grote kloof tussen de "sandbox" en het echte internet.
 
-### 1. De Illusie van de Vluchtige Database
+### 1. De Vluchtige Database Illusie
 
-Als je Bolt AI vraagt om "een database toe te voegen", genereert het vaak een lokale SQLite-database of een in-memory opslag. Dit werkt perfect zolang je browsertabblad open is.
+Wanneer u Bolt AI vraagt om "een database toe te voegen," genereert het vaak een lokale SQLite-database of een in-memory opslag.
 
-- **De Realiteitscheck:** Zodra je deze code naar een echte server deployt, reset die lokale database elke keer als de server herstart. Alle gebruikersdata wordt direct gewist. Om te lanceren moet je de code handmatig migreren naar een persistente, veilige externe database (zoals PostgreSQL via Supabase), iets wat Bolt niet veilig voor je kan inrichten.
+- **De Realiteit:** Het moment dat u deze code naar een echte server uitrolt, herstelt die lokale database zich elke keer als de server opnieuw opstart (wat serverless platforms voortdurend doen). Alle gebruikersgegevens zijn direct verdwenen. U moet handmatig overstappen op een permanente remote database (zoals Supabase PostgreSQL).
 
-### 2. Het Ontbreken van Secret Management
+### 2. Ontbrekend Beheer van Geheimen
 
-Om je Bolt-app te verbinden met echte diensten—zoals Stripe voor betalingen of OpenAI voor AI-generatie—heb je geheime API-sleutels nodig.
+- **De Realiteit:** U kunt uw Stripe Secret Key niet veilig in de Bolt.new chat plakken. Als u dat doet, wordt die sleutel in de client-bundel gehardcodeerd. Productie-uitrol vereist het instellen van veilige server-side omgevingsvariabelen.
 
-- **De Realiteitscheck:** Je kunt je productie Stripe Secret Key niet veilig in de Bolt.new chat plakken. Als je dat doet, wordt die sleutel waarschijnlijk hardcoded in de client bundle, wat betekent dat iedereen die je website inspecteert je geld kan stelen. Productie-deployment vereist veilige, server-side omgevingsvariabelen.
+### 3. De Onvolledige Authenticatie-Lus
 
-### 3. De Onvoltooide Authenticatie-loop
+- **De Realiteit:** Een inlogscherm is nutteloos als de server geen sessievalidatie afdwingt. Bolt laat API-routes op de backend vaak onbeschermd.
 
-Bolt is uitstekend in het genereren van een prachtig inlogscherm. Het schrijft zelfs de boilerplate-code voor een authenticatieprovider.
+## De "Laatste Kilometer" Partner voor Bolt AI
 
-- **De Realiteitscheck:** Een inlogscherm is nutteloos als de server de sessie niet valideert. Bolt laat de backend API-routes vaak onbeschermd. Een hacker kan simpelweg een API-verzoek direct naar je server sturen en data stelen, omdat de backend niet is geconfigureerd om het authenticatietoken te verifiëren.
+Als niet-technische oprichter kan het downloaden van een zip-bestand van een Bolt AI-project beangstigend zijn. U heeft de visie gebouwd, maar mist de engineering-expertise om het veilig live te zetten.
 
-## De "Laatste Mijl" Partner voor Bolt AI
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Voor een niet-technische oprichter is het downloaden van een zip-bestand van een Bolt AI-project en staren naar een map vol `vite.config.ts` en `package.json` bestanden ongelooflijk intimiderend. Je hebt de visie gebouwd, maar je mist de technische expertise om het veilig naar het internet te duwen.
+Dit is precies waarom [LaunchStudio](https://launchstudio.eu/en/) bestaat. Ondersteund door [Manifera's](https://www.manifera.com/) enterprise-team vanuit Amsterdam, Singapore en Ho Chi Minh City, treden we op als de brug tussen uw Bolt AI-prototype en een veilige productieomgeving.
 
-Dit is precies waarom [LaunchStudio](https://launchstudio.eu/) bestaat. Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/), fungeren wij als de brug tussen je Bolt AI-prototype en een veilige productieomgeving.
+Met ons "Klaar voor lancering" (Launch Ready) pakket behouden we uw frontend UI. Onze engineers vervangen vluchtige databases door Supabase PostgreSQL, stellen omgevingsvariabelen veilig in, beveiligen API-routes en integreren Stripe-webhooks. In 1 tot 3 weken veranderen we uw experiment in een veilige SaaS.
 
-Met ons "Launch Ready"-pakket stuur je ons simpelweg je Bolt AI-project. We herschrijven je prachtige frontend niet. In plaats daarvan voeren onze menselijke ingenieurs de "laatste-mijl" deployment realiteitscheck uit.
+## Belangrijkste Inzichten
 
-We verwijderen de vluchtige databases en vervangen ze door veilige, persistente PostgreSQL. We configureren je omgevingsvariabelen veilig. We vergrendelen je API-routes, implementeren strikte gebruikersauthenticatie en koppelen veilige Stripe-webhooks zodat je daadwerkelijk geld kunt verdienen.
+- Bolt AI is fantastisch voor prototyping, maar de browser-sandbox (WebContainers) weerspiegelt niet de realiteit van productieservers.
+- Databases die Bolt genereert zijn vaak vluchtig; uitrollen op een echte server kan leiden tot volledig gegevensverlies.
+- Het veilig afhandelen van API-sleutels, betalings-webhooks en authenticatie vereist server-side engineering.
+- LaunchStudio voert de "laatste kilometer" engineering uit om uw Bolt AI-codebase veilig uit te rollen.
 
-## Belangrijkste conclusies
+## Echt Voorbeeld
 
-- Bolt AI is geweldig voor prototyping, maar de browser-sandbox weerspiegelt niet de realiteit van productieservers.
-- De databases die Bolt genereert zijn vaak vluchtig; deployen leidt tot totaal dataverlies bij een serverherstart.
-- Het veilig verwerken van API-sleutels, webhooks en authenticatie vereist handmatige server-side engineering.
-- LaunchStudio neemt je Bolt AI-codebase en levert de "laatste-mijl" techniek om het veilig in de echte wereld te lanceren.
+### Een AI-Native Oprichter in Actie: Het Evenementen-Dashboard
 
-[Klaar om je Bolt app uit de sandbox te halen? Neem contact op voor een vaste deployment-prijs](https://launchstudio.eu/#contact).
+Sarah, een evenementenplanner in Utrecht, gebruikte **Bolt.new** om een dashboard te ontwerpen voor het beheren van leverancierscontracten. Na drie dagen prompten was het resultaat fantastisch.
 
-## Real example
+Ze downloadde het project en uploadde het naar een goedkope host. Toen de server 's nachts opnieuw opstartte, werden alle contracten en gegevens die haar collega's hadden ingevoerd permanent gewist door de vluchtige SQLite-database.
 
-### Een AI-Native oprichter in actie: Het Evenementen Dashboard
+Ze nam contact op met **LaunchStudio (door Manifera)**. Ons team behield haar frontend-React-code volledig.
 
-Sarah, een evenementenplanner in Utrecht, gebruikte **Bolt.new** om een dashboard te ontwerpen voor het beheren van leverancierscontracten. Ze spendeerde drie dagen aan prompten, en het resultaat was verbluffend.
+In 8 dagen vervingen we de SQLite-opzet door een beheerde Supabase PostgreSQL-database met RLS, herstelden afhankelijkheidsproblemen en rolden het uit naar Vercel.
 
-Enthousiast downloadde Sarah het Bolt-project en uploadde het naar een goedkope hostingprovider. De site laadde en ze stuurde de link naar drie collega's om te testen.
-
-De volgende ochtend sloeg het noodlot toe. De server was 's nachts automatisch herstart. Omdat de Bolt-app een vluchtige lokale SQLite-database gebruikte (alleen bedoeld voor de sandbox), was elke plattegrond en elk contract dat haar collega's hadden ingevoerd permanent verwijderd. Sarah besefte dat ze een prachtige UI had, maar nul daadwerkelijke infrastructuur.
-
-Ze nam contact op met **LaunchStudio (door Manifera)**. Ons team beoordeelde haar Bolt-codebase. De frontend React-code was uitstekend, dus we hielden die intact.
-
-In de 8 dagen daarna vervingen we de vluchtige SQLite-setup door een beheerde, veilige Supabase PostgreSQL-database. We implementeerden Row Level Security (RLS) zodat planners alleen hun eigen contracten konden zien, en we deployden de geharde applicatie naar Vercel.
-
-**Resultaat:** Sarah lanceerde met succes de stabiele versie. Het is nu een veilige SaaS die €600 MRR genereert, en ze hoeft zich nooit meer zorgen te maken over dataverlies. *"Bolt hielp me de app te ontwerpen, maar LaunchStudio maakte er een echt bedrijf van."*
+**Resultaat:** Sarah lanceerde de stabiele versie van haar app, die nu €600 MRR genereert. *"Bolt hielp me de app te ontwerpen, maar LaunchStudio maakte er een echt bedrijf van."*
 
 **Kosten & Doorlooptijd:** €1.800 (Launch Ready-pakket) — afgerond in 8 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Waarom verliest mijn Bolt-app data wanneer ik hem deploy?
-Bolt genereert vaak lokale of in-memory databases (zoals SQLite) die binnen de browser-sandbox draaien. Wanneer je deployt naar een serverless platform, herstart de server vaak, waardoor het lokale bestandssysteem wordt gewist en al je data verdwijnt.
+### 1. Waarom verliest mijn Bolt-app gegevens wanneer ik deze uitrol?
+Bolt genereert vaak lokale SQLite-bestanden die binnen de browser-sandbox draaien. Op een echte serverless server wordt het lokale bestandssysteem gewist bij een herstart, waardoor al uw gegevens verdwijnen.
 
-### Kan ik Bolt niet gewoon vragen om te verbinden met een echte database?
-Je kunt Bolt vragen de connectiecode te schrijven, maar je moet de externe database (zoals Supabase) nog steeds handmatig inrichten, de firewall configureren en de veilige connectiestrings beheren in je omgevingsvariabelen.
+### 2. Kan ik Bolt niet vragen om te verbinden met een echte database?
+U kunt vragen om de code te schrijven, maar u moet de externe database (zoals Supabase) nog steeds handmatig inrichten en omgevingsvariabelen configureren — taken die Bolt niet voor u kan doen.
 
-### Wat is het grootste beveiligingsrisico bij het deployen van een Bolt-app?
-Hardcoded secrets. Oprichters plakken vaak Stripe- of OpenAI-sleutels direct in de Bolt-chat. De AI zal die sleutels vervolgens hardcoderen in de frontend-code, waardoor ze voor iedereen op het internet zichtbaar zijn.
+### 3. Wat is het grootste beveiligingsrisico bij het uitrollen van een Bolt-app?
+Gehardcodeerde geheimen. Het plakken van Stripe- of OpenAI-sleutels in de chat leidt er vaak toe dat ze blootgesteld worden in de openbare frontend-code.
 
-### Herbouwt LaunchStudio mijn Bolt-app vanaf nul?
-Nee. We respecteren het werk dat je in de Bolt-sandbox hebt gedaan. We houden je frontend UI intact. We focussen ons uitsluitend op het herschrijven van de backend-verbindingen en database-architectuur om de app veilig te maken.
+### 4. Herbouwt LaunchStudio mijn Bolt-app vanaf nul?
+Nee. We behouden uw frontend UI en richten ons uitsluitend op het beveiligen van de backend-verbindingen, database-architectuur en deployment-pijplijnen.
 
-### Hoe lang duurt het voordat LaunchStudio mijn Bolt-app deployt?
-Afhankelijk van de complexiteit van je app, duurt het proces doorgaans tussen de 1 en 3 weken. We bieden een gegarandeerde, vaste prijs en tijdlijn voordat we beginnen.
+### 5. Hoe lang duurt het voor LaunchStudio om mijn Bolt-app uit te rollen?
+Afhankelijk van de complexiteit duurt het proces typisch tussen de 1 en 3 weken. We bieden een vaste prijs en tijdlijn vooraf.
 
 <script type="application/ld+json">
 {
@@ -98,26 +90,26 @@ Afhankelijk van de complexiteit van je app, duurt het proces doorgaans tussen de
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom verliest mijn Bolt-app data wanneer ik hem deploy?",
+      "name": "Waarom verliest mijn Bolt-app gegevens wanneer ik deze uitrol?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bolt genereert vaak lokale, vluchtige databases voor de sandbox. Op een echte server worden deze gewist bij een herstart. Je hebt een persistente externe database nodig."
+        "text": "Bolt genereert vaak lokale databases voor de sandbox. Op een echte server worden deze bestanden bij een herstart gewist. U heeft een permanente externe database nodig."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik Bolt niet gewoon vragen om te verbinden met een echte database?",
+      "name": "Kan ik Bolt niet vragen te verbinden met een echte database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bolt kan de code schrijven, maar jij moet handmatig de externe database inrichten, beveiligingsregels configureren en omgevingsvariabelen beheren."
+        "text": "Bolt kan de verbinding schrijven, maar u moet de externe database handmatig inrichten en omgevingsvariabelen beheren — wat Bolt niet kan."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het grootste beveiligingsrisico bij het deployen van een Bolt-app?",
+      "name": "Wat is het grootste beveiligingsrisico bij het uitrollen van een Bolt-app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hardcoded API-sleutels. Als je Stripe- of OpenAI-sleutels in Bolt plakt, belanden ze vaak in de publieke frontend-code, wat leidt tot financiële risico's."
+        "text": "Gehardcodeerde API-geheimen. Het plakken van Stripe- of OpenAI-sleutels leidt er vaak toe dat ze blootgesteld worden in de openbare frontend-code."
       }
     },
     {
@@ -125,15 +117,15 @@ Afhankelijk van de complexiteit van je app, duurt het proces doorgaans tussen de
       "name": "Herbouwt LaunchStudio mijn Bolt-app vanaf nul?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. We behouden de frontend UI die je hebt ontworpen en focussen uitsluitend op het verharden van de backend en het veilig opzetten van de infrastructuur."
+        "text": "Nee. We behouden uw frontend UI en richten ons uitsluitend op het herstellen van backend-verbindingen, database-architectuur en veilige uitrol."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe lang duurt het voordat LaunchStudio mijn Bolt-app deployt?",
+      "name": "Hoe lang duurt het voor LaunchStudio om mijn Bolt-app uit te rollen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De transitie duurt doorgaans 1 tot 3 weken, afhankelijk van de complexiteit. We bieden altijd vooraf een vaste prijs en tijdlijn."
+        "text": "Afhankelijk van de complexiteit duurt de overgang 1 tot 3 weken. We bieden een gegarandeerde vaste prijs en tijdlijn vooraf."
       }
     }
   ]

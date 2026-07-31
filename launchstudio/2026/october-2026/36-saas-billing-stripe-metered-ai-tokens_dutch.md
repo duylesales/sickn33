@@ -1,105 +1,89 @@
 ---
-Titel: Hoe u Build App With AI en API Kosten Overleeft
-Trefwoorden: Bouw een app met AI, saas billing, Stripe metered billing, AI tokens, LaunchStudio, Manifera, B2B SaaS architectuur, API kosten
+Titel: Hoe een App te Bouwen Met AI en API-Kosten te Overleven
+Trefwoorden: app bouwen met ai, saas facturering, Stripe facturering per verbruik, ai tokens, launchstudio, manifera, b2b saas architectuur, api kosten
 Koperfase: Overweging
-Doelpersona: B (Technische Solo-oprichter)
+Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Hoe u Build App With AI en API Kosten Overleeft
-Als technische solo-oprichter is het lanceren van een AI SaaS bedrieglijk eenvoudig. Je zet een Next.js frontend op, koppelt de OpenAI API en vraagt een vast bedrag van €20 per maand.
+# Hoe een App te Bouwen Met AI en API-Kosten te Overleven
 
-In maand één werkt dit perfect. Je hebt 50 gebruikers die een paar rapporten per week genereren, en je OpenAI API-rekening is een beheersbare €30.
+Als technische solo-oprichter is het starten van een AI SaaS bedrieglijk eenvoudig. U zet een Next.js-frontend op, verbindt de OpenAI API en rekent een vast tarief van €20/maand.
 
-In maand drie slaat het noodlot toe. Vijf van je gebruikers blijken "power users" te zijn. Ze automatiseren je UI en genereren 10.000 rapporten per dag. Je vaste inkomsten van €20 blijven gelijk, maar je OpenAI API-rekening schiet omhoog naar €800. Je verliest actief geld elke keer dat je beste klanten je product gebruiken.
+In maand één werkt dit perfect voor 50 gebruikers. In maand drie ontstaat er een probleem: vijf "power users" automatiseren uw UI en genereren 10.000 rapporten per dag. Uw omzet van €20/maand blijft gelijk, maar uw OpenAI-rekening stijgt naar €800. U verliest geld bij uw beste klanten.
 
-Dit is de 'flat-rate valstrik' van AI SaaS. Omdat je inkoopkosten direct gekoppeld zijn aan LLM-tokenverbruik, kun je simpelweg geen onbeperkte generatie aanbieden. Om te overleven moet je **metered SaaS billing** (betalen naar gebruik) implementeren. Hier lees je hoe je dat veilig opzet met Stripe.
+Dit is de vast-tarief valkuil van AI SaaS. Omdat uw Kostprijs van de Omzet (COGS) direct gekoppeld is aan LLM-tokenverbruik, kunt u geen onbeperkt gebruik aanbieden. Om te overleven moet u **facturering per verbruik** (metered billing) implementeren.
 
-## De Architectuur van AI Facturatie
+## De Architectuur van Facturering Per Verbruik
 
-Metered billing betekent dat je de gebruiker exact laat betalen voor wat ze verbruiken. Er zijn twee manieren om dit aan te pakken in Stripe:
+Er zijn twee manieren om dit via Stripe aan te pakken:
+1. **Achteraf Factureren op Basis van Verbruik:** Via Stripe's Billing Meters API registreert u het verbruik en incasseert u aan het einde van de maand.
+2. **Vooruitbetaalde Credits (Het Preferente Model):** De gebruiker koopt vooraf een bundel "credits" (bijv. €10 voor 1.000 credits). Uw database trekt credits af bij elk AI-antwoord. Bij nul credits wordt de API vergrendeld.
 
-1. **Post-paid Metered Billing:** Je houdt het tokenverbruik bij, stuurt dit aan het eind van de maand naar Stripe, en Stripe belast de creditcard achteraf.
-2. **Pre-paid Credits (Het Voorkeursmodel):** De gebruiker koopt vooraf een bundel "credits" (bijv. €10 voor 1.000 credits). Je database trekt credits af zodra ze AI gebruiken. Staat het saldo op nul? Dan blokkeert de API tot ze opwaarderen.
+Voor solo-oprichters is het **Vooruitbetaalde Credit-Model** veel beter: het garandeert vooraf cashflow en voorkomt geweigerde creditcards achteraf.
 
-Voor solo-oprichters is het **Pre-paid Credit Model** superieur. Het garandeert directe cashflow en elimineert het risico dat een creditcard aan het eind van de maand weigert, nadat de gebruiker al €500 van jóuw OpenAI-credits heeft verbrand.
+## Vooruitbetaalde Credits Implementeren met Supabase en Stripe
 
-## Pre-paid Credits Implementeren met Supabase en Stripe
-
-Als je app is gegenereerd met tools als Cursor, moet je deze facturatielogica handmatig in je backend bouwen. Dit is de vereiste veilige architectuur:
-
-### 1. Het Database Kredietgrootboek
-Je moet een `credit_balance` (integer) kolom toevoegen aan je `users` tabel in Supabase. Deze tabel moet zwaar beveiligd worden met Row Level Security (RLS), zodat een gebruiker niet via de browserconsole zijn saldo handmatig op `999999` kan zetten.
+### 1. Het Credit-Grootboek in de Database
+Voeg een `credit_balance`-kolom toe aan de `users`-tabel (of een afzonderlijke `credit_transactions`-tabel) in Supabase. Beveilig de tabel met strikte Row Level Security (RLS), zodat gebruikers hun saldo niet in de browser kunnen manipuleren.
 
 ### 2. De Veilige Stripe Webhook
-Wanneer een gebruiker €10 afrekent op je Stripe Checkout pagina, stuurt Stripe een signaal (webhook) naar jouw server. Je moet een veilig Node.js endpoint bouwen (zoals een Supabase Edge Function) die de cryptografische handtekening van Stripe verifieert. Pas ná verificatie gebruikt je Edge Function een `service_role` sleutel om RLS te omzeilen en de 1.000 credits bij te schrijven.
+Wanneer een gebruiker credits koopt, stuurt Stripe een `checkout.session.completed` webhook. Uw Node.js backend (Supabase Edge Function) verifieert de cryptografische handtekening via `stripe.webhooks.constructEvent()`. Pas na verificatie worden credits toegevoegd via een `service_role`-sleutel.
 
-### 3. De Pre-Flight Token Check
-Je mag de OpenAI API nóóit direct vanuit de frontend aanroepen. Je Edge Function moet het verzoek onderscheppen, een check uitvoeren op de `credit_balance` van de gebruiker, en het verzoek resoluut afwijzen als het saldo nul is.
+### 3. De Controle Vóór Uitvoering (Pre-Flight Check)
+Roep de OpenAI API nooit direct aan vanuit de frontend. Uw Edge Function moet vooraf het `credit_balance` controleren en het verzoek afwijzen als het saldo nul is.
 
-```javascript
-// Edge Function Pre-Flight Check
-const { data: user } = await supabase.from('users').select('credit_balance').eq('id', userId).single();
+## Waarom Solo-Oprichters Stuklopen op de Implementatie
 
-if (user.credit_balance <= 0) {
-  return new Response("Onvoldoende Credits", { status: 402 });
-}
+Het grootste probleem is de **race-conditie**: als een gebruiker drie keer snel op "Genereer" klikt, moet de backend het saldo controleren en afboeken in één atomaire database-operatie (zoals een conditional `UPDATE`). Anders kan een gebruiker een negatief saldo veroorzaken.
 
-// Ga door met OpenAI aanroep, trek daarna credits af o.b.v. tokenverbruik...
-```
+Dit is waarom technische oprichters hun facturatie-architectuur uitbesteden aan [LaunchStudio](https://launchstudio.eu/en/).
 
-## Waarom Solo-Oprichters Falen bij de Implementatie
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Hoewel de logica simpel lijkt, zit de uitvoering vol valkuilen, zoals *race conditions*.
+Ondersteund door [Manifera's](https://www.manifera.com/) enterprise-team vanuit Amsterdam, Singapore en Ho Chi Minh City, bouwt LaunchStudio kogelvrije facturatiesystemen. We implementeren veilige Stripe-webhooks, vergrendelen Supabase RLS-policies en bouwen atomaire database-transacties.
 
-Als een gebruiker in een fractie van een seconde drie keer op "Genereer" klikt, maakt jouw backend dan drie dure OpenAI-aanroepen vóórdat het de credits aftrekt? Wat als de Stripe webhook faalt? Betaalt de gebruiker dan wel, maar krijgt hij geen credits?
+## Belangrijkste Inzichten
 
-Dit is de reden waarom technische oprichters hun SaaS billing architectuur uitbesteden aan [LaunchStudio](https://launchstudio.eu/).
+- Onbeperkte AI-generaties aanbieden voor een vast maandbedrag brengt uw startup in de problemen door power users.
+- Het Vooruitbetaalde Credit-Model garandeert dat u betaald krijgt voordat u API-kosten maakt.
+- Beveilig Stripe-webhooks met handtekeningverificatie om fraude te voorkomen.
+- Voorkom race-condities via atomaire database-operaties bij het afboeken van credits.
+- LaunchStudio biedt de backend-engineering om een professioneel facturatiesysteem op te zetten.
 
-Gesteund door het enterprise engineeringteam van [Manifera](https://www.manifera.com/), verhardt LaunchStudio jouw SaaS-facturatie. Wij nemen je AI-prototype en implementeren waterdichte, race-condition-proof metered billing. We bouwen veilige Stripe webhooks, configureren je Supabase RLS-policies en implementeren atomaire databasetransacties zodat je nooit een cent verliest aan API-misbruik.
+## Echt Voorbeeld
 
-## Belangrijkste conclusies
+### Een AI-Native Oprichter in Actie: De Video-Ondertiteling API
 
-- Het aanbieden van onbeperkte AI-generatie voor een vast maandbedrag zal je startup failliet doen gaan door misbruik van power users.
-- Het veiligste model is Pre-paid Credits, zodat je betaald wordt vóórdat jij OpenAI API-kosten maakt.
-- Je moet veilige server-side webhooks bouwen om te voorkomen dat gebruikers hun credits hacken via de frontend.
-- LaunchStudio levert de expert backend engineering om foutloze, enterprise-grade facturatie te implementeren die je winstmarges beschermt.
+David, een solo-ontwikkelaar in Amsterdam, bouwde een AI-tool om YouTube-video's te transcriberen via OpenAI's Whisper API voor €15/maand.
 
-[Stop met het lekken van API-kosten. Werk vandaag nog samen met LaunchStudio voor veilige SaaS facturatie](https://launchstudio.eu/#contact).
+Een marketingbureau sloot aan en uploadde 400 uur aan video in één weekend. David ontving een OpenAI-rekening van €1.200 voor een €15-klant.
 
-## Real example
+David nam contact op met **LaunchStudio (door Manifera)**.
 
-### Een AI-Native oprichter in actie: De Video Ondertiteling API
+Onze engineers stapten over op een Vooruitbetaald Credit-Model met Stripe en Supabase. We bouwden Edge Functions die de exacte audiolengte berekenden, vooraf het saldo controleerden met atomaire updates en credits direct afboekten.
 
-David, een solo-ontwikkelaar in Amsterdam, bouwde een AI-tool die lange YouTube-video's automatisch transcribeerde met OpenAI's Whisper API. Hij vroeg een vast abonnement van €15 per maand.
+**Resultaat:** David herlanceerde met een "pay-as-you-go" model (€0,10 per minuut). Het bureau kwam terug en kocht vooraf €2.400 aan credits. *"LaunchStudio herstelde mijn businessmodel. Zonder hen was ik failliet gegaan."*
 
-De eerste twee maanden werkte dit prima. Toen ontdekte een digitaal marketingbureau zijn tool. Het bureau nam een abonnement van €15 en uploadde in één weekend 400 uur aan video. Omdat David geen limieten of metered billing had ingebouwd, verwerkte zijn backend trouw elke video. Maandagochtend werd David wakker met een OpenAI-rekening van €1.200—allemaal door één klant van €15.
-
-David realiseerde zich dat zijn prijsmodel fataal was, zette de servers uit en belde **LaunchStudio (door Manifera)**.
-
-Onze backend engineers herstructureerden direct zijn architectuur. We verwijderden het vaste abonnement en implementeerden een Pre-paid Credit model met Stripe en Supabase. We bouwden veilige Edge Functions die de exacte audiolengte van de video berekenden, het kredietsaldo van de gebruiker checkten *voordat* het bestand naar Whisper ging, en atoom-veilig de credits aftrokken na succesvolle transcriptie.
-
-**Resultaat:** David herlanceerde met een "pay-as-you-go" model en rekende €0,10 per minuut audio. Het marketingbureau kwam terug, maar om 400 uur video te verwerken, moesten ze nu vooraf voor €2.400 aan credits kopen. Davids OpenAI kosten waren volledig gedekt voordat de API überhaupt werd aangeroepen. *"LaunchStudio repareerde mijn 'unit economics'. Zonder hun metered billing architectuur had mijn 'succesvolle' app me binnen een maand failliet gemaakt."*
-
-**Kosten & Doorlooptijd:** €2.800 (Stripe Metered Billing & Edge Function Security) — afgerond in 7 werkdagen.
+**Kosten & Doorlooptijd:** €2.800 (Stripe Facturering & Edge Function Beveiliging) — afgerond in 7 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen (FAQ)
 
-### Waarom moet ik niet gewoon Stripe's ingebouwde metered billing gebruiken?
-Stripe's achteraf betalen (post-paid) dwingt jou om krediet te verlenen aan de gebruiker. Als zij voor €500 aan AI-tokens verbruiken en hun creditcard weigert aan het eind van de maand, blijf jij zitten met de OpenAI factuur. Pre-paid credits elimineren dit risico.
+### 1. Waarom zou ik niet Stripe's ingebouwde facturering achteraf gebruiken?
+Facturering achteraf betekent dat u krediet verleent aan de gebruiker. Als de creditcard aan het einde van de maand faalt, draait u zelf op voor de gemaakte AI API-kosten. Vooruitbetaalde credits elimineren dit risico.
 
-### Wat is een "race condition" in facturatie?
-Een race condition ontstaat als een gebruiker razendsnel meerdere keren op 'Genereer' klikt. Als je code eerst het saldo checkt, dan de AI aanroept en dán pas credits afschrijft, kan een snelle gebruiker 5 AI-aanroepen tegelijk triggeren voordat de eerste afschrijving plaatsvindt, waardoor hun saldo in de min schiet.
+### 2. Wat is een "race-conditie" bij facturering?
+Een fout waarbij een gebruiker snel meerdere keren klikt, waardoor meerdere dure AI-calls starten voordat het saldo voor de eerste call is afgeboekt. Dit wordt opgelost door een atomaire database-operatie.
 
-### Kan ik mijn Stripe Secret Key niet gewoon verbergen in mijn React frontend?
-Absoluut niet. Alles in je frontend is openbaar. Als je een Stripe Secret Key in React zet, kan een hacker deze vinden via de browserconsole en gigantische bedragen aan zichzelf terugstorten. Stripe logica mag alléén op een beveiligde backend server draaien.
+### 3. Kan ik mijn Stripe Secret Key in de React-frontend verbergen?
+Nee. Alles in de frontend is openbaar. Een Stripe Secret Key in React stelt hackers in staat om terugbetalingen uit te voeren. Stripe-logica hoort uitsluitend op een veilige backend-server.
 
-### Hoe reken ik OpenAI tokens om naar SaaS credits?
-De meeste oprichters gebruiken een vaste verhouding, bijvoorbeeld 1 SaaS Credit = 1.000 OpenAI tokens. Je backend leest de `usage.total_tokens` data uit het OpenAI API-antwoord, berekent de benodigde SaaS credits en trekt dit veilig af van het saldo in de database.
+### 4. Hoe koppel ik OpenAI-tokens aan mijn SaaS-credits?
+Uw backend leest de `usage.total_tokens` uit het antwoord van OpenAI, berekent het aantal vereiste SaaS-credits via een centrale formule en trekt dit af in Supabase.
 
-### Beheert LaunchStudio mijn Stripe account?
-Nee, jij behoudt 100% eigendom en controle over je Stripe account. De ingenieurs van LaunchStudio schrijven puur de veilige backend code (webhooks en Edge Functions) die ervoor zorgt dat jouw applicatie veilig met jouw Stripe-dashboard communiceert.
+### 5. Beheert LaunchStudio mijn Stripe-account?
+Nee, u behoudt 100% eigendom van uw Stripe-account. LaunchStudio bouwt de backend-code (webhooks, Edge Functions) om uw app veilig te laten communiceren met Stripe.
 
 <script type="application/ld+json">
 {
@@ -108,42 +92,42 @@ Nee, jij behoudt 100% eigendom en controle over je Stripe account. De ingenieurs
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom moet ik niet gewoon Stripe's ingebouwde metered billing gebruiken?",
+      "name": "Waarom zou ik facturering achteraf vermijden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Achteraf betalen betekent dat jij het financiële risico draagt. Als de creditcard van de klant weigert aan het eind van de maand, moet jij alsnog zelf de dure OpenAI factuur betalen."
+        "text": "Facturering achteraf dwingt u krediet te verlenen. Als de kaart faalt, betaalt u zelf de AI-kosten. Vooruitbetaalde credits verzamelen het geld vooraf."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is een 'race condition' in facturatie?",
+      "name": "Wat is een 'race-conditie' bij facturering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dit is een bug waarbij een gebruiker razendsnel klikt om meerdere gelijktijdige API-aanroepen te doen, vóórdat de server de kans krijgt om het saldo bij te werken."
+        "text": "Een fout waarbij snel opeenvolgende kliks meerdere dure AI-calls starten voordat credits zijn afgeboekt. Dit wordt opgelost via een atomaire database-operatie."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik mijn Stripe Secret Key niet gewoon verbergen in mijn React frontend?",
+      "name": "Kan ik mijn Stripe Secret Key in React plaatsen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. De frontend is publiek toegankelijk. Een hacker kan je geheime Stripe sleutel uitlezen via de browser en de volledige controle over je betalingssysteem overnemen."
+        "text": "Nee. Alles in de frontend is openbaar. Een secret key in React geeft derden de mogelijkheid om uw Stripe-account te misbruiken."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe reken ik OpenAI tokens om naar SaaS credits?",
+      "name": "Hoe koppel ik OpenAI-tokens aan SaaS-credits?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Je server onderschept de terugkoppeling van OpenAI, leest het aantal verbruikte tokens uit, rekent dit om naar jouw credits, en updatet veilig de database van de gebruiker."
+        "text": "Uw backend leest het tokenverbruik uit de OpenAI-respons, past een centrale omrekeningsformule toe en trekt de credits af in de database."
       }
     },
     {
       "@type": "Question",
-      "name": "Beheert LaunchStudio mijn Stripe account?",
+      "name": "Beheert LaunchStudio mijn Stripe-account?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, de Stripe account blijft volledig van jou. Wij bouwen enkel de onzichtbare technische brug (webhooks) zodat je applicatie veilig betalingen kan registreren."
+        "text": "Nee. U behoudt het eigendom van uw account. LaunchStudio bouwt de veilige backend-webhooks en logica om uw app te laten communiceren met Stripe."
       }
     }
   ]

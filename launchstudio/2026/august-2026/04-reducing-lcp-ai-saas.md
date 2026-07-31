@@ -1,5 +1,5 @@
 ---
-Title: Reducing LCP in AI SaaS Apps: A Core Web Vitals Fix
+Title: "Reducing LCP in AI SaaS Apps: A Core Web Vitals Fix"
 Keywords: ai saas platform, ai frontend, ai app dev, build app with ai, ai prototype, ai native, ai websites, code with ai
 Buyer Stage: Consideration
 ---

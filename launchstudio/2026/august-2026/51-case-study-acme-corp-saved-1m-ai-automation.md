@@ -1,5 +1,5 @@
 ---
-Title: Case Study: How Acme Corp Saved $1M a Year with AI Document Automation
+Title: "Case Study: How Acme Corp Saved $1M a Year with AI Document Automation"
 Keywords: ai coding, ai deployment, build ai app, ai saas, ai for coding, ai vulnerabilities, use ai to generate code
 Buyer Stage: Awareness
 ---
