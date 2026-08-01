@@ -11,6 +11,8 @@ Vaste prijzen keren de prikkel om: ✅
 ✅ Je weet de exacte kosten voordat het werk begint
 ✅ Dwingt duidelijke scoping vooraf af — geen ambiguïteit om uit te buiten
 
+🔍 Waarschuwingssignaal om te herkennen VOORDAT je tekent: een verdacht lage vaste offerte betekent meestal een dunnere scope-uitsplitsing of een vaag wijzigingsproces — dat stilletjes het ongelimiteerde risico van uurtarief herschept onder een "vast"-label. Vergelijk altijd uitsplitsingen, niet alleen het eindcijfer.
+
 Bij **LaunchStudio**, vaste prijzen vanaf €800-€7.500, gesteund door Manifera's 11+ jaar accurate scope-inschatting over 160+ projecten. 🛡️
 
 Zijn vastgeprijsde redding: €1.600, geleverd in 9 dagen — na €2.665 al verbrand aan uurtarief dat nergens toe leidde. 🚀

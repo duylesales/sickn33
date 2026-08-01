@@ -57,6 +57,24 @@ Elk van deze 25 items lijkt individueel klein. Gezamenlijk vertegenwoordigen ze 
 
 [Laat je lanceringsgereedheid beoordelen](https://launchstudio.eu/en/#contact) tegen precies deze checklist voordat je je lanceringsdatum aankondigt.
 
+## De Checklist Afstemmen op Jouw Specifieke Product
+
+De 25 items hierboven vormen een basislijn die vrijwel elk AI SaaS-product geldt, maar hoe diep de verificatie per categorie daadwerkelijk moet gaan, verschuift aanzienlijk afhankelijk van wat je product raakt en wie het gebruikt. Elk item als even zwaarwegend behandelen ongeacht de context is zelf al een fout — een checklist die mechanisch wordt afgevinkt zonder deze kalibratie kan een vals gevoel van zekerheid opleveren.
+
+**Wanneer je financiële of medische gegevens verwerkt**, verdienen items 7 (back-upverificatie), 10 (verwijderingsverzoeken) en 16 (btw-/belastingafhandeling) aanmerkelijk meer aandacht dan een algemene productiviteitstool nodig zou hebben — een hersteld back-up dat drie dagen aan financiële transactiedata mist, is een heel andere orde probleem dan drie dagen aan takenlijst-bewerkingen kwijtraken. Dennis's AangifteHulp-casus verderop in dit artikel illustreert precies dit: het dataverwijderingsproces en de tenant-isolatie-items wogen onevenredig zwaar mee omdat het om belastingdocumenten ging.
+
+**Marktplaats- en meerzijdige producten** — waarbij je AI SaaS twee verschillende gebruikerstypen verbindt, zoals klanten en aanbieders — hebben item 8's tenant-isolatietest nodig over rolgrenzen heen, niet alleen tussen twee accounts met dezelfde rol. Een aanbieder die de privéprijzen van een andere aanbieder ziet, of een klant die de boekingsgeschiedenis van een andere klant ziet, zijn beide precies de fouten die item 8 hoort te vangen — maar een simpele test met twee accounts in een product met één rol legt een lek tussen rollen niet bloot.
+
+**Consumentenproducten met veel aanmeldingen** leggen meer gewicht op item 5 (rate limiting) en item 25 (de volledige aanmeld-tot-betaling-flowtest) dan een B2B-tool met laag volume die aan een handvol enterprise-accounts verkoopt — een door bots aangedreven aanmeldvloed is een realistische dreiging voor een viral consumentenapp op een manier die simpelweg niet geldt voor een niche B2B-tool met een handmatig verkoopproces.
+
+**Gereguleerde sectoren** (zorg, financiële dienstverlening, recht) hebben vaak een aangevulde checklist nodig in plaats van een vervangende. Zaken als audit-trail-logging, dataresidentie-eisen en specifieke toestemmingsflows staan helemaal niet op de generieke lijst van 25 items, omdat ze niet universeel zijn — maar ze worden feitelijk verplicht zodra je product gereguleerde datacategorieën raakt.
+
+Niets hiervan betekent dat de basislijn van 25 items fout is voor een van deze gevallen — elk item blijft van toepassing. Het betekent dat een founder die aanneemt "ik heb alle 25 gehaald, dus ik ben volledig gedekt" zonder na te denken over welke items het meest tellen voor zijn specifieke product, het risico loopt de items die bij een fout het meeste schade zouden aanrichten te onderverifiëren, terwijl hij te veel gewicht geeft aan items die in zijn context minder uitmaken. Een generieke checklist zonder deze lens uitvoeren is beter dan geen checklist, maar een checklist uitvoeren met oprechte aandacht voor het specifieke risicoprofiel van je product is wat de kostbare verrassing daadwerkelijk voorkomt.
+
+Precies hierom beginnen [LaunchStudio's](https://launchstudio.eu/en/) gereedheidsbeoordelingen met het begrijpen van wat je product daadwerkelijk doet en wie het bedient, in plaats van mechanisch 25 vakjes in dezelfde volgorde af te vinken voor elke founder ongeacht de context.
+
+Voor founders die vooraf een deel van de zelfverificatie willen proberen, zijn een handvol van deze aangepaste prioriteiten testbaar zonder technische expertise. Je product openen in twee verschillende browsers, ingelogd als twee verschillende testaccounts, controleert basale tenant-isolatie (item 8) ongeacht producttype. Het netwerktabblad van je browser openen tijdens aanmelding en normaal gebruik controleert op blootgestelde API-sleutels (item 3). En simpelweg de vraag stellen "wat gebeurt er als 50 mensen zich in het komende uur aanmelden" is een bruikbare gut-check om te bepalen of item 5's rate limiting daadwerkelijk relevant is voor jouw specifieke product, zelfs zonder de test zelf uit te voeren. Dit vervangt geen volledige technische review, maar geeft een founder oprecht inzicht in welke categorieën hierboven het meest tellen voor zijn specifieke product, nog voordat die review begint.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: acht gaten vinden de avond voor een geplande lancering

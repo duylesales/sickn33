@@ -16,6 +16,8 @@ Bij **LaunchStudio**, gesteund door Manifera's 120+ engineers, krijg je beveilig
 
 Je hebt geen unicorn nodig. Je hebt 100 tevreden klanten nodig. 🛡️🚀
 
+💡 Prijsrekensom: €80k/jaar ÷ 100 klanten = ~€67/maand per klant (voor churn). Niet de €15-20 waar je consumenten-app-instinct instinctief naar grijpt.
+
 👉 Lees de volledige micro-SaaS-rekensom: [Link naar artikel]
 
 #MicroSaaS #LaunchStudio #Manifera #AINativeFounder #SaaS #Bootstrapped

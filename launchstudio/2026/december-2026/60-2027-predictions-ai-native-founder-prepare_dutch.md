@@ -35,6 +35,28 @@ Elke voorspelling wijst naar dezelfde onderliggende voorbereiding: de kloof slui
 
 [Bereid je voor op 2027 door te lanceren voordat het begint](https://launchstudio.eu/en/#calculator) — de founders het best gepositioneerd voor wat er ook komt, zijn degenen die al opereren met echte klanten en echte omzet.
 
+## Een Concrete 2027-Gereedheidszelfbeoordeling
+
+Vijf voorspellingen en hun bijbehorende voorbereidingsstappen lezen is nuttig in het abstracte; dat omzetten in een eerlijk gevoel voor je eigen specifieke gereedheid vereist dat je jezelf daadwerkelijk scoort tegen elk ervan, in plaats van instemmend te knikken en verder te gaan zonder een concrete volgende actie.
+
+**Score jezelf eerlijk, één punt elk, op het volgende:**
+1. **Productie-infrastructuur-lijnitem** — heb je een daadwerkelijk budget, niet slechts een aspiratie, toegewezen aan beveiliging, hosting, en betalingen apart van je AI-tool-abonnementskosten?
+2. **Betrouwbaarheid boven noviteit** — als een concurrent morgen een AI-functie identiek aan de jouwe lanceerde, zou jouw product dan nog steeds winnen op betrouwbaarheid en vertrouwen, of rust zijn aantrekkingskracht voornamelijk op het als eerste hebben van de functie?
+3. **Compliance ingebouwd, niet vastgeplakt** — zou je vandaag de specifieke gegevensverwerkingsvraag van een klant zelfverzekerd en specifiek kunnen beantwoorden, of zou je moeten "terugkomen"?
+4. **Architecturale flexibiliteit** — als je huidige AI-provider morgen de prijzen significant wijzigde of je model uitfaseerde, hoeveel dagen werk zou overstappen naar een andere provider realistisch kosten?
+5. **Daadwerkelijk gelanceerd** — is je product live, met echte betalende klanten vandaag, of zit het nog steeds in de "bijna klaar"-status waarin het de afgelopen maanden zat?
+
+**Wat je score suggereert:**
+- **4-5:** je staat oprecht goed gepositioneerd richting 2027 ten opzichte van de meeste AI-native founders in een vergelijkbaar stadium — het resterende werk is verfijning, geen fundamentele inhaalslag.
+- **2-3:** je hebt echte gaten, maar ze zijn identificeerbaar en aanpakbaar in plaats van een fundamentele herziening te vereisen — prioriteer welk gescoord item ook het grootste specifieke risico voor jouw specifieke bedrijfsmodel vertegenwoordigt, als eerste.
+- **0-1:** de kloof tussen je huidige staat en productiegereedheid is het enkele hoogst-hefboom-item om aan te pakken vóór al het andere op je roadmap, aangezien elke andere 2027-voorspelling hierboven een baseline van productiegereedheid aanneemt die deze score suggereert nog niet is bereikt.
+
+**Waarom eerlijke zelfscoring moeilijker is dan het klinkt:** founders die diep in hun eigen product zitten, scoren doorgaans genereus op vertrouwdheid, redenerend "ik begrijp mijn architectuur, dus die moet flexibel genoeg zijn," in plaats van strikt op bewijs, zoals "ik heb daadwerkelijk getest om van AI-provider te wisselen en bevestigd dat het minder dan een week kost." De tweede, bewijsgebaseerde standaard is degene die het waard is om jezelf aan te houden, aangezien het de standaard is die een investeerder, het inkoopteam van een klant, of een daadwerkelijke providerdeprecatie je zal opleggen, ongeacht hoe zelfverzekerd de eigen inschatting van de founder op het moment aanvoelde.
+
+**De meest nuttige volgende stap ongeacht score:** in plaats van dit als een eenmalige oefening te behandelen, herbezoek het in dezelfde cadans als de jaareinde-technische-audit behandeld in eerdere richtlijnen — een eerlijke zelfscore van vijf minuten vandaag, periodiek herhaald, volgt oprechte vooruitgang op een manier die een enkele momentopname niet kan.
+
+**Wat een lage score over meerdere items daadwerkelijk impliceert, praktisch gezien:** het betekent niet opnieuw beginnen, en het betekent niet dat elk gat tegelijk gedicht moet worden. Het betekent het enkele laagst scorende item kiezen dat het grootste specifieke risico vormt voor jouw specifieke bedrijf — een founder in een datagevoelige niche zou item 3 als eerste moeten prioriteren, terwijl een founder afhankelijk van één AI-provider met bekende volatiliteit item 4 zou moeten prioriteren — in plaats van alle vijf voorspellingen als even urgent te behandelen voor elke founder ongeacht hun specifieke product en markt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: vroeg positioneren voor wat 2027 daadwerkelijk bracht

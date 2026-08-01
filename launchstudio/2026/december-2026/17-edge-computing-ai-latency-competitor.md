@@ -66,6 +66,35 @@ European AI-native founders building for a European customer base face a specifi
 
 [Get your deployment architecture reviewed](https://launchstudio.eu/en/#contact) for latency before it costs you users.
 
+## Understanding the Latency Budget: Where Milliseconds Actually Go
+
+Founders debugging a slow AI feature often treat "it's slow" as one problem, when it's actually the sum of several distinct delays stacked on top of each other. Breaking down where time actually goes turns a vague complaint into a specific, fixable list.
+
+**The request lifecycle, broken into its real components**
+
+1. **DNS lookup and connection setup** — typically 20-100ms, mostly invisible unless your DNS provider is poorly configured or your SSL/TLS handshake is unusually slow
+2. **Network round-trip to your server** — the physical distance between user and server, roughly 10-15ms per 1,000km under good conditions, meaning a European user hitting a US-East server pays 150-200ms in each direction before any actual processing starts
+3. **Authentication and session validation** — a database lookup to confirm the user's session, typically 10-50ms if the database is well-indexed and positioned near the application server
+4. **Time to first token (TTFT)** — the delay between your server sending a request to the LLM provider and the first piece of the response arriving; this varies enormously by model, ranging from under 200ms for smaller, fast models to 1-2+ seconds for larger reasoning-heavy models under load
+5. **Full generation time** — how long the complete response takes to finish streaming, which scales with response length and model choice
+6. **Rendering and paint time** — the browser actually displaying the response, usually negligible unless the frontend is doing unnecessary re-renders on every streamed token
+
+**Why founders misdiagnose the bottleneck**
+
+When an AI feature feels slow, the instinctive response is to blame "the AI" — but steps 1, 2, and 3 are pure infrastructure and have nothing to do with model quality. A founder who migrates to a faster, more expensive model without first checking whether their server is in the wrong region or their database queries are unindexed may spend money solving a problem that was never actually about the model.
+
+**A simple diagnostic to isolate the cause**
+
+Add basic timing instrumentation around each stage of the request — most application frameworks support this with a few lines of logging. If time-to-first-token is slow but everything before it (DNS, connection, auth) is fast, the fix is architectural: streaming, model choice, or provider region. If the delay is concentrated in steps 1-3, the fix is infrastructure: edge deployment, database indexing, or connection pooling — none of which require touching your AI integration at all.
+
+**Setting a realistic latency budget**
+
+A useful target for most AI-native founders: under 100ms combined for connection and auth, under 500ms for time-to-first-token on a streaming response, and total perceived response time (first visible output, not full completion) under 1 second. Products that consistently hit this budget feel instant to users, even if the full response continues generating for several more seconds in the background — because perceived speed is driven overwhelmingly by when something first appears, not by when everything finishes.
+
+**Budgeting for the compounding case**
+
+Latency rarely shows up as a single slow step in isolation — it compounds across a session. A chained AI workflow (fetch data, generate a response, then generate a follow-up based on that response) multiplies each stage's delay rather than adding it once. A workflow with three sequential AI calls at 800ms time-to-first-token each does not feel like an 800ms delay to the user; it feels like nearly 2.4 seconds of dead air unless intermediate progress is shown. This is why founders building multi-step AI workflows should budget latency per chain, not per call, and should surface intermediate status ("analyzing your document," "generating recommendations") rather than leaving users staring at a blank loading state through the entire chain.
+
 ## Real example
 
 ### An AI-Native Founder in Action: From 8-Second Load Times to Instant Response

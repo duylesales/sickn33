@@ -37,6 +37,22 @@ Dit plan gaat uit van redelijk gerichte, consistente inspanning over drie maande
 
 [Start je Maand 3](https://launchstudio.eu/en/#contact) wanneer je prototype gevalideerd en klaar is — Manifera's 120+ engineers zijn gepositioneerd om de productiefase in één tot drie weken uit te voeren zodra je daar aankomt.
 
+## Het Hele Kwartaal Budgetteren: Wat Elke Maand Daadwerkelijk Kost
+
+Het plan hierboven richt zich op volgorde en timing, maar founders die het volgen hebben ook een realistisch gevoel nodig van wat elke fase financieel kost, niet alleen hoe lang het duurt.
+
+**Kosten van maand 1 zijn voornamelijk tijd, geen geld.** Klantgesprekken kosten niets buiten je eigen tijd, hoewel founders soms onderschatten hoeveel outreach-pogingen het kost om 10-15 echte gesprekken te scoren — budgetteren voor 30-40 outreach-pogingen om zoveel daadwerkelijke gesprekken te krijgen, is realistischer dan een 1:1-responspercentage aannemen. Een abonnement op een AI-codeertool (Lovable, Bolt, v0 of Cursor) kost doorgaans €20-100/maand afhankelijk van het gebruiksniveau, de enige echte cashuitgave deze maand.
+
+**Kosten van maand 2 blijven bescheiden maar beginnen kleine validatie-uitgaven te omvatten.** Doorlopende AI-tool-abonnementskosten lopen door. Sommige founders begroten een klein bedrag, €100-300, voor prikkels om grondigere feedback van prospects te krijgen — een kopje koffie, een kleine cadeaubon, of gewoon meer van hun eigen tijd geïnvesteerd in gestructureerde feedbacksessies in plaats van terloopse gesprekken.
+
+**Maand 3 is waar de primaire cashuitgave plaatsvindt.** Dit is de productie-engineeringfase, en LaunchStudio's vastgeprijsde pakketten omvatten ongeveer €800-€7.500 afhankelijk van scope — een simpele single-tenant-tool met basisauthenticatie en betalingen zit richting het lagere uiteinde, terwijl multi-tenant-producten met complexe compliance- of betalingsescrow-behoeften, zoals behandeld in de case study-compilatie elders op deze site, richting het hogere uiteinde zitten. Hostingkosten vooruit zijn doorgaans bescheiden voor een vroeg-stadium-product, vaak €20-100/maand afhankelijk van de specifieke infrastructuurkeuzes gemaakt tijdens de productiebouw.
+
+**Een realistisch totaal kwartaalbudget voor de meeste solo AI-native founders die dit plan volgen, valt in het bereik van €1.000-€8.000**, zwaar gewogen richting de productiefase van maand 3, waarbij maanden 1-2 voornamelijk tijd verbruiken in plaats van significante cash. Founders die met oprecht minimale budgetten werken, moeten vroeg een eerlijk gesprek voeren, idealiter tijdens het scopinggesprek van maand 2 in plaats van te wachten tot maand 3, over welk pakketniveau realistisch past, aangezien een duidelijk, vast getal vroeg de sunk-cost-druk vermijdt van maanden 1-2 hebben voltooid om vervolgens te ontdekken dat maand 3 onbetaalbaar is.
+
+**Doorlopende kosten na lancering** — hosting, AI-API-gebruikskosten die meeschalen met klanten, eventuele diensten van derden zoals e-mail of analytics — blijven doorgaans bescheiden voor de eerste maanden van een klein betalend klantenbestand, maar founders moeten deze vanaf dag één van live gaan begroten als terugkerende maandelijkse kosten, niet als een bijzaak ontdekt op de eerste factuur.
+
+Het kwartaal behandelen als een financieel plan naast een tijdplan — ruwweg weten wat elke maand kost, niet alleen hoe lang het duurt — is wat een founder in staat stelt zich met oprecht vertrouwen aan het plan te committeren in plaats van halverwege een budgettekort te ontdekken, precies het soort te vermijden verstoring dat een plan van drie maanden verandert in weer een gestrand "bijna klaar"-project.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: het plan letterlijk volgen

@@ -72,6 +72,21 @@ Migrating between these platforms later, while not trivial, is generally managea
 
 [Get your hosting architecture recommended](https://launchstudio.eu/en/#contact) based on your specific AI application's real requirements.
 
+## Database and Storage: The Decision Hiding Behind the Hosting Decision
+
+Choosing between Vercel, Railway, and Fly.io answers where your application's compute runs, but it deliberately leaves open a second, equally consequential decision: where your database and file storage actually live, since none of these three platforms are primarily database products, and pairing the wrong database service with your compute choice creates its own latency and cost problems independent of which hosting platform you picked.
+
+**Common pairings that work well:**
+- **Vercel + Supabase or Neon** — both offer generous free tiers suited to early-stage validation, and both are commonly used alongside Vercel specifically because their connection pooling is designed to handle the connection-per-invocation pattern serverless functions create, which a traditional database connection setup handles poorly.
+- **Railway + Railway-hosted Postgres** — Railway's own integrated database offering keeps your compute and database physically close, minimizing the network latency between application and database that can otherwise add up across many queries per request, and simplifies configuration since it's managed within the same platform.
+- **Fly.io + Fly Postgres or a regionally distributed database** — since Fly.io's core value proposition is running compute close to users globally, pairing it with a database that isn't similarly distributed can undermine the latency benefit entirely; a founder deploying compute across three continents but querying a single-region database has solved only half the latency problem.
+
+**The mistake worth avoiding specifically:** treating "serverless functions" and "connection-per-request database access" as automatically compatible. A traditional database connection pattern — open a persistent connection, reuse it — doesn't map cleanly onto serverless functions that spin up and down per request. Without a connection pooler designed for this, like Supabase's or Neon's pooled connection mode, a serverless AI application can exhaust its database's maximum connection limit under real concurrent load in a way that never surfaced during single-user development testing.
+
+**File and media storage is a related, separate decision.** If your AI application generates or stores images, documents, or other files, not just structured database rows, that storage typically lives in a dedicated object storage service such as Supabase Storage, Cloudflare R2, or AWS S3, rather than your compute platform or database — a detail that's easy to overlook when focused primarily on the compute hosting decision covered above, but one that has its own cost structure (storage volume and bandwidth) worth checking against your actual usage pattern before it becomes a surprise line item.
+
+**The practical sequencing:** decide your compute platform first using the framework above, then choose a database and storage pairing known to work well with that specific platform, rather than making the two decisions in isolation and discovering an incompatibility, like the connection-pooling issue above, only after real users create real concurrent load.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Migrating From an Ill-Fitting Platform Choice

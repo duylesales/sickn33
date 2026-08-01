@@ -37,6 +37,30 @@ Vertrouwen is niet puur een copywritingprobleem — het is ook een technisch pro
 
 [Maak je AI-native product productieklaar](https://launchstudio.eu/en/#contact) — zodat het vertrouwen dat je gebruikers erin stellen, wordt ondersteund door echte betrouwbaarheid.
 
+## De Specifieke Psychologische Mechanismen Achter AI-contentwantrouwen
+
+"Dit voelt AI-gegenereerd" is een conclusie die gebruikers bijna direct trekken, maar het oordeel wordt opgebouwd uit verschillende afzonderlijke psychologische mechanismen die onder het bewuste bewustzijn opereren. Elk mechanisme afzonderlijk begrijpen helpt founders precies te diagnosticeren waar hun product wantrouwen triggert, in plaats van vaag te proberen het "menselijker te laten aanvoelen."
+
+**Verwerkingsvlotheid en de keerzijde ervan**
+
+De cognitieve psychologie heeft al lang aangetoond dat mensen gemak van verwerking gelijkstellen aan waarheid en kwaliteit — vertrouwde, vlot lopende informatie voelt geloofwaardiger. Door AI gegenereerde copy is vaak extreem vlot, bijna te vlot: uniform goed gestructureerde zinnen zonder natuurlijke variatie in ritme of woordkeuze. Voorbij een bepaald punt stopt deze overmatige vlotheid met lezen als kwaliteit en begint hij te lezen als synthetisch, omdat echt menselijk schrijven natuurlijke onregelmatigheid heeft die overdreven gladde tekst mist.
+
+**Specificiteit als vertrouwensheuristiek**
+
+Mensen gebruiken concreet, specifiek detail als een proxy voor authenticiteit, omdat verzinsel cognitief duur is om specifiek te maken en makkelijk om vaag te houden. "Vertrouwd door bedrijven wereldwijd" vereist geen verificatie en verbindt zich tot niets. "Gebruikt door 87 fysiotherapiepraktijken in Overijssel" is een claim specifiek genoeg dat een sceptische lezer aanneemt dat hij gecontroleerd zou kunnen worden — en die veronderstelde controleerbaarheid is wat hem waar doet aanvoelen, ongeacht of de lezer hem ooit daadwerkelijk verifieert.
+
+**Het identificeerbare-bron-effect**
+
+Mensen geven meer vertrouwen aan claims en content die te herleiden zijn naar een identificeerbare bron dan aan anonieme of organisatorisch klinkende claims, zelfs wanneer de content verder identiek is. Een testimonial toegeschreven aan "een tevreden klant" draagt een fractie van het overtuigingsgewicht van een die is toegeschreven aan een genoemde persoon met een specifiek, controleerbaar detail (een stad, een bedrijfsnaam, een rol). Dit is waarom anoniem sociaal bewijs — gebruikelijk op AI-gegenereerde landingspagina's — veel minder overtuigt dan founders verwachten.
+
+**Patroonherkenning door herhaalde blootstelling**
+
+Nu door AI gegenereerde content het internet heeft overspoeld, hebben gebruikers — vaak zonder het te beseffen — een impliciete patroonherkenningscapaciteit ervoor opgebouwd: bepaalde zinsstructuren ("revolutioneer," "naadloos," "ontgrendel je potentieel"), bepaalde visuele lay-outs (hero-afbeelding, rij met drie iconen, generieke testimonial-carrousel), bepaalde stockfoto-esthetiek. Geen van deze bewijst individueel AI-generatie, maar hun gezamenlijk voorkomen triggert patroonherkenning sneller dan gebruikers bewust kunnen verwoorden waarom iets niet klopt.
+
+**Waarom dit oplossen niet gaat over AI-betrokkenheid verbergen**
+
+Geen van deze mechanismen gaat eigenlijk over het detecteren van AI-gebruik zelf — ze gaan over het detecteren van de afwezigheid van specifiek, verifieerbaar, aan mensen toe te schrijven detail. Een product volledig gebouwd met AI-tools dat echte namen, echte cijfers en een oprecht identificeerbare persoon of team erachter bevat, triggert geen van deze wantrouwenssignalen, omdat de mechanismen reageren op specificiteit en traceerbaarheid, niet op de tool die bij de productie werd gebruikt. Dit is het bruikbare inzicht: de oplossing is verifieerbare specificiteit toevoegen, niet verbergen welke tools het product hebben gebouwd.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: van "dit voelt nep" naar een vertrouwd lokaal merk

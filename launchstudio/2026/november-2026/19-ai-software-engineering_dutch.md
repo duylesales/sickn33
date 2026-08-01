@@ -89,6 +89,22 @@ Altijd standaard de aanname doen dat de applicatie meedogenloos aangevallen en m
 **4. Observability en CI/CD**
 Je kunt domweg niet repareren wat je niet ziet. Engineering discipline betekent het direct inrichten van volautomatische deployments (via GitHub Actions), het opzetten van afgeschermde staging-omgevingen, en het implementeren van messcherpe logging die daadwerkelijk diepgaande context biedt zodra een obscure AI-functie faalt in productie.
 
+## Veelvoorkomende Anti-Patronen Die AI Genereert (En Hoe Je Ze Zelf Herkent)
+
+Zelfs doorgewinterde technische oprichters hebben baat bij een snelle mentale checklist van de specifieke anti-patronen die AI coding assistants keer op keer reproduceren, want deze patronen duiken voortdurend op, zelfs in verder uitstekende AI-gegenereerde codebases.
+
+**De God Component.** AI-tools genereren met grote regelmaat één enkel component dat data ophaalt, formulierstatus beheert, submit-logica afhandelt én de UI rendert — allemaal in één bestand. Het werkt feilloos in een demo. Het wordt onhoudbaar zodra twee oprichters het tegelijk proberen te bewerken, of zodra het component een tweede use case moet gaan bedienen.
+
+**De Stille Fout.** Vraag een AI-assistent om "foutafhandeling toe te voegen", en het pakt de logica doorgaans in een `try/catch` die naar de console logt en verder helemaal niets doet. In productie betekent dit dat een mislukte betaling, een mislukte databaseschrijving of een mislukte AI API-call volkomen stilletjes faalt — zonder enige melding aan jou, en zonder een zinnig bericht aan de gebruiker.
+
+**De Goedgelovige Client.** AI-gegenereerde formulieren valideren doorgaans uitsluitend in de browser — ze checken of een e-mailveld eruitziet als een e-mailadres, of een verplicht veld niet leeg is. Niets weerhoudt een gebruiker ervan om de browser volledig te omzeilen en misvormde of kwaadaardige data rechtstreeks naar je API te sturen, simpelweg omdat de AI ervan uitging dat de client-side check wel genoeg zou zijn.
+
+**Het Risico Op Oneindige Loops.** In AI-geassisteerde React-code kom je regelmatig `useEffect` hooks tegen met onvolledige of foutieve dependency-arrays. Dit kan onnodige re-renders veroorzaken, of erger nog, herhaalde API-calls die stilletjes je OpenAI- of Stripe rate limits opsouperen, zonder enige duidelijke foutmelding.
+
+**De Kopieer-Plak Configuratie.** AI-modellen die getraind zijn op publieke tutorials genereren soms configuratiewaarden — CORS-instellingen, cookie-vlaggen, sessieduur — die letterlijk gekopieerd zijn uit voorbeeldcode die expliciet onveilig is en uitsluitend bedoeld voor lokale ontwikkeling.
+
+Geen van deze patronen betekent dat de AI je in de steek heeft gelaten. Ze betekenen dat de AI exact deed waarvoor hij getraind is: code produceren die een feature overtuigend demonstreert. Engineering rigor is de aparte discipline om deze patronen te vinden vóórdat een echte gebruiker — of een echte aanvaller — ze voor jou vindt.
+
 ## Praktijkvoorbeeld
 
 ### Een AI-Native Founder in de praktijk: De Ervaren Backend Developer Die Plotseling Een Backend Nodig Had

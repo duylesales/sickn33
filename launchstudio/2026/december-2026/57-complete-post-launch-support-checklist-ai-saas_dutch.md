@@ -46,6 +46,21 @@ Dit is precies wat [LaunchStudio's](https://launchstudio.eu/en/) Launch & Grow-p
 
 [Stel doorlopende support in vóór de lancering, niet na de eerste crisis](https://launchstudio.eu/en/#calculator) — post-lancering operationele behoeften zijn net zo reëel en de moeite waard om voor te plannen als de lancering zelf.
 
+## De Specifieke Metrics die een Drempel Verdienen, Niet Alleen Bekeken Worden
+
+De dagelijkse, wekelijkse, en maandelijkse checklist hierboven vertelt je waar je naar moet kijken; het is even nuttig om te weten welke cijfers op elk van die dashboards daadwerkelijk zorgen zouden moeten triggeren versus wat normale variatie is, aangezien founders die nieuw zijn in het runnen van een live product ofwel paniekeren bij normale schommeling, of erger, een oprecht probleem missen omdat niets eraan alarmerend leek in isolatie.
+
+**Redelijke startdrempels voor een kleine, vroege-fase AI SaaS:**
+- **Uptime:** onder 99% over een voortschrijdende periode van 30 dagen is de oorzaak waard om te onderzoeken, zelfs als nog geen klant heeft geklaagd — bij lage klantaantallen kan uitval buiten kantooruren onopgemerkt blijven bij gebruikers terwijl het toch een oprecht betrouwbaarheidsgat vertegenwoordigt.
+- **API-foutpercentage:** een plotselinge sprong boven ruwweg 1-2% falende verzoeken, relatief aan je eigen vastgestelde baseline, wijst meestal op iets dat is veranderd — een provider-uitval, een bug in een recente deployment, of een afhankelijkheidsprobleem — de moeite waard om dezelfde dag te onderzoeken in plaats van te wachten op de wekelijkse beoordeling.
+- **AI-kosten per actieve gebruiker:** volg dit cijfer specifiek, niet slechts de totale AI-uitgave, aangezien totale uitgave die stijgt naast gebruikersgroei verwacht en gezond is, terwijl stijgende kosten-per-gebruiker het specifieke signaal is van de marge-drift behandeld in eerdere prijsrichtlijnen.
+- **Mislukt-betalingspercentage:** een kleine baseline van mislukte betalingen, zoals verlopen kaarten of onvoldoende saldo, is normaal, maar een percentage betekenisvol boven je historische baseline kan wijzen op een probleem met de betalingsverwerkerintegratie in plaats van simpelweg ongelukkige klanten.
+- **Supportresponstijd:** streef er vooral in de eerste maanden naar om de eerste-responstijd onder een paar uur te houden tijdens kantooruren — vroege klanten geven meer geduld voor incidentele bugs dan voor een supportbericht dat dagenlang onbeantwoord blijft.
+
+**Een lichtgewicht incidentresponsgewoonte opbouwen, zelfs solo:** wanneer een bovenstaande drempel daadwerkelijk wordt overschreden, verslaat een kort, consistent responspatroon een geïmproviseerd patroon elke keer opnieuw: erken het probleem, zelfs alleen aan jezelf in een lopend logboek, beoordeel of klanten momenteel worden getroffen, los het onmiddellijke probleem op of verzacht het, en doe dan een korte terugblik op waarom het gebeurde en of een drempel of monitor moet worden aangepast om het volgende keer eerder te vangen. Dit vereist geen formele tooling op kleine schaal — een simpel gedeeld document dat bijhoudt wat er brak, wanneer, waarom, en wat er veranderde, bouwt een institutioneel geheugen op dat voorkomt dat dezelfde fout weken- of maandenlang stilletjes blijft terugkeren.
+
+**Waarom drempels meer ertoe doen dan ruwe monitoring:** monitoring zonder drempels produceert gewoon dashboards die niemand tijd heeft om betekenisvol te interpreteren; een specifiek cijfer dat een specifieke actie triggert, verandert monitoring van passieve observatie in een daadwerkelijke operationele waarborg, wat het verschil is tussen een probleem opmerken op de dag dat het begint en het per ongeluk ontdekken, ruim achteraf, zodra een klant of een vastgelopen proces het probleem afdwingt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de post-lancering realiteit op de harde manier leren, en het dan oplossen

@@ -40,6 +40,24 @@ Founders die deze twee prijzen vergelijken, vergelijken vaak, zonder het te bese
 
 [Gebruik de prijscalculator](https://launchstudio.eu/en/#calculator) om precies te zien waar jouw specifieke project valt, gebaseerd op wat je al hebt gebouwd versus wat er nog rest.
 
+## Het Rommelige Midden: Wanneer je Project Niet Netjes in Een van Beide Prijspunten Past
+
+Niet elke founder past netjes in "volledig gevalideerd AI-prototype, heeft alleen last-mile werk nodig" of "nog niets gebouwd, heeft de volledige agency-scope nodig." Er bestaat een reëel en veelvoorkomend middensegment, doorgaans geprijsd tussen €15.000 en €40.000, en begrijpen wanneer je daadwerkelijk in dit middensegment zit, voorkomt zowel te veel betalen voor scope die je niet nodig hebt als te weinig betalen voor scope die je wél nodig hebt.
+
+### Signalen dat je Waarschijnlijk in het Middensegment Zit, Niet in de LaunchStudio-laag
+- Je AI-gegenereerde prototype bestaat, maar is nog niet getest met echte gebruikers, wat betekent dat je interface, hoewel functioneel, een reëel risico draagt op significant herwerk zodra echte gebruikers ermee interacteren
+- Je hebt meerdere concurrerende versies van je kernflow gebouwd met verschillende AI-tools en hebt nog niet besloten welke je verder gaat ontwikkelen, wat betekent dat er nog betekenisvol ontwerpwerk resteert
+- Je product vereist een echt nieuw technisch onderdeel — een custom algoritme, een ongebruikelijke integratie, een complexe meerstapsworkflow — dat buiten valt wat "last-mile-infrastructuur" doorgaans dekt
+- Je hebt doorlopende featureontwikkeling nodig na de eerste lancering, niet alleen een eenmalige productieklaar-slag
+
+### Waarom Dit Segment Niet Gewoon "LaunchStudio Maar Duurder" Is
+Het middensegment omvat doorgaans echte extra scope, niet simpelweg een grotere versie van hetzelfde last-mile werk: een validatie- en lichte UX-iteratiefase, besluitvorming tussen concurrerende prototyperichtingen, en het bouwen van het nieuwe onderdeel waarvoor een op templates gebaseerde last-mile-opdracht nooit was bedoeld. Dit correct prijzen vereist een echt gesprek over wat specifiek nog onzeker of ongebouwd is, in plaats van standaard óf het €800-€7.500-template óf het volledige €80.000-agencytemplate toe te passen.
+
+### Hoe je Erachter Komt in Welk Segment je Daadwerkelijk Zit
+De meest betrouwbare test: zou je je huidige prototype vandaag aan een engineer kunnen overhandigen en zou die je binnen een uur precies kunnen vertellen wat er gerepareerd moet worden? Zo ja — je interface is gevalideerd, je featurelogica werkt, en de gaten zijn specifiek en benoembaar (authenticatie, betalingen, hosting) — dan zit je zeer waarschijnlijk in LaunchStudio's segment, ongeacht hoe indrukwekkend of onaf je prototype persoonlijk aanvoelt. Als een engineer in plaats daarvan fundamentele vragen zou moeten stellen over wat het product eigenlijk hoort te doen, of meerdere structureel verschillende benaderingen door elkaar zou aantreffen in de codebase, zit je waarschijnlijk in het middensegment of daarboven, en is een gesprek over bredere scope — mogelijk met Manifera's volledigere ontwikkelingsdiensten in plaats van specifiek LaunchStudio — het eerlijkere startpunt.
+
+[Niet elke founder weet welk segment past](https://launchstudio.eu/en/#contact) vóór dat gesprek, en dat is precies waarom LaunchStudio's initiële scopinggesprek bestaat — om eerlijk vast te stellen in welke categorie een specifiek project daadwerkelijk valt voordat er enige prijsafspraak wordt gemaakt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: drie offertes vergelijken die eigenlijk niet vergelijkbaar waren

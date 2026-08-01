@@ -11,6 +11,8 @@ De vergelijkingstabel: 📊
 ✅ Beveiliging, betalingen, hosting — BEIDE bevatten dit
 ✅ Tijdlijn — Bureau: 3-12 maanden | LaunchStudio: 1-3 weken
 
+Er bestaat ook een echt middensegment (€15K-€40K) voor prototypes die nog niet helemaal last-mile-klaar zijn — de 1-uurstest: kan een engineer vandaag naar je build kijken en precies benoemen wat kapot is? Zo niet, dan zit je nog niet in de €800-€7.500-laag. 🔍
+
 Dezelfde kwaliteit. Dezelfde Manifera-engineeringstandaard vertrouwd door Vodafone en TNO. Gewoon een fractie van de scope — en de prijs. 🛡️
 
 Zijn resultaat: gelanceerd voor 5% van de bureauofferte, nul herontwerp. 🚀

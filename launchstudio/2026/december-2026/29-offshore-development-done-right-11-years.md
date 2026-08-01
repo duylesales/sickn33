@@ -57,6 +57,36 @@ For AI-native founders and the freelancers/agencies who serve them, [LaunchStudi
 
 [Discuss a white-label partnership](https://launchstudio.eu/en/#contact) if you're a freelancer or agency whose clients need production engineering support beyond your current capacity.
 
+## A Due Diligence Checklist for Evaluating Any Offshore Development Partner
+
+Whether or not a founder or agency ends up working with Manifera specifically, the failure patterns described above suggest concrete questions worth asking any offshore or distributed development partner before signing a contract — questions that surface structural problems before they become expensive ones.
+
+### Questions About Communication Structure
+- Who is my actual point of contact, and are they the person who understands both my business context and the engineering team's day-to-day work, or am I being handed off to whoever answers first?
+- What is the realistic response time for a clarifying question during my own working hours, given the time zone gap involved?
+- Is there a documented escalation path if my point of contact is unavailable, or does communication simply stall?
+
+### Questions About Team Structure and Continuity
+- Are the engineers working on my project permanent employees, or subcontracted for this specific project and likely to move on afterward?
+- Will the same core people who start my project also finish it, or should I expect team composition to shift meaningfully partway through?
+- How long has this specific team structure, not just the company as a whole, existed in its current form?
+
+### Questions About Pricing and Incentive Alignment
+- Is pricing fixed and scope-based, or open-ended hourly billing with no cap?
+- If hourly, what happens if the estimated hours are exceeded — is that risk mine alone, or shared with the development partner?
+- Does the pricing model reward efficient delivery of the agreed outcome, or does it reward maximizing billed hours regardless of outcome?
+
+### Questions About Specification and Scope Clarity
+- Is there a written specification both parties agree to before work begins, or is scope left to be worked out "as we go"?
+- How are scope changes during the project handled — as a structured change request process, or informally in a way that makes final cost unpredictable?
+- What does "done" look like, specifically and in writing, for this engagement?
+
+### Red Flags Worth Weighing Seriously
+A partner unable to clearly answer who your specific point of contact will be, unwilling to commit to fixed pricing for a reasonably well-specified scope, or vague about whether the same engineers will see the project through to completion is exhibiting exactly the structural gaps that cause offshore engagements to fail, regardless of how skilled the underlying engineers may individually be. None of these questions require special expertise to ask; they simply require asking them before signing rather than discovering the answers partway through a project that's already underway and difficult to unwind.
+
+### Asking for Evidence, Not Just Answers
+Good answers to the questions above are a starting point, not proof. Ask any prospective offshore partner for something concrete: a reference client willing to speak candidly about communication responsiveness, a sample of how a past project's specification document actually looked before work began, or an example of how a scope-change request was handled on a previous engagement. A partner with a genuinely mature process, refined over years rather than assembled for the sales conversation, usually has these artifacts ready without needing to construct them specially for you. One that struggles to produce anything beyond verbal assurances, even after claiming years of experience, is telling you something worth taking seriously before any contract is signed — regardless of how confident or polished the sales conversation itself sounds.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Freelance Designer's White-Label Partnership

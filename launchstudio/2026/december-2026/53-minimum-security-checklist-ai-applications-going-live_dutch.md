@@ -49,6 +49,26 @@ Zoals uitgebreid behandeld in eerdere beveiligingsgerichte richtlijnen — authe
 
 [Laat je applicatie tegen dit minimum controleren](https://launchstudio.eu/en/#contact) voordat echte gebruikers en echte data op het spel staan.
 
+## Hoe Je Elk Item Daadwerkelijk Verifieert, Niet Alleen Aanneemt Dat Je Het Hebt Gehaald
+
+De 10 items hierboven doorlezen en mentaal "ja, waarschijnlijk" afvinken bij elk item, is een veelvoorkomende maar onbetrouwbare manier om dit minimum daadwerkelijk te halen — het hele punt van een checklist is dat elk item een concrete, falsifieerbare verificatie krijgt, geen zelfverzekerde gok. Hier is hoe je elke categorie oprecht test, niet slechts gelooft.
+
+**Verifieerbaar zonder diepe technische vaardigheid:**
+- Open de developer tools van je browser, ga naar het Netwerk-tabblad, en herlaad je app — als je een AI-provider-API-sleutel of databasecredential ziet verschijnen in enig verzoek dat direct vanuit de browser wordt gedaan, faalt item 1, zichtbaar en ondubbelzinnig.
+- Probeer 20 keer snel achter elkaar in te loggen met een duidelijk verkeerd wachtwoord — als niets je vertraagt of buitensluit, faalt item 8 (rate limiting).
+- Trigger doelbewust een fout, zoals het indienen van een misvormd formulier of het opvragen van een pagina die niet zou moeten bestaan, en lees de resulterende foutmelding — als die een databasetabelnaam, een stack trace, of een interne bestandspad toont, faalt item 9.
+
+**Vereist het aanmaken van een tweede testaccount:**
+- Meld je aan voor twee aparte accounts en probeer, met de sessie van account A, direct toegang te krijgen tot een URL of resource die alleen bij account B zou moeten horen, zoals een boekings-ID of documentlink, door een identifier te raden of te verhogen — als het laadt, faalt item 3, en dit is de enige meest verstrekkende fout op de lijst.
+
+**Vereist daadwerkelijke technische verificatie, geen observatie:**
+- Vraag direct, aan jezelf of aan wie de backend heeft gebouwd: kan deze database nu, vandaag, worden hersteld vanaf een back-up, getest en bevestigd — niet "er draaien waarschijnlijk ergens back-ups." Een ongeteste back-up is functioneel gelijk aan geen back-up, aangezien de eerste keer dat je ontdekt dat hij niet werkt, tijdens een daadwerkelijk gegevensverliesincident is.
+- Bevestig dat sessietokens een daadwerkelijke verlooptijd hebben geconfigureerd, in plaats van standaard terug te vallen op de kant-en-klare instelling van een library die mogelijk helemaal niet verloopt.
+
+**Waarom founders deze verificatiestap overslaan, zelfs als ze van plan zijn te controleren:** de meeste van deze items zien er prima uit tijdens normaal gebruik, omdat normaal gebruik precies het pad is waarop een door AI gegenereerd prototype geoptimaliseerd is om goed te presteren. De fouten zijn alleen zichtbaar wanneer iemand doelbewust het abnormale pad probeert — het herhaalde verkeerde wachtwoord, de geraden URL, de misvormde invoer — wat precies is waarom de eigen, casual tests van een founder tijdens de ontwikkeling ze zelden aan het licht brengen, en waarom een externe, doelbewust adversariële beoordeling gaten vangt die maanden van de normale gebruik van de founder zelf nooit zouden onthullen.
+
+**Een redelijke cadans:** verifieer deze lijst één keer vóór de eerste lancering, en opnieuw na elke significante nieuwe functie die live gaat, aangezien nieuwe codepaden een gat kunnen herintroduceren dat eerder was gedicht — beveiligingsverificatie is een controlepunt gekoppeld aan verandering, geen eenmalig certificaat dat voor altijd geldig blijft.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: het minimum halen voor een regionale lancering

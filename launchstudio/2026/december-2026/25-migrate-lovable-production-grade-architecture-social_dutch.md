@@ -15,6 +15,8 @@ De 7-stappenmigratie naar productie: 📋
 6️⃣ Productiehosting, SSL, eigen domein
 7️⃣ Monitoring + volledige flow-tests
 
+🔍 30-minuten zelfcheck voordat je iemand belt: open incognito, probeer je aan te melden als tweede gebruiker; controleer je Network-tabblad op blootgestelde API-sleutels. Founders die al binnenkomen met kennis van hun gaten krijgen snellere, nauwkeurigere offertes.
+
 Het ene ding dat NOOIT verandert: je frontend. Geen enkele pixel. 🛡️
 
 Bij **LaunchStudio**, gesteund door Manifera's 120+ engineers, duurt dit 1-3 weken, vanaf €800 — versus €20k-€500k voor een traditionele herbouw. 🚀

@@ -62,6 +62,28 @@ Most AI-native founders don't have (and don't need) a dedicated observability en
 
 [Set up AI-specific monitoring](https://launchstudio.eu/en/#contact) for your product before a silent quality regression costs you customers you never even hear complain.
 
+## Setting Alert Thresholds Without Causing Alert Fatigue
+
+Once the three observability layers are in place, the next practical challenge is deciding what actually warrants an alert versus what belongs in a dashboard you check periodically. Get this wrong in one direction and real problems get buried in noise; get it wrong in the other direction and whoever's on call starts ignoring alerts altogether after the third false alarm in a week.
+
+**Avoid alerting on every individual AI call failure.** AI provider APIs experience transient rate limits, timeouts, and occasional malformed responses as a matter of course — a single failed call that succeeds on retry is normal operational noise, not an incident. Alert instead on the failure *rate* crossing a threshold (say, more than 5% of calls failing over a rolling 15-minute window), which distinguishes a genuine provider outage or integration bug from ordinary transient blips.
+
+**Baseline before you threshold.** Rather than picking an arbitrary "alert if latency exceeds 3 seconds" number on day one, capture at least a week or two of real production data first, then set thresholds relative to your own observed baseline (for example, alert if p95 latency exceeds twice its trailing 7-day average) rather than a number that sounded reasonable in the abstract but doesn't reflect how your specific AI feature actually behaves.
+
+**Separate cost alerts from quality alerts from uptime alerts, and route them differently.** A cost anomaly is urgent but rarely requires the same immediate response as a full outage, while a quality regression flagged by feedback data might warrant a same-day investigation rather than a 2am page. Treating all three with identical urgency trains whoever's on call to eventually treat all alerts as equally ignorable.
+
+**A reasonable starter set of alert rules looks like this:**
+
+1. AI call failure rate exceeds 5% over 15 minutes → immediate notification
+2. Per-user or per-feature AI cost exceeds 3x the trailing 7-day average in a single day → same-day review
+3. Thumbs-down feedback rate for any single feature exceeds double its trailing 30-day average → flagged for the next quality review cycle, not necessarily an immediate page
+4. p95 AI response latency exceeds 2x its trailing baseline for more than 10 minutes → immediate notification
+5. Zero AI calls logged for a feature that normally sees regular traffic → immediate notification (this often signals a broken integration, not just quiet usage)
+
+**Review and retune thresholds periodically.** A threshold that made sense at 50 users can generate constant false positives at 5,000, and one calibrated for a mature, stable feature will misfire constantly on a newly launched one still finding its usage pattern. Treat alert thresholds as something to revisit quarterly, not a configuration set once during initial implementation and never touched again.
+
+Getting this balance right is less about tooling and more about judgment — which is exactly why founders benefit from having gone through this calibration exercise before, rather than learning it by way of either a missed incident or a burned-out on-call rotation.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Catching a Silent Quality Drop Through User Feedback

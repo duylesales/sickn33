@@ -31,6 +31,25 @@ Omdat authenticatie je hele applicatie tegelijk raakt, zijn fouten hier zowel ma
 
 [Laat je authenticatie-implementatie beoordelen](https://launchstudio.eu/en/#contact) voordat echte gebruikers echte accounts met echte data beginnen aan te maken.
 
+## Voorbij het Ontbrekende Queryfilter: Andere Autorisatiegaten die het Waard Zijn om te Controleren
+
+Het hierboven beschreven datalek via URL-parameters is het meest voorkomende authenticatiegat in AI-gegenereerde prototypes, maar het is niet het enige. Een inlogpagina die correct werkt kan prima naast verschillende andere autorisatiegaten bestaan die hetzelfde valse gevoel van "dit is geregeld" geven, totdat een echte gebruiker — of een echte aanvaller — ze ontdekt.
+
+### Toegangscontrole Alleen aan de Cliëntzijde
+Sommige AI-gegenereerde implementaties verbergen een pagina of knop op basis van de rol van de ingelogde gebruiker puur in de frontend — een pagina alleen voor beheerders is bijvoorbeeld simpelweg niet gekoppeld vanuit de gewone navigatie. Dit biedt nul echte bescherming: iedereen die de URL kent of raadt, kan de pagina rechtstreeks laden ongeacht rol, omdat de beperking alleen bestaat in wat wordt getoond, niet in wat de server daadwerkelijk toestaat. Elke toegangsbeperking moet server-side worden afgedwongen, waarbij het verbergen in de frontend slechts een gemak is, niet het beveiligingsmechanisme zelf.
+
+### Onveilige API-routes Achter een Veilig Ogende Frontend
+Een gepolijste, correct geauthenticeerde frontend kan nog steeds vóór API-routes zitten die niet zelfstandig verifiëren of het verzoek geautoriseerd is — bijvoorbeeld een API-eindpunt dat gewoon de data van elke gebruiker teruggeeft als het direct wordt aangeroepen (via een tool als Postman of de developer console van een browser) in plaats van via de eigen interface van de app, omdat de autorisatiecontrole alleen plaatsvindt in het frontend-codepad, niet in de API-route zelf. Elke API-route heeft zijn eigen onafhankelijke autorisatiecontrole nodig, ongeacht hoe goed beschermd de frontend die hem normaal aanroept lijkt.
+
+### Rolescalatie via Bewerkbare Cliëntdata
+Applicaties die de rol of het toestemmingsniveau van een gebruiker opslaan op een plek die de cliënt kan aanpassen — een waarde in local storage, een bewerkbaar formulierveld, een door de cliënt bepaalde requestparameter — creëren een mogelijkheid voor een gebruiker om simpelweg "role: user" zelf te veranderen in "role: admin." Rol- en toestemmingsdata moeten server-side leven, gekoppeld aan de geauthenticeerde sessie, en nooit vertrouwd worden op basis van iets dat de cliënt verstuurt.
+
+### Details van Sessie- en Tokenafhandeling
+Naast de kernloginflow zijn details zoals tokenvervaltijd (verloopt een sessie daadwerkelijk, of blijft hij oneindig bestaan zodra hij is uitgegeven?), veilige cookievlaggen, en correcte sessie-ongeldigmaking bij uitloggen of wachtwoordwijziging, makkelijk over het hoofd te zien in een snelle AI-gegenereerde implementatie, en elk vertegenwoordigt een reëel, zij het minder direct zichtbaar, blootstellingsvenster.
+
+### Waarom Eén Cross-user-test Niet Genoeg Is
+De test van Fenna's broer, proberen de data van een andere gebruiker te bekijken door een URL-parameter te veranderen, is een uitstekende eerste controle, maar vangt alleen de categorie datascoping-gaten. Een echt grondige authenticatiebeoordeling controleert elke categorie hierboven afzonderlijk, omdat een codebase de URL-parametertest probleemloos kan doorstaan terwijl hij toch faalt op alleen-cliëntzijde-rolcontroles of een onbeschermde API-route die bereikbaar is buiten de normale frontend-flow om.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een authenticatiegat vangen voordat er schade ontstond

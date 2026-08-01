@@ -99,6 +99,24 @@ What makes Manifera uniquely qualified for AI software development production wo
 
 [Calculate your project cost](https://launchstudio.eu/#calculator) or [describe your project for a free quote](https://launchstudio.eu/en/#contact).
 
+## How to Audit Your AI-Generated Frontend Before You Talk to Anyone
+
+Before you approach LaunchStudio, an agency, or anyone else for production engineering, spend 30 minutes auditing what your AI software development tool actually produced. This determines both the price you should expect to pay and how much of your frontend survives the transition to production.
+
+Check these five things:
+
+**1. Component structure.** Open the codebase and look for one giant `App.jsx` file versus a properly split component tree. Modern AI tools like Lovable increasingly generate clean, modular components, but heavily-iterated prompt sessions can still produce monolithic files that benefit from light refactoring before a backend team connects to them.
+
+**2. Hardcoded data.** Search the codebase for arrays of fake users, products, or transactions sitting directly inside component files. This is normal — AI tools use mock data to demonstrate UI states — but it tells an engineer exactly how much data-fetching and API logic still needs to be built from scratch.
+
+**3. Environment variables.** Check for a `.env` or `.env.local` file. If API keys are sitting in plain text and the repository is public, this is an immediate security exposure that needs fixing before any other engineering work begins.
+
+**4. Routing depth.** Count how many distinct pages or routes actually exist. A five-page marketing site is a fundamentally different production job than a twenty-route SaaS dashboard with nested user permissions and role-based access.
+
+**5. Third-party API calls.** Look for any `fetch` calls or SDK imports referencing Stripe, OpenAI, or similar services directly inside frontend components. These calls typically only function safely from a secured backend, not the browser — flagging them early saves real time during the engineering phase.
+
+Founders who complete this 30-minute audit walk into pricing conversations — with agencies or with LaunchStudio — knowing exactly what they are asking for, instead of accepting a quote built on vague assumptions about how much "probably" needs to be rebuilt. It is also the fastest way to tell a founder-friendly production partner from an agency simply trying to justify a full rewrite.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Agency Quote That Was 20x Higher Than Necessary

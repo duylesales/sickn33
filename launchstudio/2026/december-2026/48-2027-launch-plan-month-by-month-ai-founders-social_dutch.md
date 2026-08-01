@@ -8,6 +8,8 @@ Een idee zonder plan blijft een idee. Dit is het concrete maand-voor-maand-pad n
 
 De #1 manier waarop founders dit plan saboteren: maand 1 validatie overslaan omdat bouwen opwindender voelt dan praten. 😱
 
+💰 Realistisch kwartaalbudget: €1.000-€8.000 totaal, zwaar gewogen richting maand 3. Maanden 1-2 kosten vooral TIJD, geen cash — budgetteer 30-40 outreach-pogingen om 10-15 echte gesprekken te scoren.
+
 Haar resultaat: lanceerde naar 22 warme contacten met wie ze sinds maand 1 een relatie opbouwde — 9 betalende hotelklanten in de eerste 2 weken. 🎯
 
 Bij **LaunchStudio**, gesteund door Manifera's 120+ engineers, voert maand 3 uit binnen 1-3 weken zodra je klaar bent. 🛡️🚀

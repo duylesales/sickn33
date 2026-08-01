@@ -9,6 +9,8 @@
 
 The diagnostic question that matters most: "Is there ACTUALLY a way to pay right now?" If no, that's your whole answer. 🎯
 
+🧪 Before building full billing, test cheaply first: a "fake door" Upgrade button, manual bank-transfer invoicing for your top 3 fans, or a price-anchored waitlist ("€15/month, starting next month — in?"). Real signal, zero engineering.
+
 At **LaunchStudio**, we close cause #1 as standard in every Launch & Grow package. 🛡️
 
 His result: added Mollie billing, 23 of ~60 users converted within 2 WEEKS — ~40%. The gap was never pricing. It was a missing button. 🚀

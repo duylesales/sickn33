@@ -45,6 +45,24 @@ Veel founders gebruiken met succes beide in verschillende fasen: LaunchStudio vo
 
 [Vraag een gescoopte offerte aan](https://launchstudio.eu/en/#calculator) en vergelijk die eerlijk met freelanceroffertes voor jouw specifieke project — de juiste keuze hangt af van jouw daadwerkelijke situatie, niet een generieke aanbeveling.
 
+## Vragen om Elke Freelancer te Stellen Voordat Je Ze Inhuurt voor AI-Native Werk
+
+Welk pad ook bij jouw situatie past, een freelancer inhuren om specifiek aan een door AI gegenereerde codebase te werken (in plaats van een traditioneel handmatig gecodeerde) profiteert van een paar gerichte vragen die een generieke "huur een goede developer in"-checklist niet dekt. Het volgende is de moeite waard om direct te stellen tijdens het aanwervingsgesprek, voordat je iets vastlegt.
+
+**"Heb je eerder gewerkt binnen een codebase die oorspronkelijk is gegenereerd door Lovable, Bolt, Cursor, of een vergelijkbare AI-tool?"** Dit doet ertoe omdat door AI gegenereerde codebases herkenbare patronen en terugkerende eigenaardigheden hebben — inconsistente conventies tussen functies gebouwd in verschillende sessies, af en toe overengineerde oplossingen voor simpele problemen, beveiligingsgaten rond authenticatie en dataisolatie die AI-tools standaard vaak onderimplementeren. Een freelancer die specifiek ervaring heeft met dit patroon zal deze sneller opmerken dan iemand die aanneemt dat de codebase er een is die een mens vanaf het begin bewust heeft gearchitecteerd.
+
+**"Hoe pak je het beoordelen van door AI gegenereerde code die je niet zelf hebt geschreven aan, voordat je er wijzigingen in aanbrengt?"** Een sterk antwoord beschrijft een bewust proces — eerst controleren op beveiligingsgaten, gegevensstroom begrijpen voordat functies worden toegevoegd, inconsistente patronen signaleren in plaats van ze blindelings uit te breiden. Een zwak antwoord behandelt het identiek aan elke andere codebase zonder te erkennen dat door AI gegenereerde code een apart risicoprofiel heeft dat specifiek gecontroleerd moet worden.
+
+**"Wat is je aanpak voor het testen van wijzigingen, gegeven dat de codebase mogelijk inconsistente of afwezige bestaande tests heeft?"** Aangezien founders die Lovable, Bolt of vergelijkbare tools gebruiken vaak dunne testdekking hebben, onthult het antwoord van een freelancer hier of ze onderweg stilletjes testdekking zullen toevoegen of simpelweg voortbouwen op een ongeteste basis zonder het gat aan te pakken.
+
+**"Kun je je committeren aan een specifiek beschikbaarheidsniveau, en wat gebeurt er als je halverwege het project niet meer beschikbaar bent?"** Dit adresseert direct het single-point-of-failure-risico inherent aan elke individuele freelancerrelatie — een redelijk antwoord bevat een vorm van contingentie (documentatiegewoontes waarmee iemand anders het werk kan overnemen, realistische opzegtermijnen) in plaats van een impliciete aanname dat niets de samenwerking zal onderbreken.
+
+**"Reken je apart voor het repareren van bugs die terug te leiden zijn naar hoe de AI-tool de functie oorspronkelijk bouwde, of wordt dat als onderdeel van het werk beschouwd?"** Dit verheldert scope- en kostenverwachtingen vooraf, en voorkomt een latere onenigheid over of een probleem een "nieuwe bug" is of een geërfd kwaliteitsgat in de oorspronkelijke door AI gegenereerde implementatie.
+
+**"Kun je me een voorbeeld laten zien van een project waarin je een bestaande codebase hebt uitgebreid, in plaats van herschreven?"** Sommige freelancers vervallen standaard in het herschrijven van substantiële delen van wat bestaat in plaats van erbinnen te werken — niet inherent verkeerd, maar de moeite waard om vooraf te weten gezien de kosten- en tijdsimplicaties van een gedeeltelijke herschrijving versus oprechte uitbreiding van een bestaand product.
+
+Deze vragen stellen garandeert geen goede aanwerving, maar het legt de specifieke risicofactoren bloot die relevant zijn voor AI-native codebases die een generiek developer-interview vaak volledig mist — en de antwoorden onthullen doorgaans snel of een freelancer daadwerkelijk eerder in deze omgeving heeft gewerkt of op jouw project aan het leren is.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: LaunchStudio kiezen voor lancering, een freelancer voor groei

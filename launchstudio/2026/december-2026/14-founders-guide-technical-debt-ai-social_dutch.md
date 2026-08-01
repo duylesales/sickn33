@@ -16,6 +16,8 @@ Bij **LaunchStudio** is technische-schuldbeoordeling een van onze meest voorkome
 
 Wacht niet op de crisis. Loop voor op de schuld. 🛡️🚀
 
+🔍 Het teken: `userId` in het ene deel van je app, `user_id` in het andere. Twee AI-sessies, nul herinnering aan elkaar — en je data stopt stilletjes met verbinden.
+
 👉 Lees de gids van de founder voor AI-technische schuld: [Link naar artikel]
 
 #TechnischeSchuld #LaunchStudio #Manifera #AINativeFounder #Cursor #SaaS

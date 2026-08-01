@@ -62,6 +62,21 @@ Every tactic above depends on your product actually being ready for real custome
 
 [Get production-ready before your first outreach message](https://launchstudio.eu/en/#calculator) — your first 10 customers deserve a product that won't embarrass you.
 
+## What to Actually Track During Those First 10 Customer Conversations
+
+The tactics above get you into the room, the call, or the DM with your first prospective customers; what you do with that access matters just as much as securing it, since these early conversations are also the richest, cheapest source of product and pricing information you'll have access to before scale makes direct conversation with every customer impossible.
+
+**Concrete things worth capturing from each conversation, not just general impressions:**
+- **The exact words they use to describe their problem**, not your product. A prospect's own phrasing of their pain point is often better marketing copy than anything a founder would write themselves, and tracking it across multiple conversations reveals whether a consistent pattern of language emerges.
+- **Where hesitation actually shows up.** Note the specific moment in each conversation where enthusiasm cools slightly — price, a missing feature, uncertainty about switching from a current tool — since a pattern across several conversations at the same point is a more reliable signal than any single conversation's outcome.
+- **What they compare you to.** Prospects will often mention what they currently use instead, even if it's a spreadsheet or a manual process rather than a direct competitor — this tells you your real competitive alternative, which is frequently not the product you assumed you were competing against.
+- **The specific price reaction**, not just "they seemed fine with it." Did they accept the number immediately, negotiate, go quiet, or ask what a lower tier includes — each response points toward a different pricing conclusion than a generic "pricing went okay" note would capture.
+- **Whether they offered an introduction unprompted**, versus only after being asked directly. Unprompted introductions are a stronger organic-advocacy signal worth noting separately from ones that required your specific ask from tactic #3 above.
+
+**A simple way to keep this organized without overhead:** a single spreadsheet row per conversation — name, their own problem phrasing, hesitation point, comparison mentioned, price reaction, introduction outcome — takes under two minutes to fill in after each call and becomes, after ten rows, a genuinely useful pattern-recognition tool that no individual conversation could provide alone. Founders who skip this step often retain only a vague overall impression, such as "people seemed positive," rather than the specific, actionable patterns, such as "three separate prospects hesitated at the exact same point in the pricing page," that actually inform what to fix next.
+
+**Why this data matters beyond just landing these 10 customers:** the patterns captured here directly inform the product and pricing decisions relevant to customer 11 through 100 — the same objection surfacing in your third, sixth, and ninth conversation is a much stronger signal to act on than founder instinct alone, and it's a form of research these ten deliberately personal, unscalable conversations can produce that no later, larger-scale customer base will replicate in the same direct way.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Ten Customers From a List of Forty Names

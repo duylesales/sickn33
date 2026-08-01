@@ -66,6 +66,27 @@ Because [LaunchStudio's](https://launchstudio.eu/en/) pricing for taking an AI p
 
 [Get a real cash quote](https://launchstudio.eu/en/#calculator) before deciding equity is your only option.
 
+## The Structural Risks Equity Deals Introduce Beyond the Raw Percentage
+
+The percentage-versus-cash math above is the first-order comparison, but equity-for-development arrangements carry structural risks that a simple valuation calculation doesn't capture — risks that surface only after the relationship is already formalized in your cap table.
+
+**Vesting terms are frequently missing or poorly structured.** A genuine co-founder equity grant typically vests over several years with a cliff, protecting the company if the relationship doesn't work out. Equity-for-development arrangements struck informally often skip this entirely — the developer receives fully-vested equity for a few weeks of work, meaning even if they disappear immediately after, that equity is permanently theirs, with no mechanism to claw it back.
+
+**IP assignment is easy to overlook and expensive to fix later.** Without an explicit, signed IP assignment agreement, a developer working for equity may retain ambiguous rights to the code they wrote — a problem that surfaces disastrously at exactly the moment it matters most, such as during due diligence for a funding round or acquisition, when a buyer's lawyers ask for clean IP provenance and discover it doesn't exist.
+
+**Cap table complications compound at every future round.** Every investor in every future funding round will see and evaluate that early equity grant, and a poorly structured or unusually large early developer stake can raise questions, complicate the round's terms, or in some cases require a costly cleanup — renegotiation, a buyback — before an investor will proceed at all.
+
+**Minority shareholder rights create ongoing obligations you may not anticipate.** Depending on your jurisdiction and how the equity was structured, even a small shareholder can hold information rights, approval rights over certain corporate actions, or other legal entitlements that persist indefinitely — obligations a founder rarely considers when the arrangement felt like a simple, informal trade at the time.
+
+**A practical safeguard checklist if you do proceed with equity:**
+1. Vesting with a meaningful cliff, typically at least 6-12 months, never a fully-vested-on-day-one grant
+2. A signed IP assignment agreement, executed before or concurrent with any code being written
+3. A clearly bounded scope, with explicit terms for what happens if the relationship ends before that scope is complete
+4. Legal review of the actual equity grant documents, not just a verbal or emailed agreement
+5. A defined buyback or repurchase mechanism if the person stops contributing
+
+These structural risks are precisely why the scoped-work-versus-co-founder distinction earlier in this piece matters so much: a genuine co-founder relationship justifies navigating this complexity because the relationship itself is meant to be permanent and deeply invested. A scoped production engagement, where a fixed cash price is available, simply doesn't need to introduce any of these long-term structural entanglements into your cap table at all.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Declining a 15% Equity Offer for a €3,000 Job

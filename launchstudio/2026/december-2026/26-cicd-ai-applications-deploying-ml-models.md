@@ -62,6 +62,25 @@ Most AI-native founders do not have (and don't need) a dedicated DevOps engineer
 
 [Discuss your deployment pipeline](https://launchstudio.eu/en/#contact) with an engineer who understands both traditional CI/CD and AI-specific deployment challenges.
 
+## Monitoring and Rollback: What Happens After a Deployment Passes Its Gates
+
+Passing your CI/CD pipeline's tests and gates doesn't guarantee an AI feature will behave well once it meets real users and real inputs — a reference test suite built from a fixed set of examples can never fully anticipate the variety of prompts, edge cases, and adversarial inputs actual users produce. This is why AI-aware deployment pipelines need a second layer that traditional software often treats as optional: continuous post-deployment monitoring paired with a fast, well-rehearsed rollback path.
+
+### Building an Evaluation Dataset That Actually Grows
+A one-time reference test suite goes stale. Every production incident, every user complaint about a strange AI response, and every edge case a support ticket surfaces should get added back into your evaluation dataset as a new test case — turning each real-world failure into a permanent regression test that protects against that specific failure mode recurring. Teams that treat their eval set as a living document, rather than something written once during initial pipeline setup, catch a meaningfully higher share of regressions before deployment over time, simply because the test suite keeps learning from what actually goes wrong in production.
+
+### Metrics Worth Tracking Continuously, Not Just at Deployment Time
+- **Response quality proxies**: user regeneration/retry rate (how often someone asks the AI to try again), thumbs-up/down feedback if you collect it, and abandonment rate mid-conversation
+- **Cost per interaction**, tracked as a moving average, since a silent creep upward often signals either a prompt regression causing longer responses or an unexpected usage pattern shift
+- **Latency percentiles** (p50, p95, p99) rather than just averages, since a small number of very slow requests can degrade user experience even when the average looks fine
+- **Error and fallback rates**, including how often your application falls back to a secondary model or a cached response because the primary AI call failed or timed out
+
+### Designing a Rollback Path You'll Actually Use
+A rollback plan that only exists in documentation, untested, tends to fail exactly when you need it most — under the time pressure of an active incident. A rollback path worth having includes: keeping the previous prompt version and model configuration readily deployable with a single action rather than a manual multi-step process reconstructed from memory, a clear threshold for what triggers a rollback decision agreed upon before an incident rather than debated during one, and a designated person authorized to make that call without waiting for a longer review process.
+
+### The Difference Between a Model Provider Incident and Your Own Regression
+When AI output quality suddenly degrades, the cause could be your own recent prompt or code change, or it could be a change on your model provider's end — a silent model update, a provider-side outage, or degraded provider performance unrelated to anything you shipped. Distinguishing between these quickly matters because the fix is completely different: rolling back your own deployment does nothing if the problem originates with your provider, and switching providers or falling back to a cached response does nothing if the problem is in your own recent prompt change. Logging which model version and prompt version generated every response — not just the output itself — is what makes this diagnosis possible within minutes rather than hours of confused investigation, and it's a habit worth building into your logging from the very first deployment rather than adding retroactively once an incident has already made the gap painfully obvious.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Catching a Silent Prompt Regression Before It Shipped

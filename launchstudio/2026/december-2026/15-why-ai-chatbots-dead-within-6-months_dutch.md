@@ -43,6 +43,34 @@ Dit is precies de kloof die [LaunchStudio](https://launchstudio.eu/en/) dicht vo
 
 [Praat met een engineer over de productiegereedheid van je chatbot](https://launchstudio.eu/en/#contact) voordat API-kosten of een stille storing hem stilletjes doden.
 
+## Een Tokenbudget Opstellen: De Rekensom Achter Duurzame Chatbotprijzen
+
+De meeste chatbot-founders prijzen hun product voordat ze de rekensom hebben gemaakt van wat een gesprek daadwerkelijk kost om te draaien. Die rekensom is niet ingewikkeld, en hem vóór lancering maken is het verschil tussen een duurzaam prijsmodel en een CareerBuddy-achtige paniekactie.
+
+**De kernrekensom**
+
+Elke berichtenuitwisseling verbruikt tokens aan beide kanten: de input (het bericht van de gebruiker plus alle eerdere gespreksgeschiedenis die je voor context meestuurt) en de output (de respons van het model). LLM-providers rekenen per miljoen tokens, doorgaans met inputtokens goedkoper dan outputtokens. Eén "simpele" uitwisseling kost misschien een fractie van een cent — maar het getal dat er daadwerkelijk toe doet, is de kosten van een volledig gesprek, niet van één bericht.
+
+**Waarom het opnieuw verzenden van context de verborgen vermenigvuldiger is**
+
+Dit is waar de meeste door AI gegenereerde chatbotprototypes het fout doen: veel implementaties sturen bij elk nieuw bericht de volledige gespreksgeschiedenis opnieuw mee, waardoor het 20e bericht van een gebruiker in een sessie betaalt voor tokens die alle 19 voorgaande uitwisselingen dekken, niet alleen het nieuwe. Een gesprek dat voor de gebruiker aanvoelt als "één keer heen en weer" kan tegen het einde stilletjes 10-15x meer kosten in tokens dan bij bericht één. Dit cumulatieve effect is precies waarom een virale piek rekeningen kan genereren die volledig onevenredig zijn aan het aantal nieuwe gebruikers.
+
+**Een ruw begrotingsraamwerk**
+
+1. **Schat het gemiddelde aantal berichten per gesprek** voor jouw specifieke use case — een snelle Q&A-bot zit misschien gemiddeld op 3-5 berichten; een open-eind coaching- of adviesbot (zoals CareerBuddy) kan makkelijk gemiddeld 20-40 halen
+2. **Schat het gemiddelde aantal tokens per bericht**, rekening houdend met het feit dat latere berichten in lange gesprekken meer opgestapelde context met zich meedragen
+3. **Vermenigvuldig met je verwachte aantal actieve gebruikers per maand**, inclusief een buffer voor onverwachte pieken — virale groei is een kostengebeurtenis, niet alleen een groeigebeurtenis, als je prijsmodel niet meeschaalt
+4. **Vergelijk de resulterende kosten per actieve gebruiker met je geplande prijs per gebruiker** — als de API-kosten alleen al een aanzienlijk deel van je abonnementsprijs overschrijden, is je marge fragiel nog voordat je hosting, support of je eigen tijd hebt meegerekend
+
+**Technieken die deze kosten meetbaar verlagen**
+
+- **Oudere context samenvatten** in plaats van de volledige geschiedenis letterlijk opnieuw te verzenden, zodra een gesprek een bepaalde lengte overschrijdt
+- **Gratis-tier-berichtenaantallen per maand begrenzen**, wat de worst-case blootstelling per gebruiker beperkt in plaats van te vertrouwen op goodwill
+- **Simpele vragen routeren naar een kleiner, goedkoper model** en het grotere model reserveren voor oprecht complexe verzoeken
+- **Veelvoorkomende openingsuitwisselingen cachen** (begroetingen, FAQ-achtige vragen) in plaats van elke keer een verse respons te genereren
+
+Deze rekensom vóór lancering maken — niet na je eerste virale moment — is wat een chatbot met een echt bedrijfsmodel onderscheidt van een die één onverwachte verkeerspiek verwijderd is van een rekening met vijf cijfers zonder omzet om die te compenseren.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de chatbot die zichzelf bijna failliet liet gaan

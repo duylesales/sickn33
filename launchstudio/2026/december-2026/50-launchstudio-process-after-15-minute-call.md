@@ -67,6 +67,27 @@ No redesign of your interface without explicit discussion. No open-ended hourly 
 
 [Book your 15-minute call](https://launchstudio.eu/en/#contact) — the first, no-obligation step in this exact process.
 
+## Behind Step 2: How the Seven-Layer Gap Analysis Actually Works
+
+Founders naturally want to know what actually happens during the codebase review, since it's the step that determines both the quote and the timeline that follow. The review isn't a single technical once-over — it's seven fairly narrow inspections, each corresponding to one production-readiness layer, and each producing a specific pass, fail, or partial verdict rather than a vague overall impression.
+
+**What gets checked, layer by layer:**
+1. **Frontend** — is the interface stable, or does it break under states the original build never tested (empty data, error responses, slow connections)? This layer usually passes largely as-is, since it's what founders spent the most iteration time on inside their AI tool.
+2. **AI/model layer** — is the model call made securely from a server route, or exposed client-side? Is there a fallback if the AI provider times out or returns malformed output?
+3. **Authentication** — does a real session and password-hashing system exist, or is "login" cosmetic, storing a name in local storage with no actual verification?
+4. **Database** — is there genuine row-level isolation between users, or does the schema technically allow any authenticated user to query anyone else's data?
+5. **Payments** — does a payment processor integration exist, and does it correctly handle failed payments, refunds, and subscription state changes?
+6. **Hosting** — is the current deployment stable under concurrent load, or was it only ever tested by the founder alone?
+7. **Monitoring** — does anything alert the team if the product goes down or starts erroring, or would a founder only find out from an angry customer email?
+
+Each layer gets a specific note in the scoping document — not "needs work" but the precise gap, such as "no row-level security policies configured on the bookings table" — because vague findings produce vague quotes, and vague quotes are exactly what founders considering this step are trying to avoid.
+
+**Why this produces a fixed quote instead of a range:** because each layer's finding is specific rather than approximate, the engineering hours required to close each gap can be estimated with real confidence, rather than padded to cover uncertainty. A founder whose authentication already uses Supabase Auth correctly gets a smaller quote component for that layer than a founder whose "authentication" turns out to be decorative — the review directly drives the number, rather than the number being set first and justified afterward.
+
+This is also why the codebase review happens before the quote, not the other way around: quoting a fixed price without first inspecting the actual seven layers would require guessing, and guessing is precisely the open-ended-billing risk fixed pricing is designed to eliminate in the first place. It's the mechanical reason Step 3's quote can be itemized rather than approximate, and the reason two founders describing similar-sounding products on their initial call can still receive meaningfully different quotes once their actual codebases are reviewed.
+
+**What founders can do before the call to make this step faster:** having your prototype's live URL and, if possible, a way to grant read access to the codebase (a GitHub link, or export from Lovable, Bolt, Cursor, or v0) ready ahead of the codebase review means the seven-layer inspection can begin immediately rather than waiting on access logistics. Founders don't need to prepare a technical summary themselves — describing gaps accurately is exactly what the review exists to do — but having the actual code accessible, rather than only a description of what it's supposed to do, is what turns Step 2 from a conversation into a genuine inspection with a specific, defensible verdict per layer.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Walking Through Every Step, Start to Finish

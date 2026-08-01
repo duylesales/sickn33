@@ -14,6 +14,8 @@ The 10-item minimum: ✅
 9️⃣ Error messages that don't leak internals
 🔟 A basic incident response plan
 
+🧪 Don't just assume — TEST it: try 20 wrong passwords in a row. If nothing locks you out, item 8 already failed.
+
 AI-generated prototypes routinely fail several of these by default — invisibly, until exploited. 😱
 
 At **LaunchStudio**, informed directly by Herre Roelevink's cybersecurity background (CFLW, TNO), this minimum is standard on every deployment. 🛡️

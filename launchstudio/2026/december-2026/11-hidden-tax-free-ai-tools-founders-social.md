@@ -15,6 +15,8 @@ At **LaunchStudio**, we close that gap for a fixed price, not a surprise:
 
 Free gets you to a prototype. It doesn't get you to launch. 🛡️🚀
 
+🧮 Quick self-check: score auth, payments, data migration, security, and integrations 0-3 each. Score 10+ (health, finance, B2B)? Budget for the high end.
+
 👉 Read the hidden tax nobody mentions: [Link to article]
 
 #AINativeFounder #LaunchStudio #Manifera #SaaS #StartupCosts #Lovable

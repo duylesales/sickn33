@@ -61,6 +61,30 @@ Trust is not purely a copywriting problem — it is also a technical one. A prod
 
 [Get your AI-native product production-ready](https://launchstudio.eu/en/#contact) — so the trust your users place in it is backed by real reliability.
 
+## The Specific Psychological Mechanisms Behind AI-Content Distrust
+
+"This feels AI-generated" is a conclusion users reach almost instantly, but the judgment is built from several distinct psychological mechanisms operating beneath conscious awareness. Understanding each one individually helps founders diagnose exactly where their product is triggering distrust, rather than vaguely trying to "make it feel more human."
+
+**Processing fluency and its dark side**
+
+Cognitive psychology has long shown that people equate ease of processing with truth and quality — familiar, smoothly-flowing information feels more credible. AI-generated copy is often extremely fluent, almost too fluent: uniformly well-structured sentences with no natural variation in rhythm or word choice. Past a certain point, this excess fluency stops reading as quality and starts reading as synthetic, because real human writing has natural irregularity that overly smooth text lacks.
+
+**Specificity as a trust heuristic**
+
+Humans use concrete, specific detail as a proxy for authenticity, because fabrication is cognitively expensive to make specific and easy to keep vague. "Trusted by businesses worldwide" requires no verification and commits to nothing. "Used by 87 physiotherapy practices across Overijssel" is a claim specific enough that a skeptical reader assumes it could be checked — and that assumed checkability is what makes it feel true, independent of whether the reader ever actually verifies it.
+
+**The identifiable-source effect**
+
+People extend more trust to claims and content that can be traced to an identifiable source than to anonymous or organizational-sounding claims, even when the content is otherwise identical. A testimonial attributed to "a happy customer" carries a fraction of the persuasive weight of one attributed to a named person with a specific, checkable detail (a city, a business name, a role). This is why anonymous social proof — common in AI-generated landing pages — persuades far less than founders expect.
+
+**Pattern recognition from repeated exposure**
+
+As AI-generated content has flooded the internet, users have — often without realizing it — built an implicit pattern-recognition capability for it: certain phrase structures ("revolutionize," "seamlessly," "unlock your potential"), certain visual layouts (hero image, three-icon feature row, generic testimonial carousel), certain stock-photo aesthetics. None of these individually proves AI generation, but their co-occurrence triggers pattern recognition faster than users can consciously articulate why something feels off.
+
+**Why fixing this isn't about hiding AI involvement**
+
+None of these mechanisms are actually about detecting AI use itself — they're about detecting the absence of specific, verifiable, human-attributable detail. A product built entirely with AI tools that includes real names, real numbers, and a genuinely identifiable person or team behind it triggers none of these distrust signals, because the mechanisms respond to specificity and traceability, not to the tool used in production. This is the actionable insight: the fix is adding verifiable specificity, not disguising which tools built the product.
+
 ## Real example
 
 ### An AI-Native Founder in Action: From "This Feels Fake" to a Trusted Local Brand

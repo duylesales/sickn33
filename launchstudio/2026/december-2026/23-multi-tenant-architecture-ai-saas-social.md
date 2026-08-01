@@ -13,6 +13,8 @@ The 5-point self-audit: ✅
 4️⃣ Can you access another account's data via URL manipulation?
 5️⃣ Are file uploads isolated too, not just database records?
 
+🔁 A one-time audit isn't enough — AI tools ship new features fast, and every new endpoint is a fresh chance to forget a tenant filter. That's why isolation tests need to run in CI on EVERY pull request, not just before big releases.
+
 At **LaunchStudio**, backed by Manifera's 160+ enterprise projects, we make this a standard part of every deployment — not an afterthought. 🛡️🚀
 
 👉 Read the full multi-tenant architecture guide: [Link to article]

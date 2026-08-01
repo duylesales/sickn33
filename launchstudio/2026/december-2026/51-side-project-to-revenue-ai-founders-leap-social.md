@@ -10,6 +10,8 @@ The 3 real steps: ✅
 2️⃣ Add the infrastructure that makes charging possible (1-3 weeks, not a transformation)
 3️⃣ Convert EXISTING users first — your warmest, easiest audience
 
+💸 The mistake that quietly kills margin: charging €15/month flat while your heaviest users cost €20/month in AI API calls alone. A 5-minute cost-per-user check before pricing prevents this.
+
 At **LaunchStudio**, backed by Manifera's 11+ years, we handle exactly Step 2 — fast and affordable. 🛡️
 
 His result: 11 of his ~40 existing users paid within 2 weeks. First-ever revenue from a 2-year unpaid hobby. 🚀

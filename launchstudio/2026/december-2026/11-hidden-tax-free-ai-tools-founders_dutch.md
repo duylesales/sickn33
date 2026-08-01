@@ -43,6 +43,34 @@ In tegenstelling tot freelancers die door AI gegenereerde code vaak niet begrijp
 
 [Vraag een offerte met vaste prijs aan voor je prototype](https://launchstudio.eu/en/#calculator) voordat je de verborgen kosten op de harde manier ontdekt.
 
+## Een Raamwerk om Je Eigen Herbouwbelasting te Schatten
+
+De meeste founders kennen hun herbouwbelasting pas op het moment dat ze hem al aan het betalen zijn. Voordat je zover bent, kun je hem zelf inschatten door vijf categorieën langs te lopen die consistent bepalen hoe duur de kloof tussen prototype en productie uiteindelijk uitvalt.
+
+**1. Diepgang van de authenticatie**
+
+Een "aanmelden met e-mail"-formulier is triviaal voor een AI-tool om te genereren. Correcte authenticatie — wachtwoordherstelflows, sessiebeheer, rolgebaseerde toegang als je teamaccounts hebt, en bescherming tegen veelvoorkomende aanvallen zoals credential stuffing — is een heel andere orde van werk. Als het inlogscherm van je prototype compleet oogt maar je nooit hebt getest wat er gebeurt als een gebruiker zijn wachtwoord vergeet of vanaf een tweede apparaat probeert in te loggen, begroot dan voor deze categorie.
+
+**2. Complexiteit van betalingen en facturering**
+
+Eenmalig een kaart belasten is simpel. Het afhandelen van mislukte betalingen, evenredig verrekende upgrades, abonnementsopzeggingen, terugbetalingen en belastingcompliance (btw-afhandeling is specifiek belangrijk voor Europese founders) is waar de meeste door AI gegenereerde betalingsintegraties spaak lopen. Hoe meer factureringsmodellen je van plan bent aan te bieden — maandelijks versus jaarlijks, gelaagde prijzen, gebruiksgebaseerde add-ons — hoe hoger deze kostenpost oploopt.
+
+**3. Datamigratie en -integriteit**
+
+Als je prototype al echte gebruikersdata heeft verzameld — zelfs maar een handvol bètaklanten — is het verplaatsen van die data naar een correct gearchitecteerde productiedatabase zonder iets te verliezen of te corrumperen echt engineeringwerk, geen kopieer-plakoperatie. Hoe meer klanten je hebt voordat je dit aanpakt, hoe duurder en riskanter de migratie wordt.
+
+**4. Reikwijdte van de beveiligingsaudit**
+
+Elke door AI gegenereerde app heeft wel enige blootstelling: een API-sleutel zichtbaar in client-side code, een databaseregel die te permissief is, een endpoint zonder ratelimiet. De herbouwbelasting hier schaalt met hoe gevoelig je data is — een planningsapp heeft een lagere beveiligingslat dan een app die gezondheidsgegevens, financiële data of iets binnen de strengere categorieën van de AVG verwerkt.
+
+**5. Kwetsbaarheid van integraties met derden**
+
+Prototypes verbinden vaak met externe diensten (betalingsverwerkers, e-mailproviders, agenda-API's) via het simpelst mogelijke integratiepad, wat vaak breekt onder praktijksituaties die de AI-tool niet voorzag — een webhook die twee keer afgaat, een ratelimiet die geraakt wordt tijdens een verkeerspiek, een API-versie die wordt uitgefaseerd. Elke kwetsbare integratie waarop je leunt, telt op bij de uiteindelijke rekening.
+
+**Er een getal op plakken**
+
+Beoordeel elke categorie van 0 (niet van toepassing) tot 3 (hoge complexiteit) voor jouw specifieke product. Een totaalscore van 4 of lager betekent doorgaans een herbouwbelasting van laag honderden tot laag duizenden euro's. Een score van 10 of hoger — gebruikelijk bij alles wat gezondheidszorg, financiën of multi-tenant B2B-data raakt — wijst doorgaans naar het hogere segment van typische productieopdrachten. Deze oefening zelf uitvoeren, zelfs ruwweg, verandert een abstracte angst in een concreet getal waar je op kunt plannen in plaats van er onder druk achter te komen.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: het €0-prototype dat bijna een bedrijf kostte

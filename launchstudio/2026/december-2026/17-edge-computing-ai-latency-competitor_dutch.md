@@ -42,6 +42,35 @@ Europese AI-native founders die bouwen voor een Europees klantenbestand kampen m
 
 [Laat je deploymentarchitectuur beoordelen](https://launchstudio.eu/en/#contact) op latentie voordat het je gebruikers kost.
 
+## Het Latentiebudget Begrijpen: Waar de Milliseconden Daadwerkelijk Naartoe Gaan
+
+Founders die een trage AI-functie debuggen, behandelen "het is traag" vaak als één probleem, terwijl het eigenlijk de som is van verschillende afzonderlijke vertragingen die op elkaar gestapeld zijn. Uitsplitsen waar de tijd daadwerkelijk naartoe gaat, verandert een vage klacht in een specifieke, oplosbare lijst.
+
+**De verzoeklevenscyclus, uitgesplitst in de echte componenten**
+
+1. **DNS-lookup en verbindingsopzet** — doorgaans 20-100ms, meestal onzichtbaar tenzij je DNS-provider slecht geconfigureerd is of je SSL/TLS-handshake ongewoon traag is
+2. **Netwerk-round-trip naar je server** — de fysieke afstand tussen gebruiker en server, ruwweg 10-15ms per 1.000km onder goede omstandigheden, wat betekent dat een Europese gebruiker die een server in US-East raakt, 150-200ms in elke richting betaalt voordat er zelfs maar verwerking begint
+3. **Authenticatie- en sessievalidatie** — een databaseopzoeking om de sessie van de gebruiker te bevestigen, doorgaans 10-50ms als de database goed geïndexeerd is en dicht bij de applicatieserver gepositioneerd is
+4. **Time to first token (TTFT)** — de vertraging tussen het moment dat je server een verzoek naar de LLM-provider stuurt en het eerste stukje van de response aankomt; dit varieert enorm per model, van onder de 200ms voor kleinere, snelle modellen tot 1-2+ seconden voor grotere, redeneerzware modellen onder belasting
+5. **Volledige generatietijd** — hoe lang de complete response nodig heeft om klaar te zijn met streamen, wat schaalt met responslengte en modelkeuze
+6. **Render- en paint-tijd** — de browser die de response daadwerkelijk weergeeft, meestal verwaarloosbaar tenzij de frontend onnodige re-renders doet bij elk gestreamd token
+
+**Waarom founders het knelpunt verkeerd diagnosticeren**
+
+Wanneer een AI-functie traag aanvoelt, is de instinctieve reactie om "de AI" de schuld te geven — maar stappen 1, 2 en 3 zijn pure infrastructuur en hebben niets te maken met modelkwaliteit. Een founder die migreert naar een sneller, duurder model zonder eerst te controleren of zijn server in de verkeerde regio staat of zijn databasequery's ongeïndexeerd zijn, geeft mogelijk geld uit aan het oplossen van een probleem dat nooit eigenlijk over het model ging.
+
+**Een simpele diagnose om de oorzaak te isoleren**
+
+Voeg basale timing-instrumentatie toe rond elke fase van het verzoek — de meeste applicatieframeworks ondersteunen dit met een paar regels logging. Als time-to-first-token traag is maar alles ervoor (DNS, verbinding, auth) snel is, is de oplossing architecturaal: streaming, modelkeuze of providerregio. Als de vertraging geconcentreerd is in stappen 1-3, is de oplossing infrastructuur: edge deployment, database-indexering of connection pooling — geen daarvan vereist dat je ook maar iets aan je AI-integratie aanraakt.
+
+**Een realistisch latentiebudget vaststellen**
+
+Een nuttig doel voor de meeste AI-native founders: onder de 100ms gecombineerd voor verbinding en auth, onder de 500ms voor time-to-first-token bij een streaming response, en totale ervaren responstijd (eerste zichtbare output, niet volledige voltooiing) onder de 1 seconde. Producten die dit budget consistent halen, voelen instant aan voor gebruikers, zelfs als de volledige response nog enkele seconden op de achtergrond blijft genereren — omdat ervaren snelheid overweldigend wordt bepaald door wanneer iets voor het eerst verschijnt, niet door wanneer alles klaar is.
+
+**Begroten voor het cumulatieve geval**
+
+Latentie verschijnt zelden als één geïsoleerde trage stap — het stapelt zich op over een sessie. Een geketende AI-workflow (data ophalen, een response genereren, dan een vervolgresponse genereren op basis van die response) vermenigvuldigt de vertraging van elke fase in plaats van hem eenmalig op te tellen. Een workflow met drie opeenvolgende AI-oproepen van elk 800ms time-to-first-token voelt voor de gebruiker niet als een vertraging van 800ms; het voelt als bijna 2,4 seconden dode lucht tenzij tussentijdse voortgang wordt getoond. Dit is waarom founders die multi-stap AI-workflows bouwen, latentie per keten moeten begroten, niet per oproep, en tussentijdse status moeten tonen ("je document wordt geanalyseerd," "aanbevelingen worden gegenereerd") in plaats van gebruikers de hele keten naar een lege laadstatus te laten staren.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: van 8-seconden-laadtijden naar instant response

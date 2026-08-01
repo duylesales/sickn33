@@ -13,6 +13,8 @@ Three pricing models that actually work: ✅
 
 The fix that saved him: reframe upgrade as MORE POWER, not a cutback. 🎯
 
+Not launched yet? Stress-test your cost model at 10x and 100x expected usage BEFORE you write any pricing copy. 🔍
+
 At **LaunchStudio**, backed by Manifera's engineering experience, we build the usage tracking AND billing infrastructure to price confidently. 🛡️
 
 His result: 6 of 8 heavy users upgraded happily. +18% revenue, zero new customers. 🚀

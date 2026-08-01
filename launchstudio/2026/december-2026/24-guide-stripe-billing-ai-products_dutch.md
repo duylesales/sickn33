@@ -36,6 +36,23 @@ Factureringsbugs zijn uniek schadelijk omdat ze direct met geld te maken hebben 
 
 [Praat met een engineer over je factureringsarchitectuur](https://launchstudio.eu/en/#calculator) voordat je eerste klacht over dubbele facturering binnenkomt.
 
+## Reconciliatie: Voorkomen dat Stripe en Je Database Uit Elkaar Drijven
+
+Zelfs een correct gebouwde, idempotente webhook-handler garandeert niet dat de database van je applicatie en de gegevens van Stripe voor altijd perfect gesynchroniseerd blijven. Drift ontstaat via paden die niets te maken hebben met bugs in je code, en de meeste door AI gegenereerde factureringsintegraties hebben geen mechanisme om dit te vangen.
+
+**Veelvoorkomende bronnen van drift die idempotente webhooks alleen niet voorkomen:**
+
+- **Handmatige wijzigingen rechtstreeks in het Stripe-dashboard.** Een supportmedewerker (of de founder) die handmatig een abonnement annuleert, terugbetaalt of aanpast in Stripe's dashboard, informeert je applicatie niet automatisch tenzij die specifieke actie ook een webhook triggert die je handler correct verwerkt — en het is makkelijk om te missen dat je elke mogelijke dashboardactie afdekt bij het bouwen van de handler.
+- **Webhook-leveringsfouten die Stripe's herhaalvenster overschrijden.** Stripe probeert mislukte webhook-leveringen opnieuw, maar niet oneindig. Een langdurige storing aan de kant van je applicatie — een deployment, een serverherstart op het verkeerde moment — kan ervoor zorgen dat een event uiteindelijk stopt met opnieuw proberen, waardoor je database permanent onbewust blijft van iets dat in Stripe is gebeurd.
+- **Racecondities tussen meerdere events voor dezelfde klant.** Als een klant upgradet en vervolgens meteen zijn plan downgradet, kunnen twee webhook-events aankomen in een volgorde die niet overeenkomt met de volgorde waarin de acties daadwerkelijk plaatsvonden, vooral bij netwerkvertragingen, wat ertoe leidt dat je database de verkeerde uiteindelijke status weerspiegelt.
+- **Klok- en tijdzonemismatches in trial- of factureringscyclus-logica.** Subtiele bugs in hoe je applicatie cyclusgrenzen berekent, versus hoe Stripe die intern berekent, kunnen ervoor zorgen dat toegang een dag te vroeg of te laat wordt verleend of ingetrokken — zelden catastrofaal op zich, maar een gestage bron van supporttickets.
+
+**De oplossing die de meeste productiefactureringssystemen uiteindelijk nodig hebben, is een periodieke reconciliatietaak**, los van de real-time webhook-handler, die op een schema draait (dagelijks is gebruikelijk) en het volgende doet: haalt de huidige status van elk actief abonnement rechtstreeks op uit Stripe's API, vergelijkt die met wat je eigen database gelooft dat waar is voor elke klant, en markeert — of corrigeert automatisch — elke gevonden mismatch. Deze taak vangt de fouten die webhooks, per ontwerp, niet kunnen vangen: die waarbij een event nooit aankwam of om te beginnen in de verkeerde volgorde aankwam.
+
+**Behandel Stripe als de bron van waarheid, niet je eigen database.** Wanneer reconciliatie een mismatch vindt, is de correcte oplossing in bijna elk geval om je database bij te werken zodat die overeenkomt met Stripe's gegevens, niet andersom — Stripe is het systeem van record voor wat daadwerkelijk in rekening is gebracht en wanneer, en je database is een cache van die informatie voor snelle toegang op applicatieniveau. De reconciliatietaak vanaf het begin met deze asymmetrie in gedachten bouwen, voorkomt een klasse bugs waarbij twee systemen het oneens zijn en geen van beide duidelijk gezaghebbend is.
+
+Stripe's eigen dashboardexports en rapportage-API's kunnen dit proces voeden in plaats van een volledig aangepaste synchronisatietaak vanaf nul te vereisen — voor de meeste AI-native founders is een geplande taak die Stripe's abonnementslijst ophaalt en vergelijkt met de applicatiedatabase een bescheiden toevoeging zodra de kernwebhook-handler al bestaat, geen tweede volledige integratie.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een dubbele-facturering-bug repareren voordat hij zich verspreidde

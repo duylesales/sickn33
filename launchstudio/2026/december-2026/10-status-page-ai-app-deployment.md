@@ -70,6 +70,36 @@ You do not need a dedicated DevOps engineer to have proper monitoring. Most mode
 
 [Talk to an engineer about your deployment architecture](https://launchstudio.eu/en/#contact) — before your first outage becomes your first churned customer.
 
+## Setting Realistic Uptime Targets Before You Need Them
+
+Most solo founders don't think about a Service Level Objective (SLO) until an outage forces the question. That's backwards — deciding what "acceptable" downtime looks like before an incident happens gives you a calm framework for decisions during one, instead of improvising while customers are already emailing you.
+
+**Pick an SLO you can actually defend**
+
+- 99.9% uptime allows roughly 43 minutes of downtime per month — a reasonable target for most early-stage AI SaaS products, including ones built on Lovable or Bolt with a single hosting provider
+- 99.99% (about 4 minutes per month) is enterprise-tier reliability, usually requiring redundant infrastructure across multiple regions — rarely worth the engineering cost for a founder with under a few hundred customers
+- An SLO you cannot realistically hit is worse than no SLO at all, because it creates a promise you will eventually break publicly
+
+**Build a severity ladder so you're not guessing mid-incident**
+
+1. **SEV-1** — the core product function is down for all users (nobody can log in, or the AI feature errors out for everyone)
+2. **SEV-2** — a subset of users or a secondary feature is affected (reminders are delayed, but core scheduling still works)
+3. **SEV-3** — a cosmetic or minor issue with no material impact on a customer's ability to use the product
+
+Each severity level should map to a response time and a communication obligation. A SEV-1 might require a status page update within 15 minutes and a direct email to affected customers within the hour. A SEV-3 can simply get logged and folded into the next deploy, with no public update needed at all.
+
+**Write your incident templates now, not during the incident**
+
+When something breaks at 2 AM, you don't want to be drafting your first customer-facing update from scratch while also trying to debug the actual problem. Pre-written templates for "investigating," "identified the cause," "monitoring a fix," and "resolved" save precious minutes during a live incident and prevent panicked, overly technical language from reaching customers who mostly just want reassurance that someone is aware and working on it.
+
+**Track your error budget like a resource, not an afterthought**
+
+An error budget is simply the inverse of your SLO: if your target is 99.9% uptime, your monthly error budget is that remaining 0.1%, or roughly 43 minutes. Once you frame downtime this way, it becomes a spendable resource rather than an abstract failure. A founder who tracks burn against that budget — even in a simple spreadsheet updated after each incident — can spot a worrying trend (three small outages eating half the monthly budget by day 10) long before it becomes a customer-visible crisis. This turns monitoring from a reactive alert system into a forward-looking planning tool.
+
+**Run a postmortem, even as a solo founder**
+
+After any SEV-1 or SEV-2 incident, write a short postmortem: what happened, how long it took to detect, how long it took to resolve, and what specific change prevents a repeat. This isn't a formality reserved for larger teams — it's the mechanism by which a solo founder's monitoring stack actually gets better over time, instead of quietly absorbing the same category of failure again and again.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Six-Hour Outage Nobody Noticed

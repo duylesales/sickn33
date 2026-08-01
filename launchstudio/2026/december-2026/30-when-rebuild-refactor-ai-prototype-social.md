@@ -12,6 +12,8 @@ The real question: WHICH of the 7 layers actually broke? 📊
 
 His "unfixable" prototype needed exactly 2 fixes: real per-user authentication + database isolation. Everything else — untouched.
 
+Free self-check before you pay anyone: pull your last month of bug fixes. Same 2-3 files keep reappearing? Refactor. Fixes scattered everywhere? That's your rebuild signal. 🔍
+
 At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we give an honest layer-by-layer assessment — even when it means a smaller (less profitable) engagement for us. 🛡️
 
 Result: relaunched in 9 days at 1/5 the rebuild quote. 🚀

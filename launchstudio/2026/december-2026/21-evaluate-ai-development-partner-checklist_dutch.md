@@ -57,6 +57,21 @@ Je hebt een werkend prototype en geen manier om te beoordelen of de persoon die 
 
 [Boek een introductiegesprek van 15 minuten](https://launchstudio.eu/en/#contact) en loop deze checklist direct door met een engineer.
 
+## De Antwoorden Verifiëren, Niet Alleen Verzamelen
+
+Alle 15 vragen stellen is alleen nuttig als je daadwerkelijk een goed antwoord kunt onderscheiden van een zelfverzekerd klinkend slecht antwoord. De meeste niet-technische founders kunnen een technische uitleg niet op zijn merites beoordelen, en dat is precies het gat dat een gepolijste maar onvoldoende gekwalificeerde partner zal uitbuiten. Verificatie, niet verhoor, is wat dat gat dicht.
+
+**Concrete manieren om te verifiëren in plaats van alleen te vragen:**
+
+- **Vraag om een referentie die je daadwerkelijk kunt bellen.** Geen testimonialquote op hun website — een introductie bij een eerdere klant die bereid is vijf minuten te praten over of de geleverde tijdlijn, prijs en kwaliteit overeenkwamen met wat beloofd was. Een partner die dit niet kan produceren na een positieve verkooppitch, zou vragen moeten oproepen.
+- **Vraag om een geanonimiseerd voor/na-codevoorbeeld te zien.** Je hoeft de code niet zelf te kunnen lezen om hier waarde uit te halen — stuur het naar een developer die je kent, zelfs een die niets met je project te maken heeft, en vraag of het eruitziet als bekwaam, gedocumenteerd werk of een gehaaste noodoplossing.
+- **Controleer op een echte, controleerbare bedrijfsregistratie.** In Nederland betekent dit een KVK-nummer dat je onafhankelijk kunt opzoeken. Een legitieme, gevestigde partner heeft er een en zal niet aarzelen als daarnaar gevraagd wordt; een informeel freelancercollectief soms wel.
+- **Neem een technisch onderlegde vriend mee naar het daadwerkelijke gesprek**, zelfs een die in een niet-gerelateerd vakgebied werkt, in plaats van volledig te vertrouwen op je eigen inschatting van hoe zelfverzekerd iets werd uitgelegd. Zelfvertrouwen en juistheid zijn niet hetzelfde signaal, en een tweede paar oren vangt vage non-antwoorden op die je anders misschien voor waar had aangenomen.
+- **Vraag om de schriftelijke scope voordat je iets betaalt**, en leg die naast wat mondeling was beloofd. Discrepanties tussen het verkoopgesprek en de schriftelijke scope zijn veel makkelijker op papier te herkennen dan in een snel gesprek, en een partner die weerstand biedt tegen het op schrift stellen van toezeggingen, vertelt je iets belangrijks.
+- **Zoek onafhankelijk naar de bedrijfsnaam plus "review" of "klacht"**, in plaats van volledig te vertrouwen op testimonials die de partner zelf heeft geselecteerd en gepubliceerd. Een volledige afwezigheid van enig onafhankelijk spoor, voor een zogenaamd gevestigde partner, is op zichzelf al veelzeggend.
+
+**Het patroon dat het waard is om bij al deze punten in de gaten te houden:** een partner die zelfverzekerd genoeg is over het eigen trackrecord om verificatie makkelijk te maken — proactief referenties aanbieden, zonder aarzelen een KVK-nummer produceren, een technische vriend verwelkomen op het gesprek — gedraagt zich heel anders dan iemand die afleidt, uitstelt, of licht defensief wordt als er gevraagd wordt een claim te onderbouwen. De defensiviteit zelf is vaak veelzeggender dan wat ze daadwerkelijk zeggen in antwoord op de oorspronkelijke 15 vragen.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de checklist die een slechte aanwerving voorkwam

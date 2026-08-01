@@ -13,6 +13,7 @@ The cheap fix: ✅
 ✅ Add a simple thumbs up/down (near-zero engineering cost)
 ✅ Weekly manual review of 10-20 real outputs
 ✅ Cost dashboards to catch anomalies early
+✅ Alert on failure RATE (>5% in 15 min), not every single AI hiccup — the fix for alert fatigue
 
 At **LaunchStudio**, backed by Manifera's monitoring experience across 160+ projects, we build all 3 layers in. His fix: caught in 2 weeks via user feedback, not months of silent decay. 🛡️🚀
 

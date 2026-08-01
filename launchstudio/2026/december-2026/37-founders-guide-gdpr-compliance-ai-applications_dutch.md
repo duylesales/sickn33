@@ -40,6 +40,30 @@ Niet-naleving van de AVG brengt echt financieel en reputatierisico met zich mee,
 
 [Laat de AVG-positie van je AI-applicatie beoordelen](https://launchstudio.eu/en/#contact) voordat het inkoopteam van een klant een vraag stelt die je niet zelfverzekerd kunt beantwoorden.
 
+## Data Protection Impact Assessments: Wanneer AI-verwerking er Daadwerkelijk Een Vereist
+
+Naast de fundamentele stappen die al zijn behandeld, bevat de AVG een specifieke, formele verplichting die veel AI-native founders overvalt: een Data Protection Impact Assessment (DPIA) is wettelijk verplicht onder Artikel 35 wanneer een type verwerking "waarschijnlijk een hoog risico" oplevert voor de rechten van individuen — en verschillende patronen die gangbaar zijn bij AI-applicaties triggeren specifiek deze drempel, zelfs voor overigens kleinschalige producten.
+
+**Situaties die doorgaans een DPIA-vereiste triggeren voor AI-applicaties:**
+
+- **Systematische en uitgebreide geautomatiseerde verwerking gebruikt om beslissingen met juridische of vergelijkbaar significante effecten te nemen** — een AI-tool die sollicitanten screent, kredietwaardigheid scoort of geschiktheidsbeslissingen neemt, valt hier recht in, direct relevant voor elke founder die HR-tech, fintech of vergelijkbare consequentiële AI-beslissingsondersteunende tools bouwt
+- **Grootschalige verwerking van bijzondere categorieën gegevens** — gezondheidsinformatie, biometrische gegevens, gegevens die politieke opvattingen of religieuze overtuigingen onthullen, en vergelijkbare gevoelige categorieën kennen een materieel hogere compliance-lat dan algemene persoonsgegevens, inclusief expliciete toestemmingsvereisten in de meeste gevallen
+- **Systematische monitoring van individuen**, inclusief sommige AI-gedreven analytics- of gedragstrackinggevallen
+- **Innovatief gebruik van nieuwe technologie** waarvan de risico's nog niet goed begrepen zijn — een criterium waarvan toezichthouders expliciet hebben aangegeven dat het op veel nieuwe AI-applicaties van toepassing is, simpelweg omdat het risicoprofiel van een nieuwe AI-capaciteit nog niet door precedent is vastgesteld
+
+**Wat een DPIA op praktisch niveau daadwerkelijk inhoudt:**
+
+1. Een beschrijving van de specifieke verwerkingsactiviteit en het doel ervan
+2. Een beoordeling van of de verwerking daadwerkelijk noodzakelijk en proportioneel is ten opzichte van dat doel
+3. Een beoordeling van risico's voor de rechten en vrijheden van individuen die specifiek voortvloeien uit de verwerking
+4. Gedocumenteerde maatregelen genomen om de geïdentificeerde risico's aan te pakken en te beperken
+
+Dit hoeft voor de meeste vroege-fase AI-SaaS-producten geen intimiderende juridische exercitie te zijn — voor velen is het een gefocust document van een paar pagina's dat dwingt tot daadwerkelijk nuttig nadenken over wat er mis kan gaan en hoe dat wordt beperkt, in plaats van een bureaucratische formaliteit. Het risico zit niet in het papierwerk zelf; het zit in het volledig overslaan van de exercitie en pas een daadwerkelijk hoog-risico verwerkingspatroon ontdekken (zoals geautomatiseerde kandidaatscreening, direct relevant voor het PersoneelScreen-voorbeeld hieronder) nadat een toezichthouder, het inkoopteam van een klant, of een betrokken individu de vraag als eerste stelt.
+
+**Geautomatiseerde besluitvorming kent zijn eigen aanvullende laag.** Los van de DPIA-vraag beperkt Artikel 22 van de AVG beslissingen "uitsluitend gebaseerd op geautomatiseerde verwerking" die juridische of vergelijkbaar significante effecten hebben, wat over het algemeen een betekenisvolle menselijke beoordelingsstap in de lus vereist voor elke AI-functie die consequentiële beslissingen over individuen neemt — een ontwerpoverweging die het waard is om vanaf het begin in te bouwen in plaats van achteraf te retrofitten na een uitdaging van een betrokken gebruiker.
+
+**Registers van verwerkingsactiviteiten (ROPA) zijn een gerelateerde, makkelijker over het hoofd te ziene verplichting.** Artikel 30 vereist dat de meeste organisaties een schriftelijk register bijhouden van welke persoonsgegevens worden verwerkt, met welk doel, en met welke derde partijen — inclusief AI-providers, die voor dit doel als verwerkers gelden. Voor een AI-native founder betekent dit doorgaans het documenteren van elke afzonderlijke AI-verwerkingsactiviteit (welke klantgegevens naar welke AI-provider worden gestuurd, voor welke functie, hoe lang bewaard) in één bijgehouden document. Founders ontdekken deze verplichting vaak op dezelfde manier als Vera dat deed met haar DVO — tijdens een inkoop- of auditgesprek waarin een specifieke vraag niet ter plekke beantwoord kan worden — ook al is het bijhouden van het register zelf doorgaans een bescheiden documentatie-oefening in plaats van een significante technische onderneming, en een die natuurlijk aansluit bij de datastroommapping die al nodig is voor het bovenstaande DPIA-proces.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: slagen voor de compliancebeoordeling van een B2B-klant

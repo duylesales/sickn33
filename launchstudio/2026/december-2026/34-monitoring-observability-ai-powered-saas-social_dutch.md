@@ -13,6 +13,7 @@ De goedkope oplossing: ✅
 ✅ Voeg een simpele duim omhoog/omlaag toe (bijna nul engineeringkosten)
 ✅ Wekelijkse handmatige beoordeling van 10-20 echte outputs
 ✅ Kostendashboards om anomalieën vroeg te vangen
+✅ Alert op foutPERCENTAGE (>5% binnen 15 min), niet elke losse AI-hapering — de oplossing tegen alertmoeheid
 
 Bij **LaunchStudio**, gesteund door Manifera's monitoringervaring over 160+ projecten, bouwen we alle 3 lagen in. Zijn oplossing: gevangen binnen 2 weken via gebruikersfeedback, geen maanden stille aftakeling. 🛡️🚀
 

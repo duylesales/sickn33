@@ -70,6 +70,21 @@ This is precisely what [LaunchStudio's](https://launchstudio.eu/en/) Launch & Gr
 
 [Set up ongoing support before launch, not after the first crisis](https://launchstudio.eu/en/#calculator) — post-launch operational needs are as real and as worth planning for as the launch itself.
 
+## The Specific Metrics Worth Setting Thresholds For, Not Just Watching
+
+The daily, weekly, and monthly checklist above tells you what to look at; it's equally useful to know what numbers on each of those dashboards should actually trigger concern versus what's normal variation, since founders new to running a live product often either panic at normal fluctuation or, worse, miss a genuine problem because nothing about it looked alarming in isolation.
+
+**Reasonable starting thresholds for a small, early-stage AI SaaS:**
+- **Uptime:** below 99% over a rolling 30 days is worth investigating the cause, even if no customer has complained yet — at low customer counts, outages during off-hours can go unnoticed by users while still representing a real reliability gap.
+- **API error rate:** a sudden jump above roughly 1-2% of requests failing, relative to your own established baseline, usually indicates something changed — a provider outage, a bug in a recent deployment, or a dependency issue — worth same-day investigation rather than waiting for the weekly review.
+- **AI cost per active user:** track this number specifically, not just total AI spend, since total spend rising alongside user growth is expected and healthy, while cost-per-user rising is the specific signal of the margin drift covered in earlier pricing guidance.
+- **Failed payment rate:** a small baseline of failed payments, such as expired cards or insufficient funds, is normal, but a rate meaningfully above your historical baseline can indicate a payment processor integration issue rather than simply unlucky customers.
+- **Support response time:** in the first months especially, aim to keep first-response time under a few hours during business hours — early customers extend more patience for occasional bugs than for a support message that goes unanswered for days.
+
+**Building a lightweight incident response habit, even solo:** when a threshold above is actually crossed, a short, consistent response pattern beats an improvised one each time: acknowledge the issue, even just to yourself in a running log, assess whether customers are currently affected, fix or mitigate the immediate problem, then do a brief retrospective on why it happened and whether a threshold or monitor should be adjusted to catch it earlier next time. This doesn't need formal tooling at small scale — a simple shared document tracking what broke, when, why, and what changed builds an institutional memory that prevents the same failure from recurring silently for weeks or months at a time.
+
+**Why thresholds matter more than raw monitoring:** monitoring without thresholds just produces dashboards nobody has time to interpret meaningfully; a specific number that triggers a specific action turns monitoring from passive observation into an actual operational safeguard, which is the difference between noticing a problem the day it starts and discovering it by accident, well after the fact, once a customer or a stalled process forces the issue.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Learning the Post-Launch Reality the Hard Way, Then Fixing It

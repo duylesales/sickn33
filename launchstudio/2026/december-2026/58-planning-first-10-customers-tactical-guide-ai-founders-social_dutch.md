@@ -13,6 +13,8 @@ Founders behandelen hun eerste 10 klanten als klant #1.000 — advertenties, fun
 ✅ Verschijn waar je niche zich al verzamelt (Slack, forums, evenementen)
 ✅ Overtref op responsiviteit — los bugs dezelfde dag op
 
+📝 Houd meer bij dan een onderbuikgevoel per gesprek: hun exacte woorden voor het probleem, het exacte moment waarop aarzeling opduikt, en hun specifieke prijsreactie. Eén spreadsheetrij per gesprek — minder dan 2 minuten — wordt een patroonherkenningsinstrument dat geen enkel gesprek je alleen kan geven.
+
 Bij **LaunchStudio** zorgen we ervoor dat je product deze persoonlijke, hoge-controle-fase overleeft — betrouwbaar, veilig, lanceerklaar — gesteund door Manifera's 160+ opgeleverde projecten. 🛡️
 
 Zijn resultaat: 10 klanten, 3 weken, één lijst van 40 namen, nul advertentiebudget. 🚀

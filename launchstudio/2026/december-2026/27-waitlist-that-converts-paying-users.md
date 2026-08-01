@@ -59,6 +59,25 @@ This last point is where many AI-native founders stumble: they build an impressi
 
 [Get your product launch-ready](https://launchstudio.eu/en/#calculator) before you email your waitlist — you rarely get a second first impression with your most engaged audience.
 
+## The Pre-Launch Nurture Sequence: Keeping a Waitlist Warm Without Burning It Out
+
+Getting someone to join your waitlist is the easy part. Keeping their attention and intent alive for the weeks or months between signup and launch — without annoying them into unsubscribing or simply forgetting why they signed up — requires a deliberate email cadence, not a single "thanks for joining" message followed by silence until launch day.
+
+### What to Actually Send, and When
+- **Immediately after signup**: A confirmation that also asks your qualifying question if you haven't already, plus a realistic timeline expectation ("we expect to launch in roughly 6 weeks") so people aren't left guessing
+- **Every 2-3 weeks during the wait**: A short, genuine update — a specific feature decision you made based on their feedback, a screenshot of real progress, or an answer to a common question raised by multiple signups. The goal is demonstrating momentum, not manufacturing content for its own sake
+- **One to two weeks before launch**: A "we're close" message that sets a specific date if you have one, building anticipation without over-promising a date you might miss
+- **Launch day itself**: The conversion email, ideally personalized by segment rather than one identical blast to everyone
+
+### Segmenting Your Nurture Content, Not Just Your Launch Email
+Founders who ask a qualifying question at signup have real data to segment nurture content by, not just launch messaging. A signup who mentioned pricing sensitivity responds better to an update emphasizing value and return on investment; a signup who mentioned a specific missing feature responds better to an update on exactly that feature's progress. This segmented nurture approach costs little extra effort if you're already collecting qualifying answers, and it meaningfully increases the odds someone still remembers and cares about your product by the time you actually launch.
+
+### The Over-Communication Trap
+The opposite failure — emailing too frequently with low-substance updates — trains your most valuable, most engaged signups to stop opening your emails before launch day even arrives, which is precisely the audience you most need paying attention when the conversion email lands. If you don't have a genuine update worth sending, it's better to skip that cycle than to send filler that erodes open rates for the message that actually matters.
+
+### Reactivating Signups Who've Gone Quiet
+Some portion of any waitlist stops opening emails weeks before launch, not because they're uninterested but because life moved on. A short, low-pressure "still interested?" message sent shortly before your launch email, distinct from the launch email itself, can meaningfully re-engage a portion of this quiet segment — giving you a second chance to reach people your standard nurture cadence alone would have lost by launch day. Combined with the qualifying-question data and segmentation described above, this nurture sequence is what turns a static list of email addresses into an audience that actually arrives at launch day still informed, still interested, and still ready to pay.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Turning 180 Qualified Signups Into 61 Paying Customers

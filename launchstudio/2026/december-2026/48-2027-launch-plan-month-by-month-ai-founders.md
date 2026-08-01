@@ -61,6 +61,22 @@ This plan assumes reasonably focused, consistent effort across three months — 
 
 [Start your Month 3](https://launchstudio.eu/en/#contact) whenever your prototype is validated and ready — Manifera's 120+ engineers are positioned to execute the production phase in one to three weeks once you reach it.
 
+## Budgeting the Full Quarter: What Each Month Actually Costs
+
+The plan above focuses on sequence and timing, but founders following it also need a realistic sense of what each phase costs financially, not just how long it takes.
+
+**Month 1 costs are primarily time, not money.** Customer conversations cost nothing beyond your own time, though founders sometimes underestimate how many outreach attempts it takes to land 10-15 real conversations — budgeting for 30-40 outreach attempts to get that many actual conversations is more realistic than assuming a 1:1 response rate. An AI coding tool subscription (Lovable, Bolt, v0, or Cursor) typically runs €20-100/month depending on usage tier, the only real cash outlay this month.
+
+**Month 2 costs remain modest but start to include small validation expenses.** Continued AI tool subscription costs carry over. Some founders budget a small amount, €100-300, for incentives to get more thorough feedback from prospects — a coffee, a small gift card, or simply more of their own time invested in structured feedback sessions rather than casual conversations.
+
+**Month 3 is where the primary cash outlay occurs.** This is the production engineering phase, and LaunchStudio's fixed-price packages span roughly €800-€7,500 depending on scope — a simple single-tenant tool with basic authentication and payments sits toward the lower end, while multi-tenant products with complex compliance or payment-escrow needs, as covered in the case study compilation elsewhere on this site, sit toward the higher end. Hosting costs going forward are typically modest for an early-stage product, often €20-100/month depending on the specific infrastructure choices made during the production build.
+
+**A realistic total quarter budget for most solo AI-native founders following this plan falls in the range of €1,000-€8,000**, heavily weighted toward the Month 3 production phase, with Months 1-2 consuming primarily time rather than significant cash. Founders working with genuinely minimal budgets should have an honest conversation early, ideally during the Month 2 scoping call rather than waiting until Month 3, about which package tier realistically fits, since a clear, fixed number early avoids the sunk-cost pressure of having completed Months 1-2 only to discover Month 3 is unaffordable.
+
+**Ongoing costs after launch** — hosting, AI API usage costs that scale with customers, any third-party services like email or analytics — typically stay modest for the first several months of a small paying customer base, but founders should budget for these as recurring monthly costs from day one of being live, not as an afterthought discovered on the first invoice.
+
+Treating the quarter as a financial plan alongside a time plan — knowing roughly what each month costs, not just how long it takes — is what lets a founder commit to the plan with genuine confidence rather than discovering a budget shortfall midway through, precisely the kind of avoidable disruption that turns a three-month plan into another stalled "almost ready" project.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Following the Plan to the Letter

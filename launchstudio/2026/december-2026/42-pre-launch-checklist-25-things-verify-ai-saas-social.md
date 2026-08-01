@@ -8,6 +8,8 @@ The night before launch is NOT when you want to discover your database has no ba
 🤖 AI reliability (4 items): cost tracking, fallbacks, edge cases tested, usage limits
 📊 Monitoring (5 items): uptime alerts, error tracking, status page, tested as a stranger would
 
+⚖️ Not all 25 items weigh the same: financial/health data? Backups + deletion + tax handling get extra scrutiny. Marketplace app? Test tenant isolation ACROSS roles, not just two same-role accounts.
+
 Most polished AI prototypes satisfy only a HANDFUL of these 25 by default. 📉
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production discipline, we verify all 25 as standard — before you announce a launch date, not after a crisis. 🛡️🚀

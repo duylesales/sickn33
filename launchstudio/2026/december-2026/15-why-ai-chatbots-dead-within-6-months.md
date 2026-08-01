@@ -67,6 +67,34 @@ This is the exact gap [LaunchStudio](https://launchstudio.eu/en/) closes for cha
 
 [Talk to an engineer about your chatbot's production readiness](https://launchstudio.eu/en/#contact) before API costs or a silent outage kill it quietly.
 
+## Building a Token Budget: The Math Behind Sustainable Chatbot Pricing
+
+Most chatbot founders price their product before they've done the arithmetic on what a conversation actually costs to run. That arithmetic is not complicated, and doing it before launch is the difference between a sustainable pricing model and a CareerBuddy-style scramble.
+
+**The core unit economics**
+
+Every message exchange consumes tokens on both sides: the input (the user's message plus all prior conversation history you're sending for context) and the output (the model's response). LLM providers price per million tokens, typically with input tokens cheaper than output tokens. A single "simple" exchange might cost a fraction of a cent — but the number that actually matters is the cost of a full conversation, not one message.
+
+**Why context re-sending is the hidden multiplier**
+
+Here's the part most AI-generated chatbot prototypes get wrong: many implementations resend the entire conversation history with every new message, so a user's 20th message in a session pays for tokens covering all 19 previous exchanges, not just the new one. A conversation that feels like "one back-and-forth" to the user can silently cost 10-15x more in tokens by the end than it did at message one. This compounding effect is precisely why a viral spike can generate bills wildly disproportionate to the number of new users.
+
+**A rough budgeting framework**
+
+1. **Estimate average messages per conversation** for your specific use case — a quick Q&A bot might average 3-5 messages; an open-ended coaching or advisory bot (like CareerBuddy) can easily average 20-40
+2. **Estimate average tokens per message**, factoring in that later messages in long conversations carry more accumulated context
+3. **Multiply by your expected active users per month**, including a buffer for unexpected spikes — viral growth is a cost event, not just a growth event, if your pricing doesn't scale with it
+4. **Compare the resulting cost per active user against your planned price per user** — if API cost alone exceeds a meaningful fraction of your subscription price, your margin is fragile before you've even accounted for hosting, support, or your own time
+
+**Techniques that measurably reduce this cost**
+
+- **Summarizing older context** instead of resending full history verbatim, once a conversation passes a certain length
+- **Capping free-tier message counts** per month, which limits worst-case exposure per user rather than relying on goodwill
+- **Routing simple queries to a smaller, cheaper model** and reserving the larger model for genuinely complex requests
+- **Caching common opening exchanges** (greetings, FAQ-style questions) rather than generating fresh responses every time
+
+Doing this math before launch — not after your first viral moment — is what separates a chatbot with a real business model from one that's one unexpected traffic spike away from a five-figure bill with no revenue to offset it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Chatbot That Almost Bankrupted Itself

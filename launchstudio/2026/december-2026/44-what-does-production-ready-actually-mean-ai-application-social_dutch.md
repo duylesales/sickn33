@@ -11,6 +11,8 @@ Wat het NIET betekent: functievolledig, "perfect," of enterprise-grade voor 50 k
 
 Waarom AI-demo's klaar aanvoelen maar dat meestal niet zijn: nooit getest met 2+ gelijktijdige gebruikers, minimale beveiliging, nul monitoringplan — ondanks er gepolijst uitzien. 📉
 
+🧪 De test: 5-10 gesimuleerde gelijktijdige verzoeken onthullen bugs die solo sequentieel testen NOOIT aan het licht brengt. Precies het gat waar Bas in trapte.
+
 Bij **LaunchStudio**, gesteund door Manifera's zakelijke leverervaring, beoordelen we tegen alle 4 pijlers voordat je lanceert. 🛡️🚀
 
 👉 Lees de concrete definitie van productieklaar: [Link naar artikel]

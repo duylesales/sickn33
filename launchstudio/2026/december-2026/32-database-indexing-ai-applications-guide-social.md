@@ -13,6 +13,8 @@ The indexing checklist: ✅
 4️⃣ Monitor slow-query logs after launch
 5️⃣ Don't over-index — every index adds write overhead
 
+Don't just assume your index works — run `EXPLAIN ANALYZE`. "Seq Scan" on a query you thought was indexed means it's silently doing nothing. 🔍
+
 At **LaunchStudio**, backed by Manifera's database expertise across PostgreSQL, MongoDB & MySQL, we catch this before it becomes a crisis. 🛡️
 
 His fix: 6-8 seconds → under 200ms. One day of work. Zero frontend changes. 🚀

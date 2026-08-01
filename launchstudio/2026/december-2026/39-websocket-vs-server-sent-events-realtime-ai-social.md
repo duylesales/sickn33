@@ -13,6 +13,8 @@ The simple decision framework: ✅
 1️⃣ Browser needs to send data continuously? → WebSocket
 2️⃣ Purely "server sends, browser displays"? → SSE
 
+⚠️ Bonus gotcha: AI-generated WebSocket code frequently skips reconnection logic entirely — works fine in testing, fails silently for real users on flaky connections
+
 At **LaunchStudio**, backed by Manifera's full-stack experience, we match the right tech to your actual interaction pattern — before scaling makes the wrong choice expensive to unwind. 🛡️
 
 Her result: -40% hosting cost, zero change to the user experience. 🚀

@@ -48,6 +48,21 @@ Later migreren tussen deze platforms, hoewel niet triviaal, is over het algemeen
 
 [Laat je hostingarchitectuur aanbevelen](https://launchstudio.eu/en/#contact) gebaseerd op de echte vereisten van jouw specifieke AI-applicatie.
 
+## Database en Opslag: De Beslissing die Schuilgaat Achter de Hostingbeslissing
+
+Kiezen tussen Vercel, Railway, en Fly.io beantwoordt waar de rekenkracht van je applicatie draait, maar laat doelbewust een tweede, even consequente beslissing open: waar je database en bestandsopslag daadwerkelijk leven, aangezien geen van deze drie platforms in de eerste plaats databaseproducten zijn, en het koppelen van de verkeerde databasedienst aan je rekenkeuze creëert zijn eigen latentie- en kostenproblemen los van welk hostingplatform je koos.
+
+**Veelvoorkomende koppelingen die goed werken:**
+- **Vercel + Supabase of Neon** — beide bieden genereuze gratis tiers geschikt voor validatie in een vroeg stadium, en beide worden vaak gebruikt naast Vercel specifiek omdat hun connection pooling is ontworpen om het connectie-per-aanroep-patroon af te handelen dat serverless functions creëren, wat een traditionele databaseverbindingsopzet slecht afhandelt.
+- **Railway + door Railway gehoste Postgres** — Railway's eigen geïntegreerde databaseaanbod houdt je rekenkracht en database fysiek dicht bij elkaar, wat de netwerklatentie tussen applicatie en database minimaliseert die anders kan oplopen over veel query's per verzoek, en vereenvoudigt configuratie aangezien het beheerd wordt binnen hetzelfde platform.
+- **Fly.io + Fly Postgres of een regionaal gedistribueerde database** — aangezien Fly.io's kernwaardepropositie is om rekenkracht wereldwijd dicht bij gebruikers te draaien, kan het koppelen ervan aan een database die niet vergelijkbaar gedistribueerd is, het latentievoordeel volledig ondermijnen; een founder die rekenkracht over drie continenten deployt maar een database in één regio bevraagt, heeft slechts de helft van het latentieprobleem opgelost.
+
+**De fout die specifiek de moeite waard is om te vermijden:** "serverless functions" en "connectie-per-verzoek-databasetoegang" behandelen als automatisch compatibel. Een traditioneel databaseverbindingspatroon — open een persistente verbinding, hergebruik hem — vertaalt zich niet netjes naar serverless functions die per verzoek op- en afstarten. Zonder een connection pooler die specifiek hiervoor is ontworpen, zoals de gepoolde verbindingsmodus van Supabase of Neon, kan een serverless AI-applicatie de maximale verbindingslimiet van zijn database uitputten onder echte gelijktijdige belasting op een manier die nooit naar boven kwam tijdens ontwikkelingstests met één gebruiker.
+
+**Bestands- en media-opslag is een gerelateerde, aparte beslissing.** Als je AI-applicatie afbeeldingen, documenten, of andere bestanden genereert of opslaat, niet alleen gestructureerde databaserijen, leeft die opslag doorgaans in een toegewijde object-opslagdienst zoals Supabase Storage, Cloudflare R2, of AWS S3, in plaats van je rekenplatform of database — een detail dat makkelijk over het hoofd wordt gezien wanneer je vooral gefocust bent op de hierboven behandelde rekenhostingbeslissing, maar een die zijn eigen kostenstructuur heeft (opslagvolume en bandbreedte) die het waard is te controleren tegen je daadwerkelijke gebruikspatroon voordat het een verrassende regel op de rekening wordt.
+
+**De praktische volgorde:** kies eerst je rekenplatform met het bovenstaande kader, kies dan een database- en opslagkoppeling waarvan bekend is dat die goed werkt met dat specifieke platform, in plaats van de twee beslissingen geïsoleerd te nemen en pas een incompatibiliteit te ontdekken, zoals het bovenstaande connection-pooling-probleem, nadat echte gebruikers echte gelijktijdige belasting creëren.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: migreren van een slecht passende platformkeuze

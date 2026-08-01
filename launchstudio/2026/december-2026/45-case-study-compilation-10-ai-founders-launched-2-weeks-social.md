@@ -8,6 +8,8 @@ Two weeks sounds aggressive — until you see it happen 10 times across industri
 ✅ Bart (Barneveld) — poultry compliance reporting, live in 14 days
 ...and 6 more, every one production-ready in under 2 weeks.
 
+📊 The real driver of timeline? Not industry, not the AI tool used (Lovable/Bolt/v0/Cursor showed ZERO correlation) — it's data sensitivity + business logic. Healthcare-adjacent data alone added 2-3 days across the board.
+
 Bonus: Ivo had just 9 DAYS before a make-or-break wine conference demo. LaunchStudio scoped ruthlessly — only what the demo needed — and shipped 5 days ahead. He signed 14 vineyard owners live, on the spot. 🍷
 
 At **LaunchStudio**, backed by Manifera's 120+ engineers and 160+ delivered projects, the process is industry-agnostic — it's the infrastructure layer that's consistent, not your business domain. 🛡️🚀

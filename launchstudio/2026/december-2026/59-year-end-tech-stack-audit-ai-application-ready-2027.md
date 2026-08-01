@@ -65,6 +65,26 @@ An audit that doesn't lead to prioritized action is just anxiety-inducing homewo
 
 [Book a year-end technical audit](https://launchstudio.eu/en/#contact) — enter 2027 with clarity instead of assumptions about your stack's actual health.
 
+## A Simple Framework for Prioritizing What the Audit Finds
+
+An audit across five distinct dimensions — security, cost, technical debt, architecture currency, and compliance — can easily surface fifteen or twenty individual findings. The genuinely useful step after that point is triaging them into a prioritized order, since a long undifferentiated list is exactly the kind of anxiety-inducing homework the earlier section warns against.
+
+**A practical two-axis scoring approach:** score each finding on two simple dimensions, roughly 1-3 each.
+- **Impact if left unaddressed** — 1 is minor or cosmetic, 2 is a real cost or user experience effect, 3 is a security exposure, data loss risk, or significant recurring cost.
+- **Effort to fix** — 1 is hours, 2 is days, 3 is a substantial scoped project.
+
+**What to do with each combination:**
+- **High impact, low effort (3/1 or 2/1):** fix immediately, before anything else — these are the "why wasn't this already done" items that provide disproportionate value for minimal work, like a model migration that takes modest effort relative to the ongoing savings it unlocks.
+- **High impact, high effort (3/3):** these become planned projects with their own proper scoping and timeline, not weekend fixes — treat them with the same deliberateness as the original production launch itself, rather than squeezing them in alongside regular operations.
+- **Low impact, low effort (1/1):** batch these together and clear them in a single low-stakes cleanup session rather than treating each individually — the value here is more about reducing accumulated small friction than any single item mattering much on its own.
+- **Low impact, high effort (1/3):** usually the correct call is to explicitly deprioritize these, documented as a conscious "not now" decision rather than silently forgotten — revisit at the next audit rather than letting them quietly consume time disproportionate to their actual importance.
+
+**Why this matters more for a solo or small-team founder than it might for a larger organization:** a larger company might have separate people or budget lines for security work, cost optimization, and technical debt simultaneously; a founder running lean has to sequence these against each other and against ongoing product work, making the relative prioritization between findings more consequential than it would be for a team that could simply address everything in parallel.
+
+**A concrete rule of thumb:** address every 3/1 and 3/2 finding within the following month, schedule 3/3 findings as a proper project within the following quarter, and let 1/1 and 1/2 findings accumulate into a single batched cleanup rather than context-switching for each individually. This turns a potentially overwhelming audit output into a manageable, sequenced plan, which is the entire point of running the audit in the first place, rather than producing a list that generates anxiety without a clear next action.
+
+**One additional check worth applying to the scoring itself:** be honest about whether a low-effort estimate is genuinely low-effort, or whether it only looks that way until someone actually starts the work. A "quick fix" to tenant isolation, for instance, can turn out to touch far more of the codebase than a first glance suggests, once the actual data access patterns are traced through. Treating the initial 1-3 effort score as a working estimate rather than a fixed commitment, and adjusting it once real investigation begins, keeps the prioritization framework honest rather than optimistic.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Routine Audit That Surfaced a Real Cost Problem

@@ -12,6 +12,8 @@ De echte vraag: WELKE van de 7 lagen is daadwerkelijk kapot? 📊
 
 Zijn "onherstelbare" prototype had precies 2 reparaties nodig: echte authenticatie per gebruiker + database-isolatie. Al de rest — onaangeroerd.
 
+Gratis zelfcheck voordat je iemand betaalt: pak je bugfixes van de afgelopen maand erbij. Blijven dezelfde 2-3 bestanden terugkomen? Refactor. Reparaties overal verspreid? Dat is je rebuild-signaal. 🔍
+
 Bij **LaunchStudio**, gesteund door Manifera's 160+ geleverde projecten, geven we een eerlijke laag-voor-laag-beoordeling — zelfs als dat een kleinere (minder winstgevende) opdracht voor ons betekent. 🛡️
 
 Resultaat: gerelanceerd in 9 dagen tegen 1/5 van de herbouwofferte. 🚀

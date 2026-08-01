@@ -45,6 +45,22 @@ Een correct geïmplementeerd Mollie-abonnementssysteem, met correcte webhook-afh
 
 [Laat je Mollie-integratie scopen](https://launchstudio.eu/en/#calculator) voor jouw specifieke abonnements- of betaalmodel.
 
+## Omgaan met Mislukte en Geweigerde Terugkerende Betalingen onder Mollie's Mandaatsysteem
+
+Creditcard-abonnementsfacturatie heeft een goed begrepen faalmodus: een kaart wordt geweigerd, en standaard dunning-logica probeert de afschrijving een paar keer opnieuw over meerdere dagen voordat het wordt opgegeven. Mollie's mandaatgebaseerde systeem voor terugkerende betalingen voor iDEAL en vergelijkbare lokale betaalmethoden gedraagt zich anders, op manieren die ertoe doen voor hoe je je abonnementsverlengingslogica bouwt.
+
+### Waarom Mandaatgebaseerde Afschrijvingen Anders Falen dan Kaartafschrijvingen
+Een kaartafschrijving mislukt doorgaans door onvoldoende saldo of een verlopen kaart, en het uren of dagen later opnieuw proberen slaagt vaak zodra het onderliggende probleem is opgelost. Een mandaatgebaseerde terugkerende afschrijving onder iDEAL hangt af van of de bank van de klant de doorlopende autorisatie blijft honoreren, en bepaalde banken leggen hun eigen limieten of periodieke herauthenticatie-eisen op aan terugkerende mandaatafschrijvingen die niet bestaan in de kaartwereld — wat betekent dat een simpele "probeer dezelfde afschrijving over drie dagen opnieuw"-strategie, rechtstreeks overgenomen uit kaartgebaseerde dunning-logica, niet netjes overeenkomt met hoe mandaatstoringen zich daadwerkelijk gedragen.
+
+### Dunning-logica Bouwen die Hier Rekening Mee Houdt
+- **Onderscheid faalredenen waar mogelijk**: Mollie's webhook-payloads bevatten status- en, waar beschikbaar, faalreden-informatie — logica die elke storing identiek behandelt, mist de kans om een storing "mandaat moet opnieuw geautoriseerd worden" anders te behandelen dan een echt tijdelijk probleem aan de bankzijde
+- **Vraag om herautorisatie in plaats van blind opnieuw te proberen**: Wanneer het mandaat zelf het probleem lijkt te zijn in plaats van een voorbijgaande kwestie, is het effectievere herstelpad de klant e-mailen om een nieuwe autorisatie te voltooien (een kleine nieuwe betaling die het mandaat opnieuw vestigt) in plaats van herhaaldelijk een afschrijving te proberen tegen een mandaat dat mogelijk niet meer geldig is
+- **Stel een respijtperiode in vóór dienstonderbreking**: Geef klanten een vastgesteld aantal dagen met een duidelijke, directe e-mail die precies uitlegt wat er is gebeurd en wat te doen, voordat je toegang opschort — Nederlandse klanten reageren met name goed op directe, duidelijke communicatie over facturatieproblemen in plaats van vage "betaling mislukt"-berichten
+- **Volg dunning-uitkomsten apart van kaartgebaseerde dunning-metrics**: Als je zowel Mollie als Stripe draait, zoals veel LaunchStudio-klanten doen, kan het samenvoegen van hun dunning-succespercentages tot één metric verhullen dat de ene betaalrail merkbaar beter of slechter presteert in het herstellen van mislukte betalingen dan de andere
+
+### Betalingsstoringen Specifiek Communiceren aan Nederlandse Klanten
+Nederlandse klanten, gewend aan de directheid van iDEAL's simpele betaal-of-weiger-flow bij hun eigen bank, reageren doorgaans beter op even directe communicatie over facturatiestoringen — een duidelijke verklaring van wat er is misgegaan, waarom, en de specifieke actie die nodig is — dan op de zachtere, indirectere formuleringen die gebruikelijk zijn in sommige internationale SaaS-facturatie-e-mails. Dit is een klein maar reëel lokalisatiedetail dat het waard is om goed te doen naast de technische mandaatafhandelingslogica zelf, aangezien een technisch correcte dunning-flow gecombineerd met verwarrende of te zachte berichtgeving nog steeds herstelbare klanten verliest.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: checkoutconversie verdubbelen door over te stappen op Mollie

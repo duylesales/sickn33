@@ -65,6 +65,24 @@ Founders who deprioritize compliance to move faster often pay for it later at a 
 
 [Build compliance in from your first production launch](https://launchstudio.eu/en/#contact) — turning what could be a competitive cost into a competitive advantage.
 
+## Understanding Where Your Product Actually Falls Under the EU AI Act's Risk Tiers
+
+Much of the compliance conversation above focuses on GDPR and general trust-building, but founders building AI-native products specifically should also understand where their product sits within the EU AI Act's risk classification system, since the obligations attached to each tier differ substantially, and most small AI-native founders assume a stricter tier applies to them than actually does.
+
+**The four risk tiers, briefly:**
+- **Unacceptable risk** — practices banned outright, such as certain forms of biometric surveillance, social scoring, or manipulative AI targeting vulnerable groups. Almost no legitimate AI-native founder product falls here, and if yours plausibly does, that's a fundamental product redesign question, not a compliance checklist item.
+- **High-risk** — AI systems used in specific sensitive contexts, such as employment decisions, credit scoring, critical infrastructure, or certain medical applications, carry substantial obligations: risk management systems, technical documentation, human oversight requirements, and conformity assessments. Founders building in HR tech, fintech credit decisions, or health diagnostics should assume this tier applies and plan accordingly.
+- **Limited risk** — AI systems that interact directly with people, such as chatbots, AI-generated content, or certain recommendation systems, carry primarily transparency obligations: users must be told they're interacting with AI, and AI-generated content in certain contexts must be disclosed as such. Most consumer-facing AI-native SaaS tools fall here.
+- **Minimal risk** — the large majority of AI applications, such as spam filters, AI-enhanced internal tools, and most B2B productivity AI, face no specific EU AI Act obligations beyond existing general law like GDPR.
+
+**Why this distinction matters practically:** a founder assuming their tool is "high-risk" because it uses AI and involves real customer data may over-invest in compliance theater, such as formal risk assessments or external audits, that their actual limited-risk or minimal-risk classification doesn't require — wasted effort that could go toward the product itself. Conversely, a founder building genuinely high-risk functionality, such as an AI tool influencing hiring decisions, who assumes "it's just AI, same as everyone else" under-invests in obligations that are genuinely mandatory for that category, creating real legal exposure.
+
+**The practical first step:** honestly classify which tier your specific product's core functionality actually falls into, rather than assuming a category based on general anxiety about "AI regulation." Most AI-native founders building typical SaaS products — scheduling tools, content generators, recommendation engines, analysis tools — sit in the limited-risk tier, meaning the primary concrete obligation is transparency: clearly disclosing to users that they're interacting with an AI system, which is a modest, achievable requirement rather than the heavy compliance burden the word "regulation" often implies.
+
+**Where LaunchStudio's production scoping fits in:** correctly identifying your product's risk tier, and building the specific, often modest, obligations that tier requires into the production architecture from the start, is part of the same GDPR-aware default approach covered above — avoiding both the wasted over-compliance and the genuine under-compliance risk that misclassifying your own product's tier can create.
+
+**Why this classification is worth revisiting, not just doing once:** a product's risk tier isn't necessarily fixed for its lifetime — a scheduling tool that starts in the limited-risk tier could drift toward high-risk obligations if a founder later adds a feature that, say, screens job applicants or scores creditworthiness, without the founder necessarily recognizing that the new feature changed which regulatory tier applies. Revisiting this classification whenever a genuinely new category of functionality is added, rather than assuming the original classification holds indefinitely, avoids the scenario where a founder correctly compliant at launch becomes quietly non-compliant a year later purely through ordinary feature growth.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Winning a Deal Specifically Because of Compliance Readiness

@@ -35,6 +35,28 @@ Herre Roelevink heeft dit patroon herhaaldelijk gezien: *"Founders komen in pani
 
 [Laat je AI-architectuur beoordelen](https://launchstudio.eu/en/#contact) voordat de volgende deprecatiemelding een noodgeval wordt.
 
+## Wat er Echt Verandert Als Je een Modelversie Wisselt
+
+Founders gaan er vaak van uit dat een modelwissel een configuratiewijziging van één regel is, en met een goede abstractielaag is de bekabeling dat ook echt. Wat nog steeds engineeringinzicht vereist, is dat geen twee modellen — zelfs twee versies van dezelfde provider — zich identiek gedragen, ook al ziet het API-contract er op papier ongewijzigd uit.
+
+**Vijf dingen die stilletjes verschuiven tussen modelversies:**
+
+- **Contextvenstergrootte.** Een nieuwer model accepteert misschien een veel groter contextvenster, wat klinkt als een pure upgrade, maar als je prompts waren ontworpen rond agressieve afkapping om in een kleiner venster te passen, kan het gedrag van het nieuwe model bij lange inputs afwijken op manieren die je oude testgevallen nooit hebben getest.
+- **Strengheid in het volgen van instructies.** Sommige modellen volgen opmaakinstructies ("antwoord alleen in JSON") letterlijker dan andere. Een parser die is afgesteld om af en toe inleidende tekst van een vorig model te tolereren, kan volledig breken bij een model dat nu schone JSON retourneert — of stilletjes beginnen te falen bij een model dat juist wel commentaar toevoegt dat het oude model nooit gaf.
+- **Tokenprijzen en outputuitgebreidheid.** Nieuwere modellen zijn niet altijd goedkoper, en sommige zijn standaard aanzienlijk uitgebreider, wat zowel je AI-kostenpost beïnvloedt als elke downstream-logica die uitgaat van een bepaalde responslengte of output afkapt bij een vast aantal tekens.
+- **Latentieprofiel.** Redeneerzware modellen kunnen per aanroep meerdere seconden langer duren dan het model dat ze vervangen. Als je frontend is gebouwd in de veronderstelling van bijna-instantane responses, zonder laadstatus of streaming, kunnen gebruikers een werkende functie als kapot ervaren in plaats van gewoon trager.
+- **Weiger- en veiligheidsgedrag.** Providers passen periodiek aan waar een model wel en niet op reageert. Een prompt die twee jaar lang betrouwbaar werkte, kan bij een nieuwe versie ineens weigeringen triggeren voor content die eerder zonder problemen werd verwerkt, met name in gevoelige domeinen zoals gezondheid, financiën of juridisch advies.
+
+**Een praktische evaluatieroutine voor je wisselt:**
+
+1. Stel een vaste set van 20-50 representatieve, echte inputs samen uit daadwerkelijke productielogs, niet synthetische voorbeelden bedacht door wie de migratie uitvoert.
+2. Draai zowel het oude als het nieuwe model tegen die set en vergelijk de outputs naast elkaar, in plaats van een handvol gevallen vluchtig te bekijken en het klaar te verklaren.
+3. Markeer elke output waarbij parsing faalt, opmaak verandert, de responslengte drastisch verschuift, of de semantische inhoud afwijkt op een manier die een klant zou opmerken.
+4. Rol het nieuwe model eerst uit naar een klein percentage van het live verkeer, met het oude model nog steeds beschikbaar als automatische terugval, voordat je volledig overstapt.
+5. Houd de configuratie en credentials van het oude model minstens enkele weken na de migratie beschikbaar, voor het geval een edge case opduikt die je testset niet ving — providers houden gedeprecieerde modellen vaak precies daarom nog toegankelijk via een legacy-endpoint.
+
+Deze evaluatiediscipline is wat een echte "modelwissel" onderscheidt van een "deployen en hopen dat het nog werkt"-wissel. Founders die dit overslaan omdat de abstractielaag het wisselen mechanisch triviaal maakte, leren het verschil vaak op de harde manier — meestal wanneer een klant meldt dat een functie die gisteren nog prima werkte, vandaag verhaspelde of subtiel verkeerde output teruggeeft, zonder dat er ergens in de logs een foutmelding staat die verklaart waarom.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een deprecatiemelding van 60 dagen overleven

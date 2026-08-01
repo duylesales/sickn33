@@ -66,6 +66,40 @@ Because micro-SaaS founders often run solo, ongoing reliability matters more tha
 
 [See what a micro-SaaS launch costs](https://launchstudio.eu/en/#calculator) for your specific niche and customer count.
 
+## Pricing a Micro-SaaS Product for Long-Term Sustainability
+
+Pricing is where most micro-SaaS founders undersell themselves, usually by importing pricing instincts from consumer apps or broad-market SaaS where volume justifies a low price point. A product built for 100 customers needs a fundamentally different pricing logic.
+
+**Price the outcome, not the feature count**
+
+A generic scheduling tool competes on features and is priced accordingly — often €10-20/month, because it has to compete with dozens of similar generic tools. A scheduling tool built specifically for independent physiotherapists, with insurance code handling and treatment protocol tracking built in, is not competing on feature count anymore. It's competing on how much time and compliance risk it removes from a specific, well-understood workflow. That reframing alone often justifies 3-5x the price of a generic equivalent.
+
+**Calculate your real price floor**
+
+Work backward from what sustains the business you actually want:
+
+- **Target annual income** — what do you need this business to generate for you personally
+- **Realistic customer ceiling** — how many customers can you reasonably acquire and support as a solo founder in your specific niche (usually 50-500 for a true micro-SaaS)
+- **Required monthly price** — target income divided by (12 × realistic customer ceiling), then adjusted upward for churn, since not every signup stays a full year
+
+A founder targeting €80,000/year with a realistic ceiling of 100 customers needs roughly €67/month per customer before accounting for churn — not the €15-20/month a founder might instinctively reach for out of consumer-pricing habit.
+
+**Resist the urge to add tiers you don't need**
+
+Broad-market SaaS uses tiered pricing to capture customers across a wide range of budgets and needs. A true micro-SaaS serving a narrow, well-understood niche often does better with a single price point, or at most two tiers (solo practitioner versus small team). Every additional tier adds decision friction for a prospect and support complexity for a solo founder — costs that only make sense to absorb when your customer base is large and varied enough to need the segmentation.
+
+**Annual pricing as a stability lever**
+
+Offering an annual plan at a modest discount (typically 15-20% off monthly) does more for a micro-SaaS founder than for a larger company: it converts unpredictable monthly churn risk into a year of guaranteed revenue and cash flow, which matters disproportionately when your total customer count is small enough that losing 3-4 customers in a bad month is a meaningful revenue swing rather than a rounding error.
+
+**Revisit pricing annually, not never**
+
+Micro-SaaS founders often set a price once at launch and never revisit it, even as the product gains features and proven reliability. A product that has run for two years with zero downtime and steadily added requested features has earned the right to a price increase for new customers — existing customers can typically be grandfathered, which also becomes a quiet loyalty signal.
+
+**Watch your effective price per hour of support, not just per customer**
+
+A €79/month customer who emails you twice a week is, in practical terms, less profitable than a €99/month customer who never needs to reach out. Track support time per customer segment for the first few months after launch, and let that data — not just raw revenue — inform which customer profile you actually want to target more of. Niches with clear documentation needs or heavy onboarding requirements should price higher specifically to offset the founder time those customers consume, since in a micro-SaaS business, founder time is the scarcest resource, not server capacity.
+
 ## Real example
 
 ### An AI-Native Founder in Action: 87 Customers and Profitable, No Investors Needed

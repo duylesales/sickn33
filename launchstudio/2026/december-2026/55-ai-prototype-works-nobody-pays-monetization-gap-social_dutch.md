@@ -9,6 +9,8 @@
 
 De diagnostische vraag die het meest ertoe doet: "Is er NU daadwerkelijk een manier om te betalen?" Zo niet, dat is je hele antwoord. 🎯
 
+🧪 Test goedkoop vóór je volledige facturering bouwt: een "fake door"-Upgradeknop, handmatige facturering per bankoverschrijving voor je 3 grootste fans, of een prijsverankerde wachtlijst ("€15/maand, vanaf volgende maand — mee?"). Echt signaal, nul engineering.
+
 Bij **LaunchStudio** dichten we oorzaak #1 standaard in elk Launch & Grow-pakket. 🛡️
 
 Zijn resultaat: Mollie-facturering toegevoegd, 23 van ~60 gebruikers converteerden binnen 2 WEKEN — ~40%. De kloof was nooit prijsstelling. Het was een ontbrekende knop. 🚀

@@ -7,6 +7,8 @@
 ✅ Authentication added AROUND your UI, not through it
 ✅ CSS and components stay untouched by default
 
+🔧 Under the hood: an adapter layer translates your frontend's existing calls to the real backend — so the frontend LITERALLY never learns anything changed. Plus branch diffs + visual regression screenshots verify zero unintended drift before anything ships.
+
 The only exceptions? Narrowly-scoped functional fixes (like a loading state) — always communicated first, never a surprise redesign. 🛡️
 
 She went through 3 rounds of infrastructure additions (auth, Mollie billing, hosting) and checked side-by-side screenshots each time. 📸

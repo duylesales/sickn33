@@ -7,6 +7,8 @@ Waarom Nederlandse founders perfect gepositioneerd zijn voor de AI-economie: �
 ✅ Pragmatische, anti-hype cultuur = eerlijke beoordeling van wat AI daadwerkelijk bouwde
 ✅ In de EU gevestigde infrastructuur = AVG-compliance standaard, geen aanpassing achteraf
 
+💰 Bonus die de meeste founders missen: het WBSO-belastingkrediet subsidieert AI-productengineeringkosten — en AI-tools brengen founders nu snel genoeg naar "werkend prototype" om binnen weken echt in aanmerking te komen, niet pas na een jaar fondsenwerving.
+
 Maar het last-mile-gat geldt nog steeds evenzeer — een geweldig netwerk bouwt je authenticatie, betalingen of database-isolatie niet voor je. 😱
 
 Bij **LaunchStudio**, hoofdkantoor aan de Herengracht 420 Amsterdam, dichten we dat gat in het Nederlands of Engels, met reactie binnen dezelfde dag: 🛡️

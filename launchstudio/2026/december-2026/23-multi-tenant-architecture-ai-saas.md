@@ -66,6 +66,20 @@ Multi-tenant isolation failures are among the most damaging incidents a SaaS fou
 
 [Get your multi-tenant architecture reviewed](https://launchstudio.eu/en/#contact) before your second customer signs up, not after your tenth one complains.
 
+## Testing Strategy: Catching Isolation Bugs Before Customers Do
+
+Manual spot-checking catches some tenant isolation bugs, but it doesn't scale as your codebase grows, and it does nothing to prevent a future feature from reintroducing a gap you already fixed. Automated testing is what makes isolation durable rather than a one-time audit result.
+
+**A layered testing approach that actually catches these bugs:**
+
+1. **Dedicated isolation test accounts, seeded automatically.** Before any test suite runs, create two or more distinct tenant accounts with clearly distinguishable seed data (not just "Test User 1" and "Test User 2," but data specific enough that cross-contamination is obvious the moment it appears in a result set).
+2. **A test that attempts cross-tenant access on every endpoint, not just the obvious ones.** The highest-risk gaps tend to hide in newer or less-visited features — a recently added export function, a notes field, a file upload — precisely because these haven't been exercised by real multi-tenant usage yet. A systematic test sweep across every API route, rather than a manual check of the "important" ones, is what catches these.
+3. **Direct object reference testing.** Specifically attempt to access another tenant's records by manipulating IDs in URLs and API requests — incrementing an integer ID, substituting a UUID you can see from your own account's network requests — since this is the exact attack pattern that exposed real data in the VrachtBundel example below.
+4. **Database-level policy tests, not just application-level ones.** If you're using Supabase or PostgreSQL RLS, write tests that query the database directly under a specific tenant's role, bypassing your application code entirely, to confirm the database itself — not just your application logic — enforces isolation. This catches the specific failure mode where application code happens to filter correctly but the underlying policy would allow a leak if any other code path ever queried the same table.
+5. **Wiring these tests into CI so they run on every pull request**, not periodically or only before major releases. A tenant isolation regression introduced by a small, seemingly unrelated feature change is exactly the kind of bug that slips through if isolation testing isn't a mandatory, automatic gate before code ships.
+
+**Why this matters more for AI-generated codebases specifically:** AI coding tools iterate fast and generate new features readily, which is a genuine strength, but it means new code paths appear more frequently than in a traditionally hand-built codebase — and each new code path is a fresh opportunity to forget a tenant filter. Automated isolation tests are what let a founder keep shipping quickly with an AI tool without each new feature being a fresh roll of the dice on data security. Treat the isolation test suite itself as a permanent piece of infrastructure, not a one-time deliverable from an initial audit — it needs to grow alongside the application, gaining a new case every time a new table or endpoint touching customer data is added, in the same way a founder would expect a payment integration to be re-tested after a pricing change rather than assumed to still work correctly.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Designing Isolation Right From Customer Two

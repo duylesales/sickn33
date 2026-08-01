@@ -62,6 +62,24 @@ Most AI-native founders don't need — and shouldn't attempt — to fully automa
 
 [Get a testing strategy built for your AI features](https://launchstudio.eu/en/#contact) before an untested edge case reaches a real customer.
 
+## Building a Golden Dataset and Treating Prompts as Versioned Code
+
+A concept worth making explicit, since it underpins most of the testing approaches above: a "golden dataset" is a curated, maintained collection of real or realistic input/output pairs representing what "good" looks like for your specific AI feature, used as the reference point for the structural and reference-based testing described earlier. Building and maintaining this dataset deliberately, rather than testing against whatever inputs happen to come to mind, is what separates a testing strategy that actually catches regressions from one that provides false confidence.
+
+**Where golden dataset examples should come from:**
+
+- **Real production inputs** (anonymized as needed) that represent your most common actual use cases, not hypothetical ones you imagine users might send
+- **Past bugs**, added to the dataset the moment they're fixed, so a regression of a previously-fixed issue gets caught automatically rather than rediscovered the hard way
+- **Deliberately adversarial or edge-case inputs** — empty fields, unusually long input, mixed languages, requests that superficially resemble a supported use case but aren't
+
+**Treat your prompt as versioned code, tied to your test suite.** A prompt change is a code change with the same potential to introduce a regression as any other, yet many AI-native teams edit prompts directly in a dashboard or config file without running them against the golden dataset first. A more disciplined pattern: store prompts in version control alongside the application code, require golden dataset tests to pass before a prompt change merges, and log which prompt version produced which output in production — so if a quality issue surfaces, you can trace it to the specific prompt version responsible rather than guessing across several recent changes at once.
+
+**A note of caution on "LLM-as-judge" evaluation.** Using a second AI call to automatically score the quality of your AI feature's output against your golden dataset is an increasingly common technique, and it can meaningfully reduce the manual review burden — but it inherits its own failure modes: the judge model can be inconsistent, can share the same blind spots as the model being evaluated, and shouldn't fully replace periodic human review for anything customer-facing and quality-sensitive. Treat LLM-as-judge scoring as a useful triage signal that helps prioritize which outputs deserve human attention, not as a final verdict on quality by itself.
+
+**Keep the golden dataset's size manageable but alive.** A dataset that grows unboundedly becomes slow to run and expensive in AI API costs for evaluation itself; one that's built once and never updated stops reflecting how the product is actually used. Reviewing and refreshing it on the same cadence already used for reference test case updates keeps it a living asset rather than a stale artifact from an earlier version of the product.
+
+**Semantic similarity scoring offers a useful middle ground between rigid exact-match assertions and full human review.** Rather than asserting an AI response equals a specific string, or relying entirely on a human to judge quality, comparing the semantic similarity of a new output against a known-good reference output (using embedding-based comparison rather than literal text matching) can flag outputs that have drifted meaningfully in meaning or content while correctly tolerating harmless variation in exact phrasing. This isn't a perfect signal on its own — a response can be semantically similar to a reference and still be wrong in a way the reference doesn't cover, or flagged as dissimilar despite being an equally valid alternative phrasing — but as one layer among several, it catches a category of regression that neither exact-match testing nor infrequent manual sampling reliably catches by itself, particularly for subtle prompt changes that shift tone or emphasis without breaking any structural requirement.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Building a Test Suite That Actually Fit AI's Nature

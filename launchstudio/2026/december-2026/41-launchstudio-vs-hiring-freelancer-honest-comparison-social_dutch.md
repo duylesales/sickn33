@@ -14,6 +14,8 @@ LaunchStudio wint wanneer: ✅
 ✅ Je wilt nul single-point-of-failure-risico
 ✅ Je wilt geen doorlopende relatie beheren
 
+💡 Toch een freelancer inhuren? Stel dit eerst: "Heb je eerder gewerkt in een door Lovable/Bolt/Cursor gegenereerde codebase?" — het antwoord onthult meer dan elk cv
+
 Zij gebruikte BEIDE: **LaunchStudio** voor haar beursdeadline (vaste prijs, vaste tijdlijn, gesteund door Manifera's 120+ engineers), daarna een freelancer voor doorlopend functiewerk erna — makkelijk gemaakt omdat LaunchStudio's code volledig gedocumenteerd was. 🛡️
 
 Resultaat: haalde haar deadline, soepele overdracht, nul frictie. 🚀

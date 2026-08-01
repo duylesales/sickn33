@@ -13,6 +13,8 @@ The safer sequence: ✅
 4️⃣ Test cross-user access yourself before calling it done
 5️⃣ Add Row Level Security as a second line of defense
 
+That URL-parameter test isn't even the whole checklist — hidden admin buttons, API routes callable straight from Postman, and roles stored in local storage are 3 more ways "logged in" quietly means "wide open." 🔍
+
 At **LaunchStudio**, backed by Manifera's cybersecurity roots (CFLW, TNO), authentication gets the scrutiny it needs — before real users create real accounts. 🛡️🚀
 
 👉 Read how to add auth without breaking everything: [Link to article]

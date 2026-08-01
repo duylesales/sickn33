@@ -14,6 +14,8 @@ Het minimum van 10 items: ✅
 9️⃣ Foutmeldingen die geen interne info lekken
 🔟 Een basaal incidentresponsplan
 
+🧪 Neem het niet aan — TEST het: probeer 20 keer een verkeerd wachtwoord achter elkaar. Sluit niets je buiten, dan is item 8 al gezakt.
+
 Door AI gegenereerde prototypes missen routinematig verschillende hiervan standaard — onzichtbaar, tot ze worden uitgebuit. 😱
 
 Bij **LaunchStudio**, direct geïnformeerd door Herre Roelevinks cybersecurityachtergrond (CFLW, TNO), is dit minimum standaard bij elke deployment. 🛡️

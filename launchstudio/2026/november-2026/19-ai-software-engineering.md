@@ -89,6 +89,22 @@ Assuming the application will be attacked and abused. This means implementing ra
 **4. Observability and CI/CD**
 You cannot fix what you cannot see. Engineering rigor means setting up automated deployments via GitHub Actions, configuring staging environments, and implementing logging that provides actual context when an AI feature fails in production.
 
+## Common Anti-Patterns AI Generates (And How to Spot Them Yourself)
+
+Even experienced technical founders benefit from a quick mental checklist of the specific anti-patterns AI coding assistants tend to reproduce, because these patterns show up constantly across otherwise excellent AI-generated codebases.
+
+**The God Component.** AI tools frequently generate a single component that fetches data, manages form state, handles submission logic, and renders the UI all in one file. It works in a demo. It becomes unmaintainable the moment two founders try to edit it simultaneously, or the moment the component needs a second use case.
+
+**The Silent Failure.** Ask an AI assistant to "handle errors," and it will often wrap logic in a `try/catch` that logs to the console and does nothing else. In production, this means a failed payment, a failed database write, or a failed AI API call fails silently, with no alert to you and no meaningful message to the user.
+
+**The Trusting Client.** AI-generated forms routinely validate input only in the browser — checking that an email field looks like an email, that a required field is not empty. Nothing stops a user from bypassing the browser entirely and sending malformed or malicious data straight to your API, because the AI assumed the client-side check was sufficient.
+
+**The Infinite Loop Risk.** In AI-assisted React code, it is common to see `useEffect` hooks with incomplete or incorrect dependency arrays. This can trigger unnecessary re-renders or, worse, repeated API calls that quietly exhaust your OpenAI or Stripe rate limits without any obvious error message.
+
+**The Copy-Paste Config.** AI models trained on public tutorials sometimes generate configuration values — CORS settings, cookie flags, session durations — copied from example code that is explicitly insecure and meant only for local development.
+
+None of these patterns mean the AI failed you. They mean the AI did exactly what it was trained to do: produce code that demonstrates a feature convincingly. Engineering rigor is the separate discipline of finding these patterns before a real user, or a real attacker, finds them for you.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Backend Developer Who Needed a Backend

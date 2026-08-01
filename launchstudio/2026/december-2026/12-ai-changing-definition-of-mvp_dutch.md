@@ -38,6 +38,34 @@ Deze overgang — van een functierijk AI-prototype naar een oprecht levensvatbaa
 
 [Bereken wat je MVP nodig heeft om live te gaan](https://launchstudio.eu/en/#calculator) en zie precies welke infrastructuurgaten tussen je prototype en je eerste betalende klant staan.
 
+## De Zelfaudit van een Founder: Vijf Vragen om Echte Levensvatbaarheid te Testen
+
+Voordat je aanneemt dat je door AI gegenereerde prototype kwalificeert als MVP, loop het door vijf specifieke tests. Elke test peilt een ander faalmodel dat een gepolijste interface kan verbergen.
+
+**1. Wat gebeurt er als je de pagina midden in een sessie ververst?**
+
+Open je app, log in, doe iets betekenisvols (maak een boeking, start een formulier), en ververs dan de browser hard. Als je data verdwijnt, of je onverwacht wordt uitgelogd, mist je app waarschijnlijk echte databasepersistentie en leunt hij in plaats daarvan op in-memory of client-side state die voortdurend reset. Deze ene test vangt een van de meest voorkomende gaten tussen een demo en een echt product.
+
+**2. Kunnen twee verschillende gebruikers het tegelijk gebruiken zonder elkaars data te zien?**
+
+Open je app in twee aparte browsersessies (of vraag een vriend om samen met jou te testen) en maak accounts aan voor twee verschillende "klanten." Als de ene gebruiker de data van de andere kan zien, bewerken of per ongeluk overschrijven, heeft je app geen echte multi-tenancy — een serieus probleem zodra je meer dan één betalende klant hebt, en een juridisch probleem als die data persoonlijk of gevoelig is.
+
+**3. Faalt een mislukte betaling daadwerkelijk soepel?**
+
+Gebruik een testkaart die ontworpen is om een weigering te veroorzaken (de meeste betalingsverwerkers bieden er een) en kijk wat er gebeurt. Een levensvatbaar product toont de gebruiker een duidelijke foutmelding en laat hem opnieuw proberen. Een prototype crasht vaak, verleent stilletjes toch toegang, of raakt vast in een kapotte staat — elk van deze zal je echte omzet en echt vertrouwen kosten de eerste keer dat het gebeurt met de kaart van een echte klant.
+
+**4. Hoe ziet je foutstatus er daadwerkelijk uit?**
+
+Breek opzettelijk iets — verbreek je internet midden in een verzoek, of dien misvormde invoer in. Een productieklare app toont een duidelijk, mensleesbaar bericht. Een prototype toont vaak een ruwe foutstacktrace, een blanco wit scherm, of blijft simpelweg oneindig hangen — allemaal signalen naar een echte gebruiker dat het product onbetrouwbaar is, ongeacht hoe goed het er vijf seconden eerder nog uitzag.
+
+**5. Zou iemand anders dit kunnen bedienen zonder dat jij persoonlijk moet ingrijpen?**
+
+Vraag een vriend die je product nog nooit heeft gezien om zich aan te melden, de kernfunctie te gebruiken en hulp te proberen krijgen als hij vastloopt — volledig zonder jouw betrokkenheid. Als dit voltooien vereist dat jij handmatig zijn account repareert, data namens hem exporteert, of een workaround via chat uitlegt, is het product nog niet operationeel levensvatbaar, ongeacht hoe gevalideerd het onderliggende idee is.
+
+**Jezelf eerlijk scoren**
+
+Alle vijf tests doorstaan betekent niet dat je product af is — het betekent dat het de specifieke drempel heeft overschreden van "overtuigende demo" naar "oprecht levensvatbare MVP." Zelfs één test niet doorstaan is geen reden tot paniek, maar wel een reden om die kloof als prioriteit te behandelen boven nieuwe functies, aangezien elk van deze faalmodi meestal opduikt op het slechtst mogelijke moment: voor een echte, betalende klant in plaats van in een gecontroleerde test.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: toen "functievolledig" niet hetzelfde was als "levensvatbaar"

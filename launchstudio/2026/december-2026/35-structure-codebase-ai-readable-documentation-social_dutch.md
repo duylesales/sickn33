@@ -11,6 +11,7 @@ De oplossing — documenteer voor AI, niet alleen mensen: ✅
 ✅ Consistente patronen door de hele codebase
 ✅ Een levend architectuuroverzichtsdocument
 ✅ Duidelijke API- en datamodeldocumentatie
+✅ Eén root-`AGENTS.md`/`CLAUDE.md`-bestand — de meeste AI-tools lezen het automatisch in bij elke sessie, zonder prompten
 
 Bij **LaunchStudio** wordt alle code gedocumenteerd en AI-leesbaar geleverd — omdat de meeste klanten na overdracht blijven bouwen met AI-tools. Gesteund door Manifera's discipline over 160+ projecten. 🛡️
 

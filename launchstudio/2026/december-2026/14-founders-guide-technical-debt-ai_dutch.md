@@ -39,6 +39,34 @@ Het beoordelen en aflossen van door AI gegenereerde technische schuld is een van
 
 [Laat een technische-schuldbeoordeling uitvoeren](https://launchstudio.eu/en/#contact) van je door AI gegenereerde codebase voordat het je volgende functielancering vertraagt.
 
+## De Specifieke Codepatronen die door AI Gegenereerde Schuld Signaleren
+
+Traditionele technische schuld verstopt zich vaak in commentaar zoals "TODO: dit later repareren." Door AI gegenereerde schuld verstopt zich anders — in structurele inconsistentie die pas zichtbaar wordt wanneer je over bestanden heen kijkt, niet binnen individuele bestanden. Dit zijn de patronen die het meest consistent opduiken.
+
+**Parallelle benaderingen van statebeheer**
+
+Een AI-tool die gevraagd wordt op maandag een formulier toe te voegen, gebruikt misschien lokale componentstate. Gevraagd om op donderdag een vergelijkbaar formulier toe te voegen, in een verse chatsessie zonder herinnering aan het patroon van maandag, grijpt hij misschien in plaats daarvan naar een globale state-library. Geen van beide benaderingen is op zichzelf fout, maar een codebase met drie verschillende statebeheerfilosofieën verspreid over vergelijkbare functies is er een waarin elke nieuwe functie vereist te gokken welk patroon waar van toepassing is — en fout gokken breekt dingen op manieren die moeilijk te traceren zijn.
+
+**Gedupliceerde bedrijfslogica met subtiele afwijking**
+
+Een validatieregel ("e-mail moet uniek zijn," "prijs moet positief zijn") wordt vaak elke keer dat hij nodig is enigszins anders opnieuw gegenereerd, in plaats van verwezen naar één gedeelde bron. In het begin zijn deze duplicaten meestal identiek. Na tientallen prompts wijken ze af — de ene kopie krijgt een edge-case-fix, de andere drie niet. De bug die dit produceert is uniek frustrerend: dezelfde regel lijkt in het ene deel van de app te werken en in het andere te falen, zonder duidelijke reden waarom.
+
+**Inconsistente diepgang van foutafhandeling**
+
+Sommige door AI gegenereerde functies bevatten grondige foutafhandeling — controleren op null-waarden, mislukte API-oproepen opvangen, gebruikersgerichte berichten tonen. Andere, gegenereerd onder een simpelere prompt of een eerdere sessie, hebben helemaal geen foutafhandeling. De inconsistentie zelf is de schuld: een codebase waar foutafhandeling onvoorspelbaar is, is er een waarin je nooit zeker kunt zijn dat een gegeven gebruikersactie daadwerkelijk veilig is totdat je dat specifieke codepad handmatig hebt gecontroleerd.
+
+**Verweesde code van verlaten richtingen**
+
+Wanneer een founder een AI-tool vraagt een aanpak te proberen, het resultaat niet bevalt, en om iets anders vraagt, blijft de oorspronkelijke poging vaak achter in de codebase in plaats van verwijderd te worden — een ongebruikte API-route, een component die niemand rendert, een databasetabel die niemand bevraagt. Deze verweesde code veroorzaakt geen bugs direct, maar vergroot het oppervlak waar een toekomstige beoordeling rekening mee moet houden, en wordt af en toe per ongeluk opnieuw verbonden door een latere prompt die niet weet dat hij verlaten was.
+
+**Ontbrekende typeveiligheid op integratiegrenzen**
+
+Door AI gegenereerde code is vaak intern consistent over datavormen binnen één generatie, maar verliest die consistentie op de grenzen tussen functies gebouwd in verschillende sessies — een veld genaamd `userId` in het ene deel van de app en `user_id` in het andere, wat er stilletjes voor zorgt dat data niet verbindt zoals een founder aanneemt.
+
+**Waarom een regel-voor-regel-beoordeling het meeste hiervan mist**
+
+Geen van deze patronen komt naar boven door één enkel bestand geïsoleerd te lezen — elke functie ziet er op zichzelf redelijk uit. Ze worden alleen zichtbaar door patronen over de hele codebase heen te vergelijken, en dat is precies waarom founders (technisch of niet) deze categorie schuld vaak missen totdat een functieverzoek dat "simpel zou moeten zijn" blijkt drie inconsistente implementaties van hetzelfde onderliggende concept te raken.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: zes maanden opgestapelde AI-schuld ontwarren

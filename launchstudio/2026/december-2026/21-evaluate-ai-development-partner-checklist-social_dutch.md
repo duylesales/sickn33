@@ -15,6 +15,8 @@ Bij **LaunchStudio** heeft elk van deze 15 vragen een duidelijk, openbaar antwoo
 ✅ Volledig code-eigendom, altijd
 ✅ Gesteund door Manifera — vertrouwd door Vodafone, TNO, CFLW
 
+🔍 Protip: stel niet alleen de 15 vragen — verifieer de antwoorden. Vraag om een referentie die je echt kunt bellen, een echt KVK-nummer, en een voor/na-codevoorbeeld. Een partner die afleidt als je om bewijs vraagt, heeft je 16e vraag net gratis beantwoord.
+
 Krijg de checklist voordat je je vastlegt. 🛡️🚀
 
 👉 Lees de volledige checklist met 15 punten: [Link naar artikel]

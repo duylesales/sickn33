@@ -17,6 +17,8 @@ When it's a bad trade: ❌
 
 The framework: get a REAL cash quote first, then calculate what the equity % is worth at a future valuation. It's usually eye-opening. 🧠
 
+⚠️ Hidden trap most founders miss: equity given informally is often FULLY VESTED on day one — no cliff, no clawback. Developer disappears next week? That equity is permanently theirs. Always demand vesting + a signed IP assignment.
+
 At **LaunchStudio**, fixed pricing from €800 means founders can compare real numbers before giving away their company. 🛡️🚀
 
 👉 Read the honest equity-vs-cash math: [Link to article]

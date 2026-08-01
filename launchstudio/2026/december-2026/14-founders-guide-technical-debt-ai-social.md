@@ -16,6 +16,8 @@ At **LaunchStudio**, technical debt assessment is one of our most common engagem
 
 Don't wait for the crisis. Get ahead of the debt. 🛡️🚀
 
+🔍 The tell: `userId` in one part of your app, `user_id` in another. Two AI sessions, zero memory of each other — and your data silently stops connecting.
+
 👉 Read the founder's guide to AI technical debt: [Link to article]
 
 #TechnicalDebt #LaunchStudio #Manifera #AINativeFounder #Cursor #SaaS

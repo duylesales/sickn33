@@ -38,6 +38,25 @@ De meeste AI-native founders hebben geen (en hebben geen) toegewijde DevOps-engi
 
 [Bespreek je deploymentpijplijn](https://launchstudio.eu/en/#contact) met een engineer die zowel traditionele CI/CD als AI-specifieke deploymentuitdagingen begrijpt.
 
+## Monitoring en Rollback: Wat Gebeurt Er Nadat een Deployment Zijn Poorten Passeert
+
+Het doorstaan van de tests en poorten in je CI/CD-pijplijn garandeert niet dat een AI-functie zich goed gedraagt zodra deze echte gebruikers en echte input tegenkomt — een referentie-testsuite die is opgebouwd uit een vaste set voorbeelden kan nooit volledig anticiperen op de variatie aan prompts, edge cases en adversariële input die echte gebruikers produceren. Daarom hebben AI-bewuste deploymentpijplijnen een tweede laag nodig die traditionele software vaak als optioneel behandelt: continue monitoring na deployment, gecombineerd met een snel en goed ingeoefend rollbackpad.
+
+### Een Evaluatiedataset Bouwen die Daadwerkelijk Groeit
+Een eenmalige referentie-testsuite veroudert. Elk productie-incident, elke gebruikersklacht over een vreemde AI-reactie en elke edge case die via een supportticket naar boven komt, hoort teruggevoegd te worden aan je evaluatiedataset als een nieuw testgeval — zo verander je elke storing uit de praktijk in een permanente regressietest die beschermt tegen het opnieuw optreden van dat specifieke faalscenario. Teams die hun evaluatieset behandelen als een levend document, in plaats van iets dat eenmalig wordt geschreven tijdens de initiële opzet van de pijplijn, vangen na verloop van tijd een aanzienlijk groter aandeel regressies vóór deployment, simpelweg omdat de testsuite blijft leren van wat er in de praktijk daadwerkelijk misgaat.
+
+### Metrics die het Waard Zijn om Continu te Volgen, Niet Alleen bij Deployment
+- **Proxy's voor responskwaliteit**: het percentage keren dat een gebruiker de AI vraagt het opnieuw te proberen (regeneratie/retry-rate), duim omhoog/omlaag-feedback als je die verzamelt, en het percentage gesprekken dat halverwege wordt afgebroken
+- **Kosten per interactie**, gevolgd als voortschrijdend gemiddelde, omdat een stille opwaartse kruip vaak wijst op óf een promptregressie die langere antwoorden veroorzaakt óf een onverwachte verschuiving in gebruikspatroon
+- **Latency-percentielen** (p50, p95, p99) in plaats van alleen gemiddelden, omdat een klein aantal zeer trage requests de gebruikerservaring kan verpesten, zelfs als het gemiddelde er prima uitziet
+- **Fout- en fallback-percentages**, inclusief hoe vaak je applicatie terugvalt op een secundair model of een gecachte reactie omdat de primaire AI-aanroep faalde of een time-out gaf
+
+### Een Rollbackpad Ontwerpen dat je Daadwerkelijk Zult Gebruiken
+Een rollbackplan dat alleen in documentatie bestaat, ongetest, faalt doorgaans precies wanneer je het het hardst nodig hebt — onder de tijdsdruk van een actief incident. Een rollbackpad dat de moeite waard is, omvat: de vorige promptversie en modelconfiguratie direct inzetbaar houden met één enkele actie in plaats van een handmatig meerstapsproces dat uit het geheugen moet worden gereconstrueerd, een duidelijke drempel voor wat een rollbackbeslissing triggert die vooraf is afgesproken in plaats van bediscussieerd tijdens een incident, en een aangewezen persoon die gemachtigd is die beslissing te nemen zonder te wachten op een langer reviewproces.
+
+### Het Verschil Tussen een Incident bij de Modelprovider en je Eigen Regressie
+Wanneer de kwaliteit van AI-output plotseling verslechtert, kan de oorzaak je eigen recente prompt- of codewijziging zijn, of het kan een verandering zijn aan de kant van je modelprovider — een stille modelupdate, een storing bij de provider, of verminderde providerprestaties die niets te maken hebben met wat jij hebt uitgerold. Snel onderscheid maken tussen deze twee is belangrijk omdat de oplossing compleet anders is: je eigen deployment terugdraaien helpt niets als het probleem bij je provider ligt, en overstappen naar een andere provider of terugvallen op een gecachte reactie helpt niets als het probleem in je eigen recente promptwijziging zit. Loggen welke modelversie en promptversie elke reactie hebben gegenereerd — niet alleen de output zelf — is wat deze diagnose binnen minuten mogelijk maakt in plaats van uren van verward onderzoek, en het is een gewoonte die het waard is om vanaf de allereerste deployment in te bouwen in plaats van er achteraf aan toe te voegen zodra een incident de leemte al pijnlijk duidelijk heeft gemaakt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een stille promptregressie vangen voordat hij werd verscheept

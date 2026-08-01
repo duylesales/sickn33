@@ -69,6 +69,24 @@ For most founders, whichever database your AI tool generated is probably an acce
 
 [Get your database security audited](https://launchstudio.eu/en/#contact) — a misconfigured RLS policy is one of the most common security gaps LaunchStudio finds in AI-generated apps.
 
+## What It Actually Costs at Different Growth Stages
+
+Database choice is often discussed purely in technical terms, but the pricing structure behind each option changes meaningfully as a product grows — and the cheapest option at the prototype stage is not always the cheapest option once you have paying customers.
+
+**Free and early-stage tier:**
+- Supabase's free tier covers most early prototypes comfortably, with paid tiers starting at a modest monthly cost once you exceed generous default limits on database size and API requests.
+- Firebase's free tier (Spark plan) is similarly generous for low-traffic apps, but its pay-as-you-go pricing (Blaze plan) is usage-metered in a way that can produce unpredictable bills if a feature — a real-time listener left open too long, for instance — generates more reads than expected.
+- PlanetScale removed its free tier in recent pricing changes, making it the most expensive option to simply try out, which reinforces that it's rarely the right choice before you have a concrete scale problem to solve.
+
+**Growth-stage tier (dozens to low hundreds of paying customers):**
+- Supabase's costs scale fairly predictably with database size and compute, and Row Level Security has no separate cost — it's a configuration decision, not a paid feature, so getting it right doesn't carry a pricing penalty.
+- Firebase costs at this stage are driven heavily by read/write volume rather than storage, which means a chat-heavy or real-time-heavy product can see costs climb faster than a similarly sized relational product on Supabase.
+- PlanetScale's pricing is built around row reads and writes at scale, which only becomes cost-competitive once your query volume is genuinely high enough to justify its scaling architecture in the first place.
+
+**The migration cost most founders don't price in:** switching databases after launch is rarely just a technical migration — it's a data migration with real risk of downtime or data loss if done without care, plus the engineering time to rebuild queries, security policies, and integrations around a different data model. This cost should be weighed against the marginal savings of switching, and for most AI-native founders on Supabase already, that math rarely favors migrating purely for cost reasons. The more common trigger for switching is a genuine data-model mismatch (relational data forced into Firestore, for example) rather than pricing alone.
+
+**EU data residency is worth checking regardless of which database you're on.** Supabase and Firebase both offer EU-region hosting options, but neither defaults to it automatically — an AI tool scaffolding a new project frequently provisions the default region shown in its own template, which is not always EU-based. For a Dutch or EU-based SaaS product handling personal data, confirming your actual project region (not just assuming it's correct) is a five-minute check that avoids a GDPR data residency problem discovered much later, typically during a customer's own compliance review rather than your own. PlanetScale's regional availability is more limited than either alternative, which is one more reason it tends to suit founders with an already-defined, often US-anchored, scale requirement rather than a default EU-first SaaS product.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Row Level Security Gap Nobody Noticed

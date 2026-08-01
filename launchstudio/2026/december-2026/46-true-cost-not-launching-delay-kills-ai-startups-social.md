@@ -9,6 +9,8 @@ You scrutinize a €2,500 launch quote for weeks. The cost of NOT launching? Nob
 
 Ask yourself: how many months has your prototype been "almost ready"? What would a competitor entering next quarter cost you? 🤔
 
+🧮 Quick math: even 5 customers at €40/mo = €200 gone EVERY month you delay — not deferred, just gone. Multiply by months already wasted, not months ahead, for the real number.
+
 At **LaunchStudio**, backed by Manifera's 11+ years, we compress the gap between "works" and "live" to 1-3 weeks. A real deadline breaks the delay trap. 🛡️
 
 Her result: launched in 12 days, 6 clients signed month one — after 9 months of self-delay. 🚀

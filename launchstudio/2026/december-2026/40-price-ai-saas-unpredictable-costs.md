@@ -60,6 +60,20 @@ You cannot price sustainably without knowing your actual per-customer AI costs �
 
 [Get your usage tracking and billing tiers set up](https://launchstudio.eu/en/#calculator) before a handful of heavy users quietly erode your margins.
 
+## Forecasting AI Costs Before You Have Any Real Usage Data
+
+Everything above assumes you already have customers generating real usage patterns to analyze. Founders pricing a not-yet-launched AI SaaS product face a harder version of the same problem: setting a sustainable price with no actual cost data yet to reference. This requires deliberate estimation rather than waiting to simply find out the hard way after launch.
+
+**Build a per-interaction cost estimate before writing any pricing copy.** Take your actual planned prompts (system instructions plus a realistic sample of user input) and run them through your intended AI provider's own pricing calculator or documented per-token rates, including the full context you'll actually send — not a simplified test prompt, since real system prompts, conversation history, and retrieved context can multiply the effective token count well beyond what a bare user message suggests.
+
+**Model at least three usage personas, not just an "average" user.** A light user (a handful of interactions monthly), a typical user, and a genuinely heavy user (someone using the product close to daily, or in a workflow-embedded way) produce very different cost profiles, and pricing based only on an "average" masks how expensive your actual heavy-usage tail could become — precisely the blind spot that caught Koen's TekstGenie off guard, as covered above.
+
+**Stress-test your model at 10x and 100x your expected usage per persona**, not because you expect it immediately, but because it reveals whether your cost structure breaks gracefully (costs scale roughly linearly, remaining a predictable share of revenue) or catastrophically (a specific interaction pattern scales in a way that could quietly bankrupt a single popular customer relationship). Products with per-request costs that compound — multi-step AI agents, features that chain several AI calls together, or tool-calling loops that can iterate an unpredictable number of times — are especially worth stress-testing this way before launch, since these patterns are exactly where actual usage cost can diverge sharply from a simple "cost per user message" estimate.
+
+**Build in an explicit sensitivity check for provider price changes.** Model your unit economics at your current provider pricing, and again at a meaningfully higher rate (a 30-50% increase is a reasonable stress scenario given how AI provider pricing has moved historically), so a future price change is an anticipated scenario you've already planned a response to, rather than a surprise that catches your entire pricing model underwater at once.
+
+**Treat this pre-launch estimate as a starting hypothesis, not a final answer.** The moment real usage data becomes available, replace the estimate with actual measured costs as described in the monitoring approach above — the pre-launch model's job is getting your initial price in a defensible range, not remaining the permanent basis for pricing decisions once better data exists.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Discovering (and Fixing) an Underwater Pricing Model

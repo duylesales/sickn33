@@ -62,6 +62,34 @@ This transition — from a feature-rich AI prototype to a genuinely viable, laun
 
 [Calculate what your MVP needs to go live](https://launchstudio.eu/en/#calculator) and see exactly which infrastructure gaps stand between your prototype and your first paying customer.
 
+## A Founder's Self-Audit: Five Questions to Test Real Viability
+
+Before assuming your AI-generated prototype qualifies as an MVP, run it through five specific tests. Each one probes a different failure mode that a polished interface can hide.
+
+**1. What happens if you refresh the page mid-session?**
+
+Open your app, log in, do something meaningful (create a booking, start a form), then hard-refresh the browser. If your data disappears, or you're logged out unexpectedly, your app likely lacks real database persistence and is instead relying on in-memory or client-side state that resets constantly. This single test catches one of the most common gaps between a demo and a real product.
+
+**2. Can two different users use it at the same time without seeing each other's data?**
+
+Open your app in two separate browser sessions (or ask a friend to test alongside you) and create accounts for two different "customers." If one user can see, edit, or accidentally overwrite the other's data, your app has no real multi-tenancy — a serious problem the moment you have more than one paying customer, and a legal one if any of that data is personal or sensitive.
+
+**3. Does a failed payment actually fail gracefully?**
+
+Use a test card designed to trigger a decline (most payment processors provide one) and watch what happens. A viable product shows the user a clear error and lets them retry. A prototype often either crashes, silently grants access anyway, or gets stuck in a broken state — any of which will cost you real revenue and real trust the first time it happens with an actual customer's card.
+
+**4. What does your error state actually look like?**
+
+Deliberately break something — disconnect your internet mid-request, or submit malformed input. A production-ready app shows a clear, human-readable message. A prototype often shows a raw error stack trace, a blank white screen, or simply hangs indefinitely, all of which signal to a real user that the product is unreliable, regardless of how good it looked five seconds earlier.
+
+**5. Could someone else operate this without you personally intervening?**
+
+Ask a friend who has never seen your product to sign up, use the core feature, and try to get help if they get stuck — entirely without your involvement. If completing this requires you to manually fix their account, export data on their behalf, or explain a workaround over chat, the product isn't yet operationally viable, no matter how validated the underlying idea is.
+
+**Scoring yourself honestly**
+
+Passing all five tests doesn't mean your product is finished — it means it has crossed the specific threshold from "convincing demo" to "genuinely viable MVP." Failing even one is not a reason to panic, but it is a reason to treat that gap as a priority ahead of new features, since each of these failure modes tends to surface at the worst possible moment: in front of a real, paying customer rather than in a controlled test.
+
 ## Real example
 
 ### An AI-Native Founder in Action: When "Feature-Complete" Wasn't the Same as "Viable"

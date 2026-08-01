@@ -12,6 +12,8 @@
 ✅ Enterprise & public-sector clients often REQUIRE compliance-readiness
 ✅ "Move fast, comply later" is almost always the more expensive path
 
+🎯 Most AI-native founders assume a stricter EU AI Act tier applies than actually does. Reality check: typical SaaS tools (scheduling, content gen, recommendations) usually sit in "limited risk" — meaning the core obligation is just transparency, not a heavy compliance program.
+
 At **LaunchStudio**, GDPR-aware architecture is standard on every production deployment — not a special request. Informed by Herre Roelevink's cybersecurity background and Manifera's work with compliance-heavy clients like TNO. 🛡️
 
 Her result: won a mid-sized manufacturing contract specifically because she could answer every data question instantly — the US competitor never gave a straight answer. 🚀

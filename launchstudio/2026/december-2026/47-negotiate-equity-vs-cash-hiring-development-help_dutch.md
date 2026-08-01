@@ -42,6 +42,27 @@ Omdat [LaunchStudio's](https://launchstudio.eu/en/) prijzen voor het naar produc
 
 [Vraag een echte cashofferte aan](https://launchstudio.eu/en/#calculator) voordat je beslist dat equity je enige optie is.
 
+## De Structurele Risico's Die Equity-deals Toevoegen Naast Het Kale Percentage
+
+De percentage-versus-cash-rekensom hierboven is de eersteorde-vergelijking, maar equity-voor-ontwikkeling-regelingen brengen structurele risico's met zich mee die een simpele waarderingsberekening niet vangt — risico's die pas naar boven komen nadat de relatie al is geformaliseerd in je aandeelhoudersregister.
+
+**Vestingvoorwaarden ontbreken vaak of zijn slecht gestructureerd.** Een oprechte medeoprichter-equitytoekenning vest doorgaans over meerdere jaren met een cliff, wat het bedrijf beschermt als de relatie niet werkt. Informeel gesloten equity-voor-ontwikkeling-regelingen slaan dit vaak volledig over — de developer ontvangt volledig gevestigde equity voor een paar weken werk, wat betekent dat zelfs als hij direct daarna verdwijnt, die equity permanent van hem is, zonder mechanisme om het terug te vorderen.
+
+**IP-toewijzing wordt makkelijk over het hoofd gezien en is duur om later te repareren.** Zonder een expliciete, ondertekende IP-toewijzingsovereenkomst kan een developer die voor equity werkt ambigue rechten behouden op de code die hij schreef — een probleem dat rampzalig naar boven komt op precies het moment dat het er het meest toe doet, zoals tijdens due diligence voor een financieringsronde of overname, wanneer de advocaten van een koper vragen om een schone IP-herkomst en ontdekken dat die niet bestaat.
+
+**Cap table-complicaties stapelen zich op bij elke toekomstige ronde.** Elke investeerder in elke toekomstige financieringsronde zal die vroege equitytoekenning zien en beoordelen, en een slecht gestructureerd of ongewoon groot vroeg developer-belang kan vragen oproepen, de voorwaarden van de ronde compliceren, of in sommige gevallen een kostbare opschoning vereisen — heronderhandeling, een terugkoop — voordat een investeerder überhaupt verder wil.
+
+**Rechten van minderheidsaandeelhouders creëren doorlopende verplichtingen die je mogelijk niet voorziet.** Afhankelijk van je rechtsgebied en hoe de equity was gestructureerd, kan zelfs een kleine aandeelhouder informatierechten, goedkeuringsrechten over bepaalde bedrijfshandelingen, of andere juridische rechten hebben die voor onbepaalde tijd voortduren — verplichtingen waar een founder zelden bij stilstaat wanneer de regeling destijds aanvoelde als een simpele, informele ruil.
+
+**Een praktische veiligheidschecklist als je toch met equity doorgaat:**
+1. Vesting met een betekenisvolle cliff, doorgaans minstens 6-12 maanden, nooit een op dag één volledig gevestigde toekenning
+2. Een ondertekende IP-toewijzingsovereenkomst, uitgevoerd voor of gelijktijdig met het schrijven van enige code
+3. Een duidelijk afgebakende scope, met expliciete voorwaarden voor wat er gebeurt als de relatie eindigt voordat die scope voltooid is
+4. Juridische beoordeling van de daadwerkelijke equitytoekenningsdocumenten, niet alleen een mondelinge of ge-e-mailde afspraak
+5. Een gedefinieerd terugkoopmechanisme als de persoon stopt met bijdragen
+
+Deze structurele risico's zijn precies waarom het onderscheid tussen afgebakend werk versus medeoprichter eerder in dit stuk er zo toe doet: een oprechte medeoprichter-relatie rechtvaardigt het navigeren van deze complexiteit omdat de relatie zelf bedoeld is om permanent en diep geïnvesteerd te zijn. Een afgebakende productieopdracht, waar een vaste cashprijs beschikbaar is, hoeft simpelweg geen van deze langetermijn-structurele verstrengelingen in je cap table te introduceren.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een equity-aanbod van 15% afwijzen voor een baan van €3.000

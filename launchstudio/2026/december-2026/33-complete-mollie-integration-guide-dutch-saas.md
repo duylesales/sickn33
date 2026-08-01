@@ -69,6 +69,22 @@ A properly implemented Mollie subscription system, with correct webhook handling
 
 [Get your Mollie integration scoped](https://launchstudio.eu/en/#calculator) for your specific subscription or payment model.
 
+## Handling Failed and Declined Recurring Payments Under Mollie's Mandate System
+
+Credit card subscription billing has a well-understood failure mode: a card gets declined, and standard dunning logic retries the charge a few times over several days before giving up. Mollie's mandate-based recurring payment system for iDEAL and similar local payment methods behaves differently in ways that matter for how you build your subscription renewal logic.
+
+### Why Mandate-Based Charges Fail Differently Than Card Charges
+A card charge typically fails due to insufficient funds or an expired card, and retrying hours or days later frequently succeeds once the underlying issue resolves. A mandate-based recurring charge under iDEAL depends on the customer's bank continuing to honor the standing authorization, and certain banks impose their own limits or periodic re-authentication requirements on recurring mandate charges that don't exist in the card world, meaning a straightforward "retry the same charge in three days" strategy, copied directly from card-based dunning logic, doesn't map cleanly onto how mandate failures actually behave.
+
+### Building Dunning Logic That Accounts for This
+- **Distinguish failure reasons where possible**: Mollie's webhook payloads include status and, where available, failure reason information — logic that treats every failure identically misses the chance to handle a "mandate needs re-authorization" failure differently than a genuinely temporary bank-side issue
+- **Prompt re-authorization rather than blind retries**: When a mandate itself appears to be the problem rather than a transient issue, the more effective recovery path is emailing the customer to complete a fresh authorization (a small new payment that re-establishes the mandate) rather than repeatedly retrying a charge against a mandate that may no longer be valid
+- **Set a grace period before service interruption**: Give customers a defined number of days with a clear, direct email explaining exactly what happened and what to do, before suspending access — Dutch customers in particular respond well to direct, clear communication about billing issues rather than vague "payment failed" messaging
+- **Track dunning outcomes separately from card-based dunning metrics**: If you run both Mollie and Stripe, as many LaunchStudio clients do, combining their dunning success rates into one metric can hide the fact that one payment rail is recovering failed payments meaningfully better or worse than the other
+
+### Communicating Payment Failures to Dutch Customers Specifically
+Dutch customers, accustomed to the directness of iDEAL's simple pay-or-decline flow at their own bank, tend to respond better to equally direct billing failure communication, a clear statement of what failed, why, and the specific action needed, than to the softer, more indirect phrasing common in some international SaaS billing emails. This is a small but real localization detail worth getting right alongside the technical mandate-handling logic itself, since a technically correct dunning flow paired with confusing or overly soft messaging still loses recoverable customers.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Doubling Checkout Conversion by Switching to Mollie

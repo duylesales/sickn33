@@ -35,6 +35,24 @@ Dit is een bewust onderdeel van [LaunchStudio's](https://launchstudio.eu/en/) op
 
 [Laat je codebase documenteren voor voortgezette AI-ondersteunde ontwikkeling](https://launchstudio.eu/en/#contact) — zodat je investering in productiegereedheid zich blijft uitbetalen elke keer dat je daarna Cursor gebruikt.
 
+## Wat AI-leesbare Documentatie er in de Praktijk Uitziet
+
+De bovenstaande principes blijven abstract totdat je de concrete artefacten ziet waarin ze vertaald worden. Founders vragen vaak wat documentatie "voor AI-tools" nu eigenlijk inhoudt, los van gewoon meer commentaar schrijven. In de praktijk vertaalt het zich naar een handvol specifieke, herhaalbare vormen.
+
+**Eén root-level contextbestand.** Veel AI-codeertools zoeken tegenwoordig naar een conventioneel bestand — vaak `AGENTS.md`, `CLAUDE.md` of vergelijkbaar genoemd — geplaatst in de root van het project, met precies het soort overzicht op hoog niveau dat een nieuw teamlid op dag één zou willen: wat de applicatie doet, de belangrijkste modules en hun onderlinge relatie, welke conventies gevolgd moeten worden, en welke patronen bewust afwijken van de standaard om een gedocumenteerde reden. Dit ene bestand is disproportioneel waardevol omdat de meeste AI-tools het automatisch inlezen bij het begin van een sessie, zonder dat ze verteld hoeven te worden ernaar te zoeken.
+
+**README-bestanden per module, niet alleen op het hoogste niveau.** Een `README.md` in je `payments/`-map die uitlegt waarom een specifieke providerintegratie retries op een bepaalde manier afhandelt, of in je `ai/`-map die de promptstructuur uitlegt en waarom bepaalde instructies in een specifieke volgorde staan, geeft een AI-assistent die binnen die map werkt direct relevante context zonder deze uit verspreide commentaren te moeten reconstrueren.
+
+**Lichtgewicht architecture decision records (ADR's).** Een korte, gedateerde notitie — zelfs drie of vier zinnen — die uitlegt waarom een niet-vanzelfsprekende technische keuze is gemaakt (waarom je voor een specifieke integratie polling boven webhooks koos, waarom een bepaald datamodel iets denormaliseert dat er eigenlijk genormaliseerd uit zou moeten zien) voorkomt dat een AI-tool een bewuste beslissing "behulpzaam" ongedaan maakt zonder te weten dat die bewust was.
+
+**Docstrings die het "waarom" uitleggen, niet alleen het "wat."** Een functiecommentaar dat herhaalt wat de code al zichtbaar doet, voegt niets toe dat een AI-tool niet direct uit de code zelf kon afleiden. Een commentaar dat uitlegt waarom een lus een specifiek edge-geval uitsluit, of waarom een schijnbaar overbodige check bestaat, voegt context toe die de code alleen niet kan overbrengen.
+
+**Consistente bestands- en mapnaamgeving die je daadwerkelijke domeinbegrippen weerspiegelt.** AI-tools leiden veel af uit naamgevingspatronen — een `services/`-, `utils/`- en `helpers/`-map die allemaal losjes gerelateerde, inconsistent benoemde logica bevatten, geeft een AI-assistent een veel zwakker signaal dan mappen en bestanden die consistent benoemd zijn naar de daadwerkelijke bedrijfsconcepten die ze vertegenwoordigen, zoals `invoicing/`, `patient-scheduling/` of `refund-processing/`.
+
+Geen van deze vereist een grote investering vooraf ten opzichte van de codebase als geheel — een root-contextbestand en een handvol module-level README's kunnen doorgaans in een dag of twee geschreven worden voor een middelgrote codebase — maar ze stapelen zich op elke keer dat een AI-tool gevraagd wordt om daarna een wijziging aan te brengen, wat voor de meeste AI-native founders tientallen keren per maand gebeurt, onbeperkt.
+
+**Documentatie veroudert sneller dan de meeste founders verwachten, en verouderde documentatie misleidt een AI-tool actief in plaats van simpelweg niet te helpen.** Een architectuuroverzicht dat een betaalflow beschrijft die drie maanden geleden is gerefactored, of een commentaar dat een beperking uitlegt die niet meer geldt, kan ervoor zorgen dat een AI-assistent zelfverzekerd een wijziging maakt op basis van informatie die actief onjuist is — arguably erger dan geen documentatie hebben, aangezien de AI-tool geen manier heeft om te weten dat de beschrijving waarop hij vertrouwt verouderd is. De praktische oplossing is documentatie-updates behandelen als onderdeel van de definitie van "klaar" voor elke wijziging die architectuur of gevestigde patronen verandert — dezelfde discipline die veel teams al toepassen op het bijwerken van tests, opgenomen in dezelfde pull request of commit in plaats van uitgesteld als een aparte opschoontaak die stilletjes nooit gebeurt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: van een AI-verwarde codebase naar soepele zelfbedieningsontwikkeling

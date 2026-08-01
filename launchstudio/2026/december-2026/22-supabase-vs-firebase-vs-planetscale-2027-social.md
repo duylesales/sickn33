@@ -16,6 +16,8 @@ At **LaunchStudio**, backed by Manifera's deep experience across PostgreSQL, Mon
 ✅ Cross-tenant leak testing
 ✅ Fixed in days, not weeks
 
+💸 Hidden cost most founders miss: PlanetScale killed its free tier entirely, and neither Supabase nor Firebase defaults to an EU region — your AI tool may have silently provisioned US hosting for your GDPR-bound data. A 5-minute region check now beats a compliance surprise later.
+
 His data exposure: closed in 48 hours. 🚀
 
 👉 Read the full database comparison: [Link to article]

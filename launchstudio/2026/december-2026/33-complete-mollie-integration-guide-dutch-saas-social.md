@@ -11,6 +11,8 @@ The switch to Mollie: ✅
 ✅ Correct Dutch/EU VAT handling
 ✅ Idempotent webhook handling (same rigor as Stripe)
 
+Bonus gotcha: iDEAL mandate failures don't behave like declined cards — "retry in 3 days" copied from card dunning logic often just fails again. You need re-authorization emails instead. 🔍
+
 At **LaunchStudio**, backed by Manifera's Amsterdam-based team's direct familiarity with the Dutch payment landscape, we implement this correctly, not just a checkout button. 🛡️
 
 Her result: checkout conversion MORE THAN DOUBLED — 8% → 19%, same traffic. 🚀

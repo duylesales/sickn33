@@ -34,6 +34,23 @@ De psychologische framing van "mijn zijproject omzetten in een echt bedrijf" is 
 
 [Zet je zijproject om in je eerste omzet](https://launchstudio.eu/en/#calculator) — krijg een concrete offerte voor precies wat nodig is om te beginnen met factureren.
 
+## Het Juiste Eerste Prijsmodel Kiezen, Niet Alleen een Betaalknop Toevoegen
+
+Stap 2 hierboven behandelt "voeg betalingsinfrastructuur toe" als één afgebakende engineeringtaak, wat het ook is — maar founders moeten nog steeds beslissen welk soort betaalmodel die infrastructuur moet ondersteunen, en de verkeerde keuze in dit stadium creëert later herwerk dat een iets bewustere eerste beslissing volledig vermijdt.
+
+**Drie modellen passen bij verschillende zijprojecten:**
+- **Vast maandelijks abonnement** — het simpelst te implementeren en het simpelst voor gebruikers om te begrijpen, passend wanneer je tool ruwweg consistente waarde levert aan elke gebruiker ongeacht hoeveel ze het gebruiken, aangezien een designtool die af en toe wordt gebruikt voor de gebruiker nog steeds ruwweg evenveel waard is als een die dagelijks wordt gebruikt.
+- **Gebruiksgebaseerde prijzen** — beter geschikt voor tools met oprecht variabele kosten-om-te-bedienen, vooral AI-tools waar API-kosten schalen met gebruik; een vast tarief rekenen aan je zwaarste gebruikers terwijl je API-rekening lineair tegen hen opschaalt, is een marginaal probleem in wording, dat vaak pas naar boven komt zodra het volume groeit.
+- **Eenmalige betaling** — passend voor tools die een afgebakend, eenmalig probleem oplossen (het genereren van één huisstijlgids, één rapport) in plaats van een doorlopende dienst, hoewel dit model geen terugkerende omzet biedt en continue nieuwe-klantenwerving vereist in plaats van retentie-economie.
+
+**Een praktische manier om te beslissen:** kijk hoe de bestaande gratis gebruikers van je zijproject het daadwerkelijk gebruiken. Als gebruik ruwweg uniform is over je gebruikersbestand, is een vast abonnement de simpelere en beter verdedigbare keuze. Als een klein aantal gebruikers onevenredig veel gebruik veroorzaakt — en daarmee onevenredige AI-kosten — beschermt gebruiksgebaseerde of gelaagde prijsstelling de marge beter dan één vaste prijs zou doen.
+
+**Vermijd de veelvoorkomende beginnersfout:** een prijs vaststellen door te gokken naar "wat eerlijk voelt" in plaats van terug te werken vanuit de daadwerkelijke kosten-om-te-bedienen. Een founder die €15/maand rekent voor een tool waarvan de zwaarste gebruikers alleen al €20/maand aan AI-API-kosten veroorzaken, heeft een bedrijf gebouwd dat precies verlies lijdt op zijn meest betrokken klanten — het tegenovergestelde van wat elk prijsmodel zou moeten doen. Je daadwerkelijke AI-kosten per gebruiker berekenen bij realistische gebruiksniveaus, vóórdat je een prijs vaststelt, is een oefening van vijf minuten die een veel duurdere correctie later voorkomt.
+
+**Nog een beslissing die het waard is bewust te nemen:** of je een gratis tier naast de betaalde tier aanbiedt, of volledig converteert. Een gratis tier kan blijven dienen als een trechter voor nieuwe gebruikers die de tool organisch ontdekken, maar alleen als hij bewust wordt afgebakend — een echte gebruikslimiet, niet gewoon "hetzelfde maar we vragen vriendelijk om betaling" — anders herschept het precies de val waarin de gratis versie al genoeg waarde levert, wat conversie überhaupt voorkomt.
+
+Deze prijsmodelbeslissing goed nemen voordat de ontwikkeling begint, betekent dat de betalingsinfrastructuur die je engineeringteam bouwt daadwerkelijk overeenkomt met hoe je van plan bent te rekenen, in plaats van een tweede ronde wijzigingen te vereisen zodra de mismatch duidelijk wordt uit echte gebruiksdata.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de eerste euro van een tweejarig zijproject

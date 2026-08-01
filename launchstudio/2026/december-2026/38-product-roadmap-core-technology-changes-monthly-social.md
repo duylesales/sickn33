@@ -11,6 +11,7 @@ The fix: ✅
 ✅ Shorter cycles for technical bets (weeks, not quarters)
 ✅ A weekly "technology watch" habit
 ✅ Separate "what we're building" from "how"
+✅ A monthly checklist (pricing, new releases, deprecations) — 30-60 min, owned by one named person
 
 At **LaunchStudio**, backed by Manifera's 11+ years adapting architecture to shifting tech, we build the abstraction layer that turns model updates into opportunities. 🛡️
 

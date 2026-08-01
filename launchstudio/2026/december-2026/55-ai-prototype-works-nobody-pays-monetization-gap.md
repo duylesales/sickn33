@@ -61,6 +61,20 @@ Ask directly: have you actually implemented a way to charge money? If not, that'
 
 [Confirm your payment infrastructure isn't the bottleneck](https://launchstudio.eu/en/#calculator) — rule out the technical cause before diagnosing a deeper product issue.
 
+## Testing Willingness to Pay Before Building Full Payment Infrastructure
+
+Diagnosing which of the four causes above applies to your specific situation is more useful the earlier you do it — and there's a way to get a genuine signal on causes #2 and #3 (value tier design and price mismatch) even before committing engineering time to full payment infrastructure, which matters if you're not yet certain payment infrastructure is even where your gap lives.
+
+**Cheap ways to test willingness to pay before building anything:**
+- **The direct ask, made specific.** Not "would you pay for this," which is too easy to answer generously and non-committally, but "would you pay €15/month for this, starting next month" — a specific number and a specific timeframe converts a vague compliment into a real commitment users have to actually weigh.
+- **A manual "fake door" test.** Add a visible "Upgrade" button that, when clicked, doesn't process a real payment yet but instead opens a simple form or message: "Thanks for your interest — paid tier launching soon, want to be first in line?" Click-through rate on that button is a genuine, low-cost demand signal before any payment engineering exists.
+- **Manual invoicing for your first few converts.** Before building automated billing, ask your two or three most enthusiastic users to pay via a simple bank transfer or payment link for early access to a paid tier — if real people won't complete even a manual, slightly inconvenient payment, that's a stronger signal about price-value fit than any survey response, and it validates demand before any infrastructure investment.
+- **A price-anchored waitlist.** When announcing an upcoming paid tier, state the actual price in the announcement itself, rather than "pricing TBD" — a waitlist that holds steady after a specific price is revealed is meaningfully more validated than one built before price was ever mentioned.
+
+**What these tests can't tell you:** none of these substitute for real payment infrastructure once you've confirmed genuine demand. A fake-door click or a manual bank transfer validates willingness to pay, but it doesn't scale, doesn't handle recurring billing, and doesn't give you the reliable, automated revenue a real paying customer base requires. These are demand-validation tools for the causes-#2-and-#3 diagnostic, not a replacement for the actual infrastructure covered in cause #1 above.
+
+**Sequencing that avoids wasted effort:** if you haven't yet built any payment mechanism at all, these validation tests are largely unnecessary — just build the infrastructure and see what happens, since the absence of any payment option makes the "will they pay" question untestable in the first place. These lighter-weight tests earn their value specifically when payment infrastructure already exists and conversion is still lower than expected, narrowing down whether the remaining gap is tier design, pricing, or buyer mismatch before investing further engineering or product effort chasing the wrong cause.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Discovering the Gap Was Purely Technical

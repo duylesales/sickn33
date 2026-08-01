@@ -74,6 +74,23 @@ Als zo'n alles-in-één tool een specifieke betaalprovider (zoals Mollie voor de
 
 Door de stack te gebruiken die wij met klem aanraden (Lovable/Cursor + LaunchStudio), genereer je 100% standaard, open-source code (React, Next.js, Node.js). Jij bent en blijft de eigenaar van de GitHub repository. Jij bezit de hosting accounts. Mocht je op een kwade dag besluiten te stoppen met AI en een compleet traditioneel development team in te huren, dan is je codebase volledig standaard, draagbaar (portable) en overdraagbaar.
 
+## Een Beslissingskader: De Juiste Tool Bij De Juiste Klus
+
+In plaats van eindeloos te zoeken naar dé definitieve lijst van alle AI-tools en te proberen daar één permanente favoriet uit te kiezen, is het veel nuttiger om per fase de tool te kiezen die exact goed is in die specifieke klus.
+
+| Jouw Situatie | Beste Tool | Waarom |
+|---|---|---|
+| Een ruw idee testen zonder dat er al code bestaat | Bolt of v0 | Snelste weg van prompt naar visueel, klikbaar prototype |
+| Een échte applicatie bouwen met gebruikersaccounts en meerdere datamodellen | Lovable | Beste scaffolding voor routing, state en Supabase-integratie |
+| Logica verfijnen in een bestaande codebase | Cursor | Diepe in-editor AI-context voor precieze, gerichte aanpassingen |
+| De applicatie veilig, snel en betrouwbaar maken voor productie | LaunchStudio | Menselijke engineering voor infrastructuur die AI-tools niet kunnen genereren |
+| Een betaalprovider toevoegen die specifiek is voor jouw markt (bijv. Mollie, iDEAL) | LaunchStudio | Vereist maatwerk backend-integratie, verder dan generieke Stripe-templates |
+| Slagen voor een beveiligings- of compliance-audit | LaunchStudio | Vereist RLS-policies, IAM-rollen en versleuteling die AI-tools niet configureren |
+
+De fout die de meeste oprichters maken, is proberen om één tool door élke fase van deze tabel heen te forceren. Ze proberen Bolt authenticatie te laten afhandelen, of vragen Lovable om productie-deploymentinstellingen te configureren waar het simpelweg nooit voor ontworpen is. Elke AI-tool heeft een oprechte sweet spot; de oprichters die het snelst lanceren, zijn degenen die bewust van tool wisselen bij elke faseovergang, in plaats van één tool koppig te dwingen een klus te doen buiten zijn ontwerp.
+
+Dit is ook precies waarom de mindset van "alle AI-tools in één lijst" contraproductief kan werken. Het doel is niet het vinden van de tool die beweert alles te kunnen. Het doel is weten welke twee of drie tools, in de juiste volgorde gebruikt, een échte applicatie daadwerkelijk bij een betalende klant krijgen.
+
 ## Praktijkvoorbeeld
 
 ### Een AI-Native Founder in de praktijk: De Agency Die Stopte Met Zoeken Naar De Perfecte Tool

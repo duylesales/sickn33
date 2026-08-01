@@ -9,6 +9,8 @@ Je bestudeert weken een lanceringsofferte van €2.500. De kosten van NIET lance
 
 Vraag jezelf af: hoeveel maanden is je prototype al "bijna klaar"? Wat zou een concurrent die volgend kwartaal instapt je kosten? 🤔
 
+🧮 Snelle rekensom: zelfs 5 klanten aan €40/mnd = €200 weg IEDERE maand dat je uitstelt — niet uitgesteld, gewoon weg. Vermenigvuldig met de maanden die je al hebt verspild, niet de maanden die nog komen, voor het echte cijfer.
+
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar, comprimeren we het gat tussen "werkt" en "live" tot 1-3 weken. Een echte deadline doorbreekt de uitstelval. 🛡️
 
 Haar resultaat: gelanceerd in 12 dagen, 6 klanten getekend in maand één — na 9 maanden zelfuitstel. 🚀

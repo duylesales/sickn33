@@ -15,6 +15,8 @@ Bij **LaunchStudio** dichten we die kloof voor een vaste prijs, geen verrassing:
 
 Gratis brengt je naar een prototype. Het brengt je niet naar een lancering. 🛡️🚀
 
+🧮 Snelle zelfcheck: scoor authenticatie, betalingen, datamigratie, beveiliging en integraties elk 0-3. Score 10+ (zorg, financiën, B2B)? Begroot dan voor het hoge segment.
+
 👉 Lees de verborgen belasting die niemand noemt: [Link naar artikel]
 
 #AINativeFounder #LaunchStudio #Manifera #SaaS #Startupkosten #Lovable

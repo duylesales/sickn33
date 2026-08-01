@@ -45,6 +45,24 @@ Voor de meeste founders is welke database je AI-tool ook genereerde waarschijnli
 
 [Laat je databasebeveiliging auditen](https://launchstudio.eu/en/#contact) — een verkeerd geconfigureerd RLS-beleid is een van de meest voorkomende beveiligingsgaten die LaunchStudio vindt in door AI gegenereerde apps.
 
+## Wat Het Daadwerkelijk Kost in Verschillende Groeifasen
+
+Databasekeuze wordt vaak puur in technische termen besproken, maar de prijsstructuur achter elke optie verandert betekenisvol naarmate een product groeit — en de goedkoopste optie in de prototypefase is niet altijd de goedkoopste optie zodra je betalende klanten hebt.
+
+**Gratis en vroege-fase-niveau:**
+- Supabase's gratis niveau dekt de meeste vroege prototypes comfortabel, met betaalde niveaus die beginnen bij een bescheiden maandelijkse kost zodra je de royale standaardlimieten voor databasegrootte en API-verzoeken overschrijdt.
+- Firebase's gratis niveau (Spark-plan) is vergelijkbaar royaal voor apps met weinig verkeer, maar de pay-as-you-go-prijzen (Blaze-plan) worden gemeten naar gebruik op een manier die onvoorspelbare rekeningen kan opleveren als een functie — een real-time listener die te lang openstaat, bijvoorbeeld — meer reads genereert dan verwacht.
+- PlanetScale heeft in recente prijswijzigingen zijn gratis niveau verwijderd, waardoor het de duurste optie is om simpelweg uit te proberen, wat bevestigt dat het zelden de juiste keuze is voordat je een concreet schaalprobleem hebt op te lossen.
+
+**Groeifase-niveau (tientallen tot lage honderdtallen betalende klanten):**
+- Supabase's kosten schalen redelijk voorspelbaar met databasegrootte en rekenkracht, en Row Level Security heeft geen aparte kost — het is een configuratiebeslissing, geen betaalde functie, dus het correct instellen brengt geen prijsstraf met zich mee.
+- Firebase-kosten in deze fase worden sterk gedreven door lees-/schrijfvolume in plaats van opslag, wat betekent dat een chat-zwaar of real-time-zwaar product de kosten sneller kan zien stijgen dan een vergelijkbaar groot relationeel product op Supabase.
+- PlanetScale's prijzen zijn gebouwd rond rijreads en -writes op schaal, wat pas kostenconcurrerend wordt zodra je queryvolume daadwerkelijk hoog genoeg is om de schaalarchitectuur ervan om te beginnen te rechtvaardigen.
+
+**De migratiekost die de meeste founders niet inprijzen:** overstappen naar een andere database na lancering is zelden slechts een technische migratie — het is een datamigratie met echt risico op downtime of dataverlies als het zonder zorg wordt gedaan, plus de engineeringtijd om queries, beveiligingsbeleid en integraties rond een ander datamodel te herbouwen. Deze kost zou moeten worden afgewogen tegen de marginale besparingen van overstappen, en voor de meeste AI-native founders die al op Supabase zitten, valt die rekensom zelden in het voordeel van migreren puur om kostenredenen. De vaker voorkomende aanleiding om over te stappen is een oprechte datamodel-mismatch (relationele data geforceerd in Firestore, bijvoorbeeld) in plaats van prijs alleen.
+
+**EU-dataresidentie is de moeite waard om te controleren, ongeacht welke database je gebruikt.** Supabase en Firebase bieden allebei EU-regio-hostingopties, maar geen van beide kiest daar automatisch voor standaard — een AI-tool die een nieuw project opzet, voorziet vaak in de standaardregio die in het eigen sjabloon wordt getoond, wat niet altijd EU-gebaseerd is. Voor een Nederlands of EU-gebaseerd SaaS-product dat persoonsgegevens verwerkt, is het bevestigen van je daadwerkelijke projectregio (niet zomaar aannemen dat het klopt) een controle van vijf minuten die een AVG-dataresidentieprobleem voorkomt dat veel later wordt ontdekt, doorgaans tijdens de eigen compliance-review van een klant in plaats van je eigen review. PlanetScale's regionale beschikbaarheid is beperkter dan beide alternatieven, wat nog een reden is waarom het vooral past bij founders met een al gedefinieerde, vaak op de VS gerichte, schaalvereiste in plaats van een standaard EU-eerst SaaS-product.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: het Row Level Security-gat dat niemand opmerkte

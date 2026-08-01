@@ -43,6 +43,27 @@ Geen herontwerp van je interface zonder expliciete bespreking. Geen open-einde u
 
 [Boek je gesprek van 15 minuten](https://launchstudio.eu/en/#contact) — de eerste, vrijblijvende stap in precies dit proces.
 
+## Achter Stap 2: Hoe de Zeven-Lagen-Analyse Daadwerkelijk Werkt
+
+Founders willen begrijpelijkerwijs weten wat er precies gebeurt tijdens de codebase-beoordeling, aangezien dit de stap is die zowel de offerte als de daaropvolgende tijdlijn bepaalt. De beoordeling is geen enkele technische check-in-één-keer — het zijn zeven vrij nauw omschreven inspecties, elk corresponderend met één productiegereedheidslaag, die elk een specifiek geslaagd, gezakt, of gedeeltelijk verdict opleveren in plaats van een vage algemene indruk.
+
+**Wat wordt gecontroleerd, laag voor laag:**
+1. **Frontend** — is de interface stabiel, of breekt hij onder toestanden waar de oorspronkelijke build nooit op getest is (lege data, foutresponses, trage verbindingen)? Deze laag slaagt meestal grotendeels zoals hij is, aangezien dit is waar founders de meeste iteratietijd in hun AI-tool aan besteedden.
+2. **AI/model-laag** — wordt de model-aanroep veilig gedaan vanaf een serverroute, of blootgesteld aan de clientzijde? Is er een fallback als de AI-provider een time-out krijgt of misvormde output teruggeeft?
+3. **Authenticatie** — bestaat er een echt sessie- en wachtwoordhashingsysteem, of is "inloggen" cosmetisch, met een naam opgeslagen in local storage zonder daadwerkelijke verificatie?
+4. **Database** — is er oprechte rij-niveau-isolatie tussen gebruikers, of staat het schema technisch toe dat elke geauthenticeerde gebruiker de data van iemand anders kan opvragen?
+5. **Betalingen** — bestaat er een betalingsverwerkerintegratie, en handelt die correct mislukte betalingen, terugbetalingen, en abonnementsstatuswijzigingen af?
+6. **Hosting** — is de huidige deployment stabiel onder gelijktijdige belasting, of is die alleen ooit getest door de founder in zijn eentje?
+7. **Monitoring** — waarschuwt er iets het team als het product plat gaat of fouten begint te geven, of zou een founder het alleen ontdekken via een boze klant-e-mail?
+
+Elke laag krijgt een specifieke notitie in het scopingdocument — niet "heeft werk nodig" maar het precieze gat, zoals "geen rij-niveau-beveiligingsbeleid geconfigureerd op de boekingentabel" — omdat vage bevindingen vage offertes opleveren, en vage offertes zijn precies wat founders die deze stap overwegen, proberen te vermijden.
+
+**Waarom dit een vaste offerte oplevert in plaats van een range:** omdat de bevinding van elke laag specifiek is in plaats van bij benadering, kunnen de engineeringuren die nodig zijn om elk gat te dichten met echt vertrouwen worden geschat, in plaats van opgevuld om onzekerheid af te dekken. Een founder wiens authenticatie al correct Supabase Auth gebruikt, krijgt een kleiner offertecomponent voor die laag dan een founder wiens "authenticatie" decoratief blijkt te zijn — de beoordeling stuurt direct het cijfer, in plaats van dat het cijfer eerst wordt vastgesteld en achteraf gerechtvaardigd.
+
+Dit is ook waarom de codebase-beoordeling vóór de offerte plaatsvindt, niet andersom: een vaste prijs offreren zonder eerst de daadwerkelijke zeven lagen te inspecteren zou gokken vereisen, en gokken is precies het open-einde-facturatierisico dat vastgeprijsde offertes juist zijn ontworpen om te elimineren. Dit is de mechanische reden waarom de offerte van Stap 3 gespecificeerd kan zijn in plaats van bij benadering, en de reden waarom twee founders die vergelijkbaar klinkende producten beschrijven tijdens hun eerste gesprek toch betekenisvol verschillende offertes kunnen ontvangen zodra hun daadwerkelijke codebases zijn beoordeeld.
+
+**Wat founders vooraf kunnen doen om deze stap sneller te maken:** de live URL van je prototype klaar hebben, en indien mogelijk een manier om leestoegang tot de codebase te verlenen (een GitHub-link, of een export vanuit Lovable, Bolt, Cursor, of v0), vóór de codebase-beoordeling betekent dat de zeven-lagen-inspectie direct kan beginnen in plaats van te wachten op toegangslogistiek. Founders hoeven zelf geen technische samenvatting voor te bereiden — gaten accuraat beschrijven is precies waarvoor de beoordeling bestaat — maar de daadwerkelijke code toegankelijk hebben, in plaats van alleen een beschrijving van wat het hoort te doen, is wat Stap 2 verandert van een gesprek in een oprechte inspectie met een specifiek, verdedigbaar verdict per laag.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: elke stap doorlopen, van begin tot eind

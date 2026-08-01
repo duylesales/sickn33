@@ -12,6 +12,8 @@ Het beslissingskader: ✅
 3️⃣ Bewezen wereldwijde latentiebehoeften? → Fly.io
 4️⃣ Niet zeker? → Begin met Vercel
 
+🗄️ Verborgen beslissing #2: geen van deze 3 platforms is een databaseproduct. De verkeerde combinatie van rekenkracht+database (bijv. serverless functions zonder connection pooler) kan de verbindingslimiet van je database uitputten onder echte belasting — kies een bewezen koppeling (Vercel+Supabase, Railway+Railway Postgres, Fly.io+Fly Postgres).
+
 Bij **LaunchStudio**, gesteund door Manifera's DevOps-ervaring over 160+ projecten, matchen we het platform aan JOUW architectuur — inclusief hybride opzetten. 🛡️
 
 Haar oplossing: frontend op Vercel gehouden, alleen de nachtelijke taak naar Railway verplaatst. Nul verstoring, probleem opgelost. 🚀

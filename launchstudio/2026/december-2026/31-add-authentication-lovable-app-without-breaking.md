@@ -55,6 +55,25 @@ Because authentication touches your entire application at once, mistakes here ar
 
 [Get your authentication implementation reviewed](https://launchstudio.eu/en/#contact) before real users start creating real accounts with real data.
 
+## Beyond the Missing Query Filter: Other Authorization Gaps Worth Checking
+
+The URL-parameter data leak described above is the single most common authentication gap in AI-generated prototypes, but it isn't the only one. A login page that works correctly can still coexist with several other authorization gaps that produce the same false sense of "this is handled" until a real user, or a real attacker, finds them.
+
+### Client-Side-Only Access Control
+Some AI-generated implementations hide a page or button based on the logged-in user's role purely in the frontend — an admin-only page simply isn't linked from the regular navigation, for instance. This provides zero actual protection: anyone who knows or guesses the URL directly can load the page regardless of role, because the restriction exists only in what's displayed, not in what the server actually permits. Every access restriction needs to be enforced server-side, with the frontend hiding merely serving as a convenience, not the security mechanism itself.
+
+### Insecure API Routes Behind a Secure-Looking Frontend
+A polished, properly-authenticated frontend can still sit in front of API routes that don't independently verify the request is authorized — for instance, an API endpoint that will happily return any user's data if called directly (via a tool like Postman or a browser's developer console) rather than through the app's own interface, because the authorization check only happens in the frontend code path, not in the API route itself. Every API route needs its own independent authorization check, regardless of how well-protected the frontend that normally calls it appears to be.
+
+### Role Escalation Through Editable Client Data
+Applications that store a user's role or permission level in a place the client can modify — a value in local storage, an editable form field, a client-controlled request parameter — create an opportunity for a user to simply change "role: user" to "role: admin" themselves. Role and permission data needs to live server-side, tied to the authenticated session, never trusted from anything the client sends.
+
+### Session and Token Handling Details
+Beyond the core login flow, details like token expiry (does a session actually expire, or persist indefinitely once issued?), secure cookie flags, and proper session invalidation on logout or password change are easy to overlook in a fast AI-generated implementation, and each represents a real, if less immediately visible, exposure window.
+
+### Why a Single Cross-User Test Isn't Enough
+Fenna's brother's test, trying to view another user's data by changing a URL parameter, is an excellent first check, but it only catches the data-scoping category of gap. A genuinely thorough authentication review checks each of the categories above separately, since a codebase can pass the URL-parameter test cleanly while still failing on client-side-only role checks or an unprotected API route reachable outside the normal frontend flow.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Catching an Auth Gap Before Any Damage Was Done

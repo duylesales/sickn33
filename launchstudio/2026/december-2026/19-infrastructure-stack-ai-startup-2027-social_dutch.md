@@ -18,6 +18,8 @@ De 7-lagen-stack die elke AI-startup nodig heeft: 📊
 
 AI-tools leveren laag 1 en een deel van 2. Lagen 3-7 zijn wat **LaunchStudio** bouwt — gesteund door Manifera's 120+ engineers, 160+ zakelijke projecten. 🛡️
 
+📐 Volgorde is ook belangrijk: authenticatie gaat ALTIJD eerst — elke andere laag (database-isolatie, facturering, alerts) is gekoppeld aan weten bij wie een verzoek hoort. Bouw betalingen vóór authenticatie en je rekent geld aan mensen die je systeem niet betrouwbaar kan identificeren.
+
 Ze lanceerde naar 19 planners, nul dataincidenten. 🚀
 
 👉 Zie welke lagen jouw prototype mist: [Link naar artikel]

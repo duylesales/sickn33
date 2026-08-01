@@ -15,6 +15,8 @@ The fix costs almost nothing to run: ⚡
 
 At **LaunchStudio**, this monitoring stack is standard in every launch — not a €500 add-on you buy after your first outage. 🛡️
 
+📊 Pro move: set your SLO *before* the outage. 99.9% uptime = ~43 min/month downtime budget. Track the burn like a resource, not a surprise.
+
 Losing 2 of your first 10 customers to an unnoticed outage is a 20% churn event. Don't find out the hard way. 🚀
 
 👉 Read why monitoring beats marketing at launch: [Link to article]

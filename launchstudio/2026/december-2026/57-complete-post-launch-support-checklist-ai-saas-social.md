@@ -15,6 +15,8 @@ The checklist that actually matters, daily → weekly → monthly → growth-mil
 📅 MONTHLY: backup restore tests, security logs, dependency patches
 📅 GROWTH: re-verify data isolation, reassess scaling, revisit compliance
 
+🚦 Set actual thresholds, not vibes: uptime below 99%/30 days, API errors jumping past 1-2%, or support response creeping past a few hours should all trigger same-day action — not wait for the weekly review.
+
 At **LaunchStudio**, €49/month Launch & Grow support means Manifera's team shares this load — hosting, patching, monitoring — so you focus on customers, not infrastructure fires. 🛡️
 
 His result: reliability shifted from "I discover problems by accident" to "I get alerted before customers notice." 🚀

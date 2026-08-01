@@ -36,6 +36,20 @@ Je kunt niet duurzaam prijzen zonder je daadwerkelijke AI-kosten per klant te ke
 
 [Zet je gebruikstracking en factureringstiers op](https://launchstudio.eu/en/#calculator) voordat een handvol zware gebruikers stilletjes je marges uitholt.
 
+## AI-kosten Voorspellen Voordat Je Enige Echte Gebruiksdata Hebt
+
+Alles hierboven gaat ervan uit dat je al klanten hebt die echte gebruikspatronen genereren om te analyseren. Founders die een nog-niet-gelanceerd AI SaaS-product prijzen, staan voor een lastigere versie van hetzelfde probleem: een duurzame prijs vaststellen zonder nog daadwerkelijke kostendata om naar te verwijzen. Dit vereist bewuste inschatting in plaats van wachten om er na lancering op de harde manier achter te komen.
+
+**Bouw een schatting van de kosten per interactie voordat je enige prijscopy schrijft.** Neem je daadwerkelijk geplande prompts (systeeminstructies plus een realistisch voorbeeld van gebruikersinvoer) en draai ze door de eigen prijscalculator of gedocumenteerde tarieven per token van je beoogde AI-provider, inclusief de volledige context die je daadwerkelijk zult sturen — niet een versimpelde testprompt, aangezien echte systeemprompts, gespreksgeschiedenis en opgehaalde context het effectieve tokenaantal ver kunnen vermenigvuldigen boven wat een kaal gebruikersbericht suggereert.
+
+**Modelleer minstens drie gebruikspersona's, niet slechts een "gemiddelde" gebruiker.** Een lichte gebruiker (een handvol interacties per maand), een typische gebruiker, en een oprecht zware gebruiker (iemand die het product bijna dagelijks gebruikt, of op een in workflow ingebedde manier) produceren zeer verschillende kostenprofielen, en prijzen baseren op alleen een "gemiddelde" verdoezelt hoe duur je daadwerkelijke zware-gebruiksstaart zou kunnen worden — precies de blinde vlek die Koens TekstGenie overviel, zoals hierboven behandeld.
+
+**Stress-test je model bij 10x en 100x je verwachte gebruik per persona**, niet omdat je dat onmiddellijk verwacht, maar omdat het onthult of je kostenstructuur gracieus breekt (kosten schalen ruwweg lineair, blijvend een voorspelbaar aandeel van omzet) of catastrofaal (een specifiek interactiepatroon schaalt op een manier die stilletjes één populaire klantrelatie failliet zou kunnen laten gaan). Producten met kosten per verzoek die zich opstapelen — multi-step AI-agenten, functies die verschillende AI-oproepen aan elkaar koppelen, of tool-calling-lussen die een onvoorspelbaar aantal keren kunnen itereren — zijn bijzonder de moeite waard om op deze manier te stress-testen vóór lancering, aangezien deze patronen precies zijn waar daadwerkelijke gebruikskosten sterk kunnen afwijken van een simpele schatting van "kosten per gebruikersbericht".
+
+**Bouw een expliciete gevoeligheidscheck in voor prijswijzigingen van de provider.** Modelleer je eenheidseconomie bij je huidige providerprijzen, en opnieuw bij een betekenisvol hoger tarief (een stijging van 30-50% is een redelijk stressscenario gezien hoe AI-providerprijzen zich historisch hebben bewogen), zodat een toekomstige prijswijziging een geanticipeerd scenario is waar je al een reactie op hebt gepland, in plaats van een verrassing die je hele prijsmodel in één keer onder water zet.
+
+**Behandel deze pre-lancering-schatting als een startshypothese, niet een definitief antwoord.** Zodra echte gebruiksdata beschikbaar komt, vervang je de schatting door daadwerkelijk gemeten kosten zoals beschreven in de monitoringaanpak hierboven — de taak van het pre-lanceringmodel is je initiële prijs in een verdedigbaar bereik krijgen, niet de permanente basis blijven voor prijsbeslissingen zodra betere data bestaat.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een onder-water-prijsmodel ontdekken (en repareren)

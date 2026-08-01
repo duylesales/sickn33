@@ -12,6 +12,7 @@ Wat je in plaats daarvan moet testen: ✅
 ✅ Op referentie gebaseerde scoring tegen bekend-goede voorbeelden
 ✅ Kosten- en latentieregressiecontroles
 ✅ Periodieke menselijke beoordeling voor toon/nuance
+✅ Een "golden dataset" van echte inputs/eerdere bugs — prompts geversioneerd als code, getest voor elke merge
 
 Bij **LaunchStudio**, gesteund door Manifera's QA-discipline over 160+ projecten, bouwen we deze gelaagde strategie in. Zijn resultaat: 2 echte bugs gevangen voordat klanten ze ooit zagen. 🛡️🚀
 

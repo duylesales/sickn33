@@ -8,6 +8,8 @@ Voorspellingsartikelen zijn meestal speculatieve onzin. Hier zijn 5 ONDERBOUWDE 
 4️⃣ AI-providerkosten/mogelijkheden blijven onvoorspelbaar verschuiven → bouw modelagnostische flexibiliteit
 5️⃣ De founders die WINNEN zijn degenen die daadwerkelijk lanceerden → onvolmaakt en live verslaat perfect en verborgen
 
+🎯 Score jezelf, 1 punt elk: productiebudget-lijnitem, betrouwbaarheid boven noviteit, compliance ingebouwd, flexibiliteit om van provider te wisselen, daadwerkelijk gelanceerd. 4-5 = goed gepositioneerd. 0-1 = dit is je hoogst-hefboom-fix vóór al het andere.
+
 De gemeenschappelijke draad door alle vijf: sluit de kloof tussen je AI-prototype en een oprecht productieklaar product — eerder, niet later. 🎯
 
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar over Amsterdam, Singapore, en Ho Chi Minh-stad, is dit precies het werk dat we doen. 🛡️

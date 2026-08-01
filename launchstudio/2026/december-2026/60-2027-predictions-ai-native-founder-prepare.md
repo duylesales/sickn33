@@ -59,6 +59,28 @@ Each prediction points toward the same underlying preparation: closing the gap b
 
 [Prepare for 2027 by launching before it starts](https://launchstudio.eu/en/#calculator) — the founders best positioned for whatever comes next are the ones already operating with real customers and real revenue.
 
+## A Concrete 2027 Readiness Self-Assessment
+
+Reading five predictions and their attached preparation steps is useful in the abstract; turning that into an honest sense of your own specific readiness requires actually scoring yourself against each one, rather than nodding along in general agreement and moving on without a concrete next action.
+
+**Score yourself honestly, one point each, on the following:**
+1. **Production infrastructure line item** — do you have an actual budget, not just an aspiration, allocated for security, hosting, and payments separate from your AI tool subscription costs?
+2. **Reliability over novelty** — if a competitor launched an AI feature identical to yours tomorrow, would your product still win on reliability and trust, or does its appeal rest primarily on being first to have the feature at all?
+3. **Compliance built in, not bolted on** — could you answer a customer's specific data-handling question today, confidently and specifically, or would you need to "get back to them"?
+4. **Architectural flexibility** — if your current AI provider changed pricing significantly or deprecated your model tomorrow, how many days of work would switching providers realistically take?
+5. **Actually launched** — is your product live, with real paying customers today, or is it still in the "almost ready" state it's been in for the last several months?
+
+**What your score suggests:**
+- **4-5:** you're genuinely well-positioned heading into 2027 relative to most AI-native founders at a comparable stage — the remaining work is refinement, not foundational catch-up.
+- **2-3:** you have real gaps, but they're identifiable and addressable rather than requiring a fundamental rethink — prioritize whichever scored item represents the largest specific risk to your particular business model first.
+- **0-1:** the gap between your current state and production-readiness is the single highest-leverage thing to address before anything else on your roadmap, since every other 2027 prediction above assumes a baseline of production-readiness this score suggests hasn't been reached yet.
+
+**Why self-scoring honestly is harder than it sounds:** founders deep in their own product tend to score generously on familiarity, reasoning "I understand my architecture, so it must be flexible enough," rather than strictly on evidence, such as "I have actually tested switching AI providers and confirmed it takes under a week." The second, evidence-based standard is the one worth holding yourself to, since it's the standard an investor, a customer's procurement team, or an actual provider deprecation will hold you to regardless of how confident the founder's own assessment felt in the moment.
+
+**The most useful next step regardless of score:** rather than treating this as a one-time exercise, revisit it at the same cadence as the year-end technical audit covered in earlier guidance — a five-minute honest self-score today, repeated periodically, tracks genuine progress in a way that a single point-in-time assessment cannot.
+
+**What a low score across multiple items actually implies, practically speaking:** it doesn't mean starting over, and it doesn't mean every gap needs closing simultaneously. It means picking the single lowest-scoring item that poses the greatest specific risk to your particular business — a founder in a data-sensitive niche should prioritize item 3 first, while a founder dependent on a single AI provider with known volatility should prioritize item 4 — rather than treating all five predictions as equally urgent for every founder regardless of their specific product and market.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Positioning Early for What 2027 Actually Brought

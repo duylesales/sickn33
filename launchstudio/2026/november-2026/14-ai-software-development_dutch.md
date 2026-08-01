@@ -99,6 +99,24 @@ Wat Manifera uniek gekwalificeerd maakt voor productie-werk in AI software ontwi
 
 [Bereken direct uw projectkosten](https://launchstudio.eu/nl/#calculator) of [omschrijf uw project voor een vrijblijvende offerte](https://launchstudio.eu/nl/#contact).
 
+## Hoe Je Jouw AI-Gegenereerde Frontend Checkt Voordat Je Met Wie Dan Ook Gaat Praten
+
+Voordat je naar LaunchStudio, een agency, of wie dan ook stapt voor productie-engineering, besteed eerst 30 minuten aan het checken van wat jouw AI software development tool daadwerkelijk heeft opgeleverd. Dit bepaalt zowel de prijs die je redelijkerwijs mag verwachten, als hoeveel van je frontend daadwerkelijk overleeft tijdens de overgang naar productie.
+
+Controleer deze vijf zaken:
+
+**1. Componentstructuur.** Open de codebase en kijk of je één reusachtig `App.jsx` bestand ziet, of juist een netjes opgesplitste componentenboom. Moderne AI-tools zoals Lovable genereren tegenwoordig steeds vaker schone, modulaire componenten, maar zwaar itererende promptsessies kunnen nog altijd monolithische bestanden opleveren die wat lichte refactoring goed kunnen gebruiken voordat een backend-team er veilig op kan aansluiten.
+
+**2. Hardgecodeerde data.** Doorzoek de codebase op reeksen nepgebruikers, neppe producten of neptransacties die rechtstreeks in componentbestanden staan. Dit is volkomen normaal — AI-tools gebruiken mock data om UI-states te demonstreren — maar het vertelt een engineer precies hoeveel data-fetching en API-logica nog helemaal from scratch gebouwd moet worden.
+
+**3. Environment variables.** Check of er een `.env` of `.env.local` bestand bestaat. Als API-sleutels daar in platte tekst in staan en de repository is publiek, is dat een acuut beveiligingslek dat als allereerste gerepareerd moet worden, vóór er ook maar aan iets anders wordt gewerkt.
+
+**4. Diepte van de routing.** Tel hoeveel afzonderlijke pagina's of routes er daadwerkelijk bestaan. Een marketingsite van vijf pagina's is een compleet andere productieklus dan een SaaS-dashboard met twintig routes en geneste gebruikersrechten.
+
+**5. API-aanroepen naar derden.** Zoek naar `fetch`-aanroepen of SDK-imports die rechtstreeks vanuit frontend-componenten verwijzen naar Stripe, OpenAI of vergelijkbare diensten. Deze aanroepen functioneren doorgaans alleen veilig vanaf een beveiligde backend, niet vanuit de browser — dit vroegtijdig signaleren bespaart serieuze tijd tijdens de daadwerkelijke engineeringfase.
+
+Oprichters die deze audit van 30 minuten uitvoeren, stappen een prijsgesprek in — bij een agency of bij LaunchStudio — terwijl ze precies weten waar ze om vragen, in plaats van een offerte te accepteren die gebaseerd is op vage aannames over hoeveel er "waarschijnlijk" herbouwd moet worden. Het is bovendien de snelste manier om een founder-vriendelijke productiepartner te onderscheiden van een agency die simpelweg een volledige herbouw probeert te rechtvaardigen.
+
 ## Praktijkvoorbeeld
 
 ### Een AI-Native Founder in de praktijk: De Offerte Van De Agency Die 20 Keer Hoger Was Dan Nodig

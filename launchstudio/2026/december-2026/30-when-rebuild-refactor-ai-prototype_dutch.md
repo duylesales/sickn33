@@ -39,6 +39,24 @@ Omdat founders emotioneel geïnvesteerd zijn in hun eigen prototype (of, omgekee
 
 [Laat een eerlijke herbouw-versus-refactor-beoordeling uitvoeren](https://launchstudio.eu/en/#contact) van je worstelende AI-prototype.
 
+## Een Zelfdiagnose die je Deze Week Kunt Uitvoeren, Voordat je Betaalt voor Enige Beoordeling
+
+Voordat je een externe beoordeling inschakelt, kunnen founders zelf een ruwe versie van de laag-voor-laag-diagnose uitvoeren, met behulp van signalen die al in hun eigen tools aanwezig zijn. Dit vervangt geen degelijke technische review, maar het vertelt je genoeg om dat gesprek in te gaan met een veel duidelijker beeld van wat er daadwerkelijk mis is, en om te voorkomen dat je een volledige rebuild aangesmeerd krijgt die je niet nodig hebt.
+
+### Delf je Eigen Bugfix-geschiedenis
+Kijk door je commitgeschiedenis of de chatgeschiedenis van je AI-codeertool over de afgelopen maand en tel welke bestanden of functies steeds opnieuw opduiken als "dit nog een keer repareren." Een patroon waarbij dezelfde twee of drie bestanden steeds terugkeren, wijst op een geconcentreerd, specifiek probleem, vaak authenticatie- of data-scoping-logica, precies het kenmerk van een refactor-kandidaat. Een patroon waarbij reparaties gelijkmatig verspreid zijn over bijna elk bestand in je codebase, zonder enige concentratie, wijst eerder op de systemische, fundamentele problemen die op een vollediger rebuild duiden.
+
+### Scheid Gebruikersklachten van je Eigen Frustratie
+Houd twee lijsten bij: waar je daadwerkelijke gebruikers over klagen, en wat jou persoonlijk als bouwer frustreert. Deze wijken vaker uiteen dan founders verwachten. Gebruikers kunnen prima tevreden zijn met een interface die een founder is gaan afkeuren om puur esthetische redenen die niets met functie te maken hebben, in welk geval het refactoren van de onderdelen waar gebruikers daadwerkelijk problemen mee ervaren, terwijl gevalideerd ontwerp met rust wordt gelaten, de juiste keuze is, zelfs als het niet de persoonlijke rebuild-kriebel van de founder wegneemt.
+
+### Test de "Traceerbaarheid" van je Eigen Codebase
+Kies één willekeurige functie en probeer, van begin tot eind, elk bestand en elke functie te traceren die betrokken is bij het laten werken ervan. Als jij (of een technische vriend) dit in een redelijke tijd kunt doen, heeft je codebase waarschijnlijk genoeg onderliggende structuur om te refactoren. Als het traceren van zelfs één functie uitmondt in een uren durende kluwen door inconsistente, schijnbaar ongerelateerde bestanden, is dat een echt signaal richting het vollediger-rebuild-eind van het spectrum — niet slechts een gevoel van frustratie, maar een structurele bevinding.
+
+### Controleer of het Kernconcept Zelf Daadwerkelijk is Gevalideerd
+Los van elke vraag over codekwaliteit: heb je echt bewijs — echte gebruikers, echt gebruik, echte betalingsbereidheid — dat het kernproductconcept klopt? Een worstelend prototype waarvan het concept gevalideerd is, is een sterke refactor-kandidaat, hoe rommelig de code ook is. Een worstelend prototype waarvan het concept nog onbewezen is, is een zwakkere rebuild-kandidaat ongeacht de codekwaliteit, omdat de dringendere open vraag product-market fit is, niet de codebase.
+
+Voer deze vier controles eerlijk uit, op papier, vóór je eerste gesprek met wie dan ook die een beoordeling aanbiedt. Je haalt meer waarde uit dat gesprek, en je bent veel moeilijker iets aan te smeren, wanneer je al echt signaal in handen hebt in plaats van alleen een vaag, uitgeput gevoel dat "alles kapot is."
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: 80% van een "kapot" prototype redden

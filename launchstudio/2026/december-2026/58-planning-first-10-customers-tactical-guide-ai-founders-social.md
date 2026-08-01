@@ -13,6 +13,8 @@ Founders treat their first 10 customers like customer #1,000 — ads, funnels, c
 ✅ Show up where your niche already gathers (Slack, forums, events)
 ✅ Over-deliver on responsiveness — fix bugs same-day
 
+📝 Track more than vibes per conversation: their exact words for the problem, the exact moment hesitation shows up, and their specific price reaction. One spreadsheet row per call — under 2 minutes — becomes a pattern-recognition tool no single call can give you.
+
 At **LaunchStudio**, we make sure your product can survive this personal, high-scrutiny phase — reliable, secure, launch-ready — backed by Manifera's 160+ delivered projects. 🛡️
 
 His result: 10 customers, 3 weeks, one list of 40 names, zero ad spend. 🚀

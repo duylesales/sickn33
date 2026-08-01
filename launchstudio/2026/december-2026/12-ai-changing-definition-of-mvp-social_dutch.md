@@ -17,6 +17,8 @@ De nieuwe MVP-checklist: ✅
 
 Bij **LaunchStudio** dichten we precies deze kloof — zonder ook maar één knop aan te raken die jij hebt ontworpen. Gesteund door Manifera's 120+ engineers, 11+ jaar. 🛡️🚀
 
+🧪 Test van 5 seconden: ververs de pagina hard, midden in een sessie. Data weg of uitgelogd? Dat is geen bug — dat is je "MVP" die vertelt dat er geen echte database is.
+
 👉 Lees hoe AI "levensvatbaar" herdefinieerde: [Link naar artikel]
 
 #MVP #AINativeFounder #LaunchStudio #Manifera #SaaS #StartupBouwen

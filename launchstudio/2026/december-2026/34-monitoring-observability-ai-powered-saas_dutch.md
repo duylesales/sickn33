@@ -38,6 +38,28 @@ De meeste AI-native founders hebben geen (en hebben geen) toegewijde observabili
 
 [Zet AI-specifieke monitoring op](https://launchstudio.eu/en/#contact) voor je product voordat een stille kwaliteitsregressie je klanten kost die je nooit eens hoort klagen.
 
+## Alertdrempels Instellen zonder Alertmoeheid te Veroorzaken
+
+Zodra de drie observability-lagen op hun plek staan, is de volgende praktische uitdaging bepalen wat daadwerkelijk een alert rechtvaardigt versus wat thuishoort in een dashboard dat je periodiek bekijkt. Doe je dit verkeerd in de ene richting, dan raken echte problemen begraven onder ruis; doe je het verkeerd in de andere richting, dan begint wie dienst heeft alerts na de derde valse melding in een week simpelweg te negeren.
+
+**Vermijd alerten op elke individuele mislukte AI-oproep.** AI-providers-API's kennen als vanzelfsprekend tijdelijke rate limits, timeouts en af en toe misvormde responses — één mislukte oproep die bij een retry alsnog slaagt, is normale operationele ruis, geen incident. Alert in plaats daarvan wanneer het *percentage* mislukkingen een drempel overschrijdt (zeg, meer dan 5% van de oproepen mislukt binnen een voortschrijdend venster van 15 minuten), wat een echte provider-storing of integratiebug onderscheidt van gewone tijdelijke haperingen.
+
+**Baseline eerst, drempel later.** In plaats van op dag één een willekeurig getal te kiezen ("alert bij latentie boven 3 seconden"), verzamel eerst minstens een week of twee echte productiedata en stel drempels vervolgens relatief in ten opzichte van je eigen gemeten baseline (bijvoorbeeld: alert als de p95-latentie het dubbele van het voortschrijdende gemiddelde van de afgelopen 7 dagen overschrijdt) in plaats van een getal dat abstract redelijk klonk maar niet weerspiegelt hoe jouw specifieke AI-functie zich daadwerkelijk gedraagt.
+
+**Scheid kostenalerts van kwaliteitsalerts van uptime-alerts, en route ze verschillend.** Een kostenanomalie is urgent maar vereist zelden dezelfde onmiddellijke reactie als een volledige storing, terwijl een kwaliteitsregressie die via feedbackdata wordt gesignaleerd eerder een onderzoek diezelfde dag rechtvaardigt dan een piepertje om 2 uur 's nachts. Alle drie met identieke urgentie behandelen traint wie dienst heeft om uiteindelijk alle alerts even genegeerd te behandelen.
+
+**Een redelijke startset alertregels ziet er zo uit:**
+
+1. AI-oproepfoutpercentage boven 5% binnen 15 minuten → directe melding
+2. AI-kosten per gebruiker of per functie boven 3x het voortschrijdende gemiddelde van 7 dagen op één dag → beoordeling diezelfde dag
+3. Duim-omlaag-feedbackpercentage voor een specifieke functie meer dan het dubbele van het voortschrijdende gemiddelde van 30 dagen → gemarkeerd voor de volgende kwaliteitsbeoordelingscyclus, niet per se een directe piep
+4. p95 AI-responslatentie meer dan 2x de voortschrijdende baseline gedurende meer dan 10 minuten → directe melding
+5. Nul AI-oproepen gelogd voor een functie die normaal gezien regelmatig verkeer heeft → directe melding (dit duidt vaak op een kapotte integratie, niet slechts op rustig gebruik)
+
+**Beoordeel en stel drempels periodiek bij.** Een drempel die logisch was bij 50 gebruikers kan bij 5.000 gebruikers constante valse positieven genereren, en een drempel gekalibreerd voor een volwassen, stabiele functie zal constant misvuren bij een net gelanceerde functie die zijn gebruikspatroon nog aan het vinden is. Behandel alertdrempels als iets om elk kwartaal opnieuw te bekijken, niet als een configuratie die eenmalig tijdens de initiële implementatie wordt ingesteld en daarna nooit meer wordt aangeraakt.
+
+Deze balans goed krijgen draait minder om tooling en meer om beoordelingsvermogen — precies waarom founders profiteren van iemand die deze kalibratie-oefening al eerder heeft doorlopen, in plaats van het te leren via een gemist incident of een uitgebrande wachtdienstrotatie.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een stille kwaliteitsdaling vangen via gebruikersfeedback

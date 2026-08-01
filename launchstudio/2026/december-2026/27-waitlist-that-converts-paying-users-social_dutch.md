@@ -11,6 +11,7 @@ Hoe bouw je een wachtlijst die daadwerkelijk converteert: ✅
 ✅ Bied founding-member-voordelen gekoppeld aan echte commitment
 ✅ Segmenteer op betrokkenheid, niet aanmeldingsdatum
 ✅ Lanceer naar de wachtlijst VOORDAT je publiek gaat
+✅ Nurture elke 2-3 weken met een échte update, geen opvulling — één "nog steeds geïnteresseerd?"-bericht vóór lancering wint het stille derde deel van je lijst terug 📬
 
 Haar geheim: 180 gefilterde aanmeldingen → 61 betalende klanten = 34% conversie. 🎯
 

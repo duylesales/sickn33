@@ -11,6 +11,7 @@ De oplossing — AI-bewuste CI/CD: ✅
 ✅ Versioneer je prompts zoals code
 ✅ Gefaseerde uitrol — eerst één klant, niet alle zes
 ✅ Kosten- en latentiepoorten, niet alleen "werkt het"
+✅ Log de model- en promptversie bij elke reactie — alleen zo herken je "onze regressie" versus "storing bij de provider" in minuten in plaats van uren 🔍
 
 Bij **LaunchStudio**, gesteund door Manifera's 160+ geleverde projecten, bouwen we deze pijplijn in. Zijn resultaat: 2 regressies gevangen voordat ze ooit een klant bereikten. 🛡️🚀
 

@@ -63,6 +63,22 @@ Ask concretely: how many potential customers have you talked to who were ready t
 
 [Stop the clock on delay](https://launchstudio.eu/en/#calculator) — get a concrete timeline and price for launching what you've already built.
 
+## A Simple Model for Putting a Number on Your Own Delay
+
+The questions above help a founder feel the weight of delay, but a rough number is more persuasive than a feeling, especially when justifying a launch decision to yourself or a co-founder. Here's a simple way to approximate your own monthly cost of not launching.
+
+**Start with a realistic monthly revenue estimate.** Take your expected number of customers in month one of being live, multiplied by your planned price point. Even a conservative estimate — say, 5 customers at €40/month, or €200 — gives you a number to work with. Every month you delay launch is a month that €200 (or whatever your real number is) simply didn't happen, and doesn't retroactively appear later; it's gone, not deferred.
+
+**Add the compounding effect of lost early customers.** Early customers acquired in month one often refer others, provide feedback that improves conversion for later customers, and become case studies that ease future sales conversations. A month of delay doesn't just cost that month's direct revenue — it pushes back the start of a compounding chain of referrals and feedback loops that would otherwise have already begun.
+
+**Factor in competitive capture, even roughly.** If you can identify even one plausible competitor entering your space, estimate what percentage of your addressable customer base they might capture per month of head start — even a rough 2-5% monthly erosion estimate, compounded over several months of delay, produces a number worth taking seriously.
+
+**Multiply by the number of months you've already delayed, not just the number ahead of you.** Floor's case below illustrates why this matters: the honest calculation isn't "what would one more month cost," it's "what did the nine months already spent cost" — almost always a larger and more sobering number than founders expect when they finally sit down and do the arithmetic instead of estimating from a feeling.
+
+**Compare the total against your actual launch cost.** Once you have even a rough monthly figure, multiply it by your realistic delay window and compare it directly against a concrete production launch quote. For most AI-native founders, this comparison — real numbers on both sides, rather than a vague sense that launching is "expensive" and waiting is "free" — is what actually reframes the decision.
+
+This exercise isn't meant to produce a precise, defensible figure for a board deck. It's meant to replace the felt asymmetry between visible launch cost and invisible delay cost with two numbers a founder can actually compare side by side, which is usually enough to break the "almost ready" pattern on its own, before any external deadline forces the issue.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Nine Months of "Almost Ready"

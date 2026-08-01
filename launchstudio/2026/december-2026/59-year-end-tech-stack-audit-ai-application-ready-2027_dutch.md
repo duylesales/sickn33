@@ -41,6 +41,26 @@ Een audit die niet leidt tot geprioriteerde actie is gewoon angstopwekkend huisw
 
 [Boek een jaareinde technische audit](https://launchstudio.eu/en/#contact) — begin 2027 met duidelijkheid in plaats van aannames over de daadwerkelijke gezondheid van je stack.
 
+## Een Simpel Kader voor het Prioriteren van Wat de Audit Vindt
+
+Een audit over vijf verschillende dimensies — beveiliging, kosten, technische schuld, architectuuractualiteit, en compliance — kan makkelijk vijftien of twintig individuele bevindingen naar boven brengen. De oprecht nuttige stap na dat punt is ze trieren in een geprioriteerde volgorde, aangezien een lange ongedifferentieerde lijst precies het soort angstopwekkende huiswerk is waar de eerdere sectie voor waarschuwt.
+
+**Een praktische scoringsaanpak op twee assen:** score elke bevinding op twee simpele dimensies, ruwweg 1-3 elk.
+- **Impact indien onaangepakt** — 1 is klein of cosmetisch, 2 is een echt kosten- of gebruikerservaringseffect, 3 is een beveiligingsblootstelling, dataverliesrisico, of significante terugkerende kosten.
+- **Inspanning om te repareren** — 1 is uren, 2 is dagen, 3 is een substantieel afgebakend project.
+
+**Wat te doen met elke combinatie:**
+- **Hoge impact, lage inspanning (3/1 of 2/1):** repareer onmiddellijk, vóór al het andere — dit zijn de "waarom was dit nog niet gedaan"-items die onevenredige waarde bieden voor minimaal werk, zoals een modelmigratie die bescheiden inspanning kost ten opzichte van de doorlopende besparingen die het ontsluit.
+- **Hoge impact, hoge inspanning (3/3):** dit worden geplande projecten met hun eigen goede scoping en tijdlijn, geen weekendreparaties — behandel ze met dezelfde bedachtzaamheid als de oorspronkelijke productielancering zelf, in plaats van ze erbij te proppen naast reguliere operaties.
+- **Lage impact, lage inspanning (1/1):** batch deze samen en ruim ze op in één laag-risico opruimsessie in plaats van elk individueel te behandelen — de waarde hier gaat meer over het verminderen van opgehoopte kleine frictie dan dat enig individueel item veel op zichzelf uitmaakt.
+- **Lage impact, hoge inspanning (1/3):** meestal is de juiste keuze om deze expliciet te deprioriseren, gedocumenteerd als een bewuste "nu niet"-beslissing in plaats van stilletjes vergeten — herbezoek bij de volgende audit in plaats van ze stilletjes onevenredig veel tijd te laten opslokken ten opzichte van hun daadwerkelijke belang.
+
+**Waarom dit meer ertoe doet voor een solo- of klein-team-founder dan het zou kunnen voor een grotere organisatie:** een groter bedrijf zou aparte mensen of budgetlijnen kunnen hebben voor beveiligingswerk, kostenoptimalisatie, en technische schuld tegelijkertijd; een founder die lean opereert, moet deze tegen elkaar afwegen en tegen doorlopend productwerk, wat de relatieve prioritering tussen bevindingen consequenter maakt dan het zou zijn voor een team dat simpelweg alles parallel zou kunnen aanpakken.
+
+**Een concrete vuistregel:** pak elke 3/1- en 3/2-bevinding aan binnen de volgende maand, plan 3/3-bevindingen als een goed project binnen het volgende kwartaal, en laat 1/1- en 1/2-bevindingen zich ophopen tot één gebundelde opruimsessie in plaats van voor elk individueel te wisselen van context. Dit verandert een potentieel overweldigende audituitkomst in een beheersbaar, gesequenced plan, wat het hele punt is van het uitvoeren van de audit om te beginnen, in plaats van een lijst te produceren die angst genereert zonder een duidelijke volgende actie.
+
+**Nog een check die het waard is om op de scoring zelf toe te passen:** wees eerlijk over of een lage-inspanningsschatting oprecht laag-inspanning is, of dat het alleen zo lijkt totdat iemand daadwerkelijk aan het werk begint. Een "snelle fix" aan tenant-isolatie kan bijvoorbeeld veel meer van de codebase blijken te raken dan een eerste blik suggereert, zodra de daadwerkelijke datatoegangspatronen worden getraceerd. De initiële 1-3-inspanningsscore behandelen als een werkschatting in plaats van een vaste toezegging, en hem aanpassen zodra echt onderzoek begint, houdt het prioriteringskader eerlijk in plaats van optimistisch.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een routine-audit die een echt kostenprobleem blootlegde

@@ -16,6 +16,8 @@ At **LaunchStudio**, backed by Manifera's 120+ engineers, you get enterprise-gra
 
 You don't need a unicorn. You need 100 happy customers. 🛡️🚀
 
+💡 Pricing math: €80k/year ÷ 100 customers = ~€67/month per customer (before churn). Not the €15-20 your consumer-app instincts scream at you.
+
 👉 Read the full micro-SaaS math: [Link to article]
 
 #MicroSaaS #LaunchStudio #Manifera #AINativeFounder #SaaS #Bootstrapped

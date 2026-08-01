@@ -12,6 +12,8 @@ Wat nu daadwerkelijk fondswaardigheid signaleert: ✅
 ✅ Bewijs dat je infrastructuur echt gelijktijdig gebruik overleeft
 ✅ Je hebt echte operationele uitdagingen genavigeerd, geen hypotheses
 
+🔍 Zodra je hun aandacht hebt, wordt technische due diligence specifiek: bewijs van dataisolatie (niet slechts een claim), leverancier-lock-in-blootstelling, en kostenstructuur bij 10x schaal. Founders die eerst lanceerden, beantwoorden dit zelfverzekerd — founders nog in prototypefase antwoorden hypothetisch.
+
 Het snelste pad naar investeerdersklaar bewijs is niet meer deckpolijsting — het is daadwerkelijk lanceren. 🎯
 
 Bij **LaunchStudio** betekenen productietijdlijnen van 1-3 weken dat je echte data kunt verzamelen voor je volgende pitch. Gesteund door Manifera — vertrouwd door Vodafone, TNO, CFLW. 🛡️

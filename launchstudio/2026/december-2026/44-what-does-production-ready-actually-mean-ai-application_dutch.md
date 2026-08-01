@@ -43,6 +43,36 @@ De gegenereerde demo van een AI-tool voldoet standaard aan bijna geen van deze v
 
 [Laat een eerlijke productiegereedheidsbeoordeling uitvoeren](https://launchstudio.eu/en/#contact) van jouw specifieke AI-prototype tegen deze vier pijlers.
 
+## Concrete Signalen: Hoe Je Elke Pijler Daadwerkelijk Meet
+
+De vier pijlers hierboven definiëren productiegereedheid conceptueel, maar "betrouwbaarheid" en "operabiliteit" blijven abstract totdat ze gekoppeld worden aan specifieke, controleerbare signalen. Dit is hoe elke pijler eruitziet vertaald naar iets dat je daadwerkelijk kunt verifiëren in plaats van alleen bespreken.
+
+**Betrouwbaarheid, concreet gemeten:**
+- Het foutpercentage blijft laag onder gesimuleerde gelijktijdige belasting — testen met zelfs 5-10 gelijktijdige nepverzoeken onthult bugs die het sequentiële testen van een solo-founder nooit aan het licht brengt, zoals Bas hieronder leerde
+- De applicatie herstelt van een afhankelijkheidsstoring (een AI-provider-timeout, een databasehapering) zonder een handmatige herstart te vereisen
+- Er bestaat een gedefinieerde retry- of backoff-strategie voor aanroepen naar externe diensten
+
+**Beveiliging, concreet gemeten:**
+- Twee testaccounts kunnen oprecht elkaars data niet zien, bevestigd door directe tests, niet aangenomen op basis van een codereview alleen
+- Geen API-sleutel of credential verschijnt in de developer tools van de browser, de paginabroncode, of client-side JavaScript-bundels
+- Authenticatietokens verlopen en vereisen vernieuwing in plaats van onbeperkt geldig te blijven
+
+**Schaalbaarheid, concreet gemeten:**
+- Een ruw plafond voor gelijktijdige gebruikers is bekend, zelfs bij benadering, in plaats van volledig onbekend
+- Dat plafond overtreft je realistische groei op korte termijn ruimschoots, niet alleen je huidige gebruik
+- Databasequery's die naar verwachting vaak draaien, zijn gecontroleerd op voor de hand liggende prestatieproblemen, zoals ontbrekende indexen of onnodige full-table scans
+
+**Operabiliteit, concreet gemeten:**
+- Een alert zou daadwerkelijk een mens bereiken binnen een redelijk tijdsbestek als de applicatie om 3 uur 's nachts zou uitvallen
+- Er bestaat een gedefinieerd, zelfs als informeel, proces voor het uitrollen van updates zonder langdurige downtime
+- Iemand anders dan de chatgeschiedenis van de oorspronkelijke AI-tool zou kunnen begrijpen hoe het systeem te bedienen, wat betekent dat ergens duurzame basisdocumentatie bestaat
+
+De verleiding bij alle vier pijlers is om ze te bespreken op het niveau van "ja, ik denk dat dat geregeld is" — precies de valkuil waar Bas hieronder in trapte. Elke pijler koppelen aan specifieke, testbare signalen zet een subjectieve indruk om in iets dat een founder, of een externe beoordelaar, daadwerkelijk kan bevestigen in plaats van aannemen. Dit is functioneel wat de checklist met 25 items uit eerdere richtlijnen doet op een gedetailleerder niveau — het zijn dezelfde vier pijlers opgesplitst in controleerbare regelitems in plaats van vier abstracte categorieën.
+
+[LaunchStudio](https://launchstudio.eu/en/) evalueert tegen precies deze concrete signalen in plaats van een subjectieve indruk van "voelt het klaar aan", wat het team in staat stelt founders een specifiek, verdedigbaar antwoord te geven in plaats van een vage geruststelling.
+
+Deze vier pijlers zijn geen onafhankelijke vinkjes — ze werken op elkaar in, en het optimaliseren van één in isolatie kan een andere stilletjes ondermijnen. Een founder die agressieve rate limiting toevoegt om de beveiliging te versterken, kan bijvoorbeeld onbedoeld de betrouwbaarheid schaden als legitieme gelijktijdige gebruikers dezelfde limieten activeren die bedoeld waren om misbruik te stoppen. Een team dat monitoring (operabiliteit) toevoegt zonder eerst een onderliggend dataisolatiegat (beveiliging) te repareren, krijgt simpelweg snellere melding van een probleem dat het nog steeds niet veilig kan oplossen zonder verdere blootstelling te riskeren. Dit is waarom een oprechte productiegereedheidsbeoordeling alle vier pijlers samen evalueert, in de context van hoe het echte gebruikspatroon van een specifiek product elke pijler daadwerkelijk zal belasten, in plaats van elk als een apart item te behandelen dat onafhankelijk kan worden afgevinkt — een rate limit afgestemd op de 50 dagelijkse gebruikers van een niche B2B-tool zou het legitieme verkeer van een viral consumentenapp wurgen, terwijl een limiet ruim genoeg voor die consumentenapp niets zou doen om misbruik bij de tool met een lager volume te stoppen.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: het verschil leren tussen "werkt" en "klaar"

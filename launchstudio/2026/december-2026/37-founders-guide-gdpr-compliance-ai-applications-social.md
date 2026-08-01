@@ -5,6 +5,7 @@ Every time your app sends a prompt with customer data to OpenAI/Anthropic, that 
 ❌ No confirmed Data Processing Agreement with your AI provider
 ❌ Generic privacy policy that never mentions AI processing at all
 ❌ No real end-to-end deletion process when a user asks to be forgotten
+❌ No Data Protection Impact Assessment — legally required (Art. 35) for AI screening, scoring, or eligibility tools, even small ones
 
 Using OpenAI or Anthropic does NOT automatically make you compliant. You still have to configure it yourself. 🧠
 

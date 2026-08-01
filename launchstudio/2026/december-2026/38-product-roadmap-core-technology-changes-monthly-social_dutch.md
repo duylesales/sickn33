@@ -11,6 +11,7 @@ De oplossing: ✅
 ✅ Kortere cycli voor technische weddenschappen (weken, geen kwartalen)
 ✅ Een wekelijkse "technologiewacht"-gewoonte
 ✅ Scheid "wat we bouwen" van "hoe"
+✅ Een maandelijkse checklist (prijzen, nieuwe releases, deprecaties) — 30-60 min, met één naam eraan gekoppeld
 
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar het aanpassen van architectuur aan verschuivende technologie, bouwen we de abstractielaag die modelupdates in kansen verandert. 🛡️
 

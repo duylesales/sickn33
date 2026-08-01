@@ -11,6 +11,8 @@ The comparison table: 📊
 ✅ Security, payments, hosting — BOTH include this
 ✅ Timeline — Agency: 3-12 months | LaunchStudio: 1-3 weeks
 
+There's also a real middle tier (€15K-€40K) for prototypes that aren't quite last-mile-ready — the 1-hour test: could an engineer look at your build today and name exactly what's broken? If not, you're not in the €800-€7,500 tier yet. 🔍
+
 Same quality. Same Manifera engineering standard trusted by Vodafone and TNO. Just a fraction of the scope — and the price. 🛡️
 
 His result: launched at 5% of the agency quote, zero redesign. 🚀

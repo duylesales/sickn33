@@ -59,6 +59,26 @@ This entire roadmapping challenge connects directly to the model-agnostic archit
 
 [Discuss how to architect for roadmap flexibility](https://launchstudio.eu/en/#contact) with a team that's navigated fast-moving technology shifts across 160+ projects.
 
+## A Practical Monthly Technology Review: What to Actually Check
+
+The "technology watch habit" mentioned above is easy to endorse in principle and easy to let slide in practice once a product is live and customer requests are piling up. Making it concrete — a repeatable checklist rather than a vague intention — is what actually keeps it happening.
+
+**A workable monthly (or biweekly, for faster-moving categories) review covers:**
+
+1. **Pricing changes from your core AI provider(s).** A per-token price drop can make a previously-deprioritized, cost-prohibitive feature suddenly viable; a price increase can make an existing feature's unit economics worth revisiting before it becomes a larger problem at scale.
+2. **New model releases and their actual capabilities**, evaluated against your specific use cases rather than the provider's own marketing claims — a genuinely useful practice is running any significant new release against your existing reference test dataset before assuming it's actually better for your product specifically.
+3. **New first-party features from your AI provider** that might replace custom logic you built yourself — structured output modes, function calling improvements, or context window increases can sometimes eliminate an entire workaround you engineered around a previous limitation.
+4. **Competitor product changes**, specifically watching whether competitors have shipped something newly possible because of a recent technology shift, which is a useful early signal about what's now feasible even if you haven't personally tested it yet.
+5. **Deprecation notices and sunset timelines** for any model version, API endpoint, or third-party AI tool your product depends on, so a forced migration is planned rather than an emergency.
+
+**Assign this to a specific person or a specific recurring calendar slot, not "whoever gets to it."** Technology watch habits that live as a vague intention without a specific owner and cadence reliably don't happen once the operational demands of running a live product take over — which is exactly the point at which a missed pricing change or capability shift quietly costs the most.
+
+**Keep a lightweight running log, not just a mental note.** A simple running document — even a single shared doc with dated entries — recording what changed, whether it's relevant to your roadmap, and what (if anything) you decided to do about it, turns this from an ad hoc activity into an actual input to planning decisions, and gives you a reference trail when a "didn't we already look at this" question comes up months later.
+
+**Cap the time investment deliberately.** For most AI-native founders, a focused 30-60 minutes reviewing provider changelogs, release notes, and competitor activity is sufficient at this cadence — the goal is staying informed enough to catch roadmap-relevant shifts, not becoming a full-time AI industry analyst at the expense of actually building the product.
+
+**Guard equally against the opposite failure: chasing every new release as a roadmap disruption in its own right.** Not every model update or provider announcement warrants a roadmap change — many are incremental improvements to capabilities you're not currently using, or marketing-driven announcements that sound more significant than they are for your specific use case. A founder who reopens roadmap planning every time a new release drops ends up with as much planning instability as one who ignores technology shifts entirely, just for a different reason. The discipline that makes the monthly review actually useful is applying a consistent bar — does this specific change measurably affect a specific roadmap item, tested against your own reference cases, not just described impressively in a release announcement — before letting it move anything.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Turning a Model Update Into an Accelerated Roadmap, Not a Disrupted One

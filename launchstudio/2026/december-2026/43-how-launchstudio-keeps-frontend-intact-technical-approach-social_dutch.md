@@ -7,6 +7,8 @@
 ✅ Authenticatie toegevoegd ROND je UI, niet erdoorheen
 ✅ CSS en componenten blijven standaard onaangeroerd
 
+🔧 Onder de motorkap: een adapterlaag vertaalt de bestaande aanroepen van je frontend naar de echte backend — waardoor de frontend LETTERLIJK nooit merkt dat er iets is veranderd. Plus branch-diffs + visuele regressie-screenshots verifiëren nul onbedoelde afwijking voordat er iets wordt uitgeleverd.
+
 De enige uitzonderingen? Nauw afgebakende functionele reparaties (zoals een laadstatus) — altijd eerst gecommuniceerd, nooit een verrassend herontwerp. 🛡️
 
 Ze doorliep 3 ronden infrastructuurtoevoegingen (authenticatie, Mollie-facturering, hosting) en checkte elke keer naast-elkaar-geplaatste screenshots. 📸

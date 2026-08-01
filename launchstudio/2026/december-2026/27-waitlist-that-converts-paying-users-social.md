@@ -11,6 +11,7 @@ How to build a waitlist that actually converts: ✅
 ✅ Offer founding-member perks tied to real commitment
 ✅ Segment by engagement, not signup date
 ✅ Launch to the waitlist BEFORE going public
+✅ Nurture every 2-3 weeks with a real update, not filler — one "still interested?" ping before launch day can win back the quiet third of your list 📬
 
 Her secret: 180 filtered signups → 61 paying customers = 34% conversion. 🎯
 

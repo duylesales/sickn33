@@ -10,6 +10,8 @@ Onzekerheid over proces houdt meer founders tegen dan prijs ooit doet. Dus hier 
 6️⃣ Testen (inclusief cross-account-isolatiechecks) — jij beoordeelt het zelf
 7️⃣ Lancering op JOUW domein, JOUW accounts, volledig code-eigendom
 
+🔎 Achter Stap 2: elk van de 7 lagen krijgt zijn eigen geslaagd/gezakt/gedeeltelijk-verdict — nooit een vaag "heeft werk nodig" — precies waarom de offerte in Stap 3 gespecificeerd kan zijn in plaats van opgevuld.
+
 Wat nooit gebeurt: verrassende herontwerpen, uurtarief-verrassingen, upsell-druk. 🛡️
 
 Bij **LaunchStudio**, gesteund door Manifera, is precies dit proces wat haar maand aarzeling wegnam. 🚀

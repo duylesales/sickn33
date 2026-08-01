@@ -13,6 +13,8 @@ De zelfaudit in 5 punten: ✅
 4️⃣ Kun je bij data van een ander account komen via URL-manipulatie?
 5️⃣ Zijn bestandsuploads ook geïsoleerd, niet alleen databaserecords?
 
+🔁 Een eenmalige audit is niet genoeg — AI-tools brengen snel nieuwe functies uit, en elk nieuw endpoint is een verse kans om een tenant-filter te vergeten. Daarom moeten isolatietests in CI draaien bij ELKE pull request, niet alleen voor grote releases.
+
 Bij **LaunchStudio**, gesteund door Manifera's 160+ zakelijke projecten, maken we dit standaardonderdeel van elke deployment — geen bijzaak achteraf. 🛡️🚀
 
 👉 Lees de volledige gids voor multi-tenant-architectuur: [Link naar artikel]

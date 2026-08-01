@@ -8,6 +8,8 @@ Twee weken klinkt agressief — tot je het 10 keer ziet gebeuren over sectoren d
 ✅ Bart (Barneveld) — pluimveecompliancerapportage, live in 14 dagen
 ...en 6 meer, elk productieklaar binnen 2 weken.
 
+📊 De echte bepalende factor voor de tijdlijn? Niet de sector, niet de gebruikte AI-tool (Lovable/Bolt/v0/Cursor toonden NUL correlatie) — het is datagevoeligheid + bedrijfslogica. Zorggerelateerde data alleen al voegde 2-3 dagen toe, over de hele linie.
+
 Bonus: Ivo had slechts 9 DAGEN voor een cruciale wijnconferentiedemo. LaunchStudio scoopte meedogenloos — alleen wat de demo nodig had — en verscheepte 5 dagen eerder. Hij tekende 14 wijngaardeigenaren live, ter plekke. 🍷
 
 Bij **LaunchStudio**, gesteund door Manifera's 120+ engineers en 160+ geleverde projecten, is het proces sectoragnostisch — het is de infrastructuurlaag die consistent is, niet je bedrijfsdomein. 🛡️🚀

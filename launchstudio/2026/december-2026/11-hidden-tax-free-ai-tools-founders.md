@@ -67,6 +67,34 @@ Unlike freelancers who often don't understand AI-generated code, LaunchStudio is
 
 [Get a fixed-price quote for your prototype](https://launchstudio.eu/en/#calculator) before you discover the hidden costs the hard way.
 
+## A Framework for Estimating Your Own Rebuild Tax
+
+Most founders don't know their rebuild tax until they're already paying it. Before you get there, you can estimate it yourself by walking through five categories that consistently determine how expensive the gap between prototype and production turns out to be.
+
+**1. Authentication depth**
+
+A "sign up with email" form is trivial for an AI tool to generate. Proper authentication — password reset flows, session management, role-based access if you have team accounts, and protection against common attacks like credential stuffing — is a different order of work. If your prototype's login screen looks complete but you've never tested what happens when a user forgets their password or tries to log in from a second device, budget for this category.
+
+**2. Payment and billing complexity**
+
+Charging a card once is easy. Handling failed payments, prorated upgrades, subscription cancellations, refunds, and tax compliance (VAT handling matters specifically for European founders) is where most AI-generated payment integrations fall apart. The more billing models you plan to offer — monthly versus annual, tiered pricing, usage-based add-ons — the higher this line item climbs.
+
+**3. Data migration and integrity**
+
+If your prototype has already accumulated real user data — even just a handful of beta customers — moving that data into a properly architected production database without losing or corrupting anything is real engineering work, not a copy-paste operation. The more customers you have before addressing this, the more expensive and risky the migration becomes.
+
+**4. Security audit scope**
+
+Every AI-generated app has some exposure: an API key visible in client-side code, a database rule that's too permissive, an endpoint with no rate limiting. The rebuild tax here scales with how sensitive your data is — a scheduling app has a lower security bar than one handling health records, financial data, or anything covered by GDPR's stricter categories.
+
+**5. Third-party integration fragility**
+
+Prototypes often connect to external services (payment processors, email providers, calendar APIs) using the simplest possible integration path, which frequently breaks under real-world edge cases the AI tool didn't anticipate — a webhook that fires twice, a rate limit hit during a traffic spike, an API version deprecation. Each fragile integration you're relying on adds to the eventual bill.
+
+**Putting a number on it**
+
+Score each category from 0 (not applicable) to 3 (high complexity) for your specific product. A total score of 4 or under usually means a rebuild tax in the low hundreds to low thousands of euros. A score of 10 or higher — common for anything touching healthcare, finance, or multi-tenant B2B data — usually points toward the higher end of typical production engagements. Running this exercise yourself, even roughly, turns an abstract fear into a concrete number you can plan around rather than discover under pressure.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The €0 Prototype That Almost Cost a Business

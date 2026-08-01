@@ -8,6 +8,8 @@ An idea without a plan stays an idea. Here's the concrete month-by-month path to
 
 The #1 way founders sabotage this plan: skipping Month 1 validation because building feels more exciting than talking. 😱
 
+💰 Real quarter budget: €1,000-€8,000 total, heavily weighted to Month 3. Months 1-2 cost mostly TIME, not cash — budget 30-40 outreach attempts to land 10-15 real conversations.
+
 Her result: launched to 22 warm contacts she'd been building relationships with since Month 1 — 9 paying hotel customers in the first 2 weeks. 🎯
 
 At **LaunchStudio**, backed by Manifera's 120+ engineers, Month 3 executes in 1-3 weeks once you're ready. 🛡️🚀

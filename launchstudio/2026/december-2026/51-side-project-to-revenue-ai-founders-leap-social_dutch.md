@@ -10,6 +10,8 @@ De 3 echte stappen: ✅
 2️⃣ Voeg de infrastructuur toe die facturering mogelijk maakt (1-3 weken, geen transformatie)
 3️⃣ Converteer EERST bestaande gebruikers — je warmste, makkelijkste publiek
 
+💸 De fout die stilletjes je marge opeet: €15/maand vast rekenen terwijl je zwaarste gebruikers alleen al €20/maand aan AI-API-kosten veroorzaken. Een check van 5 minuten naar kosten-per-gebruiker vóór het bepalen van de prijs voorkomt dit.
+
 Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar, handelen we precies Stap 2 af — snel en betaalbaar. 🛡️
 
 Zijn resultaat: 11 van zijn ~40 bestaande gebruikers betaalden binnen 2 weken. Eerste omzet ooit uit een 2-jarige onbetaalde hobby. 🚀

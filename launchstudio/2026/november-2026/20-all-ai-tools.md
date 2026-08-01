@@ -74,6 +74,23 @@ If an "all-in-one" tool does not natively support a specific payment gateway (li
 
 By using the stack we recommend (Lovable/Cursor + LaunchStudio), you generate standard, open-source code (React, Next.js, Node.js). You own the GitHub repository. You own the hosting accounts. If you ever want to stop using AI and hire a traditional development team, the codebase is entirely standard and portable.
 
+## A Decision Framework: Matching the Tool to the Job
+
+Instead of searching for the definitive list of all AI tools and trying to pick a permanent favorite, the more useful exercise is matching each tool to the specific job it is actually good at, phase by phase.
+
+| Your Situation | Best Tool | Why |
+|---|---|---|
+| Testing a raw idea with no code yet | Bolt or v0 | Fastest path from prompt to visual, clickable prototype |
+| Building a real application with user accounts and multiple data models | Lovable | Best scaffolding for routing, state, and Supabase integration |
+| Refining logic in an existing codebase | Cursor | Deep in-editor AI context for precise, targeted changes |
+| Making the application secure, fast, and reliable in production | LaunchStudio | Human engineering for infrastructure AI tools cannot generate |
+| Adding a payment gateway specific to your market (e.g., Mollie, iDEAL) | LaunchStudio | Requires custom backend integration beyond generic Stripe templates |
+| Passing a security or compliance audit | LaunchStudio | Requires RLS policies, IAM roles, and encryption AI tools do not configure |
+
+The mistake most founders make is trying to force one tool through every phase of this table. They try to make Bolt handle authentication, or ask Lovable to configure production deployment settings it was never designed to manage. Every AI tool has a genuine sweet spot; the founders who ship fastest are the ones who switch tools deliberately at each phase transition, rather than fighting a single tool to do a job outside its design.
+
+This is also why the "all AI tools in one list" mindset can be counterproductive. The goal is not finding the tool that claims to do everything. The goal is knowing which two or three tools, used in sequence, actually get a real application to a paying customer.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Agency That Stopped Trying to Find the Perfect Tool

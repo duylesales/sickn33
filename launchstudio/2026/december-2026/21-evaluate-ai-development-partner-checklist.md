@@ -81,6 +81,21 @@ You have a working prototype and no way to evaluate whether the person offering 
 
 [Book a 15-minute intro call](https://launchstudio.eu/en/#contact) and run through this checklist directly with an engineer.
 
+## Verifying the Answers, Not Just Collecting Them
+
+Asking all 15 questions is only useful if you can actually tell a good answer from a confident-sounding bad one. Most non-technical founders can't evaluate a technical explanation on its merits, which is exactly the gap a polished but underqualified partner will exploit. Verification, not interrogation, is what closes that gap.
+
+**Concrete ways to verify rather than just ask:**
+
+- **Request a reference you can actually call.** Not a testimonial quote on their website — an introduction to a past client willing to speak for five minutes about whether the delivered timeline, price, and quality matched what was promised. A partner who can't produce this after a positive sales pitch should raise questions.
+- **Ask to see an anonymized before/after code sample.** You don't need to read code yourself to get value from this — send it to any developer you know, even one unrelated to your project, and ask whether it looks like competent, documented work or a rushed patch job.
+- **Check for a real, checkable business registration.** In the Netherlands, this means a KVK (Chamber of Commerce) number you can look up independently. A legitimate, established partner will have one and won't hesitate when asked; an informal freelancer collective sometimes will.
+- **Bring a technically literate friend onto the actual call**, even one working in an unrelated field, rather than relying entirely on your own read of how confidently something was explained. Confidence and correctness are not the same signal, and a second set of ears catches vague non-answers you might otherwise accept at face value.
+- **Ask for the written scope before paying anything**, and read it against what was verbally promised. Discrepancies between the sales conversation and the written scope are far easier to spot on paper than in a fast-moving call, and a partner who resists putting commitments in writing is telling you something important.
+- **Search for the company name plus "review" or "complaint" independently**, rather than relying solely on testimonials the partner selected and published themselves. An absence of any independent footprint at all, for a supposedly established partner, is itself informative.
+
+**The pattern worth watching for across all of these:** a partner confident enough in their own track record to make verification easy — offering references proactively, producing a KVK number without hesitation, welcoming a technical friend on the call — is behaving very differently from one who deflects, delays, or gets mildly defensive when asked to substantiate a claim. The defensiveness itself is often more diagnostic than anything they actually say in response to the original 15 questions.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Checklist That Prevented a Bad Hire

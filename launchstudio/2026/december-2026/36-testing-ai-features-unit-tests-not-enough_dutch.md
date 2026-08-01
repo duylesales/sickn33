@@ -38,6 +38,24 @@ De meeste AI-native founders hoeven niet — en moeten niet proberen — elke kw
 
 [Laat een teststrategie bouwen voor je AI-functies](https://launchstudio.eu/en/#contact) voordat een ongeteste edge case een echte klant bereikt.
 
+## Een Golden Dataset Bouwen en Prompts Behandelen als Geversioneerde Code
+
+Een concept dat expliciet gemaakt moet worden, omdat het de meeste bovenstaande testbenaderingen onderbouwt: een "golden dataset" is een samengestelde, onderhouden verzameling van echte of realistische input/output-paren die weergeven wat "goed" betekent voor jouw specifieke AI-functie, gebruikt als referentiepunt voor het structurele en referentiegebaseerde testen dat eerder is beschreven. Deze dataset bewust opbouwen en onderhouden, in plaats van te testen tegen wat toevallig in je opkomt, is wat een teststrategie die daadwerkelijk regressies vangt onderscheidt van een die vals vertrouwen biedt.
+
+**Waar golden-dataset-voorbeelden vandaan zouden moeten komen:**
+
+- **Echte productie-inputs** (indien nodig geanonimiseerd) die je meest voorkomende daadwerkelijke gebruiksgevallen weerspiegelen, niet hypothetische gevallen die je je inbeeldt dat gebruikers zouden kunnen sturen
+- **Eerdere bugs**, toegevoegd aan de dataset op het moment dat ze worden opgelost, zodat een regressie van een eerder opgelost probleem automatisch wordt gevangen in plaats van op de harde manier herontdekt
+- **Bewust adversariale of edge-case-inputs** — lege velden, ongewoon lange input, gemengde talen, verzoeken die oppervlakkig op een ondersteund gebruiksgeval lijken maar dat niet zijn
+
+**Behandel je prompt als geversioneerde code, gekoppeld aan je testsuite.** Een promptwijziging is een codewijziging met dezelfde potentie om een regressie te introduceren als elke andere, maar toch bewerken veel AI-native teams prompts direct in een dashboard of configuratiebestand zonder ze eerst tegen de golden dataset te draaien. Een gedisciplineerder patroon: sla prompts op in versiebeheer naast de applicatiecode, vereis dat golden-dataset-tests slagen voordat een promptwijziging wordt gemerged, en log welke promptversie welke output in productie heeft geproduceerd — zodat je, als een kwaliteitsprobleem opduikt, dit kunt herleiden naar de specifieke verantwoordelijke promptversie in plaats van te gokken over meerdere recente wijzigingen tegelijk.
+
+**Een woord van voorzichtigheid over "LLM-as-judge"-evaluatie.** Een tweede AI-oproep gebruiken om automatisch de kwaliteit van de output van je AI-functie te scoren tegen je golden dataset is een steeds gangbaardere techniek, en het kan de handmatige beoordelingslast betekenisvol verminderen — maar het erft zijn eigen faalmodi: het beoordelingsmodel kan inconsistent zijn, dezelfde blinde vlekken delen als het model dat wordt geëvalueerd, en zou periodieke menselijke beoordeling voor alles wat klantgericht en kwaliteitsgevoelig is niet volledig moeten vervangen. Behandel LLM-as-judge-scoring als een nuttig triagesignaal dat helpt prioriteren welke outputs menselijke aandacht verdienen, niet als een definitief kwaliteitsoordeel op zich.
+
+**Houd de golden dataset behapbaar in omvang maar levend.** Een dataset die onbeperkt groeit, wordt traag om te draaien en duur in AI-API-kosten voor de evaluatie zelf; een die eenmaal wordt gebouwd en nooit wordt bijgewerkt, stopt met het weerspiegelen van hoe het product daadwerkelijk wordt gebruikt. Deze op dezelfde cadans beoordelen en verversen als al gebruikt voor referentietestcase-updates houdt het een levend bezit in plaats van een verouderd artefact uit een eerdere productversie.
+
+**Semantische gelijkenisscoring biedt een nuttig middenweg tussen rigide exacte-match-assertions en volledige menselijke beoordeling.** In plaats van te stellen dat een AI-respons gelijk is aan een specifieke string, of volledig op een mens te vertrouwen om kwaliteit te beoordelen, kan het vergelijken van de semantische gelijkenis van een nieuwe output met een bekend-goede referentie-output (met embedding-gebaseerde vergelijking in plaats van letterlijke tekstmatching) outputs signaleren die betekenisvol zijn afgedreven in betekenis of inhoud, terwijl onschuldige variatie in exacte formulering correct wordt getolereerd. Dit is geen perfect signaal op zichzelf — een respons kan semantisch vergelijkbaar zijn met een referentie en toch fout zijn op een manier die de referentie niet dekt, of als ongelijk worden gemarkeerd ondanks een even geldige alternatieve formulering — maar als één laag onder verschillende vangt het een categorie regressie die noch exacte-match-testen noch incidentele handmatige steekproeven betrouwbaar op zichzelf vangen, met name voor subtiele promptwijzigingen die toon of nadruk verschuiven zonder een structureel vereiste te breken.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een testsuite bouwen die daadwerkelijk paste bij de aard van AI

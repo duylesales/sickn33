@@ -35,6 +35,25 @@ Dit laatste punt is waar veel AI-native founders struikelen: ze bouwen een indru
 
 [Maak je product lanceringsklaar](https://launchstudio.eu/en/#calculator) voordat je je wachtlijst mailt — je krijgt zelden een tweede eerste indruk bij je meest betrokken publiek.
 
+## De Pre-Launch Nurture-sequentie: Een Wachtlijst Warm Houden Zonder Hem Op te Branden
+
+Iemand laten aanmelden voor je wachtlijst is het makkelijke deel. Hun aandacht en intentie levend houden gedurende de weken of maanden tussen aanmelding en lancering — zonder ze te irriteren tot uitschrijven of gewoon te laten vergeten waarom ze zich ooit aanmeldden — vereist een doordachte e-mailcadans, niet één "bedankt voor je aanmelding"-bericht gevolgd door stilte tot de lanceringsdag.
+
+### Wat je Daadwerkelijk Moet Sturen, en Wanneer
+- **Direct na aanmelding**: Een bevestiging die ook je kwalificerende vraag stelt als je dat nog niet hebt gedaan, plus een realistische tijdlijnverwachting ("we verwachten over ongeveer 6 weken te lanceren") zodat mensen niet blijven gissen
+- **Elke 2-3 weken tijdens het wachten**: Een korte, oprechte update — een specifieke featurebeslissing die je nam op basis van hun feedback, een screenshot van echte voortgang, of een antwoord op een veelgestelde vraag van meerdere aanmelders. Het doel is momentum tonen, niet content produceren om het produceren zelf
+- **Een tot twee weken vóór lancering**: Een "we zijn er bijna"-bericht dat een specifieke datum noemt als je die hebt, wat verwachting opbouwt zonder een datum te beloven die je mogelijk mist
+- **De lanceringsdag zelf**: De conversie-e-mail, idealiter gepersonaliseerd per segment in plaats van één identieke mail voor iedereen
+
+### Je Nurture-content Segmenteren, Niet Alleen je Lanceringsmail
+Founders die bij aanmelding een kwalificerende vraag stellen, hebben echte data om nurture-content op te segmenteren, niet alleen de lanceringsboodschap. Een aanmelder die prijsgevoeligheid noemde reageert beter op een update die de nadruk legt op waarde en rendement; een aanmelder die een specifieke ontbrekende functie noemde reageert beter op een update over precies de voortgang van die functie. Deze gesegmenteerde nurture-aanpak kost weinig extra moeite als je al kwalificerende antwoorden verzamelt, en het verhoogt aanzienlijk de kans dat iemand zich je product nog herinnert en er nog om geeft tegen de tijd dat je daadwerkelijk lanceert.
+
+### De Overcommunicatie-valkuil
+Het tegenovergestelde falen — te vaak e-mailen met updates van weinig substantie — traint je meest waardevolle, meest betrokken aanmelders om te stoppen met het openen van je e-mails nog vóórdat de lanceringsdag is aangebroken, precies het publiek waarvan je de aandacht het hardst nodig hebt zodra de conversie-e-mail binnenkomt. Als je geen oprechte update hebt die het versturen waard is, kun je die cyclus beter overslaan dan opvulling te sturen die de open rates aantast voor het bericht dat er echt toe doet.
+
+### Stille Aanmelders Reactiveren
+Een deel van elke wachtlijst stopt weken vóór de lancering met het openen van e-mails, niet omdat ze geen interesse meer hebben, maar omdat het leven doorging. Een kort, laagdrempelig "nog steeds geïnteresseerd?"-bericht, kort vóór je lanceringsmail verstuurd en los van de lanceringsmail zelf, kan een deel van dit stille segment aanzienlijk heractiveren — en geeft je een tweede kans om mensen te bereiken die je standaard nurture-cadans alleen tegen lanceringsdag zou zijn kwijtgeraakt. Gecombineerd met de kwalificerende-vraag-data en segmentatie hierboven beschreven, is deze nurture-sequentie wat een statische lijst e-mailadressen verandert in een publiek dat daadwerkelijk op lanceringsdag aankomt, nog steeds geïnformeerd, nog steeds geïnteresseerd en nog steeds bereid te betalen.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: 180 gekwalificeerde aanmeldingen omzetten in 61 betalende klanten

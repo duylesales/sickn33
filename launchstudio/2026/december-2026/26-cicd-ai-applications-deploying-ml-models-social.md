@@ -11,6 +11,7 @@ The fix — AI-aware CI/CD: ✅
 ✅ Version your prompts like code
 ✅ Staged rollouts — one customer first, not all six
 ✅ Cost & latency gates, not just "does it work"
+✅ Log the model + prompt version on every response — it's the only way to tell "our regression" from "provider outage" in minutes instead of hours 🔍
 
 At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we build this pipeline in. His result: 2 regressions caught before they ever reached a customer. 🛡️🚀
 

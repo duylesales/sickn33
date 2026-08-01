@@ -15,6 +15,8 @@ De checklist die er echt toe doet, dagelijks → wekelijks → maandelijks → g
 📅 MAANDELIJKS: backupherstel-tests, beveiligingslogs, afhankelijkheidspatches
 📅 GROEI: herverifieer data-isolatie, herbeoordeel schaling, herbezoek compliance
 
+🚦 Stel echte drempels in, geen onderbuikgevoel: uptime onder 99%/30 dagen, API-fouten die boven 1-2% springen, of supportresponstijd die boven een paar uur kruipt zouden allemaal dezelfde-dag-actie moeten triggeren — niet wachten op de wekelijkse beoordeling.
+
 Bij **LaunchStudio** betekent €49/maand Launch & Grow-support dat Manifera's team deze last deelt — hosting, patching, monitoring — zodat jij je focust op klanten, niet infrastructuurbranden. 🛡️
 
 Zijn resultaat: betrouwbaarheid verschoof van "ik ontdek problemen per ongeluk" naar "ik krijg een waarschuwing voordat klanten het merken." 🚀

@@ -61,6 +61,22 @@ Choosing the wrong real-time technology isn't usually catastrophic, but it can i
 
 [Get your real-time AI architecture reviewed](https://launchstudio.eu/en/#contact) before scaling makes an unnecessary WebSocket dependency expensive to unwind.
 
+## Reconnection, Heartbeats, and Backpressure: The Details Both Technologies Share
+
+The SSE-versus-WebSocket decision gets most of the attention, but several implementation details matter regardless of which one you choose — and AI coding tools frequently get these details wrong or skip them entirely, since they're easy to overlook in a working demo that only gets tested on a fast, stable connection.
+
+**Reconnection handling.** Both SSE and WebSocket connections drop — a mobile user losing signal briefly, a server restart during deployment, a proxy timing out an idle connection. SSE has a genuine advantage here: the browser's native `EventSource` API reconnects automatically by default, and the protocol includes a built-in `Last-Event-ID` mechanism letting the server resume a stream from where it left off rather than restarting from scratch. WebSocket has no equivalent built-in behavior — reconnection logic, including exponential backoff and resuming application state, has to be implemented manually, and AI-generated WebSocket code frequently omits this entirely, working fine in testing and failing silently for real users on unstable connections.
+
+**Heartbeats to survive proxy and load balancer timeouts.** Many infrastructure layers (reverse proxies, load balancers, some CDN configurations) silently close connections that appear idle beyond a configured timeout — which an AI response stream can trigger during a pause in generation even though the connection is still legitimately active. Sending a lightweight periodic heartbeat (a comment line in SSE, a ping frame in WebSocket) keeps the connection alive through these intermediate layers. Forgetting this is one of the more common causes of AI streaming responses that mysteriously cut off mid-generation specifically in production but never during local development, where no intermediate proxy exists to time the connection out.
+
+**Backpressure when the client can't keep up.** If a user's connection is slower than your AI provider is generating tokens, data can queue up faster than it's consumed. Both technologies need a sensible buffering strategy — typically batching several tokens per network write rather than sending every single token as its own message, which reduces overhead substantially without perceptibly changing the streaming experience for the user.
+
+**Infrastructure-specific timeout configuration.** Deploying behind nginx, for example, requires explicitly raising `proxy_read_timeout` beyond its short default for any endpoint serving a long-lived SSE or WebSocket stream, or the proxy itself will terminate the connection regardless of what your application code does. Serverless platforms often impose their own maximum execution duration per request, which can silently cap how long a streaming response is allowed to run — worth checking explicitly against your specific hosting target rather than discovering the limit when a longer AI response gets cut off in production.
+
+Getting these details right is unglamorous compared to the SSE-versus-WebSocket decision itself, but they're disproportionately responsible for the intermittent, hard-to-reproduce streaming bugs that AI-native founders otherwise spend disproportionate debugging time chasing.
+
+**Test streaming behavior under deliberately poor network conditions before launch, not just on a fast office connection.** Browser developer tools and most proxy testing tools support throttling a connection to simulate slow 3G or high-latency mobile conditions, which surfaces exactly the reconnection, heartbeat, and backpressure issues described above that a fast, stable connection never triggers. A streaming feature that works flawlessly in every local test and then breaks intermittently for real users is a strong sign this kind of throttled testing was skipped during development — a five-minute check that catches a category of bug otherwise discovered only through scattered, hard-to-reproduce customer complaints weeks after launch.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Simplifying From WebSocket to SSE and Cutting Hosting Costs

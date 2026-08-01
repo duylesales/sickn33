@@ -58,6 +58,23 @@ The psychological framing of "turning my side project into a real business" is i
 
 [Turn your side project into your first revenue](https://launchstudio.eu/en/#calculator) — get a concrete quote for exactly what's needed to start charging.
 
+## Choosing the Right First Pricing Model, Not Just Adding a Payment Button
+
+Step 2 above treats "add payment infrastructure" as a single bounded engineering task, which it is — but founders still have to decide what kind of payment model that infrastructure needs to support, and the wrong choice at this stage creates rework later that a slightly more deliberate first decision avoids entirely.
+
+**Three models suit different side projects:**
+- **Flat monthly subscription** — the simplest to implement and the simplest for users to understand, appropriate when your tool delivers roughly consistent value to every user regardless of how much they use it, since a design tool used occasionally is still worth roughly the same to its user as one used daily.
+- **Usage-based pricing** — better suited to tools with genuinely variable cost-to-serve, particularly AI tools where API costs scale with usage; charging a flat fee to your heaviest users while your API bill scales linearly against them is a margin problem waiting to surface, often only once volume grows.
+- **One-time payment** — appropriate for tools that solve a bounded, one-off problem (a single style guide generation, a single report) rather than an ongoing service, though this model provides no recurring revenue and requires continuous new-customer acquisition rather than retention economics.
+
+**A practical way to decide:** look at how your side project's existing free users actually use it. If usage is roughly uniform across your user base, a flat subscription is the simpler and more defensible choice. If a small number of users drive disproportionate usage — and therefore disproportionate AI cost — usage-based or tiered pricing protects margin better than a single flat price would.
+
+**Avoid the common first-time mistake:** setting a price by guessing at "what feels fair" rather than working backward from actual cost-to-serve. A founder charging €15/month for a tool whose heaviest users cost €20/month in AI API calls alone has built a business that loses money precisely on its most engaged customers — the opposite of what any pricing model should do. Calculating your actual per-user AI cost at realistic usage levels, before finalizing a price, is a five-minute exercise that prevents a much more expensive correction later.
+
+**One more decision worth making deliberately:** whether to offer a free tier alongside the paid tier, or convert entirely. A free tier can continue serving as a funnel for new users discovering the tool organically, but only if it's deliberately scoped — a real usage cap, not just "the same thing but we ask nicely for payment" — otherwise it recreates exactly the trap where the free version already delivers enough value, which prevents conversion in the first place.
+
+Getting this pricing-model decision right before development begins means the payment infrastructure your engineering team builds actually matches how you intend to charge, rather than requiring a second round of changes once the mismatch becomes apparent from real usage data.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Two-Year Side Project's First Euro

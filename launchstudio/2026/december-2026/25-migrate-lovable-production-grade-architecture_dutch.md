@@ -47,6 +47,24 @@ Een typische Lovable-naar-productie-migratie via LaunchStudio duurt één tot dr
 
 [Vraag een migratiescope en offerte aan](https://launchstudio.eu/en/#calculator) voor jouw specifieke Lovable-prototype.
 
+## Je Eigen Migratiescope Inschatten Voordat Je Iemand Belt
+
+Voordat je bij wie dan ook een offerte aanvraagt, loont het om je eigen Lovable-prototype tegen de zeven stappen hierboven af te zetten om een ruwe indruk van de scope te krijgen — zowel zodat je elke offerte die je ontvangt kunt controleren op gezond verstand, als zodat het eerste gesprek met een ontwikkelingspartner sneller en preciezer verloopt.
+
+**Een zelfbeoordeling die je in minder dan een uur kunt uitvoeren:**
+
+- **Authenticatie:** Open een incognito browservenster en probeer je aan te melden als een tweede, volledig aparte gebruiker. Kan dat? Is er een wachtwoord-resetflow, en werkt die daadwerkelijk? Als er één gedeelde login is of helemaal geen echte aanmeldflow, verwacht dan dat Stap 2 substantieel zal zijn.
+- **Databaseblootstelling:** Open de developer tools van je browser, ga naar het Network-tabblad, en trigger een paar acties in de app. Zie je ruwe databasequery's of API-sleutels zichtbaar in de verzoeken die vanuit je browser worden verstuurd? Als de sleutel van je AI-provider of de directe verbindingsgegevens van je database zichtbaar zijn aan de clientzijde, hebben zowel Stap 3 als Stap 4 echt werk nodig.
+- **Betalingen:** Als je van plan bent klanten te laten betalen, bestaat er vandaag überhaupt een checkoutflow? Handelt die een abonnementsannulering correct af, of alleen de initiële kosten? De meeste Lovable-prototypes handelen de eerste kosten prima af en verder niets, wat je vertelt dat Stap 5 dicht bij een volledige bouw ligt in plaats van een lichte opfrisbeurt.
+- **Hosting:** Is je huidige URL een Lovable-preview-link, of een echt domein dat je zelf beheert met HTTPS? Een preview-link die op elk moment kan veranderen of onbeschikbaar kan worden, signaleert dat Stap 6 nog niet is begonnen.
+- **Monitoring:** Als je app nu meteen zou breken voor een echte gebruiker, zou je dat merken via een dashboard of een alert — of alleen doordat die gebruiker je e-mailt? De meeste prototypes hebben hier helemaal geen antwoord op, wat betekent dat Stap 7 vanaf nul begint.
+
+**Waar deze zelfbeoordeling daadwerkelijk voor dient:** het geeft je geen exacte prijs, aangezien de echte kosten afhangen van codebase-specifieke details die een snelle check niet kan onthullen (vanuit hoeveel plekken API-sleutels worden aangeroepen, hoeveel tabellen isolatie nodig hebben, hoe complex je factureringsplannen zijn). Wat het je wel geeft, is het vermogen om je situatie precies te beschrijven tijdens een eerste gesprek — hetzelfde voordeel dat Esmee (hieronder) snel liet bewegen van eerste contact naar een afgebakende, vasteprijsmigratie, in plaats van dat eerste gesprek te besteden aan simpelweg ontdekken wat er mis was. Een founder die al binnenkomt met de wetenschap "ik heb geen echte authenticatie, blootgestelde API-sleutels en nog geen betalingssysteem" krijgt een snellere, nauwkeurigere offerte dan iemand die alleen kan zeggen "ik denk dat er iets gerepareerd moet worden voordat ik mensen laat betalen."
+
+Deze inventarisatieoefening verheldert ook een nuttig onderhandelingspunt: als je eigen check laat zien dat drie van de zeven stappen al solide zijn, is een offerte die een volledige zevenstappenmigratie aan de bovenkant van de bandbreedte beprijst, het waard om direct ter discussie te stellen.
+
+**Eén kanttekening die het eerlijk vermelden waard is:** een door de founder zelf uitgevoerde zelfbeoordeling is een nuttig startgesprek, geen vervanging voor een professionele audit. Sommige van de ernstigere gaten — een Row Level Security-beleid dat in het dashboard aanwezig lijkt maar niet daadwerkelijk correct wordt afgedwongen, of een webhook-handler die in oppervlakkige tests lijkt te werken maar faalt onder echte dubbele-leveringsomstandigheden — zijn onzichtbaar voor de eigen inspectie van een niet-technische founder, hoe zorgvuldig die ook kijkt. De zelfcheck hierboven is ontworpen om de voor de hand liggende gaten snel naar boven te brengen, niet om de diepere beoordeling te vervangen die een migratiepartner uitvoert voordat er ook maar één regel code wordt geschreven.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een volledige productiemigratie in elf dagen

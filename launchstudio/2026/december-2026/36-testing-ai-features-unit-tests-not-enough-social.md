@@ -12,6 +12,7 @@ What to test instead: ✅
 ✅ Reference-based scoring against known-good examples
 ✅ Cost & latency regression checks
 ✅ Periodic human review for tone/nuance
+✅ A "golden dataset" of real inputs/past bugs — prompts versioned like code, tested before every merge
 
 At **LaunchStudio**, backed by Manifera's QA discipline across 160+ projects, we build this layered strategy in. His result: caught 2 real bugs before customers ever saw them. 🛡️🚀
 

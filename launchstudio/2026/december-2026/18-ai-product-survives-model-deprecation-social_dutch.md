@@ -11,6 +11,8 @@ De oplossing is een bewezen engineeringpatroon — de abstractielaag: 🧠
 ✅ Versioneer je prompts samen met je code
 ✅ Update routering op ÉÉN plek als een model sterft, niet je hele codebase
 
+⚠️ Zelfs met een perfecte abstractielaag verschuiven modellen stilletjes: contextvenster, instructiegehoorzaamheid, outputlengte, latentie, weigergedrag. Daarom vergelijken we oud vs. nieuw model tegen 20-50 ECHTE productie-inputs voor elke overstap, in plaats van een handvol te bekijken en te hopen.
+
 Bij **LaunchStudio**, gesteund door Manifera's 160+ geleverde projecten, bouwen we dit vanaf het begin in — zodat een deprecatiemelding een non-event wordt in plaats van een noodgeval. 🛡️
 
 Zijn migratie: geen downtime, 5 dagen voor de deadline. 🚀

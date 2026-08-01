@@ -7,6 +7,8 @@ Why Dutch founders are perfectly positioned for the AI economy: 🧠
 ✅ Pragmatic, anti-hype culture = honest assessment of what AI actually built
 ✅ EU-based infrastructure = GDPR compliance by default, not retrofit
 
+💰 Bonus most founders miss: the WBSO tax credit subsidizes AI product engineering costs — and AI tools now get founders to "working prototype" fast enough to actually qualify within weeks, not after a year of fundraising.
+
 But the last-mile gap still applies equally — a great network doesn't build your authentication, payments, or database isolation for you. 😱
 
 At **LaunchStudio**, HQ'd at Herengracht 420 Amsterdam, we close that gap in Dutch or English, same-day response: 🛡️

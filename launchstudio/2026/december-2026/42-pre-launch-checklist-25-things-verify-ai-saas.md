@@ -81,6 +81,24 @@ Each of these 25 items individually seems minor. Collectively, they represent th
 
 [Get your launch readiness assessed](https://launchstudio.eu/en/#contact) against this exact checklist before you announce your launch date.
 
+## Adjusting the Checklist to Your Specific Product
+
+The 25 items above form a baseline that applies to virtually every AI SaaS product, but the depth of verification each category actually needs shifts significantly depending on what your product touches and who uses it. Treating every item as equally weighted regardless of context is itself a mistake — a checklist run mechanically without this calibration can produce false confidence.
+
+**When you're handling financial or health data**, items 7 (backup verification), 10 (deletion requests), and 16 (VAT/tax handling) deserve materially more scrutiny than a general productivity tool would need — a restored backup that's missing three days of financial transaction data is a different order of problem than losing three days of to-do list edits. Dennis's AangifteHulp case later in this piece illustrates exactly this: the data-deletion process and tenant isolation items carried disproportionate weight because tax documents were involved.
+
+**Marketplace and multi-sided products** — where your AI SaaS connects two distinct user types, such as customers and vendors — need item 8's tenant isolation test run across role boundaries, not just between two same-role accounts. A vendor seeing another vendor's private pricing data, or a customer seeing another customer's booking history, are both failures item 8 is meant to catch, but a simple two-account test in a single-role product won't surface a cross-role leak.
+
+**High-signup-volume consumer products** put more weight on item 5 (rate limiting) and item 25 (the full signup-to-paid flow test) than a low-volume B2B tool selling to a handful of enterprise accounts might — a bot-driven signup flood is a realistic threat for a viral consumer app in a way it simply isn't for a niche B2B tool with a manual sales process.
+
+**Regulated industries** (healthcare, financial services, legal) often need the checklist supplemented rather than replaced. Items like audit trail logging, data residency requirements, and specific consent flows aren't on the generic 25-item list at all, because they're not universal — but they become effectively mandatory the moment your product touches regulated data categories.
+
+None of this means the 25-item baseline is wrong for any of these cases — every item still applies. It means a founder assuming "I passed all 25, therefore I'm fully covered" without considering which items matter most for their specific product risks under-verifying the items that would actually cause the most damage if wrong, while over-indexing on items that matter less for their context. A generic checklist run without this lens is better than no checklist, but a checklist run with genuine attention to your product's specific risk profile is what actually prevents the costly surprise.
+
+This is precisely why [LaunchStudio's](https://launchstudio.eu/en/) readiness reviews start with understanding what your product actually does and who it serves, rather than mechanically ticking 25 boxes in the same order for every founder regardless of context.
+
+For founders who want to attempt partial self-verification before reaching out, a handful of these adjusted priorities are testable without technical expertise. Opening your product in two different browsers logged in as two different test accounts checks basic tenant isolation (item 8) regardless of product type. Opening your browser's network tab during signup and normal use checks for exposed API keys (item 3). And simply asking "what happens if 50 people signed up in the next hour" is a useful gut-check for whether item 5's rate limiting actually matters for your specific product, even without running the test yourself. These won't replace a full technical review, but they give a founder genuine visibility into which categories above matter most for their specific product before that review even begins.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Finding Eight Gaps the Night Before a Planned Launch

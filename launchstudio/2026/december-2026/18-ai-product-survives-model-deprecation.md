@@ -59,6 +59,28 @@ Herre Roelevink has seen this pattern repeatedly: *"Founders come to us in a pan
 
 [Get your AI architecture reviewed](https://launchstudio.eu/en/#contact) before the next deprecation notice becomes an emergency.
 
+## What Actually Changes When You Swap a Model Version
+
+Founders often assume a model swap is a one-line configuration change, and with a proper abstraction layer, the plumbing genuinely is. What still requires engineering judgment is that no two models — even two versions from the same provider — behave identically, even when the API contract looks unchanged on paper.
+
+**Five things that shift silently between model versions:**
+
+- **Context window size.** A newer model might accept a much larger context window, which sounds like a pure upgrade, but if your prompts were engineered around aggressive truncation to fit a smaller window, the new model's behavior on long inputs can differ in ways your old test cases never exercised.
+- **Instruction-following strictness.** Some models follow formatting instructions ("respond only in JSON") more literally than others. A parser tuned to tolerate a previous model's occasional preamble text can break entirely against a model that now returns clean JSON — or start silently failing against one that still adds commentary the old model never did.
+- **Token pricing and output verbosity.** Newer models are not always cheaper, and some are meaningfully more verbose by default, which affects both your AI cost line and any downstream logic that assumes a certain response length or truncates output at a fixed character count.
+- **Latency profile.** Reasoning-heavy models can take several seconds longer per call than the model they replace. If your frontend was built assuming near-instant responses, with no loading state or streaming, users may perceive a working feature as broken rather than simply slower.
+- **Refusal and safety behavior.** Providers periodically adjust what a model will and won't respond to. A prompt that worked reliably for two years can start triggering refusals on a new version for content it previously handled without issue, particularly in sensitive domains like health, finance, or legal advice.
+
+**A practical pre-swap evaluation routine:**
+
+1. Build a fixed set of 20-50 representative real inputs pulled from actual production logs, not synthetic examples written by whoever is doing the migration.
+2. Run both the old and new model against that set and diff the outputs side by side, rather than eyeballing a handful of cases and calling it done.
+3. Flag any output where parsing fails, formatting changes, response length shifts dramatically, or the semantic content diverges in a way a customer would notice.
+4. Roll the new model out to a small percentage of live traffic first, with the old model still available as an automatic fallback, before cutting over entirely.
+5. Keep the old model's configuration and credentials available for at least a few weeks post-migration in case an edge case surfaces that your test set didn't catch — providers often keep deprecated models accessible on a legacy endpoint for exactly this reason.
+
+This evaluation discipline is what separates a genuine "model swap" from a "deploy and hope it still works" swap. Founders who skip it because the abstraction layer made switching mechanically trivial often learn the difference the hard way — usually when a customer reports that a feature which worked fine yesterday is now returning garbled or subtly wrong output today, with no error message anywhere in the logs to explain why.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Surviving a 60-Day Deprecation Notice

@@ -15,6 +15,8 @@ De oplossing is niet ingewikkeld: ⚡
 
 Bij **LaunchStudio**, gesteund door Manifera's kantoren in Amsterdam, Singapore & Ho Chi Minh-stad, lossen we precies dit gat op. Haar laadtijd: 8 seconden → onder 1 seconde. 🛡️🚀
 
+⏱️ Latentie stapelt zich op, het telt niet gewoon op: 3 geketende AI-oproepen van elk 800ms voelen niet als 800ms — het voelt als 2,4 seconden dode lucht, tenzij je voortgang toont.
+
 👉 Lees waarom latentie je grootste concurrent is: [Link naar artikel]
 
 #EdgeComputing #LaunchStudio #Manifera #AINativeFounder #Prestaties #SaaS

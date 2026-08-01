@@ -65,6 +65,20 @@ When you run an app locally, you are the only user. There is no latency. There a
 
 Moving from an AI download on localhost to a production server on the open internet is not a matter of "copying the files." It is a matter of systems engineering. You have to provision servers, configure SSL certificates, set up custom domains, implement rate limiting, and establish continuous deployment pipelines.
 
+## Comparing What Different AI Tools Actually Give You in the Download
+
+Not every AI download is packaged the same way, and the differences matter once you move toward deployment.
+
+**Bolt** exports a clean, self-contained Vite or Next.js project. The ZIP is portable and easy to hand to any engineer, but Bolt projects rarely include any backend scaffolding at all — what you are downloading is a pure frontend shell with no data layer attached.
+
+**Lovable** generates a package that feels more complete because it wires the frontend directly to a Supabase project from the start. This can be misleading: the download often ships with a Supabase anonymous key and permissive default policies, meaning the "database connection" you downloaded is frequently not secure enough to expose to real users without further hardening.
+
+**v0 (by Vercel)** focuses purely on UI components. Its download is the cleanest from a code-quality standpoint but the least functional out of the box — there is usually no data layer, no authentication, and often no routing beyond a single page or a handful of static screens.
+
+**Cursor**-built projects are not really "downloads" in the traditional sense, since Cursor works directly on a live local repository connected to Git. This gives technical founders more control over the codebase from day one, but it also assumes the person exporting the project already understands version control and basic deployment concepts, or is prepared to hand the entire repository to a team that does.
+
+The practical implication is that the tool you used to generate your AI download determines exactly which gaps need to be filled before launch. Bolt users typically need the most backend work built from zero. Lovable users need the most security hardening around an existing database connection. v0 users need both a data layer and authentication built from scratch. None of these gaps disappear on their own — they simply move from being "your AI tool's problem" to being "your deployment problem" the moment you click download and expect a working ZIP file to become a business.
+
 ## Bridging the Gap: From Download to Deployment
 
 This gap between "I have the code" and "I have a live application" is where [LaunchStudio](https://launchstudio.eu/en/) operates. 

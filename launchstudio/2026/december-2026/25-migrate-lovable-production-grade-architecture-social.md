@@ -15,6 +15,8 @@ The 7-step migration to production: 📋
 6️⃣ Production hosting, SSL, custom domain
 7️⃣ Monitoring + full flow testing
 
+🔍 30-minute self-check before you call anyone: open incognito, try signing up as a second user; check your Network tab for exposed API keys. Founders who show up already knowing their gaps get faster, more accurate quotes.
+
 The one thing that NEVER changes: your frontend. Not one pixel. 🛡️
 
 At **LaunchStudio**, backed by Manifera's 120+ engineers, this takes 1-3 weeks, from €800 — vs €20k-€500k for a traditional rebuild. 🚀

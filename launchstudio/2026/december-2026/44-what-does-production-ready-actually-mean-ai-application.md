@@ -67,6 +67,36 @@ An AI tool's generated demo satisfies almost none of these four pillars by defau
 
 [Get an honest production-readiness assessment](https://launchstudio.eu/en/#contact) of your specific AI prototype against these four pillars.
 
+## Concrete Signals: How to Actually Measure Each Pillar
+
+The four pillars above define production-readiness conceptually, but "reliability" and "operability" stay abstract until they're attached to specific, checkable signals. Here's what each pillar looks like translated into something you can actually verify rather than just discuss.
+
+**Reliability, measured concretely:**
+- Error rate stays low under simulated concurrent load — testing with even 5-10 simultaneous fake requests reveals bugs a solo founder's sequential testing never surfaces, as Bas learned below
+- The application recovers from a dependency failure (an AI provider timeout, a database hiccup) without requiring a manual restart
+- A defined retry or backoff strategy exists for calls to external services
+
+**Security, measured concretely:**
+- Two test accounts genuinely cannot see each other's data, confirmed by direct testing, not assumed from a code review alone
+- No API key or credential appears in browser developer tools, page source, or client-side JavaScript bundles
+- Authentication tokens expire and require refresh rather than remaining valid indefinitely
+
+**Scalability, measured concretely:**
+- A rough concurrent-user ceiling is known, even approximately, rather than completely unknown
+- That ceiling comfortably exceeds your realistic near-term growth with margin, not just your current usage
+- Database queries expected to run frequently have been checked for obvious performance problems, like missing indexes or unnecessary full-table scans
+
+**Operability, measured concretely:**
+- An alert would actually reach a human within a reasonable window if the application went down at 3 a.m.
+- A defined, even if informal, process exists for deploying updates without extended downtime
+- Someone other than the original AI tool's chat history could understand how to operate the system, meaning basic documentation exists somewhere durable
+
+The temptation with all four pillars is to discuss them at the level of "yes, I think that's handled" — precisely the trap Bas fell into below. Attaching each pillar to specific, testable signals converts a subjective impression into something a founder, or an outside reviewer, can actually confirm rather than assume. This is functionally what the 25-item pre-launch checklist covered in earlier guidance does at a more granular level — it's these same four pillars broken into checkable line items rather than four abstract categories.
+
+[LaunchStudio](https://launchstudio.eu/en/) evaluates against exactly these concrete signals rather than a subjective "does it feel ready" impression, which is what allows the team to give founders a specific, defensible answer rather than a vague reassurance.
+
+These four pillars aren't independent checkboxes — they interact, and optimizing one in isolation can quietly undermine another. A founder who adds aggressive rate limiting to shore up security, for instance, can inadvertently harm reliability if legitimate concurrent users start tripping the same limits meant to stop abuse. A team that adds monitoring (operability) without first fixing an underlying data isolation gap (security) simply gets faster notification of a problem it still can't safely fix without risking further exposure. This is why a genuine production-readiness review evaluates all four pillars together, in the context of how a specific product's real usage pattern will actually exercise each one, rather than treating each as a separate item to be independently ticked off — a rate limit tuned for a niche B2B tool's 50 daily users would strangle a viral consumer app's legitimate traffic, while a limit generous enough for that consumer app would do nothing to stop abuse on the lower-volume tool.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Learning the Difference Between "Works" and "Ready"

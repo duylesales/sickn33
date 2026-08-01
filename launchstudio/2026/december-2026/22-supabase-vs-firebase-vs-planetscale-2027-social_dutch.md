@@ -16,6 +16,8 @@ Bij **LaunchStudio**, gesteund door Manifera's diepgaande ervaring met PostgreSQ
 ✅ Cross-tenant-lektests
 ✅ Opgelost in dagen, geen weken
 
+💸 Verborgen kost die de meeste founders missen: PlanetScale schrapte zijn gratis niveau volledig, en zowel Supabase als Firebase kiezen niet standaard voor een EU-regio — je AI-tool heeft mogelijk stilletjes US-hosting ingesteld voor je AVG-gebonden data. Een regiocheck van 5 minuten nu is beter dan een compliance-verrassing later.
+
 Zijn datablootstelling: gedicht binnen 48 uur. 🚀
 
 👉 Lees de volledige databasevergelijking: [Link naar artikel]

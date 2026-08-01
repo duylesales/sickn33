@@ -42,6 +42,40 @@ Omdat micro-SaaS-founders vaak solo werken, is doorlopende betrouwbaarheid belan
 
 [Bekijk wat een micro-SaaS-lancering kost](https://launchstudio.eu/en/#calculator) voor jouw specifieke niche en klantenaantal.
 
+## Een Micro-SaaS-product Prijzen voor Duurzaamheid op Lange Termijn
+
+Prijzen is waar de meeste micro-SaaS-founders zichzelf tekortdoen, meestal omdat ze prijsinstincten importeren uit consumenten-apps of brede-marktSaaS waar volume een lage prijs rechtvaardigt. Een product gebouwd voor 100 klanten heeft een fundamenteel andere prijslogica nodig.
+
+**Prijs de uitkomst, niet het aantal functies**
+
+Een generieke planningstool concurreert op functies en wordt er dienovereenkomstig naar geprijsd — vaak €10-20/maand, omdat hij moet concurreren met tientallen vergelijkbare generieke tools. Een planningstool specifiek gebouwd voor zelfstandige fysiotherapeuten, met ingebouwde verzekeringscodeafhandeling en behandelprotocoltracking, concurreert niet langer op aantal functies. Hij concurreert op hoeveel tijd en compliancerisico hij wegneemt uit een specifieke, goed begrepen workflow. Die herkadering alleen al rechtvaardigt vaak 3-5x de prijs van een generiek equivalent.
+
+**Bereken je echte prijsbodem**
+
+Werk terug vanuit wat het bedrijf dat je daadwerkelijk wilt in stand houdt:
+
+- **Beoogd jaarinkomen** — wat moet dit bedrijf voor jou persoonlijk genereren
+- **Realistisch klantenplafond** — hoeveel klanten kun je redelijkerwijs werven en ondersteunen als solo-founder in jouw specifieke niche (meestal 50-500 voor een echte micro-SaaS)
+- **Vereiste maandprijs** — beoogd inkomen gedeeld door (12 × realistisch klantenplafond), vervolgens naar boven bijgesteld voor churn, aangezien niet elke aanmelding een volledig jaar blijft
+
+Een founder die €80.000/jaar nastreeft met een realistisch plafond van 100 klanten heeft ruwweg €67/maand per klant nodig voordat churn wordt meegerekend — niet de €15-20/maand waar een founder instinctief naar zou grijpen uit consumentenprijsgewoonte.
+
+**Weersta de drang om tiers toe te voegen die je niet nodig hebt**
+
+Brede-marktSaaS gebruikt gelaagde prijzen om klanten te vangen over een breed scala aan budgetten en behoeften. Een echte micro-SaaS die een smalle, goed begrepen niche bedient, doet het vaak beter met één enkel prijspunt, of hooguit twee tiers (zelfstandige beoefenaar versus klein team). Elke extra tier voegt beslissingsfrictie toe voor een prospect en supportcomplexiteit voor een solo-founder — kosten die pas zinvol zijn om te dragen wanneer je klantenbestand groot en divers genoeg is om de segmentatie nodig te hebben.
+
+**Jaarlijkse prijzen als stabiliteitshendel**
+
+Een jaarabonnement aanbieden met een bescheiden korting (doorgaans 15-20% korting op maandelijks) doet meer voor een micro-SaaS-founder dan voor een groter bedrijf: het zet onvoorspelbaar maandelijks churnrisico om in een jaar gegarandeerde omzet en cashflow, wat onevenredig zwaar weegt wanneer je totale klantenaantal klein genoeg is dat het verliezen van 3-4 klanten in een slechte maand een betekenisvolle omzetschommeling is in plaats van een afrondingsfout.
+
+**Herzie je prijzen jaarlijks, niet nooit**
+
+Micro-SaaS-founders stellen vaak eenmalig een prijs vast bij lancering en herzien die nooit meer, zelfs als het product functies wint en bewezen betrouwbaarheid opbouwt. Een product dat twee jaar heeft gedraaid zonder downtime en gestaag gevraagde functies heeft toegevoegd, heeft het recht verdiend op een prijsverhoging voor nieuwe klanten — bestaande klanten kunnen doorgaans grandfathered worden, wat ook een stil loyaliteitssignaal wordt.
+
+**Let op je effectieve prijs per uur support, niet alleen per klant**
+
+Een klant van €79/maand die je twee keer per week mailt, is in praktische termen minder winstgevend dan een klant van €99/maand die nooit contact hoeft op te nemen. Volg de supporttijd per klantsegment gedurende de eerste paar maanden na lancering, en laat die data — niet alleen ruwe omzet — bepalen welk klantprofiel je daadwerkelijk meer wilt targeten. Niches met duidelijke documentatiebehoeften of zware onboardingvereisten moeten specifiek hoger geprijsd worden om de foundertijd te compenseren die deze klanten verbruiken, aangezien in een micro-SaaS-bedrijf de tijd van de founder de schaarste resource is, niet servercapaciteit.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: 87 klanten en winstgevend, geen investeerders nodig

@@ -11,6 +11,7 @@ The fix — document for AI, not just humans: ✅
 ✅ Consistent patterns across the whole codebase
 ✅ A living architecture overview document
 ✅ Clear API and data model documentation
+✅ One root `AGENTS.md`/`CLAUDE.md` file — most AI tools auto-read it every session, no prompting needed
 
 At **LaunchStudio**, all code ships documented and AI-readable — because most clients keep building with AI tools after we hand off. Backed by Manifera's discipline across 160+ projects. 🛡️
 

@@ -65,6 +65,20 @@ Wanneer je een app lokaal draait, ben jij letterlijk de enige gebruiker ter were
 
 De stap maken van een AI-download op je lokale 'localhost' naar een loeistrakke productieserver op het open internet is dan ook absoluut geen kwestie van "even de bestandjes kopiëren". Het is een puur en zwaar vraagstuk van systems engineering. Je moet servers inrichten, SSL-certificaten configureren, custom domeinnamen koppelen, rate limiting implementeren en feilloze pipelines voor continuous deployment opzetten.
 
+## Wat Verschillende AI-Tools Je Daadwerkelijk Geven In De Download
+
+Niet elke AI-download is op dezelfde manier verpakt, en die verschillen doen er wél degelijk toe zodra je richting deployment beweegt.
+
+**Bolt** exporteert een schoon, zelfstandig Vite- of Next.js-project. De ZIP is prima overdraagbaar en makkelijk aan elke engineer te overhandigen, maar Bolt-projecten bevatten vrijwel nooit enige backend-scaffolding — je downloadt in werkelijkheid een pure frontend-schil, zonder datalaag eraan gekoppeld.
+
+**Lovable** genereert een pakket dat completer aanvoelt, omdat het de frontend vanaf het begin rechtstreeks koppelt aan een Supabase-project. Dat kan misleidend zijn: de download bevat vaak een Supabase anonymous key met behoorlijk soepele standaardpolicies, wat betekent dat de "databaseverbinding" die je hebt gedownload in de praktijk regelmatig niet veilig genoeg is om zomaar bloot te stellen aan echte gebruikers, zonder verdere hardening.
+
+**v0 (van Vercel)** focust zich uitsluitend op UI-componenten. De download is qua codekwaliteit het schoonst, maar functioneel het minst compleet uit de doos — er is doorgaans geen datalaag, geen authenticatie, en vaak geen routing voorbij één pagina of een handvol statische schermen.
+
+**Cursor**-projecten zijn eigenlijk geen "download" in de traditionele zin, omdat Cursor rechtstreeks werkt op een levende, lokale repository die aan Git gekoppeld is. Dit geeft technische oprichters vanaf dag één meer controle over de codebase, maar het veronderstelt ook dat degene die het project exporteert al verstand heeft van versiebeheer en basale deploymentconcepten — of bereid is de complete repository over te dragen aan een team dat dat wél heeft.
+
+De praktische implicatie is dat de tool waarmee je jouw AI-download hebt gegenereerd exact bepaalt welke gaten er nog gedicht moeten worden vóór de lancering. Bolt-gebruikers hebben doorgaans het meeste backend-werk vanaf nul nodig. Lovable-gebruikers hebben de meeste beveiligingshardening nodig rondom een bestaande databaseverbinding. v0-gebruikers hebben zowel een datalaag als authenticatie nodig, helemaal from scratch. Geen van deze gaten verdwijnt vanzelf — ze verhuizen simpelweg van "het probleem van je AI-tool" naar "jouw deploymentprobleem", op het exacte moment dat je op download klikt en verwacht dat een werkend ZIP-bestand zomaar een bedrijf wordt.
+
 ## De Kloof Overbruggen: Van Download Naar Deployment
 
 Exact dit immense gat — tussen "Ik heb hier de code op mijn laptop" en "Ik heb een veilige, live applicatie" — is het terrein waar [LaunchStudio](https://launchstudio.eu/nl/) opereert. 

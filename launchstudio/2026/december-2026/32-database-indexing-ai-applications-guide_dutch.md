@@ -45,6 +45,26 @@ Indexeringsproblemen zijn bijzonder gevaarlijk omdat ze onzichtbaar zijn tot ze 
 
 [Laat je databaseprestaties beoordelen](https://launchstudio.eu/en/#contact) voordat groei een kleine oversight verandert in een klantgerichte vertraging.
 
+## Bevestigen dat een Index Daadwerkelijk Wordt Gebruikt: een Queryplan Lezen
+
+Een index toevoegen en aannemen dat hij helpt is niet hetzelfde als het bevestigen ervan. Databases gebruiken niet altijd elke index die je aanmaakt — een slecht ontworpen index, een index op de verkeerde kolomcombinatie, of een query die zo is geschreven dat de database een verder correcte index niet kan gebruiken, kunnen er allemaal toe leiden dat een index wel bestaat maar nooit daadwerkelijk wordt gebruikt. Echt gebruik bevestigen vereist het bekijken van het eigen queryplan van de database, niet alleen erop vertrouwen dat het aanmaken van de index is gelukt.
+
+### Wat EXPLAIN ANALYZE je Daadwerkelijk Laat Zien
+De meeste databases, waaronder PostgreSQL, bieden een commando — `EXPLAIN ANALYZE` in het geval van Postgres — dat precies laat zien hoe de database van plan is een specifieke query uit te voeren, inclusief of hij een index gebruikte of de volledige tabel scande. Dit commando uitvoeren tegen je traagste of meest voorkomende queries, vóór en ná het toevoegen van een index, is de concrete manier om te bevestigen dat de index doet wat je bedoelde, in plaats van dit aan te nemen op basis van het feit dat de index bestaat.
+
+### De Twee Uitkomsten die het Meest Belangrijk Zijn
+- **Sequential Scan (Seq Scan)**: De database leest elke rij in de tabel om overeenkomsten te vinden. Op een kleine tabel is dit prima en soms zelfs sneller dan een index gebruiken; op een grote, groeiende tabel is dit precies het patroon dat indexering hoort te elimineren, en dit zien bij een query waarvan je verwachtte dat hij geïndexeerd was, is een duidelijk signaal dat er iets mis is met hoe de index is gedefinieerd of hoe de query is geschreven
+- **Index Scan (of Index Only Scan)**: De database sprong direct naar relevante rijen met behulp van de index in plaats van alles te scannen. Dit is over het algemeen wat je wilt zien voor elke veelvoorkomende query op een tabel van betekenisvolle omvang
+
+### Veelvoorkomende Redenen Waarom een Index Bestaat Maar Niet Wordt Gebruikt
+- De query filtert op een berekende of getransformeerde versie van de kolom, zoals het toepassen van een functie erop, in plaats van de ruwe geïndexeerde kolom, wat kan voorkomen dat de database een standaardindex gebruikt zonder een bijpassende expressie-index
+- De tabel is nog klein genoeg dat de eigen queryplanner van de database correct bepaalt dat een volledige scan daadwerkelijk sneller is dan de index gebruiken — geen bug, gewoon de planner die een redelijke, op kosten gebaseerde keuze maakt bij dat datavolume
+- De index dekt de verkeerde combinatie van kolommen voor een meerkolomsfilter, technisch aanwezig maar niet overeenkomend met hoe de query daadwerkelijk data filtert of sorteert
+- Verouderde tabelstatistieken zorgen ervoor dat de queryplanner de daadwerkelijke kosten van elke aanpak verkeerd inschat, wat periodiek databaseonderhoud (zoals Postgres's `ANALYZE`-commando) helpt accuraat te houden
+
+### Hier een Gewoonte van Maken, Geen Eenmalige Controle
+Querypatronen veranderen naarmate er functies worden toegevoegd, en een index die zes maanden geleden goed aansloot bij je queries, sluit mogelijk niet langer aan bij hoe je applicatie vandaag daadwerkelijk data bevraagt. Periodiek `EXPLAIN ANALYZE` opnieuw uitvoeren tegen de meest voorkomende en belangrijkste queries van je applicatie, niet alleen eenmalig na de initiële opzet, is wat deze drift opvangt voordat het een klantgerichte vertraging wordt in plaats van erna.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: van 8-seconden-query's naar instant resultaten op schaal

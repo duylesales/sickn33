@@ -41,6 +41,22 @@ Bij alle tien paste [LaunchStudio](https://launchstudio.eu/en/) hetzelfde onderl
 
 [Start je eigen tweeweekse tijdlijn](https://launchstudio.eu/en/#calculator) — beschrijf je project en zie hoe een realistische scope en planning eruitziet voor jouw specifieke prototype.
 
+## Patronen in de Data: Wat Tien Lanceringen Daadwerkelijk Onthullen
+
+Als je naar deze tien lanceringen kijkt als een dataset in plaats van tien geïsoleerde anekdotes, komen patronen naar boven die één enkele case study niet kan tonen.
+
+**Tijdlijn correleert met datagevoeligheid, niet met sectorglamour.** De snelste lanceringen — Twans vrachtdocumentatie (8 dagen), Stefans fietsdiagnostiek (9 dagen) — betroffen relatief laag-gevoelige data. De traagste — Barts pluimveecompliancerapportage (14 dagen) en Anouks bruiloftsleveranciersescrow (13 dagen) — betroffen ofwel regelgevingsauditvereisten ofwel betalingsescrow-logica, die beide oprechte verificatiestappen toevoegen ongeacht hoe "simpel" de onderliggende sector klinkt. Compliancerapportage voor een boerderij blijkt meer engineeringrigor te vereisen dan een consumentenmatchmakingtool, precies omdat regelgevingsaudittrails echte gevolgen hebben als ze fout zijn.
+
+**Zorggerelateerde data voegde ongeveer 2-3 dagen toe ten opzichte van vergelijkbare niet-zorgprojecten.** Loes's maaltijdplanning voor ouderenzorg (11 dagen) en Marloes's tandartstriage (12 dagen) betroffen beide zorgconforme dataopslag — een vereiste die niet geldt voor, bijvoorbeeld, Sams veterinaire besteltool (9 dagen) ondanks dat beide in dier- of zorggerelateerde categorieën vallen. Het onderscheid dat de tijdlijn daadwerkelijk bepaalde was niet "is dit medisch," maar "raakt dit specifiek beschermde patiëntdata."
+
+**Oorspronkelijke tool vertoonde geen betekenisvolle correlatie met tijdlijn.** Vier verschillende AI-tools — Lovable, Bolt, v0, Cursor — komen voor bij de tien cases, en geen enkele tool's projecten waren consistent sneller of trager dan die van een andere — een nuttig datapunt tegen de aanname dat sommige AI-tools "productieklaardere" output produceren dan andere. Wat de tijdlijn bepaalde was de bedrijfslogica die werd toegevoegd — betalingen, compliance, multi-locatie-isolatie — niet welke tool het oorspronkelijke prototype genereerde.
+
+**Complexiteit van betalingsintegratie varieerde meer dan complexiteit van authenticatie.** Bijna elke lancering vereiste vergelijkbaar authenticatiewerk, maar betalingslogica varieerde van eenvoudige abonnementsfacturering in verschillende gevallen tot oprecht complexe escrow-achtige holds bij Anouks bruiloftsleveranciersmatching, die geld moest vasthouden tot dienstlevering was bevestigd — de grootste enkele bron van tijdlijnvariatie over alle tien, meer dan sector of datatype.
+
+**Negen van de tien founders kwamen uit een professionele achtergrond volledig buiten software** — een veterinaire leverancier, een horeca-consultant, een boer, een operator van visserscharters. Dit is niet toevallig: het weerspiegelt wie er daadwerkelijk bouwt met Lovable, Bolt, v0 en Cursor vandaag de dag, en het is precies de doelgroep voor wie de kloof tussen "werkend prototype" en "productieklaar product" het grootst is, aangezien niemand interne engineering had om die zelf te dichten.
+
+Gelezen als een verzameling in plaats van individueel, suggereren deze tien lanceringen dat de daadwerkelijke drijfveer van tijdlijn en complexiteit bij het naar productie brengen van een AI-prototype niet de sector, de technische achtergrond van de founder, of de oorspronkelijke AI-tool is — het is de specifieke combinatie van datagevoeligheid en bedrijfslogica (betalingen, compliance, multi-party-toegang) die het product daadwerkelijk vereist.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: het elfde verhaal, volledig verteld

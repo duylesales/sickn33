@@ -73,6 +73,26 @@ As covered extensively across earlier security-focused guidance — authenticati
 
 [Get your application checked against this minimum](https://launchstudio.eu/en/#contact) before real users and real data are on the line.
 
+## How to Actually Verify Each Item, Not Just Assume You've Cleared It
+
+Reading through the 10 items above and mentally checking "yes, probably" against each is a common but unreliable way to actually clear this minimum — the entire point of a checklist is that each item gets a concrete, falsifiable verification, not a confident guess. Here is how to genuinely test each category, not just believe it.
+
+**Verifiable without deep technical skill:**
+- Open your browser's developer tools, go to the Network tab, and reload your app — if you see an AI provider API key or database credential appear in any request made directly from the browser, item 1 fails, visibly and unambiguously.
+- Try logging in with an obviously wrong password 20 times in rapid succession — if nothing slows you down or locks you out, item 8 (rate limiting) fails.
+- Deliberately trigger an error, such as submitting a malformed form or requesting a page that shouldn't exist, and read the resulting error message — if it shows a database table name, a stack trace, or an internal file path, item 9 fails.
+
+**Requires creating a second test account:**
+- Sign up for two separate accounts and, using account A's session, try to directly access a URL or resource that should belong only to account B, such as a booking ID or document link, by guessing or incrementing an identifier — if it loads, item 3 fails, and this is the single most consequential failure on the list.
+
+**Requires actual technical verification, not observation:**
+- Ask directly, of yourself or whoever built the backend: can this database be restored from a backup right now, today, tested and confirmed — not "backups are probably running somewhere." An untested backup is functionally equivalent to no backup, since the first time you discover it doesn't work is during an actual data-loss incident.
+- Confirm session tokens have an actual expiration configured, rather than defaulting to a library's out-of-the-box setting that may not expire at all.
+
+**Why founders skip this verification step even when they mean to check it:** most of these items look fine during normal use, because normal use is exactly the path an AI-generated prototype was optimized to handle well. The failures are only visible when someone deliberately tries the abnormal path — the wrong password repeated, the guessed URL, the malformed input — which is precisely why a founder's own casual testing during development rarely surfaces them, and why an external, deliberately adversarial review catches gaps that months of the founder's own normal usage never would.
+
+**A reasonable cadence:** verify this list once before initial launch, and again after any significant new feature ships, since new code paths can reintroduce a gap that was previously closed — security verification is a checkpoint tied to change, not a one-time certificate that stays valid indefinitely.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Clearing the Minimum Before a Regional Launch

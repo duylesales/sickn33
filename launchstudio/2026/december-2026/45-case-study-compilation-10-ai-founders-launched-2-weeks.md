@@ -65,6 +65,22 @@ Across all ten, [LaunchStudio](https://launchstudio.eu/en/) applied the same und
 
 [Start your own two-week timeline](https://launchstudio.eu/en/#calculator) — describe your project and see what a realistic scope and schedule looks like for your specific prototype.
 
+## Patterns Across the Data: What Ten Launches Actually Reveal
+
+Looking at these ten launches as a dataset rather than ten isolated anecdotes surfaces patterns a single case study can't show.
+
+**Timeline correlates with data sensitivity, not industry glamour.** The fastest launches — Twan's freight documentation (8 days), Stefan's bicycle diagnostics (9 days) — involved comparatively low-sensitivity data. The slowest — Bart's poultry compliance reporting (14 days) and Anouk's wedding vendor escrow (13 days) — involved either regulatory audit requirements or payment escrow logic, both of which add genuine verification steps regardless of how "simple" the underlying industry sounds. Compliance reporting for a farm turns out to require more engineering rigor than a consumer matchmaking tool, precisely because regulatory audit trails carry real consequences if wrong.
+
+**Healthcare-adjacent data added roughly 2-3 days versus comparable non-healthcare projects.** Loes's elder care meal planning (11 days) and Marloes's dental triage (12 days) both involved healthcare-compliant data storage — a requirement that doesn't apply to, say, Sam's veterinary ordering tool (9 days) despite both sitting in animal- or health-adjacent categories. The distinction that actually drove timeline wasn't "is this medical," but "does this touch protected patient data specifically."
+
+**Tool of origin showed no meaningful correlation with timeline.** Four different AI tools — Lovable, Bolt, v0, Cursor — appear across the ten cases, and no single tool's projects were consistently faster or slower than another's, a useful data point against the assumption that some AI tools produce more "production-ready" output than others. What drove timeline was the business logic being added — payments, compliance, multi-location isolation — not which tool generated the original prototype.
+
+**Payment integration complexity varied more than authentication complexity.** Nearly every launch needed comparable authentication work, but payment logic ranged from straightforward subscription billing in several cases to genuinely complex escrow-style holds in Anouk's wedding vendor matching, which needed to hold funds until service delivery was confirmed — the single biggest source of timeline variance across all ten, more than industry or data type.
+
+**Nine of ten founders came from a professional background entirely outside software** — a veterinary supplier, a hospitality consultant, a farmer, a fishing charter operator. This isn't incidental: it reflects who's actually building with Lovable, Bolt, v0, and Cursor today, and it's precisely the population for whom the gap between "working prototype" and "production-ready product" is largest, since none had in-house engineering to close it themselves.
+
+Read as a set rather than individually, these ten launches suggest the actual driver of timeline and complexity in taking an AI prototype to production isn't the industry, the founder's technical background, or the originating AI tool — it's the specific combination of data sensitivity and business logic (payments, compliance, multi-party access) the product actually requires.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Eleventh Story, Told in Full

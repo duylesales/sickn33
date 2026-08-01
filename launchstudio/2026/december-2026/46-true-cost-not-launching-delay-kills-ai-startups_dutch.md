@@ -39,6 +39,22 @@ Vraag jezelf concreet af: hoeveel potentiële klanten heb je gesproken die vanda
 
 [Stop de klok op uitstel](https://launchstudio.eu/en/#calculator) — krijg een concrete tijdlijn en prijs voor het lanceren van wat je al hebt gebouwd.
 
+## Een Simpel Model om een Cijfer op Je Eigen Uitstel te Plakken
+
+De vragen hierboven helpen een founder het gewicht van uitstel te voelen, maar een ruw cijfer is overtuigender dan een gevoel, vooral als je een lanceringsbeslissing aan jezelf of een medeoprichter moet rechtvaardigen. Dit is een simpele manier om je eigen maandelijkse kosten van niet-lanceren te benaderen.
+
+**Begin met een realistische schatting van maandelijkse omzet.** Neem je verwachte aantal klanten in de eerste maand live, vermenigvuldigd met je geplande prijspunt. Zelfs een conservatieve schatting — zeg, 5 klanten aan €40/maand, oftewel €200 — geeft je een cijfer om mee te werken. Elke maand dat je de lancering uitstelt, is een maand waarin die €200 (of wat je echte cijfer ook is) simpelweg niet gebeurde, en niet met terugwerkende kracht later verschijnt; het is weg, niet uitgesteld.
+
+**Tel het cumulatieve effect van verloren vroege klanten mee.** Vroege klanten geworven in maand één verwijzen vaak anderen door, geven feedback die de conversie voor latere klanten verbetert, en worden casestudy's die toekomstige verkoopgesprekken makkelijker maken. Een maand uitstel kost niet alleen de directe omzet van die maand — het duwt de start van een cumulatieve keten van doorverwijzingen en feedbackloops naar achteren die anders al begonnen zou zijn.
+
+**Neem concurrerende verovering mee, zelfs ruw geschat.** Als je zelfs één plausibele concurrent kunt identificeren die jouw ruimte betreedt, schat welk percentage van je adresseerbare klantenbestand zij per maand voorsprong zouden kunnen veroveren — zelfs een ruwe schatting van 2-5% maandelijkse erosie, samengesteld over meerdere maanden uitstel, levert een cijfer op dat het waard is serieus te nemen.
+
+**Vermenigvuldig met het aantal maanden dat je al hebt uitgesteld, niet alleen het aantal dat voor je ligt.** Floors casus hieronder illustreert waarom dit ertoe doet: de eerlijke berekening is niet "wat zou nog een maand kosten," het is "wat hebben de negen maanden die al zijn besteed gekost" — bijna altijd een groter en confronterender cijfer dan founders verwachten wanneer ze eindelijk gaan zitten en de rekensom maken in plaats van te schatten op basis van een gevoel.
+
+**Vergelijk het totaal met je daadwerkelijke lanceringskosten.** Zodra je zelfs een ruw maandelijks cijfer hebt, vermenigvuldig het met je realistische uitstelvenster en vergelijk het direct met een concrete offerte voor een productielancering. Voor de meeste AI-native founders is deze vergelijking — echte cijfers aan beide kanten, in plaats van een vaag gevoel dat lanceren "duur" is en wachten "gratis" — wat de beslissing daadwerkelijk herkadert.
+
+Deze oefening is niet bedoeld om een precies, verdedigbaar cijfer voor een bestuurspresentatie op te leveren. Het is bedoeld om de gevoelde asymmetrie tussen zichtbare lanceringskosten en onzichtbare uitstelkosten te vervangen door twee cijfers die een founder daadwerkelijk naast elkaar kan leggen, wat meestal genoeg is om het "bijna klaar"-patroon op zichzelf te doorbreken, voordat een externe deadline de kwestie afdwingt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: negen maanden "bijna klaar"

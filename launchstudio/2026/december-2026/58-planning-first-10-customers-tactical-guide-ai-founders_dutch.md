@@ -38,6 +38,21 @@ Elke tactiek hierboven hangt af van het feit dat je product daadwerkelijk klaar 
 
 [Word productieklaar vóór je eerste outreachbericht](https://launchstudio.eu/en/#calculator) — je eerste 10 klanten verdienen een product dat je niet in verlegenheid brengt.
 
+## Wat Je Daadwerkelijk Moet Bijhouden Tijdens Die Eerste 10 Klantgesprekken
+
+De tactieken hierboven brengen je in de kamer, het gesprek, of de DM met je eerste potentiële klanten; wat je met die toegang doet, doet er net zo veel toe als het verkrijgen ervan, aangezien deze vroege gesprekken ook de rijkste, goedkoopste bron van product- en prijsinformatie zijn die je zult hebben voordat schaal direct gesprek met elke klant onmogelijk maakt.
+
+**Concrete dingen die het waard zijn om vast te leggen uit elk gesprek, niet slechts algemene indrukken:**
+- **De exacte woorden die ze gebruiken om hun probleem te beschrijven**, niet jouw product. De eigen formulering van een prospect over zijn pijnpunt is vaak betere marketingcopy dan alles wat een founder zelf zou schrijven, en het bijhouden ervan over meerdere gesprekken onthult of een consistent taalpatroon naar boven komt.
+- **Waar aarzeling daadwerkelijk naar boven komt.** Noteer het specifieke moment in elk gesprek waarop enthousiasme licht afkoelt — prijs, een ontbrekende functie, onzekerheid over overstappen van een huidige tool — aangezien een patroon over verschillende gesprekken op hetzelfde punt een betrouwbaarder signaal is dan de uitkomst van welk enkel gesprek dan ook.
+- **Waarmee ze je vergelijken.** Prospects noemen vaak wat ze momenteel in plaats daarvan gebruiken, zelfs als het een spreadsheet of een handmatig proces is in plaats van een directe concurrent — dit vertelt je je echte concurrerende alternatief, wat vaak niet het product is waarvan je aannam dat je ermee concurreerde.
+- **De specifieke prijsreactie**, niet slechts "ze leken er prima mee." Accepteerden ze het cijfer meteen, onderhandelden ze, werden ze stil, of vroegen ze wat een lagere tier omvat — elke reactie wijst naar een andere prijsconclusie dan een generieke "prijsstelling ging oké"-notitie zou vastleggen.
+- **Of ze ongevraagd een introductie aanboden**, versus alleen nadat er direct om was gevraagd. Ongevraagde introducties zijn een sterker signaal van organische bepleiting, het waard om apart te noteren van introducties die specifiek je verzoek uit tactiek #3 hierboven vereisten.
+
+**Een simpele manier om dit georganiseerd te houden zonder overhead:** één spreadsheetrij per gesprek — naam, hun eigen probleemformulering, aarzelpunt, genoemde vergelijking, prijsreactie, introductie-uitkomst — kost minder dan twee minuten om in te vullen na elk gesprek en wordt, na tien rijen, een oprecht nuttig patroonherkenningsinstrument dat geen enkel individueel gesprek alleen zou kunnen bieden. Founders die deze stap overslaan, behouden vaak alleen een vage algemene indruk, zoals "mensen leken positief," in plaats van de specifieke, uitvoerbare patronen, zoals "drie aparte prospects aarzelden op exact hetzelfde punt op de prijspagina," die daadwerkelijk informeren wat als volgende op te lossen.
+
+**Waarom deze data er meer toe doet dan alleen het landen van deze 10 klanten:** de patronen die hier worden vastgelegd, informeren direct de product- en prijsbeslissingen die relevant zijn voor klant 11 tot en met 100 — hetzelfde bezwaar dat naar boven komt in je derde, zesde, en negende gesprek is een veel sterker signaal om naar te handelen dan founderinstinct alleen, en het is een vorm van onderzoek die deze tien bewust persoonlijke, onschaalbare gesprekken kunnen opleveren die geen later, groter klantenbestand op dezelfde directe manier zal herhalen.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: tien klanten van een lijst van veertig namen

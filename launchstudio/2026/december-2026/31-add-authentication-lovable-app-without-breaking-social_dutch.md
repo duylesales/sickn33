@@ -13,6 +13,8 @@ De veiligere volgorde: ✅
 4️⃣ Test cross-gebruiker-toegang zelf voordat je het "af" noemt
 5️⃣ Voeg Row Level Security toe als tweede verdedigingslinie
 
+Die URL-parametertest is niet eens de hele checklist — verborgen adminknoppen, API-routes die rechtstreeks vanuit Postman aan te roepen zijn, en rollen opgeslagen in local storage zijn nog 3 manieren waarop "ingelogd" stiekem "wagenwijd open" betekent. 🔍
+
 Bij **LaunchStudio**, gesteund door Manifera's cybersecuritywortels (CFLW, TNO), krijgt authenticatie de zorgvuldigheid die het nodig heeft — voordat echte gebruikers echte accounts aanmaken. 🛡️🚀
 
 👉 Lees hoe je authenticatie toevoegt zonder alles te breken: [Link naar artikel]

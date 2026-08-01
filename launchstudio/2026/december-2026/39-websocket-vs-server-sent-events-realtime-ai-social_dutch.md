@@ -13,6 +13,8 @@ Het simpele beslissingskader: ✅
 1️⃣ Moet de browser continu data sturen? → WebSocket
 2️⃣ Puur "server stuurt, browser toont"? → SSE
 
+⚠️ Bonus valkuil: door AI gegenereerde WebSocket-code slaat reconnectielogica vaak volledig over — werkt prima in tests, faalt stilletjes voor echte gebruikers op wankele verbindingen
+
 Bij **LaunchStudio**, gesteund door Manifera's full-stack-ervaring, stemmen we de juiste technologie af op je daadwerkelijke interactiepatroon — voordat schalen de verkeerde keuze duur maakt om te ontwarren. 🛡️
 
 Haar resultaat: -40% hostingkosten, nul verandering aan de gebruikerservaring. 🚀

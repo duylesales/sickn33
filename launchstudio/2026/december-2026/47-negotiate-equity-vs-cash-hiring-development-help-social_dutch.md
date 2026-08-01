@@ -17,6 +17,8 @@ Wanneer het een slechte deal is: ❌
 
 Het kader: krijg eerst een ECHTE cashofferte, bereken dan wat het equity-% waard is bij een toekomstige waardering. Meestal een eyeopener. 🧠
 
+⚠️ Verborgen valkuil die de meeste founders missen: informeel gegeven equity is vaak VOLLEDIG GEVEST op dag één — geen cliff, geen terugvordering. Developer verdwijnt volgende week? Die equity is permanent van hem. Eis altijd vesting + een ondertekende IP-toewijzing.
+
 Bij **LaunchStudio** betekenen vaste prijzen vanaf €800 dat founders echte getallen kunnen vergelijken voordat ze hun bedrijf weggeven. 🛡️🚀
 
 👉 Lees de eerlijke equity-versus-cash-rekensom: [Link naar artikel]

@@ -69,6 +69,26 @@ Indexing issues are particularly dangerous because they're invisible until they 
 
 [Get your database performance reviewed](https://launchstudio.eu/en/#contact) before growth turns a minor oversight into a customer-facing slowdown.
 
+## Confirming an Index Actually Gets Used: Reading a Query Plan
+
+Adding an index and assuming it's helping isn't the same as confirming it. Databases don't always use every index you create — a poorly designed index, an index on the wrong column combination, or a query written in a way that prevents the database from using an otherwise-correct index can all result in an index that exists but never actually gets used. Confirming real usage requires looking at the database's own query plan, not just trusting that the index creation succeeded.
+
+### What EXPLAIN ANALYZE Actually Shows You
+Most databases, including PostgreSQL, provide a command — `EXPLAIN ANALYZE` in Postgres's case — that shows exactly how the database intends to execute a specific query, including whether it used an index or scanned the full table. Running this command against your slowest or most frequent queries, before and after adding an index, is the concrete way to confirm the index is doing what you intended, rather than assuming it based on the fact that the index exists.
+
+### The Two Outcomes That Matter Most
+- **Sequential Scan (Seq Scan)**: The database is reading every row in the table to find matches. On a small table this is fine and sometimes even faster than using an index; on a large, growing table, this is the exact pattern indexing is meant to eliminate, and seeing it on a query you expected to be indexed is a clear signal something is wrong with how the index was defined or how the query is written
+- **Index Scan (or Index Only Scan)**: The database jumped directly to relevant rows using the index rather than scanning everything. This is generally what you want to see for any frequent query on a table of meaningful size
+
+### Common Reasons an Index Exists But Isn't Used
+- The query filters on a computed or transformed version of the column, like applying a function to it, rather than the raw indexed column, which can prevent the database from using a standard index without a matching expression index
+- The table is still small enough that the database's own query planner correctly determines a full scan is actually faster than using the index, not a bug, just the planner making a reasonable cost-based choice at that data volume
+- The index covers the wrong combination of columns for a multi-column filter, technically existing but not matching how the query actually filters or sorts data
+- Outdated table statistics cause the query planner to misjudge the actual cost of each approach, which periodic database maintenance (like Postgres's `ANALYZE` command) helps keep accurate
+
+### Making This a Habit, Not a One-Time Check
+Query patterns change as features get added, and an index that was well-matched to your queries six months ago may no longer align with how your application actually queries data today. Periodically re-running `EXPLAIN ANALYZE` against your application's most frequent and most important queries, not just once after initial setup, is what catches this drift before it becomes a customer-facing slowdown rather than after.
+
 ## Real example
 
 ### An AI-Native Founder in Action: From 8-Second Queries to Instant Results at Scale

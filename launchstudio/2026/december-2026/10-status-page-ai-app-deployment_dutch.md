@@ -46,6 +46,36 @@ Je hebt geen toegewijde DevOps-engineer nodig voor goede monitoring. De meeste m
 
 [Praat met een engineer over je deploymentarchitectuur](https://launchstudio.eu/en/#contact) — voordat je eerste storing je eerste verloren klant wordt.
 
+## Realistische Uptime-doelen Stellen Voordat Je Ze Nodig Hebt
+
+De meeste solo founders denken pas na over een Service Level Objective (SLO) wanneer een storing hen ertoe dwingt. Dat is achterstevoren — vooraf bepalen hoe "acceptabele" downtime eruitziet, geeft je een rustig beslissingskader tijdens een incident, in plaats van improviseren terwijl klanten je al mailen.
+
+**Kies een SLO die je daadwerkelijk kunt waarmaken**
+
+- 99,9% uptime staat ongeveer 43 minuten downtime per maand toe — een redelijk doel voor de meeste vroege AI SaaS-producten, ook die gebouwd op Lovable of Bolt met één hostingprovider
+- 99,99% (ongeveer 4 minuten per maand) is enterprise-niveau betrouwbaarheid, meestal vereist het redundante infrastructuur over meerdere regio's — zelden de engineeringkosten waard voor een founder met minder dan een paar honderd klanten
+- Een SLO die je realistisch niet kunt halen is erger dan geen SLO, omdat het een belofte creëert die je uiteindelijk publiekelijk breekt
+
+**Bouw een ernst-ladder zodat je niet hoeft te gokken tijdens een incident**
+
+1. **SEV-1** — de kernfunctie van het product ligt plat voor alle gebruikers (niemand kan inloggen, of de AI-functie geeft voor iedereen een fout)
+2. **SEV-2** — een deel van de gebruikers of een secundaire functie is getroffen (herinneringen zijn vertraagd, maar de kernplanning werkt nog)
+3. **SEV-3** — een cosmetisch of klein probleem zonder materiële impact op het vermogen van een klant om het product te gebruiken
+
+Elk ernstniveau moet gekoppeld zijn aan een reactietijd en een communicatieverplichting. Een SEV-1 vereist misschien een statuspagina-update binnen 15 minuten en een directe e-mail aan getroffen klanten binnen het uur. Een SEV-3 kan gewoon gelogd worden en meegenomen worden in de volgende deploy, zonder dat er ook maar een publieke update nodig is.
+
+**Schrijf je incidentsjablonen nu, niet tijdens het incident**
+
+Wanneer er om 2 uur 's nachts iets kapot gaat, wil je niet vanaf nul je eerste klantgerichte update aan het opstellen zijn terwijl je ook probeert het eigenlijke probleem te debuggen. Vooraf geschreven sjablonen voor "we onderzoeken het," "we hebben de oorzaak geïdentificeerd," "we monitoren een fix," en "opgelost" besparen kostbare minuten tijdens een live incident en voorkomen dat paniekerige, overdreven technische taal terechtkomt bij klanten die vooral gerustgesteld willen worden dat iemand het weet en eraan werkt.
+
+**Volg je foutbudget als een resource, niet als een bijzaak**
+
+Een foutbudget is simpelweg het omgekeerde van je SLO: als je doel 99,9% uptime is, is je maandelijkse foutbudget die resterende 0,1%, ofwel ongeveer 43 minuten. Zodra je downtime zo framet, wordt het een besteedbare resource in plaats van een abstracte mislukking. Een founder die het verbruik tegen dat budget bijhoudt — zelfs in een simpel spreadsheet dat na elk incident wordt bijgewerkt — kan een verontrustende trend spotten (drie kleine storingen die tegen dag 10 al de helft van het maandbudget opeten) lang voordat het een voor klanten zichtbare crisis wordt. Dit maakt van monitoring een vooruitkijkend planningsinstrument in plaats van een reactief alertsysteem.
+
+**Doe een postmortem, zelfs als solo founder**
+
+Schrijf na elk SEV-1- of SEV-2-incident een korte postmortem: wat gebeurde er, hoe lang duurde het om het te detecteren, hoe lang duurde het om op te lossen, en welke specifieke verandering herhaling voorkomt. Dit is geen formaliteit die voorbehouden is aan grotere teams — het is het mechanisme waarmee de monitoringstack van een solo founder daadwerkelijk beter wordt in de loop van de tijd, in plaats van stilzwijgend keer op keer dezelfde categorie storing te absorberen.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de zes-uur-storing die niemand opmerkte

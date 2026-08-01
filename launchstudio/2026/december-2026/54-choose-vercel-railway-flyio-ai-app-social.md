@@ -12,6 +12,8 @@ The decision framework: ✅
 3️⃣ Proven global latency needs? → Fly.io
 4️⃣ Unsure? → Start with Vercel
 
+🗄️ Hidden decision #2: none of these 3 platforms are database products. Wrong compute+database pairing (e.g. serverless functions with no connection pooler) can max out your database's connection limit under real load — pick a proven pairing (Vercel+Supabase, Railway+Railway Postgres, Fly.io+Fly Postgres).
+
 At **LaunchStudio**, backed by Manifera's DevOps experience across 160+ projects, we match the platform to YOUR architecture — including hybrid setups. 🛡️
 
 Her fix: kept the frontend on Vercel, moved just the nightly job to Railway. Zero disruption, problem solved. 🚀

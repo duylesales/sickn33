@@ -5,6 +5,7 @@ Elke keer dat je app een prompt met klantdata naar OpenAI/Anthropic stuurt, verl
 ❌ Geen bevestigde verwerkersovereenkomst met je AI-provider
 ❌ Generiek privacybeleid dat AI-verwerking helemaal nooit vermeldt
 ❌ Geen echt end-to-end-verwijderingsproces wanneer een gebruiker vergeten wil worden
+❌ Geen Data Protection Impact Assessment — wettelijk verplicht (Art. 35) bij AI-screening, -scoring of -geschiktheidstools, ook kleine
 
 OpenAI of Anthropic gebruiken maakt je NIET automatisch conform. Je moet het zelf nog steeds configureren. 🧠
 

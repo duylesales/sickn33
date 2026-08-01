@@ -15,6 +15,8 @@ De oplossing kost bijna niets om te draaien: ⚡
 
 Bij **LaunchStudio** is deze monitoringstack standaard bij elke lancering — geen add-on van €500 die je koopt na je eerste storing. 🛡️
 
+📊 Pro-tip: stel je SLO vast vóórdat de storing komt. 99,9% uptime = ~43 min/maand downtime-budget. Volg het verbruik als een resource, niet als een verrassing.
+
 2 van je eerste 10 klanten verliezen aan een onopgemerkte storing is een churn-gebeurtenis van 20%. Kom er niet op de harde manier achter. 🚀
 
 👉 Lees waarom monitoring wint van marketing bij lancering: [Link naar artikel]

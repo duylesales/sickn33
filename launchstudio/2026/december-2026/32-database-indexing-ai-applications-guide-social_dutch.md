@@ -13,6 +13,8 @@ De indexeringschecklist: ✅
 4️⃣ Monitor trage-querylogs na lancering
 5️⃣ Niet over-indexeren — elke index voegt schrijfoverhead toe
 
+Neem niet zomaar aan dat je index werkt — draai `EXPLAIN ANALYZE`. "Seq Scan" bij een query waarvan je dacht dat hij geïndexeerd was, betekent dat hij stilletjes niets doet. 🔍
+
 Bij **LaunchStudio**, gesteund door Manifera's database-expertise over PostgreSQL, MongoDB & MySQL, vangen we dit voordat het een crisis wordt. 🛡️
 
 Zijn oplossing: 6-8 seconden → onder 200ms. Eén dag werk. Nul frontend-wijzigingen. 🚀

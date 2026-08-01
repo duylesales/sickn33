@@ -12,6 +12,8 @@
 ✅ Zakelijke en publieke-sector-klanten VEREISEN vaak compliancegereedheid
 ✅ "Snel bewegen, later voldoen" is bijna altijd het duurdere pad
 
+🎯 De meeste AI-native founders nemen aan dat een strengere EU AI Act-klasse van toepassing is dan daadwerkelijk het geval is. Realitycheck: typische SaaS-tools (planning, contentgeneratie, aanbevelingen) zitten meestal in "beperkt risico" — wat betekent dat de kernverplichting slechts transparantie is, geen zwaar complianceprogramma.
+
 Bij **LaunchStudio** is AVG-bewuste architectuur standaard bij elke productiedeployment — geen speciaal verzoek. Geïnformeerd door Herre Roelevinks cybersecurityachtergrond en Manifera's werk met compliance-zware klanten zoals TNO. 🛡️
 
 Haar resultaat: won een middelgroot productiecontract specifiek omdat ze elke datavraag onmiddellijk kon beantwoorden — de Amerikaanse concurrent gaf nooit een duidelijk antwoord. 🚀

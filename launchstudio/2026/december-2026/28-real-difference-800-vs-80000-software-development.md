@@ -64,6 +64,24 @@ Founders comparing these two prices are often, without realizing it, comparing a
 
 [Use the price calculator](https://launchstudio.eu/en/#calculator) to see exactly where your specific project falls, based on what you've already built versus what remains.
 
+## The Messy Middle: When Your Project Doesn't Cleanly Fit Either Price Point
+
+Not every founder fits neatly into "fully validated AI prototype, needs only last-mile work" or "nothing built yet, needs the full agency scope." A real and common middle case exists, typically priced somewhere between €15,000 and €40,000, and understanding when you're actually in this middle tier prevents both overpaying for scope you don't need and underpaying for scope you do.
+
+### Signals You're Likely in the Middle Tier, Not the LaunchStudio Tier
+- Your AI-generated prototype exists but hasn't been tested with real users yet, meaning your interface, while functional, carries real risk of needing significant rework once actual users interact with it
+- You built multiple competing versions of your core flow using different AI tools and haven't settled on which one to move forward with, meaning meaningful design decision work still remains
+- Your product requires a genuinely novel technical component — a custom algorithm, an unusual integration, a complex multi-step workflow — that falls outside what "last-mile infrastructure" typically covers
+- You need ongoing feature development beyond an initial launch, not just a one-time production-readiness pass
+
+### Why This Tier Isn't Just "LaunchStudio But More Expensive"
+The middle tier usually involves genuine additional scope, not simply a bigger version of the same last-mile work: a validation and light UX iteration phase, decision-making between competing prototype directions, and build-out of the novel component that a template-based last-mile engagement was never scoped to include. Pricing this correctly requires an actual conversation about what specifically remains uncertain or unbuilt, rather than applying either the €800-€7,500 template or the full €80,000 agency template by default.
+
+### How to Figure Out Which Tier You're Actually In
+The most reliable test: could you hand your current prototype to an engineer today and have them tell you, within an hour, exactly what needs fixing? If yes — your interface is validated, your feature logic works, and the gaps are specific and nameable (authentication, payments, hosting) — you're very likely in LaunchStudio's tier regardless of how impressive or unfinished your prototype feels to you personally. If an engineer would instead need to ask you fundamental questions about what the product is even supposed to do, or would find several structurally different approaches tangled together in the codebase, you're likely in the middle tier or beyond, and a conversation about broader scope, potentially with Manifera's fuller development services rather than LaunchStudio specifically, is the more honest starting point.
+
+[Not every founder knows which tier fits](https://launchstudio.eu/en/#contact) before that conversation, which is exactly why LaunchStudio's initial scoping call exists — to identify honestly which category a specific project actually falls into before any pricing commitment is made.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Comparing Three Quotes That Weren't Actually Comparable

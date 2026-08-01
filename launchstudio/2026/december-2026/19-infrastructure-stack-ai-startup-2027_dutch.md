@@ -54,6 +54,24 @@ Dit is precies de laag die [LaunchStudio](https://launchstudio.eu/en/) werd gebo
 
 [Gebruik de prijscalculator](https://launchstudio.eu/en/#calculator) om precies te zien welke infrastructuurlagen jouw specifieke project nodig heeft en wat het voltooien ervan kost.
 
+## De Bouwvolgorde Bepalen: Welke Lagen Krijgen Eerst Prioriteit
+
+Weten dat de zeven lagen bestaan is slechts de helft van het probleem. De volgorde waarin je ze verstevigt is net zo belangrijk, omdat verschillende lagen afhangen van beslissingen die in een eerdere laag zijn genomen — ze buiten volgorde bouwen betekent meestal dat je later werk moet overdoen, niet dat je nu tijd bespaart.
+
+**Een praktische bouwvolgorde, en waarom die deze richting op gaat:**
+
+1. **Authenticatie eerst, altijd.** Elke andere productielaag — database-isolatie, betalingsattributie, monitoringalerts gekoppeld aan een specifiek account — gaat ervan uit dat je al betrouwbaar weet bij wie een bepaald verzoek hoort. Authenticatie er pas achteraf bij plakken, nadat de database- en betalingslagen al zijn gebouwd, betekent vrijwel altijd dat je beide opnieuw moet aanraken, omdat tenant-isolatie en factuurgegevens meestal zijn gekoppeld aan welke identifier de authenticatie vaststelt.
+2. **Databasepersistentie en -isolatie ten tweede.** Zodra gebruikers betrouwbaar zijn geïdentificeerd, hebben hun gegevens een duurzaam thuis nodig met correcte tenant-grenzen. Dit is ook de laag die de meeste AI-bouwertools het verst verkeerd doen, omdat een demo-omgeving voor één gebruiker zelden simuleert dat twee echte klanten het product tegelijk gebruiken.
+3. **Hosting en deployment ten derde, eerder dan de meeste founders verwachten.** Weggaan van een preview-URL naar echte, gemonitorde infrastructuur met SSL en omgevingsscheiding zou moeten gebeuren voordat betalingen live gaan, niet erna — een live betalingssysteem gericht op instabiele infrastructuur creëert precies het soort incident (een klant belast voor een dienst die op dat moment offline is) dat het vertrouwen het snelst beschadigt en het moeilijkst te herstellen is.
+4. **Betalingen ten vierde.** Op dit punt weet je wie je gebruikers zijn, is hun data veilig geïsoleerd, en is je infrastructuur stabiel genoeg om daadwerkelijk te leveren waarvoor je rekent — de randvoorwaarden waar facturering van afhangt zijn al vervuld.
+5. **Monitoring en observability, doorlopend verweven in plaats van er achteraf aan geplakt.** Basale foutregistratie moet bestaan vanaf het moment dat echte gebruikers het product aanraken, niet na de eerste ongemelde storing die je een klant kost. Volledige observability — uptime-alerts, prestatiedashboards — kan meegroeien met de andere lagen in plaats van te wachten tot ze allemaal klaar zijn.
+
+**Waarom founders deze volgorde stelselmatig omdraaien:** AI-bouwertools genereren eerst de visueel voor de hand liggende lagen — frontend, dan een basale AI-integratie — omdat dat is wat een demo nodig heeft om indrukwekkend over te komen op een investeerder of potentiële klant. Dit creëert een natuurlijke maar misleidende indruk dat authenticatie, databaseprecisie en monitoring optionele afwerkingsdetails zijn in plaats van fundamentele afhankelijkheden waar de rest van de stack stilzwijgend op leunt. Een founder die Stripe aansluit op een prototype zonder echte authenticatie bouwt een betalingssysteem op een identiteitslaag die niet betrouwbaar weet wie er daadwerkelijk betaalt.
+
+**Lagen die oprecht parallel kunnen lopen:** hostingconfiguratie en monitoring-setup zijn zelden van elkaar afhankelijk en kunnen tegelijkertijd door verschillende engineers worden gebouwd zonder conflict. Authenticatie en database-isolatie zijn daarentegen strak gekoppeld — isolatiebeleid wordt doorgaans gebouwd rond welke identifier de authenticatielaag als bron van waarheid behandelt voor "wie is deze gebruiker" — dus deze twee kun je het beste samen plannen in plaats van ze te splitsen over aparte werkstromen die het over die identifier oneens zouden kunnen zijn.
+
+De volgorde goed krijgen bespaart niet alleen engineeringuren. Het voorkomt het specifieke faalscenario van het uitbrengen van een betalings- of datalaag die later gedeeltelijk moet worden herbouwd zodra blijkt dat een fundamentele aanname uit een eerdere laag de hele tijd al onjuist was.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: de ontbrekende lagen in kaart brengen voordat ze noodgevallen werden

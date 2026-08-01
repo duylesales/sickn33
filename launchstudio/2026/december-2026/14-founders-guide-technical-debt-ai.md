@@ -63,6 +63,34 @@ Assessing and paying down AI-generated technical debt is one of the most common 
 
 [Get a technical debt assessment](https://launchstudio.eu/en/#contact) of your AI-generated codebase before it slows down your next feature launch.
 
+## The Specific Code Patterns That Signal AI-Generated Debt
+
+Traditional technical debt often hides in comments like "TODO: fix this later." AI-generated debt hides differently — in structural inconsistency that only becomes visible when you look across, not within, individual files. These are the patterns that show up most consistently.
+
+**Parallel state management approaches**
+
+An AI tool asked to add a form on Monday might use local component state. Asked to add a similar form on Thursday, in a fresh chat session with no memory of Monday's pattern, it might reach for a global state library instead. Neither approach is wrong in isolation, but a codebase with three different state management philosophies scattered across similar features is one where every new feature requires guessing which pattern applies where — and guessing wrong breaks things in ways that are hard to trace.
+
+**Duplicated business logic with subtle drift**
+
+A validation rule ("email must be unique," "price must be positive") often gets regenerated slightly differently every time it's needed, rather than referenced from one shared source. Early on, these duplicates are usually identical. Over dozens of prompts, they drift — one copy gets an edge case fix, the other three don't. The bug this produces is uniquely frustrating: the same rule appears to work in one part of the app and fail in another, with no obvious reason why.
+
+**Inconsistent error handling depth**
+
+Some AI-generated functions include thorough error handling — checking for null values, catching failed API calls, showing user-facing messages. Others, generated under a simpler prompt or an earlier session, have none at all. The inconsistency itself is the debt: a codebase where error handling is unpredictable is one where you can never be confident a given user action is actually safe until you've manually checked that specific code path.
+
+**Orphaned code from abandoned directions**
+
+When a founder asks an AI tool to try an approach, doesn't like the result, and asks for something different, the original attempt is often left in the codebase rather than removed — an unused API route, a component nobody renders, a database table nobody queries. This orphaned code doesn't cause bugs directly, but it inflates the surface area a future review has to account for, and occasionally gets accidentally reconnected by a later prompt that doesn't know it was abandoned.
+
+**Missing type safety at integration boundaries**
+
+AI-generated code is often internally consistent about data shapes within a single generation, but loses that consistency at the boundaries between features built in different sessions — a field named `userId` in one part of the app and `user_id` in another, silently causing data to not connect the way a founder assumes it does.
+
+**Why a line-by-line review misses most of this**
+
+None of these patterns show up by reading any single file in isolation — each function looks reasonable on its own. They only become visible by comparing patterns across the whole codebase, which is precisely why founders (technical or not) tend to miss this category of debt until a feature request that "should be simple" turns out to touch three inconsistent implementations of the same underlying concept.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Untangling Six Months of Accumulated AI Debt

@@ -14,6 +14,8 @@ LaunchStudio wins when: ✅
 ✅ You want zero single-point-of-failure risk
 ✅ You don't want to manage an ongoing relationship
 
+💡 Hiring a freelancer anyway? Ask this first: "Have you worked inside a Lovable/Bolt/Cursor-generated codebase before?" — the answer reveals more than any resume
+
 She used BOTH: **LaunchStudio** for her trade-fair deadline (fixed price, fixed timeline, backed by Manifera's 120+ engineers), then a freelancer for ongoing feature work afterward — made easy because LaunchStudio's code was fully documented. 🛡️
 
 Result: hit her deadline, smooth handoff, zero friction. 🚀

@@ -63,6 +63,24 @@ Because founders are emotionally invested in their own prototype (or, alternatel
 
 [Get an honest rebuild-vs-refactor assessment](https://launchstudio.eu/en/#contact) of your struggling AI prototype.
 
+## A Self-Diagnostic You Can Run This Week, Before Paying for Any Assessment
+
+Before bringing in an outside assessment, founders can run a rough version of the layer-by-layer diagnosis themselves, using signals already sitting in their own tools. This won't replace a proper technical review, but it will tell you enough to walk into that conversation with a much clearer sense of what's actually wrong, and to avoid being oversold a full rebuild you don't need.
+
+### Mine Your Own Bug-Fix History
+Look through your commit history or your AI coding tool's chat history over the last month and tally which files or features come up repeatedly as "fix this again." A pattern where the same two or three files keep reappearing points toward a concentrated, specific problem, often authentication or data-scoping logic, exactly the signature of a refactor candidate. A pattern where fixes are scattered evenly across nearly every file in your codebase, with no concentration at all, points more toward the systemic, foundation-level problems that suggest a fuller rebuild.
+
+### Separate User Complaints From Your Own Frustration
+Keep two lists: what your actual users complain about, and what personally frustrates you as the builder. These frequently diverge more than founders expect. Users might be perfectly happy with an interface a founder has grown to dislike for purely aesthetic reasons that have nothing to do with function, in which case refactoring the parts users actually experience problems with, while leaving validated design alone, is the right call even if it doesn't scratch the founder's personal itch to rebuild.
+
+### Test Your Own Codebase's "Traceability"
+Pick any single feature and try to trace, start to finish, every file and function involved in making it work. If you (or a technical friend) can do this in a reasonable amount of time, your codebase likely has enough underlying structure to refactor. If tracing even one feature turns into an hours-long tangle through inconsistent, seemingly unrelated files, that's a genuine signal toward the fuller-rebuild end of the spectrum, not just a feeling of frustration, but a structural finding.
+
+### Check Whether the Core Concept Itself Has Actually Been Validated
+Separately from any code quality question: do you have real evidence, actual users, actual usage, actual willingness to pay, that the core product concept is right? A struggling prototype whose concept is validated is a strong refactor candidate no matter how messy the code. A struggling prototype whose concept is still unproven is a weaker rebuild candidate regardless of code quality, because the more urgent open question is product-market fit, not the codebase.
+
+Run these four checks honestly, in writing, before your first conversation with anyone offering an assessment. You'll get more value from that conversation, and you'll be much harder to oversell to, when you already have real signal in hand rather than only a vague, exhausted feeling that "everything is broken."
+
 ## Real example
 
 ### An AI-Native Founder in Action: Saving 80% of a "Broken" Prototype

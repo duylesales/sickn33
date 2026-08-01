@@ -11,6 +11,8 @@ De overstap naar Mollie: ✅
 ✅ Correcte Nederlandse/EU-btw-afhandeling
 ✅ Idempotente webhook-afhandeling (dezelfde strengheid als Stripe)
 
+Bonus valkuil: mislukte iDEAL-mandaten gedragen zich anders dan geweigerde kaarten — "probeer over 3 dagen opnieuw," gekopieerd uit kaartgebaseerde dunning-logica, mislukt vaak gewoon weer. Je hebt herautorisatie-e-mails nodig. 🔍
+
 Bij **LaunchStudio**, gesteund door de directe bekendheid van Manifera's in Amsterdam gevestigde team met het Nederlandse betalingslandschap, implementeren we dit correct, niet slechts een checkoutknop. 🛡️
 
 Haar resultaat: checkoutconversie MEER DAN VERDUBBELD — 8% → 19%, hetzelfde verkeer. 🚀

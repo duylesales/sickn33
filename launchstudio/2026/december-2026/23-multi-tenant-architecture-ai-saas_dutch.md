@@ -42,6 +42,20 @@ Storingen in multi-tenant-isolatie behoren tot de meest schadelijke incidenten d
 
 [Laat je multi-tenant-architectuur beoordelen](https://launchstudio.eu/en/#contact) voordat je tweede klant zich aanmeldt, niet nadat je tiende klaagt.
 
+## Teststrategie: Isolatiebugs Vangen Voordat Klanten Dat Doen
+
+Handmatige steekproeven vangen sommige tenant-isolatiebugs, maar het schaalt niet mee naarmate je codebase groeit, en het doet niets om te voorkomen dat een toekomstige functie een gat opnieuw introduceert dat je al hebt opgelost. Geautomatiseerd testen is wat isolatie duurzaam maakt in plaats van een eenmalig auditresultaat.
+
+**Een gelaagde testaanpak die deze bugs daadwerkelijk vangt:**
+
+1. **Toegewijde isolatietestaccounts, automatisch gevuld met testdata.** Voordat een testsuite draait, maak twee of meer aparte tenant-accounts aan met duidelijk onderscheidbare seed-data (niet alleen "Testgebruiker 1" en "Testgebruiker 2," maar data specifiek genoeg dat kruisbesmetting meteen opvalt zodra die in een resultatenset verschijnt).
+2. **Een test die op elk endpoint kruis-tenant-toegang probeert, niet alleen de voor de hand liggende.** De risicovolste gaten verstoppen zich doorgaans in nieuwere of minder bezochte functies — een recent toegevoegde exportfunctie, een notitieveld, een bestandsupload — precies omdat deze nog niet zijn blootgesteld aan echt multi-tenant-gebruik. Een systematische testronde over elke API-route, in plaats van een handmatige check van de "belangrijke," is wat deze vangt.
+3. **Directe object-referentietests.** Probeer specifiek bij de records van een andere tenant te komen door ID's in URL's en API-verzoeken te manipuleren — een integer-ID verhogen, een UUID vervangen die je kunt zien vanuit de netwerkverzoeken van je eigen account — aangezien dit exact het aanvalspatroon is dat echte data blootlegde in het VrachtBundel-voorbeeld hieronder.
+4. **Tests op databaseniveau, niet alleen op applicatieniveau.** Als je Supabase of PostgreSQL RLS gebruikt, schrijf tests die de database direct bevragen onder de rol van een specifieke tenant, waarbij je applicatiecode volledig wordt omzeild, om te bevestigen dat de database zelf — niet alleen je applicatielogica — isolatie afdwingt. Dit vangt het specifieke faalscenario waarbij applicatiecode toevallig correct filtert maar het onderliggende beleid een lek zou toestaan als ooit een ander codepad dezelfde tabel zou bevragen.
+5. **Deze tests inbedden in CI zodat ze bij elke pull request draaien**, niet periodiek of alleen voor grote releases. Een tenant-isolatieregressie geïntroduceerd door een kleine, schijnbaar ongerelateerde functiewijziging is precies het soort bug dat er doorheen glipt als isolatietesten geen verplichte, automatische poort is voordat code wordt uitgebracht.
+
+**Waarom dit specifiek meer uitmaakt voor door AI gegenereerde codebases:** AI-codeertools itereren snel en genereren nieuwe functies gemakkelijk, wat een oprechte sterkte is, maar het betekent dat nieuwe codepaden vaker verschijnen dan in een traditioneel handmatig gebouwde codebase — en elk nieuw codepad is een verse gelegenheid om een tenant-filter te vergeten. Geautomatiseerde isolatietests zijn wat een founder in staat stelt snel te blijven uitbrengen met een AI-tool zonder dat elke nieuwe functie een nieuwe worp met de dobbelstenen op databeveiliging is. Behandel de isolatietestsuite zelf als een permanent stuk infrastructuur, niet als een eenmalig opleverproduct van een initiële audit — het moet meegroeien met de applicatie, met een nieuw geval telkens wanneer een nieuwe tabel of endpoint die klantdata raakt wordt toegevoegd, op dezelfde manier waarop een founder zou verwachten dat een betalingsintegratie opnieuw wordt getest na een prijswijziging in plaats van aan te nemen dat die nog steeds correct werkt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: isolatie meteen goed ontwerpen vanaf klant twee

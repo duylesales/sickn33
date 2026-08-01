@@ -12,6 +12,8 @@ Bij **LaunchStudio**, gesteund door Manifera's 160+ geleverde projecten met geï
 ✅ Stripe ÉN Mollie (iDEAL voor Nederlandse klanten)
 ✅ Respijtperiodes, correcte synchronisatie van abonnementsstatus
 
+🔄 Zelfs een perfecte webhook-handler drift na verloop van tijd van Stripe af — dashboardwijzigingen, racecondities, timeouts bij retries. De oplossing: een dagelijkse reconciliatietaak die Stripe (niet je database) als bron van waarheid behandelt.
+
 Hij vergoedde alle 6 klanten binnen 24 uur. Sindsdien nul factureringsincidenten. 🛡️🚀
 
 👉 Lees de complete Stripe-factureringsgids: [Link naar artikel]

@@ -60,6 +60,23 @@ Billing bugs are uniquely damaging because they touch money directly — a subsc
 
 [Talk to an engineer about your billing architecture](https://launchstudio.eu/en/#calculator) before your first double-charge complaint arrives.
 
+## Reconciliation: Keeping Stripe and Your Database From Drifting Apart
+
+Even a correctly built, idempotent webhook handler doesn't guarantee your application's database and Stripe's records stay perfectly in sync forever. Drift happens through paths that have nothing to do with bugs in your code, and most AI-generated billing integrations have no mechanism to catch it.
+
+**Common sources of drift that idempotent webhooks alone don't prevent:**
+
+- **Manual changes made directly in the Stripe dashboard.** A support agent (or the founder) canceling, refunding, or adjusting a subscription manually in Stripe's dashboard doesn't automatically notify your application unless that specific action also fires a webhook your handler processes correctly — and it's easy to miss covering every possible dashboard action when building the handler.
+- **Webhook delivery failures that exceed Stripe's retry window.** Stripe retries failed webhook deliveries, but not indefinitely. A prolonged outage on your application's side — a deployment, a server restart at the wrong moment — can cause an event to eventually stop retrying, leaving your database permanently unaware of something that happened in Stripe.
+- **Race conditions between multiple events for the same customer.** If a customer upgrades and then immediately downgrades their plan, two webhook events can arrive in an order that doesn't match the order the actions actually happened in, especially under network delays, leading to your database reflecting the wrong final state.
+- **Clock and timezone mismatches in trial or billing-cycle logic.** Subtle bugs in how your application calculates cycle boundaries, versus how Stripe calculates them internally, can cause access to be granted or revoked a day early or late — rarely catastrophic on its own, but a steady source of support tickets.
+
+**The fix most production billing systems eventually need is a periodic reconciliation job**, separate from the real-time webhook handler, that runs on a schedule (daily is common) and does the following: pulls the current state of every active subscription directly from Stripe's API, compares it against what your own database believes to be true for each customer, and flags — or automatically corrects — any mismatch found. This job is what catches the failures that webhooks, by design, cannot: the ones where an event never arrived or arrived out of order in the first place.
+
+**Treat Stripe as the source of truth, not your own database.** When reconciliation finds a mismatch, the correct resolution in almost every case is to update your database to match Stripe's records, not the reverse — Stripe is the system of record for what was actually charged and when, and your database is a cache of that information for fast application-level access. Building the reconciliation job with this asymmetry in mind from the start avoids a class of bugs where two systems disagree and neither is clearly authoritative.
+
+Stripe's own dashboard exports and reporting APIs can seed this process rather than requiring a fully custom sync job built from scratch — for most AI-native founders, a scheduled task that pulls Stripe's subscription list and diffs it against the application database is a modest addition once the core webhook handler already exists, not a second full integration.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Fixing a Double-Charging Bug Before It Spread

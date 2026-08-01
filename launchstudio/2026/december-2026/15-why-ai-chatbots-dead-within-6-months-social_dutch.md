@@ -15,6 +15,8 @@ Bij **LaunchStudio** hebben we 160+ projecten geleverd die precies deze kosten-/
 
 Laat je virale moment niet je faillissementsmoment worden. 🛡️🚀
 
+🧮 De verborgen vermenigvuldiger: bij elk bericht de volledige chatgeschiedenis opnieuw verzenden betekent dat bericht 20 tot 10-15x meer kost in tokens dan bericht 1. Maak de rekensom VOORDAT je viraal gaat.
+
 👉 Lees waarom de meeste chatbots binnen 6 maanden sterven: [Link naar artikel]
 
 #AIChatbot #LaunchStudio #Manifera #AINativeFounder #SaaS #Startupkosten

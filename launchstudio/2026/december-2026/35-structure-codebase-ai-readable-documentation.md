@@ -59,6 +59,24 @@ This is a deliberate part of [LaunchStudio's](https://launchstudio.eu/en/) engag
 
 [Get your codebase documented for continued AI-assisted development](https://launchstudio.eu/en/#contact) — so your investment in production-readiness keeps paying off every time you use Cursor afterward.
 
+## What AI-Readable Documentation Actually Looks Like in Practice
+
+The principles above are abstract until you see the concrete artifacts they translate into. Founders often ask what documentation "for AI tools" actually consists of, beyond generically writing more comments. In practice, it tends to take a handful of specific, repeatable forms.
+
+**A single root-level context file.** Many AI coding tools now look for a conventional file — commonly named `AGENTS.md`, `CLAUDE.md`, or similar — placed at the project root, containing exactly the kind of high-level orientation a new team member would want on day one: what the application does, its major modules and how they relate, which conventions to follow, and which patterns are deliberately non-standard for a documented reason. This single file is disproportionately valuable because most AI tools read it automatically at the start of a session, without needing to be told to go looking for it.
+
+**Per-module README files, not just top-level ones.** A `README.md` inside your `payments/` folder describing why a particular provider integration handles retries the way it does, or inside your `ai/` folder explaining the prompt structure and why certain instructions are ordered the way they are, gives an AI assistant working within that specific folder immediately relevant context without needing to reconstruct it from scattered comments.
+
+**Lightweight architecture decision records (ADRs).** A short, dated note — even three or four sentences — explaining why a non-obvious technical choice was made (why you chose polling over webhooks for a specific integration, why a particular data model denormalizes something that looks like it should be normalized) prevents an AI tool from "helpfully" undoing a deliberate decision it has no way of knowing was deliberate.
+
+**Docstrings that explain "why," not just "what."** A function comment restating what the code visibly already does adds nothing an AI tool couldn't infer directly from the code itself. A comment explaining why a loop excludes a specific edge case, or why a seemingly redundant check exists, adds context the code alone cannot convey.
+
+**Consistent file and folder naming that mirrors your actual domain concepts.** AI tools infer a great deal from naming patterns — a `services/`, `utils/`, and `helpers/` folder that all contain loosely related, inconsistently named logic gives an AI assistant far weaker signal than folders and files named consistently after the actual business concepts they represent, such as `invoicing/`, `patient-scheduling/`, or `refund-processing/`.
+
+None of these require a large upfront investment relative to the codebase as a whole — a root context file and a handful of module-level READMEs can typically be written in a day or two for a mid-sized codebase — but they compound every single time an AI tool is asked to make a change afterward, which for most AI-native founders happens dozens of times a month indefinitely.
+
+**Documentation drifts out of date faster than most founders expect, and stale documentation actively misleads an AI tool rather than merely failing to help it.** An architecture overview describing a payment flow that was refactored three months ago, or a comment explaining a constraint that no longer applies, can cause an AI assistant to confidently make a change based on information that's actively wrong — arguably worse than having no documentation at all, since the AI tool has no way to know the description it's trusting is outdated. The practical fix is treating documentation updates as part of the definition of "done" for any change that alters architecture or established patterns, the same discipline many teams already apply to updating tests, folded into the same pull request or commit rather than deferred as a separate cleanup task that quietly never happens.
+
 ## Real example
 
 ### An AI-Native Founder in Action: From AI-Confused Codebase to Smooth Self-Service Development

@@ -71,6 +71,24 @@ A typical Lovable-to-production migration through LaunchStudio takes one to thre
 
 [Get a migration scope and quote](https://launchstudio.eu/en/#calculator) for your specific Lovable prototype.
 
+## Estimating Your Own Migration Scope Before You Call Anyone
+
+Before requesting a quote from anyone, it's worth mapping your own Lovable prototype against the seven steps above to get a rough sense of scope — both so you can sanity-check any quote you receive and so the initial conversation with a development partner is faster and more precise.
+
+**A self-assessment you can run in under an hour:**
+
+- **Authentication:** Open an incognito browser window and try to sign up as a second, entirely separate user. Can you? Is there any password reset flow, and does it actually work? If there's a single shared login or no real signup flow at all, expect Step 2 to be substantial.
+- **Database exposure:** Open your browser's developer tools, go to the Network tab, and trigger a few actions in the app. Do you see raw database queries or API keys visible in the requests being sent from your browser? If your AI provider's key or your database's direct connection details are visible client-side, Step 3 and Step 4 both need real work.
+- **Payments:** If you plan to charge customers, does a checkout flow exist at all today? Does it handle a subscription cancellation correctly, or only the initial charge? Most Lovable prototypes handle the first charge fine and nothing else, which tells you Step 5 is close to a full build rather than a light touch-up.
+- **Hosting:** Is your current URL a Lovable preview link, or a real domain you control with HTTPS? A preview link that could change or become unavailable at any time signals Step 6 is not yet started.
+- **Monitoring:** If your app broke right now for a real user, would you find out from a dashboard or an alert — or only from that user emailing you? Most prototypes have no answer to this at all, meaning Step 7 starts from zero.
+
+**What this self-assessment is actually for:** it won't give you an exact price, since the real cost depends on codebase specifics a quick check can't reveal (how many places API keys are called from, how many tables need isolation, how complex your billing plans are). What it does give you is the ability to describe your situation precisely on an initial call, the same advantage that let Esmee (below) move from first contact to a scoped, fixed-price migration quickly rather than spending that first call simply discovering what was wrong. A founder who arrives already knowing "I have no real auth, exposed API keys, and no payment system yet" gets a faster, more accurate quote than one who can only say "I think something needs fixing before I charge people."
+
+This mapping exercise also clarifies a useful negotiating point: if your self-check shows three of the seven steps are already solid, a quote that prices out a full seven-step migration at the top of the range is worth questioning directly.
+
+**One caveat worth flagging honestly:** a founder-run self-assessment is a useful starting conversation, not a substitute for a professional audit. Some of the more serious gaps — a Row Level Security policy that looks present in the dashboard but isn't actually enforced correctly, or a webhook handler that appears to work in casual testing but fails under real duplicate-delivery conditions — are invisible to a non-technical founder's own inspection no matter how carefully they look. The self-check above is designed to surface the obvious gaps quickly, not to replace the deeper review a migration partner performs before writing any code.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Full Production Migration in Eleven Days

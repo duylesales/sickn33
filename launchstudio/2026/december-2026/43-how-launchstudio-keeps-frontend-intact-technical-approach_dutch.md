@@ -39,6 +39,26 @@ Deze discipline wordt afgedwongen via Manifera's bredere engineeringcultuur — 
 
 [Zie deze aanpak toegepast op jouw specifieke prototype](https://launchstudio.eu/en/#contact) — breng je door AI gegenereerde app mee en zie precies wat wel en niet zou veranderen.
 
+## Onder de Motorkap: De Technische Patronen Die Behoud Mogelijk Maken
+
+Zeggen "de frontend blijft onaangeroerd" is een belofte; het betrouwbaar waarmaken over tientallen verschillende codebases, gegenereerd door vier verschillende AI-tools, vereist specifieke, herhaalbare engineeringpatronen in plaats van improvisatie per geval.
+
+**Een adapterlaag tussen frontend-verwachtingen en backend-realiteit.** De meeste door AI gegenereerde frontends zijn gebouwd tegen mock- of lokaal gesimuleerde data, met aanroepen van functies of endpoints met een specifieke vorm. In plaats van de aanroepen van de frontend te herschrijven om bij de gewenste vorm van een nieuwe backend te passen, wordt aan de backend-kant een adapter- of facadelaag ingevoegd die de bestaande requestvorm van de frontend accepteert en deze intern vertaalt naar wat de echte backend (Supabase, een Postgres-instantie, een externe API) daadwerkelijk nodig heeft — de frontend komt nooit te weten dat de backend is veranderd.
+
+**Configuratie-injectie op basis van omgeving, geen hardgecodeerde herschrijvingen.** AI-tools coderen configuratiewaarden — API-URL's, feature flags, mock-vertragingen — vaak hard in de frontend-code. Waar mogelijk worden deze geëxtraheerd naar omgevingsvariabelen die de frontend al leest (of minimaal wordt aangepast om te lezen), zodat het overschakelen van een demo-backend naar een productiebackend een configuratiewijziging is, geen codewijziging.
+
+**Git branch-isolatie met visuele regressiecontroles.** Infrastructuurwerk gebeurt op branches die frontend-bestanden nooit aanraken, programmatisch geverifieerd — een diff tegen de originele frontend-directory hoort nul onbedoelde wijzigingen te tonen. Voor het samenvoegen vangt een visuele regressiecontrole (screenshotvergelijking tegen de baseline van vóór het werk) elke onbedoelde afwijking op voordat deze wordt uitgeleverd, wat is hoe Yara's opdracht met drie ronden hieronder pixel-voor-pixel kon worden geverifieerd in plaats van te vertrouwen op visueel geheugen alleen.
+
+**Databaseschema-ontwerp dat bestaande UI-vormen bedient, niet andersom.** In plaats van eerst een databaseschema te ontwerpen en de frontend te vragen zich eraan aan te passen, wordt het schema achterwaarts ontworpen vanuit wat de frontend al verwacht te versturen en te ontvangen — wat betekent dat formuliervelden, lijstweergaven en datastructuren die al in de UI zijn ingebouwd, de schemavorm bepalen.
+
+**Contracttests als permanent vangnet.** Zodra de adapterlaag aanwezig is, bevestigen geautomatiseerde tests dat de verwachte request- en responsvormen van de frontend voortdurend worden voldaan — waardoor elke toekomstige onbedoelde contractbreuk wordt opgevangen, of die nu voortkomt uit latere eigen wijzigingen van een founder of vervolgengineeringwerk, voordat het productie bereikt.
+
+Samen zijn deze patronen waarom "we houden je frontend intact" een engineeringdiscipline is met verifieerbare controlepunten — branch-diffs, visuele regressie-screenshots en contracttests — in plaats van een belofte die alleen op goede bedoelingen rust. Manifera's engineeringteams passen dezelfde toolkit toe, of de oorspronkelijke tool nu Lovable, Bolt, v0 of Cursor was, omdat de toolkit opereert op het niveau van het API-contract, dat onder de specifieke outputconventies van elke individuele tool ligt.
+
+In de praktijk wordt deze toolkit geïmplementeerd met gewone, gevestigde tooling in plaats van iets exotisch: Playwright of Percy-achtige screenshotvergelijking voor het visuele regressiecontrolepunt, lichtgewicht consumer-driven contracttests voor de adapterlaag, en standaard beheer van omgevingsvariabelen voor configuratie-injectie. Niets hiervan vereist eigen tooling specifiek voor Manifera — het is een gedisciplineerde toepassing van bestaande, goed begrepen engineeringpraktijk op het specifieke probleem van het behouden van door AI gegenereerde frontends, wat precies is waarom het herhaalbaar is over een breed scala aan binnenkomende codebases, in plaats van af te hangen van het geheugen van één engineer over wat niet aangeraakt mag worden.
+
+Deze toolkit is belangrijker voor door AI gegenereerde frontends dan voor traditioneel handgebouwde, precies omdat AI-tools code produceren zonder de stamkennis die een menselijk team opbouwt over waarom iets op een bepaalde manier is gebouwd. Een traditioneel engineeringteam dat een codebase erft, kan de oorspronkelijke auteur vragen waarvoor een specifiek patroon diende; een founder wiens frontend uit een chatgesprek met een AI-tool kwam, kan die vraag zichzelf vaak niet beantwoorden. De adapterlaag- en contracttestaanpak compenseert die ontbrekende stamkennis door de daadwerkelijke gedragsvereisten van de frontend empirisch verifieerbaar te maken — via screenshots en geslaagde tests — in plaats van van iemand te vereisen dat hij intentie uitlegt die nooit volledig werd verwoord.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: een frontend die drie ronden infrastructuurwerk overleefde

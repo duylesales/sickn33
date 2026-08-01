@@ -33,6 +33,36 @@ Voor AI-native founders en de freelancers/bureaus die hen bedienen, erft [Launch
 
 [Bespreek een white-label-partnerschap](https://launchstudio.eu/en/#contact) als je een freelancer of bureau bent wiens klanten productie-engineeringondersteuning nodig hebben buiten je huidige capaciteit.
 
+## Een Due-diligence-checklist voor het Beoordelen van Elke Offshore-ontwikkelingspartner
+
+Of een founder of agency uiteindelijk wel of niet met Manifera specifiek gaat samenwerken, de hierboven beschreven faalpatronen suggereren concrete vragen die het waard zijn om aan elke offshore- of gedistribueerde ontwikkelingspartner te stellen vóórdat je een contract tekent — vragen die structurele problemen aan het licht brengen voordat ze kostbaar worden.
+
+### Vragen Over de Communicatiestructuur
+- Wie is mijn daadwerkelijke aanspreekpunt, en is dat de persoon die zowel mijn bedrijfscontext als het dagelijkse werk van het engineeringteam begrijpt, of word ik doorgeschoven naar wie het eerst opneemt?
+- Wat is de realistische reactietijd op een verduidelijkende vraag tijdens mijn eigen werkuren, gezien het tijdsverschil?
+- Is er een gedocumenteerd escalatiepad als mijn aanspreekpunt niet beschikbaar is, of stokt de communicatie dan gewoon?
+
+### Vragen Over Teamstructuur en Continuïteit
+- Zijn de engineers die aan mijn project werken vaste medewerkers, of ingehuurd voor dit specifieke project en waarschijnlijk daarna weer vertrokken?
+- Blijven dezelfde kernmensen die aan mijn project beginnen het ook afmaken, of moet ik verwachten dat de teamsamenstelling halverwege significant verandert?
+- Hoe lang bestaat deze specifieke teamstructuur, niet alleen het bedrijf als geheel, al in zijn huidige vorm?
+
+### Vragen Over Prijsstelling en Belangenafstemming
+- Is de prijs vast en scope-gebaseerd, of open-einde-uurtarief zonder plafond?
+- Als het uurtarief is, wat gebeurt er als de geschatte uren worden overschreden — is dat risico alleen van mij, of gedeeld met de ontwikkelingspartner?
+- Beloont het prijsmodel efficiënte levering van het afgesproken resultaat, of beloont het juist het maximaliseren van gefactureerde uren ongeacht het resultaat?
+
+### Vragen Over Specificatie en Scopeduidelijkheid
+- Is er een schriftelijke specificatie waar beide partijen mee akkoord gaan voordat het werk begint, of wordt de scope "gaandeweg" uitgewerkt?
+- Hoe worden scopewijzigingen tijdens het project afgehandeld — als een gestructureerd wijzigingsverzoekproces, of informeel op een manier die de uiteindelijke kosten onvoorspelbaar maakt?
+- Hoe ziet "klaar" er specifiek en op papier uit voor deze opdracht?
+
+### Rode Vlaggen die Serieus Wegen
+Een partner die niet duidelijk kan aangeven wie je specifieke aanspreekpunt zal zijn, niet bereid is zich te committeren aan een vaste prijs voor een redelijk goed gespecificeerde scope, of vaag blijft over of dezelfde engineers het project tot een goed einde brengen, vertoont precies de structurele gaten die offshore-opdrachten doen mislukken, ongeacht hoe bekwaam de onderliggende engineers individueel ook mogen zijn. Geen van deze vragen vereist speciale expertise om te stellen; ze vereisen simpelweg dat je ze stelt vóórdat je tekent, in plaats van de antwoorden te ontdekken halverwege een project dat al loopt en moeilijk terug te draaien is.
+
+### Vragen om Bewijs, Niet Alleen Antwoorden
+Goede antwoorden op de vragen hierboven zijn een startpunt, geen bewijs. Vraag elke potentiële offshore-partner om iets concreets: een referentieklant die bereid is openhartig te praten over de responsiviteit van de communicatie, een voorbeeld van hoe het specificatiedocument van een eerder project er daadwerkelijk uitzag voordat het werk begon, of een voorbeeld van hoe een scopewijzigingsverzoek werd afgehandeld bij een eerdere opdracht. Een partner met een echt volwassen proces, verfijnd over jaren in plaats van samengesteld voor het verkoopgesprek, heeft deze artefacten meestal klaarliggen zonder ze speciaal voor jou te hoeven construeren. Eentje die moeite heeft om iets meer te produceren dan mondelinge verzekeringen, zelfs na jarenlange ervaring te claimen, vertelt je iets dat het waard is serieus te nemen voordat er een contract wordt getekend — ongeacht hoe zelfverzekerd of gepolijst het verkoopgesprek zelf klinkt.
+
 ## Echt voorbeeld
 
 ### Een AI-native founder in actie: het white-label-partnerschap van een freelance designer

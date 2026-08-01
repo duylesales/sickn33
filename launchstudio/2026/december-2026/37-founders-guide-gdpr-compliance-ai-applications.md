@@ -64,6 +64,30 @@ GDPR non-compliance carries real financial and reputational risk, but beyond for
 
 [Get your AI application's GDPR posture reviewed](https://launchstudio.eu/en/#contact) before a customer's procurement team asks a question you can't confidently answer.
 
+## Data Protection Impact Assessments: When AI Processing Actually Requires One
+
+Beyond the foundational steps already covered, GDPR includes a specific, formal obligation that catches many AI-native founders off guard: a Data Protection Impact Assessment (DPIA) is legally required under Article 35 whenever a type of processing is "likely to result in a high risk" to individuals' rights — and several patterns common to AI applications specifically trigger this threshold, even for otherwise small-scale products.
+
+**Situations that typically trigger a DPIA requirement for AI applications:**
+
+- **Systematic and extensive automated processing used to make decisions with legal or similarly significant effects** — an AI tool that screens job candidates, scores creditworthiness, or makes eligibility determinations falls squarely into this category, directly relevant to any founder building HR-tech, fintech, or similarly consequential AI decision-support tools
+- **Large-scale processing of special category data** — health information, biometric data, data revealing political opinions or religious beliefs, and similar sensitive categories carry a materially higher compliance bar than general personal data, including explicit consent requirements in most cases
+- **Systematic monitoring of individuals**, including some AI-powered analytics or behavioral tracking use cases
+- **Innovative use of new technology** where the risks aren't yet well understood — a criterion regulators have explicitly noted applies to many novel AI applications simply because the risk profile of a new AI capability isn't yet established by precedent
+
+**What a DPIA actually involves, at a practical level:**
+
+1. A description of the specific processing operation and its purpose
+2. An assessment of whether the processing is genuinely necessary and proportionate to that purpose
+3. An assessment of risks to individuals' rights and freedoms specifically arising from the processing
+4. Documented measures taken to address and mitigate those identified risks
+
+This doesn't need to be an intimidating legal exercise for most early-stage AI SaaS products — for many, it's a focused, few-page document that forces genuinely useful thinking about what could go wrong and how it's being mitigated, rather than a bureaucratic formality. The risk isn't the paperwork itself; it's skipping the exercise entirely and only discovering a genuine high-risk processing pattern (like automated candidate screening, directly relevant to the PersoneelScreen example below) after a regulator, a customer's procurement team, or an affected individual raises the question first.
+
+**Automated decision-making carries its own additional layer.** Separately from the DPIA question, GDPR Article 22 restricts decisions "based solely on automated processing" that produce legal or similarly significant effects, generally requiring a meaningful human review step in the loop for any AI feature that makes consequential decisions about individuals — a design consideration worth building in from the start rather than retrofitting after a challenge from an affected user.
+
+**Records of Processing Activities (ROPA) are a related, easier-to-overlook obligation.** Article 30 requires most organizations to maintain a written record of what personal data is processed, for what purpose, and with which third parties — including AI providers, which count as processors for this purpose. For an AI-native founder, this typically means documenting each distinct AI processing activity (which customer data is sent to which AI provider, for what feature, retained for how long) in a single maintained document. Founders frequently discover this obligation the same way Vera did with her DPA — during a procurement or audit conversation where a specific question can't be answered on the spot — even though maintaining the record itself is usually a modest documentation exercise rather than a significant technical undertaking, and one that pairs naturally with the data flow mapping already needed for the DPIA process above.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Passing a B2B Client's Compliance Review
