@@ -2,6 +2,18 @@
 
 ## 2026
 
+### Tháng 08
+
+#### Ngày 01
+
+- **14:35**: Cập nhật nhật ký cho phiên làm việc (đồng bộ GitHub, mở rộng độ dài bài viết november & december).
+- **14:20**: Commit và push lên GitHub (commit `ef27bb26`, 212 file, +2.388 dòng): mở rộng đồng loạt bài viết November & December 2026 lên chuẩn SEO/GEO. Trước khi push, phát hiện và dọn sạch 521 file rác dạng " 2."/" 3." do iCloud tạo trùng lặp ở các thư mục không liên quan (extra-1, extra-2, extra-5-local, extra-6-random, onlyaijobs, sys, manifera) — xác nhận không ảnh hưởng tới nội dung vừa sửa trước khi stage & commit.
+- **13:30**: December-2026: dùng tiếp 6 agent song song dịch mục mới sang bản Dutch (51 file `_dutch.md`) và refresh cả 102 bài social (51 `-social.md` + 51 `-social_dutch.md`) với 1 chi tiết mới lấy từ nội dung vừa thêm, giữ nguyên hook/format gốc; verify tự động xác nhận không trùng lặp heading, không sót file.
+- **12:40**: December-2026: dùng 6 agent song song viết mở rộng 51 bài tiếng Anh (số 10-60) lên 1.942-2.259 từ, mỗi bài thêm 1 mục H2 chuyên sâu mới đúng chủ đề (không lặp nội dung cũ), giữ nguyên toàn bộ schema JSON-LD/case study/FAQ.
+- **13:10**: December-2026: rà soát 62 file, phát hiện 51/60 bài (số 10-60) chỉ đạt 1.398-1.719 từ (dưới chuẩn ~2.000-2.300 từ của dự án), trong khi 9 bài đầu (01-09) đã đạt chuẩn; phát hiện 2 file lạc không phải bài viết (`task.md`, `implementation_plan.md` — file này hóa ra là kế hoạch social tháng 7 bị để nhầm thư mục).
+- **10:30**: November-2026: rà soát 60 bài, xác nhận đã đạt chuẩn cấu trúc & độ dài (~1.970 từ trung bình so với các tháng khác); theo yêu cầu, mở rộng riêng 4 bài ngắn nhất (14, 18, 19, 20) lên 2.060-2.188 từ, sau đó dịch phần bổ sung sang Dutch cho cả 4 bài (không viết lại bài social vì thông điệp chính không đổi).
+- **09:10**: Thực hiện `git pull` cho repo — phát hiện iCloud Drive tạo file "conflict copy" (hậu tố " 2") đè lên hàng loạt file tracked trong lúc pull, khiến merge bị abort; khôi phục an toàn bằng `git checkout HEAD -- .` + `git clean -fd` (không mất dữ liệu vì mọi thứ đã có trong git history), sau đó pull thành công 8 commit mới từ origin/main.
+
 ### Tháng 07
 
 #### Ngày 31
@@ -189,6 +201,12 @@
 ## Lịch sử công việc hệ thống (Git Log - Từ trước tới nay)
 
 *Phần này tổng hợp toàn bộ các việc đã thực hiện (commits) cho dự án LaunchStudio từ ngày đầu tiên.*
+
+### Tháng 08
+
+#### Ngày 01
+
+- **14:20**: docs(launchstudio): deepen november and december 2026 articles to SEO/GEO standard depth (commit: `ef27bb26`)
 
 ### Tháng 07
 

@@ -62,12 +62,32 @@ Exponential backoff gives transient failures — a downstream API rate limit, a 
 
 Manifera's 120+ engineers see this exact gap constantly when reviewing AI-generated backends: the happy path works, the retry exists, but the failure path is a dead end with no visibility. It's rarely a rewrite — it's usually a queue library swap and a Slack or email webhook wired to a threshold.
 
+## Idempotency: The Retry Problem Nobody Mentions
+
+Adding retries introduces a second, quieter problem that most AI-generated job code never accounts for: what happens if the job actually succeeded, but the confirmation never made it back? A payment charge goes through, the response times out before your app records success, and the retry logic — doing exactly what it was told — charges the customer a second time. A confirmation email sends, the mail provider's acknowledgment is delayed past the timeout, and the retry sends a duplicate email. Retrying a job is only safe if running that job twice produces the same real-world result as running it once, a property called idempotency, and AI coding tools almost never build for it unless explicitly told to, because a demo never runs the same job twice in a way that exposes the gap.
+
+The fix is a dedup check keyed to something stable about the job — an order ID, an invoice number, a natural key — checked before the side effect runs, not after:
+
+```javascript
+async function processPaymentJob(job) {
+  const existing = await db.payments.findOne({ idempotencyKey: job.id });
+  if (existing) return existing; // already processed, skip the side effect
+  const result = await chargeCustomer(job.amount, job.customerId);
+  await db.payments.insertOne({ idempotencyKey: job.id, result });
+  return result;
+}
+```
+
+This one check is what separates "retries make the system more reliable" from "retries occasionally charge someone twice." Any job that touches money, sends a message a customer sees, or writes a record that isn't naturally overwrite-safe needs this pattern before retries are turned on, not after a duplicate charge forces the issue.
+
 ## Sizing the Fix to the Business Risk
 
 Not every background job needs the same rigor. A job that regenerates a thumbnail image can fail quietly and nobody notices. A job that processes an invoice, syncs a payment, or sends a legally required notification cannot. Before wiring up alerting infrastructure, it's worth triaging jobs into two buckets:
 
 - **Silent-fail-safe**: cosmetic or easily re-triggerable jobs where a missed run has no real consequence
 - **Silent-fail-costly**: anything touching money, compliance, or a customer-facing commitment, where a missed run means manual cleanup or an angry customer
+
+A quick heuristic that works well in practice: for each job type, ask "if this silently failed right now, would I want a text message about it before a customer tells me?" If the honest answer is yes, it belongs in the second bucket, and it needs the full treatment — backoff, dead-letter queue, alert, and an idempotency check if it has any real-world side effect. If the answer is a shrug, it can stay simple.
 
 Our team, working out of the Singapore office serving founders across Southeast Asia and beyond, typically finds that founders have never actually made this list — everything is running through the same undifferentiated queue with the same weak retry logic, regardless of what's actually at stake if it fails. Mapping that out is often the fastest way to know where to spend the engineering budget first. If you're unsure where your own app's queue stands, [see what a production reliability review covers](https://launchstudio.eu/en/#process).
 
@@ -108,6 +128,10 @@ Our engineers, drawing on patterns from 160+ delivered projects, prioritize any 
 
 Yes — job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users.
 
+### What is idempotency, and why does it matter more once retries are added?
+
+Idempotency means running a job twice produces the same real-world result as running it once — without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable.
+
 ### Does LaunchStudio work with whatever job queue library my AI tool already generated?
 
 Usually yes — we work with the existing stack from Lovable, Bolt, Cursor, or v0 output rather than replacing it wholesale, which is consistent with how Manifera's engineers approach the 160+ projects delivered for clients including Vodafone and Xpar Vision.
@@ -140,6 +164,11 @@ For a deeper look at how production backend systems get built right the first ti
       "@type": "Question",
       "name": "Can this be retrofitted without touching my existing frontend?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is idempotency, and why does it matter more once retries are added?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Idempotency means running a job twice produces the same real-world result as running it once — without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable." }
     },
     {
       "@type": "Question",
