@@ -63,6 +63,28 @@ Instead of a fixed price, you pay for dedicated Agile Sprints (Time & Materials)
 **Estimated Cost: 20% of Initial Build Cost Annually**
 Software is not a house; it is a living organism. You must budget for AWS/Azure cloud hosting, third-party API licenses (like Stripe or SendGrid), and continuous security patching. 
 
+## What Different Types of Apps Actually Cost: A Complexity Breakdown
+
+"Cost of making an app" is not a single number because "an app" is not a single thing. A Founder budgeting for a simple internal tool and a Founder budgeting for a multi-tenant SaaS platform with AI features are asking the same question and should expect wildly different answers. Here is a realistic 2026 range by complexity tier, assuming a Hybrid Offshore delivery model rather than a purely local European rate card.
+
+- **Tier 1 – Simple Internal Tool or Single-Feature MVP:** €25,000 - €60,000. Think an internal admin dashboard, a basic booking form, or a single-workflow automation with one or two user roles and no complex integrations. Timeline: 6-10 weeks.
+- **Tier 2 – Mid-Market B2B SaaS MVP:** €80,000 - €180,000. A multi-tenant application with role-based access control, a billing integration (Stripe), a handful of third-party API integrations, and a genuine onboarding flow. This is the tier most venture-backed Founders are actually budgeting for. Timeline: 4-7 months.
+- **Tier 3 – Enterprise-Grade Platform:** €200,000 - €500,000+. Complex permission hierarchies, SSO/SAML integration, audit logging for compliance (SOC 2, ISO 27001), and infrastructure built to handle genuine scale from day one. Timeline: 8-14 months.
+- **Tier 4 – AI-Enabled Application:** Add €30,000 - €100,000 on top of the relevant tier above. Building a RAG pipeline, vector database indexing, and evaluation infrastructure (see Manifera's AI development guide) is genuinely additional engineering effort, not a checkbox feature you bolt on in the final sprint.
+
+**The Founder's Takeaway:** When an agency quotes you a number, ask which tier they are actually scoping. A €40,000 quote for what is clearly a Tier 3 platform is not a bargain — it is a guarantee that the agency plans to deliver a Tier 1-quality build and call it done, leaving you to discover the gap in production.
+
+## The 1:10:100 Rule: Why Delaying a Product Decision Multiplies Its Cost
+
+There is a well-established principle in software quality engineering, sometimes called the 1:10:100 rule, that every Founder budgeting an app build should internalize before, not after, signing a contract: the cost of fixing a mistake multiplies by roughly 10x at each stage it survives undetected.
+
+**How It Plays Out in Practice:**
+- **Cost to fix during Product Discovery (design stage):** 1x. Realizing during architecture planning that your data model doesn't support multi-currency billing costs you a whiteboard session and a schema revision.
+- **Cost to fix during active development (build stage):** roughly 10x. The same realization, discovered three sprints into building the billing module, means unwinding code that already assumes single-currency logic, plus re-testing everything downstream of it.
+- **Cost to fix after production launch (live stage):** roughly 100x. Now you are migrating real customer data, potentially with live transactions mid-flight, under pressure, while customers notice something is wrong. What would have been a design conversation becomes an incident.
+
+**Why This Justifies Paying for Discovery:** This is the quantitative backbone behind the Product Discovery phase discussed above. A €15,000 Discovery engagement is not bureaucratic overhead — it is the cheapest possible stage at which to catch the mistakes that would otherwise cost €150,000 to fix after launch. Founders who skip Discovery to save money are not avoiding that cost; they are simply choosing to pay it later, at the 100x rate, usually at the worst possible moment for their cash runway.
+
 ## The Hybrid Offshore Advantage
 
 If local European development (€350,000) is too expensive, and cheap offshore fixed-price quotes (€40,000) are too risky, what is the viable middle ground?
@@ -97,6 +119,9 @@ TCO includes not just the initial cost of coding the application, but all long-t
 
 ### How does Manifera control costs without sacrificing quality?
 We utilize a Hub-and-Spoke model. By keeping high-level architecture, project management, and legal compliance in Amsterdam, and executing the coding through our elite teams in Vietnam, we drastically reduce hourly rates while maintaining strict European engineering standards.
+
+### Is it really cheaper to fix a mistake early in a software project?
+Yes, dramatically so. Under the 1:10:100 rule, a mistake caught during Product Discovery costs roughly 1x to fix, the same mistake caught mid-development costs roughly 10x, and the same mistake caught after production launch costs roughly 100x. Skipping Discovery doesn't avoid that cost—it just defers it to the most expensive possible stage.
 
 <script type="application/ld+json">
 {
@@ -141,6 +166,14 @@ We utilize a Hub-and-Spoke model. By keeping high-level architecture, project ma
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We combine Dutch project governance with elite Vietnamese engineering execution. This Hybrid Offshore model delivers European architectural standards at Asian economic velocity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it really cheaper to fix a mistake early in a software project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Under the 1:10:100 rule, a mistake caught during Product Discovery costs roughly 1x to fix, the same mistake caught mid-development costs roughly 10x, and caught after production launch costs roughly 100x. Skipping Discovery just defers the cost to the most expensive stage."
       }
     }
   ]

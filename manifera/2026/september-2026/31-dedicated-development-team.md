@@ -57,6 +57,25 @@ Before an offshore team writes a single line of code, a senior Architect must bu
 ### 2. The Pull Request Dictatorship
 Offshore developers must not be allowed to merge their own code. A senior Tech Lead must review every single Pull Request. If the offshore developer wrote a 100-line function that could have been written in 20 lines, the Tech Lead must reject the PR. This forces the offshore team to elevate their coding standards to match the enterprise.
 
+## Measuring a Dedicated Team: Why Velocity Is a Vanity Metric
+
+Once a CTO accepts that a dedicated development team needs governance, the next mistake is measuring that governance with the wrong number. Most CTOs default to **Sprint Velocity**—the count of story points the offshore team closes each sprint—because it is the metric their project management tool displays by default. 
+
+Velocity is dangerous precisely because it is easy to inflate and impossible to compare across teams. A dedicated team that wants to look productive simply estimates its own tickets at a higher point value. Nobody outside the team can tell the difference between "the team got faster" and "the team started grading its own homework more generously." A CTO who manages a dedicated team purely on velocity is optimizing for the appearance of speed, not the health of the codebase.
+
+### Four Metrics That Cannot Be Gamed
+
+Elite engineering organizations replace velocity with metrics that are structurally resistant to manipulation, because they are measured by the systems around the team, not self-reported by the team itself.
+
+1. **Defect Escape Rate.** The percentage of bugs discovered in production versus caught in QA or code review before release. A dedicated team can inflate story points, but it cannot easily hide a bug a customer actually hit. A healthy dedicated team should keep this below 5%; a team above 15% is shipping problems downstream onto your users.
+2. **PR Cycle Time.** The elapsed time from when a Pull Request is opened to when it is merged. If this number is creeping upward, it usually means the Tech Lead is drowning in review volume, or the offshore team is submitting PRs too large to review safely—both are governance failures, not coding failures.
+3. **Code Churn Rate.** The percentage of code rewritten or deleted within three weeks of being written. High churn (above 20%) signals that requirements were unclear, or the developer wrote code without understanding the architecture first, and is now guessing and correcting.
+4. **Deployment Frequency and Change Failure Rate.** Borrowed from the DORA metrics framework, this pair measures how often the team ships to production and what percentage of those deployments require a hotfix or rollback. A dedicated team with high deployment frequency and low change failure rate is both fast and safe; a team that is only fast is accumulating risk it hasn't paid for yet.
+
+### Putting It in the Contract
+
+These four metrics should not live in a dashboard nobody reads—they belong in the monthly reporting clause of the outsourcing contract itself, alongside the SLA for uptime and response time. A CTO who asks a prospective agency, *"Can you report Defect Escape Rate and Change Failure Rate monthly, broken down by developer and by pod?"* immediately separates agencies with real engineering discipline from agencies that will simply hand over a velocity chart and call it accountability.
+
 ## The Manifera Hybrid Model
 
 Most offshore agencies intentionally sell you ungoverned teams. They want you to hire five developers and leave them alone, because that maximizes the agency's profit margins while minimizing their accountability. 
@@ -87,6 +106,9 @@ Only if you have 20 hours a week to spare for pure technical governance. If you 
 
 ### (Scenario: Procurement Officer evaluating Manifera) How does Manifera's Hybrid Model solve the governance problem?
 We do not sell ungoverned teams. Every Vietnamese engineering pod we deploy is strictly governed by a Dutch Architect. The Dutch Architect designs the system, enforces the CI/CD security pipelines, and manually reviews the offshore code. This guarantees that you receive European-standard architecture at an offshore financial advantage.
+
+### (Scenario: CTO reviewing monthly vendor reports) What should I actually track to know if my dedicated team is performing well?
+Do not rely on Sprint Velocity; it is self-reported and easily inflated by a team estimating its own tickets generously. Instead, request Defect Escape Rate (bugs caught in production instead of QA), PR Cycle Time, Code Churn Rate, and the DORA pair of Deployment Frequency and Change Failure Rate. These are measured by your systems, not by the team, so they cannot be gamed.
 
 <script type="application/ld+json">
 {
@@ -131,6 +153,14 @@ We do not sell ungoverned teams. Every Vietnamese engineering pod we deploy is s
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Every Vietnamese pod is governed by a dedicated Dutch Architect. The Architect designs the system, builds the CI/CD guardrails, and manually reviews the offshore code, guaranteeing European quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I actually track to know if my dedicated team is performing well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avoid Sprint Velocity, which is self-reported and easily inflated. Track Defect Escape Rate, PR Cycle Time, Code Churn Rate, and the DORA metrics of Deployment Frequency and Change Failure Rate. These are measured by your systems and tools, not self-reported by the team, so they cannot be gamed."
       }
     }
   ]

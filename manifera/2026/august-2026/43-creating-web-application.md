@@ -68,6 +68,21 @@ Instead of the server sending JSON data to the browser (which the browser must p
 2. **Zero Client State:** The server is the single source of truth. You delete Redux. You delete state synchronization bugs.
 3. **Instant Load Times:** The JavaScript payload drops from 500kb to 14kb. The application loads instantly on low-tier mobile devices.
 
+## The Migration Path: De-Risking a Move Away from an Existing SPA
+
+None of this means you should schedule a "big bang rewrite" of your existing React or Vue application. A full rewrite is the single riskiest project a CTO can greenlight: it freezes feature development for months, and it has a well-documented failure rate (Netscape's infamous ground-up rewrite in the late 1990s is the textbook cautionary tale, and it still repeats today inside enterprises that try to replace a working SPA in one leap).
+
+The correct approach, when a legacy SPA is genuinely causing cost or performance pain, is the **Strangler Fig Pattern**, applied at the route level.
+
+**How it works in practice:**
+1. **Identify low-risk, high-traffic routes first.** A settings page, a read-only reports dashboard, or a static marketing section inside the app are ideal candidates: they have simple state, low interactivity, and immediate SEO or load-time upside.
+2. **Stand up the new route on the server-rendered stack** (HTMX + your existing backend framework, or React Server Components if you are staying inside the React ecosystem) behind the same domain and navigation, so users never notice the underlying architecture has changed.
+3. **Route traffic at the reverse proxy layer** (Nginx, Caddy, or your CDN's edge routing rules), sending requests for `/settings` or `/reports` to the new server-rendered handler while every other route continues to hit the old SPA bundle unchanged.
+4. **Measure before expanding.** Track Core Web Vitals (particularly Largest Contentful Paint and Interaction to Next Paint) and JavaScript bundle size on the migrated route versus the legacy routes. This gives you hard data to bring back to the business before committing further budget.
+5. **Repeat route-by-route**, prioritized by whichever pages generate the most support tickets, the worst Lighthouse scores, or the highest hosting cost, until the legacy SPA shell only serves the handful of screens that genuinely need rich client-side interactivity (a canvas editor, a live collaborative whiteboard, a complex drag-and-drop builder).
+
+**What this buys you:** zero downtime, no feature freeze, a rollback path at every single step (worst case, point the proxy rule back at the old bundle), and a running total cost-of-ownership comparison that justifies the next route's migration instead of asking for blind trust in a 12-month rewrite. Most B2B SaaS teams we've guided through this migrate their 5-10 highest-traffic routes within a single quarter, at which point the TCO savings from reduced JavaScript maintenance alone typically fund the rest of the migration.
+
 At Manifera, we use this architectural shift to save our clients money. By deploying HTMX alongside robust backend frameworks (Python/Django or PHP/Laravel) for standard B2B SaaS projects, our [offshore software development](https://www.manifera.com/services/offshore-software-development/) teams can deliver features 30-40% faster than teams building traditional SPAs. 
 
 We only recommend React/Vue for applications that genuinely require complex, offline-capable client-side interactivity (like a video editor or a mapping tool). 
@@ -92,6 +107,9 @@ Traditional SPAs are terrible for SEO because they send an empty HTML `<body>` t
 
 ### (Scenario: Engineering Lead dealing with performance complaints) What is the "Hydration Problem"?
 In frameworks like Next.js, the server pre-renders HTML so the user sees the page quickly, but the browser still has to download and execute a massive JavaScript bundle to "hydrate" the page (attach event listeners). This creates a frustrating "Uncanny Valley" where the page looks fully loaded, but buttons are unresponsive until the JavaScript finishes executing.
+
+### (Scenario: CTO worried about disrupting an active roadmap) Do we have to rewrite our entire SPA from scratch to get these benefits?
+No, and you shouldn't. A full rewrite freezes feature development for months and carries a high failure rate. Instead, use the Strangler Fig Pattern: migrate one low-risk, high-traffic route at a time (starting with settings pages or dashboards) to the new server-rendered stack, route traffic at the proxy layer, and measure Core Web Vitals before expanding. Most teams migrate their highest-traffic routes within a single quarter with zero downtime and a rollback path at every step.
 
 <script type="application/ld+json">
 {
@@ -136,6 +154,14 @@ In frameworks like Next.js, the server pre-renders HTML so the user sees the pag
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "In meta-frameworks, the server pre-renders HTML for speed, but the browser must still download heavy JS to 'hydrate' it. This creates an 'Uncanny Valley' where the page is visible but buttons are unresponsive until JS finishes executing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we have to rewrite our entire SPA from scratch to get these benefits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Use the Strangler Fig Pattern: migrate one low-risk, high-traffic route at a time to the new server-rendered stack, route traffic at the proxy layer, and measure results before expanding. This avoids the feature freeze and high failure rate of a full rewrite."
       }
     }
   ]

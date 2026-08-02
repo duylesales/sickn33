@@ -60,6 +60,22 @@ While Unit Tests are necessary for isolated logic, elite teams heavily prioritiz
 If a developer writes a terrible Unit Test that always passes regardless of whether the code is broken, Code Coverage tools will still count it as a "success." 
 To combat this, Architects use **Mutation Testing**. A Mutation Testing tool intentionally injects malicious bugs into the application code (e.g., changing a `+` to a `-`) and then runs the developer's Unit Tests. If the developer's tests *still pass* despite the injected bug, the Mutation tool flags the test as useless. It mathematically proves the quality of the tests themselves. 
 
+## The Flaky Test Epidemic: When a Green Pipeline Lies
+
+Even after a team fixes the Mocking Illusion and adopts Mutation Testing, a second, quieter threat to **SW quality** emerges: the flaky test. A flaky test is one that passes and fails intermittently against the *exact same code*, with no changes in between runs.
+
+Flaky tests are more corrosive to engineering culture than missing tests, because they destroy trust in the signal itself. When a developer sees a red pipeline and their first instinct is *"eh, just re-run it, it's probably flaky"* rather than *"there's a bug"*, the entire testing investment has collapsed. Teams that tolerate flakiness eventually stop reading test failures altogether, and a genuinely broken build slips into production hidden among a wall of ignored red X's.
+
+### The Three Root Causes of Flakiness
+
+1.  **Race Conditions in Async Code.** A test asserts a result immediately after triggering an asynchronous operation (an API call, a queued job) without properly waiting for it to complete. It passes on a fast CI runner and fails on a slow one.
+2.  **Shared State Between Tests.** Two tests both write to the same database row or global variable. Run in isolation, both pass. Run in parallel (as elite CI/CD pipelines do, to save time), the order of execution determines whether either passes.
+3.  **Time and Environment Dependencies.** A test hard-codes an assumption like "this always runs before midnight UTC" or depends on network latency to a real external sandbox. It passes for months, then fails the one week the calendar or the network disagrees.
+
+### The Governance Fix: Quarantine, Don't Ignore
+
+Elite teams never let engineers "just re-run" a failing test as standard practice. Instead, they run an automated **Flaky Test Detector** in the CI/CD pipeline: any test that produces inconsistent results across a rolling window of runs is automatically quarantined into a separate, non-blocking suite and a ticket is filed to fix its root cause within a fixed SLA (typically one sprint). The main pipeline stays 100% trustworthy — green always means green — while the quarantined suite gets dedicated attention instead of being silently ignored forever.
+
 ## The Manifera Testing Governance
 
 When you hire a standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agency and demand high quality, they will often write thousands of superficial, mocked Unit Tests just to satisfy your dashboard metrics and bill you for the hours. They deliver the illusion of quality.
@@ -88,6 +104,9 @@ Mutation Testing is the process of 'testing the tests.' The testing framework in
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera prevent offshore developers from writing fake, superficial tests?
 Our Dutch Tech Leads dictate the testing architecture. We do not optimize for vanity Code Coverage percentages. We build CI/CD pipelines that mandate true Integration Testing using Dockerized databases. Our Vietnamese pods must prove their code works mathematically against real infrastructure before the Dutch Architect will approve the Pull Request.
+
+### (Scenario: Engineering Lead losing trust in CI/CD) What is a 'flaky test' and why is it dangerous?
+A flaky test passes or fails inconsistently against the exact same, unchanged code, usually due to race conditions, shared test state, or timing assumptions. It is dangerous because it trains developers to ignore red pipeline results, meaning a real, catastrophic bug can eventually hide unnoticed among a wall of tests everyone has learned to dismiss as 'probably flaky.'
 
 <script type="application/ld+json">
 {
@@ -132,6 +151,14 @@ Our Dutch Tech Leads dictate the testing architecture. We do not optimize for va
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects enforce automated Integration Testing in the CI/CD pipeline. Our offshore Vietnamese developers cannot merge code unless it successfully passes tests against real, Dockerized databases, ensuring uncompromising enterprise structural integrity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a 'flaky test' and why is it dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A flaky test passes or fails inconsistently against identical code, typically caused by race conditions, shared state, or timing assumptions. It is dangerous because it erodes trust in the CI/CD pipeline, training developers to ignore failures and allowing real bugs to hide undetected."
       }
     }
   ]

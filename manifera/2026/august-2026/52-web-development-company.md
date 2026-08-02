@@ -69,6 +69,21 @@ When interviewing a **web development company**, stop asking about feature estim
 | **"What happens if our product fails in production?"** | "We offer a 30-day warranty on all delivered code." | "We build comprehensive observability (Sentry/Datadog) into the app so we are alerted to exceptions before your users even notice them." |
 | **"How do you approach architecture?"** | "We use standard modern frameworks like React and Node to build fast." | "We document all major choices in Architecture Decision Records (ADRs) stored in the Git repo, so your internal team understands the 'why' behind the code." |
 
+## The Exit Clause: Why Your Contract Needs a Mandatory Knowledge Transfer Period
+
+Most procurement teams spend 95% of their negotiating energy on the entry terms of a vendor contract — price, timeline, feature list — and almost none on the exit terms. This is backwards. Entry terms determine how a project starts; exit terms determine how much leverage you retain for the entire life of the engagement.
+
+Here is the scenario procurement teams routinely fail to plan for: eighteen months into a "successful" engagement, you decide to bring development in-house, switch vendors, or simply renegotiate pricing. If your contract has no exit clause, the incumbent vendor knows you have zero leverage. They own the only team that understands the codebase, and a hostile transition means months of your business grinding to a halt. This asymmetry is precisely why vendors underbid on the way in — they are pricing in the exit friction as future profit.
+
+A properly negotiated web development contract should include, as standard terms rather than a negotiated favor:
+
+- **A mandatory 30-60 day knowledge transfer period**, triggered by either party, during which the incumbent team must document architecture, walk a new team or your internal engineers through the codebase, and remain available for questions — at the same monthly rate, not a punitive "exit tax."
+- **Source code and infrastructure-as-code escrow**, meaning the complete repository, including commit history, CI/CD configuration, and infrastructure definitions (Terraform scripts, deployment pipelines), is delivered to a location you control, not just a final .zip of the application code.
+- **Explicit IP assignment language** confirming that all code, including third-party libraries the vendor selected, is owned by you upon payment, with no residual licensing claims by the vendor or its individual engineers.
+- **Access credential transfer**, ensuring domain registrars, cloud provider accounts, and third-party API keys are registered under your organization's ownership from day one, not the vendor's.
+
+Procurement teams that skip these clauses discover the cost only when they try to leave: a vendor who "cannot locate" the Terraform scripts, a codebase with no documentation because the exit clause never obligated anyone to write it, and a renewal negotiation where the incumbent knows exactly how much pain a "no" will cause you. Write the exit terms into the RFP itself, and score vendors on how quickly and specifically they agree to them. An Order Taker will hedge; an engineering partner will already have this language sitting in their standard contract template.
+
 ## The Manifera Procurement Advantage
 
 At Manifera, we specialize in rescuing enterprise projects that failed under the traditional RFP model. 
@@ -97,6 +112,9 @@ In a fixed-price contract, the vendor takes all the financial risk. If they unde
 
 ### (Scenario: Founder trying to hire an offshore team safely) How does Manifera's Hybrid Offshore model solve the RFP problem?
 We eliminate the adversarial fixed-price dynamic. We deploy a dedicated pod of Vietnamese engineers led by a Dutch Architect. You treat them like your own internal team. You prioritize their workload every two weeks. If you want to scrap a feature and build something else, you simply change the priority in Jira. There are no change request fees, and our Dutch leadership ensures the architecture remains pristine.
+
+### (Scenario: Procurement Director drafting a vendor contract before signing) What contract clauses protect us if we need to switch web development companies later?
+Insist on a mandatory 30-60 day knowledge transfer period triggered by either party, source code and infrastructure-as-code escrow (not just a final .zip file), explicit IP assignment language covering all code and libraries, and access credential transfer so domains and cloud accounts are registered under your organization from day one. Without these, the incumbent vendor retains all the leverage if you ever want to leave.
 
 <script type="application/ld+json">
 {
@@ -141,6 +159,14 @@ We eliminate the adversarial fixed-price dynamic. We deploy a dedicated pod of V
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy a dedicated pod you manage like an internal team. You prioritize their workload iteratively. If you pivot, you just change the Jira ticket—no Change Request fees. Our Dutch leadership ensures the architecture remains pristine throughout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What contract clauses protect us if we need to switch web development companies later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Insist on a mandatory 30-60 day knowledge transfer period, source code and infrastructure-as-code escrow, explicit IP assignment language, and access credential transfer so domains and cloud accounts are registered under your organization from day one. Without these, the incumbent vendor retains all the leverage if you want to leave."
       }
     }
   ]

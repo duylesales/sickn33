@@ -64,6 +64,24 @@ If you are evaluating [offshore software development](https://www.manifera.com/s
 | **Velocity Curve** | Fast in Month 1, stalls in Month 6 | Steady in Month 1, accelerates in Month 6 due to CI/CD automation |
 | **Security Risk** | High (No second pair of eyes on database queries) | Low (SAST scanning and peer review block vulnerabilities) |
 
+## The Time-to-Replace Audit: A Concrete Metric for Key-Person Risk
+
+Bus Factor is a useful concept for spotting the problem, but it does not give you a number you can act on. Sophisticated engineering leaders use a companion metric: **Time-to-Replace (TTR)** — the number of business days it would take a competent, external senior engineer to become fully productive on your codebase if your dedicated developer disappeared tomorrow, with zero notice.
+
+TTR isn't guesswork. You calculate it with a five-question audit:
+
+1. **Onboarding documentation** — Is there a README that lets a new hire run the application locally in under 30 minutes, or does setup require tribal knowledge held only by the incumbent?
+2. **Architecture legibility** — Are there ADRs or diagrams explaining why the system is built the way it is, or does every design decision live only in the developer's memory?
+3. **Test coverage as a safety net** — Can a new engineer make a change and trust an automated test suite to catch regressions, or must they manually re-verify the entire application by hand?
+4. **Deployment reproducibility** — Can a new engineer deploy to production by running a documented CI/CD pipeline, or does deployment depend on manual steps only the incumbent remembers ("SSH into the server and run this script I never wrote down")?
+5. **Credential and access hygiene** — Are infrastructure credentials stored in a shared vault, or are AWS keys, API tokens, and admin passwords sitting in the departing developer's personal password manager?
+
+Score each category from 0 (fully institutionalized) to 5 (fully dependent on one person). A solitary dedicated developer routinely scores 20-25 out of 25 — meaning TTR can stretch past 90 days. A Manifera Pod is architected to score close to 0, because the answers to all five questions are structural, not personal: they are enforced by process before the code is ever written.
+
+The financial exposure of a high TTR is not abstract. If your dedicated developer resigns and your TTR is 90 days, you are paying full payroll and infrastructure costs for three months while shipping zero net-new features — and that is the *optimistic* scenario where the replacement doesn't need to rewrite anything. Run this audit on your current setup this week. If you cannot answer all five questions with a documented, verifiable "yes," your TTR is higher than you think, and your business continuity plan has a hole in it exactly the size of one person's continued goodwill.
+
+There is a second, quieter cost that rarely enters this conversation: burnout. A solitary developer who is the only person capable of fixing a production incident cannot take an uninterrupted vacation. Every long weekend becomes a tacit on-call shift. Over 12-18 months, this erodes exactly the kind of person you most need to retain — meaning the resignation you're least prepared for often arrives from exhaustion, not opportunity.
+
 ## Institutionalizing Knowledge
 
 At Manifera, we refuse to operate as a "body shop" that rents out solitary developers. We know that model fails the client.
@@ -91,6 +109,9 @@ Yes. If a highly skilled developer refuses to write documentation, skips automat
 
 ### (Scenario: HR Director struggling to retain tech talent) How does an Engineering Pod prevent knowledge loss when an employee resigns?
 A Pod operates with shared context. Because developers review each other's code daily, multiple people understand every module. Because the Pod uses standardized CI/CD pipelines and automated tests, the "rules" of the codebase are written down in executable code, not locked in a departing employee's brain. 
+
+### (Scenario: CTO calculating risk exposure before a contract renewal) How do I calculate the "Time-to-Replace" for a dedicated developer?
+Run a five-question audit scoring documentation, architecture legibility, test coverage, deployment reproducibility, and credential hygiene from 0 (institutionalized) to 5 (dependent on one person). A solitary developer typically scores near 25, meaning a Time-to-Replace of 90+ days. A well-run Pod scores close to 0 because the knowledge lives in process and automation, not in a single person's memory.
 
 ### (Scenario: CEO wondering why feature velocity has dropped) Why does a solitary dedicated developer get slower over time?
 Without a team to enforce architectural discipline, a solitary developer will take shortcuts to ship features quickly (Technical Debt). Over 6-12 months, this debt compounds. The codebase becomes fragile. Every new feature requires untangling "spaghetti code" or fixing unexpected regressions. Velocity slows to a crawl because they spend 80% of their time fighting the architecture they built.
@@ -138,6 +159,14 @@ Without a team to enforce architectural discipline, a solitary developer will ta
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Without peer review, solitary developers take architectural shortcuts. This Technical Debt compounds. After 6 months, the codebase is so fragile that every new feature breaks something else. They spend 80% of their time fighting their own code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate the 'Time-to-Replace' for a dedicated developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run a five-question audit scoring documentation, architecture legibility, test coverage, deployment reproducibility, and credential hygiene from 0 to 5. A solitary developer typically scores near 25, meaning a Time-to-Replace of 90+ days. A well-run Pod scores close to 0 because knowledge lives in process and automation, not one person's memory."
       }
     }
   ]

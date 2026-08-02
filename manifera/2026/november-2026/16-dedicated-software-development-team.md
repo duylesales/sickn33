@@ -71,6 +71,18 @@ We deployed an Autonomous Pod. By leveraging their pre-existing communication dy
 | **Quality Assurance** | Code thrown over the wall | Embedded SDET (Shift-Left Testing) |
 | **Domain Context** | Zero (Ticket-closers) | High (Business ROI aligned via Amsterdam) |
 
+## Choosing the Right Interaction Mode: Team Topologies in Practice
+
+Conway's Law tells you *why* fragmented teams produce fragmented software. Team Topologies, the framework developed by Matthew Skelton and Manuel Pais, tells you *how* to deliberately shape the interaction between your internal team and an external Pod so the resulting architecture stays clean. Most agencies default to a single interaction mode for the entire engagement, which is precisely why so many "dedicated team" arrangements either drown your internal seniors in hand-holding or drift into an unaccountable black box. We deliberately select and rotate between three interaction modes depending on the phase of the engagement:
+
+*   **Collaboration mode.** Used in the first 2-4 weeks of a new engagement, or when building an entirely new domain area. The Pod's Tech Lead and your internal architects work side by side, in the same design sessions, jointly discovering the problem space. This is intentionally high-touch and temporary—it exists to transfer domain context, not to become the permanent working pattern.
+*   **X-as-a-Service mode.** Once domain boundaries are clear, the Pod shifts to delivering a well-defined service (an API, a module, a subsystem) against an agreed interface, with minimal day-to-day coordination required. This is the steady-state mode for roughly 70-80% of a mature engagement, and it is what actually gives your internal seniors their time back.
+*   **Facilitating mode.** Reserved for moments when your internal team needs to build a new capability themselves (say, adopting a new testing framework the Pod already masters). The Pod temporarily coaches rather than delivers, then hands the capability fully back to your team and exits the mode.
+
+### Why the Default Single-Mode Approach Fails
+
+A "Rent-a-Coder" vendor only knows Collaboration mode, because it is the only mode that doesn't require them to take architectural ownership—they need your seniors in every conversation because they have no Tech Lead capable of owning a boundary independently. This is why staff augmentation engagements never graduate out of the expensive, high-touch phase: the vendor has no mechanism, and often no incentive, to move to X-as-a-Service. Our Amsterdam architects explicitly define which mode governs which part of your system at kickoff, written into the engagement's Team Topologies map, so both sides know exactly when heavy coordination is expected and when the Pod should simply deliver.
+
 ## Deploy a Resilient Engineering Pod
 
 Stop destroying your internal engineering culture by forcing your seniors to babysit fragmented offshore coders. If your enterprise requires massive roadmap velocity without sacrificing architectural integrity, you must upgrade your team structure.

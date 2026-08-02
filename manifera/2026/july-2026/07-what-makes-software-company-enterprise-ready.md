@@ -89,6 +89,22 @@ The contract itself reveals enterprise readiness. Look for:
 - **Escrow arrangements** for source code
 - **Audit rights** — your right to audit their security practices
 
+## The Capability Most RFPs Miss: Observability and Incident Response Maturity
+
+The eight capabilities above cover how enterprise-ready software gets built. There is a ninth dimension that most procurement checklists skip entirely, and it is the one that determines what happens the first time something breaks in production at 2 AM: observability and incident response maturity.
+
+An SMB-grade shop treats monitoring as an afterthought — maybe a health-check endpoint and some server logs someone tails manually when a client complains. An enterprise-ready partner treats observability as a first-class architectural concern, built in from the same sprint as the feature itself, not bolted on before go-live.
+
+**What this looks like in practice:**
+
+- **Structured, centralized logging.** Every service emits structured JSON logs to a centralized aggregator (ELK stack, Datadog, or equivalent) with correlation IDs that let an engineer trace a single user request across a dozen microservices, rather than grepping individual server logs one at a time.
+- **Application Performance Monitoring (APM).** Real-time visibility into request latency percentiles (p50/p95/p99), database query performance, and error rates, broken down by endpoint and by tenant — so a slowdown affecting one enterprise client can be isolated from platform-wide degradation.
+- **Defined alerting thresholds, not noise.** Alerts fire on symptoms that matter to the business (error rate above 1% over 5 minutes, p95 latency above 800ms) rather than every infrastructure blip, and are routed to the engineer who actually owns that service — not a shared inbox nobody watches on weekends.
+- **A real on-call rotation with an escalation path.** For any SLA that promises a response time (see Capability #8), someone has to actually be reachable when it is invoked. Enterprise-ready partners maintain a documented on-call schedule, a primary/secondary escalation chain, and a target Mean Time To Acknowledge (MTTA) and Mean Time To Resolve (MTTR) that they can show you historical data against — not just promise verbally.
+- **Blameless postmortems.** After any Severity 1 or Severity 2 incident, a written postmortem documents the timeline, root cause, and concrete follow-up actions — not to assign blame, but to make the same failure structurally less likely to recur. Ask a prospective partner to walk you through an anonymized postmortem from a past incident; their willingness (or refusal) to show you one tells you a great deal about how mature their engineering culture actually is.
+
+**The test question to ask during evaluation:** "Walk me through what happens, minute by minute, from the moment your monitoring detects a production outage to the moment I as the client am informed." A partner who has actually operated enterprise systems will describe automated alerting, an on-call engineer picking it up within minutes, a status update to you within a defined SLA window, and a postmortem within days. A partner who has only built systems, not operated them at scale, will describe someone noticing the client is unhappy and then investigating — which is precisely the gap that turns a 20-minute outage into a reputational incident, and often into a churned enterprise account.
+
 ## Manifera's Enterprise Approach
 
 At [Manifera](https://www.manifera.com/services/custom-software-development/), enterprise readiness is not a tier — it is the default operating standard. With contracts governed by Dutch law from the Amsterdam office, GDPR-compliant development processes, and a Vietnam-based engineering team that has delivered 160+ projects for clients including Vodafone and TNO, every engagement is structured for enterprise-grade outcomes.
@@ -112,6 +128,9 @@ By combining local European account management with elite offshore talent, we en
 
 ### How does Manifera guarantee high-quality offshore engineering (Focus: it software development company)?
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your it software development company initiatives are executed with absolute precision.
+
+### How do I evaluate a vendor's incident response maturity before signing a contract?
+Ask them to walk you through what happens, minute by minute, from the moment monitoring detects a production outage to the moment you as the client are informed. A mature partner will describe automated alerting, an on-call engineer picking it up within minutes against a documented MTTA/MTTR target, a status update within a defined SLA window, and a blameless postmortem within days. Ask to see an anonymized past postmortem — their willingness to share one is itself a signal of engineering maturity.
 
 <script type="application/ld+json">
 {
@@ -156,6 +175,14 @@ Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your it software development company initiatives are executed with absolute precision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I evaluate a vendor's incident response maturity before signing a contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask them to walk you through what happens, minute by minute, from the moment monitoring detects a production outage to the moment you as the client are informed. A mature partner will describe automated alerting, an on-call engineer picking it up within minutes against a documented MTTA/MTTR target, a status update within a defined SLA window, and a blameless postmortem within days. Ask to see an anonymized past postmortem — their willingness to share one is itself a signal of engineering maturity."
       }
     }
   ]

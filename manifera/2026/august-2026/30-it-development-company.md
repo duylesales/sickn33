@@ -75,6 +75,29 @@ If your IT development company does not explicitly mention the **Transactional O
 We implement the Outbox Pattern. We do not try to write to the database and Kafka simultaneously. Instead, within a single, unbreakable ACID transaction, we write the Order to the `Orders` table, and we write the Event payload to an `Outbox` table in the *same* PostgreSQL database. 
 A separate, background worker process (like Debezium) continuously reads the `Outbox` table and guarantees delivery to Kafka. If the network drops, the background worker just tries again. Perfect consistency is mathematically guaranteed.
 
+## The Consumer-Side Risk: Idempotency and the "Exactly-Once" Illusion
+
+Even after solving the Dual-Write Problem with the Outbox Pattern, one more failure mode remains — and it is the one most junior IT development companies never anticipate: **duplicate event delivery**.
+
+**Why Duplicates Happen**
+Kafka guarantees "at-least-once" delivery by default, not "exactly-once." If a consumer service processes the `OrderCreated` event, deducts inventory, and then crashes half a second before it can tell Kafka "I successfully processed message #4471," Kafka has no way of knowing the work was actually completed. When the consumer restarts, Kafka — correctly, by its own contract — redelivers message #4471. If your consumer logic is not built to handle this, your Inventory Service just deducted stock twice for a single order, or your Notification Service just emailed the customer their invoice three times.
+
+**The Fix: Idempotent Consumers**
+The solution is to make every event consumer **idempotent** — meaning processing the same event twice produces the exact same end state as processing it once. This is not automatic; it must be explicitly engineered into each consumer. The standard mechanism is a **Processed Events Ledger**: before a consumer acts on an event, it first checks a small table (or a Redis set) recording the unique IDs of events it has already handled. If the incoming event's ID already exists in that ledger, the consumer discards it immediately and takes no further action — treating a duplicate delivery as a no-op rather than a repeated business action.
+
+**A Concrete Example**
+Consider the Payment Service consuming `OrderCreated{id: 123}`. Instead of directly executing "charge the customer's card," the correct implementation is:
+1. Check the `processed_events` table for event ID 123.
+2. If found, log the duplicate and exit — do not charge the card again.
+3. If not found, execute the charge, then write event ID 123 to the `processed_events` table, within the same database transaction as the charge itself.
+
+That last detail matters as much as the Outbox Pattern on the producer side: recording "I processed this" and the actual side effect ("I charged the card") must happen atomically, in one transaction, or you reintroduce the exact same dual-write inconsistency you were trying to eliminate — just on the consumer side instead of the producer side.
+
+**Why This Is the Detail That Separates Vendors**
+We have audited "Event-Driven" systems built by other agencies that correctly implemented Kafka and the Outbox Pattern, yet still caused real financial damage in production because no one built idempotent consumers. A client's customer was charged twice for a single order because a consumer pod restarted mid-processing during a routine Kubernetes deployment — an entirely ordinary, expected event that a properly engineered system should absorb without consequence. This is precisely the kind of edge case that only surfaces under real production load, which is why we insist on chaos-testing every event consumer (deliberately killing consumer pods mid-processing in staging) before a system goes live.
+
+If an IT development company can explain the Outbox Pattern but cannot explain how they guarantee idempotency on the consumer side, they have only solved half of the Event-Driven Architecture problem.
+
 ## Conclusion: Engineering for "Day 2"
 
 Building a beautiful UI is easy. Building a distributed system that self-heals during network partitions, guarantees data consistency across microservices, and survives third-party API outages requires immense architectural discipline.
@@ -101,6 +124,9 @@ The dual-write problem occurs when a service must update its own database AND se
 
 ### How does the Transactional Outbox Pattern solve the Dual-Write Problem?
 Instead of sending the message directly to Kafka, the service saves the message payload into a special "Outbox" table inside its own database, within the exact same ACID transaction as the primary data update. A separate background process then safely reads the Outbox table and guarantees delivery to Kafka, ensuring 100% data consistency.
+
+### Why do Kafka consumers sometimes process the same event twice?
+Kafka guarantees "at-least-once" delivery, not "exactly-once." If a consumer crashes after processing an event but before confirming that to Kafka, the event is redelivered on restart. Without an idempotent consumer design, this can cause duplicate actions like double-charging a customer or sending duplicate emails.
 
 <script type="application/ld+json">
 {
@@ -145,6 +171,14 @@ Instead of sending the message directly to Kafka, the service saves the message 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "By saving the event message into an 'Outbox' table within the same ACID database transaction as the primary data. A background worker then guarantees the message is delivered to Kafka, ensuring absolute consistency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do Kafka consumers sometimes process the same event twice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kafka's default delivery guarantee is 'at-least-once,' not 'exactly-once.' If a consumer crashes after acting on an event but before acknowledging it, Kafka redelivers that event on restart, which can cause duplicate side effects unless the consumer is built to be idempotent."
       }
     }
   ]

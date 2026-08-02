@@ -71,6 +71,18 @@ The most capital-efficient, high-velocity software companies are standardizing o
 - Automated CI/CD pipelines enforcing DORA metrics.
 - Asynchronous-first communication culture.
 
+## 4. Governing AI Tool Usage Across a Distributed Team
+
+As AI coding assistants become the default interface between the Hub and the Spoke, a new governance question emerges that most companies haven't yet answered: which AI models is your distributed team actually allowed to use, and where does your proprietary code go when they use them?
+
+**The data residency question:** Every time a developer — onshore or offshore — pastes a snippet of proprietary code into a public AI chat interface, that code potentially leaves your controlled environment and, depending on the tool's data policies, could be retained on third-party servers or used to train future models. This is a bigger governance gap than most security audits currently cover, because it happens inside a browser tab, not through a monitored API integration.
+
+**The enterprise-tier requirement:** Any AI coding assistant used on client work should run under an enterprise or business-tier agreement with contractual zero data retention and no-training clauses — GitHub Copilot Business/Enterprise, an enterprise API tier from a major model provider, or a self-hosted open-weight model run entirely within your own VPC for the most sensitive codebases. Free, consumer-tier AI tools have no place in a distributed engineering pod handling client IP, regardless of how convenient the browser extension is.
+
+**Standardizing the toolchain, not just the policy:** Rather than leaving individual developers to pick their own AI tools, mature Hub-and-Spoke teams standardize on one sanctioned assistant, configured once at the organizational level with the correct data-handling settings, and block unsanctioned tools at the network layer via the same DLP tooling used to prevent code leaving the company otherwise. This turns "please don't paste code into a public AI chat tool" from a policy memo nobody reads into a technical control that is actually enforced.
+
+**Auditing AI-generated code like any other dependency:** Because AI models are trained on public repositories, generated code can occasionally reproduce license-encumbered snippets. Enterprise-tier tools increasingly include code-origin and license-scanning features — make sure this is enabled, and treat AI-generated code passing through code review with the same scrutiny you'd apply to a copy-pasted Stack Overflow answer.
+
 ## Manifera: Pioneering the Global Standard
 
 We did not adapt to the Hub-and-Spoke model; we were founded on it. 
@@ -102,6 +114,10 @@ The time zone difference is actually a feature, not a bug, if you implement a "F
 ### What is the biggest mistake European companies make when adopting this model? (Scenario: Founder looking to avoid common traps)
 
 Treating the offshore team as a "black box" where you feed in Jira tickets and wait for code to come out. If you do not invest in onboarding the offshore team into your business domain, they will build technically correct software that solves the wrong business problem. The most successful engagements treat the offshore team exactly like internal employees regarding business context sharing and architectural inclusion.
+
+### Which AI coding tools are safe to let our offshore developers use on client codebases? (Scenario: CTO writing an AI usage policy for a distributed team)
+
+Only enterprise or business-tier tools with contractual zero data retention and no-training clauses — such as GitHub Copilot Business/Enterprise, an enterprise API tier from a major model provider, or a self-hosted open-weight model for the most sensitive codebases. Standardize on one sanctioned assistant across the whole team rather than leaving the choice to individuals, block unsanctioned consumer tools at the network layer with DLP, and enable license-scanning features so AI-generated code is reviewed with the same scrutiny as any copy-pasted snippet.
 
 <script type="application/ld+json">
 {
@@ -146,6 +162,14 @@ Treating the offshore team as a "black box" where you feed in Jira tickets and w
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Treating the offshore team as a 'black box' for Jira tickets. If you don't share business context, they will build technically correct software that solves the wrong problem. Treat them like internal employees for strategic alignment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI coding tools are safe to let our offshore developers use on client codebases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only enterprise-tier tools with zero data retention and no-training clauses, standardized across the whole team, with unsanctioned consumer tools blocked at the network layer via DLP and license-scanning enabled on AI-generated code."
       }
     }
   ]

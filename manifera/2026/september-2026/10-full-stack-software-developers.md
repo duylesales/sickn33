@@ -61,6 +61,20 @@ Instead of hiring five full-stack generalists who work in isolation, you build a
 
 In this model, the Frontend Specialist and Backend Specialist must collaborate to build the feature. This creates a natural system of checks and balances. The backend code is mathematically secure, and the frontend code is hyper-optimized for the user.
 
+## The Interview Litmus Test: Exposing a False 'Full Stack' Claim
+
+If your organization insists on hiring full stack developers despite the risks outlined above, there is a concrete way to separate genuine T-shaped talent from a resume built on shallow tutorial-following. Most technical interviews fail to catch this because they ask generic questions ("explain REST APIs," "what is a JOIN") that a well-prepared generalist can memorize without ever having solved a real production problem.
+
+Instead, use a two-part litmus test that forces the candidate to reveal their actual depth versus their claimed breadth.
+
+**Part 1: The "Break the Rendering" Question.** Ask the candidate to explain, in specific technical detail, what happens in the browser when a list of 10,000 rows is rendered without virtualization, and how they would fix it. A genuine frontend specialist will immediately discuss the DOM node count, reflow and repaint costs, and name specific solutions (react-window, react-virtualized, or windowing techniques). A shallow generalist will give a vague answer like "we'd add pagination" without explaining the underlying rendering mechanics.
+
+**Part 2: The "Explain the Slow Query" Question.** Give the candidate a simple SQL query against a table with 5 million rows that is running slowly, and ask them to diagnose it using `EXPLAIN ANALYZE`. A genuine backend specialist will talk about missing indexes, sequential scans versus index scans, and query planning. A shallow generalist will suggest something generic like "add caching" without being able to read the query execution plan at all.
+
+The diagnostic signal isn't whether the candidate nails both answers — almost nobody does, and that's the point. It's *how* they handle the question outside their specialty. A genuine T-shaped specialist will say, "That's not my deep area, but here's my working-level understanding," and give a reasonable, humble answer. A candidate who has built their resume entirely around the "Full Stack" label will often bluff confidently on both questions with surface-level buzzwords, because admitting a gap threatens the premise their entire personal brand is built on.
+
+Hiring managers who run this two-question test during technical screens report that it takes under fifteen minutes and reliably surfaces which candidates have one deep vertical of mastery (true T-shaped engineers) versus which have memorized a broad but shallow horizontal layer across the whole stack.
+
 ## The Manifera Approach to Team Composition
 
 Many low-tier [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies market their staff as "Full Stack" because it allows them to sell any developer to any client, maximizing their profit margins. They are selling you generalists who will build fragile enterprise code.
@@ -91,6 +105,9 @@ It is a business strategy, not a technical reality. Labeling a developer 'Full S
 
 ### (Scenario: IT Procurement evaluating Manifera) How does Manifera structure its offshore engineering teams to avoid the Full Stack trap?
 We build cross-functional 'Pods' composed of T-Shaped specialists. Instead of 3 generalists, we provide 1 Senior Frontend Specialist, 1 Senior Backend Specialist, and a QA Automation Engineer, all orchestrated by a Dutch Tech Lead. This ensures elite code quality on both ends of the stack, united by strict architectural governance.
+
+### (Scenario: HR Director screening technical candidates) How can I test whether a 'Full Stack' candidate actually has deep specialist skills?
+Use a two-part litmus test: ask them to diagnose a rendering performance problem with a 10,000-row unvirtualized list, then ask them to read an `EXPLAIN ANALYZE` output for a slow SQL query. A genuine T-shaped specialist will answer their strong side in specific technical depth and honestly admit a working-level understanding on the other. A shallow generalist will bluff both with vague buzzwords instead of concrete mechanics.
 
 <script type="application/ld+json">
 {
@@ -135,6 +152,14 @@ We build cross-functional 'Pods' composed of T-Shaped specialists. Instead of 3 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy specialized cross-functional Pods. A typical pod has a dedicated Frontend Specialist, a Backend Specialist, and a QA Engineer, all governed by a Dutch Tech Lead. This ensures elite quality across the entire stack without compromise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I test whether a 'Full Stack' candidate actually has deep specialist skills?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a two-part litmus test: ask them to diagnose a rendering performance issue with a large unvirtualized list, then ask them to interpret an EXPLAIN ANALYZE output for a slow query. Genuine specialists answer their strength with technical depth and admit gaps honestly, while shallow generalists bluff both with vague buzzwords."
       }
     }
   ]

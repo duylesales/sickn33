@@ -85,6 +85,18 @@ Their pipeline must automate:
 *   Automatic incrementing of build numbers.
 *   Over-The-Air (OTA) updates for JavaScript bundles (if using React Native/Expo) to bypass App Store review times for critical bug fixes.
 
+## Push Notifications and Deep Linking: The Overlooked Architecture Layer
+
+Most evaluation conversations focus on rendering performance and state management, and almost none touch the notification and deep-linking layer until it breaks in production. This is a mistake, because a poorly architected push and linking system is one of the fastest ways to tank user retention and trigger App Store rejections.
+
+**The re-engagement mechanism most vendors get wrong.** A junior team treats push notifications as a simple API call: send a payload to APNs (Apple Push Notification service) or FCM (Firebase Cloud Messaging), and the OS handles the rest. In practice, an elite mobile app development company designs a layered notification system: a **Notification Service Extension** on iOS that can decrypt and enrich a silent payload before display, a local notification scheduler for offline reminders, and a server-side registry that tracks device tokens per user across multiple installs and logs out stale tokens automatically. Without this, users receive notifications for accounts they logged out of months ago, or worse, receive nothing at all because a stale token silently fails.
+
+**Deep linking is a routing problem, not a marketing checkbox.** When a marketing team asks for a link that opens a specific product page inside the app, the underlying architecture must resolve three distinct scenarios: the app is already installed and running, the app is installed but backgrounded, and the app is not installed at all (deferred deep linking, typically requiring a link like Branch.io or a custom Universal Links/App Links fallback to the web and then to the store). A vendor that hardcodes a single "cold start" deep link path will produce a broken experience for the other two scenarios, which represent the majority of real-world clicks from an email or SMS campaign.
+
+**Ask the vendor directly:** *"If a user taps a push notification while the app is fully closed, backgrounded, and already open on a different screen, does the routing logic behave identically in all three cases?"* A mature team will describe a centralized deep-link router that normalizes the destination regardless of app lifecycle state, rather than three separate, hand-written conditional branches scattered across the codebase (a common source of "the notification opened the wrong screen" bug reports).
+
+A concrete number worth benchmarking: on a well-instrumented app, push notification delivery-to-open conversion typically sits between 4% and 8%. If a vendor cannot tell you what their instrumentation looks like for measuring this funnel (delivered, opened, deep-link resolved, target screen rendered), they are flying blind on one of the highest-ROI engagement channels available to a mobile product.
+
 ## The Zero-Risk Mobile Strategy
 
 When evaluating mobile engineering partners, demand architectural rigor. A vendor that lacks a clear strategy for state management, offline synchronization, and automated CI/CD is not building an enterprise app; they are building a fragile prototype.
@@ -111,6 +123,9 @@ Mobile apps cannot be instantly rolled back like a web server. If a critical bug
 
 ### 5. (Scenario: Lead Architect) What is the most common cause of "janky" scrolling in mobile apps?
 "Jank" occurs when the UI thread (the main thread) is blocked for more than 16 milliseconds (dropping below 60fps). Amateur vendors cause this by parsing large JSON payloads, running complex data transformations, or loading unoptimized images directly on the main thread. Elite vendors offload all data processing to background threads and only pass the final, lightweight data models to the UI thread for rendering.
+
+### 6. (Scenario: Growth/Marketing Lead) Why do deep links from our campaigns sometimes open the wrong screen or fail entirely?
+This usually happens because the vendor hardcoded deep-link handling only for the "cold start" scenario, where the app is fully closed. A properly architected app needs a centralized deep-link router that resolves the destination identically whether the app is closed, backgrounded, or already open on another screen, plus a deferred deep-linking fallback (via Universal Links/App Links or a service like Branch.io) for users who do not yet have the app installed. If the vendor cannot describe this routing logic, expect broken links from real-world marketing campaigns.
 
 <script type="application/ld+json">
 {
@@ -155,6 +170,14 @@ Mobile apps cannot be instantly rolled back like a web server. If a critical bug
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "\"Jank\" occurs when the UI thread (the main thread) is blocked for more than 16 milliseconds (dropping below 60fps). Amateur vendors cause this by parsing large JSON payloads, running complex data transformations, or loading unoptimized images directly on the main thread. Elite vendors offload all data processing to background threads and only pass the final, lightweight data models to the UI thread for rendering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Growth/Marketing Lead) Why do deep links from our campaigns sometimes open the wrong screen or fail entirely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This usually happens because the vendor hardcoded deep-link handling only for the \"cold start\" scenario, where the app is fully closed. A properly architected app needs a centralized deep-link router that resolves the destination identically whether the app is closed, backgrounded, or already open on another screen, plus a deferred deep-linking fallback (via Universal Links/App Links or a service like Branch.io) for users who do not yet have the app installed. If the vendor cannot describe this routing logic, expect broken links from real-world marketing campaigns."
       }
     }
   ]

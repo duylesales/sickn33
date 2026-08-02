@@ -82,6 +82,16 @@ The metrics that matter in the first 30 days:
 - **Retention:** Do users come back after day 1? Day 7?
 - **Willingness to pay:** Even if your MVP is free, ask users if they would pay. Their answer and their enthusiasm (or lack thereof) tell you everything.
 
+## Choosing Your Engagement Model: Fixed-Price vs. Time & Materials
+
+Before you sign anything, you will be asked to choose (or a firm will propose) one of two commercial structures, and getting this wrong is one of the most common ways founders end up either overpaying or fighting over scope mid-build.
+
+**Fixed-price** means the firm quotes a single number for an agreed scope, defined in the discovery-phase specification. You know your maximum cost upfront, which is reassuring when you are managing a fixed seed round. The catch: any feature you add or change after the scope is locked triggers a formal change order, usually priced at a premium, and firms that quote fixed-price often pad the number by 15-25% to absorb the risk of ambiguity in your brief.
+
+**Time & Materials (T&M)** means you pay for actual hours worked, typically billed monthly against a sprint plan. This is more flexible — if user testing after sprint 2 reveals your onboarding flow needs to be rebuilt, you simply reprioritize the backlog rather than negotiating a change order. The tradeoff is that your total cost is only as predictable as your own discipline in managing scope; a T&M engagement with no sprint-level budget checkpoints can drift.
+
+**The pattern that works best for MVPs specifically:** a fixed-price discovery phase (so you know exactly what you are committing to before writing a check for development), followed by a T&M build phase with a hard budget ceiling and mandatory sprint-by-sprint reporting of hours consumed versus hours remaining. This gives you cost predictability where it matters most (the initial commitment) and flexibility where it matters most (adapting the product based on what sprint reviews and early users teach you). If a firm insists on pure fixed-price for the entire build including iterations you have not yet specified, ask them how they price change requests — the answer tells you whether you are getting genuine cost certainty or a number designed to be renegotiated upward later.
+
 ## Budgeting Your MVP
 
 | MVP Complexity | Budget Range | Timeline | Example |
@@ -107,6 +117,9 @@ By combining local European account management with elite offshore talent, we en
 
 ### How does Manifera guarantee high-quality offshore engineering (Scenario: From Idea to MVP: A Founder's Guide to Working with a Dev Firm)?
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your build software initiatives are executed with absolute precision.
+
+### Should my MVP contract be fixed-price or time & materials?
+The pattern that works best for most MVPs is a fixed-price discovery phase, so you know exactly what you are committing to before development starts, followed by a time & materials build phase with a hard budget ceiling and sprint-by-sprint reporting of hours consumed versus remaining. This gives you cost certainty where it matters most and flexibility to adapt the product as sprint reviews and early users teach you things your original brief could not have predicted.
 
 <script type="application/ld+json">
 {
@@ -151,6 +164,14 @@ Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your build software initiatives are executed with absolute precision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should my MVP contract be fixed-price or time & materials?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pattern that works best for most MVPs is a fixed-price discovery phase, so you know exactly what you are committing to before development starts, followed by a time & materials build phase with a hard budget ceiling and sprint-by-sprint reporting of hours consumed versus remaining. This gives you cost certainty where it matters most and flexibility to adapt the product as sprint reviews and early users teach you things your original brief could not have predicted."
       }
     }
   ]

@@ -67,6 +67,19 @@ What remains flexible is the *scope*.
 | **Project finishes early** | Vendor keeps the 40% risk padding as profit | You stop paying, or reassign the pod to a new project |
 | **Quality Motivation** | Vendor cuts corners on QA to protect their margin | Team builds high-quality code because they aren't squeezed by a fixed budget |
 
+## The CFO's Safety Net: Protecting Against a Pod That Underperforms
+
+Every CFO reading the Dedicated Pod pitch immediately asks the obvious follow-up question: *"If there's no fixed feature list, what stops the vendor from simply coasting? What stops us from paying €25,000 a month for a team that quietly delivers 30% less than a comparable team elsewhere?"*
+
+This is a legitimate risk, and it is exactly why a properly structured capacity model comes with its own accountability mechanisms — distinct from the fixed-price model's (illusory) accountability, but real:
+
+1. **Velocity Benchmarking Against an Industry Baseline.** Before the engagement starts, the vendor should provide a realistic velocity range for a pod of that composition and seniority (for example, a 5-person pod of 2 mid-level and 2 senior engineers plus 1 QA should sustain a predictable story-point range per two-week sprint, based on the vendor's own historical delivery data across comparable projects). If actual velocity falls materially below that benchmark for two consecutive sprints without a legitimate blocker (a third-party API outage, a client-side requirements delay), that is a contractual trigger for a formal performance review.
+2. **Weekly Demos, Not Monthly Reports.** A capacity model only works if you can see the output in real time. Insist on a working software demo every single week — not a slide deck, not a status email, an actual clickable build. If two consecutive weekly demos show no meaningful shippable progress, you have caught underperformance in 14 days instead of discovering it in a quarterly review.
+3. **A 30-Day Exit Clause, Not a 12-Month Lock-In.** The single strongest leverage a CFO has in a capacity model is the ability to walk away on short notice. A properly structured Dedicated Pod contract includes a 30-day termination-for-convenience clause. This means the vendor's incentive to perform is renewed every single month — they are never coasting on a signed 12-month commitment that removes the consequence of underperformance.
+4. **An Independent Third-Party Code Audit at the 90-Day Mark.** For larger engagements, commission an outside firm (or an internal senior engineer) to review a sample of the codebase for quality, test coverage, and architectural soundness at the 90-day mark. This catches a pod that is generating a high volume of Jira ticket closures while quietly accumulating the exact kind of technical debt a Fixed-Price vendor would have hidden behind a "feature complete" milestone.
+
+The Dedicated Pod model removes the illusion of a fixed price, but it does not remove your leverage as the buyer — it relocates that leverage from a contract clause you rarely enforce (Change Request disputes) to an ongoing, monthly accountability rhythm that is far harder for an underperforming vendor to hide behind.
+
 ## The Manifera Hybrid Offshore Pricing Strategy
 
 At Manifera, we believe in financial transparency. We do not pad our quotes with 40% risk premiums, and we do not hold our clients hostage with Change Requests.
@@ -95,6 +108,9 @@ Perfectly. Because you are paying a flat monthly rate for the team's capacity (t
 
 ### (Scenario: Founder comparing offshore pricing) How does Manifera's pricing structure work for the Hybrid Offshore model?
 We use the Dedicated Pod model. We build a team (e.g., 1 Dutch Architect, 3 Vietnamese Engineers, 1 QA). We calculate a blended, flat monthly rate for that team. You know exactly what your monthly burn rate will be. The Dutch Architect ensures the team executes at high velocity, maximizing the value you get for that monthly spend.
+
+### (Scenario: CFO worried about accountability without a fixed feature list) What stops a Dedicated Pod from underperforming if there's no fixed deliverable list?
+Four mechanisms: velocity benchmarking against an industry baseline for that team composition, weekly working demos instead of monthly status reports, a 30-day termination-for-convenience clause so the vendor's incentive resets every month, and an independent third-party code audit at the 90-day mark to catch hidden technical debt. These replace the illusory accountability of a fixed-price contract with an ongoing, harder-to-hide monthly accountability rhythm.
 
 <script type="application/ld+json">
 {
@@ -139,6 +155,14 @@ We use the Dedicated Pod model. We build a team (e.g., 1 Dutch Architect, 3 Viet
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We use the Dedicated Pod model. You pay a predictable, flat monthly rate for a pod of Vietnamese engineers governed by a Dutch Architect. This provides total budget predictability while maintaining Agile flexibility and high velocity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stops a Dedicated Pod from underperforming if there's no fixed deliverable list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Velocity benchmarking against an industry baseline, weekly working demos instead of monthly reports, a 30-day termination-for-convenience clause that resets the vendor's incentive every month, and an independent third-party code audit at the 90-day mark to catch hidden technical debt."
       }
     }
   ]

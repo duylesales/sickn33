@@ -62,6 +62,19 @@ In a T&M Agile model, you pay for the dedicated time of an elite engineering pod
 *   **Aligned Incentives:** Because the agency is not terrified of going bankrupt due to a misestimation, they do not cut corners. They have the psychological safety to write perfect, fully-tested, enterprise-grade architecture. 
 *   **Financial Control:** You still control the budget. You work in 2-week "Sprints." After every Sprint, the agency shows you working software. If you run out of budget, or if the product is 'good enough', you simply stop the Sprints. You are always in control.
 
+## The Governance Safeguards That Keep T&M Honest
+
+A sharp CFO will immediately raise a fair objection to everything above: *"If I pay Time & Materials, what stops the agency from simply padding the hours and working slowly, since they get paid regardless of speed?"* This is a legitimate risk, and any agency that cannot answer it clearly is not one you should trust with T&M billing.
+
+The answer is that reputable T&M engagements are never "trust us, we're working." They are wrapped in specific, measurable governance mechanisms that make slow or padded work immediately visible:
+
+*   **Velocity tracking across Sprints.** Every pod estimates its work in story points before a Sprint begins. If the team consistently claims 40 points of "effort" but only ships 15 points of working, demoed software, the mismatch is visible within two weeks, not two quarters.
+*   **The Demo-or-it-Didn't-Happen rule.** At the end of every Sprint, the team must demonstrate functioning software to the client, live. Code that "is basically done" but cannot be demoed does not count as delivered. This single rule eliminates the most common form of T&M padding: claiming partial credit for unfinished work.
+*   **A capped "Definition of Ready."** Before a Sprint starts, every ticket is reviewed against a checklist (clear acceptance criteria, no unresolved dependencies, a named owner). This prevents an agency from billing hours for a team that is "working" while actually blocked or confused about scope.
+*   **Independent seniority audits.** A T&M rate should be tied to a named, vetted engineer at a specific seniority level, not an anonymous pool. If a client is billed for a "Senior Backend Engineer" rate, they should be able to verify that person's track record, not just receive an invoice with a generic job title.
+
+These four mechanisms turn Time & Materials from a leap of faith into a governed, transparent system where a CFO can see exactly what €1 of engineering spend produced, every two weeks, without ever needing to trust anyone's word for it.
+
 ## Honest Contracting with Manifera
 
 When standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies offer Fixed-Price contracts, it is usually a trap designed to hit you with massive Change Request fees later. 
@@ -92,6 +105,9 @@ T&M is governed by Agile 'Sprints' (usually 2 weeks long). At the end of every 2
 
 ### (Scenario: Procurement evaluating Manifera) Why does Manifera refuse to sign Fixed-Price contracts for complex software projects?
 Because we refuse to compromise on European enterprise architecture. A Fixed-Price contract eventually forces an agency to choose between losing money or delivering bad code. By operating on T&M, our Dutch Architects and Vietnamese pods have the financial alignment to prioritize perfect System Design, automated testing, and true product agility.
+
+### (Scenario: CFO worried about being overbilled) What stops a Time & Materials agency from padding hours or working slowly?
+Reputable T&M engagements are governed by specific, measurable mechanisms, not trust alone. These include Sprint-level velocity tracking (so claimed effort can be compared to shipped, demoed software), a strict 'Demo-or-it-Didn't-Happen' rule that blocks partial credit for unfinished work, a 'Definition of Ready' checklist before any Sprint starts, and independent seniority audits tying each billed rate to a named, verifiable engineer. Together these make padded or slow work visible within two weeks, not two quarters.
 
 <script type="application/ld+json">
 {
@@ -136,6 +152,14 @@ Because we refuse to compromise on European enterprise architecture. A Fixed-Pri
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We operate with European integrity. We will not put ourselves in a contractual position where we are financially incentivized to cut corners. T&M aligns our incentives with yours: delivering flawless, highly adaptable enterprise architecture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stops a Time & Materials agency from padding hours or working slowly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reputable T&M engagements rely on measurable governance, not trust: Sprint-level velocity tracking comparing claimed effort to shipped software, a 'Demo-or-it-Didn't-Happen' rule that blocks partial credit for unfinished work, a 'Definition of Ready' checklist before each Sprint, and independent seniority audits tying billed rates to a named, verifiable engineer."
       }
     }
   ]

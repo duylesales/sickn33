@@ -62,7 +62,32 @@ When a user downloads your app, they can unpack it. In Android, an APK can easil
 - **ProGuard / R8 (Android):** The offshore team must configure ProGuard or R8 to strip out debug information, shrink the code, and aggressively obfuscate class and method names.
 - **Advanced Obfuscation (Enterprise):** If you are building a financial or healthcare app, demand the use of commercial obfuscation tools like DexGuard. These tools encrypt strings, insert dummy code to confuse decompilers, and detect if the app is running on a rooted or jailbroken device.
 
-## 4. The "Hybrid Offshore" Mobile Team Structure
+## 4. Third-Party SDK Supply Chain Risk and Privacy Manifests
+
+The code your offshore team writes is rarely the only code shipping inside your app. A typical mobile build pulls in 15-40 third-party SDKs: analytics (Firebase, Mixpanel), crash reporting (Sentry, Crashlytics), ad networks, push notification providers, payment SDKs, and open-source libraries pulled via CocoaPods or Gradle. Each one is a supply chain risk you did not directly write, but you are fully liable for.
+
+**Why this matters more in 2026:** Apple's App Store now requires a **Privacy Manifest** (`PrivacyInfo.xcprivacy`) declaring exactly why your app — and every third-party SDK bundled inside it — accesses "Required Reason APIs" such as device disk space, user defaults, or the system boot time. Google's Play Console enforces an equivalent **Data Safety** disclosure. If your offshore team ships a popular ad SDK that silently fingerprints devices using an undeclared API, Apple will reject the build or, worse, pull an already-live app from the store without warning.
+
+**The Offshore Requirement Checklist:**
+- **SDK Bill of Materials (SBOM):** Require your offshore team to maintain a living inventory of every third-party SDK, its version, its network endpoints, and what data it transmits off-device. This should be a deliverable, not an afterthought discovered during an App Store rejection.
+- **Privacy Manifest Auditing:** Before each release, the pipeline should verify that every bundled SDK ships its own compliant privacy manifest, and that your app's aggregate manifest accurately reflects combined data collection — not just your own first-party code.
+- **Least-Privilege SDK Selection:** Push your offshore architects to justify each SDK against a lighter-weight or first-party alternative. A single unnecessary ad-attribution SDK can trigger an app-wide Data Safety re-review and delay a release by weeks.
+- **Dependency Pinning & Vulnerability Scanning:** Treat mobile dependencies exactly like backend npm packages — run Software Composition Analysis (SCA) tools (e.g., Snyk, OWASP Dependency-Check) against your CocoaPods/Gradle lockfiles on every build, not just at project kickoff.
+
+Skipping this step is one of the most common ways an otherwise well-built offshore mobile app gets stuck in App Store limbo for months, or ships with a silent data leak neither the client nor the agency notices until a security researcher does.
+
+## 5. Deep Link and Push Notification Hijacking
+
+Deep links and universal links are how your app opens directly to a specific screen from an email, an SMS, or another app — a password reset, an invoice, an in-app referral. If your offshore team implements them carelessly, they become one of the easiest attack vectors on the entire mobile stack.
+
+**The Offshore Requirement Checklist:**
+- **Verified App Links / Universal Links Only:** Insist on Android App Links and iOS Universal Links, which require a signed association file hosted on your own domain, rather than custom URL schemes (e.g., `myapp://`). Custom schemes can be registered by *any* malicious app on the device, allowing it to intercept your password-reset or magic-link traffic.
+- **Push Payload Minimization:** The offshore team should never place sensitive data (account balances, PII, full names) directly inside a push notification payload. Payloads are frequently logged by the OS and third-party push providers. Send only a notification ID; fetch the sensitive content over an authenticated API call once the app is opened.
+- **Token Expiry on Deep Links:** Any deep link carrying an authentication token (a password reset or magic login link) must expire within minutes and be single-use, invalidated the moment it is consumed.
+
+This is a small, easily overlooked implementation detail that, done wrong, can quietly undo the SSL pinning and obfuscation work described above.
+
+## 6. The "Hybrid Offshore" Mobile Team Structure
 
 Purely remote offshore mobile teams often struggle with the nuanced UX requirements of Western markets. A perfectly secure app is useless if the micro-animations feel clunky or the navigation violates Apple's Human Interface Guidelines.
 
@@ -89,6 +114,12 @@ First, use a strict NDA and enforce local jurisdiction laws via a European entit
 
 ### What is the difference between ProGuard and DexGuard for Android security?
 ProGuard is a free, basic tool that shrinks code and performs simple name obfuscation. DexGuard is a commercial, enterprise-grade tool that offers advanced protection, including string encryption, control flow obfuscation, and runtime application self-protection (RASP) to detect rooted devices.
+
+### Why did our app get rejected over a "Privacy Manifest" issue we never wrote code for?
+Apple and Google now hold you responsible for the data behavior of every third-party SDK bundled inside your app, not just your own code. If an ad network, analytics tool, or open-source library you depend on accesses a "Required Reason API" without a compliant privacy manifest, the whole app can be rejected or removed. This is why a professional offshore team maintains an SDK Bill of Materials and audits third-party privacy manifests before every release, rather than discovering the problem during a rejection.
+
+### Why are custom URL schemes (like myapp://) a security risk for deep linking?
+Any app installed on a user's device can register the same custom URL scheme, allowing a malicious app to intercept links intended for you, including password-reset or magic-login links. Verified Android App Links and iOS Universal Links solve this because they require a signed association file hosted on your own domain, proving only your app is authorized to handle that link.
 
 <script type="application/ld+json">
 {
@@ -133,6 +164,22 @@ ProGuard is a free, basic tool that shrinks code and performs simple name obfusc
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "ProGuard offers basic name obfuscation and code shrinking. DexGuard is an enterprise tool that adds string encryption, control flow obfuscation, and runtime protection against rooted devices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did our app get rejected over a 'Privacy Manifest' issue we never wrote code for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apple and Google hold you responsible for the data behavior of every bundled third-party SDK, not just your own code. An undeclared 'Required Reason API' access by an ad network or analytics SDK can get the whole app rejected or pulled, which is why professional teams audit third-party privacy manifests before every release."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are custom URL schemes (like myapp://) a security risk for deep linking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any app on the device can register the same custom URL scheme, letting a malicious app intercept links meant for you, including password-reset links. Verified Android App Links and iOS Universal Links fix this by requiring a signed association file hosted on your own domain."
       }
     }
   ]

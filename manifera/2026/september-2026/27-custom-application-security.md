@@ -57,6 +57,18 @@ To build a secure **custom application**, the security must be embedded into the
 2. **Strict Code Reviews:** A senior Tech Lead must manually review the business logic (which automated tools often miss) to ensure Broken Access Control cannot occur.
 3. **Dependency Scanning:** Modern apps rely heavily on third-party open-source libraries. If one of those libraries is compromised (e.g., the Log4j vulnerability), the application is compromised. CI/CD pipelines must automatically scan and alert on outdated dependencies.
 
+## The Secrets Management Gap
+
+Beyond the OWASP Top 10, CISOs auditing a custom application should ask one more pointed question that most offshore agencies fail immediately: *"Where do your database passwords, API keys, and encryption secrets actually live?"* A shocking number of breaches trace back not to a sophisticated exploit, but to a developer hardcoding a credential directly into the source code, then pushing that code to a Git repository.
+
+### How Hardcoded Secrets Cause Breaches
+1. **The Public Repository Leak:** A developer hardcodes an AWS access key or a Stripe secret key into a configuration file "just to get it working," intending to remove it later. The commit gets pushed, and if the repository is ever made public (or a fork leaks), automated bots that continuously scan GitHub for exposed keys find it within minutes and drain cloud resources or payment infrastructure before anyone notices.
+2. **The Shared `.env` File Problem:** Even in private repositories, teams routinely email or Slack a `.env` file containing production database credentials to onboard a new developer. That file now exists in chat history, personal laptops, and backup exports, with no way to know who has access or to revoke it without rotating every credential in the file.
+3. **Credentials That Never Expire:** Static secrets (a database password set once at project launch and never changed) mean that if a credential is ever compromised, whether through an ex-employee's laptop or a leaked backup, the attacker has permanent, undetected access until someone manually notices and rotates it, which in most breaches, takes months.
+
+### The Fix: Secrets Managers, Not Config Files
+Elite engineering teams never let a secret exist as plaintext in a repository, a config file, or a chat message. Instead, they use a dedicated secrets manager (AWS Secrets Manager, HashiCorp Vault, or Google Secret Manager) that injects credentials into the application at runtime, logs every access, and supports automated rotation on a schedule (for example, forcing a database password to rotate every 90 days without any human involvement). Pull Requests are scanned by automated secret-detection tools (like Gitleaks or TruffleHog) that block a merge outright the moment a credential pattern is detected in a diff, closing the exact gap that turns a single careless commit into a company-wide breach.
+
 ## The Manifera Security Governance
 
 Standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies use junior developers who are completely unaware of OWASP vulnerabilities. They rely on the false security of cloud hosting.
@@ -84,6 +96,9 @@ You must implement 'Shift-Left Security' by integrating SAST (Static Application
 
 ### (Scenario: CTO reviewing e-commerce architecture) What is an 'Insecure Design' or Business Logic flaw?
 Unlike a technical bug (like a memory leak), a business logic flaw is an architectural error. For example, trusting the frontend browser to calculate the final price of an item. A hacker can intercept the browser's request and change the price to $0. Security must always be strictly enforced on the backend server, never the frontend.
+
+### (Scenario: CISO auditing credential hygiene) Why are hardcoded API keys and passwords such a common cause of breaches?
+Developers often hardcode a database password or API key directly into source code "temporarily," then push that code to a Git repository. Automated bots continuously scan public and leaked repositories for exposed credential patterns and can drain cloud resources within minutes of a leak. Because static secrets rarely expire, a single careless commit can grant an attacker permanent, undetected access until someone manually rotates the credential, often months later.
 
 ### (Scenario: Procurement Officer evaluating Manifera) How does Manifera's Hybrid Model ensure custom applications are secure?
 Standard offshore agencies use junior developers who lack security training. Manifera's Hybrid Model places a senior Dutch Architect as the gatekeeper. The Dutch Architect builds the automated security pipelines (SAST, Dependency Scanning) and manually reviews the business logic of our Vietnamese pods, ensuring strict European security compliance (GDPR, OWASP) before any code is merged.
@@ -123,6 +138,14 @@ Standard offshore agencies use junior developers who lack security training. Man
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a structural architectural error, like allowing the frontend browser to dictate the final price of an e-commerce checkout. Hackers can intercept and change this data. Security logic must always be enforced on the backend server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are hardcoded API keys and passwords such a common cause of breaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Developers sometimes hardcode credentials directly into source code that gets pushed to a Git repository. Bots continuously scan for exposed keys and can drain resources within minutes. Because static secrets rarely expire, one careless commit can grant permanent, undetected access until the credential is manually rotated, often months later."
       }
     },
     {

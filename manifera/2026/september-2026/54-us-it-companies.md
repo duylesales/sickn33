@@ -49,6 +49,22 @@ The darkest secret of premier US IT companies is that they often don't even writ
 
 > *"When you hire a domestic IT agency, you are not paying a premium for better software architecture. You are paying a premium for their expensive office leases, their account managers, and their unassigned bench staff."* — IT Economics Axiom
 
+## The Change Order Trap: How a "Fixed Price" Becomes an Open Invoice
+
+There is a fourth mechanism domestic **US IT companies** use that a CFO rarely sees coming, because it is hidden inside the contract structure itself rather than the rate card: the deliberately vague fixed-price proposal.
+
+To win the deal against competitors, the agency's sales team quotes an attractive fixed price — say, $180,000 for the MVP — based on a Statement of Work that is intentionally written in broad, ambiguous language ("a user dashboard," "basic reporting," "standard admin functionality"). The CFO signs, relieved to have budget certainty.
+
+Three months in, the CEO asks for something the agency insists was never actually included: exporting the report to a PDF, or a password-reset flow, or mobile responsiveness. The agency is technically correct — the ambiguous SOW never explicitly promised it — and issues a **Change Order**: additional scope, billed not at the original blended rate, but at a premium "expedite" rate of $300-$400/hour, because it now sits outside the fixed-price boundary and must be scheduled as "extra" work.
+
+### Why This Is a Deliberate Revenue Model, Not an Accident
+
+A fixed-price contract with a vague SOW is structurally similar to a mobile game that's free to download but monetizes through microtransactions. The initial number gets you to sign; the real margin is captured afterward, one change order at a time, at a moment when you have zero leverage — you already have sunk cost, a half-built product, and a launch deadline bearing down. Agencies that operate this way often see 30-40% of total contract value arrive through change orders that were entirely predictable at the scoping stage.
+
+### The Defense: Time & Materials with a Capped Ceiling, Not Fixed Price
+
+Elite engineering partners avoid this trap from the other direction. Instead of a vague fixed price, they propose Time & Materials billing with a hard, capped ceiling and a detailed, itemized backlog reviewed sprint by sprint. Every feature request is estimated transparently against the same rate card from day one — there is no "premium expedite tier" waiting to ambush you at month three, because there was never a hidden boundary to cross in the first place.
+
 ## The Financial Intelligence of the Hybrid Model
 
 Elite, financially intelligent enterprises (and their CFOs) refuse to pay the Domestic Rate Card Extortion. However, they also refuse to throw their core product at a cheap, ungoverned offshore agency, knowing that usually results in catastrophic technical debt. 

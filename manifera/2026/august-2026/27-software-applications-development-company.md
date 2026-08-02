@@ -62,6 +62,28 @@ Before you slice your database and distribute your codebase, your infrastructure
 - **Observability (Distributed Tracing):** In a Monolith, if a request fails, you look at one log file. In a Microservices architecture, a single user click might travel through 6 different services. You must implement tools like Jaeger, Datadog, or OpenTelemetry to trace requests across the network.
 - **Automated CI/CD:** If you don't have a fully automated deployment pipeline (GitHub Actions -> ArgoCD), you cannot survive Microservices.
 
+## The Data Layer Problem: Database-per-Service and the Saga Pattern
+
+Most failed Microservices transitions do not fail because of the application code. They fail because the team never solved the hardest problem in the entire migration: what happens to the database.
+
+**The Shared Database Anti-Pattern**
+When teams first decompose a Monolith, the most common mistake is extracting the application logic into separate services while leaving all of them pointed at the same single, shared database. This is not Microservices. It is a Monolith wearing a disguise. If the Orders service and the Inventory service both read and write directly to the same `products` table, you have not removed coupling — you have just made it invisible. A schema change made by one team's migration script can silently break another team's service, and you lose the single biggest benefit of the architecture: the ability to deploy services independently.
+
+**Database-per-Service**
+The correct pattern is **Database-per-Service**: each microservice owns its own private database, and no other service is ever permitted to query it directly. If the Shipping service needs data that lives in the Orders service, it does not run a SQL join across the network — it asks the Orders service for that data through a well-defined API, or it keeps its own local, denormalized copy that is updated asynchronously. This is what actually enables independent deployment: a Dutch Tech Lead can approve a schema change to the Orders database on a Tuesday without ever needing to coordinate with the Shipping team.
+
+**The New Problem This Creates: Distributed Transactions**
+Database-per-Service solves the coupling problem, but it creates a new one. In a Monolith, placing an order, deducting inventory, and charging a card can happen inside a single ACID database transaction — if any step fails, everything rolls back automatically. Once those three responsibilities live in three separate databases, that safety net disappears. You cannot run a single transaction across three independent databases.
+
+**The Saga Pattern**
+This is solved with the **Saga Pattern**: instead of one atomic transaction, the workflow becomes a sequence of local transactions, each publishing an event that triggers the next step. If the "Charge Card" step fails after inventory has already been deducted, the Saga does not crash silently — it triggers a **compensating transaction**, a pre-built "undo" action that re-adds the inventory back to stock. Every service in the chain is responsible for knowing how to undo its own work, rather than relying on a database engine to do it automatically.
+
+There are two common ways to coordinate a Saga:
+- **Choreography:** Each service listens for events from the others and reacts independently (e.g., Inventory service listens for an `OrderPlaced` event and deducts stock on its own). This works well for simple, 2-3 step workflows but becomes difficult to trace as complexity grows.
+- **Orchestration:** A dedicated Saga orchestrator service explicitly tells each service what to do and in what order, and handles the compensating logic centrally if something fails. This is harder to build initially but far easier to debug and monitor in complex, multi-step business workflows like a multi-vendor checkout.
+
+Any software applications development company that proposes breaking your database apart without a concrete plan for handling distributed transactions is setting you up for silent data corruption — orders that get charged but never fulfilled, or inventory that gets deducted but never restored. This is precisely the kind of architectural detail that separates a specialized microservices partner from a generalist dev shop.
+
 ## 4. Why Enterprise IT Leaders Choose Manifera
 
 Decomposing a Monolith requires extreme architectural discipline. It is not a task for junior freelancers.
@@ -90,6 +112,9 @@ In the MVP (Minimum Viable Product) stage. If you are still trying to find Produ
 
 ### Why do I need Kubernetes for a Microservices architecture?
 When you break an app into dozens of microservices, managing which servers they run on, restarting them if they crash, and balancing traffic between them manually becomes impossible. Kubernetes is an orchestration engine that automates the deployment, scaling, and management of these containerized services.
+
+### What is the "Saga Pattern" and why does my Microservices database need it?
+The Saga Pattern replaces a single database transaction with a sequence of local transactions across separate services, each triggering the next step. If one step fails, a "compensating transaction" automatically undoes the previous steps. It is required once each microservice has its own private database, because you can no longer roll back a single failed operation across multiple databases automatically.
 
 <script type="application/ld+json">
 {
@@ -134,6 +159,14 @@ When you break an app into dozens of microservices, managing which servers they 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Kubernetes automatically manages the immense complexity of containerized microservices—handling auto-scaling under load, self-healing if a service crashes, and load balancing across the network without human intervention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 'Saga Pattern' and why does my Microservices database need it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Saga Pattern replaces one atomic database transaction with a sequence of local transactions across services, each triggering the next. If a step fails, a compensating transaction automatically undoes the prior steps, which is essential once each microservice owns its own private database."
       }
     }
   ]

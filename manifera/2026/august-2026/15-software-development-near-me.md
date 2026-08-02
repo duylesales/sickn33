@@ -72,6 +72,26 @@ This is the architecture upon which Manifera is built:
 2. **Synchronous Alignment:** You never have to wake up at 4:00 AM to manage a developer. The European Hub absorbs the time-zone friction.
 3. **Security and IP Protection:** You sign a contract with a Dutch legal entity, fully protected by EU intellectual property laws, while the code is written in secure, ISO-27001 compliant offshore facilities.
 
+## The Bench Depth Problem: What Happens When Your Local Developer Quits
+
+There is a structural risk in the "near me" model that CEOs rarely discover until it is too late: bench depth, or the lack of it.
+
+A typical local boutique agency in Amsterdam, London, or Munich employs somewhere between 5 and 15 engineers. On any given client project, that usually means one senior developer is assigned as the sole owner of your codebase, with perhaps a junior shadowing occasionally. That single person carries the entire mental model of your architecture: the undocumented workarounds, the reason a particular API integration was built a certain way, the tribal knowledge that never made it into a wiki because there was never time.
+
+In the current European tech market, average tenure for a senior engineer at a small agency is under two years before a larger company or a competitor poaches them with a 20-30% salary bump. When that developer resigns, your "local" agency does not have a bench of equally qualified engineers waiting to step in. They have to recruit, interview, and onboard a replacement from scratch, and that replacement has to reverse-engineer your system from the codebase alone. Clients in this situation routinely report projects stalling for six to ten weeks while a new developer gets up to speed, all while the invoices keep arriving on schedule.
+
+This is not a hypothetical edge case. It is a direct consequence of the economics covered above: agencies operating on thin margins cannot afford to staff two engineers on a project when the client is only billed for one, so redundancy gets sacrificed first.
+
+**How the Hub-and-Spoke pod model closes this gap:**
+- **Minimum two-engineer coverage.** Every Manifera engineering pod assigns at least one primary and one secondary engineer to each critical system, so no single person is a single point of failure.
+- **Mandatory Architecture Decision Records (ADRs).** Every significant technical decision is documented at the time it is made, not reconstructed from memory after someone leaves.
+- **Runbook-first operations.** Deployment steps, environment variables, and incident-response procedures are written down and kept current, not held in one engineer's head.
+- **Contractual continuity SLAs.** If a named engineer is rotated off a project, the contract guarantees a replacement of equal or greater seniority within a fixed number of business days, plus a paid knowledge-transfer overlap period so the outgoing and incoming engineer work side by side before the handoff completes.
+
+A larger, well-structured offshore engineering center can absorb attrition without the client ever noticing, precisely because the bench is deep enough to have a backup for the backup. A five-person local shop cannot make that same guarantee, no matter how talented its one star developer is.
+
+There is also a second, less obvious dimension to bench depth: client concentration risk inside the agency itself. A boutique local shop with three or four anchor clients is financially fragile. If one of those clients churns, or pays late, the agency may respond by quietly reassigning "your" engineer to a more urgent account, or by laying off staff altogether. You never see this decision being made, but you feel its consequences the moment your sprint velocity collapses for no apparent reason. A larger offshore delivery center serving dozens of concurrent engagements does not have this fragility; no single client's departure threatens the organization's ability to staff yours. When you evaluate a local agency, it is worth asking directly how many active clients they serve per engineer, and what their internal policy is for reassigning staff during a revenue shortfall. Most will not have an answer, because most have never needed one before losing a client the hard way.
+
 ## Conclusion
 
 Typing "software development near me" is a reflex from a bygone era. In software engineering, code does not care about zip codes. It cares about logic, architecture, and security. 
@@ -96,6 +116,9 @@ It is a structure combining a local management Hub (e.g., Amsterdam) for synchro
 
 ### How do I protect my intellectual property if the developers are offshore?
 Sign contracts with the agency's Western headquarters (the Hub). This binds your IP under strict, enforceable EU/US laws, while the agency manages the offshore security controls internally.
+
+### What happens if my local developer quits mid-project?
+A small local agency typically has only one engineer assigned to your codebase, so their departure can stall the project for weeks while a replacement is recruited and onboarded from scratch. A well-structured offshore pod avoids this by staffing a minimum of two engineers per critical system, maintaining Architecture Decision Records and runbooks, and guaranteeing a like-for-like replacement with an overlap handoff period if anyone is rotated off.
 
 <script type="application/ld+json">
 {
@@ -140,6 +163,14 @@ Sign contracts with the agency's Western headquarters (the Hub). This binds your
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Sign contracts with the agency's Western headquarters (the Hub). This binds your IP under strict, enforceable EU/US laws, while the agency manages the offshore security controls internally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my local developer quits mid-project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A small local agency usually has only one engineer on your codebase, so their departure can stall the project for weeks. A well-structured offshore pod staffs a minimum of two engineers per critical system, documents decisions in ADRs and runbooks, and guarantees a like-for-like replacement with an overlap handoff if anyone is rotated off."
       }
     }
   ]

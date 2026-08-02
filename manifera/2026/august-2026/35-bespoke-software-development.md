@@ -68,6 +68,20 @@ The transition from off-the-shelf to bespoke is not a leap of faith. It is a fin
 
 **Break-even point:** Typically 14–20 months from the start of development.
 
+## The Hidden Second Lock-In: Vendor-Proprietary Customization Layers
+
+Many organizations think they have avoided vendor lock-in because they never signed a multi-year contract. They are wrong. There is a second, more insidious lock-in that forms silently: the low-code customization layer built inside the SaaS platform itself.
+
+When a team hits a wall with Salesforce, they don't leave — they hire a certified Salesforce developer to write Apex triggers and Flow automations. When ServiceNow can't handle a workflow, the team builds it in ServiceNow's proprietary scripting environment. When HubSpot's reporting falls short, someone bolts on a custom object schema using the platform's internal API. Each of these decisions feels like a pragmatic fix. Cumulatively, they are a second architectural prison, and it is worse than the first one for three reasons.
+
+**Reason 1: The skills are non-transferable.** A Python or TypeScript engineer cannot maintain Salesforce Apex code. You now depend on a narrow, expensive specialist labor market — Salesforce-certified developers bill 30–50% more than generalist backend engineers in most European markets, and in Vietnam and other offshore hubs, certified platform specialists are scarcer still, eroding the cost advantage that made the SaaS platform attractive in the first place.
+
+**Reason 2: The customization logic is invisible to migration audits.** When companies scope a "build vs buy" decision, they typically audit the core workflows and the obvious integrations. They rarely audit the hundreds of small Apex triggers, Flow branches, and custom fields accumulated over years by different admins, most of whom have since left the company. Manifera's discovery phase for bespoke transitions includes a mandatory customization-layer audit — exporting every custom object, trigger, and automation rule from the incumbent platform — because this hidden logic often encodes business rules nowhere else documented. Skipping this step is the single most common cause of post-migration production incidents we see in enterprise SaaS-to-bespoke transitions.
+
+**Reason 3: The vendor can deprecate the customization runtime itself.** Platform vendors periodically retire scripting engines (Salesforce's transition from Workflow Rules to Flow is one example) forcing a rewrite of your customizations on the vendor's timeline, using the vendor's new syntax, with no compensation for the wasted engineering hours already sunk into the deprecated layer. You do not just risk losing the platform — you risk losing your own customizations to the platform's internal roadmap.
+
+The practical implication: when calculating the Workaround Tax (Signal 1) and the transition economics above, include every hour your team has spent writing and maintaining platform-proprietary customization code. In our experience, this figure is routinely underestimated by 40–60% because the work is scattered across many small tickets rather than one visible line item, making the true cost of "staying put" considerably higher than the sticker price of the subscription suggests.
+
 ## How Manifera Executes Bespoke Transitions
 
 Escaping an architectural prison requires surgical precision. You cannot simply "turn off" the old system and "turn on" the new one. Data must be migrated. Users must be retrained. Business operations must continue uninterrupted.
@@ -96,6 +110,9 @@ With bespoke software deployed on your own EU cloud infrastructure (e.g., AWS eu
 
 ### (Scenario: Founder at a 200-person company) Will bespoke software become a maintenance burden that my small team cannot sustain?
 Not if the architecture is clean. Professional bespoke development includes automated CI/CD pipelines, comprehensive test suites, and Infrastructure-as-Code (Terraform). Ongoing maintenance (security patches, dependency updates) can be handled by a Hybrid Offshore partner for 15–20% of the original build cost annually — typically less than the SaaS subscription it replaces.
+
+### (Scenario: IT Manager auditing years of Salesforce Apex customizations before migrating) Why is the SaaS platform's own customization layer a second form of lock-in?
+Because low-code customizations (Salesforce Apex, ServiceNow scripts, HubSpot custom objects) run only on that vendor's proprietary runtime and require narrow, expensive specialist skills to maintain. This logic accumulates invisibly across years and different admins, is rarely captured in standard migration audits, and can be deprecated by the vendor's own roadmap — forcing a forced rewrite on the vendor's timeline. Manifera's discovery phase includes a dedicated customization-layer audit to surface this hidden logic before migration begins.
 
 <script type="application/ld+json">
 {
@@ -140,6 +157,14 @@ Not if the architecture is clean. Professional bespoke development includes auto
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Not with clean architecture. Professional bespoke builds include automated CI/CD, comprehensive tests, and Terraform IaC. Ongoing maintenance costs 15–20% of the original build annually — typically less than the SaaS subscription it replaces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the SaaS platform's own customization layer a second form of lock-in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Low-code customizations like Salesforce Apex, ServiceNow scripts, or HubSpot custom objects run only on that vendor's proprietary runtime and require narrow, expensive specialist skills to maintain. This logic accumulates invisibly over years, is rarely captured in standard migration audits, and can be deprecated by the vendor's own roadmap, forcing a rewrite on the vendor's timeline."
       }
     }
   ]

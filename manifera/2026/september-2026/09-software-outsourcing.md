@@ -57,6 +57,18 @@ If the app just needs to read and write basic text records, a single PostgreSQL 
 ### 3. The "Hype-Cycle" Frontend
 Does a static content website need a complex Single Page Application (SPA) built with React and Redux? No. It could be built flawlessly with server-rendered HTML or HTMX, drastically reducing JavaScript bundle size and complexity. If the agency refuses to use simple, proven tools (like Laravel or Ruby on Rails) because they aren't "trending on Hacker News," they are prioritizing hype over business value.
 
+## The Real TCO: A Line-by-Line Cost Comparison
+
+Let's return to the logistics company's 50-employee expense portal and put actual numbers against the two architectural paths, because "over-engineering" sounds abstract until you see it on an invoice.
+
+**Path A: The Resume-Driven Kubernetes Build.** A managed Kubernetes cluster (e.g., AWS EKS) carries a control plane fee of roughly $73/month before a single node is provisioned. Add two to three worker nodes to run Kafka, Redis, and the GraphQL layer redundantly, and infrastructure alone runs $600-$900/month even at near-zero traffic, because Kubernetes is designed to keep services warm and redundant, not idle. Then add the human cost: someone has to patch the cluster, rotate secrets, manage Helm charts, and debug pod networking issues. For a team without a dedicated Site Reliability Engineer, that typically means 4-6 hours per week of a senior developer's time, at agency rates often billed at $40-$80/hour. Over three years, that's roughly $25,000-$45,000 in infrastructure and another $25,000-$70,000+ in ongoing "keeping the lights on" labor, before a single new feature is built.
+
+**Path B: The Modular Monolith on a PaaS.** The same expense portal, built as a single well-structured Node.js or Laravel application with PostgreSQL, deploys comfortably on a managed platform like Render, Railway, or a small Heroku-equivalent dyno for $25-$75/month. There is no cluster to patch, no service mesh to debug, and no distributed tracing system to configure. Maintenance drops to roughly 30-60 minutes a month for routine updates. Over three years, total infrastructure and maintenance cost typically lands under $5,000 — a fraction of Path A, for functionally identical business value delivered to the same 50 employees.
+
+**The audit mechanism: Architecture Decision Records (ADRs).** The way a CTO enforces this discipline contractually is by requiring the agency to produce an Architecture Decision Record for every major technology choice before development starts. An ADR is a short, mandatory document that states: the business requirement, the options considered, the specific technology chosen, and — critically — the quantified reason it was chosen over the simpler alternative. If an agency cannot produce a one-paragraph ADR justifying Kubernetes over a PaaS with a real number (expected concurrent users, required uptime SLA, data volume), the decision was made for resume value, not business value. Making ADRs a contractual deliverable, reviewed before the first sprint, is the single most effective procurement safeguard against Resume-Driven Development.
+
+This isn't a theoretical exercise reserved for enterprise procurement teams. Even a small startup can insert a single clause into a statement of work: "Any technology choice beyond the agreed baseline stack requires a written ADR, approved by the client's technical advisor, before implementation begins." That one sentence shifts the burden of proof from the client (who often lacks the technical depth to challenge a confident sales engineer) onto the agency (who now has to defend every architectural flourish in writing, to someone accountable for the invoice). In our experience, agencies that genuinely practice architectural restraint welcome this clause without hesitation. Agencies practicing Resume-Driven Development quietly try to negotiate it out of the contract — which is itself a useful signal during vendor selection.
+
 ## The Manifera Principle of Architectural Restraint
 
 At Manifera, we believe that complexity must be earned. 
@@ -87,6 +99,9 @@ Standard offshore agencies want to market their developers as 'Senior Full-Stack
 
 ### (Scenario: VP Engineering evaluating Manifera) How does Manifera's Hybrid Model prevent Resume-Driven Development?
 Our Dutch Architects act as your proxy. They design the architectural blueprint based strictly on European pragmatism and Total Cost of Ownership (TCO). Our Vietnamese engineering pods execute this blueprint. Because the Dutch Architect dictates the tech stack, the offshore pod cannot arbitrarily inject unnecessary complexity into your codebase.
+
+### (Scenario: CTO drafting a procurement contract) What is an Architecture Decision Record and why should I require one before signing?
+An Architecture Decision Record (ADR) is a short mandatory document stating the business requirement, the alternatives considered, and the quantified reason a specific technology was chosen over a simpler option. Requiring an ADR for every major technology choice before development starts forces an agency to justify complexity with real numbers (expected users, uptime SLA, data volume) rather than resume value, making it one of the most effective contractual safeguards against Resume-Driven Development.
 
 <script type="application/ld+json">
 {
@@ -131,6 +146,14 @@ Our Dutch Architects act as your proxy. They design the architectural blueprint 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects define the technical blueprint based on pragmatic Total Cost of Ownership (TCO). They act as a firewall, preventing the Vietnamese engineering pods from injecting unnecessary, hype-driven complexity into your architecture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is an Architecture Decision Record and why should I require one before signing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Architecture Decision Record (ADR) is a short document stating the business requirement, alternatives considered, and the quantified reason a specific technology was chosen over a simpler option. Requiring an ADR for every major technology choice forces an agency to justify complexity with real numbers instead of resume value, making it an effective contractual safeguard against over-engineering."
       }
     }
   ]

@@ -59,6 +59,25 @@ If the Architect determines that calculating "Historical User Trends" requires a
 ### 2. Component-Based Feasibility
 Instead of drawing bespoke UI elements from scratch, the Designer is required to use a standardized component library (like MUI or Tailwind UI) that maps 1:1 with the code components the engineering team uses. This ensures that every button and dropdown in the design is instantly buildable by the frontend team, completely eliminating the translation gap between design and code.
 
+## The Happy Path Fallacy: Why a 50-Screen Prototype Becomes 200 Screens in Development
+
+Ask a UI/UX designer for a dashboard screen and they will, almost without exception, design one version of it: the version where the API responds instantly, the data is complete, and the user has full permissions. This is the "Happy Path," and it is the only path most Figma files ever show.
+
+Real software has to render at least five other states for every single screen:
+1. **Loading:** What does the screen look like for the 200 milliseconds (or 3 seconds, on a bad connection) before data arrives? A blank white screen? A skeleton loader?
+2. **Empty:** What does a brand-new user with zero data see? An empty table with no explanation looks like a bug.
+3. **Error:** What renders when the API call fails? A generic "Something went wrong" or a specific, actionable message?
+4. **Partial Data:** What happens when three of five expected fields return null because a downstream service timed out?
+5. **Permission-Denied:** What does a user without admin rights see on a screen designed for admins: a blank page, or a hidden menu item?
+
+When a Figma prototype only shows the happy path, the engineering team is forced to invent the other four or five states themselves, mid-sprint, with no design guidance. On a real 50-screen SaaS project we have audited, this typically explodes into 200+ actual UI states the frontend team has to build and test, most of them undocumented and inconsistent with one another because three different developers each guessed differently.
+
+### The Fix: The State Matrix
+Elite design teams enforce a simple governance artifact before development starts: a **State Matrix**, a spreadsheet or Figma page that lists every screen down one axis and Loading / Empty / Error / Partial / Permission-Denied across the other, with a small mockup or note in each cell. It looks unglamorous next to a polished prototype, but it is the single artifact that prevents the most expensive category of late-stage rework: engineers building inconsistent, ad hoc error handling because nobody ever decided what "wrong" should look like.
+
+### The Responsive Breakpoint Gap
+The same discipline applies to screen width. Most Figma files are designed at a single desktop frame size (commonly 1440px). Without explicit breakpoint designs for tablet (around 768px) and mobile (around 375px), the frontend team is left guessing how a 12-column dashboard should collapse, and every developer guesses differently. Architecture-Led Design mandates at least three breakpoint mockups per complex screen, not just a "responsive" checkbox in the handoff notes.
+
 ## The Manifera Product Execution Model
 
 Standard offshore agencies love the Design-First fallacy. If you hand them a massively complex, unbuildable Figma file, they will happily bill you by the hour to blindly attempt to build it, knowing it will take months longer than expected.
@@ -91,6 +110,9 @@ If a designer draws a completely custom dropdown menu, the frontend developer mu
 
 ### (Scenario: VP Engineering evaluating Manifera) How does Manifera handle client-provided Figma designs?
 Our Dutch Architects perform a strict Architectural Audit on your designs before our offshore pods write any code. We will flag any UI elements that require disproportionately expensive backend infrastructure. We work with your Product team to adjust the UX to fit the pragmatic reality of the database, saving you massive amounts of budget.
+
+### (Scenario: Product Manager reviewing a Figma prototype) Why did our 50-screen prototype turn into 200+ screens once development started?
+Because a Figma prototype almost always shows only the "Happy Path": the version of each screen where data loads instantly and everything works. Real screens also need Loading, Empty, Error, Partial-Data, and Permission-Denied states, and if the designer never draws them, engineers invent them ad hoc during the sprint. A single 50-screen prototype can require 200+ actual UI states once every screen's non-happy-path variations are accounted for. A State Matrix, mapped before development starts, prevents this scope explosion.
 
 <script type="application/ld+json">
 {
@@ -135,6 +157,14 @@ Our Dutch Architects perform a strict Architectural Audit on your designs before
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects audit your Figma files before our Vietnamese pods start coding. We flag any UI widgets that require disproportionately expensive backend architecture and propose pragmatic UX adjustments to keep your project on budget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did our 50-screen prototype turn into 200+ screens once development started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Figma prototypes usually show only the Happy Path. Real screens also need Loading, Empty, Error, Partial-Data, and Permission-Denied states, which engineers invent ad hoc if a State Matrix isn't defined before development begins."
       }
     }
   ]

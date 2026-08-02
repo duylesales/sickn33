@@ -68,6 +68,23 @@ A Fractional CTO is not a silver bullet. You should **hire full-time** if:
 | **Time to Impact** | 3-6 months (Recruiting + Notice) | 1-2 weeks |
 | **Primary Output** | Daily operations & coding | High-level architecture & process |
 
+## How to Vet a Fractional CTO: Red Flags and a 90-Day Success Framework
+
+The fractional CTO market has grown fast enough that it now attracts two very different profiles: experienced operators who have actually shipped and scaled production systems, and "generalist consultants" who pivoted into the title because it commands a higher day rate than "IT advisor." Founders without a technical background often cannot tell the two apart in an interview, which is exactly the information asymmetry a Fractional CTO is supposed to solve for you in the first place.
+
+**Four red flags to screen for before signing a retainer:**
+1. **No hands-on code or architecture review in the first two weeks.** A credible candidate will ask for repository access, CI/CD dashboards, and cloud billing within days of starting — not just meeting minutes and Jira boards. If 30 days pass with only strategy conversations and no direct look at the actual system, you are paying for a management consultant, not a technologist.
+2. **Vague or unverifiable prior scaling experience.** Ask for two specific, checkable references from founders they advised — not just LinkedIn recommendations — and ask those references one pointed question: "What decision did they change your mind on, and were they right?"
+3. **No opinion on your specific tech stack within the first month.** A real CTO forms a point of view on your database choice, cloud provider, and architecture risk quickly. Someone who stays diplomatically neutral indefinitely is avoiding accountability.
+4. **Reluctance to put findings in writing.** Verbal-only feedback that never becomes a documented architecture assessment or roadmap is difficult for you, your co-founders, or future investors to hold accountable later.
+
+**A practical 90-day onboarding framework** to structure the engagement and measure whether it's working:
+- **Days 1-30 (Audit):** Full codebase and infrastructure review, security posture check, and a written "State of the Stack" assessment identifying the top 5 risks.
+- **Days 31-60 (Roadmap):** A prioritized 6-12 month technical roadmap tied to business milestones (fundraising, launch, scaling events), plus initial process changes (CI/CD, code review standards).
+- **Days 61-90 (Execution & Proof):** At least one measurable improvement shipped — reduced deploy time, closed security gap, or a resolved due-diligence blocker — that the founder can point to as concrete evidence the retainer is earning its cost.
+
+If a Fractional CTO cannot produce a written "State of the Stack" document by day 30, that alone is grounds to reconsider the engagement before renewing the retainer.
+
 ## Integrating Fractional Leadership with Distributed Teams
 
 A common pattern for smart startups is pairing a European Fractional CTO with a dedicated offshore engineering team. 
@@ -99,6 +116,10 @@ No. If you are paying €150/hour for executive leadership, having them write ba
 ### How do we transition from a Fractional to a Full-Time CTO? (Scenario: Growing startup hitting 15 engineers)
 
 A great Fractional CTO should help hire their replacement. They have the technical expertise to rigorously interview full-time CTO candidates, ensuring you don't hire someone who speaks well but lacks deep architectural knowledge. Once hired, the Fractional CTO typically spends 2-4 weeks handing over the technology roadmap and historical context before exiting.
+
+### How do we vet a Fractional CTO candidate before signing a retainer? (Scenario: Non-technical founder unsure how to evaluate technical expertise)
+
+Watch for four red flags: no hands-on codebase or architecture review within the first two weeks, vague or unverifiable prior scaling experience, no opinion on your specific tech stack within the first month, and reluctance to put findings in writing. Structure the engagement around a 90-day framework instead: Days 1-30 for a full audit producing a written "State of the Stack" assessment, Days 31-60 for a prioritized technical roadmap, and Days 61-90 for at least one measurable, shipped improvement. If they can't produce the Day 30 written assessment, reconsider the engagement before renewing.
 
 <script type="application/ld+json">
 {
@@ -143,6 +164,14 @@ A great Fractional CTO should help hire their replacement. They have the technic
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A good Fractional CTO helps interview and vet their full-time replacement, ensuring technical competency. They then conduct a 2-4 week handover of the roadmap and historical context before exiting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we vet a Fractional CTO candidate before signing a retainer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Watch for four red flags: no hands-on codebase review in the first two weeks, unverifiable prior scaling experience, no opinion on your tech stack within a month, and reluctance to document findings. Use a 90-day framework: Day 1-30 audit with a written State of the Stack assessment, Day 31-60 roadmap, Day 61-90 a measurable shipped improvement."
       }
     }
   ]

@@ -50,6 +50,25 @@ This involves renting 10,000 NVIDIA GPUs and training a neural network from abso
 - **The Problem:** It costs millions of euros, takes over a year, and requires PhD-level AI scientists. By the time you finish building it, OpenAI or Meta will have released a free model that is ten times smarter than the one you just spent millions to build. 
 - **The Verdict:** Unless your core business model is selling AI models (like Anthropic or Mistral), you should never build a Foundation Model. It is an ego-driven architectural error.
 
+## The Silent Killer: Model Drift and the Evaluation Harness
+
+Six weeks after the legal AI assistant launches, the lawyers start noticing something strange. Answers that used to come back as tight, three-sentence summaries are now returning long, hedging paragraphs. Nobody touched the RAG pipeline. Nobody edited a prompt. The only thing that changed is invisible to the client: the LLM provider silently upgraded the underlying model version behind the API endpoint.
+
+This is **Model Drift**, and it is one of the most underestimated risks in enterprise **ai solution development**. Unlike traditional software, where a function keeps returning the exact same output for the exact same input forever, foundation models are living services. OpenAI, Anthropic, and Meta continuously retrain, patch, and quietly swap the model sitting behind a given API name. A prompt that was carefully tuned against one model snapshot can degrade in tone, format, or accuracy the moment the vendor updates it, with zero warning and no changelog entry in your own codebase.
+
+Enterprises that treat AI like a fire-and-forget integration get burned by this constantly. A customer support bot that used to always return valid JSON suddenly starts wrapping its answers in conversational filler, breaking the parser downstream. A legal summarizer that used to cite the exact clause number starts paraphrasing instead, technically still "AI working," but no longer meeting the accuracy bar the business signed off on.
+
+### Building the Eval Harness
+
+The correct architectural response, borrowed directly from CI/CD discipline, is an **Evaluation Harness**: a version-controlled suite of "golden" test cases that run automatically before any AI change reaches production. A mature harness contains:
+
+1. **Golden Q&A Pairs:** 50-200 real questions from actual users, each paired with a human-approved "correct" answer or a strict rubric of what a correct answer must contain.
+2. **Retrieval Assertions:** For RAG pipelines, a check that the *correct source document* was actually retrieved from the Vector Database, independent of whether the final answer sounded fluent.
+3. **Automated Scoring:** Either deterministic checks (does the JSON parse? does it cite a clause number?) or an "LLM-as-a-judge" pattern, where a second, more powerful model grades the output against the rubric and produces a pass/fail score.
+4. **A Trigger on Every Change:** The harness re-runs automatically whenever the underlying model version updates, whenever a prompt template is edited, or whenever new documents are ingested into the Vector Database—exactly like a unit test suite re-running on every Git commit.
+
+Without this harness, enterprises are flying blind, discovering quality regressions only when a client complains or a lawyer catches a hallucinated citation. With it, a silent model upgrade that drops the pass rate from 96% to 81% is caught in a staging environment before a single real user ever sees the degraded output.
+
 ## The Manifera Pragmatic AI Standard
 
 When enterprises explore [offshore software development](https://www.manifera.com/services/offshore-software-development/) for AI, they often encounter agencies pushing Layer 3 to maximize billable hours, or agencies pushing Layer 1 because they lack the technical capability to build anything else.
@@ -80,6 +99,9 @@ In Layer 1 (API Wrappers), you send your raw data to a public cloud provider. In
 
 ### (Scenario: IT Procurement evaluating Manifera) How does Manifera execute Layer 2 AI projects?
 Our Dutch AI Architects design the data topology. We define the ETL pipelines required to clean your proprietary data, set up the Vector Databases, and implement the RAG orchestration (using frameworks like LangChain). Our Vietnamese offshore pods then write the code to execute this secure architecture, delivering a highly accurate, private AI solution.
+
+### (Scenario: Enterprise Architect maintaining a production RAG pipeline) What is Model Drift and how do you protect an AI system from it?
+Model Drift occurs when an LLM provider silently updates the model behind an API endpoint, subtly changing tone, format, or accuracy without any code change on your side. It is protected against with an Evaluation Harness: a version-controlled suite of golden test cases with expected answers and retrieval assertions that automatically re-runs whenever the underlying model, prompt template, or Vector Database content changes, catching quality regressions before real users see them.
 
 <script type="application/ld+json">
 {
@@ -124,6 +146,14 @@ Our Dutch AI Architects design the data topology. We define the ETL pipelines re
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design the secure RAG pipelines and Vector Database infrastructure. Our Vietnamese engineering pods execute the code, ensuring you get highly accurate AI solutions without ever exposing your data to public LLM providers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Model Drift and how do you protect an AI system from it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Model Drift is when an LLM provider silently updates the model behind an API endpoint, changing output tone, format, or accuracy without any code change on your end. It is mitigated with an Evaluation Harness, a version-controlled suite of golden test cases that automatically re-runs whenever the model, prompt, or Vector Database content changes, catching regressions before production."
       }
     }
   ]

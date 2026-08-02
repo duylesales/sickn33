@@ -84,6 +84,19 @@ Measuring productivity incorrectly is worse than not measuring it at all. The ph
 3. **Focus on the Bottlenecks (Flow):** Use SPACE to identify why DORA metrics are low. If "Lead Time for Changes" is 4 days, look at the SPACE Communication metric: you might find that PRs sit waiting for review for 3.5 days. The code writing is fast; the async communication is the bottleneck.
 4. **Track AI Impact:** As you roll out [AI-Assisted Development tools](47-ai-assisted-development-vs-traditional-coding-productivity-metrics.md), use these metrics to prove ROI. You should see Activity increase and Lead Time decrease, while Change Failure Rate remains stable.
 
+## The Fifth DORA Metric: Reliability
+
+For years, "DORA" meant exactly four metrics. Since 2023, Google's DORA research program has formally recognized a fifth dimension: **Reliability** — how consistently a system meets the operational performance and availability targets that users actually experience, independent of how often you deploy or how fast you recover from any single incident.
+
+**Why the four original metrics weren't enough:** A team can post excellent Lead Time, Deployment Frequency, and even a low Change Failure Rate, while still running a system with chronic background reliability issues — degraded performance during peak hours, intermittent API timeouts, a slow memory leak requiring weekly restarts — that never register as a discrete "failed deployment" and therefore never show up in MTTR.
+
+**How to measure it in practice:** Reliability is operationalized through Service Level Objectives (SLOs) and error budgets, a practice popularized by Google's own Site Reliability Engineering discipline.
+- Define a Service Level Indicator (SLI) — e.g., "percentage of API requests completed in under 300ms."
+- Set a Service Level Objective (SLO) — e.g., "99.9% of requests over a rolling 30-day window."
+- Track the **error budget**: the 0.1% of allowed failure. For context, a 99.9% SLO allows roughly 43 minutes of downtime per 30-day month; a 99.95% SLO allows only about 21 minutes. When a team burns through its error budget faster than the month allows, that is a signal to halt new feature work and invest in reliability, exactly as a high Change Failure Rate signals halting deployment speed. Choosing the right SLO tier is itself a business decision, not just an engineering one — a marketing site tolerates a lower tier than a payments API losing revenue every second it is down.
+
+**Why this matters for distributed and offshore teams specifically:** Reliability is the metric least visible from a dashboard alone — it requires genuine on-call ownership. A Dedicated Team with a Vietnam-based on-call rotation needs the same access to production alerting (PagerDuty, Opsgenie) and the same authority to declare an incident as an onshore team would, or reliability quietly becomes "whoever is awake in Europe's problem." Building a follow-the-sun on-call rotation, similar to the incident response coverage described for [security incidents](55-cybersecurity-offshore-teams-secure-distributed-engineering.md), ensures reliability ownership travels with the team, not the clock.
+
 ## Managing Productivity Across Borders
 
 When managing [Dedicated Offshore Teams](56-staff-augmentation-vs-dedicated-teams-delivery.md), subjective metrics fail due to distance and cultural differences. You cannot rely on "managing by walking around the office."
@@ -115,6 +128,10 @@ They are highly applicable to startups, but the goals differ. An enterprise migh
 ### How do we measure the impact of Technical Debt using these metrics? (Scenario: CTO building a case for refactoring)
 
 Technical debt acts as a hidden tax on DORA metrics. When debt is high, "Lead Time for Changes" slowly creeps upward (features take longer) and "Change Failure Rate" spikes (touching messy code breaks unpredictable things). By charting these two metrics over a 6-month period, you can present empirical data to the board: "Our delivery speed has decreased by 40% and our bug rate doubled. We must pause to refactor."
+
+### Is Reliability now a fifth official DORA metric alongside the original four? (Scenario: SRE Lead building an observability roadmap)
+
+Yes. Since 2023, Google's DORA research has formally added Reliability, measured through Service Level Objectives (SLOs) and error budgets rather than a single deployment-failure count. It captures chronic background issues — degraded performance, intermittent timeouts — that never register as a discrete failed deployment. For distributed teams, it also requires giving offshore on-call engineers the same production alerting access and incident authority as onshore staff.
 
 <script type="application/ld+json">
 {
@@ -159,6 +176,14 @@ Technical debt acts as a hidden tax on DORA metrics. When debt is high, "Lead Ti
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Tech debt is a tax on DORA metrics. When debt is high, 'Lead Time' creeps up (slower features) and 'Change Failure Rate' spikes (more bugs). Charting these provides empirical proof to justify refactoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Reliability now a fifth official DORA metric alongside the original four?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, since 2023 Google's DORA research added Reliability, measured via SLOs and error budgets, capturing chronic background issues that never register as a discrete failed deployment. Distributed teams must give offshore on-call engineers equal alerting access and incident authority."
       }
     }
   ]

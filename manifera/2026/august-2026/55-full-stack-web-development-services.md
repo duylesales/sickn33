@@ -71,6 +71,18 @@ The 30-day Sandbox is an investment. You trade a slow Month 1 for a flawlessly e
 
 If you are tired of offshore freelancers who break your business logic, contact Manifera's Amsterdam team. We build engineering pods that understand your business before they write your code.
 
+## Bridging the Time Zone Gap: The Asynchronous Handoff Protocol
+
+Even after a pod graduates from the 30-Day Sandbox, a structural challenge remains: Amsterdam operates on Central European Time (CET/CEST), while our Vietnamese engineering pods operate on Indochina Time (ICT), a 5-6 hour gap depending on daylight saving. Without a deliberate protocol, this gap silently drains velocity. A Tech Lead in Amsterdam asks a clarifying question at 16:00 CET, which is already 21:00 or 22:00 ICT, after the pod has logged off for the day. The answer doesn't arrive until the next Amsterdam morning. A single unanswered question can cost an entire day of throughput, multiplied across every blocked ticket in the sprint.
+
+At Manifera, we structure a mandatory overlap window and a written handoff protocol, rather than relying on chance overlap or endless asynchronous Slack threads that nobody reads in full.
+
+**The Golden Hour Overlap:** We schedule a 2-3 hour daily window, typically 14:00-17:00 CET, which lands at 19:00-22:00 ICT, where the Dutch Tech Lead and the senior members of the Vietnamese pod are online simultaneously. This window is reserved exclusively for architectural decisions, code review discussion, and blocking questions, not routine status updates that could just as easily be written down.
+
+**The Daily Handoff Log:** Before the Vietnamese pod's day ends, roughly 4-5 hours before Amsterdam wakes up, the pod writes a structured handoff document with three fixed sections: Blockers (anything that will stall progress if left unanswered), Decisions Made (so the Tech Lead can veto quickly rather than discover a wrong turn three days later), and Questions for Tomorrow. The Dutch Tech Lead reads and responds to this log first thing in the morning, before the pod's next working day begins in Vietnam.
+
+This protocol converts a 5-6 hour time zone gap from a liability into a genuine advantage. Work continues on the client's codebase for close to 16-18 hours of the 24-hour cycle, as long as the handoff discipline is enforced. Skip the protocol, and the same gap becomes a serial bottleneck that adds days to every blocked decision.
+
 ---
 
 ## Frequently Asked Questions
@@ -89,6 +101,9 @@ Instead of you spending 10 hours writing documentation that no one will read, th
 
 ### (Scenario: Procurement evaluating vendor onboarding) How does Manifera's Hybrid Offshore model improve the onboarding process?
 In a standard offshore model, your internal Tech Lead must manage the entire onboarding process. In Manifera's Hybrid model, our Dutch Architects manage the onboarding of the Vietnamese pod. The Dutch Architect translates your European business requirements into the technical constraints the pod must follow, acting as a protective buffer for your internal team.
+
+### (Scenario: VP Engineering worried about remote coordination) How does Manifera keep an onshore Tech Lead and an offshore pod aligned across a 6-hour time difference?
+We enforce a structured "Golden Hour" overlap window, typically 14:00-17:00 CET (19:00-22:00 ICT), reserved exclusively for architectural decisions and blocking questions, plus a Daily Handoff Log the pod writes before logging off, covering Blockers, Decisions Made, and Questions for Tomorrow. This lets the Dutch Tech Lead review and respond first thing each morning, so the time zone gap extends the working day instead of stalling it.
 
 <script type="application/ld+json">
 {
@@ -133,6 +148,14 @@ In a standard offshore model, your internal Tech Lead must manage the entire onb
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects manage the onboarding of the Vietnamese pod. They translate your European business context into technical boundaries, acting as a protective buffer so your internal Tech Lead doesn't burn out managing the process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Manifera keep an onshore Tech Lead and an offshore pod aligned across a 6-hour time difference?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We enforce a structured Golden Hour overlap window (typically 14:00-17:00 CET / 19:00-22:00 ICT) for architectural decisions, plus a Daily Handoff Log covering Blockers, Decisions Made, and Questions for Tomorrow, which the Dutch Tech Lead reviews each morning before the pod's next working day begins."
       }
     }
   ]

@@ -77,6 +77,23 @@ Generic AI tools generate generic code because they lack context. The best teams
 
 They use tools that feed the company's specific design system, API documentation, and architectural decision records (ADRs) directly into the LLM's context window. Instead of the AI guessing how to build a button, it knows exactly how to build a button using your internal `ButtonComponent` spec.
 
+## The Supply Chain Risk Nobody Is Watching: Hallucinated Dependencies
+
+There is a specific failure mode of **AI assisted development** that most engineering leaders have not yet added to their threat model: package hallucination, sometimes called "slopsquatting" in security research circles.
+
+Here is the mechanism. When an LLM generates an `import` statement or a `package.json` dependency, it is predicting a plausible package name based on patterns in its training data — not verifying that the package actually exists in the npm, PyPI, or NuGet registry. Academic studies analyzing large samples of AI-generated code across multiple models have found that a meaningful percentage of suggested package names do not exist at all. They are statistically plausible fabrications: `requests-auth-helper`, `fast-json-validator`, names that sound exactly like something a real developer would publish.
+
+This becomes a critical vulnerability because attackers now actively monitor which hallucinated package names recur most frequently across popular LLMs, then register those exact names on public registries — pre-loaded with malware, credential stealers, or backdoors. A developer using AI assistance without verification copies the AI's suggested `pip install` or `npm install` command, and the malicious package installs silently, inheriting whatever permissions the build pipeline has: access to environment variables, cloud credentials, source code, and CI/CD secrets.
+
+This risk is structurally different from a normal typosquatting attack, because the developer never made a typo. The AI generated a name that felt entirely legitimate, and the developer trusted it precisely because it looked like ordinary, competent output. Standard code review — which is trained to catch bad logic, not bad supply chain — routinely misses this class of vulnerability, because the imported package name looks completely unremarkable in a diff.
+
+The mitigation is procedural, not technical, and it belongs in your AI governance framework alongside the practices above:
+- **Dependency allowlisting.** Every new third-party package, whether suggested by a human or an AI, must be added to a pinned, version-locked manifest that passes through a review gate before it reaches a build server — no ad hoc `pip install` or `npm install` of anything not already vetted.
+- **Registry provenance checks in CI.** Automated pipeline steps that flag any dependency published within the last 30–90 days, with low download counts, or with no verified publisher — the exact profile of a freshly registered slopsquatting package.
+- **Software Bill of Materials (SBOM) generation on every build**, so that if a package is later revealed to be malicious, every affected deployment can be identified within minutes, not weeks.
+
+At Manifera, this check is built into our CI/CD pipeline as a non-negotiable gate, not an optional linter warning — because the entire premise of our Hybrid Offshore governance model is that AI-generated output, including its dependency choices, is treated as untrusted until independently verified.
+
 ## The offshore AI Advantage
 
 Many European companies fear that outsourcing software development means losing control over code quality, especially in the age of AI.
@@ -107,6 +124,9 @@ Developers should practice "Test-Driven Generation." The human developer writes 
 
 ### (Scenario: IT Manager evaluating offshore vendors) How do you ensure your developers aren't just copy-pasting AI hallucinations?
 Through our Hybrid Offshore model's governance structure. Every pull request requires approval from a Senior Tech Lead. Our CI/CD pipelines run static application security testing (SAST) on every commit. The AI is treated as a junior contributor whose work must pass the same ruthless automated and manual checks as any human developer.
+
+### (Scenario: CISO worried about AI coding tools introducing supply chain risk) Can AI coding assistants introduce malicious dependencies into our codebase?
+Yes, through a risk called "slopsquatting." LLMs sometimes hallucinate plausible-sounding package names that don't actually exist. Attackers monitor which hallucinated names recur across popular AI models and register those exact names on public registries, pre-loaded with malware. A developer who trusts the AI's suggested install command can pull in a malicious package that looks completely unremarkable in a code review. Mitigate this with dependency allowlisting, registry provenance checks in CI, and SBOM generation on every build.
 
 <script type="application/ld+json">
 {
@@ -151,6 +171,14 @@ Through our Hybrid Offshore model's governance structure. Every pull request req
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Through architectural governance. Every PR requires Senior Tech Lead approval. Our CI/CD pipelines enforce SAST security scanning. AI output is treated as untrusted code that must pass ruthless automated and manual verification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI coding assistants introduce malicious dependencies into our codebase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, through 'slopsquatting.' LLMs sometimes hallucinate plausible package names that don't exist. Attackers register those exact names on public registries pre-loaded with malware. Mitigate with dependency allowlisting, registry provenance checks in CI, and SBOM generation on every build."
       }
     }
   ]

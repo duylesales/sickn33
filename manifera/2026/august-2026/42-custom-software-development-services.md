@@ -76,6 +76,24 @@ The observability stack says: If they can actually find the bug when the server 
 - **Structured Logging:** Are they writing flat text logs (`Error: connection failed`), or are they using structured JSON logging with request IDs so you can trace a user's journey across microservices?
 - **Error Tracking:** Do they use Sentry, Datadog, or New Relic to capture unhandled exceptions automatically, or do they rely on users emailing them screenshots of error pages?
 
+## The Fifth Audit Area: Documentation and Knowledge Continuity (The Bus Factor)
+
+Marketing says: *"We provide comprehensive documentation."*
+Reality says: Whether your project survives if the two engineers who built it both quit next month.
+
+This is the audit area CTOs skip most often, because it's boring, and it's the one that costs them the most eighteen months later when they try to switch vendors or hire an in-house team to take over.
+
+**What to look for:**
+- **The "hit by a bus" test:** Ask the agency directly: "If your lead developer on my project left tomorrow, how long would it take a new engineer to become productive?" A mature agency answers in days, because onboarding runbooks, architecture diagrams, and a living README exist. An immature agency answers in "weeks," because the knowledge only exists in one person's head.
+- **Architecture Decision Records (ADRs):** Do they maintain a lightweight, version-controlled log of *why* major technical decisions were made (e.g., "Chose PostgreSQL over MongoDB because of relational reporting needs — decided 2025-11-03")? Without ADRs, every new engineer re-litigates old arguments, and every architectural choice looks arbitrary six months later.
+- **API documentation that isn't a lie:** Ask to see their OpenAPI/Swagger spec, then ask when it was last regenerated. A spec that is manually written and hasn't been touched in four months is actively misleading — it documents an API that no longer exists. Elite teams auto-generate API docs directly from the code (via annotations or contract-first tooling), so the documentation and the running system can never drift apart.
+- **Runbooks, not tribal knowledge:** For any production incident (database failover, payment gateway timeout, third-party API outage), is there a written runbook a mid-level, on-call engineer can follow at 3 AM, or does the on-call rotation just escalate straight to the CTO's personal phone?
+- **Offboarding and IP handover clauses:** What does the contract say happens to source code, infrastructure credentials, and documentation if you terminate the engagement? A professional partner hands over a complete, running repository with CI/CD, environment variables (redacted appropriately), and a transition document. A weak partner treats this as a negotiation.
+
+**The live test that separates real documentation from theater:** during your technical audit call, ask the agency to have a developer who has *never touched this specific project* attempt to run it locally, live, on screen-share, using only their own internal documentation. Time it. If it takes over 30 minutes to get a local environment running from a clean checkout, their onboarding documentation does not actually work — it merely exists.
+
+This audit area matters most for offshore and nearshore engagements specifically, because geographic and time-zone separation means you cannot simply walk over to someone's desk when documentation gaps surface. The written artifact has to do the work that a hallway conversation would do in a co-located team.
+
 ## Comparison: Marketing Claims vs. Technical Reality
 
 Use this matrix during your next vendor interview.
@@ -113,6 +131,9 @@ If a developer manually executes a SQL script to change the database structure, 
 
 ### (Scenario: Procurement Officer comparing vendor SLAs) How does a vendor's Git commit history predict their maintenance costs?
 If a vendor's Git history shows massive, infrequent commits (e.g., pushing a week's worth of code at once), it means they are writing highly coupled, procedural code that is hard to untangle. When you need to maintain or update that code in Year 2, it will take 3x longer than if they had written small, atomic, modular commits.
+
+### (Scenario: CTO planning to bring development in-house next year) What is the "bus factor" and why should it affect my vendor choice?
+The "bus factor" is the number of team members who would need to disappear before your project becomes unmaintainable. If only one developer understands the codebase, your bus factor is 1, and you are entirely dependent on that individual. Ask any vendor how long it would take a new engineer to become productive on your project; a well-documented codebase with ADRs, runbooks, and auto-generated API docs answers in days, while a codebase with tribal knowledge only answers in weeks — and that gap becomes your problem the moment you try to switch vendors or hire in-house.
 
 <script type="application/ld+json">
 {
@@ -157,6 +178,14 @@ If a vendor's Git history shows massive, infrequent commits (e.g., pushing a wee
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Massive, infrequent commits indicate highly coupled, procedural code without proper review. Maintaining or updating this code in Year 2 will take 3x longer than if the team had written small, atomic, modular commits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 'bus factor' and why should it affect my vendor choice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The bus factor is how many team members could disappear before a project becomes unmaintainable. A low bus factor (e.g., 1) means you are entirely dependent on one person. Ask vendors how fast a new engineer becomes productive on your codebase; documented, well-onboarded teams answer in days, tribal-knowledge teams answer in weeks."
       }
     }
   ]

@@ -96,6 +96,20 @@ The first production deployment is a forcing function that validates everything:
 - Communication health (response times, proactive updates)
 - Whether to scale up, adjust team composition, or (rarely) change partners
 
+## Day 90 and Beyond: The Retention Playbook for Year One
+
+Getting a dedicated team to production by day 90 is only half the job. The real return on this model shows up over the following 12-24 months — but only if the team stays intact. Offshore engineering turnover is the single biggest hidden cost in this model: every departure resets institutional knowledge of your codebase, and a revolving door of "dedicated" engineers is functionally no different from a staffing agency.
+
+**What actually drives retention on a dedicated team**, based on patterns across mature Netherlands-Vietnam partnerships:
+
+- **A visible career ladder.** Engineers who can see a defined path — mid-level to senior to tech lead, with concrete criteria for each step — stay measurably longer than engineers on teams where advancement is ad hoc. Ask your partner whether team members have a documented growth plan, and whether you as the client are looped into calibrating it.
+- **Annual compensation benchmarking, not just annual raises.** Vietnamese developer salaries have grown roughly 8-10% annually as the market has heated up. A partner who benchmarks their engineers' pay against current market rate every year, rather than applying a flat cost-of-living bump, is far less likely to lose people to a counteroffer.
+- **Exposure to your actual technical decisions, not just ticket execution.** Engineers who are invited into architecture discussions and treated as contributors to technical direction — not just implementers of a spec someone else wrote — report meaningfully higher engagement. This is the practical version of "Mistake 1" above: inclusion is a retention mechanism, not just a morale nicety.
+- **A named succession plan for every critical role.** Even with strong retention, plan for the reality that someone will eventually leave. The strongest partnerships maintain a documented "bus factor" mitigation: no single engineer is the only person who understands a critical system component, achieved through pair programming rotations and mandatory documentation, not just goodwill.
+- **Regular in-person contact.** Teams that receive at least one annual visit from client-side leadership, and send representatives to the client's offices at least once, report substantially stronger long-term engagement than teams that remain purely video-call relationships for years.
+
+**The metric to track:** ask your partner for their average tenure-on-account figure — not company-wide attrition, but specifically how long engineers stay assigned to the same client relationship. A mature partnership should be able to show you 24+ months average tenure on long-running accounts. If a partner cannot produce this number, or the number is under 12 months, treat that as a leading indicator of the knowledge-loss risk you will absorb over a multi-year engagement.
+
 ## Common Mistakes to Avoid
 
 **Mistake 1: Treating dedicated team members as freelancers.** They are an extension of your team. Include them in all-hands meetings, share company updates, and celebrate wins together. Isolation kills motivation and quality.
@@ -121,6 +135,9 @@ By combining local European account management with elite offshore talent, we en
 
 ### How does Manifera guarantee high-quality offshore engineering (Scenario: Building a Dedicated Development Team: The 90-Day Playbook)?
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your dedicated development team initiatives are executed with absolute precision.
+
+### How do we retain our dedicated team members beyond the first 90 days?
+Retention comes from a visible career ladder, annual compensation benchmarking against current market rate, real inclusion in architecture and technical decisions rather than pure ticket execution, a documented succession plan for critical roles, and regular in-person contact between client and team. Ask your partner for their average tenure-on-account figure — a mature partnership should show 24+ months on long-running accounts.
 
 <script type="application/ld+json">
 {
@@ -165,6 +182,14 @@ Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your dedicated development team initiatives are executed with absolute precision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we retain our dedicated team members beyond the first 90 days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retention comes from a visible career ladder, annual compensation benchmarking against current market rate, real inclusion in architecture and technical decisions rather than pure ticket execution, a documented succession plan for critical roles, and regular in-person contact between client and team. Ask your partner for their average tenure-on-account figure — a mature partnership should show 24+ months on long-running accounts."
       }
     }
   ]

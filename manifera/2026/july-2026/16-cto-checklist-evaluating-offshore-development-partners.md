@@ -54,6 +54,22 @@ After evaluating dozens of offshore partners over 11 years, our team distilled t
 - [ ] **Exit clause** — What happens if the engagement fails? Is there a code handover process?
 - [ ] **Replacement guarantee** — What is the SLA for replacing a team member who leaves? (Target: 2 weeks)
 
+## Bonus Category: Business Continuity & Risk Resilience (5 items, scored separately)
+
+The core 20-point checklist above evaluates whether a partner can build your product well. It does not evaluate whether the partner will still exist, in a form you can rely on, two or three years into the engagement. For any project with a 12+ month horizon or meaningful budget, add this bonus category as a separate risk screen — score it 0-3 per item like the core checklist, but keep the two totals distinct rather than folding this into the 45/60 threshold, since business continuity is a different kind of risk than technical or process risk.
+
+This category matters more for offshore partners than for local vendors, for a simple reason: if a local agency collapses, you can walk across town and hire replacement developers within days. If an offshore partner collapses, you are dealing with a cross-border wind-down, potential difficulty reaching former employees, and a much longer runway to stand up a replacement team. The five items below are the ones enterprise procurement teams ask about routinely but individual CTOs and founders often skip during a fast-moving evaluation.
+
+- [ ] **Client concentration risk** — What percentage of the partner's total revenue comes from their single largest client? Above 30-40% concentration on one account means losing that account (or that account's parent company having a bad year) can destabilize the whole company, including your project.
+- [ ] **Financial stability signal** — Has the partner been profitable and operating continuously for 5+ years, or are they a recently-spun-off unit riding a single funding round? Ask directly; a partner confident in its financials will answer without hesitation.
+- [ ] **Key-person dependency** — If the lead architect assigned to your project left tomorrow, does the partner have a documented succession plan and a bench of engineers who could step in within 2-4 weeks? Or does institutional knowledge live in one person's head?
+- [ ] **Disaster recovery and infrastructure redundancy** — Does the partner have a business continuity plan covering office/power/internet outages (relevant for Vietnam's occasional monsoon-season disruptions), and do they operate from more than one physical location or support remote failover for critical staff?
+- [ ] **Unsupervised reference access** — Will the partner let you speak directly with 2+ current clients without a company representative on the call? Partners confident in their client relationships rarely gatekeep this; partners who insist on being present or only offer curated references are signaling something.
+
+A partner can score a perfect 60/60 on technical and process criteria and still represent a serious business risk if they are financially fragile, over-concentrated on one client, or dependent on a single irreplaceable architect. This bonus category exists precisely to catch that blind spot — it has surfaced real risk in evaluations where the core checklist alone would have produced a false "safe" signal.
+
+**Interpreting the bonus score (max 15 pts):** 12-15 indicates a structurally stable partner suitable for multi-year, mission-critical engagements. 7-11 is workable for shorter or lower-stakes projects, but negotiate explicit contractual protections — source code escrow, a documented succession plan for the lead architect, and a shorter notice period — to offset the elevated risk. Below 7 points, treat continuity risk as a primary decision factor regardless of how well the partner scored on the core 60-point checklist; a technically excellent team is of limited use if the company delivering it cannot reliably exist through your project's timeline.
+
 ## How to Use This Checklist
 
 1. Schedule 45-minute evaluation calls with 3-5 shortlisted partners
@@ -83,6 +99,9 @@ By combining local European account management with elite offshore talent, we en
 
 ### How does Manifera guarantee high-quality offshore engineering (Scenario: The CTO's Checklist for Evaluating Offshore Development Partners)?
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your offshore software development initiatives are executed with absolute precision.
+
+### Should I also assess a partner's financial stability and business continuity plan?
+Yes, especially for engagements longer than 12 months. Score it as a separate 5-item bonus category covering client concentration risk, financial stability, key-person dependency, disaster recovery, and unsupervised reference access. A partner can score perfectly on technical and process criteria and still be a business risk if they are financially fragile or dependent on one irreplaceable architect.
 
 <script type="application/ld+json">
 {
@@ -127,6 +146,14 @@ Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your offshore software development initiatives are executed with absolute precision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I also assess a partner's financial stability and business continuity plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, especially for engagements longer than 12 months. Score it as a separate 5-item bonus category covering client concentration risk, financial stability, key-person dependency, disaster recovery, and unsupervised reference access. A partner can score perfectly on technical and process criteria and still be a business risk if they are financially fragile or dependent on one irreplaceable architect."
       }
     }
   ]

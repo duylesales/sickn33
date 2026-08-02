@@ -60,6 +60,25 @@ You have now built a **bespoke software solution**, but you do not own the infra
 
 If you are going to spend €200,000 customizing a SaaS tool, you should spend that €200,000 building a bespoke system where you own the codebase, the data sovereignty, and the intellectual property.
 
+## The Evolution Axis: Why Today's Differentiator Becomes Tomorrow's Commodity
+
+Here is the part of Wardley Mapping that most CIOs skip, and it is the part that quietly wastes the most money: components on the map do not stay still. They move. A capability that sits firmly in the "Differentiator" zone today will, given enough time, drift toward "Commodity" as the underlying technique becomes well understood, competitors replicate it, and third-party vendors package it into off-the-shelf products.
+
+Consider a concrete timeline. In 2019, a real-time delivery ETA algorithm was a genuine differentiator — only a handful of logistics companies had invested in the machine learning and live-tracking infrastructure to offer it. By 2023, most competent logistics SaaS platforms shipped a "good enough" version of the same feature as a standard module. The company that built it bespoke in 2019 was right to do so. The same company, still paying a team of five engineers in 2026 to maintain that bespoke ETA engine because "we built it, so we maintain it," is now burning budget defending a capability that no longer confers any advantage.
+
+**Why this matters financially:** Every bespoke system you build has an implicit maintenance tax — security patching, dependency upgrades, on-call coverage, institutional knowledge transfer when engineers leave. That tax is worth paying when the system is actively differentiating you. It becomes pure waste the moment the capability commoditizes and a SaaS alternative would do the same job for a fraction of the total cost of ownership. CIOs who never revisit their build decisions end up with an IT budget quietly calcified around yesterday's competitive advantages.
+
+**The Fix: A Bi-Annual Capability Re-Mapping Review**
+
+At Manifera, we recommend clients formalize this as a recurring governance ritual, not a one-time exercise:
+
+1. **Re-plot every bespoke system on the Wardley map every six months.** Ask honestly: is this still a differentiator, or has the market caught up?
+2. **Score each system on a simple 1-5 "commoditization risk" scale** — has a credible SaaS competitor emerged offering equivalent functionality at a materially lower TCO? Are three or more vendors now selling this as a standard module?
+3. **For systems scoring 4 or 5, run a formal migrate-or-retain decision.** This is not automatic decommissioning — sometimes the switching cost still favors retaining the bespoke system for another cycle. But the decision should be made deliberately, with real numbers, not by default inertia.
+4. **Redirect the freed engineering capacity toward the next genuine differentiator**, rather than letting it evaporate into maintaining systems that no longer earn their keep.
+
+This is the discipline that separates CIOs who treat "bespoke vs. buy" as a permanent, one-time architectural decision from those who treat it as what it actually is: a living portfolio decision that has to be revisited as the market — and your own business model — evolves.
+
 ## How to Execute the "Differentiate" Strategy
 
 At Manifera, we advise our enterprise clients to split their IT budget aggressively: starve the commodities, feed the differentiators.
@@ -88,6 +107,9 @@ Yes, this is the modern architectural standard. You build the "Differentiator" (
 
 ### (Scenario: IT Director evaluating offshore agencies) How can an offshore agency understand our unique business differentiators?
 This is where the "Order Taker" model fails. A true engineering partner uses a Hybrid Offshore model. At Manifera, our Dutch Tech Leads work directly with your C-suite during the Discovery phase to understand your business model and map the differentiators. They translate this strategic intent into architectural blueprints for our Vietnamese engineering pods to execute.
+
+### (Scenario: CIO reviewing a five-year-old bespoke system) How do we know if a bespoke system we built years ago is still worth maintaining?
+Wardley Mapping components move along an evolution axis over time: a genuine differentiator today can commoditize within a few years as competitors and SaaS vendors catch up. Formalize a bi-annual capability re-mapping review where every bespoke system is re-scored on a 1-5 commoditization risk scale. Systems scoring high (credible SaaS alternatives now exist at a lower TCO) should go through a deliberate migrate-or-retain decision, rather than being maintained indefinitely by default.
 
 <script type="application/ld+json">
 {
@@ -132,6 +154,14 @@ This is where the "Order Taker" model fails. A true engineering partner uses a H
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Through local architectural governance. Manifera's Dutch Tech Leads work with your C-suite during Discovery to map differentiators, translating strategic business intent into architectural blueprints for our offshore engineering pods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we know if a bespoke system we built years ago is still worth maintaining?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wardley Map components move along an evolution axis: a genuine differentiator today can commoditize within a few years. Formalize a bi-annual capability re-mapping review scoring each bespoke system on a 1-5 commoditization risk scale, and run a deliberate migrate-or-retain decision for systems scoring high, instead of maintaining them indefinitely by default."
       }
     }
   ]

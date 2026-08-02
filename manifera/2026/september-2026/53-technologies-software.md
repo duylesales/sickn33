@@ -62,6 +62,20 @@ Behind the interface, the Architect builds the specific DynamoDB integration. If
 ### Containerization (Docker and Kubernetes)
 Elite teams also reject proprietary serverless computing (like heavy reliance on AWS Lambda logic) for core enterprise systems. Instead, they write standard web servers and package them in Docker containers. A Docker container is universally portable. You can deploy it to AWS, Azure, Google Cloud, or a local laptop with exactly zero code changes. 
 
+## Data Gravity: The Lock-In That Survives Even Portable Code
+
+Suppose an architect does everything right. They enforce the Repository Pattern, containerize every service in Docker, and avoid proprietary compute entirely. There is still one form of lock-in this doesn't solve: **data gravity**.
+
+Cloud providers rarely charge much to store data or move it *in*. They charge aggressively to move it *out*. AWS egress fees run roughly €0.08–€0.09 per GB. That sounds trivial until a logistics platform with 500 terabytes of historical tracking data tries to migrate: the data transfer bill alone lands north of €40,000, before a single engineer has spent an hour on the actual migration. For a company with tens of petabytes, egress fees alone can exceed seven figures — the CFO's Azure migration proposal dies in the budget meeting before the engineering team even opens a repository.
+
+Data gravity compounds over time in a subtler way, too. Once your data lake lives in AWS S3, it becomes cheapest and fastest to also run your analytics warehouse, your ML training pipelines, and your BI dashboards in AWS — because none of *those* incur egress fees as long as they stay put. Every additional service you attach earns its convenience by deepening the well. Five years in, the code may be perfectly portable, but the gravitational pull of the data itself makes leaving unthinkable.
+
+### The Escape Hatch: A Neutral Cold-Storage Mirror
+
+Elite architects treat this as an insurance problem, not a one-time migration problem. They maintain a continuously updated, encrypted replica of core datasets in a zero-egress-fee neutral object store (such as Cloudflare R2 or Backblaze B2, both of which waive egress charges entirely). This mirror is never the primary system — it costs a small, predictable monthly fee — but its existence means that if a provider ever imposes an unacceptable price increase, the company already has its data sitting outside the walled garden, and a migration negotiation happens from a position of leverage rather than captivity.
+
+There is also a negotiating dimension architects should not ignore. Enterprise cloud contracts are rarely fixed-price: AWS, Azure, and Google Cloud all have dedicated enterprise sales teams authorized to waive or discount egress fees for customers who threaten to leave, or who commit to a multi-year spend agreement in exchange. A CTO who can credibly demonstrate — with a working, tested cold-storage mirror — that migration is technically feasible walks into that renewal conversation with genuine pricing power. A CTO whose data has nowhere else to go has already lost the negotiation before it starts.
+
 ## Cloud Sovereignty with Manifera
 
 When enterprises use standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies, junior developers will almost always choose proprietary cloud tools. Why? Because tools like Firebase or DynamoDB are extremely easy to set up, allowing the agency to finish the project faster and maximize their profit margin, leaving you with the long-term vendor lock-in.
@@ -94,6 +108,9 @@ A Serverless architecture ties your application deeply to the specific execution
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera ensure the software they build remains portable?
 Our Dutch Architects act as an architectural firewall. We strictly enforce the Repository Pattern and Docker containerization during PR reviews. We prevent our offshore Vietnamese developers from using 'shortcut' proprietary cloud tools that would trap your company, ensuring your architecture remains portable, scalable, and independent.
+
+### (Scenario: CFO questioning a stalled cloud migration) Why can't we switch cloud providers even though our code is portable?
+Even fully portable code can be trapped by 'data gravity.' Cloud providers charge steep egress fees to move data out, so a company with hundreds of terabytes can face a six or seven-figure transfer bill before any engineering work begins. Elite teams counter this by maintaining a continuously updated mirror of core data in a zero-egress-fee neutral store, so a real alternative always exists.
 
 <script type="application/ld+json">
 {
@@ -138,6 +155,14 @@ Our Dutch Architects act as an architectural firewall. We strictly enforce the R
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects enforce strict abstraction boundaries. We prioritize open-source, containerized technologies (Docker, PostgreSQL) and mandate the Repository Pattern, ensuring our Vietnamese pods deliver software that you can freely move between cloud providers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't we switch cloud providers even though our code is portable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because of 'data gravity.' Cloud providers charge steep egress fees to move data out, so migrating hundreds of terabytes can cost six or seven figures in transfer fees alone, regardless of how portable your application code is. Maintaining a mirror in a zero-egress neutral store prevents this trap."
       }
     }
   ]

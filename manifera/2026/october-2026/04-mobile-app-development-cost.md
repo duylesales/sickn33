@@ -83,6 +83,20 @@ Cross-platform development offers a lower initial cost (roughly 30-40% cheaper u
 > "A low upfront quote is not a cost-saving measure. It is a deferred invoice with compound interest. You either pay for architecture now, or you pay for catastrophic downtime later."
 > *— [Placeholder: Insert expert quote on software economics]*
 
+## The Compliance and Store Overhead Nobody Budgets For
+
+Most cost breakdowns stop at engineering salaries and cloud bills. They ignore an entire category of recurring cost that only surfaces after the app is already live: regulatory and platform compliance overhead. For a European company shipping into the EU market, this is not optional line-item padding; it is a legal requirement with real remediation costs if skipped.
+
+**Store-level fees are the smallest and most predictable piece.** Apple charges €99 per year for a Developer Program membership; Google charges a one-time €25 registration fee. Trivial in isolation, but they are the first sign of whether a vendor has actually budgeted for the full lifecycle of the app or only for the initial build sprint.
+
+**Privacy compliance is the expensive, recurring piece.** Since Apple's App Tracking Transparency (ATT) framework became mandatory, every app that wants to track users across apps or websites for advertising purposes must implement a system-level consent prompt and gracefully degrade its analytics and attribution logic when a user declines (which the majority of EU users do). Building that fallback logic — attribution that still works without the device identifier — typically adds 40 to 80 development hours that a low-cost vendor's quote will not include. On top of this, GDPR requires a Data Processing Agreement (DPA) with every third-party SDK that touches personal data, and both app stores now mandate a public-facing "Privacy Nutrition Label" (Apple) or "Data Safety" section (Google Play) that must accurately reflect every SDK's data collection behavior. Getting this wrong is not a cosmetic error — it is grounds for app rejection or removal.
+
+**Accessibility remediation is no longer optional in the EU.** The European Accessibility Act requires digital products, including mobile apps, sold in the EU to meet WCAG 2.1 AA-equivalent standards for users with disabilities: proper VoiceOver/TalkBack labeling, minimum touch target sizes, sufficient color contrast, and support for dynamic text scaling. Retrofitting accessibility into a UI that was never built with semantic labeling from the start is dramatically more expensive than building it in from day one — often a 15-25% surcharge on UI development if bolted on after launch, versus a negligible addition if planned upfront.
+
+**Third-party SDK licensing scales with success, which is the trap.** Analytics platforms, push notification providers, fraud-detection SDKs, and ML-powered features frequently bill per Monthly Active User (MAU) once you exceed a free tier. A vendor's initial cost estimate rarely accounts for the fact that a successful app crossing 50,000 MAU can see its third-party SDK bill jump from near-zero to several thousand euros per month, essentially overnight.
+
+A responsible mobile app development cost estimate itemizes all four of these categories separately, rather than burying them inside a vague "post-launch support" line.
+
 ## The Zero-Risk Financial Strategy
 
 Do not evaluate mobile app development cost by looking at the hourly rate of the developers. Evaluate it by analyzing the vendor's approach to System Architecture, automated testing, and cloud infrastructure optimization.
@@ -109,6 +123,9 @@ Only if the MVP is a throwaway prototype used strictly to secure funding. If you
 
 ### 5. (Scenario: Lead Architect) Does using cross-platform frameworks like React Native actually reduce long-term TCO?
 It depends entirely on the app's Non-Functional Requirements (NFRs). For standard B2B SaaS interfaces or e-commerce apps, React Native significantly reduces TCO by centralizing business logic. However, for apps requiring deep OS integrations (AR, complex audio/video editing, heavy Bluetooth), React Native increases TCO because your team will spend hundreds of hours maintaining custom native bridges.
+
+### 6. (Scenario: Compliance Officer) What compliance costs are typically missing from a mobile app development cost quote?
+Vendors frequently omit privacy engineering (App Tracking Transparency fallback logic, GDPR Data Processing Agreements for every third-party SDK, and the mandatory Privacy Nutrition Label/Data Safety disclosures), EU Accessibility Act remediation (WCAG 2.1 AA support for screen readers and dynamic text), and the recurring per-MAU billing of third-party SDKs once the app scales past a free tier. These are not optional extras; they are legal and platform requirements that should be itemized in the original estimate rather than discovered after launch.
 
 <script type="application/ld+json">
 {
@@ -153,6 +170,14 @@ It depends entirely on the app's Non-Functional Requirements (NFRs). For standar
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It depends entirely on the app's Non-Functional Requirements (NFRs). For standard B2B SaaS interfaces or e-commerce apps, React Native significantly reduces TCO by centralizing business logic. However, for apps requiring deep OS integrations (AR, complex audio/video editing, heavy Bluetooth), React Native increases TCO because your team will spend hundreds of hours maintaining custom native bridges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Compliance Officer) What compliance costs are typically missing from a mobile app development cost quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vendors frequently omit privacy engineering (App Tracking Transparency fallback logic, GDPR Data Processing Agreements for every third-party SDK, and the mandatory Privacy Nutrition Label/Data Safety disclosures), EU Accessibility Act remediation (WCAG 2.1 AA support for screen readers and dynamic text), and the recurring per-MAU billing of third-party SDKs once the app scales past a free tier. These are not optional extras; they are legal and platform requirements that should be itemized in the original estimate rather than discovered after launch."
       }
     }
   ]

@@ -74,6 +74,28 @@ While SAST analyzes the static code, DAST analyzes the running application.
 
 Once the code passes SAST and SCA, the CI/CD pipeline deploys the application to a staging environment. A DAST tool (like OWASP ZAP) automatically attacks the running application, attempting to bypass authentication, manipulate session cookies, or trigger Cross-Site Scripting (XSS). Only if the application survives this automated attack is it permitted to move to the production environment.
 
+## Locking Down the Infrastructure Layer: IaC and Secrets Scanning
+
+Even a perfectly secured application can be undone by a single misconfigured cloud resource. SAST, SCA, and DAST protect the code itself, but a large share of real-world breaches originate one layer down, in the cloud infrastructure surrounding it: a storage bucket left publicly readable, an IAM role granted wildcard permissions "just to get the demo working," or a database security group left open to the entire internet.
+
+### The Fourth Gate: Infrastructure as Code (IaC) Scanning
+
+Elite agencies do not provision cloud infrastructure by clicking around in the AWS or Azure console. They define every server, bucket, and permission as version-controlled code using Terraform or CloudFormation, then scan that definition before it is ever deployed.
+
+Tools like Checkov, tfsec, and Terrascan parse the Terraform plan and check it against hundreds of rules modeled on the CIS (Center for Internet Security) Benchmarks. If a developer writes a script that creates an S3 bucket without encryption, or an IAM policy with a wildcard `Action: "*"` permission, the CI/CD pipeline fails before a single resource is provisioned, caught on a developer's laptop rather than discovered later by a hacker scanning the internet for open buckets.
+
+### Secrets Never Touch the Repository
+
+The second infrastructure-layer discipline is secrets management. Amateur teams paste API keys and database passwords directly into config files and commit them to Git, where they effectively live forever in the commit history even after the line is deleted.
+
+Elite vendors enforce two overlapping controls: a pre-commit secret scanner (git-secrets or Gitleaks) that physically blocks a `git push` containing a pattern resembling an AWS key or private token, and a runtime secrets vault (HashiCorp Vault or AWS Secrets Manager) that injects credentials at runtime, so no password ever exists as plaintext in a repository at all.
+
+### Container Image Scanning
+
+For applications packaged in Docker containers, the image itself becomes an attack surface. A base image like `node:18` can carry known CVEs inherited from its underlying OS packages. Elite pipelines add a scanning gate, using Trivy or Grype, that inspects every layer of a built image against the CVE database before it reaches the registry, rejecting a vulnerable base image with the same rigor as a vulnerable line of code.
+
+Together, IaC scanning, secrets management, and container scanning close the gap that pure application-security testing leaves open: the infrastructure and packaging layers surrounding your code, not just the code itself.
+
 ## Procuring Mathematical Security
 
 Security is not a feature you can bolt onto an application at the end of a project. It must be woven into the fabric of the delivery pipeline.
@@ -100,6 +122,9 @@ Yes, the CapEx (initial setup) is higher because the vendor must architect the p
 
 ### 5. (Scenario: Lead Architect) What happens when an automated SCA tool flags a vulnerability in a third-party library that doesn't have a patch yet (a Zero-Day)?
 The DevSecOps pipeline immediately blocks any new deployments of that application. The engineering team then implements a temporary "Virtual Patch" at the Web Application Firewall (WAF) layer (e.g., AWS WAF or Cloudflare) to block the specific attack signature. Once the open-source community releases a patch for the library, the SCA tool detects it, updates the dependency, and unlocks the deployment pipeline.
+
+### 6. (Scenario: Cloud Security Architect) Our vendor already runs SAST, SCA, and DAST. Do we still need separate IaC scanning?
+Yes. SAST, SCA, and DAST protect the application code and its running behavior, but none of them inspect the Terraform or CloudFormation templates that provision the cloud environment surrounding that application. A perfectly secure application deployed into a publicly exposed S3 bucket or an over-permissioned IAM role is still a breach waiting to happen. IaC scanning tools like Checkov or tfsec close that specific gap by validating the infrastructure definition itself before it is ever provisioned.
 
 <script type="application/ld+json">
 {
@@ -144,6 +169,14 @@ The DevSecOps pipeline immediately blocks any new deployments of that applicatio
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The DevSecOps pipeline immediately blocks any new deployments of that application. The engineering team then implements a temporary \"Virtual Patch\" at the Web Application Firewall (WAF) layer (e.g., AWS WAF or Cloudflare) to block the specific attack signature. Once the open-source community releases a patch for the library, the SCA tool detects it, updates the dependency, and unlocks the deployment pipeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Cloud Security Architect) Our vendor already runs SAST, SCA, and DAST. Do we still need separate IaC scanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SAST, SCA, and DAST protect the application code and its running behavior, but none of them inspect the Terraform or CloudFormation templates that provision the cloud environment surrounding that application. A perfectly secure application deployed into a publicly exposed S3 bucket or an over-permissioned IAM role is still a breach waiting to happen. IaC scanning tools like Checkov or tfsec close that specific gap by validating the infrastructure definition itself before it is ever provisioned."
       }
     }
   ]

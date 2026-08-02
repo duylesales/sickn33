@@ -69,6 +69,19 @@ In 2026, the most sophisticated SaaS companies do not pick just one model; they 
 
 This hybrid architecture requires your application data access layer to be highly abstracted. The application code must ask a centralized "Tenant Routing Service" where to send the query, allowing the infrastructure to fluidly move tenants from the Pool to a Silo as they upgrade their subscriptions.
 
+## Multi-Region Data Residency: Isolating Tenants by Geography, Not Just by Database
+
+Isolation model (Silo/Bridge/Pooled) answers "can Tenant A see Tenant B's data?" A separate question — increasingly non-negotiable for B2B SaaS selling into Europe, the Middle East, or healthcare/finance verticals — is: "does Tenant A's data physically stay within the geographic boundary their contract or local law requires?" GDPR does not strictly forbid EU personal data from being processed elsewhere, but many enterprise procurement teams and several sector-specific regulators (financial services, public sector, healthcare) now demand contractual data residency guarantees, and Germany, Switzerland, and increasingly Gulf-region regulators go further and require it outright.
+
+**The mechanism:** extend the Tenant Routing Service described above with a `data_region` attribute per tenant, not just a `tenant_id`. When a new tenant signs up, sales or onboarding assigns them to a region — e.g., `eu-central` (Frankfurt/AWS `eu-central-1`), `apac-southeast` (Singapore/AWS `ap-southeast-1`), or `us-east`. The routing layer resolves both the tenant's isolation tier (Pool vs. Silo) *and* their region before issuing a database connection, meaning a single logical application can serve tenants whose data never crosses a border, from a single deployed codebase.
+
+**Three implementation details that catch teams off guard:**
+1. **Backups and DR replicas must respect the same boundary.** It is common to correctly route primary writes to `eu-central-1` but then ship disaster-recovery snapshots to a cheaper US region by default cloud provider configuration — silently violating the same residency guarantee you sold the customer.
+2. **Third-party services leak region.** Your email provider, error-logging tool (Sentry), and analytics pipeline (Segment, Mixpanel) must each be configured per-region, or you re-introduce a residency violation through the side door — a transactional email containing customer PII routed through a US-based SMTP relay defeats an EU data residency clause just as surely as the database would.
+3. **Support tooling needs region-awareness too.** A support engineer querying "show me tenant X's last 10 orders" from a global admin panel must have that query itself scoped and audited by region, or the admin tooling becomes the compliance gap nobody tested for.
+
+**Best for:** SaaS platforms selling to enterprise/regulated buyers across multiple continents, where the sales contract — not just the architecture diagram — commits to a specific data boundary per customer.
+
 ## Re-architecting for Scale with Manifera
 
 Transitioning from a Pooled MVP to a Tiered Enterprise architecture requires deep database refactoring, often leveraging the [Strangler Fig Pattern](48-strangler-fig-pattern-modernising-legacy-systems.md) to migrate data without downtime.
@@ -100,6 +113,10 @@ Yes, but it requires discipline. MongoDB supports multi-tenancy easily through a
 ### How do we backup data if a specific tenant accidentally deletes their own records? (Scenario: Support Lead managing client escalations)
 
 In a Silo model, this is easy: you restore that specific tenant's database from last night's snapshot. In a Pooled model, it is a nightmare: restoring the entire database overwrites all the good data added by other tenants today. For Pooled models, implement "Soft Deletes" (setting an `is_deleted = true` flag instead of `DELETE FROM`) and use event sourcing or audit logs to manually reconstruct a specific tenant's state without touching the primary backup files.
+
+### How do we guarantee a specific tenant's data never leaves their required country or region? (Scenario: Enterprise Sales Lead negotiating a data residency clause)
+
+Extend your Tenant Routing Service to resolve a `data_region` attribute alongside the tenant's isolation tier before issuing any database connection, so tenants are pinned to a regional cluster (e.g., AWS `eu-central-1`, `ap-southeast-1`) at signup. Watch for three hidden leaks: disaster-recovery backups shipped to a default region outside the boundary, third-party services (email, error logging, analytics) routing PII through servers in another region, and internal support/admin tooling querying tenant data without the same region scoping. All three must be region-aware, not just the primary database, or the residency guarantee you sold the customer is broken through a side door.
 
 <script type="application/ld+json">
 {
@@ -144,6 +161,14 @@ In a Silo model, this is easy: you restore that specific tenant's database from 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "In a Pooled model, restoring the whole database ruins other tenants' data. Implement 'Soft Deletes' (is_deleted flags) and use audit logs so you can selectively restore records without doing a full database rollback."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we guarantee a specific tenant's data never leaves their required country or region?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extend your Tenant Routing Service to resolve a data_region attribute alongside isolation tier, pinning tenants to a regional cluster (e.g., AWS eu-central-1) at signup. Watch for hidden leaks in disaster-recovery backups, third-party services like email/analytics, and admin tooling that bypass region scoping."
       }
     }
   ]

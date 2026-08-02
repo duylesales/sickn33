@@ -56,6 +56,29 @@ The MLOps engineer ensures that when you switch from OpenAI's GPT-4 to an open-s
 LLMs execute natural language as code, making them highly vulnerable to Prompt Injection and SSRF attacks. 
 The Security Architect ensures that Local PII Masking models run *before* data is sent to the cloud. They build "Validator LLMs" that act as firewalls, aggressively scanning user input to block malicious hacking attempts before they reach the core business logic.
 
+## The Missing Role: AI FinOps and Model Routing
+
+Six weeks after a "successful" launch, the VP of Engineering receives a different kind of bad news: the OpenAI invoice. A pilot that cost $2,000 a month in testing has become an $85,000 a month production line item, and nobody on the team can explain exactly why the number moved.
+
+This is the fourth, rarely advertised, function missing from most AI Development Teams: **AI FinOps**, the discipline of engineering the cost of intelligence itself.
+
+### Why Token Costs Spiral Out of Control
+LLM providers price by the token, and the cost difference between model tiers is not small. A frontier reasoning model can cost 15-20 times more per million tokens than a smaller, fast model from the same provider. Teams that route every single request, regardless of complexity, to the flagship model are effectively paying luxury-car prices to move a bag of groceries. A support-ticket classifier, a data-extraction task, or a simple summarization job rarely needs the same model that drafts a legal contract clause.
+
+### The Model Router Pattern
+Elite AI pods insert a lightweight "router" model in front of the expensive model. The router, often a small, cheap classifier, inspects the incoming request and decides: does this need the frontier model, or can a cheaper tier handle it? In production RAG systems we have built, routing 70-80% of traffic to a cheaper model while reserving the expensive one for genuinely complex reasoning has cut monthly LLM spend by more than half without a measurable drop in output quality.
+
+### Semantic Caching
+Most enterprise chat and support applications see enormous repetition: the same question, worded slightly differently, arrives dozens of times a day. A semantic cache stores the vector embedding of each query alongside its answer. When a new query arrives, the system checks for a near-identical embedding already in the cache before spending a single token on the LLM. This alone can eliminate 20-30% of API calls in high-traffic customer-facing deployments.
+
+### Context Window Discipline
+Every unnecessary token sent to the model, whether it's a bloated system prompt, a retrieval pipeline dumping 20 chunks in when 4 would do, or unsummarized chat history, is money spent on latency and API cost. AI FinOps engineers set hard budgets on retrieval size (top-k limits), enforce prompt compression, and monitor tokens-per-request as a first-class production metric, the same way a backend team monitors query latency.
+
+### Circuit Breakers for Agentic Loops
+Autonomous or "agentic" AI workflows, where the model can call tools and re-prompt itself, introduce a new failure mode: runaway loops. Without a hard ceiling on iterations or a cost-per-session cap, a single malfunctioning agent can burn through thousands of dollars in API calls in an hour. AI FinOps engineers build circuit breakers, hard iteration limits and per-session token budgets, into the orchestration layer itself, not as an afterthought.
+
+Without this function, your Data Engineers and MLOps team can build a technically correct AI system that is also a financial liability. Cost governance is not an accounting exercise bolted on after launch; it is an architectural decision made at the same table as the RAG pipeline design.
+
 ## The Manifera AI Pod Architecture
 
 Building this highly specialized **AI development team** internally is incredibly expensive and slow. Hiring standard offshore agencies is dangerous because they usually just provide junior web developers masquerading as AI experts.
@@ -86,6 +109,9 @@ Standard web security is insufficient for AI. LLMs are vulnerable to Prompt Inje
 
 ### (Scenario: IT Procurement evaluating Manifera) How does Manifera staff its offshore AI pods?
 We do not use generalist web developers for AI projects. Our Hybrid AI Pods consist of specialized Data Engineers (to handle the Vector Databases and RAG pipelines) and Backend Specialists, all governed by a Dutch AI Architect. The Dutch Architect ensures strict European data privacy compliance and architectural security before any code is written.
+
+### (Scenario: CFO reviewing the monthly AI infrastructure bill) Our LLM API costs tripled after launch with no warning. How do we control this?
+Runaway LLM costs are almost always a model-routing failure, not a usage-growth problem. If every request, no matter how simple, is sent to the most expensive frontier model, you are overpaying by 10-20x per token for tasks a cheaper model could handle. The fix is an AI FinOps function: a lightweight router model that sends simple requests to a cheap model and reserves the expensive model for complex reasoning, combined with semantic caching to avoid re-paying for repeated questions and hard token budgets on retrieval size.
 
 <script type="application/ld+json">
 {
@@ -130,6 +156,14 @@ We do not use generalist web developers for AI projects. Our Hybrid AI Pods cons
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy specialized AI Pods composed of Data Engineers and Backend Specialists, all governed by a Dutch AI Architect. We focus on building secure, scalable RAG pipelines and MLOps infrastructure, not just writing API wrappers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Our LLM API costs tripled after launch with no warning. How do we control this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uncontrolled costs are usually a model-routing failure. A cheap router model should send simple requests to a low-cost model and reserve the expensive frontier model for complex reasoning, paired with semantic caching and hard token budgets on retrieval size."
       }
     }
   ]

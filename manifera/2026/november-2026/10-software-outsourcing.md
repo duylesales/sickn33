@@ -68,6 +68,23 @@ They selected Manifera precisely because of our Hybrid Hub. Our Autonomous Pod b
 | **Data Exposure** | Developers access production DBs | Strict Anonymized Mock Data & RBAC |
 | **Employee Churn Risk** | High (IP fragmentation) | Near-Zero (Highly retained pods) |
 
+## The Exit Problem: Securing IP When the Engagement Ends
+
+Most software outsourcing contracts are scrutinized heavily at signature and almost never at termination—yet the offboarding moment is when the majority of IP fragmentation actually happens. When a body shop's contract lapses or is terminated, dozens of accounts, repository forks, and local clones simply persist because nobody built a formal exit protocol into the original agreement.
+
+### The Offboarding Checklist We Contractually Guarantee
+
+Every Manifera engagement includes a written offboarding procedure, executed regardless of whether the relationship ends amicably or in a dispute, covering:
+
+*   **Access revocation within 24 hours:** Every engineer's VDI session, VPN credential, repository permission, and cloud IAM role is programmatically revoked the moment the engagement concludes—not "within the billing cycle."
+*   **Repository custody transfer:** Full commit history, branches, and CI/CD pipeline configurations are transferred to a repository under your organization's exclusive ownership, with cryptographic checksums proving no divergent fork exists elsewhere.
+*   **Signed destruction attestations:** Every engineer who touched the codebase signs a formal attestation confirming no local copies, personal backups, or exported snippets remain on personal hardware, countersigned by our Amsterdam legal team.
+*   **Source code escrow (optional, contractually available):** For clients in regulated industries, we support depositing a verified copy of the source code and build documentation with an independent third-party escrow agent, releasable to you under pre-agreed trigger conditions such as insolvency or breach of contract.
+
+### Why This Matters More Than the NDA Itself
+
+A body shop's standard contract is silent on all four of these mechanisms, which is precisely why "the vendor still had access six months after the project ended" is one of the most common findings in the vendor security audits our Amsterdam team performs for new clients migrating away from a previous outsourcing partner. Contractual IP ownership clauses are worthless if the technical means to enforce them—revoked credentials, verified deletion, escrowed source—were never built into the engagement in the first place.
+
 ## Stop Burning Cloud CapEx: Audit Your Architecture
 
 Stop treating your enterprise's Intellectual Property as an afterthought. If you are a CISO or General Counsel who demands uncompromising legal protection alongside massive engineering velocity, you must rethink your procurement strategy.

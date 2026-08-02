@@ -83,6 +83,20 @@ As noted in our guide on [Cloud Migration Strategies](37-cloud-migration-strateg
 
 Despite these transitional overheads, the risk mitigation is invaluable. If a new microservice fails, you simply update the API Gateway configuration to route traffic back to the legacy system. Resolution takes seconds, preventing the catastrophic [costs of downtime](39-true-cost-downtime-reliability-engineering-matters.md).
 
+## The "Perpetual Strangler" Trap: Governance That Prevents a Never-Ending Migration
+
+The Strangler Fig pattern's biggest advantage — low-risk incrementalism — is also its biggest organizational risk. Because nothing ever *forces* a hard cutover, and because the legacy system keeps limping along "well enough," migrations without governance frequently stall at 60-70% strangled and simply never finish. Teams get reassigned to new priorities, budget for the "old" system's remaining 30% quietly disappears, and five years later you are still paying to run and secure two systems, having captured only half the benefit while carrying all of the dual-running cost. This is common enough in enterprise modernisation programs that architects sometimes call it the **Perpetual Strangler** — a program with no scheduled death for the legacy host.
+
+Three governance mechanisms prevent this:
+
+**1. A chartered decommission date, not just a start date.** Every Strangler initiative should be approved with an explicit target date for the legacy system's *final* shutdown, signed off by the same executive sponsor who approved the migration budget — not an open-ended "we'll get to it." Treat this the same way you'd treat a lease expiration: a fixed date creates organizational urgency that an open-ended roadmap never will.
+
+**2. A monthly Strangulation Scorecard.** Track a single visible metric across the whole program: **% of production traffic (by request volume, not by feature count) currently routed to the new system.** Feature-count metrics are easy to game — teams migrate the 20 easiest endpoints and declare "80% done" while the remaining 20% carries 90% of actual traffic and complexity. Routing traffic percentage as the north-star metric keeps the team honest about how much of the legacy host is actually still load-bearing.
+
+**3. A named owner per bounded context, not a shared "migration team."** Assign a single accountable engineer or squad to each domain seam (billing, catalog, user profile, etc.) with that specific service's strangulation as part of their quarterly OKRs — not a generic cross-cutting "modernisation team" that competes for attention against every other roadmap item and always loses.
+
+Without these three mechanisms, even a technically well-executed Strangler migration tends to stall in the messy middle — which is exactly where dual-running costs and cognitive overhead are at their highest, and exactly where a stalled program does the most damage to team morale and stakeholder confidence.
+
 ## Executing Modernisation with Manifera
 
 Enterprise modernization projects are complex, multi-year endeavors that require rigorous architectural discipline. They are perfect candidates for augmentation. 
@@ -114,6 +128,10 @@ This is the hardest part. Use the "Change Data Capture" (CDC) pattern with tools
 ### Does the Strangler pattern slow down the development of new features? (Scenario: Product Manager fighting for roadmap prioritization)
 
 Initially, yes. Building the facade layer and establishing the CI/CD pipeline for the new microservices requires an upfront investment of engineering capacity. However, once the first 1-2 services are strangled out, velocity accelerates rapidly. New features can be built entirely in the modern stack, unencumbered by legacy spaghetti code, ultimately increasing overall roadmap velocity.
+
+### How do we stop a Strangler migration from stalling out permanently? (Scenario: CIO whose modernisation program has been "80% done" for two years)
+
+This is the "Perpetual Strangler" trap, and it happens when there is no forcing function to finish. Fix it with three governance mechanisms: first, charter an explicit legacy decommission date signed off by the executive sponsor, not an open-ended roadmap item. Second, track progress by percentage of production *traffic volume* routed to the new system, not by feature count — teams often migrate the easiest 80% of endpoints while the hardest, highest-traffic 20% quietly never gets touched. Third, assign a single named owner per bounded context with strangulation as part of their quarterly OKRs, rather than relying on a generic cross-cutting "modernisation team" that loses out to other roadmap priorities.
 
 <script type="application/ld+json">
 {
@@ -158,6 +176,14 @@ Initially, yes. Building the facade layer and establishing the CI/CD pipeline fo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Initially, yes, to set up the proxy and infra. But once the first services are extracted, velocity accelerates rapidly because new features are built in the clean, modern stack rather than fighting legacy code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we stop a Strangler migration from stalling out permanently?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avoid the 'Perpetual Strangler' trap with three mechanisms: a chartered legacy decommission date signed off by an executive sponsor, tracking progress by production traffic volume rather than feature count, and assigning a named owner per bounded context with strangulation tied to their quarterly OKRs."
       }
     }
   ]

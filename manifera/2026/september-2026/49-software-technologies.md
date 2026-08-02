@@ -60,6 +60,19 @@ The frontend (built in React or Next.js) consumes that JSON data and draws the U
 
 Because the two are completely decoupled via a strict API Contract, you achieve ultimate technological agility. If, five years from now, a new framework replaces React as the global standard, you do not have to touch your backend database. You simply rewrite the frontend UI layer, attach it to the existing JSON API, and launch. You have contained the rewrite "blast radius."
 
+## The Strangler Fig Pattern: Escaping a Dying Framework Without a Six-Month Freeze
+
+The CTO in the opening scenario faced a brutal choice: freeze all feature development for six months to rewrite the entire frontend, or keep shipping features on top of a framework with no security patches and no available developers. Most enterprises don't have the luxury of a clean six-month pause — the business still needs releases every sprint. There is a third option that avoids both extremes: the **Strangler Fig Pattern**.
+
+The name comes from the strangler fig vine, which grows around a host tree, gradually replacing it, until the original tree can be removed entirely while the new structure remains standing throughout. Applied to a frontend rewrite, it works like this:
+
+1. **Freeze the old framework.** No new screens are built in the dying technology. It is placed in maintenance-only mode — bug fixes allowed, new features forbidden.
+2. **Introduce a routing shell.** A thin layer (often just reverse-proxy rules or a micro-frontend router) decides, per URL or per screen, whether to serve the legacy page or the new React/Next.js page.
+3. **Migrate screen by screen, starting with the highest-traffic or highest-business-value pages.** Each migrated screen is fully rewritten against the same JSON API described above, then cut over in the router. The old and new frontends run side by side in production for the entire migration.
+4. **Delete the old codebase only when the last screen is migrated.** At that point, the "tree" has been fully replaced and can be safely removed.
+
+The decisive advantage is that the business keeps shipping features throughout the migration — new work happens exclusively in the new framework, so every sprint simultaneously ships product value *and* pays down the technical debt, rather than treating the rewrite as a separate, feature-frozen project competing for the same roadmap slot. A Strangler Fig migration typically costs more in total engineering hours than a big-bang rewrite, but it converts an unacceptable six-month revenue freeze into a background process the business barely notices.
+
 ## The Manifera Architectural Mandate
 
 When enterprises outsource to standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies, the agency will often let junior developers choose whatever flashy technology they want. The agency doesn't care about a 3-year half-life because their contract is only for 6 months. They leave you holding the technical debt. 
@@ -90,6 +103,9 @@ When developers use a proven technology like React, every possible bug has alrea
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera prevent the offshore team from choosing bad technologies?
 Our Vietnamese offshore developers do not choose the tech stack. Our dedicated Dutch Architects in Amsterdam dictate the technologies before the project begins. We mandate universally standardized, battle-tested tools (React, Node.js) and enforce strict API decoupling, guaranteeing that the codebase we deliver will be highly maintainable for the next decade.
+
+### (Scenario: CTO who cannot afford a six-month feature freeze) Is there a way to escape a dying framework without stopping all feature development?
+Yes, the Strangler Fig Pattern. Instead of a big-bang rewrite, you freeze new development in the old framework, add a thin routing layer that decides per screen whether to serve the legacy page or the new one, and migrate screens one at a time against the same JSON API — starting with the highest-value pages. Old and new frontends run side by side until the last screen is cut over, so every sprint ships new features and reduces technical debt simultaneously instead of freezing the roadmap for months.
 
 <script type="application/ld+json">
 {
@@ -134,6 +150,14 @@ Our Vietnamese offshore developers do not choose the tech stack. Our dedicated D
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects have absolute veto power over the Tech Stack. We strictly enforce the use of standardized, boring, enterprise-grade technologies (React, Node.js, PostgreSQL) to guarantee that your architecture is instantly maintainable by any developer in the world."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a way to escape a dying framework without stopping all feature development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the Strangler Fig Pattern. You freeze new development in the old framework, add a routing layer that serves either the legacy or new page per screen, and migrate screens one at a time against the same JSON API, starting with the highest-value pages. Old and new frontends coexist in production until the last screen is cut over, so feature work and debt reduction happen in the same sprint instead of a separate feature-frozen rewrite."
       }
     }
   ]

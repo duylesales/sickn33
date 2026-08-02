@@ -64,6 +64,17 @@ A mobile app is essentially an executable you hand over to the public. Hackers w
 **The Audit Question:** *"How do you protect the app from reverse engineering and API abuse?"*
 **The Correct Answer:** They must discuss **SSL Certificate Pinning** to prevent Man-in-the-Middle (MitM) attacks. They must confirm that absolutely no API keys (like AWS or Stripe secrets) are hardcoded into the client. Finally, they should mention code obfuscation tools (like R8 for Android) to make reverse engineering significantly harder.
 
+## 6. Post-Launch Observability and the Crash-Free Session Rate
+
+Shipping the app to the App Store is not the finish line; it is the starting gun. Once real users on real devices, on real (often terrible) carrier networks start hammering the app, a whole new category of bugs surfaces that no QA environment ever catches: OS-version fragmentation, a specific Samsung firmware that mishandles background threads, or a memory leak that only manifests after 40 minutes of continuous use. An agency that considers its job "done" at submission is handing you a ticking time bomb.
+
+**The Audit Question:** *"How do you monitor application health after release, and what happens when the crash rate spikes at 2 AM?"*
+**The Correct Answer:** They should immediately reference a **crash-free session rate** as their core release-health metric, monitored through tools like **Firebase Crashlytics** or **Sentry for Mobile**, with an internal SLA (typically 99.5% or higher) that triggers an incident if breached. Beyond passive monitoring, mature agencies practice **staged rollouts**: a new build is released to 1% of the Play Store or App Store audience first, then 10%, then 50%, then 100%, with automated gates that halt the rollout if the crash-free rate dips below threshold at any stage. They should also mention **feature flags** (via tools like LaunchDarkly or a lightweight in-house remote-config system) so a broken feature can be switched off instantly for all users without waiting 2-3 days for Apple's App Review to approve an emergency hotfix build. If the agency's answer to "what if it breaks in production" is "we'll push a fix," they do not understand mobile release engineering; a fix that requires App Store review is, by definition, never fast.
+
+This distinction matters commercially as much as technically. A staged rollout with an automated rollback gate turns a potential five-star-review disaster affecting 100% of your user base into a contained incident affecting 1%, discovered and reversed before most users even download the update. Ask the agency to show you a real release-health dashboard from a previous client engagement, not a mockup. If they cannot produce one, they have never operated a mobile app at a meaningful scale, no matter how polished their portfolio deck looks.
+
+There is also a pre-production layer to this discipline that many agencies skip entirely: a structured internal beta ring via **TestFlight** (iOS) and the **Play Console's Internal/Closed Testing tracks** (Android), populated with a rotating cohort of 20-50 real employees or trusted users who run the build on their own physical devices for at least 48 hours before it is ever offered to the public. This catches the device-fragmentation bugs that a QA team's rack of five test phones simply cannot reproduce, since Android alone spans thousands of hardware and OS-version combinations in active use. A serious agency will report back the specific device models, OS versions, and network conditions under which any pre-release crash occurred, not just a stack trace. That level of forensic detail, offered unprompted, is one of the clearest signals that you are dealing with a team that has actually operated apps in production, not just built and shipped them once.
+
 ## Why Manifera Passes the Audit
 
 Most agencies fail this technical interrogation because they are focused on building fast prototypes, not enterprise-grade software. 
@@ -90,6 +101,9 @@ Apple enforces strict App Store Review Guidelines. Common rejection reasons incl
 
 ### What is the Backend-for-Frontend (BFF) pattern?
 Instead of having the mobile app connect to a massive, generic enterprise API that sends too much data, a BFF is a lightweight middle-tier API built specifically for the mobile app. It aggregates data and removes unnecessary fields, sending only the exact, lightweight payload the phone needs to conserve battery and bandwidth.
+
+### What is a "crash-free session rate" and why does it matter?
+It is the percentage of app sessions that complete without a crash, tracked via tools like Firebase Crashlytics or Sentry for Mobile. Elite agencies target 99.5% or higher and treat any drop below that threshold as an active incident, using staged rollouts and feature flags to contain the damage before it reaches every user.
 
 <script type="application/ld+json">
 {
@@ -134,6 +148,14 @@ Instead of having the mobile app connect to a massive, generic enterprise API th
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A specialized middle-tier API built exclusively for the mobile app. It aggregates data and removes unnecessary fields, sending only the exact, lightweight payload the phone needs to conserve battery and bandwidth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a 'crash-free session rate' and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the percentage of app sessions that complete without a crash, tracked via tools like Firebase Crashlytics or Sentry for Mobile. Elite agencies target 99.5% or higher and treat any drop below that threshold as an active incident, using staged rollouts and feature flags to contain the damage before it reaches every user."
       }
     }
   ]

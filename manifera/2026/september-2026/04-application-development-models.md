@@ -65,6 +65,18 @@ Because they have 6 weeks, they have the breathing room to do deep architectural
 ### 3. The 2-Week Cooldown
 After a 6-week cycle, there is a mandatory 2-week cooldown. No new features are assigned. The engineers use this time to fix bugs they care about, explore new technologies, and refactor code. This cures the burnout of the endless Scrum treadmill.
 
+## The Betting Table and the Circuit Breaker: How Cycles Actually Get Chosen
+
+A detail most teams miss when they first attempt Shape Up: the methodology is not just "give engineers 6 weeks and hope for the best." It has a formal governance mechanism for deciding *which* pitches get built at all, called the Betting Table, and a hard failsafe called the Circuit Breaker that prevents runaway projects.
+
+**The Betting Table** is a recurring meeting — held at the start of every cycle, typically with the CEO, a senior product lead, and a technical lead — where shaped pitches compete for a scarce resource: engineering time. This is the mechanism that replaces the sprawling, ever-growing backlog that plagues Scrum teams. In Scrum, a backlog accumulates thousands of tickets that are never formally rejected; they simply age indefinitely, creating the illusion that everything is "still on the roadmap." Shape Up rejects this. A pitch that doesn't get bet on at the Betting Table is not deferred — it is *discarded*. If it still matters in six weeks, someone has to re-shape and re-pitch it from scratch. This forces real prioritization discipline instead of an infinitely growing wishlist that nobody ever says no to.
+
+Each pitch that reaches the Betting Table carries an **appetite** — a pre-committed budget of either one 6-week "Big Batch" cycle or a smaller 1-2 week "Small Batch," fixed *before* any solution design happens. This inverts the usual estimation process. Instead of asking "how long will this take?" and getting an answer that balloons under scope creep, the team asks "how much time is this problem worth to the business?" and then shapes a solution that fits inside that fixed budget. A feature that would take 12 weeks to build "properly" either gets re-shaped into something that fits 6 weeks, or it doesn't get bet on at all.
+
+**The Circuit Breaker** is the safety mechanism for when a bet still goes wrong. If a team is not converging toward a shippable outcome by roughly the midpoint of the cycle, the Circuit Breaker rule triggers automatically: the project does not get extended into the next cycle by default. It has to compete again at the next Betting Table, on equal footing with every other new pitch. This is a deliberate, structural rejection of "sunk cost" thinking. Scrum teams frequently let a struggling initiative drag on for months because "we've already invested so much." Shape Up's Circuit Breaker makes that drift structurally impossible — a stalled bet dies at the cycle boundary unless it is deliberately and competitively re-funded.
+
+For a Manifera Hybrid Offshore pod, this governance layer is what makes Shape Up safe to run with a distributed team. The Dutch Tech Lead sits at the Betting Table representing the client's European business priorities, ensures appetites are set realistically before the Vietnamese pod commits to a cycle, and enforces the Circuit Breaker without political pressure to keep a failing project alive just to save face.
+
 ## Implementing Shape Up with an Offshore Team
 
 Implementing Shape Up is challenging, especially when dealing with [offshore software development](https://www.manifera.com/services/offshore-software-development/). 
@@ -96,6 +108,9 @@ Usually, no. Shape Up requires engineers to have extreme autonomy and deep Domai
 
 ### (Scenario: CTO planning a process transition) How does Manifera adapt Shape Up for the Hybrid Offshore model?
 Our Dutch Tech Leads partner with your Product Managers to 'shape' the pitches, ensuring European business logic is captured. They then empower the Vietnamese engineering pod to execute the 6-week cycle. The Dutch Tech Lead provides the necessary architectural guardrails so the offshore team can make safe, autonomous scope cuts.
+
+### (Scenario: Product Manager confused about how pitches actually get chosen and stopped) How does Shape Up decide which pitches get built, and what stops a failing project from dragging on forever?
+Pitches compete at a recurring "Betting Table," where each carries a pre-set appetite (usually one 6-week cycle). A pitch not bet on isn't deferred to a backlog—it is discarded and must be re-shaped from scratch if it still matters later. If a bet is not converging by the cycle's midpoint, the "Circuit Breaker" rule kicks in automatically: the project doesn't roll over by default, it must compete again at the next Betting Table, preventing sunk-cost thinking from keeping failing initiatives alive.
 
 <script type="application/ld+json">
 {
@@ -140,6 +155,14 @@ Our Dutch Tech Leads partner with your Product Managers to 'shape' the pitches, 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Tech Leads 'shape' the pitches to capture European business intent, then empower our Vietnamese pods to execute the 6-week cycle. The Dutch Tech Lead provides architectural guardrails, allowing the offshore team to act autonomously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Shape Up decide which pitches get built, and what stops a failing project from dragging on forever?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pitches compete at a Betting Table with a pre-set time appetite. A pitch not bet on is discarded, not deferred to a backlog. If a bet is not converging by the cycle's midpoint, the Circuit Breaker rule prevents it from rolling over automatically, forcing it to compete again rather than dragging on due to sunk-cost thinking."
       }
     }
   ]

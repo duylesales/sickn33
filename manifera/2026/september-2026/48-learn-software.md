@@ -49,6 +49,18 @@ A junior developer does not know what a Fan-Out architecture is, because you can
 
 > *"A junior developer knows how to write code that works. A senior architect knows how to write code that won't break."* — Enterprise Engineering Axiom
 
+## How Developers Actually Learn Architecture: The ADR and Postmortem Loop
+
+If a 12-week bootcamp cannot teach System Design, and a computer science degree only teaches it in theory, a natural question follows: how does anyone actually **learn software** architecture in practice? The answer is not a course. It is a structured feedback loop built into daily engineering work, and it rests on two specific artifacts that most junior-only teams never adopt.
+
+The first is the **Architecture Decision Record (ADR)** — a short, permanent document, usually one or two pages, written *before* a significant technical decision is implemented. An ADR states the problem being solved, the options that were considered, the option chosen, and — critically — the tradeoffs being accepted. For example, an ADR for the social feed problem described above would explicitly document: "We chose a Redis-backed Fan-Out-on-Write architecture over a simple synchronous query because read volume vastly exceeds write volume for this feature; the tradeoff is added infrastructure complexity and a small propagation delay when a user posts." Junior developers who read a project's accumulated ADRs absorb years of hard-won architectural reasoning in weeks, because the *why* behind every major decision is preserved rather than living only in a senior engineer's head.
+
+The second artifact is the **blameless postmortem**. When a production incident happens — the database lockup, the 12-second load time — a senior architect does not simply fix the bug and move on. The team writes a short document covering what happened, the timeline, the root cause, and the specific architectural change that will prevent recurrence. Over a year, a growing team accumulates a library of real incidents tied to real fixes, which becomes a far more effective architecture curriculum than any external course, because every lesson is anchored to a system the developer actually works on.
+
+Engineering organizations that skip both artifacts don't just lose the documentation — they lose the compounding effect. Every new hire re-learns the same lessons the hard way, and every departing senior engineer takes years of undocumented judgment out the door with them.
+
+This is also why pairing a junior developer with an Architect for Pull Request review is so much more valuable than sending that developer to another training course. A well-written PR review comment ("this query will do a full table scan once we pass 100,000 rows — here's why, and here's the index that fixes it") is a live, project-specific ADR in miniature, delivered at the exact moment the developer is most receptive to the lesson: right after they wrote the code themselves.
+
 ## The Governance Mandate
 
 You cannot scale a startup by relying exclusively on junior or mid-level developers who only know syntax. If you do, they will unintentionally build a fragile, monolithic architecture that collapses under the weight of its own success. 
@@ -87,6 +99,9 @@ Time Complexity is a mathematical calculation of how much an algorithm slows dow
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera's Hybrid Model protect me from bad System Design?
 We never let offshore developers operate in a vacuum. Every Vietnamese engineering pod is governed by a dedicated Dutch Tech Lead. The European Architect designs the robust System Architecture, enforces CI/CD testing, and manually reviews the offshore code, ensuring your application scales flawlessly.
+
+### (Scenario: CEO wondering how junior developers ever become architects) If you can't teach System Design in a bootcamp, how does anyone actually learn it?
+Through a structured feedback loop, not a course. Two artifacts drive it: Architecture Decision Records (ADRs), which document the reasoning and tradeoffs behind major technical decisions before they're built, and blameless postmortems, which document the root cause and architectural fix after every production incident. Developers who work inside a team that maintains both absorb years of hard-won judgment in months, because the reasoning is written down instead of living only in a senior engineer's head.
 
 <script type="application/ld+json">
 {
@@ -131,6 +146,14 @@ We never let offshore developers operate in a vacuum. Every Vietnamese engineeri
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We pair highly efficient offshore developers with elite Dutch Architects. The European Architect performs all the complex System Design (caching, queues) and rigorously reviews the offshore code, guaranteeing your system scales flawlessly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If you can't teach System Design in a bootcamp, how does anyone actually learn it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through a structured feedback loop built on two artifacts: Architecture Decision Records, which document the reasoning behind major technical decisions before they're built, and blameless postmortems, which document the root cause and fix after every production incident. Teams that maintain both let developers absorb years of architectural judgment in months instead of relying on tribal knowledge in a senior engineer's head."
       }
     }
   ]

@@ -59,6 +59,18 @@ Give them this test: *"We want to build a feature where every time a user logs i
 
 If they do not spot the architectural flaw, do not hire them.
 
+## Reading the Contract: Pricing Structures That Reveal Order-Takers
+
+You can often identify an Order-Taker before a single line of code is written, simply by reading how the contract is structured. The Statement of Work (SOW) and the pricing model tell you exactly how the agency plans to make money, and that reveals whether their incentives are aligned with your product's long-term health or against it.
+
+**Watch the Change Request fee schedule.** Order-Taker agencies frequently quote an aggressively low fixed price for the initial build, then attach a punitive hourly rate (often 2-3x their base rate) for anything classified as a "Change Request." Because their business model depends on the initial scope being incomplete, they have a financial incentive to interpret your ticket as narrowly and literally as possible, so that the inevitable gaps get billed at premium rates. A Product Engineering partner prices discovery and architecture into the original scope precisely so that reasonable evolutions of the ticket do not trigger a change-order invoice.
+
+**Check whether the SOW prescribes technology instead of outcomes.** A healthy SOW defines the outcome the system must achieve: *"The export feature must support 50,000-row datasets without degrading page load time for other users."* A red-flag SOW instead prescribes the exact implementation the client dictated: *"Build a PDF export button using library X."* When the contract locks in the *how* rather than the *what*, it usually means the agency never had the mandate to push back on the architecture in the first place, and won't develop one mid-project.
+
+**Ask about source code and reusable module ownership.** Some Order-Taker shops quietly retain rights to "internal frameworks" or "boilerplate modules" they reuse across multiple clients, meaning components of what you believe is bespoke, proprietary logic are actually shared templates stripped of client-specific branding. Insist on full source code escrow and a contractual statement that all custom business logic, including any internal utility libraries built specifically to solve your domain problem, transfers to you outright.
+
+Before signing with any of the **app building companies** on your shortlist, have your procurement team or legal counsel flag these three items specifically. A vendor that resists defining outcome-based SOWs, itemizes change requests, or hedges on IP transfer is telling you, in writing, that they are not planning to be your architect.
+
 ## The Manifera Hybrid Governance Model
 
 Standard offshore agencies are built to be order-takers. They optimize for volume, not architecture.
@@ -89,6 +101,9 @@ Because software architecture is incredibly complex. If a Product Manager asks f
 
 ### (Scenario: CEO evaluating Manifera) How does Manifera's Hybrid Model solve the 'Order-Taker' problem?
 Our Dutch Architects act as your proxy and your shield. Because they sit in Europe and understand enterprise architecture, they possess the technical authority to push back on risky requirements. They refine the 'What' into a safe 'How', and then govern our Vietnamese pods to execute it flawlessly, ensuring you get proactive engineering, not blind obedience.
+
+### (Scenario: Founder negotiating a Statement of Work) What contract red flags reveal that an agency is an Order-Taker before you even see their code?
+Three things to check before signing. First, an aggressive Change Request fee schedule attached to a cheap fixed-price quote, which financially rewards the agency for interpreting your tickets narrowly. Second, a Statement of Work that prescribes exact technical implementation instead of business outcomes, which signals the agency never had the mandate to push back on your architecture. Third, vague or absent source code escrow language, which can mean parts of your 'custom' build are actually shared boilerplate the agency reuses across clients.
 
 <script type="application/ld+json">
 {
@@ -133,6 +148,14 @@ Our Dutch Architects act as your proxy and your shield. Because they sit in Euro
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects intercept your requirements before they reach the offshore pod. They possess the enterprise experience to push back on risky ideas, translating your business goals into strictly governed, scalable technical blueprints."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What contract red flags reveal that an agency is an Order-Taker before you even see their code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Watch for a punitive Change Request fee schedule attached to a cheap fixed quote, a Statement of Work that dictates exact technology instead of business outcomes, and vague source code escrow terms that could mean your 'custom' build reuses shared boilerplate across other clients."
       }
     }
   ]

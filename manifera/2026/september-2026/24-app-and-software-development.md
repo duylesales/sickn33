@@ -55,6 +55,19 @@ To solve this without duplicating business logic, elite architects use the **Bac
 
 By using the BFF pattern, the mobile app is blazing fast, but the core business logic is never duplicated. 
 
+## Preventing Breaking Changes: Contract Testing Between the Core API and the BFFs
+
+Unifying the backend into a single Core API and a set of thin BFFs solves the duplication problem, but it introduces a new failure mode that many architects don't anticipate: a single change to a Core Microservice can now silently break every BFF that depends on it.
+
+Picture the scenario. A backend engineer working on the Billing Service decides to rename a field from `total_amount` to `totalAmountCents` because they realize the API was accidentally returning euros instead of cents. The change passes its own unit tests. The Core API team merges the Pull Request and deploys on a Friday afternoon. Nobody on the Billing team owns the Mobile BFF, so nobody notices that the Mobile app's checkout screen now crashes on `undefined`, because the field it was reading no longer exists. The crash reports don't surface until Monday morning, by which point thousands of App Store reviews have already been left with one star.
+
+This is why elite architecture teams never treat the Core API as "internal, so it's safe to change freely." Instead, they mandate two disciplines:
+
+1. **Semantic Versioning with Deprecation Windows:** Any change to a Core Microservice's response shape is treated as a breaking change unless proven otherwise. Breaking changes ship as a new version (`/v2/billing`) alongside the old one, with a published deprecation window (commonly 90 days) during which both the Web BFF and Mobile BFF can migrate on their own schedule, rather than being forced to update in lockstep with the backend team's release calendar.
+2. **Consumer-Driven Contract Testing:** Each BFF team writes a machine-readable "contract" (using a framework like Pact) that states exactly which fields, types, and structures it depends on from the Core API. This contract file is checked into the Core API's own CI/CD pipeline as an automated test. If the Billing Service engineer's rename would break the Mobile BFF's contract, the Pull Request fails the build automatically, before it ever reaches staging, let alone production. The backend engineer gets an immediate, specific error: "Mobile BFF v3.2 expects field `total_amount` of type integer; this change removes it."
+
+Contract testing effectively gives every BFF team a vote in the Core API's CI/CD pipeline without requiring cross-team meetings for every single change. It converts an organizational coordination problem—"please remember to tell the mobile team before you rename that field"—into an automated, mathematically enforced gate. For a Lead Architect governing multiple frontend teams consuming one backend, this is the difference between a unified architecture that scales safely to a dozen client applications and one that becomes too fragile to touch after the third.
+
 ## The Manifera Cross-Platform Governance
 
 Standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies are heavily siloed. The mobile department does not talk to the web department. If you hire them, they will build you two separate backends to maximize their billable hours.
@@ -85,6 +98,9 @@ Initially, designing a proper Core API and a Mobile BFF requires slightly more a
 
 ### (Scenario: Procurement Officer evaluating Manifera) How does Manifera ensure web and mobile teams do not build siloed architectures?
 Through centralized Dutch architectural governance. We do not allow our web and mobile engineering pods to operate in isolation. A single Dutch Tech Lead oversees the entire product ecosystem, ensuring that all frontend teams (React and React Native) consume data from a unified Core API, preventing any duplication of business logic.
+
+### (Scenario: Lead Architect preventing production incidents) How do you stop a Core API change from silently breaking the Mobile or Web BFF?
+Through Consumer-Driven Contract Testing, using a framework like Pact. Each BFF team publishes a machine-readable contract stating exactly which fields and types it depends on from the Core API. This contract runs as an automated test inside the Core API's own CI/CD pipeline, so a Pull Request that would break a BFF's contract fails the build automatically, before it ever reaches production, instead of being discovered through a mobile app crash.
 
 <script type="application/ld+json">
 {
@@ -129,6 +145,14 @@ Through centralized Dutch architectural governance. We do not allow our web and 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A single Dutch Architect governs both the web and mobile pods. They enforce a Unified Architecture, ensuring all teams consume from a single Core API and utilizing BFF patterns where necessary to prevent any duplication of effort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you stop a Core API change from silently breaking the Mobile or Web BFF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through Consumer-Driven Contract Testing (using a framework like Pact). Each BFF publishes a contract of the fields and types it depends on from the Core API, and this contract runs as an automated test in the Core API's CI/CD pipeline, failing any Pull Request that would break a dependent BFF before it reaches production."
       }
     }
   ]

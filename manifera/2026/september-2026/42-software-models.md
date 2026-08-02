@@ -64,6 +64,23 @@ A Majestic Monolith is a single application, deployed as a single unit, with a s
 
 You should only break a module out of the Monolith into a Microservice when a specific module requires independent scaling (e.g., a video processing engine that consumes massive CPU power) or when an engineering team grows larger than 50 people.
 
+## Phase 2.5: The Strangler Fig Pattern — Extracting a Microservice Without a Big-Bang Rewrite
+
+Even after accepting the Majestic Monolith as the correct default, a Lead Architect eventually faces the moment described above: one module genuinely needs independent scaling, or one team genuinely needs to deploy without waiting on the rest of the codebase. The instinct at that point is often the same catastrophic move as the CTO in our opening story — freeze all feature work, rip the module out, and rewrite it as a standalone service. This "big-bang rewrite" carries enormous risk: you cannot ship customer value for months, and you don't discover what you got wrong until the new service goes live and breaks in production.
+
+The pattern that avoids this is named after a real botanical phenomenon: the **Strangler Fig**. In the rainforest, a strangler fig seed germinates in the branches of a host tree, sends roots down to the ground, and slowly grows around the host until the host can eventually be removed — with the fig standing on its own, having never required the host to be felled all at once. Martin Fowler popularized this as an architectural pattern, and it is the only responsible way to extract a Microservice from a Monolith without halting the business.
+
+**How it works in practice, using our Billing module example:**
+
+1. **Introduce a facade.** Place a thin routing layer (an API gateway or reverse proxy) in front of the Monolith. Initially, it routes 100% of Billing requests to the existing Monolith code, exactly as before. Nothing changes for users.
+2. **Build the new service alongside, not instead of.** The new standalone Billing Service is built and deployed independently, while the old Monolith code keeps running in production, untouched, serving real traffic.
+3. **Cut over incrementally, by endpoint or by customer segment.** The facade is reconfigured to route one specific endpoint — say, "generate invoice" — to the new service, while every other Billing endpoint still hits the Monolith. If it works cleanly for two weeks, the next endpoint is migrated. If something breaks, the facade is flipped back to the Monolith instantly, with zero customer-facing downtime.
+4. **Delete the old code only after 100% of traffic has moved.** The Monolith's Billing module is only deleted once every single endpoint has been proven stable on the new service for a meaningful production burn-in period.
+
+The critical property of this pattern is that at every single step, the system is in a fully working, shippable state. There is no nine-month period, like the Series A startup in our opening story endured, where the business stops shipping features while engineering "finishes the migration." Feature work on the rest of the Monolith continues in parallel, completely undisturbed, because the facade isolates the in-progress extraction from everything else.
+
+This is the exact discipline Manifera's Dutch Architects apply when a client's Modular Monolith genuinely outgrows a single module. We don't pitch a rewrite; we design the facade, define the cutover checkpoints, and let the Vietnamese engineering pod migrate traffic incrementally, endpoint by endpoint, with a rollback path available at every single step.
+
 ## Phase 3: Pragmatic Architecture with Manifera
 
 When startups hire standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies, the agency will often blindly follow the client's request to "build microservices," because it allows the agency to bill for thousands of hours of unnecessary Kubernetes configuration.
@@ -94,6 +111,9 @@ You should transition only when you face an organizational bottleneck, not a tec
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera prevent offshore developers from building unmaintainable architecture?
 Our Dutch Architects act as pragmatic gatekeepers. They design your system as a clean, modular Majestic Monolith, specifically to optimize your startup's velocity and minimize your AWS infrastructure costs. Our Vietnamese pods execute the code under strict architectural boundaries, ensuring you get maximum speed today without sacrificing scalability tomorrow.
+
+### (Scenario: Lead Architect finally needing to extract a service) How do I safely pull a Microservice out of my Monolith without a risky big-bang rewrite?
+Use the Strangler Fig Pattern. Place a thin routing facade in front of the Monolith, build the new standalone service alongside the existing code, and migrate traffic incrementally, endpoint by endpoint or customer segment by segment, through the facade. If a cutover breaks, the facade flips back to the Monolith instantly with zero downtime. Only delete the old module's code once 100% of traffic has run stably on the new service. This avoids the multi-month feature freeze that a full rewrite requires.
 
 <script type="application/ld+json">
 {
@@ -138,6 +158,14 @@ Our Dutch Architects act as pragmatic gatekeepers. They design your system as a 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects enforce extreme pragmatism. We resist premature microservices and design modular Majestic Monoliths. We govern the Vietnamese offshore pods to ensure they maintain strict code boundaries, giving you maximum velocity and minimal DevOps overhead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I safely pull a Microservice out of my Monolith without a risky big-bang rewrite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Strangler Fig Pattern: place a routing facade in front of the Monolith, build the new service alongside the existing code, and migrate traffic incrementally with an instant rollback path at every step. Delete the old module only after the new service has proven stable on 100% of traffic, avoiding the multi-month feature freeze of a full rewrite."
       }
     }
   ]

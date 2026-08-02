@@ -68,6 +68,30 @@ A low-tier agency would have attempted to dump raw SQL tables into an LLM contex
 | **OpEx Cost (Tokens)** | Uncontrollable / Massive | Highly optimized (Semantic caching) |
 | **System Resiliency** | Fails on API rate limits | Graceful degradation / Fallback models |
 
+## The Silent Killer: Model Drift in Production
+
+Most enterprises treat an AI feature as "done" the moment it passes user acceptance testing. This is the single most expensive mistake in AI-driven software development, because unlike deterministic code, an LLM-powered feature can degrade in production without a single line of code changing. The underlying foundation model gets silently updated by the provider, your RAG corpus grows and shifts the retrieval distribution, or user query patterns drift away from what your prompts were tuned against. Six months post-launch, a feature that scored 94% accuracy at ship time is quietly answering a growing share of queries incorrectly, and nobody notices until a customer escalates.
+
+### Why "It Worked in the Demo" Is Not Engineering
+
+A generic agency ships an AI feature the way it ships a CRUD form: build it, test it manually a few times, hand it off. But an LLM pipeline has no fixed behavior contract — the same prompt against the same model can produce materially different outputs across provider-side updates. Without continuous evaluation, you have no instrumentation to detect this until revenue or compliance is already impacted.
+
+### The Golden Dataset and Automated Eval Harness
+
+Manifera's Autonomous Pods build a continuous evaluation harness as a first-class deliverable, not an afterthought:
+
+1. **Golden dataset curation.** Before launch, we assemble 150-300 real (anonymized) production-representative query/answer pairs, hand-labeled for correctness by domain experts, covering edge cases as well as the happy path.
+2. **LLM-as-judge scoring.** On every deploy and on a rolling nightly schedule, we replay the golden dataset against the live pipeline and score outputs using a separate, more capable model configured as an impartial judge, flagging semantic drift even when surface wording changes.
+3. **Regression gates in CI/CD.** A drop below a defined accuracy threshold (typically 90-95% depending on the use case) blocks deployment automatically, the same way a failed unit test would block a standard software release.
+4. **Canary rollout with automatic rollback.** New prompt versions, retrieval configurations, or underlying model swaps are routed to a small percentage of live traffic first. Divergence in output quality or latency triggers automatic rollback before the change reaches the full user base.
+5. **Drift dashboards for non-technical stakeholders.** Accuracy trends, token cost trends, and hallucination-rate trends are surfaced on a rolling dashboard so a CTO or Head of Product can see degradation weeks before it becomes a support ticket, rather than discovering it retroactively.
+
+### A Concrete Scenario
+
+Consider an enterprise customer-support AI answering policy questions from a knowledge base. Three months post-launch, the underlying provider silently updates the foundation model's weights. Without an eval harness, the first sign of trouble is a spike in negative CSAT scores and a compliance officer flagging an incorrect policy statement given to a customer. With Manifera's continuous evaluation pipeline in place, the nightly golden-dataset run catches the accuracy dip the same night the model changes, blocks the next deploy, and alerts the engineering pod — turning a potential compliance incident into a routine Slack notification.
+
+This is the difference between "we integrated an AI API" and actual **ai driven software development**: the system is engineered to detect and correct its own decay, not merely to function correctly on day one.
+
 ## Take Command of Your Offshore Strategy
 
 Stop paying agencies to build dangerous AI toys. If your enterprise requires mathematically sound, compliant, and highly scalable AI architecture, you must procure actual engineering mastery.
@@ -90,6 +114,9 @@ Uncontrolled token usage destroys AI ROI. Our engineering pods implement advance
 
 ### (Scenario: CEO wanting AI functionality) Do we need to rewrite our entire monolith to use AI?
 No. Utilizing the Strangler Fig pattern, our Autonomous Pods can build decoupled, Cloud-Native AI microservices that safely interact with your existing monolithic database via secure API gateways, avoiding the massive risk of a full system rewrite.
+
+### (Scenario: Head of Product worried about post-launch quality) How do you detect AI model drift after an AI feature has already launched?
+We build a continuous evaluation harness as a standard deliverable: a curated golden dataset is replayed against the live pipeline nightly, scored by an LLM-as-judge, and gated in CI/CD so any accuracy regression blocks deployment automatically. Canary rollouts with automatic rollback catch degradation before it reaches your full user base.
 
 <script type="application/ld+json">
 {
@@ -134,6 +161,14 @@ No. Utilizing the Strangler Fig pattern, our Autonomous Pods can build decoupled
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Utilizing the Strangler Fig pattern, our Autonomous Pods can build decoupled, Cloud-Native AI microservices that safely interact with your existing monolithic database via secure API gateways, avoiding the massive risk of a full system rewrite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Head of Product worried about post-launch quality) How do you detect AI model drift after an AI feature has already launched?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We build a continuous evaluation harness as a standard deliverable: a curated golden dataset is replayed against the live pipeline nightly, scored by an LLM-as-judge, and gated in CI/CD so any accuracy regression blocks deployment automatically. Canary rollouts with automatic rollback catch degradation before it reaches your full user base."
       }
     }
   ]

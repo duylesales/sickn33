@@ -74,6 +74,25 @@ Instead of testing for exact string matches, you test for statistical thresholds
 
 If the Faithfulness score drops below 0.95, the CI/CD pipeline blocks the deployment. 
 
+## Failure 4: Cost Explosion at Scale (The Token Economics Nobody Modeled)
+
+The PoC cost €40 a month in API calls. Nobody thought twice about it. Then the system went live to 3,000 employees, and the monthly OpenAI bill hit €18,000 — with no corresponding increase in value delivered. The CFO demands an explanation. The Data Scientist who built the PoC has no idea why costs scaled 450x faster than usage.
+
+This happens because PoCs are built with zero cost discipline, and the failure mode is invisible until the invoice arrives. Three specific patterns drive the explosion:
+
+- **Every query hits the most expensive model.** A PoC routes 100% of traffic to a flagship reasoning model because it was the model open in the notebook. In production, most queries are simple lookups ("What is the office WiFi password?") that a smaller, dramatically cheaper model can answer just as accurately. Without a routing layer, you pay flagship-model prices for trivial questions.
+- **No semantic caching.** If ten employees ask a near-identical question about the parental leave policy within the same week, a naive system calls the LLM ten separate times, paying full token cost each time. A semantic cache checks incoming queries against embeddings of recently answered questions; if the similarity score exceeds a threshold (e.g., 0.92), it serves the cached answer instantly, at zero additional API cost.
+- **Unbounded context windows.** As conversations grow, naive implementations re-send the entire chat history with every follow-up question. A ten-turn conversation can balloon to tens of thousands of tokens per request, even though only the last exchange is actually relevant.
+
+**The Production Architecture Fix:**
+A cost-aware AI architecture routes intelligently instead of brute-forcing every query through the most expensive path:
+1. **Model routing by query complexity.** A lightweight classifier (or the cheapest available model) first triages the query. Simple factual lookups route to a small, fast model. Complex multi-step reasoning routes to the flagship model. This alone typically cuts token spend by 60-70% with no perceptible quality loss for the majority of queries.
+2. **Semantic response caching**, as described above, eliminates redundant API calls for repeated or near-duplicate questions — common in HR and IT-support style deployments where the same handful of questions account for a large share of volume.
+3. **Context window pruning**, where only the most relevant prior turns (determined via a lightweight relevance score, not the full transcript) are included in each follow-up request.
+4. **Real-time cost dashboards tied to usage attribution**, so finance can see cost-per-department and cost-per-query-type, rather than discovering the total only when the monthly invoice arrives.
+
+Without this layer, an AI system that looked free in the PoC becomes a recurring six-figure line item that nobody budgeted for — and one of the fastest ways for IT leadership to lose credibility with the CFO.
+
 ## The Manifera Approach to AI Engineering
 
 At Manifera, we recognize that [custom software development](https://www.manifera.com/services/custom-software-development/) for AI is vastly different from building a web app. 
@@ -102,6 +121,9 @@ You must abandon deterministic testing (checking for exact text matches) and ado
 
 ### (Scenario: Founder budgeting for an AI feature) Why is it so expensive to deploy a 'simple' OpenAI wrapper?
 Because an enterprise-grade AI system is never a simple wrapper. To make it safe for enterprise use, you must build data ingestion pipelines, metadata tagging systems for security, complex chunking algorithms to preserve document context, and entirely new QA testing frameworks. The API calls to OpenAI are cheap; the engineering required to govern the data safely is expensive.
+
+### (Scenario: CFO alarmed by a spiking AI API bill) Why did our AI system's API costs increase 450x after launch, far more than usage growth?
+Because PoCs are built with zero cost discipline: every query, however trivial, hits the most expensive flagship model, no caching exists for repeated questions, and conversation context grows unbounded with every follow-up message. In production, you need model routing (cheap models for simple queries, flagship models only for complex reasoning), semantic caching for near-duplicate questions, and context window pruning. Together these typically cut token spend by 60-70% without a perceptible drop in answer quality.
 
 <script type="application/ld+json">
 {
@@ -146,6 +168,14 @@ Because an enterprise-grade AI system is never a simple wrapper. To make it safe
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Enterprise AI requires data ingestion pipelines, RBAC metadata tagging, complex chunking algorithms, and non-deterministic QA frameworks. The API calls are cheap; the engineering required to govern the data securely is what costs money."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did our AI system's API costs increase 450x after launch, far more than usage growth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PoCs route every query, however trivial, to the most expensive flagship model, with no caching for repeated questions and unbounded conversation context. Production systems need model routing by query complexity, semantic caching for near-duplicate questions, and context window pruning, which together typically cut token spend by 60-70% without a perceptible quality loss."
       }
     }
   ]

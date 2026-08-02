@@ -54,6 +54,22 @@ In many drag-and-drop platforms, versioning is opaque. If a user accidentally de
 
 > *"If you cannot run `git revert`, and you cannot run automated security scans, you are not doing enterprise software engineering. You are playing a very dangerous game with corporate data."* — Enterprise DevOps Axiom
 
+## The Compliance Audit Trail Failure (SOC 2 / ISO 27001)
+
+Six months after the marketing dashboard incident, the same fintech company enters its annual SOC 2 Type II audit. The external auditor asks a simple question: *"Show me the immutable record of every change made to any system that touches customer financial data over the last 12 months, including who approved each change and when."*
+
+For the custom-engineered core banking platform, this is trivial. The DevOps engineer runs a single query against the Git history. Every commit carries a cryptographic SHA hash, a timestamped author, a linked Pull Request, and the names of the two senior engineers who approved it. The chain of custody is mathematically unbreakable—if a single character in a historical commit were altered, the hash would no longer match, and the tampering would be instantly detectable.
+
+For the **app creation software** platform running the marketing dashboard, the answer is far messier. Most enterprise Low-Code tools do provide a "version history" panel, but it is fundamentally different from Git in three ways that auditors care about deeply:
+
+1. **No cryptographic chain of custody.** The history log is just rows in the vendor's own database. An administrator with elevated permissions inside the platform can often edit or delete historical entries without leaving a forensic trace, because there is no hash-chain linking one version to the next.
+2. **Retention windows, not permanent history.** Many Low-Code vendors only retain granular version history for 30, 60, or 90 days before it is purged to save storage costs. A 12-month audit window simply cannot be satisfied if the underlying platform silently deletes evidence at day 90.
+3. **No enforced dual-approval.** SOC 2's Change Management criteria (CC8.1) generally require evidence that changes affecting financial or customer data were reviewed by someone other than the author. Because the "Publish" button in most Low-Code tools requires only one click from one person, there is no artifact proving a second reviewer ever looked at the change.
+
+The result: the auditor issues a formal exception on the SOC 2 report. The fintech company's own certification—the document their enterprise customers require before signing a contract—now carries a footnote admitting a gap in change management controls. That footnote can cost the sales team a seven-figure enterprise deal, all because a marketing analyst wanted a dashboard without waiting for engineering.
+
+The fix is not to ban Low-Code outright, but to draw a hard compliance boundary: any workflow, dashboard, or automation built on an **app creation software** platform must be classified as "in-scope" or "out-of-scope" for SOC 2/ISO 27001 *before* it is built. Anything in-scope is re-implemented in the governed CI/CD pipeline, where every change produces the cryptographic, dual-approved audit trail auditors actually accept.
+
 ## When to Use Custom Engineering
 
 Low-code **app creation software** is excellent for trivial, non-sensitive tasks (like a team lunch voting app). But if the application touches production databases or PII, it must be subjected to standard DevOps governance. 
@@ -84,6 +100,9 @@ SAST tools automatically read raw source code in the CI/CD pipeline to mathemati
 
 ### (Scenario: IT Procurement evaluating Manifera) How does Manifera deliver software quickly without bypassing DevOps security?
 Instead of using unsafe drag-and-drop tools, we use standard Custom Engineering (React/Node) but we optimize the process. Our Dutch Architects build automated CI/CD 'Golden Paths' so our Vietnamese pods don't waste time on infrastructure. The pods write real code quickly, but that code is still forced to pass strict, automated security scans and manual Pull Request reviews before deployment.
+
+### (Scenario: Compliance Officer preparing for a SOC 2 audit) Can Low-Code / App Creation Software platforms pass a SOC 2 Type II audit?
+Only with significant caveats. SOC 2's Change Management criteria require an immutable, dual-approved record of every change to systems touching sensitive data. Most Low-Code platforms lack a cryptographic hash-chain like Git, often purge granular history after 30-90 days, and allow single-click publishing with no enforced second reviewer. Auditors frequently issue formal exceptions for in-scope systems built on these platforms, so enterprises must classify any Low-Code workflow as in-scope or out-of-scope for compliance before building it.
 
 <script type="application/ld+json">
 {
@@ -128,6 +147,14 @@ Instead of using unsafe drag-and-drop tools, we use standard Custom Engineering 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We use standard Custom Engineering (React, Node) but accelerate it through highly optimized CI/CD 'Golden Paths'. Our Vietnamese pods write code fast, but our Dutch Architects enforce strict PR reviews and automated security scans on every commit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Low-Code / App Creation Software platforms pass a SOC 2 Type II audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only with significant caveats. SOC 2 requires an immutable, dual-approved change record. Most Low-Code platforms lack Git's cryptographic hash-chain, purge granular history after 30-90 days, and permit single-click publishing without a second reviewer, often triggering formal audit exceptions for in-scope systems."
       }
     }
   ]

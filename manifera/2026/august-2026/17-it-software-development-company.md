@@ -61,6 +61,20 @@ During the sales process, the IT software development company introduces you to 
 **Why it’s a trap:** On Day 1 of the project, that Senior Architect disappears. They were just a pre-sales engineer. Your actual project is handed off to a team of junior developers who just graduated from a bootcamp.
 **The Fix:** Your contract must include a "Key Personnel" clause. It should stipulate that specific named individuals (e.g., the Lead Architect) will be dedicated to your project for at least the first 3 months, and any replacement must possess equivalent or superior qualifications and be approved by you.
 
+## Red Flag 5: The Undisclosed Subcontractor Shuffle
+
+You sign a Master Services Agreement with an IT software development company whose name, website, and sales team all present a single, cohesive organization. What the contract does not mention is that the agency has no intention of writing the code themselves.
+
+**Why it's a trap:** Many mid-market "IT software development companies" operate as brokers. They win the deal, then quietly farm the actual build out to a freelance marketplace, a loosely managed subcontractor in a third country, or a rotating cast of gig-economy developers who were never vetted, never signed your NDA, and have no direct contractual obligation to your company at all. If your source code, API keys, or customer data leak, you have no enforceable recourse against the individual who actually touched them, because your contract is only with the broker, and the broker's agreement with its subcontractor may not even mention your project by name. Worse, if the broker goes bankrupt or simply stops responding, the actual engineers who hold institutional knowledge of your system are not a party you can contact directly.
+
+**The Fix:** Your MSA must contain either an outright prohibition on subcontracting, or, where subcontracting is a normal part of doing business (as it often is in legitimate offshore delivery), a mandatory disclosure and consent clause. At minimum, demand:
+- **Named-entity disclosure.** The contract lists every legal entity and delivery location that will touch your codebase, updated whenever it changes.
+- **Flow-down obligations.** Every subcontractor is contractually bound by the exact same IP assignment, confidentiality, and security terms as the prime agreement — not a weaker, locally-negotiated version.
+- **Right to audit.** You retain the right to request a current roster of individuals with repository or infrastructure access, and to reject anyone who has not passed background screening.
+- **No open marketplace sourcing.** Explicitly prohibit sourcing engineers for your project through open freelance platforms (Upwork, Fiverr, or similar), where identity verification and confidentiality enforcement are effectively unenforceable.
+
+A legitimate offshore or hybrid vendor, including Manifera, will readily name its delivery entities and staff in the contract, because there is nothing to hide. A vendor who resists this clause is telling you, before the first sprint even starts, that the person actually writing your code is not someone they are willing to be held accountable for.
+
 ## How Manifera Protects Clients
 
 We believe that vendor lock-in is unethical. At Manifera, our Dutch headquarters ensures that all contracts are governed by strict European Union IP laws. 
@@ -85,6 +99,9 @@ It is a deceptive sales tactic where an agency presents highly experienced Senio
 
 ### Is a Fixed-Price contract safer than Time & Materials?
 For highly complex software, fixed-price is actually riskier. It forces the agency to cut corners to protect their profit margins, and they will aggressively charge you expensive "Change Request" fees for any minor deviation from the original plan. Agile Time & Materials aligns the team with building the best possible product.
+
+### Can my IT vendor legally subcontract my project to another company without telling me?
+It depends entirely on your contract. Unless the Master Services Agreement explicitly prohibits or restricts subcontracting, many vendors are legally free to farm the work out to unvetted third parties or freelance marketplaces. Always require named-entity disclosure and flow-down IP and confidentiality obligations so any subcontractor is bound by the same terms you negotiated with the prime vendor.
 
 <script type="application/ld+json">
 {
@@ -129,6 +146,14 @@ For highly complex software, fixed-price is actually riskier. It forces the agen
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Fixed-price contracts force agencies to cut corners and charge exorbitant 'Change Request' fees for minor tweaks. Agile Time & Materials provides flexibility to build better software without hostage negotiations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my IT vendor legally subcontract my project to another company without telling me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unless your Master Services Agreement explicitly prohibits or restricts it, many vendors are legally free to subcontract your project to unvetted third parties or freelance marketplaces. Require named-entity disclosure and flow-down IP and confidentiality obligations so any subcontractor is bound by the same terms as the prime vendor."
       }
     }
   ]

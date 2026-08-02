@@ -67,6 +67,25 @@ Ask how they deploy servers.
 - **Amateur Agencies:** "We log into the AWS console and click 'Create Server'."
 - **Elite Agencies:** "We use Terraform. Our infrastructure is completely defined as code, version-controlled, and reproducible."
 
+## The Fourth Audit: How Agencies Handle Production Incidents (Observability)
+
+Git history, PR reviews, and IaC tell you how an agency writes code before it ships. They tell you nothing about what happens after it ships, when a real user hits a real bug in production at 2 a.m. This is where the fourth audit lens separates agencies that build software from agencies that merely deliver it.
+
+### Ask: "How do you find out that something is broken?"
+- **Amateur Agencies:** They find out from an angry email from your Head of Operations, or worse, from a customer complaint on social media. Their systems have no structured logging, no error tracking, and no alerting. The first they hear of a database timeout is when a client reports the app is "frozen."
+- **Elite Agencies:** They find out from an automated alert, often before the client notices anything at all. Structured logging (JSON logs shipped to a centralized platform), error tracking (Sentry or equivalent), and APM (Application Performance Monitoring, e.g., Datadog or New Relic) are wired into the codebase from the first sprint, not bolted on after the first outage.
+
+### Ask: "Walk me through your last production incident."
+This is the single most revealing question in a procurement interview, because it cannot be faked with a portfolio slide.
+- An amateur agency will describe a chaotic scramble: someone SSHs into the production server, tails a raw log file, and manually restarts a process, hoping the problem doesn't recur.
+- An elite agency will describe a process: an alert fired against a defined Service Level Objective (SLO), an on-call engineer was paged, the root cause was traced through distributed tracing, a hotfix was deployed through the same CI/CD pipeline as every other change (never a manual server edit), and a blameless postmortem was written and shared with the client.
+
+### Why This Predicts Long-Term Technical Debt
+An agency with no observability discipline is not just risking downtime, it is accumulating invisible technical debt. Bugs that are not tracked and categorized get fixed the same way twice, or not fixed at all, because nobody has the data to see the pattern. Ask to see a sample of their error-tracking dashboard (sanitized), or their incident postmortem template. If neither exists, the agency has never had to answer to a client for an outage, which is not a sign of reliability, it is a sign of insufficient scale or insufficient honesty.
+
+### A Concrete Benchmark
+For a mission-critical platform, the minimum acceptable standard is: errors surfaced within minutes (not hours), a documented on-call rotation, and a Mean Time To Recovery (MTTR) the agency can quote from real incident data, not from a sales deck. If an agency cannot give you a number for their own MTTR, they are not measuring it, and a team that does not measure its own reliability will not protect yours.
+
 ## The Manifera Governance Standard
 
 Many offshore agencies invest their entire budget into a flashy **developer website** to hide the fact that they lack senior architectural leadership. They sell you beautiful UI and deliver fragile backend spaghetti.
@@ -95,6 +114,9 @@ Ask them how they provision a staging environment. If they say they manually con
 
 ### (Scenario: Founder comparing Manifera to standard agencies) How does Manifera prove its engineering competence before a contract is signed?
 We do not rely on flashy portfolios. Our Dutch Architects will directly demonstrate our engineering standards. We will explain our strict CI/CD pipeline gatekeepers, our TDD (Test-Driven Development) requirements, and how our Dutch Tech Leads ruthlessly govern the code produced by our Vietnamese pods. We prove our competence at the architectural level.
+
+### (Scenario: Procurement Director evaluating production support) How do I know if an agency will actually notice and fix a production outage quickly?
+Ask them how they find out something is broken, and ask them to walk you through their last real production incident. Amateur agencies find out from an angry client email and then SSH into a server to manually restart it. Elite agencies have structured logging, error tracking, and APM tooling that pages an on-call engineer automatically, and they can quote you a real Mean Time To Recovery (MTTR) from actual incident data, not a sales deck.
 
 <script type="application/ld+json">
 {
@@ -139,6 +161,14 @@ We do not rely on flashy portfolios. Our Dutch Architects will directly demonstr
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects demonstrate our architectural governance. We walk you through our CI/CD pipelines, our automated security scanning (SAST), and how our Dutch Tech Leads rigorously review every line of code produced by our Vietnamese pods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if an agency will actually notice and fix a production outage quickly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask how they find out something is broken and to walk you through their last incident. Elite agencies have structured logging, error tracking, and APM tooling that pages an on-call engineer automatically, and can quote a real Mean Time To Recovery from actual data."
       }
     }
   ]

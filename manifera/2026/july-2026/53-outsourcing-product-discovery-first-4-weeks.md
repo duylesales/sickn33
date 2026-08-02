@@ -63,6 +63,23 @@ Founders are inherently optimistic about their ideas. An external Product Owner 
 
 Furthermore, having the same agency conduct the Discovery and the Development ensures zero context loss. The developers who build the product are guided by the Architect and Product Owner who literally wrote the blueprint.
 
+## A Week-by-Week Breakdown of the 4-Week Discovery Sprint
+
+Founders often ask what actually happens, day-to-day, during those 2-4 weeks before a single line of code is written. Here is the standard cadence for a 4-week Discovery sprint on a mid-sized SaaS MVP, so you know exactly what to expect and can hold your agency accountable to a real schedule rather than a vague "we'll figure it out as we go."
+
+| Week | Focus | Key Activities | Output |
+|------|-------|-----------------|--------|
+| **Week 1** | Stakeholder Alignment & Research | 5-8 structured stakeholder interviews, competitor teardown (3-5 direct competitors), review of any existing analytics or support-ticket data | A shared "Problem Statement" document and a prioritized list of assumptions to validate |
+| **Week 2** | User Journeys & Information Architecture | Persona workshops, journey mapping sessions, sitemap and data-model draft | 2-3 validated user personas, end-to-end journey maps, first-draft entity relationship diagram |
+| **Week 3** | Prototyping & Validation | High-fidelity Figma prototype build, 5-6 moderated usability test sessions with real target users | Clickable prototype with a documented "usability issue log" and fixes applied in real time |
+| **Week 4** | Architecture & Backlog Lock | Technical Architect finalizes the tech stack and non-functional requirements, Product Owner runs backlog prioritization workshop (MoSCoW method) | Signed-off Architecture Blueprint, phased MVP backlog, and a fixed-scope statement of work for Sprint 1 |
+
+**Why the sequencing matters:** each week's output becomes the next week's input. Skipping straight from stakeholder interviews to prototyping (bypassing formal journey mapping) is the single most common shortcut agencies take to compress the timeline, and it is also the most common cause of a prototype that looks polished but is architecturally naive — for example, a beautiful multi-step checkout flow that nobody validated against the actual payment provider's API constraints until week 6 of development, forcing a redesign.
+
+A useful accountability check for founders: ask your agency to show you the Week 1 "Problem Statement" and Week 4 "Architecture Blueprint" side by side before signing the development contract. If the blueprint doesn't visibly trace back to specific findings from the interviews and usability tests, the Discovery phase was theater, not research.
+
+For enterprise-scale legacy modernization work rather than a greenfield MVP, this same 4-week cadence typically expands to 6-8 weeks, with Week 1-2 dedicated entirely to reverse-engineering undocumented legacy data structures and integration points before any new persona or journey work can begin credibly. Founders evaluating a proposed timeline should treat any Discovery quote that compresses this into a single week, regardless of project size, as a signal the agency intends to skip the research and start writing code on assumptions — precisely the failure mode Discovery exists to prevent.
+
 ## The Discovery Process at Manifera
 
 We do not write code based on assumptions. At Manifera, our Amsterdam-based Product Owners and Technical Architects run high-intensity Discovery workshops with your stakeholders. We create the interactive prototypes, validate the architecture, and define the agile backlog. 
@@ -94,6 +111,10 @@ Yes, but it will be faster. Freelance UI designers often create beautiful screen
 ### Who from our company needs to be involved in Discovery? (Scenario: COO planning team availability)
 
 You need a dedicated internal Product Owner who has the authority to make binding decisions. Additionally, we need access to Subject Matter Experts (SMEs)—the actual people who will use the software—for 2-3 hours a week to review prototypes and provide real-world feedback.
+
+### What does a typical week-by-week Discovery schedule actually look like? (Scenario: Founder wanting a concrete timeline before signing)
+
+A standard 4-week sprint runs: Week 1 is stakeholder interviews and competitor research, producing a shared Problem Statement. Week 2 builds user personas, journey maps, and a first-draft data model. Week 3 builds the high-fidelity Figma prototype and runs moderated usability testing with real target users. Week 4 locks the technical architecture and runs a MoSCoW backlog prioritization workshop, ending with a signed-off blueprint and a fixed-scope statement of work. Ask to see Week 1's Problem Statement next to Week 4's Architecture Blueprint — if the blueprint doesn't visibly trace back to specific interview and usability findings, the Discovery was theater, not research.
 
 <script type="application/ld+json">
 {
@@ -138,6 +159,14 @@ You need a dedicated internal Product Owner who has the authority to make bindin
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A dedicated internal Product Owner with decision-making authority, plus 2-3 hours a week from Subject Matter Experts (the actual future users) to test prototypes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a typical week-by-week Discovery schedule actually look like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Week 1: stakeholder interviews and competitor research producing a Problem Statement. Week 2: personas, journey maps, and a data model draft. Week 3: high-fidelity prototype and usability testing. Week 4: architecture lock and MoSCoW backlog prioritization, ending in a signed-off blueprint and fixed-scope statement of work."
       }
     }
   ]

@@ -55,6 +55,18 @@ Many founders believe "If I build it, they will come." This is false. In B2B Saa
 
 > *"An app is just a liability on a server until a user pays for it. If you spend all your money building the liability, you have no money left to acquire the asset."* — Startup Economics Axiom
 
+## Validate Before You Build: The Smoke Test Layer
+
+The single biggest lever a founder has to avoid the MVP Illusion is not spending less on the app — it is spending nothing on the app until real demand is proven. Before committing €45,000 to custom engineering, disciplined founders run a "Smoke Test" layer that costs a few hundred euros and takes days, not months, to answer the one question that actually matters: will a real stranger pay for this?
+
+### Three Validation Techniques That Cost Almost Nothing
+1. **The Landing Page / Fake Door Test:** Build a single, professional landing page describing the finished product, complete with a "Buy Now" or "Start Free Trial" button. When a visitor clicks it, instead of a working app, they hit a page that says "We're launching soon — join the waitlist" and collects their email and, ideally, a small deposit. If hundreds of visitors from targeted ads click but nobody enters a card number, you have just learned your idea has no urgency, for the cost of an ad budget rather than a development budget.
+2. **The Concierge MVP:** Instead of writing any code, you manually deliver the service by hand to your first 10-20 customers. A startup building "AI-powered invoice reconciliation" can, for its first month, simply have a human founder reconcile invoices in a spreadsheet and email the results, charging the exact same price the eventual software will charge. This validates that customers will pay for the outcome before a single line of the automation is written.
+3. **The Wizard of Oz Test:** The customer-facing app looks fully automated and polished, but behind the scenes, a human is manually performing the "AI" or "matching" logic for the first cohort of users. This proves the user experience and pricing model work before you invest in the genuinely hard engineering of automating the backend logic.
+
+### Why This Changes the Financing Conversation
+A founder who walks into an agency having already proven, via a smoke test, that 200 people pre-paid a deposit is in a fundamentally different negotiating position than one with only an idea on a slide. It also changes what gets built first: instead of guessing which features matter, the engineering budget goes directly toward automating the exact workflow that paying customers already demonstrated they want, cutting the risk of building the wrong MVP down dramatically. Manifera routinely advises founders to run this validation layer themselves, for free, before we write a single line of billable code.
+
 ## The Manifera MVP Strategy
 
 Standard offshore agencies love the MVP Illusion. They will happily take 100% of your seed capital, build exactly what you ask for, and then watch you go bankrupt.
@@ -82,6 +94,9 @@ Cut anything that does not directly prove your core business hypothesis. If your
 
 ### (Scenario: Investor evaluating a founder's plan) What is the difference between an agency 'building an app' and 'building a business'?
 An agency building an app just translates your Jira tickets into code and cashes your check, indifferent to your market success. An agency helping you build a business will push back on your feature requests, force you to conserve your capital, and architect the software so it can be cheaply iterated upon after launch. 
+
+### (Scenario: Founder unsure if the idea is worth building) How can I validate demand before paying for an MVP?
+Run a 'Smoke Test' before writing any code. Build a landing page with a real payment or waitlist button to see if strangers will act, or manually deliver the service by hand to your first customers (a 'Concierge MVP') to prove they will pay for the outcome. If people won't pre-pay or engage with a manual version, they won't pay for the automated app either, and you've saved tens of thousands of euros in engineering spend.
 
 ### (Scenario: Founder choosing between agencies) How does Manifera help startups survive the post-launch phase?
 Our Dutch Architects act as technical co-founders. We actively refuse to let you over-engineer version 1.0. We build a lean, highly scalable MVP using our offshore pods, ensuring you retain the capital needed for marketing and post-launch iteration. We optimize your AWS architecture to minimize your monthly cloud bills, keeping your 'burn rate' as low as possible.
@@ -121,6 +136,14 @@ Our Dutch Architects act as technical co-founders. We actively refuse to let you
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "An 'app builder' just takes your money and builds every feature you ask for. A true technical partner helps you build a business by forcing you to cut features, conserve your capital, and plan for the brutal reality of post-launch maintenance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I validate demand before paying for an MVP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run a Smoke Test before writing code: a landing page with a real payment or waitlist button, or a Concierge MVP where you manually deliver the service to prove customers will pay for the outcome. If people won't engage with a manual version, they won't pay for the automated app, saving significant engineering spend."
       }
     },
     {

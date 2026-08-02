@@ -69,6 +69,21 @@ For these clients, you must architect for **Physical Database Separation**.
 
 This makes a cross-tenant data leak mathematically impossible. However, it makes database migrations incredibly complex. When you add a new feature that requires a database schema change, you have to run that migration script across 500 separate databases instead of just one. 
 
+## The Noisy Neighbor Problem: When Data Isolation Isn't Enough
+
+RLS and Physical Database Separation solve the security half of multi-tenancy. They do not solve the performance half, and this is the failure mode that surprises even CTOs who got the security architecture right.
+
+Here is the scenario: Tenant A is a mid-size customer running a normal workload. Tenant B is your largest enterprise account, and their finance team just kicked off a massive quarterly export — a single query pulling two years of transaction history into a report. On a shared database, that one query can consume the majority of available connections and CPU cycles, causing every other tenant's simple dashboard queries to slow to a crawl or time out entirely. Tenant A never touched anything related to Tenant B's data, yet their experience of your SaaS just degraded because they happen to share the same physical infrastructure. This is the **Noisy Neighbor Problem**, and it is a resource-isolation failure, not a security failure — RLS does nothing to prevent it, because RLS only governs which rows a query can see, not how much of the database's capacity that query is allowed to consume.
+
+**How elite SaaS architectures prevent this:**
+
+1. **Per-tenant connection pool limits.** Instead of one shared connection pool serving all tenants, the application layer enforces a maximum concurrent connection count per tenant (via a tool like PgBouncer with per-tenant pool configuration). No single tenant, however large their query, can exhaust the connection pool that every other tenant depends on.
+2. **Query timeout and resource governors.** Every query is bound by a hard timeout (e.g., 5 seconds for interactive dashboard queries) and, on databases that support it, a statement-level resource cap. A runaway report-generation query gets killed and rerouted to an asynchronous job queue instead of blocking live traffic.
+3. **Read replica offloading for heavy analytical workloads.** Reporting and export features — precisely the kind of query that causes noisy-neighbor incidents — are routed to a dedicated read replica, physically separate from the primary database serving real-time application traffic. The quarterly export can run as long as it needs to without touching the database your other 200 tenants are actively using.
+4. **Tiered infrastructure for your largest accounts.** For enterprise tenants whose workload genuinely dwarfs your average customer, some SaaS architectures provision a dedicated compute tier or database instance — not for security isolation (RLS may already be sufficient there) but purely for performance isolation, so that account's usage patterns can never degrade service for anyone else.
+
+Skipping this layer is how a SaaS platform passes every security audit and still generates a wave of "the app feels slow" support tickets the moment your enterprise sales team lands a genuinely large logo.
+
 ## The Manifera SaaS Architecture Standard
 
 At Manifera, we specialize in B2B **SaaS app development**. We know that you cannot scale a SaaS if you cannot pass enterprise security audits.
@@ -97,6 +112,9 @@ Ask them this question during due diligence: *"How do you prevent a developer fr
 
 ### (Scenario: Product Manager planning an enterprise tier) Why is Physical Database Separation so difficult to maintain?
 Because database migrations (changing the structure of tables when deploying a new feature) become a massive DevOps challenge. Instead of running a migration script once on a unified database, you must build automation pipelines to perfectly run that script across 500 separate tenant databases simultaneously without failing. It requires highly advanced CI/CD engineering.
+
+### (Scenario: CTO troubleshooting slow performance despite solid security) Our multi-tenant security architecture is solid, so why do customers complain the app is slow whenever one big client runs a large report?
+This is the Noisy Neighbor Problem, a resource-isolation issue rather than a security issue. RLS controls which rows a query can see, not how much CPU, memory, or connection pool capacity that query consumes. A large tenant's heavy report or export can exhaust shared database resources and slow every other tenant down. The fix is per-tenant connection pool limits, query timeouts with resource governors, routing heavy analytical workloads to a dedicated read replica, and tiered infrastructure for your largest accounts.
 
 <script type="application/ld+json">
 {
@@ -141,6 +159,14 @@ Because database migrations (changing the structure of tables when deploying a n
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because it turns database migrations into a DevOps nightmare. Instead of updating one database schema when launching a new feature, you must automate the flawless execution of migration scripts across hundreds of separate tenant databases simultaneously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Our multi-tenant security architecture is solid, so why do customers complain the app is slow whenever one big client runs a large report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is the Noisy Neighbor Problem, a resource-isolation issue, not a security issue. RLS controls which rows a query can see, not how much capacity it consumes. A large tenant's heavy query can exhaust shared resources and slow everyone else down. Fix it with per-tenant connection pool limits, query timeouts, a dedicated read replica for analytical workloads, and tiered infrastructure for your largest accounts."
       }
     }
   ]

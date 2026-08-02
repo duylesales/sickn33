@@ -80,6 +80,19 @@ If you are building a B2B SaaS platform today, these stacks provide the optimal 
 - *Backend:* Go (Golang)
 - *Best For:* Specific microservices handling massive concurrency, network routing, or heavy background processing where Node.js struggles with CPU-bound tasks.
 
+## The Dependency Viability Audit: 6 Signals Before You Adopt a Library
+
+"Boring" is not just a property of your core language or database — it should be a filter applied to every significant dependency your team adds, from ORMs to authentication libraries to message queues. Before approving a new dependency for production use, run it through this six-point audit:
+
+1. **Commit velocity and maintainer count.** Check the last 12 months of commit history. A library maintained by a single contributor with no commits in the last six months is a ticking time bomb for a core dependency, regardless of how elegant its API looks today.
+2. **Corporate or foundation backing.** Is the project governed by a company or foundation (the Apache Software Foundation, the Linux Foundation, Meta, Vercel) with a documented succession plan, or does it depend entirely on one person's spare time and goodwill?
+3. **Hiring market signal.** Search LinkedIn or Indeed in your target hiring market (Amsterdam, or your [offshore hub](46-offshore-vs-nearshore-vs-onshore-cost-risk-analysis.md) in Vietnam) for job postings mentioning the technology. Fewer than a handful of active postings citywide is an early warning that the talent pool is shrinking, not growing.
+4. **Issue resolution rate.** A healthy project closes the majority of reported bugs within weeks. Hundreds of open, unaddressed issues — especially security-tagged ones — signal a maintenance backlog that will eventually become your team's problem.
+5. **Versioning discipline.** Does the project follow semantic versioning with clear migration guides for breaking changes, or does it ship silent breaking changes in minor releases? The latter turns every dependency update into a multi-day regression-testing exercise.
+6. **License stability.** Read the actual license, not just the marketing page. Several widely used open-source projects have changed licensing terms mid-flight in ways that surprised enterprise users — Elastic's move away from Apache 2.0 in 2021 and HashiCorp's shift to the Business Source License in 2023 both forced companies to renegotiate usage terms or fork the last open version. Prefer permissive, well-established licenses (MIT, Apache 2.0) for anything sitting in your critical path.
+
+None of these six checks require deep technical expertise — they are due-diligence questions any Product Owner or Engineering Manager can ask before a Tech Lead adds a new dependency to the `package.json` or `pom.xml`. Building this audit into your Architecture Decision Record (ADR) template turns "boring technology" from a philosophy into an enforceable process.
+
 ## Executing the Stack with Manifera
 
 Choosing the stack is step one; enforcing the architectural patterns within that stack is step two. 
@@ -111,6 +124,10 @@ Because technical debt in dynamic languages compounds exponentially at scale. In
 ### Does "Boring Technology" mean we shouldn't use AI features? (Scenario: Product Manager planning a roadmap)
 
 Absolutely not. You should build incredibly innovative, AI-driven *features* for your users. The point is to build those exciting features on top of a *boring, stable foundation*. Use PostgreSQL to store the data, use Node.js to route the API, and use those boring tools to securely call the cutting-edge OpenAI or Anthropic APIs. Innovate on the product, not the plumbing.
+
+### How do we evaluate whether an individual library is safe to adopt, beyond the core stack decision? (Scenario: Tech Lead reviewing a pull request that adds a new dependency)
+
+Run it through a six-point audit before approving it: check commit velocity and maintainer count over the last 12 months, confirm corporate or foundation backing rather than a single volunteer maintainer, search job boards in your hiring market to confirm the talent pool is stable, check the issue resolution rate, verify semantic versioning discipline, and read the actual license for stability. Building this into your Architecture Decision Record template makes "boring technology" an enforceable process, not just a slogan.
 
 <script type="application/ld+json">
 {
@@ -155,6 +172,14 @@ Absolutely not. You should build incredibly innovative, AI-driven *features* for
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Innovate on the product features, not the plumbing. Build exciting AI features using stable, boring infrastructure (like Postgres and Node) to ensure the system doesn't collapse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we evaluate whether an individual library is safe to adopt, beyond the core stack decision?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Audit commit velocity and maintainer count, confirm corporate or foundation backing, check the hiring market for the technology, review the issue resolution rate, verify semantic versioning discipline, and read the actual license before approving any new dependency."
       }
     }
   ]

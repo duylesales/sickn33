@@ -64,6 +64,21 @@ Your offshore team must have a Delivery Manager (or Scrum Master) who understand
 ### 3. Implement the "Build Measure Learn" Loop
 Instead of building a massive, polished feature over 6 weeks, the team should build a rough prototype in 1 week (Build). Deploy it behind a feature flag to 5% of users (Measure). If the data shows users hate it, you just saved 5 weeks of engineering budget (Learn).
 
+## The Contract Is the Real Root Cause (Not the Team)
+
+Here is an uncomfortable truth most CEOs miss: you can hire the most outcome-obsessed Product Manager in the world, but if your commercial contract with the engineering team pays them for Output, they will produce a Feature Factory anyway. The pricing model is not a back-office detail. It is the single strongest behavioral lever in the entire relationship, because it determines what the team is actually rewarded for — regardless of what the kickoff meeting said about "focusing on outcomes."
+
+**Time & Materials (T&M), billed by the hour:** This model directly rewards slowness. Every hour billed is revenue for the vendor, whether or not the work moves a business metric. A vendor paid T&M has zero financial incentive to tell you "you don't need this feature" — the feature, however unnecessary, is billable hours. This is the most common contract structure behind Feature Factory behavior, because it makes Output the literal unit of payment.
+
+**Fixed Bid, scoped to a feature list:** This looks disciplined on paper — a fixed price for a fixed list of features — but it creates the opposite problem. Once the contract is signed, the vendor is financially incentivized to build exactly the features listed, as cheaply as possible, and resist any change request that would require rethinking the approach based on what user data reveals mid-project. A Fixed Bid contract locks in Month 1's assumptions for the entire project, even when Month 2's user data proves those assumptions wrong.
+
+**The Fix — a Hybrid Discovery-and-Retainer Structure:**
+1. **A short, fixed-price Discovery phase** (typically 2-4 weeks) produces a prioritized problem list, not a feature list — the Delivery Manager and your Product Owner agree on the top 3-5 business problems worth solving, with success metrics defined for each *before* any code is written.
+2. **A rolling capacity retainer**, not a per-feature price, funds the engineering pod for a quarter at a time. This removes the per-ticket billing incentive entirely — the vendor's revenue does not change whether they ship three features or thirty.
+3. **A quarterly re-prioritization checkpoint**, tied to the telemetry from the last quarter's shipped work, decides what the pod builds next. Features that did not move the agreed KPI are explicitly deprioritized or killed, and that decision is treated as a successful outcome of the process, not a failure of the team.
+
+This is precisely why Manifera does not default new engagements to pure T&M or pure Fixed Bid. The contract structure has to reinforce the outcome-driven behavior you actually want, or the incentive misalignment will quietly undo everything a good Delivery Manager tries to build culturally.
+
 ## The Manifera Product Engineering Philosophy
 
 At Manifera, we do not operate Feature Factories. We build **bespoke application development** pods that are aligned with your business outcomes.
@@ -90,6 +105,9 @@ Delete it. Unused features are not neutral; they are liabilities. They clutter t
 
 ### (Scenario: IT Director evaluating Manifera's Hybrid Model) How does Manifera prevent the offshore team from just being 'Order Takers'?
 Our Dutch Tech Leads act as the strategic bridge. They interrogate your requirements to understand the underlying business problem (the 'Why'). They empower the Vietnamese engineering pod to propose simpler, more efficient technical solutions to solve that problem, rather than just blindly typing code to fulfill a literal requirement list.
+
+### (Scenario: CFO negotiating a vendor contract) Can the way we pay our engineering vendor actually cause Feature Factory behavior?
+Yes, and it is often the root cause. Time & Materials billing pays the vendor for hours regardless of business impact, giving them no incentive to push back on low-value features. Fixed Bid contracts lock in a feature list from Day 1, punishing the team for adapting to what user data reveals mid-project. A hybrid structure — a fixed-price Discovery phase to define problems and success metrics, followed by a rolling capacity retainer with quarterly re-prioritization based on telemetry — aligns the commercial incentive with actual outcomes.
 
 <script type="application/ld+json">
 {
@@ -134,6 +152,14 @@ Our Dutch Tech Leads act as the strategic bridge. They interrogate your requirem
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Tech Leads interrogate your requirements to understand the 'Why'. They empower the Vietnamese pod to propose simpler, outcome-driven technical solutions to solve the business problem, rather than just typing code to fulfill a list."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the way we pay our engineering vendor actually cause Feature Factory behavior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Time & Materials billing pays for hours regardless of impact, so the vendor has no incentive to push back on low-value features. Fixed Bid contracts lock in a feature list from Day 1 and punish adapting to new data. A hybrid model — fixed-price Discovery to define problems and metrics, then a rolling retainer with quarterly re-prioritization based on telemetry — aligns incentives with outcomes."
       }
     }
   ]

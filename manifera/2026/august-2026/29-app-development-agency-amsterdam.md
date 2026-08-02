@@ -61,6 +61,22 @@ When you consult an app development agency in Amsterdam, be aware of their bias.
 
 If an agency only employs React Native developers, they will try to convince you to use React Native for a complex Bluetooth medical app (which will fail). If an agency is heavy on traditional Swift/Kotlin engineers, they will try to convince you to pay €200,000 for Native code just to build a simple CRM dashboard (which is financial negligence).
 
+## The Third Option: Native Modules as a Hybrid Bridge
+
+Most agencies present Native vs. React Native as a binary, all-or-nothing decision. That framing is itself a symptom of a limited technical bench. A properly architected React Native application does not need to choose one extreme — it can use **Native Modules** (or **Turbo Modules**, under React Native's New Architecture) to get the best of both worlds inside a single application.
+
+**The Mechanism:**
+A Native Module is a small, purpose-built piece of Swift or Kotlin code that handles exactly one hardware-intensive task — say, maintaining a persistent Bluetooth Low Energy connection to a warehouse barcode scanner, or running a background GPS tracking service that must survive the OS killing the app. This native code is then exposed to the rest of the application through a defined JavaScript interface. Everything else in the app — the dashboards, the forms, the navigation, the business logic, the 90% of the app that does not touch specialized hardware — continues to be written once, in React Native, exactly as it would be in a pure cross-platform build.
+
+**Why This Matters for Your Logistics App:**
+Take the exact scenario at the top of this article: field operatives scanning inventory and updating routing data. The scanning and BLE hardware interaction is genuinely native-critical — you want a dedicated, battle-tested Native Module handling that connection reliably. But the routing dashboard, the inventory forms, the user authentication screens, and the reporting views have no hardware dependency whatsoever. Forcing your entire engineering team to write 100% of this application in Swift and Kotlin — duplicating every dashboard and form twice — to support one narrow hardware requirement is a significant, unnecessary cost. A well-built Native Module architecture isolates the hardware complexity into a small, well-tested boundary, while keeping the bulk of the application's engineering cost at cross-platform levels.
+
+**The Trade-Off You Must Manage:**
+This hybrid approach is not free of complexity. Native Modules require genuinely senior engineers who understand both the React Native bridge architecture and the underlying native SDKs — this is a narrower, more expensive skill set than either "pure React Native developer" or "pure Swift developer" alone. It also means your team now maintains three moving pieces instead of one: the shared JavaScript codebase, the iOS native module, and the Android native module. If your agency proposes this pattern without a clear plan for who owns and tests each native module long-term, you are trading one architecture risk for another.
+
+**How to Evaluate a Proposal:**
+When an app development agency in Amsterdam pitches you a hybrid Native Module approach, ask them to name the exact hardware features that require it, and insist they justify why each one cannot be handled by an existing, well-maintained React Native library first (many BLE and camera use cases are already solved by mature community packages). A disciplined agency reaches for a custom Native Module only when a mature library genuinely does not exist or does not meet your reliability bar — not as a default architectural flourish. This is precisely the kind of nuance that separates a technology-agnostic engineering partner from an agency that simply sells you whichever stack its existing team happens to already know. In our experience, roughly one in five B2B logistics or field-service applications genuinely benefits from this hybrid pattern — enough to matter, but far from the default that a Native-only shop would have you believe.
+
 ## The Manifera Approach
 
 At Manifera, we are technology-agnostic. Our Hybrid Offshore model provides access to massive talent pools in Vietnam, meaning we have elite squads for *both* React Native and True Native builds. 
@@ -85,6 +101,9 @@ Code Push (Over-The-Air updates) is a feature that allows developers to push min
 
 ### When should a B2B company absolutely insist on Native development?
 If your application relies heavily on complex hardware integrations—such as streaming data from Bluetooth medical devices, maintaining constant background GPS tracking while the app is closed, or processing heavy offline Augmented Reality (AR)—you must use Native development to ensure hardware stability.
+
+### Can I combine Native and React Native in the same app?
+Yes. Using "Native Modules" (or Turbo Modules under React Native's New Architecture), you can write a small piece of Swift or Kotlin code to handle one specific hardware-intensive task, while keeping the rest of the application—dashboards, forms, business logic—in a single shared React Native codebase. This isolates hardware complexity without forcing you to duplicate the entire app.
 
 <script type="application/ld+json">
 {
@@ -129,6 +148,14 @@ If your application relies heavily on complex hardware integrations—such as st
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "If the core value of the app relies on complex hardware communication—like constant background GPS tracking, Bluetooth Low Energy (BLE) medical device syncing, or heavy Augmented Reality processing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I combine Native and React Native in the same app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, using Native Modules (or Turbo Modules). A small piece of Swift or Kotlin code handles one specific hardware task, while the rest of the application remains a single shared React Native codebase, isolating hardware complexity without duplicating the entire build."
       }
     }
   ]

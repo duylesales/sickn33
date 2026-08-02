@@ -58,6 +58,19 @@ Elite engineering organizations (like Netflix and Uber) do not rely on Full Stac
 
 The two teams communicate via a strict, mathematically defined "API Contract" (often using Swagger or GraphQL). This decoupling allows both teams to operate at maximum velocity within their specialized domains without stepping on each other's toes.
 
+## The Migration Playbook: Splitting a Full-Stack Codebase Without a Rewrite
+
+Most founders panic when they realize their Full Stack MVP has hit its ceiling. Their first instinct is to propose a full rewrite. This is almost always the wrong move. A rewrite freezes feature development for 6-12 months while competitors keep shipping. The correct approach is a structured migration that untangles the codebase while the product stays live.
+
+At Manifera, when we inherit a Full Stack codebase, we run a four-step diagnostic before writing a single new line of code:
+
+1.  **The Incident Audit.** We pull the last 90 days of production incidents (crashes, timeouts, P1 tickets) and map each one to a file or module. In almost every Full Stack codebase we've inherited, roughly 20% of the files (typically the database access layer and the state management logic) are responsible for 80% of the incidents. This tells us exactly where the specialists need to focus first.
+2.  **The Ownership Boundary.** We introduce a `CODEOWNERS` file that draws a hard line between `/api` and `/client` directories. From day one of the migration, no engineer commits across that boundary without a second specialist's review. This alone stops the "shared mess" problem from getting worse while the deeper fix is underway.
+3.  **The Strangler Fig Pattern.** Rather than rewriting the monolith in one pass, we build new features and refactored modules alongside the old code, then gradually reroute traffic to the new, specialist-built modules until the legacy Full Stack code is "strangled" out entirely. The application never goes offline, and the founder never has to explain a 6-month feature freeze to their board.
+4.  **The Contract Freeze.** Once the API Contract (the JSON schema of what the backend promises the frontend) is defined, it is version-locked. Backend Specialists can now optimize database queries and Frontend Specialists can rebuild the UI in parallel, because neither side can silently break the other's assumptions.
+
+This playbook typically takes 8-12 weeks for a mid-sized SaaS application, compared to the 6+ months a full rewrite demands, and it means the business keeps shipping paid features the entire time.
+
 ## Specialized Pods with Manifera
 
 When startups use cheap [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies, the agency will almost always staff the project with "Full Stack" developers. Why? Because it is much cheaper and easier for the agency to hire mediocre generalists than to recruit highly paid specialists. The agency delivers a functional, but structurally fragile, application.
@@ -88,6 +101,9 @@ They use an 'API-First Decoupled Architecture.' Before anyone writes code, the L
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera structure their offshore development pods?
 We do not staff projects with cheap 'Full Stack' generalists. Our Vietnamese engineering pods are composed of dedicated Backend and Frontend Specialists. Crucially, they are governed by our elite Dutch Architects who design the system and enforce the strict API contracts between the two domains, ensuring enterprise-grade quality at offshore prices.
+
+### (Scenario: CTO planning the transition) Do we need to rewrite our entire application to move away from a Full Stack team?
+No. A full rewrite typically freezes feature development for 6-12 months, which is rarely acceptable to a board or customers. We instead run a structured migration: an incident audit to find the highest-risk 20% of the codebase, a CODEOWNERS boundary between backend and frontend directories, and a Strangler Fig approach that reroutes traffic to specialist-built modules gradually. Most mid-sized applications complete this in 8-12 weeks without a feature freeze.
 
 <script type="application/ld+json">
 {
@@ -132,6 +148,14 @@ We do not staff projects with cheap 'Full Stack' generalists. Our Vietnamese eng
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We deploy specialized pods. You get dedicated Vietnamese Backend and Frontend experts, not mediocre generalists. Furthermore, these specialists are strictly governed by our Dutch Architects, ensuring flawless integration and enterprise-grade scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need to rewrite our entire application to move away from a Full Stack team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A full rewrite typically freezes feature development for 6-12 months. We instead run a structured migration: an incident audit to find the highest-risk 20% of the codebase, a CODEOWNERS boundary between backend and frontend directories, and a Strangler Fig approach that reroutes traffic to specialist-built modules gradually, usually completed in 8-12 weeks without a feature freeze."
       }
     }
   ]

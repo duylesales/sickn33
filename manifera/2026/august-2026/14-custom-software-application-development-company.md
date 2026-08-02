@@ -75,6 +75,30 @@ An agency ticket is not "Done" when the developer finishes typing. It is "Done" 
 
 If the agency resists setting up an automated CI/CD pipeline (e.g., GitHub Actions) in Month 1, they are accumulating technical debt.
 
+## Phase 5: The Exit Clause (Offboarding and Knowledge Transfer)
+
+Most CTOs negotiate the beginning of an engagement in exhaustive detail and never once discuss the end of it. This is a mistake. Every custom software engagement eventually terminates, whether because the project is complete, you are switching agencies, or you are building an internal team to take over maintenance. If the exit terms were never defined at the start, you discover the hard way that your "partner" holds your architecture hostage through undocumented tribal knowledge.
+
+**The Contractual Non-Negotiables:**
+- **A Documentation-as-Code Requirement:** Architecture Decision Records (ADRs), API documentation, and runbooks must be committed to the repository itself, not left in a departing consultant's personal Notion workspace. If the documentation cannot be found with `git log`, it does not legally exist as a deliverable.
+- **A Defined Transition Period:** The contract should mandate a minimum 4-week overlap period where the outgoing team remains available (even at reduced hours) to answer questions from the incoming team, whether that incoming team is your own new hires or a competing agency.
+- **Full IP and Credential Escrow:** All source code, infrastructure-as-code (Terraform/Pulumi), CI/CD pipeline configurations, and third-party service credentials must be transferable on demand, not held inside the outgoing agency's private organizational accounts. This should be verified during onboarding, not discovered as a crisis during offboarding.
+
+**The Audit Question CTOs Forget to Ask:** *"If we terminated this contract tomorrow, how long would it take us to fully operate this codebase without you?"* If the honest answer involves weeks of forensic archaeology through undocumented services, the agency has quietly engineered vendor lock-in, intentionally or not. Elite agencies welcome this question because they have nothing to hide: their documentation discipline during the engagement means the exit is simply a formality, not an excavation. At Manifera, this is precisely why we build documentation into the Definition of Done from Phase 4 onward, rather than treating it as a rushed final deliverable — by the time any transition conversation happens, the runbooks, ADRs, and infrastructure code already exist in the repository where they belong.
+
+## Phase 6: The Governance Dashboard (Ongoing KPIs, Not Just Sprint Demos)
+
+Sprint demos tell you whether features shipped. They do not tell you whether the engagement is healthy. Too many CTOs discover a partnership is deteriorating only when a deadline slips, at which point the underlying causes have usually been visible in the data for months. A rigorous governance model tracks a small set of leading indicators monthly, not just the lagging indicator of "did the release happen."
+
+**The Five Metrics Worth a Standing Steering Committee Slot:**
+- **Sprint Commitment Accuracy:** What percentage of story points committed at sprint planning actually got delivered? A healthy pod lands in the 85-95% range. Anything consistently below 70% signals either sandbagged estimates or an overloaded team.
+- **Defect Escape Rate:** Of the bugs found each month, what fraction were caught in staging versus reported by real users in production? A rising escape rate is the earliest warning sign of shortcuts in the Definition of Done from Phase 4.
+- **Code Churn on Merged PRs:** How much of the code merged last sprint gets rewritten within 3 weeks? High churn on "done" work usually means requirements were misunderstood, not that the code was poorly written.
+- **Deployment Frequency:** How many times per week does code reach staging or production? A pod that has quietly slipped from daily deploys to once every two weeks is accumulating integration risk even if no single sprint demo looks alarming.
+- **Bus Factor per Module:** For your three most business-critical modules, how many engineers on the team could explain that code without the original author? A bus factor of one anywhere in your critical path is a governance failure waiting to surface at the worst possible time.
+
+**The Mechanism:** These five numbers should appear in a single dashboard (a Jira/Linear export into a shared spreadsheet is sufficient — this does not require new tooling) reviewed in a monthly 30-minute steering call between your engineering leadership and the agency's Lead Architect. The goal is not to punish a bad month; it is to catch a three-month trend before it becomes a missed launch. At Manifera, this dashboard is standard practice on every Hub-and-Spoke engagement past the first quarter, because a Sprint Demo alone answers "did this feature work," while the dashboard answers the more important question: "is this team still improving, or is it eroding under time-zone and scope pressure that hasn't surfaced yet in the demo."
+
 ## Conclusion
 
 A successful engagement with a custom software application development company requires radical transparency, uncompromising security protocols, and a formalized Agile rhythm. By enforcing a Product Discovery phase and utilizing a Hub-and-Spoke management model, you transform a risky outsourcing endeavor into a predictable, high-velocity engineering machine.
@@ -97,6 +121,12 @@ It is a hybrid management model. The "Hub" consists of local management (e.g., i
 
 ### How often should the agency deliver working software to me?
 Every two weeks. Elite Agile agencies operate in 2-week Sprints. At the end of every Sprint, they must conduct a "Sprint Demo" where they show you actual, working code deployed to a staging environment—not wireframes, and not PowerPoint presentations.
+
+### What should be in the contract for ending the engagement with a custom software agency?
+The contract should mandate documentation-as-code (ADRs and runbooks committed to the repository), a minimum 4-week transition overlap period with the incoming team, and full escrow of source code, infrastructure-as-code, and third-party credentials so you can operate the codebase independently the moment the contract ends.
+
+### What KPIs should I track beyond the Sprint Demo to know if the engagement is actually healthy?
+Track sprint commitment accuracy (target 85-95%), defect escape rate to production, code churn on recently merged PRs, deployment frequency, and the "bus factor" per critical module. Review these five numbers in a monthly steering call with the agency's Lead Architect—a sprint demo shows a feature works, but this dashboard shows whether the team's health is trending up or quietly eroding.
 
 <script type="application/ld+json">
 {
@@ -141,6 +171,22 @@ Every two weeks. Elite Agile agencies operate in 2-week Sprints. At the end of e
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Every two weeks. Professional Agile teams operate in 2-week sprints and must demonstrate actual, deployed working software at the end of every sprint cycle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should be in the contract for ending the engagement with a custom software agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It should mandate documentation-as-code, a minimum 4-week transition overlap period with the incoming team, and full escrow of source code, infrastructure-as-code, and credentials so you can operate independently once the contract ends."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What KPIs should I track beyond the Sprint Demo to know if the engagement is actually healthy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Track sprint commitment accuracy (target 85-95%), defect escape rate to production, code churn on recently merged PRs, deployment frequency, and the 'bus factor' per critical module in a monthly steering call with the agency's Lead Architect to catch eroding health before it causes a missed launch."
       }
     }
   ]

@@ -70,6 +70,20 @@ In Staff Augmentation, you pay for hours. In Managed Services, you pay for veloc
 
 Elite [custom software development services](https://www.manifera.com/services/custom-software-development/) are governed by strict SLAs. The contract mandates specific performance metrics: high Sprint Velocity (measured in Story Points), low bug defect rates (measured in QA pass rates), and strict code coverage minimums (e.g., 85% automated test coverage). The vendor is financially accountable for the output, fundamentally shifting the delivery risk away from your enterprise.
 
+## Who Actually Owns the Code When the Contract Ends?
+
+A detail enterprise buyers frequently overlook during procurement is what happens to the codebase, credentials, and institutional knowledge the moment the contract terminates, whether by mutual agreement or because the relationship soured. This single clause determines whether an offshore relationship is a genuine asset or a hidden liability.
+
+### The Repository Ownership Trap
+
+In many Staff Augmentation arrangements, and even in poorly structured Managed Service deals, the vendor builds the application inside its own private GitHub or GitLab organization "for convenience." This arrangement quietly makes the vendor the de facto custodian of your intellectual property. If a payment dispute arises or the relationship ends abruptly, the enterprise can find itself locked out of its own source code, CI/CD pipelines, and infrastructure definitions overnight.
+
+Elite Managed Service providers eliminate this risk structurally, not contractually. The repository is provisioned inside the client's own GitHub or GitLab organization from Sprint Zero, with the vendor's engineers added as outside collaborators rather than owners. Cloud accounts (AWS, Azure, GCP) are created under the client's own billing entity, with the vendor granted scoped IAM roles rather than root access. By the end of Sprint 1, 100% of the infrastructure-as-code, pipeline definitions, and secrets management configuration must already reside in client-owned repositories, never the vendor's.
+
+### The 90-Day Transition Clause
+
+Beyond day-to-day repository ownership, the master services agreement itself should contain an explicit "Transition-Out" obligation that survives termination for convenience. Elite contracts mandate a 60-to-90-day notice period during which the vendor is contractually required to run weekly knowledge-transfer sessions with the client's internal team, deliver updated architecture diagrams and operational runbooks, and rotate every administrative credential, cloud IAM roles, domain registrar access, CI/CD secrets, into a vault fully controlled by the client before the final invoice is paid. Without this clause, "offboarding" becomes an informal favor the vendor may or may not honor; with it, continuity is a legal obligation, not a courtesy.
+
 ## Procuring Autonomous Delivery
 
 Do not buy developers by the hour if you do not have the internal management infrastructure to lead them. 
@@ -96,6 +110,9 @@ This is why you demand a "Transparent Agile Dashboard." Elite vendors give you r
 
 ### 5. (Scenario: HR Director) What happens if a developer on the Managed Service team quits? Does the project stall?
 In Staff Augmentation, if your rented developer quits, your project stops until the vendor recruits a new one, and then *you* have to spend three weeks training the replacement. In a Managed Service model, "Knowledge Retention" is the vendor's contractual responsibility. Elite agencies maintain internal "Shadow Developers" who know your project architecture. If a developer leaves, the vendor swaps in the shadow developer seamlessly, ensuring zero disruption to your Sprint velocity.
+
+### 6. (Scenario: General Counsel) What contractual protections ensure we retain full ownership of our code and infrastructure if we terminate the vendor?
+Insist on two things in the Master Services Agreement: repository and cloud account ownership residing under your own organization from day one (never the vendor's), and a mandatory 60-to-90-day transition clause requiring weekly knowledge-transfer sessions, updated documentation, and full credential rotation into your own vault before the final invoice is paid. Structural ownership plus a contractual exit ramp means offboarding is a guaranteed process, not a favor the vendor may or may not grant.
 
 <script type="application/ld+json">
 {

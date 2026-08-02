@@ -61,6 +61,24 @@ The best [custom software development](https://www.manifera.com/services/custom-
 - **Infrastructure as Code (Terraform):** The entire AWS/Azure environment is provisioned via code. If a server needs to be modified, the developer modifies the Terraform script, which goes through a Pull Request and security scan before an automated pipeline applies the change.
 - **Continuous Compliance:** Elite agencies structure your application to plug directly into automated compliance platforms like **Vanta** or **Drata**. Because the infrastructure is built as code and access logs are centralized, Vanta can continuously monitor your AWS environment, automatically generating the proof required to pass a SOC2 Type II audit without spending 300 hours collecting screenshots.
 
+## 4. The Secure Software Development Lifecycle (SSDLC)
+
+Encryption, RBAC, and Terraform harden the environment your application runs in. But SOC2 Type II auditors also want proof that the *code itself* is being systematically checked for vulnerabilities before it ever reaches production. This is where most agencies quietly fail. They rely on a senior developer "eyeballing" a pull request for security issues, which is not a control an auditor can verify, and is not a control that scales past three engineers.
+
+**The Elite Solution:**
+The best web app development companies wire automated security scanning directly into the CI/CD pipeline, so a vulnerability is caught within minutes of being written, not months later during a penetration test.
+
+- **Static Application Security Testing (SAST):** Tools like **Semgrep** or **SonarQube** scan the raw source code on every single Pull Request, flagging patterns like SQL injection risks, hardcoded secrets, or insecure deserialization before a human reviewer even opens the diff. A PR with a SAST failure is blocked from merging — no exceptions, no "we'll fix it later" tickets.
+- **Dynamic Application Security Testing (DAST):** Tools like **OWASP ZAP** attack a running staging instance of the application the same way a real attacker would: probing for broken authentication, exposed admin panels, and misconfigured CORS policies. This catches the class of bugs that only appear once the code is actually running, which SAST cannot see.
+- **Software Composition Analysis (SCA):** Modern applications are 70-90% open-source dependencies. Tools like **Snyk** or **GitHub Dependabot** continuously cross-reference every npm or PyPI package in the codebase against the National Vulnerability Database (NVD), automatically opening a PR the moment a dependency you rely on is found to have a critical CVE.
+- **Secrets Scanning:** A pre-commit hook (via **Gitleaks** or **TruffleHog**) rejects any commit containing an API key, database password, or private certificate, stopping the single most common cause of real-world breaches: a developer accidentally pushing a `.env` file to a public or semi-public repository.
+
+**Why this matters for the audit itself:** SOC2 Type II's Common Criteria (specifically CC7.1 and CC8.1) explicitly require evidence of a formal vulnerability management and change-management process. A screenshot of a code review is not evidence. A CI/CD pipeline log showing 400 consecutive PRs blocked-then-passed through SAST, SCA, and secrets scanning *is* evidence, and it is exactly the artifact your auditor will ask for during the Type II observation period.
+
+Beyond the automated layer, elite teams schedule an independent third-party **penetration test** at least annually (often required contractually by enterprise clients before signing), and maintain a documented, time-boxed remediation SLA — for example, critical findings patched within 72 hours, high findings within two weeks. Ask any agency bidding on your project a simple question: "Walk me through what happens, technically, the moment a Semgrep or Snyk finding fires in your pipeline." An agency without automated SSDLC tooling will describe a manual, ad-hoc process. An elite agency will describe an automated gate that blocks the merge outright.
+
+This layered approach also changes the economics of fixing bugs. A vulnerability caught by SAST at the pull-request stage costs a developer minutes to patch. The same vulnerability, if it survives to a client-facing penetration test six months later, can cost days of remediation, an emergency security patch release, and — worst of all — a delayed enterprise renewal while the client's own security team reviews your response. Auditors increasingly ask not just "do you scan your code" but "how fast, on average, do you close a critical finding," and agencies that track this mean-time-to-remediation metric as a first-class engineering KPI are the ones that sail through SOC2 Type II renewals year after year instead of scrambling each cycle.
+
 ## The Manifera Security Governance
 
 At Manifera, we understand that for B2B SaaS, security *is* the product. 
@@ -89,6 +107,9 @@ IaC is the practice of managing and provisioning cloud servers (AWS, Azure) thro
 
 ### How do automated compliance platforms like Vanta or Drata work?
 These platforms integrate directly with your AWS infrastructure, GitHub repositories, and HR systems via APIs. They continuously monitor your system configuration (e.g., verifying that all databases are encrypted, and all employees have MFA enabled) to automatically generate the evidence required to pass a SOC2 or ISO 27001 audit.
+
+### What is the difference between SAST and DAST?
+SAST (Static Application Security Testing) scans the raw source code on every Pull Request to catch vulnerabilities like SQL injection or hardcoded secrets before code ships. DAST (Dynamic Application Security Testing) attacks a running staging application the way a real hacker would, catching runtime issues like broken authentication or misconfigured CORS that static code analysis cannot see. Elite agencies run both, plus dependency (SCA) and secrets scanning, directly inside the CI/CD pipeline.
 
 <script type="application/ld+json">
 {
@@ -133,6 +154,14 @@ These platforms integrate directly with your AWS infrastructure, GitHub reposito
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "They connect via API to your AWS and GitHub accounts, continuously monitoring your security posture and automatically collecting the evidence needed to pass rigorous compliance audits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between SAST and DAST?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SAST scans source code on every Pull Request to catch vulnerabilities before they ship. DAST attacks a running staging application like a real hacker would, catching runtime issues SAST cannot see. Elite agencies automate both inside the CI/CD pipeline."
       }
     }
   ]

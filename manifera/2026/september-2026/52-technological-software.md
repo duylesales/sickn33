@@ -63,6 +63,22 @@ You update the API Gateway. Now, when a user updates their picture, the Gateway 
 
 If the new code has a bug, the blast radius is contained to just the profile pictures. You fix it, and you move to the next feature. Over the course of 18 months, you slowly route more and more traffic to the new services, "strangling" the old Java monolith until no traffic hits it anymore, and you safely delete it. 
 
+## The Dual-Write Data Consistency Problem
+
+The Strangler Fig pattern solves the *traffic routing* problem, but it exposes a second, harder problem that most CIOs never anticipate: during the migration, both the old Java monolith and the new microservices frequently need to read and write the *same* data. If the "Update Profile Picture" microservice needs to know a customer's name and policy number, and that data lives inside the legacy Java database, where does it live during the 18-month transition?
+
+The naive answer — have both systems write directly to the same shared database — is a trap. It couples your brand-new, cloud-native microservice to the same 15-year-old database schema you are trying to escape, and it means the new service inherits every locking issue and performance ceiling of the legacy system.
+
+### The Change Data Capture (CDC) Solution
+
+Elite migration architects instead deploy **Change Data Capture**. A tool (commonly Debezium) tails the legacy database's internal transaction log — the same low-level log the database uses for its own crash recovery — and streams every insert, update, and delete as an event onto a message bus (like Kafka) in near real-time.
+
+The new microservices subscribe to this event stream and maintain their *own* local, denormalized copy of exactly the data they need, in whatever modern schema suits them best. The legacy Java system never even knows the new services exist; it keeps writing to its own database exactly as it always has, with zero code changes and zero added load.
+
+### Why Reconciliation Jobs Are Non-Negotiable
+
+Event streams can occasionally drop or duplicate a message during network blips. Elite teams never trust CDC blindly — they run a nightly reconciliation job that diffs a sample of records between the legacy source of truth and the new service's local copy, alerting an engineer if drift exceeds a defined threshold (e.g., 0.01%). This catches silent data drift months before it would otherwise surface as a customer-facing billing discrepancy.
+
 ## Safe Modernization with Manifera
 
 When enterprises outsource legacy modernization to standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies, the agency will almost always push for a Big Bang rewrite because it guarantees them 18 months of billable hours in a vacuum, with zero accountability until launch day. 
@@ -93,6 +109,9 @@ It appears slower initially because you have to maintain two systems simultaneou
 
 ### (Scenario: Procurement Officer evaluating Manifera) How does Manifera safely modernize massive legacy enterprise applications?
 We actively refuse Big Bang rewrites. Our Dutch Architects act as the migration generals, designing the API Gateways and the Strangler Fig extraction sequence. Our offshore Vietnamese pods execute the incremental rewrites. This guarantees that your enterprise continues generating revenue without interruption while we systematically replace your technical debt.
+
+### (Scenario: CIO worried about data integrity mid-migration) How do you keep data consistent when both the old and new systems need the same records?
+You use Change Data Capture (CDC) rather than a shared database. A tool like Debezium tails the legacy database's transaction log and streams every change as an event. New microservices subscribe to this stream and maintain their own local copy of the data, so the legacy system stays untouched while nightly reconciliation jobs catch and alert on any drift.
 
 <script type="application/ld+json">
 {
@@ -137,6 +156,14 @@ We actively refuse Big Bang rewrites. Our Dutch Architects act as the migration 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design the API Gateway architecture and define the strict Strangler Fig migration plan. Our Vietnamese pods then execute the incremental feature replacement, ensuring your business experiences zero downtime while migrating off legacy code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you keep data consistent when both the old and new systems need the same records?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By using Change Data Capture instead of a shared database. A tool like Debezium streams every legacy database change as an event, and new microservices maintain their own local copy from that stream, while nightly reconciliation jobs detect and alert on any data drift."
       }
     }
   ]

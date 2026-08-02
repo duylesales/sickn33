@@ -59,6 +59,28 @@ However, for a European enterprise, granting raw AWS credentials to a third-part
 
 By forcing the offshore team to consume infrastructure through the IDP's self-service portal, you guarantee that every single microservice they build inherits your enterprise's security, logging, and deployment standards by default.
 
+## Build vs. Buy: Choosing Your IDP Foundation
+
+Once a CTO accepts that an Internal Developer Platform is necessary, the next decision is architectural: do you build the platform on an open-source framework, or buy a managed product? This decision has real, lasting cost and governance implications, and most engineering leaders get it wrong by defaulting to whichever tool their last company used.
+
+**Backstage (Spotify, open source).** Backstage is the most widely adopted IDP framework, and for good reason: it is free, extensible via plugins, and battle-tested at massive scale. But "free" is misleading. Backstage ships as a bare framework, not a working platform. A team adopting Backstage must build its own software catalog integrations, author its own Golden Path templates (called "Software Templates"), and maintain the React/TypeScript backend themselves. Organizations frequently underestimate this: a properly configured Backstage instance with real Golden Paths, RBAC integration, and a working software catalog typically requires 2-4 dedicated platform engineers for the first two quarters, not the "weekend project" it is often pitched as.
+
+**Managed IDP products (Port, Humanitec, Cortex).** These commercial platforms trade a subscription fee for dramatically faster time-to-value. They arrive with pre-built integrations to common cloud providers, working RBAC out of the box, and a UI layer that doesn't need to be hand-built. For a mid-sized engineering organization (30-150 engineers) without a dedicated platform team to spare, a managed product often reaches production-ready Golden Paths in weeks rather than the quarters Backstage requires.
+
+**The decision framework Manifera uses with clients:**
+
+| Factor | Backstage (Build) | Managed IDP (Buy) |
+|---|---|---|
+| **Upfront engineering cost** | High — requires dedicated platform engineers | Low — vendor handles core platform maintenance |
+| **Customization ceiling** | Very high — full control over every plugin and workflow | Bounded by vendor's plugin/integration ecosystem |
+| **Time to first Golden Path** | Typically 2-4 months | Typically 2-6 weeks |
+| **Best fit** | Organizations with 150+ engineers and a dedicated platform team | Organizations under 150 engineers, or those without platform headcount to spare |
+| **Long-term cost** | Sunk into internal headcount, but zero license fees | Recurring per-seat license fees that scale with engineer count |
+
+There is no universally correct answer — a scale-up with 40 engineers and no platform team almost always gets more value from a managed product in year one, while an enterprise with a dedicated platform organization can extract more long-term customization from Backstage. What matters is that the decision is made deliberately, based on your actual engineering headcount and platform maturity, rather than copied from a blog post written by a company at a completely different scale.
+
+A frequent mistake we see when auditing existing IDP implementations: a mid-sized company adopts Backstage because it is "what Spotify uses," assigns it as a side project to one already-overloaded DevOps engineer, and ends up with a half-finished software catalog that nobody trusts. Eighteen months later, engineers are back to filing Jira tickets, and the CTO is paying platform-engineer salaries for a tool that delivers less value than a properly configured managed product would have in month one. The tool is never the actual constraint; dedicated ownership and realistic sequencing are.
+
 ## The Manifera Platform Engineering Standard
 
 At Manifera, we do not believe in throwing developers into chaotic infrastructure. 
@@ -87,6 +109,9 @@ A Golden Path is a supported, opinionated way to build and deploy software withi
 
 ### (Scenario: IT Director evaluating Manifera) Do I need to build my own IDP before hiring Manifera's offshore pods?
 No. While having an IDP maximizes velocity, our Dutch Architects can help you build one as part of our engagement. If you are not ready for a full IDP, our Architects will implement strict Infrastructure as Code (Terraform) pipelines to ensure our Vietnamese pods operate within secure, automated guardrails, preventing the chaos of manual DevOps.
+
+### (Scenario: CTO deciding on platform tooling budget) Should we build our IDP on open-source Backstage or buy a managed platform like Port or Humanitec?
+It depends on your engineering headcount and platform maturity. Backstage is free but ships as a bare framework requiring 2-4 dedicated platform engineers for several months to become a working Golden Path system, making it best suited to organizations with 150+ engineers and a dedicated platform team. Managed products like Port or Humanitec cost a recurring license fee but reach production-ready Golden Paths in weeks, making them the better fit for organizations under 150 engineers without spare platform headcount.
 
 <script type="application/ld+json">
 {
@@ -131,6 +156,14 @@ No. While having an IDP maximizes velocity, our Dutch Architects can help you bu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Our Dutch Architects can help design and implement an IDP or strict Infrastructure as Code (Terraform) pipelines for your enterprise, ensuring our Vietnamese pods operate safely and efficiently from Day 1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should we build our IDP on open-source Backstage or buy a managed platform like Port or Humanitec?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on engineering headcount and platform maturity. Backstage is free but requires dedicated platform engineers for months to become a working system, suiting organizations with 150+ engineers. Managed products cost a license fee but reach production-ready Golden Paths in weeks, better suited to organizations under 150 engineers without spare platform headcount."
       }
     }
   ]

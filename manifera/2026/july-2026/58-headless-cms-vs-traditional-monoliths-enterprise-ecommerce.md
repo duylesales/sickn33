@@ -67,6 +67,18 @@ When you go Headless, you are building a composable architecture. You might use 
 
 *Verdict:* A Headless migration is not for small merchants. It is an enterprise strategy for companies with €10M+ in digital revenue, where a 10% increase in conversion rate via sub-second page loads easily pays for the engineering investment.
 
+## Search, Merchandising, and Real-Time Inventory Sync
+
+A detail that catches many teams off guard mid-migration: traditional monoliths like Magento or Shopify bundle site search, faceted filtering, and merchandising rules (e.g., "boost this SKU during a sale," "hide out-of-stock items") as built-in features tied directly to the same database. Going headless means you must deliberately re-assemble this capability from separate services.
+
+**The search layer:** Most enterprise headless builds pair a dedicated search service — Algolia, Elasticsearch, or Coveo — with the commerce backend. Product data must be indexed into that search service via webhooks or a scheduled sync job, not queried live from the commerce database on every search request. This introduces a new failure mode: search results can drift out of sync with true inventory if the indexing pipeline lags or silently fails.
+
+**Real-time inventory sync:** In a monolith, "3 left in stock" is a single database read. In a composable stack, the frontend, the search index, and the commerce backend (e.g., Shopify Plus via the Storefront API) may all cache inventory counts at slightly different intervals. For high-velocity SKUs (flash sales, limited drops), teams typically build a dedicated inventory webhook listener that pushes stock changes to the search index and any cached frontend pages within seconds, rather than relying on the frontend's normal CDN cache TTL.
+
+**Merchandising rules require their own service.** Rules like "feature this collection for logged-in loyalty members" or "de-prioritize low-margin SKUs during checkout" used to live in the monolith's admin panel. In a MACH stack, these rules typically move into either the search service's own merchandising layer (Algolia Rules, Elasticsearch function scoring) or a dedicated business rules engine, and must be re-authored by whoever owned them in the legacy system — this is a common scope item enterprise teams forget to budget for.
+
+**Practical guidance:** Before migrating, inventory every "invisible" feature your monolith currently handles for free — search relevance tuning, stock-level display logic, promotional badges, personalized recommendations — and explicitly assign each one to a service in your new composable stack. Teams that skip this audit typically discover the gap only after launch, when merchandising asks why the "New Arrivals" badge no longer appears.
+
 ## Executing a Headless Migration with Manifera
 
 Transitioning from a legacy monolith to a composable headless architecture is the ultimate [Strangler Fig Pattern](48-strangler-fig-pattern-modernising-legacy-systems.md) exercise. 
@@ -98,6 +110,10 @@ Yes. A Headless architecture is custom software. Unlike a managed monolith where
 ### Can we migrate to Headless incrementally? (Scenario: CTO managing a massive legacy Magento site)
 
 Yes. Use the Strangler pattern. Put an API gateway (or edge router) in front of your domain. Keep the legacy monolith running. Build a new Headless frontend just for the Blog and Product Detail Pages (PDPs). Route URLs for those specific pages to the new fast frontend, while the Cart and Checkout remain on the legacy monolith. Once stable, gradually replace the remaining pages.
+
+### How do we replace merchandising and search features we get for free in a monolith? (Scenario: E-commerce Director scoping a headless migration)
+
+You must explicitly re-assemble them from separate services. Site search moves to a dedicated service like Algolia or Elasticsearch, fed by webhooks or a sync job rather than live database queries. Merchandising rules (boosting SKUs, hiding out-of-stock items) move into that search service's own rules layer or a dedicated business rules engine. Before migrating, inventory every "invisible" feature the monolith currently handles for free and assign each one to a specific service, so nothing quietly disappears at launch.
 
 <script type="application/ld+json">
 {
@@ -142,6 +158,14 @@ Yes. Use the Strangler pattern. Put an API gateway (or edge router) in front of 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, using the Strangler pattern. Use an edge router to direct traffic for just the Blog and Product Pages to a new headless frontend, while leaving the complex Cart and Checkout on the legacy monolith until later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we replace merchandising and search features we get for free in a monolith?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Re-assemble them as separate services: site search via Algolia or Elasticsearch fed by webhooks, and merchandising rules via that search service's rules layer or a dedicated business rules engine. Inventory every 'invisible' monolith feature and assign it to a service before migrating."
       }
     }
   ]

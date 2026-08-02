@@ -89,6 +89,18 @@ The most capital-efficient model for startups between Seed and Series B is hybri
 2. **Partner with an outsourcing firm** for the development capacity. This gives you scale without the fixed cost burden.
 3. **Own all the code.** Your outsourcing contract must specify 100% IP transfer. A partner like [Manifera](https://www.manifera.com/services/custom-software-development/) operates under Dutch contract law, guaranteeing full code ownership from day one.
 
+## The Cost Nobody Models: Attrition
+
+Every in-house cost spreadsheet assumes the team you hire in January is still there in December. That assumption is wrong more often than founders admit, and the cost of being wrong is rarely modeled anywhere in the annual budget.
+
+Dutch tech turnover has hovered around 15-18% annually in recent years — meaning a 5-person team should statistically expect to lose close to one engineer per year. Recruiters and HR consultancies commonly peg the fully loaded cost of replacing a mid-to-senior developer at **6-9 months of that person's salary** once you total recruiting fees (often 20-25% of first-year salary for an agency placement), the hiring manager's and team's time spent interviewing, the 2-3 month vacancy period where the seat sits empty or is covered by overworked colleagues, and the 3-4 months of reduced productivity while the replacement ramps up on your codebase. For a Dutch senior developer earning €95,000, that is a **€47,500–€71,000 hit** — on top of the base cost model above — that most CEOs never see itemized because it is buried across recruiting, payroll, and "lost velocity" lines that nobody consolidates into one number.
+
+This is where the outsourcing comparison gets more interesting than a simple annual-cost table. When a developer leaves a well-run dedicated offshore pod, the attrition cost is still real, but it is **absorbed by the partner, not billed to you as a line item.** A mature outsourcing firm maintains bench capacity, cross-trains engineers on client codebases specifically so no single person is a single point of failure (avoiding what engineering teams call the "bus factor" problem), and has a standing recruiting pipeline that does not need to be built from scratch every time someone resigns. You still feel a short ramp dip when a replacement engineer joins your pod, but you are not paying an agency placement fee, and you are not the one running the 8-week interview process.
+
+The honest way to compare the two models is not "in-house cost per year" versus "outsourcing cost per year" — it is **cost per year of *stable, productive* engineering output**, attrition included. Ask any in-house-only CEO how many of their original engineering hires from three years ago are still on the team. The answer is usually a minority. Ask what that turnover cost the company in replacement hiring and lost velocity, and most cannot produce a number — which is exactly the blind spot that makes the "build vs. outsource" comparison look more favorable to in-house than it actually is.
+
+If you do build in-house, budget for attrition explicitly rather than treating it as a surprise: set aside 10-15% of your annual engineering payroll as a standing "replacement reserve," require documentation-as-you-go (architecture decision records, onboarding runbooks) rather than as an offboarding fire drill, and pair every senior hire with at least one other engineer who understands their area of the codebase well enough to cover a departure. These are the same disciplines a mature outsourcing partner already runs by default — which is precisely why the attrition line disappears from your invoice when someone else is running the bench.
+
 ## When In-House Is the Right Call
 
 Outsourcing is not always the answer. Build in-house when:
@@ -120,6 +132,9 @@ By combining local European account management with elite offshore talent, we en
 
 ### How does Manifera guarantee high-quality offshore engineering (Focus: custom software development cost)?
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your custom software development cost initiatives are executed with absolute precision.
+
+### How much does it really cost to replace an engineer who quits?
+Recruiters commonly estimate 6-9 months of salary once you total agency fees, the vacancy period, interview time, and 3-4 months of reduced productivity while the replacement ramps up. For a €95,000 Dutch senior developer, that is roughly €47,500-€71,000 on top of your base cost model — a cost most in-house budgets never itemize, which is why outsourcing comparisons often understate in-house's true annual cost.
 
 <script type="application/ld+json">
 {
@@ -164,6 +179,14 @@ Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your custom software development cost initiatives are executed with absolute precision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it really cost to replace an engineer who quits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recruiters commonly estimate 6-9 months of salary once you total agency fees, the vacancy period, interview time, and 3-4 months of reduced productivity while the replacement ramps up. For a €95,000 Dutch senior developer, that is roughly €47,500-€71,000 on top of your base cost model — a cost most in-house budgets never itemize, which is why outsourcing comparisons often understate in-house's true annual cost."
       }
     }
   ]

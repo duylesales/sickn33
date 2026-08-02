@@ -105,6 +105,29 @@ For most European enterprise projects in 2026, **React Native remains the safer 
 
 Choose **Flutter** when: your app is UI-intensive (think: fintech dashboards, gaming-adjacent interfaces), you need true multi-platform output (mobile + web + desktop from a single codebase), and you are building a new team without existing JavaScript expertise.
 
+## The Three-Year Maintenance Question
+
+Most CTOs evaluate React Native vs. Flutter on the day-one build cost and miss the bigger line item: what it costs to keep the app healthy for the three-to-five years after launch. Framework choice determines your upgrade cadence, and upgrade cadence determines how much of your roadmap gets eaten by "keeping the lights on" work instead of shipping features.
+
+**Upgrade cadence and breaking-change history:**
+
+| Dimension | React Native | Flutter |
+|-----------|-------------|---------|
+| **Release cadence** | Quarterly minor releases, New Architecture migration completed 2024-2025 | Quarterly stable channel releases, Impeller migration completed 2024 |
+| **Breaking changes** | Moderate — third-party native modules occasionally lag behind Fabric/TurboModules updates | Lower — Google controls the full stack (framework + rendering engine), so breaking changes are less common but affect everything at once |
+| **Dependency rot risk** | Higher — relies on community-maintained native modules that can go unmaintained | Lower — pub.dev packages are more consistently maintained, but a smaller ecosystem means less choice if one is abandoned |
+| **OS compatibility lag** | Fast — Meta ships iOS/Android OS support within weeks of Apple/Google releases | Fast — Google does the same, occasionally faster on Android given shared ownership |
+| **Typical annual maintenance effort** | 15-25% of one senior developer's time for a mid-sized app | 10-20% of one senior developer's time for a mid-sized app |
+
+**A four-point maintenance-readiness checklist before you commit to either framework:**
+
+1. **Audit your target third-party SDKs first.** Before choosing, confirm that your specific must-have integrations (payment processors, analytics, biometric auth, push notification providers) have actively maintained, first-party support for your chosen framework — not a community wrapper last updated two years ago. This single check prevents the most common cause of post-launch technical debt.
+2. **Budget an annual "framework upgrade sprint."** Treat major version upgrades (React Native's New Architecture rollouts, Flutter's engine updates) as planned work, not surprise firefighting. Two to four developer-weeks per year is a realistic budget for either framework.
+3. **Pin your native module versions and test upgrades in a branch first.** Both ecosystems have had cases where a minor framework upgrade broke a widely used third-party module. Never upgrade the framework version and ship to production in the same sprint.
+4. **Reassess your choice at the two-year mark, not before.** Switching frameworks mid-project is a rewrite (as noted above), but a structured two-year health check — dependency audit, performance benchmark, hiring-pool check — tells you whether your original choice still holds as your app and team have grown.
+
+In our experience delivering mobile apps for European enterprise clients, the framework that "loses" the maintenance argument is rarely the one with more releases — it is the one whose third-party ecosystem was never audited against the client's actual integration requirements before the build started. A one-day technical spike against your specific SDK list, run before the scorecard above, is the cheapest insurance available in this decision.
+
 Both frameworks are supported by [Manifera's mobile development team](https://www.manifera.com/services/mobile-app-development/), and the final recommendation always depends on the specific project requirements.
 
 ## FAQ
@@ -122,6 +145,9 @@ By combining local European account management with elite offshore talent, we en
 
 ### How does Manifera guarantee high-quality offshore engineering (Focus: react native)?
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your react native initiatives are executed with absolute precision.
+
+### How much ongoing maintenance effort should I budget after launching a React Native or Flutter app?
+Plan for 10-25% of one senior developer's time per year for framework upgrades, dependency audits, and OS compatibility work, plus a dedicated two-to-four-week annual "upgrade sprint" for major version changes. Audit your must-have third-party SDKs for framework support before you build, since abandoned native modules are the most common source of post-launch technical debt.
 
 <script type="application/ld+json">
 {
@@ -166,6 +192,14 @@ Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your react native initiatives are executed with absolute precision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much ongoing maintenance effort should I budget after launching a React Native or Flutter app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan for 10-25% of one senior developer's time per year for framework upgrades, dependency audits, and OS compatibility work, plus a dedicated two-to-four-week annual \"upgrade sprint\" for major version changes. Audit your must-have third-party SDKs for framework support before you build, since abandoned native modules are the most common source of post-launch technical debt."
       }
     }
   ]

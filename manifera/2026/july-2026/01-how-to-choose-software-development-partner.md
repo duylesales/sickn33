@@ -77,6 +77,27 @@ Technical skill without cultural alignment produces beautiful code that solves t
 - **Do they push back?** A team that agrees with every requirement without challenging assumptions is not thinking critically about your product.
 - **Do they speak your language?** Not literally — but can they translate complex technical decisions into business impact for you?
 
+## 7. Decode Their Pricing Model Before You Compare Quotes
+
+Here is a trap that catches almost every first-time founder: you request proposals from three agencies, and you get back three numbers that look nothing alike — €40,000, €65,000, and "€45/hour, estimate TBD." Without understanding what sits underneath each number, you cannot actually compare them. You are comparing apples to a shopping list.
+
+Software firms typically price work in one of three ways, and each shifts risk to a different party:
+
+- **Fixed Price.** You get one number for a defined scope. This feels safest to a non-technical founder, but it only works if the requirements are locked before coding starts. Any change request outside that scope gets billed separately — often at a markup, because the firm priced in a risk buffer for exactly this scenario. Fixed price is appropriate for a well-specified MVP with a written spec, not for a product still finding its shape.
+- **Time & Materials (T&M).** You pay for actual hours logged against the project, usually invoiced monthly. This is more honest about uncertainty, but it puts the burden on you to track velocity and catch scope creep before the invoice arrives. Ask upfront: is there a monthly cap, and who signs off on overages before they happen rather than after?
+- **Dedicated Team.** You pay a flat monthly rate per engineer, and that person (or pod) works exclusively on your product under your direction, following your backlog. This is the model most agencies — including Manifera — use for engagements beyond a single MVP sprint, because it scales cleanly as the roadmap grows without re-negotiating scope every quarter.
+
+None of these models is inherently better. The failure mode is comparing a Fixed Price quote against a T&M quote as if the headline number means the same thing. A €40,000 fixed-price quote with a narrow, rigidly defined scope can end up costing more than a €65,000 T&M engagement once you tally the change orders — because the fixed-price firm priced *around* your inevitable mid-project pivots, and the T&M firm didn't need to.
+
+To normalize quotes before you compare them, ask every finalist the same four questions:
+
+1. **"What exactly is included in this number — QA, project management, DevOps setup, staging environment?"** Some firms bury a 15-20% project management overhead inside the rate; others itemize it separately. If you do not ask, you will not know which quote is actually cheaper.
+2. **"What happens to a change request that falls outside the original scope document?"** Get the answer in writing, not verbally. This is where fixed-price budgets quietly double.
+3. **"What is your blended hourly rate once you include senior and junior staff on the project?"** A quote built entirely on senior rates but staffed mostly by juniors is a bait-and-switch waiting to happen.
+4. **"If I need to slow down or pause for a month, what is the cost and notice period?"** Dedicated team models usually have a ramp-down clause; fixed-price contracts often do not let you pause at all without forfeiting the milestone payment.
+
+A partner who answers these four questions clearly, without hedging, has priced the engagement honestly. A partner who gets vague or annoyed is telling you exactly how the invoice surprises will go later.
+
 ## Your Next Step
 
 Choosing the right software development partner is arguably the most consequential business decision a non-technical founder makes. Get it right, and you have a strategic asset for years. Get it wrong, and you are six months behind with nothing to show for it.
@@ -98,6 +119,9 @@ By combining local European account management with elite offshore talent, we en
 
 ### How does Manifera guarantee high-quality offshore engineering (Focus: software development company)?
 Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your software development company initiatives are executed with absolute precision.
+
+### How do I compare quotes that use different pricing models?
+Normalize them first. Ask each firm what is actually included in the number (QA, PM overhead, DevOps), what happens to change requests outside the original scope, their blended hourly rate across seniority levels, and the cost of pausing the engagement. A lower headline number on a rigid fixed-price quote can end up costing more than a transparent time-and-materials or dedicated team quote once change orders start arriving.
 
 <script type="application/ld+json">
 {
@@ -142,6 +166,14 @@ Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hu
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Amsterdam HQ provides strategic oversight while our Vietnam and Singapore hubs handle execution. This dual-shore model ensures European quality standards with offshore scalability. This ensures your software development company initiatives are executed with absolute precision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare quotes that use different pricing models?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normalize them first. Ask each firm what is actually included in the number (QA, PM overhead, DevOps), what happens to change requests outside the original scope, their blended hourly rate across seniority levels, and the cost of pausing the engagement. A lower headline number on a rigid fixed-price quote can end up costing more than a transparent time-and-materials or dedicated team quote once change orders start arriving."
       }
     }
   ]

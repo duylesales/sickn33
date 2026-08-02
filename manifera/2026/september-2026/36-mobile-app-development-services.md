@@ -53,6 +53,26 @@ Elite engineering teams default to React Native for **mobile app development ser
 2. **The "Over-the-Air" Update:** Native apps force you to wait for Apple's App Store review process (which can take days) just to fix a UI typo. React Native supports Over-the-Air (OTA) updates (via tools like Expo or CodePush), allowing you to push JavaScript UI fixes directly to users' phones instantly, bypassing the App Store review entirely.
 3. **Web Team Synergy:** If your company already has a web portal built in React (the most popular web framework), your web developers can easily read and contribute to the React Native mobile codebase. You create a unified engineering culture instead of isolated, siloed departments.
 
+## The Native Module Bridge: When React Native Needs an Escape Hatch
+
+Here is the detail that most React Native pitches conveniently skip: even the best cross-platform architecture is not 100% JavaScript. A well-built React Native app typically runs 90-95% of its logic in a single shared TypeScript codebase, but a small, specific slice of functionality still requires a hand-written **native module** — a small bridge of Swift or Kotlin code that exposes a native OS capability to the JavaScript layer.
+
+This is not a failure of React Native. It is how the framework is designed to work. The danger is not needing a native module — the danger is hiring an agency that doesn't know how to scope, budget, and build one, and instead panics and tells you "we need to rewrite this feature in full Native" the moment they hit a hardware edge case.
+
+**The features that typically require a native module bridge:**
+
+1. **Biometric authentication (Face ID / Touch ID / Android BiometricPrompt).** The OS-level security APIs are platform-specific and must be wrapped individually, though libraries like `react-native-biometrics` handle most of this out of the box.
+2. **Background location tracking.** Our logistics driver-tracking example is the textbook case: keeping GPS active while the app is backgrounded or the phone is locked requires direct calls to iOS's `CLLocationManager` background modes and Android's foreground service APIs. A generic JS location library will silently stop tracking the moment the driver locks their phone — a bug that only surfaces in production.
+3. **Native payment SDKs.** Apple Pay, iDEAL (critical for a Dutch-market client), and certain card-present payment terminals ship native-only SDKs that require a bridge rather than a pure JS integration.
+4. **Bluetooth Low Energy (BLE) hardware pairing.** Warehouse scanners, medical devices, and IoT sensors often need low-level BLE protocol handling that generic cross-platform libraries only partially support.
+5. **Camera-based document or ID scanning.** High-accuracy OCR and ID-verification SDKs (for KYC-regulated fintech apps, for instance) are usually distributed as native iOS/Android libraries first.
+
+The modern React Native architecture (JSI and Turbo Modules, the successor to the old asynchronous "bridge") makes this integration meaningfully faster than it was five years ago — native calls are now synchronous and far lower-latency, which matters for something like a camera scan that needs to feel instant.
+
+The correct engineering process is to identify these hardware touchpoints during the architecture-planning phase, *before* a single line of code is written — not discover them mid-sprint. At Manifera, our Dutch Tech Leads run a hardware-dependency audit in week one: they walk through every feature on the roadmap and flag which ones will need a native module, estimate the extra 3-10 days per module, and scope it into the project plan up front. This means the client sees one honest quote that already accounts for the 5-10% of native work, instead of a "surprise" change order six weeks into the build when the agency discovers the app needs Face ID support.
+
+This is also why hiring generalist React Native developers alone is a risk. Our Vietnamese engineering pods pair React Native specialists with engineers who are also fluent in native iOS/Android development, specifically so that when a native module is required, it's built by someone who understands both sides of the bridge — not outsourced to a third-party contractor who has never seen the rest of your codebase.
+
 ## The Manifera Mobile Strategy
 
 Standard offshore agencies love pitching Native development because it allows them to sell you two separate teams, maximizing their billable hours. 
@@ -83,6 +103,9 @@ In a Native app, fixing a simple typo requires compiling a new version and submi
 
 ### (Scenario: Procurement Officer evaluating Manifera) Why does Manifera push clients toward React Native instead of Native development?
 Standard agencies push Native to double their billable hours (charging you for an iOS team and an Android team). Manifera's Dutch Architects enforce React Native for standard enterprise apps to optimize your ROI. It halves your development costs, ensures feature parity across platforms, and drastically reduces your long-term DevOps maintenance.
+
+### (Scenario: CTO negotiating project scope) What happens if my React Native app needs a feature that requires native code, like Face ID or a payment SDK?
+This is normal and expected — even the best React Native apps run a small native module bridge (usually 5-10% of the codebase) for hardware-specific features like biometric authentication, background GPS tracking, native payment SDKs (Apple Pay, iDEAL), or Bluetooth hardware pairing. The risk isn't needing a native module; it's hiring a team that doesn't scope it upfront. Manifera's Dutch Tech Leads audit hardware dependencies in week one and budget the extra 3-10 days per module into the original quote, so there are no surprise change orders mid-project.
 
 <script type="application/ld+json">
 {
@@ -127,6 +150,14 @@ Standard agencies push Native to double their billable hours (charging you for a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We optimize for your capital efficiency. Building two native apps means paying for the same business logic twice. Our Dutch Architects mandate React Native for standard enterprise apps to unify your codebase and minimize long-term technical debt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my React Native app needs a feature that requires native code, like Face ID or a payment SDK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is normal: even the best React Native apps use a small native module bridge, usually 5-10% of the codebase, for hardware-specific features like biometric authentication, background GPS, native payment SDKs, or Bluetooth pairing. Manifera's Dutch Tech Leads audit these hardware dependencies in week one and budget them into the original quote, avoiding mid-project surprise change orders."
       }
     }
   ]

@@ -68,6 +68,18 @@ The Dedicated Team model is the hybrid evolution. You hire an intact, cross-func
 | **Setup Time** | Fast (1-2 weeks) | Slow (4-8 weeks for contracts) | Medium (2-4 weeks) |
 | **Best Used For** | Filling temporary skill gaps | Predictable, static projects | Long-term core product dev |
 
+## 4. The Hybrid "Core + Flex" Model
+
+Increasingly, scale-ups do not pick a single model — they blend two. The most common pattern in 2026 is what we call **Core + Flex**: a permanent Dedicated Team forms the stable core of the product (the Tech Lead, the QA engineer, the senior developers who carry institutional knowledge across quarters), while Staff Augmentation fills short, specific capacity spikes on top of that core.
+
+**How it works in practice:** A B2B SaaS company running a 6-person Dedicated Team decides to launch a new payments integration in Q3. Rather than pulling core team members off the roadmap to learn Stripe Connect from scratch, they staff-augment a single payments specialist for 10 weeks, embedded directly into the existing Dedicated Team's standups and Jira board. The specialist reports to the Dedicated Team's own Tech Lead, not to the client directly — this is the key structural difference from pure Staff Augmentation, where the client's own engineering manager does that job.
+
+**Why this works better than either model alone:** Pure Staff Augmentation fails when the client lacks internal technical leadership to direct the augmented developer. By nesting the augmented specialist inside an existing Dedicated Team, the Tech Lead who already understands your codebase provides that direction — you get flexible, short-term specialist capacity without needing to supply the management overhead yourself.
+
+**When to use it:** Core + Flex makes sense once you already run a Dedicated Team of at least 4-5 people and face a genuinely temporary, skill-specific need — a security audit remediation, a one-off cloud migration, or a seasonal traffic spike requiring extra QA capacity. It is the wrong fit if the "temporary" need is really a signal that your roadmap has permanently grown; at that point, simply expand the Dedicated Team's headcount instead of running a parallel augmentation contract indefinitely.
+
+**Commercial structure:** Expect the augmented specialist to be billed at a separate hourly or monthly rate from the Dedicated Team's retainer, but under the same master agreement, so a single point of contact (your Account Manager) manages both invoices and both notice periods.
+
 ## Execution at Manifera
 
 At Manifera, we recognize that European scale-ups need more than just raw coding hours. While we offer Staff Augmentation for highly mature clients, our flagship offering is the [Dedicated Development Team](https://www.manifera.com/services/dedicated-development-teams/).
@@ -99,6 +111,10 @@ Setting up a Captive Center (your own legal entity in Vietnam or India) requires
 ### How do we integrate a Dedicated Team with our existing Onshore team? (Scenario: VP Engineering with 10 local devs adding 5 offshore devs)
 
 Do not mix them randomly. Avoid the trap of having 1 onshore backend dev and 1 offshore frontend dev working on the exact same micro-feature. Instead, use the [Agile at Scale team topology](41-agile-at-scale-running-multiple-scrum-teams-without-chaos.md). Give the Dedicated Team complete ownership of a specific business domain or microservice. They integrate with your onshore team via well-defined APIs and weekly Scrum of Scrums, minimizing synchronous friction.
+
+### When does it make sense to blend Staff Augmentation with a Dedicated Team? (Scenario: Scale-up needing a short-term specialist without disrupting its core roadmap)
+
+Once you already run a Dedicated Team of 4-5 people or more, "Core + Flex" is often smarter than expanding the team itself for a temporary need. Staff-augment a single specialist (e.g., a payments or security expert) for a fixed period, but embed them inside the existing Dedicated Team, reporting to its Tech Lead rather than to you directly. You get specialist capacity without supplying the management overhead that pure Staff Augmentation would require, billed separately but under the same master agreement.
 
 <script type="application/ld+json">
 {
@@ -143,6 +159,14 @@ Do not mix them randomly. Avoid the trap of having 1 onshore backend dev and 1 o
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Give the Dedicated Team ownership of a specific domain or microservice. Integrate via APIs and Scrum of Scrums, minimizing synchronous friction between the time zones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does it make sense to blend Staff Augmentation with a Dedicated Team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you run a Dedicated Team of 4-5 people or more, staff-augment a single specialist for a temporary need and embed them inside that team, reporting to its Tech Lead rather than to you directly, avoiding the management overhead pure Staff Augmentation requires."
       }
     }
   ]

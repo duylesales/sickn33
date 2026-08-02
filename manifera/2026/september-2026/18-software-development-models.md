@@ -62,6 +62,26 @@ The new microservice is now live in production. If it fails, the Architect simpl
 
 Over the next 18 months, the team continues this process, slowly carving out services one by one (Billing, then User Auth, then Logistics) until the legacy monolith is completely bypassed and can be safely deleted.
 
+## The Database Strangulation Problem: Migrating Shared State
+
+The three steps above make the Strangler Fig pattern sound clean at the application layer. But the hardest part of any legacy modernization is never the API routing; it is the database.
+
+The legacy PHP monolith and the new microservices frequently need to read and write the *same* underlying data during the transition period, which can last 18 months or more. If you get this wrong, you end up with two versions of the truth: a customer's address updated in the new microservice, but the old monolith's report still shows the stale record, because the two systems don't share state.
+
+### 1. Dual Writes Are a Trap
+The naive fix is a "dual write": the application writes to both the old monolith's database and the new microservice's database simultaneously. This is fragile. If the second write fails after the first one succeeds (a dropped network packet, a timeout), the two databases silently diverge, and nobody notices until finance flags a discrepancy during reconciliation weeks later.
+
+### 2. Change Data Capture (CDC) as the Real Solution
+Mature engineering teams solve this with Change Data Capture instead. A tool like Debezium reads the legacy monolith's database transaction log directly (not through application code) and streams every insert, update, and delete as an event onto a message bus like Kafka. The new microservice subscribes to that event stream and keeps its own database synchronized in near-real time, without the legacy application ever needing to know the new service exists. This decouples the migration timeline from the legacy codebase's fragility: you are reading the database's transaction log, not touching the 15-year-old PHP code at all.
+
+### 3. The Cutover Checklist for the Database Layer
+Before an Architect redirects the API Gateway to route a domain's traffic to the new microservice, they must verify three things:
+- **Reconciliation parity:** An automated job compares row counts and checksums between the old and new database for that domain, run continuously for at least one full business cycle (for example, a full monthly billing run) with zero discrepancies.
+- **Rollback direction is proven, not assumed:** The team has tested, not just documented, reversing the CDC pipeline, so that if the new microservice needs to be rolled back, data written to the new database during the cutover window can flow back into the legacy system without loss.
+- **A designated data owner signs off:** A single named engineer, not a committee, is accountable for confirming the domain's data is safe to cut over, removing the ambiguity that causes most legacy migrations to stall in "almost done" for months.
+
+Only once the database layer has its own strangulation strategy, not just the API layer, is a Strangler Fig migration actually safe to execute at enterprise scale.
+
 ## The Manifera Modernization Execution
 
 Standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies love pitching the Big Bang Rewrite because it allows them to sell you a massive, 12-month fixed-price contract with junior developers working in isolation.
@@ -92,6 +112,9 @@ In theory, the initial setup of an API Gateway takes slight effort, but in reali
 
 ### (Scenario: Procurement Officer evaluating Manifera) How does Manifera execute legacy modernization projects?
 Our Dutch Architects perform an initial audit of your legacy system to define the API boundaries and identify which isolated module to modernize first (the lowest risk, highest value module). Our Vietnamese engineering pods then build that specific microservice and integrate it via an API Gateway. We repeat this governed process until your entire system is modernized safely.
+
+### (Scenario: Lead Architect designing the migration) How do you handle a shared database when using the Strangler Fig pattern?
+The hardest part of a Strangler Fig migration is rarely the API layer, it's the database. Naive 'dual writes' to both the old and new database are fragile and can silently diverge. Mature teams use Change Data Capture (CDC) tools like Debezium to stream every change from the legacy database's transaction log into the new microservice's database in near-real time, keeping both systems synchronized without ever touching the legacy application code.
 
 <script type="application/ld+json">
 {
@@ -136,6 +159,14 @@ Our Dutch Architects perform an initial audit of your legacy system to define th
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects audit your legacy monolith, define API boundaries, and plan a safe Strangler Fig migration. Our Vietnamese pods then rebuild the system piece-by-piece (e.g., migrating just the Billing module first) under strict architectural governance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you handle a shared database when using the Strangler Fig pattern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The database, not the API layer, is the hardest part of a Strangler Fig migration. Instead of fragile 'dual writes', mature teams use Change Data Capture (CDC) tools like Debezium to stream changes from the legacy database's transaction log into the new microservice's database in near-real time, keeping both systems synchronized safely."
       }
     }
   ]

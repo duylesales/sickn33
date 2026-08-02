@@ -61,7 +61,28 @@ In 2026, building physical servers is absurd. But how deep should you dive into 
 The modern software stack relies on **Docker and Kubernetes**. 
 By containerizing your application, you abstract the infrastructure. You can deploy your Docker containers on AWS on Monday, and seamlessly migrate the entire system to Microsoft Azure or a specialized [Euro Cloud](https://www.manifera.com/services/migration-to-nl-euro-cloud-en/) (for strict GDPR compliance) on Friday. 
 
-## 4. The Manifera Selection Matrix
+## 4. Authentication and the API Layer: The Decision You Cannot Reverse Cheaply
+
+Most stack conversations focus on the frontend framework and the database, because those are the visible, glamorous choices. The decision that actually locks you in for the longest, however, is how you handle identity and how services talk to each other — because unlike a frontend framework, you cannot quietly swap your authentication provider without touching every single user account.
+
+**Build vs. Buy on Authentication:** Rolling your own authentication system in-house is one of the most common, and most expensive, mistakes a growing engineering team makes. Password hashing, session management, OAuth flows for "Sign in with Google," multi-factor authentication, and SOC 2-grade audit logging are all deceptively hard to get right, and a single mistake (like a weak password reset flow) becomes a headline security breach. The 2026 default should be a managed identity provider — Auth0, Clerk, WorkOS, or a self-hosted Keycloak instance if strict European data residency demands it — rather than a hand-rolled `users` table with a `bcrypt` column and a prayer.
+
+**REST vs. GraphQL vs. tRPC:** For the API layer connecting your frontend to your backend, the "boring" 2026 default remains a well-documented REST API using OpenAPI specifications, because it is universally understood by every developer you will ever hire and every AI coding assistant you will ever use. GraphQL earns its added complexity only when you have a genuinely diverse set of client applications (web, iOS, Android, and third-party integrators) each needing to query different shapes of the same underlying data. tRPC is excellent within a single TypeScript monorepo where the frontend and backend are maintained by the same team, but it becomes a liability the moment you need to expose that API to an external partner who is not running TypeScript.
+
+**The Golden Rule:** Choose your identity provider and your API contract style based on who else needs to talk to your system in three years, not on what is fastest to prototype this week. A well-documented REST API with a managed auth provider in front of it can absorb almost any future integration request; a bespoke, undocumented authentication flow built to save two weeks in Month 1 will cost you two months of migration pain when you eventually need SSO for an enterprise customer.
+
+## 5. Observability: The Stack You Only Notice When It's Missing
+
+A software stack is not complete once the code deploys. The unglamorous, frequently skipped layer is observability — the tooling that tells you what your application is actually doing in production, at 3am, when something breaks and your biggest customer is the one reporting it.
+
+**The Three Pillars, Concretely:**
+- **Logging:** Structured, queryable logs (JSON-formatted, shipped to something like Datadog, Grafana Loki, or the ELK stack) rather than raw `console.log` statements scattered through the codebase. If you cannot search your logs by request ID across every microservice involved in a single user action, you are debugging blind.
+- **Metrics:** Dashboards tracking latency percentiles (p50, p95, p99 — not just averages, which hide the worst-case experience your slowest 5% of users actually have), error rates, and throughput, typically via Prometheus and Grafana or a managed equivalent.
+- **Tracing:** Distributed tracing (OpenTelemetry is the 2026 vendor-neutral standard) that follows a single request across every service boundary it touches, so when a checkout flow times out, you can see in seconds whether the bottleneck was the payment gateway, the database, or an internal API call, rather than guessing.
+
+**Why This Belongs in a Stack Decision, Not an Afterthought:** Teams that bolt on observability after an outage inevitably choose tools that do not integrate cleanly with the rest of the stack, creating a second fragmented system to maintain. Choosing OpenTelemetry-compatible tooling from day one — regardless of which specific backend you send the data to — means you are never locked into a single observability vendor, mirroring the same anti-lock-in logic that governs the Docker and Kubernetes decision above.
+
+## 6. The Manifera Selection Matrix
 
 At Manifera, we use a strict "Ecosystem Viability Matrix" before approving a software stack for our clients. We analyze:
 1. **Community Health:** Are there regular security patches?
@@ -88,6 +109,9 @@ Most business applications deal with relational data (e.g., a User has many Orde
 
 ### How does Docker prevent Cloud Vendor Lock-in?
 Docker packages your application code, libraries, and dependencies into a single, standardized "container." Because this container is self-sufficient, it can run identically on any cloud provider (AWS, Azure, Google Cloud) without needing to rewrite the application code for that specific cloud environment.
+
+### Should we build our own authentication system or use a managed provider like Auth0?
+Use a managed provider. Password hashing, OAuth flows, multi-factor authentication, and audit logging are deceptively hard to implement correctly, and a single mistake becomes a security breach. A managed identity provider (or self-hosted Keycloak for strict data residency needs) is the safer, more maintainable 2026 default.
 
 <script type="application/ld+json">
 {
@@ -132,6 +156,14 @@ Docker packages your application code, libraries, and dependencies into a single
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Docker packages your app into a self-contained unit. This container can run identically on AWS, Azure, or private European clouds, allowing you to migrate providers without rewriting code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should we build our own authentication system or use a managed provider like Auth0?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a managed provider. Password hashing, OAuth flows, MFA, and audit logging are deceptively hard to implement correctly, and a single mistake becomes a security breach. A managed identity provider, or self-hosted Keycloak for strict data residency needs, is the safer default."
       }
     }
   ]

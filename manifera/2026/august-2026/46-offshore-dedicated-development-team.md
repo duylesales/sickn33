@@ -69,6 +69,24 @@ In a new team of strangers, developers are afraid to look incompetent. They will
 **3. Shared Coding Standards**
 The Pod already agrees on how to structure a React component or name a database table. They do not waste time in "bikeshedding" debates over syntax formatting.
 
+## The First 90 Days: What Onboarding a Pod Actually Looks Like
+
+CTOs who have been burned by Staff Augmentation often ask a fair question before committing to a Pod: "How long until they're actually productive, and how much of my own time will it eat?" This is measurable, and it should be defined in writing before the engagement starts, not discovered by accident in week six.
+
+**Days 1-5: Context transfer, not code-writing.**
+The Pod's Tech Lead — not the whole team — spends this week embedded with your internal architect: reviewing the codebase, the existing ADRs (or the lack of them), the deployment pipeline, and the top three sources of technical debt. Access is provisioned read-only first (VPN, staging environment, sanitized documentation). No production credentials are issued this week under any circumstance. The deliverable at the end of Day 5 is a short written onboarding brief the Pod's Tech Lead produces for their own team, proving they actually absorbed the context rather than just attending meetings.
+
+**Days 6-15: The Shadow Sprint.**
+The Pod picks up 2-3 small, low-risk, well-understood tickets — a bug fix, a minor feature, a UI polish item — deliberately chosen to be reversible if done wrong. This sprint exists to calibrate estimation (do the Pod's story points match your team's historical velocity?) and to stress-test the PR review loop end-to-end, not to hit a delivery deadline. Expect the first Pod-authored PR to merge by day 10; if it hasn't, that is the signal to intervene immediately, not at the end of the sprint.
+
+**Days 16-45: Ramp to Full Velocity.**
+The Pod takes ownership of a defined feature domain (e.g., "the billing module" or "the reporting dashboard") rather than a scattered grab-bag of tickets. Ownership of a bounded domain, rather than fragmented tasks across the whole codebase, is what allows the Pod to build the deep context that produces genuinely autonomous decision-making. By day 30, a well-matched Pod should be operating at roughly 70-80% of its steady-state velocity; by day 45, at full velocity, with the internal Tech Lead's review burden dropping to spot-checks of architecture rather than line-by-line code review.
+
+**Day 90: The Formal Checkpoint.**
+This is when you measure, not guess. Track three numbers against your own historical baselines: **PR cycle time** (how long from open to merge), **defect escape rate** (bugs found in production versus caught in CI/QA), and **internal Tech Lead hours per week spent unblocking the Pod** (this should have fallen close to zero by day 90). If any of these three metrics is trending the wrong way at the 90-day mark, it is far cheaper to address it in a structured review than to let another quarter pass hoping it self-corrects.
+
+The point of defining this timeline upfront, in the contract or statement of work, is that it converts "trust me, they're good" into a shared, falsifiable scorecard both sides agree to before day one. An agency unwilling to commit to a 90-day onboarding structure in writing is signaling that they don't actually have a repeatable onboarding process — which means you are about to relearn the Staff Augmentation Fallacy under a different name.
+
 ## The Manifera Hybrid Model: Dutch Governance, Vietnamese Velocity
 
 Many CTOs hesitate to hand over full autonomous control to an offshore team due to fears of architectural drift. 
@@ -99,6 +117,9 @@ Because when you hire 5 freelancers, you are acting as their Tech Lead, their QA
 
 ### (Scenario: IT Director evaluating security) How does a dedicated offshore Pod handle data security and GDPR compliance?
 In the Manifera Hybrid model, GDPR compliance and architectural security are governed by our Dutch leadership. The Pod operates within a Zero Trust architecture: they connect via secure VPNs, use encrypted development environments, and never have access to production data or PII (Personally Identifiable Information). They test against anonymized, synthetic datasets.
+
+### (Scenario: CTO planning capacity for next quarter) How long does it take a new offshore Pod to reach full productivity?
+With a structured onboarding process, expect roughly 90 days to full velocity: days 1-5 for read-only context transfer, days 6-15 for a low-risk "Shadow Sprint" that calibrates estimation and the PR review loop, and days 16-45 ramping to 70-100% steady-state velocity as the Pod takes ownership of a defined feature domain. By day 90, track PR cycle time, defect escape rate, and your internal Tech Lead's weekly hours spent unblocking the Pod as the formal success checkpoint.
 
 <script type="application/ld+json">
 {
@@ -143,6 +164,14 @@ In the Manifera Hybrid model, GDPR compliance and architectural security are gov
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Through Zero Trust architecture and European governance. Offshore engineers use secure VPNs, encrypted environments, and test against anonymized datasets. They never have direct access to production PII, ensuring GDPR compliance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take a new offshore Pod to reach full productivity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roughly 90 days with a structured process: days 1-5 for read-only context transfer, days 6-15 for a low-risk Shadow Sprint, and days 16-45 ramping to full velocity as the Pod owns a defined feature domain. Day 90 is a formal checkpoint tracking PR cycle time, defect escape rate, and internal Tech Lead hours spent unblocking the team."
       }
     }
   ]

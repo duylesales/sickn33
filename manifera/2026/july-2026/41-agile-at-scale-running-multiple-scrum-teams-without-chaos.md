@@ -80,6 +80,22 @@ Track these metrics to detect scaling problems early:
 | Sprint goal completion rate | >80% | <60% |
 | Unplanned work ratio | <20% | >40% |
 
+## The Team-Splitting Playbook
+
+Every engineering organisation eventually hits the moment where an existing team has grown too large or too broad in scope, and the real question is not "should we scale" but "how do we split this specific team without losing three sprints to reorganisation chaos." Most leaders underestimate this transition because it looks like an org chart change when it is actually a knowledge-transfer and dependency-untangling exercise.
+
+**The seed-and-split method, in four stages:**
+
+1. **Identify the fault line (1-2 weeks before the split).** Look at your codebase and backlog for a natural seam — a module, a business capability, or a customer segment that one subset of the team already gravitates toward. Do not split by seniority (all seniors on one team) or you create a junior team that cannot make architectural decisions independently. Split along the fault line the code and the backlog already suggest.
+
+2. **Seed the new team with one anchor and one connector (sprint 0).** Move one senior engineer who will own technical decisions for the new team, plus one engineer who has the deepest context on the shared components both teams will still touch. The connector's job for the first 2-3 sprints is explicitly to answer the other team's questions about legacy context — budget 20-30% of their time for this, and say so out loud in planning so it is not treated as a distraction from "real work."
+
+3. **Run a shared retro for the first two sprints post-split.** Even though the teams now have separate backlogs and separate standups, keep one joint retrospective for the first two sprints to surface dependency friction while it is still cheap to fix — a shared library nobody assigned ownership of, a CI pipeline that still assumes one team, an on-call rotation that was never split.
+
+4. **Declare the split "complete" only when velocity stabilises, not on day one.** Expect combined velocity across the two new teams to dip 20-30% below the original single team's velocity for 2-3 sprints as context, tooling, and ownership settle. This is a healthy, temporary cost — not a sign the split failed. If velocity has not recovered to at least 90% of the pre-split baseline by sprint 4, that is the signal to revisit whether the fault line you chose actually created independent teams or just two teams still coupled through hidden dependencies.
+
+A practical trigger: once a single team's backlog spans more than two distinct business capabilities, or sprint planning routinely runs past 90 minutes, that team is already overdue for a split. Waiting until the team hits 12-15 people is waiting too long — the fault line and the knowledge transfer are both easier while the team is still 8-10 people.
+
 ## Scaling Agile Across Time Zones
 
 Distributed agile adds complexity because ceremonies cannot always happen synchronously. At Manifera, our teams in Amsterdam and Ho Chi Minh City maintain agile velocity through structured async practices and strategic overlap hours.
@@ -111,6 +127,10 @@ One dedicated Product Manager per 1-2 Scrum teams is the standard. Below this ra
 ### How do we maintain code quality when multiple teams contribute to the same codebase? (Scenario: CTO managing 5 teams working in a monorepo)
 
 Four mechanisms: (1) CODEOWNERS file — every directory has an assigned owning team that must approve changes. (2) Automated linting and formatting — enforced in CI, no exceptions. (3) Architectural fitness functions — automated tests that verify architectural boundaries (e.g., "the billing module cannot import from the notifications module"). (4) Weekly architecture review — a 30-minute meeting where teams present significant changes for cross-team feedback before merging.
+
+### How do we split a team without losing velocity? (Scenario: Engineering Manager whose 12-person team needs to become two teams)
+
+Use the seed-and-split method: identify a natural fault line in the codebase or backlog, seed the new team with one senior anchor and one connector who bridges legacy context, run a shared retro for the first two sprints to surface hidden dependencies, and expect a temporary 20-30% velocity dip across both teams for 2-3 sprints before declaring the split complete.
 
 <script type="application/ld+json">
 {
@@ -155,6 +175,14 @@ Four mechanisms: (1) CODEOWNERS file — every directory has an assigned owning 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Four mechanisms: CODEOWNERS file for directory ownership, automated linting in CI, architectural fitness functions verifying boundaries, and weekly architecture reviews for significant changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we split a team without losing velocity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the seed-and-split method: identify a natural fault line in the codebase or backlog, seed the new team with a senior anchor and a connector who bridges legacy context, run a shared retro for the first two sprints, and expect a temporary 20-30% velocity dip for 2-3 sprints before the split is complete."
       }
     }
   ]

@@ -64,6 +64,20 @@ Before signing a contract with an **IT web development company**, demand written
 | **"How is the API secured?"** | "We hide the admin buttons for regular users on the frontend." | "The backend API is completely decoupled from the frontend. The backend verifies authorization on every incoming request, regardless of what the frontend UI displays." |
 | **"How do you handle sensitive PII?"** | "Our database is hosted on AWS, which is very secure." | "We encrypt specific PII columns (like social security numbers) at the application level before they are written to the database (Data-at-Rest encryption)." |
 
+## The Supply Chain Blind Spot: Your Vulnerability Might Not Be Your Code At All
+
+Most CISOs auditing an **IT web development company** focus entirely on the code the vendor's engineers actually write. This is a critical blind spot, because a modern web application is not really "your code" — it is a thin layer of custom logic sitting on top of hundreds, sometimes thousands, of open-source third-party packages (npm, PyPI, NuGet) pulled in as dependencies. A single production application can easily depend, transitively, on 800-1,500 external packages that no one on the vendor's team wrote, reviewed, or fully understands.
+
+This is exactly how catastrophic breaches happen without a single line of the vendor's own code being flawed. The Log4Shell vulnerability of 2021 is the canonical example: a remote code execution flaw buried inside Log4j, a logging utility so ubiquitous that it was silently present in an enormous share of enterprise Java applications worldwide, including systems built by teams who had never heard of it because it was a dependency of a dependency of a dependency. Attackers did not need to breach your vendor's code review process — they only needed one unpatched package, three layers deep in the dependency tree, that nobody was watching.
+
+**Two specific attack patterns your vendor must defend against:**
+- **Typosquatting packages.** An attacker publishes a malicious package with a name almost identical to a popular legitimate one (e.g., `reqeusts` instead of `requests`, or `crossenv` instead of `cross-env`). A developer under deadline pressure makes one typo in an `npm install` command, and malicious code — often designed to exfiltrate environment variables and API keys — ships straight into your production build.
+- **Compromised maintainer accounts.** A legitimate, trusted package with millions of weekly downloads gets a malicious update pushed by an attacker who compromised the original maintainer's credentials. Your build pipeline, which auto-updates to the "latest" version, pulls in the compromised code automatically.
+
+**The Audit Question to Ask:** "Do you maintain a Software Bill of Materials (SBOM), and do you run automated Software Composition Analysis (SCA) on every build?" An SBOM is a complete, machine-readable inventory of every third-party component in your application, down to the exact version number. SCA tools (Snyk, Dependabot, Mend) continuously cross-reference that inventory against live vulnerability databases (the National Vulnerability Database, GitHub Security Advisories) and automatically flag or block builds that pull in a package with a known critical vulnerability — including transitive dependencies buried several layers deep that a manual review would never catch.
+
+An **IT web development company** that cannot produce an SBOM on request, or that has no automated SCA gate in its CI/CD pipeline, is leaving your application's security dependent entirely on the security hygiene of hundreds of anonymous open-source maintainers you have never vetted.
+
 ## The Manifera Security Standard
 
 At Manifera, we know that [offshore software development](https://www.manifera.com/services/offshore-software-development/) is often viewed as a security risk by enterprise CISOs. We built our Hybrid Offshore model to eliminate that risk entirely.
@@ -92,6 +106,9 @@ By integrating SAST (Static Application Security Testing) tools like SonarQube o
 
 ### (Scenario: Procurement Officer evaluating risk) How does Manifera ensure GDPR compliance with an offshore team?
 Through our Hybrid Offshore model. Our Dutch Architects act as the compliance firewall. Furthermore, we employ a Zero Trust development environment: our Vietnamese engineers never have access to production databases containing real PII. They build and test the software using strictly anonymized, synthetic data, ensuring GDPR compliance is maintained at all times.
+
+### (Scenario: CISO worried about risks outside the vendor's own code) Can our application be breached even if the vendor's custom code has no vulnerabilities?
+Yes. A typical web application depends on hundreds or thousands of third-party open-source packages that the vendor's engineers never wrote or reviewed, and a single unpatched or malicious package buried deep in that dependency tree (as happened with the Log4Shell vulnerability) can compromise the entire system. Demand a Software Bill of Materials (SBOM) and automated Software Composition Analysis (SCA) scanning on every build, so vulnerable or compromised dependencies are flagged and blocked before they reach production.
 
 <script type="application/ld+json">
 {
@@ -136,6 +153,14 @@ Through our Hybrid Offshore model. Our Dutch Architects act as the compliance fi
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects act as a compliance firewall. Our offshore engineers operate in a Zero Trust environment and never access production PII. They build and test using only anonymized, synthetic data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can our application be breached even if the vendor's custom code has no vulnerabilities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Applications depend on hundreds or thousands of third-party open-source packages the vendor never wrote, and a single unpatched or malicious dependency (as with Log4Shell) can compromise the system. Demand a Software Bill of Materials (SBOM) and automated Software Composition Analysis (SCA) scanning on every build to catch these before production."
       }
     }
   ]

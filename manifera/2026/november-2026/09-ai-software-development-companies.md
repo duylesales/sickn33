@@ -68,6 +68,29 @@ Our Autonomous Pod architected a robust RAG pipeline. By engineering precise tex
 | **Hallucination Rate** | High (Unconstrained context) | Near-Zero (Strict RAG constraints) |
 | **Latency / Performance** | 20+ seconds per query | Sub-second Semantic Caching |
 
+## The Missing Discipline: Evaluation Harnesses Against Silent Model Drift
+
+Even a properly secured RAG pipeline degrades over time in ways a superficial vendor never detects. Underlying LLM providers update their models—sometimes silently—chunking strategies drift as your source documents change, and prompt templates that scored well in a demo six months ago quietly stop working as your data grows. Most ai software development companies ship a pipeline, collect the invoice, and walk away without ever building the instrumentation to catch this decay.
+
+### Building the Golden Dataset
+
+Before we consider any RAG or agentic system production-ready, our pods construct a golden evaluation dataset: a curated set of 50-150 representative query/expected-answer pairs drawn directly from your domain, reviewed and signed off by your subject matter experts. This dataset becomes the regression suite for the AI layer, exactly as a unit test suite protects a codebase.
+
+### The Four-Metric Scorecard
+
+Every model update, prompt change, or embedding model swap is run against the golden dataset before deployment, scored against four metrics:
+
+1.  **Faithfulness** — does the answer stay strictly grounded in the retrieved chunks, with zero fabricated claims?
+2.  **Context Precision** — what percentage of retrieved chunks were actually relevant to the query, exposing wasted token spend?
+3.  **Answer Relevance** — does the response actually address what the user asked, not just something topically adjacent?
+4.  **Latency Regression** — has p95 response time drifted beyond the previously agreed SLA threshold?
+
+Using frameworks like RAGAS or a custom LLM-as-judge harness, we assign each metric a numeric score and gate deployment on a minimum composite threshold (typically 85%+ across all four). If a change—say, swapping to a cheaper embedding model to cut cost—drops faithfulness below that gate, the change is rejected automatically in CI, before it ever reaches a live user. This turns "the AI feels like it got worse" from an anecdotal complaint raised weeks later into a hard, version-controlled regression caught the same day it was introduced.
+
+### Why This Matters More As Your Data Scales
+
+The failure mode compounds with scale. A pipeline that scored 92% faithfulness against a 10,000-document knowledge base can quietly slip to 78% once that base grows to 100,000 documents, simply because chunk boundaries now split more context mid-sentence and the vector index has to discriminate between far more near-duplicate passages. Without a running eval harness, this decay is invisible until an executive asks the chatbot a routine question and receives a confidently wrong answer in a board meeting. Our pods re-run the golden dataset on a fixed weekly cadence in addition to every deployment, so drift introduced purely by data growth—not code changes—still surfaces on a schedule your team can act on.
+
 ## Reclaim Your IP: Start Your Bespoke Build
 
 Stop trusting your enterprise data to agencies that treat AI like a frontend widget. If your roadmap demands mathematically sound, secure, and hallucination-free AI architecture, you need elite data engineering.
@@ -90,6 +113,9 @@ Security is governed by our Amsterdam headquarters. We architect local Data Loss
 
 ### (Scenario: IT Manager fixing slow responses) Why does our AI chatbot take 20 seconds to answer a question?
 Slow responses are caused by unoptimized context windows and network latency. We implement Semantic Caching. If a user asks a question mathematically similar to a previous one, our architecture intercepts the request and serves the cached answer instantly, bypassing the LLM entirely.
+
+### (Scenario: CTO worried about quality decay) How do you know if our AI's answer quality is degrading over time?
+We build a golden evaluation dataset of 50-150 real query/answer pairs signed off by your domain experts, then score every model, prompt, or embedding change against four metrics—faithfulness, context precision, answer relevance, and latency—using a RAGAS-style harness. Any change that drops the composite score below our 85% gate is rejected in CI automatically, before it reaches a live user.
 
 <script type="application/ld+json">
 {
@@ -134,6 +160,14 @@ Slow responses are caused by unoptimized context windows and network latency. We
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Slow responses are caused by unoptimized context windows and network latency. We implement Semantic Caching. If a user asks a question mathematically similar to a previous one, our architecture intercepts the request and serves the cached answer instantly, bypassing the LLM entirely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO worried about quality decay) How do you know if our AI's answer quality is degrading over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We build a golden evaluation dataset of 50-150 real query/answer pairs signed off by your domain experts, then score every model, prompt, or embedding change against four metrics—faithfulness, context precision, answer relevance, and latency—using a RAGAS-style harness. Any change that drops the composite score below our 85% gate is rejected in CI automatically, before it reaches a live user."
       }
     }
   ]

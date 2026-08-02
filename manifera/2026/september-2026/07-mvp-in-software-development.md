@@ -62,6 +62,26 @@ An MVA requires automated Continuous Integration and Continuous Deployment (CI/C
 An MVP typically weaves business rules directly into the UI components (e.g., placing tax calculation logic inside a React button). 
 An MVA enforces separation of concerns. The tax calculation logic is isolated in a core backend service. It takes 10% longer to build initially, but it prevents the entire application from having to be rewritten when you eventually launch a mobile app.
 
+## The Technical Due Diligence Audit: What Series A Investors Actually Check
+
+Here is what most founders don't realize until it's too late: the "throwaway code" conversation doesn't end when your MVP succeeds in the market. It resurfaces, in a much more hostile form, during Series A technical due diligence.
+
+Before a venture capital firm wires funds, they typically send an independent engineering auditor (or a technical partner at the fund) to spend two to five days inspecting your codebase. This isn't a courtesy check. It directly affects your valuation and the covenants attached to your term sheet. Founders who assume "the product works, so the code must be fine" are routinely blindsided by what the audit surfaces.
+
+A standard technical due diligence audit checks five things:
+
+**1. Test coverage and CI/CD maturity.** Auditors run your test suite and check coverage percentage. Anything below roughly 60-70% on core business logic is flagged as a red flag. If there's no automated pipeline at all — if deployment still means someone SSHing into a production server — that alone can trigger a "re-architecture required" clause in the funding terms, delaying wire transfer by months.
+
+**2. Security posture against the OWASP Top 10.** Auditors run automated scanners (and sometimes manual penetration tests) against your API for SQL injection, broken authentication, and insecure direct object references. An MVP built by a low-cost agency that skipped input validation "to save time" will fail this check immediately, and payment-handling or healthcare-adjacent startups face even stricter scrutiny.
+
+**3. "Bus factor" / key-person risk.** If your entire backend architecture exists only in the head of one contractor who is no longer reachable, that is a documented finding in the audit report. Auditors check whether architecture decisions, environment variables, and deployment runbooks are actually written down, or whether they live in one person's Slack DMs.
+
+**4. Database scalability under load.** Auditors frequently commission a load test — simulating 10x or 100x your current traffic — against a staging clone of your database. A denormalized schema that works fine at 1,000 users but locks up at 50,000 concurrent sessions is exactly the failure mode described earlier in this article, and it is now quantified in a report the investors read before deciding your valuation.
+
+**5. Dependency and license risk.** Outdated packages with known CVEs, or GPL-licensed code accidentally bundled into a commercial product, are common findings in rushed MVPs and can create legal exposure the investors are unwilling to inherit.
+
+The startups that pass this audit cleanly are, without exception, the ones that built an MVA instead of a pure MVP. The extra three days spent on the database schema, and the CI/CD pipeline built on day one instead of "later," are not abstract engineering virtue — they are the specific line items an auditor checks before your Series A closes on schedule instead of being delayed, discounted, or contingent on a mandatory rewrite.
+
 ## The Manifera MVA Execution Strategy
 
 Building an MVA requires a level of architectural maturity that standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies simply do not possess. They are incentivized to sell you the illusion of "cheap speed."
@@ -90,6 +110,9 @@ Schema-less databases (like MongoDB) are fast to set up, but they push data inte
 
 ### (Scenario: Founder evaluating Manifera) How does Manifera balance speed-to-market with architectural integrity?
 Through our Hybrid Offshore model. Our Dutch Architects work with you to aggressively cut unnecessary features (ensuring speed-to-market). Then, they define a strict MVA blueprint. Our Vietnamese pods execute that blueprint, ensuring the limited features are built on a highly scalable, secure, and automated foundation.
+
+### (Scenario: Founder preparing for a funding round) What does Series A technical due diligence actually check in an MVP's codebase?
+Investors typically send an auditor to spend two to five days checking five things: automated test coverage (ideally 60-70%+ on core logic), security posture against the OWASP Top 10, "key-person risk" (whether architecture knowledge is documented, not trapped in one contractor's head), database performance under a simulated 10x-100x load test, and dependency/license risk. MVPs built as pure throwaway code routinely fail multiple checks, which can delay, discount, or add rewrite conditions to your funding.
 
 <script type="application/ld+json">
 {
@@ -134,6 +157,14 @@ Through our Hybrid Offshore model. Our Dutch Architects work with you to aggress
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects help you aggressively cut non-essential features for speed. Our Vietnamese pods then build the remaining features on a strict, European-governed architectural foundation, ensuring you launch fast without sacrificing scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Series A technical due diligence actually check in an MVP's codebase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auditors typically spend two to five days checking automated test coverage, security posture against the OWASP Top 10, key-person risk in undocumented architecture, database performance under simulated 10x-100x load, and dependency or license risk. MVPs built as pure throwaway code often fail these checks, which can delay or discount a funding round."
       }
     }
   ]

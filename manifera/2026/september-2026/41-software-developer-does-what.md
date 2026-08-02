@@ -54,6 +54,20 @@ An Architect understands the fundamental laws of distributed systems, such as th
 
 > *"A developer writes the code that makes the application run. An Architect designs the system that prevents the application from dying."* — Software Architecture Axiom
 
+## How a Non-Technical Founder Can Actually Verify They Have an Architect
+
+Here is the problem: almost every offshore agency, when asked "do you have an architect on this project," will say yes. The job title on the invoice means nothing. A founder with no engineering background has no way to cross-examine a system design decision, so they simply take the agency's word for it — right up until the server crashes in month five, as it did for the founder in our opening story.
+
+There are, however, three concrete artifacts a founder can ask for that a real Architect produces and a "developer wearing an architect title" cannot fake.
+
+**1. Ask for the Architecture Decision Record (ADR).** Before a single significant feature is built — a new database, a payment integration, a reporting module — a real Architect writes a short document (usually one page) recording: what problem is being solved, the 2-3 options considered, which one was chosen, and why. If you ask your agency "can I see the ADR for the reporting dashboard," and they have no idea what you're asking for, that is a definitive signal that no architectural thinking happened before the code was written. It was typed reactively, not designed proactively.
+
+**2. Ask what happens at 10x your current user count.** A real Architect can answer this question in plain English within thirty seconds: "at 10x load, the database read queries would become the bottleneck, so we've already isolated reporting queries to a replica" or "our queue depth would grow, so we auto-scale background workers based on queue length." A developer without architectural training will either dodge the question or answer with something that has nothing to do with load — because they have genuinely never modeled it.
+
+**3. Look at the Pull Request review history, not just the commit history.** Commits show that code was written. They do not show that anyone senior evaluated whether it was the *right* code. Ask to see (or have your Manifera Dutch Tech Lead show you) the PR comments on a recent significant feature. A governed PR process has substantive comments questioning data flow, error handling, and scaling assumptions — not just "LGTM" (Looks Good To Me) rubber-stamps. If every PR in your project's history is approved within minutes with no comments, nobody is actually reviewing the architecture; they are reviewing that the code compiles.
+
+This is precisely why Manifera builds the ADR and PR-gate process into every Hybrid Offshore pod as a non-negotiable structural requirement, not an optional nicety. Our Dutch Architects write the ADR before the Vietnamese pod starts building, and every Pull Request is mathematically blocked from merging without an Architect's sign-off in writing. When you ask us for these artifacts, they already exist — because the system design happened before the typing did, not after the servers already crashed.
+
 ## The Missing Layer in Offshore Outsourcing
 
 When founders search for **"software developer does what"** and hire cheap, raw capacity from standard offshore agencies, they are fundamentally exposed. 
@@ -88,6 +102,9 @@ The CAP Theorem is a principle of distributed systems stating that you can only 
 
 ### (Scenario: Founder hiring Manifera) How does Manifera's Hybrid Model protect startups from architectural failure?
 We do not sell ungoverned coders. Every Vietnamese engineering pod is led by a Dutch Architect. The Architect performs the System Design, defines the database schemas, and builds the CI/CD pipelines. The offshore developers execute this blueprint but are mathematically blocked from merging code until the Dutch Architect approves the structural integrity of the Pull Request.
+
+### (Scenario: Non-technical founder vetting an agency) How can I verify my offshore team actually has an architect, and it's not just a job title?
+Ask for three concrete artifacts. First, the Architecture Decision Record (ADR) written before a major feature was built — a one-page document showing what options were considered and why one was chosen. Second, a plain-English answer to "what breaks at 10x our current user load," which a real architect can answer instantly. Third, the Pull Request review history: substantive comments questioning data flow and scaling, not just quick "LGTM" approvals. If an agency can't produce these, no architectural thinking happened before the code was written.
 
 <script type="application/ld+json">
 {
@@ -132,6 +149,14 @@ We do not sell ungoverned coders. Every Vietnamese engineering pod is led by a D
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We pair elite Vietnamese developers with dedicated Dutch Architects. The European Architect handles all System Design, database normalization, and PR governance. You get the speed of offshore developers strictly protected by enterprise-grade architectural physics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I verify my offshore team actually has an architect, and it's not just a job title?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for three artifacts: the Architecture Decision Record written before a major feature, a plain-English answer to what breaks at 10x current user load, and the Pull Request review history showing substantive comments rather than quick approvals. If an agency cannot produce these, no real architectural thinking occurred before the code was written."
       }
     }
   ]

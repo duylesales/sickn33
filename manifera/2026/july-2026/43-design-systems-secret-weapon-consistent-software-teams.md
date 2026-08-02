@@ -69,6 +69,20 @@ Not every team needs a design system. The investment makes sense when:
 
 **Phase 5: Adoption (ongoing).** Migrate existing pages to use the new components. This happens gradually — every new feature uses the design system, and legacy pages are migrated during routine maintenance.
 
+## Governance: Who Gets to Change a Shared Component
+
+The single most common reason a design system stalls after a promising launch is not lack of components — it is an ungoverned contribution model. Once 3-5 teams depend on the same Button component, "who is allowed to change it, and how" becomes a real organisational question, and most teams never answer it explicitly until a breaking change ships to production on a Friday afternoon.
+
+**Three governance models, and when each fits:**
+
+1. **Centralized model.** A single design system team owns every component. Other teams submit requests (new component, new variant, bug fix) via a ticket, and the design system team implements it. This works well for organisations with 3-4 product teams and a design system still under 30 components — the central team has enough bandwidth to be a helpful bottleneck rather than a harmful one. It breaks down past 5-6 consuming teams, where request queues grow faster than the central team can clear them.
+
+2. **Federated (contribution) model.** Any team can propose and build a new component or modify an existing one, but changes go through a lightweight RFC (Request for Comments) process before merging: a one-page proposal describing the use case, the proposed API, and any breaking-change impact, reviewed by the design system team and at least one engineer from another consuming team. This scales better past 5+ teams because contribution capacity grows with the organisation, but it requires the central team to shift from "builder" to "reviewer and standards-keeper."
+
+3. **Hub-and-spoke model.** A small central team (the hub) owns tokens, core primitives, and the review process, while each product team designates a "design system champion" (the spoke) who is the trusted point of contact for that team's contributions and adoption. Champions meet biweekly with the hub to triage the roadmap and flag emerging patterns worth promoting into the shared library. This is the model most large organisations converge on eventually, because it distributes ownership without losing a coherent single source of truth.
+
+**A practical decision rule:** start centralized under 30 components and 5 teams. Cross either threshold and introduce an RFC process for non-trivial changes; past 6-7 teams, formalise the champion role, even part-time (10-20% of one engineer's time per team). Whichever model you choose, put it in writing — an undocumented governance model is really just "whoever shouts loudest gets their component merged," and that is how design systems quietly die.
+
 ## Design Systems Across Distributed Teams
 
 A design system is particularly valuable for distributed teams because it eliminates ambiguity. When a developer in Ho Chi Minh City needs to build a data table, they reference the same component library and documentation as a developer in Amsterdam. The result looks identical regardless of who built it.
@@ -100,6 +114,10 @@ Publish the design system as a versioned npm package with semantic versioning. B
 ### What is the difference between a design system and a style guide? (Scenario: Product Manager unsure whether their Figma brand guide counts as a design system)
 
 A style guide documents visual standards (colours, fonts, logos) as a reference. A design system is a living product — coded components that developers import and use directly. A Figma file showing button designs is a style guide. A React component library with Button, Input, and Modal components — documented in Storybook with code examples and accessibility tests — is a design system. The system replaces interpretation with implementation.
+
+### Who should be allowed to change a shared component once multiple teams depend on it? (Scenario: Design system lead deciding on a contribution and governance model)
+
+It depends on your scale. Under 5 teams and 30 components, keep a centralized model where one team owns all changes. Past that, introduce a federated RFC process so any team can propose changes with review from the design system team and a peer. Past 6-7 teams, add a part-time "design system champion" per team under a hub-and-spoke model so ownership scales without losing a single source of truth.
 
 <script type="application/ld+json">
 {
@@ -144,6 +162,14 @@ A style guide documents visual standards (colours, fonts, logos) as a reference.
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A style guide documents visual standards as reference. A design system is a living product — coded components developers import directly. A Figma file is a style guide. A React component library with Storybook docs is a design system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should be allowed to change a shared component once multiple teams depend on it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under 5 teams and 30 components, keep a centralized model where one team owns all changes. Past that, introduce a federated RFC process reviewed by the design system team and a peer. Past 6-7 teams, add a part-time design system champion per team under a hub-and-spoke model."
       }
     }
   ]

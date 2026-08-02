@@ -69,6 +69,24 @@ Our Autonomous Pod architected a Zero Trust ecosystem. Governed by extreme Dutch
 | **Internal Networking** | Open Trust (If breached, everything falls) | Zero Trust (mTLS between microservices) |
 | **Secret Management** | Hardcoded or static .env files | Dynamic injection via HashiCorp Vault |
 
+## The Hidden Attack Surface: Securing the Software Supply Chain
+
+Even a perfectly architected Zero Trust network can be silently compromised from the inside. The next frontier of enterprise risk is not the code your vendor writes — it's the code they *import*.
+
+**The Pain:** A generic agency ships your application with hundreds of open-source dependencies pulled in without scrutiny. Modern applications typically derive 70-90% of their codebase from third-party and open-source packages. Somewhere deep in a transitive dependency — a package your own developers never directly chose — sits a critical vulnerability. This is precisely the mechanism behind real-world catastrophes like Log4Shell (CVE-2021-44228), where a single ubiquitous logging library exposed millions of applications globally to remote code execution. If your vendor cannot answer "which of our production services use this exact package version," you cannot patch it before attackers exploit it.
+
+### The Manifera Supply Chain Protocol
+We treat the dependency tree as an extension of the attack surface, not a free resource.
+
+*   **SBOM Generation:** Every build automatically generates a Software Bill of Materials (SBOM) using tools like Syft, producing a complete, machine-readable inventory of every library, transitive dependency, and container layer shipped to production.
+*   **Software Composition Analysis (SCA):** Our CI/CD pipeline cross-references the SBOM against live CVE databases (NVD) on every pull request. A newly disclosed vulnerability in a dependency you adopted eighteen months ago is flagged within hours, not discovered during the next external audit.
+*   **Cryptographic Artifact Signing:** Using Sigstore/cosign, we cryptographically sign every container image and build artifact. The deployment pipeline mathematically refuses to promote any artifact whose signature cannot be verified, closing the door on tampered or substituted packages.
+*   **Quarantine Window:** New third-party package versions are proxied through a private registry (such as Artifactory) and held in a quarantine period before any Vietnamese engineer can pull them into a branch, absorbing exactly the kind of zero-day response window that Log4Shell demanded of the entire industry overnight.
+
+This means when the next industry-wide dependency crisis hits, we already know — to the exact service and version number — whether your application is exposed, and we can patch it in hours instead of weeks.
+
+Before you sign with any vendor, ask them to produce a current SBOM for a live client project on the spot. A team practicing genuine DevSecOps can generate one in minutes because the artifact already exists as a build output. A team that treats security as a checklist will need days to reverse-engineer one after the fact — and that gap is the clearest signal of which kind of partner you are actually hiring.
+
 ## Implement Zero-Trust Engineering
 
 Stop risking your enterprise's reputation and facing catastrophic launch delays due to amateur security practices. If you are a CISO or CTO who demands military-grade, mathematically proven software architecture, you need elite DevSecOps.
@@ -91,6 +109,9 @@ Governed by Amsterdam, we enforce strict Encryption-at-Rest using AES-256 and im
 
 ### (Scenario: CTO frustrated by launch delays) Why do security audits always delay software launches by months?
 Because generic agencies build the entire house before checking the foundation. When a late-stage audit reveals a flaw in the authentication logic, the entire app must be torn down. By utilizing DevSecOps, Manifera fixes micro-vulnerabilities daily, ensuring the final security audit is a formality, not a crisis.
+
+### (Scenario: CTO evaluating vendor supply chain risk) How do you protect against vulnerabilities in third-party open-source packages?
+We generate a full Software Bill of Materials (SBOM) on every build and run Software Composition Analysis (SCA) against live CVE databases on every pull request. Every build artifact is cryptographically signed via Sigstore/cosign, and new package versions pass through a quarantine window on a private registry before any engineer can use them. This means we can identify and patch exposure to an incident like Log4Shell within hours, not weeks.
 
 <script type="application/ld+json">
 {
@@ -135,6 +156,14 @@ Because generic agencies build the entire house before checking the foundation. 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because generic agencies build the entire house before checking the foundation. When a late-stage audit reveals a flaw in the authentication logic, the entire app must be torn down. By utilizing DevSecOps, Manifera fixes micro-vulnerabilities daily, ensuring the final security audit is a formality, not a crisis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO evaluating vendor supply chain risk) How do you protect against vulnerabilities in third-party open-source packages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We generate a full Software Bill of Materials (SBOM) on every build and run Software Composition Analysis (SCA) against live CVE databases on every pull request. Every build artifact is cryptographically signed via Sigstore/cosign, and new package versions pass through a quarantine window on a private registry before any engineer can use them. This means we can identify and patch exposure to an incident like Log4Shell within hours, not weeks."
       }
     }
   ]

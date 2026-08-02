@@ -57,6 +57,18 @@ You cannot tell your customers, *"We aren't releasing any new features for 9 mon
 ### 2. API-First Decoupling
 Do not attempt a "Big Bang" migration. Elite architects use the Strangler Fig pattern. They build a custom backend (Node.js/PostgreSQL) and slowly migrate the data away from the Low-Code platform, pointing the Low-Code frontend to the new custom database. Once the backend is secure, they swap out the frontend.
 
+## Five Warning Signs You Are Approaching the Cliff Before It Hits
+
+The founder in the opening scenario didn't see the Scaling Cliff coming until the SSO ticket physically could not be built. That is the worst possible time to notice — you're already in the Board meeting, already committed to enterprise contracts, and already out of runway to plan a calm migration. Elite founders instead watch for leading indicators months before the platform hits a hard wall, so the Re-Platforming decision is proactive rather than a panic response.
+
+1. **Automation step-count warnings.** Most Low-Code platforms (Bubble, Airtable, Zapier-style workflow builders) impose hard limits on how many steps or conditional branches a single workflow can contain. When your team starts hitting these ceilings and has to split one business process into three chained workflows just to route around the limit, the platform is telling you its abstraction no longer matches your business logic.
+2. **Database record-count and query-timeout errors.** Low-Code platforms run on shared, generalized databases optimized for simplicity, not for the query patterns of a specific business. When nightly reports start timing out, or a dashboard that loaded in two seconds at 10,000 records now takes twenty seconds at 200,000 records, that curve does not improve — it gets worse every month you wait.
+3. **Rising per-seat or per-workflow licensing costs.** As usage scales, Low-Code vendors often shift pricing tiers upward faster than revenue grows, because the platform's value-based pricing is designed to capture a percentage of your success. A founder who tracks the ratio of platform licensing spend to ARR and sees it climbing rather than flattening is watching the mortgage's interest rate reset in real time.
+4. **Third-party integration walls.** Enterprise customers increasingly demand specific protocols — SAML-based SSO, SCIM user provisioning, custom webhook retry logic, or a specific compliance certification (SOC 2 Type II) that requires infrastructure control the platform doesn't expose. Each enterprise deal you lose or delay because "the platform doesn't support that" is a direct, countable signal.
+5. **Engineering time spent on workarounds, not features.** Track the percentage of sprint time your team spends building hacky workarounds inside the Low-Code platform's constraints versus shipping net-new customer value. When workaround time crosses roughly 30% of sprint capacity, the platform has started actively fighting your roadmap instead of accelerating it.
+
+Any single signal is a yellow flag. Three or more appearing within the same quarter means the Scaling Cliff is no longer hypothetical — it is a matter of months, and the Re-Platforming conversation with your Board should start now, while you still have the runway to execute the Strangler Fig migration calmly instead of in a post-funding-round scramble.
+
 ## The Manifera Re-Platforming Pod
 
 Many standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies are terrible at Re-Platforming. They will quote you a massive 12-month rewrite, build the new app in isolation, and launch a system that misses half the undocumented business logic of your original MVP.
@@ -85,6 +97,9 @@ A Big Bang migration involves building the new custom app in secret for 9 months
 
 ### (Scenario: Startup scaling up evaluating Manifera) How does Manifera help startups transition from Low-Code to Custom Software?
 We execute safe 'Re-Platforming.' Our Dutch Architects audit your Low-Code app and design a highly scalable custom architecture. We do not do Big Bang rewrites. Our Vietnamese offshore pods incrementally rebuild and migrate your backend and frontend using the Strangler Fig pattern, ensuring zero downtime and a seamless transition to 100% IP ownership.
+
+### (Scenario: Founder trying to plan ahead of a crisis) What are the early warning signs that we're approaching the Scaling Cliff?
+Watch for five leading indicators: hitting automation step-count limits, database query timeouts as record counts grow, per-seat licensing costs rising faster than ARR, lost enterprise deals due to missing SSO or compliance support, and engineering time spent on platform workarounds crossing roughly 30% of sprint capacity. Three or more of these appearing in the same quarter means Re-Platforming should start now, not after the cliff hits.
 
 <script type="application/ld+json">
 {
@@ -129,6 +144,14 @@ We execute safe 'Re-Platforming.' Our Dutch Architects audit your Low-Code app a
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects design a scalable custom architecture. Our Vietnamese offshore pods then execute a safe, incremental 'Re-Platforming' using the Strangler Fig pattern, ensuring your business never experiences downtime during the migration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the early warning signs that we're approaching the Scaling Cliff?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Watch for automation step-count limits, database query timeouts as records grow, per-seat licensing costs rising faster than ARR, lost enterprise deals over missing SSO or compliance support, and engineering time spent on workarounds exceeding roughly 30% of sprint capacity. Three or more signals in one quarter means it's time to start Re-Platforming."
       }
     }
   ]

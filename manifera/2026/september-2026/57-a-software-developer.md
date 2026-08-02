@@ -52,6 +52,19 @@ Because a Product Engineer cares about business metrics, they architect systems 
 
 > *"A software developer writes code to close Jira tickets. A Product Engineer writes code to move business metrics. You cannot scale a SaaS company with developers who don't understand your business model."* — Product Engineering Axiom
 
+## How to Interview For a Product Engineer (Not Just a Coder)
+
+Most technical interviews only test for mercenary skills. The candidate is handed a LeetCode-style algorithm puzzle, asked to reverse a linked list on a whiteboard, and hired if the syntax compiles. This process reliably filters for people who are good at solving isolated puzzles under pressure. It does almost nothing to reveal whether the candidate will challenge a bad Jira ticket six months into the job.
+
+If you want to hire Product Engineers instead of mercenaries, the interview needs at least one round that tests judgment, not just syntax. Here is a simple, repeatable format we use internally:
+
+*   **Present a deliberately underspecified ticket.** Give the candidate a real, slightly ambiguous feature request, something like "add a way for users to see their order history." Do not clarify further unless asked.
+*   **Score the first five minutes, not the code.** A mercenary starts sketching a database schema immediately. A Product Engineer starts asking questions: "How many orders does a typical user have? Are they trying to find one specific order, or track spending patterns? Would a search bar solve this faster than a full history page?"
+*   **Introduce a fake constraint mid-interview.** Tell the candidate that engineering has one week, not three, to ship this. Watch whether they negotiate scope (a Product Engineer trait) or simply promise to "work faster" (a mercenary trait that predicts burnout and corner-cutting later).
+*   **Ask for the metric that would prove success.** A Product Engineer can immediately name a measurable outcome ("we'd expect support tickets asking 'where is my order' to drop by X%"). A mercenary describes only the technical completion state ("the page loads and shows the data").
+
+This single 45-minute round catches candidates who look identical on a resume but behave completely differently at month six. It costs almost nothing to add to an existing hiring pipeline, and it is far cheaper than discovering the mismatch after three months of salary and a shipped feature nobody uses.
+
 ## The Mercenary Trap of Offshore Development
 
 When startups hire standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies, they almost always get pure mercenaries. 
@@ -84,6 +97,9 @@ Product Engineers demand architecture that allows them to measure business impac
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera ensure their offshore team operates like Product Engineers rather than blind order-takers?
 It starts with our European governance. Our Dutch Tech Leads deeply integrate with your business goals. They ensure the Vietnamese pods understand the *'Why'* behind every feature. We train our offshore developers to challenge requirements and propose pragmatic technical alternatives, ensuring you get high-ROI engineering, not just blind typing.
+
+### (Scenario: VP Engineering redesigning the hiring process) How do I interview for a Product Engineer instead of just a coder?
+Standard algorithm puzzles only test syntax under pressure, not judgment. Instead, give the candidate a deliberately underspecified feature ticket and score the first five minutes: does the candidate immediately sketch a database schema, or do they ask what problem the user is actually trying to solve? Then introduce a fake tight deadline and see if they negotiate scope, and ask them to name the metric that would prove the feature worked. Candidates who default to technical completion instead of business outcomes are mercenaries, not Product Engineers.
 
 <script type="application/ld+json">
 {
@@ -128,6 +144,14 @@ It starts with our European governance. Our Dutch Tech Leads deeply integrate wi
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects bridge the business context gap. We train our Vietnamese pods to understand your product metrics, not just your code. We encourage our offshore teams to push back on bad requirements and propose high-ROI technical alternatives."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I interview for a Product Engineer instead of just a coder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Give the candidate a deliberately underspecified feature ticket and watch the first five minutes: a mercenary sketches a database schema immediately, while a Product Engineer asks what problem the user is actually trying to solve. Then introduce a fake tight deadline and ask them to name the success metric. Candidates who describe only technical completion instead of a measurable business outcome are mercenaries, not Product Engineers."
       }
     }
   ]

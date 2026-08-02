@@ -66,6 +66,20 @@ True **software innovation** is not about adopting new technology. It is about s
 
 The most innovative engineering teams are not the ones with the newest tools. They are the ones with the clearest understanding of the problem they are solving.
 
+## The Constraint Audit: Diagnosing Over-Engineering in Systems You Already Have
+
+Constraint thinking is not only a design philosophy for greenfield projects. It is also a diagnostic tool for auditing systems you have already built — most of which are carrying more complexity than their actual business requirements justify. Before a team adds a single new feature, it should run what we call a Constraint Audit: a structured pass over the existing architecture to find complexity that resource abundance introduced but that no business requirement ever demanded.
+
+Five questions expose the gap:
+
+1. **Services-to-users ratio.** Count your deployed microservices. Divide by the number of active users or the number of engineers who maintain them. If you have more services than engineers, or a service handling fewer than 1,000 requests per day, that service is very likely a candidate for consolidation into a monolith module — the operational overhead of deploying, monitoring, and patching it independently almost certainly exceeds the isolation benefit it provides.
+2. **Configuration flags never toggled.** Search your codebase for feature flags and environment-based configuration branches. Any flag that has held the same value in production for more than six months is not configuration — it is dead code wearing a costume. Each one is a decision point future engineers must reason through even though the decision was already made.
+3. **Abstraction layers with a single implementer.** Interfaces and abstract base classes exist to support multiple implementations. If you grep your codebase and find an interface with exactly one concrete class implementing it, and no second implementation is realistically planned within the next 12 months, that abstraction is speculative — a bet on future flexibility that costs real comprehension overhead today.
+4. **Multi-cloud or multi-region infrastructure with a single-region user base.** If 95% of your traffic originates from one geography, but your infrastructure spans three cloud providers or five regions "for resilience," calculate the actual annual cost of that redundancy against the cost of the single outage it is meant to prevent. Often the insurance premium is higher than the claim it protects against.
+5. **Custom-built internal tools that duplicate a commodity.** Homegrown authentication systems, homegrown job schedulers, homegrown feature-flag services — each one is a system your team must patch, secure, and document forever, when a well-maintained open-source or managed equivalent would consume a fraction of the engineering attention.
+
+At Manifera, our Dutch Tech Leads run this audit as a standard part of any engagement that inherits an existing codebase, before proposing new architecture. It is often more valuable to the client than any new feature we could build in the same sprint, because every unit of complexity removed is a permanent reduction in the cost of every future change. We have seen mid-sized SaaS platforms cut their infrastructure bill by 30–40% purely by consolidating over-provisioned microservices back into a well-structured monolith — with no loss of reliability, and often a measurable improvement in deployment speed because there were simply fewer moving parts to coordinate.
+
 ## Applying Constraint Thinking to Your Next Project
 
 If you are planning a new software project, here is a framework for using constraints productively:
@@ -97,6 +111,9 @@ No. Adopting new technology without a clear business justification is "Innovatio
 
 ### (Scenario: Founder choosing between a large agency and a small pod) Why do small, focused engineering teams often outperform large distributed ones?
 Because of ownership clarity and communication overhead. In a 5-person pod, each engineer owns a specific domain. Decisions are made in minutes, not weeks. In a 40-person department, responsibility diffuses, coordination meetings multiply, and individual accountability decreases. This is consistent with Brooks's Law: adding people to a late project makes it later.
+
+### (Scenario: CTO inheriting a codebase that feels over-engineered) How do I diagnose whether my existing system has more complexity than it needs?
+Run a Constraint Audit: calculate your services-to-users ratio and flag any service handling minimal daily traffic as a consolidation candidate, search for feature flags that haven't changed value in six months, look for abstraction interfaces with only one real implementation, question multi-region infrastructure serving a single-region user base, and identify homegrown tools that duplicate commodity open-source equivalents. Each of these is complexity resource abundance introduced without a corresponding business requirement.
 
 <script type="application/ld+json">
 {
@@ -141,6 +158,14 @@ Because of ownership clarity and communication overhead. In a 5-person pod, each
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ownership clarity and low communication overhead. In a 5-person pod, each engineer owns a domain and decisions take minutes. In large teams, responsibility diffuses and coordination meetings multiply, consistent with Brooks's Law."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I diagnose whether my existing system has more complexity than it needs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run a Constraint Audit: check your services-to-users ratio for consolidation candidates, search for feature flags unchanged for six months, look for abstraction interfaces with only one implementation, question multi-region infrastructure serving a single-region user base, and identify homegrown tools duplicating commodity open-source equivalents."
       }
     }
   ]

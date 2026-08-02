@@ -65,6 +65,24 @@ If you are outsourcing development across borders, data sovereignty is a massive
 **The Only Acceptable Answer:** "Virtual Desktop Infrastructure (VDI) or Cloud Development Environments."
 The vendor must utilize tools like GitHub Codespaces. The source code should remain in a secure cloud container. The developer only streams the UI of the IDE to their local machine. Furthermore, they must guarantee they only develop against synthetic, AI-generated dummy data—never live production PII.
 
+## 5. The Dedicated Capacity Audit (Are These Developers Actually Yours?)
+
+The most common source of buyer's remorse with "best software development companies" lists is not incompetence — it is dilution. A sales pitch describes brilliant senior engineers. The actual delivery team, once the contract is signed, is often a rotating cast shared across four other client projects, with your work squeezed into whatever hours remain.
+
+**Ask the Vendor:** *"Can you name the specific engineers who will be assigned to my project on Day 1, and what percentage of their working week is dedicated exclusively to my codebase?"*
+
+**The Only Acceptable Answer:** A named team roster with a stated allocation — ideally 100% dedicated for core roles like the Lead Architect and Senior Engineers, not "we'll pull from our talent pool as needed." If the vendor cannot name actual people before the contract is signed, they do not yet have committed capacity; they are selling you a hypothetical team that may or may not exist when work is supposed to start. Ask a follow-up: *"What happens to my project timeline if one of these named engineers is pulled onto another client's emergency?"* A mature agency has a documented backup-staffing process (a bench of pre-vetted engineers who can be onboarded within days, not weeks) precisely because they anticipate this question. An agency that looks uncomfortable or evasive here is telling you, without saying it directly, that key-person risk is currently unmanaged. As a final check, ask how allocation is verified over time, not just promised at kickoff: the best vendors will show you actual timesheet or utilization data tied to your account on request, rather than asking you to simply trust a percentage quoted once during the sales process.
+
+## 6. The Reference and Portfolio Verification Audit
+
+Anyone can put a client logo on a homepage. Verifying that the relationship behind that logo was actually healthy requires a slightly more adversarial process than reading a testimonials page.
+
+**Ask the Vendor:** *"Can I speak directly with two of your current clients, including at least one whose project is still active, not just ones who have already left positive reviews?"*
+
+**The Only Acceptable Answer:** A prompt "yes," followed by an actual introduction within days, not weeks of stalling. Vendors that only offer curated written testimonials or refuse a live reference call are hiding something — usually a pattern of engagements that ended badly. When you get the call, ask the reference two pointed questions the marketing page will never answer: *"Did the actual delivered timeline match the original estimate, and if not, by how much did it slip?"* and *"If you had a serious disagreement with the team, how was it resolved?"* Vague, deflecting answers to either question are a stronger signal than any five-star review. Cross-reference the vendor's public project count against what references confirm — a firm claiming 160+ delivered projects should be able to produce verifiable references representing a genuine cross-section of that history, not the same two flagship case studies recycled across every sales conversation.
+
+**A Practical Verification Tactic:** Beyond the phone call, ask for a short, unscripted screen-share with the actual delivery team — not the account manager — walking through a recent sprint's Jira board or GitHub commit history live. Sales decks can be polished indefinitely; a real backlog, with its messy mix of finished tickets, carried-over bugs, and the ordinary friction of active development, is far harder to fabricate convincingly on the spot. If a vendor stalls this specific request for weeks while remaining perfectly responsive to every other sales question, treat the stalling itself as the answer.
+
 ## Why Manifera Welcomes the Audit
 
 At Manifera, we designed our entire Hybrid Offshore model around passing these exact enterprise audits. 
@@ -93,6 +111,9 @@ Instead of a developer downloading your source code to their physical laptop in 
 
 ### Why is the Hybrid Offshore model safer than pure offshore development?
 Pure offshore development exposes you to weak legal jurisdictions and cultural miscommunications. A Hybrid model (like Manifera's) uses a European Hub for strict EU legal compliance and architectural governance, combined with an offshore Spoke for cost-efficient engineering execution.
+
+### How do I know if my project will get dedicated engineers or a shared, rotating team?
+Ask the vendor to name the specific engineers assigned to your project before you sign, along with their percentage of dedicated weekly time. A mature agency can name real people and describe a documented backup-staffing process; an agency that can only promise to "pull from a talent pool" has not actually committed capacity to your project yet.
 
 <script type="application/ld+json">
 {
@@ -137,6 +158,14 @@ Pure offshore development exposes you to weak legal jurisdictions and cultural m
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It provides a local European management Hub for strict legal IP protection (governed by EU law), while leveraging an offshore engineering Spoke for economic velocity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my project will get dedicated engineers or a shared, rotating team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask the vendor to name the specific engineers assigned before you sign, along with their percentage of dedicated weekly time. A mature agency names real people and has a documented backup-staffing process; one that can only promise to 'pull from a talent pool' has not committed capacity yet."
       }
     }
   ]

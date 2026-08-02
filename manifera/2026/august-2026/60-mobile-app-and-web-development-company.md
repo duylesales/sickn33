@@ -66,6 +66,17 @@ The unified architecture allows us to share the *components* (the buttons, the c
 
 Both layouts are importing the exact same underlying logic from the shared `@company/core`.
 
+## The Hidden CI/CD Risk: One Bad Commit, Three Broken Platforms
+
+Sharing 80% of the codebase across web, iOS, and Android is a massive efficiency win — until the moment it becomes the opposite. Because the web app, the iOS app, and the Android app all import the exact same `@company/core` folder, a single careless change to that shared tax-calculation function or shared authentication hook does not just break one platform. It simultaneously breaks the checkout flow on the web dashboard, the iOS app, and the Android app, all at once, from one commit. In a siloed-codebase world, a bad change to the mobile team's code only ever affects mobile. In a unified Monorepo, a bad change to the shared core can take down every platform your business ships on, simultaneously.
+
+This is precisely why a Monorepo without disciplined CI/CD tooling is more dangerous than two separate codebases, not less. Two specific engineering practices prevent this from becoming a recurring incident:
+
+1. **"Affected" builds and tests, not "run everything."** A naive CI setup runs the entire test suite — web, iOS, and Android — on every single commit, which becomes painfully slow as the Monorepo grows (a 20-minute pipeline for a one-line CSS tweak is how engineering teams start disabling CI checks out of frustration). Tools like Nx and Turborepo solve this with a dependency graph: they detect precisely which projects are "affected" by a given change. A commit that only touches the web-specific layout file triggers only the web test suite. A commit that touches the shared `@company/core` folder automatically triggers the full test suite across web, iOS, and Android, because the tooling knows every platform depends on that folder.
+2. **Mandatory cross-platform test gating on shared-code changes.** Any pull request that modifies a file inside `@company/core` must be configured as a required CI gate that blocks merging until unit tests and integration tests pass on all three consuming platforms — not just the platform the developer happened to be working on. Without this rule enforced at the CI level (not just as a suggestion in a style guide), a mobile-focused developer can merge a change to shared code having only manually verified it on iOS, unknowingly shipping a regression to the web dashboard the next morning.
+
+Elite agencies treat the shared core folder as the highest-risk, highest-scrutiny part of the entire repository — with stricter code review requirements and broader automated test coverage than any platform-specific file — precisely because its blast radius touches every screen the business depends on.
+
 ## The Manifera Hybrid Execution Model
 
 At Manifera, we deploy this unified Monorepo architecture for clients who need simultaneous web and mobile launches. 
@@ -92,6 +103,9 @@ Only if done poorly. The unified architecture shares the *atoms* (buttons, typog
 
 ### (Scenario: IT Director hiring an agency) Why don't all agencies use Monorepos and React Native Web if it saves so much money?
 Because it requires a highly mature architectural capability. Managing a Monorepo with shared state and cross-platform compilation requires elite DevOps and CI/CD pipelines. Standard 'order taker' offshore agencies do not have the architectural skills to maintain this; it's easier for them to just build two messy, separate codebases and bill you twice.
+
+### (Scenario: VP Engineering worried about shared-code risk) If web and mobile share the same core code, can one bad commit break all three platforms at once?
+Yes, and this is the single biggest risk of a unified Monorepo. A careless change to a shared function (like a tax calculation or auth hook) can simultaneously break web, iOS, and Android from one commit. Elite agencies mitigate this with "affected" build tooling (Nx/Turborepo) that automatically runs the full cross-platform test suite whenever shared core files change, plus mandatory CI gates requiring all three platforms to pass tests before a shared-code pull request can merge.
 
 <script type="application/ld+json">
 {
@@ -136,6 +150,14 @@ Because it requires a highly mature architectural capability. Managing a Monorep
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because it requires elite architectural and DevOps maturity. Standard 'order taker' agencies lack the skills to maintain complex cross-platform compilation pipelines. It's easier for them to build two separate codebases and bill you twice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If web and mobile share the same core code, can one bad commit break all three platforms at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, this is the biggest risk of a unified Monorepo. A careless change to shared logic can break web, iOS, and Android simultaneously. Mitigate it with 'affected' build tooling (Nx/Turborepo) that runs the full cross-platform test suite on shared-code changes, plus mandatory CI gates requiring all three platforms to pass tests before merging."
       }
     }
   ]

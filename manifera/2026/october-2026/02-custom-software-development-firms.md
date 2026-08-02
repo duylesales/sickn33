@@ -88,6 +88,27 @@ When comparing multiple custom software development firms, use this architectura
 | **Scalability** | "We will upgrade the EC2 instance." (Vertical scaling) | Containerized (Docker/K8s) auto-scaling based on CPU/RAM thresholds. (Horizontal scaling) |
 | **Observability** | Only checking logs when a user complains. | Centralized tracing (OpenTelemetry), APM (Datadog/New Relic), and automated alerting. |
 
+## The Incident Response Litmus Test
+
+Architecture is not just about how a system is built; it is about how quickly a team can react when that system inevitably breaks. A firm can show you a beautiful Terraform repository and a green CI/CD pipeline, and still fall apart the moment a payment gateway times out at 2 a.m. This is why the incident response process deserves its own line item in your evaluation, separate from the architecture scorecard above.
+
+**Ask for their on-call runbook, not just their on-call schedule.** Any vendor can tell you "we have 24/7 coverage." Few can produce an actual runbook: a document that specifies who gets paged first, what the escalation path looks like after 15 minutes of silence, and which dashboards the on-call engineer opens first when a PagerDuty alert fires. If the firm cannot produce this artifact during due diligence, it does not exist in practice, and your first production incident will become a live fire drill with no script.
+
+**Interrogate their Mean Time to Recovery (MTTR), not just their uptime claims.** Uptime percentages are easy to fabricate retroactively. MTTR is harder to fake because it requires an incident log. A mature engineering partner should be able to tell you, with a straight face, that their median MTTR for a Severity-1 incident is under 30 minutes, backed by a rollback strategy (feature flags, blue-green traffic shifting, or automated canary analysis) rather than a developer manually SSHing into a server to "see what's wrong."
+
+**Demand evidence of blameless postmortems.** After a major incident, does the firm produce a written postmortem within 48 hours that documents the timeline, root cause, and concrete follow-up actions with owners and due dates? Or does the incident simply get discussed verbally in a stand-up and forgotten? Firms that skip written postmortems repeat the same class of outage every few months, because nothing forces the systemic fix.
+
+A quick scorecard for this dimension:
+
+| Incident Response Metric | Amateur Vendor | Elite Engineering Partner |
+| :--- | :--- | :--- |
+| **Escalation Path** | "Someone will see the Slack message eventually." | Documented on-call rotation with PagerDuty/Opsgenie escalation tiers. |
+| **Recovery Mechanism** | Manual server access to diagnose and patch live. | Automated rollback via feature flags or blue-green traffic shift. |
+| **Postmortem Culture** | Verbal discussion, no written record. | Blameless written postmortem within 48 hours, with tracked action items. |
+| **SLA Definition** | Vague promise of "fast response." | Contractual MTTR targets per severity tier (e.g., Sev-1 under 30 minutes). |
+
+When you request references from a custom software development firm, do not just ask "were you happy with the delivery?" Ask the reference client to describe their worst production incident with that vendor, and how it was resolved. The answer tells you more about architectural maturity than any slide deck ever will.
+
 ## Secure Your Engineering Future
 
 Partnering with an external firm is a transfer of risk. You are trusting them with the foundation of your digital business. Do not evaluate them on their UI mockups. Evaluate them on their Git workflows, their database schema design, and their CI/CD pipelines.
@@ -114,6 +135,9 @@ Building a robust CI/CD pipeline and implementing Infrastructure as Code takes t
 
 ### 5. (Scenario: Product Manager) How does architectural quality impact my product roadmap?
 Poor architecture creates a "velocity death spiral." Every new feature breaks an existing feature, forcing developers to spend all their time fixing bugs rather than building value. Clean architecture, with modular boundaries and automated testing, ensures that feature delivery remains fast and predictable, even in year three of the project.
+
+### 6. (Scenario: Director of Engineering) What should we ask about a vendor's incident response process before signing a contract?
+Ask for their actual on-call runbook and their historical Mean Time to Recovery (MTTR) for Severity-1 incidents, not just an uptime percentage. Elite firms can produce documented escalation paths, automated rollback mechanisms like feature flags or blue-green traffic shifting, and written blameless postmortems delivered within 48 hours of any major outage. If a vendor cannot produce these artifacts during due diligence, assume they do not exist in practice.
 
 <script type="application/ld+json">
 {
@@ -158,6 +182,14 @@ Poor architecture creates a "velocity death spiral." Every new feature breaks an
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Poor architecture creates a \"velocity death spiral.\" Every new feature breaks an existing feature, forcing developers to spend all their time fixing bugs rather than building value. Clean architecture, with modular boundaries and automated testing, ensures that feature delivery remains fast and predictable, even in year three of the project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Director of Engineering) What should we ask about a vendor's incident response process before signing a contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for their actual on-call runbook and their historical Mean Time to Recovery (MTTR) for Severity-1 incidents, not just an uptime percentage. Elite firms can produce documented escalation paths, automated rollback mechanisms like feature flags or blue-green traffic shifting, and written blameless postmortems delivered within 48 hours of any major outage. If a vendor cannot produce these artifacts during due diligence, assume they do not exist in practice."
       }
     }
   ]

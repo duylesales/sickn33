@@ -70,6 +70,18 @@ One of the most common mistakes technical founders make is underestimating infra
 
 Notice the inversion: at scale, per-customer infrastructure cost decreases, but only if the architecture supports horizontal scaling. If the architecture requires vertical scaling (bigger servers instead of more servers), costs increase exponentially.
 
+## Choosing a Tenant Isolation Model: Pool, Bridge, or Silo
+
+Resource isolation (Inflection Point 1) solves the noisy neighbor problem, but it does not answer a separate and equally consequential question: how do you isolate *data* between tenants at the storage layer? This decision is usually made once, early, under time pressure — and it is one of the most expensive decisions to reverse later. There are three established models, and most dev SaaS platforms need to support more than one simultaneously as they grow.
+
+**Pool model:** All tenants share the same database and the same tables, distinguished by a `tenant_id` column enforced on every query. This is the cheapest model to operate — one database to patch, one schema to migrate, minimal infrastructure overhead — and it is the correct default for your first 100–500 customers. Its risk is entirely in application-layer discipline: a single missing `WHERE tenant_id = ?` clause in a raw query, an ORM misconfiguration, or a forgotten row-level security policy can leak one tenant's data into another's response. PostgreSQL Row-Level Security (RLS), enforced at the database layer rather than trusted to application code, is the mitigation we deploy by default — it makes tenant isolation a property of the database, not a convention developers must remember.
+
+**Bridge model:** Each tenant gets a separate schema within a shared database cluster. This adds a meaningful security boundary — a query error can no longer cross schemas — at a moderate operational cost: migrations must run across every tenant schema, and connection pooling needs schema-aware routing. This model typically becomes necessary between 500 and 2,000 customers, or earlier if any single enterprise customer's contract requires demonstrable logical data separation.
+
+**Silo model:** Each tenant (or each large enterprise tenant) gets a fully separate database instance, sometimes a fully separate cloud account. This is the most expensive model per tenant — you are running N databases instead of one — but it is frequently a non-negotiable requirement for enterprise and regulated customers (financial services, healthcare, government) whose procurement teams will not sign a contract without dedicated infrastructure, deletable on request, auditable independently.
+
+The architecture decision most dev SaaS founders get wrong is treating this as a single, platform-wide choice. The pattern we implement at Manifera is **tiered isolation**: self-serve and SMB tenants run in the Pool model behind RLS, mid-market tenants graduate to the Bridge model when their contract or compliance posture demands it, and enterprise tenants who require it are provisioned into Silo deployments — all served by the same application codebase, with the isolation model selected by a tenant-provisioning service rather than hardcoded into the schema. Retrofitting this tiering after the fact, once thousands of tenants already live in a single pooled schema, is a multi-quarter migration project. Designing the tenant-provisioning abstraction on Day 1 — even while every tenant still lives in the Pool model — costs almost nothing upfront and avoids that rewrite entirely.
+
 ## How Manifera Builds SaaS Platforms
 
 At Manifera, our teams have deep experience building [web applications](https://www.manifera.com/services/web-app-develop/) that serve thousands of concurrent tenants.
@@ -98,6 +110,9 @@ A metering layer is an instrumentation system that captures every billable event
 
 ### (Scenario: Startup CTO worried about premature optimization) Should I build multi-region infrastructure for my first 50 customers?
 No. Multi-region adds immense operational complexity. Start with a single-region deployment in the region closest to your primary customer base. Architect for multi-region readiness (stateless API servers, externalized configuration, containerized workloads), but do not deploy it until latency complaints from a second geography become a retention issue.
+
+### (Scenario: CTO whose first enterprise customer demands dedicated infrastructure) Should every tenant share the same database, or should each tenant get its own?
+It depends on scale and customer segment, and most platforms need more than one model at once. Small and mid-size tenants can safely share a database in a Pool model, enforced by PostgreSQL Row-Level Security. Mid-market tenants often need a Bridge model (separate schema per tenant) once contracts require logical separation. Enterprise or regulated tenants typically require a Silo model with a fully dedicated database or cloud account. Building a tenant-provisioning abstraction that supports all three from Day 1 avoids a costly re-architecture later.
 
 <script type="application/ld+json">
 {
@@ -142,6 +157,14 @@ No. Multi-region adds immense operational complexity. Start with a single-region
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Start single-region. Architect for multi-region readiness (stateless APIs, externalized config, containers) but deploy it only when latency complaints from a second geography become a retention issue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should every tenant share the same database, or should each tenant get its own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on scale and segment. Small and mid-size tenants can share a database in a Pool model enforced by PostgreSQL Row-Level Security. Mid-market tenants often need a Bridge model with a separate schema per tenant. Enterprise or regulated tenants typically require a Silo model with a fully dedicated database. Building a tenant-provisioning abstraction supporting all three from Day 1 avoids a costly re-architecture later."
       }
     }
   ]

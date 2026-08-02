@@ -55,6 +55,18 @@ To succeed in AI, you must adapt your Agile sprints to incorporate MLOps (Machin
 2. **The Shift in Team Composition:** You cannot build AI with just Frontend and Backend developers. Your team topology must include Data Engineers whose sole job is to curate, clean, and structure the data before it ever touches the AI.
 3. **Continuous Evaluation (CE):** Standard CI/CD (Continuous Integration) tests code logic. AI requires Continuous Evaluation. You must build automated testing suites that ask the AI 500 benchmark questions every time the data pipeline changes, mathematically scoring the AI's accuracy to ensure you haven't introduced "drift."
 
+## Data Versioning: Solving the Reproducibility Problem
+
+A Data-Centric team fixes hallucinations by editing data instead of code. But this creates a new problem that most engineering teams are not equipped to handle: if the data itself is now the primary driver of behavior, how do you track what changed, when, and why? In traditional software, `git blame` tells you exactly which commit introduced a bug. In AI development, if nobody is versioning the datasets, nobody can answer the equivalent question, and every fix becomes an unrepeatable, undocumented accident.
+
+### Why "Which Dataset Produced This Behavior" Matters
+1. **Silent Regressions:** A data engineer re-chunks a batch of PDFs to fix one client's Q3 report, but the new chunking strategy accidentally breaks retrieval accuracy for a different document type used elsewhere in the pipeline. Without dataset versioning, nobody can trace the regression back to that specific ingestion change, because there is no audit trail linking a model's behavior to the exact data snapshot that produced it.
+2. **Compliance and Audit Requirements:** In regulated industries, if an AI gives a customer incorrect financial or medical guidance, your legal team will need to reconstruct exactly what data the model had access to on that specific date. Without versioned datasets, you cannot produce this evidence, which is itself a compliance failure independent of whatever the AI actually said.
+3. **Safe Rollback:** When a data change degrades your Continuous Evaluation score, you need the ability to instantly revert to the last known-good dataset snapshot, the same way you would revert a bad code deployment. Teams without data versioning instead try to manually "un-fix" the data, which is slow, error-prone, and rarely restores the exact prior state.
+
+### The Practical Fix: Treat Data Like Code
+Mature AI teams adopt tools like DVC (Data Version Control) or lakeFS to apply Git-style version control directly to datasets and vector index snapshots, not just to application code. Every re-ingestion, re-chunking, or re-embedding operation is committed as a new, tagged version, and every model evaluation run is stamped with the exact dataset version it was tested against. This turns "why did the AI's behavior change" from a forensic investigation into a two-minute diff, and it gives engineering leadership the same rollback confidence for data that they already expect from code deployments.
+
 ## The Manifera MLOps Framework
 
 Many [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies fail at AI because they apply standard web-development methodologies to Machine Learning problems. They deliver beautiful UIs attached to wildly inaccurate AI models.
@@ -82,6 +94,9 @@ Do not change the code or the prompt. Your first step is to check the Vector Dat
 
 ### (Scenario: QA Manager adapting to AI) How do you test an AI application if you can't use standard Unit Tests?
 Standard Unit Tests check if 'A + B = C'. AI is probabilistic, meaning the exact wording of the answer changes every time. You must implement Continuous Evaluation (CE). This involves writing automated scripts that ask the AI hundreds of benchmark questions and using a secondary 'Judge LLM' to evaluate if the AI's answers are factually accurate, regardless of the specific phrasing used.
+
+### (Scenario: Engineering Lead reconstructing a past incident) Why do we need to version our datasets, not just our code?
+Because in AI systems, the data is as much a driver of behavior as the code is. If you change a dataset (re-chunk a PDF, re-embed a document) without versioning it, you lose the ability to trace which specific data snapshot produced a given AI behavior, to roll back a regression safely, or to prove to auditors exactly what data the model relied on at a given point in time. Tools like DVC or lakeFS apply Git-style version control to data so every change is tracked and reversible.
 
 ### (Scenario: Procurement evaluating Manifera) How does Manifera's development process differ when building AI vs. Web Apps?
 When building web apps, we focus heavily on code architecture and frontend component rendering. When building AI, our Dutch Architects shift the focus entirely to Data Engineering and MLOps. We prioritize building robust ETL (Extract, Transform, Load) pipelines to clean your proprietary data, ensuring the foundation of the AI's knowledge is mathematically sound before we ever build the UI.
@@ -121,6 +136,14 @@ When building web apps, we focus heavily on code architecture and frontend compo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "You use Continuous Evaluation (CE). You automate a suite of benchmark questions and use a secondary 'Judge LLM' to score the factual accuracy of the AI's responses, rather than checking for exact string matches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do we need to version our datasets, not just our code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In AI systems, data drives behavior as much as code does. Without dataset versioning (using tools like DVC or lakeFS), you cannot trace which data snapshot caused a regression, roll back safely, or prove to auditors what data the model relied on at a given time."
       }
     },
     {

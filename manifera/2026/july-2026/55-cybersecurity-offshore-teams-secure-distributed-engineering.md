@@ -70,6 +70,25 @@ If your offshore partner is ISO 27001 certified, it means an external auditor ha
 
 If you are a European company subject to GDPR, or building [Healthcare Software](44-healthcare-software-development-compliance-complexity.md), using an uncertified offshore partner shifts massive legal liability directly onto your shoulders.
 
+## 5. Continuous Monitoring, Insider Threat Detection, and Offboarding
+
+Even with Zero Trust infrastructure and strict IAM in place, security is not a one-time setup — it requires continuous monitoring, and rigorous offboarding whenever an engagement ends or an engineer rotates off a pod.
+
+**User and Entity Behavior Analytics (UEBA):** Deploy tooling (e.g., Microsoft Sentinel, Splunk, or Datadog Security Monitoring) that baselines normal behavior for each developer — the repositories they typically touch, the hours they work, the volume of data they access — and flags anomalies. A backend engineer who suddenly clones 40 repositories at 3 a.m. local time, or downloads an entire customer database export, should trigger an automatic alert and, ideally, a temporary access freeze pending review.
+
+**Data Loss Prevention (DLP):** Endpoint DLP tools (Microsoft Purview, Forcepoint) block or flag attempts to upload source code to personal cloud storage (Dropbox, personal Gmail), paste proprietary code into public AI chat tools, or copy large volumes of data to USB drives. In distributed teams, DLP is the digital equivalent of the old "clean room" policy the industry has retired.
+
+**The 30-Minute Offboarding Checklist:** The single riskiest moment in any offshore engagement is offboarding — when a developer rotates off a project, resigns, or is terminated. A best-practice partner has a documented, timed checklist that executes the moment a departure is confirmed:
+- Immediate SSO deprovisioning (this alone kills access to 90%+ of connected tools).
+- Revocation of GitHub/GitLab organization membership and any personal access tokens.
+- Rotation of any shared secrets or API keys the departing engineer could have viewed.
+- MDM remote wipe of the company-issued laptop.
+- Confirmation that the departing engineer has signed exit acknowledgment of ongoing NDA and IP assignment obligations.
+
+**Contractual IP Assignment:** Every engineer on an offshore pod — not just the agency itself — should sign an individual IP assignment and confidentiality agreement naming your company as the owner of all work product. Verify this exists in the agency's standard employment contract rather than assuming the master services agreement with the agency automatically covers it; in several jurisdictions, IP created by an employee defaults to the employer of record, not the end client, unless explicitly assigned.
+
+**Follow-the-Sun Security Coverage:** Because your engineering pod may be active during Vietnam business hours while your security team sleeps in Amsterdam, define an incident response protocol that doesn't depend on someone being awake in Europe. Either the offshore partner's security lead is authorized to trigger a pre-approved incident response runbook (freezing accounts, rotating keys, notifying your DPO) within a defined SLA, or you maintain a follow-the-sun on-call rotation so a security-cleared engineer is reachable in every timezone your code touches production.
+
 ## Secure Offshore Development with Manifera
 
 Security is not an add-on; it is the foundation of our delivery model. Manifera bridges European compliance standards with Asian engineering talent. 
@@ -101,6 +120,10 @@ Do not rely on verbal assurances. Ask the agency for their ISO 27001 Statement o
 ### What happens if an offshore developer's laptop gets stolen? (Scenario: CTO planning disaster recovery)
 
 If proper MDM (Mobile Device Management) is in place, a stolen laptop is an inconvenience, not a catastrophe. The disk is encrypted (BitLocker/FileVault), making the data inaccessible without the password. The MDM allows you to remotely wipe the device the moment it connects to the internet. Because you enforce SSO and MFA, the thief cannot use saved browser sessions to access your cloud infrastructure.
+
+### What security steps should happen when an offshore developer leaves the project? (Scenario: Engineering Manager rotating team members off a pod)
+
+Offboarding should be immediate and checklist-driven, not left to memory. Within the same day, SSO access is deprovisioned (cutting off most connected tools at once), GitHub/GitLab membership and personal access tokens are revoked, any secrets the engineer could have viewed are rotated, and the company-issued laptop is remotely wiped via MDM. The departing engineer should also formally re-acknowledge their individual IP assignment and confidentiality obligations, which should have been signed at the start of the engagement, not assumed to be covered by the master agency contract alone.
 
 <script type="application/ld+json">
 {
@@ -145,6 +168,14 @@ If proper MDM (Mobile Device Management) is in place, a stolen laptop is an inco
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "If MDM is active, it's an inconvenience, not a breach. The hard drive is encrypted, you can remote-wipe the device instantly, and mandatory MFA prevents the thief from using hijacked browser sessions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What security steps should happen when an offshore developer leaves the project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Offboarding should happen the same day: SSO access is deprovisioned, GitHub/GitLab membership and tokens are revoked, exposed secrets are rotated, and the company laptop is remotely wiped. The engineer should also re-acknowledge their individual IP assignment and confidentiality agreement."
       }
     }
   ]
