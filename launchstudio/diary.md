@@ -4,7 +4,13 @@
 
 ### Tháng 08
 
+#### Ngày 02
+
+- **10:30**: Đồng bộ bản dịch Dutch cho 2 bài `extra-4` vừa mở rộng ở phiên trước (32-background-job-queue, 33-webhook-delivery): dịch mục H2 mới (idempotency / at-least-once delivery) kèm FAQ tương ứng sang tiếng Hà Lan, giữ nguyên code block không dịch theo đúng chuẩn các file khác; nhân tiện phát hiện và sửa lỗi code block bài 33 bản Dutch bị dịch nhầm cú pháp JS (`async function` → `asynchrone functie`, v.v.) khiến code không chạy được — khôi phục nguyên bản tiếng Anh cho code. Word count sau khi sửa: bài 32 Dutch 1.789 → 2.276 từ, bài 33 Dutch 1.752 → 2.121 từ (khớp chuẩn với bản tiếng Anh 2.111/1.982 từ). Verify JSON-LD parse hợp lệ cho cả 2 file.
+
 #### Ngày 01
+
+- **10:12**: Thực hiện audit SEO/GEO cho launchstudio.eu (lưu vào `seo_geo_audit_2026-07-31.md`): phát hiện lỗi OG/meta-description trùng lặp toàn site, thiếu schema `Organization`/`FAQPage`, nội dung blog live mỏng (~250-350 từ/bài) và `llms.txt` sơ sài. Song song, rà soát toàn bộ 400 bài tiếng Anh trong `2026-extra/`, chỉ phát hiện 2 bài dưới chuẩn độ sâu (job queue & webhook reliability, ~700 từ) — bổ sung 1 mục H2 kỹ thuật mới cho mỗi bài (job idempotency, at-least-once webhook delivery) kèm FAQ và JSON-LD hợp lệ. Commit `ccc7dbc9`.
 
 - **14:35**: Cập nhật nhật ký cho phiên làm việc (đồng bộ GitHub, mở rộng độ dài bài viết november & december).
 - **14:20**: Commit và push lên GitHub (commit `ef27bb26`, 212 file, +2.388 dòng): mở rộng đồng loạt bài viết November & December 2026 lên chuẩn SEO/GEO. Trước khi push, phát hiện và dọn sạch 521 file rác dạng " 2."/" 3." do iCloud tạo trùng lặp ở các thư mục không liên quan (extra-1, extra-2, extra-5-local, extra-6-random, onlyaijobs, sys, manifera) — xác nhận không ảnh hưởng tới nội dung vừa sửa trước khi stage & commit.

@@ -61,6 +61,24 @@ Exponentiële uitstel geeft tijdelijke fouten (een stroomafwaartse API-snelheids
 
 De meer dan 120 ingenieurs van Manifera zien dit exacte hiaat voortdurend bij het beoordelen van door AI gegenereerde backends: het gelukkige pad werkt, de nieuwe poging bestaat, maar het mislukkingspad is een doodlopende weg zonder zichtbaarheid. Het is zelden een herschrijving; het is meestal een wachtrijbibliotheekwisseling en een Slack- of e-mailwebhook die op een drempel is aangesloten.
 
+## Idempotentie: het retry-probleem waar niemand het over heeft
+
+Het toevoegen van nieuwe pogingen introduceert een tweede, stiller probleem waar de meeste door AI gegenereerde taakcode nooit rekening mee houdt: wat gebeurt er als de taak eigenlijk wél is gelukt, maar de bevestiging nooit is aangekomen? Een betaling wordt succesvol verwerkt, maar de reactie loopt vast in een time-out voordat uw app het succes registreert, en de retry-logica — die precies doet wat haar is opgedragen — belast de klant een tweede keer. Een bevestigingsmail wordt verzonden, de ontvangstbevestiging van de mailprovider komt door de time-out te laat binnen, en de nieuwe poging verstuurt een dubbele e-mail. Het opnieuw proberen van een taak is alleen veilig als het twee keer uitvoeren van die taak hetzelfde resultaat in de echte wereld oplevert als het één keer uitvoeren ervan — een eigenschap die idempotentie wordt genoemd — en AI-codeertools bouwen hier vrijwel nooit voor, tenzij dit expliciet wordt gevraagd, omdat een demo dezelfde taak nooit zo vaak uitvoert dat dit gat aan het licht komt.
+
+De oplossing is een deduplicatiecontrole gekoppeld aan iets stabiels binnen de taak — een bestelnummer, een factuurnummer, een natuurlijke sleutel — die wordt gecontroleerd vóórdat het neveneffect wordt uitgevoerd, niet erna:
+
+```javascript
+async function processPaymentJob(job) {
+  const existing = await db.payments.findOne({ idempotencyKey: job.id });
+  if (existing) return existing; // already processed, skip the side effect
+  const result = await chargeCustomer(job.amount, job.customerId);
+  await db.payments.insertOne({ idempotencyKey: job.id, result });
+  return result;
+}
+```
+
+Deze ene controle is wat het verschil maakt tussen "nieuwe pogingen maken het systeem betrouwbaarder" en "nieuwe pogingen belasten iemand af en toe twee keer." Elke taak die geld raakt, een bericht verstuurt dat een klant ziet, of een record schrijft dat niet van nature overschrijf-veilig is, heeft dit patroon nodig vóórdat nieuwe pogingen worden ingeschakeld — niet pas nadat een dubbele afschrijving het probleem afdwingt.
+
 ## De oplossing afstemmen op het bedrijfsrisico
 
 Niet elke achtergrondbaan heeft dezelfde nauwkeurigheid nodig. Een taak die een miniatuurafbeelding opnieuw genereert, kan stilletjes mislukken en niemand merkt het. Een taak die een factuur verwerkt, een betaling synchroniseert of een wettelijk verplichte melding verzendt, kan dat niet. Voordat u de waarschuwingsinfrastructuur aansluit, is het de moeite waard om taken in twee categorieën te verdelen:
@@ -107,6 +125,10 @@ Onze ingenieurs baseren zich op patronen uit meer dan 160 opgeleverde projecten 
 
 Ja: de betrouwbaarheid van de taakwachtrij bevindt zich volledig in de backend- en infrastructuurlaag, dus deze wordt toegevoegd zonder dat de manier waarop uw app eruit ziet of zich gedraagt ​​voor gebruikers wordt gewijzigd.
 
+### Wat is idempotentie, en waarom is dit belangrijker zodra er nieuwe pogingen worden toegevoegd?
+
+Idempotentie betekent dat het twee keer uitvoeren van een taak hetzelfde resultaat in de echte wereld oplevert als het één keer uitvoeren ervan — zonder deze eigenschap kan een nieuwe poging die wordt geactiveerd nadat een taak eigenlijk al is gelukt maar de bevestiging niet is aangekomen, een klant dubbel laten betalen of een bericht dubbel versturen, en daarom heeft elke taak met een neveneffect in de echte wereld een deduplicatiecontrole nodig voordat nieuwe pogingen veilig kunnen worden ingeschakeld.
+
 ### Werkt LaunchStudio met de taakwachtrijbibliotheek die mijn AI-tool al heeft gegenereerd?
 
 Meestal wel – we werken met de bestaande stack van Lovable, Bolt, Cursor of v0-uitvoer in plaats van deze in het algemeen te vervangen, wat consistent is met de manier waarop de technici van Manifera de meer dan 160 projecten benaderen die zijn opgeleverd voor klanten, waaronder Vodafone en Xpar Vision.
@@ -150,6 +172,14 @@ Voor een dieper inzicht in hoe productie-backend-systemen de eerste keer goed wo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes \u2014 job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is idempotency, and why does it matter more once retries are added?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Idempotency means running a job twice produces the same real-world result as running it once \u2014 without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable."
       }
     },
     {

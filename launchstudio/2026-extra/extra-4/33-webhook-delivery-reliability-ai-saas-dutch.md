@@ -50,28 +50,45 @@ function signPayload(payload, secret) {
     .digest('hex');
 }
 
-asynchrone functie sendWebhook(url, payload, geheim, poging = 1) {
-  const handtekening = signPayload(payload, geheim);
-  probeer {
-    const res = wachten op ophalen (url, {
-      methode: 'POST',
-      headers: { 'X-Handtekening': handtekening },
+async function sendWebhook(url, payload, secret, attempt = 1) {
+  const signature = signPayload(payload, secret);
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'X-Signature': signature },
       body: JSON.stringify(payload),
     });
     if (!res.ok) throw new Error(`Status ${res.status}`);
-    wacht op logDelivery(payload.id, 'succes', poging);
-  } vangen (err) {
-    als (poging < 6) {
-      const vertraging = Math.min(2000 * 2 ** poging, 300000);
-      retourschemaOpnieuw proberen(url, payload, geheim, poging + 1, vertraging);
+    await logDelivery(payload.id, 'success', attempt);
+  } catch (err) {
+    if (attempt < 6) {
+      const delay = Math.min(2000 * 2 ** attempt, 300000);
+      return scheduleRetry(url, payload, secret, attempt + 1, delay);
     }
-    wacht op logDelivery (payload.id, 'mislukt', poging);
-    wacht op notificatieKlant(url, payload.id);
+    await logDelivery(payload.id, 'failed', attempt);
+    await notifyCustomer(url, payload.id);
   }
 }
 ```
 
 Het leveringslogboek is net zo belangrijk als de logica voor opnieuw proberen. Het is wat een oprichter (of het ondersteuningsteam van zijn klant) laat antwoorden "is dit evenement daadwerkelijk afgeleverd" zonder te raden. De ingenieurs van Manifera, gebaseerd op meer dan elf jaar productie-integratiewerk, beschouwen een leveringslogboek als niet-onderhandelbaar voor elk B2B SaaS-product waarbij het downstream-systeem van een klant afhankelijk is van de aankomst van uw evenementen.
+
+## Levering is niet exact eenmalig — ontwerp de ontvangende kant daarop
+
+Het toevoegen van nieuwe pogingen lost stille storingen op, maar introduceert een feit waar de meeste door AI gegenereerde integraties nooit rekening mee houden: zodra er nieuwe pogingen bestaan, is levering niet langer exact-eenmalig, maar minstens-eenmalig. Als een ontvangende server een gebeurtenis succesvol verwerkt, maar de bevestiging ervan onderweg verloren gaat, zal de retry-logica van de afzender — die precies doet wat is bedoeld — diezelfde gebeurtenis opnieuw afleveren. Elke grote webhookaanbieder (Stripe, GitHub, Slack) documenteert dit expliciet en verwacht dat de ontvanger hiermee omgaat; de meeste door oprichters gebouwde integraties doen dat niet, omdat een demo nooit het scenario van vertraagde bevestiging veroorzaakt dat dit blootlegt.
+
+De oplossing hoort thuis in de payload, niet in de retry-logica: elke gebeurtenis heeft een stabiele, unieke gebeurtenis-ID nodig die bij elke bezorgpoging identiek blijft, zodat de ontvangende kant kan controleren "heb ik deze ID al verwerkt?" voordat er een tweede keer op wordt gehandeld.
+
+```javascript
+async function handleIncomingWebhook(event) {
+  const alreadyProcessed = await db.processedEvents.findOne({ eventId: event.id });
+  if (alreadyProcessed) return; // duplicate delivery, safely ignored
+  await db.processedEvents.insertOne({ eventId: event.id, receivedAt: new Date() });
+  await applyEvent(event);
+}
+```
+
+Zonder deze controle kan een dubbele levering van een "bestelling aangemaakt"-gebeurtenis dezelfde bestelling twee keer aanmaken in het systeem van een klant — wat er, vanuit het perspectief van de klant, precies uitziet als een gegevensintegriteitsbug in uw product, ook al was de onderliggende oorzaak een netwerkstoring en een retry die correct zijn werk deed.
 
 ## Waarom deze kloof groter is voor SaaS dan voor consumentenapps
 
@@ -116,6 +133,10 @@ De technici van Manifera implementeren doorgaans vijf tot zes pogingen met expon
 
 Ja, het risico is niet evenredig aan het aantal klanten, maar aan de mate waarin het systeem van een klant afhankelijk is van uw gebeurtenissen, en zelfs één ondernemingsgerichte klant kan verloren gaan door een stille gegevensdesynchronisatie.
 
+### Als nieuwe pogingen het leveringsprobleem oplossen, welk nieuw probleem creëren ze dan?
+
+Nieuwe pogingen maken levering minstens-eenmalig in plaats van exact-eenmalig, wat betekent dat dezelfde gebeurtenis legitiem twee keer kan aankomen — dus moet de ontvangende kant een stabiele gebeurtenis-ID controleren en alles overslaan wat al is verwerkt, anders kan een herhaalde levering stilletjes dubbele records aanmaken.
+
 ### Kan Manifera dit toevoegen aan een webhooksysteem dat al gedeeltelijk is gebouwd?
 
 Ja – onze technici combineren regelmatig logica voor opnieuw proberen, ondertekenen en inloggen op bestaande webhook-code van Cursor, Lovable, Bolt of v0 in plaats van deze opnieuw op te bouwen, een patroon dat consistent is met het integratiewerk achter meer dan 160 opgeleverde projecten voor klanten als CFLW en Statler BI.
@@ -159,6 +180,14 @@ Voor meer informatie over hoe backends met veel integratie zijn gebouwd om lang 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes \u2014 the risk isn't proportional to customer count, it's proportional to how much a customer's system depends on your events, and even one enterprise-leaning customer can be lost over a silent data desync."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If retries fix the delivery problem, what new problem do they create?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retries make delivery at-least-once instead of exactly-once, meaning the same event can legitimately arrive twice \u2014 so the receiving side needs to check a stable event ID and skip anything it's already processed, or a retried delivery can silently create duplicate records."
       }
     },
     {
