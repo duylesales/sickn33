@@ -53,6 +53,20 @@ A prompt describing "let users submit their name and email" gets satisfied by co
 
 Beyond basic type checking (is this a number, is this a string), proper validation includes format verification (does this look like a valid email, a valid phone number), range and length limits (preventing excessively long input that could cause performance or storage issues), and, for any input used in constructing queries or commands, appropriate escaping or parameterization to prevent injection-style exploitation regardless of what the input contains.
 
+## A Practical Framework for Prioritizing Which Fields to Fix First
+
+Retrofitting validation across an entire existing application in one pass is rarely realistic for a solo founder already stretched across product, marketing, and support — and treating it as an all-or-nothing project is a common reason it never actually gets started. A more workable approach prioritizes by exposure and consequence rather than attempting comprehensive coverage all at once.
+
+**Start with anything that touches money or authentication.** A quantity field feeding a payment calculation, or any field used in a login or password-reset flow, carries the highest consequence if it accepts something unexpected — these deserve validation attention before, say, a contact form's optional bio field, even though both are technically "unvalidated input" in the abstract sense.
+
+**Prioritize fields used in dynamic queries, file paths, or system commands.** Any input incorporated into a database query, a constructed file path, or a shell command carries injection-style risk beyond simple data-integrity concerns, making these a higher priority than fields that only ever get displayed back to the user who submitted them.
+
+**Address publicly reachable endpoints before internal or admin-only ones.** A form any anonymous visitor can reach is exposed to far more potential malicious or malformed input, by sheer volume, than an internal tool only your own team accesses — both eventually warrant validation, but the public-facing surface is the more urgent starting point.
+
+**Use a schema validation library rather than hand-rolling checks field by field.** Libraries like Zod, Yup, or Joi in the JavaScript ecosystem let you define a field's expected shape once — type, format, range, required versus optional — and get that shape enforced consistently everywhere the schema is applied, considerably more maintainable over time than scattered, ad hoc `if` statements checking each field individually across different parts of a growing codebase.
+
+Working through existing fields in roughly this order — money and authentication first, injection-risk fields second, public-facing surface before internal tooling, schema libraries over hand-rolled checks — turns an overwhelming, indefinite backlog into a sequence of small, finishable steps, applying the same tiered-prioritization logic covered throughout this series specifically to validation work.
+
 ## Why This Deserves Deliberate Attention, Not Just Trust in Framework Defaults
 
 Modern frameworks provide real, substantial protection by default against several classic vulnerability categories, and it's reasonable to rely on that baseline protection. What frameworks don't automatically provide is validation specific to your application's actual business rules — a valid-looking but nonsensical value (a negative quantity, an appointment date in the past) passes generic framework-level checks while still representing invalid input for your specific product, requiring validation logic specific to what your application actually needs to be true.

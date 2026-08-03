@@ -35,7 +35,7 @@ It's 2 AM. You just finished scaling your SaaS prototype past its first hundred 
 
 ## Step One: Recognize That Scale Changes What Breaks
 
-At low volume, almost every workflow completes exactly as designed, because there's rarely more than one thing happening at once. As real customers arrive, concurrent events become the norm rather than the exception — multiple webhooks firing close together, retried requests, and edge cases that simply never occurred often enough at small scale to be noticed.
+At low volume, almost every workflow completes exactly as designed, because there's rarely more than one thing happening at once. As real customers arrive, concurrent events become the norm rather than the exception — multiple webhooks firing close together, retried requests, and edge cases that simply never occurred often enough at small scale to be noticed. A founder testing their own product might trigger one webhook every few minutes, if that — an SaaS product with even a modest few hundred paying customers can see dozens of events arrive within the same second during a billing cycle's renewal window, a load pattern that simply doesn't exist anywhere in a founder's own manual testing history.
 
 ## Step Two: Understand Why Webhook Verification Specifically Gets Skipped
 
@@ -48,6 +48,20 @@ Every reputable payment provider signs its webhook payloads cryptographically, s
 ## Step Four: Recognize the Compounding Risk of Scaling Before Fixing This
 
 An unverified webhook endpoint is a manageable, theoretical risk at ten trusted early users. At meaningful scale, with a public, discoverable endpoint processing real financial events, it becomes a concrete avenue for someone to submit forged "payment succeeded" events and receive product access without ever actually paying — a risk that grows directly with how many people know your endpoint exists.
+
+## Beyond Webhooks: Other Concurrency Failure Modes That Surface Only at Scale
+
+Signature verification closes one specific gap, but it's part of a broader category of problems that share the same root cause: code tested against one request at a time, deployed into an environment where many requests now arrive close together. Recognizing the pattern helps a founder spot the next instance before it turns into a support ticket.
+
+**Idempotency — handling the same event twice safely.** Payment providers, by design, sometimes send the same webhook event more than once, particularly during network retries or provider-side hiccups. Code that processes "payment succeeded" by simply granting access or incrementing a counter, without first checking whether that specific event was already processed, can end up granting double access or double-counting a single payment if the event arrives twice. The fix is straightforward once identified — record each processed event's unique ID and skip anything already seen — but it never surfaces during single-request testing, because a founder testing manually never triggers the same webhook twice by accident.
+
+**Race conditions on limited resources.** Anything with a fixed, countable quantity — the last seat in a class, the last unit of inventory, a limited-time discount code capped at a specific number of uses — can be claimed by more than one concurrent request if the "check remaining count, then decrement it" logic isn't handled as a single atomic operation. Tested one request at a time, this always works correctly. Tested by two customers clicking "buy" within the same second, it can let both succeed against a resource that only had one unit left.
+
+**Retry storms.** When an external service the application depends on goes down briefly, a naive retry implementation — one that immediately retries a failed request in a tight loop — can turn a short outage into a much longer one, by hammering the recovering service with a burst of retries the moment it comes back online, sometimes taking it back down again. A more resilient pattern spaces retries out with increasing delays between attempts, rather than retrying as fast as possible.
+
+**Ordering assumptions that don't hold under load.** Code that assumes event A always arrives before event B — a user signup event before their first payment event, for instance — can behave unpredictably once traffic is high enough that the two arrive out of order or nearly simultaneously, a scenario that essentially never happens during low-volume founder testing.
+
+None of these are exotic problems; they're the standard list any engineer scaling a payments-adjacent system checks for as a matter of course. What they have in common with the webhook-signature gap is the same underlying reason they get missed: they're invisible at low volume, by definition, and only become visible at exactly the point where a founder is busiest with growth rather than looking backward at infrastructure. [LaunchStudio](https://launchstudio.eu/en/#process) reviews for this specific category of failure as part of scaling founders' production-readiness work, alongside the webhook fix itself.
 
 ## Step Five: Apply the Fix Without Disrupting What Already Works
 
@@ -96,6 +110,10 @@ Yes — it's a decision about how the system verifies trust at a specific extern
 
 No — a mismatched support ticket catching this once was fortunate rather than a repeatable safeguard, which is exactly why a proactive review, rather than waiting for a customer to stumble onto evidence, is the more reliable path once a product is scaling.
 
+### Do these same concurrency issues apply to a product that isn't handling payments at all?
+
+Yes — any feature involving a limited resource (booking slots, coupon codes, seat availability) or any process triggered by an external event, like an email service webhook or a third-party integration callback, can hit the same idempotency and race-condition patterns, regardless of whether payments are involved.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,6 +157,14 @@ No — a mismatched support ticket catching this once was fortunate rather than 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No, it was fortunate rather than repeatable, which is why a proactive review is more reliable than waiting for evidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do these concurrency issues apply to products that don't handle payments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — any limited resource or externally triggered process can hit the same idempotency and race-condition patterns."
       }
     }
   ]

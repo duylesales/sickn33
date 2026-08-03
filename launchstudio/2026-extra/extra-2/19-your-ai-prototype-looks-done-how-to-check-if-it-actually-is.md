@@ -45,6 +45,8 @@ Searching the visible JavaScript bundle for strings like "sk_" (a common Stripe 
 
 Payment providers like Stripe issue two distinct kinds of keys — a "publishable" key, safe to use in frontend code, and a "secret" key, meant only for server-side use. AI coding tools generating a quick payment integration sometimes use whichever key was provided in the prompt without distinguishing between the two, and if a founder pastes the secret key where the publishable key belongs, the tool has no independent way of knowing that's the wrong one.
 
+The two keys often sit right next to each other in a payment provider's dashboard, both labeled with similar-looking prefixes, and a founder copying credentials quickly during setup has no strong visual cue prompting extra caution before pasting one into a frontend configuration file. Unless a founder already understands the distinction going in, there's nothing about the copy-paste moment itself that signals a mistake is happening — which is exactly why this remains one of the most common integration errors even among founders who are otherwise careful.
+
 ## Step Four: Recognize Why a Working Payment Flow Doesn't Rule This Out
 
 A payment integration using the secret key directly in frontend code will, in many cases, still process test payments successfully — the mistake doesn't necessarily produce an error, which is exactly why "it works" isn't reassuring evidence here. The risk isn't that it fails to function; it's that a fully privileged key sits somewhere any visitor can read it.
@@ -56,6 +58,33 @@ A manual search catches obvious cases but isn't exhaustive — a proper audit ch
 Manifera's payment security audits are carried out by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations handled through the Amsterdam headquarters at Herengracht 420.
 
 [Describe what you're building — we reply within one business day](https://launchstudio.eu/en/#contact).
+
+## Beyond Stripe Keys: A Fuller Frontend Bundle Audit
+
+Checking for an exposed Stripe secret key is a good first pass, but the same underlying mistake — a server-only credential ending up in code sent to every visitor's browser — can happen with several other services too.
+
+**Search your bundle for these patterns too**
+
+- **Supabase**: a `service_role` key (which bypasses row-level security entirely) accidentally used where the restricted `anon` key belongs — visually similar enough in a config file that the mistake is easy to make and easy to miss
+- **AWS credentials**: an access key and secret pair meant for server-side SDK calls, occasionally hardcoded during a quick integration rather than routed through a backend endpoint
+- **Database connection strings**: a full connection URL, including a username and password, sometimes used directly in frontend code during early prototyping to "just get data showing" before a proper API layer exists
+- **Third-party API keys with elevated permissions**: any service offering both a restricted, frontend-safe key and a fuller-access key — the same publishable-versus-secret pattern Stripe uses shows up under different names across many providers
+
+**Search systematically, not just for one string**
+
+A single search for "sk_" catches Stripe specifically, but a more complete pass searches for generic patterns too — "secret," "private_key," "service_role," and the specific prefix patterns of every third-party service your product actually integrates with. Most browser developer tools let you search the entire loaded bundle in one pass, so this is a matter of running several searches, not a single one.
+
+**Remember that "removed from the bundle" doesn't mean "safe again"**
+
+If a key is found exposed and removed from the frontend code, the key itself still needs to be rotated — simply deploying a fix that stops sending it going forward doesn't undo any exposure that already happened, since the previous version of the bundle may still be cached in visitors' browsers, saved by a CDN, or already captured by anyone who looked before the fix shipped.
+
+**Consider what a CDN or browser cache means for your timeline**
+
+Even after deploying a fix, a content delivery network or a visitor's own browser cache can continue serving the old, exposed bundle for some time depending on cache configuration — which is one more reason rotation, not just removal, is the step that actually closes the exposure rather than just hiding it going forward.
+
+**Build the check into your deployment process, not just a one-time launch task**
+
+A bundle search run once before the original launch says nothing about a new integration added three months later — adding a quick automated search for common secret patterns as a step in your deployment pipeline, even a simple script run before each production deploy, catches this category of mistake at the moment it's introduced rather than waiting for a volunteer developer to stumble onto it out of habit.
 
 ## Real example
 

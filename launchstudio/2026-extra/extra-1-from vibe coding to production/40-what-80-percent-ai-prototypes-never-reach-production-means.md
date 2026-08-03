@@ -59,6 +59,17 @@ The statistic is frequently used, implicitly or explicitly, to create urgency ar
 
 If your prototype represents a validated idea you still believe in, and what's actually holding you back is a production-readiness gap rather than lost conviction or a bad market fit, you're in the specific subset of that 80% where the outcome is genuinely, directly addressable — not a statistical inevitability, but a solvable, bounded technical problem with a known, scopeable path forward.
 
+## A Short Self-Diagnostic for Figuring Out Your Own Category
+
+Rather than treating the four categories above as abstract, it helps to answer them directly about your own stalled or hesitant prototype, in order:
+
+1. **Do I still believe in the underlying idea, and do I have any real signal — interested users, a waitlist, a conversation that went well — that it has demand?** If no, you're likely in the first category (normal, healthy abandonment), and no amount of production-readiness work changes that answer.
+2. **If yes, do I actually know what specifically is technically missing between where my prototype is now and a safe launch, or is my hesitation more of a vague sense that "there's probably a lot to do"?** A vague sense with no specifics is the signature of the second category — delay driven by an unknown, unscoped gap rather than a known one.
+3. **If I do know roughly what's missing, have I actually attempted to scope or fix it, or has it just been sitting as a known-but-unaddressed item?** An attempted fix that hit a specific technical wall places you in the third category — a genuine blocker, not just hesitation.
+4. **If my product technically works and is live, is the actual struggle about who's using it and whether they'll pay, rather than whether it's safe or stable?** That's the fourth category, a business problem this series doesn't claim to solve.
+
+Most founders who reach out to a production-readiness provider after genuinely sitting with these four questions land clearly in category two or three — which is precisely the actionable subset this article describes, and precisely why a short, honest self-diagnostic is worth doing before either abandoning a validated idea prematurely or continuing to delay it indefinitely on a fear that's never been concretely scoped.
+
 [LaunchStudio](https://launchstudio.eu/en/) specifically addresses the production-readiness-gap subset of this statistic — the founders stalled not by lost conviction but by a technical gap between prototype and launch — backed by Manifera's engineering track record across 160+ delivered projects that made it to production.
 
 [Find out if your specific stall is addressable](https://launchstudio.eu/en/#contact) — the headline statistic bundles causes that don't all apply to your situation equally.

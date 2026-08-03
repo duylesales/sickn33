@@ -53,6 +53,20 @@ Every AI code tool on the market today — v0, Bolt, Lovable, Cursor — is genu
 
 **Reality:** an unprotected admin route is often the single highest-value target in an entire application, since admin panels typically expose exactly the kind of broad, sensitive controls — user management, data export, billing overrides — that a narrower vulnerability elsewhere wouldn't. Treating it as a footnote tends to be the opposite of the actual risk it represents.
 
+## How to Inventory Every Route in Your Application, Not Just the Ones in Your Nav Menu
+
+The uncomfortable truth about "hidden" routes is that most founders don't actually know the full list of pages and API endpoints their own AI coding tool generated, because the tool creates files faster than anyone reviews them, and a route doesn't have to be linked anywhere to exist and respond to requests.
+
+**A few practical ways to build a real inventory:**
+
+- **Check the framework's routing structure directly**, not the navigation menu. In a Next.js project, that means looking at every folder under `/app` or `/pages`; in most other frameworks, there's an equivalent routes file or folder listing every path the server actually responds to, whether or not a link points to it.
+- **Search your codebase for every place a role or permission check exists**, then cross-reference that list against the full route list from the step above. Any route missing from the permission-check list is a route with no access control at all, by definition, not an oversight you have to guess at.
+- **Pull your server's access logs**, if you have any history of them, and look for requests to paths you don't recognize. Real traffic — including bot traffic — often reveals routes that exist but were never intentionally documented anywhere.
+- **Ask your AI coding tool directly** to list every route or page it has generated across the project's history, including ones later removed from navigation but never actually deleted from the codebase. This won't be perfect, but it's a faster starting point than manually reading every file.
+- **Check what search engines have already indexed**, using a simple `site:yourdomain.com` search, since an unprotected route that's been live for even a few weeks is often already crawled and listed publicly, exactly as happened with Lotte's admin panel.
+
+Once you have the full list, the actual fix is almost mechanical: every route serving anything beyond fully public content needs an explicit, server-side answer to "who is allowed to load this," checked independently of whether a link to it currently exists anywhere in the UI. The inventory step is the part founders skip, not because it's hard, but because it never occurs to them that "unlinked" and "unprotected" are different properties — until a search engine, a curious visitor, or a review process treats them as the same thing.
+
 ## What Closing This Gap Looks Like in Practice
 
 The fix is a specific, scoped piece of engineering: adding a server-side role check to every sensitive route, not just the ones currently linked in the UI, and verifying that check independently of whatever the frontend displays. [LaunchStudio](https://launchstudio.eu/en/) runs exactly this kind of route-by-route access review as part of its Launch Ready package, backed by Manifera's 11+ years of experience building role-based access systems for enterprise clients.
@@ -100,6 +114,10 @@ A basic search for the site's known internal URLs, and checking whether a logged
 
 Singapore functions primarily as a regional coordination and partnership hub rather than the location doing hands-on code review — it's mentioned mainly to explain how Manifera's Southeast Asia presence supports LaunchStudio's broader operating footprint, not because it changes who performs the actual engineering work.
 
+### Should routes that are no longer used be deleted, or is unlinking them enough?
+
+Deleted, where possible. An unlinked route is still a live, responding route on the server — removing it entirely from the codebase means it can't be found or exploited at all, which is a stronger guarantee than relying on the assumption that nobody will stumble onto the link.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -143,6 +161,14 @@ Singapore functions primarily as a regional coordination and partnership hub rat
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Singapore is primarily a regional coordination hub, not the location performing the hands-on engineering work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should unused routes be deleted, or is unlinking them enough?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deleted where possible — an unlinked route still exists and responds; removing it entirely is a stronger guarantee."
       }
     }
   ]

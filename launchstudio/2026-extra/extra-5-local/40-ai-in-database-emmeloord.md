@@ -22,6 +22,8 @@ Target Persona: Technical Solo Founder
 
 Emmeloord sits at the exact geographic center of the Noordoostpolder — the reclaimed heart of Flevoland, drained from the Zuiderzee in the 1940s and built, quite literally, from a blank slate. There's something fitting about that when talking to the region's founders about AI in database design: a lot of AI-generated schemas look like they were also built from a blank slate, in the sense that basic structural decisions that any experienced database engineer would make automatically simply weren't made at all.
 
+The comparison holds up further than it first seems. When the Noordoostpolder was designed and drained, planners didn't improvise the road network, drainage system, and town layout on the fly — they worked from a deliberate master plan precisely because retrofitting infrastructure into reclaimed land after the fact is far more expensive than designing it correctly from day one. A database schema works the same way: indexes, foreign key constraints, and identifier strategy are the drainage system of your application, invisible when they work and expensive to fix once real data volume depends on them.
+
 ## Where AI in database schema generation consistently falls short
 
 If you're technical enough to open your own schema and read it, here's what to actually check, because these are the four places we see AI-generated database designs cut corners most consistently:
@@ -41,6 +43,18 @@ For a technical founder, the fix isn't mysterious — it's the kind of database 
 "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that," says Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera. Database architecture is precisely where that maturity gap shows up first and most concretely — it's rarely visible in a demo, and almost always visible the moment real data volume and real concurrent users arrive.
 
 LaunchStudio is powered by Manifera, a company with 120+ engineers and 160+ delivered projects, including enterprise data-heavy platforms for clients like Xpar Vision and Statler BI. Our Amsterdam office at Herengracht 420 coordinates directly with founders on this kind of schema audit. Most database hardening engagements fall within LaunchStudio's standard €800–€7,500 range — you can get a precise estimate through our [calculator](https://launchstudio.eu/en/#calculator), and see Manifera's broader offshore engineering capacity on [their offshore development page](https://www.manifera.com/services/offshore-software-development/).
+
+## Row-Level Security vs. Application-Level Authorization: Which Do You Actually Need?
+
+Technical founders reviewing their own schema often ask a reasonable question: should authorization live in the database itself, as row-level security policies, or in the application code, as explicit checks before each query runs? The honest answer is that production systems generally need both, but understanding the trade-off helps you know where to invest first.
+
+**Row-level security (RLS) lives at the database layer.** Once configured correctly in Postgres or Supabase, it enforces access rules regardless of which code path touches the data — a serverless function, an admin script, a future API route nobody's written yet. Its strength is that it's very hard to accidentally bypass, because the database itself refuses to return rows a user isn't authorized to see, no matter how the query was constructed.
+
+**Application-level authorization lives in your API or backend code.** It's more flexible for complex, context-dependent rules — "a manager can see their team's records, but only during business hours" is awkward to express as a pure RLS policy but straightforward as application logic. Its weakness is that it only protects the specific code paths where someone remembered to write the check, which is exactly the kind of thing that gets missed under deadline pressure.
+
+**A practical rule of thumb:** use RLS as your baseline, non-negotiable safety net for "does this user have any right to see this row at all," and layer application logic on top for nuanced business rules about what they can do with it once basic access is confirmed. Relying on application-level checks alone, with no RLS, means a single forgotten `WHERE user_id = ?` clause anywhere in your codebase becomes a full data exposure — which is precisely the category of bug that's easy to write once and easy to miss in review.
+
+For a land-management schema tracking parcels and lease agreements between multiple parties, this two-layer approach is what actually holds up under real use: RLS guarantees no user can ever query a parcel outside their own account at the database level, while application logic handles the more nuanced question of exactly which fields a shared lease agreement should expose to each party involved.
 
 ## Real example
 
@@ -76,6 +90,9 @@ Manifera's engineering team of 120+ engineers, coordinated through our Amsterdam
 ### How much does a database hardening engagement typically cost?
 Most database schema audits and fixes fall within LaunchStudio's standard €800 to €7,500 range, completed in one to three weeks depending on schema complexity.
 
+### Should I use row-level security or application-level checks for authorization?
+Generally both. RLS acts as a non-negotiable baseline enforced at the database layer regardless of which code path touches the data, while application-level logic handles more nuanced, context-dependent business rules on top of that baseline.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,7 +102,8 @@ Most database schema audits and fixes fall within LaunchStudio's standard €800
     { "@type": "Question", "name": "What did Herre Roelevink mean about architecture and security being the real challenge?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's CEO has explained that turning ideas into software is now solved by AI tools; the harder problem is the architecture and security needed for production maturity, including database design." } },
     { "@type": "Question", "name": "Does LaunchStudio only work with agricultural tech founders in Emmeloord?", "acceptedAnswer": { "@type": "Answer", "text": "No, LaunchStudio serves founders across all industries in the Netherlands and Benelux, alongside agri-tech founders in Emmeloord and the Noordoostpolder." } },
     { "@type": "Question", "name": "Who performs the database schema audit?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineering team of 120+ engineers, coordinated through the Amsterdam office, with 160+ delivered enterprise projects." } },
-    { "@type": "Question", "name": "How much does a database hardening engagement typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "Most database schema audits and fixes fall within €800 to €7,500, completed in one to three weeks." } }
+    { "@type": "Question", "name": "How much does a database hardening engagement typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "Most database schema audits and fixes fall within €800 to €7,500, completed in one to three weeks." } },
+    { "@type": "Question", "name": "Should I use row-level security or application-level checks for authorization?", "acceptedAnswer": { "@type": "Answer", "text": "Generally both. RLS provides a database-layer baseline that is hard to bypass, while application logic handles more nuanced business rules on top." } }
   ]
 }
 </script>

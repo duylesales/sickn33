@@ -49,11 +49,32 @@ A marketing website typically handles less sensitive data than the app itself, w
 
 ## Why This Gets Deprioritized So Consistently
 
-Because the marketing site doesn't handle payment details or core product data, it's easy to mentally file it under "less important" rather than "differently important" — a categorization error that specifically underestimates how much of a founder's actual customer acquisition depends on this exact surface performing reliably and trustworthily, independent of anything happening in the app behind it.
+Because the marketing site doesn't handle payment details or core product data, it's easy to mentally file it under "less important" rather than "differently important" — a categorization error that specifically underestimates how much of a founder's actual customer acquisition depends on this exact surface performing reliably and trustworthily, independent of anything happening in the app behind it. The same founder who wouldn't dream of skipping a security review on their payment flow will happily ship a marketing site built in an afternoon, reasoning that a slow page or a broken form is an inconvenience rather than a real failure — even though, for a visitor who never gets past the homepage, a broken contact form or a page that times out is functionally identical to the product not existing at all. The budget and attention saved by deprioritizing the marketing site rarely gets redirected somewhere more valuable; it just goes unspent on a surface that, for a meaningful share of visitors, is the only part of the product they will ever actually interact with.
 
 [LaunchStudio](https://launchstudio.eu/en/) reviews marketing websites with this distinct risk profile in mind — form security, uptime resilience, and structured data accuracy — as a complement to, not a lesser version of, app-level production hardening, applying the same engineering discipline Manifera brings to every customer-facing surface across its 160+ delivered projects.
 
 [Get your marketing site reviewed with the same seriousness as your app](https://launchstudio.eu/en/#calculator) — it's often the first and most publicly visible thing anyone actually sees.
+
+## A Pre-Launch Checklist for Your Marketing Site
+
+Most founders never run a dedicated review of their marketing site because there's no obvious trigger that prompts one — the app has a launch checklist, the marketing site usually doesn't. A focused pass, run once before any public launch or major traffic-driving event (a press mention, a paid campaign, a product launch on a directory site), catches the specific risks covered above before they surface at the worst possible time.
+
+**Form and lead-capture security**
+- Confirm every contact or signup form has basic spam protection (rate limiting or a CAPTCHA-equivalent), not just client-side validation that a bot ignores entirely.
+- Verify form submissions are sanitized before they reach whatever backend or email service processes them, closing the injection-style risk covered above.
+
+**Load and uptime resilience**
+- Run a basic load test simulating a realistic traffic spike — a few hundred concurrent visitors is a reasonable baseline for most early-stage launches — rather than assuming the hosting tier chosen for a quiet pre-launch period will hold under a genuine spike.
+- Confirm the site runs on infrastructure separate enough from the app that a marketing site traffic spike can't degrade app performance for existing logged-in customers, or vice versa.
+
+**Search and AI-discovery correctness**
+- Check that structured data (Organization, Article, or Product schema, depending on the page) is present and validates cleanly, since both traditional search engines and newer AI-driven discovery tools rely on it to represent your product accurately to people who haven't found you yet.
+- Confirm metadata — title tags, descriptions, Open Graph images — actually reflects the current product, not a placeholder left over from an earlier draft.
+
+**Third-party script audit**
+- List every embedded script (analytics, chat widgets, marketing pixels) and confirm each one is still actively maintained and necessary, removing anything added once and never revisited.
+
+A founder doesn't need a dedicated engineer to run this checklist personally, but does need someone with the technical background to actually execute the load test and validate the structured data — the kind of focused, half-day review that catches most of what a marketing site's specific risk profile actually requires, well before a traffic spike or a skeptical visitor puts it to the real test.
 
 ## Real example
 

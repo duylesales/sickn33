@@ -47,7 +47,22 @@ Storing a user's name and email in a plain database column is a completely reaso
 
 ## Why This Isn't Simply a "More Careful Prompting" Problem
 
-It's tempting to think the fix is just prompting more precisely — "build this securely, encrypt sensitive fields." In practice, founders building fast with AI tools are managing dozens of simultaneous feature requests, and reliably remembering to specify data-handling requirements for every single field, in every single prompt, across an entire application, is a genuinely difficult standard to hold yourself to consistently, which is exactly why a separate review pass exists as a category of work in the first place.
+It's tempting to think the fix is just prompting more precisely — "build this securely, encrypt sensitive fields." In practice, founders building fast with AI tools are managing dozens of simultaneous feature requests, and reliably remembering to specify data-handling requirements for every single field, in every single prompt, across an entire application, is a genuinely difficult standard to hold yourself to consistently, which is exactly why a separate review pass exists as a category of work in the first place. Consider what a single feature prompt like "add a field for emergency contact information" actually requires the founder to also specify in the same breath: that the field should be encrypted, that access to it should be logged, that it should be excluded from any data export sent to a third-party analytics tool, and that it should be deleted on a specific retention schedule. Very few founders write prompts that dense on the first pass, and there's no realistic version of AI-assisted development where they reliably would, across every field, for the entire lifetime of the product.
+
+## A Simple Framework for Classifying Which Fields in Your Schema Actually Need Extra Protection
+
+Most founders don't need a legal background to get a reasonable first pass at this — they need a simple way to sort their own data model into a few clear tiers, then treat each tier differently rather than treating every field the same way.
+
+**A workable four-tier classification:**
+
+1. **Public or already-visible data** — a business name, a public product listing, a published blog post. This data carries essentially no additional risk from being stored plainly, since it's meant to be seen widely anyway.
+2. **Standard personal data** — a name, an email address, a phone number. Worth reasonable protection (access control, not sharing it unnecessarily), but plain storage in a standard database column is a common, defensible pattern for this tier.
+3. **Sensitive personal data** — health information, financial details, government identifiers, precise location history, information about children. This tier generally warrants encryption at rest, tighter access logging, and a deliberate answer to "who on our own team can actually query this field directly."
+4. **Data your specific industry regulates explicitly** — medical records under health-data rules, payment card details under PCI requirements, biometric data under increasingly common biometric-privacy laws. This tier often has legally mandated handling requirements beyond what a founder would choose on their own, and getting it wrong carries consequences beyond a data breach's usual reputational cost.
+
+**A practical exercise worth doing with your own schema:** open your database's table list and go column by column, marking each one with a tier number from one to four. Most schemas turn out to be overwhelmingly tier one and two, with only a small handful of genuinely tier-three-or-four fields — which is useful to know, because it means the actual scope of a hardening pass is usually much narrower than "encrypt the whole database" makes it sound. PawFile's entire fix, for instance, touched only the medical-history and owner-contact fields; the scheduling logic, the calendar, the reminder system, and dozens of other tables were left completely untouched, because they never needed to be.
+
+**A question worth asking yourself honestly:** if this specific field appeared in a news headline about a data breach, would it be a minor mention or the entire story? A leaked list of business names is a minor mention. A leaked list of pets' medical conditions tied to their owners' home addresses is closer to the entire story. That gut check, applied column by column, gets a founder most of the way to the same tier assignment a formal review would produce — the review's real value is catching the columns a founder wouldn't have thought to flag, and applying the technical protection correctly once the tier is decided.
 
 ## Closing the Gap Between Generated Code and Genuine Development
 
@@ -96,6 +111,10 @@ Yes — Supabase and similar platforms provide the infrastructure to implement e
 
 That judgment call is exactly what a review is for — a founder describing what data their product collects, in plain language, is enough for LaunchStudio's engineers to identify which fields warrant additional protection, without the founder needing to make that determination themselves first.
 
+### Once fields are tiered, does every tier-three or tier-four field need the exact same protection?
+
+Not necessarily — the appropriate protection (encryption at rest, access logging, restricted query access) can vary by the specific regulatory requirement and how the data is actually used in the product, which is why the tiering exercise is a useful starting point for a review, not a substitute for one.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,6 +158,14 @@ That judgment call is exactly what a review is for — a founder describing what
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Describing what data the product collects in plain language is enough for engineers to identify what needs protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does every tier-three or tier-four field need the exact same protection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily — protection varies by specific regulation and use, so tiering is a starting point for a review, not a substitute."
       }
     }
   ]

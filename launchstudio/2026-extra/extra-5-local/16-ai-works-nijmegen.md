@@ -20,7 +20,7 @@ Target Persona: A (Non-Technical Founder)
 }
 </script>
 
-"It works." Two words that have convinced more founders to launch too early than almost any other sentence in software. If your AI-built app works in front of you, on your laptop, with your test data, it's tempting to assume it's ready for the world. A founder in Nijmegen recently learned, in a fairly public way, that "AI works" and "ready to ship" are not the same claim.
+"It works." Two words that have convinced more founders to launch too early than almost any other sentence in software. If your AI-built app works in front of you, on your laptop, with your test data, it's tempting to assume it's ready for the world. A founder in Nijmegen recently learned, in a fairly public way, that "AI works" and "ready to ship" are not the same claim — and the gap between them turned out to matter a great deal more than a cosmetic bug ever would.
 
 ## Why "AI Works" Is a Lower Bar Than It Sounds
 
@@ -36,11 +36,27 @@ Nijmegen is one of the Netherlands' oldest cities and, through Radboud Universit
 
 The pattern we see in Nijmegen and cities like it, in the province of Gelderland, is a founder who demos flawlessly to an advisor, a potential partner, or an early customer, gets a green light, and only discovers the gaps once broader, less predictable usage starts. By then, the cost of the gap isn't just a bug fix — it's a trust problem with the exact users the product needed to win over first.
 
+Nijmegen's health-tech founders are often only a short walk or bike ride from the people who will eventually use their product — physiotherapists near the Kronenburg business district, clinical researchers around the Radboudumc campus, care coordinators working out of practices scattered through Nijmegen-Oost. That proximity is a real advantage for gathering feedback early, but it also means word travels fast within a tight-knit professional community when something doesn't hold up. A physiotherapy practice that has a bad first experience with a scheduling tool will mention it to the practice down the street before the founder even hears the complaint directly.
+
 ## Closing the Gap Between "Works" and "Ready"
 
 The fix isn't rebuilding what already works — it's stress-testing and hardening it. LaunchStudio takes AI-generated apps that already function in the demo sense and puts them through what a proper pre-launch process actually requires: edge-case handling, security review, load considerations, and payment logic that survives real-world weirdness, not just the happy path. Our engineers have shipped 160+ projects for enterprise clients as part of Manifera, and that same rigor — the kind that assumes users will do the unexpected thing — is what closes the gap between "it works" and "it's ready."
 
 You can see how we structure this review process on our process page, and for context on the broader engineering standard behind it, Manifera's own project portfolio shows the kind of production systems this team has built for clients well beyond the AI-native startup world.
+
+## A Stress Test You Can Run Before You Set a Launch Date
+
+You don't need a QA team to catch a meaningful share of these gaps yourself. Before locking in a launch date, try deliberately misusing your own app the way a real, unpredictable user eventually will.
+
+**Run through this list against your own product:**
+
+1. **Create two records of the same type under one account** — two conditions, two addresses, two payment methods, whatever your data model assumes is singular. See whether the second one overwrites, merges with, or corrupts the first, the way ZorgConnect's symptom logs did.
+2. **Open the app in two browser tabs and make conflicting changes in each**, then see which one wins and whether the other silently loses data without any warning.
+3. **Fill out a form with unexpected input** — an emoji in a name field, a phone number with letters in it, a date far in the past or future — and see whether the app rejects it gracefully or breaks in a way that loses the rest of what the user entered.
+4. **Sign up twice with the same email**, and separately, try submitting a payment form twice in quick succession, to check for duplicate accounts or duplicate charges.
+5. **Log in, then deliberately hit the browser back button mid-flow** — during a multi-step signup or a checkout — and see whether the app recovers cleanly or leaves the session in a confused state.
+
+None of this requires specialized tools, just the willingness to use your own product the way real users eventually will. If two or three of these turn up a problem, that's a strong signal it's worth a structured review before, not after, a launch date is public.
 
 ## Real example
 

@@ -20,7 +20,7 @@ Target Persona: D (SaaS Scale-Up Founder)
 }
 </script>
 
-An AI SaaS built with Lovable or Bolt can go from idea to first paying customer faster than almost anything the software industry has seen before. What it can't do on its own is survive the jump from ten customers to two hundred — multi-tenancy, billing edge cases, and data isolation don't get harder gradually, they get harder all at once. For founders scaling an AI SaaS out of Ede, here's what typically gets skipped, and why it catches up with you.
+An AI SaaS built with Lovable or Bolt can go from idea to first paying customer faster than almost anything the software industry has seen before. What it can't do on its own is survive the jump from ten customers to two hundred — multi-tenancy, billing edge cases, and data isolation don't get harder gradually, they get harder all at once, the way a bridge doesn't get gradually more likely to collapse under increasing load right up until the exact moment it does. For founders scaling an AI SaaS out of Ede, here's what typically gets skipped, and why it catches up with you.
 
 ## The Multi-Tenancy Gap Nobody Notices at Ten Customers
 
@@ -32,15 +32,33 @@ An AI SaaS with subscription billing typically gets the core flow right — a cu
 
 ## Rate Limiting and Resource Isolation
 
-As an AI SaaS in Ede grows past its first customer cohort, a single customer running an unusually heavy workload — a large data import, an API integration hammering your endpoints — can degrade performance for everyone else on a shared infrastructure setup that was never built with per-tenant limits in mind. AI tools don't add this by default because a single-user demo never surfaces the need.
+As an AI SaaS in Ede grows past its first customer cohort, a single customer running an unusually heavy workload — a large data import, an API integration hammering your endpoints — can degrade performance for everyone else on a shared infrastructure setup that was never built with per-tenant limits in mind. AI tools don't add this by default because a single-user demo never surfaces the need. The failure mode is particularly frustrating because it doesn't announce itself as a bug: your nineteenth customer's automated nightly import job slowing down page loads for your first three customers just looks like the product getting generally slower, and without per-tenant monitoring, there's often no easy way to trace it back to the actual cause.
 
 ## Why This Matters Specifically for Ede's SaaS Founders
 
-Ede sits at the heart of what's often called Food Valley, in the province of Gelderland, alongside Wageningen University's agricultural and food-science research ecosystem — and a growing number of AI-native SaaS founders in the region are building tools for food producers, agri-tech operations, and supply chain partners. These are B2B customers who expect SaaS reliability as a baseline: uptime, data isolation, and correct billing aren't nice-to-haves for a food-safety compliance tool or a farm-to-retail logistics platform, they're the entire value proposition. An AI SaaS that skips these production steps doesn't just risk a bad review — it risks losing the trust of an industry that runs on precision.
+Ede sits at the heart of what's often called Food Valley, in the province of Gelderland, alongside Wageningen University's agricultural and food-science research ecosystem — and a growing number of AI-native SaaS founders in the region are building tools for food producers, agri-tech operations, and supply chain partners. Some of that founder pool works out of De Nieuwe Kazerne, the former army barracks turned creative and startup hub near Ede's city center, where agri-tech ideas increasingly sit alongside design studios and small software teams. These are B2B customers who expect SaaS reliability as a baseline: uptime, data isolation, and correct billing aren't nice-to-haves for a food-safety compliance tool or a farm-to-retail logistics platform, they're the entire value proposition. An AI SaaS that skips these production steps doesn't just risk a bad review — it risks losing the trust of an industry that runs on precision, where a compliance report generated with the wrong producer's data attached isn't a minor bug, it's a regulatory problem for everyone downstream of it.
 
 ## Closing the Gap Before You Scale, Not After
 
 LaunchStudio works with AI SaaS founders specifically at this stage — past the first working prototype, heading toward real customer volume, and needing multi-tenancy, billing, and resource isolation handled properly before growth makes the fix more expensive. Our engineers have shipped 160+ projects for enterprise clients as part of Manifera, and that experience directly informs how we approach SaaS-specific production concerns like tenant isolation and subscription billing at scale. You can calculate what your project costs with our calculator, and Manifera's web app development team offers additional context on how the same engineering standards apply to larger, ongoing SaaS builds.
+
+## A Simple Way to Test Your Own Multi-Tenancy Before a Customer Finds the Hole
+
+You can run a rough version of this test yourself, the same way FarmYield's issue eventually surfaced through a support ticket — except you can find it before a customer does, not after.
+
+**Create two test tenant accounts and try to cross between them:**
+
+1. Sign up for your own product twice, as two completely separate customers, and populate each with realistic sample data — reports, records, whatever your SaaS generates for a paying account.
+2. Log in as tenant one and note any identifiers visible in the URL or in your browser's network requests — report IDs, record numbers, account references.
+3. While logged in as tenant one, manually substitute one of those identifiers with a value that belongs to tenant two, either by editing the URL directly or modifying a request in your browser's developer tools.
+4. If tenant two's data loads — even partially, even from a cache — you have the same category of issue FarmYield had: isolation that exists in the interface but not underneath it.
+
+**Two more checks worth running before you scale past your first handful of customers:**
+
+- **Test what happens when a customer cancels.** Does their data actually get isolated or deleted per your policy, or does it linger in a shared cache or table where a bug could resurface it later?
+- **Test a plan change end-to-end, not just the checkout step.** Upgrade a test account mid-cycle and manually verify the prorated charge against what Stripe's own dashboard shows was actually billed — AI-generated proration logic is one of the most common places small billing errors compound quietly over months.
+
+Catching either of these yourself costs an afternoon. Catching them the way FarmYield did — through a customer noticing first — costs a relationship you spent months building.
 
 ## Real example
 

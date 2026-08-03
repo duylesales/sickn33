@@ -43,11 +43,11 @@ An AI frontend tool like v0 genuinely excels at exactly what it's built for — 
 
 ## Why Trusting the Frontend's Number Is a Structural Risk, Not a Coding Mistake
 
-A browser is fundamentally a piece of software running entirely on a device the customer controls, and any value it sends — including a calculated total — can be modified before it reaches the server, using nothing more exotic than the same browser developer tools available to any visitor. A backend that accepts and charges whatever total the frontend reports is trusting a number it has no ability to independently verify came from an unmodified calculation.
+A browser is fundamentally a piece of software running entirely on a device the customer controls, and any value it sends — including a calculated total — can be modified before it reaches the server, using nothing more exotic than the same browser developer tools available to any visitor. Opening the Network tab, finding the checkout request, and editing a single number in the request payload before it's sent takes under a minute for anyone mildly curious about how a website actually works underneath — no specialized hacking tools required, no account access beyond a normal signup. A backend that accepts and charges whatever total the frontend reports is trusting a number it has no ability to independently verify came from an unmodified calculation.
 
 ## Why This Passes Every Normal Test a Founder Runs
 
-Testing the booking flow honestly — selecting real excursions, applying a real discount code, checking out — produces a correct charge every single time, because a founder testing their own product has no reason to modify the calculated total before submitting it. The gap only becomes visible from the perspective of someone deliberately altering that number, which honest testing never simulates.
+Testing the booking flow honestly — selecting real excursions, applying a real discount code, checking out — produces a correct charge every single time, because a founder testing their own product has no reason to modify the calculated total before submitting it. Running through the same flow twenty times with twenty different combinations of excursions and upgrades still proves nothing about this specific risk, because every one of those twenty tests remains an honest test. The gap only becomes visible from the perspective of someone deliberately altering that number, which honest testing never simulates.
 
 ## What a Genuine Fix Requires
 
@@ -56,6 +56,21 @@ Closing this gap means moving the authoritative price calculation to the server,
 Manifera's pricing and transaction security work is delivered through the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [See what your project would cost with our calculator](https://launchstudio.eu/en/#calculator).
+
+## Where Else Client-Trusted Values Hide
+
+Checkout pricing is the most visible version of this gap, but it's rarely the only place a frontend-calculated number gets trusted without server-side verification. A quick audit of any AI-generated application should specifically check each of these:
+
+- **Shipping and delivery costs** — calculated based on address, weight, or a selected speed tier, and just as easy to intercept and alter as a discount total if the server doesn't independently recompute it from the actual order details.
+- **Tax calculation** — especially in products serving multiple regions, where a frontend estimate is convenient for display but should never be the number actually charged.
+- **Quantity and inventory limits** — a frontend that stops a user from adding an 11th item to a cart capped at 10 is a UI convenience, not enforcement, unless the server independently rejects the 11th item too.
+- **Loyalty points and reward redemption** — a running points balance and the discount it unlocks should be recalculated from the user's actual transaction history server-side, not accepted as a reported number.
+- **Coupon and discount stacking** — a frontend that correctly prevents combining two mutually exclusive discount codes in the interface says nothing about whether the server independently enforces the same restriction.
+- **Subscription tier gating** — a "Pro" badge shown based on a locally cached subscription status is a display choice, not access control, unless every gated action re-checks the user's actual tier on the server.
+
+The pattern connecting all six is identical to RouteDroom's pricing gap: a value calculated or displayed correctly in the browser gets treated, somewhere in the backend, as if calculating it correctly is the same thing as being trusted to report it honestly. Those are different guarantees, and only one of them survives a user who opens developer tools with intent to test the boundary rather than simply use the product.
+
+A founder without a technical background can run a rough version of this audit themselves: for each of the six items above, ask "if I changed this value in my browser before submitting, would the server even notice?" A confident "yes, it would reject that" for all six is a reasonable bar for calling a product's pricing and access logic production-ready. Any uncertain answer is worth flagging for a proper review before real customers — and their browser developer tools — start interacting with the product at volume.
 
 ## Real example
 
@@ -95,6 +110,10 @@ Precisely — RouteDroom's frontend was genuinely well-built and gave every visu
 ### If a founder used a well-known payment provider's checkout widget instead of building checkout from scratch, would this risk still apply?
 
 It depends on exactly how the integration is wired — using a provider's hosted checkout with server-side price setting largely avoids this risk, but a custom integration that still passes a calculated total from the frontend into the payment request can reproduce the same underlying gap regardless of which provider is ultimately used to process the charge.
+
+### Beyond checkout pricing, are there other value types this same gap affects?
+
+Yes — shipping costs, tax calculation, quantity limits, loyalty point redemption, discount stacking, and subscription tier gating all carry some version of the same risk whenever a value calculated in the browser is trusted rather than independently recomputed server-side. A founder can self-check most of these by asking whether the server would actually notice a manually altered value, though confirming coupon stacking and tier gating specifically usually requires reading the actual backend logic rather than just observing visible behavior.
 
 <script type="application/ld+json">
 {
@@ -139,6 +158,14 @@ It depends on exactly how the integration is wired — using a provider's hosted
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It depends on the integration — hosted checkout with server-set pricing avoids it, but custom integrations can still reproduce it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Beyond checkout pricing, are there other value types this same gap affects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — shipping, tax, quantity limits, loyalty points, discount stacking, and subscription tier gating all carry the same risk if the server doesn't independently recompute them."
       }
     }
   ]

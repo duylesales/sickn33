@@ -57,6 +57,20 @@ Clients specifically and repeatedly report frustration with freelancers and agen
 
 For agencies that want this capability without building deep in-house expertise in AI-generated codebase patterns specifically, white-label partnership provides the audit and hardening work under the agency's own branding and client relationship, letting the agency focus on client relationship management and broader project delivery while the technical specifics are handled by a partner with dedicated depth in exactly this niche.
 
+## Common Client Objections During an Audit-First Conversation, and How to Answer Them
+
+Clients who arrive convinced their prototype is "basically done" often push back on the idea of an audit at all, before an agency has a chance to explain why it matters. A few recurring objections, and the direct answer that tends to actually land:
+
+**"It already works — why do I need to pay for someone to look at it?"** Working and production-safe are different claims, and the entire reason an audit is fast and cheap relative to a rebuild is precisely because the app does already work — the audit is confirming what's underneath the parts that visibly work, not questioning whether they work at all.
+
+**"Can't you just estimate this like you would any other project?"** A generic estimate for an unreviewed codebase forces a choice between guessing conservatively (which produces an inflated rebuild-sized quote) or guessing optimistically (which produces a quote that turns out too low once real issues surface mid-project) — an audit removes the guessing entirely, replacing it with a scope based on what's actually there.
+
+**"How do I know the audit itself isn't just a way to justify a bigger project?"** This is best answered with specificity, not reassurance — walking a client through exactly what gets checked (the recurring patterns covered throughout this series: secrets, authentication, error handling, testing, observability) and delivering a written finding for each one, rather than a vague verbal impression, makes the audit's value legible and its findings independently verifiable.
+
+**"Why can't my original AI tool or a cheaper freelancer just check this?"** Because the specific patterns worth checking for are consistent enough across AI-generated codebases that they require pattern-specific familiarity, not general coding ability — the same distinction covered elsewhere in this series regarding freelancer competence with AI-generated code specifically.
+
+Handled well, this conversation itself becomes a differentiator — a client who's had this exact exchange with an agency that clearly knows what it's checking for, and why, tends to trust the resulting proposal considerably more than one delivered without that context.
+
 [LaunchStudio](https://launchstudio.eu/en/) works with agencies and freelancers as a white-label production partner specifically for AI-generated client prototypes, delivering the audit and hardening work under your branding, backed by Manifera's engineering team and their specific experience across 160+ delivered projects spanning exactly this pattern.
 
 [Explore a white-label partnership for your AI-native clients](https://launchstudio.eu/en/#contact) — "Jouw branding, onze engineering."

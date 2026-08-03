@@ -35,7 +35,7 @@ An AI generated application handling paid subscriber logins typically gets the v
 
 ## What a JWT Token Is Supposed to Guarantee
 
-A JSON Web Token, commonly used to represent a logged-in session, is cryptographically signed so a server can verify it hasn't been tampered with and genuinely originated from a legitimate login. That guarantee only holds if the server actually verifies the signature on every request — a token that's merely decoded and read, without its signature being checked, provides no real security guarantee at all, regardless of how official it looks.
+A JSON Web Token, commonly used to represent a logged-in session, is cryptographically signed so a server can verify it hasn't been tampered with and genuinely originated from a legitimate login. That guarantee only holds if the server actually verifies the signature on every request — a token that's merely decoded and read, without its signature being checked, provides no real security guarantee at all, regardless of how official it looks. The signature is what separates a token from a plain, self-declared claim: without checking it, a server is effectively taking someone's word for who they are, based purely on a data structure they could have written themselves.
 
 ## Why Skipping Signature Verification Is an Easy Mistake to Make Invisibly
 
@@ -43,11 +43,11 @@ Decoding a JWT to read its contents (which user, which permissions) is a simple,
 
 ## Why This Gap Becomes Serious the Moment Someone Crafts Their Own Token
 
-If signature verification is skipped, a token doesn't need to be legitimately issued at all — anyone who understands the token's basic structure can construct their own, claiming to be any user or any permission level, and a server that only decodes without verifying will accept it as genuine, having no actual way to distinguish a forged token from a real one.
+If signature verification is skipped, a token doesn't need to be legitimately issued at all — anyone who understands the token's basic structure, which is openly documented and trivially readable since a JWT's contents are only encoded rather than encrypted, can construct their own, claiming to be any user or any permission level. A server that only decodes without verifying will accept a self-crafted token as genuine, having no actual way to distinguish a forged token from a real one, because it never checked for the one property (a valid signature) that would have told the difference.
 
 ## Why Expiration Is a Separate, Equally Important Piece
 
-Beyond signature verification, a token needs a reasonable expiration time, after which it's no longer accepted regardless of validity — without this, a token captured once (through a lost device, a compromised network, or any other means) remains usable indefinitely, extending what should be a bounded exposure window into an unbounded one.
+Beyond signature verification, a token needs a reasonable expiration time, after which it's no longer accepted regardless of validity — without this, a token captured once (through a lost device, a compromised network, or any other means) remains usable indefinitely, extending what should be a bounded exposure window into an unbounded one. A session token issued the day a product launches and still silently valid a year later isn't a hypothetical edge case; it's the default outcome of never having set an expiration at all.
 
 ## What a Complete Fix Looks Like
 
@@ -56,6 +56,17 @@ A proper implementation verifies every token's signature on every request, enfor
 Manifera's session and token security audits are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## Other Session Weaknesses That Travel With Missing Signature Verification
+
+Missing signature verification rarely shows up alone — it tends to arrive alongside a cluster of related session-handling gaps that the same quick review should check at the same time:
+
+- **Where the token is stored client-side** — a JWT kept in `localStorage` is readable by any script running on the page, including a malicious one injected through an unrelated cross-site scripting bug, while a properly configured `httpOnly` cookie is not accessible to page scripts at all.
+- **Refresh token rotation** — a long-lived refresh token that's reused indefinitely, rather than rotated and invalidated each time it's used, gives a one-time theft the same unbounded value as a stolen permanent password.
+- **Revocation on logout or password change** — clicking "log out" should make the previous token genuinely unusable, not just remove it from the current browser tab, and changing a password should invalidate every other session tied to that account, not only the one making the change.
+- **Least-privilege claims** — a token that encodes broad admin-equivalent permissions for every logged-in user, rather than the minimum permissions that specific user actually needs, turns any future token-handling mistake into a far more serious one.
+
+None of these four require a fundamentally different authentication approach — Auth0, Supabase Auth, and most other established providers handle all four correctly out of the box when their default flows are used as designed. The risk consistently shows up in the custom logic layered on top: a bespoke refresh mechanism, a manually written middleware function, or a token-reading helper added later that never went through the same scrutiny as the original login implementation. A working login screen proves the front door is solid; it says nothing about whether every door behind it locks the same way.
 
 ## Real example
 
@@ -95,6 +106,10 @@ About as well as any example could — Britt discovered the issue by pure chance
 ### Should a founder specifically ask their AI coding tool whether it verifies JWT signatures, or is that too technical a question to expect an answer from?
 
 It's a reasonable, specific question to ask, and getting a clear answer is a good habit — but relying solely on that answer without an independent technical review to actually confirm it in the resulting code isn't a substitute for verification, since a described intention and the actual implemented behavior aren't always guaranteed to match.
+
+### Are token storage location and refresh rotation as serious as skipped signature verification, or secondary concerns?
+
+Related but distinct in severity — skipped signature verification means the server can be fooled by a token that was never legitimately issued at all, which is typically the more serious of the two, while poor storage or rotation practices widen the window during which a legitimately issued token can be stolen and misused. A thorough review checks both, since fixing one without the other still leaves a meaningful gap.
 
 <script type="application/ld+json">
 {
@@ -139,6 +154,14 @@ It's a reasonable, specific question to ask, and getting a clear answer is a goo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It's a reasonable question, but an independent technical review is still needed to confirm the actual implemented behavior."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are token storage and refresh rotation as serious as skipped signature verification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Related but distinct — skipped verification lets forged tokens through entirely, while weak storage or rotation widens the theft window. A thorough review checks both."
       }
     }
   ]

@@ -35,7 +35,7 @@ Cursor occupies a genuinely different position than fully autonomous AI app buil
 
 ## Why Cursor Users Specifically Underestimate the Remaining Gap
 
-A founder using Lovable or Bolt knows, almost by definition, that they're trusting an opaque generation process and should verify the output independently. A founder using Cursor, actively writing and reviewing code with AI assistance, often develops a different and riskier relationship with the codebase: genuine familiarity with the logic, paired with the same blind spots any single developer has when reviewing their own work — you tend to verify that code does what you intended, not systematically probe for what happens when it's asked to do something you didn't intend at all.
+A founder using Lovable or Bolt knows, almost by definition, that they're trusting an opaque generation process and should verify the output independently — the tool did the thinking, so an outside check feels obviously necessary. A founder using Cursor, actively writing and reviewing code with AI assistance, often develops a different and riskier relationship with the codebase: genuine familiarity with the logic, paired with the same blind spots any single developer has when reviewing their own work — you tend to verify that code does what you intended, not systematically probe for what happens when it's asked to do something you didn't intend at all. This isn't a knock on Cursor users' diligence; it's a well-documented property of code review generally, which is precisely why professional engineering teams build in a second reviewer even when the original author is highly competent, rather than relying solely on the author's own re-read of their own work.
 
 ## Where the Remaining 20% Actually Concentrates
 
@@ -46,6 +46,20 @@ A founder using Lovable or Bolt knows, almost by definition, that they're trusti
 **Dependency and supply-chain posture.** Cursor's autocomplete and suggestion features frequently recommend packages based on what's common in its training data, not necessarily what's currently maintained, actively supported, or appropriately licensed for your specific commercial use — a check that requires looking outside the code itself, at the ecosystem around each dependency.
 
 **Infrastructure and deployment configuration.** Even strong application code doesn't address how it's deployed, monitored, or recovered from failure — a category of concern entirely separate from code quality, and one Cursor's in-editor workflow doesn't naturally surface since it operates at the code level, not the infrastructure level.
+
+## A Concrete Self-Audit You Can Run Before Bringing In Outside Review
+
+Before paying for an external review, a Cursor user with working technical ability can run a meaningful first pass on each of the four areas above, without needing new tools beyond what's already on your machine:
+
+**Adversarial input:** pick your three most important API endpoints and send each one deliberately malformed input — an empty string where text is expected, a negative number where only positive makes sense, a wildly oversized payload. A production-ready endpoint responds with a clear, specific error. One that crashes, hangs, or returns a raw stack trace to the caller needs work.
+
+**Access control:** using two accounts with different privilege levels, note the exact API request each one is allowed to make from the interface, then deliberately replay the higher-privileged request using the lower-privileged account's credentials. If it succeeds, authorization is enforced in the interface rather than the server.
+
+**Dependencies:** run your package manager's built-in audit command (`npm audit`, `pip-audit`, or the equivalent for your stack) and separately check the last commit date on any dependency you don't personally recognize — a package with no updates in two-plus years and a known CVE is a specific, checkable red flag, not a vague concern.
+
+**Infrastructure:** confirm, concretely, whether your production environment has error tracking and uptime monitoring configured right now, today — not "I could set that up" but "it is actively running." If the honest answer is no, that's your fourth item, regardless of how solid the application code itself is.
+
+This self-audit won't replace the adversarial rigor of someone whose job is specifically to find what you missed, but it closes the most obvious version of each gap cheaply, and it tells you concretely which of the four areas most needs a professional pass first if budget only allows for one.
 
 ## Why "I Can Read the Code" Doesn't Close This Gap
 

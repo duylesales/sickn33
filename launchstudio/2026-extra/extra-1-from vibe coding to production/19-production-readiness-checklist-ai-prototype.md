@@ -61,6 +61,20 @@ These items don't prevent problems from occurring; they determine how quickly yo
 
 Depending on what your specific product does, additional items may apply: GDPR and data-handling compliance if you process EU personal data; payment security specifics if you handle transactions directly rather than through a compliant processor; industry-specific regulatory considerations if you're in a regulated vertical like healthcare-adjacent or financial services. These are genuinely product-specific rather than universal, which is why a proper audit — not a generic checklist alone — is necessary to determine which apply to your particular case.
 
+## Common Mistakes Founders Make When Working Through This List
+
+Beyond simply not knowing what's on the checklist, a few specific patterns of misuse show up repeatedly even among founders who've read it carefully:
+
+**Treating "I read about it" as equivalent to "I checked it."** Understanding that hardcoded secrets are a risk isn't the same as having actually run a git history scan against your specific repository — the checklist identifies what to verify, not a substitute for the verification itself, and founders sometimes stop at the reading stage without realizing they haven't yet done the checking stage.
+
+**Checking items out of order because they're more interesting or more familiar.** A founder with some technical background often gravitates toward Tier 3's CI pipeline, because it's a satisfying, well-documented thing to set up, while leaving Tier 1's authorization testing unaddressed because it requires the less comfortable adversarial mindset of trying to break your own product.
+
+**Assuming a partial pass means a full pass.** Testing one API endpoint for proper authorization and finding it correctly enforced doesn't mean every endpoint is — each one is a separate implementation, and AI-generated codebases frequently apply security patterns inconsistently across different parts of the same application, meaning a spot check that happens to hit a well-secured endpoint provides false reassurance about the rest.
+
+**Re-checking the same way twice and calling it independent verification.** If your first check of an item was reading the code, a second read of the same code isn't meaningfully independent — genuine verification for the higher-stakes items requires a different method (adversarial testing rather than code review) or a different person, not just repetition of the same method.
+
+Avoiding these specific mistakes matters more than working through the list quickly, since a checklist executed carelessly provides false confidence that's arguably worse than knowing you haven't checked something at all.
+
 ## Why the Tiering Matters More Than the Individual Items
 
 A founder with limited time and budget who addresses Tier 1 completely and nothing else is in a meaningfully better position than one who addresses a scattered mix across all four tiers without finishing any of them — because Tier 1 items are the ones with the most severe and most easily-triggered consequences if left open. This checklist is deliberately ordered so that, if you can only do some of it, you know which parts matter most.

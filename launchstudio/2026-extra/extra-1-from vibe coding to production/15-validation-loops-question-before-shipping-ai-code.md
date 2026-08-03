@@ -35,7 +35,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 ## Why the Reframe Matters More Than It Sounds
 
-"Is the code good?" is a vague, largely unanswerable question for a non-technical founder — good compared to what, verified how, by whom? "What validation loop proves this is safe?" is a concrete, answerable question with a specific, checkable answer: either a defined process exists and has been executed, or it hasn't. This reframe moves the conversation from an unfalsifiable feeling of confidence to a verifiable claim, which is precisely why it's the more useful question to actually organize your launch decision around.
+"Is the code good?" is a vague, largely unanswerable question for a non-technical founder — good compared to what, verified how, by whom? It invites a confidence-based answer rather than an evidence-based one, and confidence is exactly the thing a founder deep in their own prototype has the least reliable read on. "What validation loop proves this is safe?" is a concrete, answerable question with a specific, checkable answer: either a defined process exists and has been executed, or it hasn't. This reframe moves the conversation from an unfalsifiable feeling of confidence to a verifiable claim, which is precisely why it's the more useful question to actually organize your launch decision around — it can be answered by describing a process, not by describing a feeling, and a process can be checked by someone else in a way a feeling never can.
 
 ## What a Real Validation Loop Consists Of
 
@@ -48,6 +48,20 @@ Without an explicit validation loop, founders default to a much weaker, implicit
 ## Applying This Question to Your Own Prototype
 
 Ask yourself, honestly, about each critical part of your product: has this been reviewed by someone other than the tool that generated it, or me confirming it matches what I asked for? Has it been tested against conditions I didn't anticipate, not just the scenario I had in mind while building it? If a dependency this relies on fails, has that failure been deliberately triggered and observed, not just assumed to be handled gracefully because a try/catch block exists somewhere in the code? A clear "yes" to each, with specifics you can describe, means a real validation loop exists. A vague or absent answer means it doesn't yet.
+
+## Building a Minimal Validation Loop Yourself, Before You Can Afford a Full Audit
+
+Not every founder can commission an external review before their first launch, and a minimal, self-run validation loop is genuinely better than none, even if it's not a substitute for the real thing:
+
+**Write down what "safe to ship" means for this specific feature**, concretely, before you build it — not a vague sense of correctness, but a specific list: what inputs must be rejected, what unauthorized access must fail, what happens if a dependency times out. A feature without this written down beforehand tends to get evaluated against whatever the founder happens to think of in the moment, which is a much weaker and less consistent standard.
+
+**Test the negative case, not just the positive one**, for each critical flow — deliberately try the login with wrong credentials, the payment with an invalid card, the API call with a missing field, and confirm each one fails the way you intended, not just that the correct case succeeds. Most solo testing implicitly skips this because it feels like testing for failure rather than testing for success, even though it's the more informative of the two.
+
+**Recruit one outside pair of eyes for your single riskiest flow**, even informally — a technical friend, a mentor, anyone who didn't build the feature and therefore doesn't share your assumptions about how users will interact with it. A single fresh perspective on your highest-stakes flow catches a meaningful share of what a solo review misses, even without a formal audit.
+
+**Re-run the same checks after every significant change**, not just once at the start — this is the "loop" part of validation loop, and it's the step most likely to get skipped once a founder feels satisfied with an initial pass, even though new code changes reintroduce exactly the same category of risk the original validation was meant to catch.
+
+This minimal version won't catch everything a professional adversarial review would — dependency vulnerabilities and infrastructure gaps, in particular, are hard to self-diagnose without specific tooling — but it's a genuine improvement over "it worked when I tried it," and it's worth doing even if a full audit is also planned.
 
 ## Why This Question Works Regardless of Which AI Tool You Used
 

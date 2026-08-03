@@ -53,6 +53,20 @@ A solo founder holds their entire codebase's context in their own head, making f
 
 Every new contributor, particularly one unfamiliar with the specific patterns and conventions covered throughout this series, represents a fresh opportunity to reintroduce a gap that was previously closed — exactly the pattern covered in this series' multi-tenant isolation guidance, where a new feature built by someone unaware of an existing convention silently broke it months after the original fix. This risk is specifically elevated during onboarding, before a new contributor has fully internalized your team's existing production-readiness discipline.
 
+## A Concrete Setup Checklist for the Week Your Second Contributor Joins
+
+Rather than treating team-scale practices as an abstract goal to formalize "eventually," a specific, bounded checklist to work through in the days before or immediately after a second contributor's first commit turns the general guidance above into something actually actionable.
+
+**Branch protection on your main branch.** A simple repository setting requiring at least one review before merging to your production branch — a five-minute configuration change that directly enforces the code-review practice covered above, rather than relying on it happening informally and inconsistently.
+
+**CI enforcement, not just CI existence.** A pipeline that runs but doesn't actually block a merge on failure provides considerably less protection than one that does — confirming your CI is configured to prevent, not just flag, a failing change from reaching your main branch is worth checking explicitly, since a non-blocking pipeline is easy to silently ignore under time pressure.
+
+**Scoped access credentials, not shared founder-level access.** Creating a separate set of credentials for your new contributor — scoped to exactly what their work requires, rather than handing over your own full-access founder credentials — is a small setup cost that directly prevents the internal access-control gap described above from existing on day one.
+
+**A short written onboarding note covering non-obvious conventions.** Not comprehensive documentation, just the specific things a new contributor genuinely can't infer from reading the code alone — why authorization checks happen in a particular utility function, which patterns to specifically avoid and why, and where the previous production-readiness work already landed, so a new contributor's first feature doesn't unknowingly repeat a mistake that was already fixed once.
+
+Working through these four items specifically before or during a new contributor's first week costs a founder a few focused hours — considerably less than the reactive remediation Tobias's case required after a gap had already reached production.
+
 ## What This Means Practically as You Scale Your Team
 
 Treat the addition of any second contributor as a deliberate trigger to formalize what previously worked informally: a real CI pipeline enforced without exception, an actual code review practice (even lightweight), explicit rather than implicit access control, and enough documentation that a new team member's onboarding doesn't depend entirely on synchronous, ad hoc explanation from the founder.

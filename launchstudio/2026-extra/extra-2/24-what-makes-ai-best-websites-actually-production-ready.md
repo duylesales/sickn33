@@ -35,7 +35,7 @@ Lists of the best AI websites tend to rank by visual polish, load speed, and how
 
 ## Checklist Item One: Does User-Submitted Text Get Escaped Before Display?
 
-Any field where a visitor can submit text that later gets shown to other people — reviews, comments, bios — needs that text properly escaped before rendering, so that a submission containing HTML or script tags is displayed as plain, harmless text rather than being interpreted and executed as actual code by other visitors' browsers.
+Any field where a visitor can submit text that later gets shown to other people — reviews, comments, bios — needs that text properly escaped before rendering, so that a submission containing HTML or script tags is displayed as plain, harmless text rather than being interpreted and executed as actual code by other visitors' browsers. Escaping is a narrow, well-understood technical step — converting characters like `<` and `>` into their safe display equivalents before the browser ever sees them as raw markup — but it has to be applied at the exact point content is rendered, not just once somewhere earlier in the pipeline, or a gap can reopen the moment the same content gets displayed through a second, different code path.
 
 ## Checklist Item Two: Has Anyone Tried Submitting Something Unusual?
 
@@ -43,11 +43,11 @@ Testing a review or comment field with normal, expected text — a genuine compl
 
 ## Checklist Item Three: What Happens If Malicious Script Does Get Stored?
 
-If a vulnerable field does allow script content through unescaped, that script executes in the browser of anyone who later views the affected page — potentially capturing their session, redirecting them elsewhere, or performing actions on their behalf without their knowledge. The malicious content sits stored in your database, waiting to run against every future visitor who views it, which is what makes this specific class of vulnerability, known as stored cross-site scripting, particularly persistent.
+If a vulnerable field does allow script content through unescaped, that script executes in the browser of anyone who later views the affected page — potentially capturing their session, redirecting them elsewhere, or performing actions on their behalf without their knowledge. The malicious content sits stored in your database, waiting to run against every future visitor who views it, which is what makes this specific class of vulnerability, known as stored cross-site scripting, particularly persistent. Unlike a one-time attack that only affects the person who triggers it, a successfully stored script keeps firing against every new visitor to that page until someone finds and removes it — a single successful submission can silently affect dozens or hundreds of people before anyone notices anything is wrong, since each affected visitor typically has no visible sign that anything unusual happened to them.
 
 ## Checklist Item Four: Does This Only Affect "Interactive" Websites?
 
-Any AI-built website with a public-facing input field of any kind — not just full applications — carries this risk, including a portfolio site with a client testimonial submission form or an interior design showcase with a public comments section. "Website" and "web application" aren't meaningfully different categories from this specific risk's perspective.
+Any AI-built website with a public-facing input field of any kind — not just full applications — carries this risk, including a portfolio site with a client testimonial submission form or an interior design showcase with a public comments section. "Website" and "web application" aren't meaningfully different categories from this specific risk's perspective. The fields most likely to be overlooked are exactly the ones that feel the most harmless: a display name on a testimonial, an alt-text caption on an uploaded photo, a "referred by" field on a contact form — anywhere text is accepted and later rendered back out to other visitors, regardless of how minor or decorative that field seems during design.
 
 ## Checklist Item Five: Is This Fixed Once, or Does It Need Ongoing Attention?
 
@@ -56,6 +56,19 @@ Escaping needs to be applied consistently across every field that displays user 
 Manifera's frontend security reviews are carried out by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client conversations handled through the Amsterdam headquarters at Herengracht 420.
 
 [Run your project through our pricing calculator](https://launchstudio.eu/en/#calculator).
+
+## A Non-Technical Founder's Guide to Spotting This Yourself
+
+A founder without a security background can still run a rough, safe first check on their own website before bringing in a professional review — it won't be as thorough as a proper audit, but it catches the most obvious cases.
+
+**A safe, low-risk way to test any public submission field:**
+
+- Submit ordinary-looking text into the field that includes a distinctive marker, such as `<b>test</b>`, into a comment, review, or bio field you control.
+- View the page where that submission is displayed back. If the word "test" shows up bolded rather than the literal characters `<b>test</b>` appearing as plain text, the field is rendering submitted HTML instead of escaping it — a strong signal the same field would also execute an actual malicious script, not just harmless bold formatting.
+- Repeat this on every distinct kind of public input field on the site — testimonials, comments, profile bios, and file-upload captions frequently behave differently from one another even on the same site, since each may have been built at a different time or by a different underlying component.
+- If you find even one field that renders raw formatting like this, treat every similar field on the site as suspect until a proper review confirms otherwise, rather than assuming the problem is isolated to the one field you happened to test.
+
+This test uses a harmless formatting tag specifically so a founder can run it safely on their own live site without any risk of actually triggering something malicious. It's a useful first signal, not a substitute for the more thorough pass a dedicated review performs — a founder-run test like this one catches only the most direct, obvious version of the issue, while a professional review checks for the subtler variations that bypass simpler defenses.
 
 ## Real example
 
@@ -95,6 +108,10 @@ Yes, since each framework has its own specific patterns and pitfalls around cont
 ### Would this kind of gap have been caught automatically by a code-scanning tool without a human review?
 
 Some automated scanning tools do flag common instances of this pattern, but coverage varies significantly depending on how the vulnerable code is structured, and a dedicated human review remains considerably more reliable for catching the less obvious variations that automated tools sometimes miss entirely.
+
+### Can a founder run the safe test described above and be confident the site is clean if nothing shows up?
+
+Reasonably confident about the specific fields tested, but not about the site as a whole — a founder-run test typically only covers the fields that are obvious and easy to find, while a dedicated review checks every input path systematically, including ones a founder might not realize accept and later display text at all, such as file names or metadata attached to an upload.
 
 <script type="application/ld+json">
 {
@@ -139,6 +156,14 @@ Some automated scanning tools do flag common instances of this pattern, but cove
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Some do, but coverage varies, and a human review is more reliable for less obvious variations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If a founder's own safe test finds nothing, is the site confirmed clean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reasonably confident for the fields tested, but not the whole site — a dedicated review checks every input path systematically."
       }
     }
   ]

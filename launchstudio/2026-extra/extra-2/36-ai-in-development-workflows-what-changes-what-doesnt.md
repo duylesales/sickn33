@@ -43,7 +43,7 @@ If the URL a user provides isn't restricted in any way, there's nothing stopping
 
 ## Why This Is Called Server-Side Request Forgery
 
-The name describes exactly what happens: a request is forged (crafted by an outside party) but executed server-side (by your own trusted infrastructure), giving an attacker a way to probe or interact with internal systems using your server's own network position and trust level, rather than their own, far more restricted external vantage point.
+The name describes exactly what happens: a request is forged (crafted by an outside party) but executed server-side (by your own trusted infrastructure), giving an attacker a way to probe or interact with internal systems using your server's own network position and trust level, rather than their own, far more restricted external vantage point. In cloud-hosted environments specifically, this often extends to a special internal address that returns temporary credentials and configuration details about the server itself — a target an unrestricted "fetch this URL" feature can reach just as easily as it reaches a normal external image.
 
 ## Why Testing With Real Image URLs Never Reveals This
 
@@ -56,6 +56,18 @@ A safe implementation validates that a provided URL resolves to a genuinely publ
 Manifera's SSRF and backend integration security work is delivered through the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## Beyond Blocking Internal IPs: A Fuller SSRF Defense
+
+Restricting a "fetch from URL" feature to genuinely public destinations sounds simple in principle, but a shallow implementation — one that only checks whether the initially provided address looks like an internal IP — misses several ways the same restriction gets bypassed in practice:
+
+- **DNS rebinding** — a domain name that resolves to a legitimate public address at the moment it's checked, but is switched to resolve to an internal address by the time the actual fetch request happens, slipping past a validation check that only ran once, early, rather than at the moment of the real request.
+- **Redirect chains** — a URL that itself points to a genuinely public address, but which responds with a redirect to an internal one, bypassing a check that only validates the initially requested address and doesn't follow (or re-validate) where a redirect actually leads.
+- **The cloud metadata endpoint specifically** — a known, fixed internal address that many cloud providers use to serve temporary credentials and configuration to a running server; blocking it explicitly, by name, is worth doing on top of a general "no internal IP ranges" rule, precisely because it's such a high-value target if reached.
+- **Alternate address formats** — the same internal address written in decimal, octal, or hexadecimal notation instead of the standard dotted format can slip past a validation check written to recognize only one specific format.
+- **Non-HTTP protocols** — a feature meant to fetch images over HTTP or HTTPS that doesn't explicitly restrict which protocol is allowed can sometimes be pointed at a local file path or another protocol entirely, extending the risk beyond just internal network addresses.
+
+A genuinely robust fix validates the destination at the moment of the actual request rather than only at initial input, explicitly blocks the cloud metadata address by name, and restricts the allowed protocol rather than trusting whatever scheme happens to be present in the provided URL. This is exactly the kind of layered validation a general "avoid internal addresses" instruction to an AI coding tool tends not to produce on its own, since each of these five bypass techniques is a specific, separately known pattern rather than something inferred from a general description of the desired behavior.
 
 ## Real example
 
@@ -95,6 +107,10 @@ Very well — the import feature functioned exactly as described from a feature-
 ### Is there a way for a founder to test for this kind of gap themselves before a professional review?
 
 A founder with some technical comfort can try providing an internal address (like a local network address) to any "fetch from URL" feature and observe whether the request succeeds, though correctly and comprehensively blocking every possible way to disguise an internal destination typically requires the kind of systematic validation a dedicated security review implements.
+
+### Does blocking obvious internal IP ranges cover most of this risk, or is that only a partial fix?
+
+Only partial — blocking obvious internal ranges stops the most naive attempt, but DNS rebinding, redirect chains, alternate address formats, and the cloud metadata endpoint specifically all require additional, separate handling beyond a simple range check. A validation approach that only checks the initially provided address, rather than re-validating at the moment of the actual request, leaves several of these bypasses fully open.
 
 <script type="application/ld+json">
 {
@@ -139,6 +155,14 @@ A founder with some technical comfort can try providing an internal address (lik
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Partially, by trying an internal address, though comprehensive blocking typically requires a systematic review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does blocking obvious internal IP ranges cover most of this risk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only partially — DNS rebinding, redirect chains, and the cloud metadata endpoint all require separate, additional handling."
       }
     }
   ]

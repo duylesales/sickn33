@@ -35,7 +35,7 @@ Fast AI code development has a genuinely real, measurable benefit — features t
 
 ## Why Dependency Choices Happen Fast and Mostly Invisibly
 
-Building a feature quickly with an AI coding tool often means the tool selects and installs whatever library best accomplishes the described task, and a founder reviewing the resulting feature naturally focuses on whether the feature works, not on auditing the specific version number of every package that got pulled in along the way to make it work.
+Building a feature quickly with an AI coding tool often means the tool selects and installs whatever library best accomplishes the described task, and a founder reviewing the resulting feature naturally focuses on whether the feature works, not on auditing the specific version number of every package that got pulled in along the way to make it work. A single new feature can easily pull in a handful of new dependencies at once, each of which brings its own smaller dependencies along with it — a modern project can end up with several hundred total packages installed after just a few weeks of active development, the overwhelming majority of which nobody involved in building the product ever consciously chose or reviewed individually.
 
 ## Why Package Versions Matter More Than They Seem To
 
@@ -43,11 +43,11 @@ Software libraries occasionally have publicly disclosed security vulnerabilities
 
 ## Why "It's a Popular, Trusted Library" Doesn't Rule This Out
 
-A library's overall reputation for quality doesn't protect against a specific outdated version having a documented vulnerability — trust in the library as a project and safety of the specific version currently installed are two different questions, and AI-generated code that pulls in "the standard library for X" without pinning or later updating to a patched version can carry exactly this gap regardless of how well-regarded that library is generally.
+A library's overall reputation for quality doesn't protect against a specific outdated version having a documented vulnerability — trust in the library as a project and safety of the specific version currently installed are two different questions, and AI-generated code that pulls in "the standard library for X" without pinning or later updating to a patched version can carry exactly this gap regardless of how well-regarded that library is generally. Widely used libraries are, if anything, more attractive targets for researchers looking to responsibly disclose vulnerabilities precisely because so many projects depend on them, which means popularity correlates with more scrutiny and more disclosed issues over time, not fewer — a healthy sign for the library's overall maintenance, but not a reason to assume the specific version sitting in your project is automatically current.
 
 ## Why This Gap Tends to Compound Silently Over Time
 
-A project that starts with reasonably current dependencies can drift further out of date the longer it goes without a deliberate update pass, since nothing about ordinary feature development naturally revisits already-working dependencies — each additional month without review is additional time for newly disclosed vulnerabilities to accumulate against versions that were fine when first installed but aren't anymore.
+A project that starts with reasonably current dependencies can drift further out of date the longer it goes without a deliberate update pass, since nothing about ordinary feature development naturally revisits already-working dependencies — each additional month without review is additional time for newly disclosed vulnerabilities to accumulate against versions that were fine when first installed but aren't anymore. A product built in a single intense weekend and left largely untouched for a year afterward isn't unusual among AI-native founders who reach product-market fit quickly and then focus entirely on customers rather than maintenance — and that specific pattern, fast build followed by long stability, is exactly the combination that lets dependency drift accumulate the longest before anyone has a reason to look.
 
 ## What a Proper Dependency Audit Actually Involves
 
@@ -56,6 +56,18 @@ A thorough audit scans a project's full dependency tree against known vulnerabil
 Manifera's dependency audits are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations handled through the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## How to Read a Dependency Vulnerability Report Without a Security Background
+
+Most modern hosting and code platforms will now generate a dependency vulnerability report automatically, but the report itself can be intimidating — dozens of flagged items, unfamiliar package names, severity labels that don't obviously translate into "should I worry about this." A founder without a security background can still triage a report using three practical questions.
+
+**Work through each flagged item with these three questions:**
+
+- **Is the severity rating critical or high, or is it low or moderate?** Most reporting tools use a standardized severity scale — critical and high-severity items deserve prompt attention, while low and moderate items are often reasonable to schedule for a routine update pass rather than an emergency one.
+- **Is the vulnerable code path actually reachable in how your app uses that package?** A library can have a documented vulnerability in a specific function your app never calls, in which case the practical risk is considerably lower than the severity label alone suggests — though confirming this requires reading the vulnerability description, not just the headline score.
+- **Is a patched version already available, or does fixing this require a larger migration?** Many vulnerabilities are resolved by a routine version bump with no other code changes required; a smaller number require adapting to a breaking change in the patched version, which is where the real engineering time tends to go.
+
+A founder who works through even just the critical and high-severity items using these three questions, on a recurring basis rather than once, closes most of the practical risk without needing to become a security specialist. The remaining, more ambiguous cases — where reachability or migration complexity isn't obvious from the report alone — are where a professional review adds the most value, since misjudging either one can mean either wasted engineering effort on a non-issue or a genuine risk left unaddressed.
 
 ## Real example
 
@@ -95,6 +107,10 @@ Directly — dependency vulnerabilities are disclosed continuously over time aga
 ### Should a founder run dependency scans themselves regularly, or is this something to outsource entirely?
 
 Many modern development platforms include built-in, automated dependency scanning that a founder can enable with minimal setup, which is a reasonable first line of defense — though interpreting the results and safely applying the right updates without breaking functionality is where a dedicated technical review typically adds the most value.
+
+### How often should a dependency audit actually happen for an active product?
+
+Ideally on a recurring basis rather than as a one-off — many teams treat it as a monthly or quarterly habit, similar to a routine maintenance check, since new vulnerabilities are disclosed continuously and a project that's clean today can have a newly flagged issue in an unrelated package a few weeks later with no changes on your end at all.
 
 <script type="application/ld+json">
 {
@@ -139,6 +155,14 @@ Many modern development platforms include built-in, automated dependency scannin
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Automated scanning is a reasonable first line of defense; interpreting results and applying fixes benefits from review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should a dependency audit happen for an active product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ideally on a recurring monthly or quarterly basis, since new vulnerabilities are disclosed continuously over time."
       }
     }
   ]

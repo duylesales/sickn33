@@ -61,6 +61,22 @@ Each of these dimensions shares a specific pattern: the earlier you address them
 
 Concretely: designing your database schema with deletion pathways considered from the outset, not retrofitted; consciously limiting data collection to what's specifically justified by your product's function; deliberately selecting EU-based infrastructure where required, rather than accepting a tool's default; and confirming processing agreements exist with every relevant vendor before real personal data starts flowing through them.
 
+## A Practical Data Audit Checklist You Can Run This Week
+
+You don't need a lawyer or a formal compliance process to get a first, useful read on where your own app stands. A founder with basic access to their own database and vendor dashboards can work through the following in an afternoon:
+
+**Map every table that stores personal data.** List each table touching a user's name, email, health information, financial detail, or anything else identifiable, and for each one, ask specifically: if this user requested deletion today, could you actually remove their record from this table, cleanly, without breaking data belonging to other users?
+
+**Trace where that data gets duplicated.** Check whether any of it flows into an analytics table, a cache, a log file, or a third-party tool (an email provider's contact list, an analytics platform, a support-desk tool) — each duplicate is a place deletion also has to reach, not just the primary table, and each one is easy to forget because it wasn't the table you were originally thinking about.
+
+**List every field you collect and ask "why."** For each field in your signup or profile forms, write down the specific product reason it's needed. A field you can't justify in a sentence is a minimization violation waiting to be flagged in a real audit, and it's usually easier to simply remove than to later defend.
+
+**Check your hosting and database provider's actual server region.** Most providers show this directly in their dashboard settings — don't assume based on where the company is headquartered, since a US-based provider frequently offers an EU region that has to be deliberately selected rather than defaulted into.
+
+**List your data-processing vendors and confirm agreements exist.** Hosting, email, analytics, and any AI API you send personal data to — for each, check whether a data processing agreement is in place, which is usually a checkbox or document available in the vendor's own account settings rather than something you need to draft yourself.
+
+This isn't a substitute for a formal compliance review once you're handling meaningful volumes of EU personal data, but it reliably surfaces the same categories of gaps Marloes's case illustrates, before they've compounded into a migration project.
+
 [LaunchStudio](https://launchstudio.eu/en/) builds GDPR-aware architecture into every engagement by default, treating these as the day-one architectural decisions they actually are rather than post-launch paperwork, backed by Manifera's compliance-conscious engineering culture shaped by clients like TNO.
 
 [Build compliance in before your first real user's data exists](https://launchstudio.eu/en/#calculator) — this is meaningfully cheaper before real data accumulates than after.

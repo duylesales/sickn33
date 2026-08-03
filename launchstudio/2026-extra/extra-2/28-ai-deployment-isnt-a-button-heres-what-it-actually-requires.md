@@ -39,7 +39,7 @@ Clicking "deploy" inside an AI coding tool genuinely does put your application o
 
 ## Myth: If the Site Loads Over HTTPS, You're Already Protected
 
-**Reality:** loading over HTTPS protects the specific connection in progress, but without an HSTS (HTTP Strict Transport Security) header, a browser has no instruction to always insist on HTTPS for your domain going forward — meaning a user who happens to type or follow a plain HTTP link could be silently downgraded to an unencrypted connection, an increasingly rare but real risk this specific header exists to close.
+**Reality:** loading over HTTPS protects the specific connection in progress, but without an HSTS (HTTP Strict Transport Security) header, a browser has no instruction to always insist on HTTPS for your domain going forward — meaning a user who happens to type or follow a plain HTTP link could be silently downgraded to an unencrypted connection, an increasingly rare but real risk this specific header exists to close. This matters most in the exact moment a user is most vulnerable — connecting from an untrusted public Wi-Fi network, where a downgraded connection is precisely the opening a nearby attacker on the same network needs to intercept traffic that should have stayed encrypted the entire time.
 
 ## Myth: Security Headers Are an Advanced, Enterprise-Only Concern
 
@@ -47,7 +47,7 @@ Clicking "deploy" inside an AI coding tool genuinely does put your application o
 
 ## Myth: An AI Coding Tool Would Add These by Default If They Mattered
 
-**Reality:** deployment platforms and coding tools focus their defaults on getting your specific described application running correctly, not on applying a comprehensive security header policy that wasn't part of what was asked for — the tool isn't making a judgment that headers don't matter, it simply isn't the layer where that decision gets made unless someone specifically configures it.
+**Reality:** deployment platforms and coding tools focus their defaults on getting your specific described application running correctly, not on applying a comprehensive security header policy that wasn't part of what was asked for — the tool isn't making a judgment that headers don't matter, it simply isn't the layer where that decision gets made unless someone specifically configures it. It's worth being precise about where responsibility actually sits here: the hosting platform typically provides the mechanism for setting headers, the AI coding tool builds the application that runs on top of it, and neither one owns the decision of which specific headers your particular product needs — that decision requires someone looking at the finished, deployed product and deliberately configuring it.
 
 ## Myth: This Is a One-Time Setting You Configure Once and Forget
 
@@ -60,6 +60,21 @@ A proper review confirms HSTS, content-security-policy, and related headers are 
 Manifera's deployment configuration reviews are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Drop us your prototype link — we'll review it for free](https://launchstudio.eu/en/#contact).
+
+## The Six Headers Worth Actually Knowing About
+
+Security headers aren't one single setting — they're a small family of related but distinct protections, each closing a different, specific gap. Knowing roughly what each one does makes a scanner report considerably less mysterious.
+
+**A quick reference for the headers that matter most:**
+
+1. **HSTS (Strict-Transport-Security)** — tells the browser to always use HTTPS for your domain going forward, preventing a downgrade to an unencrypted connection even if a user follows a plain HTTP link.
+2. **Content-Security-Policy** — restricts what sources of scripts, styles, and other content your pages are allowed to load from, meaningfully limiting the damage a successful script-injection attempt (like a stored XSS bug) could actually do.
+3. **X-Frame-Options** — prevents your site from being loaded inside a frame on someone else's page, closing off a class of attack called clickjacking, where a malicious site overlays your page invisibly to trick users into clicking something they didn't mean to.
+4. **X-Content-Type-Options** — stops browsers from trying to guess a file's type based on its content rather than trusting its declared type, closing a narrow but real avenue for tricking a browser into executing something as a different, more dangerous file type than intended.
+5. **Referrer-Policy** — controls how much information about the page a user came from gets sent along when they click a link to another site, limiting accidental leakage of sensitive URLs (like a password reset link) into a third party's server logs.
+6. **Permissions-Policy** — explicitly restricts which browser features (camera, microphone, location) your pages are allowed to request at all, reducing the risk if a script-injection vulnerability elsewhere is ever exploited to try requesting one of them.
+
+None of these require a founder to configure them manually with deep technical understanding of each one — the value of a professional review is confirming all six are set correctly and consistently for your specific hosting setup, rather than a founder needing to become fluent in each header's exact syntax themselves.
 
 ## Real example
 
@@ -99,6 +114,10 @@ Yes, precisely — headers are a configuration-level, infrastructure decision ra
 ### Does fixing missing security headers require any downtime or risk breaking the live site?
 
 Properly implemented, header configuration changes typically don't require downtime and shouldn't affect how the site functions for users, though testing the change against the live domain afterward is a standard, necessary step to confirm nothing was inadvertently affected before considering the fix complete.
+
+### Can a Content-Security-Policy header actually break parts of a site if it's configured too strictly?
+
+Yes, and this is precisely why it's the header most worth having a professional configure rather than copying a generic template — an overly strict policy can accidentally block a legitimate third-party script, font, or embedded widget your site actually relies on, while an overly loose one fails to meaningfully restrict anything. Getting the policy right requires understanding exactly what your specific site legitimately loads and from where.
 
 <script type="application/ld+json">
 {
@@ -143,6 +162,14 @@ Properly implemented, header configuration changes typically don't require downt
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Properly implemented, it typically requires no downtime, though testing afterward is a standard necessary step."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a Content-Security-Policy header break parts of a site if configured too strictly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, an overly strict policy can block a legitimate third-party script or widget, which is why it needs careful configuration."
       }
     }
   ]

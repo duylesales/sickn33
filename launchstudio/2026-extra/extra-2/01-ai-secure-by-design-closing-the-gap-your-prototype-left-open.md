@@ -51,7 +51,21 @@ A demo, by its nature, is a cooperative scenario — you, the founder, testing y
 
 ## Why Founders Consistently Underestimate How Quickly This Gets Found
 
-It's tempting to assume nobody's looking — that a small, early-stage product with a few dozen users is too obscure to attract unwanted attention. In practice, much of this discovery isn't targeted at all: automated scanners and bots continuously probe the open internet for exactly these categories of unprotected endpoints and exposed keys, with no idea or interest in who built the app, simply checking whether the gap exists. A product doesn't need to be famous to be found this way — it only needs to be reachable.
+It's tempting to assume nobody's looking — that a small, early-stage product with a few dozen users is too obscure to attract unwanted attention. In practice, much of this discovery isn't targeted at all: automated scanners and bots continuously probe the open internet for exactly these categories of unprotected endpoints and exposed keys, with no idea or interest in who built the app, simply checking whether the gap exists. A product doesn't need to be famous to be found this way — it only needs to be reachable. Tools built specifically to crawl for exposed API keys, open admin panels, and misconfigured storage buckets run continuously, indexing large swaths of the internet a day regardless of a product's traffic volume or public profile — a brand-new app on a fresh domain is often scanned within its first day of being reachable, well before its founder has told a single customer it exists.
+
+## A Practical Self-Audit Checklist Before You Show This to Investors or Customers
+
+You don't need a security background to run a first-pass check on your own prototype — you need about twenty minutes and a willingness to actively try to break your own product rather than use it as intended. This isn't a substitute for a professional review, but it's a reasonable way to catch the most obvious gaps before anyone else does, and it gives you a much more specific starting point when you do talk to an engineer.
+
+**Run through these five checks yourself:**
+
+- **Open dev tools and watch the network tab.** Click through every "premium," "admin," or "restricted" feature in your app and watch what data actually comes back in the response, not just what the UI displays — if the full data set arrives and the UI simply chooses not to show parts of it, the restriction is cosmetic.
+- **Try requesting a URL directly instead of clicking to it.** If a page is supposed to require login or a specific role, open it in an incognito window with no session at all and see what loads.
+- **Search your own frontend bundle for keys.** Search the browser's "view source" or the compiled JavaScript bundle for the strings "key," "secret," or "token" — anything that returns a real credential rather than a placeholder needs to move server-side immediately.
+- **Try changing an ID in the URL.** If your app shows a record by ID (an invoice, a document, a profile), change the number or identifier slightly and see whether you get an error or someone else's actual data.
+- **Check what a failed request tells you.** Deliberately submit a wrong password or an invalid request and read the error message closely — a message that confirms whether an email address exists in your system, for instance, is quietly leaking more than it should.
+
+None of these checks require writing code, and none of them take more than a few minutes each. What they will not catch is the gap that only shows up under the exact conditions this article describes — one endpoint you forgot existed, a role check applied everywhere except one route, a validation rule enforced on the form but not the API behind it. That's the specific class of finding a structured review exists to catch, precisely because it's the kind of gap a founder's own testing, however diligent, tends to walk right past.
 
 ## What Actually Closing the Gap Looks Like
 

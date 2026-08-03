@@ -1,97 +1,100 @@
 ---
-Titel: "Security AI-gaten die Bredase oprichters pas vinden als een gebruiker het doet"
+Titel: "Beveiligings-AI gaten die Bredase oprichters pas ontdekken als een gebruiker dat doet"
 Trefwoorden: security ai, ai app security, ai generated code vulnerabilities, Breda
 Koperfase: Overweging
 Doelgroep: Niet-technische oprichter
 ---
-# Security AI-gaten die Bredase oprichters pas vinden als een gebruiker het doet
+
+# Beveiligings-AI gaten die Bredase oprichters pas ontdekken als een gebruiker dat doet
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Security AI-gaten die Bredase oprichters pas vinden als een gebruiker het doet",
-  "description": "Door AI gebouwde apps in Breda bevatten vaak verborgen beveiligingsgaten die pas aan het licht komen als een echte gebruiker ze vindt. Zo vindt u ze eerst zelf.",
-  "author": {
-    "@type": "Organization",
-    "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Manifera",
-    "url": "https://www.manifera.com"
-  },
+  "headline": "Beveiligings-AI gaten die Bredase oprichters pas ontdekken als een gebruiker dat doet",
+  "description": "Met AI gebouwde apps in Breda worden vaak gelanceerd met verborgen beveiligingsgaten die pas naar voren komen als een echte gebruiker ze vindt. Zo vindt u ze als eerste.",
+  "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
+  "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/23-security-ai-breda"
-  }
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/23-security-ai-breda" }
 }
 </script>
 
-Hier is een ongemakkelijk cijfer: ongeveer 45% van de door AI gegenereerde code bevat een vorm van beveiligingskwetsbaarheid, en de oprichter die de code schreef, heeft doorgaans geen manier om te weten aan welke kant van die verdeling zijn app valt — totdat iemand het voor hem test, bewust of niet. Voor een groeiend aantal Bredase oprichters die met AI horeca- en creatieve-industrietools bouwen, blijkt die "iemand" een nieuwsgierige vroege gebruiker te zijn in plaats van een beveiligingsbeoordeling.
+Hier is een ongemakkelijk getal: ongeveer 45% van de met AI gegenereerde code bevat een vorm van beveiligingslek, en de oprichter die het schreef heeft doorgaans geen manier om te weten in welke helft van die verdeling zijn app valt — totdat iemand het voor hem test, bewust of niet. Voor een groeiend aantal Bredase oprichters die horeca- en creatieve-industrie tools bouwen met AI blijkt die "iemand" een nieuwsgierige vroege gebruiker te zijn in plaats van een beveiligingsbeoordeling. Het verontrustende gedeelte is niet de statistiek zelf, maar hoe zelfverzekerd een met AI gebouwde app aan kan voelen tot op dat exacte moment — schone interface, werkende formulieren, een inlogscherm dat zich exact gedraagt zoals verwacht in elke test die de oprichter persoonlijk heeft uitgevoerd.
 
-## Wat "security AI" daadwerkelijk betekent voor een oprichter, niet voor een engineer
+## Wat "Beveiligings-AI" daadwerkelijk betekent voor een oprichter, en niet voor een engineer
 
-Zoekinteresse rond "security AI" splitst zich doorgaans in twee richtingen: mensen die op zoek zijn naar AI-gestuurde beveiligingstools, en mensen — in toenemende mate — die proberen te achterhalen of de AI die hun app bouwde die app ook heeft beveiligd. Het is die tweede groep die hier telt, en het eerlijke antwoord is: waarschijnlijk niet, in elk geval niet volledig. AI-codeertools zoals Lovable, Bolt, Cursor en v0 zijn getraind om de instructie die ze kregen uit te voeren, en "maak dit veilig" maakt zelden deel uit van de instructie die een oprichter denkt te moeten geven, omdat de meeste oprichters nog niet weten welke vragen ze moeten stellen.
+Zoekopdrachten rond "security AI" splitsen zich doorgaans op twee manieren: mensen die zoeken naar met AI aangedreven beveiligingstools, en mensen die — in toenemende mate — proberen te achterhalen of de AI die hun app bouwde deze ook heeft beveiligd. Het is de tweede groep die er hier toe doet, en het eerlijke antwoord is: waarschijnlijk niet, tenminste niet volledig. AI-codingtools zoals Lovable, Bolt, Cursor en v0 zijn getraind om te voldoen aan de instructie die ze kregen, en "maak dit veilig" is zelden een onderdeel van de instructie waar een oprichter aan denkt om te geven, omdat de meeste oprichters nog niet weten welke vragen ze moeten stellen. Het is een beetje zoals een aannemer vragen om "een keuken te bouwen" en er later verbaasd over zijn dat ze niet zelfstandig besloten om een brandblussysteem toe te voegen — een redelijke zaak om te willen, maar niet iets wat gebeurt tenzij iemand er expliciet om vraagt.
 
-De oprichtersscene van Breda neigt naar horecatech en tools voor de creatieve industrie, gevormd door instellingen zoals Breda University of Applied Sciences en de sterke horeca- en evenementensector van de stad. Dit zijn producten die, bijna per definitie, al vroeg gevoelige klantgegevens verwerken: boekingsgegevens, betalingsinformatie, gastenlijsten. Dat maakt het beveiligingsgat in door AI gegenereerde code hier risicovoller dan in een puur intern hulpmiddel, omdat de eerste echte gebruiker vaak al een betalende klant is met data op het spel.
+De startup-scene in Breda neigt naar horeca-technologie en tools voor de creatieve industrie, gevormd door instellingen zoals Breda University of Applied Sciences en de sterke horeca- en evenementensector van de stad — een scene die zichtbaar is in de concentratie van horeca-startups en ontwerpstudio's rond de Ginnekenmarkt en het Chassé Park, waar restauranteigenaren en evenementenorganisatoren vaak degenen zijn die de software zelf laten bouwen of bouwen. Dit zijn producten die, bijna per definitie, al vroeg gevoelige klantgegevens verwerken: reserveringsdetails, betalingsinformatie, gastenlijsten, soms dieet- of toegankelijkheidsnotities gekoppeld aan een specifiek persoon. Dat maakt het beveiligingsgat in met AI gegenereerde code hier risicovoller dan in een puur interne tool, omdat de eerste echte gebruiker vaak al een betalende klant is met echte, identificeerbare data op het spel — en geen testaccount dat is aangemaakt om te controleren of het aanmeldformulier werkt.
 
-## De gaten die het meest voorkomen in Bredase apps
+## De gaten die het meest naar voren komen in in Breda gebouwde apps
 
-Drie patronen keren steeds terug in de door AI gebouwde horeca- en evenemententools die we hebben beoordeeld. Ten eerste: blootgestelde API-sleutels die direct in frontend-JavaScript staan, zichtbaar voor iedereen die de ontwikkelaarstools van zijn browser opent — een fout die onzichtbaar is totdat iemand kijkt. Ten tweede: ontbrekende rate limiting op inlog- en boekingseindpunten, waardoor een kleine bug verandert in een opening voor geautomatiseerd misbruik. Ten derde, en het meest voorkomend in de boekings- en reserveringstools van Noord-Brabant specifiek: databaseregels die elke geauthenticeerde gebruiker toestaan records van andere horecagelegenheden of andere klanten op te vragen, simpelweg omdat row-level security nooit is geconfigureerd.
+Drie patronen keren herhaaldelijk terug in de met AI gebouwde horeca- en evenemententools die we hebben beoordeeld. Ten eerste, blootgestelde API-sleutels die rechtstreeks in de JavaScript aan de frontend zitten, zichtbaar voor iedereen die de ontwikkelaarstools van zijn browser opent — een fout die onzichtbaar is totdat iemand kijkt, en compleet onzichtbaar voor een oprichter die nooit een reden heeft gehad om die tools zelf te openen. Ten tweede, het ontbreken van rate limiting op inlog- en reserveringseindpunten, wat een kleine bug verandert in een opening voor geautomatiseerd misbruik — een script dat duizenden wachtwoordcombinaties probeert, of een reserveringsformulier overspoelt met nep-reserveringen om echte klanten buitenspel te zetten tijdens een druk weekend. Ten derde, en het meest gebruikelijk in Noord-Brabantse boekings- en reserveringstools specifiek, databaseregels die elke ingelogde gebruiker records laten opvragen die behoren tot andere locaties of andere klanten, simpelweg omdat row-level security nooit geconfigureerd was — vaak omdat de standaardinstelling van de AI-tool prioriteit geeft aan het opleveren van een werkende demo boven het afschermen van toegang op dag één.
 
-LaunchStudio wordt ondersteund door Manifera — dezelfde engineeringorganisatie die door Vodafone, TNO en CFLW Cyber Strategies wordt vertrouwd voor beveiligingsgevoelig werk, met een engineeringbasis in Ho Chi Minhstad die een aanzienlijk deel van dit soort productiehardening verzorgt. Dat is geen toeval van schaal; beveiligingsbeoordeling is een specifieke discipline, los van het bouwen van functies waarvoor een AI-tool is geoptimaliseerd, en profiteert van technici die het herhaaldelijk doen in plaats van oprichters die het één keer doen, onder deadlinedruk.
+LaunchStudio wordt ondersteund door Manifera — dezelfde engineeringorganisatie die door Vodafone, TNO en CFLW Cyber Strategies wordt vertrouwd voor beveiligingsgevoelig werk, met een engineeringbasis in Ho Chi Minh City die een aanzienlijk deel van dit type productieverharding afhandelt. Dat is geen toeval van schaal; een beveiligingsbeoordeling is een specifieke discipline, gescheiden van het bouwen van functies waar een AI-tool voor geoptimaliseerd is, en het profiteert van engineers die dit herhaaldelijk doen in plaats van oprichters die het één keer doen onder tijdsdruk. Een oprichter die een boekingstool bouwt moet precies één keer over beveiliging nadenken, onder tijdsdruk, meestal nadat de lancering al heeft plaatsgevonden; een engineer die voor zijn beroep met AI gegenereerde apps auditeert heeft exact dit gat in row-level security al tientallen keren gezien, in tientallen verschillende Supabase-projecten, en weet precies waar als eerste gekeken moet worden.
 
 ## De gaten vinden voordat een gebruiker dat doet
 
-De oplossing hier is geen paranoia, maar een degelijke audit vóór lancering in plaats van na een incident. [Spreek met een engineer die door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#process) over uw specifieke stack — op welk platform u heeft gebouwd, waar uw data zich bevindt, welke betalingsprovider u gebruikt — en u krijgt een concrete lijst van wat u moet controleren, geen generieke beveiligingschecklist die van een blogpost is gekopieerd. Het bredere werk van Manifera op dit gebied, waaronder [maatwerksoftwareontwikkeling](https://www.manifera.com/services/custom-software-development/) voor zakelijke klanten, volgt dezelfde auditlogica die hier op oprichterschaal wordt toegepast.
+De oplossing hier is geen paranoia, het is een deugdelijke audit vóór de lancering in plaats van na een incident. [Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#process) over uw specifieke stack — op welk platform u heeft gebouwd, waar uw data leeft, welke betaalprovider u gebruikt — en u krijgt een concrete lijst van wat er gecontroleerd moet worden, en geen generieke beveiligingschecklist gekopieerd van een blogpost. Manifera's bredere werk in deze ruimte, inclusief [custom software development](https://www.manifera.com/services/custom-software-development/) voor enterprise-klanten, volgt dezelfde auditlogica toegepast op oprichters-schaal.
+
+## Een zelfcontrole van vijf minuten, zelfs als u nog nooit een database-console heeft geopend
+
+U hoeft geen code te schrijven om een globale indruk te krijgen of uw boekings- of reserveringstool het type gat bevat dat hierboven is beschreven. Het vervangt geen deugdelijke audit, en het zal niet alles opvangen wat een getrainde engineer zou vinden, maar het kan u vertellen of u zich zorgen moet maken vóór uw volgende klantgesprek, en niet erna.
+
+**Zaken die een niet-technische oprichter vandaag daadwerkelijk kan controleren**
+
+1. **Log in op uw databasedashboard** (Supabase, Firebase, of wat uw AI-tool ook achter de schermen heeft ingericht) en zoek naar een instelling genaamd "Row Level Security" of "Security Rules" op elke tabel die klant- of reserveringsgegevens bevat. Als dit als uitgeschakeld staat aangegeven, of als u dit scherm nog nooit eerder heeft gezien, is dat direct aandacht waard.
+2. **Probeer de URL-truc zelf.** Terwijl u ingelogd bent in uw eigen app, opens u een reserverings- of boekingsdetailpagina en noteert u het ID in de adresbalk. Wijzig één cijfer en vernieuw de pagina. Als u de gegevens van iemand anders ziet, heeft u exact het gat gevonden dat de gastenlijst van TableTuned blootlegde.
+3. **Zoek in de broncode van uw eigen site naar blootgestelde sleutels.** Klik in uw browser met de rechtermuisknop op een pagina, kies "Paginabron weergeven" of open de ontwikkelaarstools, en zoek (Ctrl+F) naar "sk_" of "SECRET_KEY." Een live geheime sleutel die in platte tekst in uw frontend staat is een echt, vindbaar probleem, en geen theoretisch probleem.
+4. **Test uw inlogformulier met herhaalde verkeerde wachtwoorden.** Probeer tien keer snel achter elkaar in te loggen met een onjuist wachtwoord. Als niets u vertraagt of u tijdelijk uitsluit, is er waarschijnlijk geen rate limiting die de accounts van uw klanten beschermt tegen geautomatiseerd gissen, wat een oprecht gebruikelijk gat is, zelfs in apps die er verder gepolijst uitzien.
+
+Het ontdekken van een probleem op deze manier betekent niet dat u in paniek moet raken — het betekent dat u nu specifiek weet wat u moet vragen, wat een vage vraag als "is mijn app veilig?" verandert in een concrete, herstelbare lijst die u rechtstreeks kunt overhandigen aan wie deze vervolgens beoordeelt.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: TableTuned van Elise van Dongen
+### Een AI-Native oprichter in actie: TableTuned van Elise van Dongen
 
-Elise van Dongen bouwde TableTuned, een reserverings- en personeelsroostertool voor onafhankelijke restaurants rond het Bredase Ginnekenmarkt-district, met Cursor over ongeveer tien dagen geconcentreerd bouwen. Binnen een maand gebruikten zes restaurants het om boekingen en dienstroosters te beheren. Een zevende restaurant, waarvan de manager de tool evalueerde, veranderde uit nieuwsgierigheid een reservering-ID in de URL en kreeg de volledige gastenlijst van een ander restaurant te zien, telefoonnummers incluis.
+Elise van Dongen bouwde TableTuned, een reserverings- en personeelsplanningstool voor onafhankelijke restaurants rond de Bredase Ginnekenmarkt, met behulp van Cursor gedurende ongeveer tien dagen van gefocust bouwen. Binnen een maand gebruikten zes restaurants het om boekingen en roosterdekking te beheren. De manager van een zevende restaurant, die de tool evalueerde, probeerde uit nieuwsgierigheid een reserverings-ID in de URL te wijzigen en haalde de volledige gastenlijst van een ander restaurant te voorschijn, inclusief telefoonnummers.
 
-Hij meldde het in plaats van het te misbruiken, maar de blootstelling was reëel en had de hele maand live gestaan. De technici van LaunchStudio herleidden het tot een ontbrekend row-level-securitybeleid op de reserveringstabel — een standaard Supabase-configuratie die nooit was afgesloten tot restaurantspecifieke toegang. Ze implementeerden correcte tenant-isolatie, voegden rate limiting toe aan het openbare boekingseindpunt en verplaatsten Elise's Stripe-sleutels uit de client-side code naar een beveiligde backendfunctie.
+Hij meldde het in plaats van het te misbruiken, maar de blootstelling was echt en stond al de hele maand live. De engineers van LaunchStudio traceerden het naar een ontbrekend beleid voor row-level security op de reserveringstabel — een standaard Supabase-inrichting die nooit was afgeschermd voor restaurant-specifieke toegang. Ze implementeerden deugdelijke tenant-isolatie, voegden rate limiting toe aan het openbare reserveringseindpunt, en verplaatsten Elise's Stripe-sleutels uit de code aan de clientzijde naar een beveiligde backendfunctie.
 
-**Resultaat:** TableTuned werd opnieuw gelanceerd met geverifieerde tenant-isolatie, en Elise leidt haar verkoopgesprekken met nieuwe restaurants nu met haar beveiligingsaudit in plaats van te hopen dat het onderwerp niet ter sprake komt.
+**Resultaat:** TableTuned herlanceerde met geverifieerde tenant-isolatie, en Elise zet haar beveiligingsaudit nu voorop in verkoopgesprekken met nieuwe restaurants in plaats van te hopen dat het onderwerp niet ter sprake komt.
 
-> *"Het engste was niet de bug. Het was het besef dat ik geen manier had om hem zelf te vinden. Nu weet ik precies wat er is gerepareerd en waarom."*
-> — **Elise van Dongen, oprichter, TableTuned (Breda)**
+> *"Het engste gedeelte was niet de bug. Het was de realisatie dat ik geen manier had om het zelf te vinden. Nu weet ik precies wat er hersteld is en waarom."*
+> — **Elise van Dongen, Oprichter, TableTuned (Breda)**
 
-**Kosten en tijdlijn:** € 1.300 (RLS-audit en -reparatie, rate limiting, sleutelmigratie) — voltooid in 5 werkdagen.
+**Kosten & Doorlooptijd:** € 1.300 (RLS-audit en fix, rate limiting, migratie van sleutels) — afgerond in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoe weet ik of mijn door AI gebouwde app beveiligingskwetsbaarheden heeft?
-De meeste oprichters kunnen dat niet aan de interface alleen zien — kwetsbaarheden zoals blootgestelde sleutels of ontbrekende toegangscontroles zijn onzichtbaar bij normaal gebruik. Een gestructureerde audit tegen uw specifieke stack (database, authenticatieprovider, hosting) is de enige betrouwbare manier om te controleren.
+### Hoe weet ik of mijn met AI gebouwde app beveiligingslekken bevat?
+De meeste oprichters kunnen dit niet aan de interface alleen zien — kwetsbaarheden zoals blootgestelde sleutels of ontbrekende toegangscontroles zijn onzichtbaar bij normaal gebruik. Een gestructureerde audit tegen uw specifieke stack (database, authenticatieprovider, hosting) is de enige betrouwbare manier om dit te controleren.
 
-### Werkt LaunchStudio alleen met horeca- of boekingsapps?
-Nee, horeca- en boekingstools komen specifiek veel voor in de oprichtersscene van Breda, maar LaunchStudio beoordeelt door AI gegenereerde apps in elke categorie — SaaS, marktplaatsen, interne tools en meer.
+### Werkt LaunchStudio alleen met horeca- of boekingapps?
+Nee, horeca- en boekingstools zijn specifiek veelvoorkomend in de Bredase oprichtersscene, maar LaunchStudio beoordeelt met AI gegenereerde apps in elke categorie — SaaS, marktplaatsen, interne tools en meer.
 
-### Welke AI-tools kan LaunchStudio auditen?
-De technici van LaunchStudio, ondersteund door Manifera, auditen regelmatig apps gebouwd met Lovable, Bolt, Cursor en v0, die elk hun eigen specifieke standaard beveiligingsgedrag hebben.
+### Welke AI-tools weet LaunchStudio hoe ze moet auditeren?
+LaunchStudio's engineers, ondersteund door Manifera, auditeren regelmatig apps gebouwd met Lovable, Bolt, Cursor en v0, die elk hun eigen standaard beveilingsgedrag hebben dat het waard is te kennen.
 
 ### Is dit relevant als ik niet in Breda of Noord-Brabant gevestigd ben?
-Ja. De horeca- en creatieve-industriescene van Breda wordt hier als concreet voorbeeld gebruikt, maar dezelfde beveiligingsgaten komen voor in door AI gebouwde apps, ongeacht de locatie in Nederland.
+Ja. Breda's horeca- en creatieve-industriescene wordt hier als een concreet voorbeeld gebruikt, maar dezelfde beveiligingsgaten komen voor in met AI gebouwde apps ongeacht de locatie in heel Nederland.
 
 ### Wie leidt het engineeringteam achter deze beveiligingsaudits?
-LaunchStudio wordt geleid door Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, wiens achtergrond cybersecuritywerk omvat en een samenwerking met TNO aan Dark Web Monitor.
+LaunchStudio staat onder leiding van Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, wiens achtergrond werk in cybersecurity omvat waaronder een samenwerking met TNO rond Dark Web Monitor.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "How do I know if my AI-built app has security vulnerabilities?", "acceptedAnswer": { "@type": "Answer", "text": "Most founders can't tell from the interface alone. A structured audit against your specific database, auth provider, and hosting setup is the reliable way to check." } },
-    { "@type": "Question", "name": "Does LaunchStudio only work with hospitality or booking apps?", "acceptedAnswer": { "@type": "Answer", "text": "No, LaunchStudio reviews AI-generated apps across every category, including SaaS, marketplaces, and internal tools." } },
-    { "@type": "Question", "name": "What AI tools does LaunchStudio know how to audit?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio regularly audits apps built with Lovable, Bolt, Cursor, and v0." } },
-    { "@type": "Question", "name": "Is this relevant if I'm not based in Breda or Noord-Brabant?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the same security gaps show up in AI-built apps regardless of location across the Netherlands." } },
-    { "@type": "Question", "name": "Who leads the engineering team behind these security audits?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio is led by Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, with a background in cybersecurity including work with TNO." } }
+    { "@type": "Question", "name": "Hoe weet ik of mijn met AI gebouwde app beveiligingslekken bevat?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste oprichters kunnen dit niet aan de interface zien. Een gestructureerde audit van uw database, auth en hosting is de betrouwbare manier om te controleren." } },
+    { "@type": "Question", "name": "Werkt LaunchStudio alleen met horeca- of boekingapps?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, LaunchStudio beoordeelt met AI gegenereerde apps in elke categorie, waaronder SaaS, marktplaatsen en interne tools." } },
+    { "@type": "Question", "name": "Welke AI-tools weet LaunchStudio hoe ze moet auditeren?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio auditeert regelmatig apps die gebouwd zijn met Lovable, Bolt, Cursor en v0." } },
+    { "@type": "Question", "name": "Is dit relevant als ik niet in Breda of Noord-Brabant gevestigd ben?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, dezelfde beveiligingsgaten komen voor in met AI gebouwde apps ongeacht de locatie in heel Nederland." } },
+    { "@type": "Question", "name": "Wie leidt het engineeringteam achter deze beveiligingsaudits?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio staat onder leiding van Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, met een achtergrond in cybersecurity waaronder werk met TNO." } }
   ]
 }
 </script>

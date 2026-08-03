@@ -43,11 +43,11 @@ A team or solo founder without a background in resource-limit discipline doesn't
 
 ## Why Unbounded Export Endpoints Are a Specific, Common Version of This
 
-A feature like "export all my data as a spreadsheet" is a common, reasonable request that AI coding tools implement readily — the risk isn't in the feature's existence, it's in whether the underlying query has any limit on how much data a single export request can pull at once, particularly as a growing SaaS product's underlying dataset gets substantially larger than it was during initial testing.
+A feature like "export all my data as a spreadsheet" is a common, reasonable request that AI coding tools implement readily — the risk isn't in the feature's existence, it's in whether the underlying query has any limit on how much data a single export request can pull at once, particularly as a growing SaaS product's underlying dataset gets substantially larger than it was during initial testing. It's a pattern that repeats across nearly every SaaS category with a "download my data" or "generate a report" feature — the specific data being exported varies by industry, but the underlying architectural question, whether the query pulling that data has any ceiling on it, is identical regardless of whether the records being exported are farm equipment logs, customer invoices, or appointment histories.
 
 ## Why This Specific Gap Scales Directly With a Product's Own Success
 
-At launch, with a modest dataset, an unbounded export query returns quickly and uses modest resources regardless of whether a limit exists — there's nothing yet for the missing limit to actually strain. As a scaling SaaS product accumulates real data over months of real usage, that same unbounded query against a much larger dataset can consume dramatically more memory and processing time, potentially straining shared infrastructure or, if triggered repeatedly, functioning effectively as an unintentional denial-of-service against the product's own systems.
+At launch, with a modest dataset, an unbounded export query returns quickly and uses modest resources regardless of whether a limit exists — there's nothing yet for the missing limit to actually strain. As a scaling SaaS product accumulates real data over months of real usage, that same unbounded query against a much larger dataset can consume dramatically more memory and processing time, potentially straining shared infrastructure or, if triggered repeatedly, functioning effectively as an unintentional denial-of-service against the product's own systems. What makes this particularly disorienting for a founder is that nothing about the code itself changed between the safe period and the unsafe one — the exact same query that ran in under a second for months can, without a single line being edited, start timing out or degrading performance for every other customer sharing the same infrastructure, purely because the underlying dataset it's querying against finally grew large enough to matter.
 
 ## What Getting This Right Actually Costs
 
@@ -56,6 +56,20 @@ Adding sensible pagination and resource limits to data-heavy endpoints is a boun
 Manifera's scale-readiness engineering work is delivered through the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations run through the Amsterdam headquarters at Herengracht 420.
 
 [Start now — from prototype to a live product in weeks, not months](https://launchstudio.eu/en/#contact).
+
+## Other Resource-Limit Gaps That Follow the Same Pattern
+
+An unbounded export endpoint is one specific, visible version of a broader category of scale-triggered gap — code that behaves correctly and efficiently at a small scale and degrades, sometimes sharply, once real usage grows past whatever scale it was originally tested against.
+
+**Other common versions of the same underlying pattern:**
+
+- **N+1 query patterns** — code that fetches a list of records and then makes a separate database query for each individual record's related data, which runs acceptably fast against ten records and becomes dramatically slower against ten thousand, since the number of queries scales directly with the number of records rather than staying constant.
+- **Missing database indexes** — a query that searches or filters records without a supporting index performs a full table scan, fine on a small table and increasingly slow as the table grows, often without any obvious warning sign until performance has already noticeably degraded for users.
+- **Unbounded search or filter endpoints** — similar to exports, a search feature that returns "everything matching" without a result cap can return a manageable handful of results early on and an unmanageably large response once a dataset grows.
+- **Uncapped file upload sizes** — an upload feature with no maximum file size works fine when early users upload small files by habit, but a single unusually large upload later on can consume disproportionate storage or processing resources.
+- **Webhook or notification retry storms** — a notification system without sensible backoff and retry limits can, under the right failure conditions, generate a rapidly multiplying number of retry attempts as a product's user base and event volume grow.
+
+Each of these shares the same underlying cause as the export example: code that was correctly built for the described feature, tested successfully at the scale available during testing, and never revisited with a deliberate question about what happens once that scale changes by an order of magnitude.
 
 ## Real example
 
@@ -95,6 +109,10 @@ Very well — the underlying feature worked correctly at every point up until sc
 ### Is this something that should be checked before every product launch, or only once a product starts scaling meaningfully?
 
 Ideally checked before launch as a matter of general good practice, but realistically, for many founders working with limited early resources, prioritizing a scale-readiness review as usage genuinely starts to grow — rather than delaying it indefinitely — is a reasonable, practical middle ground.
+
+### What's a reasonable early warning sign that a founder is approaching this kind of scale-triggered gap?
+
+A noticeable, unexplained slowdown in a specific feature that correlates with one customer or one dataset growing unusually large is the clearest early signal — especially if the slowdown affects other, unrelated customers at the same time, which points toward a shared-resource strain rather than an issue isolated to one account. That correlation is worth investigating specifically rather than dismissing as a one-off blip, since it's often the first visible sign of exactly this kind of missing limit.
 
 <script type="application/ld+json">
 {
@@ -139,6 +157,14 @@ Ideally checked before launch as a matter of general good practice, but realisti
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ideally before launch, though prioritizing it as usage genuinely grows is a reasonable practical middle ground."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's an early warning sign of this kind of scale-triggered gap?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A slowdown in one feature tied to one large customer's data that also affects other unrelated customers at the same time."
       }
     }
   ]

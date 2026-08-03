@@ -53,6 +53,20 @@ A single fractional review session provides a snapshot and a set of judgment cal
 
 This works particularly well at specific decision points: before committing significant budget to a build direction, when evaluating a partnership or acquisition offer that includes technical due diligence, or simply when a founder has accumulated enough unanswered technical questions that a dedicated session to work through all of them at once is more efficient than piecemeal, ad hoc consultation.
 
+## How to Prepare for a Session So It Actually Delivers Judgment Calls, Not Just Generic Advice
+
+The value of a fractional technical review scales directly with how specifically a founder shows up — a vague "tell me if my app is okay" session produces considerably less useful output than one where the founder arrives with concrete questions and context. A few preparation steps make a real, practical difference.
+
+**Write down your actual accumulated questions beforehand, specifically.** Rather than trying to remember them in the moment, keep a running list as they occur — "should I use this specific library or that one," "is this customer's feature request reasonable for me to build myself," "does this architecture choice create problems later" — the more specific each question, the more specific and usable the answer.
+
+**Bring your actual codebase and recent decisions, not just a description of them.** A reviewer working from your real code and real recent choices can give grounded, applicable judgment calls; a reviewer working from a founder's verbal summary of their own codebase is working with a less reliable, secondhand picture, similar to the self-review-blind-spot risk covered elsewhere in this series applied to how a founder describes their own work.
+
+**Prioritize your list if the session is time-bounded.** A single session, typically an hour to a few hours depending on scope, can't exhaustively cover every open question a founder has accumulated over months — ranking your list by what's actually blocking a decision right now versus what's simply curiosity ensures the highest-value questions get addressed even if time runs out before the full list is exhausted.
+
+**Expect a follow-up written summary, not just verbal advice.** A well-run session should produce something you can refer back to afterward — the specific recommendations, not just a memory of a conversation — since judgment calls made verbally in a single sitting are easy to half-remember or misapply weeks later without a concrete record to check against.
+
+Pricing for this model typically scales with session length and codebase complexity rather than following a fixed per-hour rate — a straightforward single-product review sits toward the lower end of the range, while a review covering multiple integrated systems or a more complex technical history takes proportionally longer to review thoroughly and is priced accordingly.
+
 [LaunchStudio](https://launchstudio.eu/en/) offers exactly this kind of fractional technical review as part of its scoping and advisory conversations, providing the judgment-call layer a non-technical founder would otherwise lack entirely, backed by Manifera's engineering leadership experience across 160+ delivered projects.
 
 [Get the technical judgment calls a cofounder would normally make](https://launchstudio.eu/en/#contact) — not just a checklist, a perspective you can actually act on.

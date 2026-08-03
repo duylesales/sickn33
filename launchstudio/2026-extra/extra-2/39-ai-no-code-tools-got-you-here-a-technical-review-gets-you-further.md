@@ -35,7 +35,7 @@ Nadia built her entire tutoring marketplace without writing a single line of cod
 
 ## Why Private Messaging Features Are Trickier Than They Look
 
-A messaging feature seems conceptually simple — two people exchange messages, and only those two people can see them. Implementing that correctly requires every single message-retrieval request to explicitly verify the requester is actually one of the two participants in that specific conversation, a check that's easy to describe but easy to build incompletely without someone specifically testing for its absence.
+A messaging feature seems conceptually simple — two people exchange messages, and only those two people can see them. Implementing that correctly requires every single message-retrieval request to explicitly verify the requester is actually one of the two participants in that specific conversation, a check that's easy to describe but easy to build incompletely without someone specifically testing for its absence. The sending side of a messaging feature is usually built and tested carefully, since a message that goes to the wrong recipient is an obvious, visible bug; the retrieval side, by contrast, can silently lack the equivalent check while still appearing to work perfectly for every participant who's supposed to see a given conversation.
 
 ## Why This Specific Gap Is Common in Quickly Assembled Messaging Features
 
@@ -47,7 +47,7 @@ Testing your own tutoring marketplace's messaging by having two test accounts me
 
 ## Why Messaging Gaps Carry a Particular Kind of Trust Risk
 
-Beyond the general severity of any data-isolation gap, a messaging feature specifically involves conversations people reasonably expect to be private between named participants — parents discussing their children's tutoring needs, personal scheduling details — meaning exposure here damages user trust in a particularly direct, personal way compared to a more abstract data leak elsewhere in the same product.
+Beyond the general severity of any data-isolation gap, a messaging feature specifically involves conversations people reasonably expect to be private between named participants — parents discussing their children's tutoring needs, personal scheduling details — meaning exposure here damages user trust in a particularly direct, personal way compared to a more abstract data leak elsewhere in the same product. A leaked spreadsheet row feels like a system failure; a leaked private conversation feels personal, and users tend to respond to the two very differently even when the underlying technical severity is comparable.
 
 ## What Fixing This Requires
 
@@ -56,6 +56,17 @@ A proper fix adds an explicit participant check to every message and conversatio
 Manifera's messaging and access-control audits are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Share a link to your prototype — we'll look it over for free](https://launchstudio.eu/en/#contact).
+
+## Other Shared-Resource Features That Need the Same Ownership Check
+
+Private messaging is the clearest example of a shared-resource feature, but the same underlying principle — explicitly verifying a requester's legitimate relationship to a resource before returning it, rather than trusting that a valid-looking ID implies authorized access — applies just as directly to several other common features:
+
+- **Group bookings and shared calendars** — a scheduling feature involving multiple participants (a family booking several tutoring sessions, or a group class) needs the same per-participant verification as a two-person conversation, just applied across a larger, variable set of legitimate viewers.
+- **Shared documents and file uploads** — a homework file, a lesson plan, or an uploaded document tied to a specific tutor-student pairing needs the same check before being served to whoever requests it by ID or link, not just whoever is logged in.
+- **Comments and reviews tied to a specific relationship** — a private note or review visible only to the two parties involved in a specific booking carries the identical risk if the retrieval logic doesn't verify the requester is one of those two parties.
+- **Notification and activity feeds** — a feed showing "recent activity" scoped to a specific family or tutor pairing needs the same participant check as the underlying messages or bookings it's summarizing, since a feed is often built as a secondary view over the same data.
+
+The common thread across all four is that each feature was very likely built and tested the same way LesMaatje's messaging was: correctly for its intended, cooperative use, with the specific adversarial question — "can someone who isn't a legitimate participant retrieve this by ID?" — never naturally arising during honest testing. A review that finds and fixes the gap in one shared-resource feature has good reason to check every other feature built on the same underlying pattern, rather than treating the fix as complete after addressing the one place it happened to surface first.
 
 ## Real example
 
@@ -95,6 +106,10 @@ Yes, directly — secure multi-party access control is exactly the kind of rigor
 ### If a founder used a well-known no-code messaging plugin rather than building the feature from scratch, would this risk still be possible?
 
 It depends on the specific plugin and how it's configured — established plugins often include built-in access control, but incorrect configuration or gaps in how the plugin was integrated into the broader application can still reproduce the same underlying risk, which is why a review checks the actual behavior rather than assuming a plugin's reputation guarantees correct configuration.
+
+### If a review confirms messaging is properly secured, does that mean the rest of the product's shared features are safe too?
+
+Not automatically — each shared-resource feature (bookings, shared documents, reviews, activity feeds) needs its own participant check confirmed independently, since a fix applied to messaging doesn't propagate to a separately built calendar or file-sharing feature. A thorough review treats messaging as one instance of a broader pattern worth checking everywhere it appears, not as a single fix that covers the whole product.
 
 <script type="application/ld+json">
 {
@@ -139,6 +154,14 @@ It depends on the specific plugin and how it's configured — established plugin
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Not necessarily — incorrect configuration or integration gaps can reproduce the same risk regardless of the plugin's reputation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If messaging is secured, are other shared features automatically safe too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically — bookings, shared documents, and activity feeds each need their own participant check confirmed independently."
       }
     }
   ]

@@ -57,6 +57,22 @@ If your app uses push notifications, this introduces its own dependency requirin
 
 Testing exclusively on your own development device or simulator, similar to the general "it works on my machine" gap covered elsewhere in this series, misses genuine device and OS-version fragmentation across real users' actual phones — older devices with less processing power, different screen sizes, and different OS versions than whatever you happened to develop and test on, all of which can surface behavior your own testing never encountered.
 
+## A Pre-Submission Checklist Before You Ever Hit "Submit for Review"
+
+Given how costly an app store rejection cycle can be to your launch timeline, a specific checklist to work through before your first submission attempt catches most of the gaps this article covers in a single, deliberate pass rather than discovering them through a rejection notice:
+
+**Data handling disclosure matches actual behavior.** Whatever your app's store listing claims about data collection and storage needs to accurately reflect what the code actually does — a mismatch here, even an unintentional one from a founder who genuinely didn't know what their AI-generated code was doing under the hood, is a common and entirely avoidable rejection reason.
+
+**Locally cached sensitive data is encrypted, not just stored.** Specifically check, rather than assume, whether any data your app caches on-device for offline access uses the platform's secure storage APIs — this is precisely the gap that caused Melissa's rejection below, and it's invisible in every normal functional test.
+
+**No API keys or secrets are embedded in the compiled binary.** Search your app's bundled code and configuration for anything that looks like a credential before submission, since this is extractable by anyone who decompiles your distributed app, not just a repository-access risk.
+
+**Offline behavior has been deliberately tested, not just assumed.** Enable airplane mode and walk through your critical flows, confirming your app fails gracefully rather than confusingly when there's genuinely no connectivity at all.
+
+**Permission requests are scoped to what you actually use.** Requesting device permissions (camera, location, contacts) beyond what your app's actual functionality requires is both a common review flag and, independent of review, a real trust signal to cautious users deciding whether to grant access.
+
+Working through this list before your first submission, rather than treating app store review as the first real check, converts several potential rejection cycles — each costing real days against your launch timeline — into a single, deliberate pre-submission pass.
+
 ## What This Means for Mobile-Specific Prioritization
 
 The general production-readiness checklist applies in full, with app store compliance requiring specific attention given its gate-keeping nature, client-side data storage warranting the same scrutiny given to server-side data handling, and offline behavior requiring deliberate, dedicated testing beyond what a connectivity-assuming development process naturally covers.

@@ -32,13 +32,34 @@ Enschede's tech scene, anchored by University of Twente spinouts and the broader
 
 Ask any experienced engineer who reviews AI-generated codebases for a living, and they'll describe the same recurring pattern: the frontend is polished, the demo is convincing, and the backend was essentially assembled by the AI tool filling in defaults nobody double-checked. Supabase tables with open read/write policies. Stripe integrated in test mode with no webhook verification. A `.env` file that somehow made it into the deployed build.
 
+In practice, this pattern breaks down into a short, recognizable list that repeats across nearly every AI-built prototype we review:
+
+- Supabase or Postgres tables with row-level security either disabled entirely or scoped incorrectly, so an authenticated user can query records that aren't theirs
+- Stripe or payment integrations still pointed at test-mode keys, with no confirmation that live-mode webhook signatures are actually being verified
+- `.env` files or raw API keys accidentally bundled into the deployed frontend, readable by anyone who opens browser dev tools
+- No rate limiting on public-facing API routes, leaving signup forms and AI-powered features open to abuse, scraping, or an unexpectedly large bill
+
 None of this is a reflection on the founder's judgment — it's a reflection on what these tools optimize for, which is getting you to a working demo, not a secure production system. LaunchStudio is powered by Manifera, a software development company with over 11 years of production engineering experience, and our team's day-to-day work is essentially translating "it works on my screen" into "it works when a thousand strangers hit it at once."
 
 Manifera's engineers — more than 120 of them — have shipped 160+ projects for enterprise clients like Vodafone and TNO, and the review process we run on an Enschede-built prototype isn't fundamentally different from the review we'd run on an enterprise codebase. Same checklist, same rigor, just scoped to what a founder actually needs before their first real launch. If you want to see what that looks like in practice, our [process page](https://launchstudio.eu/en/#process) walks through it step by step.
 
 ## Why this matters more in a university-adjacent city like Enschede
 
-Overijssel's tech founders skew younger and more technically literate than the national average, which means they often assume "I understand code" is the same as "I understand production security." It isn't. Reading and modifying AI-generated React components is a genuinely different skill from reasoning about authentication token expiry, database indexing under load, or PCI compliance for payment flows. Manifera's team, headquartered out of Amsterdam's Herengracht 420 with engineering depth reaching all the way to our development hub in Ho Chi Minh City, exists specifically to bridge that gap — we don't touch your frontend, we make everything behind it hold up. You can see the breadth of that engineering background on [Manifera's custom software development page](https://www.manifera.com/services/custom-software-development/).
+Overijssel's tech founders skew younger and more technically literate than the national average, which means they often assume "I understand code" is the same as "I understand production security." It isn't. Reading and modifying AI-generated React components is a genuinely different skill from reasoning about authentication token expiry, database indexing under load, or PCI compliance for payment flows. This is also a city where reputations travel fast in a fairly small ecosystem — the coworking floors at Kennispark and the Saxion-adjacent startup scene mean a public security incident gets noticed by exactly the peer network a founder is hoping will refer their next customer. Manifera's team, headquartered out of Amsterdam's Herengracht 420 with engineering depth reaching all the way to our development hub in Ho Chi Minh City, exists specifically to bridge that gap — we don't touch your frontend, we make everything behind it hold up. You can see the breadth of that engineering background on [Manifera's custom software development page](https://www.manifera.com/services/custom-software-development/).
+
+## How to Tell a Real Production Review From a Surface-Level One
+
+Enschede founders coming out of Kennispark or the University of Twente's spin-off programs are increasingly pitched "AI code review" services, and it's worth knowing what separates a review that actually catches production risk from one that reads like a generic checklist run through a linter.
+
+**Ask what the reviewer actually tests, not just reads.** A static code read catches obvious issues like hardcoded secrets, but it won't catch a row-level security policy that looks correct in the Supabase dashboard but fails under a specific query pattern. A real review includes actively querying the database as an unauthorized user to confirm access controls actually hold, not just that they exist on paper.
+
+**Ask for a written, itemized list of findings, not a verbal summary.** If a reviewer can't hand you a specific list of what they checked and what they found — pass or fail on each item — you have no way to verify the review was thorough, and no record to compare against once fixes are applied.
+
+**Ask whether the reviewer has operated production systems at scale, not just reviewed prototypes.** Reviewing AI-generated code well requires having personally been on call for a production outage at some point. Someone who has only ever reviewed prototypes, without operational experience, tends to miss the failure modes that only show up under real traffic.
+
+**Ask what happens after the review — a report, or a fix.** A report listing twelve vulnerabilities handed back to a non-technical founder isn't much more useful than no review at all. The founders who actually launch safely are the ones who get the fixes applied, not just diagnosed.
+
+This is the standard we hold ourselves to on every Enschede-based review: active testing rather than passive reading, an itemized findings list, engineers who've operated production systems for enterprise clients, and — critically — the fix included, not just the diagnosis. It's the difference between a report you file away and a product you can actually launch.
 
 ## Real example
 
@@ -74,6 +95,9 @@ LaunchStudio is backed by Manifera, a company with 120+ engineers and 160+ deliv
 ### How much does a launch-readiness review cost?
 Projects typically range from €800 to €7,500 depending on scope, delivered in 1–3 weeks. You can get a specific estimate for your project using our project calculator.
 
+### How do I know if a code review I'm being offered is actually thorough?
+Ask whether the reviewer actively tests access controls (not just reads the code), whether they provide an itemized findings list, and whether fixes are included or just diagnosed. A review that can't answer those three questions clearly is likely a surface-level pass, not a production-readiness check.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,7 +107,8 @@ Projects typically range from €800 to €7,500 depending on scope, delivered i
     { "@type": "Question", "name": "What exactly do AI software developers at LaunchStudio fix?", "acceptedAnswer": { "@type": "Answer", "text": "Authentication, database security, exposed API keys, payment integration, hosting, and performance under real traffic — without rebuilding your frontend." } },
     { "@type": "Question", "name": "Does LaunchStudio work with founders outside Enschede?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio serves founders across the Netherlands and Benelux from its Amsterdam office, with engineering support from Manifera internationally." } },
     { "@type": "Question", "name": "How is LaunchStudio different from hiring a local freelancer?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio is backed by Manifera, a company with 120+ engineers and 160+ delivered enterprise projects, offering fixed-scope pricing and enterprise-grade review." } },
-    { "@type": "Question", "name": "How much does a launch-readiness review cost?", "acceptedAnswer": { "@type": "Answer", "text": "Projects typically range from €800 to €7,500, delivered in 1 to 3 weeks, depending on scope." } }
+    { "@type": "Question", "name": "How much does a launch-readiness review cost?", "acceptedAnswer": { "@type": "Answer", "text": "Projects typically range from €800 to €7,500, delivered in 1 to 3 weeks, depending on scope." } },
+    { "@type": "Question", "name": "How do I know if a code review I'm being offered is actually thorough?", "acceptedAnswer": { "@type": "Answer", "text": "Ask whether the reviewer actively tests access controls, provides an itemized findings list, and includes fixes rather than just a diagnosis." } }
   ]
 }
 </script>

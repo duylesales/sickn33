@@ -49,6 +49,22 @@ Testing your own account, with your own data, never triggers this failure mode �
 
 It's tempting to treat this as a low-priority concern while a product only has a handful of trusted early users. In practice, the risk compounds directly with growth — the more accounts sharing the same unguarded backend, the more surface area exists for exactly this kind of accidental or deliberate cross-account exposure, meaning the ideal time to close this gap is before the second paying customer signs up, not after the fifth one notices something's wrong.
 
+## How to Test for Multi-Tenant Isolation Yourself, Before a Second Customer Does
+
+Multi-tenant isolation is one of the few gaps in this category a non-technical founder can meaningfully test alone, because the test itself doesn't require reading code — it requires two accounts and a willingness to try requests your product was never designed to expect.
+
+**A simple test you can run this week:**
+
+1. **Create two separate test accounts** under two different email addresses, and put clearly distinct, obviously fake data into each one — a document, a customer record, an order, whatever your product's core object is.
+2. **Log in as account A and note the exact URL or record ID** shown when you view your own data (`/documents/482`, for example).
+3. **Log out, log in as account B, and manually change the ID** in that same URL to the number you noted from account A.
+4. **Watch what happens.** A properly isolated application returns an error or a blank "not found" page. An application relying only on the UI to hide other accounts' data will often return account A's actual record to account B's logged-in session.
+5. **Repeat the same test through the network tab, not just the URL bar** — open dev tools, find the API request your dashboard makes to load a record, and manually change the ID parameter in that raw request. Some applications correctly block the URL-bar version of this test while still failing it at the raw API level, because the two paths are implemented differently.
+
+If you're using a managed backend like Supabase or Firebase, there's a second, more specific check worth running: confirm that Row-Level Security (RLS) policies are actually enabled and enforced on every table containing customer data, not just the ones you remember configuring. It's common for an AI coding tool to create a table, get the happy-path query working, and never circle back to turn RLS on — the table works perfectly in every test because the founder is always testing as themselves, logged into their own account, which is exactly the scenario that never exposes a missing policy.
+
+None of this replaces a full review — a five-step manual test catches the most obvious version of the problem, not the subtler cases involving background jobs, exports, or third-party integrations that also touch customer data. But running it yourself, today, costs nothing and tells you immediately whether this is an urgent problem or a lower-priority one.
+
 ## Closing the Gap Without Touching What You Built
 
 Fixing this doesn't require re-architecting your data model — it requires adding explicit ownership checks at the query layer, so every request is verified against the authenticated user's own scope before any data returns, regardless of whether that request came through the intended UI flow or not. [LaunchStudio](https://launchstudio.eu/en/) closes exactly this kind of gap as a standard part of its Launch Ready package, backed by Manifera's 11+ years building multi-tenant B2B systems for enterprise clients.
@@ -96,6 +112,10 @@ The specific implementation differs, but the underlying risk doesn't — Supabas
 
 By just describing the fear in plain language — "could one customer somehow see another customer's data" is exactly the kind of question the 15-minute intro call is built to translate into a specific, scoped technical review, without requiring the founder to already know what to call it.
 
+### Can I run the two-account isolation test myself without any technical help?
+
+Yes — creating two test accounts and checking whether one can reach the other's data by changing a URL or request ID requires no coding at all. A full review still adds value beyond that manual test, since it also checks paths a founder's own test won't reach, like background jobs, data exports, and third-party integrations that touch the same customer data.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,6 +159,14 @@ By just describing the fear in plain language — "could one customer somehow se
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "By describing the plain-language fear; the intro call is built to translate that into a specific, scoped technical review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run a two-account isolation test myself without technical help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, no coding required — though a full review also checks background jobs, exports, and integrations a manual test won't reach."
       }
     }
   ]

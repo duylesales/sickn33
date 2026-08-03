@@ -49,6 +49,8 @@ An unrestricted CORS policy means any website on the internet can make requests 
 
 Testing your own frontend against your own API, from your own known domain, never exercises the open-to-everyone part of the policy at all — everything behaves identically whether the policy is wide open or properly restricted, because your own legitimate frontend is always going to be an allowed origin either way. The gap is only visible from the perspective of a request that shouldn't be allowed, which nobody generates by accident during ordinary building.
 
+This is what makes an open CORS policy uniquely hard to catch through ordinary use: it isn't a bug in the traditional sense, where something behaves incorrectly for the person testing it. Every single test a founder runs — every page load, every API call, every feature check — passes exactly as expected, because the founder's own frontend was always going to be treated as an allowed origin under either configuration. The only way the difference becomes visible is by deliberately constructing a request that shouldn't be allowed and confirming it gets rejected, which is a fundamentally different kind of test than anything ordinary feature development produces.
+
 ## Why "Fast Now" and "Locked Down Later" Is a Reasonable Trade, If Deliberate
 
 There's nothing wrong with an open CORS policy during active early development — the mistake is only in treating that early-stage convenience as a permanent, unreviewed default rather than a known trade-off with a planned second pass before real user data is involved. [LaunchStudio](https://launchstudio.eu/en/) performs exactly this kind of hardening pass as standard practice before a product goes live, backed by Manifera's 11+ years configuring production API security for clients including Vodafone.
@@ -56,6 +58,39 @@ There's nothing wrong with an open CORS policy during active early development �
 Manifera's infrastructure and API hardening work is delivered from the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420 for client-facing scoping.
 
 [Get your payment flow tested against real-world failure conditions, not just the happy path](https://launchstudio.eu/en/#calculator).
+
+## How to Audit and Harden Your Own CORS Configuration
+
+Checking your current CORS setup doesn't require a security consultant — most frameworks expose the policy in one identifiable place, and testing it properly just requires knowing what to look for.
+
+**Find where your policy is actually defined**
+
+- Express/Node apps: usually a `cors()` middleware call, sometimes configured with `origin: '*'` or `origin: true` — both effectively wide open
+- Frameworks with built-in CORS handling (Django, Rails, FastAPI): typically a settings file listing allowed origins, or lack thereof
+- Managed platforms (Supabase, Firebase): CORS is sometimes configured through the platform's dashboard rather than application code, which is easy to overlook entirely since it isn't sitting in the repository
+
+**Build your allow-list deliberately, not by trial and error**
+
+- Your production frontend domain, exactly as it appears in the browser address bar, including or excluding the `www` prefix consistently
+- Your staging or preview environment domain, if you actively test against a deployed staging build
+- Any verified partner or integration domain that legitimately calls your API from a browser context
+- Explicitly exclude everything else, including `localhost`, once you've moved past active local development
+
+**Test from a disallowed origin, not just an allowed one**
+
+The only real test of a CORS policy is confirming a request from an origin that should be rejected actually gets rejected — testing only from your own allowed frontend, as covered earlier, proves nothing either way. A quick way to check: open your browser's developer console on any unrelated website and attempt a fetch request against your API's endpoint; a properly configured policy blocks it, a misconfigured one doesn't.
+
+**Watch for this specific adjacent misconfiguration**
+
+A CORS policy that combines `origin: '*'` with `credentials: true` (allowing cookies or authentication headers to be sent cross-origin) is a stricter, more dangerous combination than an open origin alone — most browsers actually block this exact combination by default, but some frameworks silently reflect whatever origin the requester sent instead of truly rejecting it, which reintroduces the same risk through a different mechanism. If your app uses cookie-based sessions, this specific interaction is worth checking explicitly rather than assuming an open origin is the only variable that matters.
+
+**Re-verify after adding any new frontend, subdomain, or partner integration**
+
+Every new subdomain (a marketing site, a docs site, an admin panel on its own subdomain) is a new origin that either needs to be explicitly added to the allow-list or explicitly should not have access — treating this as a checklist item during each new integration, rather than a one-time setup task, is what keeps the policy accurate as the product grows.
+
+**Document the allow-list somewhere a future contributor will actually find it**
+
+A CORS allow-list buried inside a middleware configuration file, with no accompanying comment explaining why each origin is there, is easy for a future developer to either break by accident or extend carelessly without understanding the original reasoning. A short comment next to the configuration — noting what each entry is for and who added it — turns a silent security control into something the next person touching the code can maintain correctly instead of guessing at.
 
 ## Real example
 

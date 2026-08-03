@@ -47,7 +47,7 @@ An order moves through states — placed, payment confirmed, fulfilled, shipped,
 
 ## Tax and Regulatory Calculation: A Correctness Requirement, Not Just a Feature
 
-Sales tax or VAT calculation, particularly for founders selling across multiple EU countries with different rates, is a correctness requirement with real regulatory and financial consequences if implemented incorrectly — an area where AI-generated logic needs specific verification against your actual applicable tax rules, not just confirmation that a plausible-looking number appears at checkout.
+Sales tax or VAT calculation, particularly for founders selling across multiple EU countries with different rates, is a correctness requirement with real regulatory and financial consequences if implemented incorrectly — an area where AI-generated logic needs specific verification against your actual applicable tax rules, not just confirmation that a plausible-looking number appears at checkout. For EU-based founders specifically, this includes verifying whether the EU's distance-selling VAT thresholds actually apply to your sales volume, since crossing them changes which country's VAT rate you're legally required to charge — a rule an AI coding tool has no inherent way to know applies to your specific business unless it's explicitly told to account for it.
 
 ## Why E-Commerce-Specific Load Patterns Matter
 
@@ -56,6 +56,19 @@ E-commerce traffic is frequently spiky rather than steady — a marketing campai
 ## What This Means for Prioritization
 
 For an e-commerce-specific prototype, the general production-readiness checklist covered elsewhere in this series applies in full, with inventory concurrency, payment reconciliation, and order state management warranting specifically elevated priority relative to a typical SaaS product, given how directly and immediately failures in these areas translate into lost money and damaged customer trust.
+
+## Fraud and Chargeback Exposure: A Cost Category Beyond Basic Payment Handling
+
+The payment reconciliation gap covered above has a specific e-commerce-flavored counterpart worth naming directly: fraud and chargeback exposure, a cost category that a general SaaS product carries in a much lighter form than a store actually shipping physical goods against a charge.
+
+**Why this hits e-commerce harder than SaaS:** a SaaS subscription chargeback typically costs you the subscription revenue and a chargeback fee. An e-commerce chargeback on an order that's already shipped costs you the product's value, the shipping cost, the chargeback fee, and — if your chargeback rate crosses a threshold set by your payment processor — can put your entire merchant account at risk of suspension, a business-ending consequence a SaaS founder rarely has to consider at all.
+
+**What AI-generated checkout logic typically doesn't include by default:**
+- Basic fraud signals — mismatched billing and shipping addresses, unusually large first-time orders, multiple rapid orders from the same payment method with different shipping addresses — none of which a prompt describing "build a checkout flow" naturally produces without being specifically asked for.
+- A defined process for what happens when a chargeback notification arrives via webhook, distinct from general webhook handling, since a chargeback specifically needs to trigger inventory and fulfillment status updates, not just a payment status change.
+- Order holds or manual review triggers for orders matching fraud signals, rather than every order flowing straight through to automatic fulfillment regardless of risk indicators.
+
+None of this requires building sophisticated fraud detection from scratch — most payment processors offer built-in fraud-signal scoring that AI-generated integration code frequently doesn't actually wire up or act on, leaving a genuinely useful signal sitting unused. Verifying whether your specific payment processor's fraud tools are actually connected and acted upon, not just available, is a concrete, checkable step worth confirming before your first real sale event.
 
 [LaunchStudio](https://launchstudio.eu/en/) hardens e-commerce-specific prototypes with particular attention to inventory concurrency, payment reconciliation, and order state management, backed by Manifera's engineering experience across multiple production e-commerce and marketplace applications.
 
@@ -102,6 +115,10 @@ Yes — deliberately simulating multiple simultaneous purchase attempts against 
 
 Concurrency and performance-under-load issues, which can remain invisible at steady, modest traffic, are specifically more likely to manifest during the sharp spikes e-commerce marketing efforts often deliberately create, making these categories warrant more proactive testing relative to their priority for a product with more consistently distributed usage.
 
+### Does fraud-signal scoring from a payment processor need to be configured manually, or does it work automatically once the processor is connected?
+
+It typically needs to be explicitly wired into your checkout and order logic — most processors calculate a risk score automatically once payment details are submitted, but AI-generated integration code frequently only reads the payment success or failure status and ignores the accompanying risk signal entirely, meaning the scoring exists but nothing in your application actually acts on it without deliberate implementation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -145,6 +162,14 @@ Concurrency and performance-under-load issues, which can remain invisible at ste
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Concurrency and performance issues invisible at steady traffic are more likely to manifest during the sharp spikes e-commerce marketing creates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does fraud-signal scoring from a payment processor work automatically once connected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typically needs explicit implementation — the risk score is calculated automatically, but AI-generated code often ignores it and reads only payment status."
       }
     }
   ]

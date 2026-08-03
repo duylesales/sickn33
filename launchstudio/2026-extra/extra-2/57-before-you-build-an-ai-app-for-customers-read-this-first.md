@@ -43,7 +43,7 @@ Before you build an AI app for customers who'll actually pay real money and expe
 
 ## Myth: This Only Matters for High-Volume, Enterprise-Scale Systems
 
-**Reality:** webhook redelivery happens based on the payment provider's own reliability logic, not based on how large or small the receiving business is — a small, early-stage marketplace processing a handful of orders per day is just as likely, proportionally, to experience a redelivered notification as a much larger operation, since the underlying cause is unrelated to the receiving system's own scale.
+**Reality:** webhook redelivery happens based on the payment provider's own reliability logic, not based on how large or small the receiving business is — a small, early-stage marketplace processing a handful of orders per day is just as likely, proportionally, to experience a redelivered notification as a much larger operation, since the underlying cause is unrelated to the receiving system's own scale. If anything, a small operation can be more exposed in practice, not less — a larger, more established team is more likely to have a dedicated engineer who's encountered webhook redelivery before and built for it as a matter of course, while a solo founder relying entirely on an AI coding tool's default implementation has no equivalent institutional memory to draw on, and no particular reason to have specifically asked for idempotent handling by name.
 
 ## Myth: Adding Duplicate-Event Protection Is a Complex, Advanced Engineering Task
 
@@ -51,7 +51,7 @@ Before you build an AI app for customers who'll actually pay real money and expe
 
 ## Myth: This Kind of Bug Would Be Obvious and Get Caught Quickly
 
-**Reality:** a duplicate fulfillment triggered by a redelivered webhook can look, from the outside, like an unrelated shipping or logistics mistake — mispacked, double-scanned, whatever explanation seems most plausible in the moment — meaning the true root cause can go unidentified for a surprisingly long time unless someone specifically investigates the underlying event-handling logic.
+**Reality:** a duplicate fulfillment triggered by a redelivered webhook can look, from the outside, like an unrelated shipping or logistics mistake — mispacked, double-scanned, whatever explanation seems most plausible in the moment — meaning the true root cause can go unidentified for a surprisingly long time unless someone specifically investigates the underlying event-handling logic. A founder fielding an occasional "I got two of the same order" complaint has every reason to assume, correctly in most other contexts, that it's a one-off packing mistake — sellers do occasionally duplicate a shipment by hand, completely independent of any system issue. That plausible, mundane explanation is exactly what lets the real, systemic cause hide in plain sight, sometimes for months, until enough individually-explainable incidents accumulate that someone finally asks whether they're actually connected.
 
 ## Closing This Gap Properly
 
@@ -60,6 +60,33 @@ A proper fix implements idempotent event handling — recognizing and safely ign
 Manifera's webhook and integration reliability engineering is delivered through the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Send your prototype's link — we'll flag what's worth checking, free](https://launchstudio.eu/en/#contact).
+
+## How to Test Your Own Webhook Handling for This Gap
+
+A founder with some technical comfort can actually test for this specific gap without waiting for a provider to redeliver a notification naturally, which might not happen for weeks.
+
+**Find your webhook endpoint's logs**
+
+Most payment and service providers offer a dashboard showing every webhook notification they've sent, including the ability to manually resend a specific past event — look for a "resend" or "redeliver" button next to a past webhook delivery in your provider's dashboard.
+
+**Manually trigger a redelivery of a notification you've already processed**
+
+Pick a webhook event your system already handled correctly once — an order that was already fulfilled — and use your provider's dashboard to manually resend that exact same event a second time.
+
+**Watch what actually happens**
+
+1. **Correct, idempotent handling** — your system recognizes the event was already processed and does nothing further; no duplicate fulfillment, no duplicate charge, no duplicate email
+2. **The gap this article describes** — your system treats the resent notification as brand new and repeats whatever action the original notification triggered, exactly as happened with HandwerkMarkt's duplicate shipping instruction
+
+**Check every webhook-driven process, not just payments**
+
+If your product has more than one kind of incoming webhook — a shipping status update, a subscription renewal notification, a third-party integration callback — repeat this same manual redelivery test for each one individually, since idempotent handling implemented for payments doesn't automatically extend to a completely separate webhook handler built at a different time, possibly by a different prompt to your AI coding tool entirely.
+
+**What "correct" actually requires under the hood**
+
+Passing this test requires your system to record a unique identifier for every event it processes — most providers include one in each webhook payload specifically for this purpose — and check that identifier against previously processed events before taking any action. If your own code doesn't currently do this check, the manual redelivery test above will make that obvious immediately, well before a real customer ever notices a duplicate.
+
+Running this test across every webhook handler in your product takes perhaps thirty minutes and requires no special tooling beyond what your provider's own dashboard already offers — making it one of the highest-value, lowest-effort checks a technical founder can run entirely on their own before ever needing a full review.
 
 ## Real example
 

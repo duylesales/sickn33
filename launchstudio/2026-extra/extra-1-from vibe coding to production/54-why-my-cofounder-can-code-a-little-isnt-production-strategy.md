@@ -53,6 +53,18 @@ Founding teams sometimes reason that their partially-technical cofounder will si
 
 A useful, concrete test: can your technically-capable cofounder specifically describe, in detail, how they'd verify server-side authorization independently of the frontend, or how they'd test for a race condition in a booking flow? If the honest answer is "I'd need to research that" or "I'm not sure," that's genuinely useful information — it doesn't mean your cofounder isn't valuable, it means this specific, narrower skill set isn't yet part of what they bring to the team, and treating it as covered anyway is the actual risk.
 
+## A Practical Way to Divide Responsibility Between Your Cofounder and External Verification
+
+Rather than treating this as an either-or choice — either your cofounder handles everything technical, or you bring in outside help for everything — a more workable split assigns each side to what it's actually well-suited for, based on the distinction this article has drawn throughout.
+
+**Your cofounder's coding background is typically well-suited to:** building and iterating on features, working with an AI coding tool to extend the product, understanding the codebase well enough to describe how something works, and doing the initial pass on bugs a user reports.
+
+**Adversarial verification is typically better suited to an external party specifically because of the self-review blind spot covered throughout this series:** confirming authorization checks actually happen server-side and can't be bypassed by a modified request, testing for race conditions in flows where timing matters, reviewing dependencies for known vulnerabilities, and verifying secrets management end to end — the kind of testing that specifically requires trying to break something the person who built it assumed would work.
+
+**A middle category worth naming explicitly:** general code quality and maintainability review, which a sufficiently experienced technical cofounder can sometimes handle internally, but which still benefits from an outside perspective periodically, since even a genuinely skilled cofounder develops blind spots around their own team's accumulated conventions over time.
+
+This division isn't a permanent verdict on your cofounder's capability — it's a starting allocation based on which category of work benefits most from adversarial, external perspective specifically, versus which category benefits from deep, ongoing familiarity with your own product. A team that revisits this split periodically, rather than assuming the original division holds forever as the product and team both grow, keeps the allocation honest as circumstances change.
+
 ## What This Means Practically
 
 Recognizing this gap honestly doesn't mean your technical cofounder's skills aren't valuable — it means production-readiness verification, specifically, is a distinct additional need worth addressing directly, either through your cofounder developing this specific expertise deliberately, or through bringing in external verification for exactly this narrower category, rather than assuming general coding ability already covers it.

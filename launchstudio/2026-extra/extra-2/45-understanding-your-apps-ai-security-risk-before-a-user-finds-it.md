@@ -31,11 +31,11 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Some of the most consequential AI security risk in a founder-built product doesn't live in the application code a founder directly reads and reasons about at all — it lives in a small, auxiliary cloud function, generated to handle one specific background task, that ends up reachable by anyone who finds its URL, with nobody in the main application flow ever routing through or reviewing it directly.
+Some of the most consequential AI security risk in a founder-built product doesn't live in the application code a founder directly reads and reasons about at all — it lives in a small, auxiliary cloud function, generated to handle one specific background task, that ends up reachable by anyone who finds its URL, with nobody in the main application flow ever routing through or reviewing it directly. It's the digital equivalent of a service entrance nobody remembered to lock, precisely because nobody thought of it as a door at all.
 
 ## Why Serverless Functions Are a Common Blind Spot
 
-Modern app-building workflows frequently rely on small, independent cloud or serverless functions to handle specific background tasks — processing a file, sending a scheduled notification, generating a report — that exist somewhat separately from a product's main application code. Because these functions often get created and deployed relatively quickly to solve one specific, immediate need, they don't always go through the same scrutiny as the primary application a founder is actively building and testing feature by feature.
+Modern app-building workflows frequently rely on small, independent cloud or serverless functions to handle specific background tasks — processing a file, sending a scheduled notification, generating a report — that exist somewhat separately from a product's main application code. Because these functions often get created and deployed relatively quickly to solve one specific, immediate need, they don't always go through the same scrutiny as the primary application a founder is actively building and testing feature by feature. A product can easily accumulate a dozen or more of these small functions over months of development, each added to solve one narrow problem at the time, with no single moment where anyone steps back to inventory the full, accumulated list.
 
 ## Why Authentication Gets Skipped Specifically on These Auxiliary Functions
 
@@ -43,11 +43,11 @@ A serverless function built to be called internally by the main application — 
 
 ## Why This Gap Is Genuinely Hard for a Founder to Notice on Their Own
 
-A founder reviewing their product's features naturally thinks in terms of what users see and interact with — pages, buttons, forms — rather than the specific, separate cloud functions quietly running behind the scenes to support those features. Without a specific inventory of every deployed function and its access configuration, this entire category of infrastructure can go unexamined indefinitely, simply because it never comes up in the course of normal, feature-focused review.
+A founder reviewing their product's features naturally thinks in terms of what users see and interact with — pages, buttons, forms — rather than the specific, separate cloud functions quietly running behind the scenes to support those features. Without a specific inventory of every deployed function and its access configuration, this entire category of infrastructure can go unexamined indefinitely, simply because it never comes up in the course of normal, feature-focused review. Even a founder who is otherwise diligent about testing every user-facing feature thoroughly has no natural prompt to ask "what background functions support this feature, and are they independently secured," because that question sits one conceptual layer beneath the feature itself.
 
 ## Why the Consequences Depend Entirely on What the Function Actually Does
 
-An exposed function that only performs a harmless, read-only task poses limited risk on its own; one that can trigger data modification, send communications on the product's behalf, or access internal systems poses a considerably more serious risk — meaning a full inventory has to assess each function individually rather than assuming a uniform risk level across all of them.
+An exposed function that only performs a harmless, read-only task poses limited risk on its own; one that can trigger data modification, send communications on the product's behalf, or access internal systems poses a considerably more serious risk — meaning a full inventory has to assess each function individually rather than assuming a uniform risk level across all of them. A function that sends emails on the product's behalf, left unauthenticated, could be used to send spam or phishing messages that appear to come from a trusted brand; a function that writes to a database could let an outsider silently alter records with no trace of how the change happened.
 
 ## What a Proper Infrastructure Review Involves
 
@@ -56,6 +56,20 @@ A thorough review inventories every deployed function or endpoint in a system �
 Manifera's infrastructure security reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## A Founder's Self-Audit: Finding Every Deployed Function in Your Stack
+
+A founder doesn't need to wait for a professional review to get a rough first picture of what's actually deployed. It won't replace a proper audit, but it's a genuinely useful starting point.
+
+**A first-pass self-audit:**
+
+1. **Open your hosting or deployment platform's dashboard** — Vercel, Netlify, Supabase, AWS, and similar platforms all show a list of deployed functions or services under some form of "functions," "edge functions," or "serverless" section, often with more entries than a founder expects to see.
+2. **List what each function actually does**, in plain language, based on its name and what part of the product it seems to support — a function named something like `process-catalog-upload` or `send-reminder` is usually a reasonable clue, though AI-generated names aren't always self-explanatory.
+3. **For each function, ask: is this meant to be called only by my own application, or by anyone?** Functions meant only for internal use are exactly the category most likely to have been built without independent authentication, on the reasonable but incorrect assumption that "internal" implies "protected."
+4. **Try calling each function's URL directly, without being logged in**, from a browser or a simple request tool, and note which ones respond with actual data or take an action rather than rejecting the request for lacking proper credentials.
+5. **Flag anything that responds without authentication** for a closer look — this doesn't confirm a serious problem, but it narrows a full infrastructure review down to a specific, prioritized list rather than starting from nothing.
+
+**What this self-audit won't catch:** subtler authentication bypasses, functions your hosting dashboard doesn't clearly surface, and functions that require authentication but check it incorrectly under specific conditions. Those are exactly the categories a dedicated technical review is built to find — but working through this list first means a founder walks into that review already knowing roughly what's deployed, which considerably speeds up the conversation.
 
 ## Real example
 

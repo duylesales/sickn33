@@ -42,9 +42,21 @@ A proper audit traces the entire payment flow, not just the successful charge: w
 
 Finally, the audit looks at what happens when something does go wrong in production: is there any monitoring or alerting, or would a founder only find out about an outage from a customer complaint? Is the hosting configuration appropriate for expected traffic, with a reasonable path to scale if usage grows faster than planned?
 
+## Audit Trails and Change History
+
+The sixth area, and one founders rarely think to ask about, is whether the application actually remembers what happened. AI-generated apps are typically built to show the current state of a record — the current shift schedule, the current maintenance status — without preserving a history of how it got there. For a consumer app, that's often fine. For any tool touching manufacturing, healthcare, or financial operations, it's frequently a hard requirement, not a nice-to-have.
+
+**What a proper audit checks here:**
+
+- **Are edits to critical records overwritten silently, or preserved as a history?** A maintenance log, a compliance report, or a financial record that simply replaces the old value when edited — with no trace of what it said before — fails most industrial or regulatory audit standards outright.
+- **Is there a record of who made a change, and when?** "The value changed" is a different, much weaker claim than "this specific user changed this specific value at this specific time," and only the second one satisfies most compliance frameworks.
+- **Can deleted records be recovered, or are they gone permanently?** AI-generated delete functions typically perform a hard delete by default — the row is simply gone — rather than a soft delete that preserves the record for audit purposes while hiding it from normal use.
+
+This gap is invisible in every demo, because a demo never needs to answer "what did this record say three weeks ago." It becomes visible the first time a client, an auditor, or a regulator asks that exact question — which is precisely what happened to the founder in the example below.
+
 ## Why This Level of Rigor Matters for Doetinchem's Industrial Base
 
-Doetinchem, in the Achterhoek region of Gelderland, has deep roots in steel and industrial manufacturing — a legacy that shapes a local business culture with little patience for software that "mostly works." Founders building tools for manufacturing, logistics, or industrial operations in and around Doetinchem are often serving customers who think in terms of uptime percentages and audit trails, not feature lists. An AI software engineering audit that only checks the surface — does it look right, does it run — misses exactly the kind of reliability and security failures that matter most to this audience.
+Doetinchem, in the Achterhoek region of Gelderland, has deep roots in steel and industrial manufacturing — a legacy that shapes a local business culture with little patience for software that "mostly works." The industrial estates around De Huet and the manufacturing base that still runs along the IJssel valley have spent decades operating under formal quality and safety standards, and that expectation carries directly into how local manufacturers evaluate any software vendor, AI-built or otherwise. Founders building tools for manufacturing, logistics, or industrial operations in and around Doetinchem are often serving customers who think in terms of uptime percentages and audit trails, not feature lists. An AI software engineering audit that only checks the surface — does it look right, does it run — misses exactly the kind of reliability and security failures that matter most to this audience.
 
 As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Manifera — 120+ engineers, 160+ projects, eleven years in production engineering — is the team behind LaunchStudio's audits, bringing the same standard used for enterprise clients like Vodafone and TNO down to individual AI-native founders. Our team operates out of our Amsterdam headquarters on Herengracht 420, and you can see what our audit and remediation process involves on our homepage. For founders wanting to see the broader engineering track record behind this standard, Manifera's offshore software development practice details how this same team has scaled production systems for clients well beyond the AI-native startup space.
 
@@ -82,6 +94,9 @@ Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, has over
 ### What happens after the audit finds issues?
 LaunchStudio provides a clear breakdown of findings and implements fixes as part of a fixed-scope engagement. Describe your project — we respond within one business day with next steps.
 
+### Why would an AI-generated app need an audit trail at all?
+Any tool used for compliance, maintenance records, or regulated operations typically needs to show not just the current state of a record but who changed it and when. AI tools rarely build this in by default, since a demo never requires proving what a record said in the past — it only becomes a problem the first time a client or auditor asks the question directly.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,7 +106,8 @@ LaunchStudio provides a clear breakdown of findings and implements fixes as part
     { "@type": "Question", "name": "How long does a typical AI software engineering audit take?", "acceptedAnswer": { "@type": "Answer", "text": "Most audits and their associated fixes are completed within a week, depending on scope, with fixed pricing agreed before work begins." } },
     { "@type": "Question", "name": "Is Doetinchem a common location for LaunchStudio's manufacturing and industrial-tech clients?", "acceptedAnswer": { "@type": "Answer", "text": "Doetinchem's Achterhoek manufacturing heritage produces founders building operationally-focused tools where reliability and audit trails matter, though LaunchStudio works with founders across the Netherlands." } },
     { "@type": "Question", "name": "Who leads the engineering standards behind these audits?", "acceptedAnswer": { "@type": "Answer", "text": "Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, has overseen the eleven-plus years of production engineering experience that shapes how these audits are structured." } },
-    { "@type": "Question", "name": "What happens after the audit finds issues?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio provides a clear breakdown of findings and implements fixes as part of a fixed-scope engagement, responding within one business day of a project description." } }
+    { "@type": "Question", "name": "What happens after the audit finds issues?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio provides a clear breakdown of findings and implements fixes as part of a fixed-scope engagement, responding within one business day of a project description." } },
+    { "@type": "Question", "name": "Why would an AI-generated app need an audit trail at all?", "acceptedAnswer": { "@type": "Answer", "text": "Any tool used for compliance, maintenance records, or regulated operations typically needs to show not just the current state of a record but who changed it and when. AI tools rarely build this in by default, since it only becomes a problem once a client or auditor asks the question directly." } }
   ]
 }
 </script>

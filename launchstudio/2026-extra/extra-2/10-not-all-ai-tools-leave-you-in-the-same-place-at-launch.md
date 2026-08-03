@@ -51,7 +51,21 @@ v0 is squarely a UI generation tool, and it's very good at exactly that. The gap
 
 ## Why This Distinction Matters Specifically for Agencies and Freelancers
 
-A white-label partner quoting a client engagement without first identifying which tool built the existing prototype risks badly under- or over-scoping the work — treating a v0 project like it merely needs "hardening" when it actually needs a backend built from scratch, or treating a Lovable project like it needs a full backend build when it mostly needs targeted security hardening, leads to mismatched estimates and client frustration either way.
+A white-label partner quoting a client engagement without first identifying which tool built the existing prototype risks badly under- or over-scoping the work — treating a v0 project like it merely needs "hardening" when it actually needs a backend built from scratch, or treating a Lovable project like it needs a full backend build when it mostly needs targeted security hardening, leads to mismatched estimates and client frustration either way. Under-scoping is the more expensive mistake of the two in practice — an agency that quotes a v0 project as a light hardening pass, then discovers mid-engagement that there's no backend to harden at all, either eats the difference itself or has an uncomfortable renegotiation conversation with a client who was already told a number. Over-scoping is less financially damaging but still costly in a different way: a client quoted for a full backend rebuild on a project that mostly needed a security pass may simply take the inflated quote to a competitor instead, assuming the agency didn't actually understand what they were looking at.
+
+## A Quick Diagnostic: Five Questions to Ask Before Quoting a Client's AI-Built Prototype
+
+Before an agency commits to a scope or a price, a short diagnostic conversation with the client — or a quick hands-on look at the prototype itself — tends to reveal which category of gap is actually present, rather than assuming based on which tool's name the client happens to mention.
+
+**Five questions worth asking before quoting:**
+
+1. **"Who else looked at this besides the person who built it?"** A solo technical founder using Cursor with no second reviewer is a fundamentally different risk profile than a small team where a cofounder or contractor reviewed the work independently, even if the underlying code quality looks similar at first glance.
+2. **"Is there a backend at all, and if so, what does it actually do?"** A v0-generated interface with no real backend yet needs a fundamentally different quote than a Lovable-generated app with a full backend that simply needs hardening — conflating the two leads directly to the kind of mis-scoped estimate that Fleur's team nearly made.
+3. **"Has this ever been deployed anywhere real users could reach it?"** A prototype that's only ever run locally on the founder's own machine carries a different, usually smaller, set of urgent gaps than one that's already been live and publicly reachable for months, simply because the second one has had more time and exposure for a gap to be found and exploited by someone else first.
+4. **"What does the environment and deployment configuration actually look like?"** Asking to see, or being given access to, the actual hosting setup, environment variables, and build configuration — rather than taking "it's deployed and working" at face value — tends to surface Bolt-style configuration gaps quickly, before they become a client-facing surprise mid-engagement.
+5. **"Were you specifically told what's unfinished, or are you assuming based on how it looks?"** A prototype that looks polished and complete is not the same claim as one that's actually been reviewed and confirmed complete — a founder handing off a project rarely has a precise, technical answer to what's still missing, which is exactly the gap this diagnostic conversation exists to close before a quote gets committed to.
+
+**Why this diagnostic matters more than knowing which tool was used.** The tool name is a reasonable starting hint, as the comparison above shows, but it's still just a hint — a founder can build a genuinely solid backend inside Bolt with enough deliberate effort, or leave Lovable's backend almost entirely unhardened despite its strong scaffolding. Treating the tool name as a firm predictor, rather than running this five-question diagnostic on the actual project in front of you, is exactly the shortcut that led Fleur's team toward an initial quote they later had to walk back.
 
 ## How LaunchStudio Supports Partners Working Across All Four
 
@@ -100,6 +114,10 @@ Yes — Roelevink's prior experience in offshore software project management dir
 
 Partner engagements are scoped individually based on the specific project and volume of work involved, similar in spirit to founder pricing but structured around the agency's own client relationship and NDA requirements rather than a single standardized number.
 
+### Should an agency always run this kind of diagnostic before quoting, even for a small-looking project?
+
+Yes — a project's visual size or apparent simplicity doesn't reliably predict how much hardening work is hiding underneath, and a short diagnostic conversation is inexpensive insurance against the kind of mis-scoped quote that nearly tripped up Fleur's team before LaunchStudio's audit corrected the picture.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -143,6 +161,14 @@ Partner engagements are scoped individually based on the specific project and vo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Partner engagements are scoped individually rather than following one standardized founder-facing price range."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should an agency run this diagnostic even for a small-looking project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — apparent project size doesn't reliably predict hidden hardening work, so a short diagnostic is cheap insurance."
       }
     }
   ]

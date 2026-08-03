@@ -35,7 +35,7 @@ To build AI software customers genuinely trust enough to pay for, ongoing attent
 
 ## Why Client-Side Storage Feels Like a Convenient, Neutral Choice
 
-Storing data like a payment token reference, a user's saved address, or session details in the browser's local storage is a fast, straightforward way to make that data readily available to the interface without an additional server request every time it's needed — a genuinely convenient pattern that AI coding tools reach for readily, since it works correctly and simplifies the code needed to access that data from anywhere in the frontend.
+Storing data like a payment token reference, a user's saved address, or session details in the browser's local storage is a fast, straightforward way to make that data readily available to the interface without an additional server request every time it's needed — a genuinely convenient pattern that AI coding tools reach for readily, since it works correctly and simplifies the code needed to access that data from anywhere in the frontend. It's also the pattern most tutorials and code examples demonstrate by default, since a tutorial focused on "how do I access this data from anywhere in my frontend" has no particular reason to model a production security posture — meaning an AI coding tool trained substantially on that same body of example code inherits the same default without anyone specifically instructing otherwise.
 
 ## Why Local Storage Specifically Amplifies an Unrelated Vulnerability
 
@@ -56,6 +56,31 @@ A proper review identifies which specific pieces of data genuinely need to be st
 Manifera's frontend data storage security reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Ready to launch? Weeks, not months, from prototype to production](https://launchstudio.eu/en/#contact).
+
+## What Belongs in Local Storage, and What Doesn't
+
+Not everything needs to move out of local storage — treating it as universally forbidden is as unhelpful as treating it as universally fine. The useful question is what specific category a given piece of data falls into.
+
+**Generally fine to keep in local storage**
+
+- UI preferences — dark mode setting, sidebar collapsed state, last-viewed tab
+- Non-sensitive cached data that speeds up the interface but reveals nothing damaging if read by an unintended script — a cached list of publicly available product categories, for instance
+- Data that's already public elsewhere, where local storage is just a performance optimization rather than the only place it exists
+
+**Should generally move to a protected cookie or server-side session instead**
+
+- Session identifiers or authentication tokens — anything that, if read by a malicious script, would let that script act as the logged-in user
+- Saved addresses, phone numbers, or other personal contact details, even if not "financial" data specifically
+- Anything referencing payment methods, even an indirect reference or token rather than a raw card number
+- Any data whose exposure would let one customer see or act on another customer's information
+
+**The test that cuts through most edge cases**
+
+Ask a specific, concrete question about each piece of data currently sitting in local storage: "If a future, currently-unknown scripting vulnerability let an attacker read everything in local storage right now, what's the worst realistic thing they could do with this specific piece of data?" A UI preference has a worst case of "an attacker learns you prefer dark mode" — genuinely harmless. A saved address or session token has a worst case that looks very different, and that difference is exactly what should determine where each piece of data lives.
+
+**Why this is worth doing as a deliberate pass, not incrementally**
+
+Data storage decisions accumulate one feature at a time, usually made independently by whoever (or whatever AI tool) built that specific feature, without anyone stepping back to look at the full picture of what's ended up in local storage across the entire application. A single, deliberate pass — going feature by feature and applying the test above — catches accumulated decisions that no individual feature review would have flagged on its own, since each one looked reasonable in isolation at the time it was made. This is precisely the audit LaunchStudio ran across WasService's full feature set rather than just the specific feature connected to the original scripting bug — catching several other pieces of client-side data that hadn't yet been implicated in any known issue, but that fit the same risk profile and were worth migrating proactively rather than waiting for their own separate incident.
 
 ## Real example
 

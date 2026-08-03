@@ -1,17 +1,18 @@
 ---
-Titel: "AI-implementatie is geen druk op een knop: wat oprichters in Almelo daadwerkelijk moeten doen"
+Titel: "AI-deployment is geen knop: Wat Almeloose oprichters daadwerkelijk moeten doen"
 Trefwoorden: ai deployment, deploy ai application, production deployment checklist, Almelo tech founders, CI/CD for AI apps
 Koperfase: Overweging
 Doelgroep: Technische solo-oprichter
 ---
-# AI-implementatie is geen druk op een knop: wat oprichters in Almelo daadwerkelijk moeten doen
+
+# AI-deployment is geen knop: Wat Almeloose oprichters daadwerkelijk moeten doen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-implementatie is geen druk op een knop: wat oprichters in Almelo daadwerkelijk moeten doen",
-  "description": "Op 'publiceren' klikken in Lovable of Bolt is niet hetzelfde als een echte AI-implementatiepijplijn. Een technische uiteenzetting voor oprichters in Almelo over wat ontbreekt tussen een live URL en een productiewaardige release.",
+  "headline": "AI-deployment is geen knop: Wat Almeloose oprichters daadwerkelijk moeten doen",
+  "description": "Klikken op 'publiceren' in Lovable of Bolt is niet hetzelfde als een echte AI-deployment pipeline. Een technische onderbouwing voor Almeloose oprichters over wat er ontbreekt tussen een live URL en een uitrol van productiekwaliteit.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
@@ -19,76 +20,96 @@ Doelgroep: Technische solo-oprichter
 }
 </script>
 
-Laten we precies zijn over terminologie, aangezien u technisch onderlegd genoeg bent om dit te willen weten: op "Publiceren" klikken in Lovable of Bolt levert u een live URL op. Het levert u geen AI-implementatiepijplijn op. Dat zijn verschillende dingen, en de kloof daartussen is waar een verrassend aantal verder solide producten uit Almelo hun eerste echte stresstest niet doorstaan. Als u een technische solo-oprichter bent die zich comfortabel voelt in de codebase maar nog nooit productie-infrastructuur heeft gebouwd, is dit de checklist die niemand u heeft gegeven.
+Laten we precies zijn over terminologie, aangezien u technisch genoeg bent om daarom te geven: klikken op "Publiceren" in Lovable of Bolt levert u een live URL op. Het levert u geen AI-deployment pipeline op. Dat zijn verschillende dingen, en het gat daartussen is waar een verrassend aantal verder solide in Almelo gebouwde producten faalt op hun eerste echte stresstest. Als u een solo technische oprichter bent die comfortabel is in de codebase maar nog niet eerder productie-infrastructuur heeft opgebouwd, is dit de checklist die niemand u heeft overhandigd.
 
-## Wat "geïmplementeerd" daadwerkelijk betekent versus wat een knop u geeft
+## Wat "uitgerold" daadwerkelijk betekent versus wat een knop u geeft
 
-Een echte AI-implementatieopzet heeft verschillende lagen die de één-klik-publicatie van uw AI-tool vrijwel zeker heeft overgeslagen:
+Een echte AI-deployment-inrichting kent verschillende lagen die de één-klik-publicatie van uw AI-tool vrijwel zeker heeft overgeslagen:
 
-**Omgevingsscheiding.** Ontwikkeling, staging en productie mogen geen database of API-sleutels delen. De meeste standaardimplementaties van AI-tools draaien alles tegen één enkele omgeving, wat betekent dat het testen van een nieuwe functie het risico met zich meebrengt echte klantgegevens te corrumperen.
+**Scheiding van omgevingen.** Ontwikkeling, staging en productie zouden geen database of API-sleutels moeten delen. De meeste standaarduitrollen van AI-tools draaien alles tegen een enkele omgeving, wat betekent dat het testen van een nieuwe functie het risico draagt van het aantasten van echte klantgegevens.
 
-**Terugrolmogelijkheid.** Als een implementatie een bug introduceert, kunt u dan binnen vijf minuten terugkeren naar de laatst bekende goede staat? Als het antwoord inhoudt dat u handmatig code moet herbewerken in een chatinterface, is het antwoord nee.
+**Mogelijkheid tot rollback.** Als een uitrol een bug introduceert, kunt u dan binnen vijf minuten terugkeren naar de laatst bekende goede staat? Als het antwoord inhoudt dat u handmatig code moet bewerken in een chatinterface, is het antwoord nee.
 
-**Observeerbaarheid.** Wordt u gewaarschuwd wanneer uw app om 2 uur 's nachts een 500-fout gooit, of hoort u het de volgende ochtend van een boze e-mail van een klant? Standaardhosting van AI-tools heeft doorgaans geen foutregistratie of uptime-monitoring geconfigureerd.
+**Zichtbaarheid en monitoring (observability).** Wordt u gewaarschuwd wanneer uw app om 02:00 uur 's nachts een 500-fout geeft, of komt u erachter via een boze e-mail van een klant de volgende ochtend? Standaardhosting van AI-tools heeft doorgaans geen fouttracking of uptime-monitoring geconfigureerd.
 
-**Schaalgedrag.** Wat gebeurt er wanneer 200 mensen tegelijk uw aanmeldpagina bezoeken in plaats van 2? Databaseverbindingspooling, caching en rate limiting zijn zelden standaard geconfigureerd.
+**Schaalgedrag.** Wat gebeurt er wanneer 200 mensen tegelijkertijd uw aanmeldpagina raken in plaats van 2? Connection pooling voor de database, caching en rate limiting zijn zelden out-of-the-box geconfigureerd.
 
-**Beheer van geheimen.** API-sleutels en databasereferenties moeten in een goed geheimenbeheersysteem staan, niet in client-toegankelijke omgevingsbestanden of, erger nog, hardgecodeerd in de geïmplementeerde build.
+**Beheer van geheimen.** API-sleutels en inloggegevens voor databases moeten in een deugdelijke secrets manager leven, en niet in bestanden die voor de client toegankelijk zijn of, erger nog, hardcoded in de uitgerolde bundel.
 
-## Waarom oprichters in Almelo dit specifiek tegenkomen
+## Waarom specifiek Almeloose oprichters hier tegenaan lopen
 
-Almelo heeft een lange industriële erfenis — historisch een textielproductiecentrum, nu thuis voor een mix van productie, logistiek en steeds meer techgedreven kleine bedrijven in heel Overijssel. Oprichters die hier bouwen zijn doorgaans van nature praktische ingenieurs: ze begrijpen systemen, toeleveringsketens en operationeel risico. Die achtergrond maakt de AI-implementatiekloof extra frustrerend zodra deze wordt ontdekt, want het is precies het soort ding dat een oprichter met een productie- of logistiekmentaliteit normaal gesproken nooit onbehandeld zou laten — u zou geen fysiek product verzenden zonder kwaliteitscontroleproces, en dezelfde logica zou moeten gelden voor uw implementatiepijplijn.
+Almelo kent een rijk industrieel erfgoed — historisch gezien een textielproductiecentrum, nu thuisbasis van een mix van fabricage, logistiek en in toenemende mate door technologie gedreven kleine bedrijven in heel Overijssel. Oprichters die hier bouwen neigen op instinct praktische engineers te zijn: ze begrijpen systemen, toeleveringsketens en operationele risico's. Die achtergrond maakt het gat in AI-deployment bijzonder frustrerend zodra het ontdekt wordt, omdat het het type ding is dat een oprichter met een productie- of logistiekdenken normaal gesproken nooit onbehandeld zou laten — u zou een fysiek product niet verzenden zonder een kwaliteitscontroleproces, en dezelfde logica zou moeten gelden voor uw deployment pipeline.
 
-LaunchStudio bestaat precies voor deze overdracht: wij nemen een functioneel complete, door AI gebouwde applicatie en bouwen de implementatie-infrastructuur eromheen — CI/CD, omgevingsscheiding, monitoring en terugrollen — zonder uw applicatiecode of frontend aan te raken. LaunchStudio wordt mogelijk gemaakt door Manifera, een bedrijf met 11+ jaar ervaring in productie-engineering en 120+ technici die implementatie-infrastructuur hebben behandeld voor zakelijke klanten waaronder Vodafone en Xpar Vision. Ons Amsterdamse kantoor aan de Herengracht 420 coördineert dit werk rechtstreeks met oprichters, terwijl de onderliggende engineering voortbouwt op Manifera's volledige trackrecord — u kunt dit bekijken op [Manifera's over-ons-pagina](https://www.manifera.com/about-us/).
+Er is een nuttige analogie in hoe de Almelose productiesector al nadenkt over falen. Een textielfabriek wacht niet tot een batch defecte stof een klant bereikt voordat ze ontdekken dat het weefgetouw verkeerd ingesteld stond — het voert gedurende de productie continue kwaliteitscontroles uit, waarbij problemen worden opgevangen op het moment dat ze ontstaan, en niet stroomafwaarts. Een deployment pipeline met geautomatiseerde testpoorten, gefaseerde uitrol en rollback-mogelijkheid is het software-equivalent van diezelfde discipline: het opvangen van een slechte wijziging voordat deze een echte gebruiker bereikt, en niet pas nadat een klant merkt dat er iets mis is. Oprichters die tijd hebben doorgebracht op een fabrieksvloer begrijpen dit instinctief zodra het op deze manier gevraagd wordt — het is dezelfde onderliggende logica die ze al vertrouwen in een compleet ander domein.
+
+LaunchStudio bestaat specifiek voor deze overdracht: we nemen een met AI gebouwde applicatie die functioneel compleet is en bouwen de deployment-infrastructuur eromheen — CI/CD, scheiding van omgevingen, monitoring en rollback — zonder uw applicatiecode of frontend aan te raken. LaunchStudio wordt aangedreven door Manifera, een bedrijf met meer dan 11 jaar ervaring in productie-engineering en ruim 120 engineers die deployment-infrastructuur hebben afgehandeld voor enterprise-klanten waaronder Vodafone en Xpar Vision. Ons kantoor in Amsterdam aan de Herengracht 420 coördineert dit werk rechtstreeks met oprichters, terwijl de onderliggende engineering voortbouwt op Manifera's volledige trackrecord — u kunt het bekijken op [Manifera's over ons pagina](https://www.manifera.com/about-us/).
+
+## Hoe u uw deployment pipeline daadwerkelijk kunt testen voordat u deze nodig heeft
+
+De meeste solo technische oprichters bouwen hun deployment pipeline één keer, zien deze werken bij de eerste succesvolle uitrol, en testen deze nooit meer bewust totdat er in het echt iets misgaat. Dat is de omgekeerde wereld — een deployment pipeline die u nooit bewust heeft gebroken is een pipeline die u niet daadwerkelijk begrijpt, en u zult haar faalmodi voor het eerst leren tijdens een echt incident, wat het slechtst denkbare moment is.
+
+**Voer een rollback-oefening uit op een dinsdagmiddag, en niet tijdens een storing.** Rol een bewust gebroken wijziging uit naar een niet-kritieke route, bevestig dat uw monitoring het opvangt, en klok vervolgens hoe lang het duurt om terug te keren naar de laatst bekende goede staat. Als dat getal iets anders is dan "een paar minuten, rustig uitgevoerd," heeft u zojuist iets waardevols geleerd zonder enige echte impact op klanten.
+
+**Stresstest uw aanmeld- en kernactie-eindpunten vóór een marketingcampagne, en niet erna.** Een tool zoals k6 of Artillery kan binnen enkele minuten 50, 200 of 500 gelijktijdige gebruikers simuleren die uw aanmeldstroom of primaire functie raken. Vrijwel elke standaarduitrol van een AI-tool heeft nooit meer dan een handvol gelijktijdige verbindingen gezien, en het uitputten van de connection pool of niet-geïndexeerde query's tonen zichzelf pas onder gelijktijdige belasting — exact de belasting die een succesvolle lancering of een viraal LinkedIn-bericht plotseling kan opleveren.
+
+**Schakel bewust een afhankelijkheid uit.** Wijs uw staging-omgeving tijdelijk naar een ongeldige database-verbindingsstring, of simuleer een time-out van uw AI-provider. Kijk wat er daadwerkelijk gebeurt: toont uw app een zinnige foutmelding, of blijft deze voor onbepaalde tijd hangen of stelt deze een ruwe stack-trace bloot aan de gebruiker? Dit is doorgaans de snelste manier om te ontdekken dat "foutafhandeling" in een met AI gegenereerde codebase een generieke try/catch betekent die het probleem opslokt in plaats van er zinnig op te reageren.
+
+**Bevestig dat uw meldingen u daadwerkelijk bereiken, en niet alleen uw dashboard.** Een fouttrackingtool die een incident logt dat niemand ziet is niet betekenisvol anders dan helemaal geen monitoring. Trigger bewust een testmelding, op uw telefoon, met geluid aan, voordat u deze nodig heeft om u wakker te maken voor een echte.
+
+Niets hiervan vereist een toegewijde QA-engineer of een grote tijdsinvestering — een gefocuste middag dekt alle vier de oefeningen voor de meeste met AI gebouwde applicaties van solo-oprichters. Wat het vereist is het behandelen van uw deployment pipeline als iets dat geverifieerd moet worden, en niet simpelweg aangenomen moet worden dat het werkt omdat het één keer werkte.
 
 ## Een praktisch startpunt
 
-Als u een idee wilt van wat correcte AI-implementatie-infrastructuur kost voor uw specifieke project, geeft onze [calculator](https://launchstudio.eu/en/#calculator) een realistische schatting op basis van de complexiteit van uw app — de meeste projecten liggen tussen € 800 en € 7.500, opgeleverd in één tot drie weken, wat ruwweg een vijfde is van wat een traditioneel ontwikkelbureau voor hetzelfde infrastructuurwerk zou rekenen.
+Als u een indruk wilt van wat deugdelijke AI-deployment infrastructuur kost voor uw specifieke project, geeft onze [calculator](https://launchstudio.eu/en/#calculator) een realistische inschatting gebaseerd op de complexiteit van uw app — de meeste projecten vallen tussen € 800 en € 7.500, geleverd in één tot drie weken, wat ongeveer een vijfde is van wat een traditioneel ontwikkelbureau zou rekenen voor hetzelfde infrastructuurwerk.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: de textieltoeleveringsketen van Almelo, gedigitaliseerd
+### Een AI-Native oprichter in actie: Almelo's Textielketen, Gedigitaliseerd
 
-Bram Nijhuis, een voormalig procesingenieur bij een textielfabrikant in Almelo, bouwde StofStroom — een tool voor toeleveringsketenzichtbaarheid die stofzendingen volgt tussen regionale fabrikanten en kopers — met v0 voor de frontend, met een Node-backend die hij zelf had uitgebreid. Hij voelde zich comfortabel bij het schrijven van code, maar had nog nooit vanaf nul een implementatiepijplijn gebouwd, en draaide alles op één enkele Render-instantie met handmatig beheerde omgevingsvariabelen.
+Bram Nijhuis, een voormalig proces-engineer bij een textielfabrikant in Almelo, bouwde StofStroom — een tool voor zichtbaarheid in de toeleveringsketen die stoffenzendingen volgt tussen regionale fabrikanten en kopers — met behulp van v0 voor de frontend, met een Node-backend die hij zelf had uitgebreid. Hij was comfortabel met het schrijven van code, maar had nog nooit vanaf nul een deployment pipeline gebouwd, en draaide alles vanaf een enkele Render-instantie met handmatig beheerde omgevingsvariabelen.
 
-De beoordeling van LaunchStudio vond dat een slechte implementatie twee weken eerder de hele app zes uur lang offline had gehaald zonder waarschuwing voor Bram — hij had het ontdekt via een telefoontje van een klant. We hebben een correcte CI/CD-pijplijn gebouwd met geautomatiseerde testpoorten vóór implementatie, staging en productie gescheiden, Sentry-gebaseerde foutmonitoring met directe waarschuwingen toegevoegd, en databaseverbindingspooling geconfigureerd om gelijktijdige zendingsupdates van meerdere fabrikanten te verwerken.
+LaunchStudio's beoordeling wees uit dat een slechte uitrol twee weken eerder de gehele app gedurende zes uur stilletjes offline had gehaald zonder enige melding om Bram te waarschuwen — hij was erachter gekomen via een telefoontje van een klant. We bouwden een deugdelijke CI/CD pipeline met geautomatiseerde testpoorten vóór de uitrol, scheidden staging van productie-omgevingen, voegden op Sentry gebaseerde foutmonitoring toe met directe meldingen, en configureerden database connection pooling om gelijktijdige zendingsupdates van meerdere fabrikanten af te handelen.
 
-**Resultaat:** StofStroom implementeert nu meerdere keren per week nieuwe functies met automatische terugrol bij mislukte gezondheidscontroles, en heeft sinds de herbouw geen ongeplande uitval meer gehad.
+**Resultaat:** StofStroom rolt nieuwe functies nu meerdere keren per week uit met automatische rollback bij mislukte gezondheidscontroles, en heeft sinds de heropbouw geen ongeplande uitval meer gehad.
 
-> *"Ik kon de code schrijven, maar ik had nog nooit infrastructuur gebouwd. LaunchStudio heeft geen enkele regel van mijn applicatielogica aangeraakt — ze bouwden alles eromheen wat ik niet wist dat ik miste."*
-> — **Bram Nijhuis, oprichter, StofStroom (Almelo)**
+> *"Ik kon de code schrijven, maar ik had nog nooit eerder infrastructuur gebouwd. LaunchStudio heeft geen enkele regel van mijn applicatielogica aangeraakt — ze hebben alles eromheen gebouwd waarvan ik niet wist dat ik het miste."*
+> — **Bram Nijhuis, Oprichter, StofStroom (Almelo)**
 
-**Kosten en tijdlijn:** € 1.650 (CI/CD-pijplijn, omgevingsscheiding, monitoring en waarschuwingen, verbindingspooling) — voltooid in 8 werkdagen.
+**Kosten & Doorlooptijd:** € 1.650 (CI/CD pipeline, scheiding omgevingen, monitoring en alarmering, connection pooling) — afgerond in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Ik ben technisch — kan ik niet gewoon mijn eigen implementatiepijplijn bouwen?
-Dat kan, en veel oprichters in Almelo proberen dit ook. LaunchStudio wordt doorgaans ingeschakeld wanneer die zelfgebouwde pijplijn hiaten aan het licht brengt onder echte belasting, of wanneer een oprichter liever zijn beperkte tijd besteedt aan het product in plaats van aan infrastructuur.
+### Ik ben technisch — kan ik niet gewoon mijn eigen deployment pipeline bouwen?
+Dat kan, en veel Almeloose oprichters proberen dat ook. LaunchStudio wordt doorgaans ingeschakeld wanneer die zelfgebouwde pipeline gaten vertoont onder echte belasting, of wanneer een oprichter zijn beperkte tijd liever aan het product besteedt in plaats van aan infrastructuur.
 
-### Raakt LaunchStudio mijn applicatiecode aan tijdens een implementatiefix?
-Nee. Wij bouwen en configureren de infrastructuur — CI/CD, omgevingen, monitoring, schaling — rond uw bestaande applicatie zonder uw frontend of kernapplicatielogica te wijzigen, tenzij u specifiek om wijzigingen vraagt.
+### Raakt LaunchStudio mijn applicatiecode aan tijdens een deployment-herstel?
+Nee. We bouwen en configureren de infrastructuur — CI/CD, omgevingen, monitoring, schalen — rond uw bestaande applicatie zonder uw frontend of kernapplicatielogica te wijzigen, tenzij u expliciet om wijzigingen vraagt.
 
 ### Is dit alleen relevant voor oprichters in Almelo?
-Nee, dit geldt voor elke door AI gebouwde applicatie die op weg is naar echte gebruikers, maar we zien het patroon vaak bij Overijssel's meer technisch praktisch ingestelde oprichters, van wie velen in of rond Almelo gevestigd zijn.
+Nee, dit geldt voor elke met AI gebouwde applicatie die koerst naar echte gebruikers, maar we zien het patroon vaak onder Overijssel's meer praktisch ingestelde oprichters, van wie er velen in of rond Almelo gevestigd zijn.
 
-### Wie bouwt de implementatie-infrastructuur?
-Het engineeringteam van Manifera, meer dan 120 man sterk, gecoördineerd via LaunchStudio's Amsterdamse kantoor. Dit zijn dezelfde technici die productie-infrastructuur hebben opgeleverd voor zakelijke klanten zoals Vodafone.
+### Wie bouwt de deployment-infrastructuur?
+Manifera's engineeringteam, meer dan 120 man sterk, gecoördineerd via LaunchStudio's kantoor in Amsterdam. Dit zijn dezelfde engineers die productie-infrastructuur hebben opgeleverd voor enterprise-klanten zoals Vodafone.
 
-### Hoe snel kan een implementatieaudit plaatsvinden?
-De meeste beoordelingen en herbouwacties van implementatie-infrastructuur worden binnen één tot twee weken voltooid. Boek een gratis introductiegesprek van 15 minuten om uw specifieke opzet te bespreken.
+### Hoe snel kan een deployment-audit plaatsvinden?
+De meeste beoordelingen van deployment-infrastructuur en herstelwerkzaamheden worden binnen één tot twee weken afgerond. Boek een gratis introductiegesprek van 15 minuten om uw specifieke inrichting te bespreken.
+
+### Wat is een rollback-oefening en hoe vaak zou ik er een moeten uitvoeren?
+Een rollback-oefening is een bewuste test waarbij u een gebroken wijziging uitrolt naar een niet-kritiek onderdeel van uw app en klokt hoe snel u deze kunt herstellen. Het uitvoeren van zo'n test voordat u deze daadwerkelijk nodig heeft, in plaats van tijdens een live incident, is het verschil tussen een rustige fix van vijf minuten en een paniekerig uur van debuggen onder druk.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "I'm technical — can't I just build my own deployment pipeline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and many founders attempt it. LaunchStudio is typically brought in when the self-built pipeline reveals gaps under real load." } },
-    { "@type": "Question", "name": "Does LaunchStudio touch my application code during a deployment fix?", "acceptedAnswer": { "@type": "Answer", "text": "No, we build infrastructure around the existing application without modifying frontend or core logic unless requested." } },
-    { "@type": "Question", "name": "Is this only relevant for founders in Almelo?", "acceptedAnswer": { "@type": "Answer", "text": "No, this applies broadly, though the pattern is common among Overijssel's technically hands-on founders based in or around Almelo." } },
-    { "@type": "Question", "name": "Who builds the deployment infrastructure?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineering team of 120+ engineers, coordinated through LaunchStudio's Amsterdam office." } },
-    { "@type": "Question", "name": "How quickly can a deployment audit happen?", "acceptedAnswer": { "@type": "Answer", "text": "Most deployment infrastructure reviews and rebuilds complete within one to two weeks." } }
+    { "@type": "Question", "name": "Ik ben technisch — kan ik niet gewoon mijn eigen deployment pipeline bouwen?", "acceptedAnswer": { "@type": "Answer", "text": "Dat kan, maar LaunchStudio wordt ingeschakeld wanneer een zelfgebouwde pipeline gaten vertoont onder echte belasting." } },
+    { "@type": "Question", "name": "Raakt LaunchStudio mijn applicatiecode aan tijdens een deployment-herstel?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, we bouwen infrastructuur rond uw applicatie zonder frontend of kernlogica te wijzigen." } },
+    { "@type": "Question", "name": "Is dit alleen relevant voor oprichters in Almelo?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, dit geldt breed, al zien we het patroon vaak bij technisch ingestelde oprichters in Overijssel." } },
+    { "@type": "Question", "name": "Wie bouwt de deployment-infrastructuur?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineeringteam van 120+ engineers, gecoördineerd via LaunchStudio's kantoor in Amsterdam." } },
+    { "@type": "Question", "name": "Hoe snel kan een deployment-audit plaatsvinden?", "acceptedAnswer": { "@type": "Answer", "text": "De meeste beoordelingen van deployment-infrastructuur worden binnen één tot twee weken afgerond." } },
+    { "@type": "Question", "name": "Wat is een rollback-oefening en hoe vaak zou ik er een moeten uitvoeren?", "acceptedAnswer": { "@type": "Answer", "text": "Een rollback-oefening test het bewust herstellen van een gebroken uitrol. Het vooraf oefenen maakt van paniekerig debuggen een rustige fix." } }
   ]
 }
 </script>

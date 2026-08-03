@@ -43,11 +43,11 @@ The pattern has a specific, established name in software engineering because it'
 
 ## Why a Working Profile Form Provides No Reassurance Here
 
-Testing a profile edit form by actually using it — changing a name, updating a phone number — only ever sends the fields that specific form includes, so it never reveals what the backend would do with additional fields the form doesn't happen to submit. The gap is entirely about what's possible outside the form's own constraints, not about anything visibly wrong with the form itself.
+Testing a profile edit form by actually using it — changing a name, updating a phone number — only ever sends the fields that specific form includes, so it never reveals what the backend would do with additional fields the form doesn't happen to submit. The gap is entirely about what's possible outside the form's own constraints, not about anything visibly wrong with the form itself. A founder can click through every single field on the form, confirm each one saves correctly, and still learn nothing about this risk — the vulnerability lives specifically in the space between what the form shows and what the backend will actually accept, a space ordinary use of the form never touches at all.
 
 ## Why an Account Role Field Is the Worst Possible Field to Leave Unprotected
 
-If a user record includes a role or permission field — "member," "admin," "moderator" — and that field isn't explicitly excluded from what a profile update can modify, a specifically crafted request can potentially set that field directly, granting elevated privileges without any legitimate authorization process ever being involved.
+If a user record includes a role or permission field — "member," "admin," "moderator" — and that field isn't explicitly excluded from what a profile update can modify, a specifically crafted request can potentially set that field directly, granting elevated privileges without any legitimate authorization process ever being involved. Once that happens, the consequences aren't limited to whatever the newly elevated account does next — an admin-level account typically has visibility into every other user's data, every other user's records, and often the platform's own configuration, meaning a single mass-assignment gap on a single field can function as a master key to the entire product rather than a narrow, contained issue.
 
 ## What Fixing This Requires
 
@@ -56,6 +56,19 @@ A proper fix explicitly defines which fields each specific endpoint is allowed t
 Manifera's backend security audits are carried out by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client conversations handled through the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## Where Else This Same Pattern Hides Beyond Profile Forms
+
+An account role field is the most damaging version of this vulnerability, but the underlying pattern — an update endpoint accepting more fields than the visible form presents — shows up anywhere a record has fields a user shouldn't be able to touch directly.
+
+**Other places worth specifically checking for the same pattern:**
+
+- **Order or subscription status fields** — if an "update my shipping address" endpoint also happens to accept an order-status field, a crafted request could potentially mark an unpaid order as paid, or a canceled subscription as active, without ever going through the actual payment or cancellation flow.
+- **Pricing or discount fields on a cart or checkout object** — an endpoint that updates cart contents might also, unintentionally, accept a price-override or discount-percentage field never meant to be user-editable at all.
+- **Ownership or ID reference fields** — an endpoint updating a resource's details might also accept a field reassigning which user account owns that resource, letting one user potentially claim another's data.
+- **Verification or approval status fields** — a profile update on a marketplace or services platform might inadvertently allow setting an "is verified" or "is approved" flag directly, bypassing whatever manual or automated verification process was supposed to gate that status.
+
+The common thread across every one of these is the same: a backend that trusts a request to only contain reasonable fields, rather than explicitly defining what each endpoint is allowed to accept. A review that finds and fixes one instance of this pattern in a codebase has good reason to specifically check for the same shape of problem everywhere else a record has a field more sensitive than the ones its own form intentionally exposes.
 
 ## Real example
 
@@ -95,6 +108,10 @@ Yes, precisely — a profile update that works correctly for its intended fields
 ### If a founder used a well-known backend framework with built-in mass-assignment protection, could this still happen?
 
 Yes, if the protective feature isn't correctly enabled or configured for every specific endpoint — having access to a safety mechanism and consistently applying it correctly across an entire codebase are two different things, and AI-generated code doesn't automatically guarantee the latter just because the framework supports the former.
+
+### Would a founder normally have any way of knowing this risk exists without a technical background?
+
+Not easily on their own — the term "mass assignment" itself isn't something a non-technical founder would encounter unless they specifically researched backend security concepts, and the vulnerability leaves no visible trace in normal product use. This is precisely the category of risk that benefits most from a founder simply knowing to ask "has someone checked our update endpoints for this specific pattern" during a pre-launch review, rather than needing to understand the underlying mechanics in detail themselves.
 
 <script type="application/ld+json">
 {
@@ -139,6 +156,14 @@ Yes, if the protective feature isn't correctly enabled or configured for every s
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, if the protection isn't correctly enabled and consistently applied across every specific endpoint."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Would a non-technical founder normally know this risk exists on their own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not easily — the vulnerability leaves no visible trace in normal use, which is why a pre-launch review needs to check for it."
       }
     }
   ]

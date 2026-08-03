@@ -45,6 +45,8 @@ A profile photo upload feature, tested by a founder uploading a handful of reaso
 
 Unrestricted uploads don't just risk running out of disk space — every stored file typically incurs bandwidth and processing costs, and a small number of unusually large or numerous uploads, whether from a confused user or someone deliberately probing for exactly this weakness, can produce a cost spike that's wildly disproportionate to the number of actual users involved.
 
+Cloud storage pricing typically charges for both the storage itself and every byte transferred in and out — meaning a single large file, uploaded once, can rack up disproportionate cost the moment it's downloaded or processed even a handful of times, well before storage capacity itself becomes a concern. For an early-stage product with a handful of real users, this is exactly why a single bad-faith or accidental upload can produce a bill that looks completely disconnected from the product's actual usage level.
+
 ## Why a Founder's Own Testing Never Catches This
 
 Testing your own upload feature with your own reasonable photos, a handful of times, produces a bill and a storage footprint that looks completely normal — there's no version of that test that resembles what an unrestricted upload endpoint looks like once it's reachable by anyone on the internet with no restrictions in place at all.
@@ -56,6 +58,37 @@ A proper fix sets explicit limits — maximum file size, allowed file types, and
 Manifera's infrastructure hardening work is delivered by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client scoping handled through the Amsterdam headquarters at Herengracht 420.
 
 [Share your prototype link — we'll take a free look](https://launchstudio.eu/en/#contact).
+
+## Building a Complete Upload Hardening Checklist
+
+File size limits alone don't fully close this gap — a thorough upload hardening pass covers several distinct failure modes, each of which an AI-generated upload feature typically leaves open unless specifically instructed otherwise.
+
+**Enforce limits on the server, in this order of priority**
+
+1. **Maximum file size** — rejected before the full file is even accepted, not just checked after the fact
+2. **Allowed file types, checked by actual file content, not just the extension** — a file renamed from `.exe` to `.jpg` still needs to be caught, which requires inspecting the file's actual header bytes, not trusting the filename a user provided
+3. **Per-user rate limits** — capping how many uploads a single account can perform within a given window, independent of individual file size
+4. **Total storage quota per account** — preventing one account from accumulating an unreasonable volume of stored files even through many small, individually-compliant uploads
+
+**Don't rely on frontend validation alone**
+
+A file picker that only accepts `.jpg` and `.png` in the browser is a usability nicety, not a security control — anyone can bypass it entirely by sending a request directly to the upload endpoint using a tool like curl or Postman, skipping the frontend's file picker altogether. Every restriction that matters has to be enforced again on the server, regardless of what the frontend already checks.
+
+**Set up cost alerts as a second line of defense**
+
+Even a well-configured upload feature benefits from a billing alert set at a threshold meaningfully above normal expected usage — this doesn't prevent a spike, but it converts a silent, slow-building cost problem into a same-day notification instead of something discovered three weeks later on an invoice. Most major hosting and storage providers (AWS, Cloudflare R2, DigitalOcean Spaces) support this as a built-in, free configuration option.
+
+**Consider what happens to processing pipelines, not just storage**
+
+If uploaded files trigger any downstream processing — image resizing, virus scanning, AI-based content analysis — an oversized or malformed file can also consume disproportionate compute time or crash a processing job, a cost and reliability risk separate from storage itself. Any processing pipeline should independently validate file size and type before beginning work, rather than assuming the upload endpoint already filtered everything that reaches it.
+
+**Test with an intentionally bad file before launch**
+
+Before considering an upload feature done, deliberately try uploading something oversized, something with a mismatched extension, and a rapid burst of files from a single account. If none of those three tests produce a clean rejection, the feature isn't ready for real, uncontrolled users yet, regardless of how well it handles a founder's own normal test photos.
+
+**Revisit these limits as your product grows, not just once at launch**
+
+A limit set sensibly for a product's earliest users can become either too restrictive or too permissive as usage patterns change — a photo-sharing feature that later adds video support needs meaningfully different size limits than the original photo-only version, and a limit that felt generous at ten users might allow a much larger absolute cost exposure once genuine usage reaches a few hundred. Revisiting upload limits whenever a product's core use case changes, rather than treating the original launch-day numbers as permanent, keeps this checklist relevant well past the initial hardening pass.
 
 ## Real example
 

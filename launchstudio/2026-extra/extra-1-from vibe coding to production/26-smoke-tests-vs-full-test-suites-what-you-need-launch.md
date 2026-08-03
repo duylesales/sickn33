@@ -57,6 +57,20 @@ Comprehensive test coverage earns its cost as your product matures — more feat
 
 For most AI-native SaaS products at launch: smoke tests for signup, your core feature, and payment/checkout, automated via Playwright or Cypress and run on every push through a CI pipeline. That's it. Everything beyond that — deeper edge-case coverage, broader regression suites — is worth building incrementally as the product and team mature, not required as a launch gate.
 
+## What a Good Smoke Test Actually Looks Like, Concretely
+
+Abstractly, "a smoke test for signup" is easy to agree with and easy to implement badly. A genuinely useful one has a specific, narrow shape:
+
+**It exercises the real flow, not a shortcut around it.** A signup smoke test should submit an actual form, through the actual UI, the way a real user would — not call an internal API directly, which would verify your backend logic works but tell you nothing about whether the signup button is actually wired up correctly, a form validation rule is silently blocking valid input, or a recent frontend change broke the flow a user would actually experience.
+
+**It asserts on outcome, not on absence of error.** A weak smoke test just checks that nothing threw an exception. A useful one confirms the specific expected end state — a new user actually appears in the database, a confirmation email actually gets queued, the user actually lands on the expected post-signup page — since a flow can silently produce the wrong outcome without ever raising an error at all.
+
+**It runs against a real (test) environment, not mocked dependencies.** Mocking your database or payment provider in a smoke test defeats much of its purpose, since the entire point is catching integration-level breakage — use a genuine test database and your payment provider's sandbox mode, so the test exercises the same real seams where things actually break.
+
+**It fails loudly and blocks the merge.** Per the CI guidance covered elsewhere in this series, a smoke test that fails but doesn't actually prevent a broken deploy provides the appearance of protection without the substance — the test needs to be wired into your pipeline as a genuine gate, not an informational step someone can click past.
+
+Three to five tests built this way, covering your genuinely critical flows, take a few hours to set up properly and catch the overwhelming majority of "I shipped something that silently broke a core flow" incidents — the specific failure mode smoke tests exist to prevent.
+
 [LaunchStudio](https://launchstudio.eu/en/) implements exactly this right-sized smoke test coverage as a standard part of every Launch Ready engagement, targeting genuine risk reduction rather than either extreme, backed by Manifera's engineering experience across products at every stage of maturity.
 
 [Get the right amount of testing for where your product actually is](https://launchstudio.eu/en/#calculator) — not zero, and not more than launch-stage actually needs.

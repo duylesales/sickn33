@@ -39,11 +39,11 @@ Cloud storage services like AWS S3, Firebase Storage, and similar platforms are 
 
 ## Why "The Upload Worked" Never Reveals This
 
-Testing an upload feature means uploading a file and confirming it's retrievable afterward — both of which succeed identically whether the storage bucket is public or properly restricted. There is no natural point during ordinary testing where a founder would think to check whether the file's underlying storage URL is guessable or listable by someone who was never given a link to it.
+Testing an upload feature means uploading a file and confirming it's retrievable afterward — both of which succeed identically whether the storage bucket is public or properly restricted. There is no natural point during ordinary testing where a founder would think to check whether the file's underlying storage URL is guessable or listable by someone who was never given a link to it. Even opening the browser's developer tools and looking at the URL directly doesn't obviously reveal the problem — a working link just looks like a working link, regardless of whether it also happens to be reachable by anyone else on the internet who stumbles onto the same pattern.
 
 ## Why Documents Are a Worse Case Than Photos
 
-A publicly accessible bucket is a real problem for any file type, but documents like ID scans, medical forms, or signed contracts carry meaningfully higher stakes than, say, a public profile photo — the kind of information on those documents (full legal names, dates of birth, identification numbers) is exactly the category of data that causes the most damage if it becomes broadly accessible, and childcare-adjacent products specifically tend to collect exactly this kind of document as a matter of course.
+A publicly accessible bucket is a real problem for any file type, but documents like ID scans, medical forms, or signed contracts carry meaningfully higher stakes than, say, a public profile photo — the kind of information on those documents (full legal names, dates of birth, identification numbers) is exactly the category of data that causes the most damage if it becomes broadly accessible, and childcare-adjacent products specifically tend to collect exactly this kind of document as a matter of course. When the person on the document is a minor, the stakes rise again: a leaked ID scan gives someone everything needed to attempt identity theft against a child, a form of fraud that can go undetected for years precisely because nobody checks a child's credit history or identity records until they're old enough to need one themselves.
 
 ## Why This Isn't a Reason to Distrust AI Coding Tools Generally
 
@@ -56,6 +56,20 @@ A proper fix reconfigures storage access to require authentication, replaces any
 Manifera's storage security reviews are performed by the engineering team based at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Send over your prototype's link for a free review](https://launchstudio.eu/en/#contact).
+
+## A Checklist for Auditing Every Storage Bucket Your App Uses
+
+A fully public bucket is the most obvious version of this problem, but it's rarely the only one worth checking. A single-issue mental model — "is my bucket public, yes or no" — misses several related misconfigurations that cause the same underlying exposure.
+
+**Work through these questions for every storage bucket your app writes to, not just the one you remember setting up:**
+
+- **Is the bucket itself listable, even if individual files require a direct link?** A bucket that allows directory listing lets anyone enumerate every filename it contains, turning "you'd need to guess the exact URL" into "you can just browse the full contents."
+- **How long do your signed URLs stay valid?** A signed URL is only as protective as its expiration window — a link generated to last 30 days behaves, for practical purposes, almost as openly as a permanently public one if that link is ever shared, cached, or logged somewhere outside your control.
+- **Do you have forgotten staging, backup, or test buckets from earlier development?** These are frequently created quickly to unblock a feature, never get the same access review as the production bucket, and often contain copies of the same sensitive files.
+- **Is your CORS configuration scoped to your actual domain, or left at a permissive default?** An overly broad CORS policy can let a malicious site running in a victim's browser make authenticated requests against your storage on the victim's behalf.
+- **Are filenames predictable or sequential?** Even with authentication required, a filename pattern like `id-scan-1042.jpg` invites simple enumeration attempts; random, non-guessable identifiers remove that avenue entirely.
+
+None of these individually require deep cloud infrastructure expertise to understand, but checking all of them systematically, across every bucket a fast-moving AI-assisted build has created, is exactly the kind of thorough pass that's easy to skip when you're focused on shipping the next feature instead.
 
 ## Real example
 
@@ -95,6 +109,10 @@ A very direct one — this is architecture in the most literal sense, a configur
 ### Can a founder check their own storage bucket's access settings without engineering help?
 
 Partially — most cloud storage dashboards display a visible "public" or "private" access indicator that a founder can check directly, though confirming that every specific file and folder within the bucket actually follows the intended setting, rather than an exception slipping through, typically benefits from a full technical review.
+
+### Is a signed URL with a long expiration date basically the same risk as a public bucket?
+
+Not identical, but closer than most founders assume — a signed URL that stays valid for weeks or months behaves, in practice, almost the same as a permanently public link if it's ever cached, shared, or logged somewhere outside your control, so the expiration window itself is a deliberate security setting worth reviewing, not just an incidental technical detail.
 
 <script type="application/ld+json">
 {
@@ -139,6 +157,14 @@ Partially — most cloud storage dashboards display a visible "public" or "priva
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Partially, via the dashboard's public/private indicator, though confirming every file follows it needs a full review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a long-lived signed URL basically the same risk as a public bucket?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Close to it — a signed URL valid for weeks behaves like a public link if cached or shared, so its expiration window matters."
       }
     }
   ]

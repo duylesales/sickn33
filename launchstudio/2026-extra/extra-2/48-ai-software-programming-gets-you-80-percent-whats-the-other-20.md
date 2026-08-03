@@ -31,7 +31,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Cursor got you 80% of the way there, and that's a genuinely accurate, common founder observation about AI software programming today — it does the bulk of the visible work remarkably well. The remaining 20% tends to concentrate in a specific, checkable list of permission edge cases, and a shared document that's supposed to be view-only, but isn't quite, is a clean illustration of exactly what that list contains.
+Cursor got you 80% of the way there, and that's a genuinely accurate, common founder observation about AI software programming today — it does the bulk of the visible work remarkably well. The remaining 20% tends to concentrate in a specific, checkable list of permission edge cases, and a shared document that's supposed to be view-only, but isn't quite, is a clean illustration of exactly what that list contains. The 80% is what makes a demo impressive; the 20% is what makes a product safe to hand real customer data to, and the two require genuinely different skills to get right.
 
 ## Checklist Item One: Does "Read-Only" Actually Mean Read-Only on the Server?
 
@@ -39,7 +39,7 @@ A shared document feature offering both "can view" and "can edit" sharing permis
 
 ## Checklist Item Two: Is Permission Checked on Every Modifying Request, or Just at Page Load?
 
-Some AI-generated permission systems check a user's access level only once, when a page initially loads, to decide what to display — but if the actual save or update action doesn't separately re-verify that same permission level before processing the request, a view-only user whose interface simply doesn't show edit buttons can still potentially submit an edit request directly.
+Some AI-generated permission systems check a user's access level only once, when a page initially loads, to decide what to display — but if the actual save or update action doesn't separately re-verify that same permission level before processing the request, a view-only user whose interface simply doesn't show edit buttons can still potentially submit an edit request directly, regardless of whatever the interface chose to render for them.
 
 ## Checklist Item Three: Would a Founder's Normal Testing Reveal This?
 
@@ -47,7 +47,7 @@ Testing sharing permissions by inviting a real second account, viewing as intend
 
 ## Checklist Item Four: Does This Matter More for Coaching-Adjacent Content Specifically?
 
-A career coaching platform's shared documents often contain genuinely personal content — a client's career goals, salary expectations, personal reflections shared with a specific coach — meaning unauthorized modification isn't just a technical inconvenience, it's a real breach of the kind of trust a coaching relationship specifically depends on.
+A career coaching platform's shared documents often contain genuinely personal content — a client's career goals, salary expectations, personal reflections shared with a specific coach — meaning unauthorized modification isn't just a technical inconvenience, it's a real breach of the kind of trust a coaching relationship specifically depends on. A client who discovers their own reflections were altered, even accidentally, reasonably starts wondering what else about the platform they can't fully trust — a reaction that spreads well beyond the single document actually affected.
 
 ## Checklist Item Five: How Does a Founder Know Whether Their Own Product Has This Gap?
 
@@ -60,6 +60,20 @@ A proper fix re-verifies permission level on every modifying request server-side
 Manifera's permission and access-control audits are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Walk us through what you built — we'll respond within a business day](https://launchstudio.eu/en/#contact).
+
+## Building Permission Checks That Survive a Growing Feature Set
+
+A permission system that works correctly at launch doesn't automatically stay correct as a product adds features — each new feature is a fresh opportunity to bypass an existing rule, exactly as LoopbaanPad's document-editing gap illustrates. A few structural habits make that considerably less likely.
+
+**Habits that keep permission logic consistent as a product grows:**
+
+- **Centralize the permission check in one place**, rather than re-implementing "does this user have edit access" separately inside every feature that touches shared content. A single, shared function that every modifying request calls means a fix or an update to the permission logic automatically applies everywhere, instead of needing to be manually replicated into each new feature as it's built.
+- **Default to denying access, not granting it**, when a new feature is added — require an explicit, deliberate check that grants access for a specific case, rather than a feature that works for everyone by default unless someone remembers to add a restriction afterward.
+- **Test the restrictive case, not just the permissive one**, for every new collaborative feature — confirm a view-only user's request is actually rejected, not only that an edit-permission user's request succeeds. Most functional testing naturally verifies the "happy path" a legitimate user takes and never attempts the request a restricted user technically shouldn't be able to make.
+- **Re-audit existing permission checks whenever a related feature is added**, even when the new feature doesn't obviously touch the same code — a bulk-edit feature, an export feature, or an API endpoint added later can each independently reintroduce a gap the original feature had already closed, if they don't route through the same centralized check.
+- **Log permission denials**, not just permission grants — a pattern of denied requests against a specific document or account is a useful signal that either something is misconfigured or someone is deliberately probing for a gap.
+
+**Why this matters more for AI-assisted development specifically:** a coding tool asked to "add a bulk-export feature" will build exactly that, calling whatever data-access pattern seems reasonable for the request — it has no inherent memory that a separate feature elsewhere in the same product already established a specific permission rule that the new feature should also respect. Centralizing the check is what makes that memory structural, rather than depending on a founder or the AI tool remembering it feature by feature.
 
 ## Real example
 

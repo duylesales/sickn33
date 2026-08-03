@@ -22,6 +22,8 @@ Target Persona: Technical Solo Founder
 
 Before: a beautifully designed AI frontend, built in a weekend with v0 or Bolt, running smoothly for a founder in Almere — the Netherlands' youngest major city, built on reclaimed Flevoland polder and still growing faster than almost anywhere else in the country. After: the same frontend, three weeks post-launch, throwing intermittent errors, losing form submissions, and quietly serving stale data to half its users — because nobody ever built a real backend behind it. This is the single most common failure mode we see among technical solo founders, and it's almost never a frontend problem.
 
+It's an easy trap to fall into precisely because the feedback loop is so misleading. When you're the only person using your own app, every request is sequential by definition — you can't accidentally send two conflicting writes at once, because there's only one of you. The frontend looks finished, the demo looks finished, and the natural conclusion is that the product is finished. What that conclusion misses is that "finished for one user" and "finished for concurrent users" are architecturally different problems, and AI coding tools are optimized almost entirely for the first one.
+
 ## Before: what an AI frontend actually gives you
 
 Modern AI frontend tools are genuinely excellent at what they do. v0 generates production-quality React components. Bolt scaffolds entire interactive interfaces with working state management. A technical founder in Almere can go from a Figma sketch to a polished, responsive interface faster than any human team could reasonably match. The visual layer — the part users actually see and judge you on — is often the easiest part of the modern build process.
@@ -37,6 +39,20 @@ This is where LaunchStudio comes in. We don't touch the frontend — the interfa
 ## Why Almere's growth curve makes this urgent
 
 Almere is one of the fastest-growing cities in the Netherlands and a hub for young entrepreneurs and tech-forward small businesses within Flevoland — a province defined by its relatively recent land reclamation and a culture of building things from scratch. That same "build it from nothing" energy that makes Almere such a fertile ground for new startups also means founders here move fast and don't always pause to ask what's structurally underneath their product. If you want a clearer sense of what a proper backend build costs for your specific frontend, our [calculator](https://launchstudio.eu/en/#calculator) gives a realistic estimate. For a look at Manifera's broader backend and web application engineering work, see [Manifera's web app development page](https://www.manifera.com/services/web-app-develop/).
+
+## Signs Your Backend Wasn't Built for Concurrent Users
+
+A frontend can look completely finished and still be sitting on a backend that has only ever handled one user at a time — sequentially, never simultaneously. Because AI tools test their own output in a single-session environment by default, this gap is invisible until real traffic arrives. Here's how to check for it before real users find it for you.
+
+**Open two browser tabs and edit the same record in both.** Log in as the same test account (or two accounts with access to the same shared record) in two separate tabs, change something in one, then save the change in the other. If the second save silently overwrites the first with no warning, no merge, and no conflict message, your backend has no concurrency handling — a problem for anything collaborative, from shared documents to team dashboards.
+
+**Watch what happens under a burst of requests.** Tools like k6 or even a simple script firing 50 requests at your signup or checkout endpoint in quick succession will reveal whether your database connections are pooled properly. Symptoms of a missing pool: requests that start timing out around the same concurrency threshold every time, or a backend that simply stops responding until existing connections free up.
+
+**Check whether your writes are wrapped in transactions.** If an operation touches multiple tables — creating an order and decrementing inventory, for example — and only half of it completes before a crash or timeout, do you end up with an order that exists but inventory that was never adjusted? That's a missing transaction boundary, and AI-generated backend code frequently treats multi-step writes as independent operations rather than atomic units.
+
+**Look for loading states that never resolve.** A "loading spinner that spins forever" is usually a symptom of an unhandled promise rejection or an API call with no timeout configured. It looks like a frontend bug, but it's almost always a backend request that failed silently with nothing communicating that failure back to the interface.
+
+None of these checks require rewriting anything — they're diagnostic, not corrective. But running them deliberately, before a real concurrency spike does it for you, is the difference between finding a problem on a quiet Tuesday afternoon and finding it during your first real traffic surge.
 
 ## Real example
 
@@ -72,6 +88,9 @@ Manifera's engineering team of 120+ engineers, with development capacity based i
 ### What's a realistic budget for a backend rebuild?
 Most projects range from €800 to €7,500 depending on complexity, delivered in one to three weeks — roughly a fifth of what a traditional development agency would charge.
 
+### How can I test for concurrency problems myself before contacting anyone?
+Open your app in two browser tabs logged in as the same or related accounts, and try editing the same record in both. If one save silently overwrites the other with no warning, that's a clear sign your backend has no concurrency handling in place.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,7 +100,8 @@ Most projects range from €800 to €7,500 depending on complexity, delivered i
     { "@type": "Question", "name": "How do I know if my Almere-built frontend has a backend problem?", "acceptedAnswer": { "@type": "Answer", "text": "Warning signs include intermittent errors under load, disappearing or reverting data, and worsening performance as users grow." } },
     { "@type": "Question", "name": "Does LaunchStudio work with founders outside Almere and Flevoland?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio serves founders across the Netherlands and Benelux, though this pattern is common in Almere's fast-growing startup community." } },
     { "@type": "Question", "name": "Who builds the backend infrastructure?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineering team of 120+ engineers, with development capacity based in Ho Chi Minh City." } },
-    { "@type": "Question", "name": "What's a realistic budget for a backend rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "Most projects range from €800 to €7,500, delivered in one to three weeks." } }
+    { "@type": "Question", "name": "What's a realistic budget for a backend rebuild?", "acceptedAnswer": { "@type": "Answer", "text": "Most projects range from €800 to €7,500, delivered in one to three weeks." } },
+    { "@type": "Question", "name": "How can I test for concurrency problems myself?", "acceptedAnswer": { "@type": "Answer", "text": "Open the app in two tabs logged in as related accounts and edit the same record in both. A silent overwrite with no warning signals missing concurrency handling." } }
   ]
 }
 </script>

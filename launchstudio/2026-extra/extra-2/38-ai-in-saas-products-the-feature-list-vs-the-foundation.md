@@ -35,7 +35,7 @@ Every AI in SaaS marketing page reads like a feature list — automated payroll 
 
 ## The Feature List: What Gets a Demo to Land Well
 
-A payroll SaaS product's feature list — automated calculations, approval workflows, direct deposit integration — is what wins a founder their first customers, and AI coding tools are genuinely effective at building exactly this kind of feature list quickly and correctly. None of it is misleading; it's simply answering a different question than the foundation question.
+A payroll SaaS product's feature list — automated calculations, approval workflows, direct deposit integration — is what wins a founder their first customers, and AI coding tools are genuinely effective at building exactly this kind of feature list quickly and correctly. None of it is misleading; it's simply answering a different question than the foundation question. A demo audience — an early customer, an investor, a beta tester — evaluates a product almost entirely on this list, because it's what's visible and what maps directly onto their day-to-day problem, which is exactly why founders reasonably invest their limited early time and attention here first.
 
 ## The Foundation: What a Procurement Review Actually Checks
 
@@ -47,7 +47,7 @@ Adding two-factor authentication introduces friction to the login and approval f
 
 ## Why This Gap Specifically Threatens Deals, Not Just Security
 
-Unlike many of the gaps covered elsewhere in this discussion, missing two-factor authentication on sensitive actions doesn't just represent an abstract security risk — for a SaaS product targeting business customers, it can be a literal deal-blocker, since many procurement processes treat it as a non-negotiable baseline requirement rather than a nice-to-have, regardless of how strong the rest of the feature list is.
+Unlike many of the gaps covered elsewhere in this discussion, missing two-factor authentication on sensitive actions doesn't just represent an abstract security risk — for a SaaS product targeting business customers, it can be a literal deal-blocker, since many procurement processes treat it as a non-negotiable baseline requirement rather than a nice-to-have, regardless of how strong the rest of the feature list is. A sales conversation that's progressed through demos, pricing discussions, and a verbal commitment can still stall entirely at the security questionnaire stage, often weeks after the actual buying decision was effectively made, which makes this a uniquely late and uniquely frustrating place for a foundational gap to surface.
 
 ## Why Payroll-Adjacent Products Face This Question Especially Directly
 
@@ -60,6 +60,18 @@ Adding two-factor authentication specifically to sensitive, high-risk actions �
 Manifera's enterprise-readiness authentication work is delivered through the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations run through the Amsterdam headquarters at Herengracht 420.
 
 [Get going — production-ready in weeks, not months](https://launchstudio.eu/en/#contact).
+
+## What Else Shows Up on an Enterprise Procurement Checklist
+
+Two-factor authentication on sensitive actions is one line on a longer list that a growing SaaS product should expect to face once it starts selling to larger, more security-conscious customers. Common additional items include:
+
+- **Audit logging** — a durable, reviewable record of who did what and when, particularly for sensitive actions like approving a payment or changing a permission level, which procurement teams often specifically ask to see a sample of, not just confirm exists in principle.
+- **Encryption at rest** — confirmation that stored data, not just data in transit, is encrypted using an accepted standard, which is a database configuration question rather than an application feature, and easy to overlook if it wasn't specifically set up during initial deployment.
+- **Single sign-on (SSO) support** — larger organizations often require employees to log into every tool through a centralized identity provider rather than a separate username and password, and a product without SSO support can be a hard blocker for security teams that mandate it as policy, independent of how good the rest of the product is.
+- **Data residency and retention policies** — clear, documented answers to where data is physically stored and how long it's retained after an account is closed, which smaller products often haven't formalized simply because nobody has asked yet.
+- **A completed security questionnaire or SOC 2 report** — larger deals increasingly require a standardized vendor security questionnaire response, and having clear, accurate, pre-prepared answers meaningfully speeds up a procurement review that would otherwise stall waiting on ad hoc answers gathered under deal pressure.
+
+None of these need to exist before a first sale to a smaller customer — building them all preemptively would be wasted early-stage effort. The judgment call is recognizing when a product has crossed into targeting customers large enough that these stop being optional, and addressing them proactively rather than discovering the list one stalled deal at a time.
 
 ## Real example
 
@@ -99,6 +111,10 @@ Very well — Gijs's product was functionally excellent and commercially appeali
 ### Is it worth implementing two-factor authentication proactively before actually needing it for a specific deal, or reasonable to wait until it's requested?
 
 Implementing it proactively, once a product starts actively targeting larger business customers, avoids the specific risk of a live, time-sensitive deal stalling exactly when it matters most — waiting until it's explicitly requested means the fix competes directly with the pressure of an active negotiation, which is rarely the ideal time to be implementing new security infrastructure.
+
+### Beyond two-factor authentication, what's the single most common procurement blocker for a growing SaaS product?
+
+Audit logging is a close contender, specifically because it's easy to skip early (there's no visible feature to demo) and expensive to retrofit properly later, since a durable log of who-did-what needs to have been recording from early on to be useful during a review that often asks for historical examples, not just proof the capability now technically exists.
 
 <script type="application/ld+json">
 {
@@ -143,6 +159,14 @@ Implementing it proactively, once a product starts actively targeting larger bus
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Proactively, since waiting until requested means the fix competes with the pressure of an active, time-sensitive deal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the single most common procurement blocker besides two-factor authentication?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Audit logging — it's easy to skip early and expensive to retrofit, since reviews often ask for historical records, not just current capability."
       }
     }
   ]

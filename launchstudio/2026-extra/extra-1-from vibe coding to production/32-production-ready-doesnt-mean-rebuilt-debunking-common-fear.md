@@ -47,7 +47,7 @@ Your frontend — the interface, the interactions, the visual design you refined
 
 ## The Specific Cases Where Something Closer to Rebuilding Actually Is Warranted
 
-This isn't an absolute claim that rebuilding is never appropriate. Genuinely poor architectural decisions — a data model that fundamentally can't support your product's actual requirements, not just needs hardening around the edges — occasionally do warrant more substantial restructuring. But this is meaningfully rarer than the fear suggests, and a proper audit, the kind covered throughout this series, distinguishes clearly between "needs hardening" and "needs restructuring" rather than defaulting to the more dramatic, more expensive assumption without actually examining the specific codebase first.
+This isn't an absolute claim that rebuilding is never appropriate. Genuinely poor architectural decisions — a data model that fundamentally can't support your product's actual requirements, not just needs hardening around the edges — occasionally do warrant more substantial restructuring. A concrete example: a prototype built around a data model that stores each customer's data as a single flat record with no way to represent multiple users belonging to the same account genuinely can't be patched into supporting team accounts later without restructuring how that data is organized, since the limitation is structural, not a missing feature bolted onto an otherwise sound foundation. But this is meaningfully rarer than the fear suggests, and a proper audit, the kind covered throughout this series, distinguishes clearly between "needs hardening" and "needs restructuring" rather than defaulting to the more dramatic, more expensive assumption without actually examining the specific codebase first.
 
 ## Why an Audit-First Approach Specifically Addresses This Fear
 
@@ -56,6 +56,21 @@ The reason a scoped audit, rather than a generic proposal, is the right starting
 ## What This Means for How You Should Evaluate Any Production-Readiness Proposal
 
 A proposal that immediately jumps to "let's rebuild this properly" without first auditing your specific codebase is worth being skeptical of, not because rebuilding is never the right call, but because the correct sequence is audit first, recommendation second — a provider proposing the more dramatic, more expensive path before actually examining what you've built hasn't done the work needed to justify that recommendation yet.
+
+## What a Typical Hardening Engagement's Change Log Actually Looks Like
+
+Abstract reassurance that "nothing gets rebuilt" is less convincing than seeing what the actual change log of a typical hardening engagement contains. Across the kind of Lovable, Bolt, and Cursor-generated prototypes covered throughout this series, a representative engagement's changes cluster into a narrow, predictable set.
+
+**What the diff usually contains:**
+- A handful of new environment variable references replacing hardcoded API keys and connection strings, typically under a dozen lines changed across the whole codebase.
+- New server-side middleware or route guards added around existing API endpoints, without altering what those endpoints actually do once a request is authorized.
+- Try/catch blocks and structured error responses wrapped around existing external service calls, rather than any change to the calls themselves.
+- A handful of new database indexes or a backup configuration addition, neither of which touches the schema's actual shape.
+- A new CI configuration file and a folder of test scripts, entirely additive since nothing like it existed before.
+
+**What the diff essentially never contains,** in a genuinely hardening-scoped engagement: changes to your component tree, your styling, your core prompt logic, or the actual sequence of screens a user moves through. A founder who reviews the actual pull request from a hardening engagement, rather than just trusting a description of it, can verify this directly — the changed files cluster almost entirely in configuration, middleware, and a new tests folder, while the files defining what your product looks like and does remain untouched.
+
+This is worth asking for explicitly: a provider willing to show you the actual diff, not just describe the work in general terms, gives you something concretely checkable rather than another verbal reassurance to take on faith.
 
 [LaunchStudio](https://launchstudio.eu/en/) starts every engagement with exactly this kind of scoped audit, hardening what exists rather than defaulting to a rebuild, and being transparent about the rare cases where restructuring genuinely is warranted, backed by Manifera's engineering discipline across 160+ delivered projects of hardening, not just building from scratch.
 

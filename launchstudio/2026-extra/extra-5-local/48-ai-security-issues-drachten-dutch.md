@@ -1,17 +1,18 @@
 ---
-Titel: "De meest voorkomende AI-beveiligingsproblemen in door oprichters gebouwde prototypes in Drachten"
+Titel: "De meest voorkomende AI-beveiligingsproblemen in Drachtster door oprichters gebouwde prototypes"
 Trefwoorden: ai security issues, ai generated code vulnerabilities, prototype security, Drachten
 Koperfase: Overweging
 Doelgroep: Niet-technische oprichter
 ---
-# De meest voorkomende AI-beveiligingsproblemen in door oprichters gebouwde prototypes in Drachten
+
+# De meest voorkomende AI-beveiligingsproblemen in Drachtster door oprichters gebouwde prototypes
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "De meest voorkomende AI-beveiligingsproblemen in door oprichters gebouwde prototypes in Drachten",
-  "description": "Een overzicht van de AI-beveiligingsproblemen die het vaakst voorkomen in door oprichters gebouwde prototypes, gebaseerd op echte beoordelingen van apps gebouwd door oprichters rond Drachten.",
+  "headline": "De meest voorkomende AI-beveiligingsproblemen in Drachtster door oprichters gebouwde prototypes",
+  "description": "Een overzicht van de AI-beveiligingsproblemen die het meest verschijnen in door oprichters gebouwde prototypes, ontleend aan echte beoordelingen van apps gebouwd door oprichters rond Drachten.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
@@ -19,83 +20,94 @@ Doelgroep: Niet-technische oprichter
 }
 </script>
 
-Na genoeg door AI gegenereerde prototypes te hebben beoordeeld, worden patronen snel duidelijk. Dezelfde handvol AI-beveiligingsproblemen duikt op in bijna elke codebase gebouwd met Lovable, Bolt, Cursor of v0, ongeacht wat de app daadwerkelijk doet. Oprichters die bouwen vanuit Drachten — een stad met diepe wortels in productie en productontwerp, decennialang thuisbasis voor grootschalige productie en engineeringwerk — denken doorgaans in termen van fysieke productkwaliteitscontrole. Datzelfde instinct wordt zelden toegepast op de software die ze bouwen, en dat is meestal waar het gat ontstaat.
+Na het beoordelen van voldoende met AI gegenereerde prototypes verschijnen er snel patronen. Dezelfde handvol AI-beveiligingsproblemen verschijnt in bijna elke codebase gebouwd met Lovable, Bolt, Cursor of v0, ongeacht wat de app daadwerkelijk doet. Oprichters die bouwen vanuit Drachten — een stad met diepe wortels in productie en productontwerp, al decennia lang de thuisbasis van grootschalige productie- en engineeringwerkzaamheden, en nog steeds een basis voor serieuze industriële en mechatronica-bedrijven — hebben de neiging te denken in termen van kwaliteitscontrole op fysieke producten. Een fabrikant zou een product niet verzenden zonder toleranties te controleren, te testen onder belasting, en te inspecteren op defecten voordat het een klant bereikt. Datzelfde instinct wordt zelden toegepast op de software die ze bouwen, en dat is doorgaans waar het gat ontstaat — niet omdat oprichters kwaliteit niet waarderen, maar omdat niemand hen heeft geleerd hoe "kwaliteitscontrole" eruitziet voor code.
 
-## Probleem één: gegevens vertrouwen die de client verstuurt
+## Probleem één: Gegevens vertrouwen die de client verstuurt
 
-Het meest voorkomende probleem dat wij vinden, is code die informatie vertrouwt die vanuit de browser van de gebruiker komt in plaats van deze op de server te verifiëren. Een formulierveld, een verborgen invoerveld, een verzoekparameter — als de app een waarde zoals "role: admin" leest van wat de browser stuurt en er zonder dubbele controle tegen het daadwerkelijke databaserecord naar handelt, kan iedereen die weet hoe hij de ontwikkelaarstools van de browser opent, zichzelf mogelijk verhoogde toegang toekennen. AI-codeertools genereren dit patroon voortdurend, omdat het de eenvoudigste manier is om een functie "te laten werken" tijdens het testen.
+Het meest voorkomende probleem dat we vinden is code die informatie vertrouwt die afkomstig is uit de browser van de gebruiker in plaats van deze op de server te verifiëren. Een formulierveld, een verborgen invoer, een parameter in het verzoek — als de app een waarde zoals "rol: admin" leest uit wat de browser verstuurt en daarnaar handelt zonder dubbel te controleren tegen het daadwerkelijke databaserecord, kan iedereen die weet hoe ontwikkelaarstools in de browser geopend moeten worden zichzelf potentieel hogere toegang verlenen. AI-codingtools genereren dit patroon constant, omdat het de eenvoudigste manier is om een functie te laten "werken" tijdens het testen.
 
-## Probleem twee: authenticatie die aanwezig is maar niet overal wordt afgedwongen
+## Probleem twee: Authenticatie die aanwezig is maar niet overal wordt afgedwongen
 
-Veel door AI gebouwde apps hebben een inlogscherm en lijken authenticatie te vereisen — maar individuele pagina's of API-routes eronder controleren soms niet daadwerkelijk of er een geldige sessie is voordat ze gegevens teruggeven. Dit gebeurt omdat elk scherm vaak in een aparte prompt of sessie werd gebouwd, en de AI-tool past dezelfde bescherming niet automatisch consistent toe op elke nieuwe pagina die hij genereert.
+Veel met AI gebouwde apps hebben een inlogscherm en lijken authenticatie te vereisen — maar individuele pagina's of API-routes eronder controleren soms niet daadwerkelijk op een geldige sessie voordat ze data retourneren. Dit gebeurt omdat elke pagina vaak in een afzonderlijke prompt of sessie werd gebouwd, en de AI-tool past dezelfde bescherming niet automatisch consistent toe over elke nieuwe pagina die het genereert. Een oprichter die authenticatie correct heeft toegevoegd aan zijn eerste tien pagina's kan eenvoudig een elfde pagina toevoegen tijdens een nachtelijke sessie, dezelfde controle vergeten, en het nooit opmerken, omdat de pagina nog steeds rendert en perfect functioneert voor de oprichter, die toch altijd al is ingelogd.
 
-## Probleem drie: databaseregels losser dan ze lijken
+## Probleem drie: Databaseregels die losser zijn dan ze lijken
 
-Moderne AI-tools verbinden apps vaak met beheerde databases met ingebouwde beveiligingsregels. Die regels staan standaard op permissief tenzij iemand ze expliciet aanscherpt — en het aanscherpen ervan vereist begrip van het permissiemodel van de database, iets wat de meeste niet-technische oprichters in Drachten (of waar dan ook) nooit hebben geleerd en wat de AI-tool niet ongevraagd uitlegt.
+Moderne AI-tools verbinden apps regelmatig met beheerde databases met ingebouwde beveiligingsregels. Die regels kiezen standaard voor vergevingsgezinde instellingen tenzij iemand ze expliciet aanscherpt — en het aanscherpen ervan vereist het begrijpen van het machtigingsmodel van de database, wat de meeste niet-technische oprichters in Drachten (of waar dan ook) nooit is geleerd en de AI-tool niet ongevraagd uitlegt.
 
-## Probleem vier: geheimen die voor het oog liggen
+## Probleem vier: Geheimen die in het volle zicht zitten
 
-API-sleutels en inloggegevens voor diensten van derden komen vaak rechtstreeks terecht in frontend-code, omdat dat de snelste weg naar een werkende functie is. Iedereen die de paginabron bekijkt, kan ze vinden. Dit is een van de meest voorkomende en meest vermijdbare AI-beveiligingsproblemen die wij tegenkomen, en het is bijna altijd onzichtbaar voor de oprichter omdat de app vanuit zijn perspectief nog steeds perfect werkt.
+API-sleutels en inloggegevens voor diensten van derden eindigen regelmatig rechtstreeks ingebed in frontendcode, omdat dat het snelste pad is naar een werkende functie. Iedereen die de paginabron bekijkt kan ze vinden. Dit is een van de meest voorkomende en meest vermijdbare AI-beveiligingsproblemen die we tegenkomen, en het is vrijwel altijd onzichtbaar voor de oprichter omdat de app vanuit hun oogpunt nog steeds perfect werkt.
 
-## Waarom dit meer telt zodra u echte gebruikers heeft
+## Probleem vijf: Geen limiet op hoe vaak iemand het kan proberen
 
-Geen van deze vier problemen zijn hypothetisch. Onderzoek toont consequent aan dat een groot deel van de door AI gegenereerde code — onze eigen beoordelingen plaatsen het cijfer op ongeveer 45% — minstens één uitbuitbaar beveiligingsgat van precies dit soort bevat. Voor een oprichter in de provincie Friesland die een planning- of personeelstool bouwt voor lokale productiewerkgevers, is dat geen abstracte statistiek. Het is het verschil tussen een soepele productlancering en een ongemakkelijk gesprek met een werkgeversklant over waarom werknemersgegevens werden blootgesteld.
+Het vijfde patroon toont zich minder vaak bij een eerste beoordeling, maar doet er exact evenveel toe zodra een app echte gebruikers heeft: geen rate limiting op inlogpogingen, verzoeken tot wachtwoordherstel, of API-calls. Zonder dat stopt niets een geautomatiseerd script om duizenden wachtwoordcombinaties uit te proberen tegen een enkel account, of een API-eindpunt te bestoken totdat het door louter herhaling een gat vindt. AI-codingtools bouwen het inlogformulier en de "wachtwoord vergeten"-stroom omdat die expliciet werden aangevraagd. Ze voegen zelden een limiet toe op hoe vaak elk kan worden geprobeerd, omdat een werkende demo alleen ooit één legitieme poging omvat, en nooit een script dat er tienduizend maakt.
 
-De engineers van LaunchStudio hebben 160+ projecten geleverd voor zakelijke klanten en doorlopen precies deze checklist bij prototypes van oprichters, waarbij het technische beoordelingswerk deels vanuit ons kantoor in Singapore wordt gecoördineerd. Wij repareren wat wij vinden achter uw bestaande interface — geen herbouw nodig. U kunt beginnen met het verkennen van [wat LaunchStudio doet](https://launchstudio.eu/en/) en hoe een beoordeling past in het productiegereed maken van uw prototype. Voor een blik op de bredere engineeringtrack record van Manifera, zie onze praktijk [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+## Waarom dit zwaarder weegt zodra u echte gebruikers heeft
 
-## Een tien-minutentest voordat u iemand belt
+Geen van deze vijf problemen is hypothetisch. Onderzoek toont consistent dat een groot deel van de met AI gegenereerde code — onze eigen beoordelingen stellen het getal op ongeveer 45% — ten minste één misbruikbaar beveiligingsgat draagt van exact dit type, en het is zelden slechts één probleem in isolatie. Prototypes die we beoordelen tonen doorgaans twee of drie van deze vijf patronen samen, aangezien ze neigen voort te komen uit dezelfde onderliggende gewoonte: bouwen voor het succespad dat een demo doorloopt, en niet voor het vijandige pad dat een echte aanvaller zou proberen. Voor een oprichter in de provincie Friesland die een planningstool voor personeel bouwt voor lokale industriële werkgevers is dat geen abstracte statistiek. Het is het verschil tussen een soepele productlancering en een ongemakkelijk gesprek met een werkgever-klant over waarom werknemersgegevens werden blootgesteld.
 
-Probeer deze vier dingen zelf: open de ontwikkelaarstools van uw browser en bekijk de paginabron voor eventuele API-sleutels. Probeer bij een pagina te komen die inloggen zou moeten vereisen zonder ingelogd te zijn. Vraag een technische vriend om een verborgen formulierveld te wijzigen en kijk of dit verandert wat u mag doen. Als een van deze iets onverwachts onthult, is dat het startpunt voor een goede beoordeling, geen reden om in paniek te raken.
+LaunchStudio's engineers hebben 160+ projecten opgeleverd voor enterprise-klanten en doorlopen exact deze checklist op prototypes van oprichters, waarbij het technische beoordelingswerk deels wordt gecoördineerd vanuit ons kantoor in Singapore. We herstellen wat we vinden achter uw bestaande interface — er is geen heropbouw vereist. U kunt beginnen met het verkennen van [wat LaunchStudio doet](https://launchstudio.eu/en/) en hoe een beoordeling past in het productiegereed maken van uw prototype. Voor een blik op Manifera's bredere engineering-trackrecord, zie onze [web app development](https://www.manifera.com/services/web-app-develop/) praktijk.
+
+## Een zelfcontrole van tien minuten voordat u met iemand belt
+
+Probeer deze vijf dingen zelf: open de ontwikkelaarstools van uw browser en bekijk de paginabron voor eventuele API-sleutels. Probeer toegang te krijgen tot een pagina die inloggen zou moeten vereisen zonder ingelogd te zijn. Vraag een technische vriend om te proberen een verborgen formulierveld te wijzigen en te kijken of het verandert wat u mag doen. Probeer tien keer achter elkaar een verkeerd wachtwoord in te voeren op uw eigen inlogformulier en kijk of iets u stopt. Als een van deze dingen iets onverwachts onthult, is dat het startpunt voor een deugdelijke beoordeling, en geen reden tot paniek.
+
+## Hoe prioriteit te geven aan herstel wanneer u niet alles tegelijk kunt herstellen
+
+Zodra een beoordeling meerdere problemen naar boven brengt, is de natuurlijke vervolgvraag welke als eerste hersteld moet worden — en het antwoord is niet altijd "allemaal, onmiddellijk," vooral niet voor een oprichter met een beperkt budget en een naderende lanceringsdatum. Een eenvoudige manier om prioriteiten te stellen is het afwegen van twee dingen voor elk probleem: hoe eenvoudig zou het voor iemand zijn om het te vinden en te misbruiken, en hoeveel schade zou het veroorzaken als ze dat deden.
+
+**Een globaal kader dat in de praktijk standhoudt:**
+
+- **Onmiddellijk herstellen** — alles wat persoonsgegevens, betalingsinformatie of beheerdertoegang blootlegt aan een niet-geauthenticeerde of onvoldoende geauthenticeerde gebruiker. Dit betreft Probleem Eén tot en met Drie hierboven in de meeste Drachtster prototypes die we beoordelen, en de fix wordt doorgaans gemeten in uren, en niet in weken.
+- **Herstellen vóór de lancering, maar niet noodzakelijkerwijs vandaag** — blootgestelde geheimen die nog niet misbruikt zijn, en ontbrekende rate limiting op eindpunten met een lager risico. Nog steeds het waard om te dichten voordat echte gebruikers verschijnen, maar minder urgent dan een actieve datablootstelling.
+- **Kort na de lancering herstellen indien echt beperkt in tijd** — verharding die het risico verder verlaagt maar op dit moment niet op een duidelijke manier misbruikbaar is, zoals het toevoegen van aanvullende logging of het aanscherpen van een al werkende machtigingscontrole.
+
+De fout die vermeden moet worden is het behandelen van elke bevinding als even urgent, wat ertoe leidt dat oprichters bevriezen en niets herstellen, of een onevenredig deel van hun budget besteden aan een probleem met een laag risico terwijl een oprecht ernstig probleem blijft wachten. Een kort gesprek met degene die de beoordeling heeft uitgevoerd, waarin gevraagd wordt de bevindingen op deze manier expliciet te rangschikken, verheldert het beeld doorgaans binnen enkele minuten.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: ShiftHub, Drachten
+### Een AI-Native oprichter in actie: ShiftHub, Drachten
 
-Sietse Postma bouwde ShiftHub, een dienstroosterapp voor productiewerkgevers rond Drachten, met v0, om snel vooruitgang te boeken met een tool die zijn eigen voormalige werkgever hem had gevraagd te pilotten. De app liet managers loonadjacent dienstroostergegevens van hun teams bekijken. Tijdens een beveiligingsbeoordeling ontdekten de engineers van LaunchStudio dat de rol van een gebruiker — werknemer of manager — rechtstreeks werd gelezen uit een waarde die door de browser werd verstuurd in plaats van geverifieerd tegen de database, wat betekende dat elke gewone werknemer een verzoek kon aanpassen en zichzelf managerniveau-toegang kon toekennen tot de dienstrooster- en loongegevens van zijn collega's.
+Sietse Postma bouwde ShiftHub, een app voor ploegenplanning voor industriële werkgevers rond Drachten, met behulp van v0 om snel te bewegen op een tool waar zijn eigen voormalige werkgever hem om had gevraagd te proefdraaien. De app liet managers ploegengegevens gerelateerd aan de salarisadministratie voor hun teams bekijken. Tijdens een beveiligingsbeoordeling ontdekten LaunchStudio's engineers dat de rol van een gebruiker — werknemer of manager — rechtstreeks werd gelezen uit een waarde die door de browser werd verzonden in plaats van geverifieerd te worden tegen de database, wat betekende dat elke reguliere werknemer een verzoek kon aanpassen en zichzelf beheerderstoegang kon verlenen tot de ploegen- en loongegevens van zijn collega's.
 
-LaunchStudio bouwde het autorisatiesysteem opnieuw op, zodat elke rolcontrole server-side plaatsvindt tegen geverifieerde accountgegevens, zonder afhankelijkheid van wat de client stuurt, en voegde logging toe om elke toekomstige poging tot privilege-escalatie te signaleren.
+LaunchStudio herbouwde het autorisatiesysteem zodat elke rolcontrole aan de serverzijde plaatsvindt tegen geverifieerde accountgegevens, zonder enige afhankelijkheid van wat de client verzendt, en voegde logging toe om elke toekomstige poging tot escalatie van privileges te signaleren.
 
-**Resultaat:** ShiftHub handhaaft nu rolgebaseerde toegang volledig server-side, waarmee het pad naar privilege-escalatie werd gedicht voordat het een levende productieklant bereikte.
+**Resultaat:** ShiftHub dwingt rolgebaseerde toegang nu volledig aan de serverzijde af, waarbij het pad voor escalatie van privileges werd gesloten voordat het een live industriële klant bereikte.
 
-> *"Ik had geen idee dat iemand gewoon een verzoek kon bewerken en manager kon worden in mijn eigen app. LaunchStudio vond het voordat ik mijn eerste echte werkgeversklant tekende."*
-> — **Sietse Postma, oprichter, ShiftHub (Drachten)**
+> *"Ik had geen idee dat iemand simpelweg een verzoek kon bewerken en manager kon worden in mijn eigen app. LaunchStudio vond het voordat ik mijn eerste echte werkgever-klant ondertekende."*
+> — **Sietse Postma, Oprichter, ShiftHub (Drachten)**
 
-**Kosten en tijdlijn:** € 740 (herbouw autorisatie, server-side rolverificatie, beveiligingslogging) — voltooid in 4 werkdagen.
+**Kosten & Doorlooptijd:** € 740 (herstructurering autorisatie, rolverificatie aan serverzijde, beveiligingslogging) — afgerond in 4 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
 ### Wat is het meest voorkomende AI-beveiligingsprobleem dat u vindt?
+Het vertrouwen van gegevens verzonden vanuit de browser in plaats van deze aan de serverzijde te verifiëren, vooral rondom gebruikersrollen en machtigingen, is het meest frequente probleem in de prototypes die we beoordelen.
 
-Gegevens vertrouwen die vanuit de browser worden verstuurd in plaats van ze server-side te verifiëren, vooral rond gebruikersrollen en rechten, is het meest voorkomende probleem in de prototypes die wij beoordelen.
+### Kan ik zelf op deze problemen controleren zonder technische kennis?
+U kunt een basale zelfcontrole uitvoeren, zoals het bekijken van de paginabron voor blootgestelde API-sleutels, maar een volledige beoordeling vereist iemand die begrijpt hoe de autorisatie- en databaseregels van de app daadwerkelijk werken.
 
-### Kan ik deze problemen zelf controleren zonder technische kennis?
+### Wie voert LaunchStudio's beveiligingsbeoordelingen uit?
+Manifera's engineeringteam, met 11+ jaar ervaring en werk deels gecoördineerd vanuit ons kantoor in Singapore, beoordeelt elk prototype dat bij LaunchStudio binnenkomt.
 
-U kunt een basiscontrole zelf uitvoeren, zoals het bekijken van de paginabron voor blootgestelde API-sleutels, maar een volledige beoordeling vereist iemand die begrijpt hoe de autorisatie en databaseregels van de app daadwerkelijk werken.
+### Vereist het herstellen van deze problemen een heropbouw van mijn app?
+Nee, herstelwerkzaamheden vinden plaats achter uw bestaande frontend. Uw app ziet er voor gebruikers hetzelfde uit en voelt hetzelfde aan; de onderliggende logica wordt veilig.
 
-### Wie voert de beveiligingsbeoordelingen van LaunchStudio uit?
-
-Het engineeringteam van Manifera, met meer dan 11 jaar ervaring en werk dat deels gecoördineerd wordt vanuit ons kantoor in Singapore, beoordeelt elk prototype dat via LaunchStudio binnenkomt.
-
-### Vereist het oplossen van deze problemen dat mijn app opnieuw wordt gebouwd?
-
-Nee, oplossingen gebeuren achter uw bestaande frontend. Uw app ziet er voor gebruikers hetzelfde uit en voelt hetzelfde aan; de onderliggende logica wordt veilig.
-
-### Beoordeelt u prototypes van oprichters specifiek in Drachten?
-
-Ja, en van oprichters in heel Friesland en de rest van Nederland. Dezelfde beoordelingsstandaard geldt ongeacht locatie.
+### Beoordeelt u specifiek prototypes van oprichters in Drachten?
+Ja, en van oprichters in heel Friesland en de rest van Nederland. Dezelfde beoordelingsnorm geldt ongeacht de locatie.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What's the single most common AI security issue you find?", "acceptedAnswer": { "@type": "Answer", "text": "Trusting data sent from the browser instead of verifying it server-side, especially around user roles and permissions, is the most frequent issue found." } },
-    { "@type": "Question", "name": "Can I check for these issues myself without technical knowledge?", "acceptedAnswer": { "@type": "Answer", "text": "A basic self-check like viewing page source for exposed API keys is possible, but a full review requires someone who understands the app's authorization and database rules." } },
-    { "@type": "Question", "name": "Who performs LaunchStudio's security reviews?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineering team, with 11+ years of experience and work coordinated in part from the Singapore office, reviews every prototype that comes through LaunchStudio." } },
-    { "@type": "Question", "name": "Does fixing these issues require rebuilding my app?", "acceptedAnswer": { "@type": "Answer", "text": "No, fixes happen behind the existing frontend, so the app looks and feels the same to users while the underlying logic becomes secure." } },
-    { "@type": "Question", "name": "Do you review prototypes from founders in Drachten specifically?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and from founders throughout Friesland and the rest of the Netherlands, with the same review standard applied regardless of location." } }
+    { "@type": "Question", "name": "Wat is het meest voorkomende AI-beveiligingsprobleem dat u vindt?", "acceptedAnswer": { "@type": "Answer", "text": "Het vertrouwen van gegevens verzonden vanuit de browser in plaats van deze aan de serverzijde te verifiëren." } },
+    { "@type": "Question", "name": "Kan ik zelf op deze problemen controleren zonder technische kennis?", "acceptedAnswer": { "@type": "Answer", "text": "Een basale controle zoals het bekijken van de paginabron voor API-sleutels is mogelijk, maar een volledige beoordeling vereist technische kennis van autorisatie en databaseregels." } },
+    { "@type": "Question", "name": "Wie voert LaunchStudio's beveiligingsbeoordelingen uit?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineeringteam met 11+ jaar ervaring, deels gecoördineerd vanuit het kantoor in Singapore." } },
+    { "@type": "Question", "name": "Vereist het herstellen van deze problemen een heropbouw van mijn app?", "acceptedAnswer": { "@type": "Answer", "text": "Nee, herstelwerkzaamheden vinden plaats achter uw bestaande frontend, waardoor het uiterlijk voor gebruikers gelijk blijft." } },
+    { "@type": "Question", "name": "Beoordeelt u specifiek prototypes van oprichters in Drachten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, en van oprichters in heel Friesland en de rest van Nederland met dezelfde beoordelingsnorm." } }
   ]
 }
 </script>

@@ -39,11 +39,11 @@ Adding a route that shows internal application state — recent requests, error 
 
 ## Why "Before Anything Goes Live" Rarely Has a Specific Trigger
 
-There's no natural moment in a fast-moving AI-assisted build where a founder is prompted to specifically revisit and remove earlier debugging aids — features keep getting added, the product keeps evolving, and the original debug route simply keeps existing in the background, unnoticed, because nothing about the rest of the product depended on removing it.
+There's no natural moment in a fast-moving AI-assisted build where a founder is prompted to specifically revisit and remove earlier debugging aids — features keep getting added, the product keeps evolving, and the original debug route simply keeps existing in the background, unnoticed, because nothing about the rest of the product depended on removing it. "Launch" itself, ironically, often isn't that moment either — a first launch is usually focused entirely on the features customers will actually see and use, and a debug route that's never linked anywhere simply doesn't come up during that final pre-launch push any more than it came up during the weeks of building that preceded it.
 
 ## What a Leftover Debug Endpoint Can Actually Expose
 
-Depending on what it was built to show, a forgotten debug route can reveal internal error messages containing stack traces, database structure details, environment variable names, or other internal system information that gives anyone who finds it a meaningfully more detailed map of your application's internals than they'd otherwise have — information that's genuinely useful for someone trying to find other, more serious vulnerabilities.
+Depending on what it was built to show, a forgotten debug route can reveal internal error messages containing stack traces, database structure details, environment variable names, or other internal system information that gives anyone who finds it a meaningfully more detailed map of your application's internals than they'd otherwise have — information that's genuinely useful for someone trying to find other, more serious vulnerabilities. A stack trace alone can reveal which framework version and libraries your app runs, which is exactly the kind of detail that turns a general, opportunistic scan into a targeted attempt against a known weakness in that specific version — the debug route itself might not be dangerous in isolation, but it can meaningfully shorten the distance to something that is.
 
 ## Why This Rarely Gets Noticed Through Normal Use
 
@@ -56,6 +56,20 @@ A proper pre-launch review specifically inventories every route in a codebase, i
 Manifera's pre-launch route audits are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Send over a description of your project — expect a reply within a business day](https://launchstudio.eu/en/#contact).
+
+## Other Common Leftover Artifacts Beyond Debug Routes
+
+A forgotten debug page is the most common version of this pattern, but it's one of several kinds of "temporary, for now" decisions that tend to quietly survive into production together, since they're all products of the same underlying habit — solving today's problem without a specific plan to circle back later.
+
+**Other artifacts worth specifically checking for before launch:**
+
+- **Test or seed accounts with predictable credentials** — created early to make development easier, often with an obviously guessable username and password like `admin/admin`, left active because nobody's regular workflow ever requires logging in as that account again to notice it's still there.
+- **API keys or secrets hardcoded directly into the source code** rather than stored in environment configuration, sometimes committed to a public repository without anyone realizing the repository itself was ever set to public.
+- **Verbose error messages left enabled in production** that were genuinely helpful during development but expose the same kind of internal detail as a debug route, just spread across ordinary error handling instead of a dedicated page.
+- **Feature flags or experimental routes left switched on** for functionality that was being tested internally and was never meant to be reachable by real users at all, distinct from a debug route but built with the same "just for now" mindset.
+- **Seed or sample data left in the production database** — placeholder customer records or test transactions created during development that can confuse real usage metrics or, worse, get mistaken for genuine customer data during a support interaction.
+
+None of these individually require advanced expertise to fix once found — the actual difficulty is the same as with debug routes: knowing to specifically look for the whole category, rather than assuming a working, demoed product has already had this kind of housekeeping done.
 
 ## Real example
 
@@ -95,6 +109,10 @@ Precisely — nobody deliberately decided to leave the exposure in place, which 
 ### Is it reasonable for a founder to just periodically search their own codebase for old debug routes instead of a full professional review?
 
 A periodic manual search is a reasonable habit to build, but it depends on the founder remembering what to search for and reliably checking every file, which is exactly the kind of systematic, complete coverage a dedicated review provides more reliably than an ad hoc, memory-dependent search.
+
+### Should a founder worry about this category of gap even if their product hasn't launched publicly yet?
+
+Yes — a pre-launch product with a small, trusted group of testers is exactly the point at which fixing this is cheapest and least disruptive, since there's no established production usage yet to work around. Waiting until after a public launch to do this kind of housekeeping doesn't reduce the risk; it just means the leftover artifacts have been reachable by a much larger, less trusted audience for longer before anyone gets around to checking.
 
 <script type="application/ld+json">
 {
@@ -139,6 +157,14 @@ A periodic manual search is a reasonable habit to build, but it depends on the f
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It's a reasonable habit, but a dedicated review provides more systematic, complete coverage than an ad hoc search."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a founder worry about this before a public launch, even with just a few testers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, that's the cheapest point to fix it — waiting until after public launch just extends how long the gap is exposed."
       }
     }
   ]

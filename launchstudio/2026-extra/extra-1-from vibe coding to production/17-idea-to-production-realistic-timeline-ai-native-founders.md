@@ -51,7 +51,23 @@ This is where the bulk of the remaining time genuinely goes, and where the earli
 
 ## Phase 4: Launch and Initial Monitoring (Ongoing, Front-Loaded)
 
-Launch itself is typically fast — deployment, final verification, going live — but the days immediately following launch warrant closer attention than the weeks after, since this is when real user behavior first tests everything the hardening phase addressed, and when observability (covered elsewhere in this series) pays for itself most directly.
+Launch itself is typically fast — deployment, final verification, going live — but the days immediately following launch warrant closer attention than the weeks after, since this is when real user behavior first tests everything the hardening phase addressed, and when observability (covered elsewhere in this series) pays for itself most directly. Founders who treat launch day as the finish line, rather than the start of a closely-watched initial window, often miss the specific period when a genuinely useful signal — an error spike, an unexpected usage pattern, a dependency behaving differently under real load than it did in testing — is most likely to appear, precisely because it's the first time the product has ever encountered real, unscripted behavior at any volume.
+
+## What Actually Drives Production Timeline Variance, Roughly Ranked
+
+Since prototyping time doesn't predict production time, it's worth knowing which factors actually do, roughly ordered by how much they typically add:
+
+**Regulated or sensitive data (largest driver).** Healthcare-adjacent information, financial data, or anything triggering specific regulatory obligations adds the most time, since it requires not just secure handling but demonstrable, documented compliance — a materially different bar than "the data is reasonably protected."
+
+**Number and quality of external integrations.** Each third-party system your product depends on — a payment processor, a practice management system, a shipping API — adds its own error handling, authentication, and failure-mode work, and integrations with inconsistent or poorly documented APIs, like Iris's case below, add disproportionately more than clean, well-documented ones.
+
+**Multi-tenant or multi-role data separation.** Products where different users or organizations must not see each other's data need role-based access control verified at the architecture level, covered in depth elsewhere in this series — a meaningfully bigger scope than a single-tenant tool with one undifferentiated user type.
+
+**Payment processing handled directly.** Routing payments through a compliant processor's hosted checkout is comparatively fast to harden; handling card details more directly, even briefly, raises the compliance bar substantially and adds real time.
+
+**Existing code quality from the prototyping phase (smallest driver, but not zero).** A cleanly structured prototype is somewhat faster to harden than a tangled one, but this factor consistently matters less than founders expect, since even clean code still needs the same categories of security and reliability work added on top.
+
+Knowing this ranking doesn't replace an actual audit, but it does let you make a reasonable guess about which end of a timeline range your specific product likely falls toward before that audit happens.
 
 ## Why Founders Consistently Misjudge This Timeline
 

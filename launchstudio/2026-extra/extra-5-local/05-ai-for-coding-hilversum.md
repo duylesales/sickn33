@@ -28,6 +28,8 @@ Hilversum's identity is unlike any other city in Noord-Holland: it's the histori
 
 That specificity is a strength. It also creates a specific blind spot. Media and content platforms deal constantly with file uploads — video, audio, raw footage — and unpublished, embargoed, or rights-restricted material that absolutely cannot leak before an agreed release date. AI for coding tools are very good at building an upload button and a media player. They are not, by default, good at making sure that unpublished content sits behind proper authentication, or that a storage bucket isn't quietly readable by anyone with the right URL.
 
+There's also a technical wrinkle specific to media that generic SaaS products don't deal with: large file sizes. A raw video file can run into gigabytes, and AI-generated upload logic frequently isn't built to handle that gracefully — uploads that time out partway through, no resumable upload support, no progress feedback for a crew member uploading footage over a shaky festival wifi connection. These aren't security issues exactly, but they're exactly the kind of production-plumbing gap that erodes trust with professional users who expect tools built for their workflow to actually handle their file sizes.
+
 ## What Media-Sector Founders in Hilversum Are Getting Right
 
 To be fair to this founder community, a few things are working well:
@@ -38,11 +40,33 @@ To be fair to this founder community, a few things are working well:
 
 ## What's Consistently Missing
 
-The gaps tend to cluster around exactly the areas media platforms care about most: access control on sensitive files, proper video/audio storage configuration, and handling large file uploads reliably instead of timing out or corrupting mid-upload. LaunchStudio is powered by Manifera, a team of 120+ engineers with 11+ years of experience serving enterprise clients — and part of that team, based out of our Singapore hub, works alongside the Amsterdam office reviewing exactly this category of media-specific infrastructure gap for founders who never anticipated needing it.
+The gaps tend to cluster around exactly the areas media platforms care about most: access control on sensitive files, proper video/audio storage configuration, and handling large file uploads reliably instead of timing out or corrupting mid-upload. In practice, fixing this rarely means touching the parts of the platform a founder is proudest of — the review interface, the commenting tools, the scheduling calendar. It means quietly rebuilding the layer underneath the upload button that decides who can reach a file and how long a link stays valid. LaunchStudio is powered by Manifera, a team of 120+ engineers with 11+ years of experience serving enterprise clients — and part of that team, based out of our Singapore hub, works alongside the Amsterdam office reviewing exactly this category of media-specific infrastructure gap for founders who never anticipated needing it.
 
 As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." For a Hilversum founder whose product depends on protecting unpublished media, that architecture question isn't optional — it's the whole product's credibility.
 
 If your Hilversum-built platform handles any kind of sensitive or embargoed content, it's worth exploring LaunchStudio's [full production process](https://launchstudio.eu/en/#process) before scaling further. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) work applies the same access-control discipline used for enterprise clients to founder-scale media platforms.
+
+## Choosing the Right Storage Configuration for Sensitive Media Files
+
+Most AI for coding tools default to the simplest storage setup that makes an upload button work — often a public or semi-public bucket, because that configuration requires the least friction during generation. For a to-do list app, that default barely matters. For a platform holding unpublished footage, rough cuts, or embargoed press materials, it's the single most consequential setting in the entire product.
+
+**The core distinction: public, private, and signed**
+
+- **Public storage** means anyone with the direct file URL can view it, forever, with no authentication check at all — this is the default a lot of AI-generated apps land on, because it's the easiest to wire up and the easiest to accidentally leave in place
+- **Private storage** requires authentication to access anything, but poorly configured private buckets can still leak through predictable URL patterns or misconfigured permission rules
+- **Signed, time-limited URLs** are the standard for genuinely sensitive media: a link is generated on demand, tied to an authenticated session, and expires after a set window — so even a leaked link stops working shortly after
+
+**Why this matters more for embargoed content than for typical user data**
+
+A leaked customer email address is a privacy problem. A leaked pre-release episode, an unpublished interview, or a client's unreleased promotional video is a contractual and financial problem, often with real damages attached — the kind of leak that can end a production house's relationship with a broadcaster or a brand client entirely. That asymmetry is exactly why a Hilversum media platform can't treat storage configuration as a "get to it later" item the way another SaaS product reasonably might.
+
+**A few checks worth running directly**
+
+1. Try opening a file URL from your platform in a private browser window, logged out — if it loads, your storage isn't actually access-controlled
+2. Check whether your storage URLs are predictable (sequential IDs, guessable patterns) versus random, unguessable tokens
+3. Confirm whether links you've shared for review actually expire, or remain valid indefinitely once generated
+
+Getting this right doesn't require rebuilding the upload flow a founder already validated with real production teams — it's a configuration and access-control layer added around it. It's also worth doing before a platform's second or third production house comes on board, not after, since expanding usage means expanding exactly how many people are one guessed URL away from finding out.
 
 ## Real example
 

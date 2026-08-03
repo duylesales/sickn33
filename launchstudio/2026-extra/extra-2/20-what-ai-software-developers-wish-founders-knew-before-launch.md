@@ -43,11 +43,11 @@ Ask any experienced engineer who regularly reviews founder-built prototypes what
 
 ## Myth: A Strong Password Requirement Solves This on Its Own
 
-**Reality:** requiring a strong password protects against a different, related risk — guessing a specific password through sheer randomness — but it does nothing to stop a script from attempting thousands of login combinations against a specific account without any restriction, unless the login endpoint itself specifically detects and limits repeated failed attempts.
+**Reality:** requiring a strong password protects against a different, related risk — guessing a specific password through sheer randomness — but it does nothing to stop a script from attempting thousands of login combinations against a specific account without any restriction, unless the login endpoint itself specifically detects and limits repeated failed attempts. A twelve-character password with mixed case, numbers, and symbols is effectively unguessable through brute force in any practical timeframe, but that protection assumes the attacker is guessing blind — it does nothing at all against credential stuffing, where an attacker tries passwords already leaked from an unrelated breach, betting that a user reused the same one here.
 
 ## Myth: This Only Matters Once You Have "Real" Users to Protect
 
-**Reality:** an unprotected login endpoint is exploitable the moment it's publicly reachable, regardless of how many actual users exist behind it — a single compromised early-adopter account can be enough to access sensitive data, and the endpoint itself doesn't become more or less vulnerable based on current user count.
+**Reality:** an unprotected login endpoint is exploitable the moment it's publicly reachable, regardless of how many actual users exist behind it — a single compromised early-adopter account can be enough to access sensitive data, and the endpoint itself doesn't become more or less vulnerable based on current user count. In practice, automated scanning tools don't distinguish between a product with five users and one with five thousand — they simply attempt every reachable login endpoint they find, which means a brand-new product with a handful of early adopters can be targeted just as readily, and just as soon after launch, as an established one. The only variable that changes with user count is how much damage a successful compromise causes, not how likely an attempt is to occur in the first place.
 
 ## Myth: Adding Account Lockout Is a Major, Disruptive Feature to Build
 
@@ -60,6 +60,34 @@ A proper fix adds failed-attempt tracking and temporary lockout or rate limiting
 Manifera's authentication hardening work is delivered through the Ho Chi Minh City development center on Pho Quang Street, with client-facing scoping handled from the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## Beyond Lockouts: The Full Authentication Hardening Checklist
+
+Failed-attempt lockout closes the most direct version of this gap, but a genuinely hardened login flow addresses several related risks at the same time, most of which an AI-generated authentication system doesn't include by default either.
+
+**Layer these protections together, not as alternatives to each other**
+
+1. **Rate limiting by IP address, in addition to per-account lockout** — protects against an attacker spreading guesses across many different accounts from a single source, a pattern that per-account lockout alone doesn't catch
+2. **A CAPTCHA or similar challenge after a few failed attempts** — adds friction specifically for automated tools without requiring a full lockout, useful for slowing attempts without locking out a legitimate user who genuinely mistyped their password
+3. **Two-factor authentication as an optional, then eventually default, feature** — even a successfully guessed password stops being sufficient on its own once a second factor is required
+4. **Session invalidation on password change** — when a user changes their password, every other active session should be logged out automatically, closing the window where a previously compromised session might otherwise persist
+5. **Notification on login from a new device or location** — doesn't prevent an attack, but gives a legitimate user a fast, direct signal that something unusual happened to their account
+
+**Calibrate friction to your actual product, not a generic maximum**
+
+A financial or health-data product reasonably justifies more aggressive protection — shorter lockout thresholds, mandatory two-factor authentication — than a low-stakes hobby app, where excessive friction risks losing legitimate users over a risk level that doesn't justify it. There's no single correct configuration; the right one depends on what an attacker would actually gain from a compromised account in your specific product.
+
+**Don't let protection become its own denial-of-service vector**
+
+A lockout mechanism that locks an account after too few failed attempts becomes a tool an attacker can use maliciously — deliberately failing a legitimate user's login repeatedly to lock them out of their own account. A reasonable threshold (typically five to ten attempts) paired with a time-based cooldown, rather than a permanent lock requiring manual support intervention, avoids turning a protective feature into a new way to disrupt real users.
+
+**Review this alongside password reset, not in isolation**
+
+An attacker blocked from guessing a password directly will often pivot to the password reset flow instead, so any authentication hardening pass should confirm the reset flow has equivalent protections — rate limiting on reset requests, and short-lived, single-use reset tokens — rather than treating login and reset as two unrelated surfaces.
+
+**Test the whole flow as an attacker would, not just as a legitimate user**
+
+Before considering a login flow hardened, deliberately attempt a dozen rapid failed logins against a test account and confirm the system actually responds the way it's supposed to — a lockout threshold configured in code but never actually triggered under test conditions is a common way this kind of protection quietly fails to work as intended once it matters.
 
 ## Real example
 

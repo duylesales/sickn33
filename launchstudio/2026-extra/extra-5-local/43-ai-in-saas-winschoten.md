@@ -24,13 +24,17 @@ Investors and early customers rarely ask to see your database schema. They ask w
 
 ## The Feature List Founders Chase
 
-Building a SaaS product with Cursor, Lovable, Bolt, or v0 rewards visible progress. Add a new dashboard view, ship it. Add reporting, ship it. Add a settings page, ship it. Every one of these is genuinely useful, and for a founder trying to close their first few customers out of a town like Winschoten — close enough to the German border that plenty of local businesses already trade across it — a growing feature list is what gets a deal signed.
+Building a SaaS product with Cursor, Lovable, Bolt, or v0 rewards visible progress. Add a new dashboard view, ship it. Add reporting, ship it. Add a settings page, ship it. Every one of these is genuinely useful, and for a founder trying to close their first few customers out of a town like Winschoten — close enough to the German border that plenty of local businesses already trade across it, and where cross-border logistics and trade shape a good share of the local economy — a growing feature list is what gets a deal signed. It's also, understandably, the part of building a SaaS product that feels the most like progress, since every new feature is something you can point to in a sales call.
 
 The problem is that AI in SaaS tools has no natural incentive to slow down and ask harder questions: how is customer data separated between accounts? What happens if two customers hit the same API endpoint at the same second? Is there a plan for what happens when the free trial database needs backing up? These questions don't show up in a demo. They show up in a support ticket six weeks after your third customer signs a contract.
+
+There's a reason this pattern is so consistent across founders. Every prompt you write to an AI coding tool describes a feature from the perspective of one user doing one thing — "let a customer view their invoice," "let a customer update their shipment address." Nothing in that framing asks the tool to consider what happens when a hundred customers are doing a hundred different things simultaneously, or what happens if the invoice endpoint is called with someone else's invoice number instead of your own. The tool answers exactly the question it was asked, which is rarely the full question a production SaaS product actually needs answered.
 
 ## The Foundation Investors and Customers Actually Check
 
 Here's the trade-off in plain terms. Feature velocity gets you signed customers. Foundation quality keeps them. For a SaaS founder, the foundation questions that matter most are almost always about multi-tenancy — the technical guarantee that Customer A's data never leaks into Customer B's view, no matter how the app is queried. AI coding assistants generate database queries that work correctly for the person testing them, which is usually just the founder logged in as themselves. They don't automatically add the safeguards that keep every other customer's data walled off, because nothing in the prompt asked for it explicitly.
+
+Multi-tenancy problems are also unusually hard to self-diagnose, which is what makes them dangerous. A founder testing their own product only ever sees their own data, so a missing ownership check never produces a visible symptom during normal use — everything looks correct because there's only ever been one account in the room. The bug is real and present from the moment the first feature ships; it just stays invisible until a second customer, using the product exactly as intended, stumbles into a URL or API response that was never meant to be theirs.
 
 This is precisely the review LaunchStudio runs for SaaS founders. LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy — the same team that has delivered 160+ projects for clients like Vodafone and CFLW checks your database rules, your API authorization, and your tenant isolation line by line. Our engineering team, with a base in Ho Chi Minh City handling much of the deep technical review work, has audited this exact pattern in SaaS products built by founders across the province of Groningen, Winschoten among them, often finding the same missing safeguard in slightly different forms.
 
@@ -39,6 +43,19 @@ We don't rebuild your frontend or ask you to migrate off the AI tool you used to
 ## Winschoten's Advantage: Fixing This Early Is Cheap
 
 There's an upside to catching this in Winschoten rather than after a Series A round in Amsterdam: the fix is dramatically cheaper before your customer count grows. Multi-tenant isolation, proper role-based access, and safe database migrations are a few days of focused engineering work when you have five customers. The same fix becomes a multi-week migration project with real downtime risk once you have five hundred. Founders in the Groningen region building SaaS products have an unusual opportunity to get this right while the stakes are still small.
+
+## A Quick Multi-Tenancy Audit You Can Run This Week
+
+You don't need to wait for a formal review to get a first read on how exposed your SaaS product actually is. A handful of manual checks, done with two test accounts, surface most of the common gaps within an hour.
+
+**Run these checks with two separate test accounts, side by side:**
+
+- **The URL-swap test** — log in as Account A, note the ID in the URL of a record you own (an invoice, a shipment, a booking), then log in as Account B and manually change that ID in the address bar. If Account B can see Account A's record, your API isn't checking ownership, only login status.
+- **The simultaneous-write test** — have both accounts update the same type of record (say, a shipping address) at the same moment. If one account's change briefly shows up on the other's screen, or the app throws an unexpected error, your queries likely aren't filtering by account consistently.
+- **The settings-bleed test** — change a setting under Account A (a notification preference, a display option) and check whether it ever appears, even briefly, under Account B. This usually points to a shared cache or a global variable that was never scoped per customer.
+- **The backup-and-restore test** — ask yourself honestly whether you've ever actually restored your database from a backup, rather than just assumed the backup process works. An untested backup is not a backup.
+
+If any of these checks fail, that's not a reason to panic — it's the exact list of what a foundation review needs to fix, and every one of these problems is solvable without touching the frontend a customer already sees. Catching them yourself, even informally, means the conversation with an engineer starts with "here's what I found" instead of "I have no idea what's under the hood."
 
 ## Real example
 

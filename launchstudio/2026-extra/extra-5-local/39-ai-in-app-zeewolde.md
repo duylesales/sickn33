@@ -22,6 +22,8 @@ Target Persona: Non-Technical Founder
 
 Zeewolde is an unusual town to talk about AI: it's a quiet, forested corner of Flevoland best known for lakeside recreation and, more recently, as host to some of the largest data centers in the Netherlands — the literal physical infrastructure that AI runs on, sitting a few kilometers from where local founders are now building AI in app features for their own small products. There's a nice symmetry there, and also a real lesson: having AI in app doesn't automatically mean having it done well.
 
+That symmetry is worth sitting with for a second. The same racks of GPUs humming away near Zeewolde's outskirts, processing inference requests for AI companies around the world, are functionally identical to the infrastructure a local recreation business or small tourism operator taps into every time their app calls an AI model. The gap between a data center operator's engineering rigor — redundancy, cost monitoring, capacity planning down to the rack — and a solo founder's AI in app feature shipped in a weekend is enormous, and it's a gap that shows up specifically in the areas a demo never tests: cost at scale, abuse resistance, and graceful failure.
+
 ## What Zeewolde founders typically get right
 
 Give credit where it's due. Founders building AI in app features — a chatbot, a recommendation engine, an auto-generated content tool, a smart search — usually nail the core user experience quickly. Modern AI APIs from providers like OpenAI or Anthropic are genuinely easy to wire into a Lovable or Bolt-built frontend, and the resulting feature often feels impressive on day one. A recreation booking app with an AI assistant that recommends activities based on weather and group size, built by a Zeewolde founder in a weekend, can look and feel like something a much larger company built.
@@ -39,6 +41,20 @@ Also commonly missed: prompt injection protection. If your AI in app feature tak
 None of this means ripping out your AI feature and starting over — the parts Zeewolde founders get right, the actual user experience, usually don't need to change at all. What needs fixing sits underneath: usage caps and rate limiting per user, input sanitization before prompts are constructed, proper error handling and fallback states, and cost monitoring so you're never surprised by a bill.
 
 LaunchStudio handles exactly this kind of fix, without touching your app's frontend or the AI feature's user-facing behavior. LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, whose team includes a dedicated development center in Ho Chi Minh City working alongside our Amsterdam-based client office at Herengracht 420. If you want to see whether your own AI in app feature has these gaps, [talk to an engineer](https://launchstudio.eu/en/#contact) who reviews this exact pattern regularly. For more on Manifera's broader software engineering capabilities, see [Manifera's custom software development page](https://www.manifera.com/services/custom-software-development/).
+
+## A Practical Framework for Setting AI Usage Limits Before You Launch
+
+Most founders skip usage limits not because they don't understand the risk, but because "how much should I actually cap this at" feels like an arbitrary guess. It doesn't have to be. A workable limit comes from three numbers you can estimate in about twenty minutes.
+
+**1. Calculate your cost per typical AI call.** Check your model provider's per-token pricing and estimate the average tokens consumed by one realistic interaction — a single chatbot exchange, one recommendation query, one generated summary. This gives you a concrete euro figure per call, usually a fraction of a cent, but one that adds up fast at volume.
+
+**2. Decide what a reasonable session looks like.** How many AI interactions would a genuinely engaged user realistically generate in one sitting? For most consumer-facing features, this is somewhere between 5 and 30 calls. Anything dramatically above that pattern is far more likely to be an accidental refresh loop, a bug, or automated abuse than authentic engagement.
+
+**3. Set a per-user daily or session cap with a small buffer above that realistic number.** A cap set at roughly double your "reasonable session" estimate protects against runaway costs while still being generous enough that no genuine user ever notices it exists. This is a starting point, not a permanent number — revisit it once you have real usage data.
+
+**4. Add a global daily spend alert as a second layer.** Per-user caps handle individual bad actors or bugs; a global spend alert catches the scenario where many users simultaneously hit their limits at once, which a per-user cap alone won't flag until the bill arrives.
+
+Framed this way, setting a usage limit takes less time than writing the AI feature's system prompt did, and it's the single most effective safeguard against the kind of surprise bill that catches founders off guard after their first real traffic spike.
 
 ## Real example
 
@@ -74,6 +90,9 @@ Manifera's engineering team, including a development center in Ho Chi Minh City,
 ### How do I get started if I'm not sure what's wrong?
 Talk to an engineer who understands AI-generated code — we'll review your app's AI feature and tell you honestly what, if anything, needs fixing.
 
+### How do I actually calculate a reasonable usage cap for my AI feature?
+Start with your model provider's per-call cost, estimate how many calls a genuinely engaged user would make in one session, then set a per-user cap at roughly double that number. Add a global daily spend alert as a second layer so you're not relying on per-user caps alone to catch unusual traffic patterns.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,7 +102,8 @@ Talk to an engineer who understands AI-generated code — we'll review your app'
     { "@type": "Question", "name": "Will fixing my AI in app feature change how it behaves for users?", "acceptedAnswer": { "@type": "Answer", "text": "No, fixes like rate limits, caching, and error handling typically happen behind the scenes with no visible change to the user experience." } },
     { "@type": "Question", "name": "Is this relevant outside Zeewolde and Flevoland?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, this pattern appears broadly in AI-built apps, though Zeewolde's data center presence made it a fitting local example." } },
     { "@type": "Question", "name": "Who reviews the AI feature implementation?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineering team, including a development center in Ho Chi Minh City, reviews and fixes AI integration issues." } },
-    { "@type": "Question", "name": "How do I get started if I'm not sure what's wrong?", "acceptedAnswer": { "@type": "Answer", "text": "Talk to an engineer who understands AI-generated code for a review of what, if anything, needs fixing." } }
+    { "@type": "Question", "name": "How do I get started if I'm not sure what's wrong?", "acceptedAnswer": { "@type": "Answer", "text": "Talk to an engineer who understands AI-generated code for a review of what, if anything, needs fixing." } },
+    { "@type": "Question", "name": "How do I calculate a reasonable usage cap for my AI feature?", "acceptedAnswer": { "@type": "Answer", "text": "Estimate per-call cost, multiply by a realistic session size, then set a per-user cap at roughly double that. Add a global daily spend alert as a second layer." } }
   ]
 }
 </script>

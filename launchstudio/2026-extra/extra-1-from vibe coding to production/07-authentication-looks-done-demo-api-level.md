@@ -57,6 +57,20 @@ The reason this specific gap recurs so consistently isn't carelessness on the pa
 
 The real test: use a valid but insufficiently-privileged account, and try to access a restricted resource directly through the API, bypassing the frontend entirely. A properly secured API returns a 403 (forbidden) response, explicitly rejecting the request based on the requester's actual permissions. If it returns the data instead, your authentication exists in the wrong place — enforced by the interface's cooperation rather than the system's actual verification.
 
+## Beyond IDOR: Other API-Level Gaps Worth Checking
+
+Insecure direct object references and missing role checks are the most common API-level authentication gaps, but a thorough review checks a handful of related categories that fail the same underlying test — does the API independently verify what the frontend merely assumes.
+
+**Mass assignment.** If an API endpoint accepts a full object from the client and writes it to the database without explicitly restricting which fields can be set, a user might be able to set fields they were never meant to control directly — their own account's role or permission level, for instance, simply by including that field in a request the frontend never intended to expose.
+
+**Missing rate limiting.** Without a limit on how many requests a single account or IP can make in a given window, an endpoint that's otherwise properly secured can still be abused — credential-stuffing attempts against a login endpoint, or bulk data scraping against an endpoint that correctly checks ownership but never checks volume.
+
+**Verbose error messages.** An API that returns detailed internal error messages, stack traces, or database-specific error text to the client hands a would-be attacker a working map of your internal structure, often revealing exactly what to try next even when the original request was correctly rejected.
+
+**Insufficient input validation at the boundary.** Trusting that data arriving at the API matches what the frontend would have sent, rather than independently validating type, length, and format server-side, means a request constructed outside the frontend entirely can send data your system was never actually tested against.
+
+Each of these fails the same test as the core authentication gap this article covers: something the frontend was quietly relying on turns out not to be enforced anywhere the frontend doesn't control.
+
 [LaunchStudio](https://launchstudio.eu/en/) verifies authentication at exactly this level as a core part of every Launch Ready engagement — testing against the API directly, not just confirming the login screen works — backed by Manifera's cybersecurity-informed engineering practices.
 
 [Get your API-level access control actually tested](https://launchstudio.eu/en/#contact) — a login screen that works is not the same claim as an API that's secured.
@@ -102,6 +116,10 @@ It's a broadly common gap across AI-generated backends generally, since AI tools
 
 It's worth checking regardless, though urgency scales directly with data sensitivity — an app handling financial or health data, like Milan's, warrants materially higher priority than a low-stakes internal tool, though the underlying architectural gap is worth closing in any production app before real users depend on it, since the fix is the same regardless of urgency and only gets more disruptive to retrofit later.
 
+### Does fixing an IDOR gap also address issues like mass assignment or missing rate limiting, or are those separate fixes?
+
+They're related but separate — closing an IDOR gap addresses who can access which specific record, while issues like mass assignment, rate limiting, and input validation address different failure modes at the same API boundary, meaning a thorough review checks all of them rather than assuming one fix covers the rest.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -145,6 +163,14 @@ It's worth checking regardless, though urgency scales directly with data sensiti
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Worth checking regardless, though urgency scales with data sensitivity — financial or health data warrants higher priority than low-stakes internal tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does fixing an IDOR gap also address issues like mass assignment or missing rate limiting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They're related but separate — an IDOR fix addresses record-level access, while mass assignment, rate limiting, and input validation address different failure modes at the same API boundary."
       }
     }
   ]

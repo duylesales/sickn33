@@ -57,6 +57,16 @@ Server-side session invalidation typically requires either a server-side session
 
 This is a particularly easy gap to miss precisely because everything else about authentication can be genuinely solid — passwords hashed correctly, login working reliably, protected routes correctly redirecting — while this one specific dimension, session lifecycle management, remains unaddressed. A founder testing their own app experiences a correct-feeling logout every time, with no natural prompt to test what happens to the underlying token independently of the interface that stopped using it.
 
+## Choosing Between a Session Store and Short-Lived Tokens: A Practical Framework
+
+The two correct implementations described above aren't interchangeable defaults — which one actually fits your app depends on a few concrete factors, not on which one a tutorial happened to use.
+
+**A server-side session store** (the backend checks a database or cache like Redis on every request) is the better fit when you need to force-invalidate a session instantly and reliably — banking-adjacent tools, anything handling sensitive client data, or apps used on shared devices, closer to Sven's actual gym-tablet situation, where "log out right now, for real" matters more than raw speed. The tradeoff is a small amount of added latency per request (a lookup against the store) and a dependency on that lookup infrastructure staying available.
+
+**Short-lived tokens with a refresh mechanism** (a JWT-style access token valid for perhaps fifteen minutes, paired with a longer-lived refresh token) is the better fit when low latency and horizontal scalability matter more, since a valid access token can be verified by its signature alone, without a database round-trip on every single request. The tradeoff: a captured access token remains valid until it naturally expires, even after the user logs out, unless you additionally maintain a denylist for revoked tokens — which reintroduces some of the server-side lookup overhead this approach was meant to avoid in the first place.
+
+Neither approach is universally correct. A founder building an internal tool for a small number of trusted users can reasonably accept a short-lived-token approach with a modest expiration window and skip the added complexity of a denylist. A founder building anything touching health data, financial records, or client information accessed from shared devices should lean toward a session store, or at minimum a token approach paired with a denylist, specifically because the ability to say "this session is dead, right now, no matter what" matters more in those cases than the latency saved by skipping it.
+
 [LaunchStudio](https://launchstudio.eu/en/) verifies session and token lifecycle specifically as part of every authentication review — testing whether logout actually invalidates server-side, not just whether the interface looks correctly logged out — backed by Manifera's cybersecurity-informed engineering practices.
 
 [Find out if your logout actually logs anyone out](https://launchstudio.eu/en/#calculator) — a correct-looking logout and a secure one are different claims.
@@ -102,6 +112,10 @@ Meaningfully worse — no expiration means a captured token remains valid indefi
 
 Related but distinct — RBAC concerns whether a verified identity has permission for a specific action, while this concerns whether the identity verification itself (the token) can actually be trusted to represent a still-valid, still-logged-in session; an app can have solid RBAC while still having this separate session-lifecycle gap.
 
+### Which approach should I actually pick if I'm unsure — a session store or short-lived tokens with refresh?
+
+If your app handles sensitive data or gets used on shared or public devices, default to a session store, since instant, reliable invalidation matters more than the latency it costs; for a lower-stakes internal tool with a small, trusted user base, a short-lived-token approach with a reasonable expiration window is a defensible, simpler starting point.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -145,6 +159,14 @@ Related but distinct — RBAC concerns whether a verified identity has permissio
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Related but distinct — RBAC concerns permission for an action, while this concerns whether the identity verification itself can be trusted as still valid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which approach should I pick if I'm unsure — a session store or short-lived tokens with refresh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Default to a session store for sensitive data or shared-device use; a short-lived-token approach is a defensible simpler start for low-stakes, small-user-base tools."
       }
     }
   ]

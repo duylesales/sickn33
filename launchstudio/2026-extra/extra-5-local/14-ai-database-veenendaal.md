@@ -24,7 +24,7 @@ Here's a scenario that plays out more often than founders expect: an AI-generate
 
 ## Why an AI Database Setup Isn't the Same as a Production Database
 
-Ask Lovable, Bolt, or Cursor to add a database to your app, and it will — usually wiring up Supabase or a similar Postgres-based backend in minutes, generating tables that match your data model, and connecting your frontend forms to write and read from them. It looks complete. Functionally, in a demo, it is complete.
+Ask Lovable, Bolt, or Cursor to add a database to your app, and it will — usually wiring up Supabase or a similar Postgres-based backend in minutes, generating tables that match your data model, and connecting your frontend forms to write and read from them. It looks complete. Functionally, in a demo, it is complete: you fill in a form, the data appears in a table view, everything behaves exactly as expected because you, the person who built it, are the only one testing it and you have no reason to try to break it.
 
 What it typically isn't is durable in the way a production database needs to be. Three gaps show up constantly in AI-generated database setups:
 
@@ -36,7 +36,7 @@ What it typically isn't is durable in the way a production database needs to be.
 
 ## What This Looks Like for a Founder Building in Veenendaal
 
-Veenendaal, in the province of Utrecht, has a strong base of family-run and mid-sized businesses — manufacturing, retail, and increasingly software tools built to serve them. Founders here tend to be building for a specific, known customer base rather than chasing broad consumer scale, which means data integrity often matters more than raw performance: a scheduling tool for a Veenendaal manufacturing SME needs its records to be exactly right, every time, because someone downstream is relying on them for physical operations.
+Veenendaal, in the province of Utrecht, has a strong base of family-run and mid-sized businesses — manufacturing, retail, and increasingly software tools built to serve them. The city's business parks, including De Batterijen and the industrial zone along the Rondweg, house a mix of textile, food, and light-manufacturing companies that have operated for generations, many now looking for software partners who understand what "the data has to be right" actually means in an operational context, not a growth-metrics one. Founders here tend to be building for a specific, known customer base rather than chasing broad consumer scale, which means data integrity often matters more than raw performance: a scheduling tool for a Veenendaal manufacturing SME needs its records to be exactly right, every time, because someone downstream is relying on them for physical operations — a production line, a delivery schedule, a payroll run.
 
 This is precisely where a silently misconfigured database causes the most damage — not through a dramatic outage, but through quietly wrong or duplicated data that nobody notices until a customer complains. An AI-generated database will run for weeks looking healthy while these structural gaps sit underneath, invisible until they aren't.
 
@@ -45,6 +45,25 @@ This is precisely where a silently misconfigured database causes the most damage
 LaunchStudio focuses specifically on this layer — taking an AI-generated frontend and rebuilding the database architecture underneath it so persistence, security, and integrity are handled properly, without touching the interface a founder already built. Our engineers, part of Manifera's team working out of the Ho Chi Minh City engineering center, review schema design, implement row-level security policies correctly scoped to your actual data model, and set up migration and backup practices that most AI tools skip entirely.
 
 If you want to see what a database review would look like for your specific setup, send us your prototype link — we'll give you free advice — or check what's included at each tier on our packages page. For founders looking at a larger custom build beyond database remediation, Manifera's web app development team handles full-stack projects built around the same production standards.
+
+## A Simple Way to Test Your Own Row-Level Security
+
+You don't need a database background to run a basic check on whether your row-level security is actually working. This won't replace a proper audit, but it's a fast way to find out whether you have a problem at all.
+
+**Create two test accounts and try to cross the line between them.**
+
+1. Sign up for your own app twice, using two different email addresses, and create some sample data under each account — a booking, a note, a customer record, whatever your app manages.
+2. Log in as account one, then open your browser's developer tools and look at the network requests your app makes when it loads data. Note the ID values being requested.
+3. While still logged in as account one, manually change one of those ID values in a request to point at a record you created under account two.
+4. If the request returns account two's data, your row-level security isn't actually restricting access at the database level — the app is only hiding the other account's data in the interface, not blocking it at the source.
+
+**Beyond access control, ask three questions about your backup and migration setup:**
+
+- If your database were wiped right now, how far back could you restore it — yesterday, last week, never?
+- The last time you asked your AI tool to add or change a field, did anything happen to the existing data in that table, and would you actually know if it had?
+- Do you have a way to test a schema change against a copy of your data before it runs against the real thing?
+
+Most AI-generated setups have no good answer to at least one of these. That's the gap a proper database review closes — not by replacing what the AI tool built, but by adding the operational discipline around it that a demo never required.
 
 ## Real example
 

@@ -49,6 +49,8 @@ If a key was ever committed to a public repository, even if it was later removed
 
 Beyond the immediate cleanup, secrets belong in environment variables or a dedicated secrets manager, never directly in committed code — this is a permanent habit change, not a one-time fix, since the same convenient shortcut that caused the first exposure is just as available during every future feature added afterward.
 
+A dedicated secrets manager (such as Doppler, 1Password's developer tools, or a cloud provider's built-in secrets service) adds meaningful protection beyond a plain `.env` file, since it typically provides access logging, easy rotation, and per-environment separation between development, staging, and production credentials — none of which a flat environment file gives you by default. For a solo founder, even the discipline of a properly `.gitignore`-excluded `.env` file, consistently used for every new integration, closes most of the practical risk without requiring a dedicated tool.
+
 ## Checklist Item Five: Get a Second Set of Eyes Before Real Users Arrive
 
 None of the above is exotic or hard to understand once pointed out, which is exactly the problem — a founder deep in their own weekend build has no natural prompt to stop and specifically check for it, which is precisely the gap a second, independent review closes. [LaunchStudio](https://launchstudio.eu/en/) runs exactly this kind of secrets and repository audit as a standard first step in its Launch Ready package, backed by Manifera's 11+ years of production engineering experience.
@@ -56,6 +58,33 @@ None of the above is exotic or hard to understand once pointed out, which is exa
 Manifera's secrets and configuration audits are performed by the engineering team based at the Ho Chi Minh City development center on Pho Quang Street, with client conversations handled through the Amsterdam headquarters at Herengracht 420.
 
 [Let's get moving — prototype to production in weeks, not months](https://launchstudio.eu/en/#contact).
+
+## Beyond API Keys: A Fuller Pre-Launch Secrets Checklist
+
+API keys get the most attention because they're the most obviously damaging when exposed, but a genuinely thorough pre-launch pass checks several other categories of secret that are just as easy to leave sitting somewhere they shouldn't.
+
+**Look beyond `.env` files for these common leak points**
+
+- **Webhook signing secrets** — used to verify that an incoming webhook (from Stripe, GitHub, or another service) genuinely came from that provider; if this leaks, someone could send forged webhook events your application would treat as legitimate
+- **OAuth app client secrets** — the credential behind "Sign in with Google" or similar integrations, separate from any user-facing API key
+- **Database connection strings** — these often contain a username and password directly in the URL itself, and get pasted into scripts, notebooks, or documentation far more casually than a standalone API key
+- **CI/CD deployment tokens** — credentials stored in a build pipeline configuration, sometimes visible in build logs even when the underlying secret itself is properly stored elsewhere
+
+**Check documentation and chat history too, not just code**
+
+A surprising number of exposed secrets never made it into a git commit at all — they were pasted into a shared Notion doc, a Slack message to a collaborator, or an AI coding tool's chat history that got shared or made public later. Anywhere a key was ever typed or pasted, even outside the codebase itself, is worth a moment's thought before launch.
+
+**Understand what "rotate" actually means for each secret type**
+
+Rotating an API key is usually straightforward — generate a new one, update where it's used, revoke the old one. Rotating a webhook secret requires updating the configuration on both your side and the provider's side simultaneously, or webhook delivery breaks temporarily. Rotating a database credential, if the database itself has active connections using the old credential, requires more care to avoid an outage during the swap. Knowing this ahead of time prevents rotation itself from becoming a second, self-inflicted incident.
+
+**Set a recurring reminder, not a one-time check**
+
+Treating a secrets audit as a single pre-launch task misses secrets added months later, when a founder connects a new third-party service under time pressure and pastes the resulting key directly into a config file "just to test it quickly." A recurring quarterly check — even a simple repeated repository search — catches these before they accumulate into the same kind of long-unnoticed exposure the original audit was meant to prevent.
+
+**Keep a running inventory of every service your product depends on**
+
+A short, maintained list of every third-party service integrated into a product — what it's used for, where its credentials live, and when they were last rotated — turns a quarterly audit from "try to remember everything we've connected" into a five-minute checklist walk-through. This is especially valuable once a product has more than two or three integrations, since that's roughly the point where relying on memory alone starts missing things.
 
 ## Real example
 

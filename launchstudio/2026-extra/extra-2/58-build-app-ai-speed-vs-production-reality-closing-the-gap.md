@@ -43,7 +43,7 @@ Build app AI speed gets a "share this with a link" feature working in an afterno
 
 ## Why "Revoke" Buttons Sometimes Don't Revoke Anything at the Server Level
 
-Building a "revoke" button that removes a shared link from a user's own visible list of active shares is the straightforward, directly visible part of the feature. Making that same action actually invalidate the link server-side, so the URL itself stops granting access even if someone still has it saved or bookmarked, is a separate, additional implementation step that doesn't automatically come bundled with a working "remove from my list" button.
+Building a "revoke" button that removes a shared link from a user's own visible list of active shares is the straightforward, directly visible part of the feature. Making that same action actually invalidate the link server-side, so the URL itself stops granting access even if someone still has it saved or bookmarked, is a separate, additional implementation step that doesn't automatically come bundled with a working "remove from my list" button. The two behaviors can look identical from inside the app — click revoke, link disappears from the list, task apparently complete — because the interface only ever shows what's in that list to begin with. Whether the actual resource behind a share link checks a live "is this specific link still valid" flag on every single access attempt, or instead grants access to anyone holding a structurally valid-looking URL regardless of its current status, is a decision made in the backend logic that a founder testing only through the visible list has no way to observe directly.
 
 ## Why This Passes Every Test a Founder Naturally Runs
 
@@ -60,6 +60,30 @@ A proper fix ensures a revoke action actually invalidates the underlying link se
 Manifera's link-sharing and revocation security reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## Where Else "Looks Revoked" Might Not Mean "Is Revoked"
+
+Share-link revocation is one specific instance of a broader pattern worth checking across an entire product: any feature where removing something from a visible list is easy to confuse with genuinely disabling the underlying thing that list item represents.
+
+**API keys and access tokens**
+
+A "delete" or "revoke" button on an API key management page should immediately invalidate that specific key server-side. If the underlying check that validates incoming API requests wasn't updated to also check "has this specific key been revoked," a deleted key can keep authenticating requests indefinitely, invisible to anyone looking only at the now-empty key list.
+
+**Removed team members or collaborators**
+
+Removing someone from a team or workspace in the interface should immediately end their ability to access that team's data through any means — including an already-open browser session, an existing API token issued under their account, or a mobile app that hasn't refreshed its own session yet. A "removed" user who can still pull data through a channel nobody checked is the same underlying gap as BoerenBox's link.
+
+**Cancelled subscriptions and downgraded plans**
+
+A cancelled subscription should stop granting access to whatever features that subscription unlocked — not just stop showing as "active" in a billing dashboard, while a background check that gates actual feature access still reads a cached or stale status that hasn't caught up yet.
+
+**Password resets and "log out all devices" actions**
+
+A user who resets their password because they suspect their account was compromised is trying to accomplish one specific thing: end every existing session immediately. If a "log out everywhere" action only clears sessions the interface currently knows about, rather than invalidating every previously issued session token at the source, an attacker with an already-active session can keep using it completely unaffected by the reset.
+
+**The common thread worth checking for**
+
+In every case above, the pattern is identical: a visible, interface-level action (delete, remove, cancel, reset) needs to be verified as actually reaching and invalidating the underlying thing it claims to affect, not just updating what a list or dashboard displays. A founder auditing their own product for this specific pattern should pick each "removal-style" action their app offers and ask the same direct question BoerenBox's case eventually forced: if I performed this action, then went and tried the old access route directly, would it actually still work?
 
 ## Real example
 

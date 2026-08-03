@@ -47,7 +47,7 @@ For AI-native products specifically, unrate-limited access to endpoints that tri
 
 ## Why This Gap Is Specifically Common in AI-Generated Code
 
-Rate limiting isn't a feature that makes a demo work better — a prompt asking for "an endpoint that generates a response" is satisfied entirely without any request-volume constraint, since the demo scenario never involves testing at volume. This makes rate limiting structurally similar to the other gaps covered throughout this series: entirely invisible during normal development and testing, and only relevant once your app faces conditions (malicious or otherwise) that development never simulates.
+Rate limiting isn't a feature that makes a demo work better — a prompt asking for "an endpoint that generates a response" is satisfied entirely without any request-volume constraint, since the demo scenario never involves testing at volume. This makes rate limiting structurally similar to the other gaps covered throughout this series: entirely invisible during normal development and testing, and only relevant once your app faces conditions (malicious or otherwise) that development never simulates. A founder building and testing their own product alone will, almost by definition, never generate the kind of sustained request volume that would surface a missing rate limit, meaning the gap can sit undetected through months of active, genuine, careful development and only becomes visible once someone — or something — other than the founder starts interacting with the API at real scale.
 
 ## What Proper Rate Limiting Actually Requires
 
@@ -56,6 +56,18 @@ A meaningful implementation needs limits calibrated to genuine legitimate usage 
 ## How to Verify Your Own App's Exposure
 
 The direct test: attempt a rapid sequence of requests against your login endpoint and your most AI-cost-intensive endpoint, and confirm whether anything blocks or slows the sequence after a reasonable threshold. If every request succeeds regardless of volume, your app currently has no rate-limiting protection, exposing exactly the risks described above.
+
+## Choosing a Rate Limiting Strategy: Three Common Approaches
+
+Once you've confirmed you need rate limiting, the specific algorithm behind it matters for how well it actually protects you without unnecessarily frustrating legitimate users — three common approaches, each with a genuinely different tradeoff:
+
+**Fixed window.** Requests are counted within a fixed time block — say, 100 requests per minute, with the counter resetting exactly on the minute. This is the simplest to implement and reason about, but has a specific weakness worth knowing: a user can send 100 requests in the final second of one window and another 100 in the first second of the next, briefly achieving double the intended rate right at the window boundary.
+
+**Sliding window.** Rather than a hard reset, the window continuously moves with time, counting requests within the trailing period rather than a fixed block — this closes the fixed window's boundary weakness at the cost of slightly more implementation and computational complexity, and is generally the better default for anything security-sensitive, like a login endpoint.
+
+**Token bucket.** Each identity has a "bucket" that refills at a steady rate and depletes with each request, allowing brief bursts above the average rate as long as the bucket has tokens available, then throttling once it's empty. This is often the best fit for legitimate, bursty usage patterns — a user who occasionally needs to send several requests in quick succession, followed by quiet periods — since it doesn't punish natural burstiness the way a strict fixed window would.
+
+For most AI-native products, a sliding window on authentication endpoints paired with a token bucket on general API and AI-cost-intensive endpoints covers the two distinct risk profiles this article describes without requiring a founder to build or reason about more than two specific mechanisms.
 
 [LaunchStudio](https://launchstudio.eu/en/) implements calibrated rate limiting across authentication and cost-sensitive endpoints as a standard part of production hardening, protecting against both security abuse and unbounded AI cost exposure, backed by Manifera's engineering experience across production applications handling real-world traffic patterns.
 

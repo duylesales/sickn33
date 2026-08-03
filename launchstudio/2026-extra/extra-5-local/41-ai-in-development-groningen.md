@@ -24,7 +24,7 @@ A few years ago, a founder in Groningen with an idea for a student services app 
 
 ## What AI in Development Actually Changed
 
-Groningen has always had a disproportionate number of ambitious, technically curious people passing through it — the university and Hanze University of Applied Sciences send thousands of graduates into the local economy every year, many of them with a side project or a startup idea shaped by the city's energy-sector and tech scene. AI development tools lowered the barrier for exactly this population. You no longer need to recruit a developer to validate whether an idea works. You describe what you want, the AI writes the code, and you iterate in hours instead of sprints.
+Groningen has always had a disproportionate number of ambitious, technically curious people passing through it — the university and Hanze University of Applied Sciences send thousands of graduates into the local economy every year, many of them with a side project or a startup idea shaped by the city's energy-sector and tech scene. Programs like VentureLab North and the university's own startup support have spent years pushing students toward building something real rather than just writing a thesis, and AI development tools arrived at exactly the moment that push needed a faster path from idea to working software. You no longer need to recruit a developer to validate whether an idea works. You describe what you want, the AI writes the code, and you iterate in hours instead of sprints.
 
 That's a genuine and permanent change. It compresses the idea-to-prototype timeline from months to days, and it means non-technical founders in Groningen can now build something real enough to show a first customer or a small grant committee without hiring anyone. For early validation, that's a huge win.
 
@@ -41,6 +41,21 @@ Our team, coordinated out of an office on Herengracht in Amsterdam, has reviewed
 ## A Practical Way to Think About It
 
 If you're a founder in the province of Groningen weighing how much to trust an AI-built prototype, ask three questions: Does anything in this app touch real user data? Does it process payments? Will more than a handful of people use it at once? If the answer to any of those is yes, the AI-in-development phase is over and you're in a different phase — production readiness — that needs a different kind of scrutiny.
+
+It's worth being honest with yourself about why this test matters. A prototype that only you and a co-founder have ever logged into has never been tested against a real edge case — a user with a weird email format, two people editing the same record at once, a payment that gets declined halfway through checkout. AI in development tools have no way of knowing which of those scenarios matter for your specific app, because you never asked them to consider it. The test above isn't about doubting what you built. It's about correctly identifying the moment your app graduates from "something I'm validating" to "something people are depending on," because those two things need different levels of scrutiny and most founders don't notice the transition until something breaks.
+
+## A Deployment Safety Checklist Before Real Users Arrive
+
+Most founders using AI in development tools have never worked with a staging environment, a rollback plan, or automated backups — not because these concepts are complicated, but because nothing about prompting an AI tool forces you to think about them until something breaks in front of real users. Groningen founders building through Hanze's incubator programs or the university's own startup network often ship their first version the same way they'd submit a class assignment: straight to the URL everyone will use, with no safety net underneath it.
+
+**Before you invite real users in, check for four things:**
+
+- **A staging copy of your app** — a separate environment, even a free one, where you can test a change before it touches production data. Most hosting platforms tied to Lovable, Bolt, and similar tools support this with one extra deployment, but it has to be set up deliberately; it doesn't happen by default.
+- **A backup schedule for your database** — automated, not something you remember to trigger manually. If you can't say when your last backup ran without checking, you don't have one that counts.
+- **A way to undo a bad deploy** — most hosting providers keep previous versions available for instant rollback, but only if you know the feature exists and where to find it before you need it under pressure, not while a class of students is actively locked out.
+- **A rule about who can push directly to production** — even as a solo founder, treating "production" as a place you deploy to deliberately, rather than a place changes land automatically, changes how carefully you think about a Friday-afternoon schema change.
+
+None of these require hiring a DevOps engineer or learning a new toolchain. They require roughly an hour of deliberate setup, done once, ideally during the week before public launch rather than during the week after your first real incident. The Groningen founders who get this right tend to treat that pre-launch week as infrastructure week, not just a final round of feature polish.
 
 ## Real example
 

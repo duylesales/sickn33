@@ -20,7 +20,7 @@ Target Persona: A (Non-Technical Founder)
 }
 </script>
 
-Before you spend another euro on marketing, ask yourself one question: is your AI secure? Not "does it work," not "does it look good" — is it actually secure. Most founders in Amersfoort building their first product with Lovable, Bolt, or Cursor have never had to answer that question, because AI tools are optimized to make things run, not to make things safe. Here's the checklist we use before any launch.
+Before you spend another euro on marketing, ask yourself one question: is your AI secure? Not "does it work," not "does it look good" — is it actually secure. Most founders in Amersfoort building their first product with Lovable, Bolt, or Cursor have never had to answer that question, because AI tools are optimized to make things run, not to make things safe. It's a fair question to have never asked — nothing in the process of prompting your way to a working app forces you to confront it, and the interface looks identical whether the backend behind it is airtight or wide open. Here's the checklist we use before any launch.
 
 ## The Five Checks That Determine If Your AI Is Secure
 
@@ -40,6 +40,8 @@ Ask an AI app builder to create a login form and it will happily do so — a for
 
 Amersfoort sits in the province of Utrecht and has quietly become home to a growing cluster of logistics, insurance-tech, and B2B software startups — sectors where a security failure isn't just embarrassing, it's a contract-ending event. A founder in Amersfoort pitching to a logistics partner or an insurance client will get security questions that a consumer app founder never faces. If your AI-generated app hasn't been properly audited, you may not have honest answers.
 
+The city's mix matters here. Amersfoort's business scene runs from the converted factory buildings around De Nieuwe Stad and the Eemhuis, where a younger wave of software and creative founders work out of shared studios, to the more established office parks near Vathorst and Puntenburg, where logistics, insurance, and financial-services companies have operated for decades. A founder pitching a B2B tool into that second group is walking into rooms where a procurement checklist, not a product demo, decides the deal — and "we haven't had a security review yet" is not an answer that survives that room.
+
 This is where the assumption trips people up: because the AI tool produced clean-looking code, founders assume security was baked in. It wasn't. AI code generators are trained to produce functional patterns, and functional isn't the same as secure. An estimated 45% of AI-generated code contains at least one exploitable vulnerability — and most of those vulnerabilities are invisible until someone actively looks for them, either a real attacker or a proper audit.
 
 ## How LaunchStudio Checks — and Fixes — What AI Tools Miss
@@ -47,6 +49,20 @@ This is where the assumption trips people up: because the AI tool produced clean
 LaunchStudio runs exactly this kind of audit on AI-generated codebases, then fixes what it finds without touching the frontend a founder already built and likes. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, based across offices including Singapore's Tras Street hub, who bring the same security discipline used on enterprise projects for clients like Vodafone and TNO down to founder-scale engagements. You can see exactly what's included in a security review on our packages page.
 
 For founders who want a broader look at production readiness beyond just security, Manifera's custom software development team applies the same rigor across database architecture, hosting, and deployment — the full stack an AI tool leaves half-finished.
+
+## What a Professional Review Checks That the Five-Minute Version Can't
+
+The five checks above will catch the most common and most damaging issues, but they rely on you knowing where to look and what "wrong" looks like when you find it. A professional security review goes further, because it actively tries to break the application rather than just inspecting it.
+
+**A proper review typically includes:**
+
+- **Authorization testing across every role** — not just checking that an admin page is hidden, but logging in as a regular user and deliberately attempting every admin action to see whether the server actually rejects it, not just the interface
+- **Input fuzzing on every form** — submitting malformed, oversized, or deliberately malicious input (SQL fragments, script tags, unexpected characters) to see whether the backend validates input or simply trusts whatever the frontend sends
+- **Session and token inspection** — checking whether authentication tokens expire, whether they can be reused after logout, and whether a stolen token grants more access than it should
+- **Dependency and package scanning** — AI-generated apps often pull in third-party packages with known vulnerabilities that neither the founder nor the AI tool ever reviewed individually
+- **Rate limit and abuse testing** — checking whether an attacker (or just a buggy script) can hammer an endpoint thousands of times without being throttled, a gap that's invisible until it causes a real outage or a runaway API bill
+
+This is the difference between confirming your app looks secure and confirming it holds up when someone actively tries to break it — which is precisely the standard a logistics or insurance-tech client in Amersfoort will expect before signing.
 
 ## Real example
 

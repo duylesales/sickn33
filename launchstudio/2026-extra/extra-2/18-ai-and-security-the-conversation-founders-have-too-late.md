@@ -45,6 +45,8 @@ The conversation founders eventually have to have isn't "is my app secure," phra
 
 A budgeting or finance-adjacent application processes transaction amounts, account details, and spending patterns constantly — exactly the kind of data whose presence in a request is convenient to log for debugging, and exactly the kind of data that shouldn't sit in a plaintext, potentially long-retained log file accessible to anyone with server or logging-platform access, which is often a broader group of people than a founder initially assumes.
 
+That access group typically includes not just the founder, but any contractor or freelance developer ever given server or dashboard access, anyone on a logging platform's own support team who might view logs while troubleshooting a shared infrastructure issue, and in some configurations, third-party log aggregation or monitoring services the application forwards logs to automatically. Each of those is a reasonable, ordinary part of running a product — but each is also one more party with potential visibility into data a founder likely assumed was seen only by the customer and the payment processor.
+
 ## Why This Specific Gap Almost Never Gets Noticed Internally
 
 Logs are, by design, meant to be read only when something goes wrong — which means a log statement quietly capturing sensitive data can sit unnoticed for months or years, simply because nobody has a routine reason to go back and specifically audit what ended up in old log entries, unless a compliance review or a specific incident prompts exactly that kind of look.
@@ -56,6 +58,36 @@ A proper fix audits every logging statement in a codebase for sensitive fields, 
 Manifera's logging and data-handling audits are carried out by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with client relationships managed from the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## A Practical Audit Method for Finding Sensitive Data in Your Own Logs
+
+A founder doesn't need a dedicated compliance tool to get a meaningful first pass on this — a systematic search through the codebase and a look at what's actually stored catches most of the common cases.
+
+**Search the codebase for logging calls first**
+
+Grep your codebase for common logging function names (`console.log`, `logger.info`, `logger.debug`, `print`) and review each result specifically for what's being passed in — not whether the log statement itself looks suspicious, but whether any of its arguments include a full request object, a full user object, or any variable holding transaction, account, or personal data.
+
+**Watch for these especially common patterns**
+
+- Logging an entire request or response object "for debugging," which captures every field it contains, including ones added months later that nobody thought to review against the original logging decision
+- Logging error objects that include the full context of what triggered them, which can inadvertently include sensitive fields the error handler never intended to expose
+- Logging at the API integration layer — many founders carefully avoid logging sensitive data in their own application code, then log the full request and response of every third-party API call for debugging integration issues, which recreates the exact same problem one layer down
+
+**Check your hosting and logging platform's retention settings, not just your own code**
+
+Even carefully written logging code doesn't fully solve the problem if the platform storing those logs retains them indefinitely by default — many hosting providers and logging services (Vercel, Railway, Datadog) ship with retention periods that are longer than a founder assumes, or unlimited unless explicitly configured otherwise. Reducing what you log matters, but so does deciding deliberately how long any of it should be kept.
+
+**Use structured logging with field-level masking going forward**
+
+Rather than relying on developers remembering not to log sensitive fields on every future feature, structured logging libraries (Pino, Winston, and most major platforms' SDKs) support configuring specific field names — `password`, `ssn`, `accountNumber`, `cardNumber` — to be automatically redacted or masked wherever they appear in a logged object, regardless of which part of the codebase logs it. This shifts the safeguard from "remember every time" to "configured once, applied everywhere," which is considerably more reliable across a growing codebase with multiple contributors.
+
+**Treat this as a recurring review, tied to new integrations specifically**
+
+Every new third-party integration is a new opportunity to accidentally log something sensitive while debugging the connection — treating a logging review as a standing step whenever a new payment provider, bank feed, or personal-data-handling feature gets added is what keeps this from quietly recurring after the initial audit closes it.
+
+**Apply the same discipline to error-monitoring tools, not just application logs**
+
+Error-tracking services like Sentry capture far more context than a founder often realizes by default, including request payloads and local variable values at the point of failure — the same sensitive-field masking that matters for application logs matters equally here, and most error-tracking platforms support configuring exactly which fields get scrubbed before an error report is ever sent off your own servers.
 
 ## Real example
 

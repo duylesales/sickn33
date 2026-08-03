@@ -47,11 +47,23 @@ The most common incomplete pattern isn't "no access control at all" — it's acc
 
 ## How This Gets Exploited in Practice
 
-Exploitation doesn't require sophisticated technique. It requires noticing, through browser developer tools or basic API inspection, that a request includes a role or permission field the client controls, then modifying that field before sending an otherwise identical request — a trivial technical action for anyone moderately curious, let alone anyone with actual malicious intent, and one that requires no specialized tools beyond what ships in every modern web browser by default.
+Exploitation doesn't require sophisticated technique. It requires noticing, through browser developer tools or basic API inspection, that a request includes a role or permission field the client controls, then modifying that field before sending an otherwise identical request — a trivial technical action for anyone moderately curious, let alone anyone with actual malicious intent, and one that requires no specialized tools beyond what ships in every modern web browser by default. This is part of what makes this specific gap so consequential relative to its difficulty to exploit: it doesn't require a skilled attacker with custom tooling, just an ordinary user who happens to poke at their browser's network requests out of curiosity, which is a meaningfully larger and less predictable population than the population of people capable of a sophisticated, targeted attack.
 
 ## The Correct Pattern, Explained Precisely
 
 The fix is architectural, not cosmetic: the server must independently determine the requesting user's role from a source it controls and trusts — typically by looking up the authenticated user's role in the database on each request, or by embedding the role in a properly signed token that can't be modified by the client without invalidating its signature — rather than accepting whatever role field the client's request happens to include. This single architectural decision is the difference between RBAC that's real and RBAC that merely looks real in a demo.
+
+## A Step-by-Step Way to Test This Yourself Right Now
+
+You don't need specialized security tooling to run the specific test this article describes — it requires two accounts and a browser's built-in developer tools, and takes roughly fifteen minutes for a single flow:
+
+1. **Create two accounts** with different roles — one regular user, one admin, or whatever your application's highest and lowest privilege levels happen to be.
+2. **Log in as the higher-privileged account** and perform an action only that role should be able to do, while your browser's developer tools are open to the Network tab.
+3. **Find the underlying API request** that action triggered, and note its exact structure — the URL, the method, any role or permission field included in the request body or headers.
+4. **Log out and log back in as the lower-privileged account.** Using your browser's developer tools or a request tool like Postman, replay the same request from step 3, but with the lower-privileged account's active session or token.
+5. **Check the response.** If the server rejects the request — typically a 403 Forbidden response — role verification is happening server-side, correctly. If the server returns the data or performs the action anyway, you've found exactly the gap this article describes.
+
+Run this once for each meaningfully different role boundary in your application — regular user versus admin, individual staff versus manager, one tenant's data versus another's in a multi-tenant product — since a pass on one boundary doesn't imply a pass on a different one built with separate logic. This test is worth running before any external review, both because it's free and because it gives you a concrete, specific finding to bring into that conversation rather than a vague sense that "access control should probably be checked."
 
 ## Why This Deserves Specific, Not Generic, Testing
 

@@ -30,13 +30,26 @@ What it doesn't cover is the data security of the application the tool generates
 
 ## What a Zierikzee Founder Specifically Needs to Verify
 
-Zierikzee, the historic heart of Schouwen-Duiveland island in Zeeland, runs on tourism, sailing, and the region's mussel and oyster fishing industry — a town where the summer season concentrates a huge share of annual revenue into a few months. Founders building booking, rental, or hospitality software here are collecting exactly the kind of personal data — names, payment details, home addresses, sometimes ID information for holiday rentals — that turns a data security gap into a genuine liability, not just an inconvenience.
+Zierikzee, the historic heart of Schouwen-Duiveland island in Zeeland, runs on tourism, sailing, and the region's mussel and oyster fishing industry — a town where the summer season concentrates a huge share of annual revenue into a few months, and where the harbor and the old town's fortified gates fill with visitors from May through September before quieting sharply for the rest of the year. Founders building booking, rental, or hospitality software here are collecting exactly the kind of personal data — names, payment details, home addresses, sometimes ID information for holiday rentals — that turns a data security gap into a genuine liability, not just an inconvenience. And because so much of the island's tourism revenue lands in a narrow window, there's effectively no room to discover a data problem mid-season and quietly fix it before anyone notices — a breach in July is a breach during the only months that matter financially.
 
 For a founder in this position, the verification checklist looks like this: confirm the database has row-level security so guests can only see their own bookings, confirm payment processing runs through a properly configured live integration rather than a test-mode leftover, confirm personal data is stored in a way that complies with GDPR including a real data retention and deletion policy, and confirm API keys and secrets are never present in code the browser can see. None of these are guaranteed by choosing a well-regarded AI tool — they have to be checked, deliberately, by someone looking for exactly these gaps.
 
 ## Verifying Instead of Assuming
 
 This is the review LaunchStudio runs before any Zierikzee-built (or any other) prototype goes live: a structured audit of exactly the four points above, plus a broader pass on authentication and backend permission checks. As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." That experience runs through Manifera's team, operating from its Amsterdam office at Herengracht 420 among other locations, applying the same standard used for enterprise clients like Vodafone and TNO. Review what's included in a typical engagement via the [LaunchStudio packages page](https://launchstudio.eu/en/#packages), and see Manifera's broader engineering model on its [offshore software development page](https://www.manifera.com/services/offshore-software-development/).
+
+## Beyond the Checklist: Testing Your Own Assumptions
+
+Checklists are useful, but they only work against the risks someone already thought to write down. The deeper skill worth building — especially for a non-technical founder who can't personally audit code — is learning to notice when you're relying on an assumption about data security ai tools never actually promised you.
+
+**Assumptions worth questioning specifically, because they're the ones that quietly cause the most damage**
+
+- **"The tool is popular, so it must be secure by default."** Popularity reflects how many people like using a tool, not how strictly it enforces safe defaults on the applications it generates. These are unrelated facts that get conflated constantly.
+- **"My developer friend looked at it and said it seemed fine."** A quick glance from a friend, however well-intentioned, is not the same as a structured security review looking specifically for row-level security gaps, exposed keys, and unverified webhooks.
+- **"Nothing bad has happened yet, so it must be configured correctly."** Absence of an incident is not evidence of security — it's often just evidence that nobody malicious has looked closely yet, which is a different thing entirely on a booking platform holding guest payment details.
+- **"I'll deal with security once I have more bookings."** This inverts the actual risk: a data gap is more dangerous while you're small, because a single incident represents a larger share of your total guests and your total reputation in a small market like Schouwen-Duiveland.
+
+The pattern across all four is the same: each assumption feels reasonable in the moment, and each one substitutes a comfortable belief for an actual check. A founder who catches themselves making one of these assumptions has found, for free, exactly where to ask a harder question before a guest — or a bad actor — finds the gap first.
 
 ## Real example
 
@@ -64,13 +77,13 @@ No. The tool's own platform being secure doesn't guarantee that the database, ac
 Row-level security so users only see their own data, live and properly tested payment processing, GDPR-compliant data retention, and confirming no API keys are exposed in frontend code.
 
 ### Does LaunchStudio work with founders on Zeeland's islands, like Schouwen-Duiveland where Zierikzee is located?
-Yes, LaunchStudio works remotely with founders throughout Zeeland and the rest of the Netherlands and Benelux, including island communities like Schouwen-Duiveland.
+Yes, LaunchStudio works remotely with founders throughout Zeeland and the rest of the Netherlands and Benelux, including island communities like Schouwen-Duiveland, using the same fixed-price process available to founders anywhere in the country.
 
 ### Who is behind LaunchStudio's approach to AI-generated code security?
-Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, has built the company's engineering standards around exactly this gap between AI-built prototypes and production-grade security, backed by Manifera's 120+ engineers.
+Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, has built the company's engineering standards around exactly this gap between AI-built prototypes and production-grade security, backed by Manifera's 120+ engineers and a track record of 160+ delivered projects.
 
 ### Is a data security review worth doing before a seasonal launch, like a summer tourism app?
-Yes — seasonal businesses concentrate most of their annual risk and revenue into a short window, making a pre-season security review especially valuable rather than optional.
+Yes — seasonal businesses concentrate most of their annual risk and revenue into a short window, making a pre-season security review especially valuable rather than optional. There is no quiet off-season window to discover and quietly fix a problem once the season is already underway.
 
 Zierikzee's booking season, Coevorden's cross-border trade, Assen's TT weekend, Terneuzen's port logistics — sixty articles in, the pattern holds everywhere: the AI tool gets a founder to a working prototype fast, and the real work of turning that prototype into something real customers can trust starts the moment the demo ends. Wherever in the Netherlands that next step needs to happen, [LaunchStudio](https://launchstudio.eu/en/) is built for exactly that gap.
 

@@ -57,6 +57,20 @@ A dependency issue that's tolerable risk at the prototype stage — a small, low
 
 Running an automated dependency vulnerability scan — a category of tool that's fast, often free for open-source or small projects, and requires minimal setup — against your full dependency list takes a fraction of the time most of the other production-readiness checks covered throughout this series require, while surfacing exactly this category of risk directly and specifically.
 
+## How to Run Your Own Dependency Audit in Under an Hour
+
+A founder without a dedicated security background can still run a meaningful first-pass audit without specialized expertise, working through four concrete steps in roughly the order they matter most:
+
+**1. Generate a full dependency list.** Every modern package manager can output a complete list of your direct and indirect dependencies with version numbers — this list, not your own memory of what you deliberately chose to install, is the actual scope of what needs checking, since indirect dependencies (packages your packages depend on) are invisible unless you specifically generate this list.
+
+**2. Run an automated vulnerability scan against that list.** Multiple free and low-cost tools exist specifically to check a dependency list against databases of publicly disclosed vulnerabilities, flagging any package with a known, disclosed issue and typically indicating its severity — this single step, taking minutes, surfaces the category of risk described in this series' Cursor-specific dependency example.
+
+**3. Check maintenance activity on your most critical dependencies.** For the handful of packages your product depends on most heavily, a quick look at when the package last received an update or release is a reasonable proxy for whether it's actively maintained — a package untouched for well over a year warrants closer attention, even absent a currently known vulnerability.
+
+**4. Review licenses on anything your product's commercial use depends on.** For dependencies handling core, commercially significant functionality, specifically confirming the license type permits your intended commercial use — rather than assuming it does — closes the exact gap that nearly blocked Youri's funding round below.
+
+This four-step pass won't replace a professional audit's depth, particularly for licensing nuance requiring genuine legal judgment, but it surfaces the majority of concrete, actionable risk in significantly less time than most founders assume, and it's a meaningfully better starting position than never having checked at all.
+
 [LaunchStudio](https://launchstudio.eu/en/) runs dependency audits — checking maintenance activity, known vulnerabilities, and licensing fit — as a standard part of every codebase review, backed by Manifera's engineering discipline in evaluating the full technology stack, not just the application logic sitting on top of it.
 
 [Get your dependencies checked for the risks that don't show up in normal use](https://launchstudio.eu/en/#calculator) — this category is invisible until something specifically checks for it.

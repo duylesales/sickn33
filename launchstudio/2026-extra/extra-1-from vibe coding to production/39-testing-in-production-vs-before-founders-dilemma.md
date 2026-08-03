@@ -53,6 +53,18 @@ For any given piece of work, ask specifically: if this goes wrong in production,
 
 Once the distinction is reversible-vs-irreversible rather than a blanket philosophy, there's no actual contradiction: ship features fast and iterate based on real feedback, exactly as startup wisdom advises, while treating the specific, bounded set of irreversible-risk categories with the deliberate, pre-launch rigor this series covers. Both approaches are correct, applied to the category of risk they actually fit.
 
+## A Practical Tool for Getting Both Philosophies at Once: Feature Flags
+
+Once you've sorted a piece of work into the reversible or irreversible category, feature flags are the practical mechanism that lets you actually ship fast on the reversible side without quietly loosening your standards on the irreversible side.
+
+**How it works in practice:** wrap a new feature behind a flag that can be toggled on for a small percentage of users, or for yourself and a handful of early testers, without a full deployment. This gets you real user feedback — the entire point of "ship fast" — while limiting the blast radius if the feature turns out to be confusing, broken, or simply unwanted.
+
+**Where this genuinely helps with reversible-risk work:** you can ship a redesigned onboarding flow to 10% of new signups, watch completion rates for a few days, and roll it back to 0% in seconds if it underperforms — no redeploy, no rollback panic, just flipping a boolean.
+
+**Where it does not help, and shouldn't be mistaken for a substitute:** feature flags manage exposure to a feature, not exposure to a vulnerability. Flagging a new payment flow "on" for 5% of users doesn't reduce the consequence if that flow has an idempotency bug — those 5% of transactions can still duplicate a charge, and the irreversible cost lands exactly the same way it would at 100% rollout. This is a common founder mistake: treating a feature flag as if it were a safety net for the irreversible-risk category, when it's actually a tool built for controlled learning within the reversible-risk category specifically.
+
+**A useful mental check before flagging anything on:** if the answer to "what's the worst that happens to the 5% of users who see this" is "they see something suboptimal," a flag is a genuinely good way to ship fast. If the answer involves exposed data, a duplicated charge, or an unauthorized action, the flag is exposing that risk to a smaller number of people, not eliminating it — and the underlying issue still needs the deliberate pre-launch verification this series describes before it ships to anyone at all, flagged or not.
+
 ## A Common Founder Mistake This Distinction Corrects
 
 Founders sometimes apply "ship fast" indiscriminately, reasoning that if it's good advice for features, it must generalize to everything, including security and data handling — precisely the reasoning error this article aims to correct. The advice was never meant to generalize that far; it was built around and validated within the reversible-consequence category specifically, and extending it into the irreversible category is a misapplication, not a natural extension.

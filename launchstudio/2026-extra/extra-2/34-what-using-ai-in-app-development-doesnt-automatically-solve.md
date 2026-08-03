@@ -35,11 +35,11 @@ A club treasurer forwards a login link to a teammate, exactly the kind of ordina
 
 ## What a Post-Login Redirect Feature Is Meant to Do
 
-Many apps support a "redirect back to where you were" feature after login — click a link to a specific page, get sent to log in first if needed, then land back on that original page automatically afterward. It's a genuinely useful convenience, and a common one for an AI coding tool to implement correctly when a founder describes wanting login links that "take you where you meant to go."
+Many apps support a "redirect back to where you were" feature after login — click a link to a specific page, get sent to log in first if needed, then land back on that original page automatically afterward. It's a genuinely useful convenience, and a common one for an AI coding tool to implement correctly when a founder describes wanting login links that "take you where you meant to go." The most common implementation simply reads the intended destination from a URL parameter and sends the browser there once login succeeds — a straightforward pattern that works correctly for every legitimate link a founder or a genuine user would ever construct.
 
 ## Why an Unrestricted Redirect Destination Is a Phishing Tool Waiting to Happen
 
-If the redirect destination is taken directly from a URL parameter without restricting it to your own domain, a malicious link can be crafted that looks like your legitimate login page, and after a genuine login, redirects the unsuspecting user to a completely different, attacker-controlled website — one that can then convincingly impersonate your product to harvest credentials or other sensitive information, benefiting from the credibility of having just come from your real login flow.
+If the redirect destination is taken directly from a URL parameter without restricting it to your own domain, a malicious link can be crafted that looks like your legitimate login page, and after a genuine login, redirects the unsuspecting user to a completely different, attacker-controlled website — one that can then convincingly impersonate your product to harvest credentials or other sensitive information, benefiting from the credibility of having just come from your real login flow. The attacker never needs to compromise anything about your actual login system to pull this off; they only need your own, entirely legitimate login link to accept an external destination as a valid redirect target, which is precisely the missing restriction that turns a genuine convenience feature into a phishing delivery mechanism.
 
 ## Why Founders Never Catch This Testing Their Own Product
 
@@ -47,7 +47,7 @@ Testing your own login-and-redirect flow means following the links you yourself 
 
 ## Why This Specific Risk Depends Entirely on Your Users' Trust in You
 
-The damage from an open redirect isn't primarily technical — it's about weaponizing the trust your users already have in your login page and your brand. A community sports club's members trust links that appear to come from their own club's platform, which is exactly the trust an attacker exploiting this gap is counting on to make the eventual phishing attempt convincing.
+The damage from an open redirect isn't primarily technical — it's about weaponizing the trust your users already have in your login page and your brand. A community sports club's members trust links that appear to come from their own club's platform, which is exactly the trust an attacker exploiting this gap is counting on to make the eventual phishing attempt convincing. The link itself, up to the point of redirect, is entirely genuine — the domain is correct, the login page is real, and any security-conscious member checking the address bar before entering their password would find nothing wrong, because nothing about that part of the interaction actually is wrong.
 
 ## What Closing This Gap Involves
 
@@ -56,6 +56,18 @@ A proper fix restricts redirect destinations to a specific, known allow-list of 
 Manifera's authentication flow security reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Send your prototype link — free advice, no obligation](https://launchstudio.eu/en/#contact).
+
+## Other Places the Same Unrestricted-Redirect Pattern Shows Up
+
+Post-login redirects get the most attention because they're the most obviously phishable, but the same underlying mistake — accepting a destination URL as user-controllable input and sending a request there without restriction — appears in several other common features:
+
+- **Password reset links** — a "return to" parameter attached to a reset flow that isn't restricted to your own domain can redirect a user immediately after resetting their password, at exactly the moment they're most likely to trust whatever comes next.
+- **Logout flows** — many apps redirect somewhere after logout, and an unrestricted destination here is just as exploitable as one after login, even though it gets far less scrutiny since logout feels like a lower-stakes action.
+- **Email unsubscribe and notification links** — a link claiming to unsubscribe or confirm a preference change that actually redirects through an unvalidated parameter carries the same launchpad risk, dressed up as routine account administration.
+- **SSO and third-party login callbacks** — an OAuth or single sign-on flow that redirects to a URL supplied in the request rather than a pre-registered, allow-listed callback address can be manipulated to hand off a valid login session to an attacker-controlled destination.
+- **"Continue to" links in transactional emails** — booking confirmations, receipts, and similar emails often include a link back into the app; if that link's destination is built from an unvalidated parameter rather than a fixed, known page, it inherits the same risk.
+
+The fix is identical across all five: restrict the destination to a specific, known allow-list of internal pages or pre-registered callback URLs, and reject or ignore anything outside it regardless of how the request was phrased. A single review that checks the login redirect but skips these adjacent features has only closed one door out of several that were all built the same way, often by the same AI coding tool responding to a similar description each time.
 
 ## Real example
 
@@ -95,6 +107,10 @@ Very well — ClubHub's actual login security was never compromised at any point
 ### Should Amber have been able to catch this by simply testing her own login links more thoroughly before launch?
 
 Unlikely without specifically testing a maliciously crafted redirect parameter, which isn't something honest, cooperative testing naturally produces — this is precisely the category of adversarial test that requires someone specifically thinking like an attacker rather than more thorough testing from the founder's own, inherently cooperative perspective.
+
+### Beyond the login redirect itself, should a founder assume other similar features share the same gap?
+
+It's a reasonable default assumption rather than something to check case by case — password resets, logout flows, unsubscribe links, SSO callbacks, and transactional email links all commonly reuse the same "redirect to whatever URL was provided" pattern, often built by the same tool responding to similar descriptions, so a review that finds the gap in one of them should check all of them rather than treating each as an isolated finding.
 
 <script type="application/ld+json">
 {
@@ -139,6 +155,14 @@ Unlikely without specifically testing a maliciously crafted redirect parameter, 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Unlikely, since honest cooperative testing doesn't naturally produce a maliciously crafted redirect parameter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a founder assume other features share the same open-redirect gap?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — password resets, logout, unsubscribe links, and SSO callbacks often reuse the same unrestricted pattern and should all be checked."
       }
     }
   ]

@@ -51,11 +51,33 @@ Founders without a security background reasonably associate "hashed" with "safe,
 
 ## What Upgrading This Properly Involves
 
-A proper fix replaces an outdated hashing algorithm with a modern, purpose-built one, and carefully migrates any existing stored hashes so users aren't disruptively forced to reset their passwords in the process. [LaunchStudio](https://launchstudio.eu/en/) checks for exactly this pattern as part of its authentication security review, backed by Manifera's 11+ years of experience with modern cryptographic best practices in production systems.
+A proper fix replaces an outdated hashing algorithm with a modern, purpose-built one, and carefully migrates any existing stored hashes so users aren't disruptively forced to reset their passwords in the process. The standard migration technique is to rehash a user's password with the new, stronger algorithm the next time they successfully log in using their existing credentials — the old hash still verifies correctly at that exact moment, so the transition happens quietly in the background, one real login at a time, without ever needing to email every user and ask them to pick a new password. Accounts that don't log in again for months simply carry the older hash a little longer, which is an acceptable tradeoff against forcing a disruptive, all-at-once reset. [LaunchStudio](https://launchstudio.eu/en/) checks for exactly this pattern as part of its authentication security review, backed by Manifera's 11+ years of experience with modern cryptographic best practices in production systems.
 
 Manifera's cryptographic and authentication reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## A Ten-Minute Self-Check Before You Book a Full Review
+
+Most founders can't audit their own cryptography, but there's a quick, practical way to at least know what question to ask. Open your project's authentication code, or ask your AI coding tool directly, and look for the specific function or package name handling password storage.
+
+**What a modern implementation typically looks like**
+
+- References to bcrypt, scrypt, or Argon2 (Argon2id specifically) in the authentication code or package dependencies — these are purpose-built for password storage and deliberately slow to compute
+- A visible "cost factor," "work factor," or "iterations" parameter — a number you can actually see and reason about, usually set somewhere between 10 and 14 for bcrypt
+- Hashes stored in the database that look long and include an embedded algorithm identifier (a bcrypt hash typically starts with $2b$ or $2a$)
+
+**What tends to signal an outdated choice**
+
+- References to MD5, SHA-1, or a bare, unsalted SHA-256 call used directly on the password rather than through a password-specific library
+- No visible cost factor or iteration count at all — general-purpose hash functions don't have one, because they were never designed to be slow on purpose
+- A custom "hash the password" function written from scratch rather than calling an established, audited library
+
+Finding a reference to MD5 or SHA-1 in your authentication code doesn't necessarily mean you're compromised today — it means the question is worth asking directly, in writing, before it becomes relevant during a breach rather than after. Ask your AI coding tool point-blank: "What hashing algorithm and library is this project using for passwords, and what cost factor is configured?" A tool that can't give you a clear, specific answer is itself a signal worth taking seriously.
+
+One additional nuance worth knowing: a higher cost factor isn't automatically better without limit. Setting it too high can meaningfully slow down every single login attempt on your own server, creating a genuine performance cost of its own — the right value balances resistance to offline cracking against real login latency for real users, which is exactly the kind of calibration an experienced engineer tunes based on actual server load rather than picking an arbitrary large number and hoping for the best.
+
+This self-check takes ten minutes and won't catch everything a full review would — confirming the cost factor is actually appropriate, checking whether the migration path handles existing users safely, and verifying no other authentication logic quietly bypasses the hashing step entirely are all things that benefit from an engineer's eyes rather than a founder's own quick search.
 
 ## Real example
 

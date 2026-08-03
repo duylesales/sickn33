@@ -59,6 +59,22 @@ The instinctive response — write more test cases — helps, but only for the s
 
 Set aside dedicated time — separate from feature development and separate from writing planned test cases — specifically to use your own product like an unpredictable real user would: click things out of the expected order, abandon flows partway through and return later, open multiple tabs and act in both simultaneously. This exploratory session, distinct from both development and formal testing, is specifically designed to surface the assumptions neither of those other activities naturally exercises.
 
+## A Starter Checklist: Five Flows Worth Deliberately Breaking Before Launch
+
+A founder sitting down for a first exploratory session often doesn't know where to start, which is precisely why a short, concrete list of specific actions to try is more useful than the general instruction to "test unexpectedly." Five specific starting points, each targeting a distinct category of hidden workflow assumption:
+
+**1. Navigate backward mid-flow.** In any multi-step process — onboarding, checkout, a multi-part form — use the browser's back button partway through, then continue forward again, exactly the action that broke Iwan's onboarding flow below. Check whether previously entered data survives intact.
+
+**2. Abandon and resume.** Start a multi-step process, close the tab entirely without finishing, then return an hour or a day later. Does the flow resume cleanly from where you left off, or does it silently reset, duplicate, or land in a state that's neither complete nor cleanly restarted?
+
+**3. Race two tabs against each other.** Open the same account in two browser tabs and perform a conflicting action — editing the same record, claiming the same limited resource — in both simultaneously. This specifically surfaces the concurrency-adjacent assumptions covered elsewhere in this series, but originating from ordinary single-user multi-device behavior rather than two separate people.
+
+**4. Submit faster or slower than expected.** Fill out and submit a form unusually quickly, before any asynchronous validation has a chance to complete, and separately, leave a form sitting idle for several minutes before finally submitting it, checking whether a session or state change in the interim breaks the submission.
+
+**5. Skip a step by editing the URL.** If your flow uses distinct URLs per step, try navigating directly to a later step's URL without having completed the earlier ones, checking whether your app correctly redirects you back or instead renders a broken, partially-initialized state.
+
+None of these five require technical sophistication to execute — they require only the deliberate intention to act like a real, imperfect user rather than the cooperative tester who built the feature and therefore already knows the "correct" way to use it.
+
 [LaunchStudio](https://launchstudio.eu/en/) includes exactly this kind of exploratory adversarial testing as part of its production-readiness review, specifically hunting for hidden workflow assumptions beyond what a standard test suite covers, backed by Manifera's engineering discipline across 160+ delivered projects.
 
 [Get your app tested the way real users will actually use it, not just the way you expected](https://launchstudio.eu/en/#calculator) — passing tests and surviving real use are different claims.

@@ -26,7 +26,11 @@ Most guides on how to make an AI product focus entirely on the frontend — the 
 
 Ask most people how to make an AI product today and the answer starts and ends with a prompt: describe the app, watch a tool like Cursor or Lovable generate it, ship it. That's true as far as it goes, but it skips the part where the product actually has to hold up — a database schema that doesn't corrupt data as the product grows, an API that doesn't buckle when more than one client calls it at once, and authentication that actually stops unauthorized access rather than just looking like it does in the demo.
 
+This isn't a criticism of the tools themselves. Cursor and Lovable are genuinely good at what they're built for: translating a description into working software fast. The mismatch happens when a founder assumes that "working" and "ready for an institutional client's due diligence process" are the same bar, because in a fast demo they can look identical. They diverge sharply the moment a real reviewer — a procurement officer, a legal team's technical advisor — starts asking specific questions the interface was never designed to answer.
+
 Den Haag has a founder profile that's genuinely distinct within Zuid-Holland: as the seat of the Dutch government, home to the International Criminal Court, the OPCW, and a dense concentration of embassies, NGOs, and legal and policy consultancies, the city produces a disproportionate number of founders building tools for governance, compliance, and legal-adjacent workflows. Those products live or die on backend correctness — data integrity, permission structures, audit logging — far more than they live or die on visual polish.
+
+Compare that to a typical Amsterdam or Rotterdam consumer product, where a slick interface and fast onboarding often matter as much as, or more than, backend rigor for early traction. A Den Haag founder building for an NGO or a legal consultancy doesn't get that trade-off. The buyer isn't evaluating whether the product feels nice to use in a five-minute demo — they're evaluating whether it will survive their own organization's technical and legal scrutiny months later, often against a formal checklist their IT or compliance team maintains independently of the sales conversation.
 
 ## A Practical Approach to Making an AI Product That Doesn't Stall at the Backend
 
@@ -42,6 +46,32 @@ If you're a Den Haag founder trying to figure out whether your product's backend
 ## Why This Matters More in Den Haag Specifically
 
 Institutional and government-adjacent buyers in Den Haag run procurement processes that ask pointed technical questions: how is data secured, who can access what, is there an audit trail. A product that hasn't had its backend properly built out will struggle to answer those questions credibly, no matter how good the interface looks.
+
+## Common Backend Mistakes That Sink Government and Legal-Sector Pilots
+
+LaunchStudio has now seen this pattern repeat enough times across Den Haag's institutional-adjacent founders to name the specific failure modes, not just the general category. These are the ones that come up again and again during vendor due diligence.
+
+**No audit trail, or a partial one**
+
+A "who did what, when" log is one of the first things a legal or institutional IT reviewer asks about, and most AI-generated backends have nothing resembling it by default. Adding it after the fact is possible, but retroactively logging actions means you have no history before that point — a gap that's hard to explain credibly during a review.
+
+**Rate limiting treated as optional**
+
+An API with no rate limiting isn't just a performance risk; to a security-conscious reviewer, it signals that nobody thought about abuse scenarios at all. This is often one of the first things a technical evaluator tests, precisely because it's quick to check and reveals a lot about overall rigor.
+
+**Data stored without encryption at rest**
+
+Especially relevant for legal documents, case files, or anything touching identifiable individuals. A database breach — even a minor, contained one — becomes a much bigger story when the underlying data was sitting in plain text the whole time.
+
+**Weak or missing input validation on API endpoints**
+
+AI-generated backends often trust that data arriving at an endpoint looks the way the frontend expects it to. A legal-tech reviewer, or an actual attacker, will send malformed or unexpected input on purpose specifically to see what breaks.
+
+**No documented data retention or deletion policy**
+
+Government and legal clients frequently need to know exactly how long data is kept and how it's deleted on request. "We haven't thought about that yet" is a common, honest answer from AI-native founders — and a disqualifying one during a formal procurement review.
+
+Catching these before a pilot begins, rather than during it, is the difference between a stalled evaluation and a signed reference client. In an institutional market as networked as Den Haag's, that first reference client also tends to open doors to the next one, which makes getting the backend right upfront worth far more than the engineering hours it costs.
 
 ## Real example
 

@@ -45,6 +45,8 @@ A software engineering review of that same feature asks a further, specific ques
 
 Sequential or simple numeric IDs are a natural, common default in generated database schemas, and fetching a record "by ID" is one of the most basic operations any backend performs. Because the happy path — a legitimate user fetching their own invoice by its correct ID — works identically whether or not an ownership check exists, this specific class of gap produces no visible symptom until someone deliberately or accidentally requests an ID that isn't theirs.
 
+This is compounded by how naturally an AI coding tool implements a "fetch by ID" endpoint: given a prompt like "let users view their invoice," the most direct, obvious implementation is a single database query filtering by the ID in the request — which is exactly correct for a user viewing their own invoice, and says nothing at all about what happens when that ID belongs to someone else. Adding the ownership check requires an extra, deliberate line of logic that isn't implied by the original request, so unless a prompt specifically asks for it, there's no strong reason for the generated code to include it by default.
+
 ## Why a Founder Reviewing Their Own Code Rarely Catches This
 
 Reviewing your own generated code for correctness naturally means checking "does this do what I described?" — and an IDOR gap, by definition, is invisible from that angle, since the code does exactly what was described. Catching it requires reviewing from a different question entirely: "what did I never describe, and what happens by default when that case occurs anyway?"
@@ -56,6 +58,40 @@ A proper fix adds an explicit ownership check to every resource-fetching endpoin
 Manifera's engineering reviews are performed by the team at the Ho Chi Minh City development center on Pho Quang Street, with client-facing scoping conversations handled from the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## A Step-by-Step Framework for Testing for IDOR Yourself
+
+IDOR vulnerabilities are unusually mechanical to test for once you know the pattern, which means a founder can run a meaningful check without any specialized security tooling.
+
+**Step one: list every resource fetched by an ID in a URL or request**
+
+Invoices, orders, documents, messages, user profiles, uploaded files — anywhere your application's URL or API request includes something like `/invoices/1042` or `?order_id=88`, that's a candidate for this exact vulnerability class.
+
+**Step two: create two test accounts, not one**
+
+Testing IDOR requires being logged in as one user while attempting to access another user's resource — something a founder testing solo, logged into a single account, structurally cannot do. Two free test accounts, created specifically for this check, is enough.
+
+**Step three: log in as account A, note a resource ID, then switch to account B**
+
+While logged in as the second account, manually change the URL or request to reference the ID noted from the first account. A correctly protected endpoint returns a 403 or 404 error. An endpoint with an IDOR gap returns account A's actual data to account B.
+
+**Step four: repeat across every resource type and every HTTP method**
+
+Don't stop at the first endpoint that passes — repeat the same test for every resource type identified in step one, and check not just viewing (GET requests) but also editing or deleting (PUT, PATCH, DELETE requests), since an endpoint might correctly block viewing another user's resource while still allowing an edit or delete request against it.
+
+**Step five: check nested and indirect references too**
+
+Some of the most easily missed cases aren't the primary resource ID in the URL, but a secondary ID referenced inside a request body or a nested resource — a comment on someone else's document, a line item within someone else's order. These are just as exploitable and are frequently the ones a first-pass manual check misses.
+
+**When manual testing isn't practical, automate it**
+
+For a product with dozens of endpoints, manually testing every combination becomes impractical quickly. At that point, a scripted check — looping through a range of IDs against each endpoint using both test accounts — turns an hours-long manual process into a five-minute automated one, and is exactly the kind of systematic pass a dedicated engineering review applies as standard practice rather than a one-off exercise.
+
+A founder who runs through even the first four steps honestly, on their five or six most sensitive endpoints, will catch the majority of what a professional audit finds — the remaining value of a full review is mostly in the automation and the discipline of covering every endpoint, not a fundamentally different technique.
+
+**Extend the same test to any feature added after launch**
+
+A founder who runs this framework once, before launch, and never again, misses exactly the kind of gap BouwBoard's invoice endpoint represents — a feature added later, under less scrutiny than the original build received. Any new resource-fetching endpoint added after launch, whether by the founder or a new contributor, deserves the same two-account test before it ships, not just a one-time pass applied to the original prototype.
 
 ## Real example
 

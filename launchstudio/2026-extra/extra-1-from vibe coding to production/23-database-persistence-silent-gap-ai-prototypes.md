@@ -57,6 +57,22 @@ Many AI coding tools default to the fastest, simplest storage approach available
 
 Beyond simply "using a real database" (PostgreSQL, MongoDB, and similar are the standard production choices), durability requires: automated, regularly-scheduled backups; a backup retention policy appropriate to your data's importance; and, critically, periodic restore testing, since a backup process that has never actually been used to restore data is a backup process whose real-world reliability remains genuinely unverified.
 
+## What to Actually Check When Choosing or Auditing a Database Provider
+
+Not every "real database" comes with the same durability guarantees out of the box, and the default plan a founder ends up on — often whatever a tool like Bolt or Lovable wires up automatically — isn't always the one with backups actually enabled. A few concrete things worth checking, regardless of which provider you're on:
+
+**Automated backup frequency.** Some managed providers (Supabase, Neon, Railway, and similar) back up daily by default on paid tiers, but only hourly or not at all on free tiers — worth confirming directly in your dashboard rather than assuming your plan includes what you need.
+
+**Point-in-time recovery, not just daily snapshots.** A daily backup means you can lose up to a full day of data if something goes wrong shortly before the next scheduled backup; point-in-time recovery, where offered, lets you restore to a specific minute rather than the last snapshot, meaningfully narrowing your actual exposure window.
+
+**Backup retention length.** A provider that only retains the last 24 hours of backups leaves you exposed if a data-corruption issue isn't noticed immediately — which happens more often than founders expect, since a subtle data bug can go unnoticed for days before someone spots it.
+
+**Whether restoring is something you can actually do yourself, and quickly.** Some providers require a support ticket and a wait; others offer self-service restore directly from the dashboard. In an actual incident, that difference is the difference between minutes and days of downtime.
+
+**Cost at the tier that includes real backup guarantees.** It's common for a founder to be on a free or hobby tier during prototyping and simply not realize backups aren't included until after the fact — checking this explicitly, rather than assuming, is worth the five minutes it takes.
+
+None of this requires switching providers in most cases — it usually means upgrading a plan tier or flipping a setting that was simply never turned on, exactly the kind of gap that's invisible until the moment it isn't.
+
 [LaunchStudio](https://launchstudio.eu/en/) verifies and, where necessary, migrates your data storage to genuinely durable, properly-backed-up infrastructure as a standard part of every Launch Ready engagement, backed by Manifera's operational experience running production databases across 160+ delivered projects.
 
 [Find out if your data actually survives a restart, not just a refresh](https://launchstudio.eu/en/#calculator) — the refresh test tells you less than it feels like it does.

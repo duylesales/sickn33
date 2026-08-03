@@ -43,11 +43,25 @@ If you built your interface in v0 and it looks and behaves exactly the way you w
 
 ## The Trap of a Polished Frontend
 
-A genuinely well-designed v0 interface creates a specific, understandable illusion: because it looks completely finished, it's easy to assume the product is close to done. In reality, interface polish and backend completeness are almost entirely uncorrelated — a beautiful, fully-functional-looking interface can sit in front of literally no real data layer at all, with every interaction currently powered by placeholder content that was never meant to survive contact with a real user or a real database.
+A genuinely well-designed v0 interface creates a specific, understandable illusion: because it looks completely finished, it's easy to assume the product is close to done. In reality, interface polish and backend completeness are almost entirely uncorrelated — a beautiful, fully-functional-looking interface can sit in front of literally no real data layer at all, with every interaction currently powered by placeholder content that was never meant to survive contact with a real user or a real database. This trap is specific to v0 in a way it isn't for full-stack tools: a rough-looking Bolt or Lovable prototype at least signals its own unfinished state visually, prompting reasonable caution, while a polished v0 interface actively signals the opposite, making it the one case in this series where the interface's own quality actively works against a founder's accurate sense of how much remains.
 
 ## What Building the Backend Actually Involves
 
 Connecting a v0 frontend to real functionality means: a database schema designed around your actual data model, not just what looked right in a mockup; authentication and session management, built with the API-level rigor covered elsewhere in this series, not merely a login form that renders correctly; business logic implementing whatever your product actually does, beyond what any interface alone can express; and, if applicable, payment processing integrated properly rather than represented by a checkout screen that currently submits to nowhere.
+
+## The Backend Decisions a v0-First Founder Actually Needs to Make
+
+Once you accept that the backend is a separate build, a handful of concrete decisions determine how that build actually goes — decisions worth understanding even if someone else is making the technical calls:
+
+**Database choice and schema design.** Your data model needs to reflect what your product actually stores and how it relates — user accounts, the records they create, how those records connect to each other — not what happened to be convenient for populating mockup screens during design. Getting this right early avoids a costly reshape later, once real data and real relationships exist that a mockup's placeholder content never had to account for.
+
+**Authentication provider versus custom-built.** Established authentication providers (handling login, password resets, session management) are almost always faster and more secure to integrate than a custom-built system, since they've already solved problems — credential storage, session expiry, brute-force protection — that a from-scratch implementation would need to solve correctly on its own.
+
+**API design connecting frontend to backend.** Every interactive element in your v0 interface — a button, a form, a data display — needs a corresponding backend endpoint it calls, with a clear, agreed contract for what data goes in and what comes back. This mapping exercise, done deliberately at the start, prevents the frontend and backend teams (or the frontend you built and the backend someone else builds) from making incompatible assumptions about the same interaction.
+
+**Hosting and deployment target.** Where the backend actually runs — a managed platform, a specific cloud provider, a particular database host — affects cost, scaling behavior, and how quickly issues get resolved when something goes wrong, and is worth deciding deliberately rather than defaulting to whatever a tutorial happened to use.
+
+None of these decisions require you personally to have deep technical expertise, but understanding that they exist, and that each one has real consequences, helps you have a genuinely informed conversation with whoever builds your backend, rather than treating that entire layer as an unopened black box.
 
 ## Why This Is Actually a Reasonably Efficient Starting Point
 

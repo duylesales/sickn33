@@ -53,11 +53,25 @@ Comprehensive observability, a full CI pipeline, extensive automated test covera
 
 ## Why This Framing Helps More Than the Full Checklist Alone
 
-Founders facing the complete checklist covered throughout this series sometimes reasonably feel overwhelmed into further delay — exactly the pattern covered in this series' guidance on why founders postpone production readiness. Narrowing specifically to "what does my very first paying customer's experience require" provides a smaller, more achievable target that still captures the highest-consequence risks, letting founders move forward without either an unsafe launch or an indefinitely delayed one.
+Founders facing the complete checklist covered throughout this series sometimes reasonably feel overwhelmed into further delay — exactly the pattern covered in this series' guidance on why founders postpone production readiness. Narrowing specifically to "what does my very first paying customer's experience require" provides a smaller, more achievable target that still captures the highest-consequence risks, letting founders move forward without either an unsafe launch or an indefinitely delayed one. The full checklist remains valuable and eventually necessary, but presenting it as a single, undifferentiated wall of requirements — with no distinction between what's urgent now and what can reasonably wait — is itself a significant, avoidable contributor to the exact delay pattern this series repeatedly identifies as more costly than an imperfect but honest launch.
 
 ## How This Threshold Shifts as You Grow
 
 This narrower list isn't a permanent substitute for the full checklist — it's specifically calibrated to the lowest-stakes moment (your very first customers) and needs to expand toward the complete checklist as your customer count, revenue, and data footprint grow, exactly as covered in this series' guidance on the specific risks that scale with growth for MVP-to-SaaS founders.
+
+## How to Sequence the Work When Time and Budget Are Both Limited
+
+Founders approaching their first paying customer rarely have unlimited time or budget to address even the narrower non-negotiable subset all at once, which makes the order of operations almost as important as the list itself. A practical sequence, in the order most founders should actually work through it:
+
+**First: payment reliability.** Nothing else on this list matters if the transaction that starts the relationship fails or duplicates — get idempotent, correctly-handled payment processing verified before anything else, since it's both the highest-consequence gap and typically the most contained, well-scoped fix.
+
+**Second: data access security.** Verify that authentication and authorization are enforced at the API level, not just the login screen, specifically for whatever data your first paying customer will trust you with — this is the second-highest-consequence item because a breach here damages trust in a way that's difficult to repair, even for a very small customer base.
+
+**Third: core feature reliability under first-use conditions.** Test the exact feature your customer is paying for as a genuinely new user would encounter it — not your own well-worn testing path, but the confused, unfamiliar first pass a stranger to your product actually takes.
+
+**Fourth: a support channel that actually works.** This is deliberately last in sequence, not because it matters least, but because it's typically the fastest to stand up — even an email address you personally, promptly monitor is sufficient at this stage, and doesn't need to be built before the higher-consequence technical items above it.
+
+Working through the list in this order, rather than tackling whichever item feels easiest first, ensures that if time or budget runs out partway through, what's already been addressed covers the highest-consequence risks rather than an arbitrary subset.
 
 [LaunchStudio](https://launchstudio.eu/en/) specifically scopes engagements around exactly this practical threshold for founders approaching their first paying customers, then helps expand coverage as growth warrants it, backed by Manifera's engineering experience across founders at every stage of this exact journey.
 

@@ -35,7 +35,7 @@ Bolt is genuinely good at what it's designed to do: describe a full-stack applic
 
 ## Why Bolt-Specific Patterns Matter, Not Just Generic AI-Coding Advice
 
-Every AI coding tool has its own characteristic tendencies, shaped by how it was built and what it optimizes for during generation. Generic "AI code needs hardening" advice is true but not actionable enough on its own — knowing specifically where Bolt's output tends to diverge from production requirements lets you check the right things first, rather than auditing your entire codebase blindly.
+Every AI coding tool has its own characteristic tendencies, shaped by how it was built, what training data informed it, and what it optimizes for during generation. Generic "AI code needs hardening" advice is true but not actionable enough on its own — it tells you a review is worth doing without telling you where to look first. Knowing specifically where Bolt's output tends to diverge from production requirements lets you check the right things first, rather than auditing your entire codebase blindly and hoping you stumble onto whatever happens to be wrong. Bolt in particular optimizes hard for one specific experience — describe an app, watch it appear fully wired together and running within minutes — and that specific optimization target is exactly what produces the specific, recurring pattern of gaps described below, rather than a random or unpredictable one.
 
 ## Where Bolt-Generated Applications Typically Diverge From Production-Ready
 
@@ -46,6 +46,20 @@ Every AI coding tool has its own characteristic tendencies, shaped by how it was
 **Database query patterns under load.** Bolt-generated database logic is typically written for correctness under normal, sequential use rather than defensively against concurrent access — meaning flows involving any shared or limited resource (bookings, inventory, unique claims) warrant specific scrutiny for race conditions that only manifest when two requests arrive close together in time.
 
 **Third-party service resilience.** Calls to external APIs — payment processors, email services, AI model providers — are typically wired for the success case, with error handling present in form but not in the specificity that distinguishes a retryable failure from a permanent one, or that includes an explicit timeout rather than an indefinite wait.
+
+## How to Check Each of These Yourself, Before Paying for a Review
+
+You don't need a professional audit to get a first read on where your specific Bolt app stands — each of the four areas above has a rough self-check a non-technical or lightly technical founder can run in under an hour:
+
+**For hardcoded credentials:** search your entire repository, including its full commit history and not just the current files, for anything resembling an API key, password, or token — a long, random-looking string sitting next to a variable name like `key`, `secret`, or `token`. If your version control history has ever contained one, even if it was later deleted, treat it as compromised, since removing a file doesn't remove it from history.
+
+**For authorization depth:** open your browser's developer tools, find a network request your app makes while logged in as a normal user, and try repeating that exact request while logged out, or logged in as a different, lower-privileged account. If the data comes back anyway, the check is happening only in the interface, not on the server.
+
+**For concurrency issues:** open two browser windows, log in as two different accounts, and attempt the same booking, purchase, or claim on a limited resource in both windows within a second or two of each other. If both succeed when only one logically should, you have a race condition.
+
+**For third-party resilience:** temporarily use an invalid API key, or block network access to one external service your app depends on, then use the app normally. If it crashes outright or hangs indefinitely rather than showing a clear, specific error, error handling needs work.
+
+None of these self-checks replace a full review — they won't catch everything a systematic audit would — but they're a genuinely useful first pass that costs nothing beyond your own time, and they'll tell you quickly whether you're looking at a quietly well-hardened app or one with obvious gaps worth prioritizing first.
 
 ## What Doesn't Need to Change
 

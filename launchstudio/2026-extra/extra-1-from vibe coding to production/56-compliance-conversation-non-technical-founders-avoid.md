@@ -55,6 +55,20 @@ Security gaps eventually produce a concrete, visible trigger — an incident, a 
 
 Exactly the same logic covered throughout this series regarding security applies here: not having the conversation doesn't make the underlying data-handling reality compliant or non-compliant — it just means you don't yet know which one is true. The risk exists or doesn't exist regardless of whether you've examined it, and delaying the examination specifically delays discovering a problem while real data continues accumulating under whatever structure you currently have, making any eventual fix more expensive per the compounding-cost pattern covered elsewhere in this series.
 
+## Common Signs Your Current Setup Isn't Actually Compliant, Even If Nothing Has Gone Wrong Yet
+
+Because compliance gaps stay invisible until a specific triggering event, as covered above, a founder genuinely can't rely on the absence of any visible problem as evidence things are fine. A few concrete, checkable signs are worth reviewing directly, rather than waiting for an enterprise customer or a regulator to surface them first.
+
+**You genuinely don't know which specific country or region your database is hosted in.** If the honest answer to "where does our data actually live" is "wherever the default was when I set up the hosting account," rather than a deliberate choice, EU data residency likely hasn't been configured explicitly — many popular hosting defaults point to US-based regions unless a founder specifically selects otherwise.
+
+**You've never actually tested a full account-deletion request end to end.** If a user asked to have their data deleted today, walking through what would actually happen — does it hit every table, every backup, every third-party service holding a copy — is the direct test; if you've never run this test, you don't actually know whether your deletion pathway works, regardless of whether one technically exists in your code.
+
+**You can't name your data processors without checking.** Your hosting provider, your email service, your analytics tool, your AI model provider — if you can't quickly list which third parties touch personal data your product collects, you likely don't have processing agreements in place with all of them, since you can't formalize an agreement with a vendor you haven't identified as a processor in the first place.
+
+**Your privacy policy was copied from a template and never actually reviewed against what your product does.** A generic privacy policy that doesn't accurately describe your actual data collection and handling practices is itself a compliance gap, independent of whether the underlying architecture is otherwise sound.
+
+If any of these four checks surfaces genuine uncertainty rather than a confident answer, that uncertainty is itself the signal this conversation is overdue — not proof something has already gone wrong, but a direct indication the underlying question hasn't actually been examined yet.
+
 ## Why This Is More Approachable Than It Feels
 
 Despite its reputation, this conversation for a typical early-stage AI-native SaaS product is usually a bounded, specific set of questions with concrete, actionable answers — not the sprawling, expensive legal undertaking the word "compliance" sometimes implies. Most of what it actually requires is architectural (covered throughout this series) and vendor-configuration work, not extensive custom legal counsel, particularly at the scale of a solo founder or small early team.

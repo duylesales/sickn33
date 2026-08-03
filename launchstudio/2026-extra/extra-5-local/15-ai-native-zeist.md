@@ -30,7 +30,7 @@ But "AI native" describes how you started, not how ready you are to launch. This
 
 ## Why This Distinction Matters Especially in Zeist
 
-Zeist, in the province of Utrecht, has a distinct character among the founders we work with — it's home to a concentration of wellness, sustainability, and green-economy businesses, partly a legacy of the conference and retreat culture the town is known for, alongside a mix of corporate offices tucked into its wooded surroundings. Founders building in this space are often creating products that handle sensitive personal data: health metrics, wellness tracking, behavioral information people share more freely than they realize.
+Zeist, in the province of Utrecht, has a distinct character among the founders we work with — it's home to a concentration of wellness, sustainability, and green-economy businesses, partly a legacy of the conference and retreat culture the town is known for, alongside a mix of corporate offices tucked into its wooded surroundings near Kerckebosch and the Slot Zeist estate. That conference-and-retreat heritage shapes the kind of founder Zeist tends to produce: someone who has spent time around coaching, therapy, or corporate wellness programs, spotted a gap, and built a tool to fill it — often with genuine domain expertise in wellness but limited exposure to what "data handling" means in a technical sense. Founders building in this space are often creating products that handle sensitive personal data: health metrics, wellness tracking, behavioral information people share more freely than they realize, precisely because a wellness app feels lower-stakes than a hospital system, even when the underlying data is just as sensitive.
 
 Being AI native and building in a data-sensitive category is a combination that raises the stakes on what "production ready" actually requires. A wellness app that mishandles user data isn't just a bug — in a market where trust is the entire product, it's existential. Roughly 80% of AI-built projects never reach production, and for founders in categories like wellness, health, or sustainability, the ones that do reach production but skip a proper security and compliance review often don't stay there long once users or regulators start paying attention.
 
@@ -39,6 +39,20 @@ Being AI native and building in a data-sensitive category is a combination that 
 Being AI native doesn't mean abandoning the AI-first approach once you need to go further — it means knowing exactly where to bring in production expertise without giving up the speed and ownership that made AI-native building appealing in the first place. LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy specifically for this handoff point: our team, operating out of our Amsterdam headquarters on Herengracht 420, takes an AI-generated prototype and builds the missing production layer around it — security, database architecture, payments, hosting — without rebuilding the frontend a founder already directed into existence.
 
 As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." That's the real second half of being AI native — the part the label alone doesn't cover. You can explore what that process looks like on our homepage, and Manifera's offshore software development team offers a look at how that same production discipline scales for larger, ongoing engagements.
+
+## The Four Layers Underneath the "AI Native" Label
+
+It helps to think of "AI native" not as a single state but as the first of four layers a product needs before it's genuinely ready for real users — especially when that product touches personal data the way most Zeist wellness and health tools do.
+
+**Layer one: the prototype.** This is what an AI tool gives you directly — a working interface, a plausible data model, core flows that function when you test them yourself. This is the layer that makes someone "AI native" in the first place, and it's a genuinely impressive starting point compared to five years ago.
+
+**Layer two: the hardening layer.** This is authentication enforced server-side, database access properly restricted per user, and payment logic that survives more than the happy path. Almost nothing here is visible in a demo, and almost none of it is included by default in what an AI tool generates.
+
+**Layer three: the compliance layer.** For a Zeist wellness app handling health-adjacent data, this means encryption at rest for sensitive fields, a clear data retention policy, an honest answer to "where is this data stored and who can access it," and — depending on the product — actual GDPR alignment rather than a copy-pasted privacy policy nobody reviewed against what the app actually does.
+
+**Layer four: operational trust.** Monitoring that tells you when something breaks, a backup strategy, and documentation you can hand to a partner or investor's due diligence contact without scrambling to answer basic questions on the spot, the way Femke had to in the example below.
+
+Most AI-native founders stop confidently at layer one and assume the rest either doesn't apply to them yet or already happened automatically. Neither is usually true — and for anyone building in a data-sensitive category, layers two and three in particular tend to be the first thing a serious partner or customer asks about.
 
 ## Real example
 

@@ -49,6 +49,27 @@ Rate limiting has no visible effect during normal use — a founder testing thei
 
 Unlike a visible bug, a missing rate limit or validation check doesn't announce itself with an error message. It tends to surface instead as an unexplained spike in a hosting bill, a flood of junk records in a database table, or a customer support inquiry about an account that was never actually created by its supposed owner — each one a downstream symptom of the same missing, upstream safeguard.
 
+## A Practical Framework for Deciding Which Endpoints Need Rate Limiting First
+
+Not every endpoint in your application needs the same level of protection, and trying to rate-limit everything at once is a good way to never actually finish the job. A more useful approach is ranking your endpoints by how much damage a script hitting them repeatedly could actually do, and working down that list in order.
+
+**Tier one — fix these first:**
+
+- Password reset and login endpoints, since these are the most commonly targeted by automated bots scanning for exactly this weakness, and a single unprotected reset endpoint can generate thousands of emails and a real hosting-cost spike within hours, as it did for Bram.
+- Any endpoint that triggers a paid, metered action on your side — an AI model call, an SMS send, an email send — because each repeated request has a direct dollar cost attached to it, not just a nuisance cost.
+- Account creation and signup endpoints, which are a common target for bulk fake-account generation.
+
+**Tier two — fix these next:**
+
+- Search and filter endpoints, particularly any that construct a database query from user input, since these tend to be both computationally expensive to run repeatedly and a common target for malformed-input probing.
+- File upload endpoints, where repeated large uploads can exhaust storage or bandwidth quickly.
+
+**Tier three — worth doing, lower urgency:**
+
+- Read-only endpoints serving non-sensitive, cacheable data, where the cost of abuse is lower and standard hosting-level protections often provide adequate coverage on their own.
+
+A reasonable starting rate limit for most founder-scale products is something like five requests per minute per IP address or account for tier-one endpoints, tightened further for anything that costs real money per call, and loosened for lower-risk, read-only routes. The exact numbers matter less than having any limit at all in place — an endpoint with a limit that's occasionally too strict is a minor annoyance you can tune later; an endpoint with no limit at all is an open invitation with no ceiling on how much it can cost you. This kind of triage is exactly the sort of judgment call [LaunchStudio](https://launchstudio.eu/en/#process)'s review is built to make quickly, since a founder rarely has the full picture of which of their own endpoints are the most expensive to abuse until someone actually walks through the list with them.
+
 ## What Closing This Gap Actually Involves
 
 Adding rate limiting and abuse protection to sensitive endpoints is a targeted, additive change — it doesn't touch your product's core logic or its frontend, it wraps the entry points that matter with the constraints a real, adversarial internet actually requires. [LaunchStudio](https://launchstudio.eu/en/) includes exactly this kind of database and endpoint hardening in its standard production-readiness review, backed by Manifera's 11+ years of experience with PostgreSQL, Supabase, and Firebase-backed production systems.
@@ -96,6 +117,10 @@ Yes — it's a decision about how the system as a whole handles a category of re
 
 Possibly not, if the founder has the technical background to implement and correctly test rate limiting themselves — LaunchStudio exists specifically for the founders who don't have that background or the time to acquire it safely before launch.
 
+### Does rate limiting slow down the experience for legitimate users?
+
+Not when configured properly. Reasonable per-user or per-IP thresholds are set well above normal usage patterns, so legitimate users never notice them — they only block the kind of rapid, repeated requests a real person using the product normally wouldn't generate in the first place.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,6 +164,14 @@ Possibly not, if the founder has the technical background to implement and corre
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Possibly not with the right technical background — the service exists for founders who lack that background or the time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does rate limiting slow down the experience for legitimate users?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not when configured properly — reasonable thresholds sit well above normal usage, so legitimate users never notice them."
       }
     }
   ]

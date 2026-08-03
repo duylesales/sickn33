@@ -40,7 +40,23 @@ A real AI deployment setup has several layers your AI tool's one-click publish a
 
 Almelo has a long industrial heritage — historically a textile manufacturing center, now home to a mix of manufacturing, logistics, and increasingly, tech-driven small businesses across Overijssel. Founders building here tend to be practical engineers by instinct: they understand systems, supply chains, and operational risk. That background makes the AI deployment gap especially frustrating once discovered, because it's the kind of thing a founder with a manufacturing or logistics mindset would normally never leave unaddressed — you wouldn't ship a physical product without a quality control process, and the same logic should apply to your deployment pipeline.
 
+There's a useful analogy in how Almelo's manufacturing sector already thinks about failure. A textile plant doesn't wait for a batch of defective fabric to reach a customer before discovering the loom was misconfigured — it runs inline quality checks throughout production, catching problems at the point they occur rather than downstream. A deployment pipeline with automated testing gates, staged rollouts, and rollback capability is the software equivalent of that same discipline: catching a bad change before it reaches a real user, rather than after a customer notices something's wrong. Founders who've spent time around any kind of production floor tend to grasp this instinctively once it's framed this way — it's the same underlying logic they already trust in a completely different domain.
+
 LaunchStudio exists precisely for this handoff: we take an AI-built application that's functionally complete and build the deployment infrastructure around it — CI/CD, environment separation, monitoring, and rollback — without touching your application code or frontend. LaunchStudio is powered by Manifera, a company with 11+ years of production engineering experience and 120+ engineers who've handled deployment infrastructure for enterprise clients including Vodafone and Xpar Vision. Our Amsterdam office at Herengracht 420 coordinates this work directly with founders, while the underlying engineering draws on Manifera's full delivery track record — you can review it on [Manifera's about page](https://www.manifera.com/about-us/).
+
+## How to Actually Test Your Deployment Pipeline Before You Need It
+
+Most solo technical founders build their deployment pipeline once, watch it work on the first successful deploy, and never deliberately test it again until something goes wrong for real. That's backwards — a deployment pipeline you've never intentionally broken is a pipeline you don't actually understand, and you'll be learning its failure modes for the first time during an actual incident, which is the worst possible moment.
+
+**Run a rollback drill on a Tuesday afternoon, not during an outage.** Deploy a deliberately broken change to a non-critical route, confirm your monitoring catches it, then time how long it takes you to roll back to the last known-good state. If that number is anything other than "a few minutes, executed calmly," you've just learned something valuable without any real customer impact.
+
+**Load-test your signup and core-action endpoints before a marketing push, not after.** A tool like k6 or Artillery can simulate 50, 200, or 500 concurrent users hitting your signup flow or primary feature in minutes. Almost every AI-tool default deployment has never seen more than a handful of simultaneous connections, and connection pool exhaustion or unindexed queries only reveal themselves under concurrent load — exactly the load a successful launch or a viral LinkedIn post can suddenly produce.
+
+**Kill a dependency on purpose.** Temporarily point your staging environment at an invalid database connection string, or simulate your AI provider timing out. Watch what actually happens: does your app show a sensible error, or does it hang indefinitely or expose a raw stack trace to the user? This is usually the fastest way to discover that "error handling" in an AI-generated codebase means a generic try/catch that swallows the problem rather than responding to it sensibly.
+
+**Confirm your alerts actually reach you, not just your dashboard.** An error tracking tool that logs an incident nobody sees isn't meaningfully different from no monitoring at all. Trigger a test alert deliberately, on your phone, with sound on, before you need it to wake you up for a real one.
+
+None of this requires a dedicated QA engineer or a large time investment — a focused afternoon covers all four drills for most single-founder AI applications. What it requires is treating your deployment pipeline as something to be verified, not just assumed to work because it worked once.
 
 ## A practical starting point
 
@@ -80,6 +96,9 @@ Manifera's engineering team, over 120 strong, coordinated through LaunchStudio's
 ### How quickly can a deployment audit happen?
 Most deployment infrastructure reviews and rebuilds complete within one to two weeks. Book a free 15-minute intro call to discuss your specific setup.
 
+### What's a rollback drill and how often should I run one?
+A rollback drill is a deliberate test where you deploy a broken change to a non-critical part of your app and time how quickly you can revert it. Running one before you actually need it, rather than during a live incident, is the difference between a calm five-minute fix and a panicked hour of debugging under pressure.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,7 +108,8 @@ Most deployment infrastructure reviews and rebuilds complete within one to two w
     { "@type": "Question", "name": "Does LaunchStudio touch my application code during a deployment fix?", "acceptedAnswer": { "@type": "Answer", "text": "No, we build infrastructure around the existing application without modifying frontend or core logic unless requested." } },
     { "@type": "Question", "name": "Is this only relevant for founders in Almelo?", "acceptedAnswer": { "@type": "Answer", "text": "No, this applies broadly, though the pattern is common among Overijssel's technically hands-on founders based in or around Almelo." } },
     { "@type": "Question", "name": "Who builds the deployment infrastructure?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera's engineering team of 120+ engineers, coordinated through LaunchStudio's Amsterdam office." } },
-    { "@type": "Question", "name": "How quickly can a deployment audit happen?", "acceptedAnswer": { "@type": "Answer", "text": "Most deployment infrastructure reviews and rebuilds complete within one to two weeks." } }
+    { "@type": "Question", "name": "How quickly can a deployment audit happen?", "acceptedAnswer": { "@type": "Answer", "text": "Most deployment infrastructure reviews and rebuilds complete within one to two weeks." } },
+    { "@type": "Question", "name": "What's a rollback drill and how often should I run one?", "acceptedAnswer": { "@type": "Answer", "text": "A rollback drill is a deliberate test deploying a broken change and timing the revert. Running one before an emergency turns panicked debugging into a calm, practiced fix." } }
   ]
 }
 </script>

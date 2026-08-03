@@ -77,6 +77,18 @@ Score 2 only if you've confirmed a failing test or lint violation actually block
 
 The scoring criteria are deliberately binary and evidence-based — you either ran the specific test described or you didn't — which is designed to resist the self-review optimism covered throughout this series. A founder tempted to score generously on a vague "have I thought about this" basis is structurally prevented from doing so by the requirement that each 2 specifically corresponds to a described, executed verification, not a general impression.
 
+## Turning Your Score Into an Action Plan: Which Gaps to Close First
+
+A raw total score tells you roughly how much work remains, but it's the category-level breakdown, not the total, that should actually drive what you work on first. A practical way to sequence remediation once you've scored honestly:
+
+**Treat any category scoring 0 as an immediate priority, regardless of total.** A single 0 in authentication or secrets, even sitting alongside strong 2s everywhere else, represents a genuinely untested, unknown-risk area — and the categories in this framework aren't equally weighted in real-world consequence, meaning a strong total score with one 0 buried in it can be more dangerous than a mediocre total score with no 0s at all.
+
+**Among categories scoring 1, prioritize by consequence, not by ease of fixing.** A 1 in authentication (login works, API-level enforcement untested) is a higher-priority gap to close than a 1 in observability (monitoring exists, alerting untested), even if the observability fix happens to be quicker — this mirrors the tiered-risk prioritization covered elsewhere in this series.
+
+**Don't let a strong total score create false confidence about untested categories.** A founder scoring 12 out of 14 can still have a single, serious, unaddressed 0 sitting in the mix — the total is a useful summary statistic, but the category-level detail is what actually determines whether you're safe to launch or grow, exactly the distinction Ruben's case below illustrates directly.
+
+**Re-score after each fix, not just once at the end.** Closing a category from a 1 to a verified 2 means re-running the specific described test, not simply assuming the fix worked — the same evidence-based discipline that made the original score meaningful applies equally to confirming a remediation actually closed the gap.
+
 [LaunchStudio](https://launchstudio.eu/en/) can verify or produce this exact score for your specific app, providing the concrete tests behind each category rather than requiring you to self-administer them, backed by Manifera's engineering discipline across 160+ delivered projects scored and hardened using this same underlying framework.
 
 [Get your app scored professionally against this exact framework](https://launchstudio.eu/en/#calculator) — a self-score is a useful starting point; a verified one is a reliable decision basis.

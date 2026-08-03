@@ -59,6 +59,26 @@ If there's one question underlying every one of the sixty articles in this serie
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) — sixty specific cases, one recurring pattern, and a dedicated review built specifically to catch it before a real user does.
 
+## How to Run This Kind of Pattern-Based Self-Audit Before You Call Anyone
+
+Silke's approach — arriving with the pattern already understood rather than asking about one isolated feature — is something any founder reading this synthesis can partially replicate before reaching out for a formal review.
+
+**Walk through every feature that touches money, access, or someone else's data**
+
+For each one, ask the same question this series keeps returning to: what did I describe to my AI coding tool, and what did I never think to describe? A feature built exactly as specified will handle the specified case correctly every time — the gap lives specifically in whatever wasn't specified.
+
+**Group your findings into the recurring categories, not a flat list**
+
+Rather than treating each finding as its own unrelated item, sort what you find into the handful of categories this series kept returning to: authorization checks that only exist in the interface rather than the server, credentials or secrets sitting somewhere they shouldn't, missing limits on sensitive or repeatable actions, sessions or tokens that don't fully invalidate, and business logic that assumes good faith rather than verifying it. A founder who can sort their own findings into these categories, the way Silke did before her review even started, understands their own product's risk profile far better than a founder holding an unsorted list of individually scary-sounding items.
+
+**Bring that structured understanding into any review, whether with LaunchStudio or otherwise**
+
+A review is more efficient, and often meaningfully cheaper, when a founder arrives already able to say "I think my biggest exposure is in the authorization-checks category, specifically around who can access records that aren't theirs" rather than "please look at everything and tell me what's wrong" — not because the underlying technical work changes, but because a founder who understands the pattern can prioritize, ask better follow-up questions, and evaluate proposed fixes far more effectively throughout the engagement.
+
+**This self-audit doesn't replace a review — it makes one more effective**
+
+Exactly as the earlier FAQ in this synthesis notes, a founder's own structured self-audit surfaces candidates worth checking; it doesn't replace an engineer actually verifying whether a suspected gap is real, how serious it is, and what a correct fix specifically requires — the same distinction that ran through every one of the sixty individual cases this series covered.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Recognizing the Pattern Across an Entire Product at Once

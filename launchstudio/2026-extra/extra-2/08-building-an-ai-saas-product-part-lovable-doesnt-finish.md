@@ -43,7 +43,21 @@ Building a form that successfully submits data — the part a demo directly test
 
 ## Why This Specific Gap Rarely Shows Up in Casual Testing
 
-A founder submitting their own account settings form, from their own application, on their own device, never generates the scenario CSRF protection defends against — there's no malicious external site involved in that test at all. The gap only becomes relevant the moment a logged-in user visits somewhere else on the internet that's specifically trying to exploit it, a scenario no amount of the founder's own careful testing would ever produce.
+A founder submitting their own account settings form, from their own application, on their own device, never generates the scenario CSRF protection defends against — there's no malicious external site involved in that test at all. The gap only becomes relevant the moment a logged-in user visits somewhere else on the internet that's specifically trying to exploit it, a scenario no amount of the founder's own careful testing would ever produce. Even QA processes that involve a second person testing the product tend not to catch it, because that second tester is still using the application as intended, from a normal browser tab, with no attacker-controlled page anywhere in the loop — the entire vulnerability only exists in the specific gap between "a request the user meant to send" and "a request their browser was tricked into sending," which no amount of conventional functional testing, however thorough, is designed to probe.
+
+## The Other Form-Security Gaps That Usually Travel With Missing CSRF Protection
+
+CSRF protection rarely turns up alone. In practice, when a review finds a form missing CSRF tokens, it's common to find a small cluster of related, similarly invisible-in-testing gaps sitting right alongside it, because they all share the same root cause: a category of protection that adds no visible functionality during a founder's own straightforward testing.
+
+**Missing or misconfigured cookie attributes.** Session cookies should typically be set with a `SameSite` attribute restricting when a browser will send them along with a cross-site request in the first place — a setting that, correctly configured, blocks a meaningful share of CSRF-style attacks before a token check is even needed. AI-generated authentication code frequently leaves cookies at their permissive default rather than setting this attribute explicitly.
+
+**Clickjacking exposure.** Without an explicit header telling browsers your pages can't be loaded inside an invisible iframe on someone else's site, a malicious page can layer transparent buttons over your application's real interface, tricking a logged-in user into clicking something they can see (on the attacker's page) while actually clicking your application's hidden button underneath. A single response header (`X-Frame-Options` or an equivalent Content-Security-Policy directive) closes this, and it's another example of a one-line fix that has zero visible effect during normal testing.
+
+**Open redirects.** A "redirect after login" or "return to this page" feature that accepts any URL without validating it against an allowed list can be exploited to send a user through your legitimate, trusted domain on the way to a convincing phishing page — technically leaving your application working exactly as designed, while being used as a stepping stone for something else entirely.
+
+**Unescaped output reaching the page.** Anywhere user-submitted content (a comment, a display name, a support message) gets rendered back into the page without proper escaping opens the door to stored cross-site scripting, where one user's malicious input executes in another user's browser session simply by that second user viewing the page.
+
+**Why these travel together:** all four share the exact profile described throughout this piece — a form or a page that visibly works correctly in every test a founder runs, because none of these gaps affect the happy path at all. A CSRF audit that stops at CSRF tokens alone, without checking cookie configuration, framing headers, redirect validation, and output escaping, tends to leave the rest of this cluster untouched — which is why LaunchStudio's form-security pass checks all of them together rather than treating CSRF as an isolated finding.
 
 ## Why "Only 20% Remaining" Undersells How Bounded the Fix Actually Is
 
@@ -96,6 +110,10 @@ Very directly — Roelevink's stated view is that founders now build genuinely g
 
 Sometimes — explicitly prompting for CSRF protection can lead a tool to include it, but relying on remembering to ask for every relevant protection, across every form, in every session, is a fragile substitute for a dedicated review that checks systematically rather than depending on prompt completeness.
 
+### If a review is scoped narrowly to "add CSRF protection," would these other related gaps get missed?
+
+Possibly, if the review is interpreted that literally — this is why LaunchStudio's form-security pass checks the related cluster (cookie configuration, framing headers, redirect validation, output escaping) together by default, rather than treating a narrowly worded request as the full scope of what needs checking.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,6 +157,14 @@ Sometimes — explicitly prompting for CSRF protection can lead a tool to includ
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Sometimes, but relying on remembering to ask every time is a fragile substitute for a systematic review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Would a narrowly scoped CSRF review miss related form-security gaps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Possibly — LaunchStudio's form-security pass checks the related cluster together by default rather than just CSRF alone."
       }
     }
   ]

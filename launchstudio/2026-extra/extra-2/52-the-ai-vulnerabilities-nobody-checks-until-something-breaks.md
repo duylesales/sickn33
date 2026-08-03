@@ -39,7 +39,7 @@ A feature that checks whether an uploaded file "is a document" by looking only a
 
 ## Why This Matters More Than It Might Initially Seem
 
-Depending on how an uploaded file is subsequently processed or served, a disguised malicious file can potentially be executed, or can be served to other users in a way that exploits their own device or browser, turning what looks like a routine document-upload feature into a genuine distribution mechanism for something harmful, entirely because the underlying content was never actually verified.
+Depending on how an uploaded file is subsequently processed or served, a disguised malicious file can potentially be executed, or can be served to other users in a way that exploits their own device or browser, turning what looks like a routine document-upload feature into a genuine distribution mechanism for something harmful, entirely because the underlying content was never actually verified. A file disguised as a document but actually containing script content, for instance, might get served back to another user's browser during a routine "preview this document" feature, running in the context of your own application and potentially accessing whatever that other user's session has access to. None of this requires the uploader to have any privileged access to your systems at all — the entire exploit path runs through a feature explicitly designed to accept files from anyone.
 
 ## Why Ordinary Testing Never Reveals This
 
@@ -47,7 +47,7 @@ Testing a document-upload feature with genuine, legitimate documents — the onl
 
 ## Why Legal and Document-Handling Products Face This Question Especially Directly
 
-A platform specifically built around generating and exchanging legal documents naturally handles a high volume of file uploads as a core part of its actual purpose, meaning this category of risk isn't a peripheral concern for a product like this — it sits close to the center of what the product does most often, making it worth checking specifically rather than assuming as an afterthought.
+A platform specifically built around generating and exchanging legal documents naturally handles a high volume of file uploads as a core part of its actual purpose, meaning this category of risk isn't a peripheral concern for a product like this — it sits close to the center of what the product does most often, making it worth checking specifically rather than assuming as an afterthought. The same logic extends to any product where document upload isn't a secondary feature but the primary interaction — an HR platform collecting resumes and identity documents, an insurance claims tool accepting photos and receipts, a healthcare intake form gathering referral letters. In each of these cases, the volume and centrality of uploads means a gap here isn't a rare edge case waiting to be found eventually; it's a near-daily occurrence waiting to be exploited by whoever tries first.
 
 ## What Properly Closing This Gap Requires
 
@@ -56,6 +56,31 @@ A proper fix verifies an uploaded file's actual content against its claimed type
 Manifera's file-handling security reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Get a free look at your prototype — just send the link](https://launchstudio.eu/en/#contact).
+
+## A Practical Framework for Evaluating Any Upload Feature
+
+Not every upload feature carries the same risk, and a founder without a security background can still reason through which of their own features deserve priority attention using three questions.
+
+**1. What happens to the file after it's accepted?**
+
+- If it's only ever displayed back to the same user who uploaded it, the practical risk is lower
+- If it's processed by the server (converted, parsed, scanned for text), executed in any way, or served to other users, the risk rises sharply — this is exactly the category ContractKlaar fell into
+- If it's stored and later downloaded by someone other than the uploader, verify a malicious upload can't be disguised as something the eventual downloader would trust
+
+**2. How is the file type currently being checked?**
+
+- Filename extension alone (`.pdf`, `.docx`) is the weakest check, and the one AI coding tools reach for most often since it's the simplest thing to implement quickly
+- A MIME type reported by the browser is only marginally better — it's still something the uploader's own browser reports, and can be spoofed just as easily
+- Genuine content verification — reading the file's actual binary signature or "magic bytes" to confirm it matches the claimed type — is the only check that can't be trivially defeated by simply renaming a file
+
+**3. Who can upload, and how often?**
+
+- An upload feature open to anonymous or unauthenticated users carries more risk than one gated behind a paying, identity-verified account, since anonymity makes abuse cheaper for whoever attempts it
+- A feature with no rate limit on uploads compounds any content-verification gap, since it also allows a large volume of attempts in a short window
+
+Running your own features through these three questions takes a few minutes and doesn't require a security background — it requires knowing what to ask. A founder who identifies "processed server-side, checked only by extension, open to any signed-up user" as the profile of one specific feature now has a concrete, prioritized starting point rather than a vague, unfocused sense that "uploads might be risky somewhere."
+
+This kind of self-triage is a reasonable first pass, but it stops short of an actual technical review in one important way: it tells a founder where to look, not whether what's actually implemented there passes muster. Confirming that a genuine content-verification check exists — and correctly rejects a disguised file rather than just assuming one does — still benefits from someone actually testing it with a deliberately mismatched file, the same way LaunchStudio's review caught the gap in ContractKlaar's upload feature before anyone with different intentions than the reporting researcher found it first.
 
 ## Real example
 

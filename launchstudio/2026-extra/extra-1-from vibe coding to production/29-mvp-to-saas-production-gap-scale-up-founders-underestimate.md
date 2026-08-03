@@ -55,6 +55,20 @@ A scale-up founder's instinct, reasonably, is to treat operational history as ev
 
 Reviewing production-readiness at the very earliest MVP stage, before any real usage exists, means testing hypothetically against conditions you're still guessing at. Waiting until after a serious incident means paying the reactive cost covered in this series' guidance on the true cost of skipping a security audit. The scale-up inflection point — meaningful growth confirmed, more growth actively being pursued — is specifically when the actual risk profile has become concrete and knowable, while still being ahead of the volume threshold where the highest-consequence gaps are most likely to actually trigger.
 
+## Which Gaps Scale Fastest: A Priority Order for a Time-Constrained Scale-Up Review
+
+A scale-up founder rarely has time to review every category covered throughout this series with equal depth before a growth catalyst hits. If forced to prioritize, the categories worth reviewing first are the ones whose risk scales fastest, not evenly, with volume:
+
+**Concurrency issues scale roughly quadratically with simultaneous users**, since the odds of a timing collision depend on how many pairs of users could plausibly collide, not just the raw user count — meaning this category's risk can grow considerably faster than your user count does, making it the highest-priority category to review ahead of any confirmed growth catalyst.
+
+**Access-control and data-exposure gaps scale linearly with data volume and customer count**, since each additional customer is simply more data an existing gap could expose if triggered — serious, but more predictable in how it grows than concurrency risk.
+
+**Performance and algorithmic bottlenecks scale with data size specifically**, not user count directly, which means a product with slowly growing users but rapidly growing per-user data (more records, more history, more content) can hit this threshold independently of raw growth in customer count — worth checking against your specific data-growth pattern, not just your headcount growth.
+
+**Operational and observability gaps scale roughly linearly with support burden**, growing steadily rather than sharply, making this the lowest-urgency category to prioritize first in a time-constrained pre-catalyst review, though still worth addressing before, not during, a support-volume spike.
+
+This ordering isn't a reason to skip categories entirely — it's a reasonable way to sequence a review when a growth catalyst is imminent and there genuinely isn't time to cover everything with equal depth before it arrives.
+
 [LaunchStudio](https://launchstudio.eu/en/) provides exactly this scale-up-stage review, specifically assessing how your MVP's existing gaps will behave as growth continues, not just whether the product currently works, backed by Manifera's experience scaling AI-native SaaS products through this exact transition.
 
 [Get reviewed for how your MVP will hold up at the growth you're actually pursuing](https://launchstudio.eu/en/#calculator) — the risk that hasn't manifested yet at your current scale isn't the same as risk that doesn't exist.

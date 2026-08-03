@@ -57,6 +57,20 @@ As covered in this series' guidance on evaluating audit rigor, a report finding 
 
 For any finding marked resolved, the report should describe specifically what changed — not "fixed authentication" but "implemented server-side role verification checked against the authenticated session on every request, replacing the previous client-supplied role field" — the same before-and-after specificity covered in this series' guidance on audit artifacts, giving you a checkable claim rather than a vague assurance.
 
+## A Simple Way to Track Findings Without Losing the Thread
+
+A report with a dozen or more findings, spread across several severity levels, can be genuinely hard to hold in your head all at once — a simple, founder-maintained tracking approach helps keep the report actionable rather than something read once and then set aside.
+
+**Keep a running list with four columns: finding, severity, status, your own understanding.** For each finding, note its severity as assigned, its current status (open, in progress, resolved, deliberately deferred), and — critically — a plain-language note in your own words confirming you actually understand what it means and why it matters, not just that it's been marked resolved by someone else.
+
+**Revisit deferred findings on a specific date, not "eventually."** A medium or low finding you've consciously decided to defer, similar to Petra's decision described above, is a reasonable choice — but setting an actual review date, even a rough one, prevents "deferred" from silently becoming "forgotten," which is a meaningfully different and less deliberate outcome.
+
+**Ask for a re-verification, not just a status update, before treating anything as closed.** "Marked resolved" in a tracker and "independently re-confirmed as actually fixed" are different claims — for critical and high findings specifically, asking whether the fix was re-tested after implementation, not just implemented, closes the loop the same verification-over-assumption principle covered throughout this series calls for.
+
+**Store the report itself somewhere you'll actually find it again.** A specific, dated file in an accessible location — not buried in an email thread — means that six months from now, when a new hire or an investor asks about your security posture, you can produce the actual report rather than a vague recollection of what it said.
+
+This lightweight tracking habit, maintained consistently across every audit your product goes through over time, turns a series of individual reports into a genuine, cumulative record of your product's production-readiness history — useful well beyond the moment any single report first landed in your inbox.
+
 ## Using the Report to Make an Informed Launch Decision
 
 Once you understand severity and can distinguish addressed from unaddressed findings, the practical question becomes straightforward: are all critical and high findings resolved and verified, and do I have a clear, informed understanding of any remaining medium or low findings' actual risk? A "yes" to both is a reasonable basis for launch confidence, considerably more solid than the vague feeling of readiness this series has repeatedly cautioned against relying on alone.

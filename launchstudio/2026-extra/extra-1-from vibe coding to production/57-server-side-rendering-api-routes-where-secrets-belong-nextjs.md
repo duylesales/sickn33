@@ -53,6 +53,20 @@ Next.js specifically requires environment variables intended for client-side use
 
 The direct check: search your codebase for every environment variable reference, and for each one, confirm it's either genuinely meant to be public (and correctly prefixed) or is only ever referenced within server-side code (API routes, server components, or server-only utility functions) — never within a client component or any code that ends up in the client-side bundle. Building your app and inspecting the actual client-side JavaScript bundle for any sensitive-looking values is a further, concrete verification step beyond just reading the source.
 
+## Other Server/Client Boundary Mistakes Beyond Environment Variables
+
+Exposed secrets are the most consequential version of this boundary problem, but the same underlying confusion between "runs on the server" and "runs on the client" produces a handful of other common mistakes worth checking for specifically.
+
+**API routes returning more data than the client actually needs.** A common pattern — querying your full database record and returning the entire object from an API route — can inadvertently include internal fields (an internal cost figure, another user's partial data from a join, an administrative flag) that were never meant to reach the client, simply because filtering the response down to only what's needed wasn't a step the original prompt specifically described.
+
+**Server Actions called with insufficiently validated input.** Next.js Server Actions run server-side by design, which correctly keeps any logic inside them off the client — but a Server Action is still a boundary-crossing entry point receiving data from the client, meaning the input validation guidance covered elsewhere in this series applies to it exactly as it would to a traditional API route, a distinction that's easy to overlook precisely because Server Actions feel more like "just calling a function."
+
+**Middleware assumed to enforce authorization when it only handles routing.** Next.js middleware is genuinely useful for redirects and lightweight checks, but relying on it as your sole authorization enforcement, rather than verifying authorization again within the actual server-side logic it's protecting, can leave a gap if a request reaches that logic through a path the middleware didn't anticipate.
+
+**Client components importing from a file that also contains server-only logic.** Even without directly referencing a secret, importing from a module that mixes server-only and shared code can pull unintended logic into the client bundle — keeping server-only utilities in clearly separated files, rather than mixed alongside client-safe exports, avoids this category of accidental inclusion entirely.
+
+Checking for these alongside the environment-variable-specific risk covered above gives a more complete picture of where Next.js's blended structure can quietly move something server-only across the boundary into client-visible territory.
+
 ## Why This Deserves Specific Attention Beyond the General Secrets Guidance
 
 The git history and hardcoded-credential risks covered elsewhere in this series concern secrets embedded directly in source code. This is a structurally different, Next.js-specific risk: a secret correctly stored in environment configuration, never hardcoded, that still ends up exposed because of where in your code structure it's referenced — a subtler, framework-specific version of the same underlying exposure concern.

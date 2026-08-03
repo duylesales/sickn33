@@ -69,6 +69,22 @@ A gap at a lower layer undermines the value of hardening above it — genuinely 
 
 Typically: layer 4 (business logic) is genuinely strong, since it's what the AI tool is most directly optimized to generate well. Layers 1 through 3 (secrets, access control, data) usually have real gaps, for the specific reasons covered throughout this series. Layers 5 through 7 (external services, testing, observability) are frequently entirely absent, not just weak, since they require deliberate addition beyond what a prompt describing core functionality naturally produces.
 
+## A Practical Way to Audit Your Own Backend Against This Anatomy
+
+Reading the seven layers is one thing; actually locating them inside your own codebase is another, especially if you didn't write most of it yourself and are working from what an AI tool generated. A rough self-audit, layer by layer, doesn't require deep backend expertise — it requires knowing what question to ask and where to look for the answer.
+
+**Layer 1 (Secrets):** Search your entire codebase for the string patterns your API keys and connection strings start with (most services use a recognizable prefix). If any hits appear outside your environment configuration files, that's a layer 1 gap, full stop — no further diagnosis needed.
+
+**Layer 2 (Access Control):** Open your browser's developer tools, log in as one test user, and try changing a resource ID in a network request to one that belongs to a different account. If the server returns that other account's data, authorization isn't actually being enforced at the API level, regardless of what the interface shows.
+
+**Layer 3 (Data):** Ask, concretely: when was the last successful backup restored and verified, not just scheduled? A backup that has never been test-restored is an assumption, not a guarantee — this is the single most common data-layer gap, because the backup job itself usually does run; nobody just confirms it produces something usable.
+
+**Layer 4 (Business Logic):** This layer is the easiest to self-assess, since it's the part you've actually used and tested the most — the main risk here is edge cases outside your own usage pattern, which is exactly why the "3-5 user flows worth testing before you ship" framing covered elsewhere in this series matters even for the layer an AI tool builds best.
+
+**Layers 5 through 7 (External Services, Testing, Observability):** These are usually the fastest layers to audit, because the honest answer is frequently "it doesn't exist yet" rather than "it exists but has a subtle flaw" — a missing layer is easier to confirm than a broken one, which is part of why these three layers, once identified as gaps, are often the most straightforward to scope into a fixed-price engagement.
+
+Running this self-audit before a scoping conversation with any provider — LaunchStudio included — gives you a rough map of your own gaps going in, which tends to produce a more accurate, better-targeted quote than starting from "something probably needs fixing" with no specifics.
+
 [LaunchStudio](https://launchstudio.eu/en/) builds out exactly this full architecture around your existing business logic — hardening layers 1 through 3, integrating layer 5 robustly, and adding layers 6 and 7 from scratch where they don't yet exist — backed by Manifera's engineering discipline across 160+ delivered projects.
 
 [Get your specific backend mapped against this full architecture](https://launchstudio.eu/en/#calculator) — see exactly which layers need work and which are already solid.

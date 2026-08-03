@@ -35,7 +35,7 @@ Everyone says you can build an app fast with AI now. Nobody mentions that "fast"
 
 ## Why Concurrency Bugs Are Structurally Invisible to Solo Testing
 
-A founder testing a booking feature does so sequentially, one action at a time, by definition — there's only one person testing, so there's no way for two simultaneous requests to occur naturally. Concurrency bugs, almost by their nature, only manifest when two things happen close enough together in time that the system's handling of "who gets there first" gets exercised, a scenario solo testing structurally cannot produce.
+A founder testing a booking feature does so sequentially, one action at a time, by definition — there's only one person testing, so there's no way for two simultaneous requests to occur naturally. Concurrency bugs, almost by their nature, only manifest when two things happen close enough together in time that the system's handling of "who gets there first" gets exercised, a scenario solo testing structurally cannot produce. Even a founder who deliberately tries to "test edge cases" by clicking quickly or opening two browser tabs rarely reproduces the actual failure window, which is often measured in milliseconds — a gap that human reaction time simply cannot reliably hit on purpose, which is exactly why this category of bug tends to survive extensive, well-intentioned manual testing completely intact.
 
 ## What a Race Condition in a Booking System Actually Looks Like
 
@@ -43,7 +43,7 @@ A typical booking flow checks whether a desk or room is available, and if so, ma
 
 ## Why This Specific Bug Is Genuinely Rare in Low-Volume Testing
 
-At low volume — a founder and a handful of early testers using the app at different times — the odds of two requests for the same specific resource landing close enough together to trigger this exact race condition are low enough that it can go unnoticed through weeks of testing, purely due to the low probability of the specific timing required, not because the underlying logic is actually safe.
+At low volume — a founder and a handful of early testers using the app at different times — the odds of two requests for the same specific resource landing close enough together to trigger this exact race condition are low enough that it can go unnoticed through weeks of testing, purely due to the low probability of the specific timing required, not because the underlying logic is actually safe. This is what makes race conditions genuinely different from most other bugs a founder learns to watch for: a typo in a form validation message is equally visible on day one and day one hundred, but a race condition can pass every single test run during a slow, careful beta and still be sitting there, completely unchanged, waiting for the exact traffic pattern that finally exposes it.
 
 ## Why the Odds Change Completely Once Real Demand Arrives
 
@@ -56,6 +56,19 @@ A proper fix uses a database-level locking or atomic-transaction mechanism to en
 Manifera's concurrency and database-locking engineering is delivered through the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations handled from the Amsterdam headquarters at Herengracht 420.
 
 [Get your payment flow tested against real-world failure conditions, not just the happy path](https://launchstudio.eu/en/#calculator).
+
+## Other Places the Same Bug Pattern Hides Beyond Bookings
+
+Race conditions aren't unique to room and desk reservations — the same "check, then act" pattern shows up anywhere a limited resource can be claimed, and recognizing the pattern helps a founder spot it in places that don't look like a booking system at all.
+
+**Common places this exact pattern shows up:**
+
+- **Discount and coupon codes** — a "limited to first 100 customers" promotion checked and then applied as two separate steps can be redeemed well past 100 times if enough requests arrive close together, since each one can pass the count check before any of them finish incrementing it.
+- **Payment and checkout flows** — a "submit payment" button clicked twice in quick succession, whether by an impatient customer or a flaky network retry, can result in two charges if the system doesn't treat the submission as a single, protected operation.
+- **Inventory counts** — an e-commerce product with limited stock, checked and decremented as separate steps, can be oversold the same way a meeting room can be double-booked, with the same underlying cause.
+- **Username or handle registration** — two signups for the same unique username arriving close together can both succeed if uniqueness is checked before either registration actually commits, leaving a database in an inconsistent state that's often awkward to clean up after the fact.
+
+The technical fix is consistent across all of these: whatever mechanism ensures a booking check-and-commit happens atomically works the same way for a coupon redemption or an inventory decrement. A founder who's had this pattern fixed once in one part of their product should still ask, specifically, whether the same fix has been applied everywhere else the same shape of problem could occur — a review scoped only to "the booking flow" can leave an identical, unaddressed bug sitting in the checkout flow next to it.
 
 ## Real example
 
@@ -95,6 +108,10 @@ Very well — the bug was effectively dormant at low usage and became almost ine
 ### Could this bug have been caught through more extensive manual testing before launch, without specialized concurrency knowledge?
 
 Manually simulating true concurrency is difficult without specifically engineering a test to fire two requests at the exact same instant, which isn't something manual, one-at-a-time testing naturally produces — this is exactly the kind of bug that calls for a reviewer who knows to specifically test for it rather than more general testing effort.
+
+### Does fixing a race condition in one part of an app automatically protect the rest of the app too?
+
+No, and this is a common assumption worth correcting directly — the fix has to be applied to each specific "check, then act" sequence individually, since a booking flow, a checkout flow, and a coupon-redemption flow are typically separate pieces of code even if they share the same underlying bug pattern. A thorough review checks every instance of the pattern across a codebase rather than stopping once the first one is found and fixed.
 
 <script type="application/ld+json">
 {
@@ -139,6 +156,14 @@ Manually simulating true concurrency is difficult without specifically engineeri
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Unlikely, since true concurrency isn't naturally produced by one-at-a-time manual testing without specific engineering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does fixing a race condition in one part of an app protect the rest of the app too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, each check-then-act sequence needs its own fix, since separate flows like checkout and coupons are usually separate code."
       }
     }
   ]

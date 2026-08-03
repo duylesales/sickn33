@@ -69,6 +69,10 @@ Deliberately introduce a failing test or a lint violation in a branch, and confi
 
 Trigger a deliberate error in a non-production environment and confirm it appears in your error tracking tool with useful context. Separately, confirm your uptime monitoring would actually alert you — not just log an entry silently — if your app went down right now.
 
+## Rate Limiting: Confirm Abuse Actually Gets Throttled, Not Just Handled Gracefully
+
+Write a small script that hits a single endpoint — ideally something expensive, like a search or an AI-generation call — fifty or a hundred times in rapid succession, and observe what actually happens. A correctly configured endpoint returns a 429 (too many requests) after some threshold and stops processing further calls from that source. An endpoint with no rate limiting processes all of them, which matters for three distinct reasons: cost (each processed request against a paid API, like an LLM call, is money spent regardless of whether the traffic was legitimate), availability (enough concurrent load against an unthrottled endpoint can degrade or crash the service for everyone else using it at the same time), and abuse surface (a login or password-reset endpoint without rate limiting is directly exploitable for credential-stuffing or account-enumeration attacks). Check this specifically on any endpoint that's expensive to run, touches authentication, or sends anything (email, SMS) on your behalf, since those are the three categories where unthrottled abuse costs you directly rather than just consuming server resources.
+
 ## Why Each Item Here Is a Test, Not a Belief
 
 The organizing principle across this entire checklist is the same: each item is phrased as something you actively do and observe the result of, not something you confirm by reading your own code and judging whether it looks correct. This distinction matters specifically for a technical founder, because reading your own code tends to confirm what you already believe about it — these tests are designed to surface what you don't already know.
@@ -116,6 +120,10 @@ The concurrency and authorization tests specifically, since both require deliber
 
 No single checklist guarantees zero risk — this covers the most common, well-documented categories of risk in AI-generated applications specifically, but product-specific considerations (regulatory requirements, unusual data sensitivity, unique architectural choices) may introduce risks outside this general checklist's scope.
 
+### Is rate limiting something I need on every endpoint, or just a specific subset?
+
+Just a specific subset in practice — endpoints that are expensive to run (AI calls, heavy queries), touch authentication (login, password reset), or send something on your behalf (email, SMS) are the ones where unthrottled abuse costs you directly; low-cost, low-sensitivity endpoints matter far less if a rate limiting pass has to be prioritized under limited time.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -159,6 +167,14 @@ No single checklist guarantees zero risk — this covers the most common, well-d
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No single checklist guarantees zero risk — product-specific considerations may introduce risks outside this general checklist's scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is rate limiting needed on every endpoint, or just a specific subset?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Just a specific subset — endpoints that are expensive to run, touch authentication, or send something on your behalf are where unthrottled abuse costs you directly."
       }
     }
   ]

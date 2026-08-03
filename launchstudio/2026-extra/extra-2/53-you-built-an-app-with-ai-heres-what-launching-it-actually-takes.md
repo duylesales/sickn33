@@ -35,7 +35,7 @@ You built an app with AI, it works, and now you want it genuinely live. One spec
 
 ## Step One: Identify Every Feature That Returns a List of Records
 
-Any feature returning a searchable or browsable list — a member directory, a volunteer roster, a public listings page — is a candidate for this specific check, regardless of how innocuous the underlying data might initially seem, since even seemingly low-stakes directory information can become meaningfully more sensitive once it's aggregated in bulk rather than viewed one entry at a time.
+Any feature returning a searchable or browsable list — a member directory, a volunteer roster, a public listings page — is a candidate for this specific check, regardless of how innocuous the underlying data might initially seem, since even seemingly low-stakes directory information can become meaningfully more sensitive once it's aggregated in bulk rather than viewed one entry at a time. This includes features that don't look like a "directory" in name at all — a search box that returns matching customer records, an API endpoint feeding an autocomplete field, a public leaderboard, or an export button intended for a single user's own data but built without checking whether the same endpoint could be called repeatedly for someone else's. Any of these can function as a directory in practice, even if nobody on the team would ever describe it that way.
 
 ## Step Two: Understand Why Aggregated Data Is Riskier Than It Looks Individually
 
@@ -47,7 +47,7 @@ Scraping a public directory doesn't require breaching any authentication or expl
 
 ## Step Four: Test Whether Your Own Directory Feature Has This Limit
 
-Testing your own directory feature by browsing it normally, as a founder naturally does, never reveals whether repeated, rapid requests are actually limited — normal browsing behavior looks nothing like the systematic, repeated request pattern that scraping actually involves, meaning this specific check requires either deliberate testing or a dedicated review.
+Testing your own directory feature by browsing it normally, as a founder naturally does, never reveals whether repeated, rapid requests are actually limited — normal browsing behavior looks nothing like the systematic, repeated request pattern that scraping actually involves, meaning this specific check requires either deliberate testing or a dedicated review. A founder can get a rough sense of their own exposure with a simple manual test: open the directory feature and submit the same search or page-load request rapidly, dozens of times in quick succession, either by hand or with a basic scripted loop. If every single request returns a normal, full response with no slowdown, no error, and no sign the system even noticed the repetition, that's a reasonably strong signal no rate limit exists at all. A system that starts responding more slowly, returning an error, or requiring a brief wait after a burst of requests is at least attempting some form of protection, even if the specific threshold still needs proper calibration.
 
 ## Step Five: Apply a Rate Limit Without Disrupting Legitimate Use
 
@@ -56,6 +56,31 @@ A properly calibrated rate limit allows normal, legitimate browsing and searchin
 Manifera's rate limiting and abuse-prevention engineering is delivered through the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## How to Calibrate a Rate Limit Without Breaking Legitimate Use
+
+Founders who understand a rate limit is needed often stall on the next question: what number actually works. Set it too loose and it doesn't meaningfully slow a determined script; set it too strict and a legitimate coordinator doing genuinely fast, normal browsing gets locked out and files a confused support ticket.
+
+**Start by observing real usage, not guessing**
+
+- Look at how your actual users interact with the feature today — how many searches does a normal coordinator run in a busy five-minute stretch during a real shift-planning session?
+- Set an initial threshold meaningfully above that observed peak, not just above your own gut sense of what "seems reasonable"
+
+**Use a tiered response instead of a single hard block**
+
+1. **Soft slowdown** — after a moderate volume of requests in a short window, add a brief delay before responding, which is invisible to a human clicking through a directory but meaningfully throttles an automated script making requests as fast as possible
+2. **Temporary block** — after a clearly abnormal volume, block the requesting IP or account for a set cooldown period, with a clear message explaining why
+3. **Manual review flag** — a pattern that repeats across multiple cooldown cycles gets flagged for a human to look at, since a legitimate user rarely triggers the same limit twice
+
+**Distinguish between anonymous and authenticated traffic**
+
+A rate limit applied per logged-in account is easier to calibrate accurately than one applied per IP address alone, since a single office or shared network can otherwise generate enough combined legitimate traffic to look automated. Where a feature supports login, tying the limit to the account rather than the connection reduces false positives considerably.
+
+**Revisit the number after launch, not just once**
+
+A threshold that was reasonable at 20 coordinators may need adjusting at 200, and a limit set once during initial implementation and never revisited again is a common way founders end up with either an ineffective limit that quietly stopped mattering, or an overly strict one that started generating support tickets nobody connected back to the original configuration.
+
+Getting this calibration right the first time is exactly the kind of judgment call that benefits from having configured the same kind of protection across many different products and traffic patterns before — which is part of why LaunchStudio treats rate limit calibration as a specific, deliberate step rather than an arbitrary default number applied the same way everywhere.
 
 ## Real example
 

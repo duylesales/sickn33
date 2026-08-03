@@ -35,7 +35,7 @@ Every gap covered throughout this series concerns getting to launch safely. What
 
 ## Why Post-Launch Is Structurally Different From Pre-Launch
 
-Every test, audit, and verification covered throughout this series happens against synthetic conditions — simulated concurrent access, synthetic data volume, deliberately triggered failures. Real usage introduces genuine unpredictability that synthetic testing approximates but can't fully replace: actual user behavior patterns, actual data shapes real customers provide, and actual timing of concurrent activity that no simulation perfectly anticipates. This isn't a criticism of pre-launch rigor — it's a structural acknowledgment that "tested thoroughly" and "validated against real conditions" are different claims, with the second only becoming available once real users actually arrive.
+Every test, audit, and verification covered throughout this series happens against synthetic conditions — simulated concurrent access, synthetic data volume, deliberately triggered failures. Real usage introduces genuine unpredictability that synthetic testing approximates but can't fully replace: actual user behavior patterns, actual data shapes real customers provide, and actual timing of concurrent activity that no simulation perfectly anticipates. This isn't a criticism of pre-launch rigor — it's a structural acknowledgment that "tested thoroughly" and "validated against real conditions" are different claims, with the second only becoming available once real users actually arrive. A founder who treats a clean pre-launch audit as the finish line, rather than as the necessary precondition for a distinct next phase, is implicitly assuming synthetic testing and real usage are equivalent — an assumption this entire series, and this article specifically, argues directly against.
 
 ## The First 48 Hours: Close Observation, Not Passive Monitoring
 
@@ -56,6 +56,20 @@ Beyond technical monitoring, actual user feedback — support requests, confused
 ## Why This Phase Warrants Dedicated Attention, Not Just "Being Available"
 
 Founders sometimes plan to simply "be available" post-launch without a specific, structured approach to what they're watching for and why — a passive stance that misses the specific, predictable pattern this article describes: certain categories of issue are structurally more likely to surface in the first 48 hours, others in week one, others only once volume crosses a certain threshold. Knowing this pattern in advance lets you watch proactively for the right things at the right time, rather than reactively noticing problems after they've already caused customer-facing damage.
+
+## Building a Simple Watch List Before You Launch, Not After
+
+Rather than improvising what to monitor once real users are already arriving, preparing a short, specific watch list before launch day means you're executing a plan rather than deciding what matters in the middle of an already-busy first week. A practical starting list, organized by the same timeline this article describes:
+
+**For the first 48 hours:** error rate on your critical flows (signup, core feature, payment if applicable), server response times under real traffic, and any error tracking alerts — checked proactively, at deliberate intervals, not just left to notify you passively.
+
+**For week one:** actual user paths through your product compared against your intended flows, specifically looking for repeated drop-off points or unexpected navigation patterns that might indicate a hidden workflow assumption; and early support requests, read specifically for confusion patterns rather than just resolved one at a time.
+
+**For weeks two through four:** concurrent usage levels relative to what you tested pre-launch, watching specifically for the moment real volume approaches or crosses whatever threshold your pre-launch concurrency testing covered; and any AI-cost or resource-usage trends that might indicate the kind of unrate-limited abuse covered elsewhere in this series.
+
+**Throughout the full window:** a standing, deliberate habit of asking "does this match what I expected" rather than only asking "is anything currently broken" — the former catches the quieter, more gradual gaps this article describes; the latter only catches acute, already-obvious failures.
+
+Writing this list down before launch, rather than trusting yourself to remember what to watch for once you're in the middle of actually launching, is a small amount of preparation that pays off directly during exactly the window this article identifies as carrying the highest concentration of first-time-visible risk.
 
 [LaunchStudio](https://launchstudio.eu/en/) provides structured post-launch monitoring support as part of the Launch & Grow package, specifically informed by this predictable pattern of what tends to surface when, backed by Manifera's experience supporting founders through exactly this critical early window across 160+ delivered projects.
 

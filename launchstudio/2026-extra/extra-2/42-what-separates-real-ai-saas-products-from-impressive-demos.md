@@ -31,7 +31,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-The best AI SaaS products and the most impressive demos of AI SaaS products aren't automatically the same thing, and the gap between them often lives in a detail nobody demos on purpose: how a scheduling feature handles time zones once real customers, not a single founder in a single location, start booking things.
+The best AI SaaS products and the most impressive demos of AI SaaS products aren't automatically the same thing, and the gap between them often lives in a detail nobody demos on purpose: how a scheduling feature handles time zones once real customers, not a single founder in a single location, start booking things. A demo is, by definition, a controlled performance run by the one person who understands the system best; a production product is used by strangers, at odd hours, across configurations nobody rehearsed.
 
 ## Myth: A Booking Feature That Works for the Founder Works for Everyone
 
@@ -39,11 +39,11 @@ The best AI SaaS products and the most impressive demos of AI SaaS products aren
 
 ## Myth: Storing Times as Simple Timestamps Avoids Time Zone Complexity
 
-**Reality:** it often just defers the complexity rather than avoiding it — a timestamp without explicit time zone handling can be interpreted inconsistently depending on where and how it's later read, and AI-generated scheduling code frequently stores and displays times without a consistent, explicit time zone strategy, working fine as long as everyone involved happens to be in the same zone.
+**Reality:** it often just defers the complexity rather than avoiding it — a timestamp without explicit time zone handling can be interpreted inconsistently depending on where and how it's later read, and AI-generated scheduling code frequently stores and displays times without a consistent, explicit time zone strategy, working fine as long as everyone involved happens to be in the same zone. The moment a server's default zone, a database's stored offset, and a browser's local rendering disagree even slightly, the same underlying timestamp can display as three subtly different moments to three different people looking at the same record.
 
 ## Myth: This Only Matters for Products With International Customers
 
-**Reality:** it matters for any product involving guided tours, appointments, or scheduled slots reviewed by more than one party, even within a single country — a booking system, an administrative dashboard, and a customer confirmation email can each independently calculate or display a time slightly differently if time zone handling isn't consistent, leading to exactly the kind of mismatch that causes real scheduling conflicts.
+**Reality:** it matters for any product involving guided tours, appointments, or scheduled slots reviewed by more than one party, even within a single country — a booking system, an administrative dashboard, and a customer confirmation email can each independently calculate or display a time slightly differently if time zone handling isn't consistent, leading to exactly the kind of mismatch that causes real scheduling conflicts. A single country can even span more than one practical time reference if a server is hosted abroad, which adds a layer of inconsistency founders rarely think to account for when reasoning about "domestic-only" risk.
 
 ## Myth: A Double-Booked Slot Is Obviously a Capacity or Inventory Bug
 
@@ -51,7 +51,7 @@ The best AI SaaS products and the most impressive demos of AI SaaS products aren
 
 ## Myth: This Is Too Obscure and Rare a Bug to Worry About Proactively
 
-**Reality:** time zone handling bugs are one of the most well-documented, recurring categories of scheduling software defects across the entire industry, precisely because the underlying complexity is genuinely easy to underestimate and easy to get subtly wrong even with careful, well-intentioned effort.
+**Reality:** time zone handling bugs are one of the most well-documented, recurring categories of scheduling software defects across the entire industry, precisely because the underlying complexity is genuinely easy to underestimate and easy to get subtly wrong even with careful, well-intentioned effort. Experienced engineering teams still budget specific review time for this exact category on every scheduling feature they ship, which is a reasonable signal for how seriously a founder should treat it too, rather than assuming a first working version has already handled it correctly by default.
 
 ## Getting Time Zone Handling Right Without Overcomplicating a Booking Feature
 
@@ -60,6 +60,22 @@ A proper fix establishes one consistent, explicit time zone standard for how tim
 Manifera's scheduling and time-handling audits are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## A Practical Framework for Auditing Time Handling Across a Codebase
+
+A founder who wants a head start before commissioning a full review can work through a short, structured pass rather than hunting for the bug intuitively.
+
+**Trace every place a time value gets created, stored, and displayed:**
+
+1. **Storage layer** — confirm every timestamp is stored in a single, explicit, unambiguous reference format (UTC is the standard default) rather than an implicit "whatever the server's local time happened to be at the moment of insertion."
+2. **Conversion points** — identify every place a stored time gets converted for display, and confirm each one explicitly specifies which time zone it's converting to, rather than relying on a device or browser default that varies by who's looking.
+3. **Cross-system agreement** — if more than one system touches the same scheduled time (a customer-facing booking form and a staff-facing admin calendar, for instance), confirm both read from the same underlying stored value and apply the same conversion logic, rather than each independently reimplementing the conversion in a slightly different way.
+4. **Daylight-saving transitions** — specifically test bookings that fall on or near a daylight-saving transition date, since this is where inconsistent handling most reliably produces a visible, real-world discrepancy rather than staying theoretical.
+5. **Multi-day and recurring bookings** — a recurring weekly appointment that spans a daylight-saving transition is a particularly good stress test, since the "same" 2pm slot needs to shift consistently across every affected occurrence.
+
+**Why this framework catches what ad-hoc testing misses:** ad-hoc testing tends to check whether a specific booking looks right at the moment it's created, which tells you almost nothing about whether it stays right when read back later, by a different person, on a different device, possibly after a daylight-saving transition has occurred in between. Working through the storage, conversion, and cross-system layers separately — rather than testing the feature as one opaque unit — is what actually surfaces the kind of narrow, condition-specific mismatch that caused RondleidingApp's double-booking in the first place.
+
+A founder comfortable reading their own database schema and front-end display code can complete a first pass through this framework in an afternoon; confirming the fix holds under every relevant edge case is where a dedicated technical review adds the most value.
 
 ## Real example
 

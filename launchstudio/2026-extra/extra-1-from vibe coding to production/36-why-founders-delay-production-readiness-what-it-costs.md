@@ -43,7 +43,7 @@ This reasoning inverts the actual cost curve. Production-readiness work is cheap
 
 ## Reason 3: "I Don't Have the Budget Right Now"
 
-A reasonable constraint, though one that often reflects an inaccurate assumption about the actual cost — many founders imagine production-readiness work as comparable in scope to their original build, when in practice, as covered elsewhere in this series, it's typically additive and targeted rather than requiring anything close to a full rebuild. The tiered prioritization approach covered in this series' checklist guidance exists specifically to address genuine budget constraints without requiring an all-or-nothing decision, letting founders address the highest-consequence gaps first at a fraction of what "eventually doing everything" would cost.
+A reasonable constraint, though one that often reflects an inaccurate assumption about the actual cost — many founders imagine production-readiness work as comparable in scope to their original build, when in practice, as covered elsewhere in this series, it's typically additive and targeted rather than requiring anything close to a full rebuild. A founder assuming a full rebuild-scale cost might picture something in the tens of thousands of euros, when a priority-scoped engagement addressing just secrets and authentication commonly lands closer to €800-€1,700 — a gap between assumption and reality large enough, on its own, to change the decision for many founders once an actual number replaces the guess. The tiered prioritization approach covered in this series' checklist guidance exists specifically to address genuine budget constraints without requiring an all-or-nothing decision, letting founders address the highest-consequence gaps first at a fraction of what "eventually doing everything" would cost.
 
 ## Reason 4: "I'm Afraid of What They'll Find"
 
@@ -60,6 +60,19 @@ Across all five reasons, a consistent pattern holds: the delay doesn't make the 
 ## What Breaks This Pattern
 
 Recognizing which specific reason is actually driving your own delay — rather than treating "I haven't gotten to it" as a single undifferentiated category — is the first step, since each reason has a specific, addressable response: a scoped audit for reason 1's uncertainty, an accurate cost understanding for reasons 2 and 3, a proactive rather than avoidant framing for reason 4, and a concrete evaluation framework for reason 5.
+
+## How to Run a Personal 15-Minute Delay Audit
+
+Recognizing which reason applies to you intellectually, as the section above describes, is different from actually sitting down and checking. Here's a concrete way to do that in about fifteen minutes, before or instead of committing to a paid audit.
+
+**A short, honest self-check:**
+1. **Write down, specifically, what data your product actually handles** — customer emails, payment details, health information, business records. A product handling nothing sensitive genuinely carries different stakes than one handling any of these.
+2. **Check whether your authentication is enforced anywhere other than the frontend.** If you're technical enough to check, try calling one of your own API endpoints directly, bypassing your interface entirely, without a valid session — if it returns data anyway, that's Reason 1's uncertainty resolved into a concrete finding.
+3. **Search your own codebase for the word "key" or "secret."** A hardcoded credential sitting in a committed file is often visible with nothing more than a text search, giving you a direct answer rather than a guess about whether Reason 1 applies to you specifically.
+4. **Estimate your actual cost of a scoped, priority-tier engagement** rather than assuming it matches your original build's cost — as noted above, the gap between assumption and actual quote is often the entire issue behind Reason 3.
+5. **Notice your own reaction to step 2 and step 3.** If you found yourself avoiding actually running them, that's Reason 4 showing up directly, in real time, rather than as an abstract concept.
+
+This fifteen-minute exercise doesn't replace a real audit — it can't catch everything a systematic review would — but it converts vague anxiety into specific, checkable facts about your own situation, which is precisely the shift this article's five reasons are all, in their own way, missing.
 
 [LaunchStudio](https://launchstudio.eu/en/) specifically addresses each of these delay patterns directly — accurate scoping instead of feared assumptions, tiered pricing instead of all-or-nothing cost, and transparent audit artifacts instead of unverifiable trust — backed by Manifera's engineering discipline across 160+ delivered projects.
 
@@ -104,6 +117,10 @@ For a genuinely low-stakes internal tool with no sensitive data and minimal user
 
 Often, as in Kasper's case, an external prompt — a conversation with another founder, a specific deadline like a partnership or fundraise — provides the actual trigger, since recognizing the reasoning pattern intellectually doesn't always translate into action without some concrete forcing function.
 
+### Is the 15-minute self-audit above a substitute for a professional audit, or just a way to decide whether to get one?
+
+The latter — it's specifically designed to convert vague delay into concrete next steps, not to replace the systematic, adversarial testing a real audit performs; treat a positive finding from step 2 or step 3 as a reason to move faster toward a real audit, not as the audit itself.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -147,6 +164,14 @@ Often, as in Kasper's case, an external prompt — a conversation with another f
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Often an external prompt, like a conversation or a specific deadline, provides the actual trigger to act."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the 15-minute self-audit a substitute for a professional audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it's designed to convert vague delay into concrete next steps, not to replace the systematic testing a real audit performs."
       }
     }
   ]

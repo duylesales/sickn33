@@ -31,7 +31,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-Most production-readiness guidance, including the general error-handling advice covered throughout broader content in this series, assumes an intermittent connectivity failure is a temporary, edge-case condition to gracefully recover from. AI tools built for small agricultural businesses need a meaningfully different starting assumption: for a genuinely significant share of actual usage, the device is in a field, a barn, or a rural location with weak or entirely absent connectivity as the normal, expected condition, not the exception.
+Most production-readiness guidance, including the general error-handling advice covered throughout broader content in this series, assumes an intermittent connectivity failure is a temporary, edge-case condition to gracefully recover from. AI tools built for small agricultural businesses need a meaningfully different starting assumption: for a genuinely significant share of actual usage, the device is in a field, a barn, or a rural location with weak or entirely absent connectivity as the normal, expected condition, not the exception. Rural mobile coverage gaps are well documented in the Netherlands and considerably more pronounced elsewhere, but the same underlying pattern holds anywhere fields, greenhouses, or barns sit outside dense population centers, regardless of which specific country a founder is building for.
 
 ## Why This Isn't the Same Problem as General Network Resilience
 

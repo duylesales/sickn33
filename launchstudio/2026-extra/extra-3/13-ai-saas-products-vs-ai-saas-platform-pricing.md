@@ -35,7 +35,7 @@ Target Persona: SaaS Founder Scale-Up
 
 ## Why This Isn't Just a Marketing Word Choice
 
-A product's pricing question is relatively contained: what's this specific value worth to this specific type of customer, solving this specific problem. A platform's pricing question is structurally different: how do you price access to capability whose actual usage pattern varies enormously by who's building on it, meaning a platform's pricing model needs to account for a much wider range of possible usage than a single, well-defined product ever has to.
+A product's pricing question is relatively contained: what's this specific value worth to this specific type of customer, solving this specific problem. A platform's pricing question is structurally different: how do you price access to capability whose actual usage pattern varies enormously by who's building on it, meaning a platform's pricing model needs to account for a much wider range of possible usage than a single, well-defined product ever has to. Two customers on the exact same platform can have genuinely different relationships to it — one integrating a single lightweight endpoint that fires a few hundred times a month, another building their own downstream product entirely on top of your infrastructure, generating hundreds of thousands of calls in the same period. A flat price that works for the first customer either badly underprices the second or, set high enough to capture the second customer's value, badly overprices the first — there usually isn't a single flat number that's fair to both, which is precisely why usage-based or tiered pricing tends to be the structurally correct answer once a product has genuinely become a platform.
 
 ## Why the Architecture Requirements Diverge Too
 
@@ -56,6 +56,20 @@ Founders who correctly identify which category they're actually building tend to
 [LaunchStudio](https://launchstudio.eu/en/) helps founders make this specific distinction concretely during scoping — pricing and architecting according to what's actually being built rather than what it's being called — drawing on Manifera's broader experience building both contained products and genuine multi-tenant platforms for clients across its Amsterdam and Singapore offices.
 
 [Get clear on which one you're actually building before you price it](https://launchstudio.eu/en/#calculator) — the distinction changes more than the label.
+
+## A Framework for Pricing a Genuine Platform
+
+Once a founder has established they're actually building a platform rather than a contained product, the pricing question shifts from "what's a fair flat fee" to "how do we price wildly uneven usage fairly, for both the lightest and heaviest customer." A few structural approaches consistently show up in how this gets solved well:
+
+**Usage-based metering on the resource that actually varies.** Rather than a single flat price, meter the specific dimension that drives your underlying cost and value — API calls, records processed, workflow executions — and price against that dimension directly, so a customer building a small integration and a customer running thousands of daily transactions each pay roughly in proportion to what they actually consume.
+
+**Tiered floors with usage-based overage.** A pure usage-based model can feel unpredictable to customers used to flat SaaS pricing, so a common middle ground sets a base tier with a generous included allowance, then bills incremental usage beyond it — giving predictability at typical usage levels while still capturing genuine platform-scale usage fairly.
+
+**Rate limits tied to pricing tier, not just infrastructure protection.** Rate limiting exists partly to protect your infrastructure, but on a genuine platform it also functions as a pricing lever — a higher tier reasonably comes with a higher rate limit, aligning technical capacity with what a customer is actually paying for.
+
+**Versioned APIs with a genuine deprecation policy.** A platform's external integrators are building real, ongoing dependencies on your interface, meaning breaking changes carry cost for them, not just for you — a versioning and deprecation policy communicated well in advance is part of the pricing conversation as much as the architecture conversation, since reliability is itself part of what a platform customer is paying for.
+
+Getting this pricing structure right doesn't require guessing — a founder can typically look at existing usage data, even from a handful of early customers on flat pricing, to see where actual consumption is diverging and design tiers around the real distribution rather than an assumption.
 
 ## Real example
 

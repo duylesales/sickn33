@@ -61,6 +61,18 @@ Every founder facing the vibe-coding-to-production gap chooses among the same th
 
 Comparing only the headline cost of each path misses that the paths aren't interchangeable in what they actually deliver — DIY delivers a result entirely bounded by your own current skill and available time; a freelancer delivers a result bounded by that specific individual's experience with this exact codebase category; a specialist delivers a result informed by pattern recognition across many similar engagements. The "cheapest" option on paper isn't cheapest if it requires redoing the work later after a freelancer's gap in AI-code-specific experience surfaces, or if your own DIY blind spot goes undiscovered until a genuine incident forces the question.
 
+## The Hidden Cost Most Comparisons Miss: What Happens After Launch
+
+Every comparison of these three paths tends to stop at the initial engagement, but the real cost difference often shows up months later, when something inevitably needs to change — a new feature, a dependency update, a bug a user finally reports.
+
+**With DIY**, ongoing maintenance is simply more of your own time, indefinitely, with no natural endpoint — which is fine if you enjoy and are good at this work, but genuinely costly if it pulls you away from the parts of running your business only you can do, like sales or product direction.
+
+**With a freelancer**, post-launch support depends entirely on that individual's continued availability and interest — a freelancer who takes a full-time role, moves to a different specialty, or simply becomes hard to reach leaves you holding a codebase only they fully understood, with no documentation obligation built into most informal freelance arrangements.
+
+**With a specialist provider**, ongoing support is typically structured as an explicit, separate conversation rather than an assumption — worth confirming upfront, specifically, rather than discovering the answer only when you actually need a post-launch fix. LaunchStudio's engagements hand back a codebase any competent developer (not just the original team) can maintain, precisely because Manifera's documentation standards, built for enterprise clients who need multi-year maintainability, carry over into founder-scoped work rather than being scaled down along with the price.
+
+This "who maintains it in month six" question is worth asking explicitly regardless of which path you choose, because the answer changes the real total cost of each option in ways the headline number for the initial engagement doesn't capture.
+
 ## A Practical Way to Choose
 
 If you have genuine, demonstrated technical fluency and available time, and are comfortable accepting the self-review blind spot risk (perhaps mitigated by having a second technical person review your critical security decisions specifically), DIY is a reasonable path. If you have an existing trusted freelancer relationship and can verify their specific AI-codebase experience using the diagnostic questions and audit artifacts covered throughout this series, that path can work well. If neither applies, a specialist provider with demonstrated, specific experience in this exact category typically offers the best combination of cost, timeline certainty, and risk mitigation.

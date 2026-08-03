@@ -22,6 +22,8 @@ Target Persona: B (Technical Solo Founder)
 
 Every technical founder in Nieuwegein comparing AI code tools eventually asks the same question in the same order: which one is fastest, which one is cheapest, and only much later, which one won't fall apart when real users show up. That order is backwards. Here's how to actually evaluate an AI code tool if launch — not just the demo — is the goal.
 
+The comparisons that circulate online don't help much here, because most of them are written from the perspective of a first afternoon with the tool — how fast did it scaffold a landing page, how close did the output match the prompt. Those are legitimate first impressions, but they're measuring the wrong phase of the decision. A founder in Nieuwegein weighing Lovable against Cursor for a six-month product isn't really choosing a prompt-to-prototype speed; they're choosing which set of production gaps they'll be responsible for closing later, and how much control they'll have when they get there.
+
 ## What an AI Code Tool Comparison Usually Gets Wrong
 
 Most comparisons of Lovable, Bolt, Cursor, and v0 focus on prompt quality, generation speed, and how close the output looks to the design brief. Those are real differentiators, but they're only useful for the first 20% of building a product. Nieuwegein has a practical, engineering-minded business culture — it's a logistics and office-park city in the province of Utrecht, home to companies that value operational reliability over flash — and founders here tend to ask the right second question early: what happens after the tool finishes generating?
@@ -43,6 +45,18 @@ None of these four tools solve the problem that actually determines whether your
 This is the part of the decision technical founders underweight: pick the AI code tool that fits how you like to work, then plan separately for who closes the production gap. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience turning exactly this kind of AI-generated output into production-grade systems — regardless of whether it came from Lovable, Bolt, Cursor, or v0. Our engineering team, headquartered out of Ho Chi Minh City's Pho Quang Street development center, has handled all four tool outputs enough times to know exactly where each one tends to cut corners.
 
 If you're mid-build and want a sense of what closing that gap costs for your specific stack, our process page walks through how we scope an engagement before any work starts. And for a look at how Manifera approaches larger custom builds beyond the fixed-scope LaunchStudio packages, the custom software development team's portfolio is worth a look.
+
+## A Five-Question Test Before You Commit to a Tool
+
+Most founders pick an AI code tool based on a single afternoon of trying it. That's a reasonable way to judge whether you enjoy using it, but it tells you almost nothing about whether the output will hold up past week one. Before committing weeks of build time to any of the four tools, run your prototype through these five questions.
+
+1. **Can you export or eject the code cleanly, or are you locked into the platform's hosting?** Lovable and Bolt both allow code export, but the ease and completeness of that export varies, and some generated projects assume the platform's own hosting and database wiring in ways that make a clean move elsewhere harder than expected.
+2. **What does the generated authentication flow actually check, and where?** Open the code and look for whether role or permission checks happen in a frontend component or in a server-side route handler. This single detail predicts a large share of the security work you'll need later.
+3. **How does the tool handle a schema change once real data exists?** Ask it to add a field to an existing table after you've already entered test data, and see whether it treats that as a safe migration or simply regenerates the table.
+4. **Does the tool's output include any error handling for a failed API call?** Disconnect your internet or set an interfered API key and see whether the app fails gracefully or breaks in a way that would confuse a real user.
+5. **How readable is the generated code to a human, not just to the AI tool itself?** If you ever need a developer — your own hire, or a team like LaunchStudio — to work inside this codebase, code that's dense, unconventional, or poorly organized adds real time and cost to every future change.
+
+None of the four tools scores perfectly across all five. The point isn't to find a flawless one — it's to know exactly which trade-offs you've accepted before you've built three months of product on top of them.
 
 ## Real example
 

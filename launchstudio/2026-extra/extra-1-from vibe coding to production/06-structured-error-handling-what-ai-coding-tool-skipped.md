@@ -57,6 +57,20 @@ The only reliable test is deliberately breaking things — disconnecting your da
 
 Error handling gaps are invisible during normal development, because normal development mostly exercises the happy path — you're testing that your feature works, not that it fails well, and a founder iterating quickly with an AI tool has no natural reason to deliberately sabotage their own working demo. The gap only becomes visible when something actually goes wrong in front of a real user, which is simultaneously the worst possible moment to discover it and, statistically, an inevitability once you have enough real users depending on enough external services.
 
+## Which External Calls to Harden First, When Time Is Limited
+
+Not every external call in your app carries equal risk if left with only generic error handling, and a founder with limited time benefits from the same blast-radius reasoning used elsewhere in this series to decide what to fix first.
+
+**Payment processing calls** come first, without much debate — a silent failure here directly costs revenue and directly damages trust in the single moment a user is most sensitive to something going wrong, actively handing you money.
+
+**Authentication and session-related calls** come next, since a failure here can either lock legitimate users out entirely or, worse, fail in a way that leaves a session in an ambiguous state, neither cleanly logged in nor cleanly logged out.
+
+**Calls your core feature depends on** — whatever external service makes your product's main value proposition work — follow, since a failure here is functionally equivalent to your product not working at all, for however long the failure persists.
+
+**Everything else** — analytics calls, non-critical third-party integrations, optional enrichment features — genuinely can tolerate looser handling initially, since a dropped analytics event or a failed enrichment call rarely costs a user anything they'd notice or care about in the moment.
+
+Working down this list rather than across every external call equally means a founder with only a few hours available closes the highest-consequence gaps first, and can reasonably defer the lowest-consequence ones until there's more time, rather than spreading thin, incomplete effort evenly across calls that don't actually carry equal risk.
+
 [LaunchStudio](https://launchstudio.eu/en/) implements structured, service-specific error handling — including timeout configuration and retry logic — as a standard part of taking your prototype from vibe coding to production, tested by deliberately triggering the failures your own development process never had a reason to trigger.
 
 [Get your error paths tested, not just your happy path](https://launchstudio.eu/en/#calculator) — the failures that matter are the ones you haven't seen yet.

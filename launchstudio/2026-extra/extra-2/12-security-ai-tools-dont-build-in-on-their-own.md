@@ -49,6 +49,8 @@ Logging in successfully proves only that whatever's stored matches what's compar
 
 Founders and AI tools alike tend to focus attention on the primary, most-used flow — the signup form a new user sees first. Secondary account-creation paths, added later or less carefully specified, are exactly where inconsistent handling creeps in, because each new path is effectively a fresh implementation decision rather than an extension of an already-reviewed one.
 
+This pattern compounds over time: the primary signup form typically gets tested repeatedly across weeks of development, catching most obvious issues through sheer repetition, while a secondary path built once, tested once, and never revisited gets none of that accumulated scrutiny. By the time a product has three or four ways to create an account, the gap between how carefully each one was reviewed can be enormous, even though a user or auditor looking at the finished product has no way to see that history.
+
 ## What a Genuine Fix Requires
 
 Closing this gap means auditing every single path that creates or updates a stored password — not just the main one — and confirming each applies the same proper hashing consistently, then migrating any existing plaintext-stored values safely. [LaunchStudio](https://launchstudio.eu/en/) performs exactly this kind of full-path authentication audit, backed by Manifera's 11+ years of security-focused engineering experience, including work adjacent to cybersecurity research through CEO Herre Roelevink's prior background with CFLW Cyber Strategies.
@@ -56,6 +58,42 @@ Closing this gap means auditing every single path that creates or updates a stor
 Manifera's authentication audits are carried out by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with client relationships managed from the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## A Framework for Auditing Every Password-Handling Path Yourself
+
+Closing this gap doesn't require a security certification — it requires systematically distrusting every path that touches a password, including ones that seem too minor to matter. Most founders can walk their own codebase through this in under an hour if they know what to look for.
+
+**List every operation that creates or changes a stored password**
+
+- The primary signup form
+- Admin-created or admin-assisted account creation
+- Bulk import or CSV-based user provisioning
+- Password reset completion
+- "Change password" from within an authenticated account settings page
+- Any account-merge or account-migration logic added after the original build
+
+**Check the stored value directly, not the login outcome**
+
+A successful login proves nothing about storage format — the only reliable check is looking at the actual database record after each path runs and confirming it's a hashed value (typically a long string starting with something like `$2b$` for bcrypt), not the plaintext password itself. This is a five-minute check per path, and it's the single most direct way to catch this specific gap.
+
+**Watch for these common fallback triggers**
+
+1. A secondary path implemented by copy-pasting the primary path's code, then modified enough that the hashing call was accidentally dropped
+2. An admin tool built later, under time pressure, that writes directly to the database without routing through the same authentication service the main app uses
+3. A "quick fix" for a support request — a founder manually resetting a user's password by editing the database directly, in plaintext, meaning to hash it "in a minute" and never circling back
+4. A migration script moving users between systems that preserves whatever format the source system used, silently carrying plaintext forward
+
+**Plan the cleanup for anything already affected**
+
+If an audit finds existing plaintext-stored passwords, the fix isn't just hashing them going forward — every affected user needs their password rotated, since a plaintext value that already sat in a database, even briefly, should be treated as compromised the same way an exposed API key would be. A forced password reset email to affected users, with a brief, honest explanation, is the standard, defensible way to handle this rather than silently re-hashing the existing value and hoping nobody notices the gap ever existed.
+
+**Make this systematic, not just documented**
+
+Wherever possible, route every account-creation and password-change operation through one single, shared authentication function rather than reimplementing password handling in each new path — this doesn't just fix today's gap, it structurally prevents a fifth undiscovered path from reintroducing the same issue next quarter.
+
+**Treat any password-adjacent feature added by a contractor or a second developer as a fresh review trigger**
+
+The moment a founder brings in outside help — a contractor building an admin panel, a second developer adding a bulk-invite feature — that new contributor makes their own independent implementation decisions, often without visibility into how the original authentication path was built or reviewed. Explicitly pointing any new contributor at the shared authentication function, rather than trusting them to rediscover it on their own, is a small process step that prevents exactly the kind of quietly inconsistent path WachtPost ran into.
 
 ## Real example
 

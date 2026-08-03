@@ -47,7 +47,7 @@ If your platform serves minors — a genuinely common scenario for education too
 
 ## Video and Content Delivery: A Specific Infrastructure Consideration
 
-Many education tools deliver video or substantial media content, introducing infrastructure considerations — bandwidth costs that scale directly with usage, content delivery performance, and, if content protection matters to your business model, preventing unauthorized redistribution of paid video content — that a typical text-and-data SaaS product doesn't need to address at all, requiring specific infrastructure decisions beyond the general hosting guidance covered elsewhere in this series.
+Many education tools deliver video or substantial media content, introducing infrastructure considerations — bandwidth costs that scale directly with usage, content delivery performance, and, if content protection matters to your business model, preventing unauthorized redistribution of paid video content — that a typical text-and-data SaaS product doesn't need to address at all, requiring specific infrastructure decisions beyond the general hosting guidance covered elsewhere in this series. A prototype tested by a handful of beta users streaming a few videos each behaves nothing like the same platform once several hundred students are streaming simultaneously during a live cohort's shared deadline, a load pattern that can surface bandwidth costs or delivery slowdowns no amount of small-scale testing would have revealed.
 
 ## Why "It Worked for My Beta Testers" Is Weaker Evidence Here Specifically
 
@@ -56,6 +56,18 @@ Beta testers for an education product are typically motivated, engaged, cooperat
 ## What This Means for Prioritization
 
 For an education or course-creator prototype, content access control warrants the same elevated priority as authentication generally does for any product, given its direct connection to revenue; progress data integrity deserves testing rigor proportional to how much students and institutions actually rely on that data being accurate; and any product serving minors needs a compliance review specifically scoped to that elevated requirement, not a general GDPR pass.
+
+## Certificate and Credential Verification: Protecting What Students Actually Rely On
+
+Beyond progress data integrity itself, a specific downstream concern applies to any education product that issues certificates or credentials: once a certificate exists, students and the institutions or employers they show it to need a way to trust it's genuine and hasn't been altered, a requirement that goes beyond simply storing the completion record correctly in your own database.
+
+**What a genuinely trustworthy certificate system needs:**
+- A unique, unguessable verification identifier per issued certificate, rather than a predictable sequential number that could be incremented to fabricate the appearance of a certificate that was never actually earned.
+- A public verification page or endpoint where anyone — an employer, another institution — can check a certificate's authenticity by its identifier, independent of trusting a PDF or image that could be edited.
+- Tamper-evidence for any downloadable certificate file itself, so a modified grade or name on a downloaded PDF doesn't match what the verification endpoint actually shows.
+- A clear record of exactly when and under what conditions a certificate was issued, in case a dispute or correction is ever needed later.
+
+**Why AI-generated course platforms frequently skip this entirely:** a prompt describing "generate a certificate when a student completes the course" typically produces exactly that — a certificate generation feature — without the independent verification layer, since verification is a requirement that only becomes obvious once you specifically think about what happens after the certificate leaves your platform and enters someone else's hands. For a platform preparing students for external exams or credentials, the record's credibility with the schools and institutions receiving it matters as much as its accuracy within the platform itself.
 
 [LaunchStudio](https://launchstudio.eu/en/) hardens education and course-creator prototypes with specific attention to content access control, progress data integrity, and minor-data compliance where relevant, backed by Manifera's engineering experience across education-sector production applications.
 

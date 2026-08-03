@@ -20,25 +20,50 @@ Target Persona: SaaS Scale-Up Founder
 }
 </script>
 
-A demo has one job: look impressive for fifteen minutes in front of an audience that isn't going to click every button or wait around for a scheduled task to run. A real AI SaaS product has a much harder job — it has to work correctly at 3am, for a customer you've never met, doing something you didn't personally test before launch. Most founders find out the hard way which category their product actually falls into.
+A demo has one job: look impressive for fifteen minutes in front of an audience that isn't going to click every button or wait around for a scheduled task to run. A real AI SaaS product has a much harder job — it has to work correctly at 3am, for a customer you've never met, doing something you didn't personally test before launch. Most founders find out the hard way which category their product actually falls into, usually at the worst possible moment: during a busy weekend, in front of a customer they were hoping to keep.
 
 ## The Fifteen-Minute Test vs. the Three-Month Test
 
-Sneek is Friesland's sailing capital — home to the annual Sneekweek regatta and a genuine boat-building and marina economy that runs on tight seasonal schedules. A SaaS product built for this market, say a booking and maintenance tool sold to multiple marinas, might demo beautifully: click to book a berth, click to schedule maintenance, done. What a fifteen-minute demo can't show is whether the background processes that keep availability accurate across marinas, or the payment reconciliation that runs quietly every night, actually work when nobody's watching.
+Sneek is Friesland's sailing capital — home to the annual Sneekweek regatta and a genuine boat-building and marina economy that runs on tight seasonal schedules, where a handful of very busy summer weekends can matter more to a marina's revenue than the rest of the year combined. A SaaS product built for this market, say a booking and maintenance tool sold to multiple marinas, might demo beautifully: click to book a berth, click to schedule maintenance, done. What a fifteen-minute demo can't show is whether the background processes that keep availability accurate across marinas, or the payment reconciliation that runs quietly every night, actually work when nobody's watching.
 
 This is a blind spot specific to how AI coding tools generate SaaS products. Tools like Cursor, Bolt, Lovable, and v0 are excellent at building what a user clicks and sees. They're much less reliable at building and correctly deploying the invisible parts — scheduled jobs, webhook handlers, background sync processes — because nothing in a typical demo exercises them. Code can look complete and pass every visual check while a scheduled task underneath it silently never actually runs.
+
+This isn't a criticism of the tools so much as an honest description of what they were actually optimized for. A founder prompting an AI tool to "build a nightly reconciliation job" gets code that implements reconciliation logic. Whether that code is actually wired into a scheduler, whether it has retry logic if it fails partway through, whether anyone gets notified if it doesn't run — none of that is implied by the prompt, so none of it reliably gets built unless it's asked for explicitly, line by line.
 
 ## Where Demos Lie and Production Tells the Truth
 
 The pattern shows up again and again in SaaS products we review: a payment reconciliation job that exists in the codebase but was never actually registered with a scheduler. A webhook handler that accepts incoming events but doesn't verify they're genuinely from the payment provider, leaving it open to spoofed requests. An email notification system that works in testing because the test inbox is checked manually, but silently fails in production because the sending service was never properly configured. Every one of these looks fine in a demo and breaks quietly in production, usually discovered only when a customer complains.
 
-Closing this gap is what LaunchStudio focuses on for SaaS founders moving from validated demo to a product real customers depend on daily. Our engineers have shipped 160+ projects for enterprise clients, and part of every production review is specifically testing the invisible parts of a SaaS product — scheduled jobs, webhooks, background processes — under conditions closer to real usage than a demo ever simulates. Much of this deep engineering work runs out of our Amsterdam office on Herengracht, coordinating closely with founders across Friesland and the rest of the Netherlands.
+What makes this category of problem particularly stubborn is that the code itself is often correct. The logic for reconciling a payment, sending a reminder, or processing a webhook is usually written the way it should be — the failure isn't in what the code does, it's in whether the code ever actually runs the way the founder assumes it does. A scheduled job with correct logic that's never triggered produces exactly the same silence as a scheduled job that doesn't exist at all, which is precisely why this category of bug survives a code review that only reads the logic and never checks the actual production configuration around it.
+
+Closing this gap is what LaunchStudio focuses on for SaaS founders moving from validated demo to a product real customers depend on daily, whether that product runs bookings for a single marina or coordinates schedules across a dozen of them. Our engineers have shipped 160+ projects for enterprise clients, and part of every production review is specifically testing the invisible parts of a SaaS product — scheduled jobs, webhooks, background processes — under conditions closer to real usage than a demo ever simulates. Much of this deep engineering work runs out of our Amsterdam office on Herengracht, coordinating closely with founders across Friesland and the rest of the Netherlands.
 
 We don't touch the interface you built with your AI tool of choice — the fix happens in the infrastructure and logic layer underneath it. For a breakdown of what's included at each level, see [our packages](https://launchstudio.eu/en/#packages), and for examples of production-grade systems Manifera has delivered for larger clients, our [portfolio](https://www.manifera.com/portfolio/) shows the same standard applied at scale.
 
 ## A Question Worth Asking Before You Sell to a Second Marina
 
 If your SaaS product has any scheduled task, payment webhook, or background job, ask yourself honestly: have I actually confirmed it ran correctly, or have I only confirmed the code exists? For founders in Sneek selling into a marina and hospitality market with tight seasonal windows, a silently broken reconciliation job during peak sailing season isn't a minor bug — it's a trust problem with a customer base that talks to each other.
+
+## A Pre-Launch Checklist for the Invisible Parts of Your SaaS Product
+
+The parts of a SaaS product that never appear in a demo are exactly the parts most likely to fail silently once real customers depend on them. Before selling into a second marina, or any customer beyond your first pilot, it's worth deliberately confirming — not assuming — that each of these actually works in production.
+
+**Scheduled jobs and background processes:**
+
+- Check your hosting or task scheduler's dashboard directly to confirm a scheduled job is registered and has a recent successful run logged — not just that the function exists somewhere in your codebase.
+- Set up an alert that fires if a scheduled job fails to run or fails to complete, so silence itself becomes a signal rather than something that goes unnoticed for weeks.
+
+**Webhooks:**
+
+- Confirm your webhook handler verifies the signature or secret from the sending service, rather than trusting any request that arrives at the endpoint. An unverified webhook can be triggered by anyone who finds the URL.
+- Test what happens if a webhook is delivered twice — a common occurrence with most payment and booking providers — to confirm your app doesn't double-charge or double-book as a result.
+
+**Email and notifications:**
+
+- Send a real test notification to a real external inbox, not just a developer's test account, to confirm the sending service is actually configured correctly in production, not only in a local development environment.
+- Check whether failed sends are logged anywhere, so a broken notification system doesn't go unnoticed simply because nobody's watching for it.
+
+Running through this list once, deliberately, before scaling past a pilot customer takes an afternoon. Discovering the same gaps through a customer complaint during your busiest season, the way SailSync did, costs considerably more than an afternoon — in lost trust with customers who talk to each other, and in the time spent debugging under pressure instead of on your own schedule.
 
 ## Real example
 

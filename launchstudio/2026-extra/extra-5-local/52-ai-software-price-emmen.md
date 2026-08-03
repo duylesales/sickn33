@@ -20,7 +20,7 @@ Target Persona: Non-Technical Founder
 }
 </script>
 
-What does an AI software price of €20 or €50 a month actually buy you? For a founder in Emmen paying for a Lovable subscription, it buys the ability to generate and edit a working app. It does not buy a production database, a security audit, a working payment system, GDPR-compliant hosting, or anyone accountable when the app breaks under real users. That gap between subscription price and launch-ready price is where most first-time AI builders get the budget wrong.
+What does an AI software price of €20 or €50 a month actually buy you? For a founder in Emmen paying for a Lovable subscription, it buys the ability to generate and edit a working app. It does not buy a production database, a security audit, a working payment system, GDPR-compliant hosting, or anyone accountable when the app breaks under real users. That gap between subscription price and launch-ready price is where most first-time AI builders get the budget wrong — not because they're careless, but because nothing about the AI tool's pricing page tells them the gap exists in the first place.
 
 ## The AI Software Price You See vs. the Price You Pay
 
@@ -28,15 +28,33 @@ The advertised ai software price for tools like Lovable, Bolt, Cursor, and v0 co
 
 It isn't, because the subscription doesn't include: a properly configured production database with backups and access controls, a live Stripe integration tested against real edge cases like failed payments and refunds, hosting that can handle actual traffic instead of a preview environment, GDPR-compliant data handling for EU customers, and a security review of the AI-generated code — which matters given that around 45% of AI-generated code has been found to contain exploitable vulnerabilities. None of that shows up on the pricing page of the AI tool, because the AI tool was never designed to solve it.
 
+This is why so many founders describe the same experience: the AI subscription felt cheap the whole way through, right up until they tried to actually launch, at which point a payments provider, a hosting platform, or a security-minded advisor flagged a list of gaps nobody had budgeted for. The subscription price answers "how much does it cost to generate this app," not "how much does it cost to safely put this app in front of paying strangers" — and founders who treat those as the same number are the ones most likely to get blindsided partway through a launch timeline.
+
 ## What This Means for a Founder Building in Emmen
 
-Emmen sits in the southeast corner of Drenthe, a region shaped by its peat-colony history and, today, better known for Wildlands Adventure Zoo and a tourism and logistics economy that draws well beyond the province. Founders here are often building consumer-facing products — booking systems, visitor apps, local marketplaces — that need to handle real payments and real customer data from day one, not eventually. That's exactly the category of product where the gap between "AI software price" and "actual launch cost" bites hardest, because these apps can't afford a data breach or a broken checkout on opening weekend.
+Emmen sits in the southeast corner of Drenthe, a region shaped by its peat-colony history and, today, better known for Wildlands Adventure Zoo and a tourism and logistics economy that draws well beyond the province. The Bargermeer industrial estate on the city's edge is one of the larger business parks in the northern Netherlands, home to a mix of manufacturing, logistics, and increasingly software-adjacent businesses supplying the region's tourism and agri-food sectors. Founders here are often building consumer-facing products — booking systems, visitor apps, local marketplaces — that need to handle real payments and real customer data from day one, not eventually. That's exactly the category of product where the gap between "AI software price" and "actual launch cost" bites hardest, because these apps can't afford a data breach or a broken checkout on opening weekend, when a large share of the year's visitor traffic is concentrated into a few peak months.
 
-LaunchStudio quotes a fixed price for exactly this gap: €800–€7,500, scoped to what the specific prototype actually needs, delivered in one to three weeks. No hourly billing, no scope creep — a founder in Emmen gets a number before any work starts. Use the [project calculator](https://launchstudio.eu/en/#calculator) to see roughly where a given app would land before committing to anything.
+LaunchStudio quotes a fixed price for exactly this gap: €800–€7,500, scoped to what the specific prototype actually needs, delivered in one to three weeks. No hourly billing, no scope creep — a founder in Emmen gets a number before any work starts, and that number doesn't move once the engineering team is partway through the database schema and discovers something more complicated than expected. Use the [project calculator](https://launchstudio.eu/en/#calculator) to see roughly where a given app would land before committing to anything.
 
 ## Why the Comparison to a Traditional Agency Matters
 
-A traditional software agency quoting the same production-readiness work — security hardening, payment integration, database setup, deployment — would typically charge multiples of what LaunchStudio does, because agencies build from scratch and bill for discovery, design, and full development cycles a founder using Bolt or Lovable has already done themselves. LaunchStudio costs roughly 20% of what a traditional agency charges for comparable production work, specifically because it starts from the founder's existing AI-generated frontend instead of rebuilding it. Behind LaunchStudio is Manifera's team of 120+ engineers, based out of a hub in Singapore among other locations, applying the same standards used on enterprise projects to founder-scale budgets. Manifera's approach to custom software delivery is outlined on its [custom software development page](https://www.manifera.com/services/custom-software-development/).
+A traditional software agency quoting the same production-readiness work — security hardening, payment integration, database setup, deployment — would typically charge multiples of what LaunchStudio does, because agencies build from scratch and bill for discovery, design, and full development cycles a founder using Bolt or Lovable has already done themselves. A traditional agency engagement also usually starts with weeks of discovery meetings before a single line of production code gets written, time a founder racing toward a seasonal launch window in Emmen's tourism sector simply doesn't have. LaunchStudio costs roughly 20% of what a traditional agency charges for comparable production work, specifically because it starts from the founder's existing AI-generated frontend instead of rebuilding it. Behind LaunchStudio is Manifera's team of 120+ engineers, based out of a hub in Singapore among other locations, applying the same standards used on enterprise projects to founder-scale budgets. Manifera's approach to custom software delivery is outlined on its [custom software development page](https://www.manifera.com/services/custom-software-development/).
+
+## What a Real Production-Readiness Quote Should Actually Itemize
+
+One reason the ai software price conversation gets confusing is that founders have nothing to compare a quote against. If the only number you've ever seen is a €20 or €50 monthly subscription, any larger figure can feel arbitrary — expensive because it's bigger, not because you understand what it buys. A clear, itemized quote fixes that, and it's reasonable to expect one before agreeing to anything.
+
+**What should appear as separate line items, not a vague lump sum**
+
+- Database configuration — access controls, backup strategy, and row-level security scoped to your actual data model, not a generic template
+- Payment integration — moving Stripe or a similar processor out of test mode, with webhook handling for failed payments, refunds, and disputes
+- Security review — a structured pass checking for the kind of AI-generated vulnerabilities that don't show up in normal testing
+- GDPR compliance — a real data retention and deletion policy, not just a privacy-policy page nobody reads
+- Hosting and deployment — infrastructure sized for actual expected traffic, not a preview environment meant for a single developer
+
+**Red flags worth pausing on**
+
+A quote that bundles all of the above into one unexplained number, without saying which of these your specific app already handles and which it doesn't, is a quote you can't actually evaluate. Neither is a quote priced by the hour with no upper bound, since that shifts all the budget risk onto the founder rather than the team doing the estimating. A founder in Emmen weighing a fixed-price quote against an open-ended hourly one should ask, directly, which of the five items above are included — a vendor who can answer immediately, item by item, has actually scoped the work rather than guessed at it.
 
 ## Real example
 
@@ -70,7 +88,7 @@ Yes. LaunchStudio serves founders across the Netherlands and Benelux, including 
 Manifera, LaunchStudio's parent company, with 120+ engineers and 11+ years of experience delivering production software for enterprise clients including Vodafone and TNO.
 
 ### Is there an ongoing cost after the initial launch package?
-LaunchStudio offers an optional ongoing support add-on at €49 per month for founders who want continued monitoring and fixes after launch, but it isn't required.
+LaunchStudio offers an optional ongoing support add-on at €49 per month for founders who want continued monitoring and fixes after launch, but it isn't required. Founders who skip it can always add it later, once real usage patterns make clear what kind of ongoing support, if any, actually makes sense for their app.
 
 <script type="application/ld+json">
 {

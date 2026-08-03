@@ -57,6 +57,20 @@ With proper observability in place, the sequence of events after a real producti
 
 Relative to the other production dimensions, observability is unusually cheap to implement — most setups take under an hour using tools with generous free tiers for early-stage products — while providing outsized ongoing value for every day the product remains live afterward, since every future incident, not just the first one, benefits from the same visibility.
 
+## What to Do in the First Five Minutes After an Alert Fires
+
+Having monitoring configured is only useful if the response to an actual alert is deliberate rather than improvised in the moment, half-asleep, at whatever hour it happens to fire.
+
+**Confirm it's real before reacting.** Check the specific error or downtime signal directly — not just the notification headline — since a small number of alerts turn out to be transient blips that resolve on their own within moments, and reacting to every single one as a full emergency trains you toward alert fatigue just as surely as having no alerts at all.
+
+**Check scope before scale of response.** Is this affecting all users, a specific subset, or a single account? An error tracking tool with proper context, set up as described earlier, should answer this within seconds rather than requiring manual investigation — which is precisely the value of configuring context-rich tracking rather than bare exception logging.
+
+**Communicate before you've fully solved it, if the issue is customer-visible.** A brief, honest status update — even just "we're aware and looking into it" — posted somewhere customers might check, prevents the specific failure mode Lotte experienced originally: customers assuming silence means nobody knows, and losing trust accordingly, independent of how quickly the underlying issue actually gets fixed.
+
+**Fix the immediate symptom, then investigate the root cause separately.** Restoring service — restarting a failed process, rolling back a bad deploy — takes priority over fully understanding why it happened; the deeper investigation can and should happen afterward, calmly, rather than under the same time pressure as the initial response.
+
+A founder who has thought through this sequence in advance responds meaningfully faster than one improvising for the first time during an actual incident, which is exactly the difference between the two scenarios in Lotte's own case above.
+
 [LaunchStudio](https://launchstudio.eu/en/) sets up error tracking, uptime monitoring, and properly-tuned alerting as a standard part of every Launch & Grow engagement, configured specifically to signal, not noise, backed by Manifera's operational experience running production infrastructure across 160+ delivered projects.
 
 [Find out about your next production issue before your customers do](https://launchstudio.eu/en/#calculator) — this is typically the fastest gap on the entire checklist to close.
@@ -102,6 +116,10 @@ Minimal — the initial setup is largely one-time, though alert thresholds occas
 
 Adding it before launch, if feasible, avoids the exact gap Lotte experienced during her first six weeks live — though as her case also shows, adding it reactively after a first incident still delivers substantial value for every subsequent day the product stays live, which is most of a product's operational lifetime either way.
 
+### Should a solo founder expect to handle alerts personally, or is this something that can be delegated?
+
+Early on, most solo founders handle alerts personally simply because there's no one else yet, though the response sequence above — confirm, scope, communicate, fix, then investigate — works identically whether you're handling it yourself or it's been delegated to an engineering partner, which is exactly the kind of ongoing support LaunchStudio provides as part of a Launch & Grow engagement.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -145,6 +163,14 @@ Adding it before launch, if feasible, avoids the exact gap Lotte experienced dur
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Before launch avoids an early gap entirely, though adding it reactively after a first incident still delivers substantial value for every subsequent day the product stays live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a solo founder expect to handle alerts personally, or can this be delegated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most solo founders handle alerts personally early on, though the same confirm-scope-communicate-fix-investigate sequence works whether handled personally or delegated to an engineering partner."
       }
     }
   ]

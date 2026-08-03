@@ -57,6 +57,20 @@ A reasonable instinct is to assume better prompting closes this gap — asking t
 
 Closing this gap isn't about rewriting what the AI generated — most of it is fine, often genuinely well-structured. It's about adding the review, testing, and verification layer that confirms it's fine, rather than assuming it based on how the demo looked. This is precisely the distinction between functional code, which satisfies a described scenario, and deployment-safe code, which has been deliberately tested against scenarios nobody described.
 
+## What an Independent Code Review Actually Looks At
+
+Founders who hear "get your code reviewed" often picture something vague — someone reading through files and nodding along. A genuine production-readiness review is considerably more specific than that, and knowing what it actually checks makes it easier to evaluate whether a given review, from any provider, is doing real work or just skimming.
+
+**Structural review.** Does the code follow a consistent, maintainable pattern, or does logic sprawl unpredictably across files in a way that makes future changes risky simply because nobody can be fully confident what else a given change might touch?
+
+**Dependency audit.** Every package your app relies on was chosen by the AI tool for some combination of popularity and fit with the prompt, not necessarily for active maintenance status, known vulnerabilities, or license compatibility with a commercial product — a review checks each dependency against current security advisories, not just whether it currently runs without error.
+
+**Adversarial path testing.** Rather than confirming the described scenarios work, a real review deliberately constructs the scenarios nobody described — malformed input, boundary values, sequences of actions a normal user wouldn't naturally attempt — and checks what actually happens, since this is precisely the space the AI tool wasn't evaluated against.
+
+**Security assumption verification.** Any claim your app makes about who can access what gets tested directly against the API, not assumed from how the interface behaves, following the same logic covered elsewhere in this series regarding the difference between frontend gatekeeping and actual enforcement.
+
+A review that skips any of these four isn't incomplete by a small margin — it's answering a narrower question than "is this safe to ship," and founders evaluating a potential partner should ask specifically whether all four are included, not just assume "code review" means the same thing to everyone offering it.
+
 [LaunchStudio](https://launchstudio.eu/en/) builds exactly this validation layer around your existing AI-generated frontend — reviewing, testing, and hardening what's there rather than starting over, backed by Manifera's engineering discipline across 160+ delivered projects.
 
 [Get your code reviewed against a real validation standard](https://launchstudio.eu/en/#contact) — find out what "looks done" is actually hiding before your users do.
@@ -99,6 +113,10 @@ Realistically, only through a user hitting it in production and reporting a conf
 ### Does finding issues like this mean my AI coding tool did a bad job?
 
 No — it means the tool did precisely what it's designed to do: generate functional software efficiently that satisfies the scenario it was given. Validation is a separate, complementary step that addresses everything outside that scenario, not a correction of a mistake the tool made.
+
+### Does an independent review like this require handing over my entire codebase, or can it be scoped narrowly?
+
+It can be scoped to specific areas of concern, though a genuinely thorough review — covering structure, dependencies, adversarial testing, and security assumptions — typically needs full codebase access to catch gaps that span multiple files, which is why LaunchStudio's initial scoping conversation clarifies exactly what's included before any commitment.
 
 <script type="application/ld+json">
 {
@@ -143,6 +161,14 @@ No — it means the tool did precisely what it's designed to do: generate functi
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No — the tool generated functional software that satisfies the scenario it was given. Validation addresses everything outside that scenario, not a tool mistake."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does an independent review require handing over the entire codebase, or can it be scoped narrowly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can be scoped to specific areas, though a thorough review covering structure, dependencies, adversarial testing, and security assumptions typically needs full codebase access."
       }
     }
   ]

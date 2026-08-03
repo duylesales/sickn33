@@ -35,7 +35,7 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 ## Where the Assumption Comes From
 
-The belief isn't unreasonable on its face — these tools are demonstrably capable, producing code that would have taken a human developer meaningfully longer to write, and it's intuitive to assume that capability extends uniformly across every dimension of code quality, security included. The error is treating "capable" as a single, undifferentiated property rather than recognizing that capability is specific to whatever the tool was actually optimized and evaluated against during its development and training.
+The belief isn't unreasonable on its face — these tools are demonstrably capable, producing code that would have taken a human developer meaningfully longer to write, and it's intuitive to assume that capability extends uniformly across every dimension of code quality, security included. Marketing language around these tools sometimes reinforces this directly, using words like "production-ready" or "enterprise-grade" in ways that describe the polish and functional completeness of the output, without necessarily meaning the code has been adversarially security-tested — a distinction that's easy to miss if you're reading quickly, and one that vendors don't always go out of their way to clarify. The error is treating "capable" as a single, undifferentiated property rather than recognizing that capability is specific to whatever the tool was actually optimized and evaluated against during its development and training.
 
 ## What These Tools Are Actually Optimized For
 
@@ -48,6 +48,18 @@ Security vulnerabilities in generated code aren't random defects — they cluste
 ## Why More Advanced Models Don't Simply Solve This
 
 A reasonable follow-up question: won't better, more capable AI models eventually close this gap on their own? Marginally, over time, but not structurally, because the underlying issue isn't a capability ceiling — it's an absence of adversarial verification in the generation and demo-testing loop itself. A more capable model still optimizes toward what it's asked for and evaluated against; without an explicit, executed adversarial testing step, a more capable model produces more capable code that satisfies the prompt, with no independent mechanism forcing it to also resist misuse nobody described. The gap is structural to how these tools work, not a temporary limitation of current model quality.
+
+## Three Concrete Examples of the Same Underlying Pattern
+
+Abstractly, "optimized for functional correctness, not adversarial security" can sound like a technical distinction without much practical weight. It's more useful to see the actual pattern play out:
+
+**Prompt: "Add a login system."** The tool generates a working login form, session handling, and protected routes that correctly hide admin-only content from regular users in the interface. What it typically doesn't generate, unless specifically asked, is server-side verification on every protected API endpoint independent of what the interface displays — the demo works perfectly, because the demo only ever interacts through the interface the tool also built.
+
+**Prompt: "Connect this to the Stripe API."** The tool generates working payment integration, often including the API key directly in the code to get it working quickly during the generation process — functionally correct, immediately testable, and only a problem once that code (and its full history) reaches a public or improperly secured repository.
+
+**Prompt: "Let users upload a profile photo."** The tool generates a working upload feature that accepts image files and stores them — correctly handling the described scenario of a user uploading a normal photo, while rarely including deliberate validation against a maliciously crafted file designed to exploit the upload handler itself, since no one described that adversarial scenario in the prompt.
+
+In each case, the generated code does exactly what was asked, correctly and often quickly. The vulnerability isn't a mistake in execution — it's the absence of a question nobody asked, which is precisely why "the tool is capable" and "the tool asked itself what a malicious user would try" are different claims, and why believing the first implies the second is the specific error this myth represents.
 
 ## Why This Myth Is Genuinely Costly to Believe
 

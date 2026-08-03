@@ -57,6 +57,18 @@ Across every real example covered throughout this series — Sanne discovering h
 
 As covered in this series' forward-looking guidance on 2027 and beyond, better generation tools make the trust-boundary problem more consequential, not less — a more polished, more convincing prototype makes the underlying gap harder to intuit, not easier, precisely because "looks done" becomes a more persuasive signal even as it remains exactly as unreliable a proxy for "is safe to ship" as it's always been.
 
+## How to Actually Use This Series Going Forward, Rather Than Just Having Read It
+
+Sixty articles is too much to hold in working memory at once, which means the practical value of this series, going forward, depends less on remembering every specific article and more on knowing how to navigate back to the right one when a specific situation calls for it.
+
+**Bookmark by layer, not by article number.** When a specific concern comes up — a new integration, a new team member, a fundraising conversation — the seven-layer structure covered above is the faster way to locate relevant guidance than trying to recall which numbered article covered it: configuration and secrets, identity and access, data layer, business logic, external integrations, testing, observability.
+
+**Revisit the checklist-style articles at specific trigger points, not on a fixed schedule.** The guidance throughout this series that maps to a concrete moment — adding a second contributor, approaching a fundraise, considering a new compliance-relevant feature — is most useful reread at that specific moment, rather than as a one-time linear read that's expected to stick permanently.
+
+**Treat this as a reference, not a test you passed once.** A founder who read this series months ago and hasn't revisited it since has the conceptual framework but likely not every specific technical detail readily available — returning to the specific article relevant to whatever you're facing right now is a more realistic and sustainable pattern than expecting full recall indefinitely.
+
+The underlying trust-boundary concept is simple enough to hold onto permanently; the sixty articles' specific, concrete detail is what makes each one worth returning to exactly when it becomes relevant, rather than only once, in sequence, at the start.
+
 ## The Single Question This Entire Series Answers
 
 If there's one question underlying all sixty articles, it's the one introduced early in this series and revisited throughout: what validation loop proves this code is safe enough to ship? Every specific gap, every specific test, every specific founder's story is, in its own way, a concrete answer to some piece of that one question.

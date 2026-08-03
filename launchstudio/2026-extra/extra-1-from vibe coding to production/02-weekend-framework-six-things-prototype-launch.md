@@ -65,6 +65,19 @@ Error tracking (Sentry is the standard choice), uptime monitoring, and alerting 
 
 For a founder with working technical skills, these six items genuinely don't require weeks — they require sustained focus, worked through in roughly the order above, since secrets and auth carry the highest risk if left unaddressed while CI, testing, and observability compound in value the longer the product stays live. Founders without that technical background face the exact same six items and the exact same risk profile; the only variable that changes is who executes the fix.
 
+## A Verification Checklist for Each of the Six Items
+
+Finishing an item on this list and verifying it's actually finished are different claims, and the gap between them is exactly where founders working solo most often fool themselves. A short, concrete check for each:
+
+- **Secrets** — run a full git history scan against your own `.env` patterns and confirm it returns nothing, not just that your current files look clean.
+- **Error handling** — disconnect your internet mid-request to an external service and confirm the user sees a specific, useful message rather than a frozen screen or a generic crash.
+- **Authentication** — use a valid session token for one account and try to request another account's data directly through the API, bypassing your own frontend entirely; a 403 response is the only acceptable outcome.
+- **CI pipeline** — deliberately push a change that breaks something small and confirm the pipeline actually catches it and blocks the deploy, rather than assuming it would.
+- **Testing** — try to break your own three to five critical flows with malformed input or an interrupted payment, not just click through them once successfully.
+- **Observability** — trigger a deliberate error and confirm you get a dashboard notification or alert, not just that the tool is technically installed.
+
+Each check takes minutes. Skipping them and assuming "I built it, so it works" is exactly the gap this framework exists to close.
+
 [LaunchStudio](https://launchstudio.eu/en/) runs exactly this framework for founders who'd rather have Manifera's engineers execute it professionally than spend their own weekend on it — same six dimensions, same sequencing logic, delivered at a fixed price and timeline.
 
 [Get a scoped estimate for your specific gaps](https://launchstudio.eu/en/#calculator) — most prototypes don't need all six fixed with equal urgency, and a proper scope tells you which matter most for your app specifically.

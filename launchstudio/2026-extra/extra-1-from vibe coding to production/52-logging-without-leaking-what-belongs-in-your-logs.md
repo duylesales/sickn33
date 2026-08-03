@@ -57,6 +57,20 @@ Depending on your hosting and logging infrastructure, logs may be accessible to 
 
 Specifically excluding known-sensitive fields (passwords, tokens, payment details, and any personal data your product handles) from what gets logged, even during error conditions where "log everything" feels most tempting; using redaction or masking for fields that need partial visibility for debugging purposes without full exposure; and periodically auditing existing logs for any sensitive data that may have already accumulated under a previous, less careful logging pattern.
 
+## A Practical Checklist for Setting Up Logging Correctly From the Start
+
+Retrofitting logging discipline after months of accumulated, unfiltered log data — as Marnix's case illustrates — is considerably more work than establishing the right pattern before sensitive data starts flowing into logs in the first place. For a founder setting up logging on a new project, or auditing an existing one, a few concrete practices cover most of the risk directly.
+
+**Maintain an explicit denylist of field names that never get logged.** Passwords, tokens, API keys, payment card numbers, and social security or national ID numbers are the obvious core; depending on your product, add anything else that would be genuinely damaging if it sat in plain text somewhere accessible to your whole team — health information, private messages, or precise location data, for instance.
+
+**Log identifiers, not the sensitive values themselves.** Instead of logging a user's full email and password attempt during a failed login, log the user ID or a hashed reference and the fact that authentication failed — enough to trace the event and debug the flow, without the actual sensitive content sitting in the log file itself.
+
+**Set a retention policy, not indefinite accumulation.** Logs kept forever by default, simply because no one configured otherwise, represent a growing exposure surface with no corresponding growing benefit — most debugging value comes from recent logs, making a 30- to 90-day retention window (adjustable to your specific needs) a reasonable default rather than unlimited accumulation.
+
+**Treat your error-tracking tool's configuration as part of this same discipline.** Tools like Sentry or similar services often capture request context automatically by default, and that default configuration deserves the same scrutiny as your own logging code — a properly configured error tracker with sensitive-field scrubbing enabled is meaningfully different from one left at defaults that happen to capture more than intended.
+
+Building these four habits in before real user data starts accumulating is considerably cheaper than the retroactive audit-and-purge process Marnix's case required — the same compounding-cost pattern covered throughout this series applies directly to logging infrastructure, not just to the application code sitting on top of it.
+
 [LaunchStudio](https://launchstudio.eu/en/) reviews and hardens logging practices specifically for sensitive data exposure as part of production readiness, ensuring your observability setup improves safety without inadvertently creating a new exposure surface, backed by Manifera's data-security-conscious engineering practices.
 
 [Get your logs checked for what shouldn't be sitting in them](https://launchstudio.eu/en/#calculator) — the tooling meant to help you find problems shouldn't become one itself.

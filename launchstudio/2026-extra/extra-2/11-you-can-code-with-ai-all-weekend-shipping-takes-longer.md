@@ -49,6 +49,8 @@ A common, specific version of this problem: a user signs up with someone else's 
 
 A founder testing their own signup flow uses their own real email, receives their own real messages, and never has any reason to attempt signing up with an email they don't control. The entire failure mode requires acting like someone other than yourself, which cooperative, founder-led testing structurally never does.
 
+Even QA-minded founders who test edge cases — a duplicate signup, a wrong password, an expired session — are still testing from inside their own identity, using their own inbox as ground truth throughout. The one test that would actually surface this gap requires deliberately trying to impersonate someone else, which isn't a natural instinct during solo testing and rarely appears on a founder's own mental checklist unless someone external prompts it first.
+
 ## What a Complete Fix Actually Involves
 
 A proper fix requires a verification step — a confirmation link or code sent to the provided email, with account capabilities restricted until that step completes — plus consistent enforcement of that verification requirement across every path that grants account access, not just the primary signup form. [LaunchStudio](https://launchstudio.eu/en/) adds exactly this kind of verification flow as part of its standard authentication review, backed by Manifera's 11+ years of experience implementing Auth0, Supabase Auth, and Firebase Auth-based systems.
@@ -56,6 +58,36 @@ A proper fix requires a verification step — a confirmation link or code sent t
 Manifera's authentication engineering work is delivered through the Ho Chi Minh City development center on Pho Quang Street, coordinated with client scoping through the Amsterdam headquarters at Herengracht 420.
 
 [Tell us what you built — you'll hear back within a business day](https://launchstudio.eu/en/#contact).
+
+## How to Audit Every Account-Creation Path Yourself, Before You Ship
+
+A founder doesn't need to wait for a paid audit to catch the most common version of this gap. A weekend build rarely has more than a handful of places where an account gets created or account access gets granted, and each one is worth walking through deliberately with a specific, adversarial mindset rather than the "does this work for me" mindset that comes naturally during solo testing.
+
+**Map every path that grants account access, not just the signup form**
+
+- The primary signup form — the one a founder tests constantly and therefore trusts most
+- Social login (Google, GitHub) — often skips email verification entirely, since the provider itself vouches for the address
+- Invite-based signup — a teammate or admin creates an account on someone else's behalf
+- Password reset completion — does it re-verify anything, or simply trust whatever email was entered originally?
+- Any bulk-import or CSV-upload account creation feature added for "power users" later
+
+**Ask one adversarial question per path**
+
+For each path above, ask: "if I entered an email address I don't own, what would this path let me do before anyone checks whether I actually own it?" This single question, applied systematically rather than once, surfaces the gap in minutes — it's the exact question a founder's own cooperative testing never naturally asks, because a founder testing their own product has no reason to pretend to be someone else.
+
+**Decide what "verified" should actually gate**
+
+Verification is only meaningful if something real depends on it. Before building the fix, decide explicitly: does an unverified account get full feature access with a banner reminding them to verify, or is access restricted entirely until verification completes? Both are legitimate product decisions — the mistake is not deciding at all, and defaulting silently to whatever the AI tool happened to generate.
+
+**Re-check after every new feature that touches accounts**
+
+The riskiest moment isn't the original build — it's six weeks later, when a founder adds a referral program, a team-invite feature, or an admin panel, each of which is a fresh account-access path that inherits none of the verification logic from the original signup form unless someone deliberately wires it in. Treating "does this new path respect verification" as a standing checklist item, not a one-time fix, is what actually prevents the gap from quietly reopening.
+
+A founder who runs through this checklist honestly, using a second email address they control, will catch a meaningful share of what a professional audit would also find — the value of a dedicated review is less about knowledge a founder couldn't reason through themselves, and more about the discipline of actually doing it before launch instead of after a confused stranger emails support.
+
+**Retrofitting verification later is harder than building it in from the start**
+
+The longer an unverified system runs, the more existing accounts a founder has to account for when finally adding verification — do existing users get grandfathered in as verified, or forced through a retroactive verification step that risks locking out legitimate customers who registered honestly months ago? Neither answer is free of trade-offs, which is exactly why catching this gap during the pre-launch checklist above, rather than after real accounts have accumulated, keeps the eventual fix simple instead of turning it into its own small migration project.
 
 ## Real example
 

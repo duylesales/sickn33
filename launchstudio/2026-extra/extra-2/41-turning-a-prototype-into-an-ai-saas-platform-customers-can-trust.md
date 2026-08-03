@@ -31,15 +31,15 @@ Target Persona: SaaS Founder Scale-Up
 }
 </script>
 
-Turning a working prototype into an AI SaaS platform customers genuinely trust with their financial records involves a specific, less visible category of work: making sure the backups protecting that data are actually as protected as the data itself. A backup that exists is reassuring. A backup that's reachable by anyone who finds its storage location is a second, unguarded copy of everything you were trying to protect in the first place.
+Turning a working prototype into an AI SaaS platform customers genuinely trust with their financial records involves a specific, less visible category of work: making sure the backups protecting that data are actually as protected as the data itself. A backup that exists is reassuring. A backup that's reachable by anyone who finds its storage location is a second, unguarded copy of everything you were trying to protect in the first place. This distinction rarely shows up on a feature list or in a demo, which is exactly why it's one of the last things founders check and one of the first things a serious enterprise buyer's due-diligence process asks about.
 
 ## Before: A Reasonable, Common Backup Setup
 
-**Before a dedicated review,** a growing SaaS product typically has automated backups configured — a genuinely important, responsible step many founders do get right, since losing customer data entirely is an obvious, well-understood risk that AI-assisted setup and hosting platforms often address by default with minimal extra configuration required.
+**Before a dedicated review,** a growing SaaS product typically has automated backups configured — a genuinely important, responsible step many founders do get right, since losing customer data entirely is an obvious, well-understood risk that AI-assisted setup and hosting platforms often address by default with minimal extra configuration required. The backup job itself typically reports success reliably, generates a clean log entry, and gives every outward signal that the responsible box has been checked — which is precisely what makes the next layer of the problem so easy to miss entirely.
 
 ## After: Backups That Are Actually as Protected as the Live Data
 
-**After a proper review,** those same backups sit in storage that requires the same level of authentication and access restriction as the live production database itself — not merely "somewhere less obvious," but somewhere actually inaccessible without proper credentials, verified rather than assumed.
+**After a proper review,** those same backups sit in storage that requires the same level of authentication and access restriction as the live production database itself — not merely "somewhere less obvious," but somewhere actually inaccessible without proper credentials, verified rather than assumed. That verification step — actually attempting unauthorized access and confirming it fails, rather than trusting a platform's default configuration to have handled it correctly — is the part that turns "we have backups" into a claim a founder can genuinely stand behind during a due-diligence conversation with a prospective enterprise client.
 
 ## Why Backup Storage Is Easy to Under-Protect Even When Backups Themselves Exist
 
@@ -60,6 +60,22 @@ A thorough check confirms backup storage requires the same authentication as pro
 Manifera's backup and infrastructure security reviews are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Get your payment flow tested against real-world failure conditions, not just the happy path](https://launchstudio.eu/en/#calculator).
+
+## A Practical Checklist for Auditing Your Own Backup Security
+
+Before assuming your backups are safe simply because they exist and run on schedule, work through a short, concrete list that treats backup storage as its own independent security surface, separate from whether the backup job itself completes successfully.
+
+**Start here:**
+
+- **Confirm authentication is actually required to reach backup storage** — not "probably requires login," but confirmed directly by attempting to access the storage location without credentials and verifying that attempt fails.
+- **Check whether backup file names or paths are predictable.** A backup stored at a guessable URL pattern — a customer ID, a sequential filename, a date-based path with no additional protection — is functionally similar to no protection at all if an attacker can construct the path directly without ever needing to find it first.
+- **Verify backup storage permissions match production data permissions**, not a looser default a hosting platform applied automatically when the backup feature was first enabled and nobody went back to tighten afterward.
+- **Test that backup restoration actually works**, not only that backups exist. A striking number of founders have never actually restored from their own backup and discover a problem with the restore process for the first time during a real emergency, when it's far too late to fix calmly.
+- **Confirm who — which team members, which service accounts, which third-party integrations — has access to backup storage**, and whether that list has quietly grown beyond what's actually necessary as a product added contributors over time.
+
+Each item on this list addresses a distinct way a backup can silently fail to protect what it's supposed to protect, even while the backup job itself reports success every single night without complaint. A founder who only checks "did the backup run" is checking the one thing least likely to be the actual problem — backup jobs that fail loudly are easy to notice and fix; backup jobs that succeed while sitting in an under-protected location fail silently, exactly the way BoekhoudBasis's did until an outside party happened to look.
+
+Running through this list takes an afternoon for a technical founder comfortable navigating their hosting platform's permission settings, and considerably less time for a reviewer who has already built the same checklist into a standard, repeatable audit process.
 
 ## Real example
 

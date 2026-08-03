@@ -20,19 +20,21 @@ Target Persona: Non-Technical Founder
 }
 </script>
 
-Somebody always finds the gap eventually. The only real question is whether it's you, running a deliberate review before launch, or a stranger with bad intentions who finds it after your product is live and your reputation is on the line. AI security risk isn't an abstract concept for founders shipping products built with Lovable, Bolt, Cursor, or v0 — it's a concrete, findable set of weaknesses sitting in code that was never specifically checked for them.
+Somebody always finds the gap eventually, given enough time and enough users. The only real question is whether it's you, running a deliberate review before launch, or a stranger with bad intentions who finds it after your product is live and your reputation is on the line. AI security risk isn't an abstract concept for founders shipping products built with Lovable, Bolt, Cursor, or v0 — it's a concrete, findable set of weaknesses sitting in code that was never specifically checked for them.
 
 ## Risk Is Cumulative, Not Binary
 
 Harlingen has a distinct identity even within Friesland: it's the mainland's gateway to the Wadden Islands, a working ferry port where tourism, fishing, and maritime logistics all overlap in a town of modest size. A founder building a booking or ticketing product out of Harlingen isn't just building software — they're building something that touches real transactions, real schedules, and real people trying to catch a boat. AI security risk in that context isn't hypothetical; it's the difference between a smooth departure and a terminal full of confused passengers.
 
-The mistake most founders make is treating security as pass/fail — either the app is "secure" or it's "insecure." In reality, risk accumulates from dozens of small decisions the AI tool made without asking: how ticket codes get generated, how payment confirmations get verified, how admin access gets granted. Each one adds a small amount of risk. None of them look dangerous in isolation. Together, they define how exposed your app actually is.
+The mistake most founders make is treating security as pass/fail — either the app is "secure" or it's "insecure." In reality, risk accumulates from dozens of small decisions the AI tool made without asking: how ticket codes get generated, how payment confirmations get verified, how admin access gets granted. Each one adds a small amount of risk. None of them look dangerous in isolation. Together, they define how exposed your app actually is. A founder who fixes one obvious issue and stops looking often walks away with a false sense of security, having addressed the most visible risk while several quieter ones remain untouched.
 
 ## Where AI Tools Introduce Risk Without Meaning To
 
 AI coding tools aren't reckless by design — they're just optimizing for a different goal than security. A ticket or booking ID generated as a simple incrementing number (1001, 1002, 1003) is the fastest, simplest thing for an AI tool to build, and it works perfectly in every demo. It's also trivially guessable, which means anyone who wants to generate a fake but plausible-looking ticket number doesn't need to hack anything — they just need to guess. This exact pattern, sequential and predictable identifiers standing in for something that should be cryptographically random, is one of the most common sources of AI security risk we find in booking and ticketing products specifically.
 
 As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." A ticketing system is a clean example — the architecture decisions that prevent fraud are invisible in a demo and only matter once real tickets, real money, and real passengers are involved.
+
+The same logic extends beyond ticket numbers to almost every identifier an app generates. Order confirmation codes, discount codes, password reset links, invite codes for a referral program — each one carries the same underlying question: is this value hard enough to guess that it can't be brute-forced or predicted, or was it generated the easiest way possible because nobody asked the AI tool to think about an adversary trying to guess it? A founder auditing their own app for AI security risk gets a surprisingly complete picture just by listing every identifier the app generates and asking that one question about each.
 
 ## Assessing and Closing the Risk
 
@@ -43,6 +45,19 @@ We fix what we find without touching your existing frontend — [explore LaunchS
 ## A Risk You Can Check Yourself Today
 
 Look at any ID your app generates — ticket numbers, order numbers, booking references. If you can predict the next one just by looking at the last one, that's a concrete, fixable AI security risk sitting in your product right now, not a theoretical concern for later.
+
+## A Risk-Scoring Framework for Founder-Built Apps
+
+Once you start looking for AI security risk, it's easy to find more of it than you know what to do with, and treating every finding as equally urgent is its own kind of mistake. A simple scoring approach helps a founder in Harlingen, or anywhere, decide what actually needs attention before launch versus what can reasonably wait.
+
+**Score each risk on two dimensions, roughly on a scale of low, medium, or high:**
+
+- **Likelihood** — how easy would this be for an ordinary person to stumble into or exploit, without specialized hacking skills? A sequential ticket number is high likelihood, because incrementing a number requires no skill at all. A timing-based race condition in a payment flow is lower likelihood, because it requires deliberate, technical effort to find.
+- **Impact** — what actually happens if it's exploited? A fraudulent boarding pass has high impact, since it directly costs revenue and undermines the ferry operator's trust in the whole system. A cosmetic bug that shows a slightly wrong date on a confirmation email has low impact, even if it's a genuine defect.
+
+**Anything scoring high on both dimensions — easy to exploit and costly if it happens — goes first**, before launch, without exception. EilandGo's predictable ticket numbers sat squarely in that category: trivially guessable, and directly tied to lost revenue and compromised boarding security. Risks that are high impact but low likelihood are worth fixing but rarely worth delaying a launch over. Risks that are low on both dimensions can usually be logged and addressed in a normal development cycle rather than treated as urgent.
+
+This kind of triage turns a long, anxiety-inducing list of findings into a short, actionable one — and it's exactly the conversation a good technical reviewer should be having with a founder, rather than handing over a report and leaving the prioritization to guesswork.
 
 ## Real example
 

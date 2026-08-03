@@ -49,6 +49,22 @@ Beyond the product and market questions a general pitch addresses, investors spe
 
 **Team and process maturity**, assessing whether production-readiness practices (the team-scale practices covered elsewhere in this series — CI, code review, access control) exist and will hold up as the team grows with investment-funded hiring, not just whether the current, possibly solo, founder has personally managed to keep things together so far.
 
+## What to Actually Have Ready Before Diligence Begins
+
+Beyond having the underlying technical categories genuinely addressed, having the right artifacts assembled and accessible before an investor's technical reviewer asks for them measurably speeds the process, similar to the audit-artifact discipline covered throughout this series applied specifically to the fundraising context.
+
+**A current, accurate architecture overview.** Not exhaustive technical documentation, but a concise description of your stack, your hosting setup, your data flow, and your major third-party integrations — something a technical reviewer can read in minutes to orient themselves before diving into specifics, rather than having to reverse-engineer your architecture from the codebase alone.
+
+**Your most recent audit or security review report, if one exists.** A founder who can produce a specific, dated report showing the categories covered throughout this series were examined and addressed gives a reviewer concrete, checkable evidence rather than a verbal claim — precisely the specificity distinction this series has repeatedly emphasized.
+
+**A list of your data processors and any signed processing agreements.** Directly answering the compliance-category questions covered elsewhere in this series before being asked avoids a back-and-forth information request cycle that otherwise adds days to the process.
+
+**Access credentials ready for a reviewer, scoped appropriately.** Read-only access to relevant systems, prepared in advance rather than arranged reactively once requested, removes a common source of delay — a reviewer waiting on access provisioning is a reviewer not actively reviewing.
+
+**A clear-eyed list of known limitations, not just strengths.** Proactively noting a specific area you know needs further work — a piece of technical debt you're aware of and have a plan for — reads as more credible to an experienced technical reviewer than a codebase presented as flawless, since every real codebase has something, and a reviewer who finds it unmentioned reasonably wonders what else wasn't mentioned either.
+
+Assembling this before diligence formally begins, rather than scrambling to produce it once requested, is a direct, practical extension of the proactive-versus-reactive distinction this article returns to throughout.
+
 ## Why Founders Who've Already Addressed the Series' Core Categories Are Well-Positioned
 
 Because investor technical due diligence maps so closely onto the exact categories covered throughout this series, a founder who has genuinely addressed secrets, authentication, error handling, testing, observability, and compliance architecture — with the verified, specific evidence covered in this series' guidance on audit artifacts — walks into due diligence with concrete, checkable answers rather than the vague reassurance that due diligence is specifically designed to see through.

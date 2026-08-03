@@ -32,6 +32,8 @@ What the download rarely contains is everything underneath: a properly configure
 
 Utrecht's startup scene skews toward founders coming out of university programs, research groups, or corporate innovation labs rather than traditional agency backgrounds. That's a strength — technical intuition, domain expertise, a real problem to solve — but it also means many first-time founders have never had to think about what happens between "my AI tool exported code" and "my product is live and taking real user data." In a city with this much academic and research infrastructure nearby, in the province of Utrecht, there's a natural assumption that rigor happens automatically. With AI-generated code, it doesn't. The tool optimizes for a working demo, not for what survives contact with real users, real payments, and real attackers.
 
+Walk through Utrecht Science Park on any weekday and you'll see the pattern up close: PhD candidates and postdocs from Utrecht University spinning side projects into companies, often in the same week they defend a thesis. The coworking desks around De Uithof and the startup floors near Utrecht Centraal are full of founders who can reason precisely about a research problem but have never once had to think about session tokens or database permissions — because nothing in their training required it. That's not a criticism; it's just a different set of muscles than production engineering requires, and an AI download doesn't build those muscles for you, no matter how confident the exported code looks.
+
 We see this pattern constantly: a founder downloads their code, connects it to a database, and everything works — until it doesn't. A support ticket that shouldn't have been visible to other users. An API key sitting in plain text in the frontend bundle. A signup flow that lets someone register with someone else's email. None of these show up while you're clicking through your own demo. They show up when a stranger does.
 
 ## Closing the Gap Between Download and Launch
@@ -39,6 +41,20 @@ We see this pattern constantly: a founder downloads their code, connects it to a
 LaunchStudio exists specifically for this moment: the point where a founder has a downloaded, AI-generated codebase and needs it turned into something production-ready, without a rebuild. LaunchStudio is powered by Manifera, a software development company with 11+ years of experience — the kind of engineering discipline that catches what a demo hides. Our team, working out of our Amsterdam headquarters on Herengracht 420 alongside engineers in Singapore and Vietnam, reviews the exported frontend and builds the missing backend layer around it: secure database architecture, real authentication, live payment integration, and proper hosting.
 
 The process is deliberately fast and fixed-scope, because most Utrecht founders don't want a six-month agency engagement — they want their existing download turned into something they can safely put in front of users. You can see the full breakdown of what's included at each level on our packages page, and if you're curious what your specific project would take, Manifera's custom software development team applies the same production standards used for enterprise clients to these smaller, faster engagements.
+
+## A Practical Checklist for Reviewing Your Own Download First
+
+Before you send a codebase to anyone for review, you can catch a surprising amount yourself in about twenty minutes. This isn't a substitute for a proper audit, but it tells you roughly how big the gap is before you commit time or money to closing it.
+
+**Open your project folder and check for these five things:**
+
+1. **Search for the word "test" near your payment code.** If you see `sk_test_` anywhere in a file that isn't clearly labeled as a testing environment, your Stripe integration may still be in test mode — or worse, a live secret key may be sitting in a file that gets bundled into the frontend.
+2. **Look for a `.env` file, and check whether it's actually being read server-side.** Many AI-generated projects create an `.env` file correctly but then reference those variables inside frontend components, which means the values get compiled into the JavaScript bundle anyone can view.
+3. **Try to access an admin or account-specific page directly by URL**, logged out or logged in as a different test account. If the page loads content it shouldn't, the check is happening in the interface only, not on the server.
+4. **Check whether your database tool (Supabase, Firebase, or similar) shows row-level security as "enabled" on every table**, not just the ones you remember configuring. It's common for one or two tables — often the ones added later, in a follow-up prompt — to be missed entirely.
+5. **Ask what happens if the same form is submitted twice quickly.** Duplicate signups, duplicate charges, and duplicate database rows are a frequent side effect of AI-generated forms that don't guard against a double click.
+
+If you find even one of these issues, it's worth assuming there are others you can't see without a deeper review — these five are simply the ones visible without specialized tools.
 
 ## Real example
 

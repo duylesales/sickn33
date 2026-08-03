@@ -53,6 +53,20 @@ A proper secrets audit doesn't just scan the current codebase — it scans full 
 
 The test isn't "did I remove the API key from my code" — it's running the actual history scan and confirming it returns nothing, then separately confirming every credential the app depends on has never been exposed or has since been rotated. Founders who skip this step and rely on visual inspection of current files consistently miss exposures sitting in earlier commits, because visual inspection only ever looks at the current snapshot, which is exactly the one place a properly "cleaned up" secret won't be found.
 
+## Beyond API Keys: Other Secrets That Get Hardcoded Just as Often
+
+API keys get the most attention because they're the most common example, but they're far from the only credential type that ends up hardcoded in AI-generated code, and a narrow secrets audit that only checks for API-key-shaped strings misses real exposure sitting in the same codebase.
+
+**Database connection strings.** These often contain a full username and password combination in one line, and because they're needed early to get a prototype's database working at all, they're frequently pasted directly into a config file during initial setup and never revisited once the app is running.
+
+**Webhook signing secrets.** Used to verify that an incoming webhook — from Stripe, a messaging provider, or similar — genuinely came from that provider and wasn't spoofed by an attacker. If this secret is exposed, anyone can forge convincing-looking webhook events and trigger actions in your app that should have required real, verified events.
+
+**OAuth client secrets.** Used when your app lets users log in via Google, GitHub, or a similar provider — exposure here doesn't just risk your app's data, it can potentially be used to impersonate your application in the OAuth flow itself, a more consequential failure mode than most founders assume.
+
+**Encryption and signing keys.** Used to sign session tokens or encrypt sensitive stored data — if one of these is exposed, every token or piece of data it ever protected should be treated as compromised, not just going forward but retroactively, since an attacker with the key could have decrypted or forged anything protected by it at any point.
+
+A thorough audit checks for all four categories specifically, not just the API-key pattern most founders instinctively think of first, since each carries a genuinely different — and in some cases more severe — consequence if exposed.
+
 ## Closing This Gap as Part of Going From Vibe Coding to Production
 
 [LaunchStudio](https://launchstudio.eu/en/) runs a full secrets and credential audit — current codebase and complete git history — as a standard first step in every Launch Ready engagement, with any exposed credentials rotated as part of the process, backed by Manifera's security-conscious engineering culture shaped by clients like TNO.
@@ -98,6 +112,10 @@ It applies to both, though public repositories carry higher immediate risk since
 
 Automated secret scanning built into your CI pipeline, checking every commit before it's accepted rather than relying on a human to remember, is the most reliable ongoing prevention — catching the pattern the moment it's introduced, which is precisely what closes the loop that manual vigilance alone cannot reliably sustain over months of rapid AI-assisted iteration.
 
+### Do database credentials and webhook secrets need to be rotated the same way an exposed API key does?
+
+Yes — the same principle applies regardless of credential type: rotating the exposed secret at its source neutralizes the historical exposure, whether it's an API key, a database password, or a webhook signing secret, and should happen immediately upon discovery regardless of which category it falls into.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -141,6 +159,14 @@ Automated secret scanning built into your CI pipeline, checking every commit bef
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Automated secret scanning in a CI pipeline, checking every commit before it's accepted, is the most reliable ongoing prevention against relying on manual vigilance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do database credentials and webhook secrets need to be rotated the same way an exposed API key does?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — rotating the exposed secret at its source neutralizes the historical exposure regardless of credential type, whether an API key, database password, or webhook signing secret."
       }
     }
   ]

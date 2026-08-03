@@ -35,7 +35,7 @@ A security audit is one of the easiest production-readiness steps to defer, prec
 
 ## Why This Cost Is Genuinely Asymmetric, Not Just Theoretically Risky
 
-The framing "you should get a security audit because bad things could happen" undersells the actual asymmetry involved. A security audit costs a fixed, bounded, predictable amount — typically a few days of focused engineering time. A security incident costs an unbounded, unpredictable amount that scales with how much data was exposed, how many customers were affected, how long the exposure existed before discovery, and what regulatory or contractual obligations were triggered as a result. Comparing a bounded, known cost against an unbounded, unknown one is the actual comparison founders are making when they defer this step, whether or not they frame it that way.
+The framing "you should get a security audit because bad things could happen" undersells the actual asymmetry involved. A security audit costs a fixed, bounded, predictable amount — typically a few days of focused engineering time, scoped and quoted before work begins, with a known endpoint. A security incident costs an unbounded, unpredictable amount that scales with how much data was exposed, how many customers were affected, how long the exposure existed before discovery, and what regulatory or contractual obligations were triggered as a result — none of which is knowable in advance, and none of which has a ceiling the way a scoped audit's cost does. Comparing a bounded, known cost against an unbounded, unknown one is the actual comparison founders are making when they defer this step, whether or not they frame it that way, and it's a comparison that gets worse, not better, the longer a genuine gap sits undiscovered and the more customer data accumulates behind it.
 
 ## What the Cost Actually Breaks Down Into When an Incident Occurs
 
@@ -48,6 +48,18 @@ The framing "you should get a security audit because bad things could happen" un
 **Regulatory exposure**, particularly relevant for EU-based founders under GDPR obligations covered elsewhere in this series — a data exposure involving personal data can trigger specific notification and remediation obligations with their own compliance costs, independent of the technical fix.
 
 **Opportunity cost during incident response**, since the days or weeks spent on incident response, customer communication, and remediation are days not spent on product development, sales, or growth — a cost that's real but easy to undercount because it's not a line item on any invoice.
+
+## What a Focused Security Audit Actually Involves, Step by Step
+
+Part of why this cost feels avoidable is that "security audit" sounds vague and open-ended to a non-technical founder — an unbounded amount of work with an unclear endpoint. In practice, a focused audit on an AI-generated prototype follows a specific, bounded sequence:
+
+1. **Secrets and credential scan.** The complete git history, not just current files, gets scanned for exposed API keys, passwords, and tokens — the fastest check to run and, not coincidentally, one of the most common findings.
+2. **Authentication and authorization testing.** Every protected endpoint gets tested directly against the API, bypassing the interface entirely, to confirm the server independently verifies identity and role rather than trusting whatever the frontend claims.
+3. **Third-party integration review.** Each external service call — payment processor, email provider, AI model API — gets checked for how it behaves when that service is slow, unavailable, or returns an unexpected error.
+4. **Data handling review.** Where personal or sensitive data is stored, transmitted, and logged gets mapped, checking specifically for anything landing somewhere it shouldn't — an error log capturing a password, a response payload including more fields than the interface actually displays.
+5. **Findings report and remediation.** Every issue found gets documented with severity and a specific fix, and for a paid engagement, the fix itself gets implemented and re-verified before the audit is considered closed.
+
+This sequence is why a proactive audit is a fixed-cost, fixed-timeline engagement rather than an open-ended commitment — each step has a defined scope and a defined output, which is precisely the property a post-incident response, discussed below, structurally lacks.
 
 ## Why "Nothing Has Happened Yet" Isn't Evidence of Safety
 

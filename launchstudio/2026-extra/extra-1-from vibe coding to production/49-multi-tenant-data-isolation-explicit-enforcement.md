@@ -57,6 +57,20 @@ Beyond application-level filtering, more robust architectures enforce isolation 
 
 Every new feature that touches your data layer is a new opportunity for an isolation-filter to be missed, exactly the pattern covered in this series' guidance on growth-related risk — a feature added six months after your original architecture, by a developer or AI tool unaware of (or simply forgetting) the isolation convention, can silently reintroduce this exact risk even in a codebase that started with correct isolation.
 
+## A Practical Rollout Path: Moving From Application-Level Filtering to Database-Level Enforcement
+
+Most AI-generated multi-tenant applications start with application-level filtering by default, simply because that's the pattern an AI tool naturally produces when asked for a multi-tenant feature. Migrating to database-level enforcement doesn't require a rebuild, but it does benefit from a deliberate, staged approach rather than attempting it all at once:
+
+**Step 1: Audit every data access point against the specific test described above.** Before changing any enforcement mechanism, establish your actual current exposure — systematically attempting the isolation-bypass test across every endpoint that touches tenant-scoped data, documenting exactly which access points currently rely on application-level filtering alone.
+
+**Step 2: Enable database-level enforcement alongside, not instead of, existing filters.** Row-level security policies and similar database-level mechanisms can typically run alongside your existing application-level filters as a second, independent layer, meaning you don't need to remove or trust-fall away from your current filtering while the new enforcement is being verified.
+
+**Step 3: Verify the database-level enforcement actually blocks a deliberately malformed query.** The same adversarial test from Step 1, re-run once the database-level policy is in place, needs to confirm the new layer independently rejects the bypass attempt — not just that the policy exists, but that it structurally works.
+
+**Step 4: Treat any future schema or query changes as needing the same isolation test.** Once database-level enforcement is in place, it substantially reduces but doesn't entirely eliminate the need for ongoing vigilance — an aggregation feature like Sander's benchmarking addition, for instance, can still leak data indirectly even with solid row-level security on the underlying tables, since the leak happens in how results are aggregated and presented, not in whether raw rows are accessible.
+
+This staged approach lets an already-live product with paying customers migrate toward the stronger guarantee without a risky, all-at-once cutover, which matters specifically because a B2B SaaS product's multi-tenant isolation is exactly the kind of property you don't want to temporarily weaken while improving it.
+
 [LaunchStudio](https://launchstudio.eu/en/) verifies multi-tenant isolation as a dedicated, specific test for any B2B SaaS engagement, including recommending database-level enforcement where application-level filtering alone leaves too much room for a single missed check, backed by Manifera's engineering experience across production multi-tenant SaaS applications.
 
 [Get your multi-tenant isolation explicitly tested, not just assumed](https://launchstudio.eu/en/#calculator) — this is the one gap where the consequence is an entire customer's trust, not just one user's data.

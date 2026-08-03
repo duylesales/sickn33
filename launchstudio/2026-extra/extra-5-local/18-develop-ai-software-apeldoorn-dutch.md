@@ -1,91 +1,106 @@
 ---
-Titel: "AI-software ontwikkelen in Apeldoorn zonder helemaal opnieuw te beginnen"
+Titel: "AI-software ontwikkelen in Apeldoorn zonder vanaf nul te herstructureren"
 Trefwoorden: develop ai software, ai software development process, how to build ai software, ai app without rebuild, Apeldoorn
 Koperfase: Overweging
-Doelgroep: B (Technische solo-oprichter)
+Doelgroep: Technische solo-oprichter
 ---
-# AI-software ontwikkelen in Apeldoorn zonder helemaal opnieuw te beginnen
+
+# AI-software ontwikkelen in Apeldoorn zonder vanaf nul te herstructureren
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-software ontwikkelen in Apeldoorn zonder helemaal opnieuw te beginnen",
-  "description": "Een stapsgewijze aanpak voor oprichters in Apeldoorn om AI-software door te ontwikkelen tot een productierijp product zonder de bestaande AI-gegenereerde codebase weg te gooien.",
+  "headline": "AI-software ontwikkelen in Apeldoorn zonder vanaf nul te herstructureren",
+  "description": "Een stapsgewijze aanpak voor Apeldoornse oprichters om AI-software te ontwikkelen tot een productiegereed product zonder de bestaande, met AI gegenereerde codebase weg te gooien.",
   "author": { "@type": "Organization", "name": "LaunchStudio", "url": "https://launchstudio.eu/en/" },
   "publisher": { "@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com" },
   "datePublished": "2026-07-23",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://launchstudio.eu/en/blog/develop-ai-software-apeldoorn" }
 }
 </script>
-Elke oprichter die geprobeerd heeft AI-software voorbij de prototypefase te ontwikkelen, krijgt uiteindelijk hetzelfde slechte advies: begin opnieuw met een "echt" ontwikkelteam. Dat is in de meeste gevallen het verkeerde antwoord, en het is een bijzonder verkeerd antwoord voor de praktische, kostenbewuste zakencultuur die u in Apeldoorn aantreft. Hier is een stapsgewijze aanpak om AI-software te ontwikkelen tot iets productierijps, zonder weg te gooien wat al werkt.
 
-## Stap 1: scheid wat daadwerkelijk kapot is van wat gewoon onaf voelt
+Elke oprichter die heeft geprobeerd om AI-software te ontwikkelen voorbij de prototypefase krijgt uiteindelijk hetzelfde slechte advies: begin opnieuw met een "echt" ontwikkelingsteam. Het is in de meeste gevallen het verkeerde antwoord, en het is een bijzonder verkeerd antwoord voor de praktische, kostenbewuste zakelijke cultuur die u in Apeldoorn aantreft. Het advies komt meestal van iemand die nog nooit daadwerkelijk heeft gediagnosticeerd wat er mis is met de bestaande codebase — ze koppelen "met AI gegenereerd" automatisch aan "onbetrouwbaar" zonder te controleren of de specifieke problemen überhaupt structureel zijn. Dat zijn ze meestal niet. Hier is een stapsgewijze aanpak om AI-software te ontwikkelen tot iets wat productiegereed is, zonder weg te gooien wat al werkt.
 
-De neiging om te herbouwen komt meestal voort uit een vaag ongemak, niet uit een specifieke diagnose. Voordat u iets beslist, laat u een echte audit van uw AI-gegenereerde codebase uitvoeren — geen onderbuikgevoel, maar een daadwerkelijke technische review die authenticatie, databasebeveiliging, betaalintegratie en hostingconfiguratie dekt. De meeste oprichters ontdekken dat de frontend die ze met Lovable of Bolt hebben gebouwd, echt solide is; het is een specifieke, oplosbare set backend- en infrastructuurgaten die het ongemak veroorzaakt, niet de hele applicatie.
+## Stap 1: Scheid wat daadwerkelijk kapot is van wat alleen onvoltooid aanvoelt
 
-## Stap 2: los eerst de database- en authenticatielaag op
+Het instinct om opnieuw te bouwen komt meestal voort uit een vaag ongemak, en niet uit een specifieke diagnose. Voordat u iets beslist, laat u een echte audit uitvoeren van uw met AI gegenereerde codebase — geen onderbuikgevoel, maar een daadwerkelijke technische beoordeling die authenticatie, databasebeveiliging, betalingsintegratie en hostingconfiguratie omvat. De meeste oprichters ontdekken dat de frontend die ze met Lovable of Bolt hebben gebouwd oprecht solide is; het is een specifieke, herstelbare reeks van backend- en infrastructuurgaten die het ongemak veroorzaakt, en niet de gehele applicatie. Het onderscheid is financieel net zo belangrijk als technisch: een gerichte fix van drie of vier specifieke gaten kost mogelijk een paar duizend euro en een week werk, terwijl een offerte voor een volledige heropbouw van een traditioneel bureau vaak begint bij € 30.000+ en maanden doorloopt — voor een resultaat dat in de meeste gevallen functioneel vergelijkbaar is met wat een gedegen audit en fix zou hebben opgeleverd voor een fractie van die kosten.
 
-Deze twee gebieden veroorzaken de meeste schade als ze niet worden aangepakt, en ze zijn zelden zichtbaar zonder een bewuste blik. Row-level security op uw database, server-side afdwinging van authenticatie en rollen, en correcte sessieafhandeling zijn fundamenteel — vrijwel alles in uw app is ervan afhankelijk dat deze correct zijn. Als u AI-software verder ontwikkelt bovenop een wankele auth- of databaselaag, stapelt u het probleem op met elke nieuwe functie.
+## Stap 2: Herstel eerst de database- en authenticatielaag
 
-## Stap 3: breng betalingen daadwerkelijk in productieklare vorm
+Deze twee gebieden veroorzaken de meeste schade als ze niet worden aangepakt, en ze zijn zelden zichtbaar zonder een bewuste blik. Row-level security op uw database, server-side handhaving van authenticatie en rollen, en deugdelijke sessie-afhandeling zijn fundamenteel — bijna alles in uw app is ervan afhankelijk dat deze punten correct zijn. Als u AI-software verder ontwikkelt op een wankele authenticatie- of databaselaag, vergroot u het probleem bij elke nieuwe functie.
 
-Als uw AI-gegenereerde app betalingen bevat, is dit waar "het werkt in tests" het vaakst afwijkt van de realiteit. Test-mode Stripe-sleutels die per ongeluk actief zijn gebleven, ontbrekende afhandeling voor mislukte afschrijvingen of geschillen, en het ontbreken van webhook-verificatie komen vaak voor in AI-gegenereerde betaalflows. Alleen deze stap bepaalt al of u klanten na lancering daadwerkelijk betrouwbaar in rekening kunt brengen.
+## Stap 3: Breng betalingen in een echt productiegereed vorm
 
-## Stap 4: zet hosting en monitoring op die niet stilletjes falen
+Als uw met AI gegenereerde app betalingen bevat, is dit het punt waar "het werkt in de testfase" het vaakst afwijkt van de werkelijkheid. Geheime Stripe-sleutels in testmodus die per ongeluk actief zijn gelaten, ontbrekende afhandeling voor mislukte afschrijvingen of geschillen, en het ontbreken van webhook-verificatie zijn gebruikelijk in met AI gegenereerde betalingsstromen. Deze stap alleen al bepaalt of u klanten betrouwbaar kunt belasten zodra u lanceert.
 
-AI-tools configureren zelden standaard productierijpe hosting — veel oprichters draaien op een gratis tier die niet gebouwd is voor echt verkeer, zonder monitoring om hen te waarschuwen wanneer iets misgaat. Vóór lancering verdient dit een echte blik: kan uw hosting een verkeerspiek aan, en weet u binnen enkele minuten of er iets uitvalt, in plaats van het te horen via een boze klant-e-mail?
+## Stap 4: Richt hosting en monitoring in die niet stilletjes uitvallen
 
-## Stap 5: haal engineeringondersteuning erbij zonder eigenaarschap te verliezen
+AI-tools configureren standaard zelden productiegereelde hosting — veel oprichters draaien op een gratis pakket dat niet gebouwd is voor echt verkeer, zonder monitoring om hen te waarschuwen als er iets breekt. Vóór de lancering heeft dit een deugdelijke blik nodig: kan uw hosting een verkeerspiek aan, en weet u binnen enkele minuten of er iets uitvalt, in plaats van dat u erachter komt via een boze e-mail van een klant? Deze stap is vaak het goedkoopst om te herstellen en het meest consistent overgeslagen, juist omdat een uitrol op een gratis pakket niet te onderscheiden voelt van een productie-uitrol, totdat er daadwerkelijk echt verkeer binnenkomt en er iets onder bezwijkt.
 
-Geen van de bovenstaande stappen vereist het weggooien van uw AI-gegenereerde frontend. Dit is het deel dat Apeldoornse oprichters — vaak bouwend voor verzekeringen, logistiek en andere operationeel ingestelde lokale sectoren, gezien de langdurige band van de stad met Achmea en een bredere verzekerings- en dienstensector — instinctief goed aanvoelen: ze willen een oplossing, geen filosofieverandering. Apeldoorn ligt in de provincie Gelderland, en de zakencultuur er beloont praktische, kosteneffectieve oplossingen boven bouwacties vanaf nul die maanden duren en tienduizenden euro's kosten.
+## Stap 5: Schakel engineering-ondersteuning in zonder eigenaarschap te verliezen
 
-LaunchStudio brengt Manifera's engineering op zakelijk niveau specifiek voor deze stap naar de oprichterseconomie. Onze engineers, onderdeel van een team verspreid over kantoren waaronder onze hub in Singapore aan Tras Street, beoordelen uw bestaande AI-gegenereerde codebase en implementeren precies wat er ontbreekt uit stap 1 tot en met 4 — zonder de interface te herbouwen die een oprichter al tot leven heeft gebracht. U kunt ons proces in detail bekijken op onze procespagina, en het team voor maatwerk softwareontwikkeling van Manifera biedt een blik op hoe hetzelfde team grotere, doorlopende projecten scoped wanneer de behoeften van een oprichter groter worden dan een enkele oplossing.
+Geen van de bovenstaande stappen vereist het weggooien van uw met AI gegenereerde frontend. Dit is het gedeelte dat Apeldoornse oprichters — die vaak bouwen voor de verzekeringssector, logistiek en andere operationeel ingestelde lokale industrieën, gezien de lange verbondenheid van de stad met Achmea en een bredere verzekerings- en dienstensector — doorgaans instinctief goed aanpakken: ze willen een fix, en geen verandering van filosofie. Apeldoorn ligt in de provincie Gelderland, en haar zakelijke cultuur, gevormd door decennia aan werkgelegenheid in de verzekerings- en financiële dienstverlening rond de Kanaalzone en het zakendistrict van de stad, beloont praktische, kosteneffectieve oplossingen boven heropbouwen vanaf nul die maanden duren en tientallen duizenden euro's kosten. Een oprichter die een verzekeringsgerelateerde tool pitcht bij een klant die zijn hele carrière bij een bedrijf als Achmea heeft gewerkt, weet instinctief dat "we hebben de oude versie weggegooid en zijn opnieuw begonnen" geen zin is die vertrouwen inboezemt — gerichte, goed gedocumenteerde herstelwerkzaamheden zijn dat wel.
+
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de oprichters-economie specifiek voor deze stap. Onze engineers, onderdeel van een team verspreid over kantoren waaronder onze hub aan Tras Street in Singapore, beoordelen uw bestaande met AI gegenereerde codebase en implementeren precies wat er ontbreekt in de stappen 1 tot en met 4 — zonder de interface te herbouwen die een oprichter al tot leven heeft gebracht. U kunt ons proces in detail bekijken op onze procespagina, en het custom software development team van Manifera biedt een overzicht van hoe hetzelfde team grotere, doorlopende projecten scoped wanneer de behoeften van een oprichter verder groeien dan een enkele fix.
+
+## Een zesde stap die de meeste oprichters overslaan: De fix deugdelijk budgetteren
+
+Stappen 1 tot en met 5 vertellen u wat u moet herstellen. Wat oprichters vervolgens de das omdoet, is het inschatten van wat het herstel daadwerkelijk zou moeten kosten — en die inschatting is waar het advies om "opnieuw te beginnen" meestal weer de kop opsteekt, omdat een vaag gevoel van "dit zou wel eens veel werk kunnen zijn" wordt afgerond naar "misschien moet ik gewoon opnieuw bouwen."
+
+**Een paar zaken die het waard zijn om te weten voordat u een offerte opvraagt:**
+
+- **Een gerichte fix wordt geprijsd op basis van omvang, en niet op basis van de grootte van uw hele codebase.** Het herstellen van authenticatie, databasebeveiliging en betalingslogica raakt een specifieke, afgebakende reeks bestanden — het vereist geen prijsstelling gebaseerd op uw gehele applicatie op de manier waarop een offerte voor een volledige heropbouw dat doorgaans wel doet.
+- **Stel elke offerte die u ontvangt één directe vraag: vereist dit het aanraken van mijn frontend?** Als het antwoord ja is voor een fix die fundamenteel gaat over backend-beveiliging of infrastructuur, is dat een signaal dat de offerte mogelijk is ingestoken als een vermomde heropbouw.
+- **Prijsstelling met een vaste omvang beschermt u tegen de meest voorkomende kostenoverschrijding in softwarewerk: scope creep tijdens het traject.** Een bureau dat op uurbasis rekent voor een traject met een open einde kan uiteindelijk meer kosten om het probleem te diagnosticeren dan LaunchStudio rekent om het te diagnosticeren én te herstellen.
+- **Vergelijk de kosten van het herstel met uw daadwerkelijke omzetplanning, en niet met de absolute hoogte van het bedrag.** Een fix van € 1.250 die problemen zoals in het RouteWise-voorbeeld binnen een week oplost is een heel andere financiële beslissing dan een offerte voor een heropbouw van € 35.000 die drie maanden duurt — nog los van de omzet die tijdens die drie maanden verloren gaat.
+
+Het goed aanpakken van deze stap is vaak wat een oprichter die een herstelbaar product fixt scheidt van iemand die een werkend bedrijf sloopt vanwege een beheersbaar technisch gat.
 
 ## Echt voorbeeld
 
 ### Een Apeldoornse oprichter ontwikkelt zijn AI-software op de juiste manier — na het bijna verkeerd te hebben gedaan
 
-Joris Mulder, gevestigd in Apeldoorn, bouwde RouteWise, een aan verzekeringen gerelateerde tool die kleine wagenparkbeheerders helpt bij het bijhouden van voertuiggebruik voor op gebruik gebaseerde verzekeringsprijzen, met v0 voor de interface gekoppeld aan een custom backend. Na zes weken traag, frustrerend vooruitgang boeken bij het zelf toevoegen van productiefuncties, was Joris klaar om het project te schrappen en opnieuw te beginnen met een offerte van een traditioneel ontwikkelbureau van € 35.000.
+Joris Mulder, gevestigd in Apeldoorn, bouwde RouteWise — een verzekeringsgerelateerde tool die kleine wagenparkbeheerders helpt voertuiggebruik bij te houden voor op gebruik gebaseerde verzekeringspremies — met behulp van v0 voor de interface gekoppeld aan een eigen backend. Na zes weken trage, frustrerende vooruitgang bij het zelf proberen toe te voegen van productiefuncties, was Joris klaar om het project te schrappen en opnieuw te beginnen met een offerte van € 35.000 van een traditioneel ontwikkelbureau.
 
-Voordat hij zich vastlegde, bracht hij RouteWise naar LaunchStudio voor een audit. Onze review vond dat de daadwerkelijke problemen beperkt waren: de voertuigtrackingdata was niet correct geïndexeerd, wat trage queries veroorzaakte die aanvoelden als bredere instabiliteit; API-sleutels voor de kaartendienst waren client-side blootgesteld; en er was geen rate limiting, wat betekende dat één storend apparaat de database kon overspoelen met verzoeken. Niets hiervan vereiste een herbouw. We indexeerden de database correct, verplaatsten de aanroepen naar de kaarten-API naar een beveiligde backend-proxy, en implementeerden rate limiting per apparaat.
+Voordat hij zich vastlegde, bracht hij RouteWise naar LaunchStudio voor een audit. Onze beoordeling wees uit dat de daadwerkelijke problemen beperkt waren: de voertuigvolgdata was niet deugdelijk geïndexeerd, wat leidde tot trage query's die voelden als algehele instabiliteit; API-sleutels voor de kaartdienst stonden aan de clientzijde blootgesteld; en er was geen rate limiting, wat betekende dat een enkel apparaat met storing de database kon overspoelen met verzoeken. Niets hiervan vereiste een heropbouw. We hebben de database deugdelijk geïndexeerd, de API-calls voor de kaarten verplaatst naar een beveiligde backend-proxy, en rate limiting per apparaat geïmplementeerd.
 
-**Resultaat:** RouteWise verwerkt nu trackingdata van meer dan 40 wagenparkvoertuigen met querytijden die met ruwweg 90% zijn verkort, tegen een fractie van de herbouwofferte die Joris overwoog.
+**Resultaat:** RouteWise verwerkt nu volgdata van meer dan 40 wagenparkvoertuigen met querytijden die met ongeveer 90% zijn verminderd, tegen een fractie van de heropbouwofferte die Joris had overwogen.
 
-> *"Ik was op één handtekening na van het betalen van € 35.000 om iets te herbouwen dat drie specifieke, oplosbare problemen had. LaunchStudio vond ze binnen een week voor een fractie van dat bedrag."*
-> — **Joris Mulder, oprichter, RouteWise (Apeldoorn)**
+> *"Ik was één handtekening verwijderd van het betalen van € 35.000 om iets te herbouwen dat drie specifieke, herstelbare problemen had. LaunchStudio vond ze in een week voor een fractie van dat bedrag."*
+> — **Joris Mulder, Oprichter, RouteWise (Apeldoorn)**
 
-**Kosten en tijdlijn:** € 1.250 (databaseindexering, beveiliging API-sleutels, rate limiting) — voltooid in 6 werkdagen.
+**Kosten & Doorlooptijd:** € 1.250 (database-indexering, API-sleutelbeveiliging, rate limiting) — afgerond in 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Moet ik mijn AI-gegenereerde app helemaal opnieuw bouwen om deze productierijp te maken?
-In de meeste gevallen niet. Een degelijke audit vindt doorgaans een specifieke, oplosbare set gaten in databasebeveiliging, authenticatie, betalingen of hosting — geen reden om een werkende frontend weg te gooien.
+### Moet ik mijn met AI gegenereerde app vanaf nul herbouwen om hem productiegereed te maken?
+In de meeste gevallen niet. Een deugdelijke audit vindt doorgaans een specifieke, herstelbare reeks gaten in databasebeveiliging, authenticatie, betalingen of hosting — geen reden om een werkende frontend weg te gooien.
 
-### Wat is de eerste stap om AI-software te ontwikkelen tot iets lanceringsklaars?
-Begin met een audit die echte technische problemen scheidt van vaag ongemak over de codebase. Dit vertelt u precies wat er opgelost moet worden voordat u zich aan een grotere beslissing verbindt.
+### Wat is de eerste stap om AI-software te ontwikkelen tot iets wat klaar is voor lancering?
+Begin met een audit die echte technische problemen scheidt van vaag ongemak over de codebase. Dit vertelt u precies wat hersteld moet worden voordat u zich aan een grotere beslissing verbindt.
 
 ### Is Apeldoorn een typische locatie voor de technische klanten van LaunchStudio?
-De praktische, servicegerichte zakencultuur van Apeldoorn in Gelderland — mede gevormd door de geschiedenis van de verzekeringssector — geeft doorgaans de voorkeur aan gerichte oplossingen boven dure herbouwacties, wat goed past bij de werkwijze van LaunchStudio, al bedienen wij oprichters landelijk.
+Apeldoorn's praktische, op dienstverlening gerichte zakelijke cultuur in Gelderland — deels gevormd door haar historie in de verzekeringssector — geeft doorgaans de voorkeur aan gerichte fixes boven dichte heropbouwen, wat goed past bij hoe LaunchStudio werkt.
 
 ### Hoe verschilt LaunchStudio van een offerte van een traditioneel ontwikkelbureau?
-LaunchStudio werkt met een vast bereik en vaste prijzen tussen € 800 en € 7.500, doorgaans opgeleverd in 1 tot 3 weken, specifiek gericht op het dichten van productiegaten in plaats van open-einde-herbouwacties — ruwweg 20% van wat een traditioneel bureau voor hetzelfde rekent.
+LaunchStudio werkt met een vaste omvang en vaste prijzen tussen € 800 en € 7.500, doorgaans geleverd in 1–3 weken, specifiek gericht op het dichten van productiegaten in plaats van heropbouwen met een open einde — ongeveer 20% van wat een traditioneel bureau rekent.
 
 ### Wie voert het engineeringwerk achter LaunchStudio daadwerkelijk uit?
-Manifera, het moederbedrijf van LaunchStudio, brengt meer dan 120 engineers en meer dan 11 jaar productie-ervaring naar elk traject, hetzelfde team dat meer dan 160 projecten heeft opgeleverd voor zakelijke klanten zoals Vodafone en TNO.
+Manifera, de moedermaatschappij van LaunchStudio, brengt meer dan 120 engineers en ruim 11 jaar productie-ervaring in bij elk traject, hetzelfde team dat meer dan 160 projecten heeft opgeleverd voor enterprise-klanten als Vodafone en TNO.
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Do I need to rebuild my AI-generated app from scratch to make it production ready?", "acceptedAnswer": { "@type": "Answer", "text": "In most cases, no. A proper audit typically finds a specific, fixable set of gaps in database security, authentication, payments, or hosting — not a reason to discard a working frontend." } },
-    { "@type": "Question", "name": "What's the first step to develop AI software into something launch-ready?", "acceptedAnswer": { "@type": "Answer", "text": "Start with an audit that separates real technical issues from vague discomfort about the codebase, to establish exactly what needs fixing before committing to any larger decision." } },
-    { "@type": "Question", "name": "Is Apeldoorn a typical location for LaunchStudio's technical clients?", "acceptedAnswer": { "@type": "Answer", "text": "Apeldoorn's practical, services-oriented business culture in Gelderland tends to favor targeted fixes over expensive rebuilds, which fits well with how LaunchStudio works, though it serves founders nationwide." } },
-    { "@type": "Question", "name": "How is LaunchStudio different from a traditional development agency quote?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio works at fixed scope and fixed pricing between €800 and €7,500, typically delivered in 1–3 weeks, roughly 20% of what a traditional agency charges." } },
-    { "@type": "Question", "name": "Who actually does the engineering work behind LaunchStudio?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera, LaunchStudio's parent company, brings 120+ engineers and 11+ years of production experience, the same team that has delivered 160+ projects for enterprise clients like Vodafone and TNO." } }
+    { "@type": "Question", "name": "Moet ik mijn met AI gegenereerde app vanaf nul herbouwen om hem productiegereed te maken?", "acceptedAnswer": { "@type": "Answer", "text": "In de meeste gevallen niet. Een deugdelijke audit vindt doorgaans specifieke, herstelbare gaten in beveiliging, authenticatie, betalingen of hosting." } },
+    { "@type": "Question", "name": "Wat is de eerste stap om AI-software te ontwikkelen tot iets wat klaar is voor lancering?", "acceptedAnswer": { "@type": "Answer", "text": "Begin met een audit die echte technische problemen scheidt van vaag ongemak over de codebase." } },
+    { "@type": "Question", "name": "Is Apeldoorn een typische locatie voor de technische klanten van LaunchStudio?", "acceptedAnswer": { "@type": "Answer", "text": "Apeldoorn's praktische cultuur geeft de voorkeur aan gerichte fixes boven dichte heropbouwen, wat goed past bij LaunchStudio." } },
+    { "@type": "Question", "name": "Hoe verschilt LaunchStudio van een offerte van een traditioneel ontwikkelbureau?", "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio werkt met een vaste omvang en vaste prijzen tussen € 800 en € 7.500 (1-3 weken), ongeveer 20% van bureauprijzen." } },
+    { "@type": "Question", "name": "Wie voert het engineeringwerk achter LaunchStudio daadwerkelijk uit?", "acceptedAnswer": { "@type": "Answer", "text": "Manifera brengt meer dan 120 engineers en ruim 11 jaar ervaring in, hetzelfde team achter 160+ enterprise-projecten." } }
   ]
 }
 </script>

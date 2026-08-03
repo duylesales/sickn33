@@ -35,7 +35,7 @@ Getting the best of AI coding when inheriting a client's existing project means 
 
 ## What's Almost Always Worth Keeping
 
-The overall structure, the core feature logic, and the general approach an AI coding tool took to building a client's product is, in the large majority of cases, genuinely solid and worth preserving entirely — rebuilding from scratch, as LaunchStudio's own philosophy of "we keep your frontend, we fix only what's needed" reflects, wastes the real value already created and introduces unnecessary risk of its own.
+The overall structure, the core feature logic, and the general approach an AI coding tool took to building a client's product is, in the large majority of cases, genuinely solid and worth preserving entirely — rebuilding from scratch, as LaunchStudio's own philosophy of "we keep your frontend, we fix only what's needed" reflects, wastes the real value already created and introduces unnecessary risk of its own. For RitDirect specifically, that meant the booking flow, the driver-matching logic, and the entire customer-facing interface Saskia's client had already built stayed completely untouched — none of it needed to change, and none of it did. The work that actually mattered was narrow and specific: a handful of configuration values inside an authentication system that otherwise worked exactly as intended.
 
 ## What Specifically Needs a Second Look: Cookie Security Flags
 
@@ -60,6 +60,30 @@ A client relying on an agency's launch review to be genuinely comprehensive expe
 Manifera's session security reviews for partner engagements are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, with NDA-covered work coordinated from the Amsterdam headquarters at Herengracht 420.
 
 [Freelancer or small studio? We'll be the engineering team behind your brand](https://launchstudio.eu/en/#contact).
+
+## The Three Cookie Flags, Explained in Plain Terms
+
+For a founder or agency owner without a deep security background, "cookie flags" can sound abstract enough to skip past. Broken down individually, each one is a specific, understandable answer to a specific, understandable question.
+
+**HttpOnly — can JavaScript running on the page read this cookie?**
+
+Without this flag set, any script running in the browser — including one injected through an entirely separate vulnerability elsewhere in the app — can read the session cookie directly and send its value somewhere else. With it set, the cookie is only ever sent automatically by the browser to the server; no script on the page, malicious or otherwise, can read its contents at all.
+
+**Secure — will this cookie ever be sent over an unencrypted connection?**
+
+Without this flag, the cookie can technically be transmitted over a plain, unencrypted HTTP connection if one ever occurs — a misconfigured redirect, a stray link, a network in the middle intercepting traffic. With it set, the browser refuses to send the cookie unless the connection is encrypted, closing off that specific transmission path entirely.
+
+**SameSite — will this cookie be sent along with a request originating from a different site?**
+
+Without an appropriate SameSite setting, a malicious site a user visits in another tab can potentially trigger requests that carry the victim's session cookie along to your application without their knowledge — a pattern called cross-site request forgery. A properly configured SameSite value restricts exactly when the cookie gets attached to a cross-site request, closing off a specific abuse path.
+
+**Why AI coding tools often get the cookie itself right but skip the flags**
+
+Setting a cookie that successfully keeps a user logged in only requires a name and a value — the browser accepts and uses it either way. The three flags above are optional parameters that change the cookie's behavior in situations a straightforward "keep the user logged in" description never specifically calls for, which is exactly why a working login and an unflagged, exposed cookie can coexist without either one looking broken.
+
+**A five-minute way to check your own app**
+
+Open your browser's developer tools, go to the Application or Storage tab, find your session cookie, and look at its flags directly — most modern browsers display HttpOnly, Secure, and SameSite as visible columns right next to the cookie itself, no technical background required to at least see whether they're set.
 
 ## Real example
 

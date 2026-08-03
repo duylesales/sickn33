@@ -59,6 +59,20 @@ A password reset email that lands in spam is functionally identical, from the af
 
 Beyond the SPF, DKIM, and DMARC records themselves, proper configuration includes using a dedicated sending subdomain (protecting your primary domain's reputation from any transactional email issues), monitoring bounce and complaint rates through your email provider's dashboard, and, ideally, alerting if delivery failure rates spike unexpectedly — extending the observability practices covered elsewhere in this series specifically to email delivery.
 
+## How to Actually Test Deliverability Before Launch, Not After
+
+Testing "does the email arrive in my own inbox" tells you almost nothing, for the reason described above — your own account gets treated leniently precisely because it isn't the pattern a spam filter is watching for. A genuinely useful pre-launch test looks different:
+
+**Use a dedicated deliverability testing tool.** Services like mail-tester.com or GlockApps send a test message from your actual sending setup and return a specific score along with exactly which checks failed — missing SPF, misconfigured DKIM, a DMARC policy that doesn't exist — rather than a vague pass or fail, giving you a concrete list to fix rather than a guess.
+
+**Send to a seed list across multiple providers**, not just your own inbox — a handful of test accounts on Gmail, Outlook, and one or two other major providers, checking specifically whether the message lands in the primary inbox, a promotions tab, or spam on each one, since filtering behavior genuinely differs across providers and a result on Gmail alone doesn't tell you what Outlook will do.
+
+**Check your domain's reputation directly**, using a tool like Google Postmaster Tools (free, and specifically built for exactly this) if your recipients are meaningfully Gmail-heavy, which shows spam complaint rates and delivery errors at the domain level, catching reputation issues before they've fully tanked your inbox placement.
+
+**Re-test after any change to your sending domain, provider, or volume pattern.** Deliverability isn't a one-time setup verified once and forgotten — a new sending domain starts with no reputation at all and needs to build it gradually, and a sudden volume spike (a marketing push, a viral moment) can itself trigger stricter filtering if your domain's reputation hasn't yet earned trust at that new volume.
+
+None of this requires deep email infrastructure expertise — it requires running the right test instead of the test that happens to be easiest to run, which is precisely the test Emma's own development process never surfaced.
+
 [LaunchStudio](https://launchstudio.eu/en/) configures proper email deliverability infrastructure — SPF, DKIM, DMARC, and dedicated sending domains — as a standard part of every Launch & Grow engagement, backed by Manifera's experience integrating transactional email reliably across numerous production SaaS applications.
 
 [Confirm your emails actually reach inboxes, not just that they technically send](https://launchstudio.eu/en/#calculator) — this gap costs you customers who never generate a support ticket telling you why.

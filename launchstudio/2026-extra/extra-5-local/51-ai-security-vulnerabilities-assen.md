@@ -34,11 +34,25 @@ Independent research puts the number at 45% of AI-generated code containing expl
 
 Assen isn't a typical "startup city" narrative — it's the provincial capital of Drenthe, known first for motorsport and increasingly for logistics and data infrastructure as distribution centers move into the region. Founders building here are often solving practical, operational problems: scheduling, fleet coordination, event logistics tied to the TT calendar, supplier data. That kind of software handles exactly the sensitive data — routes, contracts, customer records — that AI security vulnerabilities put at risk.
 
-Because the tooling ecosystem in Assen is thinner than in Amsterdam or Utrecht, technical founders here are more likely to be flying solo, without a CTO or security-minded co-founder to catch what the AI tool missed. That's precisely the profile of founder LaunchStudio built its process for: someone who can build fast, but wants a second set of engineering eyes before real users and real payment data touch the product. LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience across 160+ delivered projects.
+Because the tooling ecosystem in Assen is thinner than in Amsterdam or Utrecht, technical founders here are more likely to be flying solo, without a CTO or security-minded co-founder to catch what the AI tool missed. There's no equivalent of an Amsterdam Sciencepark meetup happening down the street where a founder could casually ask another engineer to glance at their Supabase policies over coffee. Founders working out of the co-working space near Assen's Havenkwartier, or simply from a home office in Kloosterveen, are often the only technical person in the room for their entire build — which means the AI tool's blind spots become the product's blind spots, with nobody positioned to catch the difference. That's precisely the profile of founder LaunchStudio built its process for: someone who can build fast, but wants a second set of engineering eyes before real users and real payment data touch the product. LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience across 160+ delivered projects.
 
 ## What a Real Security Fix Looks Like
 
 Fixing AI security vulnerabilities isn't a rewrite. It's a structured audit: checking every database table for row-level security policies, moving every secret key server-side, re-verifying every permission check on the backend instead of trusting the frontend, and testing authentication edge cases the AI tool never considered — expired sessions, role escalation, direct object references. LaunchStudio's engineers, working out of the Amsterdam office at Herengracht 420, run this exact audit as the first step before any Bolt, Lovable, or Cursor prototype goes live. You can see how the process is structured on the [LaunchStudio process page](https://launchstudio.eu/en/#process), and Manifera's broader engineering track record is documented on its [project portfolio](https://www.manifera.com/portfolio/).
+
+## A Practical Self-Audit Before You Call Anyone
+
+Not every founder needs to wait for a formal engineering review to start finding AI security vulnerabilities. A handful of checks can be run in an afternoon, using nothing more than your own database dashboard and a browser's developer tools. Running through them before a demo, a trial signup, or a self-funded launch won't replace a thorough audit, but it catches the most damaging and most common issues early enough to fix cheaply, instead of after a stranger has already found them for you.
+
+**Five checks worth an hour of your time**
+
+- Open your database provider's dashboard and confirm row-level security is enabled on every table that stores user data — not just the obvious ones like a users table, but bookings, messages, and anything referenced by an ID in a URL
+- Open your browser's dev tools, go to the Network tab, and reload your app — search the loaded JavaScript for anything that looks like a secret key, such as a string starting with `sk_` or a raw database connection string
+- Log in as two different test accounts in two separate browser tabs, then try changing an ID in one account's URL to match a resource that belongs to the other account
+- Check whether any admin or internal-only route is reachable just by typing its URL while logged in as a normal user
+- Test what happens with an expired or invalid session — does the app silently let the request through, or does it correctly reject it
+
+Finding a problem on this list is common, not embarrassing — it's the default state of most AI-generated codebases before anyone looks at them closely. What matters is what happens next: whether the gap gets closed before real users and real data are on the other side of it, or after. A founder who runs this self-audit and finds nothing wrong still benefits from a deeper, more thorough pass, because dev-tools checks catch the obvious issues, not the subtler ones a determined attacker would go looking for.
 
 ## Real example
 

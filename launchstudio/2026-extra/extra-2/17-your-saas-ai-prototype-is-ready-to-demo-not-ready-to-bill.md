@@ -45,6 +45,8 @@ A SaaS AI prototype demoing a subscription flow — sign up, pick a plan, enter 
 
 Testing a plan upgrade mid-cycle requires deliberately constructing a multi-step scenario — sign up, wait or simulate time passing, then switch plans — which is considerably more setup than testing a single clean signup. Founders demoing their own product to themselves rarely go through the trouble of simulating a multi-week billing cycle just to check the upgrade path, so it often goes untested until an actual paying customer does exactly that.
 
+It also rarely comes up in early customer conversations, since a founder pitching a prospect focuses naturally on getting them to sign up at all, not on walking through what happens if they later change their mind about which plan they picked. By the time upgrade and downgrade paths matter to any actual customer, the product has usually already been demoed dozens of times using only the single, clean signup path — meaning the untested scenario is also the one most likely to be advertised confidently as a feature, precisely because nobody has yet had a reason to doubt it.
+
 ## Why This Gap Specifically Damages Trust When It Surfaces
 
 Unlike a UI bug, a billing miscalculation is a direct, unambiguous claim on a customer's money — and getting it wrong, whether by overcharging or undercharging, is the kind of mistake that erodes a customer's confidence in a product far more than an unrelated cosmetic issue would, precisely because it touches the one thing customers are least willing to tolerate ambiguity about.
@@ -56,6 +58,35 @@ Fixing plan-change billing logic means explicitly testing the mid-cycle upgrade 
 Manifera's billing-logic engineering work is delivered through the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations run through the Amsterdam headquarters at Herengracht 420.
 
 [Get your payment flow tested against real-world failure conditions, not just the happy path](https://launchstudio.eu/en/#calculator).
+
+## The Billing Scenarios Worth Testing Before You Charge a Real Customer
+
+Proration is the most common gap, but it's one of several billing scenarios that rarely get exercised during a founder's own demo-focused testing. A thorough pass before real money is involved covers each of these deliberately.
+
+**Test these transitions explicitly, not just fresh signups**
+
+1. **Upgrade mid-cycle** — the scenario covered above; confirm the customer is charged a fair, prorated amount, not the full new price on top of what they already paid
+2. **Downgrade mid-cycle** — confirm the customer receives an appropriate credit or adjustment, not simply a lower price starting immediately with no accounting for the difference already paid
+3. **Cancel, then resubscribe within the same billing period** — does the system correctly recognize a returning customer's prior payment, or does it charge them again for time already covered?
+4. **A failed payment retry** — when a card is declined and the payment provider automatically retries days later, does the application correctly reflect a "past due" state in the meantime, or does it silently continue granting full access as if nothing happened?
+5. **Trial-to-paid conversion** — does the first real charge happen on the correct date, for the correct amount, and does a customer who cancels during the trial genuinely avoid being charged at all?
+6. **A plan change combined with a coupon or discount code** — does the discount correctly carry forward, get recalculated, or intentionally expire, and is that behavior what you actually intended?
+
+**Use your payment provider's test mode deliberately, not just once**
+
+Both Stripe and Mollie support test-mode clocks or simulated time advancement specifically so these multi-step, time-dependent scenarios can be tested without waiting for a real billing cycle to elapse — a feature many founders never discover simply because their own testing never needed to simulate two weeks passing.
+
+**Decide, in writing, what "fair" means for your product before a customer forces the question**
+
+Proration logic involves genuine judgment calls — does a downgrade take effect immediately or at the next renewal, is a partial-month credit applied to future invoices or refunded directly? There's no universally correct answer, but deciding deliberately, ahead of time, and testing against that decision is very different from discovering the answer reactively when a confused customer emails asking why their bill looks wrong.
+
+**Log every billing decision, not just the outcome**
+
+When a proration calculation runs, logging the inputs (days remaining, old plan price, new plan price) alongside the resulting charge makes a future billing dispute a five-minute log lookup instead of a guessing exercise — a small addition that pays for itself the first time a customer asks "why was I charged this amount."
+
+**Revisit these scenarios again after every pricing change**
+
+Introducing a new tier, changing an existing tier's price, or adding a usage-based add-on component each reopens the same set of questions for the newly affected transitions — a billing system tested thoroughly against today's pricing structure gives no guarantee about a pricing structure introduced six months later unless the same scenarios get retested against it specifically.
 
 ## Real example
 

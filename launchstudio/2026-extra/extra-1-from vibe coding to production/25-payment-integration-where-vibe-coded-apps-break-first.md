@@ -55,6 +55,18 @@ Testing a payment flow successfully a handful of times confirms the happy path w
 
 Beyond the initial charge flow: reliable webhook handling with proper verification of the webhook's authenticity (confirming it genuinely came from your payment provider, not a spoofed request); idempotency keys ensuring a retried request doesn't double-charge; and explicit handling for partial failure states, so a payment success that's followed by a downstream failure gets flagged for reconciliation rather than silently leaving a customer charged without service.
 
+## Refunds, Disputes, and Chargebacks: The Flow Nobody Builds Until They Need It
+
+A demo scenario naturally exercises "customer pays successfully." It essentially never exercises "customer wants their money back" or "customer's bank disputes the charge," which means these flows are frequently entirely unbuilt in an AI-generated prototype, not merely under-tested — there's often no code path for them at all until a founder is handling one manually, under time pressure, for the first time.
+
+**Refunds initiated from your side.** A customer asks for a refund; your payment provider's dashboard can process it directly, but if your application doesn't listen for the resulting webhook and update its own records accordingly, your database now disagrees with reality — showing an active subscription or a completed order for something that's actually been refunded, a mismatch that tends to surface later as a confused support conversation rather than immediately.
+
+**Disputes and chargebacks initiated by the customer's bank.** These arrive as a specific webhook event, days or weeks after the original charge, and typically require a response within a fixed window if you intend to contest them. An integration with no handling for this event type simply never surfaces the dispute to you until your payment provider's own dashboard happens to be checked manually, which risks missing the response window entirely and losing the dispute by default.
+
+**Subscription cancellations and their downstream effects.** Canceling a subscription in your payment provider is one event; correctly revoking the customer's access in your own application on the right date (immediately, or at the end of the current billing period, depending on your policy) is a separate piece of logic that has to explicitly exist and stay in sync with the provider's own cancellation timing.
+
+None of these require exotic engineering — each is a specific webhook event your integration should already be listening for, paired with the corresponding update to your own application state. The gap isn't difficulty; it's that a demo-driven build process has no natural reason to generate code for a scenario nobody asked it to demonstrate.
+
 [LaunchStudio](https://launchstudio.eu/en/) implements payment integrations with webhook reliability, idempotency, and partial-failure handling built in from the start as a standard part of every Launch & Grow engagement, backed by Manifera's experience integrating Stripe and Mollie across numerous production SaaS applications.
 
 [Get your payment flow tested against real-world failure conditions, not just the happy path](https://launchstudio.eu/en/#calculator) — this is the feature most likely to surface a gap first, so it's worth verifying first.

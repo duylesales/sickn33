@@ -61,6 +61,20 @@ Ask: "If something breaks after launch, how will I actually know about it — wi
 
 You now have five questions that, asked of any freelancer, agency, or engineering partner, will tell you within minutes whether they've actually thought carefully about production readiness or are simply planning to launch what you already have, unchanged, and hope for the best. The specificity of the answer — not the confidence with which it's delivered — is what separates the two.
 
+## Red Flags Worth Watching For When Evaluating Help
+
+Beyond the five direct questions, certain patterns in how a freelancer, agency, or partner responds are worth noticing on their own, independent of the specific answer given.
+
+**Vague reassurance without specifics.** "Don't worry, I'll make it secure" answers a different question than the one you asked — it's a statement about intent, not about what will actually be verified or how. A concrete answer names a specific approach and a specific way you could check it yourself later.
+
+**Discomfort with follow-up questions.** Someone who genuinely understands production readiness welcomes a follow-up question, because it's an opportunity to demonstrate depth. Someone reciting a rehearsed answer often deflects, changes the subject, or repeats the original claim in slightly different words rather than going deeper.
+
+**No mention of verification at all.** Building something and verifying it's safe are different activities, covered at length elsewhere in this guide — a partner who only ever talks about what they'll build, never about how they'll confirm it's actually safe once built, is describing half the job.
+
+**Pressure to skip the conversation entirely.** Anyone actively discouraging you from asking these questions, or implying that asking them signals distrust, is worth treating with real caution — a confident, competent partner has no reason to be uncomfortable with a founder wanting specifics before committing budget to unfamiliar work.
+
+None of these red flags alone is necessarily disqualifying, but noticing a pattern of several together is a meaningfully useful signal, especially for a founder without the technical background to evaluate answers on pure technical substance alone.
+
 [LaunchStudio](https://launchstudio.eu/en/) exists to answer exactly these five questions concretely for your specific app — not with reassurance, but with actual implementation you can verify — backed by Manifera's engineering team and 11+ years of production experience across genuinely different industries and risk profiles.
 
 [Ask us these five questions about your prototype](https://launchstudio.eu/en/#contact) — you'll get specific answers, not generic confidence.

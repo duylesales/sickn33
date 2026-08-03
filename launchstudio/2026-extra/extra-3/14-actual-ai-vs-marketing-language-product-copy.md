@@ -47,7 +47,7 @@ A founder describing their product isn't usually trying to mislead anyone — th
 
 ## Why This Is Increasingly a Regulatory, Not Just a Trust, Concern
 
-Beyond customer trust, regulatory attention on AI marketing claims specifically has been increasing, with several jurisdictions treating overstated AI capability claims as a consumer protection concern rather than simply an aggressive marketing choice — meaning the gap between claim and reality is shifting from a reputational risk toward a genuine compliance consideration a founder should take seriously rather than dismiss as a minor wording issue.
+Beyond customer trust, regulatory attention on AI marketing claims specifically has been increasing, with several jurisdictions treating overstated AI capability claims as a consumer protection concern rather than simply an aggressive marketing choice — meaning the gap between claim and reality is shifting from a reputational risk toward a genuine compliance consideration a founder should take seriously rather than dismiss as a minor wording issue. In the EU specifically, transparency obligations tied to AI systems have been tightening in parallel with broader AI regulation, and consumer protection rules already give regulators a basis to test a marketing claim against the actual product behind it. A founder doesn't need to track every jurisdiction's specific requirements to take the underlying lesson seriously: a claim a regulator could test against the actual product is a claim that needs to be true, not just persuasive.
 
 ## How to Check Your Own Copy Against What's Actually True
 

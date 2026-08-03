@@ -43,11 +43,11 @@ A platform intentionally designed for open public signup has no particular need 
 
 ## Why Founders Building Solo Rarely Think to Add This Check
 
-Building and testing an invite-link feature solo means testing it with people you personally invited and trust — friends, neighbors, early co-op members — which means the "does this link end up in the wrong hands" scenario simply never arises during that testing, since a solo founder controls exactly who receives each link they personally send out.
+Building and testing an invite-link feature solo means testing it with people you personally invited and trust — friends, neighbors, early co-op members — which means the "does this link end up in the wrong hands" scenario simply never arises during that testing, since a solo founder controls exactly who receives each link they personally send out. There's no dedicated QA team testing from an outside, adversarial perspective, and no second engineer reviewing the feature with fresh eyes — just the founder themselves, who by definition already knows and trusts everyone they've personally sent a link to.
 
 ## Why Forwarded Links Are an Entirely Predictable Real-World Risk
 
-Links get forwarded constantly, often with good intentions — a co-op member sharing an invite with a friend they think would be interested, not realizing the platform's actual membership criteria excludes that friend for a specific, legitimate reason (living outside the service area, for instance). Without a verification step, this well-intentioned forwarding can quietly and unintentionally breach a boundary the founder never built any protection against in the first place.
+Links get forwarded constantly, often with good intentions — a co-op member sharing an invite with a friend they think would be interested, not realizing the platform's actual membership criteria excludes that friend for a specific, legitimate reason (living outside the service area, for instance). Without a verification step, this well-intentioned forwarding can quietly and unintentionally breach a boundary the founder never built any protection against in the first place. This isn't a hypothetical, rare scenario particular to BuurEnergie — sharing a link with someone who'd "love this" is one of the most natural, common things a happy member of any community does, completely unprompted, without any malicious intent whatsoever. A founder building for a closed group should assume this kind of well-meaning forwarding will happen regularly, not occasionally, and design the eligibility check accordingly rather than treating it as an unlikely edge case worth addressing only if it comes up.
 
 ## What Properly Closing This Gap Requires
 
@@ -56,6 +56,30 @@ A proper fix adds a verification step tied to the invite link — confirming an 
 Manifera's invite and membership verification engineering is delivered through the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Book a free 15-minute call to talk it through](https://launchstudio.eu/en/#contact).
+
+## Verification Methods Worth Considering, and Their Tradeoffs
+
+Once a founder decides an invite link needs some form of eligibility check, the next question is which specific method fits their product — there's no single universally correct answer, and the right choice depends on what "eligible" actually means for the specific closed group in question.
+
+**Email domain matching**
+
+Works well when eligibility maps cleanly to an organization — a company workspace, a university alumni network, a professional association tied to a specific employer domain. Doesn't work for eligibility based on anything other than organizational affiliation, like BuurEnergie's geography-based criteria.
+
+**Address or postal code verification**
+
+Fits geography-based eligibility directly, checking a submitted address against a defined service area during signup rather than after. Requires maintaining an accurate, up-to-date definition of the eligible area, and needs a clear, honest process for the inevitable edge case living just outside a drawn boundary.
+
+**Manual approval before full access**
+
+The most flexible option, and often the right starting point for a small, early-stage group with eligibility criteria too nuanced to fully encode as an automated rule — a founder or admin reviews each new signup before granting full access. Doesn't scale gracefully once membership volume grows past what one person can reasonably review promptly, but costs nothing extra to implement beyond a review step in an admin panel.
+
+**A pre-verified invite code tied to a specific recipient**
+
+Rather than one generic link anyone can forward, generate a unique code or link per intended recipient, tied specifically to that person's expected email address, which is checked against whatever email address the link is actually used with. This closes the forwarding problem directly, at the cost of slightly more friction when generating invites individually rather than sharing one link broadly.
+
+**Choosing between them**
+
+A useful starting question is how precisely "eligible" can be defined as a rule at all. Geography, organizational affiliation, and existing-customer status usually can be. More subjective criteria — "would be a good fit for this specific community" — usually can't, and are better served by manual approval, at least until volume forces a rethink. BuurEnergie's specific fix combined the second and third approaches: an automated address check for the clear majority of straightforward cases, with a manual fallback for the genuine edge cases a purely automated rule would have gotten wrong.
 
 ## Real example
 

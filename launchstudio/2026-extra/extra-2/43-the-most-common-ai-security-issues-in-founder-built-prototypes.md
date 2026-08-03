@@ -31,15 +31,15 @@ Target Persona: AI-Native Founder (Non-Technical)
 }
 </script>
 
-Across a genuinely large number of founder-built prototypes, the specific AI security issues that turn up in review cluster around a fairly consistent, recognizable set — not because founders make the same mistake, but because the same category of scenario simply never gets tested by anyone building and demoing their own product cooperatively. A short code sent to verify an event check-in is a small, concrete example worth walking through in full.
+Across a genuinely large number of founder-built prototypes, the specific AI security issues that turn up in review cluster around a fairly consistent, recognizable set — not because founders make the same mistake, but because the same category of scenario simply never gets tested by anyone building and demoing their own product cooperatively. A short code sent to verify an event check-in is a small, concrete example worth walking through in full, precisely because it's easy to dismiss as too minor to matter until you trace exactly what it protects.
 
 ## Checklist Item One: Are Short Verification Codes Rate-Limited?
 
-A four- or six-digit code — used for event check-in, a login step, or account verification — has a genuinely limited number of possible combinations, meaning it can be guessed through sheer repeated attempts unless the system limits how many attempts are allowed within a given window. This is worth checking specifically wherever a short, numeric code is used anywhere in an application.
+A four- or six-digit code — used for event check-in, a login step, or account verification — has a genuinely limited number of possible combinations, meaning it can be guessed through sheer repeated attempts unless the system limits how many attempts are allowed within a given window. This is worth checking specifically wherever a short, numeric code is used anywhere in an application. A four-digit code has only 10,000 possible combinations, which sounds like a lot until you consider that an automated script can attempt hundreds of guesses per minute against an unprotected endpoint — meaning the entire space can be exhausted in well under a day if nothing stands in the way.
 
 ## Checklist Item Two: Does the Code Expire Within a Reasonable Window?
 
-Beyond limiting attempts, a verification code that remains valid indefinitely gives an attacker unlimited time to attempt combinations at whatever pace avoids detection, whereas a code that expires within a short, defined window meaningfully narrows that opportunity regardless of how many attempts are technically allowed.
+Beyond limiting attempts, a verification code that remains valid indefinitely gives an attacker unlimited time to attempt combinations at whatever pace avoids detection, whereas a code that expires within a short, defined window meaningfully narrows that opportunity regardless of how many attempts are technically allowed. An indefinitely valid code also means an old, forgotten code from weeks earlier could still work if it were ever discovered — a stray screenshot, a leaked email, or a shared device — long after anyone would reasonably expect it to matter anymore.
 
 ## Checklist Item Three: Is Success or Failure Communicated Without Leaking Useful Information?
 
@@ -47,11 +47,11 @@ A system that responds differently to "wrong code" versus "code expired" versus 
 
 ## Checklist Item Four: Would a Founder's Own Testing Naturally Reveal This Gap?
 
-Testing a check-in code feature by entering your own correctly generated code once, successfully, never reveals whether unlimited guessing is possible — the gap is entirely about the code's behavior under repeated, adversarial attempts, a scenario cooperative, single-attempt testing structurally cannot produce.
+Testing a check-in code feature by entering your own correctly generated code once, successfully, never reveals whether unlimited guessing is possible — the gap is entirely about the code's behavior under repeated, adversarial attempts, a scenario cooperative, single-attempt testing structurally cannot produce. Even testing it a dozen times, always with the correct code, teaches you nothing new about what happens on attempt thirteen with an incorrect one.
 
 ## Checklist Item Five: Does This Matter Even for a Seemingly Low-Stakes Feature Like Event Check-In?
 
-A compromised check-in code might seem low-stakes compared to a full account takeover, but depending on what check-in access actually grants — entry to a paid event, access to attendee information, the ability to mark someone as checked in fraudulently — the consequences can range from minor inconvenience to a genuine, exploitable gap in the event's actual operations.
+A compromised check-in code might seem low-stakes compared to a full account takeover, but depending on what check-in access actually grants — entry to a paid event, access to attendee information, the ability to mark someone as checked in fraudulently — the consequences can range from minor inconvenience to a genuine, exploitable gap in the event's actual operations. A guessed code that lets someone check in under another attendee's name, for instance, doesn't just grant physical entry — it can also corrupt the organizer's own attendance records in a way that's difficult to untangle afterward, well beyond whatever the guesser's original intent happened to be.
 
 ## Closing These Gaps Systematically Rather Than One at a Time
 
@@ -60,6 +60,20 @@ A thorough review checks every short-code or verification mechanism in an applic
 Manifera's verification and authentication audits are performed by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Check the price with our project calculator](https://launchstudio.eu/en/#calculator).
+
+## How to Rate-Limit and Expire Codes Without Hurting Legitimate Users
+
+The most common objection to adding rate limiting and expiration is that it will annoy real attendees who mistype a code or take too long to check their email. In practice, a well-tuned implementation is invisible to legitimate users and only ever gets in the way of exactly the behavior it's meant to stop.
+
+**A reasonable default configuration:**
+
+- **Allow 5-10 attempts per code**, per session or IP, before temporarily locking further attempts — enough for a legitimate person who fat-fingers a digit twice, nowhere near enough to make brute-forcing a four-digit code (10,000 combinations) practical.
+- **Set expiration to match the actual use case**, not an arbitrary default. A check-in code only needs to remain valid for the event's check-in window, typically a few hours; a password-reset code arguably needs even less, often 10-15 minutes, since it's meant to be used immediately.
+- **Lock progressively, not permanently**, on repeated failures — a short cooldown (60 seconds, then 5 minutes, then longer) after a handful of failed attempts blocks automated guessing far more effectively than a single fixed attempt cap, while still letting a genuinely confused legitimate user try again shortly after.
+- **Offer an easy, low-friction way to request a fresh code** if the original expires or attempts get locked out, so the security measure never becomes the reason a legitimate attendee gives up and calls the venue instead.
+- **Log failed attempts** even when they're allowed through, since a pattern of many failed attempts against the same code — even below the lockout threshold — is itself a useful signal worth an organizer or founder being able to see after the fact.
+
+**The underlying principle:** rate limiting and expiration aren't meant to make legitimate use harder — they're meant to make the *volume* of attempts an attacker needs, to reliably guess a short code through brute force, so large that it's no longer a practical strategy within any useful timeframe. Tuned correctly, a legitimate attendee never notices these controls exist at all; only a script attempting thousands of rapid guesses ever runs into them.
 
 ## Real example
 

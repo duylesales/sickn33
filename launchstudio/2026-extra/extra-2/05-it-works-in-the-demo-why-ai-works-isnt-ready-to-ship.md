@@ -49,6 +49,20 @@ A search field that passes user input directly into a database query without pro
 
 Testing search with normal search terms — a product name, a customer's name, a reasonable keyword — never triggers this failure mode, because normal search terms are, by definition, not the specifically malformed input that exposes the underlying gap. The two tests look identical from the outside (you type something, you get results) but only one of them is actually probing whether the query construction underneath is safe.
 
+## A Founder's Field Guide to Spotting Risky Input Handling Without Reading Every Line
+
+You don't need to read your entire codebase line by line to get a reasonable sense of where this kind of risk concentrates — you need to know what questions to ask and where to point a search.
+
+**Search your own codebase for these patterns:**
+
+- **Direct string concatenation into a query.** Search for a database query being built by joining pieces of text together, especially anywhere that includes a variable that came from user input — for example, a query string assembled with `+` or template literals containing something the user typed. This is the textbook version of the pattern that let a malformed search string reach RouteWise's database directly.
+- **Raw query methods, even inside an ORM-based project.** Most modern ORMs parameterize input safely by default, but nearly all of them also expose a "raw query" or "execute" escape hatch for cases the ORM's normal methods don't handle well — and AI coding tools reach for that escape hatch more often than founders expect, particularly for anything resembling a flexible search or filter feature.
+- **Any field that accepts free text and later appears in a database lookup, a file path, or a system command.** Search boxes are the obvious case, but the same underlying risk applies to file names, tags, and any other user-editable text that your application later uses to look something up rather than just display.
+
+**A question worth asking your AI tool directly:** "Does this query use parameterized inputs, or is any part of it built from a string containing user input?" It's not a guarantee — the tool can answer incorrectly, or the underlying pattern can change in a later edit you didn't specifically re-check — but it's a faster first signal than reading the raw code yourself, and it gives you a specific, answerable question to bring to a professional review rather than a vague worry about "is this secure."
+
+None of this replaces a proper audit, which checks every entry point systematically rather than the handful a founder happens to think to search for. But it's a reasonable way to get a rough sense of your own exposure before that conversation happens, and it often turns up at least one obvious instance on its own.
+
 ## What a Real Fix Looks Like, Concretely
 
 Closing this gap means replacing direct string-concatenation into queries with properly parameterized queries or an ORM layer that handles escaping automatically, and applying that pattern consistently across every input field that reaches the database, not just the ones a founder happens to remember. [LaunchStudio](https://launchstudio.eu/en/) audits exactly this pattern across an entire codebase as part of its standard review, backed by Manifera's 11+ years of production engineering experience across Node.js, Laravel, and .NET backends.
@@ -96,6 +110,10 @@ It's a direct throughline — TNO-affiliated security research treats exactly th
 
 It depends heavily on the individual freelancer's specific security background rather than freelancing as a category — this is part of why LaunchStudio positions itself against generalist freelancers specifically for founders who want assurance the review was done by someone with dedicated security experience, not just general coding ability.
 
+### Can I just ask my AI coding tool to fix this across the whole codebase in one prompt?
+
+It's worth trying as a first pass, but treat the result as a starting point rather than a guarantee — a single prompt may miss instances tucked in files the tool doesn't reconsider, or introduce a regression in a query that was already working, which is why a systematic review still checks the result rather than trusting the prompt alone.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,6 +157,14 @@ It depends heavily on the individual freelancer's specific security background r
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It depends heavily on that individual's security background, not on freelancing as a category."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I ask my AI coding tool to fix this across the whole codebase in one prompt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Worth trying as a first pass, but treat it as a starting point — a single prompt can miss instances or introduce regressions."
       }
     }
   ]

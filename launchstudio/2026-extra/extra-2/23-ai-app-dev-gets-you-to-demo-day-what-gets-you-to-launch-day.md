@@ -43,11 +43,11 @@ Launch day requires the same core workflow to hold up against real, unpredictabl
 
 ## Where the Gap Between the Two Concretely Shows Up
 
-Founder-built AI apps commonly include an internal admin interface for managing vehicles, users, or bookings, built quickly and informally to help the founder manage their own pilot without needing a separate tool. That admin functionality is typically built with the same casual assumption that governs everything else during solo prototyping — that only the founder themselves will ever interact with it — an assumption that stops holding the moment the app is publicly reachable.
+Founder-built AI apps commonly include an internal admin interface for managing vehicles, users, or bookings, built quickly and informally to help the founder manage their own pilot without needing a separate tool. That admin functionality is typically built with the same casual assumption that governs everything else during solo prototyping — that only the founder themselves will ever interact with it — an assumption that stops holding the moment the app is publicly reachable. In practice this shows up as a route with no authentication check at all, reachable by anyone who happens to know or guess the URL, sitting right alongside the fully secured customer-facing booking flow in the exact same codebase — two very different security postures coexisting because they were built with two very different mental models of who would ever see them.
 
 ## Why Agencies Specifically Need to Check for This on Every Handoff
 
-A client demo focuses attention on the customer-facing product, which is exactly what the client is proud of and exactly what an agency naturally gets shown first. Internal admin routes rarely come up in that conversation at all, precisely because the client doesn't think of them as "the product" — which means an agency scoping a launch engagement purely around what was demoed can easily miss this category of gap entirely unless it's specifically, deliberately checked for.
+A client demo focuses attention on the customer-facing product, which is exactly what the client is proud of and exactly what an agency naturally gets shown first. Internal admin routes rarely come up in that conversation at all, precisely because the client doesn't think of them as "the product" — which means an agency scoping a launch engagement purely around what was demoed can easily miss this category of gap entirely unless it's specifically, deliberately checked for. The commercial risk compounds the technical one: an agency that ships a client's app under its own name and later has to explain an exposed admin panel to that same client is absorbing a reputational cost that has nothing to do with the quality of the work the agency itself actually did.
 
 ## How LaunchStudio Supports Agencies Making This Specific Check
 
@@ -56,6 +56,20 @@ A client demo focuses attention on the customer-facing product, which is exactly
 Manifera's white-label reviews are delivered through the Ho Chi Minh City development center on Pho Quang Street, with NDA-covered partner engagements coordinated from the Amsterdam headquarters at Herengracht 420.
 
 [Running an agency? We can be your quiet production partner behind the scenes](https://launchstudio.eu/en/#contact).
+
+## A Practical Pre-Handoff Checklist Agencies Can Run in an Afternoon
+
+Before scoping a launch engagement purely off a client's own demo, a few targeted checks tend to surface most of the "demo day versus launch day" gap without requiring a full audit up front.
+
+**Run through these before quoting the launch work:**
+
+1. **Ask the client directly: "Is there anything you built just for yourself to manage this?"** Founders rarely volunteer this information unprompted because they genuinely don't think of internal tooling as part of "the product," but a direct question usually gets a direct, useful answer.
+2. **Search the codebase for route or page names containing "admin," "internal," "manage," "dashboard," or "debug."** AI coding tools tend to name things descriptively, which works in an agency's favor here — a route called `/admin/approve-listings` is not hard to find once you're specifically looking.
+3. **Check whether any route requires authentication at all**, not just whether it looks like it's meant to be private. A page that's simply never linked from the main navigation isn't the same as a page that actually checks who's requesting it.
+4. **Test what happens when a logged-out or low-privilege user requests each internal route directly by URL.** This single test catches the large majority of exposed-admin-route cases, because it's the exact test a client's own cooperative, logged-in testing structurally never performs.
+5. **Confirm the same check gets repeated after each subsequent feature addition**, not just once at the original handoff — new internal tooling gets added the same casual way the first version was, and a single point-in-time review doesn't protect against what comes next.
+
+An afternoon spent on this checklist, before committing to a launch timeline or a fixed quote, is considerably cheaper than discovering the same gap after the client's app is already live under the agency's name.
 
 ## Real example
 
@@ -95,6 +109,10 @@ Yes — enterprise engagements have long required systematic checks for exactly 
 ### Is this the kind of check that should happen once per project, or does it need to be repeated as features are added?
 
 Ideally repeated — a project that passes this check at launch can still introduce a new internal tool or admin feature later that reintroduces the same pattern, which is why an ongoing partnership relationship, rather than a single one-time audit, tends to serve an agency's long-term client relationships better.
+
+### How long does a check like this typically add to an agency's handoff timeline?
+
+Not long — a systematic route inventory of the kind LaunchStudio runs is usually measured in days, not weeks, since it's a targeted, well-defined check rather than an open-ended review of the entire codebase. Agencies that build it into their standard intake process find it adds minimal time to the overall handoff while removing one of the more common sources of a launch going wrong after the fact.
 
 <script type="application/ld+json">
 {
@@ -139,6 +157,14 @@ Ideally repeated — a project that passes this check at launch can still introd
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ideally ongoing, since new features can reintroduce the same pattern after an initial launch passes review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does this kind of check add to an agency's handoff timeline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not long — a targeted route inventory is typically measured in days, adding minimal time to a standard handoff."
       }
     }
   ]

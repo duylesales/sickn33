@@ -31,23 +31,23 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-The AI tool download and initial setup is the easy, fast part now. What comes after — specifically, making sure every internal connection between the different pieces of your own infrastructure is properly encrypted, not just the connection between your users and your app — is a category of work that rarely gets attention precisely because it's invisible to anyone outside the system itself.
+The AI tool download and initial setup is the easy, fast part now. What comes after — specifically, making sure every internal connection between the different pieces of your own infrastructure is properly encrypted, not just the connection between your users and your app — is a category of work that rarely gets attention precisely because it's invisible to anyone outside the system itself. Nobody demos their internal network configuration, and no customer ever asks to see it directly — which is exactly why it tends to stay unexamined until a due-diligence process or a security incident forces the question.
 
 ## Why Founders Naturally Focus on the User-Facing Connection First
 
-When founders think about encryption at all, they think about HTTPS — the padlock icon confirming a user's browser connection to the app is secure. This is genuinely important and, encouragingly, something most modern hosting platforms and AI coding tools handle correctly by default. It's also only one of potentially several connections a modern application actually makes.
+When founders think about encryption at all, they think about HTTPS — the padlock icon confirming a user's browser connection to the app is secure. This is genuinely important and, encouragingly, something most modern hosting platforms and AI coding tools handle correctly by default. It's also only one of potentially several connections a modern application actually makes. The padlock icon is, in a real sense, a victim of its own success as a security signal — it's so visible and so widely understood that it becomes the entire mental model of "encryption" for many founders, leaving every connection that doesn't produce a similarly visible cue outside that mental model by default.
 
 ## Why Internal Service-to-Service Connections Are Often Overlooked
 
-A typical application isn't a single piece of software — it often involves a main backend calling a separate internal service, a background job processor, or a database on a different server, and each of those internal connections is a separate opportunity for data to travel unencrypted if that specific connection isn't deliberately configured with its own encryption, distinct from the user-facing HTTPS connection.
+A typical application isn't a single piece of software — it often involves a main backend calling a separate internal service, a background job processor, or a database on a different server, and each of those internal connections is a separate opportunity for data to travel unencrypted if that specific connection isn't deliberately configured with its own encryption, distinct from the user-facing HTTPS connection. AI coding tools generate each of these pieces correctly in isolation, connecting a backend to a database or a notification service exactly as requested — but the tool responding to "add a notification service" has no inherent reason to also independently verify that the connection it just wired up is encrypted, unless that requirement was specifically part of the request.
 
 ## Why This Gap Is Genuinely Hard to Notice From the Outside
 
-A product's user-facing security can look completely correct — valid HTTPS, a proper padlock icon, no visible warnings — while an internal connection between two of your own backend services travels in plaintext, because nothing about the user experience reflects what's happening in that separate, internal layer of the system at all.
+A product's user-facing security can look completely correct — valid HTTPS, a proper padlock icon, no visible warnings — while an internal connection between two of your own backend services travels in plaintext, because nothing about the user experience reflects what's happening in that separate, internal layer of the system at all. A founder, a customer, and even a fairly technical outside reviewer glancing only at the browser can all walk away with full confidence in a product's security, entirely unaware that a completely different, unencrypted conversation is happening one layer beneath what any of them can see.
 
 ## Why This Matters More Than It Might Seem
 
-Data traveling unencrypted between internal services is vulnerable to interception by anyone with access to the same underlying network — which, depending on your specific hosting setup, could include other tenants on shared infrastructure, or anyone who manages to gain even limited access to the surrounding network environment, a meaningfully different and often underestimated risk compared to the well-understood risk of unencrypted traffic on the open internet.
+Data traveling unencrypted between internal services is vulnerable to interception by anyone with access to the same underlying network — which, depending on your specific hosting setup, could include other tenants on shared infrastructure, or anyone who manages to gain even limited access to the surrounding network environment, a meaningfully different and often underestimated risk compared to the well-understood risk of unencrypted traffic on the open internet. On shared cloud infrastructure specifically, "the same underlying network" is a larger, less predictable group than founders typically picture — considerably larger than the small, trusted team actually building and operating the product itself.
 
 ## What Properly Closing This Gap Requires
 
@@ -56,6 +56,20 @@ A proper review maps every connection your application makes — not just the us
 Manifera's internal infrastructure security reviews are conducted by the engineering team at the Ho Chi Minh City development center on Pho Quang Street, coordinated with the Amsterdam headquarters at Herengracht 420.
 
 [Talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
+
+## Mapping Your Own Application's Connections: A Starting Point
+
+A founder doesn't need deep networking expertise to get a rough first picture of how many separate connections their own application actually makes — most people are surprised by the answer once they actually draw it out.
+
+**A simple first-pass exercise:**
+
+1. **List every distinct piece of infrastructure your product uses** — the main application backend, a database, any background job processor, any separate internal service (notifications, file processing, search indexing), and any third-party API it calls.
+2. **Draw a line between every two pieces that talk to each other directly**, not just the line between your users and the main application. Most founders draw the user-to-app line automatically and immediately, and then pause, because the internal lines are far less obvious without deliberately thinking through the architecture.
+3. **For each internal line, ask specifically: is this connection encrypted, and how do I know?** "I assume so" and "I've confirmed it" are different answers, and the gap between them is exactly where GarageAgenda's exposure lived undetected.
+4. **Check your hosting platform's documentation for what it encrypts by default** versus what requires explicit configuration — this varies meaningfully between providers, and a connection encrypted by default on one platform may need to be manually configured on another.
+5. **Prioritize connections carrying genuinely sensitive data first** — a connection passing customer names, contact details, or financial information deserves scrutiny before a connection passing only non-sensitive operational metadata, if time or budget requires triaging rather than reviewing everything simultaneously.
+
+**What this exercise is worth even without a professional review:** simply drawing the full diagram, rather than only picturing the user-facing connection, is often enough to reveal that a product has more internal connections than its founder had actively been thinking about — exactly the realization Ivo described only arriving once an outside party's due-diligence questions forced him to actually map it out for the first time.
 
 ## Real example
 

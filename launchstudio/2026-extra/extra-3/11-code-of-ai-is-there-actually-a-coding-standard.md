@@ -37,6 +37,8 @@ There's no single, official "code of AI" — no formal governing body publishing
 
 The category itself — AI-generated production software — is still young enough, and the underlying tools are still evolving quickly enough, that no single industry body has converged on and published a formal, universally-adopted specification the way older, more mature domains eventually did. This isn't a gap anyone is being negligent about; it's simply premature for a category that's still actively defining its own common failure modes in real time, across a wide range of tools that don't share identical underlying architectures.
 
+Compare this to how other technical standards actually formed. OWASP's list of common web application vulnerabilities took years of documented, real-world incidents before it consolidated into something teams now reference by default. Accessibility guidelines went through multiple formal revisions before converging into a version most developers actually check against. AI-generated code is earlier in that same arc — the failure patterns are real and increasingly well-documented, but the tools generating that code, and the code itself, are still changing quickly enough that a frozen, formal specification risks being outdated before it's even ratified. That doesn't mean nothing is known; it means what's known hasn't yet been through the years-long consolidation process that produces a citable standard.
+
 ## What Functions as the De Facto Standard Instead
 
 In practice, experienced engineering teams evaluate AI-generated code against a consistent, if informal, set of expectations: does authentication and authorization get enforced server-side, independent of the frontend; are secrets kept out of source code and version history entirely; is there structured, deliberate handling for external service failures rather than generic catch-alls; has the code been tested against adversarial and edge-case conditions, not just the happy path it was originally generated to satisfy. None of this is published as a single formal document anywhere, but it's remarkably consistent across engineers and teams who specialize in exactly this category of work, because it reflects the same recurring, well-documented failure patterns rather than arbitrary personal preference.
@@ -52,6 +54,19 @@ The absence of an official "code of AI" doesn't mean there's no meaningful way t
 [LaunchStudio](https://launchstudio.eu/en/) applies exactly this practitioner-level, pattern-informed standard consistently across every engagement — not because it's dictated by any external body, but because Manifera's engineering teams have seen the same recurring gaps across 160+ delivered projects closely enough to know precisely what "genuinely production-ready" actually requires, independent of any formal certification that doesn't yet exist for this category.
 
 [Get your code evaluated against the standard that actually matters](https://launchstudio.eu/en/#contact) — informal doesn't mean inconsistent, once you're working with people who've seen the pattern enough times.
+
+## A Practical Checklist: What an Experienced Review Actually Checks
+
+Even without a certifiable standard, the practitioner-level evaluation this article describes isn't vague — it's a specific, repeatable checklist experienced teams run through on nearly every AI-generated codebase, regardless of which tool originally generated it. Six categories show up consistently enough to function as a de facto minimum bar:
+
+1. **Server-side authorization on every sensitive action.** Not just "is the user logged in," but "does this specific user have permission to do this specific thing," checked independently of whatever the frontend already assumed.
+2. **Secrets kept entirely out of source control.** API keys, database credentials, and webhook secrets belong in environment variables or a secrets manager, never committed to a repository, even a private one, and never present in version history from an earlier, less careful commit.
+3. **Structured error handling for every external dependency.** A payment processor, an AI provider, a third-party API — each needs deliberate handling for timeouts, rate limits, and malformed responses, not a single generic catch-all that swallows the specific failure and leaves a user staring at a blank screen.
+4. **Idempotency on anything that moves money or state.** A webhook or payment confirmation that fires twice shouldn't charge a customer twice or create duplicate records — a gap AI-generated code frequently has because the happy-path version, which is what most prompts implicitly ask for, doesn't need it to demonstrate working.
+5. **Testing against adversarial and concurrent conditions, not just the happy path.** Two users acting at once, a malformed input, an expired session — conditions a working demo never encounters but real usage eventually will.
+6. **Dependency and package hygiene.** Verifying that AI-suggested packages are actively maintained, reasonably popular, and don't introduce known vulnerabilities, since AI tools will confidently recommend an abandoned or insecure package with the same tone they'd use for a well-maintained one.
+
+None of these six categories require exotic expertise to understand once named — what requires experience is knowing to specifically check for them before a customer, an attacker, or a compliance review finds the gap first, and knowing which ones matter most for a given product's specific data and usage pattern rather than applying all six with identical weight regardless of context.
 
 ## Real example
 

@@ -49,6 +49,8 @@ Founders naturally judge a feature's completeness by whether it does what it's s
 
 Missing consent records rarely cause a visible problem during day-to-day operation. They become urgently visible during a dispute, a regulatory inquiry, or a data subject access request — precisely the moments when a founder most needs to demonstrate exactly what happened and why, and precisely the moments when discovering the record was never kept is most damaging.
 
+Retroactive fixes don't fully help either. Once the moment for capturing consent has passed, no amount of engineering effort recreates a record that was never made in real time — you cannot generate a timestamp for an event that happened six months ago and was never logged. The best a founder can do after the fact is close the gap going forward and be honest about the period it wasn't tracked, which is a measurably weaker position during a dispute than simply having had the trail in place from day one.
+
 ## What a Proper Fix Actually Adds
 
 Closing this gap means adding a specific, append-only audit log recording every consent grant, modification, and revocation, tied to a timestamp and the identity of who authorized it — implemented alongside the existing access-sharing feature rather than replacing any part of it. [LaunchStudio](https://launchstudio.eu/en/) builds exactly this kind of consent and audit logging as part of its GDPR-focused review process, backed by Manifera's 11+ years of experience with compliance-sensitive B2B systems.
@@ -56,6 +58,21 @@ Closing this gap means adding a specific, append-only audit log recording every 
 Manifera's compliance-adjacent engineering work is delivered through the Ho Chi Minh City development center on Pho Quang Street, with client scoping conversations handled from the Amsterdam headquarters at Herengracht 420.
 
 [Schedule a free 15-minute introduction call](https://launchstudio.eu/en/#contact).
+
+## A Practical Framework for Auditing Your Own Consent Trails
+
+A founder doesn't need to wait for a formal compliance review to get a rough sense of where their own product stands. A handful of concrete questions surface most of the gap without any outside help at all.
+
+**Ask these four questions about every feature that grants or shares access to another person's data:**
+
+- Can you show, right now, exactly when a specific user granted a specific person access — not "yes, they clicked accept, I'm fairly sure" from memory, but an actual timestamped record you could pull up on demand?
+- If access is later revoked, does anything preserve the fact that it once existed and for how long, or does the record simply vanish the moment access ends, leaving only the current state?
+- Does the record show who actually authorized the access, or does the system just infer authorship from whoever happened to be logged in at the time — a subtle but important difference if an account was ever shared or compromised?
+- If a regulator, an insurance provider, or an angry family member asked for this history six months from now, could you produce it within a day, or would you be reconstructing it from old support tickets and best guesses?
+
+A "no" to any of these isn't unusual for a first version of a product. AI coding tools have no built-in reason to add consent trails unless a prompt specifically described one, so nearly every founder building solo starts out exactly here — it is the default, not the exception. What matters is treating a "no" as a scoped, fixable engineering task rather than a vague, indefinite worry sitting in the back of your mind.
+
+The fix itself, in most cases, is smaller than it sounds: a single new database table logging who did what, to whose data, and when, written alongside the existing access-granting code rather than replacing any part of it. It typically doesn't touch how the feature looks or behaves for the people actually using it — the change is invisible to users and entirely about what the system can later prove happened.
 
 ## Real example
 
@@ -95,6 +112,10 @@ Yes, precisely — a consent log isn't a feature a user directly interacts with 
 ### Could a founder add basic consent logging themselves without a full audit, just by keeping a spreadsheet?
 
 A manual record can serve as a stopgap, but it doesn't scale reliably and is prone to being forgotten or falling out of sync with the actual state of the system — an engineered, append-only log tied directly to the access-granting code itself is what actually guarantees the record can't silently drift out of accuracy.
+
+### How long should a consent audit log actually be retained?
+
+Long enough to cover any realistic dispute or regulatory inquiry window, which in practice means keeping it for the life of the account plus a reasonable buffer after account closure, rather than deleting it on the kind of routine schedule you might apply to other, less consequential logs — a consent trail exists specifically to answer questions asked well after the fact, so pruning it too aggressively defeats its entire purpose.
 
 <script type="application/ld+json">
 {
@@ -139,6 +160,14 @@ A manual record can serve as a stopgap, but it doesn't scale reliably and is pro
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It can serve as a stopgap, but it doesn't scale reliably or stay in sync with the system's actual state."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should a consent audit log be retained?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For the life of the account plus a reasonable buffer after closure, since the log exists specifically to answer questions asked well after the fact."
       }
     }
   ]

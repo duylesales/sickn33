@@ -26,7 +26,9 @@ Daan Smit graduated from TU Delft with a mechanical engineering degree, taught h
 
 Delft's founder base looks different from most Dutch cities because of its center of gravity: TU Delft, one of Europe's leading technical universities, produces a steady stream of engineering-minded founders who are comfortable enough with code to build ai products themselves using tools like Cursor, without needing to hire a development team. That's a genuine advantage — these founders can read what the AI generates, debug obvious issues, and iterate fast without a communication layer between "what I want" and "what got built."
 
-The limitation isn't technical skill. It's that being a strong individual contributor and running production infrastructure are different disciplines, and most solo technical founders in Delft haven't had to own the second one before — because at a previous job or in academia, that infrastructure was usually somebody else's responsibility.
+This shows up in the neighborhoods around TU Delft's campus, where a meaningful share of the city's technical founders got their start — robotics labs, aerospace engineering projects, and a steady pipeline of graduates who stay in the area rather than moving straight to Amsterdam or abroad. Many of these founders are comfortable enough reading a stack trace or debugging a failed API call that they never feel the pull toward a no-code tool in the first place; Cursor, for them, is less a replacement for engineering skill and more a force multiplier on skill they already have.
+
+The limitation isn't technical skill. It's that being a strong individual contributor and running production infrastructure are different disciplines, and most solo technical founders in Delft haven't had to own the second one before — because at a previous job or in academia, that infrastructure was usually somebody else's responsibility. A founder who spent three years as a strong backend engineer at a scale-up wrote excellent code inside a system where a platform team already owned CI/CD, secrets management, and rollback tooling. Going solo means inheriting all of that ownership at once, on top of everything else a first-time founder is already juggling.
 
 ## Where the Solo-Build Approach Breaks Down
 
@@ -37,13 +39,39 @@ The pattern LaunchStudio sees repeatedly with technically capable Delft founders
 - No staging environment, so every change is tested against production data, or not tested at all before going live
 - Manual, undocumented deployment steps that only the founder knows how to run, creating a single point of failure
 
-None of these are knowledge gaps exactly — most engineering-minded founders know these things matter in theory. They're time and priority gaps: when you're building solo, deployment infrastructure competes directly with product features for the same hours, and features usually win until something breaks.
+None of these are knowledge gaps exactly — most engineering-minded founders know these things matter in theory. They're time and priority gaps: when you're building solo, deployment infrastructure competes directly with product features for the same hours, and features usually win until something breaks. A founder who could absolutely build a CI/CD pipeline over a weekend often doesn't, not because they can't, but because that weekend keeps getting spent on the next customer-facing feature instead — a rational trade-off right up until the deploy pipeline's absence causes an incident that costs more time than building it ever would have.
 
 ## Closing the Gap Without Hiring
 
-This is where LaunchStudio's model fits specifically well for Delft's technical founder profile: rather than hiring a full engineering team, founders bring in Manifera's team — 120+ engineers with 11+ years of production experience, coordinated in part from our development hub in Ho Chi Minh City — for the specific infrastructure work that's outside their current bandwidth, without giving up ownership of the product itself. Manifera's [custom software development practice](https://www.manifera.com/services/custom-software-development/) is built around exactly this kind of targeted engineering engagement rather than long-term staffing commitments.
+This is where LaunchStudio's model fits specifically well for Delft's technical founder profile: rather than hiring a full engineering team, founders bring in Manifera's team — 120+ engineers with 11+ years of production experience, coordinated in part from our development hub in Ho Chi Minh City — for the specific infrastructure work that's outside their current bandwidth, without giving up ownership of the product itself. It's the same logic as bringing in a specialist contractor for electrical work on an otherwise self-built house: you don't hand over the whole project, just the one piece that genuinely benefits from someone who does it every day. Manifera's [custom software development practice](https://www.manifera.com/services/custom-software-development/) is built around exactly this kind of targeted engineering engagement rather than long-term staffing commitments.
 
 For a Delft founder trying to figure out which parts of their Cursor-built product need this kind of hardening, LaunchStudio's [package options](https://launchstudio.eu/en/#packages) break down what's typically included in a production-readiness pass, scoped to fit a solo founder's budget rather than an enterprise engagement.
+
+## Evaluating Your Own Deploy Process: A Quick Self-Test
+
+A technical founder can usually tell within a few minutes of honest self-assessment whether their deployment process is a genuine risk or a manageable one. These questions aren't meant to induce panic — most solo-built products fail at least one or two of them, and that's exactly the point of running the check.
+
+**Can someone other than you deploy a fix?**
+
+If the honest answer is "only if I talk them through it live," you have a single point of failure. This matters even for a genuine solo founder, because it also means you can't deploy from a hospital bed, a bad wifi connection, or a phone.
+
+**Do you know your rollback time, or are you guessing?**
+
+Ask yourself directly: if the deploy you're about to push breaks production, how long would it take you to get back to the last working state? "I'm not sure" is a common and honest answer — and a clear sign there's no tested rollback process, only an assumption that one exists.
+
+**Is every deploy tested the same way, or does it depend on how careful you're feeling that day?**
+
+Manual, ad hoc testing before a deploy is fine in theory and unreliable in practice, especially late at night after a long debugging session. A deploy pipeline with automated checks doesn't get tired or rush through steps under deadline pressure.
+
+**Where do your secrets actually live?**
+
+Open your codebase and search for anything that looks like a real credential sitting directly in a file rather than in an environment variable. Early-stage projects accumulate these quickly, usually from a moment of "I'll clean this up later" that never happened.
+
+**What's your actual blast radius if today's deploy goes wrong?**
+
+For a founder with three pilot customers, an honest answer might be "manageable, if slow." For a founder with fifty paying customers relying on the product for daily operations, the same fragile process carries a materially different risk, even though nothing about the underlying code changed.
+
+If two or more of these leave you uncertain, that's less a verdict on your engineering ability and more a signal about where the next few days of infrastructure work should go, before a bad deploy forces the question. It's also, for most technically capable Delft founders, closer to a checklist than a rebuild — the parts of this list that are missing usually take days to add, not weeks, precisely because the underlying codebase is already solid.
 
 ## Real example
 

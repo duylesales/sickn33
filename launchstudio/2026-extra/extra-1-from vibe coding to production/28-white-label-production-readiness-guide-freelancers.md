@@ -53,6 +53,22 @@ The freelancer maintains the primary client relationship, scope discussion, and 
 
 Given how consistently the specific patterns covered throughout this series recur across AI-generated code, a partner with dedicated, demonstrated experience in exactly this category — not general backend development experience, but specific familiarity with how Lovable, Bolt, Cursor, and v0-generated codebases typically diverge from production requirements — delivers faster, more targeted results than a generalist backend partner approaching each engagement without that specific pattern recognition.
 
+## Questions to Ask a Potential White-Label Partner Before Committing
+
+Not every backend agency or contractor that agrees to white-label work is actually equipped to do it well for this specific category of client codebase. A few concrete questions surface the difference quickly, before you've committed a client relationship to the partnership:
+
+**"What's your process for auditing an AI-generated codebase, specifically?"** A partner with genuine, repeated experience in this category should describe a specific, consistent process — the recurring checks covered throughout this series — rather than a generic "we'll review the code and get back to you" answer that could apply to any inherited codebase regardless of how it was built.
+
+**"How is pricing structured, and what happens if the scope grows once you actually look at the code?"** A partner used to working with AI-generated prototypes typically prices an initial audit separately and affordably, then scopes the hardening work based on specific findings — a partner quoting one large, undifferentiated number before ever seeing the code is a sign they're not used to this particular engagement shape.
+
+**"How will the work be delivered so it reads as mine to the client?"** Confirm concretely whether you'll receive branded documentation, whether the partner will join client calls under your business name if needed, and how findings get communicated back to you in language you can relay confidently — a partner unfamiliar with white-label norms may default to delivering technical findings addressed to you as if you were their own technical counterpart, leaving you to do translation work you didn't budget time for.
+
+**"What happens if the client needs something outside the original scope mid-engagement?"** A dependable partner has a clear, fast answer for how scope changes get communicated and re-priced, rather than leaving you to renegotiate on the fly with a client watching.
+
+**"Can I see an example of a past audit finding, with client details removed?"** A partner confident in their own process should be able to show you the actual shape and depth of what a finding looks like — vague reassurance here is a weaker signal than a partner willing to show concrete, if anonymized, work product.
+
+Asking these before your first client referral, rather than during it, is the difference between a partnership that genuinely extends your offering and one that quietly puts your own client relationship at risk.
+
 [LaunchStudio](https://launchstudio.eu/en/) partners with freelancers specifically on the production-readiness dimensions of AI-generated client prototypes, delivered under your branding so the client relationship stays entirely yours, backed by Manifera's dedicated experience with exactly this category of codebase.
 
 [Expand what you can offer AI-native clients without changing what you personally build](https://launchstudio.eu/en/#contact) — your expertise plus ours, under one client relationship.
