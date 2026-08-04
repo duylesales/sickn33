@@ -40,6 +40,24 @@ Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts the
 
 LaunchStudio, backed by Manifera's team of engineers based in Amsterdam and beyond, reviews AI-generated codebases specifically for this pattern before recommending production work. If you suspect your own AI-built product has this kind of debt sitting quietly across your files, you can [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) about a review. For a look at the kind of production-grade engineering discipline we apply, see [Manifera's approach to web app development](https://www.manifera.com/services/web-app-develop/).
 
+## Five Signs Your Codebase Is Carrying This Kind of Debt Right Now
+
+You don't need a full audit to get a rough read on whether your own AI-generated codebase has this kind of structural debt sitting in it. None of the following requires deep tooling — just a willingness to actually search across files instead of reading them one at a time, which is the habit this whole problem depends on you not having.
+
+1. **Search for the same field or concept handled in more than three files.** Pick a core entity in your product — user, order, permission, whatever your app is actually about — and search for how it's validated or transformed. If you find three or more places doing conceptually the same check with slightly different code, you've found the pattern. The variation itself is the tell: identical logic copy-pasted looks the same everywhere; AI-generated duplication looks almost the same, with small differences that reveal it was solved fresh each time rather than reused.
+
+2. **Look for functions with near-identical names across different files.** `validateUser`, `checkUserAccess`, `verifyUserPermission` sitting in three different files is rarely three deliberate abstractions — it's usually the same problem solved three times because nothing pointed the model back to what it had already built.
+
+3. **Check whether a recent bug fix actually stayed fixed everywhere it should have.** If you've patched a bug once and a similar-looking bug turns up somewhere else in the product within a few weeks, don't treat it as a second, unrelated bug. Go back and check whether it's the same logic living in a second location that never got the same fix.
+
+4. **Ask whether your test coverage tests the shared behavior or just one instance of it.** A test suite that passes because it happens to test the one copy of the logic that got fixed, while several other copies remain untested and unfixed, will give you false confidence that the bug class is closed when it isn't.
+
+5. **Notice if "add a new feature that touches X" keeps taking longer than it should.** Structural duplication doesn't just create bugs — it creates drag. If every change to how permissions work requires updating logic in six places instead of one, that friction is itself a symptom, even before anything visibly breaks.
+
+None of these five checks require you to read the entire codebase end to end. They require you to search across it with a specific question in mind, which is a fundamentally different activity than reviewing file by file — and it's the activity most founders, technical or not, never think to run because nothing in the AI tool's output prompts them to.
+
+If you run through this list and come up mostly clean, that's a genuinely useful data point — not every AI-generated codebase accumulates this kind of debt to the same degree, and knowing you're in better shape than average is worth confirming rather than assuming. If you find two or three hits, that's the moment to treat it as a scoped cleanup project rather than something to quietly note and revisit "eventually," since eventually is exactly when the duplicated logic multiplies again with the next feature built on top of it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Bug That Lived in Eight Places

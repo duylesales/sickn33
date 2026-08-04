@@ -44,6 +44,22 @@ If you didn't write the code yourself, you likely don't have a mental map of how
 
 Founders budget for the build. Almost nobody budgets for the six-month checkup — the pass where someone experienced looks at what's accumulated, checks dependency health, and fixes the small things that have been quietly degrading. Behind LaunchStudio is Manifera's team of 120+ engineers, and the team working from Amsterdam handles exactly this kind of maintenance pass regularly for founders who built fast and never circled back. It's a smaller, cheaper engagement than a rebuild, and it only works if you schedule it before something breaks, not after. You can [calculate roughly what a maintenance pass would cost](https://launchstudio.eu/en/#calculator) for your specific tool, and see how Manifera thinks about long-term software health on its [custom software development page](https://www.manifera.com/services/custom-software-development/).
 
+## Is Your Maintenance Plan Actually Running, or Just Written Down?
+
+Writing the five-part plan above down somewhere is the easy half. The much more common failure isn't founders who never make a maintenance plan — it's founders who make one, mean it sincerely, and then watch it quietly stop happening a few months in without ever deciding to abandon it. A short self-test catches that drift before it costs you the thing the plan was supposed to prevent.
+
+**When did you last actually check for dependency updates — not "roughly," but the actual date?** If you have to think hard to answer, or the honest answer is "before my last two feature releases, whichever came first," the calendar reminder from Step 1 has stopped functioning as a reminder and started functioning as something you dismiss on sight.
+
+**Has your uptime monitor ever actually alerted you, and did you notice when it did?** A monitor that's been silently failing to send notifications for weeks looks, from the outside, identical to a monitor doing its job — the only way to know the difference is to have seen it fire at least once, or to test it deliberately rather than waiting to find out during a real outage.
+
+**Could you currently recite, from memory, the two or three things your product absolutely must do correctly?** If Step 3's list from your original plan is sitting in a document you haven't opened in months, it's not actually functioning as a baseline — it's an artifact of the day you wrote it, not a living check you're running.
+
+**Is your build log still being updated, or did it stop the day something more urgent came up?** A maintenance log that covers your first three features in detail and goes silent after that isn't a failed idea — it's a normal one that needs a small, deliberate habit (updating it the same day you ship, not "eventually") to actually stick.
+
+**When you imagine the next six months, is there a maintenance pass actually budgeted, or is it still an intention?** An intention doesn't get scheduled automatically the way a calendar reminder does — it needs an actual date and, ideally, an actual line item, or it competes against every other more urgent thing on your plate and reliably loses.
+
+If two or more of these come back as "no" or "I'm not sure," the plan hasn't failed — it's just reverted to its default state, which for almost every founder is "nothing happens until something breaks." That's a completely normal thing to have happen, and also exactly the moment to re-anchor the plan with a real date on the calendar rather than a renewed intention, since intentions are precisely what drifted the first time.
+
 ## Real example
 
 ### An AI-Native Founder in Action: the checkout that broke and nobody knew

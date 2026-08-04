@@ -52,6 +52,20 @@ Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, put it p
 
 Our team in Amsterdam, backed by Manifera's 120+ engineers, regularly steps into exactly this kind of gap — reading through AI-generated code that nobody has fully verified and documenting what it actually does. LaunchStudio brings that same standard used across Manifera's [portfolio of 160+ delivered projects](https://www.manifera.com/portfolio/) to founder-scale products. If your own onboarding conversation raised more questions than it answered, you can [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact).
 
+## Why "It's Been Working Fine" Is the Weakest Reassurance in This Conversation
+
+When a comprehension check like the one described above surfaces a vague answer, the most common recovery move — from either the founder or the developer — is to point at the system's track record: it's been running fine, nobody's complained, so it's probably fine. That reassurance feels reasonable and is worth examining specifically, because it's weaker than it sounds for a few concrete reasons.
+
+**A demo and a track record are testing different things.** A feature "working fine" usually means it's handled every request that's actually come through it so far — which says a great deal about the traffic pattern it's seen and very little about the traffic pattern it hasn't. Routing logic that's never had to handle two conflicting rules at once hasn't been tested against that case; it's simply never encountered it, which is a different and much weaker claim than "it handles that case correctly."
+
+**Low volume hides bugs that high volume exposes.** A logic gap that triggers in one out of five hundred cases is functionally invisible at fifty users a day and functionally inevitable at five thousand. "It's been working fine" is frequently a true statement about the current volume and a false prediction about what happens once that volume grows — which is exactly the direction most founders are hoping their product moves in.
+
+**Nobody complaining isn't the same as nobody affected.** A silent misrouting, a data gap, or a quietly wrong calculation doesn't generate a complaint unless someone notices the specific absence or error — and plenty of users experience a minor issue, shrug, and move on without ever reporting it. The absence of complaints measures how many people bothered to say something, not how many people were affected.
+
+**"Fine" is doing a lot of unexamined work in that sentence.** Ask what specifically would have to go wrong for the person saying "it's fine" to actually notice — and whether that failure mode would produce a visible error or fail silently the way AI-generated code so often does on unhandled edge cases. If the honest answer is "we'd probably only notice if a customer complained loudly enough," that's not evidence the system works. It's evidence nobody's watching closely enough to know either way.
+
+None of this means every "it's working fine" is hiding a problem — plenty of code genuinely does work correctly, including code nobody's formally verified. The point is narrower: track record is a weak substitute for comprehension, because a track record only covers what's already happened, while a founder's actual risk sits in what hasn't happened yet. The comprehension check described earlier in this article exists precisely because it tests understanding directly, rather than inferring it from an absence of visible failure so far.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Onboarding Questions That Exposed a Gap Nobody Knew Existed

@@ -42,6 +42,20 @@ The practical fix for this is cheap: before accepting an AI-generated bug fix, r
 
 Our engineers, including the team based in Singapore, spend a meaningful share of every codebase review specifically hunting for exactly this pattern — errors that were silenced rather than solved. LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, and part of that is treating "the error is gone" as the start of a review, not the end of one. If you want a second pair of eyes on a fix an AI tool handed you, you can [describe your project through our process](https://launchstudio.eu/en/#process) and get a straight answer. For how we think about engineering discipline more broadly, see [Manifera's approach to custom software development](https://www.manifera.com/services/custom-software-development/).
 
+## The Three Faces of "Fixed"
+
+Not every AI-generated fix that makes an error disappear is doing the same thing underneath, and it helps to know the difference before you've read a single diff, because it changes what you're actually looking for.
+
+**The genuine fix.** The AI traced the error back to its actual cause and corrected it there — a missing null check became a proper validation at the point data enters the system, not a check somewhere downstream papering over the fact that it arrived invalid. This kind of fix tends to touch the origin of the problem, not just the place where it became visible. It's identifiable by asking the tool to explain why the original value was wrong in the first place; a genuine fix has a specific, traceable answer.
+
+**The relocated fix.** The error stopped happening at the exact place you showed the AI, but only because the tool moved the failure point somewhere less visible rather than removing the underlying cause. A null value that used to crash a function loudly now gets caught two layers up, in a general error boundary, where it fails just as invalidly but without telling anyone. The bug hasn't been fixed or hidden exactly — it's been relocated to a place where it's technically still failing, just quietly and further from where you were looking.
+
+**The cosmetic fix.** The error message is gone and nothing about the underlying behavior changed in a way that matters — a try/catch swallowed the exception, a default value got returned in its place, and the code now reports success regardless of whether the operation actually did anything. This is the version described at length above, and it's the most common outcome when a tool is prompted with nothing more specific than "this crashed, fix it," because suppressing the crash is the fastest way to satisfy that exact instruction.
+
+**Telling them apart from the diff alone.** A genuine fix usually changes code near where data originates or gets validated. A relocated fix usually adds a new catch or check somewhere upstream of where the original error surfaced, without touching the actual source. A cosmetic fix usually adds a catch, a default, or an early return at almost exactly the same spot the original error occurred, with no meaningful logic change beyond suppression. Reading where the diff actually touches the code, relative to where the original crash happened, is often enough to sort a fix into one of these three categories before you've even tested it.
+
+Knowing which of the three you're looking at changes what you do next: a genuine fix can be trusted and moved on from, a relocated fix needs the same "why" question asked one layer further up, and a cosmetic fix needs to be treated as an open bug that happens to no longer throw an error — which, as covered above, is a more dangerous state to ship than the original crash ever was.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Bug That Learned to Hide

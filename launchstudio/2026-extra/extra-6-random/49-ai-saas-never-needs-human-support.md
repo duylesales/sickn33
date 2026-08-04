@@ -54,6 +54,24 @@ The practical fix is straightforward: define, in advance, which categories of re
 
 Our engineers, working from Ho Chi Minh City alongside teams in Amsterdam and Singapore, regularly help SaaS founders build exactly this kind of handoff logic into products that started, like AfspraakSlim, with an AI-only support assumption. LaunchStudio brings Manifera's enterprise-grade engineering to that work, the same standard behind Manifera's [web app development services](https://www.manifera.com/services/web-app-develop/). If your product's support plan is currently "the bot handles it," you can [calculate what building a proper fallback path would cost](https://launchstudio.eu/en/#calculator).
 
+## A Category-by-Category Framework for What to Automate and What to Escalate
+
+The general rule — automate the routine, escalate anything involving money, disputes, or repeated failure — is easy to state and harder to apply consistently across every kind of request a real product actually gets. A category-by-category pass, run once against your own product's typical support volume, turns the general rule into specific, checkable handoff logic.
+
+**Account and login issues.** Password resets and basic access recovery are safe to automate almost entirely — low stakes, well-defined, and a wrong answer just means trying again. Account recovery involving a compromised or disputed account, however, belongs with a human immediately, since verifying identity correctly matters more than resolving it quickly.
+
+**Billing and refunds.** Straightforward questions — "when does my subscription renew," "how do I update my card" — are safe to automate. Anything involving a disputed charge, a requested exception to stated policy, or a customer who's clearly frustrated about money should escalate on the first message, not after the bot has already tried and failed to resolve it, since a delayed escalation on a money issue compounds the frustration rather than defusing it.
+
+**Scheduling and double-booking conflicts.** Routine rescheduling is automatable. Any conflict involving two parties with competing claims on the same resource needs a human, because resolving it fairly requires judgment about circumstances the assistant has no framework for weighing.
+
+**Bugs and technical issues.** A known, documented issue with a known fix is safe for an assistant to resolve directly. A new or unclear technical report should escalate after at most one clarifying exchange, since an assistant that keeps guessing at an unfamiliar problem burns a frustrated user's patience without making progress.
+
+**Feature questions and how-to requests.** This is the category an assistant is best suited for and should handle almost entirely — it's low-stakes, well-documented, and a wrong or incomplete answer costs little beyond having to ask again.
+
+**Disputes between two users.** Any situation involving two customers with opposing accounts of what happened — a cancellation dispute, a disagreement over service quality, a he-said-she-said — should route to a human by default, categorically, rather than case by case, because an assistant siding with either party, or appearing to, damages trust regardless of whether it happened to be right.
+
+Running your own product's actual support history against these six categories, even informally, usually reveals that the automatable share is larger than founders initially assume and the escalation-worthy share is smaller but far more consequential per incident. The goal isn't to minimize how much reaches a human — it's to make sure the right fraction does, reliably, before a frustrated customer has to escalate the problem themselves by leaving.
+
 ## Real example
 
 ### An AI-Native Founder in Action: When the Bot Ran Out of Answers

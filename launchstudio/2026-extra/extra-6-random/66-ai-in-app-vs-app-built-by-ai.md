@@ -40,6 +40,20 @@ Being specific costs one extra sentence and saves the correction later: name the
 
 LaunchStudio brings Manifera's enterprise-grade engineering to exactly this kind of clarity question — helping founders describe accurately what an AI coding tool actually produced versus what was built around it. Our team, working out of our Ho Chi Minh City engineering center among others, regularly helps founders document this distinction before an investor or enterprise buyer asks. If you're preparing for a due diligence conversation, [describe your project and we'll respond within one business day](https://launchstudio.eu/en/#process) with an honest read on how it holds up. Manifera's [about us](https://www.manifera.com/about-us/) page covers the broader engineering track record behind that read.
 
+## Reading the Signals: How to Tell Which One You Actually Have
+
+Founders navigating this distinction don't need a formal audit to get a first read on which category their own product actually falls into — a few concrete signals, checked honestly, usually settle it before anyone brings in an outside reviewer.
+
+**Where the AI actually touched the code.** Open your own repository and look at what the AI-generated feature actually consists of: is it a self-contained module — a chat component, a summarization function, an API call to a model provider — sitting inside a codebase that was otherwise scaffolded and extended through normal development? Or does the AI's fingerprint run through the account system, the database schema, and the authentication logic too? The first pattern is "AI in the app." The second is closer to "app built by AI," even if a human reviewed and adjusted the output along the way.
+
+**How much of your own attention went where.** Founders who built one AI feature inside a conventionally developed app usually remember spending the bulk of their own time on the non-AI parts — user flows, data models, business logic — with the AI feature as one component among many. Founders whose entire app was AI-generated end to end usually remember the opposite: most of their attention went into prompting and iterating with the tool across the whole build, not just one feature.
+
+**What a technical reviewer would actually find.** If someone opened your codebase cold, would they find one clearly bounded AI integration sitting inside conventionally structured code, or would they find AI-generated patterns — the same default choices, the same structural habits — recurring throughout the entire application? This is the single most reliable signal, because it's the one an investor's technical diligence will actually check, regardless of how you described the product going in.
+
+**Whether the distinction even matters for your specific claim.** Not every founder needs to draw this line sharply. If you're not raising money, not selling into an enterprise buyer with a security team, and not fielding acquisition interest, the ambiguity in "AI in the app" rarely costs anything in practice — it only becomes expensive at the exact moments listed above, where someone with a reason to probe starts asking questions that assume the bigger claim.
+
+Running through these four checks takes an afternoon, not a formal engagement, and the output is worth having regardless of whether you're heading into a due diligence conversation soon: a one-paragraph, accurate description of what's actually AI-generated in your product and what isn't, written down before you need it rather than reconstructed under pressure in a room where a correction reads worse than clarity would have going in. Founders who've done this exercise once tend to keep the paragraph updated as the product evolves, since the answer can shift as more of the app gets touched by an AI tool over time — a chatbot added last month, a backend refactor done conventionally last week, each changing the accurate description slightly.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Chat Widget That Became the Whole Pitch

@@ -48,6 +48,22 @@ None of these terms are complicated once explained. The problem is that AI codin
 
 LaunchStudio's engineers, working out of Amsterdam among other offices, run through exactly this checklist — RLS, RBAC, JWT handling, CORS configuration, and credential exposure — on every prototype review. If you want a walkthrough of your own app in this same plain language, [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and we'll tell you which of these five terms actually apply to your codebase. For a deeper look at how these principles scale into enterprise-grade builds, see [Manifera's company background](https://www.manifera.com/about-us/).
 
+## Five More Terms You'll Hear on a Follow-Up Call
+
+The five terms above cover what comes up on almost every first call. If your review goes deeper — or a second issue gets found and you're on a follow-up call working through fixes — these five tend to come up next. Same approach: plain language, no assumption you already know any of it.
+
+**IDOR — Insecure Direct Object Reference.** This is the formal name for the specific failure pattern RLS is meant to prevent: an app that lets you access a record just by knowing or guessing its ID, without checking whether it's actually yours. If an engineer says "this endpoint is vulnerable to IDOR," they mean exactly the invoice-swapping problem described above — it's the same gap, just named from the attacker's side instead of the defender's.
+
+**Rate Limiting.** This controls how many requests a single user or IP address can make in a given period. Without it, a single script can hammer your signup form, your login page, or your API thousands of times a minute — running up costs, flooding a database, or brute-forcing a password by simply trying every combination until one works. AI coding tools rarely add this by default, because a working demo never sends more than a handful of requests.
+
+**Webhook Signature Verification.** If your app receives data from a payment processor or another external service via a webhook — a message the other service sends you when something happens — signature verification confirms that message actually came from that service, and not from someone who simply guessed your webhook's URL and sent a fake "payment succeeded" message of their own.
+
+**ORM — Object-Relational Mapping.** This is the layer of code that translates your app's logic into database queries. It matters here because a well-configured ORM makes a category of database attacks (like SQL injection) much harder to introduce accidentally, while a raw, hand-written query bypassing the ORM reopens exactly that risk if it isn't handled carefully.
+
+**Least Privilege.** Not a specific technology, but a principle worth knowing: every part of your system — a database user, an API key, a service account — should have only the access it actually needs to do its job, nothing more. A backend that connects to your database with full administrative rights, when it only ever needs to read and write a few specific tables, is violating least privilege, and it turns a small bug into a much bigger one if that connection is ever compromised.
+
+Knowing these five doesn't make the follow-up call shorter, but it makes it a conversation instead of a lecture — and it means the next time an engineer uses one of these terms, you already have a plain-language anchor for what they're actually describing.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Term He'd Never Heard

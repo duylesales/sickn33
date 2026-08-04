@@ -46,6 +46,20 @@ A founder who's genuinely excellent at prompting and reasonably good at reviewin
 
 The fix isn't to become equally expert at all three. It's to recognize which of the three you're weak in and get help specifically there, rather than assuming general AI-coding competence covers it. LaunchStudio brings Manifera's enterprise-grade engineering — the same standard behind 160+ delivered projects — specifically to the architecture layer that technical founders most often underinvest in. Our engineers, working from Ho Chi Minh City, routinely step in exactly where a founder's prompting and diff-review skills are strong but the underlying data model needs a second, more experienced set of eyes. You can [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) about which of the three skills your own product might be missing. Manifera's approach to software architecture is outlined on its [custom software development page](https://www.manifera.com/services/custom-software-development/).
 
+## A Quick Self-Assessment: Which of the Three Are You Actually Weak In?
+
+Knowing the three skills exist is different from knowing which one you're personally weak in, and most founders have never actually separated the question out. A few honest questions for each skill give a rough but useful read.
+
+**For prompting:** When an AI tool's first attempt at a feature misses what you meant, do you know specifically why — missing context, an ambiguous instruction, an edge case you didn't mention — or does it just feel like "I have to try again"? Founders strong at prompting can usually name the specific gap in their own instruction after the fact. If every miss feels equally mysterious, prompting itself, not just luck, may be the weaker skill.
+
+**For diff review:** Pick your last five merged AI-generated changes at random and ask yourself honestly: did you read every line, or did you run it, see that it worked, and move on? If your review process is mostly "does it function as demoed," you're testing the happy path the AI tool was already optimized to pass, which tells you very little about the edge cases and logic errors a real review is meant to catch.
+
+**For architecture:** Take your current data model and ask what would break if your very first customer's setup turned out to be the unusual case rather than the typical one — a second location, a second role, a shared account, a different billing arrangement. If you can't answer quickly, or if the honest answer is "I've never actually asked that question," architecture is very likely the underdeveloped skill of the three, since this is precisely the kind of question that doesn't arise naturally from building for the customer directly in front of you.
+
+A useful pattern, once you've gone through this: founders are rarely weak in exactly one skill and strong in the other two by coincidence. Prompting and diff review both develop through frequent, immediate feedback — you find out fast whether a prompt worked or a bug slipped through. Architecture develops through slower, delayed feedback — you often don't find out your data model was wrong until months later, when a second customer or a new feature reveals it. That asymmetry is precisely why architecture is disproportionately the weak one, not because founders are careless about it, but because nothing in the day-to-day rhythm of building with AI tools naturally trains it the way the other two get trained by simple repetition.
+
+If your self-assessment points at architecture, that's not a verdict on your overall competence with AI-assisted development — it's a specific, fixable gap, and usually the one worth getting outside help with first, since it's both the hardest to self-train and the most expensive to leave unaddressed.
+
 ## Real example
 
 ### An AI-Native Founder in Action: strong at two skills, weak at the third

@@ -38,6 +38,20 @@ If you're building alone with an AI coding tool, you experience the app the way 
 
 Manifera's team of 120+ engineers, working out of Amsterdam and beyond, treats this specific gap — UI-level restriction standing in for real authorization — as one of the first things worth checking in any AI-generated codebase. If you want a second set of eyes on whether your own app's roles are actually enforced or just displayed differently, our [process page](https://launchstudio.eu/en/#process) walks through how that review works, and Manifera's [about us](https://www.manifera.com/about-us/) page covers the broader engineering background behind it.
 
+## The Three Layers Authorization Has to Live at, and Where AI Tools Usually Stop
+
+"Enforce it on the server, not just the interface" is correct as far as it goes, but it collapses three genuinely different layers into one instruction, and AI-generated codebases tend to stop at different points among the three depending on the tool and the feature. Knowing the layers separately makes it possible to check each one instead of assuming that clearing the first means the other two are covered.
+
+**Layer one: the interface.** This decides what a user sees — which buttons render, which menu items appear, which fields are editable on screen. It's the layer "user AI" personalization lives in, and it's almost always built carefully, because it's visible and demoable. On its own, it provides zero actual security, because anyone who can bypass the interface entirely — by sending a request directly rather than clicking a button — is completely unaffected by what the interface would or wouldn't have shown them.
+
+**Layer two: the application or API layer.** This decides whether an incoming request is even allowed to proceed, before it touches any data — checking, for instance, whether the authenticated account's role permits the action being requested at all. This layer is inconsistent in AI-generated code: sometimes it exists as a genuine check ("is this account an admin?"), and sometimes it exists only as a route that happens to require login, without actually checking whether the logged-in account has the specific permission the action requires.
+
+**Layer three: the data layer itself.** This is the deepest and most reliable layer — the point where a specific record is actually read or written, and where the system confirms the requesting account owns or has rights to that specific record, not just permission to the general category of action. This is the layer that catches the case where someone is authorized to edit their own profile but attempts to edit someone else's by changing an ID in a request. Without an ownership check at this layer, a role check at layer two isn't enough, because "can edit profiles" and "can edit this specific profile" are different permissions entirely.
+
+The pattern worth internalizing: layer one is nearly always built, because it's what a demo shows. Layer two is often partially built, because "requires login" is easy to add and looks like enough. Layer three — the one that actually determines whether one account can reach another account's specific data — is the one most reliably missing, precisely because it's the least visible and the hardest to notice is absent during normal use, where every account naturally only ever requests its own data through the interface as designed.
+
+A useful shorthand for checking your own app: if you can name every place layer three's ownership check happens, in specific terms, you probably have it. If the honest answer is "the login requirement should cover that," you're describing layer two and calling it layer three, which is exactly the gap this category of vulnerability lives in.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Portal Where Every Member Could Edit Everyone

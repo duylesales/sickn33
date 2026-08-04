@@ -38,6 +38,22 @@ Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it 
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and its European headquarters sits on Herengracht in Amsterdam, close to much of the AI-native founder community it serves. If you're staring at a broken feature right now wondering whether to open a tutorial or ask for help, [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) before you commit a weekend to finding out the hard way. For a sense of what disciplined engineering looks like at scale, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice shows the same instincts applied to enterprise clients.
 
+## If You're Going to Learn, Learn This Way
+
+If you've read the "when it actually helps" section above and recognized yourself in it — you're the sole long-term operator, or you're genuinely drawn to it, or a core part of your product depends on a detail only you fully understand — the how matters almost as much as the decision itself. Learning to code badly, at the wrong moment, in the wrong environment, recreates the exact crisis-response problem this article is arguing against, just on a longer timeline.
+
+1. **Do it on a copy, never on the live product.** Set up a separate development or staging version of your app before you touch anything, and make every early mistake there instead of in front of paying customers. This sounds obvious written down and is somehow still the step most self-taught founders skip, because the live version is the one that's already familiar and the copy feels like extra setup work.
+
+2. **Pick a genuinely low-stakes area to start, not the part that handles money or access.** A styling tweak, a small content change, a new page that doesn't touch existing logic — these are safe places to build real understanding without risking the parts of your product where a mistake is expensive. Resist the pull toward learning by fixing whatever's currently most broken; that's exactly backwards from a learning-safety standpoint.
+
+3. **Set yourself a hard rule: never learn during an active incident.** If something is broken right now and a customer is affected, that moment is reserved for whoever already knows the codebase, not for your own education. This isn't a judgment on your ability to learn — it's a recognition that stress and unfamiliarity together produce exactly the kind of second mistake described above, regardless of how capable the person under that pressure is.
+
+4. **Get your first few real changes reviewed by someone who already knows the codebase, before they ship.** Not after there's a problem — before. A second set of experienced eyes on your early work catches the kind of subtle, partial-understanding mistake that's genuinely hard to see in your own code when you're still building the mental model of how the whole system fits together.
+
+5. **Track what you've actually touched versus what remains untouched AI-generated code.** As your own changes accumulate, keep an honest, simple record of which parts of the app reflect your own understanding and which parts are still original AI output you haven't personally reviewed. This is the same labeling discipline that prevents the exact kind of confusion where different parts of a codebase are at genuinely different levels of scrutiny and nobody's written down which is which.
+
+None of this is about gatekeeping who's "allowed" to learn to code. It's about sequencing the learning so it happens on your own schedule, in a low-stakes environment, with a safety net — instead of happening for the first time under the exact pressure this article opened by warning against.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Twan Hermans and the Weekend That Cost Two Extra Weeks

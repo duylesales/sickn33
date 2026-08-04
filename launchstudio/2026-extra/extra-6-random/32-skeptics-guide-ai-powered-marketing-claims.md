@@ -50,6 +50,22 @@ That gap between "can't easily verify" and "must trust the marketing" is exactly
 
 Manifera's engineers — 120+ of them, with 11+ years building production systems for clients like Vodafone and TNO — spend a fair amount of time doing exactly this kind of evaluation on behalf of founders, distinguishing tools with real analysis capability from tools with real marketing budgets. Our Singapore hub works with Southeast Asia-based founders on this specific due diligence before any production launch. If you want a second opinion on a security vendor you're evaluating, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and we'll tell you honestly what we think the tool actually does. For a broader look at how production-grade engineering teams approach this, Manifera's [portfolio](https://www.manifera.com/portfolio/) shows the kind of security rigor applied across 160+ delivered projects.
 
+## Five More Phrases That Deserve the Same Scrutiny
+
+"AI-powered" isn't the only adjective doing more marketing work than technical work in this space — it's just the most current one. A handful of other phrases have gone through the exact same drift, from meaning something specific to meaning "trust us," and they're worth the same treatment: asking what the noun actually refers to, rather than accepting the adjective as a substitute for an answer.
+
+**"Enterprise-grade."** This phrase implies a specific level of rigor — audited processes, defined SLAs, a track record with organizations that have their own procurement standards. It's also frequently applied to tools with none of that behind them. The useful question isn't "is it enterprise-grade," it's "which enterprises, doing what, for how long" — a question with a checkable answer, unlike the adjective alone.
+
+**"Bank-level" or "military-grade" encryption.** These phrases describe a level of encryption strength that, in most cases, simply refers to standard, widely available encryption algorithms every reputable service already uses by default. The phrase implies something exceptional is happening; in practice it's frequently describing the baseline. The more useful question is what's actually encrypted, at rest or only in transit, and who holds the keys — details the adjective conveniently skips.
+
+**"Fully automated" review or monitoring.** Automation is a genuine capability, but "fully automated" often obscures whether a human ever looks at what the automation flags before it reaches you, or whether the tool's output goes straight to a dashboard nobody's reviewing closely. Ask specifically what happens between a finding being generated and a person acting on it.
+
+**"Compliant" without naming a specific standard.** Compliance is close to meaningless as a standalone adjective — compliant with what, verified by whom, as of which date? A tool that's vague about which specific framework it's compliant with, or unable to produce documentation of an actual audit, is using the word as reassurance rather than as a factual claim.
+
+**"Continuous" monitoring or scanning.** This one sounds like a frequency claim but is sometimes really a marketing description of a tool that runs on a fixed schedule far less frequent than "continuous" implies — once a day, or even once a week. Ask for the actual interval, in specific units, rather than accepting a word chosen for its reassuring rhythm.
+
+The pattern across all five is identical to the one covered above: an adjective standing in for a specific, checkable fact, deployed precisely because most buyers won't ask the follow-up question. None of these phrases are inherently dishonest on their own — a tool genuinely can be enterprise-grade, genuinely compliant, genuinely continuous. The point isn't to assume every vendor is overselling. It's to make the vendor answer the specific version of the claim before you decide how much weight to give the general one.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The linter wearing a security badge

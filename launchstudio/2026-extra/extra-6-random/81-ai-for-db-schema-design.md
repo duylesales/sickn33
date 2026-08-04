@@ -65,6 +65,22 @@ None of this means AI-for-DB tools are unfit for use. They're genuinely fast at 
 
 Our engineers, working out of Ho Chi Minh City and running these audits daily, treat schema review as a first pass before any frontend gets touched — the goal is always to keep the founder's original build intact and layer in the missing constraints, not start over. LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and this exact pattern — AI-generated schema, missing constraint, discovered by an angry customer — is one of the most frequent reasons founders reach out to us. If you want a second pair of eyes on a schema before it ships, you can [describe your project through our process](https://launchstudio.eu/en/#process) and we'll tell you plainly what's missing. For how Manifera approaches data architecture more broadly, see our [custom software development services](https://www.manifera.com/services/custom-software-development/).
 
+## Five More Schema Gaps Worth Checking Beyond Unique Constraints
+
+The missing-unique-constraint pattern above is the single most common gap, but it's rarely the only one in a given AI-generated schema. A handful of others show up often enough to be worth a specific look before launch, none of them exotic, all of them the kind of thing that's invisible until the exact scenario that exposes it happens.
+
+1. **Undefined foreign key delete behavior.** Every foreign key relationship needs an explicit decision about what happens on deletion — does deleting a customer cascade to delete their orders, or does it get blocked, or does it orphan the records instead? AI-generated schemas frequently leave this at whatever the database's default happens to be, which is sometimes "block the deletion entirely" and sometimes "silently cascade," neither of which is necessarily what your business logic actually needs. Check every foreign key explicitly rather than trusting the default.
+
+2. **Money stored as a floating-point number.** Storing prices, balances, or any currency value as a float instead of an integer number of cents (or a fixed-precision decimal type) introduces rounding errors that compound over enough transactions. It looks correct in every manual test, because the errors are usually too small to notice individually, and shows up months later as numbers that don't quite reconcile and nobody can explain why.
+
+3. **No constraint on status or state fields.** A column meant to hold one of a fixed set of values — "pending," "paid," "refunded" — frequently gets generated as an unconstrained text field instead of an enum or a check constraint. Without the constraint, a typo or a bug can write an invalid status straight into the database, and any code reading that column has to defensively handle a value nobody intended to exist.
+
+4. **Missing indexes on columns that get queried, not just columns that get joined.** AI schema generators tend to index primary and foreign keys reasonably well, but often miss indexes on columns used heavily in `WHERE` clauses or sorting — a status filter, a date range, a search field. This is invisible at low data volume, because every query is fast when a table has a few hundred rows, and becomes a real, customer-visible slowdown once it has a few hundred thousand.
+
+5. **Timestamps stored without timezone information.** A naive timestamp column, with no timezone attached, works fine as long as your team and your users are in one timezone. It becomes a genuine source of bugs — a booking that appears to happen an hour earlier or later than it actually did — the moment either your team or your customers span more than one, which happens sooner than most founders plan for.
+
+None of these five require a rebuild to fix, and none of them are visible in the kind of manual testing a founder does while confirming a feature works. They're the kind of thing a schema review specifically looks for, because each one behaves identically to a correct schema right up until the specific condition that exposes it — usually a scale, a timezone, or an edge case that testing never happened to hit.
+
 ## Real example
 
 ### An AI-Native Founder in Action: the webhook that billed twice

@@ -40,6 +40,24 @@ The dangerous part of this whole framework is that types one, two, and three loo
 
 If you've said "it works" about a feature recently and aren't sure which type you meant, that uncertainty is worth resolving before customers resolve it for you. [Send us your prototype link for free advice](https://launchstudio.eu/en/#contact) on which type of "it works" your app is actually operating under right now. Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) team applies this same structured-testing discipline to enterprise products, where the cost of an undiscovered type-one claim is measured in a different order of magnitude.
 
+## A Starter Checklist for Reaching Type Three on Your Own
+
+Getting from "it works for me" to "it works under conditions I haven't personally tried" doesn't require a formal QA department or specialized tooling to start — it requires deliberately trying things you have no natural instinct to try, because your own use of your own app will never generate these test cases on its own. Here's a starting checklist that surfaces a meaningful share of the gap without outside help.
+
+**Create a second account with a different role, and never touch your original one again for testing.** If your app has any concept of roles or permission levels, spin up a genuinely separate account at the most restricted level available and run your core flows exclusively from there. Whatever silently breaks is invisible from an admin account and often invisible from any account that happens to share your own permission level.
+
+**Do the steps out of the expected order.** Click "confirm" before filling in every field. Go back a step using the browser's back button instead of the app's own navigation. Submit a form twice in quick succession. Founders naturally follow the path they designed; real users don't, and the app's behavior under an unexpected sequence is often untested by definition, because nobody designed a test for a sequence nobody expected.
+
+**Try a boundary value on every numeric or date field.** Zero, a negative number, a date far in the past or future, a number far larger than any realistic input. These aren't edge cases in the dismissive sense — they're the specific inputs that separate "works for the values I tried" from "works for the values that are actually possible."
+
+**Open the app in two browser tabs and act as two different users at once.** Book the same slot, edit the same record, or submit the same form from both tabs within seconds of each other. Concurrent actions are one of the most reliable sources of bugs that never appear in single-user testing, because a single person testing alone can't accidentally create a race condition.
+
+**Let the network fail on purpose.** Most browsers let you throttle or disable the network connection through developer tools. Submit a form, then kill the connection mid-request, and see what the app tells the user. A silent failure with no feedback is a far worse experience than a clear error message, and it's a gap that a working demo, tested only under a stable connection, will never reveal.
+
+**Ask someone who's never used the app to try it cold, with no guidance.** Not a friend who already knows how it's "supposed" to work — someone genuinely unfamiliar, watching what they naturally try first. Their first three actions are frequently the ones you'd never have tested yourself, precisely because you already know what the app expects.
+
+Running through this list won't get you all the way to a genuine type-three claim — some gaps only surface under real usage volume or genuinely adversarial conditions a founder can't easily simulate alone. But it closes a meaningful share of the distance, and more importantly, it changes what "it works" means when you say it next: not a feeling based on your own comfortable path through the app, but a claim backed by at least a few conditions you deliberately tried to break.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Jesse van Dam's Admin-Only App

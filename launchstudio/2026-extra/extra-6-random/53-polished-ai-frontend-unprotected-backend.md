@@ -40,6 +40,22 @@ Manifera brings the same production-hardening discipline to AI-generated backend
 
 The good news buried in this problem is that fixing it doesn't require touching the frontend at all. Rate limiting, request validation, and basic backend hardening are additive — they sit behind the interface customers already trust, protecting it rather than replacing it. A founder doesn't need to sacrifice the polish they've built to close this gap; they need someone to look at the layer nobody can see and confirm it can actually hold up the layer everyone judges the product by.
 
+## Five Questions a Non-Engineer Can Actually Ask to Check What's Behind the Polish
+
+You don't need to read code to get a rough sense of whether your backend has been thought about at all. You do need to ask the right questions, of the right person, and actually wait for a specific answer rather than a reassuring one. These five don't require any technical background to ask — only to notice when the answer you get back is vague.
+
+**"What happens if someone sends a thousand requests to this endpoint in a minute?"** A specific answer sounds like "requests get capped at X per minute and the excess get rejected with an error." A vague answer sounds like "it should be fine" or "we haven't run into that." The second answer means nobody has actually checked, which is functionally the same as having no protection at all.
+
+**"Is there anything in place to reject malformed or unexpected data before it reaches the database?"** This is asking about input validation, and it's a fair question even if you don't know the term. If the answer involves any version of "the frontend form only lets you type valid data," that's not an answer — a frontend form is trivially bypassed by anyone sending a request directly, which has nothing to do with what a customer typing into a box would normally do.
+
+**"Has anyone actually tried to break this, on purpose?"** Not "has it been tested" in the sense of clicking through the features and confirming they work — that's functional testing, and it tells you nothing about resilience. The question is whether anyone has deliberately tried to overload it, send it garbage input, or hit it faster than a normal user ever would, specifically to see what happens.
+
+**"If the backend went down for an hour, would I find out from a monitoring alert or from a customer email?"** This isn't strictly about rate limiting or validation, but it's diagnostic of the same underlying gap: a team that hasn't hardened the backend usually also hasn't set up anything to tell them when it's struggling, which means the first signal is always a customer, and always too late.
+
+**"What's the plan if this endpoint gets hit by an automated scanner or bot, not maliciously, just running its default settings?"** This is worth asking because it's exactly the scenario that tends to actually happen — not a targeted attacker, just an automated tool doing what automated tools do, at a volume nobody planned for.
+
+None of these questions require you to evaluate the technical answer yourself. What they require is noticing the difference between a specific, concrete response and a confident-sounding non-answer. "It should hold up" is not the same sentence as "it's capped at a defined rate and we've tested it against a load spike three times larger than anything we expect." If you ask all five and get vague versions of all five answers, that's not proof something is broken — but it's a clear signal nobody has actually looked, which, given how invisible this category of gap is until it fails, is worth treating as the same problem.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Afternoon the API Went Dark

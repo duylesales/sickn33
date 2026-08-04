@@ -40,6 +40,20 @@ This is the part that a phrase like "AI in your database" completely obscures: a
 
 Manifera's engineers — with 11+ years of production engineering experience — have handled exactly this category of problem across AI-generated codebases where a feature worked in testing and then locked up under real concurrent load. Our Amsterdam team specifically reviews database schema and indexing as part of any production-readiness assessment. If your own app has an AI search feature you haven't load-tested against real concurrency, [calculate what a database review would cost](https://launchstudio.eu/en/#calculator), and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice covers the deeper engineering discipline behind getting this right the first time.
 
+## Three Categories of AI Database Features, Ranked by Locking Risk
+
+Not every "AI in the database" implementation carries the same amount of risk, and it's worth knowing which category your own feature falls into before assuming the worst — or, just as often, before assuming you're fine because nothing has broken yet.
+
+**Category one: vector search sharing the same table as transactional data.** This is the highest-risk pattern, and the one covered above — a similarity-search column added directly to a table your application also reads and writes for ordinary operations, with no index and no isolation. Every AI search query and every regular transaction are competing for a lock on the same table, and the two workloads have nothing to do with each other except geography.
+
+**Category two: a dedicated AI-feature table, joined back to core data.** Slightly safer — the embeddings live in their own table, referenced by a foreign key back to the records they describe. This avoids locking the core transactional table directly, but the join itself can still be expensive if the vector table is unindexed, and a slow join can still hold up whatever query depends on its result, even without a full table lock on your booking or order data specifically.
+
+**Category three: a fully separate store, synced asynchronously.** The lowest-risk pattern keeps vector data in a store built for it — a dedicated vector database or a clearly separated schema — updated through an async process rather than queried inline against live transactional tables. A slow or even failing AI search feature in this pattern degrades gracefully: search results might lag or time out, but bookings, orders, and everything else your app actually depends on keep running unaffected.
+
+**Which category you're actually in isn't always obvious from the outside.** A feature can look identical from the user's perspective — type a query, get similar results back — regardless of which of the three patterns sits underneath it. The only way to know for certain is to open the schema and check where the vector column actually lives and what else reads from or writes to the same table, rather than inferring safety from the fact that the feature has worked fine so far.
+
+A quick way to check your own risk category today: find the table your AI search or recommendation feature queries, and list every other feature in your app that also reads or writes that same table. If the list is empty, you're closer to category three. If it includes anything core to your product's main workflow — the tables your busiest, most revenue-relevant feature depends on — you're closer to category one, and it's worth confirming the indexing and isolation questions covered above before real concurrent traffic finds the gap for you instead.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Search Feature That Locked Every Booking

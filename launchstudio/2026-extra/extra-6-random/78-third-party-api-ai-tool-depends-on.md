@@ -40,6 +40,20 @@ The fix starts with an honest audit: for every feature in your app that reaches 
 
 Our engineers based in Ho Chi Minh City map exactly this kind of hidden dependency chain on every codebase we review, because it's rarely obvious from reading the feature list alone. Our engineers have shipped 160+ projects for enterprise clients, and dependency mapping like this is a standard part of getting a prototype ready for real usage. You can [calculate what a dependency audit for your app would cost](https://launchstudio.eu/en/#calculator) before you find out the hard way which service is quietly load-bearing. For more on our engineering approach, see [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/).
 
+## Three Tiers of Dependency Risk, and How to Sort Your Own App Into Them
+
+Not every hidden dependency deserves the same amount of concern, and sorting them into three tiers by actual consequence — rather than treating "I found an unexpected service" as uniformly alarming — makes the audit described above faster and more useful.
+
+**Tier one: dependencies where failure is annoying but recoverable.** A formatting service, a non-critical image optimizer, a nice-to-have enhancement that degrades the experience without breaking anything essential if it goes down. These are worth knowing about, but a missing fallback here is a lower priority than the categories below — the cost of an outage is a temporarily worse experience, not a real-world consequence.
+
+**Tier two: dependencies where failure is invisible and consequential.** This is the most dangerous of the three precisely because it doesn't announce itself. The feature appears to work from inside the app — the button was pressed, the function returned successfully — while the real-world action it was supposed to trigger silently didn't happen. Notifications, alerts, and anything that's supposed to reach a person outside the app belong here, because a silent failure in this tier doesn't just degrade an experience, it creates a false sense that something happened when it didn't.
+
+**Tier three: dependencies where failure is loud and immediate.** Payment processing is the clearest example — when a payment provider goes down, the transaction visibly fails, the user sees an error, and everyone involved knows immediately that something didn't work. Loud failures are genuinely less dangerous than they feel, precisely because they're impossible to miss; the response ("try again," "contact support") is at least triggered by something visible.
+
+**Sorting your own dependencies into these three tiers.** For each third-party service uncovered in the audit described above, ask one question: if this service went down for an hour right now, would you find out from a user complaint, from an error message, or not at all until someone downstream noticed a real-world gap? "Not at all" sorts into tier two and deserves the most urgent attention, regardless of how minor the feature seems on the surface. "Error message" sorts into tier three and is usually lower priority, since the failure mode already surfaces itself. "Degraded experience" sorts into tier one.
+
+This sorting exercise matters because a founder auditing dependencies for the first time often has limited time to fix everything at once, and tier two — the quiet, consequential failures — is exactly where the most damage tends to hide: a service failing with no visible signal, doing real harm precisely because nothing about the failure announced itself until a human noticed the downstream consequence directly, often well after the fact.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Alert That Depended on a Stranger

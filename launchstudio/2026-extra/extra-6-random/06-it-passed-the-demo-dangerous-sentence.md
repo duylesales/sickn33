@@ -36,6 +36,20 @@ This is really a gap between two very different kinds of confidence. "It worked 
 
 LaunchStudio brings Manifera's team of 120+ seasoned engineers to exactly this gap, running the concurrency, load, and failure-path testing that a solo demo structurally can't cover, with engineers based in Ho Chi Minh City who specialize in stress-testing AI-generated backends before real users find the cracks. If your app has only ever been tested by you, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) about what a real pre-launch test actually covers. Manifera's own [custom software development](https://www.manifera.com/services/custom-software-development/) process treats this kind of testing as a required stage, not an optional add-on.
 
+## The Blind Spots a Solo Demo Structurally Can't Catch
+
+Concurrency is the most visible example of a demo's blind spot, but it's one of four distinct categories of condition a solo demo structurally never encounters — because a founder testing their own app is, by definition, never in an adversarial, distracted, or unlucky state of mind. Recognizing all four helps explain what a genuine pre-launch test actually needs to cover.
+
+**Partial failure.** A demo runs on a good internet connection, on a device that doesn't crash mid-action, talking to third-party services that happen to respond normally that day. Real usage includes a payment processor that times out after charging the card but before confirming it, a page refresh halfway through a multi-step form, a mobile connection that drops between step two and step three of a checkout. AI-generated code, built and validated against the version of events where nothing interrupts it, frequently has no defined behavior for what happens when something does — it just does whatever the unhandled error produces, which is rarely what anyone intended.
+
+**Adversarial input.** You, demoing your own app, type reasonable things into form fields, because you're checking that the feature works, not trying to break it. A real user — sometimes accidentally, sometimes on purpose — pastes in something far longer than expected, submits a form with a field left blank that your prompt never mentioned needed validation, or tries an email address format your signup flow never anticipated. None of this requires malice. Ordinary carelessness produces the same inputs an actual attacker would use deliberately.
+
+**Scale threshold.** A feature that works cleanly with ten records in a database can behave completely differently with ten thousand — a query that scans every row instead of using an index, a page that tries to render an unbounded list all at once, a report that was fast in testing because testing never had enough data to make it slow. A demo, run against a mostly empty database, structurally cannot surface this category of problem, because the problem doesn't exist yet at demo scale.
+
+**Timing and ordering.** Beyond simple concurrency, this covers what happens when steps in a process happen out of the order they were designed for — a webhook arriving before the record it references has finished being created, a background job running before its prerequisite job has completed, a user navigating back and resubmitting a step they already completed once. AI-generated flows are usually built assuming a strict, linear order of events, and real usage doesn't reliably respect that assumption.
+
+None of these four categories require exotic testing infrastructure to check for — they require deliberately trying to break your own product in ways that feel unnatural precisely because you built it to work, not to fail. That discomfort is exactly why a founder testing their own app rarely finds these on their own, and why a dedicated pre-launch pass by someone whose job is specifically to look for failure, rather than confirm success, catches a different and often more consequential set of problems than any number of clean demo run-throughs ever will.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Ticket Two People Bought at Once

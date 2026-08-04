@@ -44,6 +44,22 @@ Before merging, deliberately try an input you didn't describe when you asked the
 
 Our engineers based in Ho Chi Minh City follow a version of this exact routine on every piece of AI-generated code that comes through a LaunchStudio review, because the pattern of "worked in the demo, wrong in production" shows up constantly. Unlike freelancers, LaunchStudio is backed by Manifera — trusted by Vodafone, TNO, and CFLW — and this review discipline is part of what that backing means in practice. If you'd rather have a second set of eyes run this checklist for you before launch, [describe your project and we'll respond within one business day](https://launchstudio.eu/en/#process). For more on the engineering standards behind this, see [Manifera's offshore software development services](https://www.manifera.com/services/offshore-software-development/).
 
+## A Self-Test: Are You Actually Reviewing, or Just Skimming for Green?
+
+Most founders believe they're already doing some version of code review, because they look at the output before merging. Whether that glance is a real review or just a habit that feels like one is worth checking honestly, because the difference is exactly where bugs like a silent rounding error hide.
+
+**Could you explain, right now, what the last AI-generated function you merged actually does — without reading it again?** Not what feature it enables, but what the code itself does, step by step, with edge cases. If the honest answer is "I'd have to open it back up," that's a sign the original glance was closer to confirming the feature worked than to reviewing the logic that made it work.
+
+**When you last saw a function handling money, quantities, or a database write, did you read every line, or did you read the first few and trust the pattern?** AI-generated code is often locally correct and globally wrong — each individual line looks reasonable, but a rounding direction, a boundary condition, or an off-by-one assumption buried in the middle changes the outcome in a way skimming the first and last lines won't catch.
+
+**Have you ever deliberately tried to break a piece of AI-generated code before merging it, rather than just running the case you originally asked for?** Testing the happy path confirms the AI did what you asked. It says nothing about what happens outside that path, which is where nearly all of the five-step routine above is actually aimed.
+
+**Do you know, off the top of your head, which parts of your app you've never actually reviewed line by line since they were generated?** Most solo founders can't answer this precisely, because there was never a deliberate decision about what got the sixty-second treatment and what didn't — it happened by default, based on which features felt higher-stakes at the time they were built, not on a consistent standard applied since.
+
+**Would you notice a discrepancy of a few cents, a fraction of a unit, or one misrouted record — or only a discrepancy large enough to trigger a complaint?** Small, silent errors are exactly the ones a review habit built around "does it look right" will never catch, because they don't look wrong. They look like normal output, right up until someone downstream, like an accountant reconciling a ledger, traces the gap back to its source.
+
+If more than one of these lands uncomfortably, the honest conclusion isn't that your codebase is definitely broken — it's that you don't currently know, which is a different and in some ways more useful thing to notice. The five-step routine above isn't meant to be run once and forgotten; it's meant to become the actual habit that replaces the skim-for-green instinct, on every merge, not just the ones that felt risky in the moment.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Cent at a Time

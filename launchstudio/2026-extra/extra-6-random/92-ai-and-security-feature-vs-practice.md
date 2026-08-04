@@ -40,6 +40,20 @@ Not "do we have an AI security feature?" but "who is doing the recurring work of
 
 Behind LaunchStudio's launches is Manifera's team of 120+ seasoned engineers, and our Singapore hub works with founders specifically on turning "we have a security feature" into "we have a security practice" — access reviews, patch cadence, and monitoring that runs quietly in the background instead of living in a pitch deck. If you want a sense of what that ongoing coverage looks like, our [support add-on details](https://launchstudio.eu/en/#packages) walk through it, and Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) practice applies the same discipline for enterprise clients at a much larger scale.
 
+## The Four Practices Hiding Behind the Word "Security"
+
+"Security practice" sounds like one thing, but it's actually a bundle of four distinct disciplines, each with its own schedule and its own owner — and a product can have a strong showing in one of them while the other three are quietly absent entirely. Naming them separately makes it obvious why a single AI-powered feature, however genuinely useful, can never stand in for all four at once.
+
+**Access practice.** Who currently has admin rights, API keys, or direct database access, and does that list still match who actually needs it today? Every early-stage product accumulates access nobody remembers granting — a contractor's account from a project that wrapped up months ago, a test admin created during setup and never removed, an integration that was disconnected but whose credentials were never revoked. Access practice is the recurring habit of reviewing that list and pruning it on a schedule, not a one-time setup step you complete and move past.
+
+**Patch practice.** Dependencies carry known vulnerabilities that get discovered and publicly disclosed on an ongoing basis, entirely independent of anything you've changed in your own code. Patch practice means checking dependency advisories on a set cadence and updating before a known vulnerability is exploited, rather than discovering it during an incident, months after the disclosure was already public.
+
+**Monitoring practice.** Watching logs for the signals that typically precede an incident — repeated failed logins from one account, unusual request patterns, a spike in a specific error type — rather than only reacting once something has already gone visibly wrong. An AI-flagged anomaly on one type of event is a genuine, useful tool inside monitoring practice; it isn't monitoring practice in full, because it only watches for the specific pattern it was built and trained to catch.
+
+**Incident practice.** Having an actual plan for what happens when something does go wrong — who gets notified first, how quickly credentials get rotated, how and when customers get told — worked out calmly in advance rather than improvised for the first time while the incident is actively unfolding. This is the practice most founders have given the least thought to, precisely because it only matters on the worst day, which makes it the easiest one to keep deferring indefinitely.
+
+A product can look thoroughly secure while genuinely having only one of these four practices in place — usually monitoring, since an AI-powered flagging feature happens to make that one the most visible and the easiest to point to. The other three are quieter, less glamorous, and equally necessary. A founder auditing their own security posture honestly should be able to name who currently owns each of the four, on what schedule, rather than pointing at a single feature and calling the question answered.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Feature That Wasn't the Practice

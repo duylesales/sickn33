@@ -44,6 +44,24 @@ If you're evaluating a new AI coding platform for a future project, read the exp
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience helping founders move AI-generated prototypes onto infrastructure they fully own, and our team, working from Amsterdam, routinely handles exactly this kind of export and migration for founders who've just discovered what their platform's terms actually say. If you're mid-export and want a second read on what you're looking at, you can [describe your project through our process](https://launchstudio.eu/en/#process) and we'll help you understand what you're actually agreeing to. Manifera's broader experience moving software between platforms is described on its [custom software development page](https://www.manifera.com/services/custom-software-development/).
 
+## A Search-and-Find List: Exact Phrases Worth Ctrl-F-ing in Any Platform's Terms
+
+Reading an entire terms-of-service document closely is a reasonable thing to skip when you're moving fast. A targeted search for specific phrases is not, and it takes a few minutes rather than an afternoon. Here's what to search for beyond the training-rights language already covered above.
+
+- **"Irrevocable" or "perpetual," near any mention of license or rights.** These words indicate a right the platform is granting itself that doesn't expire when you stop using the service or delete your account — worth knowing about specifically, since most founders assume any rights a platform holds end when the relationship does.
+
+- **"Sublicense."** This indicates the platform can grant its own rights over your generated code to a third party — a partner, an acquirer, another vendor — not just use the code itself. It's a meaningfully broader right than simple internal use, and it's easy to miss if you're only scanning for "ownership" language.
+
+- **"Retain a copy" or "retain data," especially paired with a timeframe after account closure.** This tells you how long the platform keeps your code and data after you leave, which matters if any of that data is sensitive or if you'd prefer a clean, verifiable deletion rather than an indefinite retention period you have to take on faith.
+
+- **"As-is" or "no warranty," specifically regarding exported code.** Some platforms explicitly disclaim any guarantee that exported code is complete, functional, or free of the platform's own proprietary dependencies — meaning the export you get may need real engineering work before it runs independently, not just a change of hosting provider.
+
+- **"Reserve the right to modify" without a defined notice period.** This tells you whether the platform commits to warning you before changing terms that affect code you've already generated, or whether changes can apply with little or no notice — relevant specifically for the retroactive-application question covered above.
+
+- **"Proprietary" or "platform-specific," near any description of the exported output.** This flags whether your exported code depends on components that only work within the platform's own infrastructure, which functionally limits how "portable" an export really is, regardless of what the marketing page for the export feature implies.
+
+None of these six phrases guarantee a problem when you find them — plenty of reasonable, founder-friendly terms include some of this language in a form that's genuinely fine. What they guarantee is a specific clause worth reading in full context rather than skimming past, which is the entire point of a search-and-find pass: it turns an intimidating full document into five or six specific spots worth ten minutes of careful attention each.
+
 ## Real example
 
 ### An AI-Native Founder in Action: the export button that raised more questions than it answered

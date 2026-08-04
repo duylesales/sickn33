@@ -40,6 +40,24 @@ The moment real money changes hands, the cost of an unsupportable app stops bein
 
 LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy specifically for this transition — taking a weekend-built AI app and making it supportable without rebuilding the founder's frontend. Our team, including engineers based in Amsterdam, handles exactly this kind of production-hardening work as a defined, scoped engagement. You can [see what package fits where your app currently stands](https://launchstudio.eu/en/#packages) before your next paying customer finds the gap for you. For more on how Manifera approaches this kind of work, see [our web app development services](https://www.manifera.com/services/web-app-develop/).
 
+## The Supportability Self-Test: Six Questions to Ask Before Your Next Signup
+
+You don't need a formal audit to get a rough read on whether your app has crossed from "built" to "supportable." Six questions, answered honestly, tell you almost everything, and each one maps to a specific gap that tends to surface at the worst possible time if it's there.
+
+**Can you find one specific action a specific user took yesterday?** Not "the app logs things" in the abstract — can you, right now, pull up what a named user actually did in the last 24 hours? If the honest answer involves guessing or scrolling through raw database rows hoping something jumps out, there's no real logging yet, just data that happens to exist.
+
+**Have you actually restored from a backup, or only confirmed one exists?** A backup that's never been restored is a backup you're assuming works. The only way to know is to actually run the restore, on a copy, before you need it for real — confirming a backup file exists on a dashboard somewhere tells you almost nothing about whether it would actually save you.
+
+**If your database vanished right now, how much data would be gone forever?** The honest answer to this question is usually more sobering than founders expect, because "we take backups" and "we take backups frequently enough that losing between them wouldn't hurt" are different claims. A backup taken nightly still means up to 24 hours of a busy day's activity could vanish.
+
+**Would you know about an outage before a customer tells you?** If your only outage-detection mechanism is a customer noticing something's wrong and emailing you, you're finding out last, not first, about problems in your own product. A basic monitor that checks your app's availability every few minutes closes this gap in under an hour of setup.
+
+**Can someone other than you explain what a specific error means?** If every bug report currently requires you personally to dig in and guess, you have a single point of failure that happens to be you. Even a rough written note next to your most common failure modes — what this error usually means, where to look first — starts turning tribal knowledge into something transferable.
+
+**Do you know your data recovery time, or just that recovery is "possible"?** "Possible" and "possible within the hour it would take before your angriest customer cancels" are very different guarantees. If you've never timed how long an actual restore takes, you don't actually know your recovery time — you know your hope.
+
+None of these six require an engineering team to answer. They require sitting down for twenty minutes and being honest about which ones you can currently answer with a demonstrated fact rather than an assumption. A "no" on two or three of these isn't a crisis — it's simply a precise list of what to fix before the next customer's bad day becomes your bad day too.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Built in a Weekend, Tested by Ten Property Managers

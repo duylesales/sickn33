@@ -49,6 +49,20 @@ The danger isn't using a dev AI tool instead of a developer — for a huge amoun
 
 Manifera's engineers, working out of Singapore, exist specifically for the category of decision a dev AI tool can't make — not to replace the tool, but to sit alongside it exactly where judgment, not code generation, is what's actually needed. If you're at a decision point your tool can't help you reason through, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) to talk it through with someone who can. Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) practice was built around exactly this kind of judgment at scale, for decisions too consequential to leave to a tool with no stake in the outcome.
 
+## A Quick Self-Test: Is This a Prompt Question or a Judgment Question?
+
+The comparison above draws the line in the abstract. In the moment, staring at an actual decision, the line is harder to see — which is exactly when founders default to asking their dev AI tool anyway, because it's already open and it's never once refused to answer. Before you do, run the decision through these four questions.
+
+**Would two competent developers reasonably disagree about the right answer?** If the honest answer is no — there's a clearly correct implementation and the only question is how to write it — that's a prompt question. Ask the tool. If the honest answer is yes — reasonable people with the same information could land in different places depending on how they weigh the tradeoffs — that's a judgment question, and a tool with no stake in the outcome will give you an answer with the same confident tone regardless of which side of that disagreement it happens to land on.
+
+**Does the answer depend on information the tool doesn't actually have?** Your runway, your actual growth rate, your specific customers' tolerance for downtime, how much technical debt you're willing to carry for speed right now — none of this lives in your codebase or your prompt history. If the "right" answer genuinely depends on facts only you know, and you didn't explicitly put those facts in the prompt, the tool is answering a different, easier question than the one you actually have.
+
+**If this turns out to be wrong, how long before you'd find out, and what would it cost by then?** A wrong choice of button color costs you an afternoon. A wrong choice of database architecture, chosen under real growth, can cost months and a second migration. The more delayed and expensive a wrong answer would be, the more the decision deserves a second, human opinion before you act on it — not because the tool is more likely to be wrong, but because the cost of it being wrong without anyone catching it is so much higher.
+
+**Are you asking because you want an answer, or because you want permission to skip finding one?** This is the uncomfortable one. Sometimes a founder already suspects a decision needs real thought and asks the tool anyway, hoping a plausible-sounding response will let them move on without doing that thought. The tool will happily oblige, because it has no way to know the difference between a genuine question and a decision someone's trying to avoid making carefully.
+
+If a decision fails two or more of these checks — real disagreement is plausible, it depends on facts you haven't stated, being wrong would be slow and expensive to discover, and some part of you is hoping for permission rather than an answer — that's not a decision to keep prompting your way toward. That's the decision worth a genuine second opinion from someone who has to actually live with being right or wrong about it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Decision His Tool Couldn't Make

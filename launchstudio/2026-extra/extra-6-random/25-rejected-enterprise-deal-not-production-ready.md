@@ -40,6 +40,22 @@ Manifera's team of 120+ engineers, operating out of a hub in Singapore among oth
 
 Getting past this stage isn't about writing a better-sounding answer to the questionnaire — it's about the underlying reality matching whatever gets written down. That typically means encryption at rest and in transit actually implemented and verifiable, not just claimed; access logs that record who touched what data and when, retrievable on request; and a documented incident response process that describes what happens, who gets notified, and how fast, if a breach occurs. None of this requires touching the product's frontend or the features the champion user already loves. It requires the infrastructure underneath to be built to a standard that can survive being asked hard questions by someone whose entire job is asking hard questions.
 
+## Beyond the Big Three: Other Questions the Same Questionnaire Likely Asks
+
+Encryption, access logging, and incident response cover the three questions that most reliably stall a deal, but enterprise security questionnaires rarely stop there. Knowing what else tends to show up means you're not caught flat-footed a second time, on a different question, after finally clearing the first three.
+
+**Data retention and deletion.** Procurement teams commonly want to know how long you keep customer data after a contract ends, whether deletion requests are actually honored end-to-end (including backups, not just the primary database), and whether you can document that a deletion actually happened rather than simply asserting it did. An AI-generated product built to "work" rarely has any deliberate answer to this, because deletion was never a feature anyone explicitly asked the tool to build.
+
+**Sub-processor disclosure.** Any third-party service that touches customer data on your behalf — your hosting provider, your email service, your AI provider, your payment processor — is technically a sub-processor, and enterprise buyers increasingly expect a straightforward list of who they are and what each one has access to. Founders who've never had to produce this list are often surprised by how many services are quietly touching customer data once they actually sit down and map it out.
+
+**Business continuity and backup verification.** It's not enough to have backups; procurement often wants to know how often they run, how long recovery would take if something failed, and whether recovery has actually been tested rather than just configured and assumed to work. A backup nobody has ever tried restoring from is, for procurement purposes, functionally unverified.
+
+**Employee access and offboarding.** Who inside your own company can access customer data, how that access is granted, and — critically — how it's revoked when someone leaves or changes roles. This question catches founders off guard because it's not about the product at all; it's about internal process, and AI-generated products obviously have nothing to say about a process that happens entirely outside the codebase.
+
+**Compliance posture, even if informal.** Not every deal requires a formal certification, but most procurement teams will ask some version of "what compliance framework, if any, are you working toward or aligned with." Having a clear, honest answer — even if it's "we're not certified yet, but here's specifically how our practices align with the relevant framework" — lands better than silence or a vague assurance with nothing behind it.
+
+None of these categories require a different kind of engineering work than the big three already covered — they require the same underlying discipline (documented, verifiable, testable) applied to a few more specific questions. The founders who get furthest fastest through procurement aren't the ones with the most impressive individual answers; they're the ones who treat the entire questionnaire as one consistent standard to meet, rather than a series of separate fires to put out as each one gets asked.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Marit Loots Rebuilds Trust With Procurement

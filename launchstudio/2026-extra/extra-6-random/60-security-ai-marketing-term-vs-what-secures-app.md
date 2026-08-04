@@ -40,6 +40,22 @@ Real security coverage for an AI-generated app means checking, deliberately, acr
 
 LaunchStudio brings Manifera's enterprise-grade engineering — 11+ years of experience, 120+ engineers, work trusted by clients like Vodafone and TNO — to exactly this kind of full-scope review, with our Amsterdam team treating a vendor's security badge as a starting data point, never a conclusion. If you're relying on a scanning tool's approval and want to know what it actually covered, you can [calculate what a full security review would cost](https://launchstudio.eu/en/#calculator) and see the difference for yourself. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice treats authorization, isolation, and incident readiness as first-class requirements, not afterthoughts layered on top of a passing scan.
 
+## A Ten-Minute Way to Test What Your Own Security Badge Actually Covers
+
+If your product already displays a security scanning badge, you don't need to take the vendor's word — or this article's word — for what it actually checks. A short, direct exercise tells you more than the badge's marketing copy ever will.
+
+**Step one: find the vendor's own documentation, not their landing page.** Marketing pages describe benefits. Documentation, usually a few clicks deeper, describes scope — what categories of issue the tool scans for, in specific technical language rather than reassuring generalities. If you can't find a page that lists specific check categories, that's itself informative: a tool confident in its breadth usually documents it plainly.
+
+**Step two: ask the vendor directly, in writing, what the scan does not check.** This is a more revealing question than asking what it does check, because vendors are generally happy to list capabilities and much more specific when forced to name the boundary. A direct, specific answer ("we don't evaluate authorization logic or data access patterns") is a good sign, even though the content of that answer is a gap. A vague or deflecting answer to this specific question is the worse sign.
+
+**Step three: test the one thing a secrets scanner structurally cannot check — authorization — yourself.** Log in as one account, then attempt to access another account's data by modifying a request directly rather than clicking through the interface. This takes a few minutes with a test account and answers a question no scanning badge, regardless of what it's called, is built to answer, because it requires actually attempting the access, not scanning static code for patterns.
+
+**Step four: check whether the scan runs once or continuously.** A one-time scan at some point in the past tells you about your codebase as it existed then. Code changes constantly, especially in an actively developed AI-generated app, and a badge earned months ago on an earlier version of the code is not describing the current one. Confirm whether "scanned" means "scanned once" or "scanned on every change."
+
+**Step five: total up what's actually been verified versus what's being assumed.** After the first four steps, you'll have a specific list: what the badge covers (probably secrets, maybe dependency vulnerabilities), what it explicitly doesn't (very likely authorization, isolation, rate limiting), and what your own direct test found (hopefully nothing, but worth knowing either way). That specific list is worth more to you, and to anyone you show it to, than the badge itself — because it's yours, current, and answerable to a follow-up question in a way a third-party logo never is.
+
+None of this requires distrusting the scanning vendor or assuming the badge is misleading on purpose. It requires treating "scanned" as a specific, bounded claim rather than a general reassurance, and spending ten minutes confirming exactly where that boundary sits for your own product.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Badge That Checked One Thing

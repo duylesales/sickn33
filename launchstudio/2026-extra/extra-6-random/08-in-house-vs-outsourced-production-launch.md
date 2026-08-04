@@ -52,6 +52,22 @@ LaunchStudio exists specifically for the first problem. We're not a freelancer a
 
 Founders in Southeast Asia working with our Singapore hub at 100 Tras Street often ask this same in-house-versus-outsourced question before their production push, and the answer tends to hinge on that same distinction — is this a one-time launch problem or an ongoing team-building problem. If you want a sense of what a fixed-scope engagement actually costs against a hire or a freelancer, our [calculator](https://launchstudio.eu/en/#calculator) gives a direct estimate. For founders further along who are evaluating a longer outsourced relationship rather than a single launch, Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) practice covers that ongoing model directly.
 
+## Questions Worth Asking Before You Hire, Whichever Route You Pick
+
+The comparison table above sorts the three options by structural traits — time to start, cost, bus factor. It doesn't tell you what to actually ask a specific candidate, freelancer, or team before you commit, regardless of which column you've landed on. These five questions apply no matter which route you're leaning toward, and the honesty of the answers matters more than which option you ultimately choose.
+
+**"What happens to this project if you're unavailable for two weeks?"** For an in-house hire, this tests whether they document as they go or carry everything in their head. For a freelancer, this is the single most important question you can ask, because the honest answer is often "nothing has a backup plan" — which is worth knowing before you sign, not after they stop responding. For an outsourced team, this question tests whether continuity is actually structural or just a claim on a sales page.
+
+**"Can I see documentation from a project you've handed off before?"** Not a reference call — an actual artifact. Anyone who documents their work as a matter of habit can produce one without much notice. Anyone who doesn't will need to create one specially for you, which tells you something about their default practice.
+
+**"What's your process when you find something worse than expected mid-project?"** This tests whether scope creep gets silently absorbed, silently ignored, or actually communicated. A vague answer here predicts a vague answer later, at the exact moment you'll need clarity most.
+
+**"Who else has touched this type of AI-generated codebase — Lovable, Bolt, Cursor, or v0 specifically?"** General engineering experience doesn't automatically transfer to knowing where these particular tools tend to leave gaps. Someone who can speak specifically to patterns across AI-generated code, rather than software development in general, has usually seen your kind of problem before.
+
+**"What do I own at the end of this — code, documentation, both?"** Especially relevant for a freelancer engagement, where it's worth confirming upfront, in writing, that you retain full rights to everything produced, and that a handoff includes not just working code but an explanation of why it works the way it does.
+
+None of these questions are adversarial to ask, and a good hire — in any of the three categories — will have straightforward answers ready, because these are exactly the questions a professional expects. It's the vague or defensive answer, more than any specific response, that's the actual warning sign worth paying attention to before you commit a production launch to someone's hands.
+
 ## Real example
 
 ### An AI-Native Founder in Action: LabRooster's Freelancer Gap

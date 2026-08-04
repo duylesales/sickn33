@@ -43,6 +43,24 @@ AI coding assistants are excellent at wiring a feature end to end — call this 
 
 Manifera brings 11+ years of production engineering experience to exactly this kind of gap, with engineers based in Singapore supporting founders across the region on deployment reviews before launch, not after. If you're approaching your own deployment day, you can [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) before you push, or look at how Manifera structures [offshore software development](https://www.manifera.com/services/offshore-software-development/) for teams that want this kind of review built into their process rather than bolted on afterward.
 
+## If You Just Found a Leaked Key: The First Hour, Step by Step
+
+The checklist above is about preventing this from happening. This one is for the founder who's already past that point — who just found a key sitting in a bundled script or a public commit, and needs to know what to do in the next sixty minutes, not the next sprint.
+
+**Minute 1-5: Rotate the key immediately, before doing anything else.** Generate a new key with the provider and deactivate the old one. This is the single action that stops ongoing exposure, and every minute spent investigating first is a minute the old key remains usable by anyone who's already found it. Diagnosis can wait; rotation can't.
+
+**Minute 5-15: Check the provider's usage logs for the exposed key.** Most API providers show recent usage by key — look for requests from IP addresses or at volumes that don't match your own application's normal pattern. This is how you find out whether the exposure was theoretical or already exploited, and it shapes everything you do next.
+
+**Minute 15-25: Check your billing for anything unexpected.** If the exposed key connects to a metered or paid service, review recent usage against your typical spend. An unexpected spike is a strong signal the key was actively used by someone else, not just visible to them.
+
+**Minute 25-35: Search your entire git history, not just the current code, for the same key.** A key removed from the current version of a file often still exists in an earlier commit, fully readable to anyone who checks the repository's history rather than just its current state. If the repository is or was ever public, treat the key as compromised regardless of what the usage logs show.
+
+**Minute 35-45: Fix the actual routing, not just the key.** Rotating a key without moving the code that calls it server-side just delays the same exposure happening again with the new key. If the key was exposed because a browser-facing script called the provider directly, that architectural gap is the real problem, and it needs to move to a server-side endpoint before this is actually resolved.
+
+**Minute 45-60: Decide who needs to know.** Depending on what the key had access to and what the usage logs showed, this might mean nobody beyond your own team, or it might mean informing a provider, a customer, or, if user data was plausibly exposed as a result, figuring out your actual notification obligations. This decision deserves more than the remaining minutes in this hour, but it needs to start now rather than after everything else is already fixed.
+
+The founders who handle this well aren't the ones who never leak a key — plenty of careful teams still do, because the mistake this article describes is easy to make once. They're the ones who know the sequence above cold before they ever need it, so the first hour is spent executing a plan instead of deciding what the plan should be.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Key in Plain Sight

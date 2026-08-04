@@ -40,6 +40,22 @@ Ask yourself honestly: is there a specific week or season coming where this app 
 
 LaunchStudio, powered by Manifera's 11+ years of software development experience, works with founders in Ho Chi Minh City and beyond to plan the move off a free tier before a predictable busy period arrives, not during it. You can get a clear-eyed estimate of what that move costs using our [pricing calculator](https://launchstudio.eu/en/#calculator), and Manifera's [portfolio](https://www.manifera.com/portfolio/) shows the same scaling work delivered for far larger clients.
 
+## The Four Kinds of Throttling Hiding Inside "Free"
+
+"Throttling" gets treated as one generic risk, but free tiers actually limit four distinct things, and a platform rarely discloses all four with equal clarity. Knowing which kind you're exposed to changes what actually breaks, and when.
+
+**Request throttling.** The most commonly disclosed limit — a cap on API calls or actions per minute or per day. This is the one pricing pages usually mention explicitly, because it's the easiest to state as a clean number. It's also the one founders check for, which means it's rarely the one that surprises them.
+
+**Priority throttling.** Even under the stated request cap, free-tier traffic is frequently served after paid-tier traffic during periods of shared platform load, meaning your app can slow down noticeably without you ever hitting your own numeric limit. This one is almost never disclosed as a specific figure, because it isn't one — it's a queuing decision the platform makes internally, invisible from the outside until real load reveals it.
+
+**Feature throttling.** Some platforms quietly disable or degrade a specific capability under free-tier load — background jobs run less frequently, real-time updates fall back to polling, notifications batch instead of firing instantly. Nothing errors outright; the app just behaves in a subtly worse way than it did during quiet testing, which makes this kind of throttling especially hard to notice until a user reports something feeling "slow" or "off" without being able to say exactly why.
+
+**Support and response throttling.** When something does go wrong on a free tier, the response time from the platform itself is typically slower, sometimes far slower, than for a paid account with an SLA attached. This is the throttling that hits hardest during an active incident, because it's the moment you most need a fast answer and are least likely to get one.
+
+Reading a free tier's terms with these four categories in mind, rather than just checking the one number on the pricing page, gives a far more honest picture of what "free" is actually likely to cost during the one week it matters most. A founder who's only checked the request cap has checked one of four things that can throttle them, and it's rarely the one that causes the worst timing.
+
+The practical move isn't to demand a platform disclose all four upfront — most won't, because three of the four aren't the kind of thing that fits cleanly on a pricing page. It's to ask a more direct question during any pre-launch check: "if my usage doubled overnight, which of these four would I hit first, and what would it actually look like from a user's side?" A platform's support team or documentation can usually answer that question even when the pricing page never addresses it directly, and the answer tells you far more than the one number everyone else is checking.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Throttled During the Busiest Week of the Year

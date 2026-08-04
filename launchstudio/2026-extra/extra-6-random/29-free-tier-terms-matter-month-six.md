@@ -42,6 +42,24 @@ Founders building with Lovable, Bolt, Cursor, or v0 are often working with an un
 
 LaunchStudio reviews exactly this kind of dependency risk as part of production readiness work — checking not just what an app's code does, but what happens when an external free-tier limit gets hit during real usage. Our engineers, drawing on Manifera's main engineering center in Ho Chi Minh City, have seen this exact failure pattern enough times to check for it by default rather than waiting for an outage to reveal it. If you're relying on a free-tier AI model and getting close to real customers, [calculate what a readiness review would cost](https://launchstudio.eu/en/#calculator) before your busiest week becomes your worst one. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice routinely audits exactly this class of external dependency risk for clients well beyond the founder stage.
 
+## How to Actually Read an AI Provider's Rate-Limit Documentation
+
+Most founders who skip reading rate-limit documentation aren't being lazy — they open the page, find a wall of terminology that doesn't map to anything they're trying to plan for, and close the tab. The documentation is genuinely written for a different audience than a non-technical founder trying to figure out "will this survive my launch week." Here's what the specific terms actually mean and which ones deserve your attention before you commit to a tier.
+
+**Requests per minute (RPM) versus requests per day (RPD).** These are two separate ceilings, and hitting either one causes the same failure. A free tier might comfortably handle your daily volume in total while still failing during a short burst — ten customers using a feature within the same two minutes, for instance — because the per-minute limit is the tighter constraint at that moment, even though the per-day number looks fine on paper.
+
+**Tokens per minute (TPM), a limit separate from request count entirely.** If your app sends longer prompts or expects longer responses, you can hit a token ceiling well before you hit a request-count ceiling. This is one of the most commonly missed limits, because founders tend to think in terms of "how many times does my app call the AI," not "how much text does each call actually involve."
+
+**Concurrent request limits.** Some providers cap how many requests can be in flight simultaneously, separate from any per-minute count. This matters specifically when multiple customers use your app at the same moment, which is exactly the scenario a solo-testing founder never generates and a real launch does.
+
+**What "fair use" actually means in the terms.** Free and even some paid tiers often include a vaguely worded fair-use clause that reserves the provider's right to throttle or suspend an account for usage patterns it considers abnormal, even if you're technically under the stated numeric limits. This clause is worth finding and reading literally, because it means the published numbers aren't always the actual ceiling.
+
+**Whether there's any uptime or support commitment at all.** Paid tiers frequently come with a service-level commitment; free tiers typically come with none, meaning an outage on the provider's end during your launch week has no guaranteed resolution time and, in many cases, no support channel to escalate through.
+
+**The actual dollar cost at double your best-case usage estimate, not your expected one.** Founders who do check pricing tend to check it against their expected volume. Check it against double that number instead — launches routinely exceed projections in the good scenario, and knowing the cost at that level in advance means a successful launch doesn't also become a billing surprise.
+
+None of this requires deep technical fluency to check — it requires reading the specific numbers in the specific sections above rather than skimming past the whole page because it looks like it wasn't written for you. Ten minutes spent finding these six numbers is considerably cheaper than finding them out during an outage.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Loes Peters' Launch-Week Outage

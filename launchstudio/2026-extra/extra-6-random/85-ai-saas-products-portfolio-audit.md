@@ -48,6 +48,22 @@ Run this against every product in your portfolio, not just the flagship one:
 
 Once you've identified where the risk actually concentrates, the fix is usually narrower than founders fear — you're patching a shared system, not rebuilding three separate products. LaunchStudio brings Manifera's enterprise-grade engineering, the same standard used across 160+ delivered projects for clients like Vodafone and TNO, to exactly this kind of multi-product review. Our team, working out of Amsterdam, typically starts with the shared-infrastructure inventory above and prioritizes fixes by blast radius rather than by which product happens to be most visible. If you're heading into diligence and want this done before an investor's advisor finds it independently, you can [calculate the scope of a portfolio-wide review](https://launchstudio.eu/en/#calculator). Manifera's broader enterprise security and architecture experience is detailed in its [portfolio of delivered projects](https://www.manifera.com/portfolio/).
 
+## The Excuses That Delay a Portfolio Audit — and Why They Don't Hold Up
+
+Founders running a multi-product portfolio rarely skip auditing the smaller products out of genuine belief they're fine. It's usually one of a handful of specific, reasonable-sounding excuses, each of which holds up less well than it feels like it does in the moment.
+
+**"That product barely has any users."** Low usage reduces the chance someone stumbles onto a gap by accident. It does nothing to reduce the chance a shared system carries that gap into your higher-traffic products, and it does nothing to reduce how a technical advisor reads it during diligence — a neglected product with real users, however few, still counts as evidence about how the whole company treats security.
+
+**"We'll clean it up before the audit, once we know the raise is really happening."** This assumes cleanup is fast and diligence timing is predictable, and both assumptions are optimistic. A shared-infrastructure fix discovered under time pressure, mid-raise, is exactly the scenario this article describes as avoidable — the fix isn't necessarily hard, but doing it while an investor's advisor is actively watching is a worse position than doing it on your own schedule.
+
+**"It's not really part of the pitch, so it won't come up."** Due diligence on a company, not a single product, routinely extends past whatever's in the pitch deck the moment a technical advisor asks what else the company runs. A founder who didn't expect the question to come up is a founder who looks unprepared the moment it does, regardless of how reasonable "it's not the pitch" felt beforehand.
+
+**"I'd rather spend the budget on the product that's actually generating revenue."** This is a real trade-off, not an irrational one — but it conflates spending priority with risk priority, which this article's framework specifically argues are different things. A small, targeted fix to a shared system that touches all your products is often cheaper than a full review of your flagship product, and it protects more of the company per euro spent, not less.
+
+**"Nobody's going to dig that deep."** Some diligence processes are lighter than others, and this bet sometimes pays off. It's still a bet, made against a process a founder doesn't control the depth of, in exchange for saving what's usually a modest amount of review time — a poor trade when the downside is a red flag raised during exactly the conversation where trust matters most.
+
+Each of these excuses is individually reasonable and collectively adds up to the same outcome: an audit that happens under investor pressure instead of on the founder's own timeline. The fix isn't to feel bad about having reached for one of them — it's to notice which one you're currently using and treat it as a prompt to run the self-audit above now, while it's still optional.
+
 ## Real example
 
 ### An AI-Native Founder in Action: two products, one unpatched login

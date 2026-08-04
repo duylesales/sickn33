@@ -44,6 +44,20 @@ That scramble is avoidable. An incident-response and breach-notification process
 
 Manifera's engineers, working out of Amsterdam, have helped AI-native SaaS founders draft exactly this kind of process ahead of enterprise deals often enough to know it's rarely about writing something impressive — it's about writing something specific and true, before the pressure of a stalled deal forces a rushed version instead.
 
+## The Three Kinds of Questions in Every Security Questionnaire, and Why Only One Kind Stalls Deals
+
+Enterprise security questionnaires read like one long, undifferentiated list, but the questions on them actually fall into three distinct categories, and recognizing which one you're looking at predicts how much trouble it's going to cause before you've written a word of the answer.
+
+**Existence questions.** "Do you encrypt data at rest?" "Is MFA available?" "Do you log access to customer data?" These ask whether a specific control exists, and the honest answer is either yes, no, or "in progress." If the answer is currently no, most of these can be built in a reasonably bounded amount of time, because they describe a concrete technical feature with a known shape. They're tedious to work through in volume, but they're rarely what actually stalls a deal, because the path from "no" to "yes" is usually just implementation work.
+
+**Capability questions.** "Can you provide a data processing agreement?" "Can you support SSO for our organization?" "Can you segregate our data from other customers on request?" These ask whether something is possible, not whether it currently exists in exactly that form. A "not yet, but here's how quickly we could" answer is often acceptable here, because the buyer is testing flexibility as much as current state.
+
+**Narrative questions.** "Describe your incident-response process." "Describe how you handle a data subject access request." "Describe your vendor risk management approach." These are the ones that stall deals, and they're structurally different from the other two categories: there's no feature to point to, no toggle to flip, no "not yet, but soon." A narrative question is asking for a process that has to already exist in written form, thought through in advance — and unlike existence questions, you can't build one under time pressure and have it read as anything other than what it is.
+
+The reason this categorization is useful isn't academic. It changes how a founder should triage an incoming questionnaire the moment it lands: existence and capability questions can be worked through steadily, in order, because each one either has a clear yes or a clear path to yes. Narrative questions need to be identified immediately and handled differently — not answered on the spot, but checked against whatever's already been prepared in advance, because composing a genuinely good narrative answer from nothing, under deal pressure, is where the real delay comes from.
+
+A founder who's never separated these three categories tends to work through a questionnaire linearly, top to bottom, and hits the narrative questions with the same energy they had for the easy existence checks — which is exactly how a fast first forty questions turns into a three-week stall on the forty-first. Sorting the questionnaire by category before answering anything, and flagging every narrative question for advance preparation rather than in-the-moment composition, is the single biggest lever for avoiding that stall before it happens.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Three Weeks Lost to a Question She'd Never Been Asked

@@ -46,6 +46,22 @@ Lotte Jansen, a founder in Utrecht, ran straight into this wall. She built "Groe
 
 This is exactly the gap LaunchStudio exists to close before it costs a founder a round. Backed by Manifera — trusted by enterprise clients including Vodafone, TNO, and CFLW — our team, including engineers based in Singapore, works directly with non-technical founders to document architecture clearly enough to survive investor scrutiny, not just to pass a demo. You can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) if you have a pitch coming up and want your architecture story straight before you're in the room. For the standard our engineers hold client work to, see [Manifera's approach to the business](https://www.manifera.com/about-us/).
 
+## Building Your One-Page Architecture Answer Before You Walk In
+
+The six questions above tell you what's coming. This is about how to actually prepare an answer, in advance, that holds up under a follow-up question rather than falling apart the way an unprepared answer tends to. You don't need a formal document — a single page, in your own words, covering five things.
+
+**A simple diagram, even a hand-drawn one.** Boxes for frontend, backend, database, and any third-party services (payment processor, model provider, email service), with arrows showing what talks to what. This doesn't need to be technically precise — it needs to exist, and you need to be able to point at it while you talk, because an investor watching you gesture at a real diagram reads very differently than an investor watching you describe an architecture from memory with visible uncertainty.
+
+**A one-sentence answer to "what's actually AI here."** Practice saying, specifically, which feature calls a model and what it does with the result — not "the whole thing is AI-powered," which investors have learned to hear as a dodge. If the honest answer is "one feature makes a model call, and everything else is conventional software," that's a perfectly fine answer to give directly, and it reads as more credible than an evasive one.
+
+**Your actual answer to the provider-dependency question, written down.** Don't wing this one live. Know, in advance, what happens if your model provider's pricing changes or access is throttled — even if the honest current answer is "we don't have a fallback yet, and it's the next thing on our roadmap." An honest gap with a plan reads better than a confident answer that falls apart under one follow-up question.
+
+**A one-line summary of your last security or architecture review, if you've had one.** If nobody has looked at your codebase professionally yet, say so plainly and name when you plan to have that done — investors read proactive awareness of a gap very differently than a gap they have to surface themselves.
+
+**Practice the "could you rebuild this without the tool" question out loud, once, before the meeting.** This is the question that most often catches founders flat-footed, not because the honest answer is bad, but because they've never said it out loud before. Saying it once, to yourself or a friend, before it's asked by someone with a term sheet on the table, changes how steady you sound when it actually comes up.
+
+None of this requires becoming technical between now and your next pitch meeting. It requires turning the six questions above from things that might get asked into things you've already answered once, quietly, before anyone in the room asks them for real.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Question That Stalled Lotte's Pitch

@@ -40,6 +40,20 @@ Job Willems, a founder in Eindhoven, learned this the hard way. He built "TaakSl
 
 Getting this distinction right early is exactly the kind of architectural clarity LaunchStudio's engineers, part of Manifera's team of 120+ engineers working out of offices including Ho Chi Minh City, help founders establish before a roadmap gets built on the wrong premise. If you're not sure which category your product actually falls into, [describe your project through our process](https://launchstudio.eu/en/) and we'll map it honestly. You can also see how [Manifera's portfolio](https://www.manifera.com/portfolio/) reflects the range of AI-assist and AI-native architectures we've built for clients.
 
+## A Per-Feature Self-Test: Which Category Is Each Feature In?
+
+A single product can genuinely be AI assist in some places and AI native in others — which means the real test isn't "what category is my product," it's "what category is this specific feature." Run each significant feature in your product through these four questions separately, because the answer for your signup flow and the answer for your core AI capability are frequently different, and roadmap mistakes usually come from applying one answer to the whole product.
+
+**If the model call failed right now, what would this specific feature do?** Not the product as a whole — this one feature. If the honest answer is "show an error and nothing else," that's AI native, whether or not the rest of your product is. If the answer is "fall back to the old manual step, slightly less convenient but functional," that's AI assist, regardless of how central the feature feels to your pitch.
+
+**How often does this feature actually make a model call, relative to how often it's used?** A feature used constantly that calls a model on every single interaction scales its cost and latency very differently than one used constantly but calling a model rarely — a background suggestion generated once and reused, for instance, behaves more like AI assist economically even if it was originally built with AI-native intentions.
+
+**Was this feature designed around the model, or was the model added to an existing design?** This is a question about sequence, not sophistication. A feature where the data model, the workflow, and the UI were all shaped by what the AI needed to function is architecturally different from a feature where an existing, already-functional workflow got an AI capability layered on top of it afterward — even if both features look equally polished in a demo.
+
+**If this feature's usage volume grew ten times overnight, what breaks first?** For an AI-native feature, the honest answer usually involves model costs, rate limits, or response latency. For an AI-assist feature, the honest answer usually involves whatever the underlying manual or rules-based workflow was already built on — database queries, background jobs, conventional application logic. Knowing which one breaks first tells you where to actually invest engineering attention before that growth happens, not after.
+
+Running this test feature by feature, rather than once for the whole product, produces a more useful map than a single label ever could — because a roadmap built around "we're AI native" or "we're AI assist" as a single blanket statement is exactly the kind of premise that quietly stops matching reality the moment a product has more than one significant feature, which is most products past the earliest prototype stage.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Roadmap Built on the Wrong Category

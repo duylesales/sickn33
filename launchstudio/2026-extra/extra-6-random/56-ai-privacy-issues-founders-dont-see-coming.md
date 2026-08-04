@@ -40,6 +40,20 @@ This isn't a technical rebuild — it's homework, followed by a decision. Read t
 
 Manifera's engineers, working out of Ho Chi Minh City, routinely help AI-native founders work through exactly this kind of provider-level privacy review as part of preparing a product for real customer scrutiny — not because the fix is complicated, but because founders are rarely aware the question exists until it's asked of them directly. If you're preparing to answer this kind of question confidently, you can [send us your prototype link and we'll give you free advice](https://launchstudio.eu/en/#contact) on what to check first. Manifera's [about us](https://www.manifera.com/about-us/) page covers the broader compliance and production discipline this kind of review sits within.
 
+## The Three Kinds of "What Happens to Your Data" You're Actually Being Asked About
+
+"What happens to my data" sounds like one question, but a customer asking it — and a founder trying to answer it — are usually conflating three genuinely separate things. Answering only one of the three, confidently, can leave the other two completely unaddressed without anyone noticing the gap.
+
+**Retention: how long is it kept, and where.** This is the question most founders think of first — does the provider store the data you send it, for how long, and where physically or jurisdictionally is it stored. A no-retention tier answers this cleanly. A default tier that logs requests for some internal window, even for something as ordinary as debugging or abuse monitoring, has a different answer than "nothing is kept," even if nothing is ever used for anything else.
+
+**Training use: does the data influence the model itself.** This is a separate question from retention, and the two get conflated constantly. A provider can retain data briefly without ever using it to train or fine-tune a model, and a provider can theoretically use data for training without retaining an identifiable copy of it long-term. These are two different toggles, often controlled by different settings on different plan tiers, and a founder who's checked one has not automatically checked the other.
+
+**Subprocessor exposure: who else touches it before it comes back to you.** An AI model provider rarely operates in complete isolation — the request may pass through infrastructure, logging, or safety-filtering services run by other companies under contract to the primary provider. Each of those is a subprocessor, and each one is, technically, another party that touched the data, even briefly, even without retaining it. Most providers publish a subprocessor list; almost no founder has ever read theirs.
+
+Why the distinction matters practically: a customer's actual concern usually maps to one of these three specifically, not all three vaguely. A healthcare-adjacent customer worried about data ending up in a future model version cares about training use specifically — an accurate answer about retention alone doesn't address it. A customer with contractual data-residency requirements cares about retention and subprocessor location, not training use at all. Answering the wrong one of the three, confidently, doesn't read as an answer to someone who asked a specific version of the question — it reads as not having understood what was actually being asked.
+
+The practical fix is the same homework this article already describes, just organized into three separate checks instead of one general one: confirm the retention window and location, confirm whether training use is on by default or requires opt-out, and pull the subprocessor list if one exists. Three short, specific answers, kept on file, cover a customer's question far more precisely than one confident paragraph that happens to only address the part a founder thought to check first.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Question He Couldn't Answer About His Own Product

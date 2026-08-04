@@ -50,6 +50,24 @@ Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it 
 
 LaunchStudio brings Manifera's enterprise-grade engineering discipline to exactly this kind of scoped, honest review, and our Singapore hub handles a steady volume of these assessments for Southeast Asia and Europe-based founders alike. You can [describe your project and get a production-readiness assessment](https://launchstudio.eu/en/#contact) that draws the same clear boundary Sophie's report did. For more on the engineering standard behind these reviews, see Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) practice, built across 160+ enterprise projects.
 
+## Which Review Do You Actually Need? A Quick Map of the Options
+
+Founders sometimes conflate "production-readiness review" with "any kind of professional evaluation of my product," and then feel let down when the review they ordered didn't answer a question it was never scoped to answer. Several genuinely different review types exist, each built to answer a specific question, and knowing the difference before you order one saves both money and disappointment.
+
+**A production-readiness review answers: is this safe and stable enough to run in front of real users and real data?** This is the review covered throughout this article — authentication, data handling, deployment configuration, and basic resilience. It has no opinion on whether your product is good, well-designed, or wanted. It's a floor, not a ceiling.
+
+**A UX or usability audit answers: will people find this easy and pleasant to use?** This is a design and product question, evaluated by looking at flows, friction points, and clarity of interface — entirely separate from whether the underlying code is secure. A product can score well here while having serious security gaps underneath, and vice versa; the two audits are looking at completely different layers of the same product.
+
+**A load or performance test answers: does this hold up under real traffic volume?** This is narrower than general resilience — it specifically simulates concurrent usage at scale to find where the system slows down or fails under load, which a standard production-readiness review typically checks for at a basic level but doesn't stress-test as exhaustively as a dedicated load test would for a product expecting a real traffic spike.
+
+**A penetration test answers: can a motivated attacker actually break in?** This goes further than a production-readiness review's security component by actively attempting exploitation, not just checking configuration and access-control logic for known gap patterns. It's typically a heavier, more specialized engagement, often relevant once a product has real scale or handles data sensitive enough to justify the deeper adversarial effort.
+
+**A code quality or maintainability audit answers: how hard will this be to build on going forward?** This looks at structure, consistency, and technical debt independent of whether the current code is secure or functional — a product can be perfectly safe and stable today while still being expensive to extend tomorrow, which is a different problem than anything a production-readiness score measures.
+
+**A market or product-market-fit assessment answers: do people actually want this?** Entirely outside the technical domain, and arguably the most important question of all, but not one any engineering review — production-readiness or otherwise — is built to answer.
+
+Knowing which question you're actually trying to answer before you order a review is the single highest-leverage step in this whole process. A founder who wants to know "will this survive launch" and a founder who wants to know "will customers like using this" need two different engagements entirely, and ordering the wrong one produces a report that's accurate and genuinely useless for the question that was actually on their mind.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Reading a report correctly

@@ -4,6 +4,12 @@
 
 ### Tháng 08
 
+#### Ngày 04
+
+- **14:35**: Tư vấn danh sách các plugin WordPress hỗ trợ cấu trúc Schema (JSON-LD / Rich Snippets) tốt nhất (Schema Pro, Rank Math SEO, Yoast SEO, AIOSEO) và hướng dẫn cách nhúng script JSON-LD thủ công.
+- **14:30**: Hoàn thành loạt 12 ảnh minh họa Vector Flat (Dribbble corporate tech style) theo phong cách mới cho bài 29 đến bài 40 thuộc `2026-extra/extra-5-local/`: sử dụng phối màu gradient tươi sáng (không monotone/không u tối), đặt toàn bộ nhân vật (founder, kỹ sư) và robot AI hợp tác làm việc nằm trên dải ngang giữa (center line) và tự động cắt tỉ lệ 16:9 (`1024x576`), lưu file `*_pic.png` tương ứng từng bài (`29-ai-and-security-heerlen_pic.png` đến `40-ai-in-database-emmeloord_pic.png`).
+- **11:15**: Hoàn thành dịch 100% 60 bài viết trong `2026-extra/extra-4/` sang tiếng Hà Lan (`01-dutch.md` đến `60-dutch.md`): khớp 100% cấu trúc H2 và đoạn code kỹ thuật với bản gốc tiếng Anh, thống nhất dịch tiêu đề `## Real example` ➔ `## Echt voorbeeld`, chuẩn hóa đúng 5 H3 FAQ per article và cập nhật JSON-LD `<script type="application/ld+json">` (`FAQPage` schema) tiếng Hà Lan chuẩn xác. Script kiểm tra tự động xác nhận 0 lỗi cấu trúc/FAQ.
+
 #### Ngày 02
 
 - **10:30**: Đồng bộ bản dịch Dutch cho 2 bài `extra-4` vừa mở rộng ở phiên trước (32-background-job-queue, 33-webhook-delivery): dịch mục H2 mới (idempotency / at-least-once delivery) kèm FAQ tương ứng sang tiếng Hà Lan, giữ nguyên code block không dịch theo đúng chuẩn các file khác; nhân tiện phát hiện và sửa lỗi code block bài 33 bản Dutch bị dịch nhầm cú pháp JS (`async function` → `asynchrone functie`, v.v.) khiến code không chạy được — khôi phục nguyên bản tiếng Anh cho code. Word count sau khi sửa: bài 32 Dutch 1.789 → 2.276 từ, bài 33 Dutch 1.752 → 2.121 từ (khớp chuẩn với bản tiếng Anh 2.111/1.982 từ). Verify JSON-LD parse hợp lệ cho cả 2 file.

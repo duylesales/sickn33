@@ -48,6 +48,22 @@ None of this is an argument against no-code AI tools — it's an argument for pl
 
 LaunchStudio brings Manifera's enterprise-grade engineering discipline to exactly this gap — reading and stabilizing what a no-code AI tool generated, without requiring a rebuild. Our engineering center in Ho Chi Minh City handles this kind of diagnostic work regularly for founders whose apps depended on something that quietly changed underneath them. You can [send us your prototype link for free advice](https://launchstudio.eu/en/#contact) on what your app currently depends on and where the fragile points are. For more on how production engineering teams handle exactly this kind of dependency risk, see Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice.
 
+## A 20-Minute Dependency Inventory Worth Doing Now
+
+You don't need to read code to build a basic map of what your no-code app actually depends on — you need about twenty minutes and a willingness to look at your own tool's settings and integrations panel with a specific question in mind: what happens to my app if this particular thing changes or goes away? Doing this once, before anything breaks, turns a future outage from a total mystery into a problem with a starting point.
+
+**List every external service your app connects to.** Open your tool's integrations, connections, or environment settings and write down every third-party service by name — payment processors, email providers, AI model APIs, mapping or geolocation services, anything your app calls out to that isn't the AI tool itself. Most no-code builders show this list somewhere, even if it's not labeled "dependencies."
+
+**For each one, note what breaks if it stops responding.** Not in technical detail — just in plain terms: "if this stops working, customers can't check out" or "if this stops working, the confirmation email doesn't send." This step alone tells you which dependencies are load-bearing for your core function and which are cosmetic, a distinction that matters enormously when something eventually does break and you need to triage quickly.
+
+**Check whether each service has a status page, and bookmark it.** Most established third-party services publish a public status page showing current outages or degraded performance. Bookmarking these means that when your app misbehaves, your first move can be checking whether the problem is on your end or theirs, rather than staring at a broken feature with no idea where to start looking.
+
+**Note which dependencies are on a free tier versus a paid one.** Free tiers, as covered elsewhere in this kind of guidance, tend to have the tightest and least forgiving limits. Knowing which of your dependencies is free-tier-based tells you where a usage spike is most likely to cause a problem first.
+
+**Write down, honestly, who you'd contact if each one broke.** For some of these, the honest answer today might be "I don't know." That's not a failure of this exercise — it's the actual point of it. An empty answer here is exactly the gap worth closing before an outage forces you to find someone in a hurry, under pressure, during the exact moment your app is down.
+
+This inventory won't prevent a dependency from changing underneath you — that's outside anyone's control. What it does is convert a future outage from a blank-page mystery into a situation with an actual first step: check the list, check the status pages, and know in advance whether you have someone lined up to call. Twenty minutes now is a small trade against being the founder staring at a broken app with no idea what even could have caused it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The API that changed shape overnight

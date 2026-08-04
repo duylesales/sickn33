@@ -40,6 +40,22 @@ Adding an audit trail after the fact is usually additive rather than disruptive 
 
 Our engineers, based in Ho Chi Minh City as part of Manifera's broader engineering team, treat audit trail gaps as one of the standard checks in a production-readiness review specifically because they're so easy to miss and so consequential the one time they're needed. If your application handles any kind of dispute-prone record, it's worth having someone [review your project through our process](https://launchstudio.eu/en/#process) before the first dispute arrives rather than after. Manifera's [portfolio](https://www.manifera.com/portfolio/) includes several systems built for exactly this kind of accountability requirement in regulated and public-sector contexts.
 
+## Which Actions Actually Need Logging, and Which Don't
+
+Logging everything sounds like the safe default, but a log nobody can actually search through when a dispute arises isn't meaningfully better than no log at all — it's just noise with a timestamp. The useful version of an audit trail is selective on purpose, and knowing what belongs in it is a shorter list than it first seems.
+
+**Log this: anything that changes a record's substance in a way someone could later dispute.** A status change from "pending" to "approved." A field edit on a form that was already submitted. A record being deleted, or a permission being granted or revoked. These are the entries that matter specifically because a later disagreement about them is plausible — "I never approved that" is a sentence someone can actually say about a status change, in a way they can't really say about, for instance, a page view.
+
+**Log this: anything a regulator, insurer, or contractual counterparty might reasonably ask to see.** If a category of action would plausibly appear in a compliance audit or a legal dispute — financial adjustments, access grants to sensitive records, consent given or withdrawn — it belongs in the log regardless of how often it happens, because the cost of not having it when asked is disproportionate to the cost of recording it.
+
+**Skip this: read-only actions with no dispute potential.** Someone viewing a dashboard, loading a report, or navigating between screens doesn't need to appear in a dispute-resolution audit trail. This kind of activity might belong in a separate analytics or usage-tracking system for entirely different reasons, but conflating it with the audit trail meant to settle "who changed what" makes the log slower to search and harder to trust exactly when it matters most.
+
+**Skip this, mostly: routine automated system actions with no human decision behind them.** A scheduled job that recalculates a report nightly doesn't need an audit trail entry every time it runs, the same way a human-initiated change does — there's no "who decided this" question to answer, because nobody decided it, a schedule did. The exception is when an automated process changes something a human might later need to explain, in which case it's worth logging that the automation made the change, even without a human actor behind it.
+
+**A useful gut check for any specific action:** could a reasonable person, some months from now, plausibly claim this didn't happen, or happened differently than the record shows? If yes, it belongs in the log. If the honest answer is that nobody would ever have reason to dispute it, logging it is optional at best and clutter at worst.
+
+Building this selectively, rather than logging every possible event by default, keeps the audit trail fast to query and genuinely useful the one time someone actually needs to read it — which, as this article's real example shows, is usually the only time anyone looks at it at all.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Dispute Nothing Could Settle

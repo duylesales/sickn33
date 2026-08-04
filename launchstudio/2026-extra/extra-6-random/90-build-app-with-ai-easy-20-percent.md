@@ -42,6 +42,20 @@ That shift is the entire argument of this piece in one sentence: the scarce skil
 
 If your weekend build took two days, a realistic hardening pass — auth, backups, monitoring, a support process, a security review — for a small product typically runs anywhere from a few days to a few weeks of focused engineering work, not because it's harder than the build, but because it's a different kind of work entirely, one AI tools weren't built to do on their own. LaunchStudio's engineers, working out of Ho Chi Minh City, specialize specifically in this stretch — taking an AI-built weekend prototype and doing the unglamorous work that turns it into something a paying customer can actually trust. You can [calculate roughly what your specific hardening pass would cost](https://launchstudio.eu/en/#calculator) before you get too deep into discovering the gaps the hard way. Manifera's broader approach to taking prototypes to production maturity is described on its [about page](https://www.manifera.com/about-us/).
 
+## Breaking Down the Other 80%: Four Categories, Roughly Sized
+
+"The other 80%" is a useful shorthand, but it isn't one undifferentiated block of work. In practice it splits into four categories, and they don't take equal effort — knowing roughly how they stack up helps a founder budget realistically instead of treating "hardening" as a single, vague, equally-weighted task.
+
+**Security and access control — usually the category that takes the longest relative to how invisible it is.** Authentication that resists more than a casual attempt, authorization checks on every sensitive action, secrets handled properly, dependencies checked for known issues — this work touches nearly every part of a codebase because access control decisions are scattered throughout an app rather than concentrated in one place. It's also the category where a shortcut is least visible day to day and most expensive the one time it's tested for real.
+
+**Data durability — often faster than security, but only once, and only if done properly the first time.** Backups that are actually tested, not just scheduled, and a restore process that's been run at least once before it's needed for real, is usually a bounded, well-defined piece of work. The catch is that "properly" specifically means testing the restore, not just confirming a backup job completed — skipping that one step is what turns a fast category into a false sense of security instead.
+
+**Observability — smaller in raw hours, disproportionately valuable per hour spent.** Logging that actually explains what happened, monitoring that alerts before a customer does, and a basic dashboard showing whether the product is behaving normally are each individually quick to set up, but collectively they determine how fast every future problem gets caught and fixed, in every other category, for as long as the product exists. It's the category most likely to get skipped precisely because it's the smallest, even though its payoff compounds the most.
+
+**Support process — the category with the least code and the most operational decision-making.** Deciding who responds when something breaks, how fast, and through what channel isn't primarily an engineering task, which is exactly why it's easy to leave undefined even after the other three categories are solid. A product with excellent security, tested backups, and real monitoring still leaves a customer stuck if nobody's clearly responsible for actually responding when an alert fires.
+
+These four categories don't need to happen in strict sequence, and for most small products the total work across all four is smaller than it sounds once it's broken into concrete pieces rather than treated as one intimidating, undifferentiated phase. What tends to blow up the timeline isn't any single category being harder than expected — it's discovering, one at a time and usually under pressure, that none of the four were budgeted for at all.
+
 ## Real example
 
 ### An AI-Native Founder in Action: the weekend that took two days, and the hardening that took ten weeks

@@ -47,6 +47,22 @@ None of this is exotic advice — it's standard practice for any database migrat
 
 LaunchStudio brings Manifera's enterprise-grade engineering discipline to exactly this kind of cross-tool migration work, reconciling schema mismatches between tools without requiring a rebuild of your frontend. Our engineering center in Ho Chi Minh City handles a steady stream of these migrations for founders who've hit exactly this problem. You can [send us your project for a free assessment](https://launchstudio.eu/en/#contact) of what a safe migration between tools would actually require. For more on the database and backend discipline behind this kind of work, see Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice.
 
+## Schema Habits That Make a Future Migration More Dangerous
+
+Some schemas survive a tool switch cleanly. Others lose data in exactly the way described above. The difference often comes down to a handful of habits baked into how the schema was originally built — habits that feel harmless while you're only using one tool, and become genuinely dangerous the moment a second tool has to interpret what the first one left behind. Recognizing these habits before a switch is far cheaper than recovering from them after one.
+
+**Fields whose meaning depends on an unwritten convention.** A null value that specifically means "not yet reviewed" versus a null value that means "not applicable" look identical to a new tool reading the schema cold. If your data relies on this kind of implicit distinction — a specific number that means "cancelled," a particular date format that signals a special case — write it down explicitly somewhere before switching, because no new tool will infer it correctly on its own.
+
+**Inconsistent naming across tables that grew organically.** A schema where one table uses `created_at` and another uses `date_created` for conceptually the same thing is a minor readability annoyance within a single tool, but becomes a genuine migration hazard when a new tool has to reconcile or map fields between structures — inconsistency that a human glossing over the schema might not even register can trip up an automated migration step badly.
+
+**Soft deletes mixed inconsistently with hard deletes.** If some records are marked as deleted with a flag while others are actually removed from the table, a new tool's migration logic needs to know which convention applies where, table by table. Get this wrong, and either "deleted" records reappear as active, or genuinely active records get treated as deleted and dropped.
+
+**Relationships that are enforced by application logic instead of the database itself.** If a one-to-one relationship between two tables is only true because your app's code always enforces it that way, rather than being declared as a database constraint, a new tool reading the raw schema has no way to know that rule exists — it sees two tables that could relate any number of ways, and its generated code may not preserve the assumption your original tool's logic quietly relied on.
+
+**No documentation of what any table or column actually means, beyond its name.** A table called `records` or a column called `status` with no comment or documentation forces a new tool — or a person — to guess at intended meaning from context alone, which is exactly the situation in which silent misinterpretation happens.
+
+None of these five habits are unusual — they're simply what happens when a schema grows quickly inside a tool that never forces you to confront them, because the original tool already knows its own conventions and never needs them written down. The cost only appears the moment a second tool needs to know something the first one never had to say out loud, which is precisely the moment of a mid-project switch.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Historical records that didn't survive the handoff

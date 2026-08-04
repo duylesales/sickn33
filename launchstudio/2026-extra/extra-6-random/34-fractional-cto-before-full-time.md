@@ -45,6 +45,22 @@ None of this is an argument against ever hiring a CTO — it's an argument about
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and our Amsterdam team routinely acts as exactly this kind of fractional, diagnostic-first engagement for non-technical founders before they make a permanent technical hire. You can [calculate what a production-readiness review costs](https://launchstudio.eu/en/#calculator) before committing to anything larger. For founders weighing this against a full custom build, Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) team has helped structure exactly this kind of staged technical hiring decision across 160+ projects.
 
+## How to Scope a Fractional Engagement So It Actually Ends
+
+A fractional arrangement only delivers the sequencing benefit described above if it's structured to actually conclude with a clear answer — otherwise it quietly turns into an open-ended, part-time relationship that never quite produces the diagnosis you brought it in for, just at a lower monthly cost than a full-time hire. A handful of structural choices, made before the engagement starts, are what separate a genuinely useful fractional review from a slow-motion version of the same sequencing problem.
+
+**Insist on a fixed scope with a defined deliverable, not an open-ended retainer.** "Available for technical questions as they come up" is a relationship, not a diagnosis. Ask instead for a specific output — a written assessment of what's structurally sound and what isn't, delivered by a specific date — so there's a concrete artifact to evaluate rather than an ongoing arrangement with no natural endpoint.
+
+**Set the time box before the work starts, not after.** A fractional engagement scoped for two weeks that quietly becomes eight isn't cheaper than a full-time hire once you account for the calendar time it consumed — it's just a slower version of the same uncertainty. Agree on the duration upfront, and treat any extension as a distinct, explicitly re-scoped decision rather than a default continuation.
+
+**Require the diagnosis to include a recommendation, not just a list of findings.** A report that says "here are twelve things that could be improved" without any sense of priority or urgency puts you back where you started, just with a longer list. A useful fractional engagement ranks findings by what actually needs attention now versus what can reasonably wait, because that ranking is the actual decision-support you're paying for.
+
+**Ask for the specific job description the diagnosis implies.** The entire point of doing this before a full-time hire is to know, concretely, what kind of technical leader you need. A good fractional engagement should be able to answer that directly — "you need someone strong in infrastructure scaling" or "you need someone who can own security and data handling" — rather than leaving you to translate a list of findings into a hiring decision on your own.
+
+**Get a written handoff document, not just a conversation.** Whatever full-time hire you eventually make will need to understand what was found and why, without re-diagnosing it from scratch. A fractional engagement that ends with a documented handoff, rather than knowledge that lived only in the fractional advisor's head, protects the value of the diagnosis past the engagement itself.
+
+Structured this way, a fractional engagement produces exactly what it's supposed to: a finite, priced answer to "what's actually wrong," followed by a natural stopping point. Without these boundaries, it risks becoming exactly the thing it was meant to prevent — an ongoing, underspecified technical relationship that never quite resolves into a clear next step.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A scaling expert hired to fix a hardening problem

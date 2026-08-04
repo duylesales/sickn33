@@ -56,6 +56,24 @@ Before agreeing to any agency's proposed scope, get a second, independent read �
 
 Our engineers in Amsterdam, alongside colleagues in Singapore and Ho Chi Minh City, are regularly the second opinion founders bring in after a pitch like the one Job received — and the finding, more often than not, is that a targeted fix would have done the job. LaunchStudio's fixed-scope pricing (typically €800–€7,500, delivered in one to three weeks) exists specifically so founders can compare a concrete, itemized scope against whatever an agency has proposed. Unlike freelancers, LaunchStudio is backed by Manifera, a company with 11+ years of production engineering experience — you can [see what a fixed-scope quote for your actual findings would look like](https://launchstudio.eu/en/#calculator) before committing to anything larger.
 
+## The Follow-Up Questions That Separate a Real Assessment From a Sales Pitch
+
+The four signals covered above are things to notice while listening to a pitch. The following questions are things to actively ask, out loud, before signing anything — and a legitimate assessment should be able to answer every one of them specifically, without the answer shifting the story.
+
+**"Can you show me the specific file or feature this issue is in?"** A real finding can be pointed to. If the answer stays abstract — "it's throughout the codebase," "it's a broader pattern" — without ever landing on something concrete, that's worth noting as a gap between what's being described and what's actually been verified.
+
+**"What would it take to fix this specific issue without touching anything else?"** This question tests whether the agency has actually scoped the problem narrowly or is defaulting to the broadest possible framing. A specific, contained answer suggests real technical assessment. An answer that expands to "well, once you're in there, you'd really want to also..." is worth treating as scope creep in the making, however reasonable it sounds in the moment.
+
+**"Can I get this assessment in writing, itemized, before we discuss price?"** A written, itemized list is checkable by a second party; a verbal pitch delivered confidently in a sales call is not. Reluctance to put findings in writing before a price is attached is itself informative.
+
+**"What happens to the budget if this turns out to be smaller than you're estimating?"** A trustworthy answer describes how the engagement would scale down, not just up. If the pricing structure only seems built to expand, that's a signal the estimate wasn't sized to the actual problem in the first place.
+
+**"Would your assessment change if I told you I hadn't raised any funding yet?"** This is a deliberately blunt way to test signal three from the list above. A price genuinely tied to technical scope shouldn't move much based on the answer. If it visibly does, that's worth remembering during the next conversation.
+
+**"Who else has reviewed this same codebase, and can I see what they found?"** Not every founder will have a prior review to compare against, but asking the question signals you expect the current assessment to hold up against another set of eyes — and watching how an agency responds to that expectation is itself useful information, regardless of whether a second review currently exists.
+
+None of these six questions require a technical background to ask, and none of them are hostile — a legitimate agency answers all six comfortably, because a real assessment was never threatened by scrutiny in the first place. The pitches worth being cautious about are the ones where one or two of these questions visibly change the tone of the conversation.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Rebuild BouwPlan Never Needed

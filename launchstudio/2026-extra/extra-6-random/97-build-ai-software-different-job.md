@@ -40,6 +40,18 @@ Ask a blunt question: has an existing AI API, used well, already solved problems
 
 LaunchStudio, powered by Manifera's 11+ years of software development experience, spends a good part of early conversations with founders on exactly this question — is the custom-model instinct solving a real gap, or is it standing in for a test that hasn't been run yet — before any engineering work begins. Our [contact page](https://launchstudio.eu/en/#contact) is a fast way to get that read on your own project, and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) team has the same conversation with enterprise clients considering the same fork.
 
+## A Five-Minute Test to Run Before You Commit to a Custom Model
+
+Before spending weeks on a custom model, run this short test on the off-the-shelf option first. It won't settle the question completely, but it will tell you, quickly, whether the custom-model instinct is solving a real gap or standing in for a test nobody has actually run yet.
+
+1. **Have you fed the off-the-shelf API real examples from your actual domain, not generic test inputs?** A general-purpose model tested with a placeholder example tells you very little. The same model tested against ten real cases pulled directly from your own product tells you almost everything you need to know for this decision.
+2. **Where specifically does the output fall short — and is the gap about accuracy or about presentation?** A recommendation that's "close but not quite right" is often a data or prompting problem, fixable by feeding the model better structured input, not a signal that the model itself is inadequate. A genuine capability gap looks different: the model consistently and structurally cannot do the specific thing you need, no matter how the input is adjusted.
+3. **Would better data into the existing model close the gap, or does the task require a fundamentally different approach?** Most gaps close with better-structured input, clearer instructions, or a second pass that filters the output — cheaper and faster than training anything from scratch. A genuinely different approach is the rarer case, and it's worth distinguishing which one you're actually facing before committing months to it.
+4. **Do you have the training data a custom model would actually need, today, not eventually?** Custom models need volume and quality of domain-specific data most early products haven't accumulated yet. If the honest answer is "we'd need to collect that data first," the custom-model path is months further away than it feels from the outside, and the off-the-shelf option is the only one available to ship with now.
+5. **What would "good enough" actually look like to your users, specifically?** Users rarely evaluate a recommendation or a generated result against a benchmark score — they evaluate it against whether it felt relevant and whether the product around it was easy to use. If off-the-shelf output, given clean input, already clears that bar for real users, the marginal accuracy gain a custom model might eventually offer is unlikely to be the thing that determines whether the product succeeds.
+
+If the off-the-shelf model performs reasonably well on real examples and the gap looks fixable with better data or prompting, that's the signal to build the product around it now and revisit the custom-model question later, once genuine evidence — not an untested hunch — actually calls for it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Months Spent Building What an API Already Did

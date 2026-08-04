@@ -42,6 +42,22 @@ Expect the phrase to keep meaning exactly what it means today: a dramatic accele
 
 LaunchStudio, out of its European headquarters in Amsterdam, exists specifically for that second part — the parts of a project no coding tool decides on its own. If you've built something with Lovable, Bolt, Cursor, or v0 and you're not sure where the judgment gaps are in your own product, our [free advice offer](https://launchstudio.eu/en/#contact) is a fast way to find out, and Manifera's [about us page](https://www.manifera.com/about-us/) tells the longer story of the eleven years behind that judgment.
 
+## The Judgment Calls That Keep Showing Up, Organized by Category
+
+A hundred articles of individual stories eventually reveal a shape underneath them, and it's worth naming that shape plainly rather than leaving it scattered across a hundred separate examples. The judgment calls that AI tools consistently don't make on their own sort into four recurring categories, and almost every production incident in this series falls into one of them.
+
+**Concurrency and shared state.** What happens when two people, two processes, or two requests touch the same thing at nearly the same moment. This category produces some of the most stubborn bugs precisely because single-user testing, by definition, never triggers it — the AI generates code that's correct for one actor at a time, and correctness under contention is a separate property nobody asked for explicitly.
+
+**Boundaries and access.** Who is allowed to see or do what, checked deliberately rather than assumed from context. Login checks are near-universal in AI-generated code; ownership and permission checks specific to a feature's actual business rules are not, because they can't be pattern-matched the same way — they have to be reasoned through, feature by feature, by someone who understands what the boundary is actually supposed to be.
+
+**Failure and degradation.** What the system does when something outside its control goes wrong — a payment processor times out, a platform has an outage, a dependency gets throttled. AI tools generate the success path readily and generate deliberate failure handling far less readily, because the success path is what a prompt implicitly describes and the failure path has to be asked for separately.
+
+**Tool and infrastructure fit.** Whether the underlying choices — a custom model versus an API, a free tier versus dedicated infrastructure, one coding tool versus another — actually match what the product needs at its current and near-future scale, rather than what was easiest or most impressive-sounding to reach for at the start.
+
+Every incident recounted across this series lives in one of these four categories, which is itself the point: the specific stories change, but the shape underneath them has stayed remarkably consistent across a hundred different products, founders, and AI tools. That consistency is useful information in its own right — it means a founder reviewing their own product doesn't need to guess at what to look for. The same four categories that explain the last hundred incidents are a reasonable checklist for finding the next one before it finds your users first.
+
+What's notable is how little the four categories have to do with which AI tool built the product. A founder using Cursor and a founder using Bolt end up asking the same four questions about their own codebase, because the categories describe gaps in judgment, not gaps in any particular tool's capability. That's also why the fix rarely means abandoning the AI tool that built the prototype — it means adding the judgment layer on top of it, once, and keeping it there as the product keeps growing past what any single prompt was ever asked to anticipate.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Where the Typing Stopped Being Enough

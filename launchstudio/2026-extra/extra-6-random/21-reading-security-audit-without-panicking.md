@@ -53,6 +53,30 @@ This is exactly what happens inside LaunchStudio's process. Every audit report i
 
 For founders who want to understand how these audits fit into the broader path from prototype to production, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice covers the same security review discipline applied across its 160+ enterprise projects, scaled down to founder-sized budgets.
 
+## A Short Glossary: What the Ten Most Common Findings Actually Mean
+
+The severity words in Step 2 tell you how urgent a finding is. They don't tell you what the finding actually means in plain English, which is usually the bigger source of panic — a term like "insecure direct object reference" sounds like it belongs in a courtroom, not a to-do list. Here's what the terms that show up most often in a typical AI-generated app's first audit actually translate to.
+
+**SQL injection.** A search box, form, or filter that doesn't properly separate what a user typed from a command sent to your database — meaning someone can type something crafted to make the database do things it was never supposed to do, like reveal other people's data. Plain-English translation: a text box that trusts input too much.
+
+**Exposed service role key.** A master password for your entire database, meant to stay on your server only, that ended up somewhere a browser or a public repository could see it. Plain-English translation: the keys to everything, left somewhere they shouldn't be.
+
+**Missing row-level security.** A database rule that's supposed to say "this user can only see their own rows" simply isn't there, so a logged-in user can potentially see or change data belonging to someone else just by asking for it differently. Plain-English translation: everyone's data is technically in the same room, with no walls between accounts.
+
+**Insecure direct object reference.** A specific version of the row-level security problem: an address bar or link contains an ID number, and changing that number to someone else's ID shows their information instead of yours. Plain-English translation: guessable web addresses that let you peek into someone else's account.
+
+**Cross-site scripting (XSS).** A place where user-typed text gets displayed back on a page without being cleaned up first, allowing someone to sneak in code disguised as text that then runs in another visitor's browser. Plain-English translation: a comment box that can secretly run instructions instead of just showing words.
+
+**Hardcoded secret.** A password, API key, or credential typed directly into the code instead of stored somewhere protected — meaning anyone who ever sees that code, now or in old version history, sees the secret too. Plain-English translation: a password taped to the inside of the front door.
+
+**Missing rate limiting.** Nothing stops the same action — a login attempt, a password reset, a form submission — from being repeated thousands of times per second by an automated script. Plain-English translation: no bouncer at a door that really needs one.
+
+**CVSS score.** A standardized number from 0 to 10 that auditors use to describe how severe a technical vulnerability is, roughly corresponding to the Critical/High/Medium/Low words from Step 2 — a 9 or above is typically Critical territory. Plain-English translation: a severity number that maps onto the words you already understand.
+
+**Dependency vulnerability.** A known, publicly documented weakness in one of the third-party packages your app relies on, discovered by security researchers and now public — meaning anyone can look up exactly how to exploit it if it isn't patched. Plain-English translation: an unlocked window that a published list somewhere tells burglars about.
+
+None of these ten terms are more complicated than their plain-English translation once someone bothers to give you one. The jargon isn't there to intimidate you — auditors write reports assuming another engineer will eventually read them too — but you're allowed to ask, every single time, for the version written for you instead.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Tessa Groen Turns a Wall of Jargon Into a Checklist

@@ -64,6 +64,20 @@ Does the tool just flag issues and leave you to fix them, or is there a path to 
 
 Manifera brings 120+ engineers and enterprise-grade security discipline to every review LaunchStudio performs — with our Singapore hub coordinating checks that combine automated scanning with actual human verification of authorization and data-access logic, not just pattern matching. If a tool's answers to these ten questions left you uneasy, [send us your prototype link](https://launchstudio.eu/en/#contact) and we'll tell you, honestly, what a real review would find. You can also see the broader engineering discipline behind these reviews in [Manifera's project portfolio](https://www.manifera.com/portfolio/).
 
+## How to Score the Answers You Get Back
+
+Asking the ten questions is the easy part. Interpreting the answers is where founders usually get stuck, because a vendor's response rarely comes back as a clean yes or no — it comes back as a paragraph, sometimes a confident one, and confidence isn't the same as coverage. Here's a rough way to sort what you hear into three buckets.
+
+**Green: specific, bounded, and honest about limits.** A strong answer names exact categories checked ("we verify server-side authorization on data-access endpoints, run dependency vulnerability scans weekly, and check for hardcoded secrets in both current code and git history"), and volunteers what's out of scope without being pressed. A vendor who tells you unprompted what their tool doesn't do is giving you more useful information than one who insists it does everything — scope honesty is itself a signal of a trustworthy process.
+
+**Yellow: technically accurate but incomplete.** Answers like "yes, we scan for vulnerabilities" or "our AI checks your whole codebase" aren't lies, exactly — they're just vague enough to mean almost anything. A yellow answer isn't disqualifying on its own, but it means you need to ask a sharper follow-up before trusting the result: which vulnerabilities, specifically, and does "whole codebase" include the database layer or just the source files.
+
+**Red: deflection, or an answer that doesn't match the question.** If you ask "does it check authorization" and the answer talks about encryption instead, or if a vendor gets noticeably less specific the deeper you push, treat that as real signal. A tool with genuine, thorough coverage rarely struggles to describe exactly what it covers, because describing it accurately is not hard for someone who actually built it that way.
+
+A useful habit: write down the actual answers to all ten questions in one place, side by side, rather than trusting your impression of the overall conversation. A vendor can sound reassuring for twenty minutes while giving you three yellow answers and one red one, and the pattern is much easier to see on paper than in the moment. If more than two or three answers land in yellow or red — especially question two, about authorization specifically — that's less a reason to walk away entirely and more a reason to treat the tool's "clean" result as a partial answer that needs a second, more targeted check before you build your launch confidence on it.
+
+This scoring habit matters most exactly when the stakes are highest — a healthcare, financial, or otherwise sensitive product where "mostly covered" isn't a comfortable place to launch from. A clean overall impression built on one yellow answer to question two, the authorization question, is exactly the kind of gap this scoring habit exists to catch before it becomes an incident instead of a checklist item.
+
 ## Real example
 
 ### An AI-Native Founder in Action: What the Scan Didn't See

@@ -38,6 +38,22 @@ That third phase is exactly what LaunchStudio specializes in: taking an AI-gener
 
 Manifera's own [portfolio](https://www.manifera.com/portfolio/) shows what that same hardening discipline looks like applied to enterprise clients — the same rigor, just scaled to a founder's budget and timeline through LaunchStudio.
 
+## Five Quick Checks That Reveal Which Phase You're Actually In
+
+You don't need to wait for someone else to tell you which of the three phases above your own app is actually in. A handful of five-minute checks, run yourself, right now, will tell you more honestly than how polished the app feels.
+
+1. **Open two browser tabs, log in as the same test account in both, and try to do the same action in both at once.** Book the same slot, submit the same form, claim the same item — whatever your product's core conflict point is. A prototype usually lets both succeed, silently creating a conflict neither side sees. Noticing this yourself, deliberately, tells you more than months of solo use ever will.
+
+2. **Try logging in with an email address that has unusual capitalization or extra spaces.** Something as small as this trips up more AI-generated login flows than founders expect, and it's a rough proxy for how much real-world messiness the rest of your app has actually been tested against versus how much it's only ever seen the clean, careful input you type yourself.
+
+3. **Ask whoever built your payment flow what happens if a card is declined halfway through a transaction.** If nobody can answer confidently, or the honest answer is "I'm not sure, it's never happened," that's a direct signal you're still in prototype or early MVP territory on this specific dimension, regardless of how solid the rest of the app feels.
+
+4. **Check whether you'd actually know if something broke overnight, without a customer telling you first.** Look for any kind of error monitoring, alerting, or even a basic log you'd think to check. If your honest answer is "I'd find out when someone emails me," that's the clearest single signal that the app hasn't yet crossed into the third phase, no matter how many real users are actively relying on it.
+
+5. **Try to access another test account's data by guessing at or editing an ID in the address bar.** This is the single most revealing check on this list, because it tests something no amount of positive user feedback will ever surface: whether your app enforces who can see what, or whether it simply trusts that nobody would think to try.
+
+None of these five checks require technical skill beyond patience and a willingness to deliberately try to break your own product instead of only ever using it the way it was designed to be used. Most prototypes fail two or more of these checks, and that's expected — it's not a verdict on the product's potential, just an honest read on which phase it's actually in today, as opposed to which phase it feels like it's in after months of it simply working for you personally.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Yara Smeets Hardens GastVrij for Its First Real Money

@@ -44,6 +44,24 @@ Gut feeling systematically underweights trust cost, because trust cost doesn't s
 
 Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and our team based in Ho Chi Minh City runs exactly this kind of structured risk triage when scale-up founders bring us a backlog of known AI-generated gaps — separating what can safely wait from what's quietly accumulating cost. You can [calculate what closing your highest-scoring gaps would cost](https://launchstudio.eu/en/#calculator) before deciding what to defer another quarter. For more on how we scope this kind of engineering work, see [Manifera's portfolio](https://www.manifera.com/portfolio/).
 
+## Six Questions to Ask Before You Defer the Next Item
+
+The three-axis score above gives you a number. These six questions are what to actually ask out loud in the room before that number gets translated into "we'll get to it next quarter" — because the scoring exercise only works if the conversation around it is honest, and it's easy to let a low score become an excuse rather than a genuine conclusion.
+
+1. **Who would actually discover this, and how?** Not "could someone discover this" in the abstract, but a specific person or role — a curious customer, a competitor's technical team, an auditor. If you can't name a plausible discoverer, your detectability score is probably lower than it should be out of convenience rather than accuracy.
+
+2. **What would they do next, once they found it?** A gap that's merely visible is different from one that invites exploitation or erodes confidence the moment it's noticed. Walk through the next step a discoverer would plausibly take, rather than stopping at "they could see it."
+
+3. **Has anyone already found it and just not told you?** This is the uncomfortable question the RisicoGrip case above answers the hard way — silence isn't the same as absence. If your gap is customer-facing in any way, assume someone technical on their side has at least glanced at it, even if no one has said anything.
+
+4. **What's the actual cost of fixing this today versus in three months?** Security debt rarely gets cheaper to fix with time — the surrounding code accumulates more dependencies on the flawed behavior, making the eventual fix more invasive than it would be now. Compare today's fix cost honestly against a future cost that's rarely smaller.
+
+5. **Would you be comfortable explaining this gap to the customer it affects, right now, in plain language?** If the honest answer is no — if explaining it out loud would be genuinely uncomfortable — that discomfort is data. It's often a more reliable signal than the numeric score alone.
+
+6. **Is this actually low-risk, or just low-visibility?** These get confused constantly. A gap in a rarely used feature is low-visibility; that's not the same as low-risk if the rare use case happens to be exactly the one your most valuable customer relies on. Check who specifically uses the affected feature before assuming low usage means low stakes.
+
+Running through these six questions takes about ten minutes per item and catches what a pure numeric score sometimes misses — the gap between a genuinely low-risk item and one that just hasn't been looked at closely enough yet. A backlog re-scored with the three-axis framework and walked through these six questions is a fundamentally different artifact than the same backlog re-reviewed on vibes at the next planning meeting.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Gap That Scored Low on Everything Except Trust

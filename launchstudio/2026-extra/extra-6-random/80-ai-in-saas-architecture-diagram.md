@@ -40,6 +40,20 @@ At low traffic, a slow AI call inline with core logic is a minor annoyance — a
 
 Our engineers based in Singapore regularly redraw this exact boundary for scale-up founders who embedded an AI feature inline during their first build and are now seeing it threaten core reliability under real load. If your product has an AI feature sitting inside a critical request path, [talk to an engineer](https://launchstudio.eu/en/#contact) about where it actually belongs. For more on how Manifera approaches this kind of architectural work, see [our portfolio](https://www.manifera.com/portfolio/).
 
+## A Three-Bucket Audit for Every AI Feature You've Already Shipped
+
+If your SaaS product already has more than one AI-powered feature, the placement question in this article isn't hypothetical for just one of them — it applies separately to each. A quick way to get a real picture, rather than a vague sense of "we're probably fine," is to sort every AI feature you've shipped into one of three buckets.
+
+**Bucket one: genuinely parallel.** The core transaction completes and confirms with no dependency on the AI call's outcome, and you can prove it — because you've actually tested what happens when that specific AI call is slow or fails, and the core feature came through unaffected. If you haven't tested it, you don't actually know it belongs here; you're assuming.
+
+**Bucket two: quietly inline.** The AI call sits in the same request-response cycle as a core action, even if nobody designed it that way on purpose. This is the most common bucket for AI features added quickly, because making a call "just work" during development usually means writing it inline first, and there's rarely a deliberate second pass that moves it out once the demo works. Anything where the user has to wait for the AI response before seeing confirmation of the core action belongs here.
+
+**Bucket three: unclear, and that's the real finding.** For a meaningful share of AI features in a fast-built product, nobody currently knows which bucket they're in, because nobody has traced the actual request path recently, if ever. This bucket is worth taking seriously on its own: "we don't know" is functionally the same risk as "it's inline," because you can't rely on a safety property you haven't verified.
+
+A useful test for sorting a feature you're unsure about: deliberately slow down or temporarily disable the AI call in a staging environment, then try the core transaction. If it still completes normally, you're in bucket one. If it hangs, times out, or fails alongside the AI call, you're in bucket two, whatever the diagram in your head says. This test takes an afternoon per feature and replaces assumption with evidence, which is the entire point.
+
+Run this against every AI feature you've shipped, not just the newest one — older features built early, when the codebase and the founder's understanding of request-path risk were both less mature, are disproportionately likely to have landed in bucket two without anyone deciding that on purpose. Once you've sorted the list, prioritize fixes by how central the underlying transaction is to your product's core function and by how consistently the AI provider it depends on has been reliable under load — a bucket-two feature attached to your most important transaction and your least reliable AI dependency is the one worth re-architecting first, not necessarily the one that happens to be newest or most visible.
+
 ## Real example
 
 ### An AI-Native Founder in Action: When the Summary Took Down the Booking

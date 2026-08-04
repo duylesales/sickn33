@@ -38,6 +38,22 @@ The riskiest version of this gap isn't a UI bug — it's silent data loss, exact
 
 Our engineers, working out of Amsterdam as part of Manifera's broader team of 120+ engineers, treat this as one of the first things to check on any AI-generated codebase — not because Bolt did something wrong, but because "the feature works" and "the feature handles bad input safely" are two separate claims, and only the founder can specify which one they actually need. If you want a second opinion on what your own Bolt build actually validates versus what it assumes, you can [get a free assessment of your prototype](https://launchstudio.eu/en/#contact). Manifera's broader engineering practice, including its [custom software development work](https://www.manifera.com/services/custom-software-development/), is built around exactly this kind of production-hardening for founder-built prototypes.
 
+## A DIY Test You Can Run Before Calling In an Engineer
+
+You don't need to read code to check whether your own product has this specific gap. What you need is a short list of deliberately bad inputs to try against every feature that accepts data from a user, and a clear eye for the difference between "nothing visibly broke" and "the data actually made it in correctly."
+
+**Submit an empty value where one seems required.** Leave a required-looking field blank, or upload a file with zero rows of actual data, and see what happens. A feature with real validation tells you clearly that something's missing. A feature without it often just proceeds anyway, silently treating the absence as acceptable.
+
+**Submit something obviously the wrong type.** Type letters into a field that expects a number, or upload a file in the wrong format entirely. Watch specifically for whether the app rejects it with a message naming the problem, or whether it accepts the submission and shows a generic success state regardless.
+
+**Submit the same thing twice, quickly.** Double-click a submit button, or resubmit a form you just successfully submitted. For anything transactional — an order, a booking, a payment — check afterward whether it created one record or two. Duplicate submissions are one of the most common places silent data problems hide, because the interface shows "success" both times.
+
+**Deliberately introduce a partial error into a bulk upload.** If your product accepts any kind of bulk import, build a test file where most rows are valid and a few are deliberately broken — a missing required field, a malformed date, an extra column. After uploading, count the rows in the file and count the rows that actually appear in the product. If the two numbers don't match and nothing told you why, you've found exactly the gap this article describes.
+
+**Check whether a "success" message actually means success.** After any of the above, look specifically at what the app tells you happened, and compare it against what you can independently verify actually happened — the actual record count, the actual stored value, the actual list of imported items. A success message that's true regardless of what actually got processed is the core problem this entire article is about.
+
+Running these five checks against your product's two or three most important data-entry points takes well under an hour, and it doesn't require any technical skill beyond noticing when what the screen says and what actually happened don't match. What it gives you isn't a fix — that part still needs an engineer — but a specific, concrete list of exactly where to point them, instead of a general worry that something, somewhere, might be wrong.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Import That Looked Successful

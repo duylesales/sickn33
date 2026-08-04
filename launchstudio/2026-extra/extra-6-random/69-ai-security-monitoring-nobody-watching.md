@@ -36,6 +36,22 @@ Real monitoring means specific, automated alerting on the patterns that matter: 
 
 Manifera's engineers have built exactly this kind of alerting infrastructure into AI-generated codebases that shipped with none, treating it as a non-negotiable part of production readiness rather than an optional add-on. Our engineering center in Ho Chi Minh City handles a meaningful share of this work. If your own app has no alerting configured — and if you're not sure, it probably doesn't — [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/) about what a minimum viable monitoring setup actually looks like. Manifera's [web application development](https://www.manifera.com/services/web-app-develop/) practice treats this as standard scope, not an upsell.
 
+## A 3am Self-Test: Would You Actually Find Out?
+
+Here's a way to actually check where you stand, rather than assuming your app falls somewhere in the "probably fine" range. Answer these honestly, not in the way you'd like the answer to be.
+
+**Could you name the specific threshold that would notify you?** Not "I'd probably notice" — an actual number. If failed login attempts against your app spiked to fifty in a minute, would anything automatically tell you, or would that information sit quietly in a log nobody's looking at? If you can't name the threshold, you don't have alerting on it, regardless of what you might assume about your own vigilance.
+
+**When did you last actually look at your raw logs, not your dashboard?** A product dashboard shows you the metrics someone decided were worth surfacing — signups, revenue, active users. It rarely surfaces failed authentication attempts or unusual request patterns, because those aren't product metrics, they're security signals, and most AI-generated dashboards were never built to show them. If your honest answer is "I don't think I've opened the raw logs directly in weeks," that's the gap, stated plainly.
+
+**Would a competitor or a curious stranger find this easier to probe than you'd assume?** Most solo founders picture an attacker as a sophisticated, targeted adversary. In practice, a huge share of the traffic hitting a small app's login page is automated, untargeted, and running against thousands of apps simultaneously — your app doesn't need to be interesting to get hit, it just needs to be reachable, which every live app already is.
+
+**If an attack started right now, how would it end?** Not "would I stop it" — how would it *end* at all, in the absence of you noticing? Some attacks are self-limiting; a credential-stuffing run against a login endpoint usually isn't. Without alerting, the honest answer for most solo-founder apps is: it ends when the attacker stops on their own, or when something downstream — a support ticket, a suspiciously large bill, a customer complaint — forces someone to look. That's a much longer and much more expensive timeline than an automated alert would produce.
+
+**Do you know what "normal" traffic looks like for your app well enough to spot "not normal"?** Alerting thresholds only work if they're calibrated to something. If you've never actually looked at your baseline request volume, failed-login rate, or typical traffic pattern, you don't yet have the reference point that would let even a manual check catch an anomaly — you'd be looking at numbers with no sense of whether they're unusual.
+
+If you answered "no" or "not sure" to more than one of these, the honest conclusion isn't that your app is currently under attack — it's that you have no way of knowing either way, which is precisely the state this article is describing. The fix isn't complicated engineering; it's specific, automated thresholds on a small number of patterns, configured once and left running, so the answer to all four questions above becomes a confident "yes" instead of a guess made at 3am with no data behind it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Eleven Days Before Anyone Noticed

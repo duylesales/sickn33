@@ -40,6 +40,26 @@ Switching makes sense when your current tool has a specific, concrete gap that's
 
 Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and our Singapore hub often helps founders untangle exactly this kind of tool-hopping — stitching together a project that's been rebuilt piece by piece across two or three different AI tools into one coherent, production-ready codebase. If you're not sure whether your current setup is worth building further on, our [free advice](https://launchstudio.eu/en/#contact) offer is a fast way to find out, and Manifera's [portfolio](https://www.manifera.com/portfolio/) shows what a coherent, professionally engineered build actually looks like end to end.
 
+## What Actually Belongs on Your Own Checklist
+
+The advice to "build your own checklist instead of chasing rankings" is only useful once it's specific. A vague checklist just becomes a smaller version of the same treadmill. Here's what the categories that actually predict whether a tool fits your project tend to look like, broken down.
+
+**Framework and stack fit.** Does the tool generate code in the language and framework you're actually planning to run in production, or does it default to its own opinionated stack regardless of what you asked for? A tool that's excellent in the abstract but fights your chosen stack every step of the way will cost you more in friction than a marginally weaker tool that fits cleanly.
+
+**Export quality, not just export existence.** Almost every tool lets you export or download your code. Far fewer produce an export that's clean, readable, and free of platform-specific lock-in you'd have to unwind later. Test this early, on a small feature, rather than assuming it'll be fine because the export button exists.
+
+**Authentication and permissions scaffolding.** This is one of the more consistently under-cooked areas across AI coding tools generally, and it's worth checking specifically, since it's expensive to retrofit later and directly affects how much review a launch actually needs.
+
+**How it handles being wrong.** Every tool occasionally generates something incorrect or incomplete. What matters is how easy it is to course-correct — does a clarifying follow-up actually fix the specific issue, or does it tend to regenerate unrelated working code along with the fix, creating new problems while solving the old one?
+
+**Community and support depth for your specific use case.** Not "does this tool have more total users," but "can I actually find an answer when I hit a problem specific to my framework or feature." A smaller, more relevant community frequently beats a larger, more generic one when you're stuck on something concrete at 11pm.
+
+Building this list takes an afternoon, and checking your current tool against it takes another. That's the entire investment — a fixed, one-time cost, compared against the recurring cost of re-checking a general ranking every week indefinitely. Once your current tool clears your own list, the question "is it still ranked first this week" stops being a meaningful question to keep asking, because it was never actually measuring what your project needed in the first place.
+
+Notice, too, that none of these five categories are things a general ranking is well-positioned to measure in the first place — they depend entirely on your specific stack, your specific feature set, and your specific team, none of which a broad comparison article knows anything about. That's not a flaw in how rankings are built; it's simply a mismatch between what they're measuring and what you actually need answered once you're already mid-build on a real project rather than choosing a tool for the first time.
+
+Keep the list itself short on purpose — five categories is plenty, and a longer list starts to reintroduce the same problem as a ranking, where too many inputs make it hard to tell which one actually matters for a real decision. The point isn't to build a more thorough scoring system than the rankings use. It's to build a shorter one that's actually about your project, checked rarely, instead of a longer one that's about the market in general, checked constantly.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Migrations Chasing One Ranking

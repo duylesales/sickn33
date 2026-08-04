@@ -51,6 +51,24 @@ Fair doesn't mean cheapest. It means the price is legible — you can see what y
 
 LaunchStudio is built around this exact principle — every engagement is scoped and quoted as an itemized breakdown before a euro sign gets attached to it, which is why fixed-price engagements typically land in the €800–€7,500 range for a defined scope. Our Amsterdam team walks founders through this itemization directly. You can [calculate an estimate for your own project](https://launchstudio.eu/en/#calculator) as a starting reference point before you compare it against other quotes. For a broader look at how scoped engineering pricing works at scale, see Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice, applied across 160+ delivered projects.
 
+## Beyond the Number: Contract Terms That Matter As Much As Price
+
+Itemizing a quote tells you whether the price is fair for the scope described. It doesn't tell you whether the terms surrounding that price protect you if the engagement doesn't go exactly as planned — and a fair number attached to unfavorable terms can end up costing more than a slightly higher number with better terms attached. A handful of non-price details are worth checking with the same rigor you'd apply to the itemization itself.
+
+**How payment is structured across the timeline.** A quote that requires full payment upfront carries fundamentally different risk than one split across milestones tied to verified deliverables. Even at an identical total price, the payment structure determines how much leverage you retain if something goes wrong partway through — full upfront payment leaves you with almost none.
+
+**What counts as "done" for each line item, in writing.** A quote can be perfectly itemized and still leave "done" undefined for any individual component, which opens the door to a dispute later about whether a delivered piece actually satisfies what was scoped. Ask for a specific, checkable definition of completion for each major item, not just a price attached to a label.
+
+**What happens if a discovered issue changes the scope mid-project.** Fixed-price work occasionally uncovers something nobody anticipated at quoting time — a deeper structural issue behind the surface bug, for instance. A fair contract specifies how that gets handled: a defined change-order process with your approval required, versus a vendor who can simply expand the work and the bill without checking back first.
+
+**Who owns the code, and when ownership transfers.** Confirm explicitly that ownership transfers to you upon payment, not upon some later condition, and that this covers any AI-assisted portions of the delivered work specifically, since some standard vendor templates are written more broadly than founders expect on this point.
+
+**What support window follows delivery, and what it costs.** A fixed-price quote that goes silent the moment the invoice is paid is a different commitment than one that includes a defined window of post-delivery bug coverage. Ask specifically whether support after delivery is included, and if not, what it costs and how quickly you could expect a response.
+
+**Whether the vendor will put their itemized breakdown into the contract itself, not just an email.** An itemization used to win your business but never actually incorporated into the signed agreement isn't binding on anything. If the vendor is confident enough in their breakdown to send it, they should be equally comfortable making it part of what you're both actually agreeing to.
+
+None of these six terms change what "fair" means in terms of price — they change what "fair" protects once the engagement is underway. A well-itemized quote with poor terms around it is still a real risk; the itemization exercise and the terms review are two separate checks, and skipping either one leaves a real gap the other wasn't built to cover.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Three quotes, one spreadsheet

@@ -51,6 +51,20 @@ If you can't answer at least three of these confidently, you likely have a conve
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, and our team — including engineers working out of our Singapore hub covering Southeast Asia — spends a lot of time doing exactly this kind of audit: separating what's genuinely AI infrastructure from what's a normal database with a conversational skin. If you're not sure which one you're running, you can [calculate what your project costs to properly secure](https://launchstudio.eu/en/#calculator) before you find out the hard way. For teams curious about how this fits into broader custom software work, Manifera's [custom software development practice](https://www.manifera.com/services/custom-software-development/) covers the same ground at enterprise scale.
 
+## What Actually Changes Once You Know Which One You Have
+
+Knowing which of the three categories your product actually falls into isn't just a semantic exercise — each answer changes what you're actually responsible for maintaining, and what breaks first if you ignore it.
+
+**If you have a normal database with a chat interface on top (the most common case).** Your responsibilities are the same as any founder running a conventional app: backups, indexing, access control, and a migration plan as your schema evolves. The "AI" part of your product needs none of this — it's a translation layer sitting in front of infrastructure that behaves exactly like it would without the chatbot. Treat the underlying database with the same seriousness you'd apply if there were no chat widget at all, because functionally, there isn't one where it counts.
+
+**If you have AI-assisted querying (a model translating plain English into SQL).** You inherit an additional risk category the first case doesn't carry: the model can generate a query that's technically valid but scoped wrong — pulling more data than the asking user should see, or running an expensive query that slows the database for everyone else. This is worth a specific check: does the AI-generated SQL respect the same row-level permissions a human-written query would, or does it run with broader access because nobody scoped the translation layer's permissions down to match the requesting user?
+
+**If you have a genuine vector database.** Your scaling and cost curve looks different from a relational database's — embedding storage and similarity search grow and get expensive in ways a standard table doesn't, and the backup conversation is slightly different too, since what you're protecting is often a derived index that can, in principle, be regenerated from source data rather than a single irreplaceable copy. Worth confirming explicitly: if the vector store were lost tomorrow, could you actually regenerate it, or is regeneration theoretical because the source data or the embedding pipeline itself no longer exists in a runnable state?
+
+**Regardless of which category you're in, your vendor dependency risk is real and often unexamined.** If your product's "AI" layer depends on a specific model provider's API, that's a dependency exactly like any other third-party service — one that can change pricing, rate limits, or availability without much warning. This is separate from the storage-layer question above, but founders who've just sorted out which kind of database they have often stop there and don't ask the parallel question about the API layer sitting on top of it.
+
+The point of sorting yourself into one of these categories isn't to feel more or less impressive at your next pitch. It's that each one comes with a specific, different maintenance obligation, and the obligation doesn't go away just because nobody flagged it during the build. A founder who knows exactly which category they're in, and has actually addressed that category's specific risk, is in a fundamentally different position than one who's simply confident their product "has an AI database" without having checked what that phrase is doing underneath the marketing.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Inventory Tool With No Safety Net

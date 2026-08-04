@@ -54,6 +54,22 @@ Behind this one PR is Manifera's broader team of 120+ engineers, and reviews lik
 
 By end of day, Puck's comment threads and request-detail page are approved and merged — with the sanitization fix included, not just flagged for her to handle herself. The queue still has one more PR waiting for tomorrow morning. This is, more or less, every day.
 
+## A Founder's Pattern-Check Habit: How to Run One Yourself
+
+The 10:20 AM pattern check described above — searching the whole repo for the same unsafe construction rather than fixing one instance and moving on — is the single highest-leverage habit in that entire day, and it's one a founder without an engineering background can partially replicate themselves, even if the actual fix still needs a professional.
+
+**When you or your AI tool fixes a bug in one place, search for the same pattern everywhere else.** Most code editors and AI tools have a simple text search. If a fix involved a specific function name, a specific way of rendering something, or a specific database query shape, search the whole codebase for that same shape before considering the bug closed. You don't need to understand every result — you just need to know how many places look similar enough to warrant a second look.
+
+**Pay attention when a bug feels oddly familiar.** If you find yourself thinking "didn't I already fix something like this," that instinct is worth acting on immediately rather than dismissing. AI-generated codebases repeat unsafe patterns across files more than human-written ones do, precisely because each file was generated somewhat independently — your instinct that you've seen this shape before is often correct.
+
+**Ask your AI tool directly whether a pattern repeats.** A prompt like "search the codebase for anywhere else user input gets rendered the same way as this file" is something most AI coding tools can actually attempt, even if the answer needs a human to verify. It won't be as reliable as a professional repo-wide audit, but it's a meaningfully better habit than fixing one instance and assuming it was isolated.
+
+**Keep a short list of "components that look similar."** As your app grows, note which features share the same underlying shape — several pages that all render user-submitted text, several forms that all collect similar data. This list becomes valuable exactly when a bug is found in one of them, because it tells you immediately which other components deserve the same scrutiny.
+
+**Treat "found in twelve files" as a signal about your process, not just about the code.** If a pattern check turns up many repeated instances, that's useful information beyond the immediate fix — it suggests the underlying habit that produced the pattern is still active, and future features are likely to reproduce it again unless something structural changes, like a shared, reusable fix everything routes through.
+
+This habit doesn't replace a professional review — verifying every instance was actually caught, and building the shared fix correctly, still benefits from someone who does this daily. But a founder who searches for repeated patterns as a reflex, every time something gets fixed, catches a meaningfully different class of risk than one who treats every bug as a standalone event.
+
 ## Real example
 
 ### An AI-Native Founder in Action: BuurtHulp's Repeated Pattern

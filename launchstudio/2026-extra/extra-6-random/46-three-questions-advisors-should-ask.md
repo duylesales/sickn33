@@ -56,6 +56,22 @@ The value of these three questions isn't that they need perfect answers on day o
 
 Our team, based in Ho Chi Minh City alongside colleagues in Amsterdam and Singapore, works with founders specifically on making these three answers concrete — proper infrastructure ownership, clear data control, and a documented path forward regardless of what any single AI tool does next. LaunchStudio is powered by Manifera, a company with 11+ years of production engineering experience across 160+ delivered projects, and this kind of ownership clarification is a routine part of getting a project production-ready. If you want a straight answer to these three questions about your own product, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact).
 
+## How to Prepare Honest Answers to All Three Questions Before Anyone Asks
+
+Knowing the three questions matter is the easy part. Actually being able to answer them, calmly and specifically, when an investor's technical advisor or a partner's diligence team asks, requires a bit of groundwork most founders never get around to until the questions are already being asked under pressure. A focused pass through the following checklist, done once, produces the concrete answers each question actually needs.
+
+**List every account that touches your infrastructure, and who can log into each one.** Hosting, database, domain registrar, any AI platform account tied to deployment — write down each one and whose name and credentials control it. It's common to discover that a co-founder, an early contractor, or the AI platform itself technically holds access nobody has thought to consolidate under the company's own control.
+
+**Confirm your company, not an individual or a third-party platform, owns the domain and hosting accounts.** A domain registered under a personal email, or a hosting account tied to an AI tool's managed infrastructure rather than an account your company independently controls, is exactly the kind of detail that reads as a red flag in due diligence, however innocent its origin.
+
+**Write down, in plain language, where customer data physically lives.** Which database, which provider, which region — and whether you could produce a specific customer's data, or delete it entirely, without needing anyone else's help to do so. If the honest answer involves "I'd have to ask the AI platform" or "I'm not sure," that's the gap worth closing before anyone else asks.
+
+**Read the terms of service for any AI platform your infrastructure depends on.** Specifically look for what happens to your deployed application and its data if the platform changes its terms, discontinues a feature, or terminates your account. Knowing the answer, even if it's uncomfortable, is a materially different position than not knowing it exists as a question.
+
+**Draft a one-page summary of all three answers before you need it.** A short, plain-language document — who owns the infrastructure, how data is controlled, what the contingency is if the underlying platform changes — is something you can hand to an advisor, an investor, or a partner's diligence team on short notice, rather than assembling the answers for the first time while someone waits on the other end of a call.
+
+Doing this once, early, costs a few hours. Doing it for the first time in response to a due diligence request costs considerably more — not just in time, but in the impression it leaves at exactly the moment a partner or investor is deciding how much to trust the rest of what you've told them. The three questions this article opened with aren't a test you pass or fail once; they're a standing part of the business worth being able to answer at any point, not just the point when someone finally asks.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Due Diligence Questions Nobody Had Asked First

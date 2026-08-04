@@ -58,6 +58,24 @@ Nothing about the script itself was unusual. It did exactly what it was written 
 
 Our engineers in Singapore, working alongside colleagues in Amsterdam and Ho Chi Minh City, treat environment separation as one of the standard checks on any AI-built project before it goes live — because it's invisible right up until it isn't. LaunchStudio brings Manifera's enterprise-grade engineering, refined across 160+ delivered projects, to exactly this kind of infrastructure review. You can [see what a database separation and hardening review would cost](https://launchstudio.eu/en/#calculator) for your own project.
 
+## A Practical Path to Separating Environments Without Breaking What Already Works
+
+Knowing that environment separation matters is one thing. Actually doing it on a project that already has real users and real data sitting in a shared schema is a different, more delicate task — one founders often avoid specifically because it sounds like it requires downtime or risk to fix. In practice, it's a contained, sequenced project when approached in the right order.
+
+**1. Map what actually exists before changing anything.** Before touching a single table, document which tables, scripts, and services currently connect to the shared database, and which of those are meant for testing versus real usage. This step alone often surfaces scripts nobody remembered still existed, pointed at production without anyone actively deciding that should be the case.
+
+**2. Stand up a genuinely separate test environment first.** Create a second, fully independent database — separate credentials, separate connection string, ideally on separate infrastructure — before touching the production side at all. This gives you a safe place to rehearse the rest of the separation without any risk to live data.
+
+**3. Migrate test workflows to the new environment, one at a time.** Move scripts, seed data, and testing routines to point at the new test database individually, verifying each one works correctly in isolation before moving to the next. Rushing this step by moving everything at once is how new mistakes get introduced during a process meant to prevent them.
+
+**4. Add a structural safeguard, not just a policy.** Once workflows are separated, add something that makes it difficult to accidentally point a test operation at production — different credential formats, a required explicit flag to target production, or infrastructure-level access restrictions. A written rule that says "don't run test scripts against prod" is far weaker than a system that makes doing so require a deliberate, hard-to-trigger-by-accident step.
+
+**5. Audit existing production data for anything that shouldn't be there.** Once separation is in place, check the production database itself for leftover test records, placeholder accounts, or sample transactions that accumulated while everything shared one schema — cleaning these up prevents them from quietly skewing reporting or analytics going forward.
+
+**6. Document the new boundary for anyone who touches the system next.** A short, clear note on which database is which, and what the safeguard from step four actually does, means the next person adding a feature or running a script inherits the boundary instead of having to rediscover why it exists.
+
+None of these six steps requires pausing the product or migrating live users to new infrastructure. The risk in environment separation was never in doing the work — it's in the gap between "we should do this" and actually scheduling it, which is exactly the gap that lets a single migration script, run at the wrong moment, cause the kind of damage this article describes.
+
 ## Real example
 
 ### An AI-Native Founder in Action: One Migration Script, No Boundary to Stop It

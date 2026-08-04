@@ -40,6 +40,24 @@ When a procurement team reads a usage-based pricing page and asks about data iso
 
 If you're preparing your SaaS product for exactly this kind of scrutiny, it's worth [calculating what a production-readiness review of your architecture would cost](https://launchstudio.eu/en/#calculator) before a prospect's procurement team asks the question for you. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) work for enterprise clients is built around this exact discipline — tenant isolation enforced at every layer, not just at the invoice.
 
+## A Pre-Sales-Call Checklist: What to Verify Before a Buyer Asks About Isolation
+
+Waiting for a procurement team to ask the isolation question is the expensive way to find out where your architecture actually stands. Running through this list before your pricing page attracts serious enterprise interest is the cheap way. None of these require a rebuild to check — they require someone actually looking, which is different from assuming the billing system's accuracy implies the data layer's safety.
+
+1. **Trace one query end to end.** Pick any endpoint that returns customer-specific data and trace exactly how the tenant boundary is enforced — is it a `WHERE` clause checked on every single query, or is it assumed because the application only ever generates requests scoped to the logged-in account? The second version works until a bug, a new endpoint, or a modified request stops assuming correctly.
+
+2. **Try to cross the boundary on purpose.** With a test account, attempt to request another tenant's data by directly modifying a request — an ID in a URL, a parameter in an API call — rather than clicking through the interface as intended. If it succeeds, the isolation exists only in the parts of the app that were built to not ask for the wrong thing, not in a boundary that actually blocks it.
+
+3. **Check whether isolation is enforced at the database level or only in application code.** Application-level checks are better than nothing, but a single missed check in a single code path is enough to leak data. Database-level enforcement — row-level security, tenant-scoped connections, or an equivalent structural guarantee — fails closed instead of failing open when a developer forgets a check somewhere.
+
+4. **Confirm your usage metering and your data isolation are actually the same boundary.** It's possible to meter usage accurately per account for billing while the underlying data queries have no enforced separation at all — two different systems that happen to agree in the common case but aren't actually the same guarantee. Verify they're built on the same boundary, not two boundaries that coincidentally align.
+
+5. **Write down the answer before you're asked for it.** Once isolation is verified, document specifically how it's enforced — which layer, which mechanism, what's been tested — in language a procurement team's security reviewer can actually evaluate. A confident verbal answer during a sales call reads very differently from a prepared, specific one, even when both founders are telling the truth.
+
+6. **Re-run the cross-tenant test after any schema change.** Isolation isn't a one-time property; it's a property that has to survive every new table, every new feature, every new query pattern added after the initial check. A boundary verified once and never revisited is a boundary you're assuming still holds, not one you know still holds.
+
+Running this list doesn't require enterprise sales experience — it requires treating "does this actually work" as a separate question from "does the billing dashboard look right," and checking the first one directly instead of inferring it from the second.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Question the Pricing Page Answered First

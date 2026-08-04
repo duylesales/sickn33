@@ -54,6 +54,22 @@ The last stretch is where the priority fixes actually get written, tested agains
 
 If you want to see how this fits into the fuller engagement, our [process breakdown](https://launchstudio.eu/en/#process) walks through what happens after these first two days. For teams evaluating whether their own codebase needs this kind of pass before it goes live, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) work follows the same read-first, fix-second discipline on a larger scale.
 
+## How to Prepare Your Own Codebase Before Handoff
+
+The read-only pass described above works whether or not you prepare anything in advance — that's the point of it. But founders who spend twenty minutes getting a few basics in order before sending their repo over tend to get a faster, more useful first 48 hours, simply because less of that window goes to reconstructing context that could have been handed over directly.
+
+**Write down what the app is supposed to do, in your own words.** Not a formal spec — a few sentences on what a user can do, what the core workflows are, and what "working correctly" looks like from your perspective. An engineer doing a read-only pass is building a mental map of intended behavior versus actual behavior, and starting from your own description is faster than inferring intent purely from the code.
+
+**List every third-party service your app talks to.** Payment processor, email service, AI model provider, analytics — anything external the app connects to. This is exactly the kind of thing that can turn up hardcoded where it shouldn't be, and knowing the list in advance lets a reviewer check each connection specifically rather than discovering them one at a time while reading.
+
+**Note anything you already suspect is fragile.** If there's a feature you've quietly avoided touching because you're not sure how it works, or a flow that broke once before and you're not confident you fully fixed it, say so upfront. Founders often assume admitting uncertainty makes them look bad; in practice, it's the single most useful piece of information you can hand over, because it points a reviewer straight at the highest-risk area instead of making them find it independently.
+
+**Gather your existing user base or traffic numbers, even rough ones.** Whether you have three pilot users or three hundred waitlist signups affects how urgently certain findings need fixing. A rate-limiting gap matters differently depending on whether real traffic is imminent or months away.
+
+**Don't clean up the code first.** It's a common instinct to tidy things up before "showing it to a professional," the same way you'd clean a house before a guest arrives. Resist it. A read-only review is specifically looking for the codebase as it actually exists in production right now — cleaning it up first risks accidentally fixing, or breaking, something before anyone's had a chance to understand what was there originally.
+
+None of this preparation takes more than half an hour, and none of it is required — the process works fine without it, as it does for founders who have never personally audited their own generated code. But a founder who arrives with even a rough map of intent, dependencies, and known weak spots gets more out of the same 48 hours than one who arrives with just a repo link and no context at all.
+
 ## Real example
 
 ### An AI-Native Founder in Action: MeetGoed's First Weekend Review

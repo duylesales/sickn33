@@ -45,6 +45,20 @@ None of this means chat widgets are bad — a well-connected one is a genuine up
 
 Our engineers have shipped 160+ projects for enterprise clients, and connecting exactly this kind of live data — a menu, a schedule, an inventory feed — into a chatbot that actually reflects reality is standard work for the team, including engineers based in Ho Chi Minh City where Manifera runs its main development center. If your "AI website" hasn't been checked against this list, you can [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) about what a real connection would take. Manifera's [portfolio](https://www.manifera.com/portfolio/) includes several examples of exactly this kind of live-data integration done properly.
 
+## The Three Business Types Where This Gap Actually Costs You Customers
+
+The static-versus-live gap described above doesn't hit every business the same way. For some products, a chatbot answering from a snapshot is a minor annoyance. For others, it's the difference between a satisfied visitor and one who shows up expecting something that no longer exists. Here's roughly where the real cost concentrates.
+
+**Businesses with perishable or rotating inventory.** A restaurant's menu, a boutique's stock, a florist's seasonal availability — anything that changes on a timescale of days or weeks is the worst possible match for a chatbot reading from a static snapshot. The visitor asking the question has no way to know the answer is stale, and the failure is maximally visible: they show up, or they order, expecting something that quietly stopped being true weeks earlier. This is also the category where the fix matters most, because the cost of being wrong is a disappointed customer standing in front of a real human employee who has to explain the gap in person.
+
+**Businesses where timing is the entire product.** Booking platforms, appointment schedulers, event ticketing — anywhere the correct answer today is different from the correct answer yesterday. A chatbot confidently confirming availability that no longer exists doesn't just produce a wrong answer; it produces a double-booking, a scheduling conflict, or a customer who took a specific timeslot off their own calendar based on information that was never live in the first place. The reputational cost here compounds, because the customer's own downstream plans were built on the bad answer.
+
+**Businesses where the answer has a compliance or pricing dimension.** A chatbot quoting an outdated price, an old discount that no longer applies, or eligibility criteria that changed since the chatbot's content was last written creates a specific kind of problem beyond customer annoyance: a business now has a customer who was told something in writing, by what looked like an authoritative company system, that the business either has to honor at a loss or walk back in an uncomfortable conversation. Neither outcome is good, and both were avoidable.
+
+Businesses outside these three categories — a portfolio site, a simple informational page, anything where the underlying facts genuinely don't change week to week — carry much less risk from this gap. A static-content chatbot answering static-content questions accurately isn't actually a problem; it's just a chatbot that happens to be reading from content that doesn't need to be live, because nothing about the business is time-sensitive in the first place.
+
+The practical takeaway is that "does my chatbot need to be connected to live data" isn't a universal yes — it's a question whose answer depends entirely on how fast the underlying facts of your specific business actually change. Founders in the first two categories above should treat a live connection as close to mandatory before calling the product "AI-powered" in front of customers. Founders in the third category can reasonably deprioritize it, at least until the business itself becomes more dynamic than it is today.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Chatbot Answering From a Menu That No Longer Existed

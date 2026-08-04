@@ -50,6 +50,22 @@ This is the exact gap LaunchStudio's engineers fill for solo technical founders 
 
 If you're a solo founder trying to figure out where your own codebase sits on this risk spectrum, our [process page](https://launchstudio.eu/en/#process) explains how a review engagement actually works day to day. And if you want to see how this discipline scales past a single founder's codebase, Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) practice applies the same review-before-ship principle to much larger systems.
 
+## What a Five-Minute Pre-Ship Review Actually Looks Like
+
+It's easy to mention a "five-minute pre-ship review" without saying what actually happens during those five minutes. It's worth being specific, because the value of this habit lives entirely in what it actually checks, not in the five-minute framing itself — a rushed five minutes checking the wrong things is worthless, and a focused five minutes checking the right things catches a surprising amount.
+
+**Read the diff, not the feature.** Before shipping, look specifically at what changed — every modified line, not just the new file you asked for. It's tempting to only look at the new feature you prompted for and assume everything else is untouched, but AI tools frequently modify adjacent files as a side effect of satisfying the prompt, and those side-effect changes are exactly where silent breaks live.
+
+**Ask one question of every changed line: "what else depends on this?"** You don't need to trace every dependency by hand — a quick search for where a modified function or component is called elsewhere in the codebase takes seconds and tells you whether today's change is isolated or shared.
+
+**Check anything touching authentication, payments, or data access with extra care, every time.** These categories get a slower, more deliberate look regardless of how confident the change looks on the surface, because the cost of a mistake here is structurally higher than in a UI tweak.
+
+**Trust, but verify, anything the AI tool describes as a "minor fix."** AI coding assistants sometimes summarize a change as smaller than it actually was, especially when a "fix" for one thing required touching several files to make consistent. Read the actual diff rather than trusting the tool's own one-line description of what it did.
+
+**Keep a running note of anything you deferred.** If something looks slightly off but not urgent enough to block today's ship, write it down somewhere you'll actually revisit — a scratch file, a running list, anything searchable. This is the step that prevents "I'll deal with it later" from quietly becoming "I forgot this was ever a question," which is exactly how stacked, silent changes accumulate into the kind of bug cluster that takes real investigation to untangle.
+
+Five minutes sounds too short to matter, and for a founder used to either reviewing everything exhaustively or nothing at all, it can feel like it's not doing enough. But a five-minute check run consistently, on every ship, catches a meaningfully different set of problems than an exhaustive review run rarely — because the value compounds from consistency, not from depth on any single pass.
+
 ## Real example
 
 ### An AI-Native Founder in Action: CodeVolg's Silent Break Cluster

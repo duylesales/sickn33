@@ -50,6 +50,22 @@ That's the actual value of a human engineer reading AI-generated code at least o
 
 Our engineers in Amsterdam do this kind of first-read review regularly, and the six-files-in-a-row pattern is one of the most common things they find. LaunchStudio is backed by Manifera — trusted by clients like Vodafone, TNO, and CFLW — and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) work applies the same read-it-properly-once standard to every project. If you want an engineer to actually read through your own codebase, you can [describe your project and we'll respond within one business day](https://launchstudio.eu/en/#contact).
 
+## Beyond Hardcoded Keys: The Other Patterns a First Read Catches
+
+Hardcoded credentials are the single most common finding in a first read, but they're rarely the only one. The same "consistent tool, consistent shortcut" logic that produces the same secret embedded in file after file tends to produce a handful of other recurring patterns too — each one invisible in a demo, each one visible almost immediately to someone reading the code with the right question in mind.
+
+**Direct string-built database queries.** When user input gets inserted straight into a database query as text, rather than passed through a parameterized query the database treats as pure data, the door opens for that input to be interpreted as part of the query itself. AI tools reach for the direct, string-built version constantly, because it's the shortest path from "the feature works" to a working demo — and it works right up until someone deliberately sends input designed to exploit it.
+
+**Permission checks that exist on the frontend only.** A button that's hidden from a user without the right role looks, in a demo, exactly like a permission system working correctly. Whether the same restriction is enforced on the server — independent of whatever the frontend chooses to show or hide — is a separate question a demo never tests, because nobody in a demo tries calling the underlying endpoint directly instead of clicking through the interface.
+
+**Error messages that reveal more than they should.** A generic AI-generated error handler often surfaces the raw underlying error — a database error, a stack trace, an internal file path — directly to the end user, because that's the fastest way to make debugging easier during development. Left in place for production, the same behavior hands anyone probing the app a detailed map of its internal structure.
+
+**Debug or test routes left reachable.** Endpoints created to speed up development — a route that resets a database, a page that dumps raw data for inspection, a shortcut that skips authentication for testing — are easy to forget about once the feature they supported is finished, and AI tools have no independent way to flag "this was for development only" once the conversation has moved on to the next request.
+
+**Logging that captures more than it should.** Debug logging added to trace down an issue during development frequently captures full request bodies, including passwords or payment details, and that logging configuration often survives unchanged into production, sitting in a log file that was never designed to hold sensitive data securely.
+
+Each of these patterns shares the same root cause as the hardcoded-key pattern: a shortcut that solved an immediate problem, repeated everywhere the same problem came up again, with nobody in the loop whose job it was to ask "what happens if someone else finds this." A first read that stops after finding one instance of any of these patterns is only doing half the job — the more valuable output is confirming whether the same shortcut shows up anywhere else in the codebase too.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Six Files, One Pattern, No Malice Involved

@@ -56,6 +56,24 @@ None of these questions come up naturally while you're comparing demo videos, be
 
 Manifera's engineers — the same team behind 160+ delivered projects for clients like Vodafone and TNO — have reviewed enough AI-generated codebases from Lovable, Bolt, Cursor, and v0 to know the tools mostly converge on demo quality and diverge sharply on exactly these unglamorous defaults. Our Singapore team, covering the Southeast Asia side of LaunchStudio's work, runs this same checklist with founders before and after they've already picked a tool. If you're still deciding, [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and run your shortlist past someone who isn't selling you the tool. For the software development track record behind that advice, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice is worth a look.
 
+## Red Flags in the Answers, Even When the Demo Was Great
+
+Asking the right questions from the checklist above only helps if you can also recognize a bad answer when you get one — and bad answers to these particular questions tend to share a few recognizable shapes, regardless of which tool is giving them.
+
+1. **"That's not something our users typically ask about."** This is a deflection dressed as reassurance. It might be true that other users don't ask, and that's precisely the problem the earlier checklist exists to fix — the fact that a question is unusual doesn't make it unimportant, it makes it exactly the kind of question a comparison thread wouldn't have surfaced for you.
+
+2. **An answer that describes the feature instead of the guarantee.** Ask whether roles are enforced on the server, and a red-flag answer describes how nice the role-based dashboard looks, without ever confirming what happens when a request bypasses that dashboard entirely. A real answer names the specific enforcement mechanism; a deflecting one names the visible feature built on top of it.
+
+3. **Vague time-based hedging on data ownership.** "You'll always be able to get your data" is not the same claim as "export includes your full database in a standard, portable format, verified against your own hosting." The first is a promise about intent. The second is a promise about mechanism. Only the second is checkable before you're actually relying on it.
+
+4. **Enthusiasm about the free tier that doesn't extend to questions about the paid one.** A tool that's happy to detail its free-tier limitations but gets noticeably vaguer about what changes on paid plans — data retention, training-use opt-out, backup frequency — is a sign the terms genuinely do get more favorable at a price point they'd rather you discover after you've already committed to the platform.
+
+5. **A support answer that contradicts the documentation, or that no documentation exists to check against.** If asking support a specific question gets you a confident verbal answer with nothing in writing to match, and you can't find the same claim documented anywhere yourself, that answer isn't verifiable — it's just confidence, and confidence isn't the thing you were actually trying to confirm.
+
+6. **"We're working on that."** Reasonable for a genuinely new feature request. A red flag when it's the answer to something foundational — password reset, backup policy, data export — that should have existed since the platform's earliest usable version, not something still pending for a tool with real paying customers already on it.
+
+None of these red flags mean walk away from the tool entirely — plenty of genuinely good tools have an unclear support answer somewhere, or a feature still in progress. What they mean is that the specific question tied to that red flag needs a firmer answer before you build anything on top of the assumption the vague version implied.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Tool Picked on Demo Speed Alone

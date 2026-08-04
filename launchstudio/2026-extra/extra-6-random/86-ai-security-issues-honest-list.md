@@ -42,6 +42,18 @@ These six aren't the only issues that exist, but they share a pattern worth nami
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience, and our engineers, including the team based in Singapore, run this same recurring checklist against every AI-generated codebase that comes through review — not because we expect to find all six every time, but because we've learned not to be surprised when we do. If you'd like a straightforward pass against this exact list on your own product, you can [send us your prototype link for free advice](https://launchstudio.eu/en/#contact) on which of these, if any, apply to you. Manifera's broader security and engineering standards are described on its [custom software development page](https://www.manifera.com/services/custom-software-development/).
 
+## How to Triage This List When You Can't Fix Everything at Once
+
+Finding two or three items from this list in the same review, which happens more often than not, raises an immediate practical question: which one gets fixed first when you can't fix all of them today? Three criteria, applied in order, produce a reasonable answer without needing to treat every item as equally urgent.
+
+**First: is it reachable without any credentials at all?** An exposed admin route, a public storage bucket, and an unverified webhook all share this property — anyone on the internet can hit them without ever logging in. Missing rate limiting and client-side-only validation, by contrast, usually require the attacker to already be interacting with your app in a normal way, which is a real risk but a narrower one. Unauthenticated exposure moves to the front of the line first, because the pool of people who could stumble onto it or find it deliberately is effectively unlimited.
+
+**Second: what does it actually expose or allow?** Within the unauthenticated group, rank by consequence. A public storage bucket exposing customer-uploaded documents or photos is worse than one holding only generic marketing assets. An unverified webhook that can trigger a state change — marking an order paid, granting access — is worse than one that only logs an event nobody acts on. This step requires actually knowing what each gap touches in your specific product, not applying a generic severity label from a list like this one.
+
+**Third: how long does the fix actually take?** Among items of similar severity, the quicker fix goes first, purely because it removes risk sooner. Committed secrets typically require rotating the exposed credential and confirming nothing was accessed with it in the meantime — usually a same-day fix. A public storage bucket usually takes about as long. An exposed admin route needs an actual authorization check added and tested, which can take longer depending on how your permission system is structured elsewhere. Sequencing the fast, high-severity fixes first buys time to do the slower ones properly rather than rushing all of them at once.
+
+A rough default ordering, when nothing about your specific product argues otherwise: committed secrets and public buckets first, since they're both fast to close and both unauthenticated; unverified webhooks and exposed admin routes next, since they take a bit more care to fix correctly; rate limiting and client-side validation gaps last, not because they don't matter, but because they generally require an attacker already engaging with your product rather than simply finding an open door. This ordering is a starting point, not a substitute for knowing what each specific gap touches in your own app — but it beats fixing whichever one you noticed first.
+
 ## Real example
 
 ### An AI-Native Founder in Action: three issues in one review

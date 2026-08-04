@@ -46,6 +46,22 @@ If a freelancer fails the "explain your own code" test, that's not automatically
 
 LaunchStudio was built specifically for founders who've been burned by exactly this gap, or who want to avoid it entirely. Unlike a solo freelancer, LaunchStudio is backed by Manifera's team of 120+ engineers, with its European base in Amsterdam, meaning no single point of failure and a track record across 160+ delivered projects. If you're currently vetting freelancers for production work and want a second opinion before you commit, [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) and compare notes. Manifera's approach to [offshore software development](https://www.manifera.com/services/offshore-software-development/) shows what accountable, team-based delivery looks like at scale — the same standard worth holding any individual freelancer to.
 
+## Five Contract Terms Worth Insisting On, Even If the Vetting Goes Well
+
+Passing every check in this article doesn't mean you skip a written agreement — it means you go into that agreement asking for specific protections, because even a freelancer who explains their own code well and answers every edge-case question thoughtfully can still have a bad week, get pulled onto another client's fire, or simply underestimate how long something will take. Vetting reduces the odds of a bad hire. A properly structured agreement limits how much damage a bad outcome can do, regardless of how well the vetting went. Five terms are worth insisting on before any deposit changes hands.
+
+**Milestone-based payment, not a single upfront deposit.** Split the total into at least three payments tied to specific, checkable deliverables — not calendar dates. A deposit followed by one final payment on "completion" gives you almost no leverage if the middle of the project goes sideways. Three or four milestones, each released only once you've actually verified the work at that stage, keeps your exposure at any single point limited to one milestone's worth of money.
+
+**Explicit IP and code ownership, in writing, not assumed.** Confirm the contract states plainly that you own the code once you've paid for it — including any AI-assisted portions the freelancer generated on your behalf. This sounds obvious until a dispute arises and you discover the freelancer's standard template reserved broader rights than you expected.
+
+**A defined bug-fix window after delivery.** Ask for a specific number of days (30 is common) during which the freelancer fixes, at no additional charge, any bug that's traceable to the original delivered work. Without this in writing, "it broke two weeks later" becomes a new billable engagement instead of a completion obligation, and you have no leverage to insist otherwise.
+
+**A kill clause you can actually use.** Confirm the contract lets you end the engagement at a defined point — after a missed milestone, for instance — without penalty beyond paying for verified work already delivered. Contracts that make it expensive or complicated to walk away mid-project remove your ability to act on red flags that surface after signing, even if you spotted none before.
+
+**A named point of contact for post-delivery issues, not "reach out anytime."** If the freelancer works through a marketplace or as part of a small team, get a specific name and response-time expectation in writing for anything that surfaces after delivery. "Reach out anytime" from someone who then goes quiet is a far more common failure mode than an outright refusal to help.
+
+None of these five terms are unusual or aggressive to ask for — a freelancer confident in their own work has no reason to resist any of them, and hesitation around milestone payments or a bug-fix window is itself a data point worth weighing alongside everything else in the vetting conversation. The goal isn't to negotiate as if you expect the worst. It's to make sure that if the worst happens anyway, despite good vetting, you're not the one left with no options.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Femke Bruggeman's Deposit Lesson

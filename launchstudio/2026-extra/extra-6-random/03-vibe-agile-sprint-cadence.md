@@ -36,6 +36,20 @@ The fix isn't to abandon Agile — it's to resize the unit of review to match th
 
 Manifera brings 120+ engineers and 160+ delivered projects worth of process discipline to exactly this problem — building review cadences sized to AI output rather than borrowed wholesale from pre-AI Agile playbooks. Our team, including engineers based in Ho Chi Minh City who work directly in the codebases founders send us, treats every AI-generated pull request as its own reviewable unit rather than something to wave through because the demo looked fine. If your current sprint rhythm feels like it's always one release behind the code you're generating, [calculate what a proper production review would cost](https://launchstudio.eu/en/#calculator) before technical debt outpaces your ability to catch it. Manifera's broader approach to structured [offshore software development](https://www.manifera.com/services/offshore-software-development/) is built on the same principle: review capacity has to scale with output, not the other way around.
 
+## Four Categories of AI-Generated Change, and How Fast Each One Needs Review
+
+Not every AI-generated change deserves the same review urgency, and treating them all identically is part of what makes vibe Agile unsustainable — it either reviews everything with the same heavy scrutiny, which nobody can sustain at AI-generation volume, or reviews everything with the same light touch, which is how the dangerous changes slip through. A more sustainable cadence sorts generated changes into four rough categories and matches review intensity to actual risk.
+
+**Category one: cosmetic and presentational.** Copy changes, spacing adjustments, color tweaks, a reordered list on a settings page. These can move fast with minimal review — a quick visual check that nothing looks broken is usually enough, because the downside of a mistake here is a founder noticing an ugly button, not a data leak.
+
+**Category two: new, isolated functionality.** A new page, a new report, a new feature that doesn't touch existing data-access logic or write to shared tables other features depend on. This deserves a real read-through — not line-by-line, but enough to understand what it does and confirm it doesn't quietly depend on an assumption that isn't true. Same-day review is reasonable here.
+
+**Category three: changes touching existing shared logic.** Anything that modifies a function, a database query, or a component that other parts of the app already rely on. This is where the costliest bugs tend to actually live — not in something new, but in something existing that got quietly altered. This category needs the closest read, specifically asking "what else calls this, and does this change still satisfy what they expect."
+
+**Category four: authentication, authorization, payments, and anything touching money or access control.** This category gets reviewed before merge, every time, no exceptions, ideally by a second person — not because these changes are statistically more likely to contain bugs, but because the cost of a bug here is categorically higher than in the other three categories, and the volume of AI-generated code in this category is usually a small fraction of the total.
+
+The practical value of sorting changes this way is that it lets a solo founder move fast on categories one and two — which is most of what gets generated day to day — while reserving real attention for categories three and four, which is a much smaller volume than reviewing everything with identical care would require. It's the resizing this article argues for, made concrete enough to actually run against tomorrow's pull request instead of staying an abstract principle.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Burnout by Sprint Three

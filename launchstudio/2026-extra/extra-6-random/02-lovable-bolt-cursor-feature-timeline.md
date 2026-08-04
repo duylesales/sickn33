@@ -42,6 +42,24 @@ The common thread isn't which tool is "best" — it's that all three have expand
 
 LaunchStudio is backed by Manifera — trusted by enterprise clients including Vodafone, TNO, and CFLW — and our engineering team, with a hub in Singapore tracking these tools closely across time zones, spends real time understanding what changed between AI tool versions specifically because founders bring us projects that straddle two eras of the same tool. If your project has been through a tool switch or a major version jump, [get a free review of your prototype](https://launchstudio.eu/en/#contact) before you find out what broke by accident. You can also see how Manifera thinks about [long-term web application development](https://www.manifera.com/services/web-app-develop/) beyond any single AI tool's release cycle.
 
+## A Pre-Migration Checklist Before You Switch Tools Mid-Build
+
+Switching tools mid-project isn't inherently risky — plenty of founders do it successfully. What's risky is doing it without a deliberate verification pass on the specific things that don't transfer cleanly between tools. Before you migrate a project from one AI coding tool to another, run through this list.
+
+**Inventory every hand-written or heavily-modified file first.** Before you migrate anything, list every file you personally edited beyond what the AI tool originally generated — custom auth logic, a hand-tuned database query, a workaround for a bug the tool never quite fixed. These are exactly the files most likely to not translate cleanly, because they represent decisions the new tool never made and has no reason to preserve or even recognize as intentional.
+
+**Test every user role separately, not just the one you use daily.** A break can hit a role you personally use less often during your own testing. After any migration, log in as every distinct type of user your app has, not just the account you test with day to day — a broken flow for a role you don't use yourself can sit invisible for weeks.
+
+**Check environment variables and secrets survived the move.** Different tools sometimes handle environment configuration differently, and a migration can silently leave a secret pointing at the old tool's expected location, or drop it entirely in favor of a new default that isn't actually configured yet.
+
+**Re-run any integration you built manually.** Payment processors, email services, webhooks — anything you wired up by hand rather than through the new tool's built-in integrations is worth testing end to end after a migration, not just confirming the UI still renders where that integration is referenced.
+
+**Diff the database schema, not just the code.** A tool switch can come with assumptions about how data should be structured going forward. Confirm your actual production schema — the one with real data in it — still matches what the new tool's generated code expects, rather than trusting that "the app loads fine" means the schema underneath is unchanged.
+
+**Set a rollback point before you start.** Tag or branch your codebase at the last known-working state in the old tool before you begin migrating, so if something breaks silently weeks later, you have a clean reference point to diff against.
+
+None of these steps require exotic tooling — a checklist and an hour of deliberate testing across every role and integration point catches most of what a silent, no-error migration break looks like. The expensive version of this checklist is the one you run after a client calls to report something broken. The cheap version is the one you run before you merge.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Login That Didn't Survive the Move

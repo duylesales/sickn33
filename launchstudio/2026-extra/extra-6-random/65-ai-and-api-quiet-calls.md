@@ -46,6 +46,20 @@ An undocumented API call isn't just a cost surprise. It's also a dependency you 
 
 Manifera's engineers — with 11+ years of production engineering experience across 160+ projects — treat a full outbound-call audit as a standard part of taking over an AI-generated codebase, precisely because founders themselves rarely know this list exists until it's built for them. Our Singapore team runs this audit regularly for founders across the region. If you want to know what your own app is quietly calling, [calculate what a full audit would cost](https://launchstudio.eu/en/#packages), and Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) practice covers the broader engineering discipline behind catching this kind of thing early.
 
+## Deciding What to Do With a Call You Didn't Choose: Keep, Replace, or Remove
+
+Finding an undocumented call is only half the problem. The other half is deciding what to actually do about it, and that decision isn't the same for every call you find — it depends on what the call is doing, how well the provider behind it is actually performing, and whether the feature it powers is even still in active use.
+
+**Keep it, deliberately, if it's doing its job well and you can now account for it.** Not every default integration is a problem — plenty are perfectly reasonable choices that just happened to arrive without an explicit decision attached. If the provider is reliable, the cost is reasonable for what it delivers, and the data it touches doesn't raise a concern once you actually look, the right move can simply be to document it properly: note what it is, why it's there, what it costs, and what it touches — converting an undocumented dependency into a documented one without necessarily changing anything about how it works.
+
+**Replace it if the provider is fine but the terms or cost don't hold up under real usage.** A default template call often gets selected for how easy it is to integrate, not for its pricing at scale or its data-handling terms. If a call works correctly but the provider's pricing doesn't make sense once your actual usage volume is applied to it, or its data terms don't match what your product needs to promise its own customers, this is a swap — same function, different provider, done deliberately instead of by template default.
+
+**Remove it entirely if the feature it powers isn't actually being used, or was superseded.** This happens more often than founders expect: a feature gets rebuilt or replaced, a new integration takes over the same function, and the original default call keeps running anyway because nothing about removing old code was ever part of the process that added the new version. If a review turns up a call attached to a feature nobody currently relies on, removing it is pure upside — no functionality lost, and one less unreviewed dependency sending data somewhere.
+
+**Escalate it if the call touches customer data and you genuinely can't tell what the provider does with it.** Some of what a review turns up won't have a clean answer available from the provider's public documentation. When that happens, the right move isn't to guess — it's to treat that specific call as unresolved and prioritize getting a direct, specific answer from the provider before deciding whether it's a keep, a replace, or a remove.
+
+Sorting each discovered call into one of these four buckets turns a vague, uncomfortable list of "things I didn't know were happening" into a short, specific action plan — some items closed out with nothing more than documentation, a few requiring an actual swap, and occasionally one or two that genuinely needed to go. The audit itself is the hard part to start; once the list exists, deciding what to do with each line on it is usually the fast part.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Geocoding Call Nobody Chose

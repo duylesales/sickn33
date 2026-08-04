@@ -39,6 +39,22 @@ Most AI-native SaaS products at this stage have a basic activity log — a recor
 
 Manifera's engineers — trusted by clients including Vodafone and TNO on projects with exactly these compliance requirements — have helped SaaS founders build the specific gap between activity logging and audit-grade logging before a deal depended on it. Our Singapore team, part of Manifera's broader 120+ engineer group, has worked directly with founders preparing for enterprise procurement reviews. If you're heading into a similar conversation, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) before your next security review, rather than during it. Manifera's [portfolio](https://www.manifera.com/portfolio/) includes enterprise-compliance work relevant to exactly this gap.
 
+## A Pre-Call Checklist: What to Gather Before the Security Questionnaire Arrives
+
+Enterprise security reviews rarely arrive with much warning — a procurement team sends a questionnaire, or a technical stakeholder asks for a call, and the founder who's prepared in advance has a materially different experience than the one scrambling to answer in real time. Beyond the audit logging and incident response gap already covered, a handful of other items tend to come up in nearly every review of this kind, and gathering them ahead of time turns the conversation from a scramble into a formality.
+
+1. **A plain-language data flow description.** Where does customer data actually go once it enters your app — which services process it, where it's stored, whether any of it leaves your primary infrastructure at any point, including to an AI model provider if your product uses one. Security teams ask this early, and a founder who can answer immediately signals more competence than the answer's specific content usually requires.
+
+2. **A subprocessor list.** Every third-party service that touches customer data in any way — your hosting provider, your database host, your AI model provider, your email service — named specifically, not described generically as "cloud infrastructure." Enterprise buyers increasingly expect this list as a matter of course, independent of formal certification.
+
+3. **Encryption posture, in transit and at rest.** Whether data is encrypted at rest in your database and in transit between services is a near-universal question, and one most AI-generated apps handle correctly by default through their hosting platform — but "I assume so" is a weaker answer than being able to confirm it specifically.
+
+4. **Access control boundaries, described concretely.** Who inside your own company can access customer data, under what conditions, and whether that access is logged. For a solo founder, this answer might genuinely be "just me," which is a perfectly fine answer, as long as it's stated with confidence rather than discovered as a gap during the call.
+
+5. **A data retention and deletion policy, even a short one.** What happens to a customer's data if they cancel — how long it's retained, whether and how it's deleted on request. This doesn't need to be a formal legal document to be useful in a review; it needs to exist and be answerable on the spot.
+
+None of these five items require the structured audit logging or incident response documentation covered above to prepare — they're a separate, faster pass a founder can often complete alone in an afternoon, simply by writing down what's already true about the product rather than building anything new. Having them ready before the questionnaire arrives is frequently the difference between a review that clears in one call and one that drags across several follow-ups while answers get chased down under time pressure, in front of the exact audience least inclined to be patient about it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Question the Activity Log Couldn't Answer

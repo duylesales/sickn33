@@ -40,6 +40,20 @@ Free is the right choice for a genuine prototype nobody depends on yet. It stops
 
 LaunchStudio, backed by Manifera, works with founders across Ho Chi Minh City and beyond to take a free-tier prototype and give it its own isolated, production-grade infrastructure before that first busy season arrives, rather than after it exposes the gap. Our [pricing calculator](https://launchstudio.eu/en/#calculator) gives a straightforward read on what that migration typically costs, and Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) team applies the same infrastructure standards to enterprise clients.
 
+## A Five-Question Self-Test for Whether Your Free Tier Is Still Safe
+
+Asking the platform directly whether your data sits on shared infrastructure is the right first step, but it only tells you about the platform's side of the risk. The other half of the question is about your own app, and it's one only you can answer honestly. Run through these five questions before deciding the free tier is still the right call.
+
+1. **Does anyone outside my own testing currently depend on this app being available?** A prototype only you and a few friendly early testers use carries genuinely low stakes on shared infrastructure. The moment a real customer, vendor, or user base starts relying on it during their own workday, the calculus changes, whether or not you consciously decided it should.
+2. **Is there a predictable moment coming where traffic or usage will spike?** A seasonal peak, a planned launch, a press mention you're hoping for, an event your users all show up for at once — any of these turns a quiet free tier into a shared resource under real contention, right when you can least afford a shared incident.
+3. **What does my app actually do during an outage that isn't its fault?** A content site that's briefly unreachable is an inconvenience. A booking, payment, or real-time coordination tool that goes dark mid-transaction leaves users stranded mid-action, which is a categorically worse failure mode than a slow page load.
+4. **Have I actually asked the platform the isolation question, or am I assuming an answer?** Most founders never ask, and quietly assume "free" means "smaller," rather than "shared." If you haven't asked, you don't actually know which one you're on — you're guessing, and the guess tends to be optimistic.
+5. **Do I know what an upgrade costs and how long it takes, before I need it urgently?** Knowing the migration path in advance — the price, the time, whether it requires downtime — turns an emergency decision into a planned one. Not knowing means the first time you look it up will be during the exact week you're already under pressure.
+
+Two or more "yes, this applies to me" answers is a reasonable trigger to plan the move now, calmly, rather than waiting for the week the free tier's shared nature actually becomes your problem instead of a theoretical one. None of these five questions requires deep technical expertise to answer for your own product — they require sitting down and actually asking them, which is the step most founders skip simply because the free tier has worked fine so far.
+
+It's worth noticing what all five questions have in common: none of them are about whether the free tier is good value in the abstract. They're about timing — whether the specific week your app most needs to hold up is a week the free tier was ever designed to survive. A free tier that's genuinely fine for a slow, low-stakes month can still be the wrong choice for the one week a year everything depends on it, and the self-test above is really just a way of finding that week before it finds you.
+
 ## Real example
 
 ### An AI-Native Founder in Action: An Auction Notification Silenced by Someone Else's Outage

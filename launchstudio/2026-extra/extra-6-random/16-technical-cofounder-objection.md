@@ -44,6 +44,22 @@ In nearly every case we've reviewed, the honest answer to these three questions 
 
 Our engineers — based out of Ho Chi Minh City, where Manifera runs its main engineering center — review this exact tradeoff on a near-weekly basis, because it's the single most common fork in the road for technical co-founders evaluating a Bolt or Lovable prototype. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and the review process is deliberately built to answer "fix or rewrite" with evidence rather than gut feeling. If you're mid-argument with a technical co-founder right now, you can [describe the project and get a scoped assessment](https://launchstudio.eu/en/#contact) before either side commits six weeks to the wrong answer. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) team applies the same fix-first discipline to enterprise codebases, not just AI-generated ones.
 
+## What a Scoped Repair Actually Looks Like, Step by Step
+
+Once the three questions above point toward "fix, not rewrite," it's worth knowing what a properly scoped repair actually involves — because "just patch it" can be done badly too, and a sloppy patch is part of what feeds the instinct to distrust fixes and reach for a rewrite in the first place.
+
+**Isolate the defect before touching anything.** The first step isn't writing a fix — it's confirming exactly where the bad behavior lives and exactly where it doesn't. This means tracing the specific function, endpoint, or query responsible, and explicitly checking whether the same defect pattern appears anywhere else in the codebase before assuming it's a single, contained problem. Skipping this step is how a "quick fix" turns into three follow-up bugs.
+
+**Reproduce it reliably, not just once.** A defect you can only trigger by accident isn't understood yet — it's just been witnessed. A properly scoped repair starts from a reliable, repeatable way to trigger the bug on demand, because that's also what proves the fix actually worked afterward, rather than the bug simply not showing up again by chance for a while.
+
+**Patch the narrowest thing that resolves the actual cause.** This is where discipline matters most. It's tempting, once you're inside a function anyway, to "clean up" surrounding code that looks a little off but isn't actually broken. Resist that. A scoped repair touches exactly what needs to change to resolve the defect, and nothing else — every extra line touched is another line that needs its own testing, and another place a skeptical technical co-founder can reasonably raise a question.
+
+**Regression-test the fix against the behavior that already worked.** The ninety percent of the codebase that was fine before the fix needs to still be fine after it. This means testing not just that the bug is gone, but that nothing adjacent to the fix broke in the process — the exact failure mode a rushed, unscoped fix is most likely to introduce.
+
+**Write down what changed and why.** This is the step most self-directed fixes skip, and it's the one that actually rebuilds trust with a skeptical co-founder or a future reviewer. A short, specific note — what was broken, what changed, how it was verified — turns "trust me, I fixed it" into something a second person can independently check, which is exactly the kind of evidence that settles a fix-versus-rewrite argument for good.
+
+None of these five steps require exotic tooling or a large team. What they require is treating a fix with the same rigor a rewrite would demand, just applied to a much smaller surface area. A technical co-founder who's watched a fix go through this process — isolated, reproduced, narrowly patched, regression-tested, documented — tends to stop reaching for "let's just rewrite it" as the default response to the next defect, because the fix earned the trust the rewrite was originally meant to manufacture.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Six-Week Rewrite That Didn't Need to Happen

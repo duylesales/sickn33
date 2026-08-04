@@ -38,6 +38,22 @@ The better question isn't "which tool ranks highest," it's "which tool handles t
 
 Our engineers, including the team based in Singapore, have reviewed AI-generated apps built with nearly every major tool on the market, and the pattern holds consistently: overall ranking position correlates weakly, at best, with how a specific app performs on the specific things that matter for that app. LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy, precisely because rankings can't do what a direct review can. Skip the rankings and [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) to get a straight answer about your specific stack. For our broader track record across client work, see [Manifera's portfolio](https://www.manifera.com/portfolio/).
 
+## What a Ranking Would Have to Do to Actually Answer Your Question
+
+It's worth being specific about why no ranking can currently do what founders wish it did, because the gap isn't laziness on the part of whoever built the ranking — it's a structural mismatch between what a ranking is and what launch readiness actually requires.
+
+**A useful ranking would need your specific data model, not a generic one.** Migration handling, access control complexity, and data integrity issues all depend heavily on the actual shape of your data — how many relationships between tables, how many user roles, how often the schema needs to change. A ranking built once, tested against a generic sample app, can't capture how a tool performs against your particular structure, because that structure doesn't exist yet when the ranking is published.
+
+**A useful ranking would need to test over months, not a single session.** Nearly every public comparison evaluates a tool at the moment of generation — how good is the first output. The risks that actually determine launch readiness, like migration handling and behavior when extending existing code, only show up after weeks or months of iterative development, which no benchmark methodology is currently built to simulate at scale across many tools.
+
+**A useful ranking would need to weight risk areas by how much they cost when they go wrong, not by how easy they are to measure.** UI generation speed is easy to benchmark objectively — did it produce a working interface, how long did it take. Authorization correctness under a growing set of user roles is hard to benchmark objectively, because "correct" depends on your specific business rules. Rankings gravitate toward what's measurable, which systematically underweights exactly the risk areas that matter most for whether an app is safe to launch.
+
+**A useful ranking would need to be re-run constantly, not published once.** AI coding tools update frequently, sometimes changing behavior meaningfully between versions. A ranking published even a few months ago may already be testing a version of the tool that no longer reflects what you'd actually be using, on capabilities that may have shifted since.
+
+**A useful ranking would need to separate "generates" from "maintains."** Most comparisons implicitly test how well a tool produces a first version of something. Launch readiness depends just as much on how the tool behaves the fifth time you ask it to change something that already exists, touching code it didn't originally write in the same session — a dimension almost no public comparison isolates on its own.
+
+None of this means rankings are worthless — they're a reasonable starting filter when you genuinely know nothing about any of the available tools and need somewhere to begin. The mistake is treating a ranking's conclusion as a substitute for testing the tool against your own specific risk areas: a ranking isn't wrong about what it measures, it's simply never been capable of measuring what actually matters for your particular data model, your particular user roles, and your particular growth path.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Gap the Ranking Never Measured

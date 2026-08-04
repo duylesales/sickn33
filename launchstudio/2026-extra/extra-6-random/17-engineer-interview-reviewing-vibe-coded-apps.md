@@ -46,6 +46,18 @@ A: That a clean-looking app and a safe app are not the same thing, and that's no
 
 Manifera brings 11+ years of production engineering experience to exactly this kind of review, and our Amsterdam-based engineers do this work daily across Lovable, Bolt, Cursor, and v0 projects. If you want a second pair of eyes on your own prototype, you can [send us your prototype link for free advice](https://launchstudio.eu/en/#contact) before you find your own version of Milan's webhook bug the hard way. For a broader look at how this kind of engineering review fits into larger builds, see Manifera's [web app development services](https://www.manifera.com/services/web-app-develop/).
 
+## A Quick Self-Test: Three Questions to Ask About Your Own App Before You Ship
+
+You don't need to be able to read code to run a rough version of the risk-mapping the engineer above described. You need to be willing to ask three specific questions about your own product and actually go looking for the answers, rather than assuming "it worked when I tried it" settles the matter.
+
+**Question one: what happens if the same action gets triggered twice, close together?** Click a submit button twice quickly. Refresh mid-payment and try again. Trigger the same automated action (an email send, a webhook, a scheduled job) in a way that could plausibly fire more than once. If your product silently does the thing twice — creates two records, sends two charges, sends two emails — that's exactly the kind of gap the interview above describes: invisible in a single careful test, real the moment usage isn't perfectly orderly.
+
+**Question two: what does a stranger see if they guess at a URL or an ID?** Log in as one test account, note the web address or ID for something that belongs to that account, then log in as a second test account and try changing the ID in the address bar to the first account's value. If you can see or edit something that isn't yours, that's not a minor cosmetic bug — it's one of the most common categories of gap in AI-generated apps, because a page working correctly for the person it was built for tells you nothing about whether it also, incorrectly, works for everyone else.
+
+**Question three: what does your app show when something it depends on is slow or unavailable?** Turn off your wifi mid-action, or ask whoever built your integrations what happens if the payment processor or the AI provider your app calls takes ten seconds to respond instead of one. A product that only ever gets tested against a fast, cooperative internet connection has never actually been tested against the internet most of your real customers will use it on.
+
+You won't be able to fix what these three questions surface on your own, and that's fine — that's not the point of running them. The point is walking into a review, whether with a hired engineer or a technical co-founder, already knowing roughly where the soft spots are, instead of handing over a project with no sense of where to direct attention first. A founder who shows up already having asked "what happens if this fires twice" gets a faster, more focused review than one who's only ever tested the version of their app that behaves.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Duplicate Customer Bug in KlantStroom

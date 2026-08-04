@@ -57,6 +57,28 @@ The framework only pays off if you use it before writing code, not as a postmort
 
 Our team, working out of Singapore alongside colleagues in Amsterdam and Ho Chi Minh City, reviews exactly this kind of build-vs-delegate decision when we assess incoming prototypes — it's often the single biggest lever for shortening a founder's path to launch. LaunchStudio brings Manifera's enterprise-grade engineering, the same standard used across Manifera's [custom software development work](https://www.manifera.com/services/custom-software-development/), to exactly these calls. If you want a second opinion on where your own build sits on this matrix, you can [see what a fixed-scope review would cost](https://launchstudio.eu/en/#calculator).
 
+## The Solved-Problem Checklist: What Almost Always Belongs in the Delegate Quadrant
+
+The matrix above works well once you know which category a given feature falls into, but "is this a solved problem" is still a judgment call the first few times you make it. A concrete list of the categories that almost always land in "delegate immediately," regardless of what product you're building, makes the call faster and removes the temptation to treat your version as the exception.
+
+**Authentication and session management.** Login, password reset, multi-device sessions, token expiry — this is the single most commonly reinvented solved problem, and it's rarely anyone's differentiator. Established providers have handled the edge cases, breach detection, credential stuffing, session hijacking, that a custom build almost never gets to on the first pass.
+
+**Payments and billing.** Handling card data directly, calculating tax across jurisdictions, managing subscription proration — each of these has enough regulatory and edge-case weight that building it yourself isn't just slower, it's a genuine liability if done incorrectly. This is a category where the cost of a mistake is measured in real money, not just engineering time.
+
+**Transactional email and notifications.** Deliverability, spam-filter reputation, and retry logic for failed sends are a specialized, ongoing problem, not a one-time build. A custom-built sender that works in testing frequently ends up in spam folders in production, for reasons that have nothing to do with how well the code was written.
+
+**File storage and uploads.** Reliable storage, CDN delivery, and handling large or malformed files at scale is a solved problem with mature, inexpensive providers. Building your own storage layer means also building your own backup strategy, redundancy, and access control from nothing.
+
+**Search and indexing.** Once a product has enough records that a simple database query stops being fast enough, search becomes its own specialized problem — relevance ranking, typo tolerance, indexing strategy — that established search infrastructure has already solved far better than a first attempt will.
+
+**Background job processing and queues.** Anything that needs to run reliably outside a user's immediate request — sending a batch of emails, processing an import, retrying a failed webhook — benefits from mature queueing infrastructure that already handles retries, failures, and ordering correctly.
+
+**Monitoring, logging, and error tracking.** Knowing what broke, when, and for which user is itself a specialized problem, and building custom monitoring from scratch usually means you find out about production issues from angry users instead of from the system that was supposed to warn you first.
+
+The pattern across every item on this list is the same: each one has a well-known name, several mature providers, and a long history of edge cases that already got found and fixed by someone else's users, not yours. None of this means the delegated version is invisible to your customers — a smooth login flow or a fast search bar still shapes how your product feels. It means the differentiation isn't in having built it yourself; it's in choosing the right provider and integrating it well, which takes a fraction of the time reinventing it would.
+
+If a piece of your product isn't on this list, that's a reasonable first signal it might actually belong in the "build it yourself" quadrant — worth a second look rather than an automatic default either way.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Three Weeks Spent Reinventing Auth0

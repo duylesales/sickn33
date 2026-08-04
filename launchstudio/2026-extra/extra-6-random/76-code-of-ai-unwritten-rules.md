@@ -38,6 +38,22 @@ A single bug is a single bug — fixable, contained, findable with enough testin
 
 Our engineers based in Amsterdam spend a significant part of every codebase review looking specifically for this pattern — the accumulated trail of least-restrictive defaults chosen at every point your prompt left open. LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and this kind of default-auditing is exactly the discipline that experience brings to a review. You can explore [what LaunchStudio actually does](https://launchstudio.eu/en/) before deciding whether your own app needs this kind of pass. For the broader engineering philosophy behind it, see [Manifera's about page](https://www.manifera.com/about-us/).
 
+## A Fast Way to Surface the Defaults You Never Actually Chose
+
+Waiting for a security review or a client's questionnaire to surface these accumulated defaults is one way to find them. A faster, more deliberate way is to go looking on purpose, using a short list of questions that don't require reading code — just knowing what to ask, and who to ask it of.
+
+1. **List every place your app stores data, then ask "who can read this by default?"** For each table or data store, the honest question isn't "does the feature work correctly" — it's "if someone with valid login access queried this directly, bypassing the app's interface entirely, what would they see?" If the answer is "more than their own data," that's an unwritten default made without your input.
+
+2. **Ask specifically whether new features default to public or private.** When a new feature gets added — a shared document, a public profile, an exported report — the tool made a call about who can see it by default. Ask, feature by feature, whether that default was ever stated explicitly in your original prompt, or whether it was simply whatever the tool produced when the question wasn't raised.
+
+3. **Check whether "logged in" and "authorized" were treated as the same thing.** A significant share of least-restrictive defaults hide in this exact gap — the tool correctly required someone to be logged in, but never separately checked whether that specific logged-in person should see that specific piece of data. Ask this question about every sensitive action in your app individually, since the answer can differ feature by feature even within the same product.
+
+4. **Ask what happens with no explicit instruction, not what happens with the instruction you gave.** You already know your app does what you asked for. The unwritten code lives in what it does when you *didn't* specify — file upload size limits you never mentioned, session timeouts you never set, password requirements you never defined. Each of these was decided by default, in favor of speed, and it's worth listing them out explicitly rather than assuming reasonable defaults were applied simply because nothing looked broken.
+
+5. **Bring someone technical in to verify the answers, not just generate them.** A non-technical founder can ask all four questions above and get a useful first read, but confirming the actual answer — what a database table's permissions genuinely allow, independent of what the app's interface shows — requires someone who can inspect the configuration directly rather than test the feature through its normal use.
+
+Running through this list takes an hour of thinking and a shorter follow-up conversation with whoever built or is reviewing your app — considerably cheaper than discovering the same pattern mid-review, with a client's security questionnaire already sitting open in front of you and no good answer ready.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Defaults Nobody Chose

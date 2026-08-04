@@ -4,7 +4,6 @@ Keywords: make a ai, ai saas, lead data migration, AI CRM tool, CSV import bugs
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
-
 # Building an AI CRM Tool? Here's What Breaks When You Migrate Real Lead Data
 
 <script type="application/ld+json">
@@ -55,7 +54,7 @@ A staging table and a manual review queue solve the decision of whether two reco
 
 The fix is to treat a merge as a single transaction that touches every table with a foreign key back to the lead, not just the lead record itself — remap the children to the survivor's ID, log exactly what moved, and only then remove the duplicate:
 
-```
+```SQL
 BEGIN TRANSACTION
 
 -- Re-point every child record to the surviving lead first

@@ -38,6 +38,22 @@ This is the core of the mismatch. You're thinking in terms of *outcomes* — nob
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and our engineers based out of Amsterdam see this exact gap on almost every AI-generated codebase we review — a fully working product with a data-access hole nobody thought to name. If you want a second set of eyes before you find out the hard way, you can [describe your project through our process](https://launchstudio.eu/en/#process) and we'll tell you plainly what's missing. For the underlying engineering standards we hold every review to, see how [Manifera approaches custom software development](https://www.manifera.com/services/custom-software-development/).
 
+## A Two-Minute Self-Test: Do You Actually Have Authorization?
+
+You don't need to read code to get a rough answer to whether your app has the gap this article describes. Try walking through these five questions honestly — most take thirty seconds each, and none require you to open a code editor.
+
+**Can you find your own record's ID in the browser?** Log into your app, open any page that shows a piece of your own data — an order, an invoice, a profile — and look at the URL or the network request the page makes. If you can see a plain number or ID there (`/orders/482`, `/api/records/482`), make a note of it. Nothing wrong yet — this is just step one.
+
+**Does changing that number to a nearby one return something?** Try changing 482 to 481 or 483 in the same request, while still logged in as yourself. If you get a permission error or a "not found," that's a good sign. If you get someone else's actual data back, you've just found, by hand, the exact gap this article is about — and it's worth treating as urgent, not a curiosity.
+
+**Do you have more than one type of user?** If your app only ever has one account seeing its own data, this specific risk matters less. If you have multiple customer accounts, multiple organizations, or any concept of "my stuff versus their stuff," the stakes of a missing check scale directly with how much other people's data exists to be exposed.
+
+**Would you know if this had already happened?** Most AI-generated backends don't log or alert on this kind of request at all — a wrong number in a URL looks, to the server, exactly like a normal request for a normal record. If your honest answer is "I'd only find out if someone told me," that's worth sitting with, since it means the current state of your app is unknown rather than known-safe.
+
+**Did you ever explicitly ask your AI tool for this?** Think back to your actual prompts. Did you ever type something like "make sure users can only see their own records, enforced on the server" — not just "build a dashboard" or "add an orders page"? If the honest answer is no, there's a real chance nothing enforces it, because nothing asked for it to.
+
+None of these five questions require a security background to answer, and none of them prove your app is safe if you pass all five — a manual spot-check is a smoke test, not a substitute for someone actually reading the code and the database rules. What it does give you is a fast, honest read on whether this is worth investigating properly before launch, or after launch when a curious user finds it for you. If question two came back with someone else's data, that's not a maybe — that's a today problem.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Padlock That Wasn't the Problem

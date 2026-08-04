@@ -41,6 +41,20 @@ This is rarely a five-minute task, because most AI coding tools don't surface th
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of experience auditing exactly this kind of accumulated access across AI-generated codebases. Our Amsterdam team runs this audit as a standard part of taking over a founder's project. If you want to know what your own app's access list actually looks like, you can [calculate what a full access audit would cost](https://launchstudio.eu/en/#calculator), and Manifera's [web application development](https://www.manifera.com/services/web-app-develop/) practice covers the broader engineering context behind that work.
 
+## A 20-Minute Access Audit You Can Actually Run Today
+
+The list-and-ask approach above is the right shape for a proper audit, but it can feel abstract without a concrete starting point. Here's a version scoped tightly enough to actually finish in about twenty minutes, using places most founders already have access to rather than anything requiring a technical background to check.
+
+**Minutes 0–5: pull your environment variables file.** Whether it's called `.env`, a secrets panel in your hosting dashboard, or a configuration tab inside your AI coding tool, this is the single most concentrated list of active keys most apps have. Every entry is something with standing access to your project right now. Copy the list of variable names (not the values) into a document — you're building an inventory, not reviewing each one yet.
+
+**Minutes 5–10: check your billing pages, not your code.** Log into the billing dashboard for every AI model provider, hosting service, or third-party API you can remember signing up for during development. An active subscription or usage-based charge is proof of a live, currently-billed connection — and it's a faster way to surface a forgotten integration than searching code, because a provider you're still being charged for is, by definition, still connected to something.
+
+**Minutes 10–15: check the "connected apps" or "authorized applications" list on any account your project touches.** If your app connects to email, calendar, payment, or storage providers through OAuth, most of those services have a settings page listing every third-party application currently authorized — often with a "revoke" button right next to each one. This surfaces connections that don't show up in your own codebase at all, because the authorization lives on the third-party service's side, not yours.
+
+**Minutes 15–20: match your three lists against each other, and flag anything on only one.** A key in your environment file with no matching active billing charge might be dead and safe to remove. A billing charge with no corresponding key in your environment file might mean the key lives somewhere else you haven't checked yet — worth a follow-up, not something to wave off. An authorized app you don't recognize at all is the highest-priority item on the whole list.
+
+This twenty-minute version won't catch everything a full audit would — subprocessors, scoped permissions within a single key, or access granted through code you haven't personally reviewed all require deeper work. What it reliably catches is the most common version of this problem: a key or connection that's still active, still billed, and long past the point where anyone remembers why it exists. Given how often that turns out to be exactly what's sitting there, twenty minutes spent finding out is a reasonable trade against finding out the hard way instead.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Test Key Nobody Remembered to Revoke

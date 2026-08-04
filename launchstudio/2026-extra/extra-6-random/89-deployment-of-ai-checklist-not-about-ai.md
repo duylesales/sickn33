@@ -46,6 +46,22 @@ None of these items are related to AI at all, which is exactly why they get left
 
 Our engineers, based in Singapore, run through this exact checklist as a standard pre-launch pass, specifically because the AI-generated feature is rarely what causes the first outage — the infrastructure basics underneath it are. LaunchStudio brings Manifera's enterprise-grade engineering to this kind of pre-launch review, and if you're approaching a launch date and want this list checked against your specific setup, you can [book a free 15-minute intro call](https://launchstudio.eu/en/#contact) before deployment day rather than after. Manifera's broader deployment and infrastructure experience is outlined on its [web app development page](https://www.manifera.com/services/web-app-develop/).
 
+## The Checklist Isn't a One-Time Event — When to Run It Again
+
+Running this checklist once before your first launch is necessary but not sufficient, because every item on it can silently drift out of date as your product changes, even if nothing about the AI feature at the center of your product changes at all. A handful of specific triggers are worth treating as automatic reasons to run the full list again, not just the items that seem obviously related.
+
+**Any event expected to drive a traffic spike.** A press mention, a paid campaign, a launch on a directory site, a newsletter feature — anything that could bring a sudden wave of new visitors is reason enough to re-check connection pool limits and load handling specifically, since these are the items most likely to have been sized for your traffic at the time you last checked, not your traffic now.
+
+**Adding any new integration that touches your database or a third-party service.** A new payment method, a new notification provider, a new reporting export — each one is a new thing your connection pool, your environment configuration, and your logging need to account for, and none of it gets automatically covered by the review you did before this integration existed.
+
+**Switching hosting providers or tiers, even a "simple" upgrade.** Moving to a bigger server or a different provider resets assumptions about default configuration values that may not carry over the way you'd expect, and it's a natural moment for an environment variable to get missed in the migration, exactly the kind of gap Step 3 above is meant to catch.
+
+**A gap of more than a few months since the last full check.** Products change gradually enough that no single change feels like the trigger, but the accumulated drift across several months of feature additions is often equivalent to one large change nobody explicitly reviewed against this list. A standing calendar reminder, checked quarterly regardless of what else has happened, catches this category specifically.
+
+**Any incident, even a minor one, that didn't have a clear cause.** If something went wrong recently and the explanation was "seems fine now" rather than a specific root cause, that's a strong signal to run the full checklist rather than the narrower fix that resolved the immediate symptom — an unexplained blip is frequently an early, mild version of a problem this list would catch in full before it becomes a real outage.
+
+None of these triggers require the discipline of remembering to check regularly on your own; they're closer to a specific if-this-then-that list you can act on when the relevant event actually happens. The checklist itself doesn't change much between runs — what changes is your product underneath it, which is exactly why a list that was accurate at launch quietly stops being accurate a few months and a few features later.
+
 ## Real example
 
 ### An AI-Native Founder in Action: the checklist that covered everything except the thing that broke

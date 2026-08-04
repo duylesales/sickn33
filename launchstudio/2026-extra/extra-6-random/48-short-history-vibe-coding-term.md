@@ -54,6 +54,22 @@ That's not a reason to avoid building this way — it's exactly how products lik
 
 Our engineers in Singapore, alongside teams in Amsterdam and Ho Chi Minh City, work with founders across the entire spectrum — from the original, narrower sense of vibe coding to founders who code alongside AI tools directly. LaunchStudio brings Manifera's enterprise-grade engineering standard to both. If you're building the way Owen did — by describing outcomes rather than reading code — you can [send us your prototype link and we'll give you free advice](https://launchstudio.eu/en/#contact) on what to check before you scale.
 
+## A Quick Self-Test: Which Kind of "Vibe Coder" Are You Actually?
+
+Given how much the term has drifted, it's worth a founder pausing to place their own process on the spectrum this article describes — not to win an argument about terminology, but because where you land changes what kind of check your product actually needs before real customers depend on it. A handful of direct questions make the placement concrete.
+
+**When your AI tool generates a new feature, do you open the file it changed?** Not to rewrite it — just to look. If the honest answer is "never" or "rarely," you're closer to the original, narrower sense of the term: building by describing outcomes, with the code itself functioning as an unread black box between your prompt and the result you see on screen.
+
+**If a feature broke, would your first move be to read the error or to rephrase your prompt?** Reaching instinctively for a better description rather than the underlying cause is a strong signal you're operating in the original sense of the term — which is a perfectly viable way to build, but one that means the code's actual correctness has never been checked by anyone, including you.
+
+**Could you explain, in technical terms, what your authentication system actually does?** Not whether login works — whether you could describe, even roughly, how it decides a request is legitimate. A founder who can't isn't wrong to have built this way, but is also, by definition, the only person who could have caught certain gaps, and hasn't.
+
+**Do you know which parts of your product handle money, personal data, or scheduling commitments?** Even a founder who's never read a line of code can usually answer this one, and it matters here specifically: it's the map of exactly which parts of the product carry the highest cost if something in the unread code underneath them is wrong.
+
+**If you had to guess, right now, whether your product has ever been read by anyone other than the AI tool that wrote it, what would you guess?** For a lot of founders who fit the original, narrower sense of the term, the honest answer is "probably not" — which isn't an indictment of how the product was built, just an accurate description of what hasn't happened yet.
+
+If most of these answers point toward "I describe outcomes, I don't read code," you're squarely in the category this article's narrower, original definition was built to describe — and the practical takeaway isn't to start learning to code. It's to treat an independent read of your own product, by someone whose job is exactly that, as the step that closes the gap your own process was never going to close on its own.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Building Entirely by Description

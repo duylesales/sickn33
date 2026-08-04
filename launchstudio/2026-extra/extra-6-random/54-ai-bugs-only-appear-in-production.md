@@ -40,6 +40,20 @@ The only reliable way to surface a race condition before launch is to deliberate
 
 LaunchStudio is powered by Manifera, a team of 120+ engineers with 11+ years of experience across 160+ delivered projects, working out of Amsterdam and testing exactly this category of concurrency issue as a standard part of production readiness reviews. If your app handles any kind of shared, simultaneously-editable data, it's worth having someone [review your project through our process](https://launchstudio.eu/en/#process) before real concurrent usage finds the gap for you. Manifera's [portfolio](https://www.manifera.com/portfolio/) includes systems built specifically to handle this kind of concurrent load safely at scale.
 
+## Where Race Conditions Actually Hide: A Feature-by-Feature Risk Map
+
+Not every feature in an app carries the same concurrency risk, and knowing which ones do lets a founder prioritize a review instead of treating the whole codebase as an undifferentiated question mark. The risk isn't random — it clusters around a specific pattern: any place where two different actors might read, then modify, then write back the same piece of shared data.
+
+**Low risk: anything scoped entirely to one user's own data.** A user editing their own profile, updating their own settings, or viewing their own dashboard doesn't create a race condition risk in the way this article describes, because there's no second actor who could plausibly be touching the same record at the same moment. This is most of a typical app's surface area, and it's worth naming explicitly so a review doesn't waste time re-litigating features that were never actually exposed.
+
+**Medium risk: shared reference data updated infrequently.** A shared price list, a shared configuration setting, a company-wide announcement — these are touched by multiple users, but usually read far more often than written, and written rarely enough that two simultaneous writes are unlikely even if technically possible. Worth a basic check, not necessarily a top priority.
+
+**High risk: any shared record with a counter, a status field, or an inventory value that multiple users can modify.** This is where race conditions actually live. A shared project's status field, updated by two team members within the same second. An inventory count decremented by two simultaneous orders. A shift schedule two people are editing at once. A waitlist position updated by two different actions. Anything with a number that goes up or down, or a status that moves through defined states, is a strong candidate for concurrent-write risk the moment more than one person can touch it.
+
+**Highest risk: anything involving money, allocation, or a limited resource.** A payment being processed alongside a refund request for the same order. A booking system where two people can both reserve the last available slot. A credits or usage-limit system where two simultaneous actions could both pass a check that should only allow one of them through. These are the scenarios where a race condition doesn't just produce a display glitch — it produces a customer being charged twice, double-booked, or granted access they shouldn't have, which tends to be the difference between an annoying bug and a real dispute.
+
+A practical way to use this map: walk through your own app's features and sort each one into these four buckets before deciding where a concurrency review needs to focus. Most apps have a small number of features in the top two categories and a much larger number in the bottom two — which means a focused review of the handful of genuinely shared, mutable, high-stakes records usually covers the risk that actually matters, without requiring a full concurrency audit of every feature in the product. The mistake isn't skipping a full audit; it's not knowing which features belong in which bucket in the first place.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Bug That Only Existed With Two Crews Working at Once

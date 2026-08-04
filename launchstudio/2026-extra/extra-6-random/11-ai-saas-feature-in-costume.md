@@ -54,6 +54,20 @@ Wouter Peeters, a founder in Amersfoort, hit sign #1 and #4 at the same time. He
 
 This pattern is common enough that LaunchStudio, powered by Manifera and its 120+ engineers, spends a good chunk of every prototype review checking exactly these seven signs before recommending any production work. Our team based in Amsterdam sees the same wrapper pattern across dozens of "AI SaaS" pitches a month. If you want a second opinion on where your product actually sits, [describe your project through our process](https://launchstudio.eu/en/#process) and we'll tell you plainly. For how a properly architected product should be scoped from the start, see how [Manifera approaches custom software development](https://www.manifera.com/services/custom-software-development/).
 
+## The Four Layers a Resilient AI Product Actually Needs
+
+Spotting the seven signs above tells you whether you have a costume problem. It doesn't tell you what to actually build instead. If your product is currently a thin wrapper around a model API and you want it to survive a pricing change, a rate limit, or an outage without your whole product going dark, four layers separate a fragile wrapper from a resilient one.
+
+**A resilience layer around the model call itself.** This means retries with backoff when a call fails transiently, a sensible timeout so one slow response doesn't hang your entire request, and a defined behavior for what the user sees when the call fails outright rather than a blank screen or a spinner that never resolves. This layer alone closes most of what sign #1 describes.
+
+**A caching layer for anything that doesn't need a fresh model call every time.** Plenty of AI features answer questions with enough repetition — the same document summarized twice, the same category of scheduling suggestion — that caching meaningfully reduces both cost and your exposure to a provider's rate limits, while making the product feel faster in the process.
+
+**A fallback or degraded mode for when the model call isn't available.** This doesn't have to be sophisticated — a simpler, rules-based version of the same feature, or an honest "this feature is temporarily limited" state, both beat a total outage. The goal is that a provider issue degrades your product rather than disabling it entirely, which is the difference between an inconvenience and a real incident.
+
+**A cost and usage monitoring layer that alerts before the bill does.** Most founders find out about a pricing or usage-pattern problem when the invoice arrives or the feature stops working, both of which are the expensive way to learn it. Basic monitoring — tracking calls per day, cost per user, and alerting on unusual spikes — turns a silent, slow-building problem into something you see coming with enough lead time to actually respond.
+
+None of these four layers require rebuilding your product from scratch, and none of them require you to stop using the model provider you've already integrated. They sit around the existing integration rather than replacing it, which is exactly why this is usually a resilience project measured in days, not a rearchitecture measured in months. The founders who skip this layer entirely aren't making a bad product decision so much as an invisible one — it's not a gap you notice until the exact moment it costs you, which is precisely why it's worth checking against these four layers before that moment arrives rather than after.
+
 ## Real example
 
 ### An AI-Native Founder in Action: When the API Bill Changed and PlanPilot Didn't

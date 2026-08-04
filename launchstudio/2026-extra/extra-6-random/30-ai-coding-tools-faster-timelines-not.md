@@ -40,6 +40,22 @@ Error handling, edge-case testing, and security review take roughly the same amo
 
 Manifera's team of 120+ engineers, operating out of its European headquarters in Amsterdam among other hubs, spends most of its time inside exactly this phase — the one that AI tool speedups don't touch. If your AI coding tool just generated a feature in an afternoon and you're wondering why "finishing it properly" doesn't feel like it's shrinking at the same rate, that instinct is correct, and it's worth [talking to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) about what the hardening phase for that specific feature actually requires. Manifera's [portfolio](https://www.manifera.com/portfolio/) of enterprise work reflects this same pattern at a larger scale — feature velocity and production rigor have always been on different clocks.
 
+## A Rough Way to Estimate the Hardening Phase Before You Start It
+
+If prototyping speed tells you nothing about hardening speed, the natural follow-up question is what actually does. The honest answer is that hardening time isn't random — it scales predictably with a handful of specific factors about the feature itself, regardless of which tool generated the original code or how quickly it did so. Knowing these factors in advance won't give you an exact timeline, but it gives you a rough, defensible sense of whether a given feature is a few days of hardening or several weeks, before you're surprised by the difference.
+
+**How many external services the feature touches.** A feature that only reads and writes to your own database is a fundamentally different hardening job than one that also calls a payment processor, sends an email, and hits a third-party API. Each external dependency needs its own error handling, its own failure-mode testing, and its own consideration of what happens when that specific service is slow, down, or returns something unexpected. More dependencies means more hardening surface, roughly in proportion.
+
+**Whether the feature touches money or account state directly.** Anything that charges a customer, changes a subscription, or modifies account permissions needs idempotency checks, careful handling of partial failures, and testing against double-submission and race conditions in a way that a purely informational feature simply doesn't. This category consistently takes longer to harden than its apparent complexity suggests, because the cost of getting it wrong is categorically higher than a cosmetic bug.
+
+**How many distinct user roles or permission levels interact with it.** A feature used identically by every logged-in user is simpler to harden than one where different roles see or can do different things. Every additional role is another set of conditions that needs deliberate testing, not just more code to write — the hardening cost comes from the combinations, not the feature itself.
+
+**Whether the feature can be triggered by more than one user at the same time.** Anything involving shared resources — a shared calendar slot, shared inventory, a shared document — needs concurrency handling that a single-user feature doesn't. This is one of the most reliably underestimated factors, because it's invisible during solo testing and only becomes obvious under real, simultaneous usage.
+
+**How sensitive the underlying data is.** A feature touching health information, financial records, or anything with regulatory weight needs a more careful data-handling and access-control review than a feature touching preferences or display settings, independent of how technically complex the feature's logic is.
+
+Add up how many of these five apply to a specific feature, and you have a rough, honest gut-check: a feature touching zero or one of them is plausibly a short hardening pass; a feature touching three or more is very unlikely to be a short one, no matter how quickly the original version came together. This won't replace an actual scoped estimate from someone who's done the work before, but it gives you a defensible way to sanity-check whatever timeline you're told, instead of anchoring purely on how fast the prototype felt.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Stijn Rutten's Afternoon-Versus-Three-Weeks Feature

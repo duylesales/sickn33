@@ -50,6 +50,24 @@ That's not an argument against building with AI tools. It's an argument for trea
 
 Our engineers, working out of Ho Chi Minh City alongside colleagues in Amsterdam and Singapore, spend a meaningful share of their time doing exactly this kind of translation — turning "it says it's secure" into a specific, checked list of what's actually true. LaunchStudio brings Manifera's enterprise-grade engineering standard, refined over 160+ delivered projects, to that translation work. If you're unsure which category your own product falls into, you can [send us your prototype link for a free read on where it stands](https://launchstudio.eu/en/#contact).
 
+## Six Questions That Go Further Than "Is It Secure"
+
+The questions raised earlier in this article — encryption at rest, password hashing, data isolation — are the starting list, not the whole list. Once those specific answers are in hand, a handful of further questions catch gaps that "it's secure" would just as confidently paper over, because each one is testing a different, separately-verifiable claim.
+
+**Where do your secrets actually live?** Not "are they secure," but specifically: are API keys and database credentials sitting in environment variables or a secrets manager, or are they written directly into the code itself? A confident "yes, we handle secrets properly" and a hardcoded key sitting in a public repository's history are both things a founder without a technical background has no way to distinguish without asking this more specific version of the question.
+
+**What happens to a login session that's never actively closed?** Tokens that never expire are a common, quiet gap — technically "working," since the login flow functions fine, while leaving an indefinitely valid credential sitting around for anyone who obtains it. Ask specifically how long a session stays valid and what forces it to expire.
+
+**Are your dependencies checked for known vulnerabilities, and how often?** Every AI-generated app depends on dozens of external packages, and those packages get security patches released against them regularly. "We built it securely" says nothing about whether an outdated, vulnerable package is quietly sitting in the dependency list six months after launch.
+
+**Are your backups protected the same way your live data is?** A product can encrypt its production database carefully and then store backups of that same data somewhere with weaker protection — an oversight that's invisible until the backup itself becomes the point of exposure rather than the live system.
+
+**Who besides your own team can see raw user data, and why?** Third-party integrations, analytics tools, and support platforms often get broader data access than they actually need, simply because it was the fastest way to wire up the integration. Ask what each connected service can see, not just whether your own database is locked down.
+
+**If something did go wrong, would you know before a customer told you?** This is less a yes/no security question and more a test of whether any monitoring exists to detect unusual access patterns or failed login attempts at all. A product with strong defenses but zero visibility into attempted breaches is still flying blind on the question that matters most in the moment it matters most.
+
+None of these six questions require a technical background to ask — they require knowing that "it's secure" was never actually an answer to any of them. Bring this list, or one like it, to whoever built or is maintaining your product, and treat a vague or deflecting response to any single question the same way you'd treat one to the encryption questions raised earlier: as the start of a conversation, not the end of one.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Sentence That Meant Half of What Julia Thought

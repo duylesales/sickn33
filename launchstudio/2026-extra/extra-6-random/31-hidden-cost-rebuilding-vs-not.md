@@ -54,6 +54,22 @@ Add those up over a realistic delay window — three months, six months — and 
 
 LaunchStudio is powered by Manifera, a software development company with 11+ years of production engineering experience, and this kind of framework is exactly what our Amsterdam team walks founders through before any fixed-price scope is written. If you want a second opinion on which side of the ledger you're actually on, you can [describe your project through our intake form](https://launchstudio.eu/en/#contact) and we'll tell you honestly whether the fix is urgent or can wait. For deeper platform-level engineering questions, Manifera's [custom software development team](https://www.manifera.com/services/custom-software-development/) has handled this exact tradeoff across 160+ enterprise projects.
 
+## Five Signs the 'Later' You Planned For Has Already Arrived
+
+The pricing framework above works best when you remember to run it — but the whole reason delay costs go unpriced is that nobody schedules a recurring reminder to sit down and calculate them. In practice, the decision to finally address a deferred problem usually gets triggered by noticing one of a few specific behavioral signs, not by a scheduled review. Here are five worth watching for, because by the time you notice them, the "later" you were planning for has usually already arrived.
+
+**You've started giving the workaround a name.** When a team starts referring to a routine, repeated action by a shorthand — "doing the manual thing," "the usual fix," "just redo it like last time" — that's a strong signal the workaround has become permanent infrastructure rather than a temporary patch. A name is what things get once everyone has accepted they're not going away on their own.
+
+**New features get scoped around the limitation instead of through it.** If you or your engineers have started asking "how do we build this next feature without touching that part of the codebase" as a design constraint, rather than "how do we build this feature the right way," the flawed structure has moved from being a known issue to being an active architectural decision shaping everything built on top of it.
+
+**The same question keeps coming up in sales or procurement conversations.** If a specific technical gap has been asked about, flagged, or hesitated over by more than one prospective customer, that's no longer a hypothetical risk — it's a documented pattern with a track record, and each additional occurrence is more evidence of an already-realized cost, not a future one.
+
+**Onboarding a new team member requires explaining the workaround as if it were normal.** When training material, verbal handoffs, or internal documentation start treating the flawed area as "just how it works here" rather than "something we're planning to fix," the problem has been quietly absorbed into your institutional knowledge in a way that makes it harder to unwind the longer it continues.
+
+**You've caught yourself avoiding a specific part of the codebase.** If there's an area nobody wants to touch, that gets routed around during code review, or that prompts a slightly longer pause before anyone volunteers to work in it, that avoidance is itself a cost — measured in slower iteration and quiet risk aversion — even on days when nothing about that part of the code actively breaks.
+
+None of these five signs shows up on an invoice, which is exactly why they're easy to live with far longer than the underlying math would justify. If two or more of them are already true for a specific part of your product, the honest starting assumption should be that the delay cost is no longer theoretical — it's already being paid, just in a currency that doesn't show up until you go looking for it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The eight-month delay that cost more than the fix
