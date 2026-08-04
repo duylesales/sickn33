@@ -55,6 +55,24 @@ The right response isn't necessarily "always upgrade before launch" — for some
 
 [Find out if your free tier is actually ready for a paying customer](https://launchstudio.eu/en/#calculator) — the mismatch is invisible until real usage specifically triggers it.
 
+## A Free-Tier Audit Checklist to Run Before Your First Paying Customer
+
+The AI model API is rarely the only free tier a prototype is quietly built on. Hosting, database, authentication, email delivery, and file storage providers all typically offer a free or trial tier too, each with its own version of the same mismatch — terms calibrated for evaluation, not for real customers depending on the product working. A founder preparing for a first paying customer benefits from running the same check across every provider in the stack, not just the AI model API that usually gets the most attention.
+
+**List every third-party service your product actually depends on.** Most founders can name their AI model provider immediately but need a moment to remember every other service quietly running underneath — hosting, database, authentication provider, email delivery, file storage, any analytics or monitoring tool. Each one is a candidate for this same free-tier mismatch.
+
+**For each one, find the specific free-tier limit, not just its existence.** "There's a free tier" isn't useful information on its own — the specific number (requests per minute, emails per day, storage capacity, concurrent connections) is what determines whether real usage will actually hit it, and that number is usually a few clicks away in the provider's own pricing page rather than something requiring a support request.
+
+**Compare each limit against a realistic estimate of paying-customer usage, not testing usage.** A founder's own solo testing volume is a poor predictor of what even a handful of real, simultaneous paying customers will generate — estimate based on how many customers you expect in your first month and how actively each one will realistically use the product, then compare that estimate against the specific limit found above.
+
+**Check what happens at the limit, not just what the limit is.** Some services degrade gracefully — slower responses, queued requests — while others stop functioning entirely until a reset period. A tier that fails hard at its limit deserves more urgency than one that simply slows down, since a hard failure during real usage is functionally an outage.
+
+**Confirm the data usage terms on each free tier specifically, not just the AI model provider's.** Free-tier terms reserving rights to use submitted data more broadly than a paid tier does aren't limited to AI model providers — some hosting, analytics, and email providers carry similar distinctions between free and paid terms worth checking once real customer data is what's flowing through them.
+
+**Decide deliberately for each service, rather than upgrading everything by default.** Not every free tier needs upgrading before a first paying customer — some genuinely have headroom for early-stage usage. The point of the audit is a deliberate decision per service, made with the actual numbers in hand, rather than either ignoring the question entirely or upgrading everything reflexively out of caution.
+
+Running this audit once, ahead of any real launch, takes a few hours across a handful of provider dashboards — considerably less time than the incident it prevents, and considerably less awkward than explaining to a first cohort of paying customers why the product suddenly stopped working during the exact week it mattered most.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Launch Day Rate Limit Nobody Had Checked

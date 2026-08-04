@@ -57,6 +57,22 @@ A very early-stage company with one or two contractors, all personally known and
 
 [Get your contractor and employee access policies reviewed before the distinction matters](https://launchstudio.eu/en/#contact) — personal trust and structural risk management are related but genuinely different considerations.
 
+## What a Contractor Access Agreement Should Actually Cover
+
+Task-scoped access and prompt offboarding, as covered above, are the practical, technical side of this problem. The other side is what's actually written down before a contractor gets access to anything — a short agreement that exists specifically so the technical practices above have something formal to point back to, rather than depending entirely on an informal understanding that can get fuzzy exactly when it matters most.
+
+**Confidentiality and data handling, made explicit rather than assumed.** A contractor working with customer data, even briefly, should have a clear, written expectation about what they can and can't do with anything they see — not because most contractors would misuse it, but because a written expectation is the thing that actually exists if a question ever comes up later, rather than relying on a shared understanding that was never actually stated out loud.
+
+**IP assignment, specifically covering what they build.** Work a contractor produces for the company should be clearly assigned to the company, in writing, before work begins rather than after — a detail founders sometimes assume is automatic or obvious that, depending on jurisdiction and the specifics of the working relationship, isn't always as automatic as assumed without an explicit agreement covering it.
+
+**An explicit access scope, tied to the actual task.** The task-scoped access principle covered above works considerably better when the agreement itself states, even briefly, what access the engagement actually requires — turning "task-scoped access" from an informal intention into something the agreement itself can be checked against if scope quietly expands over time.
+
+**A defined end trigger for access, not just for payment.** Most contractor agreements clearly define when payment obligations end; fewer explicitly define when system access should end, even though the two don't necessarily happen on the same day. Stating explicitly that access review and revocation happens at engagement end, as a specific, named step rather than an assumed side effect of the relationship ending, closes exactly the gap that tends to leave access lingering.
+
+**A point of contact for anything found after the engagement ends.** Occasionally something surfaces after a contractor engagement has wrapped — a question about a specific piece of code, a follow-up on how something was implemented. A brief note on how that gets handled, and who's expected to respond, avoids an awkward, undefined situation later.
+
+None of this requires a lengthy, heavily lawyered contract for every small engagement — a short, clear, reusable template covering these five areas, adjusted slightly per engagement, is usually proportionate for most early-stage contractor relationships, with more formal legal review reserved for genuinely higher-stakes or longer-term arrangements.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Contractor Relationship That Ended Without a Clean Handoff

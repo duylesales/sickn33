@@ -57,6 +57,20 @@ Implementing genuine response-time tracking as part of the observability practic
 
 [Find out what your actual response time distribution looks like, not just your own impression of it](https://launchstudio.eu/en/#calculator) — the spinner is hiding a distribution most founders have never actually measured.
 
+## Four Ways to Actually Handle a Slow AI Request, Once You've Measured It
+
+Measuring your response-time distribution, as covered above, tells you whether a tail-latency problem exists and how often it actually affects real usage. It doesn't, on its own, fix anything — a founder who's run the measurement still has to decide what to actually do about the specific requests that fall into that slow tail. A few genuinely different approaches exist, and they aren't interchangeable; which one fits depends on what's actually causing the delay and how long the tail realistically runs.
+
+**Stream partial results as they become available.** For AI generation tasks that produce output incrementally — text generation especially — streaming the response as it's produced, rather than waiting for the entire result before showing anything, changes the user's actual experience of a twenty-second generation from "a blank spinner for twenty seconds" to "text appearing steadily for twenty seconds," even though the total completion time hasn't changed at all. This is often the single highest-impact fix available, and it's frequently a smaller implementation lift than founders assume, since most AI provider APIs support streaming responses natively.
+
+**Move genuinely long-running work to the background, with a notification on completion.** Some tasks — a bulk document processing job, a complex multi-step generation — aren't good candidates for a user staring at a spinner regardless of how well that spinner communicates progress. Moving the work to a background job and notifying the user when it's done, whether an in-app notification, an email, or a status the user can check back on, is a fundamentally different pattern than trying to make a long wait feel shorter, and it's the right one once a task's typical duration crosses from "worth waiting for" into "worth walking away from."
+
+**Set an honest timeout with a specific, actionable fallback.** A request that's genuinely stuck, not just slow, shouldn't be left spinning indefinitely on the theory that it might still complete. A deliberate timeout, paired with a clear message about what actually happened and what the user can do next — retry, simplify the input, contact support — replaces an indefinite wait with a bounded one, closing exactly the ambiguity a generic spinner leaves open between "still working" and "actually broken."
+
+**Queue and communicate position, when the bottleneck is genuine capacity rather than per-request processing time.** If slow requests cluster around specific times — a burst of simultaneous usage hitting a rate-limited AI provider, for instance — the fix isn't necessarily faster processing per request, but honest queuing: telling a user they're third in line rather than showing the same undifferentiated spinner as someone whose request is already processing.
+
+Choosing among these isn't a matter of picking a favorite — it follows directly from what the distribution measurement actually shows. A tail caused by input complexity calls for streaming or an honest timeout; a tail caused by genuine capacity constraints calls for queuing or background processing. Applying the wrong fix to the wrong cause, like adding a timeout to a problem streaming would have solved more elegantly, burns effort without actually improving what the user experiences.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Spinner Concealing a Real, Recurring Problem

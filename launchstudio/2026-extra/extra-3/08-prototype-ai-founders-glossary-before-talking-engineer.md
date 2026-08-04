@@ -69,6 +69,30 @@ None of this glossary makes you capable of writing or reviewing code yourself, a
 
 [Bring your prototype AI to a conversation you can actually follow](https://launchstudio.eu/en/#contact) — understanding the vocabulary changes how useful the conversation is, immediately.
 
+## Five More Terms You'll Hear Once the Conversation Gets Technical
+
+The glossary above covers what comes up in nearly every first conversation. A second, shorter batch of terms tends to surface once that conversation moves from "is this ready" to "here's specifically what needs fixing" — worth having on hand before they come up cold.
+
+## Rate Limiting
+
+A deliberate cap on how many times something — a login attempt, an API call, a form submission — can happen in a given period of time. Without it, nothing stops a single user, a buggy integration, or an attacker from making the same request thousands of times in a row. When an engineer says a feature "has no rate limiting," they mean there's currently no ceiling on how hard it can be hit, by accident or on purpose.
+
+## Idempotency
+
+A property of an action meaning it produces the same result no matter how many times it's accidentally repeated. A payment confirmation that's idempotent charges a customer once, even if the confirmation arrives twice due to a network retry; one that isn't might charge them twice. When an engineer flags something as "not idempotent," they mean repeating that specific action isn't currently safe.
+
+## Webhook
+
+A way for one system to automatically notify another system the moment something happens, rather than the second system having to repeatedly ask "has anything happened yet." A payment processor typically uses a webhook to tell your app the instant a payment succeeds. When an engineer discusses "webhook handling," they mean how your product reacts to these automatic notifications, including what happens if one arrives twice or arrives out of order.
+
+## Role-Based Access Control (RBAC)
+
+A system for granting different people different levels of access based on their role, rather than everyone having the same access or access being tracked informally. When an engineer says your product "doesn't have real RBAC yet," they mean permission levels either don't exist as a distinct concept in the system, or exist in name but aren't actually enforced consistently everywhere they should be.
+
+## Load Testing / Concurrency
+
+Load testing means deliberately simulating many users or requests hitting your product at once, to see how it actually behaves under realistic pressure rather than the light usage a founder's own testing typically involves. Concurrency specifically refers to multiple things happening at the same time — two users editing the same record simultaneously, for instance. When an engineer asks whether something has been "tested under concurrency," they're asking whether it's been checked against that specific, easy-to-miss scenario, not just tested by one person at a time.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Glossary That Changed How a Founder Asked Questions

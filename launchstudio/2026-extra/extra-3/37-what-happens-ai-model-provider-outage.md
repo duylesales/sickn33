@@ -61,6 +61,24 @@ Deliberately simulating a sustained provider failure — pointing your product a
 
 [Find out what your product actually does during an extended outage, before a real one happens](https://launchstudio.eu/en/#calculator) — this is a distinct test from general error handling, and most products have never actually run it.
 
+## A Founder's Outage Response Runbook: The First 15 Minutes
+
+Building sustained-outage detection and honest in-product messaging, as covered above, solves the technical half of this problem well in advance. The other half is what a founder actually does, personally, in the minutes after realizing a provider is genuinely down — and that moment tends to catch people off guard precisely because it happens rarely enough to never become routine. Deciding the response in advance, calmly, beats improvising it while a support inbox is filling up.
+
+**Minute zero: confirm it's actually the provider, not you.** A sudden spike in failed AI requests looks identical whether the cause is a genuine provider outage or a bug you shipped an hour ago. Check the provider's own public status page first — most maintain one — before assuming the failure is external, since responding to a provider outage that isn't actually happening wastes the exact minutes that matter most if it turns out to be your own regression instead.
+
+**Minutes one through five: turn on the honest messaging, manually if needed.** If the sustained-detection logic covered above hasn't triggered automatically yet, or you're not confident it has, flip the status messaging on by hand rather than waiting for the system to catch up — a slightly early manual trigger costs nothing; a delayed one costs trust during exactly the window customers are most likely to notice something's wrong.
+
+**Minutes five through ten: post a short, plain update wherever customers would actually look.** A status page, a pinned message in a support channel, a brief in-app banner — the specific channel matters less than the fact that it exists and says something true: what's affected, that it's a provider issue rather than something broken in your product specifically, and roughly when you'll next update. Resist the instinct to over-explain or speculate about root cause before you actually know it.
+
+**Minutes ten through fifteen, and every interval after: set a check-in cadence, not a one-time check.** An outage that resolves in twenty minutes and one that runs for three hours look identical in the first five minutes. Committing to checking the provider's status and your own error rates at a fixed interval — every fifteen or thirty minutes — until the pattern clears keeps you ahead of customer questions instead of reacting to them one at a time.
+
+**Throughout: resist shipping a workaround mid-outage.** The instinct to write and deploy an emergency patch under pressure, with a support inbox filling up, is understandable and usually a mistake — code written and shipped in that state, without the review it would normally get, has a real chance of creating a second, self-inflicted problem layered on top of the first one, one that outlasts the outage itself.
+
+**After it resolves: run a short post-mortem while it's still fresh.** Not a formal process, just three questions worth answering honestly within a day: did the detection logic trigger when it should have, did the messaging actually reach customers before they had to ask, and is there anything about this specific outage — its length, its exact failure mode — that the current handling didn't anticipate. Outages recur; each one is a chance to close a gap the last one didn't reveal.
+
+None of this requires sophisticated tooling — a shared document with these steps, agreed on before the first real outage happens, is usually enough. What it requires is deciding the response before the pressure of a live incident makes deciding anything calmly considerably harder.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Hours of Confusing, Repeating Errors

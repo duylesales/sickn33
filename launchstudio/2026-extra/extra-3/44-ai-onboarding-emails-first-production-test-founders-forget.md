@@ -57,6 +57,22 @@ Signing up multiple times with deliberately varied, imperfect data — a name wi
 
 [Get your onboarding sequence tested against real, imperfect signup patterns](https://launchstudio.eu/en/#calculator) — this often gets less scrutiny than anything else, despite mattering the most.
 
+## Transactional or Marketing? The Distinction That Changes What's Actually Required
+
+Everything covered above concerns whether an onboarding sequence works correctly once it's allowed to send. A separate, easy-to-miss question sits underneath that one: whether a given email in that sequence is legally permitted to send at all, in the form it's sending, to the specific recipient it's about to reach — a distinction that hinges on whether an email counts as transactional or as marketing, a difference many AI-generated onboarding sequences blur without anyone deciding to.
+
+**A welcome email confirming an account was created is generally transactional.** It's a direct, necessary consequence of an action the user just took, and is generally treated differently from promotional content under most consent frameworks — though the moment that same email starts including product recommendations, feature upsells, or general marketing content alongside the account confirmation, it starts to blend into a different category with different expectations attached.
+
+**A setup reminder is a genuine gray area, not a clear case either way.** "You haven't finished setting up your account" sits closer to transactional in spirit — it relates directly to an action the user already started — but the same message with promotional framing, or one continuing well past when it's actually useful, the exact gap covered in the example above, starts to function more like a marketing nudge than a service notification, regardless of what a founder privately intended it to be.
+
+**Anything explicitly promotional needs clear opt-in and an actual, working unsubscribe.** Once a sequence includes genuinely promotional content — feature announcements, upgrade prompts, general product marketing — it generally needs to be something the recipient has actually consented to receive, with a straightforward and genuinely functional way to opt out at any point, not a technically-present but confusing or broken unsubscribe link that nobody has actually tested.
+
+**Consent scope should match what the user actually agreed to, not what was convenient to build.** A signup flow that collects consent for "product updates" doesn't automatically extend to unrelated marketing content added to the onboarding sequence later, once a founder wants to include a promotional message that wasn't part of the original scope the user actually agreed to — a mismatch that develops gradually as a sequence grows rather than existing from the start.
+
+**A record of what was actually agreed to is worth keeping, not just the agreement itself.** Being able to show, if it's ever questioned, what a specific user consented to and when — rather than relying on memory or a general assumption that "everyone agrees to this at signup" — is the kind of basic record-keeping that costs almost nothing to build in from the start and is considerably harder to reconstruct retroactively once a sequence has been running and evolving for months.
+
+None of this requires a lawyer for a straightforward welcome sequence — a genuinely transactional set of setup and confirmation emails is generally on safe, defensible ground without special handling. It's worth a specific, deliberate check the moment an onboarding sequence starts including anything promotional, upsell-oriented, or extending meaningfully past pure account setup, since that's precisely the point where the transactional framing this article has otherwise assumed stops applying cleanly, and the requirements genuinely change.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Reminder Emails That Wouldn't Stop

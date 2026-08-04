@@ -57,6 +57,22 @@ The goal isn't to devalue role two's genuine, real capability — building fast,
 
 [Get clear on which role you actually need before your next technical hire](https://launchstudio.eu/en/#contact) — the title alone doesn't tell you which capability you're getting.
 
+## Writing a Job Posting or Contract Brief That Attracts the Right Role
+
+Most of the mismatch this article describes traces back to a job posting or contract brief that never specified which role was actually needed, leaving "AI software developer" to do work it was never precise enough to do. A posting written with the distinction in mind attracts meaningfully better-matched candidates before a single interview happens.
+
+**Describe the actual deliverable, not the tool used to produce it.** "Build and independently verify secure payment webhook handling" attracts a genuinely different pool than "experience with AI coding tools required," even though both might describe the same underlying task. The first names the specific judgment required; the second names only the tooling, which either role could plausibly claim familiarity with.
+
+**Ask for a specific example of independent judgment, not a portfolio of fast output.** A portfolio full of quickly-shipped features demonstrates real, valuable speed but says little about whether a candidate can independently evaluate whether AI-generated code is actually correct and safe. Asking specifically for an example where a candidate caught an AI tool producing something wrong, and how they knew, filters more precisely for role one than any amount of portfolio volume does.
+
+**State plainly whether independent verification is the job, or whether rapid generation is.** A posting can legitimately be written for either role — both are real, valuable jobs — but a posting that doesn't say which one leaves candidates to guess, and candidates closer to role two, not being deceptive, often apply anyway because the posting's language didn't clearly rule them out.
+
+**Include a specific, answerable technical scenario in the posting itself, not just the interview.** A brief scenario — "describe how you'd verify that a specific user can't access another user's data through a direct API request" — filters at the application stage rather than several interview rounds in, saving both the founder's and candidates' time by surfacing the distinction earlier rather than later.
+
+**Avoid job titles as the primary filter, since the title itself is the source of the ambiguity.** "AI software developer," "AI engineer," and similar titles currently span both roles industry-wide, meaning leading a posting with the title alone, without the deliverable-specific language above, reproduces exactly the ambiguity this article describes rather than resolving it.
+
+A posting or brief written this way takes a little longer to draft than a generic one, but it does real filtering work before an interview ever happens — the same work the verification test described earlier in this article does during an interview, just applied a stage earlier, where it can save both a founder and a mismatched candidate real time neither one benefits from spending.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Hire That Didn't Match the Actual Need

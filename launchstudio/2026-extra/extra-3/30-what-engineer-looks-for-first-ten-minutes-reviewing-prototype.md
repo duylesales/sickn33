@@ -61,6 +61,22 @@ The order isn't arbitrary — it mirrors the same blast-radius reasoning covered
 
 [See what an experienced first pass over your own prototype would actually find](https://launchstudio.eu/en/#calculator) — the first ten minutes often reveal more than founders expect.
 
+## What to Have Ready Before This First Ten Minutes Happens
+
+The ten-minute sequence above assumes a reviewer can actually get to the codebase and start working immediately. In practice, a meaningful share of that time in a real engagement gets lost to logistics that have nothing to do with the actual review — waiting on repository access, hunting down which environment variable corresponds to which service, or explaining an integration nobody wrote down anywhere. A founder who prepares a handful of specific things in advance gets a genuinely faster, more useful first pass, and often a more accurate one.
+
+**Repository access, granted before the call, not during it.** A reviewer sitting on a call waiting for a GitHub invitation to be accepted, or for a founder to remember which email their repository host account uses, burns minutes that would otherwise go toward the actual git history scan covered above. Sending access as soon as a review is scheduled, rather than at the start of the session, means the first ten minutes actually start on time.
+
+**A plain list of every third-party service the product talks to.** Payment processors, AI model providers, email services, analytics tools, authentication providers — a quick, even informal list saves a reviewer from having to reverse-engineer this from scattered environment variable names and import statements, and it directly speeds up the secrets and structural-red-flags portions of the sequence.
+
+**Whether the product has ever had real user data in it, even briefly.** This isn't a trick question and it isn't about getting in trouble for an earlier shortcut — a reviewer who knows a database once held real customer records, even temporarily during early testing, checks version history and backups differently than one who's told everything has always been synthetic data.
+
+**Any part of the product the founder already suspects is weak.** Founders often have a genuine, if unverified, instinct about which feature was rushed, which integration was copied from a tutorial without full understanding, or which part of the product "probably isn't done right." Sharing that instinct upfront doesn't replace the reviewer's own independent process, but it does help prioritize where the deeper, post-ten-minute review spends its time first.
+
+**Login credentials for at least two distinct user roles, if the product has more than one.** A reviewer testing authorization boundaries needs to actually attempt cross-account access, which requires working credentials for more than a single account — something founders who've only ever tested solo frequently don't have readily available without creating one on the spot.
+
+None of this preparation takes more than about fifteen minutes to assemble, and it directly determines how much of a scheduled review session goes toward actual findings versus administrative setup — the same proportionality logic that makes the ten-minute sequence itself worth following in a specific, deliberate order rather than an arbitrary one.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Finding Made Before the Call Was Even Half Over

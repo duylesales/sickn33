@@ -53,6 +53,24 @@ Because the new AI feature touches an already-live product with real customers, 
 
 [Get your new AI feature reviewed before it touches customers you already have](https://launchstudio.eu/en/#contact) — the stakes are different once there's an existing product behind it.
 
+## Six Questions to Answer Before You Ship the AI Feature
+
+Before a new AI feature reaches customers an existing product already has, five specific questions separate a feature that's been genuinely evaluated against this different risk calculation from one that's simply been treated like any other feature update:
+
+**Does the feature need access to data the rest of your app already treats as sensitive — and if so, does it use the same access scoping the rest of the app enforces, or a shortcut built specifically to ship the feature faster?** A permission scope that's broader than the rest of the application, even temporarily, is exactly the kind of gap that's easy to justify in the moment and easy to forget to narrow later, once the feature is live and attention has moved elsewhere.
+
+**What happens to the rest of your product if the AI model provider is slow or unavailable for an hour?** An existing app's other features shouldn't degrade just because a new AI capability's external dependency is having a bad day — if a slow or failed AI call can drag down parts of the product that have nothing to do with it, that's a design question worth resolving before launch, not an acceptable trade-off discovered during the provider's first real outage.
+
+**Have you actually modeled a worst-case usage month for this feature, not just an average one?** AI usage costs scale with actual usage in a way your existing hosting costs generally don't, meaning a feature that gets unexpectedly popular, or gets hit by a usage pattern nobody anticipated, can produce a bill that looks nothing like what an average-case estimate suggested — worth knowing in advance rather than discovering on an invoice.
+
+**Who specifically reviewed this feature before it shipped — the same scrutiny the rest of your product has had, or none in particular because it felt like "just a feature"?** A new AI capability added to an already-live product deserves the same level of review its earlier, foundational work received, not a lighter pass simply because it's smaller in scope or because the team has since gotten more comfortable shipping quickly.
+
+**If this feature fails in front of a customer, does the failure look contained, or does it look like the whole product is broken?** A well-isolated failure tells a customer one specific thing didn't work; a poorly isolated one makes an already-trusted product look unreliable across the board, for a problem that may have nothing to do with anything else in it.
+
+**Could you actually pull this feature back out cleanly if it turned out to need more work, without disrupting anything else customers already rely on?** A new AI feature built as a genuinely separate addition can be paused or rolled back on its own; one built with its logic tangled directly into existing, load-bearing code can't be removed without touching things that were working perfectly well before it arrived — worth knowing which one you actually built before you need the answer under pressure.
+
+None of these questions require a lengthy audit to answer honestly — they require pausing before launch long enough to actually ask them, rather than assuming a feature that looks similar to previous work carries the same risk profile previous work did. A founder who can answer all six with genuine confidence has effectively already done the review this article is describing; a founder who can't has a short, specific list of exactly what to look at next, rather than a vague sense that "the AI feature" needs some unspecified amount of attention before it's ready.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A New Feature That Quietly Exposed an Old Database

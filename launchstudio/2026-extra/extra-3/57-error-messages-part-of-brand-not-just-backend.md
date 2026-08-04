@@ -57,6 +57,22 @@ Treating error messaging as a genuine design task, not an engineering afterthoug
 
 [Get your error messages designed with the same care as the rest of your product](https://launchstudio.eu/en/#contact) — the moment something fails is disproportionately influential on how a customer feels about you.
 
+## Not Every Failure Deserves the Same Tone
+
+Treating "error messaging" as a single design task tends to produce one rewritten template applied uniformly everywhere, which is an improvement over raw technical text but still misses that different categories of failure call for genuinely different tone and content, not just a warmer version of the same generic phrasing.
+
+**A user input error is the customer's own mistake, and the message should feel helpful, not scolding.** A required field left blank, an invalid email format, a password that doesn't meet requirements — these need specific, actionable language telling the customer exactly what to fix, in a tone that assumes good faith rather than one that reads as a correction. "That doesn't look like a valid email address — mind double-checking it?" lands very differently than "Invalid input."
+
+**A system or backend error is nobody's fault the customer can see, and the message should own that clearly.** When something breaks on your end — a server error, a database timeout — the honest, trust-preserving move is a message that acknowledges the failure plainly, confirms it's being looked into, and avoids implying the customer did anything wrong, since a generic error tone applied to a system failure can unintentionally read as blaming the customer for something entirely outside their control.
+
+**A third-party service failure deserves its own specific language, not a generic catch-all.** If a payment processor or an AI provider is down, telling the customer specifically that "payments are temporarily unavailable, we're monitoring the situation" is more honest and more useful than folding it into the same generic error text used for an internal bug, since the customer's actual next step — wait and retry, versus contact support — genuinely differs between the two.
+
+**A permission or access error needs to avoid sounding like an accusation.** "You don't have access to this" can read as unexpectedly harsh for a customer who simply followed an old link or forgot which plan they're on — softer, more explanatory framing ("this feature isn't included in your current plan" or "looks like this link has expired") preserves the relationship better than blunt access-denial language.
+
+**An empty state — no results, no data yet — isn't technically an error at all, and shouldn't be styled like one.** A search returning nothing, or a new account with no activity yet, is a normal, expected state, not a failure, and treating it with the same visual and tonal weight as a genuine error creates false alarm for a customer who hasn't actually done anything wrong.
+
+Sorting failure states into these categories before writing (or rewriting) the copy for each one produces meaningfully more appropriate messaging than a single pass of "make the errors sound nicer" applied uniformly — the specific content a customer needs, and the tone that actually reassures them, genuinely differs by what kind of failure they're looking at.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Raw Error Message That Undid Weeks of Trust-Building

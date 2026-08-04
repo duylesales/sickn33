@@ -55,6 +55,22 @@ Individual accounts rather than one shared login, so access can be granted, revo
 
 [Get your internal access reviewed before your team outgrows the shared login](https://launchstudio.eu/en/#contact) — a gap that costs nothing to close early and considerably more to unwind once it's been quietly relied on for months.
 
+## A Role-by-Role Breakdown of What Internal Access Should Actually Look Like
+
+"Role-scoped access" is easy to agree with in principle and vague enough in practice that most teams never get around to actually defining it. A more concrete starting point is walking through the roles a small AI-native team actually has, one at a time, and being specific about what each one genuinely needs to see:
+
+**Founders.** Full access is reasonable at this level, precisely because accountability for the whole product sits here too — the goal of role-scoping isn't to restrict founders, it's to make sure that when a founder's own access is used, particularly in a growing team, it's still traceable rather than indistinguishable from anyone else using the same shared credential.
+
+**Engineers actively building or debugging the product.** Genuinely need access to raw prompts and model outputs when actively debugging model behavior — that's legitimate, necessary access, not an exception to be minimized away. What's worth adding isn't less access, it's a record of when that access was used, so "an engineer looked at this while debugging a reported issue" is a traceable fact rather than an assumption nobody can actually confirm later.
+
+**Support or customer success staff.** Usually need account-level details — plan, usage history, billing status — to actually help a customer, but rarely need routine access to raw AI prompts and outputs unless they're specifically investigating an issue a customer has raised. Scoping support access to account metadata by default, with raw prompt access available but logged when genuinely needed for a specific case, matches what the role actually requires day to day.
+
+**Contractors and freelancers, including short-term ones.** This is where the gap covered in the example above tends to originate — a contractor brought on for a specific, time-limited task gets the same access as a full-time team member because provisioning anything narrower feels like unnecessary friction for a short engagement. Time-boxed access, scoped to the specific task, that expires automatically rather than requiring someone to remember to revoke it manually, closes exactly this gap without adding meaningful overhead to bringing someone on.
+
+**Anyone who leaves, regardless of role, tenure, or how the departure happened.** Access revocation belongs in the standard offboarding process as a required step, not a remembered afterthought — the same discipline whether it's a co-founder, a long-tenured engineer, or a contractor whose engagement quietly ended without a formal conversation about access at all.
+
+None of these categories require sophisticated tooling to implement at small-team scale — they require deciding, once, what each role actually needs, and building access around that decision rather than around whoever happened to need something first and simply got added to the one credential everyone already had.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Departing Contractor Who Still Had Everything

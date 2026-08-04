@@ -57,6 +57,22 @@ Using AI to generate a solid first draft is a genuinely reasonable, efficient st
 
 [Make sure your legal documents actually match what your product does](https://launchstudio.eu/en/#contact) — the same "looks done, hasn't been verified" gap applies here too.
 
+## A Checklist for Every Legal Document an AI Model Might Have Drafted for You
+
+The privacy policy is the document this article has focused on so far, and for good reason — it tends to include the most concrete, checkable claims about what a product actually does. It's rarely the only AI-generated legal document a founder ends up publishing, and the same "looks done, hasn't been verified" gap applies to the others just as directly.
+
+**Terms of service.** Beyond the jurisdiction-specific requirements already covered, a terms of service document generated generically often includes liability and dispute-resolution language copied from whatever pattern the AI model has seen most often, without regard to whether it's actually appropriate or enforceable for your specific product, industry, and the jurisdictions your actual customers are in.
+
+**Cookie and tracking consent notices.** These need to accurately reflect what your product's actual tracking and analytics setup does — which specific cookies, which specific third parties receive data — a detail an AI model generating generic consent language has no way of knowing unless told precisely, and one that changes every time a new analytics tool or tracking pixel gets added to the product.
+
+**Data processing agreements for business customers.** A B2B product handling other companies' customer data on their behalf often needs a data processing agreement defining that relationship formally. An AI-generated version of this document is especially prone to including generic commitments — specific response times, specific security certifications — that may not actually match what the underlying technical architecture genuinely supports, mirroring the exact deletion-timeline mismatch covered in the example above but in a business-to-business contract rather than a consumer-facing policy.
+
+**Refund and cancellation policies.** These interact directly with actual billing logic and consumer protection expectations that vary by jurisdiction, meaning an AI-generated version needs specific verification that the stated policy matches what the billing system is actually capable of enforcing, not just what reads as reasonable in isolation.
+
+**Vendor and contributor agreements.** Any AI-drafted agreement covering an external contributor's work — overlapping with the IP assignment and access considerations covered elsewhere in this content series — deserves the same scrutiny as customer-facing documents, since a gap here affects who actually owns what gets built rather than how a customer's data gets handled.
+
+The underlying discipline is the same across every document on this list: treat AI-generated legal text as a genuinely useful first draft, then verify every concrete, checkable claim against what the product actually does and have a qualified professional review the result before it's published — a single verified privacy policy sitting alongside four other unverified documents hasn't actually closed the gap this article describes, just moved it to whichever document nobody happened to check.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Privacy Policy That Promised More Than the Product Delivered

@@ -57,6 +57,22 @@ None of this argues for a culture of excessive caution or paralysis — the reve
 
 [Examine whether your team's speed culture actually fits your team's actual stakes](https://launchstudio.eu/en/#contact) — an inherited philosophy isn't automatically the right one for a five-person team's specific situation.
 
+## A Quick Self-Test: Has Your Team's Speed Culture Already Drifted?
+
+The cultural cost covered above is easiest to address before it's fully set, and hardest to recognize from inside a culture that's already normalized it. A short, honest self-test — a handful of specific questions rather than a vague gut check — gives a founder a more reliable read than simply asking "do we move too fast," a question almost everyone answers in the direction their existing culture already leans.
+
+**When was the last time someone on your team said "let's slow down and check this" out loud, in a meeting, without apologizing for it first?** If the honest answer is "I can't remember" or "usually only I say that," it's worth asking whether caution has quietly become something people feel they need to justify before voicing, rather than a normal, unremarkable part of how the team operates.
+
+**Does your team's internal language treat "shipped fast" and "shipped carefully" as equally positive, or does one get mentioned in standups and the other doesn't?** Teams reveal their actual values less through stated principles and more through what gets casually praised in passing — if speed gets celebrated by default and carefulness only gets mentioned when something goes wrong, that asymmetry is itself the signal.
+
+**If a new hire asked "what happens here if I flag a risk that slows down a launch," would you be confident in the honest answer?** Not the answer you'd want to give — the one a current team member would actually give, based on what they've actually observed happen the last time someone raised a concern that delayed something.
+
+**Has anyone been quietly sidelined, teased, or informally penalized for being "the careful one"?** This rarely happens through an explicit decision; it happens gradually, through slightly less enthusiasm in how someone's contributions get discussed, until the pattern becomes a real, if unspoken, incentive against raising concerns.
+
+**When you look at who you've hired and promoted so far, does the pattern skew toward generation speed over verification judgment?** Not a criticism of the people themselves — a check on whether the hiring and recognition pattern has been calibrated deliberately, or has simply followed the path of least resistance toward whichever skill the founding culture happened to reward first.
+
+A team that answers these questions comfortably probably has the balance covered above roughly right already. A team that hesitates on more than one or two has real, actionable information — not a reason for alarm, but a specific, concrete starting point for the kind of deliberate recalibration covered above, done before the drift compounds further rather than after it's already shaped who's on the team and how they operate.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Culture That Made Its Own Course Correction Harder

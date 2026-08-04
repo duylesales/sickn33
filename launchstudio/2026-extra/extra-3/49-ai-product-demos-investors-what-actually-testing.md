@@ -57,6 +57,22 @@ Understanding that a demo primarily tests vision and market command, not technic
 
 [Prepare for what the demo actually tests, and separately for what comes after it](https://launchstudio.eu/en/#contact) — the two are related but genuinely different preparation tasks.
 
+## What to Actually Do in the Gap Between a Strong Demo and Technical Diligence
+
+Understanding that a demo and a technical diligence conversation test genuinely different things, as covered above, is the diagnostic half of the picture. The practical half is what a founder should actually do with that understanding in the specific window between a demo landing well and a technical review actually happening — a window that's often measured in weeks, and that's considerably more useful spent preparing than spent simply waiting for the next conversation to arrive.
+
+**Ask directly whether a technical stage exists, and when.** Not every investor process includes a distinct technical diligence conversation, and not every one that does runs it at the same point in the process. Asking a specific, direct question about this early, rather than assuming a smooth demo means the process is effectively over, gives a founder an actual timeline to prepare against instead of an open-ended sense that "more conversations" are coming at some unspecified point.
+
+**Run the same categories of question a technical reviewer would, before they do.** The specific, concrete questions covered elsewhere in broader guidance for what an investor or advisor should actually ask — about authentication, data handling, and the other core production-readiness categories this content series covers repeatedly — are worth running against your own product proactively, in the gap, rather than encountering them for the first time live in front of the person deciding whether to invest.
+
+**Prioritize the gaps a technical reviewer is actually likely to probe, not every gap that theoretically exists.** A full production-readiness pass takes real time, and the gap between demo and diligence is rarely long enough for an exhaustive rebuild. Focusing first on the categories a technical reviewer is specifically likely to ask about — authentication and authorization, data handling, and anything directly tied to the core value proposition being pitched — gets the highest-visibility gaps closed within a realistic timeline, even if lower-priority items remain for later.
+
+**Prepare to talk about remaining gaps honestly, not just to have none.** A technical reviewer who asks a pointed question isn't necessarily expecting a perfect codebase — a founder who can speak specifically and honestly about a known gap and a concrete plan to close it often comes across considerably better than one who's visibly caught off guard by a question they hadn't anticipated at all, since the second reaction signals a lack of self-awareness about the product's actual state, not just an incomplete feature.
+
+**Don't let demo-prep momentum substitute for the different work diligence actually requires.** It's tempting, once a demo has gone well, to keep refining the same narrative and interaction flow the demo covers, polishing what already worked rather than turning attention to the genuinely different, less visible work a technical review will actually examine. The two deserve separate, deliberate attention, not a single continuous effort that happens to lean toward whichever felt more urgent in the moment.
+
+Treating this gap as active preparation time, rather than a pause between two unrelated events, is what actually determines whether the harder, more technical conversation goes as smoothly as the first one did.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Great Demo Followed by a Harder Conversation

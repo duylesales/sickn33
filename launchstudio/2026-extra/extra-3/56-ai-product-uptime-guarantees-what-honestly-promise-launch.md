@@ -57,6 +57,22 @@ For a genuinely early-stage product without extensive operating history, a more 
 
 [Get an honest uptime figure your infrastructure can actually support](https://launchstudio.eu/en/#contact) — an impressive-sounding promise you can't keep costs more than a conservative one you can.
 
+## What Actually Belongs in Writing Once You Do Commit to a Figure
+
+Choosing an honest, achievable percentage, as covered above, is only half the work. The other half is writing the actual commitment down in a way that's specific enough to be checkable and fair enough to survive contact with reality — a step founders sometimes skip, reaching for a one-line "99.9% uptime" clause that raises more questions than it answers the first time it's actually tested.
+
+**Define what counts as downtime, precisely.** Does a slow but technically responding service count? Does a single feature being unavailable while the rest of the product works count the same as a full outage? A number without a definition of what it's measuring is unenforceable in either direction — a customer can't reasonably invoke it, and a founder can't reasonably know whether they're currently in breach of it.
+
+**Carve out dependency outages explicitly, not implicitly.** If your AI provider going down is a genuine, foreseeable risk outside your control — which, per the uptime-ceiling logic covered above, it is — say so directly in the commitment itself, specifying how an upstream provider outage is treated, rather than leaving a customer to assume full responsibility rests with you when a dependency you don't control is what actually failed.
+
+**Choose a measurement window that matches your actual maturity.** A monthly uptime calculation is common practice, but a very early-stage product with limited traffic might reasonably use a longer window, or a rolling calculation, to avoid a single short incident disproportionately dominating a small sample size in a way that doesn't actually reflect ongoing reliability.
+
+**Pick remedies proportionate to what you can actually sustain.** A service credit tied to specific downtime thresholds is a common, reasonable structure; a broad, open-ended liability commitment is a considerably riskier one for an early-stage company to take on before its own reliability track record justifies that level of exposure. The remedy should match the confidence level of the underlying commitment, not just mirror whatever a larger, more established competitor happens to offer.
+
+**Set a review point, not a permanent figure.** An uptime commitment made at launch, based on limited operating history, should have a stated point at which it gets revisited against actual accumulated data — six months or a year in, once real reliability numbers exist to check the original figure against, rather than treating the launch-day number as fixed indefinitely regardless of what real operating history later shows.
+
+None of this requires legal expertise to get roughly right on a first pass, though having an actual contract reviewed before it goes in front of a customer is worth the modest additional step — the goal at this stage is simply making sure the commitment on paper is specific enough that both sides know exactly what was promised, and honest enough that meeting it doesn't depend on unusually good luck.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Number Chosen Because It Sounded Right

@@ -55,6 +55,22 @@ The direct test: if you removed the AI capability entirely, would the product st
 
 [Find out which category your product actually falls into](https://launchstudio.eu/en/#calculator) — the distinction changes where scrutiny should concentrate.
 
+## Five Signs Your "AI Feature" Has Quietly Become an AI Product
+
+The removal test above works well as a one-time check, but the more common way founders actually get this wrong isn't a single misjudgment — it's a gradual drift, where a genuinely contained feature slowly accumulates enough surrounding functionality that the removal test's answer quietly flips without anyone re-running it. A handful of specific signs are worth watching for between deliberate check-ins.
+
+**The AI feature has grown its own data model, separate from the rest of the product's.** A feature that started by reading and lightly annotating data the rest of the product already had now maintains its own tables, its own history, its own state that other parts of the product increasingly depend on reading. This is a structural sign the feature has grown into something with its own architectural weight, not just a bolted-on capability anymore.
+
+**Customers increasingly describe the product by the AI feature, not the original core function.** When new customers, in their own words, describe your product primarily by what the AI feature does rather than by the conventional function it was originally built around, that's a market signal worth taking seriously alongside the technical removal test, since customer perception and architectural reality tend to drift toward each other over time.
+
+**More than one other feature now calls into the AI feature's output.** A single, contained AI feature that other, previously-independent parts of the product now depend on for their own functioning has stopped being a standalone addition and started becoming shared infrastructure the rest of the product relies on — a meaningfully different architectural role than where it started.
+
+**The AI provider dependency has moved from "nice to have working" to "the product breaks without it."** Early on, a temporary AI provider outage degraded one feature; increasingly, it takes down functionality a customer would consider core to the product working at all. This shift in blast radius is a direct, practical signal that AI-specific dependency risk, covered elsewhere in broader guidance, now warrants product-wide attention rather than feature-level containment.
+
+**You've stopped being able to describe the product's core pitch without mentioning the AI capability.** If an elevator pitch that used to work fine without referencing the AI feature at all now feels incomplete or inaccurate without it, that's often the clearest practical signal the removal test would return a different answer than it used to, even without formally re-running it.
+
+None of these five signs individually proves a feature has become a product — each one is a reasonable, gradual development on its own. Two or more appearing together is the more reliable signal worth actually pausing on, since it suggests the drift described above has genuinely happened rather than the product simply evolving in ordinary, expected ways.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Correctly Scoping a Feature, Not a Product

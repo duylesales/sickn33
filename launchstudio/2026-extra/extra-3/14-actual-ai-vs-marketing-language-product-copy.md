@@ -57,6 +57,24 @@ The direct test: for every specific AI-related claim in your marketing copy, ask
 
 [Get your AI claims checked against what your product actually does](https://launchstudio.eu/en/#contact) — the gap costs more in trust than the shortcut ever saved in copywriting time.
 
+## A Quick Reference: Which AI Claims Tend to Hold Up, and Which Invite Questions
+
+Beyond the general self-check of asking whether you could explain the mechanism, certain specific words and phrases carry more implied claim than founders typically realize when they write them, while others describe the same underlying capability with considerably less risk of overstatement. Knowing the difference in advance makes copywriting faster, not slower — the safer phrasing usually isn't longer or less compelling, just more specific about what's actually happening.
+
+**"Learns" and "adapts" — high scrutiny, and worth being specific about which kind.** Beyond the general risk of implying adaptation that isn't happening at all, covered above, there's a second, subtler version of this same mistake: a product that genuinely does improve, but only in the sense that the underlying model gets periodically retrained or fine-tuned across the entire user base — not in the sense that it personalizes to any individual customer's specific usage. Copy that says "learns your preferences" when the truth is "the model behind everyone's account gets updated occasionally" is describing a real improvement process inaccurately, not a fake one, which is an easier gap to miss during a copy review since something genuinely is learning — just not what the sentence implies.
+
+**"Analyzes" and "processes" — generally safe.** These describe an action the system genuinely performs on input data without implying any particular sophistication or learning behavior, making them accurate for a much wider range of actual implementations, including simpler rule-based or single-pass AI processing.
+
+**"Predicts" and "recommends" — moderate scrutiny.** Reasonable when the system genuinely produces output based on some analysis of input, but worth checking that the underlying mechanism does more than apply a fixed rule regardless of input — a static recommendation isn't a prediction in any meaningful sense, even if it happens to be useful.
+
+**"Automatically" — check what's actually automatic.** Accurate when a step genuinely requires no human action; overstated when a human still reviews, approves, or adjusts the output before it takes effect, even if that human step happens quickly or invisibly to the end customer.
+
+**"Intelligent" and "smart" — low information, low risk, low value.** Vague enough that they rarely constitute a specific, checkable claim on their own, which makes them low-risk from a compliance standpoint and simultaneously low-value from a differentiation standpoint — worth replacing with something more specific about what the product actually does, not because the vague version is dangerous, but because it doesn't say much.
+
+**"Powered by AI" — accurate but incomplete on its own.** Technically true for almost any product touching an AI API anywhere in its stack, which is exactly why it's overused to the point of losing descriptive value — pairing it with a specific outcome claim ("powered by AI to draft your first response in seconds") communicates more than the phrase alone while staying accurate.
+
+None of this is about avoiding confident language — confident, specific claims about real outcomes are good marketing and good practice. It's about recognizing that certain specific words carry an implied mechanism claim riding along with them, whether or not the founder writing them intended to make that claim, and choosing language that matches what the product actually, verifiably does underneath.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Marketing Copy That Outran the Product Underneath It

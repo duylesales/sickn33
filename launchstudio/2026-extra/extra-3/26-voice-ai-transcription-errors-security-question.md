@@ -57,6 +57,20 @@ For any voice-triggered action with real consequence, a brief, explicit confirma
 
 [Get your voice product reviewed for where a misheard word becomes a real problem](https://launchstudio.eu/en/#calculator) — transcription accuracy and action safety are related but genuinely different questions.
 
+## A Testing Checklist for Voice Products Beyond the Quiet Room
+
+Most voice AI testing happens the way Wouter's did initially — in a quiet room, with clear speech, from someone who already knows what they're about to say. That environment reliably produces a working demo and reliably fails to surface the conditions real usage actually involves. A deliberate testing pass against a specific set of degraded conditions catches what quiet-room testing structurally can't.
+
+1. **Test with realistic background noise for your actual use case.** A phone-ordering product should be tested with the kind of ambient noise a real call environment involves — traffic, other conversations, a television in the background — not silence, since noise-free testing simply never encounters the ambiguous-input failure mode this article is about.
+2. **Test with speech that changes mid-sentence, not just clean, complete instructions.** Real users correct themselves, hesitate, and restart sentences constantly — a test set built entirely from clean, complete, pre-planned instructions misses exactly the kind of self-correction that caused Wouter's silently dropped order.
+3. **Test with a range of accents and speech patterns beyond the founder's own.** A transcription system tuned or tested primarily against one speech pattern, often the founder's own during development, can perform meaningfully worse against real users whose speech patterns differ, an accuracy gap that's specifically worth checking rather than assuming away.
+4. **Test with degraded audio quality, not just a clean microphone feed.** Phone line compression, a poor connection, or a lower-quality device microphone all degrade transcription accuracy in ways a founder's own high-quality testing setup never encounters, and are common conditions for real phone- or mobile-based voice products.
+5. **Test silence and non-responses explicitly, not just wrong answers.** What happens when a user simply doesn't respond, or responds with something the system can't parse into either expected option, matters as much as what happens with a clearly wrong answer — a gap here often means the system defaults to an assumption rather than genuinely asking again.
+6. **Keep a record of what got flagged during testing and what changed as a result.** Beyond running the test once, maintaining even an informal log of specific ambiguous cases found and how the confirmation flow was adjusted in response gives a founder something concrete to point to later, rather than a general sense that "we tested it under noisy conditions."
+7. **Recruit testers who aren't the founder, ideally people unfamiliar with the exact script.** A founder testing their own product already knows the expected flow and unconsciously speaks clearly toward it; someone encountering the flow for the first time, without knowing exactly what response the system expects, produces far more realistic ambiguity than a founder's own well-rehearsed test calls ever will.
+
+Running through even a subset of this list deliberately, before launch, surfaces the category of failure this article describes far more reliably than continued testing under the same clean conditions a product was originally built and demoed under — conditions that, as Wouter's case shows, can feel thoroughly tested while never actually encountering the specific failure that mattered. None of these seven checks require specialized equipment or a formal usability lab; a handful of real phone calls, placed deliberately under imperfect conditions by someone other than the founder, does most of the work.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Misheard "No" That Confirmed an Order Anyway

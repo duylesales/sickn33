@@ -53,6 +53,22 @@ A generic production-readiness pass checks whether authentication and authorizat
 
 [Get your property management tool reviewed against what this specific vertical actually requires](https://launchstudio.eu/en/#calculator) — the generic checklist is a starting point, not the finish line, for data this layered.
 
+## The Third-Party Integrations This Vertical Almost Always Adds
+
+Beyond the core data architecture and permission questions covered above, a property management AI tool typically integrates with a handful of specialized third-party services most generic SaaS products never touch — each one extending the tool's own risk surface in a way that deserves specific, deliberate evaluation rather than the same casual integration treatment a founder might apply to a less sensitive third-party service elsewhere in the product.
+
+**Tenant screening and background check providers.** Verifying a prospective tenant's credit history, rental history, or background typically means sending that person's identity and financial information to a third-party screening service and receiving a sensitive report back. Worth checking specifically: does the provider retain a copy of the report and the underlying identity data on its own servers, and for how long; is consent captured in a way that would hold up if a tenant later disputed having agreed to the check; does the integration request only the specific data fields the screening actually requires, rather than broader access by default.
+
+**E-signature services for lease agreements.** A signed lease is a legally significant document, and the e-signature provider handling it becomes a genuine dependency for something with real legal weight — worth confirming the provider's own audit trail is legally sufficient in the jurisdictions you operate in, and that signed documents are retrievable independently of your own database in case your own systems and the provider's ever need to be reconciled after a dispute.
+
+**Rent payment processors.** This overlaps with general payment-processing guidance covered elsewhere, but property management specifically often involves recurring, scheduled rent payments alongside one-time fees like deposits or late charges — worth confirming the processor handles recurring billing failures (an expired card, insufficient funds) with clear, distinguishable status rather than treating every failure identically, since a landlord needs to know specifically why a payment failed, not just that it did.
+
+**Maintenance and vendor coordination tools.** When maintenance requests route to external contractors through a connected scheduling or communication tool, that integration becomes another path by which a contractor's access could extend further than intended — the same layered-permission discipline covered above needs to extend to whatever the maintenance coordination integration actually exposes to an external party, not just to the core product's own interface.
+
+**Property listing syndication services.** Tools that automatically publish listings to external rental marketplaces are sending property details, and sometimes indirectly identifiable information about current occupants, to platforms outside your own control — worth a specific check on exactly what data gets included in a syndicated listing versus what should stay internal.
+
+The common thread across all five: each integration is a point where sensitive data leaves your own system and becomes, in part, someone else's responsibility to protect — a responsibility a founder can't verify by assumption, only by actually checking what each specific provider does with the data once it's received. A property management tool with a genuinely hardened core but a loosely-vetted screening or e-signature integration still carries real exposure, just relocated to a boundary that's easy to overlook because it feels like someone else's problem once the data has left your own database.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Maintenance Contractor Who Could See Everything

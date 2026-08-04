@@ -53,6 +53,24 @@ Founders building their own product with AI tools are already fluent, through di
 
 [Get help evaluating a security vendor's AI claims before you sign the contract](https://launchstudio.eu/en/#contact) — the same scrutiny you'd want applied to your own product's claims applies here too.
 
+## Red Flags Worth Noticing Before You Even Ask a Question
+
+The direct questions covered above are the most reliable way to evaluate a specific claim, but a vendor's pitch often signals whether those questions are worth asking in the first place, well before a founder gets to the technical detail. A few patterns are worth noticing on their own.
+
+**The pitch leads with the word "AI" and struggles to get more specific from there.** A vendor with a genuinely capable detection mechanism can usually describe, at least at a reasonably concrete level, what specific category of threat or anomaly their system catches. A pitch that keeps returning to "AI-powered" as the answer to increasingly specific questions, without ever landing on a concrete mechanism, is a pattern worth noticing rather than dismissing as simply a non-technical salesperson.
+
+**No willingness to name a false-positive rate, even roughly.** Every detection system, AI-based or not, makes tradeoffs between catching real threats and generating noise. A vendor unwilling to discuss this tradeoff at all, even in approximate terms, is either withholding an unflattering number or genuinely doesn't have one to give, and neither case reflects well on the underlying claim.
+
+**Pricing pegged to the AI branding rather than to measurable capability.** A meaningful price premium specifically attributed to "the AI" rather than to a concrete capability difference — faster detection, lower false-positive rate, coverage of a threat category a traditional tool misses — is worth pressing on directly, since the premium should track a specific, demonstrable advantage rather than the presence of the word itself.
+
+**Reluctance to provide a technical reference or a concrete case study.** A vendor confident in a genuine capability is typically willing to point to a specific example of it working, even in general terms that protect a client's confidentiality. Vague deflection specifically around this request — as opposed to a reasonable confidentiality-driven limitation — is informative on its own.
+
+**Urgency language that discourages a careful evaluation.** Legitimate security vendors understand that a founder evaluating a tool meant to protect their infrastructure should take the time to actually evaluate it properly. Pressure to sign quickly, framed around a limited-time offer or an urgent threat landscape, is a sales tactic worth recognizing as separate from the actual merits of the product being pitched.
+
+**No mention of what happens when the AI component is wrong.** Every detection system produces false positives and, less often, false negatives. A vendor pitch that only describes success cases, with no acknowledgment of failure modes or how the system handles them, is describing an idealized version of the product rather than the real one a founder would actually be operating.
+
+None of these signals are individually disqualifying — a legitimate vendor might reasonably decline a specific reference for confidentiality reasons, for instance. Together, though, a pitch showing several of these patterns at once is worth the same direct, specific questioning covered above before any contract gets signed, regardless of how polished or confident the overall presentation feels.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Security Vendor Whose AI Claim Didn't Hold Up

@@ -57,6 +57,22 @@ A founder who delegates entirely at launch isn't committed to that choice indefi
 
 [Figure out which parts are worth learning and which are worth delegating](https://launchstudio.eu/en/#contact) — the right mix is more nuanced than an all-or-nothing choice.
 
+## A Focused Few Hours' Worth of Learning: What to Actually Cover, In Order
+
+"A few focused hours" is the right scope for the vocabulary and diagnostic path described above, but "a few hours" without a specific order tends to turn into scattered browsing rather than a genuinely useful foundation. A rough sequence, worked through in order rather than whichever topic happens to sound most interesting first, makes the time considerably more useful.
+
+**First: the frontend-versus-backend authorization distinction.** Before anything else, understanding why a check that happens only in the interface a user sees is fundamentally different from a check enforced on the server handling the actual request is the single concept most other diagnostic questions build on. Everything else in this sequence assumes this distinction already makes sense.
+
+**Second: what "secrets" actually refers to, and why they end up exposed.** Understanding that API keys, database credentials, and similar values need to live outside the actual code, and the specific, common way they end up in a public repository anyway — an early commit nobody thought to check — turns "have you handled secrets properly" from an abstract question into one a founder can ask with genuine specificity.
+
+**Third: what a structured error path looks like versus a generic one.** A rough sense of the difference between code that handles a payment failure, an AI provider timeout, or a malformed response specifically, versus code that catches every failure the same generic way, equips a founder to ask a pointed question about a specific integration rather than a vague one about "error handling in general."
+
+**Fourth: the specific language for asking about testing beyond the happy path.** Understanding what "concurrent users" and "adversarial testing" actually mean in practice — not the happy-path testing a founder naturally does themselves — gives vocabulary for a question a founder would otherwise not know how to ask at all.
+
+**Fifth, and only after the first four: a general sense of what a genuine technical review actually produces.** Knowing what specific, verifiable findings look like, versus vague reassurance, is the piece that lets a founder evaluate whether delegated work was actually done well, which is why it comes last — it's most useful once the first four pieces give it something concrete to apply to.
+
+Working through these five in order, rather than jumping to whichever sounds most urgent, builds each concept on the one before it, which is closer to how the vocabulary functions in an actual technical conversation — a founder who understands the authorization distinction first finds the secrets and error-handling questions considerably easier to grasp than one who started somewhere in the middle of the list.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Finding the Right Middle Ground

@@ -57,6 +57,22 @@ Checking your specific AI provider's documented rate limits against a realistic 
 
 [Find out if your product's reliability depends on a limit you've never actually checked](https://launchstudio.eu/en/#calculator) — this constraint sits upstream of your own rate limiting entirely.
 
+## Building a Genuine Fallback: What Multi-Provider Redundancy Actually Requires
+
+The architectural fix described above mentions a secondary fallback path for genuinely critical functionality without spelling out what that actually involves. It's worth being specific about this, because "just add a second provider" undersells both the real value and the real complexity of doing it properly — a half-implemented fallback can create a false sense of security without actually delivering the resilience it appears to promise.
+
+**Not every AI-dependent feature is worth building a fallback for.** A genuine multi-provider fallback adds real, ongoing complexity — more code paths to maintain, more behavior to test, sometimes meaningfully different output quality between providers for the same task. This investment makes sense specifically for functionality where an outage or rate-limit failure would be seriously costly, not as a default applied uniformly across every AI-dependent feature a product has.
+
+**Prompt compatibility across providers is rarely a drop-in swap.** Different providers, and even different models from the same provider, respond differently to the same prompt, meaning a genuine fallback path usually needs its own tested, provider-specific prompt rather than assuming the primary provider's prompt will produce comparable results elsewhere. Skipping this step and simply pointing the same prompt at a different provider during an outage risks a fallback that technically responds but produces meaningfully worse output than a customer would reasonably expect.
+
+**The fallback needs its own monitoring, or it becomes invisible technical debt.** A fallback path that only gets exercised during an actual primary-provider outage can silently break — a changed API, an expired key, a deprecated model — without anyone noticing, since it simply never runs under normal conditions. Periodic, deliberate testing of the fallback path itself, not just the primary path, is part of what keeps it genuinely functional rather than a false sense of protection sitting untested until the exact moment it's needed.
+
+**Cost and latency trade-offs deserve an honest look before committing.** A fallback provider chosen purely for availability, without checking its cost structure and typical response time against the primary provider's, can solve an outage problem while quietly creating a cost or performance problem — worth deciding deliberately rather than discovering it only after the fallback has already activated during a real incident.
+
+**A well-designed fallback still needs the queuing and messaging described above.** Multi-provider redundancy reduces how often a customer-facing failure happens; it doesn't eliminate the value of graceful queuing and honest status messaging for the moments when even the fallback is exhausted or a switch between providers takes a few seconds to complete — the two approaches are complementary, not substitutes for each other.
+
+For most early-stage products, the queuing and degradation logic described above delivers most of the practical resilience benefit at a fraction of the complexity a genuine multi-provider fallback requires — worth treating as the default first investment, with multi-provider redundancy reserved specifically for functionality where the consequence of an outage is severe enough to justify the added ongoing complexity.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Product That Failed at Its Busiest Moment

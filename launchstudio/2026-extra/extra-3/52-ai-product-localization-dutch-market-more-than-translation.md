@@ -57,6 +57,22 @@ Given the Netherlands and broader Benelux focus central to much of the AI-native
 
 [Get your product checked against what Dutch users actually expect, not just translated text](https://launchstudio.eu/en/#calculator) — genuine localization goes further than accurate translation alone.
 
+## Other Dutch-Market Details Easy to Miss Beyond Payment and Tone
+
+iDEAL support and formality register, covered above, are the two gaps that surface most visibly and most often. A handful of quieter, equally specific Dutch-market expectations tend to go unaddressed even in products that have already gotten the payment method and tone right, simply because they're less immediately visible in day-to-day product use than a missing payment option.
+
+**Invoice and receipt formatting that Dutch business customers specifically expect.** A Dutch business customer receiving an invoice generally expects to see the vendor's KVK number (Chamber of Commerce registration) and BTW (VAT) number displayed clearly, alongside VAT broken out explicitly rather than folded silently into a single total — a formatting expectation distinct from simply translating "invoice" into "factuur," and one that AI-generated invoicing templates, built without this specific context, frequently miss entirely.
+
+**A visible, findable business registration, not just a translated "About" page.** Dutch consumers and business buyers alike tend to trust a company more readily when its KVK number and registered business address are easy to find, typically in a footer or a dedicated page, rather than absent entirely — a small trust signal that costs little to implement but that a product built quickly, without specific attention to Dutch buyer expectations, tends to skip.
+
+**Standard consumer protections framed explicitly, not just technically honored.** EU consumer protection law generally grants online buyers a standard right to withdraw from a purchase within a defined window (herroepingsrecht) — a right that applies regardless of whether a product's terms mention it, but that Dutch consumers specifically expect to see stated clearly and explicitly, rather than left implicit and merely technically compliant somewhere in an unread terms document.
+
+**Customer support channel expectations that skew differently than in other markets.** Dutch consumers and small businesses often expect a genuine way to reach a real person — email at minimum, sometimes a phone number — rather than relying entirely on a chatbot or a contact form with no visible response-time expectation; a support experience that feels adequate to a founder used to different market norms can read as evasive or under-resourced to a Dutch customer specifically expecting more direct access.
+
+**Address and postal code formatting that a generic international form doesn't handle well.** Dutch addresses follow a specific structure — postal code format, house number and addition (like "3A") as a distinct field from the street name — that a generic, internationally-templated address form built without this specific structure in mind can handle clumsily, creating small but repeated friction at exactly the moment a Dutch customer is entering their own address.
+
+None of these individually is dramatic, but together they form the same pattern as the payment and tone gaps covered above: technically functional, genuinely translated, and still recognizably not built with a specific, well-understood Dutch buyer in mind — a gap that closes with deliberate attention to these specific details, not with more general polish applied evenly across the whole product.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Fully Translated Interface With No iDEAL Support

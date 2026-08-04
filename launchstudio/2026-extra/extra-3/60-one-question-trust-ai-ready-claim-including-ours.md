@@ -57,6 +57,22 @@ Manifera's 11+ years of engineering experience, its work with clients including 
 
 [Ask us the specific questions this series has taught you to ask](https://launchstudio.eu/en/#contact) — apply the standard to us the same way you'd apply it to anyone else.
 
+## A Translation Guide: Vague Claim Versus Checkable Claim
+
+The diagnostic this series keeps returning to is simple to state and, in the moment, surprisingly easy to forget when a confident-sounding phrase is delivered smoothly by someone who clearly knows what they're talking about. A side-by-side comparison, across the categories this series has actually covered, makes the distinction concrete enough to apply on the spot, including in a conversation with LaunchStudio itself.
+
+**On security.** Vague: "Your data is secure with us." Checkable: "Authentication is enforced server-side and independently verified by attempting an unauthorized request directly against the API; secrets are stored in environment variables, never in source control, and a scan confirming this was run before launch." The second version names a method, not just a conclusion.
+
+**On testing.** Vague: "We test everything thoroughly before it ships." Checkable: "Here are the specific flows we tested, the concurrent and adversarial conditions we checked each one against, and the two issues we found and fixed." A claim about thoroughness is only as good as the list of what was actually tried.
+
+**On uptime.** Vague: "We guarantee high availability." Checkable: "Here's our actual uptime figure, how we calculated it, what our AI provider's own historical reliability caps that figure at, and what happens if we miss it." A number without a stated method behind it is closer to a slogan than a commitment.
+
+**On support.** Vague: "We're here for you after launch." Checkable: "Here's the specific response time commitment, what's included versus billed separately, and how you reach us if the person you usually work with is unavailable." Availability described in feeling rather than in specific terms is hard to hold anyone to later.
+
+**On pricing.** Vague: "Transparent, fair pricing." Checkable: "Here's exactly what's included in this package, what falls outside it, and what a specific additional request would cost before we start it." Transparency is a property of the actual numbers and scope on offer, not a word attached to them.
+
+The pattern across all five is the same one this series has named repeatedly: a checkable claim survives the follow-up question "how would I verify that," and a vague one doesn't. Running any provider's language — including this one's — through that specific test, category by category, is a more reliable filter than judging how confident or polished the delivery sounds.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Applying the Standard to LaunchStudio Itself

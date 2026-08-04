@@ -57,6 +57,20 @@ Retrofitting staged information disclosure or asymmetric access rules onto an al
 
 [Get your marketplace's trust model reviewed before both sides expect something different](https://launchstudio.eu/en/#calculator) — this is a different discipline than typical single-sided SaaS access control.
 
+## A Checklist for Auditing Your Marketplace's Disclosure Rules
+
+Most two-sided marketplace founders never sit down and deliberately list every point where information passes between buyer and seller — it accumulates feature by feature, each individually reasonable, until nobody can describe the full disclosure model from memory. A dedicated audit, run once and revisited whenever a new feature touches messaging or matching, catches what accumulates unnoticed otherwise.
+
+1. **List every point where one side's data becomes visible to the other, in order.** Contact details, pricing, past transaction history, review content — map the actual sequence of what each side sees and when, rather than relying on a general sense that "it's roughly staged correctly."
+2. **For each disclosure point, ask whether it's timed to protect the platform's own business model, not just user convenience.** Contact information released before a transaction is confirmed is the clearest version of this, but pricing details, availability, or capacity information can carry similar circumvention risk depending on your specific marketplace.
+3. **Check whether review or rating visibility can be gamed by seeing the other side's submission first.** If either party can view the other's review before submitting their own, a retaliatory or reciprocal pattern becomes possible in a way that undermines the reviews' actual usefulness to future users on either side.
+4. **Confirm messaging between buyer and seller is actually monitored or filtered for off-platform contact attempts, not just structurally delayed.** A staged disclosure model helps, but users on either side who are motivated enough will simply write a phone number or email address into a chat message — worth deciding deliberately whether and how your platform detects and discourages this, rather than assuming the disclosure timing alone solves it.
+5. **Verify dispute and refund information is shared symmetrically, not favoring whichever side initiated the transaction.** A marketplace resolving a dispute needs both sides to trust the process is neutral; asymmetric access to dispute-relevant information — who said what, when — can quietly undermine that trust even when the actual resolution is fair.
+6. **Check whether your AI matching or ranking logic's outputs reveal more reasoning than either side should see.** Beyond the general gaming risk covered elsewhere in this article, verify specifically whether a support conversation, an error message, or a debug log could leak ranking rationale to a user who asks the right question, even if the main interface doesn't expose it directly.
+7. **Confirm the audit gets repeated whenever messaging, matching, or review features change.** Priya's case shows how a single, seemingly reasonable design decision — full contact disclosure at match time — can undermine a business model quietly for months before anyone connects the pattern to its actual cause; a disclosure model that was correct at launch doesn't stay correct automatically as features are added around it.
+
+None of these seven checks require deep security expertise to run — they require someone willing to actually trace what each side sees, in order, rather than trusting that reasonable-sounding individual decisions add up to a coherent, business-model-protecting whole.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Marketplace Where Sellers Kept Getting Cut Out

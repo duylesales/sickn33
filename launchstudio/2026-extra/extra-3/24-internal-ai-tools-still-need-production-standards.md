@@ -57,6 +57,18 @@ Internal tools don't need the exact same priority or urgency as customer-facing 
 
 [Get your internal tool reviewed before it quietly outgrows its original assumptions](https://launchstudio.eu/en/#contact) — "just for the team" describes an audience, not a risk level.
 
+## What "Internal Only" Should Actually Mean in Your Access Control
+
+"Internal only" tends to function as a single, undifferentiated label — either the whole team can access a tool, or the idea of restricting it further never comes up at all. A more useful internal standard breaks that single label into three specific, checkable practices, each addressing a different piece of the risk this article describes.
+
+**A named, specific owner for each internal tool, not an assumed one.** Internal tools frequently exist without anyone specifically responsible for their access list, their data scope, or their periodic review — everyone assumes someone else is tracking it, and often nobody actually is. Naming one person as the specific owner of each internal tool's access and scope, even informally, is a small step that closes a surprisingly common gap: the tool nobody is quite sure who's supposed to be watching.
+
+**A basic record of who has access and why, even a simple one.** This doesn't require an enterprise-grade audit system — a maintained list mapping who currently has access to a given internal tool, and the reason, is often enough to catch the departed-contractor or role-changed-employee gap covered elsewhere in this article, simply by making the current access list something a founder can actually look at rather than something that exists only implicitly in whoever remembers to remove access when someone leaves.
+
+**A trigger, not just a calendar date, for when a review actually happens.** Periodic reassessment, covered above as a general category, tends to slip in practice because "periodic" rarely gets attached to anything concrete. Tying a review specifically to events that are easy to notice when they happen — a new hire joining, a contractor's engagement ending, the tool gaining a feature that touches new data — catches the drift closer to when it actually occurs, exactly the kind of multi-month, feature-by-feature scope creep that happened in Femke's case, rather than waiting for a scheduled date that's easy to postpone once it arrives.
+
+Naming an owner and keeping a basic access record don't require a dedicated security function or significant tooling investment — they require treating an internal tool's access as a deliberate decision made once and revisited when something changes, rather than a default that was never actually decided on at all.
+
 ## Real example
 
 ### An AI-Native Founder in Action: An Internal Dashboard That Outgrew Its Original Scope

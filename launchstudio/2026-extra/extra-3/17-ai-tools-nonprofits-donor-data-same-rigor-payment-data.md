@@ -57,6 +57,22 @@ The mission-first instinct that makes nonprofit founders reluctant to spend on i
 
 [Get your nonprofit's AI tool reviewed with the rigor its data actually deserves](https://launchstudio.eu/en/#contact) — mission-first doesn't mean security-last.
 
+## Where to Start on a Tight Budget: A Priority Order
+
+A nonprofit founder convinced that donor and beneficiary data deserves real investment still faces the practical question of where limited funds go first. Not every gap covered above carries equal urgency, and a rough priority order helps direct a constrained budget toward the consequences that matter most, rather than spreading a small amount of investment thinly across everything at once.
+
+**First: donor payment data handling.** If your tool processes donations directly rather than routing entirely through an established third-party donation platform, the same webhook verification, idempotency, and authentication rigor covered throughout broader payment guidance belongs at the top of the list — this is the category most directly comparable to commercial payment data, and the category where a reputable, established third-party donation processor can often reduce your own exposure considerably by handling the highest-risk parts of the flow for you.
+
+**Second: access segmentation for beneficiary data, if your tool handles it.** Where beneficiary records include genuinely sensitive circumstances, restricting visibility to the specific people who actually need it — as opposed to every volunteer or staff member with a login — is typically achievable without a large engineering investment, since it's often a matter of adding role distinctions to an authorization layer that already exists rather than building new infrastructure from scratch.
+
+**Third: basic authentication hardening.** Confirming that authorization checks happen server-side rather than relying on frontend assumptions, and that passwords and sessions are handled with baseline security practice, protects everything else built on top of it — a foundational layer worth confirming even when budget doesn't stretch to a full review of every other category.
+
+**Fourth: a plan for what happens if something goes wrong, even a simple one.** A short, concrete incident response plan — who gets notified, what gets communicated to donors and beneficiaries, how quickly — costs little to create and meaningfully changes how a genuine incident affects donor trust, since a nonprofit that responds quickly and transparently tends to retain far more donor confidence than one caught without any plan at all.
+
+**Lower priority, but not zero: everything else covered throughout broader production-readiness guidance.** General code quality, less-sensitive feature hardening, and non-critical infrastructure concerns still matter, but they reasonably come after the categories above for an organization genuinely constrained on budget, since the consequence of a gap here is typically lower than a gap in payment handling or beneficiary data access.
+
+This ordering isn't a suggestion to ignore anything permanently — it's a way to sequence a limited budget so the highest-consequence gaps close first, with everything else following as resources allow. A nonprofit that closes the first two categories on this list, even with nothing left over for the rest immediately, has addressed the specific gaps most likely to produce a genuine trust-damaging incident, which is a meaningfully different position than having spent the same budget spread thinly and evenly across every category at once.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Beneficiary List Visible to the Wrong Volunteers

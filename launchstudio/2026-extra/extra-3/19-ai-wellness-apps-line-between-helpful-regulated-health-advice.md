@@ -57,6 +57,24 @@ This isn't a call to avoid personalization or retreat to purely generic content 
 
 [Get clarity on where your wellness product's output actually sits](https://launchstudio.eu/en/#contact) — the line is real, and it's rarely where founders initially assume it is.
 
+## A Self-Diagnostic: Five Questions to Locate Your Product on the Gradient
+
+Since the line described above isn't a single bright rule, a founder benefits more from a structured self-check than from a yes-or-no test. These five questions, considered honestly and specifically about your own product's actual output, give a reasonably clear read on where you currently sit — and which direction any drift over time has been moving.
+
+**1. Does the product ask for individual health information to personalize its output?** Injury history, existing conditions, medications, reported symptoms — any of these feeding into personalized recommendations pushes toward the more sensitive end of the gradient. A product working only from general goals (weight, activity level, preferred workout style) sits further from this line by default.
+
+**2. Applying the suggestion-versus-directive distinction covered above, when did you last actually re-read a sample of real output rather than the original prompt design?** The gap between how a product was designed to phrase things and how it's actually phrasing them in practice tends to widen quietly over successive prompt tweaks, model updates, and edge cases nobody specifically reviewed — a founder who checked this distinction once at launch and never again is often surprised by what a fresh, honest read of current output actually shows.
+
+**3. Could a user plausibly treat this output as a substitute for seeing a professional, in a realistic scenario?** Not a hypothetical extreme case, but a genuinely plausible one — a user with mild, ambiguous symptoms who might reasonably decide the app's guidance is sufficient rather than booking an appointment. The more plausible that scenario, the more the product's framing and disclaimers matter.
+
+**4. Does the product explicitly and visibly point toward professional consultation for anything beyond general guidance?** A clear, unavoidable prompt to consult a relevant professional — not buried in terms of service, but present at the point where personalized output actually appears — meaningfully changes the risk profile of otherwise-identical underlying recommendations.
+
+**5. Has the output's language drifted since it was first written, without a deliberate re-review?** Product copy and AI-generated output phrasing both tend to evolve gradually through iteration, feature additions, and prompt tuning aimed at sounding more helpful — exactly the kind of drift that catches founders off guard, since nobody deliberately checked whether the language had moved further toward directive, medical-sounding phrasing than originally intended.
+
+A product answering toward the lower-risk end of all five questions — general inputs, considered rather than directive phrasing, low plausibility of substituting for professional care, clear consultation prompts, and no unreviewed drift — sits comfortably in general wellness territory. A product answering toward the higher-risk end of several questions at once isn't necessarily doing anything wrong, but genuinely warrants the kind of deliberate, specific review this article describes, rather than an assumption that "it's just a fitness app" settles the question on its own.
+
+Running through these five questions takes a few minutes and requires no legal or medical background — just an honest, specific look at what your product's actual output says, to whom, based on what input, phrased in what way. The founders who get caught off guard are rarely the ones who considered these questions and got the answer wrong; they're the ones who never specifically asked.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Recommendations That Read More Medical Than Intended

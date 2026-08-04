@@ -55,6 +55,22 @@ Functional testing after a tool switch confirms the product still does what it's
 
 [Get your mixed-tool codebase checked for consistency, not just functionality](https://launchstudio.eu/en/#calculator) — a tool switch that "still works" hasn't necessarily been verified for what actually changed underneath.
 
+## Self-Test: Signs Your Codebase Has Silently Diverged After a Tool Switch
+
+A founder doesn't need to read code to notice several of the warning signs that a tool switch left behind genuine inconsistency rather than a clean transition. These questions work as a first-pass self-test, even for a non-technical founder, before bringing in a technical reviewer to confirm or resolve what they surface.
+
+**Do different parts of the product visually or behaviorally feel like they came from different hands?** Two form validation styles, two different loading-state patterns, two distinct approaches to confirming a destructive action — none of these are bugs exactly, but a founder who built or closely directed the product often has enough intuitive feel for it to notice when a newer section behaves subtly differently from an older one, even without being able to name why.
+
+**Did you ever ask the new tool to "just add this feature" without pointing it at how the existing codebase already handles similar things?** A prompt that describes the desired feature in isolation, without explicit reference to the existing pattern it should match, gives the new tool every reason to solve the problem its own default way — which is precisely how mismatched patterns enter a codebase, one convenient shortcut at a time.
+
+**Has anyone actually compared how authentication, permissions, or payment logic look in the old sections versus the new ones, side by side?** This is the highest-stakes version of the inconsistency risk, and it's specifically the one a founder's own intuitive sense of "does this feel consistent" is least likely to catch, since security-relevant code rarely has an obviously different look or feel even when its underlying logic diverges meaningfully.
+
+**Did the switch happen because the original tool struggled with something specific — and did that specific struggle ever get revisited in the old code?** A tool switch prompted by a genuine limitation often means the newer sections handle that specific concern better than the older ones do, leaving a known, named gap sitting in the original code that the switch was partly meant to solve but never actually touched.
+
+**Is there a list anywhere of what packages or libraries each tool introduced?** If the answer is no, that's itself the signal worth acting on — not because duplication is guaranteed, but because nobody currently has visibility into whether it happened, which is the actual gap this self-test is trying to surface.
+
+A "yes, this feels consistent" answer to all five isn't proof nothing is wrong — the security-pattern question in particular usually needs a technical reviewer to answer with confidence — but a "no" or "not sure" to any of them is a concrete, specific reason to have that review happen before assuming the switch went cleanly.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Different Authentication Patterns in One Product

@@ -57,6 +57,20 @@ A demo is, by definition, a single controlled run-through, usually by the person
 
 [Get your app tested against the inputs your own testing never included](https://launchstudio.eu/en/#calculator) — the bugs that matter most are rarely the ones you'd think to try yourself, which is exactly why they're worth someone else specifically looking for.
 
+## A Ten-Minute Pressure Test You Can Run Yourself Before Launch
+
+You don't need to be technical to go looking for the four bug patterns covered above — you just need to deliberately do the things your own testing never happened to do, because you built the product and therefore already know how it's "supposed" to be used, in a way a real user simply doesn't. A founder can run this pressure test personally, in about ten minutes, before ever asking an engineer to look at it:
+
+1. **Copy a number from somewhere messy and paste it in, instead of typing it clean.** Copy an amount directly out of a spreadsheet, a bank statement, or an invoice PDF — anywhere it's likely to carry a currency symbol, a thousands separator, or trailing whitespace — and paste it into a field your product expects to be a clean number. This is precisely the kind of input a founder's own test data never included, because founders type test numbers cleanly by hand.
+2. **Submit a form twice, fast.** Double-click the submit button, or click it, then click again before the page has visibly responded. If the action involves creating a record or charging anything, check afterward whether it happened once or twice.
+3. **Leave every optional field blank and submit anyway.** Then check what actually happened to the record that was created — did the missing fields get a sensible default, or did something downstream quietly assume a value that was never actually there.
+4. **Fill a list to exactly the boundary of a page or limit, then add one more.** If a list displays twenty items per page, add exactly twenty, then twenty-one, and check that the last item on the first page and the first item on the second didn't disappear or duplicate in the process.
+5. **Check a date or deadline from a different timezone.** Change your device's timezone setting temporarily, or ask a friend in a different one to check, and compare what the same event or deadline shows on both.
+6. **Paste in a much longer piece of text than you'd ever normally type.** A full paragraph into a field you tested with a short phrase, to see whether it's truncated silently, rejected with an unclear error, or simply breaks the layout around it.
+7. **Try an action from two browser tabs logged in as the same user at once.** Update the same record in both, submit both, and see which one actually wins — and whether the other one's changes simply vanished without any indication that happened.
+
+None of this requires reading code or understanding what's happening underneath — it just requires deliberately trying the specific things your own careful, clean testing never happened to include. Anything that breaks during this pass is worth a closer, more technical look before a real customer finds it first; anything that holds up is one less category of surprise waiting on the other side of launch.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Total That Was Quietly Wrong for Months

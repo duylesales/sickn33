@@ -61,6 +61,22 @@ This specific check — verifying a suggestion's currency at the moment of adopt
 
 [Get your AI tool's suggested dependencies checked against what's actually current](https://launchstudio.eu/en/#calculator) — a confident recommendation and a current one aren't automatically the same claim.
 
+## Not All Deprecation Warnings Mean the Same Thing: A Framework for What to Fix First
+
+Once a founder has checked and found that an AI-suggested dependency is actually deprecated, a second, equally practical question follows immediately: does this need fixing right now, or can it reasonably wait. Not every deprecation carries the same urgency, and treating all of them as equally critical either causes needless panic over a low-stakes finding or, worse, trains a founder to stop taking deprecation warnings seriously at all. A rough framework, based on two independent factors, makes the actual priority considerably clearer.
+
+**Factor one: how exposed is the deprecated package to real risk.** A deprecated package handling authentication, payment processing, or direct external input has a meaningfully higher consequence if a future vulnerability goes unpatched than a deprecated package handling, say, internal date formatting or a cosmetic UI animation. The same word — "deprecated" — describes a fundamentally different level of actual risk depending entirely on what the package is doing and what it's exposed to.
+
+**Factor two: how actively is the deprecated package's own ecosystem winding down.** Some deprecated packages are formally deprecated but still receive critical security patches for a defined sunset period; others stopped receiving any updates the moment deprecation was announced. Checking the specific deprecation notice, not just the word "deprecated" itself, reveals which situation you're actually in, since a package with an active, if time-limited, sunset window carries different urgency than one that's already gone fully silent.
+
+**High exposure plus fully abandoned: fix this before anything else, including before launch if you haven't launched yet.** This combination — a package touching sensitive functionality that's already receiving no maintenance at all — is the one genuine "stop and fix this now" category, since both the consequence of a future vulnerability and the odds of one eventually surfacing unpatched are working against you simultaneously.
+
+**High exposure but still in an active sunset window: schedule the replacement, don't panic about the current moment.** A sensitive-area package that's deprecated but still patched for now gives you a real, if bounded, window to plan a proper replacement rather than an emergency one — worth scheduling deliberately rather than either ignoring it or dropping everything else to address it immediately.
+
+**Low exposure regardless of maintenance status: track it, address it during normal maintenance.** A deprecated package in a low-stakes area doesn't need to jump the queue ahead of other, more consequential work — noting it for the next routine dependency pass is a reasonable, proportionate response rather than either ignoring it indefinitely or over-reacting to a genuinely low-risk finding.
+
+This two-factor read is what turns "we found a deprecated package" from a single, undifferentiated alarm into an actual prioritization decision — the same risk-based thinking that should generally govern how any finding gets triaged, rather than treating every deprecation notice, regardless of what it actually touches, as equally urgent.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Recommended Package Already on Its Way Out

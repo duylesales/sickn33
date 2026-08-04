@@ -57,6 +57,22 @@ Constructing a deliberately realistic usage scenario — not your own testing pa
 
 [Get a cost forecast based on real usage patterns, not development testing](https://launchstudio.eu/en/#calculator) — the gap between the two is usually larger than founders expect.
 
+## The Usage Patterns Most Cost Forecasts Miss
+
+Even a forecast built carefully around a realistic usage scenario, as covered above, tends to assume usage grows and behaves the way you expect it to. A specific set of usage patterns consistently blows past even a well-constructed forecast, not because the forecasting method was wrong, but because these patterns don't show up in a "typical customer, typical month" scenario at all — they're edge cases that, at real scale, stop being edge cases and start being a meaningful share of the bill.
+
+**Power users whose usage looks nothing like the median.** Almost every product ends up with a small number of customers using it dramatically more than everyone else — running a feature dozens of times a day instead of the handful your forecast assumed. A forecast built entirely around average or median usage understates total cost specifically because cost scales with the heaviest users, not the typical one, and a small number of genuinely heavy accounts can drive a disproportionate share of the total bill.
+
+**Retry loops that multiply a single user action into many billed requests.** A frontend that automatically retries a failed AI request, or a user who clicks "try again" repeatedly after a slow response, can turn one intended action into three, five, or more billed calls — a pattern that essentially never shows up in a founder's own careful, patient testing but happens constantly in real usage from people who don't wait as long before retrying.
+
+**Prompt chains and multi-step features that cost more than their single visible request suggests.** A feature that looks to a user like one action — "summarize this document" — sometimes involves several actual model calls behind the scenes: an initial pass, a verification step, a formatting step. A forecast built by estimating the cost of "the feature" as a single request undercounts every one of these multi-step features, sometimes significantly.
+
+**Exploratory or abusive usage that a well-behaved test account never generates.** Real users occasionally push a feature far past its intended use — pasting in enormous documents to see what happens, running the same request repeatedly to test consistency, or in rarer cases deliberately probing a system for ways to extract disproportionate value from it. None of this is malicious in most cases, but none of it appears in a founder's own orderly testing either.
+
+**Caching assumptions that don't hold once real, varied input arrives.** A cost model that assumes a meaningful share of requests will hit a cache — because similar inputs recur — tends to overestimate cache hit rates based on a founder's own repetitive testing patterns, then underdeliver once real customers submit genuinely varied input that rarely repeats closely enough to actually cache well.
+
+None of these patterns invalidate the forecasting approach covered above — a realistic usage scenario is still the right starting point. What they add is a specific reason to build in a deliberate margin above that initial estimate, and to treat the first few months of real usage data as a correction step rather than a one-time forecast never revisited again.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Pricing Model Built on the Wrong Number

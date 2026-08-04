@@ -57,6 +57,22 @@ Treating this as standard business continuity planning — the same category of 
 
 [Make sure your product doesn't depend entirely on one person's continued availability](https://launchstudio.eu/en/#contact) — a gap most founding teams never test until it's suddenly, urgently relevant.
 
+## A 20-Minute Continuity Check a Non-Technical Cofounder Can Run This Week
+
+Waiting for an actual emergency to reveal whether this gap exists is exactly the scenario this article argues against. A non-technical cofounder can get a genuine, if rough, answer today, without needing to understand any of the underlying technology, by working through five direct questions.
+
+**Can you log into the hosting account, the domain registrar, and the payment processor right now, yourself, without asking anyone for a password?** Not "could you get access if you asked" — actually, personally, able to log in at this moment. If the honest answer involves someone else's personal email or authenticator app, that's the single most common version of this gap, and the easiest one to name once asked directly.
+
+**If the product went down right now, do you know the first three things to check or the first person to contact, without guessing?** This doesn't require technical knowledge — it requires a written answer existing somewhere you can actually find it, whether that's a status page to check, a support contact to email, or a specific person's number to call, rather than an assumption that you'd "figure it out" under pressure.
+
+**Do you know where the company's credentials and access are actually stored — a password manager you have access to, not one you've heard mentioned?** A shared, properly permissioned credential store is different from credentials existing somewhere in a technical cofounder's personal accounts that happen to work fine as long as that person remains available.
+
+**Is there any existing support or maintenance relationship you could reach independently, or does every technical question currently route through one specific person?** An external support arrangement, even a modest one, is worth more here than it might seem day-to-day, precisely because it's the one fallback that doesn't depend on your own cofounder's availability at all.
+
+**Could you find, right now, any written explanation of how the product actually works operationally — not the code, but what it does and what regularly needs attention?** Plain-language operational documentation doesn't need to be extensive to be useful; it needs to exist somewhere findable, rather than living entirely in one person's head.
+
+A "no" or "not sure" to two or more of these is a specific, concrete reason to treat this as a near-term priority rather than a someday item — not because a crisis is imminent, but because, as covered above, this gap is invisible right up until the moment it very much isn't, and by then there's no time left to build the fallback that should have already existed.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Genuine Gap Discovered During an Unplanned Absence

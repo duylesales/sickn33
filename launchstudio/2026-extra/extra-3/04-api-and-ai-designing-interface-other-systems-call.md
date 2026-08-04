@@ -55,6 +55,20 @@ Most AI-native founders don't plan to expose an API from day one — it typicall
 
 [Get your API ready for people whose code you'll never see](https://launchstudio.eu/en/#calculator) — a different discipline from building your own product's interface, and one that's easy to underestimate until it's tested for real.
 
+## The Reliability Contract You're Implicitly Signing
+
+Versioning, rate limiting, documentation, and scoped authentication — the four categories covered above — are the technical mechanics of exposing a stable API. There's a second, less technical layer sitting on top of them: the moment an external system depends on your API, you've implicitly signed up for a set of ongoing commitments that have less to do with code and more to do with how predictably and honestly you communicate about the thing you're now responsible for keeping stable.
+
+**A status page, even a minimal one.** When your API has an issue, an integrator's first question is whether it's their problem or yours — a simple, honestly-maintained status page answers that question directly, without requiring them to email you and wait, and without you having to personally field the same "is it just me" question from every affected integrator individually during an incident that's already stressful enough.
+
+**A deprecation window you actually commit to and follow.** Announcing a breaking change is only half the commitment — the other half is giving integrators genuine advance notice, consistently, rather than a generous window on the first deprecation and a rushed one on the third because a fix needed to ship quickly. Integrators building real dependencies on your API are trusting the deprecation policy as much as the API itself; breaking that trust once affects how cautiously they treat every future update you ship.
+
+**A support channel specifically for integrators, not folded into general customer support.** A developer debugging an integration issue needs a different kind of response than a customer asking how a feature works — routing both through the same general support queue means technical questions wait behind non-technical ones, or get answered by someone without the context to actually resolve them, either of which erodes confidence in your API faster than the underlying technical issue would have on its own.
+
+**Error responses designed to be actually informative, not just technically correct.** A generic error response is correct in the sense that it signals something failed, but it doesn't tell an external integrator's system what to actually do next — retry, back off, or stop entirely — meaning the same lack of structured error handling covered throughout broader production-readiness guidance matters even more here, since the person reading the error this time is a stranger's code with no other context to fall back on.
+
+**Being honest with yourself about the reliability expectation you're setting, even without a formal SLA.** You don't need a signed service-level agreement to have made an implicit promise — the moment an integrator builds a real dependency on your API, they're trusting it to behave the way it has so far, whether or not that trust was ever formally documented. Knowing, internally, what level of reliability you're actually able to commit to — and communicating it honestly rather than letting an integrator assume more than you can deliver — avoids the specific kind of trust damage that happens when an unstated expectation turns out to have been wrong.
+
 ## Real example
 
 ### An AI-Native Founder in Action: One Integrator's Retry Loop Nearly Took Down Everyone Else

@@ -57,6 +57,20 @@ Once a name survives this lighter, proportionate initial check and a founder is 
 
 [Check your name before you build your brand around it](https://launchstudio.eu/en/#contact) — domain availability and trademark safety are genuinely different questions.
 
+## Four Trademark Risk Categories Founders Consistently Underestimate
+
+The lighter, proportionate check covered above — a database search, a look at adjacent competitors — catches the most obvious conflicts. A handful of specific risk categories tend to slip past that first pass anyway, not because the check was done poorly, but because these categories aren't the first thing most founders think to look for.
+
+**Sound-alike and look-alike names, not just identical ones.** Trademark conflict risk isn't limited to an exact name match — a name that sounds similar when spoken, or that a reasonable customer might visually confuse with an existing mark in the same category, can carry real conflict risk even without being spelled identically. A quick database search for the exact name a founder has in mind can pass cleanly while a genuinely similar-sounding competitor name sits one search away, uncaught simply because the search term itself wasn't broad enough.
+
+**Trademark class and category matter more than founders assume.** Trademarks are typically registered against specific categories of goods and services, meaning the same name can, in principle, coexist for genuinely unrelated categories without conflict — but "unrelated" is doing real work in that sentence, and two products that both plausibly count as software, even in different niches, are often close enough in classification to create genuine risk that a founder assuming "we're in totally different industries" can easily underestimate.
+
+**Established but unregistered use can still create risk.** Trademark protection isn't limited to formally registered marks in every jurisdiction — a competitor with a long-standing, well-established but unregistered use of a similar name in the same space can, depending on the jurisdiction and specifics, still have a legitimate claim, meaning a database search covering only formal registrations doesn't necessarily surface every source of genuine risk.
+
+**International exposure a domestic-only search misses entirely.** A founder searching only their home country's trademark database gets a false sense of completeness if the product has any realistic path to operating in other markets, since a name clear domestically can still conflict with an existing mark in a market the founder plans to expand into later — a gap that only matters if expansion is realistic, but one worth at least considering deliberately rather than assuming a single domestic search covers every market the product might eventually reach.
+
+None of these categories mean the lighter, proportionate check covered above isn't worth doing — it remains the right first step, and it catches the most common and most costly conflicts. What these four categories add is a sense of where that first pass's blind spots tend to sit, so a founder knows specifically what a more formal search, once it's genuinely warranted, is actually checking for beyond what a quick self-service search already covered.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Rebrand Six Months In

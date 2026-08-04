@@ -57,6 +57,20 @@ Blanket advice to "always get a security review immediately" ignores that a genu
 
 [Answer these three questions honestly, then let's talk about what they mean for your specific situation](https://launchstudio.eu/en/#contact) — the right urgency depends on your actual answers, not a universal rule.
 
+## Four Low-Cost Precautions Worth Taking Even If the Answer Is "Not Yet"
+
+A "no" answer to all three questions doesn't mean there's nothing worth doing before revenue, real users, or an external deadline actually arrive — it means the highest-cost interventions can reasonably wait. A handful of low-effort precautions are worth taking regardless of where a prototype currently sits on the three-question framework, precisely because they're cheap now and considerably more expensive to retrofit once an answer flips from no to yes.
+
+**Rotate anything that's ever touched a shared screen, a demo recording, or a public repository.** A founder who's shared their screen in a sales call, posted a screen recording, or made a repository public even briefly has a real, if currently low-stakes, chance that a key or credential was visible somewhere it shouldn't have been. Rotating those specific credentials now, while the consequence of a leaked key is still theoretical, costs minutes. Doing it after real customer data is flowing through the same system costs considerably more, in both effort and actual exposure.
+
+**Keep a written note of what "solo-tested" actually covered.** As development continues, it's easy to lose track of exactly which parts of a product have been tested only by the founder and which, if any, have had a second person genuinely try to use or break them. A simple running note — even a single document listing each feature and whether anyone besides the founder has touched it — turns question two from a vague impression into something a founder can answer accurately and quickly the next time a real user shows up.
+
+**Separate real data from test data structurally, not just by habit.** A founder who occasionally imports a real customer's actual information into a still-solo-tested environment "just to check something" quietly moves question one's answer from no to yes without noticing the shift has happened. Using genuinely separate environments — even something as simple as a distinctly named test account that never touches real data — keeps the honest answer to question one accurate rather than technically false because of an untracked exception.
+
+**Note the earliest plausible date any of the three answers might flip.** A pilot conversation that's "probably a few months out" has a way of closing faster than expected once real interest appears. Rather than waiting for the actual moment a deal or launch date gets confirmed, noting the earliest realistic date any of the three questions might change gives a founder a natural trigger to revisit the framework proactively, rather than discovering after the fact that the shift already happened weeks earlier.
+
+None of these four precautions requires technical depth or meaningful time investment, and none substitutes for an actual review once the three-question framework genuinely points toward "now." What they do is keep a prototype's actual risk profile closer to its perceived one, so that whenever the real trigger does arrive, it arrives as a clean, honest "yes" rather than a messier one complicated by habits that quietly drifted while nobody was watching for it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Watching the Answer Change in Real Time

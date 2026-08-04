@@ -57,6 +57,22 @@ Specifically documenting the reasoning behind non-obvious decisions, known const
 
 [Get the documentation that actually transfers understanding, not just structure](https://launchstudio.eu/en/#contact) — a generated README describes what exists; genuine documentation explains why it exists that way.
 
+## Where to Start: The Codebase Spots Most Likely to Need "Why" Documentation
+
+Once a founder accepts that a generated README doesn't capture reasoning, the practical next question is where to actually start, since documenting the "why" behind literally every line of an AI-generated codebase isn't a realistic or valuable use of anyone's time. A handful of specific spots consistently carry the most risk if their reasoning goes undocumented, and they're worth prioritizing over a more exhaustive, lower-value pass across the entire codebase.
+
+1. **Anything that looks more complicated than the problem seems to require.** Code that takes an unusual, roundabout path to solve what looks like a simple problem is either a mistake or a deliberate workaround for a constraint that isn't visible in the code itself — and a future contributor has no way to tell which without documentation, making this the single highest-value category to document, exactly the pattern that caused the regression covered in this article's real example.
+
+2. **Any place where an obvious "better" approach was deliberately not taken.** If a simpler, more standard pattern exists and wasn't used, someone made that call for a reason — a specific bug it avoided, a compliance requirement, a limitation in a third-party service — and that reason is exactly what's invisible to both an AI tool regenerating the area later and a human contributor encountering it for the first time.
+
+3. **Authentication, authorization, and payment logic, regardless of how straightforward it looks.** These are the areas where an uninformed "cleanup" carries the highest consequence if it quietly removes a deliberate protection, making them worth documenting even when the code itself doesn't look unusual, simply because the cost of an undocumented mistake here is disproportionately high relative to other areas.
+
+4. **Any integration with a third-party service that has known quirks or limitations.** Rate limits, undocumented behavior, specific error codes that need special handling — the kind of hard-won operational knowledge that came from actually working with a specific provider, and that no amount of reading that provider's own documentation would fully substitute for.
+
+5. **Configuration values and environment-specific settings that aren't self-explanatory.** A specific timeout value, a particular retry count, a threshold chosen for a specific reason — numbers that look arbitrary to anyone who wasn't there when they were tuned, and that a future contributor might "helpfully" adjust without understanding what they were originally calibrated against.
+
+A founder or technical lead going through this list doesn't need to document everything in a single sitting — a few sentences added to each genuinely relevant spot as it's encountered, rather than a dedicated documentation sprint, keeps the practice sustainable and ensures the reasoning gets captured while it's still fresh, rather than reconstructed later from memory that's already started to fade.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Contractor Who Undid a Deliberate Fix

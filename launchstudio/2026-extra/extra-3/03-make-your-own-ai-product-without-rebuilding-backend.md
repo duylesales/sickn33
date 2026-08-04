@@ -53,6 +53,22 @@ Founders validating multiple ideas in sequence, or running a small portfolio of 
 
 [Build your foundation once, launch more than once](https://launchstudio.eu/en/#contact) — the parts of your product that aren't the idea don't need to be rebuilt every time the idea changes.
 
+## A Self-Test: Is What You're Reusing a Foundation, or Just a Habit?
+
+Not everything that gets carried over from a first product to a second one qualifies as the kind of reusable, production-grade foundation this article describes. Copying files from an old project into a new one is easy to do and easy to mistake for the same thing — but reuse only pays off the way it's supposed to if what's being reused was actually hardened the first time, not just functional. A founder building a second product can run a quick self-test to tell the difference:
+
+**Was the thing you're reusing ever actually tested against failure, or has it only ever run the happy path?** Authentication that's "worked fine" because nobody's ever specifically tried to break it isn't the same as authentication that's been checked against the adversarial conditions covered throughout broader production-readiness guidance. If your first product's login flow has never been deliberately stress-tested, reusing it doesn't inherit a hardened foundation — it just carries the same untested assumption into a second product.
+
+**Do you actually know why the payment integration is built the way it is, or are you copying it because it's what's there?** A payment flow that handles webhook retries correctly, avoids double-charging on a duplicate confirmation, and fails gracefully when the processor is briefly down represents real, earned hardening. A payment flow that simply "works" under normal conditions and has never been checked against any of that is a different, considerably riskier thing to carry forward unexamined.
+
+**Has the hosting and infrastructure setup been revisited since your first product was genuinely small?** Configuration chosen for an early prototype's modest, predictable traffic doesn't automatically scale to a second product's different usage pattern, even if it's technically capable of running it — reuse without a fresh look at whether the original assumptions still hold is how a second product inherits a first product's growing pains before it's even launched.
+
+**When did the dependencies you're reusing last get checked for known vulnerabilities?** Packages that were reasonable choices when the first product was built can accumulate known issues over time — reusing a dependency list wholesale, without revisiting it, means a second product can launch already carrying a gap the first product didn't have when it was originally built.
+
+**If someone else audited what you're about to reuse, would they find it was actually verified, or just assumed?** This is the real test underneath all four questions above: reuse is genuinely valuable when it carries forward work that was actually checked, and genuinely risky when it carries forward code that merely looks the same as before because nothing about it changed, verification included.
+
+None of this means rebuilding from scratch — it means confirming, once, that what's being reused earned the trust it's about to be given a second time, so the second product's foundation is genuinely inherited rather than just assumed to be fine because the first one shipped without an obvious problem.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Second Product That Launched in a Third of the Time

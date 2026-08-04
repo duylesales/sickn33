@@ -53,6 +53,24 @@ Rather than measuring your own prototype's readiness against how it compares vis
 
 [Get benchmarked against what actually matters, not what a list can see](https://launchstudio.eu/en/#calculator) — polish and production readiness are measured completely differently.
 
+## A Self-Audit: The Categories a Ranking Structurally Can't See
+
+Since comparing your own prototype against a competitor's ranking position doesn't actually tell you anything about production readiness, the more useful move is auditing your own product directly against the specific categories no ranking evaluates. None of these require an outside expert to start checking — they require an honest answer to a direct question, asked of your own product rather than someone else's:
+
+**Authentication and authorization.** Is anything genuinely security-critical in your product checked only in the frontend interface, or is every sensitive action verified independently on the backend, regardless of what the frontend already assumed about who's allowed to do it? A "yes, it's checked in the frontend" answer to the second half of that question is the single most common gap a ranking would never surface.
+
+**Secrets and credential hygiene.** Are your API keys, database credentials, and webhook secrets stored in a proper environment configuration, or does any of it live directly in your code, even in a private repository, even in your version history from an earlier, less careful commit you've since forgotten about?
+
+**External dependency resilience.** If your AI model provider, payment processor, or another core external service went down for an hour right now, what would your product actually do — fail gracefully with a clear message, or fail in a way that confuses or blocks a customer with no explanation at all?
+
+**Data handling and retention.** Could you explain, right now, exactly what happens to a customer's data from the moment they submit it to the moment it's deleted, including every place a copy of it might exist along the way — logs, backups, AI provider retention — or would answering that question honestly require some actual investigation first?
+
+**Documented incident response.** If something did go wrong tonight, is there an actual, written plan for how your team would find out, respond, and communicate about it, or would the first version of that plan get improvised in real time, under pressure, during the incident itself, with decisions made on the fly that a calmer moment would have made differently?
+
+**Uptime honesty.** Do you actually know your product's real uptime over the last few months, measured rather than assumed, or is "it's been fine" standing in for a number nobody has actually checked because nothing dramatic has happened yet to prompt the question?
+
+Answering all six honestly takes considerably less time than the months Tijmen spent chasing visual parity with a ranked competitor — and unlike a ranking position, the answers are entirely within your own control to check, verify, and fix, without needing to guess what's actually happening underneath any other product's polished surface. A founder who can answer all six with specifics, not impressions, has a genuine production-readiness benchmark; one who can't has a short, concrete list of exactly where to look next.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Chasing the Wrong Benchmark for Months

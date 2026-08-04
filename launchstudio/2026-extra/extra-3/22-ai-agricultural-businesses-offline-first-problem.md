@@ -53,6 +53,20 @@ Genuine offline capability isn't something that gets bolted onto an already-buil
 
 [Get your tool built for the connectivity conditions your actual users will face](https://launchstudio.eu/en/#calculator) — most production guidance assumes a connection that agricultural users often simply don't have.
 
+## A Framework for Deciding What Actually Needs to Work Offline
+
+Not every feature in an agricultural AI tool carries the same offline requirement, and treating them all identically — either building everything for full offline capability or assuming nothing needs it — wastes effort in one direction or leaves a genuine gap in the other. A more useful approach sorts functionality into four categories, each with a different, appropriate level of offline investment.
+
+**Core capture functions need to work fully offline, no exceptions.** Anything a user does in the actual field at the moment an observation happens — logging a pest sighting, recording a measurement, noting a treatment applied — belongs in this category. If capturing this data requires a live connection, the tool fails at the exact moment and location it's most needed, which is precisely the failure Gerben's original build ran into. This category gets the full local-first architecture: local storage, deferred sync, no live-connection dependency at all.
+
+**Reference and lookup functions can run on cached, periodically-refreshed data.** Crop guides, treatment references, historical records for a specific field — information a user needs to consult but isn't actively generating in the moment — doesn't need a live connection if it's cached locally and refreshed whenever connectivity is available. The tradeoff is acceptable staleness, not full real-time accuracy, which is a reasonable compromise for reference material in a way it wouldn't be for the AI-generated risk assessment covered elsewhere in this article.
+
+**AI-generated analysis and insights can be deferred, if the deferral is handled honestly.** A pest or disease risk assessment that requires a live model call doesn't need to block the user from continuing to work — it can queue the request, notify the user once a connection is available and the assessment is ready, and be clear in the interface that this specific output is pending rather than silently unavailable. What breaks user trust isn't the delay itself; it's a feature that appears to have failed silently when it's actually just waiting.
+
+**Team coordination and cross-user features are reasonably allowed to require connectivity.** Features that inherently depend on multiple people's data being current relative to each other — shared team dashboards, real-time coordination between field workers — are harder to meaningfully offline-enable without introducing exactly the sync-conflict risk covered elsewhere in this article, and are usually the right place to accept a connectivity requirement rather than force full offline support onto something structurally resistant to it.
+
+Running an existing or planned feature list through these four categories, honestly and specifically, tends to reveal that a genuinely offline-first product needs fewer heroic architectural decisions than it first appears — usually a small, identifiable set of core capture functions needs the real investment, while the rest can reasonably degrade or defer.
+
 ## Real example
 
 ### An AI-Native Founder in Action: An App That Only Worked From the Farmhouse Kitchen

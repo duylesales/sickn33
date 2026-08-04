@@ -57,6 +57,20 @@ Establishing UTC-first storage from the very beginning of a database schema cost
 
 [Get your timestamp handling checked before it becomes a genuine migration problem](https://launchstudio.eu/en/#calculator) — this specific decision is cheap to get right early and expensive to fix later.
 
+## Beyond Storage: Other Time Decisions AI-Generated Code Tends to Skip
+
+UTC-first storage, covered above, is the foundational decision, but it doesn't automatically resolve every time-related question a product actually has to answer. A handful of adjacent decisions get overlooked even in codebases that have correctly adopted UTC storage, each capable of producing the same category of confusing, hard-to-reproduce bug once real usage and real time actually pass.
+
+**Date-only fields quietly treated as full timestamps.** A birthday, a subscription renewal date, a deadline that's meant to represent a specific calendar day rather than a specific moment — stored as a full UTC timestamp, these can shift to the wrong day when converted to a user's local time zone near a date boundary, since a date that's genuinely meant to be timezone-agnostic gets an unintended timezone dependency the moment it's stored as a timestamp rather than a plain date value.
+
+**Recurring events that don't account for a time zone's own rules changing across a recurrence.** A weekly appointment scheduled at "9am every Tuesday" needs to actually mean 9am local time on every future Tuesday, including ones on the other side of a daylight saving transition — a naive implementation that stores a fixed UTC offset for the recurrence, rather than recalculating the correct UTC time for each occurrence based on the user's actual time zone rules, will drift by an hour immediately after the next clock change.
+
+**No stored record of which time zone a user actually intended.** UTC storage answers "what moment did this happen at," not "what time zone should this be displayed in for this specific user." A product serving users across multiple time zones needs to actually store each user's time zone preference somewhere — inferred from their browser at signup, or explicitly set — rather than assuming a single default display time zone is correct for everyone, a gap that's invisible until a second time zone's worth of real users actually shows up.
+
+**Scheduled jobs and reminders anchored to server time rather than the relevant user's time.** An AI-generated background job sending a "reminder at 9am" notification often runs on a schedule defined in the server's own time zone, which may not match any actual user's time zone at all, meaning a reminder meant to arrive at a sensible local hour can land in the middle of the night for users elsewhere — a gap that only surfaces once the product actually has users outside the developer's own time zone.
+
+None of these require a fundamentally different architecture than UTC-first storage already establishes — they require explicitly thinking through, for each specific feature, whether "the moment in time" (UTC) or "the user's local experience of that moment" (their specific time zone, tracked separately) is actually the thing that matters, rather than assuming UTC storage alone has automatically handled every time-related decision the product will ever need to make correctly.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Booking System That Lost an Hour Twice a Year

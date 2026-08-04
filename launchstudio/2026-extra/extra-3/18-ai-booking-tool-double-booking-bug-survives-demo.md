@@ -57,6 +57,24 @@ Because the failure mode produces a genuinely visible, often embarrassing custom
 
 [Get your booking flow tested against the condition your own testing can't reproduce](https://launchstudio.eu/en/#calculator) — this specific bug requires someone else, or something else, to actually find it.
 
+## Other Features That Hide the Same Concurrency Bug
+
+The double-booking failure mode isn't actually specific to booking tools — it's specific to any feature where a limited resource gets checked and then claimed in two separate steps, and a founder who's fixed it in one place in their product would do well to check whether the same underlying pattern exists anywhere else in the same codebase.
+
+**Inventory and stock-level decrements.** An e-commerce or marketplace feature checking "is this item still in stock" before completing a purchase has the exact same structure as a booking availability check — two customers buying the last unit within moments of each other can both succeed under the same check-then-write logic, resulting in a sold item nobody can actually fulfill.
+
+**Single-use discount or promo codes.** A code meant to be redeemed once needs its redemption check and its redemption record to happen as a single atomic operation, or two customers submitting the same code within the same narrow window can both have it applied, at whatever cost that represents to the business issuing it.
+
+**Waitlist promotion when a slot opens up.** A feature that automatically promotes the next person on a waitlist when a spot frees up — a returned ticket, a cancelled reservation — can promote more than one person to the same single opening if the promotion logic isn't made atomic, producing the same over-allocation problem in a different feature's clothing.
+
+**Limited-quantity flash sales or drops.** Any feature selling a capped quantity of something within a compressed time window concentrates exactly the kind of simultaneous-request timing this bug depends on, making flash-sale-style features a higher-risk category for this specific bug than steady, low-traffic purchasing flows.
+
+**Seat or capacity limits on events and classes.** A registration flow enforcing a maximum headcount — a workshop, a class, an event — is structurally identical to the room-booking example covered above, just with a different noun attached to the limited resource being claimed.
+
+The fix, once a founder recognizes the pattern, is the same atomic check-and-write discipline covered above, applied to whichever specific feature is at risk — there's no need to treat each instance as a separate, novel problem once the underlying shape is recognized. What's worth doing deliberately is an inventory pass across your own product, listing every feature where two users could plausibly compete for the same limited thing at the same time, and checking each one specifically rather than assuming that fixing the most obvious instance (the actual booking flow) automatically covered every other place the same structural bug could be hiding.
+
+A product with several of these features and only one of them tested for concurrency has fixed the bug everyone happened to notice, not the underlying pattern that produced it — and the untested instances carry exactly the same risk of quietly surviving every demo until real, simultaneous usage finally finds them.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Guests, One Room, One Very Bad Morning

@@ -61,6 +61,16 @@ None of these five beliefs require sophisticated technical knowledge to actually
 
 [Get the actual answer instead of the reassuring version](https://launchstudio.eu/en/#contact) — these five myths are checkable, and checking is usually less alarming than the myths make delay feel necessary.
 
+## Two More Myths That Almost Made the List
+
+Five myths recur with the most consistency, but two more circulate widely enough to name directly, since both quietly shape decisions the same way the original five do.
+
+**"If my AI tool explains its reasoning, the reasoning must be accurate."** AI coding tools frequently generate a confident, articulate explanation alongside whatever code they produce — a paragraph describing why a particular approach was chosen, why it's secure, why it handles a given edge case. That explanation reads with the same fluency and confidence regardless of whether it's actually correct, because generating a plausible-sounding justification is a different capability from the underlying code actually being right. A founder who reads a confident explanation and treats it as verification has confused two separate things: the tool describing what it did, and someone independently checking whether what it did was actually correct. The explanation is worth reading — it's simply not a substitute for the check.
+
+**"A founder who deeply understands the product doesn't need to separately understand its production gaps."** Founders who've spent months refining exactly what their product should do, down to specific user flows and edge cases in the business logic, sometimes extend that deep, earned confidence to a domain it doesn't actually cover — assuming that because they understand the product this well, they'd also recognize a production-readiness gap if one existed. Product understanding and production-readiness evaluation are genuinely different kinds of expertise; a founder can have complete, well-earned mastery of what their product should do for a user and simultaneously have no way of independently recognizing whether authentication is enforced server-side or a secret is sitting in version history. Neither gap reflects poorly on the founder — it just means product fluency and security fluency are separate skills that happen to both matter, not one skill that automatically produces the other.
+
+What both of these share with the original five is the same underlying shape: a belief that feels reasonable, costs nothing to hold, and quietly substitutes for an actual check that would take more effort to run. Neither requires deep technical background to recognize once named directly — both simply require noticing the moment a comfortable assumption is doing the work an actual verification should be doing instead.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Believing Three of the Five at Once

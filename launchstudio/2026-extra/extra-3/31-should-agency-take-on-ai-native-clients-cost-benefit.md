@@ -53,6 +53,22 @@ Does your agency's existing team have genuine comfort auditing an unfamiliar bac
 
 [Get an honest read on whether this segment fits your agency's actual strengths](https://launchstudio.eu/en/#contact) — the right answer depends on your specific team, not a general trend.
 
+## A Five-Factor Scorecard for Deciding If This Segment Fits Your Agency
+
+The honest question posed above — does your team have genuine comfort auditing an unfamiliar backend — is the right starting point, but a single yes-or-no answer flattens a decision that actually has several independent moving parts. A more granular self-assessment, scored honestly across five specific factors, gives an agency owner a clearer picture than a single gut-check question can.
+
+**1. Existing backend and security depth (the heaviest factor).** Does your team currently include someone who can independently read an unfamiliar codebase and identify whether authorization is enforced server-side, without reaching for an AI tool to explain the concept back to them? A firm yes here does more to determine fit than any of the other four factors combined.
+
+**2. Estimation and pricing process flexibility.** Can your existing project-scoping process actually accommodate "audit an unfamiliar codebase and price the findings," or is it built entirely around estimating new feature work from a blank brief? An agency whose pricing model assumes known scope from day one will need to build a genuinely different estimation muscle, not just apply the old one to a new client type.
+
+**3. Client communication bandwidth for technical findings.** Hardening engagements surface findings a client didn't know existed, sometimes uncomfortable ones about their existing product. Does your team have practice explaining a technical gap to a non-technical client without either underselling the risk or triggering unnecessary panic? This is a distinct skill from explaining a new feature's design choices.
+
+**4. Current pipeline pressure.** Is your agency actively looking to fill capacity with a new client segment, or is this evaluation happening from a position of already being reasonably full? Taking on a segment that requires real learning investment is a meaningfully different decision when done from spare capacity versus when done under pressure to fill a gap quickly, since the latter tends to compress the learning curve in ways that show up later in delivery quality.
+
+**5. Appetite for ongoing, not one-time, learning investment.** AI coding tools and the patterns they produce keep shifting, meaning genuine competency in this segment isn't a single training investment — it requires staying current as the underlying tools change. Does your team have the structural appetite (time, curiosity, someone who enjoys tracking this specifically) for that ongoing cost, or would competency here decay the moment initial training ends?
+
+**Reading the combined score.** A strong yes on factor one, even with weaker answers elsewhere, still points toward this segment being learnable in-house with focused effort. A weak answer on factor one combined with strong answers elsewhere — genuine pricing flexibility, good client communication, available capacity — describes an agency well-suited to the white-label partnership path covered above, since the missing piece is specifically the technical depth a partner supplies. Weak answers across most factors suggest this segment isn't a strategic priority right now, regardless of how visible the trend currently is.
+
 ## Real example
 
 ### An AI-Native Founder in Action: An Agency That Chose Partnership Over In-House Investment

@@ -57,6 +57,22 @@ Periodically re-evaluating your AI feature's actual output quality against your 
 
 [Get an ongoing process for catching model-driven quality drift before customers do](https://launchstudio.eu/en/#calculator) — this isn't a one-time integration, it's an ongoing relationship with a dependency that keeps changing.
 
+## Building a Lightweight Model-Update Response Protocol
+
+The general vigilance covered above — periodic review, watching for provider announcements, treating updates as a trigger for re-verification — is the right instinct, and it's considerably more effective once it's turned into an actual, repeatable process rather than a habit a founder intends to keep up with. A lightweight protocol, built once, does most of the ongoing work automatically.
+
+**Maintain a small reference set of prompts and their expected output.** A handful of representative inputs — the kind of requests your AI feature handles most often — along with a saved record of what good output currently looks like for each one, gives you something concrete to re-run and compare after any model update, rather than relying on a vague sense of whether output "still feels right."
+
+**Pin the model version explicitly wherever your provider allows it.** Many providers let you target a specific model version rather than automatically receiving the latest one, which converts a silent, automatic update into a deliberate, scheduled decision on your own timeline — you still eventually need to move to newer versions as older ones get deprecated, but you control when that re-verification happens instead of discovering it after the fact.
+
+**Where automatic updates can't be avoided, stage the re-verification rather than skipping it.** Some providers apply updates to a model identifier without offering a pinned alternative, which makes the reference-set comparison covered above the primary safeguard — running it proactively on a regular cadence, not only when a customer happens to flag something feels different.
+
+**Keep a rollback plan for prompts, not just for your own code.** If a model update degrades output quality and re-tuning takes time, knowing in advance whether reverting to a previous prompt version (even against the new model) is a viable stopgap — versus needing a fuller re-tuning effort — shortens the gap between noticing drift and actually fixing it.
+
+**Decide in advance who gets told when a meaningful shift is confirmed.** A quality drift that reaches customers before your own team catches it, as in the tone-shift scenario covered below, is worse than one your team catches and communicates about internally first — deciding ahead of time who reviews the reference-set comparison and who has authority to pause or roll back a change removes the ambiguity that otherwise delays a response.
+
+None of this requires sophisticated tooling to start — a saved document with reference prompts and expected outputs, checked on a regular schedule and after any known provider update, covers most of the practical benefit. The goal isn't eliminating the risk of a provider changing the ground underneath you, which isn't fully avoidable — it's making sure your own team notices before your customers do.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Tone Shift Nobody Had Deliberately Chosen

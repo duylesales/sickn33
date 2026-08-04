@@ -57,6 +57,22 @@ Bias testing shares the same core structure as the adversarial testing covered t
 
 [Get your hiring tool tested for the pattern your own use of it would never surface](https://launchstudio.eu/en/#calculator) — a functionally accurate tool and a fair one are different, both necessary claims.
 
+## A Self-Test: Five Questions Before You Trust a Hiring Tool's Fairness
+
+A founder doesn't need a legal background to know whether their hiring tool has actually been checked for bias, or whether "it seems fine" is doing all the work instead. Five direct questions surface the gap honestly, before an enterprise client, a rejected candidate, or a curious journalist asks them first.
+
+**Can you name the last time someone deliberately tried to find a bias pattern, rather than simply not encountering one?** There's a meaningful difference between "nobody has reported a problem" and "someone specifically looked for one and didn't find it." A tool that's never been deliberately tested hasn't passed a fairness check — it simply hasn't failed one yet, in front of anyone paying attention.
+
+**If asked, could you produce anything — a test set, a set of results, a summary — showing what was actually checked?** Not a polished compliance document, just something concrete. A founder who can only describe bias testing in general terms ("we care about this, we think it's fine") hasn't yet done the specific, structured check this article describes; a founder who can point to an actual test set and result, even an informal one, has.
+
+**Does your tool's ranking or scoring logic rely on any input that correlates with a protected characteristic, even indirectly?** Postal code, university name, employment gap length, and graduation year are common examples of inputs that feel neutral on their face but can function as a proxy for exactly the characteristics a fairness check is meant to catch. Listing every input your tool actually uses, and asking honestly whether each one could correlate with something it shouldn't, is a useful exercise independent of running the full structured test.
+
+**Has the check been repeated since the last meaningful change to the underlying model, prompt, or ranking criteria?** A test run once, months before the current version, tells you less than it feels like it does. If the scoring logic has changed since the last check and the check hasn't been rerun, treat the current version as untested regardless of what the last test found.
+
+**If a candidate or a client asked you directly whether your tool has been checked for bias, what would you actually say?** Rehearsing this answer honestly, out loud, is often the fastest way to discover whether the confidence a founder feels about their own tool is backed by anything specific, or whether it's the same kind of comfortable, unverified assumption this entire category tends to produce.
+
+A founder who answers all five honestly and finds real gaps hasn't discovered a crisis — they've discovered exactly what this article argues bias testing is for: surfacing a pattern deliberately, on your own terms, before someone else surfaces it on theirs.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Pattern Nobody Had Deliberately Looked For

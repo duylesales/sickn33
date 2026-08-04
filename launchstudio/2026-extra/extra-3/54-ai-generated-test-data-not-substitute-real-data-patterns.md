@@ -57,6 +57,22 @@ Using AI-generated test data as a genuine improvement during pre-launch developm
 
 [Get your testing data strategy reviewed for what stage your product is actually at](https://launchstudio.eu/en/#calculator) — synthetic data is a genuine improvement, not a permanent substitute for the real thing.
 
+## Five Ways to Get More Out of AI-Generated Test Data Before Real Usage Exists
+
+The limitations covered above don't mean AI-generated test data should be used carelessly during the pre-launch stage where it's still the best available option — they mean it should be used deliberately, with specific techniques that push it closer to representing reality than a single generic prompt asking for "sample data" ever will on its own.
+
+**Feed the AI tool your actual domain knowledge, not a generic request.** Asking for "realistic customer records" produces generically plausible output; asking for records that specifically reflect known patterns in your industry — multiple pets per household for a veterinary tool, irregular income for a freelancer-focused finance tool, shared accounts for a family-oriented product — gives the model something concrete to work from instead of its own default assumptions about what's typical.
+
+**Explicitly request edge cases rather than hoping they appear.** An AI model generating synthetic data defaults toward well-formed, plausible-looking records unless specifically told otherwise. Asking directly for unusually long names, missing optional fields, boundary values (a quantity of zero, a date far in the past or future, a maximum-length text field), and malformed-but-technically-valid input produces a meaningfully different, more useful dataset than a generic request ever will.
+
+**Layer in a small set of manually crafted adversarial cases alongside the generated volume.** AI-generated data is good at variety and volume; it's weaker at genuinely adversarial thinking about how your specific product could be misused or broken. A handful of deliberately hostile records — crafted by a person actually trying to break the product, not generated for plausibility — catches a different category of issue than volume alone surfaces.
+
+**Test boundary and extreme values on purpose, separately from the bulk generated set.** The largest realistic order, the longest realistic session, the maximum number of items a user could plausibly add — these sit at the edges of what an AI model considers "typical" and are worth testing as a deliberate, separate pass rather than hoping they show up organically in a broader generated batch.
+
+**Pull in publicly available reference data for your specific industry where it exists.** Many industries have some form of publicly available sample or reference dataset — even a small one — that reflects genuine, real-world structure rather than generalized plausibility. Blending a small amount of real reference data with AI-generated volume, where available, closes part of the industry-specific-pattern gap covered above without requiring your own product to have any usage history yet.
+
+None of these five techniques requires abandoning AI-generated test data as a starting point — they require treating the initial generic prompt as a first draft rather than a finished testing dataset, the same way a founder would treat a first AI-generated pass at any other part of the product.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Synthetic Data That Missed a Real, Specific Pattern

@@ -61,6 +61,22 @@ A founder with genuinely solid answers describes specifics — a particular audi
 
 [Bring these five questions to your next advisory conversation](https://launchstudio.eu/en/#contact) — they surface something generic diligence questions consistently miss for this specific founder category.
 
+## A Short Self-Test for Advisors: Have You Actually Been Diligencing the Technical Layer?
+
+Before adding the five questions above to a next advisory conversation, it's worth an advisor pausing on a related but different question: has your own advisory practice, up to this point, actually been treating the technical layer as a genuine diligence area, or has it been quietly assumed fine because the product demos well and the founder speaks confidently about it? A short, honest self-test surfaces the answer.
+
+**Can you name one specific technical claim a founder you advise has made, beyond "it works" or "we tested it"?** If every technical update you've received from a founder has been a general reassurance rather than a specific, checkable claim, that's a signal your advisory relationship has been accepting vagueness on this dimension that you likely wouldn't accept on customer acquisition numbers or burn rate.
+
+**Have you ever asked a founder a technical question you didn't already know how to evaluate the answer to?** Sticking only to questions within your own comfort zone is understandable, but it also means an entire category of real risk — the one this content series addresses throughout — has likely never entered your advisory conversations at all, simply because it wasn't a domain you felt equipped to probe.
+
+**Do you know whether the founder's product has ever had an external, adversarial look from anyone besides the founder?** Not a code review from a friend checking that it runs, but someone specifically looking for what would break it. If you don't know the answer to this for a founder you actively advise, it's a reasonable indicator this specific diligence gap has been present in the relationship without either party noticing it as a gap.
+
+**When a founder describes technical progress, do you notice whether the language is specific or general?** Advisors who are highly attuned to vagueness in a founder's customer acquisition claims ("we're getting good traction") sometimes give the exact same vague language a pass when it's about the technical foundation ("the backend is solid"), simply because the second claim feels outside their usual scrutiny zone.
+
+**Would you know what to do next if a founder's answer to any of the five questions above revealed a genuine gap?** Knowing the right question to ask is only half the value; having a sense of where to direct a founder next — toward a technical reviewer, not toward resolving it yourself — is what turns a good question into an actually useful piece of advisory guidance rather than an interesting observation with nowhere to go.
+
+An advisor who answers most of these honestly as "no" hasn't been doing anything wrong exactly — generic startup diligence genuinely wasn't built with this specific gap in mind, since the gap itself is relatively new to how quickly AI-generated prototypes can now reach a convincing demo state. The self-test isn't about assigning blame for a blind spot that was reasonable to have; it's about deciding, now that the blind spot is named, whether to keep advising with it or close it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: An Advisor's Question That Changed the Conversation

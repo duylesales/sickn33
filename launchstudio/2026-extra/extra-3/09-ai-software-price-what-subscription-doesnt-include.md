@@ -55,6 +55,22 @@ A founder building their first product with an AI coding tool has no prior refer
 
 [Get the complete cost picture before you commit to a launch timeline](https://launchstudio.eu/en/#calculator) — the subscription price was never meant to be the whole number.
 
+## A Practical Way to Estimate Your Real First-Year Cost
+
+Knowing the four categories that sit outside the subscription price is useful in the abstract; turning that into an actual number a founder can plan a runway against requires a slightly different exercise. A few practical steps make the estimate considerably more reliable than guessing at a lump sum.
+
+**Separate what's fixed from what's variable before you estimate either.** Production-hardening cost is typically a fixed, quotable number once a scoping conversation has happened — get that number early, even before you're close to launching, since it's the one component that doesn't depend on how many customers you actually get. Infrastructure and AI model API costs are variable and scale with usage, meaning they deserve a range rather than a single number, and the range should be wide enough to cover a genuinely successful launch, not just your current testing volume.
+
+**Model the variable costs at three usage tiers, not one.** Estimate what hosting, database, and AI API costs look like at a low-usage tier (roughly your current testing volume), a realistic early-traction tier (a modest multiple of that), and a genuinely successful tier (an order of magnitude higher). A founder who only budgets against the low-usage tier is the one who gets an unpleasant surprise the month their product actually starts working the way they hoped it would.
+
+**Get the fixed-cost quote before you need it, not after.** Waiting until days before a planned launch to find out what production-hardening actually costs puts a founder in a position where the number has to be accepted regardless of what it turns out to be, simply because the launch date is already fixed. Getting that quote weeks or months earlier, while there's still time to adjust runway or scope, turns the same number into a planning input rather than a crisis.
+
+**Keep the one-time and recurring pieces in separate lines of your runway calculation.** Treating the hardening cost as if it recurs monthly overstates ongoing burn; treating the ongoing operational cost as if it's covered by the one-time hardening spend understates it. Both mistakes are common precisely because a founder new to this specific cost structure hasn't yet built the habit of keeping the two categories visually and mentally separate.
+
+**Revisit the estimate once real usage data exists, not just once at the start.** An estimate built before launch is necessarily built on assumptions; the first month or two of real usage data replaces those assumptions with actual numbers, and a founder who revisits the budget at that point — rather than treating the original estimate as permanent — catches a variable-cost miscalculation while it's still a minor adjustment rather than a runway emergency discovered months later.
+
+None of this requires financial expertise to execute — it requires treating the total cost picture as something to actively build early, in pieces, rather than something to discover in whichever order the pieces happen to surface on their own. The founders who avoid the kind of runway surprise this article opened with aren't the ones who guessed the number correctly; they're the ones who asked for the fixed piece early and modeled the variable piece with enough range to survive being wrong.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Budget Built on One Number Out of Four
