@@ -52,6 +52,22 @@ Als je dit op de juiste manier oplost, gaat het niet om het toevoegen van meer l
 
 Dit is het soort backend- en datalaagwerk waarin LaunchStudio gespecialiseerd is: het nemen van een frontend die een oprichter al heeft gebouwd en waar hij van houdt, en het op de juiste manier opnieuw opbouwen van de leidingen daaronder, zonder de gebruikersinterface aan te raken. U kunt de typische reikwijdte en doorlooptijd zien op de [LaunchStudio-procespagina](https://launchstudio.eu/en/#process). Voor teams die beoordelen of ze een dergelijke oplossing of een volledigere herbouw nodig hebben, heeft Manifera's team voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) datalaagmigraties op veel grotere schaal voor zakelijke klanten afgehandeld.
 
+## Twee apparaten, allebei offline, racen om te synchroniseren
+
+Een gebruiker maakt lessen op zijn telefoon offline af en doet later op de dag hetzelfde op een tablet offline. Wanneer beide apparaten weer verbinding maken met internet, verzenden ze allebei hun offline-voortgangsrecords naar de server. Zonder een goede samenvoegingsstrategie overschrijft de laatste synchronisatie het totaal van de eerste.
+
+Gebruik een set-gebaseerde samenvoeging van voltooide les-ID's in plaats van het overschrijven van totale scores:
+
+```javascript
+function mergeProgress(serverProgress, clientProgress) {
+  const mergedCompleted = new Set([
+    ...serverProgress.completedLessonIds,
+    ...clientProgress.completedLessonIds
+  ]);
+  return { completedLessonIds: Array.from(mergedCompleted) };
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native Founder in actie: de streak die van de ene op de andere dag verdween
@@ -93,6 +109,7 @@ Ja, dit is puur een oplossing voor de datalaag en de backend. De hele aanpak van
 
 Ja – het technische team van Manifera, inclusief het ontwikkelingscentrum in Ho Chi Minh City, heeft productiedatasystemen gebouwd en onderhouden voor zakelijke klanten als Vodafone en TNO, waarbij fouten in de dataconsistentie een nog grotere inzet met zich meebrengen dan het churnpercentage van een enkele app.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,42 +117,42 @@ Ja – het technische team van Manifera, inclusief het ontwikkelingscentrum in H
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why does this bug pass every test a solo founder runs?",
+      "name": "Waarom doorstaat deze bug elke test die een solo-oprichter uitvoert?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because testing it requires logging into the same account from two separate devices in sequence, which most founders never think to do when they're the only person testing their own app before launch."
+        "text": "Omdat het testen ervan vereist dat je vanaf twee afzonderlijke apparaten achter elkaar op hetzelfde account moet inloggen, wat de meeste oprichters nooit denken te doen als ze de enige zijn die hun eigen app testen vóór de lancering."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this specific to language learning apps?",
+      "name": "Is dit specifiek voor apps voor het leren van talen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 any app with meaningful user-generated progress (fitness tracking, habit apps, course platforms) can have the same local-first storage pattern, but it's especially damaging in language learning because streaks are the core retention mechanic."
+        "text": "Nee – elke app met betekenisvolle, door de gebruiker gegenereerde vooruitgang (fitness-tracking, gewoonte-apps, cursusplatforms) kan hetzelfde local-first-opslagpatroon hebben, maar het is vooral schadelijk bij het leren van talen omdat streaks het belangrijkste retentiemechanisme zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio typically find bugs like this?",
+      "name": "Hoe vindt LaunchStudio dit soort bugs doorgaans?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers run a structured production-readiness audit on every AI-generated codebase that specifically probes data ownership and sync behavior, rather than relying on the founder to have already found the edge case."
+        "text": "De technici van Manifera voeren een gestructureerde productiegereedheidsaudit uit op elke door AI gegenereerde codebase die specifiek het data-eigendom en het synchronisatiegedrag onderzoekt, in plaats van erop te vertrouwen dat de oprichter het randgeval al heeft gevonden – dit is standaardpraktijk bij de meer dan 160 projecten die het team heeft opgeleverd."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this be fixed without redesigning my app's UI?",
+      "name": "Kan dit worden opgelost zonder de gebruikersinterface van mijn app opnieuw te ontwerpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 this is purely a data-layer and backend fix. LaunchStudio's approach leaves a founder's frontend untouched and corrects the architecture underneath it."
+        "text": "Ja, dit is puur een oplossing voor de datalaag en de backend. De hele aanpak van LaunchStudio is erop gericht de frontend van de oprichter onaangeroerd te laten en de architectuur eronder te corrigeren."
       }
     },
     {
       "@type": "Question",
-      "name": "Does Manifera have experience with this kind of data integrity work outside of consumer apps?",
+      "name": "Heeft Manifera ervaring met dit soort data-integriteitswerk buiten consumentenapps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 Manifera's engineering team, including its Ho Chi Minh City development center, has built and maintained production data systems for enterprise clients like Vodafone and TNO."
+        "text": "Ja – het technische team van Manifera, inclusief het ontwikkelingscentrum in Ho Chi Minh City, heeft productiedatasystemen gebouwd en onderhouden voor zakelijke klanten als Vodafone en TNO, waarbij fouten in de dataconsistentie een nog grotere inzet met zich meebrengen dan het churnpercentage van een enkele app."
       }
     }
   ]

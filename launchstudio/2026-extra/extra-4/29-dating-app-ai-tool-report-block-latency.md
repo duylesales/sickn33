@@ -51,6 +51,24 @@ Closing this gap means treating a block action as a single synchronous operation
 
 Manifera's engineering team, working with founders through LaunchStudio's Singapore hub serving Southeast Asia's fast-growing consumer app market, has run exactly this kind of safety-surface audit on community and social platforms where user trust is the core product. You can start that kind of review through the [LaunchStudio contact page](https://launchstudio.eu/en/#contact), and Manifera's broader [custom software development](https://www.manifera.com/services/custom-software-development/) team has applied similar rigor to access-control logic across a range of platforms.
 
+## Synchronous Database Writes Don't Cancel What's Already Queued to Send
+
+Making the database-level block synchronous — messaging, search, profile, and message history updated in one transaction — closes the gap between "the app says blocked" and "the database reflects blocked." It doesn't automatically reach a different category of thing entirely: events already handed off to a delivery pipeline before the block transaction committed. A push notification queued moments earlier ("your match sent you a message"), a WebSocket event already sent to a still-open client session, or an email digest already rendered and queued for delivery can all still reach the blocked-by user minutes later, because those systems received the event before the block existed and have no reason to re-check it on their own.
+
+This is a narrower window than the original bug, but the same category of failure: a surface that was never told to check the block relationship because it operates outside the request/response cycle the synchronous fix covers. Closing it means adding a block check immediately before actual dispatch in every outbound delivery path, not just at the moment the event is generated.
+
+```
+function dispatchNotification(notification) {
+  // Re-check block status right before send, not just at creation time
+  if (isBlocked(notification.recipientId, notification.senderId)) {
+    return; // drop silently, sender never learns why
+  }
+  sendPush(notification);
+}
+```
+
+It's a small check, but it's the difference between a block that's synchronous in the database and one that's actually synchronous in everything the user experiences — including the notification that was already halfway out the door when they tapped block.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The block that wasn't quite instant
@@ -92,6 +110,10 @@ The team audits every surface where a blocked or reported user could still appea
 
 Yes — LaunchStudio works across Lovable, Bolt, Cursor, and v0-built apps, and the Singapore-based team frequently reviews trust and safety logic in Lovable-built consumer and community apps specifically.
 
+### Can a blocked user still receive a notification even after the block is applied synchronously?
+
+Yes, if the notification was already handed off to a delivery pipeline — like push or email — before the block transaction committed, since those systems only know what they were told at creation time; the fix is re-checking block status immediately before actual dispatch, not just when the event was generated.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +143,11 @@ Yes — LaunchStudio works across Lovable, Bolt, Cursor, and v0-built apps, and 
       "@type": "Question",
       "name": "Does LaunchStudio work with apps built on Lovable specifically?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — LaunchStudio works across Lovable, Bolt, Cursor, and v0-built apps, and the Singapore-based team frequently reviews trust and safety logic in Lovable-built consumer apps." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a blocked user still receive a notification even after the block is applied synchronously?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the notification was already handed off to a delivery pipeline like push or email before the block transaction committed — the fix is re-checking block status immediately before actual dispatch, not just when the event was generated." }
     }
   ]
 }

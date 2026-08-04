@@ -47,6 +47,19 @@ As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts 
 
 LaunchStudio's engineers, supported from Manifera's Singapore office at 100 Tras Street, handle domain and infrastructure migrations as a standard part of moving an AI-built prototype toward a production-ready launch. If your domain switch is still ahead of you, it's worth [talking to an engineer about your migration plan](https://launchstudio.eu/en/#contact) a few days before you intend to flip the switch, not the morning of.
 
+## A Clean DNS Cutover Still Fails Without a Certificate Waiting For It
+
+Getting TTL sequencing right solves the propagation problem, but it solves a different problem than the one that catches founders next: even a perfectly-timed DNS cutover routes visitors to a new domain that has no valid HTTPS certificate covering it yet. Most hosting platforms provision a TLS certificate automatically, but only *after* they detect the domain is actually pointing at them — which means the certificate request doesn't even start until the same DNS change that was supposed to be instant, creating a second, separate delay stacked on top of (or masquerading as) the DNS propagation window.
+
+```
+1. DNS cutover completes — new domain now points at your host
+2. Host detects the domain and requests a TLS certificate
+3. Certificate authority validates domain ownership (minutes to hours)
+4. Until validation completes, HTTPS requests to the new domain fail
+```
+
+The fix is to trigger certificate provisioning ahead of the actual cutover wherever the hosting platform supports it — many providers let you add and pre-validate a domain before it's live, so the certificate is already issued and waiting the moment DNS actually points there, rather than starting a second countdown right when visitors first arrive. Confirming this step explicitly, rather than assuming "DNS is fixed, so the migration is done," is what separates a cutover that's clean end to end from one that trades an eight-hour DNS problem for a shorter but still visible certificate-error window.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Launch Day That Lasted Eight Extra Hours
@@ -82,6 +95,10 @@ Yes — any change that involves updating where a domain's DNS records point, in
 
 Because it isn't something an AI coding tool generates or omits in code — it's an infrastructure sequencing decision that requires planning a day or more ahead, which is exactly the kind of production-maturity gap Manifera's 11+ years of engineering experience is built to catch.
 
+### If DNS propagates cleanly, is the migration actually finished?
+
+Not necessarily — most hosting platforms only start provisioning a new domain's TLS certificate once they detect DNS pointing at them, which can create a separate HTTPS-error window even after DNS itself has cut over cleanly, so pre-validating the domain with the host ahead of the cutover is worth confirming explicitly.
+
 ### Does LaunchStudio handle domain migrations as a standalone service?
 
 Yes — LaunchStudio's team, including engineers supported from the Singapore office, handles DNS and domain migrations as part of getting AI-built prototypes production-ready, whether that's a standalone fix or part of a broader launch package.
@@ -115,6 +132,11 @@ Yes — LaunchStudio's team, including engineers supported from the Singapore of
       "@type": "Question",
       "name": "Does LaunchStudio handle domain migrations as a standalone service?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, LaunchStudio's team, including engineers supported from the Singapore office, handles DNS and domain migrations as part of getting AI-built prototypes production-ready." }
+    },
+    {
+      "@type": "Question",
+      "name": "If DNS propagates cleanly, is the migration actually finished?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — hosting platforms often only start provisioning a new domain's TLS certificate once they detect DNS pointing at them, creating a separate HTTPS-error window even after DNS itself has cut over cleanly." }
     }
   ]
 }

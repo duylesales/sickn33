@@ -50,6 +50,22 @@ De oplossing is qua concept niet ingewikkeld, maar vereist wel een doelbewuste i
 
 Het team van Manifera, dat vanuit zijn hub in Singapore de bredere Zuidoost-Aziatische markt bedient, heeft dezelfde nauwkeurigheid toegepast op fintech- en marktplatforms die veel grotere transactievolumes verwerken dan een typische crowdfunding-lancering. Als u evalueert of de betalingslogica van uw platform dit niveau van beoordeling nodig heeft, omvat de bredere praktijk van Manifera [aangepaste softwareontwikkeling] (https://www.manifera.com/services/custom-software-development/) dit soort financiële staatsmachinewerk op schaal.
 
+## Een gesloten terugbetalingsvenster betekent niet dat het geld veilig vrijgegeven kan worden
+
+Zelfs nadat het officiële venster voor terugbetalingen is gesloten, kunnen er nog openstaande geschillen zijn via de betalingsverwerker (chargebacks). Als de escrow-vrijgavetaak uitsluitend kijkt naar de datum en niet naar openstaande geschillen, wordt het geld overgemaakt naar de maker terwijl de bank het geld terughaalt.
+
+Controleer op actieve geschillen voordat escrow-gelden worden uitbetaald:
+
+```javascript
+async function releaseEscrowFunds(projectId) {
+  const hasDisputes = await stripe.disputes.list({ projectId, status: 'needs_response' });
+  if (hasDisputes.data.length > 0) {
+    throw new Error('Escrow-vrijgave geblokkeerd vanwege een actief geschil');
+  }
+  await executePayout(projectId);
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native Founder in actie: de uitbetaling waarbij niets meer terug te betalen is
@@ -91,6 +107,7 @@ Manifera's hub in Singapore werkt met fintech- en marktplaatsklanten in heel Zui
 
 Een generieke scan controleert op bekende kwetsbaarheidspatronen zoals injectie of blootliggende sleutels; deze beoordeling vergelijkt de feitelijke bedrijfslogica van uw geldverwerkingsstroom met uw eigen beleid, wat een handmatige, platformspecifieke audit is.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +115,42 @@ Een generieke scan controleert op bekende kwetsbaarheidspatronen zoals injectie 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Isn't this the kind of thing Stripe or the payment processor should handle?",
+      "name": "Is dit niet iets wat Stripe of de betalingsverwerker zouden moeten afhandelen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 a payment processor moves money when told to, but the decision of when it's told to is entirely the platform's own logic, which is exactly where this gap lives."
+        "text": "Nee – een betalingsverwerker maakt geld over als dat wordt opgedragen, maar de beslissing *wanneer* dat moet gebeuren, is volledig de logica van het platform zelf, en dat is precies waar dit gat schuilt."
       }
     },
     {
       "@type": "Question",
-      "name": "How would I know if my own crowdfunding or marketplace platform has this issue?",
+      "name": "Hoe weet ik of mijn eigen crowdfunding- of marktplaatsplatform dit probleem heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Trace what happens to funds for a campaign that gets cancelled or disputed after its goal is reached but before your stated refund window closes \u2014 if a payout could already have gone out by then, you have the same gap."
+        "text": "Volg wat er gebeurt met het geld voor een campagne die wordt geannuleerd of betwist nadat het doel ervan is bereikt, maar voordat de aangegeven teruggaveperiode sluit. Als er tegen die tijd al een uitbetaling had kunnen plaatsvinden, heb je hetzelfde gat."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio only fix bugs, or also design the payment logic from scratch?",
+      "name": "Repareert LaunchStudio alleen bugs, of ontwerpt het ook de betalingslogica helemaal opnieuw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both \u2014 Manifera's engineering team can review and correct existing AI-generated payment flows or design the state machine correctly from the start for platforms still in early build."
+        "text": "Beide: het technische team van Manifera kan bestaande, door AI gegenereerde betalingsstromen beoordelen en corrigeren, of de staatsmachine vanaf het begin correct ontwerpen voor platforms die nog in de kinderschoenen staan."
       }
     },
     {
       "@type": "Question",
-      "name": "Why does Manifera's Singapore office matter for this kind of work?",
+      "name": "Waarom is het kantoor van Manifera in Singapore belangrijk voor dit soort werk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's Singapore hub works with fintech and marketplace clients across Southeast Asia on payment infrastructure at scale, giving the team direct experience with the same escrow and payout patterns."
+        "text": "Manifera's hub in Singapore werkt met fintech- en marktplaatsklanten in heel Zuidoost-Azië aan betalingsinfrastructuur op schaal, waardoor het team directe ervaring krijgt met dezelfde escrow- en uitbetalingspatronen die opduiken in een kleiner crowdfundingplatform."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the difference between this and a typical AI security scan?",
+      "name": "Wat is het verschil tussen dit en een typische AI-beveiligingsscan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A generic scan checks for known vulnerability patterns like injection or exposed keys; this review traces the actual business logic of your money-handling flow against your own stated policies."
+        "text": "Een generieke scan controleert op bekende kwetsbaarheidspatronen zoals injectie of blootliggende sleutels; deze beoordeling vergelijkt de feitelijke bedrijfslogica van uw geldverwerkingsstroom met uw eigen beleid, wat een handmatige, platformspecifieke audit is."
       }
     }
   ]

@@ -47,6 +47,24 @@ A production-grade version control system for bids needs a few specific things t
 
 LaunchStudio brings Manifera's enterprise-grade engineering to exactly this kind of gap — the fixes construction, logistics, and services platforms have needed for over a decade, applied to a founder's AI-generated prototype rather than a Fortune 500 codebase. [See how the process works](https://launchstudio.eu/en/#process) before your next bid revision becomes your next dispute.
 
+## Concurrent Edits: When Two "New" Versions Race to Become Current
+
+Versioning solves the overwrite problem, but it introduces a narrower one that only shows up once more than one person can edit a bid: what happens when a contractor and, say, an office admin both open the same bid, both make changes, and both save within seconds of each other? Each save reads the current version, applies its edit, and writes a new version on top — but if both reads happened before either write landed, both edits believe they're building on the same "current" version, and whichever save lands second silently becomes the new current version, with no indication that it just overwrote a colleague's concurrent edit rather than an outdated one.
+
+This is a narrower version of the exact problem bid versioning was built to prevent, just moved one layer down — from "did an edit erase history" to "did an edit erase a concurrent edit without anyone noticing." The fix is optimistic concurrency control: every version carries the ID of the version it was based on, and a save is rejected — not silently overwritten — if that base version is no longer the current one by the time the write happens.
+
+```
+function saveBidRevision(bidId, basedOnVersionId, changes) {
+  const current = getCurrentVersion(bidId);
+  if (current.id !== basedOnVersionId) {
+    throw new ConflictError('Bid changed since you loaded it — refresh and reapply your edit');
+  }
+  return insertNewVersion(bidId, changes, current.id);
+}
+```
+
+It's a small check, but it's the difference between a version history that's complete and one that quietly drops whichever edit lost the race.
+
 ## Why This Matters More in Construction Than Almost Any Other Vertical
 
 Construction bids aren't casual transactions — they involve materials pricing that shifts weekly, subcontractor commitments, and margins thin enough that a €4,000 discrepancy can be the difference between a profitable job and a loss. Disputes over "what was actually agreed" are common in the industry even with paper trails; a digital tool with no version history doesn't reduce that risk, it removes the one advantage software was supposed to provide. Manifera's engineering teams, including the development center on Pho Quang Street in Ho Chi Minh City, have built this exact category of auditable record-keeping for enterprise logistics and services clients, and the same discipline scales down cleanly to a solo founder's bid tool. Explore [Manifera's custom software development work](https://www.manifera.com/services/custom-software-development/) for a sense of that track record.
@@ -92,6 +110,10 @@ Yes — the migration typically backfills existing bids as their own first versi
 
 The underlying fix — proper record versioning — applies to any AI-generated tool handling prices, contracts, or agreements, which is why Manifera's engineering center in Ho Chi Minh City sees this pattern across multiple verticals, not construction alone.
 
+### What happens if two people edit the same bid at the same time?
+
+Without a concurrency check, whichever save lands second silently becomes the new current version and the other person's edit is lost, even though both are technically preserved as individual versions — the fix is to reject a save if the version it was based on is no longer current, rather than letting the later write win by default.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +143,11 @@ The underlying fix — proper record versioning — applies to any AI-generated 
       "@type": "Question",
       "name": "Does this fix only apply to construction bid tools?",
       "acceptedAnswer": { "@type": "Answer", "text": "No, the same versioning pattern applies to any AI-generated tool handling prices, contracts, or agreements across multiple verticals." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if two people edit the same bid at the same time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Without a concurrency check, whichever save lands second silently becomes the new current version and the other person's edit is lost, even though both are technically preserved as individual versions — the fix rejects a save if the version it was based on is no longer current, rather than letting the later write win by default." }
     }
   ]
 }

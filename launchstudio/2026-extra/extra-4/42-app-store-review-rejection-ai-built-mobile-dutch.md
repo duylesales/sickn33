@@ -46,6 +46,21 @@ Dit is het soort platformspecifieke vereiste dat niets te maken heeft met de vra
 
 Voordat je je volgende inzending doet, is het de moeite waard om iemand [door je app te laten lopen aan de hand van de echte checklist van Apple](https://launchstudio.eu/en/#contact) in plaats van er een tweede keer op de harde manier achter te komen.
 
+## Het verwijderen van het account annuleert het abonnement niet
+
+Apple en Google eisen dat mobiele apps een eenvoudige optie bieden voor het verwijderen van accounts. Een veelvoorkomende valkuil is dat het verwijderen van een account in de app het in-app abonnement via de App Store / Google Play niet automatisch stopzet. De gebruiker kan het account niet meer in, maar blijft maandelijks gefactureerd worden door het platform.
+
+Informeer de gebruiker expliciet en stuur instructies om het abonnement in de App Store te beheren:
+
+```javascript
+async function handleAccountDeletion(user) {
+  if (user.hasActiveInAppSubscription) {
+    await sendSubscriptionCancellationGuide(user.email);
+  }
+  await db.users.delete(user.id);
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: de huisdier-app die één scherm vergat
@@ -85,6 +100,7 @@ LaunchStudio wordt ondersteund door Manifera's team van meer dan 120 technici, v
 
 Google Play heeft een vergelijkbare vereiste voor het verwijderen van accounts en gegevens, en het in Ho Chi Minh City gevestigde technische team van LaunchStudio controleert de huidige richtlijnen van beide platforms als onderdeel van een pre-lanceringsbeoordeling, aangezien de vereisten van de twee winkels niet identiek zijn.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +108,42 @@ Google Play heeft een vergelijkbare vereiste voor het verwijderen van accounts e
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why didn't my AI coding tool build an account deletion flow automatically?",
+      "name": "Waarom bouwde mijn AI-coderingstool niet automatisch een proces voor het verwijderen van accounts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI tools generate what you explicitly ask for. Account deletion isn't part of a typical login and signup prompt, so it's routinely missing unless someone knows to request it by name."
+        "text": "AI-tools genereren waar u expliciet om vraagt. Het verwijderen van een account maakt geen deel uit van een typische 'build login and signup'-prompt, dus het ontbreekt routinematig, tenzij een oprichter of recensent weet dat hij er bij naam om moet vragen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is account deletion actually required, or just recommended?",
+      "name": "Is het verwijderen van een account eigenlijk vereist of alleen maar aanbevolen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's required under Apple's App Store Review Guideline 5.1.1(v) for any app that supports account creation, and Apple's reviewers test it manually during submission."
+        "text": "Het is vereist volgens Apple's App Store Review Guideline 5.1.1(v) voor elke app die het aanmaken van accounts ondersteunt, en de menselijke reviewers van Apple testen het handmatig tijdens de indiening."
       }
     },
     {
       "@type": "Question",
-      "name": "What other App Store requirements do AI-built apps commonly miss?",
+      "name": "Welke andere App Store-vereisten missen AI-gebouwde apps vaak?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Common gaps include incomplete privacy nutrition labels, missing App Tracking Transparency prompts, and leftover placeholder content from development."
+        "text": "Naast het verwijderen van accounts zijn er ook veel voorkomende hiaten: onvolledige privacy-voedingsetiketten, ontbrekende App Tracking Transparency-prompts en placeholder-inhoud die is achtergebleven bij de ontwikkeling – allemaal dingen die LaunchStudio controleert tijdens een beoordeling voorafgaand aan de indiening."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio know what Apple's reviewers actually check for?",
+      "name": "Hoe weet LaunchStudio waar de recensenten van Apple eigenlijk op controleren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio is backed by Manifera's team of 120+ engineers, several of whom have shipped consumer mobile apps through App Store review repeatedly, so the checklist comes from direct submission experience."
+        "text": "LaunchStudio wordt ondersteund door Manifera's team van meer dan 120 technici, van wie er een aantal herhaaldelijk mobiele apps voor consumenten hebben geleverd via App Store-beoordeling, dus de nalevingscontrolelijst komt voort uit directe indieningservaring en niet uit giswerk."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this apply to apps built for Android too?",
+      "name": "Geldt dit ook voor apps die voor Android zijn gebouwd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Google Play has a similar account and data deletion requirement, and LaunchStudio's Ho Chi Minh City team checks both platforms' current guidelines during a pre-launch review."
+        "text": "Google Play heeft een vergelijkbare vereiste voor het verwijderen van accounts en gegevens, en het in Ho Chi Minh City gevestigde technische team van LaunchStudio controleert de huidige richtlijnen van beide platforms als onderdeel van een pre-lanceringsbeoordeling, aangezien de vereisten van de twee winkels niet identiek zijn."
       }
     }
   ]

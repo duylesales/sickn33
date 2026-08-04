@@ -47,6 +47,31 @@ Manifera has 11+ years of production engineering experience building systems tha
 
 If you've never tested what would happen if a user asked for their data tomorrow, it's worth [talking to an engineer about your current schema](https://launchstudio.eu/en/#contact) before that email actually arrives.
 
+## Your Database Isn't the Only Place This Data Lives
+
+Even a well-built export function that correctly pulls every table in your own schema can still return an incomplete answer, because most SaaS products don't actually store all of a user's personal data themselves. Payment details live with a processor like Stripe. Marketing preferences and email history live with an email platform. Support conversations live in a helpdesk tool. Each of those third parties is generally still processing that data on the company's behalf, which typically means it's still the company's responsibility to account for when a portability or access request comes in — a request that only pulls from the internal database quietly leaves out everything held by connected vendors.
+
+AI-generated schema mapping has no way to know this, because it only sees the tables it was given access to; it has no visibility into what a Stripe API key or an email platform integration is actually storing on the other end. Closing this gap means maintaining an explicit registry of every external system that holds data tied to a user ID, and extending the export function to query each one:
+
+```
+const DATA_SOURCES = [
+  { name: 'database', fetch: (userId) => db.exportUser(userId) },
+  { name: 'stripe', fetch: (userId) => stripe.customers.retrieve(userId) },
+  { name: 'email_platform', fetch: (userId) => emailApi.getContact(userId) },
+  { name: 'support_tool', fetch: (userId) => supportApi.getTickets(userId) },
+];
+
+async function buildFullExport(userId) {
+  const results = {};
+  for (const source of DATA_SOURCES) {
+    results[source.name] = await source.fetch(userId);
+  }
+  return results;
+}
+```
+
+Without that registry, "we fulfilled the request" and "we fulfilled the request completely" can look identical right up until someone compares the export against what they know a company actually holds on them.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Portal With No Export Button
@@ -86,6 +111,10 @@ Manifera has 11+ years of production engineering experience across enterprise cl
 
 Ideally proactively — LaunchStudio's Ho Chi Minh City-based engineers include data export and deletion logic as part of a standard pre-launch review, so the fulfillment path already exists before the first real request lands.
 
+### Does a data export need to include information held by third-party tools like Stripe or an email platform, or just my own database?
+
+Generally yes — personal data processed on a company's behalf by a subprocessor, such as a payment provider, email platform, or support tool, is typically still that company's responsibility to account for. A complete export process needs an explicit registry of every external system holding user data, not just a query against the internal database, or requests will quietly come back incomplete.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +144,11 @@ Ideally proactively — LaunchStudio's Ho Chi Minh City-based engineers include 
       "@type": "Question",
       "name": "Does LaunchStudio build this proactively or only after a request comes in?",
       "acceptedAnswer": { "@type": "Answer", "text": "Ideally proactively — LaunchStudio's Ho Chi Minh City-based engineers include data export and deletion logic as part of a standard pre-launch review." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a data export need to include information held by third-party tools like Stripe or an email platform, or just my own database?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Generally yes — data processed on a company's behalf by a subprocessor, such as a payment provider or email platform, is typically still that company's responsibility to account for. A complete export process needs an explicit registry of every external system holding user data, not just a query against the internal database." }
     }
   ]
 }

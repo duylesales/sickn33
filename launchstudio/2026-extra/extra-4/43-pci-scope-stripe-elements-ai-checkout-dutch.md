@@ -46,6 +46,16 @@ Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, h
 
 De technici van LaunchStudio, werkzaam vanuit het Amsterdamse kantoor van Manifera aan de Herengracht 420, beoordelen betalingsstromen als een standaardonderdeel van het productieklaar maken van een AI-gegenereerd SaaS-product, het vervangen van onbewerkte afrekenformulieren door Stripe Elements of gehost afrekenen voordat een enkel echt kaartnummer ooit de eigen servers van de app bereikt. Als u niet zeker weet in welke categorie uw huidige betaling valt, is het de moeite waard [een beveiligingsbeoordeling met een vast bereik te krijgen](https://launchstudio.eu/en/#calculator) voordat het een groter gesprek wordt met een betalingsverwerker of het beveiligingsteam van een zakelijke klant.
 
+## Stripe Elements isoleert het kaartveld — het beveiligd niet de rest van de pagina
+
+Stripe Elements zorgt ervoor dat gevoelige creditcardgegevens rechtstreeks naar Stripe gaan, waardoor u buiten het zware PCI-DSS-bereik blijft. Als de rest van uw afrekenpagina echter kwetsbaar is voor Cross-Site Scripting (XSS), kunnen kwaadwillenden het Stripe Elements-iframe vervangen of formulierinvoeren onderscheppen.
+
+Beveilig de afrekenpagina met een strikt Content Security Policy (CSP):
+
+```text
+Content-Security-Policy: script-src 'self' https://js.stripe.com; frame-src 'self' https://js.stripe.com;
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de POS-add-on die per ongeluk een kaartprocessor werd
@@ -85,6 +95,7 @@ Ja. Door te migreren van onbewerkte kaartvelden naar Stripe Elements blijft door
 
 Nee – PCI-scope is van toepassing op het moment dat kaartgegevens uw systemen raken, ongeacht de bedrijfsgrootte. Daarom beschouwt het in Amsterdam gevestigde team van LaunchStudio het als een standaardcontrole voor elke door AI gebouwde app die betalingen rechtstreeks afhandelt.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +103,42 @@ Nee – PCI-scope is van toepassing op het moment dat kaartgegevens uw systemen 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why does an AI-generated checkout form put my whole app in PCI scope?",
+      "name": "Waarom plaatst een door AI gegenereerd afrekenformulier mijn hele app in PCI-bereik?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because the simplest form for an AI tool to generate collects card data directly into your own fields and servers, which is exactly the condition PCI DSS treats as full scope."
+        "text": "Omdat de eenvoudigste vorm die een AI-tool kan genereren, kaartgegevens rechtstreeks in uw eigen velden en servers verzamelt, wat precies de voorwaarde is die PCI DSS als volledige reikwijdte behandelt, ongeacht hoe de gegevens daarna worden gebruikt."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the difference between using Stripe Elements and a plain HTML checkout form?",
+      "name": "Wat is het verschil tussen het gebruik van Stripe Elements en een eenvoudig HTML-afrekenformulier?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Stripe Elements loads card fields inside an iframe controlled by Stripe, so card data never touches your servers \u2014 this typically qualifies you for the simplest PCI self-assessment (SAQ A) instead of a full audit."
+        "text": "Stripe Elements laadt kaartvelden in een iframe dat wordt beheerd door Stripe, zodat kaartgegevens nooit in aanraking komen met uw servers. Hierdoor komt u doorgaans in aanmerking voor de eenvoudigste PCI-zelfbeoordeling (SAQ A) in plaats van een volledige audit."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio catch this kind of gap during a review?",
+      "name": "Hoe vangt LaunchStudio dit soort hiaten op tijdens een recensie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Herre Roelevink, CEO of LaunchStudio, notes the shift founders now face is less about building the product and more about the architecture and security needed to mature it \u2014 payment flow architecture is one of the first things Manifera's engineers audit for."
+        "text": "Herre Roelevink, CEO van LaunchStudio, beschrijft dat de oprichters van de verschuiving nu minder te maken hebben met het bouwen van het product en meer met de architectuur en beveiliging die nodig zijn om het te laten rijpen. De betalingsstroomarchitectuur is precies om die reden een van de eerste dingen die Manifera's ingenieurs controleren."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I fix this without rebuilding my whole checkout experience?",
+      "name": "Kan ik dit oplossen zonder mijn hele betaalervaring opnieuw op te bouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Migrating from raw card fields to Stripe Elements typically preserves the same visual checkout flow for customers while changing only where sensitive data actually travels."
+        "text": "Ja. Door te migreren van onbewerkte kaartvelden naar Stripe Elements blijft doorgaans dezelfde visuele betaalstroom voor uw klanten behouden, terwijl alleen wordt gewijzigd waar de gevoelige gegevens daadwerkelijk naartoe gaan."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this only matter for larger SaaS companies?",
+      "name": "Is dit alleen van belang voor grotere SaaS-bedrijven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, PCI scope applies the moment card data touches your systems regardless of company size, which is why LaunchStudio's Amsterdam-based team treats it as a standard check."
+        "text": "Nee – PCI-scope is van toepassing op het moment dat kaartgegevens uw systemen raken, ongeacht de bedrijfsgrootte. Daarom beschouwt het in Amsterdam gevestigde team van LaunchStudio het als een standaardcontrole voor elke door AI gebouwde app die betalingen rechtstreeks afhandelt."
       }
     }
   ]

@@ -68,6 +68,24 @@ A minimal version of this doesn't require an elaborate DevOps platform — even 
 
 If your staging environment has ever surprised you by not matching production, [our process](https://launchstudio.eu/en/#process) includes exactly this kind of environment audit as part of getting an app launch-ready.
 
+## Config-as-Code Solves Drift — If Secrets Don't Go Into the Repo With It
+
+Putting environment configuration in version control fixes drift, but it introduces a new failure mode if it's done without a second thought: committing actual secret values — API keys, database passwords, signing secrets — directly into the same files that now live in git history. Once a secret is committed, it's in the repo's history permanently, even if it's deleted in a later commit, and it's exposed to anyone with repo access, including a repo that later gets made public or shared with a contractor.
+
+The fix is to separate structural configuration, which is safe to commit, from secret values, which never should be:
+
+```
+# committed to version control — safe
+FEATURE_NEW_SCHEDULING=true
+RATE_LIMIT_WINDOW=60
+STRIPE_WEBHOOK_SECRET=${SECRET_MANAGER:stripe_webhook_secret}
+
+# never committed — lives in a secrets manager or platform env vars
+STRIPE_WEBHOOK_SECRET=whsec_actual_value_here
+```
+
+What gets committed is the reference — which secret to fetch and from where — not the value itself. The actual secret lives in a dedicated secrets manager or the hosting platform's environment variable store, injected at deploy or runtime. This keeps the benefit of config-as-code — a diffable, auditable, single source of truth for what each environment looks like — without turning the git history into an inventory of every credential the app has ever used. It's a small discipline to add on top of the environment parity fix, but it's the difference between "we can see exactly what changed between staging and production" and "we can see exactly what changed, including a leaked production database password."
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Config Flag Nobody Remembered Setting
@@ -109,6 +127,10 @@ No — even a simple two-environment setup on a single hosting platform can drif
 
 Yes — config-as-code and environment parity are standard practice across Manifera's broader engineering work, including for enterprise clients like Vodafone and TNO, where the cost of an undetected mismatch is proportionally even higher.
 
+### Is it safe to just commit my staging and production .env files to fix drift?
+
+Not if they contain actual secret values — commit the structural configuration, like feature flags and non-sensitive settings, and reference which secret to load from a secrets manager or your hosting platform's environment store, rather than committing real API keys or passwords into git history, which is permanent even after a later commit removes them.
+
 Book a free 15-minute intro call — [talk to us about your deployment setup](https://launchstudio.eu/en/#contact) before your next feature launch surprises you.
 
 For more on how production infrastructure is built to stay consistent, see [Manifera's offshore software development services](https://www.manifera.com/services/offshore-software-development/).
@@ -142,6 +164,11 @@ For more on how production infrastructure is built to stay consistent, see [Mani
       "@type": "Question",
       "name": "Is environment parity something Manifera handles for its larger enterprise clients too?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — config-as-code and environment parity are standard practice across Manifera's broader engineering work, including for enterprise clients like Vodafone and TNO, where the cost of an undetected mismatch is proportionally even higher." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to just commit my staging and production .env files to fix drift?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not if they contain actual secret values — commit the structural configuration, like feature flags and non-sensitive settings, and reference which secret to load from a secrets manager or your hosting platform's environment store, rather than committing real API keys or passwords into git history, which is permanent even after a later commit removes them." }
     }
   ]
 }

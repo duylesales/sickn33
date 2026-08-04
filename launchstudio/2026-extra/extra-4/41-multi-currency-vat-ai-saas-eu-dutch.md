@@ -46,6 +46,21 @@ Dit is precies het soort kloof dat de ingenieurs van Manifera dichten voor AI-na
 
 Als uw factureringslogica is geschreven voor één land en uw klantenbestand daar voorbij is gegaan, is het de moeite waard om [uw architectuur te vergelijken met ons proces](https://launchstudio.eu/en/#process) vóór de volgende driemaandelijkse indiening, en niet erna.
 
+## Terugbetalingen en creditnota's erven het btw-tarief van de oorspronkelijke factuur, niet dat van vandaag
+
+Wanneer een klant een terugbetaling of creditnota ontvangt, moet het toegepaste btw-tarief exact overeenkomen met het tarief dat op het moment van de oorspronkelijke aankoop is gefactureerd — zelfs als de btw-regels of het land van de klant tussentijds zijn gewijzigd. Het berekenen van de terugbetaling met het huidige btw-tarief leidt tot boekhoudkundige discrepanties.
+
+Koppel creditnota's altijd aan de oorspronkelijke factuurgegevens:
+
+```javascript
+async function createCreditNote(invoiceId, amount) {
+  const originalInvoice = await db.invoices.findById(invoiceId);
+  const vatRate = originalInvoice.vatRateApplied; // Gebruik het oorspronkelijke tarief
+  const taxAmount = amount * (vatRate / 100);
+  return db.creditNotes.create({ invoiceId, amount, taxAmount, vatRate });
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de factureringstool die zijn eigen belasting verkeerd heeft gedaan
@@ -85,6 +100,7 @@ Onjuiste facturen zorgen voor echte aansprakelijkheid bij meerdere belastingauto
 
 Nee – het kantoor van LaunchStudio in Singapore ondersteunt oprichters die vanaf elke locatie naar de EU verkopen, aangezien de locatie van de koper de BTW-verplichtingen bepaalt, ongeacht waar het bedrijf zelf is gevestigd.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +108,42 @@ Nee – het kantoor van LaunchStudio in Singapore ondersteunt oprichters die van
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why does my AI-built SaaS charge the wrong VAT rate for foreign customers?",
+      "name": "Waarom rekent mijn AI-gebouwde SaaS het verkeerde BTW-tarief aan voor buitenlandse klanten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because the AI tool defaults to a single hardcoded rate \u2014 usually your own country's \u2014 unless you explicitly specify buyer-location-based tax logic, which most prompts never include."
+        "text": "Omdat de AI-tool standaard is ingesteld op één hardgecodeerd tarief – meestal dat van uw eigen land – tenzij u expliciet op de koperlocatie gebaseerde belastinglogica specificeert, die in de meeste prompts nooit wordt opgenomen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this only a problem for larger SaaS companies?",
+      "name": "Is dit alleen een probleem voor grotere SaaS-bedrijven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Any SaaS company selling digital services to EU consumers is legally required to charge the buyer's country rate from the very first cross-border sale, regardless of company size."
+        "text": "Nee. Elk SaaS-bedrijf dat digitale diensten aan EU-consumenten verkoopt, is wettelijk verplicht om vanaf de allereerste grensoverschrijdende verkoop het landtarief van de koper in rekening te brengen, ongeacht de bedrijfsgrootte."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's team approach VAT logic differently than a typical freelancer?",
+      "name": "Hoe benadert het team van Manifera de BTW-logica anders dan een typische freelancer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers have built billing and compliance systems for enterprise clients including Vodafone, so they treat VAT determination as a structured requirement rather than a single tax percentage bolted onto checkout."
+        "text": "De technici van Manifera hebben facturerings- en nalevingssystemen gebouwd voor zakelijke klanten, waaronder Vodafone, en behandelen daarom de BTW-bepaling als een gestructureerde vereiste – locatiedetectie, opzoeken van tarieven, verwerking van verlegde kosten – in plaats van een enkel belastingpercentage dat aan de kassa wordt gekoppeld."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the risk of leaving this unfixed?",
+      "name": "Wat is het risico als dit onopgelost blijft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Incorrect invoices create real liability with multiple tax authorities simultaneously, and the longer it runs, the more historical invoices eventually need correction and reissue."
+        "text": "Onjuiste facturen zorgen voor echte aansprakelijkheid bij meerdere belastingautoriteiten tegelijk, en hoe langer deze loopt, hoe meer historische facturen uiteindelijk moeten worden gecorrigeerd en opnieuw moeten worden uitgegeven."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio only fix this for EU-based founders?",
+      "name": "Lost LaunchStudio dit alleen op voor in de EU gevestigde oprichters?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, LaunchStudio's Singapore office supports founders selling into the EU from anywhere, since the buyer's location determines VAT obligations regardless of where the company itself is based."
+        "text": "Nee – het kantoor van LaunchStudio in Singapore ondersteunt oprichters die vanaf elke locatie naar de EU verkopen, aangezien de locatie van de koper de BTW-verplichtingen bepaalt, ongeacht waar het bedrijf zelf is gevestigd."
       }
     }
   ]

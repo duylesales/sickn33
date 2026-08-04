@@ -109,6 +109,7 @@ Praat met een ingenieur die de door AI gegenereerde code begrijpt — [beschrijf
 
 Voor meer informatie over hoe Manifera builds op productieniveau benadert, zie [Manifera's diensten voor softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,42 +117,42 @@ Voor meer informatie over hoe Manifera builds op productieniveau benadert, zie [
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What's the difference between a feature flag and just using a staging environment?",
+      "name": "Wat is het verschil tussen een feature flag en alleen het gebruik van een staging-omgeving?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Staging tests a feature before real users touch it; a feature flag controls a feature after it's already live in production, letting you gate it by percentage or turn it off instantly without a new deploy. Most AI-generated apps have neither."
+        "text": "Staging test een functie voordat echte gebruikers deze aanraken; een functievlag bestuurt een functie nadat deze al live in productie is, zodat je deze per percentage kunt afsluiten of direct kunt uitschakelen zonder een nieuwe implementatie. De meeste door AI gegenereerde apps hebben geen van beide."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need a paid service like LaunchDarkly, or can I build this myself?",
+      "name": "Heb ik een betaalde dienst zoals LaunchDarkly nodig, of kan ik deze zelf bouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For a solo founder's first version, a simple database table and a small admin toggle is enough \u2014 Manifera's engineers often build exactly that during a production hardening pass rather than adding a third-party subscription a young SaaS doesn't need yet."
+        "text": "Voor de eerste versie van een solo-oprichter zijn een eenvoudige databasetabel en een kleine beheerdersschakelaar voldoende. De technici van Manifera bouwen vaak precies datgene tijdens een productiehardingsfase in plaats van een abonnement van derden toe te voegen dat een jonge SaaS nog niet nodig heeft."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera decide which features need a flag and which don't?",
+      "name": "Hoe beslist Manifera welke functies een vlag nodig hebben en welke niet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our engineers flag anything that changes state automatically \u2014 approvals, charges, sends \u2014 as high priority, based on patterns seen across 160+ delivered projects; cosmetic or read-only features rarely need one."
+        "text": "Onze technici markeren alles wat automatisch van status verandert – goedkeuringen, kosten, verzendingen – als hoge prioriteit, op basis van patronen die te zien zijn in meer dan 160 opgeleverde projecten; cosmetische of alleen-lezen-functies hebben er zelden een nodig."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this be added to an app that's already live with real customers?",
+      "name": "Kan dit worden toegevoegd aan een app die al live is bij echte klanten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, and it's usually safer to add flags to an already-live app than to keep shipping without them \u2014 our process is built to layer this in without touching your existing frontend."
+        "text": "Ja, en het is meestal veiliger om vlaggen toe te voegen aan een app die al live is dan om zonder deze te blijven verzenden - [ons proces](https://launchstudio.eu/en/#process) is gebouwd om dit in lagen te verwerken zonder uw bestaande frontend te raken."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio only work with Cursor-built apps, or other AI tools too?",
+      "name": "Werkt LaunchStudio alleen met door Cursor gebouwde apps, of ook met andere AI-tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We work across Lovable, Bolt, Cursor, and v0 output \u2014 the underlying gap shows up regardless of which AI tool generated the original code, consistent with what Manifera's engineers see across their broader client base including Vodafone and CFLW."
+        "text": "We werken met Lovable-, Bolt-, Cursor- en v0-output - de onderliggende kloof (geen uitrol vangnet) komt naar voren, ongeacht welke AI-tool de originele code heeft gegenereerd, wat consistent is met wat de technici van Manifera zien in hun bredere klantenbestand, waaronder Vodafone en CFLW.  Praat met een ingenieur die de door AI gegenereerde code begrijpt — [beschrijf hier uw project](https://launchstudio.eu/en/#contact) en we reageren binnen één werkdag.  Voor meer informatie over hoe Manifera builds op productieniveau benadert, zie [Manifera's diensten voor softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/)."
       }
     }
   ]

@@ -50,6 +50,19 @@ De technische discipline van Manifera loopt via het hoofdkantoor in Amsterdam aa
 
 Verouderde toestemming is geen cosmetisch probleem; het is het soort hiaat dat uitmondt in een formele klacht, een onderzoek door de toezichthouder, of gewoonweg een patiënt die, terecht, het gevoel heeft dat zijn gegevens zijn gebruikt op manieren waar hij eigenlijk nooit mee heeft ingestemd. Voor een oprichter van telezorg is de oplossing veel goedkoper voordat dat gebeurt dan daarna. Manifera's bredere werk met klanten als CFLW Cyber ​​Strategies en TNO heeft herhaaldelijk precies deze categorie van structurele compliance-kloven betroffen – het soort dat onzichtbaar is in een demo en duur om te ontdekken na de lancering. Meer informatie over [Manifera's benadering van softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
 
+## Niet elke beleidswijziging vereist opnieuw toestemming van elke patiënt
+
+Het bijhouden van versies van toestemmingsformulieren zorgt voor wettelijke naleving. Een valkuil is het dwingen van alle patiënten om toestemming te geven voor kleine redactionele wijzigingen (zoals een typfout in de voorwaarden). Dat veroorzaakt onnodige wrijving.
+
+De logica moet onderscheid maken tussen wezenlijke en niet-wezenlijke wijzigingen:
+
+```javascript
+function requiresReConsent(patientConsent, currentPolicy) {
+  if (!patientConsent) return true;
+  return currentPolicy.isMaterialUpdate && patientConsent.policyVersion < currentPolicy.version;
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de toestemming waar niemand opnieuw om heeft gevraagd
@@ -91,6 +104,7 @@ Het is zo ontworpen dat dit niet het geval is: de poort wordt alleen geactiveerd
 
 Hetzelfde versiepatroon is van toepassing overal waar toestemming of servicevoorwaarden in de loop van de tijd veranderen. Het Amsterdamse team van Manifera past het toe in aangrenzende gezondheidszorg-, financiële en gegevensuitwisselingscontexten, en niet uitsluitend in telezorg.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +112,42 @@ Hetzelfde versiepatroon is van toepassing overal waar toestemming of servicevoor
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Isn't a single checkbox enough for consent in healthcare-adjacent tools?",
+      "name": "Is één enkel 'Ik ga akkoord'-vinkje niet genoeg voor de meeste zorggerelateerde tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, a single checkbox only proves consent to the terms at that moment, which becomes inaccurate once the policy is updated."
+        "text": "Niet als beleid in de loop van de tijd kan veranderen; een enkel selectievakje bewijst alleen dat er sprake is van instemming met de voorwaarden die op dat moment bestonden, wat onnauwkeurig wordt op het moment dat het onderliggende beleid wordt bijgewerkt."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I know if my intake tool has this consent versioning gap?",
+      "name": "Hoe weet ik of mijn eigen, door AI gebouwde intaketool deze leemte heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Check whether consent records link to a specific form version and whether policy updates trigger re-consent \u2014 if consent is just a boolean flag, the gap likely exists."
+        "text": "Controleer of uw toestemmingsrecords een versie-ID bevatten die is gekoppeld aan specifieke formulierinhoud, en of de applicatie gebruikers actief opnieuw vraagt ​​na een beleidsupdate. Als de toestemming alleen maar een booleaans \"ja/nee\" is zonder een versielink, bestaat er vrijwel zeker een kloof."
       }
     },
     {
       "@type": "Question",
-      "name": "Does Manifera have experience with compliance-sensitive projects?",
+      "name": "Heeft Manifera specifiek ervaring met compliance-gevoelige tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Manifera's client work including collaborations with TNO and CFLW Cyber Strategies has involved this exact category of structural compliance requirement."
+        "text": "Ja – het klantenwerk van Manifera, inclusief de samenwerking aan projecten met TNO en CFLW Cyber ​​Strategies, omvatte precies deze categorie van structurele nalevingsvereisten, wat deel uitmaakt van de reden waarom LaunchStudio toestemmingsversies behandelt als een standaard beoordelingsitem in plaats van als een randgeval."
       }
     },
     {
       "@type": "Question",
-      "name": "Does re-consent gating disrupt patients mid-treatment?",
+      "name": "Zal het opnieuw toestaan ​​van toestemming patiënten verstoren die al midden in de behandeling zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, the gate triggers only on the next login or booking after a change, so it doesn't interrupt an active session."
+        "text": "Het is zo ontworpen dat dit niet het geval is: de poort wordt alleen geactiveerd bij de volgende login of boeking na een beleidswijziging, met een duidelijke, eenvoudige prompt voor hernieuwde toestemming, zodat een actieve sessie niet wordt onderbroken, maar alleen de volgende nieuwe interactie."
       }
     },
     {
       "@type": "Question",
-      "name": "Is consent versioning relevant outside of healthcare tools?",
+      "name": "Is dit alleen relevant voor gereguleerde zorginstrumenten, of geldt dit ook elders?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Manifera's Amsterdam team applies the same pattern across healthcare-adjacent, financial, and data-sharing contexts generally."
+        "text": "Hetzelfde versiepatroon is van toepassing overal waar toestemming of servicevoorwaarden in de loop van de tijd veranderen. Het Amsterdamse team van Manifera past het toe in aangrenzende gezondheidszorg-, financiële en gegevensuitwisselingscontexten, en niet uitsluitend in telezorg."
       }
     }
   ]

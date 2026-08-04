@@ -49,6 +49,22 @@ A deposit flow that survives real usage needs four things working together: an a
 
 If you want to see what this kind of fix typically costs before you commit to anything, [our pricing calculator](https://launchstudio.eu/en/#calculator) gives a fixed-scope estimate in a couple of minutes. For a deeper look at how Manifera approaches marketplace and fintech-adjacent projects at enterprise scale, see our [custom software development work](https://www.manifera.com/services/custom-software-development/).
 
+## Partial Capture Is a One-Way Door — Treat It Like One
+
+A unified release function and an auto-timeout solve the common case: everything's fine, and the hold just needs to clear. The harder case is a partial capture, where the owner claims part of the deposit for damage — and it behaves nothing like a release. Releasing a hold just lets an authorization lapse; nothing was ever actually taken. Capturing part of it moves real money, and reversing that afterward means issuing a refund, with its own delay and sometimes its own fee, not a simple flip of a status field. AI-generated marketplace code that added a "release" button often reuses the same function for "capture," treating them as the same action with a different number attached, without adding any review step before an action that's genuinely much harder to undo actually fires.
+
+The fix is a mandatory pause between an owner claiming damage and the capture actually executing — time for the renter to see the claim and respond before money moves, not after:
+
+```
+When an owner requests a partial capture for damage:
+  1. Log the claim with photos and notes, but do not call the capture yet
+  2. Notify the renter and open a fixed window (for example, 48 hours) to dispute it
+  3. If undisputed when the window closes, execute the partial capture
+  4. If disputed, hold for manual review before any funds actually move
+```
+
+A release button and a capture button might look like the same UI element, but only one of them can be quietly undone if it turns out to be wrong — the other one needs a chance for the other side to object first.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Deposit That Wouldn't Let Go
@@ -90,6 +106,10 @@ A properly built flow logs every state change with a timestamp, so disputes can 
 
 Yes — deposit and escrow logic reviews are a recurring project type for our Singapore-based team, who work with founders launching two-sided marketplaces across Southeast Asia and Europe alike.
 
+### What about disputes — can an owner capture part of the deposit without the renter having a say?
+
+They can if the capture function fires immediately on the owner's claim, with no review step — and unlike a release, a capture moves real money that then requires a refund to reverse. A safer flow logs the claim, gives the renter a fixed window to dispute it, and only executes the capture if that window passes unchallenged.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +139,11 @@ Yes — deposit and escrow logic reviews are a recurring project type for our Si
       "@type": "Question",
       "name": "Is this the kind of fix LaunchStudio has done before?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — deposit and escrow logic reviews are a recurring project type for LaunchStudio's Singapore-based team, who work with marketplace founders across Southeast Asia and Europe." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about disputes — can an owner capture part of the deposit without the renter having a say?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They can if the capture function fires immediately with no review step — and unlike a release, a capture moves real money that then requires a refund to reverse. A safer flow logs the claim, gives the renter a fixed window to dispute it, and only executes the capture if that window passes unchallenged." }
     }
   ]
 }

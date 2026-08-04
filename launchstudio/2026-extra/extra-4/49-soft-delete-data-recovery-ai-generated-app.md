@@ -47,6 +47,22 @@ This is exactly the kind of data modeling judgment call that separates AI-genera
 
 If you're not sure which of your app's delete functions are hard deletes waiting to cause a bad day, it's worth [reviewing your data model with our team](https://launchstudio.eu/en/#contact) before your first real user finds out the hard way.
 
+## Soft Delete Quietly Breaks Unique Constraints
+
+Switching a table to soft delete introduces a problem that only shows up once someone tries to reuse something they think is gone: a normal unique constraint on a column like `email` doesn't know the difference between an active row and a soft-deleted one, so a user who deletes their account and then tries to sign up again with the same email hits a constraint violation on a record that, from the product's perspective, no longer exists. The account looks deleted everywhere in the app, but the database still holds the old row, and the unique index still sees it.
+
+AI-generated migrations almost never account for this, because the constraint was written before soft delete existed in the schema, and nothing forces a re-check once `deleted_at` gets added. The fix is a partial unique index that only enforces uniqueness among active rows, not all rows:
+
+```
+CREATE UNIQUE INDEX users_email_active_unique
+ON users (email)
+WHERE deleted_at IS NULL;
+```
+
+With that in place, a deleted account's email is genuinely free to reuse, while two active accounts still can't collide. It's a small addition, but it's the kind of thing that only gets caught by someone deliberately testing "delete an account, then sign up again with the same email" — a test almost nobody runs until a real user hits it and gets a confusing signup error instead of a fresh account.
+
+The same pattern shows up on any column that was unique before soft delete existed — a workspace slug, an invite code, a subdomain — anywhere the app promises uniqueness to a user but the underlying constraint was never updated to understand that a soft-deleted row shouldn't count. Auditing every unique constraint on a newly soft-deletable table, not just the obvious email field, is what keeps this from surfacing as a support ticket months after the migration shipped.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Project That Vanished in One Click
@@ -86,6 +102,10 @@ Manifera's 11+ years of production engineering experience across 160+ projects m
 
 Generally not meaningfully — filtering on an indexed `deleted_at` column adds negligible overhead compared to the cost of an unrecoverable accidental deletion.
 
+### If I add soft delete, will a deleted user be able to sign up again with the same email?
+
+Not automatically — a standard unique constraint still treats the old, soft-deleted row as taken, so it needs to be replaced with a partial unique index scoped to active rows only, or the reused email will hit a constraint error.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +135,11 @@ Generally not meaningfully — filtering on an indexed `deleted_at` column adds 
       "@type": "Question",
       "name": "Does adding soft delete slow down my database queries?",
       "acceptedAnswer": { "@type": "Answer", "text": "Generally not meaningfully — filtering on an indexed deleted_at column adds negligible overhead compared to the cost of an unrecoverable accidental deletion." }
+    },
+    {
+      "@type": "Question",
+      "name": "If I add soft delete, will a deleted user be able to sign up again with the same email?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not automatically — a standard unique constraint still treats the old, soft-deleted row as taken, so it needs to be replaced with a partial unique index scoped to active rows only, or the reused email will hit a constraint error." }
     }
   ]
 }

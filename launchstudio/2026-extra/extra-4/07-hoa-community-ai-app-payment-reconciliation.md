@@ -47,6 +47,23 @@ LaunchStudio is powered by Manifera, a software development company with 11+ yea
 
 If your tool touches real money and real bank data, [get a fixed-scope estimate through our calculator](https://launchstudio.eu/en/#calculator) before residents start disputing balances that were never actually theirs to dispute.
 
+## Fixing a Mismatch Doesn't Un-Ring the Bell It Already Rang
+
+Confidence scoring reduces how often a payment lands in the unmatched queue, but it doesn't eliminate the rarer, more damaging case: a match that scores high confidence and is still wrong. Two units with adjacent numbers, a resident paying on behalf of a family member in a different unit, a typo that happens to collide with a real unit number — any of these can produce a match the system is genuinely confident about and genuinely incorrect on. When a treasurer catches this later and reassigns the payment, the balance itself updates instantly. What doesn't automatically update is anything that already fired off the old, wrong balance — a late notice, a delinquency flag, an automated reminder email — because correcting the underlying data doesn't retroactively reach into a message that already landed in someone's inbox.
+
+The reassignment flow needs to check for and reverse those downstream effects explicitly, not just fix the number:
+
+```
+When a payment reassignment is confirmed:
+  1. Update the balance for both the originally matched unit and the corrected unit
+  2. Check whether any late notice, delinquency flag, or reminder already
+     fired based on the old, incorrect balance
+  3. If one did, automatically send a correction notice and clear the flag
+  4. Record both the original mismatch and the correction in the audit trail
+```
+
+Without this step, a resident can end up with an accurate balance and an unretracted accusation of being behind on dues sitting in their inbox, which is exactly the kind of loose end that turns a data-matching bug into a resident who no longer trusts the board's numbers.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Payment That Landed on the Wrong Door
@@ -88,6 +105,10 @@ By rebuilding the matching logic with fuzzy matching and confidence scoring inst
 
 Yes — Manifera has delivered financial and data-analytics work for enterprise clients including Statler BI, and that experience directly informs how reconciliation systems get built for LaunchStudio founders.
 
+### If a payment gets reassigned to the correct unit later, does that automatically fix any late notice that already went out?
+
+Not unless the reassignment flow explicitly checks for it. Correcting the balance doesn't retroactively reach a late notice or delinquency flag that already fired on the old, wrong number — the flow needs a step that checks for downstream effects and sends a correction notice when one is found.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,6 +138,11 @@ Yes — Manifera has delivered financial and data-analytics work for enterprise 
       "@type": "Question",
       "name": "Is Manifera experienced with financial data systems beyond LaunchStudio projects?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera has delivered financial and data-analytics work for enterprise clients including Statler BI, and that experience informs how reconciliation systems are built for LaunchStudio founders." }
+    },
+    {
+      "@type": "Question",
+      "name": "If a payment gets reassigned to the correct unit later, does that automatically fix any late notice that already went out?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not unless the reassignment flow explicitly checks for it. Correcting the balance doesn't retroactively reach a late notice or delinquency flag that already fired on the old, wrong number — the flow needs a step that checks for downstream effects and sends a correction notice when one is found." }
     }
   ]
 }

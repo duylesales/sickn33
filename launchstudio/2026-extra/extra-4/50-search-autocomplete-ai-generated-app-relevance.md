@@ -47,6 +47,26 @@ The cost of getting this wrong compounds quietly, because a broken search featur
 
 If you've never actually typed a deliberate typo into your own app's search bar, it's worth doing that today — and if it comes back empty, [our price calculator](https://launchstudio.eu/en/#calculator) can scope what a proper fix looks like.
 
+## A Fixed Search Query Still Needs a Fresh Index
+
+Fixing the query logic solves half the problem. The other half only shows up after the fix ships: full-text search and fuzzy-matching implementations that use a dedicated index — a database's built-in text-search index, or an external search service — only stay accurate if that index gets updated every time the underlying data changes. A product gets renamed, a listing gets deleted, a price gets updated, and if nothing in the write path also updates the search index, search keeps confidently returning the old version, or worse, returns a result for something that no longer exists.
+
+This is easy to miss because the fuzzy search itself demos perfectly right after launch, when the index and the database are freshly in sync. The gap only appears weeks later, gradually, as normal edits accumulate and nobody notices the index quietly drifting from the source of truth. The fix is making index updates part of the same write path as the data change itself, not a separate step someone has to remember:
+
+```
+async function updateProduct(id, changes) {
+  await db.products.update(id, changes);
+  await searchIndex.upsert(id, await db.products.findOne(id));
+}
+
+async function deleteProduct(id) {
+  await db.products.delete(id);
+  await searchIndex.remove(id);
+}
+```
+
+For higher write volumes, this is often handled asynchronously through a queue rather than inline, but the principle holds either way: every write to the underlying data needs a corresponding write to the index, or search accuracy decays silently over time even after the original relevance problem is fixed.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Inventory Tool That Looked Empty on Purpose
@@ -86,6 +106,10 @@ Manifera's engineers test search against realistic, imperfect input patterns rat
 
 It affects any search feature built the same way — customer lookups, document search, contact search — anywhere an AI tool generated a simple substring match without explicit instructions to handle typos and partial terms.
 
+### Once fuzzy search is fixed, does it stay accurate on its own?
+
+Only if every write to the underlying data — a create, update, or delete — also updates the search index; otherwise the index quietly drifts out of sync with the database and search starts returning stale or missing results even though the query logic itself is correct.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +139,11 @@ It affects any search feature built the same way — customer lookups, document 
       "@type": "Question",
       "name": "Does this issue only affect product search, or other kinds of lookups too?",
       "acceptedAnswer": { "@type": "Answer", "text": "It affects any search feature built the same way — customer lookups, document search, contact search — anywhere a simple substring match was generated without handling typos." }
+    },
+    {
+      "@type": "Question",
+      "name": "Once fuzzy search is fixed, does it stay accurate on its own?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if every write to the underlying data also updates the search index — otherwise the index drifts out of sync with the database and search starts returning stale or missing results even though the query logic is correct." }
     }
   ]
 }

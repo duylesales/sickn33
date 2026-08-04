@@ -51,6 +51,21 @@ A practical approach is to treat every analytics event as something that gets re
 
 If you want a sense of what this kind of audit costs for your specific stack, our [pricing calculator](https://launchstudio.eu/en/#calculator) gives a fast estimate, and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice has done comparable data-handling audits for enterprise clients where the regulatory stakes were considerably higher than a typical early-stage SaaS product.
 
+## Hashing the ID Doesn't Catch What Rides Along in Other Fields
+
+Replacing a name or email with a hashed identifier fixes the most obvious leak, but it doesn't fix a quieter version of the same problem: personal data hiding inside fields nobody thought to check. A search box event that logs the raw query text, an error-tracking event that captures a form's current field values, or a page-view event that logs the full URL — any of these can carry an email address, a name typed into a search bar, or a token, even after the primary user identifier has been properly anonymized.
+
+```
+{
+  "event": "search_performed",
+  "userId": "9f3a2b1c...",
+  "query": "invoice for jan.devries@gmail.com",
+  "page": "/dashboard?token=abc123&ref=jan.devries@gmail.com"
+}
+```
+
+In an event like this, the identifier itself is safely hashed, but the query text and URL are carrying exactly the kind of personal data the fix was supposed to remove. The audit that matters isn't just "did we hash the user ID" — it's checking every field on every event type for anything free-text or user-supplied, since that's where identifying information tends to sneak back in through a path nobody was specifically watching.
+
 ## Real example
 
 ### An AI-Native Founder in Action: An Analytics Tool That Knew Every Student's Name
@@ -92,6 +107,10 @@ It applies to any SaaS product handling personal data, but the stakes scale with
 
 The audits are carried out by Manifera's engineering team, including the group based at Manifera's Ho Chi Minh City development center, applying the same data-handling review process used on larger enterprise engagements.
 
+### Even after hashing user IDs, can personal data still leak into analytics events?
+
+Yes — free-text fields like search queries, form values, or full page URLs can carry an email address or name even when the primary identifier is properly hashed, which is why the audit needs to check every field on every event type, not just the identifier.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +140,11 @@ The audits are carried out by Manifera's engineering team, including the group b
       "@type": "Question",
       "name": "Who actually does this kind of privacy audit at LaunchStudio?",
       "acceptedAnswer": { "@type": "Answer", "text": "The audits are carried out by Manifera's engineering team, including the group based at Manifera's Ho Chi Minh City development center, using the same data-handling review process used on larger enterprise engagements." }
+    },
+    {
+      "@type": "Question",
+      "name": "Even after hashing user IDs, can personal data still leak into analytics events?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — free-text fields like search queries, form values, or full page URLs can carry an email address or name even when the primary identifier is properly hashed, so the audit needs to check every field on every event type, not just the identifier." }
     }
   ]
 }

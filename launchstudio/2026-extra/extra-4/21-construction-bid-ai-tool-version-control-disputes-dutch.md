@@ -50,6 +50,24 @@ LaunchStudio brengt de hoogwaardige engineering van Manifera naar precies dit so
 
 Bouwbiedingen zijn geen toevallige transacties; het gaat om materiaalprijzen die wekelijks verschuiven, verplichtingen van onderaannemers en marges die zo klein zijn dat een verschil van € 4.000 het verschil kan zijn tussen een winstgevende klus en een verlies. Geschillen over "wat feitelijk is afgesproken" komen in de branche vaak voor, zelfs als er papieren sporen zijn; een digitale tool zonder versiegeschiedenis verkleint dat risico niet, maar elimineert het enige voordeel dat software zou moeten bieden. De technische teams van Manifera, waaronder het ontwikkelingscentrum aan Pho Quang Street in Ho Chi Minh-stad, hebben precies deze categorie van controleerbare administratie opgebouwd voor klanten op het gebied van bedrijfslogistiek en dienstverlening, en dezelfde discipline wordt netjes teruggeschroefd tot het biedingsinstrument van een solo-oprichter. Ontdek [Manifera's softwareontwikkelingswerk op maat](https://www.manifera.com/services/custom-software-development/) voor een indruk van dat trackrecord.
 
+## Gelijktijdige bewerkingen: Wanneer twee "nieuwe" versies racen om de huidige te worden
+
+Het bijhouden van een audit-trail en versiebeheer lost het probleem van het overschrijven op. Er ontstaat een nieuw risico bij gelijktijdige bewerkingen: twee aannemers openen versie 3 van een bod op hetzelfde moment, maken allebei wijzigingen en slaan ze op. Zonder optimistische vergrendeling (optimistic locking) overschrijft de laatste opslagactie de wijzigingen van de eerste, waardoor versie 4 de aanpassingen van een van de aannemers stilzwijgend wist.
+
+Gebruik een versie-teller bij het opslaan van wijzigingen:
+
+```javascript
+async function saveBidVersion(bidId, expectedVersion, newData) {
+  const result = await db.bids.updateOne(
+    { id: bidId, version: expectedVersion },
+    { $set: { ...newData }, $inc: { version: 1 } }
+  );
+  if (result.modifiedCount === 0) {
+    throw new Error('Het bod is gewijzigd door een andere gebruiker. Vernieuw de pagina.');
+  }
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het bod dat niemand kon bewijzen
@@ -91,6 +109,7 @@ Ja. Bij de migratie worden bestaande biedingen doorgaans aangevuld als hun eigen
 
 De onderliggende oplossing – het juiste versiebeheer van records – is van toepassing op elk AI-gegenereerd hulpmiddel dat prijzen, contracten of overeenkomsten afhandelt. Daarom ziet het technische centrum van Manifera in Ho Chi Minh-stad dit patroon in meerdere branches, en niet alleen in de bouwsector.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +117,42 @@ De onderliggende oplossing – het juiste versiebeheer van records – is van to
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why doesn't an AI coding tool build version history by default?",
+      "name": "Waarom bouwt een AI-coderingstool standaard geen versiegeschiedenis op als ik vraag om een ​​functie 'bod bewerken' te bouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because 'edit' and 'preserve every past version' are different specifications, and AI assistants default to the simpler overwrite unless versioning is explicitly requested."
+        "text": "Omdat \"bewerken\" en \"elke eerdere versie behouden\" twee verschillende specificaties zijn, zal een AI-assistent die de eenvoudigst werkende implementatie van \"bewerken\" genereert, bijna altijd voor overschrijven kiezen, tenzij de versievereiste expliciet wordt vermeld."
       }
     },
     {
       "@type": "Question",
-      "name": "Is bid versioning a database problem or a business logic problem?",
+      "name": "Is dit een databaseprobleem of een bedrijfslogicaprobleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both \u2014 it requires a versioned database schema and application logic that writes new records instead of updating existing ones."
+        "text": "Beide: het databaseschema heeft een structuur met versiebeheer nodig in plaats van een enkele veranderlijke rij, en de applicatielogica moet nieuwe versies schrijven in plaats van bestaande versies bij te werken, dus het is een gecoördineerde oplossing in plaats van een wijziging van één regel."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's background apply to a niche case like construction bids?",
+      "name": "Hoe is de technische achtergrond van Manifera van toepassing op een niche-gebruiksscenario zoals bouwbiedingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers have built auditable, versioned record systems for enterprise logistics and services clients for over 11 years, a pattern that transfers directly to bid tools."
+        "text": "De meer dan 120 ingenieurs van Manifera hebben al meer dan elf jaar controleerbare, versiebeheerde recordsystemen gebouwd voor zakelijke klanten in de logistieke en dienstensector. Datzelfde patroon – waarbij een onveranderlijke geschiedenis van een bedrijfskritisch record wordt bewaard – wordt rechtstreeks overgedragen naar een biedingstool voor de bouw, ongeacht de omvang van de sector."
       }
     },
     {
       "@type": "Question",
-      "name": "Can version control be added without losing existing bid data?",
+      "name": "Kan deze oplossing worden toegepast zonder de biedingen die al in het systeem bestaan ​​te verstoren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, existing bids are typically backfilled as their first version, with new versioned behavior applying going forward."
+        "text": "Ja. Bij de migratie worden bestaande biedingen doorgaans aangevuld als hun eigen eerste versie en wordt in de toekomst het nieuwe versiegedrag toegepast, zodat er tijdens het proces geen historische gegevens verloren gaan."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this fix only apply to construction bid tools?",
+      "name": "Werkt LaunchStudio alleen met bouwspecifieke tools, of geldt dit breder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, the same versioning pattern applies to any AI-generated tool handling prices, contracts, or agreements across multiple verticals."
+        "text": "De onderliggende oplossing – het juiste versiebeheer van records – is van toepassing op elk AI-gegenereerd hulpmiddel dat prijzen, contracten of overeenkomsten afhandelt. Daarom ziet het technische centrum van Manifera in Ho Chi Minh-stad dit patroon in meerdere branches, en niet alleen in de bouwsector."
       }
     }
   ]

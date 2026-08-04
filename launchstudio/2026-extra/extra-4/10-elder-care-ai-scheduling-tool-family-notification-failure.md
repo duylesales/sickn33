@@ -51,6 +51,29 @@ Fixing this properly means treating every schedule mutation — not just the ini
 
 You can see how this kind of review typically works via [LaunchStudio's process](https://launchstudio.eu/en/#process), and for a sense of the enterprise-grade engineering standard behind it, Manifera's [portfolio](https://www.manifera.com/portfolio/) includes work for regulated, trust-critical sectors where this exact discipline matters.
 
+## Sent Doesn't Mean Received
+
+Fixing the trigger problem — making sure every schedule change fires a notification — solves half the problem. The other half is that "notification sent" and "family actually saw it" are not the same event, and most notification systems only track the first one. An SMS can fail silently against a disconnected number. A push notification can fail against an app the family hasn't opened in weeks. An email can land in spam and sit there unread. If the system logs "notification sent" as success regardless of what happened next, a family can be technically informed and functionally still in the dark — which is the exact failure mode the fix above was supposed to close, just one layer downstream.
+
+A more defensible version tracks delivery and acknowledgment separately from send, and escalates when neither happens within a reasonable window:
+
+```
+async function notifyFamily(visitEvent, primaryContact, secondaryContact) {
+  const result = await sendNotification(primaryContact, visitEvent);
+  await logDelivery(visitEvent.id, primaryContact.id, result.status);
+
+  scheduleCheck(visitEvent.id, '2 hours', async () => {
+    const acknowledged = await wasAcknowledged(visitEvent.id, primaryContact.id);
+    if (!acknowledged && secondaryContact) {
+      await sendNotification(secondaryContact, visitEvent);
+      await logDelivery(visitEvent.id, secondaryContact.id, 'escalated');
+    }
+  });
+}
+```
+
+This doesn't need to be complicated — a delivery log and a single fallback contact covers most real cases. What it can't be is assumed. A caregiving family relying on a single, unconfirmed notification channel is one bounced SMS away from believing a visit happened when nobody has actually confirmed it did.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Swap Nobody Announced
@@ -88,6 +111,10 @@ He's been direct that the hard part of software today isn't generating the idea 
 
 We rebuild the notification layer to be event-driven across every schedule mutation, rather than tied only to the original booking, so any change to a visit reliably reaches the people who need to know.
 
+### What happens if a family never actually sees the notification the app sends?
+
+Without separate tracking for delivery and acknowledgment, nothing — the system logs the message as sent and moves on, which is why a defensible setup checks whether a notification was opened or acknowledged and escalates to a secondary contact if it wasn't, rather than assuming a sent message was a received one.
+
 ### Does LaunchStudio work directly with the Amsterdam team on projects like this?
 
 Yes — LaunchStudio's Amsterdam office is our European client-facing hub, and trust-critical scheduling and notification work like this is a recurring project type there.
@@ -116,6 +143,11 @@ Yes — LaunchStudio's Amsterdam office is our European client-facing hub, and t
       "@type": "Question",
       "name": "What does LaunchStudio actually change to fix this?",
       "acceptedAnswer": { "@type": "Answer", "text": "We rebuild the notification layer to be event-driven across every schedule mutation, rather than tied only to the original booking, so any change to a visit reliably reaches the people who need to know." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a family never actually sees the notification the app sends?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Without separate tracking for delivery and acknowledgment, nothing — the system logs the message as sent and moves on, which is why a defensible setup checks whether a notification was opened or acknowledged and escalates to a secondary contact if it wasn't." }
     },
     {
       "@type": "Question",

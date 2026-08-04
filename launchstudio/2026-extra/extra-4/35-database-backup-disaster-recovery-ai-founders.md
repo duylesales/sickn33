@@ -49,6 +49,26 @@ A backup strategy that a founder can genuinely rely on has three properties: it'
 
 That third point is the one almost everyone skips, because it takes real effort and never feels urgent — until the day it's the only thing standing between a founder and permanently lost customer data. Behind LaunchStudio is Manifera's team of 120+ seasoned engineers, and a scheduled restore test is one of the first things added during a production-readiness review, precisely because it's the cheapest possible insurance against the most expensive possible failure.
 
+## Daily Snapshots Still Leave a Gap: Point-in-Time Recovery
+
+Even a backup that's automated, monitored, and restore-tested has a limitation worth knowing about before it matters: a nightly snapshot only ever lets you restore to the moment that snapshot was taken. If a bad migration or an accidental bulk delete happens at 2pm, restoring from last night's snapshot means everything between midnight and 2pm — every order, every signup, every customer edit — is gone along with the mistake you're trying to undo. The snapshot did its job. It just wasn't built to answer "can I get back to 90 seconds before the bug ran," only "can I get back to last night."
+
+Point-in-time recovery (PITR) closes that gap by continuously archiving the database's write-ahead log alongside periodic snapshots, so a restore can be replayed forward to any specific timestamp — not just the last snapshot boundary. Most managed Postgres and MySQL providers support this, but it typically isn't turned on by default the way basic daily snapshots are, and it's rarely something an AI code generator configures, because it lives in infrastructure settings the tool never touches.
+
+```
+Snapshot-only recovery:
+  last backup: 00:00
+  incident: 14:03
+  restorable to: 00:00 (14 hours of data lost)
+
+Point-in-time recovery:
+  continuous log archive since last snapshot
+  incident: 14:03
+  restorable to: 14:02:30 (seconds of data lost)
+```
+
+For an app handling real transactions, the difference between those two numbers is the difference between a rough day and a business-ending one. It's worth checking, specifically, whether your database provider's plan includes point-in-time recovery or only snapshot backups — the two get marketed under similar language, but they solve very different problems.
+
 ## Why This Matters More the Moment You Have Real Customers
 
 In a prototype with test data, losing the database is an inconvenience — you regenerate some sample rows and move on. The moment real customers are storing real data in your app, a failed restore isn't an inconvenience, it's potentially the end of the business relationship, and in regulated contexts it can be a compliance failure too. The cost of testing a restore proactively is a couple of hours. The cost of discovering your backups don't work during an actual incident is measured in lost customer trust, and sometimes lost customers entirely.
@@ -96,6 +116,10 @@ No — the best time to fix it is before you have much data to lose, since the f
 
 Not at all — most of the founders we work with through our Singapore hub come to us before anything's gone wrong, specifically to close this kind of gap while it's still just a risk instead of a crisis.
 
+### What's the difference between a snapshot backup and point-in-time recovery?
+
+A snapshot backup can only restore you to the exact moment it was taken, so anything that happened between the last snapshot and an incident is lost; point-in-time recovery continuously archives transaction logs so you can restore to seconds before a specific bad event instead of losing everything since the last nightly backup.
+
 Describe your project — [we respond within one business day](https://launchstudio.eu/en/#contact) with a clear view of what your backup setup is actually protecting you from.
 
 To see the broader engineering standard behind this kind of production hardening, visit [Manifera's about us page](https://www.manifera.com/about-us/).
@@ -129,6 +153,11 @@ To see the broader engineering standard behind this kind of production hardening
       "@type": "Question",
       "name": "Does LaunchStudio only work with founders who've already had a data-loss incident?",
       "acceptedAnswer": { "@type": "Answer", "text": "Not at all — most of the founders we work with through our Singapore hub come to us before anything's gone wrong, specifically to close this kind of gap while it's still just a risk instead of a crisis." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a snapshot backup and point-in-time recovery?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A snapshot backup can only restore you to the exact moment it was taken, so anything that happened between the last snapshot and an incident is lost; point-in-time recovery continuously archives transaction logs so you can restore to seconds before a specific bad event instead of losing everything since the last nightly backup." }
     }
   ]
 }

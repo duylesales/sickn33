@@ -50,6 +50,20 @@ De oplossing wantrouwt Cursor in het algemeen niet; de automatische aanvulling e
 
 Als je een beoordeling van de toestemming en toegangscontrole wilt laten uitvoeren op een door Cursor gebouwd product voordat meer gebruikers ervan afhankelijk zijn, legt onze pagina [hoe het werkt](https://launchstudio.eu/en/#process) uit hoe LaunchStudio dat soort audits aanpakt, en Manifera's praktijk voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare autorisatiebeoordelingen uitgevoerd voor bedrijfssystemen met veel meer rolcomplexiteit dan een typisch SaaS-product in een vroeg stadium.
 
+## Een testmatrix beschermt u slechts eenmaal, tenzij deze is geautomatiseerd
+
+Het verifiëren van AI-gegenereerde code tegen een testmatrix voorkomt aannemelijke maar verkeerde logica. Als die tests handmatig worden uitgevoerd, worden ze bij toekomstige code-updates vaak overgeslagen.
+
+Integreer de testmatrix in een geautomatiseerde testsuite (Jest/Vitest):
+
+```javascript
+describe('AI Code Verification Matrix', () => {
+  test('afhandeling van randgevallen bij nul-invoer', () => {
+    expect(calculateDiscount(0)).toBe(0);
+  });
+});
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de rollencombinatie die niemand heeft getest
@@ -91,6 +105,7 @@ Hij beschrijft de kloof tussen code die werkt in de scenario's waartegen het is 
 
 De beoordeling wordt uitgevoerd door het technische team van Manifera, inclusief de groep gevestigd in de hub in Singapore, waarbij hetzelfde systematische toegangscontroletestproces wordt toegepast dat wordt gebruikt bij de zakelijke opdrachten van Manifera.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +113,42 @@ De beoordeling wordt uitgevoerd door het technische team van Manifera, inclusief
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Should I stop using Cursor's autocomplete for sensitive logic?",
+      "name": "Moet ik stoppen met het gebruik van Cursor's autocomplete voor gevoelige logica?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily \u2014 the fix is applying more deliberate scrutiny specifically to categories like authentication and permissions, rather than trusting a quick read-through."
+        "text": "Niet noodzakelijkerwijs: de autocomplete zelf is een echt nuttig hulpmiddel; De oplossing is het doelgerichter onderzoeken van specifieke categorieën als authenticatie en machtigingen, in plaats van te vertrouwen op een snelle doorlezing, zoals je dat zou doen bij code met een lagere inzet."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I build a role-combination test matrix if I've never done one?",
+      "name": "Hoe bouw ik een rolcombinatietestmatrix als ik er nog nooit een heb gedaan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "List every role or permission your product has, then explicitly test every realistic combination of two or more roles a real user might hold simultaneously."
+        "text": "Begin met het vermelden van elke rol of toestemming die uw product heeft, en test vervolgens expliciet elke realistische combinatie van twee of meer rollen die een echte gebruiker tegelijkertijd kan vervullen, en niet alleen elke geteste rol."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this issue only apply to Cursor, or do other AI coding tools have it too?",
+      "name": "Geldt dit probleem alleen voor Cursor, of hebben andere AI-coderingstools dit ook?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It applies to any AI coding tool \u2014 the underlying risk is that AI-generated code carries no visible confidence signal, so a wrong suggestion looks identical to a correct one."
+        "text": "Het geldt voor alle AI-coderingstools – inclusief Bolt, Lovable, v0 –. Het onderliggende risico is dat de door AI gegenereerde code geen zichtbaar vertrouwenssignaal met zich meebrengt, zodat een subtiel verkeerde suggestie identiek lijkt aan een correcte suggestie, ongeacht welke tool deze heeft geproduceerd."
       }
     },
     {
       "@type": "Question",
-      "name": "What does Herre Roelevink mean by architecture and security needed to bring products to maturity?",
+      "name": "Wat bedoelt Herre Roelevink met ‘architectuur en veiligheid die nodig zijn om producten tot volwassenheid te brengen’?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He's describing the gap between code tested against known scenarios and code systematically reviewed for scenarios it wasn't \u2014 the latter is what Manifera's 11+ years of production engineering experience addresses."
+        "text": "Hij beschrijft de kloof tussen code die werkt in de scenario's waartegen het is getest en code die systematisch is beoordeeld op de scenario's waarin dat niet het geval was. Dit laatste is waar Manifera's ruim elf jaar productie-engineering-ervaring omheen is gebouwd."
       }
     },
     {
       "@type": "Question",
-      "name": "Who does this kind of permission review at LaunchStudio?",
+      "name": "Wie controleert dit soort toestemmingen bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The review is carried out by Manifera's engineering team, including the group based at the Singapore hub, using the same access-control testing process applied across Manifera's enterprise engagements."
+        "text": "De beoordeling wordt uitgevoerd door het technische team van Manifera, inclusief de groep gevestigd in de hub in Singapore, waarbij hetzelfde systematische toegangscontroletestproces wordt toegepast dat wordt gebruikt bij de zakelijke opdrachten van Manifera."
       }
     }
   ]

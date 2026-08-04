@@ -51,6 +51,27 @@ Not every flagged component needs a rewrite. Many open-source licenses (MIT, Apa
 
 If you're preparing for an investment conversation or eventual acquisition and want your codebase's license posture checked before someone else checks it for you, our [contact page](https://launchstudio.eu/en/#contact) is the fastest way to start that conversation, and Manifera's [about us](https://www.manifera.com/about-us/) page has more on the enterprise clients our engineers have supported through exactly this kind of technical due diligence.
 
+## An Audit That Finds the Risk Isn't the Same as Discharging It
+
+Identifying a permissive-licensed dependency and deciding it's fine is only half the obligation. Licenses like MIT and Apache 2.0 are low-risk precisely because their requirement is simple — but it's still a requirement, not a formality: the attribution notice actually has to travel with what you ship, not just live in an internal spreadsheet or a Slack thread confirming "we checked, it's MIT, we're fine." A founder who runs the audit, correctly concludes nothing needs rewriting, and then never adds the notices file to the shipped product has closed the risk on paper without closing it in practice.
+
+In practice this means the audit's output should end in an actual artifact that ships with the product, not just a decision:
+
+```
+THIRD-PARTY NOTICES
+
+This product includes software from the following open-source projects:
+
+- date-fns (MIT License) — Copyright (c) date-fns contributors
+- react-table (MIT License) — Copyright (c) Tanner Linsley
+- pdf-lib (MIT License) — Copyright (c) PDF-lib contributors
+
+Full license text for each package is available in
+/legal/third-party-notices.txt
+```
+
+It's a small thing to generate and easy to defer indefinitely once the scarier copyleft question is answered — which is exactly why it's the step most likely to get skipped.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Copyleft Snippet Sitting Inside a Proprietary Product
@@ -92,6 +113,10 @@ Automated scanners catch declared dependencies well but miss code that was copie
 
 It's worth repeating periodically, especially after major feature development sprints where a lot of new AI-suggested code has been accepted, since each new sprint can introduce new undetected dependencies.
 
+### If a scan finds only permissive licenses, is my compliance work actually done?
+
+Not quite — the audit identifying that a dependency is MIT or Apache-licensed only satisfies the license if the required attribution notice actually ships with the product, so the audit's output needs to end in a notices file included in the release, not just a decision that "it's fine" recorded internally.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +146,11 @@ It's worth repeating periodically, especially after major feature development sp
       "@type": "Question",
       "name": "Is this a one-time check or something I should repeat?",
       "acceptedAnswer": { "@type": "Answer", "text": "It's worth repeating periodically, especially after major feature development sprints where a lot of new AI-suggested code has been accepted." }
+    },
+    {
+      "@type": "Question",
+      "name": "If a scan finds only permissive licenses, is my compliance work actually done?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not quite — identifying a dependency as MIT or Apache-licensed only satisfies the license if the required attribution notice actually ships with the product, so the audit needs to end in a notices file included in the release, not just an internal decision that it's fine." }
     }
   ]
 }

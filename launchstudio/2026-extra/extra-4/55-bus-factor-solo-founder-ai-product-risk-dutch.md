@@ -50,6 +50,18 @@ Je hebt geen team nodig om een ​​busfactor van één te repareren. U hebt ee
 
 Als u nog eens goed wilt kijken waar uw product momenteel van afhankelijk is, dan is onze [contactpagina](https://launchstudio.eu/en/#contact) een snelle manier om dat gesprek te starten, en het team van Manifera voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is zo gestructureerd dat de continuïteit van een product nooit afhankelijk is van de bereikbaarheid van één persoon.
 
+## Een tweede beheerder toevoegen lost MFA niet op zichzelf op
+
+Het overdragen van toegang door een tweede beheerdersaccount aan te maken vermindert het "bus factor"-risico (wanneer één oprichter wegvalt). Als de twee-factor-authenticatie (MFA) voor het secundaire account gekoppeld is aan de persoonlijke telefoon van de eerste oprichter, kan de tweede beheerder alsnog niet inloggen tijdens een noodgeval.
+
+Gebruik gedeelde wachtwoordkluisbeveiliging met back-up MFA-sleutels:
+
+```text
+Checklist voor noodtoegang:
+1. Sla MFA-herstelsleutels op in een gedeelde kluis (bijv. 1Password for Teams).
+2. Documenteer de stappen voor wachtwoordherstel in de interne opslag.
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: twee weken offline, niemand anders heeft de sleutels in handen
@@ -91,6 +103,7 @@ Een wachtwoordbeheerder lost het probleem 'iemand anders kan inloggen' op, maar 
 
 Ja, maar minder urgent: dezelfde audit is de moeite waard voor elk team waar de toegang tot cruciale accounts geconcentreerd is bij één persoon, zelfs als die persoon niet de enige medewerker is.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +111,42 @@ Ja, maar minder urgent: dezelfde audit is de moeite waard voor elk team waar de 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do I need a co-founder to fix my bus factor?",
+      "name": "Heb ik een mede-oprichter nodig om mijn busfactor te herstellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 a trusted business contact, a family member, or an ongoing support arrangement with LaunchStudio can serve as the second admin; what matters is that someone besides you can act if needed."
+        "text": "Nee: een vertrouwd zakelijk contact, een familielid of zelfs een afspraak met LaunchStudio voor voortdurende ondersteuning kan als tweede beheerder dienen; waar het om gaat is dat iemand anders dan jij in actie kan komen als dat nodig is."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the minimum list of systems I should check first?",
+      "name": "Wat is de minimale lijst met systemen die ik eerst moet controleren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Production database access, domain registrar, payment provider, and your primary hosting account \u2014 these are the ones most likely to cause an irreversible problem if left unattended."
+        "text": "Toegang tot de productiedatabase, domeinregistreerder, betalingsprovider (Stripe of iets dergelijks) en uw primaire hostingaccount: deze vier veroorzaken het meest waarschijnlijk een onomkeerbaar probleem als ze onbeheerd worden achtergelaten."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio typically structure this kind of audit?",
+      "name": "Hoe structureert LaunchStudio dit soort audits doorgaans?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our team, working out of Manifera's Amsterdam office, lists every dependency a product has, confirms current access, and adds a documented second admin to each critical system."
+        "text": "Ons team, dat vanuit Manifera's kantoor in Amsterdam werkt, maakt een lijst van elke afhankelijkheid die een product heeft, bevestigt de huidige toegang en voegt een gedocumenteerde tweede beheerder toe aan elk kritiek systeem - een proces dat is opgebouwd op basis van Manifera's bredere ervaring met het ondersteunen van productiesystemen voor zakelijke klanten."
       }
     },
     {
       "@type": "Question",
-      "name": "Isn't a password manager enough to solve this?",
+      "name": "Is een wachtwoordbeheerder niet voldoende om dit op te lossen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A password manager solves the login problem but not the authorization problem \u2014 payment providers and registrars often flag access from an unrecognized login, so a proper second admin needs to be added directly to each account."
+        "text": "Een wachtwoordbeheerder lost het probleem 'iemand anders kan inloggen' op, maar niet het probleem 'iemand anders is daadwerkelijk geautoriseerd voor het account'. Betalingsproviders en registrars markeren of blokkeren vaak de toegang van een niet-herkende login, zelfs met het juiste wachtwoord, dus er moet direct een goede tweede beheerder worden toegevoegd."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this apply even if I already have a small team?",
+      "name": "Geldt dit ook als ik al een klein team heb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, though less urgently \u2014 the same audit is worth running for any team where critical account access is concentrated in one person."
+        "text": "Ja, maar minder urgent: dezelfde audit is de moeite waard voor elk team waar de toegang tot cruciale accounts geconcentreerd is bij één persoon, zelfs als die persoon niet de enige medewerker is."
       }
     }
   ]

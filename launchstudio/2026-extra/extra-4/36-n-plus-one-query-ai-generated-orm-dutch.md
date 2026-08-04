@@ -69,6 +69,19 @@ Een oprichter die zijn eigen app test, heeft bijna nooit genoeg gegevens om N+1-
 
 In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door Vodafone, TNO en CFLW – en prestatieprofilering op basis van een realistisch datavolume is een standaardonderdeel van de manier waarop onze engineers een technische beoordeling vóór de lancering benaderen, en niet een bijzaak die wordt toegevoegd nadat een klant heeft geklaagd. Als uw app niet is getest met gegevens op ware schaal, [kijk dan wat een technische audit daadwerkelijk controleert](https://launchstudio.eu/en/#process) voordat uw eerste serieuze klant dit voor u ontdekt.
 
+## Het oplossen van N+1 met een rauwe JOIN kan paginering breken
+
+Wanneer u N+1 query's vervangt door een SQL JOIN om gerelateerde records op te halen, kan het combineren van paginering (`LIMIT` / `OFFSET`) op de JOIN-tabel onverwachte resultaten opleveren. U krijgt dan minder hoofdrecords dan de ingestelde limiet omdat de JOIN rijen heeft gedupliceerd.
+
+Gebruik subqueries of gescheiden batch-queries (zoals Dataloader) voor paginering bij gerelateerde gegevens:
+
+```javascript
+// Batch ophalen in plaats van een naïeve JOIN met LIMIT
+const posts = await db.posts.find().limit(20);
+const authorIds = [...new Set(posts.map(p => p.authorId))];
+const authors = await db.users.find({ id: { $in: authorIds } });
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: het dashboard dat snel was totdat het dat niet meer was
@@ -114,6 +127,7 @@ Bereken wat uw project kost — [gebruik onze calculator](https://launchstudio.e
 
 Voor meer informatie over hoe backend-systemen zijn ontworpen om op schaal stand te houden, zie [Manifera's portfolio](https://www.manifera.com/portfolio/).
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,42 +135,42 @@ Voor meer informatie over hoe backend-systemen zijn ontworpen om op schaal stand
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why do AI code generators produce N+1 queries so often?",
+      "name": "Waarom produceren AI-codegeneratoren zo vaak N+1-query's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Looping through a list and fetching related data per item is the most readable, intuitive way to write that logic, and it works identically to a batched query at small scale \u2014 the AI has no way to know it'll be a performance problem until row counts grow."
+        "text": "Het doorlopen van een lijst en het ophalen van gerelateerde gegevens per item is de meest leesbare, intuïtieve manier om die logica te schrijven, en het werkt op dezelfde manier als een batchquery op kleine schaal - de AI kan op geen enkele manier weten dat het een prestatieprobleem zal zijn totdat het aantal rijen groeit, aangezien niets in een korte prompt-and-generate-cyclus dat test."
       }
     },
     {
       "@type": "Question",
-      "name": "How much data do I need before N+1 becomes a real problem?",
+      "name": "Hoeveel data heb ik nodig voordat N+1 een echt probleem wordt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It varies by query complexity, but many founders start noticing it in the hundreds-of-records range and it becomes severe well before the low thousands \u2014 well within reach of a single active customer's account."
+        "text": "Het varieert afhankelijk van de complexiteit van de zoekopdracht, maar veel oprichters beginnen het op te merken in het bereik van honderden records en het wordt ernstig vóór de lage duizenden - ruim binnen het bereik van het account van een enkele actieve klant, en niet alleen op de gehele app-brede schaal."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this be caught before launch instead of after?",
+      "name": "Kan dit vóór de lancering worden opgevangen in plaats van erna?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 Manifera's engineers routinely load-test against synthetic data at realistic volume as part of a pre-launch review specifically to catch this before a real customer does."
+        "text": "Ja. De technici van Manifera testen routinematig synthetische data op een realistisch volume als onderdeel van een pre-launch review, specifiek om dit te ontdekken voordat een echte klant dat doet, in plaats van de prestaties te behandelen als iets dat je reactief optimaliseert."
       }
     },
     {
       "@type": "Question",
-      "name": "Does fixing N+1 queries require rewriting the whole backend?",
+      "name": "Moet voor het oplossen van N+1-query's de hele backend worden herschreven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 it's almost always a targeted fix to specific queries once they're identified through profiling, not a rewrite; the surrounding business logic typically stays untouched."
+        "text": "Nee. Het is vrijwel altijd een doelgerichte oplossing voor specifieke zoekopdrachten zodra deze door middel van profilering zijn geïdentificeerd, en niet een herschrijving; de omringende bedrijfslogica blijft doorgaans onaangeroerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this the kind of issue Manifera's enterprise clients deal with too?",
+      "name": "Is dit het soort probleem waar de zakelijke klanten van Manifera ook mee te maken hebben?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 query performance at scale is a universal problem regardless of company size, and it's one of the patterns our engineers regularly address across the 160+ projects delivered for clients including Vodafone and MO Batteries."
+        "text": "Ja, de prestaties van zoekopdrachten op grote schaal zijn een universeel probleem, ongeacht de bedrijfsgrootte, en het is een van de patronen die onze technici regelmatig aanpakken in de ruim 160 projecten die zijn geleverd voor klanten, waaronder Vodafone en MO Batteries, maar dan in een andere orde van grootte.  Bereken wat uw project kost — [gebruik onze calculator](https://launchstudio.eu/en/#calculator) om een ​​prestatie- en databasebeoordeling voor uw app uit te voeren.  Voor meer informatie over hoe backend-systemen zijn ontworpen om op schaal stand te houden, zie [Manifera's portfolio](https://www.manifera.com/portfolio/)."
       }
     }
   ]

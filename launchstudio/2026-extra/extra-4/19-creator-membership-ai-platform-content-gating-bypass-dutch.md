@@ -50,6 +50,18 @@ Ons team, dat werkt vanuit het kantoor van LaunchStudio in Amsterdam, beschouwt 
 
 Als u een technische audit van uw toegangscontrolelogica wilt voordat u de volgende inhoud plaatst of lanceert, kunt u [contact opnemen via LaunchStudio](https://launchstudio.eu/en/#contact). Voor hoe dit patroon zich op bedrijfsschaal afspeelt, zie Manifera's praktijk voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
+## Uw CDN weet niet dat de ondertekende URL is verlopen
+
+Het implementeren van ondertekende URL's via de server is de juiste beveiligingsstap. Een veelvoorkomende leemte ontstaat echter bij de wisselwerking met uw CDN (Content Delivery Network). Als het CDN de reactie (het mediabestand) met de oorspronkelijke ondertekende URL te lang in de cache houdt, kan een gebruiker met de verlopen link het bestand nog steeds downloaden vanuit de CDN-cache.
+
+Zorg ervoor dat uw CDN-cachingkoppen strikt aansluiten bij de vervaltijd van de ondertekende URL:
+
+```javascript
+function setSecurityHeaders(res, expiryInSeconds) {
+  res.setHeader('Cache-Control', `private, max-age=${expiryInSeconds}`);
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native oprichter in actie: het URL-patroon dat iedereen zou kunnen raden
@@ -91,6 +103,7 @@ Nee. Hetzelfde patroon treft elke beveiligde bron met een voorspelbare URL, incl
 
 Ja – audits op het gebied van content-gating en toegangscontrole zijn een standaard onderdeel van de technische beoordelingen die door het in Amsterdam gevestigde team van LaunchStudio worden afgehandeld, specifiek voor makers- en lidmaatschapsplatforms.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +111,42 @@ Ja – audits op het gebied van content-gating en toegangscontrole zijn een stan
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How can I quickly check if my own platform has this issue?",
+      "name": "Hoe kan ik snel controleren of mijn eigen platform dit probleem heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Log in as a member, open a premium content item, copy its direct URL, then open that URL in a private/incognito browser window with no session active. If the content still loads, you have this gap."
+        "text": "Log in als lid, open een item met premium inhoud, kopieer de directe URL ervan en open vervolgens die URL in een privé/incognito browservenster zonder actieve sessie. Als de inhoud nog steeds wordt geladen, heb je precies dit gat."
       }
     },
     {
       "@type": "Question",
-      "name": "Why does this happen specifically with AI-generated platforms?",
+      "name": "Waarom gebeurt dit specifiek bij door AI gegenereerde platforms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI builders default to conditional UI rendering for gating logic because that's what a prompt like 'add a members-only paywall' typically describes, without specifying that the underlying resource also needs server-side authorization."
+        "text": "AI-bouwers gebruiken standaard voorwaardelijke UI-weergave voor poortlogica, omdat dat is wat een prompt als \"voeg een betaalmuur toe die alleen voor leden is\" doorgaans beschrijft, zonder expliciet te specificeren dat de onderliggende bron ook autorisatie aan de serverzijde nodig heeft."
       }
     },
     {
       "@type": "Question",
-      "name": "Is a signed URL enough, or do I need a full authenticated endpoint?",
+      "name": "Is een ondertekende URL voldoende of heb ik een volledig geverifieerd eindpunt nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Signed URLs with short expiry windows are usually sufficient for media delivery; a full authenticated endpoint gives more control for per-request logging or dynamic permission checks, which Manifera's engineers can help scope."
+        "text": "Ondertekende URL's met een korte vervalperiode zijn doorgaans voldoende voor medialevering en zijn eenvoudiger te implementeren; een volledig geauthenticeerd eindpunt geeft meer controle als u logboekregistratie per aanvraag of dynamische toestemmingscontroles nodig heeft, waarbij de technici van Manifera u kunnen helpen deze te bereiken op basis van de schaal van uw platform."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this only affect video content?",
+      "name": "Heeft dit alleen betrekking op video-inhoud?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 the same pattern affects any gated resource with a predictable URL, including downloadable PDFs, premium images, audio files, and API endpoints returning member-only data."
+        "text": "Nee. Hetzelfde patroon treft elke beveiligde bron met een voorspelbare URL, inclusief downloadbare pdf's, premiumafbeeldingen, audiobestanden en zelfs API-eindpunten die alleen voor leden toegankelijke gegevens retourneren."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this the kind of review LaunchStudio's Amsterdam team does regularly?",
+      "name": "Is dit het soort recensie dat het Amsterdamse team van LaunchStudio regelmatig doet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 content-gating and access-control audits are a standard part of technical reviews handled by LaunchStudio's Amsterdam-based team for creator and membership platforms."
+        "text": "Ja – audits op het gebied van content-gating en toegangscontrole zijn een standaard onderdeel van de technische beoordelingen die door het in Amsterdam gevestigde team van LaunchStudio worden afgehandeld, specifiek voor makers- en lidmaatschapsplatforms."
       }
     }
   ]

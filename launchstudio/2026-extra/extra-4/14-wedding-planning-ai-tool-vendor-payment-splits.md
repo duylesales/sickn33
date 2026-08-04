@@ -57,6 +57,24 @@ A working solution typically requires:
 
 LaunchStudio brings Manifera's enterprise-grade engineering to the founder economy for exactly this kind of fix — restructuring a payment data model without requiring a rebuild of the Lovable-built interface a founder and their early clients already know. Manifera's Singapore hub on Tras Street has engineers experienced in payment system architecture drawn from work across financial and enterprise clients, the same skill set applied here at a fraction of enterprise pricing. You can [see LaunchStudio's process from prototype to production](https://launchstudio.eu/en/#process) to understand how this kind of backend restructuring typically gets scoped.
 
+## What Stops Vendor Allocations From Adding Up to More Than the Deposit?
+
+Splitting a deposit into per-vendor allocation records solves the tracking problem, but it opens a data-integrity question the original build never had to answer: what actually stops those allocations from adding up to more than the deposit that was collected? A planner entering percentages by hand — 40% to the venue, 30% to catering, the rest split across smaller vendors — can make an arithmetic mistake and accidentally commit 110% of a deposit that never existed, or leave a chunk of a payment unallocated to any vendor at all. Without an enforced constraint, the allocation table will happily store either mistake, and nobody notices until a vendor is told they're owed money the deposit never actually covered.
+
+The fix is a validation step that runs before an allocation set is saved, not a manual review after the fact:
+
+```
+function validateAllocations(depositAmount, allocations) {
+  const total = allocations.reduce((sum, a) => sum + a.amount, 0);
+  if (total > depositAmount) {
+    throw new Error(`Allocations total ${total} exceed deposit of ${depositAmount}`);
+  }
+  return true;
+}
+```
+
+This is a small check, but it's the difference between a reconciliation dashboard that's always trustworthy and one that's only trustworthy if whoever entered the split happened to do the arithmetic correctly.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Deposit With No Paper Trail
@@ -92,6 +110,10 @@ As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, notes
 
 No — the fix happens in the backend data model and adds a reconciliation view; your existing client-facing booking and payment screens stay the same.
 
+### What stops a planner from accidentally allocating more than the deposit actually covers?
+
+Nothing, unless the system validates the total of all vendor allocations against the deposit amount before saving — without that check, a planner entering percentages or fixed amounts by hand can promise vendors more money than the client actually paid, and the mismatch won't surface until someone tries to reconcile it.
+
 ### Does LaunchStudio work with wedding and event industry founders specifically?
 
 LaunchStudio isn't limited to one industry — Manifera's Singapore hub and its broader engineering team apply the same payment architecture rigor to any AI-built prototype handling real money, from event planning to marketplaces.
@@ -120,6 +142,11 @@ LaunchStudio isn't limited to one industry — Manifera's Singapore hub and its 
       "@type": "Question",
       "name": "Will fixing this change how my clients or vendors use the app?",
       "acceptedAnswer": { "@type": "Answer", "text": "No — the fix happens in the backend data model and adds a reconciliation view; existing client-facing screens stay the same." }
+    },
+    {
+      "@type": "Question",
+      "name": "What stops a planner from accidentally allocating more than the deposit actually covers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nothing, unless the system validates the total of all vendor allocations against the deposit amount before saving — without that check, a planner entering percentages or fixed amounts by hand can promise vendors more money than the client actually paid." }
     },
     {
       "@type": "Question",

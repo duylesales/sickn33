@@ -66,6 +66,19 @@ SSO tends to be the first requirement that surfaces, but it's rarely the only on
 
 Getting ahead of these before your first serious enterprise conversation, rather than during one, is the difference between procurement being a formality and procurement being the deal-killer. [Our packages](https://launchstudio.eu/en/#packages) are built around exactly this kind of production-hardening work — taking an AI-generated app that works for early users and making it credible to an enterprise security review, without touching the frontend your team already built.
 
+## Just-in-Time Provisioning Handles Logins In — Not Employees Out
+
+Just-in-time provisioning solves half of the identity lifecycle problem: a new employee logs in through SSO for the first time, and your app automatically creates their account. The half it doesn't solve is what happens when that employee leaves the company or changes roles. Nothing about JIT provisioning removes access — it only ever adds it — so an offboarded employee's account in your app stays fully active until someone on the customer's side happens to notice and manually revokes it inside your product specifically, which defeats the entire point of centralizing identity in the first place.
+
+```
+1. IT admin removes user from Okta/Azure AD
+2. Your app has no event to react to — nothing changed on your side
+3. The user's account in your app is still active
+4. It stays active until someone manually deletes it in your admin panel
+```
+
+The enterprise-grade fix is SCIM (System for Cross-domain Identity Management), a protocol that lets the identity provider push user lifecycle events — created, updated, deactivated — directly to your app in real time, so an employee removed from Okta or Azure AD loses access to your product automatically, the same moment they lose access to everything else. Larger enterprise customers increasingly ask about SCIM support specifically during security review, not just SSO, because a login mechanism without automatic deprovisioning is only half of what "centralized identity management" is supposed to guarantee.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Deal Procurement Almost Killed
@@ -107,6 +120,10 @@ Role-based access control, audit logging, and data residency questions are the m
 
 Yes — SAML SSO and enterprise access control work is part of Manifera's broader engineering practice, including engagements with enterprise clients like Vodafone and CFLW, which is the same expertise applied when a founder's first enterprise deal is on the line.
 
+### Does SSO login automatically handle removing access when an employee leaves the customer's company?
+
+No — SSO and just-in-time provisioning only handle logins in, not employees out; automatic deprovisioning requires a separate protocol called SCIM that lets the identity provider push user-removal events directly to your app, which larger enterprise customers increasingly ask about alongside SSO itself.
+
 Calculate what your project costs — [use our calculator](https://launchstudio.eu/en/#calculator) to scope an enterprise-readiness pass before your next procurement call.
 
 For more on how Manifera builds access control and identity systems that hold up under enterprise review, see [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/).
@@ -140,6 +157,11 @@ For more on how Manifera builds access control and identity systems that hold up
       "@type": "Question",
       "name": "Has Manifera built enterprise authentication for larger, established companies too?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — SAML SSO and enterprise access control work is part of Manifera's broader engineering practice, including engagements with enterprise clients like Vodafone and CFLW, which is the same expertise applied when a founder's first enterprise deal is on the line." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SSO login automatically handle removing access when an employee leaves the customer's company?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — SSO and JIT provisioning only handle logins in, not employees out; automatic deprovisioning requires SCIM, a separate protocol that pushes user-removal events from the identity provider directly to your app." }
     }
   ]
 }

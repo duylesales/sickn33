@@ -51,6 +51,30 @@ Founders don't need to become engineers to catch this category of bug, but they 
 
 Manifera's team, based out of its European headquarters in Amsterdam, works directly with founders to run exactly this kind of structured pre-launch check across an entire app rather than one feature at a time. You can see how that engagement typically works on the [LaunchStudio packages page](https://launchstudio.eu/en/#packages), and for a broader look at how Manifera approaches production-grade web application engineering, see the team's [web app development](https://www.manifera.com/services/web-app-develop/) work.
 
+## A Fixed Filter Still Depends on the Ingredient List Being Right at the Moment It's Served
+
+Centralizing the allergen check into one shared function closes the cross-feature gap, but it quietly assumes something that isn't always true: that the recipe's ingredient list is final and accurate at the moment the filter runs. Meal planning apps rarely serve a fixed, pre-authored recipe as-is — they routinely adjust it on the fly for a different goal entirely, like swapping dairy milk for a plant-based alternative to satisfy a vegan preference, or substituting a lower-carb flour to hit a macro target. Each of those substitutions changes the actual ingredient list a user will cook and eat, and if the allergen check runs against the recipe's *original* tagged ingredients rather than the *final* substituted list, it can pass a dish that now contains almond milk or a nut-based flour straight through — even though the shared filter is working exactly as designed on the data it was given.
+
+This isn't the same bug as the swap-feature gap already described. That was a missing filter call. This is a correctly-called filter checking the wrong version of the data, because the substitution logic ran first and nobody re-validated allergens against its output. The two need different fixes, and an app can have solved the first without ever touching the second.
+
+The fix is ordering, not another filter: allergen checking has to be the last step in the pipeline, run against whatever ingredient list is actually about to be shown or cooked, after every substitution — dietary, macro, or availability-driven — has already been applied.
+
+```
+function getFinalRecipe(recipe, userPreferences) {
+  let ingredients = applyDietarySubstitutions(recipe.ingredients, userPreferences);
+  ingredients = applyMacroSubstitutions(ingredients, userPreferences);
+
+  // Allergen check runs last, against the ingredients the user will actually get
+  const conflict = findAllergenConflict(ingredients, userPreferences.allergens);
+  if (conflict) {
+    return rejectOrReplace(recipe, conflict, userPreferences);
+  }
+  return { ...recipe, ingredients };
+}
+```
+
+Any substitution engine that isn't structured this way — allergen check first, substitutions after — has the same latent risk a "swap this recipe" feature can introduce, just one layer deeper in the pipeline than the original meal plan itself.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The substitute recipe that ignored the allergy list
@@ -92,6 +116,10 @@ The team checks that every data constraint a user sets — allergens, dietary re
 
 LaunchStudio works with apps built in Bolt, Lovable, Cursor, v0, and similar AI tools — the Amsterdam-based team's process is built around auditing and fixing the underlying architecture regardless of which tool generated the frontend.
 
+### Can a recipe pass an allergen check and still contain the allergen a user is avoiding?
+
+Yes, if the check runs against the recipe's original ingredient list instead of the final version after dietary or macro substitutions have been applied — which is why allergen checking needs to be the last step in the pipeline, run against exactly what the user will actually be served.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +149,11 @@ LaunchStudio works with apps built in Bolt, Lovable, Cursor, v0, and similar AI 
       "@type": "Question",
       "name": "Does LaunchStudio only work with Bolt-built apps, or other tools too?",
       "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio works with apps built in Bolt, Lovable, Cursor, v0, and similar AI tools — the Amsterdam-based team audits and fixes the underlying architecture regardless of which tool generated the frontend." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a recipe pass an allergen check and still contain the allergen a user is avoiding?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the check runs against the recipe's original ingredient list instead of the final version after dietary or macro substitutions have been applied — allergen checking needs to be the last step in the pipeline, run against exactly what the user will actually be served." }
     }
   ]
 }

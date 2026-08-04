@@ -48,6 +48,26 @@ De engineeringbank van LaunchStudio bevindt zich in Manifera, wiens meer dan 160
 
 If you want a fixed-scope estimate for this kind of fix, [our calculator](https://launchstudio.eu/en/#calculator) is a fast way to get a number before committing. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice covers this same class of concurrency and transactional-integrity work at enterprise scale.
 
+## Verlengingen slaan de kassa volledig over — en daarmee ook de voorraadcontrole
+
+De winkelwagencontrole op voorraad beschermt u tijdens de initiële aankoop. Maar bij abonnementsbox-apps worden maandelijks terugkerende bestellingen automatisch gegenereerd via een achtergrondtaak. Als die achtergrondtaak eenvoudigweg een nieuwe bestelling aanmaakt zonder dezelfde voorraadcontrole uit te voeren als de kassa, kan een abonnementsverlenging voor een uitverkocht artikel alsnog doorgaan.
+
+De oplossing is om het toewijzen van voorraad als een verplichte stap in te bouwen voor elk type bestellingsaanmaak:
+
+```javascript
+async function processSubscriptionRenewal(subscription) {
+  const item = await db.inventory.findAndModify({
+    query: { id: subscription.itemId, stock: { $gt: 0 } },
+    update: { $inc: { stock: -1 } }
+  });
+  if (!item) {
+    await flagRenewalForReview(subscription.id, 'out_of_stock');
+    return;
+  }
+  await createOrder(subscription, item);
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de maand waarin de TikTok-vermelding plaatsvond
@@ -89,6 +109,7 @@ De ingenieurs van Manifera passen dezelfde atomaire transactiepatronen toe die w
 
 Het is het belangrijkste engineering- en ontwikkelingscentrum van LaunchStudio, en de logica voor het afrekenen en inventariseren voor oprichters in de groeifase is een kernonderdeel van het werk dat daar wordt gedaan.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,42 +117,42 @@ Het is het belangrijkste engineering- en ontwikkelingscentrum van LaunchStudio, 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why doesn't an AI-built checkout check inventory automatically?",
+      "name": "Waarom controleert een door AI gebouwde kassa de voorraad niet automatisch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A standard subscription checkout is built around the assumption that supply is unlimited, which is true for digital products and false for anything physical \u2014 the AI builds what's typical unless told otherwise."
+        "text": "Omdat een standaard abonnementsafrekening is opgebouwd rond de veronderstelling dat het aanbod onbeperkt is, wat waar is voor digitale producten en niet waar voor alles wat fysiek is, bouwt de AI wat typisch is, tenzij anders wordt verteld."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the risk of fixing this only after it happens once?",
+      "name": "Wat is het risico als dit pas wordt opgelost nadat het één keer is gebeurd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The first oversell usually costs margin on an emergency reorder and goodwill with exactly the new customers most likely to churn immediately, so fixing it proactively is significantly cheaper than fixing it during a spike."
+        "text": "De eerste oververkoop kost u doorgaans marge bij een noodbestelling en goodwill bij precies de nieuwe klanten die het meest waarschijnlijk onmiddellijk zullen vertrekken, dus het proactief repareren vóór een groeipiek is aanzienlijk goedkoper dan het tijdens een groeipiek repareren."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this require rebuilding my whole checkout flow?",
+      "name": "Moet ik hiervoor mijn hele afrekenproces opnieuw opbouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 it's a targeted addition to the existing checkout logic, adding an atomic inventory check and decrement step rather than replacing the payment integration or subscription billing already in place."
+        "text": "Nee, het is een gerichte toevoeging aan de bestaande afrekenlogica, waarbij een atomaire voorraadcontrole en verlagingsstap wordt toegevoegd in plaats van de betalingsintegratie of abonnementsfacturering te vervangen die u al heeft."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera handle concurrency issues like simultaneous signups racing for the same stock?",
+      "name": "Hoe gaat Manifera om met gelijktijdigheidsproblemen, zoals gelijktijdige aanmeldingen die racen om dezelfde aandelen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers apply the same atomic-transaction patterns used across 160+ enterprise projects, ensuring inventory checks and decrements happen as a single operation rather than two steps that can race each other."
+        "text": "De ingenieurs van Manifera passen dezelfde atomaire transactiepatronen toe die worden gebruikt in meer dan 160 bedrijfsprojecten, waardoor voorraadcontroles en -verlagingen als één enkele handeling plaatsvinden in plaats van als twee stappen die met elkaar kunnen racen."
       }
     },
     {
       "@type": "Question",
-      "name": "Why is this handled from LaunchStudio's Ho Chi Minh City center specifically?",
+      "name": "Waarom wordt dit specifiek vanuit het Ho Chi Minh-stadscentrum van LaunchStudio afgehandeld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's LaunchStudio's main engineering and development center, and checkout-and-inventory logic for growth-stage founders is a core part of the work handled there."
+        "text": "Het is het belangrijkste engineering- en ontwikkelingscentrum van LaunchStudio, en de logica voor het afrekenen en inventariseren voor oprichters in de groeifase is een kernonderdeel van het werk dat daar wordt gedaan."
       }
     }
   ]

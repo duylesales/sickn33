@@ -108,6 +108,7 @@ Praat met een ingenieur die de door AI gegenereerde code begrijpt — [beschrijf
 
 Voor meer informatie over hoe Manifera een betrouwbare backend-infrastructuur van begin tot eind bouwt, zie [Manifera's webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,42 +116,42 @@ Voor meer informatie over hoe Manifera een betrouwbare backend-infrastructuur va
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why did the email provider's dashboard show 'delivered' if the emails were landing in spam?",
+      "name": "Waarom werd op het dashboard van de e-mailprovider 'afgeleverd' weergegeven als de e-mails in spam terechtkwamen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "'Delivered' typically means the receiving mail server accepted the message \u2014 it says nothing about which folder the recipient's spam filter routed it into, which is a separate decision made after acceptance."
+        "text": "'Bezorgd' betekent doorgaans dat de ontvangende mailserver het bericht heeft geaccepteerd. Het zegt niets over naar welke map het spamfilter van de ontvanger het bericht heeft geleid, wat een afzonderlijke beslissing is die na acceptatie wordt genomen."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I configure SPF and DKIM myself without a developer?",
+      "name": "Kan ik SPF en DKIM zelf configureren zonder ontwikkelaar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, in principle \u2014 most email providers document the exact DNS records to add \u2014 but it requires access to your domain's DNS settings and enough familiarity with DNS to avoid a misconfiguration that breaks delivery entirely rather than fixing it."
+        "text": "Ja, in principe - de meeste e-mailproviders documenteren de exacte DNS-records die moeten worden toegevoegd - maar het vereist toegang tot de DNS-instellingen van uw domein en voldoende bekendheid met DNS om een ​​verkeerde configuratie te voorkomen die de bezorging volledig verbreekt in plaats van herstelt."
       }
     },
     {
       "@type": "Question",
-      "name": "Why does Herre Roelevink treat something as small as DNS records as part of a bigger 'architecture and maturity' pattern?",
+      "name": "Waarom beschouwt Herre Roelevink zoiets kleins als DNS-records als onderdeel van een groter patroon van 'architectuur en volwassenheid'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because it's representative of the broader gap Manifera specializes in closing \u2014 AI tools make the feature itself trivial to build, while the surrounding infrastructure that makes it reliably work in the real world is a separate, often-overlooked layer of engineering maturity."
+        "text": "Omdat het representatief is voor de bredere kloof waarin Manifera zich specialiseert in het dichten: AI-tools maken de functie zelf triviaal om te bouwen, terwijl de omringende infrastructuur die ervoor zorgt dat deze betrouwbaar werkt in de echte wereld een afzonderlijke, vaak over het hoofd geziene laag van technische volwassenheid is."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does a new domain's sending reputation take to build up?",
+      "name": "Hoe lang duurt het voordat de verzendreputatie van een nieuw domein is opgebouwd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reputation typically improves over the first few weeks of consistent, low-complaint sending; getting SPF, DKIM, and DMARC right from day one is what gives that reputation-building period the best possible chance of succeeding."
+        "text": "De reputatie verbetert doorgaans tijdens de eerste paar weken van consistente verzending met weinig klachten; Het vanaf de eerste dag SPF, DKIM en DMARC krijgen, geeft die periode van reputatieopbouw de best mogelijke kans op succes."
       }
     },
     {
       "@type": "Question",
-      "name": "Does Manifera handle email deliverability for larger, established SaaS products too?",
+      "name": "Verzorgt Manifera ook de e-mailbezorging voor grotere, gevestigde SaaS-producten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 deliverability review is part of the same production-readiness discipline Manifera applies across engagements of every size, including for enterprise clients, since even an established sending domain can develop deliverability problems after a provider migration or DNS change."
+        "text": "Ja – de deliverability-beoordeling maakt deel uit van dezelfde productiegereedheidsdiscipline die Manifera toepast bij opdrachten van elke omvang, ook voor zakelijke klanten, aangezien zelfs een gevestigd verzendend domein deliverability-problemen kan ontwikkelen na een providermigratie of DNS-wijziging.  Praat met een ingenieur die de door AI gegenereerde code begrijpt — [beschrijf hier uw project](https://launchstudio.eu/en/#contact) en we reageren binnen één werkdag.  Voor meer informatie over hoe Manifera een betrouwbare backend-infrastructuur van begin tot eind bouwt, zie [Manifera's webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/)."
       }
     }
   ]

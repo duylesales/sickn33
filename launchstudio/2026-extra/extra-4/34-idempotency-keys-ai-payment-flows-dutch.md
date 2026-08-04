@@ -70,6 +70,17 @@ Idempotentieproblemen zijn niet beperkt tot de eerste afrekenknop. Ze verschijne
 
 LaunchStudio brengt Manifera's hoogwaardige techniek naar de grondleggerseconomie, en onze technici, gevestigd in het Amsterdamse kantoor aan de Herengracht 420, beschouwen de beoordeling van het betalingspad als een standaardonderdeel van elke pre-lanceringsaudit – en niet als een optionele extra. Een afrekenproces dat er identiek uitziet als het correcte proces in een demo, kan zich compleet anders gedragen onder echte netwerkomstandigheden, en dat is precies het gat waar [onze prijscalculator](https://launchstudio.eu/en/#calculator) rekening mee houdt bij het bepalen van een betalingsstroomverhardingspas.
 
+## Idempotentiesleutels beschermen alleen identieke verzoeken
+
+Het toevoegen van een idempotentiesleutel aan uw Stripe-betalingsverzoeken voorkomt dat een herhaald verzoek (door een netwerkonderbreking) twee keer wordt afgeschreven. Een maas in de wet ontstaat als de sleutel wordt gegenereerd op basis van een willekeurige UUID bij elke poging in plaats van een uniek id gebaseerd op de bestelling.
+
+Genereer de idempotentiesleutel altijd op basis van het unieke transactie- of winkelwagen-ID:
+
+```javascript
+const idempotencyKey = `checkout-${cart.id}-${cart.updatedAt.getTime()}`;
+await stripe.paymentIntents.create({ amount, currency }, { idempotencyKey });
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de dubbele tik die een dubbele lading werd
@@ -115,6 +126,7 @@ Boek een gratis introductiegesprek van 15 minuten — [praat met ons voordat uw 
 
 Voor meer informatie over hoe productiebetalingssystemen vanaf het begin correct worden ontworpen, zie [Manifera's diensten voor softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/).
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -122,42 +134,42 @@ Voor meer informatie over hoe productiebetalingssystemen vanaf het begin correct
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do Stripe and other payment processors support idempotency keys natively?",
+      "name": "Ondersteunen Stripe en andere betalingsverwerkers standaard idempotentiesleutels?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 Stripe, Adyen, and most major processors have built-in idempotency key support; the gap is almost never the processor, it's whether the AI-generated integration code actually generates and passes one."
+        "text": "Ja – Stripe, Adyen en de meeste grote processors hebben ingebouwde ondersteuning voor idempotency-sleutels; de kloof is bijna nooit de processor, maar of de door AI gegenereerde integratiecode er daadwerkelijk een genereert en doorgeeft."
       }
     },
     {
       "@type": "Question",
-      "name": "Is disabling the pay button after one click enough on its own?",
+      "name": "Is het uitschakelen van de betaalknop na één klik op zichzelf voldoende?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 it helps with accidental double-clicks but doesn't protect against network-level retries, webhook redelivery, or backend retry logic, which is why idempotency keys need to sit at the API request level, not just the UI."
+        "text": "Nee. Het helpt bij onbedoeld dubbelklikken, maar biedt geen bescherming tegen nieuwe pogingen op netwerkniveau, herlevering van webhooks of logica voor opnieuw proberen in de backend. Daarom moeten idempotency-sleutels zich op API-verzoekniveau bevinden, en niet alleen op de gebruikersinterface."
       }
     },
     {
       "@type": "Question",
-      "name": "Why does Herre Roelevink specifically call out architecture as the bigger challenge now?",
+      "name": "Waarom noemt Herre Roelevink architectuur nu juist als de grotere uitdaging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because tools like Lovable and Cursor have made 'does the payment call work' trivial, while the deeper question \u2014 does it stay correct under real-world conditions like flaky networks and retries \u2014 is exactly the production-maturity work Manifera has specialized in for over a decade."
+        "text": "Omdat tools als Lovable en Cursor 'werkt het betaalgesprek' triviaal hebben gemaakt, terwijl de diepere vraag (blijft het correct onder reële omstandigheden zoals zwakke netwerken en nieuwe pogingen) precies het productierijpe werk is waar Manifera zich al meer dan tien jaar in heeft gespecialiseerd."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does an idempotency window typically need to last?",
+      "name": "Hoe lang duurt een idempotentieperiode normaal gesproken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most processors default to roughly 24 hours, which comfortably covers realistic retry scenarios like a user resubmitting a stuck form or a webhook redelivery after a temporary outage."
+        "text": "De meeste processors zijn standaard ingesteld op ongeveer 24 uur, wat comfortabel realistische scenario's voor opnieuw proberen dekt, zoals een gebruiker die een vastgelopen formulier opnieuw indient of een herlevering van een webhook na een tijdelijke storing."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio only fix payment bugs after they've caused damage, or proactively too?",
+      "name": "Repareert LaunchStudio betalingsbugs alleen nadat ze schade hebben veroorzaakt, of ook proactief?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both \u2014 many founders come to us after a duplicate-charge incident, but Manifera's engineers, drawing on 160+ delivered projects, increasingly run payment-flow review as a standard pre-launch step precisely to avoid that first incident."
+        "text": "Beide: veel oprichters komen naar ons toe na een incident met dubbele afschrijvingen, maar de technici van Manifera, die zich baseren op meer dan 160 opgeleverde projecten, voeren steeds vaker een beoordeling van de betalingsstroom uit als een standaard pre-lanceringsstap, juist om dat eerste incident te voorkomen.  Boek een gratis introductiegesprek van 15 minuten — [praat met ons voordat uw eerste echte klant deze bug tegenkomt](https://launchstudio.eu/en/#contact).  Voor meer informatie over hoe productiebetalingssystemen vanaf het begin correct worden ontworpen, zie [Manifera's diensten voor softwareontwikkeling op maat](https://www.manifera.com/services/custom-software-development/)."
       }
     }
   ]

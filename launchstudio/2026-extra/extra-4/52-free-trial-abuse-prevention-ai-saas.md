@@ -51,6 +51,25 @@ A production-grade approach doesn't try to make abuse impossible — that's not 
 
 If you're not sure how exposed your current trial flow is, our [price calculator](https://launchstudio.eu/en/#calculator) can scope a fix based on what you've already built, and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice has built this same layered fraud logic for larger platforms where the stakes were considerably higher than a SaaS trial.
 
+## Fingerprinting Isn't a One-Time Fix
+
+Shipping device and email-pattern fingerprinting closes the obvious loophole, but it doesn't close the problem permanently, because the signals it relies on aren't fixed targets. Browsers increasingly randomize fingerprintable attributes, residential IPs rotate, and a genuinely motivated abuser adapts to whatever specific check just started blocking them — the same way spam filters and the emails trying to beat them have been in a running back-and-forth for decades. A fingerprinting rule tuned once at launch and never revisited slowly loses effectiveness as the specific tricks it was built to catch drift out of use and new ones take their place.
+
+The practical response isn't to chase every individual evasion technique — that's a losing game. It's building the check as a weighted combination of signals rather than a single hard rule, so no one signal has to be perfectly reliable on its own, and reviewing the scoring periodically against real flagged-account data instead of treating it as done after the first ship.
+
+```
+function trialRiskScore(signup) {
+  let score = 0;
+  if (signup.emailIsAlias) score += 30;
+  if (signup.deviceSeenOnPriorTrial) score += 40;
+  if (signup.ipSharedWithChurnedAccount) score += 20;
+  if (signup.paymentFingerprintReused) score += 50;
+  return score; // above threshold -> flag for shortened trial, not auto-block
+}
+```
+
+Treating this as a score that gets tuned over time, rather than a fixed rule shipped once, is what keeps the fix working six months after launch instead of just for the first wave of abusers it was built to catch.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Trial That Never Actually Ended
@@ -92,6 +111,10 @@ It applies even more — no-card trials are the easiest to abuse since there's n
 
 LaunchStudio's engineering team, backed by Manifera's 120+ engineers and more than a decade of production software experience, handles this as part of hardening an AI-built SaaS product before or after launch — it's one of the more common gaps found in prototypes built quickly with tools like Lovable or Bolt.
 
+### Does fingerprinting stay effective once it's built, or does it need maintenance?
+
+It needs periodic review — the specific signals it relies on drift over time as browsers change and abusers adapt, so a scoring system that weighs multiple signals and gets re-tuned against real flagged-account data holds up far better than a fixed rule shipped once and never revisited.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +144,11 @@ LaunchStudio's engineering team, backed by Manifera's 120+ engineers and more th
       "@type": "Question",
       "name": "Who typically builds this kind of fix for a SaaS product?",
       "acceptedAnswer": { "@type": "Answer", "text": "LaunchStudio's engineering team, backed by Manifera's 120+ engineers and more than a decade of production software experience, handles this as part of hardening an AI-built SaaS product before or after launch." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does fingerprinting stay effective once it's built, or does it need maintenance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It needs periodic review — the signals it relies on drift over time as browsers change and abusers adapt, so a weighted scoring system re-tuned against real flagged-account data holds up far better than a fixed rule shipped once and never revisited." }
     }
   ]
 }

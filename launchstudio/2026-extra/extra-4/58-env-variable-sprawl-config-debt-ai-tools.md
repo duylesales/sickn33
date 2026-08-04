@@ -51,6 +51,24 @@ A production-ready setup has a few concrete properties: every secret lives in ex
 
 Our team, working out of Manifera's Amsterdam office, typically runs this as a focused engagement: full codebase scan for hardcoded secrets, consolidation into a proper environment configuration, and a rotation of any keys that were ever exposed in version history, since rotating is the only real fix once a secret has touched a git log. If you want a sense of scope and cost for your own project, our [pricing calculator](https://launchstudio.eu/en/#calculator) is a fast starting point.
 
+## Consolidating Secrets Can Quietly Blur Your Environment Boundaries
+
+Centralizing every credential into one place fixes the "where is it" problem, but if it's done as a single shared file rather than one file per environment, it can create a new, more dangerous problem: a development or staging deploy accidentally loading a live production key. This is an easy mistake to make when consolidating in a hurry — pulling every scattered key into one `.env` feels like the fix, but if that one file gets loaded by every environment indiscriminately, a bug tested against "production" data in staging, or a test payment run against a live Stripe key, is now one misconfigured deploy script away from happening.
+
+The fix is environment-scoped separation, not just consolidation:
+
+```
+# Before: one shared file loaded regardless of environment
+.env → loaded by both `npm run dev` and the production deploy
+
+# After: environment-scoped files, only the matching one loaded
+.env.development   → loaded only in local dev, safe test keys only
+.env.staging        → loaded only by the staging deploy pipeline
+.env.production      → loaded only by the production deploy pipeline, never committed
+```
+
+Consolidation without this separation trades scattered secrets for a single point of failure that spans every environment at once — worth checking for specifically once a consolidation project is underway, not assumed to be a side effect of simply having fewer files.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Compromised Key and No Map of Where It Lived
@@ -92,6 +110,10 @@ Our engineers, working from Manifera's Amsterdam office, run a full codebase sca
 
 It applies especially to solo founders — with no second engineer to catch a scattered configuration during code review, the debt tends to accumulate faster and go unnoticed longer.
 
+### Can consolidating my secrets into one place actually create new risk?
+
+Yes, if it's done as a single shared file loaded by every environment — a development or staging deploy can end up pulling live production keys, which is a more dangerous version of the original problem, so consolidation should always be split into one file per environment, not just one file overall.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +143,11 @@ It applies especially to solo founders — with no second engineer to catch a sc
       "@type": "Question",
       "name": "Does this only matter for larger teams, or does it apply to solo founders too?",
       "acceptedAnswer": { "@type": "Answer", "text": "It applies especially to solo founders — with no second engineer to catch a scattered configuration during code review, the debt tends to accumulate faster and go unnoticed longer." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can consolidating my secrets into one place actually create new risk?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if it's done as a single shared file loaded by every environment — a development or staging deploy can end up pulling live production keys, so consolidation should always be split into one file per environment, not just one file overall." }
     }
   ]
 }

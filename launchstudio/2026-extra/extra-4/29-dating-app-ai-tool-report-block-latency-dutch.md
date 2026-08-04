@@ -50,6 +50,23 @@ Het dichten van deze kloof betekent dat we een blokkeringsactie behandelen als e
 
 Het technische team van Manifera, dat samenwerkt met de oprichters via LaunchStudio's Singapore-hub die de snelgroeiende consumenten-app-markt in Zuidoost-Azië bedient, heeft precies dit soort veiligheidsoppervlak-audits uitgevoerd op gemeenschaps- en sociale platforms waar het vertrouwen van de gebruiker het kernproduct is. U kunt een dergelijke beoordeling starten via de [LaunchStudio-contactpagina](https://launchstudio.eu/en/#contact), en Manifera's bredere team voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft een vergelijkbare nauwkeurigheid toegepast op de logica voor toegangscontrole op een reeks platforms.
 
+## Synchrone databaseschrijfacties annuleren niet wat al in de wachtrij staat om te worden verzonden
+
+Wanneer een gebruiker een ander account blokkeert, werkt de app de database direct bij. Als er echter al pushmeldingen of e-mails in een achtergrond-wachtrij staan om te worden verzonden naar die gebruiker, worden ze alsnog afgeleverd als de achtergrondwerker de blokkeerstatus niet opnieuw controleert vóór verzending.
+
+Controleer de blokkeerstatus direct in de achtergrond-mail-job vóór aflevering:
+
+```javascript
+async function sendQueuedMessage(messageId) {
+  const message = await db.messages.findById(messageId);
+  const isBlocked = await db.blocks.exists({ blockerId: message.recipientId, blockedId: message.senderId });
+  if (isBlocked) {
+    return; // Annuleer de verzending van het bericht
+  }
+  await mailProvider.send(message);
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native Founder in actie: de blokkade die niet helemaal onmiddellijk was
@@ -91,6 +108,7 @@ Het team controleert elk oppervlak waarop een geblokkeerde of gerapporteerde geb
 
 Ja – LaunchStudio werkt met Lovable-, Bolt-, Cursor- en v0-gebouwde apps, en het in Singapore gevestigde team beoordeelt regelmatig de vertrouwens- en veiligheidslogica in specifiek door Lovable gebouwde consumenten- en community-apps.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +116,42 @@ Ja – LaunchStudio werkt met Lovable-, Bolt-, Cursor- en v0-gebouwde apps, en h
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why would a block feature only partially work?",
+      "name": "Waarom zou een blokfunctie slechts gedeeltelijk werken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because different parts of blocking a user are often implemented as separate pieces of logic, and an AI coding tool typically implements only the piece most directly described in the prompt, leaving the rest to catch up asynchronously."
+        "text": "Omdat verschillende delen van het 'blokkeren' van een gebruiker (berichten, zoekzichtbaarheid, profieltoegang, berichtgeschiedenis) vaak worden geïmplementeerd als afzonderlijke stukjes logica, en een AI-coderingstool doorgaans alleen het deel implementeert dat het meest direct in de prompt wordt beschreven, en de rest asynchroon laat inhalen."
       }
     },
     {
       "@type": "Question",
-      "name": "How long is the exploit window usually?",
+      "name": "Hoe lang duurt de exploitperiode gewoonlijk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It varies by how the background sync is built, but even a delay of a few minutes is enough for a motivated user to act."
+        "text": "Het varieert afhankelijk van hoe de achtergrondsynchronisatie is opgebouwd, maar zelfs een vertraging van een paar minuten is genoeg voor een gemotiveerde gebruiker om actie te ondernemen. Daarom is de oplossing erop gericht om het blok direct en synchroon te maken in plaats van alleen maar sneller."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this specific to dating apps?",
+      "name": "Geldt dit specifiek voor dating-apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 any app with user-to-user interaction and a block or report feature, including community platforms and social apps, can have the same gap."
+        "text": "Nee: elke app met interactie tussen gebruikers en een blokkeer- of rapportfunctie, inclusief communityplatforms, marktplaatsen en sociale apps, kan dezelfde kloof hebben tussen blokkering op berichtniveau en volledige blokkering op accountniveau."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio find gaps like this?",
+      "name": "Hoe vindt LaunchStudio dit soort hiaten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The team audits every surface where a blocked or reported user could still appear, a practice shaped by Manifera's enterprise access-control work."
+        "text": "Het team controleert elk oppervlak waarop een geblokkeerde of gerapporteerde gebruiker nog steeds kan verschijnen (zoeken, aanbevelingen, gedeelde inhoud) in plaats van alleen de specifieke actie te testen die een oprichter beschrijft, een praktijk die is gevormd door Manifera's toegangscontrolewerk voor bedrijven."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio work with apps built on Lovable specifically?",
+      "name": "Werkt LaunchStudio met apps die specifiek op Lovable zijn gebouwd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 LaunchStudio works across Lovable, Bolt, Cursor, and v0-built apps, and the Singapore-based team frequently reviews trust and safety logic in Lovable-built consumer apps."
+        "text": "Ja – LaunchStudio werkt met Lovable-, Bolt-, Cursor- en v0-gebouwde apps, en het in Singapore gevestigde team beoordeelt regelmatig de vertrouwens- en veiligheidslogica in specifiek door Lovable gebouwde consumenten- en community-apps."
       }
     }
   ]

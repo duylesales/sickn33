@@ -47,6 +47,32 @@ This is exactly the kind of gap Manifera's engineers close for AI-native SaaS fo
 
 If your billing logic was written to handle one country and your customer base has moved past that, it's worth [reviewing your architecture against our process](https://launchstudio.eu/en/#process) before the next quarterly filing, not after.
 
+## Refunds and Credit Notes Inherit the Original Invoice's VAT, Not Today's
+
+Getting invoice-time VAT right doesn't automatically make refunds right, and this is where a lot of otherwise-correct billing systems quietly go wrong. VAT rates change over time, and a customer's declared location can change too — so if a refund is calculated using today's rate and today's country lookup instead of the rate and jurisdiction that applied when the original invoice was issued, the credit note stops matching the invoice it's supposed to cancel out. That mismatch is exactly what an accountant or tax authority checks for during a review, and it's invisible in normal use because refunds happen rarely and nobody compares old and new rates side by side.
+
+An AI-generated refund flow almost never accounts for this, because "process a refund" and "calculate VAT" get built as two separate features at two different times, with no explicit instruction linking them. The fix is to store the VAT rate and jurisdiction on the invoice itself at the moment it's created, and have every credit note reference that stored value rather than recalculating it fresh:
+
+```
+function generateCreditNote(originalInvoiceId, grossRefundAmount) {
+  const original = getInvoice(originalInvoiceId);
+  // Use the VAT rate and jurisdiction stored on the ORIGINAL invoice,
+  // not today's rate table or the customer's current location.
+  // grossRefundAmount is VAT-inclusive, so the VAT portion has to be
+  // extracted back out rather than added on top of it a second time.
+  const vatRate = original.vatRateApplied;
+  const vatAmount = grossRefundAmount * (vatRate / (1 + vatRate));
+  return {
+    referencesInvoice: original.id,
+    vatRateApplied: vatRate,
+    vatAmount,
+    netRefund: grossRefundAmount - vatAmount,
+  };
+}
+```
+
+This is a small addition once the core VAT engine exists, but it's the difference between a refund process that survives an audit and one that quietly generates a second set of inconsistent numbers for every credit note issued.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Invoicing Tool That Got Its Own Tax Wrong
@@ -86,6 +112,10 @@ Incorrect invoices create real liability with multiple tax authorities simultane
 
 No — LaunchStudio's Singapore office supports founders selling into the EU from anywhere, since the buyer's location determines VAT obligations regardless of where the company itself is based.
 
+### If a refund happens months after the original sale, which VAT rate applies?
+
+The rate and jurisdiction that applied to the original invoice, not the current rate table or the customer's current location — which is why a compliant billing system stores that information on the invoice itself and has every credit note reference it directly, rather than recalculating VAT fresh at refund time.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +145,11 @@ No — LaunchStudio's Singapore office supports founders selling into the EU fro
       "@type": "Question",
       "name": "Does LaunchStudio only fix this for EU-based founders?",
       "acceptedAnswer": { "@type": "Answer", "text": "No, LaunchStudio's Singapore office supports founders selling into the EU from anywhere, since the buyer's location determines VAT obligations regardless of where the company itself is based." }
+    },
+    {
+      "@type": "Question",
+      "name": "If a refund happens months after the original sale, which VAT rate applies?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The rate and jurisdiction that applied to the original invoice, not the current rate table or the customer's current location — a compliant billing system stores that information on the invoice itself and has every credit note reference it directly." }
     }
   ]
 }

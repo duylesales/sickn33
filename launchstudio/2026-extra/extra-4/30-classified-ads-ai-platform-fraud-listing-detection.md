@@ -53,6 +53,19 @@ A working first version doesn't require machine learning or a large fraud team �
 
 LaunchStudio's team, working out of Manifera's engineering center in Ho Chi Minh City, builds exactly this kind of lightweight trust-and-safety layer into classifieds and marketplace platforms as a standard part of production-readiness work. You can see how a scoped engagement like this typically works via the [LaunchStudio price calculator](https://launchstudio.eu/en/#calculator), and Manifera's broader [custom software development](https://www.manifera.com/services/custom-software-development/) practice has built similar rule-based trust layers for larger enterprise marketplace clients.
 
+## A Flag Queue Nobody Reviews Is Just a Slower Way of Publishing Everything
+
+A "flag, hold, review" gate solves the fraud problem only if the review step actually happens promptly — and this is where a working fraud check quietly breaks down in practice. A listing held for manual review still needs a real person to look at it, and if that review queue isn't checked for a day or two (a founder is traveling, or the volume of flagged listings has grown past what a quick daily glance can handle), the listings sitting in it are effectively invisible: not live for buyers to see, but also not resolved, and a legitimate seller whose listing got a false-positive flag is left wondering why their item never went live, with no indication anything is even happening.
+
+```
+if (listing.price < category.medianPrice * 0.5) {
+  flagForReview(listing, "price_anomaly");
+}
+// nothing here notifies anyone the queue has an entry waiting
+```
+
+The fix that's easy to skip is treating the review queue itself as something that needs its own monitoring, not just the listings it contains: an age threshold that escalates or auto-notifies if an item sits flagged past a set number of hours, and a visible, honest status for the seller ("under review," not just silence) so a false positive reads as a temporary delay rather than a rejection nobody explained. A fraud check that catches every bad listing but leaves good ones stuck in an unreviewed queue for a week has just moved the trust problem from "a scam got through" to "a legitimate seller gave up and left."
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two days, one listing, one very predictable scam
@@ -94,6 +107,10 @@ The team reviews the platform's actual category mix and pricing patterns to set 
 
 Yes — Manifera's 120+ engineers have delivered rule-based and risk-scoring systems for enterprise marketplace and platform clients, and that same engineering discipline is what LaunchStudio applies to smaller, founder-built classifieds platforms.
 
+### What happens if a listing sits flagged for review and nobody checks the queue for a few days?
+
+It stays invisible to buyers and unresolved for the seller — which is why the review queue itself needs an age-based escalation and a visible "under review" status, not just the flagging logic, or a legitimate seller's false-positive listing looks identical to being ignored.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,6 +140,11 @@ Yes — Manifera's 120+ engineers have delivered rule-based and risk-scoring sys
       "@type": "Question",
       "name": "Has Manifera built trust and safety systems like this for larger platforms?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — Manifera's 120+ engineers have delivered rule-based and risk-scoring systems for enterprise marketplace and platform clients." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a listing sits flagged for review and nobody checks the queue for a few days?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It stays invisible to buyers and unresolved for the seller — the review queue itself needs an age-based escalation and a visible status, not just the flagging logic." }
     }
   ]
 }

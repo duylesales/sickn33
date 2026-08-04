@@ -1,21 +1,22 @@
 ---
-Titel: "AI-planningstools voor de ouderenzorg: wanneer een gemiste melding meer is dan een bug"
+Titel: "AI Planningstools voor Ouderenzorg: Wanneer een gemiste melding meer is dan een bug"
 Trefwoorden: ai prototype, ai secure, elder care scheduling app, family notification system, ai-generated code
-Koperfase: Bewustzijn
-Doelgroep: AI-Native oprichter (niet-technisch)
+Koperfase: Bewustwording
+Doelgroep: AI-Native Oprichter (Niet-Technisch)
 ---
-# AI-planningstools voor de ouderenzorg: wanneer een gemiste melding meer is dan een bug
+
+# AI Planningstools voor Ouderenzorg: Wanneer een gemiste melding meer is dan een bug
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-planningstools voor de ouderenzorg: wanneer een gemiste melding meer is dan een bug",
-  "description": "In apps voor thuiszorgplanning die met AI-tools zijn gebouwd, is een shift-swap die geen nieuwe familiemelding activeert geen klein randgeval; het is het verschil tussen een gezin dat weet dat er een bezoek heeft plaatsgevonden en dat het gelooft dat dit wel het geval is geweest.",
+  "headline": "AI Planningstools voor Ouderenzorg: Wanneer een gemiste melding meer is dan een bug",
+  "description": "In thuiszorg-planningsapps gebouwd met AI-tools is een dienstwissel die geen nieuwe gezinsmelding activeert geen klein randgeval — het is het verschil tussen een familie die weet dat een bezoek heeft plaatsgevonden en gelooft dat het zo is.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -25,71 +26,92 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-23",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/elder-care-ai-scheduling-tool-family-notification-failure"
+    "@id": "https://launchstudio.eu/nl/blog/elder-care-ai-scheduling-tool-family-notification-failure"
   }
 }
 </script>
 
-Hier is een mythe die het waard is om vroegtijdig met pensioen te gaan: "als het boekingssysteem werkt, werken de meldingen ook." In de meeste softwarecategorieën is dat ongeveer waar: een bevestigingsmail is een leuk extraatje bovenop een werkende kernstroom. Bij de thuiszorgplanning is het tegenovergestelde het geval. De melding is geen laag bovenop het bezoek. Voor de familie die hun telefoon checkt, is de melding *het bezoek, voor zover zij weten.
+Hier is een mythe die het waard is vroeg te laten varen: "als het boekingssysteem werkt, werken de meldingen ook." In de meeste softwarecategorieën is dat ongeveer waar. In thuiszorgplanning is het tegendeel waar. De melding is geen laagje bovenop het bezoek. Voor de familie die hun telefoon controleert, *is* de melding het bezoek.
 
-## De mythe: boekingslogica en notificatielogica zijn hetzelfde
+## De mythe: Boekingslogica en meldingslogica zijn hetzelfde
 
-AI-bouwers zoals Bolt zijn echt goed in de kern van het boekingsproces: de zorgverlener krijgt een dienst toegewezen, de klant ziet deze op een kalender en iedereen krijgt een bevestiging. Waar ze veel zwakker in zijn, is de vertakkende logica die ontstaat als een plan achteraf verandert – met name een ploegwisseling tussen twee zorgverleners. In een naïeve implementatie wordt bij het wisselen van een dienst alleen maar een zorgverlener-ID opnieuw toegewezen aan een bestaand agenda-item. Het bezoek verloopt nog steeds zoals gepland. Er zijn geen nieuwe evenementenbranden. Er gaat geen nieuwe melding uit. Vanuit het perspectief van het systeem gebeurde er niets waarvan een gezin op de hoogte moest zijn: het bezoek staat nog steeds 'op de kalender', alleen met een andere naam eraan.
+AI-bouwers zoals Bolt zijn echt goed in de kernboekingslus: de zorgverlener krijgt een dienst toegewezen, de klant ziet deze op een kalender, iedereen krijgt een bevestiging. Waar ze veel zwakker in zijn, is de vertakkingslogica die plaatsvindt wanneer een plan achteraf verandert — met name een dienstwissel tussen twee zorgverleners. In een eenvoudige implementatie herverdeelt het wisselen van een dienst simpelweg een zorgverlener-ID op een bestaande kalenderinvoer. Het bezoek staat nog steeds als gepland. Er wordt geen nieuwe gebeurtenis geactiveerd. Er gaat geen nieuwe melding uit.
 
-Het probleem is dat een ploegenwissel precies het soort verandering is waar een gezin *wel* van op de hoogte moet zijn, vooral als de ruil niet doorgaat, vertraging oploopt of de vervangende verzorger een ander aankomstvenster heeft. Een stille herplaatsing kan stilletjes uitmonden in een bezoek dat nooit plaatsvindt, waarbij de familie niets wijzer wordt totdat ze vragen waarom hun ouders er slechter uitzien.
+Het probleem is dat een dienstwissel precies het soort wijziging is waarvan een familie op de hoogte moet zijn. Een stille heroverweging kan stilzwijgend veranderen in een bezoek dat nooit plaatsvindt.
 
-## Waarom dit een vertrouwensprobleem is en geen randgeval
+## Waarom dit een vertrouwensprobleem is
 
-Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt het zo: “We zien een verschuiving in de softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig is om die producten tot volwassenheid te brengen. Precies daarin hebben we elf jaar ervaring.” Het plannen van ouderenzorg is een scherp voorbeeld van wat hij bedoelt: het ‘idee’ van een planningsapp is eenvoudig te prototypen. De architectuur die het betrouwbaar maakt als een echt gezin erop vertrouwt voor een echt bezoek, is een ander, moeilijker probleem, en het is het probleem dat de meeste door AI gegenereerde prototypen nog niet hebben opgelost.
+Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt het zo: “We zien een verschuiving in de softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig is om die producten tot volwassenheid te brengen. Precies daarin hebben we elf jaar ervaring.” Het plannen van ouderenzorg is een scherp voorbeeld van wat hij bedoelt.
 
-Een gemiste melding in de ouderenzorgcontext is geen ongemak. Het is de kloof tussen een gezin dat gelooft dat hun familielid is gecontroleerd en de realiteit dat niemand is komen opdagen. Die kloof heeft reële gevolgen, en het is precies het soort scenario dat pas aan de oppervlakte komt als een app echte zorgschema's afhandelt, en niet als het demogegevens verwerkt.
+Een gemiste melding in een ouderenzorgcontext is geen ongemak. Het is de kloof tussen een familie die gelooft dat hun familielid is gecontroleerd en de werkelijkheid dat er niemand is opgekomen.
 
-## Wat de notificatiearchitectuur op productieniveau vereist
+## Wat een meldingsarchitectuur op productieniveau vereist
 
-Om dit op de juiste manier op te lossen, moet elke planningsmutatie – en niet alleen de initiële boeking – worden behandeld als een gebeurtenis die een melding kan activeren, en moet expliciet worden gedefinieerd welke mutaties dat moeten zijn. Een dienstwissel, een tijdswijziging, een annulering en een no-show hebben elk hun eigen meldingsregel nodig, in plaats van te vertrouwen op de originele boekingsbevestiging om elke toekomstige status van dat bezoek te dekken. Ons team, dat vanuit het Amsterdamse kantoor van LaunchStudio werkt, bouwt dit als een gebeurtenisgestuurde laag achter de planningsinterface, zodat elke wijziging in de status van een bezoek (ongeacht welk scherm of welke beheerdersactie deze heeft geactiveerd) op betrouwbare wijze de familie bereikt.
+Dit goed oplossen betekent dat elke agendawijziging — niet alleen de initiële boeking — wordt behandeld als een gebeurtenis die een melding kan activeren. Ons team, werkend vanuit Manifera's kantoor in Amsterdam, bouwt dit als een gebeurtenisgestuurde laag achter de plannings-UI.
 
-U kunt zien hoe dit soort beoordelingen doorgaans werkt via [LaunchStudio's process](https://launchstudio.eu/en/#process), en voor een idee van de technische standaard die erachter zit, omvat Manifera's [portfolio](https://www.manifera.com/portfolio/) werk voor gereguleerde, vertrouwenskritische sectoren waar deze exacte discipline van belang is.
+U kunt zien hoe dit soort beoordeling werkt via [LaunchStudio's proces](https://launchstudio.eu/en/#process).
+
+## Verzonden betekent niet ontvangen
+
+Het oplossen van het triggerprobleem lost de helft van het probleem op. De andere helft is dat "melding verzonden" en "familie heeft het daadwerkelijk gezien" niet dezelfde gebeurtenis zijn. Een sms kan stilzwijgend mislukken. Een pushmelding kan mislukken. Een e-mail kan in de spambox belanden.
+
+Een verdedigbare versie volgt levering en bevestiging afzonderlijk van het verzenden, en escaleert wanneer geen van beide binnen een redelijk venster gebeurt:
+
+```javascript
+async function notifyFamily(visitEvent, primaryContact, secondaryContact) {
+  const result = await sendNotification(primaryContact, visitEvent);
+  await logDelivery(visitEvent.id, primaryContact.id, result.status);
+
+  scheduleCheck(visitEvent.id, '2 hours', async () => {
+    const acknowledged = await wasAcknowledged(visitEvent.id, primaryContact.id);
+    if (!acknowledged && secondaryContact) {
+      await sendNotification(secondaryContact, visitEvent);
+      await logDelivery(visitEvent.id, secondaryContact.id, 'escalated');
+    }
+  });
+}
+```
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: de ruil die niemand heeft aangekondigd
+### Een AI-native oprichter in actie: De wissel die niemand heeft aangekondigd
 
-Otto Jansen, een oprichter uit Maastricht, heeft ZorgAgenda gebouwd – een planningstool voor thuiszorgorganisaties om de bezoeken van zorgverleners te beheren en gezinnen op de hoogte te houden – met behulp van Bolt. De kernplanning en familiemeldingenstroom werkten goed tijdens de eerste tests: boek een bezoek, familie wordt op de hoogte gebracht, bezoek vindt plaats, familie krijgt een voltooiingsupdate.
+Otto Jansen, een oprichter in Maastricht, bouwde ZorgAgenda — een planningstool voor thuiszorgorganisaties om bezoeken van zorgverleners te beheren en families op de hoogte te houden — met behulp van Bolt. De kernplanning en gezinsmeldingsstroom werkten goed in de eerste testen.
 
-De kloof kwam aan het licht toen twee zorgverleners onderling een dienst wisselden via de hertoewijzingsfunctie van de app. Het bezoek bleef precies zoals voorheen op de kalender staan, alleen met de naam van een andere verzorger erbij. Er werd geen nieuwe melding verzonden naar de familie van de klant, omdat de app alleen meldingen verzond bij de eerste boeking en annulering; een nieuwe toewijzing was geen erkende trigger. Toen de ruil van de vervangende verzorger mislukte en het bezoek nooit daadwerkelijk plaatsvond, had de familie geen reden om dit te controleren, omdat hun laatste melding had bevestigd dat het bezoek gepland was en niets hen sindsdien iets anders had verteld.
+Het gat kwam aan het licht toen twee zorgverleners onderling een dienst verwisselden via de herintredingsfunctie van de app. Het bezoek bleef op de kalender staan zoals voorheen, alleen met de naam van een andere zorgverlener eraan gekoppeld. Er ging geen nieuwe melding naar de familie, omdat de app alleen meldingen stuurde bij initiële boeking en annulering. Toen de wissel mislukte en het bezoek nooit plaatsvond, had de familie geen reden om te controleren.
 
-De technici van LaunchStudio hebben het meldingssysteem rond elke wijziging in de planningsstatus opnieuw opgebouwd in plaats van alleen de oorspronkelijke boeking, hebben expliciete meldingen over ruilen en opnieuw toewijzen toegevoegd en een bevestigingsstap voor de voltooiing van een bezoek geïntroduceerd, zodat gezinnen een duidelijk signaal ontvangen wanneer een bezoek daadwerkelijk plaatsvindt, en niet alleen wanneer het gepland is.
+LaunchStudio's ingenieurs hebben het meldingssysteem herbouwd rond elke statuswijziging van het schema, voegden expliciete wissel- en herindelingmeldingen toe, en voerden een bevestigingsstap in voor het voltooien van het bezoek.
 
-**Resultaat:** gezinnen ontvangen nu een melding voor elke materiële wijziging in een gepland bezoek, waardoor de kloof wordt gedicht tussen wat de kalender laat zien en wat er feitelijk is gebeurd.
+**Resultaat:** families ontvangen nu een melding voor elke wezenlijke wijziging in een gepland bezoek.
 
-> *"Ik heb een test gedaan met het boeken van een bezoek en het annuleren van een bezoek. Ik heb nooit twee zorgverleners getest die onderling een dienst ruilden - en dat bleek precies het scenario te zijn waarin een gezin in het ongewisse bleef."*
-> — **Otto Jansen, oprichter, ZorgAgenda (Maastricht)**
+> *"Ik heb het boeken en annuleren van een bezoek getest. Ik heb nooit getest dat twee zorgverleners een dienst ruilen — en dat bleek precies het scenario te zijn waarin een familie in het duister werd gelaten."*
+> — **Otto Jansen, Oprichter, ZorgAgenda (Maastricht)**
 
-**Kosten en tijdlijn:** € 900 (gebeurtenisgestuurde notificatiearchitectuur, shift-swap- en hertoewijzingstriggers, bevestigingen van bezoekvoltooiing) — voltooid in 4 werkdagen.
+**Kosten & Tijdlijn:** € 900 (gebeurtenisgestuurde meldingsarchitectuur, dienstwissel-triggers, bezoekvoltooiingsbevestigingen) — voltooid in 4 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom heeft het oorspronkelijke meldingssysteem geen ploegenwissel opgemerkt?
+### Waarom ving het oorspronkelijke meldingssysteem een dienstwissel niet op?
 
-Omdat de app de initiële boeking en annulering alleen behandelde als gebeurtenissen die meldingswaardig waren, veranderde een nieuwe toewijzing wie aan een bezoek was toegewezen zonder de status van het bezoek te wijzigen, zodat er geen nieuwe meldingslogica werd geactiveerd.
+Omdat de app alleen de initiële boeking en annulering als meldingswaardige gebeurtenissen behandelde — een herindeling veranderde wie was toegewezen zonder de status te wijzigen.
 
-### Is dit een veelvoorkomend hiaat in door AI gegenereerde planningstools?
+### Is dit een veelvoorkomende leemte in met AI gegenereerde planningstools?
 
-Ja – AI-bouwers implementeren op betrouwbare wijze de primaire stroom die in een prompt wordt beschreven, maar hebben de neiging secundaire statuswijzigingen zoals swaps, herschikkingen en nieuwe toewijzingen over het hoofd te zien, tenzij deze allemaal expliciet zijn gespecificeerd.
+Ja — AI-bouwers implementeren betrouwbaar de primaire stroom die in een prompt wordt beschreven, maar missen secundaire statuswijzigingen zoals wissels en herplanningen.
 
 ### Hoe denkt Herre Roelevink over dit soort risico's?
 
-Hij heeft duidelijk gemaakt dat het harde deel van de huidige software niet het idee genereert; het zijn de architectuur en de beveiliging die een product op volwassen leeftijd betrouwbaar maken, en dat is precies de kloof tussen een werkende demo en een systeem waar families op kunnen vertrouwen.
+Hij stelt dat het moeilijke deel van software vandaag niet het genereren van het idee is — het is de architectuur en beveiliging die een product betrouwbaar maken bij volwassenheid.
 
-### Wat verandert LaunchStudio eigenlijk om dit op te lossen?
+### Wat verandert LaunchStudio daadwerkelijk om dit op te lossen?
 
-We hebben de meldingslaag opnieuw opgebouwd zodat deze bij elke planningsmutatie door gebeurtenissen wordt aangestuurd, in plaats van alleen aan de oorspronkelijke boeking te zijn gekoppeld, zodat elke wijziging in een bezoek op betrouwbare wijze de mensen bereikt die het moeten weten.
+We herbouwen de meldingslaag om gebeurtenisgestuurd te zijn bij elke agendawijziging, zodat elke wijziging in een bezoek betrouwbaar de mensen bereikt die het moeten weten.
 
-### Werkt LaunchStudio rechtstreeks samen met het Amsterdamse team aan dit soort projecten?
+### Werkt LaunchStudio voor dit soort projecten rechtstreeks samen met het Amsterdamse team?
 
-Ja – het Amsterdamse kantoor van LaunchStudio is onze Europese klantgerichte hub, en vertrouwenskritische plannings- en notificatiewerkzaamheden als deze zijn daar een terugkerend projecttype.
+Ja — LaunchStudio's kantoor in Amsterdam is onze Europese hub voor klantcontact.
 
 <script type="application/ld+json">
 {
@@ -98,42 +120,42 @@ Ja – het Amsterdamse kantoor van LaunchStudio is onze Europese klantgerichte h
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why didn't the original notification system catch a shift swap?",
+      "name": "Waarom ving het oorspronkelijke meldingssysteem een dienstwissel niet op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The app only treated the initial booking and cancellation as notification-worthy events \u2014 a reassignment changed who was assigned to a visit without changing the visit's status, so no new notification logic fired."
+        "text": "Omdat de app alleen de initiële boeking en annulering als meldingswaardige gebeurtenissen behandelde — een herindeling veranderde wie was toegewezen zonder de status te wijzigen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this a common gap in AI-generated scheduling tools?",
+      "name": "Is dit een veelvoorkomende leemte in met AI gegenereerde planningstools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 AI builders reliably implement the primary flow described in a prompt but tend to miss secondary state changes like swaps, reschedules, and reassignments unless each one is explicitly specified."
+        "text": "Ja — AI-bouwers implementeren betrouwbaar de primaire stroom die in een prompt wordt beschreven, maar missen secundaire statuswijzigingen."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Herre Roelevink think about this kind of risk?",
+      "name": "Hoe denkt Herre Roelevink over dit soort risico's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He argues the hard part of software today isn't generating the idea \u2014 it's the architecture and security that bring a product to maturity, which is exactly the gap between a working demo and a system families can rely on."
+        "text": "Hij stelt dat het moeilijke deel van software vandaag niet het genereren van het idee is — het is de architectuur en beveiliging die een product betrouwbaar maken."
       }
     },
     {
       "@type": "Question",
-      "name": "What does LaunchStudio actually change to fix this?",
+      "name": "Wat verandert LaunchStudio daadwerkelijk om dit op te lossen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We rebuild the notification layer to be event-driven across every schedule mutation, rather than tied only to the original booking, so any change to a visit reliably reaches the people who need to know."
+        "text": "We herbouwen de meldingslaag om gebeurtenisgestuurd te zijn bij elke agendawijziging."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio work directly with the Amsterdam team on projects like this?",
+      "name": "Werkt LaunchStudio voor dit soort projecten rechtstreeks samen met het Amsterdamse team?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 LaunchStudio's Amsterdam office is the European client-facing hub, and trust-critical scheduling and notification work is a recurring project type there."
+        "text": "Ja — LaunchStudio's kantoor in Amsterdam is onze Europese hub voor klantcontact."
       }
     }
   ]

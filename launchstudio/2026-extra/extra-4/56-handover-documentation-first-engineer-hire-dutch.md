@@ -48,6 +48,18 @@ De meest efficiënte manier om deze documentatie te produceren is niet door de o
 
 Als u op het punt staat uw eerste engineer aan te trekken en de codebase gedocumenteerd wilt hebben voordat ze beginnen, kunt u op onze pagina [hoe het werkt](https://launchstudio.eu/en/#process) zien hoe LaunchStudio dit soort betrokkenheid aanpakt. Manifera's [portfolio](https://www.manifera.com/portfolio/) toont de reeks codebases die onze engineers hebben ontwikkeld en gedocumenteerd, van producten in een vroeg stadium tot gevestigde bedrijfssystemen.
 
+## Documentatie die eenmaal is geschreven begint te verouderen zodra deze af is
+
+Overdrachtsdocumentatie is essentieel bij de eerste uitbreiding van het team. Zonder een proces om de documentatie bij te werken wanneer de code verandert, wordt het overdrachtsdocument al snel een bron van misleidende informatie.
+
+Koppel documentatie-updates aan de pull request checklist:
+
+```markdown
+## PR Checklist
+- [ ] Code is getest.
+- [ ] Interne overdrachtsdocumentatie / README is bijgewerkt indien de architectuur is gewijzigd.
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: twee weken om een ​​codebase te begrijpen die niemand heeft uitgelegd
@@ -89,6 +101,7 @@ Eerder is beter als je het kunt beheren; documentatie is het gemakkelijkst te pr
 
 Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert of het veilig, schaalbaar en productieklaar is. Ze zijn complementair en veel oprichters hebben er baat bij om beide tegelijkertijd te doen.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,42 +109,42 @@ Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert o
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Should I write handover documentation myself, or have someone else do it?",
+      "name": "Moet ik de overdrachtsdocumentatie zelf schrijven, of moet ik dit door iemand anders laten doen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Someone reading the codebase fresh, the way a new hire would, usually produces more useful documentation than a founder writing from memory."
+        "text": "Iemand die de codebase nieuw leest, zoals een nieuwe medewerker dat zou doen, produceert doorgaans nuttiger documentatie dan een oprichter die uit zijn hoofd schrijft. Als je maandenlang in de code hebt geleefd, vergeet je gemakkelijk welke beslissingen eigenlijk moeten worden uitgelegd."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the difference between this and just cleaning up code comments?",
+      "name": "Wat is het verschil tussen dit en alleen het opruimen van codeopmerkingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Code comments explain what a specific line does; handover documentation explains why the system as a whole is structured the way it is and which parts are fragile versus safe to build on."
+        "text": "Codecommentaar legt uit wat een specifieke regel doet; overdrachtsdocumentatie legt uit waarom het systeem als geheel is gestructureerd zoals het is en welke delen veilig zijn om op voort te bouwen in plaats van fragiel – een niveau hoger dan regel voor regel commentaar."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's team approach documenting an unfamiliar AI-built codebase?",
+      "name": "Hoe gaat het team van Manifera te werk bij het documenteren van een onbekende, door AI gebouwde codebase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers, including the team based in Singapore, read the code the same way a new hire would and document findings as they go, a process shaped by onboarding onto 160+ different codebases."
+        "text": "De technici van Manifera, waaronder het team uit Singapore, lezen de code op dezelfde manier als een nieuwe medewerker en documenteren de bevindingen terwijl ze bezig zijn - een proces dat wordt vormgegeven door het onboarden op meer dan 160 verschillende codebases bij zowel grote ondernemingen als beginnende klanten."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this only useful right before hiring, or should I do it earlier?",
+      "name": "Is dit alleen nuttig vlak voor de aanwerving, of moet ik dit eerder doen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Earlier is better \u2014 documentation is easiest to produce while the reasoning behind decisions is still fresh, and it becomes useful the moment you bring on anyone else, including a contractor."
+        "text": "Eerder is beter als je het kunt beheren; documentatie is het gemakkelijkst te produceren als de redenering achter beslissingen nog vers is, en het wordt echt nuttig op het moment dat je iemand anders erbij haalt, inclusief een aannemer of een mede-oprichter."
       }
     },
     {
       "@type": "Question",
-      "name": "Does handover documentation replace the need for a code audit?",
+      "name": "Vervangt de overdrachtsdocumentatie de noodzaak van een code-audit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 documentation explains how the code works and why; an audit evaluates whether it's secure, scalable, and production-ready. They're complementary."
+        "text": "Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert of het veilig, schaalbaar en productieklaar is. Ze zijn complementair en veel oprichters hebben er baat bij om beide tegelijkertijd te doen."
       }
     }
   ]

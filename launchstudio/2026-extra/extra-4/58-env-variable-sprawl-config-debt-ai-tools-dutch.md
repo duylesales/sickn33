@@ -50,6 +50,24 @@ Een productieklare opstelling heeft een paar concrete eigenschappen: elk geheim 
 
 Ons team, dat werkt vanuit het kantoor van Manifera in Amsterdam, voert dit doorgaans uit als een gerichte opdracht: volledige codebase-scan voor hardgecodeerde geheimen, consolidatie in een juiste omgevingsconfiguratie en een rotatie van alle sleutels die ooit in de versiegeschiedenis zijn blootgesteld, aangezien roteren de enige echte oplossing is als een geheim eenmaal in een git-logboek terecht is gekomen. Als u een idee wilt hebben van de reikwijdte en de kosten van uw eigen project, is onze [prijscalculator](https://launchstudio.eu/en/#calculator) een snel startpunt.
 
+## Het consolideren van geheimen kan stilzwijgend uw omgevingsgrenzen vervagen
+
+Het ordenen van omgevingsvariabelen voorkomt configuratieschuld. Een valkuil bij het centraliseren van configuratiebestanden is dat staging- en productievariabelen per ongeluk naar dezelfde waarden verwijzen als er geen strikte naamruimten worden gebruikt.
+
+Gebruik strikt gescheiden omgevingsbestanden en validatie op opstarttijd:
+
+```javascript
+import { z } from 'zlib';
+
+const envSchema = z.object({
+  NODE_ENV: z.enum(['development', 'staging', 'production']),
+  DATABASE_URL: z.string().url(),
+  STRIPE_SECRET_KEY: z.string().startsWith('sk_')
+});
+
+envSchema.parse(process.env);
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: een gecompromitteerde sleutel en geen kaart van waar deze leefde
@@ -91,6 +109,7 @@ Onze technici, die vanuit het kantoor van Manifera in Amsterdam werken, voeren e
 
 Het geldt vooral voor solo-oprichters: omdat er geen tweede ingenieur is die tijdens de codebeoordeling een verspreide configuratie opmerkt, hebben de schulden de neiging zich sneller op te stapelen en langer onopgemerkt te blijven.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +117,42 @@ Het geldt vooral voor solo-oprichters: omdat er geen tweede ingenieur is die tij
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How can I quickly check if my own codebase has this problem?",
+      "name": "Hoe kan ik snel controleren of mijn eigen codebase dit probleem heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Search your codebase for common patterns like api_key, secret, or token outside your .env files \u2014 matches hardcoded directly in application code signal scattered configuration."
+        "text": "Zoek in uw codebase naar algemene patronen zoals \"api_key\", \"secret\" of \"token\" buiten uw `.env`-bestanden. Als u overeenkomsten vindt die rechtstreeks in de applicatiecode zijn gecodeerd, is dat een teken van verspreide configuratie die de moeite waard is om verder te controleren."
       }
     },
     {
       "@type": "Question",
-      "name": "Is a .env file enough, or do I need a dedicated secrets manager?",
+      "name": "Is een `.env`-bestand voldoende, of heb ik een speciale geheimenmanager nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For most early-stage products, a well-organized .env file per environment, properly excluded from version control, is sufficient."
+        "text": "Voor de meeste producten in een vroeg stadium is een goed georganiseerd `.env`-bestand per omgeving, op de juiste manier uitgesloten van versiebeheer, voldoende; een toegewijde geheimenmanager wordt de moeite waard om te adopteren zodra u een groter team of strengere compliance-eisen heeft."
       }
     },
     {
       "@type": "Question",
-      "name": "What should I do if I find a secret that was previously committed to git?",
+      "name": "Wat moet ik doen als ik een geheim vind dat eerder op git is vastgelegd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rotate it immediately \u2014 removing it from a future commit doesn't remove it from git history, so the only reliable fix is issuing a new credential."
+        "text": "Roteer het onmiddellijk - het verwijderen ervan uit een toekomstige commit verwijdert het niet uit de git-geschiedenis, dus de enige betrouwbare oplossing als een geheim eenmaal is vastgelegd, is het als gecompromitteerd behandelen en een nieuw geheim uitgeven."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera typically scope this kind of audit?",
+      "name": "Hoe reikwijdt Manifera dit soort audits doorgaans?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our engineers, working from Manifera's Amsterdam office, run a full codebase scan for hardcoded secrets, consolidate them into a centralized configuration, and document every key's purpose."
+        "text": "Onze technici, die vanuit het kantoor van Manifera in Amsterdam werken, voeren een volledige codebase-scan uit voor hardgecodeerde en verspreide geheimen, consolideren deze in een gecentraliseerde configuratie en documenteren het doel van elke sleutel - een proces dat is gevormd door meer dan een decennium aan productie-engineeringwerk."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this only matter for larger teams, or does it apply to solo founders too?",
+      "name": "Is dit alleen van belang voor grotere teams, of geldt dit ook voor solo-oprichters?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It applies especially to solo founders \u2014 with no second engineer to catch a scattered configuration during code review, the debt tends to accumulate faster and go unnoticed longer."
+        "text": "Het geldt vooral voor solo-oprichters: omdat er geen tweede ingenieur is die tijdens de codebeoordeling een verspreide configuratie opmerkt, hebben de schulden de neiging zich sneller op te stapelen en langer onopgemerkt te blijven."
       }
     }
   ]

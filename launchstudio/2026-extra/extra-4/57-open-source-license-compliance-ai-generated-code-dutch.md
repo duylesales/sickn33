@@ -50,6 +50,17 @@ Niet elk gemarkeerd onderdeel hoeft opnieuw te worden geschreven. Veel open-sour
 
 Als u zich voorbereidt op een investeringsgesprek of een eventuele aanschaf en u wilt dat de licentiestatus van uw codebase wordt gecontroleerd voordat iemand anders deze voor u controleert, is onze [contactpagina](https://launchstudio.eu/en/#contact) de snelste manier om dat gesprek te starten, en de pagina [over ons](https://www.manifera.com/about-us/) van Manifera biedt meer informatie over de zakelijke klanten die onze technici hebben ondersteund met precies dit soort technische due diligence.
 
+## Een audit die het risico vindt is niet hetzelfde als het opheffen ervan
+
+Het scannen van open-source licenties ontdekt kwetsbare of incompatibele licenties (zoals GPL in een gesloten commerciële app). Het vinden van de fout vereist ook een duidelijke vervangings- of her-licentiëringsstrategie.
+
+Voer automatische licentiecontroles uit in de CI/CD-pipeline:
+
+```bash
+# Controleer afhankelijkheden op incompatibele licenties:
+npx license-checker --summary --onlyallow "MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause"
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native oprichter in actie: een Copyleft-fragment in een eigen product
@@ -91,6 +102,7 @@ Geautomatiseerde scanners vangen de aangegeven afhankelijkheden goed op, maar mi
 
 Het is de moeite waard om dit periodiek te herhalen, vooral na grote sprints voor de ontwikkeling van functies waarbij veel nieuwe, door AI voorgestelde code is geaccepteerd, omdat elke nieuwe sprint nieuwe, niet-gedetecteerde afhankelijkheden kan introduceren.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +110,42 @@ Het is de moeite waard om dit periodiek te herhalen, vooral na grote sprints voo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How would I even know if AI-suggested code has a license issue?",
+      "name": "Hoe weet ik zelfs of de door AI voorgestelde code een licentieprobleem heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You generally wouldn't without a dedicated audit \u2014 AI coding tools don't flag the provenance or license of suggested code, which is why a manual or tool-assisted scan is necessary before due diligence."
+        "text": "Normaal gesproken zou u dat niet doen zonder een specifieke audit. AI-coderingstools markeren de herkomst of licentie van de voorgestelde code niet, en dat is precies de reden waarom een ​​handmatige of tool-ondersteunde scan noodzakelijk is voordat er sprake is van een serieuze due diligence-gebeurtenis."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this only matter if I'm planning to sell my company?",
+      "name": "Maakt dit alleen uit als ik van plan ben mijn bedrijf te verkopen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It matters most clearly at that point, but it's also relevant for fundraising and for enterprise customers who run their own vendor IP reviews."
+        "text": "Op dat moment is het het duidelijkst van belang, maar het is ook relevant voor fondsenwerving, voor zakelijke klanten die hun eigen leveranciersbeveiligings- en IP-beoordelingen uitvoeren, en eenvoudigweg voor oprichters die willen weten of hun product juridisch verantwoord is."
       }
     },
     {
       "@type": "Question",
-      "name": "Are all open-source licenses this risky?",
+      "name": "Zijn alle open-sourcelicenties zo riskant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 permissive licenses like MIT and Apache 2.0 are low-risk and just require attribution; the real concern is copyleft licenses like GPL or AGPL."
+        "text": "Nee – permissieve licenties zoals MIT en Apache 2.0 brengen weinig risico met zich mee en vereisen alleen maar toewijzing; de echte zorg zijn copyleft-licenties zoals GPL of AGPL, die verplichtingen kunnen opleggen aan de rest van uw codebase."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's team approach a license audit differently than an automated scanner?",
+      "name": "Hoe pakt het team van Manifera een licentie-audit anders aan dan een geautomatiseerde scanner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Automated scanners catch declared dependencies well but miss copied or closely mirrored code \u2014 Manifera's engineers combine automated scanning with manual review, refined across 160+ delivered projects."
+        "text": "Geautomatiseerde scanners vangen de aangegeven afhankelijkheden goed op, maar missen code die is gekopieerd of nauw gespiegeld zonder dat er een pakketbeheerder nodig is. De technici van Manifera combineren automatisch scannen met handmatige beoordeling van verdachte patronen, een proces dat is verfijnd in meer dan 160 opgeleverde projecten."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this a one-time check or something I should repeat?",
+      "name": "Is dit een eenmalige controle of moet ik dit herhalen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's worth repeating periodically, especially after major feature development sprints where a lot of new AI-suggested code has been accepted."
+        "text": "Het is de moeite waard om dit periodiek te herhalen, vooral na grote sprints voor de ontwikkeling van functies waarbij veel nieuwe, door AI voorgestelde code is geaccepteerd, omdat elke nieuwe sprint nieuwe, niet-gedetecteerde afhankelijkheden kan introduceren."
       }
     }
   ]

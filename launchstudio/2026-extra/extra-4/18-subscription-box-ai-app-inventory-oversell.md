@@ -49,6 +49,29 @@ LaunchStudio's engineering bench sits inside Manifera, whose 160+ delivered ente
 
 If you want a fixed-scope estimate for this kind of fix, [our calculator](https://launchstudio.eu/en/#calculator) is a fast way to get a number before committing. Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice covers this same class of concurrency and transactional-integrity work at enterprise scale.
 
+## Renewals Skip the Checkout Entirely — And the Inventory Check With It
+
+The atomic inventory check above closes the gap for new signups, but a subscription box has a second charge event the checkout flow never touches: the monthly renewal. Existing subscribers don't click through checkout again — a billing job runs in the background, charges their card on file, and, in most AI-generated builds, assumes that because they were already a subscriber, this month's box is theirs by default. That assumption breaks the moment a limited or seasonal box tier has less stock than active subscribers on that tier, which happens more often than founders expect once a subscription base outgrows its original supplier order.
+
+If the renewal job charges every subscriber first and only checks remaining inventory when boxes are packed for shipping, you're back to the same oversell problem in a different part of the codebase — except now it's your existing, loyal subscribers absorbing the shipping delay instead of new signups, which is a worse trade for retention.
+
+The fix is to route renewal billing through the same inventory-aware check the checkout uses, before the card is charged, not after:
+
+```
+function processRenewal(subscription) {
+  const reserved = reserveInventory(subscription.boxTierId);
+  if (!reserved) {
+    flagForBackorder(subscription);
+    notifySubscriber(subscription, 'delay');
+    return;
+  }
+  chargeCard(subscription);
+  confirmShipment(subscription);
+}
+```
+
+An inventory-aware checkout that only protects the first transaction, and not every recurring one after it, has fixed half the problem.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Month the TikTok Mention Hit
@@ -90,6 +113,10 @@ Manifera's engineers apply the same atomic-transaction patterns used across 160+
 
 It's LaunchStudio's main engineering and development center, and checkout-and-inventory logic for growth-stage founders is a core part of the work handled there.
 
+### Does the inventory fix also apply to recurring monthly renewals, or just new signups?
+
+Both need it — renewal billing runs on a background job outside the checkout flow, so without the same inventory check wired into that job, existing subscribers can still be charged for a box tier that's already sold out for the month.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +146,11 @@ It's LaunchStudio's main engineering and development center, and checkout-and-in
       "@type": "Question",
       "name": "Why is this handled from LaunchStudio's Ho Chi Minh City center specifically?",
       "acceptedAnswer": { "@type": "Answer", "text": "It's LaunchStudio's main engineering and development center, and checkout-and-inventory logic for growth-stage founders is a core part of the work handled there." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the inventory fix also apply to recurring monthly renewals, or just new signups?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both need it — renewal billing runs on a background job outside the checkout flow, so without the same inventory check wired into that job, existing subscribers can still be charged for a box tier that's already sold out for the month." }
     }
   ]
 }

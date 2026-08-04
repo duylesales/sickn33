@@ -51,6 +51,22 @@ Beyond fixing the immediate attribution bug, a referral program that's going to 
 
 If your referral program has been live for a while and the numbers feel off, our [pricing calculator](https://launchstudio.eu/en/#calculator) can scope an audit and fix. Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) team has handled this same class of attribution and data-integrity work across much larger platforms, where the same underlying bug pattern shows up at a different scale.
 
+## When Two Referral Links Point at the Same Signup
+
+Fixing attribution so the referral code reliably reaches the database solves the "nothing gets credited" failure — but it surfaces a decision that most AI-generated referral code never makes explicitly: what happens when a prospective user clicks one friend's referral link, doesn't sign up right away, then later clicks a different friend's referral link before finally creating an account? Both codes were technically valid at the moment they were clicked. Only one referrer can get the credit, and if the system doesn't deliberately decide which one wins, whichever code happens to be captured last in the session or cookie silently overwrites the first, with no record that a collision even happened.
+
+The fix is picking an explicit rule — first-touch or last-touch attribution — and enforcing it at the point where the referral code would otherwise just get overwritten:
+
+```
+async function captureReferralCode(session, newCode) {
+  const existing = await getReferralCode(session);
+  if (existing) return; // first-touch: earliest referral code wins, ignore later ones
+  await setReferralCode(session, newCode);
+}
+```
+
+Most referral programs default to first-touch, since it rewards whoever made the initial introduction, but the specific choice matters less than making it on purpose and logging which rule applied to each signup — so a dispute later has an actual answer instead of a guess about which code the database happened to keep.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Months of Referrals, Nobody Credited
@@ -92,6 +108,10 @@ Often partially — if signup timestamps and marketing link data are still avail
 
 Much of this attribution and data-integrity work runs through Manifera's Singapore hub, which serves as the company's Southeast Asia base alongside its Amsterdam and Ho Chi Minh City offices.
 
+### What happens if two different referral links point to the same new signup?
+
+Without an explicit rule, whichever code was captured last silently overwrites the first, crediting the wrong referrer with no record a collision occurred — the fix is deliberately choosing first-touch or last-touch attribution and logging which rule applied to each signup.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +141,11 @@ Much of this attribution and data-integrity work runs through Manifera's Singapo
       "@type": "Question",
       "name": "Is Singapore where LaunchStudio's engineers on this kind of work are based?",
       "acceptedAnswer": { "@type": "Answer", "text": "Much of this attribution and data-integrity work runs through Manifera's Singapore hub, its Southeast Asia base alongside offices in Amsterdam and Ho Chi Minh City." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if two different referral links point to the same new signup?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Without an explicit rule, whichever code was captured last silently overwrites the first, crediting the wrong referrer with no record a collision occurred — the fix is deliberately choosing first-touch or last-touch attribution and logging which rule applied." }
     }
   ]
 }

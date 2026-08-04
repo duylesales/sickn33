@@ -46,6 +46,22 @@ De kosten om dit verkeerd te doen lopen op, omdat een kapotte zoekfunctie zichze
 
 Als u nog nooit een opzettelijke typefout in de zoekbalk van uw eigen app heeft getypt, is het de moeite waard om dat vandaag nog te doen. Als deze leeg terugkomt, kan [onze prijscalculator](https://launchstudio.eu/en/#calculator) nagaan hoe een goede oplossing eruit ziet.
 
+## Een gecorrigeerde zoekopdracht heeft nog steeds een verse index nodig
+
+Het verbeteren van zoek-autocomplete met fuzzy matching lost spelfouten van gebruikers op. Een maas in de wet ontstaat als de zoekindex niet automatisch wordt bijgewerkt wanneer nieuwe artikelen of profielen worden toegevoegd. De zoekbalk toont dan verouderde resultaten.
+
+Stel een automatische herindexeringstrigger in bij het opslaan van records:
+
+```javascript
+async function onProductUpdated(product) {
+  await searchIndex.saveObject({
+    objectID: product.id,
+    title: product.title,
+    category: product.category
+  });
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native oprichter in actie: de inventaristool die er expres leeg uitzag
@@ -85,6 +101,7 @@ De technici van Manifera testen zoekopdrachten aan de hand van realistische, onv
 
 Het is van invloed op elke zoekfunctie die op dezelfde manier is gebouwd (opzoeken van klanten, zoeken naar documenten, zoeken naar contactpersonen) overal waar een AI-tool een eenvoudige substring-match genereerde zonder expliciete instructies om typefouten en gedeeltelijke termen af ​​te handelen.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +109,42 @@ Het is van invloed op elke zoekfunctie die op dezelfde manier is gebouwd (opzoek
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why does my AI-generated search feature return nothing for a slightly misspelled term?",
+      "name": "Waarom retourneert mijn door AI gegenereerde zoekfunctie niets voor een enigszins verkeerd gespelde term?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because it's almost certainly built as an exact substring match, which only finds results when the search term appears character-for-character within the stored text."
+        "text": "Omdat het vrijwel zeker is gebouwd als een exacte substringmatch, die alleen resultaten oplevert als de zoekterm karakter voor karakter in de opgeslagen tekst verschijnt; een enkele typfout verbreekt de match volledig."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I test whether my own app has this problem?",
+      "name": "Hoe test ik of mijn eigen app dit probleem heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Deliberately search using a typo, a partial product name, or words in a different order \u2014 if any return zero results for an item you know exists, the search logic needs fuzzy matching."
+        "text": "Zoek opzettelijk met behulp van een typfout, een gedeeltelijke productnaam of woorden in een andere volgorde dan waarin het artikel feitelijk is opgeslagen. Als een van deze nulresultaten oplevert voor een artikel waarvan u weet dat het bestaat, heeft de zoeklogica fuzzy matching nodig."
       }
     },
     {
       "@type": "Question",
-      "name": "Is fixing this a major rebuild, or a targeted change?",
+      "name": "Is het oplossen hiervan een grote verbouwing of een gerichte verandering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's typically a targeted change to the search query logic, possibly adding database-level full-text search or a dedicated search index, not a rebuild of the surrounding app."
+        "text": "Het is doorgaans een gerichte wijziging in de zoekquerylogica en kan, afhankelijk van het datavolume, gepaard gaan met het toevoegen van een volledige tekstzoekopdracht op databaseniveau of een speciale zoekindex – en niet het opnieuw opbouwen van de omringende app."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's team approach search quality differently than a basic AI prompt would?",
+      "name": "Hoe benadert het team van Manifera de zoekkwaliteit anders dan een eenvoudige AI-prompt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers test search against realistic, imperfect input patterns rather than exact-match test cases, applying the same standard used across 160+ delivered enterprise projects."
+        "text": "De technici van Manifera testen zoekopdrachten aan de hand van realistische, onvolmaakte invoerpatronen in plaats van exact overeenkomende testgevallen, waarbij dezelfde standaard voor productiegereedheid wordt toegepast die wordt gebruikt in meer dan 160 opgeleverde projecten voor zakelijke klanten."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this issue only affect product search, or other kinds of lookups too?",
+      "name": "Heeft dit probleem alleen betrekking op het zoeken naar producten, of ook op andere soorten zoekopdrachten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It affects any search feature built the same way \u2014 customer lookups, document search, contact search \u2014 anywhere a simple substring match was generated without handling typos."
+        "text": "Het is van invloed op elke zoekfunctie die op dezelfde manier is gebouwd (opzoeken van klanten, zoeken naar documenten, zoeken naar contactpersonen) overal waar een AI-tool een eenvoudige substring-match genereerde zonder expliciete instructies om typefouten en gedeeltelijke termen af ​​te handelen."
       }
     }
   ]

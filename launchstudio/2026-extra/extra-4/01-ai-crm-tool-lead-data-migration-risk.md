@@ -49,6 +49,31 @@ LaunchStudio is powered by Manifera, a software development company with 11+ yea
 
 If you're not sure whether your own import logic has this gap, [get a fixed-scope quote from our price calculator](https://launchstudio.eu/en/#calculator) before your next real data load, not after.
 
+## Merging Two Leads Doesn't Just Merge Two Rows
+
+A staging table and a manual review queue solve the decision of whether two records should merge. They don't automatically solve what happens to everything else in the database that was quietly depending on the record that's about to disappear. A lead in a real CRM is rarely just a name and an email — it's the anchor for notes a rep wrote after a call, tasks assigned to follow up, deal stages, and email threads, all of them pointing back at that lead's ID. When a reviewer approves a merge, an AI-generated merge function will often update the surviving record's fields correctly and then simply delete the duplicate row, because that's what "merge" sounds like it means. Nobody told it that every note, task, and deal referencing the now-deleted ID needs to be re-pointed first, so those child records don't just vanish along with the row they were attached to.
+
+The fix is to treat a merge as a single transaction that touches every table with a foreign key back to the lead, not just the lead record itself — remap the children to the survivor's ID, log exactly what moved, and only then remove the duplicate:
+
+```
+BEGIN TRANSACTION
+
+-- Re-point every child record to the surviving lead first
+UPDATE notes SET lead_id = :survivor_id WHERE lead_id = :duplicate_id
+UPDATE tasks SET lead_id = :survivor_id WHERE lead_id = :duplicate_id
+UPDATE deals SET lead_id = :survivor_id WHERE lead_id = :duplicate_id
+
+-- Record exactly what moved, before the duplicate is gone
+INSERT INTO merge_audit (survivor_id, duplicate_id, tables_updated, reviewed_by, merged_at)
+VALUES (:survivor_id, :duplicate_id, 'notes,tasks,deals', :reviewer_id, NOW())
+
+DELETE FROM leads WHERE id = :duplicate_id
+
+COMMIT
+```
+
+Without this, a reviewer can approve a perfectly correct merge decision and still lose a month of call notes or an active deal in progress, because the review step only checked whether the two people were the same — it never checked what was attached to the one that didn't survive.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The CRM That Merged Away Its Own Pipeline
@@ -90,6 +115,10 @@ Test it with a real (or realistically messy) dataset before your first live migr
 
 Fixes in this category typically run in the €800–€2,000 range depending on data volume and existing schema complexity, delivered within a week — well below what a traditional dev agency charges for the same scope.
 
+### What happens to notes, tasks, or deals attached to a lead that gets merged away?
+
+If the merge function only updates the surviving record and deletes the duplicate, anything still pointing at the duplicate's ID — notes, tasks, deal history — gets orphaned or deleted along with it. A correct merge needs to re-point those child records to the survivor first, inside the same transaction, before the duplicate row is removed.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +148,11 @@ Fixes in this category typically run in the €800–€2,000 range depending on
       "@type": "Question",
       "name": "What does LaunchStudio typically charge to fix an import or migration pipeline like this?",
       "acceptedAnswer": { "@type": "Answer", "text": "Fixes in this category typically run €800–€2,000 depending on data volume and schema complexity, delivered within a week." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to notes, tasks, or deals attached to a lead that gets merged away?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If the merge function only updates the surviving record and deletes the duplicate, anything still pointing at the duplicate's ID — notes, tasks, deal history — gets orphaned or deleted along with it. A correct merge needs to re-point those child records to the survivor first, inside the same transaction, before the duplicate row is removed." }
     }
   ]
 }

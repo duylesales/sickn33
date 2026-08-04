@@ -51,6 +51,26 @@ Fixing this means treating no-show handling as a state machine with a defined ou
 
 You can [describe your project here](https://launchstudio.eu/en/#contact) and we'll respond within one business day with a read on what your current no-show logic actually covers. For a sense of how Manifera approaches marketplace payment architecture more broadly, see our [offshore software development](https://www.manifera.com/services/offshore-software-development/) practice, which supports exactly this kind of scoped engineering work.
 
+## Two Triggers, One Refund: Avoiding a Double-Refund Race
+
+Fixing the tutor no-show gap usually means adding two independent ways for a refund to trigger: a student-submitted "tutor didn't show" report, and an automatic timeout that fires if no session-start confirmation arrives from either side within a set window. Built carelessly, those two triggers don't know about each other. A student reports the no-show at minute six, and the automatic timeout — sized generously to avoid punishing a tutor who's just running a few minutes late — fires at minute ten regardless, because nothing checked whether a refund had already been issued. The result is the same booking refunded twice, once from each trigger, which is a worse outcome than the original bug: instead of an angry student demanding a refund you owe them, you have a confused finance report and money that left twice for a session that only failed to happen once.
+
+The fix is the same shape as any duplicate-trigger problem: check the booking's refund status before either trigger is allowed to act, and make whichever trigger fires first the one that wins.
+
+```
+function processNoShowRefund(bookingId, trigger) {
+  const booking = getBooking(bookingId);
+  if (booking.refundStatus !== 'none') {
+    return booking; // already refunded by the other trigger, do nothing
+  }
+  markRefundStatus(bookingId, 'processing', trigger);
+  issueRefund(booking);
+  markRefundStatus(bookingId, 'completed', trigger);
+}
+```
+
+This matters most exactly when it's least visible — a student report and an automatic timeout landing within seconds of each other isn't a rare coincidence, it's the expected behavior of a system where both triggers are watching the same session for the same failure.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The No-Show Nobody Planned For
@@ -92,6 +112,10 @@ No — we work with founders at consideration stage too, reviewing a prototype b
 
 Yes — Singapore is LaunchStudio's Southeast Asia hub, and two-sided marketplace payment and refund architecture is one of the most frequent project types the team there handles.
 
+### What stops a no-show refund from being issued twice?
+
+Because a student report and an automatic timeout can both legitimately detect the same no-show, the refund logic needs to check the booking's current refund status before acting — whichever trigger fires first should mark the booking as refunded and the second trigger should see that and stand down.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +145,11 @@ Yes — Singapore is LaunchStudio's Southeast Asia hub, and two-sided marketplac
       "@type": "Question",
       "name": "Is LaunchStudio's Singapore team experienced with marketplace-specific payment logic?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — Singapore is LaunchStudio's Southeast Asia hub, and two-sided marketplace payment and refund architecture is one of the most frequent project types the team there handles." }
+    },
+    {
+      "@type": "Question",
+      "name": "What stops a no-show refund from being issued twice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Because a student report and an automatic timeout can both legitimately detect the same no-show, the refund logic needs to check the booking's current refund status before acting — whichever trigger fires first should mark the booking as refunded and the second trigger should see that and stand down." }
     }
   ]
 }

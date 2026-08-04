@@ -47,6 +47,28 @@ LaunchStudio brings Manifera's enterprise-grade engineering to the founder econo
 
 If you've never actually calculated how much of your churn is silent card failure rather than genuine cancellation, [our packages page](https://launchstudio.eu/en/#packages) outlines what a billing resilience review typically covers.
 
+## The Grace Period Has a Cost of Its Own — Cap It Explicitly
+
+Keeping an account active while a customer's card gets sorted out is the right call, but it introduces a question the basic retry-and-notify logic doesn't answer on its own: what happens if the card never gets fixed? Without a firm, enforced boundary, a "grace period" can quietly turn into indefinite free access — the account never technically gets marked as failed enough to downgrade, it just sits in a permanent limbo of "still retrying." For usage-based billing in particular, this isn't just lost subscription revenue; the customer keeps consuming metered resources (API calls, storage, compute) the whole time, which is a real, ongoing cost rather than a deferred one.
+
+The fix is to give the grace period an explicit expiry, stored as a timestamp rather than inferred from a status flag, and to enforce it with a scheduled job that actually runs — and is itself monitored, for the same reason the original dead-letter-queue pattern needs monitoring: a silently broken enforcement job just replaces "customers get downgraded too aggressively" with "customers never get downgraded at all."
+
+```
+async function enforceGracePeriodExpiry() {
+  const overdue = await db.subscriptions.find({
+    status: 'past_due',
+    graceEndsAt: { $lt: new Date() },
+  });
+
+  for (const sub of overdue) {
+    await downgradeAccount(sub.customerId);
+    await logDunningOutcome(sub.customerId, 'grace_period_expired');
+  }
+}
+```
+
+A dunning system that recovers revenue and one that quietly gives away free access for months look identical from the outside — the only difference is whether this final step actually fires on schedule.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Clinic Software That Was Losing Revenue Nobody Was Watching
@@ -86,6 +108,10 @@ Manifera's engineers, who have delivered 160+ projects for enterprise clients, t
 
 Yes — dunning logic is typically layered on top of existing Stripe webhooks and subscription objects, so it doesn't require migrating payment processors or rebuilding checkout.
 
+### Does keeping an account active during the grace period create any risk of its own?
+
+Yes — without a firm, explicit expiry and a reliably-running job to enforce it, a grace period can quietly turn into indefinite free access, especially in usage-based billing where the customer keeps consuming metered resources the whole time. The grace period needs a stored expiry timestamp and its own monitored enforcement job, not just a status flag that's assumed to get checked eventually.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +141,11 @@ Yes — dunning logic is typically layered on top of existing Stripe webhooks an
       "@type": "Question",
       "name": "Is this something LaunchStudio can add without touching my existing Stripe setup?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, dunning logic is typically layered on top of existing Stripe webhooks and subscription objects, so it doesn't require migrating payment processors or rebuilding checkout." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does keeping an account active during the grace period create any risk of its own?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, without a firm expiry and a reliably-running job to enforce it, a grace period can quietly turn into indefinite free access, especially in usage-based billing where the customer keeps consuming metered resources the whole time. It needs a stored expiry timestamp and its own monitored enforcement job." }
     }
   ]
 }

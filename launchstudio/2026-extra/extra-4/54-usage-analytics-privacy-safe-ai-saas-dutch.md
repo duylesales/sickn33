@@ -50,6 +50,21 @@ Een praktische aanpak is om elke analysegebeurtenis te behandelen als iets dat �
 
 Als u een idee wilt hebben van wat dit soort audit kost voor uw specifieke stack: onze [prijscalculator](https://launchstudio.eu/en/#calculator) geeft een snelle schatting, en Manifera's praktijk voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare dataverwerkingsaudits uitgevoerd voor zakelijke klanten waarbij de regelgeving aanzienlijk hoger was dan bij een typisch SaaS-product in een vroeg stadium.
 
+## Het hashen van het ID vangt niet op wat er in andere velden meereist
+
+Het hashen van gebruikers-ID's in analytische gebeurtenissen beschermt de privacy van de gebruiker. Een privacy-lek ontstaat echter als persoonlijke gegevens (zoals e-mailadressen, volledige namen of IP-adressen) per ongeluk meereizen in de gebeurteniseigenschappen (event properties) of URL-parameters.
+
+Stel een opschoonfilter (sanitizer) in op de analytische SDK vóór verzending:
+
+```javascript
+analytics.beforeSend((event) => {
+  if (event.properties && event.properties.email) {
+    delete event.properties.email; // Verwijder PII uit eventeigenschappen
+  }
+  return event;
+});
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: een analysetool die de naam van elke leerling kende
@@ -91,6 +106,7 @@ Het is van toepassing op elk SaaS-product dat persoonlijke gegevens verwerkt, ma
 
 De audits worden uitgevoerd door het technische team van Manifera, inclusief de groep gevestigd in het ontwikkelingscentrum van Manifera in Ho Chi Minh City, waarbij hetzelfde beoordelingsproces voor gegevensverwerking wordt toegepast als bij grotere ondernemingen.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +114,42 @@ De audits worden uitgevoerd door het technische team van Manifera, inclusief de 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How do I check what data my analytics tool is actually receiving?",
+      "name": "Hoe controleer ik welke gegevens mijn analysetool daadwerkelijk ontvangt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open your analytics dashboard's event inspector or raw event log and look at the properties attached to a recent event \u2014 if you see names or emails you didn't explicitly decide to send, that's the gap."
+        "text": "Open de gebeurtenisinspecteur of het onbewerkte gebeurtenislogboek van uw analysedashboard en bekijk de eigenschappen die aan een recente gebeurtenis zijn gekoppeld. Als u namen, e-mails of andere identificerende velden ziet die u niet expliciet hebt besloten te verzenden, is dat het gat."
       }
     },
     {
       "@type": "Question",
-      "name": "Does anonymizing data mean I lose the ability to look up a specific user's activity?",
+      "name": "Betekent het anonimiseren van gegevens dat ik de mogelijkheid verlies om de activiteit van een specifieke gebruiker op te zoeken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 using a hashed identifier still lets you look up a specific user's full activity history, as long as the mapping between that identifier and the real user stays inside your own systems."
+        "text": "Nee. Als u een gehashte identificatie gebruikt, kunt u nog steeds de volledige activiteitsgeschiedenis van een specifieke gebruiker opzoeken, zolang u de koppeling tussen die identificatie en de echte gebruiker binnen uw eigen systemen bewaart en niet die van de analyseleverancier."
       }
     },
     {
       "@type": "Question",
-      "name": "Why does Herre Roelevink describe this as an architecture problem rather than a coding problem?",
+      "name": "Waarom beschrijft Herre Roelevink dit als een architectuurprobleem en niet als een coderingsprobleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because the code works correctly by every technical measure \u2014 the gap is a decision nobody made about what should leave the system, which is architectural judgment AI coding tools don't apply on their own."
+        "text": "Omdat de code die de gegevens verzendt bij elke technische maatregel correct werkt - de kloof is een beslissing die niemand heeft genomen over wat wel en niet het systeem mag verlaten, wat precies het soort architectonisch oordeel is dat AI-coderingstools op zichzelf niet toepassen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this specific to education products, or does it apply more broadly?",
+      "name": "Geldt dit specifiek voor onderwijsproducten of is dit breder van toepassing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It applies to any SaaS product handling personal data, but the stakes scale with sensitivity \u2014 education, healthcare, and financial data carry additional legal obligations."
+        "text": "Het is van toepassing op elk SaaS-product dat persoonlijke gegevens verwerkt, maar de inzet wordt steeds groter: onderwijs-, gezondheidszorg- en financiële gegevens brengen aanvullende wettelijke verplichtingen met zich mee die een niet-beoordeeld analyselek tot een veel groter probleem maken dan het geval zou zijn voor een algemene productiviteitstool."
       }
     },
     {
       "@type": "Question",
-      "name": "Who actually does this kind of privacy audit at LaunchStudio?",
+      "name": "Wie doet dit soort privacy-audit eigenlijk bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The audits are carried out by Manifera's engineering team, including the group based at Manifera's Ho Chi Minh City development center, using the same data-handling review process used on larger enterprise engagements."
+        "text": "De audits worden uitgevoerd door het technische team van Manifera, inclusief de groep gevestigd in het ontwikkelingscentrum van Manifera in Ho Chi Minh City, waarbij hetzelfde beoordelingsproces voor gegevensverwerking wordt toegepast als bij grotere ondernemingen."
       }
     }
   ]

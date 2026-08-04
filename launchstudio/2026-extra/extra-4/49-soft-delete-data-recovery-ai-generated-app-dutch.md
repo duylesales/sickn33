@@ -46,6 +46,17 @@ Dit is precies het soort oordeelsvorming over datamodellering dat door AI gegene
 
 Als u niet zeker weet welke van de verwijderfuncties van uw app harde verwijderingen zijn die wachten om een ​​slechte dag te veroorzaken, is het de moeite waard [uw gegevensmodel te beoordelen met ons team](https://launchstudio.eu/en/#contact) voordat uw eerste echte gebruiker er op de harde manier achter komt.
 
+## Soft Delete verbreekt stilletjes unieke beperkingen (Unique Constraints)
+
+Een zachte verwijdering (soft delete) markeert een record in de database als `deleted_at = TIMESTAMP` in plaats van het fysiek te wissen. Een veelvoorkomend probleem ontstaat bij unieke velden (zoals een e-mailadres of gebruikersnaam): als een gebruiker zijn account verwijdert en later een nieuw account probeert aan te maken met hetzelfde e-mailadres, faalt de database-invoer vanwege de unieke beperking op het oude (zacht verwijderde) record.
+
+Gebruik een samengestelde unieke index die de verwijderingsdatum meeneemt of een uniek ID toevoegt bij verwijdering:
+
+```sql
+-- In plaats van UNIQUE(email), gebruik een partiële unieke index:
+CREATE UNIQUE INDEX unique_active_user_email ON users (email) WHERE deleted_at IS NULL;
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: het project dat in één klik verdween
@@ -85,6 +96,7 @@ Manifera's ruim 11 jaar ervaring op het gebied van productie-engineering in meer
 
 Over het algemeen niet zinvol: filteren op een geïndexeerde 'deleted_at'-kolom voegt verwaarloosbare overhead toe in vergelijking met de kosten van een onherstelbare, accidentele verwijdering.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +104,42 @@ Over het algemeen niet zinvol: filteren op een geïndexeerde 'deleted_at'-kolom 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why do AI coding tools default to hard deletes instead of soft deletes?",
+      "name": "Waarom gebruiken AI-coderingstools standaard harde verwijderingen in plaats van zachte verwijderingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because a hard delete is the simplest, most literal interpretation of a delete request, and soft delete requires additional schema changes and query updates not implied by a simple prompt."
+        "text": "Omdat een harde verwijdering de eenvoudigste, meest letterlijke interpretatie is van een 'verwijderings'-verzoek, en het correct bouwen van een zachte verwijdering aanvullende schemawijzigingen en query-updates vereist die niet worden geïmpliceerd door een eenvoudige prompt."
       }
     },
     {
       "@type": "Question",
-      "name": "Which tables in my app actually need soft delete?",
+      "name": "Welke tabellen in mijn app moeten daadwerkelijk voorlopig worden verwijderd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anything with cascading relationships, anything a user could delete accidentally through the UI, and anything with retention or audit requirements."
+        "text": "Alles met trapsgewijze relaties, alles wat een gebruiker per ongeluk via de gebruikersinterface kan verwijderen, en alles met bewaar- of auditvereisten: eenvoudig opnieuw te maken records met een lage inzet zijn minder belangrijk."
       }
     },
     {
       "@type": "Question",
-      "name": "Can soft delete be retrofitted onto an app that already uses hard deletes?",
+      "name": "Kan zacht verwijderen achteraf worden ingebouwd in een app die al gebruikmaakt van harde verwijdering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, though it requires adding the flag column and auditing every existing query against that table to filter deleted rows consistently."
+        "text": "Ja, hoewel hiervoor de vlagkolom moet worden toegevoegd en elke bestaande query aan die tabel moet worden gecontroleerd om er zeker van te zijn dat verwijderde rijen consequent worden uitgefilterd overal waar ze worden gelezen."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's engineering background inform this kind of data modeling decision?",
+      "name": "Hoe wordt de technische achtergrond van Manifera geïnformeerd over dit soort beslissingen over datamodellering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's 11+ years of production engineering experience across 160+ projects means delete semantics get evaluated against real operational risk, not just implemented as the first working version."
+        "text": "Manifera's ruim 11 jaar ervaring op het gebied van productie-engineering in meer dan 160 projecten betekent dat beslissingen over datamodellen, zoals het verwijderen van semantiek, worden geëvalueerd aan de hand van reële operationele risico's, en niet alleen worden geïmplementeerd als de eerste werkende versie."
       }
     },
     {
       "@type": "Question",
-      "name": "Does adding soft delete slow down my database queries?",
+      "name": "Vertraagt ​​het toevoegen van zacht verwijderen mijn databasequery's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Generally not meaningfully \u2014 filtering on an indexed deleted_at column adds negligible overhead compared to the cost of an unrecoverable accidental deletion."
+        "text": "Over het algemeen niet zinvol: filteren op een geïndexeerde 'deleted_at'-kolom voegt verwaarloosbare overhead toe in vergelijking met de kosten van een onherstelbare, accidentele verwijdering."
       }
     }
   ]

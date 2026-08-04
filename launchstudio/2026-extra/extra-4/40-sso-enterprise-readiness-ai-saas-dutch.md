@@ -110,6 +110,7 @@ Bereken wat uw project kost — [gebruik onze rekenmachine](https://launchstudio
 
 Voor meer informatie over hoe Manifera toegangscontrole- en identiteitssystemen bouwt die standhouden onder bedrijfsbeoordeling, zie [Manifera's aangepaste softwareontwikkelingsdiensten](https://www.manifera.com/services/custom-software-development/).
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,42 +118,42 @@ Voor meer informatie over hoe Manifera toegangscontrole- en identiteitssystemen 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How would I know if SSO is going to be a requirement before it blocks a deal?",
+      "name": "Hoe weet ik of SSO een vereiste is voordat een deal wordt geblokkeerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ask directly, early in any enterprise sales conversation, whether the prospect's IT security team requires SSO for new vendors \u2014 by the time procurement raises it unprompted, you've usually lost weeks you didn't need to lose."
+        "text": "Vraag direct, vroeg in een verkoopgesprek binnen een onderneming, of het IT-beveiligingsteam van de potentiële klant SSO nodig heeft voor nieuwe leveranciers. Tegen de tijd dat de inkoop dit ongevraagd ter sprake brengt, bent u doorgaans weken kwijt die u niet had hoeven verliezen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is building SSO support a one-time cost or does it need maintenance per customer?",
+      "name": "Is het bouwen van SSO-ondersteuning eenmalige kosten of is er onderhoud per klant nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both \u2014 the initial architecture is a one-time build, but each new enterprise customer typically needs their specific identity provider connection configured, which is why a self-serve admin flow matters more than a single hardcoded integration."
+        "text": "Beide: de initiële architectuur is een eenmalige build, maar elke nieuwe zakelijke klant moet doorgaans zijn specifieke identiteitsproviderverbinding configureren. Daarom is een zelfbedieningsbeheerstroom belangrijker dan een enkele hardgecodeerde integratie."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera approach an enterprise-readiness build differently from a typical feature request?",
+      "name": "Hoe benadert Manifera een enterprise-readiness-build anders dan een typisch functieverzoek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our engineers treat it as an architectural addition to authentication and access control rather than an isolated feature, because getting it wrong the first time just recreates the same scramble at the next enterprise deal."
+        "text": "Onze technici beschouwen het als een architectonische toevoeging aan authenticatie en toegangscontrole en niet als een op zichzelf staande functie, omdat als het de eerste keer fout gaat (het hardcoderen van een enkele identiteitsprovider bijvoorbeeld) hetzelfde gedoe bij de volgende zakelijke deal opnieuw ontstaat."
       }
     },
     {
       "@type": "Question",
-      "name": "What other requirements tend to surface alongside SSO in enterprise deals?",
+      "name": "Welke andere vereisten komen naast SSO vaak naar voren in zakelijke deals?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Role-based access control, audit logging, and data residency questions are the most common companions, and addressing them together during one hardening pass is more efficient than fixing each reactively as a separate deal-blocker."
+        "text": "Op rollen gebaseerde toegangscontrole, auditlogging en vragen over gegevenslocatie zijn de meest voorkomende metgezellen, en het samen aanpakken ervan tijdens één verhardingsronde is efficiënter dan ze allemaal reactief op te lossen als een afzonderlijke dealblocker."
       }
     },
     {
       "@type": "Question",
-      "name": "Has Manifera built enterprise authentication for larger, established companies too?",
+      "name": "Heeft Manifera ook bedrijfsauthenticatie ontwikkeld voor grotere, gevestigde bedrijven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 SAML SSO and enterprise access control work is part of Manifera's broader engineering practice, including engagements with enterprise clients like Vodafone and CFLW, which is the same expertise applied when a founder's first enterprise deal is on the line."
+        "text": "Ja – SAML SSO en ondernemingstoegangscontrole maken deel uit van de bredere engineeringpraktijk van Manifera, inclusief opdrachten met zakelijke klanten als Vodafone en CFLW, dezelfde expertise die wordt toegepast wanneer de eerste zakelijke deal van een oprichter op het spel staat.  Bereken wat uw project kost — [gebruik onze rekenmachine](https://launchstudio.eu/en/#calculator) om vóór uw volgende aanbestedingsgesprek een ondernemingsbereidheidspas te verkrijgen.  Voor meer informatie over hoe Manifera toegangscontrole- en identiteitssystemen bouwt die standhouden onder bedrijfsbeoordeling, zie [Manifera's aangepaste softwareontwikkelingsdiensten](https://www.manifera.com/services/custom-software-development/)."
       }
     }
   ]

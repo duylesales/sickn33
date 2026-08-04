@@ -47,6 +47,35 @@ As Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts 
 
 LaunchStudio's engineers, working out of Manifera's Amsterdam office at Herengracht 420, review payment flows as a standard part of getting an AI-generated SaaS product production-ready, replacing raw-field checkout forms with Stripe Elements or hosted checkout before a single real card number ever reaches the app's own servers. If you're not sure which category your current checkout falls into, it's worth [getting a fixed-scope security review](https://launchstudio.eu/en/#calculator) before it becomes a bigger conversation with a payment processor or an enterprise customer's security team.
 
+## Stripe Elements Isolates the Card Field — It Doesn't Secure Everything Else on the Page
+
+Moving card collection into Stripe's iframe solves the scope problem, but it creates a false sense that the checkout page itself is now someone else's problem entirely. It isn't. A checkout page still typically loads other scripts alongside the payment iframe — analytics tags, chat widgets, a tag manager container — and any one of those scripts, if compromised through a supply-chain issue or injected by an attacker, can tamper with the page around the iframe even without ever touching the raw card fields directly. This class of attack, generally known as web skimming, doesn't care that your card data is technically out of scope; it targets the surrounding page to redirect submissions, overlay a fake form, or capture data through some other means.
+
+The practical response isn't to distrust Stripe Elements — it's to treat the checkout page as something worth actively monitoring, not just something you configured once and forgot. That means keeping an explicit inventory of every script allowed to run there and watching for anything unexpected showing up:
+
+```
+// Maintain an explicit inventory of every script allowed to run
+// on the checkout page, and flag anything that doesn't match it
+const APPROVED_SCRIPTS = ['js.stripe.com', 'yourdomain.com'];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.tagName === 'SCRIPT' &&
+            !APPROVED_SCRIPTS.some((domain) => node.src.includes(domain))) {
+          alertSecurityTeam(`Unapproved script on checkout page: ${node.src}`);
+          node.remove();
+        }
+      });
+    });
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+```
+
+This is a simplified illustration of the idea, not a complete defense on its own — production setups typically pair this kind of monitoring with a strict content security policy and subresource integrity checks. The point is the same either way: getting card data out of scope is the first fix, not the only one, for a checkout page that stays trustworthy over time.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The POS Add-On That Accidentally Became a Card Processor
@@ -86,6 +115,10 @@ Yes. Migrating from raw card fields to Stripe Elements typically preserves the s
 
 No — PCI scope applies the moment card data touches your systems, regardless of company size, which is why LaunchStudio's Amsterdam-based team treats it as a standard check for any AI-built app handling payments directly.
 
+### Does using Stripe Elements mean I don't need to worry about anything else on my checkout page?
+
+No — isolating card data in the iframe keeps raw card numbers out of PCI scope, but the rest of the checkout page still matters. Other scripts running alongside the iframe, like analytics tags or chat widgets, can still be compromised and used to tamper with the surrounding page, so it's worth monitoring what's actually allowed to run there rather than treating the page as fully covered once Stripe Elements is in place.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +148,11 @@ No — PCI scope applies the moment card data touches your systems, regardless o
       "@type": "Question",
       "name": "Does this only matter for larger SaaS companies?",
       "acceptedAnswer": { "@type": "Answer", "text": "No, PCI scope applies the moment card data touches your systems regardless of company size, which is why LaunchStudio's Amsterdam-based team treats it as a standard check." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does using Stripe Elements mean I don't need to worry about anything else on my checkout page?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, isolating card data in the iframe keeps raw card numbers out of PCI scope, but other scripts running alongside it, like analytics tags or chat widgets, can still be compromised and used to tamper with the surrounding page, so it's worth monitoring what's allowed to run there." }
     }
   ]
 }

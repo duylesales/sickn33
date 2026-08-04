@@ -47,6 +47,33 @@ This is the category of gap Manifera's team looks for specifically when reviewin
 
 Before you put QR codes on real tables, it's worth [checking what a pre-launch review costs](https://launchstudio.eu/en/#calculator) — it's a fraction of the cost of a Friday night's worth of comped meals.
 
+## Limited-Quantity Items Have Their Own Race Condition
+
+Order-time revalidation fixes stale prices, but it doesn't automatically fix a related bug that only shows up with limited-quantity items — the daily special with ten portions, the last few plates of a dish before it's 86'd. The problem is timing, not staleness: two tables can both check "is this available" within the same second, both see it as available, and both get their order confirmed, because checking availability and reserving the last portion are treated as two separate steps instead of one atomic action. Revalidating the menu at order time only helps if the check itself can't be beaten by another order landing in the same narrow window.
+
+```
+Table 12 order:                       Table 7 order:
+1. Checks "last special" — qty: 1     1. Checks "last special" — qty: 1
+2. Sees it as available               2. Sees it as available
+3. Order confirmed                    3. Order confirmed
+
+Kitchen now has two tickets for one plate.
+```
+
+The fix is to make the check and the reservation the same database operation, so only one of two simultaneous requests can actually succeed:
+
+```
+-- Atomic check-and-decrement instead of check, then decrement
+UPDATE menu_items
+SET quantity_remaining = quantity_remaining - 1
+WHERE id = :item_id AND quantity_remaining > 0
+
+-- If zero rows were updated, the item was already gone —
+-- reject this order line instead of confirming it
+```
+
+This is the same underlying problem as stale pricing — a session trusting a snapshot instead of the live state — but it needs its own fix, because revalidating a price doesn't revalidate a quantity that another table depleted in the same instant.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Menu That Forgot It Changed
@@ -88,6 +115,10 @@ Yes — engineers connected to Manifera's development center in Ho Chi Minh City
 
 Open the ordering app on two devices, change a price in the admin panel, and see whether the already-open session on the second device reflects it. If it doesn't, [talk to an engineer](https://launchstudio.eu/en/#contact) before your first real service.
 
+### Can two tables still order the last plate of a limited special at the same time?
+
+They can, if checking availability and reserving the item are two separate steps — both orders can pass the check before either one commits. The fix is making the check and the reservation a single atomic database operation, so only the first order to actually claim the last portion succeeds and the second is rejected automatically.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,6 +148,11 @@ Open the ordering app on two devices, change a price in the admin panel, and see
       "@type": "Question",
       "name": "What's the best way to test for this before launch?",
       "acceptedAnswer": { "@type": "Answer", "text": "Open the ordering app on two devices, change a price in the admin panel, and check whether the already-open session on the second device reflects the change." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can two tables still order the last plate of a limited special at the same time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They can, if checking availability and reserving the item are two separate steps — both orders can pass the check before either one commits. The fix is making the check and the reservation a single atomic database operation, so only the first order to actually claim the last portion succeeds." }
     }
   ]
 }

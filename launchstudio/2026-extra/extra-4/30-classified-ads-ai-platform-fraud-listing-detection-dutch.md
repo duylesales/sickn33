@@ -93,6 +93,7 @@ Het team beoordeelt de daadwerkelijke categoriemix en prijspatronen van het plat
 
 Ja – de meer dan 120 ingenieurs van Manifera hebben op regels gebaseerde en risicoscorende systemen geleverd voor zakelijke markt- en platformklanten, en diezelfde technische discipline is wat LaunchStudio toepast op kleinere, door de oprichters gebouwde advertentieplatforms.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,42 +101,42 @@ Ja – de meer dan 120 ingenieurs van Manifera hebben op regels gebaseerde en ri
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why doesn't an AI coding tool build fraud detection automatically?",
+      "name": "Waarom bouwt een AI-coderingstool niet automatisch fraudedetectie op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because fraud detection isn't implied by a request like 'build a listing form' \u2014 it's a distinct feature that has to be explicitly specified and designed."
+        "text": "Omdat fraudedetectie niet wordt geïmpliceerd door een verzoek als \"een lijstformulier samenstellen\" - het is een aparte functie die expliciet moet worden gespecificeerd en ontworpen, en wordt dus overgeslagen tenzij een oprichter of ingenieur denkt er rechtstreeks om te vragen."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need machine learning to catch listings like this?",
+      "name": "Heb ik machine learning nodig om dit soort vermeldingen op te vangen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 a rules-based check comparing listing price against a category benchmark, combined with account history signals, catches the most common fraud pattern without any AI or ML component."
+        "text": "Nee – een op regels gebaseerde controle waarbij de aanbiedingsprijs wordt vergeleken met een categoriebenchmark, gecombineerd met signalen uit de accountgeschiedenis, spoort het meest voorkomende en schadelijke fraudepatroon op zonder dat hiervoor een AI- of ML-component nodig is."
       }
     },
     {
       "@type": "Question",
-      "name": "Won't holding listings for review slow down legitimate sellers?",
+      "name": "Zal het vasthouden van vermeldingen ter beoordeling legitieme verkopers niet vertragen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only flagged listings are held \u2014 the review queue is designed so the vast majority of normal listings publish instantly."
+        "text": "Alleen gemarkeerde vermeldingen worden bewaard. De beoordelingswachtrij is zo ontworpen dat de overgrote meerderheid van de normale vermeldingen onmiddellijk wordt gepubliceerd, waarbij beoordeling alleen wordt geactiveerd wanneer specifieke risicosignalen samen aanwezig zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio decide what counts as a fraud signal for a specific platform?",
+      "name": "Hoe bepaalt LaunchStudio wat geldt als fraudesignaal voor een specifiek platform?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The team reviews the platform's actual category mix and pricing patterns to set realistic benchmarks, part of the production-readiness work Manifera's engineers apply across marketplace projects."
+        "text": "Het team beoordeelt de daadwerkelijke categoriemix en prijspatronen van het platform om realistische benchmarks vast te stellen, in plaats van een algemene drempel toe te passen, die deel uitmaakt van het productiegereedheidswerk dat de technici van Manifera toepassen op marktplaatsprojecten."
       }
     },
     {
       "@type": "Question",
-      "name": "Has Manifera built trust and safety systems like this for larger platforms?",
+      "name": "Heeft Manifera dit soort vertrouwens- en veiligheidssystemen gebouwd voor grotere platforms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 Manifera's 120+ engineers have delivered rule-based and risk-scoring systems for enterprise marketplace and platform clients."
+        "text": "Ja – de meer dan 120 ingenieurs van Manifera hebben op regels gebaseerde en risicoscorende systemen geleverd voor zakelijke markt- en platformklanten, en diezelfde technische discipline is wat LaunchStudio toepast op kleinere, door de oprichters gebouwde advertentieplatforms."
       }
     }
   ]

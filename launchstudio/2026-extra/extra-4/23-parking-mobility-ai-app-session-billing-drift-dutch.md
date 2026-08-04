@@ -48,6 +48,22 @@ Het dichten van deze kloof gaat niet over het in realtime detecteren van elke mo
 
 Een enkele onjuiste afschrijving is eenvoudig terug te betalen. De werkelijke kosten zijn wat er daarna gebeurt: een chauffeur die twee extra uren in rekening wordt gebracht, dient geen rustig supportticket in en wacht geduldig af; hij laat een beoordeling met één ster achter, vertelt het aan een vriend en stopt stilletjes met het gebruik van de app, allemaal binnen dezelfde dag dat de afschrijving op zijn afschrift verscheen. Het vertrouwen in een app voor betalingsverwerking is asymmetrisch: het duurt maanden om te bouwen en één slechte factureringsgebeurtenis te verliezen, waardoor de betrouwbaarheid van de sessie een bedrijfskritische zorg is en niet een klein technisch detail. Manifera's Zuidoost-Aziatische hub aan Tras Street in Singapore heeft precies deze categorie van consumentenmobiliteit en betalingswerk ondersteund, waarbij de nauwkeurigheid van de sessie rechtstreeks bepaalt of gebruikers de app geïnstalleerd houden. [Zie wat een betrouwbaarheidsbeoordeling kost](https://launchstudio.eu/en/#calculator) voor uw eigen app.
 
+## Een sessie automatisch sluiten betekent niet dat de auto is vertrokken
+
+Wanneer een parkeersessie de maximale duur bereikt, sluit de achtergrondtaak de sessie om te voorkomen dat de gebruiker oneindig wordt belast. Als het voertuig de parkeerplek fysiek nog niet heeft verlaten, ontstaat er een discrepantie tussen de app en de werkelijkheid.
+
+Sluit de sessie in de app met een "automatisch afgesloten"-status en stel een melding in voor het terreinbeheer:
+
+```javascript
+async function autoCloseSession(sessionId) {
+  await db.sessions.updateOne(
+    { id: sessionId },
+    { $set: { status: 'auto_closed', endedAt: new Date() } }
+  );
+  await notifySiteManager(sessionId, 'Session auto-closed; physical check recommended');
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: gefactureerd voor een plek die ze al hadden verlaten
@@ -89,6 +105,7 @@ Het hangt af van de gebruikssituatie: een parkeerapp kan maximaal 24 uur duren v
 
 Ja – Manifera's hub in Zuidoost-Azië aan Tras Street in Singapore ondersteunt projecten op het gebied van consumentenmobiliteit en betalingen, waarbij dezelfde betrouwbaarheidsnormen worden toegepast als bij het zakelijke klantenbestand.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,42 +113,42 @@ Ja – Manifera's hub in Zuidoost-Azië aan Tras Street in Singapore ondersteunt
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is session billing drift a rare edge case?",
+      "name": "Is het afwijken van sessiefacturering een zeldzaam geval of een veelvoorkomend probleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, it's common \u2014 any app relying on an explicit end-session signal without a timeout is exposed the first time a user's connection drops mid-session."
+        "text": "Het komt vaak voor: elke door AI gebouwde app die afhankelijk is van een expliciet ‘eindsessie’-signaal, zonder time-out of terugval, wordt hieraan blootgesteld de eerste keer dat de verbinding van een gebruiker halverwege de sessie wegvalt, wat routinematig gebeurt in gebouwen, liften of kelders."
       }
     },
     {
       "@type": "Question",
-      "name": "Can session billing drift be fixed without changing the app's UI?",
+      "name": "Kan dit worden opgelost zonder dat de app er voor gebruikers uitziet of aanvoelt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, the fix is mostly backend logic like timeouts and reconciliation jobs, not a change to the start/stop interface."
+        "text": "Ja, de oplossing bestaat vrijwel volledig uit backend-logica (time-outs, afstemmingstaken, terugbetalingsvlaggen) en vereist geen wijziging van de start/stop-interface die de stuurprogramma's al kennen."
       }
     },
     {
       "@type": "Question",
-      "name": "Does Manifera have experience with consumer mobility apps?",
+      "name": "Hoe is de ervaring van Manifera specifiek van toepassing op apps voor consumentenmobiliteit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's 160+ delivered projects include consumer-facing, payment-handling applications where session accuracy is core to the product."
+        "text": "De meer dan 160 geleverde projecten van Manifera omvatten klantgerichte toepassingen voor betalingsafhandeling waarbij nauwkeurigheid van sessies en facturering de kern van het product is, waardoor LaunchStudio direct bekend is met dit exacte foutpatroon."
       }
     },
     {
       "@type": "Question",
-      "name": "What's a reasonable maximum session duration safeguard?",
+      "name": "Wat is een redelijke maximale sessieduur die als waarborg kan worden ingesteld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the use case; LaunchStudio scopes an appropriate timeout window to the specific product during review."
+        "text": "Het hangt af van de gebruikssituatie: een parkeerapp kan maximaal 24 uur duren voordat deze wordt gemarkeerd voor handmatige beoordeling, terwijl een mobiliteitsdienst met een kortere duur een veel krappere periode kan gebruiken; LaunchStudio beperkt dit tijdens de beoordeling tot het specifieke product."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio's Singapore office work on consumer mobility apps?",
+      "name": "Werkt het team van LaunchStudio in Singapore aan dit soort consumentenapps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Manifera's Southeast Asia hub in Singapore supports consumer mobility and payments-adjacent projects with the same reliability standards used enterprise-wide."
+        "text": "Ja – Manifera's hub in Zuidoost-Azië aan Tras Street in Singapore ondersteunt projecten op het gebied van consumentenmobiliteit en betalingen, waarbij dezelfde betrouwbaarheidsnormen worden toegepast als bij het zakelijke klantenbestand."
       }
     }
   ]

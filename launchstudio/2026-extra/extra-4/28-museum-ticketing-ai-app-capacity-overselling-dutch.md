@@ -50,6 +50,23 @@ Om dit op te lossen is het nodig dat de aankoopstroom 'beschikbaarheid controler
 
 LaunchStudio brengt de hoogwaardige engineering van Manifera voor precies dit soort gelijktijdigheidsproblemen: het soort dingen dat routine is in bedrijfsinventarisatie- en boekingssystemen, maar gemakkelijk over het hoofd wordt gezien in een snelle, door AI gegenereerde build. De beoordeling zelf wordt gecoördineerd vanuit het Amsterdamse kantoor van Manifera aan de Herengracht 420, waar het klantgerichte technische team precies in kaart brengt welke delen van een boekingsstroom dit soort vergrendeling nodig hebben voordat er iets wordt aangeraakt. U kunt op de [LaunchStudio-startpagina](https://launchstudio.eu/en/) bekijken wat een volledige pre-lanceringsaudit inhoudt. Voor achtergrondinformatie over het soort productiesystemen waarin de technici van Manifera dit patroon eerder hebben ingebouwd, kunt u de [portfolio] van het team raadplegen (https://www.manifera.com/portfolio/).
 
+## Een reserveringsblokkade die nooit verloopt ruilt overboeking in voor onderboeking
+
+Om overboeking bij populaire museumtickets te voorkomen, blokkeert de app tickets zodra een gebruiker het afrekenproces start. Als een gebruiker zijn tabblad sluit zonder te betalen, en er is geen vervaltijd op de blokkade ingesteld, blijven die tickets voor altijd "gereserveerd" en kunnen ze aan niemand anders worden verkocht.
+
+Stel een strikte time-out in voor ticketreserveringen:
+
+```javascript
+async function reserveTickets(eventId, quantity) {
+  const reservation = await db.reservations.create({
+    eventId,
+    quantity,
+    expiresAt: new Date(Date.now() + 10 * 60 * 1000) // 10 minuten time-out
+  });
+  return reservation;
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native Founder in actie: zes extra kaartjes voor een uitverkochte zaal
@@ -91,6 +108,7 @@ Belastingtesten die meerdere gelijktijdige aankooppogingen simuleren met dezelfd
 
 Ja – de meer dan 120 technici van Manifera hebben inventaris- en boekingssystemen gebouwd voor zakelijke klanten waarbij veilige transactieafhandeling een basisvereiste is, en die ervaring is wat LaunchStudio toepast op door de oprichters gebouwde apps.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +116,42 @@ Ja – de meer dan 120 technici van Manifera hebben inventaris- en boekingssyste
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why didn't this bug show up during my own testing?",
+      "name": "Waarom kwam deze bug niet naar voren tijdens mijn eigen tests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because triggering it requires genuinely simultaneous purchase attempts against limited inventory, which is structurally very hard to produce when testing alone."
+        "text": "Omdat het activeren ervan echt gelijktijdige aankooppogingen vereist tegen een beperkte voorraad, wat structureel erg moeilijk te produceren is als je het alleen test – het verschijnt doorgaans alleen bij een echte gelijktijdige vraag."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this only affect ticketing apps?",
+      "name": "Heeft dit alleen invloed op ticketing-apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 any app selling limited inventory in real time, including event bookings, appointment slots, or limited-stock product drops, can have the same underlying race condition."
+        "text": "Nee: elke app die in realtime een beperkte voorraad verkoopt, inclusief boekingen voor evenementen, afspraken of productdroppings met een beperkte voorraad, kan dezelfde onderliggende raceconditie hebben."
       }
     },
     {
       "@type": "Question",
-      "name": "How can I check if my own AI-built app has this issue?",
+      "name": "Hoe kan ik controleren of mijn eigen, door AI gebouwde app dit probleem heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Look at whether ticket or inventory availability is checked and updated within a single locked database transaction, or as two separate steps \u2014 if it's the latter, the risk is present."
+        "text": "Kijk of de beschikbaarheid van tickets of inventaris wordt gecontroleerd en bijgewerkt binnen een enkele vergrendelde databasetransactie, of als twee afzonderlijke stappen. Als dit laatste het geval is, is het risico aanwezig, ongeacht of u het al heeft zien gebeuren."
       }
     },
     {
       "@type": "Question",
-      "name": "What kind of testing catches this before launch?",
+      "name": "Wat voor soort testen vangen dit op vóór de lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Load testing that simulates multiple simultaneous purchase attempts against the same limited inventory \u2014 something LaunchStudio runs as standard practice on apps involving finite, contested resources."
+        "text": "Belastingtesten die meerdere gelijktijdige aankooppogingen simuleren met dezelfde beperkte voorraad – iets dat LaunchStudio standaard uitvoert op elke app met eindige, omstreden bronnen."
       }
     },
     {
       "@type": "Question",
-      "name": "Has Manifera's team dealt with concurrency issues like this outside of ticketing?",
+      "name": "Heeft het team van Manifera dit soort gelijktijdigheidsproblemen buiten de ticketverkoop aangepakt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 Manifera's 120+ engineers have built inventory and booking systems for enterprise clients where concurrency-safe transaction handling is a baseline requirement."
+        "text": "Ja – de meer dan 120 technici van Manifera hebben inventaris- en boekingssystemen gebouwd voor zakelijke klanten waarbij veilige transactieafhandeling een basisvereiste is, en die ervaring is wat LaunchStudio toepast op door de oprichters gebouwde apps."
       }
     }
   ]

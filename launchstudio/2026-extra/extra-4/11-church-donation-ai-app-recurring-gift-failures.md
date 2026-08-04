@@ -56,6 +56,30 @@ A donation platform that's ready for real, ongoing use needs a few things a prot
 
 None of this is exotic. It's the same category of work involved in any subscription billing system, and it's covered under [LaunchStudio's fixed-scope packages](https://launchstudio.eu/en/#packages), which typically run far below what a traditional dev shop would quote for the same scope — a difference Manifera can sustain because of its scale, detailed further on [Manifera's custom software development page](https://www.manifera.com/services/custom-software-development/).
 
+## Retries Introduce a New Risk: Charging the Same Gift Twice
+
+Adding retry logic fixes the silent-failure problem, but it opens a narrower one that's easy to miss: what if the original charge actually succeeded, and only the confirmation was delayed or lost? Payment processors don't always report success back instantly — a network blip between the processor and your app can make a charge that genuinely went through look, from your system's point of view, like it failed. A retry job that just re-attempts the charge without first checking what actually happened can charge a donor twice for the same gift, which is a far worse outcome for donor trust than the original silent failure the fix was meant to solve.
+
+The safeguard is checking the payment processor's own record of the charge before retrying, and using an idempotency key so the processor itself refuses to double-charge even if the retry logic fires twice by mistake:
+
+```
+async function retryFailedGift(giftId) {
+  const gift = await db.gifts.findOne({ id: giftId });
+  const existingCharge = await stripe.paymentIntents.retrieve(gift.paymentIntentId);
+
+  if (existingCharge.status === 'succeeded') {
+    await markGiftPaid(giftId); // it actually went through — don't charge again
+    return;
+  }
+
+  await stripe.paymentIntents.confirm(gift.paymentIntentId, {
+    idempotency_key: `retry-${giftId}-${gift.retryCount}`,
+  });
+}
+```
+
+This check takes a few lines of code and almost no extra time to build alongside the retry logic itself — but skipping it turns a reliability fix into a new source of donor complaints, which is exactly the kind of trust damage a small nonprofit can least afford.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Two-Month Gap Nobody Caught
@@ -91,6 +115,10 @@ LaunchStudio's engineers, backed by Manifera's 11+ years of production engineeri
 
 It's typically an addition, not a rebuild — LaunchStudio works within your existing frontend and adds the missing backend logic, so your Lovable-built interface stays exactly as your donors already know it.
 
+### Doesn't adding retry logic risk charging a donor twice?
+
+It can, if the retry doesn't first check whether the original charge actually succeeded — a delayed confirmation, not a real decline, can make a successful charge look failed, so a defensible retry checks the payment processor's actual status and uses an idempotency key before attempting to charge again.
+
 ### Does LaunchStudio work with nonprofits outside the Netherlands?
 
 Yes — Manifera's client base spans enterprise and nonprofit clients across regions, supported through offices including its Singapore hub, and LaunchStudio's remote-first process works the same regardless of where your organization is based.
@@ -119,6 +147,11 @@ Yes — Manifera's client base spans enterprise and nonprofit clients across reg
       "@type": "Question",
       "name": "Is this a big rebuild, or can it be added to an existing Lovable app?",
       "acceptedAnswer": { "@type": "Answer", "text": "It's typically an addition, not a rebuild — LaunchStudio works within your existing frontend and adds the missing backend logic." }
+    },
+    {
+      "@type": "Question",
+      "name": "Doesn't adding retry logic risk charging a donor twice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It can, if the retry doesn't first check whether the original charge actually succeeded — a delayed confirmation, not a real decline, can make a successful charge look failed, so a defensible retry checks the payment processor's actual status and uses an idempotency key before attempting to charge again." }
     },
     {
       "@type": "Question",

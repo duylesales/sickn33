@@ -60,6 +60,32 @@ If the same request — same key — is sent again within the processor's idempo
 
 Herre Roelevink, CEO of LaunchStudio and Managing Director of Manifera, puts it plainly: "We see a shift in software needs. The challenge is no longer turning good ideas into software. It's now about the architecture and security needed to bring those products to maturity. We have eleven years of experience in exactly that." Idempotency keys are a small, specific example of exactly that shift — the payment call works in a demo either way, but only one version of it is safe to put in front of paying customers.
 
+## Idempotency Keys Only Protect Identical Requests
+
+A subtler failure hides behind idempotency keys once they're in place: a naive dedup check that only asks "have I seen this key before?" will happily return a stale, wrong result if the same key gets reused for a genuinely different request. This happens more often than founders expect — a coupon gets applied after the idempotency key was already generated and cached in frontend state, the cart total changes, and the resubmitted request now carries the old key but a new amount. A dedup layer that checks key presence alone will return the original charge result for what should have been a different amount, silently under- or over-billing the customer without either side noticing anything went wrong.
+
+The fix is to bind the idempotency key to a fingerprint of the request itself, not just to the key in isolation, so a genuine retry — identical request, same key — is deduplicated safely, while a key reused against a changed request is rejected outright rather than silently honored.
+
+```javascript
+async function chargeWithIdempotency(key, requestPayload) {
+  const fingerprint = hashPayload(requestPayload); // amount, currency, customerId
+  const existing = await db.idempotencyKeys.findOne({ key });
+
+  if (existing) {
+    if (existing.fingerprint !== fingerprint) {
+      throw new Error('Idempotency key reused with different request parameters');
+    }
+    return existing.result; // safe replay of the same request
+  }
+
+  const result = await stripe.paymentIntents.create(requestPayload, { idempotencyKey: key });
+  await db.idempotencyKeys.insertOne({ key, fingerprint, result });
+  return result;
+}
+```
+
+Stripe and most major processors already enforce a version of this fingerprint check server-side and will reject a mismatched retry with an error — but only if the key is actually regenerated per distinct checkout attempt rather than reused across form state changes. The failure mode this section describes shows up specifically when a founder's own frontend caches or reuses a key longer than the request it was meant to protect, which is exactly the kind of gap that doesn't appear in a demo where the cart total never changes between clicks.
+
 ## Where This Gap Tends to Hide
 
 Idempotency issues aren't limited to the initial checkout button. They show up anywhere a payment-triggering action can be retried or resubmitted:
@@ -112,6 +138,10 @@ Most processors default to roughly 24 hours, which comfortably covers realistic 
 
 Both — many founders come to us after a duplicate-charge incident, but Manifera's engineers, drawing on 160+ delivered projects, increasingly run payment-flow review as a standard pre-launch step precisely to avoid that first incident.
 
+### What happens if an idempotency key gets reused for a genuinely different request?
+
+A properly implemented dedup layer rejects it rather than silently returning the old result — Stripe and most processors already enforce this by fingerprinting the request parameters, but only if your own key generation logic doesn't cache or reuse a key past the request it was meant to protect.
+
 Book a free 15-minute intro call — [talk to us before your first real customer hits this bug](https://launchstudio.eu/en/#contact).
 
 For more on how production payment systems are architected correctly from the start, see [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/).
@@ -145,6 +175,11 @@ For more on how production payment systems are architected correctly from the st
       "@type": "Question",
       "name": "Does LaunchStudio only fix payment bugs after they've caused damage, or proactively too?",
       "acceptedAnswer": { "@type": "Answer", "text": "Both — many founders come to us after a duplicate-charge incident, but Manifera's engineers, drawing on 160+ delivered projects, increasingly run payment-flow review as a standard pre-launch step precisely to avoid that first incident." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if an idempotency key gets reused for a genuinely different request?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A properly implemented dedup layer rejects it rather than silently returning the old result — Stripe and most processors already enforce this by fingerprinting the request parameters, but only if your own key generation logic doesn't cache or reuse a key past the request it was meant to protect." }
     }
   ]
 }

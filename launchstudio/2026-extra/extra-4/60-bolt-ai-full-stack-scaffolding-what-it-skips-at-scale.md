@@ -51,6 +51,23 @@ Raising a connection pool limit isn't as simple as just increasing one number, b
 
 LaunchStudio's engineers, backed by Manifera's more than a decade of production engineering experience, treat this as standard pre-scale hardening for any Bolt-built product heading toward real traffic — the kind of infrastructure review that's cheap to do proactively and expensive to do reactively at 2am during a usage spike. If your product is approaching or has already hit this wall, our [pricing calculator](https://launchstudio.eu/en/#calculator) can scope a fix, and Manifera's [portfolio](https://www.manifera.com/portfolio/) shows the range of infrastructure scaling work our team has done, from early-stage products just like this one to larger enterprise systems.
 
+## The Connection Pool Is Usually Just the First Ceiling You Hit
+
+Right-sizing the database connection pool fixes the specific errors that showed up first, but it's rarely the only hardcoded ceiling sitting in a scaffolded backend — it's just the one that happens to fail loudest and earliest, because database connections tend to be the scarcest resource in a typical setup. Once real usage keeps climbing past whatever level justified the pool fix, the same pattern tends to resurface somewhere else: a websocket connection cap tuned for a handful of simultaneous demo sessions, a background worker concurrency limit sized for light testing traffic, a rate limiter threshold nobody expected real users to approach. None of these were designed to fail — they were designed for demo-scale traffic, same as the connection pool was, and none of them are surfaced anywhere as a setting worth revisiting.
+
+The practical move after fixing one ceiling is to check for the others before they turn into their own confusing incident:
+
+```
+# Common scaffolded ceilings worth checking once one has already been hit
+database.pool.max          # already found and fixed
+websocket.maxConnections   # often a low fixed default
+queue.concurrency          # background worker concurrency limit
+rateLimiter.requestsPerMin # tuned for demo traffic, not real usage
+upload.maxConcurrent       # file upload concurrency cap
+```
+
+Treating the connection pool fix as a signal to audit the rest of the scaffolding, rather than a closed ticket, is usually faster than waiting for each remaining ceiling to announce itself the same intermittent, confusing way the first one did.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Errors That Only Showed Up When It Mattered
@@ -94,6 +111,10 @@ Manifera's engineering team, including the group based at the Ho Chi Minh City d
 
 Ideally yes — a connection pool review takes a few days and is far cheaper to do proactively than during a live usage spike, which is why it's a standard part of the pre-launch and pre-scale checks LaunchStudio runs on AI-built products.
 
+### If I've fixed the connection pool, am I done with scaling issues?
+
+Not necessarily — the connection pool is usually just the first hardcoded ceiling to get hit because database connections tend to be the scarcest resource; the same scaffolding often has similar unexposed limits on websocket connections, background worker concurrency, or rate limiting that are worth checking once usage keeps climbing.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,6 +144,11 @@ Ideally yes — a connection pool review takes a few days and is far cheaper to 
       "@type": "Question",
       "name": "Is this the kind of thing that should be caught before launch, not after?",
       "acceptedAnswer": { "@type": "Answer", "text": "Ideally yes — a connection pool review takes a few days and is far cheaper to do proactively than during a live usage spike." }
+    },
+    {
+      "@type": "Question",
+      "name": "If I've fixed the connection pool, am I done with scaling issues?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily — the connection pool is usually just the first hardcoded ceiling to get hit; the same scaffolding often has similar unexposed limits on websocket connections, background worker concurrency, or rate limiting worth checking as usage climbs further." }
     }
   ]
 }

@@ -67,6 +67,17 @@ Een minimale versie hiervan vereist geen uitgebreid DevOps-platform; zelfs een i
 
 Als uw testomgeving u ooit heeft verrast door de productie niet te evenaren, omvat [ons proces](https://launchstudio.eu/en/#process) precies dit soort omgevingsaudit als onderdeel van het klaarmaken van de lancering van een app.
 
+## Config-as-Code lost drift op — als geheimen niet meegaan naar de repository
+
+Het vastleggen van de infrastructuur- en stagingconfiguratie in de code-repository (Infrastructure-as-Code) voorkomt dat staging en productie uit elkaar drijven. Een gevaarlijk neveneffect is dat geheimen en API-sleutels per ongeluk mee worden gecommitted in de code-repository.
+
+Scheid omgevingsvariabelen en geheimen strikt via een secret manager:
+
+```bash
+# Laad geheimen dynamisch op runtime in plaats van ze in bestanden op te slaan:
+export STRIPE_SECRET_KEY=$(aws secretsmanager get-secret-value --secret-id prod/stripe --query SecretString --output text)
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de configuratievlag die niemand zich herinnerde
@@ -112,6 +123,7 @@ Boek een gratis introductiegesprek van 15 minuten — [praat met ons over uw imp
 
 Voor meer informatie over hoe de productie-infrastructuur wordt gebouwd om consistent te blijven, zie [Manifera's offshore softwareontwikkelingsdiensten](https://www.manifera.com/services/offshore-software-development/).
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,42 +131,42 @@ Voor meer informatie over hoe de productie-infrastructuur wordt gebouwd om consi
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How can staging and production drift apart if I never touched production directly?",
+      "name": "Hoe kunnen enscenering en productie uit elkaar drijven als ik de productie nooit rechtstreeks heb aangeraakt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Drift usually comes from asymmetric changes \u2014 a config flag adjusted in staging during testing, a new environment variable added to one environment but not documented for the other, or dependency updates applied unevenly."
+        "text": "Afwijking komt meestal voort uit asymmetrische veranderingen: een configuratievlag die is aangepast tijdens de fasering tijdens het testen, een nieuwe omgevingsvariabele die aan de ene omgeving is toegevoegd maar niet is gedocumenteerd voor de andere, of afhankelijkheidsupdates die ongelijkmatig worden toegepast, waarbij geen van alle de productie rechtstreeks hoeft aan te raken om een ​​mismatch te veroorzaken."
       }
     },
     {
       "@type": "Question",
-      "name": "What's the simplest way to catch drift before it causes a launch-day incident?",
+      "name": "Wat is de eenvoudigste manier om drift op te vangen voordat dit een incident op de lanceringsdag veroorzaakt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An automated diff between staging and production configuration, run before every deploy, catches the vast majority of drift without requiring a full DevOps platform overhaul."
+        "text": "Een geautomatiseerde differentie tussen staging- en productieconfiguratie, die vóór elke implementatie wordt uitgevoerd, vangt het overgrote deel van de afwijkingen op zonder dat een volledige revisie van het DevOps-platform nodig is."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera typically approach environment parity for a founder's first production launch?",
+      "name": "Hoe benadert Manifera doorgaans de omgevingspariteit voor de eerste productielancering van een oprichter?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our engineers standardize environment configuration as version-controlled code during the production-readiness pass, so any difference between staging and production is a documented, intentional choice rather than an accumulated accident."
+        "text": "Onze technici standaardiseren de omgevingsconfiguratie als versiegestuurde code tijdens de productiegereedheid. Elk verschil tussen staging en productie is dus een gedocumenteerde, opzettelijke keuze en geen opeenvolgend ongeval."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this only matter for apps with complex infrastructure?",
+      "name": "Is dit alleen van belang voor apps met een complexe infrastructuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 even a simple two-environment setup on a single hosting platform can drift, and the smaller the team, the more likely drift goes unnoticed since there's no second person to catch the mismatch."
+        "text": "Nee, zelfs een eenvoudige opstelling met twee omgevingen op één hostingplatform kan afwijken, en hoe kleiner het team, hoe waarschijnlijker het is dat de afwijking onopgemerkt blijft, omdat er geen tweede persoon is die de mismatch kan opvangen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is environment parity something Manifera handles for its larger enterprise clients too?",
+      "name": "Is milieupariteit iets dat Manifera ook voor zijn grotere zakelijke klanten doet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 config-as-code and environment parity are standard practice across Manifera's broader engineering work, including for enterprise clients like Vodafone and TNO, where the cost of an undetected mismatch is proportionally even higher."
+        "text": "Ja – config-as-code en omgevingspariteit zijn standaardpraktijk in het bredere engineeringwerk van Manifera, ook voor zakelijke klanten als Vodafone en TNO, waar de kosten van een onopgemerkte mismatch verhoudingsgewijs nog hoger zijn.  Boek een gratis introductiegesprek van 15 minuten — [praat met ons over uw implementatie-instellingen](https://launchstudio.eu/en/#contact) voordat uw volgende functie-lancering u verrast.  Voor meer informatie over hoe de productie-infrastructuur wordt gebouwd om consistent te blijven, zie [Manifera's offshore softwareontwikkelingsdiensten](https://www.manifera.com/services/offshore-software-development/)."
       }
     }
   ]

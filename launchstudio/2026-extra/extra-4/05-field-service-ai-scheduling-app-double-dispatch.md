@@ -49,6 +49,23 @@ The fix isn't more UI — it's making the availability calendar a derived view o
 
 LaunchStudio brings Manifera's 120+ engineers' worth of production experience to exactly this kind of fix, and engineers connected to Manifera's Southeast Asia hub on Tras Street in Singapore have handled similar real-time coordination problems for logistics and operations clients. If your scheduling tool has any path for manual overrides — and almost every field service tool does — [get a scoped review through our calculator](https://launchstudio.eu/en/#calculator) before a double-dispatch finds your busiest technician.
 
+## A Single Source of Truth Can Still Race Against Itself
+
+Routing every booking path through one shared availability function closes the drift bug — a manual reschedule and an automated dispatch now agree on where the data lives. It doesn't automatically close a narrower, quieter version of the same problem: two requests hitting that one function at almost the same instant. If checking whether a slot is free and writing the new assignment are two separate steps inside that function, both requests can run the "is this slot free" check before either one has actually committed its write — a classic check-then-act race condition. It's invisible at low volume, because it takes two dispatch attempts landing within the same narrow window to trigger it, but it gets more likely exactly as a scheduling tool gets busier and more valuable.
+
+```
+-- Vulnerable: check and write are two separate steps
+SELECT status FROM slots WHERE technician_id = ? AND slot_time = ?
+-- a second request can run this same check before the first request writes
+INSERT INTO assignments (technician_id, slot_time, job_id) VALUES (?, ?, ?)
+
+-- Safer: a database-level constraint makes the second write fail outright
+ALTER TABLE assignments ADD CONSTRAINT one_job_per_slot UNIQUE (technician_id, slot_time)
+-- the second INSERT now hits a constraint violation instead of silently succeeding
+```
+
+Consolidating the write path into one function is necessary, but it isn't sufficient on its own — the database itself needs a constraint that makes a duplicate assignment physically impossible to commit, rather than relying on application code to check first and hope nothing else checks at the same moment.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Vans, One Address
@@ -90,6 +107,10 @@ Simulate a manual reschedule outside the normal booking UI — an admin edit or 
 
 Yes, engineers connected to Manifera's Southeast Asia hub in Singapore have worked on similar real-time coordination and conflict-detection problems for logistics and operations clients.
 
+### Can two requests still double-book the same slot even after unifying the availability function?
+
+Yes, if the check and the write inside that function are two separate steps — two requests can both check the same "open" slot before either one commits. Closing this fully needs a database-level unique constraint or row lock, not just consolidating the logic into one function.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +140,11 @@ Yes, engineers connected to Manifera's Southeast Asia hub in Singapore have work
       "@type": "Question",
       "name": "Does Manifera have experience with real-time coordination systems like this?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, engineers connected to Manifera's Southeast Asia hub in Singapore have worked on similar real-time coordination and conflict-detection problems for logistics and operations clients." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can two requests still double-book the same slot even after unifying the availability function?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the check and the write inside that function are two separate steps — two requests can both check the same open slot before either one commits. Closing this fully needs a database-level unique constraint or row lock, not just consolidating the logic into one function." }
     }
   ]
 }

@@ -53,6 +53,23 @@ The fix is to tie review eligibility directly to a completed, platform-tracked b
 
 Send your directory's review flow to LaunchStudio for a free technical read via [our contact page](https://launchstudio.eu/en/#contact). For how Manifera approaches trust and verification systems at enterprise scale, see our [portfolio](https://www.manifera.com/portfolio/).
 
+## Verified Doesn't Mean Vetted: The Minimum-Booking Loophole
+
+Tying reviews to a completed booking closes the obvious hole, but it opens a narrower one that's worth planning for before it gets used: the system only checks that *a* booking exists, not that the booking bears any real relationship to the complaint being made. A competitor, or anyone motivated enough, can book a provider's cheapest available service — a five-minute consultation, a minimum call-out fee — let it complete, and then post a hostile, detailed one-star review that now carries the legitimate "Verified Booking" badge. It's slower and costs the attacker a small amount of money, but it isn't blocked by the fix described above, because from the system's point of view, a completed booking is a completed booking.
+
+This doesn't mean the verified-booking gate was the wrong fix — it removes the free, anonymous version of the attack, which is the overwhelming majority of cases. It does mean the review system benefits from a second, lighter layer: flagging reviews for manual attention when the pattern looks off, rather than trusting the verified badge as the final word.
+
+```
+function flagIfSuspicious(review, booking) {
+  const minutesSinceBooking = minutesBetween(booking.completedAt, review.createdAt);
+  if (booking.amount <= MINIMUM_BOOKING_THRESHOLD && minutesSinceBooking < 30) {
+    flagForManualReview(review, 'low-value booking, rapid review');
+  }
+}
+```
+
+No automated rule catches every case, but a cheap, fast review immediately following a minimum-value booking is a pattern worth a human glance before it's treated as equivalent to genuine customer feedback.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Reviews a Competitor Wrote
@@ -94,6 +111,10 @@ Most directories are better served by removing the ability to post unverified re
 
 Yes — Singapore is LaunchStudio's Southeast Asia hub, and trust and verification systems for directories and two-sided marketplaces are a recurring focus for the engineers based there.
 
+### Can someone still game the verified-booking system by making a fake but technically real booking?
+
+Yes — a determined bad actor can book a provider's cheapest service, let it complete, and post a hostile review that still earns the verified badge, so most directories add a lightweight flag for reviews following unusually low-value bookings rather than treating "verified" as automatically equal to "trustworthy."
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,6 +144,11 @@ Yes — Singapore is LaunchStudio's Southeast Asia hub, and trust and verificati
       "@type": "Question",
       "name": "Does LaunchStudio's Singapore team work with directory and marketplace founders specifically?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — Singapore is LaunchStudio's Southeast Asia hub, and trust and verification systems for directories and two-sided marketplaces are a recurring focus there." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can someone still game the verified-booking system by making a fake but technically real booking?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — a determined bad actor can book a provider's cheapest service, let it complete, and post a hostile review that still earns the verified badge, so most directories add a lightweight flag for reviews following unusually low-value bookings rather than treating 'verified' as automatically equal to 'trustworthy.'" }
     }
   ]
 }

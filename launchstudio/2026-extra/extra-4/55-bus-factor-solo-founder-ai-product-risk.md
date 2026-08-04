@@ -51,6 +51,28 @@ You don't need a team to fix a bus factor of one. You need a documented list of 
 
 If you want a second set of eyes on what your product currently depends on, our [contact page](https://launchstudio.eu/en/#contact) is a fast way to start that conversation, and Manifera's [offshore software development](https://www.manifera.com/services/offshore-software-development/) team is structured specifically so a product's continuity never depends on one individual being reachable.
 
+## Adding a Second Admin Doesn't Fix MFA on Its Own
+
+Adding a second admin to your database, domain registrar, and payment provider closes the most obvious gap, but it can quietly leave a second one in place: two-factor authentication. Most services will happily let you add a second admin account while every high-risk action on that account — a large payout, a domain transfer, a support call proving you're the account owner — still routes its verification step through a phone number or authenticator app that only the founder holds. The second admin can log in. They still can't act, because the step-up check that matters most is tied to a device they don't have.
+
+This is easy to miss precisely because it doesn't show up when you're just checking "can this person log in." It shows up during the exact emergency the second admin was supposed to cover — a payout needs approving, or a fraud hold needs clearing, and the verification code goes to a phone nobody but the unreachable founder can access. Closing this properly means auditing MFA per service, not just admin access per service: some services support a shared hardware key or multiple registered authenticator devices, others only support recovery codes that need to be stored somewhere the second admin can actually reach.
+
+```
+Service: Stripe (payment provider)
+Primary admin: Founder (personal email)
+Secondary admin: Added — business partner
+MFA method: Authenticator app (founder's phone only) — ACTION NEEDED
+Backup/recovery codes: Not yet stored in shared vault — ACTION NEEDED
+
+Service: Domain registrar
+Primary admin: Founder
+Secondary admin: Added
+MFA method: SMS to founder's number — ACTION NEEDED
+Backup/recovery codes: Stored in shared password manager
+```
+
+A simple inventory like this, run alongside the admin-access audit, is what turns "someone else has a login" into "someone else can actually act when it counts."
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Weeks Offline, Nobody Else Holding the Keys
@@ -92,6 +114,10 @@ A password manager solves the "someone else could log in" problem but not the "s
 
 Yes, though less urgently — the same audit is worth running for any team where critical account access is concentrated in one person, even if that person isn't the only employee.
 
+### If I've added a second admin, is my bus factor problem actually solved?
+
+Not entirely — many services still route high-risk actions like large payouts or account recovery through the original founder's phone or authenticator app, even after a second admin is added, so the MFA and recovery method on each service needs its own check alongside the admin access itself.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +147,11 @@ Yes, though less urgently — the same audit is worth running for any team where
       "@type": "Question",
       "name": "Does this apply even if I already have a small team?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, though less urgently — the same audit is worth running for any team where critical account access is concentrated in one person." }
+    },
+    {
+      "@type": "Question",
+      "name": "If I've added a second admin, is my bus factor problem actually solved?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not entirely — many services still route high-risk actions like large payouts or account recovery through the original founder's phone or authenticator app, even after a second admin is added, so the MFA and recovery method on each service needs its own check alongside the admin access itself." }
     }
   ]
 }

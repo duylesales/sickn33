@@ -49,6 +49,22 @@ The most efficient way to produce this documentation isn't to have the founder w
 
 If you're about to bring on your first engineer and want the codebase documented before they start, our [how it works](https://launchstudio.eu/en/#process) page outlines how LaunchStudio scopes this kind of engagement, and Manifera's [portfolio](https://www.manifera.com/portfolio/) shows the range of codebases our engineers have onboarded onto and documented, from early-stage products to established enterprise systems.
 
+## Documentation Written Once Starts Going Stale the Moment It's Done
+
+Producing the handover documentation solves the immediate problem, but it creates a quieter one: the moment a founder or new hire starts prompting an AI tool again to build the next feature, the architecture the documentation describes starts drifting away from the architecture that actually exists. Nothing marks that drift as it happens. The document still reads as authoritative, the new hire still trusts it, and six weeks later it's confidently wrong about which queue handles what or why a particular table exists — which is arguably worse than having no documentation at all, because a new hire trusts wrong information longer than they'd tolerate an honest gap.
+
+The fix isn't rewriting the whole document periodically — that's exactly the kind of unglamorous maintenance that gets deferred indefinitely. It's attaching a short decision log entry to any change that would make the existing documentation wrong, written at the moment the change is made, when the reasoning is still front of mind:
+
+```
+## 2026-08-04 — Split billing queue from usage-metering queue
+Reason: a metering bug briefly stalled billing jobs behind it; isolating
+them means a metering failure can no longer delay a payment.
+Files touched: /server/queues/billing.ts, /server/queues/metering.ts
+Doc section to update: Architecture map > Billing subsystem
+```
+
+A handful of these entries a month is a trivial habit to build and keeps the architecture map honest without ever requiring a dedicated rewrite pass.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Two Weeks to Understand a Codebase Nobody Explained
@@ -90,6 +106,10 @@ Earlier is better if you can manage it — documentation is easiest to produce w
 
 No — documentation explains how the code works and why; an audit evaluates whether it's secure, scalable, and production-ready. They're complementary, and many founders benefit from doing both around the same time.
 
+### How do I keep handover documentation from going out of date?
+
+Attach a short decision log entry to any change that would make the existing documentation inaccurate, written at the time the change happens — a habit that's far cheaper to maintain than a periodic full rewrite, and it keeps a new hire from trusting a document that's quietly gone stale.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +139,11 @@ No — documentation explains how the code works and why; an audit evaluates whe
       "@type": "Question",
       "name": "Does handover documentation replace the need for a code audit?",
       "acceptedAnswer": { "@type": "Answer", "text": "No — documentation explains how the code works and why; an audit evaluates whether it's secure, scalable, and production-ready. They're complementary." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I keep handover documentation from going out of date?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Attach a short decision log entry to any change that would make the existing documentation inaccurate, written at the time the change happens — far cheaper than a periodic full rewrite, and it keeps a new hire from trusting a document that's quietly gone stale." }
     }
   ]
 }

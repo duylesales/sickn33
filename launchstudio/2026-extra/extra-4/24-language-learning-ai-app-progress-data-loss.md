@@ -53,6 +53,24 @@ Fixing this properly isn't about adding more local storage — it's about invert
 
 This is the kind of backend and data-layer work that LaunchStudio specializes in — taking a frontend a founder already built and loves, and rebuilding the plumbing underneath it correctly, without touching the UI. You can see the typical scope and turnaround on the [LaunchStudio process page](https://launchstudio.eu/en/#process). For teams evaluating whether they need a fix like this or a fuller rebuild, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) team has handled data-layer migrations at far larger scale for enterprise clients.
 
+## Two Devices, Both Offline, Both Racing to Sync
+
+Fetching server state on login and merging unsynced local activity solves the common case — one device goes stale, the server is the source of truth, done. It doesn't fully solve the case where a user genuinely uses two devices offline at the same time: a phone during a commute with no signal, a tablet at home on a spotty connection, both accumulating real lesson completions and XP before either one reconnects. When both come back online, each device believes its own local activity is the unsynced delta that needs to be merged on top of the server — but neither one knows about the other's offline activity yet, and whichever device syncs second risks treating the first device's already-synced progress as the outdated state to be overwritten rather than progress to be combined with.
+
+The fix that generalizes correctly here is treating progress events as additive and append-only rather than as a single overwritable state. A lesson completion or an XP award is a fact that happened at a specific time — merging two devices' offline activity should mean taking the union of both event lists by unique event ID, not picking whichever device's snapshot arrived last.
+
+```
+function mergeProgress(serverEvents, localEvents) {
+  const merged = new Map();
+  for (const event of [...serverEvents, ...localEvents]) {
+    merged.set(event.id, event); // same event ID from either source collapses to one
+  }
+  return Array.from(merged.values()).sort((a, b) => a.timestamp - b.timestamp);
+}
+```
+
+Treating progress as a growing log instead of a replaceable snapshot is what makes two simultaneously offline devices resolve correctly instead of one silently erasing the other's work.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The streak that disappeared overnight
@@ -94,6 +112,10 @@ Yes — this is purely a data-layer and backend fix. LaunchStudio's entire appro
 
 Yes — Manifera's engineering team, including its Ho Chi Minh City development center, has built and maintained production data systems for enterprise clients like Vodafone and TNO, where data consistency failures carry even higher stakes than a single app's churn rate.
 
+### What happens if a user studies offline on two devices at the same time?
+
+A simple "server wins, then merge local changes" rule isn't enough if both devices went offline independently, since neither device's sync knows about the other's activity yet — the reliable fix treats each lesson completion or XP event as an append-only fact with a unique ID, merging by taking the union of events from both devices rather than letting one device's sync overwrite the other's.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -123,6 +145,11 @@ Yes — Manifera's engineering team, including its Ho Chi Minh City development 
       "@type": "Question",
       "name": "Does Manifera have experience with this kind of data integrity work outside of consumer apps?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — Manifera's engineering team, including its Ho Chi Minh City development center, has built and maintained production data systems for enterprise clients like Vodafone and TNO." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a user studies offline on two devices at the same time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A simple 'server wins, then merge local changes' rule isn't enough if both devices went offline independently, since neither device's sync knows about the other's activity yet — the reliable fix treats each lesson completion or XP event as an append-only fact with a unique ID, merging by taking the union of events from both devices rather than letting one device's sync overwrite the other's." }
     }
   ]
 }

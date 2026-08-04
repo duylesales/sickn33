@@ -50,6 +50,21 @@ Een werkbare opzet bestaat doorgaans uit drie lagen: een intakefilter op onbewer
 
 Als u een duidelijker beeld wilt van wat dit kost om achteraf in een bestaande app in te passen, geeft onze [prijscalculator](https://launchstudio.eu/en/#calculator) een snelle schatting op basis van uw huidige stapel. En als u evalueert of uw codebase een bredere beveiligingsmaatregel nodig heeft die verder gaat dan alleen moderatie, heeft Manifera's team voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) precies dit soort problemen voor grotere platforms afgehandeld, niet alleen voor apps in een vroeg stadium.
 
+## Een beoordelingswachtrij kan net zo stil mislukken als helemaal geen moderatie
+
+Het instellen van een moderatiewachtrij (review queue) voor door AI gegenereerde content voorkomt dat ongewenste content direct live gaat. Als er echter geen automatische waarschuwing is ingesteld voor de beheerders wanneer de wachtrij volloopt, blijft content dagenlang steken in een "in behandeling"-status zonder dat iemand het beoordeelt.
+
+Stel een melding in als de moderatiewachtrij een drempel overschrijdt:
+
+```javascript
+async function checkModerationQueue() {
+  const pendingCount = await db.content.countDocuments({ status: 'pending_review' });
+  if (pendingCount > 50) {
+    await sendSlackAlert(`Moderatiewachtrij heeft ${pendingCount} items in behandeling!`);
+  }
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: toen de functie "Highlight" het verkeerde bericht benadrukte
@@ -91,6 +106,7 @@ Niet zinvol: een controle van de beleidsclassificatie voegt doorgaans millisecon
 
 Dezelfde kloof treedt op, ongeacht of je Cursor, Bolt, Lovable of v0 hebt gebruikt. Moderatie is niet iets dat deze tools standaard genereren voor gebruikersinhoud of door AI gegenereerde inhoud, dus de beoordeling is voor al deze tools op dezelfde manier van toepassing.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +114,42 @@ Dezelfde kloof treedt op, ongeacht of je Cursor, Bolt, Lovable of v0 hebt gebrui
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do I need content moderation if my AI app is still small?",
+      "name": "Heb ik inhoudsmoderatie nodig als mijn AI-app nog klein is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 moderation gaps don't scale with user count, they scale with the first bad post, which can happen at 50 users just as easily as 50,000."
+        "text": "Ja, de moderatieverschillen schalen niet mee met het aantal gebruikers, ze schalen met de eerste slechte post, wat bij 50 gebruikers net zo gemakkelijk kan gebeuren als bij 50.000."
       }
     },
     {
       "@type": "Question",
-      "name": "Isn't the AI feature just formatting text, not really \"publishing\" it?",
+      "name": "Is de AI-functie niet alleen maar het opmaken van tekst, en niet echt 'publiceren'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 once AI-generated text is visible to other users, especially in a featured or pinned position, it functions as new published content and needs the same scrutiny as anything a human posts."
+        "text": "Nee. Zodra de door AI gegenereerde tekst zichtbaar is voor andere gebruikers, vooral in een uitgelichte of vastgezette positie, functioneert deze als nieuw gepubliceerde inhoud en heeft dezelfde controle nodig als alles wat een mens plaatst."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio typically approach this kind of fix?",
+      "name": "Hoe benadert LaunchStudio dit soort oplossingen doorgaans?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our engineers, working out of Manifera's Ho Chi Minh City development center, usually add a lightweight policy check between content intake and AI processing, plus a manual approval gate for anything the AI promotes to high visibility."
+        "text": "Onze ingenieurs, die werken vanuit het ontwikkelingscentrum van Manifera in Ho Chi Minh City, voegen gewoonlijk een lichtgewicht beleidscontrole toe tussen de inname van inhoud en de verwerking van AI, plus een handmatige goedkeuringspoort voor alles wat de AI promoot tot hoge zichtbaarheid - een patroon dat is ontleend aan Manifera's bredere werk om door gebruikers gegenereerde inhoudssystemen voor zakelijke klanten te beveiligen."
       }
     },
     {
       "@type": "Question",
-      "name": "Will adding moderation slow down my AI feature?",
+      "name": "Zal het toevoegen van moderatie mijn AI-functie vertragen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not meaningfully \u2014 a policy classifier check typically adds milliseconds, and a manual approval gate only affects the small fraction of posts the AI selects as highlights."
+        "text": "Niet zinvol: een controle van de beleidsclassificatie voegt doorgaans milliseconden toe, en een handmatige goedkeuringspoort voor inhoud met hoge zichtbaarheid heeft slechts invloed op het kleine deel van de berichten die de AI als hoogtepunten selecteert."
       }
     },
     {
       "@type": "Question",
-      "name": "What if I built this with a different tool, not Cursor?",
+      "name": "Wat als ik dit met een ander hulpmiddel bouw, niet met Cursor?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The same gap shows up regardless of whether you used Cursor, Bolt, Lovable, or v0 \u2014 moderation isn't something these tools generate by default for either user content or AI-generated content."
+        "text": "Dezelfde kloof treedt op, ongeacht of je Cursor, Bolt, Lovable of v0 hebt gebruikt. Moderatie is niet iets dat deze tools standaard genereren voor gebruikersinhoud of door AI gegenereerde inhoud, dus de beoordeling is voor al deze tools op dezelfde manier van toepassing."
       }
     }
   ]

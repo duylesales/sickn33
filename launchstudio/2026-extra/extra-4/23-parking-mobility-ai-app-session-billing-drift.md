@@ -45,6 +45,24 @@ When a founder prompts an AI coding tool to "let users start and stop a parking 
 
 Closing this gap isn't about detecting every possible network failure in real time — that's not realistic. It's about building reasonable safeguards around the assumption that a stop signal might never arrive: a maximum session duration after which a session auto-closes and flags for review, a reconciliation job that periodically checks for stale open sessions, and — ideally — a way to correlate a stop signal's absence with other available data, like the device going offline, to distinguish "still parked" from "connection lost." [LaunchStudio](https://launchstudio.eu/en/) is powered by Manifera, a software development company with over 11 years of experience building exactly this kind of resilient, real-world session logic for clients who can't afford billing that only works when nothing goes wrong.
 
+## Auto-Closing a Session Doesn't Mean the Car Left
+
+A maximum session duration solves the overcharge problem, but it introduces a mirror-image edge case worth designing for deliberately: a driver who is legitimately still parked past the timeout window. Long-stay parking — an airport trip, a multi-day hospital visit — is exactly the kind of ordinary use case a reasonable timeout can accidentally punish, because the same signal that indicates "connection lost, driver probably left" also describes "connection fine, driver is just still there a long time." Auto-closing that session under-bills the driver for the time they were actually parked, and if the app's flow treats a closed session as "you're free to go," it can also create a second, overlapping session if the app later reconnects and doesn't realize a prior session for the same spot and device is still logically active.
+
+The safeguard against the safeguard is checking for an existing open, or recently auto-closed, session tied to the same device and location before starting a new one, rather than assuming a fresh connection means a fresh parking event:
+
+```
+function startSession(deviceId, spotId) {
+  const recent = findRecentSession(deviceId, spotId, { withinMinutes: 30 });
+  if (recent && recent.status === 'auto-closed') {
+    return resumeSession(recent);
+  }
+  return createSession(deviceId, spotId);
+}
+```
+
+A timeout that prevents overbilling shouldn't come at the cost of creating duplicate, overlapping charges the moment a genuinely long-parked driver's phone reconnects.
+
 ## Why the Business Cost Is Bigger Than the Individual Refund
 
 A single incorrect charge is easy to refund. The actual cost is what happens after: a driver who gets billed for two extra hours doesn't file a calm support ticket and wait patiently — they leave a one-star review, tell a friend, and quietly stop using the app, all within the same day the charge appeared on their statement. Trust in a payment-handling app is asymmetric — it takes months to build and one bad billing event to lose, which makes session reliability a business-critical concern, not a minor technical detail. Manifera's Southeast Asia hub on Tras Street in Singapore has supported exactly this category of consumer mobility and payments work, where session accuracy directly determines whether users keep the app installed. [See what a reliability review costs](https://launchstudio.eu/en/#calculator) for your own app.
@@ -90,6 +108,10 @@ It depends on the use case — a parking app might cap at 24 hours before flaggi
 
 Yes — Manifera's Southeast Asia hub on Tras Street in Singapore supports consumer mobility and payments-adjacent projects, applying the same reliability standards used across its enterprise client base.
 
+### Does an automatic session timeout risk undercharging or double-charging legitimate long-stay parkers?
+
+Yes, if it's not paired with a check for a recently auto-closed session on the same device and spot — without that check, a reconnecting phone can start a brand-new session on top of one that only closed because of the timeout, producing an overlapping charge instead of a clean continuation.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +141,11 @@ Yes — Manifera's Southeast Asia hub on Tras Street in Singapore supports consu
       "@type": "Question",
       "name": "Does LaunchStudio's Singapore office work on consumer mobility apps?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, Manifera's Southeast Asia hub in Singapore supports consumer mobility and payments-adjacent projects with the same reliability standards used enterprise-wide." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does an automatic session timeout risk undercharging or double-charging legitimate long-stay parkers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if it's not paired with a check for a recently auto-closed session on the same device and spot — without that check, a reconnecting phone can start a brand-new session on top of one that only closed because of the timeout, producing an overlapping charge instead of a clean continuation." }
     }
   ]
 }

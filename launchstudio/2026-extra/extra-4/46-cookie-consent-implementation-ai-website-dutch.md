@@ -46,6 +46,22 @@ LaunchStudio brengt de hoogwaardige techniek van Manifera naar de grondleggersec
 
 Als u de netwerkverzoeken van uw eigen site nog nooit heeft gecontroleerd aan de hand van wat uw cookiebanner beweert te doen, is het de moeite waard [uw build te beoordelen aan de hand van ons proces](https://launchstudio.eu/en/#process) voordat een bezoeker (of een toezichthouder) dit voor u controleert.
 
+## Tag Managers voegen een laag toe die de eenvoudige oplossing niet dekt
+
+Wanneer u Google Tag Manager (GTM) of een vergelijkbare hulpprogramma gebruikt, kan het simpelweg blokkeren van scripts via de toestemmingsbanner omzeild worden als GTM toch wordt geladen en externe scripts activeert.
+
+Koppel GTM-triggers aan toestemmingsgebeurtenissen (Consent State):
+
+```javascript
+// Geef toestemmingsstatus door aan GTM dataLayer
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied'
+});
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: de banner die er alleen maar uitzag alsof hij werkte
@@ -85,6 +101,7 @@ De technici van Manifera testen op netwerkverzoekniveau in plaats van op visueel
 
 Het is een gebruikelijk patroon bij v0, Lovable, Bolt en soortgelijke tools, omdat geen van deze standaard de status van de toestemmingsbanner koppelt aan het laden van scripts. Het vereist een expliciete implementatiestap, ongeacht welke tool de site heeft gebouwd.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +109,42 @@ Het is een gebruikelijk patroon bij v0, Lovable, Bolt en soortgelijke tools, omd
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why does my cookie banner still let tracking scripts run after someone clicks reject?",
+      "name": "Waarom laat mijn cookiebanner nog steeds trackingscripts uitvoeren nadat iemand op Weigeren klikt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because AI website builders typically generate the banner's visual behavior without connecting it to the actual script tags \u2014 they're built as two disconnected pieces unless someone wires them together."
+        "text": "Omdat AI-websitebouwers doorgaans het visuele gedrag van de banner genereren zonder deze te verbinden met de daadwerkelijke scripttags, worden de banner en de trackingscripts gebouwd als twee losstaande delen, tenzij iemand ze expliciet met elkaar verbindt."
       }
     },
     {
       "@type": "Question",
-      "name": "Is a visually compliant banner enough to satisfy GDPR and the ePrivacy Directive?",
+      "name": "Is een visueel compatibele banner voldoende om te voldoen aan de AVG en de ePrivacy-richtlijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The legal requirement is about actual data collection behavior \u2014 scripts need to be blocked until consent, and a rejected visitor's data shouldn't be collected at all."
+        "text": "Nee. De wettelijke vereiste gaat over het daadwerkelijke gegevensverzamelingsgedrag, niet over het verschijnen van banners; scripts moeten worden geblokkeerd totdat toestemming wordt verleend, en de gegevens van een afgewezen bezoeker mogen helemaal niet worden verzameld."
       }
     },
     {
       "@type": "Question",
-      "name": "How would I even know if my site has this problem?",
+      "name": "Hoe weet ik zelfs of mijn site dit probleem heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open your site in a private browsing window, open your browser's network tab, and watch what loads before and after clicking reject \u2014 if tracking requests fire either time, the implementation is incomplete."
+        "text": "Open uw site in een privé-browservenster, open het netwerktabblad van uw browser en kijk wat er wordt geladen voordat u met de banner communiceert, en opnieuw nadat u op weigeren heeft geklikt. Als trackingverzoeken op een bepaald moment worden geactiveerd, is de implementatie onvolledig."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's team check for this differently than a typical website review?",
+      "name": "Hoe controleert het team van Manifera dit anders dan bij een typische websitebeoordeling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers test at the network request level rather than the visual level, drawing on the same rigor applied to enterprise clients like TNO and CFLW."
+        "text": "De technici van Manifera testen op netwerkverzoekniveau in plaats van op visueel niveau, omdat dat de laag is waar feitelijke naleving of niet-naleving plaatsvindt - een controle die gebaseerd is op dezelfde nauwkeurigheid die wordt toegepast op zakelijke klanten als TNO en CFLW."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this apply to all AI website builders, or just v0?",
+      "name": "Geldt dit voor alle AI-websitebouwers, of alleen voor v0?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's a common pattern across v0, Lovable, Bolt, and similar tools, since none of them connect consent banner state to script loading by default."
+        "text": "Het is een gebruikelijk patroon bij v0, Lovable, Bolt en soortgelijke tools, omdat geen van deze standaard de status van de toestemmingsbanner koppelt aan het laden van scripts. Het vereist een expliciete implementatiestap, ongeacht welke tool de site heeft gebouwd."
       }
     }
   ]

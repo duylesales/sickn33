@@ -51,6 +51,21 @@ The fix isn't distrusting Cursor generally — its autocomplete is genuinely use
 
 If you want a permission and access-control review done on a Cursor-built product before more users depend on it, our [how it works](https://launchstudio.eu/en/#process) page explains how LaunchStudio scopes that kind of audit, and Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) practice has run comparable authorization reviews for enterprise systems with far more role complexity than a typical early-stage SaaS product.
 
+## A Test Matrix Only Protects You Once, Unless It's Automated
+
+Building the role-combination test matrix fixes the bug that was found, but it doesn't stop the next one from arriving the same way. Cursor will keep suggesting autocomplete near that same permission logic every time the product changes — a new role gets added, a ticket field gets a new visibility rule, a related function gets refactored — and each of those moments is a fresh chance for a plausible-but-wrong suggestion to slip past a quick review, exactly like the first one did. A test matrix that exists as a document someone ran through once, by hand, after the original bug was found doesn't catch any of that. It only proves the bug that was already known about is fixed.
+
+The matrix earns its keep only once it stops being a manual checklist and becomes an automated test suite that runs on every change touching permission logic, so a new suggestion has to pass the same combinations the last one did before it can reach production:
+
+```
+test: support-agent + department-lead can view assigned ticket
+test: support-agent + department-lead can resolve assigned ticket
+test: admin + support-agent inherits full ticket visibility
+test: regular-user + department-lead cannot bypass ticket ownership check
+```
+
+Wired into the deploy pipeline, these run automatically on every relevant change instead of depending on someone remembering to re-check them by hand.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Role Combination Nobody Tested
@@ -92,6 +107,10 @@ He's describing the gap between code that works in the scenarios it was tested a
 
 The review is carried out by Manifera's engineering team, including the group based at the Singapore hub, applying the same systematic access-control testing process used across Manifera's enterprise engagements.
 
+### Once a permission bug is fixed and tested, can it come back?
+
+Yes, if the test matrix stays a one-time manual check — every future change near that permission logic, including a new Cursor suggestion, is a fresh chance for a similar gap to slip through, which is why the matrix needs to run as an automated test on every relevant change, not just once after the original fix.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +140,11 @@ The review is carried out by Manifera's engineering team, including the group ba
       "@type": "Question",
       "name": "Who does this kind of permission review at LaunchStudio?",
       "acceptedAnswer": { "@type": "Answer", "text": "The review is carried out by Manifera's engineering team, including the group based at the Singapore hub, using the same access-control testing process applied across Manifera's enterprise engagements." }
+    },
+    {
+      "@type": "Question",
+      "name": "Once a permission bug is fixed and tested, can it come back?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the test matrix stays a one-time manual check — every future change near that permission logic is a fresh chance for a similar gap to slip through, which is why the matrix needs to run as an automated test on every relevant change, not just once after the original fix." }
     }
   ]
 }

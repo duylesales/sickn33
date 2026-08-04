@@ -54,6 +54,19 @@ In een prototype met testgegevens is het verliezen van de database een ongemak: 
 
 Ons team, dat werkt vanuit het kantoor in Singapore aan Tras Street 100 en oprichters in Zuidoost-Azië en wereldwijd bedient, beschouwt de voorbereiding op rampenherstel als een standaard gesprek met nieuwe AI-oprichters – niet omdat het glamoureus is, maar omdat het een van de weinige dingen is die goedkoop van tevoren te repareren zijn en catastrofaal om te laat te ontdekken. Als u niet zeker weet waar uw eigen installatie staat, bevatten [onze pakketten](https://launchstudio.eu/en/#packages) een back-up- en herstelaudit als onderdeel van het gereedmaken van een app voor productie.
 
+## Dagelijkse momentopnamen laten nog steeds een gat achter: Point-in-Time Herstel
+
+Automatische dagelijkse back-ups zijn essentieel, maar als uw database om 15:00 uur crasht en uw laatste back-up van 02:00 uur 's nachts was, bent u 13 uur aan klantgegevens kwijt. Point-in-time recovery (PITR) maakt gebruik van transactielogs (WAL) om de database te herstellen naar de exacte seconde voor de crash.
+
+Schakel Point-in-Time Recovery in op uw productiedatabase:
+
+```text
+# Voorbeeld PostgreSQL configuratie voor WAL-archivering:
+wal_level = replica
+archive_mode = on
+archive_command = 'test ! -f /var/lib/postgresql/wal_archive/%f && cp %p /var/lib/postgresql/wal_archive/%f'
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: zes weken aan back-ups waarvan geen back-up werd gemaakt
@@ -99,6 +112,7 @@ Beschrijf uw project — [we reageren binnen één werkdag](https://launchstudio
 
 Bezoek [Manifera's over ons-pagina](https://www.manifera.com/about-us/) om de bredere technische standaard achter dit soort productieverharding te zien.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -106,42 +120,42 @@ Bezoek [Manifera's over ons-pagina](https://www.manifera.com/about-us/) om de br
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How would I even know if my backups have been silently failing?",
+      "name": "Hoe weet ik zelfs of mijn back-ups stilletjes zijn mislukt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Without active monitoring, you likely wouldn't \u2014 the fix is a monitoring job that alerts on backup failure specifically, separate from and in addition to whatever dashboard shows the backup is 'scheduled.'"
+        "text": "Zonder actieve monitoring zou dat waarschijnlijk niet het geval zijn. De oplossing is een monitoringtaak die specifiek waarschuwt bij back-upfouten, los van en als aanvulling op het dashboard dat aangeeft dat de back-up 'gepland' is."
       }
     },
     {
       "@type": "Question",
-      "name": "How often should a restore actually be tested?",
+      "name": "Hoe vaak moet een herstel eigenlijk worden getest?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Monthly is a reasonable baseline for most early-stage SaaS products; anything handling financial or health data warrants more frequent testing given the higher cost of a failed recovery."
+        "text": "Maandelijks is een redelijke basis voor de meeste SaaS-producten in een vroeg stadium; alles wat met financiële of gezondheidsgegevens omgaat, rechtvaardigt vaker testen, gezien de hogere kosten van een mislukt herstel."
       }
     },
     {
       "@type": "Question",
-      "name": "What does Manifera typically find when auditing an AI-generated app's backup setup?",
+      "name": "Wat vindt Manifera doorgaans bij het controleren van de back-upinstellingen van een door AI gegenereerde app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Across the projects our engineers review, the most common finding isn't a missing backup \u2014 it's an untested one, often broken by a rotated credential or schema change nobody connected to the backup job, discovered only when someone finally tried to restore it."
+        "text": "Bij de projecten die onze technici beoordelen, is de meest voorkomende bevinding niet een ontbrekende back-up; het is een niet-geteste back-up, vaak verbroken door een geroteerde referentie of een schemawijziging die niemand met de back-uptaak ​​heeft verbonden, en die pas wordt ontdekt wanneer iemand deze uiteindelijk probeert te herstellen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this only relevant for apps with a lot of customer data already?",
+      "name": "Is dit alleen relevant voor apps met al veel klantdata?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 the best time to fix it is before you have much data to lose, since the fix is cheap now and the cost of getting it wrong only grows as your customer base does."
+        "text": "Nee. De beste tijd om het probleem op te lossen is voordat u veel gegevens te verliezen heeft, omdat de oplossing nu goedkoop is en de kosten van een fout alleen maar toenemen naarmate uw klantenbestand toeneemt."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio only work with founders who've already had a data-loss incident?",
+      "name": "Werkt LaunchStudio alleen met oprichters die al een incident met gegevensverlies hebben gehad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not at all \u2014 most of the founders we work with through our Singapore hub come to us before anything's gone wrong, specifically to close this kind of gap while it's still just a risk instead of a crisis."
+        "text": "Helemaal niet. De meeste oprichters waarmee we via onze hub in Singapore samenwerken, komen naar ons toe voordat er iets mis is gegaan, vooral om dit soort gaten te dichten, nu het nog steeds slechts een risico is in plaats van een crisis.  Beschrijf uw project — [we reageren binnen één werkdag](https://launchstudio.eu/en/#contact) met een duidelijk beeld van waartegen uw back-upconfiguratie u daadwerkelijk beschermt.  Bezoek [Manifera's over ons-pagina](https://www.manifera.com/about-us/) om de bredere technische standaard achter dit soort productieverharding te zien."
       }
     }
   ]

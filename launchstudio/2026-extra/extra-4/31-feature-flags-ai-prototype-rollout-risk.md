@@ -65,6 +65,19 @@ Not every feature needs a flag. But anything that touches money, permissions, or
 
 Manifera's engineers, working out of the Amsterdam office at Herengracht 420, typically wire this into a founder's stack during the production-readiness pass — not as a separate product, but as part of getting the app from "demo that works" to "app real users can trust." If you're not sure whether your current setup has this covered, [see what a production-readiness review actually costs](https://launchstudio.eu/en/#calculator) before you find out the hard way.
 
+## Flipping a Flag Off Doesn't Undo What Already Happened
+
+A kill switch stops a bad code path from running for the *next* request, but it does nothing about the requests that already went through while the flag was on. This is the gap most founders discover the first time they actually need to use a flag in anger: they flip it off, feel a wave of relief, and then realize the flag only prevented new bad outcomes — every swap, charge, or send that happened in the window before the flip is still sitting in the database exactly as the buggy code left it.
+
+```
+// Flipping this off stops new evaluations —
+// it does not touch the 7 swaps already approved
+// while it was on.
+await flags.disable("shift_swap_v2");
+```
+
+The fix isn't a smarter flag, it's a habit that goes with every flag: log which specific records were created or modified while a given flag was active, keyed to the flag's on/off timestamps, so "what do I need to manually review or undo" is a query against that log rather than a guess based on when someone remembers noticing the problem. For anything that changes state automatically, the flag and the audit trail are really one feature, not two — a kill switch without a record of what happened while it was live tells you the bleeding has stopped, not how much blood was lost.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Shift-Swap Bug Nobody Could Turn Off
@@ -106,6 +119,10 @@ Yes, and it's usually safer to add flags to an already-live app than to keep shi
 
 We work across Lovable, Bolt, Cursor, and v0 output — the underlying gap (no rollout safety net) shows up regardless of which AI tool generated the original code, which is consistent with what Manifera's engineers see across their broader client base including Vodafone and CFLW.
 
+### If I flip a flag off, does that undo whatever the bad code already did?
+
+No — a kill switch only stops the flag from evaluating true for future requests; anything already created, approved, or charged while it was on stays exactly as the buggy code left it, which is why every state-changing flag needs an accompanying log of what happened while it was active.
+
 Talk to an engineer who understands AI-generated code — [describe your project here](https://launchstudio.eu/en/#contact) and we'll respond within one business day.
 
 For more on how Manifera approaches production-grade builds, see [Manifera's custom software development services](https://www.manifera.com/services/custom-software-development/).
@@ -139,6 +156,11 @@ For more on how Manifera approaches production-grade builds, see [Manifera's cus
       "@type": "Question",
       "name": "Does LaunchStudio only work with Cursor-built apps, or other AI tools too?",
       "acceptedAnswer": { "@type": "Answer", "text": "We work across Lovable, Bolt, Cursor, and v0 output — the underlying gap shows up regardless of which AI tool generated the original code, consistent with what Manifera's engineers see across their broader client base including Vodafone and CFLW." }
+    },
+    {
+      "@type": "Question",
+      "name": "If I flip a flag off, does that undo whatever the bad code already did?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — a kill switch only stops the flag from evaluating true for future requests; anything already created, approved, or charged while it was on stays exactly as the buggy code left it, which is why every state-changing flag needs an accompanying log of what happened while it was active." }
     }
   ]
 }

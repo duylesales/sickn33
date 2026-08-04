@@ -51,6 +51,21 @@ The fix itself is not architecturally complicated — that's part of what makes 
 
 If you're not sure whether your own booking app has this gap, [our process page](https://launchstudio.eu/en/#process) walks through how a technical review works before you commit to a fix. Manifera's broader [web app development](https://www.manifera.com/services/web-app-develop/) work follows the same principle: validation logic has to match real-world timing, not just the happy path a demo covers.
 
+## Multi-Day Stays Break the "Check at Booking" Fix, Too
+
+The booking-time validation described above closes the most obvious gap, but it introduces a narrower version of the same mistake if it's implemented carelessly: which date does it actually check the certificate against? A daycare drop-off is a single day, so checking expiry against the booking date is enough. Boarding is different — a dog checked in on a Monday for a five-night stay might have a vaccination that's valid at check-in and expired by Wednesday. If the validation logic only checks the start date of the booking, exactly the scenario the fix was built to catch — an expired certificate in a shared space — can still happen, just partway into a stay instead of at the door.
+
+The correct check validates the certificate against the last day of the booking, not the first:
+
+```
+function isEligibleForBooking(certificate, booking) {
+  const lastDayOfStay = booking.checkOutDate;
+  return certificate.expiryDate >= lastDayOfStay;
+}
+```
+
+For any booking type longer than a single day — boarding, multi-day training courses, extended daycare packages — this is the difference between a check that's technically running and a check that's actually protecting anyone. It's also worth flagging bookings where a certificate expires mid-stay to staff proactively, rather than only blocking the booking outright, since a family already checked in mid-stay isn't going to be turned away at the door — they need a reminder to bring an updated certificate before the next visit, not a rejection mid-boarding.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Certificate Nobody Re-Checked
@@ -88,6 +103,10 @@ Our 120+ engineers treat booking and compliance logic as a full lifecycle, not a
 
 Yes — this is a backend and database-logic fix. LaunchStudio works within your existing Lovable, Bolt, Cursor, or v0 frontend and doesn't require rebuilding the interface your users already know.
 
+### Does the same fix cover boarding stays, or just single-day daycare bookings?
+
+Only if the check validates against the last day of the stay rather than the booking's start date — a certificate that's valid at check-in can still expire partway through a multi-night boarding stay, so the validation needs to run against the checkout date, not just the day the booking was made.
+
 ### Does LaunchStudio only work with founders in the Netherlands?
 
 No — our engineering center in Ho Chi Minh City works with AI-native founders globally, alongside our Amsterdam and Singapore offices, so timezone and location aren't a barrier to getting a production-ready fix.
@@ -116,6 +135,11 @@ No — our engineering center in Ho Chi Minh City works with AI-native founders 
       "@type": "Question",
       "name": "Can this be fixed without touching my existing frontend?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is a backend and database-logic fix. LaunchStudio works within your existing Lovable, Bolt, Cursor, or v0 frontend without rebuilding the interface your users already know." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the same fix cover boarding stays, or just single-day daycare bookings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if the check validates against the last day of the stay rather than the booking's start date — a certificate valid at check-in can still expire partway through a multi-night boarding stay, so validation needs to run against the checkout date, not just the booking date." }
     },
     {
       "@type": "Question",

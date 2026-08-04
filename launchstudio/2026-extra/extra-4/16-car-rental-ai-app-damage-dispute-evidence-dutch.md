@@ -93,6 +93,7 @@ De ingenieurs van Manifera passen dezelfde data-integriteitspraktijken toe die w
 
 Ja, het kantoor in Amsterdam fungeert als de Europese klantgerichte hub van LaunchStudio, maar ons technische team ondersteunt oprichters internationaal, ongeacht waar ze gevestigd zijn.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,42 +101,42 @@ Ja, het kantoor in Amsterdam fungeert als de Europese klantgerichte hub van Laun
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why doesn't a standard photo upload feature already prevent tampering?",
+      "name": "Waarom voorkomt een standaardfunctie voor het uploaden van foto's niet al dat er geknoeid wordt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most AI-generated upload flows are built for simple display purposes \u2014 storing the latest version of a file \u2014 not for evidentiary integrity, which requires deliberately preventing overwrites and recording independent timestamps."
+        "text": "Omdat de meeste door AI gegenereerde uploadstromen zijn gebouwd voor eenvoudige weergavedoeleinden (het opslaan van de nieuwste versie van een bestand) en niet voor bewijskrachtige integriteit, waarvoor het opzettelijk voorkomen van overschrijvingen en het vastleggen van onafhankelijke tijdstempels vereist is."
       }
     },
     {
       "@type": "Question",
-      "name": "How would I know if my app has this gap?",
+      "name": "Hoe weet ik of mijn app dit gat heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Try uploading a new photo to an existing booking's condition report and see if it silently replaces the old one without any record of the change. If it does, your evidence isn't tamper-proof."
+        "text": "Probeer een nieuwe foto te uploaden naar het statusrapport van een bestaande boeking en kijk of deze stilletjes de oude vervangt zonder enige registratie van de wijziging. Als dat zo is, is uw bewijsmateriaal niet fraudebestendig."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this apply to other peer-to-peer apps beyond car rentals?",
+      "name": "Geldt dit voor andere peer-to-peer-apps dan autoverhuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 any marketplace where two parties document a physical handoff, like equipment rental or property rentals, has the same underlying need for tamper-proof evidence."
+        "text": "Ja – elke marktplaats waar twee partijen een fysieke overdracht documenteren, zoals de verhuur van apparatuur of onroerend goed, heeft dezelfde onderliggende behoefte aan bewijsmateriaal dat geen van beide partijen achteraf kan veranderen."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera ensure this kind of fix meets a real security bar?",
+      "name": "Hoe zorgt Manifera ervoor dat dit soort oplossingen voldoen aan een echte beveiligingsnorm?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers apply the same data-integrity practices used on enterprise projects for clients like Vodafone and TNO, adapted to the scale and budget of an early-stage founder's app."
+        "text": "De ingenieurs van Manifera passen dezelfde data-integriteitspraktijken toe die worden gebruikt bij bedrijfsprojecten voor klanten als Vodafone en TNO, aangepast aan de schaal en het budget van een app van een beginnende oprichter."
       }
     },
     {
       "@type": "Question",
-      "name": "Can LaunchStudio's Amsterdam team work with founders outside the Netherlands?",
+      "name": "Kan het Amsterdamse team van LaunchStudio samenwerken met oprichters buiten Nederland?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 the Amsterdam office is LaunchStudio's European client-facing hub, but the engineering team supports founders internationally regardless of where they're based."
+        "text": "Ja, het kantoor in Amsterdam fungeert als de Europese klantgerichte hub van LaunchStudio, maar ons technische team ondersteunt oprichters internationaal, ongeacht waar ze gevestigd zijn."
       }
     }
   ]

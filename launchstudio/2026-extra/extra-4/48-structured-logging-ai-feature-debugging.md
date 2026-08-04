@@ -47,6 +47,22 @@ This is a pattern LaunchStudio sees constantly across AI-native SaaS tools: the 
 
 If your AI feature has shipped without this in place, it's worth [getting a quote on adding proper observability](https://launchstudio.eu/en/#calculator) before the next complaint arrives with nothing behind it to investigate.
 
+## Logging Everything at Full Detail Doesn't Scale Forever
+
+Once structured logging is in place, a second, quieter problem shows up: logging the full prompt and full response for every single AI call, especially anything using retrieved documents or long context, generates a lot of data fast. A feature doing a few thousand requests a day with a few thousand tokens of context per request can turn logging into one of the more expensive and unwieldy parts of the stack — slow to query, expensive to retain, and full of duplicate context that adds little value once you've already confirmed a hundred similar requests behaved correctly.
+
+The fix isn't to log less overall — it's to log unevenly, on purpose. Every failed or flagged request gets full detail, always. Successful, unflagged requests get sampled at a much lower rate, or have their context truncated to a reference rather than the full text, since the full context is usually reconstructable from the request ID if it's ever actually needed.
+
+```
+function shouldLogFullDetail(request, response) {
+  if (response.error || response.flaggedByUser) return true;
+  if (response.latencyMs > SLOW_THRESHOLD) return true;
+  return Math.random() < SAMPLE_RATE; // e.g. 0.05 for routine successful calls
+}
+```
+
+This keeps the logging system useful for exactly the moments it exists for — debugging a specific bad output — without the retention bill or query performance degrading as usage grows. It's a policy decision, not a technical limitation, and it's one most AI-generated logging setups never make because "log everything" is the simplest thing to build first.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Writing Assistant With No Memory of Its Own Mistakes
@@ -86,6 +102,10 @@ Manifera has delivered observability and monitoring tooling across 160+ projects
 
 Yes — structured logging is typically added as a wrapper around existing model calls, capturing the request and response without changing how the AI feature itself functions.
 
+### Won't logging every prompt and response get expensive at scale?
+
+It can, if every request is logged at full detail forever — the fix is logging failures and flagged outputs at full detail always, while sampling or truncating routine successful requests, which keeps logs useful without the storage and query cost growing unchecked as usage increases.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +135,11 @@ Yes — structured logging is typically added as a wrapper around existing model
       "@type": "Question",
       "name": "Is this something I can add without changing my existing AI integration?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, structured logging is typically added as a wrapper around existing model calls, capturing the request and response without changing how the feature functions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Won't logging every prompt and response get expensive at scale?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It can, if every request is logged at full detail forever — the fix is logging failures and flagged outputs at full detail always, while sampling or truncating routine successful requests, which keeps logs useful without storage and query cost growing unchecked." }
     }
   ]
 }

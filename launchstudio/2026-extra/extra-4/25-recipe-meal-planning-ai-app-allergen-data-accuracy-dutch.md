@@ -50,6 +50,21 @@ Oprichters hoeven geen ingenieur te worden om deze categorie bugs op te vangen, 
 
 Het team van Manifera, gevestigd vanuit het Europese hoofdkantoor in Amsterdam, werkt rechtstreeks samen met de oprichters om precies dit soort gestructureerde pre-lanceringscontrole uit te voeren op een hele app in plaats van op één functie tegelijk. U kunt zien hoe die betrokkenheid doorgaans werkt op de [LaunchStudio-pakkettenpagina](https://launchstudio.eu/en/#packages), en voor een bredere kijk op hoe Manifera webapplicatie-engineering op productieniveau benadert, bekijkt u het werk van het team [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
+## Een vast filter hangt er nog steeds van af dat de ingrediëntenlijst klopt op het moment dat het geserveerd wordt
+
+Het filteren van recepten op allergenen is een veiligheidsvereiste. Als een recepten-app de ingrediëntenlijst dynamisch ophaalt van een externe leverancier, maar het allergenenfilter niet opnieuw evalueert bij wijzigingen, kan een gewijzigd recept stilzwijgend door het filter glippen.
+
+Voer allergenencontroles uit op de samengestelde ingrediëntenlijst op het moment dat het maaltijdplan wordt gegenereerd:
+
+```javascript
+function filterSafeRecipes(recipes, userAllergens) {
+  return recipes.filter(recipe => {
+    const recipeIngredients = new Set(recipe.ingredients.map(i => i.name.toLowerCase()));
+    return !userAllergens.some(allergen => recipeIngredients.has(allergen.toLowerCase()));
+  });
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native Founder in actie: het vervangende recept dat de allergielijst negeerde
@@ -91,6 +106,7 @@ Het team controleert of elke gegevensbeperking die een gebruiker instelt (allerg
 
 LaunchStudio werkt met apps die zijn gebouwd in Bolt, Lovable, Cursor, v0 en soortgelijke AI-tools. Het proces van het in Amsterdam gevestigde team is opgebouwd rond het auditen en repareren van de onderliggende architectuur, ongeacht welke tool de frontend heeft gegenereerd.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +114,42 @@ LaunchStudio werkt met apps die zijn gebouwd in Bolt, Lovable, Cursor, v0 en soo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why would an allergen filter work in one part of an app but not another?",
+      "name": "Waarom zou een allergeenfilter in het ene deel van een app wel werken en in het andere niet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because AI coding tools typically implement each feature in isolation based on what's described in that specific prompt, so a constraint like an allergy filter has to be explicitly re-applied to every new feature or it silently doesn't carry over."
+        "text": "Omdat AI-coderingstools doorgaans elke functie afzonderlijk implementeren op basis van wat er in die specifieke prompt wordt beschreven, moet een beperking zoals een allergiefilter expliciet opnieuw worden toegepast op elke nieuwe functie, anders wordt deze niet stilzwijgend overgedragen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this only a risk for food-related apps?",
+      "name": "Is dit alleen een risico voor voedselgerelateerde apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The specific example is food safety, but the underlying pattern \u2014 a constraint enforced in one feature but not others \u2014 applies to any app with a user-set restriction, from budget limits to content filters."
+        "text": "Het specifieke voorbeeld is voedselveiligheid, maar het onderliggende patroon – een beperking die in één functie wordt afgedwongen, maar niet in andere – is van toepassing op elke app met een door de gebruiker ingestelde beperking, van budgetlimieten tot inhoudsfilters."
       }
     },
     {
       "@type": "Question",
-      "name": "How would I even know this bug exists in my own app?",
+      "name": "Hoe kan ik überhaupt weten dat deze bug in mijn eigen app bestaat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You'd need to deliberately test every feature that touches the affected data with the constraint active, which is exactly the kind of cross-feature audit LaunchStudio runs as a standard part of its production-readiness review."
+        "text": "Je zou doelbewust elke functionaliteit moeten testen die in aanraking komt met de betrokken gegevens, terwijl de beperking actief is, wat precies het soort cross-feature audit is die LaunchStudio uitvoert als standaard onderdeel van de beoordeling van de productiegereedheid."
       }
     },
     {
       "@type": "Question",
-      "name": "What does LaunchStudio actually check for in a meal or health app?",
+      "name": "Waar controleert LaunchStudio eigenlijk op in een maaltijd- of gezondheidsapp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The team checks that every data constraint a user sets is enforced consistently across all features, drawing on Manifera's 11+ years of production engineering experience."
+        "text": "Het team controleert of elke gegevensbeperking die een gebruiker instelt (allergenen, dieetbeperkingen, portielimieten) consistent wordt gehandhaafd voor alle functies, en niet alleen voor die waarvoor het oorspronkelijk is gebouwd, op basis van Manifera's ruim elf jaar ervaring in productietechniek."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio only work with Bolt-built apps, or other tools too?",
+      "name": "Werkt LaunchStudio alleen met door Bolt gebouwde apps, of ook met andere tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio works with apps built in Bolt, Lovable, Cursor, v0, and similar AI tools \u2014 the Amsterdam-based team audits and fixes the underlying architecture regardless of which tool generated the frontend."
+        "text": "LaunchStudio werkt met apps die zijn gebouwd in Bolt, Lovable, Cursor, v0 en soortgelijke AI-tools. Het proces van het in Amsterdam gevestigde team is opgebouwd rond het auditen en repareren van de onderliggende architectuur, ongeacht welke tool de frontend heeft gegenereerd."
       }
     }
   ]

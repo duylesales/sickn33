@@ -46,6 +46,21 @@ Manifera heeft meer dan elf jaar productie-engineering-ervaring met het bouwen v
 
 Als je nog nooit hebt getest wat er zou gebeuren als een gebruiker morgen om zijn gegevens zou vragen, is het de moeite waard [met een ingenieur te praten over je huidige schema](https://launchstudio.eu/en/#contact) voordat die e-mail daadwerkelijk arriveert.
 
+## Uw database is niet de enige plek waar deze gegevens leven
+
+Bij een AVG-gegevensexportverzoek (recht op dataportabiliteit) volstaat het niet om alleen de tabel uit uw hoofddatabase te exporteren. Gegevens van de gebruiker bevinden zich vaak ook in externe diensten zoals Intercom (chatlogs), SendGrid (e-mailhistorie) en Stripe (transactiegeschiedenis).
+
+Stel een export-orchestrator in die gegevens bij alle externe providers verzamelt:
+
+```javascript
+async function exportUserData(userId) {
+  const dbData = await db.users.findFullProfile(userId);
+  const supportLogs = await intercom.getUserLogs(userId);
+  const paymentHistory = await stripe.charges.list({ customer: dbData.stripeCustomerId });
+  return { profile: dbData, supportLogs, paymentHistory };
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de portal zonder exportknop
@@ -85,6 +100,7 @@ Manifera heeft meer dan elf jaar ervaring in productietechniek bij zakelijke kla
 
 Idealiter proactief: de in Ho Chi Minhstad gevestigde technici van LaunchStudio nemen logica voor het exporteren en verwijderen van gegevens op als onderdeel van een standaard pre-lanceringsbeoordeling, zodat het vervullingstraject al bestaat voordat het eerste echte verzoek binnenkomt.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +108,42 @@ Idealiter proactief: de in Ho Chi Minhstad gevestigde technici van LaunchStudio 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What exactly does GDPR data portability require a company to provide?",
+      "name": "Wat moet een bedrijf precies bieden voor de dataportabiliteit van de AVG?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Personal data the user directly provided to the service, delivered in a structured, commonly-used, machine-readable format such as JSON or CSV, within 30 days of the request."
+        "text": "Persoonsgegevens die de gebruiker rechtstreeks aan de dienst heeft verstrekt, geleverd in een gestructureerd, veelgebruikt, machinaal leesbaar formaat zoals JSON of CSV, binnen 30 dagen na het verzoek."
       }
     },
     {
       "@type": "Question",
-      "name": "Why doesn't an AI coding tool build this automatically?",
+      "name": "Waarom bouwt een AI-coderingstool dit niet automatisch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because it isn't a feature that shows up in a product demo or a typical build prompt \u2014 it's a legal obligation that only becomes visible once a real user invokes their right to it."
+        "text": "Omdat het geen functie is die wordt weergegeven in een productdemo of een typische build-prompt, is het een wettelijke verplichting die pas zichtbaar wordt zodra een echte gebruiker zich op zijn recht erop beroept."
       }
     },
     {
       "@type": "Question",
-      "name": "What happens if a SaaS company can't fulfill a request in time?",
+      "name": "Wat gebeurt er als een SaaS-bedrijf niet op tijd aan een verzoek kan voldoen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Missed deadlines create real regulatory exposure \u2014 EU data protection authorities can and do investigate complaints from users whose requests went unanswered."
+        "text": "Afgezien van de onmiddellijke problemen zorgen gemiste deadlines voor echte blootstelling aan de regelgeving: de gegevensbeschermingsautoriteiten van de EU kunnen klachten onderzoeken van gebruikers wier verzoeken onbeantwoord bleven, en dat doen ze ook."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's engineering background help with this kind of compliance gap?",
+      "name": "Hoe helpt de technische achtergrond van Manifera bij dit soort compliance-kloof?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera has 11+ years of production engineering experience across enterprise clients, and mapping data flows before they're needed is exactly what prevents a portability request from becoming an emergency."
+        "text": "Manifera heeft meer dan elf jaar ervaring in productietechniek bij zakelijke klanten, en die discipline van het in kaart brengen van gegevensstromen voordat ze nodig zijn, is precies wat voorkomt dat een verzoek om gegevensportabiliteit een noodgeval wordt."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio build this proactively or only after a request comes in?",
+      "name": "Bouwt LaunchStudio dit proactief of pas nadat er een verzoek binnenkomt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ideally proactively \u2014 LaunchStudio's Ho Chi Minh City-based engineers include data export and deletion logic as part of a standard pre-launch review."
+        "text": "Idealiter proactief: de in Ho Chi Minhstad gevestigde technici van LaunchStudio nemen logica voor het exporteren en verwijderen van gegevens op als onderdeel van een standaard pre-lanceringsbeoordeling, zodat het vervullingstraject al bestaat voordat het eerste echte verzoek binnenkomt."
       }
     }
   ]

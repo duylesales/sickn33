@@ -51,6 +51,22 @@ Our team, working out of LaunchStudio's Amsterdam office, treats this as a stand
 
 If you want a technical audit of your access-control logic before your next content drop or launch, [reach out through LaunchStudio](https://launchstudio.eu/en/#contact). For how this pattern plays out at enterprise scale, see Manifera's [web app development](https://www.manifera.com/services/web-app-develop/) practice.
 
+## Your CDN Doesn't Know the Signed URL Expired
+
+Once premium video is moved behind signed URLs, a second, quieter issue tends to show up the moment the platform grows enough to need a CDN for video performance. A CDN caches responses by URL, and a signed URL's whole point is that it changes on every request — which normally defeats caching entirely and can make video delivery painfully slow. Founders, or the AI tooling generating the fix, often solve the slowness by caching the response for some window regardless of the signature's own expiry, so the video loads fast on repeat views. That shortcut quietly reopens the gap it was meant to close: the CDN will keep serving a cached copy of the video to anyone with that URL for as long as its cache entry lives, even well past the moment the signature itself expired, because the CDN never re-checks the signature — it just matches the URL to a cached object.
+
+The fix is to keep the CDN's cache lifetime shorter than or equal to the signed URL's own expiry window, and to mark authenticated media responses so intermediate caches don't hold onto them longer than that:
+
+```
+function mediaResponseHeaders(signedUrlExpiresInSeconds) {
+  return {
+    'Cache-Control': `private, max-age=${signedUrlExpiresInSeconds}`,
+  };
+}
+```
+
+A signed URL with a five-minute expiry and a CDN cache set to hold responses for an hour isn't a five-minute window at all — it's an hour, and nobody discovers that gap until someone tests it deliberately.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The URL Pattern Anyone Could Guess
@@ -92,6 +108,10 @@ No — the same pattern affects any gated resource with a predictable URL, inclu
 
 Yes — content-gating and access-control audits are a standard part of technical reviews handled by LaunchStudio's Amsterdam-based team for creator and membership platforms specifically.
 
+### Does adding a CDN in front of signed URLs bring the bypass back?
+
+It can — if the CDN caches the response longer than the signed URL's own expiry, it will keep serving the cached video to anyone with that URL after the signature should have expired, so the cache lifetime needs to be set to match, not exceed, the signed URL's window.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +141,11 @@ Yes — content-gating and access-control audits are a standard part of technica
       "@type": "Question",
       "name": "Is this the kind of review LaunchStudio's Amsterdam team does regularly?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — content-gating and access-control audits are a standard part of technical reviews handled by LaunchStudio's Amsterdam-based team for creator and membership platforms." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does adding a CDN in front of signed URLs bring the bypass back?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It can — if the CDN caches the response longer than the signed URL's own expiry, it will keep serving the cached video to anyone with that URL after the signature should have expired, so the cache lifetime needs to be set to match, not exceed, the signed URL's window." }
     }
   ]
 }

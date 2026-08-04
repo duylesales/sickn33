@@ -137,14 +137,6 @@ Ja, het risico is niet evenredig aan het aantal klanten, maar aan de mate waarin
 
 Nieuwe pogingen maken levering minstens-eenmalig in plaats van exact-eenmalig, wat betekent dat dezelfde gebeurtenis legitiem twee keer kan aankomen — dus moet de ontvangende kant een stabiele gebeurtenis-ID controleren en alles overslaan wat al is verwerkt, anders kan een herhaalde levering stilletjes dubbele records aanmaken.
 
-### Kan Manifera dit toevoegen aan een webhooksysteem dat al gedeeltelijk is gebouwd?
-
-Ja – onze technici combineren regelmatig logica voor opnieuw proberen, ondertekenen en inloggen op bestaande webhook-code van Cursor, Lovable, Bolt of v0 in plaats van deze opnieuw op te bouwen, een patroon dat consistent is met het integratiewerk achter meer dan 160 opgeleverde projecten voor klanten als CFLW en Statler BI.
-
-Praat met een ingenieur die de door AI gegenereerde code begrijpt — [beschrijf hier uw project](https://launchstudio.eu/en/#contact) en we reageren binnen één werkdag.
-
-Voor meer informatie over hoe backends met veel integratie zijn gebouwd om lang mee te gaan, zie [Manifera's webapp-ontwikkelingsservices](https://www.manifera.com/services/web-app-develop/).
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -152,50 +144,42 @@ Voor meer informatie over hoe backends met veel integratie zijn gebouwd om lang 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why would a webhook fail silently instead of throwing a visible error?",
+      "name": "Waarom zou een webhook stilletjes mislukken in plaats van een zichtbare fout te veroorzaken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because from the sending app's perspective, the HTTP request was made \u2014 the failure happens on the network or the receiving end, and without explicit retry and logging logic, nothing on the sending side ever records that the delivery didn't succeed."
+        "text": "Omdat vanuit het perspectief van de verzendende app het HTTP-verzoek is gedaan: de fout vindt plaats op het netwerk of aan de ontvangende kant, en zonder expliciete logica voor opnieuw proberen en loggen registreert niets aan de verzendende kant ooit dat de bezorging niet is gelukt."
       }
     },
     {
       "@type": "Question",
-      "name": "What is signature verification actually protecting against?",
+      "name": "Waar beschermt handtekeningverificatie eigenlijk tegen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It lets the receiving system confirm a webhook genuinely came from your app and wasn't forged or replayed by an attacker, using a shared secret to generate and check an HMAC hash on every payload."
+        "text": "Hiermee kan het ontvangende systeem bevestigen dat een webhook echt afkomstig is van uw app en niet is vervalst of opnieuw is afgespeeld door een aanvaller, waarbij een gedeeld geheim wordt gebruikt om voor elke payload een HMAC-hash te genereren en te controleren."
       }
     },
     {
       "@type": "Question",
-      "name": "How many retry attempts is 'enough' for a webhook?",
+      "name": "Hoeveel nieuwe pogingen zijn 'genoeg' voor een webhook?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers typically implement five to six attempts with exponential backoff spread over several minutes to hours, which covers the vast majority of transient outages without hammering a customer's server or delaying critical data indefinitely."
+        "text": "De technici van Manifera implementeren doorgaans vijf tot zes pogingen met exponentiële uitstel, gespreid over enkele minuten tot uren, waardoor de overgrote meerderheid van tijdelijke storingen wordt gedekt zonder de server van een klant te belasten of kritieke gegevens voor onbepaalde tijd te vertragen."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this apply if I only have a handful of customers right now?",
+      "name": "Geldt dit als ik momenteel maar een handvol klanten heb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 the risk isn't proportional to customer count, it's proportional to how much a customer's system depends on your events, and even one enterprise-leaning customer can be lost over a silent data desync."
+        "text": "Ja, het risico is niet evenredig aan het aantal klanten, maar aan de mate waarin het systeem van een klant afhankelijk is van uw gebeurtenissen, en zelfs één ondernemingsgerichte klant kan verloren gaan door een stille gegevensdesynchronisatie."
       }
     },
     {
       "@type": "Question",
-      "name": "If retries fix the delivery problem, what new problem do they create?",
+      "name": "Als nieuwe pogingen het leveringsprobleem oplossen, welk nieuw probleem creëren ze dan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Retries make delivery at-least-once instead of exactly-once, meaning the same event can legitimately arrive twice \u2014 so the receiving side needs to check a stable event ID and skip anything it's already processed, or a retried delivery can silently create duplicate records."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can Manifera add this to a webhook system that's already partially built?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes \u2014 our engineers regularly layer retry logic, signing, and logging onto existing webhook code from Cursor, Lovable, Bolt, or v0 rather than rebuilding it, a pattern consistent with the integration work behind 160+ delivered projects for clients like CFLW and Statler BI."
+        "text": "Nieuwe pogingen maken levering minstens-eenmalig in plaats van exact-eenmalig, wat betekent dat dezelfde gebeurtenis legitiem twee keer kan aankomen — dus moet de ontvangende kant een stabiele gebeurtenis-ID controleren en alles overslaan wat al is verwerkt, anders kan een herhaalde levering stilletjes dubbele records aanmaken."
       }
     }
   ]

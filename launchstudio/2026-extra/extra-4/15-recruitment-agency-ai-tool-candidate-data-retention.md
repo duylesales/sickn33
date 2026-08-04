@@ -60,6 +60,27 @@ Our engineers have shipped 160+ projects for enterprise clients, and data govern
 
 None of this retention work touches how a recruiter interacts with the candidate database day-to-day. It's implemented as scheduled backend jobs and database-level rules, layered onto whatever tool — Cursor, Lovable, Bolt — originally built the interface. [Send us your prototype link](https://launchstudio.eu/en/#contact) and LaunchStudio can tell you honestly whether your candidate database has this gap before it becomes an audit finding.
 
+## An Honest "Deleted" Log Beats an Overstated One
+
+An automated deletion job solves the biggest problem — data that should have been purged sitting untouched indefinitely in the live database. What it can't honestly claim, on its own, is that the candidate's data is now fully gone: a CV attached to an email already sent to a hiring manager still lives in that inbox, a nightly database backup still contains the record for as long as that backup is retained, and a spreadsheet already emailed to a client is a copy no deletion job will ever reach. The risk isn't that a deletion job misses these — no automated job realistically could — it's a retention policy that implies "deleted" means "gone everywhere" when what actually happened is narrower than that.
+
+A more honest retention system doesn't pretend to solve this in one step — it documents what's cleared immediately and what ages out on its own schedule, so the agency can describe its actual data lifecycle accurately instead of implying a completeness the system doesn't have:
+
+```
+async function purgeCandidateRecord(candidateId) {
+  await db.candidates.deleteOne({ id: candidateId });
+  await fileStorage.deleteCV(candidateId);
+  await auditLog.record({
+    candidateId,
+    action: 'purged',
+    locationsCleared: ['primary_db', 'cv_storage'],
+    locationsNotCleared: ['backups (rotate out per backup retention policy)', 'copies sent to clients by email'],
+  });
+}
+```
+
+That audit entry is what turns "we think we deleted it" into a specific, defensible answer if a candidate or a reviewer ever asks exactly what happened to their data and when.
+
 ## Real example
 
 ### An AI-Native Founder in Action: CVs With No Expiration Date
@@ -95,6 +116,10 @@ Manifera's engineers, drawing on data governance work across 160+ delivered proj
 
 No — retention logic runs in the background as scheduled processes; recruiters continue using the existing interface exactly as before, with records simply expiring or flagging automatically once they pass the defined threshold.
 
+### If a candidate's record is deleted from the app, is their data actually gone?
+
+Not necessarily everywhere — deleting a record from the primary database doesn't automatically remove it from backups, exported files, or copies sent to hiring managers by email, so a defensible retention policy documents what's cleared immediately versus what ages out later, rather than treating a single deletion job as the whole answer.
+
 ### Does LaunchStudio have experience with compliance-sensitive tools beyond recruitment?
 
 Yes — Manifera's broader client base, including work through its Ho Chi Minh City development center, spans regulated industries where data governance and retention are standard requirements, not a specialty request.
@@ -123,6 +148,11 @@ Yes — Manifera's broader client base, including work through its Ho Chi Minh C
       "@type": "Question",
       "name": "Will adding retention rules disrupt how our recruiters currently use the tool?",
       "acceptedAnswer": { "@type": "Answer", "text": "No — retention logic runs in the background as scheduled processes; recruiters continue using the existing interface exactly as before." }
+    },
+    {
+      "@type": "Question",
+      "name": "If a candidate's record is deleted from the app, is their data actually gone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily everywhere — deleting a record from the primary database doesn't automatically remove it from backups, exported files, or copies sent to hiring managers by email, so a defensible policy documents what's cleared immediately versus what ages out later." }
     },
     {
       "@type": "Question",

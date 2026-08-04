@@ -60,6 +60,28 @@ const customers = await db.customer.findMany({
 
 Most modern ORMs — Prisma, TypeORM, ActiveRecord, SQLAlchemy — support this kind of eager loading natively. The fix usually isn't a rewrite of business logic, it's a targeted change to how a handful of specific queries are structured, guided by actually profiling which endpoints slow down as data grows. Our engineers, working out of Ho Chi Minh City where much of LaunchStudio's backend and database performance work is done, typically start this kind of review by loading a copy of the founder's schema with realistic data volume and watching which pages degrade — the bug doesn't show up by reading code, it shows up by running it against something close to real scale.
 
+## Fixing N+1 With a Raw Join Can Break Pagination
+
+There's a second trap that shows up specifically when the fix is hand-rolled as a raw SQL join instead of using the ORM's built-in eager-loading feature: a join between a parent and a one-to-many child table returns one row per child, not one row per parent, which silently breaks any pagination applied to that query. A request for "20 customers per page" using `LIMIT 20` on a joined result set doesn't return 20 customers — it returns 20 rows, and if the first customer in that page has 30 orders, the entire page can be consumed by a single customer's order rows before a second customer even appears.
+
+```javascript
+// Broken: LIMIT applies to joined rows, not distinct customers
+const rows = await db.$queryRaw`
+  SELECT c.*, o.*
+  FROM customers c
+  JOIN orders o ON o.customer_id = c.id
+  LIMIT 20
+`;
+
+// Correct: paginate the parent query first, then batch-load children
+const customers = await db.customer.findMany({ take: 20, skip: page * 20 });
+const orders = await db.order.findMany({
+  where: { customerId: { in: customers.map(c => c.id) } },
+});
+```
+
+This is exactly why most ORMs' native `include` or `preload` features don't actually generate a single flat join under the hood — Prisma, ActiveRecord, and SQLAlchemy typically run the parent query and a separate batched child query, then stitch the results together in memory, avoiding both the N+1 problem and the row-multiplication problem at the same time. The lesson isn't that joins are dangerous — it's that the safe fix is almost always the ORM's own eager-loading feature, not a manually written join, because the manual version quietly reintroduces a different bug in exactly the pages most likely to already have pagination: customer lists and dashboards.
+
 ## Why "It Works Fine for Me" Isn't a Useful Signal
 
 A founder testing their own app almost never has enough data to trigger N+1 slowdowns, which means "it's fast when I use it" tells you very little about whether it'll stay fast for a customer six months into using the product. The gap tends to appear gradually and then suddenly — a dashboard that took 200 milliseconds at 50 records might take 800 milliseconds at 500, and then 8 seconds at 5,000, because the relationship between row count and query count is roughly linear while user patience is not.
@@ -111,6 +133,10 @@ No — it's almost always a targeted fix to specific queries once they're identi
 
 Yes — query performance at scale is a universal problem regardless of company size, and it's one of the patterns our engineers regularly address across the 160+ projects delivered for clients including Vodafone and MO Batteries, just at a different order of magnitude.
 
+### Can fixing N+1 queries with a SQL join create new problems?
+
+Yes, if it's a hand-written join rather than the ORM's built-in eager-loading feature — a join returns one row per child record, which can silently break pagination by letting a single parent with many children fill an entire page; ORMs like Prisma avoid this by running a separate batched query for related records instead of a flat join.
+
 Calculate what your project costs — [use our calculator](https://launchstudio.eu/en/#calculator) to scope a performance and database review for your app.
 
 For more on how backend systems are engineered to hold up at scale, see [Manifera's portfolio](https://www.manifera.com/portfolio/).
@@ -144,6 +170,11 @@ For more on how backend systems are engineered to hold up at scale, see [Manifer
       "@type": "Question",
       "name": "Is this the kind of issue Manifera's enterprise clients deal with too?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — query performance at scale is a universal problem regardless of company size, and it's one of the patterns our engineers regularly address across the 160+ projects delivered for clients including Vodafone and MO Batteries." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can fixing N+1 queries with a SQL join create new problems?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if it's a hand-written join rather than the ORM's built-in eager-loading feature — a join returns one row per child record, which can silently break pagination by letting a single parent with many children fill an entire page; ORMs like Prisma avoid this by running a separate batched query for related records instead of a flat join." }
     }
   ]
 }

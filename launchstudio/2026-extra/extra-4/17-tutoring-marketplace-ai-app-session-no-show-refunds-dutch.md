@@ -50,6 +50,31 @@ Om dit op te lossen, moet de afhandeling van no-shows worden behandeld als een t
 
 U kunt [hier uw project beschrijven](https://launchstudio.eu/en/#contact) en wij zullen binnen één werkdag reageren en vertellen wat uw huidige no-show-logica eigenlijk inhoudt. Voor een idee van hoe Manifera de architectuur van marktplaatsbetalingen breder benadert, zie onze praktijk voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/), die precies dit soort technisch werk ondersteunt.
 
+## Twee triggers, één terugbetaling: Een race-conditie voor dubbele terugbetaling voorkomen
+
+Een geautomatiseerde terugbetalingsregel en een override-knop van de ondersteuning lossen verschillende problemen op: de ene behandelt het automatische geval (bijv. docent daagde niet op), de andere behandelt uitzonderingen. Het conflict ontstaat wanneer beide op dezelfde sessie worden geactiveerd — een automatische taak draait terwijl een ondersteuningsmedewerker tegelijkertijd op "terugbetaling goedkeuren" klikt. Zonder atomaire status-updates gaan beide aanroepen onafhankelijk door naar Stripe, met twee terugbetalingen voor een enkele transactie als gevolg.
+
+De waarborg vereist een atomaire status-wijziging voordat de betalingsgateway wordt aangeroepen:
+
+```javascript
+async function processRefund(sessionId, amount, reason) {
+  const updated = await db.sessions.findOneAndUpdate(
+    { id: sessionId, refundStatus: 'none' },
+    { $set: { refundStatus: 'processing' } }
+  );
+  if (!updated) {
+    throw new Error('Terugbetaling is al in behandeling of voltooid');
+  }
+  await stripe.refunds.create({ charge: updated.chargeId, amount });
+  await db.sessions.updateOne(
+    { id: sessionId },
+    { $set: { refundStatus: 'completed' } }
+  );
+}
+```
+
+Als de eerste query vindt dat de status niet langer `'none'` is, breekt de tweede trigger direct af — voordat er enige API-call naar Stripe gaat.
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de no-show waar niemand op had gerekend
@@ -91,6 +116,7 @@ Nee – we werken ook met oprichters in de overwegingsfase, waarbij we een proto
 
 Ja, Singapore is LaunchStudio's hub voor Zuidoost-Azië, en de tweezijdige betalings- en terugbetalingsarchitectuur op de markt is een van de meest voorkomende projecttypen die het team daar afhandelt.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +124,42 @@ Ja, Singapore is LaunchStudio's hub voor Zuidoost-Azië, en de tweezijdige betal
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why do AI builders default to only handling student no-shows?",
+      "name": "Waarom behandelen AI-bouwers standaard alleen no-shows van studenten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Founders typically describe the no-show feature from the perspective of protecting revenue against the paying customer, and the AI implements exactly that scenario rather than inferring the symmetric case."
+        "text": "Omdat oprichters de no-show-functie doorgaans beschrijven vanuit het perspectief van het beschermen van inkomsten tegen de betalende klant, en de AI precies dat scenario implementeert in plaats van het symmetrische geval aan de andere kant van de markt af te leiden."
       }
     },
     {
       "@type": "Question",
-      "name": "How common is this gap in two-sided marketplace apps?",
+      "name": "Hoe vaak komt deze kloof voor in tweezijdige marktplaats-apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Very common \u2014 any marketplace where one side pays and the other side delivers a scheduled service tends to have this same asymmetry, whether it's tutoring, coaching, fitness classes, or consulting."
+        "text": "Heel gebruikelijk: elke marktplaats waar de ene kant betaalt en de andere kant een lijndienst levert, heeft vaak dezelfde asymmetrie, of het nu gaat om bijles, coaching, fitnesslessen of adviessessies."
       }
     },
     {
       "@type": "Question",
-      "name": "What does a properly built no-show policy actually require?",
+      "name": "Wat is er eigenlijk nodig voor een goed opgebouwd no-showbeleid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Explicit, separate outcomes for each combination of who did and didn't show, tied to distinct triggers \u2014 cancellation windows, no-show reports, and timeout-based confirmations."
+        "text": "Er zijn expliciete, afzonderlijke uitkomsten nodig voor elke combinatie van wie wel en niet is komen opdagen, gekoppeld aan verschillende triggers (annuleringsperioden, no-show-rapporten en op time-outs gebaseerde bevestigingen) in plaats van dat er één enkele vlag op elke zaak wordt toegepast."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio only work with founders who already have paying customers?",
+      "name": "Werkt LaunchStudio alleen met oprichters die al betalende klanten hebben?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 LaunchStudio also reviews prototypes at consideration stage before real transaction volume exposes gaps like this one, often cheaper than fixing it after a support backlog builds up."
+        "text": "Nee – we werken ook met oprichters in de overwegingsfase, waarbij we een prototype beoordelen voordat het echte transactievolume een kloof als deze blootlegt, die vaak goedkoper en sneller is dan het repareren ervan nadat er een backlog in de ondersteuning is opgebouwd."
       }
     },
     {
       "@type": "Question",
-      "name": "Is LaunchStudio's Singapore team experienced with marketplace-specific payment logic?",
+      "name": "Heeft het team van LaunchStudio in Singapore ervaring met marktspecifieke betalingslogica?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 Singapore is LaunchStudio's Southeast Asia hub, and two-sided marketplace payment and refund architecture is one of the most frequent project types the team there handles."
+        "text": "Ja, Singapore is LaunchStudio's hub voor Zuidoost-Azië, en de tweezijdige betalings- en terugbetalingsarchitectuur op de markt is een van de meest voorkomende projecttypen die het team daar afhandelt."
       }
     }
   ]

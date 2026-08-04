@@ -47,6 +47,22 @@ This is the kind of gap LaunchStudio looks for specifically when reviewing an AI
 
 Much of this workflow and notification-logic work for LaunchStudio clients is handled by the team at Manifera's development center on Pho Quang Street in Ho Chi Minh City, where engineers build the fallback routing and alerting systems that a first AI-generated pass typically skips. If you're managing real tenants on a tool built with Lovable, Bolt, or Cursor, it's worth [exploring our packages](https://launchstudio.eu/en/#packages) to see what a routing and notification audit involves before a request goes quiet on you the way it did for Roos.
 
+## Reassigning a Contractor Doesn't Re-Route What's Already Open
+
+The fallback rule and the stale-request digest close the gap for a property that never had a contractor assigned in the first place. There's an adjacent case they don't automatically cover: a property that did have a contractor, has several requests already open and routed correctly, and then loses that contractor — a falling-out, a dropped relationship, a contractor who simply stops responding. Those already-open requests were notified correctly at the time they were created. The fallback rule doesn't trigger for them, because on paper they do have a contractor on record; it's just that the contractor is no longer checking that inbox. The requests keep aging, technically "assigned," while nobody real is looking at them.
+
+The fix is to treat a contractor change as an event that sweeps existing open requests, not just something that affects requests created afterward:
+
+```
+When a property's assigned contractor changes:
+  1. Find every request for that property still marked "open" or "in progress"
+  2. Re-route each one to the new contractor's inbox and dashboard
+  3. Flag them as "reassigned" so the new contractor knows these weren't originally theirs
+  4. Send a fresh notification — don't rely on the original one as the last word
+```
+
+Without this sweep, a landlord can fix the routing for every future request and still have a handful of older ones quietly stuck with a contractor who's already gone.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Request With No Address to Go To
@@ -88,6 +104,10 @@ Usually a fallback routing rule that sends unassigned requests directly to the o
 
 Yes — this kind of workflow and notification logic is a regular part of the work handled through Manifera's development center in Ho Chi Minh City, drawing on the team's experience across 160+ delivered projects.
 
+### What happens to requests that were already open when a property's contractor changes?
+
+Unless the system explicitly sweeps for them, nothing — they stay routed to the old contractor's inbox, technically "assigned" on paper even though nobody is actually checking that inbox anymore. A contractor change needs to trigger a re-route of every open request tied to that property, not just affect requests created afterward.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,6 +137,11 @@ Yes — this kind of workflow and notification logic is a regular part of the wo
       "@type": "Question",
       "name": "Does LaunchStudio's engineering team have experience with workflow and notification systems?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes, this kind of workflow and notification logic is regularly handled through Manifera's development center in Ho Chi Minh City, across the team's 160+ delivered projects." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to requests that were already open when a property's contractor changes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Unless the system explicitly sweeps for them, nothing — they stay routed to the old contractor's inbox, technically assigned on paper even though nobody is actually checking it. A contractor change needs to trigger a re-route of every open request tied to that property." }
     }
   ]
 }

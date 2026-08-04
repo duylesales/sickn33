@@ -51,6 +51,30 @@ Getting this right requires roster submission logic that runs a live validation 
 
 Manifera's engineering center on Pho Quang Street in Ho Chi Minh City has handled backend logic work of this kind for a range of clients, and the same discipline applies whether the deadline is a corporate rollout or a Saturday morning kickoff. If you're unsure whether your own app has this exact gap, [talk to an engineer who understands AI-generated code](https://launchstudio.eu/en/#contact) before your league finds out for you.
 
+## Eligibility Can Change Between Submission and Kickoff
+
+A validation check at the moment of roster submission is a snapshot, not a guarantee — and rosters are often submitted days before a match is actually played. A disciplinary committee can issue a suspension on a Thursday for an incident reviewed after a prior weekend's games, well after a team manager submitted their roster on Wednesday. A transfer can be approved or rejected in that same window. If the system only ever checks eligibility once, at the moment of submission, a roster that was fully valid when it was built can quietly become invalid before the match starts, and nothing in the app will know.
+
+The fix is treating eligibility as something that needs re-checking, not just checking once well:
+
+```
+async function revalidateRosterBeforeKickoff(matchId) {
+  const roster = await db.rosters.findOne({ matchId });
+  const flagged = [];
+
+  for (const playerId of roster.playerIds) {
+    const eligible = await checkEligibility(playerId, matchId);
+    if (!eligible) flagged.push(playerId);
+  }
+
+  if (flagged.length > 0) {
+    await notifyTeamManager(matchId, flagged);
+  }
+}
+```
+
+This runs as a scheduled pass a few hours before kickoff, and separately whenever a suspension or transfer record changes after a roster has already been submitted — so a late-arriving disciplinary ruling gets flagged to the team manager directly, instead of surfacing for the first time as a post-match protest.
+
 ## Real example
 
 ### An AI-Native Founder in Action: A Badge That Didn't Actually Stop Anything
@@ -86,6 +110,10 @@ LaunchStudio's engineers, backed by Manifera's experience across 160+ delivered 
 
 No — it's typically a targeted backend fix to the specific action (like roster submission) that's missing validation, layered onto your existing Cursor-built frontend without changing how it looks or feels.
 
+### What if a suspension is issued after a roster has already passed the eligibility check?
+
+A one-time check at submission only reflects what was true at that moment — a defensible system re-validates rosters against any eligibility record that changes afterward, and again on a scheduled pass closer to kickoff, so a late disciplinary ruling or transfer decision doesn't slip through a check that already passed days earlier.
+
 ### Does LaunchStudio work with sports and league management platforms specifically?
 
 LaunchStudio doesn't specialize in one vertical — Manifera's engineers, including the team at its Ho Chi Minh City development center, apply the same rigorous review process to any AI-built prototype, regardless of industry.
@@ -114,6 +142,11 @@ LaunchStudio doesn't specialize in one vertical — Manifera's engineers, includ
       "@type": "Question",
       "name": "Is this the kind of fix that requires rebuilding my whole app?",
       "acceptedAnswer": { "@type": "Answer", "text": "No — it's typically a targeted backend fix layered onto your existing frontend without changing how it looks or feels." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a suspension is issued after a roster has already passed the eligibility check?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A one-time check at submission only reflects what was true at that moment — a defensible system re-validates rosters against any eligibility record that changes afterward, and again on a scheduled pass closer to kickoff." }
     },
     {
       "@type": "Question",

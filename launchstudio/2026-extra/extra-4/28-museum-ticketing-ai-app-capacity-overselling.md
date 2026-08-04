@@ -51,6 +51,30 @@ Fixing this requires the purchase flow to treat "check availability and reserve 
 
 LaunchStudio brings Manifera's enterprise-grade engineering to exactly this kind of concurrency problem — the sort of thing that's routine in enterprise inventory and booking systems but easy to miss in a fast AI-generated build. The review itself is coordinated out of Manifera's Amsterdam office at Herengracht 420, where the client-facing engineering team scopes exactly which parts of a booking flow need this kind of locking before anything gets touched. You can review what a full pre-launch audit covers on the [LaunchStudio homepage](https://launchstudio.eu/en/), and for background on the kind of production systems Manifera's engineers have built this pattern into before, see the team's [portfolio](https://www.manifera.com/portfolio/).
 
+## A Reservation Hold That Never Expires Just Trades Overselling for Underselling
+
+Locking inventory and placing a short hold during checkout stops the race condition, but it introduces a new failure mode if the hold has no expiry: a buyer who reaches checkout, holds the last few tickets, and then closes the tab, lets their card fail, or simply abandons the purchase leaves that inventory locked indefinitely. If nothing releases the hold, those tickets are effectively unsellable — showing as "reserved" forever even though no purchase is ever going to complete. On a popular event, a handful of abandoned checkouts can quietly turn a real sellout into a false one, with paying customers turned away from a room that actually still has open seats.
+
+The fix that closes the overselling bug only holds up if every reservation carries a short, enforced expiry, with a background process (or the database's own mechanism) responsible for releasing it automatically:
+
+```
+function reserveTicket(eventId, userId) {
+  const hold = acquireLock(eventId, userId, { ttlSeconds: 300 });
+  if (!hold) return { success: false, reason: "sold_out_or_contended" };
+  return { success: true, holdId: hold.id, expiresAt: hold.expiresAt };
+}
+
+// Runs continuously in the background
+function releaseExpiredHolds() {
+  const expired = findHoldsPastExpiry();
+  for (const hold of expired) {
+    releaseLock(hold.eventId, hold.id);
+  }
+}
+```
+
+Five minutes is a reasonable starting point for a checkout hold — long enough for a real buyer to complete payment, short enough that an abandoned cart doesn't meaningfully dent availability. The specific number matters less than making sure one exists at all: a locking mechanism without an expiry solves the overselling problem on opening weekend and quietly creates an underselling problem every ordinary day after it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: Six extra tickets to a sold-out room
@@ -92,6 +116,10 @@ Load testing that simulates multiple simultaneous purchase attempts against the 
 
 Yes — Manifera's 120+ engineers have built inventory and booking systems for enterprise clients where concurrency-safe transaction handling is a baseline requirement, and that experience is what LaunchStudio applies to founder-built apps.
 
+### Can fixing the overselling bug create a new problem?
+
+Yes, if the reservation hold used to lock tickets during checkout never expires — abandoned carts and failed payments then leave inventory permanently locked, making an event look sold out when it isn't, which is why every hold needs a short, enforced expiry with an automatic release process.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +149,11 @@ Yes — Manifera's 120+ engineers have built inventory and booking systems for e
       "@type": "Question",
       "name": "Has Manifera's team dealt with concurrency issues like this outside of ticketing?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — Manifera's 120+ engineers have built inventory and booking systems for enterprise clients where concurrency-safe transaction handling is a baseline requirement." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can fixing the overselling bug create a new problem?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the reservation hold used to lock tickets during checkout never expires — abandoned carts and failed payments then leave inventory permanently locked, making an event look sold out when it isn't, which is why every hold needs a short, enforced expiry with an automatic release process." }
     }
   ]
 }

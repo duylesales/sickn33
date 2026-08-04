@@ -64,6 +64,18 @@ A brand-new sending domain has no reputation history with mail providers, which 
 
 Our team, working out of Ho Chi Minh City where LaunchStudio handles a significant share of backend and integration setup, treats email authentication as a standard pre-launch checklist item — not because it's complicated, but because it's invisible until it silently costs a founder their first impression with a customer. If your transactional emails have never been checked against a spam-scoring tool, [our process](https://launchstudio.eu/en/#process) includes exactly that kind of verification before launch.
 
+## A Newsletter Send Can Quietly Tank Your Receipt Emails
+
+SPF, DKIM, and DMARC fix the authentication problem, but there's a second, less obvious way transactional deliverability breaks: sharing a sending domain between transactional email (receipts, password resets, confirmations) and bulk marketing email (newsletters, product announcements). Mail providers track sending reputation per domain, not per email type — so a marketing campaign with an elevated spam-complaint or bounce rate drags down the reputation of every email sent from that domain, including the password reset a customer is waiting on right now.
+
+```
+; Separate subdomains keep reputations independent
+TXT  mail.yourapp.com       "v=spf1 include:_spf.resend.com ~all"   ; transactional
+TXT  news.yourapp.com       "v=spf1 include:_spf.mailchimp.com ~all" ; marketing
+```
+
+The fix is subdomain separation: transactional email sends from one subdomain (`mail.yourapp.com`), marketing sends from a different one (`news.yourapp.com`), each with its own SPF and DKIM records and its own reputation history. A poorly-targeted newsletter can then tank its own subdomain's deliverability without ever touching the receipts and confirmations your product depends on to feel like it's working. This is a five-minute DNS decision if it's made before either sending stream starts — and a much bigger untangling job once a single shared domain's reputation has already been damaged by a marketing send gone wrong.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Booking Confirmations Nobody Saw
@@ -105,6 +117,10 @@ Reputation typically improves over the first few weeks of consistent, low-compla
 
 Yes — deliverability review is part of the same production-readiness discipline Manifera applies across engagements of every size, including for enterprise clients, since even an established sending domain can develop deliverability problems after a provider migration or DNS change.
 
+### Can a bad marketing email campaign really affect whether my password reset emails get delivered?
+
+Yes, if they share the same sending domain — mail providers track reputation per domain, so a newsletter with high spam complaints can drag down transactional deliverability too, which is why separating transactional and marketing email onto different subdomains, each with its own SPF/DKIM setup, keeps one from affecting the other.
+
 Talk to an engineer who understands AI-generated code — [describe your project here](https://launchstudio.eu/en/#contact) and we'll respond within one business day.
 
 For more on how Manifera builds reliable backend infrastructure end to end, see [Manifera's web app development services](https://www.manifera.com/services/web-app-develop/).
@@ -138,6 +154,11 @@ For more on how Manifera builds reliable backend infrastructure end to end, see 
       "@type": "Question",
       "name": "Does Manifera handle email deliverability for larger, established SaaS products too?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — deliverability review is part of the same production-readiness discipline Manifera applies across engagements of every size, including for enterprise clients, since even an established sending domain can develop deliverability problems after a provider migration or DNS change." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a bad marketing email campaign really affect whether my password reset emails get delivered?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if they share the same sending domain — mail providers track reputation per domain, so separating transactional and marketing email onto different subdomains keeps one from affecting the other." }
     }
   ]
 }

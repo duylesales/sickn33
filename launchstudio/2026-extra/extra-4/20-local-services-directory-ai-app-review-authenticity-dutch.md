@@ -52,6 +52,18 @@ De oplossing is om het recht op een recensie direct te koppelen aan een voltooid
 
 Stuur de beoordelingsstroom van uw directory naar LaunchStudio voor een gratis technisch onderzoek via [onze contactpagina](https://launchstudio.eu/en/#contact). Voor hoe Manifera vertrouwens- en verificatiesystemen op ondernemingsniveau benadert, zie ons [portfolio](https://www.manifera.com/portfolio/).
 
+## Geverifieerd betekent niet gescreend: De mazen van de minimale boeking
+
+Een verificatiemodel dat vereist dat een gebruiker een dienst boekt voordat hij een beoordeling kan achterlaten, sluit de meeste spambots uit. Er blijft een maas in de wet als de minimale boekingswaarde of -duur niet is vastgelegd — een nepaccount kan een minimale afspraak van 5 minuten boeken voor een symbolisch bedrag, uitsluitend om een valse 5-sterrenbeoordeling achter te laten.
+
+Het beperken van beoordelingsrechten tot voltooide, wezenlijke boekingen voorkomt deze manipulatie:
+
+```javascript
+function canLeaveReview(booking) {
+  return booking.status === 'completed' && booking.totalAmount >= MINIMUM_REVIEW_THRESHOLD;
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native oprichter in actie: de recensies die een concurrent schreef
@@ -93,6 +105,7 @@ De meeste directory's zijn beter gediend door de mogelijkheid te verwijderen om 
 
 Ja – Singapore is LaunchStudio's hub voor Zuidoost-Azië, en vertrouwens- en verificatiesystemen voor directory's en tweezijdige marktplaatsen zijn een terugkerend aandachtspunt voor de daar gevestigde ingenieurs.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,42 +113,42 @@ Ja – Singapore is LaunchStudio's hub voor Zuidoost-Azië, en vertrouwens- en v
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why don't AI website builders like v0 add review verification by default?",
+      "name": "Waarom voegen AI-websitebouwers zoals v0 standaard geen beoordelingsverificatie toe?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "'Add a reviews section' is typically interpreted as a display feature, not an access-control feature \u2014 verifying a reviewer completed a booking requires connecting reviews to the booking database, which isn't implied unless specified."
+        "text": "Omdat 'een recensie-sectie toevoegen' doorgaans wordt geïnterpreteerd als een weergavefunctie en niet als een toegangscontrolefunctie. Om te verifiëren dat een recensent een boeking heeft voltooid, moet het beoordelingssysteem worden verbonden met de boekingsdatabase, wat niet wordt geïmpliceerd tenzij expliciet gespecificeerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Can fabricated reviews really come from competitors, or is that rare?",
+      "name": "Kunnen verzonnen beoordelingen echt van concurrenten komen, of is dat zeldzaam?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It happens more often than most founders expect, especially in local services categories where providers compete directly for the same nearby customers."
+        "text": "Het gebeurt vaker dan de meeste oprichters verwachten, vooral in lokale dienstencategorieën waar aanbieders rechtstreeks concurreren om dezelfde klanten in de buurt en een beschadigde reputatie een onmiddellijke, meetbare zakelijke impact heeft."
       }
     },
     {
       "@type": "Question",
-      "name": "What does Herre Roelevink say about this kind of risk?",
+      "name": "Wat zegt Herre Roelevink over dit soort risico's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He frames it as the core shift founders face: generating the idea is easy now, but the architecture and security that make it trustworthy at maturity is the harder problem \u2014 review authenticity is a direct example."
+        "text": "Hij formuleert het als de kern van de verschuiving waarmee de oprichters worden geconfronteerd: het genereren van het idee voor een platform is nu eenvoudig, maar de architectuur en beveiliging die het op volwassen leeftijd betrouwbaar maken, is het moeilijkere, waardevollere probleem: de authenticiteit van beoordelingen is een direct voorbeeld van die kloof."
       }
     },
     {
       "@type": "Question",
-      "name": "Is a 'Verified Booking' badge enough, or should unverified reviews be removed entirely?",
+      "name": "Is een badge 'Geverifieerde boeking' voldoende of moeten niet-geverifieerde beoordelingen volledig worden verwijderd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most directories are better served by removing the ability to post unverified reviews going forward while auditing existing ones case-by-case, since retroactively deleting all historical reviews can also remove genuine feedback."
+        "text": "De meeste directory's zijn beter gediend door de mogelijkheid te verwijderen om niet-geverifieerde beoordelingen te plaatsen, terwijl bestaande beoordelingen van geval tot geval worden gecontroleerd, aangezien het met terugwerkende kracht verwijderen van alle historische beoordelingen ook echte feedback kan verwijderen."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio's Singapore team work with directory and marketplace founders specifically?",
+      "name": "Werkt het team van LaunchStudio in Singapore specifiek met oprichters van directory's en marktplaatsen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 Singapore is LaunchStudio's Southeast Asia hub, and trust and verification systems for directories and two-sided marketplaces are a recurring focus there."
+        "text": "Ja – Singapore is LaunchStudio's hub voor Zuidoost-Azië, en vertrouwens- en verificatiesystemen voor directory's en tweezijdige marktplaatsen zijn een terugkerend aandachtspunt voor de daar gevestigde ingenieurs."
       }
     }
   ]

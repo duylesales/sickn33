@@ -47,6 +47,30 @@ This is the kind of platform-specific requirement that has nothing to do with wh
 
 Before your next submission, it's worth having someone [walk through your app against Apple's actual checklist](https://launchstudio.eu/en/#contact) rather than finding out the hard way a second time.
 
+## Deleting the Account Doesn't Cancel the Subscription
+
+Once account deletion is built correctly — data purged, tokens revoked — there's a second requirement that's easy to assume is covered by the same fix and isn't. If your app sells access through Apple's or Google's in-app purchase system, that subscription is billed and managed directly by Apple or Google, not by your own backend. Your app's deletion flow can purge every row tied to that user and still have zero effect on whether they keep getting charged, because canceling a recurring platform subscription is an action only the platform (or the user, through platform settings) can actually take.
+
+This is exactly the kind of gap that produces a support inbox full of "I deleted my account and you're still charging me" messages, and it's also a separate App Store requirement from the deletion guideline itself — Apple's rules for subscription apps require a clear, functional path for a user to actually cancel their subscription, whether that's an in-app cancellation flow or a direct link to the platform's own subscription management screen. An AI-generated deletion flow has no reason to know this distinction exists unless someone builds it in deliberately:
+
+```
+async function deleteAccount(userId) {
+  await purgeUserData(userId);
+  await revokeSignInWithAppleToken(userId);
+  await markAccountDeleted(userId);
+
+  // Deleting the account does NOT cancel an active App Store or
+  // Play Store subscription — that billing relationship is owned
+  // by Apple/Google directly and needs its own clear path.
+  showSubscriptionCancellationNotice({
+    ios: 'itms-apps://apps.apple.com/account/subscriptions',
+    android: 'https://play.google.com/store/account/subscriptions',
+  });
+}
+```
+
+Without that explicit step, a user can walk away believing they've fully left the app while a recurring charge keeps landing on their card every month — which shows up as a refund request, a chargeback, or a one-star review, not as a bug report anyone can trace back to the deletion flow itself.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Pet App That Forgot One Screen
@@ -86,6 +110,10 @@ LaunchStudio is backed by Manifera's team of 120+ engineers, several of whom hav
 
 Google Play has a similar account and data deletion requirement, and LaunchStudio's Ho Chi Minh City-based engineering team checks both platforms' current guidelines as part of a pre-launch review, since the two stores' requirements aren't identical.
 
+### If a user deletes their account, does that also cancel their App Store or Play Store subscription?
+
+No — in-app purchase subscriptions are billed and managed directly by Apple or Google, not by the app's own backend, so deleting the account only removes the app's data. The app needs a separate, clearly accessible path directing users to their platform's subscription settings, or they can keep getting charged after believing they've left.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +143,11 @@ Google Play has a similar account and data deletion requirement, and LaunchStudi
       "@type": "Question",
       "name": "Does this apply to apps built for Android too?",
       "acceptedAnswer": { "@type": "Answer", "text": "Google Play has a similar account and data deletion requirement, and LaunchStudio's Ho Chi Minh City team checks both platforms' current guidelines during a pre-launch review." }
+    },
+    {
+      "@type": "Question",
+      "name": "If a user deletes their account, does that also cancel their App Store or Play Store subscription?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, in-app purchase subscriptions are billed and managed directly by Apple or Google, not by the app's own backend, so deleting the account only removes the app's data. The app needs a separate, clearly accessible path to the platform's subscription settings, or users can keep getting charged after believing they've left." }
     }
   ]
 }

@@ -1,21 +1,22 @@
 ---
-Titel: "AI-gebouwde Sports League-apps: de bug voor deelname aan de selectie die opduikt bij de slechtste wedstrijd"
+Titel: "Met AI gebouwde sportcompetitie-apps: De speelgerechtigdheidsfout die bij de belangrijktste wedstrijd naar boven komt"
 Trefwoorden: ai app, build ai, sports league management software, roster management app, ai for sports leagues
-Koperfase: Bewustzijn
-Doelgroep: AI-Native oprichter (niet-technisch)
+Koperfase: Bewustwording
+Doelgroep: AI-Native Oprichter (Niet-Technisch)
 ---
-# AI-gebouwde Sports League-apps: de bug voor deelname aan de selectie die opduikt bij de slechtste wedstrijd
+
+# Met AI gebouwde sportcompetitie-apps: De speelgerechtigdheidsfout die bij de belangrijktste wedstrijd naar boven komt
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-gebouwde Sports League-apps: de bug voor deelname aan de selectie die opduikt bij de slechtste wedstrijd",
-  "description": "Waarom opschortings- en geschiktheidsvlaggen in AI-gegenereerde sportcompetitiesoftware er vaak niet in slagen een selectieactie daadwerkelijk te blokkeren, en hoe je dat gat kunt dichten voordat het een echte wedstrijd kost.",
+  "headline": "Met AI gebouwde sportcompetitie-apps: De speelgerechtigdheidsfout die bij de belangrijktste wedstrijd naar boven komt",
+  "description": "Waarom schorsings- en speelgerechtigdheidsmarkeringen in door AI gegenereerde sportcompetisiesoftware vaak niet daadwerkelijk een opstelling blokkeren, en hoe u die leemte dicht.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -25,69 +26,93 @@ Doelgroep: AI-Native oprichter (niet-technisch)
   "datePublished": "2026-07-22",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/sports-league-ai-app-roster-eligibility-bug"
+    "@id": "https://launchstudio.eu/nl/blog/sports-league-ai-app-roster-eligibility-bug"
   }
 }
 </script>
 
-Het is vrijdagavond en een clubsecretaris dient een formeel protest in. Niet over een scheidsrechtersbeslissing – over een speler. Hij controleert een spelregelboek, een afdruk van een wedstrijddagrooster en een app die deze exacte situatie onmogelijk had moeten maken. Dat gebeurde niet.
+Het is vrijdagavond en een clubsecretaris dient een officieel protest in. Niet over een beslissing van de scheidsrechter — maar over een speler. Hij controleert een reglement, een uitgedrukte wedstrijdopstelling en een app die precies deze situatie onmogelijk zou moeten maken. Dat deed het niet.
 
-## Deelnameregels zien er eenvoudig uit totdat een echt seizoen ze op de proef stelt
+## Regels voor speelgerechtigdheid lijken eenvoudig totdat een echt seizoen ze test
 
-Amateursportcompetities gelden op basis van deelnameregels: een speler die twee wedstrijden is geschorst, kan niet worden uitgekozen voor die twee wedstrijden, een speler die bij een club is geregistreerd, kan niet nog eens halverwege het seizoen uitkomen, een speler onder de 18 jaar kan niet worden ingezet in een seniorenwedstrijd. Op papier lijkt dit een simpele booleaanse waarde: geschikt of niet. In de praktijk is het een regel die moet worden gehandhaafd op het exacte moment dat een teammanager zijn wedstrijdselectie samenstelt, en niet alleen als status ergens in het profiel van een speler wordt weergegeven.
+Amateursportcompetities draaien op regels voor speelgerechtigdheid: een speler die voor twee wedstrijden is geschorst kan niet worden geselecteerd voor die twee wedstrijden, een speler die bij de ene club geregistreerd staat kan halverwege het seizoen niet voor een andere uitkomen, en een speler onder de 18 mag niet in een seniorenopstelling worden opgesteld. Op papier lijkt dit een eenvoudige boolean — gerechtigd of niet. In de praktijk is het een regel die moet worden afgedwongen op het exacte moment dat een teammanager zijn wedstrijdselectie samenstelt.
 
-Dit is waar veel door AI gebouwde apps voor competitiebeheer stilletjes tekortschieten. Een tool als Cursor kan een spelersprofielpagina genereren waarop een rode "geschorste" badge naast de naam van een speler wordt weergegeven - en die badge is echt nuttig, tot het moment dat het roosterbouwerscherm die vlag niet daadwerkelijk controleert voordat de speler wordt toegevoegd. De badge is een displayfunctie. Het blokkeren van de actie is een bedrijfslogische functie. Ze zijn anders gebouwd, en het is heel goed mogelijk om de een zonder de ander te verzenden, omdat de demo waarin je een selectie samenstelt met alle in aanmerking komende spelers nooit de kloof blootlegt.
+Dit is waar veel met AI gebouwde competitiebeheer-apps stilletjes tekortschieten. Een tool zoals Cursor kan een spelersprofielpagina genereren die een rode badge "geschorst" naast de naam van een speler toont — en die badge is echt nuttig, tot het moment dat het opstellingsscherm die markering niet controleert voordat de speler kan worden toegevoegd. De badge is een weergavefunctie. Het blokkeren van de actie is een bedrijfslogicafunctie.
 
 ## Waarom deze bug erger is dan de meeste
 
-De meeste softwarefouten kosten u tijd of geld. Deze kost een team achteraf een wedstrijd voor een tegenstander en een disciplinaire commissie van de competitie. Zodra een protest is ingediend en is bevestigd dat een geschorste speler heeft gespeeld, passen de meeste amateurcompetities een automatische verbeurdverklaring toe: de uitslag wordt vernietigd, ongeacht wat er op het veld is gebeurd. Dat is een reëel gevolg voor spelers die de hele week hebben getraind, voor een coach die een spelplan heeft opgesteld, en voor de positie van een club in de ranglijst. Het is ook een zichtbare, gênante mislukking voor de app zelf, precies op het moment dat de club er het meeste vertrouwen in moest hebben.
+De meeste softwarebugs kosten u tijd of geld. Deze kost een team een wedstrijd, achteraf, ten overstaan van een tegenstander en een tuchtcommissie. Zodra er een protest is ingediend en is bevestigd dat er een geschorste speler heeft gespeeld, passen de meeste amateurcompetities een automatische reglementaire nederlaag toe. Dat is een echt gevolg voor spelers die de hele week hebben getraind, en een zichtbare fout voor de app zelf.
 
-Het diepere probleem is dat geschiktheid niet één regel is, maar meerdere regels, die met elkaar in wisselwerking staan. Een schorsing heeft een begin- en einddatum. Een transferperiode verandert tot welke club een speler behoort. Een leeftijdsgroepregel is afhankelijk van een geboortedatum en de specifieke competitie. Een goed gebouwd systeem controleert dit allemaal op het moment dat de roosters worden ingediend, niet alleen tijdens de profielweergave, en blokkeert de indiening direct als er een regel wordt overtreden - met een duidelijke boodschap waarin wordt uitgelegd waarom, zodat de teammanager niet hoeft te raden.
+Het diepere probleem is dat speelgerechtigdheid niet één regel is — het zijn er meerdere die met elkaar communiceren. Een schorsing heeft een start- en einddatum. Een transfervenster veranderd van welke club een speler is. Een leeftijdsgroepsregel hangt af van een geboortedatum en de specifieke competitie. Eén goed gebouwd systeem controleert al deze punten bij het indienen van de opstelling, en niet alleen bij het weergeven van het profiel.
 
-## Wat er nodig is om geschiktheidscontroles op te zetten die daadwerkelijk standhouden
+## Wat er nodig is om speelgerechtigdheidscontroles te bouwen die echt standhouden
 
-Om dit goed te doen, is logica voor het indienen van roosters vereist die een live validatiepas uitvoert voor elke toegevoegde speler – waarbij schorsingsdata, transferstatus en leeftijdsgroepregels worden vergeleken met de specifieke competitie en speeldag – en wordt de inzending met een specifieke reden afgewezen als er iets mislukt. Het is op zichzelf geen grote functie, maar het moet correct tussen de spelersdatabase en de interface voor het opbouwen van selecties passen, wat precies het soort integratiewerk is dat overhaast wordt uitgevoerd bij een snelle AI-build. Achter LaunchStudio staat Manifera's team van meer dan 120 doorgewinterde ingenieurs, en deze categorie van "de weergave klopt, maar de handhaving is niet" is er een die ze voortdurend tegenkomen in heel verschillende industrieën - omdat het een patroon is in de manier waarop prototypingtools worden gebouwd, en niet een eenmalige fout.
+Om dit goed te krijgen, is er logica voor het indienen van opstellingen nodig die een live validatie uitvoert voor elke toegevoegde speler — het controleren van schorsingsdata, transferstatus en leeftijdsgroepsregels tegen de specifieke competitie — en het indienen weigert met een specifieke reden als er iets misgaat. Achter LaunchStudio staat Manifera's team van 120+ ervaren ingenieurs, en deze categorie van bugs is iets wat ze voortdurend zien.
 
-Het engineeringcentrum van Manifera aan Pho Quang Street in Ho Chi Minh-stad heeft dit soort backend-logicawerk voor een reeks klanten afgehandeld, en dezelfde discipline is van toepassing, ongeacht of de deadline een bedrijfsuitrol is of een aftrap op zaterdagochtend. Als u niet zeker weet of uw eigen app precies dit hiaat heeft, [praat dan met een ingenieur die de door AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact) voordat uw competitie dit voor u ontdekt.
+Manifera's ontwikkelcentrum aan de Pho Quang-straat in Ho Chi Minh-stad heeft backend-logica van dit type voor diverse klanten behandeld. Als u niet zeker weet of uw eigen app deze leemte vertoont, [spreek dan met een ingenieur](https://launchstudio.eu/en/#contact).
+
+## Speelgerechtigdheid kan veranderen tussen indienen en aftrap
+
+Een validatiecontrole op het moment van het indienen van de opstelling is een momentopname, geen garantie — opstellingen worden vaak dagen voor een wedstrijd ingediend. Een tuchtcommissie kan op donderdag een schorsing opleggen voor een incident na de wedstrijden van het vorige weekend, lang nadat een teammanager op woensdag zijn opstelling heeft ingediend.
+
+De oplossing is om speelgerechtigdheid te behandelen als iets dat opnieuw moet worden gecontroleerd:
+
+```javascript
+async function revalidateRosterBeforeKickoff(matchId) {
+  const roster = await db.rosters.findOne({ matchId });
+  const flagged = [];
+
+  for (const playerId of roster.playerIds) {
+    const eligible = await checkEligibility(playerId, matchId);
+    if (!eligible) flagged.push(playerId);
+  }
+
+  if (flagged.length > 0) {
+    await notifyTeamManager(matchId, flagged);
+  }
+}
+```
+
+Dit draait als een geplande controle een paar uur voor de aftrap, en afzonderlijk telkens wanneer een schorsings- of transferrecord wijzigt nadat er al een opstelling is ingediend.
 
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: een badge die eigenlijk niets tegenhield
+### Een AI-native oprichter in actie: Een badge die niets tegenhield
 
-Kaylee Smit, een oprichter uit Breda, bouwde CompetitieBeheer, een app voor het beheer van amateursportcompetities, met behulp van Cursor. De app verwerkte de wedstrijdplanning, het klassement en de spelersregistratie goed, en bevatte een badge met de schorsingsstatus die duidelijk op het profiel van een speler te zien was. Wat het niet deed, was de schorsingsstatus controleren toen een teammanager zijn wedstrijddagrooster opstelde. Het roosterbouwerscherm werd uit de volledige lijst met clubspelers gehaald zonder enige verwijzing naar actieve schorsingen.
+Kaylee Smit, een oprichter in Breda, bouwde CompetitieBeheer — een beheersapp voor amateursportcompetities — met behulp van Cursor. De app verwerkte wedstrijdschema's, standen en spelersregistratie goed, en bevatte een schorsingsstatusbadge die duidelijk op het profiel van een speler werd weergegeven. Wat het niet deed, was die schorsingsstatus controleren wanneer een teammanager zijn wedstrijdselectie samenstelde.
 
-Een teammanager, die niet wist dat een speler een schorsing van één wedstrijd uitzat, voegde hem toe aan de wedstrijddagselectie. Hij speelde de volledige wedstrijd. De tegenpartij, die op de hoogte was van de opschorting van een voorafgaande tuchtmaatregel, diende na de wedstrijd een formeel protest in. De competitiecommissie beoordeelde de zaak en paste automatisch een verbeurdverklaring toe, waardoor een resultaat dat het team op het veld had behaald, ongedaan werd gemaakt. Kaylee bracht CompetitieBeheer daarna naar LaunchStudio. Ingenieurs hebben de stroom voor het indienen van de selectie opnieuw opgebouwd om een ​​live geschiktheidscontrole uit te voeren op basis van opschortingsdata, transferstatus en leeftijdsgroepregels op het moment dat een speler wordt toegevoegd, waarbij de inzending met een specifieke reden wordt geblokkeerd als een regel mislukt, in plaats van te vertrouwen op een passieve statusbadge.
+Een teammanager, die zich er niet van bewust was dat een speler een schorsing van één wedstrijd uitzat, voegde hem toe aan de wedstrijdselectie. Hij speelde de gehele wedstrijd. De tegenpartij diende na de wedstrijd een officieel protest in. De competitiecommissie beoordeelde de zaak en paste een automatische reglementaire nederlaag toe. Kaylee bracht CompetitieBeheer daarna naar LaunchStudio. Ingenieurs herbouwden de stroom voor het indienen van opstellingen om op het moment dat een speler wordt toegevoegd een live controle uit te voeren.
 
-**Resultaat:** CompetitieBeheer blokkeert nu niet-geschikte spelers op het moment dat de selectie wordt ingediend in al zijn pilotcompetities, en geen enkele club die het bijgewerkte systeem gebruikt, heeft sinds de release van de oplossing te maken gekregen met een verlies vanwege een toezicht op de geschiktheid.
+**Resultaat:** CompetitieBeheer blokkeert nu niet-speelgerechtigde spelers op het moment van het indienen van de opstelling in al haar pilotcompetities.
 
-> *"De badge stond precies op het scherm. Iedereen ging ervan uit dat dit betekende dat het systeem ons beschermde. Dat was niet het geval. Het liet ons alleen maar informatie zien en vertrouwde erop dat een mens er elke keer correct naar zou handelen, wat uiteindelijk uiteraard niet gebeurde."*
-> — **Kaylee Smit, Oprichter CompetitieBeheer (Breda)**
+> *"De badge stond er op het scherm. Niemand dacht er bij na dat het systeem ons niet beschermde."*
+> — **Kaylee Smit, Oprichter, CompetitieBeheer (Breda)**
 
-**Kosten en tijdlijn:** € 480 (logica voor geschiktheidsvalidatie voor opschortings-, overdrachts- en leeftijdsgroepregels) — voltooid in 3 werkdagen.
+**Kosten & Tijdlijn:** € 480 (opstellingsvalidatielogica voor schorsings-, transfer- en leeftijdsgroepsregels) — voltooid in 3 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom zou een app een schorsingsbadge tonen, maar toch toestaan ​​dat een geschorste speler aan een selectie wordt toegevoegd?
+### Waarom zou een app een schorsingsbadge tonen, maar toch toestaan dat een geschorste speler aan een selectie wordt toegevoegd?
 
-Omdat het weergeven van een status en het afdwingen van een regel twee afzonderlijke stukjes logica zijn: een badge is een alleen-lezen weergavefunctie, terwijl het blokkeren van een roosterinzending actieve validatielogica vereist op het exacte punt van die actie, die prototypingtools niet automatisch bouwen.
+Omdat het weergeven van een status en het afdwingen van een regel twee afzonderlijke stukjes logica zijn: een badge is een alleen-lezen weergavefunctie, terwijl het blokkeren van een roosterinzending actieve validatielogica vereist.
 
-### Kan dit soort bug van invloed zijn op andere regeltypen dan opschortingen?
+### Kan dit soort bug van invloed zijn op andere regeltypen dan schorsingen?
 
-Ja – dezelfde kloof komt vaak naar voren bij transferperiodes, geschiktheid voor leeftijdsgroepen en registratiebeperkingen voor meerdere clubs, aangezien het allemaal regels zijn die live moeten worden gecontroleerd in plaats van alleen maar te worden weergegeven.
+Ja – dezelfde kloof komt vaak naar voren bij transferperiodes, geschiktheid voor leeftijdsgroepen en registratiebeperkingen voor meerdere clubs.
 
 ### Hoe vindt LaunchStudio dit soort verborgen lacunes in de bedrijfslogica?
 
-De technici van LaunchStudio, ondersteund door de ervaring van Manifera in meer dan 160 opgeleverde projecten, beoordelen de daadwerkelijke gegevensstroom tussen uw database en uw gebruikersgerichte acties, en niet alleen de interface. Dit is de manier waarop bugs als deze alleen voor weergave worden onderschept voordat een echte gebruiker ze vindt.
+De technici van LaunchStudio beoordelen de daadwerkelijke gegevensstroom tussen uw database en uw gebruikersgerichte acties, en niet alleen de interface.
 
 ### Is dit het soort oplossing waarvoor ik mijn hele app opnieuw moet opbouwen?
 
-Nee. Het is doorgaans een gerichte backend-oplossing voor de specifieke actie (zoals het indienen van roosters) waarvoor validatie ontbreekt, gelaagd op uw bestaande, door Cursor gebouwde frontend zonder de manier waarop deze eruit ziet of aanvoelt te veranderen.
+Nee. Het is doorgaans een gerichte backend-oplossing voor de specifieke actie (zoals het indienen van roosters) waarvoor validatie ontbreekt.
 
-### Werkt LaunchStudio specifiek met platforms voor sport- en competitiebeheer?
+### Wat als er een schorsing wordt opgelegd nadat een opstelling al is goedgekeurd?
 
-LaunchStudio is niet gespecialiseerd in één branche: de ingenieurs van Manifera, waaronder het team van het ontwikkelingscentrum in Ho Chi Minh City, passen hetzelfde rigoureuze beoordelingsproces toe op elk door AI gebouwd prototype, ongeacht de branche.
+Een eenmalige controle weerspiegelt alleen wat op dat moment waar was — een verdedigbaar systeem her-valideert opstellingen tegen elk speelgerechtigdheidsrecord dat daarna wijzigt.
 
 <script type="application/ld+json">
 {
@@ -96,42 +121,42 @@ LaunchStudio is niet gespecialiseerd in één branche: de ingenieurs van Manifer
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why would an app show a suspension badge but still let a suspended player be added to a roster?",
+      "name": "Waarom zou een app een schorsingsbadge tonen, maar toch toestaan dat een geschorste speler aan een selectie wordt toegevoegd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Displaying a status and enforcing a rule are separate pieces of logic \u2014 a badge is read-only, while blocking a submission requires active validation at the point of that action, which prototyping tools don't build automatically."
+        "text": "Omdat het weergeven van een status en het afdwingen van een regel twee afzonderlijke stukjes logica zijn: een badge is een alleen-lezen weergavefunctie, terwijl het blokkeren van een roosterinzending actieve validatielogica vereist."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this kind of bug affect other rule types besides suspensions?",
+      "name": "Kan dit soort bug van invloed zijn op andere regeltypen dan schorsingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 the same gap commonly shows up with transfer windows, age-group eligibility, and multi-club registration restrictions."
+        "text": "Ja – dezelfde kloof komt vaak naar voren bij transferperiodes, geschiktheid voor leeftijdsgroepen en registratiebeperkingen voor meerdere clubs."
       }
     },
     {
       "@type": "Question",
-      "name": "How does LaunchStudio find this kind of hidden business-logic gap?",
+      "name": "Hoe vindt LaunchStudio dit soort verborgen lacunes in de bedrijfslogica?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio's engineers, backed by Manifera's experience across 160+ delivered projects, review the actual data flow between your database and user-facing actions, not just the interface."
+        "text": "De technici van LaunchStudio beoordelen de daadwerkelijke gegevensstroom tussen uw database en uw gebruikersgerichte acties, en niet alleen de interface."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this the kind of fix that requires rebuilding my whole app?",
+      "name": "Is dit het soort oplossing waarvoor ik mijn hele app opnieuw moet opbouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No \u2014 it's typically a targeted backend fix layered onto your existing frontend without changing how it looks or feels."
+        "text": "Nee. Het is doorgaans een gerichte backend-oplossing voor de specifieke actie waarvoor validatie ontbreekt."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio work with sports and league management platforms specifically?",
+      "name": "Wat als er een schorsing wordt opgelegd nadat een opstelling al is goedgekeurd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio doesn't specialize in one vertical \u2014 Manifera's engineers, including the team at its Ho Chi Minh City development center, apply the same review process to any AI-built prototype."
+        "text": "Een eenmalige controle weerspiegelt alleen wat op dat moment waar was — een verdedigbaar systeem her-valideert opstellingen tegen elk speelgerechtigdheidsrecord dat daarna wijzigt."
       }
     }
   ]

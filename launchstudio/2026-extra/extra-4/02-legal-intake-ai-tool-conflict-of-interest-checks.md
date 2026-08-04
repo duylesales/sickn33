@@ -49,6 +49,24 @@ Engineers based out of Manifera's Southeast Asia hub on Tras Street, Singapore, 
 
 If your intake tool is heading toward real clients, [see what a security and compliance review actually costs](https://launchstudio.eu/en/#calculator) before your first real conflict slips through.
 
+## A Conflict Check Is a Snapshot — the Database Keeps Moving
+
+A well-built conflict check answers one question correctly: does this new intake conflict with anything the firm already has on file, right now. What it doesn't automatically answer is a question that only comes up later — does a matter the firm opens next month conflict with a client it already cleared and onboarded weeks ago? A firm's client and matter database isn't static; it grows every week, and a conflict check that only runs once, at the moment a new client is onboarded, has no way to catch a conflict that only becomes real after the fact, when a new matter names a party who happens to be that earlier client's opposing side.
+
+Most AI-built intake tools that do get a conflict check built in treat it as a one-time gate on the intake form, because that's the literal request — check this new person against the database. Nobody asked what should happen when the database itself is the thing that changes next. The fix is to trigger the same fuzzy-match logic in the other direction: whenever a new matter or party is added anywhere in the system, it gets checked against everyone already onboarded, not just the other way around.
+
+```
+When a new matter is opened:
+  1. Extract every party named in it — client, opposing party, related entities
+  2. Run the same fuzzy-match check against all existing clients and matters,
+     not only against other new intakes
+  3. If a match above the confidence threshold turns up against an already-cleared
+     client, flag it for review instead of assuming past approval still holds
+  4. Log that the re-check ran, and what it found, alongside the original conflict record
+```
+
+Without this second trigger, a firm can pass every conflict check it ever runs at intake and still end up representing both sides of a dispute a few months later, simply because the second matter was the one that created the conflict, not the first.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Client Who Almost Wasn't
@@ -90,6 +108,10 @@ No — any intake tool that onboards new parties into a system with existing rel
 
 Much of this matching and risk-review work is handled by engineers connected to Manifera's Southeast Asia hub in Singapore, working alongside the broader Manifera security and compliance practice.
 
+### Does a conflict check only need to run once, when a client is first onboarded?
+
+No. A firm's client and matter database keeps growing after that first check runs, so a matter opened later can retroactively conflict with a client cleared weeks or months earlier. The check needs to re-run whenever a new matter or party enters the system, not just at the original intake moment.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +141,11 @@ Much of this matching and risk-review work is handled by engineers connected to 
       "@type": "Question",
       "name": "Where is the LaunchStudio team that typically handles this kind of compliance logic based?",
       "acceptedAnswer": { "@type": "Answer", "text": "Much of this work is handled by engineers connected to Manifera's Southeast Asia hub in Singapore, alongside Manifera's broader security practice." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a conflict check only need to run once, when a client is first onboarded?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A firm's client and matter database keeps growing after that first check runs, so a matter opened later can retroactively conflict with a client cleared weeks or months earlier. The check needs to re-run whenever a new matter or party enters the system, not just at the original intake moment." }
     }
   ]
 }

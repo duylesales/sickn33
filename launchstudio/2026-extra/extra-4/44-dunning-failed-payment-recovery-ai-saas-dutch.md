@@ -46,6 +46,24 @@ LaunchStudio brengt de hoogwaardige engineering van Manifera naar de grondlegger
 
 Als u nog nooit heeft berekend hoeveel van uw klantverloop bestaat uit stille kaartstoringen in plaats van echte annuleringen, schetst [onze pakkettenpagina](https://launchstudio.eu/en/#packages) wat een beoordeling van de veerkracht van de facturering doorgaans omvat.
 
+## De uitstelperiode heeft een eigen prijs — stel een expliciete limiet in
+
+Wanneer een abonnementsbetaling mislukt, bieden veel platforms een uitstelperiode (grace period) waarin de klant toegang behoudt tot de dienst terwijl er pogingen worden gedaan om het geld te innen. Als er geen harde limiet op deze periode zit, kan een gebruiker wekenlang gratis gebruikmaken van uw SaaS voordat het account wordt opgeschort.
+
+Stel een strikte vervaldatum in voor de uitstelperiode:
+
+```javascript
+function isAccessAllowed(subscription) {
+  if (subscription.status === 'active') return true;
+  if (subscription.status === 'past_due') {
+    const gracePeriodDays = 7;
+    const daysPastDue = (Date.now() - subscription.failedAt) / (1000 * 60 * 60 * 24);
+    return daysPastDue <= gracePeriodDays;
+  }
+  return false;
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de klinieksoftware die inkomsten aan het verliezen was, waar niemand naar keek
@@ -85,6 +103,7 @@ De technici van Manifera, die meer dan 160 projecten voor zakelijke klanten hebb
 
 Ja – aanmaningslogica wordt doorgaans bovenop bestaande Stripe-webhooks en abonnementsobjecten gelaagd, zodat er geen migratie van betalingsprocessors of het opnieuw opbouwen van de kassa nodig is.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +111,42 @@ Ja – aanmaningslogica wordt doorgaans bovenop bestaande Stripe-webhooks en abo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why doesn't my AI-generated Stripe integration retry failed payments automatically?",
+      "name": "Waarom probeert mijn AI-gegenereerde Stripe-integratie mislukte betalingen niet automatisch opnieuw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Retry logic isn't part of the default subscription flow an AI tool generates from a simple prompt \u2014 it requires explicitly building a retry schedule, customer notifications, and grace-period handling."
+        "text": "Omdat de logica voor opnieuw proberen geen deel uitmaakt van de standaard abonnementsstroom die een AI-tool genereert op basis van een eenvoudige prompt, vereist het expliciet het opstellen van een schema voor nieuwe pogingen, klantmeldingen en afhandeling van de respijtperiode, waar de meeste oprichters pas om weten als het hen inkomsten kost."
       }
     },
     {
       "@type": "Question",
-      "name": "How much revenue does this typically cost a SaaS company?",
+      "name": "Hoeveel omzet kost dit doorgaans een SaaS-bedrijf?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It varies, but failure rates in the high single digits of monthly renewals are common industry-wide, and without any recovery process, that revenue is lost rather than delayed."
+        "text": "Het varieert, maar het percentage mislukte maandelijkse verlengingen met hoge enkele cijfers is gebruikelijk in de hele sector, en zonder enig herstelproces gaat vrijwel al die omzet verloren in plaats van alleen maar uitgesteld."
       }
     },
     {
       "@type": "Question",
-      "name": "What does a good dunning email sequence actually include?",
+      "name": "Wat houdt een goede aanmaan-e-mailreeks eigenlijk in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Typically an immediate notification at first failure with a card-update link, a reminder partway through the grace period, and a final notice before any downgrade takes effect."
+        "text": "Meestal een onmiddellijke melding bij de eerste storing met een kaartupdatelink, een herinnering halverwege de respijtperiode en een laatste melding voordat een downgrade van kracht wordt - getimed om de klant een reële kans te geven om het probleem op te lossen."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's team think about billing resilience differently than a typical AI-generated prototype?",
+      "name": "Hoe denkt het team van Manifera anders over de veerkracht van facturering dan een typisch door AI gegenereerd prototype?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers, who have delivered 160+ projects for enterprise clients, treat subscription billing as a system with edge cases to engineer for, not a single successful transaction to demo."
+        "text": "De technici van Manifera, die meer dan 160 projecten voor zakelijke klanten hebben opgeleverd, behandelen abonnementsfacturering als een systeem met edge-cases waarvoor moet worden ontwikkeld, waarbij geen enkele succesvolle transactie hoeft te worden gedemonstreerd. Aanmaning is een van de eerste dingen die worden gecontroleerd tijdens een SaaS-audit voor abonnementen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this something LaunchStudio can add without touching my existing Stripe setup?",
+      "name": "Is dit iets dat LaunchStudio kan toevoegen zonder mijn bestaande Stripe-installatie aan te raken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, dunning logic is typically layered on top of existing Stripe webhooks and subscription objects, so it doesn't require migrating payment processors or rebuilding checkout."
+        "text": "Ja – aanmaningslogica wordt doorgaans bovenop bestaande Stripe-webhooks en abonnementsobjecten gelaagd, zodat er geen migratie van betalingsprocessors of het opnieuw opbouwen van de kassa nodig is."
       }
     }
   ]

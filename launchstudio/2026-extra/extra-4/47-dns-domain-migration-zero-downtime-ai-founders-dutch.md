@@ -85,6 +85,7 @@ Omdat het niet iets is dat een AI-coderingstool genereert of weglaat in code - h
 
 Ja – het team van LaunchStudio, inclusief technici ondersteund door het kantoor in Singapore, verzorgt DNS- en domeinmigraties als onderdeel van het productieklaar maken van door AI gebouwde prototypes, of dat nu een op zichzelf staande oplossing is of onderdeel van een breder lanceringspakket.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +93,42 @@ Ja – het team van LaunchStudio, inclusief technici ondersteund door het kantoo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is TTL and why does it cause downtime during a domain migration?",
+      "name": "Wat is TTL en waarom veroorzaakt het downtime tijdens een domeinmigratie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "TTL (Time To Live) tells DNS resolvers how long to cache a record before rechecking it. If left high during a migration, some visitors keep reaching the old destination for hours after the change."
+        "text": "TTL (Time To Live) vertelt DNS-resolvers hoe lang een record in de cache moet blijven voordat deze opnieuw wordt gecontroleerd. Als de waarde tijdens een migratie hoog blijft, blijven sommige bezoekers na de wijziging nog urenlang de oude bestemming bereiken, wat een inconsistente, fragmentarische storing veroorzaakt."
       }
     },
     {
       "@type": "Question",
-      "name": "How far in advance should I lower my DNS TTL before migrating a domain?",
+      "name": "Hoe ver van tevoren moet ik mijn DNS TTL verlagen voordat ik een domein migreer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At minimum, wait out the existing TTL value after lowering it before making the actual destination change \u2014 if the old TTL was 24 hours, plan a day ahead."
+        "text": "U moet op zijn minst wachten met de bestaande (oude) TTL-waarde nadat u deze hebt verlaagd voordat u de daadwerkelijke bestemmingswijziging doorvoert. Als de oude TTL 24 uur was, plan dan de verlagingsstap minstens een dag vóór de echte overstap."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this same issue happen with hosting migrations, not just domain changes?",
+      "name": "Kan ditzelfde probleem zich voordoen bij hostingmigraties, en niet alleen bij domeinwijzigingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, any change involving updated DNS records, including moving between hosting providers, is subject to the same TTL propagation delay if not sequenced correctly."
+        "text": "Ja. Elke wijziging waarbij wordt bijgewerkt waar de DNS-records van een domein naar verwijzen, inclusief het verplaatsen tussen hostingproviders, is onderworpen aan dezelfde TTL-propagatievertraging als deze niet in de juiste volgorde wordt geplaatst."
       }
     },
     {
       "@type": "Question",
-      "name": "Why does Herre Roelevink describe this kind of issue as an architecture problem rather than a coding problem?",
+      "name": "Waarom beschrijft Herre Roelevink dit soort vraagstukken als een architectuurprobleem en niet als een codeerprobleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because it's an infrastructure sequencing decision requiring planning ahead, not something an AI coding tool generates or omits in code \u2014 exactly the kind of production-maturity gap Manifera's 11+ years of engineering experience is built to catch."
+        "text": "Omdat het niet iets is dat een AI-coderingstool genereert of weglaat in code - het is een beslissing over de sequencing van de infrastructuur waarvoor een dag of langer vooruit moet worden gepland, en dat is precies het soort productie-volwassenheidskloof waar Manifera's meer dan elf jaar technische ervaring op is gebouwd."
       }
     },
     {
       "@type": "Question",
-      "name": "Does LaunchStudio handle domain migrations as a standalone service?",
+      "name": "Verwerkt LaunchStudio domeinmigraties als een zelfstandige service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, LaunchStudio's team, including engineers supported from the Singapore office, handles DNS and domain migrations as part of getting AI-built prototypes production-ready."
+        "text": "Ja – het team van LaunchStudio, inclusief technici ondersteund door het kantoor in Singapore, verzorgt DNS- en domeinmigraties als onderdeel van het productieklaar maken van door AI gebouwde prototypes, of dat nu een op zichzelf staande oplossing is of onderdeel van een breder lanceringspakket."
       }
     }
   ]

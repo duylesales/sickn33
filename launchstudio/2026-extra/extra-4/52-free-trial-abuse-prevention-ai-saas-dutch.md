@@ -50,6 +50,22 @@ Een aanpak op productieniveau probeert misbruik niet onmogelijk te maken; dat is
 
 Als u niet zeker weet hoe kwetsbaar uw huidige proefperiode is, kan onze [prijscalculator](https://launchstudio.eu/en/#calculator) een oplossing bieden op basis van wat u al heeft gebouwd, en Manifera's [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) praktijk heeft dezelfde gelaagde fraudelogica gebouwd voor grotere platforms waar de inzet aanzienlijk hoger was dan bij een SaaS-proefversie.
 
+## Fingerprinting is geen eenmalige oplossing
+
+Het blokkeren van gratis proefversiemisbruik via e-mailadressen is onvoldoende. Het toevoegen van apparaat- en IP-fingerprinting helpt misbruik door dezelfde gebruiker met tijdelijke e-mailadressen te voorkomen. Een fingerprint is echter niet onfeilbaar (VPN's en updates veranderen fingerprints), dus het moet worden gecombineerd met gedragscontroles.
+
+Koppel apparaat-fingerprinting aan risicoscoring:
+
+```javascript
+async function validateTrialEligibility(req) {
+  const fingerprint = req.headers['x-device-fingerprint'];
+  const previousTrials = await db.trials.countDocuments({ fingerprint });
+  if (previousTrials > 0) {
+    throw new Error('Dit apparaat heeft al een proefperiode gebruikt.');
+  }
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: het proces dat nooit echt is geëindigd
@@ -91,6 +107,7 @@ Het geldt zelfs nog meer: ​​proefversies zonder kaart zijn het gemakkelijkst
 
 Het technische team van LaunchStudio, ondersteund door meer dan 120 ingenieurs van Manifera en meer dan tien jaar ervaring met productiesoftware, behandelt dit als onderdeel van het versterken van een door AI gebouwd SaaS-product voor of na de lancering. Het is een van de meest voorkomende hiaten die worden aangetroffen in prototypes die snel zijn gebouwd met tools als Lovable of Bolt.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +115,42 @@ Het technische team van LaunchStudio, ondersteund door meer dan 120 ingenieurs v
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Isn't blocking suspected trial abusers risky for legitimate users?",
+      "name": "Is het blokkeren van vermoedelijke proefmisbruikers niet riskant voor legitieme gebruikers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, which is why an outright block is usually the wrong tool \u2014 flagging and shortening the trial, or routing to manual review, protects revenue without turning away real customers who happen to share a signal like an office IP."
+        "text": "Ja, en daarom is een regelrechte blokkering meestal het verkeerde instrument: het markeren en inkorten van de proefperiode, of het omleiden naar handmatige beoordeling, beschermt de omzet zonder echte klanten af ​​te wijzen die toevallig een signaal delen zoals een kantoor-IP."
       }
     },
     {
       "@type": "Question",
-      "name": "Can't I just require a credit card to start a trial?",
+      "name": "Kan ik niet gewoon een creditcard nodig hebben om een ​​proefperiode te starten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It helps but doesn't fully solve it \u2014 determined abusers use virtual card numbers or prepaid cards, so a card requirement should be one signal among several, not the entire strategy."
+        "text": "Het helpt, maar lost het probleem niet volledig op. Vastberaden misbruikers gebruiken virtuele kaartnummers of prepaidkaarten, dus een kaartvereiste zou één van de vele signalen moeten zijn, en niet de hele strategie."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera think about balancing fraud prevention with signup friction?",
+      "name": "Hoe denkt Manifera over het balanceren van fraudepreventie en aanmeldingsproblemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers, based across offices including Amsterdam, treat this as a tuning problem rather than a binary switch \u2014 raising the cost of abuse just enough to deter casual repeat abuse while staying invisible to legitimate signups."
+        "text": "De technici van Manifera, gevestigd in onder meer Amsterdam, beschouwen dit eerder als een afstemmingsprobleem dan als een binaire omschakeling. Het doel is om de kosten van misbruik net genoeg te verhogen om incidenteel herhaald misbruik te voorkomen, terwijl ze onzichtbaar blijven voor de meer dan 95% van de legitieme aanmeldingen."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this apply if my trial doesn't require a credit card at all?",
+      "name": "Is dit van toepassing als er voor mijn proefperiode helemaal geen creditcard nodig is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It applies even more \u2014 no-card trials are the easiest to abuse since there's no payment fingerprint at all, so device and email-pattern signals become the primary defense."
+        "text": "Het geldt zelfs nog meer: ​​proefversies zonder kaart zijn het gemakkelijkst te misbruiken omdat er helemaal geen betalingsvingerafdruk is, dus signalen van apparaten en e-mailpatronen worden de primaire verdediging."
       }
     },
     {
       "@type": "Question",
-      "name": "Who typically builds this kind of fix for a SaaS product?",
+      "name": "Wie bouwt dit soort oplossingen doorgaans voor een SaaS-product?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio's engineering team, backed by Manifera's 120+ engineers and more than a decade of production software experience, handles this as part of hardening an AI-built SaaS product before or after launch."
+        "text": "Het technische team van LaunchStudio, ondersteund door meer dan 120 ingenieurs van Manifera en meer dan tien jaar ervaring met productiesoftware, behandelt dit als onderdeel van het versterken van een door AI gebouwd SaaS-product voor of na de lancering. Het is een van de meest voorkomende hiaten die worden aangetroffen in prototypes die snel zijn gebouwd met tools als Lovable of Bolt."
       }
     }
   ]

@@ -51,6 +51,26 @@ A workable setup usually has three layers: an intake filter on raw user posts (k
 
 If you want a clearer picture of what this costs to retrofit into an existing app, our [pricing calculator](https://launchstudio.eu/en/#calculator) gives a fast estimate based on your current stack. And if you're evaluating whether your codebase needs a broader security pass beyond just moderation, Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) team has handled this exact class of problem for larger platforms, not just early-stage apps.
 
+## A Review Queue Can Fail as Silently as No Moderation at All
+
+Adding a manual approval gate closes the amplification risk, but it opens a smaller, quieter one: a queue only works if something is actually watching it. If nobody checks the pending-approval list for a few days — a founder on vacation, a queue nobody assigned ownership of — content just sits there unpublished indefinitely, and a feature meant to boost engagement instead goes dark with no error and no warning. From the outside, that looks identical to the feature being broken, even though every part of it is technically working exactly as designed.
+
+The fix is treating the review queue the same way you'd treat any other background process that can silently stall: give it an age check and an alert, not just a place for items to wait.
+
+```
+async function checkModerationQueue() {
+  const stalePending = await db.moderationQueue.find({
+    status: 'pending',
+    createdAt: { $lt: hoursAgo(24) },
+  });
+  if (stalePending.length > 0) {
+    await alertOps(`${stalePending.length} items pending moderation over 24h`);
+  }
+}
+```
+
+A queue that pages someone once items sit for too long stays useful indefinitely. A queue with no age check just becomes a second, better-hidden version of the original problem — content nobody reviewed, except now it's stuck instead of live.
+
 ## Real example
 
 ### An AI-Native Founder in Action: When the "Highlight" Feature Highlighted the Wrong Post
@@ -92,6 +112,10 @@ Not meaningfully — a policy classifier check typically adds milliseconds, and 
 
 The same gap shows up regardless of whether you used Cursor, Bolt, Lovable, or v0 — moderation isn't something these tools generate by default for either user content or AI-generated content, so the review applies the same way across all of them.
 
+### What stops the moderation queue itself from becoming a bottleneck nobody notices?
+
+An age check on pending items with an alert once something has waited too long — without it, an unattended queue can quietly stall content indefinitely, which looks the same to users as a broken feature even though the moderation logic is working correctly.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +145,11 @@ The same gap shows up regardless of whether you used Cursor, Bolt, Lovable, or v
       "@type": "Question",
       "name": "What if I built this with a different tool, not Cursor?",
       "acceptedAnswer": { "@type": "Answer", "text": "The same gap shows up regardless of whether you used Cursor, Bolt, Lovable, or v0 — moderation isn't something these tools generate by default for either user content or AI-generated content." }
+    },
+    {
+      "@type": "Question",
+      "name": "What stops the moderation queue itself from becoming a bottleneck nobody notices?",
+      "acceptedAnswer": { "@type": "Answer", "text": "An age check on pending items with an alert once something has waited too long — without it, an unattended queue can quietly stall content indefinitely, which looks the same to users as a broken feature." }
     }
   ]
 }

@@ -59,6 +59,29 @@ This last point matters more than it sounds. [Unlike freelancers, LaunchStudio i
 
 Coworking founders using Bolt or similar tools have usually already built a frontend members actually like using — a calendar view, desk maps, a clean booking flow. None of that needs to change to fix an overlap bug like this. The fix lives entirely in the backend logic and database schema that determines what counts as a conflict. Manifera's Amsterdam office at Herengracht 420 has engineers who specialize in exactly this kind of surgical backend correction, leaving your existing frontend untouched. If you want a clear picture of what a fix like this would cost for your specific app, [explore LaunchStudio's fixed-scope packages](https://launchstudio.eu/en/#packages) before committing to anything.
 
+## Overlap Checks Have to Run on Every Edit, Not Just on Create
+
+Fixing the overlap logic for new bookings closes the gap that shows up in testing, but it leaves a quieter version of the same problem if the check only runs when a booking is first created. Members don't just book desks — they edit existing bookings, extending a morning slot into a full day, or shifting a time range after they've already reserved it. If the conflict check was wired into the "create booking" code path but never wired into the "update booking" path, a member can edit their way into a conflict that the system never validates, because updating an existing record doesn't feel, to the code, like the same action as creating a new one.
+
+This is a common gap because AI-generated code tends to build the create flow thoroughly, since that's what a prompt like "prevent double-booking" is naturally tested against, while the update flow gets built as a simpler pass-through:
+
+```
+async function saveBooking(booking) {
+  const conflicts = await findOverlappingBookings(
+    booking.deskId,
+    booking.startTime,
+    booking.endTime,
+    booking.id // exclude itself when this is an edit, not a new booking
+  );
+  if (conflicts.length > 0) {
+    throw new Error('This time range now conflicts with an existing booking');
+  }
+  return booking.id ? updateBooking(booking) : createBooking(booking);
+}
+```
+
+Running the same conflict check on both paths — with the booking's own ID excluded from the comparison so it doesn't flag against itself — closes the gap without adding a second, separate validation system to maintain.
+
 ## Real example
 
 ### An AI-Native Founder in Action: One Desk, Two Members, One Tuesday Morning
@@ -94,6 +117,10 @@ Yes — any app booking a limited physical resource with variable time increment
 
 No — this is backend and database-level work. LaunchStudio's engineers, drawing on Manifera's enterprise software development experience, fix the logic underneath your existing calendar interface without changing how members interact with it.
 
+### Does the overlap fix also apply when a member edits an existing booking, not just when they create a new one?
+
+Only if the overlap check is wired into the update path as well as the create path — AI-generated code frequently builds thorough validation for new bookings but a thinner update flow, since editing an existing reservation looks like a smaller, lower-risk action even though extending a booking's time range can create exactly the same conflict a new booking would.
+
 ### Does LaunchStudio have a physical presence in Europe, or is it fully remote?
 
 LaunchStudio's process is remote-first, but Manifera's client-facing office at Herengracht 420 in Amsterdam serves as its European hub for founders who want an in-person conversation.
@@ -122,6 +149,11 @@ LaunchStudio's process is remote-first, but Manifera's client-facing office at H
       "@type": "Question",
       "name": "Does fixing this require Manifera's engineers to redesign my booking calendar UI?",
       "acceptedAnswer": { "@type": "Answer", "text": "No — this is backend and database-level work that fixes the logic underneath your existing calendar interface without changing how members interact with it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the overlap fix also apply when a member edits an existing booking, not just when they create a new one?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if the overlap check is wired into the update path as well as the create path — AI-generated code frequently builds thorough validation for new bookings but a thinner update flow, since editing an existing reservation looks like a smaller, lower-risk action." }
     },
     {
       "@type": "Question",

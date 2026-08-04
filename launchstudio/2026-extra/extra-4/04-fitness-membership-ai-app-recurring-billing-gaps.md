@@ -47,6 +47,24 @@ LaunchStudio has fixed this exact category of gap across multiple AI-native SaaS
 
 If your app handles any kind of pause, freeze, or trial-to-paid transition, [run the numbers on a billing logic review](https://launchstudio.eu/en/#calculator) before your membership base finds the gap for you.
 
+## The Charge Still Has to Check State Right Before It Fires
+
+Adding a 48-hour advance notice fixes the "no warning at all" problem, but it introduces a smaller timing gap of its own if it isn't built carefully. A notice scheduled two days ahead of a resume charge is, by definition, scheduled against whatever the membership's state was at that moment — active, set to resume, card on file. But a member can cancel, pause again, or update their card at any point in those 48 hours. If the actual charge job was set up to fire based on the state it captured when the notice went out, rather than re-checking the membership's live status immediately before charging, a member who cancelled an hour after getting the notice can still get billed, because nothing told the charge job the plan had changed.
+
+The fix is a second, independent state check at the moment the charge is actually about to run, not just at the moment the notice was scheduled:
+
+```
+When the scheduled resume-charge job runs:
+  1. Re-check the membership's current status right now — not the status
+     captured when the notice was originally scheduled
+  2. If the member cancelled, paused again, or downgraded in the meantime, stop — do not charge
+  3. Only proceed if the membership is still active and still set to resume
+  4. Log the status check alongside the charge attempt, so a disputed
+     charge can be verified either way
+```
+
+This one extra check is what keeps a good-faith notice system from becoming its own source of surprise charges — the notice tells the member what's about to happen, but only a fresh check at charge time confirms it's still true.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Freeze That Charged Itself
@@ -88,6 +106,10 @@ Yes — much of this work runs through Manifera's Amsterdam office, where the te
 
 Check whether resuming billing triggers any notice at all, and whether it validates the payment method before charging. If either is missing, [talk to an engineer](https://launchstudio.eu/en/#contact) before it becomes a support wave.
 
+### What if a member cancels during the 48-hour notice window — could they still get charged?
+
+Yes, if the charge job only checks membership status once, when the notice is scheduled, rather than again right before it fires. A member can cancel or pause in the intervening window, so the actual charge attempt needs its own final status check immediately beforehand, not a status it inherited from two days earlier.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,6 +139,11 @@ Check whether resuming billing triggers any notice at all, and whether it valida
       "@type": "Question",
       "name": "What should I check first if I have a pause or freeze feature in my app?",
       "acceptedAnswer": { "@type": "Answer", "text": "Check whether resuming billing triggers any notice at all, and whether it validates the payment method before charging." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a member cancels during the 48-hour notice window — could they still get charged?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the charge job only checks membership status once, when the notice is scheduled, rather than again right before it fires. The actual charge attempt needs its own final status check immediately beforehand, not a status inherited from two days earlier." }
     }
   ]
 }

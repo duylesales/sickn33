@@ -46,6 +46,20 @@ Dit is een patroon dat LaunchStudio voortdurend ziet in AI-native SaaS-tools: de
 
 Als uw AI-functie is geleverd zonder dat deze is geïnstalleerd, is het de moeite waard [een offerte te krijgen voor het toevoegen van de juiste observatie](https://launchstudio.eu/en/#calculator) voordat de volgende klacht binnenkomt zonder dat er iets achter zit om te onderzoeken.
 
+## Alles op het hoogste detailniveau loggen schaalt niet voor altijd
+
+Gevorderde gestructureerde logging is essentieel om fouten in productie op te sporen. Maar als u elke API-aanroep en database-query onbeperkt naar een centrale logdienst (zoals Datadog of Papertrail) stuurt, lopen de kosten binnen enkele maanden uit de hand.
+
+Stel dynamische logniveaus in per omgeving of gebruik steekproefgewijze logging (sampling):
+
+```javascript
+const logger = winston.createLogger({
+  level: process.env.LOG_LEVEL || 'info',
+  format: winston.format.json(),
+  transports: [new winston.transports.Console()]
+});
+```
+
 ## Echt voorbeeld
 
 ### Een AI-native oprichter in actie: de schrijfassistent zonder geheugen voor zijn eigen fouten
@@ -85,6 +99,7 @@ Manifera heeft observatie- en monitoringtools geleverd voor meer dan 160 project
 
 Ja – gestructureerde logboekregistratie wordt doorgaans toegevoegd als wrapper rond bestaande modelaanroepen, waarbij het verzoek en de reactie worden vastgelegd zonder de manier te veranderen waarop de AI-functie zelf functioneert.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -92,42 +107,42 @@ Ja – gestructureerde logboekregistratie wordt doorgaans toegevoegd als wrapper
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What's the minimum I should log for every AI feature call in production?",
+      "name": "Wat is het minimum dat ik moet registreren voor elke AI-functieaanroep in productie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At minimum: a request ID, the full prompt as sent to the model, the model version, key parameters like temperature, the raw response, and timing, all tied together for traceability."
+        "text": "Minimaal: een verzoek-ID, de volledige prompt zoals verzonden naar het model, de modelversie, belangrijke parameters zoals temperatuur, de onbewerkte respons en timing - allemaal met elkaar verbonden, zodat één enkele klacht kan worden herleid tot precies wat er is gebeurd."
       }
     },
     {
       "@type": "Question",
-      "name": "Why can't I just rely on my AI provider's own dashboard for this?",
+      "name": "Waarom kan ik hiervoor niet gewoon vertrouwen op het dashboard van mijn AI-aanbieder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most provider dashboards show aggregate usage, not a per-request record tied to your own user IDs and application context."
+        "text": "De meeste providerdashboards tonen het totale gebruik, en niet een record per verzoek dat is gekoppeld aan uw eigen gebruikers-ID's en applicatiecontext, wat u eigenlijk nodig heeft om de klacht van een specifieke gebruiker te onderzoeken."
       }
     },
     {
       "@type": "Question",
-      "name": "Does logging full prompts create a privacy risk?",
+      "name": "Vormt het loggen van volledige prompts een privacyrisico?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It can if prompts include personal data, which is why logging needs a defined retention period and access control rather than indefinite unrestricted storage."
+        "text": "Het kan, als er om wordt gevraagd, persoonlijke gegevens bevatten. Daarom heeft loggen een gedefinieerde bewaarperiode en toegangscontrole nodig, en geen onbeperkte opslag voor onbepaalde tijd, die met dezelfde zorg wordt behandeld als alle andere persoonlijke gegevens in het product."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera's engineering experience apply to AI-specific logging?",
+      "name": "Hoe is de technische ervaring van Manifera van toepassing op AI-specifieke logboekregistratie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera has delivered observability and monitoring tooling across 160+ projects for enterprise clients, and that same discipline applies directly to debugging LLM calls."
+        "text": "Manifera heeft observatie- en monitoringtools geleverd voor meer dan 160 projecten voor zakelijke klanten, en diezelfde discipline van het end-to-end traceren van een verzoek is rechtstreeks van toepassing op het debuggen van LLM-oproepen, niet alleen op traditionele backend-systemen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this something I can add without changing my existing AI integration?",
+      "name": "Is dit iets dat ik kan toevoegen zonder mijn bestaande AI-integratie te wijzigen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, structured logging is typically added as a wrapper around existing model calls, capturing the request and response without changing how the feature functions."
+        "text": "Ja – gestructureerde logboekregistratie wordt doorgaans toegevoegd als wrapper rond bestaande modelaanroepen, waarbij het verzoek en de reactie worden vastgelegd zonder de manier te veranderen waarop de AI-functie zelf functioneert."
       }
     }
   ]

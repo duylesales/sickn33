@@ -47,6 +47,32 @@ LaunchStudio brings Manifera's enterprise-grade engineering to the founder econo
 
 If you've never checked your own site's network requests against what your cookie banner claims to do, it's worth [reviewing your build against our process](https://launchstudio.eu/en/#process) before a visitor — or a regulator — checks it for you.
 
+## Tag Managers Add a Layer the Simple Fix Doesn't Cover
+
+Gating the script tags themselves solves the problem for sites that load Google Analytics or an ad pixel directly. It doesn't fully solve it for sites using a tag manager container, which is increasingly the common case. A tag manager is, from the browser's perspective, a single script tag — so naively gating "the script" only blocks the container itself from loading. Once that container is allowed to run, it can fire its own internal tags (Analytics, ad conversion pixels, remarketing scripts) immediately, independent of whether the visitor has consented to anything, because the container's internal trigger configuration is a separate layer from whether the container script loaded in the first place.
+
+Fixing this properly means configuring the tag manager's own consent settings, not just deciding whether to load the container. The common pattern — often called consent mode — is to default every non-essential category to denied the moment the page loads, and only flip specific categories to granted once the visitor makes an explicit choice:
+
+```
+// Default: deny all non-essential tags until consent is known
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  ad_storage: 'denied',
+});
+
+// Only after an explicit accept click do individual categories flip
+function onConsentAccepted(categories) {
+  gtag('consent', 'update', {
+    analytics_storage: categories.analytics ? 'granted' : 'denied',
+    ad_storage: categories.marketing ? 'granted' : 'denied',
+  });
+}
+```
+
+Without this step, a site can pass a surface-level check — "the banner appears, the container is gated" — while every tag inside that container fires on page load regardless, which is precisely the kind of gap that only shows up when someone inspects what the tag manager is actually doing internally, not just whether it loaded.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Banner That Only Looked Like It Worked
@@ -86,6 +112,10 @@ Manifera's engineers test at the network request level rather than the visual le
 
 It's a common pattern across v0, Lovable, Bolt, and similar tools, since none of them connect consent banner state to script loading by default — it requires an explicit implementation step regardless of which tool built the site.
 
+### If I'm using Google Tag Manager, does gating the container script tag fix the consent problem?
+
+Not on its own. A tag manager container is itself a single script, but it can still fire individual tags like Analytics or ad conversion pixels internally regardless of whether the container loaded, unless the container's own consent settings are configured to default those tags to denied until the visitor actually opts in.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +145,11 @@ It's a common pattern across v0, Lovable, Bolt, and similar tools, since none of
       "@type": "Question",
       "name": "Does this apply to all AI website builders, or just v0?",
       "acceptedAnswer": { "@type": "Answer", "text": "It's a common pattern across v0, Lovable, Bolt, and similar tools, since none of them connect consent banner state to script loading by default." }
+    },
+    {
+      "@type": "Question",
+      "name": "If I'm using Google Tag Manager, does gating the container script tag fix the consent problem?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not on its own — the container can still fire individual tags internally unless its own consent settings are configured to default those tags to denied until the visitor opts in." }
     }
   ]
 }

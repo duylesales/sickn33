@@ -50,6 +50,17 @@ Het verhogen van de limiet voor een verbindingspool is niet zo eenvoudig als sle
 
 De technici van LaunchStudio, ondersteund door Manifera's meer dan tien jaar ervaring op het gebied van productie-engineering, beschouwen dit als standaard pre-scale-hardening voor elk door Bolt gebouwd product dat op echt verkeer gericht is - het soort infrastructuurbeoordeling dat goedkoop is om proactief uit te voeren en duur om reactief te doen om 02.00 uur tijdens een gebruikspiek. Als uw product deze muur nadert of al heeft bereikt, kan onze [prijscalculator](https://launchstudio.eu/en/#calculator) een oplossing bieden, en Manifera's [portfolio](https://www.manifera.com/portfolio/) toont het scala aan infrastructuurschalingswerk dat ons team heeft gedaan, van producten in een vroeg stadium zoals deze tot grotere bedrijfssystemen.
 
+## De verbindingspool is meestal slechts het eerste plafond dat u bereikt
+
+Full-stack scaffolding-tools zoals Bolt.new maken het snel opzetten van prototypes eenvoudig. Bij schaalvergroting is de databaseverbindingspool (connection pool) vaak het eerste knelpunt, gevolgd door geheugenlimieten op serverloze functies.
+
+Gebruik een database-proxy (zoals PgBouncer of Supabase Pooler) voor serverloze verbindingen:
+
+```javascript
+// Gebruik een gepoolde verbindingsreeks voor serverloze omgevingen
+const dbUrl = process.env.DATABASE_POOLED_URL;
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native-oprichter in actie: de fouten die alleen opdoken als het er toe deed
@@ -93,6 +104,7 @@ Het technische team van Manifera, inclusief de groep gevestigd in het ontwikkeli
 
 In het ideale geval wel – een beoordeling van de verbindingspool duurt een paar dagen en is veel goedkoper om proactief uit te voeren dan tijdens een live gebruikspiek. Daarom is het een standaard onderdeel van de pre-lancerings- en pre-schaalcontroles. LaunchStudio draait op AI-gebouwde producten.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,42 +112,42 @@ In het ideale geval wel – een beoordeling van de verbindingspool duurt een paa
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How do I know if my Bolt-built app is close to hitting a connection pool limit?",
+      "name": "Hoe weet ik of mijn door Bolt gebouwde app bijna de limiet voor de verbindingspool heeft bereikt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Watch for database errors that are intermittent and correlate with periods of higher simultaneous usage rather than a specific user action."
+        "text": "Let op databasefouten die af en toe voorkomen en correleren met perioden van hoger gelijktijdig gebruik in plaats van met een specifieke gebruikersactie; dat patroon wijst, meer dan welke foutmelding dan ook, in de richting van een plafond voor de verbindingspool."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I just raise the connection pool number myself without help?",
+      "name": "Kan ik het aansluitingspoolnummer gewoon zelf verhogen zonder hulp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can, but setting it too high relative to your database plan's actual connection ceiling just trades one failure mode for another."
+        "text": "Dat kan, maar als u het te hoog instelt ten opzichte van het daadwerkelijke verbindingsplafond van uw databaseplan, ruilt u de ene foutmodus in voor de andere. Het is de moeite waard om de werkelijke limieten van uw databaselaag te bevestigen voordat u de poolgrootte wijzigt."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this same issue happen with Lovable or Cursor-built backends too?",
+      "name": "Doet ditzelfde probleem zich ook voor met Lovable of Cursor-gebouwde backends?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The same category of issue shows up across AI scaffolding tools generally, though the specific setting and default value differs by tool and template."
+        "text": "Dezelfde categorie van problemen – een standaard die is afgestemd op gebruik op demoschaal en niet als configureerbaar wordt weergegeven – komt in het algemeen voor bij AI-steigertools, hoewel de specifieke instelling en standaardwaarde per tool en sjabloon verschillen."
       }
     },
     {
       "@type": "Question",
-      "name": "Who typically fixes this kind of infrastructure limit?",
+      "name": "Wie repareert doorgaans dit soort infrastructuurlimieten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineering team, including the group based at the Ho Chi Minh City development center, handles this as part of pre-scale hardening, drawn from Manifera's 160+ delivered projects."
+        "text": "Het technische team van Manifera, inclusief de groep gevestigd in het ontwikkelingscentrum van Ho Chi Minh City, behandelt dit als onderdeel van pre-scale hardening – het op de juiste maat brengen van infrastructuurlimieten voordat ze gebruikersgerichte fouten worden, gebaseerd op Manifera's meer dan 160 opgeleverde projecten."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this the kind of thing that should be caught before launch, not after?",
+      "name": "Is dit het soort dingen dat vóór de lancering moet worden opgemerkt, en niet erna?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ideally yes \u2014 a connection pool review takes a few days and is far cheaper to do proactively than during a live usage spike."
+        "text": "In het ideale geval wel – een beoordeling van de verbindingspool duurt een paar dagen en is veel goedkoper om proactief uit te voeren dan tijdens een live gebruikspiek. Daarom is het een standaard onderdeel van de pre-lancerings- en pre-schaalcontroles. LaunchStudio draait op AI-gebouwde producten."
       }
     }
   ]

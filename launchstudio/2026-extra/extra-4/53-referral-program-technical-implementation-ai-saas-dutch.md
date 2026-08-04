@@ -50,6 +50,19 @@ Naast het oplossen van de directe attributiebug, heeft een verwijzingsprogramma 
 
 Als uw verwijzingsprogramma al een tijdje live is en de cijfers afwijkend aanvoelen, kan onze [prijscalculator](https://launchstudio.eu/en/#calculator) een audit uitvoeren en een probleem oplossen. Het team voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/) van Manifera heeft dezelfde klasse van attributie- en data-integriteitswerk op veel grotere platforms afgehandeld, waar hetzelfde onderliggende bugpatroon op een andere schaal verschijnt.
 
+## Wanneer twee verwijzingslinks naar dezelfde aanmelding wijzen
+
+Een verwijzingsprogramma kent beloningen toe aan de gebruiker die een nieuwe klant aanbrengt. Een conflict ontstaat wanneer een nieuwe gebruiker op maandag op een link van Vriend A klikt, en op dinsdag op een link van Vriend B voordat hij zich definitief registreert. Zonder een duidelijke toewijzingsregel ("first-touch" vs "last-touch") ontstaat er een geschil over wie de commissie ontvangt.
+
+Leg het toewijzingsbeleid expliciet vast in de cookie/sessielogica:
+
+```javascript
+// Voorbeeld van Last-Touch toewijzing:
+function setReferralCookie(res, referralCode) {
+  res.cookie('ref_code', referralCode, { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true });
+}
+```
+
 ## Echt voorbeeld
 
 ### Een AI-Native oprichter in actie: maandenlange verwijzingen, niemand gecrediteerd
@@ -91,6 +104,7 @@ Vaak gedeeltelijk: als tijdstempels voor aanmelding en marketinglinkgegevens nog
 
 Een groot deel van dit werk op het gebied van attributie en data-integriteit loopt via Manifera's hub in Singapore, die naast de kantoren in Amsterdam en Ho Chi Minh City fungeert als de Zuidoost-Aziatische basis van het bedrijf.
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,42 +112,42 @@ Een groot deel van dit werk op het gebied van attributie en data-integriteit loo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How would I even know if my referral program isn't attributing correctly?",
+      "name": "Hoe weet ik zelfs of mijn verwijzingsprogramma niet correct wordt toegeschreven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The clearest signal is a mismatch between how many people say they used a referral link and how many actually show up with a linked referrer in your database."
+        "text": "Het duidelijkste signaal is een discrepantie tussen hoeveel mensen zeggen dat ze een verwijzingslink hebben gebruikt en hoeveel mensen daadwerkelijk met een gekoppelde verwijzer in uw database verschijnen. Als er meer ondersteunings-e-mails over 'ontbrekend tegoed' zijn dan automatisch uitgegeven tegoeden, vertoont de attributielaag waarschijnlijk een gat."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this bug only happen with Bolt, or could Lovable and Cursor produce the same thing?",
+      "name": "Komt deze bug alleen voor bij Bolt, of kunnen Lovable en Cursor hetzelfde produceren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The same failure pattern shows up across all of them \u2014 it's specific to referral flows having more than one signup entry point, which AI coding assistants routinely handle inconsistently."
+        "text": "Hetzelfde foutpatroon komt overal voor: het is niet specifiek voor één tool, het is specifiek voor verwijzingsstromen met meer dan één aanmeldingsingangspunt, waar AI-coderingsassistenten routinematig inconsistent mee omgaan."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera approach debugging something like this?",
+      "name": "Hoe pakt Manifera het debuggen van zoiets als dit aan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's engineers trace the data flow from the referral link all the way to the database write, checking every signup entry point independently rather than assuming one fix explains all paths."
+        "text": "De technici van Manifera traceren de gegevensstroom vanaf de verwijzingslink helemaal tot aan het schrijven in de database, waarbij ze elk aanmeldingspunt afzonderlijk controleren, in plaats van aan te nemen dat een bug die in het ene pad wordt gevonden ook de andere verklaart - een gewoonte die is opgebouwd uit meer dan 160 opgeleverde projecten waarbij gedeeltelijke oplossingen de duurdere fout waren."
       }
     },
     {
       "@type": "Question",
-      "name": "Can missing referral attribution be fixed retroactively?",
+      "name": "Kan ontbrekende verwijzingstoeschrijving met terugwerkende kracht worden verholpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often partially \u2014 if signup timestamps and marketing link data are still available, many past referral relationships can be reconstructed."
+        "text": "Vaak gedeeltelijk: als tijdstempels voor aanmelding en marketinglinkgegevens nog steeds beschikbaar zijn, kunnen veel verwijzingsrelaties uit het verleden worden gereconstrueerd, hoewel sommige onherstelbaar zullen zijn als er nooit koppelingsgegevens zijn vastgelegd."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Singapore where LaunchStudio's engineers on this kind of work are based?",
+      "name": "Is Singapore waar de technici van LaunchStudio voor dit soort werk zijn gevestigd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Much of this attribution and data-integrity work runs through Manifera's Singapore hub, its Southeast Asia base alongside offices in Amsterdam and Ho Chi Minh City."
+        "text": "Een groot deel van dit werk op het gebied van attributie en data-integriteit loopt via Manifera's hub in Singapore, die naast de kantoren in Amsterdam en Ho Chi Minh City fungeert als de Zuidoost-Aziatische basis van het bedrijf."
       }
     }
   ]

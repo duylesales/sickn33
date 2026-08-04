@@ -51,6 +51,26 @@ The fix isn't complicated in concept, but it requires deliberate implementation:
 
 Manifera's team, operating out of its Singapore hub serving the wider Southeast Asia market, has applied the same rigor to fintech and marketplace platforms handling far larger transaction volumes than a typical crowdfunding launch. If you're evaluating whether your platform's payment logic needs this level of review, Manifera's broader [custom software development](https://www.manifera.com/services/custom-software-development/) practice covers this kind of financial state-machine work at scale.
 
+## A Closed Refund Window Doesn't Mean the Money Is Actually Safe to Release
+
+Gating payout on the refund window closing fixes the timing gap the platform controls directly — but it doesn't cover a risk the platform doesn't control at all: a card network chargeback. A backer who paid by card can dispute the charge through their bank weeks or months after a platform's own refund window has closed, regardless of what the platform's terms say, because chargeback rights come from the card network's own rules, not the platform's policy. If 100% of a campaign's funds go out to the creator the moment the internal refund window clears, there's nothing left in the platform's account to cover a chargeback that lands later — and unlike a policy-based refund, a chargeback can also come with a processor penalty on top of the disputed amount.
+
+The state machine already described handles this correctly in spirit — it just needs one more state, and a payout amount that isn't 100%. Instead of releasing the full balance the instant the refund window closes, a platform holding real money should release most of it and keep a small reserve for a defined chargeback-exposure period, releasing the remainder afterward if no dispute has landed.
+
+```
+function calculatePayout(campaign) {
+  const total = campaign.fundsHeld;
+  const reservePercent = 0.10; // held back for chargeback exposure
+  const immediateRelease = total * (1 - reservePercent);
+  const reserved = total * reservePercent;
+
+  releaseToCreator(campaign.creatorId, immediateRelease);
+  scheduleReserveRelease(campaign.id, reserved, chargebackWindowEnd(campaign));
+}
+```
+
+The exact percentage and window length depend on the payment processor and campaign size, not a fixed rule — but the underlying principle holds regardless: a payout gate that only checks the platform's own refund window is checking the wrong clock. The chargeback clock runs longer, and it's the one that determines whether there's still money to cover a dispute.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The payout that left nothing to refund
@@ -92,6 +112,10 @@ Manifera's Singapore hub works with fintech and marketplace clients across South
 
 A generic scan checks for known vulnerability patterns like injection or exposed keys; this review traces the actual business logic of your money-handling flow against your own stated policies, which is a manual, platform-specific audit.
 
+### Does closing the refund window gap also protect against chargebacks?
+
+Not on its own — a chargeback can be filed with a card network well after a platform's own refund window closes, so a payout flow needs to hold back a small reserve for a defined chargeback-exposure period rather than releasing 100% of funds the moment the internal window clears.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +145,11 @@ A generic scan checks for known vulnerability patterns like injection or exposed
       "@type": "Question",
       "name": "What's the difference between this and a typical AI security scan?",
       "acceptedAnswer": { "@type": "Answer", "text": "A generic scan checks for known vulnerability patterns like injection or exposed keys; this review traces the actual business logic of your money-handling flow against your own stated policies." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does closing the refund window gap also protect against chargebacks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not on its own — a chargeback can be filed with a card network well after a platform's own refund window closes, so a payout flow needs to hold back a small reserve for a defined chargeback-exposure period rather than releasing 100% of funds the moment the internal window clears." }
     }
   ]
 }

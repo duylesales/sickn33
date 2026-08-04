@@ -53,6 +53,12 @@ In a single-sided app, a data-integrity gap is your problem to fix quietly. In a
 
 If you're weighing what a fix like this costs against building it from scratch, [our pricing calculator](https://launchstudio.eu/en/#calculator) gives a fixed-scope estimate based on your actual app. For context on how this discipline scales to enterprise clients, see Manifera's [custom software development](https://www.manifera.com/services/custom-software-development/) work.
 
+## Immutable Doesn't Mean "No Mistakes Allowed"
+
+Locking photos from being overwritten solves the tampering problem, but it introduces a legitimate, ordinary scenario the fix has to account for: a renter genuinely uploads the wrong photo — a picture of the wrong side of the car, a blurry shot they meant to retake — and now needs to correct it, on a system specifically designed to prevent exactly that kind of after-the-fact change. If "immutable" is implemented as "no new uploads accepted after the first one," a genuine mistake becomes permanently unfixable, which just trades one problem for a different, equally frustrating one.
+
+The distinction that resolves this is between overwriting and superseding. A corrected upload doesn't replace or delete the original — it's added as a new entry in the same append-only log, explicitly marked as superseding the earlier one, with both versions and their timestamps permanently visible to anyone reviewing the dispute later. A reviewer sees the full sequence — original photo, correction, and exactly when each was submitted — rather than a single, unexplained final image. This preserves the core guarantee (nothing can be silently altered) while still letting a genuine mistake get fixed, because the fix itself becomes part of the permanent record instead of a violation of it.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The Photo That Changed After the Fact
@@ -90,6 +96,10 @@ Yes — any marketplace where two parties document a physical handoff, like equi
 
 Manifera's engineers apply the same data-integrity practices used on enterprise projects for clients like Vodafone and TNO, adapted to the scale and budget of an early-stage founder's app.
 
+### What if a renter genuinely uploads the wrong photo by mistake — can that ever be fixed?
+
+Yes — a correction is added as a new, clearly-marked entry that supersedes the earlier one rather than deleting or overwriting it, so both the mistake and the fix stay permanently visible in the record instead of one silently replacing the other.
+
 ### Can LaunchStudio's Amsterdam team work with founders outside the Netherlands?
 
 Yes — the Amsterdam office serves as LaunchStudio's European client-facing hub, but our engineering team supports founders internationally regardless of where they're based.
@@ -123,6 +133,11 @@ Yes — the Amsterdam office serves as LaunchStudio's European client-facing hub
       "@type": "Question",
       "name": "Can LaunchStudio's Amsterdam team work with founders outside the Netherlands?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes — the Amsterdam office is LaunchStudio's European client-facing hub, but the engineering team supports founders internationally regardless of where they're based." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a renter genuinely uploads the wrong photo by mistake — can that ever be fixed?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — a correction is added as a new, clearly-marked entry that supersedes the earlier one rather than deleting or overwriting it, so both the mistake and the fix stay permanently visible in the record." }
     }
   ]
 }

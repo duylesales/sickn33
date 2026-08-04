@@ -51,6 +51,27 @@ LaunchStudio has fixed this same pattern across several e-commerce and fulfillme
 
 If you've built a print-on-demand or dropshipping tool with an AI coding assistant, it's worth asking directly: does the app poll the fulfillment partner's API as a backup to webhooks, or does it rely on webhooks alone? If it's webhooks alone, you have no safety net for the case where an event is dropped rather than delayed — and you won't find out until a customer asks where their order is. You can get a scoped review of exactly this kind of integration through the [LaunchStudio price calculator](https://launchstudio.eu/en/#calculator), and for a broader look at how Manifera approaches integration-heavy platforms, see the team's [web app development](https://www.manifera.com/services/web-app-develop/) practice.
 
+## Adding the Reconciliation Job Creates a Second Writer That Can Race the First
+
+Sequence-checking webhooks and adding a reconciliation poll both fix real gaps, but putting them together introduces something the original single-writer design never had to deal with: two independent processes now write to the same order's status. A webhook handler updates status the instant an event arrives; the reconciliation job updates status on its own schedule based on what it reads from the partner's API. Most of the time these agree. Occasionally they don't — the poller can read a slightly stale "printing" status from the partner's API in the same moment a "shipped" webhook is landing, and if each writer only checks the order's status without checking *when* that status was last confirmed, the poller can overwrite a genuinely newer webhook update with older information it happened to fetch a second too late.
+
+This isn't a hypothetical edge case unique to unlikely timing — it's the direct, structural consequence of having two paths write to the same field, which is exactly what a reconciliation job is. The fix is to route both writers through the same state-transition function, and to attach a version or last-confirmed timestamp to every status update so a writer can tell whether the data it's about to apply is actually newer than what's already recorded.
+
+```
+function applyOrderStatus(order, newStatus, sourceTimestamp) {
+  if (sourceTimestamp <= order.lastConfirmedAt) {
+    return; // this write is older than what's already recorded — ignore it
+  }
+  if (!isValidTransition(order.status, newStatus)) {
+    logUnexpectedTransition(order.id, order.status, newStatus);
+    return;
+  }
+  updateOrderStatus(order.id, newStatus, sourceTimestamp);
+}
+```
+
+Both the webhook handler and the reconciliation job call this same function instead of writing to the status field directly — which means the safety net you added to catch missed events can't quietly undo the sequencing fix you built to handle the events that did arrive.
+
 ## Real example
 
 ### An AI-Native Founder in Action: The order that said "shipped" but was never printed
@@ -92,6 +113,10 @@ The team audits the full event flow end to end, checking for sequence handling a
 
 No — this is entirely backend integration work between your app and the fulfillment partner's API. LaunchStudio's approach leaves the founder's existing storefront and checkout experience untouched.
 
+### If I add a reconciliation job, can it conflict with the webhook handler?
+
+Yes, if both write to order status independently — the fix is routing both through a single shared state-transition function that checks a version or timestamp before applying any update, so whichever writer has older data can't overwrite a newer status.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +146,11 @@ No — this is entirely backend integration work between your app and the fulfil
       "@type": "Question",
       "name": "Does this kind of fix require changing my storefront's design or checkout flow?",
       "acceptedAnswer": { "@type": "Answer", "text": "No — this is entirely backend integration work between your app and the fulfillment partner's API, leaving the founder's existing storefront untouched." }
+    },
+    {
+      "@type": "Question",
+      "name": "If I add a reconciliation job, can it conflict with the webhook handler?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if both write to order status independently — the fix is routing both through a single shared state-transition function that checks a version or timestamp before applying any update, so whichever writer has older data can't overwrite a newer status." }
     }
   ]
 }

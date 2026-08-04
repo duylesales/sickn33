@@ -129,14 +129,6 @@ Ja: de betrouwbaarheid van de taakwachtrij bevindt zich volledig in de backend- 
 
 Idempotentie betekent dat het twee keer uitvoeren van een taak hetzelfde resultaat in de echte wereld oplevert als het één keer uitvoeren ervan — zonder deze eigenschap kan een nieuwe poging die wordt geactiveerd nadat een taak eigenlijk al is gelukt maar de bevestiging niet is aangekomen, een klant dubbel laten betalen of een bericht dubbel versturen, en daarom heeft elke taak met een neveneffect in de echte wereld een deduplicatiecontrole nodig voordat nieuwe pogingen veilig kunnen worden ingeschakeld.
 
-### Werkt LaunchStudio met de taakwachtrijbibliotheek die mijn AI-tool al heeft gegenereerd?
-
-Meestal wel – we werken met de bestaande stack van Lovable, Bolt, Cursor of v0-uitvoer in plaats van deze in het algemeen te vervangen, wat consistent is met de manier waarop de technici van Manifera de meer dan 160 projecten benaderen die zijn opgeleverd voor klanten, waaronder Vodafone en Xpar Vision.
-
-Stuur ons uw prototypelink — [we geven u gratis advies](https://launchstudio.eu/en/#contact) over waar uw wachtrij daadwerkelijk staat.
-
-Voor een dieper inzicht in hoe productie-backend-systemen de eerste keer goed worden gebouwd, zie [Manifera's aangepaste software-ontwikkelingsdiensten](https://www.manifera.com/services/custom-software-development/).
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -144,50 +136,42 @@ Voor een dieper inzicht in hoe productie-backend-systemen de eerste keer goed wo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why doesn't Bolt or Lovable generate proper retry logic by default?",
+      "name": "Waarom genereert Bolt of Lovable standaard niet de juiste logica voor opnieuw proberen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI code tools optimize for a working demo, and a demo rarely exercises repeated real-world failure \u2014 so they generate a basic retry loop that satisfies 'does it try again' without addressing what happens once retries are exhausted."
+        "text": "AI-codetools optimaliseren voor een werkende demo, en een demo oefent zelden herhaalde mislukkingen in de echte wereld uit - dus genereren ze een basislus voor opnieuw proberen die voldoet aan \"probeert het opnieuw\" zonder in te gaan op wat er gebeurt als de nieuwe pogingen zijn uitgeput."
       }
     },
     {
       "@type": "Question",
-      "name": "What's a dead-letter queue, in plain terms?",
+      "name": "Wat is een wachtrij met dode letters, in gewone bewoordingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It's a holding area for jobs that failed every retry attempt, so they're visible and reprocessable instead of silently marked failed and forgotten in a database row nobody checks."
+        "text": "Het is een bewaargebied voor taken die bij elke nieuwe poging mislukten, zodat ze zichtbaar en opnieuw te verwerken zijn in plaats van stilletjes als mislukt en vergeten te worden gemarkeerd in een databaserij die niemand controleert."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Manifera decide which background jobs need the strongest reliability guarantees?",
+      "name": "Hoe beslist Manifera welke achtergrondbanen de sterkste betrouwbaarheidsgaranties nodig hebben?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our engineers, drawing on patterns from 160+ delivered projects, prioritize any job tied to money, compliance, or a customer-facing promise \u2014 cosmetic jobs get lighter treatment, since the cost of a missed alert should match the cost of a missed job."
+        "text": "Onze ingenieurs baseren zich op patronen uit meer dan 160 opgeleverde projecten en geven prioriteit aan elke klus die verband houdt met geld, compliance of een klantgerichte belofte. Cosmetische klussen krijgen een lichtere behandeling, omdat de kosten van een gemiste waarschuwing gelijk moeten zijn aan de kosten van een gemiste klus."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this be retrofitted without touching my existing frontend?",
+      "name": "Kan dit achteraf worden ingebouwd zonder mijn bestaande frontend aan te raken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 job queue reliability lives entirely in the backend and infrastructure layer, so it's added without changing how your app looks or behaves for users."
+        "text": "Ja: de betrouwbaarheid van de taakwachtrij bevindt zich volledig in de backend- en infrastructuurlaag, dus deze wordt toegevoegd zonder dat de manier waarop uw app eruit ziet of zich gedraagt ​​voor gebruikers wordt gewijzigd."
       }
     },
     {
       "@type": "Question",
-      "name": "What is idempotency, and why does it matter more once retries are added?",
+      "name": "Wat is idempotentie, en waarom is dit belangrijker zodra er nieuwe pogingen worden toegevoegd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Idempotency means running a job twice produces the same real-world result as running it once \u2014 without it, a retry that fires after a job actually succeeded but failed to confirm can double-charge a customer or double-send a message, which is why any job with a real-world side effect needs a dedup check before retries are safe to enable."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does LaunchStudio work with whatever job queue library my AI tool already generated?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually yes \u2014 we work with the existing stack from Lovable, Bolt, Cursor, or v0 output rather than replacing it wholesale, consistent with how Manifera's engineers approach the 160+ projects delivered for clients including Vodafone and Xpar Vision."
+        "text": "Idempotentie betekent dat het twee keer uitvoeren van een taak hetzelfde resultaat in de echte wereld oplevert als het één keer uitvoeren ervan — zonder deze eigenschap kan een nieuwe poging die wordt geactiveerd nadat een taak eigenlijk al is gelukt maar de bevestiging niet is aangekomen, een klant dubbel laten betalen of een bericht dubbel versturen, en daarom heeft elke taak met een neveneffect in de echte wereld een deduplicatiecontrole nodig voordat nieuwe pogingen veilig kunnen worden ingeschakeld."
       }
     }
   ]
