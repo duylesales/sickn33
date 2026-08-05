@@ -52,7 +52,7 @@ The three-axis score above gives you a number. These six questions are what to a
 
 2. **What would they do next, once they found it?** A gap that's merely visible is different from one that invites exploitation or erodes confidence the moment it's noticed. Walk through the next step a discoverer would plausibly take, rather than stopping at "they could see it."
 
-3. **Has anyone already found it and just not told you?** This is the uncomfortable question the RisicoGrip case above answers the hard way — silence isn't the same as absence. If your gap is customer-facing in any way, assume someone technical on their side has at least glanced at it, even if no one has said anything.
+3. **Has anyone already found it and just not told you?** Silence isn't the same as absence. If your gap is customer-facing in any way, assume someone technical on their side has at least glanced at it, even if no one has said anything — the real example below shows exactly how long that kind of silence can last before it surfaces.
 
 4. **What's the actual cost of fixing this today versus in three months?** Security debt rarely gets cheaper to fix with time — the surrounding code accumulates more dependencies on the flawed behavior, making the eventual fix more invasive than it would be now. Compare today's fix cost honestly against a future cost that's rarely smaller.
 
