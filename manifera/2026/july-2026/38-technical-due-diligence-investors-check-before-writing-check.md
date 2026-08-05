@@ -16,13 +16,16 @@ Content Format: Insider Guide
   "description": "An insider guide to technical due diligence — what VCs and acquirers evaluate in your codebase, infrastructure, and engineering practices, and how to prepare your startup to pass scrutiny.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-08-07"
+  "datePublished": "2026-08-07",
+  "dateModified": "2026-08-05"
 }
 </script>
 
 A Series B SaaS company was three weeks from closing a €15 million round. The lead VC sent in a technical due diligence team — two senior engineers who spent five days auditing the codebase, infrastructure, and engineering processes. They found: zero automated tests, API keys hardcoded in the frontend JavaScript, a single-server deployment with no failover, and the entire database accessible without Row-Level Security. The investment was downgraded to €5 million with a mandatory €2 million earmark for engineering remediation. The founders lost 40% of their expected valuation because they treated code quality as optional.
 
-Technical due diligence is no longer a formality. In 2026, every serious VC and acquirer conducts thorough engineering assessments. What they find determines whether you close at your asking price, close at a discount, or do not close at all.
+Technical due diligence is no longer a formality. Stripe's Developer Coefficient study — a large-scale survey of professional developers still cited as the benchmark reference on engineering time loss — found that developers spend an average of 17.3 hours of a 41.1-hour work week, roughly 42%, dealing with technical debt and bad code. That is not an abstract inefficiency; it is exactly the maintenance burden a buyer inherits the day the deal closes, and sophisticated investors now price it in before they sign. What a due diligence team finds determines whether you close at your asking price, close at a discount, or do not close at all.
+
+CB Insights' long-running analysis of VC-backed company shutdowns puts "no market need" and weak product-market fit at the top of the failure list — but among the startups that do find their market, execution risk buried in the codebase is precisely what a technical audit exists to surface before a term sheet becomes a wire transfer.
 
 ## What Auditors Actually Look At
 
@@ -39,9 +42,10 @@ Auditors clone your repository and start reading. They are looking for:
 **2. Test Coverage (Deal Breaker)**
 
 The presence or absence of automated tests is the single strongest signal of engineering discipline. Auditors run your test suite and check:
-- **Coverage percentage** — 80%+ for business logic is the benchmark. Zero test coverage is a red flag that halves your valuation.
+- **Coverage percentage** — 80%+ for business logic is the benchmark. Near-zero test coverage is consistently treated by technology M&A advisors as one of the findings most likely to trigger a valuation haircut, because it converts every future release into an unquantified risk.
 - **Test quality** — are tests actually testing meaningful behaviour, or are they trivial assertions that inflate coverage numbers?
 - **CI integration** — do tests run automatically on every pull request, or are they run manually (if at all)?
+- **Delivery performance against known benchmarks** — DORA's State of DevOps research (Google Cloud's long-running study of software delivery performance, the basis for the "Accelerate" research programme) classifies engineering organisations into four performance tiers. Elite performers deploy on demand with lead times under a day, a change failure rate around 5%, and recovery from a failed deployment in under an hour. Low performers sit at a roughly 64% change failure rate and can take a month or longer to recover from an incident. A due diligence team that pulls your deployment logs is, in effect, checking which tier you fall into — and a startup clustered with "low performers" on these metrics faces harder valuation conversations regardless of what the pitch deck claims about engineering velocity.
 
 **3. Security Posture (Deal Breaker)**
 
@@ -53,7 +57,7 @@ Auditors will specifically check for:
 - Dependency vulnerabilities (unpatched CVEs)
 - GDPR and data privacy compliance
 
-Finding a single hardcoded production API key in a public repository is often enough to downgrade a valuation by 20-30%.
+Finding a single hardcoded production API key in a public repository is, in our experience advising founders through diligence, often enough on its own to reopen valuation negotiations — not because the fix is expensive, but because it signals that nobody on the team owns a secrets-management process, which auditors read as a proxy for how the rest of the codebase was built.
 
 **4. Infrastructure and Deployment (High Impact)**
 
@@ -96,16 +100,18 @@ If you are planning to raise a round or position for acquisition in the next 12 
 | Dependency updates | No critical CVEs in dependencies | 1-3 days |
 | Backup and recovery | Automated daily backups, tested restore | 2-3 days |
 
-## Red Flags That Kill Deals
+## The Red-Flag Severity Framework
 
-These findings have torpedoed funding rounds and acquisition deals we have personally witnessed:
+Not every finding in a technical due diligence report carries the same weight, and founders who treat every item on the auditor's list as equally urgent waste their remediation budget on the wrong fixes. Experienced diligence teams implicitly triage findings into four severity tiers — making that triage explicit lets you prioritise the same way the auditor will read your report.
 
-- **No version control** (yes, this still happens with no-code/low-code platforms)
-- **Single point of failure** — one developer who understands the entire system, no documentation
-- **Customer data exposed** — personally identifiable information accessible without authentication
-- **No backup strategy** — the production database has never been backed up
-- **Forked open-source with no license compliance** — using GPL-licensed code in a proprietary product without the required disclosures
-- **Fraudulent metrics** — the application generates fake user activity to inflate engagement numbers
+| Severity | Definition | Typical Findings | Deal Impact | Realistic Fix Window |
+|----------|-----------|-------------------|--------------|----------------------|
+| **Tier 1 — Deal-Killer** | Findings that create legal, regulatory, or existential business risk | No version control; customer PII exposed without authentication; fraudulent/inflated usage metrics; GPL-licensed code embedded in a proprietary product without disclosure | Deal paused or withdrawn until resolved and independently re-verified | Cannot be fixed on a pre-close timeline in most cases — this is why founders must catch these long before a term sheet |
+| **Tier 2 — Major Valuation Hit** | Findings that do not kill the deal but materially change the risk-adjusted price | Zero or near-zero automated test coverage on core business logic; hardcoded secrets in source history; single point of failure (bus factor of one); no tested backup/restore process | 15–40% valuation discount or a remediation escrow held back from the closing amount | 4–8 weeks with focused engineering effort |
+| **Tier 3 — Fixable Pre-Close** | Findings that a competent team can visibly remediate within the diligence window itself | Missing CI/CD automation; no environment separation (dev/staging/prod); outdated but not critically vulnerable dependencies; thin documentation | Minor renegotiation leverage if unresolved; largely neutralised if fixed and demonstrated before the term sheet is finalised | 1–3 weeks |
+| **Tier 4 — Post-Close Remediation** | Findings that are noted but reasonably deferred to after the investment closes | Suboptimal but functional architecture; incomplete API documentation; moderate technical debt in non-critical modules | Typically written into the 100-day post-close plan, not the price | 3–6 months, funded from the round itself |
+
+The practical takeaway: a founder with four weeks before an audit should ignore Tier 4 entirely, treat Tier 3 as a checklist to clear, and focus disproportionate effort on anything that could plausibly be scored as Tier 1 or Tier 2 — those are the findings that move the number on the term sheet, not the ones that make the report longer.
 
 ## Preparing With a Distributed Team
 
@@ -137,7 +143,11 @@ Acquirers care about integration cost: how expensive is it to merge your technol
 
 ### Can we remediate technical debt quickly before due diligence? (Scenario: CTO with 4 weeks before the due diligence audit begins)
 
-Yes, but prioritise ruthlessly. Four-week sprint: Week 1 — remove all hardcoded secrets, update critical dependency vulnerabilities, enable automated deployment. Week 2 — write tests for authentication, payment, and core business logic (target 60% coverage on critical paths). Week 3 — set up monitoring (Sentry, uptime checks), implement database backup and tested restoration. Week 4 — document architecture, create API documentation, prepare a security overview document. This sprint will not fix everything, but it addresses the deal-killing red flags.
+Yes, but prioritise ruthlessly. Four-week sprint: Week 1 — remove all hardcoded secrets, update critical dependency vulnerabilities, enable automated deployment. Week 2 — write tests for authentication, payment, and core business logic (target 60% coverage on critical paths). Week 3 — set up monitoring (Sentry, uptime checks), implement database backup and tested restoration. Week 4 — document architecture, create API documentation, prepare a security overview document. This sprint will not fix everything, but it addresses the deal-killing red flags — using the severity framework above, the goal is clearing every Tier 1 finding and as many Tier 2 findings as the four weeks allow.
+
+### What is a "bus factor" and why do investors care about it? (Scenario: Solo technical founder preparing for a seed or Series A audit)
+
+Bus factor is the number of people who could be hit by a bus (or simply resign) before the project stalls because critical knowledge lived only in their heads. A bus factor of one — usually the founding engineer — is one of the most common Tier 2 findings in early-stage due diligence, because it means the investor's capital is contingent on one person's continued availability and goodwill. Auditors probe for it by checking commit history concentration, asking who can explain the deployment process from memory, and looking for documentation that would let a new hire operate the system without that person. Raising your bus factor above one — through documentation, pairing, and deliberately spreading ownership of critical modules — is one of the highest-leverage fixes available in the run-up to a raise, because unlike test coverage it can often be meaningfully improved in weeks, not months.
 
 <script type="application/ld+json">
 {
@@ -181,7 +191,15 @@ Yes, but prioritise ruthlessly. Four-week sprint: Week 1 — remove all hardcode
       "name": "Can we remediate technical debt quickly before due diligence?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, in a focused 4-week sprint: Week 1 remove secrets and update dependencies. Week 2 write tests for critical paths. Week 3 set up monitoring and backups. Week 4 document architecture and APIs. This addresses deal-killing red flags."
+        "text": "Yes, in a focused 4-week sprint: Week 1 remove secrets and update dependencies. Week 2 write tests for critical paths. Week 3 set up monitoring and backups. Week 4 document architecture and APIs. This addresses deal-killing red flags, prioritising Tier 1 and Tier 2 findings in the severity framework."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a 'bus factor' and why do investors care about it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bus factor is the number of people who could leave before the project stalls because critical knowledge lived only in their heads. A bus factor of one is a common Tier 2 finding in early-stage due diligence, since it ties the investment to one person's continued availability. Auditors check commit history concentration and documentation coverage. Raising bus factor above one through documentation and shared ownership is a high-leverage, weeks-not-months fix."
       }
     }
   ]

@@ -16,7 +16,8 @@ Content Format: Strategic Guide
   "description": "A strategic guide for CTOs on adopting API-first architecture — covering design principles, versioning strategies, documentation standards, and the business case for treating APIs as first-class products.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-07-31"
+  "datePublished": "2026-07-31",
+  "dateModified": "2026-08-05"
 }
 </script>
 
@@ -26,12 +27,12 @@ API-first architecture inverts this approach: you design the API contract before
 
 ## Why API-First Matters More in 2026
 
-The average enterprise SaaS product now integrates with 15-25 other tools. Salesforce connects to HubSpot connects to Slack connects to your custom analytics dashboard. If your software cannot participate in this ecosystem seamlessly, it becomes an isolated island that enterprise buyers will not purchase.
+The scale of enterprise integration has become genuinely hard to overstate. Okta's 2025 Businesses at Work report — which tracks app usage across thousands of customer organisations — found that the average company now runs 101 different applications, crossing the 100-app threshold for the first time — a jump that followed several years of the average sitting flat below 90, not a steady climb, which suggests the ecosystem is now expanding in sudden bursts rather than gradually. Salesforce connects to HubSpot connects to Slack connects to your custom analytics dashboard, and every one of those connections is an API call your software either supports cleanly or forces a partner to hack around. If your software cannot participate in this ecosystem seamlessly, it becomes an isolated island that enterprise buyers increasingly will not purchase — procurement checklists now routinely ask for API documentation before a demo is even scheduled.
 
 **The business case is straightforward:**
 
-- **Faster development.** When frontend and backend teams agree on the API contract upfront, they can work in parallel. The frontend team builds against mock responses while the backend team implements the real logic. This reduces total development time by 20-30%.
-- **Easier partner integrations.** A well-designed public API turns every potential partner into a distribution channel. Stripe grew to dominance partly because its API was so elegant that developers chose it over competitors with better pricing.
+- **Faster, less error-prone development.** When frontend and backend teams agree on the API contract upfront, they can work in parallel against a shared, machine-readable specification instead of a shifting target. The frontend team builds against mock responses while the backend team implements the real logic, which removes the largest source of late-stage integration rework: teams discovering, days before launch, that the frontend expected a shape the backend never agreed to build.
+- **Easier partner integrations.** A well-designed public API turns every potential partner into a distribution channel. Stripe's early growth is widely credited in the developer tooling industry to how cleanly its API was designed — developers chose it over competitors with comparable pricing because integration friction was near zero.
 - **Future-proofing.** When you need to build a mobile app, a CLI tool, or support a webhook integration, the API already exists. You are adding a new client, not rebuilding the backend.
 
 ## The Contract-First Design Process
@@ -59,6 +60,21 @@ The "REST vs GraphQL" debate has matured. The answer in 2026 is almost always: "
 | Overfetching | Common problem | Solved by design | N/A (schema-defined) |
 
 **The pragmatic approach:** Use REST for your public API (lowest barrier for integrators), GraphQL for your own frontend (optimal data fetching), and gRPC for internal service-to-service communication (maximum performance). These are not mutually exclusive — many mature platforms use all three.
+
+## The API Maturity Model: Diagnosing How "RESTful" Your API Actually Is
+
+Most teams that claim to have "a REST API" have actually built something closer to RPC-over-HTTP: a single endpoint per action, verbs baked into the URL (`/getInvoice`, `/updateCustomer`), and a 200 status code regardless of what actually happened. This is not a cosmetic issue — it is the difference between an API that plays well with generic tooling (caching proxies, API gateways, client SDK generators) and one that requires custom integration code from every single partner.
+
+The Richardson Maturity Model, introduced by Leonard Richardson in a 2008 conference talk and popularised in a widely-cited 2010 article by Martin Fowler, gives a concrete way to diagnose this. It defines four levels of REST adoption:
+
+| Level | Name | What It Looks Like | Symptom If You're Not Here |
+|-------|------|---------------------|------------------------------|
+| 0 | The Swamp of POX | One endpoint, one HTTP verb (usually POST), the real operation encoded inside the request body | Every client needs custom logic per operation; generic HTTP tooling (caching, rate limiting) does not work |
+| 1 | Resources | Multiple endpoints, one per resource (`/customers`, `/invoices`) — but still one HTTP verb doing everything | URLs are meaningful, but caching and idempotency still do not work as HTTP intends |
+| 2 | HTTP Verbs | Correct use of GET, POST, PUT, PATCH, DELETE, and HTTP status codes to convey outcome | This is where most well-built commercial APIs sit — Stripe, Twilio, and GitHub all operate here |
+| 3 | Hypermedia Controls (HATEOAS) | Responses include links to related actions, so clients discover what they can do next from the API itself | Rare in practice — powerful for long-term evolvability but adds client complexity most teams don't need |
+
+**The pragmatic target for 2026:** Level 2 is the right destination for the large majority of B2B APIs. It gets you correct HTTP caching, predictable error handling, and out-of-the-box compatibility with every API gateway and SDK generator on the market — the same level Stripe, Twilio, and GitHub operate at. Level 3 is rarely worth the added client-side complexity unless your API genuinely needs to evolve its available actions without forcing a version bump, which is a narrow use case for most B2B products. Use the model as a self-audit: pull five endpoints from your existing API at random and score each one. If more than one lands at Level 0 or 1, that is your most cost-effective refactoring target before investing further in documentation or partner onboarding — fixing the verb and status-code layer is cheap early; fixing it after twenty partners have integrated against the wrong contract is not.
 
 ## Versioning: The Hardest Problem in API Design
 
@@ -129,6 +145,10 @@ Assign API ownership to a dedicated "platform team" of 2-3 senior engineers who 
 
 Three mechanisms: (1) Contract-first development — both teams build against the agreed OpenAPI spec, eliminating ambiguity. (2) Automated contract testing — tools like Pact or Dredd verify that the implementation matches the specification on every build. (3) API style guides — document naming conventions, pagination patterns, and error formats so every endpoint feels consistent regardless of which team built it. At Manifera, our cross-timezone API reviews happen during daily overlap hours to ensure alignment.
 
+### How do we know if our existing API is actually good, or just "technically REST"? (Scenario: CTO inheriting a legacy API with vague documentation and inconsistent behaviour)
+
+Score it against the Richardson Maturity Model. Pull 5-10 endpoints at random and check: Do they use proper resource-based URLs (Level 1)? Do they use correct HTTP verbs and status codes instead of always returning 200 with an error buried in the body (Level 2)? Most commercially successful B2B APIs — including Stripe, Twilio, and GitHub's — operate at Level 2, which is the pragmatic target for the large majority of teams. If your audit finds endpoints stuck at Level 0 (a single POST endpoint with the real action encoded in the payload), that is the highest-leverage place to invest refactoring effort before adding new features or onboarding more partners.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -172,6 +192,14 @@ Three mechanisms: (1) Contract-first development — both teams build against th
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Three mechanisms: (1) Contract-first development — both teams build against the agreed OpenAPI spec. (2) Automated contract testing — tools like Pact or Dredd verify implementation matches specification on every build. (3) API style guides — document naming conventions, pagination patterns, and error formats so every endpoint feels consistent regardless of which team built it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we know if our existing API is actually good, or just 'technically REST'? (Scenario: CTO inheriting a legacy API with vague documentation and inconsistent behaviour)",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Score it against the Richardson Maturity Model. Check whether endpoints use proper resource-based URLs (Level 1) and correct HTTP verbs and status codes instead of always returning 200 with an error buried in the body (Level 2). Most commercially successful B2B APIs, including Stripe, Twilio, and GitHub, operate at Level 2, which is the pragmatic target for most teams. Endpoints stuck at Level 0 — a single POST endpoint with the action encoded in the payload — are the highest-leverage refactoring target."
       }
     }
   ]

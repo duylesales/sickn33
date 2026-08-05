@@ -16,7 +16,8 @@ Content Format: Strategic Framework
   "description": "A strategic framework for CTOs planning cloud migrations — covering the 6Rs of migration, risk assessment, cost modelling, and a phased execution approach that minimises business disruption.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-08-06"
+  "datePublished": "2026-08-06",
+  "dateModified": "2026-08-05"
 }
 </script>
 
@@ -26,7 +27,7 @@ Cloud migration is not a technology project. It is a business transformation tha
 
 ## The 6Rs: Choosing the Right Strategy for Each Workload
 
-Not every application should be migrated the same way. AWS originally defined the "6Rs" framework, and it remains the most practical way to categorise migration strategies:
+Not every application should be migrated the same way. Gartner first outlined five migration strategies in 2011; AWS's Stephen Orban expanded the framework to six in a 2016 AWS Enterprise Strategy blog post, and the "6Rs" remains the most practical way to categorise migration strategies a decade later:
 
 **1. Rehost (Lift and Shift).** Move the application as-is to cloud infrastructure. No code changes. The fastest approach (days to weeks per application) but captures the least cloud benefit. Best for: applications with imminent data centre lease expirations that need to move quickly.
 
@@ -42,16 +43,16 @@ Not every application should be migrated the same way. AWS originally defined th
 
 ## Cost Modelling: The Cloud Is Not Automatically Cheaper
 
-The number one cloud migration myth: "Moving to the cloud will reduce our infrastructure costs." Sometimes it does. Often it does not — at least not initially.
+The number one cloud migration myth: "Moving to the cloud will reduce our infrastructure costs." Sometimes it does. Often it does not — at least not initially. This is not a fringe problem: Flexera's 2025 State of the Cloud Report found that 27% of cloud spend continues to be wasted, a figure that has held remarkably steady in the 27-32% range every year since Flexera started tracking it in 2019, and that 84% of organisations name managing cloud spend as their top cloud challenge. Cloud waste is not a rookie mistake that goes away with experience — it is a structural feature of how cloud billing works that requires active, ongoing management.
 
 **The hidden costs of cloud:**
 
 - **Data transfer costs.** Cloud providers charge for data leaving their network (egress). If your application transfers 10TB/month out of AWS, that is approximately €900/month in egress fees alone.
 - **Managed service premiums.** AWS RDS costs 2-3x more than running the same database on a self-managed EC2 instance. You pay for the convenience of automated backups, patching, and failover.
 - **Over-provisioning.** Teams that migrate by "lifting and shifting" often provision the same server sizes they had on-premises — ignoring that cloud allows dynamic scaling. A server that ran at 15% CPU utilisation on-premises will run at 15% CPU utilisation on AWS, costing the same amount for 85% wasted capacity.
-- **Cost management skills.** Cloud costs require active management. Without someone monitoring reserved instances, spot pricing, and resource utilisation, costs balloon by 30-60% within the first year.
+- **Cost management skills.** Cloud costs require active management. Without someone monitoring reserved instances, spot pricing, and resource utilisation, the Flexera waste figure above (27%+) is exactly what accumulates by default.
 
-**The realistic cost trajectory:** Expect costs to increase 10-20% in the first 6 months (migration overhead, dual-running environments, learning curve). Break-even typically occurs at month 12-18 as teams optimise resource allocation. Cost savings of 20-40% compared to on-premises are achievable by year 2, but only with active cost management.
+**The realistic cost trajectory:** Expect costs to increase 10-20% in the first 6 months (migration overhead, dual-running environments, learning curve). Break-even typically occurs at month 12-18 as teams optimise resource allocation. Cost savings of 20-40% compared to on-premises are achievable by year 2, but only with active cost management — and against a backdrop where Gartner forecasts worldwide public cloud end-user spending will reach $850 billion in 2026, a 21.3% jump from 2025, meaning the pressure to actively manage spend (rather than assume the cloud manages itself) is only increasing industry-wide.
 
 ## The Phased Migration Approach
 
@@ -66,6 +67,30 @@ The Big Bang migration — move everything in a single weekend — is how cloud 
 **Phase 4: Migration waves (2-4 weeks per wave).** Group remaining applications into waves of 3-5 applications based on dependencies and risk. Each wave follows the same pattern: pre-migration testing, migration execution, validation, and rollback readiness.
 
 **Phase 5: Optimisation (ongoing).** Right-size instances based on actual utilisation data (not estimates). Implement auto-scaling. Purchase reserved instances for stable workloads. Shut down unused resources.
+
+## The Migration Risk Assessment Matrix: Scoring Workloads Before You Move Them
+
+The phased approach above tells you to sequence migrations from low-risk to high-risk. It does not tell you how to score risk consistently across dozens of applications when everyone contributing to the roadmap has a different intuition about what "risky" actually means. A structured scoring matrix removes that guesswork and gives the Cloud Centre of Excellence a defensible, repeatable way to assign each application to a wave — the same discipline the 6Rs framework brings to strategy selection, applied to sequencing.
+
+**Score each application from 1 (low) to 3 (high) across four dimensions:**
+
+| Dimension | 1 — Low Risk | 2 — Medium Risk | 3 — High Risk |
+|-----------|---------------|-------------------|-------------------|
+| Business criticality | Internal tool, no revenue impact if down | Supports one department or a secondary revenue stream | Directly processes revenue or is customer-facing at scale |
+| Data volume and sensitivity | Under 50GB, no regulated personal data | 50GB-500GB, some personal data | Over 500GB, or regulated data (financial, health, large-scale personal data) |
+| Integration complexity | Standalone, 0-1 dependencies | 2-4 upstream or downstream dependencies | 5+ dependencies or real-time integration requirements |
+| Team's experience with this workload pattern | Migrated this exact pattern before | Migrated something similar before | First time migrating this specific pattern |
+
+**Reading the total score (sum of all four dimensions, range 4-12):**
+
+| Total Score | Recommended Placement | Rationale |
+|--------------|--------------------------|--------------|
+| 4-5 | Pilot (Phase 3) | Low blast radius if something goes wrong — ideal for building team confidence and refining runbooks |
+| 6-8 | Wave 1-2 | Moderate risk, manageable with standard rollback procedures |
+| 9-10 | Wave 3 or later | High risk — schedule after the team has 2-3 successful migrations behind it, with extra validation time budgeted |
+| 11-12 | Reconsider Rehost; evaluate Retain or Refactor instead | The risk profile suggests a straight lift-and-shift is the wrong strategy — either keep the workload on-premises for now or invest in re-architecting before moving it |
+
+Running this exercise during Phase 1 (Assessment) routinely reorders what looked like a logical migration sequence — alphabetical, or based on which team asked first — into a genuinely risk-ordered one. It is common for the applications everyone assumed would go first, because they are the newest or best-documented, to score as medium-to-high risk once data sensitivity and integration count are counted honestly rather than assumed.
 
 ## Database Migration: Where Everything Gets Complicated
 
@@ -121,6 +146,10 @@ Four controls: (1) Implement tagging on every resource — tag by team, environm
 
 Yes — hybrid cloud is a legitimate long-term architecture, not just a transitional state. Use a site-to-site VPN or AWS Direct Connect to create a secure, low-latency connection between your on-premises data centre and the cloud environment. Applications that must remain on-premises can communicate with cloud-hosted services seamlessly. Many financial services and healthcare organisations operate in hybrid mode permanently due to regulatory requirements around data residency.
 
+### How do we decide which applications to migrate first when we have 20+ candidates and no obvious order? (Scenario: CCoE lead building a migration roadmap with several teams lobbying for their application to go first)
+
+Score each application on four dimensions — business criticality, data volume and sensitivity, integration complexity, and the team's prior experience with that workload pattern — each from 1 (low) to 3 (high), giving a total risk score from 4 to 12. Applications scoring 4-5 go in the pilot; 6-8 fill Wave 1-2; 9-10 wait until the team has 2-3 successful migrations behind it; 11-12 should be reconsidered for Retain or Refactor rather than a straight lift-and-shift. This removes the politics from sequencing — teams lobbying to go first because their application is "important" often score as high-risk once data sensitivity and dependency count are counted honestly, which is a useful and objective reason to place them later in the roadmap.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -164,6 +193,14 @@ Yes — hybrid cloud is a legitimate long-term architecture, not just a transiti
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes — hybrid cloud is a legitimate long-term architecture. Use site-to-site VPN or AWS Direct Connect for secure, low-latency connections. Many financial services and healthcare organisations operate in hybrid mode permanently due to data residency requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we decide which applications to migrate first when we have 20+ candidates and no obvious order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Score each application on four dimensions — business criticality, data volume and sensitivity, integration complexity, and the team's prior experience with that workload pattern — each from 1 to 3, for a total risk score from 4 to 12. Scores of 4-5 go in the pilot; 6-8 fill Wave 1-2; 9-10 wait until the team has 2-3 successful migrations behind it; 11-12 should be reconsidered for Retain or Refactor rather than a straight lift-and-shift. This removes politics from sequencing decisions."
       }
     }
   ]

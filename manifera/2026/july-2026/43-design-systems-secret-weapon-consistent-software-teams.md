@@ -16,13 +16,14 @@ Content Format: Strategic Overview
   "description": "An overview of design systems for product teams — covering what they include, when to build one, how they accelerate development, and the ROI of investing in a shared component library.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-08-12"
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-05"
 }
 </script>
 
 Open your application in three different browsers. Navigate to the settings page, the dashboard, and the onboarding flow. Count the different button styles. Count the different font sizes. Count the different shades of the brand colour. If the number is higher than your design specification says it should be — and it will be — you have a consistency problem that is costing you engineering hours, confusing your users, and undermining your brand.
 
-A design system solves this. It is a single source of truth for how your product looks, behaves, and communicates — a shared library of reusable components, design tokens, and guidelines that every team references when building new features.
+A design system solves this. It is a single source of truth for how your product looks, behaves, and communicates — a shared library of reusable components, design tokens, and guidelines that every team references when building new features. Nathan Curtis of EightShapes captured the mental shift precisely, in a line Brad Frost — who popularised the atomic design methodology underpinning most modern design systems — quotes approvingly in his own book on the topic: "A system isn't a project with an end, it's the origin story of a living and evolving product that'll serve other products." Treating a design system as a project with a ship date, rather than a product with its own roadmap and maintainers, is the single most common reason design systems stall after an enthusiastic launch.
 
 ## What a Design System Actually Contains
 
@@ -40,9 +41,9 @@ A design system is not a Figma file. It is not a CSS framework. It is a living p
 
 Building a design system requires upfront investment — typically 2-4 months of a 2-3 person team (designer + 1-2 frontend developers). The ROI materialises through:
 
-**Faster feature development.** Teams that use a mature design system ship new features 30-50% faster because they assemble from existing components rather than designing and building from scratch. A new settings page that would take 2 weeks to design and build takes 3 days when the form components, layout patterns, and interaction behaviours already exist.
+**Faster feature development.** Teams composing new UI from existing, pre-tested components consistently report meaningfully faster delivery than teams designing and building each screen from scratch — directionally, a new settings page that might take 2 weeks to design and build from a blank canvas can often ship in days when the form components, layout patterns, and interaction behaviours already exist and only need assembling. Sparkbox's 2022 Design Systems Survey — its most recent published edition, and still the most-cited dataset on this topic — found that 84% of design system subscribers are required to use the system in their work and 65% report their needs as subscribers are being met, which is the leading indicator of a system actually accelerating (rather than obstructing) delivery. Curtis puts the underlying logic simply: "Systems solve the easy problems so Products can solve hard problems more easily. Products own their destiny, systems equip them to realize that destiny."
 
-**Reduced design-to-development handoff friction.** When designers and developers share the same component vocabulary, specifications become "use the DataTable component with sortable columns" instead of pixel-perfect mockups that developers interpret differently. Handoff meetings that took 2 hours now take 20 minutes.
+**Reduced design-to-development handoff friction.** When designers and developers share the same component vocabulary, specifications become "use the DataTable component with sortable columns" instead of pixel-perfect mockups that developers interpret differently — collapsing what is often a lengthy back-and-forth handoff meeting into a much shorter confirmation.
 
 **Visual consistency.** Users unconsciously trust software that looks consistent. Inconsistent button styles, spacing, and colours create a subconscious impression of unreliability — particularly damaging for enterprise SaaS where trust drives purchasing decisions.
 
@@ -68,6 +69,22 @@ Not every team needs a design system. The investment makes sense when:
 **Phase 4: Documentation (ongoing).** Build a documentation site (Storybook is the standard) where developers can browse components, see live examples, copy code snippets, and understand usage guidelines.
 
 **Phase 5: Adoption (ongoing).** Migrate existing pages to use the new components. This happens gradually — every new feature uses the design system, and legacy pages are migrated during routine maintenance.
+
+## The Design System Maturity Model: From Ad Hoc to Federated Platform
+
+Building the five phases above gets you a component library. It does not automatically get you a design system that teams actually rely on — those are different milestones, and most organisations underestimate the distance between them. A maturity model is useful because it tells you not just what to build next, but what kind of problem you currently have: a build problem (early levels) or an adoption and governance problem (later levels), which require entirely different fixes.
+
+| Level | Stage | What Actually Exists | Typical Signal |
+|---|---|---|---|
+| 0 | Ad hoc | No shared components; every team builds its own buttons, forms, and modals | 3+ teams shipping visibly inconsistent UI; the "count the button styles" problem |
+| 1 | Style guide | A static reference (Figma file, brand PDF) documents colours and type, but nothing is codified in code | Designers hand off specs; developers still hand-build every component from a picture |
+| 2 | Component library | A coded, documented component library exists (typically in Storybook) covering 10-15 core components | Adoption is inconsistent — some teams use it, others route around it because onboarding and support are thin |
+| 3 | Adopted product | The system has a defined governance model, a contribution process, and is a required dependency for new UI work | New features are built from the system by default; legacy pages are migrated opportunistically |
+| 4 | Federated platform | Multiple product teams contribute under an RFC or hub-and-spoke process; tokens flow to web, mobile, and native consistently | The system has its own roadmap, backlog, and (often) a named team — it is treated as internal infrastructure, not a side project |
+
+**Where most design systems actually get stuck** is the transition from Level 2 to Level 3, and the data explains why: in Sparkbox's 2022 survey, only 30% of respondents reported having support, training, and onboarding in place for their design system, yet organisations with a successful system had those practices in place 76% of the time — making onboarding investment, not component count, the clearest differentiator between a Level 2 library nobody trusts and a Level 3 product everyone defaults to. The same survey found staffing to be the largest gap between what teams call "a top challenge" (35%) and what they treat as "a top priority" — in other words, most organisations correctly diagnose the problem and then under-resource the fix anyway.
+
+**A practical rule:** do not attempt governance (see below) before you are solidly at Level 2 — there is nothing to govern yet. Do not skip onboarding and support investment on the way to Level 3 — per the data above, it is the single highest-leverage spend in the whole model. And do not expect Level 4 to happen organically; it requires an explicit organisational decision to treat the design system as a platform with dedicated, protected headcount, not a part-time project for whichever designer has spare capacity that sprint.
 
 ## Governance: Who Gets to Change a Shared Component
 
@@ -118,6 +135,10 @@ A style guide documents visual standards (colours, fonts, logos) as a reference.
 ### Who should be allowed to change a shared component once multiple teams depend on it? (Scenario: Design system lead deciding on a contribution and governance model)
 
 It depends on your scale. Under 5 teams and 30 components, keep a centralized model where one team owns all changes. Past that, introduce a federated RFC process so any team can propose changes with review from the design system team and a peer. Past 6-7 teams, add a part-time "design system champion" per team under a hub-and-spoke model so ownership scales without losing a single source of truth.
+
+### We have a component library in Storybook but teams keep routing around it — what maturity stage are we actually at, and how do we fix it? (Scenario: Design system lead frustrated that a built library isn't getting adopted)
+
+Having coded, documented components in Storybook puts you at Level 2 (Component Library) on the design system maturity model, not Level 3 (Adopted Product) — and the gap between those two levels is almost never about the components themselves. Sparkbox's 2022 Design Systems Survey found that only 30% of design systems have support, training, and onboarding in place, but 76% of systems considered successful by their own organisation had exactly that in place — the differentiator is not more components, it is investment in helping teams actually adopt the ones that exist. Concretely: run a live onboarding session for each consuming team, publish a "why use this instead of building your own" one-pager, and add a design-system-compliance check to code review so routing around the library becomes visibly a choice, not a default.
 
 <script type="application/ld+json">
 {
@@ -170,6 +191,14 @@ It depends on your scale. Under 5 teams and 30 components, keep a centralized mo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Under 5 teams and 30 components, keep a centralized model where one team owns all changes. Past that, introduce a federated RFC process reviewed by the design system team and a peer. Past 6-7 teams, add a part-time design system champion per team under a hub-and-spoke model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We have a component library in Storybook but teams keep routing around it — what maturity stage are we at, and how do we fix it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A coded, documented Storybook library puts you at Level 2 (Component Library), not Level 3 (Adopted Product). Sparkbox's 2022 Design Systems Survey found only 30% of design systems have support, training, and onboarding in place, but 76% of self-reported successful systems had exactly that — the fix is onboarding investment, not more components."
       }
     }
   ]

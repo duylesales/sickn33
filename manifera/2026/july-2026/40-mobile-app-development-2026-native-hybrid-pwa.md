@@ -16,7 +16,8 @@ Content Format: Decision Guide
   "description": "A decision guide for founders and CTOs choosing between native, hybrid (React Native, Flutter), and Progressive Web App approaches for mobile development in 2026.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-08-09"
+  "datePublished": "2026-08-09",
+  "dateModified": "2026-08-05"
 }
 </script>
 
@@ -47,7 +48,7 @@ For most B2B SaaS applications — dashboards, CRM tools, project management app
 
 ## Cross-Platform: The 2026 Sweet Spot
 
-Cross-platform frameworks let you write one codebase that runs on both iOS and Android. In 2026, two frameworks dominate:
+Cross-platform frameworks let you write one codebase that runs on both iOS and Android. In 2026, two frameworks dominate: Stack Overflow's 2024 Developer Survey put Flutter ahead of React Native among professional developers (46% vs. 35% among those using a cross-platform framework), with the two together accounting for over 80% of cross-platform usage — but Flutter's technical lead hasn't translated into the job market, where React Native still posts roughly six times more open listings, reflecting how much longer it's been the default choice at established companies. Neither framework is "winning" decisively in 2026; the right choice depends on your team's existing skills and hiring pool more than on raw ecosystem size.
 
 **React Native** — JavaScript/TypeScript based, backed by Meta. The largest ecosystem, the most libraries, and the easiest hiring market. If your web team already uses React, React Native allows significant code sharing between web and mobile.
 
@@ -73,6 +74,8 @@ Cross-platform development costs 40-60% less than maintaining two native codebas
 
 A Progressive Web App (PWA) is a web application that behaves like a native app — it can be installed on the home screen, works offline, sends push notifications, and runs full-screen without browser chrome.
 
+The results of well-executed PWAs are well documented. Google's own web.dev case study on Twitter Lite recorded a 65% increase in pages per session, a 75% increase in Tweets sent, and a 20% decrease in bounce rate after the PWA replaced the previous mobile web experience — achieved on a service worth of under 1MB that loaded reliably on slow connections. Starbucks reported similar results with its ordering PWA: daily active users roughly doubled after launch, at a fraction of the native app's download size. These are not edge cases — they reflect the core PWA value proposition of removing install friction for content- and transaction-heavy experiences.
+
 **When PWA is the right choice:**
 
 - **Content-heavy applications.** News apps, documentation tools, e-commerce catalogues — where the primary interaction is reading and browsing.
@@ -82,7 +85,7 @@ A Progressive Web App (PWA) is a web application that behaves like a native app 
 
 **PWA limitations in 2026:**
 
-- **iOS restrictions.** Apple still limits PWA capabilities on iOS: no background push notifications, limited offline storage, no access to Bluetooth or NFC. If your user base is heavily iOS, a PWA will feel like a second-class experience.
+- **iOS restrictions — and a genuine EU-specific wrinkle.** Apple still limits PWA capabilities on iOS: no background push notifications, limited offline storage, no access to Bluetooth or NFC. European teams should also be aware of a 2024 episode worth knowing about: as part of complying with the EU's Digital Markets Act, Apple briefly announced in February 2024 that it would remove home-screen PWA support entirely for EU users in iOS 17.4, then reversed the decision within two weeks after the European Commission signalled it would investigate. Home-screen PWAs remain available in the EU today, but the episode is a useful reminder that PWA capability on iOS is ultimately a policy decision Apple controls, not a stable technical guarantee — a real consideration when betting a multi-year roadmap on PWA for an iOS-heavy EU user base.
 - **No App Store presence.** Being discoverable in the App Store matters for B2C applications. B2B applications distributed via direct links are less affected.
 - **Limited device API access.** No camera with advanced controls, no geofencing, no access to the contact list.
 
@@ -97,6 +100,20 @@ A Progressive Web App (PWA) is a web application that behaves like a native app 
 | Platform features needed | Deep OS integration | Standard features | Basic features |
 | Update frequency | Monthly | Weekly | Daily |
 | Primary users | iOS-heavy consumer | Mixed B2B | Browser-first B2B |
+
+### Scoring Your Specific Project
+
+The table above works for a first pass, but most real decisions sit between rows — a €70K budget with some GPU-intensive screens, for example. A more reliable method is to score your project against five weighted criteria and let the total point out the answer, rather than pattern-matching to the nearest row.
+
+| Criterion | Weight | Native scores high when... | Cross-Platform scores high when... | PWA scores high when... |
+|---|---|---|---|---|
+| Performance/hardware access | 25% | App is GPU- or sensor-bound (games, AR, real-time media) | App is data/UI-bound but responsive (dashboards, forms, feeds) | App is primarily content display with light interactivity |
+| Budget ceiling | 20% | Budget exceeds €100K with room for two platform teams | Budget sits in the €40K–€100K band | Budget is under €40K or funded from an existing web budget |
+| Distribution channel need | 20% | App Store/Play Store discovery drives acquisition (consumer apps) | Discovery matters but isn't the primary acquisition channel | Users arrive via a direct link, email, or existing web funnel |
+| Update cadence required | 15% | Monthly release cycle is acceptable | Weekly releases needed, OTA update tooling in place | Daily or continuous deployment desired |
+| Existing team skillset | 20% | Team already has Swift/Kotlin expertise | Team already knows React or is starting fresh with mobile | Team is web-only (HTML/CSS/JS, no mobile experience) |
+
+Score each criterion 1–5 for how well your project matches each column, multiply by the weight, and sum. In practice, the exercise is less about the arithmetic and more about forcing an honest conversation: teams consistently overweight "we might need AR someday" (performance/hardware) and underweight "we have zero mobile engineers today" (existing team skillset) — the second criterion is usually the one that should have decided the question from the start. The framework is for teams that already know they need a mobile app and are choosing how to build it, not for teams still validating whether they need one at all.
 
 **The 2026 default recommendation:** Start with a responsive web app. If mobile engagement data shows users want a native experience, build with React Native (if your team uses React) or Flutter (if starting fresh). Go native only if you hit specific technical limitations that cross-platform cannot solve.
 
@@ -131,6 +148,10 @@ Plan for 15-25% of the initial development cost annually for maintenance. This c
 ### Should we build our MVP as a mobile app or a web app? (Scenario: First-time founder deciding where to invest limited seed funding)
 
 Web app, almost always. A responsive web application is 40-60% cheaper to build, deploys instantly without App Store approval, and can be iterated on daily. Build a mobile app only after you have validated product-market fit through your web app and your analytics show that mobile users have meaningfully different needs that a responsive web app cannot serve. The exception: if your product fundamentally requires mobile-specific capabilities (camera, GPS tracking, push notifications for time-critical alerts).
+
+### Is it safe to bet a European product's mobile strategy on PWA long-term? (Scenario: CTO of a Dutch B2B platform weighing PWA against a native iOS app for EU customers)
+
+Mostly yes, with one caveat worth building into your risk register. In February 2024, Apple briefly announced it would remove home-screen PWA support entirely for EU users as part of its Digital Markets Act compliance, then reversed the decision within two weeks after the European Commission signalled a formal investigation. Home-screen PWAs, including push notifications and offline storage, remain fully available in the EU today, and the DMA's broader intent — more competition and openness on Apple's platform — points toward PWA capability staying protected rather than shrinking further. The practical lesson is not "avoid PWA," but "don't treat any single platform's PWA support as immovable": build your PWA on standard web APIs, keep an eye on DMA enforcement developments, and if your product is mission-critical for iOS-heavy EU customers, budget contingency time for a native fallback rather than assuming zero regulatory risk.
 
 <script type="application/ld+json">
 {
@@ -175,6 +196,14 @@ Web app, almost always. A responsive web application is 40-60% cheaper to build,
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Web app, almost always. 40-60% cheaper, instant deployment, daily iteration. Build mobile only after validating product-market fit through web and seeing that mobile users have needs a responsive web app cannot serve."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to bet a European product's mobile strategy on PWA long-term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mostly yes, with one caveat. In February 2024, Apple briefly announced it would remove home-screen PWA support for EU users under Digital Markets Act compliance, then reversed the decision within two weeks after EU Commission scrutiny. Home-screen PWAs remain fully available in the EU today. Build on standard web APIs, monitor DMA enforcement, and budget contingency for a native fallback if the product is mission-critical for iOS-heavy EU customers."
       }
     }
   ]
