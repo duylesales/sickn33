@@ -29,6 +29,8 @@ When you release an iOS or Android application, you are essentially distributing
 
 For enterprise CTOs, engaging an [offshore software development team](https://www.manifera.com/services/offshore-software-development/) for mobile projects in 2026 requires strict architectural oversight. You cannot simply hand over a Figma file and expect a secure IPA or APK in return. 
 
+**The threat model has also expanded structurally.** Since the EU Digital Markets Act took effect in March 2024, Apple has been required to permit alternative iOS app marketplaces and third-party payment processors within the EU. That means a growing share of installs in your European user base can bypass Apple's own App Review gate entirely — the binary itself, not App Review, is now the last line of defense against a tampered or resigned build reaching a user's device. Offshore teams that were previously relying on Apple's review process as an implicit security backstop no longer have that luxury.
+
 This guide outlines the essential technical blueprint for managing offshore mobile app development teams securely.
 
 ## 1. Zero-Trust API Communication

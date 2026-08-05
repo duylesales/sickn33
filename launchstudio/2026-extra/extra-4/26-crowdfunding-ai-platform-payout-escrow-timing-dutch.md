@@ -1,17 +1,18 @@
 ---
-Titel: "AI Crowdfundingplatforms: waarom uitbetalings-escrow-timing een eigen beveiligingsbeoordeling nodig heeft"
+Titel: "AI-crowdfundingplatformen: Waarom de timing van uitbetalings-escrow een eigen beveiligingsbeoordeling nodig heeft"
 Trefwoorden: ai saas platform, ai secure, crowdfunding platform, escrow logic, payment security, ai-generated code
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# AI Crowdfundingplatforms: waarom uitbetalings-escrow-timing een eigen beveiligingsbeoordeling nodig heeft
+
+# AI-crowdfundingplatformen: Waarom de timing van uitbetalings-escrow een eigen beveiligingsbeoordeling nodig heeft
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI Crowdfundingplatforms: waarom uitbetalings-escrow-timing een eigen beveiligingsbeoordeling nodig heeft",
-  "description": "Waarom AI-gegenereerde crowdfundingplatforms de uitbetalingen van makers vaak vrijgeven voordat de terugbetalingsperiode sluit, en hoe de escrow-statusmachine kan worden opgelost voordat echte backer-fondsen in gevaar komen.",
+  "headline": "AI-crowdfundingplatformen: Waarom de timing van uitbetalings-escrow een eigen beveiligingsbeoordeling nodig heeft",
+  "description": "Waarom met AI gegenereerde crowdfundingplatformen uitbetalingen aan makers vaak vrijgeven voordat het terugbetalingsvenster sluit.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,83 +31,86 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Hier is een cijfer dat de moeite waard is: 80% van de door AI gebouwde projecten bereiken nooit de productie. De meeste oprichters gaan ervan uit dat degenen die niet lanceren, sterven door een gebrek aan gebruikers of een slecht idee. Een aanzienlijk deel van hen sterft feitelijk aan iets dat veel kleiner is: een kloof in de financiële logica die een oprichter pas heeft opgevangen toen er echt geld doorheen stroomde. Crowdfundingplatforms zijn een categorie waarin dit risico zich vooral concentreert, omdat het kernproduct niet de campagnepagina is, maar de geldaanhoudende logica erachter, en die logica krijgt bijna nooit de aandacht die ze nodig heeft als ze snel wordt gegenereerd door een AI-coderingstool.
+Hier is een getal om bij stil te staan: 80% van de met AI gebouwde projecten bereikt nooit productie. De meeste oprichters nemen aan dat de projecten die er niet in slagen om te lanceren sterven door een gebrek aan gebruikers of een slecht idee. Een betekenisvol deel ervan sterft daadwerkelijk door iets wat veel smaller is – een financiële logica-kloof die een oprichter niet opmerkte totdat er echt geld doorheen bewoog. Crowdfundingplatformen zijn een categorie waar dit risico in het bijzonder is geconcentreerd, omdat het kernproduct niet de campagne-pagina is. Het is de geld-vasthoudende logica erachter, en die logica krijgt zelden de inspectie die het nodig heeft wanneer het snel wordt gegenereerd door een AI-coderingsassistent.
 
-## Escrow-timing is een toestandsmachine en geen betalingsintegratie
+## Uitbetalings-escrow-timing is een statusmachine, en geen betalingsintegratie
 
-De meeste AI-appbouwers gaan goed om met het aannemen van een betaling. Stripe of een vergelijkbare processor is een goed gedocumenteerde integratie, en de gegenereerde code heeft de neiging om deze correct aan te sluiten. Wat veel moeilijker is om goed te krijgen, en veel minder waarschijnlijk om expliciet in een prompt te worden gespecificeerd, is de staatsmachine die regelt wat er met dat geld gebeurt tussen het moment dat het wordt ingezameld en het moment dat het daadwerkelijk wordt vrijgegeven aan een campagnemaker. Een correcte uitbetalingsstroom voor crowdfunding moet meerdere statussen volgen (geld vastgehouden, terugbetalingsperiode open, terugbetalingsperiode gesloten, uitbetaling in aanmerking komend, uitbetaling vrijgegeven) en afdwingen dat overgangen alleen in de juiste volgorde plaatsvinden, zonder dat er een manier is om vooruit te springen.
+De meeste AI-app-bouwers handelen "ontvang een betaling" goed af – Stripe of een vergelijkbare verwerker is een goed gedocumenteerde integratie, en gegenereerde code heeft de neiging om het correct aan te sluiten. Wat aanzienlijk moeilijker is om op de juiste manier te krijgen, en aanzienlijk minder waarschijnlijk om expliciet in een prompt te worden gespecificeerd, is de statusmachine die regelt wat er met dat geld gebeurt tussen het moment dat het wordt geïnd en het moment dat het daadwerkelijk wordt vrijgegeven aan de maker van de campagne. Een correcte uitbetalingsstroom voor crowdfunding moet meerdere statussen volgen – fondsen vastgehouden, terugbetalingsvenster open, terugbetalingsvenster gesloten, uitbetaling geschikt, uitbetaling vrijgegeven – en afdwingen dat overgangen alleen in de juiste volgorde plaatsvinden, zonder manier om vooruit te springen.
 
-Door AI gegenereerde code laat dit vaak samenvallen in iets veel eenvoudigers: campagne bereikt doel, maakt geld vrij. Dat voldoet aan het gelukkige pad dat een oprichter waarschijnlijk zal testen – een campagne financieren en kijken naar de uitbetaling – terwijl hij het moeilijkere geval mist: een campagne die wordt gefinancierd en kort daarna wordt geannuleerd of betwist, gedurende de periode waarin de donateurs contractueel nog steeds recht hebben op terugbetaling. Als de uitbetaling al is gedaan voordat dat venster werd gesloten, heeft het platform geen geld meer om de terugbetalingen daadwerkelijk uit te voeren, en de oprichter zit nu persoonlijk aan de haak of legt aan de geldschieters uit waarom er geen terugbetalingen komen.
+Met AI gegenereerde code vouwt dit frequent samen tot iets wat veel eenvoudiger is: campagne bereikt doel, geef fondsen vrij. Dat voldoet aan het ideale pad dat een oprichter het meest waarschijnlijk test – een campagne financieren en kijken hoe de uitbetaling activeert – terwijl het het moeilijkere geval mist: een campagne die gefinancierd wordt, en kort daarna geannuleerd of betwist wordt, tijdens het venster waarin ondersteuners contractueel nog recht hebben op een terugbetaling. Als de uitbetaling al uitging voordat dat venster sloot, is er geen geld meer in de controle van het platform om de terugbetalingen daadwerkelijk uit te voeren. De oprichter staat nu persoonlijk garant of moet aan ondersteuners uitleggen waarom er geen terugbetalingen komen.
 
-## Waarom dit een speciale beoordeling verdient, en geen generieke beveiligingsscan
+## Waarom dit een toegewijde beoordeling verdient, en geen generieke beveiligingsscan
 
-Dit is een geval waarin een algemene beveiligingsaudit die controleert op SQL-injectie of blootgestelde API-sleutels een platform passeert dat nog steeds financieel kapot is. De bug is geen kwetsbaarheid in de traditionele zin van het woord: er is niets gehackt, er zijn geen inloggegevens gelekt. Het is een lacune in de bedrijfslogica bij het ordenen van overgangen in de financiële toestand, en om dit te ontdekken is het nodig dat iemand daadwerkelijk de volledige levenscyclus van het geld van een campagne traceert aan de hand van het eigen terugbetalingsbeleid van het platform, en niet alleen maar controleert op algemene kwetsbaarheden op het internet.
+Dit is een geval waarin een generieke beveiligingsaudit die controleert op SQL-injectie of blootgestelde API-sleutels een platform zal goedkeuren dat financieel nog steeds kapot is. De bug is geen kwetsbaarheid in de traditionele zin – er werd niets gehackt, er lekten geen inloggegevens. Het is een bedrijfslogica-kloof in de volgorde van financiële statusovergangen. Het vinden ervan vereist dat iemand de volledige levenscyclus van de fondsen van een campagne daadwerkelijk traceert tegen het eigen vermelde terugbetalingsbeleid van het platform, en niet alleen controleert op veelvoorkomende webkwetsbaarheden.
 
-LaunchStudio brengt Manifera's hoogwaardige engineering naar de grondleggerseconomie, specifiek voor dit soort gevallen. De ingenieurs van het team, die meer dan 160 projecten hebben uitgevoerd, waaronder werk voor klanten als CFLW's cyberstrategiepraktijk, beschouwen betalingsstaatmachines als een eersteklas ding om te controleren op elk platform dat geld verplaatst, en niet als een bijzaak die op een generieke checklist is vastgeschroefd. Deze recensie is beschikbaar als onderdeel van de [LaunchStudio-pakketten](https://launchstudio.eu/en/#packages), gericht op precies de betalings- en uitbetalingslogica waarvan een platform afhankelijk is.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters specifiek voor gevallen zoals deze – de ingenieurs van het team, die 160+ projecten hebben geleverd inclusief werk voor klanten zoals CFLW's cyberstrategie-praktijk, behandelen betalingsstatusmachines als een eersteklas ding om te auditen op elk platform dat geld verplaatst, en niet als een bijgedachte vastgeplakt op een generieke checklist. Die beoordeling is beschikbaar als onderdeel van de [LaunchStudio-pakketten](https://launchstudio.eu/en/#packages), omvattend ingesteld op exact de betalings- en uitbetalingslogica waar een platform van afhangt.
 
-## Wat een correcte escrow-stroom feitelijk afdwingt
+## Wat een correcte escrow-stroom daadwerkelijk afdwingt
 
-De oplossing is qua concept niet ingewikkeld, maar vereist wel een doelbewuste implementatie: de uitbetaling moet worden vrijgegeven zodra het terugbetalingsvenster volledig is gesloten, en niet wanneer het financieringsdoel is bereikt. Dat betekent dat er een expliciete status 'komt in aanmerking voor uitbetaling' wordt toegevoegd die alleen wordt geactiveerd nadat de terugbetalingsperiode is verstreken, waarbij geautomatiseerde taken (geen handmatige tussenkomst van de oprichter) die transitie aansturen, en een harde blokkering die elke handmatige of geautomatiseerde vrijgave ervoor verhindert. Het betekent ook dat het terugbetalingstraject zelf moet controleren of het geld nog steeds in deposito staat voordat het kan worden uitgevoerd. Een geannuleerde campagne heeft dus een gegarandeerde pool waaruit kan worden terugbetaald.
+De herstelling is in concept niet ingewikkeld, maar het vereist een bewuste implementatie: de vrijgave van de uitbetaling moet geblokkeerd worden op het volledig gesloten zijn van het terugbetalingsvenster, en niet op het behalen van het financieringsdoel. Dat betekent het toevoegen van een expliciete status "geschikt voor uitbetaling" die alleen activeert nadat de terugbetalingsperiode is verlopen, met geautomatiseerde taken (en geen handmatige ingreep van de oprichter) die die overgang sturen, en een harde blokkade die elke handmatige of geautomatiseerde vrijgave ervoor voorkomt. Het betekent ook dat het terugbetalingspad zelf moet controleren of fondsen nog steeds in escrow worden gehouden voordat het kan uitvoeren – zodat een geannuleerde campagne een gegarandeerde pot heeft om uit terug te betalen.
 
-Het team van Manifera, dat vanuit zijn hub in Singapore de bredere Zuidoost-Aziatische markt bedient, heeft dezelfde nauwkeurigheid toegepast op fintech- en marktplatforms die veel grotere transactievolumes verwerken dan een typische crowdfunding-lancering. Als u evalueert of de betalingslogica van uw platform dit niveau van beoordeling nodig heeft, omvat de bredere praktijk van Manifera [aangepaste softwareontwikkeling] (https://www.manifera.com/services/custom-software-development/) dit soort financiële staatsmachinewerk op schaal.
+Manifera's team, draaiend vanuit de hub in Singapore die de bredere Zuidoost-Aziatische markt bedient, heeft dezelfde strengheid toegepast op fintech- en marktplaatsplatformen die aanzienlijk grotere transactievolumes afhandelen dan een typische crowdfunding-lancering. Als u beoordeelt of de betalingslogica van uw platform dit niveau van beoordeling nodig heeft, dekt Manifera's bredere praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) dit soort financieel statusmachinewerk op schaal.
 
-## Een gesloten terugbetalingsvenster betekent niet dat het geld veilig vrijgegeven kan worden
+## Een gesloten terugbetalingsvenster betekent niet dat het geld daadwerkelijk veilig is om vrij te geven
 
-Zelfs nadat het officiële venster voor terugbetalingen is gesloten, kunnen er nog openstaande geschillen zijn via de betalingsverwerker (chargebacks). Als de escrow-vrijgavetaak uitsluitend kijkt naar de datum en niet naar openstaande geschillen, wordt het geld overgemaakt naar de maker terwijl de bank het geld terughaalt.
+Het blokkeren van de uitbetaling op het sluiten van het terugbetalingsvenster herstelt de timingkloof die het platform rechtstreeks beheert – maar het dekt geen risico dat het platform helemaal niet beheert: een chargeback van het kaartnetwerk. Een ondersteuner die per kaart heeft betaald kan de afschrijving weken of maanden nadat het eigen terugbetalingsvenster van een platform is gesloten betwisten via zijn bank, ongeacht wat de voorwaarden van het platform zeggen. Rechten op chargebacks komen namelijk voort uit de regels van het kaartnetwerk zelf, en niet uit het beleid van het platform. Als 100% van de fondsen van een campagne naar de maker gaan op het moment dat het interne terugbetalingsvenster opklaart, is er niets meer over op de rekening van het platform om een chargeback te dekken die later landt – en in tegenstelling tot een op beleid gebaseerde terugbetaling kan een chargeback ook komen met een boete van de verwerker bovenop het betwiste bedrag.
 
-Controleer op actieve geschillen voordat escrow-gelden worden uitbetaald:
+De al beschreven statusmachine handelt dit in essentie correct af – het heeft alleen nog één status nodig, en een uitbetalingsbedrag dat niet 100% is. In plaats van het volledige saldo vrij te geven op het moment dat het terugbetalingsvenster sluit, zou een platform dat echt geld vasthoudt het meeste moeten vrijgeven en een kleine reserve moeten bewaren voor een gedefinieerde periode van blootstelling aan chargebacks, waarbij het restant daarna wordt vrijgegeven als er geen geschil is geland.
 
-```javascript
-async function releaseEscrowFunds(projectId) {
-  const hasDisputes = await stripe.disputes.list({ projectId, status: 'needs_response' });
-  if (hasDisputes.data.length > 0) {
-    throw new Error('Escrow-vrijgave geblokkeerd vanwege een actief geschil');
-  }
-  await executePayout(projectId);
+```
+function calculatePayout(campaign) {
+  const total = campaign.fundsHeld;
+  const reservePercent = 0.10; // achtergehouden voor blootstelling aan chargebacks
+  const immediateRelease = total * (1 - reservePercent);
+  const reserved = total * reservePercent;
+
+  releaseToCreator(campaign.creatorId, immediateRelease);
+  scheduleReserveRelease(campaign.id, reserved, chargebackWindowEnd(campaign));
 }
 ```
 
+Het exacte percentage en de lengte van het venster hangen af van de betalingsverwerker en de grootte van de campagne, en niet van een vaste regel – maar het onderliggende principe geldt ongeacht: een uitbetalingspoort die alleen het eigen terugbetalingsvenster van het platform controleert, controleert de verkeerde klok. De klok van de chargeback loopt langer, en het is degene die bepaalt of er nog geld is om een geschil te dekken.
+
 ## Echt voorbeeld
 
-### Een AI-Native Founder in actie: de uitbetaling waarbij niets meer terug te betalen is
+### Een AI-native oprichter in actie: De uitbetaling die niets overliet om terug te betalen
 
-Tobias Kramer bouwde SteunProject, een lokaal crowdfundingplatform voor gemeenschapsinitiatieven in en rond Zaandam, met behulp van Lovable. Het platform werkte goed tijdens verschillende succesvol gefinancierde campagnes: geld binnen, doel bereikt, uitbetaling vrijgegeven aan de maker van de campagne, donateurs blij. Vervolgens annuleerde een campagnemaker een project slechts drie dagen nadat het financieringsdoel was bereikt, ruim binnen de door het platform zelf gepubliceerde terugbetalingstermijn van zeven dagen.
+Tobias Kramer bouwde SteunProject, een lokaal crowdfundingplatform voor gemeenschapsinitiatieven in en rond Zaandam, met behulp van Lovable. Het platform werkte goed bij verschillende succesvol gefinancierde campagnes – geld binnen, doel bereikt, uitbetaling vrijgegeven aan de maker van de campagne, ondersteuners blij. Toen annuleerde een maker van een campagne een project slechts drie dagen nadat het financieringsdoel was bereikt, ruim binnen het eigen gepubliceerde terugbetalingsvenster van 7 dagen van het platform.
 
-Tobias ging de terugbetalingen voor de donateurs van de campagne verwerken en ontdekte dat de uitbetaling al automatisch naar de maker was gegaan op het moment dat het financieringsdoel werd bereikt. Er stond geen geld meer op de platformaccount om terug te geven. Uiteindelijk betaalde hij de terugbetalingen persoonlijk uit eigen zak, terwijl hij probeerde het geld terug te vorderen van de maker, die niet reageerde.
+Tobias ging terugbetalingen verwerken voor de ondersteuners van de campagne en vond dat de uitbetaling automatisch al naar de maker was gegaan op het moment dat het financieringsdoel werd gehaald – er was geen geld meer over op de platformrekening om te retourneren. Hij eindigde met het persoonlijk uit eigen zak dekken van de terugbetalingen terwijl hij probeerde de fondsen terug te krijgen van de maker, die niet reageerde.
 
-De technici van LaunchStudio hebben de uitbetalingslogica opnieuw opgebouwd rond een expliciete statusmachine: fondsen blijven nu in de status 'vastgehouden' gedurende de volledige terugbetalingsperiode, ongeacht of het financieringsdoel is bereikt, en een geautomatiseerde taak zet in aanmerking komende campagnes pas over naar 'uitbetaling vrijgegeven' zodra dat venster volledig is gesloten en er geen actieve terugbetalingsverzoeken meer zijn. Het handmatig overschrijven van die overgang werd volledig verwijderd, waardoor het gat werd gedicht waardoor de uitbetaling vroegtijdig kon vuren.
+LaunchStudio's ingenieurs herbouwden de uitbetalingslogica rond een expliciete statusmachine: fondsen zitten nu in een status "vastgehouden" gedurende het gehele terugbetalingsvenster ongeacht of het financieringsdoel is bereikt, en een geautomatiseerde taak laat geschikte campagnes pas overgaan naar "uitbetaling vrijgegeven" zodra dat venster volledig is gesloten zonder actieve terugbetalingsverzoeken ertegen. Handmatige overschrijving van die overgang werd volledig verwijderd, wat de kloof dichtte die de uitbetaling vroegtijdig had laten afvuren.
 
-**Resultaat:** De uitbetalingsstroom van SteunProject garandeert nu dat het geld beschikbaar blijft gedurende de gehele terugbetalingsperiode voor elke campagne, en Tobias heeft niet langer persoonlijke financiële risico's als een campagne na financiering wordt geannuleerd.
+**Resultaat:** SteunProject's uitbetalingsstroom garandeert nu dat fondsen beschikbaar blijven voor het gehele terugbetalingsvenster bij elke campagne, en Tobias heeft geen persoonlijke financiële blootstelling meer als een campagne na financiering wordt geannuleerd.
 
-> *"Ik heb een platform gebouwd om geld te verplaatsen en ben nooit gestopt met de vraag in welke staat dat geld zich op elk moment bevond. LaunchStudio behandelde het als het financiële systeem dat het feitelijk is, en niet zomaar een functie om te verzenden."*
-> — **Tobias Kramer, oprichter SteunProject (Zaandam)**
+> *"Ik bouwde een platform om geld te verplaatsen en heb nooit stilgestaan bij de vraag in welke status dat geld zich op elk moment daadwerkelijk bevond. LaunchStudio behandelde het als het financiële systeem dat het daadwerkelijk is, en niet zomaar een functie om op te leveren."*
+> — **Tobias Kramer, Oprichter, SteunProject (Zaandam)**
 
-**Kosten en tijdlijn:** € 1.600 (herontwerp van de escrow-statusmachine, geautomatiseerde uitbetalingscontrole en testen van het terugbetalingspad) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (herontwerp van de escrow-statusmachine, geautomatiseerde uitbetalingspoort, en testen van het terugbetalingspad) — voltooid in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Is dit niet iets wat Stripe of de betalingsverwerker zouden moeten afhandelen?
+### Is dit niet het soort ding dat Stripe of de betalingsverwerker zou moeten afhandelen?
 
-Nee – een betalingsverwerker maakt geld over als dat wordt opgedragen, maar de beslissing *wanneer* dat moet gebeuren, is volledig de logica van het platform zelf, en dat is precies waar dit gat schuilt.
+Nee – een betalingsverwerker verplaatst geld wanneer hem dat verteld wordt, maar de beslissing van *wanneer* hem dat verteld wordt is volledig de eigen logica van het platform. Dat is exact waar deze kloof leeft.
 
-### Hoe weet ik of mijn eigen crowdfunding- of marktplaatsplatform dit probleem heeft?
+### Hoe zou ik weten of mijn eigen crowdfunding- of marktplaatsplatform dit probleem heeft?
 
-Volg wat er gebeurt met het geld voor een campagne die wordt geannuleerd of betwist nadat het doel ervan is bereikt, maar voordat de aangegeven teruggaveperiode sluit. Als er tegen die tijd al een uitbetaling had kunnen plaatsvinden, heb je hetzelfde gat.
+Traceer wat er gebeurt met fondsen voor een campagne die geannuleerd of betwist wordt nadat het doel is bereikt maar voordat uw vermelde terugbetalingsvenster sluit – als een uitbetaling tegen die tijd al had kunnen uitgaan, heeft u dezelfde kloof.
 
-### Repareert LaunchStudio alleen bugs, of ontwerpt het ook de betalingslogica helemaal opnieuw?
+### Herstelt LaunchStudio alleen bugs, of ontwerpt het ook de betalingslogica vanaf nul?
 
-Beide: het technische team van Manifera kan bestaande, door AI gegenereerde betalingsstromen beoordelen en corrigeren, of de staatsmachine vanaf het begin correct ontwerpen voor platforms die nog in de kinderschoenen staan.
+Beide – Manifera's engineeringteam kan bestaande met AI gegenereerde betalingsstromen beoordelen en herstellen, óf de statusmachine vanaf het begin correct ontwerpen voor platformen die zich nog in de vroege bouwfase bevinden.
 
-### Waarom is het kantoor van Manifera in Singapore belangrijk voor dit soort werk?
+### Waarom doet Manifera's kantoor in Singapore er toe voor dit soort werk?
 
-Manifera's hub in Singapore werkt met fintech- en marktplaatsklanten in heel Zuidoost-Azië aan betalingsinfrastructuur op schaal, waardoor het team directe ervaring krijgt met dezelfde escrow- en uitbetalingspatronen die opduiken in een kleiner crowdfundingplatform.
+Manifera's hub in Singapore werkt met fintech- en marktplaatsklanten in heel Zuidoost-Azië aan betalingsinfrastructuur op schaal. Dit geeft het team directe ervaring met dezelfde escrow- en uitbetalingspatronen.
 
-### Wat is het verschil tussen dit en een typische AI-beveiligingsscan?
+### Beschermt het sluiten van de kloof in het terugbetalingsvenster ook tegen chargebacks?
 
-Een generieke scan controleert op bekende kwetsbaarheidspatronen zoals injectie of blootliggende sleutels; deze beoordeling vergelijkt de feitelijke bedrijfslogica van uw geldverwerkingsstroom met uw eigen beleid, wat een handmatige, platformspecifieke audit is.
-
+Niet op zichzelf – een chargeback kan worden ingediend bij een kaartnetwerk lang nadat het eigen terugbetalingsvenster van een platform sluit. Een uitbetalingsstroom moet dus een kleine reserve vasthouden voor een gedefinieerde periode van blootstelling aan chargebacks, in plaats van 100% van de fondsen vrij te geven op het moment dat het interne venster opklaart.
 
 <script type="application/ld+json">
 {
@@ -115,42 +119,42 @@ Een generieke scan controleert op bekende kwetsbaarheidspatronen zoals injectie 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is dit niet iets wat Stripe of de betalingsverwerker zouden moeten afhandelen?",
+      "name": "Moet Stripe of de payment gateway escrow-timing niet regelen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee – een betalingsverwerker maakt geld over als dat wordt opgedragen, maar de beslissing *wanneer* dat moet gebeuren, is volledig de logica van het platform zelf, en dat is precies waar dit gat schuilt."
+        "text": "Nee, Stripe voert alleen opdrachten uit. De logica van wánneer de payout-opdracht naar Stripe gestuurd wordt, ligt 100% in jouw applicatiecode."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe weet ik of mijn eigen crowdfunding- of marktplaatsplatform dit probleem heeft?",
+      "name": "Hoe test ik of mijn crowdfundingplatform dit escrow-risico loopt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Volg wat er gebeurt met het geld voor een campagne die wordt geannuleerd of betwist nadat het doel ervan is bereikt, maar voordat de aangegeven teruggaveperiode sluit. Als er tegen die tijd al een uitbetaling had kunnen plaatsvinden, heb je hetzelfde gat."
+        "text": "Simuleer een campagne die haar doel haalt en binnen de bedenktijd wordt geannuleerd. Zijn de uitbetalingen al naar de maker verzonden? Dan heb je dit lek."
       }
     },
     {
       "@type": "Question",
-      "name": "Repareert LaunchStudio alleen bugs, of ontwerpt het ook de betalingslogica helemaal opnieuw?",
+      "name": "Ontwerpt LaunchStudio ook complete escrow-statusmachines vanaf nul?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beide: het technische team van Manifera kan bestaande, door AI gegenereerde betalingsstromen beoordelen en corrigeren, of de staatsmachine vanaf het begin correct ontwerpen voor platforms die nog in de kinderschoenen staan."
+        "text": "Ja, we kunnen zowel bestaande AI-code corrigeren als een robuuste betalingsarchitectuur ontwerpen vóór de lancering."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom is het kantoor van Manifera in Singapore belangrijk voor dit soort werk?",
+      "name": "Wat is het verschil tussen een AI-securityscan en een payout-audit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's hub in Singapore werkt met fintech- en marktplaatsklanten in heel Zuidoost-Azië aan betalingsinfrastructuur op schaal, waardoor het team directe ervaring krijgt met dezelfde escrow- en uitbetalingspatronen die opduiken in een kleiner crowdfundingplatform."
+        "text": "Een scan zoekt naar bekende kwetsbaarheden (SQLi, XSS). Een payout-audit controleert de daadwerkelijke business logic en geldstromen van jouw platform."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het verschil tussen dit en een typische AI-beveiligingsscan?",
+      "name": "Beschermt het sluiten van de refund-window ook tegen creditcard-chargebacks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een generieke scan controleert op bekende kwetsbaarheidspatronen zoals injectie of blootliggende sleutels; deze beoordeling vergelijkt de feitelijke bedrijfslogica van uw geldverwerkingsstroom met uw eigen beleid, wat een handmatige, platformspecifieke audit is."
+        "text": "Nee, chargebacks kunnen tot maanden later ingediend worden. Een verstandig platform houdt daarom een kleine reserve-buffer vast."
       }
     }
   ]

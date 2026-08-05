@@ -1,77 +1,150 @@
 ---
-Titel: "AI-Softwareprogrammering Brengt Je 80%. Wat Is De Andere 20%?"
+Titel: "AI-softwareprogrammering brengt u tot 80%. Wat is de overige 20%?"
 Trefwoorden: ai software programming, ai software app, ai coding, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# AI-Softwareprogrammering Brengt Je 80%. Wat Is De Andere 20%?
+# AI-softwareprogrammering brengt u tot 80%. Wat is de overige 20%?
 
-Cursor bracht je 80% van de weg, en dat is een oprecht accurate, gebruikelijke founder-observatie over AI-softwareprogrammering vandaag — het doet het gros van het zichtbare werk opmerkelijk goed. De resterende 20% heeft de neiging te concentreren in een specifieke, controleerbare lijst rechtenrandgevallen, en een gedeeld document dat verondersteld wordt alleen-lezen te zijn, maar dat niet helemaal is, is een schone illustratie van precies wat die lijst omvat.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI-softwareprogrammering brengt u tot 80%. Wat is de overige 20%?",
+  "description": "Een controlelijst voor productiegereedheid die de specifieke 20% uitlegt die AI-softwareprogrammering onvoltooid heeft laten liggen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/ai-software-programming-gets-you-80-percent-whats-the-other-20"
+  }
+}
+</script>
 
-## Checklistpunt Eén: Betekent "Alleen-Lezen" Daadwerkelijk Alleen-Lezen Op De Server?
+Cursor bracht u voor 80% van de weg daar naartoe, en dat is een oprecht nauwkeurige, veelvoorkomende observatie van oprichters over AI-softwareprogrammering vandaag de dag – het doet het grootste deel van het zichtbare werk opmerkelijk goed. De resterende 20% heeft de neiging zich te concentreren in een specifieke, controleerbare lijst van randgevallen rond machtigingen. En een gedeeld document dat verondersteld wordt alleen-lezen te zijn, maar dat niet helemaal is, is een schone illustratie van wat die lijst precies bevat. De 80% is wat een demo indrukwekkend maakt; de 20% is wat een product veilig maakt om echte klantgegevens aan toe te vertrouwen.
 
-Een gedeeld-documentfunctie die zowel "kan bekijken" als "kan bewerken"-delingsrechten biedt heeft de server nodig, niet alleen de interface, om dat onderscheid af te dwingen — als de bewerkingsverzoeken van een "alleen-bekijken"-ontvanger nog steeds verwerkt en opgeslagen worden door de backend ongeacht hun rechtenniveau, biedt de interface die de bewerkingscontroles verbergt helemaal geen daadwerkelijke bescherming.
+## Controle-item een: Betekent "Alleen-lezen" daadwerkelijk alleen-lezen op de server?
 
-## Checklistpunt Twee: Wordt Toestemming Gecontroleerd Bij Elk Wijzigend Verzoek, Of Alleen Bij Paginalaad?
+Een functie voor het delen van documenten die zowel machtigingen voor "kan bekijken" als "kan bewerken" biedt, heeft de server nodig – en niet alleen de interface – om dat onderscheid af te dwingen. Als de bewerkingsverzoeken van een "alleen-lezen"-ontvanger nog steeds verwerkt en opgeslagen worden door de backend, biedt een interface die de bewerkingsknoppen verbergt überhaupt geen daadwerkelijke bescherming.
 
-Sommige AI-gegenereerde rechtensystemen controleren het toegangsniveau van een gebruiker slechts één keer, wanneer een pagina initieel laadt, om te bepalen wat te tonen — maar als de daadwerkelijke opslaan- of update-actie niet apart datzelfde rechtenniveau opnieuw verifieert voordat het verzoek verwerkt wordt, kan een alleen-bekijken-gebruiker wiens interface simpelweg geen bewerkingsknoppen toont nog steeds mogelijk een bewerkingsverzoek direct indienen.
+## Controle-item twee: Wordt de machtiging gecontroleerd bij elk wijzigingsverzoek, of alleen bij het laden van de pagina?
 
-## Checklistpunt Drie: Zou De Normale Tests Van Een Founder Dit Onthullen?
+Sommige met AI gegenereerde machtigingssystemen controleren het toegangsniveau van een gebruiker slechts één keer, wanneer een pagina initiële laadt, om te beslissen wat er getoond moet worden. Maar als de daadwerkelijke opslag- of bijwerkactie datzelfde machtigingsniveau niet afzonderlijk opnieuw verifieert, kan een alleen-lezen-gebruiker wiens interface simpelweg geen bewerkingsknoppen toont, nog steeds een bewerkingsverzoek rechtstreeks indienen.
 
-Delingsrechten testen door een echt tweede account uit te nodigen, te bekijken zoals bedoeld, en te bevestigen dat de interface correct bewerkingscontroles verbergt ziet er volledig correct uit — omdat het correct is vanuit het perspectief van de interface. Het gat onthult zichzelf alleen als iemand specifiek probeert een bewerkingsverzoek in te dienen ondanks dat de interface er geen aanbiedt, wat coöperatieve tests geen reden hebben te proberen.
+## Controle-item drie: Zou het normale testen van een oprichter dit onthullen?
 
-## Checklistpunt Vier: Doet Dit Meer Ertoe Voor Specifiek Coaching-Gerelateerde Inhoud?
+Het testen van deelmachtigingen door een echt tweede account uit te nodigen, te bekijken zoals bedoeld, en te bevestigen dat de interface de bewerkingsknoppen correct verbergt, ziet er compleet correct uit – omdat het correct is vanuit het perspectief van de interface. De kloof onthult zichzelf pas als iemand specifiek probeert een bewerkingsverzoek in te dienen ondanks dat de interface er geen aanbiedt.
 
-De gedeelde documenten van een carrièrecoachingplatform bevatten vaak oprecht persoonlijke inhoud — de carrièredoelen van een klant, salarisverwachtingen, persoonlijke reflecties gedeeld met een specifieke coach — wat betekent dat ongeautoriseerde wijziging niet alleen een technisch ongemak is, het is een echte schending van precies het soort vertrouwen waar een coachingrelatie specifiek van afhangt.
+## Controle-item vier: Maakt dit meer uit voor coaching-gerelateerde inhoud specifiek?
 
-## Checklistpunt Vijf: Hoe Weet Een Founder Of Hun Eigen Product Dit Gat Heeft?
+Gedeelde documenten van een loopbaancoachingplatform bevatten vaak oprecht persoonlijke inhoud – de carrièredoelen van een klant, salarisverwachtingen, persoonlijke reflecties. Een onbevoegde wijziging is dan geen technisch ongemak, maar een echte inbreuk op het vertrouwen waar een coachingrelatie specifiek van afhangt.
 
-Zonder specifiek een bewerkingsverzoek te testen vanuit het perspectief van een alleen-bekijken-account kan een founder over het algemeen niet weten wat het geval is uit gewoon gebruik alleen — deze specifieke controle vereist ofwel technisch comfort met het direct vervaardigen van zo'n verzoek, ofwel een toegewijde review die precies dit scenario als routine test.
+## Controle-item vijf: Hoe weet een oprichter of zijn eigen product deze kloof heeft?
 
-## Dit Gat Dichten Zonder Delen Te Overcompliceren
+Zonder specifiek een bewerkingsverzoek vanuit het perspectief van een alleen-lezen-account te testen, kan een oprichter het in het algemeen niet weten op basis van gewoon gebruik alleen. Deze specifieke controle vereist ofwel technische vaardigheid om zo'n verzoek rechtstreeks op te stellen, of een toegewijde review die exact dit scenario test.
 
-Een correcte fix herverifieert rechtenniveau bij elk wijzigend verzoek server-side, onafhankelijk van wat de interface toont, consistent toegepast over elke gedeelde of collaboratieve functie in een product. [LaunchStudio](https://launchstudio.eu/en/) test precies dit patroon als onderdeel van zijn toegangscontrolereview, gesteund door Manifera's 11+ jaar ervaring met het bouwen van rechtensystemen voor collaboratieve software.
+## Dit dichten zonder het delen te overcompliceren
 
-Manifera's rechten- en toegangscontroleaudits worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Een correcte herstelling verifieert het machtigingsniveau opnieuw aan de serverzijde bij elk wijzigingsverzoek, onafhankelijk van wat de interface toont. [LaunchStudio](https://launchstudio.eu/en/) test exact dit patroon als onderdeel van haar beoordeling van toegangsbeheer, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van machtigingssystemen voor collaboratieve software.
 
-[Loop met ons door wat je gebouwd hebt — we reageren binnen een werkdag](https://launchstudio.eu/en/#contact).
+Manifera's audits voor machtigingen en toegangsbeheer worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Leid ons door wat u gebouwd heeft — we reageren binnen een werkdag](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: het alleen-bekijken-document dat een klant nog steeds kon bewerken
+### Een AI-native oprichter in actie: Het alleen-lezen document dat een klant nog steeds kon bewerken
 
-Luuk, een voormalig HR-carrière-overgangsconsultant die founder werd in Harderwijk, bouwde LoopbaanPad, een AI-geassisteerd carrièrecoachingplatform gebouwd met Lovable, waarmee coaches planningsdocumenten met klanten deelden met ofwel alleen-bekijken ofwel bewerkingsrechten afhankelijk van het specifieke document.
+Luuk, een voormalig HR-loopbaantransitieconsultant die oprichter werd in Harderwijk, bouwde LoopbaanPad, een AI-ondersteund loopbaancoachingplatform gebouwd met Lovable. Het laat coaches planningsdocumenten delen met klanten met behulp van alleen-lezen of bewerkingsmachtigingen.
 
-Een coach merkte op dat het gedeelde, verondersteld alleen-bekijken carrièreplan van een klant gewijzigd was, waarbij de klant erop stond dat hij alleen ooit in het document rondgeklikt had zonder te beseffen dat bewerkingen zelfs mogelijk waren. LaunchStudio's review bevestigde dat het documentupdate-eindpunt bewerkingsverzoeken accepteerde en opsloeg ongeacht het gedeeld-recht geregistreerd voor die specifieke gebruiker, wat betekende dat de "alleen-bekijken"-beperking alleen bestond in welke knoppen de interface toonde, niet in wat de server daadwerkelijk toestond.
+Een coach merkte op dat het gedeelde, veronderstelde alleen-lezen carrièreplanning van een klant was gewijzigd, terwijl de klant volhield dat ze alleen door het document had geklikt zonder te realiseren dat bewerkingen überhaupt mogelijk waren. LaunchStudio's beoordeling bevestigde dat het document-update-eindpunt bewerkingsverzoeken accepteerde en opsloeg, ongeacht de deelmachtiging die voor die specifieke gebruiker was vastgelegd. De "alleen-lezen"-beperking bestond uitsluitend in welke knoppen de interface toonde, niet in wat de server daadwerkelijk toestond.
 
-**Resultaat:** LaunchStudio voegde server-side rechtenverificatie toe aan elk documentupdate-verzoek, en zorgde ervoor dat een alleen-bekijken-deling oprecht geen inhoud kan wijzigen ongeacht hoe het verzoek gemaakt wordt, en dicht het gat zonder te veranderen hoe coaches delingsrechten configureerden.
+**Resultaat:** LaunchStudio voegde machtigingsverificatie aan de serverzijde toe aan elk document-updateverzoek. Dit garandeert dat een alleen-lezen deellink de inhoud oprecht niet kan wijzigen, wat de kloof sloot zonder de manier waarop coaches deelmachtigingen configureerden te veranderen.
 
-> *"De klant probeerde voor zover we kunnen zien niet eens iets verkeerds te doen — een UI-actie triggerde toevallig gewoon een opslag die nooit door had mogen gaan in de eerste plaats. Het had oprecht een veel minder onschuldige situatie kunnen zijn."*
-> — **Luuk Timmermans, Founder, LoopbaanPad (Harderwijk)**
+> *"De klant probeerde niet eens iets verkeerds te doen – een UI-actie veroorzaakte simpelweg een opslag die in de eerste plaats nooit doorgevoerd had mogen worden."*
+> — **Luuk Timmermans, Oprichter, LoopbaanPad (Harderwijk)**
 
-**Kosten & tijdlijn:** €2.000 (rechtenverificatieaudit over gedeelde documenten) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (audit voor machtigingsverificatie over gedeelde documenten) — voltooid in 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een toegangscontrolespecialist alleen-interface-rechtenafdwinging een gebruikelijke kortere weg beschouwen in snel gebouwde functies?
+### Zou een specialist in toegangsbeheer het afdwingen van machtigingen alleen in de interface beschouwen als een veelvoorkomende afsnijding?
 
-Ja, behoorlijk gebruikelijk — het is oprecht sneller een delingsfunctie te bouwen die alleen aanpast wat de interface toont gebaseerd op rechtenniveau, en de kortere weg werkt perfect voor elke test die met het product interageert precies zoals de interface het presenteert, wat precies waarom het makkelijk over het hoofd gezien wordt.
+Ja, vrij veelvoorkomend – het is sneller om een deelfunctie te bouwen die alleen aanpast wat de interface toont, en die afsnijding werkt perfect voor elke test die de interface volgt.
 
-### Is dit soort gat specifiek voor documentdelingsfuncties, of verschijnt het ook in andere collaboratieve functies?
+### Is dit soort kloof specifiek voor document-deelfuncties?
 
-Het generaliseert naar elke functie met meer dan één rechtenniveau dat toegang deelt tot dezelfde resource — gedeelde kalenders, gedeelde projectborden, en reactierechten op gedeelde inhoud staan allemaal voor dezelfde onderliggende vraag of de server, niet alleen de interface, het onderscheid daadwerkelijk afdwingt.
+Het geldt voor elke functie met meer dan één machtigingsniveau die toegang deelt tot dezelfde bron (gedeelde kalenders, projectborden, reactiemachtigingen).
 
-### Manifera heeft rechtensystemen gebouwd voor collaboratieve software over verschillende industrieën — draagt die ervaring specifiek over naar een carrièrecoaching-context zoals die van LoopbaanPad?
+### Maakt ervaring met machtigingssystemen uit voor een loopbaancoachingcontext?
 
-Ja, direct — het onderliggende rechtenverificatiepatroon is identiek ongeacht het specifieke doel van de collaboratieve software, en dit patroon geïmplementeerd en gereviewd hebben over vele verschillende collaboratieve contexten maakt het vangen en correct dichten van het gat aanzienlijk sneller voor elke nieuwe klant, coaching-specifiek of anderszins.
+Ja, rechtstreeks – het onderliggende patroon voor machtigingsverificatie is identiek, ongeacht het specifieke doel van de collaboratieve software.
 
-### CEO Herre Roelevink heeft gesproken over de laatste 20% als waar architectuur, niet ruwe functies, bepaalt of een product oprecht betrouwbaar is — illustreert dit rechtengat dat goed?
+### Illustreert deze kloof in machtigingen het punt dat de laatste 20% om architectuur gaat?
 
-Heel goed — LoopbaanPads delingsfunctie werkte precies zoals beschreven vanuit een functielijst-perspectief, met het ontbrekende stuk een specifieke architecturale beslissing over waar rechten daadwerkelijk afgedwongen worden, precies het laatste-20%-onderscheid dat Roelevinks commentaar op het resterende gat van AI-native founders consistent benadrukt.
+Heel goed – LoopbaanPad's deelfunctie werkte exact zoals beschreven op de functielijst, terwijl het ontbrekende stuk een specifieke architecturale beslissing was over waar machtigingen daadwerkelijk worden afgedwongen.
 
-### Als een founder specifiek hun AI-tool vraagt "alleen-bekijken-rechten correct af te dwingen," lost dat dit betrouwbaar op?
+### Als een oprichter zijn AI-tool specifiek vraagt om machtigingen goed af te dwingen, lost dat dit betrouwbaar op?
 
-Het kan helpen de aandacht van de tool naar de vereiste te richten, maar betrouwbaar bevestigen dat de resulterende implementatie daadwerkelijk rechten server-side afdwingt, bij elk relevant verzoek in plaats van alleen bij initieel paginalaad, heeft nog steeds baat bij onafhankelijke technische verificatie in plaats van te vertrouwen dat de intentie van de prompt volledig en correct vertaald werd naar de gegenereerde code.
+Het kan helpen de aandacht van de tool te sturen, maar het betrouwbaar bevestigen dat de implementatie de machtiging server-side daadwerkelijk afdwingt bij elk verzoek vereist een onafhankelijke technische verificatie.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quy tắc chỉ phân quyền trên giao diện (UI-only Permission) nguy hiểm thế nào?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rất nguy hiểm — giao diện ẩn nút Edit không có nghĩa là Server chặn lệnh Edit. Người dùng View-only vẫn có thể gửi request sửa dữ liệu trực tiếp vào API."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại sao AI tool lại hay sinh ra phân quyền chỉ ở giao diện phía Client?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vì viết code ẩn/hiện button trên UI rất nhanh và dễ test, còn check quyền ở Server (Backend Authorization) cần thiết kế thêm middleware phức tạp hơn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "20% công việc còn lại mà AI không tự làm hoàn hảo cho SaaS là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Là các vấn đề về Kiến trúc hạ tầng, Phân quyền nấc sâu (RBAC/ABAC), Giới hạn tài nguyên, Xử lý múi giờ và Bảo mật API."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Làm sao để đảm bảo quyền Read-only thực sự là Read-only ở phía Server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luôn kiểm tra quyền (User Role & Document Permission) ở mỗi hàm Controller/API phía Backend trước khi thực thi câu lệnh SQL UPDATE/DELETE."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thời gian kiểm tra và siết chặt toàn bộ luồng Phân quyền (Access Control) mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thường hoàn thành trong 4-7 ngày làm việc bao gồm cả việc chuẩn hóa các vai trò (Roles) trong hệ thống."
+      }
+    }
+  ]
+}
+</script>

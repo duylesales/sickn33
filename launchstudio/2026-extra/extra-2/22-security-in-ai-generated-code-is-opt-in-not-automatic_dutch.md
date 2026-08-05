@@ -1,73 +1,168 @@
 ---
-Titel: "Beveiliging In AI-Gegenereerde Code Is Opt-In, Niet Automatisch"
+Titel: "Beveiliging in met AI gegenereerde code is opt-in, niet automatisch"
 Trefwoorden: security in ai, ai in it security, ai secure, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# Beveiliging In AI-Gegenereerde Code Is Opt-In, Niet Automatisch
+# Beveiliging in met AI gegenereerde code is opt-in, niet automatisch
 
-Het is een normale dinsdag. Een ouder uploadt een scan van de ID van hun kind als onderdeel van registratie voor naschoolse opvang via jouw platform. De upload slaagt, het bevestigingsscherm verschijnt, alles ziet er precies goed uit. Wat die ouder geen manier heeft om te weten is of de opslaglocatie waar dat bestand net terechtkwam enige authenticatie vereist om te bekijken — want bij een verrassend aantal AI-gegenereerde apps, standaard, doet het dat niet.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Beveiliging in met AI gegenereerde code is opt-in, niet automatisch",
+  "description": "Een door een echt scenario gedreven blik op waarom beveiliging in met AI gegenereerde code specifiek moet worden aangevraagd.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/security-in-ai-generated-code-is-opt-in-not-automatic"
+  }
+}
+</script>
 
-## Waarom Opslagbuckets Vaker Dan Verwacht Standaard De Verkeerde Instelling Hebben
+Het is een normale dinsdag. Een ouder uploadt een scan van de ID van hun kind als onderdeel van de registratie voor buitenschoolse opvang via uw platform. De upload slaagt, het bevestigingsscherm verschijnt, alles ziet er exact goed uit. Wat die ouder geen manier heeft om te weten is of de opslaglocatie waar dat bestand net op is beland überhaupt enige authenticatie vereist om te bekijken – omdat het in een verrassend aantal met AI gegenereerde apps standaard niet zo is.
 
-Cloudopslagdiensten zoals AWS S3, Firebase Storage, en vergelijkbare platformen zijn gebouwd om flexibel te zijn, en ondersteunen zowel volledig publieke als volledig private toegangsconfiguraties afhankelijk van wat een project nodig heeft. Een AI-codeertool die snel bestandsuploads bedraadt, optimaliserend voor "werkt de upload wanneer ik het test," grijpt frequent naar de eenvoudigste configuratie die de upload-en-ophaal-demo soepel laat werken — wat soms een publieke of losjes beperkte bucket is, aangezien dat de aanvullende complexiteit van correct ondertekende, geauthenticeerde URL's vermijdt.
+## Waarom opslag-buckets vaker dan verwacht standaard op de verkeerde instelling staan
 
-## Waarom "De Upload Werkte" Dit Nooit Onthult
+Cloudopslagdiensten zoals AWS S3, Firebase Storage, en vergelijkbare platformen zijn gebouwd om flexibel te zijn. Ze ondersteunen zowel volledig openbare als volledig particuliere toegangsconfiguraties, afhankelijk van wat een project nodig heeft. Een AI-coderingsassistent die bestandsuploads snel aansluit en optimaliseert voor "werkt de upload wanneer ik het test," grijpt frequent naar de eenvoudigste configuratie die de demo van uploaden-en-ophalen soepel laat werken. Dit is soms een openbare of losjes beperkte bucket, aangezien dat de aanvullende complexiteit vermijdt van op de juiste manier ondertekende, geauthenticeerde URL's.
 
-Een uploadfunctie testen betekent een bestand uploaden en bevestigen dat het daarna opgehaald kan worden — beide slagen identiek of de opslagbucket nu publiek of correct beperkt is. Er is geen natuurlijk moment tijdens gewoon testen waarop een founder zou denken te controleren of de onderliggende opslag-URL van het bestand raadbaar of oplijstbaar is voor iemand die nooit een link ernaar kreeg.
+## Waarom "de upload werkte" dit nooit onthult
 
-## Waarom Documenten Een Erger Geval Zijn Dan Foto's
+Het testen van een uploadfunctie betekent het uploaden van een bestand en bevestigen dat het achteraf ophaalbaar is – wat beide identiek slaagt of de opslag-bucket nu openbaar is of correct beperkt. Er is geen natuurlijk punt tijdens gewoon testen waar een oprichter zou bedenken om te controleren of de onderliggende opslag-URL van het bestand raadbaar of oplijstbaar is door iemand die er nooit een link naar kreeg. Zelfs het openen van de ontwikkelaars-tools van de browser en het rechtstreeks bekijken van de URL onthult het probleem niet duidelijk – een werkende link ziet er gewoon uit als een werkende link, ongeacht of deze toevallig ook bereikbaar is voor iedereen op het internet die op hetzelfde patroon stuit.
 
-Een publiek toegankelijke bucket is een echt probleem voor elk bestandstype, maar documenten zoals ID-scans, medische formulieren, of ondertekende contracten dragen betekenisvol hogere inzet dan, zeg, een publieke profielfoto — het soort informatie op die documenten (volledige wettelijke namen, geboortedata, identificatienummers) is precies de categorie data die de meeste schade veroorzaakt als het breed toegankelijk wordt, en kinderopvanggerelateerde producten hebben specifiek de neiging precies dit soort document als vanzelfsprekend te verzamelen.
+## Waarom documenten een erger geval zijn dan foto's
 
-## Waarom Dit Geen Reden Is Om AI-Codeertools Algemeen Te Wantrouwen
+Een openbaar toegankelijke bucket is een echt probleem voor elk bestandstype, maar documenten zoals ID-scans, medische formulieren, of ondertekende contracten dragen materieel hogere belangen dan bijvoorbeeld een openbare profielfoto. Het soort informatie op die documenten (volledige wettelijke namen, geboortedata, identificatienummers) is exact de categorie van gegevens die de meeste schade veroorzaakt als deze breed toegankelijk wordt. En op kinderopvang gerichte producten hebben de neiging om exact dit soort documenten als vanzelfsprekend te verzamelen.
 
-De tool deed precies wat gevraagd werd — een geüpload bestand opslaan en het ophaalbaar maken. Het is geen fout in de bekwaamheid van de tool; het is een weerspiegeling van het feit dat "maak het ophaalbaar" en "maak het alleen ophaalbaar voor mensen die het zouden moeten kunnen ophalen" twee verschillende specificaties zijn, en slechts één ervan werd daadwerkelijk expliciet gemaakt in de meeste prompts die een bestandsuploadfunctie beschrijven.
+Wanneer de persoon op het document een minderjarige is, stijgen de belangen opnieuw: een gelekte ID-scan geeft iemand alles wat nodig is om identiteitsdiefstal te proberen tegen een kind. Dit is een vorm van fraude die jarenlang onopgemerkt kan blijven, precies omdat niemand de kredietgeschiedenis of identiteitsrecords van een kind controleert totdat ze oud genoeg zijn om er zelf een nodig te hebben.
 
-## Wat Dit Gat Dichten Daadwerkelijk Inhoudt
+## Waarom dit geen reden is om AI-coderingsassistenten in het algemeen te wantrouwen
 
-Een correcte fix herconfigureert opslagtoegang om authenticatie te vereisen, vervangt elke publieke of raadbare URL door ondertekende, tijdgebonden URL's, en auditeert wat mogelijk al blootgesteld was tijdens de periode dat de misconfiguratie live was. [LaunchStudio](https://launchstudio.eu/en/) controleert precies dit soort opslagconfiguratie als standaardonderdeel van zijn productiegereedheidsreview, gesteund door Manifera's 11+ jaar ervaring met AWS-, Firebase-, en Supabase-gebaseerde opslagsystemen.
+De tool deed precies wat het gevraagd werd te doen – een geüpload bestand opslaan en het ophaalbaar maken. Het is geen fout in de bekwaamheid van de tool; het is een weerspiegeling van het feit dat "maak het ophaalbaar" en "maak het alleen ophaalbaar voor mensen die het zouden moeten kunnen ophalen" twee verschillende specificaties zijn, en slechts een daarvan werd daadwerkelijk expliciet gemaakt in de meeste prompts die een bestandsuploadfunctie beschrijven.
 
-Manifera's opslagbeveiligingsreviews worden uitgevoerd door het engineeringteam gevestigd bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+## Wat het sluiten van deze kloof daadwerkelijk inhoudt
 
-[Stuur de link van jouw prototype voor een gratis review](https://launchstudio.eu/en/#contact).
+Een correcte herstelling herbouwt de opslagtoegang om authenticatie te vereisen, vervangt eventuele openbare of raadbare URL's door ondertekende, tijdelijk beperkte URL's, en auditeert wat er al blootgesteld kan zijn geweest tijdens de periode dat de verkeerde configuratie live was. [LaunchStudio](https://launchstudio.eu/en/) controleert exact dit soort opslagconfiguratie als een standaardonderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met op AWS, Firebase en Supabase gebaseerde opslagsystemen.
+
+Manifera's beoordelingen van opslagbeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Stuur de link van uw prototype door voor een gratis beoordeling](https://launchstudio.eu/en/#contact).
+
+## Een checklist voor het auditeren van elke opslag-bucket die uw app gebruikt
+
+Een volledig openbare bucket is de meest duidelijke versie van dit probleem, maar het is zelden de enige die het waard is om te controleren.
+
+**Loop door deze vragen voor elke opslag-bucket waar uw app naar schrijft:**
+
+- **Is de bucket zelf oprijstbaar (listable), zelfs als individuele bestanden een directe link vereisen?** Een bucket die mappenlijsten toestaat laat iedereen elke bestandsnaam die erin zit opsommen.
+- **Hoe lang blijven uw ondertekende URL's geldig?** Een ondertekende URL is slechts zo beschermend als zijn vervalvenster.
+- **Heeft u vergeten staging-, backup- of test-buckets van eerdere ontwikkeling?** Deze bevatten vaak kopieën van dezelfde gevoelige bestanden.
+- **Is uw CORS-configuratie afgebakend tot uw daadwerkelijke domein?** Een te brede CORS-policy kan een kwaadwillige site geauthenticeerde verzoeken laten doen namens het slachtoffer.
+- **Zijn bestandsnamen voorspelbaar of opeenvolgend?** Gebruik willekeurige, niet-raadbare identificaties om gokpogingen volledig te elimineren.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de ID-scans die iedereen kon openen
+### Een AI-native oprichter in actie: De ID-scans die iedereen kon openen
 
-Anouk, een Nederlandse founder gevestigd in Antwerpen die bouwt voor de bredere Benelux-markt, bouwde KinderKring, een AI-geassisteerd kinderopvang-boekingsplatform gebouwd met Lovable, met ouders die een scan van de ID van hun kind moesten uploaden als onderdeel van inschrijvingsverificatie.
+Anouk, een Nederlandse oprichtster gevestigd in Antwerpen die bouwt voor de bredere Benelux-markt, bouwde KinderKring, een AI-ondersteund platform voor kinderopvangboekingen gebouwd met Lovable, dat ouders verplicht een scan van de ID van hun kind te uploaden als onderdeel van de inschrijvingsverificatie.
 
-Een technisch aangelegde ouder, nieuwsgierig na het opmerken van het URL-patroon van het geüploade bestand in haar browser, probeerde het bestandsnaamdeel van de link te wijzigen en ontdekte dat ze de geüploade ID-scan van een ander gezin kon bekijken zonder ooit in te loggen. LaunchStudio's review bevestigde dat de opslagbucket met geüploade documenten geen toegangsbeperking had — elke correct geraden of sequentieel ontdekte bestands-URL was volledig zichtbaar.
+Een technisch ingestelde ouder, die nieuwsgierig werd nadat ze het URL-patroon van het geüploade bestand in haar browser opmerkte, probeerde het gedeelte met de bestandsnaam van de link te wijzigen en vond dat ze een scan van de ID van een ander gezin kon bekijken zonder ooit in te loggen. LaunchStudio's beoordeling bevestigde dat de opslag-bucket die geüploade documenten vasthield geen toegangsbeperking had – elke correct gegokte of opeenvolgend ontdekte bestands-URL was volledig bekijkbaar.
 
-**Resultaat:** LaunchStudio herconfigureerde de opslagbucket om geauthenticeerde, ondertekende toegang te vereisen voor elk document, verving alle bestaande publieke URL's, en bevestigde dat geen ander bestandstype in KinderKring dezelfde misconfiguratie deelde, en dicht de blootstelling over het hele platform.
+**Resultaat:** LaunchStudio herbouwde de opslag-bucket om geauthenticeerde, ondertekende toegang te vereisen voor elk document. Ze vervingen alle bestaande openbare URL's en bevestigden dat geen enkel ander bestandstype in KinderKring dezelfde verkeerde configuratie deelde.
 
-> *"Ze had gewoon stil kunnen blijven. In plaats daarvan vertelde ze het ons direct, en ik denk er nog steeds aan hoe anders dat had kunnen aflopen als ze dat niet gedaan had."*
-> — **Anouk Peeters, Founder, KinderKring (Antwerpen)**
+> *"Ze had gewoon stilletjes niets kunnen zeggen. In plaats daarvan vertelde ze het ons rechtstreeks, en ik denk er nog steeds over na hoe compleet anders dat had kunnen verlopen als ze dat niet had gedaan."*
+> — **Anouk Peeters, Oprichter, KinderKring (Antwerpen)**
 
-**Kosten & tijdlijn:** €2.200 (opslagtoegangsaudit en ondertekende-URL-herstel) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.200 (audit van opslagtoegang en herstel van ondertekende URL's) — voltooid in 7 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een cloudinfrastructuurspecialist dit een zeldzame misconfiguratie noemen, of een gebruikelijke?
+### Zou een cloud-infrastructuurspecialist dit noemen als een zeldzame verkeerde configuratie of een veelvoorkomende?
 
-Gebruikelijk genoeg om een van de meest frequent geciteerde real-world cloudmisconfiguraties over de hele industrie breed te zijn, niet specifiek voor AI-gegenereerde code — het verschil met AI-geassisteerd bouwen is simpelweg dat niemand ervaren noodzakelijk de standaardconfiguratie reviewt voordat het live gaat.
+Veelvoorkomend in de hele industrie – het verschil bij bouwen met AI-ondersteuning is simpelweg dat er niet noodzakelijkerwijs iemand met ervaring is die de standaardconfiguratie beoordeelt voordat deze live gaat.
 
-### Geldt dit risico gelijk voor grote cloudproviders, of zijn sommige inherent veiliger standaard?
+### Geldt dit risico voor alle grote cloudproviders?
 
-Standaardgedrag varieert per provider en per specifieke gebruikte dienst, maar het onderliggende risico — een opslaglocatie bereikbaar zonder correcte authenticatie — is mogelijk over vrijwel alle grote providers als het niet doelbewust anders geconfigureerd wordt, dus providerkeuze alleen elimineert de noodzaak van een specifieke review niet.
+Het onderliggende risico – een opslaglocatie die bereikbaar is zonder de juiste authenticatie – is mogelijk bij vrijwel alle grote providers als het niet bewust anders geconfigureerd wordt.
 
-### Is kinderopvangsectordata uniek gevoelig vergeleken met andere verticals waarmee LaunchStudio gewerkt heeft?
+### Is data uit de kinderopvangsector uniek gevoelig?
 
-Het is een van de gevoeligere categorieën gegeven dat het zowel minderjarigen als identiteitsdocumenten tegelijkertijd betreft, hoewel de onderliggende technische fix — correcte toegangscontrole op opgeslagen bestanden — identiek is ongeacht vertical; wat verandert is hoe urgent de review zou moeten gebeuren voordat echte gebruikers erbij betrokken zijn.
+Het behoort tot de gevoeliger categorieën aangezien er zowel minderjarigen als identiteitsdocumenten bij betrokken zijn, hoewel de technische herstelling identiek is.
 
-### CEO Herre Roelevink heeft LaunchStudio's missie beschreven rond het architectuurgat dat AI-tools achterlaten — is een opslagmisconfiguratie een goed voorbeeld van dat gat?
+### Is een opslagfout een goed voorbeeld van de architectuurkloof die de CEO beschrijft?
 
-Een heel direct voorbeeld — dit is architectuur in de meest letterlijke zin, een configuratiebeslissing over hoe data opgeslagen en benaderd wordt, één keer gemaakt tijdens setup en dan onzichtbaar voor iedereen tenzij specifiek gereviewd, precies de categorie waar Roelevinks publieke commentaar consistent naar teruggaat.
+Een heel direct voorbeeld – dit is architectuur in de meest letterlijke zin, een configuratiebeslissing die één keer genomen wordt en onzichtbaar is tenzij specifiek beoordeeld.
 
-### Kan een founder de toegangsinstellingen van hun eigen opslagbucket zelf controleren zonder engineeringhulp?
+### Kan een oprichter de toegangstinstellingen van zijn opslag-bucket zelf controleren?
 
-Gedeeltelijk — de meeste cloudopslagdashboards tonen een zichtbare "publiek" of "privé" toegangsindicator die een founder direct kan controleren, hoewel bevestigen dat elk specifiek bestand en elke map binnen de bucket daadwerkelijk de bedoelde instelling volgt, in plaats van een uitzondering die erdoor glipt, doorgaans baat heeft bij een volledige technische review.
+Gedeeltelijk via de visuele "openbaar/privé" indicator in het dashboard van de cloudprovider, hoewel het bevestigen dat elk bestand dit volgt een volledige beoordeling vereist.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Lỗi để public storage bucket có phổ biến không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rất phổ biến trên toàn ngành, khác biệt khi dùng AI là không có dev kinh nghiệm review cấu hình mặc định trước khi live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Các cloud provider lớn (AWS, Firebase, Supabase) có an toàn mặc định không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tùy dịch vụ, nhưng rủi ro để lộ file vẫn xảy ra trên mọi provider nếu không được cấu hình quyền truy cập rõ ràng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dữ liệu liên quan đến trẻ em và giấy tờ tùy thân nhạy cảm thế nào?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Đặc biệt nhạy cảm vì chứa thông tin cá nhân của trẻ em, dễ bị lợi dụng để đánh cắp danh tính kéo dài nhiều năm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Signed URL có thời hạn dài có an toàn như private file không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, signed URL tồn tại quá lâu (vài tuần/tháng) về bản chất gần như một file public nếu bị lỡ chia sẻ hoặc lưu cache."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Làm sao để tự kiểm tra bucket của mình có bị public không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kiểm tra nhãn public/private trên dashboard cloud provider và thử mở URL file từ trình duyệt ẩn danh không đăng nhập."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cách xử lý chuẩn nhất cho các file giấy tờ cá nhân tải lên là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chuyển bucket sang Private, chỉ tạo Signed URL có thời hạn ngắn (vài phút) khi người dùng hợp lệ yêu cầu xem."
+      }
+    }
+  ]
+}
+</script>

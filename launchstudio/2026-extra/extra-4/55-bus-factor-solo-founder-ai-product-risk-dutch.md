@@ -1,17 +1,18 @@
 ---
-Titel: "De busfactor: wat er met uw AI-product gebeurt als u een maand afwezig bent"
+Titel: "De Bus Factor: Wat gebeurt er met uw AI-product als u een maand uitgeschakeld bent"
 Trefwoorden: ai native, ai prototype, bus factor startup, solo founder risk, single point of failure saas
 Koperfase: Bewustzijn
-Doelgroep: AI-Native-oprichter
+Doelgroep: AI-Native oprichter
 ---
-# De busfactor: wat er met uw AI-product gebeurt als u een maand afwezig bent
+
+# De Bus Factor: Wat gebeurt er met uw AI-product als u een maand uitgeschakeld bent
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "De busfactor: wat er met uw AI-product gebeurt als u een maand afwezig bent",
-  "description": "Als u de enige persoon bent die toegang heeft tot uw productiedatabase, domein en betalingsprovider, heeft uw product een busfactor van \u00e9\u00e9n. Dit is wat dat eigenlijk betekent en hoe solo-oprichters de kloof dichten voordat een noodsituatie daartoe noopt.",
+  "headline": "De Bus Factor: Wat gebeurt er met uw AI-product als u een maand uitgeschakeld bent",
+  "description": "Als u de enige persoon bent met toegang tot uw productiedatabase, domein en betalingsverwerker.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,79 +31,84 @@ Doelgroep: AI-Native-oprichter
 }
 </script>
 
-'Busfactor' is een oude technische term voor een botte vraag: hoeveel mensen moeten er door een bus aangereden worden voordat uw project stopt met functioneren? Voor de meeste solo-AI-native oprichters is het eerlijke antwoord één. Niet omdat ze nog niemand hebben aangenomen – dat is in dit stadium normaal – maar omdat niemand, inclusief een mede-oprichter, een contractant of een echtgenoot, kan inloggen op de database, de domeinregistreerder of de betalingsprovider als de oprichter simpelweg een paar weken niet kan reageren.
+"Bus factor" is een oude engineeringterm voor een botte vraag: hoeveel mensen zouden door een bus geraakt moeten worden voordat uw project stopt met functioneren? Voor de meeste solo AI-native oprichters is het eerlijke antwoord één. Niet omdat ze nog niemand hebben aangenomen – dat is normaal in deze fase – maar omdat niemand, inclusief een mede-oprichter, een leverancier, of een echtgenoot, zou kunnen inloggen op de database, de domeinregistrar, of de betalingsverwerker als de oprichter simpelweg een paar weken niet kan reageren.
 
-## Dit gaat niet over doodgaan, het gaat over een slechte maand
+## Dit gaat niet over overlijden, het gaat over een slechte maand
 
-Het gesprek over de busfactor wordt vaak afgewezen omdat de oprichters zich iets dramatisch en onwaarschijnlijks voorstellen. De realistische versie is veel alledaagser: een operatie met een langer herstel dan verwacht, een noodgeval in het gezin waarvoor je offline en onbereikbaar moet zijn, zelfs alleen maar een verloren of gestolen telefoon met je enige authenticator-app erop. Geen van deze zaken zijn randgevallen in iemands leven; het zijn iets dat uiteindelijk met bijna iedereen gebeurt. De vraag is alleen of uw product het kan overleven, of dat een storing, een aflopend domein of een mislukte betalingsrun gewoonweg onopgelost blijft omdat de enige persoon die het probleem zou kunnen repareren niet bereikbaar is.
+Het gesprek over de bus factor heeft de neiging te worden weggewuifd omdat oprichters zich iets dramatisch en onwaarschijnlijks voorstellen. De realistische versie is aanzienlijk alledaagser: een operatie met een langer herstel dan verwacht, een familie-noodgeval dat vereist dat men offline en onbereikbaar is, of zelfs simpelweg een telefoon die verloren of gestolen is met uw enige authenticator-app erop. Geen van deze situaties zijn uitzonderlijke gevallen in het leven van een mens – het is het soort ding dat bijna iedereen uiteindelijk overkomt. De vraag is alleen of uw product het kan overleven, of dat een storing, een verlopend domein, of een mislukte betalingsronde daar simpelweg onopgelost blijft zitten omdat de ene persoon die het kon herstellen niet bereikbaar is.
 
-Voor een door AI gebouwd product is dit risico vaak groter dan voor een traditioneel gebouwd product, en niet beter. Oprichters die snel bouwen met Lovable, Bolt of Cursor hebben de neiging om snel door de installatieschermen te gaan (de database aanmaken, het domein registreren, Stripe verbinden) en voor alles hun eigen persoonlijke accounts en hun eigen e-mailadres gebruiken, omdat 'een tweede beheerder toevoegen' destijds een taak voor later voelde. Later komt zelden vanzelf; er is een opzettelijke pas voor nodig om terug te gaan en de toegang op de juiste manier te delen.
+Voor een met AI gebouwd product is dit risico vaak erger dan voor een traditioneel gebouwd product, en niet beter. Oprichters die snel bouwen met Lovable, Bolt of Cursor hebben de neiging snel door installatieschermen te bewegen – de database aanmaken, het domein registreren, Stripe verbinden – gebruikmakend van hun eigen persoonlijke accounts en hun eigen e-mailadres voor alles. Op dat moment voelde "voeg een tweede beheerder toe" namelijk als een taak voor later. Later komt zelden uit zichzelf. Het vereist een bewuste stap om terug te gaan en toegang op de juiste manier te delen.
 
-## Wat er eigenlijk kapot gaat als de oprichter een tijdje verdwijnt
+## Wat er daadwerkelijk breekt wanneer de oprichter een tijdje verdwijnt
 
-Drie systemen zijn bijna altijd de enige storingspunten: de productiedatabase (als deze een handmatige back-up, een schaalwijziging of noodtoegang nodig heeft en er slechts één login bestaat), de domeinregistreerder (een domein dat stilletjes verloopt omdat een verlengingsbetaling is mislukt en geen tweede persoon de melding heeft ontvangen), en de account van de betalingsprovider (geschillen, mislukte afschrijvingen of een fraude-blokkering die binnen enkele dagen, niet weken, een reactie vereist). Als een van deze problemen zelfs maar twee of drie weken onbeheerd blijft, kan een live product offline worden gehaald of betalende klanten worden buitengesloten - en in tegenstelling tot een codefout is er geen manier om dit later te repareren zodra een domein daadwerkelijk is verlopen of een account daadwerkelijk is opgeschort wegens inactiviteit.
+Drie systemen zijn vrijwel altijd de enkele punten van mislukken (single points of failure): de productiedatabase (als het een handmatige back-up, een schaalwijziging, of noodtoegang nodig heeft, en er slechts één inlog bestaat), de domeinregistrar (een domein dat stilletjes verloopt omdat een verlengingsbetaling is mislukt en geen tweede persoon de melding kreeg), en het account van de betalingsverwerker (geschillen, mislukke afschrijvingen, of een fraudeblokkade die binnen dagen een reactie nodig heeft, en niet weken). Elk van deze systemen dat gedurende zelfs twee of drie weken onbeheerd blijft kan een live product offline halen of betalende klanten uitsluiten. In tegenstelling tot een codebug is er geen manier om het "later te herstellen" zodra een domein daadwerkelijk is verlopen of een account daadwerkelijk is geschorst wegens inactiviteit.
 
-LaunchStudio brengt Manifera's hoogwaardige engineering naar de grondleggerseconomie, en een deel van wat dat in de praktijk betekent is dat de continuïteit van de toegang net zo serieus wordt genomen als de code zelf. Ons team, dat werkt vanuit het kantoor van Manifera in Amsterdam, behandelt dit doorgaans als een gestructureerde toegangsaudit: een lijst maken van elk systeem waarvan een product afhankelijk is, bevestigen wie momenteel toegang heeft en een tweede vertrouwde beheerder instellen (of dat nu een mede-oprichter, een familielid of LaunchStudio zelf is onder een ondersteuningsregeling) zodat de beschikbaarheid van één persoon niet bepaalt of het product online blijft.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Wat dat praktisch betekent is het behandelen van continuïteit van toegang net zo serieus als de code zelf. Ons team, werkend vanuit Manifera's kantoor in Amsterdam, pakt dit doorgaans op als een gestructureerde toegangs-audit: het vermelden van elk systeem waar een product van afhangt, het bevestigen van wie momenteel toegang heeft, en het instellen van een tweede vertrouwde beheerder – of dat nu een mede-oprichter is, een familielid, of LaunchStudio zelf onder een ondersteuningsregeling – zodat geen enkele beschikbaarheid van een enkel persoon bepaalt of het product live blijft.
 
-## De kloof dichten zonder iemand aan te nemen
+## De kloof sluiten zonder iemand aan te nemen
 
-Je hebt geen team nodig om een ​​busfactor van één te repareren. U hebt een gedocumenteerde lijst nodig van elk account waarvan uw product afhankelijk is (hosting, database, domein, betalingsprovider, e-mail, eventuele API-sleutels van derden), een wachtwoordbeheerder of een geheime kluis die wordt gedeeld met ten minste één andere vertrouwde persoon, en – cruciaal – dat de tweede persoon daadwerkelijk wordt toegevoegd als beheerder of secundair contact bij elke service, en niet alleen wordt verteld dat het wachtwoord ergens bestaat. Dit zijn een paar uur weinig glamoureus opstartwerk dat de meeste oprichters blijven uitstellen, juist omdat er momenteel niets in brand staat. Het is de moeite waard om het te doen voordat dat verandert.
+U heeft geen team nodig om een bus factor van één te herstellen. U heeft een gedocumenteerde lijst nodig van elk account waar uw product van afhangt (hosting, database, domein, betalingsverwerker, e-mail, eventuele API-sleutels van derden), een wachtwoordbeheerder-invoer of geheim kluisje gedeeld met ten minste één andere vertrouwde persoon, en – cruciaal – dat die tweede persoon daadwerkelijk wordt toegevoegd als een beheerder of secundair contact op elke dienst, en niet simpelweg te horen krijgt dat het wachtwoord ergens bestaat. Dit is een paar uur aan onglamoureus installatiewerk dat de meeste oprichters blijven uitstellen precies omdat er momenteel niets in brand staat. Het is de moeite waard om te doen voordat dat veranderd.
 
-Als u nog eens goed wilt kijken waar uw product momenteel van afhankelijk is, dan is onze [contactpagina](https://launchstudio.eu/en/#contact) een snelle manier om dat gesprek te starten, en het team van Manifera voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is zo gestructureerd dat de continuïteit van een product nooit afhankelijk is van de bereikbaarheid van één persoon.
+Als u een tweede set ogen wilt op waar uw product momenteel van afhangt, is onze [contactpagina](https://launchstudio.eu/en/#contact) een snelle manier om dat gesprek te starten. En Manifera's team voor [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/) is specifiek zo gestructureerd dat de continuïteit van een product nooit afhangt van het bereikbaar zijn van één individu.
 
-## Een tweede beheerder toevoegen lost MFA niet op zichzelf op
+## Het toevoegen van een tweede beheerder herstelt MFA niet uit zichzelf
 
-Het overdragen van toegang door een tweede beheerdersaccount aan te maken vermindert het "bus factor"-risico (wanneer één oprichter wegvalt). Als de twee-factor-authenticatie (MFA) voor het secundaire account gekoppeld is aan de persoonlijke telefoon van de eerste oprichter, kan de tweede beheerder alsnog niet inloggen tijdens een noodgeval.
+Het toevoegen van een tweede beheerder aan uw database, domeinregistrar en betalingsverwerker sluit de meest duidelijke kloof, maar het kan stilletjes een tweede kloof laten zitten: tweefactorauthenticatie (MFA). De meeste diensten laten u met plezier een tweede beheerdersaccount toevoegen terwijl elke risicovolle actie op dat account – een grote uitbetaling, een domeinoverdracht, een ondersteuningsoproep die bewijst dat u de accounteigenaar bent – zijn verificatiestap nog steeds leidt via een telefoonnummer of authenticator-app die alleen de oprichter bezit. De tweede beheerder kan inloggen. Hij kan nog steeds niet handelen, omdat de controle die er het meest toe doet gekoppeld is aan een apparaat dat hij niet heeft.
 
-Gebruik gedeelde wachtwoordkluisbeveiliging met back-up MFA-sleutels:
+Dit is gemakkelijk te missen precies omdat het niet naar boven komt wanneer u simpelweg controleert "kan deze persoon inloggen". Het verschijnt tijdens de exacte noodsituatie die de tweede beheerder verondersteld werd te dekken – een uitbetaling heeft goedkeuring nodig, of een fraudeblokkade moet worden opgeheven, en de verificatiecode gaat naar een telefoon waar niemand behalve de onbereikbare oprichter toegang toe heeft. Het op de juiste manier sluiten hiervan betekent het auditeren van MFA per dienst, en niet alleen beheerderstoegang per dienst.
 
-```text
-Checklist voor noodtoegang:
-1. Sla MFA-herstelsleutels op in een gedeelde kluis (bijv. 1Password for Teams).
-2. Documenteer de stappen voor wachtwoordherstel in de interne opslag.
 ```
+Dienst: Stripe (betalingsverwerker)
+Primaire beheerder: Oprichter (persoonlijk e-mailadres)
+Secundaire beheerder: Toegevoegd — zakenpartner
+MFA-methode: Authenticator-app (alleen telefoon oprichter) — ACTIE NODIG
+Back-up/herstelcodes: Nog niet opgeslagen in gedeelde kluis — ACTIE NODIG
+
+Dienst: Domeinregistrar
+Primaire beheerder: Oprichter
+Secundaire beheerder: Toegevoegd
+MFA-methode: SMS naar nummer oprichter — ACTIE NODIG
+Back-up/herstelcodes: Opgeslagen in gedeelde wachtwoordbeheerder
+```
+
+Een eenvoudige inventarisatie zoals deze, uitgevoerd naast de audit voor beheerderstoegang, is wat "iemand anders heeft een inlog" veranderd in "iemand anders kan daadwerkelijk handelen wanneer het er toe doet."
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: twee weken offline, niemand anders heeft de sleutels in handen
+### Een AI-native oprichter in actie: Twee weken offline, niemand anders met de sleutels
 
-Marit Voskuijlen, oprichter in Drachten, bouwde RittenLog – een SaaS voor kilometerregistratie voor kleine wagenparken – met behulp van Lovable. Zoals de meeste solo-oprichters die snel aan de slag gingen, had ze de productiedatabase, de domeinregistratie en de Stripe-betaalrekening volledig onder haar eigen persoonlijke logins opgezet, zonder dat daar een tweede beheerder op zat.
+Marit Voskuijlen, een oprichter in Drachten, bouwde RittenLog – een SaaS voor rittenregistratie voor kleine wagenparken – met behulp van Lovable. Zoals de meeste solo-oprichters die snel bewegen, had ze de productiedatabase, de domeinregistratie en het Stripe-betalingsaccount volledig ingesteld onder haar eigen persoonlijke inlogs, zonder tweede beheerder op een van die diensten.
 
-Een ongepland verblijf van twee weken in het ziekenhuis veranderde dit van een theoretisch risico in een actief risico. Tijdens die periode mislukte een routinematige betaling voor domeinverlenging stilletjes en begon de database van RittenLog een opslaglimiet te naderen die handmatige aandacht nodig had. Niemand anders had toegang tot beide systemen en Marit was onbereikbaar. Het product kwam binnen enkele dagen nadat het domein volledig was verdwenen, waardoor het dashboard voor het volgen van wagenparken van elke klant offline zou zijn gehaald zonder duidelijk pad naar herstel.
+Een ongeplande ziekenhuisopname van twee weken veranderde dit van een theoretisch risico in een actief risico. Tijdens dat venster mislukte een routineuze verlengingsbetaling voor het domein stilletjes, en RittenLog's database begon een opslaglimiet te naderen die handmatige aandacht nodig had. Niemand anders had toegang tot een van beide systemen, en Marit was onbereikbaar. Het product kwam binnen dagen van het volledig laten verlopen van het domein, wat het dashboard voor rittenregistratie van elke klant offline zou hebben gehaald zonder duidelijk pad naar herstel.
 
-LaunchStudio werd ingeschakeld zodra Marit weer online was om ervoor te zorgen dat dit niet nog een keer kon gebeuren. Ons team voerde een volledige toegangscontrole uit over de stack van RittenLog, voegde een tweede beheerdersaccount toe (een vertrouwde zakelijke contactpersoon die Marit had aangewezen) aan de database, de domeinregistreerder en het Stripe-account, en stelde factureringswaarschuwingen in die naar twee e-mailadressen werden gerouteerd in plaats van één, zodat een mislukte betaling of een naderende limiet nooit meer afhankelijk zou zijn van het feit dat één persoon dit op tijd zou zien.
+LaunchStudio werd ingeschakeld zodra Marit weer online was om ervoor te zorgen dat dit niet opnieuw kon gebeuren. Ons team voerde een volledige toegangs-audit uit over RittenLog's stack, voegde een tweede beheerdersaccount toe – een vertrouwd zakelijk contact dat Marit aanwees – aan de database, domeinregistrar en het Stripe-account. We stelden facturatie-waarschuwingen in die naar twee e-mailadressen worden geleid in plaats van één. Een mislukte betaling of een naderende limiet hangt zo nooit meer af van het op tijd zien door één persoon.
 
-**Resultaat:** RittenLog heeft nu twee geverifieerde beheerders op elk kritiek systeem en een gedocumenteerde toegangslijst die Marit wordt bijgewerkt wanneer er een nieuwe service wordt toegevoegd.
+**Resultaat:** RittenLog heeft nu twee geverifieerde beheerders op elk kritiek systeem, en een gedocumenteerde toegangslijst die Marit bijwerkt wanneer er een nieuwe dienst wordt toegevoegd.
 
-> *"Ik heb RittenLog gebouwd om andere mensen te helpen hun wagenpark te beheren, en het is nooit bij me opgekomen dat ik het enige punt van mislukking was voor mijn eigen bedrijf."*
-> — **Marit Voskuijlen, oprichter, RittenLog (Drachten)**
+> *"Ik bouwde RittenLog om andere mensen te helpen hun wagenparken te beheren. Het was nooit bij me opgekomen dat ik het enkele punt van mislukken was voor mijn eigen bedrijf."*
+> — **Marit Voskuijlen, Oprichter, RittenLog (Drachten)**
 
-**Kosten en tijdlijn:** € 650 (toegangsaudit en installatie door tweede beheerder voor hosting, database, domein en betalingsprovider) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 650 (toegangs-audit en instellen van een tweede beheerder over hosting, database, domein en betalingsverwerker) — voltooid in 4 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Heb ik een mede-oprichter nodig om mijn busfactor te herstellen?
+### Heb ik een mede-oprichter nodig om mijn bus factor te herstellen?
 
-Nee: een vertrouwd zakelijk contact, een familielid of zelfs een afspraak met LaunchStudio voor voortdurende ondersteuning kan als tweede beheerder dienen; waar het om gaat is dat iemand anders dan jij in actie kan komen als dat nodig is.
+Nee – een vertrouwd zakelijk contact, een familielid, of zelfs een regeling met LaunchStudio voor doorlopende ondersteuning kan dienen als de tweede beheerder. Wat er toe doet is dat iemand anders dan u kan handelen indien nodig.
 
-### Wat is de minimale lijst met systemen die ik eerst moet controleren?
+### Wat is de minimale lijst van systemen die ik eerst zou moeten controleren?
 
-Toegang tot de productiedatabase, domeinregistreerder, betalingsprovider (Stripe of iets dergelijks) en uw primaire hostingaccount: deze vier veroorzaken het meest waarschijnlijk een onomkeerbaar probleem als ze onbeheerd worden achtergelaten.
-
-### Hoe structureert LaunchStudio dit soort audits doorgaans?
-
-Ons team, dat vanuit Manifera's kantoor in Amsterdam werkt, maakt een lijst van elke afhankelijkheid die een product heeft, bevestigt de huidige toegang en voegt een gedocumenteerde tweede beheerder toe aan elk kritiek systeem - een proces dat is opgebouwd op basis van Manifera's bredere ervaring met het ondersteunen van productiesystemen voor zakelijke klanten.
+Toegang tot de productiedatabase, domeinregistrar, betalingsverwerker (Stripe of gelijkwaardig), en uw primaire hostingaccount. Deze vier veroorzaken de meeste kans op een onomkeerbaar probleem als ze onbeheerd blijven.
 
 ### Is een wachtwoordbeheerder niet voldoende om dit op te lossen?
 
-Een wachtwoordbeheerder lost het probleem 'iemand anders kan inloggen' op, maar niet het probleem 'iemand anders is daadwerkelijk geautoriseerd voor het account'. Betalingsproviders en registrars markeren of blokkeren vaak de toegang van een niet-herkende login, zelfs met het juiste wachtwoord, dus er moet direct een goede tweede beheerder worden toegevoegd.
+Een wachtwoordbeheerder lost het probleem op dat "iemand anders zou kunnen inloggen", maar niet het probleem dat "iemand anders daadwerkelijk geautoriseerd is op het account". Betalingsverwerkers en registrars markeren of blokkeren vaak de toegang vanaf een onbekende inlog, zelfs met het correcte wachtwoord. Een correcte tweede beheerder moet dus rechtstreeks worden toegevoegd.
 
-### Geldt dit ook als ik al een klein team heb?
+### Als ik een tweede beheerder heb toegevoegd, is mijn bus factor-probleem dan daadwerkelijk opgelost?
 
-Ja, maar minder urgent: dezelfde audit is de moeite waard voor elk team waar de toegang tot cruciale accounts geconcentreerd is bij één persoon, zelfs als die persoon niet de enige medewerker is.
-
+Niet volledig – veel diensten leiden risicovolle acties zoals grote uitbetalingen of accountherstel nog steeds via de telefoon of authenticator-app van de oorspronkelijke oprichter, zelfs nadat er een tweede beheerder is toegevoegd. De MFA- en herstelmethode op elke dienst heeft dus zijn eigen controle nodig naast de beheerderstoegang zelf.
 
 <script type="application/ld+json">
 {
@@ -111,42 +117,42 @@ Ja, maar minder urgent: dezelfde audit is de moeite waard voor elk team waar de 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Heb ik een mede-oprichter nodig om mijn busfactor te herstellen?",
+      "name": "Wat is de Bus Factor van een solo AI-founder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee: een vertrouwd zakelijk contact, een familielid of zelfs een afspraak met LaunchStudio voor voortdurende ondersteuning kan als tweede beheerder dienen; waar het om gaat is dat iemand anders dan jij in actie kan komen als dat nodig is."
+        "text": "Voor de meeste solo founders is de Bus Factor 1: als de founder uitvalt (ziekte, verlies telefoon), kan niemand bij de database, Stripe of het domein."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is de minimale lijst met systemen die ik eerst moet controleren?",
+      "name": "Welke 4 accounts zijn het meest kritiek bij een Bus Factor audit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Toegang tot de productiedatabase, domeinregistreerder, betalingsprovider (Stripe of iets dergelijks) en uw primaire hostingaccount: deze vier veroorzaken het meest waarschijnlijk een onomkeerbaar probleem als ze onbeheerd worden achtergelaten."
+        "text": "1. Productie database toelating 2. Domein-registrar (DNS) 3. Payment provider (Stripe) 4. Primaire Cloud/Hosting provider (Vercel, AWS)."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe structureert LaunchStudio dit soort audits doorgaans?",
+      "name": "Is een 1Password/Bitwarden kluis delen genoeg voor continuïteit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ons team, dat vanuit Manifera's kantoor in Amsterdam werkt, maakt een lijst van elke afhankelijkheid die een product heeft, bevestigt de huidige toegang en voegt een gedocumenteerde tweede beheerder toe aan elk kritiek systeem - een proces dat is opgebouwd op basis van Manifera's bredere ervaring met het ondersteunen van productiesystemen voor zakelijke klanten."
+        "text": "Nee! Stripe en domein-registrars blokkeren inlogs vanaf onbekende IP's/apparaten. Je moet een 2e persoon expliciet toevoegen als geautoriseerde team-admin."
       }
     },
     {
       "@type": "Question",
-      "name": "Is een wachtwoordbeheerder niet voldoende om dit op te lossen?",
+      "name": "Waarom is MFA (2FA) de verborgen valkuil bij noodtoegang?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een wachtwoordbeheerder lost het probleem 'iemand anders kan inloggen' op, maar niet het probleem 'iemand anders is daadwerkelijk geautoriseerd voor het account'. Betalingsproviders en registrars markeren of blokkeren vaak de toegang van een niet-herkende login, zelfs met het juiste wachtwoord, dus er moet direct een goede tweede beheerder worden toegevoegd."
+        "text": "Omdat uitbetalingen en domein-transfers een SMS/Authenticator code eisen die alleen op de privé-telefoon van de founder binnenkomt. Sla nood-backupcodes op in de kluis."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt dit ook als ik al een klein team heb?",
+      "name": "Wat kost een Bus Factor & Access audit bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, maar minder urgent: dezelfde audit is de moeite waard voor elk team waar de toegang tot cruciale accounts geconcentreerd is bij één persoon, zelfs als die persoon niet de enige medewerker is."
+        "text": "Een volledige toegangs-audit en het inrichten van 2e admin/MFA continuïteit kost gemiddeld €650 en duurt 4 werkdagen."
       }
     }
   ]

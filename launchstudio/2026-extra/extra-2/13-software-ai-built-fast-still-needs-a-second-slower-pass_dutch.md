@@ -1,73 +1,181 @@
 ---
-Titel: "Software Die AI Snel Bouwde Heeft Nog Steeds Een Tweede, Langzamere Pass Nodig"
+Titel: "Software die AI snel heeft gebouwd heeft nog steeds een tweede, langzamere stap nodig"
 Trefwoorden: software ai, ai deployment, ai coding, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: SaaS Founder Scale-Up
+Doelgroep: SaaS-oprichter Scale-Up
 ---
 
-# Software Die AI Snel Bouwde Heeft Nog Steeds Een Tweede, Langzamere Pass Nodig
+# Software die AI snel heeft gebouwd heeft nog steeds een tweede, langzamere stap nodig
 
-Software-AI-tools optimaliseren hard voor één variabele: iets zo snel mogelijk werkend voor je krijgen. Dat is een oprecht waardevolle afweging tijdens vroege prototyping. Het wordt een aansprakelijkheid op het moment dat echte klantdata begint te stromen door een API die, tijdens diezelfde snelle pass, geconfigureerd werd om verzoeken van letterlijk overal op het internet te accepteren.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Software die AI snel heeft gebouwd heeft nog steeds een tweede, langzamere stap nodig",
+  "description": "Snelheid en grondigheid trekken in verschillende richtingen. Een voor/na vergelijking van wat er verandert wanneer software een uithardingsstap krijgt.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-23",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/software-ai-built-fast-still-needs-a-second-slower-pass"
+  }
+}
+</script>
 
-## Voor: De Snel-Itereren-Standaard
+AI-softwaretools optimaliseren hard voor één variabele: het zo snel mogelijk werkend voor u krijgen van iets. Dat is een oprecht waardevolle ruil tijdens het vroege prototypen. Het wordt een aansprakelijkheid op het moment dat echte klantgegevens beginnen te stromen door een API die, tijdens diezelfde snelle stap, geconfigureerd werd om verzoeken te accepteren van letterlijk overal op het internet.
 
-**Vóór een hardingspass** is het extreem gebruikelijk voor een AI-gegenereerde API om geconfigureerd te zijn met een permissief of volledig open CORS-beleid (cross-origin resource sharing) — verzoeken accepterend van elke herkomst, niet alleen het domein van jouw eigen frontend. Dit is geen luiheid; het is het pad van de minste weerstand tijdens snelle iteratie, aangezien een restrictief CORS-beleid anders in de weg kan zitten van tests over lokale ontwikkel-URL's, preview-deployments, en staging-omgevingen die constant veranderen tijdens actief bouwen.
+## Vóór: De standaardwaarde van snelle iteratie
 
-## Na: Wat Een Doelbewuste Hardingspass Verandert
+**Vóór een uithardingsstap** is het extreem gebruikelijk dat een met AI gegenereerde API is geconfigureerd met een permissief of volledig open CORS-beleid (Cross-Origin Resource Sharing) – het accepteren van verzoeken van elke oorsprong (origin), en niet alleen van het domein van uw eigen frontend. Dit is geen luidruchtige luiheid; het is het pad van de minste weerstand tijdens snelle iteratie. Een beperkend CORS-beleid kan anders namelijk in de weg zitten van het testen over lokale ontwikkelings-URL's, preview-uitrollen, en staging-omgevingen die voortdurend veranderen tijdens actief bouwen.
 
-**Na harding** staat het CORS-beleid van de API expliciet alleen de specifieke, bekende herkomsten toe die legitiem toegang nodig hebben — jouw productiefrontend, jouw staging-omgeving indien nog in gebruik — en weigert standaard verzoeken van overal elders, en sluit de deur voor andere websites die geauthenticeerde verzoeken doen tegen jouw API met de eigen browsersessie van een ingelogde gebruiker.
+## Na: Wat een bewuste uithardingsstap verandert
 
-## Waarom Een Open CORS-Beleid Riskanter Is Dan Het Eerst Klinkt
+**Na uitharding** staat het CORS-beleid van de API expliciet alleen de specifieke, bekende oorsprongen toe die legitiem toegang nodig hebben – uw productie-frontend, uw staging-omgeving indien nog in gebruik – en weigert het standaard verzoeken van overal elders. Dit sluit de deur voor andere websites die geauthenticeerde verzoeken uitvoeren tegen uw API met behulp van de eigen browsersessie van een ingelogde gebruiker.
 
-Een onbeperkt CORS-beleid betekent dat elke website op het internet verzoeken kan doen naar jouw API vanuit de browser van een bezoeker, en als die bezoeker toevallig ingelogd is in jouw product in een ander tabblad, kunnen die verzoeken mogelijk hun sessie met zich meedragen — en veranderen een compleet ongerelateerde, mogelijk kwaadaardige site in een onbedoelde client van jouw API, handelend met de daadwerkelijke rechten van een echte gebruiker.
+## Waarom een open CORS-beleid risicovoller is dan het aanvankelijk klinkt
 
-## Waarom Dit Bijna Nooit Verschijnt Tijdens Normale Ontwikkeling
+Een onbeperkt CORS-beleid betekent dat elke website op het internet verzoeken kan doen naar uw API vanuit de browser van een bezoeker. En als die bezoeker toevallig ingelogd is op uw product in een ander tabblad, kunnen die verzoeken potentieel zijn sessie met zich meedragen. Dit veranderd een volledig ongerelateerde, mogelijk kwaadwillige site in een onbedoelde client van uw API, handelend met de daadwerkelijke machtigingen van een echte gebruiker.
 
-Jouw eigen frontend tegen jouw eigen API testen, vanaf jouw eigen bekende domein, oefent het open-voor-iedereen-deel van het beleid helemaal nooit uit — alles gedraagt zich identiek of het beleid nu wagenwijd open of correct beperkt is, omdat jouw eigen legitieme frontend hoe dan ook altijd een toegestane herkomst zal zijn. Het gat is alleen zichtbaar vanuit het perspectief van een verzoek dat niet toegestaan zou moeten zijn, wat niemand per ongeluk genereert tijdens gewoon bouwen.
+## Waarom dit bijna nooit naar boven komt tijdens normale ontwikkeling
 
-## Waarom "Nu Snel" En "Later Op Slot" Een Redelijke Afweging Is, Als Het Doelbewust Is
+Het testen van uw eigen frontend tegen uw eigen API, vanaf uw eigen bekende domein, oefent het open-voor-iedereen gedeelte van het beleid überhaupt nooit uit – alles gedraagt zich identiek of het beleid nu wijd openstaat of correct beperkt is. Uw eigen legitieme frontend zal op beide manieren altijd een toegestane oorsprong zijn. De kloof is alleen zichtbaar vanuit het perspectief van een verzoek dat niet toegestaan zou moeten worden, wat niemand per ongeluk genereert tijdens gewoon bouwen.
 
-Er is niets mis met een open CORS-beleid tijdens actieve vroege ontwikkeling — de fout zit alleen in dat vroege-fase-gemak behandelen als een permanente, ongereviewde standaard in plaats van een bekende afweging met een geplande tweede pass voordat echte gebruikersdata erbij betrokken raakt. [LaunchStudio](https://launchstudio.eu/en/) voert precies dit soort hardingspass uit als standaardpraktijk voordat een product live gaat, gesteund door Manifera's 11+ jaar het configureren van productie-API-beveiliging voor klanten waaronder Vodafone.
+Dit is wat een open CORS-beleid uniek moeilijk maakt om op te vangen via gewoon gebruik: het is geen bug in de traditionele zin, waar iets zich verkeerd gedraagt voor de persoon die het test. Elke enkele test die een oprichter uitvoert – elke paginalaadbeurt, elke API-oproep, elke functiecontrole – slaagt exact zoals verwacht, omdat de eigen frontend van de oprichter onder beide configuraties altijd behandeld zou worden als een toegestane oorsprong. De enige manier waarop het verschil zichtbaar wordt is door opzettelijk een verzoek te construeren dat niet toegestaan zou moeten worden en te bevestigen dat het geweigerd wordt. Dit is een fundamenteel ander soort test dan alles wat gewone functieontwikkeling produceert.
 
-Manifera's infrastructuur- en API-hardingwerk wordt geleverd vanuit het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420 voor klantgerichte scoping.
+## Waarom "Snel nu" en "Later vergrendeld" een redelijke ruil is, mits bewust
 
-[Laat jouw betalingsflow testen tegen realistische faalcondities, niet alleen het happy path](https://launchstudio.eu/en/#calculator).
+Er is niets mis met een open CORS-beleid tijdens actieve vroege ontwikkeling – de fout is alleen in het behandelen van dat gemak in de vroege fase als een permanente, onbeoordeelde standaardwaarde in plaats van een bekende afweging met een geplande tweede stap voordat er echte gebruikersgegevens bij betrokken zijn. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort uithardingsstap uit als standaardpraktijk voordat een product live gaat, ondersteund door Manifera's 11+ jaar ervaring met het configureren van productie-API-beveiliging voor klanten waaronder Vodafone.
+
+Manifera's uithardingswerk voor infrastructuur en API's wordt geleverd vanuit het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/en/#calculator).
+
+## Hoe u uw eigen CORS-configuratie kunt auditeren en uitharden
+
+Het controleren van uw huidige CORS-installatie vereist geen beveiligingsconsultant – de meeste frameworks stellen het beleid bloot op één identificeerbare plek, en het correct testen ervan vereist simpelweg te weten waar u naar moet kijken.
+
+**Vind waar uw beleid daadwerkelijk is gedefinieerd**
+
+- Express/Node apps: doorgaans een `cors()` middleware-oproep, soms geconfigureerd met `origin: '*'` of `origin: true` — beide effectief wijd open
+- Frameworks met ingebouwde CORS-afhandeling (Django, Rails, FastAPI): typisch een instellingenbestand dat toegestane oorsprongen vermeldt
+- Beheerde platformen (Supabase, Firebase): CORS wordt soms geconfigureerd via het dashboard van het platform in plaats van applicatiecode, wat gemakkelijk volledig over het hoofd te zien is aangezien het niet in de repository zit
+
+**Bouw uw toegestane lijst (allow-list) bewust op, niet door giswerk**
+
+- Het domein van uw productie-frontend, exact zoals het verschijnt in de adresbalk van de browser
+- Het domein van uw staging- of preview-omgeving, als u actief test tegen een uitgerolde staging-build
+- Elk geverifieerd partner- of integratiedomein dat legitiem uw API aanroept vanuit een browsercontext
+- Sluit expliciet al het andere uit, inclusief `localhost`, zodra u voorbij actieve lokale ontwikkeling bent
+
+**Test vanaf een niet-toegestane oorsprong, en niet alleen een toegestane**
+
+De enige echte test van een CORS-beleid is het bevestigen dat een verzoek vanaf een oorsprong die geweigerd zou moeten worden ook daadwerkelijk geweigerd wordt – alleen testen vanaf uw eigen toegestane frontend bewijst op beide manieren niets. Een snelle manier om dit te controleren: open de ontwikkelaarsconsole van uw browser op een willekeurige ongerelateerde website en probeer een fetch-verzoek naar het eindpunt van uw API; een goed geconfigureerd beleid blokkeert het, een verkeerd geconfigureerd beleid niet.
+
+**Let op deze specifieke gerelateerde verkeerde configuratie**
+
+Een CORS-beleid dat `origin: '*'` combineert met `credentials: true` (wat toestaat dat cookies of authenticatie-headers cross-origin worden verzonden) is een gevaarlijkere combinatie dan een open oorsprong alleen. De meeste browsers blokkeren deze exacte combinatie weliswaar standaard, maar sommige frameworks weerspiegelen stilletjes welke oorsprong de aanvrager ook verzond in plaats van het echt te weigeren. Dit herintroduceert hetzelfde risico via een ander mechanisme. Als uw app op cookies gebaseerde sessies gebruikt, is deze specifieke interactie het waard om expliciet te controleren.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de API open voor iedereen die vroeg
+### Een AI-native oprichter in actie: De API die openstond voor iedereen die het vroeg
 
-Ruben, een voormalig schade-expert verzekeringen die founder werd in Amersfoort, bouwde ClaimClear, een AI-geassisteerde SaaS voor verzekeringsclaimtracking gebouwd met Bolt, opschalend van een interne pilot met één partnerverzekeraar naar verscheidene externe partnerintegraties.
+Ruben, een voormalig verzekeringsclaim-expert die oprichter werd in Amersfoort, bouwde ClaimClear, een AI-ondersteunde SaaS voor het volgen van verzekeringsclaims gebouwd met Bolt. Hij schaalde van een interne pilot met één partner-verzekeraar naar meerdere externe partnerintegraties.
 
-Het eigen beveiligingsteam van een partner, dat ClaimClear evalueerde vóór een formele integratie, markeerde dat de API cross-origin-verzoeken accepteerde van letterlijk elk domein, zonder enige allow-list. Een configuratie die intern nooit een zichtbaar probleem veroorzaakt had, aangezien ClaimClears eigen frontend het altijd standaard vanuit een al-toegestane context benaderde.
+Het beveiligingsteam van een partner dat ClaimClear evalueerde vóór een formele integratie markeerde dat de API verzoeken accepteerde van letterlijk elk domein, met uopgezet überhaupt geen toegestane lijst. Dit was een configuratie die intern nooit een zichtbaar probleem had veroorzaakt, aangezien ClaimClear's eigen frontend er standaard altijd vanuit een al-toegestane context toegang toe had.
 
-**Resultaat:** LaunchStudio implementeerde een correcte herkomst-allow-list die API-toegang beperkte tot ClaimClears bekende frontend en geverifieerde partnerdomeinen, en dicht de blootstelling voordat de partnerintegratie voortging, met nul verstoring van ClaimClears eigen interne gebruik.
+**Resultaat:** LaunchStudio implementeerde een correcte toegestane lijst die API-toegang beperkte tot ClaimClear's bekende frontend en geverifieerde partnerdomeinen, waardoor de blootstelling werd gesloten voordat de partnerintegratie doorging.
 
-> *"Niets aan ons eigen gebruik van de API zag er ooit verkeerd uit, omdat het dat natuurlijk niet zou — we riepen het altijd aan vanaf de ene plek die hoe dan ook altijd toegestaan zou zijn."*
-> — **Ruben de Groot, Founder, ClaimClear (Amersfoort)**
+> *"Niets aan ons eigen gebruik van de API zag er ooit verkeerd uit, omdat het dat natuurlijk niet zou doen — we riepen het altijd aan vanaf de ene plek die toch al altijd toegestaan zou zijn."*
+> — **Ruben de Groot, Oprichter, ClaimClear (Amersfoort)**
 
-**Kosten & tijdlijn:** €2.300 (API-toegangscontrole en CORS-harding) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.300 (audit van API-toegangsbeheer en CORS-uitharding) — voltooid in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een infrastructuurengineer een open CORS-beleid een configuratiekwestie of een codekwestie noemen?
+### Zou een infrastructuuringenieur een open CORS-beleid beschrijven als een configuratieprobleem of een codeprobleem?
 
-Configuratie, specifiek — het is doorgaans een instelling in plaats van applicatielogica, wat deel uitmaakt van waarom het zo makkelijk is om het bij een permissieve vroege-ontwikkelingsstandaard te laten zonder dat iemand het behandelt als een discrete taak die doelbewuste review vereist vóór lancering.
+Configuratie specifiek – het is typisch een instelling in plaats van applicatielogica, wat onderdeel is van waarom het zo gemakkelijk is om op een permissieve standaardwaarde te laten staan.
 
-### Wordt dit soort gat alleen gevangen door het beveiligingsteam van een externe partner, of kan een founder het zelf controleren?
+### Kan een oprichter zijn eigen CORS-configuratie zelf controleren zonder externe hulp?
 
-Een founder kan de huidige CORS-configuratie direct controleren in de instellingen of middlewarecode van hun API, hoewel de juiste allow-list correct bepalen voor hun specifieke situatie — inclusief partnerintegraties, staging-omgevingen, en mobiele clients — doorgaans baat heeft bij een toegewijde review in plaats van een gok.
+Een oprichter kan de huidige CORS-configuratie rechtstreeks controleren in de instellingen of middleware-code van zijn API, hoewel het correct bepalen van de juiste toegestane lijst typisch baat heeft bij een toegewijde beoordeling.
 
-### Manifera's klanten omvatten grote enterprises zoals Vodafone — informeert die ervaring specifiek hoe CORS geconfigureerd wordt voor een founder-schaal product?
+### Vormt enterprise-klantervaring de CORS-configuratie voor kleinere producten?
 
-Ja — het onderliggende principe (expliciete allow-lists, niet standaard-open) is identiek ongeacht bedrijfsgrootte, en diezelfde enterprise-standaard configuratiediscipline toepassen op founder-schaal API's is een direct, praktisch voordeel van Manifera's bredere klantenbasis.
+Ja – het onderliggende principe (expliciete toegestane lijsten, niet standaard open) is identiek ongeacht de bedrijfsgrootte.
 
-### Is een open CORS-beleid iets dat gefixt zou moeten worden zodra het opgemerkt wordt, zelfs midden in de ontwikkeling?
+### Is een open CORS-beleid iets dat het moment dat het wordt opgemerkt moet worden hersteld, zelfs halverwege de ontwikkeling?
 
-Niet noodzakelijk midden in de ontwikkeling — een doelbewust open beleid tijdens actief vroeg bouwen is een redelijke, gebruikelijke afweging; het specifieke risico zit alleen in diezelfde open configuratie ongereviewd verzenden zodra echte gebruikerssessies en echte partnerintegraties erbij betrokken zijn.
+Niet noodzakelijkerwijs halverwege de ontwikkeling – een opzettelijk open beleid tijdens actieve vroege opbouw is een redelijke, veelvoorkomende afweging; het specifieke risico is alleen het onbeoordeeld uitrollen van diezelfde open configuratie zodra er echte gebruikerssessies en echte partnerintegraties bij betrokken zijn.
 
-### Hoe verifieert LaunchStudio dat een CORS-fix geen legitieme integratie brak die een founder vergat te vermelden?
+### Hoe verifieert LaunchStudio dat een CORS-herstelling een legitieme integratie niet heeft gebroken die een oprichter vergat te vermelden?
 
-Onderdeel van het intro-gesprekproces is specifiek elke legitieme herkomst identificeren die een product moet ondersteunen — frontenddomeinen, staging-omgevingen, partnerintegraties — voordat de allow-list geïmplementeerd wordt, precies om te voorkomen dat de fix zelf een nieuwe storing wordt.
+Onderdeel van het proces van het introductiegesprek is specifiek het identificeren van elke legitieme oorsprong die een product moet ondersteunen – frontend-domeinen, staging-omgevingen, partnerintegraties – voordat de toegestane lijst wordt geïmplementeerd.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is een open CORS-beleid een configuratie- of codeprobleem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Configuratie specifiek, wat het gemakkelijk maakt om op een permissieve standaardwaarde te laten staan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan een oprichter de CORS-configuratie zelf controleren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, hoewel het bepalen van de juiste allow-list baat heeft bij een toegewijde beoordeling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vormt enterprise-ervaring de CORS-configuratie voor kleinere producten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het principe van expliciete allow-lists is identiek ongeacht de bedrijfsgrootte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet een open CORS-beleid halverwege de ontwikkeling direct gefixt worden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet noodzakelijk halverwijs, nhưng wel vóór de lancering mệt thực tế data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe wordt voorkomen dat một CORS fix làm hỏng integratie legitiem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trước khi làm allow-list, tất cả origin hợp lệ (frontend, staging, partners) đều được liệt kê đầy đủ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het risico van origin '*' gecombineerd met credentials: true?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dit staat toe dat sessie-cookies cross-origin meesturen, một nguy cơ bảo mật nghiêm trọng."
+      }
+    }
+  ]
+}
+</script>

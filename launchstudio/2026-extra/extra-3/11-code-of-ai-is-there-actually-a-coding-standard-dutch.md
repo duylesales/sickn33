@@ -1,17 +1,18 @@
 ---
-Titel: "AI-code: bestaat er eigenlijk een coderingsstandaard voor door AI gegenereerde software?"
+Titel: "Code van AI: Is er daadwerkelijk een coderingsnorm voor AI-gegenereerde software?"
 Trefwoorden: code of ai, ai code tool, ai coding, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische Solo Oprichter / Indie Hacker
 ---
-# AI-code: bestaat er eigenlijk een coderingsstandaard voor door AI gegenereerde software?
+
+# Code van AI: Is er daadwerkelijk een coderingsnorm voor AI-gegenereerde software?
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-code: bestaat er eigenlijk een coderingsstandaard voor door AI gegenereerde software?",
-  "description": "Oprichters vragen af \u200b\u200ben toe of er een offici\u00eble coderingsstandaard is die door AI gegenereerde software zou moeten volgen. Er is er niet \u00e9\u00e9n, maar er heeft zich een specifieke, praktische reeks verwachtingen gevormd rond wat telt als werkelijk aanvaardbare, door AI gegenereerde code.",
+  "headline": "Code van AI: Is er daadwerkelijk een coderingsnorm voor AI-gegenereerde software?",
+  "description": "Oprichters vragen zich af of er een officiële coderingsnorm is waar AI-gegenereerde software aan moet voldoen. Er is er niet één — maar er is wel een specifieke set verwachtingen ontstaan.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,66 +31,81 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Er bestaat geen enkele officiële ‘code voor AI’ – geen formeel bestuursorgaan dat een gecertificeerde standaard publiceert waaraan door AI gegenereerde software moet voldoen voordat deze zichzelf productiekwaliteit mag noemen. Oprichters die nieuw zijn op dit gebied gaan er soms van uit dat zo'n standaard ergens bestaat en hebben die eenvoudigweg nog niet gevonden, wat begrijpelijk is gezien het feit dat veel andere technische domeinen formele standaarden hebben waar veel naar wordt verwezen. Wat in plaats daarvan feitelijk bestaat, is een specifieke, praktische, steeds consistentere reeks verwachtingen die ervaren ingenieurs hanteren bij het evalueren of door AI gegenereerde code echt klaar is voor echt gebruik.
+Er bestaat geen enkele officiële "code van AI" – geen formeel bestuursorgaan dat een gecertificeerde norm publiceert waaraan AI-gegenereerde software moet voldoen voordat ze zichzelf van productiekwaliteit mag noemen. Oprichters die nieuw zijn in deze sector nemen soms aan dat een dergelijke norm ergens bestaat en dat ze deze simpelweg nog niet hebben gevonden, wat begrijpelijk is gezien hoeveel andere technische domeinen wel formele, breed gerefereerde normen hebben. Wat in plaats daarvan wel bestaat, is een specifieke, praktische en steeds consistentere reeks verwachtingen die ervaren engineers toepassen bij het evalueren of AI-gegenereerde code oprecht klaar is voor echt gebruik.
 
-## Waarom er nog geen formele standaard bestaat
+## Waarom er nog geen formele norm bestaat
 
-De categorie zelf – door AI gegenereerde productiesoftware – is nog jong genoeg, en de onderliggende tools evolueren nog steeds snel genoeg, zodat geen enkele brancheorganisatie zich heeft geconvergeerd en een formele, universeel aanvaarde specificatie heeft gepubliceerd zoals oudere, meer volwassen domeinen dat uiteindelijk deden. Dit is geen kloof waar iemand nalatig over is; het is simpelweg voorbarig voor een categorie die nog steeds actief bezig is met het definiëren van zijn eigen gemeenschappelijke faalwijzen in realtime, over een breed scala aan tools die geen identieke onderliggende architecturen delen.
+De categorie zelf – AI-gegenereerde productiesoftware – is nog jong genoeg, en de onderliggende tools evolueren nog snel genoeg, dat geen enkel formeel orgaan in de sector is samengekomen om een formele, universeel geaccepteerde specificatie te publiceren zoals rijpere domeinen dat uiteindelijk wel deden. Dit is geen tekortkoming waar iemand nalatig in is; het is simpelweg te vroeg voor een categorie die haar eigen veelvoorkomende faalmodi nog in realtime definieert, verspreid over een breed scala aan tools die niet dezelfde onderliggende architectuur delen.
 
-## Wat in plaats daarvan functioneert als de feitelijke standaard
+Vergelijk dit met hoe andere technische normen zich daadwerkelijk hebben gevormd. De lijst van OWASP met veelvoorkomende kwetsbaarheden in webapplicaties kostte jaren van gedocumenteerde, echte incidenten voordat het consolideerde tot iets waar teams nu standaard naar verwijzen. Richtlijnen voor toegankelijkheid gingen door meerdere formele revisies voordat ze samenkwamen in een versie die de meeste ontwikkelaars daadwerkelijk controleren. AI-gegenereerde code bevindt zich eerder in diezelfde boog – de faalpatronen zijn echt en steeds beter gedocumenteerd, maar de tools die die code genereren, en de code zelf, veranderen nog snel genoeg dat een bevroren, formele specificatie het risico loopt verouderd te zijn voordat ze überhaupt is geratificeerd. Dat betekent niet dat er niets bekend is; het betekent dat wat bekend is nog niet het jarenlange consolidatieproces heeft doorlopen dat een citeerbare norm oplevert.
 
-In de praktijk beoordelen ervaren technische teams de door AI gegenereerde code aan de hand van een consistente, zij het informele, reeks verwachtingen: worden authenticatie en autorisatie aan de serverzijde afgedwongen, onafhankelijk van de frontend; zijn geheimen volledig buiten de broncode en versiegeschiedenis gehouden; is er sprake van een gestructureerde, doelbewuste afhandeling van externe servicestoringen in plaats van generieke catch-alls; is de code getest op vijandige en edge-case-omstandigheden, en niet alleen op het gelukkige pad waarvoor het oorspronkelijk werd gegenereerd? Niets van dit alles wordt ergens in één formeel document gepubliceerd, maar het is opmerkelijk consistent onder ingenieurs en teams die gespecialiseerd zijn in precies deze categorie werk, omdat het dezelfde terugkerende, goed gedocumenteerde faalpatronen weerspiegelt in plaats van willekeurige persoonlijke voorkeur.
+## Wat in plaats daarvan als de de facto norm fungeert
 
-## Waarom deze consistentie ontstond zonder een formele norm
+In de praktijk evalueren ervaren engineeringteams AI-gegenereerde code tegen een consistente, hoewel informele, reeks verwachtingen: worden authenticatie en autorisatie afgedwongen aan de serverzijde, onafhankelijk van de frontend; worden geheimen volledig buiten de broncode en de versiegeschiedenis gehouden; is er een gestructureerde, bewuste afhandeling van externe servicestoringen in plaats van generieke catch-alls; is de code getest tegen vijandige omstandigheden en randgevallen, en niet alleen het ideale pad dat het oorspronkelijk moest vervullen. Niets hiervan is ergens als een enkel formeel document gepubliceerd, maar het is opmerkelijk consistent tussen engineers en teams die gespecialiseerd zijn in precies deze categorie werk, omdat het dezelfde terugkerende, goed gedocumenteerde faalpatronen weerspiegelt in plaats van willekeurige persoonlijke voorkeur.
 
-De consistentie bestaat omdat de onderliggende faalwijzen zelf consistent zijn. AI-coderingstools bij verschillende aanbieders hebben de neiging om dezelfde categorieën van productieproblemen te weinig te implementeren, om dezelfde structurele redenen die in de bredere richtlijnen over dit onderwerp aan bod komen. Dit betekent dat ervaren ingenieurs samenkomen op vergelijkbare evaluatiecriteria simpelweg omdat ze steeds dezelfde terugkerende hiaten tegenkomen, niet omdat ze van tevoren op een gedeelde checklist hebben gecoördineerd.
+## Waarom deze consistentie ontstond zonder formele norm
 
-## Waarom een ​​oprichter zich hierover zou moeten bekommeren, zelfs zonder een formele standaard om naar te verwijzen
+De consistentie bestaat omdat de onderliggende faalmodi zelf consistent zijn – AI-coderingshulpmiddelen van verschillende aanbieders hebben de neiging om dezelfde categorieën van productieproblemen ondermaats te implementeren, om dezelfde structurele redenen die in bredere richtlijnen over dit onderwerp worden behandeld. Dit betekent dat ervaren engineers samenkomen op vergelijkbare evaluatiecriteria, simpelweg omdat ze steeds dezelfde terugkerende hiaten tegenkomen, en niet omdat ze van tevoren een gezamenlijke checklist hebben afgesproken.
 
-Het ontbreken van een officiële ‘code van AI’ betekent niet dat er geen betekenisvolle manier is om te evalueren of je code goed genoeg is. Het betekent dat de evaluatiecriteria leven in praktijkervaring en patroonherkenning in plaats van in een gepubliceerd document. Dat is precies de reden waarom het werken met iemand die die specifieke, opgebouwde ervaring heeft, er in deze categorie meer toe doet dan in een domein met een formele, controleerbare standaard die iedereen eenvoudigweg zou kunnen lezen en toepassen.
+## Waarom een oprichter hierom zou moeten geven, zelfs zonder formele norm
 
-[LaunchStudio](https://launchstudio.eu/en/) past precies deze op patronen gebaseerde standaard op praktijkniveau consistent toe bij elke opdracht - niet omdat deze wordt gedicteerd door een externe instantie, maar omdat de technische teams van Manifera dezelfde terugkerende hiaten hebben gezien in meer dan 160 opgeleverde projecten, nauw genoeg om precies te weten wat 'echt productieklaar' eigenlijk vereist, onafhankelijk van enige formele certificering die nog niet bestaat voor deze categorie.
+Het ontbreken van een officiële "code van AI" betekent niet dat er geen betekenisvolle manier is om te evalueren of uw code goed genoeg is – het betekent dat de evaluatiecriteria leven in de ervaring van praktijkmensen en patroonherkenning in plaats van in een gepubliceerd document. Dat is precies waarom werken met iemand die die specifieke, opgebouwde ervaring heeft zwaarder weegt in deze categorie dan in een domein met een formele, controleerbare norm die iedereen simpelweg zelf zou kunnen lezen en toepassen.
 
-[Laat uw code evalueren aan de hand van de standaard die er echt toe doet](https://launchstudio.eu/en/#contact) — informeel betekent niet inconsistent, als u eenmaal met mensen werkt die het patroon vaak genoeg hebben gezien.
+[LaunchStudio](https://launchstudio.eu/en/) past precies deze norm op praktijkniveau en op basis van patronen consistent toe bij elke opdracht – niet omdat het wordt gedicteerd door een extern orgaan, maar omdat de engineeringteams van Manifera dezelfde terugkerende hiaten in meer dan 160 opgeleverde projecten van dichtbij hebben gezien om precies te weten wat "oprecht productierijp" daadwerkelijk vereist, onafhankelijk van een formele certificering die voor deze categorie nog niet bestaat.
+
+[Laat uw code evalueren tegen de norm die er daadwerkelijk toe doet](https://launchstudio.eu/en/#contact) — informeel betekent niet inconsistent zodra u werkt met mensen die het patroon vaak genoeg hebben gezien.
+
+## Een praktische checklist: wat een ervaren beoordeling daadwerkelijk controleert
+
+Zelfs zonder een certificeerbare norm is de evaluatie op praktijkniveau die in dit artikel wordt beschreven niet vagen – het is een specifieke, herhaalbare checklist die ervaren teams doorlopen op vrijwel elke AI-gegenereerde codebase, ongeacht welke tool deze oorspronkelijk heeft gegenereerd. Zes categorieën verschijnen consistent genoeg om te fungeren als een de facto minimumgrens:
+
+1. **Autorisatie aan de serverzijde bij elke gevoelige actie.** Niet alleen "is de gebruiker ingelogd", maar "heeft deze specifieke gebruiker toestemming om dit specifieke ding te doen", onafhankelijk gecontroleerd van wat de frontend al aannam.
+2. **Geheimen volledig buiten versiembeheer gehouden.** API-sleutels, database-inloggegevens en webhook-geheimen horen thuis in omgevingsvariabelen of een geheimenbeheerder, nooit gecommitteerd aan een repository, zelfs een privé-repository niet, en nooit aanwezig in de versiemgeschiedenis van een eerdere, minder zorgvuldige commit.
+3. **Gestructureerde foutafhandeling voor elke externe afhankelijkheid.** Een betalingsverwerker, een AI-aanbieder, een API van derden – elk vereist bewuste afhandeling voor timeouts, snelheidslimieten en misvormde antwoorden, niet één generieke catch-all die de specifieke storing opslokt en een gebruiker naar een leeg scherm laat staren.
+4. **Idempotentie op alles wat geld of status verplaatst.** Een webhook of betalingsbevestiging die twee keer wordt geactiveerd mag een klant niet twee keer belasten of dubbele records aanmaken – een kloof die AI-gegenereerde code vaak heeft omdat de versie van het ideale pad, wat de meeste prompts stilzwijgend vragen, dit niet nodig heeft om te laten zien dat het werkt.
+5. **Testen tegen vijandige en gelijktijdige omstandigheden, niet alleen het ideale pad.** Twee gebruikers die tegelijkertijd handelen, een misvormde invoer, een verlopen sessie – omstandigheden die een werkende demo nooit tegenkomt maar echt gebruik uiteindelijk wel.
+6. **Hygiëne van afhankelijkheden en pakketten.** Verifiëren dat door AI voorgestelde pakketten actief worden onderhouden, redelijk populair zijn en geen bekende kwetsbaarheden introduceren, aangezien AI-tools met hetzelfde vertrouwen een verlaten of onveilig pakket zullen aanbevelen als een goed onderhouden pakket.
+
+Geen van deze zes categorieën vereist exotische expertise om te begrijpen zodra ze benoemd zijn – wat ervaring vereist is weten dat u er specifiek naar moet controleren voordat een klant, een aanvaller of een nalevingsbeoordeling de kloof als eerste vindt, en weten welke het zwaarst wegen voor de specifieke gegevens en het gebruikspatroon van een product in plaats van alle zes met hetzelfde gewicht toe te passen ongeacht de context.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: op zoek naar een certificaat dat niet bestond
+### Een AI-native oprichter in actie: zoeken naar een certificaat dat niet bestond
 
-Stijn, een voormalige kwaliteitsborgingsmanager die oprichter werd in Doetinchem, bouwde KwaliteitsLog, een AI-tool die kwaliteitscontroles voor kleine productiewerkplaatsen bijhoudt, met behulp van Bolt, en zocht specifiek naar een officiële 'AI-code-compliancestandaard' waartegen hij zijn product vóór de lancering kon certificeren, voortbouwend op het instinct van zijn QA-achtergrond voor formele, controleerbare standaarden.
+Stijn, een voormalig kwaliteitszorgmanager die oprichter werd in Doetinchem, bouwde KwaliteitsLog, een AI-tool die kwaliteitscontroles bijhoudt voor kleine productiewerkplaatsen met behulp van Bolt. Hij zocht specifiek naar een officiële "AI-code-nalevingsnorm" waartegen hij zijn product voor de lancering kon certificeren, voortbouwend op het instinct uit zijn kwaliteitszorgachtergrond richting formele, controleerbare normen.
 
-Toen Stijn zo'n formele standaard niet kon vinden (omdat er nog geen bestaat voor deze categorie) bracht hij KwaliteitsLog speciaal naar LaunchStudio om te begrijpen hoe de daadwerkelijke evaluatie op praktijkniveau eruit zou zien, aangezien zijn eigen onderzoek niets had opgeleverd dat leek op het soort certificering dat hij gewend was vanuit zijn achtergrond op het gebied van productiekwaliteit.
+Toen Stijn geen enkele formele norm kon vinden – omdat er oprecht nog geen bestaat voor deze categorie – bracht hij KwaliteitsLog naar LaunchStudio om specifiek te begrijpen hoe de daadwerkelijke evaluatie op praktijkniveau er in plaats daarvan uit zou zien, aangezien zijn eigen onderzoek niets had opgeleverd dat leek op het soort certificering dat hij gewend was uit zijn productiekwaliteitsachtergrond.
 
-**Resultaat:** LaunchStudio leidde Stijn door de specifieke, consistente categorieën die een ervaren recensie feitelijk controleert (dezelfde die worden behandeld in bredere richtlijnen voor productiegereedheid) waardoor hij een concreet, zij het informeel, raamwerk kreeg om tegenaan te evalueren, waarmee hij twee echte gaten in het proces dichtte en hem een ​​duidelijk inzicht gaf waarom geen enkel certificaat zou hebben gedekt wat er werkelijk toe deed voor zijn specifieke product.
+**Resultaat:** LaunchStudio leidde Stijn door de specifieke, consistente categorieën die een ervaren beoordeling daadwerkelijk controleert – dezelfde die in bredere richtlijnen voor productiegereedheid worden behandeld. Dit gaf hem een concreet, hoewel informeel, kader om tegen af te wegen, waarbij gaandeweg twee echte hiaten werden gedicht en hij een duidelijk inzicht overhield in waarom geen enkel certificaat zou hebben gedekt wat er daadwerkelijk toe deed voor zijn specifieke product.
 
-> *"In mijn oude branche was er altijd een formele standaard waartegen je certificeerde. Ik bleef zoeken naar het AI-equivalent, maar dat bestond nog niet. Wat ik in plaats daarvan kreeg, was nuttiger dan een certificaat zou zijn geweest: een daadwerkelijke, specifieke beoordeling van de patronen die steeds weer verschijnen in echte door AI gegenereerde code."*
-> — **Stijn Meulenberg, oprichter KwaliteitsLog (Doetinchem)**
+> *"In mijn oude sector was er altijd een formele norm waartegen je certificeerde. Ik bleef zoeken naar het AI-equivalent en het bestond simpelweg nog niet. Wat ik in plaats daarvan kreeg was nuttiger dan een certificaat zou zijn geweest — een daadwerkelijke, specifieke beoordeling tegen de patronen die steeds weer opduiken in echte AI-gegenereerde code."*
+> — **Stijn Meulenberg, Oprichter, KwaliteitsLog (Doetinchem)**
 
-**Kosten en tijdlijn:** € 1.600 (lanceringsklaar pakket) — live binnen 7 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (Launch Ready Pakket) — live in 7 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Is het waarschijnlijk dat er uiteindelijk een formele ‘code of AI’-standaard zal worden gepubliceerd door een officiële instantie?
+### Is het waarschijnlijk dat een formele "code van AI" norm uiteindelijk zal worden gepubliceerd door een officieel orgaan?
 
-Plausibel in de loop van de tijd naarmate de categorie volwassener wordt en zich consolideert rond gedeelde best practices, hoewel er momenteel niets formeels bestaat, en oprichters niet op een dergelijke categorie moeten wachten voordat ze zich bezighouden met de praktische categorieën die al consistent terugkomen in echte opdrachten.
+Plausibel naarmate de categorie rijper wordt en consolideert rond gedeelde best practices, hoewel er momenteel niets formeels bestaat en oprichters er niet op moeten wachten alvorens de praktische categorieën aan te pakken die al consistent terugkomen bij echte opdrachten.
 
-### Hoe kan een oprichter weten of een ingenieur die beweert de ‘best practices voor AI-codering’ te volgen, daadwerkelijk iets consistents toepast in plaats van iets vaags?
+### Hoe kan een oprichter zien of een engineer die beweert "best practices voor AI-codering" te volgen daadwerkelijk iets consequents toepast in plaats van iets vaags?
 
-Als je hen vraagt ​​om specifiek te beschrijven waar ze op controleren – dezelfde soort concrete, controleerbare lijst die in bredere richtlijnen voor productiegereedheid wordt behandeld – wordt duidelijk of hun standaard werkelijk consistent en op patronen gebaseerd is, of eenvoudigweg een vage, geruststellende zinsnede is.
+Door hen te vragen specifiek te beschrijven waar ze naar controleren – hetzelfde soort concrete, controleerbare lijst die in bredere richtlijnen wordt behandeld – wordt onthuld of hun norm oprecht consistent en op patronen gebaseerd is of simpelweg een vaag, geruststellend ezelsbruggetje.
 
-### Betekent het ontbreken van een formele standaard dat de kwaliteit van door AI gegenereerde code momenteel in juridische zin niet gereguleerd is?
+### Betekent het ontbreken van een formele norm dat de kwaliteit van AI-gegenereerde code juridisch ongereguleerd is?
 
-Wettelijke en regelgevende vereisten (zoals de AVG voor gegevensverwerking) zijn van toepassing ongeacht of er een specifieke coderingsstandaard bestaat. Dit artikel heeft specifiek betrekking op de technische kwaliteit en beveiligingspraktijk, een vraag die los staat van wettelijke nalevingsverplichtingen waarvoor formele vereisten gelden.
+Wettelijke en regelgevende vereisten (zoals de AVG voor gegevensverwerking) zijn van toepassing ongeacht of er een specifieke coderingsnorm bestaat – dit artikel betreft specifiek technische kwaliteit en beveiligingspraktijken, een afzonderlijke vraag van wettelijke nalevingsverplichtingen die wel formele vereisten hebben.
 
-### Is de QA-achtergrond van Stijn relevant voor hoe hij de kwaliteit van zijn eigen product nu evalueert, zelfs zonder een formele AI-standaard?
+### Is Stijn's kwaliteitszorgachtergrond relevant voor hoe hij de kwaliteit van zijn eigen product nu evalueert?
 
-Ja, in de zin dat zijn instinct om een ​​rigoureuze, controleerbare evaluatie te willen juist was; het hoefde alleen maar te worden toegepast op de informele maar consistente praktijkstandaard die daadwerkelijk relevant is voor door AI gegenereerde code, in plaats van op een formele certificering die nog niet bestaat voor deze specifieke categorie.
+Ja, in de zin dat zijn instinct richting het willen van een strenge, controleerbare evaluatie juist was – het moest alleen worden toegepast op de informele maar consistente praktijknorm die daadwerkelijk relevant is voor AI-gegenereerde code, in plaats van een formele certificering die voor deze categorie nog niet bestaat.
 
-### Hoe zou een oprichter weten of de standaard op praktijkniveau die op zijn product wordt toegepast, daadwerkelijk grondig is, aangezien er geen formeel document is om dit te toetsen?
+### Hoe weet een oprichter of de praktijknorm die op zijn product wordt toegepast daadwerkelijk grondig is, aangezien er geen formeel document is om tegen te controleren?
 
-De specifieke, verifieerbare artefacten die worden behandeld in bredere richtlijnen voor het evalueren van de nauwkeurigheid van een audit – concrete bevindingen, beschreven verificatiemethoden, duidelijke herstelmaatregelen – dienen dezelfde praktische functie als een formele checklist voor standaarden, zelfs als er geen bestaat.
+De specifieke, verifieerbare artefacten die in bredere richtlijnen voor het evalueren van de strengheid van een audit worden behandeld – concrete bevindingen, beschreven verificatiemethoden, duidelijke sanering – dienen dezelfde praktische functie als de checklist van een formele norm zou doen, zelfs zonder dat er een bestaat.
 
 <script type="application/ld+json">
 {
@@ -98,42 +114,42 @@ De specifieke, verifieerbare artefacten die worden behandeld in bredere richtlij
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is it likely a formal 'code of AI' standard will eventually be published?",
+      "name": "Is het waarschijnlijk dat een formele 'code van AI' norm ooit wordt gepubliceerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Plausible as the category matures, though nothing formal currently exists, and founders shouldn't wait for one."
+        "text": "Plausibel naarmate de categorie rijper wordt, hoewel er momenteel niets formeels bestaat en oprichters er niet op moeten wachten."
       }
     },
     {
       "@type": "Question",
-      "name": "How can a founder tell if an engineer's 'best practices' claim is consistent or vague?",
+      "name": "Hoe weet een oprichter of 'best practices' claims van een engineer consistent zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Asking them to describe specifically what they check for reveals whether the standard is genuinely consistent or just reassuring language."
+        "text": "Vraag hen specifiek te beschrijven waar ze naar controleren om te zien of hun norm consistent is of simpelweg geruststellende taal."
       }
     },
     {
       "@type": "Question",
-      "name": "Does the absence of a formal standard mean AI-generated code is legally unregulated?",
+      "name": "Betekent het ontbreken van een norm dat AI-code juridisch ongereguleerd is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Legal requirements like GDPR apply regardless of coding standards; this article concerns technical quality, a separate question."
+        "text": "Wettelijke vereisten zoals de AVG gelden sowieso; dit artikel betreft technische kwaliteit, een afzonderlijke vraag."
       }
     },
     {
       "@type": "Question",
-      "name": "Is a QA background relevant to evaluating AI-generated code quality?",
+      "name": "Is een kwaliteitszorgachtergrond relevant voor het evalueren van AI-codekwaliteit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, the instinct toward rigorous evaluation is correct, it just needs applying to the practitioner standard relevant to this category."
+        "text": "Ja, het instinct richting strenge evaluatie is juist, het moet alleen worden toegepast op de relevante praktijknorm."
       }
     },
     {
       "@type": "Question",
-      "name": "How would a founder know if a review's practitioner-level standard is actually thorough?",
+      "name": "Hoe weet een oprichter of een praktijknorm daadwerkelijk grondig is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Specific, verifiable artifacts \u2014 concrete findings, described verification, clear remediation \u2014 serve the function a formal checklist would."
+        "text": "Specifieke, verifieerbare artefacten — concrete bevindingen, beschreven verificatie, duidelijke sanering — dienen dezelfde functie."
       }
     }
   ]

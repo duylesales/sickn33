@@ -1,77 +1,158 @@
 ---
-Titel: "AI In SaaS-Producten: De Functielijst Versus De Fundering"
+Titel: "AI in SaaS-producten: De functielijst vs. het fundament"
 Trefwoorden: ai in saas, ai saas platform, ai saas, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: SaaS Founder Scale-Up
+Doelgroep: SaaS-oprichter Scale-Up
 ---
 
-# AI In SaaS-Producten: De Functielijst Versus De Fundering
+# AI in SaaS-producten: De functielijst vs. het fundament
 
-Elke AI-in-SaaS-marketingpagina leest als een functielijst — geautomatiseerde loonlijsten, goedkeuringsworkflows, integraties met boekhoudsoftware. Het eigen inkoopteam van een potentiële enterprise-klant leest een compleet andere lijst: multi-factor-authenticatie voor gevoelige acties, auditlogging, dataversleutelingsstandaarden. De twee lijsten overlappen zelden zoveel als een groeiende SaaS-founder aanneemt, totdat een daadwerkelijke inkoopreview het gat expliciet maakt.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI in SaaS-producten: De functielijst vs. het fundament",
+  "description": "Een vergelijking van wat een functielijst belooft versus wat een oprecht fundament vereist, gefocust op het ontbreken van twee-factor-authenticatie.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/ai-in-saas-products-the-feature-list-vs-the-foundation"
+  }
+}
+</script>
 
-## De Functielijst: Wat Een Demo Goed Laat Landen
+Elke marketingpagina over AI in SaaS leest als een functielijst – geautomatiseerde salarisruns, goedkeuringswerkstromen, integraties met boekhoudsoftware. Het inkoopteam van een prospectieve zakelijke klant leest een compleet andere lijst: multi-factor-authenticatie voor gevoelige acties, audit-logging, standaarden voor gegevensversleuteling. De twee lijsten overlappen zelden zoveel als een groeiende SaaS-oprichter aanneemt, totdat een daadwerkelijke inkoopbeoordeling de kloof expliciet maakt.
 
-De functielijst van een loonlijst-SaaS-product — geautomatiseerde berekeningen, goedkeuringsworkflows, directe-storting-integratie — is wat een founder zijn eerste klanten wint, en AI-codeertools zijn oprecht effectief in het snel en correct bouwen van precies dit soort functielijst. Niets ervan is misleidend; het beantwoordt simpelweg een andere vraag dan de funderingsvraag.
+## De functielijst: Wat een demo goed laat landen
 
-## De Fundering: Wat Een Inkoopreview Daadwerkelijk Controleert
+De functielijst van een SaaS-product voor salarisadministratie – geautomatiseerde berekeningen, goedkeuringswerkstromen, integratie met directe stortingen – is wat een oprichter zijn eerste klanten oplevert. En AI-coderingsassistenten zijn oprecht effectief in het snel en correct bouwen van exact dit soort functielijst. Niets daarvan is misleidend; het beantwoordt simpelweg een andere vraag dan de fundamentsvraag. Een publiek bij een demo beoordeelt een product bijna volledig op deze lijst, omdat het zichtbaar is en rechtstreeks aansluit op hun dagelijkse probleem.
 
-Het inkoop- of IT-beveiligingsteam van een grotere potentiële klant dat hetzelfde product evalueert stelt een compleet andere set vragen — is gevoelige data versleuteld in rust, is er een auditspoor van wie wat goedkeurde, en cruciaal, is multi-factor-authenticatie vereist voor hoog-risico-acties zoals het goedkeuren van een loonlijst die de echte salarissen van echte mensen beïnvloedt?
+## Het fundament: Wat een inkoopbeoordeling daadwerkelijk controleert
 
-## Waarom Tweefactorauthenticatie Specifiek Uitgesteld Wordt
+Het inkoop- of IT-beveiligingsteam van een grotere prospectieve klant die hetzelfde product beoordeelt stelt een compleet andere set vragen – zijn gevoelige gegevens versleuteld in rust, is er een auditspoor van wie wat heeft goedgekeurd, en cruciaal: is multi-factor-authenticatie (2FA) vereist voor risicovolle acties zoals het goedkeuren van een salarisadministratie die de daadwerkelijke salarissen van echte mensen beïnvloedt?
 
-Tweefactorauthenticatie toevoegen introduceert frictie in de login- en goedkeuringsflow, en tijdens de vroege groeifase van een product kan die frictie aanvoelen als een onnodig obstakel voor soepele onboarding — een volkomen redelijke afweging om bewust vroeg te maken, maar een die een aansprakelijkheid wordt als het nooit herbezocht wordt naarmate het product grotere, meer beveiligingsbewuste klanten begint te benaderen.
+## Waarom twee-factor-authenticatie specifiek wordt uitgesteld
 
-## Waarom Dit Gat Specifiek Deals Bedreigt, Niet Alleen Beveiliging
+Het toevoegen van twee-factor-authenticatie introduceert wrijving in de inlog- en goedkeuringsstroom. Tijdens de vroege groeifase van een product kan die wrijving voelen als een onnodig obstakel voor een soepele onboarding – een volkomen redelijke afweging om vroegtijdig bewust te maken, maar een die een risico wordt als het nooit opnieuw wordt bekeken naarmate het product grotere klanten benadert.
 
-In tegenstelling tot veel gaten elders in deze discussie behandeld, vertegenwoordigt ontbrekende tweefactorauthenticatie op gevoelige acties niet alleen een abstract beveiligingsrisico — voor een SaaS-product gericht op zakelijke klanten kan het een letterlijke dealblokkeerder zijn, aangezien veel inkoopprocessen het behandelen als een niet-onderhandelbare basisvereiste in plaats van een leuk-om-te-hebben, ongeacht hoe sterk de rest van de functielijst is.
+## Waarom deze kloof specifiek deals bedreigt, en niet alleen beveiliging
 
-## Waarom Loonlijst-Aangrenzende Producten Deze Vraag Bijzonder Direct Onder Ogen Zien
+In tegenstelling tot veel van de kloven die elders besproken worden, vertegenwoordigt het ontbreken van twee-factor-authenticatie bij gevoelige acties niet alleen een abstract beveiligingsrisico – voor een SaaS-product dat zich richt op zakelijke klanten kan het een letterlijke dealbreaker zijn. Veel inkoopprocessen behandelen het namelijk als een niet-onderhandelbare basisvereiste.
 
-Een product dat iemand echte financiële transacties laat goedkeuren die de daadwerkelijke salarissen van werknemers beïnvloeden gaat, bijna per definitie, verhoogde controle op precies dit punt onder ogen zien — de consequentie van een gecompromitteerd goedkeuringsaccount is direct financieel en beïnvloedt direct echte mensen, wat doorgaans precies het scenario is waar inkoopteams specifiek voor getraind zijn om te screenen.
+## Waarom salaris-gerelateerde producten specifiek met deze vraag worden geconfronteerd
 
-## Het Gat Dichten Tussen Functielijst En Fundering
+Een product dat iemand in staat stelt om echte financiële transacties goed te keuren die de daadwerkelijke salarissen van werknemers beïnvloeden, gaat vrijwel per definitie met verhoogde controle op exact dit punt geconfronteerd worden. De consequentie van een gecompromitteerd goedkeuringsaccount is immers rechtstreeks financieel.
 
-Tweefactorauthenticatie specifiek toevoegen aan gevoelige, hoog-risico-acties — in plaats van het universeel te vereisen en overal onnodige frictie toe te voegen — is een gerichte, begrensde implementatie. [LaunchStudio](https://launchstudio.eu/en/) implementeert precies dit soort risico-gekalibreerde authenticatieharding als onderdeel van zijn Launch & Grow-pakket, gesteund door Manifera's 11+ jaar ervaring met het bouwen van enterprise-klare authenticatiesystemen.
+## Het dichten van de kloof tussen functielijst en fundament
 
-Manifera's enterprise-gereedheid-authenticatiewerk wordt geleverd via het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, met klantscopinggesprekken gevoerd via het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Het toevoegen van twee-factor-authenticatie specifiek aan gevoelige, risicovolle acties – in plaats van het universeel te vereisen en overal onnodige wrijving toe te voegen – is een gerichte, afgebakende implementatie. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort risico-gecalibreerde uitharding van authenticatie als onderdeel van haar Launch & Grow-pakket, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van ondernemingsklare authenticatiesystemen.
 
-[Ga aan de slag — productieklaar in weken, niet maanden](https://launchstudio.eu/en/#contact).
+Manifera's engineering voor ondernemingsgereedheid wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Aan de slag — productierijp in weken, niet maanden](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de deal die vastliep op één specifieke vraag
+### Een AI-native oprichter in actie: De deal die vastliep op één specifieke vraag
 
-Gijs, een voormalig HR-operationsmanager die founder werd in Ede, bouwde LoonLijn, een AI-geassisteerde HR-loonlijst-SaaS gebouwd met Bolt, die geautomatiseerde loonlijstberekening en goedkeuringsworkflows bood aan kleine en middelgrote bedrijven.
+Gijs, een voormalig HR-operationeel manager die oprichter werd in Ede, bouwde LoonLijn, een AI-ondersteund HR-salaris-SaaS gebouwd met Bolt, dat geautomatiseerde salarisberekeningen en goedkeuringswerkstromen biedt aan kleine en middelgrote bedrijven.
 
-Een veelbelovende deal met een grotere potentiële klant liep vast tijdens inkoopreview, waarbij hun IT-beveiligingsteam specifiek de afwezigheid van tweefactorauthenticatie op loonlijst-goedkeuringsaccounts markeerde als een blokkerende vereiste, geen loutere suggestie. LaunchStudio's review bevestigde dat geen enkel account in LoonLijn, ongeacht rol of de gevoeligheid van de acties die het kon uitvoeren, enige vorm van multi-factor-authenticatie beschikbaar had.
+Een veelbelovende deal met een grotere prospectieve klant liep vast tijdens de inkoopbeoordeling. Hun IT-beveiligingsteam merkte het ontbreken van twee-factor-authenticatie op accounts voor salarisgoedkeuring specifiek op als een blokkerende vereiste. LaunchStudio's beoordeling bevestigde dat geen enkel account in LoonLijn, ongeacht de rol of de gevoeligheid van de acties die het kon nemen, enige vorm van multi-factor-authenticatie beschikbaar had.
 
-**Resultaat:** LaunchStudio implementeerde verplichte tweefactorauthenticatie specifiek voor loonlijst-goedkeurings- en administratieve acties, en liet standaard, lager-risico logins onaangetast, en dicht het specifieke gat dat de inkoopreview van de vastgelopen deal geïdentificeerd had en ontgrendelde de onderhandeling.
+**Resultaat:** LaunchStudio implementeerde verplichte twee-factor-authenticatie specifiek voor salarisgoedkeuring en administratieve acties, terwijl standaard inlogs ongemoeid bleven. Dit sloot de specifieke kloof die de inkoopbeoordeling had geïdentificeerd en deblokkeerde de onderhandeling.
 
-> *"Die ene specifieke vraag kostte ons bijna een deal waar we twee maanden aan gewerkt hadden. We hadden elke functie die ze daadwerkelijk wilden gebruiken — we hadden gewoon niet nagedacht over de laag waar hun beveiligingsteam het meest om gaf."*
-> — **Gijs van der Berg, Founder, LoonLijn (Ede)**
+> *"Die ene specifieke vraag kostte ons bijna een deal waar we twee maanden naartoe hadden gewerkt. We hadden elke functie die ze daadwerkelijk wilden gebruiken – we hadden alleen niet nagedacht over de laag waar hun beveiligingsteam het meest om gaf."*
+> — **Gijs van der Berg, Oprichter, LoonLijn (Ede)**
 
-**Kosten & tijdlijn:** €2.700 (implementatie risico-gekalibreerde tweefactorauthenticatie) — voltooid in 9 werkdagen.
+**Kosten en tijdlijn:** € 2.700 (risico-gecalibreerde 2FA-implementatie) — voltooid in 9 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een enterprise-verkoopspecialist dit soort inkoopblokkeerder gebruikelijk of ongebruikelijk beschouwen?
+### Zou een specialist in enterprise-sales dit soort inkoopblokkade beschouwen als veelvoorkomend?
 
-Gebruikelijk, specifiek voor producten die financiële of gevoelige werknemersdata verwerken — inkoop- en IT-beveiligingsreviews voor precies deze categorie SaaS-product omvatten routinematig multi-factor-authenticatie als een standaard, verwachte basis in plaats van een ongebruikelijk of geavanceerd verzoek.
+Veelvoorkomend, specifiek voor producten die financiële of gevoelige werknemersgegevens afhandelen. Inkoop- en IT-beveiligingsbeoordelingen omvatten standaard 2FA als een verwachte basislijn.
 
-### Vermijdt tweefactorauthenticatie universeel toevoegen, in plaats van alleen voor gevoelige acties, dit probleem grondiger?
+### Vermijdt het universeel toevoegen van twee-factor-authenticatie dit probleem grondiger?
 
-Dat kan, maar tegen de kost van toegevoegde frictie over elke login, wat mogelijk niet nodig of wenselijk is voor lager-risico, routine-acties — een risico-gekalibreerde aanpak, het specifiek vereisen waar de consequenties van compromittering het hoogst zijn, is vaak de betere afweging voor producten die beveiliging tegen dagelijkse bruikbaarheid balanceren.
+Het kan, maar ten koste van toegevoegde wrijving bij elke inlog. Een risico-gecalibreerde aanpak (het specifiek vereisen waar de gevolgen van inbreuk het hoogst zijn) is vaak de betere afweging.
 
-### Manifera's B2B-klantenbasis omvat grotere organisaties met precies deze inkoopverwachtingen — helpt die ervaring founders dit soort blokkeerder eerder te anticiperen?
+### Maakt ervaring met enterprise-klanten uit bij het anticiperen op inkoopblokkades?
 
-Ja, direct — enterprise-klanten ondersteund hebben door hun eigen inkoop- en beveiligingsreviewprocessen geeft Manifera's engineers directe bekendheid met precies wat deze reviews doorgaans controleren, wat precies het soort anticiperend inzicht is dat LaunchStudio brengt naar een groeiende SaaS-founder voordat een echte deal op het spel staat.
+Ja, rechtstreeks – directe bekendheid met wat inkoopbeoordelingen typisch controleren biedt anticiperend inzicht voordat een echte deal op het spel staat.
 
-### Herre Roelevink heeft gesproken over founders die dezelfde expertise nodig hebben die grotere bedrijven altijd toegang tot gehad hebben — weerspiegelt dit vastgelopen-deal-scenario dat gat goed?
+### Weerspiegelt dit scenario van een vastgelopen deal de kloof in expertise?
 
-Heel goed — Gijs' product was functioneel uitstekend en commercieel aantrekkelijk, maar miste een specifieke categorie expertise (wat enterprise-inkoop daadwerkelijk screent) die grotere, meer gevestigde concurrenten al vanaf het begin ingebouwd zouden hebben, precies het toegangsgat dat Roelevink beschreven heeft dat LaunchStudio werkt te dichten.
+Heel goed – Gijs's product was functioneel uitstekend, maar miste een specifieke categorie expertise (wat enterprise-inkoop daadwerkelijk screent) die grotere concurrenten al hadden ingebouwd.
 
-### Is het de moeite waard tweefactorauthenticatie proactief te implementeren voordat het daadwerkelijk nodig is voor een specifieke deal, of redelijk om te wachten tot erom gevraagd wordt?
+### Is het de moeite waard om twee-factor-authenticatie proactief te implementeren?
 
-Het proactief implementeren, zodra een product actief grotere zakelijke klanten begint te targeten, vermijdt het specifieke risico van een live, tijdgevoelige deal die precies vastloopt wanneer het het meest ertoe doet — wachten tot het expliciet gevraagd wordt betekent dat de fix direct concurreert met de druk van een actieve onderhandeling, wat zelden het ideale moment is om nieuwe beveiligingsinfrastructuur te implementeren.
+Het proactief implementeren zodra een product zich actief richt op grotere zakelijke klanten vermijdt het specifieke risico dat een tijdsgevoelige deal vastloopt op het moment dat het het meest uitmaakt.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Thiếu xác thực 2 lớp (2FA) có thực sự làm hỏng hợp đồng bán hàng B2B không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có, đội ngũ IT/Procurement của các doanh nghiệp lớn thường bắt buộc phải có 2FA mới phê duyệt hợp đồng B2B."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nên bắt buộc dùng 2FA cho toàn bộ user hay chỉ cho các hành vi rủi ro cao?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nên áp dụng theo mức độ rủi ro (Risk-calibrated) — bắt buộc 2FA khi phê duyệt lương/chuyển tiền, giữ login thường mượt mà."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ngoài 2FA, danh sách kiểm tra bảo mật (Procurement Checklist) B2B còn có gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nhật ký kiểm toán (Audit Logging), Mã hóa dữ liệu (Encryption at rest), Đăng nhập một lần (SSO) và Báo cáo tuân thủ SOC 2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại sao AI tool lại không tự động tích hợp 2FA khi dựng SaaS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vì AI dựng tính năng theo yêu cầu công việc (feature list), còn 2FA thuộc về hạ tầng bảo mật (foundation) cần cấu hình riêng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nên làm tính năng 2FA ngay từ đầu hay chờ có khách hàng B2B lớn rồi làm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nên chuẩn bị trước khi bắt đầu chốt deal B2B, tránh để hợp đồng bị treo hàng tuần chỉ vì chờ sửa code bổ sung 2FA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Triển khai 2FA cho các API nhạy cảm mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thường mất từ 5-9 ngày làm việc bao gồm việc tích hợp Authenticator App (TOTP) hoặc gửi OTP SMS/Email."
+      }
+    }
+  ]
+}
+</script>

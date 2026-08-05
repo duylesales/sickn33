@@ -1,17 +1,18 @@
 ---
-Titel: "E-mailbezorgbaarheid voor AI SaaS: waarom uw bevestigings-e-mails in spam belanden"
+Titel: "E-mailafleverbaarheid voor AI-SaaS: Waarom uw bevestigings-e-mails in de spammapt belanden"
 Trefwoorden: ai saas, email integration, SPF DKIM, email deliverability, transactional email
 Koperfase: Overweging
-Doelgroep: AI-Native-oprichter
+Doelgroep: AI-Native oprichter
 ---
-# E-mailbezorgbaarheid voor AI SaaS: waarom uw bevestigings-e-mails in spam belanden
+
+# E-mailafleverbaarheid voor AI-SaaS: Waarom uw bevestigings-e-mails in de spammapt belanden
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "E-mailbezorgbaarheid voor AI SaaS: waarom uw bevestigings-e-mails in spam belanden",
-  "description": "Waarom transactionele e-mails van door AI gegenereerde apps routinematig in spammappen belanden, en hoe ontbrekende SPF- en DKIM-records op het verzendende domein stilletjes de klantervaring vanaf dag \u00e9\u00e9n verstoren.",
+  "headline": "E-mailafleverbaarheid voor AI-SaaS: Waarom uw bevestigings-e-mails in de spammapt belanden",
+  "description": "Waarom transactionele e-mails van met AI gegenereerde apps routinematig in spammappen belanden.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,84 +31,87 @@ Doelgroep: AI-Native-oprichter
 }
 </script>
 
-Waarom zou een klant aannemen dat uw app kapot is vanwege een e-mail die hij niet eens heeft gezien? Want vanaf waar ze nu zitten, hebben ze alles goed gedaan – geboekt, betaald, bevestigd – en er is niets teruggekomen. Geen bevestiging, geen ontvangstbewijs, geen bewijs dat het werkte. De e-mail is verzonden. Het is zojuist in een spammap beland die ze nooit zullen proberen te controleren, en de stilte luidt als een mislukking, ook al heeft de app technisch gezien zijn werk gedaan.
+Waarom zou een klant aannemen dat uw app kapot is vanwege een e-mail die hij niet eens heeft gezien? Omdat hij vanaf waar hij zit alles goed heeft gedaan – geboekt, betaald, bevestigd – en er kwam niets terug. Geen bevestiging, geen kassabon, geen bewijs dat het heeft gewerkt. De e-mail is wel verzonden. Het belandde simpelweg in een spammapt waar hij nooit aan zal denken om in te kijken. En de stilte leest als een mislukking, hoewel de app technisch gezien zijn werk heeft gedaan.
 
-## Een e-mail verzenden is niet hetzelfde als een e-mail bezorgen
+## Een e-mail verzenden is niet hetzelfde als er een afleveren
 
-AI-codetools maken het triviaal om transactionele e-mail (een boekingsbevestiging, een wachtwoordreset, een ontvangstbewijs) te versturen via een provider als Resend, SendGrid of Postmark. De API-aanroep om de e-mail te verzenden werkt, de provider accepteert deze en in de eigen inbox van een ontwikkelaar tijdens het testen wordt deze vaak prima weergegeven omdat grote providers milder zijn met e-mails naar adressen die eerder interactie hebben gehad met het verzendende domein. Wat bijna nooit wordt geconfigureerd, omdat het volledig buiten de code valt, is de authenticatie op domeinniveau die ontvangende mailservers vertelt dat de e-mail legitiem is: SPF- en DKIM-records, en idealiter DMARC daarbovenop.
+AI-coderingsassistenten maken het triviaal om transactionele e-mail aan te sluiten – een boekingsbevestiging, een wachtwoord-reset, een kassabon – via een provider zoals Resend, SendGrid, of Postmark. De API-oproep om de e-mail te verzenden werkt, de provider accepteert het, en in de eigen inbox van een ontwikkelaar tijdens het testen verschijnt het vaak prima. Grote providers zijn namelijk vergevingsgezinder voor e-mails naar adressen die eerder interactie hebben gehad met het verzendende domein. Wat vrijwel nooit wordt geconfigureerd, omdat het volledig buiten de code leeft, is de authenticatie op domeinniveau die ontvangende mailservers vertelt dat de e-mail legitiem is: SPF- en DKIM-records, en idealiter DMARC er bovenop.
 
-SPF (Sender Policy Framework) is een DNS-record waarin wordt vermeld welke mailservers namens uw domein e-mail mogen verzenden. DKIM (DomainKeys Identified Mail) is een cryptografische handtekening die aan uitgaande e-mail is toegevoegd en die bewijst dat deze tijdens de verzending niet is gewijzigd en daadwerkelijk afkomstig is van een geautoriseerde afzender. Als beide niet correct zijn geconfigureerd, hebben ontvangende e-mailproviders (Gmail, Outlook, Yahoo) geen sterk signaal dat de e-mails van uw app legitiem zijn en zijn hun spamfilters standaard voorzichtig. Die voorzichtigheid is precies wat een werkende functie in een onzichtbare mislukking verandert.
+SPF (Sender Policy Framework) is een DNS-record dat vermeldt welke mailservers e-mail mogen verzenden namens uw domein. DKIM (DomainKeys Identified Mail) is een cryptografische handtekening gekoppeld aan uitgaande mail die bewijst dat het niet onderweg is gewijzigd en oprecht afkomstig was van een geautoriseerde verzender. Zonder dat beide correct zijn geconfigureerd, hebben ontvangende e-mailproviders – Gmail, Outlook, Yahoo – geen sterk signaal dat de e-mails van uw app legitiem zijn. Hun spamfilters kiezen standaard voor voorzichtigheid. Die voorzichtigheid is exact wat een werkende functie veranderd in een onzichtbare mislukking.
 
-## Hoe de juiste configuratie er eigenlijk uitziet
+## Hoe een correcte configuratie er daadwerkelijk uitziet
 
-Deze records bevinden zich in de DNS-instellingen van uw domein, niet in uw applicatiecode. Dat is precies de reden waarom een ​​AI-codegenerator ze nooit aanraakt. Hij heeft daar geen reden voor en geen zicht op uw DNS-provider.
+Deze records leven in de DNS-instellingen van uw domein, en niet in uw applicatiecode. Dat is precies waarom een AI-coderingsassistent ze nooit aanraakt – het heeft geen reden om dat te doen, en geen zichtbaarheid in uw DNS-provider.
 
 ```
-; SPF record
+; SPF-record
 TXT  yourapp.com  "v=spf1 include:_spf.resend.com ~all"
 
-; DKIM-record (verstrekt door uw e-mailservice)
-TXT opnieuw verzenden._domeinsleutel.uwapp.com "v=DKIM1; k=rsa; p=MIGfMA0GCSq..."
+; DKIM-record (geleverd door uw e-maildienst)
+TXT  resend._domainkey.yourapp.com  "v=DKIM1; k=rsa; p=MIGfMA0GCSq..."
 
 ; DMARC-record
-TXT _dmarc.uwapp.com "v=DMARC1; p=quarantaine; rua=mailto:reports@uwapp.com"
+TXT  _dmarc.yourapp.com  "v=DMARC1; p=quarantine; rua=mailto:reports@yourapp.com"
 ```
 
-Elke legitieme provider van transactionele e-mail documenteert precies welke records moeten worden toegevoegd, en de meeste begeleiden u er tijdens de installatie doorheen. Maar die installatiestap kunt u gemakkelijk overslaan als u zich erop concentreert de functie werkend te krijgen, en niets in het product breekt zichtbaar als u deze overslaat. De e-mail wordt nog steeds 'verzonden'. Het komt gewoon niet betrouwbaar aan.
+Elke legitieme provider van transactionele e-mail documenteert exact welke records moeten worden toegevoegd, en de meeste loodsen u er doorheen tijdens de installatie. Maar die installatiestap is gemakkelijk over te slaan wanneer u gefocust bent op het werkend krijgen van de functie, en niets in het product breekt zichtbaar als u het overslaat. De e-mail "verzendt" nog steeds. Het komt alleen niet betrouwbaar aan.
 
-Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, kadert dit soort hiaten in een breder patroon: “We zien een verschuiving in de softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Precies daarin hebben we elf jaar ervaring.” E-mailauthenticatie is een klein, gemakkelijk over het hoofd te zien voorbeeld: de verzendknop werkt vanaf de eerste dag, maar ervoor zorgen dat deze daadwerkelijk de inbox op betrouwbare wijze bereikt, is infrastructuurwerk dat de meeste door AI gegenereerde builds nooit aanraken.
+Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, kadert dit soort kloven als onderdeel van een bredere statistiek: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in exact dat." E-mailauthenticatie is een klein, gemakkelijk over het hoofd te zien voorbeeld – de verzendknop werkt vanaf dag één, maar het betrouwbaar laten bereiken van de inbox is infrastructuurwerk dat de meeste met AI gegenereerde bouwwerken nooit aanraken.
 
 ## Waarom dit erger is voor een nieuw domein
 
-Een gloednieuw verzenddomein heeft geen reputatiegeschiedenis bij mailproviders, waardoor de eerste paar weken na de lancering de periode met het hoogste risico zijn voor problemen met de bezorging – precies wanneer een oprichter zijn eerste echte klanten aan boord heeft en zich het minst kan veroorloven dat bevestigingsmails stilletjes verdwijnen. Het opwarmen van de verzendreputatie van een domein, het monitoren van bounce- en spamklachtenpercentages en het vanaf het begin verkrijgen van SPF, DKIM en DMARC zorgen ervoor dat de eerste klanten ooit de e-mails zien die uw app hen stuurt.
+Een gloednieuw verzendend domein heeft geen reputatiegeschiedenis bij e-mailproviders, wat de eerste paar weken na de lancering de periode maakt met het hoogste risico op problemen met de afleverbaarheid – exact wanneer een oprichter zijn eerste echte klanten onbehandeld achterlaat en het zich het minst kan veroorloven dat bevestigings-e-mails stilletjes verdwijnen. Het opbouwen van de verzendreputatie van een domein, het monitoren van het aantal weigeringen en spamklachten, en het vanaf het begin goed regelen van SPF, DKIM en DMARC bepalen samen of die eerste klanten ooit de e-mails zien die uw app hen stuurt.
 
-Ons team, dat werkt vanuit Ho Chi Minh-stad, waar LaunchStudio een aanzienlijk deel van de backend- en integratie-instellingen afhandelt, beschouwt e-mailauthenticatie als een standaard pre-launch checklistitem - niet omdat het ingewikkeld is, maar omdat het onzichtbaar is totdat het een oprichter stilletjes zijn eerste indruk bij een klant kost. Als uw transactionele e-mails nog nooit zijn gecontroleerd aan de hand van een spamscoretool, omvat [ons proces](https://launchstudio.eu/en/#process) precies dat soort verificatie vóór de lancering.
+Ons team, werkend vanuit Ho Chi Minh-stad waar LaunchStudio een substantieel deel van de backend- en integratie-installatie afhandelt, behandelt e-mailauthenticatie als een standaard onderdeel van de controlelijst vóór de lancering – niet omdat het ingewikkeld is, maar omdat het onzichtbaar is totdat het een oprichter stilletjes zijn eerste indruk bij een klant kost. Als uw transactionele e-mails nooit zijn gecontroleerd tegen een spam-scoringstool, omvat [ons proces](https://launchstudio.eu/en/#process) exact dat soort verificatie vóór de lancering.
+
+## Een nieuwsbrief-verzending kan de e-mails met uw kassabonnen stilletjes laten zakken
+
+SPF, DKIM en DMARC herstellen het authenticatieprobleem, maar er is een tweede, minder voor de hand liggende manier waarop transactionele afleverbaarheid breekt: het delen van een verzendend domein tussen transactionele e-mail (kassabonnements, wachtwoord-resets, bevestigingen) en massale marketing-e-mail (nieuwsbrieven, productaankondigingen). E-mailproviders volgen de verzendreputatie per domein, en niet per e-mailtype. Een marketingcampagne met een verhoogd aantal spamklachten of weigeringen trekt dus de reputatie naar beneden van elke e-mail die vanaf dat domein wordt verzonden, inclusief de wachtwoord-reset waar een klant nu op zit te wachten.
+
+```
+; Afzonderlijke subdomeinen houden reputaties onafhankelijk
+TXT  mail.yourapp.com       "v=spf1 include:_spf.resend.com ~all"   ; transactioneel
+TXT  news.yourapp.com       "v=spf1 include:_spf.mailchimp.com ~all" ; marketing
+```
+
+De herstelling is subdomeinscheiding: transactionele e-mail verzendt vanaf het ene subdomein (`mail.yourapp.com`), marketing verzendt vanaf een ander subdomein (`news.yourapp.com`), elk met een eigen SPF- en DKIM-record en een eigen reputatiegeschiedenis. Een slecht gerichte nieuwsbrief kan zo de afleverbaarheid van zijn eigen subdomein laten zakken zonder ooit de kassabonnen en bevestigingen aan te raken waar uw product van afhangt om te voelen alsof het werkt. Dit is een DNS-beslissing van vijf minuten als het wordt gemaakt voordat een van beide verzendstromen begint – en een aanzienlijk grotere ontwarringstaak zodra de reputatie van een enkel gedeeld domein al is beschadigd door een fout gelopen marketingverzending.
 
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: de boekingsbevestigingen die niemand heeft gezien
+### Een AI-native oprichter in actie: De boekingsbevestigingen die niemand zag
 
-Sem Verstraeten bouwde BoekingsMail, een boekingsbevestigingssysteem voor kleine zalen, met behulp van Cursor. De kern van het boekingsproces werkte goed en de bevestigingsmails werden correct verzonden volgens elk logboek in het dashboard van de verzendende provider - de status "bezorgd" bij elke verzending. Wat het dashboard niet kon laten zien, was waar de e-mails daadwerkelijk terechtkwamen zodra ze de servers van de provider verlieten.
+Sem Verstraeten bouwde BoekingsMail, een systeem voor boekingsbevestigingen voor kleine locaties, met behulp van Cursor. De kernboekingsstroom werkte goed, en bevestigings-e-mails vuurden correct af volgens elk logboek in het dashboard van de verzendende provider – status "geleverd" bij elke verzending. Wat het dashboard niet kon tonen was waar die e-mails daadwerkelijk belandden zodra ze de servers van de provider verlieten.
 
-Omdat op het verzendende domein nooit SPF- of DKIM-records waren geconfigureerd, belandde het merendeel van de e-mails met boekingsbevestiging binnen enkele dagen na de lancering rechtstreeks in de spammappen van de ontvanger. Klanten die zojuist een locatie hadden geboekt, gingen ervan uit dat de app kapot was, omdat ze geen e-mail, geen ontvangstbewijs en geen vertrouwen hadden dat hun boeking was doorgekomen. Verschillende klanten belden rechtstreeks naar de locatie om dit nog eens te controleren, waardoor het hele punt van een geautomatiseerd bevestigingssysteem werd ondermijnd.
+Omdat voor het verzendende domein nooit SPF- of DKIM-records waren geconfigureerd, belandde de meerderheid van de e-mails met boekingsbevestigingen binnen enkele dagen na de lancering rechtstreeks in de spammappen van de ontvangers. Klanten die net een locatie hadden geboekt namen aan dat de app kapot was, aangezien ze geen e-mail hadden, geen kassabon, en geen vertrouwen dat hun boeking was doorgegaan – verschillenden belden de locaties rechtstreeks om dubbel te controleren, wat het gehele doel van een geautomatiseerd bevestigingssysteem ondermijnde.
 
-De technici van LaunchStudio configureerden de juiste SPF-, DKIM- en DMARC-records voor het verzendende domein van BoekingsMail, installeerden bounce- en spam-klachtenmonitoring via de e-mailprovider en voerden een reeks testverzendingen uit tegen grote inboxproviders om de daadwerkelijke plaatsing van de inbox te bevestigen in plaats van alleen maar de status "bezorgd".
+LaunchStudio's ingenieurs configureerden correcte SPF-, DKIM- en DMARC-records voor BoekingsMail's verzendende domein, richtten monitoring van weigeringen en spamklachten in via de e-mailprovider, en voerden een reeks testverzendingen uit tegen grote inboxproviders om daadwerkelijke inboxplaatsing te bevestigen in plaats van alleen de status "geleverd".
 
-**Resultaat:** De bevestigingsmails van Sem komen nu in de primaire inbox van grote providers terecht in plaats van in spam, en de ondersteuningsgesprekken voor locaties met de vraag "is mijn boeking doorgegaan" zijn tot bijna nul gedaald.
+**Resultaat:** Sem's bevestigings-e-mails belanden nu in de primaire inbox bij grote providers in plaats van spam. Het aantal telefoontjes voor locatieondersteuning met de vraag "is mijn boeking doorgegaan" is tot bijna nul gedaald.
 
-> *"Ik heb weken besteed aan het debuggen van de boekingslogica, omdat ik dacht dat deze kapot was. De feitelijke fout zat in de DNS-instellingen waarvan ik niet eens wist dat ze bestonden."*
-> — **Sem Verstraeten, oprichter, BoekingsMail (Kampen)**
+> *"Ik heb weken besteed aan het debuggen van de boekingslogica, denkend dat die kapot was. De daadwerkelijke bug zat in DNS-instellingen waarvan ik niet eens wist dat ze bestonden."*
+> — **Sem Verstraeten, Oprichter, BoekingsMail (Kampen)**
 
-**Kosten en tijdlijn:** € 500 (SPF-, DKIM- en DMARC-configuratie plus test op leverbaarheid bij grote inboxproviders) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 500 (SPF-, DKIM- en DMARC-configuratie plus afleverbaarheidstesten over grote inboxproviders) — voltooid in 3 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom werd op het dashboard van de e-mailprovider 'afgeleverd' weergegeven als de e-mails in spam terechtkwamen?
+### Waarom toonde het dashboard van de e-mailprovider "geleverd" als de e-mails in spam belandden?
 
-'Bezorgd' betekent doorgaans dat de ontvangende mailserver het bericht heeft geaccepteerd. Het zegt niets over naar welke map het spamfilter van de ontvanger het bericht heeft geleid, wat een afzonderlijke beslissing is die na acceptatie wordt genomen.
+"Geleverd" betekent doorgaans dat de ontvangende mailserver het bericht heeft geaccepteerd – het zegt niets over in welke map het spamfilter van de ontvanger het heeft geleid. Dat is een afzonderlijke beslissing die wordt gemaakt na acceptatie.
 
-### Kan ik SPF en DKIM zelf configureren zonder ontwikkelaar?
+### Kan ik SPF en DKIM zelf configureren zonder een ontwikkelaar?
 
-Ja, in principe - de meeste e-mailproviders documenteren de exacte DNS-records die moeten worden toegevoegd - maar het vereist toegang tot de DNS-instellingen van uw domein en voldoende bekendheid met DNS om een ​​verkeerde configuratie te voorkomen die de bezorging volledig verbreekt in plaats van herstelt.
+Ja, in principe wel – de meeste e-mailproviders documenteren de exacte DNS-records die moeten worden toegevoegd – maar het vereist toegang tot de DNS-instellingen van uw domein en genoeg bekendheid met DNS om te voorkomen dat een verkeerde configuratie de levering compleet breekt in plaats van herstelt.
 
-### Waarom beschouwt Herre Roelevink zoiets kleins als DNS-records als onderdeel van een groter patroon van 'architectuur en volwassenheid'?
+### Waarom behandelt Herre Roelevink iets wat zo klein is als DNS-records als onderdeel van een groter patroon van "architectuur en volwassenheid"?
 
-Omdat het representatief is voor de bredere kloof waarin Manifera zich specialiseert in het dichten: AI-tools maken de functie zelf triviaal om te bouwen, terwijl de omringende infrastructuur die ervoor zorgt dat deze betrouwbaar werkt in de echte wereld een afzonderlijke, vaak over het hoofd geziene laag van technische volwassenheid is.
+Omdat het representatief is voor de bredere kloof waar Manifera in gespecialiseerd is om te sluiten – AI-tools maken de functie zelf triviaal om te bouwen, terwijl de omringende infrastructuur die ervoor zorgt dat het betrouwbaar werkt in de echte wereld een afzonderlijke, vaak over het hoofd geziene laag van engineeringvolwassenheid is.
 
-### Hoe lang duurt het voordat de verzendreputatie van een nieuw domein is opgebouwd?
+### Kan een slechte marketing-e-mailcampagne daadwerkelijk beïnvloeden of de e-mails voor het opnieuw instellen van mijn wachtwoord worden afgeleverd?
 
-De reputatie verbetert doorgaans tijdens de eerste paar weken van consistente verzending met weinig klachten; Het vanaf de eerste dag SPF, DKIM en DMARC krijgen, geeft die periode van reputatieopbouw de best mogelijke kans op succes.
-
-### Verzorgt Manifera ook de e-mailbezorging voor grotere, gevestigde SaaS-producten?
-
-Ja – de deliverability-beoordeling maakt deel uit van dezelfde productiegereedheidsdiscipline die Manifera toepast bij opdrachten van elke omvang, ook voor zakelijke klanten, aangezien zelfs een gevestigd verzendend domein deliverability-problemen kan ontwikkelen na een providermigratie of DNS-wijziging.
-
-Praat met een ingenieur die de door AI gegenereerde code begrijpt — [beschrijf hier uw project](https://launchstudio.eu/en/#contact) en we reageren binnen één werkdag.
-
-Voor meer informatie over hoe Manifera een betrouwbare backend-infrastructuur van begin tot eind bouwt, zie [Manifera's webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/).
-
+Ja, als ze hetzelfde verzendende domein delen – e-mailproviders volgen de reputatie per domein. Een nieuwsbrief met een hoog aantal spamklachten kan dus ook de transactionele afleverbaarheid naar beneden trekken. Dat is waarom het scheiden van transactionele en marketing-e-mail op verschillende subdomeinen, elk met een eigen SPF/DKIM-opzet, voorkomt dat de ene de andere beïnvloedt.
 
 <script type="application/ld+json">
 {
@@ -116,42 +120,42 @@ Voor meer informatie over hoe Manifera een betrouwbare backend-infrastructuur va
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom werd op het dashboard van de e-mailprovider 'afgeleverd' weergegeven als de e-mails in spam terechtkwamen?",
+      "name": "Waarom staat in Resend/SendGrid 'Delivered' als de mail in SPAM belandt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "'Bezorgd' betekent doorgaans dat de ontvangende mailserver het bericht heeft geaccepteerd. Het zegt niets over naar welke map het spamfilter van de ontvanger het bericht heeft geleid, wat een afzonderlijke beslissing is die na acceptatie wordt genomen."
+        "text": "'Delivered' betekent alleen dat Gmail de mail heeft geaccepteerd. De uiteindelijke map (Inbox vs Spam) wordt daarna pas door Gmail's spamfilter bepaald."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik SPF en DKIM zelf configureren zonder ontwikkelaar?",
+      "name": "Wat doen SPF en DKIM precies voor e-mail authenticatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, in principe - de meeste e-mailproviders documenteren de exacte DNS-records die moeten worden toegevoegd - maar het vereist toegang tot de DNS-instellingen van uw domein en voldoende bekendheid met DNS om een ​​verkeerde configuratie te voorkomen die de bezorging volledig verbreekt in plaats van herstelt."
+        "text": "SPF bepaalt welke servers namens jouw domein mogen mailen. DKIM voegt een cryptografische handtekening toe om te bewijzen dat de mail niet is vervalst."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom beschouwt Herre Roelevink zoiets kleins als DNS-records als onderdeel van een groter patroon van 'architectuur en volwassenheid'?",
+      "name": "Waarom noemt Herre Roelevink e-mail DNS een volwassenheidsprobleem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat het representatief is voor de bredere kloof waarin Manifera zich specialiseert in het dichten: AI-tools maken de functie zelf triviaal om te bouwen, terwijl de omringende infrastructuur die ervoor zorgt dat deze betrouwbaar werkt in de echte wereld een afzonderlijke, vaak over het hoofd geziene laag van technische volwassenheid is."
+        "text": "Omdat AI de verzendknop in de code snel bouwt, maar de DNS-infrastructuur eromheen vergeet. Echte volwassenheid is betrouwbare inbox-aflevering."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe lang duurt het voordat de verzendreputatie van een nieuw domein is opgebouwd?",
+      "name": "Kan een marketing-nieuwsbrief mijn wachtwoord-reset mails schaden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De reputatie verbetert doorgaans tijdens de eerste paar weken van consistente verzending met weinig klachten; Het vanaf de eerste dag SPF, DKIM en DMARC krijgen, geeft die periode van reputatieopbouw de best mogelijke kans op succes."
+        "text": "Ja, als ze hetzelfde domein delen! Hoge spamklachten op nieuwsbrieven verlagen de domeinreputatie, waardoor ook transactiemails in SPAM belanden."
       }
     },
     {
       "@type": "Question",
-      "name": "Verzorgt Manifera ook de e-mailbezorging voor grotere, gevestigde SaaS-producten?",
+      "name": "Hoe voorkom je dat marketingmails transactiemails beïnvloeden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja – de deliverability-beoordeling maakt deel uit van dezelfde productiegereedheidsdiscipline die Manifera toepast bij opdrachten van elke omvang, ook voor zakelijke klanten, aangezien zelfs een gevestigd verzendend domein deliverability-problemen kan ontwikkelen na een providermigratie of DNS-wijziging.  Praat met een ingenieur die de door AI gegenereerde code begrijpt — [beschrijf hier uw project](https://launchstudio.eu/en/#contact) en we reageren binnen één werkdag.  Voor meer informatie over hoe Manifera een betrouwbare backend-infrastructuur van begin tot eind bouwt, zie [Manifera's webapp-ontwikkelingsdiensten](https://www.manifera.com/services/web-app-develop/)."
+        "text": "Gebruik gescheiden subdomeinen: mail.app.com voor transactiemails (recepten, logins) en news.app.com voor marketing. Elk met eigen SPF/DKIM."
       }
     }
   ]

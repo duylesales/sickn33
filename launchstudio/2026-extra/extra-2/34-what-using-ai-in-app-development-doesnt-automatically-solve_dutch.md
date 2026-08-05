@@ -1,73 +1,156 @@
 ---
-Titel: "Wat AI Gebruiken In App-Ontwikkeling Niet Automatisch Oplost"
+Titel: "Wat het gebruik van AI in app-ontwikkeling niet automatisch oplost"
 Trefwoorden: ai in app, app with ai, ai coding, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# Wat AI Gebruiken In App-Ontwikkeling Niet Automatisch Oplost
+# Wat het gebruik van AI in app-ontwikkeling niet automatisch oplost
 
-Een clubpenningmeester stuurt een loginlink door naar een teamgenoot, precies het soort gewone, goedbedoelde delen dat constant gebeurt in een gemeenschapssportclub. Wat geen van beiden opmerkt is dat de bestemming van de link, na login, stilletjes configureerbaar is door wie hem ook aanmaakte — wat betekent dat AI gebruiken in app-ontwikkeling een oprecht handige login-redirectfunctie bouwde zonder dat iemand specifiek overwoog wat er gebeurt als die redirectbestemming niet vertrouwd is.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wat het gebruik van AI in app-ontwikkeling niet automatisch oplost",
+  "description": "Een echt scenario over een open omleiding (open redirect) die gebruikt werd voor phishing tegen leden van een sportclubbeheertool.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-29",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/what-using-ai-in-app-development-doesnt-automatically-solve"
+  }
+}
+</script>
 
-## Wat Een Post-Login-Redirectfunctie Bedoeld Is Te Doen
+Een penningmeester van een sportclub stuurt een inloglink door naar een teamgenoot – exact het soort gewone, goedbedoelde delen dat voortdurend gebeurt in een sportvereniging. Wat geen van beiden opmerkt is dat de bestemming van de link, na het inloggen, stilletjes geconfigureerd kan worden door wie hem ook gemaakt heeft. Het gebruik van AI in app-ontwikkeling heeft een oprecht handige inlog-omleidingsfunctie gebouwd, zonder dat iemand specifiek heeft overwogen wat er gebeurt als die omleidingsbestemming niet betrouwbaar is.
 
-Veel apps ondersteunen een "stuur terug naar waar je was"-functie na login — klik op een link naar een specifieke pagina, word indien nodig eerst naar login gestuurd, land dan daarna automatisch terug op die originele pagina. Het is een oprecht nuttig gemak, en een gebruikelijke voor een AI-codeertool om correct te implementeren wanneer een founder beschrijft loginlinks te willen die "je brengen waar je bedoelde te gaan."
+## Wat een functie voor omleiding na inloggen verondersteld wordt te doen
 
-## Waarom Een Onbeperkte Redirectbestemming Een Phishingtool Is Die Op Het Punt Staat Te Gebeuren
+Veel apps ondersteunen een "stuur me terug naar waar ik was" functie na het inloggen – klik op een link naar een specifieke pagina, stuur me eerst naar de inlogpagina als dat nodig is, en land vervolgens achteraf automatisch terug op die oorspronkelijke pagina. Het is een oprecht nuttig gemak, en een veelvoorkomende functie voor een AI-coderingsassistent om correct te implementeren wanneer een oprichter inloglinks beschrijft die u "brengen naar waar u heen wilde." De meest gebruikelijke implementatie leest de bedoelde bestemming simpelweg uit een URL-parameter en stuurt de browser daar naartoe zodra het inloggen slaagt. Dit is een rechttoe-rechtaan patroon dat correct werkt voor elke legitieme link die een oprichter of een echte gebruiker ooit zou bouwen.
 
-Als de redirectbestemming rechtstreeks genomen wordt uit een URL-parameter zonder het te beperken tot jouw eigen domein, kan een kwaadaardige link gemaakt worden die eruitziet als jouw legitieme loginpagina, en na een oprechte login de nietsvermoedende gebruiker doorverwijzen naar een compleet andere, door een aanvaller gecontroleerde website — een die dan overtuigend jouw product kan imiteren om credentials of andere gevoelige informatie te oogsten, profiterend van de geloofwaardigheid van net van jouw echte loginflow gekomen te zijn.
+## Waarom een onbeperkte omleidingsbestemming een phishing-tool is die staat te wachten
 
-## Waarom Founders Dit Nooit Vangen Bij Het Testen Van Hun Eigen Product
+Als de omleidingsbestemming rechtstreeks uit een URL-parameter wordt gehaald zonder deze te beperken tot uw eigen domein, kan er een kwaadwillige link worden gemaakt die er exact uitziet als uw legitieme inlogpagina. En na een oprechte inlog wordt de niets vermoedende gebruiker omgeleid naar een compleet andere website die door een aanvaller wordt beheerd. Deze website kan vervolgens uw product overtuigend nadoen om inloggegevens of andere gevoelige informatie te verzamelen.
 
-Jouw eigen login-en-redirectflow testen betekent de links volgen die jezelf aanmaakte, die altijd wijzen naar legitieme bestemmingen binnen jouw eigen app — er is geen natuurlijke reden voor een founder om een redirectlink te construeren die ergens extern wijst, aangezien dat geen doel dient in gewoon, eerlijk testen.
+De aanvaller hoeft nooit iets aan uw daadwerkelijke inlogsysteem te compromitteren om dit voor elkaar te krijgen. Ze hebben alleen uw eigen, volledig legitieme inloglink nodig die een externe bestemming accepteert als een geldig omleidingsdoel. Dit is precies de ontbrekende beperking die een oprechte gemaksvoorziening verandert in een mechanisme voor phishing-aflevering.
 
-## Waarom Dit Specifieke Risico Volledig Afhangt Van Het Vertrouwen Van Jouw Gebruikers In Jou
+## Waarom oprichters dit nooit opvangen tijdens het testen van hun eigen product
 
-De schade van een open redirect is niet primair technisch — het gaat over het bewapenen van het vertrouwen dat jouw gebruikers al hebben in jouw loginpagina en jouw merk. De leden van een gemeenschapssportclub vertrouwen links die lijken te komen van het eigen platform van hun club, wat precies het vertrouwen is waarop een aanvaller die dit gat exploiteert rekent om de uiteindelijke phishingpoging overtuigend te maken.
+Het testen van uw eigen inlog-en-omleidingsstroom betekent het volgen van de links die u zelf hebt gemaakt, die altijd naar legitieme bestemmingen binnen uw eigen app wijzen. Er is geen natuurlijke reden voor een oprichter om een omleidingslink te maken die naar iets externs wijst.
 
-## Wat Dit Gat Dichten Omvat
+## Waarom dit specifieke risico volledig afhangt van het vertrouwen van uw gebruikers in u
 
-Een correcte fix beperkt redirectbestemmingen tot een specifieke, bekende allow-list van interne pagina's, en weigert of negeert elke redirectparameter die buiten jouw eigen domein wijst, ongeacht hoe het verzoek vervaardigd was. [LaunchStudio](https://launchstudio.eu/en/) controleert precies dit soort open-redirect-kwetsbaarheid als onderdeel van zijn authenticatiebeveiligingsreview, gesteund door Manifera's 11+ jaar ervaring met het beveiligen van login- en sessieafhandelingsflows.
+De schade van een open omleiding is niet primair technisch – het gaat om het inzetten van het vertrouwen dat uw gebruikers al hebben in uw inlogpagina en uw merk als wapen. Leden van een sportvereniging vertrouwen links die afkomstig lijken te zijn van het platform van hun eigen club. Dat is exact het vertrouwen waar een aanvaller die deze kloof misbruikt op rekent om de uiteindelijke phishing-poging overtuigend te maken.
 
-Manifera's authenticatieflow-beveiligingsreviews worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+## Wat het sluiten van deze kloof inhoudt
 
-[Stuur jouw prototypelink — gratis advies, geen verplichting](https://launchstudio.eu/en/#contact).
+Een correcte herstelling beperkt omleidingsbestemmingen tot een specifieke, bekende toestemmingslijst (allow-list) van interne pagina's, waarbij elke omleidingsparameter die buiten uw eigen domein wijst wordt geweigerd of genegeerd. [LaunchStudio](https://launchstudio.eu/en/) controleert exact op dit soort kwetsbaarheid voor open omleiding als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van inlog- en sessie-afhandelingsstromen.
+
+Manifera's beveiligingsbeoordelingen voor authenticatiestromen worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Stuur de link van uw prototype door — gratis advies, geen verplichtingen](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de loginlink die ergens anders naartoe leidde
+### Een AI-native oprichter in actie: De inloglink die ergens anders naartoe leidde
 
-Amber, een voormalig clubsecretaris die founder werd in Amstelveen, bouwde ClubHub, een AI-geassisteerde sportclubbeheertool gebouwd met Bolt, gebruikt door verscheidene lokale amateurclubs om lidmaatschappen, schema's, en betalingen te beheren.
+Amber, een voormalig clubsecretaris die oprichter werd in Amstelveen, bouwde ClubHub, een AI-ondersteunde tool voor sportclubbeheer gebouwd met Bolt, gebruikt door verschillende lokale amateurclubs om lidmaatschappen, schema's en betalingen te beheren.
 
-Een lid rapporteerde het ontvangen van wat eruitzag als een legitieme ClubHub-loginlink van een teamgenoot, maar na succesvol inloggen bevond ze zich op een onbekende pagina die haar vroeg haar betalingsgegevens "opnieuw te verifiëren" — een overtuigende phishingpoging die ClubHubs oprechte loginflow geëxploiteerd had om geloofwaardigheid toe te voegen aan een anderszins verdacht verzoek. LaunchStudio's review bevestigde dat de post-login-redirect elke bestemmings-URL doorgegeven als parameter accepteerde, zonder beperking tot ClubHubs eigen domein.
+Een lid meldde het ontvangen van wat eruitzag als een legitieme ClubHub-inloglink van een teamgenoot. Maar na het met succes inloggen vond ze zichzelf terug op een onbekende pagina die haar vroeg om haar betalingsdetails "opnieuw te verifiëren" – een overtuigende phishing-poging die ClubHub's oprechte inlogstroom had misbruikt om geloofwaardigheid toe te voegen aan een anderszins verdacht verzoek. LaunchStudio's beoordeling bevestigde dat de omleiding na inloggen elke bestemmings-URL accepteerde die als parameter werd doorgegeven, zonder enige beperking tot ClubHub's eigen domein.
 
-**Resultaat:** LaunchStudio beperkte redirectbestemmingen tot een geverifieerde allow-list van ClubHubs eigen interne pagina's, en dicht de open redirect volledig, en hielp Amber getroffen clubs te informeren over de specifieke phishingpoging die het geëxploiteerd had.
+**Resultaat:** LaunchStudio beperkte omleidingsbestemmingen tot een geverifieerde toestemmingslijst van ClubHub's eigen interne pagina's, wat de open omleiding volledig sloot. LaunchStudio hielp Amber om getroffen clubs te informeren over de specifieke phishing-poging die het had misbruikt.
 
-> *"De login zelf was de hele tijd volledig echt en legitiem, wat precies is wat de poging daarna zo overtuigend maakte. Niets aan onze daadwerkelijke loginflow was gecompromitteerd — het werd gewoon gebruikt als lanceerplatform."*
-> — **Amber Willems, Founder, ClubHub (Amstelveen)**
+> *"Het inloggen zelf was de gehele tijd compleet echt en legitiem, wat exact is wat de poging daarna zo overtuigend maakte. Niets aan onze daadwerkelijke inlogstroom was gecompromitteerd – het werd gewoon gebruikt als een lanceerplatform."*
+> — **Amber Willems, Oprichter, ClubHub (Amstelveen)**
 
-**Kosten & tijdlijn:** €1.300 (herstel open redirect en allow-list-implementatie) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (herstel van open omleiding en implementatie van allow-lists) — voltooid in 4 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een phishingpreventiespecialist open redirects een bekende aanvalsvector beschouwen?
+### Zou een specialist in phishing-preventie open omleidingen beschouwen als een welbekende aanvalsvector?
 
-Ja, bekend genoeg om een standaarditem te zijn in beveiligingstestchecklists precies omdat legitieme loginflows zo'n effectief, vertrouwen-exploiterend lanceerplatform voor phishing zijn wanneer deze specifieke beperking ontbreekt, ongeacht hoe veilig het loginmechanisme zelf daadwerkelijk is.
+Ja, welbekend genoeg om een standaarditem te zijn in checklists voor beveiligingstesten, specifiek omdat legitieme inlogstromen zo'n effectief lanceerplatform voor phishing zijn.
 
-### Is dit gat specifiek voor apps met een "stuur terug naar waar je was"-functie, of breder?
+### Is deze kloof specifiek voor apps met een functie voor omleiding na inloggen?
 
-Het is specifiek voor elke functie die een bestemmings-URL accepteert als gebruikerscontroleerbare invoer en ernaar doorverwijst zonder beperking — voorbij post-login-redirects kan dit uitlogflows, externe linkhandlers, of elke "ga verder naar"-functie omvatten die een URL-parameter neemt zonder het te valideren.
+Het geldt voor elke functie die een bestemmings-URL als door de gebruiker te beheren invoer accepteert en er zonder beperking naartoe omleidt (uitlogstromen, externe linkafhandeling).
 
-### Draagt Manifera's ervaring met het bouwen van loginflows voor enterprise-klanten betekenisvol over naar een gemeenschapssportclubtool?
+### Maakt ervaring met inlogstromen bij enterprise-klanten uit voor een sportclubtool?
 
-Ja, direct — de specifieke technische fix (een domein-allow-list voor redirectbestemmingen) is een standaard, herhaalbaar patroon consistent toegepast ongeacht of de klant een enterprise-systeem of een communityclub-beheertool is, aangezien de onderliggende kwetsbaarheid niet meeschaalt met organisatiegrootte.
+Ja, rechtstreeks – de specifieke technische herstelling (een domein-toestemmingslijst voor omleidingsbestemmingen) is een standaard, herhaalbaar patroon.
 
-### Herre Roelevink heeft benadrukt dat beveiligingsgaten vaak vertrouwen exploiteren in plaats van alleen technische zwakte — illustreert dit geval dat goed?
+### Illustreert deze casus het misbruik van vertrouwen boven een louter technische kwetsbaarheid?
 
-Heel goed — ClubHubs daadwerkelijke loginbeveiliging was nooit op enig moment gecompromitteerd; de hele aanval hing af van het exploiteren van het redelijke vertrouwen van leden in een legitiem ogende link, precies de vertrouwen-exploitatie-dynamiek waar Roelevinks bredere commentaar op AI-native productrisico consistent naar teruggaat.
+Heel goed – ClubHub's daadwerkelijke inlogbeveiliging was op geen enkel punt gecompromitteerd. De gehele aanval hing af van het misbruiken van het redelijke vertrouwen van leden in een legitieme link.
 
-### Had Amber dit moeten kunnen vangen door simpelweg haar eigen loginlinks grondiger te testen vóór lancering?
+### Had Amber dit kunnen opvangen door simpelweg haar eigen inloglinks grondiger te testen?
 
-Onwaarschijnlijk zonder specifiek een kwaadaardig vervaardigde redirectparameter te testen, wat niet iets is dat eerlijk, coöperatief testen natuurlijk produceert — dit is precies de categorie adversariële test die iemand vereist die specifiek denkt als een aanvaller in plaats van grondiger testen vanuit het eigen, inherent coöperatieve perspectief van de founder.
+Uiterst onwaarschijnlijk zonder specifiek een kwaadwillig opgestelde omleidingsparameter te testen, wat niet iets is wat eerlijk testen op een natuurlijke manier produceert.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Lỗi Open Redirect (chuyển hướng hở) là gì và tại sao nguy hiểm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lỗi cho phép URL đăng nhập thật chuyển hướng người dùng sang một trang web lừa đảo (phishing) bên ngoài sau khi login thành công."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại sao kẻ tấn công lại lợi dụng luồng đăng nhập thật để lừa đảo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vì URL đăng nhập là thật (domain chuẩn của app), làm tăng uy tín và khiến người dùng hoàn toàn tin tưởng nhập thông tin tiếp theo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Giải pháp kỹ thuật triệt để để fix lỗi Open Redirect là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sử dụng Whitelist (Allow-list) chỉ cho phép chuyển hướng đến các đường dẫn nội bộ (relative URL) thuộc chính domain của app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ngoài luồng đăng nhập, những tính năng nào khác hay dính lỗi Open Redirect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luồng Đăng xuất (Logout), Quên mật khẩu (Reset password), Link Hủy đăng ký (Unsubscribe) và SSO Callbacks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Founder tự test luồng đăng nhập có dễ phát hiện ra lỗi này không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rất khó, vì khi test bình thường founder chỉ bấm các link nội bộ hợp lệ chứ không cố tình truyền URL ngoài vào parameter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sửa lỗi Open Redirect có tốn nhiều chi phí và thời gian không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, thường hoàn thành rất nhanh trong 2-4 ngày làm việc chỉ với việc gắn hàm kiểm tra domain trước khi redirect."
+      }
+    }
+  ]
+}
+</script>

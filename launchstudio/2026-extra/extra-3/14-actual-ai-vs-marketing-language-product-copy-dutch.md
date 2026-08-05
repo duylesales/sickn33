@@ -1,17 +1,18 @@
 ---
-Titel: "Werkelijke AI versus marketingtaal: wat uw productkopie niet mag beweren"
+Titel: "Echte AI vs. Marketingtaal: Wat uw productteksten niet zouden moeten beweren"
 Trefwoorden: actual ai, ai native, ai works, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelgroep: AI-Native oprichter (niet-technisch)
 ---
-# Werkelijke AI versus marketingtaal: wat uw productkopie niet mag beweren
+
+# Echte AI vs. Marketingtaal: Wat uw productteksten niet zouden moeten beweren
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Werkelijke AI versus marketingtaal: wat uw productkopie niet mag beweren",
-  "description": "De kloof tussen wat de marketingkopie van een product beweert over de AI en wat het daaronder feitelijk doet, is een groeiende bron van wantrouwen bij klanten en, in toenemende mate, van regelgevende aandacht. Een specifieke kijk op waar oprichters onbedoeld overdrijven.",
+  "headline": "Echte AI vs. Marketingtaal: Wat uw productteksten niet zouden moeten beweren",
+  "description": "De kloof tussen wat de marketingtekst van een product beweert over haar AI en wat het daadwerkelijk onder de motorkap doet, is een groeiende bron van wantrouwen bij klanten. Een blik op waar oprichters onbedoeld overdrijven.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,70 +31,88 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-'Powered by AI' is een uitdrukking die nu zo breed wordt toegepast dat deze het grootste deel van zijn beschrijvende waarde heeft verloren, en de kloof tussen wat de marketingkopie van een oprichter beweert over de daadwerkelijke AI van zijn product en wat het product daaronder werkelijk doet, is een groeiende, specifieke bron van wantrouwen bij klanten - niet omdat oprichters opzettelijk oneerlijk zijn, maar omdat marketingtaal de neiging heeft om de echt genuanceerde technische realiteit te comprimeren in welke zin dan ook die het meest indrukwekkend klinkt, zonder dat iemand specifiek controleert of de gecomprimeerde versie nog steeds accuraat is.
+"Aangedreven door AI" is een uitdrukking die nu zo breed wordt toegepast dat deze het grootste deel van haar beschrijvende waarde heeft verloren. De kloof tussen wat de marketingteksten van een oprichter beweren over de daadwerkelijke AI van hun product en wat het product onder de motorkap oprecht doet, is een groeiende, specifieke bron van wantrouwen bij klanten – niet omdat oprichters bewust oneerlijk zijn, maar omdat marketingtaal de neiging heeft om een oprecht genuanceerde technische werkelijkheid samen te vatten in de uitdrukking die het meest indrukwekkend klinkt, zonder dat iemand specifiek controleert of de samengevatte versie nog steeds nauwkeurig is.
 
-## Waarom deze kloof ontstaat zonder opzettelijke bedoelingen
+## Waarom deze kloof ontstaat zonder bewuste intentie
 
-Een oprichter die zijn product beschrijft, probeert doorgaans niemand te misleiden; hij probeert waarde snel over te brengen, in een taal die een niet-technische klant zal begrijpen, en 'AI-aangedreven' of 'intelligent' zijn eenvoudigweg de kortste beschikbare woorden voor een werkelijk ingewikkelder onderliggende realiteit. De kloof ontstaat omdat niemand specifiek stopt om te controleren of de snelkoppeling nog steeds nauwkeurig weergeeft wat het product doet, vooral als de marketingtekst één keer wordt geschreven en vervolgens eenvoudigweg wordt hergebruikt gedurende maanden van iteratie naar de daadwerkelijke onderliggende technologie.
+Een oprichter die zijn product beschrijft probeert meestal niemand te misleiden – hij probeert snel waarde te communiceren in taal die een niet-technische klant zal begrijpen, en "AI-gestuurd" of "intelligent" zijn simpelweg de kortste beschikbare woorden voor een oprecht ingewikkelder onderliggende realiteit. De kloof ontstaat omdat niemand specifiek stopt om te controleren of de kortere weg nog steeds nauwkeurig vertegenwoordigt wat het product doet, vooral als de marketingteksten eenmalig worden geschreven en vervolgens simpelweg maandenlang worden hergebruikt terwijl de daadwerkelijke onderliggende technologie veranderd.
 
-## Waar de compressie specifiek fout gaat
+## Waar de samenvatting specifiek misgaat
 
-**Een eenvoudig, op regels gebaseerd systeem ‘AI’ noemen omdat het ergens een AI API raakt.** Een product dat voor de meeste beslissingen een basisopzoektabel gebruikt en slechts af en toe een AI-model aanroept voor een beperkte subtaak, is technisch gezien ‘AI’, maar marketingteksten die het hele product beschrijven als ‘AI-aangedreven’ overdrijven hoeveel van de werkelijke waarde uit die specifieke mogelijkheid komt.
+**Een eenvoudig op regels gebaseerd systeem "AI" noemen omdat het ergens een AI-API raakt.** Een product dat een basisopzoektabel gebruikt voor de meeste beslissingen en slechts af en toe een AI-model aanroept voor een kleine subtaak gebruikt technisch gezien "AI", maar marketingteksten die het hele product beschrijven als "AI-gestuurd" overdrijven hoeveel van de werkelijke waarde uit die specifieke capaciteit komt.
 
-**Hiermee wordt real-time leren geïmpliceerd dat in werkelijkheid niet gebeurt.** Uitdrukkingen als 'leert van uw gegevens' of 'wordt slimmer naarmate u deze vaker gebruikt' dragen een specifieke, controleerbare claim in zich (dat het systeem zich feitelijk aanpast op basis van nieuwe input) wat veel producten niet echt doen, maar vertrouwen op een statisch model dat zich identiek gedraagt, ongeacht hoeveel een bepaalde klant het heeft gebruikt.
+**Realtime leren suggereren dat in de praktijk niet gebeurt.** Zinnen als "leert van uw gegevens" of "wordt slimmer hoe meer u het gebruikt" dragen een specifieke, controleerbare claim – dat het systeem zich daadwerkelijk aanpast op basis van nieuwe invoer – wat veel producten niet oprecht doen. Ze vertrouwen in plaats daarvan op een statisch model dat zich identiek gedraagt ongeacht hoeveel een bepaalde klant het heeft gebruikt.
 
-**Het suggereren van autonome besluitvorming waarbij eigenlijk nog steeds een mens nodig is.** Marketingtaal die volledige automatisering impliceert, wanneer het eigenlijke product menselijke beoordeling of goedkeuring vereist bij een cruciale stap, schept een verwachting die het product niet waarmaakt, een kloof die klanten vaak snel opmerken en zich op een ongunstige manier herinneren.
+**Autonome besluitvorming suggereren waar in werkelijkheid nog een mens nodig is.** Marketingtaal die volledige automatisering suggereert, terwijl het daadwerkelijke product menselijke beoordeling of goedkeuring vereist bij een kritieke stap, schept een verwachting die het product niet waarmaakt – een kloof die klanten snel merken en zich ongunstig herinneren.
 
-## Waarom dit steeds meer een regelgevende zorg is, en niet alleen een vertrouwenskwestie
+## Waarom dit steeds meer een regelgevende zorg is, en niet alleen voor vertrouwen
 
-Naast het vertrouwen van klanten is de aandacht van de regelgevende instanties voor claims op het gebied van AI-marketing in het bijzonder toegenomen, waarbij verschillende jurisdicties overdreven claims over AI-capaciteiten behandelen als een zorg voor consumentenbescherming in plaats van alleen maar als een agressieve marketingkeuze.
+Voorbij het vertrouwen van klanten groeit de aandacht van toezichthouders op AI-marketingclaims specifiek, waarbij verschillende rechtsgebieden overdreven beweringen over AI-capaciteiten behandelen als een zaak van consumentenbescherming in plaats van simpelweg een agressieve marketingkeuze. Dit betekent dat de kloof tussen claim en werkelijkheid verschuift van een reputatierisico naar een echte nalevingsoverweging die een oprichter serieus moet nemen in plaats van af te doen als een klein formuleringsobject. In de EU in het bijzonder zijn de transparantieverplichtingen gekoppeld aan AI-systemen aangescherpt in parallel met bredere AI-regelgeving, en consumentenbeschermingsregels geven toezichthouders al een basis om een marketingclaim te testen tegen het daadwerkelijke product erachter. Een oprichter hoeft niet de specifieke vereisten van elk rechtsgebied te volgen om de onderliggende les serieus te nemen: een claim die een toezichthouder zou kunnen testen tegen het daadwerkelijke product is een claim die waar moet zijn, en niet alleen overtuigend.
 
-## Hoe u uw eigen exemplaar kunt controleren met wat feitelijk waar is
+## Hoe u uw eigen teksten kunt controleren tegen wat daadwerkelijk waar is
 
-De directe test: vraag voor elke specifieke AI-gerelateerde claim in uw marketingtekst of u concreet en eerlijk kunt beschrijven welk technisch mechanisme deze claim precies waar maakt. Als het eerlijke antwoord luidt: 'Het klinkt waar en er is niemand om gevraagd', dan is het de moeite waard om die specifieke bewering opnieuw te bekijken voordat een klant, journalist of toezichthouder dezelfde vraag stelt die je jezelf eerst had moeten stellen.
+De directe test: vraag voor elke specifieke AI-gerelateerde claim in uw marketingteksten of u concreet en eerlijk exact welk technisch mechanisme die claim waar maakt zou kunnen beschrijven. Als het eerlijke antwoord is "het klinkt waar en niemand heeft het gevraagd", is die specifieke claim het waard om te herzien voordat een klant, een journalist of een toezichthouder dezelfde vraag stelt die u zichzelf als eerste had moeten stellen.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt marketingclaims tegen daadwerkelijke productmogelijkheden als onderdeel van bredere lanceringsgereedheidsactiviteiten, met name door taal te markeren die verder gaat dan wat het onderliggende systeem werkelijk doet, waarbij gebruik wordt gemaakt van de directe zichtbaarheid van de technische teams van Manifera in wat de AI-integratie van een bepaald product feitelijk presteert en wat er wordt beschreven als te doen.
+[LaunchStudio](https://launchstudio.eu/en/) beoordeelt marketingclaims tegen daadwerkelijke productcapaciteiten als onderdeel van bredere lanceringgereedheidsopdrachten, waarbij specifiek taal wordt gemarkeerd die vooruitloopt op wat het onderliggende systeem oprecht doet, gebruikmakend van het directe zicht van de engineeringteams van Manifera op wat de AI-integratie van een bepaald product daadwerkelijk uitvoert versus hoe het wordt beschreven.
 
-[Laat uw AI-claims vergelijken met wat uw product daadwerkelijk doet](https://launchstudio.eu/en/#contact) — het gat in vertrouwen kost meer dan de kortere weg die ooit is bespaard in de tijd van copywriting.
+[Laat uw AI-claims controleren tegen wat uw product daadwerkelijk doet](https://launchstudio.eu/en/#contact) — de kloof kost meer aan vertrouwen dan de kortere weg ooit heeft bespaard aan tijd voor het schrijven van teksten.
+
+## Een snelle gids: Welke AI-claims standhouden en welke vragen oproepen
+
+Voorbij de algemene zelfcontrole van het vragen of u het mechanisme zou kunnen uitleggen, dragen bepaalde specifieke woorden en zinnen meer geïmpliceerde beweringen met zich mee dan oprichters zich meestal realiseren wanneer ze ze schrijven, terwijl andere dezelfde onderliggende capaciteit beschrijven met aanzienlijk minder risico op overrijving. Het vooraf kennen van het verschil maakt het schrijven van teksten sneller, niet trager – de veiligere formulering is meestal niet langer of minder aantrekkelijk, gewoon specifieker over wat er daadwerkelijk gebeurt.
+
+**"Leert" en "past zich aan" — hoge zorgvuldigheid vereist, en het is de moeite waard specifiek te zijn over welk type.** Voorbij het algemene risico van het suggereren van aanpassing die helemaal niet gebeurt, hierboven behandeld, is er een tweede, subtielere versie van dezelfde fout: een product dat oprecht verbetert, maar alleen in de zin dat het onderliggende model periodiek opnieuw wordt getraind of verfijnd over het gehele gebruikersbestand – niet in de zin dat het personaliseert naar de specifieke toepassing van een individuele klant. Tekst die zegt "leert uw voorkeuren" wanneer de waarheid is "het model achter ieders account wordt af en toe bijgewerkt" beschrijft een echt verbeterproces op een onnauwkeurige manier, en niet een nep-proces. Dit is een makkelijkere kloof om te missen tijdens een tekstbeoordeling aangezien er oprecht iets leert – alleen niet wat de zin suggereert.
+
+**"Analyseert" en "verwerkt" — over het algemeen veilig.** Deze beschrijven een actie die het systeem oprecht uitvoert op ingevoerde gegevens zonder enige specifieke verfijning of leergedrag te suggereren, wat ze nauwkeurig maakt voor een veel bredere reeks van daadwerkelijke implementaties, inclusief eenvoudigere op regels gebaseerde of single-pass AI-verwerking.
+
+**"Voorspelt" en "beveelt aan" — matige zorgvuldigheid.** Redelijk wanneer het systeem oprecht uitvoer produceert op basis van een analyse van de invoer, maar het is de moeite waard om te controleren dat het onderliggende mechanisme meer doet dan het toepassen van een vaste regel ongeacht de invoer – een statische aanbeveling is geen voorspelling in enige betekenisvolle zin, zelfs als het toevallig nuttig is.
+
+**"Automatisch" — controleer wat daadwerkelijk automatisch is.** Nauwkeurig wanneer een stap oprecht geen menselijke actie vereist; overdreven wanneer een mens de uitvoer nog steeds beoordeelt, goedkeurt of aanpast voordat deze van kracht wordt, zelfs als die menselijke stap snel of onzichtbaar voor de eindklant gebeurt.
+
+**"Intelligent" en "slim" — weinig informatie, laag risico, lage waarde.** Vaag genoeg dat ze zelden op zichzelf een specifieke, controleerbare claim vormen, wat ze vanuit een nalevingsoogpunt een laag risico maakt en tegelijkertijd een lage waarde vanuit een differentiëringsoogpunt – het waard om te vervangen door iets specifieks over wat het product daadwerkelijk doet, niet omdat de vage versie gevaarlijk is, maar omdat het niet veel zegt.
+
+**"Aangedreven door AI" — nauwkeurig maar onvolledig op zichzelf.** Technisch gezien waar voor vrijwel elk product dat ergens in zijn stack een AI-API raakt, wat precies is waarom het zo overgebruikt is dat het zijn beschrijvende waarde verliest – het koppelen aan een specifieke resultaatclaim ("aangedreven door AI om uw eerste reactie in seconden op te stellen") communiceert meer dan de frase alleen, terwijl het nauwkeurig blijft.
+
+Niets hiervan gaat over het vermijden van zelfverzekerde taal – zelfverzekerde, specifieke claims over echte resultaten zijn goede marketing en een goede praktijk. Het gaat om het herkennen dat bepaalde specifieke woorden een geïmpliceerde claim over een mechanisme met zich meedragen, of de oprichter die ze schrijft nu de bedoeling had om die claim te maken of niet, en het kiezen van taal die overeenkomt met wat het product daadwerkelijk en verifieerbaar onder de motorkap doet.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: marketingexemplaar dat het product eronder overtreft
+### Een AI-native oprichter in actie: marketingteksten die sneller liepen dan het product eronder
 
-Esmee, een voormalige klantenservicemanager die oprichter werd in Apeldoorn, bouwde KlantAssist, een AI-tool die suggesties voor reacties op klantenondersteuningstickets voor kleine e-commercebedrijven opstelt. Ze gebruikte Lovable, met marketingteksten die het product omschrijven als 'automatisch je merkstem leren naarmate je hem vaker gebruikt'.
+Esmee, een voormalig klantenservicemanager die oprichter werd in Apeldoorn, bouwde KlantAssist, een AI-tool die voorgestelde reacties opstellen op tickets voor de klantenservice van kleine e-commercebedrijven met behulp van Lovable, met marketingteksten die het product beschreven als "leert uw merkstem automatisch hoe meer u het gebruikt."
 
-In werkelijkheid gebruikte KlantAssist één enkele, statische promptsjabloon die op identieke wijze werd toegepast, ongeacht de gebruiksgeschiedenis – echt nuttig, maar niet het adaptieve leergedrag dat de marketingkopie specifiek impliceerde. Een potentiële klant, die het product nauwkeurig evalueerde voordat een groter contract werd gesloten, vroeg Esmee rechtstreeks hoe het leermechanisme werkte, en Esmee realiseerde zich halverwege het gesprek dat ze eigenlijk geen mechanisme kon beschrijven dat overeenkwam met haar eigen exemplaar.
+In werkelijkheid gebruikte KlantAssist een enkel, statisch prompt-sjabloon dat identiek werd toegepast ongeacht de gebruiksgeschiedenis – oprecht nuttig, maar niet het aanpasbare leergedrag dat de marketingteksten specifiek suggereerden. Een potentiële klant, die het product van dichtbij evalueerde voorafgaand aan een groter contract, vroeg Esmee rechtstreeks hoe het leermechanisme werkte, en Esmee realiseerde zich halverwege het gesprek dat ze een mechanisme dat overeenkwam met haar eigen tekst niet eens kon beschrijven.
 
-**Resultaat:** LaunchStudio hielp Esmee bij het herzien van de marketingtaal van KlantAssist om accuraat te beschrijven wat het product feitelijk deed (een goed afgestelde, consistente promptsjabloon die betrouwbare suggesties produceerde) terwijl afzonderlijk werd bepaald wat echte, op gebruik gebaseerde aanpassing feitelijk nodig zou hebben om te bouwen, waardoor Esmee de echte mogelijkheid kon implementeren of kon stoppen met het claimen ervan, in plaats van door te gaan met het beschrijven van iets dat niet gebeurde.
+**Resultaat:** LaunchStudio hielp Esmee om de marketingtaal van KlantAssist te herzien om nauwkeurig te beschrijven wat het product daadwerkelijk deed – een goed afgestemd, consistent prompt-sjabloon dat betrouwbare suggesties produceert – terwijl afzonderlijk werd afgebakend wat echte op gebruik gebaseerde aanpassing daadwerkelijk zou vereisen om te bouwen. Hierdoor kon Esmee ofwel de echte capaciteit implementeren ofwel stoppen met het te beweren, in plaats van te blijven beschrijven wat er nog niet gebeurde.
 
-> *"Ik had die zin geschreven omdat het klonk als wat een goed AI-product zou moeten doen, eerlijk gezegd zonder te controleren of het letterlijk waar was. Op het moment dat een serieuze potentiële klant me vroeg om het mechanisme uit te leggen, besefte ik dat ik dat niet kon, omdat het eigenlijk nog niet bestond."*
-> — **Esmee Kramer, Oprichter KlantAssist (Apeldoorn)**
+> *"Ik had die regel geschreven omdat het klonk als wat een goed AI-product zou moeten doen, eerlijk gezegd zonder te controleren of het letterlijk waar was. Het moment dat een serieuze potentiële klant me vroeg om het mechanisme uit te leggen, realiseerde ik me dat ik dat niet kon, omdat het er nog niet eens was."*
+> — **Esmee Kramer, Oprichter, KlantAssist (Apeldoorn)**
 
-**Kosten en tijdlijn:** € 550 (audit en revisie van marketingteksten) — voltooid in 2 werkdagen.
+**Kosten en tijdlijn:** € 550 (audit en herziening van marketingteksten) — voltooid in 2 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Is het oneerlijk om een ​​eenvoudige AI-integratie te beschrijven in indrukwekkender klinkende marketingtaal?
+### Is het oneerlijk om een eenvoudige AI-integratie te beschrijven in indrukwekkender klinkende marketingtaal?
 
-Het wordt vooral een echte zorg als de taal een mechanisme of mogelijkheid impliceert die het product eigenlijk niet heeft, in plaats van simpelweg de echte functionaliteit in toegankelijke termen te beschrijven. Het onderscheid is tussen nauwkeurig vereenvoudigen en iets onwaars impliceren.
+Het wordt specifiek een echte zorg wanneer de taal een mechanisme of capaciteit suggereert dat het product niet daadwerkelijk heeft, in plaats van simpelweg de echte functionaliteit in toegankelijke termen te beschrijven – het onderscheid is tussen nauwkeurig vereenvoudigen en iets onwaars suggereren.
 
-### Hoe zou een oprichter weten of zijn eigen marketingtekst is afgedwaald van wat het product feitelijk doet, vergelijkbaar met het geval van Esmee?
+### Hoe weet een oprichter of zijn eigen marketingteksten zijn afgedreven van wat het product daadwerkelijk doet, zoals in het geval van Esmee?
 
-Het lezen van elke specifieke AI-gerelateerde claim en de vraag of je het onderliggende mechanisme concreet kunt uitleggen aan een technisch sceptisch persoon is een directe zelfcontrole, die idealiter periodiek wordt uitgevoerd in plaats van slechts één keer bij het initiële copywriting.
+Het lezen van elke specifieke AI-gerelateerde claim en vragen of u het onderliggende mechanisme concreet zou kunnen uitleggen aan een technisch kritisch persoon is een directe zelfcontrole, bij voorkeur periodiek uitgevoerd en niet slechts eenmalig bij het eerste schrijven van de tekst.
 
-### Is deze zorg anders van toepassing op B2B-producten dan op consumentengerichte producten?
+### Geldt deze zorg anders voor B2B-producten vergeleken met consumentgerichte producten?
 
-Het onderliggende principe is hetzelfde, hoewel B2B-kopers, zoals in het geval van Esmee, eerder geneigd zijn om gedetailleerde technische vragen te stellen tijdens de evaluatie, wat betekent dat de kloof tussen claim en realiteit eerder en directer aan de oppervlakte komt in B2B-verkoopgesprekken dan bij typische aankoopbeslissingen van consumenten.
+Het onderliggende principe is hetzelfde, hoewel B2B-kopers, zoals in het geval van Esmee, waarschijnlijker gedetailleerde technische vragen stellen tijdens de evaluatie. Dit betekent dat de kloof tussen claim en werkelijkheid sneller en directer naar boven komt in B2B-verkoopgesprekken dan bij typische consumentenkoopbeslissingen.
 
-### Bestaat er een veilige, algemene manier om de capaciteiten van AI te beschrijven zonder het risico te lopen om te overdrijven?
+### Is er een veilige, algemene manier om AI-capaciteiten te beschrijven zonder het risico van overdrijven?
 
-Het specifiek beschrijven van wat het product voor de gebruiker doet (de uitkomst) in plaats van beweringen te doen over het onderliggende technische mechanisme, is over het algemeen veiliger, omdat uitkomstclaims gemakkelijker nauwkeurig te houden zijn en niet vereisen dat de kopie precies bijhoudt hoe de technologie zich in de loop van de tijd ontwikkelt.
+Het specifiek beschrijven van wat het product doet voor de gebruiker – het resultaat – in plaats van claims te maken over het onderliggende technische mechanisme, is over het algemeen veiliger. Dit komt omdat resultaatclaims makkelijker nauwkeurig te houden zijn en niet vereisen dat de tekst precies volgt hoe de technologie in de loop van de tijd evolueert.
 
-### Wat moet een oprichter doen als hij ontdekt dat zijn bestaande marketingkopie de daadwerkelijke mogelijkheden van zijn product heeft overschat, zoals Esmee deed?
+### Wat moet een oprichter doen als hij ontdekt dat zijn bestaande marketingteksten de daadwerkelijke capaciteit van zijn product hebben overdreven, zoals Esmee deed?
 
-Het corrigeren van de kopie om de huidige mogelijkheden accuraat weer te geven, en afzonderlijk beslissen of er wordt voortgebouwd op de oorspronkelijk geïmpliceerde capaciteit of dat we er simpelweg mee ophouden deze te claimen, zijn beide redelijke mogelijkheden. Het gaat er niet om dat de leemte onopgemerkt blijft als deze eenmaal specifiek is geïdentificeerd.
+Het corrigeren van de tekst om de huidige capaciteit nauwkeurig te weerspiegelen, en afzonderlijk beslissen of u naar de oorspronkelijk gesuggereerde capaciteit toe bouwt of simpelweg stopt met het te beweren, zijn beide redelijke paden – wat er toe doet is het niet onbehandeld laten van de kloof zodra deze specifiek is geïdentificeerd.
 
 <script type="application/ld+json">
 {
@@ -102,42 +121,42 @@ Het corrigeren van de kopie om de huidige mogelijkheden accuraat weer te geven, 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is it dishonest to describe a simple AI integration in impressive-sounding language?",
+      "name": "Is het oneerlijk om een eenvoudige AI-integratie indrukwekkend te beschrijven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It becomes a concern specifically when the language implies a mechanism or capability the product doesn't actually have."
+        "text": "Het wordt een zorg wanneer de taal een mechanisme suggereert dat het product niet daadwerkelijk heeft."
       }
     },
     {
       "@type": "Question",
-      "name": "How would a founder know if their marketing copy has drifted from what the product does?",
+      "name": "Hoe weet een oprichter of marketingteksten zijn afgedreven van de werkelijkheid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reading each AI-related claim and asking if you could concretely explain the underlying mechanism is a direct self-check."
+        "text": "Elke claim lezen en vragen of u het mechanisme concreet kunt uitleggen is een directe zelfcontrole."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this concern apply differently to B2B versus consumer-facing products?",
+      "name": "Geldt deze zorg anders voor B2B-producten vergeleken met consumentenproducten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Same underlying principle, though B2B buyers are more likely to ask detailed questions, surfacing the gap earlier."
+        "text": "Het principe is hetzelfde, hoewel B2B-kopers meer technische vragen stellen, wat de kloof sneller onthult."
       }
     },
     {
       "@type": "Question",
-      "name": "Is there a safe general way to describe AI capability without risking overstatement?",
+      "name": "Is er een veilige manier om AI-capaciteiten te beschrijven zonder overrijving?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Describing the outcome for the user rather than the underlying technical mechanism is generally safer and easier to keep accurate."
+        "text": "Het beschrijven van het resultaat voor de gebruiker in plaats van het mechanisme is veiliger en nauwkeuriger te houden."
       }
     },
     {
       "@type": "Question",
-      "name": "What should a founder do if they discover their marketing copy has overstated capability?",
+      "name": "Wat moet een oprichter doen als marketingteksten overdreven zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Correcting the copy and deciding whether to build toward the implied capability or stop claiming it are both reasonable paths."
+        "text": "Teksten corrigeren en beslissen of u de functie alsnog bouwt of stopt met het te beweren."
       }
     }
   ]

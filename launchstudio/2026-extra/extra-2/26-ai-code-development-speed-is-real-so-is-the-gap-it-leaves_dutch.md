@@ -1,73 +1,156 @@
 ---
-Titel: "AI-Codeontwikkelingssnelheid Is Echt. Dat Geldt Ook Voor Het Gat Dat Het Achterlaat"
+Titel: "AI-codeontwikkelingssnelheid is echt. Dat geldt ook voor de kloof die het achterlaat"
 Trefwoorden: ai code development, code of ai, ai coding, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo Founder / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
 
-# AI-Codeontwikkelingssnelheid Is Echt. Dat Geldt Ook Voor Het Gat Dat Het Achterlaat
+# AI-codeontwikkelingssnelheid is echt. Dat geldt ook voor de kloof die het achterlaat
 
-Snelle AI-codeontwikkeling heeft een oprecht echt, meetbaar voordeel — functies die vroeger dagen kostten kosten nu uren. Wat die snelheid niet automatisch omvat is een controle op precies welke onderliggende packages en bibliotheken erbij gehaald werden om die functies te laten werken, en of een ervan bekende, publiek gedocumenteerde beveiligingskwetsbaarheden draagt bij de specifieke gebruikte versies.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI-codeontwikkelingssnelheid is echt. Dat geldt ook voor de kloof die het achterlaat",
+  "description": "Een technische verdieping over waarom snelle AI-codeontwikkeling ongemerkt verouderde, kwetsbare afhankelijkheden kan binnenslepen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/ai-code-development-speed-is-real-so-is-the-gap-it-leaves"
+  }
+}
+</script>
 
-## Waarom Dependency-Keuzes Snel En Grotendeels Onzichtbaar Gebeuren
+Snelle AI-codeontwikkeling heeft een oprecht echt, meetbaar voordeel – functies die vroeger dagen kostten duren nu uren. Wat die snelheid niet automatisch omvat is een controle op exact welke onderliggende pakketten en bibliotheken zijn binnengehaald om die functies te laten werken. En of een daarvan bekende, openbaar gedocumenteerde beveiligingskwetsbaarheden draagt op de specifieke versies die gebruikt worden.
 
-Snel een functie bouwen met een AI-codeertool betekent vaak dat de tool selecteert en installeert welke bibliotheek de beschreven taak het beste volbrengt, en een founder die de resulterende functie reviewt richt zich natuurlijk op of de functie werkt, niet op het auditeren van het specifieke versienummer van elk package dat er onderweg bij gehaald werd.
+## Waarom keuzes voor afhankelijkheden snel en meestal onzichtbaar plaatsvinden
 
-## Waarom Packageversies Meer Ertoe Doen Dan Ze Lijken
+Het snel bouwen van een functie met een AI-coderingsassistent betekent vaak dat de tool kiest en installeert welke bibliotheek het beste de beschreven taak volbrengt. Een oprichter die de resulterende functie beoordeelt richt zich van nature op het feit of de functie werkt, en niet op het auditeren van het specifieke versienummer van elk pakket dat onderweg binnengehaald werd. Een enkele nieuwe functie kan gemakkelijk een handvol nieuwe afhankelijkheden tegelijk binnenslepen, die elk hun eigen kleinere afhankelijkheden meebrengen. Een modern project kan zo eindigen met honderden totale pakketten geïnstalleerd na slechts een paar weken van actieve ontwikkeling. De overweldigende meerderheid daarvan heeft niemand die betrokken is bij het bouwen van het product ooit bewust gekozen of individueel beoordeeld.
 
-Softwarebibliotheken hebben af en toe publiek bekendgemaakte beveiligingskwetsbaarheden die na verloop van tijd ontdekt en gepatcht worden — een bekende, actief onderhouden bibliotheek is niet inherent onveilig, maar een specifieke verouderde versie ervan kan een specifieke, gedocumenteerde fout dragen die al gefixt was in een nieuwere release waar het project simpelweg nooit naar bijgewerkt werd.
+## Waarom pakketversies meer uitmaken dan ze lijken te doen
 
-## Waarom "Het Is Een Populaire, Vertrouwde Bibliotheek" Dit Niet Uitsluit
+Softwarebibliotheken hebben af en toe openbaar bekendgemaakte beveiligingskwetsbaarheden die in de loop van de tijd worden ontdekt en hersteld. Een welbekende, actief onderhouden bibliotheek is niet inherent onveilig, maar een specifieke verouderde versie ervan kan een specifieke, gedocumenteerde fout dragen die al werd hersteld in een nieuwere versie waarnaar het project simpelweg nooit is bijgewerkt.
 
-De algemene reputatie van een bibliotheek voor kwaliteit beschermt niet tegen een specifieke verouderde versie met een gedocumenteerde kwetsbaarheid — vertrouwen in de bibliotheek als project en veiligheid van de specifieke momenteel geïnstalleerde versie zijn twee verschillende vragen, en AI-gegenereerde code die "de standaardbibliotheek voor X" erbij haalt zonder te pinnen of later bij te werken naar een gepatchte versie kan precies dit gat dragen ongeacht hoe goed die bibliotheek algemeen aangeschreven staat.
+## Waarom "het is een populaire, vertrouwde bibliotheek" dit niet uitsluit
 
-## Waarom Dit Gat De Neiging Heeft Zich Stilletjes Op Te Stapelen Na Verloop Van Tijd
+De algehele reputatie van een bibliotheek voor kwaliteit beschermt niet tegen een specifieke verouderde versie die een gedocumenteerde kwetsbaarheid heeft. Vertrouwen in de bibliotheek als project en veiligheid van de specifieke versie die momenteel geïnstalleerd is zijn twee verschillende vragen. AI-gegenereerde code die "de standaardbibliotheek voor X" binnenhaalt zonder vast te pinnen of later bij te werken naar een herstelde versie kan exact deze kloof dragen, ongeacht hoe goed aangeschreven die bibliotheek in het algemeen is.
 
-Een project dat begint met redelijk actuele dependencies kan verder uit datum drijven hoe langer het gaat zonder een doelbewuste updatepass, aangezien niets aan gewone functieontwikkeling natuurlijk al-werkende dependencies herbezoekt — elke extra maand zonder review is extra tijd voor nieuw bekendgemaakte kwetsbaarheden om te accumuleren tegen versies die prima waren toen ze eerst geïnstalleerd werden maar dat nu niet meer zijn.
+Veelgebruikte bibliotheken zijn, als er iets is, aantrekkelijkere doelwitten voor onderzoekers die kwetsbaarheden verantwoord willen bekendmaken, precies omdat zoveel projecten ervan afhankelijk zijn. Dit betekent dat populariteit in de loop van de tijd correleert met meer controle en meer bekendgemaakte kwetsbaarheden, en niet minder. Dit is een gezond teken voor het algehele onderhoud van de bibliotheek, maar geen reden om aan te nemen dat de specifieke versie in uw project automatisch actueel is.
 
-## Wat Een Correcte Dependency-Audit Daadwerkelijk Omvat
+## Waarom deze kloof zich in de loop van de tijd stilletjes opbouwt
 
-Een grondige audit scant de volledige dependency-boom van een project tegen bekende kwetsbaarheidsdatabases, identificeert welke specifieke packages daadwerkelijk toepasselijk risico dragen (in plaats van elk mogelijk theoretisch probleem te markeren), en werkt die specifiek bij of patcht ze zonder onnodig dependencies aan te raken die al veilig zijn. [LaunchStudio](https://launchstudio.eu/en/) voert precies dit soort dependency-audit uit als onderdeel van zijn productiegereedheidsproces, gesteund door Manifera's 11+ jaar ervaring met het onderhouden van productie-dependencyhygiëne over Node.js-, Python-, en .NET-projecten.
+Een project dat begint met redelijk actuele afhankelijkheden kan verder verouderd raken hoe langer het gaat zonder een bewuste update-stap. Niets aan gewone functieontwikkeling keert namelijk van nature terug naar al werkende afhankelijkheden. Elke aanvullende maand zonder beoordeling is extra tijd voor nieuw bekendgemaakte kwetsbaarheden om zich op te hopen tegen versies die prima waren toen ze voor het eerst geïnstalleerd werden, maar dat niet meer zijn.
 
-Manifera's dependency-audits worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, met klantscopinggesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
+## Wat een correcte audit van afhankelijkheden daadwerkelijk omvat
 
-[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+Een grondige audit scant de volledige afhankelijkheidsboom van een project tegen bekende kwetsbaarheidsdatabases, identificeert welke specifieke pakketten daadwerkelijk, toepasselijk risico dragen, en werkt die specifiek bij zonder onnodig afhankelijkheden aan te raken die al veilig zijn. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort audit van afhankelijkheden uit als onderdeel van haar proces voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het onderhouden van productie-afhankelijkheidshygiëne over Node.js, Python, en .NET projecten.
+
+Manifera's afhankelijkheidsaudits worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de bibliotheek die niemand had bijgewerkt sinds lancering
+### Een AI-native oprichter in actie: De bibliotheek die niemand had bijgewerkt sinds de lancering
 
-Vera, een Nederlandse founder gevestigd in Luxemburg-Stad die onafhankelijke muzikanten over de EU bedient, bouwde RechtenRegel, een AI-geassisteerd muzieklicentie- en rechtentrackingplatform gebouwd met Bolt, dat gevoelige contractdocumenten en royaltyberekeningen voor zijn gebruikers afhandelde.
+Vera, een Nederlandse oprichtster gevestigd in Luxemburg-Stad die onafhankelijke muzikanten door de EU bedient, bouwde RechtenRegel, een AI-ondersteund platform voor muzieklicenties en het volgen van rechten gebouwd met Bolt, dat gevoelige contractdocumenten en royaltyberekeningen voor zijn gebruikers afhandelt.
 
-Voorafgaand aan een potentieel integratiepartnerschap draaide het technische due-diligenceproces van een partner een geautomatiseerde dependencyscan tegen RechtenRegels codebase en markeerde een specifieke verouderde bibliotheekversie met een publiek bekendgemaakte, actief geëxploiteerde kwetsbaarheid, nog steeds in gebruik bijna een jaar nadat de kwetsbaarheid upstream gepatcht was. LaunchStudio's vervolgreview bevestigde dat de dependency nooit bijgewerkt was sinds de initiële build van het platform.
+Voorafgaand aan een mogelijke integratiepartnering voerde het technische due-diligence proces van een partner een geautomatiseerde scan van afhankelijkheden uit tegen RechtenRegel's codebase. Het markeerde een specifieke verouderde bibliotheekversie met een openbaar bekendgemaakte, actief misbruikte kwetsbaarheid, die bijna een jaar nadat de kwetsbaarheid stroomopwaarts was hersteld nog steeds in gebruik was. LaunchStudio's vervolgbeoordeling bevestigde dat de afhankelijkheid sinds de initiële bouw van het platform nooit was bijgewerkt.
 
-**Resultaat:** LaunchStudio werkte de getroffen dependency bij en auditeerde de rest van RechtenRegels dependency-boom op vergelijkbaar verouderde packages, en dicht het gat voordat het due-diligenceproces van het partnerschap afgerond werd, zonder wijzigingen aan RechtenRegels daadwerkelijke functieset vereist.
+**Resultaat:** LaunchStudio werkte de getroffen afhankelijkheid bij en auditeerde de rest van RechtenRegel's afhankelijkheidsboom op vergelijkbaar verouderde pakketten. Dit sloot de kloof voordat het due-diligence proces van de partner werd afgerond, zonder dat er wijzigingen vereist waren aan RechtenRegel's daadwerkelijke functieset.
 
-> *"We hadden bijna een jaar functies gebouwd en opgeleverd bovenop die bibliotheek zonder één gedachte aan of de versie zelf nog veilig was. Het werkte gewoon, dus niemand had ooit een reden om er nog eens naar te kijken."*
-> — **Vera Hoffmann, Founder, RechtenRegel (Luxemburg-Stad)**
+> *"We hadden bijna een jaar lang functies gebouwd en verzonden bovenop die bibliotheek zonder een enkele gedachte over of de versie zelf nog steeds veilig was. Het werkte gewoon, dus niemand had ooit een reden om er opnieuw naar te kijken."*
+> — **Vera Hoffmann, Oprichter, RechtenRegel (Luxemburg-Stad)**
 
-**Kosten & tijdlijn:** €2.400 (dependencykwetsbaarheidsaudit en herstel) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.400 (audit en herstel van kwetsbaarheden in afhankelijkheden) — voltooid in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een DevOps-engineer dependencyscannen een routinematige, automatiseerbare taak beschouwen, of iets dat oordeel vereist?
+### Zou een DevOps-ingenieur het scannen van afhankelijkheden beschouwen als een routineuze taak of een taak die oordeel vereist?
 
-Beide — geautomatiseerde scantools kunnen bekende kwetsbaarheden betrouwbaar markeren, maar oordeel is nog steeds nodig om te prioriteren welke gemarkeerde problemen daadwerkelijk exploiteerbaar zijn in de specifieke context van jouw applicatie versus theoretisch, en om updates veilig toe te passen zonder bestaande functionaliteit te breken die afhangt van het gedrag van de oudere versie.
+Beide – geautomatiseerde tools kunnen bekende kwetsbaarheden betrouwbaar markeren, maar er is nog steeds oordeel nodig om te prioriteren welke gemarkeerde problemen daadwerkelijk misbruikbaar zijn in uw specifieke context.
 
-### Is dit soort gat uniek voor AI-gegenereerde code, of raakt het traditioneel handgeschreven projecten gelijkelijk?
+### Is dit soort kloof uniek voor met AI gegenereerde code?
 
-Het raakt elke codebase die niet regelmatig geauditeerd wordt, ongeacht hoe de originele code geschreven werd — het specifieke risico met AI-geassisteerde ontwikkeling gaat meer om hoeveel sneller nieuwe dependencies erbij gehaald worden zonder dat een founder er noodzakelijk elke bijhoudt, niet dat AI-gegenereerde code inherent slechter is in dependency-selectie.
+Nee, het beïnvloedt elke codebase die niet regelmatig wordt geauditeerd. Het specifieke risico bij AI-ondersteunde ontwikkeling gaat meer over hoe snel nieuwe afhankelijkheden binnengehaald worden zonder dat een oprichter ze bijhoudt.
 
-### Helpt Manifera's bredere engineeringervaring over frameworks specifiek met dependency-audits zoals die van RechtenRegel?
+### Maakt bredere ervaring met meerdere frameworks uit voor audits van afhankelijkheden?
 
-Ja, aangezien dependency-kwetsbaarheidspatronen en herstelaanpakken verschillen over de Node.js-, Python-, en .NET-ecosystemen specifiek, en engineers hebben die bekend zijn met de eigen tooling en conventies van elk ecosysteem maakt het auditproces aanzienlijk sneller en preciezer dan een generalistische aanpak.
+Ja, aangezien patronen van kwetsbaarheden in afhankelijkheden en herstelaanpakken verschillen over de Node.js, Python, en .NET ecosystemen.
 
-### CEO Herre Roelevink heeft de doorlopende aard van beveiligingswerk benadrukt in plaats van een eenmalige fix — geldt dat specifiek voor dependencybeheer?
+### Is beveiligingswerk aan afhankelijkheden een eenmalige herstelling of een doorlopend proces?
 
-Direct — dependencykwetsbaarheden worden continu bekendgemaakt na verloop van tijd tegen packages die perfect veilig waren toen ze eerst geïnstalleerd werden, wat precies het soort doorlopende, in plaats van eenmalige, beveiligingsoverweging is waar Roelevinks bredere filosofie voor LaunchStudio's Launch & Grow-pakket op gebouwd is.
+Rechtstreeks doorlopend – kwetsbaarheden in afhankelijkheden worden voortdurend bekendgemaakt tegen pakketten die volkomen veilig waren toen ze voor het eerst geïnstalleerd werden.
 
-### Zou een founder zelf regelmatig dependencyscans moeten draaien, of is dit iets om volledig uit te besteden?
+### Hoe vaak zou een audit van afhankelijkheden daadwerkelijk moeten plaatsvinden voor een actief product?
 
-Veel moderne ontwikkelplatformen omvatten ingebouwde, geautomatiseerde dependencyscanning die een founder met minimale setup kan inschakelen, wat een redelijke eerste verdedigingslinie is — hoewel het interpreteren van de resultaten en het veilig toepassen van de juiste updates zonder functionaliteit te breken doorgaans is waar een toegewijde technische review de meeste waarde toevoegt.
+Bij voorkeur op een terugkerende maandelijkse of kwartaalbasis als een routineuze onderhoudscontrole.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Scan dependency là công việc tự động hay cần chuyên gia đánh giá?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cả hai — công cụ quét tự động tìm được lỗi công khai, nhưng cần chuyên gia đánh giá mức độ ảnh hưởng thực tế đến app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Rủi ro từ dependency cũ có chỉ xảy ra với code do AI viết không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, mọi dự án không được bảo trì đều bị, nhưng AI làm tăng tốc độ kéo thư viện mới vào mà founder không hề hay biết."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thư viện nổi tiếng và phổ biến có đảm bảo an toàn tuyệt đối không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, thư viện càng nổi tiếng càng bị soi kỹ và dễ lộ lỗ hổng ở các phiên bản cũ chưa nâng cấp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bao lâu nên thực hiện kiểm tra và nâng cấp dependency một lần?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nên duy trì thói quen kiểm tra định kỳ hàng tháng hoặc hàng quý để cập nhật các bản vá bảo mật mới nhất."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Founder có nên tự chạy scan dependency không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có thể dùng các công cụ scan tự động có sẵn trên GitHub/Vercel làm lớp bảo vệ đầu tiên, sau đó nhờ tư vấn khi có cảnh báo nghiêm trọng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cập nhật thư viện bị lỗi bảo mật có làm gãy tính năng đang chạy không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có thể nếu bản vá chứa breaking changes, đó là lý do cần test kỹ lưỡng luồng nghiệp vụ sau khi update."
+      }
+    }
+  ]
+}
+</script>

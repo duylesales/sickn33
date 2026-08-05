@@ -1,17 +1,18 @@
 ---
-Titel: "Voice AI-producten: waarom transcriptiefouten een veiligheidsvraag zijn"
+Titel: "Spraak-AI-producten: Waarom transcriptiefouten een beveiligingsvraagstuk zijn"
 Trefwoorden: ai native, ai secure, ai data security, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische Solo Oprichter / Indie Hacker
 ---
-# Voice AI-producten: waarom transcriptiefouten een veiligheidsvraag zijn
+
+# Spraak-AI-producten: Waarom transcriptiefouten een beveiligingsvraagstuk zijn
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Voice AI-producten: waarom transcriptiefouten een veiligheidsvraag zijn",
-  "description": "Oprichters die spraak-AI-producten bouwen, beschouwen transcriptienauwkeurigheid als een kwaliteitsmaatstaf. Een specifieke blik op waarom een \u200b\u200btranscriptiefout in bepaalde contexten ook een beveiligings- en autorisatieprobleem is, en niet alleen een UX-imperfectie.",
+  "headline": "Spraak-AI-producten: Waarom transcriptiefouten een beveiligingsvraagstuk zijn",
+  "description": "Oprichters die spraak-AI-producten bouwen behandelen transcriptienauwkeurigheid als een kwaliteitsstatistiek. Een blik op waarom een transcriptiefout ook een autorisatieprobleem is.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,70 +31,84 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-De nauwkeurigheid van de transcriptie van een spraak-AI-product wordt meestal bijgehouden als een kwaliteitsmaatstaf: hoe vaak begrijpt het systeem correct wat iemand daadwerkelijk heeft gezegd. In producten waarbij de getranscribeerde tekst vervolgens een actie activeert, en niet slechts een weergave, is een transcriptiefout niet langer louter een kwaliteitsprobleem, maar eerder een veiligheids- en autorisatievraag, aangezien het systeem nu handelt op basis van een potentieel onjuiste interpretatie van wat een gebruiker feitelijk bedoelde.
+De transcriptienauwkeurigheid van een spraak-AI-product wordt meestal bijgehouden als een kwaliteitsstatistiek – hoe vaak begrijpt het systeem correct wat iemand daadwerkelijk heeft gezegd. In producten waar de getranscribeerde tekst vervolgens een actie activeert, en niet alleen een weergave, houdt een transcriptiefout op een puur kwaliteitsprobleem te zijn en wordt het iets wat dichter bij een beveiligings- en autorisatievraagstuk ligt. Het systeem handelt immers op basis van een potentieel onjuiste interpretatie van wat een gebruiker daadwerkelijk heeft bedoeld.
 
-## Waarom dit onderscheid specifiek van belang is voor stemproducten die tot actie leiden
+## Waarom dit onderscheid specifiek uitmaakt voor actie-activerende spraakproducten
 
-Een app voor het maken van spraaknotities die een woord verkeerd transcribeert, produceert een vervelende, corrigeerbare fout die de gebruiker eenvoudig kan herstellen. Een voice AI-product dat een gesproken opdracht transcribeert en vervolgens een actie uitvoert op basis van die transcriptie – een betaling bevestigen, een boeking annuleren, een record bijwerken – verandert dezelfde categorie fouten in iets met een reëel gevolg dat verder gaat dan ergernis, omdat het systeem nu op de verkeerde instructie heeft gehandeld, mogelijk zonder dat de gebruiker zich onmiddellijk realiseerde wat er is gebeurd.
+Een app voor spraaknotities die een woord verkeerd transcribeert produceert een irritante, corrigeerbare fout die de gebruiker simpelweg kan herstellen. Een spraak-AI-product dat een gesproken commando transcribeert en vervolgens een actie uitvoert op basis van die transcriptie – een betaling bevestigen, een boeking annuleren, een record bijwerken – veranderd dezelfde categorie fout in iets met een echte consequentie die verder gaat dan irritatie. Het systeem heeft nu immers gehandeld op de verkeerde instructie, mogelijk zonder dat de gebruiker zich onmiddellijk realiseert wat er is gebeurd.
 
-## Waar dit specifiek als risico naar voren komt
+## Waar dit zich specifiek als risico manifesteert
 
-**Misinterpretatie van numerieke woorden en bevestigingswoorden in transactionele contexten.** Getallen en korte bevestigingswoorden ("ja", "bevestigen", "annuleren") zijn precies het soort korte, gemakkelijk verkeerd te verstaan ​​invoertranscriptiesystemen die gevoeliger zijn voor fouten, en precies het soort invoer dat, in een transactioneel spraakproduct, direct een vervolgactie teweegbrengt als het verkeerd wordt geïnterpreteerd.
+**Verkeerde interpretatie van getallen en bevestigingswoorden in een zakelijke context.** Getallen en korte bevestigingswoorden ("ja", "bevestigen", "annuleren") zijn exact het soort korte, gemakkelijk verkeerd verstane invoer waarop transcriptiesystemen gevoeliger zijn voor fouten, en exact het soort invoer dat in een transactioneel spraakproduct rechtstreeks een ingrijpende actie activeert bij een verkeerde interpretatie.
 
-**Achtergrondruis of overspraak wordt getranscribeerd als de bedoeling van de gebruiker.** Een stemproduct dat in echt luidruchtige omgevingen werkt (wat veel gebruiksgevallen van spraakproducten in de echte wereld met zich meebrengen) loopt het risico dat omgevingsspraak of -ruis wordt getranscribeerd als een daadwerkelijke instructie, een foutmodus die aanzienlijk meer gevolgen heeft voor een product dat actie activeert dan voor een passieve transcriptietool.
+**Achtergrondruis of stemmen op de achtergrond die worden getranscribeerd als intentie van de gebruiker.** Een spraakproduct dat werkt in oprecht rumoerige omgevingen – wat veel praktijktoepassingen van spraakproducten omvat – loopt het risico om omgevingsspraak of ruis te transcriberen als een daadwerkelijke instructie. Dit is een faalmodus die aanzienlijk ingrijpender is voor een actie-activerend product dan voor een passieve transcriptietool.
 
-**Geen bevestigingsstap voordat vervolgacties worden uitgevoerd.** De meest directe beperking – waarbij expliciete bevestiging vereist is voordat vervolgacties worden uitgevoerd op basis van steminvoer – wordt soms overgeslagen in naam van een soepelere, snellere gebruikerservaring, waarbij een betekenisvolle veiligheidscontrole wordt ingeruild voor marginale gemakswinsten.
+**Geen bevestigingsstap voordat ingrijpende acties worden uitgevoerd.** De meest directe beperking – het vereisen van een expliciete bevestiging voordat een ingrijpende actie wordt uitgevoerd op basis van spraakinvoer – wordt soms overgeslagen in het belang van een soepelere, snellere gebruikerservaring, waarbij een betekenisvolle veiligheidscontrole wordt ingeruild voor marginale gemakswinst.
 
-## Waarom AI-gegenereerde spraakproducten hier specifiek onder lijden
+## Waarom AI-gegenereerde spraakproducten dit specifiek onderschatten
 
-Een prompt die beschrijft "laat gebruikers orders met stem bevestigen" wordt bevredigd door code die spraak transcribeert en vergelijkt met verwachte bevestigingszinnen - functioneel correct en demo-ready, zonder natuurlijke instructies die de AI-tool ertoe aanzetten om specifiek het soort veiligheidsmarge voor bevestiging vóór actie in te bouwen dat dit artikel beschrijft, omdat die veiligheidsoverweging vereist dat je het verschil begrijpt tussen passieve transcriptie en actieve, consequente uitvoering.
+Een prompt die beschrijft "laat gebruikers bestellingen via spraak bevestigen" wordt vervuld door code die spraak transcribeert en koppelt aan verwachte bevestigingszinnen – functioneel correct en klaar voor een demo, zonder natuurlijke instructies die de AI-tool aansporen om specifiek de veiligheidsmarge van bevestiging-voor-actie in te bouwen die dit artikel beschrijft. Die veiligheidsoverweging vereist namelijk inzicht in het verschil tussen passieve transcriptie en actieve, ingrijpende uitvoering.
 
-## Hoe een redelijke veiligheidsmarge er eigenlijk uitziet
+## Hoe een redelijke veiligheidsmarge er daadwerkelijk uitziet
 
-Voor elke stemgestuurde actie met reële gevolgen kan een korte, expliciete bevestigingsstap – het teruglezen van de geïnterpreteerde instructie en het vereisen van een duidelijke, weloverwogen bevestiging vóór uitvoering – het grootste deel van deze kloof dichten, tegen een bescheiden prijs voor de interactiesnelheid die bijna altijd de moeite waard is om te ruilen voor de vermindering van het daaruit voortvloeiende risico op verkeerde interpretaties.
+Voor elke via spraak geactiveerde actie met een echte consequentie sluit een korte, expliciete bevestigingsstap – het herhalen van de geïnterpreteerde instructie en het vereisen van een duidelijke, bewuste bevestiging voor de uitvoering – het grootste deel van deze kloof. Dit gebeurt tegen bescheiden kosten voor de interactiesnelheid die vrijwel altijd de moeite waard zijn om in te ruilen voor de vermindering van het risico op ingrijpende verkeerde interpretaties.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt stemgestuurde AI-producten specifiek voor dit risico van transcriptie naar actie, waarbij passieve transcriptiekenmerken worden onderscheiden van daaruit voortvloeiende, actie-triggerende kenmerken en passende bevestigingswaarborgen worden toegepast op de laatste, ondersteund door Manifera's bredere technische discipline bij het behandelen van invoervalidatie als een veiligheidsoverweging, en niet alleen als een kwaliteitsoverweging.
+[LaunchStudio](https://launchstudio.eu/en/) beoordeelt spraakgestuurde AI-producten specifiek op dit risico van transcriptie naar actie. Wij maken onderscheid tussen passieve transcriptiefuncties en ingrijpende, actie-activerende functies en passen gepaste bevestigingswaarborgen toe op de laatste, ondersteund door Manifera's bredere engineeringdiscipline in het behandelen van invoervalidatie als een beveiligingsoverweging, en niet alleen als een kwaliteitskwestie.
 
-[Laat uw stemproduct beoordelen op gevallen waarin een verkeerd verstaan ​​woord een echt probleem wordt](https://launchstudio.eu/en/#calculator) — transcriptienauwkeurigheid en actieveiligheid zijn verwante, maar wezenlijk verschillende vragen.
+[Laat uw spraakproduct beoordelen op plekken waar een verkeerd verstaan woord een echt probleem wordt](https://launchstudio.eu/en/#calculator) — transcriptienauwkeurigheid en actieve veiligheid zijn gerelateerde maar oprecht verschillende vragen.
+
+## Een test-controlelijst voor spraakproducten voorbij de stille kamer
+
+Het meeste testen van spraak-AI gebeurt op de manier waarop Wouter dat aanvankelijk deed – in een stille kamer, met duidelijke spraak, door iemand die al weet wat hij gaat zeggen. Die omgeving levert betrouwbaar een werkende demo op en faalt betrouwbaar in het naar boven brengen van de omstandigheden die echt gebruik daadwerkelijk omvat. Een bewuste testronde tegen een specifieke reeks van verslechterde omstandigheden vangt op wat testen in een stille kamer structureel niet kan.
+
+1. **Test met realistische achtergrondruis voor uw daadwerkelijke toepassing.** Een product voor telefonisch bestellen moet worden getest met het soort omgevingsruis dat een echte belomgeving omvat – verkeer, andere gesprekken, een televisie op de achtergrond – en niet in stilte, aangezien ruisvrije testen de faalmodus van dubbelzinnige invoer waar dit artikel over gaat simpelweg nooit tegenkomt.
+2. **Test met spraak die halverwege de zin veranderd, en niet alleen met schone, volledige instructies.** Echte gebruikers corrigeren zichzelf, aarzelen en herstarten zinnen voortdurend – een testset die volledig is gebouwd uit schone, volledige, vooraf geplande instructies mist exact het soort zelfcorrectie dat het stilletjes laten vallen van de bestelling bij Wouter veroorzaakte.
+3. **Test met een reeks accenten en spraakpatronen voorbij die van de oprichter zelf.** Een transcriptiesysteem dat voornamelijk is afgesteld of getest tegen één spraakpatroon, vaak dat van de oprichter zelf tijdens de ontwikkeling, kan aanzienlijk slechter presteren tegen echte gebruikers wier spraakpatronen verschillen – een nauwkeurigheidskloof die specifiek het controleren waard is in plaats van aan te nemen dat het wel meevalt.
+4. **Test met verslechterde audiokwaliteit, en niet alleen met een schone microfooninvoer.** Compressie op de telefoonlijn, een slechte verbinding of een microfoon van mindere kwaliteit op het apparaat verslechteren de transcriptienauwkeurigheid op manieren die de eigen testopstelling van de oprichter met hoge kwaliteit nooit tegenkomt, en zijn gebruikelijke omstandigheden voor echte spraakproducten op telefoon of mobiel.
+5. **Test stilte en het uitblijven van antwoord expliciet, en niet alleen verkeerde antwoorden.** Wat er gebeurt wanneer een gebruiker simpelweg niet reageert, of reageert met iets dat het systeem niet kan ontleden in een van de verwachte opties, doet er evenzeer toe als wat er gebeurt bij een duidelijk verkeerd antwoord – een kloof hier betekent vaak dat het systeem vervalt in een aanname in plaats van oprecht opnieuw te vragen.
+6. **Houd een logboek bij van wat er tijdens het testen is gemarkeerd en wat er als gevolg daarvan is veranderd.** Voorbij het eenmalig uitvoeren van de test geeft het bijhouden van zelfs een informeel logboek van specifieke dubbelzinnige gevallen en hoe de bevestigingsstroom in reactie daarop is aangepast een oprichter later iets concrets om naar te wijzen, in plaats van een algemeen gevoel dat "we het onder rumoerige omstandigheden hebben getest".
+7. **Werf testers die niet de oprichter zijn, bij voorkeur mensen die niet bekend zijn met het exacte script.** Een oprichter die zijn eigen product test kent de verwachte stroom al en spreekt onbewust duidelijk in die richting; iemand die de stroom voor het eerst tegenkomt, zonder exact te weten welk antwoord het systeem verwacht, produceert veel realistischere dubbelzinnigheid dan de eigen goed gerepeteerde testgesprekken van een oprichter ooit zullen doen.
+
+Het bewust doorlopen van zelfs een deel van deze lijst voor de lancering brengt de categorie van falen die dit artikel beschrijft veel betrouwbaarder naar boven dan voortgezet testen onder dezelfde schone omstandigheden waaronder een product oorspronkelijk is gebouwd en gedemonstreerd. Omstandigheden die, zoals de zaak van Wouter aantoont, grondig getest kunnen voelen terwijl ze de specifieke storing die er toe deed nooit daadwerkelijk zijn tegengekomen. Geen van deze zeven controles vereist gespecialiseerde apparatuur of een formeel lab voor gebruiksvriendelijkheid; een handvol echte telefoontjes, bewust geplaatst onder imperfecte omstandigheden door iemand anders dan de oprichter, doet het meeste werk.
 
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: een verkeerd gehoord "Nee" dat hoe dan ook een bestelling bevestigde
+### Een AI-native oprichter in actie: Een verkeerd verstaan "nee" dat toch een bestelling bevestigde
 
-Wouter, een voormalige callcentermanager die oprichter werd in Tilburg, bouwde BelBestel, een AI-tool voor gesproken bestellingen voor kleine lokale voedingsbedrijven waarmee klanten bestellingen volledig telefonisch kunnen plaatsen met behulp van Cursor, waarbij de orderbevestiging wordt afgehandeld door het door de klant gesproken 'ja' of 'nee'-antwoord te transcriberen naar een definitief besteloverzicht.
+Wouter, een voormalig callcentermanager die oprichter werd in Tilburg, bouwde BelBestel, een AI-spraakbestel-tool voor kleine lokale voedselbedrijven waarmee klanten bestellingen volledig telefonisch kunnen plaatsen met behulp van Cursor, waarbij de bestelbevestiging werd afgehandeld door het transcriberen van de gesproken "ja" of "nee" reactie van de klant op een uiteindelijke bestelsamenvatting.
 
-In een testoproep met veel achtergrondgeluid werd het 'nee, wacht' van een klant - met de bedoeling zijn bestelling te annuleren en te wijzigen - eenvoudigweg getranscribeerd als 'nee', gevolgd door onverstaanbare ruis, die de logica van BelBestel, die een binair ja/nee-antwoord verwachtte, interpreteerde als een afwijzing gevolgd door geen verdere actie, waarbij stilletjes de daadwerkelijke, gecorrigeerde bestelling van de klant werd stopgezet in plaats van de wijziging te verwerken die de klant eigenlijk had bedoeld.
+In een testgesprek met veel achtergrondruis werd de "nee, wacht" van een klant – bedoeld om te annuleren en zijn bestelling te wijzigen – getranscribeerd als simpelweg "nee" gevolgd door onverstaanbare ruis. De logica van BelBestel, die een binaire ja/nee-reactie verwachtte, interpreteerde dit als een weigering gevolgd door geen verdere actie. Hierdoor werd de daadwerkelijke, gecorrigeerde bestelling van de klant stilletjes gelaten voor wat het was in plaats van de wijziging te verwerken die de klant daadwerkelijk had bedoeld.
 
-**Resultaat:** LaunchStudio heeft de bevestigingsstroom van BelBestel opnieuw ontworpen om de geïnterpreteerde volgorde expliciet terug te lezen en een ondubbelzinnige, herhaalde bevestiging te vereisen voordat deze wordt afgerond, samen met fallback-logica die specifiek dubbelzinnige of gedeeltelijke reacties verwerkt door een verhelderende follow-up te vragen in plaats van stilzwijgend terug te vallen op een veronderstelde interpretatie.
+**Resultaat:** LaunchStudio ontwierp de bevestigingsstroom van BelBestel opnieuw om de geïnterpreteerde bestelling expliciet te herhalen en een ondubbelzinnige, herhaalde bevestiging te vereisen voor de afronding, samen met terugvallogica die dubbelzinnige of gedeeltelijke reacties specifiek afhandelt door een ophelderende vervolgvraag te stellen in plaats van stilletjes te vervallen in een aangenomen interpretatie.
 
-> *"De binaire ja-nee-logica werkte prima bij mijn eigen tests in stille ruimtes. Er was een echt, enigszins luidruchtig telefoontje nodig met iemand die halverwege de zin probeerde de volgorde te corrigeren om te onthullen dat dubbelzinnige spraak stilzwijgend werd weggelaten in plaats van daadwerkelijk te worden opgehelderd."*
-> — **Wouter Peeters, oprichter, BelBestel (Tilburg)**
+> *"De binaire ja-nee logica werkte geweldig in mijn eigen testen in een stille kamer. Er was een echt, licht rumoerig telefoongesprek voor nodig met iemand die zijn bestelling halverwege de zin probeerde te corrigeren om te onthullen dat dubbelzinnige spraak simpelweg stilletjes werd laten vallen in plaats van daadwerkelijk te worden opgehelderd."*
+> — **Wouter Peeters, Oprichter, BelBestel (Tilburg)**
 
-**Kosten en tijdlijn:** € 1.400 (herontwerp van stembevestigingsproces) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (herontwerp van spraakbevestigingsstroom) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Heeft elke stem-AI-functie een expliciete bevestigingsstap nodig, zelfs voor acties met een lage inzet?
+### Heeft elke spraak-AI-functie een expliciete bevestigingsstap nodig, zelfs voor functies met een lage inzet?
 
-Niet universeel: de richtlijnen schalen met consequenties, dus een actie met een lage inzet, zoals het via stem aanpassen van weergavevoorkeuren, garandeert minder wrijving dan een transactionele actie zoals het bevestigen van een betaling of het annuleren van een boeking.
+Niet universeel – de richtlijn schaalt met de consequenties, dus een actie met een lage inzet zoals het aanpassen van weergavevoorkeuren via spraak rechtvaardigt minder wrijving dan een transactionele actie zoals het bevestigen van een betaling of het annuleren van een boeking.
 
-### Hoe verschilt dit van de algemene inputvalidatie die elders in de bredere richtlijnen wordt behandeld?
+### Hoe verschilt dit van algemene invoervalidatie die elders in bredere richtlijnen wordt behandeld?
 
-In principe gerelateerd, maar stemspecifieke invoer brengt een duidelijk risico met zich mee van echte verkeerde interpretatie - niet alleen verkeerd geformuleerde invoer, maar plausibel klinkende, zelfverzekerd getranscribeerde tekst die gewoonweg verkeerd is, waar bij een op tekst gebaseerde invoervalidatie in de foutmodus doorgaans niet op dezelfde manier rekening mee hoeft te worden gehouden.
+In principe gerelateerd, maar spraakinvoer draagt een specifiek risico van echte verkeerde interpretatie met zich mee – niet zomaar misvormde invoer, maar aannemelijk klinkende, zelfverzekerd getranscribeerde tekst die simpelweg onjuist is. Dit is een faalmodus waar tekstgebaseerde invoervalidatie op dezelfde manier geen rekening mee hoeft te houden.
 
-### Zou het testen in een stille kamer ooit een dergelijke dubbelzinnige spraakkloof aan het licht kunnen brengen?
+### Zou testen in een stille kamer ooit redelijkerwijs dit soort kloof in dubbelzinnige spraak naar boven brengen?
 
-Onwaarschijnlijk, vergelijkbaar met hoe solo-testen structureel geen concurrency-bugs aan het licht kunnen brengen - echt dubbelzinnige of luidruchtige spraakomstandigheden in de echte wereld moeten opzettelijk worden geïntroduceerd tijdens het testen, omdat de eigen zorgvuldige, stille testomgeving van een oprichter deze niet op natuurlijke wijze zal produceren.
+Onwaarschijnlijk, vergelijkbaar met hoe solo-testen structureel geen gelijktijdigheidsbugs naar boven kan brengen – oprecht dubbelzinnige of rumoerige praktijk-spraakomstandigheden moeten bewust worden geïntroduceerd tijdens het testen, aangezien de eigen zorgvuldige, stille testomgeving van een oprichter ze niet natuurlijk zal produceren.
 
-### Is het toevoegen van een terugleesstap voor de bevestiging een aanzienlijke kostenpost voor de gebruikerservaring die de veiligheidsafweging waard is?
+### Is het toevoegen van een bevestigingsherhalingsstap een grote kost voor de gebruikerservaring die opweegt tegen de veiligheidsafweging?
 
-Over het algemeen bescheiden kosten in verhouding tot de voordelen van eventuele vervolgacties; een korte gesproken bevestiging voegt slechts een paar seconden toe, een redelijke afweging tegen het risico van een verkeerd geïnterpreteerde, stilzwijgend uitgevoerde actie.
+Over het algemeen bescheiden kosten ten opzichte van het voordeel voor elke ingrijpende actie – een korte gesproken bevestiging voegt slechts een paar seconden toe, wat een redelijke afweging is tegen het risico van een verkeerd geïnterpreteerde, stilletjes uitgevoerde actie.
 
-### Geldt deze zorg op een vergelijkbare manier voor op tekst gebaseerde chat-AI-producten, of is dit specifiek voor spraak?
+### Geldt deze zorg op een vergelijkbare manier voor tekstgebaseerde chat-AI-producten, of is het specifiek voor spraak?
 
-Het onderliggende principe – vervolgacties die worden veroorzaakt door mogelijk verkeerd geïnterpreteerde invoer rechtvaardigen bevestiging – is ook van toepassing op op tekst gebaseerde interfaces, hoewel spraaktranscriptie een aanzienlijk hoger basisfoutpercentage met zich meebrengt dan getypte tekst, waardoor de bezorgdheid hier proportioneel groter is.
+Het onderliggende principe – ingrijpende acties geactiveerd door potentieel verkeerd geïnterpreteerde invoer rechtvaardigen bevestiging – geldt ook voor tekstgebaseerde interfaces, hoewel spraaktranscriptie een betekenisvol hoger basisfoutpercentage draagt dan getypte tekst, wat de zorg hier naar verhouding scherper maakt.
 
 <script type="application/ld+json">
 {
@@ -102,42 +117,42 @@ Het onderliggende principe – vervolgacties die worden veroorzaakt door mogelij
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Does every voice AI feature need an explicit confirmation step?",
+      "name": "Heeft elke spraak-AI-functie een bevestigingsstap nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not universally \u2014 the guidance scales with consequence, with low-stakes actions warranting less friction than transactional ones."
+        "text": "Niet universeel — de richtlijn schaalt met de consequenties; lage inzet heeft minder wrijving nodig dan transacties."
       }
     },
     {
       "@type": "Question",
-      "name": "How is this different from general input validation?",
+      "name": "Hoe verschilt dit van algemene invoervalidatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voice input carries a distinct risk of confidently transcribed but simply wrong text, unlike malformed text input."
+        "text": "Spraakinvoer draagt het risico van zelfverzekerd getranscribeerde maar simpelweg onjuiste tekst met zich mee."
       }
     },
     {
       "@type": "Question",
-      "name": "Would testing in a quiet room surface this kind of ambiguous-speech gap?",
+      "name": "Zou testen in een stille kamer deze dubbelzinnigheid tonen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Unlikely \u2014 genuinely noisy real-world conditions need to be deliberately introduced during testing."
+        "text": "Onwaarschijnlijk — rumoerige praktijkomstandigheden moeten bewust worden geïntroduceerd tijdens het testen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is adding a confirmation read-back step a significant UX cost?",
+      "name": "Is een bevestigingsstap een grote kost voor de gebruikerservaring?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Generally a modest cost, adding only a few seconds against the risk of a misinterpreted, silently-executed action."
+        "text": "Bescheiden kosten t.o.v. de winst — een korte bevestiging voegt seconden toe tegen het risico van foute acties."
       }
     },
     {
       "@type": "Question",
-      "name": "Does this concern apply to text-based chat AI products too?",
+      "name": "Geldt dit ook voor tekstgebaseerde chat-AI-producten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The principle applies, though voice transcription has a meaningfully higher baseline error rate than typed text."
+        "text": "Het principe geldt, hoewel spraaktranscriptie een hoger basisfoutpercentage heeft dan getypte tekst."
       }
     }
   ]

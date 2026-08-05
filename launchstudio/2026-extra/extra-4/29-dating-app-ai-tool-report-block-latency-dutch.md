@@ -1,17 +1,18 @@
 ---
-Titel: "AI-dating- en community-apps: waarom rapport-en-blokkeerlatentie een noodsituatie op het gebied van vertrouwen en veiligheid is"
+Titel: "AI-dating- en community-apps: Waarom de vertraging bij rapporteren en blokkeren een vertrouwens- en veiligheidsnoodgeval is"
 Trefwoorden: ai app, ai secure, dating app, report and block, trust and safety, ai-generated code
 Koperfase: Overweging
 Doelgroep: AI-Native oprichter (niet-technisch)
 ---
-# AI-dating- en community-apps: waarom rapport-en-blokkeerlatentie een noodsituatie op het gebied van vertrouwen en veiligheid is
+
+# AI-dating- en community-apps: Waarom de vertraging bij rapporteren en blokkeren een vertrouwens- en veiligheidsnoodgeval is
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-dating- en community-apps: waarom rapport-en-blokkeerlatentie een noodsituatie op het gebied van vertrouwen en veiligheid is",
-  "description": "Waarom een \u200b\u200bvertraging van zelfs maar een paar minuten tussen het tikken van een gebruiker op 'blok' en het volledig in werking treden van dat blok een ernstige kloof in vertrouwen en veiligheid vormt in door AI gebouwde dating- en community-apps, en hoe deze te dichten.",
+  "headline": "AI-dating- en community-apps: Waarom de vertraging bij rapporteren en blokkeren een vertrouwens- en veiligheidsnoodgeval is",
+  "description": "Waarom een vertraging van zelfs een paar minuten tussen het tikken op 'blokkeren' en het daadwerkelijk afdwingen een ernstig veiligheidslek is.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,84 +31,84 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Een gebruiker tikt op 'blokkeren' op iemand die hem een ​​bericht heeft gestuurd op een manier die hem of haar een ongemakkelijk gevoel gaf. In hun gedachten is die actie onmiddellijk en totaal: de persoon is weg, afgesneden en kan hem of haar niet meer bereiken of zien. In veel door AI gebouwde dating- en community-apps is dat niet echt wat er gebeurt. Nieuwe berichten stoppen, maar het bestaande profiel van de geblokkeerde gebruiker kan nog steeds in de zoekresultaten verschijnen, en hun oude berichten kunnen nog enkele minuten in de thread blijven staan, terwijl achtergrondtaken worden ingehaald. In een functiecategorie die volledig is gebaseerd op het vertrouwen van gebruikers, is de kloof tussen "voelt direct" en "is direct" geen kleine bug.
+Een gebruiker tikt op "blokkeren" bij iemand die hen berichten stuurde op een manier die hen ongemakkelijk maakte. In hun hoofd is die actie onmiddellijk en totaal – de persoon is weg, afgesneden, niet in staat om hen weer te bereiken of te zien. In veel met AI gebouwde dating- en community-apps is dat daadwerkelijk niet wat er gebeurt. Nieuwe berichten stoppen, maar het profiel van de geblokkeerde gebruiker kan nog steeds verschijnen in de zoekresultaten, en zijn oude berichten kunnen nog steeds in de thread zitten, zichtbaar, gedurende nog enkele minuten terwijl achtergrondtaken inhalen. In een functie-categorie die volledig is gebouwd op het vertrouwen van gebruikers, is die kloof tussen "voelt onmiddellijk" en "is onmiddellijk" geen kleine bug.
 
-## Blokkeren wordt meestal opgebouwd als één actie, terwijl het in werkelijkheid meerdere acties zijn
+## Blokkeren wordt doorgaans gebouwd als één actie terwijl het er daadwerkelijk meerdere zijn
 
-Wanneer een oprichter of een AI-coderingstool een ‘blokkeerfunctie’ implementeert, is de meest voor de hand liggende interpretatie eenvoudig: stop nieuwe berichten van die gebruiker. Dat onderdeel wordt meestal correct en snel geïmplementeerd, omdat het rechtstreeks verband houdt met een voor de hand liggende databasecontrole op het berichteneindpunt. Wat veel gemakkelijker te missen is, is dat een echt blok tegelijkertijd verschillende andere oppervlakken moet aanraken: de geblokkeerde gebruiker uit de zoekresultaten verwijderen, zijn profiel verbergen voor weergave en vaak ook de bestaande berichtgeschiedenis verbergen, afhankelijk van het veiligheidsontwerp van de app. Elk daarvan is een afzonderlijk stukje logica, vaak in een apart deel van de codebasis, en elk ervan moet worden bijgewerkt voordat het blok daadwerkelijk compleet is.
+Wanneer een oprichter of een AI-coderingsassistent een functie "blokkeren" implementeert, is de meest voor de hand liggende interpretatie eenvoudig: stop nieuwe berichten van die gebruiker. Dat gedeelte wordt doorgaans snel en correct geïmplementeerd, omdat het rechtstreeks koppelt aan een voor de hand liggende controle in de database op het berichteindpunt. Wat aanzienlijk gemakkelijker is om te missen, is dat een echte blokkade meerdere andere oppervlakken op hetzelfde moment moet raken – de geblokkeerde gebruiker verwijderen uit zoekresultaten, verbergen dat zijn profiel bekeken wordt, en vaak ook de bestaande berichtgeschiedenis verbergen, afhankelijk van het veiligheidsontwerp van de app. Elk van die is een afzonderlijk stuk logica, dat vaak leeft in een afzonderlijk deel van de codebase. En elk van hen moet worden bijgewerkt om de blokkade daadwerkelijk compleet te laten zijn.
 
-AI-coderingstools hebben de neiging om welk stukje ‘blok’ dan ook waar de oprichter de nadruk op legt het meest direct te implementeren – meestal ‘voorkom dat ze mij berichten sturen’ – en laten de rest over aan een achtergrondtaak, een cachevernieuwing of een zoekindexupdate die volgens zijn eigen schema wordt uitgevoerd in plaats van onmiddellijk. Het resultaat is een blok dat onmiddellijk reëel is in de berichtenlaag, maar overal elders een gedeeltelijke illusie is, hoe lang dat achtergrondproces ook duurt om het in te halen. Een gebruiker die is gerapporteerd en de app in realtime bekijkt nadat hij is geblokkeerd, kan dat venster absoluut opmerken en misbruiken.
+AI-coderingsassistenten hebben de neiging om het stukje "blokkeren" te implementeren dat de prompt van de oprichter het meest rechtstreeks benadrukte – doorgaans "zorg dat hij me geen berichten meer kan sturen" – en laten de rest over aan een achtergrondtaak, een vernieuwing van de cache, of een update van de zoekindex die draait volgens een eigen schema in plaats van onmiddellijk. Het resultaat is een blokkade die in de berichtenlaag onmiddellijk echt is, maar een gedeeltelijke illusie op elke andere plek voor zolang dat achtergrondproces nodig heeft om in te halen. Een gebruiker die is gerapporteerd en de app in realtime bekijkt nadat hij is geblokkeerd, kan dat venster absoluut opmerken en misbruiken.
 
-## Waarom het exploitvenster belangrijker is dan het klinkt
+## Waarom het misbruikvenster er meer toe doet dan het klinkt
 
-Een paar minuten lijkt niet zo veel, totdat je bedenkt wie tijdens precies die periode het meest waarschijnlijk goed oplet: een gebruiker die zojuist is gerapporteerd en geblokkeerd, en die dat weet. Dat is precies het profiel van iemand die gemotiveerd is om snel te handelen: een laatste bericht sturen via een kanaal dat nog niet is ingehaald, of een profiel blijven bekijken dat al voor hem verborgen had moeten zijn. Voor een dating- of lokale community-app, waarbij de fysieke veiligheid echt op het spel kan staan, is dat venster geen randgeval dat de moeite waard is om te negeren. Het is het scenario dat de blokkeerfunctie in de eerste plaats moet voorkomen.
+Een paar minuten klinkt niet als veel, totdat u overweegt wie het meest waarschijnlijk nauwkeurig oplet tijdens exact dat venster: een gebruiker die zojuist is gerapporteerd en geblokkeerd, en die het weet. Dat is precies het profiel van iemand die gemotiveerd is om snel te handelen – een laatste bericht sturen via een kanaal dat nog niet heeft ingehaald, of doorgaan met het bekijken van een profiel dat al voor hem verborgen zou moeten zijn. Voor een dating- of lokale community-app, waar fysieke veiligheid oprecht op het spel kan staan, is dat venster geen randgeval dat het verdient om gede-prioriteerd te worden. Het is het scenario dat de blokkeerfunctie in de eerste plaats bestaat om te voorkomen.
 
-LaunchStudio beschouwt vertrouwens- en veiligheidsfuncties zoals blokkeren, rapporteren en dempen alsof ze dezelfde nauwkeurigheid vereisen als betalings- of authenticatiecodes - niet omdat ze geld overmaken, maar omdat het verkeerd uitvoeren ervan reële gevolgen heeft voor echte mensen. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door zakelijke klanten, waaronder Vodafone en TNO – en diezelfde standaard van grondigheid is wat het team toepast op veiligheidskritische functies in door de oprichter gebouwde consumentenapps.
+LaunchStudio behandelt functies voor vertrouwen en veiligheid zoals blokkeren, rapporteren en dempen met dezelfde strengheid als betalings- of authenticatiecode – niet omdat ze geld verplaatsen, maar omdat het verkeerd aanpakken ervan echte consequenties heeft voor echte mensen. In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door enterprise-klanten inclusief Vodafone en TNO – en diezelfde norm van grondigheid is wat het team toepast op veiligheidskritische functies in door oprichters gebouwde consumenten-apps.
 
-## Wat "instant" eigenlijk onder de motorkap vereist
+## Wat "onmiddellijk" daadwerkelijk vereist onder de motorkap
 
-Het dichten van deze kloof betekent dat we een blokkeringsactie behandelen als een enkele synchrone bewerking die elk relevant oppervlak bijwerkt – berichtrechten, zoekzichtbaarheid, profieltoegang en berichtgeschiedenis – voordat de app aan de gebruiker bevestigt dat de blokkering is geslaagd, in plaats van asynchrone updates af te vuren die op hun eigen tijdlijn worden voltooid. Het betekent ook dat elk leespad moet worden gecontroleerd dat nog steeds een geblokkeerde gebruiker kan opleveren (zoekopdrachten, aanbevelingen, gedeelde groepen, activiteitenfeeds) om te bevestigen dat elk pad expliciet de blokkeringsrelatie controleert, in plaats van aan te nemen dat een ander deel van de app dit al heeft uitgefilterd.
+Het sluiten van deze kloof betekent het behandelen van een blokkeeractie als een enkele synchrone operatie die elk relevant oppervlak bijwerkt – berichtmachtigingen, zoekzichtbaarheid, profieltoegang en berichtgeschiedenis – voordat de app aan de gebruiker bevestigt dat de blokkade is geslaagd, in plaats van het afvuren van asynchrone updates die voltooien volgens hun eigen tijdlijn. Het betekent ook het auditeren van elk leespad dat een geblokkeerde gebruiker nog steeds naar boven zou kunnen halen – zoeken, aanbevelingen, gedeelde groepen, activiteitsfeeds – om te bevestigen dat elk van hen expliciet de blokkeerrelatie controleert in plaats van aan te nemen dat een ander deel van de app het al heeft uitgefilterd.
 
-Het technische team van Manifera, dat samenwerkt met de oprichters via LaunchStudio's Singapore-hub die de snelgroeiende consumenten-app-markt in Zuidoost-Azië bedient, heeft precies dit soort veiligheidsoppervlak-audits uitgevoerd op gemeenschaps- en sociale platforms waar het vertrouwen van de gebruiker het kernproduct is. U kunt een dergelijke beoordeling starten via de [LaunchStudio-contactpagina](https://launchstudio.eu/en/#contact), en Manifera's bredere team voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft een vergelijkbare nauwkeurigheid toegepast op de logica voor toegangscontrole op een reeks platforms.
+Manifera's engineeringteam, werkend met oprichters via LaunchStudio's hub in Singapore die de snelgroeiende consumenten-appmarkt van Zuidoost-Azië bedient, heeft exact dit soort audits van veiligheidsoppervlakken uitgevoerd bij community- en sociale platformen waar het vertrouwen van de gebruiker het kernproduct is. U kunt dat soort beoordeling starten via de [LaunchStudio-contactpagina](https://launchstudio.eu/en/#contact). Manifera's bredere team voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare strengheid toegepast op toegangsbeschermingslogica over een reeks van platformen.
 
-## Synchrone databaseschrijfacties annuleren niet wat al in de wachtrij staat om te worden verzonden
+## Synchrone database-schrijfacties annuleren niet wat al in de wachtrij staat om te worden verzonden
 
-Wanneer een gebruiker een ander account blokkeert, werkt de app de database direct bij. Als er echter al pushmeldingen of e-mails in een achtergrond-wachtrij staan om te worden verzonden naar die gebruiker, worden ze alsnog afgeleverd als de achtergrondwerker de blokkeerstatus niet opnieuw controleert vóór verzending.
+Het synchroon maken van de blokkade op databaseniveau – berichten, zoeken, profiel en berichtgeschiedenis bijgewerkt in één transactie – sluit de kloof tussen "de app zegt geblokkeerd" en "de database weerspiegelt geblokkeerd". Het bereikt niet automatisch een compleet andere categorie dingen: gebeurtenissen die al zijn overgedragen aan een leveringspijplijn voordat de blokkeertransactie werd doorgevoerd. Een pushmelding die momenten eerder in de wachtrij is geplaatst ("uw match heeft u een bericht gestuurd"), een WebSocket-gebeurtenis die al is verzonden naar een nog geopende cliëntsessie, of een e-mailoverzicht dat al is gegenereerd en in de wachtrij staat voor levering, kunnen allemaal minuten later nog steeds de geblokkeerde gebruiker bereiken. Die systemen ontvingen de gebeurtenis namelijk voordat de blokkade bestond en hebben geen reden om deze uit zichzelf opnieuw te controleren.
 
-Controleer de blokkeerstatus direct in de achtergrond-mail-job vóór aflevering:
+Dit is een smaller venster dan de oorspronkelijke bug, maar dezelfde categorie van mislukken: een oppervlak dat nooit werd verteld om de blokkeerrelatie te controleren omdat het draait buiten de verzoek/reactie-cyclus die de synchrone herstelling dekt. Het sluiten ervan betekent het toevoegen van een blokkeercontrole onmiddellijk voor de daadwerkelijke verzending in elk uitgaand leveringspad, en niet alleen op het moment dat de gebeurtenis wordt gegenereerd.
 
-```javascript
-async function sendQueuedMessage(messageId) {
-  const message = await db.messages.findById(messageId);
-  const isBlocked = await db.blocks.exists({ blockerId: message.recipientId, blockedId: message.senderId });
-  if (isBlocked) {
-    return; // Annuleer de verzending van het bericht
+```
+function dispatchNotification(notification) {
+  // Controleer blokkeerstatus opnieuw vlak voor verzending, niet alleen bij aanmaken
+  if (isBlocked(notification.recipientId, notification.senderId)) {
+    return; // laat stilletjes vallen, afzender leert nooit waarom
   }
-  await mailProvider.send(message);
+  sendPush(notification);
 }
 ```
 
+Het is een kleine controle, maar het is het verschil tussen een blokkade die synchroon is in de database en een die daadwerkelijk synchroon is in alles wat de gebruiker ervaart – inclusief de melding die al halverwege de deur uit was toen hij op blokkeren tikte.
+
 ## Echt voorbeeld
 
-### Een AI-Native Founder in actie: de blokkade die niet helemaal onmiddellijk was
+### Een AI-native oprichter in actie: De blokkade die niet heel onmiddellijk was
 
-Lotte Andriessen bouwde met Lovable MatchLokaal, een lokale dating- en community-app, gericht op het verbinden van mensen in en rond Emmen. De blokkeerfunctie van de app werkte precies zoals ze hem had getest: tik op blokkeer, de persoon kan je geen bericht meer sturen. Wat ze niet had getest, was al het andere – omdat ze vanuit haar eigen account, zodra ze iemand had geblokkeerd, gewoon niet meer aan die persoon dacht.
+Lotte Andriessen bouwde MatchLokaal, een lokale dating- en community-app, met behulp van Lovable, gericht op het verbinden van mensen in en rond Emmen. De blokkeerfunctie van de app werkte exact zoals ze het had getest: tik op blokkeren, de persoon kan je geen berichten meer sturen. Wat ze niet had getest was al het andere – want vanaf haar eigen account stopte ze simpelweg met aan hen te denken zodra ze iemand blokkeerde.
 
-Een gebruiker meldde dat hij werd lastiggevallen door een match, blokkeerde hem onmiddellijk via de app en meldde vervolgens aan Lotte dat het profiel van de geblokkeerde gebruiker enkele minuten later nog steeds in haar zoekresultaten verscheen en dat zijn eerdere berichten nog steeds zichtbaar waren in haar inbox. De gebruiker beschreef precies hoe ongemakkelijk dat gat voelde, omdat ze van haar kant niet kon weten of de blokkering daadwerkelijk had gewerkt.
+Een gebruiker meldde te worden lastiggevallen door een match, blokkeerde hem onmiddellijk via de app, en meldde daarna aan Lotte dat het profiel van de geblokkeerde gebruiker nog steeds gedurende enkele minuten daarna in haar zoekresultaten verscheen. Ook bleven zijn eerdere berichten zichtbaar in haar inbox. De gebruiker beschreef exact hoe ongemakkelijk die kloof voelde, aangezien ze vanaf haar kant geen manier had om te weten of de blokkade daadwerkelijk had gewerkt.
 
-De technici van LaunchStudio ontdekten dat de blokkeeractie van MatchLokaal alleen de tabel met machtigingen voor berichten synchroon bijwerkte; de ​​zoekindexering en de zichtbaarheid van berichten werden beide afgehandeld door een vernieuwingstaak op de achtergrond die vertraging opliep. De oplossing consolideerde het afdwingen van blokken in één enkele synchrone transactie die gelijktijdig berichtenuitwisseling, zoekzichtbaarheid en berichtgeschiedenis omvat, zodat elk oppervlak het blok weerspiegelt op het moment dat de gebruiker erop tikt, zonder afhankelijkheid van een achtergrondtaak die later inhaalt.
+LaunchStudio's ingenieurs vonden dat MatchLokaal's blokkeeractie alleen de tabel met berichtmachtigingen synchroon bijwerkte – zoekindexering en berichtzichtbaarheid werden beide afgehandeld door een achtergrondvernieuwingstaak die met vertraging draaide. De herstelling consolideerde het afdwingen van de blokkade in een enkele synchrone transactie die berichten, zoekzichtbaarheid en berichtgeschiedenis gelijktijdig dekt. Zo weerspiegelt elk oppervlak de blokkade op het moment dat de gebruiker erop tikt, zonder afhankelijkheid van een achtergrondtaak die later inhaalt.
 
-**Resultaat:** De blokkeeractie van MatchLokaal is nu volledig direct en compleet in elk deel van de app, en Lotte heeft een interne testsuite toegevoegd die verifieert dat alle veiligheidsgerelateerde acties synchroon van toepassing zijn voordat een nieuwe functie kan worden verzonden.
+**Resultaat:** MatchLokaal's blokkeeractie is nu volledig onmiddellijk en compleet over elk onderdeel van de app. Lotte heeft een interne testreeks toegevoegd die verifieert dat alle veiligheidsgerelateerde acties synchroon worden toegepast voordat een nieuwe functie kan worden verzonden.
 
-> *"Een gebruiker vertrouwde op onze blokkeerknop om haar onmiddellijk te beschermen, maar dat gebeurde niet. Dat is geen bug waar ik op wilde zitten. LaunchStudio begreep precies waarom dat gat er toe deed en sloot het snel."*
-> — **Lotte Andriessen, Oprichter MatchLokaal (Emmen)**
+> *"Een gebruiker vertrouwde op onze blokkeerknop om haar onmiddellijk te beschermen, en dat deed het niet. Dat is geen bug waar ik op wilde blijven zitten. LaunchStudio begreep exact waarom die kloof er toe deed en sloot hem snel."*
+> — **Lotte Andriessen, Oprichter, MatchLokaal (Emmen)**
 
-**Kosten en tijdlijn:** € 1.300 (audit van vertrouwens- en veiligheidsoppervlak en herbouw van synchrone blokhandhaving) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.300 (audit van vertrouwens- en veiligheidsoppervlakken en herbouw van synchrone blokkeerafdwinging) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom zou een blokfunctie slechts gedeeltelijk werken?
+### Waarom zou een blokkeerfunctie slechts gedeeltelijk werken?
 
-Omdat verschillende delen van het 'blokkeren' van een gebruiker (berichten, zoekzichtbaarheid, profieltoegang, berichtgeschiedenis) vaak worden geïmplementeerd als afzonderlijke stukjes logica, en een AI-coderingstool doorgaans alleen het deel implementeert dat het meest direct in de prompt wordt beschreven, en de rest asynchroon laat inhalen.
+Omdat verschillende onderdelen van het "blokkeren" van een gebruiker – berichten, zoekzichtbaarheid, profieltoegang, berichtgeschiedenis – vaak worden geïmplementeerd als afzonderlijke stukken logica. Een AI-coderingsassistent implementeert doorgaans alleen het stuk dat het meest rechtstreeks in de prompt wordt beschreven, en laat de rest achter om asynchroon in te halen.
 
-### Hoe lang duurt de exploitperiode gewoonlijk?
+### Hoe lang is het misbruikvenster doorgaans?
 
-Het varieert afhankelijk van hoe de achtergrondsynchronisatie is opgebouwd, maar zelfs een vertraging van een paar minuten is genoeg voor een gemotiveerde gebruiker om actie te ondernemen. Daarom is de oplossing erop gericht om het blok direct en synchroon te maken in plaats van alleen maar sneller.
+Het varieert afhankelijk van hoe de achtergrondsynchronisatie is gebouwd, maar zelfs een vertraging van een paar minuten is genoeg voor een gemotiveerde gebruiker om te handelen. Dat is waarom de herstelling zich richt op het onmiddellijk en synchroon maken van de blokkade in plaats van alleen sneller.
 
-### Geldt dit specifiek voor dating-apps?
+### Is dit specifiek voor dating-apps?
 
-Nee: elke app met interactie tussen gebruikers en een blokkeer- of rapportfunctie, inclusief communityplatforms, marktplaatsen en sociale apps, kan dezelfde kloof hebben tussen blokkering op berichtniveau en volledige blokkering op accountniveau.
+Nee – elke app met interactie tussen gebruikers en een blokkeer- of rapporteerfunctie, inclusief communityplatformen, marktplaatsen en sociale apps, kan dezelfde kloof hebben tussen blokkeren op berichtenniveau en volledige blokkering op accountniveau.
 
-### Hoe vindt LaunchStudio dit soort hiaten?
+### Hoe vindt LaunchStudio kloven zoals deze?
 
-Het team controleert elk oppervlak waarop een geblokkeerde of gerapporteerde gebruiker nog steeds kan verschijnen (zoeken, aanbevelingen, gedeelde inhoud) in plaats van alleen de specifieke actie te testen die een oprichter beschrijft, een praktijk die is gevormd door Manifera's toegangscontrolewerk voor bedrijven.
+Het team auditeert elk oppervlak waar een geblokkeerde of gerapporteerde gebruiker nog steeds zou kunnen verschijnen – zoeken, aanbevelingen, gedeelde inhoud – in plaats van alleen de specifieke actie te testen die een oprichter beschrijft. Een praktijk die gevormd is door Manifera's enterprise-toegangsbeheerwerk.
 
-### Werkt LaunchStudio met apps die specifiek op Lovable zijn gebouwd?
+### Kan een geblokkeerde gebruiker nog steeds een melding ontvangen nadat de blokkade synchroon is toegepast?
 
-Ja – LaunchStudio werkt met Lovable-, Bolt-, Cursor- en v0-gebouwde apps, en het in Singapore gevestigde team beoordeelt regelmatig de vertrouwens- en veiligheidslogica in specifiek door Lovable gebouwde consumenten- en community-apps.
-
+Ja, als de melding al was overgedragen aan een leveringspijplijn – zoals push of e-mail – voordat de blokkeertransactie werd doorgevoerd. Die systemen weten namelijk alleen wat hen bij het aanmaken werd verteld. De herstelling is het opnieuw controleren van de blokkeerstatus onmiddellijk vóór de daadwerkelijke verzending, en niet alleen wanneer de gebeurtenis werd gegenereerd.
 
 <script type="application/ld+json">
 {
@@ -116,42 +117,42 @@ Ja – LaunchStudio werkt met Lovable-, Bolt-, Cursor- en v0-gebouwde apps, en h
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom zou een blokfunctie slechts gedeeltelijk werken?",
+      "name": "Waarom werkt een blokkeerknop in AI-apps soms maar half?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat verschillende delen van het 'blokkeren' van een gebruiker (berichten, zoekzichtbaarheid, profieltoegang, berichtgeschiedenis) vaak worden geïmplementeerd als afzonderlijke stukjes logica, en een AI-coderingstool doorgaans alleen het deel implementeert dat het meest direct in de prompt wordt beschreven, en de rest asynchroon laat inhalen."
+        "text": "Omdat AI meestal alleen de directe chatinvoer blokkeert. Zoekresultaten en profielzichtbaarheid draaien op vertraagde achtergrond-indexen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe lang duurt de exploitperiode gewoonlijk?",
+      "name": "Hoe lang duurt het lek-venster tussen blokkeren en volledige verberging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het varieert afhankelijk van hoe de achtergrondsynchronisatie is opgebouwd, maar zelfs een vertraging van een paar minuten is genoeg voor een gemotiveerde gebruiker om actie te ondernemen. Daarom is de oplossing erop gericht om het blok direct en synchroon te maken in plaats van alleen maar sneller."
+        "text": "Dit varieert van enkele seconden tot minuten, afhankelijk van hoe de zoekindex ververst. Bij een kwaadwillende gebruiker is dit een acuut veiligheidsrisico."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt dit specifiek voor dating-apps?",
+      "name": "Speelt dit probleem ook bij andere apps dan dating?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee: elke app met interactie tussen gebruikers en een blokkeer- of rapportfunctie, inclusief communityplatforms, marktplaatsen en sociale apps, kan dezelfde kloof hebben tussen blokkering op berichtniveau en volledige blokkering op accountniveau."
+        "text": "Ja, bij alle P2P en sociale apps (community's, marktplaatsen) waar gebruikers elkaar kunnen rapporteren en blokkeren."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe vindt LaunchStudio dit soort hiaten?",
+      "name": "Hoe maakt LaunchStudio een blokkade écht 100% instant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het team controleert elk oppervlak waarop een geblokkeerde of gerapporteerde gebruiker nog steeds kan verschijnen (zoeken, aanbevelingen, gedeelde inhoud) in plaats van alleen de specifieke actie te testen die een oprichter beschrijft, een praktijk die is gevormd door Manifera's toegangscontrolewerk voor bedrijven."
+        "text": "Door chat, zoekresultaten, notificaties en historie in 1 synchrone databasetransactie af te dwingen vóór de UI-bevestiging."
       }
     },
     {
       "@type": "Question",
-      "name": "Werkt LaunchStudio met apps die specifiek op Lovable zijn gebouwd?",
+      "name": "Kan een geblokkeerde gebruiker nog push-notificaties ontvangen die al klaarstonden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja – LaunchStudio werkt met Lovable-, Bolt-, Cursor- en v0-gebouwde apps, en het in Singapore gevestigde team beoordeelt regelmatig de vertrouwens- en veiligheidslogica in specifiek door Lovable gebouwde consumenten- en community-apps."
+        "text": "Ja, tenzij het notificatiesysteem vlak vóór de daadwerkelijke uitstuur (push/mail) nogmaals de actuele blokkeerstatus controleert."
       }
     }
   ]

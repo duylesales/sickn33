@@ -1,73 +1,146 @@
 ---
-Titel: "Het AI-Beveiligingsrisico Van Jouw App Begrijpen Voordat Een Gebruiker Het Vindt"
+Titel: "Het AI-beveiligingsrisico van uw app begrijpen voordat een gebruiker het vindt"
 Trefwoorden: ai security risk, ai security issues, ai secure, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo Founder / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
 
-# Het AI-Beveiligingsrisico Van Jouw App Begrijpen Voordat Een Gebruiker Het Vindt
+# Het AI-beveiligingsrisico van uw app begrijpen voordat een gebruiker het vindt
 
-Sommige van de meest consequentiële AI-beveiligingsrisico's in een founder-gebouwd product leven helemaal niet in de applicatiecode die een founder direct leest en over redeneert — het leeft in een kleine, hulp-cloudfunctie, gegenereerd om één specifieke achtergrondtaak af te handelen, die eindigt bereikbaar voor iedereen die zijn URL vindt, zonder dat iemand in de hoofdapplicatieflow er ooit direct doorheen routeert of het direct reviewt.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Het AI-beveiligingsrisico van uw app begrijpen voordat een gebruiker het vindt",
+  "description": "Een technische verdieping in een blootgestelde serverloze functie (serverless function) die bereikbaar is zonder authenticatie.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/understanding-your-apps-ai-security-risk-before-a-user-finds-it"
+  }
+}
+</script>
 
-## Waarom Serverless-Functies Een Gebruikelijke Blinde Vlek Zijn
+Sommige van de meest ingrijpende AI-beveiligingsrisico's in een door een oprichter gebouwd product leven überhaupt niet in de applicatiecode die een oprichter rechtstreeks leest en beoordeelt. Het leeft in een kleine, ondersteunende cloudfunctie (serverless function), gegenereerd om een specifieke achtergrondtaak af te handelen. En die blijkt bereikbaar te zijn voor iedereen die de URL vindt, zonder dat iemand in de hoofdapplicatiestroom er ooit rechtstreeks doorheen navigeert of het beoordeelt. Het is het digitale equivalent van een dienstingang die niemand zich herinnerde op slot te doen, exact omdat niemand het als een deur zag.
 
-Moderne app-bouwworkflows vertrouwen frequent op kleine, onafhankelijke cloud- of serverless-functies om specifieke achtergrondtaken af te handelen — een bestand verwerken, een geplande notificatie sturen, een rapport genereren — die enigszins apart bestaan van de hoofdapplicatiecode van een product. Omdat deze functies vaak relatief snel gemaakt en gedeployed worden om één specifieke, onmiddellijke behoefte op te lossen, doorlopen ze niet altijd dezelfde controle als de primaire applicatie die een founder actief bouwt en functie voor functie test.
+## Waarom serverloze functies een veelvoorkomende blinde vlek zijn
 
-## Waarom Authenticatie Specifiek Overgeslagen Wordt Op Deze Hulpfuncties
+Moderne werkstromen voor het bouwen van apps vertrouwen frequent op kleine, onafhankelijke cloud- of serverloze functies om specifieke achtergrondtaken af te handelen – het verwerken van een bestand, het verzenden van een geplande melding, het genereren van een rapport. Omdat deze functies vaak relatief snel worden gemaakt en ingezet om een specifiek, onmiddellijk probleem op te lossen, gaan ze niet altijd door dezelfde controle als de primaire applicatie die een oprichter actief functie voor functie bouwt en test.
 
-Een serverless-functie gebouwd om intern aangeroepen te worden door de hoofdapplicatie — getriggerd door een ander deel van het systeem in plaats van direct door een gebruiker — kan redelijkerwijs lijken alsof het geen eigen onafhankelijke authenticatiecontrole nodig heeft, aangezien het "alleen" bedoeld is aangeroepen te worden door vertrouwde, interne code. Het probleem is dat een publiek gedeployde functie, standaard, bereikbaar is voor iedereen die zijn URL heeft, ongeacht door wie het oorspronkelijk bedoeld was aangeroepen te worden.
+## Waarom authenticatie specifiek op deze ondersteunende functies wordt overgeslagen
 
-## Waarom Dit Gat Oprecht Moeilijk Is Voor Een Founder Om Zelf Op Te Merken
+Een serverloze functie die gebouwd is om intern door de hoofdapplicatie te worden aangeroepen – geactiveerd door een ander onderdeel van het systeem in plaats van rechtstreeks door een gebruiker – kan redelijkerwijs lijken alsof het geen eigen onafhankelijke authenticatiecontrole nodig heeft. Het probleem is dat een openbaar ingezette functie standaard bereikbaar is voor iedereen die de URL heeft, ongeacht door wie het oorspronkelijk bedoeld was om te worden aangeroepen.
 
-Een founder die de functies van zijn product reviewt denkt natuurlijk in termen van wat gebruikers zien en waarmee ze interageren — pagina's, knoppen, formulieren — in plaats van de specifieke, aparte cloudfuncties die stilletjes achter de schermen draaien om die functies te ondersteunen. Zonder een specifieke inventarisatie van elke gedeployede functie en zijn toegangsconfiguratie kan deze hele categorie infrastructuur indefinitief onderzocht blijven, simpelweg omdat het nooit ter sprake komt tijdens normale, functiegerichte review.
+## Waarom deze kloof oprecht moeilijk is voor een oprichter om zelf op te merken
 
-## Waarom De Gevolgen Volledig Afhangen Van Wat De Functie Daadwerkelijk Doet
+Een oprichter die de functies van zijn product beoordeelt denkt van nature in termen van wat gebruikers zien en waarmee ze communiceren – pagina's, knoppen, formulieren – in plaats van de specifieke, afzonderlijke cloudfuncties die stilletjes achter de schermen draaien. Zonder een specifieke inventaris van elke ingezette functie en haar toegangsconfiguratie kan deze gehele categorie van infrastructuur voor onbepaalde tijd ononderzocht blijven.
 
-Een blootgestelde functie die alleen een onschadelijke, alleen-lezen-taak uitvoert vormt beperkt risico op zichzelf; een die datawijziging kan triggeren, communicatie kan sturen namens het product, of interne systemen kan benaderen vormt een aanzienlijk ernstiger risico — wat betekent dat een volledige inventarisatie elke functie individueel moet beoordelen in plaats van een uniform risiconiveau over allemaal aan te nemen.
+## Waarom de gevolgen afhangen van wat de functie daadwerkelijk doet
 
-## Wat Een Correcte Infrastructuurreview Omvat
+Een blootgestelde functie die alleen een schadeloze taak uitvoert vormt op zichzelf een beperkt risico. Een functie die gegevenswijziging kan activeren, communicatie kan verzenden namens het product, of toegang heeft tot interne systemen vormt een aanzienlijk ernstiger risico. Een functie die e-mails verzendt namens het product en niet-geauthenticeerd wordt gelaten, zou gebruikt kunnen worden om spam- of phishingberichten te verzenden die afkomstig lijken te zijn van een vertrouwd merk.
 
-Een grondige review inventariseert elke gedeployede functie of elk eindpunt in een systeem — niet alleen degene direct bereikbaar via de gebruikersinterface van de hoofdapplicatie — en bevestigt dat elk passende authenticatie afdwingt voor wat het daadwerkelijk kan doen. [LaunchStudio](https://launchstudio.eu/en/) voert precies dit soort volledige infrastructuurinventarisatie uit als onderdeel van zijn productiegereedheidsreview, gesteund door Manifera's 11+ jaar ervaring over serverless- en cloud-native-architecturen.
+## Wat een juiste infrastructuurbeoordeling inhoudt
 
-Manifera's infrastructuurbeveiligingsreviews worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Een grondige beoordeling inventariseert elk ingezet eindpunt in een systeem – niet alleen degene die rechtstreeks bereikbaar zijn via de gebruikersinterface van de hoofdapplicatie – en bevestigt dat elk eindpunt passende authenticatie afdwingt. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort volledige infrastructuurinventarisatie uit als onderdeel van haar beoordeling van productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met serverloze en cloud-native architectuursystemen.
 
-[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+Manifera's beoordelingen van infrastructuurbeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de functie die niemand zich herinnerde af te sluiten
+### Een AI-native oprichter in actie: De functie die niemand zich herinnerde te beveiligen
 
-Sofie, een voormalig openbare bibliothecaris die founder werd in Enschede, bouwde LeesNet, een AI-geassisteerd bibliotheekbeheersysteem gebouwd met v0, gebouwd voor kleine onafhankelijke en communitybibliotheken, inclusief een achtergrond-cloudfunctie die bulk-catalogusupdates verwerkte geüpload door bibliotheekpersoneel.
+Sofie, een voormalig openbaar bibliothecaris die oprichter werd in Enschede, bouwde LeesNet, een AI-ondersteund bibliotheekbeheersysteem gebouwd met v0. Het is gebouwd voor kleine onafhankelijke en gemeenschapsbibliotheken, inclusief een achtergrond-cloudfunctie die bulk-catalogusupdates verwerkte die door bibliotheekpersoneel werden geüpload.
 
-Tijdens het oplossen van een ongerelateerd probleem ontdekte een technisch nieuwsgierige bibliotheekvrijwilliger de URL van de catalogusupdate-functie gerefereerd in een stuk client-side code en, uit nieuwsgierigheid testend, vond dat het direct aangeroepen kon worden zonder enige login of authenticatie helemaal — waardoor iedereen die het vond bulkcataloguswijzigingen kon indienen bij de records van elke verbonden bibliotheek. LaunchStudio's review bevestigde dat de functie gebouwd was om intern aangeroepen te worden door de hoofdapplicatie en simpelweg nooit een onafhankelijke authenticatiecontrole toegevoegd gekregen had.
+Tijdens het oplossen van een ongerelateerde kwestie ontdekte een technisch nieuwsgierige bibliotheekvrijwilliger de URL van de catalogus-updatefunctie vermeld in een client-side codestuk. Bij het testen ontdekte hij dat de functie rechtstreeks kon worden aangeroepen zonder enige inlog of authenticatie – wat iedereen die het vond in staat stelde om bulk-cataloguswijzigingen in te dienen voor de records van elke verbonden bibliotheek. LaunchStudio's beoordeling bevestigde dat de functie gebouwd was om intern te worden aangeroepen en simpelweg nooit een onafhankelijke authenticatiecontrole had gekregen.
 
-**Resultaat:** LaunchStudio voegde correcte authenticatie toe aan de catalogusupdate-functie en voerde een volledige inventarisatie uit van elke andere gedeployede functie in LeesNet, en bevestigde dat geen andere hetzelfde gat deelde, en dicht de blootstelling over de hele infrastructuur van het platform.
+**Resultaat:** LaunchStudio voegde de juiste authenticatie toe aan de catalogus-updatefunctie en voerde een volledige inventarisatie uit van elke andere ingezette functie in LeesNet, om te bevestigen dat geen van de andere dezelfde kloof deelde.
 
-> *"Die functie was nooit iets dat ik zelfs beschouwde als 'onderdeel van het product' op de manier waarop ik dacht over de daadwerkelijke bibliotheekgerichte pagina's. Het draaide gewoon stilletjes op de achtergrond de hele tijd, zijn werk doend, totdat bleek dat iedereen het direct kon bereiken."*
-> — **Sofie Willemsen, Founder, LeesNet (Enschede)**
+> *"Die functie was nooit iets wat ik überhaupt zag als 'onderdeel van het product' op de manier waarop ik nadacht over de daadwerkelijke pagina's. Het draaide gewoon stilletjes op de achtergrond de hele tijd, deed zijn werk, totdat bleek dat iedereen het rechtstreeks kon bereiken."*
+> — **Sofie Willemsen, Oprichter, LeesNet (Enschede)**
 
-**Kosten & tijdlijn:** €2.100 (inventarisatie serverless-functies en herstel authenticatie) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.100 (inventarisatie van serverloze functies en herstel van authenticatie) — voltooid in 7 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een cloudinfrastructuurspecialist niet-geauthenticeerde serverless-functies een gebruikelijke risicocategorie beschouwen?
+### Zou een infrastructuurspecialist niet-geauthenticeerde serverloze functies beschouwen als een veelvoorkomend risico?
 
-Ja, het is specifiek goed gedocumenteerd over de bredere industrie als een gebruikelijke cloudbeveiligingsmisconfiguratie, precies omdat deze functies vaak behandeld worden als interne implementatiedetails in plaats van onafhankelijk gereviewd als hun eigen, apart blootgestelde stukken infrastructuur.
+Ja, het is specifiek welbegrepen als een veelvoorkomende cloud-misconfiguratie, omdat deze functies vaak behandeld worden als interne implementatiedetails.
 
-### Vereist dit risico dat een founder iets doelbewust incorrect gebouwd heeft, of kan het gebeuren via redelijke, goedbedoelde keuzes?
+### Gebeurt dit risico door bewuste fouten of door redelijke keuzes?
 
-Het gebeurt doorgaans via volkomen redelijke keuzes — een functie specifiek voor intern gebruik bouwen, zonder onmiddellijke reden om na te denken over externe authenticatie, is een natuurlijke, gebruikelijke beslissing die simpelweg niet rekening houdt met het feit dat "intern gebruik" en "publiek bereikbaar" niet automatisch dezelfde beperking zijn.
+Het gebeurt typisch door volkomen redelijke keuzes – het bouwen van een functie specifiek voor intern gebruik zonder onmiddellijke reden om aan externe authenticatie te denken.
 
-### Manifera's engineering omvat zowel serverless- als traditionele serverarchitecturen — helpt die breedte specifiek met gevallen zoals dat van LeesNet?
+### Maakt ervaring met serverloze architectuur uit voor een bibliotheeksysteem?
 
-Ja, aangezien serverless-architecturen hun eigen specifieke toegangscontrolepatronen hebben, verschillend van traditionele server-gebaseerde applicaties, en engineers hebben ervaren over beide betekent dat een review specifiek weet waarop te controleren in elke architecturale stijl in plaats van een one-size-fits-all-checklist toe te passen.
+Ja, aangezien serverloze architecturen hun eigen specifieke patroon voor toegangsbeheer hebben dat verschilt van traditionele servers.
 
-### Herre Roelevink heeft gesproken over founders die architectuurexpertise nodig hebben voor precies de delen van een product die ze niet direct zien — past deze blootgestelde functie precies bij die beschrijving?
+### Past deze blootgestelde functie in het kader van onzichtbare infrastructuurkloven?
 
-Ongeveer zo precies als elk voorbeeld zou kunnen — Sofie zelf merkte op dat ze nooit dacht aan de functie als "onderdeel van het product" op de manier waarop ze dacht over gebruikersgerichte pagina's, precies de onzichtbare, infrastructuurniveau-blinde-vlek die Roelevinks commentaar op de behoeften van AI-native founders consistent identificeert.
+Vrijwel exact – Sofie merkte op dat ze de functie nooit zag als onderdeel van het product, exact de onzichtbare blinde vlek op infrastructuurniveau.
 
-### Is er een manier voor een founder om een basaal gevoel te krijgen van welke functies in hun eigen project bestaan zonder een volledige professionele review?
+### Is er een manier voor een oprichter om zelf te zien welke functies er bestaan?
 
-Het dashboard van een hosting- of deploymentplatform controleren toont doorgaans een lijst gedeployede functies of diensten, wat een redelijk startpunt is voor een founder om te reviewen — hoewel de daadwerkelijke authenticatieconfiguratie en echte-wereld-bereikbaarheid van elk bevestigen, in plaats van alleen zijn bestaan, waar een toegewijde technische review de meest betrouwbare waarde toevoegt.
+Het controleren van het dashboard van een hostingplatform toont typisch een lijst van ingezette functies, wat een redelijk startpunt is voor een oprichter om te bekijken.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Lỗi Serverless Function (Cloud Function) không có xác thực là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lỗi các đoạn API chạy ngầm (như cập nhật dữ liệu, gửi email) bị để công khai URL mà không kiểm tra đăng nhập/token."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại sao lập trình viên/AI lại hay quên thêm xác thực vào các Serverless Function?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vì nghĩ rằng các hàm này chỉ được gọi nội bộ (internal) từ hệ thống chính nên coi nó là 'an toàn mặc định'."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cách tự kiểm tra (Self-audit) danh sách Serverless Function trong dự án?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mở Dashboard Vercel/Supabase/AWS xem mục Functions, lấy URL từng hàm ra thử gọi trực tiếp trên trình duyệt mà không gửi Token."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hậu quả của việc để lọt 1 Serverless Function công khai là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kẻ xấu có thể dùng URL đó để ghi đè dữ liệu DB hàng loạt, gửi mail spam hoặc làm bùng nổ chi phí Cloud billing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thời gian rà soát và bổ sung phân quyền cho toàn bộ Serverless API mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thường hoàn thành trong 4-7 ngày làm việc bao gồm cả việc chuẩn hóa API Key/Secret giữa các dịch vụ."
+      }
+    }
+  ]
+}
+</script>

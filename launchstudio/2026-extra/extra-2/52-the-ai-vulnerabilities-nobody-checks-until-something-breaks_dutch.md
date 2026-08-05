@@ -1,73 +1,146 @@
 ---
-Titel: "De AI-Kwetsbaarheden Die Niemand Controleert Totdat Iets Breekt"
+Titel: "De AI-kwetsbaarheden die niemand controleert totdat er iets breekt"
 Trefwoorden: ai vulnerabilities, ai security vulnerabilities, ai secure, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# De AI-Kwetsbaarheden Die Niemand Controleert Totdat Iets Breekt
+# De AI-kwetsbaarheden die niemand controleert totdat er iets breekt
 
-Een kleine ondernemer uploadt wat eruitziet als een standaard contractsjabloon naar jouw juridisch-documentenplatform, en niets aan het uploadproces geeft enige indicatie dat de daadwerkelijke inhoud van het bestand helemaal niet overeenkomt met zijn schijnbare, verwachte type. Deze specifieke categorie AI-kwetsbaarheden — een bestand accepteren gebaseerd op zijn naam of extensie in plaats van te verifiëren wat het daadwerkelijk bevat — heeft de neiging compleet onzichtbaar te blijven totdat een specifiek vervaardigd bestand het eindelijk test.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De AI-kwetsbaarheden die niemand controleert totdat er iets breekt",
+  "description": "Een echt scenario over een kwaadaardig bestand vermomd als een document-upload.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/the-ai-vulnerabilities-nobody-checks-until-something-breaks"
+  }
+}
+</script>
 
-## Waarom Bestandstypecontroles Gebaseerd Op Extensie Alleen Onvoldoende Zijn
+Een eigenaar van een klein bedrijf uploadt wat lijkt op een standaard contractsjabloon naar uw juridische documentenplatform. Niets aan het uploadproces geeft enige indicatie dat de daadwerkelijke inhoud van het bestand überhaupt niet overeenkomt met het verwachte type. Deze specifieke categorie van AI-kwetsbaarheden – het accepteren van een bestand op basis van zijn naam of extensie in plaats van het verifiëren van de daadwerkelijke inhoud – heeft de neiging compleet onzichtbaar te blijven totdat een specifiek opgesteld bestand het uiteindelijk test.
 
-Een functie die controleert of een geüpload bestand "een document is" door alleen naar zijn bestandsnaamextensie te kijken (bevestigend dat het eindigt op een herkend documentformaat) vertrouwt een label dat de uploader zelf volledig controleert — niets stopt een bestand met uitvoerbare of anderszins kwaadaardige inhoud om simpelweg hernoemd te worden om een document-achtige extensie te dragen, en deze oppervlakkige controle te doorstaan terwijl het iets compleet anders bevat dan wat zijn naam suggereert.
+## Waarom bestandstypecontroles louter op basis van de extensie onvoldoende zijn
 
-## Waarom Dit Meer Ertoe Doet Dan Het Aanvankelijk Lijkt
+Een functie die controleert of een geüpload bestand "een document is" door alleen te kijken naar de extensie van de bestandsnaam (bevestigend dat het eindigt op een erkend documentformaat), vertrouwt op een label dat de uploader zelf volledig beheert. Niets weerhoudt een bestand met uitvoerbare of anderszins kwaadaardige inhoud ervan om simpelweg hernoemd te worden met een documentachtige extensie.
 
-Afhankelijk van hoe een geüpload bestand vervolgens verwerkt of geserveerd wordt, kan een vermomd kwaadaardig bestand mogelijk uitgevoerd worden, of geserveerd worden aan andere gebruikers op een manier die hun eigen apparaat of browser exploiteert, en verandert wat eruitziet als een routine documentupload-functie in een oprecht distributiemechanisme voor iets schadelijks, volledig omdat de onderliggende inhoud nooit daadwerkelijk geverifieerd werd.
+## Waarom dit meer uitmaakt dan het aanvankelijk lijkt
 
-## Waarom Gewoon Testen Dit Nooit Onthult
+Afhankelijk van hoe een geüpload bestand vervolgens verwerkt of geserveerd wordt, kan een vermomd kwaadaardig bestand potentieel uitgevoerd worden, of geserveerd worden aan andere gebruikers op een manier die hun apparaat of browser misbruikt. Dit verandert wat lijkt op een routineuze document-uploadfunctie in een echt distributiemechanisme voor schadelijke inhoud.
 
-Een documentupload-functie testen met oprechte, legitieme documenten — het enige dat een founder die zijn eigen product bouwt en test natuurlijk doet — bevestigt dat de functie correct echte documenten accepteert en toont. Het onthult niets over wat er gebeurt met een bestand waarvan de daadwerkelijke inhoud niet overeenkomt met zijn schijnbare type, aangezien zo'n bestand construeren doelbewuste intentie vereist die de eigen eerlijke tests van een founder simpelweg geen reden hebben te produceren.
+## Waarom gewoon testen dit nooit onthult
 
-## Waarom Juridische En Documentafhandelingsproducten Deze Vraag Bijzonder Direct Onder Ogen Zien
+Het testen van een document-uploadfunctie met eerlijke, legitieme documenten – het enige wat een oprichter die zijn eigen product bouwt en test van nature doet – bevestigt dat de functie echte documenten correct accepteert en toont. Het onthult niets over wat er gebeurt met een bestand waarvan de daadwerkelijke inhoud niet overeenkomt met het schijnbare type.
 
-Een platform specifiek gebouwd rond het genereren en uitwisselen van juridische documenten handelt natuurlijk een hoog volume bestandsuploads af als kernonderdeel van zijn daadwerkelijke doel, wat betekent dat deze risicocategorie geen perifere zorg is voor een product zoals dit — het zit dicht bij het centrum van wat het product het vaakst doet, wat het de moeite waard maakt specifiek te controleren in plaats van als bijzaak aan te nemen.
+## Waarom juridische en documentverwerkende producten deze vraag heel direct stellen
 
-## Wat Dit Gat Correct Dichten Vereist
+Een platform dat specifiek gebouwd is rond het genereren en uitwisselen van juridische documenten verwerkt van nature een hoog volume aan bestandsuploads. Dit betekent dat deze risicocategorie geen randverschijnsel is, maar dicht bij het centrum ligt van wat het product het meest doet.
 
-Een correcte fix verifieert de daadwerkelijke inhoud van een geüpload bestand tegen zijn beweerde type, niet louter zijn bestandsnaamextensie, en weigert alles dat niet oprecht overeenkomt met wat het beweert te zijn. [LaunchStudio](https://launchstudio.eu/en/) implementeert precies dit soort inhoudsverificatiecontrole als onderdeel van zijn bestandsafhandelingsbeveiligingsreview, gesteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsupload- en -verwerkingsfuncties over productiesystemen.
+## Wat het op de juiste manier herstellen hiervan vereist
 
-Manifera's bestandsafhandelingsbeveiligingsreviews worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Een correcte herstelling verifieert de daadwerkelijke inhoud van een geüpload bestand (via binary signatures / magic bytes) tegen zijn geclaimde type, en niet louter zijn bestandsnaamextensie. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort inhoudsverificatie als onderdeel van haar beveiligingsbeoordeling van bestandsafhandeling, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsupload- en verwerkingsfuncties over productiesystemen.
 
-[Krijg een gratis blik op jouw prototype — stuur gewoon de link](https://launchstudio.eu/en/#contact).
+Manifera's beveiligingsbeoordelingen voor bestandsafhandeling worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Krijg een gratis blik op uw prototype — stuur simpelweg de link](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: het contractsjabloon dat eigenlijk geen document was
+### Een AI-native oprichter in actie: Het sjabloon dat eigenlijk geen document was
 
-Floor, een voormalig paralegal die founder werd in Woerden, bouwde ContractKlaar, een AI-geassisteerde juridische-documentgeneratietool gebouwd met Lovable, waarmee kleine ondernemers bestaande contractsjablonen konden uploaden om aan te passen met de AI-geassisteerde bewerkingsfuncties van het platform.
+Floor, een voormalig juridisch medewerker die oprichter werd in Woerden, bouwde ContractKlaar, een AI-ondersteunde tool voor het genereren van juridische documenten gebouwd met Lovable. Het laat kleinschalige ondernemers bestaande contract-sjablonen uploaden om aan te passen.
 
-Een beveiligingsonderzoeker, die verscheidene tools voor kleine bedrijven testte als onderdeel van onafhankelijk, verantwoordelijk onderzoek, uploadde een bestand vermomd met een legitiem ogende documentextensie maar met andere, uitvoerbare inhoud, en ontdekte dat ContractKlaar het accepteerde en verwerkte zonder enige verificatie van de daadwerkelijke bestandsinhoud. LaunchStudio's review bevestigde dat de uploadfunctie alleen de extensie van de bestandsnaam controleerde, zonder verificatie dat de daadwerkelijke inhoud van het bestand overeenkwam met een oprecht, verwacht documentformaat.
+Een beveiligingsonderzoeker die verschillende MKB-tools testte als onderdeel van onafhankelijk onderzoek, uploadde een bestand vermomd met een legitiem lijkende documentextensie, maar bevattende uitvoerbare inhoud. Hij ontdekte dat ContractKlaar het accepteerde en verwerkte zonder enige verificatie van de daadwerkelijke bestandsinhoud. LaunchStudio's beoordeling bevestigde dat de uploadfunctie alleen de bestandsnaamextensie controleerde.
 
-**Resultaat:** LaunchStudio implementeerde correcte inhoudstypeverificatie op elk geüpload bestand, en weigert alles waarvan de daadwerkelijke inhoud niet overeenkomt met zijn beweerde type, en dicht het gat voordat het geëxploiteerd kon worden door iemand met minder goedaardige bedoelingen dan de onderzoeker die het rapporteerde.
+**Resultaat:** LaunchStudio implementeerde de juiste typeverificatie van inhoud op elk geüpload bestand, wat alles weigert waarvan de daadwerkelijke inhoud niet overeenkomt met het geclaimde type. Dit sloot de kloof voordat het misbruikt kon worden.
 
-> *"De onderzoeker was volledig open en verantwoordelijk erover, waar ik oprecht dankbaar voor ben. Het had net zo makkelijk iemand kunnen zijn die precies hetzelfde testte zonder enige intentie om het ons te vertellen."*
-> — **Floor Aerts, Founder, ContractKlaar (Woerden)**
+> *"De onderzoeker was compleet transparant en verantwoordelijk, waar ik oprecht dankbaar voor ben. Het had net zo goed iemand kunnen zijn die exact hetzelfde testte zonder enige intentie om het ons te vertellen."*
+> — **Floor Aerts, Oprichter, ContractKlaar (Woerden)**
 
-**Kosten & tijdlijn:** €2.400 (implementatie bestandsinhoudsverificatie) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.400 (implementatie van verificatie van bestandsinhoud) — voltooid in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een bestandsbeveiligingsspecialist alleen-extensie-validatie een gebruikelijke, goed bekende zwakte beschouwen?
+### Zou een bestandsbeveiligingsspecialist validatie op basis van uitsluitend extensies beschouwen als een veelvoorkomende zwakheid?
 
-Ja, goed bekend genoeg om een standaarditem te zijn gecontroleerd in professionele bestandsupload-beveiligingsreviews specifiek omdat bestandsnaamextensies triviaal makkelijk zijn voor een uploader om te controleren en niets weerspiegelen over de daadwerkelijke, onderliggende inhoud van een bestand.
+Ja, bekend genoeg om een standaard gecontroleerd item te zijn in professionele beoordelingen, specifiek omdat bestandsnaamextensies triviaal eenvoudig te controleren zijn door een uploader.
 
-### Raakt dit risico alleen platformen expliciet gebouwd rond documentafhandeling, of breder?
+### Geldt dit risico alleen voor platformen die expliciet zijn gebouwd rond documentverwerking?
 
-Het geldt voor elke functie die bestandsuploads van welke soort dan ook accepteert — profielfoto's, bijlagen, elke uploadfunctie — hoewel het bijzonder direct ertoe doet voor een platform zoals ContractKlaar waar documentupload en -verwerking een kern-, frequent gebruikt onderdeel is van het daadwerkelijke doel van het product.
+Het geldt voor elke functie die bestandsuploads van welke aard dan ook accepteert (profielfoto's, bijlagen).
 
-### Manifera's ervaring spant bestandsafhandelingsbeveiliging over vele verschillende industrieën — helpt die variëteit een juridisch-tech-specifiek geval zoals dit te vangen?
+### Maakt ervaring met bestandsafhandeling over verschillende industrieën uit?
 
-Ja, aangezien het onderliggende inhoudsverificatiepatroon identiek is ongeacht industrie, en dit gecontroleerd en getest hebben over vele verschillende uploadafhandelingscontexten betekent dat het snel en correct toegepast wordt op de specifieke implementatie van een nieuwe klant, juridisch-tech of anderszins.
+Ja, aangezien het onderliggende inhoudsverificatiepatroon identiek is ongeacht de industrie.
 
-### Herre Roelevink heeft benadrukt dat founders in gevoelige-document- of gereguleerd-aangrenzende ruimtes verhoogde inzet onder ogen zien voor precies dit soort gat — illustreert ContractKlaars geval dat goed?
+### Illustreert ContractKlaar's casus de hogere belangen voor platformen met gevoelige documenten?
 
-Ja, direct — een juridisch documentplatform dat contracten van kleine bedrijven afhandelt draagt betekenisvol hogere echte-wereld-gevolgen van dit soort gat dan een lager-risico hobbyproject, precies het soort contextafhankelijke risico-escalatie dat Roelevinks bredere commentaar op founder-schaal producten in gevoelige domeinen consistent benadrukt.
+Ja, rechtstreeks – een juridisch documentenplatform dat MKB-contracten verwerkt draagt betekenisvol hogere real-world consequenties bij dit soort kloven.
 
-### Is verantwoordelijke onthulling door een onafhankelijke onderzoeker, zoals gebeurde in Floors geval, iets waar een founder op kan vertrouwen als hun primaire vangnet?
+### Kan een oprichter vertrouwen op verantwoorde openbaarmaking door onderzoekers als primaire veiligheidsnet?
 
-Nee — hoewel verantwoordelijke onthulling van ethische onderzoekers gebeurt en oprecht waardevol is wanneer het voorkomt, is het niet gegarandeerd, consistent, of iets waarop een product gebouwd zou moeten worden te vertrouwen; een proactieve review dicht hetzelfde gat zonder te vertrouwen op de goede wil of timing van wie het ook eerst vindt.
+Nee – hoewel verantwoorde openbaarmaking waardevol is als het gebeurt, is het niet gegarandeerd of iets waar een product op gebouwd moet worden.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Chỉ kiểm tra đuôi file (File Extension như .pdf, .docx) khi upload có an toàn không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không an toàn — kẻ xấu chỉ cần đổi tên một file độc hại (như file mã độc .exe, .php, .js) thành .pdf là có thể qua mặt hệ thống dễ dàng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cách kiểm tra định dạng file chuẩn xác nhất (MIME/File Content Verification) là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Đọc chữ ký nhị phân đầu file (Magic Bytes/File Header) ở Server để xác nhận đúng cấu trúc file thực tế thay vì tin vào đuôi tên file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hậu quả của việc cho phép Upload file độc hại lên Server là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Server có thể bị chiếm quyền điều khiển (Remote Code Execution), hoặc lây nhiễm mã độc sang những người dùng khác khi họ mở file xem thử."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Các loại ứng dụng nào dễ dính lỗ hổng Upload file nhất?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Các app Quản lý tài liệu pháp lý, Phần mềm nhân sự (nhận CV), Hệ thống bảo hiểm (nhận hóa đơn) và các trang web cho upload ảnh đại diện/hồ sơ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thời gian triển khai giải pháp quét và xác thực nội dung file upload mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thường hoàn thành trong 5-8 ngày làm việc bao gồm cả bước quét virus/malware tự động trước khi lưu trữ."
+      }
+    }
+  ]
+}
+</script>

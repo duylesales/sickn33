@@ -2,8 +2,9 @@
 Titel: "API en AI: het ontwerpen van de interface die andere systemen daadwerkelijk zullen aanroepen"
 Trefwoorden: api and ai, api in ai, ai deployment, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische Solo Oprichter / Indie Hacker
 ---
+
 # API en AI: het ontwerpen van de interface die andere systemen daadwerkelijk zullen aanroepen
 
 <script type="application/ld+json">
@@ -11,7 +12,7 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "API en AI: het ontwerpen van de interface die andere systemen daadwerkelijk zullen aanroepen",
-  "description": "De meeste richtlijnen over API en AI hebben betrekking op het aanroepen van de API van iemand anders. Minder behandeld: wat verandert er als uw eigen AI-product een API moet ontsluiten die de systemen van anderen zullen aanroepen, vaak onvoorspelbaar en op grote schaal.",
+  "description": "De meeste richtlijnen over API en AI behandelen het aanroepen van de API van iemand anders. Minder behandeld: wat er verandert wanneer uw eigen AI-product een API moet blootstellen die de systemen van andere mensen zullen aanroepen, vaak onvoorspelbaar en op schaal.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,68 +31,82 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-De meeste gesprekken over API en AI gaan over het feit dat uw product de API van iemand anders gebruikt: u belt een AI-modelaanbieder, een betalingsverwerker of een mappingservice, altijd vanuit de positie van de klant die beslist hoe hij zich moet gedragen. Een stillere, minder besproken versie van dezelfde vraag komt naar voren zodra uw eigen product zo succesvol is dat klanten om het omgekeerde vragen: een API die ze in uw AI-product kunnen aanroepen en deze op hun eigen voorwaarden in hun eigen workflows en systemen kunnen integreren. Dit is een heel ander ontwerpprobleem, en AI-coderingstools, geoptimaliseerd rond het bouwen van de eigen interface van het product voor de eigen eindgebruikers, pakken dit zelden aan totdat iemand er specifiek om vraagt, omdat niets bij het genereren van een klantgerichte frontend natuurlijk anticipeert op een tweede, geheel ander soort beller.
+De meeste gesprekken over API en AI gaan over het feit dat uw product de API van iemand anders gebruikt – het aanroepen van een AI-modelaanbieder, een betalingsverwerker, een kartografiedienst, altijd vanuit de positie van de client die beslist hoe deze zich gedraagt. Een stillere, minder besproken versie van dezelfde vraag arriveert zodra uw eigen product succesvol genoeg is dat klanten om het omgekeerde vragen: een API die ze kunnen aanroepen in uw AI-product, om het te integreren in hun eigen workflows en systemen op hun eigen voorwaarden. Dit is een oprecht ander ontwerpprobleem, en AI-codeertools, geoptimaliseerd rond het bouwen van de eigen interface van het product voor zijn eigen eindgebruikers, behandelen het zelden totdat iemand er specifiek om vraagt, omdat niets aan het genereren van een klantgerichte frontend van nature anticipeert op een tweede, volledig ander type aanroeper.
 
-## Waarom het blootleggen van een API een andere discipline is dan het consumeren ervan
+## Waarom het blootstellen van een API een andere discipline is dan het gebruiken van een API
 
-Wanneer uw product een externe API aanroept, bepaalt u het tempo, de logica voor opnieuw proberen en de foutafhandeling. U bent de klant, bepaalt hoe zorgvuldig u zich moet gedragen en bent vrij om dat gedrag aan te passen wanneer u maar wilt. Wanneer uw product een API beschikbaar stelt die anderen kunnen aanroepen, wordt u degene van wie u afhankelijk bent, door ontwikkelaars die u nog nooit hebt ontmoet, en integreert u op manieren die u niet noodzakelijkerwijs had verwacht, op een verzoekpatroon dat u niet onder controle heeft en dat u niet van tevoren kunt voorspellen. De discipline verschuift van ‘hoe ga ik hier verantwoord mee om’ naar ‘hoe blijf ik stabiel en voorspelbaar voor mensen wier code ik niet kan zien en wier aannames over mijn product ik alleen maar kan raden’.
+Wanneer uw product een externe API aanroept, controleert u het tempo, de retry-logica en de foutafhandeling – u bent de client, die beslist hoe voorzichtig hij zich gedraagt en vrij om dat gedrag aan te passen wanneer u maar wilt. Wanneer uw product een API blootstelt zodat anderen deze kunnen aanroepen, wordt u degene van wie men afhankelijk is, door ontwikkelaars die u nooit hebt ontmoet, die integreren op manieren waar u niet noodzakelijkerwijs op had geanticipeerd, met een verzoekpatroon dat u niet beheert en vooraf niet kunt voorspellen. De discipline verschuift van "hoe gebruik ik dit verantwoordelijk" naar "hoe blijf ik stabiel en voorspelbaar voor mensen wier code ik niet kan zien en wier aannames over mijn product ik alleen maar kan raden."
 
-## Wat er specifiek verandert als u degene bent die wordt geroepen
+## Wat er specifiek verandert als u degene bent die wordt aangeroepen
 
-**Versioning wordt een echte verplichting, geen nice-to-have.** Een verandering die aanvoelde als een onschuldige interne refactor van de logica van uw eigen product kan stilletjes elke externe integratie verbreken die is gebouwd op basis van de vorige responsvorm van uw API. Dit betekent dat elk eindpunt dat bedoeld is voor extern gebruik vanaf het begin een doelbewuste versiebeheerstrategie nodig heeft, en niet een bijzaak die pas wordt bereikt zodra de eerste integrator klaagt dat iets dat vroeger werkte, plotseling niet meer werkt.
+**Versiebeheer wordt een echte toezegging, geen nice-to-have.** Een wijziging die voelde als een onschuldige interne herstructurering van de logica van uw product, kan stil elke externe integratie breken die is gebouwd op de vorige responsstructuur van uw API – wat betekent dat elk eindpunt dat bedoeld is voor extern gebruik vanaf het begin een doordachte versiebeheerstrategie nodig heeft, niet een bijzaak die pas wordt gepakt als de eerste integrator klaagt dat iets wat voorheen werkte plotseling niet meer werkt.
 
-**Snelheidsbeperking beschermt u, niet alleen hen.** De foutieve herhalingslus van een externe integrator of een onverwacht populaire gebruikssituatie kan een belasting genereren die uw product nooit had verwacht, waardoor de snelheidsbeperkende discipline die beschermt tegen opzettelijk misbruik hier net zo relevant is als verdediging tegen volledig goedbedoeld maar werkelijk onvoorspelbaar gebruik door iemand die nooit de bedoeling had een probleem te veroorzaken.
+**Snelheidsbeperking (rate limiting) beschermt u, niet alleen hen.** De foutieve retry-lus of het onverwacht populaire gebruiksscenario van een externe integrator kan een belasting genereren waarop uw product nooit had geanticipeerd, waardoor de snelheidsbeperkingsdiscipline die beschermt tegen opzettelijk misbruik hier even relevant is als verdediging tegen volledig goedbedoeld maar oprecht onvoorspelbaar gebruik van iemand die nooit de bedoeling had om een probleem te veroorzaken.
 
-**Documentatie wordt onderdeel van het product, geen interne referentie.** Een API is slechts zo bruikbaar als wat een externe ontwikkelaar kan begrijpen zonder u rechtstreeks te vragen. Dit betekent dat duidelijke, nauwkeurige documentatie op zichzelf een functionele vereiste is, en geen aanvullende inhoud, voor alles dat bedoeld is om te worden aangeroepen door systemen buiten uw eigen systeem waar u niet persoonlijk doorheen kunt lopen.
+**Documentatie wordt onderdeel van het product, niet alleen interne referentie.** Een API is alleen zo bruikbaar als wat een externe ontwikkelaar kan begrijpen zonder het u rechtstreeks te vragen – wat betekent dat duidelijke, nauwkeurige documentatie een functionele vereiste op zich is, geen aanvullende inhoud, voor alles wat bedoeld is om te worden aangeroepen door systemen buiten uw eigen systemen die u niet persoonlijk kunt doorlopen.
 
-**Authenticatie moet verder reiken dan uw eigen inlogstroom.** API-sleutels, bereikbare machtigingen en het bijhouden van gebruik per integrator zijn een volledig ander authenticatiemodel dan de sessiegebaseerde login die de eigen frontend van uw product gebruikt, en vereist een doelbewust ontwerp in plaats van eenvoudigweg hetzelfde patroon standaard te hergebruiken en te hopen dat het past.
+**Authenticatie moet schalen voorbij uw eigen inlogstroom.** API-sleutels, gescopte machtigingen en gebruiksregistratie per integrator zijn een volledig ander authenticatiemodel dan de op sessies gebaseerde inlogfunctie die de frontend van uw eigen product gebruikt, wat een doordacht ontwerp vereist in plaats van simpelweg standaard hetzelfde patroon te hergebruiken en te hopen dat het past.
 
-## Waarom deze kloof specifiek laat aan het licht komt
+## Waarom deze kloof specifiek laat naar voren komt
 
-De meeste oprichters van AI-native zijn niet van plan om vanaf de eerste dag een API beschikbaar te stellen. Deze wordt doorgaans pas nodig als een klant er specifiek om vraagt, wat betekent dat het verzoek meestal binnenkomt nadat de interne patronen van het product al stevig zijn verankerd rond het bedienen van je eigen frontend, en niet door externe integrators, waardoor een echt afzonderlijke ontwerppas nodig is in plaats van een snelle uitbreiding van wat al bestaat en er op het eerste gezicht hetzelfde uitziet.
+De meeste AI-native oprichters zijn niet van plan om vanaf dag één een API bloot te stellen – het wordt doorgaans pas noodzakelijk zodra een klant er specifiek om vraagt, wat betekent dat het verzoek meestal arriveert nadat de interne patronen van het product al stevig zijn verankerd rond het bedienen van uw eigen frontend, niet externe integrators, wat een oprecht afzonderlijke ontwerpronde vereist in plaats van een snelle uitbreiding van wat al bestaat en toevallig aan de oppervlakte vergelijkbaar lijkt.
 
-[LaunchStudio](https://launchstudio.eu/en/) ontwerpt en verstevigt extern gerichte API's specifiek voor AI-native producten die overgaan van alleen intern naar integrator-ready, op basis van Manifera's bredere ervaring met het bouwen en beveiligen van productie-API's voor zakelijke klanten, waaronder Vodafone, waarbij dezelfde versie- en snelheidsbeperkende discipline wordt toegepast, ongeacht de grootte van het verzoekende bedrijf of hoe terloops het oorspronkelijke verzoek om API-toegang werd gedaan.
+[LaunchStudio](https://launchstudio.eu/en/) ontwerpt en verhardt extern gerichte API's specifiek voor AI-native producten die overstappen van alleen-intern naar integrator-gereed, gebruikmakend van Manifera's bredere ervaring met het bouwen en beveiligen van productie-API's voor enterprise-klanten waaronder Vodafone, door dezelfde versiebeheer- en snelheidsbeperkingsdiscipline toe te passen ongeacht de grootte van het aanvragende bedrijf of hoe informeel het oorspronkelijke verzoek om API-toegang ook werd gedaan.
 
-[Maak uw API klaar voor mensen wier code u nooit zult zien](https://launchstudio.eu/en/#calculator) — een andere discipline dan het bouwen van de interface van uw eigen product, en een discipline die gemakkelijk te onderschatten is totdat deze in het echt wordt getest.
+[Maak uw API gereed voor mensen wier code u nooit zult zien](https://launchstudio.eu/en/#calculator) — een andere discipline dan het bouwen van de interface van uw eigen product, en een die gemakkelijk te onderschatten is totdat deze in het echt wordt getest.
+
+## Het betrouwbaarheidscontract dat u stilzwijgend ondertekent
+
+Versiebeheer, snelheidsbeperking, documentatie en gescopte authenticatie – de vier categorieën die hierboven zijn behandeld – zijn de technische mechanica van het blootstellen van een stabiele API. Er is een tweede, minder technische laag die er bovenop zit: op het moment dat een extern systeem afhankelijk is van uw API, hebt u zich stilzwijgend aangemeld voor een reeks doorlopende toezeggingen die minder te maken hebben met code en meer met hoe voorspelbaar en eerlijk u communiceert over het ding waarvoor u nu verantwoordelijk bent om het stabiel te houden.
+
+**Een statuspagina, zelfs een minimale.** Wanneer uw API een probleem heeft, is de eerste vraag van een integrator of het hun probleem is of het uwe – een eenvoudige, eerlijk onderhouden statuspagina beantwoordt die vraag rechtstreeks, zonder dat ze u hoeven te e-mailen en te wachten, en zonder dat u persoonlijk dezelfde "ligt het aan mij"-vraag van elke getroffen integrator individueel hoeft af te handelen tijdens een incident dat al stressvol genoeg is.
+
+**Een uitfaseringsvenster (deprecation window) waar u zich echt aan committeert en volgt.** Een brekende verandering aankondigen is slechts de helft van de toezegging – de andere helft is integrators echte voorafgaande kennisgeving geven, consistent, in plaats van een gul venster bij de eerste uitfasering en een haastige bij de derde omdat een oplossing snel moest worden verzonden. Integrators die echte afhankelijkheden van uw API bouwen, vertrouwen net zo goed op het uitfaseringsbeleid als op de API zelf; dat vertrouwen één keer beschadigen heeft invloed op hoe voorzichtig ze elke toekomstige update behandelen die u verzendt.
+
+**Een ondersteuningskanaal specifiek voor integrators, niet gevouwen in algemene klantenservice.** Een ontwikkelaar die een integratieprobleem foutzoekt, heeft een ander type reactie nodig dan een klant die vraagt hoe een functie werkt – beide door dezelfde algemene ondersteuningswachtrij leiden betekent dat technische vragen wachten achter niet-technische vragen, of worden beantwoord door iemand zonder de context om ze daadwerkelijk op te lossen, wat het vertrouwen in uw API sneller uitholt dan het onderliggende technische probleem op zichzelf zou hebben gedaan.
+
+**Foutreacties ontworpen om daadwerkelijk informatief te zijn, niet alleen technisch correct.** Een generieke foutreactie is correct in de zin dat deze signaleert dat er iets is mislukt, maar het vertelt het systeem van een externe integrator niet wat het daadwerkelijk als volgende moet doen – opnieuw proberen, terugtrekken of volledig stoppen – wat betekent dat hetzelfde gebrek aan gestructureerde foutafhandeling dat in brede productiegereedheidsrichtlijnen wordt behandeld, hier nog belangrijker is, aangezien de persoon die de fout leest deze keer de code van een vreemde is zonder andere context om op terug te vallen.
+
+**Eerlijk zijn tegen uzelf over de betrouwbaarheidsverwachting die u instelt, zelfs zonder een formeel SLA.** U hebt geen ondertekende service-level agreement nodig om een impliciete belofte te hebben gedaan – het moment dat een integrator een echte afhankelijkheid van uw API bouwt, vertrouwen ze erop dat deze zich gedraagt zoals tot nu toe, of dat vertrouwen nu formeel is gedocumenteerd of niet. Intern weten welk betrouwbaarheidsniveau u daadwerkelijk kunt toezeggen – en dit eerlijk communiceren in plaats van een integrator meer te laten aannemen dan u kunt leveren – voorkomt het specifieke soort vertrouwensschade dat optreedt wanneer een niet-vermelde verwachting verkeerd blijkt te zijn geweest.
 
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: de retry-loop van één integrator heeft bijna alle anderen uitgeschakeld
+### Een AI-native oprichter in actie: de retry-lus van één integrator haalde bijna alle anderen onderuit
 
-Sietse, een voormalige supply chain-analist die oprichter werd in Enschede, bouwde VoorraadSync – een AI-tool die voorraadbestelpunten voor kleine groothandelaars voorspelt – met behulp van Bolt, en had op specifiek verzoek van een klant een eenvoudig API-eindpunt gebouwd, waardoor hun interne ERP-systeem elke ochtend automatisch de voorspellingsgegevens van VoorraadSync kon ophalen.
+Sietse, een voormalig supply chain analist die oprichter werd in Enschede, bouwde VoorraadSync – een AI-tool die voorraad-herbestelpunten voorspelt voor kleine groothandelsdistributeurs – met behulp van Bolt, en had op specifiek verzoek van een klant een eenvoudig API-eindpunt gebouwd, waarmee hun interne ERP-systeem de prognosegegevens van VoorraadSync elke ochtend automatisch kon ophalen.
 
-Een verkeerd geconfigureerde instelling voor opnieuw proberen in de ERP-integratie van die klant zorgde ervoor dat mislukte verzoeken elke paar seconden opnieuw werden verzonden in plaats van zich terug te trekken, en omdat het API-eindpunt van Sietse geen snelheidslimiet had, vertraagde het resulterende verzoekvolume merkbaar de responstijden van VoorraadSync voor elke andere klant die het product normaal tegelijkertijd gebruikte.
+Een verkeerd geconfigureerde retry-instelling in de ERP-integratie van die klant zorgde ervoor dat mislukte verzoeken om de paar seconden opnieuw werden verzonden in plaats van terug te trekken, en omdat het API-eindpunt van Sietse geen snelheidsbeperking had ingesteld, vertraagde het resulterende verzoekvolume de responstijden van VoorraadSync merkbaar voor elke andere klant die het product normaal op hetzelfde moment käns.
 
-**Resultaat:** LaunchStudio implementeerde snelheidsbeperkingen per integrator en duidelijke, gedocumenteerde foutreacties die het ERP-systeem van de klant precies zouden hebben verteld wat er aan de hand was, in plaats van het in stilte voor onbepaalde tijd opnieuw te proberen, waardoor het gat werd gedicht voordat het zich opnieuw kon voordoen bij deze of een toekomstige integrator.
+**Resultaat:** LaunchStudio implementeerde snelheidsbeperking per integrator en duidelijke, gedocumenteerde foutreacties die het ERP-systeem van de klant precies zouden hebben verteld wat er gebeurde in plaats van stil onbeperkt opnieuw te proberen, waardoor de kloof werd gedicht voordat deze zich bij deze of een toekomstige integrator kon herhalen.
 
-> *"Het geautomatiseerde systeem van één klant heeft per ongeluk mijn API gehamerd, en omdat ik nooit van plan was geweest dat iemand anders dan ikzelf de API zou noemen, was er niets dat het tegenhield om het hele product tegelijkertijd voor alle anderen te vertragen."*
-> — **Sietse Groenewoud, oprichter, VoorraadSync (Enschede)**
+> *"Het geautomatiseerde systeem van één klant hamerde per ongeluk op mijn API, en omdat ik nooit had gepland dat iemand behalve ikzelf het zou aanroepen, was er niets dat het tegenhield om het hele product voor iedereen tegelijk te vertragen."*
+> — **Sietse Groenewoud, Oprichter, VoorraadSync (Enschede)**
 
-**Kosten en tijdlijn:** € 1.350 (externe API-verharding – snelheidsbeperking, versiebeheer, documentatie) – voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.350 (externe API-verharding — snelheidsbeperking, versiebeheer, documentatie) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Moet elk AI-native product uiteindelijk zijn eigen API beschikbaar stellen?
+### Moet elk AI-native product uiteindelijk zijn eigen API blootstellen?
 
-Nee – veel producten hebben dit nooit nodig, en het speculatief bouwen ervan voordat een klant er daadwerkelijk om vraagt ​​is meestal onnodige moeite; De richtlijnen hier zijn van toepassing zodra er sprake is van een echte behoefte, en niet als standaardvereiste voor elk product.
+Nee – veel producten hebben dit nooit nodig, en het speculatief bouwen ervan voordat een klant er daadwerkelijk om vraagt is meestal onnodige moeite; de richtlijnen hier zijn van toepassing zodra er een echte behoefte arriveert, niet als een standaardvereiste voor elk product.
 
-### Hoe verschilt de snelheidslimiet voor externe API-integrators van de algemene snelheidslimiet die wordt gebruikt om misbruik van de eigen frontend van een product te voorkomen?
+### Hoe verschilt snelheidsbeperking voor externe API-integrators van de algemene snelheidsbeperking die wordt gebruikt om misbruik van de frontend van een product te voorkomen?
 
-Het onderliggende mechanisme is vergelijkbaar, maar externe integrators hebben specifiek limieten per sleutel of per integrator nodig, omdat het systeem van een enkele klant, zoals de ERP-integratie van Sietse, moet worden ingeperkt zonder dat dit gevolgen heeft voor niet-verwante klanten die het product via de normale interface gebruiken.
+Het onderliggende mechanisme is vergelijkbaar, maar externe integrators hebben specifiek limieten per sleutel of per integrator nodig, aangezien het systeem van één enkele klant, zoals de ERP-integratie van Sietse, moet worden ingeperkt zonder dat dit van invloed is op ongerelateerde klanten die het product via de normale interface gebruiken.
 
-### Is API-versiebeheer iets dat moet worden gepland vanaf de allereerste versie van een API, zelfs voordat er externe wijzigingen worden verwacht?
+### Is API-versiebeheer iets dat moet worden gepland vanaf de allereerste versie van een API, zelfs voordat er externe wijzigingen worden voorzien?
 
-In het ideale geval wel, aangezien het achteraf inbouwen van een versiebeheerschema op een API die integrators al actief gebruiken aanzienlijk verstorender is dan het vanaf het begin opnemen van een versie-identificator, zelfs als de eerste versie nooit verandert.
+Idealiter wel, aangezien het achteraf inpassen van een versiebeheerschema op een API die al actief door integrators wordt gebruikt aanzienlijk ontregelender is dan het opnemen van een versie-identifier vanaf het begin, zelfs als de eerste versie nooit verandert.
 
-### Welk documentatieniveau is eigenlijk nodig voor een API die door slechts één of twee huidige integrators wordt gebruikt?
+### Welk niveau van documentatie is daadwerkelijk nodig voor een API die door slechts één of twee huidige integrators wordt gebruikt?
 
-Zelfs voor een klein aantal integrators vermindert documentatie over authenticatie, verwachte aanvraag- en antwoordformaten en foutafhandeling de ondersteuningslast en integratiefouten aanzienlijk, omdat dit de belangrijkste manier is waarop een externe ontwikkelaar uw API begrijpt zonder directe toegang tot u.
+Zelfs voor een klein aantal integrators vermindert documentatie die authenticatie, verwachte verzoek- en responsformaten en foutafhandeling omvat de ondersteuningslast en integratiefouten aanzienlijk, aangezien het de primaire manier is waarop een externe ontwikkelaar uw API begrijpt zonder directe toegang tot u.
 
-### Kan een bestaande API die alleen intern is, worden geconverteerd naar een extern gerichte API zonder deze volledig opnieuw op te bouwen?
+### Kan een bestaande alleen-interne API worden omgezet in een extern gerichte API zonder een volledige herbouw?
 
-Meestal wel – zoals in het geval van Sietse bestond de oplossing uit het toevoegen van snelheidsbeperking, versiebeheer en documentatie rond een reeds functioneel eindpunt, en niet het opnieuw opbouwen van de onderliggende logica die de voorspellingsgegevens zelf genereert.
+Meestal wel – zoals in het geval van Sietse, was de oplossing het toevoegen van snelheidsbeperking, versiebeheer en documentatie rond een al functioneel eindpunt, niet het herbouwen van de onderliggende logica die de prognosegegevens zelf genereert.
 
 <script type="application/ld+json">
 {
@@ -100,42 +115,42 @@ Meestal wel – zoals in het geval van Sietse bestond de oplossing uit het toevo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Does every AI-native product eventually need to expose its own API?",
+      "name": "Moet elk AI-native product uiteindelijk zijn eigen API blootstellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, many products never need this \u2014 the guidance applies once a genuine need arrives, not as a default requirement."
+        "text": "Nee, veel producten hebben dit nooit nodig — de richtlijnen zijn van toepassing zodra er een echte behoefte arriveert."
       }
     },
     {
       "@type": "Question",
-      "name": "How is rate limiting for external integrators different from general abuse prevention?",
+      "name": "Hoe verschilt snelheidsbeperking voor externe integrators van misbruikpreventie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "External integrators need per-key or per-integrator limits so one client's system can be contained without affecting other customers."
+        "text": "Externe integrators hebben limieten per sleutel nodig zodat het systeem van één klant ingeperkt kan worden zonder anderen te beïnvloeden."
       }
     },
     {
       "@type": "Question",
-      "name": "Should API versioning be planned from the very first version?",
+      "name": "Moet API-versiebeheer worden gepland vanaf de allereerste versie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ideally yes, since retrofitting versioning onto an API already in active use by integrators is considerably more disruptive."
+        "text": "Idealiter wel, aangezien achteraf versiebeheer toevoegen op een API in gebruik aanzienlijk ontregelender is."
       }
     },
     {
       "@type": "Question",
-      "name": "How much documentation is necessary for an API with only a couple of current integrators?",
+      "name": "Hoeveel documentatie is nodig voor een API met slechts een paar integrators?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Even for a small number, documentation covering authentication and error handling meaningfully reduces support burden."
+        "text": "Zelfs voor een klein aantal vermindert documentatie over authenticatie en foutmeldingen de ondersteuningslast aanzienlijk."
       }
     },
     {
       "@type": "Question",
-      "name": "Can an existing internal-only API be converted to external-facing without a full rebuild?",
+      "name": "Kan een interne API worden omgezet naar extern zonder volledige herbouw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually yes \u2014 the fix is typically adding rate limiting, versioning, and documentation around already-functional logic."
+        "text": "Meestal wel — de oplossing is doorgaans het toevoegen van snelheidsbeperking, versiebeheer en documentatie rond bestaande logica."
       }
     }
   ]

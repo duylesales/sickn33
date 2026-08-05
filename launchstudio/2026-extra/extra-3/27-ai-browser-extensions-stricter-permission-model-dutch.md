@@ -1,17 +1,18 @@
 ---
-Titel: "AI-browserextensies: een strenger toestemmingsmodel dan een webapp"
+Titel: "AI-browserextensies: Een strenger machtigingsmodel dan een web-app"
 Trefwoorden: ai native, ai secure, ai coding, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische Solo Oprichter / Indie Hacker
 ---
-# AI-browserextensies: een strenger toestemmingsmodel dan een webapp
+
+# AI-browserextensies: Een strenger machtigingsmodel dan een web-app
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-browserextensies: een strenger toestemmingsmodel dan een webapp",
-  "description": "Een door AI gegenereerde browserextensie werkt met echt andere, vaak bredere toegang dan een typische web-app, en winkelbeoordelingsprocessen controleren op specifieke dingen die een oprichter die zijn eerste extensie bouwt, misschien niet verwacht.",
+  "headline": "AI-browserextensies: Een strenger machtigingsmodel dan een web-app",
+  "description": "Een AI-gegenereerde browserextensie draait met oprecht andere, vaak bredere toegang dan een typische web-app. En winkelbeoordelingsprocessen controleren op specifieke dingen.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,46 +31,62 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Een AI-browserextensie – die webpagina's samenvat, gegevens extraheert, repetitieve browsertaken automatiseert – heeft werkelijk bredere toegang dan een typische webapp waar de meeste oprichters aan gewend zijn te redeneren, omdat een browserextensie, afhankelijk van hoe deze is gebouwd en welke toestemmingen hij vraagt, potentieel alles kan zien wat een gebruiker doet op elke website die hij bezoekt, en niet alleen de interacties die beperkt zijn tot de specifieke interface van uw eigen product.
+Een AI-browserextensie – voor het samenvatten van webpagina's, het extraheren van gegevens, het automatiseren van herhaalde browsertaken – draait met oprecht bredere toegang dan een typische web-app waar de meeste oprichters gewend zijn over na te denken. Een browserextensie kan namelijk, afhankelijk van hoe deze is gebouwd en welke machtigingen deze aanvraagt, potentieel alles zien wat een gebruiker doet op elke website die hij bezoekt, en niet alleen de interacties die beperkt zijn tot de specifieke interface van uw eigen product.
 
 ## Waarom dit een fundamenteel ander toegangsmodel is
 
-De beveiligingsgrens van een typische webapp is goed begrepen: deze kan alleen zien en handelen binnen zijn eigen domein en wat de gebruiker er expliciet aan onderwerpt. De beveiligingsgrens van een browserextensie is een weloverwogen, gedetailleerde reeks machtigingen die de gebruiker verleent tijdens de installatie. Afhankelijk van wat deze machtigingen feitelijk bestrijken, kan een te brede extensie pagina-inhoud, formuliergegevens en browse-activiteit lezen die veel verder gaat dan wat de daadwerkelijke functionaliteit ervan vereist, een discrepantie die zowel de beoordelingsprocessen van browserwinkels als steeds meer privacybewuste gebruikers specifiek onder de loep nemen.
+De beveiligingsgrens van een typische web-app is goed begrepen: deze kan alleen dingen zien en doen binnen zijn eigen domein en wat de gebruiker expliciet indient. De beveiligingsgrens van een browserextensie is een bewuste, gedetailleerde reeks machtigingen die de gebruiker verleent op het moment van installatie – en afhankelijk van wat die machtigingen daadwerkelijk dekken, kan een overmatig brede extensie paginainhoud, formuliergegevens en browse-activiteit lezen ver voorbij wat de daadwerkelijke functionaliteit vereist. Dit is een wanverhouding die zowel beoordelingsprocessen van browserextensiewinkels als steeds privacybewustere gebruikers specifiek controleren.
 
-## Waar door AI gegenereerde extensiecode specifiek te veel verzoeken veroorzaakt
+## Waar AI-gegenereerde extensiecode specifiek te veel aanvraagt
 
-**Er worden standaard brede hostmachtigingen gevraagd in plaats van een beperkte reikwijdte.** AI-coderingstools die browserextensiecode genereren, vragen vaak standaard toegang tot alle websites, omdat dit de eenvoudigste weg is naar gegarandeerde functionaliteit op welke site een gebruiker de extensie dan ook gebruikt, in plaats van de meer doelbewuste, beperktere toestemmingsscope waar zowel winkelrecensenten als privacybewuste gebruikers specifiek naar op zoek zijn.
+**Brede hostmachtigingen die standaard worden aangevraagd in plaats van nauw te worden begrensd.** AI-coderingshulpmiddelen die browserextensiecode genereren vervallen vaak in het standaard aanvragen van toegang tot alle websites, aangezien dat het eenvoudigste pad is naar gegarandeerde functionaliteit op welke site een gebruiker de extensie ook zou kunnen gebruiken, in plaats van de meer bewuste, knappere machtigingsbegrenzing die zowel winkelbeoordelaars als privacybewuste gebruikers specifiek zoeken.
 
-**Gevoelige pagina-inhoud verwerkt zonder duidelijke noodzaak.** Een extensie die de volledige pagina-inhoud leest om zijn functie uit te voeren, wanneer een smallere, meer gerichte gegevensextractie voldoende zou zijn, creëert onnodige blootstelling – zowel een zorg bij winkelbeoordelingen als een echte overweging bij de verwerking van gegevens als die bredere inhoud ooit wordt verzonden naar een backend of een AI-model-API.
+**Gevoelige paginainhoud verwerkt zonder duidelijke noodzaak.** Een extensie die de volledige paginainhoud leest om haar functie uit te voeren, wanneer een knappere, meer gerichte data-extractie zou volstaan, creëert onnodige blootstelling – zowel een zorg bij de winkelbeoordeling als een echte overweging voor gegevensverwerking als die bredere inhoud ooit naar een backend of een AI-model API wordt verzonden.
 
-**Onduidelijke grenzen rond welke gegevens de browser daadwerkelijk verlaten.** Zowel gebruikers als recensenten onderzoeken specifiek of een extensie gegevens lokaal verwerkt of deze naar een externe server of AI-model-API verzendt - een onderscheid dat zowel architectonisch duidelijk moet zijn als duidelijk moet worden gecommuniceerd, en dat niet dubbelzinnig mag blijven in de code of de eigen privacy-openbaarmaking van de extensie.
+**Onduidelijke grenzen rond welke gegevens de browser daadwerkelijk verlaten.** Gebruikers en beoordelaars controleren specifiek of een extensie gegevens lokaal verwerkt versus deze naar een externe server of AI-model API stuurt – een onderscheid dat zowel architectonisch duidelijk moet zijn als duidelijk gecommuniceerd, en niet dubbelzinnig gelaten in de code of de privacyverklaring van de extensie.
 
-## Waarom winkelrecensie specifiek opmerkt wat de eigen tests van een oprichter niet doen
+## Waarom een winkelbeoordeling specifiek opvangt wat de eigen testen van een oprichter niet doen
 
-De beoordelingsprocessen van de Chrome Web Store en Firefox Add-ons onderzoeken specifiek gevraagde toestemmingen ten opzichte van de beschreven functionaliteit, waarbij extensies worden gemarkeerd die om bredere toegang vragen dan hun aangegeven doel rechtvaardigt - een controle die de meeste eigen functionele tests van de oprichters nooit uitvoeren, omdat functionele tests bevestigen dat de extensie werkt, en niet dat de reikwijdte van de toestemming evenredig is aan wat deze feitelijk moet doen.
+Beoordelingsprocessen van de Chrome Web Store en Firefox Add-ons onderzoeken specifiek de aangevraagde machtigingen tegen de beschreven functionaliteit, waarbij extensies worden gemarkeerd die bredere toegang aanvragen dan hun vermelde doel rechtvaardigt. Dit is een controle die het functionele testen van de meeste oprichters nooit uitvoert, aangezien functioneel testen bevestigt dat de extensie werkt, en niet dat het bereik van haar machtigingen evenredig is aan wat ze daadwerkelijk moet doen.
 
-## Hoe proportionele toestemmingscoping er eigenlijk uitziet
+## Hoe evenredige machtigingsbegrenzing er daadwerkelijk uitziet
 
-Alleen toegang vragen tot de specifieke sites of pagina-elementen die de daadwerkelijke functionaliteit van de extensie vereist, gegevens lokaal verwerken waar dit echt mogelijk is in plaats van standaard alles naar een backend te sturen, en duidelijke, nauwkeurige openbaarmaking bieden van welke gegevens precies de browser verlaten en waarom - een discipline die zowel voldoet aan de vereisten voor winkelbeoordelingen als het soort gebruikersvertrouwen opbouwt dat brede, onverklaarde toestemmingsverzoeken actief ondermijnen.
+Het aanvragen van toegang tot alleen de specifieke sites of pagina-elementen die de daadwerkelijke functionaliteit van de extensie vereist, het lokaal verwerken van gegevens waar dat oprecht mogelijk is in plaats van standaard alles naar een backend te sturen, en het bieden van een duidelijke, nauwkeurige openbaarmaking van exact welke gegevens de browser verlaten en waarom. Dit is een discipline die zowel voldoet aan de vereisten van een winkelbeoordeling als het soort gebruikersvertrouwen opbouwt dat brede, onverklaarde machtigingsverzoeken actief ondergraven.
 
-[LaunchStudio](https://launchstudio.eu/en/) beoordeelt AI-browserextensies specifiek op de evenredigheid van het toestemmingsbereik en de duidelijkheid van de gegevensverwerking voordat de winkel wordt ingediend, waardoor de kloof wordt gedicht tussen het standaard brede toegangspatroon van een AI-coderingstool en wat winkelbeoordeling en gebruikersvertrouwen feitelijk vereisen, ondersteund door Manifera's bredere ervaring met het navigeren door platformspecifieke beoordelingsprocessen in meerdere productcategorieën.
+[LaunchStudio](https://launchstudio.eu/en/) beoordeelt AI-browserextensies specifiek op de evenredigheid van de machtigingsomvang en de helderheid van de gegevensverwerking voor de inzending in de winkel. Wij dichten de kloof tussen het brede toegangspatroon van een AI-coderingshulpmiddel en wat winkelbeoordelingen en gebruikersvertrouwen daadwerkelijk vereisen, ondersteund door Manifera's bredere ervaring in het navigeren door platformspecifieke beoordelingsprocessen in meerdere productcategorieën.
 
-[Zorg ervoor dat de rechten van uw extensie worden bepaald voordat een winkelrecensie ze markeert](https://launchstudio.eu/en/#calculator) — bredere toegang dan nodig is zowel een beoordelingsrisico als een vertrouwensrisico.
+[Laat de machtigingen van uw extensie afbakenen voordat een winkelbeoordeling ze markeert](https://launchstudio.eu/en/#calculator) — bredere toegang dan nodig is een risico voor zowel beoordeling als vertrouwen.
+
+## Vier vragen om te stellen voordat u een nieuwe machtiging aanvraagt
+
+Elke machtiging die een browserextensie aanvraagt zou een bewuste beslissing moeten zijn, en niet een standaard waar een AI-coderingshulpmiddel naar greep omdat het de eenvoudigste weg was naar gegarandeerde functionaliteit. Voordat u een nieuwe machtiging toevoegt aan een manifest, of een machtiging accepteert die een AI-tool standaard heeft gegenereerd, vangen vier vragen het meeste op van het overmatig aanvragen dat dit artikel beschrijft.
+
+**Werkt de functie daadwerkelijk zonder deze machtiging, zelfs in een verminderde vorm?** Soms werd een bredere machtiging niet aangevraagd omdat de functie deze strikt vereist, maar omdat het eenvoudiger te bouwen was, of omdat een knapper alternatief niet werd overwogen. Het testen of een geschaalde versie van de functie werkt met een knappere machtiging – zelfs als dit betekent dat de gebruiker wordt gevraagd iets actief te activeren in plaats van permanente toegang te hebben – is de moeite waard om te doen voordat u de bredere standaard accepteert.
+
+**Zou dit kunnen worden begrensd tot toegang geactiveerd door actie in plaats van permanente toegang?** Zoals de zaak van Sander concreet aantoont, zijn "werkt op elke site" en "heeft op elk moment permanente toegang tot elke site" functioneel verschillende beweringen die AI-gegenereerde code vaak als hetzelfde behandelt. Veel extensiefuncties kunnen oprecht opnieuw worden ontworpen rond door actie geactiveerde machtigingen – die alleen worden verleend wanneer een gebruiker de relevante functie actief oproept – zonder betekenisvol te veranderen wat de functie voor de gebruiker doet.
+
+**Als deze specifieke machtiging zou worden geweigerd of later ingetrokken, faalt de extensie dan netjes of stort ze volledig in?** Een extensie die is ontworpen rond een net herstel voor haar gevoeliger machtigingen is doorgaans een teken dat de machtiging in de eerste plaats zorgvuldig is begrensd. Een extensie die volledig en onherstelbaar instort zonder een bepaalde machtiging verdient een tweede blik op de vraag of die machtiging oprecht essentieel is of simpelweg als zodanig wordt aangenomen.
+
+**Zou u in één duidelijke zin exact kunnen uitleggen waarom deze machtiging noodzakelijk is, aan een kritische beoordelaar of een privacybewuste gebruiker?** Als het eerlijke antwoord meerdere zinnen van rechtvaardiging vereist, of neerkomt op "het is gewoon eenvoudiger op deze manier", is dat een redelijk signaal dat het machtigingsverzoek breder is dan de functie oprecht vereist. Een machtiging die daadwerkelijk evenredig is aan haar functie is er meestal een die een oprichter in één enkele, directe zin kan verdedigen zonder veel voorbehoud.
+
+Het doorlopen van elke nieuwe of bestaande machtiging door deze vier vragen, specifiek en eerlijk, is doorgaans een snellere en betrouwbaardere controle dan wachten op een beoordelingsproces in de winkel om de wanverhouding achteraf te markeren – dezelfde controle die een oprichter voor zichzelf kan doen voor de inzending, in plaats van een afwijzing in de winkel te behandelen als de eerste echte controle die het machtigingsmodel ooit krijgt.
+
+Het is de moeite waard om deze zelfde controle uit te voeren tegen machtigingen die al in het bestaande manifest van een extensie zitten, en niet alleen tegen nieuwe die worden toegevoegd. Een snel gebouwde extensie verzamelt onderweg vaak een of twee machtigingen die logisch waren voor een eerdere versie van een functie die sindsdien is veranderd of vereenvoudigd, maar het oorspronkelijke machtigingsverzoek is nooit herzien toen de functie zelf evolueerde. Een periodieke ronde door het volledige manifest, waarbij deze zelfde vier vragen met terugwerkende kracht worden toegepast, brengt doorgaans minstens één machtiging naar boven die de specifieke reden waarvoor ze oorspronkelijk werd aangevraagd heeft overleefd.
 
 ## Echt voorbeeld
 
-### Een AI-Native oprichter in actie: een afgewezen extensie die te veel vroeg
+### Een AI-native oprichter in actie: Een afgewezen extensie die om te veel vroeg
 
-Sander, een voormalige onderzoeksanalist die oprichter werd in Wageningen, bouwde PaginaSamenvatter, een AI-browserextensie die lange artikelen en onderzoekspapers samenvat in beknopte kernpunten. Hij gebruikte Cursor, gegenereerd met standaardrechten die toegang vroegen om inhoud te lezen en te wijzigen op elke website die de gebruiker bezocht.
+Sander, een voormalig onderzoeksanalist die oprichter werd in Wageningen, bouwde PaginaSamenvatter, een AI-browserextensie die lange artikelen en onderzoekspapers samenvat in beknopte kernpunten met behulp van Cursor. Deze werd gegenereerd met standaardmachtigingen die toegang aanvroegen om de inhoud op elke website die de gebruiker bezocht te lezen en aan te passen.
 
-Het beoordelingsproces van de Chrome Web Store heeft de oorspronkelijke inzending van PaginaSamenvatter afgewezen, waarbij specifiek werd aangegeven dat het brede toestemmingsverzoek voor alle sites niet in verhouding stond tot de aangegeven samenvattingsfunctionaliteit, die redelijkerwijs alleen toegang nodig had tot de specifieke pagina die een gebruiker actief koos om samen te vatten, en niet permanente toegang tot elke site die ze ooit zouden kunnen bezoeken.
+Het beoordelingsproces van de Chrome Web Store wees de initiële inzending van PaginaSamenvatter af, waarbij specifiek werd gemarkeerd dat het brede machtigingsverzoek voor alle sites niet evenredig was aan haar vermelde samenvattingsfunctionaliteit. Deze functionaliteit had redelijkerwijs alleen toegang nodig tot de specifieke pagina die een gebruiker actief koos om samen te vatten, en geen permanente toegang tot elke site die hij ooit zou kunnen bezoeken.
 
-**Resultaat:** LaunchStudio heeft het toestemmingsmodel van PaginaSamenvatter geherstructureerd om alleen toegang te vragen wanneer een gebruiker expliciet de samenvattingsfunctie op een specifieke pagina activeerde, in plaats van brede toegang te verlenen, de winkelbeoordeling door te geven bij opnieuw indienen en, als secundair voordeel, privacybewuste gebruikers een duidelijker en nauwkeuriger beeld te geven van wat de extensie daadwerkelijk wel en niet deed.
+**Resultaat:** LaunchStudio herstructureerde het machtigingsmodel van PaginaSamenvatter om alleen toegang aan te vragen wanneer een gebruiker de samenvattingsfunctie expliciet activeerde op een specifieke pagina, in plaats van permanente brede toegang. Hiermee werd de winkelbeoordeling bij de herinzending doorstaan en kregen privacybewuste gebruikers als secundair voordeel een duidelijker, nauwkeuriger beeld van wat de extensie daadwerkelijk wel en niet opende.
 
-> *"Ik heb echt niet nagedacht over het verschil tussen 'werkt op elke site' en 'heeft permanente toegang tot alles op elke site', omdat ze functioneel gezien hetzelfde voor mij voelden tijdens het bouwen ervan. De afwijzing van de winkelrecensie was de eerste keer dat iemand daadwerkelijk op dat specifieke onderscheid terugkwam. "*
+> *"Ik had oprecht niet nagedacht over het verschil tussen 'werkt op elke site' en 'heeft permanente toegang tot alles op elke site', aangezien ze tijdens het bouwen functioneel hetzelfde voelden voor mij. De afwijzing in de winkelbeoordeling was de eerste keer dat iemand daadwerkelijk een punt maakte van dat specifieke onderscheid."*
 > — **Sander Kloosterman, Oprichter, PaginaSamenvatter (Wageningen)**
 
-**Kosten en tijdlijn:** € 850 (toestemmingsbereik en opnieuw indienen van de winkel) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 850 (afbakening van machtigingen en herinzending in de winkel) — voltooid in 3 werkdagen.
 
 ---
 
@@ -77,23 +94,23 @@ Het beoordelingsproces van de Chrome Web Store heeft de oorspronkelijke inzendin
 
 ### Heeft het aanvragen van brede toegang tot alle sites ooit zin voor een legitieme browserextensie?
 
-Soms gaat het bij extensies waarvan de kernfunctionaliteit daadwerkelijk permanente toegang tot meerdere sites vereist, specifiek om het vragen van bredere toegang dan de feitelijke functionaliteit rechtvaardigt, en niet om het feit dat toegang tot alle sites universeel ongepast is.
+Soms wel, voor extensies waarvan de kernfunctionaliteit oprecht permanente toegang tot meerdere sites vereist – de zorg is specifiek gericht op het aanvragen van bredere toegang dan de daadwerkelijke functionaliteit rechtvaardigt, en niet dat toegang tot alle sites universeel ongeschikt is.
 
-### Hoe weet een oprichter of de gevraagde toestemmingen voor zijn extensie proportioneel zijn voordat hij zich aan een winkelbeoordeling onderwerpt?
+### Hoe weet een oprichter of de aangevraagde machtigingen van zijn extensie evenredig zijn voor het indienen bij een winkelbeoordeling?
 
-Het vergelijken van elke specifiek gevraagde toestemming met een concrete rechtvaardiging waarom de daadwerkelijke functionaliteit van de extensie dit vereist, is de directe zelfcontrole, vergelijkbaar in geest met het principe van gegevensminimalisatie dat elders in bredere nalevingsrichtlijnen wordt behandeld.
+Het vergelijken van elke specifiek aangevraagde machtiging met een concrete rechtvaardiging voor waarom de daadwerkelijke functionaliteit van de extensie deze vereist is de directe zelfcontrole, vergelijkbaar in geest met het principe van dataminimalisatie dat elders in bredere richtlijnen wordt behandeld.
 
-### Is on-demand, door activering geactiveerde toestemming altijd mogelijk, of is dit afhankelijk van de functionaliteit van de specifieke extensie?
+### Is een op aanvraag door actie geactiveerde machtiging altijd mogelijk, of hangt het af van de specifieke functionaliteit van de extensie?
 
-Hangt af van de functionaliteit. Sommige extensies hebben daadwerkelijk permanente achtergrondtoegang nodig om te kunnen werken zoals bedoeld, terwijl vele, zoals de samenvattende tool van Sander, redelijkerwijs alleen om toegang kunnen vragen wanneer de gebruiker de relevante functie actief activeert.
+Het hangt af van de functionaliteit – sommige extensies hebben oprecht permanente achtergrondtoegang nodig om te werken zoals bedoeld, terwijl veel extensies, zoals Sander's samenvattingstool, redelijkerwijs alleen toegang kunnen aanvragen wanneer de gebruiker de relevante functie actief activeert.
 
-### Garandeert het slagen voor een winkelbeoordeling dat het toestemmingsmodel van een extensie echt passend is, of alleen formeel voldoet?
+### Garandeert het doorstaan van een winkelbeoordeling dat het machtigingsmodel van een extensie oprecht geschikt is, of alleen formeel conform?
 
-Een winkelbeoordeling biedt een zinvolle controle, maar is geen volledige garantie. Echt evenredige scoping en duidelijke openbaarmaking van de gegevensverwerking komen het vertrouwen van de gebruiker ten goede, verder dan de minimale lat voor goedkeuring van de winkel.
+Een winkelbeoordeling biedt een betekenisvolle controle, maar is geen volledige garantie – oprecht evenredige afbakening en duidelijke openbaarmaking van gegevensverwerking komen het gebruikersvertrouwen ten goede voorbij wat de minimale grens voor winkelgoedkeuring ook vereist.
 
-### Hoe verschilt deze permissie-scope-discipline van de algemene geheimen en richtlijnen voor toegangscontrole die elders worden behandeld?
+### Hoe verschilt deze discipline voor het afbakenen van machtigingen van de algemene richtlijnen voor geheimen en toegangsbeheer die elders worden behandeld?
 
-In de geest verwant – beide hebben betrekking op het verlenen van alleen datgene wat daadwerkelijk nodig is – maar toestemmingen voor browserextensies bepalen specifiek wat de extensie zelf kan zien en doen in de browser van een gebruiker, een ander technisch mechanisme dan backend-authenticatie en -autorisatie.
+In geest gerelateerd – beide betreffen het verlenen van alleen wat daadwerkelijk noodzakelijk is – maar machtigingen voor browserextensies regelen specifiek wat de extensie zelf kan zien en doen binnen de browser van een gebruiker, een afzonderlijk technisch mechanisme van backend-authenticatie en -autorisatie.
 
 <script type="application/ld+json">
 {
@@ -102,42 +119,42 @@ In de geest verwant – beide hebben betrekking op het verlenen van alleen datge
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Does requesting broad, all-sites access ever make sense for a legitimate extension?",
+      "name": "Heeft brede toegang tot alle sites ooit zin voor een legitieme extensie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sometimes, for extensions genuinely requiring standing cross-site access; the concern is requesting more than functionality justifies."
+        "text": "Soms wel, voor extensies die dit oprecht vereisen; de zorg betreft meer aanvragen dan de functionaliteit rechtvaardigt."
       }
     },
     {
       "@type": "Question",
-      "name": "How would a founder know if their extension's permissions are proportionate before submission?",
+      "name": "Hoe weet een oprichter of machtigingen evenredig zijn voor indiening?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Comparing each requested permission against a concrete justification for why the functionality requires it."
+        "text": "Vergelijk elke aangevraagde machtiging met een concrete rechtvaardiging waarom de functionaliteit het vereist."
       }
     },
     {
       "@type": "Question",
-      "name": "Is on-demand, activation-triggered permission always possible?",
+      "name": "Is een door actie geactiveerde machtiging altijd mogelijk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depends on functionality \u2014 some extensions need standing access, while many can request access only when activated."
+        "text": "Afhankelijk van functionaliteit — sommige hebben achtergrondtoegang nodig, terwijl veel alleen toegang kunnen vragen bij activatie."
       }
     },
     {
       "@type": "Question",
-      "name": "Does passing store review guarantee the permission model is genuinely appropriate?",
+      "name": "Garandeert het doorstaan van de winkelbeoordeling dat de machtigingen geschikt zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Provides a meaningful check but isn't a complete guarantee; genuine scoping benefits user trust beyond minimum approval requirements."
+        "text": "Biedt een controle maar geen volledige garantie; evenredige afbakening helpt vertrouwen voorbij minimale goedkeuring."
       }
     },
     {
       "@type": "Question",
-      "name": "How is this different from general secrets and access-control guidance?",
+      "name": "Hoe verschilt dit van algemene richtlijnen voor toegangsbeheer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Related in spirit, but browser permissions govern what the extension sees in the browser, distinct from backend authentication."
+        "text": "In geest gerelateerd, maar browsermachtigingen regelen wat de extensie ziet in de browser, los van backend-authenticatie."
       }
     }
   ]

@@ -1,17 +1,18 @@
 ---
-Titel: "Omgevingsvariabele wildgroei: de configuratieschuld die uw AI-coderingstool creëert zonder u dit te vertellen"
+Titel: "Wildgroei van omgevingsvariabelen: De configuratieschuld die uw AI-coderingsassistent creëert zonder het u te vertellen"
 Trefwoorden: ai code tool, ai deployment, environment variable management, config debt, api key rotation
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# Omgevingsvariabele wildgroei: de configuratieschuld die uw AI-coderingstool creëert zonder u dit te vertellen
+
+# Wildgroei van omgevingsvariabelen: De configuratieschuld die uw AI-coderingsassistent creëert zonder het u te vertellen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Omgevingsvariabele wildgroei: de configuratieschuld die uw AI-coderingstool cre\u00ebert zonder u dit te vertellen",
-  "description": "Elke nieuwe integratie die een AI-coderingstool toevoegt, plaatst ergens in uw codebase een andere API-sleutel. Maanden later betekent het draaien van een enkele gecompromitteerde sleutel dat je met de hand door bestanden moet zoeken. Hier leest u hoe de configuratieschuld zich ophoopt en hoe u dit kunt oplossen.",
+  "headline": "Wildgroei van omgevingsvariabelen: De configuratieschuld die uw AI-coderingsassistent creëert zonder het u te vertellen",
+  "description": "Elke nieuwe integratie die een AI-coderingsassistent toevoegt laat ergens in uw codebase nog een API-sleutel vallen.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,60 +31,60 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Probeer deze oefening op uw eigen codebase: hoeveel API-sleutels worden er daadwerkelijk gebruikt, en vanaf hoeveel verschillende plaatsen wordt ernaar verwezen? Als je dat niet binnen dertig seconden kunt beantwoorden, heb je een configuratieschuld, en het is het soort schuld dat onzichtbaar blijft totdat je onder tijdsdruk een gecompromitteerde sleutel moet omdraaien en ontdekt dat je geen betrouwbare manier hebt om overal te vinden waar deze wordt gebruikt.
+Probeer deze oefening nu op uw eigen codebase: hoeveel API-sleutels gebruikt het daadwerkelijk, en vanuit hoeveel verschillende plekken wordt er naar verwezen? Als u dat niet in minder dan dertig seconden kunt beantwoorden, heeft u configuratieschuld. En het is het soort schuld dat onzichtbaar blijft tot het exacte moment dat u een gecompromitteerde sleutel onder tijdsdruk moet roteren en ontdekt dat u geen betrouwbare manier heeft om overal te vinden waar deze gebruikt wordt.
 
-## Hoe een dozijn verspreide sleutels gebeuren zonder dat iemand er iets over beslist
+## Hoe een dozijn verspreide sleutels ontstaan zonder dat iemand het besluit
 
-Niemand is van plan API-sleutels over een codebase te verspreiden. Het gebeurt één integratie tegelijk. Je vraagt ​​je AI-coderingstool om Stripe toe te voegen, en het plaatst een sleutel in een `.env`-bestand – redelijk. Een paar weken later voeg je een e-mailservice toe, en afhankelijk van in welk deel van de codebase je werkte toen je erom vroeg, komt die sleutel terecht in een iets ander configuratiebestand, of direct hardgecodeerd in een serverloze functie omdat dat op dat moment het snelste pad was naar een werkende functie. Voeg daar een kaarten-API, een SMS-provider, een analysetool, een paar interne functievlaggen aan toe, en na een paar maanden van snelle iteratie heb je een tiental of meer inloggegevens verspreid over `.env`-bestanden, individuele functiebestanden, dashboards van het implementatieplatform en soms rechtstreeks vastgelegd in de versiegeschiedenis van een vroege prototyping-sessie die niemand heeft opgeschoond.
+Niemand kiest ervoor om API-sleutels over een codebase te verspreiden. Het gebeurt integratie voor integratie. U vraagt uw AI-coderingsassistent om Stripe toe te voegen, en het laat een sleutel vallen in een `.env`-bestand – redelijk. Een paar weken later voegt u een e-maildienst toe, en afhankelijk van in welk deel van de codebase u werkte toen u het vroeg, eindigt die sleutel in een iets ander configuratiebestand, of hardgecodeerd direct in een serverless-functie omdat dat op dat moment het snelste pad was naar een werkende functie. Voeg een kaarten-API toe, een SMS-provider, een analysetool, een paar interne functie-vlaggen (feature flags), en na een paar maanden van snelle iteratie heeft u een dozijn of meer inloggegevens die leven over `.env`-bestanden, individuele functiebestanden, dashboards van het uitrolplatform, en soms rechtstreeks gecommit in de versiegeschiedenis vanuit een vroege prototyping-sessie die niemand heeft opgeruimd.
 
-Elke afzonderlijke instantie was op zichzelf zinvol: het was de snelste manier om die ene functie werkend te krijgen. AI-coderingstools zijn precies daarvoor geoptimaliseerd: het oplossen van de onmiddellijke taak met minimale wrijving, en niet het bijhouden van een projectbrede inventaris van elk geheim dat in het spel is. De schulden stapelen zich stilletjes op, omdat niets aan een verspreide configuratie iets van dag tot dag kapot maakt. De applicatie werkt prima. Niemand merkt het totdat een specifiek, urgent moment aanbreekt.
+Elke individuele instantie was logisch in isolatie – het was de snelste manier om die ene functie werkend te krijgen. AI-coderingsassistenten zijn geoptimaliseerd voor exact dat: het oplossen van de onmiddellijke taak met minimale wrijving, en niet het onderhouden van een projectbrede inventarisatie van elk geheim dat in gebruik is. De schuld stapelt zich stilletjes op omdat niets aan een verspreide configuratie dagelijks iets breekt. De applicatie draait prima. Niemand merkt het totdat een specifiek, dringend moment aanbreekt.
 
-## Waarom dit een noodgeval wordt in plaats van een hele klus
+## Waarom dit een noodsituatie wordt in plaats van een karwei
 
-Dat moment is meestal een veiligheidsincident, of de angst daarvoor: een sleutel wordt per ongeluk blootgesteld – naar een openbare opslagplaats gepusht, ergens geregistreerd waar hij niet mag zijn, of gemarkeerd door de geautomatiseerde lekdetectie van een leverancier. Het antwoord moet onmiddellijk zijn: roteer de gecompromitteerde sleutel, update deze overal waar ernaar wordt verwezen, implementeer hem opnieuw en bevestig dat er niets kapot is gegaan. Als uw configuratie gecentraliseerd is, is dit een taak van vijf minuten. Als het verspreid is over een tiental bestanden zonder enige bron van waarheid, wordt het een stressvolle handmatige zoektocht: zoek naar een gedeeltelijke sleutelreeks, controleer de omgevingsinstellingen van elk implementatieplatform en hoop dat je elke referentie hebt gevonden voordat aanvallers de blootgestelde kunnen misbruiken. Dit onder druk doen, met een live product dat afhankelijk is van of het goed is, is een werkelijk slechte positie om in te verkeren, en het is volledig te vermijden met configuratiehygiëne die de meeste door AI gebouwde codebases standaard nooit krijgen.
+Dat moment is doorgaans een beveiligingsincident, of de angst daarvoor: een sleutel wordt per ongeluk blootgesteld – gepusht naar een openbare repository, ergens gelogd waar het niet zou moeten, of gemarkeerd door de geautomatiseerde lekdetectie van een leverancier. De reactie moet onmiddellijk zijn: roteer de gecompromitteerde sleutel, werk deze overal bij waar er naar verwezen wordt, heruitrollen (redeploy), en bevestigen dat er niets gebroken is. Als uw configuratie gecentraliseerd is, is dit een taak van vijf minuten. Als het verspreid is over een dozijn bestanden zonder enkele bron van waarheid, wordt het een stressvolle handmatige zoektocht – grep op een gedeeltelijke sleuteltekst, controleer de omgevingsinstellingen van elk uitrolplatform, en hoop dat u elke verwijzing heeft gevonden voordat aanvallers de blootgestelde sleutel kunnen misbruiken. Dit uitvoeren onder druk, met een live product dat afhangt van het correct krijgen ervan, is een oprecht slechte positie om in te zitten. En het is volledig vermijdbaar met configuratiehygiëne die de meeste met AI gebouwde codebases standaard nooit krijgen.
 
-LaunchStudio is niet een eenzame aannemer; het wordt ondersteund door Manifera's ruim 120 ingenieursteam, en configuratie-audits als deze zijn een van de meest voorkomende "onzichtbare" oplossingen die onze ingenieurs toepassen bij het harden van een door AI gebouwd product voor productie. De oplossing bestaat doorgaans uit het consolideren van elk geheim in één enkele, goed afgestemde aanpak voor geheimenbeheer – omgevingsvariabelen worden geladen vanuit één gecentraliseerde bron per omgeving, nooit hardgecodeerd, nooit vastgelegd – en het documenteren waar elke sleutel voor is en welke services ervan afhankelijk zijn.
+LaunchStudio is geen alleenstaande aannemer; het wordt ondersteund door Manifera's team van meer dan 120 ingenieurs. Configuratie-audits zoals deze zijn een van de meest voorkomende "onzichtbare" herstellingen die onze ingenieurs toepassen wanneer ze een met AI gebouwd product uitharden voor productie. De herstelling omvat doorgaans het consolideren van elk geheim in een enkele, op de juiste wijze binnen het bereik geplaatste benadering voor geheimenbeheer (secrets management) – omgevingsvariabelen geladen vanuit één gecentraliseerde bron per omgeving, nooit hardgecodeerd, en nooit gecommit. Ook wordt gedocumenteerd waar elke sleutel voor dient en welke diensten er van afhangen.
 
-## Hoe een schone configuratie-instelling er eigenlijk uitziet
+## Hoe een schone configuratie-installatie er daadwerkelijk uitziet
 
-Een productieklare opstelling heeft een paar concrete eigenschappen: elk geheim bevindt zich op precies één plaats per omgeving (ontwikkeling, staging, productie), niets is hardgecodeerd in de applicatiecode, ongeacht hoe verleidelijk het was tijdens een snelle oplossing, `.env`-bestanden en equivalenten worden uitgesloten van versiebeheer vanaf de allereerste commit, en er is een eenvoudig document of README-sectie waarin elke omgevingsvariabele wordt opgesomd, waarvoor deze dient en door welke service deze is uitgegeven. Niets van dit alles is geavanceerde techniek; het is basishygiëne die vanaf de eerste dag gemakkelijk te onderhouden is en die na maanden van ad hoc toevoegingen echt pijnlijk is om achteraf aan te brengen. Dat is precies de reden waarom het de moeite waard is om de audit nu uit te voeren in plaats van tijdens een daadwerkelijk beveiligingsincident.
+Een installatie die klaar is voor productie heeft een paar concrete eigenschappen: elk geheim leeft op exact één plek per omgeving (ontwikkeling, staging, productie), niets is hardgecodeerd in applicatiecode ongeacht hoe aantrekkelijk dat was tijdens een snelle herstelling, `.env`-bestanden en gelijkwaardigen worden vanaf de allereerste commit uitgesloten van versiebeheer, en er is een eenvoudig document of README-gedeelte dat elke omgevingsvariabele vermeldt, waar deze voor dient, en welke dienst deze heeft uitgegeven. Niets hiervan is geavanceerde engineering – het is basis hygiëne die gemakkelijk te onderhouden is vanaf dag één en oprecht pijnlijk is om achteraf in te bouwen na maanden van ad hoc toevoegingen. Dat is exact waarom het de moeite waard is om de audit nu te doen in plaats van tijdens een daadwerkelijk beveiligingsincident.
 
-Ons team, dat werkt vanuit het kantoor van Manifera in Amsterdam, voert dit doorgaans uit als een gerichte opdracht: volledige codebase-scan voor hardgecodeerde geheimen, consolidatie in een juiste omgevingsconfiguratie en een rotatie van alle sleutels die ooit in de versiegeschiedenis zijn blootgesteld, aangezien roteren de enige echte oplossing is als een geheim eenmaal in een git-logboek terecht is gekomen. Als u een idee wilt hebben van de reikwijdte en de kosten van uw eigen project, is onze [prijscalculator](https://launchstudio.eu/en/#calculator) een snel startpunt.
+Ons team, werkend vanuit Manifera's kantoor in Amsterdam, voert dit doorgaans uit als een gefocust traject: een volledige codebase-scan op hardgecodeerde geheimen, consolidatie in een correcte omgevingsconfiguratie, en een rotatie van alle sleutels die ooit in de versiegeschiedenis zijn blootgesteld. Roterend is namelijk de enige echte herstelling zodra een geheim een git-logboek heeft geraakt. Als u een gevoel wilt krijgen van de omvang en kosten voor uw eigen project, is onze [prijscalculator](https://launchstudio.eu/en/#calculator) een snel startpunt.
 
-## Het consolideren van geheimen kan stilzwijgend uw omgevingsgrenzen vervagen
+## Het consolideren van geheimen kan uw omgevingsgrenzen stilletjes vervagen
 
-Het ordenen van omgevingsvariabelen voorkomt configuratieschuld. Een valkuil bij het centraliseren van configuratiebestanden is dat staging- en productievariabelen per ongeluk naar dezelfde waarden verwijzen als er geen strikte naamruimten worden gebruikt.
+Het centraliseren van elke inloggegeven op één plek lost het probleem op van "waar is het". Maar als het wordt gedaan als een enkel gedeeld bestand in plaats van één bestand per omgeving, kan het een nieuw, gevaarlijker probleem creëren: een ontwikkelings- of staging-uitrol die per ongeluk een live productiesleutel laadt. Dit is een gemakkelijke fout om te maken wanneer u haastig consolideert – het binnenhalen van elke verspreide sleutel in één `.env` voelt als de herstelling, maar als dat ene bestand zonder onderscheid door elke omgeving wordt geladen, is een bug die getest wordt tegen "productie"-gegevens in staging, of een testbetalingsronde tegen een live Stripe-sleutel, nu één verkeerd geconfigureerd uitrolscript verwijderd van daadwerkelijk gebeuren.
 
-Gebruik strikt gescheiden omgevingsbestanden en validatie op opstarttijd:
+De herstelling is een scheiding op omgevingsniveau, en niet alleen consolidatie:
 
-```javascript
-import { z } from 'zlib';
-
-const envSchema = z.object({
-  NODE_ENV: z.enum(['development', 'staging', 'production']),
-  DATABASE_URL: z.string().url(),
-  STRIPE_SECRET_KEY: z.string().startsWith('sk_')
-});
-
-envSchema.parse(process.env);
 ```
+# Voorheen: één gedeeld bestand geladen ongeacht omgeving
+.env → geladen door zowel `npm run dev` als de productie-uitrol
+
+# Naderhand: bestanden gescheiden op omgeving, alleen de overeenkomende geladen
+.env.development   → alleen geladen in lokale dev, alleen veilige testsleutels
+.env.staging        → alleen geladen door de staging-uitrolpijplijn
+.env.production      → alleen geladen door de productie-uitrolpijplijn, nooit gecommit
+```
+
+Consolidatie zonder deze scheiding ruilt verspreide geheimen in voor een enkel punt van mislukken dat elke omgeving tegelijk omvat. Dit is het waard om specifiek op te controleren zodra een consolidatieproject onderweg is, en niet aan te nemen als een bijwerking van het simpelweg hebben van minder bestanden.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: een gecompromitteerde sleutel en geen kaart van waar deze leefde
+### Een AI-native oprichter in actie: Een gecompromitteerde sleutel en geen kaart van waar het leefde
 
-Sophie Lammers, een oprichtster uit Meppel, bouwde FactuurKoppel – een boekhoudkundige integratie SaaS – met behulp van Lovable. Gedurende maanden van het toevoegen van functies – betalingsverwerking, bankfeedintegraties, e-mailmeldingen, een paar connectoren voor boekhoudsoftware – waren er meer dan een dozijn API-sleutels en configuratiewaarden verzameld, verspreid over verschillende bestanden, sommige in ‘.env’-bestanden, sommige rechtstreeks hardgecodeerd in integratiefuncties, zonder een centrale lijst van wat bestond of waar.
+Sophie Lammers, een oprichter in Meppel, bouwde FactuurKoppel – een SaaS voor boekhoudintegratie – met behulp van Lovable. Over maanden van het toevoegen van functies – betalingsverwerking, bankfeed-integraties, e-mailnotificaties, een paar boekhoudsoftware-connectoren – waren meer dan een dozijn API-sleutels en configuratiewaarden verzameld en verspreid over verschillende bestanden. Sommige in `.env`-bestanden, sommige hardgecodeerd direct in integratiefuncties, zonder centrale lijst van wat er bestond of waar.
 
-Het probleem deed zich voor toen Sophie vermoedde dat een van haar API-sleutels openbaar was gemaakt nadat een externe leverancier ongebruikelijke activiteit op het gekoppelde account had opgemerkt. Het draaien van die ene sleutel had snel moeten zijn. In plaats daarvan moest ze handmatig de hele codebase doorzoeken, bestand voor bestand, om elke plaats te bevestigen waar naar de oude sleutel werd verwezen, onder realtime druk, zonder er op te vertrouwen dat ze elk exemplaar had gevonden totdat ze overal minstens twee keer had gecontroleerd.
+Het probleem kwam naar boven toen Sophie vermoedde dat een van haar API-sleutels was blootgesteld nadat een leverancier van een derde partij ongebruikelijke activiteit op het gekoppelde account markeerde. Het roteren van die enkele sleutel had snel moeten zijn. In plaats daarvan vereiste het het handmatig doorzoeken van de gehele codebase, bestand voor bestand, om elke plek te bevestigen waar de oude sleutel werd vermeld – onder reële tijdsdruk, zonder het vertrouwen dat ze elke instantie had gevonden totdat ze overal ten minste twee keer had gekeken.
 
-Het team van LaunchStudio consolideerde alle gebruikte referenties van FactuurKoppel in een enkele, goed gedimensioneerde omgevingsconfiguratie per implementatieomgeving, verwijderde elke hardgecodeerde sleutel die verspreid was via integratiefuncties en voegde in de toekomst '.env'-uitsluiting toe aan versiebeheer, samen met een gedocumenteerde lijst van elke sleutel, het doel ervan en de service die deze uitgeeft. Als onderdeel van de opdracht werd elke sleutel die ooit in aanraking was gekomen met de git-geschiedenis van de codebase (niet alleen degene die als gecompromitteerd was gemarkeerd) uit voorzorg gerouleerd.
+LaunchStudio's team consolideerde elk inloggegeven dat FactuurKoppel gebruikte in een enkele, op de juiste wijze binnen het bereik geplaatste omgevingsconfiguratie per uitrolomgeving. We verwijderden elke hardgecodeerde sleutel die verspreid door integratiefuncties werd gevonden, en voegden `.env`-uitsluiting toe aan versiebeheer voor de toekomst, samen met een gedocumenteerde lijst van elke sleutel, zijn doel, en zijn uitgevende dienst. Als onderdeel van het traject werd elke sleutel die ooit de git-geschiedenis van de codebase had geraakt – niet alleen de sleutel die als gecompromitteerd was gemarkeerd – uit voorzorg geroteerd.
 
-**Resultaat:** Sophie heeft nu één enkele bron van waarheid voor elk credential waar FactuurKoppel van afhankelijk is, en een toekomstige sleutelrotatie is een taak van vijf minuten in plaats van een stressvolle middag.
+**Resultaat:** Sophie heeft nu een enkele bron van waarheid voor elk inloggegeven waar FactuurKoppel van afhangt. Een toekomstige sleutelrotatie is een taak van vijf minuten in plaats van een stressvolle middag.
 
-> *"Het omdraaien van die ene sleutel kostte me een hele middag waarin ik door bestanden moest bladeren die ik al maanden niet meer had geopend. Ik had geen idee hoe verspreid alles was geworden, totdat ik gedwongen werd alles te gaan zoeken."*
-> — **Sophie Lammers, Oprichtster FactuurKoppel (Meppel)**
+> *"Het roteren van die ene sleutel kostte me een hele middag van greppen door bestanden die ik in maanden niet had geopend. Ik had geen idee hoe verspreid alles was geworden totdat ik gedwongen werd het allemaal te gaan zoeken."*
+> — **Sophie Lammers, Oprichter, FactuurKoppel (Meppel)**
 
-**Kosten en tijdlijn:** € 750 (volledige geheimenaudit, consolidatie in gecentraliseerde omgevingsconfiguratie en uit voorzorg sleutelrotatie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 750 (volledige geheimen-audit, consolidatie in gecentraliseerde omgevingsconfiguratie, en voorzorgsmatige sleutelrotatie) — voltooid in 5 werkdagen.
 
 ---
 
@@ -91,24 +92,19 @@ Het team van LaunchStudio consolideerde alle gebruikte referenties van FactuurKo
 
 ### Hoe kan ik snel controleren of mijn eigen codebase dit probleem heeft?
 
-Zoek in uw codebase naar algemene patronen zoals "api_key", "secret" of "token" buiten uw `.env`-bestanden. Als u overeenkomsten vindt die rechtstreeks in de applicatiecode zijn gecodeerd, is dat een teken van verspreide configuratie die de moeite waard is om verder te controleren.
+Zoek in uw codebase naar veelvoorkomende patronen zoals "api_key", "secret", of "token" buiten uw `.env`-bestanden – als u overeenkomsten vindt die direct in de applicatiecode zijn hardgecodeerd, is dat een teken van verspreide configuratie dat het waard is om verder te auditeren.
 
-### Is een `.env`-bestand voldoende, of heb ik een speciale geheimenmanager nodig?
+### Is een `.env`-bestand voldoende, of heb ik een toegewijde secrets manager nodig?
 
-Voor de meeste producten in een vroeg stadium is een goed georganiseerd `.env`-bestand per omgeving, op de juiste manier uitgesloten van versiebeheer, voldoende; een toegewijde geheimenmanager wordt de moeite waard om te adopteren zodra u een groter team of strengere compliance-eisen heeft.
+Voor de meeste producten in een vroeg stadium is een goed georganiseerd `.env`-bestand per omgeving, op de juiste manier uitgesloten van versiebeheer, voldoende – een toegewijde secrets manager wordt het overwegen waard zodra u een groter team heeft of strengere nalevingsvereisten.
 
-### Wat moet ik doen als ik een geheim vind dat eerder op git is vastgelegd?
+### Wat moet ik doen als ik een geheim vind dat eerder aan git is gecommit?
 
-Roteer het onmiddellijk - het verwijderen ervan uit een toekomstige commit verwijdert het niet uit de git-geschiedenis, dus de enige betrouwbare oplossing als een geheim eenmaal is vastgelegd, is het als gecompromitteerd behandelen en een nieuw geheim uitgeven.
+Roteer het onmiddellijk – het verwijderen ervan uit een toekomstige commit verwijdert het niet uit de git-geschiedenis. De enige betrouwbare herstelling zodra een geheim is gecommit is het behandelen als gecompromitteerd en het uitgeven van een nieuwe.
 
-### Hoe reikwijdt Manifera dit soort audits doorgaans?
+### Geldt dit alleen voor grotere teams, of is het ook van toepassing op solo-oprichters?
 
-Onze technici, die vanuit het kantoor van Manifera in Amsterdam werken, voeren een volledige codebase-scan uit voor hardgecodeerde en verspreide geheimen, consolideren deze in een gecentraliseerde configuratie en documenteren het doel van elke sleutel - een proces dat is gevormd door meer dan een decennium aan productie-engineeringwerk.
-
-### Is dit alleen van belang voor grotere teams, of geldt dit ook voor solo-oprichters?
-
-Het geldt vooral voor solo-oprichters: omdat er geen tweede ingenieur is die tijdens de codebeoordeling een verspreide configuratie opmerkt, hebben de schulden de neiging zich sneller op te stapelen en langer onopgemerkt te blijven.
-
+Het is in het bijzonder van toepassing op solo-oprichters – zonder een tweede ingenieur om een verspreide configuratie op te vangen tijdens een codebeoordeling, heeft de schuld de neiging sneller op te stapelen en langer onopgemerkt te blijven.
 
 <script type="application/ld+json">
 {
@@ -117,42 +113,42 @@ Het geldt vooral voor solo-oprichters: omdat er geen tweede ingenieur is die tij
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe kan ik snel controleren of mijn eigen codebase dit probleem heeft?",
+      "name": "Waarom verspreiden AI-coding tools API-keys door de hele codebase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zoek in uw codebase naar algemene patronen zoals \"api_key\", \"secret\" of \"token\" buiten uw `.env`-bestanden. Als u overeenkomsten vindt die rechtstreeks in de applicatiecode zijn gecodeerd, is dat een teken van verspreide configuratie die de moeite waard is om verder te controleren."
+        "text": "AI-tools lossen snel de taak van het moment op. Hierdoor belanden API-sleutels vaak hardgecodeerd in serverless functies of in verschillende losse config-bestanden."
       }
     },
     {
       "@type": "Question",
-      "name": "Is een `.env`-bestand voldoende, of heb ik een speciale geheimenmanager nodig?",
+      "name": "Wat is het gevaar van gefragmenteerde API-sleutels bij een beveiligingslek?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voor de meeste producten in een vroeg stadium is een goed georganiseerd `.env`-bestand per omgeving, op de juiste manier uitgesloten van versiebeheer, voldoende; een toegewijde geheimenmanager wordt de moeite waard om te adopteren zodra u een groter team of strengere compliance-eisen heeft."
+        "text": "Bij een gecompromitteerde sleutel moet je deze direct roteren. Als sleutels door de hele codebase zweven, kost dit uren handmatig zoeken (grep) onder hoge stress."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat moet ik doen als ik een geheim vind dat eerder op git is vastgelegd?",
+      "name": "Is een `.env` bestand genoeg of heb je AWS Secrets Manager nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Roteer het onmiddellijk - het verwijderen ervan uit een toekomstige commit verwijdert het niet uit de git-geschiedenis, dus de enige betrouwbare oplossing als een geheim eenmaal is vastgelegd, is het als gecompromitteerd behandelen en een nieuw geheim uitgeven."
+        "text": "Voor vroege SaaS-apps is een `.env.development`, `.env.staging` en `.env.production` structuur (uitgesloten van git) meer dan voldoende."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe reikwijdt Manifera dit soort audits doorgaans?",
+      "name": "Wat moet je doen als een API-key per ongeluk in Git geschiedenis staat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Onze technici, die vanuit het kantoor van Manifera in Amsterdam werken, voeren een volledige codebase-scan uit voor hardgecodeerde en verspreide geheimen, consolideren deze in een gecentraliseerde configuratie en documenteren het doel van elke sleutel - een proces dat is gevormd door meer dan een decennium aan productie-engineeringwerk."
+        "text": "Direct intrekken en roteren! Een key uit een nieuwe commit verwijderen wist de Git-historie niet; hackers scannen GitHub continu op oude commits."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit alleen van belang voor grotere teams, of geldt dit ook voor solo-oprichters?",
+      "name": "Wat kost een secrets-audit en environment consolidatie bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het geldt vooral voor solo-oprichters: omdat er geen tweede ingenieur is die tijdens de codebeoordeling een verspreide configuratie opmerkt, hebben de schulden de neiging zich sneller op te stapelen en langer onopgemerkt te blijven."
+        "text": "Het opschonen van alle hardcoded sleutels, opzetten van een schone env-structuur en voorzorgsmatige rotatie kost gemiddeld €750 en duurt 5 werkdagen."
       }
     }
   ]

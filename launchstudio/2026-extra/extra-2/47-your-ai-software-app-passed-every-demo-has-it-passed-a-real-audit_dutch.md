@@ -1,73 +1,146 @@
 ---
-Titel: "Jouw AI-Software-App Doorstond Elke Demo. Heeft Het Een Echte Audit Doorstaan?"
+Titel: "Uw AI-software-app is voor elke demo geslaagd. Is het geslaagd voor een echte audit?"
 Trefwoorden: ai software app, ai generated tool, ai coding, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo Founder / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
 
-# Jouw AI-Software-App Doorstond Elke Demo. Heeft Het Een Echte Audit Doorstaan?
+# Uw AI-software-app is voor elke demo geslaagd. Is het geslaagd voor een echte audit?
 
-Elke demo doorstaan die je zelf draaide en een oprechte, adversariële audit doorstaan zijn verschillende prestaties, en het gat ertussen verschijnt in precies het soort plek dat een demo nooit controleert: wat er daadwerkelijk gebeurt met een sessie nadat een gebruiker op "uitloggen" klikt, versus wat een founder aanneemt dat gebeurt gebaseerd op het feit dat de interface zelf verandert en er uitgelogd uitziet.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Uw AI-software-app is voor elke demo geslaagd. Is het geslaagd voor een echte audit?",
+  "description": "Een directe blik op het verschil tussen het slagen voor een demo en het slagen voor een echte audit.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/your-ai-software-app-passed-every-demo-has-it-passed-a-real-audit"
+  }
+}
+</script>
 
-## Hoe "Uitgelogd" Eruitziet Vanuit De Interface
+Het slagen voor elke demo die u persoonlijk heeft uitgevoerd en het slagen voor een oprechte audit zijn twee verschillende prestaties. De kloof ertussen verschijnt in exact het soort plek dat een demo nooit controleert: wat er daadwerkelijk gebeurt met een sessie nadat een gebruiker op "uitloggen" klikt, versus wat een oprichter aanneemt dat er gebeurt op basis van het feit dat de interface zelf verandert en er uitgelogd uitziet. Een demo is fundamenteel een coöperatieve oefening tussen een oprichter en een publiek dat wil dat het product slaagt. Een audit is per ontwerp inquisitief, en probeert specifiek het ene ding te vinden dat een coöperatieve demonstratie nooit zou proberen.
 
-Op uitloggen klikken in een typische AI-software-app verandert correct wat de interface toont — het dashboard verdwijnt, een loginformulier verschijnt opnieuw, alles bevestigt visueel dat de uitlogging werkte. Dit is precies wat een founder controleert bij het testen van een uitlogfunctie, en het is een oprecht correct, noodzakelijk deel van de functie die werkt.
+## Hoe "Uitgelogd" er uit ziet vanuit de interface
 
-## Wat "Uitgelogd" Op De Server Moet Betekenen
+Het klikken op uitloggen in een typische AI-software-app verandert op de juiste manier wat de interface toont – het dashboard verdwijnt, een inlogformulier verschijnt opnieuw, alles bevestigt visueel dat het uitloggen werkte. Dit is exact wat een oprichter controleert bij het testen van een uitlogfunctie, en het is een oprecht correct, noodzakelijk onderdeel. Het is ook het enige onderdeel dat de meeste oprichters een natuurlijke reden hebben om te controleren.
 
-Voorbij de zichtbare interfacewijziging moet een correcte uitlogging daadwerkelijk de onderliggende sessie of token server-side ongeldig maken, zodat zelfs als een kopie van datzelfde sessietoken op de een of andere manier hergebruikt werd — via een opgeslagen browsertabblad, een gedeeld apparaat, of een vastgelegd verzoek — het geen toegang meer zou verlenen. Een uitlogging die alleen de referentie van de frontend naar het token wist, zonder het token zelf server-side ongeldig te maken, laat dat token nog steeds volledig functioneel als het opnieuw gepresenteerd wordt.
+## Wat "Uitgelogd" moet betekenen op de server
 
-## Waarom Dit Gat Bijna Onzichtbaar Is Tijdens Gewone Tests
+Voorbij de zichtbare interfacewijziging moet een juiste uitlogactie de onderliggende sessie of het token server-side daadwerkelijk ongeldig maken. Zelfs als een kopie van datzelfde sessietoken op een of andere manier opnieuw wordt gebruikt – via een opgeslagen tabblad of een gedeeld apparaat – mag het geen toegang meer verlenen. Een uitlogactie die alleen de verwijzing van de frontend naar het token wist, zonder het token zelf op de server ongeldig te maken, laat dat token nog steeds volledig functioneel.
 
-Jouw eigen uitlogfunctie testen betekent op uitloggen klikken en bevestigen dat de interface correct verandert — wat het doet, ongeacht of het onderliggende token daadwerkelijk ongeldig gemaakt werd of gewoon vergeten werd door de frontend. Er is geen natuurlijk punt tijdens deze test waarop een founder zou denken het oude, verondersteld uitgelogde token handmatig opnieuw naar de server te sturen om te controleren of het nog werkt.
+## Waarom deze kloof bijna onzichtbaar is tijdens normaal testen
 
-## Waarom Dit Meer Ertoe Doet Op Gedeelde Of Institutionele Apparaten
+Het testen van uw eigen uitlogfunctie betekent het klikken op uitloggen en bevestigen dat de interface correct verandert – wat het doet, ongeacht of het onderliggende token daadwerkelijk ongeldig werd gemaakt of simpelweg werd vergeten door de frontend. Er is geen natuurlijk punt tijdens deze test waar een oprichter eraan zou denken om het oude token handmatig opnieuw rechtstreeks naar de server te sturen om te controleren of het nog steeds werkt.
 
-Een e-learningplatform gebruikt over gedeelde schoolcomputers of institutionele apparaten staat voor dit risico concreter dan een typisch single-user-consumentenproduct — een leerling die uitlogt op een gedeelde klascomputer verwacht redelijkerwijs dat die actie hun sessie volledig beëindigt, en een token dat daarna geldig blijft creëert een echt, praktisch risico dat de volgende persoon op dat apparaat onbedoelde toegang behoudt.
+## Waarom dit meer uitmaakt op gedeelde of institutionele apparaten
 
-## Wat Dit Correct Fixen Vereist
+Een e-learningplatform dat wordt gebruikt op gedeelde schoolcomputers staat voor een concreter risico dan een typisch consumentenproduct. Een student die uitlogt op een gedeelde pc verwacht dat de sessie volledig eindigt. Een token dat achteraf geldig blijft creëert een echt risico dat de volgende persoon op dat apparaat onbedoelde toegang behoudt.
 
-Een correcte fix zorgt ervoor dat de uitlogactie de sessie of het token actief ongeldig maakt op de server, niet alleen zijn referentie wist op de client, geverifieerd door te bevestigen dat een vastgelegd pre-uitlog-token oprecht onmiddellijk daarna stopt te werken. [LaunchStudio](https://launchstudio.eu/en/) test precies dit scenario als onderdeel van zijn authenticatiebeveiligingsreview, gesteund door Manifera's 11+ jaar ervaring met sessie- en tokenbeheer over productiesystemen.
+## Wat het op de juiste manier herstellen hiervan vereist
 
-Manifera's sessiebeveiligingsaudits worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Een correcte herstelling garandeert dat de uitlogactie de sessie of het token actief ongeldig maakt op de server, en niet louter de verwijzing op de client wist. [LaunchStudio](https://launchstudio.eu/en/) test exact dit scenario als onderdeel van haar beoordeling van authenticatiebeveiliging, ondersteund door Manifera's 11+ jaar ervaring met sessie- en tokenbeheer over productiesystemen.
 
-[Praat met een engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
+Manifera's audits voor sessiebeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Praat met een ingenieur die met AI gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de uitlogging die niemand daadwerkelijk uitlogde
+### Een AI-native oprichter in actie: Het uitloggen dat niemand daadwerkelijk uitlogde
 
-Anna, een voormalig middelbareschooldocent die founder werd in Kampen, bouwde ToetsTijd, een AI-geassisteerd e-learning-quizplatform gebouwd met Cursor, gebruikt over verscheidene scholen op gedeelde klascomputers waar leerlingen frequent inlogden en uitlogden gedurende de dag.
+Anna, een voormalig leraar voortgezet onderwijs die oprichter werd in Kampen, bouwde ToetsTijd, een AI-ondersteund platform voor e-learning-quizzen gebouwd met Cursor. Het wordt gebruikt op verschillende scholen op gedeelde klaslokaalcomputers waar studenten gedurende de dag frequent in- en uitloggen.
 
-Een IT-onderlegde docent, die het gedrag van het platform testte uit professionele voorzichtigheid gegeven het gebruik op gedeelde apparaten, sloeg een sessietoken op vóór het uitloggen en stuurde het handmatig opnieuw daarna, en ontdekte dat het nog steeds volledige toegang verleende ondanks dat de interface een uitgelogde staat toonde. LaunchStudio's review bevestigde dat de uitlogfunctie alleen het token uit de lokale opslag van de frontend wiste, zonder het helemaal op de server ongeldig te maken.
+Een IT-vaardige leraar die het gedrag van het platform testte uit professionele voorzichtigheid, sloeg een sessietoken op voor het uitloggen en stuurde het achteraf handmatig opnieuw. Hij ontdekte dat het nog steeds volledige toegang verleende, ondanks dat de interface een uitgelogde status toonde. LaunchStudio's beoordeling bevestigde dat de uitlogfunctie het token alleen wist uit de lokale opslag van de frontend, zonder het überhaupt op de server ongeldig te maken.
 
-**Resultaat:** LaunchStudio implementeerde correcte server-side sessieongeldigmaking getriggerd door uitloggen, en bevestigde dat een vastgelegd pre-uitlog-token oprecht onmiddellijk daarna stopt te werken, en dicht het gat specifiek belangrijk voor ToetsTijds gedeelde-apparaat-klasgebruik.
+**Resultaat:** LaunchStudio implementeerde een correcte sessie-ongeldigverklaring aan de serverzijde getriggerd door uitloggen. Ze bevestigden dat een buitgemaakt token van vóór het uitloggen direct achteraf oprecht stopt met werken.
 
-> *"De interface zag er elke keer dat ik het zelf testte volledig uitgelogd uit, wat precies waarom ik nooit vermoedde dat er daadwerkelijk nog iets actief was eronder. Er was een docent nodig die specifiek testte op dit gedeelde-apparaat-scenario om het te vangen."*
-> — **Anna Visser, Founder, ToetsTijd (Kampen)**
+> *"De interface zag er elke keer dat ik het zelf testte compleet uitgelogd uit, wat exact is waarom ik nooit vermoedde dat er daadwerkelijk nog iets actief was eronder. Er was een leraar voor nodig die specifiek testte op dit gedeelde-apparaat-scenario om het op te vangen."*
+> — **Anna Visser, Oprichter, ToetsTijd (Kampen)**
 
-**Kosten & tijdlijn:** €1.600 (implementatie server-side sessieongeldigmaking) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (implementatie van sessie-ongeldigverklaring aan de serverzijde) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een sessiebeheerspecialist onvolledige uitlog-ongeldigmaking een gebruikelijk gat beschouwen in snel gebouwde applicaties?
+### Zou een sessiebeheerspecialist onvolledige uitlog-ongeldigverklaring beschouwen als een veelvoorkomende kloof?
 
-Ja, vrij gebruikelijk — een uitlogfunctie bouwen die correct de zichtbare interface bijwerkt is de meer voor de hand liggende, direct testbare vereiste, terwijl de aparte stap van server-side tokenongeldigmaking vereist te begrijpen dat de twee niet automatisch hetzelfde ding zijn, een onderscheid dat makkelijk gemist wordt zonder toegewijde sessiebeheerervaring.
+Ja, vrij veelvoorkomend – het bouwen van een uitlogfunctie die de zichtbare interface bijwerkt is de meer voor de hand liggende eis, terwijl het server-side ongeldig maken een afzonderlijke stap is.
 
-### Doet dit risico alleen ertoe voor gedeelde-apparaat-contexten zoals klaslokalen, of doet het ook ertoe voor individuele gebruikers?
+### Geldt dit risico alleen voor gedeelde apparaten zoals in klaslokalen?
 
-Het doet er ook ertoe voor individuele gebruikers, hoewel het praktische risico concreter en onmiddellijker is op gedeelde apparaten — het eigen apparaat van een individuele gebruiker gecompromitteerd of een token op een andere manier onderschept profiteert nog steeds van dezelfde server-side ongeldigmaking, gewoon met een minder voor de hand liggende, alledaagse trigger dan een gedeelde klascomputer.
+Het geldt ook voor individuele gebruikers, hoewel het praktische risico urgenter is op gedeelde apparaten.
 
-### Manifera's ervaring spant zowel consumenten- als institutioneel-gebruik-producten — helpt die variëteit een gedeeld-apparaat-specifiek risico zoals dat van ToetsTijd te vangen?
+### Maakt ervaring met consumenten- en institutionele producten uit voor gedeelde apparaten?
 
-Ja, aangezien het begrijpen van de specifieke gebruikscontext (gedeelde klasapparaten versus individuele persoonlijke apparaten) vormt welke risico's het meest urgent ertoe doen, en producten over beide contexten gereviewd hebben helpt een review correct prioriteren en specifiek testen op het scenario dat daadwerkelijk het meest relevant is voor het echte-wereld-gebruik van een gegeven product.
+Ja, aangezien het begrijpen van de specifieke gebruikscontext vormgeeft aan welke risico's het meest dringend zijn.
 
-### Herre Roelevink heeft het gat tussen "ziet er correct uit" en "is correct" beschreven als centraal voor waarom AI-native founders toegewijde review nodig hebben — vangt dit uitloggeval dat onderscheid goed?
+### Vangt deze casus het verschil tussen "ziet er correct uit" en "is correct" goed op?
 
-Ongeveer zo goed als elk enkel voorbeeld zou kunnen — de interface zag er volledig correct uit door elke test die Anna zelf draaide, terwijl het daadwerkelijke onderliggende gedrag betekenisvol anders was, precies het ziet-er-correct-uit-versus-is-correct-gat waar Roelevinks bredere commentaar op AI-gegenereerde software consistent naar teruggaat.
+Zo goed als een enkel voorbeeld maar kan – de interface zag er compleet correct uit, terwijl het onderliggende gedrag betekenisvol verschilde.
 
-### Is er een manier voor een founder om hun eigen uitlogfunctie op dit specifieke gat te testen zonder diepe technische kennis?
+### Kan een oprichter zijn eigen uitlogfunctie op deze kloof testen zonder diepe technische kennis?
 
-Het vereist minstens wat technisch comfort met tools die je een eerder vastgelegd verzoek laten opnieuw sturen, wat niet iets is dat elke founder makkelijk beschikbaar zal hebben — dit is een redelijk voorbeeld van een controle die specifiek baat heeft bij de tooling en ervaring van een technische reviewer in plaats van makkelijk zelf-verifieerbaar te zijn door een niet-technische founder alleen.
+Het vereist enige technische vaardigheid met tools die het mogelijk maken om een eerder buitgemaakt verzoek opnieuw te verzenden, wat niet elke oprichter paraat heeft.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Nút Đăng xuất (Logout) trên giao diện đã ẩn đi thì session ở Backend đã thực sự bị hủy chưa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chưa chắc — rất nhiều ứng dụng chỉ xóa Token ở LocalStorage phía Client chứ không gửi lệnh Revoke/Blacklist Token lên Server, khiến Token cũ vẫn dùng lại được."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lỗi đăng xuất không hủy Session nguy hiểm nhất ở môi trường nào?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nguy hiểm nhất ở máy tính dùng chung (như máy tính trường học, thư viện, quán net), người dùng tiếp theo có thể lấy lại Token để truy cập tài khoản cũ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Giải pháp triệt để cho việc Đăng xuất an toàn (Secure Logout) là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hủy hoàn toàn Refresh Token ở Server, đưa Access Token vào danh sách đen (Blacklist) hoặc dùng JWT có thời gian hết hạn ngắn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ngoài nút Logout, còn những sự kiện nào cần tự động hủy toàn bộ Session cũ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Khi người dùng Đổi mật khẩu (Password Change), Khôi phục mật khẩu (Password Reset) hoặc Đổi email đăng nhập."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thời gian triển khai luồng Hủy Session ở Server mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thường hoàn thành trong 3-5 ngày làm việc bao gồm cả việc test re-play token trên Postman/CurL."
+      }
+    }
+  ]
+}
+</script>

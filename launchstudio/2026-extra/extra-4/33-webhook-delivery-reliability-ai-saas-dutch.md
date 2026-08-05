@@ -1,17 +1,18 @@
 ---
-Titel: "Betrouwbaarheid van webhook-levering: het AI SaaS-integratiepunt De meeste prototypes gaan fout"
+Titel: "Betrouwbaarheid van webhook-levering: Het AI-SaaS-integratiepunt dat de meeste prototypes verkeerd aanpakken"
 Trefwoorden: ai saas, api and ai, webhook reliability, retry logic, signature verification
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# Betrouwbaarheid van webhook-levering: het AI SaaS-integratiepunt De meeste prototypes gaan fout
+
+# Betrouwbaarheid van webhook-levering: Het AI-SaaS-integratiepunt dat de meeste prototypes verkeerd aanpakken
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Betrouwbaarheid van webhook-levering: het AI SaaS-integratiepunt De meeste prototypes gaan fout",
-  "description": "Waarom AI-gegenereerde webhook-implementaties \u00e9\u00e9n keer worden geactiveerd en vervolgens weer opgeven, en wat de juiste logica voor opnieuw proberen en handtekeningverificatie eigenlijk vereisen om een \u200b\u200bSaaS-integratie betrouwbaar te laten zijn.",
+  "headline": "Betrouwbaarheid van webhook-levering: Het AI-SaaS-integratiepunt dat de meeste prototypes verkeerd aanpakken",
+  "description": "Waarom met AI gegenereerde webhook-implementaties één keer afvuren en het opgeven.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,17 +31,17 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Wat gebeurt er als uw app een webhook verzendt en de ontvangende server precies vier seconden lang een time-out krijgt? Als het eerlijke antwoord luidt: "Ik weet het niet, dat hebben we nooit getest", ben je niet de enige. Het is een van de meest voorkomende hiaten in door AI gegenereerde SaaS-integraties, en het is ook een van de stilste fouten die kunnen mislukken, omdat niets aan jouw kant ooit een fout veroorzaakt.
+Wat gebeurt er wanneer uw app een webhook verzendt en de ontvangende server krijgt een time-out van exact vier seconden? Als het eerlijke antwoord is "ik weet het niet, dat hebben we nooit getest", bent u niet alleen – het is een van de meest voorkomende kloven in met AI gegenereerde SaaS-integraties. En het is ook een van de stilste om te mislukken, omdat er aan uw kant nooit een foutmelding naar boven komt.
 
-## Een webhook is een belofte, geen vuur-en-vergeet-evenement
+## Een webhook is een belofte, en geen eenmalige gebeurtenis zonder omkijken
 
-Wanneer een AI-codegenerator een uitgaande webhook bouwt, produceert deze doorgaans precies waar om wordt gevraagd: stuur bij gebeurtenis X een HTTP POST naar de geconfigureerde URL van de klant. Die code werkt perfect in een demo, omdat het ontvangende eindpunt van de demo altijd actief is, altijd snel is en nooit de verbinding verbreekt. Echte klantinfrastructuur is geen van deze dingen op betrouwbare wijze. Een ontvangende server kan midden in gebruik zijn, snelheidsbeperkend zijn, achter een langzame proxy staan, of slechts kort offline zijn - en als de verzendende kant geen logica voor nieuwe pogingen heeft, is die ene mislukte bezorgpoging voorgoed voorbij. Er komt nergens een fout naar voren, omdat vanuit het oogpunt van de afzender het verzoek is verzonden. Wat er daarna gebeurde, werd nooit gecontroleerd.
+Wanneer een AI-coderingsassistent een uitgaande webhook bouwt, produceert deze doorgaans exact waar om werd gevraagd: stuur bij gebeurtenis X een HTTP POST naar de geconfigureerde URL van de klant. Die code werkt perfect in een demo, omdat het ontvangende eindpunt van de demo altijd online is, altijd snel, en nooit de verbinding verbreekt. Echte infrastructuur van klanten is niets van die dingen op een betrouwbare manier. Een ontvangende server kan zich halverwege een uitrol bevinden, een snelheidslimiet afdwingen, achter een trage proxy zitten, of simpelweg kortstondig offline zijn. Als de verzendende kant geen herhaallogica heeft, is die enkele mislukte leveringspoging voor altijd verdwenen. Er komt nergens een foutmelding naar boven, want vanuit het oogpunt van de verzender is het verzoek verzonden. Wat er daarna gebeurde werd nooit gecontroleerd.
 
-De tweede helft van deze kloof is handtekeningverificatie. Zonder een gedeeld geheim dat wordt gebruikt om de payload te ondertekenen (meestal een HMAC-hash die als header is opgenomen), kan het ontvangende systeem niet bevestigen dat de webhook daadwerkelijk uit uw app komt en niet door een derde partij is vervalst. AI-generatoren slaan dit vaak helemaal over, tenzij er expliciet om wordt gevraagd, omdat "wordt de webhook geactiveerd" en "is de webhook te vervalsen" twee heel verschillende vereisten zijn die er in een werkende demo identiek uitzien.
+De tweede helft van deze kloof is de verificatie van de handtekening. Zonder een gedeeld geheim dat wordt gebruikt om de payload te ondertekenen – doorgaans een HMAC-hash die als header is opgenomen – heeft het ontvangende systeem geen manier om te bevestigen dat de webhook daadwerkelijk afkomstig was van uw app en niet is vervalst door een derde partij. AI-codegeneratoren slaan dit frequent volledig over tenzij er expliciet om wordt gevraagd, omdat "vuurt de webhook af" en "is de webhook te vervalsen" twee erg verschillende vereisten zijn die toevallig identiek lijken in een werkende demo.
 
-## Wat betrouwbare webhook-levering eigenlijk vereist
+## Wat een betrouwbare levering van webhooks daadwerkelijk vereist
 
-Een uitgaand webhooksysteem van productiekwaliteit heeft een nieuwe poging met uitstel nodig, een handtekening zodat ontvangers de authenticiteit kunnen verifiëren, en een leveringslogboek zodat beide partijen kunnen zien wat er daadwerkelijk is verzonden en ontvangen.
+Een uitgaand webhooksystem op productieniveau heeft herhaalpogingen met vertraging (backoff) nodig, een handtekening zodat ontvangers de authenticiteit kunnen verifiëren, en een leveringslogboek zodat beide kanten kunnen zien wat er daadwerkelijk is verzonden en ontvangen.
 
 ```javascript
 function signPayload(payload, secret) {
@@ -71,71 +72,67 @@ async function sendWebhook(url, payload, secret, attempt = 1) {
 }
 ```
 
-Het leveringslogboek is net zo belangrijk als de logica voor opnieuw proberen. Het is wat een oprichter (of het ondersteuningsteam van zijn klant) laat antwoorden "is dit evenement daadwerkelijk afgeleverd" zonder te raden. De ingenieurs van Manifera, gebaseerd op meer dan elf jaar productie-integratiewerk, beschouwen een leveringslogboek als niet-onderhandelbaar voor elk B2B SaaS-product waarbij het downstream-systeem van een klant afhankelijk is van de aankomst van uw evenementen.
+Het leveringslogboek doet er evenveel toe als de herhaallogica. Het is wat een oprichter – of het ondersteuningsteam van zijn klant – laat antwoorden op "is deze gebeurtenis daadwerkelijk geleverd" zonder te gokken. Manifera's ingenieurs, puttend uit 11+ jaar ervaring in integratiewerk in productie, behandelen een leveringslogboek als niet-onderhandelbaar voor elk B2B SaaS-product waar het stroomafwaartse systeem van een klant afhankelijk is van het aankomen van uw gebeurtenissen.
 
-## Levering is niet exact eenmalig — ontwerp de ontvangende kant daarop
+## Levering is niet exact-één-keer — Ontwerp de ontvangende kant daar voor
 
-Het toevoegen van nieuwe pogingen lost stille storingen op, maar introduceert een feit waar de meeste door AI gegenereerde integraties nooit rekening mee houden: zodra er nieuwe pogingen bestaan, is levering niet langer exact-eenmalig, maar minstens-eenmalig. Als een ontvangende server een gebeurtenis succesvol verwerkt, maar de bevestiging ervan onderweg verloren gaat, zal de retry-logica van de afzender — die precies doet wat is bedoeld — diezelfde gebeurtenis opnieuw afleveren. Elke grote webhookaanbieder (Stripe, GitHub, Slack) documenteert dit expliciet en verwacht dat de ontvanger hiermee omgaat; de meeste door oprichters gebouwde integraties doen dat niet, omdat een demo nooit het scenario van vertraagde bevestiging veroorzaakt dat dit blootlegt.
+Het toevoegen van herhaalpogingen herstelt stille storingen, maar het introduceert een feit waar de meeste met AI gegenereerde integraties nooit rekening mee houden: op het moment dat herhaalpogingen bestaan, is de levering niet langer exact-één-keer. Het is minstens-één-keer. Als een ontvangende server een gebeurtenis succesvol verwerkt maar de bevestiging ervan raakt verloren tijdens het transport, zal de herhaallogica van de verzender – exact werkend zoals ontworpen – diezelfde gebeurtenis opnieuw leveren. Elke grote webhook-provider (Stripe, GitHub, Slack) documenteert dit expliciet en verwacht dat de ontvanger het afhandelt. De meeste door oprichters gebouwde integraties doen dat niet, omdat een demo nooit het scenario met een vertraagde bevestiging activeert dat het veroorzaakt.
 
-De oplossing hoort thuis in de payload, niet in de retry-logica: elke gebeurtenis heeft een stabiele, unieke gebeurtenis-ID nodig die bij elke bezorgpoging identiek blijft, zodat de ontvangende kant kan controleren "heb ik deze ID al verwerkt?" voordat er een tweede keer op wordt gehandeld.
+De herstelling hoort thuis in de payload, en niet in de herhaallogica: elke gebeurtenis heeft een stabiel, uniek gebeurtenis-ID nodig dat identiek blijft over elke leveringspoging, zodat de ontvangende kant kan controleren "heb ik dit ID al verwerkt?" voordat deze er een tweede keer naar handelt.
 
 ```javascript
 async function handleIncomingWebhook(event) {
   const alreadyProcessed = await db.processedEvents.findOne({ eventId: event.id });
-  if (alreadyProcessed) return; // duplicate delivery, safely ignored
+  if (alreadyProcessed) return; // dubbele levering, veilig genegeerd
   await db.processedEvents.insertOne({ eventId: event.id, receivedAt: new Date() });
   await applyEvent(event);
 }
 ```
 
-Zonder deze controle kan een dubbele levering van een "bestelling aangemaakt"-gebeurtenis dezelfde bestelling twee keer aanmaken in het systeem van een klant — wat er, vanuit het perspectief van de klant, precies uitziet als een gegevensintegriteitsbug in uw product, ook al was de onderliggende oorzaak een netwerkstoring en een retry die correct zijn werk deed.
+Zonder deze controle kan een dubbele levering van een gebeurtenis "bestelling aangemaakt" dezelfde bestelling twee keer aanmaken in het systeem van een klant. Vanaf de kant van de klant ziet dat er exact uit als een bug in de gegevensintegriteit in uw product, hoewel de onderliggende oorzaak een netwerk-hapering was en een herhaalpoging die zijn werk correct deed.
 
-## Waarom deze kloof groter is voor SaaS dan voor consumentenapps
+## Waarom deze kloof erger is voor SaaS dan voor consumenten-apps
 
-Als een consumentenapp geen nieuwe webhook-poging doet, kan dit betekenen dat één pushmelding nooit arriveert: vervelend en zelden bedrijfskritisch. Een B2B SaaS-product dat verbinding maakt met het bestelsysteem, CRM of boekhoudsoftware van een klant is anders: elke gemiste webhook is een stille gegevensdesynchronisatie tussen jouw app en die van hen, en dit zorgt voor een verbinding. Als de integratie van de ordersynchronisatie van een klant drie gebeurtenissen in een week mist, zijn de voorraadtellingen, de orderstatus of de financiële gegevens nu stilletjes verkeerd, en geen van beide systemen weet dat.
+Een consumenten-app die een webhook-herhaalpoging mist betekent dat één pushmelding nooit aankomt – irritant, maar zelden bedrijfskritisch. Een B2B SaaS-product dat verbinding maakt met het bestelsysteem, de CRM of de boekhoudsoftware van een klant is anders: elke gemiste webhook is een stille gegevens-desynchronisatie tussen uw app en de hunne, en het stapelt zich op. Als een bestel-synchronisatie-integratie van een klant gedurende een week drie gebeurtenissen mist, zijn zijn voorraadschattingen, bestelstatussen of financiële records nu stilletjes onjuist. En geen van beide systemen weet het.
 
-Ons technische team, dat werkt vanuit Ho Chi Minh-stad, waar een groot deel van LaunchStudio's integratie- en backend-werk wordt gebouwd, ziet dit patroon het vaakst in tools die het ene SaaS-platform met het andere verbinden - precies het soort product waarbij de betrouwbaarheid van webhooks geen nice-to-have is, maar de hele waardepropositie. Als uw app realtime synchronisatie aan klanten belooft, is [ons proces](https://launchstudio.eu/en/#process) gebouwd om te verifiëren dat deze belofte ook daadwerkelijk stand houdt onder reële netwerkomstandigheden, en niet alleen onder demoomstandigheden.
+Ons engineeringteam, werkend vanuit Ho Chi Minh-stad waar een groot deel van LaunchStudio's integratie- en backendwerk wordt gebouwd, ziet dit patroon het vaakst in tools die het ene SaaS-platform verbinden met het andere – exact het soort product waar webhook-betrouwbaarheid geen extraatje is, maar de gehele waardepropositie. Als uw app realtime-synchronisatie belooft aan klanten, is [ons proces](https://launchstudio.eu/en/#process) gebouwd om te verifiëren dat die belofte daadwerkelijk standhoudt onder echte netwerkomstandigheden, en niet alleen onder demo-omstandigheden.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: de stille order-synchronisatiekloof
+### Een AI-native oprichter in actie: De stille kloof bij het synchroniseren van bestellingen
 
-Job Reijnders bouwde KoppelHub, een integratieplatform dat SaaS-tools voor het MKB met elkaar verbindt, met behulp van Cursor. De kernfunctie ervan was het versturen van uitgaande webhooks naar de systemen van klanten telkens wanneer een bestelling werd aangemaakt of bijgewerkt, waardoor hun integraties voor ordersynchronisatie in realtime actueel bleven. De webhookcode werkte betrouwbaar tijdens het testen, waarbij de ontvangende eindpunten altijd responsief waren.
+Job Reijnders bouwde KoppelHub, een integratieplatform dat SaaS-tools verbindt voor MKB-bedrijven, met behulp van Cursor. De kernfunctie was het afvuren van uitgaande webhooks naar systemen van klanten wanneer een bestelling werd aangemaakt of bijgewerkt, waardoor hun bestel-synchronisatie-integraties in realtime actueel bleven. De webhook-code werkte betrouwbaar tijdens het testen, waar de ontvangende eindpunten altijd reageerden.
 
-Tijdens de productie zorgde een korte netwerkstoring op de ontvangende server van een klant ervoor dat een handvol webhookleveringen mislukte. Omdat er geen logica voor opnieuw proberen en geen handtekeningverificatie was, ging KoppelHub gewoon verder: de mislukte verzoeken werden nooit meer geprobeerd en er was geen leveringslogboek waaruit iemand kon zien dat er iets was verdwenen. Door de ordersynchronisatie-integratie van de klant werden stilletjes verschillende bestellingen gemist, en noch Job noch de klant konden op de hoogte zijn van dit feit totdat de eigen voorraadnummers van de klant weken later niet meer overeenkwamen met de werkelijkheid.
+In productie veroorzaakte een korte netwerk-hapering op de ontvangende server van één klant dat een handvol webhook-leveringen mislukte. Omdat er geen herhaallogica was en geen verificatie van de handtekening, ging KoppelHub simpelweg verder – de mislukte verzoeken werden nooit meer geprobeerd, en er was geen leveringslogboek om iemand te tonen dat er iets verloren was gegaan. De bestel-synchronisatie-integratie van de klant miste stilletjes verschillende bestellingen. Noch Job noch de klant hadden een manier om te weten dat het was gebeurd totdat de eigen voorraadcijfers van de klant weken later niet meer overeenkwamen met de realiteit.
 
-De technici van LaunchStudio hebben het webhook-leveringssysteem opnieuw opgebouwd met exponentiële nieuwe pogingen over een periode van zes pogingen, HMAC-handtekeningverificatie voor elke payload en een leveringslogboek zichtbaar in het beheerderspaneel van KoppelHub dat de status toont van elke webhook die naar elke klant wordt verzonden.
+LaunchStudio's ingenieurs herbouwden het systeem voor het leveren van webhooks met herhaalpogingen met exponentiële vertraging over een venster van zes pogingen, HMAC-handtekeningverificatie op elke payload, en een leveringslogboek zichtbaar in het beheerderspanel van KoppelHub dat de status toont van elke webhook die naar elke klant is verzonden.
 
-**Resultaat:** De klanten van Job kunnen nu in realtime zien of hun integratie gebeurtenissen ontvangt - en KoppelHub herstelt automatisch van tijdelijke netwerkstoringen in plaats van stilletjes gegevens te laten vallen.
+**Resultaat:** Job's klanten kunnen nu in realtime zien of hun integratie gebeurtenissen ontvangt – en KoppelHub herstelt automatisch van tijdelijke netwerkstoringen in plaats van stilletjes gegevens te laten vallen.
 
-> *"Vroeger hoopte ik alleen maar dat de webhooks arriveerden. Nu kan ik een klant het bewijs laten zien dat hun gegevens zijn gesynchroniseerd, of ik kan het zelf ontdekken voordat ze zelfs maar een gat opmerken."*
+> *"Ik hoopte vroeger simpelweg dat de webhooks aankwamen. Nu kan ik een klant daadwerkelijk het bewijs tonen dat zijn gegevens zijn gesynchroniseerd, of het zelf opvangen voordat ze überhaupt een kloof opmerken."*
 > — **Job Reijnders, Oprichter, KoppelHub (Tiel)**
 
-**Kosten en tijdlijn:** € 1.100 (infrastructuur voor opnieuw proberen van de webhook, HMAC-ondertekening en registratie van leveringen op alle integratie-eindpunten) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.100 (infrastructuur voor webhook-herhaalpogingen, HMAC-ondertekening, en leveringslogboeken over alle integratie-eindpunten) — voltooid in 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom zou een webhook stilletjes mislukken in plaats van een zichtbare fout te veroorzaken?
+### Waarom zou een webhook stilletjes mislukken in plaats van een zichtbare foutmelding te geven?
 
-Omdat vanuit het perspectief van de verzendende app het HTTP-verzoek is gedaan: de fout vindt plaats op het netwerk of aan de ontvangende kant, en zonder expliciete logica voor opnieuw proberen en loggen registreert niets aan de verzendende kant ooit dat de bezorging niet is gelukt.
+Omdat vanuit het perspectief van de verzendende app het HTTP-verzoek is gedaan – de mislukking vindt plaats op het netwerk of aan de ontvangende kant. Zonder expliciete herhaal- en logica-logboeken registreert niets aan de verzendende kant dat de levering niet is geslaagd.
 
-### Waar beschermt handtekeningverificatie eigenlijk tegen?
+### Waar beschermt de verificatie van een handtekening daadwerkelijk tegen?
 
-Hiermee kan het ontvangende systeem bevestigen dat een webhook echt afkomstig is van uw app en niet is vervalst of opnieuw is afgespeeld door een aanvaller, waarbij een gedeeld geheim wordt gebruikt om voor elke payload een HMAC-hash te genereren en te controleren.
+Het laat het ontvangende systeem bevestigen dat een webhook oprecht afkomstig was van uw app en niet werd vervalst of opnieuw afgespeeld door een aanvaller, door een gedeeld geheim te gebruiken om bij elke payload een HMAC-hash te genereren en te controleren.
 
-### Hoeveel nieuwe pogingen zijn 'genoeg' voor een webhook?
+### Hoeveel herhaalpogingen zijn "genoeg" voor een webhook?
 
-De technici van Manifera implementeren doorgaans vijf tot zes pogingen met exponentiële uitstel, gespreid over enkele minuten tot uren, waardoor de overgrote meerderheid van tijdelijke storingen wordt gedekt zonder de server van een klant te belasten of kritieke gegevens voor onbepaalde tijd te vertragen.
+Manifera's ingenieurs implementeren doorgaans vijf tot zes pogingen met exponentiële vertraging (backoff) verspreid over enkele minuten tot uren. Dit dekt de grote meerderheid van tijdelijke storingen af zonder de server van een klant plat te gooien of kritieke gegevens voor onbepaalde tijd te vertragen.
 
-### Geldt dit als ik momenteel maar een handvol klanten heb?
+### Als herhaalpogingen het leveringsprobleem herstellen, welk nieuw probleem creëren ze dan?
 
-Ja, het risico is niet evenredig aan het aantal klanten, maar aan de mate waarin het systeem van een klant afhankelijk is van uw gebeurtenissen, en zelfs één ondernemingsgerichte klant kan verloren gaan door een stille gegevensdesynchronisatie.
-
-### Als nieuwe pogingen het leveringsprobleem oplossen, welk nieuw probleem creëren ze dan?
-
-Nieuwe pogingen maken levering minstens-eenmalig in plaats van exact-eenmalig, wat betekent dat dezelfde gebeurtenis legitiem twee keer kan aankomen — dus moet de ontvangende kant een stabiele gebeurtenis-ID controleren en alles overslaan wat al is verwerkt, anders kan een herhaalde levering stilletjes dubbele records aanmaken.
+Herhaalpogingen maken levering minstens-één-keer in plaats van exact-één-keer, wat betekent dat dezelfde gebeurtenis legitiem twee keer kan aankomen. De ontvangende kant moet dus een stabiel gebeurtenis-ID controleren en alles wat het al heeft verwerkt overslaan, anders kan een herhaalde levering stilletjes dubbele records aanmaken.
 
 <script type="application/ld+json">
 {
@@ -144,42 +141,42 @@ Nieuwe pogingen maken levering minstens-eenmalig in plaats van exact-eenmalig, w
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom zou een webhook stilletjes mislukken in plaats van een zichtbare fout te veroorzaken?",
+      "name": "Waarom geeft een mislukte uitgaande webhook geen foutmelding in mijn app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat vanuit het perspectief van de verzendende app het HTTP-verzoek is gedaan: de fout vindt plaats op het netwerk of aan de ontvangende kant, en zonder expliciete logica voor opnieuw proberen en loggen registreert niets aan de verzendende kant ooit dat de bezorging niet is gelukt."
+        "text": "Omdat jouw app de HTTP POST succesvol heeft verzonden. De fout ontstaat op het netwerk of de ontvangende server, en wordt zonder retry-logger niet geregistreerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Waar beschermt handtekeningverificatie eigenlijk tegen?",
+      "name": "Waarom is HMAC-signature verification verplicht bij webhooks?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hiermee kan het ontvangende systeem bevestigen dat een webhook echt afkomstig is van uw app en niet is vervalst of opnieuw is afgespeeld door een aanvaller, waarbij een gedeeld geheim wordt gebruikt om voor elke payload een HMAC-hash te genereren en te controleren."
+        "text": "HMAC-ondertekening garandeert dat het ontvangen webhook-bericht echt van jouw platform komt en niet door een kwaadwillende derde is vervalst."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel nieuwe pogingen zijn 'genoeg' voor een webhook?",
+      "name": "Hoeveel retries moet een professioneel webhook-systeem uitvoeren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De technici van Manifera implementeren doorgaans vijf tot zes pogingen met exponentiële uitstel, gespreid over enkele minuten tot uren, waardoor de overgrote meerderheid van tijdelijke storingen wordt gedekt zonder de server van een klant te belasten of kritieke gegevens voor onbepaalde tijd te vertragen."
+        "text": "Gebruikelijk is 5 tot 6 herhaalpogingen met exponentiële backoff verspreid over uren (bijv. na 2s, 10s, 1m, 15m, 2u)."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt dit als ik momenteel maar een handvol klanten heb?",
+      "name": "Wat is het verschil tussen at-least-once en exactly-once delivery?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, het risico is niet evenredig aan het aantal klanten, maar aan de mate waarin het systeem van een klant afhankelijk is van uw gebeurtenissen, en zelfs één ondernemingsgerichte klant kan verloren gaan door een stille gegevensdesynchronisatie."
+        "text": "Door netwerk-retries kan 1 webhook meerdere keren aankomen (at-least-once). De ontvanger moet met een eventId checken of het bericht al verwerkt is."
       }
     },
     {
       "@type": "Question",
-      "name": "Als nieuwe pogingen het leveringsprobleem oplossen, welk nieuw probleem creëren ze dan?",
+      "name": "Waarom is webhook-betrouwbaarheid bij B2B SaaS extra kritisch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nieuwe pogingen maken levering minstens-eenmalig in plaats van exact-eenmalig, wat betekent dat dezelfde gebeurtenis legitiem twee keer kan aankomen — dus moet de ontvangende kant een stabiele gebeurtenis-ID controleren en alles overslaan wat al is verwerkt, anders kan een herhaalde levering stilletjes dubbele records aanmaken."
+        "text": "Gemiste webhooks bij B2B veroorzaken stille data-desynchronisatie in de CRM, boekhouding of voorraad van de klant, wat snel tot klantverloop leidt."
       }
     }
   ]

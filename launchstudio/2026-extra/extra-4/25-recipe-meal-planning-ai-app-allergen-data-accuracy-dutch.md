@@ -1,17 +1,18 @@
 ---
-Titel: "AI-apps voor maaltijdplanning: de nauwkeurigheid van allergenengegevens is een ander soort productieklaar"
+Titel: "AI-maaltijdplannings-apps: Nauwkeurigheid van allergeengegevens is een ander soort productie-gereedheid"
 Trefwoorden: ai app, ai secure, meal planning app, allergen data, ai-generated code, food safety software
 Koperfase: Bewustzijn
 Doelgroep: AI-Native oprichter (niet-technisch)
 ---
-# AI-apps voor maaltijdplanning: de nauwkeurigheid van allergenengegevens is een ander soort productieklaar
+
+# AI-maaltijdplannings-apps: Nauwkeurigheid van allergeengegevens is een ander soort productie-gereedheid
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-apps voor maaltijdplanning: de nauwkeurigheid van allergenengegevens is een ander soort productieklaar",
-  "description": "Waarom allergeenvoorkeuren in door AI gebouwde apps voor maaltijdplanning vaak worden genegeerd tijdens het vervangen van recepten, en wat oprichters moeten verifi\u00ebren voordat ze een door AI gegenereerde app kunnen vertrouwen met voedselveiligheidsgegevens.",
+  "headline": "AI-maaltijdplannings-apps: Nauwkeurigheid van allergeengegevens is een ander soort productie-gereedheid",
+  "description": "Waarom allergenenvoorkeuren in met AI gebouwde maaltijdplannings-apps vaak genegeerd worden bij receptvervangingen.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,82 +31,90 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Wat betekent ‘productieklaar’ eigenlijk voor een app die raakt aan voedselveiligheid? Voor de meeste softwarecategorieën betekent dit dat de app niet crasht, dat betalingen doorgaan en dat er geen gegevens lekken. Voor een app voor maaltijdplanning betekent dit iets veel strenger: een opgeslagen allergeenvoorkeur moet overal en altijd worden gerespecteerd, zonder uitzonderingen – ook in de delen van de app die het laatst zijn toegevoegd en het minst zijn getest. In die laatste clausule mislukken veel door AI gebouwde apps voor maaltijdplanning stilletjes.
+Wat betekent "productie-gereed" daadwerkelijk voor een app die de voedselveiligheid raakt? Voor de meeste softwarecategorieën betekent het dat de app niet crasht, betalingen doorgaan en er geen gegevens lekken. Voor een maaltijdplannings-app betekent het iets wat aanzienlijk strenger is: een opgeslagen allergenenvoorkeur moet overal, elke keer, met nul uitzonderingen worden gerespecteerd – inclusief in de onderdelen van de app die het laatst werden toegevoegd en het minst werden getest. Die laatste zin is waar veel met AI gebouwde maaltijdplannings-apps stilletjes falen.
 
-## Allergenengegevens zijn geen voorkeursveld, het is een veiligheidsbeperking
+## Allergeengegevens zijn geen voorkeursveld, maar een veiligheidsbeperking
 
-De meeste app-bouwers – mens of AI – behandelen ‘allergieën’ als gewoon een ander veld in een gebruikersprofiel, vergelijkbaar met voedingsvoorkeur of portiegrootte. Functioneel gezien gedraagt ​​het zich in veel gegenereerde code ook zo: het wordt gelezen en gerespecteerd waar de oprichter expliciet om controle heeft gevraagd, en overal elders stilletjes genegeerd. Het gevaar is dat apps voor maaltijdplanning zelden als één functie voor het matchen van recepten worden geleverd. Ze worden geleverd als een kernplanner plus een groeiende lijst met AI-ondersteunde extra’s – ‘stel een vervanger voor’, ‘ruil dit ingrediënt’, ‘regenereer het plan van deze week’ – en elk van die extra’s wordt meestal gebouwd als zijn eigen functieverzoek, vaak in zijn eigen AI-coderingssessie, zonder dat de oorspronkelijke logica voor het filteren van allergenen automatisch wordt overgedragen.
+De meeste app-bouwers – menselijk of AI – behandelen "allergieën" als gewoon een ander veld op een gebruikersprofiel, vergelijkbaar met een dieetvoorkeur of portiegrootte. Functioneel gedraagt het zich in veel gegenereerde code ook op die manier: het wordt gelezen en gerespecteerd overal waar de oprichter expliciet vroeg om het te controleren, en stilletjes genegeerd op elke andere plek. Het gevaar is dat maaltijdplannings-apps zelden worden verzonden als één enkele recept-match-functie. Ze worden verzonden als een kernplanner plus een groeiende lijst van door AI ondersteunde extra's – "stel een vervanging voor", "wissel dit ingrediënt om", "regenereer de planning van deze week" – en elk van die extra's wordt doorgaans gebouwd als een eigen functieverzoek, vaak in een eigen AI-coderingssessie, zonder dat de oorspronkelijke allergenen-filterlogica automatisch wordt meegenomen.
 
-Het resultaat is een app die het gemarkeerde allergeen van een gebruiker correct uitfiltert in het hoofdmenu van het maaltijdplan, en datzelfde allergeen vervolgens direct weer aan de gebruiker serveert zodra hij of zij op een gemaksfunctie tikt die daarna is toegevoegd. Van de kant van de oprichter 'werkte' alles tijdens het testen, omdat de oprichter de functie testte die ze zojuist hadden gebouwd, en niet de interactie tussen die functie en elke andere beperking die al in het gebruikersprofiel aanwezig was.
+Het resultaat is een app die het gemarkeerde allergeen van een gebruiker correct uitfiltert in het hoofdmaaltijdplanningsscherm, en vervolgens datzelfde allergeen rechtstreeks aan hen terug serveert op het moment dat ze op een handige functie tikken die er achteraf op is geplakt. Vanaf de kant van de oprichter "werkte" alles bij het testen, omdat de oprichter de functie testte die hij net had gebouwd, en niet de interactie tussen die functie en elke andere beperking die al op het profiel van de gebruiker leefde.
 
-## Dit is precies het soort gat dat AI-gegenereerde code goed verbergt
+## Dit is exact het soort kloof dat met AI gegenereerde code goed verbergt
 
-Het is de moeite waard om bot te zijn over waarom dit zo consistent gebeurt: AI-coderingstools zijn uitstekend in het implementeren van de functie die u beschrijft, en veel zwakker in het redeneren over beperkingen die u niet in die specifieke prompt noemde. Als een oprichter vraagt ​​om 'een receptvervangingsfunctie' zonder expliciet opnieuw te specificeren 'en het moet ook opgeslagen allergenen respecteren', is de kans groot dat de gegenereerde code geen kruisverwijzingen naar de twee zal opleveren. Dit is een bekend patroon achter een bredere statistiek die de moeite waard is om in gedachten te houden: uit onderzoek uit de sector blijkt dat het aandeel van door AI gegenereerde code met beveiligings- of correctheidsproblemen rond de 45% ligt, en leemtes in de omgang met beperkingen zoals deze vormen een betekenisvol onderdeel van dat aantal.
+Het is het waard om eerlijk te zijn over waarom dit zo consistent gebeurt: AI-coderingsassistenten zijn uitstekend in het implementeren van de functie die u beschrijft, en aanzienlijk zwakker in het redeneren over beperkingen die u in die specifieke prompt niet heeft genoemd. Als een oprichter vraagt om "een receptvervangingsfunctie" zonder expliciet opnieuw te specificeren "en het moet ook opgeslagen allergenen respecteren", is er een reële kans dat de gegenereerde code de twee niet kruislings vergelijkt. Dit is een bekend patroon achter een bredere statistiek die het waard is om in gedachten te houden: sectoronderzoek geeft aan dat het aandeel met AI gegenereerde code dat kwetsbaarheden in beveiliging of correctheid bevat rond de 45% ligt. Kloven in het afhandelen van beperkingen zoals deze vormen een betekenisvol onderdeel van dat getal.
 
-LaunchStudio's audits voor consumentenvoedsel- en gezondheidsapps testen specifiek de handhaving van beperkingen tussen functies, waarbij een voorkeur die in een deel van de app is ingesteld, wordt vergeleken met de output van elke andere functie, en niet alleen die waarvoor deze oorspronkelijk is gebouwd. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan elf jaar ervaring in productie-engineering, en dit soort systematische constraint-tests is standaardpraktijk bij bedrijfsprojecten, lang voordat het standaardpraktijk wordt voor solo-oprichters - en dat is precies de kloof die LaunchStudio wil dichten.
+LaunchStudio's audits voor maaltijd- en gezondheids-apps voor consumenten testen specifiek de handhaving van beperkingen over functies heen – het controleren van een voorkeur die in het ene deel van de app is ingesteld tegen de uitvoer van elke andere functie, en niet alleen degene waar deze oorspronkelijk voor is gebouwd. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering. Dit soort systematisch testen van beperkingen is standaardpraktijk op enterprise-projecten lang voordat het standaardpraktijk wordt voor solo-oprichters – wat exact de kloof is die LaunchStudio bestaat om te dichten.
 
-## Wat oprichters moeten verifiëren vóór de lancering
+## Wat oprichters zouden moeten verifiëren vóór de lancering
 
-Oprichters hoeven geen ingenieur te worden om deze categorie bugs op te vangen, maar ze moeten wel anders testen dan ze waarschijnlijk hebben getest. Zet een nep-allergeen op een testaccount en probeer het vervolgens doelbewust te kraken: gebruik elke AI-suggestiefunctie, elke 'regenereer', elke vervangingsstroom, elke export-naar-boodschappenlijst-knop, en zorg ervoor dat het allergeen nooit meer opduikt. Als dit ook maar één keer het geval is, beschouw het dan als een lanceringsblokkering en niet als een vervolgticket. De kosten van een foute beoordeling zijn namelijk geen slechte recensie, maar een gebruiker met een echte allergie die vertrouwt op het woord van uw app voor wat veilig is om te eten.
+Oprichters hoeven geen ingenieurs te worden om deze categorie bugs op te vangen, maar ze moeten wel anders testen dan ze waarschijnlijk hebben getest. Stel een nep-allergeen in op een testaccount, en probeer het vervolgens bewust te breken: gebruik elke AI-suggestiefunctie, elke "hergeneratie", elke vervangingsstroom, elke knop voor exporteren naar een boodschappenlijst, en controleer of het allergeen nooit meer bovenkomt. Als het dat ook maar één keer doet, behandel het dan als een lanceringblokkade, en niet als een opvolgticket – want de kosten van het verkeerd aanpakken hiervan zijn geen slechte beoordeling, maar een gebruiker met een echte allergie die het woord van uw app vertrouwt voor wat veilig is om te eten.
 
-Het team van Manifera, gevestigd vanuit het Europese hoofdkantoor in Amsterdam, werkt rechtstreeks samen met de oprichters om precies dit soort gestructureerde pre-lanceringscontrole uit te voeren op een hele app in plaats van op één functie tegelijk. U kunt zien hoe die betrokkenheid doorgaans werkt op de [LaunchStudio-pakkettenpagina](https://launchstudio.eu/en/#packages), en voor een bredere kijk op hoe Manifera webapplicatie-engineering op productieniveau benadert, bekijkt u het werk van het team [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Manifera's team, werkend vanuit het Europese hoofdkantoor in Amsterdam, werkt rechtstreeks met oprichters om exact dit soort gestructureerde pre-lanceringcontroles uit te voeren over een gehele app in plaats van één functie tegelijk. U kunt bekijken hoe die samenwerking doorgaans werkt op de [LaunchStudio-pakkettenpagina](https://launchstudio.eu/en/#packages). Voor een bredere blik op hoe Manifera webtoepassingen op productieniveau benadert, bekijk het werk van het team op het gebied van [maatwerk softwareontwikkeling](https://www.manifera.com/services/web-app-develop/).
 
-## Een vast filter hangt er nog steeds van af dat de ingrediëntenlijst klopt op het moment dat het geserveerd wordt
+## Een vast filter hangt nog steeds af van de juistheid van de ingrediëntenlijst op het moment dat deze geserveerd wordt
 
-Het filteren van recepten op allergenen is een veiligheidsvereiste. Als een recepten-app de ingrediëntenlijst dynamisch ophaalt van een externe leverancier, maar het allergenenfilter niet opnieuw evalueert bij wijzigingen, kan een gewijzigd recept stilzwijgend door het filter glippen.
+Het centraliseren van de allergenencontrole in één gedeelde functie sluit de kloof tussen functies, maar het neemt stilletjes iets aan wat niet altijd waar is: dat de ingrediëntenlijst van het recept definitief en nauwkeurig is op het moment dat het filter draait. Maaltijdplannings-apps serveren zelden een vast, vooraf geschreven recept zoals het is – ze passen het routinematig ter plekke aan voor een compleet ander doel, zoals het vervangen van koemelk door een plantaardig alternatief om aan een veganistische voorkeur te voldoen, of het vervangen van een meel met minder koolhydraten om een macrodoel te halen. Elk van die vervangingen verandert de daadwerkelijke ingrediëntenlijst die een gebruiker zal koken en eten. Als de allergenencontrole draait tegen de *oorspronkelijke* gemarkeerde ingrediënten van het recept in plaats van de *definitieve* vervangen lijst, kan het een gerecht doorlaten dat nu amandelmelk of een meel op basis van noten bevat – hoewel het gedeelde filter exact werkt zoals ontworpen op de gegevens die het heeft gekregen.
 
-Voer allergenencontroles uit op de samengestelde ingrediëntenlijst op het moment dat het maaltijdplan wordt gegenereerd:
+Dit is niet dezelfde bug als de kloof in de vervangingsfunctie die al is beschreven. Dat was een ontbrekende filteroproep. Dit is een correct opgeroepen filter dat de verkeerde versie van de gegevens controleert, omdat de vervangingslogica eerst draaide en niemand allergenen opnieuw valideerde tegen de uitvoer ervan. De twee hebben verschillende herstellingen nodig, en een app kan de eerste hebben opgelost zonder ooit de tweede te hebben aangeraakt.
 
-```javascript
-function filterSafeRecipes(recipes, userAllergens) {
-  return recipes.filter(recipe => {
-    const recipeIngredients = new Set(recipe.ingredients.map(i => i.name.toLowerCase()));
-    return !userAllergens.some(allergen => recipeIngredients.has(allergen.toLowerCase()));
-  });
+De herstelling is volgorde, en niet nog een filter: de allergenencontrole moet de laatste stap in de pijplijn zijn, uitgevoerd tegen welke ingrediëntenlijst er daadwerkelijk op het punt staat te worden getoond of gekookt, nadat elke vervanging – dieet, macro of beschikbaarheidsgestuurd – al is toegepast.
+
+```
+function getFinalRecipe(recipe, userPreferences) {
+  let ingredients = applyDietarySubstitutions(recipe.ingredients, userPreferences);
+  ingredients = applyMacroSubstitutions(ingredients, userPreferences);
+
+  // Allergenencontrole draait als laatste, tegen de ingrediënten die de gebruiker daadwerkelijk krijgt
+  const conflict = findAllergenConflict(ingredients, userPreferences.allergens);
+  if (conflict) {
+    return rejectOrReplace(recipe, conflict, userPreferences);
+  }
+  return { ...recipe, ingredients };
 }
 ```
 
+Elke vervangingsengine die niet op deze manier is gestructureerd – allergenencontrole eerst, vervangingen daarna – draagt hetzelfde latente risico dat een functie "wissel dit recept" kan introduceren, alleen één laag dieper in de pijplijn dan het oorspronkelijke maaltijdplan zelf.
+
 ## Echt voorbeeld
 
-### Een AI-Native Founder in actie: het vervangende recept dat de allergielijst negeerde
+### Een AI-native oprichter in actie: Het vervangende recept dat de allergielijst negeerde
 
-Iris Bosch bouwde MaaltijdPlan, een app voor maaltijdplanning en boodschappenlijstjes, met behulp van Bolt, gericht op drukke huishoudens in haar geboortestad Gouda. Met de app konden gebruikers tijdens de introductie één keer dieetbeperkingen en allergenen instellen, en het belangrijkste wekelijkse maaltijdplan respecteerde deze instellingen correct. Iris was trots op een nieuwere functie: een AI-ondersteunde 'ruil dit recept'-knop die een alternatief gerecht voorstelde wanneer een gebruiker geen zin had om te koken wat gepland was.
+Iris Bosch bouwde MaaltijdPlan, een app voor maaltijdplanning en boodschappenlijsten, met behulp van Bolt, gericht op drukke huishoudens in haar woonplaats Gouda. De app liet gebruikers dieetbeperkingen en allergenen één keer instellen tijdens de onboarding, en de hoofdmaaltijdplanner van de week respecteerde die instellingen correct. Iris was trots op een nieuwere functie: een door AI ondersteunde knop "wissel dit recept" die een alternatief gerecht voorstelde wanneer een gebruiker geen zin had om te koken wat er gepland was.
 
-Een gebruiker met een gemarkeerde notenallergie gebruikte op een avond de ruilfunctie en de app stelde een recept voor met amandelen – het exacte allergeen op haar profiel. Ze ving het op voordat ze ging koken, maar ze vertrouwde de app niet meer en vertelde Iris direct waarom ze afzegde.
+Een gebruiker met een gemarkeerde notenallergie gebruikte de wisselfunctie op een avond, en de app stelde een recept voor dat amandelen bevatte – het exacte allergeen op haar profiel. Ze merkte het op voordat ze ging koken, maar ze vertrouwde de app niet meer, en ze vertelde Iris rechtstreeks waarom ze haar abonnement annuleerde.
 
-LaunchStudio herleidde het probleem tot de manier waarop de ruilfunctie was gebouwd: het doorzocht de receptendatabase naar alternatieven die overeenkwamen met de keuken en de voorbereidingstijd, maar het allergeenfilter dat op de hoofdplanner draaide, was nooit op die vraag aangesloten. De oplossing voor het gecentraliseerd filteren van allergenen in één gedeelde functie die elke functie voor het serveren van recepten in de app (planner, ruilen, regenereren en boodschappenlijstje) nu aanroept voordat de resultaten worden geretourneerd, zodat een nieuwe functie die later wordt toegevoegd, deze niet per ongeluk nog een keer kan omzeilen.
+LaunchStudio traceerde het probleem naar hoe de wisselfunctie was gebouwd: het vroeg de receptendatabase om alternatieven die pasten bij keuken en bereidingstijd, maar het allergenenfilter dat op de hoofdplanner draaide was nooit aangesloten op die zoekopdracht. De herstelling centraliseerde het allergenenfilteren in een enkele gedeelde functie die elke functie die recepten serveert in de app – planner, wissel, hergeneratie en boodschappenlijst – nu oproept voordat resultaten worden geretourneerd. Zo kan een nieuwe functie die later wordt toegevoegd dit niet per ongeluk opnieuw omzeilen.
 
-**Resultaat:** MaaltijdPlan dwingt nu allergenenbeperkingen af ​​op een enkele gedeelde laag in plaats van per functie, en Iris heeft een geautomatiseerde test toegevoegd die de build mislukt als een pad voor receptserveercode de allergeencontrole overslaat.
+**Resultaat:** MaaltijdPlan dwingt allergenenbeperkingen nu af op een enkele gedeelde laag in plaats van per functie. Iris heeft een geautomatiseerde test toegevoegd die de bouw laat mislukken als een codepad dat recepten serveert de allergenencontrole overslaat.
 
-> *"Ik dacht echt dat ik een veilige app had gebouwd omdat de hoofdplanner werkte. Ik had geen idee dat een functie waar ik trots op was degene was die gebruikers in gevaar bracht. LaunchStudio repareerde niet alleen de bug, ze lieten me het exacte patroon zien dat ik moest vermijden telkens wanneer ik iets nieuws toevoegde."*
-> — **Iris Bosch, Oprichter MaaltijdPlan (Gouda)**
+> *"Ik dacht oprecht dat ik een veilige app had gebouwd omdat de hoofdplanner werkte. Ik had geen idee dat een functie waar ik trots op was degene was die gebruikers in gevaar bracht. LaunchStudio heeft niet alleen de bug hersteld, ze lieten me het exacte patroon zien dat ik moet vermijden elke keer dat ik iets nieuws toevoeg."*
+> — **Iris Bosch, Oprichter, MaaltijdPlan (Gouda)**
 
-**Kosten en tijdlijn:** € 950 (allergenenaudit voor meerdere functies en gecentraliseerde filteroplossing) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 950 (audit van allergenen over functies heen en herstelling van gecentraliseerd filteren) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom zou een allergeenfilter in het ene deel van een app wel werken en in het andere niet?
+### Waarom zou een allergenenfilter wel werken in het ene deel van een app maar niet in het andere?
 
-Omdat AI-coderingstools doorgaans elke functie afzonderlijk implementeren op basis van wat er in die specifieke prompt wordt beschreven, moet een beperking zoals een allergiefilter expliciet opnieuw worden toegepast op elke nieuwe functie, anders wordt deze niet stilzwijgend overgedragen.
+Omdat AI-coderingsassistenten doorgaans elke functie in isolatie implementeren op basis van wat er in die specifieke prompt wordt beschreven. Een beperking zoals een allergiefilter moet dus expliciet opnieuw worden toegepast op elke nieuwe functie, anders wordt deze stilletjes niet meegenomen.
 
 ### Is dit alleen een risico voor voedselgerelateerde apps?
 
-Het specifieke voorbeeld is voedselveiligheid, maar het onderliggende patroon – een beperking die in één functie wordt afgedwongen, maar niet in andere – is van toepassing op elke app met een door de gebruiker ingestelde beperking, van budgetlimieten tot inhoudsfilters.
+Het specifieke voorbeeld is voedselveiligheid, maar het onderliggende patroon – een beperking afgedwongen in de ene functie maar niet in andere – geldt voor elke app met een door de gebruiker ingestelde beperking, van budgetlimieten tot inhoudsfilters.
 
-### Hoe kan ik überhaupt weten dat deze bug in mijn eigen app bestaat?
+### Hoe zou ik überhaupt weten dat deze bug in mijn eigen app bestaat?
 
-Je zou doelbewust elke functionaliteit moeten testen die in aanraking komt met de betrokken gegevens, terwijl de beperking actief is, wat precies het soort cross-feature audit is die LaunchStudio uitvoert als standaard onderdeel van de beoordeling van de productiegereedheid.
+U zou bewust elke functie die de beïnvloede gegevens raakt moeten testen terwijl de beperking actief is. Dat is exact het soort audit over functies heen dat LaunchStudio uitvoert als een standaard onderdeel van haar beoordeling van de productiekwaliteit.
 
-### Waar controleert LaunchStudio eigenlijk op in een maaltijd- of gezondheidsapp?
+### Wat controleert LaunchStudio daadwerkelijk in een maaltijd- of gezondheids-app?
 
-Het team controleert of elke gegevensbeperking die een gebruiker instelt (allergenen, dieetbeperkingen, portielimieten) consistent wordt gehandhaafd voor alle functies, en niet alleen voor die waarvoor het oorspronkelijk is gebouwd, op basis van Manifera's ruim elf jaar ervaring in productietechniek.
+Het team controleert of elke gegevensbeperking die een gebruiker instelt – allergenen, dieetbeperkingen, portielimieten – consistent wordt afgedwongen over alle functies heen, en niet alleen degene waar deze oorspronkelijk voor is gebouwd.
 
-### Werkt LaunchStudio alleen met door Bolt gebouwde apps, of ook met andere tools?
+### Kan een recept door een allergenencontrole komen en toch het allergeen bevatten dat een gebruiker vermijdt?
 
-LaunchStudio werkt met apps die zijn gebouwd in Bolt, Lovable, Cursor, v0 en soortgelijke AI-tools. Het proces van het in Amsterdam gevestigde team is opgebouwd rond het auditen en repareren van de onderliggende architectuur, ongeacht welke tool de frontend heeft gegenereerd.
-
+Ja, als de controle draait tegen de oorspronkelijke ingrediëntenlijst van het recept in plaats van de definitieve versie nadat dieet- of macrovervangingen zijn toegepast. Allergenencontrole moet dus de laatste stap in de pijplijn zijn, uitgevoerd tegen exact wat de gebruiker daadwerkelijk geserveerd krijgt.
 
 <script type="application/ld+json">
 {
@@ -114,42 +123,42 @@ LaunchStudio werkt met apps die zijn gebouwd in Bolt, Lovable, Cursor, v0 en soo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom zou een allergeenfilter in het ene deel van een app wel werken en in het andere niet?",
+      "name": "Waarom werkt een allergenenfilter wel in het hoofdscherm maar niet bij receptwissels?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat AI-coderingstools doorgaans elke functie afzonderlijk implementeren op basis van wat er in die specifieke prompt wordt beschreven, moet een beperking zoals een allergiefilter expliciet opnieuw worden toegepast op elke nieuwe functie, anders wordt deze niet stilzwijgend overgedragen."
+        "text": "AI bouwt features in isolatie per prompt. De allergenen-check van de hoofd-planner wordt niet automatisch gekoppeld aan een nieuw gebouwde 'wissel recept'-knop."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit alleen een risico voor voedselgerelateerde apps?",
+      "name": "Geldt dit lek ook voor andere apps dan voeding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het specifieke voorbeeld is voedselveiligheid, maar het onderliggende patroon – een beperking die in één functie wordt afgedwongen, maar niet in andere – is van toepassing op elke app met een door de gebruiker ingestelde beperking, van budgetlimieten tot inhoudsfilters."
+        "text": "Ja, elke app met gebruikersbeperkingen (budgetlimieten, privacyinstellingen, leeftijdsgrenzen) kent het risico dat secundaire features die regels omzeilen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe kan ik überhaupt weten dat deze bug in mijn eigen app bestaat?",
+      "name": "Hoe test ik of mijn recepten-app allergenen consistent filtert?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Je zou doelbewust elke functionaliteit moeten testen die in aanraking komt met de betrokken gegevens, terwijl de beperking actief is, wat precies het soort cross-feature audit is die LaunchStudio uitvoert als standaard onderdeel van de beoordeling van de productiegereedheid."
+        "text": "Stel een allergie in en test bewust élke knop (wisselen, regenereer weekmenu, genereer boodschappenlijst) om te zien of het allergeen ergens opduikt."
       }
     },
     {
       "@type": "Question",
-      "name": "Waar controleert LaunchStudio eigenlijk op in een maaltijd- of gezondheidsapp?",
+      "name": "Hoe los je dit architectuurlijk op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het team controleert of elke gegevensbeperking die een gebruiker instelt (allergenen, dieetbeperkingen, portielimieten) consistent wordt gehandhaafd voor alle functies, en niet alleen voor die waarvoor het oorspronkelijk is gebouwd, op basis van Manifera's ruim elf jaar ervaring in productietechniek."
+        "text": "Door allergenen-filtering te centraliseren in 1 centrale backend-functie waar álle recepten-endpoints verplicht doorheen moeten voordat data de UI bereikt."
       }
     },
     {
       "@type": "Question",
-      "name": "Werkt LaunchStudio alleen met door Bolt gebouwde apps, of ook met andere tools?",
+      "name": "Kan een recept door het filter komen en tóch allergenen bevatten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio werkt met apps die zijn gebouwd in Bolt, Lovable, Cursor, v0 en soortgelijke AI-tools. Het proces van het in Amsterdam gevestigde team is opgebouwd rond het auditen en repareren van de onderliggende architectuur, ongeacht welke tool de frontend heeft gegenereerd."
+        "text": "Ja, als het filter checkt vóórdat ingrediënten-vervangingen (zoals amandelmelk voor koemelk) zijn toegepast. De allergenen-check moet de allerlaatste stap zijn."
       }
     }
   ]

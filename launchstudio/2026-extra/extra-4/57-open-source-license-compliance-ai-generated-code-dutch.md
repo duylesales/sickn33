@@ -1,17 +1,18 @@
 ---
-Titel: "Naleving van open source-licenties: de vraag die AI-coderingstools u nooit stellen"
+Titel: "Naleving van open-source licenties: De vraag die AI-coderingsassistenten u nooit stellen"
 Trefwoorden: ai code tool, ai secure, open source license compliance, copyleft license risk, ai generated code licensing
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# Naleving van open source-licenties: de vraag die AI-coderingstools u nooit stellen
+
+# Naleving van open-source licenties: De vraag die AI-coderingsassistenten u nooit stellen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Naleving van open source-licenties: de vraag die AI-coderingstools u nooit stellen",
-  "description": "AI-coderingsassistenten suggereren codefragmenten zonder u te vertellen uit welke licentie het onderliggende patroon afkomstig is. Voor een oprichter die een uiteindelijke overname of eigen product plant, is dat een due diligence-probleem dat wacht om aan de oppervlakte te komen.",
+  "headline": "Naleving van open-source licenties: De vraag die AI-coderingsassistenten u nooit stellen",
+  "description": "AI-coderingsassistenten stellen codefragmenten voor zonder u te vertellen welke licentie het onderliggende patroon heeft.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,78 +31,83 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Snelle test: kent u de licentie van elk open-sourceonderdeel dat uw AI-coderingstool in uw project heeft opgenomen? Niet degene die je opzettelijk hebt 'npm geïnstalleerd'; die kun je binnen dertig seconden controleren. Degenen die arriveerden als een voorgesteld codeblok, een fragment "zo implementeer je dat", of een automatisch voltooide functie die toevallig nauw aansluit bij de implementatie van een specifieke open-sourcebibliotheek. De meeste oprichters hebben deze vraag nooit gesteld, omdat AI-coderingstools nooit zijn gebouwd om deze vraag te beantwoorden.
+Snelle test: kent u de licentie van elke open-source component die uw AI-coderingsassistent in uw project heeft binnengehaald? Niet de componenten die u bewust via `npm install` heeft geïnstalleerd – die kunt u in dertig seconden controleren. We bedoelen de componenten die arriveerden als een gesuggereerd codeblok, een "hier is hoe u dat implementeert"-fragment, of een automatisch voltooide functie die toevallig nauw overeenkwam met de implementatie van een specifieke open-source bibliotheek. De meeste oprichters hebben deze vraag nog nooit gesteld, omdat AI-coderingsassistenten nooit zijn gebouwd om deze te beantwoorden.
 
-## Waarom dit risico onzichtbaar is totdat iemand ernaar op zoek gaat
+## Waarom dit risico onzichtbaar is totdat iemand ernaar gaat zoeken
 
-Wanneer Cursor, Bolt of een soortgelijke tool een stuk code voorstelt, wordt er geen licentie aan die suggestie gekoppeld. Dat kan niet. Het model dat de code genereert, houdt de herkomst op dat detailniveau niet betrouwbaar bij, en zelfs als een suggestie functioneel identiek is aan een bekende open source-implementatie, vertelt niets in de interface van de tool je dat, laat staan ​​welke licentie erop van toepassing is. Meestal is dit geen probleem: generieke patronen zoals een debounce-functie of een datumformatter zijn voor niemand zinvol "gelicentieerd". Maar AI-tools suggereren niet alleen generieke patronen. Ze suggereren ook meer substantiële, herkenbare implementaties – een bepaald algoritme, een specifieke parsing-aanpak, een UI-component met een onderscheidende structuur – die de code die is vrijgegeven onder een copyleft-licentie zoals GPL of AGPL nauwlettend kunnen volgen, licenties die reële verplichtingen opleggen aan alles wat met behulp daarvan wordt gebouwd, inclusief, in sommige interpretaties, vereisen dat afgeleide werken ook open source zijn.
+Wanneer Cursor, Bolt of een vergelijkbare tool een blok code suggereert, voegt het geen licentie toe aan die suggestie. Dat kan het ook niet – het model dat de code genereert houdt de herkomst niet betrouwbaar bij op dat niveau van detail. En zelfs wanneer een suggestie functioneel identiek is aan een bekende open-source implementatie, vertelt niets in de interface van de tool u dat, laat staan welke licentie het beheert. De meeste tijd is dit geen probleem: generieke patronen zoals een debounce-functie of een datumopmaker zijn niet betekenisvol gelicentieerd aan iemand. Maar AI-tools suggereren niet alleen generieke patronen. Ze suggereren ook substantiëlere, herkenbare implementaties – een specifiek algoritme, een specifieke ontleedbenadering, een UI-component met een karakteristieke structuur – die nauw verbonden kunnen zijn met code die is vrijgegeven onder een copyleft-licentie zoals GPL of AGPL. Dat zijn licenties die reële verplichtingen opleggen aan alles wat ermee gebouwd is, inclusief, in sommige interpretaties, de vereiste dat afgeleide werken ook open-source worden gemaakt.
 
-Voor een oprichter die van plan is zijn codebase eigen te houden (of dat nu is omdat hij op weg is naar een verkoop, van plan is investeringen te doen of gewoon verdedigbare IP wil hebben) is een copyleft-gelicentieerd onderdeel dat onopgemerkt in de codebase zit een risico dat bij normale tests niet naar voren komt. Het product werkt prima. Gebruikers merken er niets van. Het probleem komt pas aan het licht tijdens due diligence: het juridische team van een overnemende partij voert een licentiescan uit als standaardonderdeel van elk serieus overnameproces, en een gemarkeerde copyleft-afhankelijkheid is in dat stadium geen snelle oplossing; het kan een deal vertragen of afbreken terwijl de overtredende code onder tijdsdruk wordt geïdentificeerd en herschreven, terwijl de advocaten van de koper toekijken.
+Voor een oprichter die van plan is zijn codebase eigen (proprietary) te houden – of het nu is omdat hij bootstrapt naar een verkoop, van plan is om investeringen op te halen, of simpelweg verdedigbaar intellectueel eigendom wil – is een niet-gedetecteerde copyleft-component in de codebase een risico dat in geen enkele normale test verschijnt. Het product werkt prima. Gebruikers merken niets. Het probleem komt pas naar boven tijdens het due diligence-onderzoek: het juridische team van een koper voert een licentiescan uit als een standaard onderdeel van elk serieus overnameproces. Een gemarkeerde copyleft-afhankelijkheid in die fase is geen snelle herstelling – het kan een deal stagneren of beëindigen terwijl de betreffende code onder tijdsdruk wordt geïdentificeerd en herschreven, terwijl de advocaten van de koper toekijken.
 
-## Wat een licentieaudit eigenlijk inhoudt
+## Wat een licentie-audit daadwerkelijk omvat
 
-Een goede audit bestaat niet alleen uit het uitvoeren van 'npm audit' of het controleren van uw package.json - die de gedeclareerde afhankelijkheden opmerkt, maar het moeilijkere geval van gekopieerde of nauw gespiegelde code mist die helemaal nooit door een pakketbeheerder is gegaan. Het betekent het scannen van de daadwerkelijke codebase op codepatronen die overeenkomen met bekende open-sourceprojecten, het controleren van elke aangegeven afhankelijkheidslicentie (inclusief transitieve afhankelijkheden die meerdere lagen diep liggen, waar copyleft-licenties het vaakst onopgemerkt verborgen blijven), en het markeren van alles wat dubbelzinnig is voor handmatige beoordeling in plaats van aan te nemen dat het in orde is. Dit is echt vervelend werk, en het is precies het soort weinig glamoureuze due diligence waarvoor AI-coderingstools geen prikkel hebben om in hun product in te bouwen, omdat het datgene vertraagt ​​waarvoor ze zijn geoptimaliseerd: het snel genereren van code.
+Een correcte audit is niet alleen het uitvoeren van `npm audit` of het controleren van uw package.json – dat vangt verklaarde afhankelijkheden op, maar mist het moeilijkere geval van gecopieerde of nauw gespiegelde code die überhaupt nooit via een pakketbeheerder is gegaan. Het betekent het scannen van de daadwerkelijke codebase op codepatronen die overeenkomen met bekende open-source projecten, het controleren van de licentie van elke verklaarde afhankelijkheid (inclusief transitieve afhankelijkheden meerdere lagen diep, waar copyleft-licenties zich het vaakst onopgemerkt verbergen), en het markeren van alles wat ambigu is voor handmatige beoordeling in plaats van aan te nemen dat het prima is. Dit is oprecht tijdrovend werk, en het is exact het soort onglamoureuze due diligence waar AI-coderingsassistenten geen stimulans voor hebben om in hun product te bouwen, omdat het het ding vertraagt waar ze voor geoptimaliseerd zijn: snel code genereren.
 
-Het team achter LaunchStudio bestaat uit Manifera's eigen technische staf - dezelfde groep die meer dan 160 projecten heeft opgeleverd voor klanten als Vodafone en TNO - en beoordelingen van de naleving van licenties zijn een standaard onderdeel van de manier waarop onze ingenieurs, die werken vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh City, een codebase voorbereiden voor elke serieuze volgende stap, of dat nu een financieringsronde, een overnamegesprek of gewoon gemoedsrust is. De beoordeling levert doorgaans een duidelijke lijst op: wat is schoon, waar moet een kennisgeving van licentietoekenning aan worden toegevoegd en wat moet worden herschreven omdat de licentie werkelijk onverenigbaar is met het eigendomsrecht van het product.
+Het team achter LaunchStudio is Manifera's eigen engineeringpersoneel – dezelfde groep die meer dan 160 projecten heeft geleverd voor klanten zoals Vodafone en TNO. Beoordelingen van licentienaleving zijn een standaard onderdeel van hoe onze ingenieurs, werkend vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, een codebase voorbereiden op elke serieuze volgende stap, of dat nu een financieringsronde is, een overnamegesprek, of simpelweg gemoedsrust. De beoordeling produceert doorgaans een duidelijke lijst: wat er schoon is, waar een licentie-toeschrijvingskennisgeving aan moet worden toegevoegd, en wat herschreven moet worden omdat de licentie oprecht onverenigbaar is met het eigen houden van het product.
 
-## Herstellen wat een scan vindt
+## Het herstellen van wat een scan vindt
 
-Niet elk gemarkeerd onderdeel hoeft opnieuw te worden geschreven. Veel open-sourcelicenties (MIT, Apache 2.0, BSD) zijn tolerant en vereisen eenvoudigweg attributie – een snelle oplossing, waarbij meestal alleen maar een kennisgevingsbestand wordt toegevoegd. Het echte werk is gereserveerd voor echte copyleft-conflicten, waarbij de oplossing bestaat uit het vervangen van de gemarkeerde code door een originele implementatie of een alternatief met een toegestane licentie voordat deze in een groter deel van het product draagkrachtig wordt. Door dit vroeg op te merken, voordat een due diligence-proces dit afdwingt, verandert een herschrijving in routinematig technisch werk in plaats van in een dealbedreigende strijd.
+Niet elke gemarkeerde component heeft een herschrijfsessie nodig. Veel open-source licenties (MIT, Apache 2.0, BSD) zijn permissief en vereisen simpelweg toeschrijving – een snelle herstelling, doorgaans simpelweg het toevoegen van een kennisgevingsbestand. Het echte werk is gereserveerd voor oprechte copyleft-conflicten, waar de herstelling het vervangen van de gemarkeerde code is door een originele implementatie of een permissief gelicentieerd alternatief voordat het dragend wordt in meer van het product. Het vroeg opvangen hiervan, voordat een due diligence-proces het afdwingt, veranderd een herschrijfsessie in routineus engineeringwerk in plaats van een dealbedreigende haastklus.
 
-Als u zich voorbereidt op een investeringsgesprek of een eventuele aanschaf en u wilt dat de licentiestatus van uw codebase wordt gecontroleerd voordat iemand anders deze voor u controleert, is onze [contactpagina](https://launchstudio.eu/en/#contact) de snelste manier om dat gesprek te starten, en de pagina [over ons](https://www.manifera.com/about-us/) van Manifera biedt meer informatie over de zakelijke klanten die onze technici hebben ondersteund met precies dit soort technische due diligence.
+Als u zich voorbereidt op een investeringsgesprek of een uiteindelijke overname en u wilt dat de licentiepositie van uw codebase wordt gecontroleerd voordat iemand anders het voor u controleert, is onze [contactpagina](https://launchstudio.eu/en/#contact) de snelste manier om dat gesprek te starten. Manifera's [over ons](https://www.manifera.com/about-us/)-pagina heeft meer over de enterprise-klanten die onze ingenieurs hebben ondersteund door exact dit soort technische due diligence.
 
-## Een audit die het risico vindt is niet hetzelfde als het opheffen ervan
+## Een audit die het risico vindt is niet hetzelfde als het afhandelen ervan
 
-Het scannen van open-source licenties ontdekt kwetsbare of incompatibele licenties (zoals GPL in een gesloten commerciële app). Het vinden van de fout vereist ook een duidelijke vervangings- of her-licentiëringsstrategie.
+Het identificeren van een permissief gelicentieerde afhankelijkheid en het beslissen dat het prima is, is slechts de helft van de verplichting. Licenties zoals MIT en Apache 2.0 hebben een laag risico precies omdat hun vereiste eenvoudig is – maar het is nog steeds een vereiste, en geen formaliteit: de toeschrijvingskennisgeving moet daadwerkelijk meereizen met wat u verzendt, en niet alleen in een interne spreadsheet of een Slack-thread leven waarin staat "we hebben het gecontroleerd, het is MIT, we zijn oké." Een oprichter die de audit uitvoert, correct concludeert dat niets herschreven hoeft te worden, en vervolgens het kennisgevingsbestand nooit toevoegt aan het verzonden product, heeft het risico op papier gesloten zonder het in de praktijk te sluiten.
 
-Voer automatische licentiecontroles uit in de CI/CD-pipeline:
+In de praktijk betekent dit dat de uitvoer van de audit moet eindigen in een daadwerkelijk artefact dat mee wordt verzonden met het product, en niet alleen een beslissing:
 
-```bash
-# Controleer afhankelijkheden op incompatibele licenties:
-npx license-checker --summary --onlyallow "MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause"
 ```
+KENNISGEVINGEN VAN DERDEN (THIRD-PARTY NOTICES)
+
+Dit product bevat software van de volgende open-source projecten:
+
+- date-fns (MIT License) — Copyright (c) date-fns contributors
+- react-table (MIT License) — Copyright (c) Tanner Linsley
+- pdf-lib (MIT License) — Copyright (c) PDF-lib contributors
+
+De volledige licentietekst voor elk pakket is beschikbaar in
+/legal/third-party-notices.txt
+```
+
+Het is iets kleins om te genereren en gemakkelijk voor onbepaalde tijd uit te stellen zodra de engere copyleft-vraag is beantwoord – wat exact is waarom het de stap is die het meest waarschijnlijk wordt overgeslagen.
 
 ## Echt voorbeeld
 
-### Een AI-Native oprichter in actie: een Copyleft-fragment in een eigen product
+### Een AI-native oprichter in actie: Een copyleft-fragment in een eigen product
 
-Vince Aarts, oprichter in Hardenberg, bouwde RouteBoard – een SaaS voor logistieke routeplanning – met behulp van Cursor. Al vroeg in de ontwikkeling stelde Cursor een implementatie voor voor een tamelijk ingewikkelde functie voor routeringsoptimalisatie, en Vince accepteerde de suggestie omdat het correct werkte en hem een ​​werkelijk moeilijk stuk algoritme-ontwerp bespaarde.
+Vince Aarts, een oprichter in Hardenberg, bouwde RouteBoard – een SaaS voor logistieke routeplanning – met behulp van Cursor. Vroeg in de ontwikkeling suggereerde Cursor een implementatie voor een redelijk ingewikkelde functie voor route-optimalisatie. Vince accepteerde de suggestie omdat het correct werkte en hem een oprecht moeilijk stukje algoritme-ontwerp bespaarde.
 
-Wat Vince destijds niet wist (omdat niets in de interface van Cursor dit aangaf) was dat de voorgestelde implementatie nauw aansluit bij een component die was uitgebracht onder een copyleft-licentie die niet compatibel was met het eigendom houden van de codebase van RouteBoard. Dit werd pas een echt probleem toen Vince informele acquisitiegesprekken begon te voeren en zijn codebase moest presenteren als een zuiver bedrijfseigen, standaardbasiswerk voorafgaand aan elke serieuze dealdiscussie.
+Wat Vince op dat moment niet wist – omdat niets in Cursor's interface het aangaf – was dat de gesuggereerde implementatie nauw overeenkwam met een component die was vrijgegeven onder een copyleft-licentie die onverenigbaar was met het eigen houden van RouteBoard's codebase. Dit werd pas een echt probleem toen Vince informele overnamegesprekken begon te voeren en zijn codebase representatief als schoon eigen moest presenteren, standaard voorbereidend werk voorafgaand aan elk serieus dealgesprek.
 
-LaunchStudio voerde een licentie-audit uit over de codebase van RouteBoard, waarbij de gemarkeerde routeringsfunctie werd geïdentificeerd, samen met een handvol kleinere, minder risicovolle licentie-afhankelijkheden waaraan alleen attributiekennisgevingen moesten worden toegevoegd. Specifiek voor de door copyleft gelicentieerde routeringsfunctie hebben onze technici een implementatie voor vervanging in een schone kamer geschreven – onafhankelijk gebouwd van de onderliggende logica van het algoritme in plaats van van de gemarkeerde code – zodat de functionaliteit waar Vince op vertrouwde intact bleef terwijl het licentieconflict volledig werd geëlimineerd.
+LaunchStudio voerde een licentie-audit uit over RouteBoard's codebase. We identificeerden de gemarkeerde routefunctie samen met een handvol kleinere afhankelijkheden met een lager risico onder een permissieve licentie waar simpelweg toeschrijvingskennisgevingen aan moesten worden toegevoegd. Voor de specifieke routefunctie onder de copyleft-licentie schreven onze ingenieurs een schone vervangingsimplementatie – onafhankelijk gebouwd vanuit de onderliggende logica van het algoritme in plaats van de gemarkeerde code. De functionaliteit waar Vince op vertrouwde bleef zo intact, terwijl het licentieconflict volledig werd verwijderd.
 
-**Resultaat:** De codebase van RouteBoard doorstond een daaropvolgende informele licentiebeoordeling zonder vlaggen, waardoor Vince een schone basis kreeg voor elk toekomstig acquisitiegesprek.
+**Resultaat:** RouteBoard's codebase slaagde voor een daaropvolgende informele licentiebeoordeling zonder markeringen, wat Vince een schone basis gaf voor elk toekomstig overnamegesprek.
 
-> *"Ik had geen idee dat er aan een voorgesteld codefragment ook juridische voorwaarden verbonden konden zijn. Ik zag gewoon dat het werkte en ging verder – en dat is precies het probleem."*
-> — **Vince Aarts, oprichter, RouteBoard (Hardenberg)**
+> *"Ik had geen idee dat een gesuggereerde code-snippet met juridische voorwaarden kon komen. Ik zag simpelweg dat het werkte en ging door – wat exact het probleem is."*
+> — **Vince Aarts, Oprichter, RouteBoard (Hardenberg)**
 
-**Kosten en tijdlijn:** € 1.400 (volledige audit van de codebase-licentie en herschrijven in een cleanroom van de gemarkeerde routeringsfunctie) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (volledige licentie-audit van de codebase en schone herschrijfsessie van de gemarkeerde routefunctie) — voltooid in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoe weet ik zelfs of de door AI voorgestelde code een licentieprobleem heeft?
+### Hoe zou ik überhaupt weten of door AI gesuggereerde code een licentieprobleem heeft?
 
-Normaal gesproken zou u dat niet doen zonder een specifieke audit. AI-coderingstools markeren de herkomst of licentie van de voorgestelde code niet, en dat is precies de reden waarom een ​​handmatige of tool-ondersteunde scan noodzakelijk is voordat er sprake is van een serieuze due diligence-gebeurtenis.
+Dat weet u over het algemeen niet, zonder een toegewijde audit – AI-coderingsassistenten markeren de herkomst of licentie van gesuggereerde code niet, wat exact is waarom een handmatige of tool-ondersteunde scan noodzakelijk is vóór elk serieus due diligence-event.
 
 ### Maakt dit alleen uit als ik van plan ben mijn bedrijf te verkopen?
 
-Op dat moment is het het duidelijkst van belang, maar het is ook relevant voor fondsenwerving, voor zakelijke klanten die hun eigen leveranciersbeveiligings- en IP-beoordelingen uitvoeren, en eenvoudigweg voor oprichters die willen weten of hun product juridisch verantwoord is.
+Het maakt het meest duidelijk uit op dat punt, maar het is ook relevant voor het ophalen van financiering, voor enterprise-klanten die hun eigen due diligence op leveranciers en IP uitvoeren, en simpelweg voor oprichters die willen weten dat hun product juridisch klopt.
 
-### Zijn alle open-sourcelicenties zo riskant?
+### Zijn alle open-source licenties zo risicovol?
 
-Nee – permissieve licenties zoals MIT en Apache 2.0 brengen weinig risico met zich mee en vereisen alleen maar toewijzing; de echte zorg zijn copyleft-licenties zoals GPL of AGPL, die verplichtingen kunnen opleggen aan de rest van uw codebase.
+Nee – permissieve licenties zoals MIT en Apache 2.0 hebben een laag risico en vereisen simpelweg toeschrijving. De echte zorg zit bij copyleft-licenties zoals GPL of AGPL, die verplichtingen kunnen opleggen aan de rest van uw codebase.
 
-### Hoe pakt het team van Manifera een licentie-audit anders aan dan een geautomatiseerde scanner?
+### Als een scan alleen permissieve licenties vindt, is mijn nalevingswerk dan daadwerkelijk klaar?
 
-Geautomatiseerde scanners vangen de aangegeven afhankelijkheden goed op, maar missen code die is gekopieerd of nauw gespiegeld zonder dat er een pakketbeheerder nodig is. De technici van Manifera combineren automatisch scannen met handmatige beoordeling van verdachte patronen, een proces dat is verfijnd in meer dan 160 opgeleverde projecten.
-
-### Is dit een eenmalige controle of moet ik dit herhalen?
-
-Het is de moeite waard om dit periodiek te herhalen, vooral na grote sprints voor de ontwikkeling van functies waarbij veel nieuwe, door AI voorgestelde code is geaccepteerd, omdat elke nieuwe sprint nieuwe, niet-gedetecteerde afhankelijkheden kan introduceren.
-
+Niet helemaal – het identificeren dat een afhankelijkheid een MIT- of Apache-licentie heeft voldoet alleen aan de licentie als de vereiste toeschrijvingskennisgeving daadwerkelijk met het product wordt meegeleverd. De uitvoer van de audit moet dus eindigen in een kennisgevingsbestand dat in de release is opgenomen.
 
 <script type="application/ld+json">
 {
@@ -110,42 +116,42 @@ Het is de moeite waard om dit periodiek te herhalen, vooral na grote sprints voo
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe weet ik zelfs of de door AI voorgestelde code een licentieprobleem heeft?",
+      "name": "Waarom vormt AI-gegenereerde code een risico voor open-source licenties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Normaal gesproken zou u dat niet doen zonder een specifieke audit. AI-coderingstools markeren de herkomst of licentie van de voorgestelde code niet, en dat is precies de reden waarom een ​​handmatige of tool-ondersteunde scan noodzakelijk is voordat er sprake is van een serieuze due diligence-gebeurtenis."
+        "text": "Omdat AI-modellen getraind zijn op open-source code (zoals GPL/AGPL). De AI kan letterlijk copyleft-code genereren in jouw propriëtaire SaaS zonder licentievermelding."
       }
     },
     {
       "@type": "Question",
-      "name": "Maakt dit alleen uit als ik van plan ben mijn bedrijf te verkopen?",
+      "name": "Wat is het gevaar van GPL/AGPL copyleft licenties in je SaaS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Op dat moment is het het duidelijkst van belang, maar het is ook relevant voor fondsenwerving, voor zakelijke klanten die hun eigen leveranciersbeveiligings- en IP-beoordelingen uitvoeren, en eenvoudigweg voor oprichters die willen weten of hun product juridisch verantwoord is."
+        "text": "Copyleft dwingt af dat alle afgeleide software ook open-source moet worden gemaakt. Bij overnames (M&A due diligence) blokkeert dit direct de verkoop van je bedrijf."
       }
     },
     {
       "@type": "Question",
-      "name": "Zijn alle open-sourcelicenties zo riskant?",
+      "name": "Ontdekt `npm audit` ook gekopieerde AI-codeblokken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee – permissieve licenties zoals MIT en Apache 2.0 brengen weinig risico met zich mee en vereisen alleen maar toewijzing; de echte zorg zijn copyleft-licenties zoals GPL of AGPL, die verplichtingen kunnen opleggen aan de rest van uw codebase."
+        "text": "Nee! `npm audit` controleert alleen officieel geïnstalleerde packages. Losse door AI ingevoegde functies/algoritmes worden volledig gemist door npm."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe pakt het team van Manifera een licentie-audit anders aan dan een geautomatiseerde scanner?",
+      "name": "Moet je bij MIT/Apache licenties ook actie ondernemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Geautomatiseerde scanners vangen de aangegeven afhankelijkheden goed op, maar missen code die is gekopieerd of nauw gespiegeld zonder dat er een pakketbeheerder nodig is. De technici van Manifera combineren automatisch scannen met handmatige beoordeling van verdachte patronen, een proces dat is verfijnd in meer dan 160 opgeleverde projecten."
+        "text": "Ja, je moet een `THIRD-PARTY-NOTICES.txt` bestand mee-leveren met de auteursrechtvermelding. Het is een kleine moeite maar wettelijk verplicht."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit een eenmalige controle of moet ik dit herhalen?",
+      "name": "Wat kost een licentie-audit en clean-room rewrite bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is de moeite waard om dit periodiek te herhalen, vooral na grote sprints voor de ontwikkeling van functies waarbij veel nieuwe, door AI voorgestelde code is geaccepteerd, omdat elke nieuwe sprint nieuwe, niet-gedetecteerde afhankelijkheden kan introduceren."
+        "text": "Een volledige licentie-audit inclusief clean-room herschrijving van eventuele copyleft-code kost gemiddeld €1.400 en duurt 8 werkdagen."
       }
     }
   ]

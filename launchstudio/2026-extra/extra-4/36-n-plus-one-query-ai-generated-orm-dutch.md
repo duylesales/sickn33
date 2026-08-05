@@ -1,17 +1,18 @@
 ---
-Titel: "Het N+1-queryprobleem in door AI gegenereerde ORM's, en waarom dit alleen opduikt met echte gegevens"
+Titel: "Het N+1-query-probleem in AI-gegenereerde ORM's, en waarom het alleen verschijnt bij echte gegevens"
 Trefwoorden: ai code tool, ai database, n+1 query problem, ORM performance, query batching
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# Het N+1-queryprobleem in door AI gegenereerde ORM's, en waarom dit alleen opduikt met echte gegevens
+
+# Het N+1-query-probleem in AI-gegenereerde ORM's, en waarom het alleen verschijnt bij echte gegevens
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Het N+1-queryprobleem in door AI gegenereerde ORM's, en waarom dit alleen opduikt met echte gegevens",
-  "description": "Waarom AI-gegenereerde ORM-code die tijdens het testen onmiddellijk wordt geladen, bij echte klantgegevens 14 seconden kan duren, en hoe het N+1-querypatroon zich verbergt totdat uw database voldoende rijen heeft om deze zichtbaar te maken.",
+  "headline": "Het N+1-query-probleem in AI-gegenereerde ORM's, en waarom het alleen verschijnt bij echte gegevens",
+  "description": "Waarom met AI gegenereerde ORM-code die bij het testen onmiddellijk laadt 14 seconden kan duren bij echte klantgegevens.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,20 +31,20 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Veertien seconden. Zo lang duurde het om een ​​door AI gegenereerd dashboard te laden zodra een echte klant 4.000 records in zijn account had: precies dezelfde pagina die tijdens de ontwikkeling onmiddellijk werd geladen met een handvol testrijen. Er was niets aan de code veranderd tussen die twee staten. Wat veranderde was het aantal rijen, en het aantal rijen bracht uiteindelijk een bug aan het licht die al sinds dag één in de querylaag zat.
+Veertien seconden. Dat is hoe lang een met AI gegenereerd dashboard erover deed om te laden toen een echte klant eenmaal 4.000 records in zijn account had – exact dezelfde pagina die bij het testen onmiddellijk laadde tegen een handvol testrijen tijdens de ontwikkeling. Niets aan de code was veranderd tussen die twee statussen. Wat veranderde was het aantal rijen. En het aantal rijen is wat uiteindelijk een bug blootlegde die sinds dag één in de querylaag had gezeten.
 
 ## Waarom deze bug onzichtbaar is totdat hij dat niet meer is
 
-Het N+1-queryprobleem is een van de oudste, best gedocumenteerde prestatiefouten in software, en AI-codegeneratoren produceren het voortdurend - niet omdat de AI er niets van 'weet', maar omdat het patroon dat dit veroorzaakt ook de meest natuurlijke manier is om ORM-code te schrijven die duidelijk leest. Een typische door AI gegenereerde dashboardquery ziet er ongeveer zo uit: haal een lijst met klanten op, doorloop vervolgens elke klant en haal de bijbehorende bestellingen op. Dat is één zoekopdracht om de lijst te verkrijgen (de "1") plus één extra zoekopdracht per item in die lijst (de "N") - vandaar N+1. Met tien testklanten zijn dat elf queries, uitgevoerd in milliseconden, volledig onzichtbaar in een demo. Met 4.000 echte klantrecords zijn dat 4.001 zoekopdrachten, en alleen al de overhead van de databaseverbinding (zelfs de zoekopdrachtlogica zelf niet) is voldoende om het onmiddellijk laden van een pagina om te zetten in een stilstand van meerdere seconden.
+Het N+1-query-probleem is een van de oudste, best gedocumenteerde prestatiebugs in software. En AI-coderingsassistenten produceren het continu – niet omdat de AI er niets van "weet", maar omdat het patroon dat het veroorzaakt ook de meest natuurlijke manier is om ORM-code te schrijven die strak leest. Een typische met AI gegenereerde dashboardquery ziet er ongeveer zo uit: haal een lijst met klanten op, doorloop vervolgens elke klant en haal hun geassocieerde bestellingen op. Dat is één query om de lijst op te halen (de "1") plus één extra query per item in die lijst (de "N") – vandaar N+1. Met tien testklanten zijn dat elf query's, uitvoerend in milliseconden, compleet onzichtbaar in een demo. Met 4.000 echte klantrecords zijn dat 4.001 query's. En de overhead van de databaseverbinding alleen al – en niet eens de querylogica zelf – is genoeg om het laden van een onmiddellijke pagina te veranderen in een vertraging van meerdere seconden.
 
-Dit is precies waarom de bug de beoordeling van de code overleeft, het testen overleeft en de lancering overleeft: elke omgeving waarin een oprichter daadwerkelijk test, beschikt over te weinig gegevens om deze bloot te leggen. Het wordt pas zichtbaar zodra het echte gebruik een echt datavolume genereert, wat per definitie gebeurt na de lancering, vaak in het bijzijn van de klant die het minst vergevingsgezind is tegenover een trage app: degene die deze daadwerkelijk serieus gebruikt.
+Dit is exact waarom de bug codebeoordelingen overleeft, testen overleeft, en de lancering overleeft: elke omgeving waarin een oprichter daadwerkelijk test heeft te weinig gegevens om het bloot te leggen. Het wordt pas zichtbaar als echt gebruik een echt gegevensvolume genereert. En dat gebeurt per definitie na de lancering, vaak voor de klant die het minst vergevingsgezind is voor een trage app – degene die deze daadwerkelijk serieus gebruikt.
 
-## Hoe de oplossing eruit ziet
+## Hoe de herstelling eruitziet
 
-De oplossing heeft bijna altijd dezelfde vorm: vervang N individuele query's door één batchquery met behulp van een join- of een gretig-load-instructie, afhankelijk van de ORM.
+De herstelling heeft vrijwel altijd dezelfde vorm: vervang N individuele query's door één batch-query met een join of een eager-loading-instructie, afhankelijk van de ORM.
 
 ```javascript
-// N+1 pattern — one query per customer, in a loop
+// N+1 patroon — één query per klant, in een loop
 const customers = await db.customer.findMany();
 for (const customer of customers) {
   customer.orders = await db.order.findMany({
@@ -51,82 +52,86 @@ for (const customer of customers) {
   });
 }
 
-// Opgelost: één batchquery met een join
-const klanten = wacht op db.customer.findMany({
-  omvatten: { bestellingen: waar },
+// Hersteld — één batch-query met een join
+const customers = await db.customer.findMany({
+  include: { orders: true },
 });
 ```
 
-De meeste moderne ORM's – Prisma, TypeORM, ActiveRecord, SQLAlchemy – ondersteunen dit soort gretig laden standaard. De oplossing is meestal geen herschrijving van de bedrijfslogica, het is een gerichte verandering in de manier waarop een handvol specifieke vragen is gestructureerd, geleid door daadwerkelijke profilering van welke eindpunten langzamer gaan naarmate de gegevens groeien. Onze technici, die vanuit Ho Chi Minh-stad werken, waar veel van het backend- en databaseprestatiewerk van LaunchStudio wordt gedaan, beginnen dit soort beoordelingen doorgaans door een kopie van het schema van de oprichter te laden met een realistisch gegevensvolume en te kijken welke pagina's achteruitgaan - de bug komt niet naar voren door het lezen van code, maar door deze uit te voeren op iets dat bijna op ware schaal is.
+De meeste moderne ORM's – Prisma, TypeORM, ActiveRecord, SQLAlchemy – ondersteunen dit soort eager loading van nature. De herstelling is meestal geen herbouw van de bedrijfslogica, maar een doelgerichte wijziging in hoe een handvol specifieke query's is gestructureerd, gestuurd door het daadwerkelijk profileren van welke eindpunten vertragen naarmate de gegevens groeien. Onze ingenieurs, werkend vanuit Ho Chi Minh-stad waar een groot deel van LaunchStudio's werk aan backend- en databaseprestaties wordt gedaan, beginnen dit soort beoordelingen doorgaans door een kopie van het schema van de oprichter te laden met een realistisch gegevensvolume en te kijken welke pagina's degraderen. De bug verschijnt niet door code te lezen, maar door deze uit te voeren tegen iets wat dicht bij de echte schaal ligt.
 
-## Waarom ‘het werkt prima voor mij’ geen nuttig signaal is
+## Het herstellen van N+1 met een rauwe join kan paginering breken
 
-Een oprichter die zijn eigen app test, heeft bijna nooit genoeg gegevens om N+1-vertragingen te veroorzaken, wat betekent dat "hij snel is als ik hem gebruik" je heel weinig zegt over de vraag of hij snel zal blijven als een klant het product zes maanden gebruikt. Het gat ontstaat meestal geleidelijk en dan plotseling: een dashboard dat 200 milliseconden duurde bij 50 records zou 800 milliseconden kunnen duren bij 500, en vervolgens 8 seconden bij 5.000, omdat de relatie tussen het aantal rijen en het aantal zoekopdrachten grofweg lineair is, terwijl het geduld van de gebruiker dat niet is.
-
-- Test met datavolumes die minstens een orde van grootte groter zijn dan wat u momenteel in ontwikkeling ziet
-- Bekijk het aantal databasequery's per geladen pagina, niet alleen de responstijd: een tool zoals een querylogger of APM maakt N+1-patronen onmiddellijk zichtbaar
-- Behandel elke lijstdetailpagina (dashboards, klantenlijsten, bestelgeschiedenis) als standaardverdachte, aangezien het patroon daar het vaakst verschijnt
-
-In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door Vodafone, TNO en CFLW – en prestatieprofilering op basis van een realistisch datavolume is een standaardonderdeel van de manier waarop onze engineers een technische beoordeling vóór de lancering benaderen, en niet een bijzaak die wordt toegevoegd nadat een klant heeft geklaagd. Als uw app niet is getest met gegevens op ware schaal, [kijk dan wat een technische audit daadwerkelijk controleert](https://launchstudio.eu/en/#process) voordat uw eerste serieuze klant dit voor u ontdekt.
-
-## Het oplossen van N+1 met een rauwe JOIN kan paginering breken
-
-Wanneer u N+1 query's vervangt door een SQL JOIN om gerelateerde records op te halen, kan het combineren van paginering (`LIMIT` / `OFFSET`) op de JOIN-tabel onverwachte resultaten opleveren. U krijgt dan minder hoofdrecords dan de ingestelde limiet omdat de JOIN rijen heeft gedupliceerd.
-
-Gebruik subqueries of gescheiden batch-queries (zoals Dataloader) voor paginering bij gerelateerde gegevens:
+Er is een tweede valkuil die specifiek naar voren komt wanneer de herstelling handmatig wordt geschreven als een rauwe SQL-join in plaats van het gebruiken van de ingebouwde eager-loading-functie van de ORM: een join tussen een bovenliggende en een één-op-veel onderliggende tabel retourneert één rij per onderliggend record, en niet één rij per bovenliggend record. Dit breekt stilletjes elke paginering die op die query wordt toegepast. Een verzoek om "20 klanten per pagina" met behulp van `LIMIT 20` op een samenvoegde resultaatset retourneert geen 20 klanten – het retourneert 20 rijen. En als de eerste klant op die pagina 30 bestellingen heeft, kan de gehele pagina worden verbruikt door de bestelrijen van een enkele klant voordat er überhaupt een tweede klant verschijnt.
 
 ```javascript
-// Batch ophalen in plaats van een naïeve JOIN met LIMIT
-const posts = await db.posts.find().limit(20);
-const authorIds = [...new Set(posts.map(p => p.authorId))];
-const authors = await db.users.find({ id: { $in: authorIds } });
+// Gebroken: LIMIT geldt voor samenvoegde rijen, niet voor unieke klanten
+const rows = await db.$queryRaw`
+  SELECT c.*, o.*
+  FROM customers c
+  JOIN orders o ON o.customer_id = c.id
+  LIMIT 20
+`;
+
+// Correct: pagineer de bovenliggende query eerst, en laad onderliggende daarna in batch
+const customers = await db.customer.findMany({ take: 20, skip: page * 20 });
+const orders = await db.order.findMany({
+  where: { customerId: { in: customers.map(c => c.id) } },
+});
 ```
+
+Dit is exact waarom de meeste ingebouwde functies `include` of `preload` van ORM's onder de motorkap niet daadwerkelijk een enkele platte join genereren – Prisma, ActiveRecord en SQLAlchemy voeren doorgaans de bovenliggende query uit en een afzonderlijke batched onderliggende query, en weven de resultaten in het geheugen aan elkaar. Zo vermijden ze zowel het N+1-probleem als het rij-vermenigvuldigingsprobleem op hetzelfde moment. De les is niet dat joins gevaarlijk zijn – het is dat de veilige herstelling vrijwel altijd de eigen eager-loading-functie van de ORM is, en niet een handmatig geschreven join, omdat de handmatige versie stilletjes een andere bug herintroduceert op exact de pagina's die het meest waarschijnlijk al paginering hebben: klantlijsten en dashboards.
+
+## Waarom "het werkt prima bij mij" geen nuttig signaal is
+
+Een oprichter die zijn eigen app test heeft vrijwel nooit genoeg gegevens om N+1-vertragingen te activeren. Dat betekent dat "het is snel als ik het gebruik" u heel weinig vertelt over de vraag of het snel zal blijven voor een klant die het product zes maanden gebruikt. De kloof heeft de neiging om geleidelijk te verschijnen en dan plotseling – een dashboard dat 200 milliseconden dacht bij 50 records kan 800 milliseconden duren bij 500, en dan 8 seconden bij 5.000. De relatie tussen het aantal rijen en het aantal query's is namelijk ongeveer lineair, terwijl het geduld van de gebruiker dat niet is.
+
+- Test met gegevensvolumes die ten minste een orde van grootte groter zijn dan wat u momenteel in ontwikkeling ziet
+- Let op het aantal databasequery's per paginalading, en niet alleen op de responstijd – een tool zoals een query-logger maakt N+1-patronen onmiddellijk zichtbaar
+- Behandel elke lijst-detailpagina (dashboards, klantlijsten, bestelgeschiedenis) als een standaard verdachte, aangezien dat is waar het patroon het vaakst verschijnt
+
+In tegenstelling tot freelancers wordt LaunchStudio ondersteund door Manifera – vertrouwd door Vodafone, TNO en CFLW. Prestatieprofilering tegen een realistisch gegevensvolume is een standaard onderdeel van hoe onze ingenieurs een technische beoordeling vóór de lancering benaderen, en geen bijgedachte vastgeplakt nadat een klant klaagt. Als uw app niet op belasting is getest met gegevens op echte schaal, [bekijk wat een technische audit daadwerkelijk controleert](https://launchstudio.eu/en/#process) voordat uw eerste serieuze klant het voor u ontdekt.
 
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: het dashboard dat snel was totdat het dat niet meer was
+### Een AI-native oprichter in actie: Het dashboard dat snel was tot het dat niet meer was
 
-Yara Simons bouwde KlantOverzicht, een klantdashboard SaaS, met behulp van Cursor. Tijdens de ontwikkeling werd het dashboard vrijwel onmiddellijk geladen: elk testaccount had een handvol voorbeeldrecords, en de pagina voelde pittig aan in elke demo die Yara draaide voor vroege prospects. De kerndashboardweergave haalde een lijst met klanten op en haalde voor elke klant de bijbehorende activiteitsrecords op om inline weer te geven.
+Yara Simons bouwde KlantOverzicht, een SaaS voor klantdashboards, met behulp van Cursor. Gedurende de gehele ontwikkeling laadde het dashboard bijna onmiddellijk – elk testaccount had een handvol voorbeeldrecords, en de pagina voelde strak aan in elke demo die Yara uitvoerde voor vroege geïnteresseerden. De kernweergave van het dashboard haalde een lijst met klanten op en haalde voor elk daarvan hun gerelateerde activiteitsrecords op om inline weer te geven.
 
-Zodra een echte klant zich aanmeldde met al ongeveer 4.000 records in zijn account van een eerder systeem, sprong de laadtijd van het dashboard naar 14 seconden. Yara ging er aanvankelijk van uit dat het een hosting- of netwerkprobleem was, maar het traceren van het verzoek bracht de daadwerkelijke oorzaak aan het licht: de pagina activeerde honderden individuele databasequery's per laadbeurt, één per record, in plaats van een enkele batchquery - een leerboek N+1-patroon dat eenvoudigweg nooit zichtbaar was geweest in testgegevens die klein genoeg waren om deze te verbergen.
+Toen eenmaal een echte klant onboardde met ongeveer 4.000 records al in zijn account vanuit een vorig systeem, sprong de laadtijd van het dashboard naar 14 seconden. Yara nam aanvankelijk aan dat het een hosting- of netwerkprobleem was, maar het traceren van het verzoek onthulde de daadwerkelijke oorzaak: de pagina vuurde honderden individuele databasequery's af per lading, één per record, in plaats van een enkele batched query – een schoolvoorbeeld van een N+1-patroon dat simpelweg nooit zichtbaar was geweest tegen testgegevens die klein genoeg waren om het te verbergen.
 
-De technici van LaunchStudio hebben de kernquery's van het dashboard herschreven om gretig laden te gebruiken met één samengevoegde query per geladen pagina in plaats van één query per record, en hebben een lichtgewicht controle van het aantal query's toegevoegd aan de testsuite van de app, zodat toekomstige N+1-patronen in de ontwikkeling terechtkomen in plaats van voor de klant.
+LaunchStudio's ingenieurs herbouwden de kernquery's van het dashboard om eager loading te gebruiken met een enkele query per paginalading in plaats van één query per record. Ze voegden een lichte controle op het aantal query's toe aan de testreeks van de app, zodat toekomstige N+1-patronen in ontwikkeling worden opgevangen in plaats van voor een klant.
 
-**Resultaat:** Hetzelfde dashboard dat 14 seconden duurde voor 4.000 records, wordt nu in minder dan 400 milliseconden geladen en Yara vangt nu N+1-regressies op voordat ze worden verzonden.
+**Resultaat:** hetzelfde dashboard dat 14 seconden dacht bij 4.000 records laadt nu in minder dan 400 milliseconden, en Yara vangt N+1-regressies nu op voordat ze worden verzonden.
 
-> *"Ik bleef ervan uitgaan dat het een serverprobleem was. Het kwam nooit bij me op dat de code zelf de database duizenden keren stilletjes om hetzelfde vroeg."*
-> — **Yara Simons, Oprichter KlantOverzicht (Vlaardingen)**
+> *"Ik bleef maar aannemen dat het een serverprobleem was. Het kwam nooit bij me op dat de code zelf de database stilletjes duizenden keren om hetzelfde vroeg."*
+> — **Yara Simons, Oprichter, KlantOverzicht (Vlaardingen)**
 
-**Kosten en tijdlijn:** € 750 (optimalisatie van zoekopdrachten in de kerndashboardweergaven plus geautomatiseerde regressietests met het aantal zoekopdrachten) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 750 (query-optimalisatie over kern-dashboardweergaven plus geautomatiseerde regressietesten op query-aantallen) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom produceren AI-codegeneratoren zo vaak N+1-query's?
+### Waarom produceren AI-coderingsassistenten zo vaak N+1-query's?
 
-Het doorlopen van een lijst en het ophalen van gerelateerde gegevens per item is de meest leesbare, intuïtieve manier om die logica te schrijven, en het werkt op dezelfde manier als een batchquery op kleine schaal - de AI kan op geen enkele manier weten dat het een prestatieprobleem zal zijn totdat het aantal rijen groeit, aangezien niets in een korte prompt-and-generate-cyclus dat test.
+Het doorlopen van een lijst en het ophalen van gerelateerde gegevens per item is de meest leesbare, intuïtieve manier om die logica te schrijven, en het werkt identiek aan een batched query op kleine schaal. De AI heeft geen manier om te weten dat het een prestatieprobleem zal worden naarmate het aantal rijen groeit.
 
-### Hoeveel data heb ik nodig voordat N+1 een echt probleem wordt?
+### Hoeveel gegevens heb ik nodig voordat N+1 een echt probleem wordt?
 
-Het varieert afhankelijk van de complexiteit van de zoekopdracht, maar veel oprichters beginnen het op te merken in het bereik van honderden records en het wordt ernstig vóór de lage duizenden - ruim binnen het bereik van het account van een enkele actieve klant, en niet alleen op de gehele app-brede schaal.
+Het varieert per querycomplexiteit, maar veel oprichters beginnen het op te merken in het bereik van honderden records. Het wordt ernstig ruim voor de lage duizendtallen – ruim binnen het bereik van het account van een enkele actieve klant.
 
-### Kan dit vóór de lancering worden opgevangen in plaats van erna?
+### Kan dit worden opgevangen vóór de lancering in plaats van erna?
 
-Ja. De technici van Manifera testen routinematig synthetische data op een realistisch volume als onderdeel van een pre-launch review, specifiek om dit te ontdekken voordat een echte klant dat doet, in plaats van de prestaties te behandelen als iets dat je reactief optimaliseert.
+Ja – Manifera's ingenieurs testen routinematig op belasting tegen synthetische gegevens op een realistisch volume als onderdeel van een beoordeling vóór de lancering, specifiek om dit op te vangen voordat een echte klant dat doet.
 
-### Moet voor het oplossen van N+1-query's de hele backend worden herschreven?
+### Vereist het herstellen van N+1-query's het herbouwen van de gehele backend?
 
-Nee. Het is vrijwel altijd een doelgerichte oplossing voor specifieke zoekopdrachten zodra deze door middel van profilering zijn geïdentificeerd, en niet een herschrijving; de omringende bedrijfslogica blijft doorgaans onaangeroerd.
+Nee – het is vrijwel altijd een doelgerichte herstelling van specifieke query's zodra ze zijn geïdentificeerd door middel van profilering. De omringende bedrijfslogica blijft doorgaans ongemoeid.
 
-### Is dit het soort probleem waar de zakelijke klanten van Manifera ook mee te maken hebben?
+### Kan het herstellen van N+1-query's met een SQL-join nieuwe problemen creëren?
 
-Ja, de prestaties van zoekopdrachten op grote schaal zijn een universeel probleem, ongeacht de bedrijfsgrootte, en het is een van de patronen die onze technici regelmatig aanpakken in de ruim 160 projecten die zijn geleverd voor klanten, waaronder Vodafone en MO Batteries, maar dan in een andere orde van grootte.
-
-Bereken wat uw project kost — [gebruik onze calculator](https://launchstudio.eu/en/#calculator) om een ​​prestatie- en databasebeoordeling voor uw app uit te voeren.
-
-Voor meer informatie over hoe backend-systemen zijn ontworpen om op schaal stand te houden, zie [Manifera's portfolio](https://www.manifera.com/portfolio/).
-
+Ja, als het een handgeschreven join is in plaats van de ingebouwde eager-loading-functie van de ORM – een join retourneert één rij per onderliggend record, wat stilletjes de paginering kan breken door een enkele ouder met veel kinderen een gehele pagina te laten vullen. ORM's zoals Prisma vermijden dit door een afzonderlijke batched query uit te voeren voor gerelateerde records in plaats van een platte join.
 
 <script type="application/ld+json">
 {
@@ -135,42 +140,42 @@ Voor meer informatie over hoe backend-systemen zijn ontworpen om op schaal stand
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom produceren AI-codegeneratoren zo vaak N+1-query's?",
+      "name": "Waarom genereren AI-tools zo vaak N+1 database queries?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het doorlopen van een lijst en het ophalen van gerelateerde gegevens per item is de meest leesbare, intuïtieve manier om die logica te schrijven, en het werkt op dezelfde manier als een batchquery op kleine schaal - de AI kan op geen enkele manier weten dat het een prestatieprobleem zal zijn totdat het aantal rijen groeit, aangezien niets in een korte prompt-and-generate-cyclus dat test."
+        "text": "Een for-loop over items is voor AI de meest intuïtieve code om te schrijven. Bij 10 test-items werkt dit instant, maar bij 4.000 rijen haakt de database af."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel data heb ik nodig voordat N+1 een echt probleem wordt?",
+      "name": "Bij hoeveel records wordt een N+1 query traag?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het varieert afhankelijk van de complexiteit van de zoekopdracht, maar veel oprichters beginnen het op te merken in het bereik van honderden records en het wordt ernstig vóór de lage duizenden - ruim binnen het bereik van het account van een enkele actieve klant, en niet alleen op de gehele app-brede schaal."
+        "text": "Dit merk je vaak al vanaf 200 tot 500 records. Bij 2.000+ records kan een pagina van 200ms naar 10+ seconden vertragen."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan dit vóór de lancering worden opgevangen in plaats van erna?",
+      "name": "Hoe ontdek ik N+1 queries vóór lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. De technici van Manifera testen routinematig synthetische data op een realistisch volume als onderdeel van een pre-launch review, specifiek om dit te ontdekken voordat een echte klant dat doet, in plaats van de prestaties te behandelen als iets dat je reactief optimaliseert."
+        "text": "Door database query-logging in te schakelen tijdens development, of door de database te vullen met 5.000+ nep-records (synthetic load-test)."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet voor het oplossen van N+1-query's de hele backend worden herschreven?",
+      "name": "Moet ik mijn hele backend herbouwen om N+1 op te lossen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Het is vrijwel altijd een doelgerichte oplossing voor specifieke zoekopdrachten zodra deze door middel van profilering zijn geïdentificeerd, en niet een herschrijving; de omringende bedrijfslogica blijft doorgaans onaangeroerd."
+        "text": "Nee, het is vaak een kwestie van specifieke query's aanpassen (zoals include/eager loading toevoegen in Prisma of TypeORM)."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit het soort probleem waar de zakelijke klanten van Manifera ook mee te maken hebben?",
+      "name": "Kan een handgeschreven SQL JOIN bij N+1 paginering breken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, de prestaties van zoekopdrachten op grote schaal zijn een universeel probleem, ongeacht de bedrijfsgrootte, en het is een van de patronen die onze technici regelmatig aanpakken in de ruim 160 projecten die zijn geleverd voor klanten, waaronder Vodafone en MO Batteries, maar dan in een andere orde van grootte.  Bereken wat uw project kost — [gebruik onze calculator](https://launchstudio.eu/en/#calculator) om een ​​prestatie- en databasebeoordeling voor uw app uit te voeren.  Voor meer informatie over hoe backend-systemen zijn ontworpen om op schaal stand te houden, zie [Manifera's portfolio](https://www.manifera.com/portfolio/)."
+        "text": "Ja! Een raw SQL JOIN geeft 1 rij per kind-record. 'LIMIT 20' geeft dan 20 kind-rijen i.p.v. 20 unieke ouders. Gebruik de ORM eager-loader."
       }
     }
   ]

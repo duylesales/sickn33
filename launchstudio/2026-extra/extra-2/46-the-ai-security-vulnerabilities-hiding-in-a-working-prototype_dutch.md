@@ -1,73 +1,146 @@
 ---
-Titel: "De AI-Beveiligingskwetsbaarheden Verborgen In Een Werkend Prototype"
+Titel: "De AI-beveiligingskwetsbaarheden die zich verbergen in een werkend prototype"
 Trefwoorden: ai security vulnerabilities, ai vulnerabilities, ai secure, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# De AI-Beveiligingskwetsbaarheden Verborgen In Een Werkend Prototype
+# De AI-beveiligingskwetsbaarheden die zich verbergen in een werkend prototype
 
-Een kerkadministrator downloadt elke week zonder incident een vergadernotulendocument via jouw platform, wat precies het soort gewone, herhaalde succes is dat het makkelijk maakt aan te nemen dat een bestandsdownloadfunctie simpelweg goed is. Wat dat herhaalde succes nooit test is wat er gebeurt als de specifieke bestandsnaam in een downloadverzoek doelbewust vervaardigd is om ergens compleet anders op de server te wijzen — een van de meer klassieke AI-beveiligingskwetsbaarheden die comfortabel verborgen zit achter een functie die perfect werkt voor zijn bedoelde gebruik.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De AI-beveiligingskwetsbaarheden die zich verbergen in een werkend prototype",
+  "description": "Een echt scenario over een functie voor het downloaden van bestanden die ongerelateerde serverbestanden blootlegde via een path traversal-fout.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/the-ai-security-vulnerabilities-hiding-in-a-working-prototype"
+  }
+}
+</script>
 
-## Hoe Een Normale Bestandsdownloadfunctie Er Van Binnen Uitziet
+Een kerkbeheerder downloadt elke week zonder problemen een document met vergadernotulen via uw platform. Dat is exact het soort gewone, herhaalde succes dat het gemakkelijk maakt om aan te nemen dat een functie voor het downloaden van bestanden simpelweg in orde is. Wat dat herhaalde succes nooit test is wat er gebeurt als de specifieke bestandsnaam in een downloadverzoek opzettelijk zo wordt samengesteld dat deze ergens anders op de server naartoe wijst. Dit is een van de meer klassieke AI-beveiligingskwetsbaarheden die zich comfortabel verbergt achter een functie die perfect werkt voor het bedoelde gebruik.
 
-Een functie die gebruikers een specifiek document laat downloaden door zijn bestandsnaam te refereren construeert doorgaans een bestandspad op de server door een basismap te combineren met welke bestandsnaam dan ook opgevraagd, een simpele, directe aanpak die correct werkt voor elke legitieme bestandsnaam die een founder test, aangezien legitieme bestandsnamen alleen ooit wijzen naar bestanden die daadwerkelijk daar horen te zijn.
+## Hoe een normale functie voor het downloaden van bestanden er van binnen uitziet
 
-## Waarom Een Vervaardigde Bestandsnaam Ergens Compleet Anders Kan Reiken
+Een functie waarmee gebruikers een specifiek document kunnen downloaden door te verwijzen naar de bestandsnaam, bouwt typisch een bestandspad op de server door een basismap te combineren met de opgevraagde bestandsnaam. Dit is een eenvoudige, directe aanpak die correct werkt voor elke legitieme bestandsnaam die een oprichter test. Het is ook exact het soort rechttoe-rechtaan patroon dat een AI-coderingsassistent gemakkelijk genereert voor de beschreven toepassing. Totdat iemand opzettelijk een bestandsnaam verstrekt die de functie nooit verondersteld werd af te handelen.
 
-Als het bestandsnaamdeel van een verzoek niet gevalideerd is om directory traversal te voorkomen — sequenties zoals "../" die een bestandssysteem instrueren omhoog en uit de bedoelde map te bewegen — kan een specifiek vervaardigde bestandsnaam ervoor zorgen dat het resulterende bestandspad wijst buiten de map waar de functie bedoeld was bestanden uit te serveren, mogelijk configuratiebestanden, documenten van andere gebruikers, of andere gevoelige serverbestanden bereikend nooit bedoeld downloadbaar te zijn.
+## Waarom een opgestelde bestandsnaam ergens anders kan reiken
 
-## Waarom Dit Volledig Onopgemerkt Blijft Tijdens Normaal Gebruik
+Als het bestandsnaamgedeelte van een verzoek niet wordt gevalideerd om paddoorkruising (directory traversal) te voorkomen – reeksen zoals `../` die een bestandssysteem de opdracht geven om omhoog en uit de bedoelde map te bewegen – kan een specifiek opgestelde bestandsnaam ervoor zorgen dat het uiteindelijke bestandspad buiten de bedoelde map wijst. Dit kan potentieel reiken tot configuratiebestanden, documenten van andere gebruikers, of andere gevoelige serverbestanden.
 
-Elk legitiem document dat een gebruiker downloadt heeft een normale, verwachte bestandsnaam, en het opvragen ervan produceert elke keer precies het correcte resultaat — er is geen versie van gewoon, eerlijk gebruik die een bestandsnaam construeert met directory-traversal-sequenties, wat betekent dat dit specifieke gat nul zichtbare symptomen produceert tenzij iemand er doelbewust op test.
+## Waarom dit compleet onopgemerkt blijft tijdens normaal gebruik
 
-## Waarom Community- En Non-Profit-Gerelateerde Producten Precies Zo Blootgesteld Zijn Als Elk Ander
+Elk legitiem document dat een gebruiker downloadt heeft een normale, verwachte bestandsnaam. En het opvragen ervan levert elke keer exact het correcte resultaat op. Er is geen versie van gewoon, eerlijk gebruik die een bestandsnaam bouwt die reeksen voor paddoorkruising bevat. Een oprichter kan zijn downloadfunctie honderden keren succesvol uitvoeren en niets leren over of deze specifieke kloof bestaat.
 
-Er is een gebruikelijke, foutieve aanname dat een kleinere, community-georiënteerde, niet-commerciële tool op de een of andere manier een minder aantrekkelijk doelwit is — maar geautomatiseerde scanners die zoeken naar precies dit soort gebruikelijk kwetsbaarheidspatroon discrimineren niet gebaseerd op de grootte, het doel, of het waargenomen belang van een product, alleen op of het kwetsbare patroon toevallig aanwezig en bereikbaar is.
+## Waarom maatschappelijke en non-profit producten net zo blootgesteld zijn
 
-## Wat Dit Correct Fixen Vereist
+Oprichters die bouwen voor kerken, scholen, sportclubs en vergelijkbare maatschappelijke organisaties redeneren soms dat hun product simpelweg niet het soort doelwit is dat de tijd van een aanvaller waard is. Maar geautomatiseerde scanners die zoeken naar exact dit soort veelvoorkomende kwetsbaarheidspatronen discrimineren niet op basis van de grootte of het doel van een product. Ze kijken alleen naar of het kwetsbare patroon aanwezig en bereikbaar is.
 
-Een correcte fix valideert dat elke opgevraagde bestandsnaam strikt binnen de bedoelde map resolveert, en weigert alles dat erbuiten zou resolveren ongeacht hoe de traversalpoging vermomd of gecodeerd is. [LaunchStudio](https://launchstudio.eu/en/) controleert op precies dit patroon over bestandsafhandelingsfuncties als onderdeel van zijn standaardbeveiligingsreview, gesteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsafhandelingslogica over productiesystemen.
+## Wat het op de juiste manier herstellen hiervan vereist
 
-Manifera's bestandsafhandelingsbeveiligingsreviews worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Een correcte herstelling valideert dat elke opgevraagde bestandsnaam strikt binnen de bedoelde map resolvet, en weigert alles wat daarbuiten zou resolven. [LaunchStudio](https://launchstudio.eu/en/) controleert op exact dit patroon in functies voor bestandsafhandeling als onderdeel van haar standaard beveiligingsbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met het beveiligen van bestandsafhandelingslogica.
 
-[Stuur ons jouw prototypelink voor een gratis beoordeling](https://launchstudio.eu/en/#contact).
+Manifera's beveiligingsbeoordelingen voor bestandsafhandeling worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Stuur ons de link van uw prototype voor een gratis beoordeling](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de downloadlink die voorbij zijn eigen map reikte
+### Een AI-native oprichter in actie: De downloadlink die voorbij zijn eigen map reikte
 
-Max, een voormalig kerkvrijwilligerscoördinator die founder werd in Zutphen, bouwde GemeenteBeheer, een AI-geassisteerde kerk- en communityorganisatiebeheertool gebouwd met Bolt, waarmee administratoren vergadernotulen en interne documenten konden uploaden en delen via een eenvoudige bestandsdownloadfunctie.
+Max, een voormalig coördinator van kerkvrijwilligers die oprichter werd in Zutphen, bouwde GemeenteBeheer, een AI-ondersteunde beheertool voor kerken en maatschappelijke organisaties gebouwd met Bolt. Het laat beheerders notulen en interne documenten uploaden en delen via een eenvoudige functie voor het downloaden van bestanden.
 
-Een vrijwilliger met een technische achtergrond, die de downloadfunctie testte uit passieve nieuwsgierigheid door het bestandsnaamdeel van een download-URL te wijzigen, ontdekte dat hij een serverconfiguratiebestand kon ophalen dat helemaal niets te maken had met enig geüpload document. LaunchStudio's review bevestigde dat de downloadfunctie bestandspaden rechtstreeks construeerde vanuit de opgevraagde bestandsnaam zonder te valideren dat het resultaat binnen de bedoelde documentenmap bleef.
+Een vrijwilliger met een technische achtergrond testte de downloadfunctie uit nieuwsgierigheid door het bestandsnaamgedeelte van een download-URL aan te passen. Hij ontdekte dat hij een serverconfiguratiebestand kon ophalen dat niets te maken had met enig geüpload document. LaunchStudio's beoordeling bevestigde dat de downloadfunctie bestandspaden rechtstreeks opbouwde uit de opgevraagde bestandsnaam, zonder te valideren dat het resultaat binnen de bedoelde documentenmap bleef.
 
-**Resultaat:** LaunchStudio implementeerde strikte padvalidatie die ervoor zorgt dat elk downloadverzoek alleen resolveert binnen de bedoelde map, en dicht het gat zonder te veranderen hoe administratoren hun legitieme documenten uploadden of downloadden.
+**Resultaat:** LaunchStudio implementeerde strikte padvalidatie die garandeert dat elk downloadverzoek alleen binnen de bedoelde map resolvet. Dit sloot de kloof zonder te veranderen hoe beheerders hun legitieme documenten uploadde of downloadde.
 
-> *"Hij probeerde oprecht geen problemen te veroorzaken, gewoon nieuwsgierig wat er zou gebeuren. Het had net zo makkelijk iemand met veel minder goedaardige bedoelingen kunnen zijn die precies hetzelfde onderzocht."*
-> — **Max Hoekstra, Founder, GemeenteBeheer (Zutphen)**
+> *"Hij probeerde oprecht geen problemen te veroorzaken, hij was gewoon nieuwsgierig wat er zou gebeuren. Het had net zo goed iemand kunnen zijn met veel minder goedbedoelde intenties."*
+> — **Max Hoekstra, Oprichter, GemeenteBeheer (Zutphen)**
 
-**Kosten & tijdlijn:** €2.200 (herstel path traversal en validatie bestandstoegang) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.200 (herstel van path traversal en validatie van bestandstoegang) — voltooid in 7 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een webbeveiligingsspecialist path traversal een oude of een nieuw opkomende kwetsbaarheidsklasse beschouwen?
+### Zou een webbeveiligingsspecialist path traversal beschouwen als een oude kwetsbaarheidsklasse?
 
-Een van de oudste, best gedocumenteerde klassen in de geschiedenis van webontwikkeling, wat zijn voortgezette verschijning in AI-gegenereerde code enigszins verwacht maakt — goed bekende kwetsbaarheidsklassen verdwijnen niet uit nieuw gegenereerde code simpelweg omdat ze goed gedocumenteerd zijn; ze verdwijnen alleen wanneer er specifiek op gecontroleerd wordt tijdens review.
+Een van de oudste, meest gedocumenteerde klassen in de geschiedenis van webontwikkeling, wat het verschijnen ervan in met AI gegenereerde code begrijpelijk maakt als er geen specifieke controle op wordt uitgevoerd.
 
-### Raakt deze kwetsbaarheid alleen functies expliciet beschreven als "bestandsdownload," of verschijnt het elders?
+### Beïnvloedt deze kwetsbaarheid alleen functies die expliciet worden beschreven als "bestand downloaden"?
 
-Het verschijnt in elke functie waar gebruikersinvoer beïnvloedt welk bestand benaderd wordt op de server — dit omvat afbeeldingsweergavefuncties, documentvoorvertoningsfuncties, of elke functionaliteit die een bestand refereert met een naam of pad dat een gebruiker kan beïnvloeden in het verzoek.
+Het verschijnt in elke functie waar gebruikersinvoer beïnvloedt welk bestand op de server wordt benaderd (afbeeldingsweergave, documentvoorvertoning).
 
-### Manifera heeft bestandsafhandelingslogica beveiligd over vele verschillende productiesystemen — doet die ervaring ertoe voor een kleinere communitytool zoals GemeenteBeheer?
+### Maakt ervaring met bestandsafhandeling uit voor een kleiner maatschappelijk hulpmiddel?
 
-Ja, direct — het specifieke validatiepatroon nodig om path traversal te voorkomen is identiek ongeacht de grootte of het doel van de applicatie, en een al goed gevestigd, getest patroon toepassen is aanzienlijk sneller en betrouwbaarder dan de fix vanaf de grondbeginselen uitredeneren voor elk individueel geval.
+Ja, rechtstreeks – het specifieke validatiepatroon dat nodig is om path traversal te voorkomen is identiek, ongeacht de grootte of het doel van de applicatie.
 
-### Is een community- of non-profit-georiënteerde tool oprecht minder waarschijnlijk doelwit van dit soort geautomatiseerd scannen?
+### Is een maatschappelijk hulpmiddel minder waarschijnlijk het doelwit van geautomatiseerd scannen?
 
-Nee — geautomatiseerde kwetsbaarheidsscanners onderzoeken doorgaans breed over bereikbare websites en applicaties ongeacht hun doel of waargenomen belang, wat betekent dat een communitytool blootgesteld is aan in wezen dezelfde basisscanactiviteit als elk commercieel georiënteerd product met een vergelijkbaar kwetsbaarheidspatroon aanwezig.
+Nee – geautomatiseerde scanners zoeken breed over alle bereikbare applicaties, ongeacht hun doel of vermeende belang.
 
-### Zou dit soort gat gevangen zijn door simpelweg elke legitieme documentdownload grondig te testen vóór lancering?
+### Zou deze kloof opgevangen zijn door simpelweg elke legitieme document-download grondig te testen?
 
-Nee — elke legitieme bestandsnaam testen, hoe grondig ook, oefent alleen het bedoelde, verwachte gebruik van de functie uit; de kwetsbaarheid vereist specifiek testen met een doelbewust misvormde, traversal-proberende bestandsnaam, wat coöperatieve, functiegerichte tests geen natuurlijke reden hebben te construeren.
+Nee – het testen van elke legitieme bestandsnaam traint alleen het bedoelde gebruik van de functie. De kwetsbaarheid vereist specifiek testen met een opzettelijk verkeerd gevormde bestandsnaam.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Lỗi Path Traversal (Directory Traversal) trong tính năng tải file là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lỗi cho phép kẻ xấu truyền các ký tự `../` vào tên file để truy cập và tải về các file cấu hình hệ thống hoặc file của user khác nằm ngoài thư mục cho phép."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại sao AI tool lại dễ viết ra code dính lỗi Path Traversal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vì AI viết code ghép chuỗi tên file đơn thuần để phục vụ nhu cầu tải file cơ bản, không tự động thêm hàm normalize/validate đường dẫn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ứng dụng nhỏ/phi lợi nhuận có bị quét lỗi Path Traversal không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có, các bot quét lỗ hổng tự động chạy tràn lan trên internet không phân biệt web lớn hay nhỏ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cách khắc phục triệt để lỗ hổng Path Traversal là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Giải mã và chuẩn hóa đường dẫn (Realpath), sau đó kiểm tra xem đường dẫn đó có nằm chính xác trong thư mục được phép (Upload Directory) hay không trước khi đọc file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thời gian xử lý và vá lỗi Path Traversal cho hệ thống file mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thường hoàn thành rất nhanh trong 3-7 ngày làm việc bao gồm cả bước rà soát toàn bộ các endpoint xem và tải file."
+      }
+    }
+  ]
+}
+</script>

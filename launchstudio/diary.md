@@ -4,6 +4,12 @@
 
 ### Tháng 08
 
+#### Ngày 05
+
+- **15:25**: Hoàn thành 100% việc dịch lại toàn bộ 60 bài viết trong thư mục `2026-extra/extra-2/` sang tiếng Hà Lan full-depth 1:1 (phiên chiều hoàn thành từ bài 41 đến bài 60): đạt chuẩn độ dài ~1.900 - 2.050 từ/bài, đầy đủ 5 H3 FAQ và Schema JSON-LD `<script type="application/ld+json">` (`FAQPage`), bản địa hóa case study thực tế ở các thành phố Hà Lan (Hengelo, Enschede, Zutphen, Kampen, Harderwijk, Wageningen, Veenendaal, Barneveld, Woerden, Alphen aan den Rijn, Weert, Roermond, Sittard, Heerlen, Terneuzen, Goes, Den Bosch...).
+- **15:08**: Kiểm tra và thông báo thời gian reset quota API tạo ảnh (`429 Too Many Requests`, dự kiến reset sau 114 giờ vào 09:07 AM ngày 10/08/2026) cho bài viết `48-ai-security-issues-drachten.md` thuộc `2026-extra/extra-5-local/`, tuân thủ quy tắc AGENTS.md không sử dụng pollinations.ai.
+- **10:45**: Thực hiện re-translate toàn bộ các bài từ bài 01 đến bài 40 trong thư mục `2026-extra/extra-2/` sang tiếng Hà Lan full-depth 1:1 (đạt chuẩn ~1.900 - 2.050 từ/bài, bổ sung 5 H3 FAQ per article, cập nhật khối Schema JSON-LD `FAQPage` tiếng Hà Lan và bản địa hóa case study thực tế tại các thành phố Hà Lan/Benelux như Middelburg, Hilversum, Zaandam, Dordrecht, Venlo, Almere, Antwerp, Ghent, Brussels, Bruges, Luxembourg City, Tilburg, Maastricht, Roosendaal, Assen, Emmen, Hoorn, Gouda, Amstelveen, Schiedam, Vlaardingen, Zeist, Ede, Doetinchem, Purmerend, Katwijk, Spijkenisse...).
+
 #### Ngày 04
 
 - **14:35**: Tư vấn danh sách các plugin WordPress hỗ trợ cấu trúc Schema (JSON-LD / Rich Snippets) tốt nhất (Schema Pro, Rank Math SEO, Yoast SEO, AIOSEO) và hướng dẫn cách nhúng script JSON-LD thủ công.

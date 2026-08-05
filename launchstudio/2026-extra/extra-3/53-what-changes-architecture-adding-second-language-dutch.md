@@ -1,17 +1,18 @@
 ---
-Titel: "Wat verandert er in uw architectuur zodra u een tweede taal toevoegt?"
+Titel: "Wat er verandert in uw architectuur zodra u een tweede taal toevoegt"
 Trefwoorden: ai native, ai deployment, ai database, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische Solo Oprichter / Indie Hacker
 ---
-# Wat verandert er in uw architectuur zodra u een tweede taal toevoegt?
+
+# Wat er verandert in uw architectuur zodra u een tweede taal toevoegt
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Wat verandert er in uw architectuur zodra u een tweede taal toevoegt?",
-  "description": "Het toevoegen van een tweede taal aan een AI-product raakt meer aan de onderliggende architectuur dan alleen aan interfacevertaalreeksen, van het databaseschema tot de manier waarop door AI gegenereerde inhoud feitelijk wordt opgeslagen en opgehaald.",
+  "headline": "Wat er verandert in uw architectuur zodra u een tweede taal toevoegt",
+  "description": "Het toevoegen van een tweede taal aan een AI-product raakt meer van de onderliggende architectuur dan alleen vertaalreeksen voor de interface.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,72 +31,88 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Het toevoegen van een tweede taal aan een product dat is gebouwd met één enkele taal die overal wordt aangenomen – meestal Engels, gezien de standaardinstellingen van de meeste AI-coderingstools – raakt aanzienlijk meer van de onderliggende architectuur dan het simpelweg vertalen van interfacereeksen, een technische reikwijdte die een oprichter die van plan is uit te breiden naar een tweede taalmarkt er baat bij heeft als hij deze duidelijk begrijpt voordat hij zich aan een tijdlijn voor de verandering vastlegt.
+Het toevoegen van een tweede taal aan een product dat gebouwd is met de aanname van een enkele taal in het hele systeem – meestal Engels, gezien hoe de meeste AI-coderingshulpmiddelen standaard ingesteld staan – raakt aanzienlijk meer van de onderliggende architectuur dan simpelweg het vertalen van interfacereeksen. Dit is een technische omvang die een oprichter die van plan is uit te breiden naar een tweede taalmarkt baadt bij een duidelijk inzicht in voordat hij zich verbindt aan een tijdlijn voor de verandering.
 
-## Waarom interfacestringvertaling het zichtbare, kleinere deel van het werk is
+## Waarom het vertalen van interfacereeksen het zichtbare, kleinere deel van het werk is
 
-Interfacetekenreeksen – knoplabels, statische paginatekst – zijn doorgaans het meest zichtbare en meest eenvoudige onderdeel van het toevoegen van een taal, en daarom het onderdeel waar oprichters het meest natuurlijk aan denken bij het plannen van lokalisatie. Het aanzienlijk grotere, minder zichtbare architectonische werk betreft de manier waarop uw database, uw door AI gegenereerde inhoud en uw bedrijfslogica omgaan met gegevens die nu correct in meer dan één taal tegelijk moeten bestaan.
+Interfacereeksen – knop-etiketten, statische paginatekst – zijn doorgaans het meest zichtbare en meest eenvoudige deel van het toevoegen van een taal, en dientengevolge het deel waar oprichters het meest natuurlijk als eerste aan denken bij het plannen van lokalisatie. Het aanzienlijk grotere, minder zichtbare architectonische werk betreft hoe uw database, uw door AI gegenereerde inhoud en uw zakelijke logica gegevens afhandelen die nu correct in meer dan één taal gelijktijdig moeten bestaan.
 
-## Waar het echte architecturale werk zich feitelijk concentreert
+## Waar het echte architectonische werk zich daadwerkelijk concentreert
 
-**Beslissingen in het databaseschema over het opslaan van meertalige inhoud.** Als uw product door AI gegenereerde of door gebruikers gegenereerde inhoud opslaat die in meerdere talen moet bestaan ​​(productbeschrijvingen, gegenereerde samenvattingen, klantgerichte communicatie) heeft uw databaseschema een weloverwogen beslissing nodig over hoe die meertalige inhoud daadwerkelijk wordt gestructureerd en opgeslagen, een beslissing die aanzienlijk gemakkelijker vanaf het begin correct kan worden genomen dan achteraf aan te passen zodra de inhoud in één taal al op grote schaal bestaat.
+**Databaseschema-beslissingen over het opslaan van meertalige inhoud.** Als uw product enige door AI gegenereerde of door gebruikers gegenereerde inhoud opslaat die in meerdere talen moet bestaan – productbeschrijvingen, gegenereerde samenvattingen, klantgerichte communicatie – heeft uw databaseschema een bewuste beslissing nodig over hoe die meertalige inhoud daadwerkelijk wordt gestructureerd en opgeslagen. Dit is een beslissing die aanzienlijk gemakkelijker vanaf het begin correct te maken is dan achteraf in te passen zodra inhoud in een enkele taal al op schaal bestaat.
 
-**AI-promptarchitectuur die echte logica per taal nodig heeft, niet alleen vertaalde uitvoer.** Zoals elders in bredere richtlijnen over de kwaliteit van meertalige AI-uitvoer wordt besproken, is het eenvoudigweg vertalen van de uitvoer van een AI-functie na generatie een andere, doorgaans lagere kwaliteit benadering dan het daadwerkelijk direct in de doeltaal vragen, wat betekent dat uw onderliggende promptarchitectuur dit op de juiste manier moet ondersteunen in plaats van de vertaling er als een soort bijzaak aan toe te voegen.
+**AI-prompt-architectuur die echte logica per taal nodig heeft, en niet alleen vertaalde uitvoer.** Zoals elders in bredere richtlijnen over de kwaliteit van meertalige AI-uitvoer wordt behandeld, is het simpelweg vertalen van de uitvoer van een AI-functie na generatie een andere, doorgaans lagere-kwaliteit benadering dan het oprecht rechtstreeks prompten in de doeltaal. Dit betekent dat uw onderliggende prompt-architectuur dit gepast moet ondersteunen in plaats van vertaling achteraf als een bijgedachte toe te voegen.
 
-**Logica voor detectie van gebruikersvoorkeuren en locale die daadwerkelijk moeten bestaan.** Voor een product met één taal is geen logica nodig die bepaalt welke taal een specifieke gebruiker zou moeten zien. Het toevoegen van een tweede taal vereist dat deze logica doelbewust wordt opgebouwd, inclusief verstandige standaardinstellingen en hoe de voorkeur van een gebruiker gedurende de hele ervaring consistent wordt opgeslagen en gerespecteerd.
+**Gebruikersvoorkeur en locale-detectielogica die daadwerkelijk moeten bestaan.** Een product voor een enkele taal heeft geen behoefte aan logica die bepaalt welke taal een specifieke gebruiker zou moeten zien – het toevoegen van een tweede taal vereist dat deze logica bewust wordt gebouwd, inclusief verstandige standaarden en hoe de voorkeur van een gebruiker wordt opgeslagen en consistent wordt gerespecteerd over zijn gehele ervaring.
 
-**Zoek- en matchinglogica die zich mogelijk anders gedraagt ​​in verschillende talen.** Elke functie die betrekking heeft op het zoeken, matchen of vergelijken van tekst vereist specifieke verificatie dat deze correct functioneert in meerdere talen, omdat tekstverwerkingslogica die is gebouwd en getest voor één taal niet automatisch de verschillende structuur en conventies van een tweede taal correct verwerkt.
+**Zoek- en matchlogica die zich anders kan gedragen in verschillende talen.** Elke functie die tekstzoeken, matchen of vergelijken omvat heeft specifieke verificatie nodig dat het correct functioneert in meerdere talen. Tekstverwerkingslogica die gebouwd en getest is tegen één taal handelt de verschillende structuur en conventies van een tweede taal namelijk niet automatisch correct af.
 
-## Waarom het vroegtijdig plannen van deze architectuur aanzienlijk goedkoper is dan het achteraf inbouwen
+## Waarom het vroeg plannen van deze architectuur aanzienlijk goedkoper is dan achteraf inpassen
 
-Door hetzelfde patroon te weerspiegelen dat wordt behandeld in bredere richtlijnen met betrekking tot andere fundamentele architectuurbeslissingen, is het beslissen over een meertalige datastructuur voordat echte, ééntalige inhoud zich op grote schaal ophoopt, een relatief kleine ontwerpbeslissing. Het achteraf inbouwen van meertalige ondersteuning op een reeds live product met substantiële bestaande ééntalige inhoud vereist een echte migratie-inspanning, die aanzienlijk ontwrichtender is dan de gelijkwaardige vroege beslissing zou zijn geweest.
+Het spiegelen van hetzelfde patroon dat elders in bredere richtlijnen wordt behandeld met betrekking tot andere fundamentele architectuurbeslissingen: het beslissen over een meertalige datastructuur voordat echte inhoud in een enkele taal zich op schaal opstapelt is een vergelijkbaar kleine ontwerppeslissing. Het achteraf inpassen van meertalige ondersteuning op een al live product met substantiële bestaande inhoud in een enkele taal vereist een echte migratie-inspanning, aanzienlijk verstorender dan de vergelijkbare vroege beslissing zou zijn geweest.
 
-## Hoe u kunt weten of deze investering nu de moeite waard is
+## Hoe u weet of deze investering het waard is om nu te doen
 
-Als een markt voor een tweede taal een reëel doel voor de korte termijn is, en niet een verre hypothetische hypothese, is investeren in de onderliggende architectuur voordat de inhoud en het gebruik substantieel accumuleren in een structuur die uitsluitend uit één taal bestaat, de meest kosteneffectieve sequentiebepaling. Als de tweede taal werkelijk speculatief en afstandelijk is, is het uitstellen van deze specifieke architecturale investering terwijl je je bewust blijft van de toekomstige migratiekosten een redelijke, weloverwogen afweging.
+Als een tweede taalmarkt een echt doel voor de korte termijn is, en geen verre hypothetische situatie, is het investeren in de onderliggende architectuur voordat inhoud en gebruik zich substantieel opstapelen in een structuur uitsluitend voor een enkele taal de meest kostenefficiënte volgorde. Als de tweede taal oprecht speculatief en ver weg is, is het uitstellen van deze specifieke architectonische investering (terwijl u zich bewust blijft van de toekomstige migratiekosten) in plaats daarvan een redelijke, bewuste afweging.
 
-[LaunchStudio](https://launchstudio.eu/en/) ontwerpt echte meertalige ondersteuning op database- en AI-prompt-niveau, niet alleen maar interfacevertaling, voor oprichters met concrete kortetermijnplannen om een ​​tweedetaalmarkt te bedienen, ondersteund door Manifera's bredere ervaring met het bouwen van producten die echt meertalige Europese markten bedienen vanuit Amsterdam en het bredere klantenbestand in de EU.
+[LaunchStudio](https://launchstudio.eu/en/) ontwerpt echte meertalige ondersteuning op database- en AI-promptniveau, en niet alleen interfacevertaling, voor oprichters met concrete plannen op de korte termijn om een tweede taalmarkt te bedienen. Dit wordt ondersteund door Manifera's bredere ervaring in het bouwen van producten die oprecht meertalige Europese markten bedienen vanuit Amsterdam en over haar bredere EU-klantenbestand.
 
-[Maak uw architectuur klaar voor een tweede taal voordat de inhoud zich rond slechts één taal ophoopt](https://launchstudio.eu/en/#calculator) — dit is aanzienlijk meer dan een vertaaltaak.
+[Maak uw architectuur klaar voor een tweede taal voordat inhoud zich opstapelt rond slechts één taal](https://launchstudio.eu/en/#calculator) — dit is aanzienlijk meer dan een vertaaltaak.
+
+## Wat er nog meer gelokaliseerd moet worden voorbij het product zelf
+
+Alles wat tot nu toe behandeld is betreft de kernapplicatie – de database, de AI-prompts, de interface. Een tweede taal raakt een bredere ring van systemen rond het product die oprichters die een lokalisatie-inspanning plannen regelmatig vergeten überhaupt in te plannen. En die kloof heeft de neiging om later, versnipperd naar boven te komen, in plaats van als onderdeel van het oorspronkelijke plan.
+
+**Transactie-e-mails en meldingen.** Wachtwoord-resets, factuurbevestigingen, afspraakherinneringen, welkomstreeksen – deze worden doorgaans gegenereerd door een afzonderlijk sjabloonsysteem van de hoofdinterface, vaak vroeg toegevoegd en zelden herzien. Dit betekent dat een product een volledig vertaalde interface kan opleveren terwijl elke geautomatiseerde e-mail die een klant in een tweede taal ontvangt nog steeds aankomt in de oorspronkelijke taal. Het specifiek auditten hiervan maakt uit omdat transactie-e-mails exact het soort bericht zijn dat een klant zorgvuldig leest, op een moment dat het er voor hem toe doet. Dit maakt een taalkloof hier onevenredig opvallend vergeleken met dezelfde kloof op een pagina waar hij vluchtig overheen kijkt.
+
+**Juridische en nalevingsdocumenten.** Algemene voorwaarden, een privacybeleid, een gegevensverwerkingsovereenkomst – deze dragen echt juridisch gewicht, en een machinaal vertaalde of gedeeltelijk vertaalde versie creëert echte dubbelzinnigheid over welke versie daadwerkelijk de relatie met een klant in de nieuwe taalmarkt regelt. Dit is geen plek om dezelfde lichte AI-vertaalbenadering te hergebruiken die perfect redelijk zou kunnen zijn voor marketingteksten. Juridische tekst in een tweede taal rechtvaardigt over het algemeen een gepaste, geverifieerde vertaling, specifiek vanwege wat er op het spel staat als een geschil ooit omdraait om de exacte formulering.
+
+**Ondersteuningsworkflows en opgeslagen antwoorden voor de klantenservice.** Een ondersteunings-inbox, een helpcentrum, opgeslagen antwoordsjablonen – deze stapelen zich in de loop van de tijd op in welke taal het oprichtersteam voornamelijk in opereert. Een klant in een tweede taal die reikreikt naar hulp wordt regelmatig doorverwezen naar dezelfde onvertaalde ondersteuningsinfrastructuur, zelfs nadat het product zelf goed is gelokaliseerd. Dit creëert een schurende kloof tussen "het product begrijpt mijn taal" en "de ondersteuning niet".
+
+**SEO en URL-structuur voor de nieuwe taal.** Een tweede taalmarkt impliceert doorgaans een publiek in een tweede taal dat het product daadwerkelijk via zoekopdrachten vindt. Dit betekent dat de URL-structuur, metadata en gestructureerde gegevens hun eigen bewuste lokalisatiestrategie nodig hebben – een submap of subdomein per taal, correct getagde alternatieve taallinks, en metadata die daadwerkelijk voor die markt is geschreven in plaats van mechanisch vertaald. Dit is een zorg die losstaat van, maar gerelateerd is aan de algemene technische correctheid van de marketingsite die elders in bredere richtlijnen wordt behandeld.
+
+**Valuta-, datum- en getalopmaak waar ze ook verschijnen.** Zelfs wanneer de doelmarkt een valuta- of getalconventie deelt met het origineel, is dit het waard om expliciet te verifiëren in plaats van aan te nemen – een komma voor decimalen versus een punt voor decimalen, een datumindeling die dag-eerst leest versus maand-eerst, een factuurtotaal opgemaakt volgens de verkeerde conventie. Het zijn kleine details die overkomen als onzorgvuldigheid juist omdat het het soort ding is dat een moedertaalgebruiker van die conventie onmiddellijk opmerkt.
+
+Niets van deze vijf gebieden vereist dezelfde architectonische investering als het database- en promptwerk dat hierboven is behandeld, maar het overslaan ervan creëert een specifieke, zichtbare inconsistentie: een product dat er goed gelokaliseerd uitziet in de onderdelen die een oprichter heeft bedacht om te controleren, en stilletjes onvertaald in de onderdelen die niemand in het oorspronkelijke plan had opgenomen.
 
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: een kostbare retrofit die vroege planning had kunnen vermijden
+### Een AI-native oprichter in actie: Een kostbare aanpassing achteraf die vroege planning zou hebben voorkomen
 
-Wouter, een oprichter in Rotterdam die MenuVertaler beheert, een AI-tool die restaurantmenubeschrijvingen genereert voor kleine horecabedrijven, volledig in het Nederlands gebouwd met behulp van Bolt zonder rekening te houden met toekomstige meertalige ondersteuning, aangezien zijn oorspronkelijke doelgroep uitsluitend Nederlandstalige restaurants was.
+Wouter, een oprichter in Rotterdam die MenuVertaler runt, een AI-tool die beschrijvingen van restaurantmenu's genereert voor kleine horecabedrijven, bouwde het systeem volledig in het Nederlands met behulp van Bolt. Hij hield geen rekening met toekomstige meertalige ondersteuning, aangezien zijn oorspronkelijke doelmarkt uitsluitend Nederlands sprekende restaurants was.
 
-Na ongeveer een jaar en enkele duizenden gegenereerde menubeschrijvingen die volledig waren opgeslagen in een databaseschema zonder taalveld of meertalige structuur, zag Wouter een echte kans om uit te breiden naar Engelstalige markten. Hij ontdekte dat zijn bestaande databasestructuur geen manier had om een ​​tweedetalige versie van de inhoud te associëren met de oorspronkelijke Nederlandse tegenhanger, waardoor een aanzienlijk meer betrokken migratie nodig was dan het vanaf het begin opbouwen van deze structuur nodig zou hebben gehad.
+Na ongeveer een jaar en duizenden gegenereerde menubeschrijvingen opgeslagen in een databaseschema zonder taalveld of meertalige structuur, identificeerde Wouter een echte kans om uit te breiden naar Engels sprekende markten. Hij ontdekte dat zijn bestaande databasestructuur geen manier had om een versie van inhoud in een tweede taal te koppelen aan de oorspronkelijke Nederlandse tegenhanger. Dit vereiste een aanzienlijk meer betrokken migratie dan het bouwen van deze structuur vanaf het begin zou hebben vereist.
 
-**Resultaat:** LaunchStudio ontwierp en voerde een databasemigratie uit waarbij de juiste meertalige inhoudsstructuur werd geïntroduceerd, naast echte AI-promptarchitectuur per taal in plaats van eenvoudige vertalingen na de generatie, waardoor Wouter's Engelse expansie mogelijk werd - een project dat qua omvang en kosten aanzienlijk groter was dan de gelijkwaardige architectonische beslissing in een vroeg stadium zou zijn geweest.
+**Resultaat:** LaunchStudio ontwierp en voerde een databasemigratie uit die een gepaste meertalige inhoudsstructuur introduceerde, samen met een echte AI-prompt-architectuur per taal in plaats van eenvoudige vertaling na generatie. Hiermee werd Wouter's Engelse uitbreiding mogelijk gemaakt – een project dat betekenisvol groter was in omvang en kosten dan de vergelijkbare architectonische beslissing in een vroeg stadium zou zijn geweest.
 
-> *"Als ik had geweten dat ik uiteindelijk misschien wel een tweede taal zou willen, zou het inbouwen van die structuur vanaf het begin een relatief kleine beslissing zijn geweest. Een jaar en duizenden Nederlandstalige records later werd het een echt migratieproject in plaats van een ontwerpkeuze die ik in het begin gratis had kunnen maken."*
-> — **Wouter de Jong, oprichter, MenuVertaler (Rotterdam)**
+> *"Als ik had geweten dat ik uiteindelijk misschien een tweede taal zou willen, zou het inbouwen van die structuur vanaf het begin een relatief kleine beslissing zijn geweest. Een jaar en duizenden uitsluitend Nederlandse records later werd het een echt migratieproject in plaats van een ontwerpkeuze die ik aan het begin gratis had kunnen maken."*
+> — **Wouter de Jong, Oprichter, MenuVertaler (Rotterdam)**
 
-**Kosten en tijdlijn:** € 2.800 (meertalige databasemigratie en snelle architectuur) — voltooid in 11 werkdagen.
+**Kosten en tijdlijn:** € 2.800 (meertalige databasemigratie en prompt-architectuur) — voltooid in 11 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Moet elk AI-product vanaf de eerste dag rekening houden met een meertalige architectuur, zelfs zonder concrete plannen voor de korte termijn?
+### Moet elk AI-product vanaf dag één plannen voor een meertalige architectuur, zelfs zonder concrete plannen voor de korte termijn?
 
-Niet noodzakelijkerwijs – voor een product dat echt op de interne markt is gericht en geen realistische uitbreidingsplannen voor de korte termijn heeft, is het uitstellen van deze investering een redelijke afweging, op voorwaarde dat de oprichter inzicht heeft in de toekomstige migratiekosten die in dit artikel worden beschreven als die plannen uiteindelijk werkelijkheid worden.
+Niet noodzakelijkerwijs – voor een product dat zich oprecht richt op een enkele markt, zonder realistische uitbreidingsplannen voor de korte termijn, is het uitstellen van deze investering een redelijke afweging. Mits de oprichter de toekomstige migratiekosten begrijpt die dit artikel beschrijft als die plannen uiteindelijk wel werkelijkheid worden.
 
-### Hoe verschilt echte AI-prompts per taal van het simpelweg vertalen van output na generatie?
+### Hoe is echte AI-prompting per taal anders dan simpelweg de uitvoer vertalen na generatie?
 
-Rechtstreeks in de doeltaal vragen levert doorgaans meer natuurlijke, contextueel passende uitvoer op dan het genereren in één taal en daarna mechanisch vertalen, vergelijkbaar met het kwaliteitsonderscheid dat elders wordt behandeld in bredere richtlijnen voor meertalige AI-uitvoerverificatie.
+Het rechtstreeks prompten in de doeltaal produceert doorgaans meer natuurlijke, contextueel gepaste uitvoer dan genereren in één taal en daarna mechanisch vertalen. Dit spiegelt het kwaliteitsverschil dat elders in bredere richtlijnen over de verificatie van meertalige AI-uitvoer wordt behandeld.
 
-### Zou Wouters migratie aanzienlijk goedkoper zijn geweest als hij de uitbreiding zelfs maar een paar maanden eerder had verwacht?
+### Zou Wouter's migratie betekenisvol goedkoper zijn geweest als hij de uitbreiding zelfs een paar maanden eerder had voorzien?
 
-Ja, proportioneel – de migratiekosten schalen mee met de hoeveelheid bestaande, ééntalige inhoud die zich heeft verzameld, wat betekent dat eerdere actie, ook al was het niet vanaf het allereerste begin, zou hebben geleid tot het migreren van aanzienlijk minder verzamelde gegevens dan een heel jaar wachten.
+Ja, naar verhouding – de migratiekosten schalen met hoeveel bestaande inhoud in een enkele taal zich heeft opgebouwd. Dit betekent dat eerdere actie, zelfs als het niet vanaf het allereerste begin was, betekenisvol minder opgebouwde gegevens zou hebben omvat dan een heel jaar wachten.
 
-### Vereist het toevoegen van een tweede taal altijd de volledige architectonische reikwijdte die in dit artikel wordt beschreven, of is dit afhankelijk van het specifieke product?
+### Vereist het toevoegen van een tweede taal altijd de volledige architectonische omvang die in dit artikel wordt beschreven, of hangt het af van het specifieke product?
 
-Hangt af van wat het product feitelijk doet: een product met minimaal opgeslagen, taalafhankelijke inhoud heeft een kleiner migratiebereik dan een product, zoals dat van Wouter, met substantiële, door AI gegenereerde inhoud die taalbewuste opslag en opvraging vereist.
+Hangt af van wat het product daadwerkelijk doet – een product met minimale opgeslagen, taalafhankelijke inhoud heeft een kleinere migratie-omvang dan een product, zoals dat van Wouter, met substantiële door AI gegenereerde inhoud die overal taalbewuste opslag en ophaalacties vereist.
 
-### Hoe kan een oprichter inschatten of de meertalige migratie van zijn specifieke product een kleine of grote onderneming zou zijn?
+### Hoe kan een oprichter inschatten of de meertalige migratie van zijn specifieke product een kleine of een grote onderneming zou zijn?
 
-Beoordelen hoeveel van de kernwaarde van uw product afhangt van opgeslagen, taalspecifieke inhoud versus louter tekst op interfaceniveau, is de directe manier om de reikwijdte in te schatten. Meer opgeslagen taalafhankelijke inhoud betekent doorgaans een grotere, meer betrokken migratie als deze wordt uitgesteld.
+Het beoordelen van hoeveel van de kernwaarde van uw product afhangt van opgeslagen, taalspecifieke inhoud versus puur tekst op interfaceniveau is de directe manier om de omvang in te schatten. Meer opgeslagen taalafhankelijke inhoud betekent over het algemeen een grotere, meer betrokken migratie als deze wordt uitgesteld.
 
 <script type="application/ld+json">
 {
@@ -104,42 +121,42 @@ Beoordelen hoeveel van de kernwaarde van uw product afhangt van opgeslagen, taal
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Does every AI product need multi-language architecture from day one?",
+      "name": "Moet elk AI-product vanaf dag 1 meertalige architectuur hebben?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily, for a single-market-focused product with no near-term expansion plans, provided future migration cost is understood."
+        "text": "Nee, bij één specifieke markt zonder nabije uitbreiding is uitstel een logische keuze, mits de latere migratiekosten bekend zijn."
       }
     },
     {
       "@type": "Question",
-      "name": "How is genuine per-language AI prompting different from translating output after generation?",
+      "name": "Hoe verschilt AI-prompting per taal van achteraf vertalen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prompting directly in the target language typically produces more natural, contextually appropriate output than mechanical translation."
+        "text": "Direct prompten in de doeltaal geeft natuurlijkere en contextueel betere output dan achteraf mechanisch vertalen."
       }
     },
     {
       "@type": "Question",
-      "name": "Would earlier action have made the migration meaningfully cheaper?",
+      "name": "Was Wouters migratie goedkoper geweest bij eerdere voorbereiding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, proportionally \u2014 migration cost scales with how much accumulated single-language content exists."
+        "text": "Ja, want migratiekosten schalen met de hoeveelheid opgebouwde data in één taal."
       }
     },
     {
       "@type": "Question",
-      "name": "Does adding a second language always require the full architectural scope described?",
+      "name": "Vraagt een 2e taal altijd om een grote architectuurwijziging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depends on the product \u2014 minimal stored language-dependent content means a smaller migration scope than substantial content."
+        "text": "Hangt af van het product — bij weinig opgeslagen taaldatabase-inhoud is de impact veel kleiner dan bij data-intensieve apps."
       }
     },
     {
       "@type": "Question",
-      "name": "How can a founder estimate whether their migration would be small or large?",
+      "name": "Hoe schat je de omvang van een meertalige migratie in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Assessing how much core value depends on stored language-specific content versus interface-level text estimates scope."
+        "text": "Beoordeel hoeveel kernwaarde afhangt van opgeslagen taalspecifieke data versus losse tekst op het scherm."
       }
     }
   ]

@@ -1,17 +1,18 @@
 ---
-Titel: "Zachte verwijdering versus harde verwijdering: de door AI gegenereerde datamodelbeslissing die niemand uitlegt"
+Titel: "Soft Delete vs. Hard Delete: De beslissing over het datamodel van AI-gegenereerde apps die niemand uitlegt"
 Trefwoorden: ai database, ai code tool, soft delete, hard delete, data recovery
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# Zachte verwijdering versus harde verwijdering: de door AI gegenereerde datamodelbeslissing die niemand uitlegt
+
+# Soft Delete vs. Hard Delete: De beslissing over het datamodel van AI-gegenereerde apps die niemand uitlegt
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Zachte verwijdering versus harde verwijdering: de door AI gegenereerde datamodelbeslissing die niemand uitlegt",
-  "description": "AI-coderingstools zijn standaard ingesteld op permanente harde verwijderingen van databaserijen, wat betekent dat \u00e9\u00e9n onbedoelde klik gegevens kan vernietigen zonder dat er een weg meer terug is. Hier leest u waarom zacht verwijderen de standaard zou moeten zijn en hoe u dit achteraf kunt aanpassen.",
+  "headline": "Soft Delete vs. Hard Delete: De beslissing over het datamodel van AI-gegenereerde apps die niemand uitlegt",
+  "description": "AI-coderingsassistenten kiezen standaard voor permanente hard deletes op databaserijen.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,72 +31,76 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Er is een specifiek soort stilte die volgt op een gebruiker die op het verkeerde klikt op "verwijderen" - de tweede waarin hij zich realiseert wat er net is gebeurd, en de volgende seconde waarin hij zich realiseert dat er geen ongedaan gemaakt kan worden. Als de verwijderknop van uw app een 'DELETE FROM'-instructie rechtstreeks tegen de database uitvoert, is die stilte permanent en is het een beslissing die uw AI-coderingstool vrijwel zeker voor u heeft genomen zonder deze ooit te vermelden.
+Er is een specifiek soort stilte die volgt nadat een gebruiker op "verwijderen" klikt voor het verkeerde item – de seconde waarin hij zich realiseert wat er net is gebeurd, en de volgende seconde waarin hij zich realiseert dat er geen ongedaan maken is. Als de verwijderknop van uw app een `DELETE FROM`-instructie rechtstreeks tegen de database uitvoert, is die stilte permanent. En het is een beslissing die uw AI-coderingsassistent vrijwel zeker voor u heeft gemaakt zonder het ooit te vermelden.
 
-## Het verschil van één woord dat niemand tijdens de ontwikkeling signaleert
+## Het verschil van één woord dat niemand markeert tijdens de ontwikkeling
 
-Wanneer u een AI-coderingsassistent vraagt ​​om "een verwijderfunctie toe te voegen" voor een record, is de meest directe en gebruikelijke implementatie een harde verwijdering: een SQL `DELETE`-instructie (of een gelijkwaardige ORM-aanroep) die de rij volledig en onmiddellijk uit de database verwijdert, zonder dat er een spoor achterblijft. Het is de eenvoudigst mogelijke interpretatie van 'verwijderen', het doorstaat elke test (de record is verdwenen, precies zoals gevraagd) en het werkt feilloos tot iemand het verkeerde verwijdert.
+Wanneer u een AI-coderingsassistent vraagt om "een verwijderfunctie toe te voegen" voor een record, is de meest rechtstreekse en veel voorkomende implementatie een harde verwijdering (hard delete): een SQL `DELETE`-instructie (of gelijkwaardige ORM-oproep) die de rij volledig uit de database verwijdert, onmiddellijk, zonder enig spoor achter te laten. Het is de eenvoudigste mogelijke interpretatie van "verwijderen", het doorstaat elke test – het record is weg, exact zoals gevraagd – en het werkt vlekkeloos tot het moment dat iemand het verkeerde item verwijdert.
 
-Het alternatief, zacht verwijderen, verwijdert de rij helemaal niet. In plaats daarvan stelt het een vlag in (meestal een 'deleted_at'-tijdstempelkolom) en elk deel van de applicatie dat uit die tabel leest, wordt bijgewerkt om rijen uit te filteren waarin die vlag is ingesteld. Functioneel gezien verdwijnt een voorlopig verwijderde record uit het zicht van de gebruiker op precies dezelfde manier als een definitief verwijderde record. Het verschil doet er alleen toe op het moment dat iemand het terug nodig heeft: een zacht verwijderd record kan binnen enkele seconden worden hersteld door de vlag te wissen, terwijl een hard verwijderd record moet worden hersteld vanaf een databaseback-up - als die bestaat, als deze recent genoeg is, en als het herstellen ervan niet ook alle andere wijzigingen die sindsdien zijn aangebracht ongedaan maakt.
+Het alternatief, zachte verwijdering (soft delete), verwijdert de rij daadwerkelijk überhaupt niet. In plaats daarvan stelt het een vlag in – doorgaans een `deleted_at`-tijdstempelkolom – en elk onderdeel van de applicatie dat uit die tabel leest wordt bijgewerkt om rijen te filteren waar die vlag is ingesteld. Functioneel verdwijnt een zacht verwijderd record uit het zicht van de gebruiker exact hetzelfde als een hard verwijderd record. Het verschil doet er pas toe op het moment dat iemand het terug nodig heeft: een zacht verwijderd record kan in seconden worden hersteld door de vlag te wissen, terwijl een hard verwijderd record het herstellen uit een database-back-up vereist – als er een bestaat, als deze recent genoeg is, en als het herstellen ervan niet ook elke andere wijziging terugdraait die sinds die tijd is gemaakt.
 
-## Waarom AI-tools standaard de verkeerde keuze maken, en wanneer het er echt toe doet
+## Waarom AI-tools standaard kiezen voor de verkeerde keuze, en wanneer het er daadwerkelijk toe doet
 
-Zacht verwijderen is niet de standaard waar een AI-tool naar streeft, omdat het echt meer werk is: het betekent het toevoegen van een kolom, het bijwerken van elke afzonderlijke zoekopdracht in die tabel om gemarkeerde rijen uit te sluiten, en meestal het bouwen van een soort beheerdersinterface om zacht verwijderde records later te bekijken en te herstellen. Een prompt als "laat gebruikers een project verwijderen" communiceert niets van die complexiteit; het vraagt ​​alleen om verwijdering, en de AI geeft je de eenvoudigste versie. De beslissing welke geschikt is, hangt volledig af van wat er wordt verwijderd: een zachte verwijdering is bijna verplicht voor alles met trapsgewijze relaties (een project met taken, een gebruiker met orders), alles wat een gebruiker per ongeluk kan verwijderen via een gebruikersinterface, of alles met compliance-gedreven bewaarvereisten. Een echt wegwerprecord met lage inzet heeft dit misschien helemaal niet nodig.
+Zachte verwijdering is niet de standaard waar een AI-tool naar grijpt omdat het oprecht meer werk is: het betekent het toevoegen van een kolom, het bijwerken van elke enkele query tegen die tabel om gemarkeerde rijen uit te sluiten, en doorgaans het bouwen van een soort beheerdersinterface om zacht verwijderde records later te bekijken en te herstellen. Een prompt zoals "laat gebruikers een project verwijderen" communiceert niets van die complexiteit – het vraagt simpelweg om verwijdering, en de AI geeft u de eenvoudigste versie. De beslissing over welke geschikt is hangt volledig af van wat er wordt verwijderd: een zachte verwijdering is bijna verplicht voor alles met opeenvolgende relaties (een project met taken, een gebruiker met bestellingen), alles wat een gebruiker per ongeluk via een UI zou kunnen verwijderen, of alles met nalevingsgestuurde bewaarvereisten. Een oprecht wegwerpbaar record met een laag risico heeft het mogelijk helemaal niet nodig.
 
-Dit is precies het soort oordeelsvorming over datamodellering dat door AI gegenereerde code scheidt van architectuur op productieniveau – niet bepaald een bug, maar een standaard die nooit daadwerkelijk is geëvalueerd tegen de werkelijke kosten als het fout gaat. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering, en het beoordelen van de semantiek van het verwijderen aan de hand van de daadwerkelijke ontploffingsradius van elke tabel is een standaardonderdeel van de manier waarop onze ingenieurs, die vanuit Manifera's kantoor in Amsterdam werken, het datamodel van een door AI gebouwde app voorbereiden voor echte gebruikers.
+Dit is exact het soort datamodelleringsoordeel dat met AI gegenereerde code scheidt van productie-architectuur – niet een bug precies, maar een standaard die nooit daadwerkelijk is geëvalueerd tegen de echte kosten van het verkeerd krijgen ervan. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering. Het beoordelen van verwijder-semantiek tegen de daadwerkelijke impact van elke tabel is een standaard onderdeel van hoe onze ingenieurs, werkend vanuit Manifera's kantoor in Amsterdam, het datamodel van een met AI gebouwde app voorbereiden op echte gebruikers.
 
-Als u niet zeker weet welke van de verwijderfuncties van uw app harde verwijderingen zijn die wachten om een ​​slechte dag te veroorzaken, is het de moeite waard [uw gegevensmodel te beoordelen met ons team](https://launchstudio.eu/en/#contact) voordat uw eerste echte gebruiker er op de harde manier achter komt.
+Als u niet zeker weet welke van de verwijderfuncties van uw app harde verwijderingen zijn die wachten om een slechte dag te veroorzaken, is het de moeite waard om [uw datamodel te beoordelen met ons team](https://launchstudio.eu/en/#contact) voordat uw eerste echte gebruiker er op de harde manier achter komt.
 
-## Soft Delete verbreekt stilletjes unieke beperkingen (Unique Constraints)
+## Zachte verwijdering breekt stilletjes unieke beperkingen (Unique Constraints)
 
-Een zachte verwijdering (soft delete) markeert een record in de database als `deleted_at = TIMESTAMP` in plaats van het fysiek te wissen. Een veelvoorkomend probleem ontstaat bij unieke velden (zoals een e-mailadres of gebruikersnaam): als een gebruiker zijn account verwijdert en later een nieuw account probeert aan te maken met hetzelfde e-mailadres, faalt de database-invoer vanwege de unieke beperking op het oude (zacht verwijderde) record.
+Het omzetten van een tabel naar zachte verwijdering introduceert een probleem dat pas verschijnt zodra iemand iets probeert te hergebruiken waarvan hij denkt dat het weg is: een normale unieke beperking (unique constraint) op een kolom zoals `email` weet het verschil niet tussen een actieve rij en een zacht verwijderde rij. Een gebruiker die zijn account verwijdert en zich vervolgens opnieuw probeert aan te melden met hetzelfde e-mailadres stuit dus op een beperkingsschending op een record dat, vanuit het perspectief van het product, niet meer bestaat. Het account ziet er overal in de app verwijderd uit, maar de database bevat nog steeds de oude rij, en de unieke index ziet deze nog steeds.
 
-Gebruik een samengestelde unieke index die de verwijderingsdatum meeneemt of een uniek ID toevoegt bij verwijdering:
+Met AI gegenereerde migraties houden hier vrijwel nooit rekening mee, omdat de beperking werd geschreven voordat zachte verwijdering in het schema bestond. En niets dwingt een hernieuwde controle af zodra `deleted_at` wordt toegevoegd. De herstelling is een partiële unieke index die alleen uniekheid afdwingt onder actieve rijen, en niet alle rijen:
 
-```sql
--- In plaats van UNIQUE(email), gebruik een partiële unieke index:
-CREATE UNIQUE INDEX unique_active_user_email ON users (email) WHERE deleted_at IS NULL;
 ```
+CREATE UNIQUE INDEX users_email_active_unique
+ON users (email)
+WHERE deleted_at IS NULL;
+```
+
+Hiermee aanwezig is het e-mailadres van een verwijderd account oprecht vrij om te hergebruiken, terwijl twee actieve accounts nog steeds niet kunnen botsen. Het is een kleine toevoeging, maar het is het soort ding dat alleen wordt opgevangen door iemand die bewust test op "verwijder een account, meld u dan opnieuw aan met hetzelfde e-mailadres" – een test die vrijwel niemand uitvoert totdat een echte gebruiker er op stuit en een verwarrende aanmeldingsfout krijgt in plaats van een vers account.
+
+Het zelfde patroon verschijnt op elke kolom die uniek was voordat zachte verwijdering bestond – een werkruimte-slug, een uitnodigingscode, een subdomein – overal waar de app uniekheid belooft aan een gebruiker, maar de onderliggende beperking nooit is bijgewerkt om te begrijpen dat een zacht verwijderde rij niet zou moeten meetellen. Het auditeren van elke unieke beperking op een nieuw zacht te verwijderen tabel is wat voorkomt dat dit naar boven komt als een ondersteuningsverzoek maanden nadat de migratie is verzonden.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: het project dat in één klik verdween
+### Een AI-native oprichter in actie: Het project dat in één klik verdween
 
-Daniël Wesseling, oprichter in Emmeloord, bouwde ProjectVolg, een projectmanagement SaaS, met behulp van Lovable. De verwijderfunctie voor een project werkte betrouwbaar in elke test die Daniël tijdens de ontwikkeling uitvoerde: klik op verwijderen, bevestig, het project is verdwenen. Schoon, eenvoudig, precies zoals bedoeld - want bij elke test was het Daniël die een testproject verwijderde dat hij niet meer nodig had.
+Daniël Wesseling, een oprichter in Emmeloord, bouwde ProjectVolg, een SaaS voor projectbeheer, met behulp van Lovable. De verwijderfunctie voor een project werkte betrouwbaar in elke test die Daniël uitvoerde tijdens de ontwikkeling: klik op verwijderen, bevestig, het project is weg. Schoon, eenvoudig, exact zoals bedoeld – omdat het in elke test Daniël was die een testproject verwijderde dat hij niet meer nodig had.
 
-Het echte incident vond plaats toen een gebruiker, die een oud gearchiveerd project wilde verwijderen, per ongeluk op verwijderen klikte op een actief project dat nog vol open taken stond. Het bevestigingsdialoogvenster gaf niet genoeg pauze, en binnen enkele seconden waren het project en alle bijbehorende taken definitief uit de database verdwenen - omdat de door AI gegenereerde verwijderfunctie een echte harde verwijdering had uitgevoerd, waarbij het door elke gerelateerde tabel ging zonder dat er ergens een vlag voor zacht verwijderen was om het op te vangen. Er was geen manier om het terug te brengen via de app zelf.
+Het echte incident gebeurde toen een gebruiker, die een oud gearchiveerd project wilde verwijderen, per ongeluk op verwijderen klikte bij een actief project dat nog vol zat met openstaande taken. Het bevestigingsvenster bood niet genoeg pauze, en binnen seconden waren het project en elk van de geassocieerde taken permanent verdwenen uit de database – omdat de met AI gegenereerde verwijderfunctie een oprechte harde verwijdering had uitgevoerd, doordringend naar elke gerelateerde tabel zonder zachte-verwijderingsvlag om het op te vangen. Er was geen manier om het via de app zelf terug te brengen.
 
-LaunchStudio herbouwde de verwijderingslogica van ProjectVolg rond een zacht verwijderpatroon: een `deleted_at`-tijdstempel op projecten en hun gerelateerde taken, elke bestaande query bijgewerkt om gemarkeerde records eruit te filteren, en een eenvoudige "onlangs verwijderde" beheerdersweergave waarin een project binnen een periode van 30 dagen kon worden hersteld voordat het volgens een schema permanent werd opgeschoond. **Resultaat:** de eerstvolgende onbedoelde verwijdering, weken later, werd binnen een minuut door de gebruiker zelf hersteld, zonder enige technische tussenkomst.
+LaunchStudio herbouwde ProjectVolg's verwijderlogica rond een zachte-verwijderingspatroon: een `deleted_at`-tijdstempel op projecten en hun gerelateerde taken, elke bestaande query bijgewerkt om gemarkeerde records te filteren, en een eenvoudige beheerweergave voor "recent verwijderd" waar een project kon worden hersteld binnen een venster van 30 dagen voordat het permanent werd gewist op een schema. **Resultaat:** de allereerstvolgende per ongeluk uitgevoerde verwijdering, weken later, werd door de gebruiker zelf binnen een minuut hersteld, zonder enige betrokkenheid van engineering.
 
-> *"Het verlies van dat project heeft mij op de harde manier geleerd dat 'verwijderen' en 'voor altijd weg' niet dezelfde knop mogen zijn. Nu is het echt onmogelijk om per ongeluk gegevens te verliezen.'*
-> — **Daniël Wesseling, oprichter, ProjectVolg (Emmeloord)**
+> *"Het verliezen van dat project leerde me op de harde manier dat 'verwijderen' en 'voor altijd weg' niet dezelfde knop zouden moeten zijn. Nu is het oprecht onmogelijk om per ongeluk gegevens te verliezen."*
+> — **Daniël Wesseling, Oprichter, ProjectVolg (Emmeloord)**
 
-**Kosten en tijdlijn:** € 750 (schemamigratie voorlopig verwijderen, query-updates, herstelbeheerdersweergave) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 750 (schema-migratie voor zachte verwijdering, query-updates, beheerweergave voor herstel) — voltooid in 4 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom gebruiken AI-coderingstools standaard harde verwijderingen in plaats van zachte verwijderingen?
+### Waarom kiezen AI-coderingsassistenten standaard voor harde verwijderingen in plaats van zachte verwijderingen?
 
-Omdat een harde verwijdering de eenvoudigste, meest letterlijke interpretatie is van een 'verwijderings'-verzoek, en het correct bouwen van een zachte verwijdering aanvullende schemawijzigingen en query-updates vereist die niet worden geïmpliceerd door een eenvoudige prompt.
+Omdat een harde verwijdering de eenvoudigste, meest letterlijke interpretatie is van een verzoek om "verwijdering". Het correct bouwen van een zachte verwijdering vereist aanvullende schema-wijzigingen en query-updates die niet besloten liggen in een eenvoudige prompt.
 
-### Welke tabellen in mijn app moeten daadwerkelijk voorlopig worden verwijderd?
+### Welke tabellen in mijn app hebben daadwerkelijk zachte verwijdering nodig?
 
-Alles met trapsgewijze relaties, alles wat een gebruiker per ongeluk via de gebruikersinterface kan verwijderen, en alles met bewaar- of auditvereisten: eenvoudig opnieuw te maken records met een lage inzet zijn minder belangrijk.
+Alles met opeenvolgende relaties (cascading relationships), alles wat een gebruiker per ongeluk via de UI zou kunnen verwijderen, en alles met bewaar- of auditvereisten.
 
-### Kan zacht verwijderen achteraf worden ingebouwd in een app die al gebruikmaakt van harde verwijdering?
+### Kan zachte verwijdering achteraf worden toegevoegd aan een app die al harde verwijderingen gebruikt?
 
-Ja, hoewel hiervoor de vlagkolom moet worden toegevoegd en elke bestaande query aan die tabel moet worden gecontroleerd om er zeker van te zijn dat verwijderde rijen consequent worden uitgefilterd overal waar ze worden gelezen.
+Ja, hoewel het het toevoegen van de vlagkolom vereist en het auditeren van elke bestaande query tegen die tabel om ervoor te zorgen dat verwijderde rijen overal consistent worden gefilterd waar ze worden gelezen.
 
-### Hoe wordt de technische achtergrond van Manifera geïnformeerd over dit soort beslissingen over datamodellering?
+### Vertraagt het toevoegen van zachte verwijdering mijn databasequery's?
 
-Manifera's ruim 11 jaar ervaring op het gebied van productie-engineering in meer dan 160 projecten betekent dat beslissingen over datamodellen, zoals het verwijderen van semantiek, worden geëvalueerd aan de hand van reële operationele risico's, en niet alleen worden geïmplementeerd als de eerste werkende versie.
+Over het algemeen niet betekenisvol – het filteren op een geïndexeerde `deleted_at`-kolom voegt verwaarloosbare overhead toe vergeleken met de kosten van een niet-herstelbare accidentele verwijdering.
 
-### Vertraagt ​​het toevoegen van zacht verwijderen mijn databasequery's?
+### Als ik zachte verwijdering toevoeg, kan een verwijderde gebruiker zich dan opnieuw aanmelden met hetzelfde e-mailadres?
 
-Over het algemeen niet zinvol: filteren op een geïndexeerde 'deleted_at'-kolom voegt verwaarloosbare overhead toe in vergelijking met de kosten van een onherstelbare, accidentele verwijdering.
-
+Niet automatisch – een standaard unieke beperking behandelt de oude, zacht verwijderde rij nog steeds als bezet. Deze moet dus worden vervangen door een partiële unieke index gericht op alleen actieve rijen, anders stuit het hergebruikte e-mailadres op een beperkingsfout.
 
 <script type="application/ld+json">
 {
@@ -104,42 +109,42 @@ Over het algemeen niet zinvol: filteren op een geïndexeerde 'deleted_at'-kolom 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom gebruiken AI-coderingstools standaard harde verwijderingen in plaats van zachte verwijderingen?",
+      "name": "Wat is het verschil tussen Hard Delete en Soft Delete in een database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat een harde verwijdering de eenvoudigste, meest letterlijke interpretatie is van een 'verwijderings'-verzoek, en het correct bouwen van een zachte verwijdering aanvullende schemawijzigingen en query-updates vereist die niet worden geïmpliceerd door een eenvoudige prompt."
+        "text": "Hard Delete voert `DELETE FROM table` uit en wist data permanent. Soft Delete zet een `deleted_at` timestamp, waardoor data bewaard blijft maar verborgen wordt."
       }
     },
     {
       "@type": "Question",
-      "name": "Welke tabellen in mijn app moeten daadwerkelijk voorlopig worden verwijderd?",
+      "name": "Waarom kiezen Lovable en Cursor standaard voor Hard Delete?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alles met trapsgewijze relaties, alles wat een gebruiker per ongeluk via de gebruikersinterface kan verwijderen, en alles met bewaar- of auditvereisten: eenvoudig opnieuw te maken records met een lage inzet zijn minder belangrijk."
+        "text": "Omdat Hard Delete de meest eenvoudige SQL-code is om te genereren. Soft Delete vereist extra velden, query-filters en unieke index aanpassingen."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan zacht verwijderen achteraf worden ingebouwd in een app die al gebruikmaakt van harde verwijdering?",
+      "name": "Wat gebeurt er met unieke velden (zoals e-mail) bij Soft Delete?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, hoewel hiervoor de vlagkolom moet worden toegevoegd en elke bestaande query aan die tabel moet worden gecontroleerd om er zeker van te zijn dat verwijderde rijen consequent worden uitgefilterd overal waar ze worden gelezen."
+        "text": "Een standaard UNIQUE constraint blokkeert een nieuw account met hetzelfde e-mailadres. Je hebt een partiële index nodig (`WHERE deleted_at IS NULL`)."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe wordt de technische achtergrond van Manifera geïnformeerd over dit soort beslissingen over datamodellering?",
+      "name": "Welke tabellen moeten verplicht Soft Delete gebruiken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manifera's ruim 11 jaar ervaring op het gebied van productie-engineering in meer dan 160 projecten betekent dat beslissingen over datamodellen, zoals het verwijderen van semantiek, worden geëvalueerd aan de hand van reële operationele risico's, en niet alleen worden geïmplementeerd als de eerste werkende versie."
+        "text": "Tabellen met gekoppelde relaties (zoals Projecten -> Taken, Gebruikers -> Bestellingen) en alle data die een gebruiker per ongeluk via de UI kan wissen."
       }
     },
     {
       "@type": "Question",
-      "name": "Vertraagt ​​het toevoegen van zacht verwijderen mijn databasequery's?",
+      "name": "Wat kost het migreren naar Soft Delete bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Over het algemeen niet zinvol: filteren op een geïndexeerde 'deleted_at'-kolom voegt verwaarloosbare overhead toe in vergelijking met de kosten van een onherstelbare, accidentele verwijdering."
+        "text": "Het migreren van je database-schema naar Soft Delete inclusief herstel-adminpaneel kost gemiddeld €750 en duurt 4 werkdagen."
       }
     }
   ]

@@ -1,17 +1,18 @@
 ---
-Titel: "Overdrachtsdocumentatie: wat uw eerste technische medewerker nodig heeft van uw AI-gebouwde codebase"
+Titel: "Overdrachtsdocumentatie: Wat uw eerste technische werknemer nodig heeft uit uw met AI gebouwde codebase"
 Trefwoorden: ai code tool, ai native, handover documentation, first developer hire, ai codebase onboarding
 Koperfase: Beslissing
-Doelgroep: AI-Native-oprichter
+Doelgroep: AI-Native oprichter
 ---
-# Overdrachtsdocumentatie: wat uw eerste technische medewerker nodig heeft van uw AI-gebouwde codebase
+
+# Overdrachtsdocumentatie: Wat uw eerste technische werknemer nodig heeft uit uw met AI gebouwde codebase
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Overdrachtsdocumentatie: wat uw eerste technische medewerker nodig heeft van uw AI-gebouwde codebase",
-  "description": "De automatisch gegenereerde README van een AI-tool is geen onboardingdocumentatie. Dit is de reden waarom uw eerste ontwikkelaar die u inhuurt weken kwijt kan zijn aan het ori\u00ebnteren in een door AI gebouwde codebase, en wat er eigenlijk moet worden opgeschreven voordat die persoon begint.",
+  "headline": "Overdrachtsdocumentatie: Wat uw eerste technische werknemer nodig heeft uit uw met AI gebouwde codebase",
+  "description": "De automatisch gegenereerde README van een AI-tool is geen inwerkdocumentatie.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,77 +31,76 @@ Doelgroep: AI-Native-oprichter
 }
 </script>
 
-Het inhuren van uw eerste ontwikkelaar zou u snelheid moeten kopen. Voor veel AI-native oprichters koopt het twee weken van die nieuwe aanwinst die in stilte code leest, gokt naar de intentie en reverse-engineering van beslissingen die nooit ergens zijn opgeschreven - omdat de enige documentatie die bestaat de README is, de AI-tool die op de eerste dag automatisch wordt gegenereerd, en dat bestand beschrijft hoe de mappen heten, niet waarom iets werkt zoals het werkt.
+Het aannemen van uw eerste ontwikkelaar verondersteld wordt u snelheid te kopen. Voor veel AI-native oprichters koopt het twee weken waarin die nieuwe werknemer stilletjes code leest, gokt naar de intentie, en beslissingen probeert te herleiden die nergens zijn opgeschreven – omdat de enige documentatie die bestaat de README is die de AI-tool op dag één automatisch heeft gegenereerd. Dat bestand beschrijft hoe de mappen heten, en niet waarom iets werkt op de manier waarop het werkt.
 
-## Waarom de eigen documenten van de AI-tool niet meetellen als overdrachtsmateriaal
+## Waarom de eigen documentatie van de AI-tool niet telt als overdrachtsmateriaal
 
-Tools als Bolt, Lovable en Cursor genereren uit beleefdheid een README, en dat is echt nuttig vanwege de vijf minuten die nodig zijn om het project lokaal uit te voeren. Het vermeldt afhankelijkheden, misschien een overzicht van de projectstructuur, soms een beschrijving van elke map in één regel. Wat het niet bevat – omdat de AI-tool dit niet kan weten – is *waarom* het product is gebouwd zoals het is. Waarom loopt de factureringslogica via twee verschillende services in plaats van één? Waarom is er een schijnbaar overbodige tabel in de database? Waarom probeert de ene API-integratie het drie keer opnieuw, terwijl de andere het helemaal niet probeert? Deze beslissingen stapelen zich op in de loop van weken of maanden van aandringen, herhalen en patchen, en deze redenering wordt nergens vastgelegd, tenzij iemand het opzettelijk opschrijft.
+Tools zoals Bolt, Lovable en Cursor genereren een README als beleefdheid, en het is oprecht nuttig voor de vijf minuten die het kost om het project lokaal te draaien. Het vermeldt afhankelijkheden, misschien een overzicht van de projectstructuur, soms een beschrijving van één regel voor elke map. Wat het niet bevat – omdat de AI-tool geen manier heeft om dit te weten – is *waarom* het product is gebouwd op de manier waarop het is gebouwd. Waarom loopt de facturatielogica via twee verschillende diensten in plaats van één? Waarom is er een schijnbaar overtollige tabel in de database? Waarom probeert de ene API-integratie drie keer opnieuw terwijl een andere überhaupt niet opnieuw probeert? Deze beslissingen stapelen zich op over weken of maanden van prompten, itereren en patchen. Niets van die redenering wordt ergens vastgelegd tenzij iemand het bewust opschrijft.
 
-Een nieuwe ontwikkelaar die zich aansluit bij een door AI gebouwde codebase leert niet alleen een stapel; ze proberen een beslissingsgeschiedenis te reconstrueren die volledig in het hoofd van de oprichter leefde en in een lang geleden door de chatgeschiedenis met een AI-assistent. Dat is een fundamenteel moeilijkere en langzamere taak dan het lezen van onbekende maar goed gedocumenteerde code, omdat er geen spoor is dat je kunt volgen. Ze moeten hun weg naar begrip testen, wat langzaam is, en erger nog, ze moeten raden welke delen van de code dragende bedrijfslogica zijn en welke delen door AI gegenereerde steigers zijn die niemand heeft opgeruimd.
+Een nieuwe ontwikkelaar die zich aansluit bij een met AI gebouwde codebase leert niet alleen een technologie-stack – hij probeert een beslissingsgeschiedenis te reconstrueren die volledig in het hoofd van de oprichter leefde en in een lang geleden voorbijgescrolde chatgeschiedenis met een AI-assistent. Dat is een fundamenteel moeilijkere en tragere taak dan het lezen van onbekende maar goed gedocumenteerde code, omdat er geen spoor is om te volgen. Ze moeten zich een weg testen naar begrip, wat traag is. Erg nog: ze moeten gokken welke delen van de code dragende bedrijfslogica zijn versus welke delen overgebleven met AI gegenereerde steigers zijn die niemand heeft opgeruimd.
 
-## Wat echte overdrachtsdocumentatie eigenlijk inhoudt
+## Wat echte overdrachtsdocumentatie daadwerkelijk bevat
 
-Effectieve overdrachtsdocumentatie voor een door AI gebouwd product hoeft niet uitputtend te zijn; het moet de vragen beantwoorden die een nieuwe ontwikkelaar anders zal moeten reverse-engineeren. Dat omvat: een duidelijke kaart van de belangrijkste systemen en hoe ze verbinding maken (geen maplijst, een uitleg van de daadwerkelijke architectuur), een lijst van alle diensten en API's van derden waarvan het product afhankelijk is en waarom deze zijn gekozen, bekende oplossingen of opzettelijke snelkoppelingen die op bugs lijken maar dat niet zijn, en - net zo belangrijk - een lijst met de delen van de codebase die *waarschijnlijk* echte bugs of technische problemen zullen bevatten, zodat een nieuwe aanwinst geen tijd verspilt met het vertrouwen op code die nooit volledig is beoordeeld. LaunchStudio wordt mogelijk gemaakt door Manifera, een softwareontwikkelingsbedrijf met meer dan elf jaar ervaring in productie-engineering, en het produceren van precies dit soort overdrachtsdocumentatie – het lezen van een onbekende, door AI gegenereerde codebase en het opschrijven van wat een nieuwe ingenieur eigenlijk moet weten – is een taak die ons team, gevestigd vanuit het kantoor van Manifera in Singapore, routinematig uitvoert voor oprichters die zich voorbereiden op hun eerste aanwerving.
+Effectieve overdrachtsdocumentatie voor een met AI gebouwd product hoeft niet uitputtend te zijn – het moet de vragen beantwoorden die een nieuwe ontwikkelaar anders zou moeten herleiden. Dat omvat: een kaart in gewone taal van de belangrijkste systemen en hoe ze verbinden (geen mappenlijst, een uitleg van de daadwerkelijke architectuur), een lijst van elke dienst van derden en API waar het product van afhangt en waarom elke dienst werd gekozen, bekende tijdelijke oplossingen of opzettelijke afsnijdingen die eruitzien als bugs maar het niet zijn, en – net zo belangrijk – een lijst van de delen van de codebase die *wel* waarschijnlijk echte bugs of technische schuld bevatten, zodat een nieuwe werknemer geen tijd verspilt aan het vertrouwen van code die nooit volledig werd beoordeeld. LaunchStudio wordt aangedreven door Manifera, een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring in productie-engineering. Het produceren van exact dit soort overdrachtsdocumentatie – het lezen van een onbekende met AI gegenereerde codebase en het opschrijven van wat een nieuwe ingenieur daadwerkelijk moet weten – is een taak die ons team, gevestigd in Manifera's hub in Singapore, routinematig uitvoert voor oprichters die zich voorbereiden om hun eerste werknemer aan te nemen.
 
-## Van een ramp-up van twee weken een tweedaagse maken
+## Een inwerktijd van twee weken veranderen in een van twee dagen
 
-De meest efficiënte manier om deze documentatie te produceren is niet door de oprichter het uit het geheugen te laten schrijven; oprichters kunnen hun eigen redenering maanden later vaak ook niet volledig reconstrueren, vooral niet als het gaat om beslissingen die de AI-tool semi-autonoom heeft genomen. Het is effectiever om iemand de codebase vers te laten lezen, op dezelfde manier als een nieuwe medewerker dat zou doen, en te laten documenteren wat hij onderweg tegenkomt: onduidelijke logica signaleren, de gegevensstroom tussen systemen in kaart brengen en alles noteren dat er fragiel uitziet. Die output wordt het onboardingdocument, geschreven vanuit het perspectief van iemand die de code voor de eerste keer tegenkomt, en dat is precies het perspectief dat een nieuwe medewerker nodig heeft.
+De meest efficiënte manier om deze documentatie te produceren is niet om de oprichter het uit zijn geheugen te laten schrijven – oprichters kunnen hun eigen redenering maanden later vaak ook niet meer volledig reconstrueren, in het bijzonder voor beslissingen die de AI-tool semi-autonoom heeft gemaakt. Het is effectiever om iemand de codebase vers te laten lezen, op de manier waarop een nieuwe werknemer dat zou doen, en te documenteren wat hij onderweg vindt: het markeren van onduidelijke logica, het in kaart brengen van gegevensstromen tussen systemen, en het noteren van alles wat er kwetsbaar uitziet. Die uitvoer wordt het inwerkdocument, geschreven vanuit het perspectief van iemand die de code voor het eerst tegenkomt – wat exact het perspectief is dat een nieuwe werknemer nodig heeft.
 
-Als u op het punt staat uw eerste engineer aan te trekken en de codebase gedocumenteerd wilt hebben voordat ze beginnen, kunt u op onze pagina [hoe het werkt](https://launchstudio.eu/en/#process) zien hoe LaunchStudio dit soort betrokkenheid aanpakt. Manifera's [portfolio](https://www.manifera.com/portfolio/) toont de reeks codebases die onze engineers hebben ontwikkeld en gedocumenteerd, van producten in een vroeg stadium tot gevestigde bedrijfssystemen.
+Als u op het punt staat uw eerste ingenieur aan te nemen en u wilt de codebase gedocumenteerd hebben voordat hij begint, schetst onze [hoe het werkt](https://launchstudio.eu/en/#process)-pagina hoe LaunchStudio dit soort traject omvangt. Manifera's [portfolio](https://www.manifera.com/portfolio/) toont het bereik van codebases dat onze ingenieurs hebben geonboard en gedocumenteerd, van producten in een vroeg stadium tot gevestigde enterprise-systemen.
 
-## Documentatie die eenmaal is geschreven begint te verouderen zodra deze af is
+## Documentatie die één keer is geschreven begint te verouderen op het moment dat deze klaar is
 
-Overdrachtsdocumentatie is essentieel bij de eerste uitbreiding van het team. Zonder een proces om de documentatie bij te werken wanneer de code verandert, wordt het overdrachtsdocument al snel een bron van misleidende informatie.
+Het produceren van de overdrachtsdocumentatie lost het onmiddellijke probleem op, maar het creëert een stillere: op het moment dat een oprichter of een nieuwe werknemer weer begint te prompten met een AI-tool om de volgende functie te bouwen, begint de architectuur die de documentatie beschrijft af te wijken van de architectuur die daadwerkelijk bestaat. Niets markeert die afwijking naarmate het gebeurt. Het document leest nog steeds als gezaghebbend, de nieuwe werknemer vertrouwt het nog steeds, en zes weken later is het zelfverzekerd verkeerd over welke wachtrij wat afhandelt of waarom een specifieke tabel bestaat. Dat is aantoonbaar erger dan helemaal geen documentatie hebben, omdat een nieuwe werknemer verkeerde informatie langer vertrouwt dan hij een eerlijke kloof zou tolereren.
 
-Koppel documentatie-updates aan de pull request checklist:
+De herstelling is niet het periodiek herschrijven van het gehele document – dat is exact het soort onglamoureus onderhoud dat voor onbepaalde tijd wordt uitgesteld. Het is het toevoegen van een korte beslissingslogboek-invoer aan elke wijziging die de bestaande documentatie verkeerd zou maken, geschreven op het moment dat de wijziging wordt gemaakt, wanneer de redenering nog vers in het geheugen ligt:
 
-```markdown
-## PR Checklist
-- [ ] Code is getest.
-- [ ] Interne overdrachtsdocumentatie / README is bijgewerkt indien de architectuur is gewijzigd.
 ```
+## 2026-08-04 — Facturatiewachtrij gesplitst van gebruiks-meetwachtrij
+Reden: een meetfout liet facturatietaken tijdelijk vastlopen; het isoleren
+ervan betekent dat een meetstoring een betaling niet meer kan vertragen.
+Bestanden aangeraakt: /server/queues/billing.ts, /server/queues/metering.ts
+Documentatiegedeelte bij te werken: Architectuurkaart > Facturatiesubsysteem
+```
+
+Een handvol van deze invoeren per maand is een triviale gewoonte om op te bouwen en houdt de architectuurkaart eerlijk zonder ooit een toegewijde herschrijfstap te vereisen.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: twee weken om een ​​codebase te begrijpen die niemand heeft uitgelegd
+### Een AI-native oprichter in actie: Twee weken om een codebase te begrijpen die niemand heeft uitgelegd
 
-Rick Nieuwenhuis, oprichter uit Winschoten, bouwde KlantSignaal, een SaaS met klantfeedback, met behulp van Bolt. Na een jaar solo-iteratie huurde hij zijn eerste ontwikkelaar in om hem te helpen sneller te gaan. De enige beschikbare documentatie was Bolt's automatisch gegenereerde README, waarin de mapstructuur werd beschreven en de geïnstalleerde afhankelijkheden werden opgesomd.
+Rick Nieuwenhuis, een oprichter in Winschoten, bouwde KlantSignaal – een SaaS voor klantfeedback – met behulp van Bolt. Na een jaar van solo-iteratie nam hij zijn eerste ontwikkelaar aan om hem te helpen sneller te bewegen. De enige beschikbare documentatie was Bolt's automatisch gegenereerde README, die de mappenstructuur beschreef en geïnstalleerde afhankelijkheden vermeldde.
 
-De nieuwe medewerker was twee volle weken bezig met het uitzoeken hoe de codebase was gestructureerd voordat hij een enkele regel nieuwe featurecode schreef. Fundamentele vragen konden nergens worden beantwoord: waarom feedbackinzendingen via twee afzonderlijke wachtrijen werden verwerkt, waarom bij één integratie aangepaste logica voor opnieuw proberen was geïnstalleerd en bij een bijna identieke niet, en welke delen van de authenticatiestroom opzettelijk waren en welke delen van de authenticatiestroom een ​​overblijfsel waren van een eerdere, verlaten aanpak. Rick kon een aantal hiervan uit zijn hoofd beantwoorden, maar niet betrouwbaar en niet snel genoeg om zijn nieuwe medewerker productief te houden.
+De nieuwe werknemer besteedde twee volledige weken simpelweg aan het uitzoeken hoe de codebase was gestructureerd voordat hij een enkele regel nieuwe functiecode schreef. Basisvragen hadden nergens antwoorden: waarom feedback-indieningen werden verwerkt via twee afzonderlijke wachtrijen, waarom op de ene integratie aangepaste herhaallogica was vastgeplakt terwijl een bijna identieke dat niet had, en welke delen van de authenticatiestroom opzettelijk waren versus overgebleven uit een eerdere, verlaten benadering. Rick kon sommige hiervan uit zijn geheugen beantwoorden, maar niet betrouwbaar, en niet snel genoeg om zijn nieuwe werknemer productief te houden.
 
-LaunchStudio werd ingeschakeld om de codebase van KlantSignaal van buitenaf te lezen en vanaf het begin onboardingdocumentatie te produceren: een architectuurkaart die laat zien hoe de feedbackopname-, verwerkings- en meldingssystemen feitelijk met elkaar verbonden zijn, een lijst van elke integratie van derden en de redenering achter elke integratie (deels gereconstrueerd uit Rick's geheugen en deels uit code-archeologie), en een gemarkeerde lijst van de fragiele gebieden – inclusief die dubbele logica voor opnieuw proberen – die aandacht nodig hadden voordat er verder op kon worden voortgebouwd.
+LaunchStudio werd ingeschakeld om KlantSignaal's codebase van buitenaf door te lezen en vanaf nul inwerkdocumentatie te produceren: een architectuurkaart die toont hoe de feedback-inname, verwerking en notificatiesystemen daadwerkelijk verbonden waren, een lijst van elke integratie van derden en de redenering achter elk daarvan, en een gemarkeerde lijst van de kwetsbare gebieden die aandacht nodig hadden voordat er verder op werd gebouwd.
 
-**Resultaat:** Rick's volgende aanstelling nam in minder dan drie dagen toe met behulp van de documentatie die LaunchStudio produceerde, in plaats van de twee weken die zijn eerste aanstelling nodig had en er niets was om mee te werken.
+**Resultaat:** Rick's volgende werknemer werkte binnen drie dagen in met behulp van de documentatie die LaunchStudio produceerde, in plaats van de twee weken die zijn eerste werknemer nodig had met niets om vanuit te werken.
 
-> *"Mijn eerste aanwerving moest eigenlijk archeoloog worden voordat ze ontwikkelaar konden worden. Dat wil ik nooit meer iemand aandoen."*
-> — **Rick Nieuwenhuis, oprichter, KlantSignaal (Winschoten)**
+> *"Mijn eerste werknemer moest in feite een archeoloog worden voordat hij een ontwikkelaar kon worden. Ik wil iemand daar nooit meer doorheen laten gaan."*
+> — **Rick Nieuwenhuis, Oprichter, KlantSignaal (Winschoten)**
 
-**Kosten en tijdlijn:** € 1.050 (volledige codebase doorlezen en overdrachtsdocumentatie, inclusief architectuurkaart en markeren van technische schulden) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.050 (volledige codebase-doorlezing en overdrachtsdocumentatie, inclusief architectuurkaart en het markeren van technische schuld) — voltooid in 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Moet ik de overdrachtsdocumentatie zelf schrijven, of moet ik dit door iemand anders laten doen?
+### Zou ik overdrachtsdocumentatie zelf moeten schrijven, of moet ik het door iemand anders laten doen?
 
-Iemand die de codebase nieuw leest, zoals een nieuwe medewerker dat zou doen, produceert doorgaans nuttiger documentatie dan een oprichter die uit zijn hoofd schrijft. Als je maandenlang in de code hebt geleefd, vergeet je gemakkelijk welke beslissingen eigenlijk moeten worden uitgelegd.
+Iemand die de codebase vers leest, op de manier waarop een nieuwe werknemer dat zou doen, produceert doorgaans nuttigere documentatie dan een oprichter die uit zijn geheugen schrijft – het is gemakkelijk te vergeten welke beslissingen daadwerkelijk uitleg nodig hebben zodra u maandenlang in de code heeft geleefd.
 
-### Wat is het verschil tussen dit en alleen het opruimen van codeopmerkingen?
+### Wat is het verschil tussen dit en simpelweg het opruimen van code-opmerkingen?
 
-Codecommentaar legt uit wat een specifieke regel doet; overdrachtsdocumentatie legt uit waarom het systeem als geheel is gestructureerd zoals het is en welke delen veilig zijn om op voort te bouwen in plaats van fragiel – een niveau hoger dan regel voor regel commentaar.
+Code-opmerkingen leggen uit wat een specifieke regel doet; overdrachtsdocumentatie legt uit waarom het systeem als geheel gestructureerd is op de manier waarop het is en welke onderdelen veilig zijn om op te bouwen versus kwetsbaar – een niveau hoger dan regel-voor-regel commentaar.
 
-### Hoe gaat het team van Manifera te werk bij het documenteren van een onbekende, door AI gebouwde codebase?
+### Vervangt overdrachtsdocumentatie de noodzaak van een code-audit?
 
-De technici van Manifera, waaronder het team uit Singapore, lezen de code op dezelfde manier als een nieuwe medewerker en documenteren de bevindingen terwijl ze bezig zijn - een proces dat wordt vormgegeven door het onboarden op meer dan 160 verschillende codebases bij zowel grote ondernemingen als beginnende klanten.
+Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert of het veilig, schaalbaar en productie-gereed is. Ze zijn aanvullend op elkaar.
 
-### Is dit alleen nuttig vlak voor de aanwerving, of moet ik dit eerder doen?
+### Hoe voorkom ik dat overdrachtsdocumentatie verouderd raakt?
 
-Eerder is beter als je het kunt beheren; documentatie is het gemakkelijkst te produceren als de redenering achter beslissingen nog vers is, en het wordt echt nuttig op het moment dat je iemand anders erbij haalt, inclusief een aannemer of een mede-oprichter.
-
-### Vervangt de overdrachtsdocumentatie de noodzaak van een code-audit?
-
-Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert of het veilig, schaalbaar en productieklaar is. Ze zijn complementair en veel oprichters hebben er baat bij om beide tegelijkertijd te doen.
-
+Voeg een korte beslissingslogboek-invoer toe aan elke wijziging die de bestaande documentatie onjuist zou maken, geschreven op het moment dat de wijziging plaatsvindt – een gewoonte die aanzienlijk goedkoper te onderhouden is dan een periodieke volledige herschrijfbeurt.
 
 <script type="application/ld+json">
 {
@@ -109,42 +109,42 @@ Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert o
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Moet ik de overdrachtsdocumentatie zelf schrijven, of moet ik dit door iemand anders laten doen?",
+      "name": "Waarom is de README van Cursor of Bolt geen echte overdrachtsdocumentatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Iemand die de codebase nieuw leest, zoals een nieuwe medewerker dat zou doen, produceert doorgaans nuttiger documentatie dan een oprichter die uit zijn hoofd schrijft. Als je maandenlang in de code hebt geleefd, vergeet je gemakkelijk welke beslissingen eigenlijk moeten worden uitgelegd."
+        "text": "Omdat AI-gegenereerde READMEs alleen mappen en npm-installatie uitleggen, maar NIET de architectonische keuzes, werkbonnen of verborgen technische schuld."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het verschil tussen dit en alleen het opruimen van codeopmerkingen?",
+      "name": "Hoe lang duurt het inwerken van een 1e developer op een niet-gedocumenteerde AI-codebase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Codecommentaar legt uit wat een specifieke regel doet; overdrachtsdocumentatie legt uit waarom het systeem als geheel is gestructureerd zoals het is en welke delen veilig zijn om op voort te bouwen in plaats van fragiel – een niveau hoger dan regel voor regel commentaar."
+        "text": "Gemiddeld 2 tot 3 weken 'archeologie' en gokken. Met een professionele architectuurkaart en beslissingslogboek wordt dit teruggebracht naar 2-3 dagen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe gaat het team van Manifera te werk bij het documenteren van een onbekende, door AI gebouwde codebase?",
+      "name": "Wat moet er minimaal in AI-overdrachtsdocumentatie staan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De technici van Manifera, waaronder het team uit Singapore, lezen de code op dezelfde manier als een nieuwe medewerker en documenteren de bevindingen terwijl ze bezig zijn - een proces dat wordt vormgegeven door het onboarden op meer dan 160 verschillende codebases bij zowel grote ondernemingen als beginnende klanten."
+        "text": "1. Systeem-architectuurkaart 2. API & 3rd party afhankelijkheden 3. Bekende hacks & tijdelijke afsnijdingen 4. Database-relatie toelichting."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit alleen nuttig vlak voor de aanwerving, of moet ik dit eerder doen?",
+      "name": "Hoe voorkom je dat documentatie direct veroudert bij nieuwe AI-prompts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eerder is beter als je het kunt beheren; documentatie is het gemakkelijkst te produceren als de redenering achter beslissingen nog vers is, en het wordt echt nuttig op het moment dat je iemand anders erbij haalt, inclusief een aannemer of een mede-oprichter."
+        "text": "Door een lichtgewicht `DECISION_LOG.md` bij te houden waarin bij grote structuurwijzigingen in 3 regels de reden en gewijzigde bestanden worden genoteerd."
       }
     },
     {
       "@type": "Question",
-      "name": "Vervangt de overdrachtsdocumentatie de noodzaak van een code-audit?",
+      "name": "Wat kost het opstellen van overdrachtsdocumentatie bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee – documentatie legt uit hoe de code werkt en waarom; een audit evalueert of het veilig, schaalbaar en productieklaar is. Ze zijn complementair en veel oprichters hebben er baat bij om beide tegelijkertijd te doen."
+        "text": "Een volledige codebase doorlezing en inwerk-overdrachtsdocumentatie kost gemiddeld €1.050 en duurt 6 werkdagen."
       }
     }
   ]

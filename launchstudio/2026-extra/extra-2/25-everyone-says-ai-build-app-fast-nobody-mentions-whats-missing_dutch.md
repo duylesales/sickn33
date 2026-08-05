@@ -1,73 +1,158 @@
 ---
-Titel: "Iedereen Zegt Dat Je Met AI Snel Een App Bouwt. Niemand Vermeldt Wat Ontbreekt"
+Titel: "Iedereen zegt dat AI snel apps bouwt. Niemand vermeldt wat er ontbreekt"
 Trefwoorden: ai build app, build ai app, build app ai, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo Founder / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
 
-# Iedereen Zegt Dat Je Met AI Snel Een App Bouwt. Niemand Vermeldt Wat Ontbreekt
+# Iedereen zegt dat AI snel apps bouwt. Niemand vermeldt wat er ontbreekt
 
-Iedereen zegt dat je nu snel een app kunt bouwen met AI. Niemand vermeldt dat "snel" en "correct onder gelijktijdige belasting" twee compleet verschillende dingen testen, en dat het gat ertussen de neiging heeft aan het licht te komen in precies het scenario dat geen enkele solo founder makkelijk alleen kan simuleren: twee verschillende mensen die proberen precies hetzelfde te doen op precies hetzelfde moment.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Iedereen zegt dat AI snel apps bouwt. Niemand vermeldt wat er ontbreekt",
+  "description": "Iedereen zegt dat AI snel een app kan bouwen. Niemand vermeldt de concurrency edge cases die pas verschijnen wanneer twee mensen tegelijkertijd hetzelfde proberen te boeken.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-26",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/everyone-says-ai-build-app-fast-nobody-mentions-whats-missing"
+  }
+}
+</script>
 
-## Waarom Gelijktijdigheidsbugs Structureel Onzichtbaar Zijn Voor Solo Tests
+Iedereen zegt dat u tegenwoordig snel een app kunt bouwen met AI. Niemand vermeldt dat "snel" en "correct onder gelijktijdige belasting (concurrency)" twee compleet verschillende dingen testen. En dat de kloof daartussen de neiging heeft op te duiken in exact het scenario dat geen enkele solo-oprichter gemakkelijk alleen kan simuleren: twee verschillende mensen die exact hetzelfde proberen te doen op exact hetzelfde moment.
 
-Een founder die een boekingsfunctie test doet dit sequentieel, één actie tegelijk, per definitie — er is maar één persoon die test, dus er is geen manier voor twee gelijktijdige verzoeken om natuurlijk te ontstaan. Gelijktijdigheidsbugs manifesteren zich, bijna per hun aard, alleen wanneer twee dingen dicht genoeg bij elkaar in tijd gebeuren dat de afhandeling van "wie komt daar eerst aan" door het systeem uitgeoefend wordt, een scenario dat solo tests structureel niet kunnen produceren.
+## Waarom concurrency-bugs structureel onzichtbaar zijn voor solo-testen
 
-## Hoe Een Race Condition In Een Boekingssysteem Er Daadwerkelijk Uitziet
+Een oprichter die een boekingsfunctie test doet dit opeenvolgend, één actie tegelijk, per definitie. Er is immers maar één persoon die test, dus er is geen manier waarop twee gelijktijdige verzoeken op een natuurlijke manier plaatsvinden. Concurrency-bugs manifesteren zich bijna door hun aard alleen wanneer twee dingen dicht genoeg bij elkaar in de tijd gebeuren dat de afhandeling van het systeem van "wie komt er eerst" wordt uitgeoefend. Een scenario dat solo-testen structureel niet kan produceren.
 
-Een typische boekingsflow controleert of een bureau of ruimte beschikbaar is, en als dat zo is, markeert het als geboekt. Als twee verzoeken voor dezelfde resource dicht genoeg bij elkaar aankomen, kunnen beide de "is het beschikbaar"-controle passeren voordat een van beide de "markeer als geboekt"-stap voltooit — resulterend in beide verzoeken die slagen, en dezelfde fysieke resource dubbel geboekt aan twee verschillende klanten die elk een geldige bevestiging ontvingen.
+Zelfs een oprichter die opzettelijk probeert "randgevallen te testen" door snel te klikken of twee browsertabbladen te openen, reproduceert zelden het daadwerkelijke faalvenster, dat vaak wordt gemeten in milliseconden. Dat is een tijdsverschil dat menselijke reactietijd simpelweg niet betrouwbaar opzettelijk kan raken. Dit is exact waarom deze categorie van bugs de neiging heeft om uitgebreid, goedbedoeld handmatig testen compleet intact te overleven.
 
-## Waarom Deze Specifieke Bug Oprecht Zeldzaam Is In Laag-Volume-Tests
+## Hoe een race condition in een boekingssysteem er daadwerkelijk uitziet
 
-Bij laag volume — een founder en een handjevol vroege testers die de app op verschillende momenten gebruiken — zijn de kansen dat twee verzoeken voor dezelfde specifieke resource dicht genoeg bij elkaar terechtkomen om precies deze race condition te triggeren laag genoeg om weken lang onopgemerkt te blijven, puur vanwege de lage waarschijnlijkheid van de specifieke vereiste timing, niet omdat de onderliggende logica daadwerkelijk veilig is.
+Een typische boekingsstroom controleert of een bureau of kamer beschikbaar is, en zo ja, markeert het als geboekt. Als twee verzoeken voor dezelfde bron dicht genoeg bij elkaar aankomen, kunnen beide voorbij de controle "is het beschikbaar" komen voordat een van beide de stap "markeer het als geboekt" voltooit. Dit resulteert erin dat beide verzoeken slagen, en dezelfde fysieke bron dubbel geboekt wordt voor twee verschillende klanten die elk een geldige bevestiging hebben ontvangen.
 
-## Waarom De Kansen Compleet Veranderen Zodra Echte Vraag Arriveert
+## Waarom deze specifieke bug oprecht zeldzaam is bij testen met een laag volume
 
-Zodra een coworking-ruimte, of elk resource-boekingsproduct, genoeg gelijktijdige vraag heeft voor populaire tijdsloten — precies het scenario waar een bedrijf daadwerkelijk in wil slagen — stijgen de kansen dat twee verzoeken dicht bij elkaar terechtkomen scherp, precies omdat populaire sloten per definitie gelijktijdige interesse aantrekken. De bug wordt niet geleidelijk waarschijnlijker met schaal; het wordt in wezen gegarandeerd om uiteindelijk voor te komen.
+Bij een laag volume – een oprichter en een handvol vroege testers die de app op verschillende tijdstippen gebruiken – zijn de kansen dat twee verzoeken voor dezelfde specifieke bron dicht genoeg bij elkaar landen om exact deze race condition te triggeren zo laag dat het wekenlang onopgemerkt kan blijven. Dit komt puur door de lage waarschijnlijkheid van de vereiste specifieke timing, en niet omdat de onderliggende logica daadwerkelijk veilig is.
 
-## Wat Dit Fixen Technisch Vereist
+Dit is wat race conditions oprecht anders maakt dan de meeste andere bugs waar een oprichter op leert te letten: een tikfout in een formuliervalidatiebericht is op dag één en dag honderd even zichtbaar, maar een race condition kan elke afzonderlijke testronde tijdens een langzame, zorgvuldige bèta doorstaan en er nog steeds zitten, compleet ongewijzigd, wachtend op het exacte verkeerspatroon dat het uiteindelijk blootlegt.
 
-Een correcte fix gebruikt een database-niveau-vergrendelings- of atomische-transactiemechanisme om ervoor te zorgen dat de "controleer beschikbaarheid, boek dan"-sequentie gebeurt als één enkele, ononderbreekbare eenheid — zodat een tweede gelijktijdig verzoek voor dezelfde resource het oprecht als onbeschikbaar ziet in plaats van voorbij dezelfde verouderde controle te racen. [LaunchStudio](https://launchstudio.eu/en/) implementeert precies dit soort gelijktijdigheidsveilige boekingslogica als onderdeel van zijn productiegereedheidswerk, gesteund door Manifera's 11+ jaar ervaring met het bouwen van boekings- en voorraadsystemen voor productieklanten.
+## Waarom de kansen compleet veranderen zodra er echte vraag arriveert
 
-Manifera's gelijktijdigheids- en databasevergrendelingsengineering wordt geleverd via het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, met klantscopinggesprekken afgehandeld vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Zodra een coworking space, of een willekeurig product voor het boeken van middelen, genoeg gelijktijdige vraag heeft voor populaire tijdslots – het exacte scenario waar een bedrijf daadwerkelijk in wil slagen – stijgen de kansen dat twee verzoeken dicht bij elkaar landen scherp. Dit komt omdat populaire slots per definitie gelijktijdige interesse aantrekken. De bug wordt niet op een geleidelijke manier waarschijnlijker bij schaalvergroting; het wordt in feite gegarandeerd dat het uiteindelijk zal optreden.
 
-[Laat jouw betalingsflow testen tegen realistische faalcondities, niet alleen het happy path](https://launchstudio.eu/en/#calculator).
+## Wat het herstellen hiervan vereist, technisch gezien
+
+Een correcte herstelling gebruikt een vergrendelings- of atomaire transactiemechanisme op databaseniveau om ervoor te zorgen dat de volgorde "controleer beschikbaarheid, en boek vervolgens" plaatsvindt als een enkele, ononderbreekbare eenheid. Zodat een tweede gelijktijdig verzoek voor dezelfde bron het oprecht als onbeschikbaar ziet in plaats van voorbij dezelfde verouderde controle te racen. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort concurrency-veilige boekingslogica als onderdeel van haar werkzaamheden voor productiegereedheid, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van boekings- en voorraadsystemen voor productieklanten.
+
+Manifera's engineering voor concurrency en databasevergrendeling wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Krijg uw betalingsstroom getest tegen echte faalomstandigheden](https://launchstudio.eu/en/#calculator).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: het bureau dubbel geboekt door twee verschillende mensen
+### Een AI-native oprichter in actie: Het bureau dat twee keer werd geboekt door twee verschillende mensen
 
-Mees, een voormalig facilitair manager die founder werd in Brugge, bouwde WerkPlek, een AI-geassisteerd coworking-ruimte-boekingstool gebouwd met Cursor, waarmee leden specifieke bureaus en vergaderruimtes konden reserveren voor specifieke tijdsloten.
+Mees, een voormalig facility manager die oprichter werd in Brugge, bouwde WerkPlek, een AI-ondersteunde tool voor het boeken van coworking spaces gebouwd met Cursor, waarmee leden specifieke bureaus en vergaderruimtes kunnen reserveren voor specifieke tijdslots.
 
-Tijdens een drukke week met verschillende populaire vergaderruimtes de meeste dagen volledig geboekt, boekten twee leden apart dezelfde ruimte voor dezelfde tijdslot, elk een geldige bevestigingsmail ontvangend, en beiden verschenen gelijktijdig op een heel ongemakkelijke dubbel-geboekte vergadering. LaunchStudio's review bevestigde dat de boekingslogica beschikbaarheid controleerde en een boeking bevestigde als twee aparte, niet-atomische stappen, precies het patroon dat precies deze race condition toestaat onder gelijktijdige vraag.
+Tijdens een drukke week waarin verschillende populaire vergaderruimtes de meeste dagen volledig volgeboekt waren, boekten twee leden afzonderlijk dezelfde ruimte voor hetzelfde tijdslot. Elk ontving een geldige bevestigingsmail, en beiden verschenen gelijktijdig bij een erg ongemakkelijke dubbelgeboekte vergadering. LaunchStudio's beoordeling bevestigde dat de boekingslogica de beschikbaarheid controleerde en een boeking bevestigde als twee afzonderlijke, niet-atomaire stappen – exact het patroon dat deze exacte race condition toestaat onder gelijktijdige vraag.
 
-**Resultaat:** LaunchStudio implementeerde atomische, database-niveau-vergrendeling rond de boekingssequentie, zorgend dat een ruimte of bureau nooit bevestigd kan worden aan twee overlappende verzoeken ongeacht hoe dicht bij elkaar ze aankomen, en dicht het gat zonder WerkPleks boekingsinterface helemaal te veranderen.
+**Resultaat:** LaunchStudio implementeerde atomaire vergrendeling op databaseniveau rond de boekingsvolgorde, wat garandeert dat een ruimte of bureau nooit aan twee overlappende verzoeken kan worden bevestigd, ongeacht hoe dicht ze bij elkaar aankomen. Dit sloot de kloof zonder de boekingsinterface van WerkPlek überhaupt te veranderen.
 
-> *"Het gebeurde tijdens onze drukste week, wat achteraf compleet logisch is — dat is precies wanneer twee mensen het meest waarschijnlijk dezelfde ruimte op hetzelfde moment willen. Ik had gewoon nooit geraden dat het risico meeschaalde met ons eigen succes."*
-> — **Mees Vandenberghe, Founder, WerkPlek (Brugge)**
+> *"Het gebeurde tijdens onze drukste week, wat achteraf gezien compleet logisch is – dat is exact wanneer twee mensen het meest waarschijnlijk dezelfde ruimte op hetzelfde moment willen. Ik had gewoon nooit kunnen raden dat het risico schaalde met ons eigen succes."*
+> — **Mees Vandenberghe, Oprichter, WerkPlek (Brugge)**
 
-**Kosten & tijdlijn:** €2.000 (implementatie gelijktijdigheidsveilige boekingslogica) — voltooid in 7 werkdagen.
+**Kosten en tijdlijn:** € 2.000 (implementatie van concurrency-veilige boekingslogica) — voltooid in 7 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een databaseengineer dit soort race condition een gebruikelijke, bekende buggategorie beschouwen?
+### Zou een database-ingenieur dit soort race condition beschouwen als een veelvoorkomende categorie van bugs?
 
-Ja, extreem bekend — race conditions rond controleer-dan-handel-sequenties zijn een van de klassieke categorieën in gelijktijdige systemen algemeen, met gevestigde oplossingen zoals databasetransacties en vergrendelingsmechanismen die AI-codeertools volledig voorafgaan, gewoon niet automatisch toegepast tenzij specifiek geïmplementeerd.
+Ja, extreem welbekend – race conditions rond controleer-en-acteer-volgordes zijn een van de klassieke categorieën in gelijktijdige systemen in het algemeen.
 
-### Is deze bug specifiek voor boekingssystemen, of verschijnt hij ook in andere soorten apps?
+### Is deze bug specifiek voor boekingssystemen?
 
-Het verschijnt overal waar een beperkte resource gecontroleerd en dan geclaimd wordt als twee aparte stappen — voorraadsystemen, ticketverkoop, zelfs gebruikersnaamregistratie — elk scenario met een "controleer beschikbaarheid, commit dan"-patroon draagt hetzelfde onderliggende risico ongeacht de specifieke resource die geboekt of geclaimd wordt.
+Het verschijnt overal waar een beperkte bron wordt gecontroleerd en vervolgens geclaimd als twee afzonderlijke stappen – voorraadsystemen, kaartverkoop, of zelfs gebruikersnaamregistratie.
 
-### Maakt Manifera's ervaring met grotere productiesystemen dit soort gelijktijdigheidsfix sneller of betrouwbaarder voor een founder-schaal product?
+### Maakt ervaring met grotere productiesystemen deze herstelling sneller?
 
-Ja, direct — gelijktijdigheidsveilige ontwerppatronen zijn een standaard, herhaalbaar onderdeel van Manifera's enterprise-engineeringpraktijk, en een al bewezen patroon toepassen op WerkPleks specifieke boekingslogica is aanzienlijk sneller dan de correcte aanpak vanaf de grondbeginselen uitwerken voor elke nieuwe klant.
+Ja, rechtstreeks – concurrency-veilige ontwerppatronen zijn een standaard, herhaalbaar onderdeel van de engineering-praktijk.
 
-### Herre Roelevink heeft gesproken over founders die architectuurexpertise specifiek nodig hebben naarmate gebruik groeit — illustreert deze bug dat punt goed?
+### Wat is de beste manier om te voorkomen dat twee verzoeken hetzelfde id dubbel claimen?
 
-Heel goed — de bug was effectief inactief bij laag gebruik en werd bijna onvermijdelijk precies toen WerkPlek slaagde en de vraag groeide, wat precies het soort succes-getriggerde architecturale gat is dat Roelevinks commentaar over opschalende AI-native producten consistent benadrukt.
+Het gebruik van atomaire database-transacties (zoals `SELECT ... FOR UPDATE` in SQL) om het record tijdelijk te vergrendelen totdat de transactie is afgerond.
 
-### Had deze bug gevangen kunnen worden via meer uitgebreide handmatige tests vóór lancering, zonder gespecialiseerde gelijktijdigheidskennis?
+### Kan handmatig testen alleen deze bug opvangen?
 
-Echte gelijktijdigheid handmatig simuleren is moeilijk zonder specifiek een test te engineeren om twee verzoeken op exact hetzelfde moment af te vuren, wat niet iets is dat handmatige, één-voor-één tests natuurlijk produceren — dit is precies het soort bug dat vraagt om een reviewer die weet specifiek erop te testen in plaats van meer algemene test-inspanning.
+Uiterst onwaarschijnlijk, aangezien echte gelijktijdigheid niet op een natuurlijke manier wordt geproduceerd door handmatig testen van één actie tegelijk.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Lỗi Race Condition (trùng lịch/trùng đơn) có phổ biến không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rất phổ biến trong hệ thống có nhiều người dùng đồng thời, đây là lỗi kinh điển khi logic check-availability và create-booking tách rời nhau."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lỗi này có chỉ xuất hiện ở ứng dụng đặt phòng/đặt lịch không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, nó xuất hiện ở mọi ứng dụng có tài nguyên giới hạn như bán vé, mã giảm giá limited, hay quản lý kho hàng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại sao khi test một mình founder không bao giờ phát hiện ra lỗi này?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vì khi test một mình các thao tác diễn ra tuần tự, trong khi race condition chỉ xảy ra khi 2 request gửi lên cùng một milisecond."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Giải pháp kỹ thuật chuẩn nhất để fix triệt để lỗi double-booking là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sử dụng Atomic Database Transaction và Row-Level Locking (như SELECT FOR UPDATE) ở tầng database."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sửa lỗi Race Condition ở backend có làm đổi giao diện người dùng không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, toàn bộ giao diện và luồng UX/UI giữ nguyên, chỉ có xử lý khoá dữ liệu ở tầng database backend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Fix race condition ở luồng booking có tự động fix các luồng khác không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, mỗi luồng (ví dụ: checkout, áp voucher) cần được áp dụng logic locking riêng biệt."
+      }
+    }
+  ]
+}
+</script>

@@ -1,17 +1,18 @@
 ---
-Titel: "Waarom door AI gebouwde mobiele apps worden afgewezen bij hun eerste inzending in de App Store"
+Titel: "Waarom met AI gebouwde mobiele apps worden afgewezen bij hun eerste App Store-indiening"
 Trefwoorden: ai app, build app with ai, App Store rejection, account deletion requirement, mobile app compliance
 Koperfase: Overweging
-Doelgroep: AI-Native-oprichter
+Doelgroep: AI-Native oprichter
 ---
-# Waarom door AI gebouwde mobiele apps worden afgewezen bij hun eerste inzending in de App Store
+
+# Waarom met AI gebouwde mobiele apps worden afgewezen bij hun eerste App Store-indiening
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Waarom door AI gebouwde mobiele apps worden afgewezen bij hun eerste inzending in de App Store",
-  "description": "Afwijzingen in de App Store komen zelden voor omdat een door AI gebouwde app kapot is. Ze gebeuren vanwege de ongeschreven checklistitems van Apple waar geen prompt ooit om vraagt, zoals het verwijderen van accounts. Dit is wat de oprichters feitelijk doet struikelen.",
+  "headline": "Waarom met AI gebouwde mobiele apps worden afgewezen bij hun eerste App Store-indiening",
+  "description": "App Store-afwijzingen gebeuren zelden omdat een met AI gebouwde app kapot is.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,76 +31,84 @@ Doelgroep: AI-Native-oprichter
 }
 </script>
 
-Je hebt de app in een week gebouwd, hij werkt perfect op je telefoon en je voelt je goed als je voor de eerste keer op Verzenden klikt. Dan, twee of drie dagen later, komt er een afwijzingsmail binnen, en het gaat niet om een ​​bug. Het gaat over iets waarvan je nooit dacht dat je het zou bouwen, omdat je er nooit aan dacht om je AI-tool te vragen het te bouwen. Dit is een van de meest voorkomende verrassingen bij de eerste inzending voor oprichters die een door AI gebouwde mobiele app op de markt brengen.
+U heeft de app in een week gebouwd, deze werkt perfect op uw telefoon, en u voelt zich goed wanneer u voor de eerste keer op indienen klikt. Twee of drie dagen later komt er een afwijzings-e-mail binnen – en het gaat niet over een bug. Het gaat over iets wat u nooit heeft bedacht om te bouwen, omdat u er nooit aan heeft gedacht om uw AI-tool te vragen het te bouwen. Dit is een van de meest voorkomende verrassingen bij de eerste indiening voor oprichters die een met AI gebouwde mobiele app verzenden.
 
-## De afwijzing verwacht bijna niemand
+## De afwijking die vrijwel niemand verwacht
 
-De meeste oprichters zijn bang voor afwijzing door de App Store vanwege crashes, verbroken links of ontbrekend privacybeleid – de voor de hand liggende zaken. Wat feitelijk een groot deel van de eerste inzendingen van door AI gebouwde apps veroorzaakt, is Apple's richtlijn 5.1.1(v): als uw app gebruikers toestaat een account aan te maken, moeten ze dat account ook vanuit de app kunnen verwijderen, zonder dat ze ondersteuning hoeven te e-mailen of een website moeten bezoeken. Dit is sinds 2022 een harde vereiste en de recensenten van Apple controleren dit handmatig.
+De meeste oprichters bereiden zich voor op een App Store-afwijzing vanwege crashes, gebroken links, of ontbrekende privacyvoorwaarden – de voor de hand liggende dingen. Wat daadwerkelijk een groot deel van de eerste indieningen van met AI gebouwde apps laat struikelen is Apple's Richtlijn 5.1.1(v): als uw app gebruikers een account laat aanmaken, moet deze hen ook dat account laten verwijderen, van binnenuit de app, zonder de ondersteuning te hoeven e-mailen of een website te hoeven bezoeken. Dit is sinds 2022 een harde vereiste, en Apple's beoordelaars controleren het handmatig.
 
-De reden dat AI-coderingstools dit zo consequent overslaan is simpel: niemand vraagt ​​erom. Een prompt als "bouw een inlog- en aanmeldingsstroom" levert precies dat op: inloggen en aanmelden. Het verwijderen van accounts maakt geen deel uit van het gelukkige pad dat iemand test tijdens de ontwikkeling, dus het wordt nooit gegenereerd tenzij een oprichter specifiek weet dat hij moet verzoeken om 'een selfservice-proces voor het verwijderen van accounts toe te voegen dat ook de gegevens van de gebruiker verwijdert'. De meeste oprichters weten niet dat die zin moet bestaan ​​totdat Apple het hen vertelt.
+De reden dat AI-coderingsassistenten het zo consistent overslaan is eenvoudig: niemand vraagt erom. Een prompt zoals "bouw een inlog- en aanmeldstroom" produceert exact dat – inloggen en aanmelden. Het verwijderen van een account is geen onderdeel van het ideale pad dat iemand test tijdens de ontwikkeling. Het wordt dus nooit gegenereerd tenzij een oprichter specifiek weet te vragen "voeg een self-service account-verwijderstroom toe die ook de gegevens van de gebruiker verwijdert." De meeste oprichters weten niet dat die zin moet bestaan totdat Apple het hen vertelt.
 
-## Wat een conforme verwijderingsstroom eigenlijk moet doen
+## Wat een nalevende verwijderstroom daadwerkelijk moet doen
 
-Een proces voor het verwijderen van accounts dat bestand is tegen afwijzingen is niet zomaar een knop. Het moet de persoonlijke gegevens van de gebruiker daadwerkelijk verwijderen of anonimiseren (niet alleen het account deactiveren), het moet bereikbaar zijn binnen een redelijk aantal tikken vanuit de accountinstellingen, en als je app ook het aanmaken van een account via Sign in with Apple aanbiedt, moet bij het verwijderen ook dat autorisatietoken worden ingetrokken - een stap die gemakkelijk over het hoofd wordt gezien, zelfs als de verwijderknop zelf werkt. De recensenten van Apple testen dit door een wegwerpaccount aan te maken en zelf door de verwijdering heen te lopen, zodat een stroom die het account alleen maar verbergt in plaats van verwijdert, bij het opnieuw indienen net zo snel wordt gemarkeerd als de eerste keer.
+Een afwijzingsbestendige account-verwijderstroom is niet zomaar een knop. Het moet de persoonlijke gegevens van de gebruiker daadwerkelijk verwijderen of anonimiseren (en niet alleen het account deactiveren), het moet bereikbaar zijn binnen een redelijk aantal tikken vanaf de accountinstellingen, en als uw app ook het aanmaken van een account biedt via Inloggen met Apple, moet de verwijdering die autorisatietoken ook intrekken – een stap die gemakkelijk te missen is, zelfs wanneer de verwijderknop zelf werkt. Apple's beoordelaars testen dit door een wegwerpaccount aan te maken en zelf door het verwijderen te lopen. Een stroom die het account simpelweg verbergt in plaats van verwijdert wordt bij een herhaalde indiening dus net zo snel gemarkeerd als de eerste keer.
 
-Dit is het soort platformspecifieke vereiste dat niets te maken heeft met de vraag of uw code goed geschreven is, maar alles wat te maken heeft met het kennen van de App Store-beoordelingsrichtlijnen. LaunchStudio brengt de hoogwaardige techniek van Manifera naar de grondleggerseconomie, en een onderdeel daarvan is een nalevingspas vóór indiening die controleert op precies deze categorie hiaten: de vereisten die in de documentatie van Apple staan, niet in de lijst met functies van uw app. Onze technici die vanuit het ontwikkelingscentrum van Manifera in Ho Chi Minh-stad werken, behandelen deze beoordeling als een standaardonderdeel van het productierijp maken van een door AI gebouwde app, naast de bredere beveiligings- en gegevensverwerkingscontroles die mobiele apps nodig hebben voordat ze worden gelanceerd.
+Dit is het soort platformspecifieke vereiste dat niets te maken heeft met de vraag of uw code goed geschreven is, en alles met het door en door kennen van de App Store-beoordelingsrichtlijnen. LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Onderdeel daarvan is een nalevingsstap vóór de indiening die controleert op exact deze categorie van kloven – de vereisten die in Apple's documentatie leven, en niet in de functielijst van uw app. Onze ingenieurs, werkend vanuit Manifera's ontwikkelingscentrum in Ho Chi Minh-stad, handelen deze beoordeling af als een standaard onderdeel van het productie-gereed maken van een met AI gebouwde app, naast de bredere beveiligings- en gegevensverwerkingscontroles die mobiele apps nodig hebben vóór de lancering.
 
-Voordat je je volgende inzending doet, is het de moeite waard om iemand [door je app te laten lopen aan de hand van de echte checklist van Apple](https://launchstudio.eu/en/#contact) in plaats van er een tweede keer op de harde manier achter te komen.
+Vóór uw volgende indiening is het de moeite waard om iemand [door uw app te laten lopen tegen Apple's daadwerkelijke controlelijst](https://launchstudio.eu/en/#contact) in plaats van er op de harde manier een tweede keer achter te komen.
 
 ## Het verwijderen van het account annuleert het abonnement niet
 
-Apple en Google eisen dat mobiele apps een eenvoudige optie bieden voor het verwijderen van accounts. Een veelvoorkomende valkuil is dat het verwijderen van een account in de app het in-app abonnement via de App Store / Google Play niet automatisch stopzet. De gebruiker kan het account niet meer in, maar blijft maandelijks gefactureerd worden door het platform.
+Zodra het verwijderen van het account correct is gebouwd – gegevens gewist, tokens ingetrokken – is er een tweede vereiste waar gemakkelijk van wordt aangenomen dat deze door dezelfde herstelling gedekt is, wat niet zo is. Als uw app toegang verkoopt via het in-app aankopsysteem van Apple of Google, wordt dat abonnement rechtstreeks gefactureerd en beheerd door Apple of Google, en niet door uw eigen backend. De verwijderstroom van uw app kan elke rij die aan die gebruiker gekoppeld is wissen en nog steeds nul effect hebben op de vraag of ze belast blijven worden, omdat het annuleren van een terugkerend platformabonnement een actie is die alleen het platform (of de gebruiker, via platforminstellingen) daadwerkelijk kan uitvoeren.
 
-Informeer de gebruiker expliciet en stuur instructies om het abonnement in de App Store te beheren:
+Dit is exact het soort kloof dat een ondersteunings-inbox vol produceert met berichten zoals "ik heb mijn account verwijderd en u belast me nog steeds". Het is ook een afzonderlijke App Store-vereiste ten opzichte van de richtlijn voor verwijdering zelf – Apple's regels voor abonnements-apps vereisen een duidelijk, functioneel pad voor een gebruiker om zijn abonnement daadwerkelijk te annuleren, of dat nu een in-app annuleringsstroom is of een rechtstreekse link naar het eigen abonnementsbeheerscherm van het platform. Een met AI gegenereerde verwijderstroom heeft geen reden om te weten dat dit onderscheid bestaat tenzij iemand het er bewust in bouwt:
 
-```javascript
-async function handleAccountDeletion(user) {
-  if (user.hasActiveInAppSubscription) {
-    await sendSubscriptionCancellationGuide(user.email);
-  }
-  await db.users.delete(user.id);
+```
+async function deleteAccount(userId) {
+  await purgeUserData(userId);
+  await revokeSignInWithAppleToken(userId);
+  await markAccountDeleted(userId);
+
+  // Het verwijderen van het account annuleert een actief App Store- of
+  // Play Store-abonnement NIET — die facturatie-relatie is rechtstreeks eigendom
+  // van Apple/Google en heeft een eigen duidelijk pad nodig.
+  showSubscriptionCancellationNotice({
+    ios: 'itms-apps://apps.apple.com/account/subscriptions',
+    android: 'https://play.google.com/store/account/subscriptions',
+  });
 }
 ```
 
+Zonder die expliciete stap kan een gebruiker weglopen in de veronderstelling dat hij de app volledig heeft gelaten, terwijl een terugkerende afschrijving elke maand op zijn kaart blijft belanden – wat naar voren komt als een verzoek om terugbetaling, een chargeback, of een 1-sterbeoordeling, en niet als een bugrapport dat iemand terug kan traceren naar de verwijderstroom zelf.
+
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: de huisdier-app die één scherm vergat
+### Een AI-native oprichter in actie: De huisdieren-app die één scherm vergat
 
-Lynn Verheul, oprichter uit Sittard, bouwde HuisdierZorg, een mobiele app voor de verzorging van huisdieren, met behulp van Cursor met een React Native-wrapper rond de gegenereerde frontend. De app ging goed om met de kernervaring: huisdierprofielen, herinneringen aan afspraken met dierenartsen, het bijhouden van medicijnen. Het zag er compleet uit, werkte soepel tijdens het testen en Lynn stuurde het naar de App Store in afwachting van een routinematige goedkeuring.
+Lynn Verheul, een oprichter in Sittard, bouwde HuisdierZorg – een mobiele app voor huisdierenzorg – met behulp van Cursor met een React Native-wrapper rond de gegenereerde frontend. De app handelde de kernervaring goed af: huisdierenprofielen, herinneringen voor dierenartsafspraken, medicatietracking. Het zag er compleet uit, werkte strak tijdens het testen, en Lynn diende het in bij de App Store in de verwachting van een routineuze goedkeuring.
 
-De afwijzing kwam binnen enkele dagen terug, onder verwijzing naar Richtlijn 5.1.1(v): de app stond het aanmaken van een account toe, maar kon een gebruiker op geen enkele manier zijn account vanuit de app verwijderen. Het was een functie die simpelweg nog nooit ter sprake was gekomen: Lynns aanwijzingen aan Cursor hadden betrekking op aanmelden, inloggen en het opnieuw instellen van het wachtwoord, maar niemand had ooit de woorden 'accountverwijdering' getypt, dus deze bestond nergens in de gegenereerde codebase.
+De afwijzing kwam binnen enkele dagen terug, Richtlijn 5.1.1(v) citerend: de app stond het aanmaken van een account toe, maar had geen manier voor een gebruiker om zijn account van binnenuit de app te verwijderen. Het was een functie die simpelweg nooit ter sprake was gekomen – Lynn's prompts aan Cursor hadden aanmelden, inloggen en wachtwoord-reset gedekt, maar niemand had ooit de woorden "account verwijderen" getypt. Het bestond dus nergens in de gegenereerde codebase.
 
-LaunchStudio voegde een selfservice-verwijderingsstroom toe die bereikbaar is vanuit de accountinstellingen, zorgde ervoor dat de huisdierenprofielen en afspraakgeschiedenis van de gebruiker daadwerkelijk uit de database werden verwijderd in plaats van alleen maar het account als inactief te markeren, en trok alle bijbehorende Inloggen met Apple-tokens in als onderdeel van dezelfde actie. **Resultaat:** HuisdierZorg heeft de App Store-beoordeling doorstaan ​​bij herindiening zonder verdere nalevingsvlaggen.
+LaunchStudio voegde een self-service verwijderstroom toe die bereikbaar is vanaf de accountinstellingen, sloot het aan om de huisdierenprofielen en afspraakgeschiedenis van de gebruiker daadwerkelijk uit de database te wissen in plaats van het account alleen als inactief te markeren, en trok alle geassocieerde Inloggen met Apple-tokens in als onderdeel van dezelfde actie. **Resultaat:** HuisdierZorg slaagde bij een herhaalde indiening voor de App Store-beoordeling zonder verdere nalevingsmarkeringen.
 
-> *"Ik wist niet eens dat het verwijderen van een account een vereiste was totdat Apple het mij vertelde. Achteraf gezien voelde het als een voor de hand liggende vergissing, maar Cursor heeft het nooit voorgesteld omdat ik er nooit om heb gevraagd."*
+> *"Ik wist niet eens dat het verwijderen van een account een vereiste was totdat Apple het me vertelde. Het voelde achteraf als zo'n duidelijke tekortkoming – maar Cursor heeft het nooit één keer gesuggereerd omdat ik er nooit om vroeg."*
 > — **Lynn Verheul, Oprichter, HuisdierZorg (Sittard)**
 
-**Kosten en tijdlijn:** € 650 (conform proces voor het verwijderen van accounts, logica voor het opschonen van gegevens, inloggen met Apple-tokenintrekking) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 650 (nalevende account-verwijderstroom, logica voor het wissen van gegevens, intrekking van Inloggen met Apple-tokens) — voltooid in 4 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom bouwde mijn AI-coderingstool niet automatisch een proces voor het verwijderen van accounts?
+### Waarom bouwde mijn AI-coderingsassistent niet automatisch een account-verwijderstroom?
 
-AI-tools genereren waar u expliciet om vraagt. Het verwijderen van een account maakt geen deel uit van een typische 'build login and signup'-prompt, dus het ontbreekt routinematig, tenzij een oprichter of recensent weet dat hij er bij naam om moet vragen.
+AI-tools genereren wat u expliciet vraagt. Het verwijderen van een account is geen onderdeel van een typische prompt voor inloggen en aanmelden. Het ontbreekt dus routinematig tenzij een oprichter of beoordelaar weet om er bij naam om te vragen.
 
-### Is het verwijderen van een account eigenlijk vereist of alleen maar aanbevolen?
+### Is het verwijderen van een account daadwerkelijk verplicht, of alleen aanbevolen?
 
-Het is vereist volgens Apple's App Store Review Guideline 5.1.1(v) voor elke app die het aanmaken van accounts ondersteunt, en de menselijke reviewers van Apple testen het handmatig tijdens de indiening.
+Het is verplicht onder Apple's App Store Review Guideline 5.1.1(v) voor elke app die het aanmaken van accounts ondersteunt. En Apple's menselijke beoordelaars testen het handmatig tijdens de indiening.
 
-### Welke andere App Store-vereisten missen AI-gebouwde apps vaak?
+### Welke andere App Store-vereisten missen met AI gebouwde apps frequent?
 
-Naast het verwijderen van accounts zijn er ook veel voorkomende hiaten: onvolledige privacy-voedingsetiketten, ontbrekende App Tracking Transparency-prompts en placeholder-inhoud die is achtergebleven bij de ontwikkeling – allemaal dingen die LaunchStudio controleert tijdens een beoordeling voorafgaand aan de indiening.
+Voorbij het verwijderen van accounts omvatten veelvoorkomende kloven onvolledige privacy-voedingslabels, ontbrekende App Tracking Transparency-prompts, en tijdelijke inhoud die is achtergelaten uit de ontwikkeling.
 
-### Hoe weet LaunchStudio waar de recensenten van Apple eigenlijk op controleren?
+### Geldt dit ook voor apps die gebouwd zijn voor Android?
 
-LaunchStudio wordt ondersteund door Manifera's team van meer dan 120 technici, van wie er een aantal herhaaldelijk mobiele apps voor consumenten hebben geleverd via App Store-beoordeling, dus de nalevingscontrolelijst komt voort uit directe indieningservaring en niet uit giswerk.
+Google Play heeft een vergelijkbare vereiste voor het verwijderen van accounts en gegevens. LaunchStudio's engineeringteam controleert de huidige richtlijnen van beide platformen als onderdeel van een beoordeling vóór de lancering.
 
-### Geldt dit ook voor apps die voor Android zijn gebouwd?
+### Als een gebruiker zijn account verwijdert, annuleert dat dan ook zijn App Store- of Play Store-abonnement?
 
-Google Play heeft een vergelijkbare vereiste voor het verwijderen van accounts en gegevens, en het in Ho Chi Minh City gevestigde technische team van LaunchStudio controleert de huidige richtlijnen van beide platforms als onderdeel van een pre-lanceringsbeoordeling, aangezien de vereisten van de twee winkels niet identiek zijn.
-
+Nee – in-app aankoopabonnementen worden rechtstreeks gefactureerd en beheerd door Apple of Google, en niet door de eigen backend van de app. Het verwijderen van het account verwijdert dus alleen de gegevens van de app. De app heeft een afzonderlijk, duidelijk toegankelijk pad nodig dat gebruikers leidt naar de abonnementsinstellingen van hun platform, anders kunnen ze belast blijven worden nadat ze geloven dat ze zijn vertrokken.
 
 <script type="application/ld+json">
 {
@@ -108,42 +117,42 @@ Google Play heeft een vergelijkbare vereiste voor het verwijderen van accounts e
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom bouwde mijn AI-coderingstool niet automatisch een proces voor het verwijderen van accounts?",
+      "name": "Waarom bouwt AI niet automatisch een account-verwijderknop?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI-tools genereren waar u expliciet om vraagt. Het verwijderen van een account maakt geen deel uit van een typische 'build login and signup'-prompt, dus het ontbreekt routinematig, tenzij een oprichter of recensent weet dat hij er bij naam om moet vragen."
+        "text": "AI bouwt wat er in de prompt staat. 'Inloggen en registreren' genereert geen in-app account-verwijderfunctie tenzij expliciet gevraagd."
       }
     },
     {
       "@type": "Question",
-      "name": "Is het verwijderen van een account eigenlijk vereist of alleen maar aanbevolen?",
+      "name": "Is in-app accountverwijdering echt verplicht bij Apple?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is vereist volgens Apple's App Store Review Guideline 5.1.1(v) voor elke app die het aanmaken van accounts ondersteunt, en de menselijke reviewers van Apple testen het handmatig tijdens de indiening."
+        "text": "Ja, onder Apple Review Guideline 5.1.1(v) moet elke app die registratie ondersteunt, gebruikers ook in-app hun account laten verwijderen."
       }
     },
     {
       "@type": "Question",
-      "name": "Welke andere App Store-vereisten missen AI-gebouwde apps vaak?",
+      "name": "Wat controleert Apple bij de account-delete knop?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Naast het verwijderen van accounts zijn er ook veel voorkomende hiaten: onvolledige privacy-voedingsetiketten, ontbrekende App Tracking Transparency-prompts en placeholder-inhoud die is achtergebleven bij de ontwikkeling – allemaal dingen die LaunchStudio controleert tijdens een beoordeling voorafgaand aan de indiening."
+        "text": "Apple controleert of data echt gewist/geanonimiseerd wordt, of 'Sign in with Apple' tokens worden ingetrokken en of het in-app kan zonder te mailen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe weet LaunchStudio waar de recensenten van Apple eigenlijk op controleren?",
+      "name": "Annuleert account verwijderen automatisch een App Store abonnement?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio wordt ondersteund door Manifera's team van meer dan 120 technici, van wie er een aantal herhaaldelijk mobiele apps voor consumenten hebben geleverd via App Store-beoordeling, dus de nalevingscontrolelijst komt voort uit directe indieningservaring en niet uit giswerk."
+        "text": "Nee! Apple/Google beheren de billing. De app moet de gebruiker expliciet doorverwijzen naar de iOS/Android abonnementsinstellingen."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt dit ook voor apps die voor Android zijn gebouwd?",
+      "name": "Wat kost het toevoegen van een compliant account-delete flow?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Google Play heeft een vergelijkbare vereiste voor het verwijderen van accounts en gegevens, en het in Ho Chi Minh City gevestigde technische team van LaunchStudio controleert de huidige richtlijnen van beide platforms als onderdeel van een pre-lanceringsbeoordeling, aangezien de vereisten van de twee winkels niet identiek zijn."
+        "text": "Het toevoegen van een App Store-compliant verwijderstroom inclusief datawissing kost gemiddeld €650 en duurt 4 werkdagen."
       }
     }
   ]

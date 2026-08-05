@@ -1,17 +1,18 @@
 ---
-Titel: "AI-ticketing-apps voor musea en locaties: de bug die de capaciteit overstijgt op uw drukste dag"
+Titel: "AI-ticket-apps voor musea en locaties: De capaciteitsoverkoopbug die toeslaat op uw drukste dag"
 Trefwoorden: ai app, ai websites, ticketing app, capacity overselling, race condition, ai-generated code
 Koperfase: Bewustzijn
 Doelgroep: AI-Native oprichter (niet-technisch)
 ---
-# AI-ticketing-apps voor musea en locaties: de bug die opduikt op het gebied van capaciteitsoververkoop op uw drukste dag
+
+# AI-ticket-apps voor musea en locaties: De capaciteitsoverkoopbug die toeslaat op uw drukste dag
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-ticketing-apps voor musea en locaties: de bug die de capaciteit overstijgt op uw drukste dag",
-  "description": "Waarom AI-gegenereerde ticketing-apps er vaak niet in slagen de voorraad te vergrendelen tijdens gelijktijdige aankopen, waardoor een uitverkocht evenement juist op het moment dat de vraag (en het reputatierisico) het grootst is, oververkocht raakt.",
+  "headline": "AI-ticket-apps voor musea en locaties: De capaciteitsoverkoopbug die toeslaat op uw drukste dag",
+  "description": "Waarom met AI gegenereerde ticket-apps inventaris niet vergrendelen tijdens gelijktijdige aankopen.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,84 +31,90 @@ Doelgroep: AI-Native oprichter (niet-technisch)
 }
 </script>
 
-Guus Fransen bouwde een ticketing-app voor kleine locaties die maandenlang feilloos werkte: elke testaankoop verliep netjes, de capaciteitsaantallen liepen precies zoals verwacht en niets aan de app duidde op een probleem. Toen kwam het openingsweekend voor een populaire tentoonstelling, de vraag naar kaartjes piekte in de geschiedenis van de app en voor het eerst probeerden meer dan één persoon op precies hetzelfde moment het laatste handjevol kaartjes te kopen. Dat is de dag waarop de bug verscheen - omdat deze klasse van bugs, door hun aard, alleen opduikt onder de specifieke omstandigheden waar een oprichter het minst waarschijnlijk op heeft getest.
+Guus Fransen bouwde een ticket-app voor kleine locaties die maandenlang vlekkeloos werkte – elke testaankoop ging er schoon doorheen, capaciteitstellingen tikten exact naar beneden zoals verwacht, en niets aan de app suggereerde een probleem. Toen kwam het openingsweekend voor een populaire tentoonstelling. De vraag naar tickets piekte in de geschiedenis van de app, en voor het eerst probeerden meer dan één persoon op exact hetzelfde moment de laatste handvol tickets te kopen. Dat is de dag dat de bug verscheen – omdat deze klasse van bugs, door haar aard zelf, alleen verschijnt onder de specifieke omstandigheden waar een oprichter het minst waarschijnlijk op heeft getest.
 
-## De bug die alleen bestaat bij echte gelijktijdigheid
+## De bug die alleen bestaat onder echte gelijktijdigheid
 
-De ticketinventaris ziet eruit als een eenvoudige teller: begin bij de capaciteit, trek er één af per verkoop en stop met verkopen bij nul. Die logica werkt correct elke keer dat er precies één aankoop tegelijk gebeurt – wat bijna alle handmatige tests beschrijft die een oprichter alleen doet. Het wordt afgebroken op het moment dat twee of meer aankopen tegelijkertijd hetzelfde aantal tickets bereiken, omdat zonder een expliciete vergrendeling beide aankoopverzoeken dezelfde status '2 resterende tickets' kunnen lezen, beide doorgaan met het in rekening brengen van de klant en de verkoop bevestigen, en beide het aantal verlagen - het verkopen van tickets die niet bestaan.
+Ticketvoorraad ziet eruit als een eenvoudige teller: begin bij de capaciteit, trek er één af per verkoop, stop met verkopen bij nul. Die logica werkt elke enkele keer dat er exact één aankoop tegelijk plaatsvindt correct – wat vrijwel alle handmatige testen beschrijft die een oprichter alleen uitvoert. Het breekt af op het moment dat twee of meer aankopen de teller van dezelfde tickets gelijktijdig raken, omdat zonder een expliciete vergrendeling beide aankoopverzoeken dezelfde status "2 tickets over" kunnen lezen, beide doorgaan met het belasten van de klant en het bevestigen van de verkoop, en beide de teller verminderen – waarbij tickets worden verkocht die niet bestaan.
 
-Dit is een race-situatie uit het boekje, en het is bijzonder gemakkelijk voor een AI-coderingstool om te missen, omdat de gegenereerde code op zichzelf meestal logisch correct is - controleer de beschikbaarheid, verwerk vervolgens de betaling en update vervolgens het aantal - het is gewoon niet veilig tegen twee van die reeksen die tegelijkertijd worden uitgevoerd. Een solo-test van de grondlegger zal het nooit activeren, omdat het activeren ervan werkelijk gelijktijdige verzoeken vereist, wat handmatig testen door één persoon structureel niet kan opleveren.
+Dit is een schoolvoorbeeld van een race-conditie, en het is een bijzonder eenvoudige voor een AI-coderingsassistent om te missen. De gegenereerde code is in isolatie namelijk meestal logisch correct – controleer beschikbaarheid, verwerk dan de betaling, werk dan de teller bij – het is alleen niet veilig wanneer twee van die volgordes op hetzelfde moment draaien. Een oprichter die solo test zal het nooit activeren, omdat het activeren ervan oprecht gelijktijdige verzoeken vereist. Handmatig testen door één persoon kan dat structureel niet produceren.
 
 ## Waarom deze bug het slechtst mogelijke moment kiest om te verschijnen
 
-De vraag naar kaartjes is niet gelijkmatig verdeeld; de vraag concentreert zich precies op de momenten waarop een locatie het meeste interesse heeft: het openingsweekend van een populaire tentoonstelling, een beperkte preview die alleen voor leden toegankelijk is, een last-minute aankondiging van een capaciteitsverhoging. Dat zijn ook de momenten met het hoogste gelijktijdige aankoopvolume, wat betekent dat deze bug statistisch gezien het meest waarschijnlijk zal verschijnen precies op het moment dat een oprichter het zich het minst kan veroorloven – met een kamer vol bevestigde tickethouders en niet genoeg fysieke ruimte of veiligheidscapaciteit voor hen allemaal.
+De vraag naar tickets is niet gelijkmatig verdeeld – het clustert op exact de momenten waar een locatie het meest om geeft: het openingsweekend van een populaire tentoonstelling, een beperkte voorvertoning alleen voor leden, een aankondiging van een last-minute capaciteitsverhoging. Dat zijn ook de momenten met het hoogste volume aan gelijktijdige aankopen, wat betekent dat deze bug statistisch het meest waarschijnlijk verschijnt op het moment dat een oprichter het zich het minst kan veroorloven – met een ruimte vol bevestigde tickethouders en niet genoeg fysieke ruimte of veiligheidscapaciteit voor hen allemaal.
 
-Voor een museum, galerie of kleine locatie is oververkoop niet alleen maar een ongemakkelijk gesprek over terugbetaling. Het kan betekenen dat betalende klanten aan de deur worden afgewezen, dat de capaciteitslimieten van de brandcode worden overtreden, of dat het partnerschap met de locatie wordt geschaad waar de oprichter in de eerste plaats hard voor heeft gewerkt.
+Voor een museum, galerie of kleine locatie is oververkopen niet zomaar een ongemakkelijk terugbetalingsgesprek. Het kan betekenen dat betalende klanten aan de deur worden geweigerd, dat capaciteitslimieten uit de brandvoorschriften worden geschonden, of dat de samenwerking met de locatie die een oprichter in de eerste plaats hard heeft opgebouwd wordt beschadigd.
 
-## Hoe een correcte oplossing eruit ziet: vergrendelen, niet alleen maar tellen
+## Hoe een correcte herstelling eruitziet: Vergrendelen, en niet alleen tellen
 
-Om dit op te lossen is het nodig dat de aankoopstroom 'beschikbaarheid controleren en een ticket reserveren' behandelt als een enkele atomaire handeling in plaats van twee afzonderlijke stappen die kunnen worden gecombineerd met de aankoop van een andere klant. In de praktijk betekent dit het gebruik van vergrendeling op databaseniveau of een reserveringssysteem: een ticket kort in de wacht zetten op het moment dat een aankoop begint, de beschikbaarheid binnen die blokkering controleren en de blokkering alleen vrijgeven als de aankoop mislukt of een time-out optreedt. Het is een kleine maar precieze verandering in de manier waarop de databasetransactie is gestructureerd, en het is precies het soort gelijktijdigheidsveilig patroon dat ervaren backend-ingenieurs standaard bouwen en dat AI-codegeneratoren vaak overslaan tenzij er expliciet om wordt gevraagd.
+Het op de juiste manier herstellen hiervan vereist dat de aankoopstroom "controleer beschikbaarheid en reserveer een ticket" behandelt als een enkele atomaire operatie, in plaats van twee afzonderlijke stappen die kunnen interleaven met de aankoop van een andere klant. In de praktijk betekent dat het gebruiken van vergrendeling op databaseniveau of een reserveringssysteem – het plaatsen van een korte vasthouding op een ticket op het moment dat een aankoop begint, het controleren van de beschikbaarheid binnen die vergrendeling, en het pas vrijgeven van de vasthouding als de aankoop mislukt of een time-out krijgt. Het is een kleine maar precieze wijziging in hoe de databasetransactie is gestructureerd, en het is exact het soort gelijktijdigheidsveilig patroon dat ervaren backend-ingenieurs standaard bouwen en AI-codegeneratoren frequent overslaan tenzij er expliciet om wordt gevraagd.
 
-LaunchStudio brengt de hoogwaardige engineering van Manifera voor precies dit soort gelijktijdigheidsproblemen: het soort dingen dat routine is in bedrijfsinventarisatie- en boekingssystemen, maar gemakkelijk over het hoofd wordt gezien in een snelle, door AI gegenereerde build. De beoordeling zelf wordt gecoördineerd vanuit het Amsterdamse kantoor van Manifera aan de Herengracht 420, waar het klantgerichte technische team precies in kaart brengt welke delen van een boekingsstroom dit soort vergrendeling nodig hebben voordat er iets wordt aangeraakt. U kunt op de [LaunchStudio-startpagina](https://launchstudio.eu/en/) bekijken wat een volledige pre-lanceringsaudit inhoudt. Voor achtergrondinformatie over het soort productiesystemen waarin de technici van Manifera dit patroon eerder hebben ingebouwd, kunt u de [portfolio] van het team raadplegen (https://www.manifera.com/portfolio/).
+LaunchStudio brengt Manifera's enterprise-grade engineering naar exact dit soort gelijktijdigheidsproblemen – het soort ding dat routinematig is in enterprise-voorraad- en boekingssystemen, maar gemakkelijk te missen in een snelle met AI gegenereerde bouw. De beoordeling zelf wordt gecoördineerd vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, waar het klantgerichte engineeringteam omvangt exact welke onderdelen van een boekingsstroom dit soort vergrendeling nodig hebben voordat er iets wordt aangeraakt. U kunt bekijken wat een volledige pre-lanceringaudit dekt op de [LaunchStudio-homepagina](https://launchstudio.eu/en/), en voor achtergrond over het soort productiesystemen waar Manifera's ingenieurs dit patroon eerder in hebben gebouwd, bekijk het [portfolio](https://www.manifera.com/portfolio/) van het team.
 
-## Een reserveringsblokkade die nooit verloopt ruilt overboeking in voor onderboeking
+## Een reserveringsvasthouding die nooit verloopt ruilt oververkopen in voor onderverkopen
 
-Om overboeking bij populaire museumtickets te voorkomen, blokkeert de app tickets zodra een gebruiker het afrekenproces start. Als een gebruiker zijn tabblad sluit zonder te betalen, en er is geen vervaltijd op de blokkade ingesteld, blijven die tickets voor altijd "gereserveerd" en kunnen ze aan niemand anders worden verkocht.
+Het vergrendelen van de voorraad en het plaatsen van een korte vasthouding tijdens de afrekening stopt de race-conditie, maar het introduceert een nieuwe manier van mislukken als de vasthouding geen verloopduur heeft: een koper die de afrekening bereikt, de laatste paar tickets vasthoudt, en vervolgens het tabblad sluit, zijn kaart laat mislukken of simpelweg de aankoop verlaat, laat die voorraad voor onbepaalde tijd vergrendeld. Als niets de vasthouding vrijgeeft, zijn die tickets in feite onverkoopbaar – voor altijd als "gereserveerd" getoond, hoewel er nooit een aankoop zal worden voltooid. Bij een populair evenement kan een handvol verlaten afrekeningen een echte uitverkoop stilletjes veranderen in een valse uitverkoop, waarbij betalende klanten worden weggestuurd uit een ruimte die daadwerkelijk nog vrije stoelen heeft.
 
-Stel een strikte time-out in voor ticketreserveringen:
+De herstelling die de oververkoopbug sluit, houdt alleen stand als elke reservering een korte, afgedwongen verloopduur draagt, met een achtergrondproces (of het eigen mechanisme van de database) dat verantwoordelijk is voor het automatisch vrijgeven ervan:
 
-```javascript
-async function reserveTickets(eventId, quantity) {
-  const reservation = await db.reservations.create({
-    eventId,
-    quantity,
-    expiresAt: new Date(Date.now() + 10 * 60 * 1000) // 10 minuten time-out
-  });
-  return reservation;
+```
+function reserveTicket(eventId, userId) {
+  const hold = acquireLock(eventId, userId, { ttlSeconds: 300 });
+  if (!hold) return { success: false, reason: "sold_out_or_contended" };
+  return { success: true, holdId: hold.id, expiresAt: hold.expiresAt };
+}
+
+// Draait continu op de achtergrond
+function releaseExpiredHolds() {
+  const expired = findHoldsPastExpiry();
+  for (const hold of expired) {
+    releaseLock(hold.eventId, hold.id);
+  }
 }
 ```
 
+Vijf minuten is een redelijk uitgangspunt voor een vasthouding bij het afrekenen – lang genoeg voor een echte koper om de betaling te voltooien, kort genoeg dat een verlaten winkelwagentje de beschikbaarheid niet betekenisvol aantast. Het specifieke getal doet er minder toe dan ervoor zorgen dat er überhaupt een bestaat: een vergrendelingsmechanisme zonder verloopduur lost het oververkoop-probleem in het openingsweekend op, en creëert stilletjes een onderverkoop-probleem op elke gewone dag daarna.
+
 ## Echt voorbeeld
 
-### Een AI-Native Founder in actie: zes extra kaartjes voor een uitverkochte zaal
+### Een AI-native oprichter in actie: Zes extra tickets voor een uitverkochte zaal
 
-Guus Fransen bouwde samen met Bolt TicketZaal, een ticketing-app voor kleine podia, en lanceerde deze met een galerie in zijn thuisstad Roermond. Het regelde de kaartverkoop netjes voor verschillende kleinere shows voordat een populaire rondreizende tentoonstelling werd geopend, waardoor er veel meer gelijktijdige vraag ontstond dan alles wat de app eerder had gezien. In de laatste minuten voordat het laatste handjevol kaartjes uitverkocht was, rekenden verschillende kopers binnen enkele seconden na elkaar af.
+Guus Fransen bouwde TicketZaal, een ticket-app voor kleine locaties, met Bolt, en lanceerde deze met een galerie in zijn woonplaats Roermond. Het handelde de ticketverkoop voor verschillende kleinere shows strak af voordat een populaire reizende tentoonstelling opende, die aanzienlijk meer gelijktijdige vraag trok dan alles wat de app eerder had gezien. In de laatste minuten voordat de laatste handvol tickets uitverkocht, rekenden verschillende kopers af binnen enkele seconden van elkaar.
 
-Tegen de tijd dat Guus de volgende ochtend op het dashboard keek, had TicketZaal zes kaartjes meer verkocht dan de fysieke capaciteit van de tentoonstellingsruimte toestond: allemaal bevestigd, allemaal betaald, allemaal in de verwachting dat ze op de openingsdag toegang zouden krijgen. De galerie moest zich haasten om sommige kaarthouders een later tijdslot aan te bieden en voor anderen restituties te verwerken, een ongemakkelijk gesprek dat het partnerschap met de locatie reëel in gevaar bracht.
+Tegen de tijd dat Guus het dashboard de volgende ochtend controleerde, had TicketZaal zes tickets meer verkocht dan de fysieke capaciteit van de tentoonstellingsruimte toeliet – allemaal bevestigd, allemaal betaald, allemaal een toegang verwachtend op de openingsdag. De galerie moest zich haasten om een later tijdslot aan te bieden aan sommige tickethouders en terugbetalingen te verwerken voor anderen, een ongemakkelijk gesprek dat de samenwerking met de locatie echt in gevaar bracht.
 
-De technici van LaunchStudio hebben de ticketaankoopstroom opnieuw opgebouwd rond een vergrendelingsmechanisme op databaseniveau: wanneer een aankoop begint, wordt het relevante aantal tickets vergrendeld voor de duur van die transactie, dus een tweede gelijktijdige aankoop met dezelfde beperkte voorraad moet wachten tot de eerste is voltooid voordat deze zelfs maar de beschikbaarheid kan controleren. Gecombineerd met een korte reserveringsstop tijdens het afrekenen, garandeert de stroom nu dat de werkelijke capaciteit van de locatie nooit kan worden overschreden, ongeacht hoeveel mensen tegelijk proberen te kopen.
+LaunchStudio's ingenieurs herbouwden de aankoopstroom voor tickets rond een vergrendelingsmechanisme op databaseniveau: wanneer een aankoop begint, wordt het relevante ticketaantal vergrendeld voor de duur van die transactie. Een tweede gelijktijdige aankoop tegen dezelfde beperkte voorraad moet dus wachten tot de eerste is voltooid voordat het überhaupt de beschikbaarheid kan controleren. Gecombineerd met een korte reserveringsvasthouding tijdens de afrekening garandeert de stroom nu dat de daadwerkelijke capaciteit van de locatie nooit kan worden overschreden, ongeacht hoeveel mensen tegelijk proberen te kopen.
 
-**Resultaat:** TicketZaal heeft sindsdien nog twee veelgevraagde openingen afgehandeld, waaronder een die sneller uitverkocht was dan de tentoonstelling die de bug oorspronkelijk veroorzaakte, zonder oververkoopincidenten.
+**Resultaat:** TicketZaal heeft sindsdien nog twee openingen met een hoge vraag afgehandeld, waaronder een die sneller uitverkocht dan de tentoonstelling die oorspronkelijk de bug veroorzaakte, met nul oververkoopincidenten.
 
-> *"Ik dacht dat ik een eenvoudige teller had gebouwd. Wat ik eigenlijk had gebouwd was een raceconditie die wachtte op voldoende verkeer om deze bloot te leggen. LaunchStudio repareerde het op een manier waarvan ik nooit had geweten dat ik erom had gevraagd."*
-> — **Guus Fransen, oprichter, TicketZaal (Roermond)**
+> *"Ik dacht dat ik een eenvoudige teller had gebouwd. Wat ik daadwerkelijk had gebouwd was een race-conditie die wachtte tot er genoeg verkeer was om deze bloot te leggen. LaunchStudio heeft het hersteld op een manier die ik nooit zou hebben geweten te vragen."*
+> — **Guus Fransen, Oprichter, TicketZaal (Roermond)**
 
-**Kosten en tijdlijn:** € 1.200 (herontwerp van de aankoopstroom zonder gelijktijdigheid en belastingtests) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (herontwerp van gelijktijdigheidsveilige aankoopstroom en belastingtesten) — voltooid in 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom kwam deze bug niet naar voren tijdens mijn eigen tests?
+### Waarom verscheen deze bug niet tijdens mijn eigen testen?
 
-Omdat het activeren ervan echt gelijktijdige aankooppogingen vereist tegen een beperkte voorraad, wat structureel erg moeilijk te produceren is als je het alleen test – het verschijnt doorgaans alleen bij een echte gelijktijdige vraag.
+Omdat het activeren ervan oprecht gelijktijdige aankooppogingen vereist tegen beperkte voorraad, wat structureel erg moeilijk te produceren is wanneer u alleen test – het verschijnt typisch alleen onder echte gelijktijdige vraag.
 
-### Heeft dit alleen invloed op ticketing-apps?
+### Beïnvloedt dit alleen ticket-apps?
 
-Nee: elke app die in realtime een beperkte voorraad verkoopt, inclusief boekingen voor evenementen, afspraken of productdroppings met een beperkte voorraad, kan dezelfde onderliggende raceconditie hebben.
+Nee – elke app die beperkte voorraad in realtime verkoopt, inclusief evenementenboekingen, afspraak-slots of product-drops met beperkte voorraad, kan dezelfde onderliggende race-conditie hebben.
 
-### Hoe kan ik controleren of mijn eigen, door AI gebouwde app dit probleem heeft?
+### Hoe kan ik controleren of mijn eigen met AI gebouwde app dit probleem heeft?
 
-Kijk of de beschikbaarheid van tickets of inventaris wordt gecontroleerd en bijgewerkt binnen een enkele vergrendelde databasetransactie, of als twee afzonderlijke stappen. Als dit laatste het geval is, is het risico aanwezig, ongeacht of u het al heeft zien gebeuren.
+Kijk of de beschikbaarheid van tickets of voorraad wordt gecontroleerd en bijgewerkt binnen een enkele vergrendelde databasetransactie, of als twee afzonderlijke stappen – als het het laatste is, is het risico aanwezig ongeacht of u het al heeft zien gebeuren.
 
-### Wat voor soort testen vangen dit op vóór de lancering?
+### Welke soort testen vangt dit op vóór de lancering?
 
-Belastingtesten die meerdere gelijktijdige aankooppogingen simuleren met dezelfde beperkte voorraad – iets dat LaunchStudio standaard uitvoert op elke app met eindige, omstreden bronnen.
+Belastingtesten die meerdere gelijktijdige aankooppogingen simuleren tegen dezelfde beperkte voorraad – iets wat LaunchStudio uitvoert als standaardpraktijk bij elke app waar eindige, betwiste bronnen bij betrokken zijn.
 
-### Heeft het team van Manifera dit soort gelijktijdigheidsproblemen buiten de ticketverkoop aangepakt?
+### Kan het herstellen van de oververkoopbug een nieuw probleem creëren?
 
-Ja – de meer dan 120 technici van Manifera hebben inventaris- en boekingssystemen gebouwd voor zakelijke klanten waarbij veilige transactieafhandeling een basisvereiste is, en die ervaring is wat LaunchStudio toepast op door de oprichters gebouwde apps.
-
+Ja, als de reserveringsvasthouding die wordt gebruikt om tickets te vergrendelen tijdens de afrekening nooit verloopt – verlaten winkelwagentjes en mislukte betalingen laten de voorraad dan permanent vergrendeld, waardoor een evenement er uitverkocht uitziet wanneer dat niet zo is. Dat is waarom elke vasthouding een korte, afgedwongen verloopduur nodig heeft met een automatisch vrijgaveproces.
 
 <script type="application/ld+json">
 {
@@ -116,42 +123,42 @@ Ja – de meer dan 120 technici van Manifera hebben inventaris- en boekingssyste
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom kwam deze bug niet naar voren tijdens mijn eigen tests?",
+      "name": "Waarom openbaart een race condition bij tickets zich pas bij lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat het activeren ervan echt gelijktijdige aankooppogingen vereist tegen een beperkte voorraad, wat structureel erg moeilijk te produceren is als je het alleen test – het verschijnt doorgaans alleen bij een echte gelijktijdige vraag."
+        "text": "Omdat 2 kopers op exact dezelfde seconde moeten afrekenen. Solo-testen genereert nooit gelijktijdige database-writes."
       }
     },
     {
       "@type": "Question",
-      "name": "Heeft dit alleen invloed op ticketing-apps?",
+      "name": "Geldt dit capaciteitsrisico ook voor afspraken of horeca?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee: elke app die in realtime een beperkte voorraad verkoopt, inclusief boekingen voor evenementen, afspraken of productdroppings met een beperkte voorraad, kan dezelfde onderliggende raceconditie hebben."
+        "text": "Ja, elk platform dat schaarse capaciteit in realtime verkoopt (tijdslots, tafels, stoelen) heeft database-locking nodig."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe kan ik controleren of mijn eigen, door AI gebouwde app dit probleem heeft?",
+      "name": "Hoe controleer ik of mijn database veilige locking heeft?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kijk of de beschikbaarheid van tickets of inventaris wordt gecontroleerd en bijgewerkt binnen een enkele vergrendelde databasetransactie, of als twee afzonderlijke stappen. Als dit laatste het geval is, is het risico aanwezig, ongeacht of u het al heeft zien gebeuren."
+        "text": "Kijk of check-en-update in 1 atomaire transactie gebeurt. Zijn het 2 losse stappen, dan ontbreekt concurrency-safety."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat voor soort testen vangen dit op vóór de lancering?",
+      "name": "Wat is het gevaar van reserverings-holds zonder verloopdatum?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Belastingtesten die meerdere gelijktijdige aankooppogingen simuleren met dezelfde beperkte voorraad – iets dat LaunchStudio standaard uitvoert op elke app met eindige, omstreden bronnen."
+        "text": "Als iemand de browser sluit bij de betaling blijven stoelen 'gereserveerd' staan, waardoor ruimtes onterecht als vol tonen."
       }
     },
     {
       "@type": "Question",
-      "name": "Heeft het team van Manifera dit soort gelijktijdigheidsproblemen buiten de ticketverkoop aangepakt?",
+      "name": "Wat is een ideale hold-tijd bij afrekenen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja – de meer dan 120 technici van Manifera hebben inventaris- en boekingssystemen gebouwd voor zakelijke klanten waarbij veilige transactieafhandeling een basisvereiste is, en die ervaring is wat LaunchStudio toepast op door de oprichters gebouwde apps."
+        "text": "Meestal 5 tot 10 minuten: lang genoeg om iDEAL/creditcard in te vullen, kort genoeg om winkelwagen-verlaters snel vrij te geven."
       }
     }
   ]

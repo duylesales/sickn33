@@ -1,77 +1,150 @@
 ---
-Titel: "Het Beste Van AI-Coderen Krijgen Zonder Zijn Slechtste Gewoonten Te Erven"
+Titel: "Het beste uit AI-coding halen zonder de slechte gewoonten over te nemen"
 Trefwoorden: best of ai, all ai tools, ai coding, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Agentschap / Freelancer (White-Label-Partner)
+Doelgroep: Bureau / Freelancer (White-Label Partner)
 ---
 
-# Het Beste Van AI-Coderen Krijgen Zonder Zijn Slechtste Gewoonten Te Erven
+# Het beste uit AI-coding halen zonder de slechte gewoonten over te nemen
 
-Het beste van AI-coderen krijgen bij het erven van het bestaande project van een klant betekent erkennen wat oprecht de moeite waard is om te behouden — meestal het gros ervan — en welke specifieke, nauwe gewoonten de moeite waard zijn om te corrigeren vóór lancering, in plaats van de hele codebase te behandelen met ofwel algemeen wantrouwen ofwel algemeen vertrouwen. Sessiecookie-configuratie is een specifiek, gebruikelijk voorbeeld van precies de tweede categorie.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Het beste uit AI-coding halen zonder de slechte gewoonten over te nemen",
+  "description": "Een vergelijking van wat een bureau moet behouden versus corrigeren bij het overnemen van klantwerk.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-03",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/getting-the-best-of-ai-coding-without-inheriting-its-worst-habits"
+  }
+}
+</script>
 
-## Wat Bijna Altijd De Moeite Waard Is Om Te Behouden
+Het beste halen uit AI-programmering bij het overnemen van het bestaande project van een klant betekent herkennen wat oprecht het behouden waard is – meestal het grootste deel ervan – en welke specifieke gewoonten het waard zijn om te corrigeren voor de lancering. De configuratie van sessie-cookies is een specifiek, veelvoorkomend voorbeeld van exact die tweede categorie.
 
-De algehele structuur, de kernfunctielogica, en de algemene aanpak die een AI-codeertool nam om het product van een klant te bouwen is, in de grote meerderheid van gevallen, oprecht solide en de moeite waard om volledig te behouden — vanaf nul herbouwen, zoals LaunchStudio's eigen filosofie van "we behouden jouw frontend, we fixen alleen wat nodig is" weerspiegelt, verspilt de echte waarde al gecreëerd en introduceert onnodig zijn eigen risico.
+## Wat bijna altijd het behouden waard is
 
-## Wat Specifiek Een Tweede Blik Nodig Heeft: Cookiebeveiligingsvlaggen
+De algehele structuur, de kern-functielogica en de algemene aanpak die een AI-coderingsassistent heeft genomen, is in de grote meerderheid van de gevallen oprecht solide en het waard om compleet te behouden. Opnieuw bouwen vanaf nul – zoals LaunchStudio's filosofie van "we behouden uw frontend, we herstellen alleen wat nodig is" weerspiegelt – verspilt de echte waarde die al gecreëerd is. Voor RitDirect specifiek bleven de boekingsstroom en het chauffeur-koppelingssysteem compleet onaangetast. Het werk dat er daadwerkelijk toe deed was smal en specifiek: een handvol configuratiewaarden binnen het authenticatiesysteem.
 
-Sessiecookies — de kleine stukjes data die een browser opslaat om een gebruiker ingelogd te houden — ondersteunen verscheidene specifieke beveiligingsvlaggen die controleren hoe ze benaderd en verzonden kunnen worden: of ze beperkt zijn van leesbaar te zijn door JavaScript, of ze alleen over versleutelde verbindingen verzonden worden, en of ze beperkt zijn van verzonden te worden naast cross-site-verzoeken. AI-gegenereerde authenticatiecode zet frequent een werkende sessiecookie op zonder al deze vlaggen te configureren, aangezien de cookie hoe dan ook correct functioneert voor loginddoeleinden.
+## Wat specifiek een tweede blik nodig heeft: Beveiligingsvlaggen voor cookies
 
-## Waarom Ontbrekende Cookievlaggen Specifiek Andere Kleine Gaten Versterken
+Sessie-cookies – de kleine stukjes gegevens die een browser opslaat om een gebruiker ingelogd te houden – ondersteunen verschillende specifieke beveiligingsvlaggen: of ze beperkt zijn om gelezen te worden door JavaScript (`HttpOnly`), of ze alleen via versleutelde verbindingen worden verzonden (`Secure`), en of ze beperkt zijn om verzonden te worden bij cross-site verzoeken (`SameSite`). Met AI gegenereerde code richt frequent een werkende sessie-cookie in zonder al deze vlaggen te configureren, aangezien de cookie in beide gevallen functioneel werkt voor inlogdoeleinden.
 
-Een sessiecookie die de vlag mist die JavaScript-toegang beperkt wordt direct leesbaar door elk script dat op de pagina draait — wat betekent dat als een aparte, ongerelateerde kwetsbaarheid zoals een cross-site-scripting-gat ergens anders in dezelfde applicatie bestaat, een correct gevlagde cookie zou hebben voorkomen dat die aparte kwetsbaarheid een actieve sessie kon stelen, terwijl een ongevlagde die extra beschermingslaag niet biedt.
+## Waarom ontbrekende cookievlaggen andere kleine kloven uitvergroten
 
-## Waarom Dit Zelden Individueel Geverifieerd Wordt Tijdens Een Overdracht
+Een sessie-cookie die de vlag mist die JavaScript-toegang beperkt (`HttpOnly`), wordt rechtstreeks leesbaar door elk script dat op de pagina draait. Als er elders een afzonderlijke kwetsbaarheid zoals een cross-site scripting (XSS)-kloof bestaat, zou een juist geflagde cookie hebben voorkomen dat een actief sessietoken gestolen werd. Een niet-geflagde cookie biedt die extra beschermingslaag niet.
 
-Een agentschap dat de geërfde codebase van een klant reviewt richt zich natuurlijk op functionele volledigheid — werkt login, functioneert de kernfunctieset zoals beschreven — en cookievlagconfiguratie is een specifiek, granulair detail dat niet beïnvloedt of login "werkt" op enige manier die een functionele review zou vangen, wat het makkelijk maakt over het hoofd te zien zonder een specifieke, toegewijde beveiligingsgerichte pass.
+## Waarom dit zelden individueel geverifieerd wordt tijdens een overdracht
 
-## Waarom Dit Specifieke Detail Correct Krijgen Ertoe Doet Voor De Eigen Reputatie Van Een Agentschap
+Een bureau dat de overgenomen codebase van een klant beoordeelt, richt zich van nature op functionele compleetheid – werkt de inlog, werkt de kern-functionaliteit. Cookie-vlagconfiguratie is een specifiek detail dat geen invloed heeft op of de inlog "werkt" op een manier die een functionele beoordeling opvangt.
 
-Een klant die vertrouwt op de lanceringsreview van een agentschap om oprecht uitgebreid te zijn verwacht precies dit soort granulair, niet-voor-de-hand-liggend detail gevangen te worden — het missen ervan creëert niet alleen risico voor het product van de klant, het creëert risico voor de eigen geloofwaardigheid van het agentschap als het gat later door iemand anders ontdekt wordt.
+## Waarom het goed krijgen van dit detail uitmaakt voor de reputatie van een bureau
 
-## Hoe LaunchStudio Agentschappen Ondersteunt Met Deze Specifieke Controle
+Een klant die vertrouwt op de lancering-review van een bureau om oprecht grondig te zijn, verwacht dat exact dit soort niet-voor-het-hand-liggende details worden opgevangen.
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert cookiebeveiligingsconfiguratie als standaardonderdeel van zijn white-label technische review voor agentschappen die klantoverdrachten afhandelen, gesteund door Manifera's 11+ jaar ervaring met veilig sessiebeheer over productiesystemen.
+## Hoe LaunchStudio bureaus ondersteunt met deze specifieke controle
 
-Manifera's sessiebeveiligingsreviews voor partneropdrachten worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, met NDA-gedekt werk gecoördineerd vanuit het hoofdkantoor in Amsterdam aan de Herengracht 420.
+[LaunchStudio](https://launchstudio.eu/en/) verifieert de beveiligingsconfiguratie van cookies als standaard onderdeel van haar white-label technische beoordeling voor bureaus die overdrachten van klanten afhandelen, ondersteund door Manifera's 11+ jaar ervaring met veilig sessiebeheer.
 
-[Freelancer of kleine studio? Wij zijn het engineeringteam achter jouw merk](https://launchstudio.eu/en/#contact).
+Manifera's beoordelingen van sessiebeveiliging worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Freelancer of kleine studio? Wij zijn het engineeringteam achter uw merk](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de cookievlaggen die de overdracht bijna miste
+### Een AI-native oprichter in actie: De cookievlaggen die de overdracht bijna miste
 
-Saskia runt een klein digitaal agentschap in Weert dat een klantoverdracht overnam voor RitDirect, een lokale taxi- en ritdispatch-app die de klant grotendeels gebouwd had met v0, en een werkende pilot met een handjevol lokale chauffeurs bereikte voordat hij Saskia's agentschap benaderde om het voor te bereiden op een bredere publieke lancering.
+Saskia runt een klein digitaal bureau in Weert dat een overdracht aannam voor RitDirect, een lokale taxi- en rit-dispatch-app die grotendeels met v0 was gebouwd.
 
-Saskia's teams initiële review richtte zich op bevestigen dat de boekings- en dispatchflow end-to-end correct werkte, wat het deed. Een toegewijde beveiligingspass via LaunchStudio, uitgevoerd als standaardpraktijk voordat elk klantproject lanceert onder de branding van het agentschap, vond dat RitDirects sessiecookies verscheidene standaard beschermende vlaggen misten, wat betekende dat een ongerelateerd, anders-klein scriptingprobleem elders in de app een veel makkelijker pad zou hebben gehad naar het daadwerkelijk stelen van een actieve chauffeur- of rijder-sessie.
+Saskia's team richtte zich op het bevestigen dat de boekings- en dispatch-stroom correct werkte. Een toegewijde beveiligingsbeoordeling door LaunchStudio vond dat RitDirect's sessie-cookies verschillende standaard beschermende vlaggen misten. Een ongerelateerd scripting-probleem elders in de app zou hierdoor een veel makkelijker pad hebben gehad om een actieve sessie te stelen.
 
-**Resultaat:** LaunchStudio corrigeerde de sessiecookieconfiguratie om alle standaard beschermende vlaggen op te nemen, en dicht een gat dat nooit functionele tests beïnvloedde en dat Saskia's team oorspronkelijk niet gemarkeerd had, en beschermde zowel de lancering van de klant als de reputatie van het agentschap voor een oprecht grondig overdrachtsproces.
+**Resultaat:** LaunchStudio corrigeerde de sessie-cookieconfiguratie om alle standaard beschermende vlaggen (`HttpOnly`, `Secure`, `SameSite`) op te nemen. Dit sloot de kloof zonder dat het de functionele testen beïnvloedde.
 
-> *"Alles aan de login- en boekingsflow werkte vlekkeloos in elke test die we zelf draaiden. Dit is precies het soort detail dat we alleen vangen omdat we specifiek deze controle elke enkele keer draaien, niet omdat het ooit in normale tests zou verschijnen."*
-> — **Saskia Bergman, Agentschapeigenaar, Weert**
+> *"Alles aan de inlog- en boekingsstroom werkte vlekkeloos in elke test die we zelf uitvoerden. Dit is exact het soort detail dat we opvangen omdat we deze controle specifiek elke keer uitvoeren."*
+> — **Saskia Bergman, Bureau-eigenaar, Weert**
 
-**Kosten & tijdlijn:** €1.600 (white-label sessiecookiebeveiligingsaudit) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.600 (white-label sessie-cookie beveiligingsaudit) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een webbeveiligingsspecialist ontbrekende cookievlaggen een klein detail of een betekenisvol gat beschouwen?
+### Zou een webbeveiligingsspecialist ontbrekende cookievlaggen beschouwen als een betekenisvolle kloof?
 
-Betekenisvol, specifiek vanwege hoe het interageert met andere potentiële kwetsbaarheden — op zichzelf veroorzaakt het geen functionele storing, maar het verwijdert een verdedigingslaag die specifiek de schade beperkt die een aparte, ongerelateerde kwetsbaarheid elders in dezelfde applicatie anders zou kunnen veroorzaken.
+Ja, betekenisvol vanwege de manier waarop het communiceert met andere potentiële kwetsbaarheden – het verwijdert een verdedigingslaag.
 
-### Is dit het soort detail dat significant varieert per specifieke AI-tool die het originele project bouwde?
+### Verschilt dit detail per specifieke AI-tool die het project bouwde?
 
-Niet bijzonder per tool — cookievlagconfiguratie is een algemeen webontwikkelingsdetail dat elke AI-codeertool wel of niet standaard zou kunnen omvatten afhankelijk van precies hoe sessieafhandeling beschreven werd, in plaats van een patroon specifiek voor v0, Lovable, Bolt, of Cursor individueel.
+Niet bijzonder per tool – de configuratie van cookievlaggen is een algemeen webontwikkelingsdetail dat elke AI-tool al dan niet standaard opneemt.
 
-### Draagt Manifera's bredere sessiebeveiligingservaring specifiek goed over naar agentschapspartnerwerk zoals dat van Saskia?
+### Maakt Manifera's ervaring met sessiebeveiliging uit voor partnerwerk met bureaus?
 
-Ja, direct — de specifieke configuratiecontrole is identiek ongeacht of de opdracht komt via een directe founder-relatie of een agentschapspartnerschap, en Manifera's consistente toepassing van deze controle over vele verschillende klantcontexten is precies wat het een betrouwbaar, standaardonderdeel maakt van elke review in plaats van iets inconsistent toegepast.
+Ja, rechtstreeks – de specifieke configuratiecontrole is identiek, ongeacht of de relatie rechtstreeks met de oprichter of via een bureau is.
 
-### Herre Roelevink heeft gesproken over de waarde die LaunchStudio toevoegt specifiek systematische, herhaalbare review is in plaats van eenmalige inspectie — illustreert dit cookiegeval dat goed?
+### Illustreert deze casus de waarde van een systematische review?
 
-Heel goed — de waarde was geen eenmalige slimme ontdekking, het was het toepassen van dezelfde systematische checklist die Manifera op elke opdracht toepast, wat precies de herhaalbaar-proces-boven-eenmalige-inspectie-waarde is die Roelevink beschreven heeft als kernonderdeel van hoe LaunchStudio opereert.
+Heel goed – de waarde was niet een eenmalige ontdekking, maar het toepassen van dezelfde systematische controlelijst die op elk project wordt toegepast.
 
-### Zou een agentschap cookievlagverificatie moeten toevoegen aan hun eigen interne QA-checklist in plaats van elke keer te vertrouwen op een externe partner?
+### Moet een bureau cookie-vlagverificatie toevoegen aan zijn eigen interne QA-controlelijst?
 
-Het toevoegen aan een interne checklist is een redelijke stap voor eenvoudige, goed gedocumenteerde controles zoals deze, hoewel bewustzijn behouden van het volledige, evoluerende bereik van beveiligingsoverwegingen over elke categorie — niet alleen cookievlaggen specifiek — precies het soort uitgebreide, doorlopende dekking is die een toegewijde technische partner over het algemeen beter gepositioneerd is te behouden dan de eigen interne checklist van een agentschap alleen.
+Het toevoegen aan een interne controlelijst is een redelijke stap, hoewel het handhaven van bewustzijn over het volledige spectrum aan beveiliging baat heeft bij een gespecialiseerde partner.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Các thuộc tính bảo mật Cookie (Cookie Flags như HttpOnly, Secure, SameSite) là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HttpOnly ngăn JavaScript đọc Cookie (chống XSS), Secure chỉ cho gửi Cookie qua HTTPS, và SameSite ngăn chặn tấn công giả mạo yêu cầu (CSRF)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tại sao AI tool lại hay quên bật các thuộc tính HttpOnly và Secure cho Cookie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vì không bật cờ thì Cookie vẫn hoạt động và đăng nhập thành công trên môi trường Demo/Dev, khiến AI và lập trình viên coi đó là đã xong."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Các Agency/Freelancer khi nhận bàn giao code từ Client nên kiểm tra những gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Giữ lại toàn bộ giao diện (Frontend) và logic nghiệp vụ tốt, chỉ tập trung kiểm tra và vá các lỗ hổng ẩn ở Backend như Cookie Flags, CORS, Rate Limit và SQL Injection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cách tự kiểm tra Cookie Flags trên trình duyệt cực nhanh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "F12 -> tab Application -> chọn Cookies -> xem các cột HttpOnly, Secure, SameSite xem có tích v xanh hoặc hiển thị thông số chưa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thời gian kiểm tra và cấu hình chuẩn hóa Cookie Session mất bao lâu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thường hoàn thành rất nhanh trong 3-5 ngày làm việc dưới dạng dịch vụ White-label cho các Agency."
+      }
+    }
+  ]
+}
+</script>

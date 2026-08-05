@@ -1,17 +1,18 @@
 ---
-Titel: "AI Creator-lidmaatschapsplatforms: de omzeiling van content-Gating Niemand merkt het totdat een betalend lid het vindt"
+Titel: "AI-makerslidmaatschap-platformen: De omzeiling van inhoudsafscherming die niemand opmerkt totdat een betalend lid deze vindt"
 Trefwoorden: ai secure, ai native, creator membership platform, content gating bypass, signed URL access control
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# AI Creator-lidmaatschapsplatforms: de omzeiling van content-Gating Niemand merkt het totdat een betalend lid het vindt
+
+# AI-makerslidmaatschap-platformen: De omzeiling van inhoudsafscherming die niemand opmerkt totdat een betalend lid deze vindt
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI Creator-lidmaatschapsplatforms: de omzeiling van content-Gating Niemand merkt het totdat een betalend lid het vindt",
-  "description": "Als het lidmaatschapsplatform van je maker premium video-inhoud met een voorspelbare, niet-geverifieerde URL aanbiedt, heb je geen toegangscontrole: je hebt een inlogscherm dat optioneel is. Hier leest u hoe u dit kunt controleren en hoe u dit kunt oplossen.",
+  "headline": "AI-makerslidmaatschap-platformen: De omzeiling van inhoudsafscherming die niemand opmerkt totdat een betalend lid deze vindt",
+  "description": "Als uw lidmaatschapsplatform voor makers premium video-inhoud afschermt met een voorspelbare URL, heeft u geen toegangsbeheer.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,54 +31,58 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Controleert uw lidmaatschapsplatform daadwerkelijk wie er vraagt ​​voordat het premium-inhoud aanbiedt, of controleert het alleen wie is ingelogd *voordat de link* naar die inhoud wordt weergegeven? Die klinken als hetzelfde. Dat is niet het geval, en de kloof ertussen is precies hoe een betalend lid uiteindelijk ontdekt dat uw hele inhoudsbibliotheek één geraden URL verwijderd is van iemand op internet.
+Controleert uw lidmaatschapsplatform daadwerkelijk wie er vraagt voordat het premium inhoud serveert, of controleert het alleen wie er is ingelogd *voordat het de link toont* naar die inhoud? Dat klinkt als hetzelfde ding. Dat is het niet – en de kloof ertussen is exact hoe een betalend lid ontdekt dat uw gehele inhoudsbibliotheek één geraden URL verwijderd is van iedereen op het internet.
 
-## De bug zit niet in uw code, maar in wat uw code niet controleert
+## De bug zit niet in uw code — het zit in wat uw code niet controleert
 
-AI-paginabouwers zoals Bolt zijn erg goed in voorwaardelijke weergave: als de gebruiker een ingelogd lid is, toon dan de knop "Kijken"; Zo niet, toon dan een betaalmuur. Waar ze niet automatisch goed in zijn, is het afdwingen van diezelfde poort op de bronlaag: het daadwerkelijke videobestand, de afbeelding of de pdf die wordt opgevraagd. Een gebruikelijk patroon in door AI gegenereerde apps is het opslaan van premium media op een voorspelbare, publiekelijk bereikbare URL, en vervolgens volledig vertrouwen op de frontend om te beslissen of er een link naar wordt weergegeven. Dat is poort aan de clientzijde, en poort aan de clientzijde is geen toegangscontrole. Het is een UI-gemak dat ook het hele beveiligingsmodel omvat, wat betekent dat iedereen die de directe URL verkrijgt (of raadt) uw inlogscherm volledig kan omzeilen.
+AI-paginabouwers zoals Bolt zijn erg goed in voorwaardelijke weergave: als de gebruiker een ingelogd lid is, toon de knop "Bekijken"; zo niet, toon een betaalmuur. Waar ze niet automatisch goed in zijn, is het afdwingen van diezelfde afscherming op de bronlaag – het daadwerkelijke videobestand, de afbeelding of de PDF die wordt opgevraagd. Een veelvoorkomend patroon in met AI gegenereerde apps is het opslaan van premium media op een voorspelbare, openbaar bereikbare URL, en vervolgens volledig vertrouwen op de frontend om te beslissen of een link daarnaar wordt weergegeven. Dat is afscherming aan de clientzijde. En afscherming aan de clientzijde is geen toegangsbeheer. Het is een UI-gemak dat toevallig ook het gehele beveiligingsmodel is, wat betekent dat iedereen die de directe URL verkrijgt – of raadt – uw inlogscherm volledig kan omzeilen.
 
-## Hoe URL-gebaseerde "Gating" feitelijk werkt en faalt
+## Hoe op URL gebaseerde "afscherming" daadwerkelijk werkt, en faalt
 
-Stel je een video voor die is opgeslagen op een pad zoals `/media/videos/episode-42.mp4`, of erger nog, een oplopende numerieke ID zoals `/media/videos/1042`. De lidmaatschapscontrole vindt plaats wanneer uw app besluit of er een link naar dat bestand *weergegeven* moet worden op de ledenpagina. Maar het bestand zelf vraagt, zodra je de URL hebt, niet meer wie je bent; het wordt op dezelfde manier aangeboden als elk statisch item, aan iedereen die erom vraagt. Een lid dat met de rechtermuisknop op "video-URL kopiëren" klikt en deze deelt op een Discord-server, heeft geen slimme hack gevonden. Ze hebben de enige verdedigingslinie gevonden die uw inhoud had, en deze verdwijnt zodra de URL de gebruikersinterface van uw app verlaat.
+Stelt u zich een video voor die is opgeslagen op een pad zoals `/media/videos/episode-42.mp4`, of erger nog, een oplopend numeriek ID zoals `/media/videos/1042`. De lidmaatschapscontrole vindt plaats wanneer uw app beslist of er een link naar dat bestand wordt *weergegeven* op de pagina die alleen voor leden is. Maar het bestand zelf vraagt, zodra u de URL heeft, niet wie u bent – het wordt op dezelfde manier geserveerd als elk statisch element wordt geserveerd, aan iedereen die het opvraagt. Een lid dat op "videolink kopiëren" klikt met de rechtermuisknop en deze deelt in een Discord-server heeft geen slimme hack gevonden. Ze hebben de daadwerkelijke, enige verdedigingslinie gevonden die uw inhoud had, en die verdampt op het moment dat de URL de UI van uw app verlaat.
 
-## Ondertekende URL's, controles aan de serverzijde en waarom poorttoegang aan de clientzijde geen beveiliging is
+## Ondertekende URL's, controles aan de serverzijde, en waarom afscherming aan de clientzijde geen beveiliging is
 
-De oplossing vereist het verplaatsen van de autorisatie van "toont de gebruikersinterface een link" naar "verifieert de server een geldige sessie voordat het bestand wordt geretourneerd, elke keer weer." In de praktijk betekent dit dat ofwel premiummedia worden aangeboden via een geauthenticeerd eindpunt dat bij elk verzoek de lidmaatschapsstatus van de aanvrager controleert, ofwel dat er kortstondige, ondertekende URL's worden uitgegeven die binnen enkele minuten verlopen en nieuw worden gegenereerd per geauthenticeerd verzoek in plaats van statisch, voorspelbaar en permanent te zijn. Beide benaderingen betekenen dat de URL zelf niet langer het geheim is; de sessie of handtekening is dat wel, en die kan niet terloops in een chatroom worden gekopieerd zoals een statische link dat kan.
+De herstelling vereist het verplaatsen van autorisatie van "toont de UI een link" naar "verifieert de server een geldige sessie voordat het bestand wordt geretourneerd, elke enkele keer opnieuw". In de praktijk betekent dat het serveren van premium media via een geauthenticeerd eindpunt dat de lidmaatschapsstatus van de aanvrager bij elk verzoek controleert, óf het uitgeven van kortstondige ondertekende URL's die binnen enkele minuten verlopen en vers worden gegenereerd per geauthenticeerd verzoek. In plaats van statisch, raadbaar en permanent te zijn. Elk van beide benaderingen betekent dat de URL zelf stopt het geheim te zijn – de sessie of handtekening is dat. En dat kan niet zomaar losjes in een chatroom worden geplakt zoals een statische link.
 
-De meer dan 120 technici van Manifera hebben toegangscontrolesystemen gebouwd voor zakelijke klanten - dezelfde maatstaf die LaunchStudio hanteert bij het beoordelen van de content-gating-logica van een makersplatform, ongeacht of het platform tien betalende leden bedient of tienduizend. Dit is een van de meest voorkomende beveiligingslekken die we tegenkomen in door AI gegenereerde SaaS-producten, vooral omdat het onzichtbaar is bij normale tests: alles werkt prima zolang je door de app klikt op de manier waarop deze is ontworpen om te worden gebruikt. De bypass komt alleen naar voren als iemand opzettelijk netwerkverzoeken inspecteert of een URL deelt buiten de beoogde stroom van de app – en dat is precies wat een nieuwsgierig lid, of een kwaadwillig lid, uiteindelijk doet.
+Manifera's meer dan 120 ingenieurs hebben toegangsbeschermingssystemen gebouwd voor enterprise-klanten – dezelfde norm die LaunchStudio toepast bij het beoordelen van de inhoudsafschermingslogica van een makersplatform. Ongeacht of het platform tien betalende leden serveert of tienduizend. Dit is een van de meest voorkomende beveiligingskloven die we vinden in met AI gegenereerde SaaS-producten specifiek omdat het onzichtbaar is bij normaal testen: alles werkt prima zolang u door de app klikt op de manier waarop deze is ontworpen om te worden gebruikt. De omzeiling verschijnt pas wanneer iemand bewust netwerkverzoeken inspecteert of een URL deelt buiten de beoogde stroom van de app om – wat exact is wat een nieuwsgierig lid, of een kwaadwillend lid, uiteindelijk doet.
 
-Ons team, dat werkt vanuit het kantoor van LaunchStudio in Amsterdam, beschouwt dit als een standaardonderdeel van elke technische beoordeling van inhoud of platforms met toegangspoort, naast het controleren of beheerdersroutes, API-eindpunten en bestandsopslagbuckets allemaal dezelfde autorisatie aan de serverzijde afdwingen die volgens de gebruikersinterface bestaat.
+Ons team, werkend vanuit LaunchStudio's kantoor in Amsterdam, behandelt dit als een standaard onderdeel van elke technische beoordeling voor platforms met inhouds- of toegangsafscherming, samen met het controleren of beheerdersroutes, API-eindpunten en bestandsopslag-buckets allemaal dezelfde autorisatie aan de serverzijde afdwingen die de UI suggereert dat bestaat.
 
-Als u een technische audit van uw toegangscontrolelogica wilt voordat u de volgende inhoud plaatst of lanceert, kunt u [contact opnemen via LaunchStudio](https://launchstudio.eu/en/#contact). Voor hoe dit patroon zich op bedrijfsschaal afspeelt, zie Manifera's praktijk voor [webapp-ontwikkeling](https://www.manifera.com/services/web-app-develop/).
+Als u een technische audit wilt van uw toegangsbeschermingslogica vóór uw volgende inhoudsdrop of lancering, [neem contact op via LaunchStudio](https://launchstudio.eu/en/#contact). Voor hoe dit patroon zich afspeelt op enterprise-schaal, bekijk Manifera's [webapp-ontwikkelingspraktijk](https://www.manifera.com/services/web-app-develop/).
 
 ## Uw CDN weet niet dat de ondertekende URL is verlopen
 
-Het implementeren van ondertekende URL's via de server is de juiste beveiligingsstap. Een veelvoorkomende leemte ontstaat echter bij de wisselwerking met uw CDN (Content Delivery Network). Als het CDN de reactie (het mediabestand) met de oorspronkelijke ondertekende URL te lang in de cache houdt, kan een gebruiker met de verlopen link het bestand nog steeds downloaden vanuit de CDN-cache.
+Zodra premium video achter ondertekende URL's is geplaatst, heeft een tweede, stiller probleem de neiging te verschijnen op het moment dat het platform genoeg groeit om een CDN nodig te hebben voor videoprestaties. Een CDN bewaart reacties op basis van URL, en het hele punt van een ondertekende URL is dat deze bij elk verzoek verandert – wat caching normaal gesproken volledig tenietdoet en het afspelen van video pijnlijk traag kan maken. Oprichters, of de AI-tooling die de herstelling genereert, lossen de traagheid vaak op door de reactie gedurende een bepaald venster te bewaren in de cache ongeacht het verloop van de handtekening zelf, zodat de video snel laadt bij herhaalde weergaven. Die snelle route opent stilletjes de kloof die het geacht werd te dichten: de CDN blijft een gecachete kopie van de video serveren aan iedereen met die URL zolang de cache-invoer leeft, zelfs ver voorbij het moment dat de handtekening zelf is verlopen. De CDN controleert de handtekening immers nooit opnieuw – het vergelijkt de URL simpelweg met een gecachet object.
 
-Zorg ervoor dat uw CDN-cachingkoppen strikt aansluiten bij de vervaltijd van de ondertekende URL:
+De oplossing is het korter of gelijk houden van de cache-levensduur van de CDN aan het eigen verloopvenster van de ondertekende URL, en het markeren van geauthenticeerde mediareacties zodat tussenliggende caches ze niet langer vasthouden dan dat:
 
-```javascript
-function setSecurityHeaders(res, expiryInSeconds) {
-  res.setHeader('Cache-Control', `private, max-age=${expiryInSeconds}`);
+```
+function mediaResponseHeaders(signedUrlExpiresInSeconds) {
+  return {
+    'Cache-Control': `private, max-age=${signedUrlExpiresInSeconds}`,
+  };
 }
 ```
 
+Een ondertekende URL met een verloopduur van vijf minuten en een CDN-cache ingesteld om reacties een uur vast te houden is helemaal geen venster van vijf minuten – het is een uur, en niemand ontdekt die kloof totdat iemand het bewust test.
+
 ## Echt voorbeeld
 
-### Een AI-Native oprichter in actie: het URL-patroon dat iedereen zou kunnen raden
+### Een AI-native oprichter in actie: Het URL-patroon dat iedereen kon raden
 
-Lieke Hermans, een oprichtster uit Amersfoort, heeft CreatorClub gebouwd – een besloten lidmaatschapsplatform waar makers premium videocontent publiceren voor betalende abonnees – met behulp van Bolt. De lidmaatschapsaanmelding, Stripe-facturering en de alleen voor leden toegankelijke inhoudsbibliotheek functioneerden allemaal correct volgens Lieke's eigen tests: log in, bekijk de video's, niet-leden zien in plaats daarvan een betaalmuur.
+Lieke Hermans, een oprichter in Amersfoort, bouwde CreatorClub – een afgeschermd lidmaatschapsplatform waar makers premium video-inhoud publiceren voor betalende abonnees – met behulp van Bolt. De lidmaatschapsaanmelding, Stripe-facturering en de bibliotheek met inhoud alleen voor leden functioneerden allemaal correct door Lieke's eigen testen: log in, bekijk de video's, niet-leden zien in plaats daarvan een betaalmuur.
 
-Het gat kwam aan het licht toen een betalend lid, bijna terloops, vertelde dat ze ontdekten dat ze een video rechtstreeks konden openen door de URL ervan in een nieuw browsertabblad te plakken - zonder inloggen. De video-URL's volgden een eenvoudig, opeenvolgend patroon en de videobestanden zelf werden aangeboden vanuit openbare opslag zonder dat er op de server werd gecontroleerd wie ze opvroeg. De lidmaatschapspoort bestond volledig in de frontend; er zat helemaal geen autorisatie achter de feitelijke inhoud.
+De kloof kwam naar boven toen een betalend lid bijna in het voorbijgaan opmerkte dat hij had ontdekt dat hij een video rechtstreeks kon openen door de URL in een nieuw browsertabblad te plakken – geen inlog vereist. De video-URL's volgden een eenvoudig, opeenvolgend patroon, en de videobestanden zelf werden geserveerd vanuit openbare opslag zonder controle aan de serverzijde op wie ze opvroeg. De lidmaatschapsgrens bestond volledig in de frontend; de daadwerkelijke inhoud had helemaal geen autorisatie erachter.
 
-De technici van LaunchStudio hebben premium videolevering achter een geverifieerd eindpunt geplaatst dat de status van actief lidmaatschap bij elk verzoek verifieert, de statische, voorspelbare URL's vervangen door kortstondige ondertekende URL's die per sessie worden gegenereerd, en de rest van de opslag- en API-routes van het platform gecontroleerd om te bevestigen dat geen andere inhoud hetzelfde niet-geverifieerde patroon volgde.
+LaunchStudio's ingenieurs verplaatsten de levering van premium video achter een geauthenticeerd eindpunt dat de actieve lidmaatschapsstatus bij elk verzoek verifieert, vervingen de statische, voorspelbare URL's door kortstondige ondertekende URL's gegenereerd per sessie, en controleerden de rest van de opslag- en API-routes van het platform om te bevestigen dat geen enkele andere inhoud hetzelfde niet-geauthenticeerde patroon volgde.
 
-**Resultaat:** premium inhoud is niet langer toegankelijk via een gedeelde of geraden URL - elk verzoek wordt nu aan de serverzijde geautoriseerd, onafhankelijk van wat de frontend weergeeft.
+**Resultaat:** premium inhoud kan niet langer worden geopend via een gedeelde of geraden URL – elk verzoek is nu aan de serverzijde geautoriseerd, onafhankelijk van wat de frontend toont.
 
-> *"Een lid vertelde me, bijna terloops, dat ze gewoon een link konden plakken en het inloggen helemaal konden overslaan - dat was het moment waarop ik besefte dat mijn betaalmuur decoratief was."*
-> — **Lieke Hermans, oprichtster, CreatorClub (Amersfoort)**
+> *"Een lid dat me bijna terloops vertelde dat hij gewoon een link kon plakken en de inlog volledig kon overslaan – dat is het moment waarop ik me realiseerde dat mijn betaalmuur decoratief was."*
+> — **Lieke Hermans, Oprichter, CreatorClub (Amersfoort)**
 
-**Kosten en tijdlijn:** € 850 (ondertekende URL-toegangscontrole, geverifieerde medialevering, volledige opslag en API-route-audit) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 850 (toegangsbeheer via ondertekende URL's, geauthenticeerde medialevering, volledige opslag- en API-route-audit) — voltooid in 4 werkdagen.
 
 ---
 
@@ -85,24 +90,23 @@ De technici van LaunchStudio hebben premium videolevering achter een geverifieer
 
 ### Hoe kan ik snel controleren of mijn eigen platform dit probleem heeft?
 
-Log in als lid, open een item met premium inhoud, kopieer de directe URL ervan en open vervolgens die URL in een privé/incognito browservenster zonder actieve sessie. Als de inhoud nog steeds wordt geladen, heb je precies dit gat.
+Log in als lid, open een premium inhoudsitem, kopieer de directe URL, en open die URL vervolgens in een privé/incognito browservenster zonder actieve sessie. Als de inhoud nog steeds laadt, heeft u exact deze kloof.
 
-### Waarom gebeurt dit specifiek bij door AI gegenereerde platforms?
+### Waarom gebeurt dit specifiek bij met AI gegenereerde platformen?
 
-AI-bouwers gebruiken standaard voorwaardelijke UI-weergave voor poortlogica, omdat dat is wat een prompt als "voeg een betaalmuur toe die alleen voor leden is" doorgaans beschrijft, zonder expliciet te specificeren dat de onderliggende bron ook autorisatie aan de serverzijde nodig heeft.
+AI-bouwers kiezen standaard voor voorwaardelijke UI-weergave voor afschermingslogica omdat dat is wat een prompt zoals "voeg een betaalmuur alleen voor leden toe" doorgaans beschrijft, zonder expliciet te specificeren dat de onderliggende bron ook autorisatie aan de serverzijde nodig heeft.
 
-### Is een ondertekende URL voldoende of heb ik een volledig geverifieerd eindpunt nodig?
+### Is een ondertekende URL voldoende, of heb ik een volledig geauthenticeerd eindpunt nodig?
 
-Ondertekende URL's met een korte vervalperiode zijn doorgaans voldoende voor medialevering en zijn eenvoudiger te implementeren; een volledig geauthenticeerd eindpunt geeft meer controle als u logboekregistratie per aanvraag of dynamische toestemmingscontroles nodig heeft, waarbij de technici van Manifera u kunnen helpen deze te bereiken op basis van de schaal van uw platform.
+Ondertekende URL's met korte verloopvensters zijn doorgaans voldoende voor medialevering en eenvoudiger te implementeren. Een volledig geauthenticeerd eindpunt geeft meer controle als u logboeken per verzoek of dynamische machtigingscontroles nodig heeft.
 
-### Heeft dit alleen betrekking op video-inhoud?
+### Beïnvloedt dit alleen video-inhoud?
 
-Nee. Hetzelfde patroon treft elke beveiligde bron met een voorspelbare URL, inclusief downloadbare pdf's, premiumafbeeldingen, audiobestanden en zelfs API-eindpunten die alleen voor leden toegankelijke gegevens retourneren.
+Nee – hetzelfde patroon beïnvloedt elke afgeschermde bron met een voorspelbare URL, inclusief downloadbare PDF's, premium afbeeldingen, audiobestanden en zelfs API-eindpunten die gegevens alleen voor leden retourneren.
 
-### Is dit het soort recensie dat het Amsterdamse team van LaunchStudio regelmatig doet?
+### Brengt het toevoegen van een CDN voor ondertekende URL's de omzeiling terug?
 
-Ja – audits op het gebied van content-gating en toegangscontrole zijn een standaard onderdeel van de technische beoordelingen die door het in Amsterdam gevestigde team van LaunchStudio worden afgehandeld, specifiek voor makers- en lidmaatschapsplatforms.
-
+Dat kan – als de CDN de reactie langer in de cache bewaart dan het eigen verloop van de ondertekende URL, blijft deze de gecachete video serveren aan iedereen met die URL nadat de handtekening had moeten verlopen. De levensduur van de cache moet dus zo worden ingesteld dat deze overeenkomt met, en niet groter is dan, het venster van de ondertekende URL.
 
 <script type="application/ld+json">
 {
@@ -111,42 +115,42 @@ Ja – audits op het gebied van content-gating en toegangscontrole zijn een stan
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe kan ik snel controleren of mijn eigen platform dit probleem heeft?",
+      "name": "Hoe check ik of mijn platform gevoelig is voor direct-link omzeiling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Log in als lid, open een item met premium inhoud, kopieer de directe URL ervan en open vervolgens die URL in een privé/incognito browservenster zonder actieve sessie. Als de inhoud nog steeds wordt geladen, heb je precies dit gat."
+        "text": "Kopieer de video-URL als ingelogde gebruiker en plak deze in een incognitoscherm. Laadt de video zonder inlog, dan is er sprake van client-side lek."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom gebeurt dit specifiek bij door AI gegenereerde platforms?",
+      "name": "Waarom bouwt AI standaard alleen frontend paywalls?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI-bouwers gebruiken standaard voorwaardelijke UI-weergave voor poortlogica, omdat dat is wat een prompt als \"voeg een betaalmuur toe die alleen voor leden is\" doorgaans beschrijft, zonder expliciet te specificeren dat de onderliggende bron ook autorisatie aan de serverzijde nodig heeft."
+        "text": "Omdat prompts meestal UI-voorwaarden beschrijven (toon knop wel/niet). AI voegt daar niet automatisch backend autorisatie aan toe."
       }
     },
     {
       "@type": "Question",
-      "name": "Is een ondertekende URL voldoende of heb ik een volledig geverifieerd eindpunt nodig?",
+      "name": "Zijn ondertekende URL's (Signed URLs) voldoende voor beveiliging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ondertekende URL's met een korte vervalperiode zijn doorgaans voldoende voor medialevering en zijn eenvoudiger te implementeren; een volledig geauthenticeerd eindpunt geeft meer controle als u logboekregistratie per aanvraag of dynamische toestemmingscontroles nodig heeft, waarbij de technici van Manifera u kunnen helpen deze te bereiken op basis van de schaal van uw platform."
+        "text": "Ja, Signed URLs met een korte geldigheidsduur (bijv. 5 min) voorkomen dat directe links openbaar gedeeld worden."
       }
     },
     {
       "@type": "Question",
-      "name": "Heeft dit alleen betrekking op video-inhoud?",
+      "name": "Geldt dit lek ook voor andere bestanden zoals PDF's en afbeeldingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Hetzelfde patroon treft elke beveiligde bron met een voorspelbare URL, inclusief downloadbare pdf's, premiumafbeeldingen, audiobestanden en zelfs API-eindpunten die alleen voor leden toegankelijke gegevens retourneren."
+        "text": "Ja, elk statisch bestand op een bekende of voorspelbare URL zonder server-check kan buiten de paywall om ingezien worden."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit het soort recensie dat het Amsterdamse team van LaunchStudio regelmatig doet?",
+      "name": "Kan een CDN per ongeluk verlopen URL's toch blijven tonen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja – audits op het gebied van content-gating en toegangscontrole zijn een standaard onderdeel van de technische beoordelingen die door het in Amsterdam gevestigde team van LaunchStudio worden afgehandeld, specifiek voor makers- en lidmaatschapsplatforms."
+        "text": "Ja, als de CDN cache-tijd langer is ingesteld dan de verloopdatum van de Signed URL. De Cache-Control moet exact matchen."
       }
     }
   ]

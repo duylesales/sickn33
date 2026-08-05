@@ -1,73 +1,167 @@
 ---
-Titel: "Je Kunt Een App Met AI Bouwen In Een Weekend. Hier Is Week Twee"
+Titel: "U kunt in een weekend een app met AI bouwen. Hier is week twee"
 Trefwoorden: build an app with ai, build app with ai, ai coding, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# Je Kunt Een App Met AI Bouwen In Een Weekend. Hier Is Week Twee
+# U kunt in een weekend een app met AI bouwen. Hier is week twee
 
-Week één is het leuke deel: je bouwt een app met AI, ziet het sneller samenkomen dan je dacht mogelijk, en tegen zondagavond heb je iets echts om aan mensen te laten zien. Week twee is stiller en minder zichtbaar, en dat is waar het meeste daadwerkelijke risico van een weekendbuild de neiging heeft te leven — beginnend met een simpele vraag die bijna niemand stelt tijdens de opwinding van week één: waar zijn jouw API-sleutels precies terechtgekomen?
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "U kunt in een weekend een app met AI bouwen. Hier is week twee",
+  "description": "Een checklist voor productiegereedheid voor de specifieke week na het weekend bouwen, gefocust op gelekte API-sleutels.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-24",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/you-can-build-an-app-with-ai-in-a-weekend-heres-week-two"
+  }
+}
+</script>
 
-## Checklistpunt Eén: Doorzoek Jouw Repository Op Blootgestelde Sleutels
+Week één is het leuke gedeelte: u bouwt een app met AI, ziet het sneller samenkomen dan u voor mogelijk hield, en tegen zondagavond heeft u iets echts om aan mensen te laten zien. Week twee is stiller en minder zichtbaar, en het is waar het meeste daadwerkelijke risico in een weekend-build de neiging heeft te leven – beginnend met een eenvoudige vraag die bijna niemand stelt tijdens de opwinding van week één: waar zijn uw API-sleutels exact geëindigd?
 
-Een weekend snelle iteratie betekent vaak werkende code kopiëren tussen bestanden, frequent committen zonder veel controle, en af en toe een sleutel rechtstreeks in een configbestand plakken om iets snel werkend te krijgen, met elke intentie het "later" ergens veiliger heen te verplaatsen. Controleren of dat "later" daadwerkelijk gebeurde — de geschiedenis van jouw eigen repository doorzoeken op alles dat op een API-sleutel of credential lijkt — is een controle van vijf minuten met buitenproportionele waarde.
+## Checklist Item Één: Zoek in uw repository naar blootgestelde sleutels
 
-## Checklistpunt Twee: Bevestig De Zichtbaarheidsinstelling Van Jouw Repository
+Een weekend van snelle iteratie betekent vaak het kopiëren van werkende code tussen bestanden, frequent committen zonder veel controle, en af en toe een sleutel rechtstreeks in een configuratiebestand plakken om iets snel werkend te krijgen. Dit alles met de volledige intentie om het "later" naar een veiligere plek te verplaatsen. Controleren of dat "later" ooit daadwerkelijk is gebeurd – het doorzoeken van uw eigen repository-geschiedenis naar alles wat lijkt op een API-sleutel of inloggegeven – is een controle van vijf minuten met enorme waarde.
 
-Een verrassend aantal founder-gebouwde projecten zit standaard in een publieke GitHub-repository, hetzij omdat de founder er niet aan dacht de instelling te veranderen, hetzij omdat hij niet besefte dat de instelling bestond. Een publieke repository betekent dat alles wat erin gecommit is — inclusief een sleutel gemist tijdens de bovenstaande zoekopdracht — zichtbaar is voor letterlijk iedereen, geïndexeerd door geautomatiseerde scanners die specifiek publieke repositories doorzoeken op precies dit patroon.
+## Checklist Item Twee: Bevestig de zichtbaarheidsinstelling van uw repository
 
-## Checklistpunt Drie: Roteer Alles Dat Ooit Blootgesteld Was, Zelfs Kort
+Een verassend aantal door oprichters gebouwde projecten zit standaard in een openbare GitHub-repository. Hetzij omdat de oprichter er niet aan dacht om het te wijzigen, hetzij omdat hij zich niet realiseerde dat de instelling bestond. Een openbare repository betekent dat alles wat er naartoe is committed – inclusief een sleutel die gemist is tijdens de bovenstaande zoekopdracht – zichtbaar is voor letterlijk iedereen. En het wordt geïndexeerd door geautomatiseerde scanners die specifiek openbare repositories doorzoeken op exact dit patroon.
 
-Als een sleutel ooit gecommit werd naar een publieke repository, zelfs als hij later verwijderd werd, is de veiligste aanname dat hij al gezien werd — git-geschiedenis bewaart oude commits, en geautomatiseerde scanners werken snel genoeg dat "het was maar een uur publiek" geen betekenisvolle veiligheidsmarge is. Roteren (een nieuwe sleutel genereren en de oude intrekken) is de enige manier om zeker te zijn dat een oude blootstelling niet nog steeds bruikbaar is.
+## Checklist Item Drie: Roteer alles wat ooit werd blootgesteld, zelfs kortstondig
 
-## Checklistpunt Vier: Verplaats Resterende Geheimen Naar Correcte Omgevingsconfiguratie
+Als een sleutel ooit is committed naar een openbare repository, zelfs als deze later is verwijderd, is de veiligste veronderstelling dat deze al is gezien – git-geschiedenis bewaart oude commits, en geautomatiseerde scanners werken snel genoeg dat "het was slechts een uur openbaar" geen betekenisvolle veiligheidsmarge is. Roterend (het genereren van een nieuwe sleutel en het intrekken van de oude) is de enige manier om er zeker van te zijn dat een oude blootstelling niet nog steeds bruikbaar is.
 
-Voorbij de onmiddellijke opruiming horen geheimen in omgevingsvariabelen of een toegewijde geheimenbeheerder, nooit rechtstreeks in gecommitte code — dit is een permanente gewoonteverandering, geen eenmalige fix, aangezien dezelfde handige kortere weg die de eerste blootstelling veroorzaakte precies zo beschikbaar is tijdens elke toekomstige functie die later toegevoegd wordt.
+## Checklist Item Vier: Verplaats overgebleven geheimen naar een correcte omgevingsconfiguratie
 
-## Checklistpunt Vijf: Krijg Een Tweede Paar Ogen Voordat Echte Gebruikers Arriveren
+Voorbij de onmiddellijke opschoning horen geheimen thuis in omgevingsvariabelen (environment variables) of een toegewijde secrets manager, en nooit rechtstreeks in committed code – dit is een permanente gewoonteverandering en geen eenmalige herstelling. De gebruikelijke handige afsnijding die de eerste blootstelling veroorzaakte is namelijk net zo beschikbaar tijdens elke toekomstige functie die er later wordt toegevoegd.
 
-Niets van het bovenstaande is exotisch of moeilijk te begrijpen zodra erop gewezen, wat precies het probleem is — een founder diep in zijn eigen weekendbuild heeft geen natuurlijke aanleiding om te stoppen en er specifiek naar te controleren, wat precies het gat is dat een tweede, onafhankelijke review dicht. [LaunchStudio](https://launchstudio.eu/en/) voert precies dit soort geheimen- en repositoryaudit uit als een standaard eerste stap in zijn Launch Ready-pakket, gesteund door Manifera's 11+ jaar productie-engineeringervaring.
+Een toegewijde secrets manager (zoals Doppler, 1Password voor ontwikkelaars, of een ingebouwde geheimendienst van een cloudprovider) voegt betekenisvolle bescherming toe voorbij een gewoon `.env`-bestand. Het biedt namelijk typisch toegangslogboeken, eenvoudige rotatie, en scheiding per omgeving tussen ontwikkelings-, staging- en productie-inloggegevens. Niets daarvan geeft een plat omgevingsbestand u standaard. Voor een solo-oprichter sluit zelfs de discipline van een correct via `.gitignore` uitgesloten `.env`-bestand, dat consequent gebruikt wordt voor elke nieuwe integratie, het meeste praktische risico af.
 
-Manifera's geheimen- en configuratieaudits worden uitgevoerd door het engineeringteam gevestigd bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
+## Checklist Item Vijf: Krijg een tweede paar ogen voordat echte gebruikers arriveren
 
-[Laten we in beweging komen — prototype naar productie in weken, niet maanden](https://launchstudio.eu/en/#contact).
+Niets van het bovenstaande is exotisch of moeilijk te begrijpen zodra het aangewezen wordt, wat exact het probleem is – een oprichter die diep in zijn eigen weekend-build zit heeft geen natuurlijke prikkel om te stoppen en specifiek hierop te controleren. Dit is precies de kloof die een tweede, onafhankelijke beoordeling sluit. [LaunchStudio](https://launchstudio.eu/en/) voert exact dit soort geheimen- en repository-audit uit als een standaard eerste stap in haar Launch Ready-pakket, ondersteund door Manifera's 11+ jaar ervaring met productie-engineering.
+
+Manifera's audits voor geheimen en configuratie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, met klantgesprekken afgehandeld via het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Laten we aan de slag gaan — van prototype tot productie in weken](https://launchstudio.eu/en/#contact).
+
+## Voorbij API-sleutels: Een volledigere geheimenchecklist vóór de lancering
+
+API-sleutels krijgen de meeste aandacht omdat ze het meest duidelijk schadelijk zijn bij blootstelling. Maar een oprecht grondige controle vóór de lancering controleert meerdere andere categorieën van geheimen die net zo gemakkelijk ergens achtergelaten worden waar ze niet zouden moeten zitten.
+
+**Kijk voorbij `.env`-bestanden naar deze veelvoorkomende lekpunten**
+
+- **Webhook ondertekenings-geheimen** — gebruikt om te verifiëren dat een binnenkomende webhook (van Stripe, GitHub, of een andere dienst) oprecht afkomstig is van die provider
+- **OAuth-app clientgeheimen** — het inloggegeven achter "Inloggen met Google" of vergelijkbare integraties
+- **Database verbindings-tekenreeksen (connection strings)** — deze bevatten vaak een gebruikersnaam en wachtwoord rechtstreeks in de URL zelf, en worden geplakt in scripts of documentatie
+- **CI/CD uitrol-tokens** — inloggegevens opgeslagen in een build-pijplijnconfiguratie
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de sleutel die een maand in het volle zicht zat
+### Een AI-native oprichter in actie: De sleutel die een maand lang in het volle zicht zat
 
-Noa, een voormalig bruiloftscoördinator die founder werd in Middelburg, bouwde TrouwPlan, een AI-geassisteerde bruiloftsplanningstool gebouwd met Bolt over één weekend, en publiceerde het project naar een publieke GitHub-repository zonder veel aandacht aan de zichtbaarheidsinstelling te besteden.
+Noa, een voormalig bruiloftcoördinator die oprichter werd in Middelburg, bouwde TrouwPlan, een AI-ondersteunde bruiloftplanningstool gebouwd met Bolt over een enkel weekend, en publiceerde het project naar een openbare GitHub-repository zonder veel na te denken over de zichtbaarheidsinstelling.
 
-Een maand later, ter voorbereiding op een kleine lokale lancering, vermeldde Noa het project aan een ontwikkelaarvriend, die uit gewoonte een snelle scan deed en een cloudopslag-dienstaccountsleutel vond zittend in een vroege commit, de hele tijd volledig blootgesteld. LaunchStudio's review bevestigde dat de sleutel brede opslagtoegang had en nooit geroteerd was sinds de initiële commit.
+Een maand later, tijdens het voorbereiden van een kleine lokale lancering, vermeldde Noa het project aan een vriend die ontwikkelaar is. Hij voerde uit gewoonte een snelle scan uit en vond een sleutel van een cloudopslag-serviceaccount die in een vroege commit zat, de gehele tijd volledig blootgesteld. LaunchStudio's beoordeling bevestigde dat de sleutel brede opslagtoegang had en nooit geroteerd was sinds de initiële commit.
 
-**Resultaat:** LaunchStudio roteerde de blootgestelde sleutel onmiddellijk, migreerde alle resterende geheimen naar correcte omgevingsconfiguratie, en zette de repository op privé, en dicht de blootstelling zonder wijzigingen aan TrouwPlans daadwerkelijke functies.
+**Resultaat:** LaunchStudio roteerde de blootgestelde sleutel onmiddellijk, migreerde alle overgebleven geheimen naar een correcte omgevingsconfiguratie, en zette de repository op privé. Dit sloot de blootstelling zonder enige wijziging aan TrouwPlan's daadwerkelijke functies.
 
-> *"Een maand lang die sleutel gewoon daar in een publieke repo, en ik kwam er puur achter omdat een vriend toevallig keek. Dat is geen systeem waar ik voortaan op wil vertrouwen."*
-> — **Noa Bergsma, Founder, TrouwPlan (Middelburg)**
+> *"Een maand dat die sleutel daar gewoon in een openbare repo zat, en ik kwam er puur achter omdat een vriend toevallig keek. Dat is geen systeem waar ik voortaan op wil vertrouwen."*
+> — **Noa Bergsma, Oprichter, TrouwPlan (Middelburg)**
 
-**Kosten & tijdlijn:** €1.200 (geheimenaudit, sleutelrotatie, en repositoryharding) — voltooid in 4 werkdagen.
+**Kosten en tijdlijn:** € 1.200 (geheimen-audit, sleutelrotatie, en repository-uitharding) — voltooid in 4 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een beveiligingsonderzoeker een maand publieke blootstelling een serieus venster beschouwen, of een klein venster?
+### Zou een beveiligingsonderzoeker een maand van openbare blootstelling beschouwen als een ernstig venster?
 
-Serieus — geautomatiseerde scanners die specifiek publieke repositories doorzoeken op blootgestelde credentials opereren doorgaans op een tijdschaal van minuten tot uren, niet weken, dus een maand blootstelling zou behandeld moeten worden alsof de sleutel zeker gevonden werd, niet slechts mogelijk gevonden.
+Ernstig – geautomatiseerde scanners die specifiek openbare repositories doorzoeken op blootgestelde inloggegevens werken typisch op een tijdsschaal van minuten tot uren, en niet weken. Een maand van blootstelling moet dus worden behandeld alsof de sleutel definitief is gevonden.
 
-### Is dit specifiek een GitHub-probleem, of geldt het ook voor andere codehosting-platformen?
+### Is dit specifiek een GitHub-probleem, of geldt het voor andere platforms?
 
-Het geldt universeel voor elk codehosting-platform met een publieke zichtbaarheidsoptie — GitLab, Bitbucket, en anderen staan allemaal voor hetzelfde onderliggende risico, aangezien de kwetsbaarheid gaat over wat gecommit en zichtbaar is, niet welk specifiek platform het host.
+Het geldt universeel voor elk code-hosting platform met een openbare zichtbaarheidsoptie – GitLab, Bitbucket en anderen staan voor het identieke onderliggende risico.
 
-### Manifera werkt met klanten met veel gevoeliger dataexpositierisico dan een bruiloftsplannings-app — verandert die ervaring hoe een geval zoals dat van Noa afgehandeld wordt?
+### Vormt Manifera's ervaring met enterprise-klanten de afhandeling voor kleine founder-apps?
 
-De specifieke afhandeling verandert niet, alleen de inzet-framing wel — hetzelfde roteer-en-migreer-proces geldt of de blootgestelde sleutel nu toebehoort aan een bruiloftsplanningstool of het productiesysteem van een enterprise-klant, aangezien de technische remediëring zelf niet geschaald wordt naar bedrijfsgrootte.
+De specifieke afhandeling verandert niet – hetzelfde proces van roteren en migreren geldt of de blootgestelde sleutel nu toebehoort aan een bruiloftplanningstool of aan het productiesysteem van een enterprise-klant.
 
-### Herre Roelevink heeft gesproken over founders die beveiligingsexpertise nodig hebben waar ze eerder geen toegang toe hadden — past een geval zoals dit bij die beschrijving?
+### Past een standaard openbare repo in het lek dat de CEO beschrijft?
 
-Precies — een publieke repository-zichtbaarheidsinstelling is het soort standaard dat een founder zonder beveiligingsachtergrond geen bijzondere reden heeft om te bevragen, en dat exacte gat tussen wat founders instinctief controleren en wat een getraind oog instinctief controleert is de ruimte die Roelevink beschreven heeft dat LaunchStudio vult.
+Ja, precies – een instelling voor de zichtbaarheid van een openbare repository is het soort standaardwaarde dat een oprichter zonder beveiligingsachtergrond geen specifieke reden heeft om in twijfel te trekken.
 
-### Als een founder dit zelf vangt vóór lancering, is een professionele audit dan nog steeds de kosten waard?
+### Als een oprichter dit zelf opvangt vóór de lancering, is een professionele audit dan nog steeds de moeite waard?
 
-Als een founder met vertrouwen kan bevestigen dat elke sleutel gevonden, geroteerd, en nergens anders in de git-geschiedenis verschenen is, voegt een volledige audit mogelijk beperkte extra waarde toe — hoewel dat met vertrouwen bevestigen, over een hele repositorygeschiedenis, precies het soort systematische controle is die makkelijk gedeeltelijk gedaan wordt en aangenomen wordt volledig gedaan te zijn.
+Als een oprichter zelfvertrouwen heeft dat elke sleutel is gevonden en geroteerd, kan een volledige audit beperkte aanvullende waarde toevoegen – hoewel het betrouwbaar bevestigen daarvan over een gehele repository-geschiedenis exact het soort systematische controle is dat gemakkelijk gedeeltelijk wordt gedaan.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is een maand van openbare sleutelblootstelling een ernstig risicovenster?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, geautomatiseerde scanners werken op minuten- tot urenschaal, dus một tháng phải coi như đã bị lộ hoàn toàn."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is het risico van lộ key chỉ có ở GitHub?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, nó áp dụng cho tất cả các nền tảng lưu trữ code có tùy chọn public."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quy trình xử lý key bị lộ có khác nhau giữa startup và enterprise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, quy trình rotate-and-migrate là giống nhau bất kể quy mô công ty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Default public repo có phải là lỗ hổng phổ biến ở founder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, đây là default mà founder không có background security rất dễ bỏ qua."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cách xử lý đúng nhất khi phát hiện lộ API key là gì?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tạo key mới (rotate), cập nhật env variable, hủy key cũ (revoke) và chuyển repo sang private."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ngoài API key, những secret nào khác hay bị leak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Webhook signing secrets, OAuth client secrets, Database connection strings và CI/CD deployment tokens."
+      }
+    }
+  ]
+}
+</script>

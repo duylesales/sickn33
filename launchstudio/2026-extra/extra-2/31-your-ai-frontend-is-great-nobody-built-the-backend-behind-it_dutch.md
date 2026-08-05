@@ -1,73 +1,165 @@
 ---
-Titel: "Jouw AI-Frontend Is Geweldig. Niemand Bouwde De Backend Erachter"
+Titel: "Uw AI Frontend is geweldig. Niemand heeft de backend erachter gebouwd"
 Trefwoorden: ai frontend, ai generated application, ai coding, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# Jouw AI-Frontend Is Geweldig. Niemand Bouwde De Backend Erachter
+# Uw AI Frontend is geweldig. Niemand heeft de backend erachter gebouwd
 
-Een AI-frontendtool zoals v0 excelleert oprecht precies waarvoor het gebouwd is — schone, responsieve, goed georganiseerde interfaces die een product afgewerkt laten aanvoelen vanaf de eerste klik. Wat het niet doet, omdat het daar niet voor gebouwd is, is onafhankelijk op een server verifiëren dat de getallen die een prachtig ontworpen interface toont en berekent dezelfde getallen zijn die daadwerkelijk in rekening gebracht worden.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Uw AI Frontend is geweldig. Niemand heeft de backend erachter gebouwd",
+  "description": "Een voor/na blik op wat er gebeurt wanneer prijsberekeningslogica op de frontend nooit onafhankelijk op de server wordt geverifieerd.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-28",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/your-ai-frontend-is-great-nobody-built-the-backend-behind-it"
+  }
+}
+</script>
 
-## Voor: Een Frontend Die Alles Correct Berekent
+Een AI-frontendtool zoals v0 blinkt oprecht uit in exact waar het voor gebouwd is – strakke, responsieve, goed georganiseerde interfaces die een product vanaf de eerste klik gepolijst laten voelen. Wat het niet doet, omdat het niet is waar het voor gebouwd werd, is onafhankelijk op een server verifiëren dat de getallen die een prachtig ontworpen interface toont en berekent dezelfde getallen zijn die daadwerkelijk gefactureerd worden.
 
-**Voordat backendverificatie bestaat** kan een reisitinerarietool die gebruikers optionele excursies laat toevoegen, stoelklassen laat upgraden, of een kortingscode laat toepassen een lopend totaal volledig in de browser berekenen, instant en correct bijwerkend naarmate een gebruiker keuzes maakt — een oprecht goede gebruikerservaring, en een die perfect werkt voor elke legitieme interactie die een founder test.
+## Vóór: Een frontend die alles correct berekent
 
-## Na: Een Backend Die Onafhankelijk Hetzelfde Totaal Bevestigt
+**Vóór backend-verificatie bestaat** kan een reisplanner-tool waarmee gebruikers optionele excursies kunnen toevoegen, stoelklassen kunnen upgraden, of een kortingscode kunnen toepassen, een lopend totaalbedrag volledig in de browser berekenen. Het wordt onmiddellijk en correct bijgewerkt terwijl een gebruiker keuzes maakt – een oprecht goede gebruikerservaring die perfect werkt voor elke legitieme interactie die een oprichter test.
 
-**Nadat correcte backendverificatie toegevoegd is,** berekent en toont dezelfde interface nog steeds het lopende totaal instant voor een soepele gebruikerservaring, maar de daadwerkelijke belasting wordt onafhankelijk herberekend op de server vanuit de onderliggende keuzes, met dezelfde prijsregels, in plaats van simpelweg te vertrouwen op welk eindgetal de frontend ook meestuurt met het checkoutverzoek.
+## Na: Een backend die hetzelfde totaalonafhankelijk bevestigt
 
-## Waarom Het Getal Van De Frontend Vertrouwen Een Structureel Risico Is, Geen Codeerfout
+**Nadat de juiste backend-verificatie is toegevoegd** berekent en toont dezelfde interface nog steeds het lopende totaalbedrag onmiddellijk voor een soepele gebruikerservaring. Maar de daadwerkelijke afschrijving wordt onafhankelijk op de server herberekend op basis van de onderliggende selecties, met behulp van dezelfde prijsregels. En niet door simpelweg te vertrouwen op het uiteindelijke getal dat de frontend meestuurt met het afrekenverzoek.
 
-Een browser is fundamenteel een stuk software dat volledig draait op een apparaat dat de klant controleert, en elke waarde die het stuurt — inclusief een berekend totaal — kan gewijzigd worden voordat het de server bereikt, met niets exotischer dan dezelfde browser-developer-tools beschikbaar voor elke bezoeker. Een backend die accepteert en belast welk totaal de frontend ook rapporteert vertrouwt een getal waarvan het geen mogelijkheid heeft onafhankelijk te verifiëren dat het van een ongewijzigde berekening komt.
+## Waarom het vertrouwen op het getal van de frontend een structureel risico is
 
-## Waarom Dit Elke Normale Test Doorstaat Die Een Founder Draait
+Een browser is fundamenteel een stuk software dat volledig draait op een apparaat dat de klant beheert. Elk gegeven dat het verzendt – inclusief een berekend totaalbedrag – kan worden gewijzigd voordat het de server bereikt, met behulp van niets exotischer dan de ontwikkelaars-tools van dezelfde browser. Het openen van het tabblad Netwerk, het vinden van het afrekenverzoek, en het bewerken van een enkel getal in het verzoekvoordeel kost minder dan een minuut voor iedereen die nieuwsgierig is naar de onderliggende werking van een website. Geen gespecialiseerde hacking-tools vereist, geen accounttoegang voorbij een normale aanmelding. Een backend die het totaal accepteert en factureert dat de frontend rapporteert, vertrouwt een getal dat het geen mogelijkheid heeft om onafhankelijk te verifiëren.
 
-De boekingsflow eerlijk testen — echte excursies selecteren, een echte kortingscode toepassen, afrekenen — produceert elke keer een correcte belasting, omdat een founder die zijn eigen product test geen reden heeft het berekende totaal te wijzigen voordat hij het indient. Het gat wordt alleen zichtbaar vanuit het perspectief van iemand die doelbewust dat getal wijzigt, wat eerlijk testen nooit simuleert.
+## Waarom dit voorbij elke normale test komt die een oprichter uitvoert
 
-## Wat Een Oprechte Fix Vereist
+Het eerlijk testen van de boekingsstroom – het selecteren van echte excursies, het toepassen van een echte kortingscode, het afrekenen – produceert elke keer een correcte afschrijving. Een oprichter die zijn eigen product test heeft immers geen reden om het berekende totaal te wijzigen voordat hij het indient. Het twintig keer doorlopen van dezelfde stroom bewijst nog steeds niets over dit specifieke risico. Het gat wordt alleen zichtbaar vanuit het perspectief van iemand die dat getal opzettelijk aanpast, wat eerlijk testen nooit simuleert.
 
-Dit gat dichten betekent de gezaghebbende prijsberekening naar de server verplaatsen, gebruikmakend van alleen de onderliggende keuzes (welke excursie, welke stoelklasse, welke kortingscode) gestuurd vanuit de frontend — nooit het uiteindelijke berekende totaal zelf — en onafhankelijk herberekenen voordat enige belasting verwerkt wordt. [LaunchStudio](https://launchstudio.eu/en/) implementeert precies dit soort server-side prijsverificatie als standaardonderdeel van zijn betalingsintegratiewerk, gesteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare transactiesystemen.
+## Wat een oprechte herstelling vereist
 
-Manifera's prijs- en transactiebeveiligingswerk wordt geleverd via het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Het sluiten van deze kloof betekent dat de autoriteit voor de prijsberekening naar de server verplaatst moet worden, waarbij alleen de onderliggende selecties (welke excursie, welke stoelklasse, welke kortingscode) vanaf de frontend worden meegestuurd – nooit het berekende totaalbedrag zelf. En het onafhankelijk herberekenen voordat er een afschrijving wordt verwerkt. [LaunchStudio](https://launchstudio.eu/en/) implementeert exact dit soort prijsverificatie aan de serverzijde als een standaardonderdeel van haar werkzaamheden voor betalingsintegratie, ondersteund door Manifera's 11+ jaar ervaring met het bouwen van betrouwbare transactionele systemen.
 
-[Bekijk wat jouw project zou kosten met onze calculator](https://launchstudio.eu/en/#calculator).
+Manifera's engineeringwerk voor prijzen en transactiebeveiliging wordt geleverd via het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Bekijk wat uw project zou kosten met onze calculator](https://launchstudio.eu/en/#calculator).
+
+## Waar door de client vertrouwde waarden zich nog meer verbergen
+
+Afrekenprijzen zijn de meest zichtbare versie van deze kloof, maar het is zelden de enige plek waar een door de frontend berekend getal wordt vertrouwd zonder verificatie aan de serverzijde:
+
+- **Verzend- en bezorgkosten** — berekend op basis van adres of gewicht, maar net zo gemakkelijk te manipuleren als het niet op de server wordt herberekend.
+- **Btw-berekening** — een inschatting aan de frontend is handig voor weergave, maar mag nooit het daadwerkelijk afgeschreven bedrag bepalen.
+- **Aantal- en voorraadlimieten** — een frontend die voorkomt dat een gebruiker een 11e artikel toevoegt is een gemak, geen handhaving, tenzij de server het 11e artikel ook weigert.
+- **Loyaliteitspunten en beloningen** — het puntensaldo en de korting moeten server-side worden herberekend op basis van de transactiegeschiedenis.
+- **Kortingscode-stapeling** — een frontend die het combineren van twee codes voorkomt zegt niets over of de server dezelfde regel afdwingt.
+- **Abonnementsniveau-toegang** — een "Pro"-badge tonen op basis van een lokale status is een weergavekeuze, geen toegangsbepaling.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de reis die zichzelf prijsde
+### Een AI-native oprichter in actie: De reis die zijn eigen prijs bepaalde
 
-Jelle, een voormalig reisbureau-medewerker die founder werd in Emmen, bouwde RouteDroom, een AI-geassisteerde reisitinerarieplanner gebouwd met v0, waarmee gebruikers een basisreis konden aanpassen met optionele excursies en upgrades die een lopend totaal live in de interface bijwerkten.
+Jelle, een voormalig reisbureau-medewerker die oprichter werd in Emmen, bouwde RouteDroom, een AI-ondersteunde reisplanner gebouwd met v0, waarmee gebruikers een basisreis kunnen aanpassen met optionele excursies en upgrades die een lopend totaalbedrag live in de interface bijwerkten.
 
-Een nieuwsgierige vroege gebruiker, die een verzoek in de developer tools van zijn browser wijzigde vooral uit technische nieuwsgierigheid, ontdekte dat hij een checkoutverzoek kon indienen met een handmatig gewijzigd totaal ver onder wat zijn daadwerkelijke keuzes hadden moeten kosten, en de boeking werd geaccepteerd en belast tegen het lagere, gewijzigde bedrag. LaunchStudio's review bevestigde dat de backend welk uiteindelijk totaal het frontendverzoek ook omvatte vertrouwde, zonder enige onafhankelijke herberekening.
+Een nieuwsgierige vroege gebruiker, die een verzoek in de ontwikkelaars-tools van zijn browser aanpaste puur uit technische nieuwsgierigheid, vond dat hij een afrekenverzoek kon indienen met een handmatig aangepast totaalbedrag dat ver onder de daadwerkelijke kosten lag. En de boeking werd geaccepteerd en gefactureerd tegen het lagere, aangepaste bedrag. LaunchStudio's beoordeling bevestigde dat de backend vertrouwde op welk eindtotaal het frontend-verzoek ook bevatte, zonder enige onafhankelijke herberekening.
 
-**Resultaat:** LaunchStudio verplaatste de prijsberekeningsautoriteit volledig naar de server, en herberekende elke checkout onafhankelijk vanuit de onderliggende keuzes in plaats van het gerapporteerde totaal van de frontend te vertrouwen, en dicht het gat zonder RouteDrooms soepele, instant-aanvoelende prijsweergave te veranderen.
+**Resultaat:** LaunchStudio verplaatste de autoriteit voor de prijsberekening volledig naar de server, wat elke afrekening onafhankelijk herberekent op basis van de onderliggende selecties in plaats van het gerapporteerde totaalbedrag van de frontend te vertrouwen. Dit sloot de kloof zonder de soepele prijsweergave van RouteDroom te veranderen.
 
-> *"Hij vertelde me precies wat hij gedaan had en hoe, bijna alsof hij me een gunst bewees, wat hij eerlijk gezegd ook was. Het kwam nooit bij me op dat het getal dat op het scherm stond en het getal dat daadwerkelijk vertrouwd werd bij checkout twee verschillende dingen konden zijn."*
-> — **Jelle Roos, Founder, RouteDroom (Emmen)**
+> *"Hij vertelde me exact wat hij gedaan had en hoe, bijna alsof hij me een gunst deed, wat hij eerlijk gezegd ook deed. Het was niet bij me opgekomen dat het getal op het scherm en het getal dat daadwerkelijk bij het afrekenen vertrouwd werd twee verschillende dingen konden zijn."*
+> — **Jelle Roos, Oprichter, RouteDroom (Emmen)**
 
-**Kosten & tijdlijn:** €1.900 (implementatie server-side prijsverificatie) — voltooid in 6 werkdagen.
+**Kosten en tijdlijn:** € 1.900 (implementatie van prijsverificatie aan de serverzijde) — voltooid in 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een betalingsengineer het vertrouwen van een frontend-berekend totaal een gebruikelijke fout beschouwen, of een zeldzame?
+### Zou een betalingsingenieur het vertrouwen op een berekend frontend-totaal beschouwen als een veelvoorkomende fout?
 
-Vrij gebruikelijk, specifiek in producten snel gebouwd met een UI-first-tool — het is een natuurlijk bijproduct van eerst de prettige, responsieve prijsweergave bouwen en server-side verificatie behandelen als een aparte, latere zorg die soms nooit toegevoegd wordt vóór lancering.
+Vrij veelvoorkomend, specifiek bij producten die snel gebouwd zijn met een UI-first tool. Het is het natuurlijke bijproduct van het eerst bouwen van de prettige prijsweergave en het behandelen van verificatie aan de serverzijde als een latere zorg.
 
-### Raakt dit probleem alleen producten met complexe, aanpasbare prijzen, of ook simpele vaste-tarief-producten?
+### Beïnvloedt dit probleem alleen producten met ingewikkelde prijzen?
 
-Het doet er het meest toe voor aanpasbare, meercomponentprijzen zoals RouteDrooms excursies en upgrades, aangezien vaste-tarief-prijzen minder ruimte hebben voor een client-side berekening om af te wijken van de correcte waarde — hoewel elk product dat een client-gerapporteerd bedrag helemaal accepteert, in plaats van het server-side af te leiden, een of andere versie van dit risico draagt.
+Het maakt het meest uit voor aanpasbare prijzen met meerdere componenten zoals RouteDroom's excursies, hoewel elk product dat een door de client gerapporteerd bedrag accepteert hier risico bij loopt.
 
-### Manifera's ervaring spant reizen, e-commerce, en andere transactiesectoren — doet die variëteit ertoe voor het vangen van een gat zoals dat van Jelle?
+### Maakt ervaring over meerdere transactionele sectoren uit voor het opvangen van zo'n kloof?
 
-Ja, aangezien het onderliggende principe (vertrouw nooit een client-gerapporteerd totaal) identiek is over sectoren, en dit exacte patroon gereviewd hebben over veel verschillende soorten transactieproducten betekent dat de fix snel en correct toegepast wordt ongeacht in welke specifieke productcategorie een founder bouwt.
+Ja, aangezien het onderliggende principe (vertrouw nooit een door de client gerapporteerd totaal) identiek is over sectoren.
 
-### Is dit het soort gat waar CEO Herre Roelevink naar verwijst wanneer hij bespreekt waarom een mooie frontend niet hetzelfde is als een veilig product?
+### Weerspiegelt dit de kloof tussen visuele afwerking en structurele beveiliging?
 
-Precies — RouteDrooms frontend was oprecht goed gebouwd en gaf elke visuele indruk van correctheid, wat precies de disconnectie is die Roelevinks publieke commentaar consistent benadrukt tussen zichtbare polish en de onzichtbare, structurele verificatie die een product daadwerkelijk eronder nodig heeft.
+Precies – RouteDroom's frontend was oprecht goed gebouwd en gaf elke visuele indruk van correctheid, wat exact de kloof is die LaunchStudio sluit.
 
-### Als een founder de checkoutwidget van een bekende betalingsprovider gebruikte in plaats van checkout vanaf nul te bouwen, zou dit risico dan nog steeds gelden?
+### Als een oprichter een bekende checkout-widget gebruikt, geldt dit risico dan nog steeds?
 
-Het hangt af van precies hoe de integratie bedraad is — de gehoste checkout van een provider gebruiken met server-side prijsinstelling vermijdt dit risico grotendeels, maar een aangepaste integratie die nog steeds een berekend totaal van de frontend naar het betalingsverzoek doorgeeft kan hetzelfde onderliggende gat reproduceren ongeacht welke provider uiteindelijk gebruikt wordt om de belasting te verwerken.
+Het hangt er van af hoe de integratie is aangesloten – het gebruik van een gehoste checkout van een provider met prijsinstelling aan de serverzijde vermijdt dit risico grotendeels.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Tin tưởng số tiền tính toán từ Frontend gửi lên có phải lỗi phổ biến không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rất phổ biến khi dựng app nhanh bằng AI tool tập trung vào UI, quên mất việc phải tính toán lại độc lập ở Server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lỗi này có chỉ xảy ra với ứng dụng có công thức giá phức tạp không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ảnh hưởng lớn nhất ở giá tùy biến nhiều option, nhưng bất kỳ sản phẩm nào nhận số tiền từ client đều có rủi ro này."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dùng widget checkout của các cổng thanh toán (Stripe/Mollie) có hết lỗi này không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tùy cách tích hợp: nếu dùng Hosted Checkout tạo order từ Server thì an toàn, nếu tự truyền số tiền từ Frontend vào SDK thì vẫn bị."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ngoài giá tiền checkout, những giá trị nào ở Frontend hay bị sửa lén?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Phí ship, tiền thuế, số lượng giới hạn, số điểm thưởng quy đổi và trạng thái gói cước (Pro/Free)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Làm sao để tự kiểm tra xem Server có tính lại giá độc lập không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mở tab Network trên trình duyệt, sửa payload số tiền trong request checkout và gửi đi xem Server có từ chối không."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Khắc phục lỗi này có làm giảm trải nghiệm mượt mà của giao diện không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, UI vẫn tính toán hiển thị tức thì cho user xem, chỉ có bước chốt đơn là Server tự tính lại chính xác."
+      }
+    }
+  ]
+}
+</script>

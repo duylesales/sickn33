@@ -1,77 +1,171 @@
 ---
-Titel: "AI-Deployment Is Geen Knop. Hier Is Wat Het Daadwerkelijk Vereist"
+Titel: "AI Deployment is geen knop. Hier is wat het daadwerkelijk vereist"
 Trefwoorden: ai deployment, deployment of ai, ai coding, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelgroep: AI-Native oprichter (Niet-technisch)
 ---
 
-# AI-Deployment Is Geen Knop. Hier Is Wat Het Daadwerkelijk Vereist
+# AI Deployment is geen knop. Hier is wat het daadwerkelijk vereist
 
-Op "deploy" klikken binnen een AI-codeertool zet jouw applicatie oprecht op een live, bereikbare URL — dat deel is geen overdrijving. AI-deployment, in die nauwe zin, werkt precies zoals geadverteerd. Wat het niet automatisch configureert is de laag beschermende headers en instellingen die browsers vertellen hoe ze jouw site veilig moeten behandelen, wat een aparte, specifieke set beslissingen is die een deployknop geen reden heeft om namens jou te maken.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI Deployment is geen knop. Hier is wat het daadwerkelijk vereist",
+  "description": "Een ontkrachting van mythen over wat het klikken op 'deploy' in een AI-coderingsassistent daadwerkelijk volbrengt versus wat echte productie-uitrol vereist.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-07-27",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/ai-deployment-isnt-a-button-heres-what-it-actually-requires"
+  }
+}
+</script>
 
-## Mythe: Een Live URL Betekent Dat Jouw Deployment Compleet Is
+Het klikken op "deploy" (uitrollen) in een AI-coderingsassistent zet uw applicatie oprecht op een live, bereikbare URL – dat gedeelte is geen overdrijving. AI-deployment, in die smalle zin, werkt exact zoals geadverteerd. Wat het niet automatisch configureert is de laag van beschermende headers en instellingen die browsers vertelt hoe ze uw site veilig moeten behandelen. Dat is een afzonderlijke, specifieke set beslissingen die een uitrolknop geen reden heeft om namens u te nemen.
 
-**Realiteit:** een bereikbare URL hebben betekent dat de deployment slaagde in de nauwste technische zin — code draait ergens, en verzoeken krijgen een respons. Het zegt niets over of die respons beveiligingsheaders omvat die browsers instrueren HTTPS strikt af te dwingen, te voorkomen dat jouw site ingebed wordt in een kwaadaardige frame elders, of te beperken welke soorten inhoud kunnen uitvoeren op jouw pagina's.
+## Mythe: Een live URL betekent dat uw uitrol compleet is
 
-## Mythe: Als De Site Over HTTPS Laadt, Ben Je Al Beschermd
+**De realiteit:** het hebben van een bereikbare URL betekent dat de uitrol is geslaagd in de smalste technische zin – er draait ergens code, en verzoeken krijgen een antwoord. Het zegt niets over het feit of dat antwoord beveiligingsheaders omvat die browsers instrueren om HTTPS strikt af te dwingen, te voorkomen dat uw site wordt ingebed in een kwaadwillig frame elders, of te beperken wat voor soort inhoud kan worden uitgevoerd op uw pagina's.
 
-**Realiteit:** laden over HTTPS beschermt de specifieke verbinding in gang, maar zonder een HSTS-header (HTTP Strict Transport Security) heeft een browser geen instructie om altijd op HTTPS voor jouw domein aan te dringen voortaan — wat betekent dat een gebruiker die toevallig een gewone HTTP-link typt of volgt stilletjes gedowngraded zou kunnen worden naar een onversleutelde verbinding, een steeds zeldzamer maar echt risico dat deze specifieke header bestaat om te dichten.
+## Mythe: Als de site laadt over HTTPS, bent u al beschermd
 
-## Mythe: Beveiligingsheaders Zijn Een Geavanceerde, Alleen-Enterprise-Zorg
+**De realiteit:** laden over HTTPS beschermt de specifieke verbinding in uitvoering, maar zonder een HSTS (HTTP Strict Transport Security) header heeft een browser geen instructie om altijd te blijven aandringen op HTTPS voor uw domein. Dit betekent dat een gebruiker die toevallig een gewone HTTP-link typt of volgt stilletjes kan worden teruggezet naar een onversleutelde verbinding. Een risico dat deze specifieke header bestaat om te sluiten.
 
-**Realiteit:** beveiligingsheaders zijn een gestandaardiseerd, goed gedocumenteerd onderdeel van basale webbeveiligingspraktijk toepasbaar op elke live website ongeacht grootte of industrie — een schoonheidssalon-boekingssite die klantnamen, telefoonnummers, en afspraakdetails verwerkt staat voor in wezen dezelfde basisblootstelling als elk ander product dat persoonsinformatie verzamelt via het web.
+## Mythe: Beveiligingsheaders zijn een geavanceerde zorg voor alleen grote bedrijven
 
-## Mythe: Een AI-Codeertool Zou Deze Standaard Toevoegen Als Ze Ertoe Deden
+**De realiteit:** beveiligingsheaders zijn een gestandaardiseerd, welbekend onderdeel van basis webbeveiligingspraktijk. Het is van toepassing op elke live website, ongeacht de grootte of sector – een boekingssite voor een schoonheidssalon die klantnamen, telefoonnummers en afspraakdetails afhandelt staat voor in feite dezelfde basisblootstelling als elk ander product dat persoonlijke informatie over het web verzamelt.
 
-**Realiteit:** deploymentplatformen en codeertools richten hun standaarden op jouw specifiek beschreven applicatie correct laten draaien, niet op een uitgebreid beveiligingsheaderbeleid toepassen dat geen deel uitmaakte van wat gevraagd werd — de tool maakt geen oordeel dat headers er niet toe doen, het is simpelweg niet de laag waar die beslissing gemaakt wordt tenzij iemand het specifiek configureert.
+## Mythe: Een AI-coderingsassistent zou deze standaard toevoegen als ze ertoe deden
 
-## Mythe: Dit Is Een Eenmalige Instelling Die Je Eenmalig Configureert En Vergeet
+**De realiteit:** uitrolplatformen en coderingsassistenten richten hun standaardinstellingen op het correct laten draaien van uw specifieke beschreven applicatie, en niet op het toepassen van een uitgebreid beveiligingsheaderbeleid dat geen onderdeel was van wat er gevraagd werd. De tool maakt geen oordeel dat headers er niet toe doen; het is simpelweg niet de laag waar die beslissing wordt genomen, tenzij iemand het specifiek configureert.
 
-**Realiteit:** headerconfiguratie leeft doorgaans in deployment- of serverconfiguratiebestanden die onbedoeld gereset of overschreven kunnen worden tijdens een platformmigratie, een herdeployment vanaf een vers sjabloon, of een significante infrastructuurwijziging — wat betekent dat het de moeite waard is periodiek te herbevestigen in plaats van aan te nemen dat een eenmaal gemaakte instelling noodzakelijk voor altijd blijft.
+## Mythe: Dit is een eenmalige instelling die u één keer configureert en vergeet
 
-## Het Gat Dichten Tussen "Gedeployed" En "Correct Geconfigureerd"
+**De realiteit:** header-configuratie leeft typisch in uitrol- of serverconfiguratiebestanden die per ongeluk gereset of overschreven kunnen worden tijdens een platformmigratie, een heruitrol vanaf een vers sjabloon, of een aanzienlijke infrastructuurwijziging. Het is het waard om periodiek opnieuw te bevestigen, in plaats van aan te nemen dat een instelling die één keer is gemaakt noodzakelijkerwijs voor altijd blijft bestaan.
 
-Een correcte review bevestigt dat HSTS, content-security-policy, en gerelateerde headers correct ingesteld zijn voor jouw specifieke hostingomgeving, getest tegen jouw live domein in plaats van aangenomen vanuit een generiek sjabloon. [LaunchStudio](https://launchstudio.eu/en/) verifieert precies dit soort deploymentconfiguratie als onderdeel van zijn standaardreview, gesteund door Manifera's 11+ jaar productiedeploymentervaring over Vercel-, AWS-, Azure-, en DigitalOcean-omgevingen.
+## Het sluiten van de kloof tussen "uitgerold" en "correct geconfigureerd"
 
-Manifera's deploymentconfiguratiereviews worden uitgevoerd door het engineeringteam bij het ontwikkelcentrum in Ho Chi Minh City aan de Pho Quang Street, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+Een correcte beoordeling bevestigt dat HSTS, content-security-policy, en gerelateerde headers correct zijn ingesteld voor uw specifieke hostingomgeving, getest tegen uw live domein in plaats van aangenomen vanaf een generiek sjabloon. [LaunchStudio](https://launchstudio.eu/en/) verifieert exact dit soort uitrolconfiguratie als onderdeel van haar standaardbeoordeling, ondersteund door Manifera's 11+ jaar ervaring met productie-uitrol over Vercel, AWS, Azure, en DigitalOcean omgevingen.
 
-[Stuur ons de link van jouw prototype — we reviewen het gratis](https://launchstudio.eu/en/#contact).
+Manifera's beoordelingen van uitrolconfiguratie worden uitgevoerd door het engineeringteam in het ontwikkelingscentrum in Ho Chi Minh-stad aan de Pho Quang-straat, gecoördineerd met het hoofdkantoor in Amsterdam aan de Herengracht 420.
+
+[Stuur ons de link van uw prototype — we beoordelen het gratis](https://launchstudio.eu/en/#contact).
+
+## De zes headers die het waard zijn om daadwerkelijk te kennen
+
+Beveiligingsheaders zijn niet één enkele instelling – ze zijn een kleine familie van gerelateerde maar afzonderlijke beschermingen, die elk een andere, specifieke kloof sluiten.
+
+**Een snelle referentie voor de headers die het meest uitmaken:**
+
+1. **HSTS (Strict-Transport-Security)** — vertelt de browser om altijd HTTPS te gebruiken voor uw domein.
+2. **Content-Security-Policy** — beperkt uit welke bronnen van scripts, stijlen en andere inhoud uw pagina's mogen laden.
+3. **X-Frame-Options** — voorkomt dat uw site geladen wordt in een frame op iemand anders zijn pagina (voorkomt clickjacking).
+4. **X-Content-Type-Options** — stopt browsers in het proberen te raden van het bestandstype.
+5. **Referrer-Policy** — beheert hoeveel informatie over de vorige pagina wordt meestuurd.
+6. **Permissions-Policy** — beperkt expliciet welke browserfuncties (camera, microfoon, locatie) gebruikt mogen worden.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: de boekingssite zonder enige headers
+### Een AI-native oprichter in actie: De boekingssite zonder enige headers
 
-Sara, een voormalig salonmanager die founder werd in Maastricht, bouwde KapselKalender, een AI-geassisteerde schoonheidssalon-boekingsapp gebouwd met v0 voor de interface en een verbonden backend, gedeployed en soepel draaiend voor verscheidene partnersalons binnen weken na het bouwen.
+Sara, een voormalig salonmanager die oprichter werd in Maastricht, bouwde KapselKalender, een AI-ondersteunde boekingsapp voor schoonheidssalons gebouwd met v0 voor de interface en een verbonden backend. Het draaide binnen een paar weken na het bouwen al soepel voor verschillende partnersalons.
 
-Een IT-onderlegde verwant van een partnersalon, die de configuratie van de site controleerde uit nieuwsgierigheid met een gratis online beveiligingsheaderscanner, vond dat KapselKalender helemaal geen standaard beschermende headers geconfigureerd had — geen HSTS, geen content-security-policy, niets voorbij de kale standaard van het platform. LaunchStudio's review bevestigde dat de deployment nooit enige expliciete headerconfiguratie had omvat.
+Een IT-kundig familielid van een partnersalon, die de configuratie van de site uit nieuwsgierigheid controleerde met een gratis online beveiligingsheader-scanner, vond dat KapselKalender überhaupt geen van de standaard beschermende headers geconfigureerd had – geen HSTS, geen content-security-policy, niets voorbij de kale standaardinstelling van het platform. LaunchStudio's beoordeling bevestigde dat de uitrol nooit enige expliciete header-configuratie had omvat.
 
-**Resultaat:** LaunchStudio configureerde de volledige set standaard beveiligingsheaders passend bij KapselKalenders hostingsetup en verifieerde ze tegen het live domein, en dicht het gat zonder enige herdeployment-verstoring of wijziging aan de boekingservaring zelf te vereisen.
+**Resultaat:** LaunchStudio configureerde de volledige set van standaard beveiligingsheaders passend bij KapselKalender's hostingopstelling en verifieerde ze tegen het live domein. Dit sloot de kloof zonder dat er enige heruitrolverstoring of wijziging aan de boekingservaring zelf vereist was.
 
-> *"De site werkte de hele tijd perfect vanuit een boekingsperspectief, wat precies waarom ik nooit dacht om iets daaronder te controleren. Er was iemand nodig die een gratis online scanner draaide om me zelfs te laten zien dat headers iets waren om te controleren."*
-> — **Sara Jansen, Founder, KapselKalender (Maastricht)**
+> *"De site werkte de gehele tijd perfect vanuit een boekingsperspectief, wat exact is waarom ik er nooit aan dacht om iets eronder te controleren. Er was iemand nodig die een gratis online scanner draaide om me überhaupt te tonen dat headers iets waren om te controleren."*
+> — **Sara Jansen, Oprichter, KapselKalender (Maastricht)**
 
-**Kosten & tijdlijn:** €1.400 (deployment-beveiligingsheaderconfiguratie) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 1.400 (configuratie van beveiligingsheaders bij uitrol) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Zou een hosting- of infrastructuurspecialist ontbrekende beveiligingsheaders een ernstig gat beschouwen, of een kleine best-practice-suggestie?
+### Zou een hosting- of infrastructuurspecialist ontbrekende beveiligingsheaders beschouwen als een ernstige kloof?
 
-Ernstig genoeg om routinematig opgenomen te worden in standaard productiegereedheidschecklists over de industrie — het is niet de meest ernstige categorie gat die een review doorgaans vindt, maar het is een goed gevestigde, laag-inspanning bescherming die de meeste professionele deploymentprocessen als vanzelfsprekend toepassen.
+Ernstig genoeg om routinematig te worden opgenomen in standaard checklists voor productiegereedheid in de hele industrie.
 
-### Kan een founder de headerconfiguratie van hun eigen site zelf controleren zonder technische hulp?
+### Kan een oprichter de headerconfiguratie van zijn eigen site controleren zonder technische hulp?
 
-Ja, redelijk makkelijk — gratis online beveiligingsheader-scantools bestaan specifiek voor dit doel, vereisend alleen de URL van een website om een rapport te produceren; het begrijpen en correct fixen van wat het rapport markeert is waar technische hulp doorgaans noodzakelijk wordt.
+Ja, redelijk eenvoudig – er bestaan gratis online tools voor het scannen van beveiligingsheaders specifiek voor dit doel.
 
-### Verandert het specifieke hostingplatform (Vercel versus AWS versus DigitalOcean) hoe deze headers geconfigureerd worden?
+### Verandert het specifieke hostingplatform hoe deze headers geconfigureerd worden?
 
-Ja, betekenisvol — elk platform heeft zijn eigen specifieke configuratiemechanisme voor het instellen van responseheaders, wat precies waarom Manifera's cross-platform-ervaring over Vercel, AWS, Azure, en DigitalOcean ertoe doet voor het correct implementeren hiervan ongeacht welk platform de AI-tool van een founder toevallig deployde naar.
+Ja, aanzienlijk – elk platform heeft zijn eigen specifieke configuratiemechanisme voor het instellen van respons-headers.
 
-### Herre Roelevink heeft gesproken over de architectuurlaag als waar de meeste gaten zich verbergen — passen deploymentheaders bij die beschrijving?
+### Vereist het herstellen van ontbrekende beveiligingsheaders enige uitvaltijd (downtime)?
 
-Ja, precies — headers zijn een configuratieniveau-, infrastructuurbeslissing in plaats van een zichtbare applicatiefunctie, precies het soort laag dat Roelevinks publieke commentaar consistent identificeert als het deel dat AI-native founders niet van nature denken te controleren.
+Correct geïmplementeerd vereisen wijzigingen in headerconfiguratie typisch geen uitvaltijd.
 
-### Vereist het fixen van ontbrekende beveiligingsheaders enige downtime of het risico van het breken van de live site?
+### Kan een Content-Security-Policy header onderdelen van een site breken als deze te strikt is geconfigureerd?
 
-Correct geïmplementeerd vereisen headerconfiguratiewijzigingen doorgaans geen downtime en zouden niet moeten beïnvloeden hoe de site functioneert voor gebruikers, hoewel het testen van de wijziging tegen het live domein daarna een standaard, noodzakelijke stap is om te bevestigen dat niets onbedoeld beïnvloed werd voordat de fix als compleet beschouwd wordt.
+Ja, en dit is precies waarom het de header is die het meest de moeite waard is om door een professional te laten configureren.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Thiếu Security Headers có phải là lỗi nghiêm trọng không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Đủ nghiêm trọng để luôn có mặt trong checklist chuẩn bị đưa ứng dụng lên chạy thực tế (production readiness)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Founder có thể tự kiểm tra Security Headers của web mình không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có, chỉ cần dùng các công cụ scan online miễn phí (như securityheaders.com) nhập URL vào là có báo cáo ngay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Các nền tảng hosting khác nhau (Vercel, AWS, DigitalOcean) có cách cấu hình header khác nhau không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có, mỗi nền tảng có file cấu hình riêng (next.config.js, _headers, nginx.conf), cần kinh nghiệm đa nền tảng để sửa đúng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cấu hình Security Headers có làm ngưng hoạt động (downtime) của trang web không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Không, việc thêm bớt header phản hồi diễn ra tức thì và không gây ngắt kết nối của người dùng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cấu hình Content-Security-Policy (CSP) quá chặt có làm hỏng web không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Có, nếu CSP quá nghiêm ngặt nó sẽ chặn các script, font hoặc widget bên thứ 3 hợp lệ mà trang web đang sử dụng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Chỉ cần HTTPS thôi có đủ bảo mật cho ứng dụng web chưa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chưa đủ — HTTPS chỉ mã hóa đường truyền, cần HSTS và các security header khác để chống hạ cấp kết nối và nhúng iframe độc hại."
+      }
+    }
+  ]
+}
+</script>

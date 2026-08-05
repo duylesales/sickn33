@@ -1,17 +1,18 @@
 ---
-Titel: "AI-productdemo's voor beleggers: wat ze feitelijk testen"
+Titel: "AI-productdemo's voor investeerders: Wat ze daadwerkelijk testen"
 Trefwoorden: ai native, ai prototype, ai saas, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: SaaS-oprichter scale-up
+Doelgroep: SaaS Oprichter Schaalvergroting
 ---
-# AI-productdemo's voor beleggers: wat ze feitelijk testen
+
+# AI-productdemo's voor investeerders: Wat ze daadwerkelijk testen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-productdemo's voor beleggers: wat ze feitelijk testen",
-  "description": "Een beleggersdemo test iets dat beperkter en specifieker is dan oprichters vaak aannemen: geen alomvattende technische degelijkheid, maar een specifieke, leerbare reeks signalen. Een directe blik op wat die signalen eigenlijk zijn.",
+  "headline": "AI-productdemo's voor investeerders: Wat ze daadwerkelijk testen",
+  "description": "Een investeerdersdemo test iets smallers en specifiekers dan oprichters vaak aannemen — niet uitgebreide technische deugdelijkheid.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,70 +31,86 @@ Doelgroep: SaaS-oprichter scale-up
 }
 </script>
 
-Een oprichter die zich voorbereidt op een beleggersdemonstratie combineert vaak twee werkelijk afzonderlijke doelen: bewijzen dat het productidee en de visie overtuigend zijn, en bewijzen dat de onderliggende technische basis echt gezond is. Investeerdersdemo’s worden voor het overgrote deel gebouwd en geëvalueerd rond het eerste doel – een feit dat de moeite waard is om duidelijk te begrijpen, zowel om effectief voor te bereiden op de demo zelf als om de specifieke fout te vermijden, die elders in bredere richtlijnen wordt behandeld, om een ​​succesvolle demo te behandelen als bewijs van productiegereedheid waarvoor deze eigenlijk nooit bedoeld was.
+Een oprichter die zich voorbereidt op een investeerdersdemo haalt vaak twee oprecht afzonderlijke doelen door elkaar: bewijzen dat het productidee en de visie meeslepend zijn, en bewijzen dat de onderliggende technische basis oprecht solide is. Investeerdersdemo's worden overwegend gebouwd en geëvalueerd rond specifiek het eerste doel – een feit dat het waard is om duidelijk te begrijpen. Zowel om u effectief voor te bereiden op de demo zelf, als om de specifieke fout te vermijden (die elders in bredere richtlijnen wordt behandeld) om een succesvolle demo te behandelen als bewijs van productiegereedheid dat het nooit daadwerkelijk was ontworpen om te bieden.
 
-## Wat een beleggersdemo echt test
+## Wat een investeerdersdemo oprecht test
 
-Investeerders die een productdemonstratie in een vroeg stadium bekijken, evalueren vooral of het kernconcept resoneert, of de oprichter blijk geeft van echte beheersing van het probleem en de markt, en of de kerninteractie van het product overtuigend en coherent aanvoelt - signalen over visie, marktinzicht en uitvoeringsvermogen op ideeniveau, en niet een technische audit van de codebasis die aan de basis ligt van waar ze naar kijken.
+Investeerders die naar een productdemo in een vroeg stadium kijken, evalueren voornamelijk of het kernconcept aanslaat, of de oprichter een oprechte beheersing van het probleem en de markt laat zien, en of de kerninteractie van het product meeslepend en samenhangend voelt. Dit zijn signalen over visie, marktinzicht en uitvoeringscapaciteit op het niveau van het idee, en geen technische audit van de codebase die de demo aandrijft waar ze naar kijken.
 
-## Waarom beleggers de technische deugdelijkheid over het algemeen niet rechtstreeks testen
+## Waarom investeerders de technische deugdelijkheid doorgaans niet rechtstreeks testen
 
-De meeste investeerders die een AI-native product in een vroeg stadium evalueren, zijn zelf niet toegerust om een ​​codebase technisch te auditeren tijdens een live demo, en de meesten proberen dat ook niet. Hun diligence-proces, wanneer het de technische degelijkheid specifiek onderzoekt, gebeurt doorgaans afzonderlijk, via het technische due diligence-proces dat elders in bredere richtlijnen wordt behandeld, en niet door het in realtime zien van een soepele demo.
+De meeste investeerders die een AI-native product in een vroeg stadium evalueren zijn zelf niet uitgerust om een codebase technisch te auditen tijdens een live demo, en de meesten proberen dat ook niet. Hun boekenonderzoek (due diligence-proces), wanneer het de technische deugdelijkheid specifiek onderzoekt, vindt doorgaans afzonderlijk plaats. Dit gebeurt via het technische due-diligence-proces dat elders in bredere richtlijnen wordt behandeld, en niet door het in realtime bekijken van een soepele demo.
 
-## Waarom dit onderscheid van belang is voor de manier waarop een oprichter zich feitelijk moet voorbereiden
+## Waarom dit onderscheid uitmaakt voor hoe een oprichter zich daadwerkelijk moet voorbereiden
 
-Als je begrijpt dat een demo in de eerste plaats visie en marktbeheersing test, en niet technische diepgang, betekent dit dat de voorbereidingstijd van een oprichter goed wordt besteed aan narratieve duidelijkheid, het anticiperen op waarschijnlijke vragen over markt en tractie, en ervoor zorgen dat de demo zelf soepel verloopt voor het specifieke, smalle pad dat wordt getoond - terwijl hij begrijpt dat deze voorbereiding echt geen vervanging is voor het afzonderlijke technische verhardingswerk dat in deze inhoudsreeks wordt behandeld, wat om heel andere redenen van belang is: echte klantveiligheid en een later, meer technisch zorgvuldigheidsproces waarvoor de demo zelf nooit was ontworpen.
+Het begrijpen dat een demo voornamelijk visie en marktbeheersing test, en niet de technische diepte, betekent dat de voorbereidingstijd van een oprichter voor de demo goed besteed is aan helderheid in de verhaallijn, het anticiperen op waarschijnlijke vragen over de markt en tractie, en het zorgen dat de demo zelf soepel draait voor het specifieke, smalle pad dat wordt getoond. Het betekent ook begrijpen dat deze voorbereiding oprecht niet de plaats inneemt van het afzonderlijke technische verhardingswerk dat in deze gehele artikelenreeks wordt behandeld. Dat werk doet er namelijk toe om heel andere redenen: de echte veiligheid van de klant, en een later, meer technisch due-diligence-proces dat de demo zelf nooit was ontworpen om aan te voldoen.
 
-## Waar oprichters dit specifiek in de war krijgen
+## Waar oprichters specifiek door in verwarring raken
 
-**Ervan uitgaande dat het succes van de demo betekent dat het technische werk is gedaan.** Dit wordt rechtstreeks behandeld in bredere richtlijnen elders en dit is precies de mythe die de opzet van dit artikel moet voorkomen: een oprichter die met succes demo's geeft aan investeerders en concludeert dat de technische basis daarom solide moet zijn, trekt een conclusie die de feitelijke evaluatiecriteria van de demo nooit hebben ondersteund.
+**Aannemen dat demosucces betekent dat het technische werk gedaan is.** Dit is rechtstreeks behandeld in bredere richtlijnen elders en is precies de mythe die het kader van dit artikel is ontworpen om te voorkomen. Een oprichter die met succes een demo geeft aan investeerders en concludeert dat de technische basis dus solide moet zijn, trekt een conclusie die de daadwerkelijke evaluatiecriteria van de demo nooit hebben ondersteund.
 
-**Onvoorbereid op de verhaal- en marktcommando-dimensies die de demo daadwerkelijk test.** De tegenovergestelde fout doet zich ook voor: een oprichter die echt heeft geïnvesteerd in technische verharding, maar nalaat het verhaal en de marktcommando's voor te bereiden die een investeerdersdemo feitelijk evalueert, arriveert niet goed voorbereid op wat er feitelijk in die specifieke kamer wordt beoordeeld.
+**Onvoldoende voorbereid zijn op de verhaallijn en de marktbeheersingsdimensies die de demo wel test.** De tegenovergestelde fout komt ook voor – een oprichter die oprecht heeft geïnvesteerd in technische verharding, maar verwaarloost het verhaal en de marktbeheersing voor te bereiden die een investeerdersdemo daadwerkelijk evalueert, komt onvoldoende voorbereid binnen voor wat er in die specifieke ruimte daadwerkelijk wordt beoordeeld.
 
-**Geen onderscheid maken tussen wanneer technische toewijding daadwerkelijk zal plaatsvinden en wanneer de demo plaatsvindt.** Wetende dat een rigoureuzere technische beoordeling doorgaans later in een fondsenwervingsproces plaatsvindt, los van de initiële demo, helpt een oprichter zijn eigen voorbereiding op de juiste manier te volgen – door eerst de feitelijke evaluatiecriteria van de demo aan te pakken, terwijl hij ervoor zorgt dat de technische verharding die in de bredere begeleiding wordt behandeld, daadwerkelijk aanwezig is voordat de latere, meer technische diligence-fase daadwerkelijk aanbreekt.
+**Niet onderscheiden wanneer technische due diligence daadwerkelijk zal plaatsvinden versus wanneer de demo plaatsvindt.** Weten dat een meer diepgaande technische beoordeling doorgaans later in een fondsenwervingsproces plaatsvindt, afzonderlijk van de initiële demo, helpt een oprichter om zijn eigen voorbereiding gepast te categoriseren – eerst de daadwerkelijke evaluatiecriteria van de demo aanpakken, terwijl er voor wordt gezorgd dat de technische verharding die in bredere richtlijnen wordt behandeld oprecht aanwezig is voordat de latere, meer technische due-diligence-fase daadwerkelijk aanbreekt.
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters bij het correct opvolgen van de voorbereiding van investeerders - verhaal- en demo-gereedheid naast, niet in plaats van, de echte technische verharding die een later diligence-proces daadwerkelijk zal onderzoeken - ondersteund door Manifera's bredere ervaring met het ondersteunen van oprichters tijdens zowel de pitch als de daaropvolgende technische controlefasen van een verhoging.
+[LaunchStudio](https://launchstudio.eu/en/) helpt oprichters om investeerdersvoorbereiding correct te categoriseren – verhaallijn en demobereidheid naast, en niet in plaats van, de echte technische verharding die een later due-diligence-proces daadwerkelijk zal onderzoeken. Dit wordt ondersteund door Manifera's bredere ervaring in het ondersteunen van oprichters bij zowel de pitch als de daaropvolgende technische onderzoeksfasen van een kapitaalronde.
 
-[Bereid je voor op wat de demo daadwerkelijk test, en afzonderlijk op wat erna komt](https://launchstudio.eu/en/#contact) — de twee zijn verwante maar echt verschillende voorbereidingstaken.
+[Bereid u voor op wat de demo daadwerkelijk test, en afzonderlijk op wat daarna komt](https://launchstudio.eu/en/#contact) — de twee zijn gerelateerde maar oprecht verschillende voorbereidingstaken.
+
+## Wat u daadwerkelijk moet doen in de kloof tussen een sterke demo en technische due diligence
+
+Het begrijpen dat een demo en een technisch due-diligence-gesprek oprecht verschillende dingen testen, zoals hierboven behandeld, is de diagnostische helft van het beeld. De praktische helft is wat een oprichter daadwerkelijk moet doen met dat inzicht in de specifieke periode tussen een goed ontvangen demo en een daadwerkelijk plaatsvindende technische beoordeling – een periode die vaak in weken wordt gemeten, en die aanzienlijk nuttiger wordt besteed aan voorbereiden dan aan simpelweg wachten tot het volgende gesprek aanbreekt.
+
+**Vraag rechtstreeks of er een technische fase bestaat, en wanneer.** Niet elk investeerdersproces bevat een afzonderlijk technisch due-diligence-gesprek, en niet elk proces dat dat wel heeft voert het op hetzelfde punt in het traject uit. Het stellen van een specifieke, directe vraag hierover vroeg in het proces, in plaats van aan te nemen dat een soepele demo betekent dat het proces in feite voorbij is, geeft een oprichter een daadwerkelijke tijdlijn om zich tegen voor te bereiden in plaats van een open gevoel dat er op een ongespecificeerd punt "meer gesprekken" komen.
+
+**Stel uzelf dezelfde categorieën vragen die een technische beoordelaar zou stellen, voordat zij dat doen.** De specifieke, concrete vragen die elders in bredere richtlijnen worden behandeld over wat een investeerders- of adviescommissie daadwerkelijk zou moeten vragen – over authenticatie, gegevensverwerking en de andere kern-categorieën voor productiegereedheid die deze artikelenreeks herhaaldelijk dekt – zijn het waard om proactief op uw eigen product toe te passen in de tussentijd. Doe dit in plaats van ze voor het eerst live tegen te komen tegenover de persoon die beslist of hij gaat investeren.
+
+**Geef prioriteit aan de kloven die een technische beoordelaar waarschijnlijk daadwerkelijk zal onderzoeken, en niet aan elke kloof die theoretisch bestaat.** Een volledige ronde voor productiegereedheid kost echte tijd, en de kloof tussen demo en due diligence is zelden lang genoeg voor een uitputtende herbouw. Door u eerst te richten op de categorieën waar een technische beoordelaar specifiek naar zal vragen – authenticatie en autorisatie, gegevensverwerking en alles wat rechtstreeks gekoppeld is aan de gepitchte kernwaardepropositie – worden de meest zichtbare kloven binnen een realistische tijdlijn gedicht. Zelfs als er items met lagere prioriteit overblijven voor later.
+
+**Bereid u voor om eerlijk te praten over overgebleven kloven, en niet alleen om er geen te hebben.** Een technische beoordelaar die een gerichte vraag stelt verwacht niet noodzakelijkerwijs een perfecte codebase – een oprichter die specifiek en eerlijk kan praten over een bekende kloof en een concreet plan heeft om deze te dichten komt vaak aanzienlijk beter over dan iemand die zichtbaar overvallen wordt door een vraag die hij helemaal niet had voorzien. De tweede reactie signaleert namelijk een gebrek aan zelfbewustzijn over de daadwerkelijke staat van het product, en niet alleen een onvolledige functie.
+
+**Laat het momentum van de demovoorbereiding niet in de plaats komen van het andere werk dat due diligence daadwerkelijk vereist.** Het is aantrekkelijk, zodra een demo goed is gegaan, om dezelfde verhaallijn en interactiestroom die de demo dekt te blijven verfijnen – poetsen wat al werkte in plaats van de aandacht te verleggen naar het oprecht andere, minder zichtbare werk dat een technische beoordeling daadwerkelijk zal onderzoeken. De twee verdienen afzonderlijke, bewuste aandacht, en niet één doorlopende inspanning die toevallig neigt naar wat in het moment urgenter voelde.
+
+Het behandelen van deze kloof als actieve voorbereidingstijd, in plaats van een pauze tussen twee ongerelateerde gebeurtenissen, is wat daadwerkelijk bepaalt of het hardere, meer technische gesprek net zo soepel verloopt als het eerste.
 
 ## Echt voorbeeld
 
-### Een AI-Native oprichter in actie: een geweldige demo gevolgd door een moeilijker gesprek
+### Een AI-native oprichter in actie: Een geweldige demo gevolgd door een harder gesprek
 
-Nienke, een oprichtster in Amsterdam die FactuurAI beheert, een AI-factuurverwerkingstool voor kleine accountantskantoren, gaf een werkelijk overtuigende beleggersdemonstratie, waarbij ze enthousiaste feedback kreeg over de duidelijke waardepropositie van FactuurAI en Nienke's duidelijke beheersing van de accountantskantorenmarkt waarop ze zich richtte.
+Nienke, een oprichter in Amsterdam die FactuurAI runt, een AI-factuurverwerkingstool voor kleine accountantskantoren, gaf een oprecht meeslepende investeerdersdemo. Ze ontving enthousiaste feedback over FactuurAI's duidelijke waardepropositie en Nienke's duidelijke beheersing van de markt voor accountantskantoren waar ze zich op richtte.
 
-Toen het team van dezelfde investeerder weken later overging tot een meer technisch diligence-gesprek, ging Nienke er aanvankelijk van uit dat het succes van haar demo betekende dat dit latere gesprek eveneens soepel zou verlopen – een specifiek voorbeeld van de exacte mythe die elders in bredere richtlijnen wordt behandeld – om er vervolgens achter te komen dat de vragen van de technische recensent over authenticatie en gegevensverwerking lacunes aan het licht brachten die haar demo-gerichte voorbereiding helemaal nooit had aangepakt.
+Toen het team van dezelfde investeerder weken later overging op een meer technisch due-diligence-gesprek, nam Nienke aanvankelijk aan dat het succes van haar demo betekende dat dit latere gesprek net zo soepel zou verlopen – een specifiek geval van de exacte mythe die elders in bredere richtlijnen wordt behandeld. Ze ontdekte echter dat de vragen van de technische beoordelaar over authenticatie en gegevensverwerking kloven blootlegden die haar op de demo gerichte voorbereiding helemaal nooit had behandeld.
 
-**Resultaat:** Nienke bracht FactuurAI naar LaunchStudio tussen de demo en het technische diligence-gesprek, waardoor de specifieke hiaten werden gedicht die de vragen van de technische reviewer aan het licht hadden gebracht, waardoor het fondsenwervingsproces kon doorgaan in plaats van te stagneren precies op het punt waar de twee werkelijk verschillende evaluatiecriteria – visie en technische degelijkheid – uiteindelijk samenkwamen.
+**Resultaat:** Nienke bracht FactuurAI naar LaunchStudio tussen de demo en het technische due-diligence-gesprek. Hiermee werden de specifieke kloven gedicht die de vragen van de technische beoordelaar naar boven hadden gebracht, waardoor het fondsenwervingsproces kon doorgaan in plaats van te stagneren op exact het punt waar de twee oprecht verschillende evaluatiecriteria – visie en technische deugdelijkheid – uiteindelijk samenkwamen.
 
-> *"De demo verliep echt goed en ik ging ervan uit dat dit betekende dat ik eigenlijk door het moeilijkste deel heen was. Er was weken later een heel ander, veel technischer gesprek voor nodig om te beseffen dat de demo eigenlijk nooit iets had getest van wat dat tweede gesprek specifiek onderzocht."*
-> — **Nienke Hendriks, oprichter, FactuurAI (Amsterdam)**
+> *"De demo ging oprecht goed en ik nam aan dat dat betekende dat ik in feite door het moeilijkste deel heen was. Het kostte een compleet ander, veel meer technisch gesprek weken later om te realiseren dat de demo nooit daadwerkelijk iets had getest van wat dat tweede gesprek specifiek onderzocht."*
+> — **Nienke Hendriks, Oprichter, FactuurAI (Amsterdam)**
 
-**Kosten en tijdlijn:** € 2.300 (lanceringsklaar pakket, prioriteitsbereik vóór technische inspanningen) — voltooid in 8 werkdagen.
+**Kosten en tijdlijn:** € 2.300 (Launch Ready Pakket, prioriteitsomvang voorafgaand aan technische due diligence) — voltooid in 8 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Moet een oprichter ooit van een investeerder verwachten dat hij een demo in realtime technisch onderzoekt?
+### Zou een oprichter ooit moeten verwachten dat een investeerder een demo in realtime technisch onderzoekt?
 
-Af en toe zou een technisch ingestelde individuele belegger dat kunnen doen, maar dit is niet het algemene patroon waarop de meeste demo's worden beoordeeld; de meeste evaluaties van demo's van beleggers richten zich op visie-, markt- en uitvoeringssignalen in plaats van live technisch onderzoek, waarbij diepere technische evaluatie doorgaans afzonderlijk en later plaatsvindt.
+Incidenteel zou een technisch ingestelde individuele investeerder dat kunnen doen, maar dit is niet het algemene patroon waar de meeste demo's tegen worden geëvalueerd. De meeste evaluaties van investeerdersdemo's richten zich op visie-, markt- en uitvoeringssignalen in plaats van live technische controle, waarbij diepere technische evaluatie doorgaans afzonderlijk en later plaatsvindt.
 
-### Hoe kan een oprichter vooraf weten of het proces van een specifieke investeerder een afzonderlijke technische diligence-fase omvat?
+### Hoe kan een oprichter vooraf weten of het proces van een specifieke investeerder een afzonderlijke technische due-diligence-fase bevat?
 
-Direct vragen naar het typische proces van de belegger, inclusief of en wanneer technische zorgvuldigheid plaatsvindt, is een redelijke vraag tijdens vroege gesprekken, waardoor een oprichter zijn eigen voorbereiding op de juiste manier kan ordenen in plaats van te gissen.
+Rechtstreeks vragen naar het typische proces van de investeerder, inclusief of en wanneer technische due diligence plaatsvindt, is een redelijke vraag tijdens vroege gesprekken. Het helpt een oprichter om zijn eigen voorbereiding gepast te categoriseren in plaats van te gissen.
 
-### Is het mogelijk om je tegelijkertijd voor te bereiden op zowel de demo als de latere technische werkzaamheden, in plaats van opeenvolgend?
+### Is het mogelijk om u gelijktijdig voor te bereiden op zowel de demo als de latere technische due diligence, in plaats van opeenvolgend?
 
-Ja, en dit is over het algemeen de meest efficiënte aanpak: het technische verhardingswerk dat in de bredere richtlijnen wordt behandeld, hoeft niet te wachten tot na een succesvolle demo, omdat het van belang is voor de echte klantveiligheid, ongeacht de timing van de fondsenwerving, ongeacht wanneer het zorgvuldigheidsproces van een specifieke investeerder plaatsvindt.
+Ja, en dit is doorgaans de meer efficiënte benadering – het technische verhardingswerk dat in bredere richtlijnen wordt behandeld hoeft niet te wachten tot na een succesvolle demo. Het doet er namelijk toe voor echte klantveiligheid, ongeacht de timing van de fondsenwerving en los van wanneer het due-diligence-proces van een specifieke investeerder toevallig plaatsvindt.
 
-### Komt de echte technische beheersing van een oprichter, afgezien van alleen het verhaal van de demo, ooit positief over tijdens de demo zelf?
+### Komt de oprechte technische beheersing van een oprichter, voorbij alleen het verhaal van de demo, ooit positief over tijdens de demo zelf?
 
-Dat kan, vooral als de oprichter specifiek en concreet kan spreken over technische beslissingen wanneer daarom wordt gevraagd, hoewel de belangrijkste evaluatiecriteria van de demo vooral over visie en marktbeheersing blijven gaan en niet specifiek over technische diepgang, zelfs als de technische vaardigheid van een oprichter de geloofwaardigheid vergroot.
+Dat kan, met name als de oprichter specifiek en concreet kan praten over technische beslissingen wanneer daarnaar wordt gevraagd. De kern-evaluatiecriteria van de demo blijven echter voornamelijk gaan over visie en marktbeheersing in plaats van specifieke technische diepte, zelfs wanneer de technische vlottheid van een oprichter geloofwaardigheid toevoegt.
 
-### Hoe werd het specifieke hiaat van Nienke geïdentificeerd tijdens het latere technische diligence-gesprek?
+### Hoe werd de specifieke kloof van Nienke geïdentificeerd tijdens het latere technische due-diligence-gesprek?
 
-Via het soort specifieke, concrete vragen die elders in de bredere richtlijnen voor wat beleggers en adviseurs eigenlijk zouden moeten stellen aan bod komen – directe vragen over authenticatie en gegevensverwerking die Nienke's demogerichte voorbereiding nooit specifiek had behandeld of waarop ze had geanticipeerd.
+Via het soort specifieke, concrete vragen dat elders in bredere richtlijnen wordt behandeld over wat investeerders en adviseurs daadwerkelijk zouden moeten vragen – directe vragen over authenticatie en gegevensverwerking die Nienke's op de demo gerichte voorbereiding nooit specifiek had behandeld of voorzien.
 
 <script type="application/ld+json">
 {
@@ -102,42 +119,42 @@ Via het soort specifieke, concrete vragen die elders in de bredere richtlijnen v
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Should a founder expect an investor to technically probe a demo in real time?",
+      "name": "Moet een oprichter verwachten dat een investeerder de techniek live tijdens de demo test?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Occasionally, but most demo evaluation focuses on vision and market signals rather than live technical scrutiny."
+        "text": "Zelden — de meeste demo-evaluaties richten zich op visie en marktsignalen; techniek wordt later apart getoetst."
       }
     },
     {
       "@type": "Question",
-      "name": "How can a founder know if an investor's process includes separate technical diligence?",
+      "name": "Hoe weet een oprichter of er een aparte technische due-diligence-fase komt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Directly asking about the investor's typical process is a reasonable question to sequence preparation appropriately."
+        "text": "Vraag direct naar het proces van de investeerder om de voorbereiding tijdig en juist in te plannen."
       }
     },
     {
       "@type": "Question",
-      "name": "Can a founder prepare for both the demo and technical diligence simultaneously?",
+      "name": "Kun je je tegelijk voorbereiden op de demo én op de technische due diligence?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, and this is generally more efficient since technical hardening matters regardless of fundraising timing."
+        "text": "Ja, en dit is efficiënter omdat technische verharding sowieso nodig is voor klantveiligheid."
       }
     },
     {
       "@type": "Question",
-      "name": "Does genuine technical command ever come across positively during the demo itself?",
+      "name": "Helpt technische kennis tijdens de demo zelf?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It can, though the demo's core evaluation criteria remain primarily about vision and market command."
+        "text": "Het voegt geloofwaardigheid toe, al blijven de hoofdcriteria gericht op visie en marktinzicht."
       }
     },
     {
       "@type": "Question",
-      "name": "How did the gap get identified during the later technical diligence conversation?",
+      "name": "Hoe werd de kloof bij Nienke later ontdekt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Through specific, concrete questions about authentication and data handling the demo-focused preparation hadn't addressed."
+        "text": "Door concrete vragen over authenticatie en databeveiliging die bij de demo-voorbereiding over het hoofd waren gezien."
       }
     }
   ]

@@ -1,17 +1,18 @@
 ---
-Titel: "Het Autocomplete-vertrouwen van Cursor is niet hetzelfde als het productievertrouwen"
+Titel: "Cursor's automatisch aanvulvertrouwen is niet hetzelfde als productievertrouwen"
 Trefwoorden: ai code tool, bolt ai, cursor autocomplete, ai code review, permission check bug
 Koperfase: Overweging
-Doelgroep: Technische Solo-oprichter / Indie Hacker
+Doelgroep: Technische solo-oprichter / Indie Hacker
 ---
-# Het Autocomplete-vertrouwen van Cursor is niet hetzelfde als het productievertrouwen
+
+# Cursor's automatisch aanvulvertrouwen is niet hetzelfde als productievertrouwen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Het Autocomplete-vertrouwen van Cursor is niet hetzelfde als het productievertrouwen",
-  "description": "Het automatisch aanvullen van Cursor aarzelt nooit, zelfs niet als het verkeerd is. Dat vertrouwen is precies wat ervoor zorgt dat subtiel onjuiste suggesties \u2013 zoals een toestemmingscontrole die mislukt bij \u00e9\u00e9n rolcombinatie \u2013 snel door de beoordeling komen en de productie bereiken.",
+  "headline": "Cursor's automatisch aanvulvertrouwen is niet hetzelfde als productievertrouwen",
+  "description": "Cursor's automatische aanvulling aarfelt nooit, zelfs wanneer het verkeerd is.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,81 +31,77 @@ Doelgroep: Technische Solo-oprichter / Indie Hacker
 }
 </script>
 
-Cursor typt nooit een suggestie voorlopig. Het dekt niet af, signaleert geen onzekerheid, zegt niet "dit zou verkeerd kunnen zijn voor randgevallen." Elke autocomplete ziet er net zo zelfverzekerd uit als alle andere, of het nu een triviale getterfunctie is of een toestemmingscontrole die bepaalt wie gevoelige gegevens kan zien. Dat uniforme vertrouwen is het werkelijke gevaar – niet dat Cursor fouten maakt, zoals elke tool doet, maar dat de fouten er identiek uitzien als de juiste suggesties, en dat een ontwikkelaar die onder druk van deadlines code skimmt, geen visuele of tekstuele aanwijzing heeft die hem vertelt welke welke is.
+Cursor typt een suggestie nooit aarzelend. Het indekt zich niet in, markeert geen onzekerheid, en zegt niet "dit is mogelijk verkeerd voor uitzonderingsgevallen". Elke automatische aanvulling komt aan met een uiterlijk dat exact even zelfverzekerd is als elke andere, of het nu een triviale getter-functie is of een machtigingscontrole die bepaalt wie gevoelige gegevens kan zien. Dat uniforme vertrouwen is het daadwerkelijke gevaar – niet dat Cursor fouten maakt (elke tool doet dat), maar dat zijn fouten er identiek uitzien aan zijn correcte suggesties. En een ontwikkelaar die code doorneemt onder tijdsdruk heeft geen visuele of tekstuele aanwijzing die hem vertelt welke welke is.
 
-## De specifieke faalwijze: plausibel, niet correct
+## De specifieke manier van mislukken: aannemelijk, en niet correct
 
-Vraag een ervaren ingenieur wat de door AI voorgestelde code gevaarlijk maakt, en het eerlijke antwoord luidt meestal niet: "Het levert kapotte code op die duidelijk niet werkt." Kapotte code wordt onmiddellijk opgemerkt: er treedt een fout op, de test mislukt en de code wordt niet gecompileerd. De gevaarlijke categorie is code die *plausibel* is – syntactisch schoon, logisch coherent bij de eerste keer lezen, consistent met de patronen die al in het bestand aanwezig zijn – terwijl deze op subtiele wijze verkeerd is op een manier die zich alleen manifesteert onder een specifieke voorwaarde die niemand toevallig heeft getest. Toestemmings- en autorisatielogica is een van de plaatsen met het hoogste risico voor precies dit patroon, omdat het aantal rolcombinaties snel groeit, en een controle die tijdens de ontwikkeling de drie meest voorkomende combinaties correct afhandelt, nog steeds verkeerd kan zijn voor de vierde, die pas verschijnt zodra echte gebruikers met echte roltoewijzingen het product gaan gebruiken.
+Vraag een ervaren ingenieur wat door AI gesuggereerde code gevaarlijk maakt, en het eerlijke antwoord is doorgaans niet "het produceert gebroken code die duidelijk niet werkt". Gebroken code wordt onmiddellijk opgevangen – het werpt een foutmelding op, faalt voor een test, of compileert niet. De gevaarlijke categorie is code die *aannemelijk* is – syntactisch schoon, logisch coherent bij een eerste lezing, consistent met de patronen die al in het bestand zitten – terwijl het subtiel verkeerd is op een manier die zich alleen manifesteert onder een specifieke voorwaarde die niemand toevallig heeft getest. Machtigings- en autorisatielogica is een van de plekken met het hoogste risico voor exact dit patroon, omdat het aantal rolcombinaties snel groeit. En een controle die de drie meest voorkomende combinaties tijdens de ontwikkeling correct afhandelt kan nog steeds verkeerd zijn voor de vierde die alleen verschijnt zodra echte gebruikers met echte roltoewijzingen het product beginnen te gebruiken.
 
-Dit is geen kritiek die uniek is voor Cursor; Bolt, Lovable en elke andere AI-codeerassistent draagt ​​hetzelfde structurele risico met zich mee. Maar het is vooral relevant voor technische solo-oprichters die specifiek Cursor gebruiken, omdat de workflow van Cursor is opgebouwd rond snelle, inline autocomplete die wordt geaccepteerd met een toetsaanslag, wat een fundamenteel sneller en minder wrijvingsmoment is dan het beoordelen van een groter, door AI gegenereerd codeblok dat vanuit een chatinterface is geplakt. De snelheid is de volledige waardepropositie van inline automatisch aanvullen. Het is ook precies de reden waarom een ​​subtiel verkeerde suggestie eerder doorsijpelt: er is minder natuurlijke pauze ingebouwd in de workflow voor controle.
+Dit is geen kritiek die uniek is voor Cursor – Bolt, Lovable en elke andere AI-coderingsassistent dragen hetzelfde structurele risico. Maar het is in het bijzonder relevant voor technische solo-oprichters die specifiek Cursor gebruiken, omdat Cursor's werkwijze gebouwd is rond snelle, inline automatische aanvullingen die geaccepteerd worden met één toetsslag. Dat is een fundamenteel sneller beoordelingsmoment met minder wrijving dan het beoordelen van een groter door AI gegenereerd blok code dat gekopieerd is uit een chat-interface. De snelheid is de gehele waardepropositie van inline automatische aanvulling. Het is ook exact waarom een subtiel verkeerde suggestie waarschijnlijker is om er doorheen te glippen: er is minder natuurlijke pauze ingebouwd in de werkwijze voor controle.
 
-## Waarom een ​​snelle doorlezing dit niet duidelijk maakt
+## Waarom een snelle doorlezing dit niet opvangt
 
-Een bug voor de toestemmingscontrole die alleen onder één specifieke rolcombinatie mislukt, is door zijn constructie onzichtbaar voor een snelle doorlezing en vaak ook onzichtbaar voor handmatig testen, tenzij iemand specifiek die exacte combinatie construeert en test. Tijdens de ontwikkeling test een oprichter die zijn eigen product test, doorgaans als zichzelf: één rol, misschien twee als hij een tweede testaccount heeft aangemaakt. In geen van beide kondigt de bug zichzelf aan. Het wacht op een echt productiescenario: een gebruiker die toevallig twee rollen tegelijkertijd bekleedt, of een toestemming die is geërfd via een teamstructuur die geen deel uitmaakte van de oorspronkelijke testmatrix, en pas dan blokkeert de onjuiste controle iemand die toegang zou moeten hebben of, erger nog, toegang verlenen aan iemand die deze niet zou moeten hebben.
+Een bug in een machtigingscontrole die alleen faalt onder één specifieke rolcombinatie is, door zijn constructie, onzichtbaar voor een snelle doorlezing. Het is vaak ook onzichtbaar voor handmatig testen, tenzij iemand specifiek die exacte combinatie construeert en test. Tijdens de ontwikkeling test een oprichter die zijn eigen product test doorgaans als zichzelf – één rol, misschien twee als hij een tweede testaccount heeft ingesteld. De bug kondigt zichzelf in geen van beide aan. Het wacht op een echt productiescenario: een gebruiker die toevallig twee rollen gelijktijdig bezit, of een machtiging geërfd via een teamstructuur die geen onderdeel was van de oorspronkelijke testmatrix. Alleen dan weigert de onjuiste controle ofwel toegang aan iemand die toegang zou moeten hebben, of, erger nog, verleent het toegang aan iemand die het niet zou moeten hebben.
 
-Zoals Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, het verwoordt: “We zien een verschuiving in de softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig is om die producten tot volwassenheid te brengen. Precies daarin hebben we elf jaar ervaring.” Toestemmingslogica is een nauwkeurig voorbeeld van deze verschuiving: Cursor heeft de oplossing 'kan ik snel een rolcontrole schrijven' opgelost, maar niemand heeft de oplossing 'dekt deze rolcontrole correct elke combinatie die in de productie bestaat' op, omdat daarvoor een systematisch beoordelingsproces vereist is, en niet slechts een werksuggestie.
+Herre Roelevink, CEO van LaunchStudio en Managing Director van Manifera, verwoordt het zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot wasdom te brengen. We hebben elf jaar ervaring in exact dat." Machtigingslogica is een precies voorbeeld van deze verschuiving – Cursor loste op "kan ik snel een rolcontrole schrijven", maar niemand loste op "dekt deze rolcontrole op de juiste manier elke combinatie die in productie zal bestaan", omdat dat een systematisch beoordelingsproces vereist, en niet alleen een werkende suggestie.
 
-## Wat deze kloof dicht
+## Wat deze kloof sluit
 
-De oplossing wantrouwt Cursor in het algemeen niet; de automatische aanvulling ervan is echt nuttig en zorgt ervoor dat de grote meerderheid van de suggesties goed is. De oplossing is het opzettelijk nauwkeuriger onderzoeken van specifieke categorieën code waarbij een subtiele fout grote gevolgen heeft: authenticatie, autorisatie, betalingslogica en alles wat maar in aanraking komt met de grenzen van gegevenstoegang. Voor deze categorieën is een snelle doorlezing niet voldoende; ze hebben een expliciete testmatrix nodig die elke realistische rol- en toestemmingscombinatie omvat, niet alleen de twee of drie die tijdens de normale ontwikkeling worden gebruikt. Onze technici, die werken vanuit Manifera's hub in Singapore, passen precies dit soort gerichte beoordelingen toe bij het auditen van een door AI gebouwde codebase voordat deze naar productie gaat. Ze beoordelen niet elke regel met dezelfde intensiteit, maar concentreren hun onderzoek op de categorieën code waarbij 'plausibel maar fout' echte schade veroorzaakt.
+De herstelling is niet het wantrouwen van Cursor in het algemeen – zijn automatische aanvulling is oprecht nuttig en krijgt het grote merendeel van de suggesties goed. De herstelling is het toepassen van bewust hogere controle op specifieke categorieën van code waar een subtiele fout onevenredige gevolgen heeft: authenticatie, autorisatie, betalingslogica, en alles wat de grenzen van gegevenstoegang raakt. Voor deze categorieën is een snelle doorlezing niet voldoende; ze hebben een expliciete testmatrix nodig die elke realistische rol- en machtigingscombinatie dekt, en niet alleen de twee of drie die gebruikt worden tijdens normale ontwikkeling. Onze ingenieurs, werkend vanuit Manifera's hub in Singapore, passen exact dit soort doelgerichte beoordeling toe wanneer ze een met AI gebouwde codebase auditeren voordat deze naar productie gaat – niet elke regel met gelijke intensiteit beoordelen, maar controle concentreren op de categorieën van code waar "aannemelijk maar verkeerd" reële schade veroorzaakt.
 
-Als je een beoordeling van de toestemming en toegangscontrole wilt laten uitvoeren op een door Cursor gebouwd product voordat meer gebruikers ervan afhankelijk zijn, legt onze pagina [hoe het werkt](https://launchstudio.eu/en/#process) uit hoe LaunchStudio dat soort audits aanpakt, en Manifera's praktijk voor [aangepaste softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare autorisatiebeoordelingen uitgevoerd voor bedrijfssystemen met veel meer rolcomplexiteit dan een typisch SaaS-product in een vroeg stadium.
+Als u een beoordeling van machtigingen en toegangsbeheer wilt laten uitvoeren op een met Cursor gebouwd product voordat meer gebruikers er afhankelijk van worden, legt onze [hoe het werkt](https://launchstudio.eu/en/#process)-pagina uit hoe LaunchStudio dat soort audit omvangt. En Manifera's praktijk voor [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) heeft vergelijkbare autorisatiebeoordelingen uitgevoerd voor enterprise-systemen met aanzienlijk meer rolcomplexiteit dan een typisch SaaS-product in een vroeg stadium.
 
-## Een testmatrix beschermt u slechts eenmaal, tenzij deze is geautomatiseerd
+## Een testmatrix beschermt u slechts één keer, tenzij deze geautomatiseerd is
 
-Het verifiëren van AI-gegenereerde code tegen een testmatrix voorkomt aannemelijke maar verkeerde logica. Als die tests handmatig worden uitgevoerd, worden ze bij toekomstige code-updates vaak overgeslagen.
+Het bouwen van de testmatrix voor rolcombinaties herstelt de bug die werd gevonden, maar het stopt de volgende niet om op dezelfde manier te arriveren. Cursor zal zelfverzekerd automatische aanvullingen blijven suggereren in de buurt van diezelfde machtigingslogica elke keer dat het product veranderd – er wordt een nieuwe rol toegevoegd, een ticketveld krijgt een nieuwe zichtbaarheidsregel, een gerelateerde functie wordt gerefactord. En elk van die momenten is een verse kans voor een aannemelijke-maar-verkeerde suggestie om voorbij een snelle beoordeling te glippen, exact zoals de eerste deed. Een testmatrix die bestaat als een document waar iemand één keer handmatig doorheen liep nadat de oorspronkelijke bug werd gevonden vangt niets daarvan op. Het bewijst alleen dat de bug die al bekend was is hersteld.
 
-Integreer de testmatrix in een geautomatiseerde testsuite (Jest/Vitest):
+De matrix levert zijn waarde pas op zodra het stopt met een handmatige checklist te zijn en een geautomatiseerde testsuite wordt die draait bij elke wijziging die de machtigingslogica raakt, zodat een nieuwe suggestie door dezelfde combinaties moet slagen als de vorige voordat het productie kan bereiken:
 
-```javascript
-describe('AI Code Verification Matrix', () => {
-  test('afhandeling van randgevallen bij nul-invoer', () => {
-    expect(calculateDiscount(0)).toBe(0);
-  });
-});
 ```
+test: support-agent + department-lead kan toegewezen ticket bekijken
+test: support-agent + department-lead kan toegewezen ticket oplossen
+test: admin + support-agent erft volledige ticket-zichtbaarheid
+test: regular-user + department-lead kan eigenschapscontrole van ticket niet omzeilen
+```
+
+Aangesloten op de uitrolpijplijn draaien deze automatisch bij elke relevante wijziging in plaats van af te hangen van iemand die er aan denkt om ze handmatig opnieuw te controleren.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: de rollencombinatie die niemand heeft getest
+### Een AI-native oprichter in actie: De rolcombinatie die niemand heeft getest
 
-Twan Buitenhuis, een technische solo-oprichter in Coevorden, bouwde TicketVolg – ​​een interne IT-ticketingtool – met behulp van Cursor. Tijdens het implementeren van toegangscontroles voor wie tickets kon bekijken en oplossen, suggereerde Cursor's autocomplete vol vertrouwen een toestemmingscontrole die er correct uitzag en exact overeenkwam met het patroon van de omringende code.
+Twan Buitenhuis, een technische solo-oprichter in Coevorden, bouwde TicketVolg – een interne IT-ticketingtool – met behulp van Cursor. Tijdens het implementeren van toegangscontroles voor wie tickets kon bekijken en oplossen, suggereerde Cursor's automatische aanvulling zelfverzekerd een machtigingscontrole die er correct uitzag en exact overeenkwam met het patroon van de omringende code.
 
-De suggestie werd door Twan zelf snel doorgelezen tijdens de ontwikkeling, en ook door zijn handmatige tests, omdat zijn tests de standaardrolcombinaties bestreken waarvan hij verwachtte dat ze er toe zouden doen: gewone gebruikers, beheerders en ondersteuningsagenten, individueel getest. De controle was specifiek onjuist voor één combinatie – een gebruiker die tegelijkertijd de rol van ondersteuningsagent en afdelingsleider vervulde – een combinatie die niet bestond in de testaccounts van Twan, maar wel bestond onder zijn daadwerkelijke vroege gebruikers toen TicketVolg echt in gebruik werd genomen. Die combinatie zorgde ervoor dat de toestemmingscontrole ten onrechte de toegang ontzegde tot tickets die de gebruiker had moeten kunnen zien.
+De suggestie slaagde voor Twan's eigen snelle doorlezing tijdens de ontwikkeling, en het slaagde ook voor zijn handmatige testen, omdat zijn testen de standaard rolcombinaties dekte die hij verwachtte dat er toe deden: normale gebruikers, beheerders en ondersteuningsagenten, individueel getest. De controle was subtiel verkeerd specifiek voor één combinatie – een gebruiker die zowel een ondersteuningsagent-rol als een afdelingshoofd-rol gelijktijdig bezat – een combinatie die niet bestond in Twan's testaccounts, maar wel bestond onder zijn daadwerkelijke vroege gebruikers zodra TicketVolg in echt gebruik ging. Die combinatie zorgde ervoor dat de machtigingscontrole onterecht toegang weigerde tot tickets die de gebruiker had moeten kunnen zien.
 
-De technici van LaunchStudio hebben het volledige toestemmingssysteem van TicketVolg beoordeeld, niet alleen de gemarkeerde controle, en een goede rolcombinatietestmatrix gebouwd die elke realistische combinatie van rollen omvatte in plaats van alleen de individueel geteste rollen die Twan had gecontroleerd. De gemarkeerde toestemmingslogica is herschreven om gecombineerde rollen correct te evalueren, en de nieuwe testmatrix draait nu als onderdeel van elke toekomstige wijziging aan het toegangscontrolesysteem, zodat een soortgelijk gat niet meer onopgemerkt de productie kan bereiken.
+LaunchStudio's ingenieurs beoordeelden TicketVolg's volledige machtigingssysteem, en niet alleen de gemarkeerde controle. We bouwden een correcte testmatrix voor rolcombinaties die elke realistische koppeling van rollen dekt in plaats van alleen de individueel geteste koppelingen die Twan had gecontroleerd. De gemarkeerde machtigingslogica werd herschreven om gecombineerde rollen correct te evalueren. En de nieuwe testmatrix draait nu als onderdeel van elke toekomstige wijziging aan het toegangsbeheersysteem, zodat een vergelijkbare kloof productie niet meer onopgemerkt kan bereiken.
 
-**Resultaat:** Het toestemmingssysteem van TicketVolg verwerkt nu elke realistische rolcombinatie correct, en Twan beschikt over een echte testmatrix in plaats van te vertrouwen op een snelle handmatige controle voordat wijzigingen in de toegangscontrole worden verzonden.
+**Resultaat:** TicketVolg's machtigingssysteem handelt nu elke realistische rolcombinatie correct af. Twan heeft een daadwerkelijke testmatrix in plaats van te vertrouwen op een snelle handmatige controle voordat hij wijzigingen in het toegangsbeheer verzendt.
 
-> *"De code zag er precies zo betrouwbaar uit als al het andere dat Cursor die week had gesuggereerd. Er was niets dat zei: 'Controleer deze nog eens.'"*
-> — **Twan Buitenhuis, oprichter, TicketVolg (Coevorden)**
+> *"De code zag er exact even zelfverzekerd uit als al het andere wat Cursor die week had gesuggereerd. Er was niets aan dat zei 'controleer deze dubbel'."*
+> — **Twan Buitenhuis, Oprichter, TicketVolg (Coevorden)**
 
-**Kosten en tijdlijn:** € 900 (beoordeling van het toestemmingssysteem, testmatrix voor rolcombinaties en oplossing voor de gemarkeerde bug in toegangscontrole) — voltooid in 5 werkdagen.
+**Kosten en tijdlijn:** € 900 (beoordeling van het machtigingssysteem, testmatrix voor rolcombinaties, en herstelling van de gemarkeerde bug in het toegangsbeheer) — voltooid in 5 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Moet ik stoppen met het gebruik van Cursor's autocomplete voor gevoelige logica?
+### Moet ik stoppen met het gebruiken van Cursor's automatische aanvulling voor gevoelige logica?
 
-Niet noodzakelijkerwijs: de autocomplete zelf is een echt nuttig hulpmiddel; De oplossing is het doelgerichter onderzoeken van specifieke categorieën als authenticatie en machtigingen, in plaats van te vertrouwen op een snelle doorlezing, zoals je dat zou doen bij code met een lagere inzet.
+Niet noodzakelijkerwijs – de automatische aanvulling zelf is een oprecht nuttige tool. De herstelling is het toepassen van bewustere controle specifiek op categorieën zoals authenticatie en machtigingen, in plaats van te vertrouwen op een snelle doorlezing zoals u dat zou doen bij code met een lagere inzet.
 
-### Hoe bouw ik een rolcombinatietestmatrix als ik er nog nooit een heb gedaan?
+### Hoe bouw ik een testmatrix voor rolcombinaties als ik dat nog nooit heb gedaan?
 
-Begin met het vermelden van elke rol of toestemming die uw product heeft, en test vervolgens expliciet elke realistische combinatie van twee of meer rollen die een echte gebruiker tegelijkertijd kan vervullen, en niet alleen elke geteste rol.
+Begin met het vermelden van elke rol of machtiging die uw product heeft, en test vervolgens expliciet elke realistische combinatie van twee of meer rollen die een echte gebruiker gelijktijdig zou kunnen bezitten, en niet alleen elke rol alleen getest.
 
-### Geldt dit probleem alleen voor Cursor, of hebben andere AI-coderingstools dit ook?
+### Wie voert dit soort machtigingsbeoordelingen uit bij LaunchStudio?
 
-Het geldt voor alle AI-coderingstools – inclusief Bolt, Lovable, v0 –. Het onderliggende risico is dat de door AI gegenereerde code geen zichtbaar vertrouwenssignaal met zich meebrengt, zodat een subtiel verkeerde suggestie identiek lijkt aan een correcte suggestie, ongeacht welke tool deze heeft geproduceerd.
+De beoordeling wordt uitgevoerd door Manifera's engineeringteam, inclusief de groep gevestigd in de hub in Singapore, gebruikmakend van hetzelfde systematische proces voor het testen van toegangsbeheer dat wordt toegepast bij Manifera's enterprise-trajecten.
 
-### Wat bedoelt Herre Roelevink met ‘architectuur en veiligheid die nodig zijn om producten tot volwassenheid te brengen’?
+### Zodra een machtigingsbug is hersteld en getest, kan deze dan terugkomen?
 
-Hij beschrijft de kloof tussen code die werkt in de scenario's waartegen het is getest en code die systematisch is beoordeeld op de scenario's waarin dat niet het geval was. Dit laatste is waar Manifera's ruim elf jaar productie-engineering-ervaring omheen is gebouwd.
-
-### Wie controleert dit soort toestemmingen bij LaunchStudio?
-
-De beoordeling wordt uitgevoerd door het technische team van Manifera, inclusief de groep gevestigd in de hub in Singapore, waarbij hetzelfde systematische toegangscontroletestproces wordt toegepast dat wordt gebruikt bij de zakelijke opdrachten van Manifera.
-
+Ja, als de testmatrix een eenmalige handmatige controle blijft – elke toekomstige wijziging in de buurt van die machtigingslogica is een verse kans voor een vergelijkbare kloof om er doorheen te glippen. Daarom moet de matrix draaien als een geautomatiseerde test bij elke relevante wijziging.
 
 <script type="application/ld+json">
 {
@@ -113,42 +110,42 @@ De beoordeling wordt uitgevoerd door het technische team van Manifera, inclusief
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Moet ik stoppen met het gebruik van Cursor's autocomplete voor gevoelige logica?",
+      "name": "Waarom is Cursor inline autocomplete gevaarlijk bij autorisatie-logica?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijkerwijs: de autocomplete zelf is een echt nuttig hulpmiddel; De oplossing is het doelgerichter onderzoeken van specifieke categorieën als authenticatie en machtigingen, in plaats van te vertrouwen op een snelle doorlezing, zoals je dat zou doen bij code met een lagere inzet."
+        "text": "Cursor oppert code met 100% visuele zekerheid. Subtiele bugs (bijv. een rolen-combinatie check die faalt bij gecombineerde rollen) zien er exact zo strak uit als correcte code."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe bouw ik een rolcombinatietestmatrix als ik er nog nooit een heb gedaan?",
+      "name": "Hoe ontdek je autorisatie-bugs die door AI zijn ingevoerd?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Begin met het vermelden van elke rol of toestemming die uw product heeft, en test vervolgens expliciet elke realistische combinatie van twee of meer rollen die een echte gebruiker tegelijkertijd kan vervullen, en niet alleen elke geteste rol."
+        "text": "Door een expliciete rol-combinatie matrix te bouwen en te testen (bijv. wat gebeurt er als een gebruiker GELIJKTIJDIG 'support agent' en 'afdelingshoofd' is?)."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt dit probleem alleen voor Cursor, of hebben andere AI-coderingstools dit ook?",
+      "name": "Waarom is handmatig testen van autorisatie niet voldoende?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het geldt voor alle AI-coderingstools – inclusief Bolt, Lovable, v0 –. Het onderliggende risico is dat de door AI gegenereerde code geen zichtbaar vertrouwenssignaal met zich meebrengt, zodat een subtiel verkeerde suggestie identiek lijkt aan een correcte suggestie, ongeacht welke tool deze heeft geproduceerd."
+        "text": "Omdat founders meestal maar 1 of 2 standaard rollen testen met hun eigen testaccounts. Zodra echte gebruikers meerdere rollen combineren, breekt het systeem."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat bedoelt Herre Roelevink met ‘architectuur en veiligheid die nodig zijn om producten tot volwassenheid te brengen’?",
+      "name": "Hoe zorg je dat autorisatie-checks niet opnieuw breken bij nieuwe AI-prompts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hij beschrijft de kloof tussen code die werkt in de scenario's waartegen het is getest en code die systematisch is beoordeeld op de scenario's waarin dat niet het geval was. Dit laatste is waar Manifera's ruim elf jaar productie-engineering-ervaring omheen is gebouwd."
+        "text": "Zet de rol-matrix om in een geautomatiseerde test-suite in de CI/CD pijplijn die verplicht draait bij elke commit die rechten raakt."
       }
     },
     {
       "@type": "Question",
-      "name": "Wie controleert dit soort toestemmingen bij LaunchStudio?",
+      "name": "Wat kost een autorisatie-audit en rol-matrix testset bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De beoordeling wordt uitgevoerd door het technische team van Manifera, inclusief de groep gevestigd in de hub in Singapore, waarbij hetzelfde systematische toegangscontroletestproces wordt toegepast dat wordt gebruikt bij de zakelijke opdrachten van Manifera."
+        "text": "Het auditeren van autorisaties, herstellen van role-combination bugs en bouwen van een geautomatiseerde testmatrix kost gemiddeld €900 en duurt 5 werkdagen."
       }
     }
   ]

@@ -1,17 +1,18 @@
 ---
-Titel: "Cookie-toestemmingsbanners op door AI gebouwde websites: conform in theorie, gebroken in de praktijk"
+Titel: "Cookie-toestemmingsbanners op met AI gebouwde websites: In theorie nalevend, in de praktijk gebroken"
 Trefwoorden: ai websites, gdpr, cookie consent banner, tracking scripts, ePrivacy compliance
 Koperfase: Bewustzijn
-Doelgroep: AI-Native-oprichter
+Doelgroep: AI-Native oprichter
 ---
-# Cookie-toestemmingsbanners op door AI gebouwde websites: conform in theorie, gebroken in de praktijk
+
+# Cookie-toestemmingsbanners op met AI gebouwde websites: In theorie nalevend, in de praktijk gebroken
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Cookie-toestemmingsbanners op door AI gebouwde websites: conform in theorie, gebroken in de praktijk",
-  "description": "AI-websitebouwers genereren cookiebanners die er conform uitzien, maar trackingscripts vaak niet daadwerkelijk blokkeren v\u00f3\u00f3r toestemming of nadat een bezoeker op Afwijzen heeft geklikt. Hier ziet u hoe u kunt controleren of de uwe een van hen is.",
+  "headline": "Cookie-toestemmingsbanners op met AI gebouwde websites: In theorie nalevend, in de praktijk gebroken",
+  "description": "AI-websitebouwers genereren cookiebanners die er nalevend uitzien maar tracking-scripts niet blokkeren.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -30,77 +31,82 @@ Doelgroep: AI-Native-oprichter
 }
 </script>
 
-Open uw eigen website in een incognitovenster, open het netwerktabblad van de browser en ververs de pagina voordat u op iets op de cookiebanner klikt. Als u Google Analytics of een advertentiepixel ziet geactiveerd voordat u een keuze heeft gemaakt, heeft u uw antwoord al. Dit komt vaker voor dan de meeste oprichters verwachten van een site die is gebouwd met een AI-websitetool.
+Open uw eigen website in een incognitovenster, open het netwerk-tabblad van uw browser, en ververs de pagina voordat u op iets op de cookiebanner klikt. Als u Google Analytics of een advertentie-pixel ziet afvuren voordat u een keuze heeft gemaakt, heeft u uw antwoord al. En het is een veel voorkomendere bevinding dan de meeste oprichters verwachten van een site die gebouwd is met een AI-websitetool.
 
-## Waarom de banner bestaat, maar zijn werk niet echt doet
+## Waarom de banner bestaat maar zijn werk niet daadwerkelijk doet
 
-Vraag v0, Lovable of een soortgelijke AI-websitebouwer om "een cookietoestemmingsbanner toe te voegen", en u krijgt precies waar u om vroeg: een banner. Het heeft een knop "Accepteren" en een knop "Weigeren". Het lijkt op elke andere cookiebanner op internet en verdwijnt zodra erop wordt geklikt. Wat het vaak helemaal niet doet, is helemaal niets met de trackingscripts die al op de pagina draaien - omdat het verbinden van de visuele status van de banner met het daadwerkelijke laadgedrag van scripts een tweede, afzonderlijk stukje techniek is waar niemand expliciet om heeft gevraagd.
+Vraag v0, Lovable of een vergelijkbare AI-websitebouwer om "een cookie-toestemmingsbanner toe te voegen", en u krijgt exact waar u om vroeg: een banner. Het heeft een "Accepteren"-knop en een "Weigeren"-knop, het ziet eruit als elke andere cookiebanner op het internet, en het verdwijnt zodra er op geklikt wordt. Wat het erg vaak niet doet is überhaupt iets veranderen aan de tracking-scripts die al op de pagina draaien. Het verbinden van de visuele status van de banner met het daadwerkelijke laadgedrag van de scripts is namelijk een tweede, afzonderlijk stuk engineering dat niemand expliciet heeft aangevraagd.
 
-Volgens de ePrivacy-richtlijn en de AVG van de EU is de wettelijke vereiste niet 'een banner tonen', maar 'geen niet-essentiële cookies of trackingscripts laden totdat de bezoeker bevestigende toestemming heeft gegeven'. Dat betekent dat een analysetag, een advertentiepixel of een marketingscript dat rechtstreeks in de '<head>' van een pagina is ingebed, moet worden tegengehouden totdat er daadwerkelijk toestemming wordt verleend, meestal via een benadering van toestemmingsbeheer die de scripttags zelf afsluit in plaats van alleen maar een banner weer te geven over de scripts die al actief zijn. Een door AI gegenereerde site krijgt dit vaak in omgekeerde richting: de trackingscripts worden onvoorwaardelijk geladen wanneer de pagina wordt geladen, en de banner is een puur cosmetische laag bovenop gedrag dat nooit daadwerkelijk is afgeschermd.
+Onder de ePrivacy-richtlijn van de EU en de AVG is de wettelijke vereiste niet "toon een banner" – het is "laad geen niet-essentiële cookies of tracking-scripts totdat de bezoeker expliciete toestemming heeft gegeven." Dat betekent dat een analytics-tag, een advertentie-pixel, of een marketing-script dat rechtstreeks in de `<head>` van een pagina is ingebouwd moet worden tegengehouden totdat de toestemming daadwerkelijk is verleend. Dit gebeurt doorgaans via een toestemmingsbeheerbenadering die de script-tags zelf afschermt in plaats van simpelweg een banner te tonen bovenop scripts die al draaien. Een met AI gegenereerde site krijgt dit frequent verkeerd om: de tracking-scripts laden onvoorwaardelijk bij het laden van de pagina, en de banner is een puur cosmetische laag die bovenop gedrag zit dat nooit daadwerkelijk is afgeschermd.
 
-## De knop "afwijzen" die niets afwijst
+## De "weigeren"-knop die niets weigert
 
-Een nog vaker voorkomende fout ligt nog een laag dieper: zelfs sites waar scripts wachten op de klik op 'accepteren', verwerken 'afwijzen' vaak helemaal niet correct. Als u op 'weigeren' klikt, wordt de visuele status van de banner bijgewerkt (deze verdwijnt, misschien wordt er een cookie opgeslagen die de keuze registreert), maar de daadwerkelijke scripttags die al in de pagina zijn geïnjecteerd, blijven precies zoals voorheen actief. De bezoeker denkt dat hij/zij zich heeft afgemeld. Het volgen gaat hoe dan ook door. Dit is precies het soort hiaat dat naar voren komt bij een klacht van een toezichthouder of een routinematige compliance-audit, omdat het onzichtbaar is bij een normale gebruikersgerichte test van de banner en alleen zichtbaar wordt wanneer iemand netwerkverzoeken daadwerkelijk inspecteert nadat hij op 'weigeren' heeft geklikt.
+Een nog veel voorkomendere mislukking zit één laag dieper: zelfs sites waar scripts wachten op de "accepteren"-klik handelen "weigeren" vaak überhaupt niet correct af. Het klikken op weigeren werkt de visuele status van de banner bij – deze verdwijnt, slaat misschien een cookie op die de keuze registreert – maar de daadwerkelijke script-tags die al in de pagina waren geïnjecteerd blijven exact hetzelfde draaien als voorheen. De bezoeker gelooft dat hij zich heeft afgemeld. De tracking gaat ongeacht door. Dit is precies het soort kloof dat naar boven komt in een klacht bij een toezichthouder of een routineuze nalevingsaudit. Het is namelijk onzichtbaar vanaf een normale gebruikersgerichte test van de banner en verschijnt pas wanneer iemand netwerkverzoeken daadwerkelijk inspecteert na het klikken op weigeren.
 
-LaunchStudio brengt de hoogwaardige techniek van Manifera naar de grondleggerseconomie, en een onderdeel daarvan is het controleren van de implementatie van cookie-toestemming op netwerkniveau, niet alleen op visueel niveau - het verifiëren dat een afwijzingsklik daadwerkelijk verhindert dat scripts worden geladen, en niet alleen dat de banner correct verdwijnt. Ons team, werkzaam vanuit het Amsterdamse kantoor van Manifera aan de Herengracht 420, beschouwt dit als een standaarditem in elke pre-lanceringspas voor een marketingwebsite, omdat het een van de gemakkelijkste dingen is voor een door AI gegenereerde site om zichtbaar fout te gaan en een van de gemakkelijkste dingen voor een toezichthouder om daadwerkelijk te testen.
+LaunchStudio brengt Manifera's enterprise-grade engineering naar de economie van oprichters. Onderdeel daarvan is het controleren van cookie-toestemmingsimplementaties op netwerkniveau, en niet alleen op visueel niveau. We verifiëren dat een weigerklik daadwerkelijk voorkomt dat scripts laden, en niet alleen dat de banner correct verdwijnt. Ons team, werkend vanuit Manifera's kantoor in Amsterdam aan de Herengracht 420, behandeld dit als een standaard onderdeel van elke nalevingsstap vóór de lancering voor een marketingwebsite, omdat het een van de eenvoudigste dingen is voor een met AI gegenereerde site om zichtbaar verkeerd te krijgen en een van de eenvoudigste dingen voor een toezichthouder om daadwerkelijk te testen.
 
-Als u de netwerkverzoeken van uw eigen site nog nooit heeft gecontroleerd aan de hand van wat uw cookiebanner beweert te doen, is het de moeite waard [uw build te beoordelen aan de hand van ons proces](https://launchstudio.eu/en/#process) voordat een bezoeker (of een toezichthouder) dit voor u controleert.
+Als u de netwerkverzoeken van uw eigen site nooit heeft gecontroleerd tegen wat uw cookiebanner beweert te doen, is het de moeite waard om [uw bouwsel te beoordelen tegen ons proces](https://launchstudio.eu/en/#process) voordat een bezoeker – of een toezichthouder – het voor u controleert.
 
-## Tag Managers voegen een laag toe die de eenvoudige oplossing niet dekt
+## Tag-managers voegen een laag toe die de eenvoudige herstelling niet dekt
 
-Wanneer u Google Tag Manager (GTM) of een vergelijkbare hulpprogramma gebruikt, kan het simpelweg blokkeren van scripts via de toestemmingsbanner omzeild worden als GTM toch wordt geladen en externe scripts activeert.
+Het afschermen van de script-tags zelf lost het probleem op voor sites die Google Analytics of een advertentie-pixel rechtstreeks laden. Het lost het niet volledig op voor sites die een tag-manager-container gebruiken, wat steeds meer de gangbare situatie is. Een tag-manager is, vanuit het perspectief van de browser, een enkele script-tag. Het naïef afschermen van "het script" blokkeert dus alleen de container zelf om te laden. Zodra die container mag draaien kan deze zijn eigen interne tags (Analytics, advertentieconversie-pixels, remarketing-scripts) onmiddellijk afvuren, onafhankelijk van de vraag of de bezoeker ergens toestemming voor heeft gegeven. De interne trigger-configuratie van de container is namelijk een afzonderlijke laag van de vraag of het container-script in de eerste plaats is geladen.
 
-Koppel GTM-triggers aan toestemmingsgebeurtenissen (Consent State):
+Het op de juiste manier herstellen hiervan betekent het configureren van de eigen toestemmingsinstellingen van de tag-manager, en niet alleen het beslissen of de container moet worden geladen. Het bekende patroon – vaak consent mode genoemd – is om elke niet-essentiële categorie standaard in te stellen op geweigerd op het moment dat de pagina laadt, en alleen specifieke categorieën om te zetten naar verleend zodra de bezoeker een expliciete keuze maakt:
 
-```javascript
-// Geef toestemmingsstatus door aan GTM dataLayer
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {
-  'analytics_storage': 'denied',
-  'ad_storage': 'denied'
-});
 ```
+// Standaard: weiger alle niet-essentiële tags totdat de toestemming bekend is
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  ad_storage: 'denied',
+});
+
+// Pas na een expliciete acceptatieklik worden individuele categorieën omgezet
+function onConsentAccepted(categories) {
+  gtag('consent', 'update', {
+    analytics_storage: categories.analytics ? 'granted' : 'denied',
+    ad_storage: categories.marketing ? 'granted' : 'denied',
+  });
+}
+```
+
+Zonder deze stap kan een site een controle op oppervlakkig niveau doorstaan – "de banner verschijnt, de container is afgeschermd" – terwijl elke tag binnen die container bij het laden van de pagina ongeacht afvuurt. Dit is precies het soort kloof dat alleen verschijnt wanneer iemand inspecteert wat de tag-manager daadwerkelijk intern doet, en niet alleen of deze is geladen.
 
 ## Echt voorbeeld
 
-### Een AI-Native-oprichter in actie: de banner die er alleen maar uitzag alsof hij werkte
+### Een AI-native oprichter in actie: De banner die er alleen maar uitzag alsof hij werkte
 
-Vera Willemse, oprichtster uit Terneuzen, bouwde de marketingwebsite voor ontwerpstudio StudioLicht, met v0 als frontend. De site bevatte een banner voor toestemming voor cookies die aan alle visuele verwachtingen voldeed: duidelijke taal, een knop Accepteren, een knop Weigeren, een link naar een privacybeleid. Het zag er, volgens elke normale standaard voor het bekijken van een website, volledig conform uit.
+Vera Willemse, een oprichter in Terneuzen, bouwde de marketingwebsite voor StudioLicht, een ontwerpstudio, met behulp van v0 voor de frontend. De site bevatte een cookie-toestemmingsbanner die voldeed aan elke visuele verwachting – duidelijke taal, een accepteerknop, een weigerknop, een link naar een privacybeleid. Het zag er volgens elke normale standaard van het bekijken van een website volledig nalevend uit.
 
-Het probleem kwam aan de oppervlakte toen een bezoeker (toevallig iemand die bekend was met privacytools) de netwerkactiviteit van de site controleerde en ontdekte dat Google Analytics bij elke paginalading werd geactiveerd, voordat er ook maar enige toestemmingskeuze was gemaakt. Bij verdere tests veranderde het uiterlijk van de banner door op 'afwijzen' te klikken, maar dit had geen enkel effect op het daadwerkelijke script: de analyses bleven elke bezoeker volgen die zich expliciet had afgemeld, precies hetzelfde als bezoekers die zich hadden aangemeld.
+Het probleem kwam naar boven toen een bezoeker – toevallig iemand die bekend was met privacy-tools – de netwerkactiviteit van de site controleerde en ontdekte dat Google Analytics afvuurde bij elke paginalading, voordat er überhaupt een keuze voor toestemming was gemaakt. Verder testend veranderde het klikken op "weigeren" het uiterlijk van de banner, maar het had nul effect op het daadwerkelijke script: analytics bleef elke bezoeker volgen die zich expliciet afmeldde, exact hetzelfde als bezoekers die zich aanmeldden.
 
-LaunchStudio heeft het laden van de scripts van de site geherstructureerd, zodat analyses en andere niet-essentiële scripts volledig worden achtergehouden totdat uitdrukkelijke toestemming is verleend, en heeft de afwijzingsactie zo ingesteld dat deze scripts daadwerkelijk worden geladen, in plaats van alleen maar de banner te verbergen. We hebben ook een controle op de toestemmingsstatus toegevoegd die tijdens paginabezoeken correct blijft bestaan, zodat terugkerende bezoekers niet opnieuw worden gevolgd nadat ze één keer hebben afgewezen. **Resultaat:** De site van StudioLicht komt nu, op netwerkniveau, precies overeen met wat de banner belooft.
+LaunchStudio herstructureerde het laden van de scripts op de site zodanig dat analytics en alle andere niet-essentiële scripts volledig worden tegengehouden totdat expliciete toestemming is verleend. We sloten de weigeractie aan om daadwerkelijk te voorkomen dat die scripts ooit laden in plaats van simpelweg de banner te verbergen. We voegden ook een toestemmingsstatus-controle toe die correct blijft bestaan over paginabezoeken heen, zodat terugkerende bezoekers niet opnieuw worden gevolgd nadat ze eenmaal hebben geweigerd. **Resultaat:** StudioLicht's site komt nu op netwerkniveau exact overeen met wat de banner belooft.
 
-> *"Ik dacht echt dat een cookiebanner een cookiebanner was. Ik had geen idee dat 'afwijzen' puur cosmetisch kon zijn. Het is zo'n stille manier om niet-conform te zijn zonder het te weten."*
+> *"Ik dacht oprecht dat een cookiebanner simpelweg een cookiebanner was – ik had geen idee dat 'weigeren' puur cosmetisch kon zijn. Het is zo'n stille manier om niet-nalevend te zijn zonder het te weten."*
 > — **Vera Willemse, Oprichter, StudioLicht (Terneuzen)**
 
-**Kosten en tijdlijn:** € 500 (implementatie van script-gating, persistentie van de toestemmingsstatus, verificatie op netwerkniveau) — voltooid in 3 werkdagen.
+**Kosten en tijdlijn:** € 500 (implementatie van script-afscherming, persistentie van toestemmingsstatus, verificatie op netwerkniveau) — voltooid in 3 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Waarom laat mijn cookiebanner nog steeds trackingscripts uitvoeren nadat iemand op Weigeren klikt?
+### Waarom laat mijn cookiebanner tracking-scripts nog steeds draaien nadat iemand op weigeren heeft geklikt?
 
-Omdat AI-websitebouwers doorgaans het visuele gedrag van de banner genereren zonder deze te verbinden met de daadwerkelijke scripttags, worden de banner en de trackingscripts gebouwd als twee losstaande delen, tenzij iemand ze expliciet met elkaar verbindt.
+Omdat AI-websitebouwers doorgaans het visuele gedrag van de banner genereren zonder het te verbinden met de daadwerkelijke script-tags – de banner en de tracking-scripts zijn gebouwd als twee losgekoppelde onderdelen tenzij iemand ze expliciet aan elkaar koppelt.
 
-### Is een visueel compatibele banner voldoende om te voldoen aan de AVG en de ePrivacy-richtlijn?
+### Is een visueel nalevende banner voldoende om te voldoen aan de AVG en de ePrivacy-richtlijn?
 
-Nee. De wettelijke vereiste gaat over het daadwerkelijke gegevensverzamelingsgedrag, niet over het verschijnen van banners; scripts moeten worden geblokkeerd totdat toestemming wordt verleend, en de gegevens van een afgewezen bezoeker mogen helemaal niet worden verzameld.
+Nee. De wettelijke vereiste gaat over daadwerkelijk gedrag rond gegevensverzameling, en niet over het uiterlijk van de banner – scripts moeten worden geblokkeerd tot toestemming, en de gegevens van een geweigerde bezoeker mogen überhaupt niet worden verzameld.
 
-### Hoe weet ik zelfs of mijn site dit probleem heeft?
+### Hoe zou ik überhaupt weten of mijn site dit probleem heeft?
 
-Open uw site in een privé-browservenster, open het netwerktabblad van uw browser en kijk wat er wordt geladen voordat u met de banner communiceert, en opnieuw nadat u op weigeren heeft geklikt. Als trackingverzoeken op een bepaald moment worden geactiveerd, is de implementatie onvolledig.
-
-### Hoe controleert het team van Manifera dit anders dan bij een typische websitebeoordeling?
-
-De technici van Manifera testen op netwerkverzoekniveau in plaats van op visueel niveau, omdat dat de laag is waar feitelijke naleving of niet-naleving plaatsvindt - een controle die gebaseerd is op dezelfde nauwkeurigheid die wordt toegepast op zakelijke klanten als TNO en CFLW.
+Open uw site in een besloten browsenvenster, open het netwerk-tabblad van uw browser, en bekijk wat er laadt voordat u interactie heeft met de banner, en opnieuw na het klikken op weigeren – als er op een van beide momenten tracking-verzoeken afvuren is de implementatie onvolledig.
 
 ### Geldt dit voor alle AI-websitebouwers, of alleen voor v0?
 
-Het is een gebruikelijk patroon bij v0, Lovable, Bolt en soortgelijke tools, omdat geen van deze standaard de status van de toestemmingsbanner koppelt aan het laden van scripts. Het vereist een expliciete implementatiestap, ongeacht welke tool de site heeft gebouwd.
-
+Het is een bekend patroon bij v0, Lovable, Bolt en vergelijkbare tools, aangezien geen daarvan de status van de toestemmingsbanner standaard verbindt met het laden van scripts.
 
 <script type="application/ld+json">
 {
@@ -109,42 +115,42 @@ Het is een gebruikelijk patroon bij v0, Lovable, Bolt en soortgelijke tools, omd
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom laat mijn cookiebanner nog steeds trackingscripts uitvoeren nadat iemand op Weigeren klikt?",
+      "name": "Waarom laadt Google Analytics al vóór ik op de cookiebanner klik?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat AI-websitebouwers doorgaans het visuele gedrag van de banner genereren zonder deze te verbinden met de daadwerkelijke scripttags, worden de banner en de trackingscripts gebouwd als twee losstaande delen, tenzij iemand ze expliciet met elkaar verbindt."
+        "text": "Omdat AI-tools de banner als losse UI-component bouwen. De Analytics-scripttag in de `<head>` wordt onvoorwaardelijk ingeladen, ongeacht de banner."
       }
     },
     {
       "@type": "Question",
-      "name": "Is een visueel compatibele banner voldoende om te voldoen aan de AVG en de ePrivacy-richtlijn?",
+      "name": "Wat gebeurt er als een bezoeker op 'Weigeren' klikt op een AI-site?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. De wettelijke vereiste gaat over het daadwerkelijke gegevensverzamelingsgedrag, niet over het verschijnen van banners; scripts moeten worden geblokkeerd totdat toestemming wordt verleend, en de gegevens van een afgewezen bezoeker mogen helemaal niet worden verzameld."
+        "text": "Bij 90% van de AI-gegenereerde sites verdwijnt alleen de banner visueel, maar blijft de tracking-script gewoon doordraaien op de achtergrond."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe weet ik zelfs of mijn site dit probleem heeft?",
+      "name": "Hoe test je of je cookiebanner echt AVG-compliant is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open uw site in een privé-browservenster, open het netwerktabblad van uw browser en kijk wat er wordt geladen voordat u met de banner communiceert, en opnieuw nadat u op weigeren heeft geklikt. Als trackingverzoeken op een bepaald moment worden geactiveerd, is de implementatie onvolledig."
+        "text": "Open Chrome DevTools -> Network tab. Ververs de pagina in incognito. Zie je requests naar google-analytics.com vóór acceptatie? Dan is het illegaal."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe controleert het team van Manifera dit anders dan bij een typische websitebeoordeling?",
+      "name": "Werkt Google Tag Manager (GTM) automatisch met cookie-consent?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De technici van Manifera testen op netwerkverzoekniveau in plaats van op visueel niveau, omdat dat de laag is waar feitelijke naleving of niet-naleving plaatsvindt - een controle die gebaseerd is op dezelfde nauwkeurigheid die wordt toegepast op zakelijke klanten als TNO en CFLW."
+        "text": "Nee! GTM laadt zelf als 1 script, maar de interne tags vuren direct af tenzij je GTM Consent Mode (gtag consent default denied) activeert."
       }
     },
     {
       "@type": "Question",
-      "name": "Geldt dit voor alle AI-websitebouwers, of alleen voor v0?",
+      "name": "Wat kost het script-gaten van een cookiebanner bij LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het is een gebruikelijk patroon bij v0, Lovable, Bolt en soortgelijke tools, omdat geen van deze standaard de status van de toestemmingsbanner koppelt aan het laden van scripts. Het vereist een expliciete implementatiestap, ongeacht welke tool de site heeft gebouwd."
+        "text": "Het instellen van echte script-gating en netwerk-verificatie kost gemiddeld €500 en duurt 3 werkdagen."
       }
     }
   ]
