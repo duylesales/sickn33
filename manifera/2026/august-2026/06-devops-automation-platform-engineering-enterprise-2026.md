@@ -24,7 +24,8 @@ Content Format: Technical Strategy with Maturity Model
     "name": "Manifera",
     "url": "https://www.manifera.com"
   },
-  "datePublished": "2026-08-22"
+  "datePublished": "2026-08-22",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -51,7 +52,7 @@ Automated build, test, and deployment pipelines exist. Infrastructure is partial
 ### Level 3: Platform Engineering (The Next Frontier)
 An Internal Developer Platform (IDP) abstracts away infrastructure complexity. Developers provision environments, deploy services, and manage configurations through a self-service portal — without needing to understand Kubernetes, Terraform, or cloud provider specifics.
 
-**Prevalence in 2026:** ~25% of enterprises. This is where the velocity gap between top-performing and average engineering organizations becomes a chasm.
+**Prevalence in 2026:** ~25% of enterprises have reached genuine platform maturity as defined here, though a broader 55% report having *started* building platform engineering capabilities in some form (Puppet's 2025 State of DevOps Report). That gap between "started" and "matured" is where the velocity difference between top-performing and average engineering organizations becomes a chasm.
 
 > *"Platform engineering is what DevOps was supposed to be all along: infrastructure that serves developers instead of the other way around."* — **Gregor Hohpe**, author of The Software Architect Elevator and Enterprise Integration Patterns
 
@@ -88,7 +89,22 @@ Puppet's 2025 State of DevOps Report provides hard numbers:
 | Developer satisfaction | 55/100 | 82/100 | +49% |
 | Engineering time on toil | 30-40% | 5-10% | 4-6x reduction |
 
-> *"Elite performers in DevOps deploy 973 times more frequently than low performers, with 6,570 times faster lead time. The difference is not talent — it is tooling and organizational design."* — **Dr. Nicole Forsgren**, co-author of Accelerate and creator of the DORA metrics
+> *"Elite performers in DevOps deploy 973 times more frequently than low performers, with 6,570 times faster time to recover from an incident. The difference is not talent — it is tooling and organizational design."* — **Dr. Nicole Forsgren**, co-author of Accelerate and creator of the DORA metrics
+
+## The Team Topologies Framework: Where a Platform Team Actually Fits
+
+Most enterprises that fail at platform engineering do not fail on tooling. They fail on org design — they build an Internal Developer Platform and then bolt it onto an organizational chart that was never designed to support it. The most widely adopted framework for getting this right comes from Matthew Skelton and Manuel Pais's book *Team Topologies*, which defines four fundamental team types and the interaction modes between them.
+
+| Team Type | Purpose | Relationship to Platform Engineering |
+|---|---|---|
+| **Stream-Aligned Team** | Owns a single, valuable stream of work end-to-end (a product, a customer journey) and ships to production without waiting on another team | The primary *consumer* of the platform — this is who the IDP exists to serve |
+| **Platform Team** | Provides internal services (compute provisioning, CI/CD, observability, environment management) as a self-service product, reducing the cognitive load stream-aligned teams would otherwise carry | The team building everything described in this article's IDP section |
+| **Enabling Team** | Specialists who help stream-aligned teams close a capability gap temporarily — security, performance, a new framework — then step back | Often bridges the adoption gap when a platform team ships a new capability and stream-aligned teams need help onboarding to it |
+| **Complicated-Subsystem Team** | Owns a subsystem requiring deep specialist knowledge (a video-encoding pipeline, a fraud-detection model) that would overload a stream-aligned team | Usually consumes the platform like any other team, but is organizationally distinct because its domain expertise, not delivery cadence, is the constraint |
+
+Skelton and Pais define three interaction modes that determine whether a platform succeeds or becomes another bottleneck: **collaboration** (teams work closely together, typically early in a platform capability's life), **X-as-a-Service** (the platform team provides something stream-aligned teams consume with minimal friction — the target state for a mature IDP), and **facilitating** (one team helps another learn or unblock, typically the enabling team's mode).
+
+**The mistake most enterprises make:** they keep the platform team in permanent *collaboration* mode — fielding Slack requests, manually provisioning environments, joining every sprint planning session — instead of investing in the self-service tooling that lets the relationship graduate to *X-as-a-Service*. A platform team stuck in collaboration mode with more than 3-4 stream-aligned teams becomes the exact bottleneck platform engineering was supposed to eliminate. The fix is not more platform engineers; it is treating "graduate this capability to self-service" as a first-class backlog item, not an afterthought once the collaborative version already works.
 
 ## Building Your Platform Team
 
@@ -135,6 +151,9 @@ Use the four DORA metrics, created by Dr. Nicole Forsgren and validated across 3
 ### Can Manifera help transition our existing DevOps to a Platform Engineering model? (Scenario: Enterprise CTO With Legacy CI/CD)
 Yes. We approach this as a phased transformation. Phase 1 (Weeks 1-4): Audit your current CI/CD pipelines, infrastructure tooling, and developer workflows to identify the highest-friction bottlenecks. Phase 2 (Weeks 5-12): Implement quick wins — typically environment self-service, standardized service templates, and unified observability — that demonstrate immediate developer velocity improvement. Phase 3 (Weeks 13-24): Build the full IDP layer with service catalog, infrastructure abstraction, and automated compliance checks. Our Amsterdam architects design the platform strategy and our Vietnam teams implement the tooling, giving you Level 3 Platform Engineering capability at 40-60% below the cost of building an in-house platform team in the Netherlands.
 
+### How does Team Topologies help us decide who owns the platform? (Scenario: VP Engineering Redesigning Org Chart Around a New IDP)
+Team Topologies (Matthew Skelton and Manuel Pais) gives you a vocabulary for the decision instead of an ad-hoc org chart reshuffle. Your product-delivery squads should be stream-aligned teams — they own a business outcome end-to-end and consume the platform, they do not build it. The platform team's sole customer is those stream-aligned teams, and its success metric is developer self-service adoption, not ticket-resolution speed. If a specialist domain (fraud detection, a media pipeline) has knowledge too deep for a stream-aligned team to hold, it becomes a complicated-subsystem team that also consumes the platform rather than being folded into it. The single most common org-design mistake: leaving the platform team permanently in "collaboration" mode — fielding one-off requests via Slack — instead of funding the self-service tooling that lets the relationship graduate to "X-as-a-Service," which is what actually removes the platform team as a bottleneck.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -178,6 +197,14 @@ Yes. We approach this as a phased transformation. Phase 1 (Weeks 1-4): Audit you
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, as a phased transformation. Phase 1 (Weeks 1-4): Audit current CI/CD and identify friction. Phase 2 (Weeks 5-12): Quick wins like environment self-service and unified observability. Phase 3 (Weeks 13-24): Full IDP with service catalog, infrastructure abstraction, and automated compliance. Amsterdam architects design the strategy, Vietnam teams implement at 40-60% below Dutch market cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Team Topologies help us decide who owns the platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Team Topologies (Skelton and Pais) gives you a vocabulary for the decision. Product-delivery squads are stream-aligned teams that consume the platform rather than build it. The platform team's only customer is those stream-aligned teams, measured by self-service adoption, not ticket speed. Specialist domains become complicated-subsystem teams that also consume the platform. The most common mistake is leaving the platform team stuck in 'collaboration' mode instead of funding self-service tooling that graduates the relationship to 'X-as-a-Service.'"
       }
     }
   ]

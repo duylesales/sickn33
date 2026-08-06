@@ -16,13 +16,14 @@ Content Format: Audit Checklist & Evaluation Framework
   "description": "An objective, rigorous checklist for CTOs to evaluate the best software development companies. Avoid generic marketing and audit vendors based on IP security, CI/CD, and 'Day 2' operations.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-08-25"
+  "datePublished": "2026-08-25",
+  "dateModified": "2026-08-06"
 }
 </script>
 
 If you Google the **"best software development companies,"** you will find directories filled with agencies claiming to be "award-winning," "innovative," and "customer-centric." 
 
-Marketing adjectives are useless when your company's core intellectual property is on the line. 
+Marketing adjectives are useless when your company's core intellectual property is on the line. The financial evidence backs this up: a landmark McKinsey & Company study conducted with the University of Oxford — analysing more than 5,400 IT projects — found that large IT initiatives run 45% over budget and 7% over time on average, while delivering 56% less value than originally promised. Worse, 17% of large IT projects go so badly they threaten the very survival of the company that commissioned them. Vendor selection discipline is not a procurement formality; it is one of the few variables you actually control before those numbers become your numbers.
 
 If you are a CTO or VP of Engineering preparing to externalize a mission-critical project, you cannot evaluate vendors based on their website design or their sales presentations. You must audit them based on their security protocols, their architectural discipline, and their definition of ownership.
 
@@ -77,11 +78,30 @@ The most common source of buyer's remorse with "best software development compan
 
 Anyone can put a client logo on a homepage. Verifying that the relationship behind that logo was actually healthy requires a slightly more adversarial process than reading a testimonials page.
 
+This step matters more than most CTOs assume. The Standish Group's CHAOS Report — the longest-running, most-cited study of IT project outcomes, last published in full in 2020 after tracking roughly 50,000 projects — found that only 31% of IT projects were "successful" (delivered on time, on budget, with the required features), 50% were "challenged" (late, over budget, or missing scope), and 19% failed outright. A reference call is one of the few due-diligence steps that lets you sample which bucket a vendor's *other* clients actually landed in, before you become the next data point.
+
 **Ask the Vendor:** *"Can I speak directly with two of your current clients, including at least one whose project is still active, not just ones who have already left positive reviews?"*
 
 **The Only Acceptable Answer:** A prompt "yes," followed by an actual introduction within days, not weeks of stalling. Vendors that only offer curated written testimonials or refuse a live reference call are hiding something — usually a pattern of engagements that ended badly. When you get the call, ask the reference two pointed questions the marketing page will never answer: *"Did the actual delivered timeline match the original estimate, and if not, by how much did it slip?"* and *"If you had a serious disagreement with the team, how was it resolved?"* Vague, deflecting answers to either question are a stronger signal than any five-star review. Cross-reference the vendor's public project count against what references confirm — a firm claiming 160+ delivered projects should be able to produce verifiable references representing a genuine cross-section of that history, not the same two flagship case studies recycled across every sales conversation.
 
 **A Practical Verification Tactic:** Beyond the phone call, ask for a short, unscripted screen-share with the actual delivery team — not the account manager — walking through a recent sprint's Jira board or GitHub commit history live. Sales decks can be polished indefinitely; a real backlog, with its messy mix of finished tickets, carried-over bugs, and the ordinary friction of active development, is far harder to fabricate convincingly on the spot. If a vendor stalls this specific request for weeks while remaining perfectly responsive to every other sales question, treat the stalling itself as the answer.
+
+## 7. The DORA Scorecard: Turn "We Have CI/CD" Into a Number You Can Verify
+
+Section 2 asks a vendor to *describe* their pipeline. This section shows you how to *score* what they describe, using an industry-standard yardstick instead of taking their word for it.
+
+DORA (DevOps Research and Assessment, now part of Google Cloud) has run the largest longitudinal study of software delivery performance in the industry, and its State of DevOps research defines four metrics that predict whether an engineering organisation is actually disciplined or just says it is. Every credible software development company should be able to state, with a straight face and real numbers, roughly where they sit on this table for a comparable recent project:
+
+| Metric | Elite | High | Medium | Low |
+|--------|-------|------|--------|-----|
+| Deployment frequency | On-demand (multiple/day) | Between once/day and once/week | Between once/week and once/month | Fewer than once/month |
+| Lead time for changes | Less than one day | Between one day and one week | Between one week and one month | More than one month |
+| Change failure rate | ~5% | ~10% | ~15% | 45%+ |
+| Time to restore service | Less than one hour | Less than one day | Between one day and one week | More than one week |
+
+**How to use this table in a sales call.** Ask the vendor's technical lead — not the account manager — two questions: *"For your last comparable client project, how often did you actually deploy to production?"* and *"What was your change failure rate over the last quarter — and how do you measure it?"* A vendor operating at High or Elite tier will answer with specifics, usually pulled straight from their CI/CD dashboard, because they track these numbers for their own operational reasons, not because a sales prospect asked. A vendor who has never heard the term "change failure rate" is telling you, functionally, that "we have CI/CD" means a script that runs `git push` to a server — not the disciplined delivery pipeline described in Section 2.
+
+**The honest caveat.** DORA's own more recent research has moved away from a strict four-tier ranking toward richer team "archetypes" that also account for burnout and friction, because raw metrics can be gamed (a team can inflate deployment frequency with trivial commits, for instance). Use this table as a floor for the conversation, not a scorecard to be gamed itself — the goal is forcing a vendor to produce real operational data instead of a marketing adjective.
 
 ## Why Manifera Welcomes the Audit
 
@@ -114,6 +134,9 @@ Pure offshore development exposes you to weak legal jurisdictions and cultural m
 
 ### How do I know if my project will get dedicated engineers or a shared, rotating team?
 Ask the vendor to name the specific engineers assigned to your project before you sign, along with their percentage of dedicated weekly time. A mature agency can name real people and describe a documented backup-staffing process; an agency that can only promise to "pull from a talent pool" has not actually committed capacity to your project yet.
+
+### How do I use DORA metrics to check if a vendor's CI/CD claims are real?
+Ask for their actual deployment frequency, lead time for changes, and change failure rate on a recent comparable project — the same four metrics DORA (Google Cloud's DevOps Research and Assessment group) uses to benchmark delivery performance industry-wide. Elite-performing teams deploy on demand with a change failure rate around 5% and recover from failures in under an hour; teams that cannot answer with real numbers, only adjectives, are not tracking their own delivery pipeline rigorously enough to be trusted with yours.
 
 <script type="application/ld+json">
 {
@@ -166,6 +189,14 @@ Ask the vendor to name the specific engineers assigned to your project before yo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ask the vendor to name the specific engineers assigned before you sign, along with their percentage of dedicated weekly time. A mature agency names real people and has a documented backup-staffing process; one that can only promise to 'pull from a talent pool' has not committed capacity yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use DORA metrics to check if a vendor's CI/CD claims are real?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for their actual deployment frequency, lead time for changes, and change failure rate on a recent comparable project — the same four metrics DORA (Google Cloud's DevOps Research and Assessment group) uses to benchmark delivery performance. Elite teams deploy on demand with a change failure rate around 5% and recover from failures in under an hour; a vendor that cannot answer with real numbers is not tracking its own pipeline rigorously enough to be trusted with yours."
       }
     }
   ]

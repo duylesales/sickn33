@@ -16,7 +16,8 @@ Content Format: Security Audit Framework
   "description": "A CISO's guide to auditing an IT web development company. Explains the dangers of 'Security by Obscurity', how cheap agencies fail at RBAC and Data-at-Rest encryption, and how to mandate a Zero Trust architecture.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-25"
+  "datePublished": "2026-09-25",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -28,7 +29,12 @@ Two years later, a junior employee accidentally accesses the CEO’s unencrypted
 
 When the CISO audits the codebase, they discover that the offshore agency didn't build an actual security architecture. They built "Security by Obscurity."
 
-> *"Security by Obscurity means hiding the keys under the doormat and hoping the burglar doesn't look there. In enterprise software, it is the signature of an amateur engineering team."* — Standard CISO Axiom
+This is not a new failure mode with a new name — security professionals have warned about it for over a century. Auguste Kerckhoffs formalized the underlying principle in 1883: a system should remain secure even if everything about it except the secret key is public knowledge. Security researcher Bruce Schneier has spent decades restating the modern version of the same warning:
+
+> *"Security through obscurity is no security at all."*
+> **— Bruce Schneier, security technologist and author**
+
+An architecture that depends on attackers not guessing a URL, not reading the frontend JavaScript, or not knowing which endpoint exists is not secure — it is merely unexamined. The moment a single curious user, a competitor, or an automated scanner tries the obvious thing, the "security" evaporates.
 
 If you are outsourcing [custom software development](https://www.manifera.com/services/custom-software-development/), you must stop accepting verbal promises of security. You must audit the agency’s architectural approach to authorization and encryption.
 
@@ -40,6 +46,8 @@ Cheap agencies rely on obscuring data rather than mathematically securing it. He
 In a poorly built application, the URL to view an invoice might look like this: `/invoices/view/8042`. 
 An agency practicing Security by Obscurity assumes that because User A doesn't *know* the ID for User B's invoice (8043), User A cannot view it. But if User A simply changes the URL to `8043` in their browser, the server returns the invoice because the backend never checked if User A was actually *authorized* to view it. 
 
+This is not a fringe risk. The OWASP Foundation's Top 10 for Web Applications — the industry's benchmark ranking of the most critical web security risks, based on data contributed from real-world testing across hundreds of organizations — has ranked **Broken Access Control** (the category IDOR falls under) as the #1 risk in both its 2021 and 2025 editions. In the 2025 edition, OWASP reports that **100% of the applications in its contributed dataset were found to have some form of broken access control**, with an average incidence rate of 3.74% across all tested endpoints and over 1.8 million individual occurrences recorded. When a CISO asks "how common is this, really?", the honest answer, per the industry's own aggregated testing data, is: it appears in essentially every application tested unless someone deliberately built defenses against it.
+
 ### 2. Frontend-Only Authorization
 Amateur developers often implement Role-Based Access Control (RBAC) by hiding buttons on the frontend. If a user is not an Admin, the "Delete Database" button is simply set to `display: none;` in the CSS. 
 However, the actual API endpoint (`DELETE /api/database`) remains completely open. A malicious user with basic technical knowledge can bypass the frontend entirely, send a direct request to the API, and delete the database.
@@ -47,6 +55,8 @@ However, the actual API endpoint (`DELETE /api/database`) remains completely ope
 ### 3. Ignoring Data-at-Rest Encryption
 Many agencies will proudly state they use HTTPS (Data in Transit encryption). This is the bare minimum required by modern web browsers; it is not an achievement. The real test is Data-at-Rest. 
 If an attacker breaches the database server and downloads the SQL file, what do they see? In an amateur build, they see plaintext passwords, plain text credit card numbers, and plain text PII (Personally Identifiable Information).
+
+**What these failures actually cost.** IBM's 2025 Cost of a Data Breach Report puts the global average cost of a breach at $4.44 million — and the Netherlands specifically at $5.17 million, a 12% year-over-year increase, placing it above the global average and among the more expensive countries in which to have a breach. The same report found organizations took a mean of 241 days to identify and contain a breach overall, and that breaches initiated through stolen or compromised credentials — the exact failure mode a Zero Trust architecture is designed to neutralize — averaged $4.67 million and took 246 days to identify and contain, both slightly worse than the global mean. An IDOR or broken-authorization flaw sitting unnoticed in production for eight months is not a worst-case hypothetical; it is close to the documented industry average.
 
 ## How to Audit an IT Web Development Company
 
@@ -77,6 +87,18 @@ This is exactly how catastrophic breaches happen without a single line of the ve
 **The Audit Question to Ask:** "Do you maintain a Software Bill of Materials (SBOM), and do you run automated Software Composition Analysis (SCA) on every build?" An SBOM is a complete, machine-readable inventory of every third-party component in your application, down to the exact version number. SCA tools (Snyk, Dependabot, Mend) continuously cross-reference that inventory against live vulnerability databases (the National Vulnerability Database, GitHub Security Advisories) and automatically flag or block builds that pull in a package with a known critical vulnerability — including transitive dependencies buried several layers deep that a manual review would never catch.
 
 An **IT web development company** that cannot produce an SBOM on request, or that has no automated SCA gate in its CI/CD pipeline, is leaving your application's security dependent entirely on the security hygiene of hundreds of anonymous open-source maintainers you have never vetted.
+
+## Certifications Are Not Interchangeable: What ISO 27001, SOC 2, and OWASP ASVS Actually Verify
+
+Procurement teams frequently treat security certifications as a single checkbox — "do they have a certification, yes or no?" This is a mistake. The three credentials that come up most often in vendor RFPs verify fundamentally different things, and none of them, alone, proves the application code itself is free of IDOR or broken-authorization bugs.
+
+| Credential | What It Actually Verifies | What It Does NOT Verify | Who Issues It |
+|---|---|---|---|
+| **ISO/IEC 27001** | The vendor organization has a functioning Information Security Management System (ISMS) — documented policies, risk assessment processes, and continual-improvement practices, audited in two stages by an accredited certification body. | Whether any specific application's code is free of vulnerabilities like IDOR. This is an organizational process certification, not a code audit. | Accredited third-party certification bodies |
+| **SOC 2 Type II** | Whether the vendor's security controls (access management, change management, monitoring) actually operated effectively over a 6–12 month observation window. Dominant standard in North America. | Application-level security architecture. Two vendors can both hold SOC 2 and differ enormously in how well they implement server-side authorization. | Licensed CPA firms (US-based attestation framework) |
+| **OWASP ASVS** | A detailed, code-level checklist for verifying specific application security controls — including the exact server-side authorization checks that prevent IDOR. This is the credential that speaks directly to the "Security by Obscurity" failures described above. | Organizational security culture or long-term operational maturity — ASVS is scoped to the application, not the company. | Not a formal certifying body — verification is typically self-attested or performed by a third-party security firm against the published standard |
+
+**The practical implication for your RFP:** ISO 27001 and SOC 2 tell you whether the *organization* runs disciplined security processes. Neither one, by itself, tells you whether the specific application your Vietnamese or Dutch engineering pod is building actually enforces server-side RBAC on every endpoint. If a vendor offers only an ISO 27001 or SOC 2 certificate as proof of "secure code," ask the follow-up question this article opened with: show the specific SAST/DAST tooling and OWASP ASVS-aligned checklist applied to *this application*, not just the organization's paperwork.
 
 ## The Manifera Security Standard
 
@@ -109,6 +131,9 @@ Through our Hybrid Offshore model. Our Dutch Architects act as the compliance fi
 
 ### (Scenario: CISO worried about risks outside the vendor's own code) Can our application be breached even if the vendor's custom code has no vulnerabilities?
 Yes. A typical web application depends on hundreds or thousands of third-party open-source packages that the vendor's engineers never wrote or reviewed, and a single unpatched or malicious package buried deep in that dependency tree (as happened with the Log4Shell vulnerability) can compromise the entire system. Demand a Software Bill of Materials (SBOM) and automated Software Composition Analysis (SCA) scanning on every build, so vulnerable or compromised dependencies are flagged and blocked before they reach production.
+
+### (Scenario: Procurement treating "ISO 27001 certified" as sufficient proof of secure code) If a vendor already holds ISO 27001 or SOC 2 certification, do we still need to ask about application-level security like IDOR?
+Yes, and this is one of the most common procurement blind spots. ISO 27001 certifies that the vendor organization runs a disciplined Information Security Management System — documented policies, risk processes, continual improvement — audited at the organizational level. SOC 2 Type II certifies that specific operational controls functioned correctly over an observation window. Neither one is a code audit, and neither one verifies that a specific application enforces server-side authorization on every endpoint. A vendor can hold both certifications and still ship an application riddled with IDOR vulnerabilities, because those credentials were never designed to catch that class of bug. For application-level assurance, ask specifically about OWASP ASVS-aligned code verification, SAST/DAST tooling, and server-side RBAC enforcement — the certifications and the code audit answer different questions, and you need both.
 
 <script type="application/ld+json">
 {
@@ -161,6 +186,14 @@ Yes. A typical web application depends on hundreds or thousands of third-party o
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Applications depend on hundreds or thousands of third-party open-source packages the vendor never wrote, and a single unpatched or malicious dependency (as with Log4Shell) can compromise the system. Demand a Software Bill of Materials (SBOM) and automated Software Composition Analysis (SCA) scanning on every build to catch these before production."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If a vendor already holds ISO 27001 or SOC 2 certification, do we still need to ask about application-level security like IDOR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ISO 27001 certifies the vendor's organizational Information Security Management System; SOC 2 Type II certifies that operational controls functioned correctly over an observation window. Neither is a code audit, and neither verifies that a specific application enforces server-side authorization on every endpoint. A vendor can hold both and still ship code riddled with IDOR vulnerabilities. Ask specifically about OWASP ASVS-aligned code verification, SAST/DAST tooling, and server-side RBAC enforcement for the application itself."
       }
     }
   ]

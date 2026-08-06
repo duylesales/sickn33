@@ -16,7 +16,8 @@ Content Format: Audit Checklist & Framework
   "description": "A ruthless technical due diligence framework for evaluating custom software development services. Teaches CTOs how to ignore marketing claims and audit an agency's Git history, CI/CD pipelines, and SAST tools.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-11"
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -44,6 +45,8 @@ Git history says: The truth.
 - **Commit messages:** Are the messages descriptive (`fix(auth): handle JWT expiration edge case`) or useless (`fixed bug`, `update`, `WIP`)?
 - **Pull Request (PR) hygiene:** Open a closed PR. Did the reviewer actually leave comments about architecture and edge cases, or did they just type "LGTM" (Looks Good To Me) and hit approve? 
 
+This isn't a subjective preference — it is measurable. SmartBear's landmark 10-month study of 2,500 code reviews covering 3.2 million lines of code at Cisco Systems found that reviews of 200-400 lines of code, conducted over 60-90 minutes, catch 70-90% of existing defects. Push that same review past 400 lines, or rush it faster than roughly 500 LOC per hour, and defect-detection rates drop sharply — reviewers physically cannot hold that much context in working memory. A 4,000-line PR merged with a single "LGTM" is not a code review in any measurable sense; it is a formality.
+
 ### 2. Audit the CI/CD Pipeline (The Safety Net)
 
 Marketing says: *"We build enterprise-grade software."*
@@ -51,7 +54,7 @@ The pipeline says: Whether that software is actually testable.
 
 **What to look for:**
 - **Automated Gates:** Does the pipeline automatically block merges if unit tests fail or if the code coverage drops below 80%? If humans can bypass the tests, the tests do not exist.
-- **Static Application Security Testing (SAST):** Are they running tools like SonarQube, Semgrep, or Snyk on every commit to catch hardcoded secrets and SQL injections?
+- **Static Application Security Testing (SAST):** Are they running tools like SonarQube, Semgrep, or Snyk on every commit to catch hardcoded secrets and SQL injections? This is not a theoretical risk category: GitGuardian's State of Secrets Sprawl 2025 report found that 23.77 million new hardcoded secrets (API keys, credentials, tokens) were pushed to public GitHub repositories in 2024 alone — a 25% year-over-year increase — and a separate finding in the same research line showed that a majority of leaked secrets remain valid and exploitable for years after exposure because nobody rotated them. A repository scanner that only runs manually, or not at all, is relying on developer discipline to catch a mistake that industry-wide data shows developers make millions of times a year.
 - **Deployment mechanism:** Do they deploy via automated Docker containers to a staging environment, or are they manually uploading files via FTP?
 
 As Herre Roelevink, Managing Director at Manifera, states regarding offshore due diligence:
@@ -81,7 +84,7 @@ The observability stack says: If they can actually find the bug when the server 
 Marketing says: *"We provide comprehensive documentation."*
 Reality says: Whether your project survives if the two engineers who built it both quit next month.
 
-This is the audit area CTOs skip most often, because it's boring, and it's the one that costs them the most eighteen months later when they try to switch vendors or hire an in-house team to take over.
+This is the audit area CTOs skip most often, because it's boring, and it's the one that costs them the most eighteen months later when they try to switch vendors or hire an in-house team to take over. The financial scale of this problem is not niche: Stripe's Developer Coefficient report, based on a survey of over 1,000 developers and 1,000 C-level executives across five countries, found that engineers spend roughly 42% of their working week — about 17.3 of a 41.1-hour average — dealing with technical debt and maintaining bad code rather than shipping new functionality. Poor documentation and tribal knowledge are direct contributors to that number: every hour a new engineer spends reverse-engineering undocumented decisions is an hour not spent building.
 
 **What to look for:**
 - **The "hit by a bus" test:** Ask the agency directly: "If your lead developer on my project left tomorrow, how long would it take a new engineer to become productive?" A mature agency answers in days, because onboarding runbooks, architecture diagrams, and a living README exist. An immature agency answers in "weeks," because the knowledge only exists in one person's head.
@@ -93,6 +96,19 @@ This is the audit area CTOs skip most often, because it's boring, and it's the o
 **The live test that separates real documentation from theater:** during your technical audit call, ask the agency to have a developer who has *never touched this specific project* attempt to run it locally, live, on screen-share, using only their own internal documentation. Time it. If it takes over 30 minutes to get a local environment running from a clean checkout, their onboarding documentation does not actually work — it merely exists.
 
 This audit area matters most for offshore and nearshore engagements specifically, because geographic and time-zone separation means you cannot simply walk over to someone's desk when documentation gaps surface. The written artifact has to do the work that a hallway conversation would do in a co-located team.
+
+## The Code Review Math: Sizing Reviews So They Actually Catch Bugs
+
+Most CTOs treat "we do code review" as a binary — either the agency does it or it doesn't. That framing misses the variable that actually predicts whether reviews catch anything: batch size. The Cisco/SmartBear research referenced above is granular enough to turn into an audit tool of its own. Use it to interrogate an agency's actual review discipline, not just its stated policy.
+
+| PR / Diff Size | Realistic Defect Detection Rate | What It Signals |
+|---|---|---|
+| Under 200 LOC | Highest — reviewers can hold full context | Disciplined, incremental engineering culture |
+| 200–400 LOC, reviewed over 60–90 minutes | 70–90% of existing defects caught | The evidence-based sweet spot; treat this as the benchmark |
+| 400–1,000 LOC | Sharp drop-off; reviewers skim rather than read | Review is happening, but is largely theater |
+| 1,000+ LOC, or reviewed in under 10 minutes | Close to zero meaningful defect capture | "LGTM" rubber-stamping; functionally no review at all |
+
+**How to apply this in a vendor interview:** ask to see the diff size distribution of the last 20 merged PRs on a real project (most Git hosting platforms expose this directly). If the median PR exceeds 400-500 lines, or if PRs regularly get approved within minutes of being opened regardless of size, the agency's "rigorous peer review process" is a marketing sentence, not an engineering practice — no matter how confidently it was said in the sales call.
 
 ## Comparison: Marketing Claims vs. Technical Reality
 
@@ -134,6 +150,9 @@ If a vendor's Git history shows massive, infrequent commits (e.g., pushing a wee
 
 ### (Scenario: CTO planning to bring development in-house next year) What is the "bus factor" and why should it affect my vendor choice?
 The "bus factor" is the number of team members who would need to disappear before your project becomes unmaintainable. If only one developer understands the codebase, your bus factor is 1, and you are entirely dependent on that individual. Ask any vendor how long it would take a new engineer to become productive on your project; a well-documented codebase with ADRs, runbooks, and auto-generated API docs answers in days, while a codebase with tribal knowledge only answers in weeks — and that gap becomes your problem the moment you try to switch vendors or hire in-house.
+
+### (Scenario: CTO reviewing PR data during a technical audit) What size should a pull request actually be, and how do I check if a vendor follows this?
+Based on SmartBear's Cisco Systems code review study — the largest published research on the topic, covering 2,500 reviews and 3.2 million lines of code — the evidence-based sweet spot is 200-400 lines of code reviewed over 60-90 minutes, which catches 70-90% of existing defects. Beyond roughly 400-500 lines, or when reviews move faster than about 500 LOC per hour, defect-detection rates drop sharply because reviewers can no longer hold the full context in working memory. To check a vendor, pull the diff-size distribution of their last 20 merged PRs on a real project. A median well above 400-500 lines, combined with approvals landing within minutes, indicates the "code review" is a formality rather than a functioning safety net.
 
 <script type="application/ld+json">
 {
@@ -186,6 +205,14 @@ The "bus factor" is the number of team members who would need to disappear befor
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The bus factor is how many team members could disappear before a project becomes unmaintainable. A low bus factor (e.g., 1) means you are entirely dependent on one person. Ask vendors how fast a new engineer becomes productive on your codebase; documented, well-onboarded teams answer in days, tribal-knowledge teams answer in weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size should a pull request actually be, and how do I check if a vendor follows this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Based on SmartBear's Cisco Systems code review study covering 2,500 reviews and 3.2 million lines of code, the evidence-based sweet spot is 200-400 lines of code reviewed over 60-90 minutes, catching 70-90% of existing defects. Beyond roughly 400-500 lines, defect-detection rates drop sharply. Check a vendor's diff-size distribution on their last 20 merged PRs; a median well above 400-500 lines with fast approvals indicates review is a formality, not a functioning safety net."
       }
     }
   ]

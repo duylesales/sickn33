@@ -16,7 +16,8 @@ Content Format: Financial Analysis & Warning
   "description": "An uncompromising look at the real cost of making an app. Discover why cheap fixed-price quotes lead to massive technical debt and how to budget for the Total Cost of Ownership (TCO).",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-08-24"
+  "datePublished": "2026-08-24",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -85,6 +86,26 @@ There is a well-established principle in software quality engineering, sometimes
 
 **Why This Justifies Paying for Discovery:** This is the quantitative backbone behind the Product Discovery phase discussed above. A €15,000 Discovery engagement is not bureaucratic overhead — it is the cheapest possible stage at which to catch the mistakes that would otherwise cost €150,000 to fix after launch. Founders who skip Discovery to save money are not avoiding that cost; they are simply choosing to pay it later, at the 100x rate, usually at the worst possible moment for their cash runway.
 
+## Why Software Budgets Overrun: What the Industry Data Actually Shows
+
+Founders often assume budget overruns are a sign of a badly chosen vendor. The data suggests something more structural: overrun is the industry norm, not the exception, regardless of vendor quality — which is precisely why the *contracting model* you choose matters as much as who you hire.
+
+**The Standish Group's long-running CHAOS Report**, the most widely cited longitudinal study of IT project outcomes, has consistently found that only around 31% of software projects are classified as fully "successful" (delivered on time, on budget, with the originally specified scope). Roughly 50% are "challenged" — completed, but over budget, over time, or with reduced scope — and about 19% are cancelled outright before completion. Project size matters enormously here: small projects succeed at a rate approaching 90%, while large, complex projects succeed less than 10% of the time.
+
+**PMI's Pulse of the Profession research** puts a number on the financial waste this produces: organizations lose an average of 11.4 cents for every dollar spent on projects due to poor performance — which PMI estimates at roughly $2 trillion in wasted global project investment annually — and 43% of projects exceed their approved budget. The gap between organizations is not random, either: PMI found that high-performing organizations (those completing 80%+ of projects on time, on budget, and to spec) waste roughly 28 times less money than low performers on the same category of project.
+
+**Why This Validates the T&M Argument Above:** A fixed-price contract asks a vendor to predict, on day one, the exact cost of navigating a process that — per this same industry data — overruns its original estimate roughly 7 times out of 10. The vendor's only two rational responses to that structural uncertainty are (1) price in a large risk premium up front, which is where the €350,000 "safe" local quote partly comes from, or (2) underprice and recover the difference later through rigid scope enforcement and corner-cutting, which is the fixed-price trap described above. Time & Materials does not eliminate the underlying uncertainty in software estimation — nothing does — but it removes the vendor's incentive to fight you over scope changes instead of building the right thing, because their revenue no longer depends on your requirements staying frozen.
+
+**A Practical Contract Comparison for Founders:**
+
+| Factor | Fixed-Price | Time & Materials (T&M) | Milestone-Based Hybrid |
+|---|---|---|---|
+| Who bears estimation risk | Vendor prices it in upfront (you pay for it either way) | You, sprint by sprint, with full visibility | Shared — capped budget per milestone, re-scoped between milestones |
+| Flexibility to pivot on user feedback | Low — triggers "Change Request" fees | High — reprioritize the backlog anytime | Medium — flexible within a milestone, re-negotiated between them |
+| Transparency into where money goes | Low — you see a lump sum, not hours | High — sprint reports, velocity, burn-down | High — deliverable-tied invoicing |
+| Vendor incentive alignment | Misaligned once signed (protect margin > build well) | Aligned (build the highest-value features) | Aligned within each milestone |
+| Best fit | Rigid, fully-specified compliance or government projects | Founder-led SaaS/MVP builds with evolving requirements | Enterprise buyers who need budget predictability but not full rigidity |
+
 ## The Hybrid Offshore Advantage
 
 If local European development (€350,000) is too expensive, and cheap offshore fixed-price quotes (€40,000) are too risky, what is the viable middle ground?
@@ -99,7 +120,7 @@ At Manifera, we provide European architectural governance and business alignment
 
 Stop hunting for the cheapest quote. Start investing in predictable, scalable engineering.
 
-*[Placeholder: Insert real client testimonial regarding Manifera's transparent pricing and avoidance of "Change Request" fees here]*
+Ready to see what your specific build actually costs, tier by tier? Request a scoped Time & Materials estimate from Manifera's Amsterdam team at [manifera.com/contact-us](https://www.manifera.com/contact-us/).
 
 ---
 
@@ -122,6 +143,9 @@ We utilize a Hub-and-Spoke model. By keeping high-level architecture, project ma
 
 ### Is it really cheaper to fix a mistake early in a software project?
 Yes, dramatically so. Under the 1:10:100 rule, a mistake caught during Product Discovery costs roughly 1x to fix, the same mistake caught mid-development costs roughly 10x, and the same mistake caught after production launch costs roughly 100x. Skipping Discovery doesn't avoid that cost—it just defers it to the most expensive possible stage.
+
+### What percentage of software projects actually go over budget?
+It is the norm, not the exception. The Standish Group's CHAOS Report finds only around 31% of software projects are fully "successful" (on time, on budget, full scope), while roughly 50% are "challenged" (completed but over budget or reduced in scope) and about 19% are cancelled outright. PMI's Pulse of the Profession research separately found that 43% of projects exceed their approved budget, and organizations lose an average of 11.4 cents per dollar spent on projects to poor performance. This is exactly why a rigid fixed-price contract, which asks a vendor to guarantee an outcome the industry itself rarely hits, is a structurally risky choice.
 
 <script type="application/ld+json">
 {
@@ -174,6 +198,14 @@ Yes, dramatically so. Under the 1:10:100 rule, a mistake caught during Product D
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Under the 1:10:100 rule, a mistake caught during Product Discovery costs roughly 1x to fix, the same mistake caught mid-development costs roughly 10x, and caught after production launch costs roughly 100x. Skipping Discovery just defers the cost to the most expensive stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What percentage of software projects actually go over budget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the norm, not the exception. The Standish Group's CHAOS Report finds only around 31% of software projects are fully successful (on time, on budget, full scope), 50% are challenged, and about 19% are cancelled. PMI's Pulse of the Profession found 43% of projects exceed their approved budget, with organizations losing an average of 11.4 cents per dollar spent to poor performance."
       }
     }
   ]

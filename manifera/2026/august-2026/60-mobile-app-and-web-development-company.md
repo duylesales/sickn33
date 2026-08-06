@@ -16,7 +16,8 @@ Content Format: Technical Architecture Deep-Dive
   "description": "An architectural guide to unifying web and mobile codebases. Explains how a mobile app and web development company uses React Native Web and Monorepos (Nx) to share business logic and stop clients from paying for the same code twice.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-29"
+  "datePublished": "2026-09-29",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -51,7 +52,7 @@ Enter **React Native Web**. This library takes React Native components (like `<V
 
 This means a developer can build a complex `UserProfileCard` component once, and use it in both the web dashboard and the iOS app. It will render as a native iOS component on the phone, and as a standard HTML element on the web.
 
-> *"We don't build two applications. We build one business logic engine, and project it onto three different screens (Web, iOS, Android) using a unified component library."* — Modern Cross-Platform Architecture Principle
+This is, in fact, the founding philosophy of React Native itself, not an invented framing. When Facebook engineer Tom Occhino introduced React Native on the official React blog in March 2015, he was explicit that the goal was never "write once, run anywhere" — the WebView-based dream that PhoneGap and Cordova chased and failed at. The actual goal, in his words, was to combine "the user experience of the native mobile platforms, combined with the developer experience we have when building with React on the web" — a philosophy the React Native project still summarizes today as **"Learn once, write anywhere."** The unified Monorepo architecture described in this article is the direct, decade-later engineering execution of that original 2015 thesis: one team, one mental model, one shared logic layer, projected onto native experiences per platform rather than forced into a single lowest-common-denominator UI.
 
 ## When to Share, and When to Fork
 
@@ -76,6 +77,20 @@ This is precisely why a Monorepo without disciplined CI/CD tooling is more dange
 2. **Mandatory cross-platform test gating on shared-code changes.** Any pull request that modifies a file inside `@company/core` must be configured as a required CI gate that blocks merging until unit tests and integration tests pass on all three consuming platforms — not just the platform the developer happened to be working on. Without this rule enforced at the CI level (not just as a suggestion in a style guide), a mobile-focused developer can merge a change to shared code having only manually verified it on iOS, unknowingly shipping a regression to the web dashboard the next morning.
 
 Elite agencies treat the shared core folder as the highest-risk, highest-scrutiny part of the entire repository — with stricter code review requirements and broader automated test coverage than any platform-specific file — precisely because its blast radius touches every screen the business depends on.
+
+## Choosing Your Cross-Platform Foundation: React Native vs. Flutter vs. Native Duplication
+
+React Native Web is not the only path to a unified codebase, and a CTO evaluating a **mobile app and web development company** should understand what they are trading away by choosing it over the alternatives. The honest comparison:
+
+| Factor | React Native (+ RN Web) | Flutter | Fully Separate Native Codebases |
+|---|---|---|---|
+| Code sharing (web + iOS + Android) | High — shares logic and, via RN Web, UI components | High for iOS/Android; Flutter Web exists but is architecturally a separate rendering path from mobile, so true three-platform UI sharing is weaker | None — three independent codebases |
+| Language | JavaScript/TypeScript — the language Stack Overflow's 2025 Developer Survey again found to be the most-used language among developers worldwide (66% usage), for the 15th consecutive year | Dart — a smaller, Google-maintained language with a much shallower hiring pool | Swift/Kotlin/JS — three separate hiring pools |
+| Talent availability | Very large — any JavaScript/React web developer has a meaningfully shorter ramp-up into React Native than into an entirely new language | Smaller and more specialized — fewer engineers, typically commanding a premium | Largest combined pool, but requires three distinct specialists instead of one cross-trained team |
+| Ecosystem maturity (open-source project size, as of writing) | 126,000+ GitHub stars, backed by Meta, in production use since 2015 | 178,000+ GitHub stars, backed by Google, faster recent growth | N/A — native SDKs (UIKit/SwiftUI, Jetpack Compose) are mature but inherently platform-siloed |
+| Best fit | Teams that already have (or want to hire from) a large JavaScript/React talent pool and need a genuinely shared web + mobile UI layer | Teams prioritizing pixel-perfect UI consistency across mobile platforms specifically, less concerned with sharing UI code back to web | Teams building platform-specific, deeply native-feature-dependent apps (e.g., heavy AR/camera work) where sharing logic matters less than squeezing every platform capability |
+
+**Why Manifera defaults to React Native + Monorepo for unified web/mobile builds:** the deciding factor is rarely raw technical capability — both React Native and Flutter are mature, production-proven frameworks used by companies at enormous scale. It is talent-market economics. A JavaScript-based stack lets a Dutch-governed, Vietnam-based engineering pod recruit from the single largest developer talent pool in the world, for both the web dashboard and the mobile apps, rather than maintaining three separate specialist hiring pipelines. For clients who have already standardized on Flutter for existing mobile apps, or whose priority is pixel-perfect native mobile UI over web-code sharing, Flutter remains a legitimate, well-reasoned alternative — the point of this table is to make that trade-off explicit, not to pretend only one right answer exists.
 
 ## The Manifera Hybrid Execution Model
 
@@ -106,6 +121,9 @@ Because it requires a highly mature architectural capability. Managing a Monorep
 
 ### (Scenario: VP Engineering worried about shared-code risk) If web and mobile share the same core code, can one bad commit break all three platforms at once?
 Yes, and this is the single biggest risk of a unified Monorepo. A careless change to a shared function (like a tax calculation or auth hook) can simultaneously break web, iOS, and Android from one commit. Elite agencies mitigate this with "affected" build tooling (Nx/Turborepo) that automatically runs the full cross-platform test suite whenever shared core files change, plus mandatory CI gates requiring all three platforms to pass tests before a shared-code pull request can merge.
+
+### (Scenario: CTO comparing frameworks before committing) Why would we choose React Native over Flutter for a unified web and mobile build?
+Both are mature, production-proven frameworks, so the decision usually comes down to talent-market economics rather than raw technical capability. React Native runs on JavaScript/TypeScript, the language Stack Overflow's 2025 Developer Survey again ranked as the most-used language among developers worldwide, for the 15th consecutive year, which gives you the largest possible hiring pool for both your web and mobile teams. Flutter uses Dart, a smaller, more specialized language with a shallower talent pool, and while Flutter Web exists, it's an architecturally separate rendering path from Flutter mobile, making genuine three-platform UI sharing weaker than what React Native Web offers. If your team is already standardized on Flutter, or your priority is pixel-perfect native mobile UI over web-code sharing, it remains a legitimate alternative — the trade-off is talent pool depth versus specific UI consistency guarantees.
 
 <script type="application/ld+json">
 {
@@ -158,6 +176,14 @@ Yes, and this is the single biggest risk of a unified Monorepo. A careless chang
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, this is the biggest risk of a unified Monorepo. A careless change to shared logic can break web, iOS, and Android simultaneously. Mitigate it with 'affected' build tooling (Nx/Turborepo) that runs the full cross-platform test suite on shared-code changes, plus mandatory CI gates requiring all three platforms to pass tests before merging."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why would we choose React Native over Flutter for a unified web and mobile build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are mature, production-proven frameworks, so the choice usually comes down to talent-market economics. React Native uses JavaScript/TypeScript, the most-used language among developers worldwide per Stack Overflow's 2025 Developer Survey for the 15th consecutive year, giving the largest hiring pool for both web and mobile teams. Flutter uses Dart, a smaller and more specialized language, and Flutter Web is an architecturally separate rendering path from Flutter mobile, weakening true three-platform UI sharing. Flutter remains a legitimate choice for teams already standardized on it or prioritizing pixel-perfect native mobile UI."
       }
     }
   ]

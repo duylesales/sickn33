@@ -16,7 +16,8 @@ Content Format: Technical Architecture Guide
   "description": "An advanced architecture guide for technical founders building developer-facing SaaS platforms. Covers tenant isolation, usage-based billing infrastructure, API rate limiting, and the scaling inflection points that break naive architectures.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-07"
+  "datePublished": "2026-09-07",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -24,7 +25,7 @@ You are building a **dev SaaS** — a platform sold to other software developers
 
 Then customer #51 runs a batch job that consumes 400% of your database CPU at 3 AM. Your other 50 customers wake up to 500 errors. Your Slack explodes. Your NPS drops by 40 points overnight.
 
-This is the "Noisy Neighbor" problem, and it is the defining architectural challenge of every developer-focused SaaS platform. Solving it is the difference between a platform that survives and a platform that collapses under its own success.
+This is the "Noisy Neighbor" problem — AWS's own official terminology for the phenomenon, defined in AWS's SaaS tenant isolation documentation as one tenant's resource usage degrading performance for every other tenant sharing the same infrastructure — and it is the defining architectural challenge of every developer-focused SaaS platform. It is not a solved problem even at AWS's own scale: in mid-2025, AWS shipped Amazon SQS Fair Queues specifically because a single high-volume tenant in a shared queue could increase message processing delays for every other tenant on the same queue, years after SQS itself was considered mature infrastructure. If AWS is still shipping new mitigations for noisy neighbors inside its own managed services, no dev SaaS platform should assume its own multi-tenant architecture is immune by default. Solving it is the difference between a platform that survives and a platform that collapses under its own success.
 
 ## The Three Scaling Inflection Points
 
@@ -36,8 +37,8 @@ Every **dev SaaS** platform encounters three architectural inflection points whe
 
 **The architectural fix:** Implement **tenant-aware resource isolation** at the infrastructure layer:
 - **Database:** Use connection pooling (PgBouncer) with per-tenant connection limits. Implement query timeouts that kill runaway queries after 30 seconds.
-- **Compute:** Deploy tenant workloads in isolated Kubernetes namespaces with CPU and memory quotas (ResourceQuotas). A single tenant's spike cannot exceed their allocated ceiling.
-- **API:** Implement per-tenant API rate limiting using a distributed rate limiter (Redis-backed sliding window algorithm). Each tenant gets a defined requests-per-second budget.
+- **Compute:** Deploy tenant workloads in isolated Kubernetes namespaces with CPU and memory quotas (ResourceQuotas). A single tenant's spike cannot exceed their allocated ceiling. Namespace-based isolation is not a niche choice — CNCF's 2024 Annual Survey found namespace-based separation jumped to 88% adoption among organizations using multi-tenancy strategies in Kubernetes, well ahead of cluster-based or label-based separation.
+- **API:** Implement per-tenant API rate limiting using a distributed rate limiter. Stripe's own engineering team has publicly documented the approach most dev SaaS platforms converge on: a Redis-backed token bucket per tenant, where each tenant's bucket refills at a steady rate and each request costs one token — allowing legitimate bursts while still enforcing a hard ceiling. (See the algorithm comparison below for when a token bucket is the right choice versus the alternatives.)
 
 ### Inflection Point 2: The Billing Cliff (200–1,000 customers)
 
@@ -82,6 +83,19 @@ Resource isolation (Inflection Point 1) solves the noisy neighbor problem, but i
 
 The architecture decision most dev SaaS founders get wrong is treating this as a single, platform-wide choice. The pattern we implement at Manifera is **tiered isolation**: self-serve and SMB tenants run in the Pool model behind RLS, mid-market tenants graduate to the Bridge model when their contract or compliance posture demands it, and enterprise tenants who require it are provisioned into Silo deployments — all served by the same application codebase, with the isolation model selected by a tenant-provisioning service rather than hardcoded into the schema. Retrofitting this tiering after the fact, once thousands of tenants already live in a single pooled schema, is a multi-quarter migration project. Designing the tenant-provisioning abstraction on Day 1 — even while every tenant still lives in the Pool model — costs almost nothing upfront and avoids that rewrite entirely.
 
+## Choosing a Rate-Limiting Algorithm: Token Bucket, Sliding Window, Leaky Bucket, or Fixed Window
+
+Per-tenant API rate limiting (Inflection Point 1) is not a single technique — it is a choice between four well-established algorithms, each with a different failure mode. Choosing the wrong one is a common, quiet cause of noisy-neighbor incidents that engineering teams misdiagnose as "the rate limiter isn't working" when actually it is working exactly as designed, just designed for the wrong traffic pattern.
+
+| Algorithm | How It Works | Strength | Weakness | Best Fit for Dev SaaS |
+|---|---|---|---|---|
+| **Fixed Window** | A counter resets every N seconds (e.g., 100 requests per minute, reset on the minute) | Simplest to implement and reason about | A tenant can send 100 requests in the last second of one window and 100 more in the first second of the next — 200 requests in ~2 seconds, double the intended limit | Internal tools or low-stakes endpoints where burst-at-the-boundary risk is acceptable |
+| **Sliding Window (log or counter)** | Tracks requests across a continuously moving time window rather than a hard reset boundary | Eliminates the boundary-burst problem; much more accurate enforcement | Higher memory and compute cost, especially with the log variant which stores every request timestamp | Billing-adjacent or abuse-sensitive endpoints where precision matters more than raw throughput |
+| **Token Bucket** | Each tenant has a bucket that holds up to B tokens and refills at rate R per second; each request costs one token; an empty bucket rejects the request | Allows legitimate short bursts (a batch job, a CI pipeline trigger) without permanently raising the sustained limit; this is the algorithm Stripe has publicly documented using for its own API, implemented on Redis | Slightly more complex to tune correctly (bucket size vs. refill rate) than fixed window | The default choice for most dev SaaS public APIs — developer workloads are inherently bursty (a deploy, a batch sync), and token bucket is built for exactly that pattern |
+| **Leaky Bucket** | Requests queue up and are processed out at a strictly constant rate, regardless of how bursty the input is | Produces perfectly smooth, predictable outbound traffic — ideal for protecting a fragile downstream dependency | Bursty legitimate traffic gets throttled to the same constant rate as abuse traffic, which frustrates developers running batch operations | Protecting an internal resource (a legacy database, a rate-limited third-party API you call on the tenant's behalf) rather than the tenant-facing API itself |
+
+For most dev SaaS platforms, the practical answer is not "pick one" but "pick two": a token bucket at the tenant-facing API edge (generous, burst-tolerant, matches how developers actually work) and a leaky bucket in front of any fragile internal dependency the API calls into (strict, smooth, protects the thing that cannot handle bursts). Applying only one algorithm everywhere is the most common rate-limiting mistake we see in early-stage dev SaaS architectures — it either frustrates legitimate developer workloads with unnecessary throttling, or leaves a fragile internal dependency exposed to exactly the burst traffic the rate limiter was supposed to prevent.
+
 ## How Manifera Builds SaaS Platforms
 
 At Manifera, our teams have deep experience building [web applications](https://www.manifera.com/services/web-app-develop/) that serve thousands of concurrent tenants.
@@ -113,6 +127,9 @@ No. Multi-region adds immense operational complexity. Start with a single-region
 
 ### (Scenario: CTO whose first enterprise customer demands dedicated infrastructure) Should every tenant share the same database, or should each tenant get its own?
 It depends on scale and customer segment, and most platforms need more than one model at once. Small and mid-size tenants can safely share a database in a Pool model, enforced by PostgreSQL Row-Level Security. Mid-market tenants often need a Bridge model (separate schema per tenant) once contracts require logical separation. Enterprise or regulated tenants typically require a Silo model with a fully dedicated database or cloud account. Building a tenant-provisioning abstraction that supports all three from Day 1 avoids a costly re-architecture later.
+
+### (Scenario: Backend Engineer implementing per-tenant API rate limiting) Which rate-limiting algorithm should we actually use — token bucket, sliding window, leaky bucket, or fixed window?
+For most dev SaaS public APIs, use a token bucket at the tenant-facing edge — the algorithm Stripe has publicly documented using in production, implemented on Redis, with each tenant's bucket refilling at a steady rate and each request costing one token. It tolerates the bursty traffic patterns developers naturally produce (a deploy, a CI trigger, a batch sync) without permanently raising the sustained limit. Reserve a leaky bucket for protecting a specific fragile internal dependency the API calls into, where you need perfectly smooth, constant-rate outbound traffic regardless of burst. Avoid fixed window for anything abuse-sensitive — it allows a tenant to send double the intended limit by timing requests around the window boundary. Sliding window is the right choice when precision matters more than raw throughput, such as billing-adjacent endpoints.
 
 <script type="application/ld+json">
 {
@@ -165,6 +182,14 @@ It depends on scale and customer segment, and most platforms need more than one 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It depends on scale and segment. Small and mid-size tenants can share a database in a Pool model enforced by PostgreSQL Row-Level Security. Mid-market tenants often need a Bridge model with a separate schema per tenant. Enterprise or regulated tenants typically require a Silo model with a fully dedicated database. Building a tenant-provisioning abstraction supporting all three from Day 1 avoids a costly re-architecture later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which rate-limiting algorithm should we actually use — token bucket, sliding window, leaky bucket, or fixed window?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a token bucket at the tenant-facing edge for most dev SaaS public APIs — the approach Stripe has publicly documented using in production on Redis, which tolerates bursty developer traffic without raising the sustained limit. Reserve a leaky bucket for protecting a fragile internal dependency that needs perfectly smooth, constant-rate traffic. Avoid fixed window for abuse-sensitive endpoints since it allows double the intended limit around window boundaries. Use sliding window when precision matters more than throughput, such as billing-adjacent endpoints."
       }
     }
   ]

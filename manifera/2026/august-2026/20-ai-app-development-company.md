@@ -16,7 +16,8 @@ Content Format: Technical Evaluation Guide
   "description": "A technical guide for CTOs evaluating AI app development companies. Explores the difference between superficial API wrappers and deep RAG (Retrieval-Augmented Generation) architectures.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-08-20"
+  "datePublished": "2026-08-20",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -26,8 +27,10 @@ However, there is a massive technical chasm between an agency that knows how to 
 
 If you are a CTO looking to build a generative AI feature—whether it is a specialized customer support agent or an internal data-mining tool—you cannot afford to hire an agency that only builds "ChatGPT wrappers." If you do, you risk severe data privacy violations, exorbitant API costs, and hallucinations that damage your brand.
 
-> *"Enterprises that rely on superficial AI API integrations without investing in vector databases and RAG (Retrieval-Augmented Generation) architectures will see their AI initiatives fail to deliver measurable business value within 12 months."*  
-> **— The State of Applied AI Engineering (Gartner Insight)**
+Gartner has predicted that at least 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, citing poor data quality, inadequate risk controls, escalating costs, or unclear business value as the recurring root causes — precisely the failure modes a superficial API wrapper walks straight into.
+
+> *"After last year's hype, executives are impatient to see returns on GenAI investments, yet organizations are struggling to prove and realize value."*  
+> **— Rita Sallam, Distinguished VP Analyst, Gartner** (Gartner Data & Analytics Summit, Sydney, July 2024)
 
 Here is the technical criteria you must use to audit an [offshore software development](https://www.manifera.com/services/offshore-software-development/) partner claiming AI expertise.
 
@@ -86,6 +89,29 @@ Most CTOs think about AI security in terms of data leaving the system — PII sc
 
 **The Red Flag:** If the agency's answer to this question is "we just tell the model in the prompt not to follow injected instructions" and nothing else, they are relying on the model's judgment as the sole line of defense — which is precisely the control that fails under adversarial pressure. Defense-in-depth, not a politely worded system prompt, is what production-grade agentic AI requires in 2026.
 
+## 7. The OWASP Top 10 for LLM Applications: The Checklist an Agency Should Already Know
+
+By 2026, "we take AI security seriously" means nothing without a reference framework behind it. The OWASP Foundation's GenAI Security Project publishes the **OWASP Top 10 for LLM Applications** (2025 edition) — the closest thing the industry has to a shared, vendor-neutral standard for what can go wrong in a production AI system.
+
+**The Audit Question:** *"Walk me through how your architecture addresses each of the OWASP Top 10 risks for LLM applications — not just prompt injection."*
+
+Sections 1–6 above already cover several of these risks in depth, but a genuinely mature agency should also speak fluently to the ones that rarely come up in a sales pitch:
+
+| OWASP LLM Top 10 (2025) Risk | What It Means | Covered Above |
+|---|---|---|
+| LLM01: Prompt Injection | Hidden instructions in input or retrieved content override system behavior | Section 6 |
+| LLM02: Sensitive Information Disclosure | Model leaks PII or proprietary data from its context | Section 3 |
+| LLM03: Supply Chain | Vulnerabilities in third-party models, fine-tuning data, or plugins | Ask directly |
+| LLM04: Data and Model Poisoning | Training data manipulated to bias or backdoor the model | Ask directly |
+| LLM05: Improper Output Handling | Model output reaches a database, shell, or browser unsanitized | Section 4 |
+| LLM06: Excessive Agency | Agent granted more autonomy/permissions than the task requires | Section 4 |
+| LLM07: System Prompt Leakage | Attacker extracts the system prompt, exposing business logic | Ask directly |
+| LLM08: Vector/Embedding Weaknesses | Poisoned embeddings corrupt RAG retrieval results | Section 1 |
+| LLM09: Misinformation | Confident, plausible, factually wrong output (hallucination) | Section 5 |
+| LLM10: Unbounded Consumption | Uncontrolled inference requests drive runaway cost or DoS | Section 2 |
+
+**The Red Flag:** If an agency cannot speak to LLM03 (Supply Chain) or LLM07 (System Prompt Leakage) specifically, they are likely learning AI security on your project, not bringing prior expertise to it.
+
 ## Why Manifera Excels in Applied AI
 
 Building an AI application is not just about prompt engineering; it is about rigorous data engineering. 
@@ -121,6 +147,9 @@ Through evaluation infrastructure: a curated "golden dataset" of expected prompt
 
 ### What is "indirect prompt injection," and how should an agency defend against it?
 It is when a malicious instruction is hidden inside content the AI retrieves—like a PDF or email—rather than typed directly by a user. A competent agency defends against it with layered controls: labeling retrieved content as untrusted data (not commands) in the prompt structure, never letting one AI turn both read untrusted content and trigger a high-privilege action, and logging/alerting on suspicious tool-call attempts.
+
+### What is the OWASP Top 10 for LLM Applications, and why should I ask a vendor about it?
+It is the OWASP Foundation's vendor-neutral, expert-curated list of the ten most critical security risks specific to LLM-powered applications — covering issues like prompt injection, sensitive information disclosure, supply chain vulnerabilities, and unbounded consumption. Asking an agency to map their architecture against it is a fast, concrete way to separate a partner with genuine AI security depth from one repeating marketing language, because the framework forces a specific answer for each risk category rather than a vague assurance.
 
 <script type="application/ld+json">
 {
@@ -189,6 +218,14 @@ It is when a malicious instruction is hidden inside content the AI retrieves—l
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a malicious instruction hidden inside retrieved content like a document or email, rather than typed by a user. Defenses include labeling retrieved content as untrusted data, separating content-reading from high-privilege tool execution, and logging/alerting on suspicious tool-call attempts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the OWASP Top 10 for LLM Applications, and why should I ask a vendor about it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the OWASP Foundation's vendor-neutral list of the ten most critical security risks specific to LLM applications, including prompt injection, sensitive information disclosure, supply chain vulnerabilities, and unbounded consumption. Asking a vendor to map their architecture against it quickly reveals whether they have genuine AI security depth or are repeating marketing language."
       }
     }
   ]

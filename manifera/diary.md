@@ -2,6 +2,20 @@
 
 ## 2026
 
+### Tháng 08
+
+#### Ngày 06
+
+- **11:35**: Cập nhật nhật ký công việc cho dự án Manifera.
+
+#### Ngày 05
+
+- **13:52**: Mở rộng & nâng cấp chuyên sâu 21 bài viết thuộc `manifera/2026/july-2026/` theo chuẩn SEO/GEO: bổ sung các trích dẫn chuyên gia (verified expert citations), số liệu thực tế, bảng so sánh kiến trúc và hệ thống link nội bộ (internal links) liên kết đến các trang dịch vụ chính của Manifera.com. Commit `e4eee6f`.
+
+#### Ngày 04
+
+- **17:19**: Viết lại chuyên sâu bài #22 `22-is-your-legacy-system-costing-more-than-full-rewrite.md` thuộc `manifera/2026/july-2026/` (tăng dung lượng từ 12KB ➔ 31KB): bổ sung chi tiết 6 lớp chi phí ẩn của hệ thống legacy, 3 chiến lược chuyển đổi di trú, case study doanh nghiệp tại Rotterdam, khung thuyết phục CFO và cập nhật bài social post tương ứng. Commit `fcd9299`.
+
 ### Tháng 07
 
 #### Ngày 13

@@ -24,7 +24,8 @@ Content Format: Phased Playbook with Risk Framework
     "name": "Manifera",
     "url": "https://www.manifera.com"
   },
-  "datePublished": "2026-08-25"
+  "datePublished": "2026-08-25",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -32,7 +33,7 @@ Content Format: Phased Playbook with Risk Framework
 
 Every enterprise has one. That monolithic system built in 2008 on a framework nobody maintains anymore. It processes €50M in transactions per year. Three people in the company understand how it works. Two of them are planning to retire.
 
-McKinsey's 2025 Digital Transformation Study delivered a sobering statistic: **70% of large-scale legacy modernization projects either fail outright, exceed their budget by more than 100%, or deliver less than 50% of the promised functionality.** The average enterprise migration that was budgeted at €2M ends up costing €4.7M.
+The landmark McKinsey-Oxford study on large IT projects — analyzing more than 5,400 initiatives worldwide — found that on average, they **run 45% over budget and deliver 56% less value than predicted**, and that **17% go so badly they threaten the very existence of the company** undertaking them. Legacy modernization projects, with their buried business logic and undocumented dependencies, sit squarely among the highest-risk category of large IT initiatives this research covers. A project budgeted at €2M that runs even the average 45% over lands at €2.9M — and that is before accounting for the projects that fail outright.
 
 This guide is the playbook for the 30% that succeed.
 
@@ -52,6 +53,22 @@ A "clean rewrite" means re-discovering every one of these decisions through prod
 | **Strangler Fig Pattern** | 🟢 Low-Medium | 12-24 months | €500K-€3M | The gold standard. Incrementally replace components while the old system continues running. |
 | **Lift and Shift** | 🟡 Medium | 3-6 months | €100K-€500K | When the goal is infrastructure modernization (move to cloud) without changing application code. |
 | **Re-platform** | 🟡 Medium | 6-12 months | €300K-€1.5M | Move to a modern framework (e.g., .NET Framework → .NET 8) while preserving core business logic. |
+
+## The Industry-Standard Vocabulary: The 7 Rs of Migration
+
+Before you can pick a strategy for a single system, you need a shared vocabulary for talking about strategy at all — otherwise "modernize the CRM" means five different things to five different stakeholders. The most widely adopted framework for this originates from Gartner's 2011 analysis of application migration options and was later extended by AWS into what is now commonly called the "7 Rs." It classifies every legacy component into one of seven treatment categories:
+
+| # | Strategy | What It Means | Best Fit |
+|---|---|---|---|
+| 1 | **Retire** | Decommission the component entirely — nobody uses it, or its function is now redundant | Dead features, duplicate systems from mergers, orphaned reports |
+| 2 | **Retain** | Leave it exactly as it is, for now | Systems with a known, funded end-of-life date; low-risk, low-cost components not worth touching yet |
+| 3 | **Rehost** ("lift and shift") | Move the workload to new infrastructure unchanged | Systems where the code is fine but the hosting is the problem (aging on-prem hardware, expiring data-center contracts) |
+| 4 | **Replatform** ("lift and reshape") | Swap specific infrastructure components (e.g., self-managed MySQL → managed RDS) without changing application code | Systems needing operational relief (patching, backups, scaling) but whose business logic is sound |
+| 5 | **Repurchase** | Replace the system with a commercial SaaS or COTS product | Commodity functions (HR, expense management, basic CRM) where building custom no longer creates advantage |
+| 6 | **Refactor / Re-architect** | Rewrite the application to a modern architecture while preserving its behavior | Core, differentiated business systems where the current architecture is the actual bottleneck to growth |
+| 7 | **Relocate** | Move the workload to a new hosting environment (e.g., VMware-based infrastructure to a cloud provider) without changing the underlying architecture at all | Fastest possible infrastructure exit under time pressure — no application changes even at the code level |
+
+**How this connects to the Strangler Fig migration in this playbook:** a single legacy system almost never gets one "R." A 15-year-old ERP might have its reporting module **retired**, its authentication **repurchased** (swapped for an identity-as-a-service provider), its order-processing core **refactored**, and its rarely touched audit-archive module simply **retained** for now. Phase 1 (Discovery) of the playbook below produces exactly the inventory you need to assign each component its own "R" — which is what turns "we are modernizing the legacy system" from a vague, single, terrifying 18-month bet into a portfolio of independently scoped, independently risk-rated workstreams.
 
 ## The 6-Phase Migration Playbook
 
@@ -166,6 +183,9 @@ Use Change Data Capture (CDC) with a tool like Debezium. CDC continuously stream
 ### What is the ROI timeline for legacy system modernization? (Scenario: CFO Approving Capital Expenditure)
 For a typical €1.5M modernization project replacing a system with €300,000/year in maintenance costs, the ROI timeline works as follows. The new system's annual maintenance cost drops to €60,000-€100,000 (modern frameworks, automated testing, cloud-native operations). This creates annual savings of €200,000-€240,000 in direct maintenance costs. The breakeven point on the initial investment is 6-8 years looking only at maintenance savings. However, the real ROI comes from three additional factors: developer productivity improvement (typically 2-3x faster feature delivery), elimination of compliance risk (legacy systems without security patches are audit liabilities), and talent acquisition (engineers refuse to work on COBOL/Delphi/VB6 — your job postings get 5x more applicants with a modern stack). When these factors are included, most CFOs see positive ROI within 2-3 years.
 
+### Do we need to pick a single migration strategy for the whole system, or can different parts use different strategies? (Scenario: Architect Scoping a Discovery Phase)
+Different strategies, almost always. Using the industry-standard "7 Rs" vocabulary (Retire, Retain, Rehost, Replatform, Repurchase, Refactor, Relocate), a single legacy system typically breaks down into a portfolio of components, each getting its own treatment: low-value or duplicate modules get **retired**, commodity functions like authentication or expense tracking get **repurchased** as SaaS, infrastructure-only pain points get **rehosted** or **replatformed** without touching code, and only the genuinely differentiated core business logic gets the expensive **refactor** treatment. Treating the whole system as one monolithic "rewrite or don't" decision is the single most common reason modernization budgets balloon — you end up paying refactor-level cost and risk for components that only needed a rehost.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -209,6 +229,14 @@ For a typical €1.5M modernization project replacing a system with €300,000/y
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "For a €1.5M project replacing a system with €300K/year maintenance, direct maintenance savings create breakeven at 6-8 years. But the real ROI includes developer productivity improvement (2-3x faster features), compliance risk elimination, and talent acquisition (5x more applicants with modern stacks). Including these factors, most CFOs see positive ROI within 2-3 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need to pick a single migration strategy for the whole system, or can different parts use different strategies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Different strategies, almost always. Using the industry-standard '7 Rs' vocabulary (Retire, Retain, Rehost, Replatform, Repurchase, Refactor, Relocate), a legacy system typically breaks into a portfolio of components, each getting its own treatment: low-value modules get retired, commodity functions get repurchased as SaaS, infrastructure pain points get rehosted or replatformed without touching code, and only genuinely differentiated core logic gets the expensive refactor treatment. Treating the whole system as one monolithic rewrite-or-don't decision is the most common reason modernization budgets balloon."
       }
     }
   ]

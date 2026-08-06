@@ -16,7 +16,8 @@ Content Format: Procurement Strategy & Risk Analysis
   "description": "An analysis of why traditional IT Request for Proposals (RFPs) fail when selecting a web development company. Explains how RFPs incentivize vendors to underbid, skip architecture, and inflate long-term maintenance costs.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-21"
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -38,9 +39,17 @@ If an agency submits a bid that includes 3 weeks of architectural discovery, 20%
 
 A cheaper agency will submit a bid for €80,000. How? By skipping the architecture phase, relying on cheap manual testing, and writing undocumented procedural code. 
 
-To the procurement officer, both agencies promised the same 150 features. The officer chooses the €80,000 bid. The company just purchased a ticking time bomb of technical debt. 
+To the procurement officer, both agencies promised the same 150 features. The officer chooses the €80,000 bid. The company just purchased a ticking time bomb of technical debt. Optimizing vendor selection for the cheapest upfront quote does not eliminate cost — it defers it, and the data on how software projects actually perform shows exactly where that deferred cost resurfaces.
 
-> *"If you optimize your vendor selection for the cheapest upfront quote, you mathematically guarantee the highest Total Cost of Ownership in Year 2."* — Standard IT Procurement Axiom
+## What the Data Says: Why Fixed-Price RFPs Reliably Underperform
+
+This is not a theoretical risk unique to unlucky companies. It is a well-documented, decades-old pattern in software project research.
+
+The Standish Group's long-running CHAOS Report — the most cited longitudinal study of software project outcomes — has consistently found that only around **31% of software projects fully succeed** (delivered on time, on budget, with the required features), roughly **half are "challenged"** (late, over budget, or missing agreed features), and the remainder are cancelled outright. The original 1994 CHAOS Report found that projects that did run over budget exceeded their original cost estimate by an average of **189%**. Later editions have shown improvement as Agile practices spread, but the core finding — that fixed, upfront specification is a poor predictor of what a project will actually cost — has held for thirty years of surveys.
+
+PMI's own research explains the mechanism. The **2018 Pulse of the Profession** report found that **52% of projects experienced scope creep** — uncontrolled changes to what was originally agreed — up from 43% five years earlier, and that scope creep was associated with average budget overruns in the range of **27%**. A 150-feature RFP is, by definition, a single upfront specification frozen before any real user has touched the product. PMI's data says this specification will be wrong for roughly half of all projects, and when it is wrong, the cost consequence is not marginal.
+
+Apply that 27% figure to the earlier example: an €80,000 low bid is not really an €80,000 commitment. At the *average* documented overrun rate for a project experiencing scope creep, the realistic expected cost is closer to **€101,600** before a single adversarial "Change Request" markup is applied on top — and fixed-price vendors, as described above, use exactly that scope-creep moment to charge premium rates rather than absorb it as normal project evolution.
 
 ## The "Change Request" Trap
 
@@ -116,6 +125,9 @@ We eliminate the adversarial fixed-price dynamic. We deploy a dedicated pod of V
 ### (Scenario: Procurement Director drafting a vendor contract before signing) What contract clauses protect us if we need to switch web development companies later?
 Insist on a mandatory 30-60 day knowledge transfer period triggered by either party, source code and infrastructure-as-code escrow (not just a final .zip file), explicit IP assignment language covering all code and libraries, and access credential transfer so domains and cloud accounts are registered under your organization from day one. Without these, the incumbent vendor retains all the leverage if you ever want to leave.
 
+### (Scenario: CFO asking for evidence before approving a shift away from fixed-price RFPs) Is there independent research proving that fixed-price RFPs actually underperform, or is this just an agency sales argument?
+Yes. The Standish Group's CHAOS Report, the longest-running study of software project outcomes, has consistently found that only around 31% of software projects fully succeed on time, on budget, and with the required features, while roughly half are "challenged" and the rest are cancelled. Separately, PMI's 2018 Pulse of the Profession found that 52% of projects experience scope creep, with average budget overruns around 27% once it occurs. A fixed-price RFP freezes 150 features before real usage data exists, which is precisely the condition both studies identify as the leading predictor of budget overrun.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -167,6 +179,14 @@ Insist on a mandatory 30-60 day knowledge transfer period triggered by either pa
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Insist on a mandatory 30-60 day knowledge transfer period, source code and infrastructure-as-code escrow, explicit IP assignment language, and access credential transfer so domains and cloud accounts are registered under your organization from day one. Without these, the incumbent vendor retains all the leverage if you want to leave."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there independent research proving that fixed-price RFPs actually underperform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Standish Group's CHAOS Report has consistently found that only around 31% of software projects fully succeed on time, on budget, and with required features, while roughly half are challenged and the rest cancelled. PMI's 2018 Pulse of the Profession found 52% of projects experience scope creep, with average budget overruns around 27% once it occurs. A fixed-price RFP freezes features before real usage data exists, the leading predictor of overrun in both studies."
       }
     }
   ]

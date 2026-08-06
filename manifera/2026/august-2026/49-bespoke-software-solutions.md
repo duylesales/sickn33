@@ -16,7 +16,8 @@ Content Format: Strategic Framework
   "description": "A strategic framework for CIOs evaluating bespoke software solutions. Explains why the classic 'Build vs Buy' debate is financially flawed, and introduces the Wardley Mapping approach to identifying core differentiators.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-18"
+  "datePublished": "2026-09-18",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -46,7 +47,7 @@ Differentiators are the specific operational workflows or customer experiences t
 - **Examples:** A proprietary AI pricing algorithm for a logistics company. A highly specialized telemedicine triage workflow. A unique supply chain forecasting model.
 - **The Rule:** If this workflow is the reason customers choose you over a competitor, you must own the IP. You must build bespoke.
 
-> *"If you mold your core differentiating business process to fit an off-the-shelf SaaS tool, you are erasing the very thing that makes your company valuable."* — Strategic IT Axiom
+Molding your core differentiating business process to fit an off-the-shelf SaaS tool's fixed workflow does not just cost you flexibility — it erases the very thing that made the process worth having in the first place, because your competitor can rent the exact same fixed workflow next quarter.
 
 ## The Danger of the "Customizable SaaS" Trap
 
@@ -79,6 +80,20 @@ At Manifera, we recommend clients formalize this as a recurring governance ritua
 
 This is the discipline that separates CIOs who treat "bespoke vs. buy" as a permanent, one-time architectural decision from those who treat it as what it actually is: a living portfolio decision that has to be revisited as the market — and your own business model — evolves.
 
+## A Second Lens: Cross-Checking Wardley Mapping Against Gartner's Pace-Layered Strategy
+
+CIOs who present a Wardley Map to a board sometimes get a fair pushback: "This is a strategy consultant's diagram, not a governance framework we can actually run." That objection has a straightforward answer — the Commodity-vs-Differentiator logic in this article is not a one-source idea. It independently converges with **Gartner's Pace-Layered Application Strategy**, a widely adopted enterprise architecture framework that classifies every application in a portfolio into one of three layers, each with a different expected lifecycle and a different governance cadence.
+
+| Gartner Layer | Typical Lifecycle | Wardley Equivalent | Build/Buy Guidance | Review Cadence |
+|---|---|---|---|---|
+| **Systems of Record** | 10+ years | Commodity / Product | Buy proven, stable platforms (ERP, core financials, payroll) | Annual — stability is the goal, not iteration |
+| **Systems of Differentiation** | 1–3 years | Custom-Built / early Product | Build bespoke where the workflow is your competitive moat | Every 6–12 months — this is exactly where this article's bi-annual re-mapping review applies |
+| **Systems of Innovation** | 0–12 months | Genesis | Build fast, disposable prototypes; expect most to be discarded | Continuous — these are explicitly meant to be short-lived experiments |
+
+The two frameworks were built independently — Wardley Mapping by Simon Wardley for competitive strategy, Pace-Layering by Gartner for enterprise application portfolio governance — yet they land on the same structural conclusion from different directions: stable, undifferentiated capability belongs on a slow-moving, buy-first layer; your actual competitive edge belongs on a fast-moving, build-first layer; and genuinely novel bets belong somewhere even faster and more disposable than either.
+
+**Why this matters practically for a CIO building the business case:** presenting only a Wardley Map risks sounding like a single consultant's opinion. Presenting the same conclusion cross-validated against a Gartner framework your board's own enterprise architecture team likely already references gives the "build bespoke for the 20%" argument institutional weight it did not have on its own. It also supplies a ready-made governance cadence — Gartner's own guidance that Systems of Differentiation should be reassessed every 6 to 12 months maps almost exactly onto this article's earlier recommendation for a bi-annual capability re-mapping review, because a system that starts in the Differentiation layer with a 1-3 year expected lifecycle is, by design, a candidate for re-evaluation as that lifecycle closes.
+
 ## How to Execute the "Differentiate" Strategy
 
 At Manifera, we advise our enterprise clients to split their IT budget aggressively: starve the commodities, feed the differentiators.
@@ -110,6 +125,9 @@ This is where the "Order Taker" model fails. A true engineering partner uses a H
 
 ### (Scenario: CIO reviewing a five-year-old bespoke system) How do we know if a bespoke system we built years ago is still worth maintaining?
 Wardley Mapping components move along an evolution axis over time: a genuine differentiator today can commoditize within a few years as competitors and SaaS vendors catch up. Formalize a bi-annual capability re-mapping review where every bespoke system is re-scored on a 1-5 commoditization risk scale. Systems scoring high (credible SaaS alternatives now exist at a lower TCO) should go through a deliberate migrate-or-retain decision, rather than being maintained indefinitely by default.
+
+### (Scenario: Enterprise architecture team skeptical of a strategy-consultant framework) Is Wardley Mapping just a niche consulting tool, or does it hold up against more established enterprise architecture practice?
+It holds up well, because it is not the only framework that reaches this conclusion. Gartner's Pace-Layered Application Strategy — a long-established, widely adopted enterprise architecture framework — independently classifies applications into Systems of Record (10+ year lifecycle, buy proven platforms), Systems of Differentiation (1-3 year lifecycle, build where the workflow is a competitive moat), and Systems of Innovation (0-12 month lifecycle, build fast and disposable). That maps almost exactly onto the Commodity, Differentiator, and Genesis zones this article describes. Two frameworks built independently, for different purposes, arriving at the same structural answer is a stronger basis for a board decision than either framework alone.
 
 <script type="application/ld+json">
 {
@@ -162,6 +180,14 @@ Wardley Mapping components move along an evolution axis over time: a genuine dif
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Wardley Map components move along an evolution axis: a genuine differentiator today can commoditize within a few years. Formalize a bi-annual capability re-mapping review scoring each bespoke system on a 1-5 commoditization risk scale, and run a deliberate migrate-or-retain decision for systems scoring high, instead of maintaining them indefinitely by default."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Wardley Mapping just a niche consulting tool, or does it hold up against more established enterprise architecture practice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It holds up well. Gartner's Pace-Layered Application Strategy independently classifies applications into Systems of Record (buy proven platforms), Systems of Differentiation (build where the workflow is a competitive moat), and Systems of Innovation (build fast and disposable) — mapping almost exactly onto the Commodity, Differentiator, and Genesis zones in Wardley Mapping. Two independently developed frameworks reaching the same structural conclusion is a stronger basis for a board decision than either alone."
       }
     }
   ]

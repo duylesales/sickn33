@@ -16,7 +16,8 @@ Content Format: Risk Analysis & Organizational Strategy
   "description": "A risk analysis of hiring solitary 'rockstar' dedicated developers. Explores the Bus Factor, technical debt, and why true engineering velocity comes from pods, not isolated geniuses.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-19"
+  "datePublished": "2026-09-19",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -42,7 +43,7 @@ The Bus Factor is the minimum number of team members that have to suddenly disap
 
 If you hire a solitary **dedicated developer** to build your core infrastructure, your Bus Factor is 1.
 
-> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."* — Martin Fowler, Chief Scientist at ThoughtWorks
+> *"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."* — Martin Fowler, Chief Scientist at ThoughtWorks, in *Refactoring: Improving the Design of Existing Code* (1999)
 
 The problem with lone "rockstars" is that they optimize for their own typing speed, not for the team's long-term comprehension. They write clever, highly compressed logic. They skip writing unit tests because "they know the code works." They ignore standardized CI/CD pipelines because it slows down their personal velocity.
 
@@ -82,6 +83,18 @@ The financial exposure of a high TTR is not abstract. If your dedicated develope
 
 There is a second, quieter cost that rarely enters this conversation: burnout. A solitary developer who is the only person capable of fixing a production incident cannot take an uninterrupted vacation. Every long weekend becomes a tacit on-call shift. Over 12-18 months, this erodes exactly the kind of person you most need to retain — meaning the resignation you're least prepared for often arrives from exhaustion, not opportunity.
 
+## What the Research Says: Bus Factor Isn't a Hypothetical
+
+Engineering leaders sometimes treat "Bus Factor" as a thought experiment rather than a measured phenomenon. It isn't. Academic researchers have quantified it directly by mining commit history from real repositories, and the numbers explain why solitary dedicated-developer arrangements fail so predictably.
+
+Cosentino, Cánovas Izquierdo, and Cabot published the first widely cited algorithmic method for computing bus factor from Git history in *"Assessing the Bus Factor of Git Repositories"* (IEEE SANER, 2015), scoring each contributor's "Degree of Authorship" to identify how concentrated a codebase's knowledge really is. Building on that method, Avelino et al. analyzed 133 popular, actively maintained GitHub projects and found that **46% had a bus factor of exactly 1, and another 28% had a bus factor of 2** — meaning roughly three-quarters of well-known open-source systems depended on the continued availability of one or two people. And that figure describes *open-source* projects, which at least benefit from public visibility, external contributors, and community code review. A solitary commercial dedicated developer, working inside a private repository with no external reviewers and no community pressure to document anything, sits in a structurally worse position than the median GitHub project in that study.
+
+**Turning Bus Factor into a euro figure.** The academic research tells you *that* the risk is concentrated; it does not tell you what it costs when it materializes. For that, pair the Time-to-Replace audit above with employee-replacement cost data. SHRM (the Society for Human Resource Management) estimates that replacing an employee typically costs **50–200% of their annual salary** once you account for recruitment, onboarding, and lost productivity during ramp-up — with technical and senior roles trending toward the higher end of that range because specialized knowledge takes longer to rebuild. Combine the two data points into a simple exposure formula:
+
+**Key-Person Risk Exposure = (TTR in business days × fully loaded daily cost of the team blocked by the gap) + (replacement recruitment cost, 50–200% of annual salary)**
+
+For a mid-sized product team of six people blocked for a 90-day TTR at a combined €4,000/day fully loaded cost, plus a mid-range 100% replacement cost on an €80,000 dedicated-developer salary, the exposure is roughly €360,000 in blocked team capacity *plus* €80,000 in direct replacement cost — before counting a single euro of the rewrite that the Netscape-style "we can't maintain this" diagnosis (see above) often triggers. Run this calculation on your current setup. It converts an abstract engineering-culture argument into the kind of number a CFO will act on.
+
 ## Institutionalizing Knowledge
 
 At Manifera, we refuse to operate as a "body shop" that rents out solitary developers. We know that model fails the client.
@@ -115,6 +128,9 @@ Run a five-question audit scoring documentation, architecture legibility, test c
 
 ### (Scenario: CEO wondering why feature velocity has dropped) Why does a solitary dedicated developer get slower over time?
 Without a team to enforce architectural discipline, a solitary developer will take shortcuts to ship features quickly (Technical Debt). Over 6-12 months, this debt compounds. The codebase becomes fragile. Every new feature requires untangling "spaghetti code" or fixing unexpected regressions. Velocity slows to a crawl because they spend 80% of their time fighting the architecture they built.
+
+### (Scenario: CTO who assumes their setup is fine because "nothing has broken yet") Is a Bus Factor of 1 actually common, or is this a worst-case scenario being used to scare me?
+It is far more common than most engineering leaders assume — and the data comes from academic research, not anecdote. Researchers analyzing 133 popular, actively maintained GitHub projects (Avelino et al.) found that 46% had a bus factor of exactly 1, and another 28% had a bus factor of 2, meaning roughly three-quarters of well-known open-source codebases depended on one or two people. Those are public projects with community contributors and visibility pressure working in their favor. A private, solitary commercial dedicated-developer engagement, with no external reviewers and no incentive to document, typically sits in a worse position than the median project in that study, not a better one.
 
 <script type="application/ld+json">
 {
@@ -167,6 +183,14 @@ Without a team to enforce architectural discipline, a solitary developer will ta
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Run a five-question audit scoring documentation, architecture legibility, test coverage, deployment reproducibility, and credential hygiene from 0 to 5. A solitary developer typically scores near 25, meaning a Time-to-Replace of 90+ days. A well-run Pod scores close to 0 because knowledge lives in process and automation, not one person's memory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a Bus Factor of 1 actually common, or is this a worst-case scenario being used to scare me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is common, based on academic research. A study of 133 popular GitHub projects (Avelino et al.) found 46% had a bus factor of exactly 1, and another 28% had a bus factor of 2 — roughly three-quarters of well-known open-source codebases depended on one or two people. A private, solitary commercial engagement typically sits in a worse position than the median project in that study, since it lacks external reviewers and public documentation pressure."
       }
     }
   ]

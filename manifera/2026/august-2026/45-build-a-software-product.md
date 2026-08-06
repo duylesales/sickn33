@@ -16,7 +16,8 @@ Content Format: Founder Strategy & Value Engineering
   "description": "A strategic guide for founders on the difference between building a codebase and building a software product. Explores Value Engineering, the Minimum Viable Architecture, and how to avoid the 'Engineering Fetish' trap.",
   "author": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
   "publisher": {"@type": "Organization", "name": "Manifera", "url": "https://www.manifera.com"},
-  "datePublished": "2026-09-14"
+  "datePublished": "2026-09-14",
+  "dateModified": "2026-08-06"
 }
 </script>
 
@@ -38,7 +39,9 @@ The Engineering Fetish occurs when technical decisions are driven by what is mat
 
 When you hire a purely freelance offshore team without architectural governance, the Engineering Fetish runs rampant. Freelancers want to pad their resumes with the latest technologies. They will convince you that your MVP needs event-driven Kafka queues and a GraphQL federation layer, because they want to learn how to build those things on your dime.
 
-> *"Customers do not care about your tech stack. They do not care if your backend is written in Rust or PHP. They care about their problems. The best architecture is the one that solves the user's problem with the absolute minimum amount of code."* — Standard Value Engineering Principle
+Customers do not care about your tech stack. They do not care if your backend is written in Rust or PHP. They care about their problems, and the best architecture is the one that solves the user's problem with the least amount of code that still ships safely. LinkedIn co-founder Reid Hoffman put the same principle more bluntly: *"If you are not embarrassed by the first version of your product, you've launched too late."* That is not a license to ship broken software — it is a warning against the Engineering Fetish's favorite excuse for never shipping at all.
+
+CB Insights analyzed the public post-mortems of hundreds of VC-backed startups that shut down and found that poor product-market fit — building something the market did not actually need — is the single most cited failure cause, appearing in roughly 4 out of 10 shutdown stories. Notice what is absent from that list: "our Kubernetes cluster wasn't scalable enough." Startups essentially never die from under-engineering. They die from spending scarce runway validating the wrong product, and every sprint an engineering team spends on architectural elegance instead of customer validation is a sprint not spent finding out whether the product deserves to exist at all.
 
 ### Comparison: Codebase Mentality vs. Product Mentality
 
@@ -89,6 +92,16 @@ Borrowing from Martin Fowler's technical debt framework, every shortcut your tea
 
 At Manifera, our Dutch Tech Leads apply exactly this filter when reviewing Pull Requests from our Vietnamese engineering pods: not "is this code perfect," but "is this debt prudent, deliberate, and written down." A shortcut taken with eyes open and a plan to revisit it is a founder's best friend. A shortcut taken by an engineer who doesn't know it's a shortcut is how startups quietly die at month 14.
 
+## The Data Behind the Engineering Fetish: Why Complexity, Not Simplicity, Is the Riskier Bet
+
+Founders who push back against the MVA often frame it as a risk-management question: "Isn't the simple version the risky one? What if it can't scale?" The data says the opposite. Complexity is the thing that reliably kills software projects — scale is a problem you are lucky to eventually have.
+
+**The project-size effect is the clearest evidence.** The Standish Group's long-running CHAOS Research — which has tracked tens of thousands of IT projects since the 1990s — consistently finds that project outcomes correlate strongly with size and complexity: small, tightly scoped projects succeed at roughly 90%, while large, architecturally ambitious projects succeed at under 10%. Across the full dataset, only around 31% of IT projects are rated fully "successful" (delivered on time, on budget, with the required features), roughly half are "challenged" (late, over budget, or missing scope), and the remainder are outright failed or cancelled. A founder choosing between a monolith shippable in six weeks and a microservices architecture that will take six months is not choosing between "safe and risky" — they are choosing between the 90% success bracket and the under-10% bracket.
+
+**The ongoing-cost effect compounds it.** Stripe's Developer Coefficient study — one of the largest surveys of its kind, covering more than 1,000 developers and 1,000 C-level executives across five countries — found that engineers spend an average of 42% of their working week (17.3 of 41.1 hours) on maintenance and "bad code" rather than building anything new, a drag the report estimated at roughly $85 billion in lost global productivity annually. Every unnecessary abstraction, premature microservice, or resume-driven dependency a team adds during the MVA phase becomes part of that 42% for the entire life of the product. Complexity is not a one-time cost paid at build time; it is a recurring tax paid every sprint afterward, by every engineer who has to hold the extra moving parts in their head before they can safely change anything.
+
+**What this means in practice:** when a Vietnamese engineering pod proposes an architecture, the question a founder or Dutch Tech Lead should ask is not "will this scale to 10 million users" but "does this specific piece of complexity earn its place in this specific product, today, for these specific users." If the honest answer is "it might be useful eventually," that is precisely the kind of speculative complexity the CHAOS data says correlates with project failure, not success.
+
 ## The Manifera Approach to Product Engineering
 
 At Manifera, we specialize in helping founders and enterprise innovators **build a software product**. 
@@ -122,6 +135,9 @@ In software, 80% of the value comes from the "happy path" (normal user behavior)
 
 ### (Scenario: Founder debating whether to approve a shortcut) Is taking on "technical debt" always a bad sign from my engineering team?
 No. Technical debt is only dangerous when it is reckless or inadvertent (the team doesn't realize it's cutting a corner). Deliberate, prudent debt — a documented shortcut taken knowingly to hit a revenue deadline, with a plan to fix it later — is a core Value Engineering tool. Ask your team to keep a simple "Debt Ledger" of every deliberate shortcut and review it quarterly; that single habit is what separates founders who scale cleanly from those who get buried by month 14.
+
+### (Scenario: Board member questioning a lean architecture decision) Is a simple MVA actually riskier than building for scale from day one?
+The data says the opposite. The Standish Group's long-running CHAOS Research on IT project outcomes shows small, tightly scoped projects succeed roughly 90% of the time, while large, architecturally ambitious ones succeed under 10% of the time. Complexity, not simplicity, is what correlates with project failure. A lean MVA is not a corner cut for expediency — it is statistically the safer bet.
 
 <script type="application/ld+json">
 {
@@ -174,6 +190,14 @@ No. Technical debt is only dangerous when it is reckless or inadvertent (the tea
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No. Debt is only dangerous when it is reckless or inadvertent. Deliberate, prudent debt taken knowingly to hit a revenue deadline, and tracked in a Debt Ledger, is a core Value Engineering tool that separates founders who scale cleanly from those buried by hidden shortcuts later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a simple MVA actually riskier than building for scale from day one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, the data shows the opposite. The Standish Group's CHAOS Research on IT project outcomes finds small, tightly scoped projects succeed roughly 90% of the time, while large, architecturally ambitious projects succeed under 10% of the time. Complexity correlates with project failure far more than simplicity does, making a lean Minimum Viable Architecture the statistically safer choice, not a corner cut."
       }
     }
   ]
