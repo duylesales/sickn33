@@ -74,6 +74,16 @@ The illusion of cheap outsourcing is the hourly rate. The reality of cheap outso
 
 By investing in Manifera's Hybrid Hub, you transition from purchasing transient labor to investing in permanent infrastructure. Our European governance ensures your architecture is flawless, while our Vietnamese execution hubs ensure your burn rate remains highly competitive. You stop paying for technical debt and start building enterprise equity.
 
+## The First 90 Days: De-Risking the Engagement Before You Commit
+
+The single biggest objection CIOs raise about application development outsourcing is trust: how do you know a new vendor won't become the next body-shop horror story before you've signed a multi-year contract? Manifera answers this with a structured, staged onboarding that lets you exit cheaply at every checkpoint if the quality bar isn't met.
+
+- **Days 1-15, Architectural Discovery:** Our Dutch Architects audit your existing systems, specification documents, and infrastructure at a fixed fee, not open-ended hours. The deliverable is a written Risk Register listing every architectural flaw, security gap, and scalability bottleneck we find, before a single line of new code is written. You keep this document regardless of whether you proceed.
+- **Days 16-45, Pilot Pod Sprint:** Rather than deploying a full team on faith, we stand up a small 2-3 person Vietnamese Pod to build one limited-scope module end-to-end (for example, a single authentication service or reporting API) under full CI/CD governance. You watch the actual deployment frequency, test coverage, and code review discipline in real time on a real deliverable.
+- **Days 46-90, The Scale Gate:** The engagement only expands to a full Autonomous Pod if the pilot clears defined quality gates: minimum 80% automated test coverage, zero critical security vulnerabilities, and on-time delivery against the sprint plan. If the pilot fails these gates, you walk away having spent a small fraction of a full annual commitment, with working code and full documentation already in hand.
+
+This staged structure inverts the traditional outsourcing risk profile. Instead of discovering twelve months in that your offshore vendor cannot deliver, you know within 90 days, at a fraction of the cost, whether the architecture and the team are genuinely enterprise-grade.
+
 ## Stop Renting Mercenaries. Build a Foundation.
 
 Do not hand your most critical application to a body-shop that cannot explain their CI/CD pipeline. If your current outsourcing vendor does not provide elite, European-level architectural oversight, your codebase is actively decaying. Contact Manifera today to transition to a secure Hybrid Engineering Hub.
@@ -98,6 +108,9 @@ Your contract is held by Manifera's Dutch entity, ensuring strict EU legal prote
 
 ### (Scenario: VP of Engineering managing offshore teams) We always struggle with communication and code quality with offshore teams. How does Manifera fix this?
 We eliminate the communication gap by placing elite Dutch Architects in the middle. They translate your business goals into highly precise, mathematical engineering blueprints. Our Vietnamese Pods execute these blueprints natively. Because both layers communicate through the universal language of hardcore architecture, cultural friction is entirely eradicated.
+
+### (Scenario: CIO nervous about long-term vendor commitment) How do we test Manifera's quality before committing to a long-term outsourcing contract?
+We use a staged 90-day onboarding: a fixed-fee Architectural Discovery producing a written Risk Register, followed by a small Pilot Pod Sprint building one real module under full CI/CD governance, followed by a Scale Gate requiring 80% test coverage and zero critical vulnerabilities before the engagement expands. You can exit cheaply at any checkpoint.
 
 <script type="application/ld+json">
 {
@@ -142,6 +155,14 @@ We eliminate the communication gap by placing elite Dutch Architects in the midd
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Dutch Architects act as the bridge, translating business goals into precise engineering blueprints. This eliminates cultural friction, as both layers communicate through the universal language of strict architecture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CIO nervous about long-term vendor commitment) How do we test Manifera's quality before committing to a long-term outsourcing contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We use a staged 90-day onboarding: a fixed-fee Architectural Discovery producing a written Risk Register, a Pilot Pod Sprint building one real module under full CI/CD governance, and a Scale Gate requiring 80% test coverage and zero critical vulnerabilities before expanding."
       }
     }
   ]

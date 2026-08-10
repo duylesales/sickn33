@@ -72,6 +72,17 @@ When you commission bespoke software, the visible features (the buttons and dash
 
 By partnering with Manifera's Hybrid Hub, you invest in that 90%. Our European architectural governance ensures your software is a secure, extensible asset that actively increases your corporate valuation. Our highly economical Vietnamese execution hubs ensure that building this asset remains incredibly cost-effective. You stop buying disposable code and start building enterprise equity.
 
+## The Ownership Trap: Why the Contract Determines the Asset, Not Just the Code
+
+Even flawless architecture is worthless as a corporate asset if your company doesn't unambiguously own it. This is the failure mode CFOs rarely think to check until an M&A lawyer flags it: the code is excellent, but the paperwork never actually assigned the intellectual property to the client.
+
+Two contractual gaps destroy asset value most often:
+
+- **Missing IP Assignment Clauses:** Many outsourcing contracts are structured as a service license rather than a "work made for hire" with an explicit IP assignment clause. Without that clause, the development vendor may retain underlying rights to reusable components, frameworks, or even the core codebase. An acquirer's legal team will flag this instantly and discount the valuation until it's resolved. Every Manifera engagement includes an unambiguous IP assignment clause transferring 100% of the source code, documentation, and architecture diagrams to the client upon payment.
+- **Undocumented Open-Source Dependencies:** Bespoke applications are never built from scratch; they lean on open-source libraries. If a component is licensed under a restrictive copyleft license (like AGPL), it can legally obligate you to open-source your own proprietary code, an outcome that can quietly poison an entire acquisition. We generate a full Software Bill of Materials (SBOM) for every bespoke application, cataloguing every dependency and its license, so legal teams can verify clean IP provenance in minutes instead of months. In one recent client audit prior to onboarding, 40% of a legacy application's dependencies carried no documented license at all.
+
+We also maintain a source code escrow arrangement for enterprise clients: a third-party legal custodian holds a current copy of the codebase and documentation, released to the client automatically if Manifera ever ceased operations. This closes the final gap between "we wrote good code" and "you own a defensible, transferable corporate asset."
+
 ## Stop Buying Code. Start Building Assets.
 
 Do not let an agency build a disposable application that will destroy your valuation during a future audit. If your bespoke software is not engineered with an API-First architecture and automated CI/CD pipelines, you are wasting capital. Contact Manifera today to build a mathematically secure, scalable software asset.
@@ -96,6 +107,9 @@ By utilizing Manifera's Hybrid Hub. You present your investors with architectura
 
 ### (Scenario: VP of Engineering managing technical debt) How does Manifera ensure the code written in Vietnam meets these strict European standards?
 We do not rely on hope; we rely on automated mathematics. Our Dutch Architects build automated CI/CD pipelines that mathematically reject code that does not meet strict test coverage and security standards. The Vietnamese Pods must operate within these pristine boundaries, ensuring flawless execution.
+
+### (Scenario: General Counsel reviewing vendor contracts) Does our development contract guarantee we actually own 100% of the bespoke code?
+Only if it contains an explicit IP assignment clause, not just a service license. Many outsourcing contracts quietly let the vendor retain rights to reusable components. Every Manifera engagement assigns 100% of source code, documentation, and architecture to the client, backed by a full Software Bill of Materials auditing every open-source dependency's license and a source code escrow arrangement for added protection.
 
 <script type="application/ld+json">
 {
@@ -140,6 +154,14 @@ We do not rely on hope; we rely on automated mathematics. Our Dutch Architects b
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our Dutch Architects enforce strict automated CI/CD pipelines that mathematically reject substandard code. The Vietnamese Pods must operate within these pristine boundaries, ensuring execution meets elite European standards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: General Counsel reviewing vendor contracts) Does our development contract guarantee we actually own 100% of the bespoke code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if it contains an explicit IP assignment clause rather than just a service license. Every Manifera engagement assigns 100% of source code, documentation, and architecture to the client, backed by a Software Bill of Materials and a source code escrow arrangement."
       }
     }
   ]

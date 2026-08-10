@@ -74,6 +74,17 @@ True innovation in software requires the freedom to fail. If an experimental fea
 
 By utilizing Manifera's Hybrid Hub, you drastically lower the financial and operational risk of R&D. Our European architects construct the safe perimeter, allowing our highly economical Vietnamese engineering pods to build, test, and discard experimental features rapidly. You achieve the high-velocity innovation required to beat your competitors, without ever risking the Total Cost of Ownership (TCO) of your core business engine.
 
+## Innovation Accounting: Kill Criteria Before You Build
+
+Architectural isolation via the Strangler Fig pattern solves the *technical* risk of innovation, but it does not solve the *financial* risk of building features nobody wants. Enterprises frequently confuse "we shipped it safely" with "it was worth shipping." Manifera pairs every innovation microservice with a lightweight Innovation Accounting protocol, borrowed from lean startup discipline but adapted for enterprise governance:
+
+- **A fixed pilot window, not an open-ended budget.** Before a single line of code is written, our Dutch Architects and your Head of Innovation jointly define a hard 6-to-8 week pilot window and a specific success metric (e.g., "15% of active users engage with the AI insights panel at least once a week").
+- **Pre-agreed kill criteria.** Just as important as the success metric is defining, in writing, what failure looks like *before* the pilot launches—for example, "if weekly engagement is below 5% at week 6, the feature is decommissioned, not extended." This prevents the common enterprise failure mode where a pet project survives on political momentum long after the data says to stop.
+- **A decommissioning plan baked into the architecture.** Because the feature was built as an isolated microservice behind the API gateway from day one, killing it is a configuration change, not a surgical extraction. The gateway simply stops routing to the dead service, and it is decommissioned without touching the legacy core or any other feature.
+- **Scale-up criteria for the winners.** For pilots that clear the success bar, we define in advance what "graduating" looks like: moving from a single-instance experimental container to a fully redundant, auto-scaled deployment with production-grade monitoring and an SLA.
+
+This protocol reframes innovation spend from an open-ended cost center into a disciplined portfolio of small, time-boxed bets—exactly the mindset your CFO needs to keep approving R&D budget year after year, because every dollar has a predefined exit ramp.
+
 ## Stop Hacking Legacy Code. Architect for Innovation.
 
 Do not let arbitrary deadlines force your developers to bolt fragile features onto your critical legacy systems. If your current agency cannot explain the Strangler Fig pattern, they are putting your enterprise at risk. Contact Manifera today to build a secure, high-velocity innovation pipeline.
@@ -98,6 +109,9 @@ Your internal team is already overwhelmed maintaining the legacy core; forcing t
 
 ### (Scenario: CFO analyzing Capital Expenditure) How does the Strangler Fig pattern lower the TCO of modernization?
 A "big bang" rewrite of a legacy system is a massive, high-risk CAPEX bet that frequently fails. The Strangler Fig pattern allows you to modernize incrementally. You only pay for the specific microservices you need right now, spreading the cost over time and ensuring immediate ROI on every deployed feature.
+
+### (Scenario: Head of Innovation justifying R&D spend to the board) How do you decide when to kill an experimental feature instead of letting it drag on?
+We define pre-agreed kill criteria before the pilot ever launches: a fixed 6-to-8 week window, a specific success metric like weekly engagement rate, and a written threshold for failure. Because the feature is an isolated microservice behind the API gateway, killing it is a simple configuration change, not a risky extraction from the core.
 
 <script type="application/ld+json">
 {
@@ -142,6 +156,14 @@ A "big bang" rewrite of a legacy system is a massive, high-risk CAPEX bet that f
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "A 'big bang' rewrite is a massive, high-risk CAPEX bet. The Strangler Fig allows incremental modernization, spreading the cost over time and ensuring immediate ROI on every safely deployed microservice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Head of Innovation justifying R&D spend to the board) How do you decide when to kill an experimental feature instead of letting it drag on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We define kill criteria before the pilot launches: a fixed 6-to-8 week window, a specific success metric, and a written failure threshold. Because the feature is an isolated microservice, killing it is a simple configuration change, not a risky extraction."
       }
     }
   ]

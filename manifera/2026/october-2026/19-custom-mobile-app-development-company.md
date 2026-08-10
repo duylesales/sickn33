@@ -78,6 +78,24 @@ Elite vendors implement strict, unidirectional state management architectures (l
 
 *   **The ROI:** If a bug occurs in production, it is 100% reproducible. The development team can look at the exact sequence of Events that led to the crash, drastically reducing the time required to debug and deploy a hotfix.
 
+## Enforcing the Boundaries: Automated Architecture Tests
+
+Drawing a clean module diagram on a whiteboard is easy. Keeping the actual codebase honest to that diagram, six months later, under deadline pressure, with fifteen developers touching it, is the part amateur vendors never solve. This is where "Domain-Driven Design" either becomes a permanent structural guarantee or quietly decays back into a monolith.
+
+### The Pain: Architectural Drift
+
+A vendor delivers a beautifully modularized app in month one. By month eight, a developer under deadline pressure needs the "Chat" module to quickly check a user's subscription tier, which technically lives in the "Payments" module. Rather than going through the proper Repository interface, they take a shortcut and import the Payments module directly. Nothing breaks immediately. But six more shortcuts like this accumulate over the following year, and the "isolated modules" your enterprise paid a premium for have quietly become a tangled web again — just one that still *looks* modular in the folder structure.
+
+### The Fix: Compile-Time and CI-Enforced Dependency Rules
+
+Elite vendors do not rely on code review discipline alone to prevent this drift, because human reviewers get tired and miss things under deadline pressure. They mechanically enforce module boundaries so that a violation cannot merge at all:
+
+*   **Module-Level Build Boundaries:** On Android, this means genuinely separate Gradle modules where the build system itself refuses to compile if the Chat module's `build.gradle` declares a dependency on Payments' internal package. On iOS/Swift, this means separate Swift Packages with explicitly scoped `public` versus `internal` access, so a forbidden import fails at compile time, not at code review.
+*   **Automated Architecture Fitness Functions:** Tools like ArchUnit (JVM/Kotlin) or Swift's own access control combined with dependency-graph linters run as a mandatory CI check on every Pull Request, scanning the actual import graph and failing the build the instant a new cross-module dependency violates the approved architecture diagram.
+*   **A Living Dependency Graph:** The CI pipeline generates a visual dependency graph on every merge, so the CTO or Lead Architect can see, at a glance, whether the codebase still matches the DDD boundaries agreed at kickoff — rather than discovering the drift eighteen months later during a failed scaling attempt.
+
+Ask a prospective vendor one direct question during due diligence: "What happens in your CI pipeline if a developer imports Module A directly into Module B in violation of your architecture?" If the honest answer is "a code reviewer is supposed to catch that," the architecture is a policy, not a guarantee, and it will erode exactly when you need it most — under scaling pressure.
+
 ## Upgrading Your Engineering Partner
 
 If your mobile app's development velocity is slowing down while the bug count is rising, your current vendor has hit their architectural ceiling. You are trapped in a monolith.
@@ -104,6 +122,9 @@ Only if they operate at a CTO-level. Cheap offshore agencies (body shops) only k
 
 ### 5. (Scenario: CISO) Does a modular architecture improve the security of the mobile app?
 Significantly. In a monolithic app, any compromised third-party library has access to the entire application's memory space. In a strictly modular app, you can enforce the Principle of Least Privilege at the module level. A third-party analytics SDK installed in the "Marketing" module cannot physically access the memory heap of the "Payments" module, dramatically reducing the blast radius of a vulnerability.
+
+### 6. (Scenario: Lead Architect) How do we stop the modular architecture from decaying back into a monolith over time?
+You enforce the module boundaries mechanically, not just through code review. Elite vendors use build-system-level separation (separate Gradle modules on Android, separate Swift Packages on iOS with strict access control) combined with automated CI checks, like ArchUnit or dependency-graph linters, that fail the Pull Request the instant a developer creates a forbidden cross-module import. This turns the architecture diagram into a compile-time guarantee instead of a policy that quietly erodes under deadline pressure.
 
 <script type="application/ld+json">
 {
@@ -148,6 +169,14 @@ Significantly. In a monolithic app, any compromised third-party library has acce
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Significantly. In a monolithic app, any compromised third-party library has access to the entire application's memory space. In a strictly modular app, you can enforce the Principle of Least Privilege at the module level. A third-party analytics SDK installed in the \"Marketing\" module cannot physically access the memory heap of the \"Payments\" module, dramatically reducing the blast radius of a vulnerability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Lead Architect) How do we stop the modular architecture from decaying back into a monolith over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You enforce the module boundaries mechanically, not just through code review. Elite vendors use build-system-level separation (separate Gradle modules on Android, separate Swift Packages on iOS with strict access control) combined with automated CI checks, like ArchUnit or dependency-graph linters, that fail the Pull Request the instant a developer creates a forbidden cross-module import. This turns the architecture diagram into a compile-time guarantee instead of a policy that quietly erodes under deadline pressure."
       }
     }
   ]

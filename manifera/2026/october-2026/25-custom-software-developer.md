@@ -72,6 +72,26 @@ Amateur developers assume networks are perfect. Elite engineers assume the netwo
 
 When an elite engineer builds an API endpoint that charges a credit card, they make the endpoint "Idempotent." This means that if the user's internet connection drops and they accidentally tap the "Pay" button four times, the backend code mathematically recognizes it as the same transaction and only charges the card once. The engineer does not trust the UI; they enforce safety at the mathematical layer.
 
+## The Engineer's Mindset Under Concurrency: Race Conditions and Locking
+
+There is one failure mode that separates elite engineers from senior-looking coders faster than any other: what happens when two operations touch the same piece of data at the exact same millisecond.
+
+### The Pain: The Phantom Inventory Bug
+
+Imagine an e-commerce warehouse system with exactly one unit of a product left in stock. Two customers click "Buy Now" within 50 milliseconds of each other. An amateur developer's code reads the stock count (1), checks that it is greater than zero, then writes the new count (0) back to the database — for both requests, independently. Both purchases succeed. You have now sold one physical item to two different customers, triggering refunds, apology emails, and a support escalation.
+
+This is a "race condition": the bug does not appear in testing (where one developer clicks one button), only in production under real concurrent load, which is exactly why amateur coders never catch it and elite engineers assume it by default.
+
+### The Fix: Locking Strategies as a Design Decision, Not an Afterthought
+
+An elite custom software developer treats concurrency control as a deliberate architectural choice made at design time, not a patch applied after a bug report:
+
+*   **Pessimistic Locking:** The database row is locked (`SELECT ... FOR UPDATE`) the moment the first request reads it, forcing the second request to wait its turn. Correct for high-contention, low-frequency operations like inventory decrements or seat reservations.
+*   **Optimistic Locking:** Instead of locking anything, every row carries a `version` integer. The update query includes `WHERE version = 5`, and if another process already changed the row (making the version 6), the write fails and the application safely retries. This scales far better for high-throughput systems where most writes do not actually collide.
+*   **Compare-And-Swap (CAS) Operations:** At the lowest level, elite engineers use atomic CPU-level instructions (available in Redis's `INCR`, or language primitives like Java's `AtomicInteger`) to guarantee that a read-modify-write sequence cannot be interrupted by another thread, eliminating the race condition mathematically rather than defensively.
+
+A senior technical interview should always include one concurrency scenario. If a candidate cannot explain the difference between optimistic and pessimistic locking, or describe what a deadlock is and how to prevent one (consistent lock ordering), they have not yet operated at production scale with real concurrent traffic — regardless of how many years are on their CV.
+
 ## Procuring Elite Talent
 
 Do not hire offshore developers based on what frameworks are listed on their CV. Frameworks change every three years. Hire based on computer science fundamentals, which never change.
@@ -98,6 +118,9 @@ Because the industry has been flooded with "bootcamp" graduates. Bootcamps teach
 
 ### 5. (Scenario: CEO) Does an "Elite Software Engineer" cost significantly more than a standard coder?
 Yes, their hourly rate is typically 30-50% higher. However, their Total Cost of Ownership (TCO) is massively lower. One elite engineer can architect a data pipeline in three days that runs flawlessly for five years. Three amateur coders will spend a month building a fragile pipeline that crashes every weekend, costing you 10x more in emergency support and lost revenue over a year.
+
+### 6. (Scenario: CTO investigating a double-charge bug) Our system oversold inventory during a flash sale. What went wrong?
+This is a classic race condition: two concurrent requests both read the same stock count before either one wrote the update back, so both purchases were approved against a single unit of inventory. The fix is not "add more testing," it is a concurrency control strategy — either pessimistic locking (`SELECT ... FOR UPDATE`) to serialize access during high-contention checkouts, or optimistic locking with a row version number so a colliding second write fails safely and retries. An elite engineer designs this in from day one rather than patching it after the incident.
 
 <script type="application/ld+json">
 {
@@ -142,6 +165,14 @@ Yes, their hourly rate is typically 30-50% higher. However, their Total Cost of 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, their hourly rate is typically 30-50% higher. However, their Total Cost of Ownership (TCO) is massively lower. One elite engineer can architect a data pipeline in three days that runs flawlessly for five years. Three amateur coders will spend a month building a fragile pipeline that crashes every weekend, costing you 10x more in emergency support and lost revenue over a year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO investigating a double-charge bug) Our system oversold inventory during a flash sale. What went wrong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a classic race condition: two concurrent requests both read the same stock count before either one wrote the update back, so both purchases were approved against a single unit of inventory. The fix is not \"add more testing,\" it is a concurrency control strategy — either pessimistic locking (SELECT ... FOR UPDATE) to serialize access during high-contention checkouts, or optimistic locking with a row version number so a colliding second write fails safely and retries. An elite engineer designs this in from day one rather than patching it after the incident."
       }
     }
   ]

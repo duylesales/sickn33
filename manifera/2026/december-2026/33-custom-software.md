@@ -72,6 +72,17 @@ Enterprise SaaS is essentially a permanent, compounding tax. You pay millions in
 
 By investing in custom software through Manifera's Hybrid Hub, you transition your software spend from a rented expense to an owned asset. The elite European governance guarantees your security and compliance, while the Vietnamese execution ensures the build is financially sustainable. You eliminate vendor lock-in, secure your data sovereignty, and build lasting corporate equity.
 
+## The Core vs. Context Framework: A Decision Checklist
+
+Not every system in your enterprise deserves the "Build" treatment, and pretending otherwise wastes capital just as badly as over-relying on SaaS. Manifera's Dutch Architects run every application through a "Core vs. Context" framework before recommending a Build or Buy decision, scoring each candidate system against four questions:
+
+1. **Does it touch regulated or sensitive data?** If the system processes EU citizen PII, health records, or financial data subject to strict Data Sovereignty rules, it leans decisively toward Build, regardless of cost, because the compliance exposure of a multi-tenant breach is existential.
+2. **Is it a source of competitive differentiation?** If the system encodes proprietary business logic, pricing algorithms, or workflows your competitors cannot replicate, it belongs in "Core" and should be built and owned. If it is a commodity function every company in your industry needs identically (payroll, expense reporting, internal chat), it belongs in "Context" and should be bought.
+3. **What is the true multi-year TCO crossover point?** We model SaaS per-seat licensing growth against Manifera's Hybrid Hub build-and-maintain cost over a 3-to-5-year horizon. If the SaaS platform's compounding fees cross the custom build's TCO within that window, Build wins financially, not just architecturally.
+4. **Can the SaaS vendor contractually guarantee your specific compliance requirement?** If a vendor cannot offer a signed Data Processing Addendum with hard geographic guarantees matching your regulatory obligation, no amount of cost savings justifies the risk—this alone forces a Build decision.
+
+A system scoring "Build" on even one of these four dimensions typically warrants custom software. A system scoring "Buy" on all four is exactly the kind of commoditized function we recommend leaving to specialized SaaS vendors, so your Manifera engineering budget stays focused on the applications that actually differentiate your enterprise.
+
 ## Stop Renting Your Security. Build Your Perimeter.
 
 Do not let a third-party SaaS vendor dictate the security and sovereignty of your most critical data. If your current software strategy relies entirely on multi-tenant black boxes, your enterprise is exposed. Contact Manifera today to build a custom, secure, and legally bulletproof architecture.
@@ -96,6 +107,9 @@ If a SaaS vendor encrypts your data, they hold the key. If they are subpoenaed o
 
 ### (Scenario: CFO comparing long-term costs) Doesn't custom software require expensive ongoing maintenance?
 Yes, but the TCO of Manifera's Hybrid Hub maintenance is vastly lower than compounding Enterprise SaaS licensing fees (which increase every year based on per-user pricing). Furthermore, because our Dutch Architects enforce pristine code quality and automated testing, the maintenance required by our Vietnamese Pods is highly efficient and predictable.
+
+### (Scenario: CIO deciding case-by-case) Is there a repeatable framework for deciding which systems to Build vs. Buy?
+Yes. We score each candidate system against four questions: does it touch regulated data, is it a source of competitive differentiation, does the multi-year TCO crossover favor building, and can a SaaS vendor contractually guarantee your specific compliance requirement. Scoring "Build" on even one dimension typically warrants custom software.
 
 <script type="application/ld+json">
 {
@@ -140,6 +154,14 @@ Yes, but the TCO of Manifera's Hybrid Hub maintenance is vastly lower than compo
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The maintenance via Manifera's Hybrid Hub is vastly cheaper than compounding per-user SaaS licensing fees. Pristine architectural quality ensures maintenance is highly efficient and predictable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CIO deciding case-by-case) Is there a repeatable framework for deciding which systems to Build vs. Buy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We score each system against four questions: regulated data exposure, competitive differentiation, multi-year TCO crossover, and whether a SaaS vendor can contractually guarantee your compliance requirement. Scoring Build on even one dimension typically warrants custom software."
       }
     }
   ]

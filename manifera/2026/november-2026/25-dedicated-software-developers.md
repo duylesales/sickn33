@@ -71,6 +71,18 @@ They transitioned to Manifera. Governed by Amsterdam, we dockerized their comple
 | **Domain Knowledge Transfer** | Strains internal CTO/Tech Leads | Handled seamlessly by Amsterdam Architects |
 | **Documentation State** | Relies on tribal knowledge | Automated via Swagger / Storybook |
 
+## Before Day Zero: How a Developer Earns a Seat on Your Pod
+
+Deterministic environments solve the technical onboarding problem. But there is an earlier, equally important question most VPs of Engineering forget to ask: what happened before this developer was ever offered to you? A pristine Docker container does nothing to fix a mediocre engineer — it just lets them ship mediocre code faster.
+
+**The Vetting Funnel.** Every engineer who eventually joins a Manifera Autonomous Pod passes through a four-stage filter: an initial technical screening covering data structures and system design fundamentals, a live pair-programming session where we deliberately observe how the candidate handles an ambiguous, under-specified requirement, a take-home architecture exercise reviewed by a senior Dutch Tech Lead, and a final culture and communication interview assessing how clearly they explain technical tradeoffs in written English. Candidates who pass all four stages represent a small fraction of those who apply — the majority are filtered out before ever reaching a client engagement.
+
+**Bench Strength, Not Cold Hiring.** Because Manifera maintains a standing bench of pre-vetted engineers in Ho Chi Minh City rather than hiring reactively per contract, when you request a dedicated developer with specific skills (say, a senior Golang engineer with Kafka experience), we are matching you against an already-vetted pool — not posting a job ad and hoping for the best after you've signed.
+
+**The Underperformance Safety Net.** No vetting process is infallible, and a developer who interviews well can still be a poor fit for your specific codebase or working style. Our engagements include a defined replacement window during the first 30 days: if a Tech Lead or client flags underperformance, we swap the developer at no additional cost and with minimal disruption to the Pod's ongoing work, because the surrounding team structure and domain context persist independent of any one individual.
+
+This is the layer of quality control that happens entirely before the deterministic onboarding process even begins — and it is the reason the fast onboarding described above results in fast, correct code, not just fast code.
+
 ## Eradicate Onboarding Friction Instantly
 
 Stop paying offshore agencies thousands of dollars to figure out how to install your database. If you are a VP of Engineering who demands instant ROI and mathematically deterministic onboarding, you need an engineering partner that operates at the highest level of DevOps automation.
@@ -95,6 +107,9 @@ It actually enhances it. With standard laptops, your source code is physically d
 
 ### (Scenario: Lead Developer reviewing UI code) How do you onboard developers onto a massive, undocumented Frontend repository?
 We mandate the use of Component-Driven Development using tools like Storybook. Instead of forcing a new developer to hunt through thousands of files to understand how a 'Button' is styled, Storybook provides an isolated, interactive sandbox of every UI component. The developer visually understands the design system instantly, accelerating feature delivery.
+
+### (Scenario: VP of Engineering vetting talent quality) What happens if an assigned dedicated developer turns out to be a poor fit?
+Every engineer passes a four-stage vetting funnel before ever joining a Pod, including live pair-programming and a senior Tech Lead review, and we maintain a standing bench of pre-vetted talent rather than hiring reactively. If underperformance is flagged within the first 30 days, we replace the developer at no additional cost with minimal disruption to the Pod's ongoing work.
 
 <script type="application/ld+json">
 {
@@ -139,6 +154,14 @@ We mandate the use of Component-Driven Development using tools like Storybook. I
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We mandate the use of Component-Driven Development using tools like Storybook. Instead of forcing a new developer to hunt through thousands of files to understand how a 'Button' is styled, Storybook provides an isolated, interactive sandbox of every UI component. The developer visually understands the design system instantly, accelerating feature delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: VP of Engineering vetting talent quality) What happens if an assigned dedicated developer turns out to be a poor fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every engineer passes a four-stage vetting funnel before ever joining a Pod, including live pair-programming and a senior Tech Lead review, and we maintain a standing bench of pre-vetted talent rather than hiring reactively. If underperformance is flagged within the first 30 days, we replace the developer at no additional cost with minimal disruption to the Pod's ongoing work."
       }
     }
   ]

@@ -72,6 +72,18 @@ When you maintain a monolithic web application, you are paying a massive "fricti
 
 By investing in Manifera's Hybrid Hub, you transition to a Micro-Frontend architecture. Our European governance ensures the system is physically decoupled, allowing our highly economical Vietnamese engineering pods to work in perfect, frictionless parallel. You stop paying for architectural bottlenecks and start paying for pure, uninterrupted feature delivery.
 
+## Compliance by Architecture: Meeting the European Accessibility Act Module by Module
+
+Since June 2025, the European Accessibility Act (EAA) has made WCAG 2.2 AA compliance a legal requirement, not a nice-to-have, for any digital product serving EU consumers, with national regulators empowered to fine non-compliant platforms. This is where the Monolith-vs-Micro-Frontend decision stops being a performance question and becomes a legal one.
+
+In a monolithic SPA, accessibility is an all-or-nothing gamble. A single missing ARIA label or a failed color-contrast check can force an audit of the entire 15MB bundle, and every fix risks destabilizing unrelated screens because everything shares one build. In a Micro-Frontend architecture, accessibility becomes a per-module, continuously enforced discipline instead of a annual fire drill:
+
+- **Automated Gate in CI/CD:** Our Amsterdam architects wire an automated accessibility scanner (built on the axe-core engine) directly into each Micro-Frontend's pipeline. A pull request that introduces a contrast ratio below 4.5:1, a missing keyboard focus state, or an unlabeled interactive element is blocked before it ever reaches production.
+- **Independent Certification:** Because "Billing" and "Reporting" are separate codebases, each module can be individually certified against EN 301 549 (the technical standard underlying the EAA) on its own schedule, without re-testing the entire application every time one team ships a change.
+- **Isolated Remediation:** If a regulator or user flags an accessibility defect in one module, our Vietnamese Pods can patch that specific Micro-Frontend and redeploy it in isolation, with zero risk of touching, breaking, or needing to retest the other modules.
+
+This is the quiet second dividend of decoupling your frontend: the same architecture that fixed your Core Web Vitals also turns legal compliance from a terrifying, whole-application liability into a routine, module-level engineering task.
+
 ## Stop Freezing the Browser. Architect for Speed.
 
 Do not let an agency build a massive, fragile JavaScript monolith that destroys your user experience and blocks your engineering velocity. If your web app takes more than 2 seconds to become interactive, your architecture is obsolete. Contact Manifera today to decouple your frontend and achieve enterprise scale.
@@ -96,6 +108,9 @@ This is where European Governance is critical. Our Dutch Architects build a cent
 
 ### (Scenario: CFO auditing IT velocity) How does decoupling the frontend actually save the company money?
 In a monolith, adding a new feature takes weeks because developers constantly step on each other's code, causing merge conflicts and deployment delays. Micro-Frontends allow Manifera's Vietnamese Pods to work entirely in parallel without friction. You double your feature output speed without doubling your engineering budget.
+
+### (Scenario: Legal/Compliance Officer assessing EAA risk) Does our web application need to comply with the European Accessibility Act, and how does architecture affect that?
+Since June 2025, the EAA legally requires WCAG 2.2 AA / EN 301 549 compliance for EU-facing digital products. In a monolith, one accessibility defect forces a full-application audit. In our Micro-Frontend architecture, each module is scanned automatically in CI/CD and can be certified and remediated independently, turning compliance into a routine task instead of a legal fire drill.
 
 <script type="application/ld+json">
 {
@@ -140,6 +155,14 @@ In a monolith, adding a new feature takes weeks because developers constantly st
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Monoliths cause massive developer friction and merge conflicts. Micro-Frontends allow our Vietnamese Pods to work in parallel isolation, doubling feature velocity and drastically improving the ROI of your engineering spend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: Legal/Compliance Officer assessing EAA risk) Does our web application need to comply with the European Accessibility Act, and how does architecture affect that?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Since June 2025, the EAA legally requires WCAG 2.2 AA / EN 301 549 compliance for EU-facing digital products. In a monolith, one defect forces a full-application audit. In our Micro-Frontend architecture, each module is scanned automatically in CI/CD and certified independently, turning compliance into a routine task."
       }
     }
   ]

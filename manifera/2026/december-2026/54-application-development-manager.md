@@ -72,6 +72,16 @@ Paying an Application Development Manager €100,000+ a year to manually review 
 
 By partnering with Manifera's Hybrid Hub, you automate the friction. Our European architects build the CI/CD pipelines that enforce quality mathematically, while our Vietnamese execution pods deliver pristine code that doesn't require micro-management. You elevate your manager back to a strategic position, unlocking their ability to drive true innovation and maximize the ROI of your engineering department.
 
+## The 70-20-10 Reallocation: Where the Freed-Up Hours Actually Go
+
+Removing 36 hours a week of manual QA and Jira triage from a manager's calendar is only half the equation. Without a deliberate structure for that reclaimed time, many managers simply drift back into micro-management out of habit. Manifera prescribes a concrete 70-20-10 time allocation model to every Application Development Manager we work alongside:
+
+- **70% Architecture and Roadmap:** The bulk of the week is spent on forward-looking systems work: evaluating whether a service should be split out of the monolith, sizing the next quarter's cloud spend, reviewing the Dutch Architects' proposed data model changes, and aligning the technical roadmap with the CFO's budget cycle.
+- **20% Mentorship and Career Growth:** A fixed block, protected on the calendar, goes to one-on-ones focused on the *career* of each team member rather than the status of their current ticket—discussing skill gaps, promotion readiness, and pairing junior engineers with senior Pod members for knowledge transfer.
+- **10% Tactical Oversight:** A small, bounded slice remains for genuinely necessary tactical work: approving architecturally significant pull requests the automated pipeline flags for human judgment, and attending the weekly cross-functional sync with product and design.
+
+We enforce this ratio with a simple audit: at the end of each sprint, the manager's calendar is reviewed against these three buckets. If "Tactical Oversight" creeps past 15-20%, it is treated as a signal that either the CI/CD pipeline has a gap letting bad code slip through, or the Vietnamese Pod needs additional architectural documentation from Amsterdam to operate with more autonomy. The ratio itself becomes a diagnostic tool for the health of the entire engineering organization, not just a time-management trick for one individual.
+
 ## Stop Managing Tickets. Start Managing Scale.
 
 Do not let your best engineering leaders drown in operational friction and bad offshore code. If your managers are spending their weekends manually deploying servers, your architecture is broken. Contact Manifera today to implement automated pipelines and elevate your engineering leadership.
@@ -96,6 +106,9 @@ You pay managers high salaries for their strategic brainpower. When they are stu
 
 ### (Scenario: Lead Architect dealing with deployment stress) What does it mean for a manager to manage "Architecture" instead of "Tickets"?
 Managing tickets means reacting to daily fires. Managing architecture means proactively preventing them. It means the manager spends their time designing microservices, evaluating AI integrations, and optimizing database schemas, knowing that the automated CI/CD pipeline and the Manifera Pod will handle the tactical execution flawlessly.
+
+### (Scenario: New manager unsure how to use freed-up time) Once the operational friction is removed, how should an Application Development Manager actually spend their week?
+We recommend a 70-20-10 model: 70% of the week on forward-looking architecture and roadmap decisions, 20% on protected mentorship and career-growth one-on-ones, and 10% on bounded tactical oversight like reviewing architecturally significant pull requests. If tactical work creeps above 15-20%, it signals a gap in the pipeline or Pod documentation that needs fixing.
 
 <script type="application/ld+json">
 {
@@ -140,6 +153,14 @@ Managing tickets means reacting to daily fires. Managing architecture means proa
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Managing tickets is reacting to daily fires. Managing architecture means proactively designing microservices and AI integrations, knowing the automated CI/CD pipeline and the Manifera Pod will handle the tactical execution flawlessly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: New manager unsure how to use freed-up time) Once the operational friction is removed, how should an Application Development Manager actually spend their week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend a 70-20-10 model: 70% on architecture and roadmap, 20% on protected mentorship one-on-ones, and 10% on bounded tactical oversight. If tactical work creeps above 15-20%, it signals a gap in the pipeline or Pod documentation."
       }
     }
   ]

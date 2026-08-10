@@ -68,6 +68,24 @@ Our Amsterdam architects audited the requirements and streamlined the scope, foc
 | **Time to Market** | Slow (Delayed by edge-cases) | Fast (Focusing only on core value) |
 | **OpEx Cost** | High (Maintaining unused features) | Optimized (Zero dead code) |
 
+## The Feature Deprecation Framework: Auditing What Already Exists
+
+Preventing new bloat is only half the battle. Most enterprises we onboard already have an existing Feature Factory legacy sitting in production — dozens or hundreds of features nobody asked to remove because nobody could prove they were safe to remove. Here is the framework we run during the first 30 days of any engagement to reverse the damage.
+
+**Step 1: Instrument Before You Judge.** Before removing anything, we deploy lightweight usage telemetry (via tools like PostHog, Mixpanel, or a custom event pipeline) across every major feature surface for a minimum 30-day observation window. Opinions about which features are "obviously unused" are frequently wrong; data is not.
+
+**Step 2: Apply the 5% Threshold.** Any feature touched by fewer than 5% of active users in a rolling 30-day window is flagged for review. This is not an automatic deletion trigger — some low-usage features (compliance exports, admin-only tooling) are mission-critical despite low traffic — but it forces an explicit business justification for every feature that survives.
+
+**Step 3: Sunset Behind a Flag, Not a Deletion.** Flagged features are wrapped in a feature flag and hidden from new users for a two-week soft-deprecation window, with a visible in-app notice for existing users. This produces a real signal — support ticket volume — before any code is deleted, catching edge cases the telemetry missed.
+
+**Step 4: Delete the Dependency Graph, Not Just the UI.** Removing a button is trivial; removing the six database tables, three API endpoints, and two background jobs it silently depends on is where most in-house teams stall. Our Autonomous Pods map the full dependency graph before deprecation begins, so cleanup is complete rather than cosmetic.
+
+**Step 5: Report the OpEx Recovered.** Every deprecation cycle closes with a report quantifying the infrastructure cost, query latency, and maintenance-hour savings recovered — turning "we deleted some old features" into a defensible line item your CFO can see on the P&L.
+
+For one recent enterprise client, this exact framework identified that 34 of their 214 production features had zero user interaction in the prior quarter, and removing them cut their average page load time by nearly a third.
+
+**Why Internal Teams Rarely Do This Themselves:** Deprecation work carries no glamour. It doesn't ship a new logo feature for the roadmap slide, and it requires someone to stand up in a planning meeting and argue for subtraction rather than addition. Internal product teams are almost always incentivized toward the opposite behavior — shipping visible new work that looks good in a performance review. That is precisely why this audit works best as an outside engagement: Manifera's Amsterdam Product Owners have no career incentive tied to your internal roadmap politics, only to the measurable health of your architecture. They can walk into the room, present the telemetry, and recommend deletion without worrying that it reflects poorly on the team that built the feature in the first place.
+
 ## Scale Your Web Architecture with Mathematical Precision
 
 Stop paying vendors to bloat your codebase. If you are a CPO or CTO who demands Lean architecture and a partner with the courage to protect your product from scope creep, you need Manifera.
@@ -90,6 +108,9 @@ By enforcing a Minimum Viable Architecture (MVA) and stripping away low-ROI feat
 
 ### (Scenario: IT Director concerned about dead code) How do you prevent 'dead code' from accumulating?
 Our CI/CD pipelines include automated code coverage and static analysis tools. Furthermore, our strict Agile governance ensures we only build what is actively validated by users, mathematically minimizing the amount of unused code that enters the repository.
+
+### (Scenario: CTO inheriting a bloated legacy product) How do you safely remove features that already exist in production?
+We run a five-step Feature Deprecation Framework: instrument usage telemetry for 30 days, flag anything below a 5% engagement threshold, soft-deprecate behind a feature flag to catch missed edge cases, map and delete the full dependency graph rather than just the UI, and report the OpEx recovered so the cleanup is measurable.
 
 <script type="application/ld+json">
 {
@@ -134,6 +155,14 @@ Our CI/CD pipelines include automated code coverage and static analysis tools. F
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our CI/CD pipelines include automated code coverage and static analysis tools. Furthermore, our strict Agile governance ensures we only build what is actively validated by users, mathematically minimizing the amount of unused code that enters the repository."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO inheriting a bloated legacy product) How do you safely remove features that already exist in production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We run a five-step Feature Deprecation Framework: instrument usage telemetry for 30 days, flag anything below a 5% engagement threshold, soft-deprecate behind a feature flag to catch missed edge cases, map and delete the full dependency graph rather than just the UI, and report the OpEx recovered so the cleanup is measurable."
       }
     }
   ]

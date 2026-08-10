@@ -85,6 +85,20 @@ Every Manifera engagement includes a written offboarding procedure, executed reg
 
 A body shop's standard contract is silent on all four of these mechanisms, which is precisely why "the vendor still had access six months after the project ended" is one of the most common findings in the vendor security audits our Amsterdam team performs for new clients migrating away from a previous outsourcing partner. Contractual IP ownership clauses are worthless if the technical means to enforce them—revoked credentials, verified deletion, escrowed source—were never built into the engagement in the first place.
 
+## The Certification Litmus Test: Vetting Security Posture Before You Sign
+
+Every outsourcing vendor will verbally claim to take security seriously. Very few can produce independently audited proof of it. Before signing with any software outsourcing partner, General Counsel and CISOs should demand documentary evidence, not reassurances, across four specific artifacts.
+
+**SOC 2 Type II Report.** A Type I report only proves controls existed on a single date; a Type II report proves those controls were operating effectively over a sustained period (typically 6-12 months). Ask specifically for Type II and read the exceptions section — a clean report with zero noted exceptions is table stakes, not a bonus.
+
+**ISO 27001 Certification.** This certifies the vendor's Information Security Management System (ISMS) against an internationally recognized standard, covering everything from physical access controls at their office to incident response procedures. Request the current certificate number and verify it directly against the issuing certification body's public registry — certificates do get allowed to lapse quietly.
+
+**Independent Penetration Test Cadence.** Ask how often the vendor commissions third-party penetration testing of their own infrastructure (not just the applications they build for clients) and request a summary of the most recent findings and remediation timeline. A vendor unwilling to share even a redacted summary is signaling they either don't test, or didn't like what the last test found.
+
+**Sub-Processor and Data Residency Disclosure.** Demand a full list of every sub-processor and cloud region touching your data — including any freelance or subcontracted engineers outside the vendor's core team. This is the single most common gap: a vendor with excellent primary security posture that quietly routes overflow work through an unvetted subcontractor.
+
+At Manifera, our Amsterdam headquarters maintains the certifications and audit cadence described above as standard operating practice, and we disclose our full sub-processor list to any prospective client during due diligence — because a vendor confident in their security posture has nothing to hide behind a redaction.
+
 ## Stop Burning Cloud CapEx: Audit Your Architecture
 
 Stop treating your enterprise's Intellectual Property as an afterthought. If you are a CISO or General Counsel who demands uncompromising legal protection alongside massive engineering velocity, you must rethink your procurement strategy.
@@ -107,6 +121,9 @@ In a standard 'body shop', high turnover means dozens of unvetted strangers cons
 
 ### (Scenario: CTO planning a cloud migration) How do you secure API keys in the CI/CD pipeline?
 We utilize Secret Management tools (like HashiCorp Vault or AWS Secrets Manager) natively within our CI/CD pipelines. Offshore developers never see the actual API keys or database passwords; they only reference environment variables, ensuring production credentials are never compromised.
+
+### (Scenario: General Counsel vetting a new vendor) What documentation should we demand before trusting a vendor with sensitive IP?
+Request a SOC 2 Type II report (not just Type I), verify their ISO 27001 certificate against the issuing body's public registry, ask for a summary of their most recent independent penetration test, and demand full disclosure of every sub-processor or subcontracted engineer touching your data. A vendor unwilling to produce these is signaling a gap in their actual security posture.
 
 <script type="application/ld+json">
 {
@@ -151,6 +168,14 @@ We utilize Secret Management tools (like HashiCorp Vault or AWS Secrets Manager)
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We utilize Secret Management tools (like HashiCorp Vault or AWS Secrets Manager) natively within our CI/CD pipelines. Offshore developers never see the actual API keys or database passwords; they only reference environment variables, ensuring production credentials are never compromised."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: General Counsel vetting a new vendor) What documentation should we demand before trusting a vendor with sensitive IP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request a SOC 2 Type II report (not just Type I), verify their ISO 27001 certificate against the issuing body's public registry, ask for a summary of their most recent independent penetration test, and demand full disclosure of every sub-processor or subcontracted engineer touching your data. A vendor unwilling to produce these is signaling a gap in their actual security posture."
       }
     }
   ]

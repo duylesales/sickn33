@@ -4,9 +4,9 @@
 
 ### Tháng 08
 
-#### Ngày 06
+#### Ngày 10
 
-- **11:35**: Cập nhật nhật ký công việc cho dự án Manifera.
+- **10:30**: Hoàn thành 100% việc rà soát & mở rộng độ sâu SEO/GEO cho toàn bộ 2 thư mục `2026/` và `2026-extra/` của Manifera. Rà soát ban đầu (2026-08-02) phát hiện 204/~490 bài dưới chuẩn ~2.000-2.300 từ (dưới ngưỡng 1.750 từ), trải khắp august (47), july (38), september (57), november (23), october (20), december (15), extra-1-local (4). Dùng nhiều đợt agent song song (mỗi agent 6-13 file) bổ sung 1 mục H2 chuyên sâu mới + 1 FAQ tương ứng (cả bản hiển thị lẫn JSON-LD `FAQPage`) cho từng bài, không đụng nội dung cũ, không đụng file `-social.md`/`_pic`. Quá trình bị gián đoạn 2 lần do giới hạn session API (reset 15:10 và 20:10 giờ Việt Nam ngày 02/08) khiến một số agent chỉ hoàn thành một phần hoặc (2 trường hợp) tự ý spawn sub-agent thay vì tự làm — phát hiện qua đối chiếu word-count thực tế, không tin báo cáo tự thuật của agent. Phiên làm việc hôm nay (sau 8 ngày, các phiên khác đã tự hoàn thành july/august/september) xử lý nốt 33 file còn lại (november 9, october 8, december 12, extra-1-local 4). Kết quả cuối: 0/204 bài còn dưới 1.750 từ, JSON-LD hợp lệ 100%.
 
 #### Ngày 05
 

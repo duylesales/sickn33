@@ -68,6 +68,23 @@ They required a [custom software development](https://www.manifera.com/services/
 | **OpEx Token Costs** | Massive (Dumping raw data into context) | Optimized (Semantic caching & chunking) |
 | **Hallucination Rate** | High (No contextual grounding) | Near-Zero (Mathematically constrained answers) |
 
+## The Evaluation Gap: How Do You Prove the AI Actually Works?
+
+Here is a question that stops most self-proclaimed AI vendors cold: "How do you measure whether your system got better or worse after last week's change?" If the honest answer is "we look at it and it seems fine," you do not have an AI product — you have an unmonitored liability that will drift into failure silently.
+
+**Why Eyeballing Outputs Fails at Scale:** A demo with ten hand-picked prompts tells you nothing about how the system behaves across the ten thousand real queries your users will actually submit. Enterprise AI requires the same rigor as any other production system: automated regression testing, just for a component whose output is probabilistic rather than deterministic.
+
+**The Manifera Evaluation Stack:**
+
+*   **Golden Datasets.** Before launch, our pods work with your subject-matter experts to assemble a labeled dataset of 100-300 representative query-answer pairs, including deliberately adversarial and edge-case inputs. This becomes the regression suite for every future model or prompt change.
+*   **LLM-as-Judge Scoring.** Rather than relying on slow, expensive manual review, we deploy a secondary evaluation model that scores every production response against your golden dataset for factual accuracy, tone, and policy compliance, flagging anything below a defined confidence threshold for human review.
+*   **Retrieval Precision Metrics.** For RAG systems specifically, we track retrieval precision and recall separately from generation quality — because a hallucination caused by the vector database returning the wrong document chunk requires a completely different fix than one caused by the LLM misinterpreting correct context.
+*   **Drift Monitoring in Production.** LLM providers update underlying models without warning. We run continuous automated evaluation against the golden dataset on a weekly cadence, so a silent provider-side model update that degrades your accuracy is caught within days, not discovered by an angry customer three months later.
+
+Without this evaluation infrastructure, you are flying blind on the single most expensive and highest-risk component of your technology stack — and no amount of clever prompt engineering compensates for the absence of a way to measure whether it is actually working.
+
+**A Concrete Example:** Imagine your customer support AI answers a billing question correctly for six months, then a routine LLM provider update subtly changes how it interprets currency formatting in your data. Without continuous evaluation, the first indication of the problem is a spike in escalated tickets and a furious account manager demanding answers — weeks after the regression began. With a golden dataset and weekly automated scoring in place, the same regression surfaces as a single failing test case within days, before a single customer is affected. This is the difference between an AI system you can operate with confidence and one you are simply hoping continues to behave, and it is exactly the discipline most "AI app development" shops skip because evaluation infrastructure has no visible UI to demo in a sales pitch.
+
 ## Upgrade from an Agency to an Architectural Partner
 
 Stop paying superficial agencies to build dangerous AI toys that leak your data and drain your budget. If your enterprise requires mathematically sound, legally compliant, and highly scalable AI architecture, you must procure actual engineering mastery.
@@ -90,6 +107,9 @@ Unoptimized AI queries drain budgets rapidly. Our engineering pods implement adv
 
 ### (Scenario: IT Manager with legacy systems) Can we integrate AI if our current database is a monolith?
 Yes. We utilize the Strangler Fig architectural pattern. Our Vietnamese pods build decoupled, Cloud-Native AI microservices that communicate safely with your legacy monolith via secure API gateways, allowing you to modernize incrementally without massive downtime.
+
+### (Scenario: CTO demanding proof of quality) How do you actually measure whether the AI system is performing well?
+We build a golden dataset of 100-300 representative query-answer pairs before launch and run automated LLM-as-judge evaluation against it continuously. This tracks retrieval precision, generation accuracy, and drift on a weekly cadence, catching silent degradation from provider-side model updates before users ever notice.
 
 <script type="application/ld+json">
 {
@@ -134,6 +154,14 @@ Yes. We utilize the Strangler Fig architectural pattern. Our Vietnamese pods bui
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. We utilize the Strangler Fig architectural pattern. Our Vietnamese pods build decoupled, Cloud-Native AI microservices that communicate safely with your legacy monolith via secure API gateways, allowing you to modernize incrementally without massive downtime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO demanding proof of quality) How do you actually measure whether the AI system is performing well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We build a golden dataset of 100-300 representative query-answer pairs before launch and run automated LLM-as-judge evaluation against it continuously. This tracks retrieval precision, generation accuracy, and drift on a weekly cadence, catching silent degradation from provider-side model updates before users ever notice."
       }
     }
   ]

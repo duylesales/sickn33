@@ -72,6 +72,17 @@ Treating software as a finite Capital Expenditure (CAPEX) project creates a dang
 
 By partnering with Manifera, you transition to treating software as a continuous operational asset. Our European architectural governance ensures the system is built to last, while our permanent, highly economical Vietnamese engineering pods ensure you can afford to continuously iterate. You stop funding massive, risky "rewrites" and start funding continuous, predictable product superiority.
 
+## Measuring the Shift: DORA Metrics Instead of Milestone Checklists
+
+A project team reports success with a Gantt chart: 87% of tickets closed, launch date hit, budget on target. A product team needs a different scoreboard entirely, because "percentage complete" stops meaning anything the day the software goes live. At Manifera, we replace milestone reporting with the four DORA metrics (from Google's long-running DevOps Research and Assessment program), which are the industry's most validated proxy for engineering health.
+
+- **Deployment Frequency:** How often you ship to production. Elite teams deploy multiple times a day; project-mode teams often deploy quarterly, if that. Low frequency is the clearest early warning sign that a "product" has quietly reverted to a "project."
+- **Lead Time for Changes:** The time from a code commit to that code running in production. Elite performers measure this in hours; teams stuck in project mode measure it in weeks, because every release requires a manual sign-off ceremony.
+- **Mean Time to Restore (MTTR):** When something breaks in production, how fast can the team fix it? Elite teams restore service in under an hour. A disbanded project team, by contrast, may take days simply to find someone who still understands the codebase.
+- **Change Failure Rate:** The percentage of deployments that cause an incident. Elite teams keep this below 15%, because rigorous automated testing catches problems before they reach users.
+
+For every Autonomous Pod we deploy, Amsterdam architects instrument the pipeline to capture these four numbers automatically, and we review them with clients monthly, not annually. A client who sees deployment frequency climbing and MTTR falling has concrete, board-ready proof that their software is behaving like a product. A client who sees the opposite trend has an early, actionable signal that the team is drifting back toward project-mode heroics, long before the codebase actually rots.
+
 ## Stop Building Projects. Launch a Product.
 
 Do not let your enterprise architecture decay the moment it launches. If your current agency plans to disband the team after "Phase 1," your investment is already failing. Contact Manifera today to build a continuous, living software product.
@@ -96,6 +107,9 @@ We do not use transient project teams. We deploy Dedicated Autonomous Pods in Vi
 
 ### (Scenario: CFO auditing IT spend) Doesn't keeping a permanent "Product Team" cost more than just paying for a one-off project?
 The illusion of the one-off project is shattered when the system breaks a year later, requiring a massive, expensive rewrite and causing severe revenue loss. A permanent team (especially leveraging Manifera's highly economical Vietnamese hubs) provides a predictable, smooth OPEX that actively drives new revenue and prevents catastrophic systemic failures, drastically lowering actual TCO.
+
+### (Scenario: CTO tracking engineering performance) How do we actually measure if our software product is improving, rather than just shipping code?
+Stop measuring "percentage complete." We instrument every Autonomous Pod's pipeline to track the four DORA metrics: Deployment Frequency, Lead Time for Changes, Mean Time to Restore, and Change Failure Rate. Reviewed monthly, these numbers give you a concrete, board-ready signal of whether your product is genuinely getting healthier or quietly drifting back into project-mode risk.
 
 <script type="application/ld+json">
 {
@@ -140,6 +154,14 @@ The illusion of the one-off project is shattered when the system breaks a year l
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The one-off project always requires a massive, expensive rewrite later. A permanent Manifera Pod provides predictable OPEX, actively drives new revenue, and prevents catastrophic failures, lowering actual TCO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CTO tracking engineering performance) How do we actually measure if our software product is improving, rather than just shipping code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We instrument every Autonomous Pod's pipeline to track the four DORA metrics: Deployment Frequency, Lead Time for Changes, Mean Time to Restore, and Change Failure Rate, reviewed monthly to give a board-ready signal of real engineering health."
       }
     }
   ]

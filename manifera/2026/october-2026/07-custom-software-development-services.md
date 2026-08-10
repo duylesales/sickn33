@@ -82,6 +82,23 @@ Elite services integrate absolute observability. They do not just write applicat
 > "A professional engineering partner does not celebrate a successful deployment. They celebrate a deployment that was mathematically proven to be safe through automated canary analysis and distributed tracing."
 > *— [Placeholder: Insert expert quote on software reliability]*
 
+## Disaster Recovery: The SLA Clause Most Vendors Never Mention
+
+Every vendor pitch talks about uptime percentages. Almost none of them talk about what happens the day the primary database is actually destroyed — by a failed migration, a ransomware attack, or a cloud provider region outage. This is the single most under-negotiated line item in enterprise software services.
+
+### The Two Numbers That Actually Matter: RTO and RPO
+
+Elite custom software development services do not describe disaster recovery in vague terms like "we take backups." They commit contractually to two measurable numbers:
+
+*   **Recovery Point Objective (RPO):** How much data can you afford to lose? An RPO of 15 minutes means backups (or database replication) run frequently enough that, in the worst case, you lose at most 15 minutes of transactions. An RPO of 24 hours — common with amateur vendors who run a single nightly backup script — means a catastrophic failure at 11 p.m. wipes out an entire day of customer orders.
+*   **Recovery Time Objective (RTO):** How long can the system be down before the business is materially harmed? An RTO of 1 hour requires automated failover to a standby region. An RTO of "whenever someone finds the backup file" is not a plan, it is a hope.
+
+### Why "We Have Backups" Is Not a Disaster Recovery Strategy
+
+A backup that has never been restored is a theory, not a safeguard. Elite engineering partners run scheduled "Game Days" — deliberate, controlled exercises where the team simulates a production database loss and restores the system from backup in a staging environment, timing the entire process against the contracted RTO. If the restore takes six hours but the SLA promises one, the gap is discovered in a controlled drill, not during an actual customer-facing outage.
+
+For enterprises operating in regulated industries, the SOW should also specify backup retention periods (often 30, 90, or 365 days depending on compliance requirements), geographic redundancy (backups stored in a separate cloud region from production), and encryption-at-rest for all backup data. Demand to see the results of the vendor's last disaster recovery drill before signing — a vendor who cannot produce one has never actually tested whether their promises survive contact with reality.
+
 ## Buying Outcomes, Not Code
 
 When evaluating custom software development services, stop looking at the hourly rates of the developers. Start interrogating the vendor's strategy for automated testing, legacy abstraction, and incident response.
@@ -108,6 +125,9 @@ The "Time to Restore Service" (MTTR) and "Deployment Frequency." Ask the vendor:
 
 ### 5. (Scenario: Product Manager) How do we prevent the vendor from building a feature that crashes the database?
 Isolate read operations from write operations using the CQRS (Command Query Responsibility Segregation) pattern. For heavy reporting or analytics dashboards, the vendor must route queries to a read-only database replica or a dedicated data warehouse, ensuring that complex `SELECT` queries never impact the primary transactional database used by your customers.
+
+### 6. (Scenario: CISO/Risk Officer) What should our disaster recovery clause actually require from the vendor?
+Demand contractually defined Recovery Point Objective (RPO) and Recovery Time Objective (RTO) numbers, not vague language like "we take backups." A mature vendor commits to a specific RPO (e.g., 15 minutes of maximum data loss) and RTO (e.g., 1 hour to full restoration), and can produce evidence of a recent "Game Day" drill where they actually restored production from backup and timed it against those numbers. If they cannot show you a completed drill, their disaster recovery plan is unverified.
 
 <script type="application/ld+json">
 {
@@ -152,6 +172,14 @@ Isolate read operations from write operations using the CQRS (Command Query Resp
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Isolate read operations from write operations using the CQRS (Command Query Responsibility Segregation) pattern. For heavy reporting or analytics dashboards, the vendor must route queries to a read-only database replica or a dedicated data warehouse, ensuring that complex `SELECT` queries never impact the primary transactional database used by your customers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CISO/Risk Officer) What should our disaster recovery clause actually require from the vendor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Demand contractually defined Recovery Point Objective (RPO) and Recovery Time Objective (RTO) numbers, not vague language like \"we take backups.\" A mature vendor commits to a specific RPO (e.g., 15 minutes of maximum data loss) and RTO (e.g., 1 hour to full restoration), and can produce evidence of a recent \"Game Day\" drill where they actually restored production from backup and timed it against those numbers. If they cannot show you a completed drill, their disaster recovery plan is unverified."
       }
     }
   ]

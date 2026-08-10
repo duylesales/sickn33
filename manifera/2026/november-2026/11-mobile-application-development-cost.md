@@ -70,6 +70,20 @@ A cheap vendor would have hardcoded the UI, resulting in endless maintenance inv
 
 *The "3-Year TCO" is the true metric of engineering quality. A cheap initial CapEx always guarantees an exploding OpEx when OS updates inevitably break a brittle architecture.*
 
+## Deconstructing the Quote: What Actually Drives the Number Up or Down
+
+Before you can evaluate whether a quote is fair, you need to understand which specific features are driving the estimate — because "mobile app" is not a single price point, it is a bundle of independently-priced engineering problems. Here is how the real cost drivers break down across the three complexity tiers we see most often.
+
+**Tier 1: Single-Platform MVP.** A single-platform app (iOS or Android only) with basic CRUD screens, standard authentication, and no backend complexity is the cheapest tier to build, but it is also the tier most vulnerable to the Iceberg Illusion described above — a low quote here often signals corners cut on testing and architecture, not genuine efficiency.
+
+**Tier 2: Cross-Platform with Integrations.** Costs climb meaningfully once you introduce: (1) real-time features requiring WebSocket infrastructure (chat, live tracking), (2) payment processing requiring PCI-compliant integrations (Stripe, Adyen), (3) push notification infrastructure at scale, and (4) offline-first data sync requiring conflict resolution logic. Each of these is not a checkbox — it is a distinct architectural subsystem with its own testing surface.
+
+**Tier 3: Enterprise-Grade with Admin Infrastructure.** The steepest cost jump comes from what users never see: a dedicated admin backend/CMS for content and user management, Role-Based Access Control across multiple user tiers, analytics and observability dashboards, and integration with existing enterprise systems (ERP, CRM, SSO/SAML). Agencies that quote a "simple" number for an enterprise app are almost always excluding this invisible half of the build entirely — and it resurfaces later as unplanned change orders.
+
+**The Diagnostic Question for Any Quote:** Ask every vendor to itemize their estimate by these four categories: UI/UX build, core business logic, third-party integrations, and QA/DevOps infrastructure. A vendor who cannot break down their number this way has not actually scoped the work — they have guessed at a round figure and will discover the real complexity at your expense, mid-project, in the form of scope-change invoices.
+
+**Why This Matters More at Renewal Time Than at Launch:** The itemized breakdown is not just useful for comparing initial bids. It becomes essential twelve months later when you need to add a single new integration and the original vendor quotes an amount that seems wildly disproportionate to the feature's apparent simplicity. If you never had visibility into which architectural layer that integration touches, you have no way to judge whether the follow-up quote is fair or opportunistic. Manifera provides this itemized breakdown as a standing artifact, updated with every engagement, so your team always retains the leverage of understanding your own cost structure — rather than depending permanently on the vendor's word.
+
 ## Calculate Your True Mobile ROI
 
 Stop signing blank checks to agencies for basic app maintenance. If you are a CFO or VP of Engineering who demands predictable OpEx and architectural longevity, you need elite engineering.
@@ -92,6 +106,9 @@ We implement "Shift-Left" Quality Assurance. Our pods utilize Fastlane to run au
 
 ### (Scenario: IT Director evaluating total costs) What is the real cost ratio of building vs. maintaining a mobile app?
 Industry standard shows that the initial build is only 30% of the Total Cost of Ownership (TCO); 70% is maintenance. By investing slightly more CapEx in elite architecture upfront, Manifera mathematically shrinks that 70% OpEx burden over the app's lifetime.
+
+### (Scenario: CFO comparing vendor quotes) Why do two vendor quotes for the 'same' app differ by so much?
+The number is meaningless without an itemized breakdown. Ask every vendor to split their estimate into UI/UX, core business logic, third-party integrations (payments, push, offline sync), and QA/DevOps infrastructure. Wide gaps almost always mean one vendor is excluding an entire enterprise-grade cost driver, like an admin backend or RBAC, that will resurface later as change orders.
 
 <script type="application/ld+json">
 {
@@ -136,6 +153,14 @@ Industry standard shows that the initial build is only 30% of the Total Cost of 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Industry standard shows that the initial build is only 30% of the Total Cost of Ownership (TCO); 70% is maintenance. By investing slightly more CapEx in elite architecture upfront, Manifera mathematically shrinks that 70% OpEx burden over the app's lifetime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CFO comparing vendor quotes) Why do two vendor quotes for the 'same' app differ by so much?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The number is meaningless without an itemized breakdown. Ask every vendor to split their estimate into UI/UX, core business logic, third-party integrations (payments, push, offline sync), and QA/DevOps infrastructure. Wide gaps almost always mean one vendor is excluding an entire enterprise-grade cost driver, like an admin backend or RBAC, that will resurface later as change orders."
       }
     }
   ]
