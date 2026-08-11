@@ -46,7 +46,7 @@ Building an enterprise logistics platform requires a completely different cognit
 
 An agency can easily hire one brilliant freelance frontend designer to build their marketing website, while their actual engineering staff consists entirely of junior developers who have no idea how to design a scalable database.
 
-> *"If you are buying a B2B SaaS architecture, do not look at their CSS animations. Look at their database schemas and their automated test coverage."* — IT Procurement Axiom
+If you are buying a B2B SaaS architecture, the animations on the agency's homepage tell you nothing about what you are actually purchasing. Look at their database schemas and their automated test coverage instead, because those are the artifacts that determine whether your platform survives contact with real users.
 
 ## How to Audit an Agency's True Competence
 
@@ -86,6 +86,14 @@ An agency with no observability discipline is not just risking downtime, it is a
 ### A Concrete Benchmark
 For a mission-critical platform, the minimum acceptable standard is: errors surfaced within minutes (not hours), a documented on-call rotation, and a Mean Time To Recovery (MTTR) the agency can quote from real incident data, not from a sales deck. If an agency cannot give you a number for their own MTTR, they are not measuring it, and a team that does not measure its own reliability will not protect yours.
 
+## Ask for DORA Numbers, Not Adjectives
+
+Every agency will tell you they are "fast" and "reliable." Almost none of them will give you a number when asked. This is precisely the gap the DORA (DevOps Research and Assessment) research program, now run out of Google Cloud, was built to close. Since 2013, DORA's annual State of DevOps Report has measured software delivery performance across four metrics: Deployment Frequency (how often the team ships to production), Lead Time for Changes (how long it takes a commit to reach production), Change Failure Rate (what percentage of production changes cause an incident), and Failed Deployment Recovery Time, also called MTTR (how fast the team recovers when something breaks).
+
+These four numbers matter to a procurement decision because the gap between tiers is not small. In DORA's 2024 State of DevOps Report, elite performers deploy on demand, with a lead time under a day and a change failure rate near 5%, while low performers can take one to six months to ship a single change. DORA's data puts elite performers at roughly 973 times more likely to deploy on demand, and roughly 6,570 times faster at recovering from incidents, than low performers.
+
+Translate that into a procurement conversation: ask the agency, directly, for their own Deployment Frequency, Lead Time for Changes, Change Failure Rate, and MTTR, measured on a real recent project, not industry averages. An elite agency will have these numbers ready, because they already track them internally to manage their own delivery risk. An agency that has never heard of DORA metrics, or that answers with "we're pretty fast," is telling you they do not measure their own engineering performance, which means they have no early-warning system for the day your platform starts degrading in production.
+
 ## The Manifera Governance Standard
 
 Many offshore agencies invest their entire budget into a flashy **developer website** to hide the fact that they lack senior architectural leadership. They sell you beautiful UI and deliver fragile backend spaghetti.
@@ -117,6 +125,9 @@ We do not rely on flashy portfolios. Our Dutch Architects will directly demonstr
 
 ### (Scenario: Procurement Director evaluating production support) How do I know if an agency will actually notice and fix a production outage quickly?
 Ask them how they find out something is broken, and ask them to walk you through their last real production incident. Amateur agencies find out from an angry client email and then SSH into a server to manually restart it. Elite agencies have structured logging, error tracking, and APM tooling that pages an on-call engineer automatically, and they can quote you a real Mean Time To Recovery (MTTR) from actual incident data, not a sales deck.
+
+### (Scenario: CTO wants a hard number instead of a sales pitch) What specific metrics should I ask an agency to quote, instead of accepting words like 'fast' or 'reliable'?
+Ask for their DORA metrics: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery (MTTR), measured on a real recent project. According to Google Cloud's DORA State of DevOps Report, elite performers deploy on demand with a lead time under a day and a change failure rate near 5%, while low performers can take one to six months to ship a single change. An agency that tracks and can quote these four numbers manages its own delivery risk. An agency that cannot is not measuring its own performance.
 
 <script type="application/ld+json">
 {
@@ -169,6 +180,14 @@ Ask them how they find out something is broken, and ask them to walk you through
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ask how they find out something is broken and to walk you through their last incident. Elite agencies have structured logging, error tracking, and APM tooling that pages an on-call engineer automatically, and can quote a real Mean Time To Recovery from actual data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What specific metrics should I ask an agency to quote, instead of accepting words like 'fast' or 'reliable'?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for their DORA metrics: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery (MTTR) on a real recent project. Per Google Cloud's DORA State of DevOps Report, elite performers deploy on demand with a lead time under a day and a change failure rate near 5%, while low performers can take one to six months to ship a single change. An agency that cannot quote these numbers is not measuring its own delivery performance."
       }
     }
   ]

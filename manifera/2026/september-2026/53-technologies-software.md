@@ -34,6 +34,12 @@ The application is written entirely in AWS-specific code. Azure does not have Dy
 
 The CTO is trapped. They have fallen victim to the Ultimate Vendor Lock-In. By blindly adopting proprietary cloud **technologies software**, they surrendered their architectural sovereignty to Jeff Bezos.
 
+## Repatriation Is No Longer a Fringe Idea
+
+37signals made headlines because DHH is an outspoken public figure, but the underlying trend is now mainstream enough that IDC tracks it as a standard industry survey question. IDC's Server and Storage Workloads survey, fielded in March 2024, found that 81% of respondents expected some level of compute repatriation and 83% expected some level of storage repatriation back from public cloud within the following 12 months — though only 8-9% of organizations were planning to repatriate an entire workload wholesale, with most instead moving specific components (backups, particular production datasets, or specific compute-heavy jobs) while keeping the rest of their footprint in the public cloud. IDC's own commentary on the data frames this as a maturing market correcting for over-migration during the 2018-2022 "lift and shift everything" period, not a wholesale rejection of cloud computing.
+
+The practical implication for an architect is not "avoid the cloud" — for most workloads, elastic public cloud infrastructure remains the right default. It is that the decision to repatriate, in whole or in part, should be a choice made from a position of architectural readiness, not a multi-year, multi-million-euro emergency project triggered the day a CFO discovers what the DynamoDB bill actually costs at scale.
+
 ## The Financial Physics of Proprietary Cloud Tech
 
 In [custom software development](https://www.manifera.com/services/custom-software-development/), Cloud Providers (AWS, Google Cloud, Azure) are not your friends. They are highly aggressive monopolies. 
@@ -44,7 +50,7 @@ If you build your startup using open-source, standardized technologies (e.g., Po
 
 If you build your startup using proprietary tools (DynamoDB, AWS SQS, Google BigQuery), you have zero bargaining power. When AWS raises the price of DynamoDB by 20%, you simply have to pay it, because rewriting your database logic would cost more than the price increase. 
 
-> *"Cloud agility is an illusion if your source code is entirely written in the proprietary dialect of a single cloud provider. True agility requires architectural abstraction."* — Cloud Architecture Axiom
+"Cloud agility" is a marketing phrase, not an architectural property. A codebase written entirely in one provider's proprietary dialect — DynamoDB queries, Lambda-specific event payloads, provider-specific SDK calls scattered through the business logic — is not agile in any meaningful sense, no matter how quickly it let you ship in year one. Real agility is a structural property you have to design in deliberately: it means your core logic never speaks a cloud provider's proprietary language directly, so that switching providers is a bounded engineering task instead of an existential one.
 
 ## The Defense Mechanism: The Repository Pattern
 
@@ -61,6 +67,14 @@ Behind the interface, the Architect builds the specific DynamoDB integration. If
 
 ### Containerization (Docker and Kubernetes)
 Elite teams also reject proprietary serverless computing (like heavy reliance on AWS Lambda logic) for core enterprise systems. Instead, they write standard web servers and package them in Docker containers. A Docker container is universally portable. You can deploy it to AWS, Azure, Google Cloud, or a local laptop with exactly zero code changes. 
+
+## This Is Not Hypothetical: 37signals' Cloud Exit
+
+Skeptics of the lock-in thesis sometimes argue that the risk is overstated — that no real company actually reverses a cloud migration once it's made. 37signals (the company behind Basecamp and HEY) is the most publicly documented counter-example, and its founder published the numbers openly rather than leaving them to speculation.
+
+In October 2022, 37signals CTO David Heinemeier Hansson announced on the company's own blog ("Why We're Leaving the Cloud," basecamp.com/cloud-exit) that the company was exiting AWS after a roughly ten-year relationship, citing an annual cloud spend that had climbed past $3.2 million. Through 2023, the company moved Basecamp, HEY, and five other applications off AWS and onto its own owned hardware, without adding new operations staff. By October 2024, 37signals reported it had saved approximately $2 million that year alone, with DHH projecting savings exceeding $10 million over five years — a claim that has attracted enough industry scrutiny (and pushback from cloud advocates arguing the comparison undercounts operational overhead) that it counts as one of the most publicly stress-tested case studies in the "own vs. rent infrastructure" debate.
+
+What made the exit *possible* — and this is the architecturally relevant part for this article's argument — is that 37signals had not deeply wired its applications into deep, proprietary AWS services like DynamoDB or Lambda-specific event chains. Its workloads sat primarily on comparatively portable primitives (S3-compatible object storage, standard virtualized compute), which is precisely the kind of architectural discipline the Repository Pattern and containerization strategy described above are designed to preserve. A company whose core logic was hard-wired to DynamoDB's proprietary query API would not have had this option available at any price; the exit itself is only evidence for the thesis because of what 37signals had deliberately *not* built its stack around.
 
 ## Data Gravity: The Lock-In That Survives Even Portable Code
 

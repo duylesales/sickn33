@@ -47,7 +47,9 @@ To bypass this, developers use a technique called "Mocking." They write a fake, 
 
 In reality, the developer wrote a SQL query with a catastrophic syntax error. The real database in production will reject the query instantly. But the CI/CD pipeline approved the deployment because the *fake* database said everything was fine. 
 
-> *"100% Unit Test coverage proves that your code works perfectly in a simulated, fake universe. It proves absolutely nothing about how your code will behave in the violent reality of a production server."* — Quality Assurance Axiom
+> *"Test coverage is of little use as a numeric statement of how good your tests are."* — **Martin Fowler**, martinfowler.com/bliki/TestCoverage.html
+
+Fowler's point, elaborated across the same article, is that coverage is a useful tool for finding code that has *no* tests at all, but a dangerous target to optimize for directly: "if you make a certain level of coverage a target, people will try to attain it," and high coverage numbers turn out to be "too easy to reach with low quality testing" — exactly the mocking illusion described above.
 
 ## The Architecture of True Software Quality
 
@@ -59,6 +61,14 @@ While Unit Tests are necessary for isolated logic, elite teams heavily prioritiz
 ### 2. Mutation Testing (Testing the Tests)
 If a developer writes a terrible Unit Test that always passes regardless of whether the code is broken, Code Coverage tools will still count it as a "success." 
 To combat this, Architects use **Mutation Testing**. A Mutation Testing tool intentionally injects malicious bugs into the application code (e.g., changing a `+` to a `-`) and then runs the developer's Unit Tests. If the developer's tests *still pass* despite the injected bug, the Mutation tool flags the test as useless. It mathematically proves the quality of the tests themselves. 
+
+## This Is Not Hypothetical: The Knight Capital Precedent
+
+The opening scenario is a composite, but the industry's most cited cautionary tale about the gap between "tests pass" and "the system works" is a real, extensively documented event with a public regulatory filing behind it.
+
+On 1 August 2012, Knight Capital Group — then one of the largest market makers in U.S. equities — deployed new trading software to eight production servers. The deployment succeeded on seven of them. On the eighth, an engineer failed to copy the new code, leaving behind a dormant feature called "Power Peg" that Knight had deprecated back in 2003 but never actually deleted from that server. When the market opened, that eighth server repurposed the old, unremoved code path under a new flag with a different meaning, and began firing unintended orders into the market. In the 45 minutes it took Knight's engineers to diagnose and stop it, the system sent over 4 million orders, executed trades across roughly 154 stocks, and cost the firm $440 million — more than the company was worth. Knight Capital was sold in a fire-sale acquisition days later.
+
+No unit test suite, however extensive, was ever going to catch this. The bug was not a broken function; it was a nine-year-old, technically "working" code path that nobody had deleted, reactivated by a flag collision during a partial, unverified deployment. It is the canonical real-world illustration of why elite teams treat integration testing, deployment verification, and dead-code removal as inseparable from unit test coverage rather than optional extras — a 100% Code Coverage badge on the seven correctly updated servers would have told the CTO nothing about the eighth.
 
 ## The Flaky Test Epidemic: When a Green Pipeline Lies
 
@@ -75,6 +85,16 @@ Flaky tests are more corrosive to engineering culture than missing tests, becaus
 ### The Governance Fix: Quarantine, Don't Ignore
 
 Elite teams never let engineers "just re-run" a failing test as standard practice. Instead, they run an automated **Flaky Test Detector** in the CI/CD pipeline: any test that produces inconsistent results across a rolling window of runs is automatically quarantined into a separate, non-blocking suite and a ticket is filed to fix its root cause within a fixed SLA (typically one sprint). The main pipeline stays 100% trustworthy — green always means green — while the quarantined suite gets dedicated attention instead of being silently ignored forever.
+
+## The Math: What Real Testing Infrastructure Actually Costs
+
+Engineering leaders resist Dockerized integration testing and mutation testing for a predictable reason: they are slower to build and slower to run than a wall of mocked unit tests, and slower feels expensive. Running the numbers on a representative mid-sized SaaS team makes the actual trade-off explicit.
+
+**Building the integration testing infrastructure.** For a team with a moderately complex backend (a handful of services, one primary relational database, one message queue), standing up a proper Dockerized integration test suite — test containers, seed data management, a CI pipeline stage that runs it on every Pull Request — typically takes one senior engineer 3-4 weeks of focused work, plus ongoing maintenance of roughly 5-10% of one engineer's time thereafter. At a fully loaded cost of €8,000-9,000 per engineer per month, that is a one-time investment in the range of €6,000-9,000, plus perhaps €800-900 per month in upkeep.
+
+**Running it.** Integration tests are slower than unit tests — a suite that might run in 90 seconds as pure mocked unit tests can take 6-10 minutes against real Dockerized infrastructure. Spread across a team shipping 20-30 Pull Requests a week, that is a real but modest tax on CI compute and developer wait time, usually well under €500 a month in additional CI runner costs.
+
+**The alternative cost.** A single production incident caused by an integration failure that mocked tests waved through — a broken foreign key constraint, a queue message format mismatch, a payment webhook that silently double-fires — routinely costs a mid-sized SaaS company more than the entire annual cost of the testing infrastructure in a single incident: emergency engineering hours at 2-3x normal cost for an all-hands incident response, the customer support load from affected accounts, and, if payments or billing are involved, the direct cost of refunds or double-charges. Knight Capital's $440 million is an extreme, market-scale outlier, but the underlying ratio it illustrates — a few weeks of testing investment against a catastrophic tail-risk incident — holds at every scale, which is why elite engineering organizations treat integration testing infrastructure as one of the cheapest insurance policies available to them, not a discretionary nice-to-have.
 
 ## The Manifera Testing Governance
 

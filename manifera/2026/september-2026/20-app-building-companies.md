@@ -41,7 +41,7 @@ This is fatal for B2B SaaS. Founders and Product Managers are experts in busines
 
 If your engineering team does not have the mandate (and the technical courage) to say "No" to a bad architectural idea, your codebase will quickly become a fragile, unscalable mess.
 
-> *"If an agency never pushes back on your technical requirements, they are not your partner. They are just a typing service. You are paying for the illusion of velocity."* — Enterprise Vendor Axiom
+If an agency never pushes back on your technical requirements, they are not your partner — they are a typing service, and you are paying for the illusion of velocity rather than the substance of it. This is close to what product leader Marty Cagan means when he argues that strong product teams are given problems to solve, not feature lists to build: the moment a vendor stops interrogating the *why* behind a ticket and just executes the *what*, they have stopped being an engineering partner and started being an order desk.
 
 ## The Transition to Product Engineering
 
@@ -59,6 +59,16 @@ Give them this test: *"We want to build a feature where every time a user logs i
 
 If they do not spot the architectural flaw, do not hire them.
 
+## The Downstream Cost: Pricing Out Agency A vs. Agency B
+
+It's worth putting a number on the difference between the two agencies from the opening scenario, because "it takes two days longer to build" sounds like a cost, when in most cases it is actually the discount.
+
+**Agency A's synchronous PDF export**, priced at face value, looks cheaper: say 6 developer-hours at a blended offshore rate, delivered in a day. But once it ships and a handful of enterprise customers with large transaction histories click "Export," the real invoice starts arriving. A full production outage on a B2B SaaS platform commonly costs the business in three ways at once: the direct incident-response hours (an on-call engineer paged at 2 a.m., a war room, a postmortem — typically 8-20 engineering hours fully loaded), the customer-facing damage (support tickets, at least one uncomfortable call with an enterprise account, and in a worst case a contractual SLA credit), and the opportunity cost of the fix itself, because the async queue Agency B would have built from the start now has to be built anyway, under pressure, after the trust has already been dented.
+
+**Agency B's asynchronous PDF export** costs roughly 2 extra developer-days upfront — call it 16 additional hours at the same blended rate. That is the entire premium. There is no outage to firefight, no SLA credit to negotiate, and no rebuild six weeks later. On a straight hourly comparison, Agency B looks like the more expensive option by a small margin on day one. Measured over the following quarter, once you include the realistic probability of an outage under real transaction volumes, Agency B is very often the cheaper vendor, not the pricier one — the "two days longer" was never overhead, it was insurance priced into the estimate instead of paid for later at a markup.
+
+This is the core problem with evaluating **app building companies** purely on their initial quote. A lower hourly rate or a faster initial delivery date tells you nothing about the hidden liabilities embedded in how literally that vendor interprets your tickets. The real comparison is total cost of ownership across the first 12 months in production, not the invoice for the first sprint.
+
 ## Reading the Contract: Pricing Structures That Reveal Order-Takers
 
 You can often identify an Order-Taker before a single line of code is written, simply by reading how the contract is structured. The Statement of Work (SOW) and the pricing model tell you exactly how the agency plans to make money, and that reveals whether their incentives are aligned with your product's long-term health or against it.
@@ -70,6 +80,14 @@ You can often identify an Order-Taker before a single line of code is written, s
 **Ask about source code and reusable module ownership.** Some Order-Taker shops quietly retain rights to "internal frameworks" or "boilerplate modules" they reuse across multiple clients, meaning components of what you believe is bespoke, proprietary logic are actually shared templates stripped of client-specific branding. Insist on full source code escrow and a contractual statement that all custom business logic, including any internal utility libraries built specifically to solve your domain problem, transfers to you outright.
 
 Before signing with any of the **app building companies** on your shortlist, have your procurement team or legal counsel flag these three items specifically. A vendor that resists defining outcome-based SOWs, itemizes change requests, or hedges on IP transfer is telling you, in writing, that they are not planning to be your architect.
+
+## Why This Isn't Just Anecdotal: What the Research Says About Requirements Failure
+
+Founders sometimes dismiss the Order-Taker problem as a one-off horror story rather than a systemic risk. The research says otherwise. The Project Management Institute's *Pulse of the Profession: Requirements Management* study found that inaccurate requirements management is a factor in 47% of unsuccessful projects, and that organizations waste an average of $51 million for every $1 billion spent on projects and programs due to poor requirements practices, a figure PMI attributes largely to scope creep, weak stakeholder communication, and requirements that were executed literally instead of interrogated.
+
+That 47% figure lines up almost exactly with the Order-Taker failure mode described above: a ticket gets handed over, gets built exactly as written, and the resulting feature is technically "correct" against the ticket while being functionally wrong for the business. The PMI research frames this as a requirements-management discipline problem, but in practice it is also a vendor-selection problem. An agency culture that treats the ticket as gospel rather than as a starting hypothesis will reproduce this failure mode on every project, regardless of how rigorous your own internal requirements process is, because the interrogation step that would have caught the gap simply never happens on their side of the relationship.
+
+This is precisely why the procurement test described earlier — handing a flawed architectural scenario to a shortlisted vendor and watching whether they push back — is not a soft culture-fit exercise. It is a direct proxy for whether that vendor will contribute to or help prevent your project landing in PMI's 47%.
 
 ## The Manifera Hybrid Governance Model
 

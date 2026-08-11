@@ -43,7 +43,7 @@ The "Bus Factor" is the number of developers on your team who would have to get 
 ### 2. The Lack of Battle-Testing
 New, shiny tools have not survived the crucible of enterprise scale. A new database might look incredibly fast in a controlled benchmark test. But it has not survived five years of production traffic, network partitions, and malicious hacking attempts. When it inevitably breaks, you will be the first company discovering the bug. You become the unpaid beta tester for the tool's creators.
 
-> *"If your engineers are excited by your tech stack, you have chosen the wrong tech stack. Enterprise software should not be exciting; it should be boring, predictable, and mathematically sound."* — Tech Stack Selection Axiom
+> *"It is basically always the case that the long-term costs of keeping a system working reliably vastly exceed any inconveniences you encounter while building it."* — Dan McKinley, [Choose Boring Technology](https://mcfunley.com/choose-boring-technology)
 
 ## Choose Boring Technology
 
@@ -52,14 +52,14 @@ Elite engineering organizations (like Stripe, Shopify, and Basecamp) operate on 
 Boring technology (like PostgreSQL, Node.js, React, Java) is technology that has been used by millions of companies for over a decade. 
 
 *   **Infinite Talent Pools:** If a React developer quits on Friday, you can hire a new React developer on Monday. The talent pool is massive and global.
-*   **Zero 'Unknown Unknowns':** PostgreSQL has been battle-tested for 30 years. Every possible bug, edge case, and performance bottleneck has already been discovered, documented, and solved on Stack Overflow. 
+*   **Zero 'Unknown Unknowns':** PostgreSQL has been battle-tested for decades. Every possible bug, edge case, and performance bottleneck has already been discovered, documented, and solved on Stack Overflow. This is not a marginal preference: in the 2024 Stack Overflow Developer Survey, PostgreSQL was the most-used database among professional developers, reported by roughly half of all respondents in that category — well ahead of every alternative, boring or experimental ([Stack Overflow Developer Survey 2024](https://survey.stackoverflow.co/2024/technology)).
 *   **Predictable Velocity:** Boring technology allows developers to focus 100% of their brainpower on solving your unique business logic, rather than fighting the framework.
 
 ## The Innovation Token Budget
 
-"Choose Boring Technology" does not mean a company should never adopt anything new. Even the most disciplined engineering organizations occasionally need a genuinely novel tool to solve a genuinely novel problem. The mistake is treating every technology decision as unlimited — as if the team has infinite capacity to absorb risk. Elite architects instead operate on a simple mental model borrowed from engineering pragmatists: the **Innovation Token Budget**.
+"Choose Boring Technology" does not mean a company should never adopt anything new. Even the most disciplined engineering organizations occasionally need a genuinely novel tool to solve a genuinely novel problem. The mistake is treating every technology decision as unlimited — as if the team has infinite capacity to absorb risk. Elite architects instead operate on a mental model formalized by former Etsy engineer Dan McKinley in his widely-read 2015 essay "Choose Boring Technology": the **Innovation Token Budget**.
 
-The idea is straightforward. Assume your engineering organization gets a small, fixed number of "innovation tokens" to spend — say, three — per major project. Every time you choose an unproven, exotic, or bleeding-edge tool over the boring, standard equivalent, you spend one token. Once the budget is exhausted, every remaining decision must default to the proven, well-understood option, no matter how appealing the alternative looks on a tech blog.
+The idea, in McKinley's own framing, is straightforward: "Let's say every company gets about three innovation tokens. You can spend these however you want, but the supply is fixed for a long while." Every time an engineering team chooses an unproven, exotic, or bleeding-edge tool over the boring, standard equivalent, it spends one token. Once the budget is exhausted, every remaining decision must default to the proven, well-understood option, no matter how appealing the alternative looks on a tech blog.
 
 This forces a genuinely useful discipline: it makes teams *rank* their risk. A logistics startup might correctly spend one token on a specialized real-time geospatial routing engine, because that engine is the actual competitive differentiator of the product. But that same startup should never spend a second token on an experimental database for user authentication, and never a third on a fringe frontend framework for a standard admin dashboard — because those components are commodity infrastructure, not the differentiator, and the risk is uncompensated.
 
@@ -71,6 +71,18 @@ A practical checklist an Architect can apply before spending a token:
 4. **Has the team budgeted the time to write internal documentation**, since public Stack Overflow answers won't exist for an obscure tool?
 
 Teams that never formalize this budget default to spending tokens emotionally — on whatever tool is trending that quarter — rather than strategically, on the one or two places where genuine innovation actually earns its keep.
+
+### Boring Technology's New Advantage: AI Coding Assistants
+
+The rise of AI coding assistants has added a fifth, distinctly modern argument for boring technology that McKinley's original 2015 essay could not have anticipated. Aaron Brethorst, revisiting McKinley's framework in 2025, made the point directly: "when you understand the underlying stack, AI coding assistants become incredibly powerful" ([Brethorst, "Choose Boring Technology, Revisited"](https://www.brethorsting.com/blog/2025/07/choose-boring-technology,-revisited/)). The argument cuts both ways for programmers tools generally. An LLM-based coding assistant trained on millions of public PostgreSQL, Node.js, and React repositories generates reliable, idiomatic suggestions for those stacks because it has seen the patterns thousands of times over. Point the same assistant at an obscure functional language with a handful of public repositories, and it will confidently generate plausible-looking code that is subtly wrong — a fabricated API method here, a deprecated syntax pattern there — and a team without deep pre-existing expertise in that language has no way to catch the error before it ships. Boring technology was already the safer bet for hiring and battle-testing. In the AI-assisted development era, it is now also the safer bet for the accuracy of the code itself.
+
+## A Worked Example: The Hiring Cost of a Niche Stack
+
+Return to the startup from the opening scenario, six months after the rewrite decision. They now need to replace two of the five original developers who understood the obscure functional language — one left for a better offer, one burned out debugging the memory leak alone at 2 a.m. for the third time that month.
+
+**Hiring for the niche stack.** Postings for the obscure language sit open for 10-14 weeks, because the realistic candidate pool in a mid-sized European city is measured in single digits rather than hundreds. When a candidate is finally found, they typically command a 15-25% premium over an equivalent mainstream-stack hire, precisely because their skill is scarce — the same scarcity that made the stack risky in the first place now makes replacing anyone who leaves expensive twice over. Two replacement hires, at 12 weeks each of lost velocity plus the salary premium, cost the startup a conservatively estimated €40,000-€60,000 in combined recruiting drag and premium compensation, on top of whatever business the company failed to build during those 12 weeks of an understaffed, already-fragile system.
+
+**Hiring for the boring stack.** The same two roles, if the original stack had been Node.js and PostgreSQL, would realistically fill in 3-5 weeks each against a talent pool that is orders of magnitude larger, at market-rate compensation with no scarcity premium. The math is not close: choosing the exotic stack didn't just create engineering risk in production, it created a standing recruiting tax that the company pays every single time someone on that team changes jobs — and software engineers change jobs often enough that this is not a one-off cost, it is a recurring, predictable line item baked permanently into the original architectural decision.
 
 ## The Pragmatic Governance of Manifera
 

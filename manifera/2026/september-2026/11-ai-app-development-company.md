@@ -67,6 +67,30 @@ The same failure mode extends beyond the browser. If an agency wires the LLM's o
 
 The fix requires treating every LLM output exactly like untrusted user input, because that is precisely what it is: text influenced, directly or indirectly, by data the AI ingested. A secure AI app development company enforces three non-negotiable rules: (1) LLM output destined for a browser is always rendered through a sanitization library (like DOMPurify) that strips executable script tags, never through raw HTML injection; (2) LLM output is never passed to `eval()`, a shell command, or a database query without the same parameterization and escaping used for human-submitted input; (3) any AI Agent capable of executing code or commands runs that execution inside the same sandboxed, network-isolated environment described above for SSRF protection, so even a successful manipulation cannot reach production systems.
 
+## Why This Isn't a Hypothetical Risk
+
+It would be easy to read the scenario above as a dramatized worst-case rather than a realistic threat. The data says otherwise. OWASP's own *Top 10 for LLM Applications 2025* — the industry-standard risk taxonomy maintained by the same nonprofit foundation behind the original OWASP Top 10 for web applications — ranks Prompt Injection (LLM01) as the single highest-severity risk category for the second consecutive edition, with Improper Output Handling (LLM05, the vulnerability described above) and Excessive Agency (LLM06, an AI Agent granted more autonomy or system access than its task requires) both retained as top-tier categories.
+
+Independent vulnerability-disclosure data backs up how fast this risk category is growing in practice. HackerOne's 2025 *Hacker-Powered Security Report* (its 9th annual edition) recorded a 210% year-over-year spike in AI-related vulnerability reports across its bug bounty platform, and within that, prompt injection specifically was the fastest-growing single vulnerability class, with reports up 540% in one year. That surge is a direct consequence of how many companies are shipping LLM-connected features (1,121 distinct customer programs added AI to their bug bounty scope in 2025 alone, a 270% year-over-year increase) faster than their security review processes have adapted to a genuinely new class of vulnerability. An AI app development company that cannot answer the three structural questions in the table above isn't behind on a minor edge case — it's behind on the fastest-growing vulnerability category security researchers are currently finding.
+
+## What an Ungoverned AI Feature Actually Costs
+
+For a CISO building the business case to insist on this level of architectural rigor, the financial framing matters as much as the technical one. IBM's *2025 Cost of a Data Breach Report* put the global average cost of a breach at $4.44 million — and found that "shadow AI" (unauthorized or ungoverned AI tools operating without proper access controls) was a contributing factor in 20% of breaches, almost entirely at organizations that lacked formal AI governance. The same report found attackers themselves are now using AI, primarily to power phishing and deepfake attacks, in 16% of breaches — meaning both sides of the equation, offense and the systems being defended, are increasingly AI-driven.
+
+The report's more encouraging finding is directly relevant to the governance model this article argues for: organizations that had mature security AI and automation practices in place detected and contained breaches roughly 80 days faster on average, and saved close to $1.9 million per incident compared to organizations without those practices. The gap between "AI app development company that bolts on an LLM with no sandboxing" and "AI app development company that builds Dual-LLM validation, network isolation, and output sanitization from day one" is not an abstract best-practices debate — it is, on IBM's own numbers, a multi-million-euro difference in exposure when (not if) an incident occurs.
+
+### The Pre-Contract Checklist
+
+Before the statement of work is signed, a CISO or CTO evaluating an AI app development company should be able to get a direct, specific answer — not a marketing deflection — to each of the following:
+
+- Is user input ever concatenated directly into a system prompt, or is it passed through a structured, isolated input channel?
+- Does the AI Agent have network access to any internal subnet, or is it sandboxed with an explicit allow-list of external endpoints only?
+- Is LLM output sanitized before it reaches a browser, a shell, or a database query — and can the vendor name the specific library or method used?
+- Who owns the "Excessive Agency" review — the OWASP LLM06 category covering whether the AI has been granted more autonomous permissions (sending emails, executing payments, modifying records) than its actual task requires?
+- Is there a documented incident-response runbook specifically for a suspected prompt injection event, distinct from the organization's generic breach-response plan?
+
+An agency that treats these as unusual or overly cautious questions is signaling, before the contract is even signed, that AI security was never part of their default build process.
+
 ## The Manifera AI Governance Standard
 
 The rise of generative AI has spawned thousands of "order-taker" agencies that know how to write a prompt, but have zero understanding of cybersecurity. 

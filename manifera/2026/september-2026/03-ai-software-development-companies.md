@@ -30,7 +30,7 @@ Every time an employee types a query into the HR assistant, the agency's code ta
 
 The CIO didn't buy an AI solution. They bought a massive GDPR data breach.
 
-> *"Connecting an API key to a text box does not make you an AI engineer. True enterprise AI requires rigorous data governance, pipeline orchestration, and mathematical privacy guarantees."* — Enterprise AI Security Axiom
+Connecting an API key to a text box does not make an agency an AI engineering team. It makes them a reseller of someone else's model, with none of the governance layer that separates a demo from a system you can safely put your employees' data through.
 
 If you are outsourcing [custom software development](https://www.manifera.com/services/custom-software-development/) for AI, you must learn to differentiate between a fragile API wrapper and true enterprise AI infrastructure.
 
@@ -83,6 +83,20 @@ A defensible architecture treats prompt injection as a first-class threat model,
 **4. Adversarial Testing (Red Teaming).** Before any agentic AI feature ships, it should be red-teamed with known injection payloads embedded in realistic documents, exactly the way a penetration test probes for SQL injection before a web app ships.
 
 When you interview an AI vendor, ask them directly: "Show me your prompt injection test suite." Their answer — or blank stare — tells you immediately which category of vendor you are dealing with.
+
+### The "Lethal Trifecta": A Framework for Spotting the Danger Before It Ships
+
+Independent AI security researcher Simon Willison, creator of the Datasette project and a widely cited voice on LLM security, coined a framework worth borrowing directly when auditing a vendor's architecture: the "lethal trifecta." Willison argues that an AI agent becomes dangerous the moment it combines three capabilities at once — access to private data, exposure to untrusted content, and the ability to communicate externally. Any one or two of these are usually manageable; all three together is where prompt injection stops being theoretical and starts being exploitable. As Willison put it bluntly in his June 2025 write-up of the concept: "we still don't know how to 100% reliably prevent this from happening" — and he is openly skeptical of vendors who claim their guardrail products solve it, noting that a filter which only catches "95% of attacks" would be considered a failing grade anywhere else in security engineering.
+
+That framework gives a CIO a fast, non-technical audit question for any AI vendor pitch: does this proposed AI assistant have all three properties simultaneously? An HR assistant that reads private employee records (private data), summarizes uploaded resumes or tickets it did not author (untrusted content), and can send emails or write to a database (external communication) has assembled the trifecta — and if the vendor cannot describe how they broke that triangle apart, the honest answer is that they haven't secured it, they've just avoided thinking about it.
+
+## Why Most AI Pilots Never Reach Production
+
+The wrapper problem is not just a security issue — it is the leading explanation for why so many enterprise AI initiatives quietly die after the demo. A July 2025 report from MIT's Media Lab, "The GenAI Divide: State of AI in Business," analyzed roughly 300 public AI deployments and interviewed dozens of enterprise leaders. It found that despite an estimated $30-40 billion in enterprise generative AI spending, 95% of organizations were seeing no measurable return on their investment. The researchers' explanation was not that the underlying models were too weak — it was that most deployments were generic tools bolted onto a business process without the integration, data grounding, and workflow adaptation needed to survive contact with real operations. That is a precise academic description of the "OpenAI Wrapper" pattern.
+
+Gartner reached a similar conclusion via a different route. In 2024, the firm predicted that at least 30% of generative AI projects would be abandoned after proof-of-concept by the end of 2025, citing poor data quality, inadequate risk controls, escalating costs, and unclear business value as the primary causes. Every one of those four failure causes maps directly onto the architectural gaps described above: poor data quality is what happens without a proper RAG pipeline grounding the model in verified source documents; inadequate risk controls is what happens without PII masking and prompt injection defenses; escalating costs is what happens without a model-agnostic abstraction layer; and unclear business value is what happens when an agency ships a demo instead of a system built to survive contact with your actual data and actual attackers.
+
+The uncomfortable implication for CIOs is that the low upfront price and three-week timeline that made the wrapper vendor attractive in the first place are themselves the leading indicator of which bucket your project will fall into.
 
 ## The Manifera Standard for AI Engineering
 

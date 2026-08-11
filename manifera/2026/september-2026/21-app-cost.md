@@ -37,11 +37,11 @@ The CFO fell for the CapEx Illusion. They optimized for the initial price tag, w
 
 In [custom software development](https://www.manifera.com/services/custom-software-development/), the initial development cost is Capital Expenditure (CapEx). Everything that happens after launch is Operational Expenditure (OpEx).
 
-A fundamental axiom of software engineering is that **CapEx represents only 20% of the total lifetime app cost.** OpEx represents the remaining 80%.
+A well-established rule of thumb in software engineering is that **initial development (CapEx) represents only a minority of the total lifetime app cost**, with maintenance and operations (OpEx) absorbing the rest. The IEEE Computer Society has long put ongoing maintenance at roughly 60-80% of total software lifecycle cost, and Gartner's research on IT spending finds that organizations typically spend 55-80% of their overall IT budget simply maintaining systems they already have, rather than building anything new. The exact split varies by system type and industry, but every serious study over the past several decades converges on the same conclusion: what you pay to build the app is the smaller number, and what you pay to keep it alive is the larger one.
 
-If you squeeze the CapEx (by hiring the absolute cheapest, fastest offshore agency), you mathematically inflate the OpEx. The agency will cut corners on architecture, security, and database normalization to hit the €50,000 budget. They deliver the code, cash the check, and leave you to pay the 80% OpEx bill for the next five years.
+If you squeeze the CapEx (by hiring the absolute cheapest, fastest offshore agency), you mathematically inflate the OpEx. The agency will cut corners on architecture, security, and database normalization to hit the €50,000 budget. They deliver the code, cash the check, and leave you to pay the OpEx bill for the next five years.
 
-> *"If a software agency gives you a cheap initial quote, they are not saving you money. They are simply shifting the cost from the development phase to the maintenance phase, where they will charge you premium hourly rates to fix the technical debt they intentionally created."* — Enterprise TCO Axiom
+If a software agency gives you a cheap initial quote, they are not necessarily saving you money — they may simply be shifting the cost from the development phase, where it is visible and easy to compare across vendors, to the maintenance phase, where they (or your internal team) will pay premium rates to work around the technical debt that cheap quote required them to create.
 
 ## The Hidden Components of OpEx (The 80%)
 
@@ -70,6 +70,24 @@ Now compare a senior-governed team billing €75/hour with a rework rate closer 
 There is a second, compounding effect CFOs miss: **velocity decay.** As a low-governance codebase accumulates spaghetti code, the rework rate does not stay flat, it climbs, because every new feature has to navigate an increasingly fragile foundation. A team billing 30% rework in month one is frequently billing 55% rework by month nine. The nominal hourly rate on the invoice never changes; the effective rate you are actually paying quietly doubles.
 
 When you request quotes for your next project, ask every vendor for their historical rework rate and code review coverage, not just their hourly rate. It is the single number that most accurately predicts your true **app cost**.
+
+## A 5-Year TCO Model: Pricing Out the CFO's Original Three Bids
+
+Return to the opening scenario: Agency A at €50,000, Agency B at €60,000, and Manifera at €80,000, all for the same enterprise supply chain application. A CFO comparing these three numbers in a spreadsheet is comparing 20% of the picture. Below is a realistic, illustrative 5-year TCO model built from the cost categories already covered in this article, to show how the ranking inverts once OpEx is included.
+
+**Agency A (€50,000 initial CapEx, lowest-governance build):**
+- Year 1-5 cloud compute inefficiency (the AWS Tax from unoptimized queries): roughly €4,000-€6,000/month in avoidable spend once traffic scales, or €240,000-€360,000 cumulative over 5 years.
+- Technical debt interest on ongoing feature work: with a rework rate climbing from roughly 30% to 55% as described above, a team spending €80,000/year on incremental features is realistically paying €25,000-€40,000/year of that purely in rework, or €125,000-€200,000 over 5 years.
+- Security/compliance remediation: a single retroactive remediation to pass a GDPR or SOC 2 audit on a non-secure-by-design codebase commonly runs €30,000-€80,000 as a one-time hit.
+- **Illustrative 5-year total: roughly €445,000-€690,000**, against an initial quote of €50,000.
+
+**Manifera / Agency C (€80,000 initial CapEx, governed build):**
+- Cloud compute inefficiency: minimized by mandated query optimization and indexing from Day 1; a realistic residual is €500-€1,000/month, or €30,000-€60,000 cumulative over 5 years.
+- Technical debt interest: with TDD and CI/CD enforced, rework rates in the 5-10% range are realistic, meaning a comparable €80,000/year feature budget loses only €4,000-€8,000/year to rework, or €20,000-€40,000 over 5 years.
+- Security/compliance remediation: largely avoided because secure-by-design architecture is part of the original scope, not a retrofit; budget a smaller ongoing compliance review cost of roughly €5,000-€10,000/year, or €25,000-€50,000 over 5 years.
+- **Illustrative 5-year total: roughly €155,000-€230,000**, against an initial quote of €80,000.
+
+The gap between the two totals — commonly €250,000-€460,000 on a project of this size — dwarfs the €30,000 difference in the original quotes. This is not a claim that every project will land on these exact figures; the ranges depend heavily on traffic scale, industry, and compliance regime. It is a demonstration of the mechanism: the CFO who selects Agency A because it is €30,000 cheaper on paper is not saving €30,000, they are deferring a much larger bill and moving it from a budget line they can negotiate (a fixed-price development contract) to one they cannot (emergency remediation, cloud overages, and change-request fees billed after the fact, often at a worse hourly rate than the original quote).
 
 ## The Manifera TCO Optimization Strategy
 

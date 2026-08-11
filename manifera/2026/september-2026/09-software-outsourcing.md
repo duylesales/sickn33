@@ -39,13 +39,13 @@ Standard [offshore software development](https://www.manifera.com/services/offsh
 
 They use your simple expense portal as a paid training ground. 
 
-> *"Complexity is a liability, not an asset. If an agency uses Kubernetes to host an internal app with 50 users, they are not building your product; they are building their resumes on your dime."* — Pragmatic Architecture Standard
+This is not just an anecdotal complaint from frustrated CTOs — it has been formally studied. Researchers Jonas Fritzsch, Marvin Wyrich, Justus Bogner, and Stefan Wagner surveyed 591 software professionals (130 in hiring roles, 558 in technical roles) for their 2021 paper *"Résumé-Driven Development: A Definition and Empirical Characterization,"* presented at the 43rd International Conference on Software Engineering (ICSE-SEIS). They found that 60% of hiring professionals admitted that technology trends actively shape the job offerings and project proposals they write, and 82% of technical professionals believed that working with trending, hyped technologies makes them more marketable to future employers — regardless of whether that technology was the right fit for the project at hand. In other words, the incentive to over-engineer isn't a rare rogue-agency problem; it's a documented, majority-level pattern across the industry's hiring and staffing dynamics. Complexity is a liability, not an asset, when it's chosen for the builder's resume instead of the client's balance sheet.
 
 ## How to Audit an Agency's Architectural Intent
 
 When evaluating [custom software development](https://www.manifera.com/services/custom-software-development/) partners, CTOs must audit the agency's architectural restraint. Elite engineering is characterized by choosing the *simplest* possible architecture that safely fulfills the business requirement.
 
-Here are the three red flags of Resume-Driven Development to watch out for during procurement:
+Here are the four red flags of Resume-Driven Development to watch out for during procurement:
 
 ### 1. The Premature Microservices Pitch
 If an agency immediately suggests breaking your MVP into 15 microservices before they even understand your domain logic, they are practicing RDD. 
@@ -56,6 +56,17 @@ If the app just needs to read and write basic text records, a single PostgreSQL 
 
 ### 3. The "Hype-Cycle" Frontend
 Does a static content website need a complex Single Page Application (SPA) built with React and Redux? No. It could be built flawlessly with server-rendered HTML or HTMX, drastically reducing JavaScript bundle size and complexity. If the agency refuses to use simple, proven tools (like Laravel or Ruby on Rails) because they aren't "trending on Hacker News," they are prioritizing hype over business value.
+
+### 4. "AI-Washing" the Proposal
+The newest variant of Resume-Driven Development doesn't involve Kubernetes at all — it involves bolting an "AI agent," a vector database, and a custom RAG pipeline onto a feature that a simple rules-based form or a basic search query would solve perfectly well. Deloitte's 2024 Global Outsourcing Survey found that 83% of executives are already leveraging AI as part of their outsourced services, which means "we'll add an AI layer" is fast becoming the default line in every vendor pitch — appropriate for some problems, irrelevant noise for most internal tools. Ask the same question you'd ask about Kubernetes: what specific business requirement does the AI component solve that a conventional, deterministic piece of code cannot, and at what maintenance cost?
+
+## Why the Cost Argument for Outsourcing Is Already Changing
+
+For most of the last decade, the pitch for outsourcing was almost purely about cost arbitrage: hire offshore, pay less per hour, done. That framing is precisely what makes Resume-Driven Development so easy for agencies to hide inside — if the client is only checking the hourly rate, nobody is checking the architecture.
+
+That framing is shifting. Deloitte's 2024 Global Outsourcing Survey found that "cost savings" has fallen from being the primary driver for 70% of businesses in 2020 to just 34% today, with skilled talent, agility, and quality of delivery now weighted alongside price. Separately, 80% of executives surveyed said they plan to maintain or increase their investment in third-party outsourcing over the next year — meaning the outsourcing market isn't shrinking, but the buying criteria inside it are maturing. CTOs are no longer just asking "how cheap is the day rate?" They're asking "will this team make decisions I'd sign off on if I were reading the pull request myself?"
+
+This matters directly for the RDD problem. When cost was the only lens, an agency padding your project with Kubernetes and Kafka looked identical, on the invoice, to an agency building you a lean, maintainable monolith — both bill by the hour, and the complexity itself becomes billable time. As buyers increasingly evaluate outsourcing on delivered quality and long-term maintainability rather than sticker price alone, architectural restraint stops being a nice-to-have and becomes a genuine competitive differentiator for the vendor that practices it.
 
 ## The Real TCO: A Line-by-Line Cost Comparison
 
@@ -68,6 +79,8 @@ Let's return to the logistics company's 50-employee expense portal and put actua
 **The audit mechanism: Architecture Decision Records (ADRs).** The way a CTO enforces this discipline contractually is by requiring the agency to produce an Architecture Decision Record for every major technology choice before development starts. An ADR is a short, mandatory document that states: the business requirement, the options considered, the specific technology chosen, and — critically — the quantified reason it was chosen over the simpler alternative. If an agency cannot produce a one-paragraph ADR justifying Kubernetes over a PaaS with a real number (expected concurrent users, required uptime SLA, data volume), the decision was made for resume value, not business value. Making ADRs a contractual deliverable, reviewed before the first sprint, is the single most effective procurement safeguard against Resume-Driven Development.
 
 This isn't a theoretical exercise reserved for enterprise procurement teams. Even a small startup can insert a single clause into a statement of work: "Any technology choice beyond the agreed baseline stack requires a written ADR, approved by the client's technical advisor, before implementation begins." That one sentence shifts the burden of proof from the client (who often lacks the technical depth to challenge a confident sales engineer) onto the agency (who now has to defend every architectural flourish in writing, to someone accountable for the invoice). In our experience, agencies that genuinely practice architectural restraint welcome this clause without hesitation. Agencies practicing Resume-Driven Development quietly try to negotiate it out of the contract — which is itself a useful signal during vendor selection.
+
+The ADR format itself isn't a Manifera invention; it comes from Michael Nygard's widely-adopted 2011 essay *"Documenting Architecture Decisions,"* written while he was at Cognitect. Nygard's insight was that the hardest thing to reconstruct on a long-lived codebase isn't what was built, but *why* — the context and trade-offs that justified a technology choice at the time it was made. Seven years after Nygard's original post, Thoughtworks moved ADRs into the "Adopt" ring of its widely-read Technology Radar, signaling that the practice had graduated from a niche blogging idea to a mainstream engineering discipline. When Manifera requires an ADR for every non-baseline technology choice, we are applying a well-established industry practice, not inventing new procurement bureaucracy.
 
 ## The Manifera Principle of Architectural Restraint
 

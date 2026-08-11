@@ -40,7 +40,7 @@ If you build an app using [custom software development](https://www.manifera.com
 
 If you build an app on a Low-Code platform, the platform generates proprietary code that only runs on their specific servers. If the platform goes bankrupt, gets acquired, or decides to raise their prices by 500%, your enterprise is financially paralyzed. You cannot simply export the app and run it yourself. You have to rebuild the entire system from scratch.
 
-> *"Low-Code platforms are a mortgage on your future architecture. The initial down payment is cheap, but the monthly interest payments compound aggressively as you scale."* — Enterprise Architecture Standard
+Think of a Low-Code platform as a mortgage on your future architecture: the initial down payment is cheap, but the monthly interest payments compound aggressively as you scale and as your integration needs grow more complex. As Gregor Hohpe puts it on martinfowler.com, "avoiding one lock-in often comes at the expense of another one." Choosing a Low-Code platform to escape the upfront cost of custom development doesn't eliminate lock-in risk; it just trades an engineering-hours lock-in for a contractual, single-vendor one, and the second kind is usually far more expensive to escape once you've scaled on top of it.
 
 ## When to Use Custom Code vs. Mobile App Building Software
 
@@ -72,6 +72,28 @@ Shadow IT apps are rarely connected to the corporate Single Sign-On (SSO) or Ide
 Banning Low-Code outright doesn't work; business units will simply use it anyway with a personal credit card. Elite CIOs instead create a sanctioned sandbox: a single, IT-approved Low-Code platform, tied to corporate SSO, with a mandatory data classification review before any app touching customer data goes live. Any app that fails that review, or that needs to touch a system of record, is redirected into the custom software development pipeline instead.
 
 At Manifera, our Dutch Architects run this classification review as part of our Re-Platforming engagements. Before we migrate a single Shadow IT app to custom code, we first audit exactly what data it touches, who can access it, and whether it should ever have existed outside of IT's visibility in the first place.
+
+## Why This Trap Is Getting More Common, Not Less
+
+Low-Code adoption is not a niche trend the CIO stumbled into by accident; it is the direction the entire industry has been pushed. Gartner's Magic Quadrant research on enterprise Low-Code Application Platforms forecast that by 2025, 70% of new applications developed by enterprises would use low-code or no-code technologies, up from less than 25% in 2020. That is a structural shift in how enterprise software gets built, which means the lock-in trap described above is going to catch more CIOs, not fewer, as the years go on and the platforms become the default starting point rather than the exception.
+
+The Shadow IT problem compounds this. Gartner analysts estimate that shadow IT, technology spending that happens outside the formal IT organization, accounts for roughly 30-40% of total IT spending in large enterprises. Put those two figures together: a growing majority of new apps are being built on rentable, lock-in-prone platforms, and a large minority of enterprise tech spend is happening entirely outside the CIO's visibility. The Platinum Tier price shock in the opening story is not a one-off vendor being greedy; it is the predictable endpoint of an industry-wide default that most enterprises have not built the governance muscle to manage.
+
+### A Worked Cost Comparison: Platinum Tier vs. Re-Platforming
+
+To make the trade-off concrete, here is an illustrative comparison of the two paths available to the CIO in the opening scenario once the Oracle integration requirement surfaces. These are realistic planning figures for a mid-sized logistics mobile app, not one client's actual invoice.
+
+**Path A: Pay the vendor's Platinum Tier**
+- Licensing jumps from €2,000/month to €15,000/month, a €156,000/year increase.
+- Over a typical 4-year enterprise software horizon, that is roughly €624,000 in additional licensing spend for one integration capability.
+- The enterprise still does not own the code. If a second acquisition requires a different unsupported integration two years later, the same negotiation happens again from a position of zero leverage.
+
+**Path B: Re-Platform to custom code**
+- A React Native frontend with a decoupled Node.js/PostgreSQL backend, sized to the original app's actual complexity, typically runs €60,000-€120,000 as a one-time build cost for an app of this scope, delivered by a Hybrid Pod.
+- Ongoing hosting and maintenance on standard cloud infrastructure typically runs a low four-figure monthly sum, not a five-figure licensing fee, because the enterprise is paying for compute, not for a seat at the vendor's pricing table.
+- The Oracle integration, and any future integration, is now an engineering task the team scopes and controls, not a negotiation the vendor controls.
+
+Even before accounting for the strategic value of owning the IP outright, the Re-Platforming path typically breaks even against the Platinum Tier's incremental cost within the first 12-18 months, and every year after that is a growing net saving rather than a growing sunk cost.
 
 ## The Manifera Re-Platforming Strategy
 

@@ -38,7 +38,7 @@ Cloud providers (AWS, Azure, GCP) charge you based on *provisioned capacity*, no
 
 In a traditional monolithic architecture, if one single module (e.g., the PDF Invoice Generator) requires massive CPU power for just 10 minutes a day, you must provision the *entire server* to handle that peak load. For the remaining 23 hours and 50 minutes, you are paying thousands of euros for 64 idle CPU cores.
 
-> *"Cloud computing is only cheaper if your architecture is elastic. If your architecture is static, the cloud is significantly more expensive than bare metal."* — Standard Cloud Architecture Axiom
+Andreessen Horowitz general partners Sarah Wang and Martin Casado made the same point in their widely cited 2021 analysis of cloud spend across fifty public software companies: "For a new startup or a new project, the cloud is the obvious choice. And it is certainly worth paying even a moderate 'flexibility tax' for the nimbleness the cloud provides." The word "moderate" is doing the heavy lifting in that sentence. A flexibility tax is a reasonable price for elasticity you actually use. It becomes an unreasonable price the moment you provision a static, predictable workload — like a monolith with a known traffic curve — onto infrastructure priced for unpredictability.
 
 ## The Transition to Cloud-Native Architecture
 
@@ -83,6 +83,26 @@ The fix is architectural, not budgetary. Three patterns eliminate the majority o
 **3. Compression and Payload Discipline.** APIs that return uncompressed JSON, or that over-fetch entire object graphs when a client needs three fields, multiply egress volume for no functional benefit. Enforcing gzip/Brotli compression at the load balancer and auditing API contracts for over-fetching routinely cuts outbound data volume by 60-80% with zero user-facing change.
 
 None of this shows up on the architecture diagram the offshore agency hands you at go-live. It shows up three months later, buried on line 47 of the AWS invoice, described only as "EC2-Other." A migration audit that only checks whether the application *runs* in the cloud, without modeling data flow and egress exposure, is not a complete audit.
+
+## The Waste Is Not Hypothetical: What the Industry Data Shows
+
+Flexera's *2026 State of the Cloud Report* found that organizations estimate 29% of their public cloud spend is wasted — the first increase in that figure in five years, driven largely by AI workloads bolted onto infrastructure that was never right-sized to begin with. The same report found that 76% of large enterprises now spend more than $5 million a month on public cloud. At that scale, a 29% waste rate is not a rounding error; it is tens of millions of euros a year evaporating into idle capacity, orphaned snapshots, and over-provisioned instances that nobody audits because the bill is paid automatically and nobody owns the line item.
+
+This is precisely the failure mode "Lift and Shift" produces, and it is why some companies eventually go further than re-architecting — they repatriate entirely. The most visible example is 37signals (the company behind Basecamp and HEY), whose founder David Heinemeier Hansson documented the company's move off AWS in detail between 2022 and 2025. 37signals reported cutting its annual cloud infrastructure bill from roughly $3.2 million to $1.3 million after moving compute and storage to owned hardware, and projected more than $10 million in savings over five years including the avoided cost of continued cloud growth. The lesson for most Manifera clients is not "leave the cloud" — for elastic, bursty, or fast-growing workloads the cloud remains the right default, exactly as Wang and Casado argued. The lesson is that 37signals only knew repatriation made sense because they had first measured, with precision, what their *actual* elastic compute needs were versus what they were provisioning. Most companies stuck in "Lift and Shift" never do that measurement at all — they simply pay whatever the invoice says.
+
+### A Worked Comparison: Static VM vs. Cloud-Native for a Mid-Size SaaS Workload
+
+To make the abstract math concrete, consider a representative (illustrative, not client-specific) workload: a B2B SaaS platform with 40,000 monthly active users, a Postgres database, a document-generation feature used by roughly 8% of sessions, and traffic that peaks 3x above baseline during business hours in one time zone.
+
+| Cost Driver | "Lift & Shift" Baseline | Re-Architected Cloud-Native |
+|---|---|---|
+| Compute | One always-on 32-vCPU EC2 instance sized for peak load, running 24/7 | Auto-scaling container group (2-10 tasks) sized for actual demand curve |
+| Database | Self-managed PostgreSQL on a second EC2 instance, manual backups | Amazon RDS Multi-AZ, automated backups and patching |
+| Document Generation | Runs on the same monolith instance, competing for CPU with user traffic | Extracted to AWS Lambda, billed per invocation |
+| Estimated Monthly Compute + DB Spend | €9,000–€11,000 (paying for peak capacity around the clock) | €3,500–€4,800 (paying for actual utilization plus managed-service premium) |
+| Engineering Time on Infrastructure | 15-20% of one senior engineer's time on patching, backups, capacity planning | Under 5%, reallocated to product work |
+
+The point of this table is not that every workload saves 60% by re-architecting — savings vary widely by traffic shape. The point is that the gap between the two columns is *structural*, not a matter of shopping for a better hosting deal. An offshore agency that only migrates code, without touching the architecture, leaves you permanently in the left column no matter which cloud provider you choose.
 
 ## The Manifera Cloud Governance Standard
 

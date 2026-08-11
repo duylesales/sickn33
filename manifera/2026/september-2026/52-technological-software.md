@@ -44,7 +44,9 @@ Over 15 years, hundreds of developers added tiny, hyper-specific business rules 
 
 When a new team attempts a Big Bang rewrite, they look at the modern requirements document. They inevitably miss the undocumented historical rules. When they turn off the old system, all of those hidden rules are destroyed, and the business process breaks.
 
-> *"A Big Bang Rewrite is an exercise in corporate arrogance. You are assuming your new team can perfectly recreate in 18 months what took 15 years of hard-fought evolution to build."* — Enterprise Migration Axiom
+> *"They did it by making the single worst strategic mistake that any software company can make: They decided to rewrite the code from scratch."* — **Joel Spolsky**, "Things You Should Never Do, Part I," joelonsoftware.com (2000)
+
+Spolsky wrote that line about Netscape, whose engineers spent roughly three years rebuilding the browser from the ground up while their market share collapsed out from under them — a rewrite so long that by the time it shipped, the world had moved on. The specific technology changes every decade; the underlying failure mode Spolsky described has not changed at all.
 
 ## The Strangler Fig Rescue Strategy
 
@@ -63,6 +65,14 @@ You update the API Gateway. Now, when a user updates their picture, the Gateway 
 
 If the new code has a bug, the blast radius is contained to just the profile pictures. You fix it, and you move to the next feature. Over the course of 18 months, you slowly route more and more traffic to the new services, "strangling" the old Java monolith until no traffic hits it anymore, and you safely delete it. 
 
+## This Is Not Hypothetical: The TSB Bank Migration
+
+Enterprise leaders sometimes assume that a well-funded, professionally staffed Big Bang migration is a different, safer category of risk than the composite scenario above. The TSB Bank migration says otherwise, and it happened at a scale that generated a UK parliamentary inquiry and a regulatory fine.
+
+In April 2018, TSB Bank — a UK high-street bank with 5.2 million customers — migrated off Lloyds Banking Group's legacy infrastructure onto a new core banking platform, Proteo4UK, built by its Spanish parent, Sabadell. It was executed as a cutover migration: switch off the old platform, switch on the new one. Within hours, the new system buckled. For five days, customers were locked out of online banking, some could see other customers' account balances and transaction histories, and money appeared to vanish from accounts. It took TSB until December 2018 — eight months — to fully stabilize the platform. The subsequent regulatory investigation by the FCA and PRA found that two of the data centres underpinning the new platform had never been load-tested before go-live, and fined TSB £48.6 million for its operational failures, on top of £32.7 million paid out in direct customer redress.
+
+The TSB case is instructive precisely because it was not a scrappy startup cutting corners — it was a regulated bank with a professional systems integrator, a fixed migration weekend, and (on paper) a tested plan. What it lacked was exactly what the Strangler Fig pattern is designed to force: a way to discover a fatal flaw against a small slice of real traffic *before* betting the entire customer base on a single cutover weekend.
+
 ## The Dual-Write Data Consistency Problem
 
 The Strangler Fig pattern solves the *traffic routing* problem, but it exposes a second, harder problem that most CIOs never anticipate: during the migration, both the old Java monolith and the new microservices frequently need to read and write the *same* data. If the "Update Profile Picture" microservice needs to know a customer's name and policy number, and that data lives inside the legacy Java database, where does it live during the 18-month transition?
@@ -78,6 +88,14 @@ The new microservices subscribe to this event stream and maintain their *own* lo
 ### Why Reconciliation Jobs Are Non-Negotiable
 
 Event streams can occasionally drop or duplicate a message during network blips. Elite teams never trust CDC blindly — they run a nightly reconciliation job that diffs a sample of records between the legacy source of truth and the new service's local copy, alerting an engineer if drift exceeds a defined threshold (e.g., 0.01%). This catches silent data drift months before it would otherwise surface as a customer-facing billing discrepancy.
+
+## The Math: Why Enterprises Still Choose Strangler Fig Despite the Extra Overhead
+
+CIOs evaluating the two approaches often fixate on one honest downside of the Strangler Fig pattern: for the duration of the migration, you are paying to build and operate two systems, plus the API Gateway and Change Data Capture pipeline connecting them. It is fair to ask whether that overhead is worth it.
+
+For a mid-sized legacy modernization — a core system serving tens of thousands of customers rather than TSB's millions — a realistic budget breakdown looks like this. A Big Bang rewrite of an 18-month scope might run €1.5-2.5 million in pure development cost, all spent before a single real customer has touched the new system. A Strangler Fig migration of equivalent scope typically costs 15-30% more in raw engineering hours — call it €1.8-3.2 million — because of the Gateway, the CDC pipeline, and the reconciliation tooling described above. On a spreadsheet, Strangler Fig looks like the more expensive option.
+
+What the spreadsheet omits is the cost of failure, and failure in a Big Bang cutover is not a tail risk — it is the modal outcome for large, undocumented legacy systems. TSB's failure cost £48.6 million in fines alone, before counting £32.7 million in customer redress, the cost of the eight-month stabilization effort, and the reputational damage of a parliamentary inquiry. A Strangler Fig migration converts that catastrophic, all-or-nothing tail risk into a series of small, contained, individually cheap failures: if the "update profile picture" microservice has a bug, it affects profile pictures, not the customer's entire banking relationship. The 15-30% premium is, in effect, the price of converting an existential risk into a routine engineering cost — which is why virtually every enterprise migration playbook published by a major cloud vendor or systems integrator now recommends incremental strangler-style migration as the default for any system with real production traffic, reserving Big Bang rewrites for small, low-stakes, or genuinely greenfield systems.
 
 ## Safe Modernization with Manifera
 

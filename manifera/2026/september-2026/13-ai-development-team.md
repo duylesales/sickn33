@@ -38,7 +38,7 @@ In enterprise architecture, this is an illusion.
 
 If your LLM requires a 500-word, highly complex prompt just to stop it from hallucinating or behaving erratically, you have an architecture problem, not a wording problem. Elite teams solve hallucinations with *Data Grounding* (RAG pipelines), not with better adjectives in a prompt.
 
-> *"Prompt Engineering is a feature of a software engineer, not a job title. If a candidate only knows how to write prompts, but cannot write the Python code to orchestrate a Vector Database, they cannot build enterprise AI."* — AI Team Architecture Axiom
+This is not a controversial position inside serious engineering organizations. Prompt engineering is a skill a software engineer applies, not a standalone job description. A candidate who can write elegant, highly articulate text instructions but cannot write the Python or TypeScript code to orchestrate a Vector Database, wire an evaluation pipeline, or gracefully handle a malformed API response is not equipped to build enterprise AI. They are equipped to demo it.
 
 ## The True Structure of an AI Development Team
 
@@ -55,6 +55,8 @@ The MLOps engineer ensures that when you switch from OpenAI's GPT-4 to an open-s
 ### 3. The Security / Governance Architect (The Firewall)
 LLMs execute natural language as code, making them highly vulnerable to Prompt Injection and SSRF attacks. 
 The Security Architect ensures that Local PII Masking models run *before* data is sent to the cloud. They build "Validator LLMs" that act as firewalls, aggressively scanning user input to block malicious hacking attempts before they reach the core business logic.
+
+This is not a hypothetical risk. The OWASP Top 10 for LLM Applications, updated for its 2025 edition, ranks Prompt Injection as the number one risk facing LLM-powered applications for the second consecutive edition, ahead of sensitive information disclosure, supply-chain attacks, and excessive agent permissions. OWASP's own analysis notes that because LLMs process instructions and untrusted data through the same input channel, an attacker can craft content that the model interprets as a new command rather than as text to summarize or analyze, and the model has no reliable way to tell the difference on its own. A Security Architect who understands this failure mode designs around it at the system level (least-privilege tool access, input/output filtering, human approval gates on high-risk actions); a Prompt Engineer can only ask the model nicely not to fall for it.
 
 ## The Missing Role: AI FinOps and Model Routing
 
@@ -78,6 +80,31 @@ Every unnecessary token sent to the model, whether it's a bloated system prompt,
 Autonomous or "agentic" AI workflows, where the model can call tools and re-prompt itself, introduce a new failure mode: runaway loops. Without a hard ceiling on iterations or a cost-per-session cap, a single malfunctioning agent can burn through thousands of dollars in API calls in an hour. AI FinOps engineers build circuit breakers, hard iteration limits and per-session token budgets, into the orchestration layer itself, not as an afterthought.
 
 Without this function, your Data Engineers and MLOps team can build a technically correct AI system that is also a financial liability. Cost governance is not an accounting exercise bolted on after launch; it is an architectural decision made at the same table as the RAG pipeline design.
+
+## The 30% Failure Rate Gartner Keeps Tracking
+
+In July 2024, Gartner predicted that at least 30% of generative AI projects would be abandoned after proof of concept by the end of 2025. Gartner analyst Rita Sallam attributed this to four causes: poor data quality, inadequate risk controls, escalating costs, and unclear business value.
+
+Look closely at that list. Three of the four causes are not "AI problems" in the sense that a smarter model or a cleverer prompt could fix them. They are team-composition problems. A pod of three Prompt Engineers has no answer to "poor data quality" because there is no Data Engineer building the pipeline. It has no answer to "inadequate risk controls" because there is no Security Architect building the PII masking layer. It has no answer to "escalating costs" because there is no AI FinOps function watching token spend. The abandonment rate is not a verdict on generative AI; it is a verdict on how most companies staffed the project.
+
+### Putting Numbers on the Two Paths
+
+To make this concrete, here is an illustrative comparison of what a 12-month enterprise RAG build tends to look like under each staffing model. These are realistic planning estimates, not figures from a specific client engagement, and actual numbers will vary with data complexity and use case.
+
+**Path A: The Prompt Engineer Team**
+- 3x Prompt Engineers (junior/mid-level, no pipeline experience): roughly €300,000-350,000/year fully loaded
+- No Data Engineer on the team: source documents stay unstructured, and retrieval accuracy typically plateaus in the 60-65% range
+- No MLOps function: model drift goes undetected until end users notice degraded answers
+- No FinOps function: every request routes to the flagship model, and token spend grows without a ceiling
+- Common outcome: the CISO blocks production launch over PII exposure around month 5-6, and the project restarts from the architecture stage, with the first 5-6 months of salary effectively sunk
+
+**Path B: A Properly Staffed AI Pod (Data Engineer + MLOps + Security Architect + integration engineer)**
+- A 4-person Hybrid Pod, Dutch AI Architect for governance plus Vietnamese engineers for execution, typically lands at a comparable or lower blended annual cost than three EU/US-based Prompt Engineers
+- A properly chunked, grounded RAG pipeline: well-implemented enterprise RAG commonly reaches 85-90%+ retrieval accuracy, versus the 60-65% ceiling of an ungrounded prompt-only approach
+- PII masking and a Validator LLM firewall are built into the architecture before launch, not retrofitted after a compliance block
+- A model router from day one, sending the 70-80% of routine traffic described earlier to a cheaper model tier
+
+The direction of that comparison is exactly what Gartner's abandonment data describes at the industry level: projects fail because the missing roles were structural, not because the underlying technology doesn't work.
 
 ## The Manifera AI Pod Architecture
 

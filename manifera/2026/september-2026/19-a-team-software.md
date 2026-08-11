@@ -39,7 +39,9 @@ If you have a Hero Developer, your Bus Factor is 1. This is financially unaccept
 
 Hero Developers create technical debt by hoarding knowledge. Because they are always under pressure to save the day, they write clever, highly optimized code that only they can read. They bypass the CI/CD pipeline because "it's an emergency." They refuse to write documentation because "the code is self-explanatory."
 
-> *"If your system requires a hero to keep it running, you have a broken system. Elite architecture is boring, predictable, and maintainable by any competent engineer."* — Enterprise DevOps Axiom
+If a system requires a hero to keep it running, that is a broken system, not a badge of honor. Elite architecture is boring, predictable, and maintainable by any competent engineer who joins the team — heroics are a symptom of missing process, not a substitute for one.
+
+Academic research backs this up with hard numbers, not just intuition. Avelino et al. ran an automated Truck Factor analysis on 133 popular GitHub projects and found that 65% of them had a Truck Factor of 2 or lower — meaning two departures or fewer would be enough to stall the majority of these codebases, most of which had far more than two contributors on paper. The knowledge concentration problem is not rare or theoretical; it is the default state of most software projects unless a team actively works against it.
 
 ## Transitioning to "A Team Software" Architecture
 
@@ -68,6 +70,25 @@ Two follow-up checks make the audit more reliable:
 - **Audit your CODEOWNERS file for convenience-based single ownership.** Many teams set up `CODEOWNERS` with one name per critical directory simply because it was fastest to configure at the time. This is a governance shortcut that quietly codifies the Hero Developer pattern into your tooling. Require a minimum of two owners per critical path, and rotate the secondary owner every quarter so the knowledge stays fresh rather than becoming a second, equally fragile point of failure.
 
 At Manifera, our Dutch Tech Leads run this exact git blame audit on every engineering pod at the start of a quarter, and again before any team restructuring. It is also the first thing we run when we inherit a codebase from a previous agency during a migration, because it tells us within the hour exactly where the client's hidden operational risk is concentrated, before we write a single line of new code.
+
+## What a Bus Factor of 1 Actually Costs: A Worked Scenario
+
+CTOs tend to treat the Hero Developer problem as a cultural issue rather than a financial one. It is easier to justify fixing a line item than fixing a "vibe," so it helps to put a number on it. Consider a hypothetical but realistic mid-market SaaS company with 18 engineers and one architect, "the Hero," who owns the billing engine, the auth middleware, and the core data pipeline end to end.
+
+**Scenario A: The Hero resigns with four weeks' notice.**
+
+- Replacement search for a senior engineer with comparable domain depth: 10-16 weeks in most European markets, plus a recruiting fee typically running 20-25% of first-year salary.
+- Onboarding-to-productive ramp for the replacement on an undocumented, single-author codebase: realistically 3-6 months before they can ship in the billing engine unsupervised, because there is no documentation and no second reviewer to sanity-check their mental model.
+- During that ramp window, feature velocity on billing and auth doesn't just slow — it typically stalls almost entirely, because any change is high-risk without a second person able to validate it. If that team was carrying roughly €40,000-€60,000 a month in fully loaded engineering cost against those modules, a conservative 4-month stall represents €160,000-€240,000 of near-zero-output spend, before recruiting fees and severance are even added.
+- Add the compliance exposure: if the billing engine touches payment data, an undocumented handover during a PCI-DSS or SOC 2 audit window can trigger findings that a well-documented, multi-owner system would never generate.
+
+**Scenario B: The same company had a Bus Factor of 3 on every critical module.**
+
+- The departure is still disruptive, but two remaining engineers already have working knowledge of the billing engine because they've been required co-reviewers on every PR touching it for the past year.
+- Ramp time for a new hire drops to 4-6 weeks, because the two remaining owners can review, pair, and correct in real time instead of the new hire reverse-engineering undocumented logic alone.
+- The realistic cost delta between Scenario A and Scenario B, on a module of this size, is commonly in the €100,000-€200,000 range once you total the stalled velocity, the rushed recruiting premium, and the audit remediation risk — money that funds an entire quarter of a second engineering pod.
+
+The math holds regardless of the exact multiples for your organization: the cost of the Hero Developer anti-pattern is not paid when the Hero leaves. It is paid every day beforehand, in the form of a fragile system that nobody priced correctly because it looked fast until the day it wasn't.
 
 ## The Manifera Governance Standard
 

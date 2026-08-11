@@ -48,12 +48,14 @@ If you spend 90% of your initial capital just to reach version 1.0, you are math
 An MVP is a hypothesis. When real users touch your app, you will discover that 50% of the features you paid for are useless, and the users desperately want a feature you didn't build. You must have the engineering budget to aggressively pivot and rewrite code *after* launch. 
 
 ### 2. The Cost of DevOps and Uptime
-Software is not a house; it is a living organism that constantly decays. Operating systems update, third-party APIs deprecate, and servers crash under load. You cannot just launch an app and leave it. You must budget for ongoing DevOps engineering to keep the lights on and the data secure.
+Software is not a house; it is a living organism that constantly decays. Operating systems update, third-party APIs deprecate, and servers crash under load. You cannot just launch an app and leave it. You must budget for ongoing DevOps engineering to keep the lights on and the data secure. This is not a niche opinion — software economist Barry Boehm's foundational research on maintenance costs, and the industry benchmarks that followed it, consistently put ongoing annual maintenance for a reasonably well-built system at roughly 15-25% of the original development cost, climbing significantly higher for codebases carrying heavy technical debt. If your MVP cost €45,000 to build, budgeting anything less than €7,000-€11,000 for its first full year of upkeep is optimistic to the point of denial.
 
 ### 3. The Cost of Customer Acquisition (CAC)
 Many founders believe "If I build it, they will come." This is false. In B2B SaaS, acquiring a single paying customer can easily cost €500 to €2,000 in marketing and sales effort. If you spent your entire budget on offshore developers, you cannot afford to acquire the users needed to generate revenue.
 
-> *"An app is just a liability on a server until a user pays for it. If you spend all your money building the liability, you have no money left to acquire the asset."* — Startup Economics Axiom
+An app is just a liability on a server until a user pays for it, and if you spend all your money building it, you have nothing left to acquire the customers who would turn it into an asset. Paul Graham, co-founder of Y Combinator, made essentially this argument in his essay "How Not to Die": *"If you just make something people want and don't spend too much money, you are way ahead."* His broader point in that essay is that startups rarely die from a bad idea — they die from spending their runway before they have the chance to find out whether the idea was any good.
+
+CB Insights' analysis of startup post-mortems backs this up with hard numbers. In its widely cited breakdown of why startups fail, running out of cash and no market need are consistently the two leading causes, and unsustainable unit economics and poor product-market fit both trail close behind. Notice what is missing from that list: "the code had bugs" or "the app wasn't polished enough." The MVP illusion kills companies not because the app itself was badly built, but because the founder had nothing left to discover, fix, or sell once it was.
 
 ## Validate Before You Build: The Smoke Test Layer
 
@@ -66,6 +68,23 @@ The single biggest lever a founder has to avoid the MVP Illusion is not spending
 
 ### Why This Changes the Financing Conversation
 A founder who walks into an agency having already proven, via a smoke test, that 200 people pre-paid a deposit is in a fundamentally different negotiating position than one with only an idea on a slide. It also changes what gets built first: instead of guessing which features matter, the engineering budget goes directly toward automating the exact workflow that paying customers already demonstrated they want, cutting the risk of building the wrong MVP down dramatically. Manifera routinely advises founders to run this validation layer themselves, for free, before we write a single line of billable code.
+
+## Rebuilding the €50,000 Budget, Line by Line
+
+Return to the founder from the opening story, but this time walk through how a disciplined €50,000 seed budget should actually be allocated across the first 12 months, instead of front-loading nearly all of it into the initial build.
+
+| Category | Naive Allocation (MVP Illusion) | Disciplined Allocation |
+|---|---|---|
+| Initial MVP build | €45,000 (90%) | €22,000 (44%) |
+| Cloud infrastructure (Year 1) | €0 budgeted, discovered later | €4,000 (8%) |
+| Bug fixes & emergency maintenance | €0 budgeted, discovered later | €5,000 (10%) |
+| Post-launch iteration (2-3 feature cycles) | €0 budgeted, discovered later | €9,000 (18%) |
+| Customer acquisition experiments | €5,000 (10%) | €10,000 (20%) |
+| **Total** | **€50,000** | **€50,000** |
+
+The naive allocation is not reckless on paper — it looks like 90% product, 10% marketing, a plan any founder could defend in a pitch deck. The problem only surfaces after signing: cloud hosting, emergency bug fixes, and the first round of "the users actually want X, not Y" rework were never line items at all, because nobody budgeted for the fact that software requires upkeep and iteration from day one. They get paid for anyway, just later and under duress, by silently cannibalizing the customer acquisition budget that was supposed to generate revenue.
+
+The disciplined allocation reaches a smaller, more tightly scoped MVP (roughly half the feature list of the naive version) specifically so that infrastructure, maintenance, and at least two rounds of post-launch iteration are funded from the start, and customer acquisition gets double the budget. A smaller MVP that survives contact with real users and has money left to fix what it gets wrong will consistently outperform a feature-complete MVP that runs out of runway before anyone outside the founding team has used it.
 
 ## The Manifera MVP Strategy
 

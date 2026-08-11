@@ -45,7 +45,17 @@ When you adopt a trendy new framework (instead of a boring, battle-tested one), 
 2.  **The Dependency Collapse:** Modern UIs rely on third-party libraries (e.g., date pickers, data grids). If you use a fringe framework, those libraries don't exist yet. Your team has to manually build complex components from scratch, destroying your engineering velocity.
 3.  **The Talent Trap:** If your developers build the app in an obscure framework and then quit, you cannot replace them. You have a "Bus Factor" of zero.
 
-> *"If a framework has not survived five years of production enterprise traffic, it is an experiment, not a technology. Do not use your company's core product as a testing ground for another developer's experiment."* — Enterprise Architecture Axiom
+> *"The nice thing about boringness (so constrained) is that the capabilities of these things are well understood. But more importantly, their failure modes are well understood."* — **Dan McKinley**, "Choose Boring Technology" (mcfunley.com)
+
+McKinley's essay, still one of the most cited pieces of engineering writing in the industry, frames every technology choice as spending a scarce "innovation token": a team only has a handful to spend, and burning one on a two-year-old frontend framework instead of on the actual product is rarely a good trade.
+
+## This Is Not Hypothetical: The AngularJS Precedent
+
+Skeptical readers should treat the opening scenario as a composite, but the underlying dynamic has already happened at internet scale, in public, with dates attached.
+
+AngularJS — the original 1.x framework Google released in 2010, not the unrelated "Angular" 2+ rewrite that replaced it — was for years the default choice for enterprise single-page applications. Google put it into long-term support in mid-2018 and, after a three-year runway, ended official support entirely on 31 December 2021. By that point, an estimated 370,000-plus production websites were still running on it. Teams that had built their core product on AngularJS in 2015 or 2016 were, by 2022, running an unsupported, security-patch-free framework with a shrinking pool of developers who knew it — precisely the trap described above. The demand from stranded enterprises was large enough that a commercial vendor, HeroDevs, launched a paid "Never-Ending Support" contract on 1 January 2022 specifically to sell security patches for a framework its own creator had stopped maintaining. npm download data shows AngularJS usage declining only gradually since then — from roughly 639,000 weekly downloads at end-of-support to around 419,000 by early 2025 — which is itself evidence of how expensive and slow it is to migrate off a dead frontend framework once a business is dependent on it.
+
+The lesson generalizes beyond AngularJS. Frameworks that looked like safe enterprise bets in their moment — Backbone.js, Ember (in its dominant era), Knockout.js — followed the same arc: dominant, then niche, then a maintenance liability inside a five-to-eight-year window. React and Vue have so far avoided this fate through sheer scale of adoption, which is exactly why the 2025 Stack Overflow Developer Survey still puts React at 46.9% usage among professional developers and Node.js at 49.1% — high enough that "boring" and "current" are, for now, the same choice. jQuery, released in 2006, still shows up in 24.1% of professional developer stacks in the same survey: not because it is cutting-edge, but because migrating off any framework that is deeply wired into a production UI is expensive enough that companies delay it for a decade or more once they're locked in. That is the real cost curve this article is describing — not a hypothetical.
 
 ## Future-Proofing the Frontend (The Decoupled Architecture)
 
@@ -72,6 +82,22 @@ The name comes from the strangler fig vine, which grows around a host tree, grad
 4. **Delete the old codebase only when the last screen is migrated.** At that point, the "tree" has been fully replaced and can be safely removed.
 
 The decisive advantage is that the business keeps shipping features throughout the migration — new work happens exclusively in the new framework, so every sprint simultaneously ships product value *and* pays down the technical debt, rather than treating the rewrite as a separate, feature-frozen project competing for the same roadmap slot. A Strangler Fig migration typically costs more in total engineering hours than a big-bang rewrite, but it converts an unacceptable six-month revenue freeze into a background process the business barely notices.
+
+## The Math: Big-Bang Rewrite vs. Strangler Fig
+
+Put concrete numbers on the two paths and the case for the Strangler Fig approach stops being a matter of taste. Take a mid-sized SaaS platform with a 12-engineer team, a fully-loaded cost of roughly €7,000 per engineer per month (a reasonable blended European/offshore rate), and a frontend of around 80 distinct screens built on a framework that has lost community support.
+
+**Path A — the big-bang rewrite.** The CTO freezes new features, dedicates the full team to the rewrite for six months, and ships nothing else in the interim.
+- Engineering cost: 12 engineers × 6 months × €7,000 ≈ **€504,000**
+- Opportunity cost: zero net-new features or fixes reach customers for two full quarters, which for a growth-stage SaaS business typically shows up as flat or declining net revenue retention during the freeze — a cost that doesn't appear on the invoice but shows up in the board deck.
+- Risk: a single six-month, high-stakes cutover is also a single point of failure. If the rewrite runs long (common with big-bang rewrites), the freeze extends and the opportunity cost compounds.
+
+**Path B — the Strangler Fig migration.** The team allocates roughly 30% of its capacity to migrating screens, in priority order, while the remaining 70% keeps shipping the normal roadmap.
+- Engineering cost: because old and new frontends coexist, total engineering hours spent on the migration itself typically run 15-25% higher than a pure rewrite (routing shell, dual maintenance windows, regression testing across two stacks). At the upper end, that is roughly €504,000 × 1.25 ≈ **€630,000** spread across 14-18 months instead of 6.
+- Opportunity cost: effectively zero — 70% of the roadmap ships on schedule every sprint throughout the migration.
+- Risk: spread across dozens of small cutovers instead of one big one, so a bad migration of a single low-traffic screen never threatens the whole business.
+
+The Strangler Fig path costs more in raw engineering hours, but it eliminates the six-month revenue freeze entirely, which is why it is the default recommendation for any enterprise that cannot afford to stop shipping — which, in practice, is nearly all of them. The exception is a product small enough (under roughly 15-20 screens) that a rewrite genuinely fits inside a few sprints; below that size, the routing-shell overhead of a Strangler Fig migration can cost more than it saves.
 
 ## The Manifera Architectural Mandate
 

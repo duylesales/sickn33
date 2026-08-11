@@ -20,7 +20,7 @@ Content Format: Productivity Analysis & Engineering Strategy
 }
 </script>
 
-A CEO reads a McKinsey report stating that generative AI can increase software engineering productivity by 40%. The CEO calculates their payroll, buys enterprise licenses for **AI tools for software development** (like GitHub Copilot), and immediately asks the VP of Engineering: 
+A CEO reads McKinsey's *"Unleashing developer productivity with generative AI"* report, which found that generative AI coding assistants can help engineers write new code 35-45% faster and refactor existing code 20-30% faster. The CEO calculates their payroll, buys enterprise licenses for **AI tools for software development** (like GitHub Copilot), and immediately asks the VP of Engineering: 
 
 *"If our team is 40% faster, can we reduce our offshore engineering headcount by 40%?"*
 
@@ -43,7 +43,7 @@ However, the AI has no macro-level understanding of the enterprise architecture.
 
 The AI is a hyper-fast junior developer that never stops typing. If you leave a junior developer unsupervised, they create technical debt. If you leave an AI unsupervised, it creates technical debt at lightspeed.
 
-> *"AI tools make it incredibly easy to write code that you do not understand. If an engineer does not understand the code they just merged, they cannot debug it when it breaks in production at 2:00 AM."* — Enterprise Architecture Axiom
+This is really just a modern, faster-moving version of an old truth about code complexity. Brian Kernighan — co-author of *The Elements of Programming Style* and the C programming language itself — wrote: *"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."* An AI-generated function is, from the reviewing engineer's perspective, exactly as "clever" and unfamiliar as code written by someone else — except it can appear at ten times the volume, all merged into pull requests that a stretched-thin offshore team is under pressure to approve quickly. If the engineer merging that code cannot reconstruct why it works, Kernighan's law says they have no real chance of fixing it when it fails in production at 2:00 AM.
 
 ## The True ROI of AI: Architectural Velocity
 
@@ -70,6 +70,12 @@ This is not a theoretical concern reserved for legal departments. It is precisel
 The mitigation is a specific, auditable practice, not a vague promise: run all AI-generated code through automated license-scanning tools (such as FOSSA, Black Duck, or the open-source `licensee` gem) as a mandatory CI/CD pipeline step, exactly like a security scan. Modern AI coding tools, including GitHub Copilot's enterprise tier, also offer a built-in "public code matching" filter that blocks suggestions matching known public repositories above a similarity threshold — but this filter must be explicitly enabled, and many low-cost offshore agencies never turn it on because it occasionally slows down or blocks a helpful suggestion.
 
 A disciplined engineering organization treats "where did this code come from" as seriously as "does this code work." Every AI-assisted Pull Request should carry the same provenance scrutiny as a security scan, because an unreviewed license contamination issue doesn't just create technical debt — it creates a legal liability that can resurface at the worst possible moment: during due diligence, right before your company's valuation is finalized.
+
+## The Volume Problem Is Not Theoretical — It's Already Here
+
+Skeptical VP Engineerings sometimes assume this is a future risk, not a present one. GitHub's own data says otherwise. According to GitHub's 2025 Octoverse report, the Copilot coding agent alone authored more than 1 million pull requests in its first five months of general availability, and 80% of new developers on the platform now use Copilot within their very first week of writing code. A year earlier, the 2024 Octoverse report recorded a 98% year-over-year increase in the number of generative-AI-related projects on GitHub and a 59% surge in contributions to them. This is not a slow, controlled rollout of a new tool — it is a step-change in the sheer volume of machine-generated code entering codebases industry-wide, arriving faster than most engineering organizations have adapted their review processes.
+
+That volume is precisely what makes the "Code Reviewer" shift described above non-optional rather than aspirational. When one senior engineer used to review perhaps a dozen human-written pull requests a week, an AI-augmented team can generate several times that volume in the same period. If the reviewing discipline, the automated test coverage, and the architectural governance don't scale up to match, the sheer throughput of AI code generation guarantees that unreviewed, poorly understood code reaches production faster than any team could previously have shipped bugs by hand.
 
 ## The Manifera Approach to AI-Augmented Engineering
 

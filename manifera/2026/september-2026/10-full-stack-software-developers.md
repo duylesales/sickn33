@@ -30,7 +30,7 @@ It doesn't.
 
 As a software system scales in complexity, forcing generalists to do specialist work leads to mediocre code across the entire stack.
 
-> *"A Full Stack Developer at the enterprise level is usually someone who writes mediocre SQL and mediocre React. To scale securely, you must stop hiring generalists and start building T-shaped pods."* — Enterprise Team Architecture Axiom
+The "T-shaped" framing itself comes from outside software entirely. IDEO CEO Tim Brown, describing how his design firm hires, put it this way: *"They have a principal skill that describes the vertical leg of the T — they're mechanical engineers or industrial designers. But they are so empathetic that they can branch out into other skills, such as anthropology, and do them as well."* The concept traces back further still, to a 1980s McKinsey hiring framework later popularized by a 1991 talk on engineers by David Guest. The lesson generalizes cleanly to engineering teams: the horizontal bar (broad, working fluency across the stack) lets a specialist communicate and collaborate; the vertical bar (deep, elite mastery in one domain) is what actually produces defensible, production-grade work. A resume that claims "Full Stack" without a vertical bar is, in Brown's framing, not T-shaped — it's flat.
 
 ## The Deep Complexity of the Modern Stack
 
@@ -74,6 +74,22 @@ Instead, use a two-part litmus test that forces the candidate to reveal their ac
 The diagnostic signal isn't whether the candidate nails both answers — almost nobody does, and that's the point. It's *how* they handle the question outside their specialty. A genuine T-shaped specialist will say, "That's not my deep area, but here's my working-level understanding," and give a reasonable, humble answer. A candidate who has built their resume entirely around the "Full Stack" label will often bluff confidently on both questions with surface-level buzzwords, because admitting a gap threatens the premise their entire personal brand is built on.
 
 Hiring managers who run this two-question test during technical screens report that it takes under fifteen minutes and reliably surfaces which candidates have one deep vertical of mastery (true T-shaped engineers) versus which have memorized a broad but shallow horizontal layer across the whole stack.
+
+## What "Full Stack" Actually Means in the Labor Market
+
+It's worth being precise about how common the "Full Stack" self-identification actually is, because the scale of the label matters for hiring strategy. In the 2024 Stack Overflow Developer Survey — the largest annual census of the global professional developer population — 30.7% of respondents identified their role as "full-stack developer," making it the single most common self-reported title, ahead of back-end developer (16.7%) and front-end developer (5.6%), a pattern that has held for several consecutive years.
+
+That popularity is exactly the problem this article is describing. A label chosen by roughly a third of the entire developer population cannot, by definition, describe a rare, elite combination of deep frontend and deep backend mastery — it describes a role definition, not a skill guarantee. Some fraction of that 30.7% genuinely are T-shaped engineers with real depth on both sides of the stack, usually built over many years at a company too small to afford specialists. But a large share of that self-identification simply reflects what a developer's day-to-day ticket queue looks like (touching both frontend and backend code across different tickets) rather than what they can do at a senior, architecture-defining level in either domain. The label tells a hiring manager almost nothing about depth; it only tells you the candidate has been *exposed* to both halves of the stack, which is a very different claim than mastery.
+
+## A Worked Example: Pod Velocity vs. Generalist Velocity
+
+Consider a concrete, illustrative comparison for a mid-market B2B SaaS company scaling a core billing and reporting feature — the kind of feature that touches both a complex relational schema and a data-dense UI.
+
+**Team A: Three full-stack generalists.** Each generalist owns a vertical slice of the feature end-to-end: schema, API, and UI. On paper this looks efficient — no handoffs, no waiting on another specialist. In practice, each generalist spends real time context-switching between SQL query planning and CSS layout debugging within the same day, and none of the three has the depth to catch a missing database index or a memory-leaking React effect before it reaches code review. Bugs caught in production, rather than in review, is the typical failure mode; the team ships fast initially, then slows sharply once the schema gets complex enough that generalist-level database knowledge is no longer sufficient.
+
+**Team B: A T-shaped pod of the same headcount** — one backend specialist, one frontend specialist, one QA automation engineer. The backend specialist designs the schema and indexes correctly the first time, because it's the one thing they do all day, every day. The frontend specialist builds a UI that stays responsive under real data volume, because rendering performance is their entire professional identity. The two collaborate through a well-defined API contract, and the QA engineer's automated suite catches the seams between their work before a human reviewer has to. The pod ships slightly slower in the first two weeks (more coordination overhead, more explicit API-contract discussion) but the defect rate on the same feature — measured in production incidents per release — is consistently lower once the codebase passes a few thousand lines, because deep expertise is doing the work generalist "good enough" knowledge cannot.
+
+The trade-off is not speed versus quality in the abstract; it's front-loaded coordination cost versus back-loaded rework cost. For a six-week MVP, Team A wins outright. For a production system expected to carry real transaction volume for years, Team B's discipline compounds in the company's favor every single release after the first month.
 
 ## The Manifera Approach to Team Composition
 

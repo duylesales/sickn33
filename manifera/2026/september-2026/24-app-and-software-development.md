@@ -40,7 +40,7 @@ The rules that dictate how taxes are calculated, how user permissions are grante
 
 If a bug is found in the tax calculation logic, you now have to fix it in the Web API, and then remember to go fix it in the Mobile API. If you forget, your mobile users will be charged the wrong tax rate.
 
-> *"If you write the same business logic twice, you will eventually have two different versions of the truth. In enterprise software, two versions of the truth is a catastrophe."* — Software Architecture Axiom
+This is exactly the failure mode the DRY principle was coined to prevent. Andy Hunt and Dave Thomas, in *The Pragmatic Programmer*, defined it precisely: "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system." Tax logic, permission rules, and payment processing are knowledge in exactly this sense. The moment that knowledge exists in two places — a Web API and a separately maintained Mobile API — the system no longer has a single authoritative representation of the truth, and Hunt and Thomas's warning stops being a style preference and becomes an operational risk: the two representations will drift, silently, until a customer notices before your engineering team does.
 
 ## The Solution: Unified Architecture and the BFF Pattern
 
@@ -68,13 +68,23 @@ This is why elite architecture teams never treat the Core API as "internal, so i
 
 Contract testing effectively gives every BFF team a vote in the Core API's CI/CD pipeline without requiring cross-team meetings for every single change. It converts an organizational coordination problem—"please remember to tell the mobile team before you rename that field"—into an automated, mathematically enforced gate. For a Lead Architect governing multiple frontend teams consuming one backend, this is the difference between a unified architecture that scales safely to a dozen client applications and one that becomes too fragile to touch after the third.
 
+## The Duplication Tax: Quantifying What Siloed Backends Actually Cost
+
+It is worth putting real numbers against the "doubled AWS costs, doubled development costs" claim from the opening scenario, because engineering leaders often underestimate how much of their team's capacity a siloed architecture silently consumes.
+
+Stripe's *Developer Coefficient* report, based on a survey of developers globally, found that engineers spend an average of 17.3 hours of a 41.1-hour work week — roughly 42% of total capacity — on maintenance and "bad code" rather than new development, and estimated that technical debt represents a multi-trillion-dollar drag on global GDP. Duplicated business logic across a Web API and a Mobile API is one of the purest forms of the "bad code" category that report is measuring: it is work that exists purely because the same knowledge was implemented twice, not because it adds new customer value.
+
+Applying that lens to the scenario at the top of this article: a mid-sized SaaS engineering org with, say, 12 backend-capable engineers splitting time across a Web API and a shadow Mobile API is not simply paying for "one extra team." It is paying a recurring maintenance tax on every future change to tax logic, permissions, or billing — twice the QA cycles, twice the security review surface, and twice the probability that a bug fix lands in one codebase and is forgotten in the other. If even a conservative one-third of that duplication overhead maps onto the Stripe figures above, a 12-engineer team at a fully loaded cost of roughly €90,000/year per engineer is losing on the order of €300,000-€450,000 annually to work that a unified Core API and BFF pattern would have eliminated entirely, not by hiring fewer people, but by no longer needing two people to do the work of one.
+
+This is the frame a Lead Architect should bring into a budget conversation about the BFF pattern: it is not an "architecture nice-to-have" competing against feature velocity. Contract testing, semantic versioning, and a unified Core API are themselves the fastest path to feature velocity, because every hour not spent reconciling two versions of the truth is an hour spent shipping something a customer actually asked for.
+
 ## The Manifera Cross-Platform Governance
 
 Standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies are heavily siloed. The mobile department does not talk to the web department. If you hire them, they will build you two separate backends to maximize their billable hours.
 
 At Manifera, we enforce Unified Architecture. 
 
-When you hire us for **app and software development**, our Dutch Architects oversee the entire ecosystem. Whether we are building a React web portal or a React Native mobile app, our Architects mandate that all business logic lives in a single, unified Core API. If a BFF layer is required, we architect it precisely.
+When you hire us for **app and software development**, our Dutch Architects oversee the entire ecosystem. Whether we are building a React web portal or a React Native mobile app, our Architects mandate that all business logic lives in a single, unified Core API. If a BFF layer is required, we architect it precisely, and we set up the contract testing described above from the first sprint, not as a retrofit after the first production incident.
 
 Our Vietnamese engineering pods execute this blueprint seamlessly, ensuring that when you add a feature, you only pay for the business logic once, and it works perfectly across every device.
 

@@ -45,7 +45,7 @@ If the CEO asks about Q3 revenue and the AI lies, a Data-Centric team does not t
 
 The team fixes the ETL (Extract, Transform, Load) data pipeline, re-ingests the clean PDF, and the AI instantly answers correctly. 
 
-> *"In traditional software, you iterate on code. In AI software, you iterate on data. If your engineering team spends more time writing code than they do cleaning data, your AI project will fail."* — MLOps Engineering Axiom
+This is not a fringe opinion invented by agencies trying to sell Data Engineering services. It is the position of one of the field's most credentialed researchers. Andrew Ng — co-founder of Google Brain and Coursera, former Chief Scientist at Baidu — has spent the past several years publicly campaigning for exactly this shift. As he put it in an interview with IEEE Spectrum: "In many industries where giant data sets simply don't exist, I think the focus has to shift from big data to good data." His argument is that once a model architecture is good enough (which, for most business applications, today's foundation models already are), the highest-leverage work left is systematically improving the data the model learns from and retrieves against — not endlessly re-tuning the model itself.
 
 ## Adapting Your Development Model for AI
 
@@ -66,6 +66,33 @@ A Data-Centric team fixes hallucinations by editing data instead of code. But th
 
 ### The Practical Fix: Treat Data Like Code
 Mature AI teams adopt tools like DVC (Data Version Control) or lakeFS to apply Git-style version control directly to datasets and vector index snapshots, not just to application code. Every re-ingestion, re-chunking, or re-embedding operation is committed as a new, tagged version, and every model evaluation run is stamped with the exact dataset version it was tested against. This turns "why did the AI's behavior change" from a forensic investigation into a two-minute diff, and it gives engineering leadership the same rollback confidence for data that they already expect from code deployments.
+
+## The DORA Evidence: Why "Move Fast" Alone Backfires on AI Teams
+
+Google Cloud's DORA (DevOps Research and Assessment) team publishes the industry's most rigorously sampled annual survey of software delivery performance, drawing on responses from thousands of technology professionals worldwide. The 2025 State of AI-Assisted Software Development report found that AI tool adoption among software professionals has reached roughly 90%, and adoption is now positively linked to higher software delivery throughput. But the same report surfaces a warning that maps directly onto the Model-Centric failure mode described above: AI adoption also continues to correlate with lower software delivery **stability** — more change failures, more rework, and longer time to resolve issues — unless teams pair it with strong underlying engineering practices. DORA's own framing is that "AI doesn't fix a team; it amplifies what's already there." A team without disciplined data practices does not become disciplined because it added an LLM; it becomes faster at shipping the same undiagnosed problems.
+
+This is exactly why a Data-Centric application development model has to include Continuous Evaluation and dataset versioning as first-class engineering practices, not optional polish. Speed without a feedback loop that catches data regressions just means you ship broken AI behavior faster.
+
+## A Worked Example: Two Sprints, Same Bug Report
+
+To make the difference between Model-Centric and Data-Centric sprint planning concrete, consider how two teams might handle the identical bug report: "AI assistant gave the CEO the wrong Q3 revenue figure."
+
+**Model-Centric team, Sprint N:**
+- Day 1: Triage assigns the ticket to a backend developer.
+- Days 2–4: The developer rewrites the system prompt three times, adding instructions like "always double-check financial figures before answering." The behavior does not reliably improve, because the underlying retrieved context is still wrong.
+- Days 5–7: The team debates swapping the underlying LLM provider, hypothesizing that a "smarter" model will reason its way around bad context.
+- Day 8: The new model is wired in. The hallucination rate drops slightly by chance, but nobody can say why, and no regression test exists to confirm it going forward.
+- End of sprint: The root cause (a malformed PDF chunk) is still sitting in the vector database, waiting to cause the next incident.
+
+**Data-Centric team, Sprint N:**
+- Day 1: Triage pulls the exact retrieved context that was fed to the model for that query, using logging already built into the RAG pipeline.
+- Day 2: The team confirms the Q3 PDF was chunked mid-table, splitting a revenue figure from its label during ingestion.
+- Days 3–4: A data engineer fixes the PDF parsing logic for tabular content, re-ingests the document, and adds this exact scenario as a new entry in the golden evaluation dataset.
+- Day 5: Continuous Evaluation re-runs the full benchmark suite against the fixed pipeline; the score improves and no other document type regresses.
+- Days 6–8: The team spends the remaining sprint capacity auditing other PDFs in the corpus for the same table-chunking failure mode, preventing three additional latent bugs before they reach a client.
+- End of sprint: The root cause is fixed, documented, versioned, and permanently covered by a regression test.
+
+Both teams "did AI work" for a full sprint. Only one of them reduced the probability of the bug recurring.
 
 ## The Manifera MLOps Framework
 

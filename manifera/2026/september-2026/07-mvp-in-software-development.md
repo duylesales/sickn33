@@ -42,7 +42,7 @@ However, in the context of [custom software development](https://www.manifera.co
 
 When an MVP succeeds, it instantly becomes the foundation of your production enterprise application. If you build a skyscraper on a foundation of quicksand, the skyscraper will collapse the moment you add the second floor.
 
-> *"If you plan to throw the code away, build a prototype. If you plan to scale the code, build a Minimum Viable Architecture (MVA). Never confuse the two."* — Enterprise Architecture Standard
+Eric Ries, who popularized the term, defined it precisely: *"The minimum viable product is that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort."* — Eric Ries, *The Lean Startup* (2011). Note what that definition does not say: it never says "ship insecure, unscalable code." It says collect *learning* with the least *effort* — and effort is about scope, not about skipping the database schema or the CI pipeline. Founders who read "least effort" as "least engineering discipline" are misreading the book that coined the term.
 
 ## Transitioning to a Minimum Viable Architecture (MVA)
 
@@ -81,6 +81,20 @@ A standard technical due diligence audit checks five things:
 **5. Dependency and license risk.** Outdated packages with known CVEs, or GPL-licensed code accidentally bundled into a commercial product, are common findings in rushed MVPs and can create legal exposure the investors are unwilling to inherit.
 
 The startups that pass this audit cleanly are, without exception, the ones that built an MVA instead of a pure MVP. The extra three days spent on the database schema, and the CI/CD pipeline built on day one instead of "later," are not abstract engineering virtue — they are the specific line items an auditor checks before your Series A closes on schedule instead of being delayed, discounted, or contingent on a mandatory rewrite.
+
+## What the Rewrite Actually Costs: A Worked Example
+
+Founders rarely believe the "you'll have to rewrite it" warning until they see the arithmetic. Here is a realistic, numbers-based comparison of the two paths a Series-A-track SaaS startup can take. The figures below are illustrative, built from typical European outsourcing day rates and typical timelines Manifera sees in this segment — not a claim about any specific client.
+
+**Path A: Pure MVP, rewrite after funding.**
+A founder pays a low-cost agency roughly €35,000 to build a six-week MVP: no automated tests, a denormalized MongoDB schema, manual FTP deploys. The MVP succeeds and raises a €2M seed round. Investors' technical due diligence (see above) flags the codebase as "not investment-grade" and makes 20% of the round conditional on a remediation plan. The team now has to: (1) freeze new features for a quarter, (2) hire a senior architect to redesign the data model, (3) migrate live production data without downtime, and (4) rebuild the test suite from zero. At typical blended European/offshore hybrid rates (~€55-70/hour for the rebuild team), a full-stack rewrite of a moderately complex SaaS product (12-16 core entities, payment integration, multi-tenant auth) runs €90,000-€140,000 and takes 4-6 months — on top of the original €35,000. Total: roughly €125,000-€175,000 and 5-7 months of near-zero net-new feature velocity, precisely when competitors are shipping.
+
+**Path B: Minimum Viable Architecture from day one.**
+The same feature scope, built by a team that keeps the schema normalized, wires up CI/CD from week one, and isolates business logic from the UI, typically costs €48,000-€55,000 — 35-55% more than the throwaway MVP, spread over roughly eight to ten weeks instead of six. There is no rewrite phase. The Series A due diligence audit passes without a remediation clause. The team keeps shipping features straight through the raise.
+
+The net difference is not the extra €13,000-€20,000 spent upfront — it's the €90,000+ in avoided rewrite cost and the 4-6 months of engineering time that goes into new features instead of archaeology. This is the arithmetic behind the "MVA, not MVP" argument: the extra architectural discipline is not a luxury tax, it is the cheaper path once you price in what happens after the product succeeds.
+
+This tracks with what Stripe found when it surveyed over 1,000 professional developers and 1,000 executives for its 2018 *Developer Coefficient* report: on average, developers spend roughly a third of their working week (about 13.5 of 41.1 hours) dealing with technical debt, with a further chunk lost to fixing bad code outright. Stripe estimated the resulting drag at roughly $300 billion in lost global GDP annually. An MVP built with no architectural discipline doesn't avoid that tax — it just defers the bill to the exact moment the company can least afford to pay it: right after a funding round, when investors are watching velocity closely.
 
 ## The Manifera MVA Execution Strategy
 

@@ -47,7 +47,7 @@ If an agency uses outdated database query methods instead of modern ORMs (Object
 ### 3. Insecure Design (The Business Logic Flaw)
 If an e-commerce checkout flow is designed so that the final price is calculated on the frontend (in the browser) rather than enforced strictly on the backend server, a malicious user can intercept the network request, change the price of a €1,000 laptop to €1, and complete the purchase. No cloud provider can protect against fundamentally flawed business logic.
 
-> *"Cloud security protects the hardware. Application security protects the software. If your agency believes AWS will magically secure their bad code, they are going to cause a data breach."* — Enterprise Security Axiom
+This is not a fringe interpretation — it is the exact division of labor AWS itself publishes. AWS's own Shared Responsibility Model documentation draws the line explicitly between what it calls "security **of** the cloud" (AWS's job: the hardware, the network, the physical facilities) and "security **in** the cloud" (the customer's job: the application code, the data, the access configuration, the identity management). Azure and Google Cloud publish near-identical models. If an agency cannot articulate which side of that line their own deliverable sits on, they do not understand what they are being paid to secure — and Verizon's 2025 Data Breach Investigations Report, which analyzed over 22,000 real-world security incidents, found that credential abuse and exploitation of application-layer vulnerabilities remain among the leading initial attack vectors into breached organizations. Neither of those failure modes is something a cloud provider's infrastructure security can stop.
 
 ## Securing the Application Lifecycle
 
@@ -59,7 +59,7 @@ To build a secure **custom application**, the security must be embedded into the
 
 ## The Secrets Management Gap
 
-Beyond the OWASP Top 10, CISOs auditing a custom application should ask one more pointed question that most offshore agencies fail immediately: *"Where do your database passwords, API keys, and encryption secrets actually live?"* A shocking number of breaches trace back not to a sophisticated exploit, but to a developer hardcoding a credential directly into the source code, then pushing that code to a Git repository.
+Beyond the OWASP Top 10, CISOs auditing a custom application should ask one more pointed question that most offshore agencies fail immediately: *"Where do your database passwords, API keys, and encryption secrets actually live?"* A shocking number of breaches trace back not to a sophisticated exploit, but to a developer hardcoding a credential directly into the source code, then pushing that code to a Git repository. This is not a rare mistake: GitGuardian's State of Secrets Sprawl 2026 report found 29 million new hardcoded secrets exposed on public GitHub repositories in 2025 alone, a 34% increase year-over-year and the largest single-year jump the firm has recorded — with leaks tied to AI-service credentials specifically surging 81%. Every one of those secrets is a working key sitting in plain text, waiting for an automated scanner to find it.
 
 ### How Hardcoded Secrets Cause Breaches
 1. **The Public Repository Leak:** A developer hardcodes an AWS access key or a Stripe secret key into a configuration file "just to get it working," intending to remove it later. The commit gets pushed, and if the repository is ever made public (or a fork leaks), automated bots that continuously scan GitHub for exposed keys find it within minutes and drain cloud resources or payment infrastructure before anyone notices.
@@ -68,6 +68,20 @@ Beyond the OWASP Top 10, CISOs auditing a custom application should ask one more
 
 ### The Fix: Secrets Managers, Not Config Files
 Elite engineering teams never let a secret exist as plaintext in a repository, a config file, or a chat message. Instead, they use a dedicated secrets manager (AWS Secrets Manager, HashiCorp Vault, or Google Secret Manager) that injects credentials into the application at runtime, logs every access, and supports automated rotation on a schedule (for example, forcing a database password to rotate every 90 days without any human involvement). Pull Requests are scanned by automated secret-detection tools (like Gitleaks or TruffleHog) that block a merge outright the moment a credential pattern is detected in a diff, closing the exact gap that turns a single careless commit into a company-wide breach.
+
+## What a Broken Access Control Breach Actually Costs
+
+Security recommendations often stay abstract until they are attached to a number. IBM's 2025 Cost of a Data Breach Report, based on research across breached organizations worldwide, put the global average cost of a data breach at $4.44 million — and for organizations breached in the United States specifically, the average climbed to $10.22 million, driven heavily by regulatory fines and slower detection. The same report found that the mean time to identify and contain a breach was 241 days, the fastest pace in nine years but still nearly eight months of undetected exposure in the average case.
+
+Walk through how a single missed Broken Access Control check compounds into that kind of number for a mid-sized SaaS company handling customer financial data:
+
+1. **The flaw ships.** An API endpoint for retrieving invoices checks that a request is authenticated, but not that the requesting user actually owns the invoice ID being requested. This is a one-line omission, easy to miss in a code review that is not specifically looking for it.
+2. **The flaw is discovered — by an attacker, not by QA.** Automated bots routinely scan the internet for exactly this pattern: sequential, guessable IDs in API URLs. Within weeks of the endpoint going live, a script iterates through thousands of invoice IDs, silently harvesting customer names, amounts, and billing addresses.
+3. **Detection lags.** Because the requests look like normal authenticated traffic — no malformed packets, no failed logins, nothing a firewall or cloud provider's security tooling flags — the exfiltration continues for weeks or months before anomalous data-access volume triggers an internal review or a customer notices unauthorized activity.
+4. **The response cascades.** Once discovered, the company faces mandatory breach notification under GDPR (with fines of up to 4% of global annual turnover for serious violations), forensic investigation costs, legal fees, customer churn, and in many jurisdictions, individual notification costs per affected record.
+5. **The fix was cheap; the breach was not.** The actual code fix — adding a single ownership check to the query — typically takes a competent developer under an hour once identified. A SAST scanner or a security-focused code review would very likely have caught the pattern before merge, at effectively zero marginal cost.
+
+This asymmetry is the entire argument for Shift-Left Security: the cost of catching a Broken Access Control flaw in a Pull Request is minutes of automated scanning. The cost of catching it after attackers do is measured in weeks of investigation and, per IBM's global figures, millions of dollars.
 
 ## The Manifera Security Governance
 

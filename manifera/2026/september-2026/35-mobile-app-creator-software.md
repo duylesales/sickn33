@@ -47,7 +47,13 @@ Under GDPR, European citizen data must generally be processed and stored within 
 ### 3. The "Black Box" Audit Trail
 SOC2 and ISO 27001 compliance require strict audit trails. You must be able to prove mathematically who accessed a database and when. Because app creator platforms abstract the backend, they are "Black Boxes." You cannot install your own SIEM (Security Information and Event Management) tools or monitor the raw SQL logs. You are entirely reliant on the vendor's basic reporting dashboards, which auditors will reject as insufficient.
 
-> *"Compliance is not a checkbox on a vendor's website; it is a mathematical proof derived from your database architecture. If you do not own the backend, you cannot prove compliance."* — Enterprise Security Axiom
+### Pricing the Two Paths Before the Audit, Not After
+
+Run the numbers the CISO in the opening scenario wishes they had run before the marketing director signed up for the app builder. A dedicated, Single-Tenant custom mobile backend (Node.js/PostgreSQL, deployed into the company's own AWS or Azure environment, with SIEM logging built in from day one) for a claims-photo submission app of this size typically runs €70,000-€110,000 to build, plus modest ongoing hosting and maintenance costs the company already budgets for elsewhere in its cloud estate.
+
+Compare that to the cost the insurance company actually paid: an app pulled from the App Store on zero notice, a compliance team scrambling to document a breach that had already happened, outside counsel engaged to manage the regulatory response, and exposure to a GDPR fine under a regime that, per DLA Piper's data, issued roughly €1.2 billion in penalties across Europe in 2025 alone. A single serious fine in a regulated sector like insurance can easily exceed the entire cost of building the compliant app from scratch, before counting the reputational cost of a public App Store removal. Compliance architecture is not an expensive alternative to a cheap app builder; measured against the realistic cost of the failure mode it prevents, it is usually the cheaper option.
+
+GDPR itself is explicit that compliance is a burden of proof, not a checkbox: "The controller shall be responsible for, and be able to demonstrate compliance with" the regulation's core data protection principles — GDPR, Article 5(2), the "accountability" principle. Demonstrating compliance mathematically, with logs and access records, is only possible if you actually control the backend that generates those logs. If a third-party app builder owns your database, you cannot produce the proof an auditor is legally entitled to demand, no matter how carefully you configured the app builder's settings.
 
 ## The Embedded SDK Problem: Trackers You Never Chose
 
@@ -66,6 +72,12 @@ For a regulated business like the insurance company in the opening scenario, thi
 ### The Custom Engineering Fix
 
 When a mobile application is built with custom native or React Native engineering rather than a drag-and-drop platform, the engineering team chooses every SDK deliberately, one at a time, and can produce an exact, audited manifest of every third-party library in the binary and precisely what each one transmits. The App Store privacy label is then filled out from that manifest, not a guess — turning a legal liability into a routine compliance step.
+
+## The Enforcement Trend: Why This Risk Is Accelerating, Not Fading
+
+Some CISOs still treat GDPR exposure as a slow-moving, largely theoretical risk. The enforcement data says otherwise. DLA Piper's GDPR Fines and Data Breach Survey, published each January and covering supervisory authority data across 31 countries, found that total GDPR fines since the regulation took effect in May 2018 have reached approximately €7.1 billion, with fines issued in 2025 alone totalling roughly €1.2 billion — and over 60% of the entire €7.1 billion in cumulative fine value has been imposed since January 2023. Enforcement is not winding down as companies "catch up"; it is accelerating as regulators build case law and staffing capacity.
+
+The same survey found that notified personal data breaches across Europe rose 22% year-on-year, reaching an average of 443 notifications per day — the first time since 2018 that daily breach notifications have exceeded 400. Every one of those notifications starts the same way the opening scenario does: a company discovers, usually during an audit or after an incident, that it cannot fully account for where a category of personal data lives or who accessed it. A mobile app built on a third-party creator platform, with its data stored on the vendor's infrastructure and its access logs invisible to the company that owns the legal liability, is structurally the exact shape of exposure that DLA Piper's enforcement data keeps catching.
 
 ## Securing Compliance Through Custom Engineering
 

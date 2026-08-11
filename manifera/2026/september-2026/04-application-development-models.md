@@ -44,7 +44,11 @@ When an offshore team is forced into a two-week sprint, they experience the "Spr
 
 The sprint was "successful," but the codebase just absorbed massive technical debt. Do this for a year, and the application becomes too fragile to maintain.
 
-> *"Agile Scrum measures velocity. Shape Up measures value. A fast team building fragile code is not agile; it is a liability."* — Enterprise Product Engineering Axiom
+Ryan Singer, the Basecamp product strategist who created Shape Up and wrote the free book of the same name, put the core inversion this way: "Estimates start with a design and end with a number. Appetites start with a number and end with a design." A Scrum ticket is an estimate — someone designs a solution first, then guesses how long it will take, and the guess is usually wrong in the direction that produces Friday-afternoon hacks. An appetite reverses the order: the business decides what the problem is worth first, and the design has to fit inside that number. It sounds like a small semantic flip. In practice it is the difference between a team that measures velocity and a team that measures value — a fast team shipping fragile code every two weeks is not "agile," it is accumulating a liability on a fixed schedule.
+
+### The Hidden Cost: Context Switching
+
+There is a second, quieter cost to the two-week treadmill that has nothing to do with the code itself: the cost of interruption. Gloria Mark, a professor at UC Irvine who has spent two decades studying workplace attention, found in her research that it takes an average of roughly 23 minutes for a person to fully return to a complex task after being interrupted from it. A standard two-week Scrum cadence is structurally built around interruption: daily standups break the morning, mid-sprint ticket re-prioritization breaks the afternoon, sprint planning and retrospectives consume the boundary days, and an engineer wrestling with a genuinely hard architectural problem is routinely pulled out of it to report status on three unrelated tickets. Each of those interruptions is small on its own. Multiplied across a ten-day sprint, they are the difference between an engineer who gets two or three uninterrupted hours a day for deep architectural thinking and one who gets almost none — which is precisely why "the database structure doesn't support the feature" tends to get discovered on a Wednesday afternoon and hacked around by Friday, rather than caught and solved properly in the first quiet hour of the sprint.
 
 ## The "Shape Up" Methodology (Basecamp)
 
@@ -76,6 +80,19 @@ Each pitch that reaches the Betting Table carries an **appetite** — a pre-comm
 **The Circuit Breaker** is the safety mechanism for when a bet still goes wrong. If a team is not converging toward a shippable outcome by roughly the midpoint of the cycle, the Circuit Breaker rule triggers automatically: the project does not get extended into the next cycle by default. It has to compete again at the next Betting Table, on equal footing with every other new pitch. This is a deliberate, structural rejection of "sunk cost" thinking. Scrum teams frequently let a struggling initiative drag on for months because "we've already invested so much." Shape Up's Circuit Breaker makes that drift structurally impossible — a stalled bet dies at the cycle boundary unless it is deliberately and competitively re-funded.
 
 For a Manifera Hybrid Offshore pod, this governance layer is what makes Shape Up safe to run with a distributed team. The Dutch Tech Lead sits at the Betting Table representing the client's European business priorities, ensures appetites are set realistically before the Vietnamese pod commits to a cycle, and enforces the Circuit Breaker without political pressure to keep a failing project alive just to save face.
+
+## A Worked Comparison: Rework Cost Under Each Model
+
+To make the trade-off concrete, consider a representative (illustrative, not client-specific) scenario: a B2B SaaS team of six engineers building a permissions and access-control overhaul — a feature that, almost by definition, touches the data model in ways that are hard to fully scope in advance.
+
+| Cost Driver | Scrum (2-Week Sprints) | Shape Up (6-Week Cycle) |
+|---|---|---|
+| Discovery of the real complexity | Typically surfaces mid-sprint, days 6-8, after the ticket has already been estimated and committed | Surfaces during the shaping phase, before any engineering time is committed |
+| Response to unexpected complexity | Ship a workaround to hit the sprint deadline; file a "tech debt" ticket that competes with new feature requests for prioritization and is deprioritized indefinitely | Absorb it into the 6-week appetite via scope hammering, or the pitch is re-shaped before more time is spent |
+| Rework triggered by the hack | Frequently resurfaces as a production bug 2-4 sprints later, now requiring both a fix and an explanation to stakeholders about why "done" work broke | Rare — the constraint is resolved once, inside the cycle it was discovered in |
+| Stakeholder-visible cost | Looks free in the moment (ticket closed on schedule); the true cost is hidden in future sprints' bug-fix capacity | Visible immediately, since scope hammering is a deliberate, discussed trade-off at the Betting Table, not a silent shortcut |
+
+The Scrum column is not necessarily *slower* in any single sprint — that is exactly what makes it seductive to a Product Manager staring at a burndown chart. The cost is deferred, not eliminated, and it tends to resurface with interest: a hack shipped to hit a Friday deadline usually costs more total engineering hours to fix properly later than it would have cost to solve correctly the first time, because a second engineer now has to rediscover the same edge cases the first engineer already found and then abandoned under time pressure.
 
 ## Implementing Shape Up with an Offshore Team
 

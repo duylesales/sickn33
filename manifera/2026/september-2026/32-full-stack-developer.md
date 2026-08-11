@@ -49,7 +49,7 @@ A true Backend Specialist does not just write API endpoints. They design highly 
 
 It is neurologically impossible for one human being to be a true expert in both domains simultaneously. 
 
-> *"A Full Stack Developer is usually a Backend Developer who writes terrible CSS, or a Frontend Developer who writes insecure database queries. In enterprise architecture, you cannot afford either."* — Enterprise Engineering Axiom
+In practice, a self-described Full Stack Developer is usually a Backend Developer who writes passable-but-unpolished CSS, or a Frontend Developer who writes functional-but-insecure database queries. In enterprise architecture, where a mediocre UI costs conversions and an insecure query costs a breach, a business cannot comfortably afford either compromise.
 
 ## The Transition to "T-Shaped" Specialists
 
@@ -60,6 +60,14 @@ Elite engineering organizations hire **"T-Shaped" Developers**.
 - The vertical bar of the 'T' represents their deep, uncompromising specialization in one specific domain. 
 
 When you pair a deep Frontend Specialist with a deep Backend Specialist, they create a product that is infinitely superior to a product built by two Full Stack generalists. The UI is pixel-perfect and highly performant, and the database is secure, normalized, and highly concurrent.
+
+The "T-shape" itself is not an engineering invention; it was popularized outside software entirely, by IDEO CEO Tim Brown, describing the kind of collaborator elite design and innovation teams look for: "The vertical stroke of the 'T' is a depth of skill that allows them to contribute to the creative process... The horizontal stroke of the 'T' is the disposition for collaboration across disciplines" — Tim Brown, CEO of IDEO. Software engineering borrowed the metaphor because it describes exactly what a strong pod needs: specialists deep enough to be trusted with an entire domain, but broad enough to talk to each other without a translator.
+
+## What the Market Actually Pays For
+
+If "everyone is full stack now" were true in a meaningful sense, deep specialization would be disappearing from job postings and salary bands. The data says the opposite. Stack Overflow's 2024 Developer Survey found that self-identified full-stack developers are now the single most common role among professional developers — more common than front-end and back-end developers combined. But the same survey shows the market pricing specialization at a clear premium: backend specialists reported average salaries around $170,000, and mobile development specialists around $185,000, compared to roughly $130,000 for full-stack developers.
+
+That gap is not noise. It is the market's own verdict on the "Full Stack Fallacy": the label is popular because it is an easy thing to put on a resume, but compensation committees, who have every incentive to pay only for what actually reduces business risk, consistently pay more for people who own one hard problem completely than for people who claim to own all of them adequately. A VP of Engineering staffing an enterprise platform is, in effect, being told by the entire labor market which structure produces defensible architecture.
 
 ## The Third Specialist Nobody Budgets For
 
@@ -76,6 +84,12 @@ A dedicated DevOps or Platform Engineer is a third vertical bar on the T-shaped 
 - **Autoscaling and Load Testing**: proactively load-testing the application against 5-10x expected peak traffic *before* launch day, and tuning autoscaling thresholds based on that data instead of framework defaults.
 - **Observability**: instrumenting the system with distributed tracing and alerting (e.g., Prometheus, Datadog, OpenTelemetry) so the team gets paged before customers notice a problem, not after.
 - **Cost Governance**: setting budget alerts, tagging cloud resources by team and project, and running monthly cost audits so a runaway process cannot silently burn five figures overnight.
+
+### The Staffing Math: Two Generalists vs. a Specialist Pod
+
+Run the two staffing plans side by side on a mid-sized enterprise build. Plan A hires two Full Stack Developers, each capable of touching any layer, at a blended offshore rate of roughly €5,500-€6,500 per developer per month — call it €12,000 per month combined. Plan B hires a Frontend Specialist and a Backend Specialist at similar individual rates, plus a Platform Engineer at 40% capacity (shared across a couple of projects) for roughly €2,500 per month, bringing Plan B to approximately €14,500 per month.
+
+On a spreadsheet, Plan A looks 20% cheaper. But Plan A's two generalists still have to divide the same total workload across frontend, backend, and infrastructure, and neither is deeply fluent in all three — meaning code reviews catch fewer real problems, because the reviewer often doesn't know the domain any better than the author. Plan B's specialists move faster within their domain, catch domain-specific defects a generalist would miss (a backend specialist who instinctively adds a database index a generalist would forget; a platform engineer who load-tests before launch instead of during the outage), and produce a system that does not need the "Third Specialist" emergency hire described above, mid-crisis, at a premium rate. The 20% premium for specialization is usually cheaper than the alternative: paying for it anyway, later, plus the cost of the outage that made it urgent.
 
 ### When to Add This Role
 

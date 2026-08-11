@@ -39,7 +39,7 @@ In [custom software development](https://www.manifera.com/services/custom-softwa
 Here is the financial breakdown of the Domestic Rate Card:
 
 ### 1. The Real Estate and Salary Baseline
-The agency has an expensive office in Manhattan or San Francisco. They have to pay a mid-level React developer a base salary of $140,000 just so that developer can afford rent. To maintain a 40% gross margin, the agency mathematically must charge you a massive premium just to cover their baseline local geography costs. 
+The agency has an expensive office in Manhattan or San Francisco. The U.S. Bureau of Labor Statistics puts the national median annual wage for software developers at $133,080 as of May 2024 — and that figure is a national blend; developers in New York City and San Francisco routinely command well above that median once the local cost-of-living premium is priced in. On top of the base salary, the agency owes payroll taxes, healthcare benefits, 401(k) matching, and office overhead, which conventionally add another 25-40% on top of salary before the agency has covered a single dollar of profit. To maintain a viable gross margin, the agency mathematically must charge you a massive premium just to cover their baseline local geography costs. 
 
 ### 2. The Middle Management Tax (The Bench)
 Domestic agencies are notorious for bloat. When you hire them, you are not just paying for developers. You are billed for an Account Manager, a Delivery Manager, a Scrum Master, and a UI/UX consultant. Worse, you are paying for "The Bench"—the salaries of the developers who are currently unassigned to projects. The agency spreads the cost of their idle employees across your active invoice.
@@ -47,7 +47,7 @@ Domestic agencies are notorious for bloat. When you hire them, you are not just 
 ### 3. The Secret Subcontracting Reality
 The darkest secret of premier US IT companies is that they often don't even write the code themselves. They charge you $250/hour, take the requirements, and quietly offshore the actual coding to a cheap, ungoverned agency in Eastern Europe or South America for $40/hour. They pocket the $210/hour difference as pure profit, acting merely as a highly expensive communication broker. 
 
-> *"When you hire a domestic IT agency, you are not paying a premium for better software architecture. You are paying a premium for their expensive office leases, their account managers, and their unassigned bench staff."* — IT Economics Axiom
+None of this is a secret buried in the fine print, either — it is visible in the public financial statements of the IT services industry's own largest players. Accenture, the world's largest consulting and IT services firm, reported a gross margin of 32.6% for fiscal year 2024, meaning roughly two-thirds of every dollar it billed a client went straight to the cost of delivering the engagement, largely labor. After sales, marketing, real estate, and corporate overhead are layered on top of that, Accenture's GAAP operating margin for the same year came out to 14.8%. When even the most efficient, highest-scale IT services company on earth converts only about 15 cents of every billed dollar into operating profit after covering the cost of the people actually doing the work, a much smaller regional agency — with none of Accenture's scale efficiencies — is not converting a higher share of your invoice into pure engineering value. It is converting a lower one.
 
 ## The Change Order Trap: How a "Fixed Price" Becomes an Open Invoice
 
@@ -64,6 +64,12 @@ A fixed-price contract with a vague SOW is structurally similar to a mobile game
 ### The Defense: Time & Materials with a Capped Ceiling, Not Fixed Price
 
 Elite engineering partners avoid this trap from the other direction. Instead of a vague fixed price, they propose Time & Materials billing with a hard, capped ceiling and a detailed, itemized backlog reviewed sprint by sprint. Every feature request is estimated transparently against the same rate card from day one — there is no "premium expedite tier" waiting to ambush you at month three, because there was never a hidden boundary to cross in the first place.
+
+## This Is Not Hypothetical: The Industry-Wide Overrun Problem
+
+A CFO reading the Change Order Trap above might reasonably wonder whether it describes a handful of bad-actor agencies or a structural feature of the IT services industry itself. The most rigorous available research says the latter.
+
+In a study conducted with the University of Oxford's BT Centre for Major Programme Management, analyzing more than 5,400 IT projects, McKinsey & Company found that "on average, large IT projects run 45 percent over budget and 7 percent over time, while delivering 56 percent less value than predicted." The study, published in 2012 and still one of the most cited pieces of research on IT project economics, was not measuring outright agency fraud — it was measuring the aggregate outcome of exactly the dynamic described above: ambiguous initial scope, optimistic fixed-price bidding to win the deal, and a long tail of "unanticipated" work discovered mid-project. A 45% average overrun means that for every $180,000 fixed-price MVP quoted, the realistic all-in cost — once change orders, scope clarifications, and "that wasn't in the original spec" conversations are added — should be budgeted closer to $260,000 from day one. CFOs who budget to the initial quoted number, rather than the industry's documented average outcome, are the ones who run out of Series A runway two months before launch.
 
 ## The Financial Intelligence of the Hybrid Model
 

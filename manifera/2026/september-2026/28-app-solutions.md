@@ -55,7 +55,9 @@ Instead of writing elegant code, your developers are forced to write "Monkey Pat
 When you hack the core logic of a white-label product, you create a "fork" in the codebase. You diverge from the vendor's official version. 
 When the vendor inevitably releases a critical security patch or a new OS compatibility update, you cannot simply click "upgrade." The upgrade will overwrite your custom hacks. You are forced to spend weeks manually merging the vendor's update with your fragile custom code, effectively paralyzing your engineering velocity.
 
-> *"If your product's unique value proposition requires modifying the core business logic of a white-label app, you are building your entire company on top of structural technical debt. You do not own your architecture."* — Product Engineering Axiom
+If your product's unique value proposition requires modifying the core business logic of a white-label app, you are building your entire company on top of structural technical debt, and you do not own your architecture. This is not a new problem — Ward Cunningham, who coined the "technical debt" metaphor in 1992, described the mechanism precisely: "A little debt speeds development, so long as it is paid back promptly... the danger occurs when the debt is not repaid," adding that "every minute spent on not-quite-right code counts as interest on that debt." A Monkey Patch on a white-label platform is technical debt with an especially punishing interest rate, because you never get to pay down the principal — the vendor owns the codebase, so you cannot refactor your way out. Every hack simply accrues more interest until the next mandatory update collects it all at once.
+
+McKinsey's research on enterprise technical debt puts a number on how large that interest payment gets industry-wide: in its CIO survey, McKinsey found that technology leaders estimate technical debt amounts to 20 to 40 percent of the value of their entire technology estate, and that 10 to 20 percent of the budget nominally earmarked for new products gets diverted to resolving technical debt issues instead. White-label customization hacks are a concentrated, self-inflicted version of exactly this dynamic — debt taken on knowingly, in a codebase you don't control, to hit a launch date.
 
 ## The Data Portability Trap
 
@@ -70,6 +72,23 @@ Beyond code-level lock-in, there is a second, quieter trap that many CEOs never 
 Before adopting any white-label app solution, negotiate explicit data portability terms into the vendor contract: a guaranteed full-fidelity export format (ideally direct database access or a documented, complete API), a maximum export turnaround time, and no punitive fees for retrieving your own data. If a vendor refuses to commit to these terms in writing, treat it as a direct signal that they are architecting the product around locking you in, not around serving your long-term interests. This single clause, negotiated on day one, can save an enterprise months of migration pain two years later.
 
 Founders often assume this is a "someday" problem, worth solving only once a migration is actually underway. In practice, by the time the need to migrate becomes urgent, your leverage has already evaporated. Two years in, your entire operations team depends on the platform daily, your patient or customer records have grown into the tens of thousands, and the vendor knows you cannot afford downtime. The contractual window to demand fair export terms is at signing, when you still have other vendors to choose from, not after you are already dependent on the one you picked.
+
+## The Migration Math: When Does Custom Actually Become Cheaper?
+
+Founders resist migrating off a white-label platform because the sticker price of a custom rebuild looks alarming next to the near-zero marginal cost of "just adding one more feature" to the existing app. That comparison is misleading, because it ignores the compounding cost already being paid in engineering time. Consider a realistic hypothetical for a booking-style app with three years of white-label history:
+
+**Staying on the white-label platform, Year 3 onward:**
+- License/subscription fee: roughly €2,000–€4,000/month, scaling with usage.
+- Monkey-patch maintenance: each vendor update requires 1–3 weeks of a senior developer's time to re-apply and test custom hacks, occurring 3–4 times per year. At a blended offshore/onshore rate, that is realistically €25,000–€45,000/year in pure maintenance labor that adds zero new functionality.
+- Feature velocity: each new proprietary feature (like the AI triage flow in the earlier example) takes 2–4x longer to build than it would in a clean codebase, because every change has to route around framework constraints.
+- Compounding risk: the probability of an update-induced outage grows every year, as the fork between the vendor's codebase and the customized version widens.
+
+**Migrating to a custom architecture:**
+- Upfront cost: a mid-complexity mobile booking platform with proprietary business logic typically runs €80,000–€150,000 for a full rebuild via an offshore/onshore hybrid team, delivered over 4-6 months.
+- Ongoing cost: €3,000–€6,000/month in hosting and maintenance, comparable to or lower than the white-label license fee, but with zero monkey-patch tax.
+- Feature velocity: new features ship at normal engineering speed, because there is no framework fight — the codebase was designed around your business logic from day one.
+
+Run the comparison over a five-year horizon and the white-label path frequently costs more in cumulative maintenance labor and lost feature velocity than the custom rebuild would have cost outright — before even accounting for the outage risk or the strategic cost of shipping proprietary features slower than a competitor running on custom architecture. The break-even point typically arrives once a company needs to ship more than two or three genuinely proprietary features per year; past that threshold, the "cheap" platform is no longer cheap, it is just deferred.
 
 ## The Transition to Custom Engineering
 

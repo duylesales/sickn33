@@ -38,7 +38,7 @@ It assumes that a new engineering team can perfectly replicate 15 years of accum
 
 It is the architectural equivalent of trying to change the engines on an airplane while it is flying.
 
-> *"Never rewrite an enterprise application from scratch. You will spend two years building an inferior version of the system you already have."* — Legacy Modernization Axiom
+Joel Spolsky, in his widely cited 2000 essay "Things You Should Never Do, Part I," called this exact decision "the single worst strategic mistake that any software company can make." Spolsky was writing about Netscape, whose decision to rewrite its browser from scratch created a three-year release gap that competitors used to seize the market. The same dynamic plays out inside enterprise IT departments: a team spends two years rebuilding a system that already works, learns the hard way why the old code had all those strange edge cases, and often ships something worse than what it replaced.
 
 ## The "Strangler Fig" Application Model
 
@@ -81,6 +81,30 @@ Before an Architect redirects the API Gateway to route a domain's traffic to the
 - **A designated data owner signs off:** A single named engineer, not a committee, is accountable for confirming the domain's data is safe to cut over, removing the ambiguity that causes most legacy migrations to stall in "almost done" for months.
 
 Only once the database layer has its own strangulation strategy, not just the API layer, is a Strangler Fig migration actually safe to execute at enterprise scale.
+
+## Why Large Rewrites Fail at the Portfolio Level, Not Just Anecdotally
+
+The Netscape story is famous, but it is not an outlier. The Standish Group's long-running CHAOS Report research on IT project outcomes has repeatedly found that project size is one of the strongest predictors of failure: large IT projects (roughly $10 million or more) have historically been more than ten times as likely to be canceled outright as projects under $1 million, and even the large projects that do complete routinely run far over their original cost and schedule estimates. A 15-year PHP monolith rewrite for a €50M logistics company sits squarely in the size bracket where the data says the odds are stacked against you before a single line of code is written.
+
+This is exactly why Martin Fowler's Strangler Fig pattern, which he first wrote about in a 2004 bliki post after observing actual strangler fig vines during a trip to Queensland, Australia, has held up as the industry-standard alternative for two decades. It doesn't eliminate the total amount of engineering work a modernization requires. What it does is convert one $10 million, all-or-nothing project with a 12-to-24-month blind spot into a series of much smaller projects, each shippable, testable, and reversible in isolation, which is precisely the profile the CHAOS data associates with success.
+
+### A Worked Comparison: The €50M Logistics Company's Two Paths
+
+Returning to the opening scenario, here is an illustrative comparison of what the Big Bang Rewrite and the Strangler Fig approach tend to look like in practice for a monolith of this size and age. These are realistic planning figures for a project of this scope, not one client's actual contract.
+
+**Big Bang Rewrite**
+- 12-month fixed-price contract, offshore team working in isolation from the production system: initial quote roughly €800,000-1,000,000.
+- Month 12: launch date slips, as it does in the large majority of large rewrites, commonly by 6 months or more.
+- Month 18: the new system finally launches, immediately fails under real production load, and undocumented business rules buried in the old PHP code (tax exceptions, regional shipping overrides, a decade of one-off customer accommodations) are discovered missing, one angry support ticket at a time.
+- Outcome: rollback to the legacy system, the original contract value largely sunk, and the organization now more wary of modernization than before it started, often delaying the next attempt by a year or more.
+
+**Strangler Fig migration**
+- Same overall scope, decomposed into 6-10 domains (Email Notifications, Billing, User Auth, Logistics, Reporting, and so on), each migrated independently behind an API Gateway.
+- First microservice (typically the lowest-risk, highest-value domain) ships to production within 4-8 weeks, not 18 months, giving the CTO a real, working proof point early.
+- Total engineering spend over 18-24 months lands in a broadly comparable range to the Big Bang quote, but spread across working increments instead of a single bet, with a functioning legacy system as the fallback at every single stage.
+- Outcome: by month 18, most or all domains have been migrated, each one validated independently in production, and if any single domain's microservice underperforms, the API Gateway routes traffic back to the legacy code path in milliseconds instead of triggering a company-wide rollback.
+
+The total headline cost of the two approaches is often similar. The difference that matters is where the risk sits: concentrated in one irreversible cutover eighteen months in, or distributed across a dozen small, reversible cutovers the team can absorb one at a time.
 
 ## The Manifera Modernization Execution
 

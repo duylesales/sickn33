@@ -50,7 +50,9 @@ Because the agency is bound by a fixed budget, they must weaponize the contract.
 ### 2. The Margin Protection (Cutting Corners)
 If the agency underestimated the complexity of the project (which happens 100% of the time in software), they will begin losing money halfway through the build. An agency will never accept a financial loss. To protect their margin, they will secretly slash the quality of the architecture. They will skip database normalization. They will skip QA testing. They will deliver code that barely functions, simply to get you to sign the final acceptance form so they can get paid. 
 
-> *"A Fixed-Price contract aligns the agency's financial incentives against the quality of your software. The faster they write bad code, the higher their profit margin."* — Contracting Axiom
+> *"Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage."* — Principle 2, the 12 Principles behind the Agile Manifesto (agilemanifesto.org)
+
+A Fixed-Price contract does the exact opposite of what that principle demands: instead of harnessing a changing requirement as a competitive advantage, it turns the requirement into a billable weapon. The agency's financial incentive stops being "build the best product" and becomes "defend the original 50-page document at all costs," because every deviation from it now threatens their margin.
 
 ## The Only Honest Model: Agile Time & Materials
 
@@ -74,6 +76,18 @@ The answer is that reputable T&M engagements are never "trust us, we're working.
 *   **Independent seniority audits.** A T&M rate should be tied to a named, vetted engineer at a specific seniority level, not an anonymous pool. If a client is billed for a "Senior Backend Engineer" rate, they should be able to verify that person's track record, not just receive an invoice with a generic job title.
 
 These four mechanisms turn Time & Materials from a leap of faith into a governed, transparent system where a CFO can see exactly what €1 of engineering spend produced, every two weeks, without ever needing to trust anyone's word for it.
+
+## The Real Cost of "Certainty": A Worked Example
+
+Return to the CFO's original decision and put numbers on both paths.
+
+**Path A: the Fixed-Price bet.** The CFO signs for €100,000. Three months in, the CEO needs a checkout-flow change driven by real user feedback. Agency B quotes €20,000 and a one-month delay for the "Change Request." The CFO refuses, and the corner-cutting begins. The project ships on time and on the original €100,000 budget — and then crashes in production. The startup pays €150,000 for a second team to rebuild it. Total spend: €250,000, plus the calendar months lost to a product that didn't survive contact with real users.
+
+**Path B: the T&M bet.** A pod is engaged at a comparable monthly capacity cost. The checkout-flow change is simply absorbed into the next Sprint at no separate fee, because the client purchased build capacity, not a frozen specification. If the build takes a comparable four months to reach a comparable feature set, direct cost lands close to the original €100,000 quote — except the software that ships already reflects what users actually wanted, because nothing had to survive a change-order fight to get built.
+
+This isn't a fringe outcome unique to small startups. McKinsey, together with the University of Oxford's BT Centre for Major Programme Management, studied more than 5,400 large IT projects (each with an initial budget over $15 million) and found that, on average, they ran 45% over budget, 7% over schedule, and delivered 56% less value than originally promised. Those are enterprise-scale programs, not small agency engagements, but the underlying mechanism is identical to the CFO's story above: a plan frozen at the start of a project collides with reality discovered during the project, and the contract structure determines whether that collision is absorbed calmly or turned into a fight over Change Request fees and corner-cut architecture.
+
+The lesson scales down cleanly. Estimation error isn't a failure of a particular vendor's competence; it's a structural feature of how software gets built. The only real choice a CFO has is whether the contract is designed to absorb that uncertainty, or to pretend it doesn't exist until it explodes on delivery day.
 
 ## Honest Contracting with Manifera
 
@@ -108,6 +122,9 @@ Because we refuse to compromise on European enterprise architecture. A Fixed-Pri
 
 ### (Scenario: CFO worried about being overbilled) What stops a Time & Materials agency from padding hours or working slowly?
 Reputable T&M engagements are governed by specific, measurable mechanisms, not trust alone. These include Sprint-level velocity tracking (so claimed effort can be compared to shipped, demoed software), a strict 'Demo-or-it-Didn't-Happen' rule that blocks partial credit for unfinished work, a 'Definition of Ready' checklist before any Sprint starts, and independent seniority audits tying each billed rate to a named, verifiable engineer. Together these make padded or slow work visible within two weeks, not two quarters.
+
+### (Scenario: CFO comparing real-world data) Is the 'Fixed-Price is safer' assumption actually supported by data on IT project outcomes?
+No. McKinsey and the University of Oxford's BT Centre for Major Programme Management studied more than 5,400 large IT projects and found that, on average, they ran 45% over budget, 7% over schedule, and delivered 56% less value than originally promised. Those figures describe large enterprise programs, not small agency contracts, but they reflect the same underlying mechanism: a plan frozen before the work starts collides with reality discovered during the work, and Fixed-Price contracts hide that collision until delivery rather than absorbing it as the project goes.
 
 <script type="application/ld+json">
 {
@@ -160,6 +177,14 @@ Reputable T&M engagements are governed by specific, measurable mechanisms, not t
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Reputable T&M engagements rely on measurable governance, not trust: Sprint-level velocity tracking comparing claimed effort to shipped software, a 'Demo-or-it-Didn't-Happen' rule that blocks partial credit for unfinished work, a 'Definition of Ready' checklist before each Sprint, and independent seniority audits tying billed rates to a named, verifiable engineer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the 'Fixed-Price is safer' assumption actually supported by data on IT project outcomes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. McKinsey and the University of Oxford's BT Centre for Major Programme Management studied more than 5,400 large IT projects and found they ran 45% over budget, 7% over schedule, and delivered 56% less value than promised, on average. These figures cover large enterprise programs rather than small agency contracts, but they reflect the same mechanism: a frozen upfront plan colliding with reality discovered mid-project."
       }
     }
   ]

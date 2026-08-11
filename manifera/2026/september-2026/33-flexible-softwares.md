@@ -47,7 +47,7 @@ YAGNI dictates that you must never write code for a feature that *might* be need
 
 If the ticket asks for a PDF export, you write a hard-coded function that generates a PDF. It takes two hours, not three weeks. The code is brutally simple. Any junior developer can read it and fix it instantly.
 
-> *"The best software architects do not predict the future. They build systems that are simple enough to be rewritten when the future actually arrives."* — Software Architecture Axiom
+Ron Jeffries, one of the three co-founders of Extreme Programming and the practitioner most closely associated with coining YAGNI, put the discipline plainly: "Always implement things when you actually need them, never when you just foresee that you [will] need them." — Ron Jeffries, co-founder of Extreme Programming. The best software architects do not try to predict the future; they build systems simple enough to be rewritten cheaply once the future actually arrives.
 
 ## Refactoring vs. Flexibility
 
@@ -56,6 +56,8 @@ Many developers argue that if they don't make the software flexible upfront, it 
 If the code is simple and lacks complex abstraction, it is incredibly easy to delete and rewrite. If the business *does* eventually ask for a CSV export a year later, the developer simply looks at the simple PDF function, extracts the common logic, and refactors it into a dual-export function. 
 
 You pay the architectural cost of flexibility *only* when the business actually demands it, rather than paying for it upfront on a hypothesis.
+
+This is also why code review matters as much as the initial design decision. A Pull Request that introduces a generic interface, a plugin registry, or a configurable strategy pattern for a feature with exactly one current use case should prompt a specific question from the reviewer: "What is the second concrete case this needs to support, today, not hypothetically?" If the answer is "none yet," the abstraction has no business existing yet either — not because abstraction is bad, but because an abstraction designed against a guess is, statistically, designed against the wrong shape of the real second and third use cases once they actually appear.
 
 ## The Rule of Three: A Concrete Heuristic for When Abstraction Finally Pays
 
@@ -73,6 +75,18 @@ The distinction matters because feature flags buy flexibility in behavior, not f
 
 This is the practical difference between engineering for flexibility and engineering for optionality. A generic Export Engine tries to predict every future format before any customer asks for one. A feature flag defers the architectural decision entirely, letting the business validate demand cheaply, with code that stays exactly as simple as the YAGNI principle demands.
 
+## The Real Cost of Complexity: What the Data Shows
+
+Over-engineering is not just an aesthetic complaint about "clever" code. Stripe's Developer Coefficient survey, which polled over 1,000 professional developers and 1,000 C-level executives, found that the typical developer spends 13.5 hours a week dealing with technical debt and another 3.8 hours a week fixing "bad code" — 17.3 hours a week combined, out of a reported 41.1-hour work week. That is 42% of a developer's time spent servicing the past rather than building the future, and a majority of developers surveyed (59%) told Stripe that amount of time felt "excessive." Extrapolated across the industry, Stripe estimated the cost of that lost time at roughly $85 billion annually.
+
+Premature abstraction is one of the largest contributors to that number, precisely because it is invisible at the moment it's created. A hard-coded PDF export function is trivial to read and trivial to delete. A "Universal Export Service" with generic interfaces and dependency injection is neither — every future developer who touches it first has to reverse-engineer what the abstraction was *for*, before they can even begin to change what it *does*. That reverse-engineering tax is exactly the kind of technical-debt servicing Stripe's survey is measuring, and it compounds every time a new engineer joins the team and has to relearn the same unnecessary complexity from scratch.
+
+### Pricing the Trap: A Worked Example
+
+Return to the invoice-export scenario from the opening. The "Universal Export Service" took three weeks (120 engineering hours) to design and build, at a blended rate of roughly €65/hour — about €7,800 in direct engineering cost before a single invoice was ever exported. The YAGNI-compliant hard-coded version takes two hours, or roughly €130.
+
+That gap alone looks like a fairly obvious decision. But the real cost compounds afterward. Every time a junior developer needs to touch the export feature — a design tweak, a bug fix, a new field on the invoice — the abstracted version costs them the "three days to understand the routing" described earlier, versus minutes for the hard-coded function. Multiply that by even ten touches over two years (a conservative estimate for a feature that seems central enough to justify an abstraction in the first place), and the Universal Export Service has cost the team an additional 240 hours, or roughly €15,600, servicing complexity that was never used for its intended purpose — because the CSV, XML, and JSON exports it was built to anticipate never shipped. The simple version, refactored once when a second real export format actually arrives (per the Rule of Three below), costs a fraction of that over the same period.
+
 ## The Manifera Pragmatic Governance
 
 When you hire a standard [offshore software development](https://www.manifera.com/services/offshore-software-development/) agency, they often suffer from the "Flexible Softwares" trap. Junior-to-mid-level developers love to over-engineer solutions to prove their technical prowess, bloating your codebase and burning your billable hours.
@@ -83,7 +97,7 @@ Our Dutch Tech Leads strictly enforce YAGNI. During the Pull Request (PR) review
 
 We force our developers to write boring, hyper-specific, highly readable code. We do not build hypothetical flexibility; we build concrete, maintainable systems that keep your AWS costs low and your engineering velocity high.
 
-Stop paying for over-engineered code. Contact our Amsterdam team for pragmatic enterprise architecture.
+Stop paying for over-engineered code. Contact our Amsterdam team for pragmatic enterprise architecture, and let a Dutch Tech Lead show you, PR by PR, exactly where your current codebase is paying interest on abstractions nobody ever needed.
 
 ---
 

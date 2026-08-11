@@ -44,7 +44,9 @@ When the offshore engineering team receives these designs, one of two things hap
 1. **The Budget Explodes:** The engineers follow the design literally, spending hundreds of hours building complex backend systems to support trivial UI animations or data tables.
 2. **The UX Breaks:** The engineers realize the design is unbuildable within budget, so they quietly cut corners. The final product looks nothing like the beautiful Figma prototype, and the founder is furious.
 
-> *"Design dictates the database. If you design the UI without consulting the database architect, you are writing checks your backend cannot cash."* — Product Engineering Axiom
+> "Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious." — Fred Brooks, *The Mythical Man-Month*
+
+Fred Brooks wrote that in 1975, decades before Figma existed, and it is still the most precise description of the Design-First Fallacy available. A UI mockup is a flowchart with better typography. It shows the intended path through the software, but it says nothing about what the software actually has to store, join, and compute to make that path real. If you design the UI without first understanding what the underlying tables can efficiently produce, you are writing checks your backend cannot cash.
 
 ## The Solution: Architecture-Led Design
 
@@ -77,6 +79,31 @@ Elite design teams enforce a simple governance artifact before development start
 
 ### The Responsive Breakpoint Gap
 The same discipline applies to screen width. Most Figma files are designed at a single desktop frame size (commonly 1440px). Without explicit breakpoint designs for tablet (around 768px) and mobile (around 375px), the frontend team is left guessing how a 12-column dashboard should collapse, and every developer guesses differently. Architecture-Led Design mandates at least three breakpoint mockups per complex screen, not just a "responsive" checkbox in the handoff notes.
+
+## Design Still Matters — Just Not First
+
+It is worth being precise about what this argument is not. It is not "design doesn't matter." McKinsey's "The Business Value of Design" study tracked the design actions of 300 publicly listed companies across five years and more than two million pieces of financial data. Companies in the top quartile of McKinsey's Design Index posted 32% higher revenue growth and 56% higher total returns to shareholders than their industry peers over that period, a result that held across medical technology, consumer goods, and retail banking. Good design is one of the most measurable levers a product organization has.
+
+The Design-First Fallacy is not a case against design. It is a case against sequencing. McKinsey's own index rewards companies that continually test and iterate with real users, and you cannot meaningfully test and iterate on a static Figma prototype of a query your backend can't actually serve. The 32% revenue advantage belongs to teams whose designs shipped and got used, not to teams whose designs looked best in the pitch deck.
+
+### A Worked Cost Comparison: Same MVP, Two Sequences
+
+Here is an illustrative comparison of what a 12-week B2B SaaS dashboard MVP tends to cost under each sequencing model. These are realistic planning estimates for a typical mid-complexity dashboard project, not figures from one specific client engagement.
+
+**Design-First sequence**
+- Weeks 1-4: A freelance designer builds a 50-screen Figma prototype with no architectural input. Design cost: roughly €12,000.
+- Weeks 5-6: The engineering team estimates the build and discovers the "Revenue by Region, Filtered by User Tier, Updated Live" widget alone requires a schema rewrite and a Redis caching layer. The estimate moves from roughly €45,000 to €68,000.
+- Weeks 7-9: To protect the budget, the founder cuts scope mid-build. Engineers quietly redesign three screens without design input, and the shipped UI starts visibly diverging from the approved prototype.
+- Weeks 10-13: QA finds the dashboard has no defined Error, Empty, or Permission-Denied states, because the prototype never showed them. An extra sprint is added to patch this in.
+- Typical result: 13-16 week delivery against a 12-week plan, roughly €80,000 total spend, and a shipped product that no longer matches what the founder signed off on.
+
+**Architecture-Led sequence, same MVP**
+- Week 1: The Architect, PM, and designer jointly map the domain model before a single screen is drawn. The live "Revenue by Region" widget is flagged early; the team agrees to ship it with a 15-minute refresh delay for the MVP instead of true real-time, which cuts the backend cost of that one widget by roughly two-thirds.
+- Weeks 2-5: The designer works inside a component library that maps 1:1 to code, filling in State Matrix cells for Loading, Empty, Error, Partial-Data, and Permission-Denied on every screen as they go.
+- Weeks 6-11: Engineering builds against a spec that was already reality-checked, with no mid-build renegotiation of scope or budget.
+- Typical result: 11-12 week delivery on plan, roughly €50,000-55,000 total spend, and a shipped product that matches what was approved, because nothing in it was structurally impossible to begin with.
+
+The gap between the two sequences is not a design-quality gap. The same designer, the same skill level, and often the same visual result can come out of either path. The difference is entirely in when the architectural constraints entered the conversation.
 
 ## The Manifera Product Execution Model
 

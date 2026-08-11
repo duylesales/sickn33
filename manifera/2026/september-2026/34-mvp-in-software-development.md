@@ -43,7 +43,9 @@ If your startup fails, the mortgage doesn't matter. But if your startup *succeed
 
 Eventually, every successful SaaS company built on Low-Code hits the Scaling Cliff, where the platform's generalized architecture physically prevents the company from executing its product roadmap.
 
-> *"Low-code is the best way to prove a business model, and the worst way to scale one. If you achieve Product-Market Fit, you must immediately transition to custom architecture before your technical debt bankrupts your engineering velocity."* — Startup Architecture Axiom
+The mortgage metaphor holds because both are a rational trade of a small, certain cost today for a larger, uncertain cost later, and both only become a problem if you stop paying attention to the balance. A founder who never checks their mortgage statement discovers the true cost only at foreclosure; a founder who never tracks their Low-Code platform's licensing curve, feature ceilings, or accumulating workarounds discovers the true cost only when an enterprise contract is already on the table and the SSO integration turns out to be impossible.
+
+Ward Cunningham, the software engineer who coined the term "technical debt" at OOPSLA in 1992, described the mechanism in almost exactly these financial terms: "Shipping first time code is like going into debt. A little debt speeds development, so long as it is paid back promptly with a rewrite… The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt." — Ward Cunningham, OOPSLA 1992. Low-code is the fastest way to take out that loan; the Scaling Cliff is simply the moment the interest payments exceed what the business can afford, and the only way out is to refinance into custom architecture.
 
 ## Surviving the Scaling Cliff (The Re-Platforming Strategy)
 
@@ -56,6 +58,18 @@ You cannot tell your customers, *"We aren't releasing any new features for 9 mon
 
 ### 2. API-First Decoupling
 Do not attempt a "Big Bang" migration. Elite architects use the Strangler Fig pattern. They build a custom backend (Node.js/PostgreSQL) and slowly migrate the data away from the Low-Code platform, pointing the Low-Code frontend to the new custom database. Once the backend is secure, they swap out the frontend.
+
+### 3. Pricing the Two Paths
+
+Run the numbers on both routes from the opening scenario. A reactive Big Bang rewrite, started only after the SSO ticket proves impossible, realistically costs the €250,000 and 9 months described earlier — plus the unquantifiable cost of a frozen roadmap and the enterprise deals that stall while the team is heads-down on plumbing instead of features.
+
+A proactive Strangler Fig migration, started six months earlier at the first appearance of two or three warning signs from the list below, spreads a comparable total engineering cost (often €180,000-€220,000, since a calmer migration wastes less time on rework) across 12-15 months instead of compressing it into 9, while the team continues shipping customer-facing features in parallel the entire time. The total bill is similar or slightly lower; the difference that actually matters to the business is that the proactive path never requires telling customers or the Board that the roadmap is frozen. The Scaling Cliff itself is nearly unavoidable for a successful Low-Code MVP — the only real choice a founder has is whether to cross it on a bridge they started building early, or fall.
+
+## Why the Cliff Is Becoming More Common, Not Less
+
+It is tempting to assume low-code platforms are simply getting more capable and the Scaling Cliff will eventually disappear as a risk. The market data points the other way: low-code adoption is growing faster than the platforms' architectural ceilings are rising, which means more companies are approaching the cliff, not fewer. Gartner forecasts the low-code development technologies market will exceed $30 billion in 2026 on its way to roughly $44.5 billion by the end of the year across the broader low-code category, and projects that 75% of new applications built in 2026 will use a low-code platform somewhere in the stack, up from just 40% in 2021.
+
+That growth is a rational response to real seed-stage economics — it is genuinely the fastest way to test a business model, exactly as the opening scenario describes. But it also means the population of companies who will eventually need a Re-Platforming conversation with their Board is expanding every year, not shrinking. A founder choosing Low-Code today is making the same correct decision thousands of other founders are making simultaneously; the differentiator between the ones who navigate the Scaling Cliff safely and the ones who get bankrupted by it is not the initial choice of platform, but whether they plan the exit before the enterprise SSO ticket forces the question.
 
 ## Five Warning Signs You Are Approaching the Cliff Before It Hits
 

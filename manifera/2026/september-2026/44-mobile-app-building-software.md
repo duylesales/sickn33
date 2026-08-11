@@ -50,7 +50,9 @@ Because the UI components are 100% native, the rendering is offloaded to the pho
 ### 3. Flutter (The Canvas Engine)
 Flutter (by Google) takes a third approach. Instead of using native buttons, Flutter acts like a video game engine. It draws every pixel itself on a blank canvas (using the Skia or Impeller graphics engine). It is highly performant, but often feels slightly "uncanny" to users because it doesn't use the exact native components of the OS.
 
-> *"A web wrapper creates the illusion of an app for the developer, but delivers the reality of a slow website to the user. Enterprise mobile requires native UI rendering, period."* — Mobile Architecture Axiom
+A web wrapper creates the illusion of an app for the developer, but delivers the reality of a slow website to the user — and at the enterprise scale of 50,000 retail customers, that gap between illusion and reality shows up directly in App Store ratings and support tickets, not just internal QA notes.
+
+This is not a niche framework choice on the margins of the market. In the 2024 Stack Overflow Developer Survey, 9.4% of professional developers reported using Flutter and 9.0% reported using React Native, making the two true-native-rendering frameworks the dominant choice among developers who ship cross-platform mobile apps professionally — Web Wrapper toolkits built on Cordova or Ionic barely register in the same data by comparison ([Stack Overflow Developer Survey 2024](https://survey.stackoverflow.co/2024/technology)). The market has already made the same judgment the CTO in the opening scenario made too late.
 
 ## The Offline-First Requirement: Local Data and Sync Conflicts
 
@@ -65,6 +67,28 @@ A properly architected mobile app treats the network as optional, not mandatory.
 3. **Conflict resolution rules.** The hard part isn't storing data offline — it's reconciling two people editing the same record while both were disconnected. Enterprise architectures typically use either "Last Write Wins" with a server timestamp (simple, acceptable for low-collision data like loyalty points) or field-level merge logic (required for anything like inventory counts or shared documents, where overwriting a colleague's edit silently would cause real financial damage).
 
 Skipping this layer is one of the most common reasons a "successful" MVP app collapses under enterprise rollout: it worked fine for 50 pilot users on office WiFi, then fell apart across 200 warehouse workers on patchy 4G.
+
+## A Worked Example: What the Rebuild Actually Costs
+
+Consider the retail franchise from the opening scenario, scaled to a realistic number: 50,000 downloads, 15,000 monthly active users, a loyalty program tied directly to revenue.
+
+**The Web Wrapper path.** The drag-and-drop subscription costs roughly €2,400/year and the app ships in a week — effectively free compared to a custom build. But once the 1-star reviews start arriving, the damage compounds on a predictable schedule:
+
+- **Weeks 1-4:** App Store rating drops from an initial 4.2 to below 3.0 as reviews mention "laggy," "freezes," and "won't load my rewards." Below a 3.0 average, App Store and Play Store search ranking algorithms actively suppress the app's visibility to new users, so the problem is no longer just existing-user churn — it now also throttles acquisition.
+- **Weeks 5-8:** Customer support tickets about the app roughly double the team's normal volume, because users who can't get the loyalty screen to load call the store instead of troubleshooting themselves. Estimated cost: 15-20 hours/week of support time that didn't exist before launch.
+- **Week 9:** The decision is made to rebuild in React Native. But this is now a rebuild against a live app with a damaged App Store listing, not a greenfield build — the negative reviews don't disappear when the new version ships, and rebuilding the rating takes months of sustained positive usage.
+
+**The React Native path, done correctly the first time.** A Dutch-Architect-designed React Native build with offline-first sync typically runs 10-14 weeks and €55,000-€75,000 for a loyalty-program-scale app, depending on integration complexity with the existing POS and CRM systems. That is a real cost, and it is meaningfully higher than €2,400/year — until it's compared against the realistic Web Wrapper outcome: the same €55,000-€75,000 rebuild cost eventually paid anyway, plus months of suppressed App Store visibility, plus the support-cost spike, plus a brand reputation hit that a 3.0-star public rating represents for as long as it takes to climb back out of it.
+
+The Web Wrapper is not actually the cheap option — it is the expensive option with the cost moved later and disguised as "fast."
+
+## The Operational Advantage: Shipping Fixes Without an App Store Review
+
+There is one more architectural distinction enterprises evaluating mobile app building software rarely consider up front: how a critical bug fix reaches a user's phone after launch.
+
+A fully native app (pure Swift, pure Kotlin) has exactly one distribution path for any change, including a one-line bug fix: build a new binary, submit it to Apple and Google, and wait for review — typically 24-48 hours on the App Store and a similar window on Google Play, longer if the review gets flagged for manual inspection. If the loyalty program's checkout logic breaks on a Friday afternoon, the fix does not reach users until the following week at the earliest.
+
+A properly architected React Native app can use Over-the-Air (OTA) update tooling (such as Microsoft's CodePush or Expo's EAS Update) to push a JavaScript-layer fix directly to installed apps within minutes, without a new store submission, provided the change doesn't touch native code or App Store review guidelines around executable code delivery. This is not a workaround or a grey-area trick — it is a standard, Apple-and-Google-sanctioned pattern for shipping JS-only patches, and it is one of the most underrated reasons enterprises with active loyalty programs, checkout flows, or promotional logic standardize on React Native: the mean time to recovery for a production bug drops from days to minutes. A Web Wrapper technically has this same speed advantage for its HTML/JS layer, but it has nothing else going for it — you would be trading the one advantage a fully native app has (rendering performance) for the one advantage a Web Wrapper has (instant updates) and getting neither the performance nor the maintainability of a real architecture. React Native is the only path that keeps both.
 
 ## The Migration to True Cross-Platform
 

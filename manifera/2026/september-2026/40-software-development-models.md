@@ -49,7 +49,9 @@ At the end of the 2-week sprint, the developers finish the feature. But they can
 
 The developers moved fast, but the business value did not. The code sat rotting in a staging environment for five months. 
 
-> *"Agile without DevOps is just a faster way to pile up undeployed code in a staging environment. If you cannot deploy on demand, you are not Agile."* — Enterprise Delivery Axiom
+The instinct behind that final step — routing every release through a Change Advisory Board (CAB) or a senior manager for manual sign-off — feels like prudent risk management. DORA's research, published in the 2019 *Accelerate State of DevOps Report*, tested that assumption directly and found the opposite. Organizations that required external, heavyweight approval before every release had *worse* software delivery performance, and the researchers found no evidence that this formal review process actually reduced the change failure rate compared to lightweight peer review embedded in the development process itself. The CAB does not make releases safer. It makes them larger, less frequent, and riskier, because a bigger batch of untested interactions is exactly the recipe for the outages a CAB was meant to prevent.
+
+The original Agile Manifesto anticipated exactly this failure mode. Its seventh principle, published in 2001 by the same group of practitioners who wrote the manifesto itself, states plainly: *"Working software is the primary measure of progress."* — Principle 7, *Principles behind the Agile Manifesto*, agilemanifesto.org. Not "story points completed." Not "sprints closed." Working software, running in front of real users. By that standard, an organization with a five-month staging queue is not measuring progress at all — it is measuring motion, and mistaking the two is exactly how a €1 million Agile transformation produces a six-month release cycle.
 
 ## Phase 2: True Agile is Powered by DevOps (CI/CD)
 
@@ -78,6 +80,15 @@ Story points measure how busy developers are. They do not measure how fast the o
 The diagnostic power of DORA metrics is that they are immune to Water-Scrum-Fall theater. An organization can run picture-perfect Scrum ceremonies — daily standups, sprint retros, a beautifully groomed backlog — and still score in the bottom quartile on all four DORA metrics, because the ceremonies happen upstream of the actual deployment bottleneck. Conversely, a team with no Scrum Master, no Jira board, and no formal "Agile" branding at all can score in the elite quartile simply because their CI/CD pipeline lets them ship safely, constantly, and recover fast.
 
 This is why, when Manifera's Dutch Tech Leads take over an engineering pod, the first thing we instrument is not the Jira workflow — it's the deployment pipeline telemetry. We track deployment frequency and lead time for changes from day one, using the CI/CD platform's own logs rather than self-reported sprint velocity. If those two numbers aren't improving within the first month, no amount of retrospective meetings will fix the underlying problem, because the bottleneck isn't the team's discipline — it's the architecture.
+
+### A Worked Example: Pricing the Six-Month Feedback Loop
+
+Put a number on the gap between "code is finished" and "code is earning revenue." Assume the financial institution in the opening scenario is building a feature projected to reduce customer churn enough to protect €40,000 in monthly recurring revenue.
+
+- **Water-Scrum-Fall pace:** The feature is coded in a 2-week sprint, then queues for 2 weeks of manual QA, 4 weeks of security board review, and roughly 12 weeks waiting for the next scheduled quarterly deployment window — about 20 weeks (5 months) from "done" to "live." That is nearly €200,000 in delayed or foregone revenue protection, sitting idle in a staging environment for no engineering reason.
+- **CI/CD pace:** The same feature, built by a pod with automated testing and SAST scanning wired into the pipeline, deploys within days of the sprint ending once it passes the automated gate. The revenue protection starts accruing almost immediately, and the €200,000 gap simply does not exist.
+
+Multiply that pattern across even a modest annual roadmap of 10–15 features, and the "process improvement" argument for CI/CD stops being a developer-experience nicety and becomes one of the highest-ROI line items available to a VP Engineering — routinely worth more than the original consultancy invoice for the "Agile Transformation" that failed to move the deployment bottleneck at all.
 
 ## Phase 3: The Manifera Pod Methodology
 
@@ -112,6 +123,9 @@ We deploy self-contained DevOps pods. Our Dutch Architects build automated CI/CD
 
 ### (Scenario: VP Engineering reporting to the board) If our sprint velocity chart looks great, why should we still worry about our software development model?
 Sprint velocity (story points completed) measures how busy developers are, not how fast the business receives value. An organization can report a rising velocity chart every week while still taking six months to actually deploy anything, because the bottleneck sits outside the sprint entirely, in manual QA, security review, or change-approval boards. Instead, track the four DORA metrics: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Restore. These measure the health of your actual delivery pipeline and cannot be gamed by sprint ceremonies.
+
+### (Scenario: Risk & Compliance officer defending the Change Advisory Board) Doesn't removing the Change Advisory Board (CAB) make releases riskier?
+The research says the opposite. DORA's 2019 Accelerate State of DevOps Report specifically tested whether requiring external CAB or senior-manager approval before every release improves safety, and found that organizations with this heavyweight approval step had worse software delivery performance overall, with no measurable reduction in change failure rate compared to teams using lightweight peer review embedded in the pull-request process. CABs tend to make releases larger and less frequent, which increases risk rather than reducing it.
 
 <script type="application/ld+json">
 {
@@ -164,6 +178,14 @@ Sprint velocity (story points completed) measures how busy developers are, not h
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Sprint velocity measures developer busyness, not delivered business value. Track the four DORA metrics instead: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Restore. These reveal the true health of your delivery pipeline, since they cannot be inflated by sprint ceremonies alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Doesn't removing the Change Advisory Board (CAB) make releases riskier?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. DORA's 2019 Accelerate State of DevOps Report found that requiring external CAB or senior-manager approval before every release correlates with worse software delivery performance and shows no measurable reduction in change failure rate versus lightweight peer review embedded in the pull-request process. CABs tend to produce larger, less frequent releases, which increases risk instead of reducing it."
       }
     }
   ]

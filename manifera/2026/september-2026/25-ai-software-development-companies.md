@@ -45,7 +45,7 @@ An AI Wrapper is simply a standard web application with a text box. When the use
 2. **Catastrophic Data Privacy Risks:** When you use a standard public API, you are transmitting your users' data to a third party. If you are handling financial, medical, or proprietary legal data, an API Wrapper is a severe compliance violation.
 3. **The "Model Drift" Vulnerability:** You do not control the underlying LLM. When the provider quietly updates their model to make it "safer," it might stop answering your specific industry questions, instantly breaking your product with zero warning.
 
-> *"If an agency's entire 'AI Strategy' consists of sending your data to a public API, they are not an AI company. They are a frontend typing service exposing you to massive compliance risk."* — Technical Due Diligence Axiom
+If an agency's entire "AI strategy" consists of sending your data to a public API, they are not an AI company — they are a frontend typing service exposing you to massive compliance risk. Gartner's own research backs up how common this has become: in a January 2025 poll of over 3,400 webinar attendees, the firm found "agent washing" — vendors rebranding existing chatbots, RPA scripts, and simple API wrappers as "agentic AI" — so widespread that Gartner estimates only a small fraction of the thousands of vendors claiming agentic AI capabilities actually have them. Gartner separately predicts that over 40% of agentic AI projects will be canceled by the end of 2027, citing escalating costs, unclear business value, and inadequate risk controls (Gartner press release, June 25, 2025). The pattern is consistent: impressive demo, fragile foundation.
 
 ## How to Spot True AI Engineering
 
@@ -74,6 +74,28 @@ Even when an agency clears the wrapper test, a second and more subtle failure mo
 
 ### Why Most Agencies Skip This Step
 Building an evaluation harness is unglamorous, invisible work — it does not show up in a demo, and it takes real data-engineering discipline to maintain. Agencies optimized for a fast four-week delivery almost universally skip it, because it does not affect whether the demo looks impressive on day one. It only becomes visible as a gap when the model quietly degrades on day 180, and by then the agency has already moved on to the next client. This is precisely why technical due diligence has to include the question "how do you know if it breaks" and not just "can you build it."
+
+This is not a fringe risk. Gartner predicts that at least 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, citing poor data quality, unclear business value, and escalating costs (Gartner press release, July 29, 2024). Most of those abandoned projects were not killed by a bad idea — they were killed by a foundation that could not survive contact with production traffic, compliance review, or a model update.
+
+## What a Wrapper Actually Costs You: A TCO Walkthrough
+
+To make the risk concrete, walk through two versions of the same project: a document-intelligence tool that lets an insurance underwriter query policy documents in plain English. Both teams quote a similar upfront price. The five-year total cost of ownership tells a very different story.
+
+### Scenario A: The Wrapper Build
+- **Upfront cost:** €35,000 for a four-week build. The "AI" is a prompt template that stuffs raw policy text into a public LLM's context window and returns the answer.
+- **Month 3:** The underwriting team notices the model occasionally invents policy clauses that do not exist. There is no golden dataset and no regression test, so nobody can quantify how often this happens or prove it has gotten better or worse after any change.
+- **Month 6:** The API provider ships a routine model update. Answer quality shifts overnight. The agency that built it has moved on to other clients; a fix takes three weeks of unplanned rework at an emergency day rate.
+- **Month 9:** A compliance review flags that full, unredacted policyholder data — names, medical riders, financial details — has been leaving the company's infrastructure with every query, sent straight to a third-party API with no data processing agreement covering this specific use case. Legal gets involved.
+- **Year 1–5 running cost:** Emergency patches, a rushed retrofit of access controls, and eventual replacement of the entire system push realistic five-year cost to somewhere between €180,000 and €250,000 — most of it unplanned.
+
+### Scenario B: The Engineered Build
+- **Upfront cost:** €68,000 for an eight-week build. This buys a RAG pipeline with a vector database (e.g., Pinecone or a self-hosted pgvector instance), a Local PII Masking layer, and a 150-example golden dataset reviewed by a senior underwriter.
+- **Month 3:** The evaluation harness runs automatically on every deploy. When a prompt change accidentally degrades answer quality on edge cases, the CI gate catches it before it reaches production.
+- **Month 6:** The underlying open-source model is upgraded on the team's own schedule, tested against the golden dataset first, and rolled out only once scores clear the threshold. No surprise regressions.
+- **Ongoing cost:** Roughly €1,500–€3,000/month in hosting and monitoring, plus periodic model refresh cycles budgeted in advance rather than triggered by an emergency.
+- **Year 1–5 running cost:** Approximately €140,000–€170,000 total, with no compliance incident and no emergency rework.
+
+The wrapper looks cheaper by €33,000 on day one. By year two, it is typically more expensive — and that is before accounting for the reputational and regulatory cost of a data breach that never should have happened. This is the calculation technical due diligence is supposed to catch before the contract is signed, not after.
 
 ## The Manifera AI Engineering Standard
 
