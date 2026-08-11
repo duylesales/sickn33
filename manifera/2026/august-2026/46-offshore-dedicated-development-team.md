@@ -37,7 +37,7 @@ If you want to scale velocity without breaking your internal culture, you must s
 
 When you hire five individual offshore developers, you are not buying productivity. You are buying raw labor capacity. But raw labor requires management overhead.
 
-In the Staff Augmentation model, the burden of integrating those five individuals falls entirely on your internal Tech Lead. Your Tech Lead must teach them the codebase, enforce the coding standards, unblock them daily, and act as the communication bridge. According to Brooks's Law, adding manpower to a complex project increases communication overhead exponentially. Your Tech Lead burns out, and the offshore team sits idle waiting for instructions.
+In the Staff Augmentation model, the burden of integrating those five individuals falls entirely on your internal Tech Lead. Your Tech Lead must teach them the codebase, enforce the coding standards, unblock them daily, and act as the communication bridge. According to Brooks's Law, adding manpower to a complex project increases communication overhead combinatorially — every new person adds a new pairwise communication channel to every existing person, so overhead compounds far faster than headcount does. Your Tech Lead burns out, and the offshore team sits idle waiting for instructions.
 
 ## The Anatomy of an Engineering Pod
 

@@ -27,8 +27,7 @@ However, the reality of enterprise IT is that optimism does not write code. Cont
 
 When an offshore or nearshore IT project fails, it rarely fails because the developers forgot how to write JavaScript. It fails because the legal and operational framework of the contract was designed to trap the client in a cycle of dependency and hidden costs.
 
-> *"We were held hostage by our previous IT vendor. They refused to hand over the full AWS root access and claimed our custom CRM was built on their 'proprietary core framework,' meaning we couldn't take the code to another agency. Manifera had to execute a complete, painful extraction for us before we could finally own our own product."*  
-> **— Founder of a European B2B E-commerce Platform (Manifera Client Testimonial)**
+This pattern is common enough that it has a name in procurement circles — "proprietary core lock-in" — and it is the specific mechanism behind a large share of the vendor-switching disputes that end up in legal review: a client who wants to leave discovers the code they paid for was never fully theirs to take.
 
 Before you sign a Master Services Agreement (MSA) with any [custom software development](https://www.manifera.com/services/custom-software-development/) firm, you must aggressively audit the contract for these four industry red flags.
 

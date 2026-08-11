@@ -39,7 +39,9 @@ In 2026, this is no longer a best practice. It is a survival requirement. And mo
 
 ## The API-First Principle: Design the Contract Before the Code
 
-> *"Given enough eyeballs, all bugs are shallow. Given enough APIs, all products are platforms."* — **Tim O'Reilly**, founder of O'Reilly Media
+> *"Given enough eyeballs, all bugs are shallow."* — **Eric S. Raymond**, from *The Cathedral and the Bazaar* (1999), the formulation now widely known as "Linus's Law"
+
+The API-first era pushes that same principle one step further: given enough APIs, all products become platforms — every external integration is another set of eyes and use cases testing your product's contract, not just your own team's.
 
 API-first does not mean "we have an API." It means:
 

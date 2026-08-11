@@ -102,8 +102,6 @@ At Manifera, our Hybrid Offshore model is perfectly structured for complex archi
 
 Stop letting legacy code dictate your business velocity. It is time to decompose the trap.
 
-*[Placeholder: Insert real client case study data demonstrating a 5x increase in deployment frequency after Manifera executed a Microservices transition]*
-
 ---
 
 ## Frequently Asked Questions

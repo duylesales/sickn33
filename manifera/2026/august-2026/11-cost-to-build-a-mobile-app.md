@@ -43,7 +43,7 @@ The first decision dictates your entire financial roadmap. Do you build Native (
 - **Maintenance:** Efficient. A single React Native team maintains both platforms.
 - **Verdict:** For 95% of B2B SaaS, E-commerce, and enterprise dashboard apps, React Native is the only financially responsible choice in 2026.
 
-**The proof this scales beyond small teams:** Discord's own engineering team has published, on their public engineering blog, that their iOS app — serving millions of daily active users and holding a 4.8-star App Store rating — is maintained by a team of just two engineers on React Native, sharing the large majority of business logic with their web front-end. This is not a startup-scale anecdote; it is one of the highest-traffic consumer apps in the world, run by a lean team, precisely because cross-platform code reuse eliminates the duplicate-team tax described above.
+**The proof this scales beyond small teams:** Discord's own engineering team has published, on their public engineering blog, that their iOS app — serving many millions of monthly active users and holding a 4.8-star App Store rating — is maintained by a team of just three core iOS engineers on React Native, sharing the large majority of business logic with their web front-end. This is not a startup-scale anecdote; it is one of the highest-traffic consumer apps in the world, run by a lean team, precisely because cross-platform code reuse eliminates the duplicate-team tax described above.
 
 ## 2. The Complexity-Adjusted Cost Model: Why "It Depends" Has Numbers
 
