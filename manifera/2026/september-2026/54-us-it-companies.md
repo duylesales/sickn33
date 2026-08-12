@@ -71,6 +71,22 @@ A CFO reading the Change Order Trap above might reasonably wonder whether it des
 
 In a study conducted with the University of Oxford's BT Centre for Major Programme Management, analyzing more than 5,400 IT projects, McKinsey & Company found that "on average, large IT projects run 45 percent over budget and 7 percent over time, while delivering 56 percent less value than predicted." The study, published in 2012 and still one of the most cited pieces of research on IT project economics, was not measuring outright agency fraud — it was measuring the aggregate outcome of exactly the dynamic described above: ambiguous initial scope, optimistic fixed-price bidding to win the deal, and a long tail of "unanticipated" work discovered mid-project. A 45% average overrun means that for every $180,000 fixed-price MVP quoted, the realistic all-in cost — once change orders, scope clarifications, and "that wasn't in the original spec" conversations are added — should be budgeted closer to $260,000 from day one. CFOs who budget to the initial quoted number, rather than the industry's documented average outcome, are the ones who run out of Series A runway two months before launch.
 
+## The 12-Month TCO Reality: What the Contract Says vs. What You Actually Pay
+
+Return to the New York CEO from the opening of this article: a $640,000 quote for a four-month MVP built by a four-person pod at a $250/hour blended rate. Most CFOs budget to that number. The realistic, all-in number — once the McKinsey/Oxford research on IT project overruns cited above is applied — looks very different, and the gap between the two is not a worst-case scenario. It is the statistical average.
+
+| | Domestic Agency (As Quoted) | Domestic Agency (Realistic, Industry-Average Outcome) | Manifera Hybrid Model |
+|---|---|---|---|
+| Blended rate | $250/hour | $250/hour base, $300-$400/hour on change-order scope | $70-$90/hour |
+| Quoted contract value | $640,000 | $640,000 | ~$640,000 equivalent scope |
+| Realistic all-in cost | — | ~$928,000 (applying McKinsey/Oxford's documented 45% average overrun) | ~$256,000-$330,000 |
+| Timeline | 4 months quoted | ~4.3 months (McKinsey/Oxford's documented 7% average time overrun) | 4 months, capped T&M |
+| Governance model | Vague fixed-price SOW | Vague fixed-price SOW plus change orders | Time & Materials, capped ceiling, itemized backlog |
+
+The realistic domestic figure is not a hypothetical worst case invented for this article — it is the average outcome McKinsey and Oxford's BT Centre documented across more than 5,400 large IT projects. And the scope-creep dynamic that produces it is itself independently measured. PMI's Pulse of the Profession research has repeatedly found that a majority of projects experience scope creep: 52% of projects experienced scope creep or uncontrolled changes in PMI's 2018 study (up from 43% five years earlier), with the same research cycle finding that 43% of projects finished over budget, 48% finished late, and organizations wasted an average of 9.9% of every dollar invested due to poor project performance. Separately, the Standish Group's long-running CHAOS Report — which tracks large samples of IT projects across the industry — has consistently found that only around 31% of projects are outright successful (delivered on time, on budget, with the promised scope), roughly 50% are "challenged" (delivered late, over budget, or with reduced scope), and about 19% fail outright. The success rate is not evenly distributed by project size either: small projects succeed close to 90% of the time, while large, complex projects — the kind a Series A startup's core platform usually is — succeed less than 10% of the time under the same measurement.
+
+None of this is an argument that domestic agencies are dishonest. It is an argument that the entire pricing and scoping structure of the traditional agency model is built around an ambiguous initial number that both sides know, statistically, is unlikely to hold. A Time & Materials structure with a capped ceiling and a transparently itemized backlog does not eliminate the underlying complexity of software projects — nothing does — but it removes the financial incentive to under-scope the initial quote, because there is no premium change-order tier waiting on the other side of the ambiguity to recover margin.
+
 ## The Financial Intelligence of the Hybrid Model
 
 Elite, financially intelligent enterprises (and their CFOs) refuse to pay the Domestic Rate Card Extortion. However, they also refuse to throw their core product at a cheap, ungoverned offshore agency, knowing that usually results in catastrophic technical debt. 
@@ -105,6 +121,9 @@ We use a Hybrid Model. We do not use middlemen. Your direct point of contact is 
 
 ### (Scenario: IT Procurement evaluating Manifera) How much budget can a startup actually save by using Manifera's Hybrid offshore model instead of a US agency?
 By eliminating the Middle Management Tax and leveraging the geographic cost arbitrage of Vietnam for the execution layer, companies typically reduce their development burn rate by 50% to 60% compared to domestic US or Western European agencies, allowing them to stretch their runway and build twice as many features.
+
+### (Scenario: CFO building the board deck) Is a 45% average project overrun really typical, or is that a worst-case number picked to make the point?
+It is the documented industry average, not a worst case. McKinsey & Company, working with Oxford University's BT Centre for Major Programme Management, analyzed more than 5,400 large IT projects and found they run 45% over budget and 7% over time on average. PMI's Pulse of the Profession research separately found that 52% of projects experience scope creep, and the Standish Group's CHAOS Report has consistently found only around 31% of IT projects succeed outright, with large, complex projects succeeding less than 10% of the time. A vague fixed-price SOW is the mechanism that turns this industry-wide pattern into your specific change-order invoice.
 
 <script type="application/ld+json">
 {
@@ -149,6 +168,14 @@ By eliminating the Middle Management Tax and leveraging the geographic cost arbi
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Because we eliminate domestic bloat and leverage Asian execution velocity under European governance, startups typically reduce their development costs by 50% to 60%, allowing them to survive their runway without sacrificing architectural integrity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a 45% average project overrun really typical, or is that a worst-case number picked to make the point?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the documented industry average. McKinsey & Company, working with Oxford University's BT Centre for Major Programme Management, analyzed more than 5,400 large IT projects and found they run 45% over budget and 7% over time on average. PMI's Pulse of the Profession research found that 52% of projects experience scope creep, and the Standish Group's CHAOS Report has consistently found only around 31% of IT projects succeed outright, with large, complex projects succeeding less than 10% of the time. A vague fixed-price SOW is the mechanism that turns this industry-wide pattern into a specific change-order invoice."
       }
     }
   ]

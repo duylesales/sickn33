@@ -47,7 +47,7 @@ An Architect looks at the social feed requirement and thinks: *"If a user has 50
 
 A junior developer does not know what a Fan-Out architecture is, because you cannot teach distributed systems design in a 12-week bootcamp. 
 
-> *"A junior developer knows how to write code that works. A senior architect knows how to write code that won't break."* — Enterprise Engineering Axiom
+This is the entire distinction in one sentence: a junior developer proves their code works. A senior architect proves it won't break — under load, under failure, and under the specific traffic pattern the product will actually see once it succeeds. Nobody teaches the second skill in a classroom, because it can only be learned by watching (or causing) a system fail in production and tracing the failure back to a decision made months earlier.
 
 ## How Developers Actually Learn Architecture: The ADR and Postmortem Loop
 
@@ -60,6 +60,20 @@ The second artifact is the **blameless postmortem**. When a production incident 
 Engineering organizations that skip both artifacts don't just lose the documentation — they lose the compounding effect. Every new hire re-learns the same lessons the hard way, and every departing senior engineer takes years of undocumented judgment out the door with them.
 
 This is also why pairing a junior developer with an Architect for Pull Request review is so much more valuable than sending that developer to another training course. A well-written PR review comment ("this query will do a full table scan once we pass 100,000 rows — here's why, and here's the index that fixes it") is a live, project-specific ADR in miniature, delivered at the exact moment the developer is most receptive to the lesson: right after they wrote the code themselves.
+
+The blameless postmortem itself is not a Manifera invention — the practice was formalized and popularized by Google's Site Reliability Engineering team, whose widely-read *Site Reliability Engineering* book (O'Reilly, freely published online at sre.google) devotes a full chapter to postmortem culture. Google's engineers borrowed the "blameless" framing directly from the healthcare and aviation industries, where investigating a failure by assuming everyone involved acted with the information they had — rather than assigning blame — consistently produces better root-cause analysis and fewer repeat incidents. The same logic applies to a 30-person startup's engineering team as it does to Google's infrastructure: the goal of the postmortem is a fixed system, not a fired developer.
+
+## What Skipping Architecture Education Costs, in Numbers
+
+Return to the social feed example from our opening story: 10,000 users, a 12-second load time, and users abandoning the app. Let's put a rough cost on what happens next, because "we'll fix it later" is rarely priced honestly.
+
+**The panic fix.** Without an Architect on staff, the bootcamp graduates' first instinct is usually to throw hardware at the problem — upgrade the database server, add more application instances. This buys, at best, a few weeks before the same $O(n)$ query problem resurfaces at 15,000 users, because bigger hardware doesn't fix an algorithm that gets slower as data grows; it just moves the wall further away. Meanwhile, the abandonment the founder is already seeing compounds: users who churn during a bad first impression rarely come back to re-try the product once it's fixed.
+
+**The correct fix, done late.** Implementing the Fan-Out-on-Write architecture the Architect describes above — pre-computing each user's feed into a Redis cache whenever a friend posts, rather than recalculating it live on every page load — is not, by itself, an enormous engineering task: for a team that already understands the codebase, it typically runs 1-2 developer-weeks. The expensive part is that it now has to be built under pressure, on a system already serving live, frustrated users, with no room for the kind of incremental rollout an Architect would have planned from the start. Work done under incident pressure carries materially higher defect rates than work done calmly, which is precisely why McKinsey's research on technical debt found that companies typically pay an additional 10-20% on top of a project's baseline cost specifically to work around debt that could have been avoided with better upfront design — and separately, that CIOs estimate technical debt now represents 20-40% of the total value of their technology estate. The bootcamp team's "quick and cheap" build accrues exactly this kind of debt, just under a different name.
+
+**The compounding cost.** Every week the founder spends firefighting the feed instead of shipping the next feature is a week competitors don't lose. And the emotional cost is real too: the founder in our opening story now second-guesses every future engineering decision, because the team that told them "the code is perfect" turned out to be evaluating a completely different problem than the one that mattered.
+
+None of this means bootcamp graduates are bad hires — quite the opposite. Manifera's Vietnamese engineering pods include exceptional junior and mid-level talent who write clean, fast, well-tested code. The lesson is narrower and more actionable: that talent needs to be paired with someone who has already lived through the 10,000-user cliff, so the Fan-Out architecture gets designed in week one, not firefought in month three.
 
 ## The Governance Mandate
 

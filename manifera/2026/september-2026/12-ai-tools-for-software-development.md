@@ -77,6 +77,16 @@ Skeptical VP Engineerings sometimes assume this is a future risk, not a present 
 
 That volume is precisely what makes the "Code Reviewer" shift described above non-optional rather than aspirational. When one senior engineer used to review perhaps a dozen human-written pull requests a week, an AI-augmented team can generate several times that volume in the same period. If the reviewing discipline, the automated test coverage, and the architectural governance don't scale up to match, the sheer throughput of AI code generation guarantees that unreviewed, poorly understood code reaches production faster than any team could previously have shipped bugs by hand.
 
+## The Data Confirms It: Ungoverned AI Slows Teams Down, Not Just Debt
+
+For two consecutive years, DORA — the Google-sponsored research team behind the annual *Accelerate State of DevOps Report*, the same body that established industry-standard delivery metrics like deployment frequency and lead time — has published a finding that directly undercuts the "40% faster, therefore cut headcount" math described above. In DORA's 2024 report, increased AI adoption correlated with a 1.5% decrease in software delivery throughput and a 7.2% reduction in delivery stability, even though 75% of the individual developers surveyed said the tools made *them* personally more productive. DORA's researchers attribute the paradox to batch size, not bad code: AI makes it trivially easy to generate more code per pull request, and DORA's multi-year dataset has consistently shown that larger changesets are harder to review and more likely to introduce regressions, regardless of who or what authored them.
+
+Independent code-quality research backs this up at the commit level. GitClear, a code analytics firm that tracked 211 million lines of changed code across the industry from 2020 through 2024, found that "code churn" — the share of lines rewritten or reverted within two weeks of being authored, a proxy for code nobody thought through carefully the first time — rose from a pre-AI baseline of roughly 3.3% to 5.7% in 2024, on pace to reach 7.1% in 2025: more than double in under three years. Over the same window, the share of copy-pasted code climbed from 8.3% to 12.3% of all changed lines, while the share of code that was properly refactored (what GitClear calls "moved," as opposed to duplicated) fell from 24.1% to just 9.5%, and instances of duplicated code blocks increased eightfold. Put simply: the aggregate data across hundreds of real codebases shows teams writing more code that resembles other code, refactoring it less, and rewriting it sooner — the measurable signature of "technical debt at lightspeed," not just an anecdote from one skeptical Tech Lead.
+
+Developers feel the trust gap too. Stack Overflow's 2025 Developer Survey found that while professional AI tool adoption climbed to 84%, trust in the accuracy of that output fell sharply in the same period: 46% of developers said they actively distrust AI-generated code's accuracy, up from 31% only a year earlier, and 45% said debugging AI-generated code actually takes them longer than writing the equivalent code themselves would have.
+
+None of this means AI coding tools are a bad investment — the McKinsey productivity gains cited earlier are real and repeatable on the writing side of the equation. It means the review, testing, and architectural governance side has to scale up in lockstep, or the aggregate result — as DORA's data now shows across two full survey cycles — is slower, less stable delivery than the team had before it adopted the tools in the first place.
+
 ## The Manifera Approach to AI-Augmented Engineering
 
 Many low-tier [offshore software development](https://www.manifera.com/services/offshore-software-development/) agencies are using AI tools to artificially inflate their output, billing clients for thousands of lines of untested, AI-generated spaghetti code.
@@ -110,6 +120,9 @@ Our Dutch Tech Leads act as the absolute firewall. While our Vietnamese pods use
 
 ### (Scenario: CEO preparing for acquisition or funding due diligence) Can AI-generated code create legal liability through license contamination?
 Yes. AI coding models were trained on public repositories, some licensed under copyleft terms like the GPL that require derivative works to also be open-sourced. In rare cases, AI tools have reproduced training data nearly verbatim, meaning copyleft-licensed code fragments can end up embedded in your proprietary product without anyone noticing, until a due diligence audit flags it and impacts your valuation. The fix is running all AI-generated code through automated license-scanning tools like FOSSA or Black Duck as a mandatory CI/CD step.
+
+### (Scenario: Engineering leadership questioning the ROI case) Is the risk of ungoverned AI slowing teams down actually backed by data, or is it just a theoretical concern?
+It's backed by hard data, not just theory. DORA's 2024 Accelerate State of DevOps Report found that, for the second year running, increased AI adoption correlated with a 1.5% decrease in software delivery throughput and a 7.2% reduction in delivery stability, driven by larger, harder-to-review changesets. Separately, GitClear's analysis of 211 million lines of code found that code churn (code rewritten within two weeks of being authored) roughly doubled between 2021 and 2024, while properly refactored code fell from 24.1% to 9.5% of all changes. This is exactly why governance has to scale alongside AI adoption, not lag behind it.
 
 <script type="application/ld+json">
 {
@@ -162,6 +175,14 @@ Yes. AI coding models were trained on public repositories, some licensed under c
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. AI models were trained on public code, some under copyleft licenses like the GPL requiring derivative works to also be open-sourced. AI tools can occasionally reproduce training data nearly verbatim, embedding copyleft code into a proprietary product unnoticed until a due diligence audit flags it. The fix is running AI-generated code through automated license-scanning tools like FOSSA or Black Duck as a mandatory pipeline step."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the risk of ungoverned AI slowing teams down actually backed by data, or is it just a theoretical concern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is backed by data. DORA's 2024 State of DevOps Report found that increased AI adoption correlated with a 1.5% decrease in software delivery throughput and a 7.2% reduction in delivery stability, for the second year in a row. GitClear's analysis of 211 million lines of code found that code churn roughly doubled between 2021 and 2024, while properly refactored code fell from 24.1% to 9.5% of all changes. Governance must scale alongside AI adoption, not lag behind it."
       }
     }
   ]
