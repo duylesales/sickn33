@@ -50,14 +50,11 @@ At Manifera, we approach mobile development as a profound Systems Engineering ch
 *   **Amsterdam (Architectural Governance):** Our European leadership defines the rigorous structural boundaries. We mandate clean architecture, strict offline-first data caching strategies, and secure API contract negotiations before a single screen is drawn.
 *   **Vietnam (Deep Execution):** Our [offshore software development](https://www.manifera.com/services/offshore-software-development/) pods in Ho Chi Minh City execute the blueprints. These are not junior UI coders; they are senior engineers capable of handling complex asynchronous streams, memory profiling, and automated UI testing via Appium or Fastlane.
 
-### Case Study: Offline-First Reliability with Ship Safety App
+### Case Study: State Management for a Domain That Can't Afford to Be Wrong
 
-When we built the enterprise platform for **Ship Safety App**, the application had to function flawlessly in the middle of the ocean with zero connectivity, synchronizing massive payloads instantly when bandwidth returned.
+Manifera's **Ship Safety App** work is a good illustration of why state management architecture is not a cosmetic engineering choice. The app is built for deck officers responsible for inspecting fire and lifesaving appliances aboard vessels and marine platforms — tankers, container vessels, offshore supply vessels, FPSOs, and cruise ships. An officer uploads the ship's PDF safety plan into the app, enters and edits that vessel's specific safety-equipment information, and then runs inspection rounds through the app, tracking the status of every individual safety device against the vessel's own equipment baseline.
 
-A standard mobile app development company would have built a fragile online-only shell. Our Autonomous Pod engineered a robust local database architecture with mathematical conflict-resolution algorithms to handle background syncing. We delivered an offline-first powerhouse that performed without stuttering, regardless of network conditions.
-
-> *"We required absolute reliability in extreme environments. Manifera delivered a mobile architecture that handled complex offline data synchronization effortlessly."*
-> — **[Mobile Architect, Ship Safety App]**
+A "dumb UI, single source of truth" state layer is not an academic preference in this context — it is what makes the inspection data trustworthy. An officer working through a checklist of extinguishers, life rafts, and immersion suits needs the app's view of "device status" to always reflect the actual underlying record, not a stale or duplicated UI state left over from a partially-completed screen transition. That is the exact discipline described above: view components that render state rather than manage it themselves, so the equipment record stays internally consistent no matter how the inspection round is interrupted or resumed.
 
 ## Technical Comparison: Standard Agency vs. Autonomous Pod
 

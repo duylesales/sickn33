@@ -133,7 +133,41 @@ At **LaunchStudio**, [câu khẳng định uy tín, nhắc Manifera + số năm 
 ```
 
 Yêu cầu đi kèm khi thực hiện:
+
 - Bản tiếng Anh (`-social.md`) và bản tiếng Hà Lan (`-social-dutch.md` hoặc `-social_dutch.md` tùy quy ước đặt tên sẵn có của thư mục).
 - Bản dịch Hà Lan dùng đúng văn phong trang trọng (u/uw) nếu bài gốc `-dutch.md` của thư mục đó đã dùng văn phong này, tái sử dụng thuật ngữ/trích dẫn đã dịch sẵn thay vì dịch lại từ đầu.
 - CTA và hashtag phải luân phiên, không lặp lại giữa các bài trong cùng thư mục.
 - Nội dung hook/kết quả lấy trực tiếp từ phần "Real example" của bài gốc, không bịa thêm nhân vật.
+
+---
+
+## 6. Prompt tạo ảnh minh họa bài viết chuẩn phong cách Hình 47 (UI & Backend Enterprise Fusion - Tối ưu 16:9)
+
+> **Đặc trưng phong cách Hình 47:**
+>
+> - **Chủ đề**: Hợp tác công nghệ cao (Human + AI Robot + Cloud Infra + Creative UI).
+> - **Bố cục dải giữa thu gọn (Tight Center Line)**: Nhân vật và hạ tầng kỹ thuật tập trung gọn ở giữa (từ trục Y 25% đến 75%), tạo khoảng thở phía trên và dưới để crop 16:9 (`1024x576`) không bao giờ bị cắt đầu/chân hay chạm mép.
+> - **Tuyệt đối KHÔNG chữ & số (Zero Text, Zero Numbers)**: Dùng 100% biểu tượng trực quan (khiên an ninh xanh, ổ khóa vàng, khối database hình trụ, đám mây, tia sét, panel wireframe giao diện, màn hình kính cong HUD).
+> - **Phối màu & Ánh sáng**: Phong cách Dribbble Corporate Tech với ánh sáng studio hiện đại, đổ màu gradient sinh động (Magenta-Violet, Electric Cyan, Royal Cobalt Blue, Mint Emerald, Solar Gold).
+
+### Cú pháp Prompt tiếng Anh chuẩn (dùng cho công cụ tạo ảnh):
+
+```text
+Modern flat-ish vector illustration, dribbble corporate tech style, vibrant gradients, strictly no text and no numbers, pure visual storytelling. A sleek technology and software engineering collaboration scene with tightly centered composition along the horizontal middle line: in the center, an illuminated holographic gateway and transformation engine where colorful frontend UI wireframe mockups seamlessly fuse with robust backend enterprise server racks, database cylinders, and glowing green security shields; closely on the left, a professional tech founder holding a sleek UI prototype tablet; closely on the right, a senior enterprise software architect and an agile collaborative AI robot engineer operating powerful cloud infrastructure with verified green checkmarks. Compact central composition with ample top and bottom breathing room, bright clean minimalist studio background with soft spotlights, vibrant magenta-violet, electric cyan, royal cobalt blue, and solar gold gradients, sleek vector art, zero text, zero letters, zero numbers.
+```
+
+### Mẫu câu lệnh tiếng Việt để yêu cầu trợ lý AI thực hiện:
+
+```markdown
+@[đường_dẫn_tới_bài_viết.md] Hãy đọc nội dung file này và tạo cho mình 1 hình ảnh minh họa bài viết chuẩn theo phong cách Hình 47 với các yêu cầu sau:
+
+1. **Phong cách & Thị giác (Style Hình 47)**:
+   - "Modern flat-ish vector illustration", "dribbble corporate tech style", phối màu gradient sống động (Magenta/Tím, Xanh Cyan, Xanh Cobalt, Xanh lá Mint, Vàng Amber) trên nền studio trắng sáng có ánh đèn chiếu nhẹ.
+   - **Tuyệt đối KHÔNG có chữ và số (Zero text, Zero numbers)**: Thể hiện ý tưởng 100% bằng hình ảnh ẩn dụ (bảng wireframe giao diện, máy chủ, ổ khóa, khiên an ninh, robot AI, đám mây).
+2. **Bố cục thu gọn trung tâm (Tight Center Composition)**:
+   - Tất cả nhân vật (founder, kỹ sư, robot AI) và thiết bị trọng tâm đặt gọn trên trục ngang dải giữa.
+   - Giữ khoảng thở rộng rãi phía trên và phía dưới để khi cắt tỷ lệ 16:9 không bị mất chi tiết.
+3. **Cắt ảnh & Lưu file**:
+   - Tự động cắt (crop) lấy dải giữa chuẩn **tỷ lệ 16:9** (`1024x576`).
+   - Lưu vào cùng thư mục với bài viết gốc dưới tên `[tên_bài_viết]_pic.png`.
+```

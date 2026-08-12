@@ -50,14 +50,13 @@ At Manifera, we eradicated the outsourcing IP crisis by engineering the **Hybrid
 *   **Amsterdam (The Legal Fortress):** You do not sign contracts with an unknown entity in a foreign jurisdiction. All contracts are governed by our Netherlands headquarters under strict Dutch and European Union law. This provides your General Counsel with the most robust, enforceable IP and GDPR protections globally.
 *   **Vietnam (The Secure Execution Pod):** We do not lease out high-churn freelancers. We deploy highly retained, thoroughly vetted **Autonomous Pods**. These [offshore software development teams](https://www.manifera.com/services/offshore-software-development/) operate within strict security perimeters. They utilize anonymized mock data for all development tasks, ensuring that your production data and core algorithms are mathematically protected from exfiltration.
 
-### Case Study: Safeguarding Threat Intelligence with CFLW
+### Case Study: A Decade of Continuity with CFLW Cyber Strategies
 
-When **CFLW Cyber Strategies** required a partner to develop highly classified threat intelligence tools, traditional software outsourcing was an immediate disqualifier. The risk of IP leakage was an existential threat.
+The clearest evidence against the "IP walks out the door with a churning body shop" risk is a relationship that has not churned. Manifera has worked with **CFLW Cyber Strategies**, a Dutch cybersecurity company delivering strategic and operational insight on Dark Web, crypto-asset, decentralized cryptography, and AI-related threats, since 2016.
 
-They selected Manifera precisely because of our Hybrid Hub. Our Autonomous Pod built a secure, decoupled architecture under the absolute legal governance of our Dutch headquarters. We implemented strict cryptographic access controls and CI/CD vulnerability scanning, ensuring that their proprietary intelligence-gathering algorithms remained entirely secure and legally protected.
+That is a single, continuous remote team — a Technical Lead and a Software Developer — supporting one product: CFLW's **Dark Web Monitor**. There is no rotating cast of subcontractors moving through the codebase and no fragmented knowledge scattered across departed freelancers. The same team keeps the platform operational and keeps extending it, and Manifera's system architectural know-how and software development skills have been a consistent foundation underneath CFLW's own product development as the tool matured from an early prototype into a stable product used by law enforcement institutions worldwide.
 
-> *"In the cybersecurity domain, IP protection is not a checkbox; it is our survival. Manifera's combination of Dutch legal governance and elite Vietnamese engineering provided the absolute trust we demanded."*
-> — **[General Counsel / CISO, CFLW Cyber Strategies]**
+For a General Counsel evaluating IP risk, that continuity is the point: proprietary product knowledge accumulated inside a two-person team that has not turned over in nearly a decade, under a single contracting entity, is structurally harder to fragment or leak than knowledge scattered across a body shop's revolving bench of freelancers.
 
 ## TCO & Security Comparison: Body Shop vs. Autonomous Pod
 
