@@ -52,7 +52,7 @@ Fixing these architectural flaws post-launch requires a complete rewrite. You th
 
 ## Evaluating a Vendor's Mobile Architecture
 
-To separate professional engineering teams from junior app builders, evaluate them against these three architectural pillars.
+To separate professional engineering teams from junior app builders, evaluate them against these four architectural pillars.
 
 ### 1. Framework Selection: Data-Driven, Not Dogma-Driven
 
@@ -70,8 +70,10 @@ Interrogate the vendor's application architecture. They must decouple the Presen
 **Red Flag:** *"We just show a 'No Internet' popup."*
 **Green Flag:** *"We use an offline-first architecture. Network requests update a local encrypted SQLite database (or WatermelonDB/Realm). The UI strictly observes the local database using reactive streams (RxSwift/Flow). When the network returns, a background worker synchronizes the local mutations with the remote API using conflict resolution strategies."*
 
-> "In mobile architecture, the UI should be a dumb reflection of the local state. The moment your UI components start making direct HTTP calls, you have lost control of your application."
-> *— [Placeholder: Insert expert quote on mobile architecture]*
+> "In Compose, the entire UI is a function of state."
+> — Android Developers documentation, developer.android.com
+
+Google's own Jetpack Compose documentation states the principle plainly, and it applies well beyond Compose specifically: the moment a UI component starts making direct HTTP calls or holding its own mutable copy of server data, you have lost the single source of truth that makes offline-first synchronization, error handling, and testing tractable. The UI should render *from* state, never fetch or mutate it directly.
 
 ### 3. Mobile CI/CD Maturity
 
@@ -84,6 +86,12 @@ Their pipeline must automate:
 *   Automated unit and UI testing on device farms.
 *   Automatic incrementing of build numbers.
 *   Over-The-Air (OTA) updates for JavaScript bundles (if using React Native/Expo) to bypass App Store review times for critical bug fixes.
+
+### 4. Crash Rate and ANR Discipline: The Numbers Google Actually Enforces
+
+Most vendors talk about "quality" in vague terms. Google does not. Android's own developer documentation defines explicit "bad behavior" thresholds inside Google Play Console's Android vitals: an app is flagged once its **user-perceived crash rate exceeds 1.09%** of daily active users across all device models (or 8% on any single device model), and once its **user-perceived ANR (Application Not Responding) rate exceeds 0.47%** of daily active users. Cross either threshold and Play does not just log a warning internally — it can actively reduce your app's visibility in store search and surface a warning label directly on your store listing to prospective users.
+
+This is a useful, concrete interview question for any vendor: *"What is your typical crash-free session rate on a comparable production app, and how do you monitor it against Play's published thresholds?"* An elite mobile app development company will already have Firebase Crashlytics or Sentry wired into the CI/CD pipeline described above, with a release gate that blocks a build from shipping if crash-free sessions drop below an internal target (commonly 99.5%+, comfortably inside Google's own bad-behavior threshold). A vendor who cannot quote you a crash-free percentage for their last three shipped apps is not tracking the metric that most directly determines whether your app stays visible in the store you are paying to be discovered in.
 
 ## Push Notifications and Deep Linking: The Overlooked Architecture Layer
 
@@ -103,7 +111,7 @@ When evaluating mobile engineering partners, demand architectural rigor. A vendo
 
 At Manifera, our mobile architects do not guess. We build robust, layered mobile architectures designed for scalability, testability, and uncompromising performance across iOS and Android ecosystems.
 
-[Placeholder: Insert real client testimonial regarding mobile app performance, reduced crash rates, and successful cross-platform migration]
+In practice, this means a Dutch Architect based in Amsterdam owns the state management pattern, the CI/CD gates, and the crash-rate targets before a single sprint starts, while the Vietnam-based engineering pod implements against that specification under continuous review. This Hybrid Model exists specifically to prevent the scenario described throughout this article: a vendor that ships a visually polished build with no one accountable for the offline-sync edge cases, the memory profile, or the Android vitals thresholds that determine whether Google Play even shows your app to new users.
 
 ---
 

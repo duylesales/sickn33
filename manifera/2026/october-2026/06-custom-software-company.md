@@ -77,8 +77,8 @@ The code does not exist if it is not in your repository.
 
 Elite engineering partners operate with total transparency. They write code directly into your company's GitLab or GitHub repository. They configure the CI/CD pipeline (e.g., GitHub Actions) so that you control the deployment keys. 
 
-> "A professional vendor gives you the keys to the kingdom on day one. An amateur vendor holds the keys until the final invoice is paid. Never sign a contract with a vendor who refuses to push code to your repository."
-> *— [Placeholder: Insert expert quote on IT procurement]*
+> "Most companies view handing intellectual property to an outsourcer as delivering the castle keys to marauders."
+> — Eric Walden and James C. Wetherbe, "Give a Little, Get a Little," *Harvard Business Review*, September 2005
 
 ## The Liability Ceiling: Insurance, Indemnification, and Subcontractor Risk
 
@@ -110,9 +110,29 @@ Evaluating a custom software company requires moving beyond the UI portfolio. Yo
 
 At Manifera, we believe that trust is earned through architectural and legal transparency. Our [offshore development teams](https://www.manifera.com) build robust, containerized systems using open-source standards, pushing code directly to your repositories from day one. You retain 100% of the IP, 100% of the infrastructure control, and 100% of the peace of mind.
 
-[Placeholder: Insert real client testimonial regarding seamless codebase handover and clean legal structure]
+The scenario below illustrates why these clauses matter in euros, not just in principle.
 
 ---
+
+## A Worked Scenario: What a Weak MSA Actually Costs
+
+Contract language feels abstract until it intersects with a real incident. Consider a realistic (hypothetical, illustrative) scenario that plays out with some regularity across the custom software industry: a Series B SaaS company signs a $180,000/year contract with a boutique development vendor to build a customer-facing analytics platform. The vendor's standard MSA caps total liability at "fees paid in the preceding 12 months" and contains no Direct Indemnification Carve-Out.
+
+**Month 14:** A developer on the vendor's team, working under deadline pressure, hardcodes a database connection string with elevated privileges directly into a client-side JavaScript bundle rather than routing it through an environment variable and a backend proxy. The mistake ships to production and sits undetected for five months.
+
+**Month 19:** A security researcher discovers the exposed credential and reports it responsibly, but not before evidence surfaces that at least one unauthorized party accessed the connection during the exposure window. The company now has a confirmed data exposure event touching customer PII across multiple EU jurisdictions.
+
+**The direct costs that follow, in order:**
+1. **Forensic investigation and breach counsel:** €45,000-€70,000 to determine scope, engage a forensics firm, and retain outside counsel to assess GDPR notification obligations.
+2. **Regulatory notification and remediation:** Mandatory notification to the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) within 72 hours under GDPR Article 33, plus notification to affected data subjects, plus credential rotation and infrastructure hardening — a further €30,000-€60,000.
+3. **Potential regulatory fine:** GDPR fines for this class of negligent exposure, per enforcement patterns tracked in DLA Piper's annual GDPR Fines and Data Breach Survey, commonly land in the low-to-mid six figures for a company of this size, though fines vary significantly by supervisory authority and the specifics of the breach.
+4. **Customer churn and reputational damage:** Difficult to price precisely, but SaaS companies disclosing a PII breach typically see measurable increases in churn and sales-cycle friction for two to four quarters afterward.
+
+**Total realistic exposure: well over €500,000 once fines, remediation, and commercial fallout are combined.**
+
+Under the vendor's standard MSA, their contractual liability is capped at the $180,000 paid in the preceding year — meaning the client absorbs the majority of this cost even though the root cause was the vendor's own negligent handling of a credential. Had the MSA included a Direct Indemnification Carve-Out for data breaches caused by vendor negligence, and had the vendor been required to carry the €2,000,000 Cyber Liability policy described above, the client's insurer and the vendor's insurer would have shared the exposure through the claims process, rather than the client absorbing it alone.
+
+This is the mechanism by which a liability clause negotiated (or not negotiated) months before any code is written determines who is financially exposed when — not if — an engineering mistake eventually occurs. No vendor is immune to human error; the only question a CTO controls in advance is who pays for it.
 
 ## FAQs
 

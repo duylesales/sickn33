@@ -82,8 +82,8 @@ If your mobile application requires a sudden pivot—for example, integrating a 
 **3. The 50% TCO Reduction**
 By partnering with an elite offshore hub in Vietnam managed by European leadership, you effectively cut your €600,000 in-house cost in half, *without* sacrificing architectural rigor. You pay for pure output, not recruitment fees, office space, or idle bench time.
 
-> "The true cost of software development is not the hourly rate of the developer. It is the cost of recruiting them, the cost of replacing them when they leave, and the cost of refactoring their code if they lacked architectural supervision."
-> *— [Placeholder: Insert expert quote on IT economics]*
+> "Turnover is expensive in ways that go beyond recruitment fees. You lose institutional knowledge."
+> — Peter Cappelli, Professor of Management and Director of the Center for Human Resources, The Wharton School, University of Pennsylvania
 
 ## The Cost Nobody Models: Scaling a Team Down
 
@@ -103,9 +103,37 @@ Stop calculating the mobile application development cost based purely on hourly 
 
 At Manifera, we provide the architectural foundation and the dedicated engineering talent to scale your mobile product flawlessly. We eliminate the recruitment delays and the operational overhead, allowing your CTO to focus on core business strategy rather than managing HR crises.
 
-[Placeholder: Insert real client testimonial on scaling their mobile team efficiently with Manifera, highlighting the TCO reduction]
+The worked example below shows what that arithmetic looks like over a realistic three-year horizon, using the same 6-person mobile pod described earlier.
 
 ---
+
+## A Three-Year TCO Walkthrough: In-House vs. Hybrid Pod
+
+Numbers make this decision concrete in a way that percentages alone cannot. Consider a mid-market fintech scale-up in Amsterdam that needs to build and maintain a consumer-facing iOS and Android app over a three-year window: an intensive 9-month build phase, followed by roughly 27 months of feature iteration and maintenance at a lighter cadence.
+
+### Scenario A: Fully In-House Pod
+
+**Year 1** — Recruitment alone consumes the first quarter. Assume 4 months to hire the Lead Mobile Architect (agency fee: 20% of a €95,000 salary, or roughly €19,000) and a further 6-10 weeks, staggered, to fill the remaining five seats. Fully loaded payroll for the 6-person pod (salaries, employer social contributions, benefits, hardware, licenses, and a share of office overhead) runs approximately €600,000 annualized, but because the team is not fully staffed and productive until month 5-6, effective *productive* engineering time in Year 1 is closer to 7 months, not 12. Recruitment fees, onboarding drag, and idle ramp-up time push effective Year 1 cost-per-shipped-feature well above the raw payroll figure.
+
+**Year 2** — The team is now fully staffed and productive: €600,000 in fully loaded payroll, delivering a full year of output. This is the only year in the three-year window where the in-house pod runs at full theoretical efficiency.
+
+**Year 3** — The app moves into maintenance mode. Workload no longer justifies six full-time engineers, but Dutch employment law makes downsizing slow and costly (notice periods, transitievergoeding severance, UWV or mutual-agreement procedures — as detailed above). Most CTOs in this position keep the team intact rather than trigger a termination process, absorbing an estimated 40-50% "bench cost" — paying full payroll for a workload that could reasonably be handled by 2-3 people. Bench cost: roughly €250,000-€300,000 of the €600,000 payroll delivers little incremental product value.
+
+**Three-year in-house total:** approximately €1.75M-€1.8M in fully loaded payroll and recruitment fees, with meaningful capacity sitting idle in both Year 1 (ramp-up) and Year 3 (over-staffed maintenance).
+
+### Scenario B: Hybrid Team Extension with an Offshore Partner
+
+**Year 1** — A mature 6-person pod (Lead Architect, two senior mobile engineers, backend engineer, QA automation engineer, designer) is operational within 2-4 weeks rather than 4-6 months, because the partner already employs and retains this talent. At a blended offshore rate structure, the fully loaded annual cost for an equivalent pod typically lands in the €280,000-€320,000 range — roughly half the Western European fully loaded cost — with zero recruitment fees and full productive capacity from week three onward.
+
+**Year 2** — Same pod, same cost band: approximately €300,000, with full-year output and no bench cost, because the partner absorbs bench risk across its broader portfolio of client engagements rather than passing it to any single client.
+
+**Year 3** — The engagement contracts to a 2-person maintenance retainer as the app moves into lower-intensity iteration, at roughly €100,000-€120,000 for the year, adjusted month to month with no severance, no notice period, and no legal filing.
+
+**Three-year hybrid total:** approximately €680,000-€740,000.
+
+### The Delta
+
+Even accounting for the modest coordination overhead of managing a distributed team (typically absorbed by the Amsterdam-based Dutch Architect who translates business requirements into technical specification for the Vietnam-based engineering pod), the three-year gap between the two models is on the order of €1.0M-€1.1M — not because offshore engineers are "cheaper" in isolation, but because the hybrid model eliminates the two most expensive phases of the in-house lifecycle: the ramp-up valley and the bench-cost plateau. A pure hourly-rate comparison between a €70/hour Amsterdam contractor and a €35/hour offshore engineer would never surface this gap, because it never accounts for the months on either side of peak productivity where the in-house team is paid in full but delivering a fraction of its theoretical output.
 
 ## FAQs
 

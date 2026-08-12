@@ -81,8 +81,10 @@ Enterprise mobile development requires automated CI/CD pipelines (using tools li
 *   **Automated Testing:** The pipeline must execute Unit Tests for the domain logic and UI Tests (Appium/Espresso) across a matrix of device simulators to guarantee the application functions perfectly on both a 5-year-old Android device and the newest iPhone.
 *   **Over-The-Air (OTA) Updates:** For cross-platform frameworks, the pipeline should enable OTA updates (like CodePush) to instantly fix critical bugs without waiting for App Store approval.
 
-> "A professional mobile engineering partner does not boast about how fast they can build a screen. They boast about their automated test coverage and their CI/CD deployment frequency."
-> *— [Placeholder: Insert expert quote on mobile DevOps]*
+> "Program testing can be used to show the presence of bugs, but never to show their absence."
+> *— Edsger W. Dijkstra, "Notes on Structured Programming" (1970)*
+
+Dijkstra's point, made decades before mobile even existed, is exactly why elite mobile teams do not treat CI/CD test suites as the finish line. A green build proves the code survived the scenarios the team thought to write tests for — it says nothing about the unpatched Android 11 device, the throttled battery-saver iPhone, or the flaky airport Wi-Fi that a real user will hit tomorrow. That gap is precisely what production observability, covered next, is built to close.
 
 ## Observability: Seeing the App You Cannot SSH Into
 
@@ -102,13 +104,21 @@ A mature mobile engagement wires up three distinct observability layers before t
 
 Elite mobile teams do not just install these tools; they operationalize them. A production-grade mobile app development services engagement sets a hard **Crash-Free Sessions** target—typically 99.5% or higher—tracked on a live dashboard. If a new release drops that metric below the SLA threshold, it triggers an automatic alert to the on-call engineer and, in mature pipelines, an automated staged rollout halt: the release is paused at 5-10% distribution on the Play Store's staged rollout mechanism before it ever reaches 100% of users. This single practice—halting a bad release at 5% exposure instead of 100%—is often the difference between a minor incident and a headline-making outage.
 
+## A Worked Example: Why Staged Rollouts Change the Math on a Bad Release
+
+Consider two vendors shipping the same critical release — a checkout flow rewrite — to an app with 500,000 monthly active users.
+
+**Vendor A releases to 100% immediately.** This is still the default behavior on both app stores unless the team deliberately configures a phased rollout, and amateur vendors rarely bother. A regression that only manifests on a specific OS version or device class (a null-pointer crash on Android 12, say) is now live for the entire user base simultaneously. By the time crash reports accumulate, alert thresholds fire, and the team ships a hotfix through app store review, tens of thousands of users have already hit the bug — and a meaningful share of them will not open the app again.
+
+**Vendor B uses the platforms' own staged rollout mechanisms.** On Google Play Console, this typically means an initial rollout of 5–10% of the user base, held for at least 24 hours while crash-free session rate and ANR (Application Not Responding) rate are monitored, before manually expanding to 20%, 50%, and then 100%. Apple's App Store phased release follows an even more conservative, automatic seven-day schedule: 1% of eligible users on day one, 2% on day two, 5% on day three, 10% on day four, 20% on day five, 50% on day six, and 100% only on day seven — with the ability to pause the rollout entirely for up to 30 days the moment a metric misbehaves.
+
+Under Vendor B's process, the same Android 12 regression is caught at 5-10% exposure, not 100%. The release is paused, the fix is shipped, and the staged rollout resumes — all before the majority of the user base ever installs the broken build. The engineering cost of configuring staged rollouts is close to zero; it is a checkbox in App Store Connect and Play Console, not custom infrastructure. The cost of *not* using it is measured in support tickets, one-star reviews, and users who uninstall before the fix ever reaches them. This is precisely the kind of "invisible" operational discipline that separates a vendor selling screens from a vendor selling a production-grade release process.
+
 ## Procuring Engineering Depth
 
 Stop buying mobile apps based purely on wireframes. Start buying the architectural infrastructure that keeps the app alive in hostile network conditions.
 
-At Manifera, our elite [offshore mobile development teams](https://www.manifera.com) provide true enterprise-grade services. We enforce Clean Architecture, mandate automated CI/CD pipelines, and specialize in offline-first data synchronization. You do not just receive a beautiful application; you receive a maintainable, scalable, and crash-resilient mobile ecosystem.
-
-[Placeholder: Insert real client testimonial highlighting how Manifera's architectural rigor prevented a disastrous app launch and accelerated their CI/CD velocity]
+At Manifera, our elite [offshore mobile development teams](https://www.manifera.com) provide true enterprise-grade services. We enforce Clean Architecture, mandate automated CI/CD pipelines, and specialize in offline-first data synchronization. You do not just receive a beautiful application; you receive a maintainable, scalable, and crash-resilient mobile ecosystem. Dutch-based architects define the release process, the crash-free SLA, and the CI/CD gates up front; the Vietnamese engineering pod builds and operates against that standard release after release, so the rigor does not depend on any single developer's discipline on any given day.
 
 ---
 

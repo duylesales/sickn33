@@ -84,7 +84,55 @@ Legacy migration is not a coding challenge; it is a risk management challenge.
 
 At Manifera, our elite [offshore and hybrid development teams](https://www.manifera.com) specialize in rescuing enterprises from legacy technical debt. We do not do cheap Lift-and-Shift operations that explode your AWS bill. Our Solutions Architects deploy API Gateways, map Domain-Driven microservices, and execute the Strangler Fig pattern to ensure your business continues generating revenue every single day of the migration process.
 
-[Placeholder: Insert real client testimonial regarding how Manifera migrated a 10-year-old on-premise ERP system to AWS microservices using the Strangler Fig pattern with zero deployment downtime]
+Martin Fowler, who coined the Strangler Fig pattern in 2004 after observing the vines during a trip to the Queensland rainforest, described the core trade-off plainly in his original write-up: "Since these components are small, there isn't so much risk involved when we introduce the new software... The reduced risk and earlier value from the gradual approach outweigh its costs." That single sentence is the entire business case for why enterprises should reject both Lift-and-Shift and the Big Bang rewrite.
+
+## The Math: What Lift-and-Shift Actually Costs Over Three Years
+
+CTOs rarely get a rewrite budget approved on architectural elegance alone. They get it approved with numbers. So let's build a realistic, illustrative three-year Total Cost of Ownership (TCO) comparison for a mid-sized enterprise migrating a 15-year-old monolithic ERP system — the same profile described throughout this article. These figures are a representative modeling exercise based on industry benchmarks, not a specific client engagement.
+
+**Starting point:** A monolithic .NET application, 400,000 lines of code, currently running on aging on-premise servers at roughly €180,000/year in infrastructure, licensing, and maintenance.
+
+### Path A: Lift-and-Shift to AWS VMs
+
+| Year | Cloud Hosting (VMs, 24/7) | Legacy Maintenance Team | Total |
+|---|---|---|---|
+| Year 1 | €95,000 (over-provisioned, always-on) | €220,000 | €315,000 |
+| Year 2 | €110,000 (traffic growth, no elasticity) | €230,000 | €340,000 |
+| Year 3 | €125,000 | €240,000 | €365,000 |
+| **3-Year Total** | | | **€1,020,000** |
+
+The monolith cannot scale down during quiet periods because it is a single deployable unit — every instance must be provisioned for peak load, all day, every day. This is precisely the "Cloud Shock" pattern documented industry-wide: Flexera's 2026 State of the Cloud Report found that 29% of enterprise cloud spend is wasted — the highest waste rate in five years, driven largely by over-provisioned, unoptimized workloads exactly like a lifted-and-shifted monolith.
+
+### Path B: Strangler Fig Migration
+
+| Year | Cloud Hosting (Serverless + Gateway) | Migration Engineering | Reduced Legacy Team | Total |
+|---|---|---|---|---|
+| Year 1 | €35,000 (mostly still on legacy) | €180,000 (2 microservices shipped) | €200,000 | €415,000 |
+| Year 2 | €48,000 (50% traffic on microservices) | €160,000 (4 more microservices) | €140,000 | €348,000 |
+| Year 3 | €42,000 (monolith fully strangled) | €90,000 (final cutover) | €40,000 (skeleton support) | €172,000 |
+| **3-Year Total** | | | | **€935,000** |
+
+Path B costs slightly more in Year 1 because you are running the migration engineering effort *and* the legacy team in parallel. But by Year 3, the elastic serverless architecture and the shrinking legacy footprint invert the cost curve entirely — and unlike Path A, the business exits Year 3 with a modernized, horizontally scalable system instead of the same 15-year-old monolith sitting in a more expensive data center.
+
+This mirrors what McKinsey and the University of Oxford found when they studied more than 5,400 large IT projects: on average, large IT initiatives run 45% over budget and 7% over time, while delivering 56% less value than originally forecast — and 17% run so far over budget or schedule that they threaten the very existence of the company. The Big Bang rewrite is precisely the profile of project McKinsey was describing. The Strangler Fig pattern's incremental, always-shippable structure is what keeps a modernization program off that list — every 3-to-6 week increment is small enough to re-forecast, re-scope, or cancel without sinking the whole initiative.
+
+## Six Questions to Ask Before Signing a Modernization Contract
+
+Not every vendor who says "we do Strangler Fig migrations" actually knows how to run one. Enterprise architects procuring custom software application development services should push on these six points during vendor evaluation, before a single line of code is written.
+
+**1. "Show me the API Gateway configuration plan before you show me a single microservice."** If a vendor jumps straight to writing new services without first establishing the routing layer that lets you fall back instantly, they are not doing a Strangler Fig migration — they are doing a partial rewrite with extra risk and none of the safety net.
+
+**2. "What is your Anti-Corruption Layer strategy for the legacy database?"** A vendor who cannot answer this in specific, technical terms (event sourcing, change-data-capture, a translation service layer) has not actually migrated a legacy database before. They will find out the hard way, on your project, at your expense.
+
+**3. "What's the rollback time if a newly sliced microservice fails in production?"** The honest answer should be measured in minutes — a configuration change at the Gateway, not a redeploy. If the answer involves "we'd need to schedule a maintenance window," the safety guarantee of the pattern has been quietly abandoned.
+
+**4. "How do you decide slice order?"** Elite teams slice by business risk and technical coupling — low-risk, loosely-coupled functionality (notifications, reporting) first, and high-risk, tightly-coupled core logic (payments, authentication) only once the team has proven the pattern works on your specific codebase. A vendor with no clear sequencing logic is guessing.
+
+**5. "What happens to institutional knowledge trapped in the legacy code?"** Fifteen-year-old systems accumulate undocumented business rules that only exist as code. A serious vendor will budget time for legacy code archaeology — interviews with long-tenured staff, automated static analysis of the old codebase — before touching a slice that depends on rules nobody remembers writing down.
+
+**6. "Can you show me a slice you shipped in under four weeks?"** If every "slice" in a vendor's portfolio took three or four months, they are not actually vertical-slicing — they are running a slow, sequential rewrite with Strangler Fig branding attached to the sales deck.
+
+A vendor who can answer all six with specifics, not platitudes, has actually run this pattern before. A vendor who gets defensive or vague on any of them has not — and your 15-year-old monolith is not the place to let them learn.
 
 ---
 

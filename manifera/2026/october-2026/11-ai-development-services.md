@@ -44,13 +44,15 @@ Amateur vendors sell AI development services by demonstrating how quickly they c
 
 This is the "Context Window Trap." 
 
-Every time a user asks a question, you are paying for the API to process 50,000 tokens. As your user base scales, your daily API bill grows exponentially. Furthermore, because LLMs suffer from the "Lost in the Middle" phenomenon, shoving massive amounts of unstructured data into a prompt guarantees degraded reasoning and high hallucination rates.
+Every time a user asks a question, you are paying for the API to process 50,000 tokens. As your user base scales, your daily API bill grows exponentially. Furthermore, because LLMs suffer from the "Lost in the Middle" phenomenon — a limitation first documented empirically by Stanford researcher Nelson Liu and co-authors in their 2023 paper "Lost in the Middle: How Language Models Use Long Contexts," which found that model accuracy is highest when relevant information sits at the very start or end of the context window and drops significantly when it is buried in the middle — shoving massive amounts of unstructured data into a prompt guarantees degraded reasoning and high hallucination rates.
 
 ### The Agitate: The SOC2 Nightmare
 
 The financial bleeding is secondary to the security threat. 
 
 Thin wrappers lack a Data Loss Prevention (DLP) layer. If your customer support AI is connected to your CRM, and a user asks about their account, the amateur AI architecture will send the user's name, email, and billing history directly to Anthropic or OpenAI. You have just violated GDPR and breached your SOC2 compliance, exposing the enterprise to massive legal liability.
+
+This liability is not hypothetical. According to DLA Piper's *GDPR Fines and Data Breach Survey*, aggregate GDPR fines across Europe reached roughly €7.1 billion between the regulation's 2018 start date and January 2026, with European supervisory authorities issuing approximately €1.2 billion in fines during 2025 alone — a figure broadly in line with 2024. The single largest GDPR fine on record, €1.2 billion against Meta Platforms Ireland, was issued specifically over unlawful cross-border data transfer, the exact failure mode an AI wrapper without DLP middleware reproduces every time it forwards PII to a US-based model provider.
 
 ## The Architecture of Elite AI Services
 
@@ -78,8 +80,10 @@ You cannot deploy an AI update based on a developer saying, "The new prompt look
 
 Genuine AI development services include the handover of a mature MLOps pipeline. The vendor creates a "Golden Dataset" of hundreds of edge-case questions and expected answers. Every time a developer alters the system prompt or updates the embedding model, the CI/CD pipeline automatically runs the Golden Dataset through the new architecture. It utilizes "LLM-as-a-Judge" metrics to score factual accuracy and hallucination rates. If the score degrades, the pipeline physically blocks the deployment.
 
-> "True AI integration is an exercise in data engineering and cybersecurity. The LLM is merely the final 5% of the architecture. If a vendor spends their time talking about prompts instead of pipelines, walk away."
-> *— [Placeholder: Insert expert quote on Enterprise AI]*
+> "The model and the code for many applications are basically a solved problem... now that the models have advanced to a certain point, we've got to make the data work as well."
+> *— Andrew Ng, co-founder of Google Brain and Coursera, at MIT Technology Review's EmTech Digital conference*
+
+Ng's "data-centric AI" argument, which he has championed since 2021 through his AI System = Code + Data framework, is the enterprise version of the wrapper-versus-pipeline distinction above: once you accept that frontier models are a commodity, the ETL pipeline, the chunking strategy, and the retrieval quality are the only parts of the stack left to differentiate on. A vendor who spends the sales call talking about which model they use, rather than how they clean and structure your data, has nothing else to sell.
 
 ## When the AI Takes Action: Agentic Guardrails
 
@@ -103,13 +107,17 @@ This tiering is enforced in deterministic code, never left to the LLM's judgment
 
 When evaluating AI development services for any project involving function calling or "agentic" workflows, demand to see the tiered approval architecture explicitly, in writing, before signing the Statement of Work. A vendor who cannot describe how they contain a misbehaving agent is not ready to build one.
 
+### A Worked Example: The Blast Radius of a Missing Rate Limit
+
+Consider a customer-support agent given tool access to a "process_refund" function, deployed without the Tiered Approval Gateway described above. A prompt injection attack — hidden instructions embedded in a support ticket the agent reads as part of its context — convinces the agent that a refund is warranted for every open ticket it processes that day. Without a per-tool rate limit, the agent has no structural reason to stop after one refund; it will keep calling the function for as long as the malicious instruction persists in its context and tickets keep arriving.
+
+Now compare the two architectures on cost. In an unrestricted wrapper, the agent's refund tool is called directly against the payments API with no ceiling: at an average refund of €80 and a queue of 200 tickets processed that day, a single injected instruction can authorize €16,000 in fraudulent refunds before a human notices the anomaly in the finance dashboard — and by then, the damage is done and irreversible. Under a Tiered Approval Gateway with a hard limit of, say, three autonomous refund actions per session and mandatory human approval above €500, the same attack is capped at a handful of transactions before the rate limit halts the pattern and flags it for review. The engineering cost of the rate limit is a few lines of deterministic code in the gateway; the cost of skipping it is the entire blast radius of the attack, uncapped.
+
 ## Procuring AI Maturity
 
 Stop buying API wrappers. Enterprise AI requires specialized Data Engineers, Backend Orchestrators, and MLOps Architects working in tightly integrated Pods.
 
-At Manifera, our elite [offshore AI development teams](https://www.manifera.com) provide the architectural rigor required to deploy AI safely. We build isolated Vector Databases, strictly enforce DLP middleware, and implement automated Evaluation pipelines. We do not just give you an AI feature; we give you a secure, scalable, and mathematically verifiable AI ecosystem.
-
-[Placeholder: Insert real client testimonial highlighting how Manifera's RAG architecture reduced API costs and eliminated hallucinations]
+At Manifera, our elite [offshore AI development teams](https://www.manifera.com) provide the architectural rigor required to deploy AI safely. We build isolated Vector Databases, strictly enforce DLP middleware, and implement automated Evaluation pipelines. We do not just give you an AI feature; we give you a secure, scalable, and mathematically verifiable AI ecosystem. Our Dutch architects own the DLP policy, the evaluation gates, and the risk-tiering rules; our Vietnamese engineering pods build and operate the pipeline against that standard, so compliance is enforced structurally rather than depending on any individual developer remembering to redact a field.
 
 ---
 

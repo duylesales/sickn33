@@ -34,6 +34,8 @@ For a CTO or VP of Engineering, this poses a massive hiring risk. If you hire a 
 
 This deep dive deconstructs the anatomy of an elite AI software developer. We outline the strict technical parameters you must probe during the interview process to separate the amateurs from the engineers who can actually build scalable, SOC2-compliant AI infrastructure.
 
+The stakes of getting this hire wrong are larger than most technical leaders assume. MIT's Project NANDA studied 300 public AI deployments plus interviews and surveys of over 200 executives and leaders for its 2025 report, *"The GenAI Divide: State of AI in Business,"* and found that 95% of enterprise generative AI pilots were failing to deliver a measurable financial return, despite an estimated $30–40 billion in enterprise GenAI spending. The researchers were explicit that the cause was rarely model quality — it was what they called a "learning gap": poor integration into real workflows, and organizations relying on generalist talent to do specialist data-engineering work. That is precisely the Wrapper Developer failure mode described below, at enterprise scale.
+
 ## The Illusion of AI Competence
 
 ### The Pain: The "Wrapper" Developer
@@ -79,15 +81,36 @@ To identify an elite candidate (or to evaluate the talent pool of an [offshore d
 
 **The Green Flag Answer:** "You cannot prevent prompt injection purely through system prompts. You must implement a multi-layered defense. First, we use a cheap, fast classifier model (or deterministic regex) before the main LLM to analyze the user's input for malicious intent. Second, we strictly define the output schema (e.g., using OpenAI's Structured Outputs or JSON mode). Third, the LLM is isolated from the transactional database; it can only propose an action, which must then be validated by a deterministic, hard-coded business logic layer before any discount is actually applied."
 
+This is not a theoretical concern. Prompt injection has held the #1 spot — LLM01 — on the OWASP Top 10 for LLM Applications for two consecutive editions, ahead of data poisoning, supply chain vulnerabilities, and excessive agency. Simon Willison, the researcher who coined the term "prompt injection" in 2022, has been blunt about the state of the art:
+
+> "We don't have a magic solution to prompt injection, so we need to make trade-offs."
+> *— Simon Willison, simonwillison.net*
+
+Willison's recommended architecture — a "dual-LLM" pattern where a privileged model holds the tools and permissions but never reads untrusted input directly, while a quarantined model reads untrusted content but cannot take action — is exactly the kind of layered thinking a Green Flag candidate should reach for instinctively, not the kind you have to coach them toward.
+
+### 4. Test Their Discipline Around Cost and Latency at Scale
+
+**Ask:** *"Your RAG chatbot works perfectly in the demo. Six months later, at 50,000 queries a day, the OpenAI bill is €40,000 a month and users are complaining about 8-second response times. Walk me through how you diagnose and fix this."*
+
+**The Red Flag Answer:** "I'd switch to a cheaper model" — a surface-level answer that ignores the underlying architecture.
+
+**The Green Flag Answer:** "First, I'd instrument the pipeline with distributed tracing to see where the latency actually lives — embedding generation, the vector search, or the LLM call itself. Then I'd look at model routing: not every query needs the largest, most expensive model. A cheap classifier can route simple factual lookups to a smaller model and reserve the frontier model for genuinely complex reasoning. I'd also check whether we're re-embedding and re-retrieving on every turn of a conversation when a cached context window would do, and whether we're sending the model more retrieved chunks than it actually needs — most RAG pipelines over-retrieve out of caution and pay for it in both latency and token cost. Finally, I'd look at prompt caching for any static system-prompt content, which most providers now discount heavily on repeated use."
+
+This question separates candidates who have only ever built a demo from candidates who have operated a RAG system under real production load — the difference between an interesting weekend project and an AI software developer you can actually staff on enterprise infrastructure.
+
 ## The Scalable Alternative to Impossible Hiring
 
 Finding a single AI software developer who possesses deep knowledge of React, Python, Vector Databases, MLOps, and SOC2 compliance is nearly impossible. These "unicorn" engineers command salaries upwards of €200,000 in major European tech hubs, and their retention rates are abysmal.
 
 Enterprise AI is a team sport. Instead of hunting for unicorns, mature technical leaders partner with specialized [custom software development companies](https://www.manifera.com/services/custom-software-development/) that provide pre-assembled, cross-functional AI pods. 
 
-By integrating an elite offshore pod—comprising a Data Engineer, an MLOps Specialist, and a Backend Developer—you gain the comprehensive architectural rigor required to deploy enterprise AI safely, at a fraction of the cost of attempting to recruit and retain a single in-house unicorn.
+By integrating an elite offshore pod—comprising a Data Engineer, an MLOps Specialist, and a Backend Developer—you gain the comprehensive architectural rigor required to deploy enterprise AI safely, at a fraction of the cost of attempting to recruit and retain a single in-house unicorn. At Manifera, that pod structure is deliberate: a Dutch-based architect owns the RAG design, the evaluation harness, and the security review, while the Vietnamese engineering pod builds and operates the pipeline under that same architectural standard — so you get senior-level design judgment without paying senior-unicorn rates for every hour of implementation work.
 
-[Placeholder: Insert real client testimonial highlighting how Manifera provided the specialized AI talent needed to deploy a secure RAG application]
+## The Trust Gap Your Hiring Process Needs to Close
+
+The scale of the "Wrapper Developer" problem shows up clearly in industry survey data, not just in anecdotes from failed AI pilots. According to the 2025 Stack Overflow Developer Survey, 84% of developers now say they use or plan to use AI tools in their workflow — up from 76% the year before. But trust in the *output* of those tools moved in the opposite direction: only 33% of developers said they trust the accuracy of AI-generated code, while 46% actively distrust it, and trust was lowest among the most experienced engineers, the same people usually responsible for reviewing and shipping that code to production.
+
+That gap is the whole hiring problem in miniature. Adoption is not the bottleneck — every candidate you interview will claim fluency with Copilot, Cursor, or a chat-based coding assistant. Verification is the bottleneck. An elite AI software developer is, in practice, someone who has built the deterministic evaluation and guardrail layer that closes that trust gap for a specific production system: the golden-dataset eval suite, the schema-validated output layer, the DLP redaction step. A Wrapper Developer treats the trust gap as someone else's problem to worry about later. It never gets solved later — "later" is when the postmortem gets written.
 
 ---
 
