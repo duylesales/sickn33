@@ -54,14 +54,11 @@ At Manifera, we respect the physical limits of the user's hardware by engineerin
 *   **Amsterdam (Systems Architecture Governance):** Our Dutch Technical Architects despise polling. We audit your real-time requirements and design the overarching Pub/Sub architecture (using Redis or Kafka) required to handle millions of concurrent WebSocket connections. We architect the strict State Machine that dictates exactly when the app should transition between active WebSockets and background Silent Push payloads, ensuring absolute compliance with Apple's aggressive background execution limits.
 *   **Vietnam (Deep Mobile Execution):** Our Autonomous Pods execute these intricate state transitions. Managing WebSockets on mobile is incredibly volatile; connections constantly drop when a user drives through a tunnel or switches from Wi-Fi to 4G. Our Vietnamese engineers utilize advanced reconnection algorithms with Exponential Backoff, ensuring the app silently reconnects without draining the battery. They write highly optimized native background handlers (in Swift/Kotlin) to process Silent Pushes in milliseconds before the OS kills the thread.
 
-### Case Study: Eradicating Battery Drain for a Telehealth Platform
+### Case Study: Eradicating Battery Drain for a Telehealth Platform (Illustrative Scenario)
 
-When a rapidly scaling Telehealth platform launched their secure doctor-patient chat application, they were hit with a wave of 1-star App Store reviews. Patients complained the app was making their phones overheat and draining their battery by 30% per hour, even when the app was just sitting in the background.
+Consider a representative scenario for a rapidly scaling telehealth platform: shortly after launching a secure doctor-patient chat application, it is hit with a wave of 1-star App Store reviews. Patients complain the app is making their phones overheat and drains battery noticeably even when it is just sitting in the background.
 
-They engaged Manifera's Amsterdam architects to perform a forensic audit. We discovered their previous vendor was using a naive polling loop that fired a heavy HTTP request every 3 seconds to check for new messages. Our Vietnamese Pod completely eradicated the polling logic. We engineered an Event-Driven architecture using WebSockets for active chatting, and implemented APNs Silent Push Notifications to wake the app only when a message was actually received in the background. The battery drain dropped to less than 1% per hour. The 1-star reviews vanished, and the platform scaled smoothly.
-
-> *"Our app was functionally working, but it was destroying our users' hardware. Manifera stripped out the lazy polling logic and engineered a true WebSocket and Silent Push architecture. The app now syncs instantly and the battery impact is virtually undetectable."*
-> — **[VP of Engineering, Telehealth Platform]**
+In this scenario, Manifera's Amsterdam architects are engaged to perform a forensic audit and discover the previous vendor was using a naive polling loop that fired an HTTP request every few seconds to check for new messages. The Vietnamese Pod eradicates the polling logic entirely, replacing it with an Event-Driven architecture: WebSockets for active chatting, and APNs/FCM Silent Push Notifications to wake the app only when a message actually arrives in the background. The underlying reasoning is not a Manifera invention — it matches Google's own official Android developer guidance, which states plainly that every time an app polls a server to check for an update, it activates the wireless radio and draws power unnecessarily, for as long as 20 seconds on a typical 3G connection, and recommends FCM's event-driven push model specifically because it lets the app open a connection only when there is data to deliver (Android Developers, "Minimize the effect of regular updates," developer.android.com). Applying that guidance consistently, rather than as an afterthought, is what turns a battery-drain complaint into a non-issue.
 
 ## Sync Architecture Comparison: 'Polling' Agency vs. Event-Driven Pod
 
@@ -75,7 +72,22 @@ They engaged Manifera's Amsterdam architects to perform a forensic audit. We dis
 
 ## The Economics of Uninstalls and Server Compute
 
-The financial destruction caused by HTTP Polling is two-fold. First, user acquisition cost (CAC). If you spend $20 to acquire an enterprise user, and they uninstall the app on day two because it drained their battery, your marketing ROI is negative. Second, backend cloud costs. If you have 50,000 active users, and their phones are all pinging your server every 5 seconds, your AWS load balancers and databases are processing 10,000 requests *per second*, mostly just to reply "No new data." You are paying tens of thousands of dollars a month for useless compute. By transitioning to WebSockets and Push, you solve the UX crisis and slash your AWS compute bill simultaneously.
+The financial destruction caused by HTTP Polling is two-fold, and both halves of it are measurable rather than speculative.
+
+First, user acquisition cost (CAC). The relationship between poor mobile performance and abandonment is one of the more durable findings in mobile UX research: in the AppDynamics "App Attention Span" study, conducted with the Institute of Management Studies at Goldsmiths, University of London, nearly 88% of surveyed users reported having deleted or uninstalled at least one mobile app specifically because of performance problems (AppDynamics / Goldsmiths, University of London, "The App Attention Span," 2014). Battery drain is one of the most visible performance problems a user can observe, because Android and iOS both surface a per-app battery-usage ranking directly in the phone's own settings menu — your app's failure is not hidden in a log file, it is displayed to the user by the operating system itself, with your app's icon at the top of the list. If you spend meaningful budget to acquire an enterprise or consumer user and they uninstall within the first days because of a battery-drain complaint the OS itself surfaced, that acquisition spend is fully lost.
+
+Second, backend cloud costs. If you have 50,000 active users and their phones are all pinging your server every 5 seconds, your load balancers and databases are processing roughly 10,000 requests *per second*, the overwhelming majority of which exist only to reply "no new data." You are paying for compute that produces zero business value.
+
+### A Worked Illustration: Polling vs. Event-Driven Infrastructure Cost
+
+To make the backend cost trade-off concrete, consider a simplified, illustrative model for a logistics platform with 50,000 concurrently active mobile clients:
+
+| Architecture | Request Pattern | Illustrative Requests/Day | Relative Infrastructure Load |
+| :--- | :--- | :--- | :--- |
+| HTTP Polling (every 5s) | Constant, regardless of data changes | ≈ 864 million requests/day | High — sized for worst-case constant load, 24/7 |
+| WebSockets + Silent Push | Only on actual state changes | A small fraction of polling volume, proportional to real events | Low — sized for actual event volume |
+
+The exact multiple varies enormously by how frequently the underlying data actually changes (a delivery truck's GPS coordinate updates far more often than, say, a chat message), so this table intentionally avoids asserting a single dollar figure. But the direction is unambiguous: a polling architecture bills you for asking a question 864 million times a day regardless of the answer, while an event-driven architecture bills you only for the answers that actually change. By transitioning to WebSockets and Push, you address the uninstall-rate problem and the infrastructure-cost problem with the same architectural decision.
 
 ## Respect Your Users' Hardware Today
 

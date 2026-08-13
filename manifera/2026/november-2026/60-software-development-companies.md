@@ -60,8 +60,7 @@ A heavily funded European Medical SaaS company found themselves held hostage by 
 
 They engaged Manifera's Amsterdam architects to execute a rescue mission. We deployed a dedicated Hybrid Hub Pod. Our Vietnamese Pod spent four weeks rigorously reverse-engineering the "Hero's" undocumented code, utilizing advanced Static Analysis (AST) tools to map the dependencies. We slowly refactored the encryption modules, wrapping them in comprehensive Playwright E2E tests to ensure we didn't break compliance. Once the tests were green, we fired the legacy agency. The Medical SaaS is now managed by a 5-person Manifera Pod. When one of our developers takes a 3-week vacation, the client's velocity doesn't drop a single point because the knowledge is perfectly decentralized.
 
-> *"We were essentially being held ransom by an agency because only one of their developers understood our system. Manifera audited the code, replaced the 'Hero' with a highly disciplined Pod, and decentralized all the knowledge. We finally have total ownership and control over our own platform."*
-> — **[Chief Operating Officer, Medical SaaS Platform]**
+This is not a scenario unique to healthcare or to any one agency. Academic research on open-source repositories has formalized this exact risk under the name "truck factor" — the number of contributors who would need to disappear before a project stalls — and an analysis of 133 popular GitHub systems found that most projects run on a truck factor of just one or two people, even when dozens of contributors appear in the commit log. A codebase does not need to be small or obscure to be this fragile; it only needs one contract, one hiring decision, or one performance review to concentrate the wrong knowledge in the wrong single person.
 
 ## Operations Comparison: 'Hero' Agency vs. Autonomous Pod
 
@@ -75,7 +74,9 @@ They engaged Manifera's Amsterdam architects to execute a rescue mission. We dep
 
 ## The Economics of Engineering Attrition
 
-The financial devastation of the Bus Factor is realized during employee turnover. In the tech industry, the average tenure of a software engineer is just 18 to 24 months. If you structure your team assuming nobody will ever quit, you are mathematically guaranteeing a disaster. When a "Hero" leaves, you don't just lose their salary; you lose months of productivity as the replacement team fumbles through undocumented code. By investing in the discipline of the Autonomous Pod model (enforced Code Reviews, CI/CD blockers, and TDD), you incur a slight reduction in "Day 1" speed, but you purchase an insurance policy against the brutal reality of employee attrition. You guarantee long-term, unshakeable enterprise velocity.
+The financial devastation of the Bus Factor is realized during employee turnover. Industry tenure data confirms this is not a hypothetical risk: recent workforce studies put average tenure for software engineers at roughly two years, with a majority of developers reporting less than two years in their current role, and software engineering consistently ranks among the roles with the highest annual turnover of any profession, running well above the cross-industry average. If you structure your team assuming nobody will ever quit, you are mathematically guaranteeing a disaster. When a "Hero" leaves, you don't just lose their salary; you lose months of productivity as the replacement team fumbles through undocumented code, and separately from that lost productivity, you still have to fund the replacement search itself — SHRM and Gallup both estimate the direct cost of replacing an employee at roughly 50% to 200% of that person's annual salary, before counting the lost velocity described above. By investing in the discipline of the Autonomous Pod model (enforced Code Reviews, CI/CD blockers, and TDD), you incur a slight reduction in "Day 1" speed, but you purchase an insurance policy against the brutal reality of employee attrition. You guarantee long-term, unshakeable enterprise velocity.
+
+Consider what this looks like on a single mid-level engineer earning €90,000 a year in a Bus Factor-1 role. The direct replacement cost alone, at the low end of the SHRM/Gallup range, is roughly €45,000 in recruiting, onboarding, and ramp-up overhead. That figure does not include the frozen roadmap: in the case study above, three developers spent two months just learning to compile a departed engineer's codebase before they could resume shipping features — two months of a five-figure monthly Series B burn rate spent on archaeology instead of product. A Pod structure does not eliminate the €45,000 replacement cost of a departure, but it eliminates the multi-month freeze that turns a single resignation into a roadmap-threatening event, because the remaining Pod members already reviewed every line of the departing engineer's code as it was written.
 
 ## Eradicate the Hero Culture Today
 
@@ -101,6 +102,9 @@ We don't force them to write massive Word documents; we force them to write "Exe
 
 ### (Scenario: COO evaluating agency risk) Our current agency claims they handle knowledge transfer internally. How do I verify this is actually happening?
 You cannot trust their word; you must verify the math in the Git repository. We can run an analysis script (like GitPrime or clearwater) on your repository. If the script shows that 90% of the commits to the critical `PaymentGateway` folder were made by a single developer (e.g., `Alex@agency.com`), and nobody else ever touched those files, the agency is lying to you. They have a Bus Factor of 1. A healthy Pod repository will show commits and Code Review approvals distributed evenly across 4-5 different engineers.
+
+### (Scenario: CEO questioning whether "Bus Factor 1" is really common) Is this a rare, worst-case scenario, or does it happen often in real codebases?
+It happens more often than most executives assume. Academic research analyzing 133 popular GitHub systems — projects with dozens of visible contributors — found that most still had a "truck factor" (the formal research term for Bus Factor) of just one or two people who could not be lost without stalling development. Separately, workforce data shows why this concentration risk keeps recurring: software engineers have an average tenure of roughly two years, a majority stay under two years in any given role, and the profession consistently posts among the highest annual turnover rates of any occupation. A codebase with dozens of contributors in its history can still be effectively owned by one person who happens to still be there.
 
 <script type="application/ld+json">
 {
@@ -145,6 +149,14 @@ You cannot trust their word; you must verify the math in the Git repository. We 
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "You cannot trust their word; you must verify the math in the Git repository. We can run an analysis script (like GitPrime or clearwater) on your repository. If the script shows that 90% of the commits to the critical `PaymentGateway` folder were made by a single developer (e.g., `Alex@agency.com`), and nobody else ever touched those files, the agency is lying to you. They have a Bus Factor of 1. A healthy Pod repository will show commits and Code Review approvals distributed evenly across 4-5 different engineers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CEO questioning whether \"Bus Factor 1\" is really common) Is this a rare, worst-case scenario, or does it happen often in real codebases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It happens more often than most executives assume. Academic research analyzing 133 popular GitHub systems, projects with dozens of visible contributors, found that most still had a \"truck factor\" (the formal research term for Bus Factor) of just one or two people who could not be lost without stalling development. Separately, workforce data shows why this concentration risk keeps recurring: software engineers have an average tenure of roughly two years, a majority stay under two years in any given role, and the profession consistently posts among the highest annual turnover rates of any occupation. A codebase with dozens of contributors in its history can still be effectively owned by one person who happens to still be there."
       }
     }
   ]

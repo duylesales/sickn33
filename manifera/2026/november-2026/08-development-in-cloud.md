@@ -99,6 +99,14 @@ Take an illustrative enterprise running $50,000 per month in combined AWS/Azure 
 
 This is also why the tagging taxonomy, anomaly detection, and budget guardrails described above matter as much as the underlying architecture decisions. A perfectly designed microservices architecture with zero governance wrapped around it will still drift toward that same industry waste line over time — just more slowly than a monolith would.
 
+## The Value-Capture Gap: Why "Migrated" Is Not the Same as "Optimized"
+
+Getting a workload into the cloud and getting value out of it are two different projects, and most enterprises only budget for the first one. McKinsey's cloud research estimates that cloud adoption could unlock roughly $3 trillion in global value by 2030 — yet the same body of research found that only about 10% of companies have fully captured cloud's potential value, with roughly 50% still in the early stages of capturing it and the remaining 40% seeing no material value at all. McKinsey's analysis also puts the average potential EBITDA uplift from cloud, across sectors, at 20-30% by 2030 for organizations that execute well. That is a wide gap between what the technology can deliver and what most organizations actually collect.
+
+### Where the 90% Get Stuck
+
+The pattern behind that gap is consistent with everything already covered in this article. Companies that migrate without re-architecting inherit their old cost structure in a new location. Companies that migrate without FinOps governance leak the savings back out through untagged, unmonitored resources. And companies that treat "development in cloud" as a one-time infrastructure project, rather than an ongoing architectural discipline, plateau at whatever value they captured on day one — because nobody owns the job of continuing to optimize afterward. The 10% of companies capturing full value are not using fundamentally different cloud providers or exotic technology; they are running the same discipline described throughout this article as a continuous operating model rather than a migration checklist: Cloud-Native architecture from Amsterdam, deep execution from Vietnam, and FinOps governance that never turns off.
+
 ## Transition to True Agile Velocity
 
 Stop paying AWS for your vendor's inefficient code. If your enterprise requires mathematically sound, highly scalable, and fiercely cost-optimized cloud architecture, it is time to deploy elite engineering.

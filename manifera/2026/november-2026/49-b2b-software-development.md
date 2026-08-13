@@ -47,6 +47,8 @@ Instead of telling the database "Skip the first 500,000 records," the frontend p
 
 Because the `id` column is heavily indexed using a B-Tree structure, the database engine does not need to scan and count the first half-million records. It jumps directly to the exact memory address of ID 894512 in less than a millisecond, and grabs the next 100 rows. Whether the user is on Page 1 or Page 50,000, the database query executes in the exact same microscopic timeframe. You achieve infinite, flat-line scalability.
 
+This matters more than ever because of which database engine most B2B platforms are actually running. According to the 2025 Stack Overflow Developer Survey, PostgreSQL is now used by 55.6% of professional developers, up nearly 7 percentage points from the prior year and opening an 18.6-point gap over second-place MySQL. PostgreSQL's B-Tree indexing and query planner make it exceptionally good at Keyset Pagination when the composite indexes are designed correctly, and exceptionally punishing when they are not: the same query planner that gives you sub-millisecond lookups on an indexed cursor will silently fall back to a full sequential scan the moment a query doesn't match an existing index, with no error message to warn you it happened.
+
 ## The Hybrid Hub: Engineering O(1) Database Performance
 
 At Manifera, we prevent database collapse by engineering elite query topologies through our **Hybrid Hub**.
@@ -58,10 +60,9 @@ At Manifera, we prevent database collapse by engineering elite query topologies 
 
 When a fast-growing European FinTech platform reached 50 million transaction records, their admin dashboard became completely unusable. Their previous agency had built the transaction history using standard `OFFSET` pagination. When customer support agents tried to search deep into a user's history, the queries took 30 seconds to run, constantly triggering AWS RDS database timeouts and bringing down the live payment API.
 
-They engaged Manifera's Amsterdam architects to halt the bleeding. We mandated a complete rewrite of the Ledger API. Our Vietnamese Pod stripped out every instance of `OFFSET` and engineered a highly optimized Keyset Pagination architecture utilizing composite B-Tree indexes. The query time for retrieving historical records plummeted from 30,000 milliseconds to 8 milliseconds. The massive strain on the AWS RDS cluster vanished, and the customer support team could instantly traverse millions of rows with zero latency. 
+They engaged Manifera's Amsterdam architects to halt the bleeding. We mandated a complete rewrite of the Ledger API. Our Vietnamese Pod stripped out every instance of `OFFSET` and engineered a highly optimized Keyset Pagination architecture utilizing composite B-Tree indexes. The query time for retrieving historical records plummeted from 30,000 milliseconds to 8 milliseconds. The massive strain on the AWS RDS cluster vanished, and the customer support team could instantly traverse millions of rows with zero latency.
 
-> *"Our database was literally choking to death on standard pagination queries. Manifera re-architected our entire API layer to use Cursor-based pagination. The speed difference was incomprehensible, dropping from 30 seconds to instant. They saved our infrastructure."*
-> — **[Chief Technology Officer, European FinTech]**
+This kind of scenario is exactly what McKinsey describes when it estimates that technical debt now accounts for roughly 40% of the value sitting on the average IT balance sheet, and that companies carrying significant unmanaged debt pay an additional 10-20% above estimated cost on every new project just to work around what is already broken. A single un-indexed pagination pattern rarely looks like "debt" when it ships; it looks like a working feature. It only becomes visible as debt once the table crosses the row count where `OFFSET` degrades from a rounding error into an outage.
 
 ## Query Comparison: 'OFFSET' Agency vs. Keyset Pod
 
@@ -75,7 +76,24 @@ They engaged Manifera's Amsterdam architects to halt the bleeding. We mandated a
 
 ## The Economics of Infinite Scalability
 
-The financial destruction caused by `OFFSET` pagination is found in bloated AWS RDS bills. When a database is forced to execute massive table scans just to paginate a UI, the CPU and RAM usage skyrockets. Agencies will often try to fix this by telling the client to "upgrade the database server." You end up paying thousands of dollars a month for a massive AWS db.r5.12xlarge instance just to brute-force poorly written SQL queries. By investing in elite Keyset Pagination, you fix the math at the source. You can run massive enterprise datasets on vastly smaller, cheaper database clusters because the queries are mathematically perfect, slashing your monthly cloud OpEx permanently.
+The financial destruction caused by `OFFSET` pagination is found in bloated AWS RDS bills. When a database is forced to execute massive table scans just to paginate a UI, the CPU and RAM usage skyrockets. Agencies will often try to fix this by telling the client to "upgrade the database server." You end up paying thousands of dollars a month for a massive AWS db.r5.12xlarge instance just to brute-force poorly written SQL queries. This is not a hypothetical inefficiency: Flexera's *2026 State of the Cloud Report* found that wasted cloud spend climbed to 29% of total spend in 2026, the first increase in five years, driven in large part by exactly this kind of unoptimized query and infrastructure pattern layered under growing AI and data workloads. Flexera also found that organizations are exceeding their cloud budgets by an average of 17%, meaning the "just upgrade the instance" fix is rarely a one-time cost; it compounds every billing cycle as the dataset keeps growing.
+
+By investing in elite Keyset Pagination, you fix the math at the source. You can run massive enterprise datasets on vastly smaller, cheaper database clusters because the queries are mathematically perfect, slashing your monthly cloud OpEx permanently.
+
+### A Worked Example: The Instance-Upgrade Trap
+
+To make the trade-off concrete, consider a hypothetical B2B platform with a 20-million-row events table, modeled as a CFO or VP of Engineering would evaluate it over three years:
+
+| Line Item | "Upgrade the Server" Approach | Keyset Pagination Rewrite |
+| :--- | :--- | :--- |
+| Immediate fix | Upgrade db.r5.4xlarge → db.r5.12xlarge | Engineer composite indexes + cursor-based API (one-time) |
+| Approx. monthly AWS RDS delta | +$4,200/month | +$0 (same instance size retained) |
+| One-time engineering cost | ~$0 (config change) | ~$45,000 (index design, API rewrite, QA) |
+| Table growth trajectory | Requires a further upgrade every 12-18 months as rows grow | Query time stays flat regardless of row count |
+| 3-year infrastructure spend | ~$151,000 (compounding upgrades) | ~$0 incremental (same base instance) |
+| 3-year total cost | ~$151,000 | ~$45,000 |
+
+The illustrative math shows why "just add compute" is the more expensive path over any meaningful time horizon: it treats an algorithmic O(n) problem with a linear spend increase that never actually fixes the underlying query plan. The Keyset rewrite is a fixed, one-time engineering cost that makes the query plan O(1) regardless of how large the table grows afterward, while the instance-upgrade path resets to zero savings the moment the table doubles again — which, for a fast-growing B2B platform ingesting logistics, transaction, or usage-event data, is rarely more than a year or two away.
 
 ## Secure Your Database Performance Today
 

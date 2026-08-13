@@ -54,14 +54,13 @@ At Manifera, we eradicate network latency by engineering elite Local-First topol
 *   **Amsterdam (Data Topography Governance):** Our Dutch Technical Architects understand the immense complexity of offline data syncing. We map out your entire domain and design the CRDT schemas. We identify exactly which subsets of your massive cloud database need to be synced down to the device (you cannot sync a 50GB enterprise database to an iPhone). We architect the secure sync engines (using tools like PowerSync or ElectricSQL) ensuring that data replication is highly efficient, mathematically conflict-free, and adheres to strict GDPR access controls on the local device.
 *   **Vietnam (Deep Mobile Execution):** Our Autonomous Pods execute these incredibly complex synchronization engines. Building Local-First requires an elite understanding of background threading and local storage limits. Our Vietnamese mobile engineers utilize advanced frameworks (React Native with embedded C++ JSI or native Swift/Kotlin) to bind the UI directly to the local SQLite database. They engineer the background sync queues to be heavily optimized, ensuring that syncing thousands of rows doesn't freeze the UI or drain the user's battery.
 
-### Case Study: Eradicating Downtime for a Global Inspection Firm
+### Case Study: Eradicating Downtime for a Global Inspection Firm (Illustrative Scenario)
 
-When a massive industrial inspection firm needed to digitize their pipeline inspection process, their previous agency built a standard React Native app that relied on REST APIs. Inspectors deep in the field constantly lost signal, losing hours of inspection data.
+Consider a representative scenario for a large industrial inspection firm digitizing its pipeline inspection process: the incumbent agency built a standard React Native app that relied on REST APIs for every form submission, and inspectors deep in the field routinely lost signal — and with it, hours of inspection data.
 
-They transitioned to Manifera. Our Amsterdam architects mandated a complete shift to a Local-First Architecture utilizing CRDTs. Our Vietnamese Pod rebuilt the app with an embedded local database. The inspectors could now download their daily route, drive into a dead zone, and execute 500 complex inspection forms perfectly with zero loading spinners. When they drove back to the hotel and connected to Wi-Fi, the CRDT engine flawlessly synced the massive payload to the AWS backend, automatically resolving any conflicts. The productivity of the field team increased by 40%.
+In this scenario, the firm transitions to Manifera. Our Amsterdam architects mandate a complete shift to a Local-First Architecture utilizing CRDTs, and the Vietnamese Pod rebuilds the app around an embedded local database. Inspectors download their daily route each morning, drive into a dead zone, and complete hundreds of complex inspection forms with zero loading spinners, because every write lands on the device first. When they return to a hotel with Wi-Fi, the CRDT sync engine reconciles the day's payload against the AWS backend, automatically resolving any conflicts without a developer ever writing manual merge logic.
 
-> *"Our inspectors were furious that our 'modern' app couldn't function without a perfect 5G connection. Manifera re-architected it to be Local-First. The app is now brutally fast, works deep in the wilderness, and never loses a single byte of data. It is an engineering marvel."*
-> — **[VP of Engineering, Industrial Inspection Firm]**
+The architectural approach underpinning this scenario is not proprietary to Manifera — it is grounded in published research. The term "local-first software" itself comes from a 2019 research paper by Ink & Switch, co-authored by distributed-systems researcher Martin Kleppmann, which argues that CRDTs allow applications to be simultaneously offline-capable, multi-user, and free of a central server as the single source of truth (Kleppmann, Wiggins, van Hardenberg, McGranaghan, "Local-first software: you own your data, in spite of the cloud," Onward! 2019). What we engineer for field-service and inspection clients is a production implementation of that same principle: the phone, not the cloud, is the primary database.
 
 ## Architecture Comparison: 'Cloud-First' Agency vs. Local-First Pod
 
@@ -75,7 +74,28 @@ They transitioned to Manifera. Our Amsterdam architects mandated a complete shif
 
 ## The Economics of User Retention and Productivity
 
-The financial impact of a Local-First architecture is measured in user retention for consumer apps and extreme productivity for B2B apps. In the consumer space, every 100ms of latency causes a measurable drop in conversion rates. By making the app respond in 2 milliseconds, you capture maximum revenue. In the B2B space, if you have 1,000 field workers and a Cloud-First app wastes 10 minutes of their day waiting on loading spinners and dropped connections, you are burning thousands of man-hours per month. Investing in Local-First engineering is an immediate upgrade to your enterprise operational velocity.
+The financial impact of a Local-First architecture is measured in user retention for consumer apps and extreme productivity for B2B apps.
+
+In the consumer space, the relationship between latency and revenue is one of the most widely cited findings in web and mobile performance engineering: former Amazon engineer Greg Linden has described internal Amazon experiments from the mid-2000s showing that every additional 100 milliseconds of page load latency measurably reduced sales by roughly 1%. That figure is now two decades old and specific to Amazon's own traffic and margins, so it should not be read as a universal constant — but the direction of the effect (latency suppresses conversion, and the relationship is closer to linear than most teams assume) has been replicated in various forms across the performance engineering literature ever since. A Local-First architecture that responds in single-digit milliseconds, rather than the 200–3000ms typical of a network round trip, is architecturally positioned at the favorable end of that curve by default, rather than needing continuous latency-optimization work to get there.
+
+In the B2B space, the scale of the mobile workforce affected by this decision is larger than most engineering leaders assume. IDC projected that the number of mobile workers in the United States would reach approximately 93.5 million by 2024 — nearly 60% of the total US workforce — growing at roughly 4% annually, faster than overall workforce growth (IDC, "Mobile Workers Will Be 60% of the Total U.S. Workforce by 2024," 2020). Field service, inspection, logistics, and delivery workers make up a large share of that population, and for these roles, the cost of a Cloud-First app is not lost conversion revenue — it is idle labor.
+
+### A Worked Illustration: Field-Team Downtime
+
+To make the productivity trade-off concrete, consider a simplified, illustrative model for an organization with 1,000 field workers, each earning a fully loaded cost of €35/hour, where a Cloud-First app costs each worker an average of 10 minutes per shift in loading spinners, dropped connections, and re-entry of lost form data:
+
+| Metric | Assumption | Illustrative Monthly Cost |
+| :--- | :--- | :--- |
+| Lost time per worker per shift | 10 minutes | — |
+| Working days per month | 21 | 210 minutes/worker/month (3.5 hours) |
+| Fully loaded labor cost | €35/hour | €122.50/worker/month |
+| Fleet of 1,000 workers | — | **≈ €122,500/month, or ≈ €1.47M/year** |
+
+This is illustrative, not a guaranteed outcome for any specific organization — actual lost minutes per shift, headcount, and loaded labor cost vary substantially by industry and geography. But it illustrates why, for a large field workforce, even a modest per-shift latency tax compounds into a meaningful annual figure — one that a Local-First rebuild, which eliminates network-dependent blocking entirely, is well positioned to recover.
+
+## Why SQLite Is the Right Foundation
+
+Skeptical engineering leaders sometimes ask why we standardize on SQLite as the embedded local database rather than a proprietary mobile storage engine. The honest answer is that betting against SQLite's ubiquity would be a strange place to introduce architectural risk. SQLite's own project documentation states that it is likely one of the most widely deployed software libraries of any kind, second only to zlib, with an estimated one trillion or more individual SQLite database files in active use worldwide across phones, desktops, browsers, and embedded devices (SQLite Consortium, "Most Widely Deployed SQL Database Engine," sqlite.org). It is public-domain, has no licensing cost, is battle-tested across more device classes than any alternative, and is directly supported by the sync engines (PowerSync, ElectricSQL) that our Amsterdam architects use to build the CRDT layer. Choosing it is a deliberate risk-reduction decision, not a default.
 
 ## Secure Your Mobile Velocity Today
 

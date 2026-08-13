@@ -98,6 +98,26 @@ Every outsourcing vendor will verbally claim to take security seriously. Very fe
 
 At Manifera, our Amsterdam headquarters maintains the certifications and audit cadence described above as standard operating practice, and we disclose our full sub-processor list to any prospective client during due diligence — because a vendor confident in their security posture has nothing to hide behind a redaction.
 
+## The Real Numbers: What IP and Data Exposure Actually Cost
+
+None of this is abstract risk-modeling. The numbers are published annually by organizations with no incentive to inflate them.
+
+**The breach itself.** IBM's *Cost of a Data Breach Report 2025* puts the global average cost of a data breach at $4.44 million, and even with AI-assisted detection driving that figure down from $4.88 million the year before, organizations still took a mean of 241 days to identify and contain a breach. When the compromised party is a third-party vendor rather than your own team, IBM's most recent supply-chain analysis shows those breaches average $4.91 million and take 267 days to resolve — longer than almost any other breach category, because nobody owns the incident response until it's too late.
+
+**The regulatory exposure.** The *DLA Piper GDPR Fines and Data Breach Survey 2026* puts the aggregate total of GDPR fines issued since the regulation took effect in May 2018 at roughly €7.1 billion, with European supervisory authorities logging an average of 443 data breach notifications per day — a 22% year-on-year increase. A General Counsel who treats an offshore vendor's data handling as someone else's problem is underwriting a regulatory exposure that lands, by law, on the data controller: you.
+
+**The outsourcing decision itself is shifting.** Deloitte's *Global Outsourcing Survey 2024* found that only 34% of organizations now cite cost reduction as their primary driver for outsourcing, down sharply from 70% in 2020 — skilled talent and agility have moved alongside cost as co-equal reasons to engage an external partner. That shift matters for this article's thesis: if cost was ever the excuse for accepting weaker IP protections, that excuse is disappearing from the buyer's own stated priorities.
+
+### Illustrative Scenario: Pricing the Exit Clause Nobody Reads
+
+Consider two otherwise identical five-year outsourcing contracts, each covering a team of six engineers with access to a proprietary recommendation algorithm.
+
+**Contract A** is a standard body-shop agreement. It includes a boilerplate NDA and no formal offboarding protocol. When the relationship ends in year three following a dispute over scope, the client's legal team spends four months and roughly $180,000 in outside counsel fees attempting to confirm — without cooperation from the vendor — that no forked repository, personal backup, or exported credential set still exists. They never get a definitive answer.
+
+**Contract B** is structured like a Manifera engagement: access revocation within 24 hours of termination, contractual repository custody transfer with cryptographic checksums, and signed destruction attestations from every engineer who touched the code. When that relationship ends — for any reason — the exit takes a single day, costs nothing beyond the standard legal review already built into the contract, and produces a documented, verifiable answer.
+
+The difference is not the NDA both contracts contain. It is that Contract B built the *technical means* of enforcing the NDA into the engagement itself, rather than treating the NDA as the entire strategy.
+
 ## Stop Burning Cloud CapEx: Audit Your Architecture
 
 Stop treating your enterprise's Intellectual Property as an afterthought. If you are a CISO or General Counsel who demands uncompromising legal protection alongside massive engineering velocity, you must rethink your procurement strategy.

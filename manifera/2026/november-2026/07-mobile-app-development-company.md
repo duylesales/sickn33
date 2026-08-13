@@ -56,6 +56,30 @@ Manifera's **Ship Safety App** work is a good illustration of why state manageme
 
 A "dumb UI, single source of truth" state layer is not an academic preference in this context — it is what makes the inspection data trustworthy. An officer working through a checklist of extinguishers, life rafts, and immersion suits needs the app's view of "device status" to always reflect the actual underlying record, not a stale or duplicated UI state left over from a partially-completed screen transition. That is the exact discipline described above: view components that render state rather than manage it themselves, so the equipment record stays internally consistent no matter how the inspection round is interrupted or resumed.
 
+### The Numbers Behind the Discipline
+
+This is not a stylistic preference; it is measurable market behavior. In Statista's global developer survey, Flutter is now used by roughly 46 percent of cross-platform mobile developers and React Native by about 35 percent, up from a combined minority position just a few years earlier — a sign that the industry itself has voted for frameworks that enforce a managed, unidirectional state layer rather than ad hoc DOM-style manipulation. Statista's data also shows that only around a third of mobile developers work in a cross-platform framework at all; the rest build natively, precisely because getting this discipline wrong on a shared codebase multiplies the blast radius of every architectural mistake across both platforms simultaneously.
+
+The cost of getting it wrong is well documented on the operations side too. Google publishes explicit "Android vitals" bad-behavior thresholds inside Play Console: an ANR rate above 0.47% of sessions or a crash rate above 1.09% is enough to suppress your app's visibility in the Play Store's own ranking and discovery algorithms — a direct, quantified link between the engineering discipline described above and commercial outcomes, not just user annoyance.
+
+## A Worked Example: How State Corruption Happens in the Field
+
+To make the state management argument concrete, walk through a scenario that is illustrative — not a real client engagement — but representative of the exact failure mode that untangled architecture invites in any checklist-driven, record-keeping mobile app.
+
+### The Scenario
+A field technician is halfway through a 40-item equipment checklist inside a mobile inspection app. They mark item 12 as "Passed," then their signal drops as they walk into a steel-hulled equipment room. The app appears to freeze for a moment before recovering.
+
+### The Failure Mode (Agency-Grade Architecture)
+In a codebase where the UI widget owns its own local state and talks directly to the network layer, three things go wrong simultaneously:
+1.  **Duplicate writes.** The "Passed" tap fired a network request that timed out client-side and silently retried, but the UI never learned whether the first request actually landed server-side. Both requests eventually succeed, and depending on request ordering, item 12 briefly reverts to "Pending" before flipping back.
+2.  **Orphaned UI state.** The screen the technician is looking at was rendered from a local variable set at the moment of the tap. It never subscribed to a single canonical state object, so it still shows "Passed" even during the brief window where the server disagrees.
+3.  **Silent data loss on backgrounding.** If the OS kills the app process to reclaim memory while it's backgrounded (common on budget Android devices with 3-4GB RAM), the local variable — which was never persisted to a durable store — is gone. The technician reopens the app to find item 12 blank again.
+
+### The Fix (Managed State Architecture)
+With a unidirectional state layer, the UI never owns truth — it only renders a projection of it. The tap dispatches a single event to a state controller (BLoC, Redux, or equivalent). That controller, and only that controller, owns the canonical "item 12 status" value, persists it to local storage synchronously before attempting the network write, and exposes it to the UI as an observable stream. If the network call fails or duplicates, the controller's idempotency check (a request ID, not a raw "did this succeed" boolean) reconciles the outcome without ever presenting the technician with two different answers. When the OS reclaims the process, the persisted value survives because it was never only living in a transient widget variable to begin with.
+
+The difference between these two outcomes is not a matter of talent — a competent developer can write either pattern. It is a matter of whether the engineering organization mandates the pattern before the first screen is built, which is exactly the governance role Amsterdam plays in the Hybrid Hub model described above.
+
 ## Technical Comparison: Standard Agency vs. Autonomous Pod
 
 | Engineering Metric | Standard Mobile Agency | Manifera Autonomous Pod |

@@ -50,14 +50,13 @@ Building AI safely requires an uncompromising blend of legal data governance and
 *   **Amsterdam (Strict Governance):** AI carries profound legal risks (GDPR, EU AI Act). Our Dutch headquarters ensures that the overarching architectural blueprint mathematically prohibits data exfiltration and enforces strict PII (Personally Identifiable Information) redaction *before* data reaches any external LLM.
 *   **Vietnam (Deep Execution):** Our [offshore software development teams](https://www.manifera.com/services/offshore-software-development/) in Ho Chi Minh City are not superficial web coders. They are elite Autonomous Pods capable of building decoupled data ingestion pipelines, managing complex vector embeddings, and deploying secure AI microservices using the Strangler Fig pattern.
 
-### Case Study: B2B Scaling with Vodafone Marketplace
+### Case Study: Real Systems Integration, Not a Templated Storefront — Vodafone Fiji
 
-Consider our work with **Vodafone Marketplace**. When building an expansive, data-heavy eCommerce portal, relying on superficial "smart" search plugins would have collapsed under B2B scale. 
+**Vodafone Fiji** — the Fijian operating company within the Vodafone group, distinct from Vodafone's global consumer business — selected Manifera to develop and launch **vitikart.com.fj**, an online marketplace built on Magento and integrated with Vodafone Fiji's own cloud architecture.
 
-They required a [custom software development](https://www.manifera.com/services/custom-software-development/) partner capable of architecting deep data integrations that could parse complex vendor catalogs instantaneously. Our Autonomous Pod engineered a robust, decoupled backend architecture that ensured extreme data integrity and lightning-fast retrieval, laying the architectural foundation required for any advanced algorithmic integration.
+Standing up a marketplace on top of a telco's existing cloud infrastructure is not a drag-and-drop platform install. It requires the same discipline this article argues elite AI engineering also demands: genuine systems architecture work to connect a platform correctly into an organization's underlying infrastructure, rather than bolting on a generic off-the-shelf tool and hoping the integration holds under real traffic. Vodafone Fiji needed a partner who could build and operate inside their specific cloud environment — not a vendor selling a templated storefront and calling the integration done.
 
-> *"Manifera's deep comprehension of data architecture allowed us to build a highly scalable marketplace infrastructure that off-the-shelf plugins could never support."*
-> — **[Enterprise Architect, Vodafone Marketplace]**
+That is the same distinction this article draws between "API Wrapping" and real AI engineering: properly connecting a system into the infrastructure it has to live in, versus wrapping a superficial layer on top of it and shipping the demo.
 
 ## TCO Comparison: The API Wrapper vs. True Engineering
 
@@ -67,6 +66,28 @@ They required a [custom software development](https://www.manifera.com/services/
 | **Security Posture** | High Risk (RBAC bypassing) | Absolute (Hardcoded semantic access controls) |
 | **OpEx Token Costs** | Massive (Dumping raw data into context) | Optimized (Semantic caching & chunking) |
 | **Hallucination Rate** | High (No contextual grounding) | Near-Zero (Mathematically constrained answers) |
+
+## What the Research Says About Why "Fake AI Agencies" Fail
+
+The API-wrapping problem this article describes is not an anecdote — it shows up consistently in independent research on enterprise AI failure. A 2024 Forrester Research survey of 500 enterprise data leaders found that 73% identified data quality and completeness as the primary barrier to AI success, ranking it above model accuracy, compute costs, and talent shortages combined. A separate global study conducted by Forrester Consulting found that only 26% of enterprises have successfully operationalized AI, with data silos and integration problems cited as the primary obstacles — the exact gap an "API Wrapping" vendor papers over instead of solving.
+
+The DORA (DevOps Research and Assessment) State of DevOps research tells a related story from the delivery side. Its 2024 and 2025 reports both found that AI adoption boosts individual productivity and throughput, but is also consistently associated with *decreased* software delivery stability — teams ship faster, but the underlying systems they are shipping into were never built to safely absorb that speed. An agency that wires a chatbot onto a raw database is accelerating exactly the part of the system that was never engineered to take the load.
+
+### A Worked Example: What "Production-Ready" Actually Requires
+
+Here is an illustrative breakdown of the engineering steps a "fake AI agency" API-wrapping approach skips, versus what a properly architected RAG deployment covers, for a typical mid-sized enterprise knowledge system. This is a representative example, not a project specification for any named client.
+
+| Engineering Step | API-Wrapping Shortcut | Proper RAG Architecture |
+| :--- | :--- | :--- |
+| Connecting to source data | Point the LLM directly at raw exports | Structured ingestion pipeline with cleansing and chunking |
+| Controlling what the model sees | Entire documents or database dumps in the prompt | Vector search returns only the relevant, permissioned chunks |
+| Access control | None — whatever the LLM can reach, any user can ask about | RBAC enforced at the retrieval layer, before the LLM sees anything |
+| Cost behavior under load | Scales linearly (or worse) with document size and query volume | Scales with actual distinct information need, via caching and retrieval limits |
+| What happens when data changes | Prompted context grows stale until someone notices | Ingestion pipeline re-embeds the change automatically |
+
+Each row in the right column is a genuine engineering decision that has to be made deliberately. Each row in the left column is what happens by default when nobody makes that decision — which is exactly how a five-line API integration turns into the "catastrophic data breach and a massive monthly bill" this article opened with.
+
+None of these five decisions are visible in a sales demo. A wrapped API and a properly architected RAG system can look identical in a ten-minute walkthrough with hand-picked prompts, because a demo never runs long enough to hit the missing access control, never grows the document set large enough to expose the unoptimized retrieval, and never touches the change management workflow that reveals whether the underlying data pipeline actually keeps pace with reality. The gap only becomes visible in production, under real query volume, real permission boundaries, and real data churn — by which point the contract is already signed and the invoice is already recurring.
 
 ## The Evaluation Gap: How Do You Prove the AI Actually Works?
 
