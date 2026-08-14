@@ -47,6 +47,12 @@ In a Headless architecture, the "Frontend" (what the user sees) is completely, p
 
 Because the code is 100% custom and open-source, you own the intellectual property entirely. If your dashboard is slow, your engineers have the physical access required to drop down to the database level and write a heavily optimized, raw SQL `JOIN` or implement a Redis caching layer. You are not trapped in a proprietary visual editor. Furthermore, because it is headless, you can build a web app today, and reuse the exact same backend API to power a native iOS mobile app next year, without rewriting the core business logic. You trade the illusion of initial speed for the reality of infinite, mathematically sound scalability.
 
+### The Scale of the Problem, in Real Numbers
+
+This is not a fringe concern. Gartner has forecast that by 2025, 70% of new applications developed by enterprises would use or embed low-code or no-code technologies, up from less than 25% in 2020 — meaning the majority of new enterprise software built in the last few years was assembled, at least partly, on top of an abstraction layer the buyer does not own. That volume is precisely why the scaling wall matters at a portfolio level, not just for the occasional unlucky project: a meaningful share of the applications enterprises are shipping today are structurally exposed to the exact failure mode this article describes.
+
+The general track record of software delivery makes the stakes even clearer. The Standish Group's 2024 CHAOS Report, based on tracking more than 50,000 projects, found that only 29% of software projects are delivered successfully (on time, on budget, with the required features), 52% are "challenged" (late, over budget, or missing scope), and 19% are outright cancelled. The same report found that projects run with disciplined, iterative methodology succeed at roughly 64%, compared to 49% for rigid, waterfall-style delivery — a reminder that the *process* wrapped around the code matters as much as the code itself. A Low-Code platform does not fix that underlying delivery discipline problem; it just moves where the risk shows up, from the build phase to the scale phase.
+
 ## The Hybrid Hub: Engineering Scalable Foundations
 
 At Manifera, we build applications designed for decade-long survival by engineering code-first Headless architectures through our **Hybrid Hub**.
@@ -58,10 +64,7 @@ At Manifera, we build applications designed for decade-long survival by engineer
 
 A highly funded European logistics startup used a massive enterprise Low-Code platform to build their initial driver-tracking application. As they expanded to 5,000 drivers, the platform's proprietary database structure completely collapsed under the weight of real-time GPS coordinates. The application crashed daily, and the Low-Code vendor demanded a $250,000 licensing upgrade just to add more compute power, without actually fixing the underlying database inefficiency.
 
-They engaged Manifera's Amsterdam architects for a desperate rescue. We initiated a "Strangler Fig" extraction. While the unstable Low-Code app was still running, our Vietnamese Pods built a custom, headless Node.js/PostgreSQL backend in parallel. We specifically optimized the database to handle high-frequency geospatial data. We then built a custom React Native mobile app for the drivers. Over 8 weeks, we surgically migrated the drivers to the custom app. The crashes stopped instantly. The $250,000 vendor license was terminated. The startup finally owned their own technology stack.
-
-> *"We thought Low-Code was a shortcut, but it was actually a straightjacket. When we tried to scale, the platform suffocated our business. Manifera ripped out the proprietary mess and built us a true, code-first headless architecture. Our app is lightning fast, and we finally own our IP."*
-> — **[CTO, European Logistics Startup]**
+They engaged Manifera's Amsterdam architects for a desperate rescue. We initiated a "Strangler Fig" extraction. While the unstable Low-Code app was still running, our Vietnamese Pods built a custom, headless Node.js/PostgreSQL backend in parallel. We specifically optimized the database to handle high-frequency geospatial data. We then built a custom React Native mobile app for the drivers. Over 8 weeks, we surgically migrated the drivers to the custom app. The crashes stopped instantly. The $250,000 vendor license was terminated. The startup finally owned their own technology stack — the same rescue pattern we run whenever a growth-stage company discovers, usually the hard way, that the platform which got them to launch cannot carry them past it.
 
 ## Architecture Comparison: 'Low-Code' vs. Custom Headless Pod
 
@@ -76,6 +79,16 @@ They engaged Manifera's Amsterdam architects for a desperate rescue. We initiate
 ## The Economics of the Platform Rewrite
 
 The financial math of building applications must factor in the "Cost of the Inevitable Rewrite." If you spend $50,000 building an MVP on a Low-Code platform, you will inevitably hit the scaling wall at around $2M in ARR. At that exact moment—when your company is growing the fastest—you will be forced to spend $250,000 and 6 months of engineering time to completely rewrite the application from scratch in custom code. By investing in a custom, code-first Headless architecture from Day 1, you avoid the rewrite tax entirely. You pay slightly more upfront to ensure that your technology foundation is a permanent asset, not a disposable prototype.
+
+### A Worked Illustration: Two Five-Year Paths from the Same MVP
+
+Consider a purely illustrative comparison of two hypothetical B2B SaaS companies that both start with the identical MVP scope and budget.
+
+**Company A** builds on a Low-Code platform for $50,000 and launches in eight weeks. Growth is strong. By the time the company crosses roughly 10,000 active users, per-row and per-workflow platform pricing has quietly turned into a five- or six-figure annual line item, database performance is degrading on core screens, and no engineer on staff has the low-level access needed to fix it. Somewhere near $2M in ARR — the point at which the business can least afford a distraction — the company pays for a full rebuild: engineering time, a parallel migration, and months of feature-roadmap opportunity cost, on top of the original platform spend it now has to walk away from.
+
+**Company B** builds the same MVP scope on a custom, headless Node.js/PostgreSQL foundation from day one. The initial build costs more than Company A's low-code sprint and takes a few weeks longer to reach launch. But there is no scaling wall to hit: the same codebase that served the first 100 users, with straightforward, incremental optimization (indexing, caching, query tuning) as traffic grows, serves the 100,000th. The engineering spend that Company A eventually pours into an emergency rewrite, Company B instead spends on new features and market expansion, compounding for years instead of being erased in a single rebuild quarter.
+
+The lesson is not that Low-Code is worthless — it is a legitimate tool for validating an idea with no users yet. The lesson is that the "fast and cheap" MVP decision is really a decision about *when*, not *whether*, you pay for a proper architecture — and paying early is reliably cheaper than paying during a growth spurt you cannot afford to interrupt.
 
 ## Eradicate Vendor Lock-In Today
 

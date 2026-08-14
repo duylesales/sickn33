@@ -58,10 +58,7 @@ At Manifera, we protect our enterprise clients from accessibility liabilities by
 
 A major European retailer was expanding into the US market and received warning from their legal team that their primary E-Commerce web app was entirely non-compliant with ADA standards. The original **website development companies** they had hired over the years had completely ignored accessibility.
 
-They engaged Manifera's Amsterdam leadership for an emergency remediation. We couldn't rewrite the massive application from scratch, so our Vietnamese Pod executed a surgical retrofit. First, we integrated Axe-core into their CI/CD pipeline to stop the bleeding (ensuring no *new* inaccessible code could be deployed). Then, we systematically worked through the backlog of accessibility failures. We replaced hundreds of non-semantic `<div>` elements with proper `<nav>`, `<main>`, and `<button>` tags. We mapped complex dynamic interactions with proper ARIA states (`aria-expanded`, `aria-hidden`). Within 8 weeks, the application achieved WCAG 2.1 AA compliance, eliminating the lawsuit threat and opening their platform to millions of new users.
-
-> *"We had no idea our website was a massive legal liability until our lawyers flagged it. The agency that built it completely ignored accessibility. Manifera didn't just fix the code; they built automated testing into our pipeline so we can never accidentally push non-compliant code again. They secured our business."*
-> — **[General Counsel, Global Retailer]**
+They engaged Manifera's Amsterdam leadership for an emergency remediation. We couldn't rewrite the massive application from scratch, so our Vietnamese Pod executed a surgical retrofit. First, we integrated Axe-core into their CI/CD pipeline to stop the bleeding (ensuring no *new* inaccessible code could be deployed). Then, we systematically worked through the backlog of accessibility failures. We replaced hundreds of non-semantic `<div>` elements with proper `<nav>`, `<main>`, and `<button>` tags. We mapped complex dynamic interactions with proper ARIA states (`aria-expanded`, `aria-hidden`). Within 8 weeks, the application achieved WCAG 2.1 AA compliance, eliminating the lawsuit threat and opening their platform to millions of new users. This kind of scenario is increasingly common: legal and compliance teams discover the exposure only after a demand letter arrives, and the fastest path back to safety is a governed pod that can retrofit foundational components without a ground-up rebuild.
 
 ## Compliance Comparison: 'Visual Agency' vs. Governed Pod
 
@@ -73,9 +70,34 @@ They engaged Manifera's Amsterdam leadership for an emergency remediation. We co
 | **Code Structure** | Non-semantic (Div soup) | Strict Semantic HTML & ARIA |
 | **Cost of Compliance** | Expensive retrofits after a lawsuit | Near zero (Baked into daily workflow) |
 
+## What the Data Actually Shows: The Litigation Surge Is Real
+
+This is not a theoretical risk that agencies invoke to sell audits. The numbers are trending sharply in the wrong direction, on both the supply side (how broken most websites are) and the demand side (how aggressively that brokenness is being litigated).
+
+**The web is getting less accessible, not more.** The 2026 WebAIM Million report — an annual automated scan of the top one million home pages, published by the WebAIM accessibility research group at Utah State University — found that 95.9% of home pages had at least one detectable WCAG 2 failure, up from 94.8% the prior year. This marked the first year-over-year regression after six consecutive years of gradual improvement. The average home page now carries 56.1 distinct accessibility errors, a 10.1% increase over the previous year's average of 51. The same six failure categories have topped the list for seven straight years running: low contrast text (83.9% of pages), missing alternative text on images (53.1%), missing form input labels (51%), empty links (46.3%), empty buttons (30.6%), and missing document-language declarations (13.5%). These are not exotic edge cases. They are the basic, well-documented failures that automated tooling catches in seconds — which is precisely why an agency that ships them at scale is not merely unlucky, but negligent.
+
+**Litigation is accelerating in step.** According to Seyfarth Shaw's annual ADA Title III tracking (published via adatitleiii.com), plaintiffs filed 3,117 website accessibility lawsuits in U.S. federal court in 2025 — a 27% increase over 2024's total of 2,452, and the highest annual count since 2022. Website accessibility cases now account for roughly 36% of all ADA Title III federal filings. Seyfarth Shaw's analysis also notes that self-represented plaintiffs filed 40% more federal ADA and Fair Housing Act cases in 2025 than in 2024, a jump the firm attributes in part to AI-assisted legal drafting lowering the cost of filing a claim. And federal filings are only the visible tip: for every lawsuit that reaches a docket, defense counsel report handling many more demand letters that get resolved privately and never appear in any public count.
+
+**The financial exposure compounds quickly.** Industry legal-cost trackers report that out-of-court ADA website settlements average around $30,000 and can reach $150,000, while court judgments average roughly $85,000; when you add attorney fees, mandated remediation, and monitoring costs, the fully-loaded cost of a single case commonly lands between $45,000 and $270,000. Class-action exposure is a different order of magnitude entirely, with settlements that have exceeded $6 million.
+
+**And the addressable-market argument still holds.** The World Health Organization estimates that 1.3 billion people — roughly 16% of the global population — live with a significant disability. An inaccessible checkout flow or account portal isn't just a legal liability; it is a standing decision to make your product unusable for one in six potential customers.
+
+### The Compounding Cost of Fixing It Late
+
+There is a well-established engineering-economics reason why retrofitting is so much more expensive than building it right the first time. Barry Boehm's foundational research in *Software Engineering Economics* (1981), based on defect data from TRW, IBM, and Bell Labs projects, found that the cost of finding and fixing a defect after release can run up to 100 times more than fixing the same defect during the requirements and design phase — a ratio that later replication studies have shown varies by project type but consistently escalates by roughly an order of magnitude per phase. Accessibility defects follow the identical curve. An `aria-label` added while a component is first being written costs a developer thirty seconds. The same fix, applied after the component has been copy-pasted into forty other screens across an 18-month-old production application, requires a full regression-tested retrofit project — which is exactly the $30,000–$270,000 exposure described above, before you've even fixed the underlying product.
+
+**A simplified illustrative comparison:** imagine two identical enterprise web applications, each with roughly 120 interactive UI components (buttons, forms, modals, navigation).
+
+| Approach | When Accessibility Is Addressed | Approximate Cost |
+| :--- | :--- | :--- |
+| **Built-in from day one** | Axe-core in CI/CD from the first commit; semantic HTML enforced at code review | A few extra minutes per component; near-zero marginal cost |
+| **Retrofitted after an 18-month build** | Post-launch, reactive, usually triggered by a demand letter | Weeks of audit + remediation engineering, plus $30,000–$270,000+ in legal exposure if a suit has already been filed |
+
+The gap isn't cosmetic. It is the difference between accessibility being a design constraint your engineers absorb as part of normal work, versus accessibility becoming a standalone, high-pressure remediation project run under legal supervision with a clock already ticking.
+
 ## The Economics of Inclusive Engineering
 
-The financial argument for accessibility is usually framed around avoiding lawsuits (which average $50,000 to $100,000 in settlements). However, the true economic penalty is lost revenue. Approximately 15% of the global population experiences some form of disability. If your web application is incompatible with screen readers or keyboard navigation, you are actively blocking 15% of the market from handing you their money. By investing in an architecture governed by automated accessibility testing, you are not just buying an insurance policy against ADA lawsuits; you are mathematically expanding your Total Addressable Market (TAM) and ensuring your software can capture revenue from every possible user.
+The financial argument for accessibility is usually framed around avoiding lawsuits. However, the true economic penalty is lost revenue. If your web application is incompatible with screen readers or keyboard navigation, you are actively blocking a meaningful share of the market — an estimated 16% of the world's population, per the WHO — from handing you their money. By investing in an architecture governed by automated accessibility testing, you are not just buying an insurance policy against ADA and EAA lawsuits; you are mathematically expanding your Total Addressable Market (TAM) and ensuring your software can capture revenue from every possible user.
 
 ## Eradicate Your Compliance Risk Today
 

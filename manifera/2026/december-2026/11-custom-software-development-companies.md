@@ -47,6 +47,12 @@ The C4 Model is a standardized way to diagram software architecture, much like G
 
 Furthermore, we enforce Domain-Driven Design (DDD) at the code level. Variables are not named `x` or `dataObj`. They are named `calculate_logistics_tax_rate`. We enforce strict AST (Abstract Syntax Tree) linting in our CI/CD pipelines. If a developer attempts to merge code that lacks standardized JSDoc/TSDoc comments, the pipeline physically rejects the code. By the time the software is delivered, it is so transparently documented that a newly hired engineer can understand the entire system architecture in under 4 hours. 
 
+### The Research Behind the Discipline
+
+This is not just craftsmanship for its own sake; it is a documented, industry-wide financial pattern. The Consortium for Information & Software Quality (CISQ) estimated that the accumulated cost of technical debt in the US alone reached roughly $1.52 trillion in 2022 — the direct, measurable cost of rework caused by exactly the kind of undocumented, tangled code an agency can weaponize as informal vendor lock-in. Separately, Stripe's Developer Coefficient research found that engineers lose an average of 17.3 hours per week, roughly 42% of a standard work week, to technical debt and bad code rather than new development, a pattern that compounds every quarter a codebase goes undocumented.
+
+The relationship between engineering discipline and delivery outcomes is also well established through years of DORA (DevOps Research and Assessment) research, the long-running academic and industry study behind the "Accelerate" body of work. DORA's research consistently finds that elite-performing engineering teams — those with disciplined testing, small well-documented changes, and trunk-based development — deploy far more frequently, recover from incidents in under an hour, and sustain low change-failure rates, while low-performing teams (typically those working against tangled, undocumented codebases) take weeks to ship a change and just as long to recover from one. Architectural transparency is not a nice-to-have; it is the single largest lever separating teams that ship confidently from teams that are afraid to touch their own code.
+
 ## The Hybrid Hub: Engineering Absolute Transparency
 
 At Manifera, we build software designed to be handed over by engineering absolute transparency through our **Hybrid Hub**.
@@ -58,10 +64,7 @@ At Manifera, we build software designed to be handed over by engineering absolut
 
 A rapidly growing European E-Commerce brand was held hostage by their original development agency. The agency charged them $15,000 every time they wanted a minor feature added to their custom checkout flow, citing "extreme code complexity." The brand's CTO knew they were being extorted but couldn't fire the agency because the codebase was a monolithic, undocumented nightmare.
 
-They engaged Manifera's Amsterdam architects for a "Strangler Fig" extraction. We couldn't rewrite the whole app instantly, so our Vietnamese Pod surgically intervened. We built an API gateway in front of the legacy code. We slowly extracted the core business logic (like the Checkout and Inventory systems) out of the legacy spaghetti and rebuilt them as perfectly documented, C4-modeled microservices using strict TypeScript. Within 6 months, the core IP was entirely under Manifera's transparent architecture. The brand fired the legacy agency, hired two internal developers who read our exhaustive documentation, and took full control of their product roadmap.
-
-> *"We paid for custom software, but we didn't own it until Manifera stepped in. The previous agency used bad code to lock us in. Manifera rebuilt our core systems with such incredible documentation and architectural clarity that we finally have true ownership of our intellectual property."*
-> — **[Chief Technology Officer, E-Commerce Brand]**
+They engaged Manifera's Amsterdam architects for a "Strangler Fig" extraction. We couldn't rewrite the whole app instantly, so our Vietnamese Pod surgically intervened. We built an API gateway in front of the legacy code. We slowly extracted the core business logic (like the Checkout and Inventory systems) out of the legacy spaghetti and rebuilt them as perfectly documented, C4-modeled microservices using strict TypeScript. Within 6 months, the core IP was entirely under Manifera's transparent architecture. The brand fired the legacy agency, hired two internal developers who read our exhaustive documentation, and took full control of their product roadmap — the same extraction pattern that plays out whenever a business finally decides the retainer fees are no longer worth the alternative of staying trapped.
 
 ## Vendor Comparison: 'Blackmail' Agency vs. Transparent Pod
 

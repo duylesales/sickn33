@@ -53,10 +53,7 @@ Manifera was brought in for a secure modernization. Our Amsterdam architects for
 
 We implemented the Strangler Fig pattern. Our Dutch team set up an event-streaming architecture (Kafka) to safely duplicate read-only transaction data from the legacy core into a modern, isolated cloud database. 
 
-Our Vietnamese Pod then built the highly innovative AI analysis engine on top of this isolated cloud database. The innovation was massive, the speed was rapid, and the legacy core was entirely untouched and secure. 
-
-> *"We were paralyzed. We needed to innovate fast, but our legacy system was a house of cards. Manifera’s Hybrid Hub provided the perfect solution. Their Dutch architects built a safe 'sandbox' around our legacy core, and their Vietnamese team built state-of-the-art AI features at incredible speed. They delivered startup innovation with banking-grade security."*  
-> — **Head of Innovation, European Bank**
+Our Vietnamese Pod then built the highly innovative AI analysis engine on top of this isolated cloud database. The innovation was massive, the speed was rapid, and the legacy core was entirely untouched and secure. This is an illustrative scenario, but it reflects the exact tension every regulated institution faces when a board demands visible AI innovation on top of a system nobody is willing to risk touching directly.
 
 ## Frantic Bolt-Ons vs. Manifera Secure Innovation
 
@@ -68,11 +65,31 @@ Our Vietnamese Pod then built the highly innovative AI analysis engine on top of
 | **R&D Economics** | Expensive debugging of legacy conflicts. | Pure investment in new feature generation. |
 | **Execution** | Done by stressed internal teams maintaining the old system. | Executed by dedicated, high-velocity Vietnamese Pods. |
 
+## What the Data Shows: Rushed AI Innovation Has a Price Tag
+
+The opening scenario of this article — a rushed LLM integration exposing a legacy database — is not a hypothetical worst case invented for dramatic effect. It maps directly onto the two most current, authoritative sources tracking AI-related security risk.
+
+- **Prompt injection is the industry's own consensus #1 risk for LLM-integrated systems.** OWASP's Top 10 for LLM Applications (2025 edition) ranks Prompt Injection as LLM01 — the single highest-priority risk — for the second consecutive edition of the report. The mechanism is structural, not a vendor-specific bug: LLMs process instructions and untrusted data through the same channel, so a model frequently cannot distinguish "content to analyze" from "a new instruction to follow," which is exactly the failure mode that let the fictional attacker in this article's opening scenario pivot from the AI layer into the legacy database.
+- **Ungoverned AI tooling is now one of the three costliest breach factors, measured.** IBM's 2025 Cost of a Data Breach Report found that "shadow AI" — unsanctioned or ungoverned generative AI tools and integrations deployed without a security review — added an average of USD 670,000 to the cost of a breach compared to organizations with low or no shadow AI exposure, and that 20% of breached organizations were compromised specifically through a shadow AI pathway. The report explicitly frames this as a governance gap, not an AI capability gap: the risk comes from bolting AI onto systems without the architectural review that would normally gate a new integration.
+
+Read together, these two sources describe exactly the trap the Strangler Fig pattern is designed to prevent: prompt injection is a known, top-ranked, structural risk, and skipping governance to integrate AI quickly is a measured, six-figure liability per incident — not a theoretical one.
+
 ## The Economics: The ROI of Quarantined Risk
 
 True innovation in software requires the freedom to fail. If an experimental feature takes down your entire enterprise application, you will stop innovating. 
 
 By utilizing Manifera's Hybrid Hub, you drastically lower the financial and operational risk of R&D. Our European architects construct the safe perimeter, allowing our highly economical Vietnamese engineering pods to build, test, and discard experimental features rapidly. You achieve the high-velocity innovation required to beat your competitors, without ever risking the Total Cost of Ownership (TCO) of your core business engine.
+
+To make the risk-quarantine argument concrete, consider an illustrative comparison of two paths to the same AI feature:
+
+| Risk Factor (illustrative) | Frantic Bolt-On (direct LLM-to-legacy-DB integration) | Strangler Fig / Isolated Microservice |
+| :--- | :--- | :--- |
+| Exposure to prompt injection (OWASP LLM01, the #1 ranked LLM risk) | Direct — the LLM has a path to the legacy database | Contained — the microservice only ever sees a read-only, isolated data replica |
+| Blast radius if the AI layer is compromised | The entire legacy core, and every system connected to it | A single, disposable container with no write access to production data |
+| Cost exposure if a breach occurs via ungoverned AI tooling | Consistent with IBM's 2025 finding of a ~USD 670,000 average cost premium for shadow-AI-linked breaches | Materially reduced — the isolated architecture removes the direct attack path the premium is measured against |
+| Time to safely kill the feature if it underperforms or is found risky | Difficult — the integration is entangled with core logic | A configuration change at the API gateway |
+
+The point of this comparison is not that the isolated path is free of risk — nothing connected to an LLM is. It is that the isolated path converts an open-ended, core-system liability into a bounded, contained one, which is precisely the distinction between "innovating fast" and "innovating recklessly."
 
 ## Innovation Accounting: Kill Criteria Before You Build
 
@@ -112,6 +129,9 @@ A "big bang" rewrite of a legacy system is a massive, high-risk CAPEX bet that f
 
 ### (Scenario: Head of Innovation justifying R&D spend to the board) How do you decide when to kill an experimental feature instead of letting it drag on?
 We define pre-agreed kill criteria before the pilot ever launches: a fixed 6-to-8 week window, a specific success metric like weekly engagement rate, and a written threshold for failure. Because the feature is an isolated microservice behind the API gateway, killing it is a simple configuration change, not a risky extraction from the core.
+
+### (Scenario: CISO evaluating AI integration risk) Is prompt injection a real, ranked security risk, or is that AI hype?
+It is the industry's own consensus top risk. OWASP's Top 10 for LLM Applications (2025 edition) ranks Prompt Injection as LLM01, the single highest-priority risk, for the second consecutive edition of the report. It is structural: LLMs process instructions and untrusted data through the same channel and often cannot reliably tell them apart, which is exactly why Manifera never lets an LLM touch legacy systems directly.
 
 <script type="application/ld+json">
 {
@@ -164,6 +184,14 @@ We define pre-agreed kill criteria before the pilot ever launches: a fixed 6-to-
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "We define kill criteria before the pilot launches: a fixed 6-to-8 week window, a specific success metric, and a written failure threshold. Because the feature is an isolated microservice, killing it is a simple configuration change, not a risky extraction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "(Scenario: CISO evaluating AI integration risk) Is prompt injection a real, ranked security risk, or is that AI hype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the industry's own consensus top risk. OWASP's Top 10 for LLM Applications (2025 edition) ranks Prompt Injection as LLM01, the highest-priority risk, for the second consecutive edition. LLMs process instructions and untrusted data through the same channel and often cannot reliably tell them apart, which is why Manifera never lets an LLM touch legacy systems directly."
       }
     }
   ]
