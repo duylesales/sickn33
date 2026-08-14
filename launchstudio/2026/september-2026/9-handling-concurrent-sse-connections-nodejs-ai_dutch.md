@@ -1,90 +1,100 @@
 ---
-Titel: 10k Gelijktijdige SSE-Verbindingen Afhandelen voor AI in Software Engineering
-Trefwoorden: ai in saas, ai uitrol, ai native, ai app bouwen, ai code ontwikkeling, ai infrastructuur, coderen met ai, ai software engineering
-Koperfase: Bewustwording
+Titel: "10.000 Gelijktijdige SSE-Verbindingen Beheren in Node.js voor AI Software Engineering"
+Trefwoorden: AI in SaaS, AI deployment, AI-native, AI app bouwen, AI code ontwikkeling, AI infrastructuur, coderen met AI, AI software engineering, LaunchStudio, Manifera
+Koperfase: Bewustzijn
 ---
 
-# 10k Gelijktijdige SSE-Verbindingen Afhandelen voor AI in Software Engineering
+# 10.000 Gelijktijdige SSE-Verbindingen Beheren in Node.js voor AI Software Engineering
 
-Om een B2B AI-product te bouwen dat magisch voelt, moet u het LLM-antwoord woord-voor-woord naar de gebruikersinterface streamen met behulp van Server-Sent Events (SSE). Dit "tikmachine-effect" bewijst dat het systeem werkt en brengt de waargenomen latentie terug tot vrijwel nul. Architectonisch gezien is SSE kuitenkin een tikkende tijdbom. Het gelijktijdig openhouden van duizenden langlopende HTTP-verbindingen zal het geheugen en de verbindingspools van uw Node.js-server uitputten, wat catastrofale crashes veroorzaakt tijdens verkeerspieken. De meeste oprichters die een Bolt-, Lovable- of Cursor-prototype uitrollen, testen dit pad nooit voorbij een handjevol gelijktijdige gebruikers — wat precies het moment is waarop het breekt voor een echte klant.
+Om een B2B AI-product te bouwen dat natuurlijk en direct aanvoelt, is het essentieel om LLM-antwoorden woord voor woord naar de gebruikersinterface te streamen via Server-Sent Events (SSE). Dit typemachine-effect bewijst dat het systeem actief is en verlaagt de ervaren wachttijd naar nagenoeg nul. Architecturaal vormt SSE echter een aanzienlijke uitdaging. Het gelijktijdig openhouden van duizenden langdurige HTTP-verbindingen put het geheugen en de verbindingspools van uw Node.js-server snel uit, wat leidt tot servercrashes tijdens verkeerspieken. Veel founders die met Bolt, Lovable of Cursor een prototype ontwikkelen, testen dit pad zelden met meer dan een handvol gelijktijdige gebruikers.
 
-## Het Probleem van Uitgeputte Verbindingspools
+## Het Probleem van Verbindingsuitputting (Connection Pool Exhaustion)
 
-Traditionele REST API's zijn van korte duur. Een gebruiker vraagt een dashboard aan, de Node-server bevraagt de database, retourneert de JSON en sluit de verbinding binnen 50 milliseconden. Een enkele server kan duizenden van deze razendsnelle verzoeken verwerken omdat elk verzoek een socket slechts een fractie van een seconde bezet.
+Traditionele REST API's zijn kortstondig: een client vraagt data op, de server raadpleegt de database, stuurt JSON terug en sluit de verbinding binnen 50 milliseconden. Een enkele server kan duizenden van deze snelle verzoeken parallel afhandelen.
 
-SSE-verbindingen zijn permanent. Als een LLM 30 seconden nodig heeft om een complex contract te genereren, moet de Node-server die exacte HTTP-verbinding de volle 30 seconden openhouden in het geheugen — het responsobject, de geassocieerde verzoekcontext en alle closures die erin naar verwijzen blijven aanwezig in de V8 heap. Als 10.000 gebruikers tegelijkertijd op "Genereren" klikken, probeert de server 10.000 open TCP-verbindingen vast te houden. Node loopt dan snel tegen zijn maximale limiet van open file descriptors aan — standaard doorgaans 1.024 op Linux (`ulimit -n`), hoewel veel productie-images dit verhogen naar 65.536 — of uitput de standaard HTTP-agent `maxSockets`-instelling, of raakt simpelweg zonder heap-geheugen naarmate de gecachte status van elke verbinding accumuleert. Elk van deze foutmodussen laat de gehele instantie crashen, waardoor de sessie van elke andere gebruiker wordt neergehaald.
+SSE-verbindingen zijn daarentegen langdurig en persistent. Als een LLM 30 seconden nodig heeft om een complex contract te genereren, moet de Node.js-server die HTTP-verbinding 30 seconden lang in het V8-geheugen vasthouden. Wanneer 10.000 gebruikers gelijktijdig een prompt starten, bereikt Node.js snel de limiet van het aantal open bestandsdescriptors (standaard vaak 1.024 op Linux) of raakt de heap-geheugencapaciteit uitgeput. Dit leidt tot een complete servercrash die alle actieve sessies tegelijkertijd verbreekt.
 
-## Ontkoppeling via Redis Pub/Sub
+## Ontkoppelen via Redis Pub/Sub
 
-U kunt niet dezelfde server-thread die de zware OpenAI API-call beheert ook de SSE-stream naar de client laten beheren — dat koppelt uw schaalmodel voor "goedkope, I/O-gebonden streaming" aan uw schaalmodel voor "kostbare, CPU- en netwerkgebonden LLM-calls", waardoor u beide over-provisioneert. U moet de architectuur ontkoppelen met behulp van Redis Pub/Sub (Publish/Subscribe), of een equivalent zoals NATS of een beheerde wachtrij zoals AWS SQS gekoppeld aan ElastiCache.
+U kunt de serverthread die de zware OpenAI API-aanroep beheert niet tegelijkertijd belasten met het onderhouden van duizenden open SSE-verbindingen. De oplossing is het ontkoppelen van de architectuur met **Redis Pub/Sub** (Publish/Subscribe):
 
-**De Schaalbare Workflow:**
+1. **Clientverbinding:** De gebruiker maakt via SSE verbinding met een lichte, dedicated streaming-server en abonneert zich op een uniek `Channel ID` (UUID).
+2. **Taakdelegatie:** Het prompt-verzoek wordt doorgestuurd naar een achtergrond-worker (via BullMQ en Redis).
+3. **Token Publicatie:** De worker voert de trage LLM-aanroep uit en *publiceert* elk binnenkomend token direct naar het Redis-kanaal via `PUBLISH channel:uuid "token"`.
+4. **Lichte Doorgifte:** De streaming-server hoeft geen berekeningen uit te voeren; deze luistert via `SUBSCRIBE` naar het kanaal en stuurt de tokens direct door over de openstaande SSE-verbinding naar de browser.
 
-1. De gebruiker verbindt met een lichte "Streaming Server" via SSE, en abonneert zich op een uniek `Channel ID` (doorgaans een UUID gekoppeld aan het verzoek of gesprek).
-2. De prompt wordt naar een achtergrond "Worker Node" gestuurd (via BullMQ, ondersteund door Redis als de taakwachtrij).
-3. De Worker Node maakt de trage, zware verbinding met OpenAI of Anthropic. Naarmate de Worker tokens ontvangt uit de streaming API-respons, *Publiceert* deze die tokens direct naar het Redis `Channel ID` via `PUBLISH channel:uuid "token chunk"`.
-4. De Streaming Server, die absoluut geen zware rekenkracht uitvoert, abonneert zich simpelweg (`SUBSCRIBE`) op het kanaal en pusht de tokens via de open SSE-verbinding naar de client zodra ze binnenkomen.
+Met deze architectuur schaalt u de zware rekenkracht (zware workers met hoge time-outs) volledig onafhankelijk van de lichte streaming-servers (die uitsluitend duizenden lichte sockets openhouden).
 
-Deze architectuur stelt u in staat om de zware AI-reken-nodes (die meer CPU, langere time-outs en hogere OpenAI rate limit-budgetten nodig hebben) onafhankelijk te schalen van de lichte UI-streaming-nodes (die alleen veel inactieve sockets goedkoop open hoeven te houden). In de praktijk betekent dit dat een vloot van 3-4 krachtige worker-instanties een vloot van 10+ dunne streaming-instanties kan voeden die 10.000 gelijktijdige verbindingen afhandelen.
+## Load Balancers Configureren tegen Buffer-Vertraging
 
-## De Load Balancer Configureren
+Vaak hapert SSE niet in de applicatiecode, maar op de load balancer (zoals Nginx, AWS ALB of Cloudflare). Standaard load balancers bufferen responses: zij wachten tot de volledige payload binnen is voordat deze naar de client wordt doorgestuurd.
 
-Het schalen van SSE faalt vaak op de infrastructuurlaag, niet op de applicatielaag. Standaard Load Balancers (zoals Nginx of AWS Application Load Balancer) zijn ontworpen om antwoorden te "Bufferen". Ze wachten tot de server klaar is met het sturen van de volledige payload, of tot een bepaalde bufferomvang is bereikt, voordat ze het doorgeven aan de client.
+Hierdoor verdwijnt het typemachine-effect: de bezoeker staart 15 seconden naar een leeg scherm waarna de hele alinea in één keer verschijnt. U moet buffering op uw proxy expliciet uitschakelen:
+- Stel in Nginx `proxy_buffering off;` in en stuur de header `X-Accel-Buffering: no` mee.
+- Verhoog de time-outinstellingen (`proxy_read_timeout 300s;`), zodat trage generaties niet na 60 seconden stilzwijgend worden afgebroken.
+- Schakel automatische minificatie en proxy-buffering in Cloudflare uit voor streaming-routes.
 
-Als uw load balancer een SSE-stream meeneemt in de buffering, wordt het "tikmachine-effect" vernietigd. De gebruiker ziet 15 seconden een leeg scherm, en daarna verschijnt de hele alinea in één keer. U moet uw load balancer expliciet configureren om buffering uit te schakelen — in Nginx betekent dit het instellen van `proxy_buffering off;` en `X-Accel-Buffering: no` als respons-header — en time-outs voor verbindingen te verhogen (vaak het instellen van `proxy_read_timeout` op 300 seconden, aangezien de standaard 60-seconde Nginx time-out een trage stream halverwege de zin stilzwijgend zal afbreken). Op AWS ALB moet u aanvullend de idle timeout-attribuut verhogen tot boven de standaard 60 seconden, en als u achter Cloudflare zit, schakelt u "Auto Minify" en buffering op de betreffende route uit.
+## Verbindingen Netjes Afbreken (Graceful Connection Dropping)
 
-## Gecontroleerd Verbindingen Verbrikken
+Gebruikers zijn ongeduldig. Als een bezoeker op "Genereren" klikt en na 2 seconden het browsertabblad sluit, moet uw backend dat direct detecteren.
 
-Gebruikers zijn ongeduldig. Een gebruiker kan op "Genereren" klikken, 2 seconden wachten en vervolgens navigeren naar een andere pagina. Als de frontend de verbinding verbreekt, moet uw backend dit onmiddellijk opmerken.
+Als uw server de OpenAI API-aanroep op de achtergrond blijft voltooien, betaalt u voor tokens die door niemand worden gelezen. Implementeer daarom een `req.on('close')` eventlistener in Express gecombineerd met een `AbortController` in de LLM SDK-aanroep. Zodra de client de verbinding verbreekt, wordt de upstream API-aanroep onmiddellijk geannuleerd, wat onnodige tokenkosten voorkomt.
 
-Als uw Node-server doorgaat met het uitvoeren van de OpenAI API-call en het streamen van tokens in het niets nadat de gebruiker het tabblad heeft gesloten, verbrandt u kostbare API-credits voor een spook — en op schaal telt dit op tot een aanzienlijke post op uw OpenAI-factuur. U moet `req.on('close')`-listeners implementeren in Express (of het equivalent `request.signal` abort-event in Fastify of native `http`) om de upstream OpenAI-generatie-call direct af te breken via een `AbortController` zodra de client de verbinding verbreekt.
+Herre Roelevink, oprichter en Managing Director van Manifera, legt uit: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera ontwerpt sinds **2014** betrouwbare, realtime webapplicaties.
 
-Dit is dezelfde categorie van productie-hardeningproblemen waar LaunchStudio voortdurend mee te maken heeft: de frontend gebouwd in Bolt of Lovable werkt perfect in een demo met één gebruiker, maar niemand heeft de SSE-laag getest tegen 10.000 gelijktijdige verbindingen, bufferende proxies of verlaten sessies. Aangezien 45% van de door AI gegenereerde code een vorm van beveiligings- of betrouwbaarheidskwetsbaarheid bevat, zijn streaming-endpoints een veelvoorkomende plek waar deze problemen zich schuilhouden.
+## Belangrijkste inzichten
 
-## Belangrijkste Inzichten
+- Server-Sent Events (SSE) zijn noodzakelijk voor een responsieve AI-gebruikerservaring, maar houden HTTP-verbindingen 15 tot 30 seconden lang vast in het servergeheugen.
 
-- Server-Sent Events (SSE) streamen tekst woord-voor-woord naar de UI, wat verplicht is voor AI UX. Maar ze vereisen het 15-30 seconden lang openhouden van HTTP-verbindingen, wat een file descriptor en heap-geheugen bezet houdt.
-- Als een enkele Node.js-server duizenden permanente SSE-verbindingen probeert vast te houden terwijl het tegelijkertijd trage OpenAI API-calls beheert, zal het crashen door het bereiken van de file descriptor-limiet (standaard 1.024 op Linux) of uitputten van het geheugen.
-- Ontkoppel de architectuur: Gebruik zware achtergrond-workers (via BullMQ) om de LLM-generatie te beheren, en 'Publiceer' de streaming tokens naar een Redis Pub/Sub kanaal. Een lichte webserver abonneert zich op dat kanaal en verwerkt de UI-streaming.
-- Standaard load balancers (zoals Nginx, AWS ALB of Cloudflare) zullen streaming-antwoorden standaard bufferen, wat het tikmachine-effect verpest. U moet expliciet `proxy_buffering off` instellen, `proxy_read_timeout` verhogen naar 300 seconden en bufferingsheaders uitschakelen.
-- Luister altijd naar het verbreken van de verbinding via `req.on('close')` gekoppeld aan een `AbortController`. Als de gebruiker het tabblad sluit, moet de server de aanroep direct afbreken om te voorkomen dat er API-credits worden verspild.
+- Het gelijktijdig beheren van duizenden persistente SSE-verbindingen op één enkele server leidt tot overschrijding van bestandsdescriptor-limieten en geheugencrashes.
 
-## Schaal Uw Streams
+- Ontkoppel zware LLM-verwerking van client-streaming met behulp van Redis Pub/Sub en BullMQ, zodat beide onderdelen onafhankelijk kunnen schalen.
 
-Crashen verkeerspieken uw real-time AI-streams? **LaunchStudio** ontwerpt ontkoppelde, door Redis ondersteunde streaming-architecturen die zijn ontworpen om tientallen duizenden gelijktijdige SSE-verbindingen veilig te beheren zonder één enkel token te verliezen. Bekijk de [LaunchStudio pakketten](https://launchstudio.eu/en/#packages) om te zien welke scope past bij een SSE-hardeningproject.
+- Schakel response-buffering op load balancers (Nginx, AWS ALB, Cloudflare) expliciet uit via `proxy_buffering off` om vloeiende realtime streaming te garanderen.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in 2014 door **Herre Roelevink**. Zoals **Herre** het stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat." Vanwege het tekort aan ervaren ontwikkelaars in Europa richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh City, Vietnam** (10 Pho Quang Street). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze enterprise-grade wereldwijde softwareontwikkelingsexpertise — dezelfde discipline achter [Manifera's web app development](https://www.manifera.com/services/web-app-develop/) — om hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
+- Gebruik `req.on('close')` en `AbortController` om upstream API-aanroepen direct te annuleren wanneer een gebruiker de pagina verlaat, om tokenverspilling te voorkomen.
 
-## Echt Voorbeeld
+## Schaal uw realtime AI-datastromen
 
-### Een AI-Native Oprichter in Actie: SSE Buffer-Vertraging Oplossen in een Live Chat SaaS
+Veroorzaken pieken in gelijktijdige gebruikers haperende tekst-streams of servercrashes? **LaunchStudio** ontwerpt ontkoppelde, met Redis aangedreven streaming-architecturen die tienduizenden gelijktijdige SSE-verbindingen betrouwbaar verwerken zonder dataverlies. Bekijk onze [pakketten](https://launchstudio.eu/en/#packages) voor een overzicht van onze diensten.
 
-Mason, een product manager, gebruikte **Cursor** om een klantenportaal te bouwen. De gestreamde tekst verscheen in grote, vertraagde blokken in plaats van vloeiende woord-voor-woord streams door Nginx-buffering.
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde maatwerkprojecten helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
 
-Hij nam contact op met **LaunchStudio (door Manifera, opgericht in 2014)**. Het team paste de productie Nginx-proxyinstellingen aan om buffering op SSE-respons-streams uit te schakelen.
+## Echt voorbeeld
 
-**Resultaat:** De tekststream werd vloeiend en in real-time gerenderd, wat de gebruikerservaring van de chatinterface verbeterde.
+### Een AI-native oprichter in actie: SSE-buffervertraging oplossen in een live-chat SaaS
 
-**Kosten en Tijdlijn:** € 950 (SSE Configuration Package) — klaar voor productie en geïmplementeerd binnen 2 werkdagen.
+Mason, een productmanager, gebruikte **Cursor** om een klantportaal te bouwen. De gegenereerde tekst verscheen in grote, vertraagde blokken in plaats van een vloeiende, woord-voor-woord stream door Nginx-buffering.
+
+Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam optimaliseerde de Nginx-proxyconfiguratie en schakelde buffering op SSE-responsestromen direct uit.
+
+**Resultaat:** De tekststream werd vloeiend en realtime gerenderd, wat de gebruikerservaring van de chat-interface aanzienlijk verbeterde.
+
+**Kosten & tijdlijn:** €950 (SSE Configuration Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Wat zijn Server-Sent Events (SSE)?
-Een protocol waarmee een server in real-time data naar een browser kan pushen via een enkele, langlopende HTTP-verbinding. Het is de standaardmethode om het woord-voor-woord 'tikmachine-effect' in AI-generaties te maken, en het is eenvoudiger te implementeren en te debuggen dan WebSockets voor eenrichtingsverkeer.
+### Wat zijn Server-Sent Events (SSE)?
 
-### 2. Waarom is SSE gevaarlijk voor de gezondheid van de server?
-Omdat een SSE-verbinding de volle 15-30 seconden van een AI-generatie open blijft staan, wat de hele tijd een file descriptor en heap-geheugen in beslag neemt. Het gelijktijdig openhouden van duizenden verbindingen zal de standaardlimieten van een server (vaak 1.024 open bestanden op Linux) snel uitputten en laten crashen.
+Een lichtgewicht HTTP-protocol waarmee een server realtime data en tokens opeenvolgend naar de browser streamt over één openstaande verbinding, ideaal voor het typemachine-effect bij AI-chat.
 
-### 3. Hoe helpt Redis Pub/Sub bij het schalen van SSE?
-Het ontkoppelt het zware werk. Een achtergrond-worker (via BullMQ) voert de trage OpenAI-call uit en 'Publiceert' tokens naar een Redis-kanaal. Een lichte webserver abonneert zich op dat kanaal en streamt de tokens naar de gebruiker, waardoor rekenkracht en verbindingsafhandeling op afzonderlijke serverpools schalen.
+### Waarom brengt SSE risico's met zich mee voor serverstabiliteit?
 
-### 4. Hoe load-balance je SSE-verbindingen?
-U moet uw load balancer (Nginx, AWS ALB of Cloudflare) configureren om responsbuffering uit te schakelen — met `proxy_buffering off` en `proxy_read_timeout` ingesteld op ongeveer 300 seconden. Als het buffert, houdt het de hele stream vast totdat deze klaar is, wat de real-time UX verpest.
+Omdat elke actieve generatie een TCP-socket en servergeheugen bezet houdt gedurende 15 tot 30 seconden. Bij duizenden gelijktijdige gebruikers leidt dit snel tot overschrijding van OS-limieten en geheugencrashes.
 
-### 5. Kan LaunchStudio een bestaande SSE-implementatie herstellen zonder herbouw?
-Ja. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering over 160+ projecten, auditeert de bestaande Node.js- en proxyconfiguratie en patcht de verbindingsafhandeling, load balancer en abort-logica direct in de codebase — geen frontend-herbouw nodig.
+### Hoe helpt Redis Pub/Sub bij het schalen van SSE?
+
+Het ontkoppelt de zware LLM-aanroep van de client-verbinding: workers publiceren tokens naar een Redis-kanaal, waarna lichte streaming-servers de data zonder rekenbelasting doorsturen naar de browser.
+
+### Hoe configureert u een load balancer voor realtime streaming?
+
+Door response-buffering uit te schakelen (`proxy_buffering off;` in Nginx) en de time-outlimieten te verhogen naar minimaal 300 seconden, zodat lange antwoorden niet worden afgekapt.
+
+### Kan LaunchStudio een bestaande streaming-setup optimaliseren zonder herbouw?
+
+Ja. De engineers van LaunchStudio en Manifera patchen de verbindingsafhandeling, load balancers en abort-controllers direct in uw bestaande Node.js-omgeving, doorgaans binnen enkele werkdagen.
 
 <script type="application/ld+json">
 {
@@ -96,15 +106,15 @@ Ja. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-eng
       "name": "Wat zijn Server-Sent Events (SSE)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een protocol waarmee een server in real-time data naar een browser pusht via een enkele langlopende HTTP-verbinding, gebruikt voor het tikmachine-effect bij AI."
+        "text": "Een HTTP-streamingprotocol waarmee een backend realtime tokens woord voor woord naar de browser stuurt."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom is SSE gevaarlijk voor de gezondheid van de server?",
+      "name": "Waarom brengt SSE risico's met zich mee voor serverstabiliteit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat langlopende verbindingen file descriptors en heap-geheugen bezet houden, wat bij duizenden gelijktijdige gebruikers de serverlimieten snel uitput."
+        "text": "Omdat langdurig openstaande HTTP-verbindingen bij duizenden gelijktijdige gebruikers leiden tot geheugenuitputting en socket-tekorten."
       }
     },
     {
@@ -112,23 +122,23 @@ Ja. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-eng
       "name": "Hoe helpt Redis Pub/Sub bij het schalen van SSE?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het ontkoppelt zware AI-rekenkracht van lichte websocket/SSE-verbindingen, waardoor beide op afzonderlijke serverpools onafhankelijk schalen."
+        "text": "Het scheidt de zware AI-verwerking van lichte streaming-nodes via gedistribueerde publicatie-kanalen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe load-balance je SSE-verbindingen?",
+      "name": "Hoe configureert u een load balancer voor realtime streaming?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Stel proxy_buffering off in op Nginx/ALB en verhoog proxy_read_timeout naar 300 seconden om te voorkomen dat de stream gebufferd of afgebroken wordt."
+        "text": "Door proxy-buffering uit te schakelen en time-outs te verhogen naar 300 seconden om haperingen te voorkomen."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio een bestaande SSE-implementatie herstellen zonder herbouw?",
+      "name": "Kan LaunchStudio een bestaande streaming-setup optimaliseren zonder herbouw?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera auditeren en patchen de backend- en proxyconfiguratie direct in de codebase zonder dat een frontend-herbouw nodig is."
+        "text": "Ja, door gerichte aanpassingen in Node.js socket-handlers, Nginx-instellingen en AbortControllers door te voeren."
       }
     }
   ]

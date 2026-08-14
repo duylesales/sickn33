@@ -4,3 +4,6 @@ ads-mcp/
 advertising-skills/
 awesome-agent-skills/
 awesome-agentic-advertising/
+.DS_Store
+**/.DS_Store
+.claude/

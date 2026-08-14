@@ -1,19 +1,19 @@
-🚨 Owen, een ontwikkelaar van prijstrackers, gebruikte **Lovable** om een scraper te bouwen — maar onveilige browserverzoeken zorgden ervoor dat hij door bijna elke doelwebsite werd gemarkeerd en geblokkeerd. 🕸️
+🚨 Owen, een softwareontwikkelaar, bouwde een prijs-scraper met **Lovable** — maar onveilige browserverzoeken zorgden ervoor dat zijn scrapers door vrijwel elke doelwebsite werden geblokkeerd. 🕸️
 
-Als u een AI-agent een tool geeft om "deze URL op te halen", geeft u de sleutels van de netwerklaag van uw server uit handen — en één niet-gesandboxed verzoek kan een volwaardige SSRF-aanval veroorzaken. 🧠
+Het geven van een "haal deze URL op"-tool aan een AI-agent overhandigt de sleutels van uw servernetwerk. Eén ongeïsoleerd verzoek kan leiden tot een verwoestende SSRF-aanval. 🧠
 
-❌ Een hacker die uw agent vraagt om `169.254.169.254` op te halen, het AWS-metadata-endpoint met uw live IAM-inloggegevens
-❌ DNS rebinding — een "veilig" domein dat milliseconden na uw denylist-controle omvormt naar een intern IP-adres
-❌ Open-source agent-toolkits die zonder enige ingebouwde SSRF-bescherming worden geleverd
+❌ Een aanvaller die uw agent vraagt `169.254.169.254` op te halen, het AWS-metadata endpoint met uw IAM-beheerderssleutels
+❌ DNS-rebinding: een domein dat tijdens validatie veilig lijkt, maar bij uitvoering switcht naar een intern IP
+❌ Opensource agent-toolkits die zonder enige ingebouwde SSRF-bescherming worden opgeleverd
 
-✅ Strikte URL-denylisting die localhost, interne IP-reeksen, metadata-endpoints en gevaarlijke schema's zoals `file://` blokkeert
-✅ Eerst DNS omzetten en vervolgens vastpinnen, zodat het domein na validatie niet van doel kan wisselen
-✅ Netwerk-gesandboxde tooluitvoering in een geïsoleerde Lambda of container zonder enige toegang tot productiedatabases
+✅ Strikte URL-blokkeerlijsten tegen localhost, interne VPC-subnetten, cloud-metadata en schema's zoals `file://`
+✅ Domein-resolutie met IP-pinning zodat het doeladres na validatie niet kan veranderen
+✅ Netwerkzandbakken in geïsoleerde Lambda-functies zonder toegang tot productiedatabases
 
-Bij **LaunchStudio** heeft Manifera sinds 2014, 11+ jaar lang, exact dit type infrastructuurrisico gehard over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** bouwen we sinds 2014 enterprise-beveiligingen via Manifera, met meer dan 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO. 🛡️
 
-Het slagingspercentage van Owens scraper steeg naar 98%, waardoor betrouwbare prijsdata voor zijn bedrijf gegarandeerd zijn. 🚀
+LaunchStudio implementeerde roterende proxy's en domeinfilters voor Owen — het succespercentage van zijn scrapers steeg naar 98% en leverde betrouwbare data op. (€1.400 (Scraper Security Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij tool-aanroepen van agents sandboxen: [Link naar artikel]
+👉 Ontdek hoe u agent-tools veilig isoleert: [Link naar artikel]
 
-#AINativeFounder #LaunchStudio #Manifera #SSRFPrevention #AIAgentSecurity
+#AINativeFounder #LaunchStudio #Manifera #SSRFPrevention #AIAgentSecurity #CyberSecurity #CloudSecurity #AWSLambda #AISaaS #StartupOpschalen

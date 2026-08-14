@@ -1,19 +1,19 @@
-🚨 Isaac, een HR-tech-oprichter, bouwde met **Cursor** een cv-beoordelingstool. Het prototype had geen database-RLS-beleid — elke geauthenticeerde gebruiker kon in theorie de kandidaatgegevens van een ander bedrijf opvragen door simpelweg een request-ID te wijzigen. 🔓
+🚨 Isaac, een HR-tech oprichter, bouwde een cv-beoordelingstool met **Cursor**. Het prototype had geen database RLS-policies — elke geauthenticeerde gebruiker kon potentieel kandidatenrecords van andere bedrijven opvragen. 🔓
 
-Een AI-prototype voor 80% betrouwbaar krijgen is eenvoudig; de overige 20% — beveiliging, toegangscontrole, productierijpheid — is waar de meeste AI-native oprichters vastlopen. 🧠
+Een AI-prototype 80% betrouwbaar maken is eenvoudig; de overige 20% — beveiliging, toegangscontrole, productiehardening — is waar de meeste AI-native oprichters vastlopen. 🧠
 
-❌ Geen Row Level Security die gegevenstoegang aan de juiste organisatie koppelt
-❌ API-sleutels hardcoded in de client-side bundel, zichtbaar voor iedereen die DevTools opent
-❌ Een preview-URL met "onveilige site"-waarschuwingen die het vertrouwen van kandidaten tijdens screeninggesprekken ondermijnden
+❌ Geen Row-Level Security waardoor data niet per organisatie wordt afgeschermd
+❌ API-sleutels hardcoded in de client-side code, zichtbaar voor iedereen die DevTools opent
+❌ Een preview-URL die "onveilige site" browserwaarschuwingen toonde die het vertrouwen van kandidaten ondermijnden
 
-✅ Strikt Supabase RLS-beleid, gekoppeld aan organisatie-ID
-✅ Sleutels verplaatst van de client naar omgevingsvariabelen achter een server-side proxy
-✅ Een custom domein met correcte TLS-certificering
+✅ Strikte Supabase RLS-policies afgebakend per organisatie-ID
+✅ API-sleutels verplaatst naar server-side omgevingsvariabelen achter een proxy
+✅ Een aangepaste domeinnaam met geldige TLS-certificering
 
-Bij **LaunchStudio** verhelpen we sinds elf jaar, via Manifera, precies dit soort productiebeveiligingsproblemen voor zakelijke klanten zoals Vodafone en TNO. 🛡️
+Bij **LaunchStudio** versterken we sinds 2014 via Manifera exact dit soort productiebeveiliging voor enterprise-klanten zoals Vodafone en TNO. 🛡️
 
-Bij Isaac verdwenen de browserwaarschuwingen en de beveiligingsproblemen, en werd de app productieklaar. 🚀
+Isaac's browserwaarschuwingen en datalekrisico's verdwenen en de applicatie was volledig productieklaar. (€1.850 (Production Readiness Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij deze kloof overbruggen: [Link naar artikel]
+👉 Ontdek hoe wij de kloof overbruggen: [Link naar artikel]
 
-#AINativeFounder #LaunchStudio #Manifera #PrototypeToProduction #AISecurity
+#AINativeFounder #LaunchStudio #Manifera #PrototypeToProduction #AISecurity #RLS #Supabase #HRTech #AISaaS #StartupOpschalen

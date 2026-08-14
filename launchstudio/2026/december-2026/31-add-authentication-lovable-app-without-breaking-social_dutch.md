@@ -1,22 +1,22 @@
-🚨 Haar broer vond het "gewoon uit nieuwsgierigheid": elke klant kon de privégezondheidsnotities van elke andere klant zien door ÉÉN getal in de URL te veranderen. 😱
+🚨 Haar broer ontdekte het "puur uit nieuwsgierigheid": elke klant kon vertrouwelijke gezondheidsnotities van andere klanten inzien door ÉÉN cijfer in de URL aan te passen. 😱
 
-"Voeg login toe" klinkt simpel. Lovable genereert een mooie loginpagina. Wat het NIET automatisch doet, is het enge deel: 🧠
+"Voeg login toe" klinkt simpel. Lovable bouwt een fraai inlogscherm. Maar wat het NIET automatisch doet, is het echte gevaar: 🧠
 
-❌ Elke bestaande pagina haalt nog steeds data op zonder te checken wie echt is ingelogd
-❌ De loginpagina werkt — de daadwerkelijke bescherming vaak stilletjes niet
-❌ Eén URL-parameterwijziging = volledige toegang tot de data van iedereen
+❌ Bestaande pagina's halen data nog steeds op zonder te checken wie er is ingelogd
+❌ De inlogpagina werkt — maar de daadwerkelijke data-afscherming ontbreekt stilletjes
+❌ Eén URL-aanpassing = volledige toegang tot andermans dossiers
 
-De veiligere volgorde: ✅
-1️⃣ Gebruik een productiewaardige provider (Supabase Auth, Auth0) — geen custom-build
-2️⃣ Breng ELKE functie en tabel in kaart die gebruikersscoping nodig heeft
-3️⃣ Update elke enkele query systematisch
-4️⃣ Test cross-gebruiker-toegang zelf voordat je het "af" noemt
-5️⃣ Voeg Row Level Security toe als tweede verdedigingslinie
+Het veilige stappenplan voor authenticatie: ✅
+1️⃣ Gebruik een bewezen provider (Supabase Auth / NextAuth) — geen zelfgeknutselde AI-auth
+2️⃣ Breng ELKE tabel en pagina in kaart die per gebruiker moet worden afgeschermd
+3️⃣ Werk alle databasequeries systematisch bij
+4️⃣ Voer kruiselingse tests uit met twee accounts
+5️⃣ Activeer PostgreSQL Row Level Security (RLS) als tweede verdedigingslinie
 
-Die URL-parametertest is niet eens de hele checklist — verborgen adminknoppen, API-routes die rechtstreeks vanuit Postman aan te roepen zijn, en rollen opgeslagen in local storage zijn nog 3 manieren waarop "ingelogd" stiekem "wagenwijd open" betekent. 🔍
+Vergeet ook niet: knoppen verbergen in de frontend biedt nul bescherming als de API-route erachter wagenwijd openstaat! 🔍
 
-Bij **LaunchStudio**, gesteund door Manifera's cybersecuritywortels (CFLW, TNO), krijgt authenticatie de zorgvuldigheid die het nodig heeft — voordat echte gebruikers echte accounts aanmaken. 🛡️🚀
+Bij **LaunchStudio**, ondersteund door Manifera's cybersecurity-roots (CFLW, TNO), krijgt authenticatie de grondige controle die het verdient — vóórdat echte gebruikers accounts aanmaken. 🛡️🚀
 
-👉 Lees hoe je authenticatie toevoegt zonder alles te breken: [Link naar artikel]
+👉 Lees hoe u authenticatie toevoegt zonder uw app te breken: [Link naar artikel]
 
-#Authenticatie #LaunchStudio #Manifera #AINativeFounder #Cybersecurity #SaaS
+#Authentication #LaunchStudio #Manifera #AINativeFounder #Cybersecurity #SaaS #Supabase #Lovable #TechFounders #StartupOpschalen

@@ -1,106 +1,174 @@
 ---
-Titel: "De Gids van de Founder voor AVG-compliance bij AI-applicaties"
-Trefwoorden: AI en privacyproblemen, AI-privacyproblemen, AI-datebeveiliging, AI-secure, LaunchStudio, Manifera
+Titel: "De Gids voor AVG/GDPR Compliance voor AI-Applicaties"
+Trefwoorden: ai and privacy issues, ai privacy issues, ai data security, ai secure, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Gids van de Founder voor AVG-compliance bij AI-applicaties
+# De Gids voor AVG/GDPR Compliance voor AI-Applicaties
 
-AVG-compliance was al een genuanceerd onderwerp voordat AI in beeld kwam. AI-applicaties voegen een specifieke complicatie toe: elke keer dat je applicatie een prompt met klantdata naar de API van een AI-provider stuurt, verlaat die data je eigen infrastructuur en wordt verwerkt door een derde partij — een datastroom waar de AVG duidelijke vereisten voor heeft, en een die veel AI-native founders niet volledig in kaart hebben gebracht.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Gids voor AVG/GDPR Compliance voor AI-Applicaties",
+  "description": "AVG-compliance voor AI kent specifieke complicaties: waar AI-providers data verwerken, wat er met prompts gebeurt en hoe u verwijderverzoeken afhandelt. Een praktische gids.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/founders-guide-gdpr-compliance-ai-applications"
+  }
+}
+</script>
 
-## Waarom AI-applicaties een Apart AVG-profiel Hebben
+AVG-compliance (GDPR) was al een gelaagd onderwerp vóór de komst van AI. AI-applicaties voegen een specifieke complicatie toe: elke keer dat uw software een prompt met klantdata naar de API van een externe AI-provider stuurt, verlaat die data uw eigen serverinfrastructuur en wordt deze verwerkt door een derde partij. Dit is een gegevensstroom waar de AVG duidelijke eisen aan stelt, en die veel AI-native oprichters nog niet volledig in kaart hebben gebracht.
 
-De gegevensverwerking van een traditionele webapplicatie is relatief ingeperkt — data gaat in je database, blijft daar, en wordt verwerkt door je eigen code. Een AI-applicatie stuurt routinematig gebruikersdata (supportberichten, documenten, persoonlijke details relevant voor de taak van de AI) naar de API van een externe AI-provider voor verwerking. Dit creëert een gegevensverwerkingsrelatie die correct gedocumenteerd, bekendgemaakt en contractueel gedekt moet worden — niet omdat het inherent niet-conform is, maar omdat het een extra datastroom is waar de AVG expliciet om geeft.
+## Waarom AI-Applicaties een Afwijkend AVG-Profiel Hebben
 
-## Belangrijke AVG-vereisten voor AI-Native Founders
+De gegevensverwerking van een traditionele webapplicatie is overzichtelijk: data gaat uw database in, blijft daar en wordt verwerkt door uw eigen code. Een AI-applicatie stuurt routinematig gebruikersgegevens (supportberichten, documenten, persoonsgegevens die relevant zijn voor de AI-taak) door naar een externe AI-provider ter verwerking. Dit creëert een formele gegevensverwerkingsrelatie die correct moet worden gedocumenteerd, openbaar moet worden gemaakt en contractueel moet worden afgedekt — niet omdat het verboden is, maar omdat het een extra gegevensstroom betreft die expliciet onder de AVG valt.
 
-### Verwerkersovereenkomsten met Je AI-provider
-Grote AI-providers bieden verwerkersovereenkomsten (DPA's) specifiek voor dit doel. Bevestigen dat je de DPA van je provider hebt geaccepteerd, en begrijpen wat die daadwerkelijk dekt, is een fundamentele en vaak overgeslagen stap.
+## Belangrijke AVG-Eisen voor AI-Native Oprichters
 
-### Transparantie over AI-verwerking
-Je privacybeleid moet bekendmaken dat gebruikersdata mogelijk wordt verwerkt door AI-systemen, inclusief externe AI-providers, in taal die gebruikers daadwerkelijk kunnen begrijpen — niet alleen begraven juridische standaardtekst gekopieerd van een sjabloon die niet weerspiegelt wat je applicatie daadwerkelijk doet.
+### Verwerkersovereenkomsten (DPA's) Met Uw AI-Provider
+De grote AI-providers bieden hiervoor specifieke Data Processing Agreements (DPA's) aan. Het bevestigen dat u deze DPA daadwerkelijk heeft geaccepteerd, en begrijpen wat er precies in staat (zoals afspraken over zero-data-retention en het niet trainen op uw data), is een essentiële eerste stap die vaak wordt overgeslagen.
 
-### Het Recht op Vergetelheid en AI-systemen
-Wanneer een gebruiker verwijdering van zijn data vraagt, moet dit oprecht doorwerken in je systemen — inclusief eventuele data die mogelijk is gebruikt om een model te fine-tunen (zeldzaam voor de meeste AI-native founders die kant-en-klare modellen gebruiken) of behouden blijft in logs van de AI-provider volgens hun eigen bewaarbeleid.
+### Transparantie over AI-Verwerking
+Uw privacyverklaring moet in duidelijke, begrijpelijke taal uitleggen dat gebruikersgegevens door AI-systemen (inclusief externe modelproviders) kunnen worden verwerkt — en niet slechts via gekopieerde, nietszeggende juridische standaardteksten die niet aansluiten op wat uw software daadwerkelijk doet.
 
-### Dataminimalisatie voor AI-prompts
-Alleen de data verzenden die daadwerkelijk nodig is voor de AI-taak, in plaats van hele records "voor het geval dat," vermindert zowel AVG-blootstelling als verbetert vaak AI-prestaties door het model gerichtere context te geven.
+### Het Recht op Gegevenswissing (Recht op Vergetelheid)
+Wanneer een gebruiker vraagt om verwijdering van zijn persoonsgegevens, moet dit verzoek daadwerkelijk door uw gehele systeem worden doorgevoerd — inclusief data in logging, gesprekshistorie en eventuele vector-databases.
 
-### EU-dataresidentie-overwegingen
-Sommige AI-providers verwerken data buiten de EU, wat extra AVG-vereisten rond internationale datatransfers introduceert. Providers kiezen met EU-verwerkingsopties, waar beschikbaar, vereenvoudigt compliance betekenisvol.
+### Dataminimalisatie in AI-Prompts
+Stuur uitsluitend de data mee die strikt noodzakelijk is voor de specifieke AI-taak, in plaats van volledige klantprofielen "voor de zekerheid". Dit verkleint uw AVG-risico aanzienlijk en verbetert vaak ook de prestaties van het taalmodel doordat de context veel gerichter is.
 
-## Waarom Dit Niet Slechts een Juridisch Vinkje Is
+### Europese Data-Opslag (EU Data Residency)
+Sommige AI-providers verwerken standaard data buiten de Europese Economische Ruimte (EER), wat aanvullende eisen met zich meebrengt voor internationale doorgifte. Het kiezen van providers of endpoints met verwerking binnen de EU vereenvoudigt compliance aanzienlijk.
 
-Niet-naleving van de AVG brengt echt financieel en reputatierisico met zich mee, maar naast formeel risico is dit goed doen ook een oprecht vertrouwenssignaal voor Europese klanten, vooral B2B-klanten die steeds vaker gerichte vragen stellen over AI-gegevensverwerking voordat ze een contract tekenen.
+## Waarom Dit Meer Is Dan een Juridisch Vinkje
 
-## Compliance Inbouwen in de Architectuur, Niet Achteraf Erbij Plakken
+Niet-naleving van de AVG brengt aanzienlijke financiële en reputatierisico's met zich mee. Maar los van formele boetes is correcte privacyborging een krachtig betrouwbaarheidssignaal naar Europese zakelijke klanten, die steeds vaker gerichte vragen stellen over AI-dataverwerking vóórdat ze een contract ondertekenen.
 
-[LaunchStudio](https://launchstudio.eu/en/), opererend vanuit Amsterdam met Nederland en een bredere EU-klantenbestand als kernmarkt, bouwt AVG-bewuste gegevensverwerking in productiedeployments als standaardpraktijk in plaats van een bijzaak achteraf — geïnformeerd door Herre Roelevinks eigen cybersecurityachtergrond en Manifera's ervaring met het bedienen van compliance-gevoelige klanten zoals TNO.
+## Compliance Inbouwen in de Architectuur
 
-[Laat de AVG-positie van je AI-applicatie beoordelen](https://launchstudio.eu/en/#contact) voordat het inkoopteam van een klant een vraag stelt die je niet zelfverzekerd kunt beantwoorden.
+[LaunchStudio](https://launchstudio.eu/en/), opererend vanuit Amsterdam met Nederland en Europa als kernmarkt, bouwt AVG-conforme dataverwerking standaard in bij elke productie-oplevering — geworteld in Herre Roelevinks cybersecurity-achtergrond en Manifera's ervaring met compliance-gevoelige opdrachtgevers zoals TNO.
 
-## Data Protection Impact Assessments: Wanneer AI-verwerking er Daadwerkelijk Een Vereist
+[Laat de AVG-inrichting van uw AI-app beoordelen](https://launchstudio.eu/en/#contact) vóórdat de inkoopafdeling van een potentiële klant vragen stelt die u niet met zekerheid kunt beantwoorden.
 
-Naast de fundamentele stappen die al zijn behandeld, bevat de AVG een specifieke, formele verplichting die veel AI-native founders overvalt: een Data Protection Impact Assessment (DPIA) is wettelijk verplicht onder Artikel 35 wanneer een type verwerking "waarschijnlijk een hoog risico" oplevert voor de rechten van individuen — en verschillende patronen die gangbaar zijn bij AI-applicaties triggeren specifiek deze drempel, zelfs voor overigens kleinschalige producten.
+## Data Protection Impact Assessments (DPIA): Wanneer AI-Verwerking Dit Verplicht Stelt
 
-**Situaties die doorgaans een DPIA-vereiste triggeren voor AI-applicaties:**
+Naast de basisstappen kent de AVG een specifieke formele verplichting die veel AI-oprichters verrast: een **Gegevensbeschermingseffectbeoordeling (DPIA)** is onder Artikel 35 wettelijk verplicht wanneer een verwerking waarschijnlijk een *"hoog risico"* inhoudt voor de rechten en vrijheden van natuurlijke personen. Verschillende patronen die kenmerkend zijn voor AI activeren deze verplichting automatisch:
 
-- **Systematische en uitgebreide geautomatiseerde verwerking gebruikt om beslissingen met juridische of vergelijkbaar significante effecten te nemen** — een AI-tool die sollicitanten screent, kredietwaardigheid scoort of geschiktheidsbeslissingen neemt, valt hier recht in, direct relevant voor elke founder die HR-tech, fintech of vergelijkbare consequentiële AI-beslissingsondersteunende tools bouwt
-- **Grootschalige verwerking van bijzondere categorieën gegevens** — gezondheidsinformatie, biometrische gegevens, gegevens die politieke opvattingen of religieuze overtuigingen onthullen, en vergelijkbare gevoelige categorieën kennen een materieel hogere compliance-lat dan algemene persoonsgegevens, inclusief expliciete toestemmingsvereisten in de meeste gevallen
-- **Systematische monitoring van individuen**, inclusief sommige AI-gedreven analytics- of gedragstrackinggevallen
-- **Innovatief gebruik van nieuwe technologie** waarvan de risico's nog niet goed begrepen zijn — een criterium waarvan toezichthouders expliciet hebben aangegeven dat het op veel nieuwe AI-applicaties van toepassing is, simpelweg omdat het risicoprofiel van een nieuwe AI-capaciteit nog niet door precedent is vastgesteld
+**Situaties die bij AI-toepassingen doorgaans een DPIA vereisen:**
 
-**Wat een DPIA op praktisch niveau daadwerkelijk inhoudt:**
+- **Systematische en uitgebreide geautomatiseerde verwerking waarop besluiten worden gebaseerd met rechtsgevolgen of vergelijkbare wezenlijke gevolgen** — een AI-tool die sollicitanten filtert, kredietwaardigheid berekent of toelatingen beoordeelt valt hier direct onder (zeer relevant voor HR-tech en fintech).
+- **Grootschalige verwerking van bijzondere categorieën persoonsgegevens** — medische data, biometrische gegevens of gegevens over politieke/religieuze opvattingen vereisen een aanzienlijk zwaardere toetsing en expliciete toestemming.
+- **Systematische monitoring van personen**, inclusief geavanceerde AI-gedragsanalyses en tracking.
+- **Innovatief gebruik van nieuwe technologieën** waarbij de risico's maatschappelijk nog niet volledig zijn uitgekristalliseerd — toezichthouders hebben expliciet aangegeven dat veel nieuwe AI-toepassingen hieronder vallen.
 
-1. Een beschrijving van de specifieke verwerkingsactiviteit en het doel ervan
-2. Een beoordeling van of de verwerking daadwerkelijk noodzakelijk en proportioneel is ten opzichte van dat doel
-3. Een beoordeling van risico's voor de rechten en vrijheden van individuen die specifiek voortvloeien uit de verwerking
-4. Gedocumenteerde maatregelen genomen om de geïdentificeerde risico's aan te pakken en te beperken
+**Wat een praktische DPIA inhoudt:**
 
-Dit hoeft voor de meeste vroege-fase AI-SaaS-producten geen intimiderende juridische exercitie te zijn — voor velen is het een gefocust document van een paar pagina's dat dwingt tot daadwerkelijk nuttig nadenken over wat er mis kan gaan en hoe dat wordt beperkt, in plaats van een bureaucratische formaliteit. Het risico zit niet in het papierwerk zelf; het zit in het volledig overslaan van de exercitie en pas een daadwerkelijk hoog-risico verwerkingspatroon ontdekken (zoals geautomatiseerde kandidaatscreening, direct relevant voor het PersoneelScreen-voorbeeld hieronder) nadat een toezichthouder, het inkoopteam van een klant, of een betrokken individu de vraag als eerste stelt.
+1. Een heldere beschrijving van de beoogde verwerkingen en de doeleinden.
+2. Een beoordeling van de noodzaak en evenredigheid (*proportionaliteit*) van de gegevensverwerking.
+3. Een gestructureerde risicoanalyse voor de rechten van de betrokken personen.
+4. Gedocumenteerde maatregelen en waarborgen om deze risico's effectief te mitigeren.
 
-**Geautomatiseerde besluitvorming kent zijn eigen aanvullende laag.** Los van de DPIA-vraag beperkt Artikel 22 van de AVG beslissingen "uitsluitend gebaseerd op geautomatiseerde verwerking" die juridische of vergelijkbaar significante effecten hebben, wat over het algemeen een betekenisvolle menselijke beoordelingsstap in de lus vereist voor elke AI-functie die consequentiële beslissingen over individuen neemt — een ontwerpoverweging die het waard is om vanaf het begin in te bouwen in plaats van achteraf te retrofitten na een uitdaging van een betrokken gebruiker.
+**Geautomatiseerde besluitvorming (Artikel 22 AVG):** Los van de DPIA stelt Artikel 22 strikte grenzen aan besluiten die *"uitsluitend zijn gebaseerd op geautomatiseerde verwerking"*. Dit vereist vrijwel altijd een betekenisvolle menselijke tussenkomst (*human-in-the-loop*) bij besluiten met grote impact op individuen.
 
-**Registers van verwerkingsactiviteiten (ROPA) zijn een gerelateerde, makkelijker over het hoofd te ziene verplichting.** Artikel 30 vereist dat de meeste organisaties een schriftelijk register bijhouden van welke persoonsgegevens worden verwerkt, met welk doel, en met welke derde partijen — inclusief AI-providers, die voor dit doel als verwerkers gelden. Voor een AI-native founder betekent dit doorgaans het documenteren van elke afzonderlijke AI-verwerkingsactiviteit (welke klantgegevens naar welke AI-provider worden gestuurd, voor welke functie, hoe lang bewaard) in één bijgehouden document. Founders ontdekken deze verplichting vaak op dezelfde manier als Vera dat deed met haar DVO — tijdens een inkoop- of auditgesprek waarin een specifieke vraag niet ter plekke beantwoord kan worden — ook al is het bijhouden van het register zelf doorgaans een bescheiden documentatie-oefening in plaats van een significante technische onderneming, en een die natuurlijk aansluit bij de datastroommapping die al nodig is voor het bovenstaande DPIA-proces.
+**Het Verwerkingsregister (Artikel 30 AVG - ROPA):** Artikel 30 verplicht organisaties om een schriftelijk register van verwerkingsactiviteiten bij te houden. Voor een AI-oprichter betekent dit het documenteren van welke klantdata naar welke AI-provider gaat, voor welk doel en met welke bewaartermijnen.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: slagen voor de compliancebeoordeling van een B2B-klant
+### Een AI-native oprichter in actie: Zakelijke privacy-audit glansrijk doorstaan
 
-Vera, een HR-consultant in Zoetermeer, bouwde PersoneelScreen, een AI-tool die kleine bedrijven hielp bij het opstellen van gestructureerde sollicitatiefeedback en screeningsamenvattingen op basis van ruwe interviewernotities, met Bolt. De tool werkte goed voor een handvol kleine zakelijke klanten, maar toen een groter middelgroot bedrijf interesse toonde, vroeg hun inkoopteam om een gegevensverwerkingsvragenlijst voordat ze tekenden — inclusief specifieke vragen over AVG-compliance voor door AI verwerkte kandidaatdata.
+Vera, HR-consultant in Zoetermeer, bouwde met Bolt PersoneelScreen: een AI-tool waarmee kleine bedrijven gestructureerde sollicitatiesamenvattingen en interviewfeedback genereerden op basis van aantekeningen van interviewers. De tool werkte uitstekend voor enkele zzp-klanten.
 
-Vera besefte dat ze verschillende vragen niet zelfverzekerd kon beantwoorden: ze wist niet of de DPA van haar AI-provider daadwerkelijk was geaccepteerd, haar privacybeleid was een generiek sjabloon dat AI-verwerking helemaal nooit vermeldde, en verzoeken tot verwijdering van kandidaatdata hadden geen gedefinieerd proces dat verder reikte dan haar eigen database.
+Toen een middelgroot bedrijf met 150 medewerkers interesse toonde, vroeg hun inkoopteam vóór ondertekening om een ingevulde dataverwerkingsvragenlijst — inclusief specifieke vragen over AVG-compliance rondom door AI verwerkte kandidaat-data.
 
-Vera nam contact op met LaunchStudio specifiek om zich voor te bereiden op deze compliancebeoordeling. Het Manifera-team bevestigde en configureerde correct de DPA van de AI-provider, herschreef het privacybeleid om AI-gegevensverwerking accuraat bekend te maken in duidelijke taal, implementeerde een oprecht end-to-end-verwijderingsproces, en documenteerde PersoneelScreen's volledige datastroom voor Vera om direct te presenteren aan het inkoopteam van de potentiële klant.
+Vera realiseerde zich dat ze meerdere vragen niet kon beantwoorden: ze wist niet of de DPA van haar AI-provider formeel was geactiveerd, haar privacyverklaring was een algemeen sjabloon waarin AI niet werd genoemd, en verzoeken tot gegevensverwijdering reikten niet verder dan haar eigen database.
 
-**Resultaat:** Vera slaagde voor de compliancebeoordeling en tekende het middelgrote bedrijf als PersoneelScreen's grootste klant tot dan toe, een deal die zeer waarschijnlijk verloren was gegaan zonder de inkoopvragenlijst zelfverzekerd en accuraat te kunnen beantwoorden.
+Vera schakelde LaunchStudio in om zich voor te bereiden op deze audit. Het team van Manifera configureerde de enterprise DPA van de AI-provider, herschreef het privacybeleid met duidelijke AI-verwerkingsclausules, richtte een end-to-end verwijderingsproces in en documenteerde de volledige datastroom voor het inkoopteam.
 
-> *"Ik wist niet eens wat een DPA was tot deze deal op het spel stond. LaunchStudio beantwoordde niet alleen de vragenlijst — ze zorgden ervoor dat de daadwerkelijke antwoorden waar waren, niet alleen goed klonken."*
-> — **Vera Hendriks, Founder, PersoneelScreen (Zoetermeer)**
+**Resultaat:** Vera doorstond de compliance-audit met vlag en wimpel en sloot haar grootste zakelijke klant tot nu toe af — een deal die zonder deze voorbereiding met grote zekerheid zou zijn afgeketst.
 
-**Kosten & tijdlijn:** €2.400 (AVG-compliancebeoordeling en herstel) — voltooid in 10 werkdagen.
+> *"Ik wist niet eens wat een DPA was totdat deze deal op het spel stond. LaunchStudio heeft niet alleen de vragenlijst beantwoord, maar ervoor gezorgd dat onze app technisch 100% klopte. Zonder hen was ik deze klant kwijtgeraakt."*  
+> — **Vera Hendriks, Oprichter PersoneelScreen (Zoetermeer)**
+
+**Kosten & tijdlijn:** €2.400 (AVG-compliance review en technische mitigatie) — binnen 10 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Heb ik een advocaat nodig voor AVG-compliance, of kunnen technische oplossingen het volledig afhandelen?
+### Heb ik een advocaat nodig voor AVG-compliance, of lossen technische maatregelen alles op?
+Beide zijn van belang. Technische implementatie (DPA's, dataminimalisatie, verwijderingsprocessen, EU-dataopslag) is noodzakelijk maar niet voldoende — uw privacyverklaring en juridische bewoordingen moeten idealiter worden gecontroleerd door een privacy-expert, zeker bij gevoelige data zoals gezondheids- of financiële gegevens.
 
-Beide doen ertoe. Technische implementatie (DPA's, dataminimalisatie, verwijderingsprocessen, EU-dataresidentie) is noodzakelijk maar niet voldoende — je privacybeleid en specifieke juridische bekendmakingen moeten idealiter worden beoordeeld door een gekwalificeerde privacyprofessional, vooral voor risicovollere datacategorieën zoals gezondheids- of financiële informatie.
+### Maakt het gebruik van een bekende provider zoals OpenAI of Anthropic mij automatisch AVG-compliant?
+Nee. Grote providers bieden de contractuele kaders (DPA's) en tools aan, maar u moet deze overeenkomsten zelf actief afsluiten, de gegevensverwerking transparant vermelden in uw privacybeleid en zelf zorgen voor dataminimalisatie en correcte verwijderprocessen.
 
-### Maakt het gebruik van een bekende AI-provider zoals OpenAI of Anthropic mij automatisch AVG-conform?
+### Wat moet er gebeuren als een klant vraagt om zijn data te verwijderen?
+U heeft een vast, gedocumenteerd proces nodig dat garandeert dat de verwijdering wordt doorgevoerd in uw eigen database, vector-indices en eventuele logging, rekening houdend met de bewaartermijnen van uw AI-provider.
 
-Nee. Grote providers bieden DPA's en compliancetooling die compliance haalbaar maken, maar je moet nog steeds actief deze overeenkomsten accepteren en configureren, de verwerking accuraat bekendmaken aan je gebruikers, en correcte verwijderings- en dataminimalisatiepraktijken implementeren aan je eigen applicatiekant.
+### Is de AVG alleen relevant voor B2B-applicaties, of ook voor B2C-consumentenapps?
+De AVG geldt onverkort voor elke applicatie die persoonsgegevens van inwoners van de EU verwerkt, ongeacht of het een B2B-SaaS of een consumentenapp betreft.
 
-### Wat gebeurt er als een klant verwijdering van zijn data uit mijn AI-applicatie vraagt?
+### Kan Manifera helpen bij bredere privacy- en compliance-vraagstukken?
+Ja. Manifera's ervaring met compliance-gevoelige projecten (onder meer voor TNO) en de cybersecurity-achtergrond van oprichter Herre Roelevink bestrijken de volledige databeveiliging van uw applicatie.
 
-Je hebt een gedefinieerd proces nodig dat ervoor zorgt dat verwijdering doorwerkt in je eigen database en, waar van toepassing, elke data die je AI-provider behoudt volgens hun eigen beleid. Dit moet gedocumenteerd en testbaar zijn, niet aangenomen dat het correct werkt zonder verificatie.
-
-### Is AVG-compliance alleen relevant voor B2B AI-applicaties, of doet het er ook toe voor consumenten-apps?
-
-Het is evenzeer van toepassing op consumenten- (B2C-) applicaties die persoonsgegevens van EU-ingezetenen verwerken — Vera's B2B-inkoopscenario is een veelvoorkomende manier waarop founders compliancegaten ontdekken, maar elke AI-applicatie die persoonsgegevens van EU-gebruikers verwerkt, heeft dezelfde onderliggende AVG-verplichtingen, ongeacht bedrijfsmodel.
-
-### Kan Manifera's team helpen met AVG-compliance buiten alleen de AI-specifieke datastromen?
-
-Ja. Manifera's bredere compliance-ervaring, gevormd door werk met organisaties zoals TNO en Herre Roelevinks cybersecurityachtergrond, strekt zich uit tot algemene gegevensbeschermingspraktijken over de hele applicatie, niet exclusief de AI-provider-datastroom.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Heb ik een advocaat nodig voor AVG-compliance van mijn AI-app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beide zijn nodig: LaunchStudio zorgt voor de technische datastromen, DPA's en dataminimalisatie; een privacyjurist toetst complexe beleidsteksten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Maakt het gebruik van OpenAI me automatisch AVG-compliant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. U moet zelf de verwerkersovereenkomst (DPA) afsluiten en transparant communiceren over het gebruik van AI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat moet ik doen als een gebruiker vraagt om data te wissen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zorg voor een end-to-end verwijderingsproces dat data wist uit de database, logging en vector-databases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Geldt de AVG alleen voor B2B-software of ook voor consumentenapps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De AVG geldt voor elke verwerking van persoonsgegevens van EU-inwoners, zowel bij B2B als bij B2C applicaties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke ervaring heeft Manifera met privacygevoelige projecten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manifera bouwt al 11 jaar enterprise-architecturen conform de strengste Europese privacy- en compliance-normen voor o.a. TNO."
+      }
+    }
+  ]
+}
+</script>

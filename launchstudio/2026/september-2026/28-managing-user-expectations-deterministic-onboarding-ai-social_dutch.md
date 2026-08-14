@@ -1,19 +1,19 @@
-🧭 Evelyn, een boekhouder, bouwde met **Lovable** een audittool — maar er was snel veel klantverloop omdat nieuwe gebruikers niet wisten hoe ze hun Excel-uploads moesten formatteren, en het open chatvenster gaf hen geen enkele richting. 📊
+🧭 Evelyn, een boekhouder, bouwde een audit-tool met **Lovable** — maar gebruikers haakten snel af omdat zij niet wisten hoe zij hun Excel-bestanden moesten formatteren en het lege chatvenster geen enkele instructie bood. 📊
 
-Als u belooft dat "onze AI alles kan," zullen gebruikers iets vragen dat geen enkel model betrouwbaar kan beantwoorden — en hun eerste indruk zal een zelfverzekerd fout antwoord zijn. 🧠
+Als u belooft "onze AI kan alles", stellen gebruikers onmogelijke vragen — en is hun eerste indruk een overtuigend foutief antwoord. 🧠
 
-❌ Een leeg chatvenster als het allereerste wat een gloednieuwe gebruiker ziet
-❌ Geen enkele indicatie van wat de AI wel en niet daadwerkelijk kan verwerken
-❌ Gebruikers de grenzen van de AI laten testen met off-topic vragen die de AI toch probeert te beantwoorden
+❌ Een leeg chatvenster als allereerste scherm dat een nieuwe gebruiker ziet
+❌ Geen enkele indicatie over wat de AI wél en niet kan verwerken
+❌ Het model laten reageren op buiten-scope vragen die het niet betrouwbaar kan beantwoorden
 
-✅ Een "Guaranteed Win"-eerste sessie met vooraf geschreven prompts op voorbeelddata
-✅ Een permanente "Suggested Prompts"-zijbalk die verankert waar de tool daadwerkelijk voor is
-✅ Guardrail prompting zodat de AI beleefd alles buiten haar bereik weigert
+✅ Een "Gegarandeerde Winst" tijdens de eerste sessie met geteste actieknoppen op voorbeelddata
+✅ Een vaste suggestiebalk die het verwachtingspatroon van de gebruiker direct afkadert
+✅ Guardrail-prompts die de AI niet-relevante vragen beleefd en professioneel laten weigeren
 
-Bij **LaunchStudio** hebben we onboarding en workflowbeperkingen ontworpen voor gereguleerde klanten zoals TNO en CFLW Cyber Strategies. 🛡️
+Bij **LaunchStudio** ontwerpen we onboarding- en workflow-beveiligingen via Manifera voor gereguleerde opdrachtgevers zoals TNO en CFLW Cyber Strategies. 🛡️
 
-Bij Evelyn steeg de retentie in de eerste week met 45%, en daalden supporttickets met 80%. 🚀
+Voor Evelyn steeg de retentie in de eerste week met 45% en daalde het aantal supporttickets met 80%. (€1.600 (Onboarding Tour Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Bekijk de volledige uitleg: [Link naar artikel]
+👉 Ontdek hoe u gebruikersverwachtingen managet met deterministische onboarding: [Link naar artikel]
 
-#AINativeFounder #LaunchStudio #Manifera #OnboardingUX #DeterministicAI
+#AINativeFounder #LaunchStudio #Manifera #OnboardingUX #DeterministicAI #ProductDesign #UserRetention #AISaaS #StartupOpschalen

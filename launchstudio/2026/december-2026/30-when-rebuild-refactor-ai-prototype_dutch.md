@@ -1,99 +1,165 @@
 ---
-Titel: "Wanneer Herbouwen en Wanneer Refactoren: Jouw AI-prototype"
-Trefwoorden: AI-prototype, prototype AI, AI-app bouwen, AI-app bouwen, LaunchStudio, Manifera
+Titel: "Wanneer U Uw AI-Prototype Moet Herbouwen en Wanneer Moet Refactoren"
+Trefwoorden: ai prototype, prototype ai, build ai app, ai build app, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo Founder / Indie Hacker
+Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Wanneer Herbouwen en Wanneer Refactoren: Jouw AI-prototype
+# Wanneer U Uw AI-Prototype Moet Herbouwen en Wanneer Moet Refactoren
 
-Je AI-prototype voelt kapot aan. Elke nieuwe functie breekt iets anders. Je overweegt serieus om helemaal opnieuw te beginnen. Dit moment — starend naar een worstelend prototype en je afvragend of je het moet opgeven — is een van de meest consequente (en meest verkeerd behandelde) beslissingen waar AI-native founders voor staan.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wanneer U Uw AI-Prototype Moet Herbouwen en Wanneer Moet Refactoren",
+  "description": "Oprichters van een haperend AI-prototype denken vaak dat de enige keuzes 'blijven oplappen' of 'vanaf nul opnieuw beginnen' zijn. Ontdek het genuanceerde besliskader.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/when-rebuild-refactor-ai-prototype"
+  }
+}
+</script>
 
-## De Valse Tweedeling waar de Meeste Founders naar Teruggrijpen
+Uw AI-prototype voelt wankel. Bij elke nieuwe functie breekt er ergens anders iets af. U overweegt serieus om de hele codebase weg te gooien en vanaf nul opnieuw te beginnen. Dit beslismoment — staren naar een worstelend prototype en twijfelen over een totale herbouw — is een van de meest ingrijpende (en meest verkeerd aangepakte) keuzes waar AI-oprichters voor staan.
 
-Founders die met een worstelend prototype te maken hebben, zien meestal twee opties: eindeloos oplossingen blijven aanbrengen, of alles wegdoen en opnieuw beginnen. Beide extremen zijn meestal fout. Doorgaan met het patchen van een fundamenteel gebrekkige architectuur verspilt geld aan een fundament dat de toekomst van je product niet kan dragen. Vanaf nul herbouwen gooit gevalideerd ontwerpwerk, gebruikersfeedback en alles wat al werkt weg — vaak het merendeel van het product.
+## De Valse Tweedeling Waar de Meeste Oprichters in Trappen
 
-## Het Echte Kader: Scheid de Lagen
+Oprichters met een instabiel prototype zien doorgaans slechts twee uitersten: eindeloos losse noodreparaties blijven toevoegen, of alles weggooien en met een schone lei beginnen. Beide uitersten zijn meestal fout. Het blijven oplappen van een fundamenteel gebrekkige architectuur verspilt geld aan een basis die de toekomst van uw bedrijf niet kan dragen. Maar alles weggooien vernietigt al het gevalideerde ontwerpmateriaal, de verzamelde gebruikersfeedback en alles wat wél al goed functioneert — vaak het leeuwendeel van uw product.
 
-De juiste vraag is nooit "herbouw of refactor het hele ding" — het is "welke lagen moeten veranderen, en welke niet." Terugkijkend naar de zeven-lagen-stack (frontend, AI/model-laag, authenticatie, database, betalingen, hosting, monitoring), hebben de meeste worstelende AI-prototypes problemen geconcentreerd in twee of drie lagen, niet alle zeven.
+## Het Reële Kader: Splits de Lagen
 
-### Signalen die Wijzen op Refactoren (Behouden, Specifieke Lagen Repareren)
-- Je frontend-ontwerp is gevalideerd door echte gebruikersfeedback en werkt goed
-- Kernfunctielogica produceert correcte, nuttige output
-- Problemen zijn specifiek en identificeerbaar — ontbrekende authenticatie, databasebeveiligingsgaten, geen betalingssysteem
-- De codebase, hoewel imperfect, volgt enkele consistente patronen die jij (of een beoordelaar) kunt traceren
+De juiste vraag is nooit: *"moeten we alles herbouwen of alles refactoren?"* — maar: *"welke specifieke lagen moeten worden vervangen en welke kunnen blijven staan?"* Kijken we naar de zeven functionele softwarelagen (frontend, AI/modellengte, authenticatie, database, betalingen, hosting, monitoring), dan concentreren de problemen bij vrijwel elk vastgelopen AI-prototype zich in slechts twee of drie lagen, en niet in alle zeven.
 
-### Signalen die Wijzen op een Vollediger Herbouw
-- Het kernproductconcept zelf is niet gevalideerd — je weet nog niet zeker of de functieset juist is
-- De codebase heeft zoveel inconsistente, conflicterende logica opgestapeld dat zelfs ervaren engineers moeite hebben om te traceren hoe functies interageren
-- Je doelmarkt of kern-use-case is betekenisvol verschoven sinds je het prototype bouwde
-- De onderliggende framework- of architectuurkeuze is fundamenteel niet afgestemd op de daadwerkelijke vereisten van je product (zeldzaam, maar het gebeurt)
+### Signalen Dat U Moet Refactoren (Behouden en Gericht Repareren)
+- Uw frontend-interface is gevalideerd door feedback van echte gebruikers en werkt prettig.
+- De kernlogica van uw AI-prompts levert kwalitatief goede, bruikbare antwoorden op.
+- De knelpunten zijn specifiek en technisch benoembaar — ontbrekende authenticatie, gaten in de databasebeveiliging of geen abonnementsfacturatie.
+- De codebase vertoont, ondanks imperfecties, consistente patronen die een software-engineer kan ontwarren.
 
-## De Kostenasymmetrie die de Beslissing Moet Sturen
+### Signalen Dat een Volledige Herbouw Nodig Is
+- Het kernconcept van het product is nog helemaal niet gevalideerd bij de doelgroep — u weet nog niet of de functionaliteit überhaupt aanslaat.
+- De codebase bevat zoveel tegenstrijdige en dubbele logica dat zelfs ervaren programmeurs niet meer kunnen herleiden hoe componenten elkaar beïnvloeden.
+- Uw doelgroep of primaire use-case is wezenlijk veranderd sinds het prototype werd gebouwd.
+- De gekozen onderliggende architectuur sluit fundamenteel niet aan bij de prestatie-eisen van uw product (zeldzaam, maar het komt voor).
 
-Een gerichte refactor van specifieke lagen kost doorgaans een fractie van een volledige herbouw, zowel in geld als tijd, omdat het het gevalideerde werk dat je al hebt gedaan, behoudt. Founders die standaard teruggrijpen naar "gewoon herbouwen" zonder deze laag-voor-laag-analyse, betalen vaak voor werk dat ze eigenlijk niet nodig hadden — bijvoorbeeld een frontend-ontwerp herbouwen dat prima werkte.
+## De Kostenasymmetrie Die de Beslissing Zou Moeten Sturen
 
-## Een Objectieve Beoordeling Krijgen
+Een gerichte refactoring van specifieke backend-lagen kost doorgaans slechts een fractie van een volledige herbouw, zowel in geld als in tijd, omdat al het gevalideerde werk intact blijft. Oprichters die zonder deze laag-voor-laag analyse direct voor nieuwbouw kiezen, betalen vaak tienduizenden euro's voor werk dat helemaal niet opnieuw gedaan hoefde te worden — zoals het namaken van een prima werkende frontend.
 
-Omdat founders emotioneel geïnvesteerd zijn in hun eigen prototype (of, omgekeerd, emotioneel uitgeput door de problemen ervan), is een objectieve beoordeling door een derde partij waardevol precies op dit beslissingspunt. [LaunchStudio](https://launchstudio.eu/en/) biedt precies dit soort laag-voor-laag-beoordeling, voortbouwend op Manifera's 160+ geleverde projecten om oprecht kapotte fundamenten te onderscheiden van repareerbare last-mile-gaten — en om eerlijk aan te bevelen wanneer een vollediger herbouw echt de juiste keuze is, ook al betekent die aanbeveling een grotere opdracht.
+## Een Objectieve Beoordeling Vragen
 
-[Laat een eerlijke herbouw-versus-refactor-beoordeling uitvoeren](https://launchstudio.eu/en/#contact) van je worstelende AI-prototype.
+Omdat oprichters emotioneel gehecht zijn aan hun prototype (of juist mentaal uitgeput zijn door de voortdurende storingen), is een nuchtere blik van buitenaf van onschatbare waarde. [LaunchStudio](https://launchstudio.eu/en/) voert deze laag-voor-laag analyses uit, gesteund door Manifera's ervaring met 160+ voltooide softwareprojecten. Wij onderscheiden fundamenteel rotte structuren haarscherp van repareerbare last-mile gaten — en vertellen het eerlijk wanneer een volledige herbouw technisch echt de beste route is.
 
-## Een Zelfdiagnose die je Deze Week Kunt Uitvoeren, Voordat je Betaalt voor Enige Beoordeling
+[Vraag een eerlijke refactor-versus-herbouw beoordeling aan](https://launchstudio.eu/en/#contact) voor uw AI-prototype.
 
-Voordat je een externe beoordeling inschakelt, kunnen founders zelf een ruwe versie van de laag-voor-laag-diagnose uitvoeren, met behulp van signalen die al in hun eigen tools aanwezig zijn. Dit vervangt geen degelijke technische review, maar het vertelt je genoeg om dat gesprek in te gaan met een veel duidelijker beeld van wat er daadwerkelijk mis is, en om te voorkomen dat je een volledige rebuild aangesmeerd krijgt die je niet nodig hebt.
+## Een Zelfevaluatie Die U Deze Week Kunt Uitvoeren (Zonder Kosten)
 
-### Delf je Eigen Bugfix-geschiedenis
-Kijk door je commitgeschiedenis of de chatgeschiedenis van je AI-codeertool over de afgelopen maand en tel welke bestanden of functies steeds opnieuw opduiken als "dit nog een keer repareren." Een patroon waarbij dezelfde twee of drie bestanden steeds terugkeren, wijst op een geconcentreerd, specifiek probleem, vaak authenticatie- of data-scoping-logica, precies het kenmerk van een refactor-kandidaat. Een patroon waarbij reparaties gelijkmatig verspreid zijn over bijna elk bestand in je codebase, zonder enige concentratie, wijst eerder op de systemische, fundamentele problemen die op een vollediger rebuild duiden.
+Vóórdat u een extern advies inwint, kunt u zelf een eerste diagnose stellen aan de hand van gegevens die u al in uw eigen tools heeft:
 
-### Scheid Gebruikersklachten van je Eigen Frustratie
-Houd twee lijsten bij: waar je daadwerkelijke gebruikers over klagen, en wat jou persoonlijk als bouwer frustreert. Deze wijken vaker uiteen dan founders verwachten. Gebruikers kunnen prima tevreden zijn met een interface die een founder is gaan afkeuren om puur esthetische redenen die niets met functie te maken hebben, in welk geval het refactoren van de onderdelen waar gebruikers daadwerkelijk problemen mee ervaren, terwijl gevalideerd ontwerp met rust wordt gelaten, de juiste keuze is, zelfs als het niet de persoonlijke rebuild-kriebel van de founder wegneemt.
+### 1. Analyseer Uw Eigen Bugfix-Geschiedenis
+Blader door uw Git-commitgeschiedenis of de chatgeschiedenis van uw AI-tool van de afgelopen maand. Bekijk welke bestanden telkens terugkeren met meldingen als *"repareer dit opnieuw"*. Komen steeds dezelfde twee of drie bestanden terug (vaak authenticatie of data-rechten)? Dat is het klassieke profiel van een uitstekende refactor-kandidaat. Staan de reparaties kriskras verspreid over vrijwel elk bestand in uw project? Dan duidt dat op een structureel, systemisch probleem richting een herbouw.
 
-### Test de "Traceerbaarheid" van je Eigen Codebase
-Kies één willekeurige functie en probeer, van begin tot eind, elk bestand en elke functie te traceren die betrokken is bij het laten werken ervan. Als jij (of een technische vriend) dit in een redelijke tijd kunt doen, heeft je codebase waarschijnlijk genoeg onderliggende structuur om te refactoren. Als het traceren van zelfs één functie uitmondt in een uren durende kluwen door inconsistente, schijnbaar ongerelateerde bestanden, is dat een echt signaal richting het vollediger-rebuild-eind van het spectrum — niet slechts een gevoel van frustratie, maar een structurele bevinding.
+### 2. Scheid Gebruikersklachten van Uw Persoonlijke Frustratie
+Houd twee lijsten bij: waar klagen uw echte testers over, en wat frustreert u als maker persoonlijk? Deze twee lijken vaak minder op elkaar dan u denkt. Gebruikers kunnen dolblij zijn met een interface waar u zich puur om esthetische redenen aan ergert. In dat geval is het versterken van de backend-stabiliteit voor uw gebruikers de juiste zakelijke keuze, zelfs als het uw drang naar een compleet nieuw design niet bevredigt.
 
-### Controleer of het Kernconcept Zelf Daadwerkelijk is Gevalideerd
-Los van elke vraag over codekwaliteit: heb je echt bewijs — echte gebruikers, echt gebruik, echte betalingsbereidheid — dat het kernproductconcept klopt? Een worstelend prototype waarvan het concept gevalideerd is, is een sterke refactor-kandidaat, hoe rommelig de code ook is. Een worstelend prototype waarvan het concept nog onbewezen is, is een zwakkere rebuild-kandidaat ongeacht de codekwaliteit, omdat de dringendere open vraag product-market fit is, niet de codebase.
+### 3. Toets de Herleidbaarheid van Uw Codebase
+Kies één willekeurige functie en probeer van begin tot eind alle bestanden en functies te traceren die nodig zijn om die functie te laten werken. Kunt u (of een bevriende ontwikkelaar) dit binnen afzienbare tijd overzien? Dan heeft uw codebase voldoende structuur voor een refactor. Loopt het traceren van één simpele actie uit op een urenlange speurtocht door onsamenhangende bestanden? Dat is een reëel structureel signaal voor nieuwbouw.
 
-Voer deze vier controles eerlijk uit, op papier, vóór je eerste gesprek met wie dan ook die een beoordeling aanbiedt. Je haalt meer waarde uit dat gesprek, en je bent veel moeilijker iets aan te smeren, wanneer je al echt signaal in handen hebt in plaats van alleen een vaag, uitgeput gevoel dat "alles kapot is."
+### 4. Controleer of het Kernconcept Zelf Is Gevalideerd
+Los van alle codekwaliteit: heeft u hard bewijs — echte gebruikers, feitelijk dagelijks gebruik, bereidheid om te betalen — dat het kernconcept klopt? Een haperend prototype met een gevalideerd concept is altijd een sterke refactor-kandidaat, hoe rommelig de code ook is. Een haperend prototype waarvan niemand weet of de markt het wil, is een slechte kandidaat voor een dure herbouw, omdat product-market fit de werkelijke onzekere factor is.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: 80% van een "kapot" prototype redden
+### Een AI-native oprichter in actie: 80% van een "onherstelbaar" prototype gered
 
-Jesse, een voormalig magazijnoperatiemanager in Assen, bouwde VoorraadWacht, een AI-gestuurde voorraadalarmtool voor kleine e-commerceverkopers, met Bolt gedurende drie maanden iteratieve toevoegingen. Tegen maand drie was Jesse ervan overtuigd dat het hele ding weggegooid moest worden — elke nieuwe functie leek iets anders te breken, en hij was de codebase tegenover vrienden gaan beschrijven als "aan elkaar geplakt met tape."
+Jesse, voormalig logistiek manager in Assen, bouwde met Bolt VoorraadWacht: een AI-tool voor voorraadwaarschuwingen voor webwinkeliers. Na drie maanden bouwen en uitbreiden liep hij vast; elke nieuwe functie leek de hele applicatie te laten crashen. Jesse dacht dat zijn hele codebase weggegooid moest worden en beschreef de code als *"met plakband aan elkaar geplakt"*.
 
-Jesse nam contact op met LaunchStudio, klaar om een offerte voor een volledige herbouw te bespreken. In plaats daarvan vond de eerste beoordeling van het Manifera-team iets anders: VoorraadWacht's frontend en kern-voorraadalarmlogica waren oprecht solide en waren gevalideerd door de elf e-commerceverkopers die het al informeel gebruikten. De daadwerkelijke problemen waren geconcentreerd in precies twee lagen — geen echte authenticatie (elke gebruiker deelde één login), en geen correcte database-isolatie tussen de voorraadgegevens van verschillende verkopers, wat het gevoel van "alles breekt" verklaarde, aangezien de data van niet-gerelateerde verkopers stilletjes botste.
+Jesse benaderde LaunchStudio voor een offerte voor een complete herbouw vanaf nul. Tijdens de initiële analyse ontdekte het team van Manifera echter iets heel anders: de frontend van VoorraadWacht en de kernlogica van de voorraadberekening zaten uitstekend in elkaar en werden al enthousiast gebruikt door 11 webwinkeliers. De problemen zaten geconcentreerd in exact twee lagen: ontbrekende authenticatie (alle winkels deelden één centrale login) en gebrek aan Row Level Security in de database, waardoor data van verschillende webwinkels onder water met elkaar botste.
 
-In plaats van de volledige herbouw die Jesse dacht nodig te hebben, scopede LaunchStudio een gerichte refactor: correcte authenticatie per verkoper en multi-tenant database-isolatie, terwijl de frontend en kernalarmlogica volledig onaangeroerd bleven.
+In plaats van de dure herbouw voerde LaunchStudio een gerichte refactoring uit: Supabase multi-tenant isolatie en veilige per-winkel accounts, terwijl de frontend en voorraadberekeningen 100% onaangeroerd bleven.
 
-**Resultaat:** VoorraadWacht relanceerde binnen negen werkdagen tegen ongeveer een vijfde van de offerte voor volledige herbouw die Jesse had begroot, met de exacte interface die zijn elf bestaande gebruikers al kenden en waardeerden, nu eindelijk stabiel omdat de daadwerkelijke hoofdoorzaak — niet een symptoom — was gerepareerd.
+**Resultaat:** VoorraadWacht herlanceerde binnen 9 werkdagen voor circa een vijfde van de herbouwkosten die Jesse had begroot. Zijn 11 gebruikers behielden de vertrouwde interface die nu eindelijk stabiel functioneerde.
 
-> *"Ik was klaar om drie maanden werk weg te gooien en opnieuw te beginnen. LaunchStudio bekeek het in één gesprek en vertelde me dat 80% ervan prima was — ik had alleen twee specifieke dingen fout. Die eerlijkheid bespaarde me zowel geld als mijn bestaande gebruikers."*
-> — **Jesse Hendriks, Founder, VoorraadWacht (Assen)**
+> *"Ik stond op het punt om drie maanden werk weg te gooien. LaunchStudio bekeek mijn app en liet me zien dat 80% prima was — ik had alleen twee specifieke backend-problemen. Die eerlijkheid bespaarde me duizenden euro's en behield mijn bestaande gebruikers."*  
+> — **Jesse Hendriks, Oprichter VoorraadWacht (Assen)**
 
-**Kosten & tijdlijn:** €1.900 (Launch Ready Pakket, gerichte refactor) — voltooid in 9 werkdagen.
+**Kosten & tijdlijn:** €1.900 (Launch Ready Pakket, gerichte refactor) — binnen 9 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoe kan ik zien welke lagen van mijn prototype daadwerkelijk kapot zijn versus welke gewoon kapot aanvoelen door ongerelateerde bugs?
+### Hoe weet ik welke lagen van mijn app daadwerkelijk stuk zijn?
+Kijk naar uw storingsgeschiedenis. Symptomen zoals "alles breekt af" herleiden zich in de praktijk vaak tot één of twee kernoorzaken (meestal ontbrekende authenticatie of database-isolatie) in plaats van een falende codebase over de gehele linie.
 
-Dit is precies waarom een externe technische beoordeling waardevol is — symptomen zoals "alles breekt wanneer ik iets verander" zijn vaak terug te voeren op één of twee hoofdoorzaak-lagen (vaak authenticatie of database-isolatie) in plaats van gelijkmatig verdeeld over de hele codebase, zoals Jesses geval illustreert.
+### Is een complete herbouw ooit goedkoper dan een refactor?
+Zelden wanneer de frontend en de kernprompts al zijn gevalideerd door echte gebruikers. Frontend-ontwikkeling vormt een aanzienlijk deel van de totale bouwkosten; het behouden van dat werk is vrijwel altijd veel kapitaalefficiënter.
 
-### Is het ooit goedkoper om vanaf nul te herbouwen dan te refactoren, zelfs als de frontend goed is?
+### Wat als ik al ben begonnen met een herbouw vóórdat ik een audit aanvroeg?
+Dat hangt af van hoe ver u bent. Als de herbouw net is gestart, kan een snelle pas op de plaats veel geld besparen. Is het nieuwe systeem al bijna af en draait het stabiel, dan is afmaken meestal logischer.
 
-Zelden, als het frontend-ontwerp oprecht is gevalideerd. De kosten van frontend-ontwerp en -ontwikkeling zijn meestal een aanzienlijk deel van de totale bouwkosten, dus gevalideerd frontend-werk behouden terwijl specifieke backend-lagen worden gerepareerd, is bijna altijd kapitaalefficiënter dan een volledige herbouw.
+### Duurt een refactor in de praktijk echt veel korter dan nieuwbouw?
+Ja, aanzienlijk. Een refactor bouwt voort op bestaande, gevalideerde code in plaats van bij nul te beginnen. Jesse's doorlooptijd van 9 werkdagen versus maandenlange nieuwbouw illustreert dit verschil.
 
-### Wat als ik al heb geïnvesteerd in een herbouw voordat ik een beoordeling kreeg — is het te laat om te heroverwegen?
+### Hoe voorkom ik dat mijn app over zes maanden weer vastloopt?
+Door proactief technisch schuldbeheer en duidelijke documentatie. LaunchStudio levert na de refactor overzichtelijke architectuurdocumentatie op, zodat u en uw AI-assistent voortaan op een stabiel fundament verder bouwen.
 
-Het hangt af van hoe ver de herbouw is gevorderd. Als het vroeg is, kan pauzeren om een beoordeling te krijgen tegen het originele prototype nog steeds geld besparen. Als aanzienlijk herbouwwerk al voltooid is en goed functioneert, kan doorgaan verstandiger zijn dan halverwege stoppen — dit is een geval-per-geval-oordeel dat een eerlijk gesprek waard is.
-
-### Duurt een refactor betekenisvol minder tijd dan een herbouw in de praktijk?
-
-Over het algemeen wel, vaak met een aanzienlijke marge, precies omdat een refactor werkt binnen en rond bestaande gevalideerde code in plaats van vanaf nul te beginnen. Jesses negen-dagen-refactor-tijdlijn versus een typische meerdere-weken-tot-meerdere-maanden-herbouw-tijdlijn illustreert het gebruikelijke verschil.
-
-### Hoe voorkom ik dat ik over zes maanden opnieuw met deze herbouw-versus-refactor-beslissing te maken krijg?
-
-Proactief technisch-schuldbeheer (documentatie, consistente patronen, periodieke beoordeling) vermindert de kans om opnieuw een volledig crisispunt te bereiken. LaunchStudio documenteert de architectuur na de refactor doorgaans duidelijk, specifiek zodat founders kunnen blijven voortbouwen op een stabiel fundament zonder hetzelfde opstapelingspatroon te herhalen.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik welke lagen van mijn app daadwerkelijk stuk zijn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak herleidt 'alles is stuk' zich tot 1 of 2 kernlagen, zoals ontbrekende authenticatie of ontbrekende Row Level Security in de database."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is een complete herbouw ooit goedkoper dan een refactor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zelden bij een gevalideerde interface. Het behouden van uw bestaande frontend en promptlogica bespaart een groot deel van de kosten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat als ik al ben begonnen met een herbouw?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In een vroege fase kan stoppen en refactoren veel geld besparen; bij vergevorderde nieuwbouw is afmaken vaak logischer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Duurt een refactor in de praktijk echt veel korter dan nieuwbouw?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Een gerichte refactor duurt bij LaunchStudio 1-2 weken, terwijl complete nieuwbouw via traditionele bureaus maanden duurt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe voorkom ik dat mijn app over zes maanden weer vastloopt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LaunchStudio levert duidelijke architectuurdocumentatie op zodat u met AI-tools binnen consistente standaarden blijft doorbouwen."
+      }
+    }
+  ]
+}
+</script>

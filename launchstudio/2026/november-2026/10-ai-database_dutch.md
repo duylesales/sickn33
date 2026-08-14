@@ -1,22 +1,22 @@
 ---
-Title: Uw Gegevens Beschermen met Goede AI Database Architectuur
-Keywords: AI database, AI for db, AI in database, AI frontend, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: Technical Solo Founder / Indie Hacker
+Titel: "Bescherm Uw Gegevens Met Een Professionele AI-Database-Architectuur"
+Trefwoorden: AI database, AI voor db, AI in database, AI frontend, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Uw Gegevens Beschermen met Goede AI Database Architectuur
+# Bescherm Uw Gegevens Met Een Professionele AI-Database-Architectuur
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI Database Architectuur: Stop Met Uw Frontend Direct Met Uw Data Te Laten Praten",
-  "description": "AI-coding tools genereren directe client-to-database verbindingen die data lekken, slecht presteren en niet kunnen schalen. Leer de juiste AI-database architectuur voor productie-applicaties kennen en ontdek waarom server-side datatoegang onbespreekbaar cruciaal is.",
+  "headline": "AI-Database-Architectuur: Laat Uw Frontend Niet Rechtstreeks Met Uw Data Praten",
+  "description": "AI-codetools genereren directe client-naar-database verbindingen die data lekken, traag zijn en niet kunnen schalen. Leer de juiste AI-database-architectuur voor productieapplicaties.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/nl/"
+    "url": "https://launchstudio.eu/en/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,134 +26,126 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "datePublished": "2026-11-10",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/nl/blog/ai-database"
+    "@id": "https://launchstudio.eu/en/blog/ai-database"
   }
 }
 </script>
 
-Open nu meteen de developer tools in uw browser. Navigeer naar het tabblad Network. Laad uw door AI gegenereerde applicatie. Kijk naar de verzoeken (requests) die uw frontend doet.
+Open nu de ontwikkelaarstools (DevTools) van uw browser. Ga naar het tabblad *Netwerk* (Network). Laad uw met AI gegenereerde applicatie en bekijk de verzoeken die uw frontend verstuurt.
 
-Als u directe Supabase- of Firebase-queries de browser ziet verlaten — `.from('users').select('*')` of `collection('payments').get()` — dan is uw database in wezen openbaar (public). Elke query die uw frontend uitvoert, is zichtbaar voor elke gebruiker. Elke tabel die uw applicatie aanraakt, is toegankelijk voor iedereen die de browserconsole opent en een aangepaste query typt.
+Ziet u rechtstreekse Supabase- of Firebase-queries de browser verlaten — zoals `.from('users').select('*')` of `collection('payments').get()` — dan is uw database in feite openbaar. Elke query die uw frontend uitvoert, is zichtbaar voor elke gebruiker. Elke tabel die uw applicatie aanraakt, is toegankelijk voor iedereen die de browserconsole opent en een aangepaste query intypt.
 
-Dit is geen hypothetische kwetsbaarheid. Het is de standaardarchitectuur die AI-coding tools genereren. En het is zonder twijfel het gevaarlijkste patroon in het AI-database landschap.
+Dit is geen hypothetisch risico. Het is de standaardarchitectuur die AI-codetools genereren. En het is het gevaarlijkste ontwerppatroon in het moderne AI-landschap.
 
-## Hoe AI-Tools Databaseverbindingen Bouwen (Op De Verkeerde Manier)
+## Hoe AI-Tools Databaseverbindingen (Foutief) Inrichten
 
-Wanneer u Lovable de prompt geeft om "een database voor gebruikersprofielen toe te voegen", genereert het zoiets als dit:
+Wanneer u Lovable vraagt om *"een database voor gebruikersprofielen toe te voegen"*, genereert het doorgaans code zoals deze:
 
 ```javascript
-// Deze code draait in de browser — zichtbaar voor iedereen
+// This code runs in the browser — visible to everyone
 const { data, error } = await supabase
   .from('profiles')
   .select('*')
   .eq('user_id', userId)
 ```
 
-Deze query draait in de browser van de gebruiker. De Supabase URL en de anonieme sleutel (anon key) zitten in de JavaScript-bundle. Zonder Row Level Security (RLS) zal het veranderen van de `userId` naar een willekeurige andere waarde het profiel van díé specifieke gebruiker retourneren. Zonder specifieke kolomselectie retourneert `select('*')` elke kolom, inclusief velden die u nooit openbaar had willen maken (zoals interne notities, beheerdersvlaggen of betalingsmetadata).
+Deze query draait volledig in de browser van de eindgebruiker. De Supabase URL en de anonieme publieke sleutel bevinden zich in de JavaScript-bundel. Zonder Row Level Security (RLS) levert het aanpassen van `userId` naar een andere waarde direct het profiel van die andere gebruiker op. Zonder expliciete kolomselectie retourneert `select('*')` bovendien álle kolommen, inclusief velden die u nooit openbaar had willen maken (zoals interne notities, admin-rechten of betalingsgegevens).
 
-AI-tools genereren dit patroon omdat het simpelweg werkt. Het retourneert data. Het prototype oogt functioneel. Maar architecturaal gezien staat dit gelijk aan het geven van een directe verbinding met uw productiedatabase aan élke individuele gebruiker.
+AI-tools kiezen voor dit patroon omdat het direct werkt en het prototype er functioneel uitziet. Maar architectonisch staat het gelijk aan het geven van een directe database-verbinding aan iedere willekeurige bezoeker.
 
-## De Drie-Lagen AI Database Architectuur
+## De Drielagige AI-Database-Architectuur
 
-Productie-applicaties gebruiken een architectuur van drie lagen (three-layer architecture) die de frontend volledig scheidt van de database:
+Productietoepassingen hanteren een drielagige architectuur die de frontend volledig scheidt van de database:
 
-### Laag 1: Frontend (Client)
-De React/Next.js-applicatie die in de browser van de gebruiker draait. Deze stuurt uitsluitend verzoeken naar uw API, nooit direct naar de database. De frontend ontvangt alleen de data die nodig is, in het juiste formaat, waarbij gevoelige velden reeds aan de achterkant zijn verwijderd.
+### Laag 1: De Frontend (Client)
+De React/Next.js-applicatie die draait in de browser van de gebruiker. Deze stuurt uitsluitend verzoeken naar uw eigen API, nooit rechtstreeks naar de database. De frontend ontvangt enkel de data die strikt nodig is, met gevoelige velden vooraf verwijderd.
 
-### Laag 2: API (Server)
-Server-side functies (Next.js API routes, Edge Functions of een dedicated backend) die frontend-verzoeken ontvangen, authenticatie valideren, autorisatie controleren, invoer ontsmetten (sanitize), de database bevragen (queryen), het antwoord filteren en uitsluitend de geautoriseerde data retourneren.
+### Laag 2: De API (Server)
+Server-side functies (Next.js API routes, Edge Functions of een dedicated backend) die verzoeken ontvangen, authenticatie en autorisatie verifiëren, invoer valideren en ontsmetten, de database bevragen en een gefilterde respons terugsturen.
 
-### Laag 3: Database (Storage)
-PostgreSQL (Supabase), MongoDB of Firebase mét Row Level Security (RLS) policies, correcte indexering en geautomatiseerde back-ups. De database dwingt data-isolatie af als laatste verdedigingslinie, zelfs als de API-laag een bug zou bevatten.
+### Laag 3: De Database (Opslag)
+PostgreSQL (Supabase), MongoDB of Firebase met strikte Row Level Security policies, database-indexen en geautomatiseerde back-ups. De database bewaakt de data-isolatie als laatste verdedigingslinie, zelfs als er een bug in de API-laag zou zitten.
 
-Deze architectuur voegt een minimale hoeveelheid latentie toe (doorgaans 10–50ms), maar levert enorme voordelen op het gebied van veiligheid en prestaties:
+Deze architectuur voegt een minieme latentie toe (10–50ms), maar levert enorme voordelen op voor veiligheid en prestaties:
 
-| Metriek (Metric) | Direct Client-DB | Drie-Lagen Architectuur |
+| Criterium | Direct Client-DB | Drielagige Architectuur |
 |---|---|---|
-| Risico op datablootstelling | Kritiek — elke gebruiker kan alle data queryen | Minimaal — API beheert alle datatoegang |
-| Query-optimalisatie | Geen — frontend stuurt wat de AI heeft gegenereerd | Volledig — server optimaliseert query's, voegt caching toe |
-| Schaalbaarheid (Scalability) | Slecht — elke gebruiker opent een db-connectie | Goed — connection pooling handelt duizenden gebruikers af |
-| Gevoelige data | Zichtbaar in de network tab | Verlaat de server nooit |
+| Datalekrisico | Kritiek — elke bezoeker kan data opvragen | Minimaal — API controleert alle toegang |
+| Query-optimalisatie | Geen — frontend stuurt wat AI genereerde | Volledig — server optimaliseert en cachet |
+| Schaalbaarheid | Matig — elke gebruiker opent een DB-verbinding | Uitstekend — connection pooling vangt pieken op |
+| Gevoelige velden | Zichtbaar in het netwerktabblad | Verlaat de server nooit |
 | Rate limiting | Onmogelijk | Ingebouwd in de API-laag |
-| Audit logging | Onmogelijk | Elke datatoegang wordt gelogd |
+| Auditing & Logging | Onmogelijk | Elke gegevensopvraging wordt geregistreerd |
 
-## Waarom Row Level Security Noodzakelijk, Maar Niet Voldoende Is
+## Waarom Row Level Security Noodzakelijk Maar Niet Voldoende Is
 
-Row Level Security (RLS) van Supabase wordt vaak gepresenteerd als dé heilige graal voor AI-database veiligheidsproblemen. Het helpt enorm, maar op zichzelf is het niet voldoende.
+Supabase's Row Level Security (RLS) wordt vaak gepresenteerd als de totaaloplossing voor databasebeveiliging. Het is essentieel, maar op zichzelf niet toereikend.
 
-RLS-policies vertellen de database: "Gebruiker A mag alleen rijen (rows) lezen waarbij `user_id = ID van Gebruiker A` is." Dit voorkomt de meest fundamentele datalekken — Gebruiker A kan de records van Gebruiker B niet lezen door de query-parameter aan te passen.
+RLS vertelt de database: *"Gebruiker A mag alleen rijen lezen waar `user_id = Gebruiker A`"*. Dit voorkomt dat Gebruiker A records van Gebruiker B inziet via query-aanpassingen.
 
-Maar RLS heeft beperkingen:
+RLS kent echter duidelijke grenzen:
 
-- **Beveiliging op kolomniveau (Column-level security)** — RLS opereert op rijen, niet op kolommen. Als u een tabel heeft met zowel openbare als privékolommen, kan RLS bepaalde kolommen niet verbergen voor specifieke gebruikers. U heeft een server-side API nodig om kolommen te filteren vóórdat u data retourneert.
+- **Kolomniveau-beveiliging** — RLS filtert rijen, geen kolommen. Als een tabel zowel openbare als interne kolommen bevat, kan RLS specifieke kolommen niet selectief verbergen. Daarvoor is een server-side API nodig.
+- **Complexe bedrijfslogica** — Toegangsregels hangen vaak af van externe factoren die de database niet kent: abonnementsvorm, tijdelijke rechten of teamhiërarchieën. Deze horen thuis in de API-laag.
+- **Validatie van schrijfacties** — RLS kan ongeoorloofde leesacties blokkeren, maar het valideren van correcte invoer bij schrijfoperaties vereist server-side validatie.
+- **Prestaties** — Complexe RLS-policies vertragen queries. Een gestructureerde API-laag met gerichte queries en caching presteert aanzienlijk beter.
 
-- **Complexe bedrijfslogica (Business logic)** — Sommige toegangsregels zijn afhankelijk van factoren die de database niet kent: abonnementsniveau, tijdsgebonden toegang, feature flags of teamhiërarchieën. Deze regels móéten worden afgedwongen in de API-laag.
+## Van Directe Verbinding Naar Een Solide Productie-Architectuur
 
-- **Schrijfvalidatie (Write validation)** — RLS kan ongeautoriseerd lezen voorkomen, maar het valideren van schrijfoperaties (ervoor zorgen dat een gebruiker geldige data in het juiste formaat met gepaste waarden indient) vereist server-side validatie die RLS simpelweg niet kan bieden.
+[LaunchStudio](https://launchstudio.eu/en/) transformeert kwetsbare directe database-verbindingen systematisch naar veilige drielagige infrastructuren:
 
-- **Prestaties (Performance)** — Complexe RLS-policies voegen overhead toe aan elke query. Een goed ontworpen API-laag met gerichte queries en caching presteert aanzienlijk beter dan een frontend die brede queries afvuurt die vervolgens zwaar moeten worden gefilterd door RLS-policies.
+**Stap 1:** Audit van alle frontend database-queries en categorisering op gevoeligheid
+**Stap 2:** Aanmaken van server-side API-routes voor elke query-categorie
+**Stap 3:** Implementatie van authenticatie-middleware op alle routes
+**Stap 4:** Toevoegen van inputvalidatie en data-ontsmetting
+**Stap 5:** Inrichten van RLS-policies als verdediging in de diepte
+**Stap 6:** Aanmaken van database-indexen voor query-optimalisatie
+**Stap 7:** Configureren van connection pooling voor duizenden gelijktijdige gebruikers
+**Stap 8:** Inrichten van geautomatiseerde back-ups en migratiestructuren
 
-## Van Frontend-Naar-Database Naar Productie-Architectuur
+Deze transformatie is een van de meest gevraagde diensten voor [Manifera's](https://www.manifera.com/services/custom-software-development/) engineeringteam. Met ervaring in meer dan 160 projecten en diepgaande expertise in PostgreSQL, MongoDB en Supabase, voert het team aan de Pho Quangstraat 10 in Ho Chi Minhstad dit snel en vakkundig uit, onder projectmanagement vanuit Herengracht 420 in Amsterdam.
 
-[LaunchStudio](https://launchstudio.eu/nl/) transformeert AI-gegenereerde, directe database-architecturen naar robuuste drie-lagen systemen. Het proces is systematisch:
+Herre Roelevink, CEO van Manifera en LaunchStudio: *"Bij vrijwel elk beveiligingsincident dat we voor startups hebben onderzocht, was de oorzaak dezelfde: de AI-tool verbond de browser rechtstreeks met de database. De oplossing is altijd helder: plaats er een professionele serverlaag tussen."*
 
-**Stap 1:** Audit van alle frontend database-queries en categoriseren op basis van gevoeligheid.
-**Stap 2:** Creëren van server-side API-routes voor elke query-categorie.
-**Stap 3:** Implementeren van authenticatie-middleware op alle API-routes.
-**Stap 4:** Toevoegen van input-validatie en ontsmetting (sanitization).
-**Stap 5:** Configureren van RLS-policies als extra defense-in-depth laag.
-**Stap 6:** Toevoegen van database-indexen voor query-optimalisatie.
-**Stap 7:** Implementeren van connection pooling voor ondersteuning van gelijktijdige gebruikers.
-**Stap 8:** Instellen van geautomatiseerde back-ups en migratie-infrastructuur.
+[Vraag een gratis database-architectuurbeoordeling aan](https://launchstudio.eu/en/#contact).
 
-Deze transformatie is een van de meest voorkomende opdrachten voor het engineeringteam van [Manifera](https://www.manifera.com/services/custom-software-development/). Met ervaring in 160+ projecten en diepgaande expertise in PostgreSQL, MongoDB en Supabase, voert het team (gevestigd aan Pho Quang Street 10, Ho Chi Minh City) database-architectuurtransformaties uiterst efficiënt uit, strak aangestuurd door Europees projectmanagement vanuit de Herengracht 420 in Amsterdam.
+## Echt voorbeeld
 
-Herre Roelevink, die leidinggeeft aan zowel Manifera als LaunchStudio, beschouwt database-architectuur als het absolute fundament: *"Elk veiligheidsincident dat we voor oprichters hebben onderzocht, was terug te voeren op dezelfde onderliggende oorzaak — de AI-tool verbond de browser direct met de database. De oplossing is altijd dezelfde: plaats er een degelijke server-laag tussen."*
+### Een AI-Native Oprichter in de Praktijk: Het CRM Dat Alle Klantgegevens Met Iedereen Deelde
 
-[Stuur ons uw prototype voor een gratis AI database-architectuur beoordeling](https://launchstudio.eu/nl/#contact).
+Hannah, een recruitmentconsultant in Breda, gebruikte Lovable om een recruitment-CRM te bouwen waarin haar team kandidatenprofielen kon beheren en shortlists kon delen met opdrachtgevers.
 
-## Praktijkvoorbeeld
+Tijdens een live demonstratie aan een hiring manager van een logistiek bedrijf ging het mis. Toen Hannah naar het kandidatenoverzicht navigeerde, zag de manager direct een bekende naam staan — een kandidaat die gesolliciteerd had bij zijn directe concurrent. Hannah ontdekte tot haar ontzetting dat het CRM alle kandidaten van alle opdrachtgevers tegelijk toonde. Er was geen enkele data-isolatie.
 
-### Een AI-Native Founder in de praktijk: Het CRM Dat De Gegevens Van Alle Klanten Aan Iedereen Liet Zien
+Onderzoek wees uit dat Lovable directe Supabase-queries vanuit de frontend had gegenereerd zonder RLS-policies. De `candidates`-tabel had geen afgedwongen `client_id`-filter. Elke ingelogde gebruiker kon alle kandidaten van alle opdrachtgevers inzien — een rampzalig privacy-incident in de recruitmentsector.
 
-Hannah, een recruitmentconsultant in Breda, gebruikte Lovable om een recruitment-CRM te bouwen. Hiermee kon haar team kandidaatprofielen beheren, hiring pipelines volgen en shortlists delen met bedrijven (haar klanten).
+Hannah haalde de applicatie direct offline en benaderde LaunchStudio. Het team van Manifera behandelde de aanvraag met prioriteit. Binnen 6 werkdagen implementeerden zij een complete drielagige architectuur: server-side API-routes met strikt gescheiden queries per klant, RLS-policies op alle tabellen, audit-logging en rolgebaseerde toegangscontrole (admin recruiter, team recruiter, klant-viewer).
 
-Tijdens een demonstratie aan een klant sloeg het noodlot toe. Terwijl ze het platform toonde aan een hiring manager van een logistiek bedrijf, navigeerde Hannah naar de pijplijn met kandidaten. De hiring manager zag een naam die hij herkende — een kandidaat die bij zijn concurrent had gesolliciteerd. Hannah besefte onmiddellijk dat het CRM álle kandidaten over álle klantaccounts heen toonde. Er was totaal geen data-isolatie.
+**Resultaat:** RecruitFlow herlanceerde met waterdichte data-isolatie. Hannah bedient inmiddels 7 bedrijven (€299/maand per klant) en kon met succes een AVG-beveiligingsaudit van een grote enterprise-klant doorstaan.
 
-Onderzoek bracht het probleem aan het licht: Lovable had directe Supabase-queries gegenereerd vanuit de frontend zonder enige RLS-policies. De `candidates`-tabel had geen `client_id`-filter dat op databaseniveau werd afgedwongen. Elke ingelogde gebruiker kon elke kandidaat over elk klantaccount inzien — een catastrofale schending van de vertrouwelijkheid in de recruitmentbranche.
-
-Hannah haalde de applicatie direct offline en nam diezelfde middag nog contact op met LaunchStudio. Het team van Manifera behandelde het als een spoedopdracht. Binnen 6 werkdagen implementeerden ze een complete drie-lagen architectuur: server-side API-routes met client-scoped queries, RLS-policies op elke tabel, audit logging voor compliance, en correcte 'role-based access' (beherend recruiter, team recruiter, meekijkende klant).
-
-**Resultaat:** RecruitFlow werd opnieuw gelanceerd met waterdichte data-isolatie. Hannah bedient nu 7 klantbedrijven, die elk €299/maand betalen, in de absolute wetenschap dat klant A nooit de kandidaten van klant B te zien krijgt. Het platform doorstond glansrijk een GDPR-compliance audit, uitgevoerd door een van haar enterpriseklanten.
-
-> *"Eén enkele demo vernietigde bijna mijn bedrijf. LaunchStudio heeft mijn database-architectuur in minder dan een week herbouwd. Nu heb ik enterpriseklanten die om beveiligingsdocumentatie vragen, en ik kan die daadwerkelijk leveren."*
+> *"Eén demo had bijna mijn hele bedrijf geruïneerd. LaunchStudio herbouwde mijn database-architectuur in minder dan een week. Nu vragen zakelijke klanten om beveiligingsdocumentatie en kan ik die met trots overhandigen."*
 > — **Hannah van den Berg, Oprichter, RecruitFlow (Breda)**
 
-**Kosten & Tijdlijn:** €3.400 (Launch & Grow Pakket) — productie-klaar en live in 6 werkdagen.
+**Kosten & Doorlooptijd:** €3.400 (Launch & Grow Pakket) — productie-klaar en live binnen 6 werkdagen.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### (Scenario: Oprichter die Supabase gebruikt met standaardinstellingen) Hoe weet ik of mijn Supabase-database Row Level Security heeft ingeschakeld?
+### Hoe controleer ik of Row Level Security is ingeschakeld in mijn Supabase-database?
+Ga in het Supabase-dashboard naar Authentication > Policies. Ziet u "No policies created" bij uw tabellen, dan staat RLS uit of zijn er geen regels actief — in beide gevallen ligt uw data open. LaunchStudio controleert uw configuratie en richt sluitende RLS-policies in.
 
-Navigeer in het Supabase-dashboard naar Authentication > Policies. Als u "No policies created" ziet voor uw tabellen, is RLS ofwel uitgeschakeld, of ingeschakeld zonder policies — in beide gevallen liggen uw data open en bloot op straat. LaunchStudio auditeert uw Supabase-configuratie en implementeert correcte RLS-policies als vast onderdeel van elke opdracht.
+### Moet ik Supabase of Firebase kiezen voor mijn AI-database?
+Supabase heeft over het algemeen de voorkeur voor met AI gebouwde SaaS-applicaties omdat het gebruikmaakt van relationele PostgreSQL, robuuste Row Level Security biedt en complexe SQL-queries ondersteunt. Firebase (NoSQL) maakt relationeel data- en rechtenbeheer aanzienlijk complexer.
 
-### (Scenario: Technische oprichter die kiest tussen Supabase en Firebase) Moet ik Supabase of Firebase gebruiken voor mijn AI-database?
+### Wat kost een productiewaardige AI-database per maand?
+De gratis tier van Supabase is toereikend voor vroege startups (tot 500MB data, 2GB bandbreedte). Het Pro-plan van $25/maand ondersteunt duizenden actieve gebruikers. LaunchStudio voegt caching toe om het dataverbruik minimaal te houden.
 
-Supabase is over het algemeen beter voor met AI gebouwde applicaties omdat het PostgreSQL (de industriestandaard voor relationele databases) gebruikt, Row Level Security biedt en SQL-toegang toelaat voor complexe queries. Firebase gebruikt NoSQL (Firestore), wat flexibel is, maar data-relaties en toegangscontrole zijn lastiger af te dwingen. LaunchStudio heeft ervaring met beide, maar raadt Supabase aan voor de meeste SaaS-applicaties.
+### Kan LaunchStudio een database herstructureren die al echte gebruikersdata bevat?
+Ja. De engineers van LaunchStudio schrijven veilige migratiescripts die het databaseschema herstructureren en RLS toevoegen zónder enig verlies van bestaande klantgegevens. Manifera heeft honderden live migraties foutloos uitgevoerd.
 
-### (Scenario: Oprichter die bezorgd is over schaalbaarheid van databasekosten) Hoeveel kost een productie AI-database per maand?
-
-De 'free tier' (gratis niveau) van Supabase is voldoende voor de meeste vroege-fase (early-stage) applicaties (tot 500MB opslag, 2GB bandbreedte). Het Pro-abonnement van $25/maand dekt groei tot duizenden gebruikers. De free tier van Firebase is vergelijkbaar. LaunchStudio optimaliseert uw database-queries en voegt caching toe om het verbruik van bronnen (resources) te minimaliseren, waardoor de kosten tijdens de groei laag blijven.
-
-### (Scenario: Oprichter die moet migreren van een slecht gestructureerde database) Kan LaunchStudio een database repareren die al gebruikersdata bevat?
-
-Ja. Het team van LaunchStudio schrijft migratiescripts die uw database herstructureren met behoud van alle bestaande data. Dit omvat het toevoegen van RLS-policies, het creëren van correcte indexen, het normaliseren van schema-relaties en het implementeren van back-upsystemen — en dit alles zonder enig dataverlies. Het team van Manifera heeft reeds honderden live database-migraties succesvol uitgevoerd.
-
-### (Scenario: Enterpriseklant die informeert naar datalocatie/data residency) Kan LaunchStudio garanderen dat mijn AI-database gegevens in de EU opslaat?
-
-Ja. Supabase biedt database-hosting in de EU-regio (Frankfurt, Duitsland). LaunchStudio configureert uw database in de EU-regio en zorgt ervoor dat alle gegevensverwerking voldoet aan de GDPR-eisen voor datalocatie (data residency). Het Europese hoofdkantoor van Manifera in Amsterdam houdt toezicht op de EU-compliancevereisten.
+### Kan LaunchStudio garanderen dat mijn AI-database data binnen de Europese Unie opslaat?
+Zeker. Supabase biedt EU-datacenters (o.a. Frankfurt). LaunchStudio configureert uw database in de EU-regio en zorgt dat alle dataverwerking volledig voldoet aan de Europese AVG/GDPR-standaarden.
 
 <script type="application/ld+json">
 {
@@ -162,42 +154,42 @@ Ja. Supabase biedt database-hosting in de EU-regio (Frankfurt, Duitsland). Launc
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe weet ik of mijn Supabase-database Row Level Security heeft ingeschakeld?",
+      "name": "Hoe controleer ik of Row Level Security is ingeschakeld in mijn Supabase-database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Navigeer in het Supabase-dashboard naar Authentication > Policies. Als u 'No policies created' ziet voor uw tabellen, is RLS ofwel uitgeschakeld, of ingeschakeld zonder policies — in beide gevallen liggen uw data open en bloot op straat. LaunchStudio auditeert uw Supabase-configuratie en implementeert correcte RLS-policies."
+        "text": "Controleer Authentication > Policies in Supabase. Zonder actieve policies ligt uw data open. LaunchStudio stelt sluitende RLS-regels voor u in."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet ik Supabase of Firebase gebruiken voor mijn AI-database?",
+      "name": "Moet ik Supabase of Firebase kiezen voor mijn AI-database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Supabase is over het algemeen beter voor met AI gebouwde applicaties omdat het PostgreSQL (relationeel) gebruikt, Row Level Security biedt en SQL-toegang toelaat. Firebase gebruikt NoSQL (Firestore), wat flexibel is maar relaties lastiger maakt. LaunchStudio raadt Supabase aan voor de meeste SaaS-applicaties."
+        "text": "Supabase (PostgreSQL) is aanbevolen voor SaaS dankzij relationele structuur en krachtige Row Level Security. Firebase is minder geschikt voor complexe rechten."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel kost een productie AI-database per maand?",
+      "name": "Wat kost een productiewaardige AI-database per maand?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De gratis laag van Supabase is voldoende voor de meeste vroege-fase applicaties (tot 500MB opslag). Het Pro-abonnement van $25/maand dekt groei tot duizenden gebruikers. LaunchStudio optimaliseert queries en voegt caching toe om bronnen te minimaliseren, waardoor kosten laag blijven."
+        "text": "Supabase start gratis en kost $25/maand voor het Pro-plan. Met LaunchStudio's caching blijven uw operationele kosten minimaal."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio een database repareren die al gebruikersdata bevat?",
+      "name": "Kan LaunchStudio een database herstructureren die al echte gebruikersdata bevat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Het team van LaunchStudio schrijft migratiescripts die uw database herstructureren met behoud van alle bestaande data. Dit omvat het toevoegen van RLS-policies, correcte indexen en back-upsystemen — zonder enig dataverlies."
+        "text": "Ja, via op maat gemaakte migratiescripts voegen we RLS en indexen toe met 100% behoud van bestaande data en nul downtime."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio garanderen dat mijn AI-database gegevens in de EU opslaat?",
+      "name": "Kan LaunchStudio garanderen dat mijn AI-database data binnen de Europese Unie opslaat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Supabase biedt database-hosting in de EU-regio (Frankfurt, Duitsland). LaunchStudio configureert uw database in de EU-regio en zorgt ervoor dat alle gegevensverwerking voldoet aan de GDPR-eisen voor datalocatie. Manifera's kantoor in Amsterdam houdt toezicht op EU-compliance."
+        "text": "Ja, door datacenters in de EU (zoals Frankfurt) te configureren conform alle AVG/GDPR-eisen voor data-residentie."
       }
     }
   ]

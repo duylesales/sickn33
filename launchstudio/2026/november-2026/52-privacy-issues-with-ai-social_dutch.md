@@ -1,14 +1,14 @@
-❌ Als jouw B2B SaaS een standalone vector database gebruikt, faal je waarschijnlijk voor je volgende GDPR-audit.
+❌ Als uw B2B SaaS een losse vectordatabase gebruikt, faalt u waarschijnlijk voor uw volgende AVG-audit.
 
-Waarom? Het "Recht om Vergeten te Worden". Als een gebruiker zijn account verwijdert, blijven de vector embeddings vaak als wezen achter in je AI-pijplijn.
+Waarom? Het "Recht op Vergetelheid". Verwijdert een gebruiker zijn account in uw hoofddatabase, dan blijven zijn vector-embeddings vaak als weesdata achter in de AI-pijplijn.
 
-Om privacyproblemen met AI op te lossen, móét je compliance direct in je infrastructuur engineeren:
-1️⃣ Gebruik `pgvector` om vectoren in PostgreSQL te houden. Dit maakt `ON DELETE CASCADE` mogelijk voor onmiddellijke, mathematische verwijdering.
-2️⃣ Deploy lokale PII Masking Proxies om namen weg te scrubben *vóórdat* ze de LLM bereiken.
-3️⃣ Dwing Row Level Security (RLS) af om het bloeden van data tussen klanten fysiek onmogelijk te maken.
+Om privacy-issues met AI structureel op te lossen moet u compliance verankeren in de infrastructuur:
+1️⃣ Gebruik `pgvector` in PostgreSQL voor `ON DELETE CASCADE` en directe wiskundige verwijdering.
+2️⃣ Plaats lokale PII-masking proxies om namen te anonimiseren vóórdat ze het model bereiken.
+3️⃣ Dwing Row Level Security (RLS) af om datalekken tussen klanten fysiek te voorkomen.
 
-Als je AI niet legaal is, maakt het niet uit hoe slim hij is.
+Als uw AI niet legaal is, maakt het niet uit hoe slim hij is.
 
-Lees hier hoe LaunchStudio GDPR-compliance in RAG pipelines engineert: [Link]
+Ontdek hoe LaunchStudio AVG-compliance inricht in RAG-pijplijnen: [Link]
 
-#AIPrivacy #GDPR #DataProtection #CTO #VectorDatabase #RAG #SaaS #LaunchStudio
+#AIPrivacy #GDPR #AVG #DataProtection #CTO #VectorDatabase #RAG #SaaS #LaunchStudio

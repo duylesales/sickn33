@@ -1,139 +1,138 @@
 ---
-Titel: Het Snijvlak van Security And AI in 2026
-Trefwoorden: AI SaaS, Onderhandelen, B2B, SaaS, Enterprise, Contracten
+Titel: "Onderhandelen over B2B SaaS Enterprise-Contracten: Een Gids voor Oprichters"
+Trefwoorden: AI SaaS, AI SaaS platform, AI en softwareontwikkeling, app bouwen met AI, AI-native, AI deployment, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Het Snijvlak van Security And AI in 2026
-Je hebt het directieteam overtuigd. Ze zijn dol op uw software en het prijskaartje van $ 100.000. Maar de deal is niet gesloten. Je bent slechts doorgedrongen tot de eindbaas: Inkoop. De enige taak van de inkoopafdeling is het beschermen van de onderneming tegen risico's en het verkrijgen van maximale concessies van leveranciers. Als u de juridische hefbomen van een B2B SaaS-contract niet begrijpt, tekent u een deal die uw startup failliet kan laten gaan.
+# Onderhandelen over B2B SaaS Enterprise-Contracten: Een Gids voor Oprichters
 
-## De strijd om 'Het Papier'
+U heeft de directie van een grote corporate organisatie overtuigd. Ze zijn enthousiast over uw software en akkoord met de prijs van 100.000 euro per jaar. De deal is echter nog niet gesloten: u staat nu tegenover de laatste horde: de Inkoopafdeling (Procurement). Het primaire doel van inkoop is het minimaliseren van risico's en het afdwingen van maximale contractuele concessies. Als u de juridische hefbomen van een B2B SaaS-contract niet begrijpt, tekent u mogelijk voorwaarden die uw startup bij het eerste incident financieel ten gronde kunnen richten.
 
-De eerste onderhandeling gaat over wiens contractsjabloon u gaat gebruiken. Vecht altijd om "Our Paper" (de standaard Master Services Agreement van uw startup) te gebruiken. Uw MSA wordt opgesteld door uw advocaten om uw aansprakelijkheid te beschermen.
+## De strijd om de contractvorm ('Our Paper' vs. 'Their Paper')
 
-Grote ondernemingen zullen agressief aandringen op het gebruik van 'hun papier'. Een ondernemings-MSA staat fundamenteel vijandig tegenover startups. Het omvat clausules voor onbeperkte aansprakelijkheid en betalingstermijnen van 120 dagen. Als u gedwongen wordt Hun Papier te gebruiken, zult u 10.000 dollar uitgeven aan juridische kosten, alleen maar om hun document opnieuw te omlijnen om het levensvatbaar te maken. Blijf waar mogelijk uw MSA gebruiken.
+De eerste onderhandeling gaat over wiens contractmodel als basis dient. Vecht altijd om uw eigen standaardovereenkomst (**"Our Paper"**) te hanteren: uw Master Services Agreement (MSA) en Verwerkersovereenkomst (DPA). Deze zijn opgesteld om uw aansprakelijkheid en cashflow te beschermen.
 
-## Het gevaar van onbeperkte aansprakelijkheid
+Grote bedrijven zullen agressief aandringen op hun eigen inkoopvoorwaarden (**"Their Paper"**). Een corporate MSA is doorgaans extreem nadelig voor startups: het bevat onbeperkte aansprakelijkheidsclausules, eenzijdige opzegrechten, betalingstermijnen van 90 tot 120 dagen en verregaande auditrechten. Moet u toch op hun voorwaarden onderhandelen, reserveer dan een aanzienlijk budget voor juridische bijstand om de scherpste randen eraf te onderhandelen.
 
-Dit is de meest kritische clausule in het contract. **Schadeloosstelling en beperking van aansprakelijkheid.**
+## Het gevaar van Onbeperkte Aansprakelijkheid (Limitation of Liability)
 
-Bij de aanbesteding wordt een clausule ingevoegd waarin wordt gesteld dat als uw software een datalek ondervindt, uw startup "onbeperkte aansprakelijkheid" heeft voor de schade. Als een ziekenhuis wordt aangeklaagd voor 50 miljoen dollar omdat uw database is gelekt, verwachten ze dat u de 50 miljoen dollar betaalt. Dit zal je onmiddellijk failliet laten gaan.
+Dit is de meest cruciale clausule in het gehele contract: **Vrijwaring en Aansprakelijkheidsbeperking (Liability Cap)**.
 
-U moet fel onderhandelen over een **Aansprakelijkheidslimiet**. De industriestandaard voor SaaS beperkt de aansprakelijkheid tot **1x of 2x de jaarlijkse contractwaarde (ACV)**. Als ze u $ 100.000 per jaar betalen, is uw maximale aansprakelijkheid in een rechtszaak $ 100.000. Uitzonderingen (waarbij de aansprakelijkheid onbeperkt of hoger is) worden doorgaans alleen toegestaan ​​voor grove nalatigheid of opzettelijk wangedrag.
+Inkopers proberen vaak clausules op te nemen waarin staat dat uw startup bij een datalek "onbeperkt aansprakelijk" is voor alle directe en indirecte schade. Als een ziekenhuis of bank wordt aangeklaagd voor miljoenen euro's wegens een beveiligingsincident, kunnen zij die volledige claim op uw startup verhalen.
 
-## Navigeren door de SLA (Service Level Agreement)
+Onderhandel altijd over een harde aansprakelijkheidslimiet: de SaaS-industriestandaard ligt tussen **1x en 2x de jaarlijkse contractwaarde (Annual Contract Value - ACV)**. Betaalt de klant u 100.000 euro per jaar, dan is uw maximale algemene aansprakelijkheid beperkt tot 100.000 of 200.000 euro. Uitzonderingen op deze limiet horen strikt beperkt te blijven tot opzet, grove nalatigheid of directe inbreuk op intellectueel eigendom.
 
-Een onderneming zal een Uptime SLA van 99,9% ("Three Nines") eisen. Dit betekent dat uw software niet langer dan 43 minuten per maand offline mag zijn. Als je faalt, ben je ze geld schuldig.
+## De Service Level Agreement (SLA): Service Credits in plaats van Boetes
 
-**De valkuil:** Ga nooit akkoord met het betalen van geldboetes voor het mislukken van SLA's. U moet bepalen dat boetes uitsluitend in **Servicecredits** worden betaald (bijvoorbeeld een korting op de factuur van de volgende maand). Bovendien moet u "Storingen door derden" expliciet uit uw SLA halen. Als OpenAI drie uur lang uitvalt, gaat jouw app uit. In uw contract moet expliciet worden vermeld dat downtime veroorzaakt door upstream-API-providers niet meetelt voor uw SLA-statistieken.
+Enterprise-klanten eisen doorgaans een uptime-garantie van 99,9% ("Three Nines"), wat betekent dat de software maximaal 43 minuten per maand down mag zijn.
 
-## Betalingsvoorwaarden: 'Net 90' overleven
+**De Valkuil:** Ga nooit akkoord met contante boetebetalingen bij het niet halen van de SLA. Bepaal contractueel dat compensaties uitsluitend worden uitgekeerd in de vorm van **Service Credits** (een korting op de volgende factuur). Zorg er daarnaast voor dat uitval van externe upstream-leveranciers (zoals OpenAI, AWS of Vercel) expliciet is **uitgesloten** van de SLA-berekening. U kunt immers contractueel niet verantwoordelijk worden gehouden voor een storing bij een externe cloud-gigant.
 
-Grote bedrijven behandelen hun leveranciers als vrije banken. Inkoop stuurt vaak een contract met "Net 90"-betalingsvoorwaarden, wat betekent dat ze uw factuur gedurende 90 dagen niet hoeven te betalen. Voor een opgestarte startup kan het wachten van drie maanden op €100.000 ervoor zorgen dat je de loonlijst mist.
+## Betalingstermijnen: Net 30 versus Net 90
 
-Duw onmiddellijk terug. Geef duidelijk aan: *"Als start-up in een vroeg stadium vereist ons prijsmodel Net 30-voorwaarden om onze infrastructuur te behouden."* Als ze weigeren toe te geven, bied dan een transactie aan: *"We kunnen Net 90 accepteren, maar we moeten de korting van 15% verwijderen die we uw VP hebben aangeboden."* Ze zullen meestal een manier vinden om Net 30 goed te keuren.
+Grote ondernemingen hanteren standaard vaak "Net 90" betalingstermijnen, wat betekent dat facturen pas na 90 dagen worden voldaan. Voor een jonge startup kan drie maanden moeten wachten op 100.000 euro — terwijl serverkosten en salarissen maandelijks doorlopen — leiden tot acute liquiditeitsproblemen.
+
+Houd vast aan **Net 30**. Als inkoop weigert, gebruik dit dan als hefboom: *"We kunnen Net 60 accepteren, maar dan vervalt de aangeboden korting van 15%."* Inkoopteams hebben vaak meer flexibiliteit op kortingspercentages dan op vaste betalingstermijnen.
+
+Manifera ontwerpt en versterkt enterprise-grade software-architecturen en veilige cloudsystemen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
 
 ## Belangrijkste inzichten
 
-- Probeer altijd te onderhandelen via 'Our Paper' (het standaardcontract van uw startup). Enterprise-contracten zijn zeer vijandig tegenover startups en extreem duur om te herzien.
+- Onderhandel waar mogelijk altijd op basis van uw eigen SaaS-overeenkomst ('Our Paper') om vijandige corporate contractbepalingen te vermijden.
 
-- Accepteer nooit ‘Onbeperkte Aansprakelijkheid’ voor datalekken. Onderhandel over een aansprakelijkheidslimiet, waarbij de schade doorgaans wordt beperkt tot 1x of 2x de jaarlijkse waarde van het contract.
+- Accepteer nooit onbeperkte aansprakelijkheid; begrens uw algemene aansprakelijkheid (Liability Cap) altijd tot maximaal 1x tot 2x de jaarlijkse contractwaarde.
 
-- Wanneer u akkoord gaat met Uptime SLA's (bijvoorbeeld 99,9%), zorg er dan voor dat boetes worden betaald in toekomstige 'Service Credits', en niet in contante terugbetalingen.
+- Koppel uptime-garanties (SLA) uitsluitend aan Service Credits op toekomstige facturen en betaal nooit contante schadevergoedingen uit.
 
-- Bescherm uw AI-startup door een SLA-carve-out toe te voegen waarin staat dat downtime veroorzaakt door API's van derden (zoals OpenAI) niet meetelt voor uw uptime-garanties.
+- Sluit storingen van externe API-providers (zoals OpenAI of hostingpartijen) expliciet uit van uw SLA-verplichtingen.
 
-- Strijd agressief tegen 'Net 90'-betalingsvoorwaarden. Drie maanden wachten op betaling kan de cashflow bij het opstarten vernietigen; vraag 'Net 30' of gebruik prijskortingen als hefboom.
+- Wijs 'Net 90' betalingstermijnen af en dwing 'Net 30' af om uw operationele cashflow en liquiditeit te waarborgen.
 
-## Sluit de deal zonder het bedrijf te verliezen
+## Sluit enterprise-deals met een solide juridische basis
 
-Begraven inkoopteams van ondernemingen u in vijandige juridische rode lijnen? **LaunchStudio** adviseert technische oprichters over standaard B2B SaaS-contractstrategieën, zodat u de inkomsten veilig kunt stellen zonder catastrofale aansprakelijkheid te aanvaarden.
+Wordt uw verkoopproces vertraagd door zware inkoopvoorwaarden van grote bedrijven? **LaunchStudio** ondersteunt founders bij het technisch en operationeel waarmaken van enterprise-verplichtingen: van SLA-monitoring en betrouwbare data-exporttools tot geïsoleerde private cloud-deployments.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/about-us](https://www.manifera.com/about-us/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Bekijk onze diensten](https://launchstudio.eu/en/#packages) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: een tool voor financiële prognoses migreren naar particuliere AWS-servers
+### Een AI-native oprichter in actie: financiële prognose-app migreren naar een private AWS-server
 
-Liam, een SaaS-oprichter, gebruikte **Bolt** om een forecaster-app te bouwen. Een zakelijke klant weigerde mee te doen, tenzij zijn gegevens zich in een geïsoleerde database bevonden.
+Liam, een SaaS-oprichter, gebruikte **Bolt** om een financiële prognosetool te bouwen. Een grote enterprise-klant weigerde het contract te ondertekenen tenzij hun data werd opgeslagen op een dedicated, geïsoleerde database-omgeving.
 
-Hij werkte samen met **LaunchStudio (door Manifera)** om de app te containeriseren en te implementeren op een privé AWS EC2-exemplaar.
+Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam containeriseerde de applicatie en rolde deze uit op een dedicated private AWS EC2-instantie die exclusief voor deze klant opereert.
 
-**Resultaat:** Ondertekening van een jaarcontract van € 75.000, waardoor zakelijke B2B-verkoopkanalen worden geopend.
+**Resultaat:** Het contract van €75.000 per jaar werd succesvol ondertekend, wat de deur opende naar structurele B2B enterprise-sales.
 
-**Kosten en tijdlijn:** € 5.200 (private cloudmigratie) — productieklaar en binnen 10 werkdagen geïmplementeerd.
-
----
+**Kosten & tijdlijn:** €5.200 (Private Cloud Migration Pakket) — productieklaar en binnen 10 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-## Veelgestelde vragen
+### Wat is een Master Services Agreement (MSA)?
 
-### Wat is een MSA?
+De overkoepelende hoofdovereenkomst tussen uw softwarebedrijf en de zakelijke klant, waarin de juridische kernafspraken, aansprakelijkheidslimieten, intellectueel eigendom en betalingsvoorwaarden zijn vastgelegd.
 
-Een Master Services Agreement (MSA) is het fundamentele contract tussen uw startup en de onderneming. Het schetst de belangrijkste juridische relaties, aansprakelijkheidslimieten en intellectuele eigendomsrechten.
+### Wat houdt een Liability Cap in?
 
-### Wat is een SLA?
+Een contractuele clausule die de maximale financiële schadeclaim waartoe uw bedrijf veroordeeld kan worden limiteert, meestal tot 1x of 2x het jaarlijkse contractbedrag.
 
-Een Service Level Agreement is een garantie voor de uptime van uw software (bijvoorbeeld 99,9%). Als u er niet aan voldoet, moet u boetes uitdelen, die altijd gestructureerd moeten zijn in de vorm van servicecredits en nooit in contanten.
+### Waarom zijn SLA-boetes in contanten gevaarlijk?
 
-### Waarom is 'Vrijwaring' zo gevaarlijk voor startups?
+Omdat contante uitbetalingen bij storingen een direct liquiditeitsrisico vormen. Het hanteren van Service Credits (toekomstige factuurkortingen) begrenst het risico tot reeds geplande omzet.
 
-Als u onbeperkte aansprakelijkheid aanvaardt, kan een enkel datalek ertoe leiden dat de onderneming uw startup aanklaagt voor tientallen miljoenen dollars, waardoor een onmiddellijk faillissement wordt afgedwongen. U moet uw aansprakelijkheid beperken.
+### Hoe voorkom ik dat Net 90 betalingstermijnen mijn cashflow schaden?
 
-### Wat zijn 'Net 90'-betalingsvoorwaarden?
+Door direct bij aanvang 'Net 30' als voorwaarde te stellen en eventuele langere betaaltermijnen alleen toe te staan in ruil voor het intrekken van commerciële kortingen.
 
-Een clausule waarin staat dat de onderneming 90 dagen de tijd heeft om uw factuur te betalen. U moet dit agressief onderhandelen tot 'Net 30' om ervoor te zorgen dat uw startup een gezonde cashflow behoudt.
+### Kan LaunchStudio de technische voorwaarden uit enterprise-contracten implementeren?
 
-### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
-
-LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+Ja. LaunchStudio en Manifera bouwen de vereiste dedicated infrastructuur: private cloud-migraties, high-availability setups voor 99,9% uptime en geautomatiseerde data-exportmechanismen.
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema. org",
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is een MSA?",
+      "name": "Wat is een Master Services Agreement (MSA)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een Master Services Agreement (MSA) is het fundamentele contract tussen uw startup en de onderneming. Het schetst de belangrijkste juridische relaties, aansprakelijkheidslimieten en intellectuele eigendomsrechten."
+        "text": "De juridische hoofdovereenkomst waarin aansprakelijkheden, IE-rechten, betalingscondities en algemene voorwaarden zijn vastgelegd."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is een SLA?",
+      "name": "Wat houdt een Liability Cap in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een Service Level Agreement is een garantie voor de uptime van uw software (bijvoorbeeld 99,9%). Als u er niet aan voldoet, moet u boetes uitdelen, die altijd gestructureerd moeten zijn in de vorm van servicecredits en nooit in contanten."
+        "text": "Een contractuele bepaling die de maximale aansprakelijkheid van de startup begrenst tot doorgaans 1x tot 2x de jaarlijkse contractwaarde."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom is 'Vrijwaring' zo gevaarlijk voor startups?",
+      "name": "Waarom zijn SLA-boetes in contanten gevaarlijk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Als u onbeperkte aansprakelijkheid aanvaardt, kan een enkel datalek ertoe leiden dat de onderneming uw startup aanklaagt voor tientallen miljoenen dollars, waardoor een onmiddellijk faillissement wordt afgedwongen. U moet uw aansprakelijkheid beperken."
+        "text": "Omdat directe geldboetes de liquiditeit uithollen; Service Credits op toekomstige facturen beperken het risico tot verrekening."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat zijn 'Net 90'-betalingsvoorwaarden?",
+      "name": "Hoe voorkom ik dat Net 90 betalingstermijnen mijn cashflow schaden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een clausule waarin staat dat de onderneming 90 dagen de tijd heeft om uw factuur te betalen. U moet dit agressief onderhandelen tot 'Net 30' om ervoor te zorgen dat uw startup een gezonde cashflow behoudt."
+        "text": "Door vast te houden aan Net 30 en langere termijnen uitsluitend te accepteren in ruil voor het schrappen van prijsdiscounts."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "name": "Kan LaunchStudio de technische voorwaarden uit enterprise-contracten implementeren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+        "text": "Ja. LaunchStudio en Manifera leveren private AWS-instanties, hoge beschikbaarheid voor 99,9% SLA's en geautomatiseerde dataportabiliteit."
       }
     }
   ]

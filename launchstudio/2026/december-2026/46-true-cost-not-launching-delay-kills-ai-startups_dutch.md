@@ -1,97 +1,163 @@
 ---
-Titel: "De Echte Kosten van NIET Lanceren: Hoe Uitstel AI-startups Doodt"
-Trefwoorden: AI-prototype, app bouwen met AI, AI-deployment, AI-native, LaunchStudio, Manifera
+Titel: "De Echte Kosten van NIET Lanceren: Hoe Uitstel AI-Startups Doodt"
+Trefwoorden: ai prototype, build app with ai, ai deployment, ai native, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Echte Kosten van NIET Lanceren: Hoe Uitstel AI-startups Doodt
+# De Echte Kosten van NIET Lanceren: Hoe Uitstel AI-Startups Doodt
 
-Elke euro die je uitgeeft aan het lanceren van je product is zichtbaar. De kosten van niet lanceren zijn onzichtbaar — en die onzichtbaarheid is precies waarom ze zo gevaarlijk zijn. Founders bestuderen weken lang een lanceringsofferte van €2.500 terwijl ze veel meer dan dat verliezen aan ongemeten kosten door te blijven zitten op een afgerond prototype dat nooit live gaat.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Echte Kosten van NIET Lanceren: Hoe Uitstel AI-Startups Doodt",
+  "description": "Oprichters berekenen zorgvuldig de kosten van lanceren. Weinigen berekenen de kosten van niet lanceren, die vaak vele malen hoger zijn en stilletjes oplopen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/true-cost-not-launching-delay-kills-ai-startups"
+  }
+}
+</script>
 
-## De Zichtbare Kosten versus de Onzichtbare Kosten
+Elke euro die u uitgeeft aan het lanceren van uw product is direct zichtbaar. De kosten van **niet lanceren** zijn onzichtbaar — en die onzichtbaarheid is precies waarom ze zo gevaarlijk zijn. Oprichters bestuderen wekenlang een offerte van €2.500 voor backend-ontwikkeling, terwijl ze ondertussen veel grotere bedragen verliezen aan ongemeten kosten door op een werkend prototype te blijven zitten dat nooit live gaat.
 
-De zichtbare kosten van lanceren zijn makkelijk te berekenen: een ontwikkelingsofferte, een maandelijkse hostingrekening, de tijdsinvestering van het lanceringsproces zelf. Founders bestuderen deze kosten natuurlijk zorgvuldig, zoals het hoort. De onzichtbare kosten — wat niet lanceren daadwerkelijk kost — krijgen zelden dezelfde kritische blik, precies omdat ze niet aankomen als één enkele factuurregel.
+## Zichtbare Kosten versus Onzichtbare Kosten
+
+De zichtbare kosten van lanceren zijn eenvoudig te berekenen: een ontwikkelofferte, een maandelijkse hostingfactuur en de tijdsinvestering van het lanceerproces zelf. Oprichters beoordelen deze kosten zorgvuldig, zoals het hoort. De onzichtbare kosten — wat niet lanceren daadwerkelijk kost — krijgen zelden dezelfde aandacht, simpelweg omdat ze niet binnenkomen als één duidelijke factuurregel.
 
 ## Vier Manieren Waarop Uitstel Daadwerkelijk Geld Kost
 
 ### 1. Sluiting van het Concurrentievenster
-AI-native markten bewegen snel. Een gat dat je zes maanden geleden identificeerde, kan vandaag drie concurrenten hebben die het aanpakken. Elke maand uitstel is een maand waarin een concurrent — mogelijk minder capabel, maar sneller op de markt — de klanten en mindshare kan veroveren die jij had kunnen hebben.
+AI-native markten bewegen razendsnel. Een gat in de markt dat u zes maanden geleden zag, wordt vandaag mogelijk al door drie concurrenten bediend. Elke maand uitstel is een maand waarin een concurrent — wellicht met een minder goed product, maar sneller op de markt — de klanten en het marktaandeel pakt die van u hadden kunnen zijn.
 
-### 2. Verval van Momentum en Motivatie
-De energie en overtuiging van een founder zijn het hoogst direct nadat iets is gebouwd dat werkt. Uitstel kost niet alleen kalendertijd — het kost het opstapelende momentum en de motivatie die uitvoering makkelijker maken, en vervangt dit door de frictie van een stilgevallen project weer oppakken nadat het enthousiasme is afgekoeld.
+### 2. Afbrokkeling van Momentum en Motivatie
+De energie en overtuiging van een oprichter zijn het hoogst direct na het bouwen van een werkend prototype. Uitstel kost niet alleen kalendertijd — het tast de opgebouwde motivatie en het momentum aan, en vervangt dit door de moeite om een stilgevallen project later weer met tegenzin op te pakken.
 
-### 3. Opportuniteitskosten van Echte Omzet en Leren
-Een live product genereert echte omzet en, belangrijker, echte klantfeedback — informatie die geen enkele hoeveelheid extra prototypepolijsting kan vervangen. Elke maand niet-gelanceerd is een maand leren die je niet kreeg, beslissingen genomen op aannames in plaats van bewijs, en omzet die simpelweg nooit bestond.
+### 3. Gemiste Omzet en Echte Klantinzichten
+Een live product genereert echte omzet en, belangrijker nog, echte gebruikersfeedback — informatie waar geen enkele hoeveelheid intern finetunen tegenop kan. Elke maand zonder lancering is een maand aan gemiste praktijklessen, beslissingen gebaseerd op aannames in plaats van bewijs, en omzet die simpelweg nooit heeft bestaan.
 
-### 4. De Verzonken-kosten-val van "Bijna Klaar"
-Founders die uitstellen, doen dit vaak in de overtuiging dat ze "bijna klaar" zijn — nog één functie, nog één polijstronde. Deze val kan onbeperkt doorgaan, omdat een prototype altijd marginaal beter kan worden gemaakt, terwijl het daadwerkelijke knelpunt (productie-infrastructuur die de founder niet zelf kan bouwen) onaangepakt blijft, ongeacht hoeveel frontend-polijsting zich opstapelt.
+### 4. De Valseillusie van "Bijna Klaar"
+Oprichters stellen uit omdat ze geloven dat ze "bijna klaar" zijn — nog één feature, nog één design-aanpassing. Deze valkuil kan zich eindeloos uitstrekken, omdat een prototype altijd marginaal verbeterd kan worden, terwijl de echte flessenhals (productie-infrastructuur die de oprichter niet zelf kan bouwen) onaangeroerd blijft.
 
-## Waarom Deze Val Specifiek Is voor AI-Native Founders
+## Waarom Deze Valkuil Typisch Is voor AI-Oprichters
 
-Niet-technische founders die AI-tools gebruiken, staan voor een specifieke versie van dit probleem: ze kunnen het zichtbare oppervlak van hun prototype blijven verbeteren — meer functies, betere copy, verfijnd ontwerp — met tools waar ze zich comfortabel bij voelen, terwijl de daadwerkelijke barrière tot lancering (beveiliging, betalingen, authenticatie) onaangeroerd blijft omdat het expertise vereist buiten wat Lovable of Bolt alleen kan bieden. De zichtbare vooruitgang op functies kan een vals gevoel van voortgang creëren terwijl de echte blokkade onaangepakt blijft.
+Niet-technische oprichters die AI-tools gebruiken, lopen tegen een specifieke variant van dit probleem aan: ze kunnen de zichtbare buitenkant van hun prototype eindeloos blijven verfraaien met Lovable of Bolt, terwijl de daadwerkelijke barrière voor livegang (beveiliging, betalingen, authenticatie) blijft liggen omdat dit specialistische kennis vereist. Die zichtbare vooruitgang geeft een vals gevoel van voortgang terwijl het echte knelpunt blijft bestaan.
 
-## Je Eigen Kosten van Uitstel Berekenen
+## Uw Eigen Uitstelkosten Berekenen
 
-Vraag jezelf concreet af: hoeveel potentiële klanten heb je gesproken die vandaag klaar waren om te betalen? Hoeveel maanden is je prototype "bijna klaar" geweest? Wat zou een concurrent die volgend kwartaal jouw ruimte betreedt, je kosten in marktpositie? Deze vragen onthullen doorgaans kosten van uitstel die de daadwerkelijke lanceringskosten waar founders zoveel tijd aan besteden om over te delibereren, in het niet doen vallen.
+Vraag uzelf af: met hoeveel potentiële klanten heeft u gesproken die vandaag klaar waren om te betalen? Hoeveel maanden is uw prototype al "bijna klaar"? Wat zou een concurrent die volgend kwartaal instapt u kosten aan marktpositie? Deze vragen onthullen doorgaans een uitstelkostenpost die vele malen groter is dan de lanceerkosten waarover getwijfeld wordt.
 
-[LaunchStudio](https://launchstudio.eu/en/) bestaat specifiek om het uitstel tussen "prototype dat werkt" en "product dat live is" te comprimeren, doorgaans tot één tot drie weken, gesteund door Manifera's 11+ jaar productie-engineeringervaring.
+[LaunchStudio](https://launchstudio.eu/en/) is er specifiek op gericht om de kloof tussen "werkend prototype" en "live product" terug te brengen naar één tot drie weken, ondersteund door Manifera's 11+ jaar software-ervaring.
 
-[Stop de klok op uitstel](https://launchstudio.eu/en/#calculator) — krijg een concrete tijdlijn en prijs voor het lanceren van wat je al hebt gebouwd.
+[Stop de tikkende klok van uitstel](https://launchstudio.eu/en/#calculator) — ontvang een concrete planning en prijs voor het lanceren van wat u al heeft gebouwd.
 
-## Een Simpel Model om een Cijfer op Je Eigen Uitstel te Plakken
+## Een Eenvoudig Model om Uw Eigen Uitstelkosten te Berekenen
 
-De vragen hierboven helpen een founder het gewicht van uitstel te voelen, maar een ruw cijfer is overtuigender dan een gevoel, vooral als je een lanceringsbeslissing aan jezelf of een medeoprichter moet rechtvaardigen. Dit is een simpele manier om je eigen maandelijkse kosten van niet-lanceren te benaderen.
+Een ruwe berekening is overtuigender dan een abstract gevoel. Hier is een eenvoudige manier om uw maandelijkse uitstelkosten te kwantificeren:
 
-**Begin met een realistische schatting van maandelijkse omzet.** Neem je verwachte aantal klanten in de eerste maand live, vermenigvuldigd met je geplande prijspunt. Zelfs een conservatieve schatting — zeg, 5 klanten aan €40/maand, oftewel €200 — geeft je een cijfer om mee te werken. Elke maand dat je de lancering uitstelt, is een maand waarin die €200 (of wat je echte cijfer ook is) simpelweg niet gebeurde, en niet met terugwerkende kracht later verschijnt; het is weg, niet uitgesteld.
+**Begin met een realistische maandelijkse omzetschatting.** Neem het verwachte aantal klanten in maand één na livegang, vermenigvuldigd met uw geplande prijs. Zelfs een voorzichtige schatting — bijvoorbeeld 5 klanten à €40/maand = €200 — geeft een concreet getal. Elke maand uitstel is een maand waarin die €200 niet is binnengekomen; dat bedrag is definitief weg, niet uitgesteld.
 
-**Tel het cumulatieve effect van verloren vroege klanten mee.** Vroege klanten geworven in maand één verwijzen vaak anderen door, geven feedback die de conversie voor latere klanten verbetert, en worden casestudy's die toekomstige verkoopgesprekken makkelijker maken. Een maand uitstel kost niet alleen de directe omzet van die maand — het duwt de start van een cumulatieve keten van doorverwijzingen en feedbackloops naar achteren die anders al begonnen zou zijn.
+**Voeg het samengestelde effect van verloren vroege klanten toe.** Vroege klanten zorgen voor mond-tot-mondreclame, feedback die conversie verhoogt en praktijkcases die toekomstige verkoopgesprekken vergemakkelijken. Een maand uitstel vertraagt de start van deze waardevolle keten.
 
-**Neem concurrerende verovering mee, zelfs ruw geschat.** Als je zelfs één plausibele concurrent kunt identificeren die jouw ruimte betreedt, schat welk percentage van je adresseerbare klantenbestand zij per maand voorsprong zouden kunnen veroveren — zelfs een ruwe schatting van 2-5% maandelijkse erosie, samengesteld over meerdere maanden uitstel, levert een cijfer op dat het waard is serieus te nemen.
+**Reken concurrentieverlies mee.** Als er een plausibele concurrent uw markt betreedt, schat dan in welk percentage van uw doelgroep zij maandelijks kunnen claimen — zelfs een conservatieve 2% tot 5% marktuitholling per maand loopt snel op.
 
-**Vermenigvuldig met het aantal maanden dat je al hebt uitgesteld, niet alleen het aantal dat voor je ligt.** Floors casus hieronder illustreert waarom dit ertoe doet: de eerlijke berekening is niet "wat zou nog een maand kosten," het is "wat hebben de negen maanden die al zijn besteed gekost" — bijna altijd een groter en confronterender cijfer dan founders verwachten wanneer ze eindelijk gaan zitten en de rekensom maken in plaats van te schatten op basis van een gevoel.
+**Vermenigvuldig met de maanden die u al heeft gewacht.** De eerlijke rekensom is niet alleen "wat kost nog een maand wachten", maar vooral "wat hebben de afgelopen maanden stilstand al gekost".
 
-**Vergelijk het totaal met je daadwerkelijke lanceringskosten.** Zodra je zelfs een ruw maandelijks cijfer hebt, vermenigvuldig het met je realistische uitstelvenster en vergelijk het direct met een concrete offerte voor een productielancering. Voor de meeste AI-native founders is deze vergelijking — echte cijfers aan beide kanten, in plaats van een vaag gevoel dat lanceren "duur" is en wachten "gratis" — wat de beslissing daadwerkelijk herkadert.
-
-Deze oefening is niet bedoeld om een precies, verdedigbaar cijfer voor een bestuurspresentatie op te leveren. Het is bedoeld om de gevoelde asymmetrie tussen zichtbare lanceringskosten en onzichtbare uitstelkosten te vervangen door twee cijfers die een founder daadwerkelijk naast elkaar kan leggen, wat meestal genoeg is om het "bijna klaar"-patroon op zichzelf te doorbreken, voordat een externe deadline de kwestie afdwingt.
+**Vergelijk het totaal direct met uw werkelijke lanceerofferte.** Door de echte uitstelkosten naast een concrete fixed-price offerte van LaunchStudio te leggen, wordt direct duidelijk dat wachten in werkelijkheid de duurste optie is.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: negen maanden "bijna klaar"
+### Een AI-native oprichter in actie: Negen maanden van "bijna klaar"
 
-Floor, een bedrijfstrainer in Nieuwegein, bouwde TrainingsTracker, een AI-tool die gepersonaliseerde professionele-ontwikkelingsplannen genereerde voor deelnemers aan bedrijfstrainingen, met Lovable. Ze bouwde de initiële versie in drie weken, en besteedde vervolgens de volgende negen maanden continu aan het verfijnen ervan — functies toevoegen, copy aanpassen, de interface polijsten — zonder ooit daadwerkelijk te lanceren naar echte klanten, en vertelde zichzelf en geïnteresseerde prospects dat ze "bijna klaar" was elke keer dat iemand ernaar vroeg.
+Floor, bedrijfstrainer in Nieuwegein, bouwde met Lovable TrainingsTracker: een AI-tool die gepersonaliseerde ontwikkelplannen opstelde voor deelnemers aan zakelijke trainingen. Ze bouwde de eerste versie in drie weken, en besteedde de daaropvolgende negen maanden aan het continu verfijnen van teksten en functies zonder daadwerkelijk te lanceren.
 
-Tijdens die negen maanden lanceerden twee goed gefinancierde concurrenten vergelijkbare AI-gestuurde tools voor professionele ontwikkeling, waarvan er één een partnerschap veiligstelde met een trainingsvereniging die Floor specifiek als haar initiële klantenbestand had beoogd. Toen Floor eindelijk berekende wat die negen maanden daadwerkelijk hadden gekost — niet in ontwikkelingskosten, maar in verloren first-mover-positie, vervallen persoonlijke motivatie, en nul echte klantfeedback verzameld — was het cijfer confronterend vergeleken met wat een productielancering op elk moment tijdens die negen maanden zou hebben gekost.
+In die negen maanden lanceerden twee concurrenten vergelijkbare tools, waarvan er één een exclusieve samenwerking sloot met een trainingsvereniging die Floor op het oog had als launching partner. Toen Floor berekende wat die negen maanden hadden gekost aan gemiste kansen, verloren momentum en ontbrekende klantfeedback, was dat een veelvoud van wat een productielancering haar had gekost.
 
-Floor nam contact op met LaunchStudio, vastberaden om het patroon te doorbreken. Het Manifera-team voltooide TrainingsTracker's productie-infrastructuur — authenticatie, veilige gegevensverwerking voor bedrijfstrainingsrecords, en Mollie-facturering — in twaalf werkdagen, wat eindelijk de lancering forceerde die Floor het grootste deel van een jaar had uitgesteld.
+Floor schakelde LaunchStudio in om het patroon te doorbreken. Het team van Manifera realiseerde de authenticatie, veilige opslag voor bedrijfsdossiers en Mollie-facturatie binnen 12 werkdagen.
 
-**Resultaat:** TrainingsTracker lanceerde met 6 zakelijke trainingsklanten getekend binnen de eerste maand, wat voor het eerst echte omzet en echte feedback genereerde. Floor schrijft specifiek de vaste deadline die LaunchStudio's opdracht creëerde toe aan wat eindelijk negen maanden "bijna klaar"-verlamming doorbrak.
+**Resultaat:** TrainingsTracker lanceerde met 6 zakelijke klanten in de eerste maand. De harde deadline van LaunchStudio doorbrak definitief de 9 maanden durende verlamming.
 
-> *"Ik bleef negen maanden 'bijna' lanceren terwijl concurrenten het daadwerkelijk deden. LaunchStudio bouwde niet alleen de ontbrekende stukken — een echte deadline en een echt team dat eraan werkte, is wat me daadwerkelijk liet stoppen met polijsten en beginnen met verkopen."*
-> — **Floor Hermans, Founder, TrainingsTracker (Nieuwegein)**
+> *"Ik bleef negen maanden lang 'bijna' lanceren terwijl concurrenten de markt opgingen. LaunchStudio bouwde niet alleen de ontbrekende stukken — een echte deadline en een vast team dwongen me om te stoppen met poetsen en te beginnen met verkopen."*  
+> — **Floor Hermans, Oprichter TrainingsTracker (Nieuwegein)**
 
-**Kosten & tijdlijn:** €2.700 (Launch & Grow Pakket) — live in 12 werkdagen, na 9 maanden zelfuitstel.
+**Kosten & tijdlijn:** €2.700 (Launch & Grow Pakket) — binnen 12 werkdagen live opgeleverd na 9 maanden uitstel.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoe weet ik of ik oprecht nog niet klaar ben om te lanceren versus vastzit in een uitstelval?
+### Hoe weet ik of ik echt nog niet klaar ben of vastzit in een uitstelvalkuil?
+Vraag uzelf af: is de functie waar u aan werkt expliciet gevraagd door een betalende klant, of past u het aan vanuit eigen perfectionisme? Bij dat laatste zit u in de uitstelvalkuil.
 
-Een nuttige test: is het ding waar je nog aan werkt iets dat een echte klant specifiek heeft gevraagd, of is het een verfijning die je maakt op basis van je eigen perfectionisme? Het eerste is legitieme iteratie; het tweede is, zoals bij Floors negen maanden, vaak de uitstelval vermomd als zorgvuldigheid.
+### Is het niet beter om pas te lanceren met een rijkere feature-set?
+Nee. Een uitgebreid maar onbeveiligd prototype dat niet live staat levert nul waarde op. Een minimalistische maar veilige live MVP levert direct omzet en praktijkkennis op.
 
-### Is het niet beter om te lanceren met een gepolijster, functievollediger product dan overhaast naar de markt te gaan?
+### Hoe helpt een fixed-timeline traject tegen zelfopgelegd uitstel?
+Een externe, bindende deadline creëert verantwoording die bij soloprojecten vaak ontbreekt, en doorbreekt de vicieuze cirkel van "bijna klaar".
 
-Meestal niet, vooral voor AI-native founders wier daadwerkelijke knelpunt infrastructuur is, geen functies. Een functierijk maar onveilig, ongelanceerd prototype levert nul waarde aan echte klanten. Een oprecht minimaal maar productieklaar, live product levert direct echte omzet en echt leren.
+### Beschadigt een vroege, eenvoudige lancering mijn reputatie?
+Nee. In vrijwel alle AI-markten is een veilige, stabiele tweede partij op de markt oneindig veel beter dan een partij die door perfectionisme helemaal nooit lanceert.
 
-### Hoe kan een opdracht met vaste tijdlijn zoals die van LaunchStudio helpen een patroon van zelfuitstel te doorbreken?
+### Kan LaunchStudio vooraf inschatten hoe productieklaar mijn prototype echt is?
+Ja. Tijdens onze intake lichten we uw code technisch door en geven we u een eerlijk, concreet overzicht van wat minimaal nodig is voor livegang.
 
-Een externe, toegezegde deadline creëert verantwoording die zelfgestuurd prototypen, zonder afdwingende functie, vaak mist. Zoals Floors geval illustreert, kan de structuur van een gedefinieerde opdracht met een echt eindpunt precies zijn wat een "bijna klaar"-cyclus doorbreekt die maandenlang heeft geduurd.
-
-### Geldt dit kosten-van-uitstel-argument zelfs in concurrerende markten waar snel en onvolmaakt lanceren mijn reputatie zou kunnen schaden?
-
-De specifieke risicorekensom varieert per markt, maar in de meeste AI-native contexten verslaat tweede-op-de-markt-zijn met een solide, veilig product volledig ongelanceerd blijven terwijl je op perfectie wacht. Een productieklare maar functie-minimale lancering, zoals behandeld in eerdere MVP-herdefinitierichtlijnen, is een legitieme en vaak superieure strategie ten opzichte van onbepaald uitstel.
-
-### Kan LaunchStudio me helpen realistisch te bepalen hoe "klaar" mijn prototype daadwerkelijk is voordat ik me vastleg op een lanceringstijdlijn?
-
-Ja, dit is precies wat het eerste beoordelingsgesprek behandelt — een eerlijke, technische evaluatie van wat daadwerkelijk nodig is om productiegereedheid te bereiken voor jouw specifieke prototype, ter vervanging van vage zelfbeoordeling met een concrete scope en tijdlijn.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe herken ik het verschil tussen voorbereiding en uitstel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wanneer u functies toevoegt vanuit eigen perfectionisme in plaats van op basis van expliciete vragen van betalende klanten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is wachten op een rijkere feature-set verstandig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Een minimalistische maar veilige live MVP levert direct omzet en feitelijke marktinzichten op."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe helpt een fixed-timeline traject tegen uitstel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een externe bindende deadline creëert verantwoording en dwingt focus af om binnen 1 tot 3 weken live te gaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Schaadt vroeg lanceren mijn reputatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, zolang de basisveiligheid en stabiliteit gegarandeerd zijn, wekt een werkend product direct vertrouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio vooraf mijn status beoordelen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, via een grondige technische review brengen we de exacte kloof naar productie in kaart."
+      }
+    }
+  ]
+}
+</script>

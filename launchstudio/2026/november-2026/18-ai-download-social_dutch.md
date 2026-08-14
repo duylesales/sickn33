@@ -1,19 +1,19 @@
-❌ De meest onbegrepen knop in AI coding: "Download Code"
+❌ De meest verkeerd begrepen knop in AI-ontwikkeling: "Download Code"
 
-Je hebt een prachtige app gebouwd in Lovable. 
-Je hebt het ZIP-bestand gedownload. 
-Je denkt dat je een bedrijf hebt.
+U bouwde een prachtige app in Lovable. 
+U downloadde het ZIP-bestand. 
+U denkt dat u een draaiend bedrijf heeft.
 
-Nee hoor. Je hebt enkel een frontend-blauwdruk.
+Helaas niet. U heeft een visuele blauwdruk van de voorkant.
 
-Jouw ZIP-bestand bevat namelijk géén:
-- Cloud database
+Uw ZIP-bestand bevat géén:
+- Cloud-database
 - Beveiligde authenticatieservers
-- Stripe webhooks voor abonnementen
-- Productie environment variables
+- Stripe-webhooks voor abonnementsbeheer
+- Productie-omgevingsvariabelen
 
-Je app lokaal draaien op `localhost` is momenteel de grootste illusie in tech. Het werkt perfect op je laptop omdat jíj de enige gebruiker bent en er geen hackers zijn.
+De app lokaal draaien op `localhost` is de grootste illusie in tech op dit moment. Het werkt op uw laptop omdat u de enige bezoeker bent en er geen hackers zijn.
 
-Lees hier exact wat er ontbreekt in jouw AI-download, en hoe je wél binnen 8 dagen veilig live gaat op het internet: [Link]
+Ontdek wat er exact ontbreekt in uw AI-download en hoe u binnen 8 dagen live gaat op het echte internet: [Link]
 
-#AICoding #SaaSFounders #TechStartups #SoftwareDevelopment #Lovable #LaunchStudio
+#AICoding #SaaSFounders #TechStartups #SoftwareDevelopment #Lovable #LaunchStudio #Bolt

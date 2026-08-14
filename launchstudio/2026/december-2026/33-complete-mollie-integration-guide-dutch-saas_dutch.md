@@ -1,103 +1,171 @@
 ---
-Titel: "De Complete Mollie-integratiegids voor Nederlandse SaaS-founders"
-Trefwoorden: AI-SaaS, AI-softwareprijs, AI-deployment, AI-ontwikkeling, LaunchStudio, Manifera
+Titel: "De Complete Mollie Integratiegids voor Nederlandse SaaS-Oprichters"
+Trefwoorden: ai saas, ai software price, ai deployment, ai development, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Complete Mollie-integratiegids voor Nederlandse SaaS-founders
+# De Complete Mollie Integratiegids voor Nederlandse SaaS-Oprichters
 
-Vraag een Nederlandse klant hoe hij wil betalen, en het antwoord is vaak simpel: iDEAL. Ruwweg de meerderheid van de Nederlandse online betalingen loopt nog steeds via iDEAL, en een SaaS-product dat alleen creditcardbetaling aanbiedt, sluit stilletjes een betekenisvol deel van potentiële Nederlandse klanten uit of creëert frictie. Dit is de praktische reden waarom Mollie, een in Nederland gevestigde betalingsprovider met native iDEAL-ondersteuning, vaak de betere standaard is voor op Nederland gerichte SaaS-founders.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Complete Mollie Integratiegids voor Nederlandse SaaS-Oprichters",
+  "description": "Voor SaaS-oprichters die Nederlandse en Benelux-klanten bedienen is Mollie vaak de meest natuurlijke betaalkeuze, vooral dankzij iDEAL. Ontdek wat een volwaardige Mollie-integratie inhoudt.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/complete-mollie-integration-guide-dutch-saas"
+  }
+}
+</script>
 
-## Waarom Specifiek Mollie voor Nederlandse en Benelux SaaS
+Vraag een Nederlandse klant hoe hij wil afrekenen en het antwoord is vrijwel altijd eenvoudig: **iDEAL**. Het overgrote deel van alle Nederlandse online betalingen verloopt nog steeds via iDEAL. Een SaaS-product dat uitsluitend creditcardbetalingen accepteert, sluit ongemerkt een aanzienlijk deel van potentiële Nederlandse klanten uit of werpt onnodige frictie op. Dit is de praktische reden waarom Mollie, een in Nederland gevestigde betaalprovider met eersteklas ondersteuning voor iDEAL, voor op Nederland gerichte SaaS-oprichters vaak de betere standaardkeuze is.
 
-Mollie is gebouwd in Nederland, voor Nederland, en dat blijkt uit de details die ertoe doen voor lokale conversie: native iDEAL-ondersteuning zonder workarounds, vertrouwde branding die Nederlandse klanten al kennen van andere online aankopen, en prijzen transparant in euro's zonder verrassingen bij internationale transactiekosten. Voor een SaaS-product waar Nederlandse kleine bedrijven of consumenten het primaire klantenbestand zijn, kan deze lokale vertrouwens- en betaalmethodeafstemming de checkoutconversie betekenisvol beïnvloeden.
+## Waarom Mollie Specifiek voor SaaS in Nederland en de Benelux
 
-## Wat een Complete Mollie-integratie Vereist
+Mollie is in Nederland gebouwd, voor de Nederlandse markt, en dat is zichtbaar in de details die cruciaal zijn voor lokale conversie: native iDEAL-ondersteuning zonder omslachtige omwegen, een vertrouwde uitstraling die Nederlandse klanten al kennen van e-commerce aankopen, en transparante prijzen in euro's zonder verrassingen door internationale transactiekosten. Voor een SaaS-product waar Nederlandse mkb-bedrijven of consumenten de primaire doelgroep vormen, heeft deze lokale vertrouwensfactor direct een positieve invloed op het afrekenpercentage (*checkout conversion rate*).
 
-### Abonnementsondersteuning via Mollie's Terugkerende Betalingen
-Mollie handelt terugkerende abonnementsfacturering af via zijn Payments API gecombineerd met een klant- en mandaatsysteem — een klant autoriseert een eerste betaling, wat een herbruikbaar mandaat creëert voor toekomstige automatische afschrijvingen. Dit is architecturaal anders dan een enkele eenmalige betaalflow en moet specifiek worden geïmplementeerd voor abonnementsproducten.
+## Wat een Volledige Mollie-Integratie Vereist
 
-### Webhook-afhandeling voor Betalingsstatusupdates
-Net als Stripe communiceert Mollie betalingsstatuswijzigingen via webhooks, en je applicatie moet deze betrouwbaar en idempotent afhandelen — hetzelfde principe behandeld in eerdere Stripe-factureringsrichtlijnen geldt hier evenzeer, aangezien dubbele of gemiste webhookverwerking dezelfde categorie factureringsbugs veroorzaakt, ongeacht de provider.
+### Abonnementsondersteuning via Mollie's Terugkerende Betalingen (*Recurring Payments*)
+Mollie verwerkt terugkerende abonnementsbetalingen via de Payments API in combinatie met een klant- en mandaatsysteem: een klant autoriseert een eerste betaling, wat een herbruikbaar mandaat aanmaakt voor toekomstige automatische incasso's. Dit verschilt architectonisch wezenlijk van een eenmalige afrekening en moet specifiek worden ontworpen voor abonnementsmodellen.
 
-### iDEAL's Specifieke Betaalflow Afhandelen
-In tegenstelling tot een creditcardbetaling die voltooid wordt in één formulierinzending, stuurt iDEAL de klant door naar de authenticatieflow van zijn eigen bank voordat hij terugkeert naar je applicatie. Je integratie moet deze redirect-en-terugkeer-flow correct afhandelen, inclusief gevallen waarin een klant het proces halverwege bij zijn bank afbreekt.
+### Webhook-Afhandeling voor Betaalstatus-Updates
+Net als Stripe communiceert Mollie statuswijzigingen van betalingen via webhooks. Uw applicatie moet deze betrouwbaar en idempotent verwerken — hetzelfde principe dat geldt voor Stripe-facturatie is hier onverkort van toepassing, aangezien dubbele of gemiste webhooks bij elke payment provider tot identieke facturatiefouten leiden.
 
-### Btw en Facturering voor Nederlandse en EU-klanten
-Mollie handelt btw-berekening en facturering niet automatisch af — dit moet worden ingebouwd in je applicatielogica of afgehandeld via een aanvullende factureringstool, met correcte btw-behandeling afhankelijk van of je klant een Nederlandse consument, een Nederlands bedrijf, of een bedrijf elders in de EU is.
+### Het Afhandelen van de Specifieke iDEAL Betaalstroom
+In tegenstelling tot een creditcardbetaling die binnen één formulier wordt afgerond, leidt iDEAL de klant door naar de authenticatie-omgeving van zijn eigen bank vóórdat hij terugkeert naar uw applicatie. Uw integratie moet deze redirect-and-return stroom soepel afhandelen, inclusief situaties waarin een bezoeker het proces halverwege afbreekt bij zijn bank.
 
-## Mollie versus Stripe: een Praktische Vergelijking
+### Btw-Berekening en Facturatie voor Nederlandse en EU-Klanten
+Mollie verzorgt niet automatisch de btw-berekening en facturatie — dit moet worden ingebouwd in uw applicatielogica of via een aanvullende facturatietool worden afgehandeld, met de juiste btw-behandeling afhankelijk van of uw klant een Nederlandse consument, een Nederlands bedrijf of een onderneming elders in de EU is.
 
-| Factor | Mollie | Stripe |
+## Mollie versus Stripe: Een Praktische Vergelijking
+
+| Criterium | Mollie | Stripe |
 |---|---|---|
-| iDEAL-ondersteuning | Native, eersteklas | Beschikbaar, minder centraal |
-| Vertrouwen op Nederlandse markt | Zeer hoog | Gematigd |
-| Internationaal bereik | Sterk in de EU | Sterker wereldwijd |
-| Abonnementstooling | Solide, minder volwassen dan Stripe's | Zeer volwassen |
-| Beste voor | Op Nederland/Benelux gerichte SaaS | Internationaal-eerst SaaS |
+| iDEAL-ondersteuning | Inheems, eersteklas | Beschikbaar, minder centraal |
+| Vertrouwen op de Nederlandse markt | Zeer hoog | Gemiddeld |
+| Internationaal bereik | Sterk binnen de EU | Wereldwijd marktleider |
+| Abonnementsfunctionaliteiten | Solide, overzichtelijk | Zeer volwassen en uitgebreid |
+| Beste use-case | Focus op Nederland / Benelux | Focus op wereldwijde markt |
 
-Veel LaunchStudio-klanten gebruiken uiteindelijk beide — Mollie voor Nederlandse en Benelux-klanten, Stripe voor bredere internationale klanten — afhankelijk van hun daadwerkelijke klantgeografie.
+Veel LaunchStudio-klanten gebruiken uiteindelijk beide systemen — Mollie voor Nederlandse en Benelux-klanten, en Stripe voor bredere internationale afnemers — afgestemd op de werkelijke geografie van hun gebruikersbestand.
 
-## De Integratie Goed Krijgen
+## De Integratie Direct Goed Neerzetten
 
-Een correct geïmplementeerd Mollie-abonnementssysteem, met correcte webhook-afhandeling en btw-logica, is betekenisvol meer werk dan een demo-betaalknop — dezelfde complexiteitskloof uitgebreid behandeld in eerdere Stripe-factureringsrichtlijnen geldt hier. [LaunchStudio](https://launchstudio.eu/en/) implementeert Mollie-integraties als standaardonderdeel van het Launch & Grow-pakket, voortbouwend op de directe bekendheid van Manifera's in Amsterdam gevestigde team met het Nederlandse betalingslandschap.
+Een professioneel geïmplementeerd Mollie-abonnementssysteem, inclusief correcte webhook-afhandeling en btw-logica, vergt aanzienlijk meer werk dan een simpele betaalknop in een demo. [LaunchStudio](https://launchstudio.eu/en/) implementeert Mollie-integraties als vast onderdeel van het Launch & Grow pakket, steunend op de directe bekendheid van Manifera's team in Amsterdam met het Nederlandse betalingslandschap.
 
-[Laat je Mollie-integratie scopen](https://launchstudio.eu/en/#calculator) voor jouw specifieke abonnements- of betaalmodel.
+[Laat uw Mollie-integratie specificeren](https://launchstudio.eu/en/#calculator) voor uw specifieke abonnements- of betaalmodel.
 
-## Omgaan met Mislukte en Geweigerde Terugkerende Betalingen onder Mollie's Mandaatsysteem
+## Het Afhandelen van Mislukte en Geweigerde Incasso's Onder Mollie's Mandaatsysteem
 
-Creditcard-abonnementsfacturatie heeft een goed begrepen faalmodus: een kaart wordt geweigerd, en standaard dunning-logica probeert de afschrijving een paar keer opnieuw over meerdere dagen voordat het wordt opgegeven. Mollie's mandaatgebaseerde systeem voor terugkerende betalingen voor iDEAL en vergelijkbare lokale betaalmethoden gedraagt zich anders, op manieren die ertoe doen voor hoe je je abonnementsverlengingslogica bouwt.
+Bij creditcard-abonnementen is het faalpatroon bekend: een kaart wordt geweigerd en standaard dunning-logica probeert de afschrijving over een aantal dagen enkele keren opnieuw. Mollie's mandaat-gebaseerde incassosysteem voor iDEAL en vergelijkbare lokale betaalmethoden gedraagt zich anders, wat directe gevolgen heeft voor hoe u de vernieuwingslogica van uw abonnementen opbouwt.
 
-### Waarom Mandaatgebaseerde Afschrijvingen Anders Falen dan Kaartafschrijvingen
-Een kaartafschrijving mislukt doorgaans door onvoldoende saldo of een verlopen kaart, en het uren of dagen later opnieuw proberen slaagt vaak zodra het onderliggende probleem is opgelost. Een mandaatgebaseerde terugkerende afschrijving onder iDEAL hangt af van of de bank van de klant de doorlopende autorisatie blijft honoreren, en bepaalde banken leggen hun eigen limieten of periodieke herauthenticatie-eisen op aan terugkerende mandaatafschrijvingen die niet bestaan in de kaartwereld — wat betekent dat een simpele "probeer dezelfde afschrijving over drie dagen opnieuw"-strategie, rechtstreeks overgenomen uit kaartgebaseerde dunning-logica, niet netjes overeenkomt met hoe mandaatstoringen zich daadwerkelijk gedragen.
+### Waarom Mandaat-Gebaseerde Afschrijvingen Anders Falen Dan Kaartbetalingen
+Een creditcardbetaling faalt doorgaans door ontoereikend saldo of een verlopen pas, waarbij een herpoging na enkele uren of dagen vaak slaagt zodra het onderliggende probleem is opgelost. Een mandaat-gebaseerde afschrijving onder iDEAL is afhankelijk van de bank van de klant die de doorlopende machtiging blijft honoreren. Sommige banken hanteren eigen limieten of periodieke her-authenticatie-eisen voor terugkerende mandaten. Hierdoor werkt een simpele strategie van "dezelfde incasso over drie dagen opnieuw proberen", gekopieerd van creditcards, niet soepel bij mandaatfouten.
 
-### Dunning-logica Bouwen die Hier Rekening Mee Houdt
-- **Onderscheid faalredenen waar mogelijk**: Mollie's webhook-payloads bevatten status- en, waar beschikbaar, faalreden-informatie — logica die elke storing identiek behandelt, mist de kans om een storing "mandaat moet opnieuw geautoriseerd worden" anders te behandelen dan een echt tijdelijk probleem aan de bankzijde
-- **Vraag om herautorisatie in plaats van blind opnieuw te proberen**: Wanneer het mandaat zelf het probleem lijkt te zijn in plaats van een voorbijgaande kwestie, is het effectievere herstelpad de klant e-mailen om een nieuwe autorisatie te voltooien (een kleine nieuwe betaling die het mandaat opnieuw vestigt) in plaats van herhaaldelijk een afschrijving te proberen tegen een mandaat dat mogelijk niet meer geldig is
-- **Stel een respijtperiode in vóór dienstonderbreking**: Geef klanten een vastgesteld aantal dagen met een duidelijke, directe e-mail die precies uitlegt wat er is gebeurd en wat te doen, voordat je toegang opschort — Nederlandse klanten reageren met name goed op directe, duidelijke communicatie over facturatieproblemen in plaats van vage "betaling mislukt"-berichten
-- **Volg dunning-uitkomsten apart van kaartgebaseerde dunning-metrics**: Als je zowel Mollie als Stripe draait, zoals veel LaunchStudio-klanten doen, kan het samenvoegen van hun dunning-succespercentages tot één metric verhullen dat de ene betaalrail merkbaar beter of slechter presteert in het herstellen van mislukte betalingen dan de andere
+### Dunning-Logica Bouwen die Hier Rekening Mee Houdt:
+- **Onderscheid faalredenen waar mogelijk:** Mollie's webhook-payloads bevatten statusinformatie en faalredenen. Logica die elke mislukking identiek behandelt, mist de kans om een "mandaat vereist nieuwe autorisatie"-melding anders op te lossen dan een tijdelijk banksaldo-probleem.
+- **Stuur aan op her-autorisatie in plaats van blinde herpogingen:** Wanneer het mandaat zelf het probleem vormt, is de meest effectieve herstelroute de klant een e-mail te sturen om een nieuwe autorisatie te voltooien (een kleine nieuwe betaling die het mandaat heractiveert), in plaats van herhaaldelijk te proberen te incasseren op een ongeldig mandaat.
+- **Hanteer een coulanceperiode vóór dienstonderbreking:** Geef klanten een vast aantal dagen de tijd met een duidelijke, directe e-mail waarin exact staat wat er is gebeurd en wat ze moeten doen, vóórdat u de toegang opschort. Nederlandse klanten reageren bijzonder goed op nuchtere, heldere communicatie over facturatieproblemen.
+- **Houd dunning-resultaten gescheiden bij van creditcards:** Als u zowel Mollie als Stripe gebruikt, verbergt het samenvoegen van succespercentages het feit dat de ene betaalmethode mislukte betalingen mogelijk aanzienlijk beter herstelt dan de andere.
 
-### Betalingsstoringen Specifiek Communiceren aan Nederlandse Klanten
-Nederlandse klanten, gewend aan de directheid van iDEAL's simpele betaal-of-weiger-flow bij hun eigen bank, reageren doorgaans beter op even directe communicatie over facturatiestoringen — een duidelijke verklaring van wat er is misgegaan, waarom, en de specifieke actie die nodig is — dan op de zachtere, indirectere formuleringen die gebruikelijk zijn in sommige internationale SaaS-facturatie-e-mails. Dit is een klein maar reëel lokalisatiedetail dat het waard is om goed te doen naast de technische mandaatafhandelingslogica zelf, aangezien een technisch correcte dunning-flow gecombineerd met verwarrende of te zachte berichtgeving nog steeds herstelbare klanten verliest.
+### Communiceren Over Betalingsproblemen met Nederlandse Klanten
+Nederlandse klanten, gewend aan de directheid van iDEAL's simpele betaal-of-weiger stroom bij hun eigen bank, geven de voorkeur aan even directe communicatie over betalingsfouten: een heldere verklaring van wat er misging, waarom, en welke actie vereist is, in plaats van de omfloerste formuleringen die gebruikelijk zijn in sommige internationale SaaS-e-mails.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: checkoutconversie verdubbelen door over te stappen op Mollie
+### Een AI-native oprichter in actie: Conversie verdubbeld door overstap naar Mollie
 
-Amber, die een klein coördinatiebedrijf voor schoonmaakdiensten runde in Vlissingen, bouwde SchoonPlan, een planning- en factureringstool voor zelfstandige schoonmaakprofessionals, met Bolt en de standaard Stripe-checkout die Bolt had gegenereerd. Ondanks oprechte interesse van schoonmaakprofessionals tijdens demo's waren de daadwerkelijke aanmeldingen vanaf de checkoutpagina teleurstellend — ruwweg 1 op de 12 bezoekers die de checkout bereikten, voltooiden daadwerkelijk de betaling.
+Amber, eigenares van een coördinatiebureau voor facilitaire diensten in Vlissingen, bouwde met behulp van Bolt SchoonPlan: een plannings- en facturatietool voor zelfstandige schoonmaakprofessionals. Bolt had standaard een Stripe-creditcardkassa gegenereerd. Ondanks serieuze interesse tijdens productdemo's waren de daadwerkelijke aanmeldingen op de afrekenpagina teleurstellend: slechts ongeveer 1 op de 12 bezoekers die de kassa bereikten voltooide de betaling.
 
-Bij het bekijken van checkout-analytics met een vriend in e-commerce ontdekte Amber dat het meeste van haar afhaken gebeurde bij de betaalstap zelf, en verschillende potentiële klanten hadden in vervolggesprekken direct vermeld dat ze geen creditcard wilden invoeren en liever "de normale manier" wilden betalen — iDEAL, de betaalmethode die ze voor al het andere online gebruikten.
+Toen Amber de afrekenstatistieken analyseerde en navraag deed bij potentiële klanten, ontdekte ze dat de grootste uitval plaatsvond bij het betaalformulier zelf. Meerdere geïnteresseerden gaven aan geen zakelijke creditcard te hebben en liever op "de normale manier" te betalen: via iDEAL, de methode die zij voor al hun online zakelijke uitgaven gebruikten.
 
-Amber nam contact op met LaunchStudio om SchoonPlan's facturering van Stripe naar Mollie te migreren. Het Manifera-team implementeerde Mollie's mandaatsysteem voor terugkerende betalingen voor SchoonPlan's maandelijkse abonnementsmodel, bouwde de iDEAL-redirect-flow correct, en voegde Nederlandse btw-afhandeling toe passend bij haar kleine zakelijke klanten.
+Amber schakelde LaunchStudio in om de facturatie van SchoonPlan te migreren van Stripe naar Mollie. Het team van Manifera bouwde Mollie's terugkerende mandaatsysteem in voor SchoonPlan's maandabonnement, richtte de iDEAL-redirectstroom foutloos in en implementeerde Nederlandse btw-verwerking voor haar mkb-klanten.
 
-**Resultaat:** Het checkout-voltooiingspercentage steeg van ruwweg 8% naar 19% binnen de eerste maand na de Mollie-migratie — meer dan een verdubbeling van conversie uit exact dezelfde hoeveelheid top-of-funnel-interesse, simpelweg door de betaalmethode aan te bieden die Nederlandse schoonmaakprofessionals daadwerkelijk wilden gebruiken.
+**Resultaat:** Het voltooiingspercentage bij het afrekenen steeg binnen de eerste maand na de migratie van circa 8% naar 19% — een meer dan verdubbeling van de betalende klanten uit exact dezelfde stroom geïnteresseerde bezoekers, puur door de betaalmethode aan te bieden die Nederlandse schoonmaakondernemers daadwerkelijk wilden gebruiken.
 
-> *"Ik dacht dat mijn prijsstelling of mijn pitch het probleem was. Het was geen van beide — het was dat mensen geen creditcard wilden pakken. Op het moment dat iDEAL een optie was, voltooide twee keer zoveel mensen die de checkout bereikten hun betaling daadwerkelijk."*
-> — **Amber Smeets, Founder, SchoonPlan (Vlissingen)**
+> *"Ik dacht dat mijn prijsstelling of mijn presentatie het probleem was. Geen van beide: mensen wilden gewoon geen creditcard tevoorschijn halen. Vanaf het moment dat iDEAL een optie was, rekende twee keer zoveel bezoekers direct af."*  
+> — **Amber Smeets, Oprichter SchoonPlan (Vlissingen)**
 
-**Kosten & tijdlijn:** €2.150 (Mollie-migratie en integratie) — voltooid in 9 werkdagen.
+**Kosten & tijdlijn:** €2.150 (Mollie-migratie en integratie) — afgerond in 9 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Moet elke Nederlandse SaaS-founder volledig overstappen van Stripe naar Mollie?
+### Moet elke Nederlandse SaaS-oprichter volledig overstappen van Stripe naar Mollie?
+Niet per se volledig — veel oprichters combineren beide succesvol door Mollie in te zetten voor Nederlandse klanten met een voorkeur voor iDEAL, en Stripe voor internationale klanten die met creditcard betalen. De juiste keuze hangt af van uw specifieke klantengeografie.
 
-Niet noodzakelijk volledig — veel founders draaien met succes beide, met Mollie voor Nederlandse klanten die iDEAL verkiezen en Stripe voor internationale klanten die kaarten verkiezen. De juiste keuze hangt af van jouw specifieke klantgeografie en betaalvoorkeuren, wat het waard is te valideren in plaats van aan te nemen.
+### Is iDEAL daadwerkelijk zoveel populairder dan creditcards voor Nederlandse online betalingen?
+Ja, iDEAL is al jarenlang onbetwist de dominante online betaalmethode in Nederland, geworteld in een diep consumentenvertrouwen. Voor elk product dat zich primair richt op Nederlandse consumenten of het lokale mkb, betekent het uitsluiten van iDEAL het uitsluiten van de standaard betaalverwachting van die markt.
 
-### Is iDEAL echt zoveel populairder dan creditcards voor Nederlandse online betalingen?
+### Ondersteunt Mollie dezelfde abonnementsfunctionaliteiten als Stripe?
+Mollie ondersteunt terugkerende betalingen via zijn SEPA-mandaatsysteem voor reguliere abonnementsmodellen. Stripe's abonnementstools zijn over het algemeen rijker aan functies voor complexe facturatiescenario's (zoals variabele verbruikstiers of complexe pro-rata verrekeningen). Voor gangbare maandelijkse of jaarlijkse abonnementen is Mollie uitstekend toegerust.
 
-Ja, iDEAL is al jaren consistent de dominante online betaalmethode in Nederland, wat breed, diep consumentenvertrouwen en gewoonte weerspiegelt. Voor elk product dat voornamelijk aan Nederlandse consumenten of kleine bedrijven verkoopt, betekent het uitsluiten van iDEAL het uitsluiten van de standaard betaalverwachting van een groot deel van die markt.
+### Hoe complex is btw-afhandeling voor een kleine SaaS die levert aan zowel consumenten als bedrijven?
+Het vereist een helder onderscheid tussen B2C- en B2B-klanten en, voor zakelijke afnemers elders in de EU, het correct toepassen van btw-verlegging (*reverse-charge*). Deze logica moet correct in uw facturatiesysteem worden verwerkt — LaunchStudio configureert dit standaard bij Mollie- en Stripe-integraties.
 
-### Ondersteunt Mollie dezelfde abonnementsfactureringsfuncties als Stripe?
+### Kan LaunchStudio een bestaande Stripe-integratie migreren naar Mollie zonder verstoring voor huidige abonnees?
+Ja, dit is een veelvoorkomend traject, zoals bij de migratie van SchoonPlan. Het team verzorgt de overgang uiterst zorgvuldig door bestaande abonnees op hun oorspronkelijke betaalmethode te laten lopen terwijl nieuwe aanmeldingen direct via de nieuwe Mollie-koppeling worden verwerkt.
 
-Mollie ondersteunt terugkerende betalingen via zijn mandaatsysteem, wat de kern-abonnements-use-case dekt, hoewel Stripe's abonnementstooling over het algemeen als functievolwassener wordt beschouwd voor complexe factureringsscenario's (zoals op gebruik gebaseerde tiers of complexe pro-rata-berekening). Voor eenvoudige maandelijkse of jaarlijkse abonnementen is Mollie volledig capabel.
-
-### Hoe gecompliceerd is btw-afhandeling voor een kleine SaaS die zowel aan consumenten als bedrijven verkoopt?
-
-Het vereist onderscheid tussen B2C- en B2B-klanten en, voor B2B-klanten elders in de EU, mogelijk het afhandelen van btw-verleggingsregels. Deze logica moet correct worden ingebouwd in je factureringssysteem — LaunchStudio configureert dit als onderdeel van Mollie- en Stripe-integraties op basis van jouw specifieke klantenmix.
-
-### Kan LaunchStudio een bestaande Stripe-integratie migreren naar Mollie zonder huidige abonnees te verstoren?
-
-Ja, dit is een veelvoorkomende opdracht, zoals bij Ambers SchoonPlan-migratie. Het team handelt de overgang zorgvuldig af, doorgaans door bestaande abonnees op hun originele betaalmethode te houden terwijl nieuwe aanmeldingen via de nieuwe integratie worden geleid, om verstoring van actieve betalende klanten te voorkomen.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Moet elke Nederlandse SaaS-oprichter volledig overstappen naar Mollie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet per definitie. Veel oprichters gebruiken beide: Mollie voor iDEAL in Nederland en Stripe voor creditcards internationaal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is iDEAL daadwerkelijk populairder dan creditcards in Nederland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, iDEAL is de absolute standaard voor online betalingen in Nederland met een diep verankerd consumentenvertrouwen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ondersteunt Mollie dezelfde abonnementsfunctionaliteiten als Stripe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mollie ondersteunt terugkerende abonnementen via SEPA-mandaten uitstekend voor reguliere maandelijkse en jaarlijkse SaaS-pakketten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe complex is btw-afhandeling voor consumenten en bedrijven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het systeem moet automatisch onderscheid maken tussen particuliere 21% btw en btw-verlegging voor zakelijke EU-klanten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio een live Stripe-systeem migreren naar Mollie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio verzorgt naadloze betalingsmigraties waarbij bestaande actieve abonnementen ongestoord blijven doorlopen."
+      }
+    }
+  ]
+}
+</script>

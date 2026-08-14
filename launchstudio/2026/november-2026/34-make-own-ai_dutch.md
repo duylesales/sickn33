@@ -1,22 +1,22 @@
 ---
-Title: Waarom Fine-Tuning de Duurste Manier is om Make Own AI te Doen
-Keywords: make own AI, build your AI, custom AI model, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: CTO / Technical Founder
+Titel: "Waarom Fine-Tuning De Duurste Manier Is Om Een Eigen AI Te Maken"
+Trefwoorden: eigen AI maken, uw AI bouwen, maatwerk AI model, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelpersona: CTO / Technische Oprichter
 ---
 
-# Waarom Fine-Tuning de Duurste Manier is om Make Own AI te Doen
+# Waarom Fine-Tuning De Duurste Manier Is Om Een Eigen AI Te Maken
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Maak Je Eigen AI: Waarom Fine-Tuning de Duurste Fout in SaaS is",
-  "description": "Oprichters nemen vaak ten onrechte aan dat ze 'hun eigen AI moeten maken' door modellen te fine-tunen om verdedigbaarheid te creëren. Een technische deep dive in waarom RAG fundamenteel superieur is aan fine-tuning voor B2B SaaS.",
+  "headline": "Zelf Een AI Maken: Waarom Fine-Tuning De Duurste Fout Is in SaaS",
+  "description": "Oprichters denken vaak dat ze een 'eigen AI' moeten maken door modellen te fine-tunen voor echte verdedigbaarheid. Een technische analyse waarom RAG fundamenteel superieur en goedkoper is voor B2B SaaS.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/nl/"
+    "url": "https://launchstudio.eu/en/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,103 +26,96 @@ Target Persona: CTO / Technical Founder
   "datePublished": "2026-12-04",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/nl/blog/make-own-ai"
+    "@id": "https://launchstudio.eu/en/blog/make-own-ai"
   }
 }
 </script>
 
-De absolute, meest gemaakte misvatting binnen het huidige AI startup ecosysteem, is het hardnekkige geloof dat échte verdedigbaarheid (defensibility) exclusief voortkomt uit het taalmodel zelf. Wanneer gedreven founders "hun eigen AI willen maken", is hun allereerste instinct vrijwel altijd hetzelfde: het verzamelen van een gigantische, massieve dataset, het huren van peperdure GPU clusters op AWS, om vervolgens wekenlang te zwoegen om een open-source model (zoals Llama 3 of Mistral) te fine-tunen, zodat het zich zogenaamd kan "specialiseren" in hun niche industrie.
+Het meest hardnekkige misverstand in het AI-startup ecosysteem is de overtuiging dat echte productwaarde voortkomt uit het taalmodel zelf. Wanneer oprichters "een eigen AI willen maken", is hun eerste reflex: data verzamelen, dure GPU-clusters huren op AWS en wekenlang een open-source model (zoals Llama of Mistral) trainen op hun specifieke vakgebied.
 
-In 2026 is deze naïeve aanpak vrijwel zonder uitzondering een catastrofale, dodelijke verspilling van kapitaal.
+In 2026 is deze aanpak vrijwel altijd een kapitale verspilling van tijd en budget.
 
-Het fine-tunen van een taalmodel met als doel het domweg aanleren van feitelijke kennis (factual knowledge), is een puur architecturaal anti-patroon. Het getuigt van een compleet, fundamenteel onbegrip over de werkelijke aard van Large Language Models. Als jij een uiterst verdedigbare, ongelooflijk accurate AI SaaS wilt bouwen, hoef je simpelweg he-le-maal niet je eigen AI te maken. Wat je wél moet doen, is het architecteren van een kogelvrije, zware Retrieval-Augmented Generation (RAG) pijplijn bovenop een standaard foundation model.
+Een model fine-tunen om het feitelijke kennis bij te brengen is een software-technisch anti-patroon. Het berust op een verkeerd begrip van hoe Large Language Models functioneren. Als u een uiterst accuraat, schaalbaar en verdedigbaar AI SaaS-platform wilt bouwen, hoeft u géén eigen model te trainen. U moet een robuuste **Retrieval-Augmented Generation (RAG)** architectuur bouwen bovenop een beproefd basismodel.
 
-## De Fine-Tuning Denkout (Fallacy)
+## De Valkuilen van Fine-Tuning
 
-Ambitieuze founders kiezen steevast voor fine-tuning omdat ze oprecht geloven dat dit het beruchte "context probleem" oplost. Als een standaard foundation model geen verstand heeft van complex Europees maritiem recht, zo luidt de logica, dan moeten we dat model simpelweg fine-tunen op duizenden maritieme juridische documenten, zodat het de wet uit zijn hoofd "leert".
+Ondernemers kiezen voor fine-tuning omdat ze denken dat het contextproblemen oplost: *"Als GPT-4 het Nederlandse maritieme recht niet tot in detail kent, trainen we het model toch gewoon op al onze maritieme wetboeken?"*
 
-Dit is exact waarom deze theorie in de harde praktijk (production) catastrofaal faalt:
+In de praktijk faalt dit om drie redenen:
 
-### 1. Het Probleem Van Catastrofaal Vergeten (Catastrophic Forgetting)
-Wanneer jij een LLM agressief fine-tunet op compleet nieuwe data, beschadig je onbedoeld en onherroepelijk zijn bestaande interne verbindingen (weights). Terwijl je het model wanhopig Europees maritiem recht probeert aan te leren, degradeer je tegelijkertijd zijn fundamentele vermogen om überhaupt nog foutloos Engels te schrijven, valide JSON te formatteren, of puur logisch te redeneren. Het model raakt compleet, obsessief geobsedeerd (hyper-fixated) door de nieuwe data, maar verliest tegelijkertijd de algemene intelligentie die het in eerste instantie zo bruikbaar maakte.
+### 1. Het Probleem van "Catastrophic Forgetting"
+Wanneer u een LLM traint op specifieke nieuwe vakdata, beschadigt u ongemerkt de bestaande neurale gewichten. Terwijl u het model maritiem recht leert, verliest het vaak zijn vermogen om foutloze JSON te formatteren, complexe logica te volgen of vloeiend Nederlands te schrijven. Het model raakt gefixeerd op de nieuwe data, maar verliest de algemene intelligentie die het nuttig maakte.
 
-### 2. Het On-Updatebare Brein
-Stel, je verbrandt succesvol €15.000 aan het moeizaam fine-tunen van een model op het dikke HR-beleidshandboek van je bedrijf. Twee weken later besluit de HR-afdeling om het thuiswerkbeleid radicaal te wijzigen. Om de kennis in het hoofd van de AI te updaten, kun je helaas niet zomaar even een simpel database-rijtje aanpassen. Je bént verplicht om het complete model vanaf de grond af aan (from scratch) opnieuw te hertrainen, waarbij je lachend diezelfde €15.000 aan keiharde kosten nóg een keer mag aftikken. Feitelijke kennis in een gefine-tuned model is simpelweg ingebakken, keihard, en volstrekt onveranderlijk (immutable).
+### 2. Het Onveranderlijke Geheugen
+Stel dat u €15.000 besteedt aan het fine-tunen van een model op uw HR-beleid. Twee weken later wijzigt de wetgeving rondom thuiswerkvergoedingen. Om die nieuwe kennis in te voeren, kunt u niet simpelweg een record in een database aanpassen: u moet het complete model opnieuw trainen, inclusief de bijbehorende €15.000 aan GPU-kosten. Feitenkennis in een getraind model zit muurvast ingebakken.
 
-### 3. De Hallucinatie Multiplicator
-Gefine-tunede modellen hallucineren (liegen) helaas nog steeds, maar ze doen dit op een véél gevaarlijkere manier. Omdat ze uitgebreid zijn getraind op jouw uiterst specifieke industriejargon, presenteren ze hun verzonnen, nepfeiten met exact de juiste toon, autoriteit en terminologie van jouw specifieke branche. Dit maakt de hallucinaties nagenoeg onmogelijk te detecteren voor eindgebruikers. Bovendien kán een fine-tuned model fundamenteel zijn bronnen niet citeren — het model kan jou onmogelijk vertellen *waar* het een specifiek feitje vandaan heeft; het beweert louter en arrogant dát het het "weet".
+### 3. De Versterkte Hallucinatie
+Getrainde modellen hallucineren nog steeds, maar doen dat op een veel gevaarlijkere manier. Omdat ze getraind zijn op uw specifieke vakjargon, presenteren ze verzonnen onwaarheden met exact de juiste vaktermen en overtuigingskracht, waardoor fouten voor gebruikers nauwelijks te herkennen zijn. Bovendien kan een getraind model géén bronvermelding leveren: het kan u niet vertellen *waar* het een feit heeft geleerd.
 
-## De RAG Suprematie
+## Waarom RAG Fundamenteel Superieur Is
 
-De absolute, bewezen oplossing voor ál deze drie gigantische problemen, is Retrieval-Augmented Generation (RAG). 
+De oplossing voor al deze problemen is **Retrieval-Augmented Generation (RAG)**.
 
-In plaats van wanhopig te proberen om kennis in het digitale brein van het model te bakken (fine-tunen), sla je al je waardevolle kennis simpelweg extern op in een extreem geoptimaliseerde vector database. Zodra een gebruiker een vraag stelt, doorzoekt het backend-systeem bliksemsnel deze database. Het pakt uitsluitend de exact relevante alinea's, en injecteert deze vervolgens fysiek in de prompt, samen met de daadwerkelijke vraag. Het foundation model (zoals GPT-4o) fungeert hierbij louter en alleen als een briljante 'reasoning engine' (redeneermachine), die de vers aangedragen, harde feiten perfect verwerkt in plaats van blind te moeten vertrouwen op zijn eigen, feilbare interne geheugen.
+In plaats van feitenkennis in het neurale netwerk te proberen bakken, slaat u documenten extern op in een geoptimaliseerde vectordatabase. Stelt een gebruiker een vraag, dan zoekt het systeem de exacte, relevante tekstpassages op en voegt deze als context toe aan de prompt. Het basismodel (zoals GPT-4o) fungeert uitsluitend als redeneermotor die de aangeleverde feiten analyseert.
 
-**Waarom RAG fundamenteel superieur is voor SaaS:**
-- **Nul Hertrainingskosten:** Als een bedrijfspolicy plotseling wijzigt, pas je domweg het tekstdocumentje aan in de database. De AI "weet" binnen één milliseconde de nieuwe policy. Klaar.
-- **Perfecte Bronvermeldingen (Citaties):** Omdat het systeem het originele brondocument fysiek als context meegeeft aan de LLM, kan de LLM in zijn antwoord feilloos citeren uit exact de juiste alinea en het juiste paginanummer.
-- **Keiharde Toegangscontrole (Access Control):** Je kunt loeistrakke Row Level Security (RLS) afdwingen, direct in de vector database. Gebruiker A haalt wiskundig gezien alléén de specifieke documenten op die Gebruiker A mag zien. Dít kun je simpelweg nooit doen met een fine-tuned model; zo'n model "weet" immers alles waarop het is getraind, en zal al die diepe geheimen vrolijk lekken (leakage) aan iedereen die er toevallig slim genoeg naar vraagt.
+**De voordelen van RAG voor SaaS:**
+- **Nul Hertrainingskosten:** Wijzigt een wet of beleid, dan past u het document in de database aan. De AI weet het direct.
+- **Feilloze Bronvermelding:** Het model kan exact het document, de paragraaf en het paginanummer citeren in zijn antwoord.
+- **Strikte Toegangsbeveiliging:** U kunt Row Level Security (RLS) afdwingen op de vectordatabase. Gebruiker A krijgt uitsluitend data te zien waar hij rechten voor heeft — iets wat bij een getraind model technisch onmogelijk is.
 
-## Hoe LaunchStudio RAG Pijplijnen Bouwt (Architects)
+## Hoe LaunchStudio RAG-Pipelines Ontwerpt
 
-Het bouwen van een serieus, production-grade RAG-systeem is zwaar, complex werk. Het vereist intelligente data chunking strategieën, loodzware high-dimensional database indexering (HNSW), semantische caching, en meedogenloze re-ranking algoritmes. Leuke AI-tools zoals Cursor kunnen ongetwijfeld een schattig, basic RAG-scriptje voor je typen, maar ze kunnen fundamenteel onmogelijk de massieve, schaalbare database-infrastructuur architecteren die keihard nodig is voor een multi-tenant B2B SaaS.
+Het bouwen van een professionele RAG-pijplijn vereist specialistische data-engineering: documenten opdelen (chunking), HNSW-indexering, semantische caching en re-ranking modellen.
 
-Dít is de absolute specialiteit van [LaunchStudio](https://launchstudio.eu/nl/). Loeihard aangedreven door de data-engineering divisie van enterprise-speler [Manifera](https://www.manifera.com/), bouwt LaunchStudio de robuuste, complexe pijplijnen die founders in staat stellen om "hun eigen AI te maken", zónder dat ze ooit ook maar in de buurt van een dure GPU hoeven te komen.
+[LaunchStudio](https://launchstudio.eu/en/), aangedreven door de data-engineers van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, bouwt enterprise-grade RAG-architecturen:
+1. **De Data-Ingestie Pijplijn:** Veilige extractie van tekst uit PDF's, Notion of Salesforce, met behoud van documentstructuren en hoogwaardige vector-embeddings.
+2. **De Vectordatabase:** Managed PostgreSQL met `pgvector` en wiskundig getunede HNSW-indexen voor zoekacties onder de 50ms over miljoenen documenten.
+3. **Multi-Tenant Isolatie:** Row Level Security (RLS) die wiskundig uitsluit dat klantdata tussen organisaties lekt.
+4. **Hybride Zoeken & Reranking:** Combinatie van vector-overeenkomsten met trefwoordherkenning (BM25) en Cross-Encoder rerankers voor maximale accuratesse.
 
-Strak aangestuurd door CEO Herre Roelevink in Amsterdam, en tot in perfectie geëngineerd door de database architecten in Ho Chi Minh City, implementeert LaunchStudio een uiterst gepatenteerde RAG stack:
-1. **De Ingestie Engine:** We bouwen muurvaste, veilige pijplijnen die massaal tekst extraheren uit PDF's, Notion, of Salesforce. We knippen de data razendslim op (chunking, met streng respect voor alinea-grenzen), en genereren onmiddellijk high-quality vector embeddings.
-2. **De Vector Database:** We deployen loodzwaar gepartitioneerde PostgreSQL databases uitgerust met `pgvector`, tot in de puntjes geoptimaliseerd met strakke HNSW indexen. Dit garandeert een sub-milliseconde retrieval, zélfs wanneer we moeten zoeken door miljoenen zware documenten.
-3. **De Multi-Tenant Firewall:** We dwingen snoeiharde Row Level Security (RLS) af. Hiermee garanderen we wiskundig en fysiek dat dodelijke cross-tenant data leakage absoluut, 100% onmogelijk is tijdens de retrieval-fase.
-4. **De Reranking Middleware:** We implementeren geavanceerde hybrid-search (een meedogenloze combinatie van vector similarity mét traditionele keyword matching zoals BM25) plus zware reranking modellen. Dit garandeert dat de LLM werkelijk uitsluitend en louter de aller-, aller-relevantste (hyper-relevant) context gevoerd krijgt.
+## Echt voorbeeld
 
-## Praktijkvoorbeeld
+### Een AI-Native Oprichter in de Praktijk: De Juridische Oprichter Die €40.000 Verbrandde Aan GPU's
 
-### Een AI-Native Founder in de praktijk: De Legal Tech CEO Die Zomaar €40.000 Aan GPU's Verbrandde
+David is een voormalig advocaat in Frankfurt. Hij wilde een AI-assistent bouwen die complexe overnamecontracten (M&A) kon opstellen conform het Duitse vennootschapsrecht.
 
-David werkte jarenlang als doorgewinterd corporate advocaat op de Zuidas in Frankfurt. Hij nam ontslag om een ambitieuze AI assistent te bouwen die zélf complexe M&A (Mergers & Acquisitions) contracten in elkaar kon timmeren, strak gebaseerd op het complexe Duitse ondernemingsrecht. 
+Ervan overtuigd dat standaardmodellen zoals GPT-4 niet specialistisch genoeg waren, besloot David zelf een AI te trainen. Hij huurde twee freelance machine learning engineers in. Zij huurden AWS GPU-clusters en gaven in drie maanden €42.000 uit aan het fine-tunen van een open-source Llama-model op duizenden eerdere overnamecontracten.
 
-Heilig overtuigd van het dogma dat 'algemene' modellen zoals GPT-4 bij lange na niet gespecialiseerd genoeg waren, besloot David dat hij zijn eigen AI moést en zou maken. Hij tikte twee peperdure freelance machine learning engineers op de kop. Ze huurden direct de zwaarste AWS GPU clusters, en verbrandden in drie maanden tijd ruim €42.000 aan het moeizaam fine-tunen van een open-source Llama model op tienduizenden oude, ingewikkelde M&A contracten.
+Het resultaat was een ramp: het model genereerde zinnen die uiterst professioneel klonken, maar juridisch kant noch wal raakten. Toen de Duitse belastingwetgeving tussentijds wijzigde, vertelden de engineers David dat het model voor tienduizenden euro's opnieuw getraind moest worden.
 
-Het eindresultaat was ronduit desastreus. Het peperdure, gefine-tunede model kon ontegenzeggelijk teksten uitbraken die bizar professioneel klonken, maar de gegenereerde juridische clausules sloegen inhoudelijk en wetmatig werkelijk nergens op (legal nonsense). Het werd nóg erger: toen de complexe Duitse belastingwetgeving middenin het traject abrupt wijzigde, vertelden de lachende engineers aan David dat ze het voltallige, maandenlange fine-tuning proces in zijn geheel opnieuw (from scratch) moesten opstarten, louter en alleen om de 'kennisbank' van het model te updaten. 
+David had de helft van zijn startkapitaal verbrand en zat met een product dat een juridisch risico vormde.
 
-David had in rap tempo de helft van zijn pre-seed funding rücksichtslos verbrand, en hij zat opgescheept met een product dat in de praktijk één groot juridisch mijnenveld (legal liability) was.
+Hij zette het project stil en schakelde LaunchStudio in. Het Manifera-team adviseerde hem om het getrainde model per direct te verlaten.
 
-Uit pure wanhoop stopte hij de ontwikkeling en greep hij de telefoon om LaunchStudio in te schakelen. In een genadeloze, maar absoluut noodzakelijke architecturale 'tear-down', sommeerde het Manifera engineeringteam David om het defecte, peperdure fine-tuned model onmiddellijk en definitief bij het grofvuil te zetten. 
+In 12 werkdagen bouwde LaunchStudio een geavanceerde RAG-architectuur: David's contractdatabase werd beveiligd opgeslagen in Supabase pgvector en gekoppeld aan de standaard GPT-4o API.
 
-Vervolgens bouwde LaunchStudio in exact 12 werkdagen (business days) een state-of-the-art, loodzware RAG architectuur. Ze pakten David's originele database vol loeizware M&A contracten, en vectoriseerden deze vliegensvlug in een kogelvrije, zwaar beveiligde, multi-tenant Supabase instance. Deze database koppelden ze simpelweg aan de goedkope, standaard, ongemodificeerde (unmodified) GPT-4o API. 
+Wanneer een advocaat om een specifieke clausule vroeg, voerde de backend een hybride zoekopdracht uit, vond de drie meest relevante clausules uit eerdere succesvolle dossiers en leverde deze als context aan het model.
 
-Wanneer een advocaat het fonkelnieuwe systeem nu vraagt om een uiterst specifieke clausule te schrijven, executeert de loeistrakke backend een razendsnelle hybrid search. Het systeem pakt onmiddellijk de drie állerbeste, meest relevante clausules uit eerdere, succesvolle contracten, en voert déze klakkeloos als waarheid (context) aan GPT-4o. 
+**Resultaat:** De contractclausules waren juridisch perfect en bevatten exacte bronverwijzingen naar eerdere dossiers. Bij wetswijzigingen paste David simpelweg de tekstbestanden in de database aan. Zijn maandelijkse serverkosten daalden van duizenden euro's aan GPU-huur naar €150 per maand aan API- en databasekosten. David sloot direct drie advocatenkantoren aan (€5.500 MRR).
 
-**Resultaat:** Het nieuwe systeem schrijft en draft de contracten 100% foutloos. Het citeert feilloos de exacte, eerdere contracten die het ter inspiratie heeft gebruikt. Toen de belastingwetgeving opnieuw wijzigde, hoefde David simpelweg alleen even de simpele PDF'jes en tekstbestanden in de database te overschrijven, waarna de AI onmiddellijk, in real-time, was voorzien van de nieuwste kennis. Zijn absurde infrastructuurkosten crashten van tienduizenden euro's aan zware GPU huur, naar een lachwekkende €150/maand aan simpele API- en database fees. David sloot exact een maand later zijn eerste drie grote advocatenkantoren aan als klant, wat hem direct een stabiele €5.500 aan MRR opleverde.
-
-> *"Ik heb meedogenloos €40.000 in de fik gestoken in een wanhopige poging om een AI letterlijk 'advocaat' te maken. LaunchStudio heeft me de harde les geleerd dat je een AI helemaal niets hoéft te leren; je moet hem alleen maar razendsnel de juiste documenten op precies het juiste moment aanreiken. Ze hebben mijn massive, peperdure ML project rücksichtslos vervangen door een super elegante, spotgoedkope data pijplijn."*
+> *"Ik heb €40.000 verspild aan het proberen van een AI een advocaat te maken. LaunchStudio leerde me dat je de AI niets hoeft te leren; je moet het simpelweg op het juiste moment de juiste documenten voorleggen. Zij vervingen een peperduur ML-project door een elegante, betaalbare datapijplijn."*
 > — **David Weber, Oprichter, ContractForge (Frankfurt)**
 
-**Kosten & Tijdlijn:** €5.800 (Launch & Grow Pakket, flink geüpgraded met de loeizware Advanced RAG Add-on) — productie-klaar, schaalbaar en live in exact 12 werkdagen.
+**Kosten & Doorlooptijd:** €5.800 (Launch & Grow Pakket met Geavanceerde RAG Add-on) — productie-klaar en live binnen 12 werkdagen.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### (Scenario: Technische oprichter die worstelt met de keuze tussen Fine-Tuning en RAG) Is er eigenlijk wel óóit een gegronde, goede reden om een model te fine-tunen in plaats van het simpelweg in te richten met RAG?
+### Is er ooit een reden om een model wél te fine-tunen in plaats van RAG te gebruiken?
+Ja, maar zelden voor feitenkennis. Fine-tuning is nuttig om een model een specifieke *vorm* of *stijl* aan te leren (zoals een zeer specifiek JSON-schema of een unieke merktoon). Voor het bijbrengen van feiten (zoals wetten, handleidingen of beleid) is RAG altijd superieur, veiliger en drastisch goedkoper.
 
-Jazeker, absoluut. Maar vrijwel nóóit om feitelijke kennis (factual knowledge) aan te leren. Je móét een model fine-tunen op het moment dat je het dwingend een uiterst specifiek *formaat* (format) of een extreem strak *gedrag* (behavior) moet aanleren (bijvoorbeeld: het dwingend moeten uitspuwen van een zwaar gepatenteerd, highly specialized JSON schema, of het consistent schrijven in een wel héél specifieke brand voice), waarbij simpele prompting domweg keer op keer faalt. Voor het aanleren van harde *feiten* (zoals bedrijfspolicies, loodzware juridische precedenten of dikke producthandleidingen) is RAG daarentegen werkelijk oneindig veel superieur, veiliger, én exponentieel goedkoper.
+### Als ik RAG gebruik met OpenAI, geef ik dan niet al mijn vertrouwelijke data aan hen weg?
+Nee, mits u de juiste architectuur hanteert. LaunchStudio routeert RAG-aanroepen uitsluitend via Enterprise-endpoints (zoals Azure OpenAI) met Zero Data Retention. Een formele Verwerkersovereenkomst (DPA) verbiedt de provider om uw data te gebruiken voor modeltraining.
 
-### (Scenario: Oprichter met grote zorgen rondom dataprivacy) Als ik de hele dag vrolijk RAG gebruik via de servers van OpenAI, geef ik dan niet stiekem al mijn diepst geheime, proprietary bedrijfsdata aan hen cadeau?
+### Mijn RAG-systeem haalt soms de verkeerde documenten op. Hoe los ik dat op?
+Standaard cosinus-overeenkomsten missen vaak de contextuele lading. LaunchStudio lost dit op via *Hybride Zoeken*: we combineren vector-embeddings met traditionele BM25-zoekindexen en filteren de resultaten via een Cross-Encoder Reranker voor maximale relevantie.
 
-Nee, absoluut niet, míts (en dit is cruciaal) je de juiste architectuur bouwt. LaunchStudio weigert consumenten-endpoints te gebruiken en routeert jouw gevoelige RAG context uitsluitend via loodzware Enterprise-tier API endpoints (zoals Azure OpenAI, of de strikte OpenAI API met "Zero Data Retention" keihard ingeschakeld). Onder deze loeistrenge Data Processing Agreements (DPA's), is het de AI provider wettelijk en juridisch snoeihard verboden om jouw waardevolle RAG context ook maar enigszins te gebruiken om hun eigen modellen te trainen. Jouw intellectueel eigendom (IP) is en blijft 100% van jou, kogelvrij afgeschermd.
+### Hoeveel goedkoper is een RAG-pijplijn vergeleken met een eigen fine-tuned model?
+Een getraind model hosten vereist dedicated GPU-servers (zoals A100's), wat maandelijks €1.500 tot €5.000+ kost, ongeacht het aantal gebruikers. Een RAG-architectuur van LaunchStudio draait op serverless API's en PostgreSQL, wat voor startups doorgaans minder dan €150 per maand kost en lineair meeschaalt.
 
-### (Scenario: Developer die vloekt op de beroerde accuraatheid van RAG) Mijn huidige RAG-systeem haalt continu de verkeerde, irrelevante documenten op. Hoe fix ik deze ellende in godsnaam?
-
-Domme, basic vector search (Cosine Similarity) faalt in de praktijk aan de lopende band. Het matcht braaf op suffe keywords (sleutelwoorden), maar mist de dieperliggende, menselijke intentie (intent) volledig. LaunchStudio lost deze slechte, lachwekkende RAG accuratesse meedogenloos op door "Hybrid Search" te implementeren. Wij combineren feilloos de krachtige vector embeddings mét traditionele, ijzersterke keyword indexering (BM25), en stampen de ruwe resultaten vervolgens door een zwaar Cross-Encoder Reranking model. Dit garandeert wiskundig dat de LLM werkelijk uitsluitend de áller-, allerbeste en meest accurate context gevoerd krijgt, wat gevaarlijke hallucinaties (liegen) in de praktijk nagenoeg elimineert.
-
-### (Scenario: Niet-technische oprichter die op de centen let) Hoeveel goedkoper is het draaien van een RAG pijplijn nou daadwerkelijk, vergeleken met het runnen van een fine-tuned model?
-
-Het betrouwbaar hosten van een fine-tuned model in productie (production) eist domweg dat je Dedicated GPU's huurt (zoals peperdure A100's of H100's). Dit kost je lachend €1.500 tot €5.000+ per maand, puur en alleen om die loeiende server in de lucht te houden — zélfs als je nul gebruikers (zero usage) hebt. Een kogelvrije RAG pijplijn, strak gebouwd door LaunchStudio, maakt daarentegen slim gebruik van goedkope serverless API's en loeistabiele, managed PostgreSQL databases. Dit kost voor een vroege startup (early-stage) vrijwel altijd ver onder de €150/maand, en het schaalt uitsluitend en eerlijk, lineair mee met je daadwerkelijke, échte verbruik.
-
-### (Scenario: Oprichter die stress heeft over document-updates) Als ik vandaag een belangrijk PDF'je aanpas of update, hoe lang duurt het dan in godsnaam voordat de AI in mijn RAG-systeem die nieuwe info heeft "geleerd"?
-
-Eén milliseconde (instantly). Zodra jij in jouw UI een splinternieuwe PDF uploadt of even een zinnetje in een document aanpast, verwijdert de agressieve LaunchStudio backend pipeline volautomatisch en rücksichtslos de oude vector embeddings. De verse, nieuwe tekst wordt in real-time, razendsnel verwerkt. De allereerstvolgende vraag (the very next question) van een eindgebruiker, put onmiddellijk — zonder enige vertraging — uit de fonkelnieuwe, geüpdatete informatie. Er is sprake van nul (zero) downtime en nul hertrainingskosten.
+### Als ik een document aanpas in de database, hoe snel weet de AI van de wijziging in een RAG-systeem?
+Direct. Zodra u een bestand uploadt of bewerkt, overschrijft de backend de vector-embeddings realtime. De eerstvolgende vraag die een gebruiker stelt maakt direct gebruik van de actuele informatie, zonder enige vertraging of hertraining.
 
 <script type="application/ld+json">
 {
@@ -131,42 +124,42 @@ Eén milliseconde (instantly). Zodra jij in jouw UI een splinternieuwe PDF uploa
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is er ooit een goede reden om een model te fine-tunen in plaats van RAG te gebruiken?",
+      "name": "Is er ooit een reden om een model wél te fine-tunen in plaats van RAG te gebruiken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, maar uitsluitend om specifieke formaten of gedrag (bijv. complexe JSON schema's) af te dwingen. Om het model feitenkennis aan te leren (policies, handleidingen) is RAG altijd oneindig veel superieur, veiliger en drastisch goedkoper. Feiten horen thuis in een database, niet vastgebakken in neurale netwerken."
+        "text": "Fine-tuning dient voor stijl en output-formaten; feiten horen in een database via RAG voor directe aanpasbaarheid en nulkosten bij updates."
       }
     },
     {
       "@type": "Question",
-      "name": "Als ik RAG met OpenAI gebruik, geef ik dan niet al mijn vertrouwelijke bedrijfsdata gratis weg?",
+      "name": "Als ik RAG gebruik met OpenAI, geef ik dan niet al mijn vertrouwelijke data aan hen weg?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. LaunchStudio implementeert uitsluitend Enterprise-tier API's (zoals Azure OpenAI) waarbij Zero Data Retention snoeihard is ingeschakeld. Zware juridische contracten (DPA's) verbieden de provider absoluut om jouw data te gebruiken voor model-training. Je IP blijft 100% veilig."
+        "text": "Nee. LaunchStudio gebruikt Enterprise ZDR-endpoints en DPA-overeenkomsten die modeltraining op uw bedrijfsdata juridisch en technisch uitsluiten."
       }
     },
     {
       "@type": "Question",
-      "name": "Mijn RAG-systeem pakt steeds de verkeerde documenten. Hoe los ik dat op?",
+      "name": "Mijn RAG-systeem haalt soms de verkeerde documenten op. Hoe los ik dat op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Basis vector-search (Cosine Similarity) faalt vaak. LaunchStudio fixt dit structureel met Hybrid Search: we combineren vector embeddings met klassieke keyword search (BM25) en halen de resultaten door een Cross-Encoder Reranker. Zo krijgt de LLM altijd de beste context."
+        "text": "Via Hybride Zoeken (vector + BM25) gecombineerd met Cross-Encoder reranking modellen die de meest relevante documenten nauwkeurig selecteren."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel goedkoper is het runnen van RAG in vergelijking met een fine-tuned model?",
+      "name": "Hoeveel goedkoper is een RAG-pijplijn vergeleken met een eigen fine-tuned model?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het huren van GPU's voor een fine-tuned model kost je direct €1.500 tot €5.000+ per maand. Een robuuste RAG-pijplijn van LaunchStudio draait op serverless API's en PostgreSQL, en kost vaak nog geen €150/maand, waarbij de kosten puur meeschalen met het daadwerkelijke verbruik."
+        "text": "RAG op serverless PostgreSQL kost ca. €150/mnd, terwijl dedicated GPU-servers voor eigen modellen maandelijks €1.500 tot €5.000+ kosten."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe lang duurt het voordat de AI in een RAG-systeem 'weet' dat ik een PDF heb geüpdatet?",
+      "name": "Als ik een document aanpas in de database, hoe snel weet de AI van de wijziging in een RAG-systeem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dat gaat onmiddellijk (instantly). Zodra jij een document aanpast, verwijdert de LaunchStudio backend direct de oude embeddings en verwerkt de nieuwe tekst real-time. De eerstvolgende vraag van de gebruiker put direct, zonder enige vertraging of downtime, uit de nieuwe info."
+        "text": "Direct realtime. Nieuwe tekst wordt direct gevectoriseerd zodat de AI meteen over de actuele data beschikt zonder wachttijd."
       }
     }
   ]

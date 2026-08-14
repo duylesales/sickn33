@@ -1,19 +1,19 @@
-🇪🇺 Wyatt, een HR-techoprichter, gebruikte **Cursor** om een cv-screeningapp te bouwen — maar liep juridisch vast bij zijn expansie naar Europa omdat hij geen AI Act-auditlogs had. 📋
+🇪🇺 Wyatt, oprichter van een HR-tech startup, bouwde een cv-screeningtool met **Cursor** — maar liep vast bij Europese expansie wegens het ontbreken van verplichte audit-logs conform de EU AI Act. 📋
 
-De EU AI Act heeft extraterritoriale werking: één gebruiker die inlogt vanuit Berlijn is genoeg om uw Amerikaanse startup onder de jurisdictie van Brussel te plaatsen, met boetes tot 7% van de wereldwijde omzet. 🧠
+De Europese AI Act heeft extraterritoriale werking: één gebruiker vanuit Berlijn of Amsterdam is genoeg om onder de wetgeving te vallen, met boetes tot 7% van de wereldwijde omzet. 🧠
 
-❌ Ervan uitgaan dat een puur Amerikaanse startup vrijgesteld is, alleen omdat de servers buiten de EU staan
-❌ High-Risk-systemen (HR-screening, kredietbeoordeling) die volledig autonoom draaien, zonder menselijke override
-❌ Denken dat "OpenAI is compliant" u ontslaat van verantwoordelijkheid — de downstream-deployer blijft aansprakelijk
+❌ Denken dat een niet-Europese startup automatisch is vrijgesteld van Brusselse wetgeving
+❌ Hoog-risico systemen (zoals HR-screening of kredietbeoordeling) volledig autonoom laten beslissen zonder menselijk toezicht
+❌ Geloven dat "OpenAI is compliant" voldoende is — u blijft als deployer zelfstandig verantwoordelijk
 
-✅ Uw systeem correct classificeren onder de risiconiveaus van de wet vóórdat u lanceert, niet pas na het juridisch onderzoek van een prospect
-✅ Onveranderlijke, tijdgestempelde auditlogs die precies vastleggen waarom de AI elke score-beslissing nam
-✅ Een Human-in-the-Loop-controlepoort waarmee een compliance officer elke beslissing kan overrulen voordat deze definitief is
+✅ Uw systeem tijdig classificeren in de juiste risicoklasse vóórdat u de markt opgaat
+✅ Onveranderlijke audit-logs die exact vastleggen waarom en hoe de AI elke scoringbeslissing nam
+✅ Een verplichte Human-in-the-Loop review-gateway waarmee medewerkers beslissingen kunnen overschrijven
 
-Bij **LaunchStudio**, aangedreven door Manifera sinds 2014, bouwen we exact dit soort compliance-architectuur, over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** bouwen we sinds 2014 compliancy-architecturen via Manifera, verspreid over meer dan 160 gerealiseerde projecten. 🛡️
 
-Wyatts app voldoet nu aan de documentatievereisten van de EU AI Act, wat zijn Europese verkoopkanalen ontsluit. 🚀
+Wyatt voldoet nu volledig aan de EU AI Act documentatie-eisen, waardoor zijn Europese verkoopkanalen succesvol werden geopend. (€2.400 (Compliance Auditing Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
-👉 Laat uw AI Act-blootstelling controleren: [Link naar artikel]
+👉 Ontdek hoe u uw software compliant maakt voor de EU AI Act: [Link naar artikel]
 
-#AINativeFounder #LaunchStudio #Manifera #EUAIAct #AICompliance
+#AINativeFounder #LaunchStudio #Manifera #EUAIAct #AICompliance #HRTech #CyberSecurity #GDPR #AISaaS #StartupOpschalen

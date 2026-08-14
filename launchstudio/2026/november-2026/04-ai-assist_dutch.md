@@ -1,22 +1,21 @@
 ---
-Title: Waarom AI Assist Tools Echte Engineering Niet Kunnen Vervangen
-Keywords: AI assist, AI for coding, AI code tool, code with AI, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: Technical Solo Founder / Indie Hacker
+Titel: "Waarom AI Assist Tools Geen Echte Software Engineering Kunnen Vervangen"
+Trefwoorden: AI assist, AI for coding, AI code tool, code with AI, LaunchStudio, Manifera
+Koperfase: Overweging
 ---
 
-# Waarom AI Assist Tools Echte Engineering Niet Kunnen Vervangen
+# Waarom AI Assist Tools Geen Echte Software Engineering Kunnen Vervangen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI Assist Tools Zijn Geen Vervanging Voor Engineering: Wat Oprichters Verkeerd Begrijpen",
-  "description": "AI assist tools versnellen code-generatie, maar kunnen fundamentele software-engineering niet vervangen. Ontdek waarom beveiliging, architectuur en deployment nog steeds menselijke expertise vereisen — en hoe oprichters dit gat kunnen dichten.",
+  "headline": "AI Assist Tools Zijn Geen Vervanging voor Engineering: Wat Oprichters Vaak Verkeerd Begrijpen",
+  "description": "AI assist tools versnellen codegeneratie, maar vervangen fundamentele software-engineering niet. Waarom architectuur en beveiliging menselijke expertise vereisen.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/nl/"
+    "url": "https://launchstudio.eu/en/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,129 +25,114 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "datePublished": "2026-11-04",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/nl/blog/ai-assist"
+    "@id": "https://launchstudio.eu/en/blog/ai-assist"
   }
 }
 </script>
 
-Vorige maand heeft u meer code verscheept dan sommige junior ontwikkelaars in een heel kwartaal. Cursor vulde uw React-componenten automatisch aan. Lovable genereerde de basis voor uw volledige dashboard. Bolt leverde u in veertig minuten een pixel-perfecte landingspagina.
+U heeft de afgelopen maand waarschijnlijk meer code geschreven dan menig junior ontwikkelaar in een kwartaal. Cursor voltooide uw React-componenten. Lovable zette in één sessie uw dashboard op. Bolt leverde binnen veertig minuten een pixel-perfecte landingspagina op.
 
-Maar niets van die code kan omgaan met een database connection pool die overbelast raakt door 50 gelijktijdige gebruikers. Niets ervan voorkomt een SQL-injectieaanval die de e-mailadressen van uw gebruikers blootlegt. En niets ervan verwerkt een Stripe-webhook correct wanneer de creditcard van een klant op zondagochtend om 3 uur 's nachts verloopt.
+Maar geen van die gegenereerde code vangt een overbelaste database-connectiepool op wanneer 50 gebruikers tegelijk inloggen. Geen van die tools voorkomt een SQL-injectie die gebruikersgegevens blootlegt. En geen van die tools verwerkt foutloos een Stripe-webhook wanneer de creditcard van een klant op zondagnacht om 03:00 uur verloopt.
 
-AI assist tools zijn buitengewoon goed in het genereren van code. Ze zijn echter géén engineering tools. Ze kunnen niet redeneren over failure modes (storingsscenario's), beveiligingsgrenzen of productie-infrastructuur. Het begrijpen van dit onderscheid is het verschil tussen een oprichter die succesvol lanceert en een oprichter die ontdekt dat zijn applicatie gecompromitteerd is nadat deze al live is.
+AI assist tools zijn buitengewoon goed in het genereren van code. Het zijn echter geen software-engineering tools. Ze redeneren niet over foutmodi, beveiligingsgrenzen of robuuste productie-infrastructuur.
 
-## Het Verschil Tussen Code-Generatie en Software Engineering
+## Het Verschil Tussen Codegeneratie en Software Engineering
 
-Een AI assist tool genereert code die aan een prompt voldoet. Software engineering zorgt ervoor dat die code betrouwbaar werkt onder élke omstandigheid — inclusief omstandigheden die niemand had voorzien.
+Een AI-tool genereert code die aan een prompt voldoet. Software-engineering zorgt ervoor dat die code onder alle omstandigheden betrouwbaar blijft functioneren — inclusief scenario's die niemand had voorzien.
 
-Overweeg een eenvoudige feature: "Voeg gebruikersregistratie toe." Hier is wat een AI assist tool genereert versus wat productie-engineering daadwerkelijk vereist:
+Bekijk een eenvoudige functionaliteit als "Gebruikersregistratie toevoegen":
 
-**AI Assist Output:**
-- Een registratieformulier met velden voor e-mail en wachtwoord.
-- Client-side validatie die de lengte van het wachtwoord controleert.
-- Een Supabase `signUp()` call die een gebruikersrecord aanmaakt.
-- Een redirect naar het dashboard na een succesvolle registratie.
+**Wat een AI Assist Tool Genereert:**
+- Een registratieformulier met e-mail en wachtwoord.
+- Client-side validatie voor wachtwoordlengte.
+- Een Supabase `signUp()` aanroep.
+- Een redirect naar het dashboard na registratie.
 
-**Productie-Engineering Vereisten:**
-- Server-side e-mailformaat validatie (client-side validatie kan worden omzeild).
-- Password hashing met bcrypt, niet opgeslagen als leesbare tekst (plaintext).
-- Rate limiting op het registratie-endpoint (voorkomt botaanvallen).
-- E-mailverificatie met tijdgebonden tokens.
-- CAPTCHA of botdetectie op het formulier.
-- Database constraints die voorkomen dat een e-mailadres dubbel wordt geregistreerd.
-- Logging van registratiepogingen voor veiligheidsaudits.
-- Graceful error handling (elegante foutafhandeling) wanneer de database onbereikbaar is.
-- AVG-conforme (GDPR) openbaarmaking van dataverwerkingsovereenkomsten.
+**Wat Productie-Engineering Vereist:**
+- Server-side e-mailvalidatie (voorkomt omzeiling in de browser).
+- Veilige wachtwoord-hashing met bcrypt.
+- Rate-limiting op het registratie-endpoint tegen bot-aanvallen.
+- E-mailverificatie met tijdelijke tokens.
+- Database-constraints tegen dubbele e-mailadressen.
+- Beveiligingslogboeken voor audit-doeleinden.
+- Betrouwbare foutafhandeling wanneer de database niet bereikbaar is.
+- AVG/GDPR-conforme verwerkersovereenkomst en privacy-afhandeling.
 
-De AI assist output kost twee minuten. De productie-engineering kost twee dagen. Maar slechts één van beide kan veilig omgaan met echte gebruikers en echte data.
+De AI-uitvoer kost twee minuten; professionele engineering kost twee dagen. Maar alleen die laatste kan veilig echte gebruikers en gevoelige data verwerken.
 
-## Drie Mythes Over AI Assist Tools Die Oprichters Geld Kosten
+## Drie Mythes Rondom AI Assist Tools
 
-### Mythe 1: "AI-gegenereerde code is veilig omdat AI de best practices kent"
+### Mythe 1: "AI-code is veilig omdat AI best practices kent"
+AI-modellen zijn getraind op miljoenen openbare repositories, inclusief talloze onveilige voorbeelden. Een Stanford-studie wees uit dat ontwikkelaars die AI-assistenten gebruiken juist méér beveiligingslekken in code introduceren dan ontwikkelaars die traditioneel programmeren.
 
-AI-modellen worden getraind op openbare repositories, inclusief miljoenen codevoorbeelden met bekende kwetsbaarheden. Wanneer u de prompt "voeg authenticatie toe" geeft, put het model uit patronen die het heeft gezien — inclusief onveilige patronen. Een onderzoek van Stanford uit 2025 wees uit dat ontwikkelaars die AI assist tools gebruikten, significant meer beveiligingskwetsbaarheden produceerden dan degenen die zonder AI codeerden.
+### Mythe 2: "Ik los beveiligingsproblemen na de lancering wel incrementeel op"
+Beveiliging en infrastructuur zijn geen features waar u gaandeweg aan sleutelt. Een blootgestelde API-sleutel leidt direct tot misbruik; een ontbrekende Row Level Security lekt direct alle gebruikersdata.
 
-### Mythe 2: "Ik kan problemen na de lancering stapsgewijs oplossen"
+### Mythe 3: "Elke ontwikkelaar kan AI-gegenereerde code direct productieklaar maken"
+De meeste freelancers hebben nooit met de specifieke codeerpatronen van Lovable of Bolt gewerkt. Ze verliezen weken aan het begrijpen van de codebase of eisen een volledige herbouw. Het engineeringteam van [Manifera](https://www.manifera.com/about-us/) begrijpt deze structuren door en door en weet exact wat te behouden en wat te versterken.
 
-Beveiliging en infrastructuur zijn geen features waarop u kunt itereren. Een blootgestelde API-sleutel degradeert niet netjes (graceful degradation) — hij wordt onmiddellijk misbruikt. Ontbrekende Row Level Security is niet zomaar een ongemak — het lekt de data van elke gebruiker naar elke andere gebruiker. Dit zijn binaire fouten. Ze werken ofwel correct vóór de lancering, of ze veroorzaken schade na de lancering.
+## Wat Slimme Technische Oprichters Doen
 
-### Mythe 3: "Elke ontwikkelaar kan AI-gegenereerde code productie-klaar maken"
+1. **Bouw de complete frontend met AI assist tools** — Laat Lovable of Cursor de gebruikersinterface en routing genereren.
+2. **Breng ontbrekende infrastructuur in kaart** — Identificeer beveiligings- en validatiebehoeften.
+3. **Schakel gespecialiseerde engineers in voor de backend** — Laat [LaunchStudio](https://launchstudio.eu/en/) beveiliging, betalingen en deployment regelen tegen vaste prijzen.
+4. **Behoud de controle en blijf bouwen** — LaunchStudio levert schone, AI-leesbare code op zodat u met Cursor kunt blijven doorontwikkelen.
 
-De meeste freelance ontwikkelaars hebben nog nooit gewerkt met de specifieke structuren van AI-gegenereerde code. De patronen die gebruikt worden door Lovable (React met Supabase), Bolt (WebContainers) en Cursor (context-bewuste generatie) zijn specifiek voor elke tool. Een ontwikkelaar die niet bekend is met deze patronen, verspilt weken om de codebase te begrijpen voordat hij of zij deze kan verbeteren — en zal er vaak op aandringen om alles volledig te herschrijven.
+Herre Roelevink, oprichter van Manifera met ruim tien jaar ervaring in softwareontwikkeling in Amsterdam, Singapore en Vietnam, formuleert het zo: *"De slimste oprichters gebruiken AI voor snelheid en professionals voor veiligheid. Die twee versterken elkaar."*
 
-Dit is precies de reden waarom LaunchStudio bestaat. Het engineeringteam van [Manifera](https://www.manifera.com/about-us/) heeft jarenlange ervaring met AI-gegenereerde codebases. Zij begrijpen de React-patronen van Lovable, de codestructuur van Bolt en de context-conventies van Cursor. Ze weten precies wat ze moeten behouden en wat ze moeten vervangen.
+## De Reële Kosten van Fouten
 
-## Wat Slimme Technische Oprichters Daadwerkelijk Doen
+- **Meldplicht datalekken (AVG/GDPR)**: 10.000 tot 50.000 euro aan juridische en administratieve kosten.
+- **Verlies van klantvertrouwen**: Onherstelbaar voor een jonge startup.
+- **Mislukte betalingsverwerking**: Gemiste omzet en geblokkeerde Stripe-accounts.
+- **Downtime**: Ieder uur uitval tijdens de lancering kost klanten die nooit meer terugkeren.
 
-Als u enige programmeerervaring heeft — genoeg om code te lezen en te begrijpen wat AI-tools genereren — heeft u een sterke uitgangspositie. U kunt de kwaliteit van AI-output evalueren, het generatieproces sturen met betere prompts en weloverwogen beslissingen nemen over wat professionele aandacht vereist.
+Vergelijk dat met 800 tot 7.500 euro voor professionele productie-engineering bij LaunchStudio.
 
-De meest kapitaalefficiënte aanpak voor technische solo-oprichters:
+## Belangrijkste inzichten
 
-1. **Bouw de volledige frontend met AI assist tools** — Laat Lovable of Cursor de UI, routing en componentarchitectuur genereren. Dit is waar AI het beste in is.
+- AI assist tools genereren snel code, maar vervangen geen fundamentele software-engineering rondom faalmechanismen en schaalbaarheid.
+- 45% van AI-code bevat beveiligingskwetsbaarheden die pas aan het licht komen bij live gebruik.
+- Beveiliging en database-isolatie zijn binaire vereisten: ze moeten vóór de livegang kloppen.
+- LaunchStudio overbrugt de kloof door uw AI-frontend te behouden en professionele backend-infrastructuur te implementeren.
 
-2. **Identificeer zelf de hiaten in de infrastructuur** — Beoordeel de gegenereerde code op beveiligingsproblemen, ontbrekende foutafhandeling en client-side bewerkingen die server-side zouden moeten zijn. Uw technische kennis stelt u in staat om een specifiek scopedocument te creëren.
+## Echt voorbeeld
 
-3. **Schakel gespecialiseerde productie-engineers in voor de backend** — In plaats van weken te besteden aan infrastructuur die u maar één keer bouwt, laat u [LaunchStudio](https://launchstudio.eu/nl/) de veiligheidsverharding (hardening), betalingsintegratie en deployment afhandelen. Vaste prijzen betekenen dat u vooraf de kosten weet voordat u zich vastlegt.
+### Een AI-native oprichter in actie: Wanneer AI-geassisteerde code enterprise-klanten ontmoette
 
-4. **Neem eigenaarschap en blijf bouwen** — Na de lancering beschikt u over een schone, gedocumenteerde codebase die u kunt uitbreiden met Cursor of een andere ontwikkelingsworkflow. De code van LaunchStudio is zo ontworpen dat deze 'AI-readable' (leesbaar voor AI) is, wat betekent dat uw AI assist tools naadloos samenwerken met de productie-infrastructuur.
+Marco, voormalig managementconsultant in Milaan werkend vanuit Amsterdam, bouwde met Cursor een automatiseringstool voor offertes. Met zijn Python-achtergrond stuurde hij Cursor aan om een Next.js-app te genereren met een teksteditor en PDF-export.
 
-Herre Roelevink, die Manifera in Amsterdam oprichtte en al meer dan tien jaar leiding geeft aan engineeringteams in Nederland, Singapore en Vietnam, heeft LaunchStudio specifiek voor deze workflow ontworpen: *"De slimste oprichters gebruiken AI voor snelheid en professionals voor veiligheid. Ze sluiten elkaar niet uit."*
+Zijn eigen adviespraktijk werkte er uitstekend mee. Toen toonde een middelgroot adviesbureau met 40 consultants interesse in een licentie. Hun eisen: rolgebaseerd gebruikersbeheer (admin, manager, consultant), sjablonen delen met strikte toegangsrechten, audit-logging voor compliance en SSO-koppeling met Azure Active Directory.
 
-## De Kosten Van Een Verkeerde Aanpak
+Marco probeerde zes weken lang zelf een multi-tenant architectuur te bouwen met Cursor. De AI genereerde aannemelijke code, maar de tenant-isolatie was oppervlakkig: klantgegevens lekten tussen teams via niet-afgeschermde databasequeries.
 
-Overweeg de werkelijke kosten van het overslaan van professionele engineering:
+Hij benaderde LaunchStudio. Het team van Manifera implementeerde echte multi-tenant architectuur met Row Level Security in Supabase, Azure AD SSO-integratie, audit-logging en rolbeheer, met behoud van Marco's volledige Cursor-frontend en PDF-systeem.
 
-- **Kosten voor het melden van datalekken** (de AVG/GDPR vereist het informeren van getroffen gebruikers binnen 72 uur): €10.000–€50.000 aan juridische en administratieve kosten.
-- **Schade aan klantvertrouwen**: Onherstelbaar voor startende ondernemingen.
-- **Storingen in betalingsverwerking**: Gemiste inkomsten en chargebacks die ertoe kunnen leiden dat uw Stripe-account wordt opgeschort.
-- **Downtime**: Elk uur downtime tijdens uw lanceerperiode kost u potentiële klanten die u nooit meer terugkrijgt.
+**Resultaat:** ProposalForge sloot de enterprise-licentie af voor 2.000 euro per maand. Marco heeft inmiddels drie enterprise-klanten die samen 6.000 euro per maand aan terugkerende inkomsten opleveren.
 
-Vergelijk dat met €800–€7.500 voor professionele productie-engineering. De rekensom is overduidelijk.
+> *"Cursor hielp me het product te bouwen. LaunchStudio hielp me het product te verkopen. De enterprise-features hadden me alleen nog zes maanden gekost — zij deden het in twee weken."*  
+> — **Marco Visconti, Oprichter ProposalForge (Amsterdam)**
 
-[Boek een gratis architectuurbeoordeling van 15 minuten](https://launchstudio.eu/nl/#contact) en ontvang een specifiek scopedocument voor uw door AI ondersteunde project.
-
-## Praktijkvoorbeeld
-
-### Een AI-Native Founder in de praktijk: Toen AI-Gegenereerde Code Zakelijke Klanten Ontmoette
-
-Marco, een voormalig managementconsultant in Milaan die remote werkt vanuit Amsterdam, bouwde een tool voor het automatiseren van offertes met behulp van Cursor. Met zijn Python-achtergrond begeleidde hij Cursor om een Next.js-applicatie te genereren met een rich-text editor, een template-systeem en een PDF-exportfunctie.
-
-De tool werkte perfect voor zijn eigen adviespraktijk. Totdat een middelgroot adviesbureau met 40 consultants vroeg om een licentie af te nemen. Hun vereisten: gebruikersrolbeheer (admin, manager, consultant), teambaseerd delen van templates met toegangscontroles, audit logging voor compliance en SSO-integratie met hun Azure Active Directory.
-
-Marco besteedde zes weken aan een poging om zelf een multi-tenant architectuur te implementeren met Cursor. De AI assist tool genereerde code die er plausibel uitzag, maar de tenant-isolatie was oppervlakkig — klantgegevens konden weglekken tussen adviesteams door onjuist afgeschermde databasequery's.
-
-Nadat hij een casestudy op de LaunchStudio-website had gelezen, nam hij contact op met LaunchStudio. Het engineeringteam van Manifera, werkend vanuit hun kantoor aan de Pho Quang Street in Ho Chi Minh City onder Europees projectmanagement vanuit Amsterdam, implementeerde de juiste multi-tenant architectuur met Row Level Security, Azure AD SSO-integratie, uitgebreide audit logging en op rollen gebaseerde toegangscontrole (RBAC). Ze behielden Marco's volledige, in Cursor gebouwde frontend en PDF-generatiesysteem.
-
-**Resultaat:** ProposalForge tekende de enterprise-licentie voor €2.000/maand. Marco heeft nu drie grote zakelijke klanten die €6.000/maand aan terugkerende omzet genereren, direct toe te schrijven aan de productie-infrastructuur die LaunchStudio heeft gebouwd.
-
-> *"Cursor hielp me het product te bouwen. LaunchStudio hielp me het product te verkopen. De enterprise-features die ik nodig had, zouden me in mijn eentje nog eens zes maanden hebben gekost — zij deden het in twee weken."*
-> — **Marco Visconti, Oprichter, ProposalForge (Amsterdam)**
-
-**Kosten & Tijdlijn:** €5.500 (Launch & Grow Pakket) — productie-klaar en live in 14 werkdagen.
+**Kosten & tijdlijn:** €5.500 (Launch & Grow Pakket) — binnen 14 werkdagen productieklaar live opgeleverd.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### (Scenario: Indie hacker die overweegt of hij infrastructuur zelf moet bouwen) Is het de investering in LaunchStudio waard als ik zelf kan coderen en alleen backend werk nodig heb?
+### Is LaunchStudio zinvol als ik zelf kan coderen en alleen backend-hulp nodig heb?
+Ja. Zelfs ervaren ontwikkelaars besparen weken werk door gespecialiseerde infrastructuur (authenticatie, betalingswebhooks, deployment) uit te besteden aan engineers die dit al honderden keren hebben ingericht volgens bewezen beveiligingspatronen.
 
-Ja. Zelfs ervaren ontwikkelaars profiteren van gespecialiseerde productie-engineering. Het vanaf nul opbouwen van authenticatie, betalingsverwerking en deployment-infrastructuur kost weken en introduceert veiligheidsrisico's. Het team van LaunchStudio heeft al honderden applicaties beveiligd (gehardend), wat betekent dat uw infrastructuur vanaf dag één beproefde (battle-tested) patronen volgt.
+### Welke specifieke beveiligingslekken introduceren AI-tools meestal?
+Veelvoorkomende lekken zijn: openstaande API-sleutels in client-side code, ontbrekende Row Level Security in databases, uitsluitend client-side invoervalidatie, onbeveiligde API-endpoints en hardcoded geheimen.
 
-### (Scenario: Technische oprichter die de beperkingen van AI assist tools evalueert) Welke specifieke beveiligingskwetsbaarheden introduceren AI assist tools het vaakst?
+### Moet ik mijn databaseschema ontwerpen vóór of na het gebruik van AI-tools?
+Erna. Laat de AI-tool een initiële opzet maken op basis van uw logica en laat deze vervolgens door een professionele engineer optimaliseren met de juiste indexen, relaties en beveiligingsregels.
 
-De meest voorkomende zijn: blootgestelde API-sleutels in client-side code, ontbrekende Row Level Security op databasetabellen, exclusieve client-side invoervalidatie, onbeschermde API-endpoints zonder authenticatiemiddleware, en hardcoded geheimen in configuratiebestanden. De beveiligingsaudit van Manifera onderschept deze allemaal tijdens het onboardingproces van LaunchStudio.
+### Hoe verhoudt LaunchStudio zich tot een parttime CTO (fractional CTO)?
+Een fractional CTO geeft strategisch advies maar bouwt zelden zelf productiecode. LaunchStudio levert hands-on engineering en realiseert de complete infrastructuur direct in uw codebase.
 
-### (Scenario: Oprichter die architectuur plant vóór het bouwen) Moet ik mijn databaseschema ontwerpen vóór of na het gebruik van AI assist tools?
-
-Erna. Laat de AI-tool een initieel schema genereren op basis van uw applicatielogica en laat vervolgens een professionele ingenieur dit beoordelen en optimaliseren. Deze aanpak benut de snelheid van AI voor de initiële structuur, en waarborgt tegelijkertijd de juiste indexering, relaties en veiligheidsconstraints. LaunchStudio omvat een schema-beoordeling in elk project.
-
-### (Scenario: Solo-oprichter die LaunchStudio vergelijkt met het inhuren van een parttime CTO) Hoe verhoudt LaunchStudio zich tot het inhuren van een fractional CTO?
-
-Een fractional CTO biedt strategische begeleiding, maar schrijft over het algemeen geen productiecode. LaunchStudio levert productieklare infrastructuur door middel van hands-on engineering. De twee vullen elkaar aan: een fractional CTO helpt u bij het nemen van architectonische beslissingen, terwijl LaunchStudio ze uitvoert. Voor beginnende oprichters (early-stage) is LaunchStudio op zichzelf doorgaans voldoende.
-
-### (Scenario: Oprichter die bang is dat AI-gegenereerde code technische schuld wordt) Maken de wijzigingen van LaunchStudio mijn codebase moeilijker te begrijpen voor AI-tools?
-
-Nee. LaunchStudio schrijft specifiek AI-readable code — schone patronen, consistente naamgeving, grondige documentatie. Het engineeringteam van Manifera ontwerpt elke aanpassing zodanig dat deze compatibel blijft met Lovable, Cursor en Bolt, zodat u na de lancering zonder wrijving AI assist tools kunt blijven gebruiken.
+### Maakt de code van LaunchStudio het lastiger om later met AI verder te bouwen?
+Nee. LaunchStudio levert schone, modulair gedocumenteerde code op die specifiek is ontworpen om AI-leesbaar te blijven voor tools zoals Lovable, Cursor en Bolt.
 
 <script type="application/ld+json">
 {
@@ -157,42 +141,42 @@ Nee. LaunchStudio schrijft specifiek AI-readable code — schone patronen, consi
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is het de investering in LaunchStudio waard als ik zelf kan coderen en alleen backend werk nodig heb?",
+      "name": "Is LaunchStudio zinvol als ik zelf kan coderen en alleen backend-hulp nodig heb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Zelfs ervaren ontwikkelaars profiteren van gespecialiseerde productie-engineering. Het vanaf nul opbouwen van authenticatie, betalingsverwerking en deployment-infrastructuur kost weken en introduceert veiligheidsrisico's. Het team van LaunchStudio heeft al honderden applicaties beveiligd, wat betekent dat uw infrastructuur vanaf dag één beproefde patronen volgt."
+        "text": "Ja. Het uitbesteden van backend-beveiliging en webhooks bespaart weken werk en garandeert bewezen enterprise-standaarden."
       }
     },
     {
       "@type": "Question",
-      "name": "Welke specifieke beveiligingskwetsbaarheden introduceren AI assist tools het vaakst?",
+      "name": "Welke specifieke beveiligingslekken introduceren AI-tools meestal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De meest voorkomende zijn: blootgestelde API-sleutels in client-side code, ontbrekende Row Level Security op databasetabellen, exclusieve client-side invoervalidatie, onbeschermde API-endpoints zonder authenticatiemiddleware, en hardcoded geheimen in configuratiebestanden. De beveiligingsaudit van Manifera onderschept deze allemaal."
+        "text": "Blootgestelde API-sleutels, ontbrekende RLS-databasepolicies, gebrekkige client-side validatie en onbeveiligde API-endpoints."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet ik mijn databaseschema ontwerpen vóór of na het gebruik van AI assist tools?",
+      "name": "Moet ik mijn databaseschema ontwerpen vóór of na het gebruik van AI-tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Erna. Laat de AI-tool een initieel schema genereren op basis van uw applicatielogica en laat vervolgens een professionele ingenieur dit beoordelen en optimaliseren. Deze aanpak benut de snelheid van AI voor de initiële structuur, en waarborgt de juiste veiligheidsconstraints."
+        "text": "Erna. Laat de AI een eerste opzet maken en laat LaunchStudio deze optimaliseren met de juiste relaties, indexen en beveiliging."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe verhoudt LaunchStudio zich tot het inhuren van een fractional CTO?",
+      "name": "Hoe verhoudt LaunchStudio zich tot een parttime CTO (fractional CTO)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een fractional CTO biedt strategische begeleiding, maar schrijft over het algemeen geen productiecode. LaunchStudio levert productieklare infrastructuur door middel van hands-on engineering. Voor beginnende oprichters (early-stage) is LaunchStudio op zichzelf doorgaans voldoende."
+        "text": "Een fractional CTO adviseert strategisch; LaunchStudio voert de daadwerkelijke engineering hands-on uit tegen vaste projectprijzen."
       }
     },
     {
       "@type": "Question",
-      "name": "Maken de wijzigingen van LaunchStudio mijn codebase moeilijker te begrijpen voor AI-tools?",
+      "name": "Maakt de code van LaunchStudio het lastiger om later met AI verder te bouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. LaunchStudio schrijft specifiek AI-readable code — schone patronen, consistente naamgeving, grondige documentatie. Het engineeringteam van Manifera ontwerpt elke aanpassing zodanig dat deze compatibel blijft met Lovable, Cursor en Bolt, zodat u na de lancering AI assist tools kunt blijven gebruiken."
+        "text": "Nee. De code blijft modulair, schoon en AI-leesbaar zodat u met Cursor of Lovable naadloos kunt blijven doorontwikkelen."
       }
     }
   ]

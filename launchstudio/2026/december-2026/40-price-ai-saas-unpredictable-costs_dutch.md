@@ -1,90 +1,160 @@
 ---
-Titel: "Hoe Prijs Je Je AI SaaS Wanneer Je Kosten Onvoorspelbaar Zijn"
-Trefwoorden: AI-SaaS, AI-softwareprijs, AI-SaaS-platform, SaaS AI, LaunchStudio, Manifera
+Titel: "Hoe U Uw AI-SaaS Prijs Bepaalt bij Onvoorspelbare Serverkosten"
+Trefwoorden: ai saas, ai software price, ai saas platform, saas ai, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Hoe Prijs Je Je AI SaaS Wanneer Je Kosten Onvoorspelbaar Zijn
+# Hoe U Uw AI-SaaS Prijs Bepaalt bij Onvoorspelbare Serverkosten
 
-Traditionele SaaS-prijslogica gaat ervan uit dat je marginale kosten per klant klein en stabiel zijn — het hosten van de data van een klant kost ongeveer hetzelfde of hij je product licht of zwaar gebruikt. AI SaaS doorbreekt deze aanname volledig: een klant die 10 AI-generaties per maand draait, kost je een fractie van wat een klant kost die 10.000 generaties draait, tegen exact dezelfde vaste abonnementsprijs.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hoe U Uw AI-SaaS Prijs Bepaalt bij Onvoorspelbare Serverkosten",
+  "description": "Traditionele SaaS-prijzen gaan uit van voorspelbare kosten. AI-kosten variëren enorm per gebruiker en per model. Ontdek hoe u een winstgevend en duurzaam prijsmodel bouwt.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/price-ai-saas-unpredictable-costs"
+  }
+}
+</script>
 
-## Waarom Vaste Prijzen Riskanter Zijn voor AI SaaS
+De traditionele prijslogica van SaaS gaat ervan uit dat uw marginale kosten per klant minimaal en voorspelbaar zijn — het hosten van klantdata kost nagenoeg hetzelfde, of een gebruiker uw software nu licht of intensief gebruikt. AI-SaaS breekt deze aanname volledig: een klant die maandelijks 10 AI-generaties uitvoert kost u slechts een fractie van een klant die 10.000 generaties draait, op exact hetzelfde vaste maandabonnement.
 
-Een vast abonnement van €49/maand werkt prima als je gemiddelde AI-kosten per klant voorspelbaar en comfortabel onder die prijs liggen. Het risico is variantie: als een klein percentage klanten het product veel intensiever gebruikt dan gemiddeld — een realistisch scenario voor elke AI-functie die mensen oprecht nuttig vinden — kunnen die klanten individueel meer kosten in AI-API-kosten dan ze betalen aan abonnementsomzet, en als genoeg zware gebruikers zich concentreren op je platform, kan je unit economics stilletjes onder water gaan, zelfs terwijl je omzet groeit.
+## Waarom een Vast Tarief (Flat-Rate) Veel Riskanter Is bij AI-SaaS
 
-## Drie Prijsmodellen die Dit Beter Aanpakken
+Een vast abonnement van €49 per maand werkt prima als de gemiddelde AI-kosten per klant voorspelbaar zijn en ruim onder die prijs blijven. Het grote risico zit echter in de variantie: als een klein percentage van uw gebruikers het product aanzienlijk intensiever gebruikt dan gemiddeld — een realistisch scenario voor elke AI-feature die echt waarde toevoegt — kunnen die 'power users' individueel meer aan API-kosten verbruiken dan ze aan abonnementsgeld betalen. Krijgt u relatief veel van zulke zware gebruikers, dan draait uw bedrijf per actieve klant stilletjes met verlies, zelfs terwijl uw totale omzet groeit.
 
-### 1. Op Gebruik Gebaseerde Tiers met Zachte Limieten
-Bied tiers (Starter, Growth, Pro) aan met een genereuze maar expliciete gebruikstoewijzing per tier, en ofwel een kleine overschrijdingskosten ofwel een soepele aansporing om te upgraden zodra een klant consistent de toewijzing van zijn tier overschrijdt. Dit stemt prijs af op daadwerkelijke kosten terwijl het prijsmodel simpel genoeg blijft voor klanten om vooraf te begrijpen.
+## Drie Prijsmodellen Die Dit Beter Oplossen
 
-### 2. Hybride Vast Tarief plus Gemeten Overschrijding
-Een basisabonnement dekt typisch gebruik, met meterfacturering die alleen in werking treedt boven een genereuze drempel. De meeste klanten zien nooit de gemeten kosten, maar het beschermt je unit economics tegen de zware-gebruikers-staart die een puur vast tarief niet kan absorberen.
+### 1. Gebruiksstaffels met Zachte Limieten (Usage-Based Tiers With Soft Caps)
+Bied duidelijke pakketten (Starter, Growth, Pro) met een ruime maar expliciete gebruikslimiet per staffel. Bied daarboven een kleine meerprijs of een vriendelijke stimulans om te upgraden zodra een klant structureel over zijn bundel heengaat. Dit stemt de opbrengst af op de feitelijke kosten en blijft eenvoudig te begrijpen voor klanten.
 
-### 3. Op Waarde Gebaseerde Prijzen Verankerd aan Resultaat, Niet Gebruik
-Voor sommige AI SaaS-producten kan prijzen op basis van geleverde waarde (per verwerkt document, per gesloten deal, per bespaard uur) in plaats van ruw AI-gebruiksvolume, prijs afstemmen op klantwaarde terwijl omzet nog steeds meeschaalt met je onderliggende kosten, mits de resultaatmetriek redelijk goed correleert met daadwerkelijk AI-gebruik.
+### 2. Hybride Model: Vast Basisabonnement + Meerverbruik (Metered Overage)
+Een vast basisabonnement dekt het typische gebruik, waarbij automatische meter-facturatie pas ingaat boven een royale drempelwaarde. De meeste klanten zien die meerkosten nooit, maar het beschermt uw marges tegen extreme uitschieters die een vast tarief niet kan absorberen.
 
-## Een Kostenbuffer Inbouwen vanaf Dag Eén
+### 3. Waarde-Gebaseerde Prijzen Gekoppeld aan het Resultaat
+Voor bepaalde AI-SaaS producten is een prijsstelling op basis van de geleverde bedrijfswaarde (per verwerkt document, per gesloten deal, per bespaard uur) veel logischer dan afrekenen op ruwe AI-tokens, mits de meetwaarde redelijk correleert met het daadwerkelijke AI-verbruik.
 
-Ongeacht prijsmodel bouwen de meeste succesvolle AI SaaS-founders een betekenisvolle buffer in tussen verwachte AI-kosten per klant en abonnementsprijs — een gangbare vuistregel is prijzen zodat AI-kosten een minderheidsaandeel van omzet per klant vertegenwoordigen, zelfs bij bovengemiddeld gebruik, wat ruimte laat voor API-prijswijzigingen, gebruiksgroei, en de operationele kosten (hosting, support, monitoring) buiten alleen de AI-API-rekening.
+## Vanaf Dag Eén een Veiligheidsbuffer Inbouwen
 
-## Monitoring Is een Voorwaarde voor Zelfverzekerde Prijzen
+Ongeacht het gekozen prijsmodel bouwen succesvolle AI-oprichters een substantiële buffer in tussen de verwachte AI-kosten per klant en de verkoopprijs. Een beproefde vuistregel is dat de AI-tokenkosten bij bovengemiddeld gebruik maximaal 20% tot 35% van de omzet per klant mogen bedragen. Zo blijft er voldoende marge over voor API-prijswijzigingen, gebruiksgroei, hosting, betalingsverwerking en klantenservice.
 
-Je kunt niet duurzaam prijzen zonder je daadwerkelijke AI-kosten per klant te kennen — wat direct terugkoppelt naar de AI-specifieke observability-praktijken behandeld in eerdere monitoringrichtlijnen. Founders die prijzen zonder deze zichtbaarheid, gokken effectief, en gokken hebben de neiging optimistisch te zijn.
+## Monitoring Is een Randvoorwaarde voor Zelfverzekerde Prijzen
 
-[LaunchStudio](https://launchstudio.eu/en/) helpt AI-native founders bij het implementeren van zowel gebruikstracking als de factureringsinfrastructuur (gelaagde Stripe- of Mollie-plannen, gemeten overschrijding) nodig om zelfverzekerd te prijzen, voortbouwend op Manifera's engineeringervaring om de onderliggende systemen te bouwen die duurzame AI SaaS-prijzen mogelijk maken.
+U kunt geen gezonde prijzen hanteren als u uw werkelijke AI-kosten per klant niet kent. Dit sluit direct aan bij de observability-principes: meet het tokenverbruik per gebruiker. Zonder deze data gokt u feitelijk naar uw marges — en die inschattingen zijn bijna altijd te optimistisch.
 
-[Zet je gebruikstracking en factureringstiers op](https://launchstudio.eu/en/#calculator) voordat een handvol zware gebruikers stilletjes je marges uitholt.
+[LaunchStudio](https://launchstudio.eu/en/) helpt AI-native oprichters bij het inrichten van zowel nauwkeurige verbruikstracking als de bijbehorende abonnementsinfrastructuur (gestaffelde Stripe- of Mollie-abonnementen en metered overage), gesteund door Manifera's engineering-ervaring over 160+ projecten.
 
-## AI-kosten Voorspellen Voordat Je Enige Echte Gebruiksdata Hebt
+[Richt uw verbruikstracking en betaalstaffels in](https://launchstudio.eu/en/#calculator) vóórdat een handvol zware gebruikers uw marges geruisloos uitholt.
 
-Alles hierboven gaat ervan uit dat je al klanten hebt die echte gebruikspatronen genereren om te analyseren. Founders die een nog-niet-gelanceerd AI SaaS-product prijzen, staan voor een lastigere versie van hetzelfde probleem: een duurzame prijs vaststellen zonder nog daadwerkelijke kostendata om naar te verwijzen. Dit vereist bewuste inschatting in plaats van wachten om er na lancering op de harde manier achter te komen.
+## AI-Kosten Voorspellen Vóórdat U Echte Gebruikersdata Heeft
 
-**Bouw een schatting van de kosten per interactie voordat je enige prijscopy schrijft.** Neem je daadwerkelijk geplande prompts (systeeminstructies plus een realistisch voorbeeld van gebruikersinvoer) en draai ze door de eigen prijscalculator of gedocumenteerde tarieven per token van je beoogde AI-provider, inclusief de volledige context die je daadwerkelijk zult sturen — niet een versimpelde testprompt, aangezien echte systeemprompts, gespreksgeschiedenis en opgehaalde context het effectieve tokenaantal ver kunnen vermenigvuldigen boven wat een kaal gebruikersbericht suggereert.
+Het bepalen van een gezonde prijsstelling vóór de officiële lancering vereist een doordachte berekening in plaats van simpelweg afwachten:
 
-**Modelleer minstens drie gebruikspersona's, niet slechts een "gemiddelde" gebruiker.** Een lichte gebruiker (een handvol interacties per maand), een typische gebruiker, en een oprecht zware gebruiker (iemand die het product bijna dagelijks gebruikt, of op een in workflow ingebedde manier) produceren zeer verschillende kostenprofielen, en prijzen baseren op alleen een "gemiddelde" verdoezelt hoe duur je daadwerkelijke zware-gebruiksstaart zou kunnen worden — precies de blinde vlek die Koens TekstGenie overviel, zoals hierboven behandeld.
+**Stel een kosteninschatting per interactie op vóórdat u uw prijzen publiceert.** Neem uw werkelijke geplande prompts (inclusief systeeminstructies, gesprekshistorie en opgehaalde RAG-context) en bereken de kosten per aanroep via de tarieven van uw AI-provider. Gebruik geen versimpelde testprompt, want de volledige systeemcontext en documentfragmenten vermenigvuldigen het werkelijke tokenaantal aanzienlijk.
 
-**Stress-test je model bij 10x en 100x je verwachte gebruik per persona**, niet omdat je dat onmiddellijk verwacht, maar omdat het onthult of je kostenstructuur gracieus breekt (kosten schalen ruwweg lineair, blijvend een voorspelbaar aandeel van omzet) of catastrofaal (een specifiek interactiepatroon schaalt op een manier die stilletjes één populaire klantrelatie failliet zou kunnen laten gaan). Producten met kosten per verzoek die zich opstapelen — multi-step AI-agenten, functies die verschillende AI-oproepen aan elkaar koppelen, of tool-calling-lussen die een onvoorspelbaar aantal keren kunnen itereren — zijn bijzonder de moeite waard om op deze manier te stress-testen vóór lancering, aangezien deze patronen precies zijn waar daadwerkelijke gebruikskosten sterk kunnen afwijken van een simpele schatting van "kosten per gebruikersbericht".
+**Modelleer minimaal drie gebruikerspersona's, niet slechts de 'gemiddelde' gebruiker.** Een lichte gebruiker (enkele interacties per maand), een typische gebruiker en een zware gebruiker (iemand die de tool dagelijks intensief in zijn workflow integreert) hebben totaal verschillende kostenprofielen. Prijzen baseren op een theoretisch gemiddelde maskeert de hoge kosten van de zware staart.
 
-**Bouw een expliciete gevoeligheidscheck in voor prijswijzigingen van de provider.** Modelleer je eenheidseconomie bij je huidige providerprijzen, en opnieuw bij een betekenisvol hoger tarief (een stijging van 30-50% is een redelijk stressscenario gezien hoe AI-providerprijzen zich historisch hebben bewogen), zodat een toekomstige prijswijziging een geanticipeerd scenario is waar je al een reactie op hebt gepland, in plaats van een verrassing die je hele prijsmodel in één keer onder water zet.
+**Voer een stresstest uit bij 10x en 100x verwacht gebruik per persona.** Dit toont aan of uw kostenstructuur netjes lineair meegroeit (een stabiel percentage van de omzet) of catastrofaal escaleert. Producten met AI-agents die meerdere stappen doorlopen of tool-loops uitvoeren kunnen onvoorspelbaar veel tokens verbruiken en moeten vooraf grondig worden doorgerekend.
 
-**Behandel deze pre-lancering-schatting als een startshypothese, niet een definitief antwoord.** Zodra echte gebruiksdata beschikbaar komt, vervang je de schatting door daadwerkelijk gemeten kosten zoals beschreven in de monitoringaanpak hierboven — de taak van het pre-lanceringmodel is je initiële prijs in een verdedigbaar bereik krijgen, niet de permanente basis blijven voor prijsbeslissingen zodra betere data bestaat.
+**Voer een gevoeligheidsanalyse uit voor prijsstijgingen van providers.** Reken uw marges door bij de huidige tarieven én bij een eventuele stijging van 30% tot 50%, zodat een toekomstige prijswijziging een voorzien scenario is in plaats van een existentiële verrassing.
+
+**Behandel deze pre-launch inschatting als een hypothese.** Zodra echte gebruikersdata binnenkomt, vervangt u de theoretische modellen direct door gemeten kosten en herijkt u de staffels waar nodig.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: een onder-water-prijsmodel ontdekken (en repareren)
+### Een AI-native oprichter in actie: Van verlieslatende power users naar 18% omzetgroei
 
-Koen, een freelance copywriter in Schiedam, bouwde TekstGenie, een AI-schrijfassistent voor kleine marketingteams die advertentietekstvariaties genereerde, met Lovable, geprijsd op een vast €29/maand met onbeperkte generaties. TekstGenie groeide gestaag naar 60 abonnees over vier maanden, en Koen was in de wolken over de groei tot hij daadwerkelijk zijn OpenAI-kosten tegen zijn omzet berekende en ontdekte dat zijn top 8 klanten — zware gebruikers die honderden generaties per dag draaiden — hem individueel meer kostten aan API-kosten dan de volledige €29 die ze hem betaalden.
+Koen, freelance copywriter in Schiedam, bouwde met Lovable TekstGenie: een AI-schrijfassistent voor marketingteams, geprijsd op een vast tarief van €29 per maand met onbeperkt gebruik. TekstGenie groeide binnen vier maanden naar 60 tevreden abonnees.
 
-Koen nam contact op met LaunchStudio, bezorgd dat zijn prijsmodel fundamenteel kapot was, en bang dat het repareren ervan zijn meest betrokken gebruikers zou vervreemden precies toen hij momentum met hen had opgebouwd. Het Manifera-team implementeerde gebruikstracking om Koens daadwerkelijke kostenverdeling over zijn klantenbestand vast te stellen, en ontwierp vervolgens een gelaagde structuur: een Starter-tier voor €29/maand met een genereuze limiet die typisch gebruik dekte, en een Pro-tier voor €79/maand met een veel hogere limiet, specifiek gepositioneerd voor zijn zware gebruikers als een upgrade in plaats van een straf.
+Toen Koen zijn OpenAI-factuur uitsplitste per gebruiker, ontdekte hij tot zijn schrik dat zijn 8 meest actieve klanten — bureaus die dagelijks honderden advertentievarianten genereerden — hem per stuk meer aan API-kosten kostten dan de volledige €29 die ze maandelijks betaalden.
 
-**Resultaat:** Zes van Koens acht zwaarste gebruikers upgradeden binnen de eerste maand naar de nieuwe Pro-tier, wat hun daadwerkelijke AI-kosten meer dan dekte terwijl de wijziging werd geframed als het ontsluiten van meer capaciteit in plaats van het beperken van bestaand gebruik. De totale omzet steeg met 18% ondanks geen nieuwe klantgroei in die periode, puur door het corrigeren van de mismatch tussen prijs en kosten.
+Koen nam contact op met LaunchStudio. Het engineeringteam van Manifera bracht de werkelijke kostenverdeling in kaart en structureerde twee heldere pakketten: een Starter-tier voor €29 per maand met een ruime limiet voor zzp'ers, en een Pro-tier voor €79 per maand met aanzienlijk meer capaciteit, gepresenteerd als een krachtige upgrade.
 
-> *"Ik was doodsbang dat mijn beste klanten woedend zouden zijn over een wijziging. In plaats daarvan upgradeden de meesten van hen blij omdat we het framden als meer kracht, geen inperking. LaunchStudio liet me zien dat ik zonder het te weten daadwerkelijk geld verloor aan mijn meest betrokken gebruikers."*
-> — **Koen Dijkstra, Founder, TekstGenie (Schiedam)**
+**Resultaat:** Zes van de acht grootverbruikers stapten binnen een maand zonder morren over naar het Pro-pakket. De totale omzet steeg direct met 18% zónder dat er nieuwe klanten bij kwamen, en de marges werden direct kerngezond.
 
-**Kosten & tijdlijn:** €2.300 (implementatie gebruikstracking en gelaagde facturering) — voltooid in 11 werkdagen.
+> *"Ik was doodsbang dat mijn beste klanten boos zouden worden. In werkelijkheid waardeerden ze de Pro-upgrade juist omdat we het brachten als meer snelheid en capaciteit. LaunchStudio liet me zien dat ik op mijn beste klanten stiekem geld verloor."*  
+> — **Koen Dijkstra, Oprichter TekstGenie (Schiedam)**
+
+**Kosten & tijdlijn:** €2.300 (verbruiksmeting & abonnementsherstructurering) — binnen 11 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoe bereken ik mijn daadwerkelijke AI-kosten per klant als ik dit nog niet heb bijgehouden?
+### Hoe bereken ik mijn werkelijke AI-kosten per klant als ik dat nog niet eerder heb gemeten?
+Begin met het inrichten van basis-verbruikslogging die bij elke API-aanroep het tokenverbruik en de kosten registreert, gekoppeld aan de unieke klant-ID. Enkele weken aan data geven direct een betrouwbaar inzicht in uw kostenverdeling.
 
-Begin met het implementeren van basale gebruikslogging (zoals behandeld in eerdere AI-specifieke observability-richtlijnen) die tokengebruik en kosten per API-oproep vastlegt, getagd per klant. Zelfs een paar weken van deze data onthult je kostenverdeling duidelijk genoeg om prijsbeslissingen te informeren, zoals bij Koens TekstGenie.
+### Worden bestaande klanten boos als ik verbruiksstaffels of meerverbruikskosten introduceer?
+Niet als u het zorgvuldig aanpakt. Presenteer de nieuwe staffels rondom extra waarde en mogelijkheden in plaats van als een beperking, en zorg dat normale gebruikers ruim binnen de limiet van het basispakket blijven.
 
-### Zullen het introduceren van gebruikstiers of overschrijdingskosten mijn bestaande vaste-tarief-klanten van streek maken?
+### Is waarde-gebaseerde prijsstelling altijd beter dan staffelprijzen voor AI-SaaS?
+Niet universeel — het hangt ervan af of u een duidelijke, verdedigbare meetwaarde heeft die nauw aansluit op de geleverde waarde. Gestaffelde of hybride prijzen zijn vaak eenvoudiger te implementeren en uit te leggen.
 
-Dat kan, als het slecht wordt afgehandeld — de sleutel, zoals Koens geval laat zien, is tier-upgrades framen rond extra waarde en capaciteit in plaats van de wijziging te presenteren als een beperking of straf, en typische, niet-zware gebruikers gunstig te behandelen zodat de meeste klanten geen verandering ervaren.
+### Hoeveel kostenbuffer moet ik inbouwen in mijn AI-SaaS prijzen?
+Een veelgebruikte richtlijn onder ervaren oprichters is om te zorgen dat de directe AI-modelkosten zelfs bij bovengemiddeld gebruik ruim onder de helft van de abonnementsprijs blijven, zodat er voldoende brutomarge overblijft voor overige operationele kosten.
 
-### Is op waarde gebaseerde prijsstelling altijd beter dan op gebruik gebaseerde prijsstelling voor AI SaaS?
+### Kan LaunchStudio helpen bij het herontwerpen van prijzen zonder bestaande klanten te verliezen?
+Ja. Zoals bij TekstGenie helpt LaunchStudio bij het ontwerpen en soepel invoeren van nieuwe staffels, zodanig gestructureerd dat de overgang voor bestaande klanten soepel verloopt en de ervaren waarde zelfs toeneemt.
 
-Niet universeel — het hangt af van of je een duidelijke, verdedigbare resultaatmetriek hebt die correleert met geleverde waarde. Op gebruik gebaseerde of hybride gelaagde prijsstelling is vaak eenvoudiger te implementeren en uit te leggen, en blijft de juiste keuze voor veel AI SaaS-producten waar een schone waardemetriek niet voor de hand ligt.
-
-### Hoeveel kostenbuffer moet ik inbouwen in mijn AI SaaS-prijzen?
-
-Er is geen universeel getal, maar veel succesvolle AI SaaS-founders streven naar AI-kosten die een duidelijke minderheid van omzet per klant vertegenwoordigen, zelfs bij bovengemiddeld gebruik — vaak geciteerde informele benchmarks suggereren ruwe AI-kosten ruim onder de helft van abonnementsomzet te houden, wat ruimte laat voor andere operationele kosten en marge.
-
-### Kan LaunchStudio me helpen prijzen te herontwerpen zonder mijn bestaande klantenbestand te verstoren?
-
-Ja. Zoals bij Koens TekstGenie-migratie kan LaunchStudio helpen een overgang te ontwerpen — vaak nieuwe tiers introducerend naast of in plaats van een bestaand vast tarief — gestructureerd om verstoring te minimaliseren en zelfs de waargenomen waarde voor je meest betrokken bestaande klanten te verbeteren.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe bereken ik mijn werkelijke AI-kosten per klant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Via server-side logging die bij elke API-call het aantal verbruikte tokens direct koppelt aan de specifieke klant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Worden bestaande klanten boos bij het introduceren van limieten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet mits u normale gebruikers ontziet en grootverbruikers een waardevolle Pro-upgrade biedt met extra features."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is waarde-gebaseerde prijsstelling altijd beter dan staffels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Niet altijd. Staffels (Starter/Pro) zijn voor veel SaaS-apps de meest heldere en eenvoudigst uitlegbare opzet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel kostenbuffer moet ik inbouwen in mijn AI-SaaS prijzen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Houd als richtlijn aan dat directe AI-kosten ruim onder de helft (20-35%) van de abonnementsprijs uitmaken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio helpen bij het herontwerpen van abonnementen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio bouwt de meetinfrastructuur en past uw Stripe/Mollie facturatie aan met behoud van bestaande abonnees."
+      }
+    }
+  ]
+}
+</script>

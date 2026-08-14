@@ -1,19 +1,19 @@
-🔥 Sarah bouwde een prototype met **Bolt** — sarah, an event planner in utrecht, used **bolt, maar ontdekte kritieke architectuur- en beveiligingsknelpunten vóór de lancering. 🧠
+🔥 Sarah bouwde een prototype met **Bolt.new** — als evenementenplanner in Utrecht bouwde ze een dashboard voor leveranciersbeheer, maar verloor al haar klantdata na een serverherstart. 🧠
 
-Als uw AI-prototype geen server-side invoer-sanering, database Row Level Security (RLS) of correcte deployment-configuratie heeft, zal live verkeer leiden tot storingen en beveiligingsrisico's.
+Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of persistente databasekoppeling heeft, veroorzaakt live verkeer direct dataverlies en crashes.
 
-❌ Gehardcodeerde API-inloggegevens zichtbaar in client-side JavaScript of onversleutelde omgevingsbestanden
-❌ Ontbreken van Row Level Security (RLS) beleid op vector- en relationele databasetabellen
-❌ Onbehandelde API-fouten, race-condities of onbeperkte facturatie-lussen onder gelijktijdige belasting
+❌ Vluchtige databases in Bolt WebContainers die bij elke cloud-serverherstart volledig wissen
+❌ Geheime Stripe- en OpenAI-sleutels die hardcoded in openbare frontend-code belanden
+❌ Onvoltooide authenticatie en runtime-verschillen tussen de browser-sandbox en echte servers
 
-✅ Geheime sleutels verplaatsen naar server-side Edge Function-kluisjes met JWT-authenticatie
-✅ Afdwingen van PostgreSQL Row Level Security (RLS) regels voor volledige multi-tenant data-isolatie
-✅ Verharden van betalings-webhooks, rate limiting en deployment-infrastructuur voor hoge uptime
+✅ Vervanging van tijdelijke SQLite-databases door een persistente, managed Supabase PostgreSQL-instantie
+✅ Strikte PostgreSQL Row-Level Security (RLS) policies voor volledige privacybescherming
+✅ Vaste server-side omgevingsvariabelen, veilige API-routes en professionele Vercel-deployment
 
-Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Sarah's applicatie behaalde productie-gereedheid: Sarah successfully launched the stable version of her app. It is now a secure SaaS generating €600 MRR, and she never has to worry about data loss again. Bolt helped me design the app, but LaunchStudio made it a real business. I couldn't have launched without their backend expertise. (€1,800 (Launch Ready package) — completed in 8 business days.). 🚀
+Sarah lanceerde haar stabiele SaaS veilig, genereert maandelijks €600 MRR en hoeft zich nooit meer zorgen te maken over dataverlies. (€1.800 (Launch Ready Pakket) — binnen 8 werkdagen live). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
 
-#LaunchStudio #Manifera #AISaaS #RealWorldDeploymentR #TechFounders
+#LaunchStudio #Manifera #AISaaS #BoltAI #BoltNew #DeploymentReality #Supabase #TechFounders #Vercel

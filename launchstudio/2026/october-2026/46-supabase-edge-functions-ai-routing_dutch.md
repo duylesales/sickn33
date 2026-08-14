@@ -1,86 +1,103 @@
 ---
-Titel: Hoe een App te Bouwen Met AI en te Beveiligen via Supabase
-Trefwoorden: app bouwen met ai, Supabase Edge Functions, LLM routing, AI beveiliging, maatwerk backend, LaunchStudio, Manifera, API sleutel beveiliging, Next.js, Deno
+Titel: "Hoe een App te Bouwen met AI en deze te Beveiligen met Supabase"
+Trefwoorden: Build App With AI, Supabase Edge Functions, LLM routing, AI security, custom backend, LaunchStudio, Manifera, API key security, Next.js, Deno
 Koperfase: Beslissing
 Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Hoe een App te Bouwen Met AI en te Beveiligen via Supabase
+# Hoe een App te Bouwen met AI en deze te Beveiligen met Supabase
 
-Wanneer technische solo-oprichters hun eerste AI-app bouwen met Next.js, is de architectuur vaak gevaarlijk eenvoudig. Ze sturen tekst van de frontend direct naar de OpenAI API via een API-sleutel in hun `.env.local`-bestand.
+Wanneer een technische solo-oprichter zijn eerste AI-app bouwt met behulp van Next.js, is de architectuur vaak angstaanjagend simpel: een tekstveld in de frontend vangt de gebruikersinvoer op en stuurt deze via een API-sleutel in het `.env.local`-bestand rechtstreeks door naar de OpenAI API.
 
-Dit werkt prima op een lokale machine, maar in productie geeft u in feite uw creditcard aan de hele wereld.
+Deze directe frontend-koppeling werkt vlekkeloos op localhost. Maar zodra u de app naar productie deployt, geeft u feitelijk uw creditcard af aan het openbare internet.
 
-Wanneer een API-sleutel zichtbaar is in de browser, kan iedereen deze kopiëren via de Chrome Developer Tools en op uw kosten scripts draaien. Audits tonen aan dat 45% van de AI-code beveiligingslekken bevat. Zonder server-side tussenpersoon kunt u geen verbruiksfacturering instellen, geen persoonsgegevens (PII) maskeren en misbruik niet beperken.
+Als uw OpenAI API-sleutel zichtbaar is in de browser, kan iedere bezoeker via Chrome Developer Tools de sleutel uit het netwerktabblad kopiëren en op uw kosten zware scripts draaien (45% van de door AI gegenereerde codebases bevat dergelijke kwetsbaarheden). Zelfs als u de sleutel afschermt, kunt u bij rechtstreekse aanroepen vanuit de frontend geen verbruiksfacturatie afdwingen, geen persoonsgegevens (PII) filteren en geen rate-limiting toepassen tegen misbruik.
 
-U heeft een veilige tussenpersoon nodig: **Supabase Edge Functions**.
+U heeft een betrouwbare tussenpersoon (*middleman*) nodig. Voor moderne AI-startups zijn **Supabase Edge Functions** hiervoor de gouden standaard. Dit is waarom u ze moet inzetten voor LLM-routering en hoe u ze veilig configureert.
 
-## Waarom Frontend AI-Routing Faalt bij Schalen
+## Waarom AI-Aanroepen vanuit de Frontend Falen bij Schaalvergroting
 
-1. **Geen Zicht op Facturering:** Als de frontend direct communiceert met OpenAI, weet uw database niet hoeveel tokens er zijn verbruikt.
-2. **Vendor Lock-In:** Als OpenAI-calls in 20 frontend-componenten staan gehardcodeerd, vereist de overstap naar een goedkoper model een zware herschrijving.
-3. **AVG-Aansprakelijkheid:** Als gebruikers gevoelige gegevens typen en de frontend deze direct naar de AI stuurt, pleegt u een AVG-overtreding.
+Rechtstreeks communiceren vanaf de React- of Next.js-frontend met een LLM veroorzaakt drie fatale knelpunten:
 
-## De Oplossing met Supabase Edge Functions
+### 1. De Facturatie-Blinde Vlek
+Als de frontend rechtstreeks met OpenAI praat, weet uw database nooit hoeveel tokens er daadwerkelijk zijn verbruikt. Het is wiskundig onmogelijk om een betrouwbaar pre-paid creditsysteem te hanteren, omdat de verbruiksdata uitsluitend in het dashboard van OpenAI staat en niet in uw eigen database.
 
-**Supabase Edge Functions** zijn server-side TypeScript-scripts op het Deno-netwerk. De frontend praat met de Edge Function, en de Edge Function communiceert met OpenAI.
+### 2. Vendor Lock-In
+Als u OpenAI-aanroepen hardcodeert in 20 verschillende frontend-componenten, vereist de overstap naar een sneller of goedkoper model (zoals Claude van Anthropic of een open-source model via Groq) een tijdrovende herschrijving van uw volledige UI-laag.
 
-Dit biedt de volgende voordelen:
-- **Sleutelbeheer:** Sleutels staan in de kluis van Supabase en bereiken de browser nooit.
-- **Controle Vóór Uitvoering:** De Edge Function controleert het `credit_balance` in Supabase en wijst het verzoek af bij nul saldo (402-status).
-- **Dynamische LLM-Routing:** Stuur simpele verzoeken naar goedkope modellen (`gpt-4o-mini`) en ingewikkelde taken naar zwaardere modellen.
-- **PII-Maskering:** Anonimiseer namen en e-mails server-side voordat het verzoek naar de AI-provider gaat.
-- **Snelheidsbeperkingen (Rate Limiting):** Beperk het aantal verzoeken per gebruiker centraal op het serverniveau.
+### 3. Het Risico op AVG/GDPR-Inbreuken (PII)
+Als een gebruiker een burgerservicenummer of medische gegevens in uw app typt en de frontend stuurt dit ongefilterd door naar een AI-model, begaat u direct een AVG-inbreuk. U heeft een server-side filter nodig om persoonsgegevens te maskeren vóórdat de data uw applicatie verlaat.
 
-## De Tussenpersoon Bouwen met LaunchStudio
+## De Oplossing: Supabase Edge Functions
 
-Het bouwen van een Edge Function die race-condities bij credits voorkomt, is uitdagend.
+**Supabase Edge Functions** zijn wereldwijd gedistribueerde TypeScript-scripts die draaien op de razendsnelle Deno-runtime. In plaats van dat uw frontend rechtstreeks met OpenAI communiceert, praat uw frontend uitsluitend met de Edge Function, die op haar beurt beveiligd de AI aanroept.
 
-> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
+Deze server-side tussenlaag biedt direct enterprise-grade controle:
 
-Ondersteund door de senior backend-engineers van [Manifera](https://www.manifera.com/) (gevestigd in Amsterdam en Ho Chi Minh City) bouwt [LaunchStudio](https://launchstudio.eu/en/) veilige LLM-routinginfrastructuur. Wij stellen CORS-headers in, schrijven PII-maskeringsmiddleware en implementeren atomaire database-transacties.
+1. **Veilig Sleutelbeheer:** Uw API-sleutels leven in Supabase's versleutelde *secrets vault*. Ze worden nooit naar de browser gestuurd en lekken nooit uit in openbare JavaScript-bestanden.
+2. **Pre-Flight Saldo-Checks:** Voordat de Edge Function het taalmodel aanroept, controleert deze atomair het saldo (`credit_balance`) van de gebruiker in de database. Bij nul credits wordt het verzoek direct afgewezen (HTTP 402), vóórdat er ook maar één cent aan tokens wordt uitgegeven.
+3. **Dynamische LLM-Routering:** U kunt logica inbouwen om eenvoudige vragen door te sturen naar een goedkoop model (`gpt-4o-mini`) en complexe analyses naar een krachtiger model, of A/B-testen uitvoeren tussen AI-leveranciers zonder de frontend aan te passen.
+4. **PII-Masking:** De Edge Function functioneert als een filter dat namen, e-mailadressen en telefoonnummers automatisch anonimiseert vóór doorgifte aan de AI, en de echte data pas weer herstelt in het antwoord naar de geautoriseerde gebruiker.
+5. **Rate Limiting:** Omdat alle verzoeken via één centraal server-endpoint lopen, kunt u eenvoudig limieten per gebruiker of IP-adres afdwingen.
 
-## Belangrijkste Inzichten
+## De Tussenlaag Realiseren met LaunchStudio
 
-- Roep een LLM API nooit rechtstreeks aan vanuit de frontend om sleuteldiefstal te voorkomen.
-- Supabase Edge Functions fungeren als een veilige server-side tussenpersoon op het Deno-netwerk.
-- Edge Functions maken Pre-Flight facturatiecontroles, PII-maskering en dynamische routing mogelijk.
-- LaunchStudio biedt de enterprise-engineering om Edge Function-architecturen veilig uit te rollen.
+Hoewel het schrijven van een basis Edge Function eenvoudig lijkt, is het bouwen van een robuuste functie met realtime token-streaming, race condition-vrije afschrijvingen en strikte rate limiting uiterst complex.
 
-## Echt Voorbeeld
+Daarom besteden technische oprichters hun backend-routering uit aan [LaunchStudio](https://launchstudio.eu/en/).
 
-### Een AI-Native Oprichter in Actie: De Medische Vertaal-App
+Gesteund door de senior software-engineers van [Manifera](https://www.manifera.com/) in Amsterdam en Ho Chi Minh-stad, is LaunchStudio gespecialiseerd in het bouwen van geharde LLM-routeringsinfrastructuren. U bouwt de frontend; wij verzorgen de beveiligde Supabase Edge Functions.
 
-Jonas, een ontwikkelaar in Berlijn, bouwde een AI-vertaal-app voor artsen. Artsen typte Duitse medische notities in om overzichten te genereren via de Anthropic API.
+Wij configureren de CORS-headers, schrijven de PII-masking middleware en richten atomaire databasetransacties in (`SELECT ... FOR UPDATE` of PostgreSQL RPC-functies). Wij transformeren uw prototype in een veilige, professionele SaaS-architectuur.
 
-Jonas riep Anthropic direct aan vanuit de React-frontend. Binnen een maand ontdekte een student de API-sleutel in de netwerk-tab en gebruikte deze om 40 boeken te vertalen, wat Jonas een rekening van €2.200 opleverde. Bovendien stuurde hij patiëntennamen onversleuteld door (een ernstige AVG-overtreding).
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-Jonas schakelde **LaunchStudio (door Manifera)** in.
+## Belangrijkste inzichten
 
-We herbouwden zijn routing-laag via Supabase Edge Functions. We beveiligden de sleutels in de kluis van Supabase en bouwden een Edge Function die het abonnement verifieerde en patiëntennamen en geboortedata anonimiseerde *voordat* de tekst naar Anthropic ging.
+- Roep een LLM-API nooit rechtstreeks aan vanuit de frontend; dit lekt API-sleutels en is een primaire oorzaak van beveiligingslekken in AI-apps.
+- Supabase Edge Functions fungeren als een veilige, server-side tussenpersoon op de wereldwijde Deno-edge.
+- Edge Functions maken pre-flight facturatiechecks, PII-anonimisering, dynamische routering en rate limiting mogelijk.
+- Race conditions bij kredietafschrijving vereisen atomaire databasetransacties op PostgreSQL-niveau.
+- LaunchStudio levert de senior backend-engineering om robuuste Edge Function-architecturen in te richten en uw winstmarges te beschermen.
 
-**Resultaat:** Sleutels waren onzichtbaar voor de frontend. Door het verwijderen van PII slaagde Jonas voor een data-audit van een Berlijns ziekenhuis en sloot een enterprise-contract van €40.000. *"LaunchStudio's Edge Function-architectuur heeft mijn bedrijf gered."*
+[Stop met het openbaar blootstellen van uw API-sleutels. Werk samen met LaunchStudio voor veilige LLM-routering](https://launchstudio.eu/en/#contact).
 
-**Kosten & Doorlooptijd:** €3.500 (Edge Function Routing & PII-Sanering) — afgerond in 8 werkdagen.
+## Echt voorbeeld
+
+### Een AI-native oprichter in actie: De medische vertaal-app
+
+Jonas, ontwikkelaar in Berlijn, bouwde een AI-vertaalapplicatie voor huisartsenpraktijken. Artsen konden Duitse patiëntendossiers invoeren, waarna de app via Anthropic Claude samenvattingen genereerde in het Turks en Arabisch.
+
+Jonas bouwde zijn MVP door Anthropic rechtstreeks aan te roepen vanuit de React-frontend. In de eerste maand ontdekte een handige geneeskundestudent de API-sleutel in het netwerktabblad en vertaalde in één weekend 40 zware studieboeken op Jonas' kosten ($2.200 API-schade).
+
+Bovendien besefte Jonas dat hij ongecodeerde patiëntgegevens naar externe modellen stuurde — een zware inbreuk op de medische privacywetgeving. Hij moest de app per direct offline halen.
+
+Hij schakelde **LaunchStudio (door Manifera)** in om de architectuur te saneren.
+
+Wij herbouwden zijn routeringslaag volledig met Supabase Edge Functions: we verhuisden de Anthropic-sleutels naar de beveiligde kluis en bouwden een server-side functie die het actieve Stripe-abonnement verifieerde en via regex en Named Entity Recognition (NER) automatisch alle patiëntnamen en geboortedata anonimiseerde *vóór* verzending naar Anthropic.
+
+**Resultaat:** Jonas herlanceerde de app binnen een week. De API-sleutels waren 100% onzichtbaar. Omdat de Edge Function alle persoonsgegevens filterde, slaagde hij glansrijk voor de privacy-audit van een groot Berlijns ziekenhuisnetwerk en tekende hij een contract van €40.000. *"LaunchStudio's Edge Function architectuur heeft mijn bedrijf gered. Zonder hun tussenlaag was ik failliet en juridisch aansprakelijk geweest."*
+
+**Kosten & tijdlijn:** €3.500 (Edge Function Routering & PII Anonimisering) — binnen 8 werkdagen live.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Wat is een "Edge Function" precies?
-Een klein, snel backend-script op het Deno-netwerk dat op servers dicht bij de gebruiker draait. Het onderschept verzoeken van de frontend en verwerkt logica veilig voordat het met externe API's communiceert.
+### Wat is een "Edge Function" precies?
+Een Edge Function is een compact, snel backend-script (geschreven in TypeScript op de Deno-runtime) dat draait op servers dicht bij de eindgebruiker. Hierdoor worden serververzoeken razendsnel en met minimale vertraging verwerkt, terwijl API-sleutels en logica 100% server-side beschermd blijven.
 
-### 2. Waarom Supabase Edge Functions gebruiken in plaats van AWS Lambda?
-Als uw database in Supabase staat, integreren Edge Functions automatisch met de authenticatie van uw gebruikers, zonder dat u complexe AWS IAM-rollen hoeft in te stellen.
+### Waarom Supabase Edge Functions in plaats van AWS Lambda?
+Als uw database al in Supabase draait, integreren native Edge Functions naadloos met uw gebruikersauthenticatie en Row Level Security (RLS), zonder de complexe configuraties van AWS IAM-rollen en VPC-peering.
 
-### 3. Hoe streamt een Edge Function AI-antwoorden?
-Edge Functions ondersteunen Server-Sent Events (SSE). Onze engineers schrijven code die de "typ-animatie" veilig van een LLM doorstuurt naar de frontend.
+### Hoe ondersteunt een Edge Function realtime streaming van AI-antwoorden?
+Moderne AI-apps tonen tekst letter voor letter via streaming. Supabase Edge Functions ondersteunen Server-Sent Events (SSE) volledig: de functie ontvangt de datastroom van OpenAI en stuurt deze realtime door naar de frontend zonder vertraging.
 
-### 4. Vertraagt een tussenpersoon de applicatie?
-Nauwelijks. Edge Functions voegen een verwaarloosbare vertraging toe (vaak <50ms), wat opweegt tegen de beveiliging en nauwkeurige facturering.
+### Maakt een tussenlaag de app niet trager?
+Omdat Edge Functions wereldwijd verspreid draaien, is de toegevoegde vertraging nagenoeg onmerkbaar (vaak minder dan 50ms). De winst in beveiliging, facturatie-nauwkeurigheid en privacy weegt hier ruimschoots tegenop.
 
-### 5. Schrijft LaunchStudio mijn Supabase Edge Functions voor mij?
-Ja. Onze backend-engineers schrijven de TypeScript-code, verwerken de LLM-routing en PII-maskering, en rollen deze direct uit op uw Supabase-project.
+### Schrijft LaunchStudio de Supabase Edge Functions voor mij?
+Ja. Als uw white-label partner schrijven wij de TypeScript-code, richten we de beveiligings- en CORS-regels in, bouwen we de PII-filters en leveren we het kant-en-klare endpoint op voor uw frontend.
 
 <script type="application/ld+json">
 {
@@ -89,42 +106,42 @@ Ja. Onze backend-engineers schrijven de TypeScript-code, verwerken de LLM-routin
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is een 'Edge Function' precies?",
+      "name": "Wat is een Supabase Edge Function?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een snel backend-script op Deno-servers dicht bij de gebruiker. Het verwerkt verzoeken van de frontend veilig voordat het met externe API's communiceert."
+        "text": "Een snel TypeScript-script op het wereldwijde edge-netwerk dat fungeert als veilige tussenlaag tussen de gebruikersinterface en externe AI-modellen."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom Supabase Edge Functions gebruiken in plaats van AWS Lambda?",
+      "name": "Waarom zijn Edge Functions beter dan AWS Lambda voor Supabase?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Supabase Edge Functions integreren direct met uw Supabase-database en authenticatie, wat complexe AWS-configuraties overbodig maakt."
+        "text": "Edge Functions erven automatisch de authenticatie en RLS-beveiliging van Supabase, wat zorgt voor een eenvoudigere en veiligere architectuur."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe streamt een Edge Function AI-antwoorden?",
+      "name": "Kunnen Edge Functions realtime AI-streaming aan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Via Server-Sent Events (SSE) wordt de typ-stream van een LLM in real-time en veilig doorgegeven aan de frontend van de gebruiker."
+        "text": "Ja. Via Server-Sent Events (SSE) wordt de streamingtekst van het taalmodel direct realtime en zonder vertraging doorgestuurd naar de frontend."
       }
     },
     {
       "@type": "Question",
-      "name": "Vertraagt een tussenpersoon de applicatie?",
+      "name": "Veroorzaakt een server-tussenlaag vertraging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nauwelijks. De vertraging is vaak onder 50ms, wat een minimale prijs is voor het beveiligen van API-sleutels en facturering."
+        "text": "Nee. De vertraging is minimaal (<50ms) en essentieel om API-sleuteldiefstal en datalekken effectief te voorkomen."
       }
     },
     {
       "@type": "Question",
-      "name": "Schrijft LaunchStudio mijn Supabase Edge Functions?",
+      "name": "Bouwt LaunchStudio de Edge Functions voor mijn startup?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Wij schrijven de TypeScript-code, regelen de LLM-routing en PII-maskering en richten het uit op uw Supabase-project."
+        "text": "Ja. Onze backend-engineers ontwikkelen de complete routering, CORS-beveiliging, PII-masking en atomaire kredietafschrijving op maat."
       }
     }
   ]

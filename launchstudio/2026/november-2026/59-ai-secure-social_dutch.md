@@ -1,13 +1,13 @@
-❌ Je kunt een Large Language Model onmogelijk beveiligen. Het executeert natuurlijke taal; het blijft áltijd kwetsbaar voor manipulatie.
-✅ Je móét een kogelvrije Zero-Trust grens *rondom* het LLM bouwen.
+❌ U kunt een Large Language Model zelf niet beveiligen: het verwerkt natuurlijke taal en blijft vatbaar voor manipulatie.
+✅ U moet een Zero-Trust perimeter *rondom* het model optrekken.
 
-Als je als CISO een AI-rollout auditeert, eis dan de Drie Grenzen:
-1️⃣ Ingress Boundary: Semantic Firewalls om Prompt Injections te blokkeren.
-2️⃣ Storage Boundary: Row Level Security (RLS) om datalekken tussen tenants te voorkomen.
-3️⃣ Egress Boundary: Deterministische Zod Schema Validators om API-executie veilig te sandboxen.
+Als CISO moet u toezien op de Drie Beveiligingslagen:
+1️⃣ De Inkomende Laag: Semantische Firewalls om Prompt Injections te blokkeren.
+2️⃣ De Opslaglaag: Row Level Security (RLS) om datalekken tussen klanten fysiek te voorkomen.
+3️⃣ De Uitgaande Laag: Deterministische Zod-schemavalidatie om API-uitvoering te zandbakken.
 
-Vertrouw de AI nooit. Behandel het als een vijandige actor. 
+Vertrouw de AI nooit blindelings. Behandel het als een potentiële aanvaller.
 
-Lees hoe LaunchStudio onbreekbare, Zero-Trust AI-platformen architecteert: [Link]
+Ontdek hoe LaunchStudio zwaarbeveiligde Zero-Trust AI-platformen bouwt: [Link]
 
-#AISecure #ZeroTrust #CISO #PromptInjection #DevSecOps #LaunchStudio #Manifera
+#AISecure #ZeroTrust #CISO #PromptInjection #DevSecOps #LaunchStudio #Manifera #CyberSecurity

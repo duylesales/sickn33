@@ -1,14 +1,14 @@
-🍝 De AI Spaghetti Trap: Wat gebeurt er als je AI app de 100.000 regels code aantikt?
+🍝 De AI Spaghetti-Valkuil: wat gebeurt er als uw AI-app de 100.000 regels code passeert?
 
-In het begin voelt bouwen met AI alsof je een gratis 10x developer in dienst hebt. Maar op grote schaal crasht je snelheid ineens naar nul.
+In het begin voelt software bouwen met AI alsof u gratis een 10x senior developer in dienst heeft. Maar op schaal keldert de ontwikkelsnelheid plotseling naar nul.
 
-Waarom? 
-1. De AI bereikt de grens van z'n context window en begint spontaan oude features te verwijderen om nieuwe te kunnen toevoegen.
-2. De AI is gek op knippen en plakken, waardoor je app razendsnel verandert in een monolitische puinhoop.
-3. De AI laat overal wees-logica en dode code achter.
+Waarom?
+1. De AI bereikt de limiet van het contextvenster en wist eerdere functies om nieuwe code toe te voegen.
+2. De AI kiest voor knippen en plakken, waardoor een ononderhoudbare monoliet ontstaat.
+3. Er blijft een spoor van dode code en ongebruikte database-haken achter.
 
-Om op grote schaal met AI te blijven bouwen, móéten menselijke engineers de rol van 'redacteur' aannemen in plaats van 'schrijver'. 
+Om software-ontwikkeling met AI op schaal succesvol te houden, moeten engineers optreden als architecten en redacteuren.
 
-Lees hier hoe LaunchStudio in elkaar stortende AI-codebases redt en loeistrakke, modulaire architecturen afdwingt zodat jij op topsnelheid kunt blijven bouwen: [Link]
+Ontdek hoe LaunchStudio vastgelopen AI-codebases redt en structureert zodat u razendsnel kunt blijven bouwen: [Link]
 
-#AICoding #SoftwareDevelopment #TechStartups #CTO #CodeRefactoring #LaunchStudio
+#AICoding #SoftwareDevelopment #TechStartups #CTO #CodeRefactoring #LaunchStudio #Cursor

@@ -1,19 +1,19 @@
-🚨 3 dagen voor lancering vond hij 8 echte gaten — inclusief NUL databaseback-ups. "Ik dacht dat ik paranoïde was. Dat was ik niet." 😱
+🚨 3 dagen voor livegang ontdekte hij 8 grote hiaten — waaronder NUL database-backups. "Ik dacht dat ik paranoia was. Dat was ik niet." 😱
 
-De avond voor lancering is NIET het moment om te ontdekken dat je database geen back-ups heeft. Dit is de checklist met 25 items die het eerst vangt: 📋
+De avond voor livegang is NIET het moment om te ontdekken dat uw database nergens wordt opgeslagen. Dit is de 25-punten checklist die u vóór de lancering moet nalopen: 📋
 
-🔒 Beveiliging (6 items): authenticatieprovider, RLS getest (niet alleen ingeschakeld), geen blootgestelde sleutels, rate limiting, HTTPS overal
-💾 Data (5 items): back-ups GEVERIFIEERD werkend, tenant-isolatie GETEST, verwijderingsproces gedefinieerd
-💳 Betalingen (5 items): volledige integratie, idempotente webhooks, respijtperiodes, btw geconfigureerd
-🤖 AI-betrouwbaarheid (4 items): kostentracking, fallbacks, edge cases getest, gebruikslimieten
-📊 Monitoring (5 items): uptime-alerts, foutregistratie, statuspagina, getest als een vreemde
+🔒 Beveiliging (6 punten): volwaardige auth, RLS getest, geen open API-keys, rate limiting, overal HTTPS
+💾 Data (5 punten): backups GETEST, multi-tenancy bewezen, datawissing geregeld
+💳 Betalingen (5 punten): echte kassa, idempotente webhooks, coulanceperiodes, btw klopt
+🤖 AI-stabiliteit (4 punten): kosten per klant gelogd, fallbacks bij storing, randgevallen getest
+📊 Monitoring (5 punten): uptime-alerts, Sentry crashlogs, statuspagina, zelf als vreemde getest
 
-⚖️ Niet alle 25 items wegen even zwaar: financiële/medische data? Back-ups + verwijdering + belastingafhandeling krijgen extra aandacht. Marktplaats-app? Test tenant-isolatie OVER ROLLEN heen, niet alleen tussen twee accounts met dezelfde rol.
+⚖️ Niet elk punt weegt even zwaar: bij financiële data zijn backups en btw cruciaal; bij een marktplaats moet data-isolatie TUSSEN verschillende rollen getest worden!
 
-De meeste gepolijste AI-prototypes voldoen standaard aan slechts een HANDVOL van deze 25. 📉
+De meeste visueel prachtige prototypes voldoen standaard aan slechts een HANDVOL van deze 25 punten. 📉
 
-Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productiediscipline, verifiëren we alle 25 als standaard — voordat je een lanceringsdatum aankondigt, niet na een crisis. 🛡️🚀
+Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-ervaring, verifiëren we alle 25 punten standaard — vóórdat u de datum aankondigt, niet na een incident. 🛡️🚀
 
-👉 Krijg de volledige checklist met 25 punten: [Link naar artikel]
+👉 Bekijk de complete 25-punten pre-launch checklist: [Link naar artikel]
 
-#PreLancering #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductLancering
+#PreLaunch #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductLaunch #Lovable #NextJS #TechFounders #StartupOpschalen

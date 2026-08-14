@@ -1,19 +1,19 @@
-🔥 Daan bouwde een prototype met **Bolt** — daan ran a small event planning business in utrecht and saw an opportunity to digitize his ticket sales, maar ontdekte kritieke architectuur- en beveiligingsknelpunten vóór de lancering. 🧠
+🔥 Daan bouwde een prototype met **Bolt** — als evenementenorganisator in Utrecht wilde hij zijn ticketverkoop digitaliseren, maar ontdekte kritieke betalings- en beveiligingsknelpunten toen hij live ging. 🧠
 
-Als uw AI-prototype geen server-side invoer-sanering, database Row Level Security (RLS) of correcte deployment-configuratie heeft, zal live verkeer leiden tot storingen en beveiligingsrisico's.
+Als uw AI-prototype geen server-side sessiecreatie, webhook-handtekeningvalidatie of SCA-compatibiliteit bevat, falen echte creditcard- en iDEAL-transacties onmiddellijk.
 
-❌ Gehardcodeerde API-inloggegevens zichtbaar in client-side JavaScript of onversleutelde omgevingsbestanden
-❌ Ontbreken van Row Level Security (RLS) beleid op vector- en relationele databasetabellen
-❌ Onbehandelde API-fouten, race-condities of onbeperkte facturatie-lussen onder gelijktijdige belasting
+❌ Stripe API-aanroepen met testsleutels direct in de client-side JavaScript geplaatst
+❌ Geen webhook-endpoint om betalingssuccessen of mislukkingen te registreren
+❌ Betaalstroom die faalt op Europese sterke klantauthenticatie (SCA / PSD2)
 
-✅ Geheime sleutels verplaatsen naar server-side Edge Function-kluisjes met JWT-authenticatie
-✅ Afdwingen van PostgreSQL Row Level Security (RLS) regels voor volledige multi-tenant data-isolatie
-✅ Verharden van betalings-webhooks, rate limiting en deployment-infrastructuur voor hoge uptime
+✅ Server-side checkout-sessies aangemaakt via beveiligde Edge Functions
+✅ Webhook-endpoints met cryptografische handtekeningverificatie en idempotente verwerking
+✅ Volledige ondersteuning voor Stripe en Mollie (iDEAL) met automatische e-ticketbevestigingen
 
-Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** verhelpen we sinds 2014 via Manifera exact dit soort backend-problemen, met meer dan 160 gerealiseerde projecten. 🛡️
 
-Daan's applicatie behaalde productie-gereedheid: Daan's networking meetup sold out — 200 tickets at €25 each, processed flawlessly through live Stripe. He has since hosted four more events using the same platform. I spent four nights building the frontend. LaunchStudio spent six days building the engine that actually processes money. I couldn't have done that part myself. (€2,200 (Launch & Grow package) + €49/month managed hosting — completed in 6 business days.). 🚀
+Daan verkocht zijn netwerkevenement volledig uit — 200 tickets van 25 euro vlekkeloos verwerkt via live Stripe. (€2.200 (Launch & Grow Pakket) + €49/maand hosting — binnen 6 werkdagen live). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Lees hoe wij betalingen productieklaar maken: [Link naar artikel]
 
-#LaunchStudio #Manifera #AISaaS #AddingStripePayments #TechFounders
+#LaunchStudio #Manifera #AISaaS #StripePayments #Bolt #Mollie #iDEAL #FinTech #StartupOpschalen

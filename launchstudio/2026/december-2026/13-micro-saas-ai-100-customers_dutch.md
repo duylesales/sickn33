@@ -1,118 +1,179 @@
 ---
-Titel: "Micro-SaaS in het AI-tijdperk: Producten Bouwen voor 100 Klanten"
-Trefwoorden: AI-SaaS, SaaS AI, AI-software-engineering, micro-SaaS, LaunchStudio, Manifera
+Titel: "Micro-SaaS in het AI-Tijdperk: Producten Bouwen voor 100 Klanten"
+Trefwoorden: ai saas, saas ai, ai software engineering, micro saas, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: SaaS Founder Scale-Up
+Doelpersona: SaaS Oprichter Scale-Up
 ---
 
-# Micro-SaaS in het AI-tijdperk: Producten Bouwen voor 100 Klanten
+# Micro-SaaS in het AI-Tijdperk: Producten Bouwen voor 100 Klanten
 
-Een SaaS-product met 100 klanten die €99/maand betalen, genereert €118.800 aan jaarlijkse terugkerende omzet — genoeg om een fulltime, winstgevend bedrijf te zijn voor een solo-founder, zonder investeerders, zonder groeidoelen, en zonder druk om te schalen voorbij wat de founder daadwerkelijk wil. Dit is het micro-SaaS-model, en AI-tools hebben het dramatisch haalbaarder gemaakt dan zelfs twee jaar geleden.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Micro-SaaS in het AI-Tijdperk: Producten Bouwen voor 100 Klanten",
+  "description": "Niet elke AI SaaS hoeft miljoenen gebruikers na te jagen. Micro-SaaS producten gebouwd voor 100 loyale klanten floreren in 2027 dankzij AI-tools en scherpe lanceerkosten.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-13",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/micro-saas-ai-100-customers"
+  }
+}
+</script>
 
-## Waarom Micro-SaaS Meer Zin Heeft dan Ooit
+Een SaaS-product met 100 klanten die €99 per maand betalen genereert €118.800 aan jaarlijkse terugkerende omzet (ARR) — ruim voldoende om een winstgevend, zelfstandig fulltime bedrijf te vormen voor een solo-oprichter, zonder externe investeerders, zonder agressieve groeidoelen en zonder de druk om groter te schalen dan u zelf wilt. Dit is het micro-SaaS model, en AI-tools hebben dit drastisch beter haalbaar gemaakt dan zelfs twee jaar geleden.
 
-De logica van door VC gesteunde SaaS gaat ervan uit dat je duizenden klanten nodig hebt om de bouwkosten van het product te rechtvaardigen. Die rekensom klopte toen een functionele SaaS-applicatie een team van developers en zes cijfers aan ontwikkelingskosten vereiste. AI-codeertools hebben die kostenbasis laten instorten. Een founder kan nu een oprecht nuttig, smal SaaS-product bouwen — het soort dat een specifieke niche goed bedient in plaats van een brede markt adequaat — voor een paar duizend euro in totaal.
+## Waarom Micro-SaaS Nu Meer Zin Heeft Dan Ooit
 
-Dit verandert de adresseerbare kans. Een niche die te klein is voor een door VC gesteunde startup (bijvoorbeeld planningssoftware voor zelfstandige fysiotherapeuten, of factuurautomatisering voor Nederlandse freelance vertalers) is precies de juiste grootte voor een micro-SaaS-founder die AI-tools en een lean productiebudget gebruikt.
+Durfkapitaal-logica ging er altijd van uit dat u tienduizenden klanten nodig had om de immense bouwkosten van een softwareproduct terug te verdienen. Die rekensom klopte toen een werkende SaaS-applicatie een team van ontwikkelaars en honderdduizenden euro's aan ontwikkelkosten vereiste. AI-codeertools hebben die kostenbasis volledig doen instorten. Een ondernemer kan nu een uiterst nuttig, specialistisch SaaS-product bouwen — dat een specifieke niche diepgaand bedient in plaats van een brede markt oppervlakkig — voor een paar duizend euro.
 
-## De Micro-SaaS-rekensom
+Dit verandert de kansen in de markt compleet. Een niche die te klein is voor een VC-gefinancierde startup (zoals planningssoftware voor zelfstandige fysiotherapeuten, of factuurautomatisering voor Nederlandse freelance vertalers) heeft exact de ideale omvang voor een micro-SaaS oprichter met AI-tools en een strak lanceerbudget.
 
-| Statistiek | Traditionele VC-gesteunde SaaS | AI-native micro-SaaS |
+## De Wiskunde van Micro-SaaS
+
+| Maatstaf | VC-Gefinancierde SaaS | AI-Native Micro-SaaS |
 |---|---|---|
-| Doelklantenbestand | 10.000+ | 50-500 |
-| Ontwikkelingskosten | €100.000+ | €800-€7.500 |
-| Tijd tot lancering | 6-18 maanden | 1-3 weken |
-| Teamgrootte | 5-20 | 1 (founder) |
-| Financiering vereist | Ja | Nee |
-| Succesdrempel | Hypergroei | Duurzame winstgevendheid |
+| Doelgroep omvang | 10.000+ klanten | 50–500 klanten |
+| Ontwikkelkosten | €100.000+ | €800–€7.500 |
+| Doorlooptijd | 6–18 maanden | 1–3 weken |
+| Teamgrootte | 5–20 personen | 1 (solo-oprichter) |
+| Extern kapitaal | Noodzakelijk | Niet nodig |
+| Succescriterium | Hypergroei | Duurzame winstgevendheid |
 
-## Waarom Nichefocus Wint van Brede Aantrekkingskracht
+## Waarom Nichefocus Wint van Brede Software
 
-Een micro-SaaS-product dat 100 specifieke klanten diepgaand bedient — bijvoorbeeld afsprakenplanning gebouwd precies voor dierenartspraktijken, met veterinairspecifieke velden en workflows — verslaat altijd een generieke planningstool die elke branche probeert te bedienen. Nicheklanten betalen meer, haken minder af en verwijzen meer, omdat het product daadwerkelijk past bij hoe zij werken. AI-tools maken het economisch haalbaar om dit soort smalle-maar-diepe producten te bouwen, omdat de ontwikkelingskosten niet langer een brede marktomvang nodig hebben om ze te rechtvaardigen.
+Een micro-SaaS product dat 100 specifieke klanten diepgaand bedient — bijvoorbeeld afsprakenplanning die exact is ingericht voor dierenartspraktijken, inclusief veterinaire patiëntvelden en behandelprotocollen — verslaat altijd een generieke planningstool die iedereen probeert te bedienen. Niche-klanten betalen meer, blijven langer klant (minder churn) en bevelen sneller aan bij vakgenoten, omdat het product naadloos aansluit op hun manier van werken. AI-tools maken het financieel haalbaar om dergelijke smalle maar diepe producten te bouwen, omdat de ontwikkelkosten geen miljoenenmarkt meer vereisen om rendabel te zijn.
 
-## Wat Micro-SaaS-founders Nog Steeds Goed Moeten Doen
+## Wat Micro-SaaS Oprichters Nog Altijd Goed Moeten Regelen
 
-De valkuil in micro-SaaS is aannemen dat, omdat het klantenbestand klein is, de engineeringstandaarden lager kunnen zijn. Dit is achterstevoren. Een niche-SaaS die 100 betalende klanten in een specifiek beroep bedient — juridisch, medisch, financieel — heeft vaak strengere compliance- en betrouwbaarheidsvereisten dan een consumenten-app die miljoenen bedient, omdat professionele klanten afhankelijk zijn van de tool voor hun levensonderhoud en geen downtime of dataverlies kunnen tolereren.
+De valkuil bij micro-SaaS is de veronderstelling dat omdat het klantenbestand klein is, de technische eisen lager kunnen zijn. Dat is een gevaarlijke misvatting. Een niche-SaaS die 100 betalende professionals bedient — in de juridische, medische of financiële sector — stelt vaak veel strengere eisen aan betrouwbaarheid en compliance dan een consumenten-app met miljoenen gratis gebruikers. Professionele klanten vertrouwen voor hun inkomen op de tool en tolereren geen downtime of datalekken.
 
-Hier past [LaunchStudio](https://launchstudio.eu/en/) specifiek in het micro-SaaS-model. Achter LaunchStudio staat Manifera's team van 120+ ervaren engineers, wat betekent dat een micro-SaaS-founder beveiliging en architectuur op ondernemingsniveau krijgt tegen een prijspunt gebouwd voor een bedrijf met 100 klanten, niet 100.000.
+Dit is waar [LaunchStudio](https://launchstudio.eu/en/) specifiek inspeelt op het micro-SaaS model. Achter LaunchStudio staat Manifera's team van 120+ ervaren engineers, waardoor een micro-SaaS oprichter kan rekenen op enterprise-beveiliging en robuuste architectuur tegen een tarief dat is afgestemd op een bedrijf van 100 klanten, niet van 100.000 klanten.
 
-## Het Maandelijkse Ondersteuningsmodel voor Micro-SaaS
+## Het Maandelijkse Beheermodel voor Micro-SaaS
 
-Omdat micro-SaaS-founders vaak solo werken, is doorlopende betrouwbaarheid belangrijker dan welke enkele functielancering dan ook. LaunchStudio's Launch & Grow-pakket bevat managed hosting, monitoring en prioriteitsondersteuning voor €49/maand — ontworpen zodat een solo-founder nooit een parttime DevOps-engineer hoeft te worden om zijn 100 klanten tevreden te houden.
+Omdat micro-SaaS oprichters vaak solo opereren, is doorlopende stabiliteit belangrijker dan een constante stroom nieuwe toeters en bellen. Het Launch & Grow pakket van LaunchStudio omvat managed hosting, 24/7 uptime-monitoring en prioriteitsondersteuning voor €49 per maand — ontworpen zodat een solo-oprichter nooit een parttime DevOps-engineer hoeft te worden om zijn 100 klanten tevreden te houden.
 
-[Bekijk wat een micro-SaaS-lancering kost](https://launchstudio.eu/en/#calculator) voor jouw specifieke niche en klantenaantal.
+[Bekijk wat een micro-SaaS lancering kost](https://launchstudio.eu/en/#calculator) voor uw specifieke niche en klanenaantal.
 
-## Een Micro-SaaS-product Prijzen voor Duurzaamheid op Lange Termijn
+## Prijsbepaling van een Micro-SaaS Product voor Duurzame Winstgevendheid
 
-Prijzen is waar de meeste micro-SaaS-founders zichzelf tekortdoen, meestal omdat ze prijsinstincten importeren uit consumenten-apps of brede-marktSaaS waar volume een lage prijs rechtvaardigt. Een product gebouwd voor 100 klanten heeft een fundamenteel andere prijslogica nodig.
+Prijsstelling is het punt waar de meeste micro-SaaS oprichters zichzelf zwaar tekortdoen, meestal door prijsinstincten over te nemen uit de consumentenmarkt of brede SaaS waar volume een lage prijs rechtvaardigt. Een product gebouwd voor 100 klanten vereist een fundamenteel andere prijslogica:
 
-**Prijs de uitkomst, niet het aantal functies**
+**Prijs op basis van de uitkomst, niet op het aantal functies**  
+Een generieke planningstool concurreert op featurelijstjes en wordt navenant geprijsd — vaak €10 tot €20 per maand, omdat hij moet concurreren met tientallen identieke tools. Een planningstool die specifiek is gebouwd voor zelfstandige fysiotherapeuten, inclusief Nederlandse zorgdeclaratiecodes en behandelprotocollen, concurreert niet meer op functies. Hij concurreert op hoeveel tijd en compliance-risico hij wegneemt uit een specifieke werkstroom. Die herpositionering alleen al rechtvaardigt 3 tot 5 keer de prijs van een generiek alternatief.
 
-Een generieke planningstool concurreert op functies en wordt er dienovereenkomstig naar geprijsd — vaak €10-20/maand, omdat hij moet concurreren met tientallen vergelijkbare generieke tools. Een planningstool specifiek gebouwd voor zelfstandige fysiotherapeuten, met ingebouwde verzekeringscodeafhandeling en behandelprotocoltracking, concurreert niet langer op aantal functies. Hij concurreert op hoeveel tijd en compliancerisico hij wegneemt uit een specifieke, goed begrepen workflow. Die herkadering alleen al rechtvaardigt vaak 3-5x de prijs van een generiek equivalent.
+**Bereken uw reële bodemprijs**  
+Reken terug vanuit het inkomen dat uw bedrijf u daadwerkelijk moet opleveren:
+- **Gewenst jaarinkomen** — wat heeft u persoonlijk nodig om comfortabel van de onderneming te leven.
+- **Realistisch klantplafond** — hoeveel klanten kunt u als solo-oprichter in uw niche realistisch werven en ondersteunen (doorgaans 50 tot 500 voor een echte micro-SaaS).
+- **Benodigde maandprijs** — gewenst jaarinkomen gedeeld door (12 × realistisch klantplafond), en vervolgens gecorrigeerd voor churn (klantverloop), aangezien niet elke aanmelding een vol jaar blijft.
 
-**Bereken je echte prijsbodem**
+Een oprichter die mikt op €80.000 per jaar met een realistisch plafond van 100 klanten heeft minimaal €67 per maand per klant nodig vóór churn-correctie — en niet de €15 tot €20 per maand waar men uit consumentengewoonte naar grijpt.
 
-Werk terug vanuit wat het bedrijf dat je daadwerkelijk wilt in stand houdt:
+**Weersta de drang om onnodige prijsstaffels toe te voegen**  
+Brede SaaS-platforms gebruiken complexe staffels om klanten met sterk uiteenlopende budgetten te bedienen. Een echte micro-SaaS die een scherp afgebakende niche bedient, functioneert vaak het beste met één heldere prijs, of hooguit twee niveaus (solist versus kleine praktijk). Elke extra staffel voegt beslisfrictie toe voor de prospect en supportcomplexiteit voor de solo-oprichter.
 
-- **Beoogd jaarinkomen** — wat moet dit bedrijf voor jou persoonlijk genereren
-- **Realistisch klantenplafond** — hoeveel klanten kun je redelijkerwijs werven en ondersteunen als solo-founder in jouw specifieke niche (meestal 50-500 voor een echte micro-SaaS)
-- **Vereiste maandprijs** — beoogd inkomen gedeeld door (12 × realistisch klantenplafond), vervolgens naar boven bijgesteld voor churn, aangezien niet elke aanmelding een volledig jaar blijft
+**Jaarabonnementen als stabiliteitsanker**  
+Het aanbieden van een jaarplan met een bescheiden korting (doorgaans 15-20%) levert een micro-SaaS oprichter veel meer op dan een groot bedrijf: het transformeert onvoorspelbaar maandelijks verloop in een vol jaar aan gegarandeerde omzet en kasstroom, wat cruciaal is wanneer het verliezen van 3 klanten in een mindere maand direct voelbaar is.
 
-Een founder die €80.000/jaar nastreeft met een realistisch plafond van 100 klanten heeft ruwweg €67/maand per klant nodig voordat churn wordt meegerekend — niet de €15-20/maand waar een founder instinctief naar zou grijpen uit consumentenprijsgewoonte.
+**Herzie uw prijzen jaarlijks**  
+Micro-SaaS ondernemers bepalen hun prijs vaak eenmalig bij de lancering en kijken er nooit meer naar om. Een product dat twee jaar vlekkeloos draait en waardevolle functionaliteiten heeft toegevoegd, heeft het recht verdiend om de prijs voor nieuwe klanten te verhogen. Bestaande klanten behouden hun oorspronkelijke tarief (grandfathering), wat tevens een sterk loyaliteitssignaal is.
 
-**Weersta de drang om tiers toe te voegen die je niet nodig hebt**
-
-Brede-marktSaaS gebruikt gelaagde prijzen om klanten te vangen over een breed scala aan budgetten en behoeften. Een echte micro-SaaS die een smalle, goed begrepen niche bedient, doet het vaak beter met één enkel prijspunt, of hooguit twee tiers (zelfstandige beoefenaar versus klein team). Elke extra tier voegt beslissingsfrictie toe voor een prospect en supportcomplexiteit voor een solo-founder — kosten die pas zinvol zijn om te dragen wanneer je klantenbestand groot en divers genoeg is om de segmentatie nodig te hebben.
-
-**Jaarlijkse prijzen als stabiliteitshendel**
-
-Een jaarabonnement aanbieden met een bescheiden korting (doorgaans 15-20% korting op maandelijks) doet meer voor een micro-SaaS-founder dan voor een groter bedrijf: het zet onvoorspelbaar maandelijks churnrisico om in een jaar gegarandeerde omzet en cashflow, wat onevenredig zwaar weegt wanneer je totale klantenaantal klein genoeg is dat het verliezen van 3-4 klanten in een slechte maand een betekenisvolle omzetschommeling is in plaats van een afrondingsfout.
-
-**Herzie je prijzen jaarlijks, niet nooit**
-
-Micro-SaaS-founders stellen vaak eenmalig een prijs vast bij lancering en herzien die nooit meer, zelfs als het product functies wint en bewezen betrouwbaarheid opbouwt. Een product dat twee jaar heeft gedraaid zonder downtime en gestaag gevraagde functies heeft toegevoegd, heeft het recht verdiend op een prijsverhoging voor nieuwe klanten — bestaande klanten kunnen doorgaans grandfathered worden, wat ook een stil loyaliteitssignaal wordt.
-
-**Let op je effectieve prijs per uur support, niet alleen per klant**
-
-Een klant van €79/maand die je twee keer per week mailt, is in praktische termen minder winstgevend dan een klant van €99/maand die nooit contact hoeft op te nemen. Volg de supporttijd per klantsegment gedurende de eerste paar maanden na lancering, en laat die data — niet alleen ruwe omzet — bepalen welk klantprofiel je daadwerkelijk meer wilt targeten. Niches met duidelijke documentatiebehoeften of zware onboardingvereisten moeten specifiek hoger geprijsd worden om de foundertijd te compenseren die deze klanten verbruiken, aangezien in een micro-SaaS-bedrijf de tijd van de founder de schaarste resource is, niet servercapaciteit.
+**Let op uw effectieve prijs per supportuur**  
+Een klant van €79/maand die u twee keer per week mailt is feitelijk minder winstgevend dan een klant van €99/maand die u nooit hoort. Houd de supporttijd per klantsegment in de eerste maanden na livegang goed bij, en laat die data bepalen welk klantprofiel u actiever wilt werven. In een micro-SaaS is de tijd van de oprichter immers de meest schaarse hulpbron, niet de servercapaciteit.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: 87 klanten en winstgevend, geen investeerders nodig
+### Een AI-native oprichter in actie: 87 klanten en winstgevend zonder investeerders
 
-Iris, een voormalig fysiotherapiepraktijkmanager in Zwolle, merkte dat de meeste fysiotherapiepraktijksoftware werd gebouwd voor grote multi-locatieklinieken en absurd overprijsd was voor solopraktijken. Ze gebruikte Lovable om FysioPlanner te bouwen, een planning- en oefenplantool specifiek gebouwd voor zelfstandige fysiotherapeuten — met velden en workflows die generieke planningstools niet boden, zoals behandelprotocoltracking en verzekeringscodebeheer specifiek voor Nederlandse zorgfacturering.
+Iris, voormalig praktijkmanager in Zwolle, zag dat praktijksoftware voor fysiotherapie te duur en log was voor zelfstandige behandelaars. Met Lovable bouwde ze FysioPlanner: een planning- en oefenschema-tool specifiek voor zelfstandige fysiopraktijken, inclusief Nederlandse declaratiecodes en behandelprotocollen.
 
-Iris was er nooit op uit om duizenden klanten na te jagen. Haar doel was 100 loyale, goed bediende zelfstandige fysiotherapeuten die een eerlijke maandelijkse prijs betaalden. Maar haar Lovable-prototype had geen veilige manier om patiëntbehandeldata op te slaan (een wettelijke vereiste onder Nederlandse zorggegevensregels) en geen terugkerend factureringssysteem.
+Haar doel was 100 tevreden gebruikers tegen een eerlijk maandbedrag. Haar Lovable-prototype miste echter veilige patiëntdata-opslag (verplicht onder medische privacywetgeving) en een geautomatiseerd abonnementssysteem.
 
-Ze nam contact op met LaunchStudio specifiek omdat het team het micro-SaaS-doel begreep — ze was niet op zoek naar hypergroei-infrastructuur, alleen solide, conforme, betrouwbare engineering op maat van haar daadwerkelijke ambitie. Het Manifera-team implementeerde zorgconforme dataopslag, terugkerende Mollie-facturering, en een managed hostingplan passend bij haar schaal, zonder over-engineering voor groei die ze niet wilde.
+Ze koos voor LaunchStudio omdat het team het micro-SaaS model begreep — ze zocht geen over-geëngineerde hypergroei-infrastructuur, maar solide, AVG-conforme en betrouwbare software op maat voor haar werkelijke ambitie. Het team van Manifera implementeerde medisch conforme data-opslag, terugkerende Mollie-incasso's en managed hosting.
 
-**Resultaat:** FysioPlanner bereikte binnen vijf maanden 87 betalende zelfstandige fysiotherapeuten tegen €79/maand, wat ongeveer €82.500 aan jaarlijkse terugkerende omzet opleverde — een fulltime inkomen voor Iris zonder werknemers en zonder externe investering.
+**Resultaat:** FysioPlanner groeide binnen vijf maanden naar 87 betalende zelfstandige fysiotherapeuten voor €79 per maand, goed voor ruim €82.500 aan jaarlijkse terugkerende omzet — een volwaardig fulltime inkomen voor Iris zonder personeel of externe investeerders.
 
-> *"Ik wilde niet de volgende unicorn bouwen. Ik wilde 100 tevreden klanten en een duurzaam bedrijf. LaunchStudio bouwde precies dat — niet meer, niet minder, en het was er ook naar geprijsd."*
-> — **Iris Vermeer, Founder, FysioPlanner (Zwolle)**
+> *"Ik hoefde geen unicorn te bouwen. Ik wilde 100 tevreden klanten en een duurzaam bestaan. LaunchStudio bouwde exact de juiste, veilige infrastructuur voor een eerlijke vaste prijs."*  
+> — **Iris Vermeer, Oprichter FysioPlanner (Zwolle)**
 
-**Kosten & tijdlijn:** €2.900 (Launch & Grow Pakket) — live in 12 werkdagen.
+**Kosten & tijdlijn:** €2.900 (Launch & Grow Pakket) — binnen 12 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Is een micro-SaaS-bedrijf een legitieme langetermijnstrategie, of slechts een tussenstap?
+### Is een micro-SaaS een volwaardig lange-termijn bedrijfsmodel of een tussenstap?
+Het kan een permanent en zeer winstgevend bedrijfsmodel zijn. Veel ondernemers kiezen bewust voor micro-SaaS vanwege de maximale onafhankelijkheid en winstgevendheid zonder verwatering door investeerders. Manifera's eigen 11-jarige geschiedenis in het bedienen van specifieke B2B-markten weerspiegelt dezelfde filosofie.
 
-Het kan een permanent, duurzaam bedrijfsmodel zijn. Veel founders kiezen bewust voor micro-SaaS omdat het winstgevendheid en onafhankelijkheid biedt zonder de druk en verwatering die bij durfkapitaalfinanciering komt kijken. Manifera's eigen 11-jarige geschiedenis van het bedienen van specifieke B2B-niches in plaats van massamarktschaal na te jagen, weerspiegelt een vergelijkbare filosofie toegepast op bureauniveau.
+### Hoe weet ik of mijn niche groot genoeg is voor 100 betalende klanten?
+Zoek naar een beroepsgroep met een specifiek, terugkerend knelpunt en minimaal enkele duizenden beoefenaars. Een marktaandeel van 3% tot 5% levert direct 100+ klanten op. Het team van Herre Roelevink helpt oprichters regelmatig om de marktomvang te valideren tijdens het eerste intakegesprek.
 
-### Hoe weet ik of mijn niche groot genoeg is om 100 betalende klanten te dragen?
+### Werkt LaunchStudio ook met oprichters die bewust klein willen blijven?
+Zeker. Onze vaste pakketprijzen zijn juist ideaal voor solopreneurs en micro-SaaS oprichters die betrouwbare software willen zonder onnodige complexiteit. De engineeringstandaarden blijven enterprise-veilig; alleen de schaal van de servers wordt aangepast.
 
-Zoek naar een specifiek beroep of een specifieke workflow met een duidelijk, terugkerend pijnpunt en genoeg totale beoefenaars (meestal een paar duizend) zodat zelfs 3-5% ervan al 100+ klanten oplevert. Herre Roelevinks team helpt founders regelmatig bij het valideren van de nichegrootte tijdens het eerste gesprek van 15 minuten voordat er ontwikkeling begint.
+### Wat als mijn micro-SaaS onverwacht doorgroeit naar duizenden gebruikers?
+De modulaire architectuur (Next.js en Supabase) die LaunchStudio oplevert schaalt naadloos mee. Manifera kan uw software moeiteloos verder uitbreiden naarmate uw platform groeit, zonder dat er een herbouw vanaf nul nodig is.
 
-### Werkt LaunchStudio alleen met founders die snelle hypergroei nastreven?
+### Is €49 per maand voor managed hosting de investering waard voor een solo-oprichter?
+Voor vrijwel elke solo-oprichter wel. Het alternatief is uw eigen tijd besteden aan serveronderhoud, back-up controles en beveiligingspatches — tijd die u oneindig veel beter kunt besteden aan uw klanten en productontwikkeling.
 
-Nee. LaunchStudio's vastgeprijsde, afgebakende pakketten zijn even geschikt voor founders die bewust kleine, duurzame micro-SaaS-producten bouwen. De engineeringstandaarden — beveiliging, betrouwbaarheid, correcte architectuur — veranderen niet op basis van je groeiambities; alleen de schaal van de infrastructuur wel.
-
-### Wat gebeurt er als mijn micro-SaaS onverwacht boven de 100 klanten groeit?
-
-De architectuur die LaunchStudio bouwt, is ontworpen om soepel te schalen. Als je micro-SaaS zijn oorspronkelijke scope ontgroeit, kunnen Manifera's full-cycle ontwikkelingsdiensten de volgende groeifase ondersteunen, van extra functies tot grotere infrastructuur, zonder een herbouw vanaf nul.
-
-### Is €49/maand aan managed hosting het waard voor een solo micro-SaaS-founder?
-
-Voor de meeste solo-founders wel — het alternatief is je eigen tijd besteden aan serveronderhoud, beveiligingspatches en uptime-monitoring, tijd die meer waard is besteed aan klanten en product. De managed-hostingkosten kosten doorgaans minder dan één uur van de tijd van een founder per maand.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is een micro-SaaS een volwaardig lange-termijn bedrijfsmodel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Micro-SaaS biedt duurzame winstgevendheid en volledige controle zonder de druk van externe durfkapitaal-investeerders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn niche groot genoeg is voor 100 klanten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kies een niche met duizenden professionals waarin een klein marktaandeel van 3-5% al voldoende is voor 100 betalende gebruikers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt LaunchStudio ook met oprichters die bewust klein willen blijven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, onze vaste pakketten leveren betrouwbare enterprise-infrastructuur op maat voor gefocuste micro-SaaS bedrijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat als mijn micro-SaaS onverwacht doorgroeit naar duizenden gebruikers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De Next.js en Supabase architectuur schaalt naadloos mee zonder dat er een herbouw vanaf nul nodig is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 49 euro per maand voor managed hosting de investering waard voor een solo-oprichter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, het neemt alle technische zorgen over back-ups, monitoring en beveiligingsupdates volledig uit handen."
+      }
+    }
+  ]
+}
+</script>

@@ -1,91 +1,96 @@
 ---
-Titel: De Economie van Open-Source Modellen vs API-Providers voor AI En SaaS
-Trefwoorden: ai saas, saas ai, ai saas platform, ai software engineering, ai en software ontwikkeling, ai uitrol, ai native, ai bouwen
+Titel: "De Economie van Open-Source Modellen vs. API-Providers voor AI en SaaS"
+Trefwoorden: AI SaaS, SaaS AI, AI SaaS platform, AI software engineering, AI en software ontwikkeling, AI deployment, AI-native, build AI, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# De Economie van Open-Source Modellen vs API-Providers voor AI En SaaS
+# De Economie van Open-Source Modellen vs. API-Providers voor AI en SaaS
 
-Elke AI-startup begint op exact dezelfde manier: door het inpluggen van een OpenAI API-sleutel. Het is wrijvingsloos, oneindig schaalbaar en vereist nul DevOps. Maar naarmate uw startup schaalt van 100 gebruikers naar 100.000 gebruikers, verandert die API-sleutel van een zegen in een zware belasting op uw brutomarge. Uiteindelijk zal uw CFO vragen: *"Waarom betalen we OpenAI $ 15.000 per maand? Kunnen we Llama niet gewoon gratis draaien?"* Het antwoord is ja, maar de verborgen kosten van open-source infrastructuur zijn stevig, en het verkeerde migratiemoment kan een SaaS-bedrijf dat op papier winstgevend leek in stilte fnuiken.
+Vrijwel elke AI-startup begint op dezelfde wijze: met een API-sleutel van OpenAI of Anthropic. Het is laagdrempelig, oneindig schaalbaar en vereist nul DevOps-capaciteit. Maar wanneer uw SaaS groeit van 100 naar 100.000 actieve gebruikers, verandert die API-sleutel van een zegen in een zware belasting op uw brutomarge. Vroeg of laat vraagt uw directie: *"Waarom betalen we maandelijks 15.000 euro aan OpenAI? Kunnen we niet gratis Llama hosten?"* Het antwoord is ja, maar de verborgen kosten van eigen open-source infrastructuur zijn aanzienlijk.
 
-## De API-Valstrik: Variabele Kosten op Schaal
+## De API-Valstrik: Variabele Kosten bij Opschalen
 
-Het gebruik van een besloten API (OpenAI, Anthropic, Google) betekent dat uw kosten lineair meeschalen met uw gebruik, en vaak sneller dan lineair zodra u agentic workflows introduceert. Als u weinig verkeer heeft, is uw factuur $ 10. Het is de goedkoopste manier om een MVP te bouwen — er is geen server op te tuigen, geen GPU-driver te patchen en geen model warm te houden. Maar als uw toepassing viraal gaat, of als u een agentic workflow introduceert die 15-20 achtergrond-LLM-calls per gebruikersactie maakt, zal uw API-factuur ontploffen op een manier die u vooraf nooit had gemodelleerd.
+Het gebruik van gesloten API's (OpenAI, Anthropic, Google) betekent dat uw kosten lineair meegroeien met het gebruik. Bij weinig verkeer bedraagt de factuur slechts enkele tientjes: ideaal voor een prototype. Maar zodra u agent-workflows introduceert die per gebruikersactie 10 tot 20 achtergrond-aanroepen uitvoeren, explodeert de API-factuur.
 
-Als u een gebruiker een vast abonnement van $ 20/maand rekent, maar deze verbruikt $ 25/maand aan API-tokens door een intensieve workflow, heeft uw SaaS negatieve unit economics op dat klantensegment. U betaalt dan voor het voorrecht om klanten te hebben.
+Als u een abonnement van 20 euro per maand rekent, maar een actieve gebruiker maandelijks voor 25 euro aan tokens verbruikt, heeft uw SaaS een negatieve unit economics. U verliest geld naarmate uw product populairder wordt.
 
 ## De Open-Source Realiteit: Vaste Infrastructuurkosten
 
-De gewichten voor modellen zoals Llama 3, Mistral en Qwen zijn gratis te downloaden. Het draaien ervan is dat niet. Om een model met 70 miljard parameters te hosten met een bruikbare latentie, heeft u serieuze hardware nodig — doorgaans meerdere NVIDIA A100 of H100 GPU's met voldoende VRAM om de modelgewichten en een KV-cache vast te houden. Het huren van een AWS EC2-instantie zoals een `p4d.24xlarge` (8x A100 GPU's) kan $ 30+ per uur on-demand kosten, wat oploopt tot ruim boven de $ 20.000 per maand als u deze continu laat draaien; zelfs gereserveerde instanties of spotprijzen liggen doorgaans in de rangorde van $ 3.000-$ 8.000 per maand voor een enkele node.
+De modelgewichten van Llama 3, Mistral of Qwen zijn gratis te downloaden, maar de hosting ervan niet. Om een 70B parameter model met aanvaardbare latentie te draaien, zijn dedicated NVIDIA A100- of H100-GPU's nodig. Het huren van een krachtige GPU-cloudinstantie kost al snel 3.000 tot 8.000 euro per maand per node.
 
-Dit verschuift uw financiële model van **Variabele Kosten** naar **Vaste Kosten**. Als u een GPU-server huurt voor $ 3.000 per maand, betaalt u die $ 3.000 ongeacht of u 1 miljoen tokens of nul tokens verwerkt. Open-source is alleen goedkoper als u consistent voldoende verkeer door de server laat lopen om de GPU-rekenkracht te benutten. U erft daarnaast nieuwe operationele lasten: kwantisatiebeslissingen (het draaien van het model in 4-bit of 8-bit om te passen in het VRAM), batching-strategieën om doorvoer te maximaliseren, modelversiebeheer en 24/7 on-call dekking.
+Hierdoor verschuift uw financiële model van **variabele kosten** naar **vaste kosten**: u betaalt die 3.000 euro ongeacht of u miljoenen queries verwerkt of nul. Zelf-hosting is uitsluitend voordeliger wanneer uw servers continu een hoge bezettingsgraad hebben. Daarnaast vereist het intern DevOps-onderhoud, kwantisatie en 24/7 storingsmonitoring.
 
-## Het Omslagpunt Vinden
+## Het Bepalen van het Omslagpunt (Breakeven Point)
 
-Wanneer moet u migrerend weg van OpenAI? U moet het Omslagpunt (Breakeven Point) berekenen, en dat is een meervoudige berekening: niet alleen de tokenkosten, maar de tokenkosten plus de volledige kosten van de engineer die nu eigenaar is van de GPU-uptime. Als u $ 500 per maand uitgeeft aan API's, blijf dan bij OpenAI. De salaris- en on-call lasten die nodig zijn om een lokaal GPU-cluster te beheren, zullen alle token-besparingen overschaduwen.
+Wanneer is de overstap van OpenAI naar een eigen open-source model financieel rendabel?
+- **Onder de 5.000 euro per maand:** Blijf op gesloten API's. De personeelskosten en complexiteit van eigen GPU-beheer wegen niet op tegen de tokenbesparing.
+- **Boven de 5.000 tot 10.000 euro per maand:** Het omslagpunt wordt bereikt. Het huren van dedicated GPU's of het inzetten van gerichte open-source modellen verlaagt de marginale kosten drastisch en verbetert uw SaaS-brutomarges met 15% tot 30%.
 
-Wanneer uw API-factuur echter de drempel van $ 5.000 tot $ 10.000 per maand overschrijdt, draait de wiskunde om. Het huren van uw eigen dedicated GPU-infrastructuur en het draaien van open-source modellen wordt aanzienlijk goedkoper, wat de brutomarges van uw startup drastisch verbetert — vaak met 15 tot 30 procentpunten zodra het wordt afgeschreven over uw gehele gebruikersbestand.
+## De Tussenweg: Serverless Inference Providers
 
-## De Middenweg: Serverloze Inference Providers
+Voor startups die de voordelige tokenprijzen van open-source wensen zonder de vaste kosten van eigen GPU-servers, bieden **Serverless Inference Providers** (zoals Groq, Together AI of Fireworks AI) de ideale middenweg.
 
-Als u de privacy of het kostenprofiel van open-source modellen nodig heeft, maar u de vaste kosten van het huren van dedicated AWS GPU's niet kunt veroorloven, biedt de sector een middenweg: Serverloze Inference Providers (Serverless Inference).
+Zij hosten open-source modellen op gedeelde infrastructuur en rekenen af per token. Omdat open-source modellen compacter en geoptimaliseerd zijn, liggen de tokenkosten vaak 80% tot 90% lager dan bij frontier-modellen zoals GPT-4o, zonder dat u eigen servers hoeft te beheren.
 
-Providers zoals Together AI, Fireworks AI, Groq en Replicate hosten de open-source modellen voor u. Ze rekenen een vergoeding per token (net als OpenAI), maar omdat de open-source modellen kleiner en geoptimaliseerd zijn — en omdat deze providers op massale schaal draaien op dedicated hardware — zijn de kosten per token vaak 80% tot 90% goedkoper dan tarieven voor de hoogste klasse closed-source modellen, soms met een time-to-first-token latentie van onder de 100ms. Dit stelt startups in staat om kosten drastisch te verlagen zonder een dedicated DevOps-engineer aan te nemen.
+## Data-Soevereiniteit en Enterprise Compliance
 
-## De Eise van Enterprise Datasoevereiniteit
+Soms is de keuze niet gedreven door kosten, maar door wet- en regelgeving. Europese banken, zorginstellingen en overheden verbieden het versturen van gevoelige persoonsgegevens naar externe API's van derden. Om enterprise-contracten binnen te halen, is het zelf hosten van een open-source model binnen een private Virtual Private Cloud (VPC) binnen de EU vaak een harde inkoopeis onder de AVG.
 
-Soms gaat de beslissing niet over kosten, maar over compliance. Als u verkoopt aan Europese banken, zorginstellingen of overheidsinstanties, zullen zij het u expliciet verbieden om hun gevoelige data naar een gecentraliseerde API van een derde partij te sturen. Om een zakelijk contract te winnen, *moet* u een open-source model zelf hosten binnen een private Virtual Private Cloud (VPC), vaak binnen een specifieke geografische regio om te voldoen aan de AVG/GDPR-dataresidentie-eisen.
+Herre Roelevink, oprichter en Managing Director van Manifera, legt uit: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt sinds **2014** aan private, beveiligde enterprise-omgevingen.
 
-Dit is een beslissing waar LaunchStudio's moederbedrijf regelmatig bij helpt. "We zien een verschuiving in softwarebehoeften," zegt **Herre Roelevink, Oprichter & Managing Director van Manifera**. "De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat." Manifera — opgericht in **2014**, met 120+ engineers en 160+ opgeleverde projecten voor enterprise-klanten zoals Vodafone en TNO — bouwt exact dit soort VPC-geïsoleerde infrastructuur voor gereguleerde sectoren vanuit haar kantoren in Amsterdam, Singapore en Ho Chi Minh City.
+## Belangrijkste inzichten
 
-## Gemengde Architecturen: Het Patroon Waar de Meeste Teams Op Uitkomen
+- Gesloten API's (zoals OpenAI) zijn perfect voor vroege startups: u betaalt puur naar verbruik en heeft geen DevOps- of serverbeheer nodig.
 
-In de praktijk kiezen weinig volwassen AI SaaS-bedrijven exclusief voor één model. Het winnende patroon is meestal een router: goedkope, hoog-volume, laag-risico taken (classificatie, extractie, eenvoudige chat) gaan naar een zelfgehost of serverloos open-source model; complexe redeneringen of klantgerichte taken waar kwaliteit niet-onderhandelbaar is worden gerouteerd naar een besloten frontier API-model.
+- Bij sterke groei kunnen variabele API-kosten uw marges uithollen; open-source modellen vervangen variabele kosten door vaste GPU-serverkosten.
 
-## Belangrijkste Inzichten
+- Stap pas over op eigen GPU-hosting zodra uw maandelijkse API-kosten het omslagpunt van 5.000 tot 10.000 euro overschrijden.
 
-- Het gebruik van besloten API's (zoals OpenAI) is de beste keuze voor vroege startups omdat de kosten perfect meeschalen met laag gebruik en nul DevOps-overhead vereisen.
-- Op grote schaal kunnen API 'Variabele Kosten' uw brutomarges vernietigen. Het migreren naar open-source modellen vervangt variabele tokenkosten door 'Vaste' serverhuurkosten van ongeveer $ 3.000-$ 8.000/maand voor een dedicated node.
-- Het zelf hosten van open-source modellen vereist het huren van kostbare GPU-servers en het overnemen van kwantisatie-, batching- en on-call verantwoordelijkheid. Migreer niet weg van OpenAI totdat uw maandelijkse API-factuur de volledige kosten van die infrastructuur en arbeid begint te overstijgen.
-- 'Serverloze Inference Providers' (zoals Groq, Together AI of Fireworks) bieden het beste van twee werelden: toegang tot open-source modellen met goedkope tarieven per token en geen infrastructuurbeheer.
-- Voor grote enterprise-contracten in gereguleerde sectoren is het zelf hosten van een open-source model in een private VPC verplicht om te voldoen aan strikte Datasoevereiniteit en AVG/GDPR-eisen.
+- Serverless inference providers (Groq, Together AI) bieden 80% lagere tokenkosten voor open-source modellen zonder vaste GPU-serverhuur.
 
-## Optimaliseer Uw AI-Marges
+- Voor gereguleerde markten (zorg, overheid, finance) is het hosten van open-source modellen in een private VPC verplicht om data-soevereiniteit en AVG-residency te garanderen.
 
-Vernietigt uw OpenAI API-factuur de winstgevendheid van uw startup? **[LaunchStudio](https://launchstudio.eu/en/)** helpt schaalbare SaaS-bedrijven hun omslagpunten te berekenen en naadloos te migreren van kostbare besloten API's naar geoptimaliseerde, zelfgehoste of serverloze open-source modellen. Reken de getallen zelf door met de [prijscalculator](https://launchstudio.eu/en/#calculator) of bekijk de [dienstenpakketten](https://launchstudio.eu/en/#packages) die gebouwd zijn voor precies dit soort infrastructuurmigraties.
+## Optimaliseer uw AI-infrastructuur en marges
 
-LaunchStudio is een initiatief mogelijk gemaakt door **[Manifera](https://www.manifera.com/about-us/)**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanwege het tekort aan ervaren ontwikkelaars in Europa richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent in te zetten voor dit soort GPU-infrastructuur en [offshore softwareontwikkeling](https://www.manifera.com/services/offshore-software-development/). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze enterprise-grade wereldwijde softwareontwikkelingsexpertise om hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
+Zorgen stijgende API-kosten voor druk op uw marges, of vereisen enterprise-klanten een afgeschermde private AI-omgeving? **LaunchStudio** helpt groeiende SaaS-bedrijven bij het berekenen van het omslagpunt en realiseert naadloze migraties naar kostenefficiënte open-source en hybride AI-architecturen. Bereken de kosten via onze [prijscalculator](https://launchstudio.eu/en/#calculator).
 
-## Echt Voorbeeld
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten voor internationale opdrachtgevers helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
-### Een AI-Native Oprichter in Actie: Een Zelfgehost Model Hosten voor een Medische Samenvatter
+## Echt voorbeeld
 
-James, oprichter van een medical-tech startup, gebruikte **Bolt** om een samenvatter voor patiëntdossiers te bouwen. Regelgeving voor de privacy van patiëntgegevens verbood het verzenden van documenten naar openbare API-endpoints, wat hem verhinderde om ook maar één kliniek aan te sluiten.
+### Een AI-native oprichter in actie: Een zelf-gehost model inzetten voor een medische samenvattingstool
 
-Hij werkte samen met **LaunchStudio (door Manifera)** om een zelfgehost Llama-3 model uit te rollen binnen een private cloud-VPC, met kwantisatie afgesteld om inferentie-kosten voorspelbaar te houden bij zijn geprojecteerde patiëntenvolume.
+James, een zorgtechnologie-oprichter, bouwde met **Bolt** een tool om patiëntendossiers samen te vatten. Privacyregels verboden het verzenden van medische data naar openbare externe API's, waardoor hij geen enkele kliniek kon aansluiten.
 
-**Resultaat:** Welgeslaagd voor medische data-audits en succesvol 5 klinieken aangesloten.
+Hij schakelde **LaunchStudio (door Manifera)** in om een zelf-gehost Llama-3 model te implementeren binnen een afgeschermde, AVG-conforme cloud-VPC met geoptimaliseerde kwantisatie.
 
-**Kosten en Tijdlijn:** € 4.500 (Self-Hosted LLM Setup Package) — klaar voor productie en geïmplementeerd binnen 10 werkdagen.
+**Resultaat:** Het platform doorstond alle medische privacy-audits glansrijk en sloot direct 5 regionale klinieken aan als klant.
+
+**Kosten & tijdlijn:** €4.500 (Self-Hosted LLM Setup Pakket) — productieklaar en binnen 10 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Is het hosten van een open-source model goedkoper dan het gebruik van OpenAI?
-Het hangt af van uw schaal. Bij weinig verkeer is OpenAI goedkoper omdat u alleen betaalt voor wat u gebruikt. Bij veel verkeer is het huren van een dedicated GPU-server voor open-source modellen aanzienlijk goedkoper dan het betalen van kosten per token.
+### Is het zelf hosten van een open-source model altijd goedkoper dan OpenAI?
 
-### 2. Op welk punt wordt open-source winstgevend?
-Wanneer uw maandelijkse OpenAI API-factuur de drempel van ongeveer $ 5.000-$ 10.000 per maand overschrijdt, beginnen de kosten voor het huren van uw eigen dedicated infrastructuur — inclusief de engineering-arbeid — financieel superieur te worden.
+Nee, alleen bij een constant hoog volume. Bij laag verbruik is een API goedkoper omdat u geen vaste serverhuur voor onbenutte GPU's betaalt.
 
-### 3. Zijn open-source modellen net zo slim als GPT-4?
-Voor brede, open redeneertaken winnen de nieuwste closed-source frontier-modellen doorgaans nog. Voor specifieke, afgebakende B2B-taken (zoals het extraheren van JSON of het classificeren van een support-ticket) presteert een gefine-tund open-source model identiek tegen een fractie van de kosten.
+### Wat is het financiële omslagpunt voor zelf-hosting?
 
-### 4. Wat is 'Serverloze GPU' hosting?
-Platforms zoals Together AI, Fireworks of Groq hosten open-source modellen voor u en rekenen af per token. Het geeft u de lage kosten van open-source zonder de massale vaste infrastructuurkosten en DevOps-last van het beheren van eigen AWS-servers.
+Wanneer uw maandelijkse API-rekening structureel boven de 5.000 tot 10.000 euro uitkomt, weegt de investering in eigen infrastructuur en onderhoud op tegen de tokenbesparingen.
 
-### 5. Kan LaunchStudio mij helpen bepalen welke modelstrategie past bij mijn SaaS?
-Ja. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering over 160+ projecten, auditeert uw werkelijke token-uitgaven en verkeerspatronen alvorens een besloten API, serverloze inference of zelfgehoste infrastructuur aan te bevelen.
+### Presteren open-source modellen net zo goed als commerciële frontier-modellen?
+
+Voor specifieke, afgebakende B2B-taken (zoals data-extractie, documentclassificatie of gestructureerde samenvattingen) presteert een gericht open-source model vrijwel identiek, tegen een fractie van de kosten.
+
+### Wat zijn serverless GPU inference providers?
+
+Diensten zoals Together AI en Groq die open-source modellen hosten op geoptimaliseerde hardware en afrekenen per token, waardoor u profiteert van lage tarieven zonder vaste serverkosten.
+
+### Hoe ondersteunt LaunchStudio bij de overstap naar open-source modellen?
+
+LaunchStudio en Manifera voeren kosten- en compliance-audits uit, selecteren de optimale modellen en richten private VPC-infrastructuur in binnen een gegarandeerde doorlooptijd van 1 tot 3 weken.
 
 <script type="application/ld+json">
 {
@@ -94,42 +99,42 @@ Ja. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-eng
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is het hosten van een open-source model goedkoper dan het gebruik van OpenAI?",
+      "name": "Is het zelf hosten van een open-source model altijd goedkoper dan OpenAI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bij weinig verkeer is OpenAI goedkoper (variabele kosten). Bij hoog verkeer worden vaste GPU-serverhuurkosten voor open-source modellen aanzienlijk voordeliger."
+        "text": "Nee, alleen bij hoge volumes; bij laag verkeer zijn vaste GPU-serverkosten duurder dan variabele API-aanroepen."
       }
     },
     {
       "@type": "Question",
-      "name": "Op welk punt wordt open-source winstgevend?",
+      "name": "Wat is het financiële omslagpunt voor zelf-hosting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wanneer uw maandelijkse API-rekening de $ 5.000 - $ 10.000 overschrijdt, begint eigen GPU-infrastructuur financieel aantrekkelijker te worden."
+        "text": "Vanaf circa 5.000 tot 10.000 euro per maand aan API-kosten wordt het huren van eigen dedicated GPU-infrastructuur voordeliger."
       }
     },
     {
       "@type": "Question",
-      "name": "Zijn open-source modellen net zo slim als GPT-4?",
+      "name": "Presteren open-source modellen net zo goed als commerciële frontier-modellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voor specifieke afgebakende B2B-taken kan een gefine-tund kleiner open-source model identiek presteren tegen een fractie van de tokenkosten."
+        "text": "Voor specifieke, gerichte B2B-taken presteren modellen zoals Llama 3 identiek aan grotere commerciële modellen tegen veel lagere kosten."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is 'Serverloze GPU' hosting?",
+      "name": "Wat zijn serverless GPU inference providers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hosting door providers zoals Together AI of Groq die open-source modellen aanbieden met goedkope tarieven per token zonder dat u eigen GPU-servers hoeft te beheren."
+        "text": "Platforms die open-source modellen hosten en per token afrekenen zonder vaste maandelijkse serverkosten."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio mij helpen bepalen welke modelstrategie past bij mijn SaaS?",
+      "name": "Hoe ondersteunt LaunchStudio bij de overstap naar open-source modellen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera auditeren uw verkeer en token-kosten om de optimale balans te adviseren tussen besloten API's, serverloze inference en private self-hosting."
+        "text": "Door kosten-batenanalyses uit te voeren, kwantisatie in te richten en private VPC-architecturen op te leveren binnen 1 tot 3 weken."
       }
     }
   ]

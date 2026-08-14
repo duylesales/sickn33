@@ -1,19 +1,19 @@
-🔒 Carter, een kliniekmanager, gebruikte **Bolt** om een planningstool voor artsen te bouwen — maar zorgpartners weigerden de app te gebruiken zonder SOC 2-compliancedocumentatie op zak. 🏥
+🔒 Carter, een kliniekmanager, bouwde een artsen-planningstool met **Bolt** — maar zorgpartners weigerden de software in gebruik te nemen zonder officiële SOC 2 nalevingsdocumentatie. 🏥
 
-Een SOC 2 Type II-rapport is geen "leuk om te hebben" voor AI-startups; het is het enige wat staat tussen u en een Fortune 500- of ziekenhuiscontract. 🧠
+Een SOC 2 Type II rapport is geen formaliteit voor AI-startups; het is het enige dat tussen u en een enterprise- of ziekenhuiscontract instaat. 🧠
 
-❌ Consumenten-API-sleutels van LLM's die prompts 30 dagen bewaren en kunnen gebruiken voor modeltraining
-❌ Geen onafhankelijk bewijs dat uw vectordatabase versleuteld, VPC-geïsoleerd en key-geroteerd is
-❌ Muteerbare logs die een beheerder stilletjes kan aanpassen om een fout te verhullen
+❌ Standaard consumenten API-sleutels die prompts 30 dagen opslaan en hergebruiken voor modeltraining
+❌ Geen onafhankelijk bewijs dat uw vectordatabase versleuteld en VPC-geïsoleerd is
+❌ Wijzigbare logs die een beheerder stiekem zou kunnen aanpassen om fouten te verhullen
 
-✅ Enterprise- of Zero Data Retention API-niveaus, onderbouwd met ondertekende DPA's bij OpenAI en Anthropic
-✅ AES-256-versleuteling in rust, TLS 1.3 tijdens transport en 90-daagse sleutelrotatie op elke vectorstore
-✅ Onveranderlijke, append-only Activity Logging naar S3 met Object Lock, minimaal 12 maanden bewaard
+✅ Enterprise Zero Data Retention API-contracten met getekende DPA's met OpenAI en Anthropic
+✅ AES-256 encryptie in rust, TLS 1.3 tijdens transport en 90-dagen sleutelrotatie op vectoropslag
+✅ Onveranderlijke (immutable) audit-logging via S3 Object Lock, minimaal 12 maanden bewaard
 
-Bij **LaunchStudio** bouwen we sinds 2014, via Manifera, exact dit soort auditeerbare, productierijpe infrastructuur — met 11+ jaar ervaring over 160+ opgeleverde projecten voor klanten zoals Vodafone en TNO. 🛡️
+Bij **LaunchStudio** ontwerpen we sinds 2014 auditeerbare enterprise-infrastructuren via Manifera, met meer dan 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO. 🛡️
 
-Carter doorstond zijn SOC 2-compliance-audit en sloot 3 nieuwe zorginstellingen aan. 🚀
+LaunchStudio configureerde AWS KMS kolom-encryptie en audit-logging — Carter slaagde voor de SOC 2 audit en sloot 3 nieuwe zorgklinieken aan. (€4.800 (Security Hardening Pakket) — productieklaar en binnen 12 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij u audit-klaar maken: [Link naar artikel]
+👉 Ontdek hoe u uw AI-startup audit-klaar maakt: [Link naar artikel]
 
-#AINativeFounder #LaunchStudio #Manifera #SOC2Compliance #AISecurity
+#AINativeFounder #LaunchStudio #Manifera #SOC2Compliance #AISecurity #HealthcareIT #AWSKMS #AuditTrail #AISaaS #StartupOpschalen

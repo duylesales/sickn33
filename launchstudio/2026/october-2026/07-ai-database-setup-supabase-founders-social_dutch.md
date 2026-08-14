@@ -1,19 +1,19 @@
-🔥 Jun Wei bouwde een prototype met **Cursor** — jun wei, a former teacher based in singapore, identified a gap in how local tutoring centers matched students with specialized tutors, maar ontdekte kritieke architectuur- en beveiligingsknelpunten vóór de lancering. 🧠
+🔥 Jun Wei bouwde een prototype met **Cursor** — als voormalig docent in Singapore zag hij een kans voor een platform om leerlingen te koppelen aan gespecialiseerde bijlesdocenten, maar ontdekte ernstige datalekken vóór de livegang. 🧠
 
-Als uw AI-prototype geen server-side invoer-sanering, database Row Level Security (RLS) of correcte deployment-configuratie heeft, zal live verkeer leiden tot storingen en beveiligingsrisico's.
+Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of degelijke deploymentconfiguratie heeft, veroorzaakt live verkeer direct crashes en beveiligingsrisico's.
 
-❌ Gehardcodeerde API-inloggegevens zichtbaar in client-side JavaScript of onversleutelde omgevingsbestanden
-❌ Ontbreken van Row Level Security (RLS) beleid op vector- en relationele databasetabellen
-❌ Onbehandelde API-fouten, race-condities of onbeperkte facturatie-lussen onder gelijktijdige belasting
+❌ Hardcoded Supabase `service_role` sleutels zichtbaar in de client-side code
+❌ Ontbrekende Row-Level Security (RLS) policies waardoor iedereen elkaars leerlinggegevens kon inzien
+❌ Directe client-side databasequeries en ontbrekende database-indexen bij toenemende belasting
 
-✅ Geheime sleutels verplaatsen naar server-side Edge Function-kluisjes met JWT-authenticatie
-✅ Afdwingen van PostgreSQL Row Level Security (RLS) regels voor volledige multi-tenant data-isolatie
-✅ Verharden van betalings-webhooks, rate limiting en deployment-infrastructuur voor hoge uptime
+✅ Geheime sleutels veilig verplaatst naar server-side routes met JWT-authenticatie
+✅ Strikte PostgreSQL Row-Level Security (RLS) policies voor volledige data-isolatie
+✅ Database-indexering, connection pooling en veilige Supabase-architectuur voor maximale schaalbaarheid
 
-Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Jun Wei's applicatie behaalde productie-gereedheid: The beta concluded successfully without any further data leaks or performance issues. Jun Wei's platform is now actively used by 12 tutoring centers across Singapore, handling over 5,000 student records securely. Cursor helped me build the vision, but I didn't know what I didn't know about database security. LaunchStudio bulletproofed the backend just in time. (€1,900 (Launch Ready package) — completed in 6 business days.). 🚀
+Jun Wei's platform wordt nu actief en veilig gebruikt door 12 instituten in Singapore voor meer dan 5.000 leerlingdossiers. (€1.900 (Launch Ready Pakket) — binnen 6 werkdagen productieklaar opgeleverd). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
 
-#LaunchStudio #Manifera #AISaaS #SupabaseSecuritySetu #TechFounders
+#LaunchStudio #Manifera #AISaaS #SupabaseSecurity #TechFounders #Cursor #DatabaseSecurity #PostgreSQL

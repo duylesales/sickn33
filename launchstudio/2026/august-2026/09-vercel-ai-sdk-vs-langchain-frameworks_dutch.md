@@ -1,151 +1,152 @@
 ---
-Titel: De Ultieme Gids om Sneller een Develop AI App te Maken
-Trefwoorden: AI om te coderen, Vercel, AI, SDK, LangChain, Kiezen, Rechts, Framework, Startup
-Koperfase: overweging
+Titel: "Vercel AI SDK vs LangChain: Het Juiste AI-Framework Kiezen"
+Trefwoorden: AI code tool, AI-app ontwikkeling, AI-app bouwen, AI coding, dev AI, AI development, AI frontend, coderen met AI, LaunchStudio, Manifera
+Koperfase: Overweging
 ---
 
-# De Ultieme Gids om Sneller een Develop AI App te Maken
-Als u probeert een AI-toepassing te bouwen door handmatig ophaalverzoeken naar de OpenAI API te schrijven en aangepaste logica te schrijven om streaminggegevensblokken te verwerken, verspilt u weken aan engineeringtijd. Het ecosysteem is gestandaardiseerd rond orkestratiekaders die de complexiteit wegnemen. In 2026 zijn de twee dominante krachten de Vercel AI SDK en LangChain. Als u de verkeerde kiest, wordt uw ontwikkelingssnelheid verlamd.
+# Vercel AI SDK vs LangChain: Het Juiste AI-Framework Kiezen
 
-## Het pleidooi voor Vercel AI SDK (de frontendkoning)
+Wanneer u een AI-applicatie probeert te bouwen door handmatig ruwe fetch-verzoeken naar de OpenAI-API te schrijven en zelf logica te coderen om streaming data-chunks te parsen, verspilt u weken aan kostbare engineeringtijd. U vindt dan immers het wiel opnieuw uit voor infrastructuur die al lang bestaat en in productie is beproefd. Het AI-ecosysteem heeft zich gestandaardiseerd rondom orkestratieframeworks die deze complexiteit volledig wegnemen. In 2026 zijn de twee dominante keuzes de Vercel AI SDK en LangChain. Beide frameworks lossen echter fundamenteel verschillende problemen op — het kiezen van het verkeerde framework voor uw specifieke productvorm vertraagt uw ontwikkelsnelheid aanzienlijk en zorgt ervoor dat u vecht tegen het framework in plaats van bouwt aan uw product.
 
-De Vercel AI SDK is gebouwd met één primair doel: het creëren van onberispelijke gebruikersinterfaces in de browser. Het is diep geïntegreerd met React, Next. js en andere moderne frontend-frameworks.
+## De kracht van Vercel AI SDK (De Frontend Specialist)
 
-**Sterke punten:**
-
-- **State Management Magic**: de `useChat` en `useCompletion` hooks verwerken automatisch de immense complexiteit van het opslaan van berichtgeschiedenis en het bijwerken van de gebruikersinterface terwijl tokens binnenstromen. Wat 200 regels aangepaste React-code kost, kost 3 regels met de SDK.
-
-- **Generatieve UI**: dit is de absolute standaard voor Generatieve UI (RSC). Als u wilt dat uw AI interactieve React-componenten (zoals een speelbaar schaakbord of een financiële grafiek) streamt in plaats van alleen tekst, is de Vercel SDK de enige haalbare keuze.
-
-- **Provider-agnosticisme**: overstappen van OpenAI naar Anthropic vereist het wijzigen van precies één regel code.
-
-**Uitspraak**: Als u een SaaS bouwt waarbij de primaire waarde een mooie, interactieve webinterface is (zoals een copywritingtool of een interactief dashboard), gebruik dan de Vercel AI SDK.
-
-## De zaak voor LangChain (de backend-architect)
-
-LangChain (beschikbaar in Python en JS) maakt zich weinig zorgen over hoe dingen er op het scherm uitzien. Het is een orkestratie-engine die is ontworpen om autonome agenten en complexe datapijplijnen te bouwen.
+De Vercel AI SDK is ontworpen met één primair doel: het creëren van vlekkeloze, responsieve gebruikersinterfaces in de browser voor AI-gedreven producten. Het framework is diep en native geïntegreerd met React, Next.js, Svelte en Vue. Hierbij wordt de frontend-streamingervaring behandeld als een eersteklas prioriteit in plaats van een bijzaak.
 
 **Sterke punten:**
 
-- **Tools en agenten**: als je een AI de mogelijkheid wilt geven om autonoom op Google te zoeken, een privé SQL-database te doorzoeken, Python-code uit te voeren en naar een Notion-document te schrijven, biedt LangChain de vooraf gebouwde "tools" en "agentic loops" om dit kant-en-klaar te doen.
+- **Moeiteloos State-Management**: De ingebouwde `useChat`- en `useCompletion`-hooks beheren automatisch de complexe chathistorie, optimistische UI-updates en het real-time opnieuw renderen van tekstblokken terwijl tokens binnenstromen. Wat voorheen meer dan 200 regels complexe React-code vereiste (handmatig parsen van `EventSource` of `ReadableStream`, bufferen van partiële JSON en herverbindingslogica), regelt u nu met 3 regels code.
 
-- **RAG Mastery**: LangChain blinkt uit in Retrieval-Augmented Generation. Het heeft honderden integraties om gegevens overal vandaan op te nemen (PDF's, Confluence, Jira), deze te splitsen, in te sluiten en moeiteloos op te slaan in vectordatabases.
+- **Generative UI**: Het is de de facto industriestandaard voor Generative UI op basis van React Server Components. Wilt u dat uw AI direct interactieve React-componenten streamt — zoals een functioneel schaakbord, een interactieve financiële grafiek of een reserveringsmodule — in plaats van louter platte tekst, dan is de `streamUI`- en tool-calling functionaliteit van de Vercel AI SDK de meest volwassen productieroute.
 
-- **Geheugensystemen**: het biedt complex geheugenbeheer, waardoor agenten feiten tijdens langlopende sessies kunnen onthouden, in tegenstelling tot het staatloze karakter van standaard API-aanroepen.
+- **Provider-Onafhankelijk**: Overschakelen van OpenAI naar Anthropic, of het toevoegen van een fallback-provider, vereist doorgaans slechts het aanpassen van één import en een model-identificatiestring, omdat de SDK alle afwijkende API-structuren normaliseert achter een uniforme interface.
 
-**Uitspraak**: Als u een autonome agent bouwt die zware backend-werkzaamheden uitvoert (bijvoorbeeld "Onderzoek deze 50 bedrijven en een spreadsheet bouwt"), of een complexe RAG-applicatie over enorme datasets, gebruik dan LangChain.
+**Conclusie**: Bouwt u een SaaS waarbij de primaire waarde voor de gebruiker zit in een soepele, interactieve webinterface (zoals een copywritingtool, een dashboard of een chatassistent), kies dan de Vercel AI SDK als uw standaard startpunt.
 
-## De complexiteitsval
+## De kracht van LangChain (De Backend Architect)
 
-Een veel voorkomende fout die oprichters maken, is dat ze standaard gebruik maken van LangChain voor een eenvoudige toepassing. LangChain is notoir complex en zeer eigenwijs. Als u een eenvoudige 'Cover Letter Generator' bouwt, zal de introductie van LangChain uw ontwikkeling drastisch vertragen en code creëren die moeilijk te debuggen is. Voor eenvoudige input-output-wrappers is de Vercel AI SDK (of zelfs de native OpenAI SDK) enorm superieur.
+LangChain (beschikbaar in Python en JavaScript, waarbij het Python-ecosysteem aanzienlijk volwassener is) richt zich nauwelijks op hoe elementen er visueel uitzien. Het is een zware orkestratie-engine die is ontworpen voor het bouwen van autonome agents en complexe, meerstaps datapijplijnen die soms niet eens een browser raken.
 
-## De hybride aanpak
+**Sterke punten:**
 
-Bij AI-startups op ondernemingsniveau is het antwoord vaak 'beide'.
+- **Tools en Autonome Agents**: Wilt u een AI de bevoegdheid geven om autonoom het web te doorzoeken, een private SQL-database te bevragen, Python-code uit te voeren in een sandbox en het eindresultaat weg te schrijven in een Notion-document — allemaal binnen één enkele redeneerlus waarin het model zelf bepaalt welke tool wanneer nodig is? LangChain (en de stateful agent-extensie LangGraph) biedt kant-en-klare abstracties om dit zonder handmatige orkestratielussen op te zetten.
 
-Een typische stapel in 2026 omvat een Python-backend (FastAPI) die **LangChain** gebruikt om complexe RAG-ophaalacties, agentische logica en databasequery's af te handelen. Zodra de backend het definitieve antwoord heeft samengesteld, geeft deze dit door aan een Next. js frontend, waar de **Vercel AI SDK** de gegevens veilig naar de browser van de gebruiker streamt en weergeeft als interactieve componenten.
+- **RAG-Infrastructuur**: LangChain blinkt uit in Retrieval-Augmented Generation. Het beschikt over honderden kant-en-klare connectoren om data in te laden vanuit PDF's, Confluence, Jira, Notion of externe websites, deze automatisch op te knippen (chunking), embeddings te genereren en op te slaan in vectordatabases zoals Pinecone, Weaviate of Supabase `pgvector`.
+
+- **Geheugensystemen (Memory)**: Het biedt geavanceerde geheugenprimitieven waarmee agents feiten en context kunnen onthouden over langdurige, multi-sessie interacties heen.
+
+**Conclusie**: Bouwt u een autonome agent die zware backend-taken uitvoert of een complexe RAG-applicatie over omvangrijke, heterogene datasets, dan besparen de abstracties van LangChain u aanzienlijke engineeringtijd.
+
+## De complexiteitsvalkuil
+
+Een veelgemaakte fout van oprichters is het automatisch kiezen voor LangChain voor eenvoudige applicaties, puur omdat het framework de meeste tutorials en de grootste bekendheid heeft. LangChain is echter berucht om zijn diepe abstractielagen en dwingende meningen over codestructuur. Bouwt u een eenvoudige "Sollicitatiebrief-generator" die een vacaturetekst en een cv omzet in tekst, dan vertraagt LangChain uw ontwikkeling enorm en maakt het de code onnodig moeilijk te debuggen. Voor eenvoudige invoer-uitvoer wrappers is de Vercel AI SDK — of zelfs de directe officiële OpenAI/Anthropic SDK — vele malen sneller en onderhoudsvriendelijker.
+
+Bovendien veranderen de abstracties van LangChain snel, waardoor oudere interfaces regelmatig breken tussen versies. Weeg die onderhoudslast zorgvuldig af tegen wat u daadwerkelijk bouwt.
+
+## De hybride architectuur
+
+In professionele enterprise-startups is het eerlijke antwoord vaak: "Gebruik beide frameworks op verschillende lagen van dezelfde applicatie."
+
+Een beproefde architectuur in 2026 bestaat uit een Python-backend (bijvoorbeeld met FastAPI) die **LangChain** of **LangGraph** gebruikt voor complexe RAG-retrieval, agent-redeneringen en database-orkestratie. Zodra de backend het antwoord compileert, wordt dit doorgestuurd naar een Next.js-frontend waar de **Vercel AI SDK** zorgt voor veilige streaming naar de browser en het renderen van interactieve UI-componenten. Het bepalen van deze scheidslijn vereist diepgaande engineering-ervaring. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, stelt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
 
 ## Belangrijkste inzichten
 
-- Het gebruik van orkestratieframeworks bespaart weken ontwikkelingstijd door de complexiteit van het streamen van gegevens en statusbeheer te abstraheren.
+- Het gebruik van orkestratieframeworks bespaart weken aan ontwikkeltijd door de complexiteit van streaming data-parsing en conversational state-management weg te nemen.
 
-- De Vercel AI SDK is de beste keuze voor frontend-zware webapplicaties en biedt naadloze React-integratie en generatieve UI-mogelijkheden.
+- De Vercel AI SDK is de beste keuze voor frontend-gerichte webapplicaties dankzij native React/Next.js integratie en Generative UI-mogelijkheden.
 
-- LangChain is de beste keuze voor backend-zware logica, complexe RAG-pijplijnen en het bouwen van autonome agenten die externe tools moeten gebruiken.
+- LangChain (en LangGraph) is optimaal voor zware backend-logica, autonome agents en complexe RAG-datapijplijnen over grote datasets.
 
-- Vermijd LangChain als u een eenvoudige wrapper bouwt; de hoge complexiteit ervan zal uw ontwikkeling onnodig vertragen.
+- Vermijd LangChain voor eenvoudige wrappers; de vele abstractielagen vertragen uw ontwikkeling en maken debuggen onnodig complex.
 
-- Enterprise-apps gebruiken vaak beide: LangChain op de backend voor logica, en Vercel AI SDK op de frontend voor het weergeven van de gebruikersinterface.
+- Enterprise-applicaties combineren vaak beide: LangChain op de Python-backend voor redeneerlogica en Vercel AI SDK op de Next.js-frontend voor vloeiende UI-streaming.
 
-## Kies de juiste architectuur
+Manifera maakt dit type strategische framework- en architectuurkeuzes sinds **2014**, vanuit haar ontwikkelcentrum in Ho Chi Minh-stad en het hoofdkantoor aan de Herengracht 420 in Amsterdam, verspreid over meer dan 160 opgeleverde softwareprojecten.
 
-Het verkeerde raamwerk zal uw ontwikkelingssnelheid verlammen. **LaunchStudio** evalueert uw specifieke productvereisten en implementeert de optimale AI-stack, of dat nu de UI-magie van Vercel of de backend-kracht van LangChain vereist.
+## Kies de juiste architectuur voor uw product
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’ exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
+Een verkeerde framework-keuze kan uw ontwikkelsnelheid verlammen en dwingt u vaak om na zes maanden uw complete backend opnieuw te bouwen. **LaunchStudio** evalueert uw specifieke producteisen en implementeert de optimale AI-stack — of dat nu Vercel UI-streaming, LangChain backend-orkestratie of een hybride combinatie betreft — zonder uw bestaande frontend-ontwerp weg te gooien.
+
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren ontwikkelaars in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: een Slack Support Bot herstructureren naar de Vercel AI SDK
+### Een AI-native oprichter in actie: een Slack-supportbot refactoren naar Vercel AI SDK
 
-Chloe, hoofd van de klantenondersteuning, gebruikte **Cursor** om een AI-ticketclassificator te bouwen. Door LangChain in de browser te gebruiken, werd de bundel groter, wat een initiële laadvertraging van 5 seconden veroorzaakte.
+Chloe, een customer support lead, gebruikte **Cursor** om een AI-ticketclassifier te bouwen. Door LangChain direct in de browser te draaien, zwol de JavaScript-bundel enorm op, wat resulteerde in een initiële laadvertraging van 5 seconden.
 
-Ze werkte met **LaunchStudio (door Manifera)**. Het team heeft de applicatie opnieuw ontworpen om de lichtgewicht Vercel AI SDK te gebruiken en de agentlogica naar de server verplaatst.
+Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam herstructureerde de applicatie naar de lichtgewicht Vercel AI SDK en verplaatste de zwaardere agent-logica naar de server.
 
-**Resultaat:** De laadtijd van de pagina daalde naar 0,8 seconde en de JavaScript-bundelgrootte werd met 70% teruggebracht.
+**Resultaat:** De paginalaadtijd daalde van 5,0s naar 0,8s en de omvang van de JavaScript-bundel werd met 70% gereduceerd.
 
-**Kosten en tijdlijn:** € 2.200 (Framework Migration Package) — klaar voor productie en geïmplementeerd binnen 5 werkdagen.
-
----
+**Kosten & tijdlijn:** €2.200 (Framework Migration Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-## Veelgestelde vragen
+### Wanneer moet ik de Vercel AI SDK kiezen?
 
-### Wanneer moet ik de Vercel AI SDK gebruiken?
+Kies de Vercel AI SDK als u een webapplicatie bouwt in React, Next.js, Svelte of Vue. Het biedt gespecialiseerde hooks die de complexe state voor het streamen van tekst en Generative UI-componenten in de browser moeiteloos beheren met minimale code.
 
-Gebruik het als u een webapplicatie bouwt met React of Next. js. Het biedt gespecialiseerde hooks die perfect de complexe status beheren die nodig is om streaming tekst of generatieve UI-componenten in de browser weer te geven.
+### Wanneer is LangChain de betere keuze?
 
-### Wanneer moet ik LangChain gebruiken?
+Kies LangChain (of LangGraph) wanneer u complexe backend-logica, autonome agents of omvangrijke RAG-datapijplijnen ontwikkelt waarbij het model zelfstandig meerdere tools (zoals zoekmachines en SQL-databases) moet aanroepen.
 
-Gebruik het als u complexe backend-logica, autonome agenten of enorme datapijplijnen bouwt. Het blinkt uit wanneer een AI meerdere tools (zoals internetzoekopdrachten en databasequery's) in één lus moet gebruiken.
+### Is LangChain te zwaar voor een eenvoudige AI-wrapper?
 
-### Is LangChain te opgeblazen voor een simpele verpakking?
+Ja, in de meeste gevallen wel. Als uw app simpelweg een prompt ontvangt, een instructie toevoegt en tekst retourneert, introduceert LangChain onnodige abstractielagen en extra debug-complexiteit. Gebruik voor eenvoudige wrappers de Vercel AI SDK of de directe provider-API.
 
-Ja. Als uw app eenvoudigweg een prompt vraagt, een systeeminstructie toevoegt en tekst retourneert, introduceert LangChain onnodige complexiteit. Vertrouw puur op de Vercel AI SDK voor eenvoudige wrappers.
+### Kan ik de Vercel AI SDK en LangChain samen gebruiken?
 
-### Kan ik ze allebei samen gebruiken?
+Ja, dit is een veelvoorkomende enterprise-architectuur. U gebruikt LangChain of LangGraph op een Python-backend voor complexe redeneringen en data-ingestie, en de Vercel AI SDK op de Next.js-frontend om de output vloeiend naar de gebruiker te streamen.
 
-Ja. U kunt LangChain op uw Python-backend gebruiken om complexe redeneringen te orkestreren, en de Vercel AI SDK op uw Next. js-frontend gebruiken om de uiteindelijke uitvoer veilig naar de browser van de gebruiker te streamen.
+### Ondersteunt LaunchStudio zowel de Vercel AI SDK als LangChain-architecturen?
 
-### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
-
-LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+Ja. LaunchStudio en Manifera ondersteunen het volledige spectrum aan frameworks — van lichte Vercel AI SDK wrappers tot geavanceerde LangChain/LangGraph agent-architecturen — afgestemd op wat uw product technisch vereist.
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema. org",
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wanneer moet ik de Vercel AI SDK gebruiken?",
+      "name": "Wanneer moet ik de Vercel AI SDK kiezen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gebruik het als u een webapplicatie bouwt met React of Next. js. Het biedt gespecialiseerde hooks die perfect de complexe status beheren die nodig is om streaming tekst of generatieve UI-componenten in de browser weer te geven."
+        "text": "Kies de Vercel AI SDK voor webapplicaties in React en Next.js om streaming tekst en Generative UI-componenten in de browser naadloos te beheren met minimale code."
       }
     },
     {
       "@type": "Question",
-      "name": "Wanneer moet ik LangChain gebruiken?",
+      "name": "Wanneer is LangChain de betere keuze?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gebruik het als u complexe backend-logica, autonome agenten of enorme datapijplijnen bouwt. Het blinkt uit wanneer een AI meerdere tools (zoals internetzoekopdrachten en databasequery's) in één lus moet gebruiken."
+        "text": "Kies LangChain voor complexe backend-agents en geavanceerde RAG-pijplijnen waarbij de AI zelfstandig externe tools zoals databases en zoekmachines moet orkestreren."
       }
     },
     {
       "@type": "Question",
-      "name": "Is LangChain te opgeblazen voor een simpele verpakking?",
+      "name": "Is LangChain te zwaar voor een eenvoudige AI-wrapper?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Als uw app eenvoudigweg een prompt vraagt, een systeeminstructie toevoegt en tekst retourneert, introduceert LangChain onnodige complexiteit. Vertrouw puur op de Vercel AI SDK voor eenvoudige wrappers."
+        "text": "Ja. Voor eenvoudige invoer-uitvoer wrappers voegt LangChain onnodige abstracties toe. De Vercel AI SDK of directe API-calls zijn sneller en veel eenvoudiger te onderhouden."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik ze allebei samen gebruiken?",
+      "name": "Kan ik de Vercel AI SDK en LangChain samen gebruiken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. U kunt LangChain op uw Python-backend gebruiken om complexe redeneringen te orkestreren, en de Vercel AI SDK op uw Next. js-frontend gebruiken om de uiteindelijke uitvoer veilig naar de browser van de gebruiker te streamen."
+        "text": "Ja. Veel enterprise-apps gebruiken LangChain op een Python-backend voor redeneerlogica en de Vercel AI SDK op de Next.js-frontend voor vloeiende UI-streaming."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "name": "Ondersteunt LaunchStudio zowel de Vercel AI SDK als LangChain-architecturen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+        "text": "Ja. LaunchStudio en Manifera bouwen en optimaliseren zowel frontend Vercel AI SDK implementaties als complexe LangChain/LangGraph backend-systemen."
       }
     }
   ]

@@ -1,19 +1,19 @@
-🔥 Noor bouwde een prototype met **Cursor** — noor, a mental health coach based in rotterdam, developed a journaling and habit-tracking app using **cursor** to share with her private clients, maar ontdekte kritieke architectuur- en beveiligingsknelpunten vóór de lancering. 🧠
+🔥 Noor bouwde een prototype met **Cursor** — als mental health coach in Rotterdam ontwikkelde ze een journaling- en habit-tracking app voor haar cliënten, maar ontdekte ernstige authenticatielekken vóór de livegang. 🧠
 
-Als uw AI-prototype geen server-side invoer-sanering, database Row Level Security (RLS) of correcte deployment-configuratie heeft, zal live verkeer leiden tot storingen en beveiligingsrisico's.
+Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of degelijke deploymentconfiguratie heeft, veroorzaakt live verkeer direct crashes en beveiligingsrisico's.
 
-❌ Gehardcodeerde API-inloggegevens zichtbaar in client-side JavaScript of onversleutelde omgevingsbestanden
-❌ Ontbreken van Row Level Security (RLS) beleid op vector- en relationele databasetabellen
-❌ Onbehandelde API-fouten, race-condities of onbeperkte facturatie-lussen onder gelijktijdige belasting
+❌ Sessietokens opgeslagen in onbeveiligde `localStorage` kwetsbaar voor XSS-diefstal
+❌ Schijnbeveiliging met alleen visuele frontend-checks zonder server-side route-afscherming
+❌ Ontbrekende sessie-intrekking en onveilige wachtwoordherstelstromen
 
-✅ Geheime sleutels verplaatsen naar server-side Edge Function-kluisjes met JWT-authenticatie
-✅ Afdwingen van PostgreSQL Row Level Security (RLS) regels voor volledige multi-tenant data-isolatie
-✅ Verharden van betalings-webhooks, rate limiting en deployment-infrastructuur voor hoge uptime
+✅ Verplaatsing van tokens naar `httpOnly`, `Secure` cookies met JWT-verificatie op alle API-routes
+✅ Strikte PostgreSQL Row-Level Security (RLS) policies voor veilige isolatie van gevoelige gezondheidsdata
+✅ Veilige wachtwoordherstel-workflows en sessiebeheer via Supabase Auth
 
-Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Noor's applicatie behaalde productie-gereedheid: The data leak was plugged permanently. Noor's clients can now use the app with complete confidence in their privacy. The frontend UI remains exactly as Noor designed it, but the underlying engine is now secure enough for sensitive health data. I thought a login screen meant the app was secure. LaunchStudio showed me the difference between a locked door and a picture of a locked door. (€950 (Security Hardening module) — completed in 4 business days.). 🚀
+Noor's cliënten gebruiken de app nu in alle privacy en vertrouwen, terwijl haar in Cursor ontworpen frontend 100% behouden bleef. (€950 (Security Hardening Module) — binnen 4 werkdagen opgeleverd). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
 
-#LaunchStudio #Manifera #AISaaS #SecuringAuthenticati #TechFounders
+#LaunchStudio #Manifera #AISaaS #AuthSecurity #TechFounders #Cursor #SupabaseAuth #PrivacyBeveiliging

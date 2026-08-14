@@ -1,97 +1,163 @@
 ---
-Titel: "2027 Voorspellingen: Waar Elke AI-native Founder Zich op Moet Voorbereiden"
-Trefwoorden: AI-native, AI-ontwikkeling, AI en softwareontwikkeling, AI SaaS, LaunchStudio, Manifera
+Titel: "Voorspellingen voor 2027: Waarop Elke AI-Oprichter Zich Moet Voorbereiden"
+Trefwoorden: ai native, ai development, ai and software development, ai saas, LaunchStudio, Manifera
 Koperfase: Bewustzijn
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# 2027 Voorspellingen: Waar Elke AI-native Founder Zich op Moet Voorbereiden
+# Voorspellingen voor 2027: Waarop Elke AI-Oprichter Zich Moet Voorbereiden
 
-Voorspellingsartikelen zijn meestal speculatief vermaak. Dit richt zich op iets nuttigers: vijf onderbouwde voorspellingen, elk gekoppeld aan een concrete, uitvoerbare voorbereidingsstap — geen speculatie omwille van speculatie, maar toekomstgerichte begeleiding waar een founder daadwerkelijk naar kan handelen richting 2027.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Voorspellingen voor 2027: Waarop Elke AI-Oprichter Zich Moet Voorbereiden",
+  "description": "Vijf gegronde voorspellingen voor AI-oprichters op weg naar 2027, gekoppeld aan concrete actiepunten om uw SaaS-bedrijf toekomstbestendig en winstgevend te maken.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/2027-predictions-ai-native-founder-prepare"
+  }
+}
+</script>
 
-## Voorspelling 1: De Prototype-naar-Productie-kloof Zal Zichzelf Niet Vanzelf Sluiten
+Artikelen met voorspellingen zijn vaak speculatief entertainment. Dit overzicht richt zich op iets dat oneindig veel nuttiger is: vijf nuchtere, feitelijke voorspellingen die elk direct gekoppeld zijn aan een concrete actie — zodat u als ondernemer in 2027 een solide voorsprong opbouwt.
 
-AI-codeertools blijven verbeteren in het genereren van indrukwekkende prototypes. Het is onwaarschijnlijk dat ze de laatste-stukje-kloof volledig sluiten — beveiliging, betalingen, productie-infrastructuur — omdat die kloof een oprechte scheiding van engineeringdiscipline weerspiegelt, geen tijdelijke tool-beperking. **Bereid je voor door:** productie-infrastructuur te budgetteren als een echt, apart lijnitem van je AI-tool-abonnement, in plaats van aan te nemen dat toekomstige tool-updates het onnodig zullen maken.
+## Voorspelling 1: De Kloof Tussen Prototype en Productie Sluit Zich Niet Vanzelf
 
-## Voorspelling 2: Differentiatie Zal Verschuiven van "Heeft AI" naar "AI Betrouwbaar Gedaan"
+AI-codeertools worden steeds beter in het genereren van visuele demo's. Ze zullen de 'last mile' — beveiliging, data-isolatie, betalingen en cloudinfrastructuur — echter niet zomaar oplossen, omdat dit een fundamentele software-discipline betreft en geen tijdelijk tool-gebrek.  
+**Uw voorbereiding:** Reserveer een echt budget voor backend-engineering naast uw maandelijkse AI-abonnementen, in plaats van te wachten tot een AI-tool dit ooit 'gratis' oplost.
 
-Naarmate elke concurrent in elke categorie AI-functies toevoegt, stopt het hebben van AI met differentiëren op zichzelf. Wat zal differentiëren is betrouwbaarheid, beveiliging, en vertrouwen — de "saaie" productiekwaliteiten uitgebreid behandeld doorheen deze contentserie. **Bereid je voor door:** nu te investeren in productiegereedheid, voordat het een gegeven wordt dat je concurrenten al hebben aangepakt.
+## Voorspelling 2: Onderscheidend Vermogen Verschuift van "Heeft AI" naar "Betrouwbare AI"
 
-## Voorspelling 3: Regelgevende Controle van AI-gegevensverwerking Zal Toenemen, Niet Afnemen
+Nu vrijwel elke app AI-functies toevoegt, is het loutere bezit van AI geen verkoopargument meer. Wat in 2027 écht converteert is stabiliteit, voorspelbare uptime en privacy — de 'saaie' productiekwaliteiten waar klanten blind op kunnen vertrouwen.  
+**Uw voorbereiding:** Investeer nu in productie-stabiliteit en snelle laadtijden vóórdat uw concurrenten hun beveiliging op orde hebben.
 
-Zowel EU-specifieke regelgeving als algemene klantverwachting rond AI-gegevensverwerking neigen richting meer controle, niet minder, zoals behandeld in eerdere AVG- en concurrentievoordeel-richtlijnen. **Bereid je voor door:** compliance nu als standaard in te bouwen, terwijl het nog een onderscheidingsfactor is, in plaats van te haasten om het achteraf aan te passen zodra het een basisverwachting wordt die iedereen al heeft bereikt.
+## Voorspelling 3: Toezicht op AI-Data en Privacy Wordt Strenger, Niet Soepeler
 
-## Voorspelling 4: AI-providerkosten en -mogelijkheden Zullen Onvoorspelbaar Blijven Verschuiven
+Zowel Europese toezichthouders (AVG/EU AI Act) als zakelijke inkopers eisen steeds meer transparantie over waar data wordt opgeslagen en hoe AI-modellen worden aangeroepen.  
+**Uw voorbereiding:** Bouw privacy en Europese dataopslag direct in als standaard ontwerpprincipe, zodat compliance uw grootste verkoopwapen wordt.
 
-Modelreleases, prijswijzigingen, en deprecaties blijven doorgaan in een tempo sneller dan traditionele softwareplanningscycli, zoals behandeld in eerdere roadmapping- en deprecatie-richtlijnen. **Bereid je voor door:** de architecturale flexibiliteit (abstractielagen, modelagnostisch ontwerp) te bouwen die je toelaat te profiteren van deze verschuivingen in plaats van erdoor verstoord te worden.
+## Voorspelling 4: AI-Prijzen en Modellen Blijven Onvoorspelbaar Schommelen
 
-## Voorspelling 5: De Founders Die Winnen Zullen Degenen Zijn Die Daadwerkelijk Lanceren
+Nieuwe modellen, prijswijzigingen en het uitfaseren van oude API's gaan in een tempo dat traditionele softwarecycli overstijgt.  
+**Uw voorbereiding:** Zorg voor een model-agnostische architectuur met abstractielagen, zodat u binnen één middag kunt overstappen naar een snellere of goedkopere AI-provider.
 
-Dit is de minst opvallende voorspelling en mogelijk de belangrijkste: over elke categorie heen zullen de AI-native founders die duurzame bedrijven bouwen in 2027 onevenredig degenen zijn die daadwerkelijk lanceerden — zelfs onvolmaakt — in plaats van degenen die eindeloos een prototype bleven polijsten, zoals behandeld in eerdere richtlijnen over de kosten van niet lanceren. **Bereid je voor door:** "gelanceerd en lerend van echte klanten" te behandelen als een hogere prioriteit dan "prototype dat eindelijk perfect is."
+## Voorspelling 5: De Oprichters Die Winnen Zijn Degenen Die Daadwerkelijk Lanceren
 
-## De Gemeenschappelijke Draad Doorheen Alle Vijf Voorspellingen
+Dit is de minst flitsende voorspelling, maar veruit de belangrijkste: de AI-oprichters die in 2027 een bloeiend bedrijf opbouwen, zijn stelselmatig degenen die daadwerkelijk live zijn gegaan met echte betalende klanten — in plaats van degenen die een prototype eindeloos bleven perfectioneren.  
+**Uw voorbereiding:** Maak "live gaan en leren van echte klanten" uw allerhoogste prioriteit boven "een prototype dat 100% perfect is".
 
-Elke voorspelling wijst naar dezelfde onderliggende voorbereiding: de kloof sluiten tussen je AI-gegenereerde prototype en een oprecht productieklaar product, eerder dan later. Dit is precies het werk dat [LaunchStudio](https://launchstudio.eu/en/) doet, gesteund door Manifera's 11+ jaar engineeringervaring over kantoren in Amsterdam, Singapore, en Ho Chi Minh-stad, en het is de enkele hoogst-hefboom voorbereiding beschikbaar voor elke AI-native founder richting 2027, ongeacht welke specifieke voorspelling het meest gevolgrijk blijkt voor hun specifieke markt.
+## De Rode Draad Door Alle Vijf Voorspellingen
 
-[Bereid je voor op 2027 door te lanceren voordat het begint](https://launchstudio.eu/en/#calculator) — de founders het best gepositioneerd voor wat er ook komt, zijn degenen die al opereren met echte klanten en echte omzet.
+Elke voorspelling wijst naar exact dezelfde actie: dicht de kloof tussen uw AI-prototype en een robuust productieproduct zo snel mogelijk. Dit is exact het werk dat [LaunchStudio](https://launchstudio.eu/en/) levert, gesteund door Manifera's 11+ jaar ervaring en 120+ engineers verspreid over Amsterdam, Singapore en Ho Chi Minh City.
 
-## Een Concrete 2027-Gereedheidszelfbeoordeling
+[Bereid u voor op 2027 door direct te lanceren](https://launchstudio.eu/en/#calculator) — de best gepositioneerde ondernemers zijn zij die vandaag al echte omzet draaien.
 
-Vijf voorspellingen en hun bijbehorende voorbereidingsstappen lezen is nuttig in het abstracte; dat omzetten in een eerlijk gevoel voor je eigen specifieke gereedheid vereist dat je jezelf daadwerkelijk scoort tegen elk ervan, in plaats van instemmend te knikken en verder te gaan zonder een concrete volgende actie.
+## Een Concrete Zelfevaluatie voor 2027
 
-**Score jezelf eerlijk, één punt elk, op het volgende:**
-1. **Productie-infrastructuur-lijnitem** — heb je een daadwerkelijk budget, niet slechts een aspiratie, toegewezen aan beveiliging, hosting, en betalingen apart van je AI-tool-abonnementskosten?
-2. **Betrouwbaarheid boven noviteit** — als een concurrent morgen een AI-functie identiek aan de jouwe lanceerde, zou jouw product dan nog steeds winnen op betrouwbaarheid en vertrouwen, of rust zijn aantrekkingskracht voornamelijk op het als eerste hebben van de functie?
-3. **Compliance ingebouwd, niet vastgeplakt** — zou je vandaag de specifieke gegevensverwerkingsvraag van een klant zelfverzekerd en specifiek kunnen beantwoorden, of zou je moeten "terugkomen"?
-4. **Architecturale flexibiliteit** — als je huidige AI-provider morgen de prijzen significant wijzigde of je model uitfaseerde, hoeveel dagen werk zou overstappen naar een andere provider realistisch kosten?
-5. **Daadwerkelijk gelanceerd** — is je product live, met echte betalende klanten vandaag, of zit het nog steeds in de "bijna klaar"-status waarin het de afgelopen maanden zat?
+Geef uzelf eerlijk 1 punt voor elk van de volgende 5 stellingen:
 
-**Wat je score suggereert:**
-- **4-5:** je staat oprecht goed gepositioneerd richting 2027 ten opzichte van de meeste AI-native founders in een vergelijkbaar stadium — het resterende werk is verfijning, geen fundamentele inhaalslag.
-- **2-3:** je hebt echte gaten, maar ze zijn identificeerbaar en aanpakbaar in plaats van een fundamentele herziening te vereisen — prioriteer welk gescoord item ook het grootste specifieke risico voor jouw specifieke bedrijfsmodel vertegenwoordigt, als eerste.
-- **0-1:** de kloof tussen je huidige staat en productiegereedheid is het enkele hoogst-hefboom-item om aan te pakken vóór al het andere op je roadmap, aangezien elke andere 2027-voorspelling hierboven een baseline van productiegereedheid aanneemt die deze score suggereert nog niet is bereikt.
+1. **Aparte post voor productie-infrastructuur:** Heeft u een concreet budget gereserveerd voor backend, authenticatie en hosting los van uw AI-tool abonnement?
+2. **Betrouwbaarheid boven nieuwigheid:** Als een concurrent morgen exact dezelfde AI-feature lanceert, wint uw product het dan op betrouwbaarheid, support en stabiliteit?
+3. **Ingebouwde compliance:** Kunt u een zakelijke klant vandaag binnen 5 minuten schriftelijk vertellen waar data wordt opgeslagen en hoe de AVG wordt nageleefd?
+4. **Architecturale flexibiliteit:** Kunt u binnen enkele dagen overstappen naar een andere AI-provider als uw huidige model plotseling verdubbelt in prijs?
+5. **Daadwerkelijk live:** Draait uw applicatie vandaag live met echte betalende gebruikers, of bevindt het zich nog steeds in de fase van "bijna klaar"?
 
-**Waarom eerlijke zelfscoring moeilijker is dan het klinkt:** founders die diep in hun eigen product zitten, scoren doorgaans genereus op vertrouwdheid, redenerend "ik begrijp mijn architectuur, dus die moet flexibel genoeg zijn," in plaats van strikt op bewijs, zoals "ik heb daadwerkelijk getest om van AI-provider te wisselen en bevestigd dat het minder dan een week kost." De tweede, bewijsgebaseerde standaard is degene die het waard is om jezelf aan te houden, aangezien het de standaard is die een investeerder, het inkoopteam van een klant, of een daadwerkelijke providerdeprecatie je zal opleggen, ongeacht hoe zelfverzekerd de eigen inschatting van de founder op het moment aanvoelde.
-
-**De meest nuttige volgende stap ongeacht score:** in plaats van dit als een eenmalige oefening te behandelen, herbezoek het in dezelfde cadans als de jaareinde-technische-audit behandeld in eerdere richtlijnen — een eerlijke zelfscore van vijf minuten vandaag, periodiek herhaald, volgt oprechte vooruitgang op een manier die een enkele momentopname niet kan.
-
-**Wat een lage score over meerdere items daadwerkelijk impliceert, praktisch gezien:** het betekent niet opnieuw beginnen, en het betekent niet dat elk gat tegelijk gedicht moet worden. Het betekent het enkele laagst scorende item kiezen dat het grootste specifieke risico vormt voor jouw specifieke bedrijf — een founder in een datagevoelige niche zou item 3 als eerste moeten prioriteren, terwijl een founder afhankelijk van één AI-provider met bekende volatiliteit item 4 zou moeten prioriteren — in plaats van alle vijf voorspellingen als even urgent te behandelen voor elke founder ongeacht hun specifieke product en markt.
+**Uw score-interpretatie:**
+- **4-5 punten:** U bent uitstekend gepositioneerd voor 2027; uw focus ligt op opschalen en verfijnen.
+- **2-3 punten:** U heeft duidelijke knelpunten; pak het punt aan dat het grootste risico vormt voor uw marge of lancering.
+- **0-1 punten:** Het productierijp maken van uw techniek is met afstand de taak met de hoogste hefboomwerking vóórdat u verder bouwt.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: vroeg positioneren voor wat 2027 daadwerkelijk bracht
+### Een AI-native oprichter in actie: Voorbereid live gegaan vóór de start van het nieuwe jaar
 
-Willem, een zelfstandig rijinstructeur in Doetinchem, bouwde RijlesPlan, een AI-tool die gepersonaliseerde rijlescurricula genereerde op basis van de specifieke zwakke punten en examendatum van een leerling, met v0, in de laatste maanden van het voorgaande jaar. In plaats van zijn prototype als "klaar" te behandelen zodra het werkte in tests, las Willem specifiek voorspellingen zoals deze en nam een bewuste beslissing om productielancering vóór jaareinde te prioriteren, in plaats van door te gaan met functies toevoegen in het nieuwe jaar.
+Willem, zelfstandig rijinstructeur in Doetinchem, bouwde met v0 RijlesPlan: een AI-app die gepersonaliseerde lesplannen en examenvoorbereidingen opstelde voor rijinstructeurs op basis van specifieke leerdoelen van leerlingen. In plaats van zijn prototype maandenlang te blijven tweaken, besloot Willem vóór de jaarwisseling live te gaan om concurrenten voor te zijn.
 
-Willem nam in december contact op met LaunchStudio, met specifiek zijn doel geframed rond deze voorbereidingslogica: live gaan, echte studenten laten betalen, en de architecturale flexibiliteit bouwen om aan te passen naarmate het AI-landschap bleef verschuiven. Het Manifera-team leverde authenticatie, veilige studentgegevensverwerking passend voor een product gebruikt voor rijlesgegevens van minderjarigen, Mollie-facturering, en een modelagnostische AI-architectuur specifiek gebouwd om de deprecatie-lock-in te vermijden behandeld in eerdere richtlijnen.
+Willem schakelde LaunchStudio in voor het inbouwen van Supabase-authenticatie, veilige opslag voor leerlingendossiers (minderjarigen-AVG), een Mollie-abonnementskassa en een flexibele, model-agnostische backend.
 
-**Resultaat:** RijlesPlan lanceerde vóór het nieuwe jaar met 8 rijscholen ondertekend als betalende klanten, wat Willem verschillende maanden echte operationele ervaring, echte omzet, en echte klantfeedback gaf voordat concurrenten die nog prototypes aan het polijsten waren zelfs hun eigen productielancering bereikten.
+**Resultaat:** RijlesPlan lanceerde nog vóór het nieuwe jaar met 8 aangesloten rijscholen als vaste abonnees. Willem had al maanden aan echte praktijkervaring en stabiele omzet opgebouwd terwijl concurrenten nog worstelden met hun eerste demo.
 
-> *"Ik las genoeg over founders die maandenlang 'bijna lanceerden' om te weten dat ik niet dat verhaal wilde zijn in 2027. Live gaan voordat het jaar zelfs omdraaide betekende dat ik al aan het leren was van echte studenten terwijl anderen nog een demo aan het perfectioneren waren."*
-> — **Willem Kuiper, Founder, RijlesPlan (Doetinchem)**
+> *"Ik had te veel verhalen gelezen van ondernemers die een jaar lang 'bijna lanceerden'. Ik weigerde dat verhaal te worden in 2027. Door vóór de jaarwisseling live te gaan, leerde ik al volop van echte rijscholen terwijl anderen nog aan een demo zaten te sleutelen."*  
+> — **Willem Kuiper, Oprichter RijlesPlan (Doetinchem)**
 
-**Kosten & tijdlijn:** €2.600 (Launch & Grow Pakket, jaareinde-prioriteit) — live in 12 werkdagen.
+**Kosten & tijdlijn:** €2.600 (Launch & Grow Pakket, prioriteitscyclus) — binnen 12 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoeveel vertrouwen moeten founders hebben in specifieke voorspellingen zoals deze, gegeven hoe snel AI-technologie verandert?
+### Hoe zeker zijn deze voorspellingen gezien de snelle evolutie van AI?
+Beschouw ze als richtinggevende principes. De onderliggende adviezen (beveiliging, betrouwbaarheid, model-onafhankelijkheid en snel live gaan) zijn waardevol in elk denkbaar toekomstscenario.
 
-Behandel de specifieke voorspellingen als richtinggevende begeleiding, geen zekerheden — het onderliggende voorbereidingsadvies (productiegereedheid, architecturale flexibiliteit, eerder lanceren) blijft waardevol ongeacht precies hoe elke specifieke voorspelling uitpakt, wat waarom elke voorspelling gekoppeld is aan een concrete, breed nuttige voorbereidingsstap.
+### Is het niet riskant om te investeren in vaste infrastructuur als AI-modellen blijven veranderen?
+Juist niet. Een modulaire, model-agnostische backend beschermt u juist tegen plotselinge prijswijzigingen of modelveroudering bij externe AI-providers.
 
-### Is het riskant om over te investeren in productie-infrastructuur gebaseerd op voorspellingen die mogelijk niet uitkomen?
+### Welke van deze 5 voorspellingen is het meest urgent voor solopreneurs?
+Voorspelling 5: daadwerkelijk live gaan. Een live product met 10 betalende gebruikers verslaat elk denkbaar prototype op het gebied van marktervaring en validatie.
 
-De kernvoorbereidingen hier aanbevolen — beveiliging, betrouwbaarheid, architecturale flexibiliteit, daadwerkelijk lanceren — zijn waardevol onder een breed scala aan mogelijke toekomsten, niet nauw ingezet op één specifieke voorspelling die precies correct blijkt, wat het risico vermindert van overinvesteren in een scenario dat niet uitkomt.
+### Waarom helpt LaunchStudio's internationale aanwezigheid hierbij?
+Dankzij teams in Amsterdam (HQ), Singapore en Vietnam heeft Manifera 24/7 engineeringcapaciteit en diepgaand inzicht in zowel Europese privacy-eisen als wereldwijde AI-innovaties.
 
-### Komt Manifera's eigen perspectief op deze voorspellingen ergens vandaan verder dan algemene industrieobservatie?
+### Hoe blijf ik in 2027 up-to-date zonder fulltime programmeur te zijn?
+Door te focussen op uw klanten en productwaarde, terwijl u de technische infrastructuur, updates en serverbeveiliging uitbesteedt aan vaste specialisten zoals LaunchStudio.
 
-Manifera's perspectief is geïnformeerd door direct, doorlopend engineeringwerk over veel AI-native-founder-opdrachten en zakelijke klanten tegelijk, wat patroonherkenning biedt over een breedte van echte projecten in plaats van puur theoretisch of media-gedreven industriecommentaar.
-
-### Welke van deze vijf voorspellingen beschouwt LaunchStudio als het meest dringend voor founders om nu naar te handelen?
-
-Voorspelling 5 — dat founders die daadwerkelijk lanceren beter presteren dan degenen die blijven polijsten — is wellicht het meest onmiddellijk uitvoerbaar, aangezien het geen speculatie vereist over toekomstige technologieverschuivingen, alleen een beslissing om te prioriteren wat al gebouwd is te lanceren.
-
-### Hoe kan een founder deze voorspellingen herbezoeken en valideren naarmate 2027 daadwerkelijk zich ontvouwt?
-
-De jaareinde technische audit behandeld in eerdere richtlijnen is een natuurlijk mechanisme hiervoor — periodiek je architectuur, kosten, en concurrentiepositie herbeoordelen tegen hoe het daadwerkelijke landschap evolueert, in plaats van enige voorspelling, inclusief deze, te behandelen als vaste en onveranderlijke begeleiding.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe zeker zijn deze AI-voorspellingen voor 2027?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het zijn richtinggevende principes; basiskwaliteiten zoals betrouwbaarheid, privacy en lanceren blijven universeel geldig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is investeren in backend riskant bij snelle AI-veranderingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee, een model-agnostische backend maakt het juist mogelijk om flexibel en zonder downtime over te stappen naar nieuwere modellen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de meest urgente voorspelling voor founders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daadwerkelijk live gaan; een live product met echte klanten levert direct omzet en onvervangbare marktdata op."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat betekent een lage score op de zelfevaluatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het prioriteren van productie-infrastructuur levert direct de hoogste hefboomwerking op voor uw startup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe ontlast LaunchStudio niet-technische founders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wij bouwen en beheren de complete backend en beveiliging, zodat de oprichter zich 100% kan richten op klanten en groei."
+      }
+    }
+  ]
+}
+</script>

@@ -1,22 +1,22 @@
 ---
-Title: De Verschuiving van Auto-Complete naar AI That Fixes Code
-Keywords: AI that fixes code, AI coding, AI software engineering, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: VP of Engineering / CTO
+Titel: "De Verschuiving Van Auto-Complete Naar AI Die Code Repareert"
+Trefwoorden: AI that fixes code, AI code herstellen, AI software engineering, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelpersona: VP of Engineering / CTO
 ---
 
-# De Verschuiving van Auto-Complete naar AI That Fixes Code
+# De Verschuiving Van Auto-Complete Naar AI Die Code Repareert
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI That Fixes Code: De Verschuiving van Auto-Complete naar Auto-Remediation",
-  "description": "We laten de 'auto-complete' coding assistants achter ons. Een diepe duik in Auto-Remediation, autonome AI-agenten, en hoe engineering teams bugfixes volledig automatiseren.",
+  "headline": "AI Die Code Repareert: De Verschuiving van Auto-Complete naar Auto-Remediation",
+  "description": "We laten het tijdperk van 'auto-complete' code-assistenten achter ons. Een diepgaande gids over Auto-Remediation, autonome agents en hoe engineeringteams het oplossen van bugs automatiseren.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/nl/"
+    "url": "https://launchstudio.eu/en/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,96 +26,86 @@ Target Persona: VP of Engineering / CTO
   "datePublished": "2026-12-21",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/nl/blog/ai-that-fixes-code"
+    "@id": "https://launchstudio.eu/en/blog/ai-that-fixes-code"
   }
 }
 </script>
 
-Het eerste tijdperk van AI software engineering werd gedefinieerd door de "Auto-Complete". Tools zoals de originele GitHub Copilot veranderden fundamenteel de manier waarop developers typten. Een developer schreef een simpele comment (`// Sorteer de array op datum`), en de AI genereerde onmiddellijk de volgende vijf regels syntax. 
+Het eerste tijdperk van AI in softwareontwikkeling werd gedomineerd door "Auto-Complete": tools zoals de oorspronkelijke GitHub Copilot versnelden het typewerk van programmeurs. Een ontwikkelaar typte een commentaarregel (`// Sorteer de array op datum`) en de AI genereerde binnen een seconde de volgende vijf regels code.
 
-Dit was een gigantische sprong in productiviteit, maar het bleef inherent handmatig werk. De mens zat strak aan het stuur; de AI was louter een razendsnelle typist op de bijrijdersstoel.
+Hoewel dit een grote sprong in productiviteit betekende, bleef het proces fundamenteel handmatig: de menselijke programmeur zat achter het stuur en de AI fungeerde slechts als een razendsnelle typist op de bijrijdersstoel.
 
-Anno 2026 laten enterprise engineering teams het auto-complete paradigma definitief achter zich. Ze maken de harde transitie naar het tweede tijdperk van AI software engineering: **Auto-Remediation**. 
+In 2026 stappen toonaangevende engineeringteams massaal af van het auto-complete model. Zij stappen over naar de tweede fase van AI-engineering: **Auto-Remediation**.
 
-CTO's zoeken niet langer naar een AI die simpelweg sneller typt; ze eisen een AI die code volkomen autonoom repareert. We zijn opgeschoven van AI als een "tool" naar AI als een "agentic contributor"—een entiteit die zelfstandig een Jira-ticket leest, een repository kloont, door een codebase van een miljoen regels navigeert, de bug lokaliseert, de test suite draait en een vlekkeloze Pull Request indient, zónder enige menselijke interventie.
+CTO's zoeken niet langer naar AI die sneller typt, maar naar AI die autonoom bugs oplost. AI is getransformeerd van een passieve assistent naar een autonome teamgenoot: een agent die een Jira-ticket leest, een repository kloont, door een codebase van een miljoen regels navigeert, de bug lokaliseert, de testsuite draait en zelfstandig een Pull Request (PR) indient zonder menselijke tussenkomst.
 
-## De Mechanismen van Auto-Remediation
+## De Mechanica van Auto-Remediation
 
-Om te doorgronden hoe een AI onafhankelijk code kan repareren, moeten we kijken naar de loodzware orkestratieframeworks die onder de motorkap draaien. Tools zoals Cursor (in agent-modus), Sweep.dev of custom interne auto-remediation pipelines opereren op een uiterst geavanceerde, multi-step architectuur.
+Om te begrijpen hoe een AI zelfstandig bugs oplost, moeten we kijken naar de achterliggende orkestratielagen. Moderne auto-remediation pipelines (zoals Cursor in agent-modus of op maat gemaakte interne workflows) werken volgens een geavanceerd driestappenproces:
 
-### 1. Contextuele Ophaal (De Bug Hunt)
-Wanneer een Sentry-alert afgaat (bijv. `NullReferenceException in BillingController.ts`), zou een menselijke developer normaliter twee uur spenderen met `grep` en globale IDE-zoekopdrachten om de stack trace terug te leiden naar de oorzaak.
-Een Auto-Remediation AI zoekt niet blind. De voltallige enterprise codebase is lokaal geïndexeerd in een Vector Database. De AI-agent pakt de Sentry stack trace, converteert deze naar een vector embedding, en haalt in een milliseconde de exacte bestanden, gerelateerde dependencies en interface-definities op die de crash omringen. Hij stelt de "Blast Radius" in luttele seconden vast.
+### 1. Contextueel Zoeken (De Oorzaakanalyse)
+Wanneer er een Sentry-foutmelding binnenkomt (`NullReferenceException in FacturatieController.ts`), besteedt een menselijke programmeur vaak uren aan het doorzoeken van de codebase om de fout te traceren.
+Een Auto-Remediation AI zoekt doelgericht: de complete codebase is lokaal geïndexeerd in een vectordatabase. De AI-agent zet de stack-trace om in een vector-embedding en vindt binnen seconden de exacte bestanden, afhankelijkheden en type-definities rondom de crash.
 
-### 2. Sandbox Executie (De Wetenschappelijke Methode)
-Auto-complete AI's raden slechts naar het antwoord. Auto-Remediation AI's *bewijzen* het. 
-Zodra de AI een hypothese voor de fix formuleert, spuugt hij niet zomaar code uit. De agent draait geïsoleerd in een Docker-container (een veilige sandbox). Hij schrijft de fix daadwerkelijk in de code en *draait vervolgens de unit tests*. 
-Faalt de test? Dan leest de AI de terminal output, past zijn hypothese aan, herschrijft de code en draait de test opnieuw. Hij itereert meedogenloos door deze ReAct (Reasoning and Acting) loop totdat de test groen kleurt.
+### 2. Geïsoleerde Uitvoering in een Sandbox
+Auto-complete modellen gokken op het juiste antwoord; Auto-Remediation agents bewijzen het.
+Zodra de agent een hypothese formuleert, draait hij in een geïsoleerde Docker-container (sandbox). Hij past de broncode aan en *draait direct de geautomatiseerde unittests*. Faalt de test, dan leest de agent de foutmelding in de terminal, past zijn hypothese aan en test opnieuw via een ReAct-loop (Reasoning and Acting) totdat alle tests slagen.
 
 ### 3. De Autonome Pull Request
-Zodra de sandbox-tests slagen, formatteert de AI-agent een standaard Git commit, pusht de branch en opent volautomatisch een Pull Request (PR). Cruciaal is dat de AI de PR-beschrijving schrijft waarin hij haarfijn uitlegt *waarom* de bug optrad en *hoe* deze specifieke fix het oplost, onder verwijzing naar de exacte regels code. De taak van de menselijke developer verschuift definitief van het schrijven van de fix naar louter het beoordelen en mergen van de Pull Request van de AI.
+Slagen alle tests in de sandbox, dan maakt de agent een nette Git-commit aan en opent een Pull Request. De AI schrijft een heldere toelichting waarin exact wordt uitgelegd *waarom* de fout optrad en *hoe* de code is hersteld, inclusief verwijzingen naar de specifieke regels. De taak van de ontwikkelaar verschuift van code schrijven naar het reviewen en mergen van de PR.
 
-## Hoe LaunchStudio Auto-Remediation Pipelines Engineert
+## Hoe LaunchStudio Auto-Remediation Pipelines Bouwt
 
-Standaard "off-the-shelf" AI-coding tools zijn fantastisch voor individuele developers, maar ze missen veelal de snoeiharde security, compliance en custom CI/CD integraties die een 50-koppige enterprise engineering afdeling eist.
+Standaard AI-codetools zijn nuttig voor individuele ontwikkelaars, maar missen vaak de strenge beveiliging en CI/CD-integraties die nodig zijn voor een enterprise-team van 50 man.
 
-[LaunchStudio](https://launchstudio.eu/nl/), stevig geruggensteund door de loodzware DevSecOps-expertise van [Manifera](https://www.manifera.com/), bouwt custom Auto-Remediation pipelines die direct en veilig in uw bestaande infrastructuur worden verankerd.
+[LaunchStudio](https://launchstudio.eu/en/), gedragen door de DevSecOps-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, integreert geautomatiseerde bug-reparatie direct in uw bestaande infrastructuur:
+1. **Sentry/Datadog Koppeling:** Wij bouwen webhook-middleware waarmee productie-foutmeldingen automatisch een dedicated AI-agent triggeren.
+2. **Beveiligde Sandbox-Orkestratie:** Wij richten tijdelijke Docker-omgevingen in waarin de agent veilig code compileert en tests uitvoert zonder risico voor productiesystemen.
+3. **Beveiligde Commits:** Wij dwingen strikte branch protection rules af: de AI mag uitsluitend pull requests openen op feature branches en kan cryptografisch nooit direct naar `main` mergen, zodat menselijke ontwikkelaars altijd de controle behouden.
 
-Onder de architecturale leiding van CEO Herre Roelevink in Amsterdam, en geëngineerd door onze DevOps-specialisten in Ho Chi Minh City, automatiseren wij uw technische schuld.
+## Echt voorbeeld
 
-Onze Auto-Remediation Implementatie omvat:
-1. **Sentry/Datadog Integratie:** We bouwen de webhook middleware die uw error-tracking software in staat stelt om volautomatisch een toegewijde AI-Agent te triggeren op het exacte moment dat een productie-fout optreedt.
-2. **Veilige Sandbox Orkestratie:** We configureren de geïsoleerde, efemere Docker-omgevingen waar de AI-Agent veilig code mag compileren en tests mag draaien, wat garandeert dat de AI nóóit kwaadaardige code op uw primaire servers kan uitvoeren.
-3. **Guardrailed Commits:** We dwingen strikte Branch Protection regels af. De AI is uitsluitend geautoriseerd om Pull Requests te openen op feature branches; hij is mathematisch en cryptografisch buitengesloten van het direct mergen van code naar de `main` branch, wat garandeert dat een "Human-in-the-Loop" altijd de absolute en definitieve autoriteit behoudt.
+### Een AI-Native Oprichter in de Praktijk: Het FinTech-Bedrijf Dat Verdronk in Jira-Tickets
 
-## Praktijkvoorbeeld
+Thomas is VP of Engineering bij een snelgroeiend salarissoftwarebedrijf in Stockholm. Zijn platform koppelt met tientallen Europese banken, wat betekende dat zijn team dagelijks werd overspoeld door kleine, frustrerende API-fouten.
 
-### Een AI-Native Founder in Actie: De Fintech Die Verdronk in Jira Tickets
+Elke ochtend stonden er 15 nieuwe Jira-tickets klaar: *"Bank X heeft datumformaat gewijzigd van MM-DD naar DD-MM, synchronisatie mislukt."*
 
-Thomas is de VP of Engineering bij een hypergroeiende payroll startup in Stockholm. Zijn platform was geïntegreerd met tientallen Europese banken, wat betekende dat zijn team non-stop bezig was met het oplossen van kleine, frustrerende API-integratie bugs. 
+Deze bugs waren niet ingewikkeld, maar wel tijdrovend: het team besteedde 40% van hun sprintcapaciteit aan het opsporen van parsing-foutjes, handmatig fixen en testen. De ontwikkeling van nieuwe kernfuncties lag vrijwel stil en ontwikkelaars raakten gefrustreerd.
 
-Elke ochtend werden zijn developers wakker met 15 nieuwe Jira tickets getiteld: *"Bank X heeft hun datumformaat gewijzigd van MM-DD naar DD-MM, sync faalt."*
+Thomas schakelde LaunchStudio in voor het bouwen van een Auto-Remediation pipeline.
 
-Deze bugs waren intellectueel niet uitdagend, maar wel tergend vervelend. Thomas' team spendeerde 40% van hun sprint-capaciteit louter aan het opsporen van deze kleine parsing errors, het fixen ervan en het draaien van de CI-pipeline. Feature development was volledig stilgevallen. De developers waren gefrustreerd en hard op weg naar een burn-out.
+Het Manifera-team voerde een 20-daagse sprint uit:
+- Er werd een autonome agent ingericht die veilig gekoppeld was aan GitHub en Jira.
+- Er werd een geautomatiseerde webhook gebouwd: zodra support een ticket in de kolom "Bug: Triage" plaatste, startte de AI-agent op.
 
-Thomas huurde LaunchStudio in om onmiddellijk een Auto-Remediation pipeline te implementeren.
+**Resultaat:** Bij de eerstvolgende datum-bug las de agent het Jira-ticket, kloonde de repository in zijn Docker-sandbox, vond via vectorzoekopdrachten het bestand `BankXParser.ts`, paste de regex aan en draaide de unittests. Binnen 4 minuten stond er een kant-en-klare Pull Request open met een complete uitleg, getagd voor de lead developer.
 
-Het Manifera engineering team executeerde een harde, 20-daagse "Agentic Workflow Sprint".
-Ze deployden een gecustomizede instantie van een autonome AI-agent, loeistrak en veilig verbonden met de GitHub repository en het Jira-board van de startup.
-Ze bouwden een geautomatiseerde webhook: Zodra het Customer Support team een Jira ticket naar de "Bug: Triage" kolom sleepte, wekte de middleware van LaunchStudio direct de AI-Agent.
+Het team zag hun tijdsbesteding aan bug-fixing dalen van 40% naar slechts 5% (de tijd om de PR goed te keuren). De ontwikkelsnelheid verdrievoudigde en de nieuwe belastingmodule werd drie weken vóór de deadline opgeleverd.
 
-**Resultaat:** De eerstvolgende keer dat een datum-formaat bug in Jira werd gemeld, zag Thomas hoe de magie zich ontrolde. De AI-Agent las autonoom het Jira ticket. Hij kloonde de repository in zijn zwaar beveiligde sandbox. Hij gebruikte vector search om feilloos het specifieke `BankXParser.ts` bestand te vinden. Hij modificeerde de regex om het nieuwe datumformaat te verwerken. Hij draaide de lokale test suite (die direct slaagde). Vervolgens opende hij een Pull Request en tagde de Lead Developer voor de review. 
-
-Het volledige proces nam exact 4 minuten in beslag, en er werd núl menselijke engineering-tijd besteed aan het schrijven van code. Thomas' team ging van 40% van hun tijd spenderen aan bugfixes naar slechts 5% (de tijd die nodig was om de PR's van de AI te reviewen). De engineering velocity schoot door het dak, en ze lanceerden hun nieuwe belasting-berekeningsmodule liefst drie weken voor op schema.
-
-> *"We behandelden onze senior engineers als zwaar overbetaalde conciërges, die elke dag kleine syntax-rommel moesten opruimen. LaunchStudio bouwde voor ons een robot-conciërge. De AI suggereert niet zomaar code meer; hij werkt actief onze hele Jira-backlog weg terwijl wij slapen. Het heeft de complete economie van onze engineering afdeling veranderd."*
+> *"We behandelden onze senior engineers als duurbetaalde schoonmakers die dagelijks kleine syntaxisfoutjes moesten opruimen. LaunchStudio bouwde een robotische schoonmaker voor ons. De AI suggereert niet alleen code, maar lost onze Jira-achterstand op terwijl we slapen. Het heeft de economische dynamiek van onze IT-afdeling compleet veranderd."*
 > — **Thomas Berglund, VP of Engineering, PayFlow (Stockholm)**
 
-**Kosten & Tijdlijn:** €16.500 (Launch & Grow Pakket inclusief Agentic CI/CD Orchestration Add-on) — productie-klaar en gedeployed in exact 20 werkdagen.
+**Kosten & Doorlooptijd:** €16.500 (Launch & Grow Pakket met Agentic CI/CD Orchestration Add-on) — productie-klaar en live binnen 20 werkdagen.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### (Scenario: CTO die CI/CD plant) Hoe voorkom je dat een AI die code fixt een massieve security-kwetsbaarheid introduceert?
+### Hoe voorkomen we dat een AI die code repareert gevaarlijke beveiligingslekken introduceert?
+Door strikte "Human-in-the-Loop" protocollen af te dwingen. De AI krijgt nooit rechten om direct naar `main` te pushen of naar productie te deployen; hij mag uitsluitend een Pull Request openen die door een senior menselijke engineer wordt beoordeeld. Daarnaast richt LaunchStudio geautomatiseerde SAST-scans (Static Application Security Testing) in op de AI-branch om kwetsbaarheden (zoals SQL-injecties) direct te blokkeren.
 
-Je dwingt strikte 'Human-in-the-Loop' protocollen af. De AI krijgt nóóit toestemming om naar `main` te pushen of naar productie te deployen. Hij is louter geautoriseerd om een Pull Request te openen. Een menselijke senior engineer moet de diff altijd goedkeuren. Bovendien configureert LaunchStudio uw CI/CD pijplijn zó dat deze automatisch Static Application Security Testing (SAST) draait op de branch van de AI. Dit blokkeert de PR onmiddellijk en volautomatisch als er een kwetsbaarheid (zoals een SQL-injectie) wordt gedetecteerd.
+### Als de AI hallucineert, verspil ik dan niet enorm veel tijd aan het reviewen van foute PR's?
+Daarom vereist Auto-Remediation een sandbox-uitvoeringslaag. De AI mag pas een PR openen als de code fysiek compileert en alle geautomatiseerde unittests binnen de Docker-container slagen. Bij een goede testdekking is de PR van de AI in 95% van de gevallen direct functioneel correct.
 
-### (Scenario: Developer gefrustreerd door AI hallucinaties) Als de AI een fix hallucineert, verspil ik dan niet enorm veel tijd aan het reviewen van een kapotte PR?
+### Kost het continu in een loop draaien van een autonome agent niet ontzettend veel API-tokens?
+Dat kan als er geen limieten zijn. LaunchStudio bouwt "Agentic Guardrails" in: we begrenzen de ReAct-loop op maximaal 5 iteraties. Lukt het de AI na 5 pogingen niet om de tests te laten slagen, dan stopt het proces automatisch, plaatst de agent een notitie op het Jira-ticket *"Handmatige interventie vereist"* en sluit af om uw budget te beschermen.
 
-Precies hierom vereist Auto-Remediation een onwrikbare "Sandbox Execution" laag. De AI mag niet zomaar een PR openen omdat hij *denkt* dat de code werkt. LaunchStudio architecteert de pijplijn zó dat de AI fysiek de code móét compileren en uw geautomatiseerde test suite móét draaien in een Docker container. Hij mag de PR pas openen als die tests groen uitslaan. Als uw test coverage goed is, zal de PR van de AI in 95% van de gevallen functioneel perfect zijn.
+### Is het veilig om een autonome agent onze complete bedrijfs-codebase te laten klonen?
+Uitsluitend als dit gebeurt binnen uw eigen Virtual Private Cloud (VPC) met formele Zero Data Retention contracten (zoals Azure OpenAI). LaunchStudio richt deze pipelines zo in dat de Docker-sandboxen en modellen volledig binnen uw eigen beveiligde AWS/GCP netwerk draaien, zodat uw intellectueel eigendom de firewall nooit verlaat.
 
-### (Scenario: VP Engineering die kosten auditeert) Verbruikt het continu draaien van een autonome AI-agent in een loop niet gigantisch veel API-tokens?
-
-Dat gebeurt zeker, als je hem niet begrenst. Als een AI faalt op een test en blind 50 keer probeert het te fixen, explodeert je API-rekening. LaunchStudio implementeert spijkerharde "Agentic Guardrails". Wij cappen de ReAct loop op een strikt maximum (bijv. maximaal 5 pogingen). Als de AI de tests na 5 pogingen niet kan passeren, breekt hij het proces af, plaatst hij een comment op het Jira ticket (*"Manuele interventie vereist"*) en sluit hij zichzelf direct af om uw budget te beschermen.
-
-### (Scenario: Security Officer die IP risico's evalueert) Is het überhaupt veilig om een autonome AI-agent onze complete enterprise codebase te laten klonen?
-
-Het is alléén veilig als dit wordt gedeployed binnen uw eigen Virtual Private Cloud (VPC) mét ijzersterke Zero Data Retention overeenkomsten. Als u een publieke consumenten-agent gebruikt, lekt u ongezien IP. LaunchStudio deployt deze agentic pijplijnen uitsluitend via enterprise-grade providers (zoals Azure OpenAI) en garandeert dat de Sandbox Docker containers volledig binnen uw AWS/GCP perimeter gehost worden. De code verlaat uw firewall simpelweg nóóit.
-
-### (Scenario: Founder die teammoraal managet) Zullen developers het niet haten dat hun bugs door een machine worden gefixt?
-
-In onze ervaring gebeurt exact het tegenovergestelde. Developers haten het fixen van tergende, repetitieve bugs (zoals date parsing errors of CSS uitlijn-issues). Ze willen uitdagende, complexe nieuwe features bouwen. Door Auto-Remediation te implementeren voor het 'laaghangend fruit', elimineert LaunchStudio de saaiste onderdelen van de job van de developer. Dit verhoogt het moraal en de retentie gigantisch. De AI neemt het corvee op zich; de mens richt zich op de architectuur.
+### Gaan ontwikkelaars het niet vreselijk vinden als hun bugs worden opgelost door een machine?
+In de praktijk ervaren ontwikkelaars dit als een enorme verademing: programmeurs hebben een hekel aan repetitieve, saaie bugs (zoals datum-parsers of CSS-foutjes) en willen complexe architectuur en nieuwe features bouwen. Door de saaie klusjes te automatiseren stijgt het moreel en de tevredenheid van het team aanzienlijk.
 
 <script type="application/ld+json">
 {
@@ -124,42 +114,42 @@ In onze ervaring gebeurt exact het tegenovergestelde. Developers haten het fixen
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe voorkom je dat een AI die code fixt een massieve security-kwetsbaarheid introduceert?",
+      "name": "Hoe voorkomen we dat een AI die code repareert gevaarlijke beveiligingslekken introduceert?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dwing Human-in-the-Loop protocollen af. De AI mag nooit naar 'main' mergen, alleen een PR openen voor menselijke review. LaunchStudio integreert ook automatische SAST (Static Application Security Testing) om de branch van de AI te scannen en kwetsbaarheden vóór de review al te blokkeren."
+        "text": "Via Human-in-the-Loop protocollen en automatische SAST-scans. De AI opent uitsluitend Pull Requests en kan nooit direct mergen naar productie."
       }
     },
     {
       "@type": "Question",
-      "name": "Als de AI een fix hallucineert, verspil ik dan niet enorm veel tijd aan het reviewen van een kapotte PR?",
+      "name": "Als de AI hallucineert, verspil ik dan niet enorm veel tijd aan het reviewen van foute PR's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio verplicht Sandbox Execution. De AI móét de code compileren en uw geautomatiseerde unit tests passeren binnen een geïsoleerde Docker container vóórdat hij een PR mag openen. Als uw test coverage sterk is, is de PR van de AI functioneel correct."
+        "text": "Nee, de AI moet verplicht unittests laten slagen in een geïsoleerde Docker sandbox vóórdat een PR geopend mag worden, wat garant staat voor hoge kwaliteit."
       }
     },
     {
       "@type": "Question",
-      "name": "Verbruikt het continu draaien van een autonome AI-agent in een loop niet gigantisch veel API-tokens?",
+      "name": "Kost het continu in een loop draaien van een autonome agent niet ontzettend veel API-tokens?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio implementeert Agentic Guardrails, die de loop cappen (bijv. max 5 pogingen). Faalt de AI de tests na 5 keer, dan stopt hij, vlagt hij het Jira ticket voor manuele interventie en sluit af om uw API-budget te beschermen."
+        "text": "LaunchStudio stelt strikte iteratielimieten in (bijv. max 5 pogingen). Slaagt de fix niet, dan stopt de agent en vraagt om menselijke tussenkomst."
       }
     },
     {
       "@type": "Question",
-      "name": "Is het überhaupt veilig om een autonome AI-agent onze complete enterprise codebase te laten klonen?",
+      "name": "Is het veilig om een autonome agent onze complete bedrijfs-codebase te laten klonen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alleen binnen uw VPC met Zero Data Retention overeenkomsten (zoals Azure OpenAI). LaunchStudio zorgt dat de sandbox containers van de AI volledig binnen uw firewall worden gehost. Uw propriëtaire code lekt nooit naar een publieke cloud."
+        "text": "Ja, mits gedraaid binnen uw eigen VPC met Zero Data Retention. Code verlaat nooit uw beveiligde cloudperimeter."
       }
     },
     {
       "@type": "Question",
-      "name": "Zullen developers het niet haten dat hun bugs door een machine worden gefixt?",
+      "name": "Gaan ontwikkelaars het niet vreselijk vinden als hun bugs worden opgelost door een machine?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, developers haten repetitieve bugs. Door het 'laaghangend fruit' te automatiseren met Auto-Remediation, bevrijdt LaunchStudio developers zodat ze zich kunnen focussen op uitdagende, lonende feature architectuur. Dit verhoogt de retentie enorm."
+        "text": "Nee, programmeurs zijn blij verlost te zijn van repetitieve parsing-bugs, waardoor ze zich kunnen richten op waardevolle architectuur en nieuwe functies."
       }
     }
   ]

@@ -1,19 +1,19 @@
-🔥 Dr. Visser bouwde een prototype met **Bolt** — dr, maar ontdekte kritieke architectuur- en beveiligingsknelpunten vóór de lancering. 🧠
+🔥 Dr. Visser bouwde een prototype met **Bolt** — als arts in Den Haag bouwde hij een AI-app voor medische transcripties, maar zakte direct voor een AVG- en NEN 7510-audit bij een ziekenhuisnetwerk. 🧠
 
-Als uw AI-prototype geen server-side invoer-sanering, database Row Level Security (RLS) of correcte deployment-configuratie heeft, zal live verkeer leiden tot storingen en beveiligingsrisico's.
+Als uw AI-prototype geen server-side invoervalidatie, database Row-Level Security (RLS) of AVG-conforme EU-infrastructuur heeft, veroorzaakt live verkeer direct torenhoge boetes en aansprakelijkheid.
 
-❌ Gehardcodeerde API-inloggegevens zichtbaar in client-side JavaScript of onversleutelde omgevingsbestanden
-❌ Ontbreken van Row Level Security (RLS) beleid op vector- en relationele databasetabellen
-❌ Onbehandelde API-fouten, race-condities of onbeperkte facturatie-lussen onder gelijktijdige belasting
+❌ Databases en back-ups gehost in de VS zonder vereiste Europese dataretentie
+❌ Standaard consumenten-API van OpenAI waardoor gevoelige patiëntgesprekken voor training werden gebruikt
+❌ Geen "Recht op Vergetelheid" voor vectordatabases en nul logging voor de wettelijke 72-uurs meldplicht
 
-✅ Geheime sleutels verplaatsen naar server-side Edge Function-kluisjes met JWT-authenticatie
-✅ Afdwingen van PostgreSQL Row Level Security (RLS) regels voor volledige multi-tenant data-isolatie
-✅ Verharden van betalings-webhooks, rate limiting en deployment-infrastructuur voor hoge uptime
+✅ Migratie naar een versleutelde AWS Frankfurt-database met strikte PostgreSQL Row-Level Security (RLS)
+✅ Zero-retention enterprise tier van OpenAI met formele Verwerkersovereenkomst (DPA)
+✅ Trapsgewijze dataverwijdering voor vectoren en gestructureerde auditlogging op dossierinzages
 
-Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterprise-engineeringvraagstukken op, met meer dan 160 opgeleverde projecten. 🛡️
 
-Dr. Visser's applicatie behaalde productie-gereedheid: With the new LaunchStudio infrastructure, Dr. Visser reapplied for the hospital audit. He passed with flying colors. He secured a €6,000 MRR contract with the hospital network. I had a great medical idea, but zero knowledge of European data law. LaunchStudio built the compliant backend that turned my prototype into a legal business. (€4,500 (Enterprise Compliance Hardening package) — completed in 15 business days.). 🚀
+Dr. Visser slaagde met vlag en wimpel voor de ziekenhuisaudit en sloot een zorgcontract van €6.000 MRR. (€4.500 (Enterprise Compliance Hardening Pakket) — binnen 15 werkdagen live). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
 
-#LaunchStudio #Manifera #AISaaS #GDPRComplianceCheckl #TechFounders
+#LaunchStudio #Manifera #AISaaS #GDPRCompliance #AVG #HealthTech #DataPrivacy #TechFounders #BoltAI

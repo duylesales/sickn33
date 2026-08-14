@@ -1,108 +1,119 @@
 ---
-Titel: Oprichters-Checklist om van een AI Prototype een Echt Product te Maken
-Trefwoorden: ai maken, ai bouwen, launchstudio, manifera, lovable, bolt, mvp checklist
+Titel: "Checklist voor Oprichters om een AI-Prototype om te Zetten in een Echt Product"
+Trefwoorden: make a AI, build AI, LaunchStudio, Manifera, Lovable, Bolt, MVP checklist
 Koperfase: Overweging
 Doelpersona: A (AI-Native Oprichter, Niet-Technisch)
 ---
 
-# Oprichters-Checklist om van een AI Prototype een Echt Product te Maken
+# Checklist voor Oprichters om een AI-Prototype om te Zetten in een Echt Product
 
 "Je hebt je prototype af. Het ziet er goed uit. Maar wat nu?"
 
-Dit is de exacte vraag die duizenden niet-technische oprichters zichzelf stellen nadat ze een weekend hebben doorgebracht met tools zoals Lovable, Cursor of Bolt. Het is gelukt om een AI-prototype te maken dat visueel overeenkomt met uw visie. U kunt op de knoppen klikken, het dashboard laadt, en u heeft misschien zelfs een lokale databaseverbinding werkend.
+Dit is de exacte vraag die duizenden niet-technische oprichters zichzelf stellen na een weekend bouwen met tools als Lovable, Cursor of Bolt. Het is u gelukt om met AI een prototype te maken dat visueel perfect aansluit bij uw visie. U kunt op knoppen klikken, het dashboard laadt netjes en misschien werkt er zelfs al een lokale databaseverbinding.
 
-Het delen van een localhost-link met een investeerder of potentiële klant is echter geen optie. Een prototype is een demonstratie van een idee; een product is een veilige, schaalbare entiteit die legaal gebruikersgegevens kan verwerken en geld kan innen. De kloof tussen de twee is niet cosmetisch — het is de exacte kloof die 80% van de met AI gebouwde projecten ervan weerhoudt ooit echte productie te bereiken.
+Het delen van een localhost-link of preview-URL met een investeerder of potentiële klant is echter geen optie. Een prototype is een demonstratie van een idee; een product is een veilige, schaalbare entiteit die legaal gebruikersgegevens mag verwerken en betalingen kan incasseren. De kloof tussen die twee is niet cosmetisch — het is exact de kloof die ervoor zorgt dat 80% van de met AI gebouwde projecten nooit echte productie bereikt. De meeste van die projecten stranden niet omdat het idee slecht was. Ze stranden omdat niemand het onzichtbare infrastructuurwerk heeft uitgevoerd tussen "het werkt op mijn scherm" en "het verwerkt veilig de creditcard van een vreemde".
 
-Als u de kloof van prototype naar productie wilt oversteken, moet u de "Laatste Kilometer" checklist voltooien.
+Als u de sprong wilt wagen van prototype naar een volwaardig live product, moet u deze "Laatste Mijl" checklist voltooien.
 
-## De Prototype naar Productie Checklist
+## De Prototype-naar-Productie Checklist
 
-Lanceer uw met AI gegenereerde app niet voordat u deze componenten heeft geverifieerd.
+Lanceer uw door AI gegenereerde app pas nadat u de volgende vijf onderdelen heeft gecontroleerd en ingericht:
 
-### 1. Database-Beveiliging en Row Level Security (RLS)
+### 1. Databeveiliging en Row Level Security (RLS)
 
-AI-codegeneratoren richten zich op het tonen van gegevens op het scherm. Ze beveiligen gegevens zelden op databaseniveau.
+AI-codegenerators focussen erop dat uw gegevens netjes op het scherm verschijnen. Ze beveiligen de data zelden op het diepere databaseniveau.
 
-- **De Controle:** Kan een gebruiker de netwerk-tab in de browser inspecteren en gegevens van andere gebruikers zien?
-- **De Oplossing:** Implementeer Row Level Security (RLS) policies in uw database (bijv. Supabase of PostgreSQL). Dit garandeert dat de database zelf, niet alleen de frontend UI, onbevoegde gegevensverzoeken weigert.
+- **De Controle:** Kan een bezoeker via het netwerktabblad in zijn browser gegevens van andere gebruikers inzien? Open de developer tools van uw browser, laad een pagina met uw eigen gegevens en controleer of het ruwe API-antwoord velden bevat die er niet horen — e-mailadressen van anderen, interne ID's of data van andere accounts.
+- **De Oplossing:** Implementeer Row Level Security (RLS) beleidsregels in uw database (zoals Supabase of PostgreSQL). Dit garandeert dat de database zélf, en niet slechts de frontend-UI, ongeautoriseerde dataverzoeken resoluut weigert. Een regel zoals "een gebruiker mag alleen rijen lezen waar `user_id` overeenkomt met zijn eigen geauthenticeerde ID" moet in de database leven, omdat een slimme bezoeker de filtering van de frontend altijd kan omzeilen.
 
-### 2. Geautomatiseerde Betalings-Webhooks
+### 2. Geautomatiseerde Betalingswebhooks
 
-Het toevoegen van een Stripe "Nu Kopen"-link is eenvoudig. Gebruikers toegang verlenen na betaling is lastiger.
+Het toevoegen van een Stripe "Nu Kopen"-link is eenvoudig. Het automatisch verlenen van toegang nadat een klant heeft betaald, is complex.
 
-- **De Controle:** Wordt de accountstatus van een gebruiker automatisch bijgewerkt naar 'Premium' wanneer ze betalen, zonder dat u de database hoeft aan te raken? Wat gebeurt er als de kaart verloopt of de gebruiker annuleert?
-- **De Oplossing:** Stel veilige server-side webhooks in die luisteren naar gebeurtenissen van Stripe of Mollie — succesvolle betalingen, mislukte vernieuwingen, annuleringen — en voer database-updates autonoom uit.
+- **De Controle:** Wordt het account van een gebruiker automatisch omgezet naar 'Premium' zodra hij betaalt, zonder dat u handmatig de database hoeft aan te passen? Wat gebeurt er als de creditcard volgende maand verloopt? Wat gebeurt er bij een opzegging — wordt de toegang daadwerkelijk ingetrokken, of verbergt de frontend simpelweg een knop terwijl de backend data blijft serveren?
+- **De Oplossing:** Richt veilige, server-side webhooks in. Uw backend moet luisteren naar gebeurtenissen van Stripe of Mollie — geslaagde betalingen, mislukte verlengingen, opzeggingen — en databasewijzigingen autonoom doorvoeren, met cryptografische handtekeningverificatie op elke binnenkomende webhook zodat niemand valse betalingen kan simuleren.
 
-### 3. Productie-Deployment & Eigen Domeinen
+### 3. Productie-Deployment & Eigen Domeinnaam
 
-Een preview-link vanuit een ontwikkelomgeving is kwetsbaar.
+Een preview-link vanuit een ontwikkelomgeving is kwetsbaar en onprofessioneel.
 
-- **De Controle:** Is uw app gehost op een betrouwbare CDN met een eigen domein (uwdomein.nl) en een actief SSL-certificaat?
-- **De Oplossing:** Rol de met AI gegenereerde frontend uit naar een platform zoals Vercel of Netlify, en zorg dat uw backend-API veilig gehost wordt met gescheiden omgevingsvariabelen.
+- **De Controle:** Draait uw applicatie op een betrouwbaar CDN met een eigen domeinnaam (uwstartup.nl) en een actief SSL-certificaat? Blijft de website snel laden als 50 mensen tegelijk inloggen, of bezwijkt de gratis preview-server?
+- **De Oplossing:** Deploy de met AI gegenereerde frontend naar een platform zoals Vercel of Netlify, en zorg dat uw backend-API veilig wordt gehost met omgevingsvariabelen die strikt gescheiden zijn van uw broncode — nooit hardcoded in bestanden die in een openbare GitHub-repository belanden.
 
 ### 4. Gebruikersauthenticatie en Sessiebeheer
 
-Nep-inlogs in een prototype zijn prima voor een demo. Echte gebruikers vereisen echte beveiliging.
+Gesimuleerde logins in een prototype zijn prima voor een demo. Echte gebruikers vereisen echte beveiliging.
 
-- **De Controle:** Worden wachtwoorden veilig gehasht? Kunnen gebruikers hun wachtwoord herstellen via een veilige e-maillink?
-- **De Oplossing:** Integreer een robuuste authenticatieprovider (zoals Auth0 of Supabase Auth) en zorg dat uw frontend sessies en beschermde routes correct beheert.
+- **De Controle:** Worden wachtwoorden cryptografisch gehasht (nooit in platte tekst bewaard)? Kunnen gebruikers hun wachtwoord veilig herstellen via een e-maillink? Verloopt een JWT-sessietoken tijdig, en weigert uw app daadwerkelijk verlopen tokens in plaats van ze stilzwijgend te vertrouwen?
+- **De Oplossing:** Integreer een robuuste authenticatieprovider (zoals Supabase Auth of Auth0) en zorg dat uw frontend sessies en afgeschermde routes correct beheert, zodat een uitgelogde bezoeker niet simpelweg een URL kan raden om op een betaalde pagina te belanden.
 
-### 5. Foutafhandeling en Juridische Basis
+### 5. Foutafhandeling en Juridische Basisdocumenten
 
-Oprichters vergeten vaak de onzichtbare laag die onder alles ligt.
+Oprichters vergeten vaak de minder zichtbare laag die onder alles ligt.
 
-- **De Controle:** Ziet de gebruiker een schone foutmelding als de server crasht? Heeft u een privacybeleid dat overeenkomt met de werkelijke verwerking van gebruikersgegevens onder de AVG?
-- **De Oplossing:** Voeg foutgrenzen en logging toe, en zorg dat uw juridische pagina's overeenkomen met uw werkelijke gegevensverwerking.
+- **De Controle:** Krijgt een gebruiker bij een serverfout of databasestoring een ruwe code-foutmelding te zien, of een nette, vriendelijke melding? Heeft u een privacybeleid en algemene voorwaarden die exact beschrijven wat uw app met persoonsgegevens doet — in plaats van een generieke sjabloon van internet?
+- **De Oplossing:** Bouw degelijke *error boundaries* en logging in zodat fouten server-side worden geregistreerd in plaats van blootgesteld aan de gebruiker, en zorg dat uw juridische documenten overeenkomen met uw daadwerkelijke gegevensverwerking, vooral onder de Europese AVG (GDPR).
 
-## De Kloof Dichten met LaunchStudio
+### Waarom Oprichters Deze Stappen Overslaan (en Waarom Dat Begrijpelijk Is)
 
-Voor een niet-technische oprichter is het handmatig voltooien van deze checklist vaak frustrerend en gevaarlijk. Eén verkeerd geconfigureerd beveiligingsbeleid kan leiden tot een datalek.
+Dit gebeurt niet omdat niet-technische oprichters onvoorzichtig zijn. Het komt doordat AI-tools een visueel compleet product opleveren, waardoor er geen visueel signaal is dat RLS ontbreekt of dat webhooks niet worden geverifieerd. De interface ziet er 100% af uit, dus is het logisch om aan te nemen dat de achterkant dat ook is. In werkelijkheid is een prototype dat er voor 100% "klaar" uitziet vaak pas op 20-30% van wat nodig is om veilig geld te incasseren — de resterende 70-80% is onzichtbare infrastructuur. Dit is exact de kloof waardoor 80% van de AI-projecten strandt: oprichters komen zonder tijd of zelfvertrouwen te zitten bij het dichten van een kloof waarvan ze het bestaan niet wisten totdat er iets kapot ging.
 
-> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
+## De Kloof Overbruggen met LaunchStudio
 
-Dit is precies waarom [LaunchStudio](https://launchstudio.eu/en/) bestaat. Ondersteund door [Manifera](https://www.manifera.com/) — een softwareontwikkelingsbureau met meer dan 160 succesvolle projecten voor klanten als Vodafone, TNO en CFLW vanuit Amsterdam, Singapore en Ho Chi Minh City — treden we op als uw technische co-founder voor de "laatste kilometer".
+Voor een niet-technische oprichter is het handmatig afwerken van deze checklist frustrerend en risicovol. Eén verkeerd geconfigureerde beveiligingsregel kan leiden tot een ernstig datalek, en één gemist randgeval in een webhook kan betekenen dat een klant betaalt zonder toegang te krijgen.
 
-We dwingen u niet om uw prachtige frontend te herbouwen. Onze engineers voeren de gehele productiechecklist uit. Met ons "Klaar voor lancering" (Launch Ready) pakket maakt u de overstap van een kwetsbaar prototype naar een veilige SaaS in 1 tot 3 weken, voor een vaste prijs tussen €800 en €7.500.
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-## Belangrijkste Inzichten
+Dit is precies waarom [LaunchStudio](https://launchstudio.eu/en/) bestaat. Gesteund door [Manifera](https://www.manifera.com/) — een softwareontwikkelingsbedrijf met ruim 160 succesvolle projecten voor opdrachtgevers als Vodafone, TNO en CFLW, werkend vanuit Amsterdam, Singapore en Ho Chi Minh-stad — treden wij op als uw stille technische co-founder voor de "laatste mijl".
 
-- Het maken van een AI-prototype is pas de eerste stap; de overstap naar een echt product vereist een robuuste backend-infrastructuur.
-- AI-tools slaan kritieke beveiligingsmaatregelen zoals Row Level Security (RLS) en juiste sessieverloop vaak over.
-- Geautomatiseerde betalings-webhooks zijn verplicht om een schaalbare SaaS te draaien.
-- LaunchStudio voltooit de "laatste kilometer" checklist voor u, zodat u in weken in plaats van maanden lanceert.
+Wij dwingen u niet om de fraaie frontend die u met AI heeft gemaakt opnieuw te bouwen. In plaats daarvan nemen onze engineers uw codebase en werken de volledige productiechecklist af: we beveiligen uw database, sluiten betalingswebhooks aan, deployen uw app naar uw eigen domein en regelen foutafhandeling en juridische basisvereisten.
 
-## Echt Voorbeeld
+Met ons **"Klaar voor lancering" (Launch Ready)** pakket transformeert u uw kwetsbare AI-prototype binnen 1 tot 3 weken in een volwaardige, veilige SaaS, voor een vaste projectprijs tussen €800 en €7.500 — een fractie van de kosten van een traditioneel bureau dat alles vanaf nul zou herbouwen.
 
-### Een AI-Native Oprichter in Actie: De Maker van de Fitness-App
+## Belangrijkste inzichten
 
-Lars, een personal trainer in Den Haag, had een idee voor een app die aangepaste trainingsschema's genereerde. Zonder programmeerervaring gebruikte hij **Lovable** om zijn UI te bouwen. Hij maakte een AI-prototype dat er prachtig uitzag.
+- Het maken van een AI-prototype is slechts de eerste stap; de transformatie naar een echt product vereist robuuste backend-infrastructuur op vijf specifieke gebieden.
+- AI-tools slaan essentiële beveiliging zoals Row Level Security (RLS) en correct sessiebeheer stelselmatig over.
+- Geautomatiseerde betalingswebhooks — met handtekeningverificatie en afhandeling van annuleringen — zijn verplicht voor een schaalbare SaaS.
+- Nette foutafhandeling en AVG-conforme juridische documenten worden vaak vergeten maar brengen reële compliancerisico's met zich mee.
+- LaunchStudio voltooit deze "laatste mijl" checklist voor u, beveiligt uw AI-code en zorgt dat u binnen enkele weken veilig live bent.
 
-Lars had 50 klanten klaarstaan om €15/maand te betalen, maar zijn prototype had geen echte authenticatie, geen database om geschiedenis op te slaan en geen betalingsmogelijkheid.
+[Bereken direct wat het kost om uw prototype om te zetten in een live product](https://launchstudio.eu/en/#calculator).
 
-Lars benaderde **LaunchStudio (door Manifera)**. Onze engineers behielden zijn Lovable-frontend exact zoals hij hem had ontworpen. In 10 dagen implementeerden we Supabase Auth voor veilige inlogs, stelleten een PostgreSQL-database in met strikte RLS-policies, integreerden Mollie voor maandelijkse abonnementen via iDEAL met webhook-dekking, en voegden foutmonitoring toe.
+## Echt voorbeeld
 
-**Resultaat:** Lars lanceerde zijn app twee weken later. Hij sloot zijn 50 klanten succesvol aan en genereerde direct €750 MRR. *"Ik bouwde de auto, maar LaunchStudio zette de motor erin."*
+### Een AI-native oprichter in actie: De maker van de fitness-app
 
-**Kosten & Doorlooptijd:** €2.200 (Launch Ready-pakket met Mollie-integratie) — afgerond in 10 werkdagen.
+Lars, personal trainer in Den Haag, had een uitstekend idee voor een app die gepersonaliseerde trainingsschema's genereerde. Zonder enige programmeerervaring gebruikte hij **Lovable** om zijn gebruikersinterface te bouwen. Binnen een week had hij een AI-prototype dat er fantastisch uitzag; de frontend was perfect.
+
+Lars liep echter tegen een muur aan. Hij had 50 klanten klaarstaan die €15 per maand wilden betalen, maar zijn prototype had geen echte gebruikersauthenticatie, geen database om trainingshistorie op te slaan en geen mogelijkheid om betalingen te verwerken. Hij zat muurvast op de "laatste mijl".
+
+Lars overwoog een freelance ontwikkelaar in te huren, maar de offertes varieerden van €8.000 tot €15.000 omdat freelancers eisten dat zijn Lovable-frontend vanaf nul werd herbouwd.
+
+Gefrustreerd nam Lars contact op met **LaunchStudio (door Manifera)**. Onze engineers bekeken zijn codebase en behielden zijn Lovable-frontend exact zoals ontworpen. Binnen 10 werkdagen implementeerden we Supabase Auth voor veilige logins, richtten we een PostgreSQL-database in met strikte RLS-policies om gezondheidsdata te beschermen, integreerden we Mollie voor maandelijkse incasso's via iDEAL met volledige webhook-ondersteuning, en voegden we foutmonitoring toe.
+
+**Resultaat:** Lars lanceerde zijn app twee weken later. Hij sloot direct zijn 50 klanten aan en behaalde meteen €750 MRR. Zijn app is veilig, professioneel en draait volledig geautomatiseerd. *"Ik had de carrosserie gebouwd, maar LaunchStudio heeft de motor erin gezet zodat ik er daadwerkelijk mee de weg op kon."*
+
+**Kosten & tijdlijn:** €2.200 (Launch Ready Pakket met Mollie-integratie) — live in 10 werkdagen.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Waarom kan mijn AI-tool deze checklist niet voor mij voltooien?
-Het instellen van productie-infrastructuur vereist het orchestreren van meerdere externe diensten (Stripe-dashboards, domeinregisters, database-bedieningspanelen) waar de AI geen toegang toe heeft, en het redeneren over het gehele systeem tegelijk.
+### Waarom kan mijn AI-tool deze checklist niet automatisch voor mij afronden?
+AI-modellen genereren code op basis van de directe context van uw prompt. Het opzetten van productie-infrastructuur vereist het aansturen van meerdere externe diensten (Stripe-dashboards, domeinregistrars, database-omgevingen) waar AI geen toegang toe heeft, en vraagt om overkoepelend systeemdenken over de gehele applicatie.
 
-### 2. Moet ik kunnen programmeren om LaunchStudio te gebruiken?
-Helemaal niet. LaunchStudio is specifiek ontworpen voor niet-technische oprichters. U draagt uw AI-prototype over en onze engineers verzorgen 100% van de technische implementatie.
+### Moet ik kunnen programmeren om LaunchStudio in te schakelen?
+Beslist niet. LaunchStudio is speciaal ontworpen voor niet-technische oprichters. U beschrijft uw product, levert uw AI-prototype aan en onze engineers verzorgen 100% van de technische realisatie om live te gaan, inclusief beveiliging, betalingen en hosting.
 
-### 3. Hoe lang duurt het om mijn prototype om te zetten in een live app?
-Afhankelijk van de complexiteit duurt het proces bij LaunchStudio typisch tussen de 1 en 3 weken. We bieden een gegarandeerde tijdlijn vooraf.
+### Hoeveel tijd kost het om mijn prototype om te zetten in een live app?
+Afhankelijk van de complexiteit van uw wensen (zoals het aantal abonnementsvormen of databasetabellen) duurt het traject bij LaunchStudio doorgaans 1 tot 3 weken. Wij geven altijd een gegarandeerde planning af vóór aanvang.
 
-### 4. Kan ik het ontwerp van de app nog aanpassen nadat u deze heeft uitgerold?
-Ja. Omdat LaunchStudio uw oorspronkelijke frontend-architectuur behoudt, kunt u AI-tools zoals Cursor of Lovable blijven gebruiken om nieuwe UI-componenten te genereren.
+### Kan ik het ontwerp van de app nog aanpassen nadat jullie hem live hebben gezet?
+Ja. Doordat LaunchStudio uw oorspronkelijke frontend-architectuur intact laat, kunt u met AI-tools zoals Cursor of Lovable nieuwe UI-componenten blijven toevoegen. Onze backend-infrastructuur draait veilig en stabiel op de achtergrond zonder uw ontwerpaanpassingen in de weg te zitten.
 
-### 5. Wat als mijn prototype erg rommelig is of fouten bevat?
-Ons team heeft tientallen met AI gegenereerde codebases geauditeerd. We identificeren de kwetsbare onderdelen van uw code en stabiliseren deze voordat we de backend-infrastructuur aansluiten.
+### Wat als mijn prototype erg rommelig is of fouten bevat?
+Ons team heeft tientallen met AI gebouwde codebases geauditeerd. Wij kennen de typische foutpatronen van tools als Bolt en Lovable door en door. Tijdens onze technische intake stabiliseren we de kwetsbare delen van uw code vóórdat we de backend-infrastructuur aansluiten.
 
 <script type="application/ld+json">
 {
@@ -111,42 +122,42 @@ Ons team heeft tientallen met AI gegenereerde codebases geauditeerd. We identifi
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom kan mijn AI-tool deze checklist niet voor mij voltooien?",
+      "name": "Waarom kan mijn AI-tool deze checklist niet automatisch afronden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het instellen van infrastructuur vereist het orchestreren van externe diensten (Stripe, domeinen, databases) waar AI geen toegang toe heeft en cross-system logica vereist."
+        "text": "Productie-infrastructuur vereist toegang tot externe dashboards (Stripe, domeinen, databases) en integraal systeemdenken over uw complete applicatie, wat AI niet autonoom kan uitvoeren."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet ik kunnen programmeren om LaunchStudio te gebruiken?",
+      "name": "Moet ik kunnen programmeren om LaunchStudio in te schakelen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. LaunchStudio is gebouwd voor niet-technische oprichters. U levert het AI-prototype in en onze engineers verzorgen 100% van de backend-implementatie."
+        "text": "Nee. LaunchStudio is ontworpen voor niet-technische oprichters. U levert uw AI-prototype aan en onze engineers regelen de volledige backend, beveiliging en deployment."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe lang duurt het om mijn prototype om te zetten in een live app?",
+      "name": "Hoeveel tijd kost het om een prototype live te zetten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het proces duurt typisch 1 tot 3 weken, afhankelijk van de complexiteit. We bieden een vaste prijs en tijdlijn vooraf."
+        "text": "Het traject duurt doorgaans 1 tot 3 weken tegen een vaste prijsafspraak en gegarandeerde opleverdatum."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik het ontwerp van de app nog aanpassen na uitrol?",
+      "name": "Kan ik het ontwerp nog aanpassen na de livegang?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. We behouden uw frontend-architectuur zodat u AI-tools kunt blijven gebruiken voor UI-updates terwijl onze backend veilig op de achtergrond draait."
+        "text": "Ja. De frontend blijft volledig compatibel met AI-tools zoals Lovable en Cursor, zodat u vrij kunt blijven itereren op de gebruikerservaring."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat als mijn prototype erg rommelig is of fouten bevat?",
+      "name": "Wat als mijn prototype rommelig is of fouten bevat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ons team specialiseert zich in het auditeren van AI-codebases. We identificeren kwetsbare patronen en stabiliseren uw code voordat we de backend aansluiten."
+        "text": "Ons engineeringteam auditteert en stabiliseert de AI-codebase grondig vóórdat we de veilige backend- en betalingsinfrastructuur koppelen."
       }
     }
   ]

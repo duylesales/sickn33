@@ -1,22 +1,21 @@
 ---
-Title: AI Websites Bouwen Die Bezoekers Omzetten in Klanten
-Keywords: AI websites, AI best website, AI best websites, websites for AI, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: AI-Native Founder (Non-Technical)
+Titel: "AI-Websites Bouwen Die Bezoekers Omzetten in Betalende Klanten"
+Trefwoorden: AI websites, AI best website, AI best websites, websites for AI, LaunchStudio, Manifera
+Koperfase: Overweging
 ---
 
-# AI Websites Bouwen Die Bezoekers Omzetten in Klanten
+# AI-Websites Bouwen Die Bezoekers Omzetten in Betalende Klanten
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI-Websites Die Daadwerkelijk Converteren: Voorbij Het Mooie Prototype",
-  "description": "AI-websites zien er professioneel uit, maar zetten bezoekers zelden om in betalende klanten. De ontbrekende componenten — betalingsverwerking, gebruikersaccounts en productie-hosting — bepalen of uw door AI gebouwde site omzet genereert of alleen maar bewondering oogst.",
+  "headline": "AI-Websites Die Daadwerkelijk Converteren: Verder dan het Mooie Prototype",
+  "description": "AI-websites ogen professioneel maar converteren zelden direct. De ontbrekende onderdelen — betalingen, accounts en hosting — bepalen of uw site omzet genereert.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/nl/"
+    "url": "https://launchstudio.eu/en/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,141 +25,113 @@ Target Persona: AI-Native Founder (Non-Technical)
   "datePublished": "2026-11-05",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/nl/blog/ai-websites"
+    "@id": "https://launchstudio.eu/en/blog/ai-websites"
   }
 }
 </script>
 
-Uw door AI gebouwde website heeft een hero-sectie met een gradient-achtergrond, perfect uitgelijnde feature-kaarten, een carrousel met getuigenissen en een prijstabel met drie niveaus. Het is prachtig. Maar hij verwerkt geen betalingen, maakt geen gebruikersaccounts aan, slaat geen gegevens op en draait lokaal op uw laptop.
+Uw met AI gebouwde website heeft een prachtige hero-sectie met vloeiende kleurovergangen, uitgelijnde feature-kaarten, een carrousel met klantervaringen en een prijstabel met drie abonnementsvormen. Visueel is het een meesterwerk. Maar de website verwerkt geen betalingen, maakt geen gebruikersaccounts aan, slaat geen data op en draait enkel lokaal op uw laptop.
 
-Prachtige websites die niets doen, zijn het bepalende artefact van het AI-native founder tijdperk. De tools zijn zó goed geworden in visuele output, dat de schijn van een afgewerkt product bijna niet te onderscheiden is van de realiteit dat er functioneel niets achter de interface zit.
+Prachtige websites die functioneel niets doen, zijn het kenmerkende symbool van het AI-tijdperk. De tools zijn visueel zo geavanceerd geworden dat het uiterlijk van een afgerond product nauwelijks te onderscheiden is van een lege huls zonder functionele backend.
 
-Dit is belangrijk omdat uw eerste indruk bij potentiële klanten nu bestaat uit visuele perfectie, onmiddellijk gevolgd door functionele teleurstelling. Ze klikken op "Aan de slag", en er gebeurt niets. Ze voeren hun creditcardgegevens in, en er wordt niets afgeschreven. Ze maken een account aan, en hun gegevens verdwijnen zodra ze de browser sluiten.
+Het risico: de eerste indruk van potentiële klanten is visuele perfectie, direct gevolgd door functionele teleurstelling. Ze klikken op "Aan de slag" en er gebeurt niets. Ze voeren betaalgegevens in en er wordt niets afgeschreven. Ze maken een account aan en hun gegevens zijn weg zodra ze de browser sluiten.
 
-De vraag is niet of AI websites kan bouwen. Dat kan het overduidelijk. De vraag is: kan uw AI-website daadwerkelijk een bedrijf runnen?
+De vraag is niet of AI websites kan ontwerpen — dat is evident. De vraag is: kan uw AI-website daadwerkelijk een bedrijf runnen?
 
 ## Wat AI-Websites Leveren (en Wat Ze Overslaan)
 
-AI website builders blinken uit in de presentatielaag. De HTML, CSS en JavaScript die de visuele ervaring creëren, zijn van oprechte productiekwaliteit. Responsieve lay-outs, moderne typografie, vloeiende animaties, toegankelijke kleurcontrasten — dit zijn de elementen waarop AI-modellen uitgebreid zijn getraind, en ze leveren deze met verve.
+AI-websitebouwers blinken uit in de presentatielaag: responsieve lay-outs, moderne typografie, strakke CSS en toegankelijke kleurencombinaties.
 
-Hier is wat aanwezig is en wat ontbreekt in een typische AI-gegenereerde website:
+**Aanwezig (Klaar voor Gebruik):**
+- Responsief design voor mobiel, tablet en desktop
+- Moderne UI-componenten (modals, kaarten, navigatiemenu's)
+- SEO-vriendelijke HTML-structuur met correcte koppenhiërarchie
+- Toegankelijkheid (contrasten, alt-teksten, toetsenbordnavigatie)
 
-**Aanwezig (Klaar voor Productie):**
-- Responsief ontwerp voor mobiel, tablet en desktop.
-- Moderne UI-componenten (kaarten, modale vensters, navigatiemenu's).
-- SEO-vriendelijke HTML-structuur met correcte koppenhiërarchie.
-- Basis toegankelijkheid (alt-teksten, contrastratio's, toetsenbordnavigatie).
-- Schone CSS met consistente design tokens.
+**Afwezig (Onmisbaar voor een Bedrijf):**
+- SSL-certificaten en geforceerde HTTPS-beveiliging
+- Werkende contactformulieren die uw inbox bereiken
+- Betalingsverwerking conform Europese PSD2/SCA-richtlijnen
+- Veilige gebruikersauthenticatie en wachtwoord-hashing
+- CMS-functionaliteit om content te beheren zonder code-aanpassingen
+- Koppeling van een eigen domeinnaam met correct DNS-beheer
+- CDN-distributie en prestatie-optimalisatie
 
-**Ontbrekend (Vereist voor Bedrijfsvoering):**
-- SSL-certificaten en HTTPS-afdwinging.
-- Contactformulierinzendingen die daadwerkelijk in uw inbox belanden.
-- Betalingsverwerking met de juiste PCI-compliance.
-- Aanmaken van gebruikersaccounts met veilige wachtwoordopslag.
-- Analytics tracking verder dan alleen basis paginaweergaven.
-- CMS-functionaliteit voor het bijwerken van content zonder code te wijzigen.
-- Configuratie van een custom domeinnaam met DNS-beheer.
-- Prestatie-optimalisatie (beeldcompressie, lazy loading, CDN).
+## Drie Categorieën AI-Websites
 
-De aanwezige elementen zorgen ervoor dat mensen uw website bewonderen. De ontbrekende elementen zorgen ervoor dat mensen u daadwerkelijk betalen.
+| Categorie | Wat AI Levert | Wat Nodig Is voor Productie | Richtprijs LaunchStudio |
+|---|---|---|---|
+| **1. Marketing Website** | Complete frontend met modern design | Formulier-backend, eigen domein, SSL, e-mail en analytics | €800–€2.000 |
+| **2. Webapplicatie** | Interactieve UI en routing | Authenticatie, database, API-routes, foutafhandeling, hosting | €2.000–€4.500 |
+| **3. SaaS Platform** | Complete complexe componentstructuur | Stripe/Mollie, abonnementsbeheer, RLS, managed hosting | €2.500–€7.500 |
 
-## De Drie Categorieën van AI-Websites
+## Waarom "Gewoon Deployen" Niet Voldoet
 
-Niet elke AI-website vereist hetzelfde niveau van professionele engineering. Begrijpen in welke categorie uw project valt, bepaalt de juiste investering:
+Elke AI-tool heeft tegenwoordig een "Deploy"-knop. Lovable pusht naar Vercel, Bolt exporteert naar StackBlitz. Dat geeft het gevoel dat deployment geregeld is, maar het pusht louter de statische voorkant.
 
-### Categorie 1: Marketing Website (€800–€2.000)
+Wat ontbreekt:
+- Beveiligde omgevingsvariabelen (API-sleutels staan nog in de code)
+- Gescheiden productie-databases
+- CORS-beveiligingsbeleid tegen ongeautoriseerde API-aanroepen
+- Snelheidsbegrenzingen (rate limiting) tegen misbruik
+- Uptime-monitoring en automatische herstel-back-ups
 
-Een statische of grotendeels statische website die informatie presenteert, leads verzamelt en bezoekers naar een call-to-action leidt. Denk aan: landingspagina's, portfoliosites, bureau-websites, evenementpagina's.
+Dit is de infrastructuurlaag die het team van [Manifera](https://www.manifera.com/services/custom-software-development/) bouwt. Met ruim 120 engineers in Ho Chi Minh-stad en projectmanagement aan de Herengracht 420 in Amsterdam realiseert LaunchStudio deze fundamenten binnen enkele dagen.
 
-**Wat AI levert:** Een complete frontend met modern design.
-**Wat u moet toevoegen:** Een backend voor contactformulieren, e-mailintegratie, een custom domeinnaam, SSL, analytics en basis SEO-configuratie.
+## De Conversiekloof: Bewondering versus Omzet
 
-### Categorie 2: Web Applicatie (€2.000–€4.500)
+Een mooie AI-website levert complimenten op. Complimenten betalen de rekeningen niet. Het dichten van de conversiekloof vereist drie werkende stappen:
 
-Een interactieve website waar gebruikers accounts aanmaken, gegevens invoeren en interactie hebben met functies. Denk aan: dashboards, boekingssystemen, rekenmodules, interne tools.
+1. **Bezoeker → Lead**: Werkende formulieren met directe e-maillevering
+2. **Lead → Gebruiker**: Veilige accountcreatie met e-mailverificatie
+3. **Gebruiker → Betalende Klant**: Naadloze checkout met Stripe of Mollie
 
-**Wat AI levert:** Frontend met interactieve componenten en basis routing.
-**Wat u moet toevoegen:** Gebruikersauthenticatie, een database, API-routes, invoervalidatie, foutafhandeling en hosting.
+[LaunchStudio](https://launchstudio.eu/en/#contact) realiseert deze drie stappen binnen 1 tot 3 weken met behoud van uw met AI gebouwde ontwerp.
 
-### Categorie 3: SaaS Platform (€2.500–€7.500)
+## Belangrijkste inzichten
 
-Een abonnementsgebaseerde webapplicatie met betalingsverwerking, multi-user toegang en doorlopend gegevensbeheer. Denk aan: projectmanagementtools, CRM-systemen, analytics platforms.
+- AI-tools leveren hoogwaardige ontwerpen en frontend-componenten, maar slaan functionele backend-systemen over.
+- Zonder veilige dataopslag, authenticatie en betalingsverwerking kan een website geen omzet genereren.
+- Een eenvoudige "Deploy"-knop in een AI-tool uploadt slechts de voorkant zonder productie-omgevingsvariabelen of databasebeveiliging.
+- LaunchStudio overbrugt de conversiekloof door uw AI-website te voorzien van professionele infrastructuur binnen 1 tot 3 weken.
 
-**Wat AI levert:** Een complete frontend met complexe componentarchitectuur.
-**Wat u moet toevoegen:** Alles uit Categorie 2, plus Stripe/Mollie-integratie, abonnementsbeheer, tenant-isolatie, transactionele e-mails en managed hosting inclusief monitoring.
+## Echt voorbeeld
 
-[LaunchStudio](https://launchstudio.eu/nl/) biedt vaste-prijspakketten voor alle drie de categorieën, met transparante prijzen via hun [online calculator](https://launchstudio.eu/#calculator).
+### Een AI-native oprichter in actie: Van portfolio-website naar online boekingsplatform
 
-## Waarom "Gewoon Deployen" Niet Werkt
+Anouk, freelance interieurontwerper in Eindhoven, bouwde met Lovable een portfolio-website. De AI genereerde een prachtige showcase met paginagrote projectfoto's en interactieve voor/na-schuifbalken.
 
-Elke AI-tool heeft een "Deploy"-knop. Lovable kan pushen naar Vercel. Bolt kan exporteren naar StackBlitz. Het voelt alsof de deployment is afgehandeld. Dat is niet zo.
+Haar klanten waren enthousiast, maar wilden direct via de site adviesgesprekken boeken en samengestelde materialensets bestellen. Anouk probeerde zelf Calendly en Stripe toe te voegen via Lovable, maar de lay-out brak en de betaalknop werkte uitsluitend in testmodus.
 
-Wat deze deployment-opties daadwerkelijk doen, is uw frontend-code naar een hostingprovider pushen. Wat ze niet doen:
+Een lokale webbouwer vroeg 6.500 euro om de hele site opnieuw te bouwen in Shopify, waardoor haar unieke ontwerp verloren zou gaan.
 
-- Environment variables configureren voor productie (uw API-sleutels staan nog steeds zichtbaar in de code).
-- Een productiedatabase instellen die gescheiden is van uw testgegevens.
-- Correcte CORS-policies configureren (voorkomt ongeautoriseerde API-toegang).
-- Rate limiting implementeren (voorkomt misbruik).
-- Monitoring en alarmering instellen (weten wanneer er iets breekt).
-- Back-upsystemen configureren (herstellen van dataverlies).
-- Vernieuwing van SSL-certificaten beheren (voorkomt "Niet Veilig" browserwaarschuwingen).
+Anouk schakelde LaunchStudio in. Het team behield haar volledige Lovable-frontend, integreerde een Calendly-API in haar eigen stijl, koppelde Mollie voor iDEAL-betalingen voor de materialensets en verzorgde de Vercel-deployment op haar eigen domein.
 
-Dit is de infrastructuurlaag die het [engineeringteam van Manifera](https://www.manifera.com/services/custom-software-development/) bouwt tijdens het LaunchStudio-proces. Met meer dan 120 ingenieurs werkend vanuit hun ontwikkelcentrum aan de Pho Quang Street in Ho Chi Minh City en Europees projectmanagement vanaf de Herengracht 420 in Amsterdam, regelt het team infrastructuurconfiguraties die een solo-oprichter weken zou kosten om te leren en correct te implementeren.
+**Resultaat:** Anouk's website genereert inmiddels 1.800 euro per maand aan online bestellingen en consult-boekingen zonder handmatige facturen.
 
-## De Omzetkloof: Bewondering vs. Transactie
+> *"Mijn Lovable-website was prachtig maar zakelijk onbruikbaar. LaunchStudio maakte hem zowel mooi als winstgevend, zonder ook maar één designelement aan te tasten."*  
+> — **Anouk Bakker, Oprichter Studio Anouk Interiors (Eindhoven)**
 
-Uw AI-website krijgt complimenten. Van complimenten kunt u de huur niet betalen. De omzetkloof (revenue gap) is de afstand tussen een website die bezoekers imponeert en een website die hen omzet in betalende klanten.
-
-Het dichten van deze kloof vereist drie specifieke conversies:
-
-1. **Bezoeker → Lead** — Een werkend contactformulier met daadwerkelijke e-mailbezorging (geen console.log).
-2. **Lead → Gebruiker** — Een correcte accountaanmaak met e-mailverificatie.
-3. **Gebruiker → Klant** — Betalingsverwerking inclusief abonnementsbeheer.
-
-Elke conversie vereist backend-infrastructuur die AI-tools niet genereren. [LaunchStudio](https://launchstudio.eu/nl/#contact) slaat de brug voor alle drie in een enkele opdracht, doorgaans binnen één tot drie weken.
-
-## Praktijkvoorbeeld
-
-### Een AI-Native Founder in de praktijk: De Portfolio-Website Die Een Boekingsplatform Werd
-
-Anouk, een freelance interieurontwerper in Eindhoven, gebruikte Lovable om wat zij in eerste instantie bedoelde als een portfolio-website te bouwen. De AI genereerde een verbluffende showcase met schermvullende projectfotografie, interactieve voor/na-sliders en een vloeiende scrollervaring.
-
-Klantfeedback veranderde haar ambitie. Drie klanten vroegen of ze direct via de site consultaties konden boeken. Twee vroegen of ze haar samengestelde materiaal-samplekits konden kopen. Anouk probeerde via Lovable Calendly-embeds en een Stripe-afrekenknop toe te voegen, maar de Calendly-integratie brak de paginalay-out, en de Stripe-knop werkte alleen in testmodus.
-
-Een lokale webontwikkelaar in Eindhoven offreerde €6.500 voor een e-commerce herbouw met Shopify. Dit betekende het verlies van haar op maat gemaakte Lovable-ontwerp — precies dátgene wat klanten zo geweldig vonden aan de site.
-
-Anouk vond LaunchStudio via de website. Binnen één kennismakingsgesprek van 15 minuten bepaalde het team de scope (omvang): behoud de Lovable frontend volledig, voeg een Calendly API-integratie toe die past bij haar design system, implementeer Mollie betalingsverwerking (geprefereerd door Nederlandse klanten boven Stripe) voor de aankoop van materiaalkits, en deploy naar Vercel met een custom domeinnaam.
-
-**Resultaat:** Anouk's website genereert nu €1.800/maand uit de verkoop van materiaalkits en boekingen van consultaties — inkomsten die voorheen handmatige e-mailcoördinatie en bankoverschrijvingen vereisten.
-
-> *"Mijn Lovable-website was prachtig, maar zakelijk gezien nutteloos. LaunchStudio maakte hem prachtig ÉN winstgevend. Ze hebben geen enkel ontwerpelement veranderd — ze hebben er alleen voor gezorgd dat de knoppen daadwerkelijk werken."*
-> — **Anouk Bakker, Oprichter, Studio Anouk Interiors (Eindhoven)**
-
-**Kosten & Tijdlijn:** €1.400 (Launch Ready Pakket) — productie-klaar en live in 5 werkdagen.
+**Kosten & tijdlijn:** €1.400 (Launch Ready Pakket) — binnen 5 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### (Scenario: Oprichter die AI website builders vergelijkt) Welke AI-tool maakt de beste websites voor een klein bedrijf?
+### Welke AI-tool bouwt de beste websites voor een klein bedrijf?
+Lovable levert de meest complete websites inclusief routering en database-opties. Voor snelle one-page landingspagina's is Bolt sneller. Voor maximale controle over componenten is v0 van Vercel een uitstekende keuze.
 
-Lovable produceert de meest complete AI-websites met ingebouwde routing, responsief design en Supabase-integratie. Voor eenvoudige landingspagina's is Bolt sneller. Voor maximale controle over het ontwerp genereert v0 van Vercel individuele componenten die u kunt samenvoegen. De beste keuze hangt af van de vraag of u een statische site of een interactieve applicatie nodig heeft.
+### Kan LaunchStudio Stripe of Mollie toevoegen aan mijn bestaande AI-website?
+Ja. Betalingsintegratie is een van onze kernspecialisaties. Wij implementeren volledige checkout-flows, webhook-verwerking en facturatie met Stripe voor internationale klanten of Mollie voor iDEAL in Nederland en België.
 
-### (Scenario: Oprichter die al een AI-website heeft en betalingen wil toevoegen) Kan LaunchStudio Stripe of Mollie toevoegen aan mijn bestaande AI-gegenereerde website?
+### Kan ik LaunchStudio inzetten als white-label partner voor mijn ontwerpbureau?
+Zeker. Veel marketing- en ontwerpbureaus gebruiken LaunchStudio als technische backend-partner. U beheert het klantcontact en het ontwerp; Manifera levert de robuuste engineering onder uw eigen merknaam.
 
-Ja. Betalingsintegratie is een van de kerndiensten van LaunchStudio. Het engineeringteam implementeert complete betalingsstromen, inclusief checkout, verwerking van webhooks, abonnementsbeheer en het genereren van facturen. Ze gebruiken Stripe voor internationale klanten en Mollie voor de Nederlandse/Benelux-markt, waarbij uw bestaande frontend-ontwerp behouden blijft.
+### Scoort een met AI gebouwde website goed op Google Core Web Vitals?
+De HTML-structuur van AI-tools is doorgaans schoon. Waar het vaak misgaat is ontbrekende beeldcompressie, ontbrekende lazy loading en ontbrekende CDN-caching. LaunchStudio optimaliseert deze aspecten bij deployment voor maximale laadsnelheid.
 
-### (Scenario: Bureaueigenaar die AI-websitediensten wil aanbieden) Kan ik LaunchStudio gebruiken als white-label productiepartner voor mijn bureau?
-
-Ja. LaunchStudio biedt white-label partnerschappen waarbij zij de technische productie verzorgen, terwijl uw bureau de klantrelatie beheert. Uw branding, uw klantcommunicatie. Manifera levert de engineering. Neem direct contact met hen op om de voorwaarden van het partnerschap te bespreken.
-
-### (Scenario: Oprichter die zich zorgen maakt over de prestaties van de website) Zal mijn AI-gegenereerde website snel genoeg zijn voor Google's Core Web Vitals?
-
-AI-gegenereerde frontends scoren over het algemeen goed op Largest Contentful Paint (LCP) en Cumulative Layout Shift (CLS) omdat de HTML-structuur schoon is. Waar de prestaties onder lijden, is bij niet-geoptimaliseerde afbeeldingen, ontbrekende lazy loading en geen CDN-configuratie. LaunchStudio pakt alle drie aan tijdens de deployment, zodat uw site de Core Web Vitals haalt.
-
-### (Scenario: Niet-technische oprichter onzeker over hostingkosten) Hoeveel kost de hosting van een AI-gebouwde website per maand na lancering?
-
-Met het Launch Ready-pakket van LaunchStudio beheert u uw eigen hosting — Vercel en Netlify bieden royale gratis niveaus (free tiers) die de meeste startende sites dekken. Met het Launch & Grow-pakket á €49/maand verzorgt LaunchStudio de managed hosting, inclusief SSL, monitoring, back-ups en beveiligingsupdates. Beide opties zijn aanzienlijk goedkoper dan traditioneel hostingbeheer.
+### Wat kost de maandelijkse hosting van een AI-website na lancering?
+Bij het Launch Ready pakket beheert u uw eigen hosting op gratis of voordelige tiers van Vercel/Netlify. Met het Launch & Grow pakket voor 49 euro per maand verzorgt LaunchStudio complete managed hosting inclusief SSL, monitoring en dagelijkse back-ups.
 
 <script type="application/ld+json">
 {
@@ -169,42 +140,42 @@ Met het Launch Ready-pakket van LaunchStudio beheert u uw eigen hosting — Verc
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Welke AI-tool maakt de beste websites voor een klein bedrijf?",
+      "name": "Welke AI-tool bouwt de beste websites voor een klein bedrijf?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lovable produceert de meest complete AI-websites met ingebouwde routing, responsief design en Supabase-integratie. Voor eenvoudige landingspagina's is Bolt sneller. Voor maximale controle over het ontwerp genereert v0 van Vercel individuele componenten. De beste keuze hangt af van de vraag of u een statische site of een interactieve applicatie nodig heeft."
+        "text": "Lovable levert complete webapps met routering; Bolt is ideaal voor snelle landingspagina's; v0 biedt modulaire React-componenten."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio Stripe of Mollie toevoegen aan mijn bestaande AI-gegenereerde website?",
+      "name": "Kan LaunchStudio Stripe of Mollie toevoegen aan mijn bestaande AI-website?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Betalingsintegratie is een van de kerndiensten van LaunchStudio. Het engineeringteam implementeert complete betalingsstromen, inclusief checkout, verwerking van webhooks, abonnementsbeheer en het genereren van facturen. Ze gebruiken Stripe voor internationale klanten en Mollie voor de Nederlandse/Benelux-markt, waarbij uw bestaande frontend-ontwerp behouden blijft."
+        "text": "Ja. LaunchStudio implementeert complete betaalstromen met webhooks en abonnementsbeheer voor zowel Stripe als Mollie (iDEAL)."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik LaunchStudio gebruiken als white-label productiepartner voor mijn bureau?",
+      "name": "Kan ik LaunchStudio inzetten als white-label partner voor mijn ontwerpbureau?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio biedt white-label partnerschappen waarbij zij de technische productie verzorgen, terwijl uw bureau de klantrelatie beheert. Uw branding, uw klantcommunicatie. Manifera levert de engineering. Neem direct contact met hen op om de voorwaarden van het partnerschap te bespreken."
+        "text": "Ja. Wij treden regelmatig op als white-label engineeringpartner voor agencies die AI-ontwerpen technisch productieklaar willen opleveren."
       }
     },
     {
       "@type": "Question",
-      "name": "Zal mijn AI-gegenereerde website snel genoeg zijn voor Google's Core Web Vitals?",
+      "name": "Scoort een met AI gebouwde website goed op Google Core Web Vitals?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI-gegenereerde frontends scoren over het algemeen goed op Largest Contentful Paint en Cumulative Layout Shift omdat de HTML-structuur schoon is. Waar de prestaties onder lijden, is bij niet-geoptimaliseerde afbeeldingen, ontbrekende lazy loading en geen CDN-configuratie. LaunchStudio pakt alle drie aan tijdens de deployment, zodat uw site de Core Web Vitals haalt."
+        "text": "De code is schoon, maar vereist nog beeldcompressie, CDN-configuratie en lazy loading die LaunchStudio tijdens deployment toevoegt."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoeveel kost de hosting van een AI-gebouwde website per maand na lancering?",
+      "name": "Wat kost de maandelijkse hosting van een AI-website na lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Met het Launch Ready-pakket van LaunchStudio beheert u uw eigen hosting — Vercel en Netlify bieden royale gratis niveaus die de meeste startende sites dekken. Met het Launch & Grow-pakket á €49/maand verzorgt LaunchStudio de managed hosting, inclusief SSL, monitoring, back-ups en beveiligingsupdates."
+        "text": "U kunt zelf kosteloos hosten op Vercel/Netlify of kiezen voor LaunchStudio managed hosting voor 49 euro per maand inclusief back-ups en SSL."
       }
     }
   ]

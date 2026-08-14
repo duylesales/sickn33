@@ -1,21 +1,22 @@
-🚨 Hij schreef een test die de exacte output van zijn AI verifieerde. Die faalde willekeurig — zelfs als de functie perfect werkte. Dit is waarom. 🤯
+🚨 Hij schreef een test die controleerde of zijn AI exact een bepaalde tekst teruggaf. De test faalde willekeurig — zelfs toen de AI perfect werkte. Dit is waarom: 🤯
 
-Traditioneel testen gaat ervan uit: dezelfde input = dezelfde output. AI doorbreekt die aanname volledig. Het testen "als normale code" werkt gewoon niet: 😱
+Traditionele softwaretests gaan uit van: dezelfde invoer = altijd exact dezelfde uitvoer. AI breekt die regel volledig. AI testen "als normale code" werkt simpelweg niet: 😱
 
-❌ Exacte-output-tests falen constant, niet omdat de AI kapot is, maar omdat de aanpak fout is
-❌ Gefrustreerd gaf hij testen volledig op — vertrouwend op alleen handmatige steekproeven
-❌ Een bug glipte erdoorheen: vierkante meters van panden stilletjes weggelaten in sommige advertenties
+❌ Exacte woordtests falen voortdurend door onschuldige synoniemen
+❌ Gefrustreerd stopte hij helemaal met testen — en vertrouwde op snelle steekproefjes
+❌ Een echte bug glipte door: het woonoppervlak werd stilletjes weggelaten in advertentieteksten
 
-Wat je in plaats daarvan moet testen: ✅
-✅ Structurele validiteit (juiste velden, geldig formaat, lengtegrenzen)
-✅ Edge cases (lege invoer, vreemde talen, vijandige invoer)
-✅ Op referentie gebaseerde scoring tegen bekend-goede voorbeelden
-✅ Kosten- en latentieregressiecontroles
-✅ Periodieke menselijke beoordeling voor toon/nuance
-✅ Een "golden dataset" van echte inputs/eerdere bugs — prompts geversioneerd als code, getest voor elke merge
+Wat u wél moet testen bij AI: ✅
+✅ Structurele validiteit (juiste JSON-velden, datatype, lengtegrenzen)
+✅ Randgevallen (lege invoer, vreemde talen, prompt injection)
+✅ Referentiekwaliteit tegen een vaste 'golden dataset'
+✅ Automatische controles op token-kosten en laadtijden
+✅ Periodieke menselijke steekproeven voor toon en nuance
 
-Bij **LaunchStudio**, gesteund door Manifera's QA-discipline over 160+ projecten, bouwen we deze gelaagde strategie in. Zijn resultaat: 2 echte bugs gevangen voordat klanten ze ooit zagen. 🛡️🚀
+Belangrijk: beheer prompts in Git net als broncode en test elke promptwijziging verplicht tegen uw referentiedataset vóórdat u naar productie deployt! 📁
 
-👉 Lees waarom unit tests niet genoeg zijn voor AI: [Link naar artikel]
+Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, bouwen we deze gelaagde teststrategie standaard in. Zijn resultaat: 2 echte promptbugs afgevangen vóórdat makelaars er ooit last van hadden. 🛡️🚀
 
-#AITesten #LaunchStudio #Manifera #AINativeFounder #SaaS #QA
+👉 Lees waarom traditionele unit tests niet voldoen voor AI: [Link naar artikel]
+
+#AITesting #LaunchStudio #Manifera #AINativeFounder #SaaS #QA #Cursor #NextJS #TechFounders #StartupOpschalen

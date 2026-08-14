@@ -1,22 +1,22 @@
 ---
-Title: Uw AI Prototype Overzetten naar Volledige Productie
-Keywords: AI prototype, prototype AI, AI generated application, AI app dev, LaunchStudio, Manifera
-Buyer Stage: Decision
-Target Persona: AI-Native Founder (Non-Technical)
+Titel: "Uw AI-Prototype Succesvol Naar Volledige Productie Brengen"
+Trefwoorden: AI prototype, prototype AI, met AI gegenereerde applicatie, AI app ontwikkeling, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Uw AI Prototype Overzetten naar Volledige Productie
+# Uw AI-Prototype Succesvol Naar Volledige Productie Brengen
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Van AI Prototype naar Productie: De Complete Transitiegids voor 2026",
-  "description": "Jouw AI-prototype werkt perfect in demo-modus. Maar echte productie vereist beveiliging, betalingen, hosting en infrastructuur. Een complete gids om je AI-prototype in 2026 van een simpel browsertabblad te transformeren naar een live bedrijf.",
+  "headline": "Van AI-Prototype Naar Productie: De Complete Transitiegids Voor 2026",
+  "description": "Uw AI-prototype werkt in demonstratiemodus. Echte productie vereist beveiliging, betalingen en betrouwbare hosting. Een complete gids om uw prototype naar een live bedrijf te transformeren.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/nl/"
+    "url": "https://launchstudio.eu/en/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,172 +26,161 @@ Target Persona: AI-Native Founder (Non-Technical)
   "datePublished": "2026-11-17",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/nl/blog/ai-prototype"
+    "@id": "https://launchstudio.eu/en/blog/ai-prototype"
   }
 }
 </script>
 
-Op dit exacte moment is een oprichter in Amsterdam bezig zijn of haar AI-prototype te presenteren aan een potentiële investeerder. De demo verloopt vlekkeloos. De investeerder knikt goedkeurend. "Vanaf wanneer kunnen gebruikers beginnen met betalen?"
+Op dit moment toont ergens in Amsterdam een oprichter vol trots zijn met AI gebouwde prototype aan een potentiële investeerder. De demonstratie verloopt vlekkeloos. De investeerder knikt enthousiast: *"Wanneer kunnen betalende klanten hier gebruik van maken?"*
 
-De oprichter valt stil. Ze weten het antwoord niet. Want tussen het AI-prototype dat soepel op hun lokale scherm draait en een daadwerkelijk product dat veilig betalingen van vreemden kan incasseren, gaapt een immense kloof van engineeringwerk waar ze nog niet eens aan begonnen zijn, en die ze waarschijnlijk niet eens volledig overzien.
+De oprichter valt stil. Het antwoord blijft uit. Want tussen het prototype op het scherm en een live applicatie die veilig betalingen verwerkt van onbekenden, gaapt een diepe kloof van software-engineering die nog moet worden overbrugd.
 
-Deze gids overbrugt die immense kloof. Niet met zweverig of vaag advies, maar met de exacte stappen, glasheldere kosten en concrete tijdlijnen die vereist zijn om in 2026 een AI-prototype — gebouwd met Lovable, Bolt, Cursor of een andere AI-coding tool — van demo naar harde productie te brengen.
+Deze gids overbrugt die kloof. Niet met vage adviezen, maar met de exacte stappen, kosten en doorlooptijden die nodig zijn om een AI-prototype — gebouwd met Lovable, Bolt of Cursor — succesvol naar productie te brengen in 2026.
 
-## Stap 1: De Eerlijke Beoordeling — Wat Heeft Jouw AI-Prototype Nú Eigenlijk Echt?
+## Stap 1: Eerlijke Inventarisatie — Wat Heeft Uw Prototype Eigenlijk?
 
-Voordat je een transitie gaat plannen, moet je inventariseren wat je AI-prototype daadwerkelijk wél en niet bezit. Wees daarin meedogenloos eerlijk tegen jezelf — het overschatten van de 'readiness' van je prototype is de meest gemaakte en meest kostbare fout.
+Voordat u de overstap plant, moet u helder in kaart brengen wat uw prototype wél en níét bevat. Uzelf rijk rekenen is de meest gemaakte en kostbare fout.
 
-**Jouw AI-prototype bevat vrijwel zeker:**
-- Een prima functionerende frontend (React/Next.js componenten, routing, styling)
-- Basale gebruikersinteracties via de interface (formulieren invullen, knoppen, navigatie)
-- Enkele simpele database-query's (waarschijnlijk rechtstreekse calls naar Supabase of Firebase)
-- Een visueel ontwerp dat modern en professioneel oogt
-- Een responsive lay-out die werkt op zowel mobiel als desktop
+**Wat uw AI-prototype vrijwel zeker al HEEFT:**
+- Een werkende, fraai vormgegeven frontend (React/Next.js componenten, routering, styling)
+- Basis interacties (formulieren, knoppen, dashboards)
+- Eenvoudige database-queries (meestal directe Supabase-aanroepen)
+- Een professionele en moderne uitstraling
+- Een responsive weergave voor desktop en mobiel
 
-**Jouw AI-prototype mist vrijwel zeker:**
-- Server-side API-routes (alle huidige logica draait uitsluitend in de browser)
-- Row Level Security (strikte beveiligingsregels) op databasetabellen
-- Beheer van environment variables (gevoelige API-sleutels slingeren nu open en bloot in de frontend-code rond)
-- Betalingsverwerking inclusief de afhandeling van webhooks
-- Een e-mailbezorgsysteem (voor zogeheten transactionele e-mails)
-- Foutopsporing (error tracking) en monitoring
-- Een waterdichte configuratie voor productie-deployment
-- Volautomatische database back-ups
-- Input-validatie aan de kant van de server
-- Rate limiting (snelheidslimieten) op openbare API-endpoints
-- Systemen om AVG/GDPR-compliance te borgen
+**Wat uw AI-prototype vrijwel zeker nog MIST:**
+- Server-side API-routes (alle logica draait nu nog in de browser)
+- Row Level Security (RLS) op de databasetabellen
+- Veilig beheer van omgevingsvariabelen (API-sleutels staan open)
+- Betalingsverwerking met webhook-afhandeling (Stripe/Mollie)
+- Transactie-e-mailsysteem voor welkomstberichten en facturen
+- Foutopsporing en uptime-monitoring (Sentry)
+- Productie-hostingconfiguratie met CDN en SSL
+- Geautomatiseerde databaseback-ups
+- Server-side invoervalidatie en data-ontsmetting
+- Rate limiting tegen misbruik door bots
+- Technische AVG/GDPR-mechanismen
 
-Print deze harde checklist uit. Vink af wat je daadwerkelijk, werkend hebt staan. De niet-aangevinkte items vormen de exacte scope van jouw transitie.
+De ontbrekende punten vormen de exacte scope van uw productietransitie.
 
-## Stap 2: Bepaal Jouw Lanceringscategorie
+## Stap 2: Bepaal Uw Lancering-Categorie
 
-Niet elk AI-prototype vereist dezelfde zware productie-infrastructuur. Identificeer in welke categorie jij valt om de kosten en de tijdlijn realistisch in te schatten:
+Niet elk prototype vereist dezelfde hoeveelheid backend-infrastructuur. Bepaal uw categorie om kosten en planning nauwkeurig in te schatten:
 
-### Categorie A: Statische/Marketing Website
-**Je hebt:** Een prachtige landingspagina of een portfolio, gebouwd met Bolt of v0.
-**Je hebt nodig:** Een werkende backend voor je contactformulier, e-mailintegratie, een custom domeinnaam, SSL-beveiliging, analytics.
-**LaunchStudio kosten:** €800–€2.000
-**Tijdlijn:** 3–5 werkdagen
+### Categorie A: Statische / Marketing Website
+**U heeft:** Een professionele landingspagina of portfolio gebouwd met Bolt of v0.
+**U heeft nodig:** Formulier-backend, e-mailkoppeling, eigen domein, SSL, analytics.
+**LaunchStudio tarief:** €800 – €2.000
+**Doorlooptijd:** 3 – 5 werkdagen
 
-### Categorie B: Interactieve Web Applicatie
-**Je hebt:** Een dashboard of tool, gebouwd met Lovable, inclusief gebruikersinteracties.
-**Je hebt nodig:** Authenticatie, ijzersterke database-beveiliging, API-routes, afhandeling van foutmeldingen, deployment.
-**LaunchStudio kosten:** €1.500–€3.500
-**Tijdlijn:** 5–10 werkdagen
+### Categorie B: Interactieve Webapplicatie
+**U heeft:** Een interactief dashboard of tool gebouwd met Lovable.
+**U heeft nodig:** Gebruikersauthenticatie, database-beveiliging, API-routes, foutafhandeling en deployment.
+**LaunchStudio tarief:** €1.500 – €3.500
+**Doorlooptijd:** 5 – 10 werkdagen
 
-### Categorie C: SaaS mét Facturatie
-**Je hebt:** Een volwaardige applicatie die gebruikers maandelijks moet gaan factureren.
-**Je hebt nodig:** Werkelijk alles uit Categorie B, plus de integratie van Stripe/Mollie, abonnementsbeheer, gebruiksregistratie (usage tracking), transactionele e-mails.
-**LaunchStudio kosten:** €2.500–€7.500
-**Tijdlijn:** 10–15 werkdagen
+### Categorie C: SaaS met Abonnementsbetalingen
+**U heeft:** Een complete software-applicatie die maandelijks abonnementsgeld incasseert.
+**U heeft nodig:** Alles uit Categorie B + Stripe/Mollie integratie, abonnementsbeheer, verbruiksmeting en transactie-e-mails.
+**LaunchStudio tarief:** €2.500 – €7.500
+**Doorlooptijd:** 10 – 15 werkdagen
 
-### Categorie D: Multi-Tenant SaaS
-**Je hebt:** Een SaaS die door meerdere organisaties/bedrijven gebruikt gaat worden, waarbij de data strikt gescheiden moet blijven.
-**Je hebt nodig:** Alles uit Categorie C, plus snoeiharde tenant-isolatie, role-based access (rechten per rol), facturatie per tenant, datapartitionering.
-**LaunchStudio kosten:** €5.000–€7.500+
-**Tijdlijn:** 12–18 werkdagen
+### Categorie D: Multi-Tenant Enterprise SaaS
+**U heeft:** Een SaaS die door meerdere organisaties wordt gebruikt met strikt gescheiden data.
+**U heeft nodig:** Alles uit Categorie C + tenant-isolatie, rolgebaseerde rechten (RBAC), organisatie-facturatie en data-partities.
+**LaunchStudio tarief:** €5.000 – €7.500+
+**Doorlooptijd:** 12 – 18 werkdagen
 
-[Gebruik de LaunchStudio calculator](https://launchstudio.eu/nl/#calculator) om direct een specifieke inschatting voor jouw prototype op te halen.
+[Gebruik de kostencalculator](https://launchstudio.eu/#calculator) voor een specifieke prijsopgave voor uw prototype.
 
-## Stap 3: Kies Jouw Transitie Partner
+## Stap 3: Kies Uw Transitie-Partner
 
-Je hebt in de basis drie opties om je AI-prototype succesvol naar productie te brengen:
+Er zijn drie routes om uw AI-prototype productierijp te maken:
 
-### Doe Het Zelf (DIY)
-**Realistische tijdlijn:** 2–6 maanden (ervan uitgaande dat je over basale programmeerkennis beschikt)
-**Kosten:** €0 aan directe (out-of-pocket) kosten, maar een gigantische opportuniteitskost
-**Risico:** Amateuristische implementatie van beveiliging, bugs bij de betalingsverwerking, enorme vertraging van je time-to-market
-**Meest geschikt voor:** Oprichters wiens absolute ambitie het is om developer te worden, níét voor oprichters die daadwerkelijk snel een bedrijf willen bouwen
+**1. Alles Zelf Doen**
+*Reële doorlooptijd:* 2 tot 6 maanden studie en vallen en opstaan.
+*Kosten:* €0 aan directe uitgaven, maar torenhoge opportuniteitskosten.
+*Risico:* Kwetsbare beveiliging, haperende betalingen en gemiste marktkansen.
 
-### Huur Een Freelancer In
-**Realistische tijdlijn:** 4–12 weken
-**Kosten:** €5.000–€20.000 (facturatie per uur, hoogst onvoorspelbaar)
-**Risico:** De developer begrijpt mogelijk he-le-maal niets van AI-gegenereerde code, of staat er keihard op om alles from scratch te herbouwen
-**Meest geschikt voor:** Oprichters met engelengeduld en de uitdrukkelijke wens (én kunde) om actief een contractor te managen
+**2. Een Freelance Ontwikkelaar Inhuren**
+*Reële doorlooptijd:* 4 tot 12 weken.
+*Kosten:* €5.000 tot €20.000 (uurtarief, onvoorspelbaar).
+*Risico:* Begrijpt AI-codepatronen vaak niet en wil de frontend opnieuw bouwen.
 
-### Schakel LaunchStudio In
-**Realistische tijdlijn:** 1–3 weken
-**Kosten:** €800–€7.500 (vaste prijzen, 100% voorspelbaar)
-**Risico:** Minimaal — ons volledige team is hyper-gespecialiseerd in de transitie van exact dit soort AI-prototypes
-**Meest geschikt voor:** Oprichters die simpelweg loeisnel willen lanceren zodat ze zich vol op de commercie van hun bedrijf kunnen focussen
+**3. LaunchStudio Inschakelen**
+*Reële doorlooptijd:* 1 tot 3 weken.
+*Kosten:* €800 tot €7.500 (vaste projectprijs).
+*Risico:* Minimaal — gespecialiseerd in het live zetten van AI-prototypes.
 
-[LaunchStudio](https://launchstudio.eu/nl/) is een gespecialiseerd initiatief van [Manifera](https://www.manifera.com/), een bedrijf in custom softwareontwikkeling met meer dan 120 engineers, ruim 160 gelanceerde projecten en fysieke kantoren in Amsterdam (Herengracht 420), Singapore (Tras Street 100) en Ho Chi Minh City (Pho Quang Street 10). Het bedrijf staat onder de bezielende leiding van Herre Roelevink, een ervaren Nederlandse tech-ondernemer met ruim 11 jaar internationale ervaring in het aansturen van engineeringteams.
+[LaunchStudio](https://launchstudio.eu/en/) is een initiatief van [Manifera](https://www.manifera.com/), met 120+ software-engineers, 160+ succesvol opgeleverde projecten en kantoren in Amsterdam (Herengracht 420), Singapore (100 Tras Street) en Ho Chi Minhstad (Pho Quangstraat 10) onder leiding van Herre Roelevink.
 
-## Stap 4: De Transitie Sprint
+## Stap 4: De Transitie-Sprint in 5 Fasen
 
-Ongeacht wié jouw transitie uiteindelijk voor zijn rekening neemt, het daadwerkelijke werk volgt altijd deze vijf ijzeren fases:
+Ongeacht wie uw transitie uitvoert, het technische traject doorloopt vijf fasen:
 
-**Fase 1: Security Hardening (Dag 1–3)**
-Alle API-sleutels worden resoluut verplaatst naar beveiligde, server-side environment variables. Row Level Security wordt ingeschakeld én uiterst streng geconfigureerd. We voegen server-side input-validatie toe. Er wordt stevige rate limiting toegepast op alle openbare endpoints.
+**Fase 1: Beveiligingsharding (Dag 1–3)**
+Alle geheime sleutels verplaatsen naar server-side variabelen, Row Level Security activeren op Supabase, server-side invoervalidatie toevoegen en rate limiting instellen.
 
-**Fase 2: Backend Engineering (Dag 3–8)**
-Er worden robuuste server-side API-routes gebouwd voor werkelijk alle database-operaties. We implementeren een onkraakbare authenticatie-flow inclusief e-mailverificatie. De complete betalingsintegratie mét webhook-pijplijn wordt gebouwd. Het systeem voor het afleveren van transactionele e-mails wordt feilloos ingericht.
+**Fase 2: Backend-Engineering (Dag 3–8)**
+Veilige API-routes bouwen voor alle database-acties, e-mailverificatie inrichten, betalingspijplijn koppelen met webhooks en e-mailservices activeren.
 
-**Fase 3: Data Architectuur (Dag 5–10)**
-Het databaseschema wordt zwaar geoptimaliseerd met de juiste indexering. Er worden schone migratiescripts geschreven voor toekomstige aanpassingen in het schema. Volautomatische, dagelijkse back-ups worden geconfigureerd. We stellen strakke connection pooling in om gelijktijdige gebruikers zonder haperen af te handelen.
+**Fase 3: Data-Architectuur (Dag 5–10)**
+Databaseschema optimaliseren met indexen, geautomatiseerde back-ups instellen en connection pooling activeren voor piekbelasting.
 
-**Fase 4: Deployment (Dag 8–12)**
-De productie-omgeving wordt snaarstrak geconfigureerd op Vercel of AWS. We koppelen je custom domeinnaam en regelen SSL-certificaten. De monitoring wordt ingericht (Sentry om fouten af te vangen, UptimeRobot voor beschikbaarheidscontrole). Er wordt tevens een staging-omgeving opgetuigd voor veilig, toekomstig testwerk.
+**Fase 4: Productie-Deployment (Dag 8–12)**
+Cloud-omgeving inrichten op Vercel of AWS, eigen domeinnaam met SSL koppelen, monitoring configureren (Sentry en UptimeRobot) en een staging-omgeving opzetten.
 
-**Fase 5: Lanceringsverificatie (Dag 10–15)**
-End-to-end (E2E) testing van werkelijk álle gebruikersstromen (user flows). Rigoureuze verificatie van de betalingsverwerking met échte proeftransacties. Een diepgaande veiligheidsscan (security scan) van de live applicatie. En load testing om spijkerhard te verifiëren of de applicatie overeind blijft als er veel gebruikers tegelijk online zijn.
+**Fase 5: Livegang-Validatie (Dag 10–15)**
+End-to-end testen van alle gebruikersstromen, live proefbetalingen uitvoeren en beveiligingsscans draaien.
 
-## Stap 5: Operaties Ná De Lancering (Post-Launch Operations)
+## Stap 5: Na De Livegang
 
-Jouw voormalige AI-prototype is vanaf nu een volwaardige productie-applicatie. Vanaf hier zijn er twee operationele paden:
+Zodra uw prototype live staat, heeft u twee beheeropties:
 
-**Zelf Beheerd (Launch Ready Pakket)**
-Jij bent zélf verantwoordelijk voor de hosting, het tijdig doorvoeren van updates en de continue monitoring. LaunchStudio levert na oplevering 48 uur post-launch support en draagt een perfect gedocumenteerde infrastructuur aan je over. Meest geschikt voor technische founders die echt alle touwtjes in handen willen houden.
+- **Zelf Beheren (Launch Ready Pakket):** U beheert zelf uw hosting en updates. U ontvangt 48 uur intensieve nazorg en complete documentatie.
+- **Beheerd (Launch & Grow Pakket, €49/maand):** LaunchStudio verzorgt managed hosting, SSL-verlenging, beveiligingsupdates, geautomatiseerde back-ups en uptime-monitoring.
 
-**Volledig Beheerd (Launch & Grow Pakket, €49/maand)**
-LaunchStudio neemt de managed hosting, het tijdig vernieuwen van SSL, álle kritieke beveiligingsupdates, de geautomatiseerde back-ups en de 24/7 uptime monitoring volledig voor zijn rekening. Meest geschikt voor niet-technische founders die hun kostbare tijd liever 100% focussen op de keiharde groei van de business.
+[Plan een gratis 15-minuten adviesgesprek](https://launchstudio.eu/en/#contact).
 
-[Plan een gratis gesprek van 15 minuten](https://launchstudio.eu/nl/#contact) om uitgebreid te bespreken welk pad naadloos aansluit bij jouw AI-prototype.
+## Echt voorbeeld
 
-## Praktijkvoorbeeld
+### Een AI-Native Oprichter in de Praktijk: Van Prototype-Demo Naar €4.000 MRR Binnen 21 Dagen
 
-### Een AI-Native Founder in de praktijk: Het AI Prototype Dat Binnen 21 Dagen Van Demo Naar €4K MRR Ging
+Bas, voormalig marketingdirecteur in Haarlem, bouwde met Lovable een AI-tekstgenerator voor webwinkels. E-commerce ondernemers plakten hun productlink in de app, waarna de AI geoptimaliseerde advertentieteksten genereerde voor Facebook, Instagram en Google.
 
-Bas, een voormalig marketingdirecteur uit Haarlem, bouwde met Lovable een AI-aangedreven generator voor de teksten van advertenties ('ad copy'). Via de tool konden eigenaren van webshops razendsnel de URL van hun product plakken, waarna de AI feilloos geoptimaliseerde Facebook ad copy, ronkende Google Ads headlines en strakke Instagram-captions genereerde in meerdere talen.
+Tijdens een e-commerce meetup gaf Bas een live demonstratie. Twaalf webwinkeliers meldden zich ter plekke aan voor de bèta. Maar die bèta was puur een demo: teksten werden na een browser-refresh gewist, er waren geen accounts, betalingen ontbraken (Bas wilde €39/maand rekenen) en de OpenAI API-sleutel stond open in de frontend.
 
-Bas gaf een vlammende demo van dit AI-prototype op een lokale meet-up voor e-commerce ondernemers. Twaalf webshopeigenaren tekenden ter plekke in voor de "bèta". De harde realiteit: die bèta was louter een demo. Er was geen énkele manier om de gegenereerde teksten op te slaan (zodra je de pagina ververste, was alles onherroepelijk verdwenen), er waren geen gescheiden gebruikersaccounts (iedereen keek letterlijk naar exact dezelfde interface), er was he-le-maal geen facturatiesysteem (terwijl Bas toch echt €39/maand in gedachten had), en de bloedlinke OpenAI API-sleutel lag open en bloot in de JavaScript-code van de browser.
+Bas had een snelle overstap nodig naar een volwaardig product om het momentum niet te verliezen.
 
-Hij had zéér dringend een razendsnelle transitie nodig. Zijn professionele e-commerce doelgroep verwachtte simpelweg vlekkeloze tools — ook maar de minste of geringste wrijving (friction) of instabiliteit zou er geheid voor zorgen dat hij ze permanent kwijtraakte.
+LaunchStudio voerde binnen 12 werkdagen een complete Categorie C-transitie uit: Supabase-authenticatie met e-mailverificatie, opgeslagen teksthistorie per gebruiker, abonnementsbetalingen via Mollie (inclusief iDEAL), server-side AI-caching en hosting op Vercel onder zijn eigen domein.
 
-LaunchStudio wees direct een hoge prioriteitstijdlijn toe aan dit project. Het team van Manifera voltooide de volledige, zware Categorie C-transitie in slechts 12 werkdagen: Supabase authenticatie mét strakke e-mailverificatie, een functie om de geschiedenis van de gegenereerde teksten per gebruiker op te slaan, loeistrakke abonnementsfacturering via Mollie (absoluut cruciaal voor Nederlandse e-commerce partijen die standaard iDEAL verlangen), een veilige server-side AI-proxy mét slimme caching van de responses, en tot slot een vlekkeloze Vercel deployment inclusief custom domein.
+Op de lanceringsdag mailde Bas zijn 12 bètatesters: negen van hen activeerden direct een betaald abonnement. Binnen drie weken groeide het platform via mond-tot-mondreclame door naar 103 betalende klanten.
 
-Op de grote lanceringsdag stuurde Bas een e-mail naar zijn 12 bèta-aanmeldingen. Negen van hen converteerden onmiddellijk naar een betalend abonnement. Binnen krap drie weken tilde mond-tot-mondreclame dat totale aantal al naar 103 betalende abonnees.
+**Resultaat:** AdCraft behaalde binnen 21 dagen na livegang een maandelijks terugkerende omzet van €4.017. De AI-kosten bleven dankzij slimme caching beperkt tot €380 per maand (slechts 9,5% van de omzet).
 
-**Resultaat:** AdCraft bereikte binnen 21 dagen na lancering een maandelijks terugkerende omzet (MRR) van €4.017. De torenhoge AI-kosten wisten ze strak te stabiliseren op slechts €380/maand (amper 9,5% van de totale omzet), met enorme dank aan de extreem agressieve caching van vergelijkbare productbeschrijvingen.
-
-> *"Van een wankele prototype demo naar een solide €4K MRR in drie kleine weken. Mijn AI-prototype snakte exact naar datgene wat LaunchStudio levert — onbreekbare veiligheid, kloppende facturatie en strakke deployment. Niets meer, maar ook zeker niets minder."*
+> *"Van prototype naar €4.000 MRR in drie weken tijd. Mijn AI-prototype had exact nodig wat LaunchStudio levert: beveiliging, betalingen en deployment. Niets meer en niets minder."*
 > — **Bas Hendriks, Oprichter, AdCraft (Haarlem)**
 
-**Kosten & Tijdlijn:** €3.800 (Launch & Grow Pakket) — productie-klaar en live in 12 werkdagen.
+**Kosten & Doorlooptijd:** €3.800 (Launch & Grow Pakket) — productie-klaar en live binnen 12 werkdagen.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### (Scenario: Oprichter die twijfelt of het prototype klaar is voor de transitie) Hoe weet ik absoluut zeker of mijn AI-prototype wel écht volwassen genoeg is om de sprong naar productie te wagen?
+### Wanneer weet ik of mijn AI-prototype volwassen genoeg is voor de stap naar productie?
+Zodra potentiële klanten uw prototype hebben gezien en bevestigen dat ze bereid zijn ervoor te betalen. Het prototype hoeft technisch niet perfect te zijn — LaunchStudio lost de ontbrekende backend-infrastructuur op. Het gaat om gevalideerde marktvraag.
 
-Simpel: als er échte gebruikers met je prototype hebben gespeeld en je keihard hebben bevestigd dat ze er de portemonnee voor willen trekken, dan is het er absoluut klaar voor. Je prototype hoeft bij lange na niet technisch perfect te zijn — LaunchStudio repareert die gaten in de infrastructuur feilloos, ongeacht de technische volwassenheid van het huidige prototype. Datgene wat in deze fase écht telt, is spijkerhard gevalideerde vraag (demand) vanuit de markt, en dus níét de zogenaamde 'technische compleetheid'.
+### Kan LaunchStudio mijn AI-prototype binnen een week productierijp opleveren?
+Voor Categorie A (statische sites) duurt het 3 tot 5 werkdagen. Voor Categorie B (webapps) 5 tot 10 werkdagen. Voor Categorie C (SaaS met betalingen) 10 tot 15 werkdagen. Ons team werkt fulltime aan uw sprint om de snelst mogelijke oplevering te garanderen.
 
-### (Scenario: Oprichter die kritisch transitietijdlijnen vergelijkt) Kan LaunchStudio de complete transitie van mijn AI-prototype daadwerkelijk in minder dan een week afronden?
+### Is een zwaar aangepast AI-prototype lastiger naar productie te brengen?
+Soms. Codebases waar meerdere freelancers aan hebben gewerkt kunnen wat opschoning vereisen. Wij beoordelen dit vooraf tijdens het gratis kennismakingsgesprek en nemen dit transparant op in de vaste offerte. In de meeste gevallen heeft dit nauwelijks invloed op planning of prijs.
 
-Voor relatief simpele Categorie A-projecten (zoals marketingwebsites), luidt het antwoord ronduit ja — de standaard ligt daar op 3–5 werkdagen. Gaat het om Categorie B (interactieve web apps), reken dan op 5–10 dagen. Voor Categorie C (volwaardige SaaS inclusief complexe facturatie) staat doorgaans 10–15 dagen. De tijdlijn is in de basis afhankelijk van de complexiteit, níét van de benodigde inzet — het gespecialiseerde team van LaunchStudio beukt gedurende de sprint namelijk fulltime op jouw project.
+### Kan ik na de overstap door LaunchStudio nog steeds AI-tools gebruiken om mijn app aan te passen?
+Ja, absoluut. LaunchStudio schrijft schone, AI-leesbare code die 100% compatibel blijft met Lovable, Cursor en Bolt. U kunt de frontend moeiteloos blijven doorontwikkelen met AI terwijl de backend-infrastructuur stabiel blijft.
 
-### (Scenario: Oprichter die zijn of haar prototype stevig heeft verbouwd) Zal mijn zwaar gemodificeerde AI-prototype veel moeilijker of trager te transiteren zijn?
-
-Dat behoort inderdaad tot de mogelijkheden. Prototypes die kampen met wilde modificaties van meerdere (soms onervaren) developers, of zwaar conflicterende output van verschillende AI-tools, vereisen vaak een grondige opschoonbeurt ('cleanup') vóórdat de daadwerkelijke transitie überhaupt kan starten. LaunchStudio inventariseert dit nauwkeurig tijdens het gratis gesprek van 15 minuten en rekent eventueel opschoonwerk eerlijk en transparant mee in de vaste-prijs offerte. In de ruime meerderheid van de gevallen is de impact op de uiteindelijke kosten en de tijdlijn verrassend minimaal.
-
-### (Scenario: Oprichter die plannen heeft om ook ná lancering vlot door te ontwikkelen) Kan ik mijn vertrouwde AI-tools gewoon blijven gebruiken om mijn product aan te passen, nádát LaunchStudio de transitie heeft uitgevoerd?
-
-Jazeker. Het team van LaunchStudio schrijft zeer specifiek zogeheten 'AI-leesbare' code, die puur is ontworpen om naadloos en veilig te blijven communiceren met tools als Lovable, Cursor en Bolt. Dit stelt je in staat om razendsnel te blijven itereren op je frontend, terwijl je de absolute garantie hebt dat de robuuste backend-infrastructuur stabiel blijft draaien. Dit is geen toeval, dit vormt een snoeihard kernprincipe in het ontwerp van iéder LaunchStudio-project.
-
-### (Scenario: Oprichter met een prototype gebouwd in een minder bekende AI-tool) Werkt LaunchStudio echt met prototypes uit íédere willekeurige AI-tool, of ligt de focus uitsluitend op grote namen als Lovable en Bolt?
-
-LaunchStudio werkt daadwerkelijk met iedere AI-gegenereerde codebase die je maar kunt aandragen — of dat nu Lovable, Bolt, Cursor, v0, Windsurf, Replit is, of zelfs ronduit onbekende, custom AI-pijplijnen. Het zwaargewicht engineeringteam bij Manifera fileert en evalueert élke aangeleverde JavaScript/TypeScript frontend tot op het bot, en bouwt er vervolgens een ijzersterke productie-infrastructuur snoeihard onder, volstrekt ongeacht hoe die frontend in eerste instantie ooit is gegenereerd.
+### Werkt LaunchStudio met prototypes uit álle AI-tools, of alleen Lovable en Bolt?
+LaunchStudio werkt met elke op standaarden gebaseerde AI-codebase — Lovable, Bolt, Cursor, v0, Windsurf, Replit of custom stacks. Onze engineers bouwen professionele cloud-infrastructuren onder elke moderne JavaScript/TypeScript frontend.
 
 <script type="application/ld+json">
 {
@@ -200,42 +189,42 @@ LaunchStudio werkt daadwerkelijk met iedere AI-gegenereerde codebase die je maar
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoe weet ik of mijn AI-prototype volwassen genoeg is om de sprong naar productie te wagen?",
+      "name": "Wanneer weet ik of mijn AI-prototype volwassen genoeg is voor de stap naar productie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Als echte gebruikers met je prototype hebben gespeeld en bevestigen dat ze willen betalen, is het klaar. Je prototype hoeft niet technisch perfect te zijn — LaunchStudio repareert de infrastructuurgaten. Wat telt is gevalideerde vraag (demand), niet technische compleetheid."
+        "text": "Zodra potentiële gebruikers bevestigen dat ze willen betalen. Technische hiaten in backend en beveiliging worden door LaunchStudio opgelost."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio de transitie van mijn AI-prototype echt in minder dan een week afronden?",
+      "name": "Kan LaunchStudio mijn AI-prototype binnen een week productierijp opleveren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voor Categorie A-projecten (marketingwebsites), ja — typisch 3–5 werkdagen. Voor Categorie B (web apps) is het 5–10 dagen. Voor Categorie C (SaaS met facturatie) staat 10–15 dagen. De tijdlijn is afhankelijk van de complexiteit, want het team werkt fulltime aan je project."
+        "text": "Voor marketingpagina's (Cat A) in 3-5 dagen; complete SaaS-applicaties met betalingen (Cat C) vergen 10-15 werkdagen."
       }
     },
     {
       "@type": "Question",
-      "name": "Zal mijn zwaar gemodificeerde AI-prototype veel moeilijker te transiteren zijn?",
+      "name": "Is een zwaar aangepast AI-prototype lastiger naar productie te brengen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dat is mogelijk. Prototypes met wilde modificaties van meerdere developers of conflicterende AI-tools vereisen vaak een opschoonbeurt ('cleanup'). LaunchStudio inventariseert dit tijdens het gratis gesprek en verwerkt dit in de vaste prijs. De impact is meestal minimaal."
+        "text": "Onze engineers inspecteren de code vooraf en schonen eventuele conflicten op binnen een duidelijke, vaste prijsafspraak."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik mijn AI-tools blijven gebruiken nadat LaunchStudio de transitie heeft uitgevoerd?",
+      "name": "Kan ik na de overstap door LaunchStudio nog steeds AI-tools gebruiken om mijn app aan te passen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jazeker. LaunchStudio schrijft specifieke 'AI-leesbare' code die naadloos communiceert met tools als Lovable, Cursor en Bolt. Zo kun je blijven itereren op je frontend, terwijl de backend-infrastructuur stabiel blijft draaien."
+        "text": "Ja, we behouden 100% compatibiliteit met tools zoals Cursor en Lovable zodat u razendsnel kunt blijven itereren."
       }
     },
     {
       "@type": "Question",
-      "name": "Werkt LaunchStudio met prototypes uit iedere AI-tool, of alleen met Lovable en Bolt?",
+      "name": "Werkt LaunchStudio met prototypes uit álle AI-tools, of alleen Lovable en Bolt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio werkt met íédere AI-gegenereerde codebase — Lovable, Bolt, Cursor, v0, Windsurf, Replit of custom pijplijnen. Het engineeringteam evalueert elke JavaScript/TypeScript frontend en bouwt er een productie-infrastructuur onder."
+        "text": "We werken met alle gangbare tools (Lovable, Bolt, Cursor, v0, Replit) die standaard React/Next.js code genereren."
       }
     }
   ]

@@ -1,22 +1,22 @@
 ---
-Title: Het Strangler Fig Patroon Gebruiken met een AI Tool for Application Modernization
-Keywords: AI tool for application, application modernization, enterprise AI, LaunchStudio, Manifera
-Buyer Stage: Decision
-Target Persona: Enterprise Architect / VP of Engineering
+Titel: "Het Strangler Fig Patroon Met Een AI-Tool Voor Applicatie-Modernisering"
+Trefwoorden: AI tool voor applicatie, applicatie modernisering, enterprise AI, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelpersona: Enterprise Architect / VP of Engineering
 ---
 
-# Het Strangler Fig Patroon Gebruiken met een AI Tool for Application Modernization
+# Het Strangler Fig Patroon Met Een AI-Tool Voor Applicatie-Modernisering
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "AI Tool voor Applicatie Modernisatie: Het Strangler Fig Patroon Ontmoet LLM's",
-  "description": "Enterprise applicatie modernisatie is berucht om de gigantische risico's. Een diepe technische duik in hoe Large Language Models het Strangler Fig patroon versnellen om legacy monolieten veilig te vervangen.",
+  "headline": "AI-Tool voor Applicatiemodernisering: Het Strangler Fig Patroon Versneld Met LLM's",
+  "description": "Het moderniseren van enterprise software is berucht om zijn risico's. Een technische gids over hoe Large Language Models het Strangler Fig patroon versnellen om verouderde monolieten veilig uit te faseren.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/nl/"
+    "url": "https://launchstudio.eu/en/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,102 +26,84 @@ Target Persona: Enterprise Architect / VP of Engineering
   "datePublished": "2026-12-10",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/nl/blog/ai-tool-for-application"
+    "@id": "https://launchstudio.eu/en/blog/ai-tool-for-application"
   }
 }
 </script>
 
-Het meest angstaanjagende, levensgevaarlijke project dat een Enterprise Architect kan ondernemen is de befaamde "Big Bang" rewrite. Een gigantisch bedrijf besluit zomaar dat hun zware, 15 jaar oude Java monoliet (of erger nog, een 30 jaar oud COBOL mainframe) ronduit te duur is geworden om nog in de lucht te houden. Ze bevriezen de ontwikkeling van nieuwe features keihard voor twee volle jaren, verbranden letterlijk miljoenen euro's aan budget, en doen een wanhopige poging om de voltallige applicatie volledig *from scratch* opnieuw te schrijven in hypermoderne microservices. 
+Het meest riskante project dat een Enterprise Architect kan starten is de zogeheten "Big Bang" herschrijving: een bedrijf besluit dat hun 15 jaar oude Java- of PHP-monoliet te duur is in onderhoud, bevriest twee jaar lang alle productontwikkeling en probeert de volledige applicatie voor miljoenen euro's vanaf nul opnieuw te bouwen.
 
-Historisch gezien faalt een verbijsterende 70% van dit soort Big Bang rewrites compleet. Ze raken genadeloos door hun budget heen, óf tegen de tijd dat het peperdure nieuwe systeem eindelijk live kan, zijn de harde business requirements van het bedrijf alweer volkomen veranderd.
+Historisch gezien faalt 70% van deze Big Bang herschrijvingen: het budget raakt op of de marktbehoefte is tegen de tijd van oplevering compleet veranderd.
 
-Om dit catastrofale risico te mitigeren (mitigate), leunen de elitaire engineering teams zwaar op het **Strangler Fig Patroon** (Wurgvijg-patroon). In plaats van blind de voltallige monoliet in één keer te herschrijven, bouwen ze een slimme API gateway rechtstreeks vóór de oude app. Je extraheert chirurgisch één kleine feature (bijv. "Gebruikersfacturatie"), herschrijft uitsluitend en louter die specifieke feature als een gloednieuwe microservice, en routeert de facturatie-traffic naar de nieuwe service. De rest van de monolithische app blijft totaal onaangeroerd (untouched). Na verloop van tijd groeien de nieuwe microservices massaal rondom de oude monoliet, en "wurgen" ze deze langzaam totdat het oude beest veilig, en definitief, offline kan worden gehaald (decommissioned).
+Om dit risico te bezweren gebruiken toonaangevende architecten het **Strangler Fig Patroon**. In plaats van de hele monoliet in één keer te vervangen, plaatst men een API-gateway vóór de oude software. Men isoleert één specifieke functionaliteit (bijv. "Facturatie"), bouwt deze om tot een moderne microservice en routeert het verkeer stapsgewijs om, terwijl de rest van de monoliet onaangeroerd blijft. Langzaam groeit het nieuwe landschap om de monoliet heen totdat de oude kern veilig kan worden uitgezet.
 
-Het Strangler Fig patroon is in de basis absoluut briljant, maar van oudsher uiterst tergend traag. In 2026 heeft de massale adoptie van de LLM als een AI-tool voor applicatie modernisatie (AI tool for application modernization) dit zware proces echter fundamenteel geëxplodeerd in snelheid, waardoor een slopende migratie van 3 jaar plotseling is getransformeerd in een agressieve sprint van 9 maanden.
+Het Strangler Fig patroon is geniaal, maar was traditioneel tijdrovend. In 2026 versnelt het inzetten van LLM's als AI-tool voor applicatiemodernisering dit proces radicaal: een migratie van 3 jaar wordt teruggebracht tot een sprint van 9 maanden.
 
-## De Drie Fases van AI-Geassisteerde Modernisatie
+## Drie Fasen van AI-Ondersteunde Modernisering
 
-Het simpelweg inzetten van een simpele AI coding tool (zoals Cursor of GitHub Copilot Enterprise) om domweg een gigantisch blok oude legacy code te selecteren en lokaal in te typen *"Vertaal dit even naar Node.js"*, is het absolute recept voor een ongekende ramp (recipe for disaster). Legacy code zit altijd tot de nok toe vol met verborgen, ongedocumenteerde businessregels, willekeurige side-effects, en bizarre, spaghetti-achtige database-afhankelijkheden (dependencies). 
+Klassieke legacy-code bevat verborgen bedrijfsregels en ongedocumenteerde neveneffecten. Het simpelweg kopiëren van codeblokken naar een AI-venster leidt tot rampen. AI moet gestructureerd over drie fasen worden ingezet:
 
-Om AI daadwerkelijk effectief te gebruiken in zware enterprise applicatie modernisatie, móéten enterprise architecten de AI rücksichtslos implementeren over drie uiterst gestructureerde, kogelvrije fases.
+### Fase 1: De AI-Archeoloog (Domeinverkenning)
+De grootste uitdaging bij legacy-applicaties is dat de oorspronkelijke ontwikkelaars al jaren weg zijn en de documentatie ontbreekt. De monoliet is een zwarte doos.
 
-### Fase 1: De AI Archeoloog (Domain Discovery)
-Het aller-, allermoeilijkste (The hardest part) aan het moderniseren van een oude legacy applicatie is het meedogenloze feit dat de oorspronkelijke ontwikkelaars (developers) al tien jaar geleden met pensioen zijn gegaan. Daarbij is de voltallige documentatie in 2018 per ongeluk voorgoed kwijtgeraakt tijdens een mislukte Jira-migratie. De monoliet is simpelweg een angstaanjagende black box.
+In deze fase schrijft de AI nog geen code, maar fungeert als "AI-Archeoloog": de volledige broncode wordt gevectoriseerd in een afgeschermde RAG-omgeving. Architecten bevragen de AI over verborgen afhankelijkheden: *"Toon alle functies die de tabel `gebruikers` aanpassen en herleid deze naar de facturatiemodule."* De AI brengt de datastromen exact in kaart en levert de blauwdruk voor een zuivere microservice.
 
-In deze eerste fase gebruiken we de AI dus absoluut níét om ook maar één regel nieuwe code te schrijven (write code). In plaats daarvan tuigen we een loeizware, gespecialiseerde RAG-pijplijn (Retrieval-Augmented Generation) op, en zetten we deze in als onze "AI Archeoloog". De voltallige, rommelige legacy codebase wordt wiskundig gevectoriseerd. Vervolgens gebruiken de Enterprise Architecten de AI om rücksichtslos de totale 'dependency graph' (afhankelijkheidsgrafiek) in kaart te brengen. Ze commanderen de LLM: *"Zoek, traceer en markeer íédere functie in de codebase die de tabel `users` aanraakt, en leidt direct terug naar de facturatie-module."* De AI analyseert de antieke, roestige syntax, traceert de gigantische dataflow, en spuugt een extreem precieze, wiskundige architecturale blauwdruk (blueprint) uit. Hierin identificeert hij exact de benodigde en vereiste grenzen om een 100% schone microservice te extraheren.
+### Fase 2: De LLM-Transpiler (Gecontroleerde Vertaling)
+Is het domein geïsoleerd, dan vertaalt de AI de logica niet 1-op-1 naar nieuwe syntaxis, maar moderniseert het het paradigma: synchrone Java-code wordt omgezet in asynchrone, event-driven TypeScript microservices. Cruciaal: de AI genereert vooraf uitgebreide tests op de *oude* logica, die garanderen dat de *nieuwe* microservice exact dezelfde output levert bij dezelfde input.
 
-### Fase 2: De LLM Transpiler (Begrensde Vertaling)
-Zodra een specifieke, strak begrensde context (bounded context, zoals de Facturatie Module) veilig is geïsoleerd, slaat de AI toe en wordt deze ingezet voor de daadwerkelijke vertaalslag (translation). Dit is echter absoluut géén naïeve, blinde 1-op-1 syntax vertaling.
+### Fase 3: De Shadow Router (Wiskundige Verificatie)
+Om elk risico uit te sluiten wordt de nieuwe service in "Shadow Mode" uitgerold achter de API-gateway. Vraagt een gebruiker een actie aan, dan bedient de oude monoliet de gebruiker, terwijl een schaduwkopie van het verzoek naar de nieuwe AI-microservice wordt gestuurd. Pas wanneer beide systemen over tienduizenden verzoeken 100% identieke data produceren, wordt het verkeer definitief omgeschakeld.
 
-Omdat de LLM strak is geprompt mét de keiharde architecturale blauwdruk uit Fase 1, krijgt de AI de meedogenloze instructie (instructed) om direct óók het achterliggende *paradigma* te moderniseren. De AI pakt de verouderde, synchrone en strak-gekoppelde (tightly-coupled) Java code beet, en vertaalt (translates) dit vlekkeloos naar asynchrone, event-driven TypeScript code. Het meest cruciale onderdeel? De AI krijgt het commando om onmiddellijk, en volautomatisch, een uitputtende suite aan Unit Tests te genereren specifiek voor de *oude* logica. Deze tests worden daarna rücksichtslos gebruikt om wiskundig te garanderen dat de *nieuwe* TypeScript microservice voor exact dezelfde input, 100% exact dezelfde output levert.
+## Hoe LaunchStudio Applicaties Moderniseert
 
-### Fase 3: De Shadow Router (Deterministische Verificatie)
-Het absolute, meest levensgevaarlijke moment (most dangerous moment) is de dag dat je live productie-verkeer gaat routeren naar de kersverse, AI-gegenereerde microservice. Om dat gigantische risico volledig uit te bannen, deployen de architecten een zogeheten "Shadow Router" (Schaduw Router). 
+Het uitvoeren van een AI-versnelde Strangler Fig migratie vereist diepgaande kennis van legacy-systemen, cloud-architectuur en MLOps.
 
-Wanneer een eindgebruiker klikt op 'download factuur', stuurt de zware API gateway dit verzoek keurig door naar de vertrouwde, oude Java monoliet (die de echte factuur braaf aan de klant retourneert). Echter, op exact dezelfde milliseconde (simultaneously) stuurt de gateway óók een blinde *schaduwkopie* van dat verzoek naar de splinternieuwe, AI-gegenereerde TypeScript microservice. De outputs van beide systemen worden vervolgens op de achtergrond puur wiskundig (mathematically) met elkaar vergeleken. Pas op het moment dat de nieuwe AI microservice over een volume van 10.000 live verzoeken (requests) een meedogenloze 100% match scoort met de legacy service, wórdt de traffic pas definitief omgezet (officially cut over). 
+[LaunchStudio](https://launchstudio.eu/en/), gedragen door de enterprise software-experts van [Manifera](https://www.manifera.com/) onder leiding van Herre Roelevink in Amsterdam en Ho Chi Minhstad, voert chirurgische, risicoloze moderniseringen uit:
+1. **Codebase-Vectorisatie:** Ingestie van uw legacy C#, Java of PHP codebase in een beveiligde RAG-omgeving voor instant analyse van afhankelijkheden.
+2. **Geautomatiseerde Testgeneratie:** Bouwen van sluitende testsuites op de oude logica als wiskundig vangnet vóór de herbouw.
+3. **API-Gateway Inrichting:** Implementatie van gateways (Kong / AWS) voor Shadow Routing en zero-downtime overschakelingen.
 
-## Hoe LaunchStudio de Strangler Fig Engineert
+## Echt voorbeeld
 
-Het succesvol en meedogenloos executeren (executing) van een door AI versnelde Strangler Fig migratie vereist een extreem diep, bijna obsessief begrip van oude legacy systemen, moderne cloud architecturen, en zware MLOps (Machine Learning Operations). Hippe startups bouwen groene weide ('greenfield') apps; gevestigde enterprises móéten de absolute ravage van 'brownfield' rampen (disasters) ontwarren.
+### Een AI-Native Oprichter in de Praktijk: De Zorgmonoliet Die Niet Meer Kon Schalen
 
-[LaunchStudio](https://launchstudio.eu/nl/), rotsvast leunend op de loodzware enterprise engineering stamboom van [Manifera](https://www.manifera.com/), levert exclusief de extreme architecturale discipline (rigor) die vereist is om missiekritieke, miljarden-applicaties veilig en kogelvrij te moderniseren.
+Thomas is VP of Engineering bij een Oostenrijks softwarebedrijf in de zorg. Hun kernapplicatie voor patiëntenbeheer was een enorme PHP-monoliet uit 2012 van ruim twee miljoen regels code.
 
-Onder het meedogenloze, strategische toezicht van CEO Herre Roelevink in Amsterdam, en snoeihard geëxecuteerd door onze senior systems architects aan de Pho Quang Street 10 in Ho Chi Minh City, doet LaunchStudio simpelweg geen belachelijke "Big Bang" rewrites. Wij doen snelle, chirurgische (surgical), AI-versnelde extracties.
+Het bedrijf was winstgevend, maar de technologie liep vast: een update uitrollen kostte drie weken omdat een wijziging in de afsprakenplanning regelmatig per ongeluk de receptenmodule liet crashen. Thomas wilde over naar microservices, maar de directie weigerde een tweejarige ontwikkelstop voor een complete herschrijving.
 
-Onze Modernisatie Architectuur omvat (includes):
-1. **De Codebase Vectorisatie Pijplijn (Vectorization Pipeline):** Wij deployen zwaarbeveiligde, 100% geïsoleerde RAG-omgevingen die jouw gigantische, legacy C#, Java of PHP codebase massief inlezen (ingest). Dít stelt onze architecten direct in staat om de diep verborgen afhankelijkheden in jouw monoliet (monolith's hidden dependencies) razendsnel bloot te leggen.
-2. **Geautomatiseerde Test Generatie (Test Generation):** Nog voordat we ook maar één enkele regel legacy code daadwerkelijk vertalen, dwingen we de AI om een uitputtende set test suites te genereren (generate exhaustive test suites) tegen de legacy endpoints. Dit creëert een onwrikbaar, wiskundig vangnet voor de rewrite.
-3. **De API Gateway Deployment:** Wij bouwen en deployen de loodzware routeringsinfrastructuur (met enterprise tools zoals Kong of AWS API Gateway). Dit maakt de Shadow Routing en de uiterst geleidelijke cut-over (gradual cut-over) van de nieuwe microservices mogelijk, wat een keiharde garantie biedt op zero downtime (nul uitvaltijd) voor jouw klanten.
+Thomas schakelde LaunchStudio in voor een AI-versnelde Strangler Fig aanpak gericht op de grootste bottleneck: de Planningsmodule.
 
-## Praktijkvoorbeeld
+In een strak traject van 4 maanden:
+- Vectoriseerde LaunchStudio de volledige PHP-monoliet in Supabase om alle afhankelijkheden van de planningsmodule bloot te leggen.
+- Bouwden zij een API-gateway vóór de applicatie.
+- Vertaalden zij de planningslogica met Claude 3.5 Sonnet naar een moderne Node.js microservice, inclusief 500 geautomatiseerde unittests.
+- Draaide de nieuwe service twee weken in "Shadow Mode" mee totdat de match rate met de oude data 100% was.
 
-### Een AI-Native Founder in de praktijk: De Healthcare Monoliet Die Niet Meer Kon Schalen
+**Resultaat:** De Planningsmodule werd succesvol losgeweekt en draait nu als zelfstandige, schaalbare microservice. Nieuwe functies worden binnen 20 minuten uitgerold zonder risico voor de receptenmodule. Dankzij de inzet van AI werd het project in 4 maanden voltooid in plaats van de begrote 12 maanden, wat het bedrijf €120.000 aan ontwikkelkosten bespaarde met nul downtime voor de ziekenhuizen.
 
-Thomas is de ambitieuze VP of Engineering bij een enorm succesvol medisch softwarebedrijf (healthcare SaaS) in Wenen. Hun absolute core product, een immens populair patiëntbeheersysteem, draaide nog steeds op een gigantische, extreem trage monolithische PHP-applicatie die al in 2012 in elkaar was getypt. 
-
-Het bedrijf was ronduit zwaar winstgevend, maar hun eigen, zwaar verouderde technologie was hen langzaam aan het verstikken (suffocating them). Het simpelweg deployen van één lullige nieuwe feature kostte inmiddels al drie volle weken (three weeks). Waarom? Omdat een piepkleine wijziging in de afspraken-module vaak per ongeluk en onzichtbaar de essentiële recepten-module van de apotheek brak (broke). De codebase (codebase) was opgezwollen tot meer dan twee miljoen loodzware regels code. Thomas wíst honderd procent zeker dat ze onmiddellijk moesten overstappen naar een moderne, strakke microservices architectuur. Echter, zijn eigen Raad van Bestuur (board) weigerde ronduit om in te stemmen met een ondenkbare feature freeze van 2 jaar (feature freeze) louter voor een riskante rewrite.
-
-Thomas nam uit bittere wanhoop zelf de proef op de som en probeerde stiekem bestanden 1-op-1 door ChatGPT te halen om ze te vertalen. De kersverse code crashte (broke) echter continu, doordat de simpele AI blind was voor de zwaar verborgen, complexe database dependencies die door de hele app kronkelden.
-
-Hij greep direct in en schakelde LaunchStudio in. Het engineeringteam van Manifera vloog in en stelde onmiddellijk een door AI versnelde Strangler Fig aanpak voor (proposed). 
-
-In een meedogenloos gestructureerde sprint van 4 maanden richtte LaunchStudio haar pijlen direct op de allergrootste pijn in de app: De Afspraken Module (Scheduling Module). 
-Allereerst vectoriseerden ze (vectorized) de complete 2 miljoen regels van de PHP monoliet veilig in een gesloten, zware Supabase pgvector instance. Ze lieten de AI Archeoloog vervolgens tot op de pixel nauwkeurig in kaart brengen waar en hoe de oude scheduling logica zich had vastgevreten in de rest van de gigantische applicatie. 
-Ten tweede knalden ze onverbiddelijk een API Gateway vóór de applicatie. 
-Als derde zetten ze de geavanceerde Claude 3.5 Sonnet in om de strak-gekoppelde (tightly-coupled) PHP logica te vertalen naar een cleane, razendsnelle en compleet opzichzelfstaande Node.js microservice, terwijl de AI tegelijkertijd volautomatisch 500 loodzware unit tests genereerde om de logica te verifiëren (verify the logic).
-
-LaunchStudio deployde de nieuwe Node.js microservice strak in "Shadow Mode" (Schaduw Modus) gedurende exact twee weken. De robuuste API Gateway stuurde de échte live-afspraken van dokters naar zówel de trage oude PHP monoliet als naar de fonkelnieuwe Node.js service, en vergeleek de outputs op de achtergrond met elkaar. Toen de match rate de wiskundige 100% aantikte (hit 100%), haalden ze resoluut de hendel over (flipped the switch).
-
-**Resultaat:** De loodzware Afspraken Module was extreem succesvol "gewurgd" (strangled). Het draait nu fluisterstil en bliksemsnel op een moderne, zelf-schalende Node.js microservice. Het team van Thomas kan tegenwoordig binnen amper 20 minuten moeiteloos nieuwe updates naar productie deployen, zonder ook maar één seconde bang te hoeven zijn dat de recepten-module per ongeluk breekt. Puur en alleen omdat de AI de zware domeinontdekking (domain discovery) én het schrijven van de duizenden testcases drastisch versnelde, knalde LaunchStudio deze massieve extractie erdoor in slechts 4 maanden in plaats van de oorspronkelijk geprojecteerde 12 maanden. Dít bespaarde de scale-up een brute €120.000 aan engineering kosten, mét de ultieme garantie op zero downtime.
-
-> *"Het wanhopig proberen te herschrijven van een monolithische app voelt letterlijk alsof je probeert om tijdens het rijden, met 120km/u op de Autobahn, de banden van je auto te verwisselen. LaunchStudio gebruikte hun AI niet simpelweg als een dom typemachientje om code uit te spuwen, maar juist als een zware archeoloog om de pure, ongekende waanzin van ons 10-jaar oude systeem in kaart te brengen (map the madness). Het ijzersterke Strangler Fig patroon dat ze installeerden gaf onze Raad van Bestuur eindelijk het 100% risicovrije vertrouwen (confidence) om zónder angst te moderniseren."*
+> *"Een monoliet herschrijven voelt als het wisselen van autobanden terwijl je 120 km/u rijdt op de snelweg. LaunchStudio gebruikte AI niet alleen om code te schrijven, maar om de wirwar van ons 10 jaar oude systeem feilloos in kaart te brengen. Het Strangler Fig patroon gaf onze directie het vertrouwen om zonder angst te vernieuwen."*
 > — **Thomas Gruber, VP of Engineering, MedTech Solutions (Wenen)**
 
-**Kosten & Tijdlijn:** €35.000 (Enterprise Modernization Pakket - Fase 1 Extractie) — productie-klaar, kogelvrij veilig, en live in exact 4 maanden.
+**Kosten & Doorlooptijd:** €35.000 (Enterprise Modernisering Pakket - Fase 1 Extractie) — productie-klaar en live binnen 4 maanden.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### (Scenario: VP Engineering plant een massieve rewrite) Waarom kunnen we niet gewoon wéér een jaar alle nieuwe features stilleggen en een massieve 'Big Bang' rewrite doorvoeren met AI?
+### Waarom kiezen we niet voor een complete 'Big Bang' herschrijving met AI?
+Omdat de marktomstandigheden en wensen gedurende een lang traject veranderen. Een Big Bang herschrijving levert vaak een verouderd product op en brengt een enorm livegang-risico met zich mee. Het Strangler Fig patroon moderniseert module voor module terwijl u continu nieuwe features blijft leveren.
 
-Omdat de snoeiharde business requirements (eisen) van je bedrijf tijdens dat ene, lange jaar ronduit veranderen (change during that year). Tegen de tijd dat je AI-tool eindelijk klaar is met je Big Bang rewrite, is het exacte product dat je hebt gebouwd alweer zwaar achterhaald door de markt. Bovendien brengt een Big Bang rewrite het kolossale (massive risk), levensgevaarlijke risico met zich mee van catastrofaal falen tijdens de "live-gang" (cut-over). Het slimme Strangler Fig patroon stelt jou in de gelegenheid om volkomen veilig één module per keer te moderniseren. Ondertussen blijft jouw bedrijf onverminderd, en razendsnel, nieuwe features aan jullie betalende klanten (customers) leveren. Het mitigeert risico letterlijk 100%.
+### Kan een AI-tool daadwerkelijk een 20 jaar oude, ongedocumenteerde codebase begrijpen?
+Ja, via een gespecialiseerde RAG-pijplijn. Door de miljoenen regels code te vectoriseren in een database kan de AI razendsnel dwarsverbanden en database-afhankelijkheden blootleggen die een menselijk team maanden zou kosten om handmatig uit te zoeken.
 
-### (Scenario: Enterprise Architect stoeit met oude legacy code) Kan een moderne AI tool überhaupt wel werkelijk een 20-jaar oude, totaal ongedocumenteerde codebase begrijpen?
+### Hoe garanderen we dat een met AI vertaalde microservice geen fouten bevat in de bedrijfslogica?
+Via Shadow Routing: de API-gateway stuurt live verzoeken naar zowel de oude monoliet als de nieuwe microservice en vergelijkt de antwoorden op de achtergrond. De nieuwe service wordt pas actief voor gebruikers als over tienduizenden verzoeken een 100% identieke werking is bewezen.
 
-Ja (Yes), maar louter en uitsluitend als je een zware, uiterst gespecialiseerde RAG-pijplijn (Retrieval-Augmented Generation) inzet. Je kunt het simpelweg fundamenteel vergeten om even een rommelige codebase van 2-miljoen regels in ChatGPT te plakken (paste). LaunchStudio vectoriseert jouw massieve, ongedocumenteerde codebase onverbiddelijk in een loodzware high-dimensional database. Stelt de Architect vervolgens een lastige vraag? Dan grist (retrieves) de AI precies díe specifieke bestanden, database schema's, en verstopte functieaanroepen bijeen, en legt verborgen afhankelijkheden (hidden dependencies) bloot waar een menselijk team anders maanden handmatig (months to find manually) naar zou moeten graven.
+### Moeten we de AI vragen om de oude code 1-op-1 over te zetten naar de nieuwe taal?
+Nee. Een 1-op-1 vertaling van verouderde code levert simpelweg slechte moderne code op. LaunchStudio stuurt de AI aan met architectonische kaders om de logica te behouden, maar de implementatie te upgraden naar asynchrone, event-driven standaarden.
 
-### (Scenario: CTO is doodsbang voor regressies) Hoe garanderen we wiskundig (guarantee) dat de nieuwe, AI-vertaalde microservice absoluut géén vitale, oude businesslogica per ongeluk breekt?
-
-Dat garandeer je keihard door middel van Shadow Routing (Schaduw Routering). LaunchStudio bouwt een kogelvrije API Gateway. Deze gateway stuurt stiekem een directe kopie (copy) van de live, echte productie-traffic door naar de nieuwe AI-microservice. Ondertussen merkt de echte, betalende gebruiker hier niks van, want die krijgt z'n antwoord razendsnel uit de vertrouwde, oude legacy monoliet. Op de achtergrond worden de uitkomsten van beide systemen muisstil, en wiskundig (mathematically in the background), met elkaar vergeleken. De nieuwe microservice krijgt pas de échte live traffic als hij bewijst dat hij de productie data kan afhandelen met exact, en uitsluitend, 100% betrouwbaarheid (100% fidelity).
-
-### (Scenario: Developer die code handmatig wil vertalen) Moeten we de AI simpelweg instrueren (use the AI) om de oude legacy code 1-op-1 direct te vertalen naar de kersverse programmeertaal?
-
-Nee (No). Een blinde, domme 1-op-1 vertaling van ranzige, slechte Java code resulteert onverbiddelijk in ranzige, slechte Node.js code. Het uitsluitende, hoofddoel van modernisatie (modernization) is om direct compleet nieuwe, geavanceerde architecturele paradigma's te adopteren (bijv. de overstap van trage, strak-gekoppelde synchrone calls naar bliksemsnelle, asynchrone (asynchronous) en event-driven architectures). LaunchStudio vuurt snoeiharde architecturele richtlijnen af in de AI-prompt. Hierdoor blijft de vitale, oude businesslogica 100% behouden, maar wordt de daadwerkelijke, technische implementatie direct keihard opgewaardeerd (upgraded) naar de allerhoogste, cloud-native enterprise standaarden.
-
-### (Scenario: Security Officer die bezorgd AI tools evalueert) Is het überhaupt wel juridisch en zakelijk veilig (safe) om onze streng geheime, proprietary legacy codebase massaal naar een AI tool te uploaden voor 'analyse'?
-
-Het is volstrekt, en absoluut (absolutely unsafe), levensgevaarlijk om dít te doen bij publieke, commerciële tools zoals de standaard ChatGPT of Anthropic's Claude. LaunchStudio voert Codebase Vectorisatie echter uitsluitend en louter (strictly isolated) uit via massief afgeschermde, zwaarbeveiligde enterprise-tier API endpoints (zoals Microsoft Azure OpenAI), die volledig zijn dichtgemetseld onder keiharde Zero Data Retention (ZDR) contracten (agreements). Jouw supergeheime codebase wordt dus he-le-maal nóóit (never) gebruikt of misbruikt om andermans externe AI-modellen (external models) stiekem te trainen. Wij garanderen de hardste, absolute compliancy (absolute compliance) en 100% bescherming van al jullie corporate intellectuele eigendom (IP protection).
+### Is het veilig om onze vertrouwelijke bedrijfsbroncode te uploaden naar een AI-tool?
+Publieke AI-tools zijn onveilig. LaunchStudio analyseert broncode uitsluitend binnen strikt afgeschermde Enterprise-endpoints (zoals Azure OpenAI) met gegarandeerde Zero Data Retention (ZDR), zodat uw intellectueel eigendom optimaal beschermd blijft.
 
 <script type="application/ld+json">
 {
@@ -130,42 +112,42 @@ Het is volstrekt, en absoluut (absolutely unsafe), levensgevaarlijk om dít te d
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom stoppen we niet met nieuwe features bouwen en doen we met AI een massieve 'Big Bang' rewrite?",
+      "name": "Waarom kiezen we niet voor een complete 'Big Bang' herschrijving met AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tijdens een feature freeze veranderen je business requirements. Je bouwt iets wat de markt niet meer wil. Bovendien brengt de live-gang (cut-over) massieve, levensgevaarlijke risico's met zich mee. LaunchStudio implementeert het Strangler Fig patroon om risicovrij één module tegelijk te herschrijven terwijl je gewoon nieuwe features blijft opleveren."
+        "text": "Big Bang trajecten kennen 70% faalkans door veranderende eisen en hoge risico's. Het Strangler Fig patroon moderniseert stapsgewijs zonder operationele onderbreking."
       }
     },
     {
       "@type": "Question",
-      "name": "Begrijpt een moderne AI tool daadwerkelijk een extreem rommelige, 20-jaar oude codebase zonder documentatie?",
+      "name": "Kan een AI-tool daadwerkelijk een 20 jaar oude, ongedocumenteerde codebase begrijpen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, mits gekoppeld aan een gespecialiseerde RAG-pijplijn. LaunchStudio vectoriseert de volledige miljoenenregels codebase in een zware database. De AI haalt louter de relevante schema's op en onthult verborgen database-afhankelijkheden (dependencies) die mensen onmogelijk zelf kunnen vinden."
+        "text": "Ja, via een RAG-vectorisatiepijplijn die afhankelijkheden en bedrijfsregels in miljoenen regels legacy-code razendsnel in kaart brengt."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe garandeert LaunchStudio dat de nieuw gebouwde, AI-gegenereerde code onze bestaande business logica niet breekt?",
+      "name": "Hoe garanderen we dat een met AI vertaalde microservice geen fouten bevat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Met loeistrakke Shadow Routing (Schaduw Routering). Een API Gateway stuurt een blinde kopie van de live traffic naar de nieuwe AI-microservice, en vergelijkt de wiskundige output met de oude monoliet op de achtergrond. De nieuwe app gaat pas live bij een 100% foutloze score (fidelity)."
+        "text": "Via Shadow Routing in de API-gateway die productieverkeer parallel test en pas overschakelt bij een bewezen 100% wiskundige match over tienduizenden transacties."
       }
     },
     {
       "@type": "Question",
-      "name": "Moeten we de AI gebruiken om onze oude legacy code exact, en 1-op-1, naar een nieuwe programmeertaal te vertalen?",
+      "name": "Moeten we de AI vragen om de oude code 1-op-1 over te zetten naar de nieuwe taal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absoluut niet. 1-op-1 slechte legacy code vertalen levert slechte moderne code op. LaunchStudio instrueert de AI (via prompts) om de oude logica te behouden, maar de architectuur keihard op te waarderen naar cloud-native standaarden (bijv. van trage synchrone calls naar asynchrone, event-driven processen)."
+        "text": "Nee, de bedrijfslogica blijft intact terwijl de architectuur wordt gemoderniseerd naar asynchrone, cloud-native microservices."
       }
     },
     {
       "@type": "Question",
-      "name": "Is het wel veilig (en toegestaan) om de geheime codebase van onze enterprise (IP) in een AI tool in te laden?",
+      "name": "Is het veilig om onze vertrouwelijke bedrijfsbroncode te uploaden naar een AI-tool?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gebruik nóóit publieke tools. LaunchStudio gebruikt uitsluitend gesloten, zwaarbeveiligde enterprise API-endpoints (zoals Azure OpenAI) met keiharde Zero Data Retention (ZDR) contracten. Jouw data wordt nooit opgeslagen en nooit gebruikt om AI-modellen te trainen. IP-bescherming is 100% gegarandeerd."
+        "text": "Ja, mits via geïsoleerde Enterprise ZDR-endpoints waar modeltraining strikt contractueel en technisch is uitgesloten."
       }
     }
   ]

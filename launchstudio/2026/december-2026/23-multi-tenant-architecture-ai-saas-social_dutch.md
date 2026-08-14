@@ -1,22 +1,22 @@
-🚨 Eén boekhouder kon theoretisch de klantbonnen van een andere boekhouder zien — gewoon door aan een URL te sleutelen. Nog niemand getroffen... nog niet. 😱
+🚨 Eén boekhouder kon in theorie de vertrouwelijke facturen van een ander kantoor inzien — puur door een URL-parameter aan te passen. Gelukkig was er nog niemand getroffen... nog niet. 😱
 
-Elke SaaS met meer dan één klant is "multi-tenant," of je er nu voor hebt ontworpen of niet. AI-tools zijn geweldig in functies, VERSCHRIKKELIJK in het handhaven van consistente isolatie door je hele codebase: 🧠
+Elke SaaS met meer dan één klant is "multi-tenant", of u dat nu bewust heeft ontworpen of niet. AI-tools zijn fantastisch in snelle features bouwen, maar falen vaak in consistente data-isolatie over de gehele codebase: 🧠
 
-❌ Eén ontbrekend filter op ÉÉN query = een echt datalek
-❌ Later toegevoegde functies slaan tenant-filtering vaak volledig over
-❌ De bug produceert nul zichtbare fouten — hij geeft stilletjes data terug die dat niet zou moeten
+❌ Eén vergeten filter op ÉÉN database-query = een reëel datalek
+❌ Nieuwe functies (zoals bestandsuploads of exportknoppen) slaan tenant-isolatie vaak over
+❌ De bug geeft geen foutmelding — de app toont simpelweg stilletjes data die geheim had moeten blijven
 
-De zelfaudit in 5 punten: ✅
-1️⃣ Heeft elke tabel een tenant-identificator?
-2️⃣ Filtert ELKE query erop, zonder uitzondering?
-3️⃣ Is RLS daadwerkelijk ingeschakeld ÉN getest, niet alleen geconfigureerd?
-4️⃣ Kun je bij data van een ander account komen via URL-manipulatie?
-5️⃣ Zijn bestandsuploads ook geïsoleerd, niet alleen databaserecords?
+De 5-punten controle voor multi-tenancy: ✅
+1️⃣ Heeft elke tabel een tenant_id?
+2️⃣ Filtert ELKE query hierop via RLS, zonder uitzondering?
+3️⃣ Is RLS daadwerkelijk actief én getest?
+4️⃣ Kunt u andermans data zien door een ID in de URL aan te passen?
+5️⃣ Zijn ook bestandsuploads en documentopslag strikt afgeschermd?
 
-🔁 Een eenmalige audit is niet genoeg — AI-tools brengen snel nieuwe functies uit, en elk nieuw endpoint is een verse kans om een tenant-filter te vergeten. Daarom moeten isolatietests in CI draaien bij ELKE pull request, niet alleen voor grote releases.
+🔁 Een eenmalige controle is niet genoeg: AI-tools bouwen snel nieuwe functies, en elk nieuw endpoint is een verse kans om een filter te vergeten. Daarom moeten geautomatiseerde isolatietests draaien bij ELKE code-update.
 
-Bij **LaunchStudio**, gesteund door Manifera's 160+ zakelijke projecten, maken we dit standaardonderdeel van elke deployment — geen bijzaak achteraf. 🛡️🚀
+Bij **LaunchStudio**, ondersteund door Manifera's 160+ enterprise-projecten, maken we data-isolatie standaard onderdeel van elke lancering. 🛡️🚀
 
-👉 Lees de volledige gids voor multi-tenant-architectuur: [Link naar artikel]
+👉 Lees de complete gids over multi-tenant architectuur: [Link naar artikel]
 
-#MultiTenant #LaunchStudio #Manifera #DataBeveiliging #AINativeFounder #SaaS
+#MultiTenant #LaunchStudio #Manifera #DataSecurity #AINativeFounder #SaaS #PostgreSQL #TechFounders #StartupOpschalen

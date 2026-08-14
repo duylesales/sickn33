@@ -1,26 +1,24 @@
-🚨 Een developer bood aan het "af te maken" voor 15% equity. Hij maakte de rekensom: dat is €75.000. De echte cashklus kostte €3.000. 🤯
+🚨 Een ontwikkelaar bood aan zijn app "even af te bouwen" voor 15% van de aandelen. Hij rekende het na: dat is €75.000 aan toekomstige waarde. Het echte projectwerk kostte €3.000 contant. 🤯
 
-"Ik doe het voor equity in plaats van cash" klinkt vriendelijk als je blut bent. Het is vaak een van de duurste beslissingen die een founder maakt: 😱
+"Ik bouw het wel af voor aandelen in plaats van geld" klinkt heel sympathiek als u krap bij kas zit. Het is vaak een van de duurste fouten die een oprichter kan maken: 😱
 
-❌ €3.000 cash voelt VANDAAG duur aan
-❌ 10% equity voelt VANDAAG gratis aan — geen factuur, geen bankklap
-❌ Maar die 10% claimt je HELE toekomstige waarde, verwaterd bij elke toekomstige ronde
+❌ €3.000 contant betalen voelt VANDAAG als een serieuze uitgave
+❌ 10% of 15% aandelen weggeven voelt vandaag GRATIS — geen factuur, geen bankafschrijving
+❌ Maar die 15% claimt uw HELE toekomstige bedrijfswaarde en verwatert bij elke investeringsronde!
 
-Wanneer equity daadwerkelijk zin heeft: ✅
-✅ Oprechte medeoprichter-relatie (vol risico, volledige toewijding)
-✅ Nul cash beschikbaar, geen levensvatbaar alternatief
-✅ Oprecht onbewezen, verkennend werk
+Wanneer aandelen wél logisch zijn: ✅
+✅ Een échte fulltime co-founder (deelt alle risico's en bouwt jarenlang mee)
+✅ 4-jarig vesting-schema met een cliff van 1 jaar
+✅ Genuïen onontgonnen, risicovol fundamenteel onderzoek
 
-Wanneer het een slechte deal is: ❌
-❌ Afgebakend, definieerbaar werk met een kenbare marktprijs (zoals een productielancering)
-❌ De "medeoprichter" gedraagt zich niet daadwerkelijk als één
+Wanneer het een slechte ruil is: ❌
+❌ Afgebakend backend-werk (auth, betalingen, database-isolatie) met een duidelijke marktprijs
+❌ Informele toezeggingen zonder getekende IP-overdracht (de developer kan later uw code opeisen!)
 
-Het kader: krijg eerst een ECHTE cashofferte, bereken dan wat het equity-% waard is bij een toekomstige waardering. Meestal een eyeopener. 🧠
+Bij **LaunchStudio** hanteren we vaste projectprijzen vanaf €800, zodat u reële bedragen kunt vergelijken vóórdat u uw bedrijf weggeeft. 🛡️🚀
 
-⚠️ Verborgen valkuil die de meeste founders missen: informeel gegeven equity is vaak VOLLEDIG GEVEST op dag één — geen cliff, geen terugvordering. Developer verdwijnt volgende week? Die equity is permanent van hem. Eis altijd vesting + een ondertekende IP-toewijzing.
+Zijn resultaat: €3.000 contant betaald, binnen 11 dagen live en 100% eigenaar gebleven! 🚀
 
-Bij **LaunchStudio** betekenen vaste prijzen vanaf €800 dat founders echte getallen kunnen vergelijken voordat ze hun bedrijf weggeven. 🛡️🚀
+👉 Lees de eerlijke rekensom van aandelen versus contant geld: [Link naar artikel]
 
-👉 Lees de eerlijke equity-versus-cash-rekensom: [Link naar artikel]
-
-#Equity #LaunchStudio #Manifera #AINativeFounder #StartupFinanciering #SaaS
+#Equity #LaunchStudio #Manifera #AINativeFounder #StartupFunding #SaaS #Lovable #TechFounders #StartupOpschalen

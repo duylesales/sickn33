@@ -1,11 +1,11 @@
-❌ Als jouw CISO een naïeve "AI wrapper" goedkeurt die is gekoppeld aan jullie productie-database, garandeer je wiskundig een massaal datalek.
+❌ Als uw CISO een naïeve "AI-wrapper" goedkeurt die gekoppeld is aan uw productiedatabase, garandeert u een datalek.
 
-Traditionele firewalls kunnen natural language aanvallen simpelweg niet stoppen.
-Om enterprise AI te beveiligen, moet je een keiharde "Zero Trust" infrastructuur bouwen:
-1️⃣ Semantische Firewalls: Jailbreaks onderscheppen vóórdat ze de LLM bereiken.
-2️⃣ Row Level Security (RLS): Fysiek afschermen van vector-searches op basis van de JWT van de gebruiker.
-3️⃣ DLP Proxies: Scrubben van PII en creditcards vóórdat ze je servers verlaten.
+Traditionele firewalls houden aanvallen in natuurlijke taal niet tegen.
+Om enterprise-AI te beveiligen heeft u een "Zero Trust" architectuur nodig:
+1️⃣ Semantische Firewalls: Prompt injections en jailbreaks onderscheppen vóórdat ze het model bereiken.
+2️⃣ Row Level Security (RLS): Vectorzoekopdrachten fysiek isoleren op basis van het JWT-token van de gebruiker.
+3️⃣ DLP-Proxies: BSN-nummers en creditcards lokaal maskeren vóór verzending.
 
-Lees hier hoe je AI data-exfiltratie onmogelijk maakt en zware SOC2-audits passeert: [Link]
+Ontdek hoe u data-exfiltratie wiskundig voorkomt en slaagt voor SOC2- en AVG-audits: [Link]
 
-#CyberSecurity #AILaw #DataProtection #CISO #SOC2 #RAGPoisoning #LaunchStudio
+#CyberSecurity #AILaw #DataProtection #CISO #SOC2 #RAGPoisoning #LaunchStudio #SecurityInAI

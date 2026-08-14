@@ -1,14 +1,14 @@
-🚨 Hallucinaties zullen je enterprise SaaS niet vernietigen, maar Data-Exfiltratie via Prompt Injectie wél.
+🚨 Hallucinaties maken uw enterprise-SaaS niet kapot, maar Data-Exfiltratie via Prompt Injection wél.
 
-Als een aanvaller een kwaadaardige prompt in jouw AI injecteert, kan hij de LLM dwingen om propriëtaire data uit je database te verzamelen en deze via een simpele image-tag te exfiltreren.
+Wanneer een aanvaller een kwaadaardige prompt injecteert, kan hij het model dwingen om vertrouwelijke data uit uw database op te halen en door te sturen via een eenvoudige afbeeldingstag.
 
-Om dit AI-beveiligingsrisico te neutraliseren, móét je een Defense-in-Depth architectuur bouwen:
-1️⃣ Semantische Firewalls (NeMo Guardrails) om input te saniteren.
-2️⃣ Row Level Security (RLS) in je vector database om data-isolatie af te dwingen.
-3️⃣ Strikte Content Security Policies (CSP) om ongeautoriseerde HTTP-transmissies te blokkeren.
+Om dit AI-security risico te neutraliseren heeft u een Defense-in-Depth architectuur nodig:
+1️⃣ Semantische Firewalls (NeMo Guardrails) om invoer te steriliseren.
+2️⃣ Row Level Security (RLS) in uw vectordatabase voor strikte tenant-isolatie.
+3️⃣ Een strikt Content Security Policy (CSP) om ongeautoriseerde uitgaande netwerkverzoeken van de browser te blokkeren.
 
-Laat je AI niet veranderen in een onbeveiligde database-terminal voor het hele internet.
+Laat uw AI geen openbaar databaseterminal worden voor het hele internet.
 
-Lees hier hoe LaunchStudio militaire-graad AI-security architecteert: [Link]
+Lees hoe LaunchStudio militaire beveiliging inricht voor zakelijke AI: [Link]
 
 #AISecurity #PromptInjection #CISO #DataExfiltration #CyberSecurity #EnterpriseAI #LaunchStudio

@@ -1,92 +1,112 @@
 ---
-Titel: White-Label Bureauddiensten voor AI SaaS
-Trefwoorden: ai saas, app bouwen met ai, ai maken, ai uitrol, launchstudio, manifera, lovable, bolt
+Titel: "White-Label Bureaudiensten voor AI SaaS-Applicaties"
+Trefwoorden: AI saas, build app with AI, make a AI, AI deployment, LaunchStudio, Manifera, Lovable, Bolt
 Koperfase: Overweging
 Doelpersona: C (Bureau / Freelancer White-Label Partner)
 ---
 
-# White-Label Bureauddiensten voor AI SaaS
+# White-Label Bureaudiensten voor AI SaaS-Applicaties
 
-Uw klant wandelde zojuist uw bureau binnen met een Lovable-prototype. Het ziet er prachtig uit. De UX is precies wat ze willen. Ze stellen een eenvoudige vraag: "Kunnen jullie dit tegen volgende maand live maken?"
+Een klant stapt uw bureau binnen met een prototype gebouwd in Lovable. Het ziet er fantastisch uit. De gebruikerservaring sluit naadloos aan bij wat hij wil. Vervolgens stelt hij die ene simpele vraag: "Kunnen jullie dit volgende maand live hebben?"
 
-Als bureau-eigenaar of freelancer is uw instinct om ja te zeggen. Maar dan kijkt u naar de met AI gegenereerde React-code. U realiseert u dat er geen Row Level Security in de database zit. De Stripe API-sleutels staan gehardcodeerd in de frontend. Er zijn geen webhooks, geen CI/CD-pijplijn en geen invoersanering.
+Als bureau-eigenaar of freelancer is uw eerste reflex om ja te zeggen. Maar dan bekijkt u de door AI gegenereerde React-code. U realiseert zich dat er geen Row Level Security in de database zit. De Stripe API-sleutels staan hardcoded in de frontend. Er zijn geen webhooks, geen CI/CD-pijplijn en geen invoervalidatie.
 
-Om dit project veilig op te leveren, moet u een senior backend-ontwikkelaar drie weken inzetten om de gehele authenticatie- en databaselaag te herstructureren. Maar uw senior ontwikkelaars zijn al volgeboekt op enterprise-projecten die €150 per uur opleveren. Ze toewijzen aan het beveiligen van een AI-prototype vernietigt uw marge.
+Om dit project veilig op te leveren, moet u een senior backend-ontwikkelaar drie weken lang vrijmaken om de complete authenticatie- en databaselaag te refactoren. Maar uw senior developers zijn al volgeboekt op enterprise-projecten met een uurtarief van €150. Hen toewijzen aan het verharden van een AI-prototype vernietigt uw projectmarge.
 
-Als u nee zegt, verliest u de klant. Als u ja zegt en een junior ontwikkelaar toewijst, riskeert u een catastrofaal datalek — en aangezien 45% van de door AI gegenereerde codebases minstens één misbruikbare kwetsbaarheid bevat, is het "risico" groot.
+Zegt u nee, dan verliest u de klant. Zegt u ja en zet u een junior ontwikkelaar op het project, dan riskeert u een catastrofaal datalek — en aangezien 45% van de door AI gegenereerde codebases minstens één exploiteerbare kwetsbaarheid bevat, is "risico" hier eerder een muntopgooi dan een uitzondering.
 
-Er is een derde optie: het white-labelen van de productie-engineering.
+Er is een derde optie: het uitbesteden van de productie-engineering onder een **white-label partnerschap**.
 
-## Het Bureau-Knelpunt in 2026
+## Het Knelpunt voor Bureaus in 2026
 
-In 2026 is het knelpunt voor creatieve en digitale bureaus niet langer het bouwen van de frontend-UI. AI-tools zoals Bolt en Lovable hebben snelle prototyping gecategoriseerd. Het knelpunt is de "laatste kilometer" van productie-engineering: beveiliging, betalingen en deployment-infrastructuur.
+In 2026 is het knelpunt voor creatieve en digitale bureaus niet langer het ontwerpen van de frontend-UI. AI-tools zoals Bolt en Lovable hebben rapid prototyping toegankelijk gemaakt — een oprichter kan binnenstappen met iets wat uw team vroeger twee sprints kostte om te bouwen, gegenereerd in één enkel weekend. Het knelpunt is de "laatste mijl" van productie-engineering: beveiliging, betalingen en deployment-infrastructuur.
 
-Bureaus staan voor vier uitdagingen bij met AI gegenereerde prototypes:
+Bureaus worden geconfronteerd met vier specifieke uitdagingen bij AI-gegenereerde prototypes:
 
-1. **Margedruk** — Het herstellen van beveiligingsfouten is tijdrovend backend-werk. Dit factureren tegen standaard bureautarieven overschrijdt het budget van de klant, maar de kosten absorberen vernietigt uw marge.
-2. **Kennisloof** — Veel bureaus blinken uit in ontwerp en UX, maar missen diepgaande in-house expertise in DevOps of PostgreSQL Row Level Security.
-3. **Aansprakelijkheidsrisico** — Het lanceren van een niet-beveiligde AI-SaaS stelt het bureau bloot aan grote aansprakelijkheid bij een datalek.
-4. **Schattingsprobleem** — Zonder ervaring met AI-codebases onderschatten bureaus deze projecten regelmatig.
+1. **Margedruk** — Het repareren van door AI gegenereerde beveiligingslekken is tijdrovend, gespecialiseerd backend-werk. Dit doorberekenen tegen standaard bureautarieven overschrijdt vaak het budget van de klant, maar de kosten zelf dragen verdampt uw winst.
+2. **De Vaardigheidskloof** — Veel bureaus blinken uit in design, UX en frontend-development, maar missen diepgaande in-house expertise in DevOps, PostgreSQL Row Level Security of payment webhook-architecturen. Extra personeel aannemen puur voor het opschonen van AI-prototypes is financieel niet rendabel op bureauschaal.
+3. **Het Aansprakelijkheidsrisico** — Het lanceren van een AI-gegenereerde SaaS van een klant zonder degelijke beveiliging stelt het bureau bloot aan enorme aansprakelijkheid bij een datalek. "De AI heeft de code geschreven" is geen argument waar de juristen van uw klant genoegen mee nemen.
+4. **Het Schattingsprobleem** — Zonder diepgaande ervaring met AI-codebases schatten bureaus deze projecten stelselmatig te laag in. Een prototype dat "voor 90% af lijkt" vereist immers dezelfde zware backend-infrastructuur, ongeacht hoe gepolijst de voorkant oogt. Die mismatch tussen offerte en werkelijke uren holt de marges stilzwijgend uit.
 
-## Hoe het LaunchStudio White-Label Programma Werkt
+## Hoe het White-Label Programma van LaunchStudio Werkt
 
-[LaunchStudio](https://launchstudio.eu/en/) is specifiek gebouwd om het probleem van de "laatste kilometer" op te lossen. We trede op als uw stille productiepartner.
+[LaunchStudio](https://launchstudio.eu/en/) is specifiek opgericht om dit "laatste mijl" probleem voor AI-codebases op te lossen. Omdat bureaus steeds vaker worden overspoeld met dit soort klantvragen, hebben wij een officieel white-label partnerprogramma opgezet.
 
-Ondersteund door [Manifera's](https://www.manifera.com/) 11+ jaar ervaring in enterprise-softwareontwikkeling, voeren onze engineeringteams — werkzaam vanuit Amsterdam (Herengracht 420) en ons ontwikkelcentrum in Vietnam (Pho Quang Street in Ho Chi Minh City), met een regionaal coördinatiepunt aan 100 Tras Street in Singapore — de backend-hardening uit terwijl u de klantrelatie behoudt.
+Gesteund door [Manifera's](https://www.manifera.com/) 11+ jaar ervaring in enterprise software-engineering, treden wij op als uw onzichtbare productiepartner. Onze engineeringteams — werkend vanuit ons hoofdkantoor in Amsterdam en ons ontwikkelcentrum in Vietnam, met een regionaal coördinatiepunt aan 100 Tras Street in Singapore voor partners in de APAC-regio — verzorgen de complete backend-verharding terwijl u het rechtstreekse klantcontact behoudt.
 
-> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
 ### Het Proces
 
-1. **U haalt de klant binnen.** U beoordeelt hun AI-prototype en definieert de vereisten.
-2. **Wij bieden een vaste offerte.** U deelt de codebase met ons onder NDA. Wij bieden een gegarandeerde vaste prijs en tijdlijn (typisch €800–€3.500 en 1-3 weken).
-3. **U verhoogt de prijs met uw marge.**
-4. **Wij voeren stil uit.** Onze engineers implementeren authenticatie, Row Level Security, Stripe/Mollie webhooks en CI/CD-pijplijnen.
-5. **U levert het eindproduct op.** U presenteert de veilige applicatie onder uw eigen merk.
+1. **U haalt de klant binnen.** U bekijkt het AI-prototype en definieert de functionele wensen.
+2. **Wij leveren een vaste prijsopgave.** U deelt de codebase met ons onder geheimhouding (NDA). Wij leveren een gegarandeerde, vaste projectprijs en tijdlijn voor de livegang (doorgaans €800–€3.500 en 1 tot 3 weken), zodat uw eigen offerte naar de klant nooit op aannames berust.
+3. **U bepaalt uw marge.** U voegt uw eigen bureaumarge toe bovenop onze vaste inkoopprijs.
+4. **Wij voeren geruisloos uit.** Onze engineers implementeren volwaardige authenticatie, Row Level Security, Stripe/Mollie-webhooks en CI/CD-pijplijnen. Wij werken volledig op de achtergrond; code commits kunnen onder de GitHub-accounts van uw bureau worden geplaatst.
+5. **U levert het eindproduct op.** U presenteert de veilige, productierijpe applicatie aan uw klant onder uw eigen merknaam.
+
+### Wat Dit Verschilt van Inhuur van Losse Freelancers
+
+Bureaus proberen dit soms op te lossen door een individuele freelance backend-ontwikkelaar in te huren. Het grote verschil zit in consistentie en continuïteit: de beschikbaarheid, kwaliteit en ervaring van een individuele freelancer met AI-codebases variëren sterk per project. Als een freelancer halverwege afhaakt, blijft uw bureau zitten met een onvoltooide, onbekende codebase tegenover uw eigen klant. LaunchStudio's methodiek is gestandaardiseerd over elk project — dezelfde fixed-scope aanpak, dezelfde door Manifera gewaarborgde kwaliteitsnormen en de zekerheid van een gevestigde organisatie achter uw rug.
 
 ## De Financiële Impact voor Bureaus
 
-Door samen te werken met LaunchStudio veranderen AI-prototypes van een hoofdpijndossier in een winstgevende dienstenlijn. LaunchStudio biedt vaste prijzen die substantiële ruimte laten voor bureaumarge. U kunt snelle levering en robuuste beveiliging garanderen zonder uw eigen ontwikkelaars te belasten.
+Een samenwerking met LaunchStudio transformeert AI-prototypes van een hoofdpijndossier met lage marges naar een uiterst winstgevende nieuwe dienst.
 
-## Belangrijkste Inzichten
+Doordat Manifera's ontwikkelcentrum in Vietnam hoogwaardige enterprise-engineering levert tegen zeer efficiënte tarieven, biedt LaunchStudio vaste inkoopprijzen die volop ruimte laten voor een gezonde bureaumarge. U kunt uw klanten met een gerust hart snelle oplevering en robuuste beveiliging garanderen zonder uw eigen senior ontwikkelaars van lucratievere projecten af te halen. Veel partnerbureaus ervaren dat het beveiligen van AI-prototypes een van hun meest rendabele diensten is geworden, juist omdat de inkoopkosten vooraf exact vaststaan.
 
-- Bureaus ontvangen een stroom van met AI gegenereerde prototypes die gespecialiseerde backend-hardening vereisen.
-- Het in-house herstellen van deze prototypes vernietigt vaak de bureaumarge en belast senior ontwikkelaars.
-- LaunchStudio biedt een white-label dienst die stil optreedt als productiepartner tegen vaste prijzen.
-- Met het white-label model kunnen bureaus "ja" zeggen tegen AI-projecten, hoge marges behouden en enterprise-beveiliging leveren.
+## De Drie Bezwaren die Bureau-eigenaren Meestal Eerst Noemen
 
-## Echt Voorbeeld
+**"Wat als de prijs stijgt zodra jullie in de codebase duiken?"** Dit is de grootste zorg, omdat dit exact is wat er gebeurt bij freelancers die ontdekken dat de AI-code ingewikkelder in elkaar zit dan verwacht. LaunchStudio's vaste-prijsmodel is gebaseerd op een gestructureerde intake: we beoordelen de codebase aan de hand van onze vaste checklist (RLS-status, authenticatiestructuur, betalingslogica, hosting) vóórdat we offreren, niet pas achteraf. Scopewijzigingen komen zelden voor omdat de offerte gebaseerd is op een daadwerkelijke technische audit.
 
-### Een Bureau in Actie: Digital Bloom
+**"Hoe zit het met de projectmanagement-overhead aan onze kant?"** Bureaus vrezen dat het aansturen van een externe partij zoveel tijd kost dat de winstmarge verdampt. In de praktijk is het proces ontworpen voor minimale contactmomenten: één intakegesprek, één vaste offerte, één opleveringscontrole, met asynchrone updates tussendoor in plaats van dagelijkse vergaderingen.
 
-Digital Bloom is een middelgroot digitaal bureau in Utrecht gespecialiseerd in UX-ontwerp en frontend-ontwikkeling. In één maand benaderden drie klanten hen met door AI gegenereerde prototypes (twee van Lovable, één van Bolt) die ze wilden omzetten in live SaaS-producten.
+**"Kunnen we een extern team vertrouwen met het intellectueel eigendom van onze klant?"** Elk traject wordt uitgevoerd onder een strikte NDA en de code wordt direct gepusht naar repositories die uw bureau beheert. LaunchStudio bewaart na afloop geen kopieën van klantcode. Manifera's portfolio van enterprise-opdrachtgevers — inclusief gereguleerde organisaties zoals Vodafone en TNO — getuigt van een bedrijfscultuur die volledig is ingericht op strikte vertrouwelijkheid.
 
-De technisch directeur van het bureau realiseerde zich dat ze de in-house backend-capaciteit misten om alle drie de projecten tegelijk te beveiligen. De klanten wilden snel lanceren, en het bureau dreigde €45.000 aan projectwaarde te verliezen.
+## Welke Bureaus Halen Hier de Meeste Waarde Uit?
 
-**LaunchStudio (door Manifera)** werkte samen met Digital Bloom onder een strikte white-label overeenkomst. Digital Bloom beheerde de klantcommunicatie en verfijnde het UI-ontwerp. Op de achtergrond voerde LaunchStudio's engineeringteam de backend-hardening uit voor alle drie de projecten: Supabase RLS, Mollie-abonnementen met webhook-verificatie en Vercel CI/CD-pijplijnen.
+Het white-label model rendeert het snelst voor drie typen bureaus: design- en brandingbureaus die regelmatig de vraag krijgen om "de app echt te maken" maar geen backend-capaciteit hebben; boutique productstudio's die MVP's bouwen voor startups en een veilige lancering willen aanbieden zonder extra personeel aan te nemen; en marketingbureaus wier klanten steeds vaker binnenkomen met een kant-en-klaar Lovable- of Bolt-prototype in plaats van een lege briefing.
 
-**Resultaat:** Alle drie de projecten werden op tijd en veilig opgeleverd. Digital Bloom behield de klanten en verdiende een nettomarge van €12.000 over de drie projecten zonder een enkel uur van hun eigen backend-ontwikkelaars te gebruiken. *"Vroeger vreesden we het wanneer klanten AI-code meebrachten. Nu is het onze meest winstgevende dienstenlijn."*
+## Belangrijkste inzichten
 
-**Kosten & Doorlooptijd:** €6.200 gecombineerde kosten (bureau-groothandelstarief) — alle drie de projecten afgerond binnen 3 weken.
+- Bureaus worden overspoeld met door AI gegenereerde prototypes die gespecialiseerde backend-versteviging nodig hebben vóór een veilige lancering.
+- Het intern oplossen van deze prototypes vreet marges op, claimt schaarse senior developers en leidt vaak tot onderschatting van uren.
+- LaunchStudio biedt een complete white-label service als onzichtbare productiepartner voor het beveiligen en livezetten van AI-codebases tegen vaste inkooptarieven.
+- Met dit white-label model kunnen bureaus volmondig "ja" zeggen tegen AI-projecten, aantrekkelijke marges behouden en enterprise-kwaliteit leveren zonder aansprakelijkheidsrisico's.
+
+[Freelancer of bureau? Wij werken graag als uw stille productiepartner. Neem contact op voor ons white-label programma.](https://launchstudio.eu/en/#contact)
+
+## Echt voorbeeld
+
+### Een bureau in actie: Digital Bloom
+
+Digital Bloom is een middelgroot digitaal bureau in Utrecht, gespecialiseerd in UX-design en frontend-development voor e-commerce merken. Binnen één maand klopten drie verschillende klanten bij hen aan met door AI gegenereerde prototypes (twee uit Lovable, één uit Bolt) die zij wilden transformeren naar live SaaS-producten.
+
+De technisch directeur beoordeelde de code en realiseerde zich dat zij intern niet de backend-capaciteit hadden om alle drie de projecten gelijktijdig te beveiligen. De klanten wilden snel live en het bureau dreigde €45.000 aan gecombineerde projectwaarde te moeten afwijzen.
+
+**LaunchStudio (door Manifera)** sloot een strikte white-label overeenkomst met Digital Bloom. Digital Bloom verzorgde de klantcommunicatie en verfijnde het UI-design. Op de achtergrond voerde het engineeringteam van LaunchStudio in Vietnam de backend-verharding uit voor alle drie de projecten tegelijk: implementatie van Supabase RLS, Mollie-abonnementen met webhook-validatie en Vercel CI/CD-pijplijnen.
+
+**Resultaat:** Alle drie de projecten werden binnen de gestelde deadline en volledig beveiligd opgeleverd. Digital Bloom behield de klanten, breidde haar dienstenaanbod uit en realiseerde een netto winstmarge van €12.000 over de drie projecten zonder ook maar één uur van haar eigen backend-ontwikkelaars in te zetten. *"Vroeger zagen we op tegen klanten die met AI-code aankwamen. Nu is het onze meest winstgevende dienst. LaunchStudio doet het zware werk en wij oogsten de waardering."*
+
+**Kosten & tijdlijn:** €6.200 gecombineerde inkoopkosten (groothandelstarief voor bureaus) — alle drie de projecten binnen 3 weken afgerond.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Zullen mijn klanten weten dat LaunchStudio aan hun project werkt?
-Nee, tenzij u dat wilt. Ons white-label programma is ontworpen om volledig onzichtbaar te zijn voor uw klanten. We vereisen geen directe communicatie met de eindklant, code-commits kunnen worden gedaan onder de accounts van uw bureau, en we werken strikt onder NDA.
+### Weten mijn klanten dat LaunchStudio aan hun project werkt?
+Nee, tenzij u dat zelf expliciet wenst. Ons white-label programma is volledig onzichtbaar voor uw eindklanten. Wij hebben geen direct contact met uw klant, code commits kunnen onder uw eigen GitHub-organisatie worden gedaan en wij werken onder een strikte geheimhoudingsovereenkomst (NDA).
 
-### 2. Hoe bepaalt LaunchStudio de prijzen voor white-label diensten?
-We bieden offertes met een vaste prijs voor elk project op basis van een vooraf gedefinieerde scope. Onze typische groothandelstarieven voor bureaus variëren van €800 tot €3.500, afhankelijk van de complexiteit.
+### Hoe bepaalt LaunchStudio de tarieven voor white-label partners?
+Wij leveren vaste projectoffertes op basis van een vooraf gedefinieerde scope. Onze groothandelstarieven voor bureaus liggen doorgaans tussen €800 en €3.500, afhankelijk van de complexiteit van de gewenste databasebeveiliging en betalingsintegraties. Dankzij deze vaste prijzen kunt u met zekerheid uw eigen marge toevoegen zonder risico op onverwachte meerwerkkosten.
 
-### 3. Welke codekwaliteit kan ik verwachten van LaunchStudio?
-LaunchStudio wordt ondersteund door Manifera, een softwareontwikkelingsbedrijf met meer dan tien jaar ervaring in het leveren van enterprise-software voor klanten zoals Vodafone en TNO. Onze engineeringteams in Vietnam en Amsterdam hanteren strikte Europese kwaliteits- en beveiligingsnormen.
+### Welke codekwaliteit mag ik verwachten van LaunchStudio?
+LaunchStudio wordt aangedreven door Manifera, een softwarebedrijf met ruim 11 jaar ervaring in enterprise-oplossingen voor opdrachtgevers als Vodafone en TNO. Onze engineeringteams in Vietnam en Amsterdam hanteren strenge Europese kwaliteits- en beveiligingsstandaarden voor schaalbare PostgreSQL-architectuur, RLS en API-veiligheid.
 
-### 4. Kan LaunchStudio doorlopend onderhoud afhandelen na de lancering?
-Ja. Veel van onze bureaupartners kiezen voor onze beheerde hosting- en onderhoudspakketten (€49/maand per project) die ze white-labelen en doorverkopen aan hun klanten voor terugkerende inkomsten.
+### Kan LaunchStudio ook het doorlopend onderhoud verzorgen na de lancering?
+Ja. Veel van onze partnerbureaus maken gebruik van onze pakketten voor managed hosting en onderhoud (€49/maand per project) die zij met een opslag doorverkopen aan hun klanten. Dit omvat automatische back-ups, 24/7 uptime-monitoring en beveiligingspatches, waardoor het bureau eenvoudig terugkerende omzet opbouwt.
 
-### 5. Wijzigt LaunchStudio het UI/UX-ontwerp dat ons bureau heeft gemaakt?
-Absoluut niet. We begrijpen dat ontwerp de kernwaarde van uw bureau is. Onze engineers richten zich uitsluitend op de backend-lagen: database-beveiliging, authenticatie, betalingsinfrastructuur en deployment.
+### Past LaunchStudio het UI/UX-ontwerp aan dat ons bureau heeft gemaakt?
+Beslist niet. Wij begrijpen dat design en gebruikerservaring de kernwaarde van uw bureau vormen. Onze engineers richten zich uitsluitend op de backend-lagen: databesecurity, authenticatie, betalingsinfrastructuur en hosting. Uw zorgvuldig ontworpen frontend blijft exact zoals u deze heeft opgeleverd.
 
 <script type="application/ld+json">
 {
@@ -95,42 +115,42 @@ Absoluut niet. We begrijpen dat ontwerp de kernwaarde van uw bureau is. Onze eng
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Zullen mijn klanten weten dat LaunchStudio aan hun project werkt?",
+      "name": "Weten mijn klanten dat LaunchStudio aan hun project werkt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Ons white-label programma is ontworpen om volledig onzichtbaar te zijn. We werken onder NDA en kunnen commits doen onder uw bureau-accounts."
+        "text": "Nee. Het white-label programma is 100% onzichtbaar voor uw klanten. Wij werken onder NDA en kunnen commits uitvoeren onder de accounts van uw bureau."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe bepaalt LaunchStudio de prijzen voor white-label diensten?",
+      "name": "Hoe bepaalt LaunchStudio de tarieven voor white-label partners?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We bieden offertes met een vaste prijs van €800 tot €3.500, afhankelijk van de complexiteit, waardoor u zorgeloos uw marge kunt toevoegen."
+        "text": "Wij bieden gegarandeerde vaste projectprijzen tussen €800 en €3.500, zodat bureaus vooraf exact weten wat de inkoop is en met zekerheid marge kunnen toevoegen."
       }
     },
     {
       "@type": "Question",
-      "name": "Welke codekwaliteit kan ik verwachten van LaunchStudio?",
+      "name": "Welke codekwaliteit mag ik verwachten van LaunchStudio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio wordt ondersteund door Manifera's 11+ jaar ervaring. Onze teams hanteren strikte Europese kwaliteits- en beveiligingsnormen."
+        "text": "LaunchStudio bouwt op Manifera's 11+ jaar enterprise-ervaring (Vodafone, TNO). Teams hanteren strikte Europese standaarden voor RLS, security en schaalbaarheid."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio doorlopend onderhoud afhandelen na de lancering?",
+      "name": "Kan LaunchStudio ook het doorlopend onderhoud verzorgen na de lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. We bieden beheerde hosting en onderhoudspakketten die bureaus kunnen white-labelen en doorverkopen voor terugkerende inkomsten."
+        "text": "Ja. Bureaus kunnen onze managed hosting en onderhoudspakketten (€49/maand) white-labelen en doorverkopen voor stabiele terugkerende omzet."
       }
     },
     {
       "@type": "Question",
-      "name": "Wijzigt LaunchStudio het UI/UX-ontwerp dat ons bureau heeft gemaakt?",
+      "name": "Past LaunchStudio het UI/UX-ontwerp aan dat ons bureau heeft gemaakt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absoluut niet. We richten ons uitsluitend op backend-lagen: beveiliging, authenticatie en deployment. Uw frontend-ontwerp blijft exact behouden."
+        "text": "Nee, absoluut niet. Wij focussen exclusief op de backend-, beveiligings- en deployment-infrastructuur. Uw frontend-ontwerp blijft 100% onaangeroerd."
       }
     }
   ]

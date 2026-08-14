@@ -1,92 +1,160 @@
 ---
-Titel: "Hoe Voeg Je Authenticatie Toe aan Je Lovable-app zonder Hem te Breken"
-Trefwoorden: AI-app-ontwikkeling, AI-codeontwikkeling, AI-app bouwen, AI-ontwikkeling, LaunchStudio, Manifera
+Titel: "Authenticatie Toevoegen aan Uw Lovable-App Zonder Dingen te Breken"
+Trefwoorden: ai app dev, ai code development, build ai app, ai development, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: Technische Solo Founder / Indie Hacker
+Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Hoe Voeg Je Authenticatie Toe aan Je Lovable-app zonder Hem te Breken
+# Authenticatie Toevoegen aan Uw Lovable-App Zonder Dingen te Breken
 
-Authenticatie klinkt als één enkele functie. In de praktijk is het een wijziging die bijna alles raakt: elke pagina moet weten wie is ingelogd, elke databasequery moet respecteren wie welke data bezit, en elke bestaande functie die je al hebt gebouwd, moet exact blijven werken zoals voorheen, alleen nu gescoped naar de juiste gebruiker. Daarom breekt het toevoegen van authenticatie aan een bestaand Lovable-prototype vaker dingen dan founders verwachten.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Authenticatie Toevoegen aan Uw Lovable-App Zonder Dingen te Breken",
+  "description": "Inloggen toevoegen aan een Lovable-prototype is een van de meest risicovolle wijzigingen voor een oprichter — het raakt elk deel van de applicatie. Ontdek hoe u dit veilig doet.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/add-authentication-lovable-app-without-breaking"
+  }
+}
+</script>
 
-## Waarom Authenticatie Anders Is dan een Normale Functietoevoeging
+Authenticatie klinkt als één enkele feature. In de praktijk is het een wijziging die vrijwel alles in uw codebase raakt: elke pagina moet weten wie er is ingelogd, elke databasequery moet controleren wie welke data bezit, en elke bestaande functie moet plotseling strikt per gebruiker worden afgeschermd. Dit verklaart waarom het achteraf toevoegen van authenticatie aan een Lovable-prototype aanzienlijk vaker fouten veroorzaakt dan oprichters verwachten.
 
-De meeste functietoevoegingen zijn additief — je voegt iets nieuws toe zonder te verstoren wat al bestaat. Authenticatie is structureel — het verandert de fundamentele aanname waarop je hele applicatie is gebouwd, van "er is één impliciete gebruiker" naar "er zijn veel verschillende gebruikers, en elk stukje data en elke actie moet correct gescoped zijn naar de juiste." Deze aanname achteraf inbouwen raakt veel meer van je codebase dan een typische functie.
+## Waarom Authenticatie Fundamenteel Verschilt van een Normale Feature
 
-## Het Veelvoorkomende Faalpatroon
+De meeste nieuwe functies zijn additief: u voegt iets nieuws toe zonder de bestaande werking te verstoren. Authenticatie is daarentegen structureel: het verandert de basisaanname waarop uw gehele prototype is gebouwd, van *"er is één impliciete gebruiker"* naar *"er zijn vele afzonderlijke gebruikers, en elk stukje data en elke actie moet strikt aan de juiste gebruiker worden gekoppeld."* Het achteraf inpassen van deze aanname raakt vele malen meer bestanden dan een normale functionaliteit.
 
-Een founder vraagt Lovable (of Bolt, of Cursor) om "login toe te voegen," en de AI-tool genereert een redelijk uitziende authenticatieflow — een loginpagina, een aanmeldpagina, een sessietoken. Wat vaak niet automatisch gebeurt, is het bijwerken van elke bestaande databasequery en pagina om die authenticatie daadwerkelijk te respecteren: alleen de data van de ingelogde gebruiker tonen, toegang tot pagina's blokkeren zonder geldige sessie, en voorkomen dat één gebruiker bij de records van een andere komt door een URL te manipuleren. De loginpagina werkt. De daadwerkelijke bescherming vaak niet, stilletjes.
+## Het Klassieke Faalpatroon
 
-## Een Veiligere Volgorde voor het Toevoegen van Authenticatie
+Een oprichter vraagt Lovable (of Bolt, of Cursor) om *"login toe te voegen"*, en de AI-tool genereert een keurige inlogstroom — een inlogpagina, een registratieformulier en een sessietoken. Wat er echter stilletjes **niet** automatisch gebeurt, is het updaten van alle bestaande databasequeries en pagina's om die authenticatie ook daadwerkelijk af te dwingen: alleen de data van de ingelogde gebruiker tonen, pagina's blokkeren zonder geldige sessie, en voorkomen dat gebruiker A de gegevens van gebruiker B inziet door simpelweg een getal in de URL aan te passen. Het inlogscherm werkt, maar de feitelijke databescherming ontbreekt geruisloos.
 
-1. **Kies eerst een productiewaardige authenticatieprovider** (Supabase Auth, Auth0, NextAuth) in plaats van de AI-tool authenticatielogica vanaf nul te laten bouwen — gevestigde providers handelen beveiligingsdetails (wachtwoordhashing, sessiebeheer, tokenverval) standaard correct af.
-2. **Breng elke bestaande functie en datatabel in kaart** die gebruikersgescoped moet worden voordat je code schrijft, zodat niets wordt gemist.
-3. **Update databasequery's systematisch**, en zorg ervoor dat elke enkele query die gebruikersdata raakt, correcte filtering bevat — niet alleen de pagina's die je je herinnert te checken.
-4. **Test cross-gebruiker-toegang expliciet** — maak twee testaccounts aan en probeer bewust bij de data van het ene account te komen vanuit het andere voordat je het werk als voltooid beschouwt.
-5. **Voeg bescherming op databaseniveau toe** (zoals Supabase Row Level Security) als tweede verdedigingslinie, zodat zelfs een gemiste check op applicatieniveau niet leidt tot volledige datablootstelling.
+## Een Veilige Volgorde voor het Inbouwen van Authenticatie
 
-## Waarom Dit een Beoordeling Waard Is
+1. **Kies eerst een beproefde authenticatieprovider** (zoals Supabase Auth, Auth0 of NextAuth) in plaats van de AI-tool zelf authenticatielogica vanaf nul te laten schrijven — gevestigde providers handhaven beveiligingsdetails (wachtwoord-hashing, sessiebeheer, tokenverloop) standaard volgens de hoogste normen.
+2. **Breng alle bestaande functies en datatabellen in kaart** die gebruikersgebonden moeten worden vóórdat er code wordt geschreven.
+3. **Update databasequeries systematisch**, zodat elke afzonderlijke query die gebruikersdata aanraakt expliciete filtering bevat — en niet alleen de pagina's waar u toevallig aan denkt.
+4. **Test kruiselingse gebruikerstoegang expliciet** — maak twee testaccounts aan en probeer doelbewust met Account A bij de data van Account B te komen vóórdat u de code als voltooid beschouwt.
+5. **Voeg beveiliging op databaseniveau toe** (zoals Supabase Row Level Security) als tweede verdedigingslinie, zodat zelfs een vergeten controle in de applicatiecode nooit leidt tot een datalek.
 
-Omdat authenticatie je hele applicatie tegelijk raakt, zijn fouten hier zowel makkelijk te maken als ongewoon kostbaar — een authenticatiegat breekt niet alleen een functie, het kan de privédata van elke gebruiker tegelijk blootstellen aan elke andere gebruiker. Deze combinatie van brede impact en makkelijk te missen subtiliteit is precies waarom [LaunchStudio](https://launchstudio.eu/en/) authenticatie-implementatie behandelt als een van zijn meest zorgvuldig beoordeelde engineeringtaken, gesteund door Manifera's beveiligingsachtergrond geworteld in Herre Roelevinks cybersecuritywerk met CFLW en TNO.
+## Waarom een Professionele Review Essentieel Is
 
-[Laat je authenticatie-implementatie beoordelen](https://launchstudio.eu/en/#contact) voordat echte gebruikers echte accounts met echte data beginnen aan te maken.
+Omdat authenticatie uw gehele applicatie in één keer raakt, zijn fouten zowel snel gemaakt als uitzonderlijk kostbaar — een fout in de autorisatie breekt immers niet alleen een functie, maar kan de privégegevens van al uw klanten gelijktijdig blootstellen. Deze combinatie van brede impact en subtiele kwetsbaarheden is exact waarom [LaunchStudio](https://launchstudio.eu/en/) authenticatie-implementatie behandelt als een van haar meest kritieke taken, geworteld in Herre Roelevinks cybersecurity-ervaring met CFLW Cyber Strategies en TNO.
 
-## Voorbij het Ontbrekende Queryfilter: Andere Autorisatiegaten die het Waard Zijn om te Controleren
+[Laat uw authenticatie-implementatie beoordelen](https://launchstudio.eu/en/#contact) vóórdat echte gebruikers echte accounts met echte gevoelige data aanmaken.
 
-Het hierboven beschreven datalek via URL-parameters is het meest voorkomende authenticatiegat in AI-gegenereerde prototypes, maar het is niet het enige. Een inlogpagina die correct werkt kan prima naast verschillende andere autorisatiegaten bestaan die hetzelfde valse gevoel van "dit is geregeld" geven, totdat een echte gebruiker — of een echte aanvaller — ze ontdekt.
+## Verder Dan het Ontbrekende Query-Filter: Andere Autorisatiegaten
 
-### Toegangscontrole Alleen aan de Cliëntzijde
-Sommige AI-gegenereerde implementaties verbergen een pagina of knop op basis van de rol van de ingelogde gebruiker puur in de frontend — een pagina alleen voor beheerders is bijvoorbeeld simpelweg niet gekoppeld vanuit de gewone navigatie. Dit biedt nul echte bescherming: iedereen die de URL kent of raadt, kan de pagina rechtstreeks laden ongeacht rol, omdat de beperking alleen bestaat in wat wordt getoond, niet in wat de server daadwerkelijk toestaat. Elke toegangsbeperking moet server-side worden afgedwongen, waarbij het verbergen in de frontend slechts een gemak is, niet het beveiligingsmechanisme zelf.
+Het datalek via URL-parameters is het meest voorkomende gat in AI-prototypes, maar zeker niet het enige. Een vlekkeloos werkend inlogscherm kan gepaard gaan met meerdere andere autorisatielekken die een vals gevoel van veiligheid geven totdat een gebruiker of aanvaller ze ontdekt:
 
-### Onveilige API-routes Achter een Veilig Ogende Frontend
-Een gepolijste, correct geauthenticeerde frontend kan nog steeds vóór API-routes zitten die niet zelfstandig verifiëren of het verzoek geautoriseerd is — bijvoorbeeld een API-eindpunt dat gewoon de data van elke gebruiker teruggeeft als het direct wordt aangeroepen (via een tool als Postman of de developer console van een browser) in plaats van via de eigen interface van de app, omdat de autorisatiecontrole alleen plaatsvindt in het frontend-codepad, niet in de API-route zelf. Elke API-route heeft zijn eigen onafhankelijke autorisatiecontrole nodig, ongeacht hoe goed beschermd de frontend die hem normaal aanroept lijkt.
+### Toegangscontrole Uitsluitend aan de Client-Side
+Sommige AI-gegenereerde implementaties verbergen een knop of beheerpagina puur in de frontend — een beheerderspagina wordt simpelweg niet getoond in het menu van een normale gebruiker. Dit biedt nul werkelijke beveiliging: iedereen die de URL rechtstreeks in de browser intypt, kan de pagina gewoon openen, omdat de blokkade alleen in de weergave zit en niet op de server wordt afgedwongen. Elke restrictie moet server-side worden gevalideerd.
 
-### Rolescalatie via Bewerkbare Cliëntdata
-Applicaties die de rol of het toestemmingsniveau van een gebruiker opslaan op een plek die de cliënt kan aanpassen — een waarde in local storage, een bewerkbaar formulierveld, een door de cliënt bepaalde requestparameter — creëren een mogelijkheid voor een gebruiker om simpelweg "role: user" zelf te veranderen in "role: admin." Rol- en toestemmingsdata moeten server-side leven, gekoppeld aan de geauthenticeerde sessie, en nooit vertrouwd worden op basis van iets dat de cliënt verstuurt.
+### Onbeveiligde API-Routes Achter een 'Veilige' Frontend
+Een gelikte, beveiligde frontend kan gekoppeld zijn aan backend API-routes die inkomende verzoeken niet onafhankelijk verifiëren. Een API-endpoint dat data retourneert wanneer het direct wordt aangeroepen (via Postman of de ontwikkelaarsconsole van de browser) lekt data omdat de autorisatiecheck alleen in de frontendcode plaatsvond. Elke API-route moet een eigen, onafhankelijke sessiecontrole uitvoeren.
 
-### Details van Sessie- en Tokenafhandeling
-Naast de kernloginflow zijn details zoals tokenvervaltijd (verloopt een sessie daadwerkelijk, of blijft hij oneindig bestaan zodra hij is uitgegeven?), veilige cookievlaggen, en correcte sessie-ongeldigmaking bij uitloggen of wachtwoordwijziging, makkelijk over het hoofd te zien in een snelle AI-gegenereerde implementatie, en elk vertegenwoordigt een reëel, zij het minder direct zichtbaar, blootstellingsvenster.
+### Onbedoelde Rol-Escalatie via Bewerkbare Client-Data
+Applicaties die gebruikersrollen opslaan op plekken die de browser kan manipuleren (zoals `localStorage` of een bewerkbaar formulierveld) stellen gebruikers in staat om hun eigen rol handmatig van `"user"` naar `"admin"` te veranderen. Rol- en rechttypen moeten uitsluitend server-side aan de geverifieerde sessie zijn gekoppeld.
 
-### Waarom Eén Cross-user-test Niet Genoeg Is
-De test van Fenna's broer, proberen de data van een andere gebruiker te bekijken door een URL-parameter te veranderen, is een uitstekende eerste controle, maar vangt alleen de categorie datascoping-gaten. Een echt grondige authenticatiebeoordeling controleert elke categorie hierboven afzonderlijk, omdat een codebase de URL-parametertest probleemloos kan doorstaan terwijl hij toch faalt op alleen-cliëntzijde-rolcontroles of een onbeschermde API-route die bereikbaar is buiten de normale frontend-flow om.
+### Onzorgvuldig Sessie- en Tokenbeheer
+Verloopt een sessietoken daadwerkelijk na verloop van tijd, of blijft een eenmaal uitgegeven token oneindig geldig? Worden cookies veilig verzonden met `HttpOnly` en `Secure` vlaggen, en wordt de sessie correct ongeldig gemaakt bij uitloggen of wachtwoordwijziging? In snelle AI-generaties worden deze cruciale details vaak overgeslagen.
+
+### Waarom Eén Enkele Test Niet Genoeg Is
+De test om via een URL-parameter data van een ander te bekijken is een uitstekende eerste stap, maar controleert alleen data-scoping. Een grondige audit controleert elk van de bovenstaande categorieën afzonderlijk, aangezien een app de URL-test glansrijk kan doorstaan terwijl API-routes wagenwijd openstaan.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: een authenticatiegat vangen voordat er schade ontstond
+### Een AI-native oprichter in actie: Het datalek ontdekt vlak vóór de officiële uitrol
 
-Fenna, een personal trainer met een kleine studio in Sittard, bouwde FitVolg, een tool voor trainingsprogramma's en voortgangstracking voor haar personal-training-klanten, met Lovable. Ze vroeg Lovable om een loginsysteem toe te voegen zodat elke klant alleen zijn eigen trainingsplannen kon zien, en de resulterende login- en aanmeldpagina's zagen er correct uit en functioneerden soepel in haar eigen tests.
+Fenna, personal trainer in Sittard, bouwde met Lovable FitVolg: een app waarin haar trainingsklanten hun persoonlijke schema's en voortgang konden bijhouden. Ze vroeg Lovable om een inlogsysteem toe te voegen zodat elke klant alleen zijn eigen schema zag. De inlogpagina werkte vlekkeloos in haar eigen tests.
 
-Voordat ze FitVolg uitrolde naar haar daadwerkelijke klantenbestand, testte Fenna's broer, een software-engineer, het uit nieuwsgierigheid en ontdekte dat, hoewel de loginpagina werkte, de trainingsplanpagina's zelf nog steeds data ophaalden via een simpele URL-parameter zonder server-side check die bevestigde dat de ingelogde gebruiker dat plan daadwerkelijk bezat — wat betekende dat elke klant, eenmaal ingelogd, de trainingsgeschiedenis en persoonlijke notities van elke andere klant kon bekijken door simpelweg een getal in de adresbalk van de browser te veranderen.
+Haar broer, software-ontwikkelaar, bekeek de app uit nieuwsgierigheid. Hij ontdekte direct dat de pagina's de trainingsschema's ophaalden via een eenvoudig parameternummer in de URL. Door dat nummer met +1 te verhogen, kon hij direct de medische notities en gewichten van Fenna's andere klanten inzien — terwijl hij gewoon met zijn eigen account was ingelogd.
 
-Fenna nam contact op met LaunchStudio om authenticatie correct te implementeren in plaats van het risico te lopen dat dit gat haar daadwerkelijke klanten zou bereiken. Het Manifera-team migreerde FitVolg naar Supabase Auth met correcte Row Level Security, auditte systematisch elke bestaande pagina en query op correcte gebruikersscoping, en voegde geautomatiseerde tests toe die specifiek cross-gebruiker-datatoegang controleerden vóór deployment.
+Fenna schakelde direct LaunchStudio in. Het team van Manifera migreerde FitVolg naar Supabase Auth met waterdichte Row Level Security, controleerde systematisch alle databasequeries en richtte geautomatiseerde isolatietests in.
 
-**Resultaat:** FitVolg lanceerde naar Fenna's 24 personal-training-klanten met geverifieerde, geteste data-isolatie — een gat dat, als het echte klanten had bereikt, gevoelige persoonlijke fitness- en gezondheidsnotities zou hebben blootgesteld tussen mensen die elkaar vaak persoonlijk kenden binnen haar studio.
+**Resultaat:** FitVolg lanceerde veilig naar 24 cliënten zonder enig risico op het lekken van gevoelige gezondheidsgegevens.
 
-> *"Mijn broer vond het per ongeluk, uit nieuwsgierigheid aan het testen. Als een klant het als eerste had gevonden, was het een ramp geweest — sommige van mijn klanten kennen elkaar. LaunchStudio voegde niet alleen een loginpagina toe, ze verifieerden dat het mensen daadwerkelijk beschermde."*
-> — **Fenna Kuipers, Founder, FitVolg (Sittard)**
+> *"Mijn broer vond het per toeval tijdens het testen. Als een klant dit had ontdekt, was het een ramp geweest — mijn cliënten kennen elkaar vaak persoonlijk. LaunchStudio zorgde ervoor dat de beveiliging ook écht waterdicht was."*  
+> — **Fenna Kuipers, Oprichter FitVolg (Sittard)**
 
-**Kosten & tijdlijn:** €1.700 (Launch Ready Pakket, authenticatiehardening) — voltooid in 7 werkdagen.
+**Kosten & tijdlijn:** €1.700 (Launch Ready Pakket, authenticatie verharden) — binnen 7 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Kan ik de authenticatie van mijn eigen Lovable-app zelf testen op dit soort gaten?
+### Hoe kan ik zelf controleren of mijn Lovable-inlogsysteem veilig is?
+Maak twee afzonderlijke testaccounts aan. Log in met Account 1 en probeer via URL-parameters of browser developer tools gegevens van Account 2 op te vragen. Als dat lukt, ontbreekt de juiste server-side autorisatie.
 
-Ja, gedeeltelijk. Maak twee testaccounts aan, log in als de ene, en probeer zichtbare ID-nummers in de URL of browserontwikkelaarstools te veranderen om bij data van een ander account te komen. Als je slaagt, is er een echt gat. Deze test vangt niet elk mogelijk probleem, maar vangt wel de meest voorkomende categorie.
+### Is Supabase Auth veiliger dan een eigen inlogsysteem via AI?
+Ja, aanzienlijk. Supabase Auth is gebouwd op bewezen open-source beveiligingsstandaarden voor wachtwoordhashing, tokenverloop en sessiebeheer die over vele jaren zijn gehard.
 
-### Is Supabase Auth of een op maat gebouwd loginsysteem veiliger voor een Lovable-app?
+### Hoelang duurt het professioneel inbouwen van authenticatie?
+Bij een bestaand prototype duurt een grondige implementatie inclusief database-scoping en RLS-tests meestal 1 tot maximaal 2 weken.
 
-Supabase Auth (of een andere gevestigde provider) is bijna altijd veiliger dan een op maat gebouwd systeem, aangezien gevestigde providers hun kernbeveiligingslogica — wachtwoordhashing, sessieafhandeling, tokenbeveiliging — jarenlang uitgebreid hebben getest en gehard, wat zeer moeilijk correct te repliceren is vanaf nul in een snelle, door AI gegenereerde implementatie.
+### Wat doet Row Level Security precies en waarom is het een 'tweede verdedigingslinie'?
+Row Level Security dwingt op PostgreSQL-niveau af dat een gebruiker uitsluitend rijen mag lezen of bewerken die expliciet aan zijn unieke `user_id` zijn gekoppeld, zelfs als een applicatieroute per ongeluk vergeet te filteren.
 
-### Hoe lang duurt het doorgaans om authenticatie correct achteraf in een bestaand prototype in te bouwen?
+### Welke cybersecurity-ervaring brengt Manifera mee?
+Manifera-oprichter Herre Roelevink was mede-oprichter van CyberDevOps (nu CFLW Cyber Strategies) en ontwikkelde cybersecurity-tools in samenwerking met TNO. Die security-first mentaliteit zit in elke LaunchStudio-oplevering.
 
-Voor een matig complexe app duurt dit doorgaans één tot twee weken wanneer het grondig wordt gedaan, inclusief de systematische query-audit en testfase — betekenisvol langer dan de paar minuten die een AI-tool nodig heeft om de loginpagina zelf te genereren, omdat het echte werk in de scoping en verificatie zit.
-
-### Wat is Row Level Security en waarom noemt het artikel het een "tweede verdedigingslinie"?
-
-Row Level Security is een functie op databaseniveau (beschikbaar in Supabase en PostgreSQL) die toegangsregels direct in de database afdwingt, onafhankelijk van je applicatiecode. Zelfs als je applicatiecode een bug heeft die vergeet data correct te filteren, kan RLS nog steeds ongeautoriseerde toegang blokkeren op databaseniveau — daarom is het waardevol als back-up, niet alleen als primair mechanisme.
-
-### Is Manifera's cybersecurityachtergrond specifiek van toepassing op authenticatie-implementatie?
-
-Ja. Herre Roelevinks achtergrond als medeoprichter van CyberDevOps (nu CFLW Cyber Strategies) en het ontwikkelen van de Dark Web Monitor-tool met TNO weerspiegelt een security-first-oriëntatie die direct doorwerkt in hoe Manifera en LaunchStudio authenticatie benaderen — het behandelen als een beveiligingskritieke implementatie, niet slechts een functionele functie.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik zelf controleren of mijn Lovable-inlogsysteem veilig is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maak twee testaccounts en probeer met Account 1 via URL-aanpassingen data van Account 2 te bekijken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Supabase Auth veiliger dan een eigen inlogsysteem via AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Supabase Auth biedt beproefde enterprise-beveiliging voor tokens, sessies en wachtwoordbeheer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoelang duurt het professioneel inbouwen van authenticatie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gemiddeld 1 tot 2 werkweken inclusief data-isolatie en geautomatiseerde regressietests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat doet Row Level Security precies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RLS blokkeert op PostgreSQL-niveau elke ongeautoriseerde query die data van andere gebruikers probeert op te halen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke cybersecurity-ervaring brengt Manifera mee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Diepgaande expertise via o.a. TNO en CFLW Cyber Strategies onder leiding van Manifera-oprichter Herre Roelevink."
+      }
+    }
+  ]
+}
+</script>

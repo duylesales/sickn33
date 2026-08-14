@@ -1,107 +1,172 @@
 ---
-Titel: "Database-indexering voor AI-applicaties: een Praktische Gids"
-Trefwoorden: AI-database, AI in database, AI voor DB, AI-deployment, LaunchStudio, Manifera
+Titel: "Database Indexing voor AI-Applicaties: Een Praktische Gids"
+Trefwoorden: ai database, ai in database, ai for db, ai deployment, LaunchStudio, Manifera
 Koperfase: Overweging
-Doelgroep: Technische Solo Founder / Indie Hacker
+Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Database-indexering voor AI-applicaties: een Praktische Gids
+# Database Indexing voor AI-Applicaties: Een Praktische Gids
 
-Een AI-applicatie die instant aanvoelt met 50 testrecords, kan pijnlijk traag aanvoelen met 50.000 echte — en de oorzaak is bijna nooit het AI-model zelf. Het is meestal een databasequery die elke rij in een tabel scant omdat er geen index bestaat om snel de juiste te vinden. Dit is een van de meest voorkomende, meest oplosbare prestatieproblemen in AI-native applicaties.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Database Indexing voor AI-Applicaties: Een Praktische Gids",
+  "description": "AI-applicaties bevragen data in unieke patronen: vector similarity searches, gesprekshistorie en token-aggregaties. Ontdek hoe u indexen inricht voor maximale snelheid.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/database-indexing-ai-applications-guide"
+  }
+}
+</script>
 
-## Wat een Index Daadwerkelijk Doet
+Een AI-applicatie die met 50 testrecords razendsnel aanvoelt, kan tergend traag worden zodra u 50.000 echte rijen bereikt — en de oorzaak is vrijwel nooit het AI-model zelf. Het is bijna altijd een databasequery die elke afzonderlijke rij in een tabel moet scannen (*Full Table Scan*) omdat er geen index is om de juiste gegevens direct te vinden. Dit is een van de meest voorkomende en eenvoudigst op te lossen prestatieproblemen in AI-native software.
 
-Een database-index werkt als de index van een boek: in plaats van elke pagina (elke rij) te scannen om te vinden wat je zoekt, kan de database direct naar relevante records springen. Zonder een index op een kolom waar je vaak op zoekt of filtert, voert de database bij elke enkele query een volledige tabelscan uit — prima op kleine schaal, steeds trager naarmate je data groeit.
+## Wat een Database-Index Feitelijk Doet
 
-## Querypatronen Specifiek voor AI-applicaties
+Een database-index werkt exact als de index achterin een boek: in plaats van elke pagina (elke rij) van voor naar achter door te bladeren om een specifiek onderwerp te vinden, springt de database direct naar de relevante records. Zonder index op een kolom waarop u frequent zoekt of filtert, voert de database bij elke afzonderlijke query een volledige tabelscan uit — prima op kleine schaal, maar onhoudbaar traag naarmate uw data groeit.
 
-### Tenant-gescoopde Queries
-Zoals behandeld in eerdere richtlijnen over multi-tenant-architectuur, filtert bijna elke query in een SaaS-applicatie op een tenant- of gebruikers-ID. Als die kolom niet geïndexeerd is, scant elke enkele query — de meest voorkomende soort in je applicatie — de hele tabel.
+## Query-Patronen Specifiek voor AI-Applicaties
 
-### Gesprek- en Berichtgeschiedenis
-Op chat gebaseerde AI-functies bevragen berichtgeschiedenis vaak, doorgaans gefilterd op gespreks-ID en gesorteerd op tijdstempel. Zonder een samengestelde index op beide kolommen samen, wordt het ophalen van een gespreksgeschiedenis progressief trager naarmate het totale berichtvolume over alle gebruikers groeit.
+### Multi-Tenant Queries op Klant-ID
+In vrijwel elke SaaS-applicatie filtert bijna elke query op een tenant- of `user_id`. Als die kolom niet is geïndexeerd, scant de meest voorkomende query in uw gehele systeem telkens de complete tabel.
 
-### Vectorgelijkenis-zoeken
-Applicaties die embeddings gebruiken voor semantisch zoeken of retrieval-augmented generation (RAG) hebben gespecialiseerde vectorindexen nodig (zoals pgvector's HNSW- of IVFFlat-indexen in PostgreSQL) — een fundamenteel andere indexeringsaanpak dan standaard database-indexen, en een die door AI gegenereerde prototypes vaak volledig overslaan, wat resulteert in trage, brute-force gelijkenisvergelijkingen.
+### Gespreks- en Berichtenhistorie
+Chat-gebaseerde AI-applicaties halen voortdurend berichten op, doorgaans gefilterd op conversie-ID en gesorteerd op tijdstip (*timestamp*). Zonder een samengestelde index (*composite index*) op beide kolommen samen, wordt het ophalen van een chat steeds trager naarmate het totale aantal berichten van alle gebruikers toeneemt.
 
-### Gebruiks- en Kostenaggregatie
-Applicaties die AI-gebruik volgen voor facturerings- of ratelimiteringsdoeleinden hebben efficiënte aggregatiequery's nodig (som van deze maand gebruikte tokens, aantal API-oproepen vandaag). Zonder correcte indexering op tijdstempel- en gebruikerskolommen samen, kunnen deze aggregatiequery's verrassend duur worden naarmate gebruiksgeschiedenis zich opstapelt.
+### Vector Similarity Search (RAG & Embeddings)
+Applicaties die embeddings gebruiken voor semantisch zoeken of Retrieval-Augmented Generation (RAG) vereisen gespecialiseerde vector-indexen (zoals pgvector's HNSW of IVFFlat in PostgreSQL). Dit is een fundamenteel andere indexeermethode dan standaard B-tree indexen. AI-prototypes slaan dit vaak over, wat resulteert in trage 'brute-force' vergelijkingen.
 
-## Waarom Door AI Gegenereerde Prototypes Dit Missen
+### Gebruiks- en Kostenaggregaties
+Apps die AI-tokenverbruik bijhouden voor facturatie of gebruikslimieten draaien zware aggregatie-queries (zoals *"som van alle verbruikte tokens deze maand voor klant X"*). Zonder samengestelde indexen op tijdstempel en gebruikerskolommen worden deze berekeningen extreem traag.
 
-AI-codeertools genereren databaseschema's en query's die correct functioneren voor kleine testdatasets, wat feitelijk wordt getest tijdens prototyping. Indexeringsbehoeften worden doorgaans pas duidelijk bij realistisch datavolume — precies de omstandigheid die AI-tools zelden simuleren tijdens generatie. Het prototype dat "prima werkt" tijdens tests geeft geen signaal over hoe het zal presteren zodra echt gebruik zich opstapelt.
+## Waarom AI-Prototypes Dit Structureel Missen
 
-## Een Praktische Indexeringschecklist
+AI-codegenerators maken databaseschema's die functioneel prima werken voor kleine testdatasets. De noodzaak voor indexering wordt immers pas zichtbaar onder een realistische datadruk — een situatie die AI-tools zelden simuleren tijdens het genereren van een prototype. Dat een prototype tijdens het testen "soepel draaide" biedt nul garantie voor prestaties onder echte productieomstandigheden.
 
-1. Indexeer elke foreign-key-kolom, vooral tenant-/gebruikers-ID-kolommen
-2. Voeg samengestelde indexen toe voor veelvoorkomende multi-kolom filter-en-sorteerpatronen (zoals gespreks-ID + tijdstempel)
-3. Gebruik gespecialiseerde vectorindexen voor elke op embeddings gebaseerde zoekfunctionaliteit
-4. Monitor trage-querylogs na lancering om indexeringsgaten te vangen die niet vooraf duidelijk waren
-5. Vermijd over-indexering — elke index voegt schrijfoverhead toe, dus indexeer bewust op basis van daadwerkelijke querypatronen, niet speculatief
+## Een Praktische Checklist voor Database Indexing
 
-## Dit Goed Doen Voordat het een Crisis Wordt
+1. **Indexeer elke foreign key kolom**, met name `tenant_id` en `user_id`.
+2. **Voeg samengestelde indexen toe** voor veelvoorkomende filter-en-sorteer combinaties (zoals `conversation_id` + `created_at`).
+3. **Gebruik gespecialiseerde HNSW-vectorindexen** voor alle embedding-zoekfuncties.
+4. **Monitor trage query-logs (*slow query logs*)** na de livegang om onvoorziene knelpunten direct te signaleren.
+5. **Voorkom overmatige indexering** — elke index kost extra schrijfcapaciteit bij het toevoegen van nieuwe rijen; indexeer doelgericht op basis van reële zoekpatronen.
 
-Indexeringsproblemen zijn bijzonder gevaarlijk omdat ze onzichtbaar zijn tot ze dat niet meer zijn — een applicatie kan maandenlang acceptabel draaien en dan scherp degraderen zodra een specifieke tabel een datavolumedrempel overschrijdt. [LaunchStudio](https://launchstudio.eu/en/) beoordeelt indexering als standaardonderdeel van productiedatabaseconfiguratie, met toepassing van Manifera's database-expertise over PostgreSQL, MongoDB en MySQL, opgebouwd over 160+ geleverde projecten.
+## Hoe U Dit Oplost Vóórdat Het een Crisis Wordt
 
-[Laat je databaseprestaties beoordelen](https://launchstudio.eu/en/#contact) voordat groei een kleine oversight verandert in een klantgerichte vertraging.
+Database-vertragingsproblemen zijn gevaarlijk omdat ze onzichtbaar zijn totdat de drempelwaarde wordt overschreden — een app kan maanden vlekkeloos draaien en plotseling instorten zodra een tabel boven de 100.000 rijen komt. [LaunchStudio](https://launchstudio.eu/en/) controleert en optimaliseert database-indexen als vast onderdeel van de productie-oplevering, gesteund door Manifera's expertise in PostgreSQL, MongoDB en MySQL over 160+ enterprise-projecten.
 
-## Bevestigen dat een Index Daadwerkelijk Wordt Gebruikt: een Queryplan Lezen
+[Laat uw databaseprestaties auditen](https://launchstudio.eu/en/#contact) vóórdat gebruikersgroei leidt tot frustrerende haperingen.
 
-Een index toevoegen en aannemen dat hij helpt is niet hetzelfde als het bevestigen ervan. Databases gebruiken niet altijd elke index die je aanmaakt — een slecht ontworpen index, een index op de verkeerde kolomcombinatie, of een query die zo is geschreven dat de database een verder correcte index niet kan gebruiken, kunnen er allemaal toe leiden dat een index wel bestaat maar nooit daadwerkelijk wordt gebruikt. Echt gebruik bevestigen vereist het bekijken van het eigen queryplan van de database, niet alleen erop vertrouwen dat het aanmaken van de index is gelukt.
+## Controleren of een Index Daadwerkelijk Wordt Gebruikt: Het Query Plan Lezen
 
-### Wat EXPLAIN ANALYZE je Daadwerkelijk Laat Zien
-De meeste databases, waaronder PostgreSQL, bieden een commando — `EXPLAIN ANALYZE` in het geval van Postgres — dat precies laat zien hoe de database van plan is een specifieke query uit te voeren, inclusief of hij een index gebruikte of de volledige tabel scande. Dit commando uitvoeren tegen je traagste of meest voorkomende queries, vóór en ná het toevoegen van een index, is de concrete manier om te bevestigen dat de index doet wat je bedoelde, in plaats van dit aan te nemen op basis van het feit dat de index bestaat.
+Het toevoegen van een index en aannemen dat het helpt is niet hetzelfde als het verifiëren. Databases gebruiken niet automatisch elke index die u aanmaakt — een slecht ontworpen index, een index op de verkeerde volgorde van kolommen of een query met functies rondom een kolom kunnen ertoe leiden dat een index wel bestaat, maar nooit wordt aangesproken.
 
-### De Twee Uitkomsten die het Meest Belangrijk Zijn
-- **Sequential Scan (Seq Scan)**: De database leest elke rij in de tabel om overeenkomsten te vinden. Op een kleine tabel is dit prima en soms zelfs sneller dan een index gebruiken; op een grote, groeiende tabel is dit precies het patroon dat indexering hoort te elimineren, en dit zien bij een query waarvan je verwachtte dat hij geïndexeerd was, is een duidelijk signaal dat er iets mis is met hoe de index is gedefinieerd of hoe de query is geschreven
-- **Index Scan (of Index Only Scan)**: De database sprong direct naar relevante rijen met behulp van de index in plaats van alles te scannen. Dit is over het algemeen wat je wilt zien voor elke veelvoorkomende query op een tabel van betekenisvolle omvang
+### Wat EXPLAIN ANALYZE U Vertelt
+De meeste relationele databases (waaronder PostgreSQL) beschikken over het commando `EXPLAIN ANALYZE`. Dit toont exact hoe de query planner de zoekopdracht uitvoert, inclusief de feitelijke uitvoeringstijd en of er een index is gebruikt:
 
-### Veelvoorkomende Redenen Waarom een Index Bestaat Maar Niet Wordt Gebruikt
-- De query filtert op een berekende of getransformeerde versie van de kolom, zoals het toepassen van een functie erop, in plaats van de ruwe geïndexeerde kolom, wat kan voorkomen dat de database een standaardindex gebruikt zonder een bijpassende expressie-index
-- De tabel is nog klein genoeg dat de eigen queryplanner van de database correct bepaalt dat een volledige scan daadwerkelijk sneller is dan de index gebruiken — geen bug, gewoon de planner die een redelijke, op kosten gebaseerde keuze maakt bij dat datavolume
-- De index dekt de verkeerde combinatie van kolommen voor een meerkolomsfilter, technisch aanwezig maar niet overeenkomend met hoe de query daadwerkelijk data filtert of sorteert
-- Verouderde tabelstatistieken zorgen ervoor dat de queryplanner de daadwerkelijke kosten van elke aanpak verkeerd inschat, wat periodiek databaseonderhoud (zoals Postgres's `ANALYZE`-commando) helpt accuraat te houden
+### De Twee Uitkomsten Die Ertoe Doen:
+- **Sequential Scan (Seq Scan):** De database leest elke rij in de tabel om overeenkomsten te vinden. Op een kleine tabel is dit prima; op een grote, groeiende tabel is dit exact het trage patroon dat indexering moet voorkomen.
+- **Index Scan (of Index Only Scan):** De database springt via de index direct naar de relevante rijen zonder de hele tabel te doorzoeken. Dit is wat u wilt zien voor frequente zoekopdrachten.
 
-### Hier een Gewoonte van Maken, Geen Eenmalige Controle
-Querypatronen veranderen naarmate er functies worden toegevoegd, en een index die zes maanden geleden goed aansloot bij je queries, sluit mogelijk niet langer aan bij hoe je applicatie vandaag daadwerkelijk data bevraagt. Periodiek `EXPLAIN ANALYZE` opnieuw uitvoeren tegen de meest voorkomende en belangrijkste queries van je applicatie, niet alleen eenmalig na de initiële opzet, is wat deze drift opvangt voordat het een klantgerichte vertraging wordt in plaats van erna.
+### Veelvoorkomende Redenen Waarom een Index Wordt Genegeerd:
+- De query filtert op een getransformeerde kolom (bijvoorbeeld `WHERE LOWER(email) = ...`) terwijl de index op de ruwe kolom staat (een *expression index* is dan nodig).
+- De tabel is nog zó klein dat een volledige scan sneller is dan het laden van de indexboom (de planner kiest dan terecht voor een Seq Scan).
+- De samengestelde index heeft de verkeerde kolomvolgorde voor het specifieke filter.
+- Verouderde database-statistieken laten de planner de kosten verkeerd inschatten (periodiek onderhoud met `ANALYZE` lost dit op).
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: van 8-seconden-query's naar instant resultaten op schaal
+### Een AI-native oprichter in actie: Van 8 seconden per zoekopdracht naar directe resultaten
 
-Tom, een makelaar in Helmond, bouwde MakelaarChat, een AI-assistent waarmee makelaars snel door jaren opgebouwde klantgespreksgeschiedenis en pandnotities konden zoeken, met Cursor. In tests met zijn eigen kleine dataset voelde MakelaarChat instant aan. Zes maanden na lancering aan 40 collega-makelaars, van wie sommigen duizenden klantinteracties hadden opgebouwd, begonnen zoekquery's 6-8 seconden te duren — lang genoeg dat makelaars begonnen te klagen dat het "kapot" aanvoelde.
+Tom, makelaar in Helmond, bouwde met Cursor MakelaarChat: een AI-assistent waarmee collega-makelaars door jarenlange opgebouwde gespreksnotities en panddossiers konden zoeken. Tijdens het testen met zijn eigen dossiers werkte het razendsnel. Zes maanden na de livegang naar 40 makelaarskantoren, waarvan sommigen tienduizenden klantnotities hadden ingevoerd, liepen zoekopdrachten op naar 6 tot 8 seconden. Makelaars begonnen te klagen dat de app "kapot" leek.
 
-Tom nam contact op met LaunchStudio en beschreef specifiek de vertraging, na zijn AI-provider te hebben uitgesloten (responstijden voor het AI-gedeelte waren normaal) en de database te verdenken. Het onderzoek van het Manifera-team bevestigde het: MakelaarChat's gespreks-zoekquery's hadden geen samengestelde index op agent-ID en tijdstempel samen, wat betekende dat elke zoekopdracht de hele gespreksgeschiedenis van de agent sequentieel scande in plaats van direct naar relevante, recente records te springen.
+Tom nam contact op met LaunchStudio. Na uitsluiting van het AI-model bevestigde het team van Manifera het vermoeden: de zoekfunctie had geen samengestelde index op makelaars-ID en datum, waardoor de database bij elke zoekopdracht miljoenen tekstregels sequentieel doorzocht. Daarnaast ontbrak een HNSW-vectorindex op de later toegevoegde semantische zoekfunctie.
 
-Het team voegde de ontbrekende samengestelde indexen toe, samen met een gespecialiseerde vectorindex voor een semantische zoekfunctie die Tom later had toegevoegd en die eveneens ongeïndexeerd was, en zette trage-querymonitoring op om toekomstige indexeringsgaten proactief te vangen naarmate MakelaarChat bleef groeien.
+Het team richtte de ontbrekende samengestelde indexen en pgvector-indexen in en stelde query-monitoring in.
 
-**Resultaat:** Zoekquery's die waren gedegradeerd tot 6-8 seconden, keerden onmiddellijk na de indexwijzigingen terug naar onder de 200 milliseconden, zonder enige wijziging aan de frontend of gebruikerservaring van de applicatie. Tom's meest actieve agenten, die het dichtst bij overstappen uit frustratie waren geweest, bleven op het platform.
+**Resultaat:** De responstijd van zoekopdrachten daalde direct van 6–8 seconden naar minder dan 200 milliseconden — zónder enige wijziging aan de interface. De ontevreden makelaars bleven behouden voor het platform.
 
-> *"Ik dacht dat ik een beter AI-model of duurdere hosting nodig had. Het bleek een ontbrekende index te zijn — een piepkleine databasewijziging die minder dan een dag kostte en een probleem oploste waar ik stilletjes twee maanden mee had geleefd."*
-> — **Tom Hermans, Founder, MakelaarChat (Helmond)**
+> *"Ik dacht dat ik een duurder AI-model of zwaardere cloudservers nodig had. Het bleek een ontbrekende database-index te zijn — een ingreep van minder dan een dag die een probleem oploste waar ik al twee maanden mee worstelde."*  
+> — **Tom Hermans, Oprichter MakelaarChat (Helmond)**
 
-**Kosten & tijdlijn:** €1.400 (databaseprestatieaudit en indexering) — opgelost in 3 werkdagen.
+**Kosten & tijdlijn:** €1.400 (database performance audit en indexering) — binnen 3 werkdagen live opgelost.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoe weet ik of mijn trage AI-applicatie specifiek een indexeringsprobleem heeft?
+### Hoe weet ik of de traagheid van mijn AI-app specifiek een database-indexering probleem is?
+Een belangrijk signaal is wanneer de prestaties geleidelijk verslechteren naarmate er meer data wordt toegevoegd, in plaats van traag te zijn vanaf de openingsdag. Database query-monitoring toont direct welke specifieke SQL-queries de meeste tijd kosten.
 
-Een sterk signaal is als prestaties geleidelijk verslechteren naarmate je data groeit, in plaats van consistent traag te zijn vanaf lancering — indexeringsproblemen manifesteren zich doorgaans als "het was vroeger snel" in plaats van "het was altijd traag." Database-querymonitoringtools kunnen dit direct bevestigen door te tonen welke specifieke query's het langst duren.
+### Kan het toevoegen van indexen storingen of downtime veroorzaken?
+Het toevoegen van indexen is in de regel veilig en niet-destructief. Bij zeer grote live tabellen kan het aanmaken van een index tijdelijk schrijfkracht vragen; LaunchStudio plant dit zorgvuldig in met minimale impact op live gebruikers.
 
-### Kan het toevoegen van indexen aan mijn database iets breken of downtime veroorzaken?
+### Wat is een vector-index en heb ik die nodig voor mijn AI-app?
+Een vector-index (zoals HNSW in pgvector) is een gespecialiseerde datastructuur om razendsnel op semantische gelijkenis te zoeken in tekst-embeddings. U heeft deze nodig voor semantisch zoeken, aanbevelingssystemen en RAG-kennisbanken.
 
-Het toevoegen van indexen is over het algemeen veilig en niet-verstorend, hoewel het op zeer grote bestaande tabellen tijd kan kosten om te bouwen en de schrijfprestaties tijdens creatie kortstondig kan beïnvloeden. LaunchStudio plant indextoevoegingen om de impact op live applicaties te minimaliseren.
+### Is het mogelijk om een database te 'over-indexeren'?
+Ja. Elke index versnelt leesopdrachten, maar voegt overhead toe bij schrijfacties (insert, update, delete), omdat elke index bijgewerkt moet worden. Indexeer daarom doelgericht op basis van daadwerkelijke zoekpatronen en vermijd speculatieve indexen.
 
-### Wat is een vectorindex en heb ik er een nodig voor mijn AI-applicatie?
+### Ondersteunt Manifera's expertise ook AI-specifieke databases zoals pgvector?
+Ja. Manifera ondersteunt standaard PostgreSQL met pgvector-extensies, MongoDB en MySQL, waardoor we zowel relationele enterprise-data als geavanceerde AI-vectoren optimaal kunnen structureren en indexeren.
 
-Een vectorindex is een gespecialiseerde databasestructuur voor efficiënt zoeken in embeddings (numerieke representaties van tekst of andere content gebruikt voor semantisch gelijkenis-zoeken). Je hebt er specifiek een nodig als je applicatie semantisch zoeken, aanbevelingsmatching of retrieval-augmented generation (RAG) doet — niet voor typisch trefwoordgebaseerd zoeken of standaard dataquery's.
-
-### Is het mogelijk om een database te over-indexeren, en wat gebeurt er als je dat doet?
-
-Ja. Elke index versnelt lezen maar voegt overhead toe aan schrijven (invoegen, updaten, verwijderen), aangezien de database elke index moet onderhouden wanneer data verandert. Speculatief indexen toevoegen, zonder een echt querypatroon dat ze rechtvaardigt, kan de schrijfprestaties van je applicatie onnodig vertragen.
-
-### Dekt Manifera's database-expertise gespecialiseerde behoeften zoals vectorzoeken voor AI-applicaties?
-
-Ja. Manifera's technologiestack omvat expliciet PostgreSQL (met pgvector-ondersteuning voor embeddings), naast MongoDB en MySQL, wat het soort AI-specifieke database-expertise weerspiegelt dat algemene webontwikkelingservaring alleen niet garandeert.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe herken ik een database-indexeringsprobleem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wanneer de applicatie geleidelijk trager wordt naarmate de hoeveelheid opgeslagen gebruikersdata groeit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Veroorzaakt het toevoegen van indexen downtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. Het toevoegen van indexen is veilig en wordt gepland met minimale impact op de live prestaties."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is een vector-index?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Een gespecialiseerde indexstructuur (zoals HNSW in pgvector) voor het razendsnel doorzoeken van tekst-embeddings in RAG-toepassingen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er bij over-indexering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Te veel indexen vertragen de schrijfsnelheid bij het toevoegen of bewerken van rijen in de database."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ondersteunt Manifera AI-specifieke databases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Manifera beschikt over diepe expertise in PostgreSQL met pgvector, MongoDB en MySQL voor AI- en enterprise-toepassingen."
+      }
+    }
+  ]
+}
+</script>

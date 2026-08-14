@@ -1,19 +1,19 @@
-🔥 Elena bouwde een prototype met **Cursor** — elena, a compliance officer, used **cursor** to build a contract review tool, maar ontdekte kritieke prestatie- en architectuurknelpunten vóór de schaalfase. 🧠
+🔥 Elena bouwde een prototype met **Cursor** — Elena, een compliance officer, gebruikte Cursor om een tool voor contractbeoordeling te bouwen, maar liep vast op time-outs en torenhoge kosten door te grote context windows. 🧠
 
-Als uw AI-applicatie geen juiste caching, connection pooling of state-isolatie heeft, zal live verkeer leiden tot trage UI-responstijden en torenhoge hosting-rekeningen.
+Als uw AI-applicatie volledige documenten direct in de prompt dumpt ("Context Stuffing"), lopen uw API-kosten exponentieel op en hallucineert het model belangrijke details.
 
-❌ Niet-gememoizede component-rendering die hoge CPU-pieken veroorzaakt bij token-updates
-❌ Niet-geïndexeerde database-queries en vector-zoekopdrachten uitvoeren over grote datasets
-❌ Onbehandelde API-timeouts, rate-limit storingen of onbeperkte abonnements-generatielussen
+❌ Hele dossiers van 100 pagina's naar het LLM sturen, wat 0,30 dollar per individuele vraag kost
+❌ Hallucinaties en gemiste clausules door het bekende "Lost in the Middle"-fenomeen
+❌ API-timeouts en haperende gebruikerservaringen bij het verwerken van grote PDF-bestanden
 
-✅ Streaming-state naar geïsoleerde leaf-componenten duwen met React Server Components
-✅ Implementeren van PgBouncer connection pooling, vector HNSW-indexen en Redis caching
-✅ Verharden van API-retry logica, Stripe metered billing en geautomatiseerde error boundaries
+✅ Implementeren van RAG met Supabase `pgvector` om uitsluitend de meest relevante alinea's te injecteren
+✅ Toepassen van Prompt Caching om tot 90% te besparen op herhaalde queries over hetzelfde basisdocument
+✅ Chunking en parallelle voorbewerking om de time-to-first-token drastisch te verlagen
 
-Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 2014 op via Manifera, over 160+ opgeleverde projecten. 🛡️
+Bij **LaunchStudio** lossen we exact dit type datapijplijnproblemen op sinds 2014 via Manifera, verspreid over meer dan 160 opgeleverde projecten. 🛡️
 
-Elena's applicatie behaalde uitstekende prestaties: System timeouts dropped to zero, and API cost per document was reduced by 40%. (€2,450 (API Optimization Package) — production-ready and deployed in 7 business days.). 🚀
+Elena's applicatie werd uiterst efficiënt: Het aantal time-outs daalde naar nul en de API-kosten per document daalden met 40%. (€2.450 (API Optimization Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
 
-#LaunchStudio #Manifera #AISaaS #HandlingLargeContext #TechFounders
+#LaunchStudio #Manifera #AISaaS #RAG #pgvector #ContextWindow #TechFounders #StartupOpschalen

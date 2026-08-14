@@ -1,91 +1,105 @@
 ---
-Titel: Waarom AI Software Engineering Verschuift naar de Backend
-Trefwoorden: ai software engineering, ai native, ai code ontwikkeling, launchstudio, manifera, cursor, bolt
+Titel: "Waarom AI-Software Engineering Verschuift naar de Backend"
+Trefwoorden: AI software engineering, AI native, AI code development, LaunchStudio, Manifera, Cursor, Bolt
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Waarom AI Software Engineering Verschuift naar de Backend
+# Waarom AI-Software Engineering Verschuift naar de Backend
 
-"AI gaat alle software-engineers vervangen." Deze kop is sinds 2024 zo vaak herhaald dat veel oprichters het geloven. Maar als u goed kijkt naar wat er daadwerkelijk gebeurt bij technische startups, ziet u een heel andere werkelijkheid.
+"AI gaat alle software-engineers vervangen." Deze kop is sinds 2024 zo vaak herhaald dat veel oprichters het zijn gaan geloven. Maar als u goed kijkt naar wat er daadwerkelijk gebeurt in de frontlinie van technische startups, ziet u een totaal andere realiteit.
 
-Engineers worden niet vervangen. Ze verhuizen.
+Ontwikkelaars worden niet vervangen. Ze migreren.
 
-AI software engineering heeft de frontend gecategoriseerd. Tools zoals Cursor, v0 en Bolt kunnen in enkele minuten een prachtige, responsieve React-dashboard genereren. Maar het genereren van UI-componenten is slechts een deel van software-ontwikkeling. De echte impact van AI is dat het menselijke engineers heeft gedwongen de diepe, complexe backend-infrastructuur in te duiken waar AI consistent faalt.
+AI-software-engineering heeft de frontend getransformeerd tot een bulkproduct. Tools zoals Cursor, v0 en Bolt genereren in enkele minuten een prachtig, responsief React-dashboard. Maar het genereren van UI-componenten is slechts één klein onderdeel van de complete levenscyclus van softwareontwikkeling. De werkelijke impact van AI is dat het menselijke engineers dwingt om het ontwerpen van schermen los te laten en zich terug te trekken in de diepe, complexe backend-infrastructuur waar AI stelselmatig faalt — en waar 45% van de met AI gebouwde codebases nog steeds een exploiteerbaar beveiligingslek bevat, zelfs wanneer de frontend er volmaakt uitziet.
 
-## De Grote Backend Verschuiving
+## De Grote Verschuiving naar de Backend
 
-Voor een technische solo-oprichter verandert deze verschuiving alles over hoe u een SaaS-product bouwt en schaalt. Twee jaar geleden besteedde u misschien 60% van uw tijd aan CSS en React-state. Vandaag besteedt u 5% van uw tijd aan het prompten van de frontend, en 95% aan backend-architectuur.
+Voor een technische solo-oprichter verandert deze verschuiving alles aan de manier waarop u een SaaS-product bouwt en schaalt. Twee jaar geleden besteedde u wellicht 60% van uw tijd aan het schrijven van CSS en het koppelen van React-statussen. Vandaag besteedt u 5% van uw tijd aan het prompten van de frontend, en 95% aan het worstelen met de backend-architectuur die door de AI is ontwricht.
 
-Hier is waarom AI software engineering u dwingt een backend-specialist te worden:
+Dit is waarom AI-software engineering u dwingt een backend-specialist te worden:
 
 ### 1. AI Kan Geen Veilige Architectuur Ontwerpen
 
-Een AI-model schrijft code token voor token, geoptimaliseerd voor de directe context van uw prompt. Het denkt niet architectonisch. Wanneer u vraagt om "gebruikersprofielen toe te voegen," schrijft het de React-component en een eenvoudige Supabase-query.
+Een AI-model schrijft code token voor token en optimaliseert voor de directe context van uw prompt. Het denkt niet architectonisch na. Wanneer u vraagt om "gebruikersprofielen toe te voegen", genereert het een React-component en een elementaire Supabase-query.
 
-Het zal Row Level Security (RLS) niet in overweging nemen. Het zal niet nadenken over de impact op database-indexen bij 10.000 gebruikers. Menselijke engineers verschuiven naar de backend omdat architectuur het enige is wat u niet kunt prompten.
+Het houdt geen rekening met Row Level Security (RLS). Het denkt er niet over na hoe die query de database-index beïnvloedt zodra u 10.000 gebruikers bereikt. Het ontwerpt geen veilige scheiding tussen client-side state en server-side validatie. Menselijke engineers verschuiven naar de backend omdat architectuur het enige is dat u niet kunt prompten — architectuur is een beslissing over hoe tientallen toekomstige features met elkaar zullen interageren, en geen enkele prompt vangt een beslissing die nog niet is genomen.
 
-### 2. De Aansprakelijkheid van "Magische" Integraties
+### 2. Het Aansprakelijkheidsrisico van "Magische" Integraties
 
-Wanneer een AI een Stripe-betalingsintegratie schrijft, kiest het bijna altijd voor client-side logica omdat dat eenvoudiger te genereren is. Het maakt een "Betaal"-knop die een lokale successtatus triggert.
+Wanneer een AI een Stripe-betalingsintegratie schrijft, kiest het vrijwel altijd voor client-side logica omdat dit eenvoudiger te genereren is. Het maakt een "Betaal"-knop aan die direct een lokale successtatus triggert.
 
-Maar het omgaan met echt geld vereist server-side webhooks, asynchroon statusbeheer en robuuste foutafhandeling. De taak van de menselijke engineer is om de veilige brug te bouwen tussen de "magische" UI van de AI en de harde werkelijkheid van externe API's die kunnen falen.
+Maar omgaan met echt geld vereist server-side webhooks, asynchrone statusafhandeling en robuuste foutafhandeling om te garanderen dat een gebruiker die een betaling storneert direct zijn toegang verliest. AI-software engineering heeft grote moeite met deze asynchrone workflows tussen meerdere systemen, omdat een webhook die drie seconden — of drie dagen — later binnenkomt het lineaire request-response patroon doorbreekt waarop het model is getraind. Het werk van de menselijke engineer is nu om de veilige brug te slaan tussen de "magische" UI van de AI en de harde realiteit van externe API's die falen, opnieuw proberen en in willekeurige volgorde arriveren.
 
 ### 3. Het Deployment-Dilemma
 
-AI schrijft code; het rolt geen infrastructuur uit. De moderne technische oprichter besteedt tijd aan het configureren van Vercel edge functions, het beheer van omgevingsvariabelen en het instellen van CI/CD-pijplijnen.
+AI schrijft code; het deployt geen infrastructuur. De moderne technische oprichter besteedt zijn tijd aan het configureren van Vercel edge functions, het veilig beheren van omgevingsvariabelen, het inrichten van CI/CD-pijplijnen en het monitoren van serverlogs.
 
-Als uw met AI gegenereerde app crasht in productie vanwege een geheugenlek, kan de AI niet inloggen op de server om het te herstellen. Dat moet u doen.
+Als uw door AI gegenereerde app in productie crasht door een geheugenlek in een slordig gegenereerde `useEffect`-hook, kan de AI niet via SSH inloggen op de server om het te repareren. Dat moet u zelf doen. En omdat de crash typisch optreedt onder echte productiebelasting — verkeerspatronen die de AI nooit heeft gesimuleerd — is het lokaal reproduceren van de bug al een specialistische discipline op zich.
 
-## De "Laatste Kilometer" Engineering Partner
+### 4. Systeemdenken Wint van Token-Voorspelling
 
-Als technische solo-oprichter bent u uw project waarschijnlijk gestart om een specifiek probleem op te lossen, niet om uw nachten te besteden aan het configureren van PostgreSQL-indexen en Stripe-webhooks.
+De diepere reden waarom AI worstelt met backend-werk is architectonisch van aard, geen tijdelijk trainingsgat dat een volgend model zomaar zal dichten. Backend-engineering draait fundamenteel om redeneren over tijd en over het gehele systeem tegelijk: hoe een databasedecisie in week één een feature in maand zes beperkt, hoe een rate-limit op één endpoint een ander kostbaar endpoint beschermt tegen kettingreacties. Grote taalmodellen genereren het statistisch meest waarschijnlijke volgende token binnen een beperkt contextvenster. Ze zijn uitzonderlijk goed in afgebakende, duidelijk gespecificeerde taken (een component, een functie, een query), maar structureel zwakker in open, overkoepelende afwegingen waarvoor geen eenduidig antwoord bestaat, maar trade-offs die een mens daadwerkelijk moet beslissen.
 
-Bij [LaunchStudio](https://launchstudio.eu/en/) hebben we deze verschuiving vroeg onderkend. Ondersteund door [Manifera](https://www.manifera.com/) — een softwareontwikkelingsbedrijf met meer dan 11 jaar ervaring — bouwen we de motor die uw prototype kogelvrij maakt.
+### 5. De Multi-Tenant Valkuil
 
-> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën en producten om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten tot wasdom te brengen. Wij hebben elf jaar ervaring met precies dat." — Herre Roelevink, Oprichter & Directeur, Manifera
+Een specifiek terugkerend patroon illustreert dit gat in systeemdenken perfect: multi-tenancy. Vrijwel elk SaaS-product moet uiteindelijk data strikt isoleren tussen klanten, teams of organisaties — Bedrijf A mag nooit de gegevens van Bedrijf B zien, ook al staan beide in dezelfde databasetabel. AI-tools die een prototype voor één gebruiker bouwen, hebben geen reden om hierover na te denken totdat u er expliciet om vraagt. Tegen die tijd zijn het schema, de queries en het state management al volledig ontworpen rondom een single-tenant aanname. Het achteraf inpassen van multi-tenancy is geen simpele pleister; het betekent het toevoegen van een tenant-ID aan elke tabel, het herschrijven van elke query en het opnieuw opbouwen van alle RLS-policies — exact het soort integrale systeemwijziging dat AI, werkend per bestand, niet samenhangend kan overzien.
 
-Werkzaam vanuit ons ontwikkelcentrum in Ho Chi Minh City, met architectonische beoordeling vanuit ons hoofdkantoor in Amsterdam (Herengracht 420), raken onze engineers uw met AI gegenereerde frontend niet aan. We verzorgen de complexe "laatste kilometer": enterprise-beveiliging, betalings-webhooks en schaalbare deployment-architectuur. Een typisch backend-hardeningproject kost €800–€7.500 en duurt 1-3 weken.
+## De "Laatste Mijl" Engineeringpartner
 
-## Belangrijkste Inzichten
+Als technische solo-oprichter bent u uw project waarschijnlijk gestart om een specifiek probleem op te lossen, niet om uw nachten te vullen met het configureren van PostgreSQL-indexen en Stripe-webhooks.
 
-- AI software engineering vervangt geen ontwikkelaars; het verlegt hun focus volledig naar backend-architectuur en infrastructuur.
-- AI blinkt uit in frontend-generatie maar faalt in veilige architectuur, asynchrone integraties en deployment.
-- Technische oprichters raken vaak verstrikt in backend-fixes in plaats van het bouwen van kernproductfuncties.
-- LaunchStudio biedt de vereiste menselijke backend-engineering om met AI gegenereerde frontends veilig en productie-klaar te maken.
+Bij [LaunchStudio](https://launchstudio.eu/en/) hebben we deze verschuiving vroegtijdig onderkend. Gesteund door [Manifera](https://www.manifera.com/) — een enterprise softwarebedrijf met ruim 11 jaar ervaring — hebben we een dienst ontworpen die perfect aansluit op het AI-tijdperk.
 
-## Echt Voorbeeld
+> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-### Een AI-Native Oprichter in Actie: De Fintech-Ontwikkelaar
+Wij treden op als uw dedicated backend engineeringteam. Vanuit ons ontwikkelcentrum in Ho Chi Minh-stad, met architectuurreviews gecoördineerd vanuit ons hoofdkantoor in Amsterdam, raken onze engineers uw met AI gebouwde frontend niet aan. Wij verzorgen de complexe, onzichtbare "laatste mijl" van AI-software engineering: het implementeren van enterprise-grade beveiliging, het aansluiten van robuuste betalingswebhooks en het configureren van een schaalbare hostinginfrastructuur.
 
-David, een technische oprichter in Londen, gebruikte **Cursor** om snel een frontend-prototype te bouwen voor een micro-investeringsplatform. Hij was een ervaren React-ontwikkelaar en bouwde in vier dagen een prachtig dashboard met realtime grafieken.
+U bouwt de visie met AI; wij bouwen de motor die het kogelvrij maakt. Een typisch backend-verhardingstraject kost tussen €800 en €7.500 en duurt 1 tot 3 weken — circa 20% van de kosten van het aannemen van een senior backend engineer of traditioneel bureau.
 
-Wanneer het echter aankwam op de backend — de Plaid API integreren voor bankverbindingen en een veilige database om gebruikerssaldi bij te houden — realiseerde David zich dat de AI buiten zijn diepte was. De code bevatte race-conditions en blootgestelde API-sleutels. David besteedde drie weken aan het herstellen van de backend-code van de AI, wat zijn voortgang volledig stillegde.
+Deze taakverdeling is geen tijdelijke noodoplossing totdat AI "bijbeent". Het weerspiegelt een blijvende scheiding in wat beide kanten van de stack belonen. Frontend-werk beloont snelle visuele iteratie — u ziet direct of een scherm klopt. Backend-werk beloont correctheid tegen onzichtbare faalmodi die pas na maanden naar boven komen: een race condition bij gelijktijdige belasting, of een rate limit die pas relevant wordt zodra u echt verkeer trekt. Die asymmetrie maakt de backend-verschuiving een structureel kenmerk van modern AI-ondernemerschap.
 
-**LaunchStudio (door Manifera)** nam de backend-engineering over. Het team verwierp de onveilige AI-backendlogica en behield David's React-frontend volledig. Ze bouwden een robuuste Node.js-backend met strikte transactieafhandeling, beveiligde omgevingsvariabelen en een betrouwbare webhook-luisteraar voor de Plaid API.
+## Belangrijkste inzichten
 
-**Resultaat:** David's platform ging twee weken later live. Hij kan nu met vertrouwen financiële gegevens verwerken. *"Ik dacht dat AI me een full-stack solo-oprichter zou laten zijn. Ik realiseerde me al snel dat ik nog steeds een senior backend-team nodig had. LaunchStudio was precies dat."*
+- AI-software engineering vervangt programmeurs niet, maar verschuift hun focus volledig naar backend-architectuur en infrastructuur.
+- AI blinkt uit in frontend-generatie maar faalt in veilige architectuur, asynchrone integraties en deployment — structurele beperkingen van token-voorspellende modellen.
+- Technische oprichters raken vaak verstrikt in backend-reparaties in plaats van te bouwen aan de kernfuncties die voor groei zorgen.
+- LaunchStudio levert de noodzakelijke menselijke backend-engineering om AI-gegenereerde applicaties veilig, schaalbaar en productieklaar te maken.
 
-**Kosten & Doorlooptijd:** €3.200 (Launch & Grow-pakket met aangepaste API-integratie) — afgerond in 14 werkdagen.
+[Spreek met een engineer die de realiteit van AI-code begrijpt](https://launchstudio.eu/en/#contact).
+
+## Echt voorbeeld
+
+### Een AI-native oprichter in actie: De fintech-ontwikkelaar
+
+David, technisch oprichter in Londen, gebruikte **Cursor** om razendsnel een frontend-prototype te bouwen voor een micro-investeringsplatform. Als ervaren React-ontwikkelaar was hij verbluft over hoe Cursor zijn workflow versnelde; in slechts vier dagen bouwde hij een dashboard met realtime grafieken.
+
+Toen het echter aankwam op de backend — de integratie van de Plaid API voor bankkoppelingen en een beveiligde database voor gebruikerssaldi — bleek de AI tekort te schieten. De door AI gegenereerde backend-code zat vol met race conditions, API-sleutels stonden openbaar in de clientbundel en mislukte webhooks van Plaid werden genegeerd. David was drie weken bezig om de backend-code van de AI te repareren, waardoor de ontwikkeling van zijn eigenlijke product volledig stilviel.
+
+**LaunchStudio (door Manifera)** nam de backend-engineering over. Het team verving de onveilige AI-backendlogica volledig terwijl Davids React-frontend 100% behouden bleef. Ze bouwden een robuuste Node.js-backend met strikte transactie-afhandeling, veilige omgevingsvariabelen en een betrouwbare webhook-listener voor de Plaid API met retry-logica en idempotente gebeurtenisverwerking om de race conditions definitief te elimineren.
+
+**Resultaat:** Davids platform ging twee weken later live. Hij kan nu met het volste vertrouwen financiële transacties verwerken zonder angst voor datalekken, en gebruikt Cursor weer volop om te itereren op frontend-features. *"Ik dacht dat AI me een full-stack solo-oprichter zou maken. Ik realiseerde me al snel dat ik nog steeds een senior backend-team nodig had. LaunchStudio was exact dat."*
+
+**Kosten & tijdlijn:** €3.200 (Launch & Grow Pakket met maatwerk API-integratie) — live in 14 werkdagen.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Als ik kan programmeren, waarom kan ik de backend van de AI niet gewoon zelf herstellen?
-Dat kunt u absoluut, maar het wordt een kwestie van alternatieve kosten. Technische oprichters raken vaak verstrikt in infrastructuur (CI/CD instellen, RLS-policies schrijven, webhooks debuggen), wat afleidt van het itereren op kernproductfuncties die gebruikers aantrekken.
+### Als ik kan programmeren, waarom los ik de backend van de AI dan niet zelf op?
+Dat kan uiteraard, maar het is een kwestie van *opportunity cost*. Technische oprichters raken vaak verstrikt in infrastructuur (CI/CD opzetten, RLS-regels schrijven, webhooks debuggen) wat hen afleidt van het bouwen van de kernfeatures die daadwerkelijk klanten werven. LaunchStudio regelt de infrastructuur zodat u zich volledig op groei kunt richten.
 
-### 2. Waarom heeft AI zoveel moeite met backend-architectuur?
-Backend-architectuur vereist systeemdenken — begrijpen hoe een wijziging in één tabel de beveiliging en prestaties van de gehele applicatie in de loop der tijd beïnvloedt. Huidige LLM's werken op tokenvoorspelling binnen een beperkt contextvenster.
+### Waarom heeft AI zoveel moeite met backend-architectuur?
+Backend-architectuur vereist systeemdenken — begrijpen hoe een wijziging in één tabel of microservice de beveiliging, prestaties en status van de gehele applicatie over tijd beïnvloedt. Huidige LLM's werken op basis van token-voorspelling binnen een beperkt contextvenster, waardoor ze goed zijn in geïsoleerde taken maar zwak in het ontwerpen van veilige, gedistribueerde systemen.
 
-### 3. Betekent de verschuiving naar de backend dat frontend-ontwikkeling dood is?
-Nee, maar het is gecategoriseerd. De drempel om een visueel indrukwekkende frontend te maken is bijna nul. Het concurrentievoordeel van een startup ligt nu in de betrouwbaarheid, beveiliging en schaalbaarheid van de backend.
+### Betekent de verschuiving naar de backend dat frontend-ontwikkeling dood is?
+Nee, maar het is wel sterk gecommoditiseerd. De drempel om een visueel aantrekkelijke frontend te maken is nagenoeg nul. Het concurrentievoordeel van een startup zit daardoor niet meer in het uiterlijk van de UI, maar in de betrouwbaarheid, veiligheid en schaalbaarheid van de backend-architectuur.
 
-### 4. Hoe werkt LaunchStudio met mijn bestaande met AI gegenereerde React-code?
-We gebruiken een ontkoppelde architectuurbenadering. We laten uw React-componenten exact zoals u ze heeft gebouwd. We vangen de API-aanroepen op die uw frontend maakt en leiden ze naar een nieuw beveiligde backend.
+### Hoe integreert LaunchStudio met mijn bestaande door AI gebouwde React-code?
+Wij hanteren een ontkoppelde architectuur. We laten uw React-componenten exact zoals u ze met AI heeft gebouwd. We vangen de API-aanroepen van de frontend op en routeren deze naar een nieuw verharde, beveiligde backend die wij bouwen en beheren, zodat uw UI intact blijft.
 
-### 5. Is LaunchStudio alleen voor oprichters die Cursor of Bolt gebruiken?
-Hoewel we gespecialiseerd zijn in het beveiligen van met AI gegenereerde codebases, zijn onze backend-hardening- en deployment-diensten van toepassing op elke web- of mobiele applicatie die moet overstappen naar een veilige productiestatus.
+### Is LaunchStudio alleen bedoeld voor oprichters die Cursor of Bolt gebruiken?
+Hoewel wij gespecialiseerd zijn in het beveiligen van door AI gegenereerde codebases (vanwege hun kenmerkende foutpatronen), zijn onze backend- en deploymentdiensten geschikt voor elke web- of mobiele applicatie die de overstap moet maken van prototype naar een veilige productieomgeving.
 
 <script type="application/ld+json">
 {
@@ -94,42 +108,42 @@ Hoewel we gespecialiseerd zijn in het beveiligen van met AI gegenereerde codebas
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Als ik kan programmeren, waarom herstel ik de backend niet zelf?",
+      "name": "Als ik kan programmeren, waarom los ik de backend dan niet zelf op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dat kan, maar het is een kwestie van alternatieve kosten. Infrastructuur afhandelen leidt af van kernproductfuncties. LaunchStudio regelt de infrastructuur zodat u kunt focussen op groei."
+        "text": "Dat kan, maar het kost kostbare tijd. Zelf infrastructuur en webhooks bouwen leidt af van productontwikkeling en klantwerving. LaunchStudio lost dit snel op tegen vaste kosten."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom heeft AI moeite met backend-architectuur?",
+      "name": "Waarom heeft AI zoveel moeite met backend-architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Backend-architectuur vereist systeemdenken over het gehele systeem. LLM's werken op tokenvoorspelling binnen een beperkt venster, wat ze minder geschikt maakt voor complexe architectuur."
+        "text": "Backend-architectuur vereist integraal systeemdenken over tijd. LLM's voorspellen tokens binnen een lokaal venster en missen het overzicht voor complexe gedistribueerde datastromen."
       }
     },
     {
       "@type": "Question",
-      "name": "Betekent de verschuiving naar de backend dat frontend-ontwikkeling dood is?",
+      "name": "Betekent de verschuiving naar de backend dat frontend dood is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, maar het is gecategoriseerd. Het concurrentievoordeel van een startup verschuift naar de betrouwbaarheid, beveiliging en schaalbaarheid van de backend."
+        "text": "Nee, maar UI is een bulkproduct geworden. Het echte onderscheidend vermogen van een SaaS ligt tegenwoordig in de veiligheid, betrouwbaarheid en schaalbaarheid van de backend."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe werkt LaunchStudio met mijn bestaande met AI gegenereerde React-code?",
+      "name": "Hoe integreert LaunchStudio met mijn bestaande React-code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We laten uw React-componenten intact. We vangen de API-aanroepen op en leiden ze naar een nieuw beveiligde backend die wij beheren."
+        "text": "Wij hanteren een ontkoppelde architectuur: uw React-frontend blijft 100% intact, terwijl wij API-aanroepen veilig laten communiceren met een robuuste backend."
       }
     },
     {
       "@type": "Question",
-      "name": "Is LaunchStudio alleen voor oprichters die Cursor of Bolt gebruiken?",
+      "name": "Is LaunchStudio alleen voor gebruikers van Cursor of Bolt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Onze diensten gelden voor elke applicatie die de overstap maakt van prototype naar een veilige, productieklare status."
+        "text": "Nee. Onze diensten zijn geschikt voor elk prototype dat een veilige, schaalbare backend-infrastructuur nodig heeft om succesvol naar productie te gaan."
       }
     }
   ]

@@ -1,89 +1,93 @@
 ---
-Titel: Contextvensters Beheren bij het Inzetten van AI To Code
-Trefwoorden: ai to code, ai database, ai uitrol, ai code ontwikkeling, ai native, ai gebruiken om code te genereren, ai saas platform, ai coding
+Titel: "Contextvensters Beheren bij het Gebruik van AI voor Code-Ontwikkeling"
+Trefwoorden: AI to code, AI database, AI deployment, AI code ontwikkeling, AI-native, AI code genereren, AI SaaS platform, AI coding, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Contextvensters Beheren bij het Inzetten van AI To Code
+# Contextvensters Beheren bij het Gebruik van AI voor Code-Ontwikkeling
 
-In 2023 besteedden startups maanden aan het bouwen van complexe RAG-pipelines omdat LLM's slechts 4.000 tokens per keer konden verwerken. Vandaag de dag bieden modellen zoals Claude en GPT-4o contextvensters van 128.000 tot meer dan een miljoen tokens. De verleiding voor ontwikkelaars is om architectuur volledig te laten varen en simpelweg complete SQL-databases en PDF's van 500 pagina's in de prompt te dumpen. Deze "Context Stuffing"-benadering is de snelste manier om uw SaaS failliet te laten gaan en de nauwkeurigheid van uw antwoorden te vernietigen, en het is een van de meest voorkomende architectonische afsnijdingen die we aantreffen bij het auditeren van door AI gegenereerde prototypes die naar productie moeten.
+In 2023 besteedden startups maanden aan het bouwen van complexe RAG-pijplijnen omdat taalmodellen slechts 4.000 tokens per aanroep konden verwerken. Tegenwoordig bieden modellen zoals Claude en GPT-4o contextvensters van 128.000 tot meer dan één miljoen tokens. Voor ontwikkelaars ontstaat hierdoor de verleiding om architectuur overboord te gooien en complete SQL-databases en 500 pagina's tellende PDF-bestanden direct in de prompt te injecteren. Dit zogeheten "Context Stuffing" is echter de snelste route naar torenhoge API-kosten en ernstige afwijkingen in modelnauwkeurigheid.
 
-## De Unit Economics van Context Stuffing
+## De Financiële Realiteit van Context Stuffing
 
-API-providers rekenen per token, zowel aan de invoer- als aan de uitvoerkant, en invoertokens zijn niet gratis omdat ze "slechts context" zijn. Als u elke keer dat een gebruiker een vraag stelt een document van 100.000 tokens in GPT-4o laadt, kan die enkele API-call $0,25-$0,50 kosten, afhankelijk van de huidige tariefkaart. Als de gebruiker in één sessie 10 vervolgvragen stelt, verstuurt u het grote document 10 keer opnieuw, omdat de meeste naïeve implementaties het volledige document bij elke turn opnieuw toevoegen. U heeft zojuist $2,50-$5,00 uitgegeven aan één gebruikerssessie die een paar cent hätte moeten kosten.
+AI-providers rekenen kosten per token, zowel voor invoer als voor uitvoer. Als u bij elke gebruikersvraag een document van 100.000 tokens meestuurt naar GPT-4o, kost die ene API-aanroep al snel 0,25 tot 0,50 euro. Wanneer een gebruiker binnen één sessie 10 vervolgvragen stelt en telkens het volledige document opnieuw wordt verzonden, kost die ene sessie 2,50 tot 5,00 euro in plaats van enkele centen.
 
-Bovendien kost het lezen van 100.000 tokens meetbare kloktijd voordat het model zijn eerste uitvoertoken afgeeft — meestal een extra 2-5 seconden "denktijd" bovenop de generatie. De latentie van uw toepassing zal exact pieken wanneer u het snelst wilt zijn, op het moment dat een betalende gebruiker op een antwoord wacht. Efficiënt contextbeheer gaat niet alleen over elegante architectuur; het gaat over het beschermen van uw winstmarges.
+Bovendien vergt het verwerken van 100.000 tokens aanzienlijk meer rekentijd vóórdat het model het eerste token genereert — wat 2 tot 5 seconden extra latentie oplevert. Slim contextbeheer is daarom noodzakelijk om gezonde winstmarges en een snelle gebruikerservaring te waarborgen.
 
-## Het 'Lost in the Middle' Verschijnsel
+## Het 'Lost in the Middle' Fenomeen
 
-Zelfs als u onbeperkt kapitaal heeft om aan tokens uit te geven, tasten massale contextvensters de AI-intelligentie aan. Academisch onderzoek (met name het Stanford/Berkeley "Lost in the Middle"-paper uit 2023 en vervolgstudies) heeft deze U-vormige aandachtscurve herhaaldelijk bewezen.
+Zelfs als budget geen belemmering vormt, tast een overmatig groot contextvenster de antwoordkwaliteit van een AI aan. Wetenschappelijk onderzoek (onder meer de bekende Stanford/Berkeley "Lost in the Middle" studie) toont een duidelijke U-vormige aandachtsverdeling aan.
 
-LLM's herinneren zich informatie aan het begin en het einde van een lange prompt veel betrouwbaarder dan informatie die in het midden verborgen zit. Als u een LLM een document van 50 pagina's voert, presteert het goed op vragen waarvan de antwoorden op pagina 1 of pagina 50 staan. De effectieve aandacht zakt in het midden kuitenkin weg. Als het antwoord op de vraag van de gebruiker zich op pagina 25 bevindt, zal de LLM het vaak volledig negeren of een aannemelijk klinkend maar verkeerd antwoord hallucineren, hoewel de juiste tekst technisch gezien de hele tijd "in context" was. Het voorzien van een LLM van *minder*, zeer relevante context — zelfs een enkele goed gekozen alinea — resulteert in een drastisch hogere nauwkeurigheid dan het voorzien van alles en het vertrouwen op de aandachtsmechanisme van het model om de speld in de hooiberg te vinden.
+Taalmodellen herinneren zich informatie aan het begin en het einde van een lange prompt uitstekend. De effectieve aandacht in het midden van het document zakt echter aanzienlijk weg. Als het cruciale antwoord op pagina 25 van een 50-pagina's tellend rapport staat, negeert het model dit feit regelmatig of genereert het een plausibel klinkende hallucinatie. Het injecteren van *minder*, maar uiterst relevante data levert meetbaar betere antwoorden op dan het lukraak meesturen van complete datasets.
 
-## Gespreksgeschiedenis Beheren: De Samenvattingsstrategie
+## Chatgeschiedenis Beheren: Sliding Window en Samenvattingen
 
-In een langlopende chat-toepassing zal het toevoegen van elk afzonderlijk ooit verzonden bericht aan de prompt-array het contextvenster snel opblazen, en het tast de nauwkeurigheid aan lang voordat het ooit een harde tokenlimiet raakt. U moet de geschiedenis bewust afsnijden.
+In een actieve chattoepassing kan het oneindig toevoegen van alle eerdere berichten de context snel overbelasten. Beheer de conversatiehistorie daarom gestructureerd:
 
-**Het Schuifvenster (Sliding Window):** De eenvoudigste benadering is om alleen de Systeemprompt en de laatste 8-10 berichten van het gesprek te versturen. De AI vergeet alles vanaf bericht 11 en ouder. Dit is goedkoop en triviaal om te implementeren, maar het schaadt de UX zodra een gebruiker verwijst naar iets wat 20 berichten geleden is gezegd.
+- **Sliding Window:** Stuur uitsluitend de systeemprompt en de laatste 8 tot 10 berichten mee. Goedkoop en eenvoudig te bouwen, maar de AI vergeet eerdere details uit het begin van de sessie.
+- **Asynchrone Samenvatting (Summarization):** De professionele oplossing. Zodra een gesprek een bepaalde lengte bereikt, vat een lichtgewicht achtergrondmodel (zoals GPT-4o-mini) de oudere berichten samen in 3 tot 5 zinnen of een gestructureerd JSON-sessieobject. Deze samenvatting wordt vervolgens meegegeven aan het hoofdmodel samen met de meest recente interacties.
 
-**De Samenvattingspipeline:** De enterprise-oplossing. Wanneer een gesprek een berichtenaantal of token-drempel overschrijdt, draait er op de achtergrond een goedkoop, snel model (een klein open-source model of een lichte klasse zoals GPT-4o mini). Het leest de oudere berichten en comprimeert ze tot een strakke samenvatting van 3-5 zinnen, waarin genomen beslissingen en vastgestelde feiten worden gevangen. U geeft deze samenvatting, plus de 2-3 meest recente rauwe berichten, vervolgens bij elke nieuwe turn mee aan de hoofd-LLM. U behoudt het langetermijngeheugen van het gesprek terwijl u een fractie verbruikt van de tokens die een volledig transcript nodig hätte gehad.
+## RAG en Reranking Blijven Onmisbaar
 
-## Strikte RAG Chunking
+Retrieval-Augmented Generation (RAG) blijft essentieel, ongeacht hoe groot contextvensters worden. Via een vectordatabase (Pinecone, pgvector of Weaviate) haalt u uitsluitend de 3 tot 5 meest relevante tekstfragmenten op (300 tot 600 tokens per chunk).
 
-Retrieval-Augmented Generation (RAG) blijft verplicht, ongeacht hoe groot contextvensters worden. Wanneer een gebruiker een vraag stelt, moet u uw vectordatabase (Pinecone, pgvector, Weaviate) gebruiken om alleen de top 3-5 meest semantisch relevante fragmenten (chunks) uit de kennisbank op te halen, doorgaans 300-800 tokens per stuk.
+Voor maximale precisie combineert u vector-retrieval met een **Reranker** (zoals Cohere Rerank). U haalt eerst de top 25 kandidaat-fragmenten op en laat een gespecialiseerd reranking-model deze exact rangschikken op relevantie voordat ze naar het taalmodel worden gestuurd. Dit levert snellere antwoorden, aanzienlijk lagere kosten en minimale hallucinaties op.
 
-In plaats van 200.000 tokens aan grotendeels irrelevante bedrijfsdata te versturen, verstuurt u 1.000-2.000 tokens aan zeer relevante data. De LLM verwerkt het vrijwel direct, het kost een fractie van een cent per query, en omdat er verhoudingsgewijs weinig "midden" is waarin het model de aandacht kan verliezen, daalt het hallucinatiepercentage scherp. Chunks die te klein zijn verliezen omringende context, terwijl chunks die te groot zijn het lost-in-the-middle probleem binnen één enkel opgehaald fragment herintroduceren. Een fragment van 400-600 tokens met ongeveer 15% overlap tussen opeenvolgende fragmenten is een verstandig uitgangspunt.
+Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
 
-## Herberekenen van Rangschikking (Reranking) als de Ontbrekende Tussenstap
+## Belangrijkste inzichten
 
-Vector-gelijkvormigheidszoekopdrachten alleen zijn een bot instrument — ze halen fragmenten op die wiskundig *dichtbij* de query-embedding liggen, wat niet altijd hetzelfde is als *meest nuttig* om de vraag te beantwoorden. Een pipeline op productieniveau voegt een reranking-stap toe: haal goedkoop een breder net op van 20-30 kandidaatfragmenten via vectorzoekopdrachten, en draai vervolgens een kleiner, doelgemaakt reranking-model (zoals Cohere Rerank) om die kandidaten opnieuw te scoren en te herordenen alvorens de definitieve top 3-5 te selecteren om in de prompt te injecteren.
+- 'Context Stuffing' (het meesturen van complete documenten in elke prompt) leidt tot torenhoge tokenkosten en onnodige latentievertragingen.
 
-## Belangrijkste Inzichten
+- Het 'Lost in the Middle' fenomeen toont aan dat modellen informatie in het midden van lange prompts vaker over het hoofd zien of hallucineren.
 
-- Gewoon omdat een LLM een massaal contextvenster heeft, betekent niet dat u het moet gebruiken. 'Context Stuffing' van grote documenten in elke prompt vernietigt uw winstmarges.
-- LLM's lijden aan het 'Lost in the Middle'-verschijnsel. Ze herinneren zich het begin en einde van lange prompts, maar hallucineren of negeren feiten die in het midden van grote teksten verborgen zitten.
-- Stuur nooit de volledige oneindige chatgeschiedenis van een gebruiker naar de API. Implementeer een 'Schuifvenster' (alleen de laatste 8-10 berichten sturen) om het aantal tokens laag en de latentie snel te houden.
-- Gebruik voor langetermijn-chatgeheugen een goedkoop achtergrondmodel om oudere berichten voortdurend samen te vatten in een korte alinea, en voeg die samenvatting in de prompt in plaats van de rauwe geschiedenis.
-- Retrieval-Augmented Generation (RAG), bij voorkeur gekoppeld aan een reranking-stap, blijft verplicht. Het injecteren van een klein aantal zeer relevante fragmenten levert altijd snellere, goedkopere en nauwkeurigere resultaten op.
+- Beperk chatgeschiedenis via een 'Sliding Window' of laat een lichtgewicht achtergrondmodel periodiek samenvattingen genereren van oudere interacties.
 
-## Optimaliseer Uw Token-Uitgaven
+- Retrieval-Augmented Generation (RAG) met gerichte tekst-chunks (300 tot 600 tokens) blijft noodzakelijk voor scherpe antwoorden en kostenbeheersing.
 
-Eten massale prompts het kapitaal van uw startup op? **LaunchStudio** ontwerpt geoptimaliseerde RAG-pipelines, reranking-lagen en context-samenvattingslussen die uw LLM API-kosten drastisch verlagen en tegelijkertijd de nauwkeurigheid van uw toepassing verbeteren. Herre Roelevink, Oprichter & Managing Director van Manifera, kadert de onderliggende verschuiving zo: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat."
+- Integreer een tweetraps Reranking-laag om zoekresultaten te valideren vóórdat ze in het contextvenster worden geplaatst.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanwege het tekort aan ervaren ontwikkelaars in Europa richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze enterprise-grade wereldwijde softwareontwikkelingsexpertise — tegen ongeveer 20% van wat een traditioneel bureau zou vragen — om hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering te maken. Gebruik de [prijscalculator](https://launchstudio.eu/en/#calculator) of [vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
+## Optimaliseer uw AI-tokenverbruik
 
-Manifera's eigen [portfolio](https://www.manifera.com/portfolio/) bevat data-intensieve enterprise-systemen gebouwd voor klanten zoals TNO en Vodafone, waar precies dit soort retrieval- en context-kostendiscipline vanaf dag één is ingebouwd.
+Eten torenhoge API-facturen de runway van uw startup op? **LaunchStudio** ontwerpt geoptimaliseerde RAG-pipelines, reranking-lagen en context-samenvattingslussen die uw tokenkosten drastisch verlagen en de nauwkeurigheid van uw AI-product maximaliseren. Bereken eenvoudig uw investering via onze [prijscalculator](https://launchstudio.eu/en/#calculator).
 
-## Echt Voorbeeld
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten voor opdrachtgevers zoals TNO en Vodafone helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
-### Een AI-Native Oprichter in Actie: Context Pruning Implementeren voor een Juridische Documentassistent
+## Echt voorbeeld
 
-Amelia, een advocaat, gebruikte **Bolt** om een app te bouwen voor het zoeken in jurisprudentie. Grote juridische documenten vulden het LLM-contextvenster, wat hoge API-kosten en verminderde nauwkeurigheid veroorzaakte.
+### Een AI-native oprichter in actie: Context-pruning implementeren voor een juridische zoekassistent
 
-Ze werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om een geautomatiseerd context-pruning algoritme te bouwen dat opgehaalde tekstfragmenten rangschikte op relevantie.
+Amelia, een jurist, bouwde met **Bolt** een zoekapp voor jurisprudentie. Omvangrijke juridische documenten vulden het contextvenster volledig, wat leidde tot hoge API-kosten en verminderde nauwkeurigheid.
 
-**Resultaat:** De gemiddelde promptgrootte daalde met 50%, en de API-kosten per zoekopdracht halveerden terwijl de evaluatienauwkeurigheid hoog bleef.
+Zij schakelde **LaunchStudio (door Manifera)** in om een geautomatiseerd context-pruning algoritme te bouwen dat opgehaalde tekstfragmenten rangschikt op strikte relevantie.
 
-**Kosten en Tijdlijn:** € 1.750 (Context Pruning Integration Package) — klaar voor productie en geïmplementeerd binnen 4 werkdagen.
+**Resultaat:** De gemiddelde prompt-grootte daalde met 50% en de API-kosten per zoekopdracht werden gehalveerd, terwijl de inhoudelijke nauwkeurigheid toenam.
+
+**Kosten & tijdlijn:** €1.750 (Context Pruning Integration Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Wat is een Contextvenster?
-Het maximale aantal tekst (tokens) dat een AI in zijn 'werkgeheugen' kan vasthouden voor een enkele prompt. Grote contextvensters stellen u in staat om hele boeken in één keer aan de AI door te geven, hoewel dat zelden de goedkoopste of meest nauwkeurige benadering is.
+### Wat is een contextvenster (Context Window)?
 
-### 2. Waarom zou ik niet gewoon alles in het Contextvenster proppen?
-Kosten, latentie en nauwkeurigheid. U betaalt voor elke token die u verstuurt; het versturen van 100.000 tokens voor een eenvoudige query is erg duur, dwingt het model er langer over te doen om te antwoorden, en maakt het model statistisch gezien gevoeliger om relevante feiten te missen door het 'Lost in the Middle'-effect.
+De maximale hoeveelheid data (gemeten in tokens) die een taalmodel gelijktijdig kan verwerken in zijn kortetermijngeheugen voor één enkele aanroep.
 
-### 3. Wat is het 'Lost in the Middle'-verschijnsel?
-LLM's hebben een U-vormige aandachtscurve. Als u ze een massaal document geeft, herinneren ze zich het begin en het einde betrouwbaar, maar negeren of hallucineren ze feiten die op de middelste pagina's verborgen zitten.
+### Waarom is het onverstandig om het volledige contextvenster vol te stoppen?
 
-### 4. Hoe beheer ik chatgeschiedenis zonder de context op te blazen?
-Stuur niet elke keer het volledige gesprek mee. Gebruik een schuifvenster van de laatste 8-10 berichten, en laat voor langetermijngeheugen een achtergrondproces draaien dat oudere berichten samenvat in een korte alinea.
+Omdat u voor elk invoertoken betaalt, de responstijd met meerdere seconden toeneemt en het model sneller hallucineert door het 'Lost in the Middle' effect.
 
-### 5. Is dit het soort werk dat LaunchStudio rechtstreeks uitvoert, of wordt het overgedragen aan Manifera?
-Het is hetzelfde team. LaunchStudio is Manifera's initiatief voor AI-native founders, dus een context-pruning of RAG-reranking project wordt geleverd door dezelfde productie-engineers die datasystemen bouwen voor Manifera's enterprise-klanten.
+### Wat houdt het 'Lost in the Middle' fenomeen in?
+
+Taalmodellen besteden de meeste aandacht aan het begin en einde van een prompt; informatie die in het midden staat, wordt statistisch gezien vaker genegeerd of verkeerd geïnterpreteerd.
+
+### Hoe beheert u lange conversaties zonder context-explosie?
+
+Door een sliding window te combineren met periodieke samenvattingen van eerdere interacties via een voordelig achtergrondmodel.
+
+### Hoe helpt LaunchStudio bij het optimaliseren van tokenkosten?
+
+LaunchStudio en Manifera implementeren nauwkeurige chunking-strategieën, semantische caching en reranking-lagen om het tokenverbruik met 50% tot 70% te reduceren.
 
 <script type="application/ld+json">
 {
@@ -92,42 +96,42 @@ Het is hetzelfde team. LaunchStudio is Manifera's initiatief voor AI-native foun
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is een Contextvenster?",
+      "name": "Wat is een contextvenster (Context Window)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het maximale aantal tekst (tokens) dat een AI in zijn werkgeheugen kan vasthouden voor een enkele prompt."
+        "text": "De maximale hoeveelheid tekst en tokens die een taalmodel binnen één prompt kan opnemen en analyseren."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom zou ik niet gewoon alles in het Contextvenster proppen?",
+      "name": "Waarom is het onverstandig om het volledige contextvenster vol te stoppen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat massale invoer extreem kostbaar is, hoge latentie veroorzaakt en de nauwkeurigheid aantast door het Lost in the Middle effect."
+        "text": "Het verhoogt de API-kosten per aanroep exponentieel, vergroot de latentie en leidt tot hallucinaties in het midden van het document."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het 'Lost in the Middle'-verschijnsel?",
+      "name": "Wat houdt het 'Lost in the Middle' fenomeen in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LLM's onthouden het begin en het einde van een lange prompt goed, maar negeren of hallucineren feiten die in het midden verborgen zitten."
+        "text": "De neiging van taalmodellen om data in het midden van een omvangrijke prompt over het hoofd te zien ten opzichte van het begin en einde."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe beheer ik chatgeschiedenis zonder de context op te blazen?",
+      "name": "Hoe beheert u lange conversaties zonder context-explosie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gebruik een schuifvenster van de laatste 8-10 berichten en laat een achtergrondproces oudere berichten samenvatten in een korte alinea."
+        "text": "Door oudere berichten periodiek samen te vatten via een lichtgewicht model en alleen de meest recente interacties integraal mee te sturen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is dit het soort werk dat LaunchStudio rechtstreeks uitvoert?",
+      "name": "Hoe helpt LaunchStudio bij het optimaliseren van tokenkosten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio is Manifera's initiatief voor AI-founders, uitgevoerd door dezelfde ervaren enterprise software-engineers."
+        "text": "Door tweetraps RAG-architecturen, reranking en context-pruning in te richten binnen 1 tot 3 weken."
       }
     }
   ]

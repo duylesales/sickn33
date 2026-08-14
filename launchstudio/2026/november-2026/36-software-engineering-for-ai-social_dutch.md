@@ -1,15 +1,15 @@
-❌ Waarom traditionele Agile en TDD compleet vastlopen bij het bouwen van AI software.
+❌ Waarom traditioneel Agile en TDD falen bij het bouwen van AI-software.
 
-20 jaar lang was software deterministisch: `add(2, 2)` is altijd `4`.
-AI is niet-deterministisch. Een simpele prompt retourneert élke keer iets anders.
+20 jaar lang was software deterministisch: `add(2, 2)` was altijd gelijk aan `4`.
+AI is niet-deterministisch: een prompt levert elke dag net een ander antwoord op.
 
-Traditionele software engineering toepassen op AI leidt tot:
-📉 De Dood van Unit Testing (tests falen willekeurig en worden 'flaky').
-📉 Agile Falen (je kunt onmogelijk inschatten hoe lang "prompt tuning" duurt).
-📉 Stille Degradatie (AI-modellen updaten onzichtbaar; de code crasht niet, maar de output verslechtert).
+Klassieke software-engineering toepassen op AI leidt tot:
+📉 Het einde van unit tests (regex faalt, tests worden onbetrouwbaar).
+📉 Onmogelijke schattingen (Agile story points kunnen geen prompt-tuning voorspellen).
+📉 Stille kwaliteitsdaling (modellen updaten stil; de server crasht niet, maar de tekst degradeert).
 
-Elitaire AI-teams hebben TDD vervangen door Evaluation-Driven Development (EDD). Je gebruikt een LLM-as-a-Judge om outputs volautomatisch en statistisch te beoordelen in je CI/CD pijplijn.
+Topteams vervangen TDD door Evaluation-Driven Development (EDD): een Rechter-AI (LLM-as-a-Judge) beoordeelt outputs statistisch in uw CI/CD-pipeline.
 
-Lees hier hoe LaunchStudio loeistrakke EDD-pijplijnen bouwt voor AI SaaS: [Link]
+Ontdek hoe LaunchStudio EDD-pijplijnen bouwt om onbetrouwbare AI-tests te elimineren: [Link]
 
-#SoftwareEngineering #AI #TDD #Agile #MachineLearning #TechStartups #LaunchStudio
+#SoftwareEngineering #AI #TDD #Agile #MachineLearning #TechStartups #LaunchStudio #MLOps

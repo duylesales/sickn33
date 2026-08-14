@@ -1,19 +1,19 @@
-📊 Sofia, een SaaS-oprichter, gebruikte **Cursor** om een AI-persoonlijke assistent te bouwen — maar ze kon haar werkelijke brutomarges niet berekenen, omdat tokenkosten nooit werden bijgehouden in haar database.
+📊 Sofia, een SaaS-founder, bouwde een AI-assistent met **Cursor** — maar kon haar werkelijke brutomarges niet berekenen omdat tokenkosten nergens in haar database werden bijgehouden.
 
-Uw AI-prijzen gokken is fataal — u moet uw kosten per query tot op de token nauwkeurig berekenen vóórdat u ook maar één prijs vaststelt, want de kostenkant van de vergelijking verandert met elk bericht. 🧠
+Gokken met AI-prijsstelling is gevaarlijk — u moet uw Cost Per Query tot op de individuele token berekenen vóórdat u uw prijspagina live zet, omdat de kosten per bericht variëren. 🧠
 
-❌ Prijzen baseren op tarieven van concurrenten in plaats van op uw werkelijke kosten per query
-❌ Negeren dat outputtokens 3 tot 5 keer duurder zijn dan inputtokens
-❌ Vergeten om RAG-retrieval en verborgen tool-call-overhead mee te rekenen in de kostenberekening
+❌ Tarieven baseren op concurrenten in plaats van op uw reële Cost Per Query
+❌ Vergeten dat output-tokens 3 tot 5 keer duurder zijn dan input-tokens
+❌ RAG-context en secundaire tool-calls niet meerekenen in de kostprijs
 
-✅ Middleware die het werkelijke tokengebruik per verzoek berekent en in de database vastlegt
-✅ De lengte van AI-output inkorten om het duurste onderdeel van elk antwoord te beperken
-✅ Eenvoudige taken routeren naar goedkopere modellen om de kosten per query 10 tot 25 keer te verlagen
+✅ Middleware die het reële tokenverbruik per query berekent en opslaat in de database
+✅ AI-antwoorden beknopter maken om het duurste onderdeel van elke respons te beperken
+✅ Eenvoudige deeltaken routeren naar goedkopere modellen om de CPQ met 90% te verlagen
 
-Bij **LaunchStudio** voeren we sinds 2014, via Manifera, audits uit van eenheidseconomie — met 11+ jaar ervaring over 160+ opgeleverde projecten voor klanten zoals Vodafone en TNO. 🛡️
+Bij **LaunchStudio** voeren we sinds 2014 unit-economics audits uit via Manifera, met meer dan 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO. 🛡️
 
-LaunchStudio bouwde voor Sofia NestJS-middleware die tokengebruik berekent op basis van headers en dit opslaat in de database — realtime margegegevens werden zichtbaar, waardoor ze haar prijstiers kon optimaliseren op basis van echte data. 🚀
+LaunchStudio bouwde voor Sofia NestJS middleware die tokenkosten realtime vastlegt — waardoor marges direct inzichtelijk werden en zij haar abonnementen kon optimaliseren met feitelijke data. (€1.600 (NestJS Middleware Setup Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Bereken uw eigen margewiskunde: [Link naar artikel]
+👉 Reken uw eigen marges en unit economics door: [Link naar artikel]
 
-#AINativeFounder #LaunchStudio #Manifera #UnitEconomics #ProfitMargins
+#AINativeFounder #LaunchStudio #Manifera #UnitEconomics #ProfitMargins #CostPerQuery #NestJS #SaaSMetrics #AISaaS #StartupOpschalen

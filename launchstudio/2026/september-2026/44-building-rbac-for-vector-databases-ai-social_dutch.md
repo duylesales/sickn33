@@ -1,19 +1,19 @@
-🔓 Penelope, een CRM-consultant, gebruikte **Bolt** om een AI-verkoopadviseur te bouwen — maar de app had geen scheiding op rijniveau, wat datalekken tussen klantorganisaties riskeerde. 📊
+🔓 Penelope, een CRM-consultant, bouwde een AI-verkoopadviseur met **Bolt** — maar de app miste scheiding op rijniveau, wat direct risico gaf op datalekken tussen verschillende klantorganisaties. 📊
 
-Een vectordatabase heeft geen intrinsiek begrip van "vertrouwelijk" — ze weet alleen wat wiskundig dichtbij ligt, waardoor de vraag van een stagiair net zo makkelijk het geheime memo van de CEO naar boven kan halen als een openbare FAQ. 🧠
+Een vectordatabase kent geen geheimhoudingsniveaus — het zoekt puur op wiskundige tekstovereenkomst, waardoor de vraag van een stagiair net zo makkelijk de geheime directienotitie oplevert als een openbare FAQ. 🧠
 
-❌ Een monolithische vectorindex waarin HR-, sales- en fusiedocumenten allemaal in dezelfde onbeperkte zoekruimte staan
-❌ Het LLM zelf vragen om gevoelige documenten "niet te onthullen" — een regel die prompt-injectie moeiteloos omzeilt
-❌ Resultaten pas filteren na retrieval, waardoor een gevoelig document alsnog even in geheugen en logs staat
+❌ Een monolithische vectorindex waarin HR-, marketing- en overnamestukken in één onbeveiligde ruimte staan
+❌ Het taalmodel vragen om vertrouwelijke documenten "niet te delen" — wat prompt-injecties direct omzeilen
+❌ Resultaten pas ná het ophalen filteren, waardoor vertrouwelijke data tijdelijk in het geheugen en de logs belandt
 
-✅ Metadatatags zoals `allowed_roles`, `department` en `sensitivity`, gekoppeld aan elke vector bij het inladen
-✅ Backend-handhaving die JWT-rolclaims uitleest en filtert binnen dezelfde query als de gelijkenis-zoekopdracht
-✅ Lichte metadata-updates (geen herembedding) telkens wanneer de rol of afdeling van een medewerker verandert
+✅ Metadata-tags zoals `allowed_roles`, `department` en `sensitivity` gekoppeld aan elke vector bij inname
+✅ Backend-handhaving die JWT-claims leest en filtert binnen dezelfde databasequery als de similarity search
+✅ Lichte metadata-updates (zonder kostbare re-embeddings) zodra de rol van een medewerker wijzigt
 
-Bij **LaunchStudio** ontwerpen we sinds 2014, via Manifera, exact dit soort granulaire toegangsarchitectuur, over 160+ enterprise-projecten. 🛡️
+Bij **LaunchStudio** bouwen we sinds 2014 fijnmazige autorisatie-architecturen via Manifera, met meer dan 160 gerealiseerde enterprise-projecten. 🛡️
 
-Penelopes klantgegevens werden volledig geïsoleerd en voldeden aan enterprise-beveiligingsnormen. 🚀
+LaunchStudio implementeerde Supabase RLS en pgvector metadata-filtering voor Penelope — klantdata werd 100% geïsoleerd en voldeed aan enterprise-beveiligingsnormen. (€2.100 (Database Tenancy Tuning Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Bekijk onze vaste-scope hardeningspakketten: [Link naar artikel]
+👉 Ontdek hoe u RBAC inricht op uw vectordatabase: [Link naar artikel]
 
-#AINativeFounder #LaunchStudio #Manifera #RBAC #VectorDatabaseSecurity
+#AINativeFounder #LaunchStudio #Manifera #RBAC #VectorDatabaseSecurity #DataIsolation #Supabase #pgvector #AISaaS #StartupOpschalen

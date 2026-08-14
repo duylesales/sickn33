@@ -1,93 +1,101 @@
 ---
-Titel: Uw Sleutels Beveiligen in Productie bij het Gebruik van een API in AI
-Trefwoorden: ai beveiligen, ai beveiliging, ai en beveiliging, ai beveiligingsproblemen, ai beveiligingsrisico, ai kwetsbaarheden, ai databeveiliging, ai privacyproblemen
-Koperfase: Bewustwording
+Titel: "OpenAI API-Sleutels Beveiligen in Productie met Node.js"
+Trefwoorden: AI secure, security AI, AI en security, AI security issues, AI security risk, AI vulnerabilities, AI data security, AI privacy issues, LaunchStudio, Manifera
+Koperfase: Bewustzijn
 ---
 
-# Uw Sleutels Beveiligen in Productie bij het Gebruik van een API in AI
+# OpenAI API-Sleutels Beveiligen in Productie met Node.js
 
-Een niet-beveiligde OpenAI API-sleutel staat gelijk aan het achterlaten van uw bedrijfscreditcard op een parkbankje. Hackers laten actief geautomatiseerde bots draaien die openbare GitHub-repositories, npm-pakketten en zelfs browserbundles scannen, specifiek zoekend naar strings die overeenkomen met `sk-` sleutelpatronen. Als uw sleutel op vrijdagavond gecompromitteerd raakt, kunt u op maandag wakker worden met een factuur van $ 50.000 van iemand die massale beeldgeneraties of fine-tuning taken op uw account heeft uitgevoerd. Dit is geen hypothetisch geval — onderzoek toont aan dat ongeveer 45% van de door AI gegenereerde code minstens één betekenisvolle beveiligingskwetsbaarheid bevat, en hardgecodeerde of op de client blootgestelde API-sleutels behoren tot de meest voorkomende.
+Een onbeveiligde OpenAI API-sleutel staat gelijk aan het achterlaten van uw zakelijke creditcard op een openbare parkbank. Geautomatiseerde bots doorzoeken continu publieke GitHub-repositories, npm-pakketten en frontend-broncode, specifiek speurend naar strings die beginnen met `sk-`. Wordt uw API-sleutel gecompromitteerd, dan kunt u binnen een weekend geconfronteerd worden met tienduizenden euro's aan ongeautoriseerde afschrijvingen door kwaadwillenden die op uw kosten modellen trainen. Onderzoek toont aan dat circa 45% van de door AI gegenereerde code ernstige kwetsbaarheden bevat, waarbij gelekte API-sleutels veelvuldig voorkomen.
 
-## De Fataale Fout: Frontend Fetching
+## De Fatale Fout: API-Aanroepen vanuit de Frontend
 
-De meest voorkomende beveiligingsfout die door junior ontwikkelaars wordt begaan, en die AI-pair-programming tools graag genereren als u deze niet weet te weigeren, is het rechtstreeks aanroepen van de OpenAI API vanuit client-side code (React, Vue of vanilla JS). Om de API-call te maken, moet de geheime sleutel worden gebundeld in de JavaScript die naar de browser van de gebruiker wordt gestuurd — het eindigt in platte tekst in uw `main.js` chunk, zelfs als u het tijdens de build-stap uit een omgevingsvariabele heeft gehaald.
+De meest gemaakte fout onder beginnende ontwikkelaars is het rechtstreeks aanroepen van de OpenAI API vanuit client-side code (React, Vue of standaard JavaScript). Om het verzoek uit te voeren, wordt de geheime API-sleutel opgenomen in de JavaScript-bundel die naar de browser van de eindgebruiker wordt verstuurd.
 
-Het maakt niet uit of u de code obfuscateert of de bundle minificeert. Iedereen kan Chrome DevTools openen, het tabblad Sources of Network inspecteren, zoeken naar `sk-` en binnen enkele seconden uw API-sleutel kopiëren. Geautomatiseerde scrapers doen dit op grote schaal en pluggen uw sleutel direct in hun eigen scripts om massale taken op uw account te draaien.
+Het versleutelen of minifiëren van de code biedt geen enkele bescherming. Iedereen kan via de Developer Tools (F12) van de browser het tabblad Netwerk of Bronnen openen, zoeken op `sk-` en uw API-sleutel binnen enkele seconden kopiëren.
 
 ## De Backend Proxy Architectuur
 
-Uw AI-architectuur moet een strikte server-to-server grens afdwingen. De frontend mag de API-sleutel nooit bezitten — niet in een omgevingsvariabele met een `NEXT_PUBLIC_` of `VITE_` prefix, niet in een configuratiebestand, nergens waar het gebundeld kan worden.
+Uw applicatie moet een strikte server-to-server scheiding hanteren. De browser van de bezoeker mag onder geen enkele voorwaarde in het bezit zijn van de geheime sleutel:
 
-1. De React frontend stuurt de prompt van de gebruiker naar uw veilige Node.js backend (bijv. `POST /api/generate`), geauthenticeerd met een kortstondige sessietoken of JWT, nooit met een rauwe API-sleutel.
-2. De Node backend authenticeert de gebruiker via middleware, ter bevestiging dat deze is ingelogd, een actief abonnement heeft en niet is gemarkeerd voor misbruik.
-3. De backend haalt de OpenAI API-sleutel veilig op uit het verborgen `.env`-bestand of uit een secrets manager zoals AWS Secrets Manager, Doppler of HashiCorp Vault.
-4. De backend maakt de aanroep naar OpenAI van server tot server, ontvangt het antwoord en stuur het via de bestaande geauthenticeerde sessie terug naar de frontend.
+1. **Clientverzoek:** De React-frontend stuurt de gebruikersprompt naar uw beveiligde Node.js backend (bijvoorbeeld `POST /api/generate`), geauthenticeerd via een sessietoken of JWT.
+2. **Authenticatie & Validatie:** De Node.js middleware controleert of de gebruiker is ingelogd, beschikt over een actief abonnement en de gebruikslimieten niet heeft overschreden.
+3. **Beveiligde Sleutel:** De backend haalt de geheime API-sleutel op uit een verborgen `.env`-bestand of een dedicated secrets manager (zoals AWS Secrets Manager of Doppler).
+4. **Server-to-Server:** De backend voert de aanroep naar OpenAI uit, valideert de uitvoer en stuurt uitsluitend het gegenereerde resultaat terug naar de frontend.
 
-In deze architectuur verlaat de geheime sleutel uw veilige serveromgeving nooit. Zelfs als een aanvaller uw frontend-bundle volledig meeneemt, is er niets te stelen.
+Zelfs als kwaadwillenden uw complete frontend-code inspecteren, valt er geen enkele geheime sleutel te ontvreemden.
 
-## Verdediging tegen 'Denial of Wallet' (DoW) Aanvallen
+## Bescherming tegen 'Denial of Wallet' (DoW) Aanvallen
 
-Zelfs als uw sleutel perfect beveiligd is op uw backend, is uw startup nog steeds kwetsbaar. Als een kwaadwillende gebruiker een script schrijft om uw veilige `/api/generate` endpoint honderden of duizenden keren per minuut te raken, zal uw backend die verzoeken getrouw doorsturen naar OpenAI, waarbij uw creditcard voor elk token wordt belast — uw sleutel is nooit gelekt, maar u bent alsnog failliet.
+Zelfs als uw API-sleutel veilig op de backend staat opgeslagen, blijft uw onderneming kwetsbaar voor zogeheten **Denial of Wallet** aanvallen. Als een kwaadwillende een script schrijft dat uw beveiligde `/api/generate` endpoint duizenden keren per minuut aanroept, stuurt uw server die verzoeken braaf door naar OpenAI, waardoor uw tokenkosten binnen enkele uren exploderen.
 
-Dit is een **Denial of Wallet** (DoW) aanval, en het is schadelijker dan een traditionele DDoS omdat de schade zich stilzwijgend opbouwt op uw maandelijkse factuur. Om te overleven, moet u gelaagde, op gebruikers gebaseerde rate-limiting implementeren.
+Om financieel gezond te blijven, implementeert u strikte, gebruikersgebonden **Rate Limiting** via Redis (of Upstash):
+- Beperk gebruikers tot bijvoorbeeld maximaal 10 AI-generaties per minuut en 100 per dag.
+- Vang overtredingen direct af met een `429 Too Many Requests` statuscode vóórdat de aanroep de externe API bereikt.
+- Stel harde limieten in op `max_tokens` per request en weiger prompts die een maximale lengte overschrijden.
 
-Met behulp van Redis (of een beheerde variant zoals Upstash) houdt u het aantal API-calls bij dat wordt gemaakt door elke specifieke Gebruikers-ID, of per IP-adres voor niet-geauthenticeerde endpoints. Dwing een strikte limiet af: een gebruiker op het gratis niveau krijgt bijvoorbeeld 15 generaties per minuut en 100 per dag. Als een gebruiker de limiet overschrijdt, moet uw Node backend het verzoek direct weigeren met een `429 Too Many Requests` HTTP-respons. Het verzoek sterft op uw server en wordt nooit doorgestuurd naar OpenAI.
+## Harde Budgetlimieten in het OpenAI Dashboard
 
-## Harde Facturatielimieten en Kostenalarmen
+Software kan haperen en rate-limiters kunnen door configuratiefouten falen. De ultieme noodrem bevindt zich in het dashboard van uw AI-provider:
 
-Code faalt. Rate-limiters kunnen bugs bevatten of omzeild worden. De laatste verdedigingslinie tegen financiële schade zijn limieten op infrastructuurniveau die niet afhankelijk zijn van het correct werken van uw applicatiecode.
+- **Soft Limit:** Stel deze in op uw verwachte maandelijkse uitgaven (bijvoorbeeld 500 euro). U ontvangt direct een e-mail en Slack-notificatie zodra dit bedrag wordt bereikt.
+- **Hard Limit:** Stel deze in op het absolute maximumbedrag dat uw startup kan dragen (bijvoorbeeld 1.000 euro). Zodra dit plafond wordt bereikt, sluit de API-provider alle verdere aanroepen fysiek af. Uw AI-functies pauzeren tijdelijk, maar uw bankrekening en runway blijven intact.
 
-In het developer-dashboard van OpenAI (of Anthropic) moet u strikte facturatielimieten configureren:
+Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera voert sinds **2014** diepgaande security-audits uit.
 
-- **Soft Limit:** Stel dit in op uw verwachte maandelijkse uitgaven plus een buffer (bijv. $ 500). Bij activering stuurt het een dringende e-mail en Slack-melding naar het engineeringteam zodat een mens kan onderzoeken voordat er echte schade ontstaat.
-- **Hard Limit:** Stel dit in op het maximale bedrag dat uw startup zich kan veroorloven te verliezen (bijv. $ 1.000). Wanneer deze limiet wordt bereikt, verbreekt de API-provider fysiek uw toegang. Uw app schakelt AI-functies uit, maar uw bankrekening overleeft.
+## Belangrijkste inzichten
 
-Deze gelaagde benadering — proxy-architectuur, rate-limiting, facturatielimieten en invoervalidatie — is de basis die Manifera toepust op elk AI-native project. "We zien een verschuiving in softwarebehoeften," zegt **Herre Roelevink, Oprichter & Managing Director van Manifera**. "De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten tot volwassenheid te brengen. Wij hebben elf jaar ervaring in precies dat." Manifera — opgericht in **2014** en werkend vanuit Amsterdam, Singapore en Ho Chi Minh City met 120+ engineers — heeft exact deze beveiligingsaudit uitgevoerd voor klanten zoals Vodafone, TNO en CFLW Cyber Strategies.
+- Roep de OpenAI API nooit rechtstreeks aan vanuit client-side code (React/Vue); dit lekt uw geheime API-sleutel direct in de JavaScript-bundel van de browser.
 
-## Belangrijkste Inzichten
+- Bouw altijd een 'Backend Proxy': de client communiceert uitsluitend met uw eigen beveiligde Node.js backend, die de geheime sleutel veilig bewaart.
 
-- Maak LLM API-calls nooit rechtstreeks vanuit frontend-code (React/Vue). Dit stelt uw geheime API-sleutel bloot in de browserbundle, waardoor geautomatiseerde scrapers deze binnen enkele uren kunnen stelen.
-- Ontwerp een 'Backend Proxy'. De frontend communiceert met uw geauthenticeerde Node.js-server, die de API-sleutel veilig bewaart in een omgevingsvariabele of secrets manager en de aanroep namens de gebruiker uitvoert.
-- Bescherm uw backend tegen 'Denial of Wallet' (DoW) aanvallen. Kwaadwillende gebruikers kunnen uw API-endpoint spamberichten sturen om massale tokenkosten te genereren, zelfs als uw sleutel nooit is gelekt.
-- Implementeer op gebruikers gebaseerde Rate-Limiting (via Redis of Upstash). Beperk gebruikers tot een vast aantal AI-generaties per minuut en per dag, en blokkeer ze met een '429'-fout voordat het verzoek uw provider bereikt.
-- Configureer altijd 'Harde Limieten' (Hard Limits) in het dashboard van uw LLM-provider, en begrens `max_tokens` per verzoek. Dit garandeert dat de API automatisch uitschakelt voordat de facturatie uit de hand loopt.
+- Bescherm uw platform tegen 'Denial of Wallet' (DoW) aanvallen waarbij scripts uw endpoints overspoelen met zware tokengeneraties om uw budget uit te putten.
 
-## Beveilig Uw Infrastructuur
+- Implementeer strikte rate-limiting met Redis op basis van User ID of IP-adres en retourneer direct een 429-foutmelding bij overschrijding.
 
-Staan uw API-sleutels blootgesteld, waardoor uw startup kwetsbaar is voor financiële aanvallen? **[LaunchStudio](https://launchstudio.eu/en/)** auditeert B2B SaaS-toepassingen en implementeert ondoordringbare backend-proxies, robuuste Redis rate-limiting en zero-trust beveiligingsarchitecturen. Bekijk het [proces](https://launchstudio.eu/en/#process) dat LaunchStudio volgt om een door AI gegenereerd prototype te beveiligen zonder uw frontend aan te raken.
+- Stel altijd harde budgetlimieten (Hard Limits) in binnen het dashboard van OpenAI of Anthropic als ultieme financiële noodrem.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **[Manifera](https://www.manifera.com/about-us/)**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanwege het tekort aan ervaren ontwikkelaars in Europa richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent in te zetten voor [web application development](https://www.manifera.com/services/web-app-develop/) en beveiliging. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze enterprise-grade wereldwijde softwareontwikkelingsexpertise om hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
+## Beveilig uw AI-architectuur tegen misbruik
 
-## Echt Voorbeeld
+Staan uw API-sleutels kwetsbaar opgeslagen of mist uw backend effectieve bescherming tegen Denial of Wallet aanvallen? **LaunchStudio** voert diepgaande security-audits uit en bouwt waterdichte backend-proxies, Redis rate-limiting en zero-trust architecturen voor uw B2B SaaS. Bekijk onze [werkwijze](https://launchstudio.eu/en/#process) voor meer informatie.
 
-### Een AI-Native Oprichter in Actie: API-Sleutels Beveiligen voor een AI Vastgoed-Schrijver
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
 
-Evelyn, een makelaar, gebruikte **Cursor** to om een schrijver voor vastgoedteksten te bouwen. Een concurrent haalde haar private OpenAI API-sleutel uit de frontend-bundle door simpelweg de uitgerolde JavaScript te lezen, wat leidde tot € 600 aan ongeautoriseerde kosten voordat ze het opmerkte.
+## Echt voorbeeld
 
-Ze nam contact op met **LaunchStudio (door Manifera)**. Het team verplaatste alle API-sleutels naar veilige omgevingsvariabelen, bouwde server-side Next.js route-handlers om elke LLM-call te proxylen, en voegde rate-limiting toe.
+### Een AI-native oprichter in actie: API-sleutels beveiligen voor een AI-vastgoedcopywriter
 
-**Resultaat:** Blootgestelde sleutels werden geroteerd en beveiligd, wat toekomstige lekken voorkwam.
+Evelyn, een makelaar, bouwde met **Cursor** een tool voor woningomschrijvingen. Een concurrent achterhaalde haar private OpenAI API-sleutel rechtstreeks uit de frontend JavaScript-code en genereerde voor 600 euro aan ongeautoriseerde aanroepen voordat het werd opgemerkt.
 
-**Kosten en Tijdlijn:** € 850 (Secrets Security Package) — klaar voor productie en geïmplementeerd binnen 2 werkdagen.
+Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam migreerde alle API-sleutels naar beveiligde environment variables, richtte server-side Next.js route-handlers in en voegde strikte Redis rate-limiting toe.
+
+**Resultaat:** De gecompromitteerde sleutel werd direct ingetrokken en geroteerd, waardoor verdere financiële lekken definitief werden voorkomen.
+
+**Kosten & tijdlijn:** €850 (Secrets Security Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde Vragen (FAQ)
+## Veelgestelde vragen
 
-### 1. Waarom zou ik OpenAI niet rechtstreeks vanuit React aanroepen?
-Als u dat doet, moet uw geheime API-sleutel in de JavaScript-bundle naar de browser worden gestuurd. Iedereen kan DevTools openen, naar het sleutelpatroon zoeken, het kopiëren en het gebruiken om hun eigen zware taken op uw creditcard te draaien.
+### Waarom mag een OpenAI API-sleutel nooit in frontend code staan?
 
-### 2. Hoe beveiligen ik de API-call?
-Gebruik een Backend Proxy. De frontend communiceert met uw geauthenticeerde Node.js backend. De backend haalt de geheime sleutel op uit een omgevingsvariabele, roept OpenAI van server tot server aan, en stuurt alleen de gegenereerde tekst terug naar de frontend.
+Omdat de frontend-code volledig inzichtelijk is voor iedereen via browser Developer Tools, waardoor geautomatiseerde bots de sleutel binnen enkele seconden kunnen stelen en misbruiken.
 
-### 3. Wat is een Denial of Wallet (DoW) aanval?
-Wanneer een kwaadwillend script uw AI-generatie endpoints herhaaldelijk bestookt. Zelfs als uw sleutel volledig beveiligd is, stuurt uw backend de spam door naar OpenAI, wat uw startup financieel uitput via tokenkosten.
+### Wat is een Backend Proxy?
 
-### 4. Hoe voorkomt u een DoW-aanval?
-Implementeer strikte, op gebruikers gebaseerde Rate-Limiting ondersteund door Redis. Houd verzoeken per Gebruikers-ID of IP bij. Als ze een limiet overschrijden, weigert u de call op uw backend met een 429-fout.
+Een server-side tussenlaag (zoals een Node.js Express of Next.js server-route) die inkomende verzoeken van gebruikers valideert en de beveiligde API-aanroep naar OpenAI achter de schermen uitvoert.
 
-### 5. Repareert LaunchStudio alleen beveiligingsproblemen, of voorkomen ze die ook voor lancering?
-Beide. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-engineering en cybersecurity, voert beveiligingsaudits uit op nieuwe AI-prototypes voor lancering en incident-response op gecompromitteerde apps.
+### Wat is een Denial of Wallet (DoW) aanval?
+
+Een aanval waarbij kwaadwillenden uw AI-endpoints doelbewust bestoken met duizenden prompts om via enorme tokenvolumes uw advertentie- of bankbudget volledig leeg te trekken.
+
+### Hoe voorkomt u Denial of Wallet aanvallen?
+
+Door gebruikersgebonden rate-limiting in te richten met Redis, invoerlengtes van prompts te begrenzen en strikte token-maxima per verzoek af te dwingen.
+
+### Hoe helpt LaunchStudio bij de beveiliging van AI-applicaties?
+
+LaunchStudio en Manifera voeren beveiligingsaudits uit, elimineren kwetsbaarheden in API-communicatie en implementeren zero-trust backend-infrastructuren binnen 1 tot 3 weken.
 
 <script type="application/ld+json">
 {
@@ -96,18 +104,18 @@ Beide. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom zou ik OpenAI niet rechtstreeks vanuit React aanroepen?",
+      "name": "Waarom mag een OpenAI API-sleutel nooit in frontend code staan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat de geheime sleutel dan in de JavaScript-bundle naar de browser wordt meegestuurd, waar scrapers en aanvallers deze direct uit DevTools kunnen stelen."
+        "text": "Omdat client-side code openbaar is in de browser, waardoor geautomatiseerde bots de sleutel direct kunnen stelen en misbruiken."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe beveiligen ik de API-call?",
+      "name": "Wat is een Backend Proxy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gebruik een Backend Proxy. De frontend roept uw eigen Node.js server aan, die de verborgen sleutel ophaalt en de API-call server-to-server uitvoert."
+        "text": "Een beveiligde server-architectuur die API-sleutels afschermt en server-to-server communiceert met externe AI-modellen."
       }
     },
     {
@@ -115,23 +123,23 @@ Beide. LaunchStudio, ondersteund door Manifera's 11+ jaar ervaring in productie-
       "name": "Wat is een Denial of Wallet (DoW) aanval?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een aanval waarbij een script uw backend-endpoints bestookt met verzoeken om massale API-tokenkosten op uw creditcard te genereren."
+        "text": "Een aanval waarbij herhaalde zware prompts worden gestuurd om de API-kosten van een organisatie doelbewust te laten exploderen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe voorkomt u een DoW-aanval?",
+      "name": "Hoe voorkomt u Denial of Wallet aanvallen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Implementeer op Redis gebaseerde rate-limiting per gebruiker/IP en stel harde facturatielimieten in het OpenAI-dashboard in."
+        "text": "Via Redis rate-limiting op basis van User ID, het maximeren van token-limieten en harde budgetlimieten in het provider-dashboard."
       }
     },
     {
       "@type": "Question",
-      "name": "Repareert LaunchStudio alleen beveiligingsproblemen, of voorkomen ze die ook?",
+      "name": "Hoe helpt LaunchStudio bij de beveiliging van AI-applicaties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beide. LaunchStudio en Manifera voeren pre-launch audits uit en voeren incident-response uit op gecompromitteerde codebases."
+        "text": "Door security-audits uit te voeren, backend proxies in te richten en zero-trust architecturen op te leveren binnen 1 tot 3 weken."
       }
     }
   ]

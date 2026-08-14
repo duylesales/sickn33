@@ -1,117 +1,179 @@
 ---
-Titel: "De Pre-lanceringschecklist: 25 Dingen om te Verifiëren Voordat Je AI SaaS Live Gaat"
-Trefwoorden: AI-SaaS, AI-secure, AI-deployment, AI in SaaS, LaunchStudio, Manifera
+Titel: "De Pre-Launch Checklist: 25 Dingen om te Verifiëren Vóór Uw AI-SaaS Live Gaat"
+Trefwoorden: ai saas, ai secure, ai deployment, ai in saas, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Pre-lanceringschecklist: 25 Dingen om te Verifiëren Voordat Je AI SaaS Live Gaat
+# De Pre-Launch Checklist: 25 Dingen om te Verifiëren Vóór Uw AI-SaaS Live Gaat
 
-De avond voor lancering is niet het moment om te ontdekken dat je database geen back-ups heeft. Deze checklist bestaat zodat dat moment nooit gebeurt — 25 concrete, verifieerbare items die beveiliging, betalingen, data en betrouwbaarheid omvatten, die een oprecht lanceringsklare AI SaaS onderscheiden van een die alleen maar klaar lijkt.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Pre-Launch Checklist: 25 Dingen om te Verifiëren Vóór Uw AI-SaaS Live Gaat",
+  "description": "Een uitgebreide, praktische checklist voor beveiliging, betalingen, data en betrouwbaarheid die AI-native oprichters moeten verifiëren vóór de lancering naar betalende klanten.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/pre-launch-checklist-25-things-verify-ai-saas"
+  }
+}
+</script>
 
-## Beveiliging (Items 1-6)
+De avond vóór uw officiële lancering is niet het moment om erachter te komen dat uw database geen backups maakt. Deze checklist is ontworpen om te garanderen dat dat moment nooit plaatsvindt: **25 concrete, verifieerbare punten** verdeeld over beveiliging, betalingen, data en betrouwbaarheid die een daadwerkelijk productierijpe AI-SaaS onderscheiden van een app die er slechts optisch klaar uitziet.
 
-1. Authenticatie is geïmplementeerd met een productiewaardige provider, geen placeholder-login
-2. Row Level Security (of gelijkwaardige tenant-isolatie) is ingeschakeld en getest over elke datatabel
-3. Geen API-sleutels of geheimen zijn blootgesteld in client-side/browser-toegankelijke code
-4. Wachtwoordherstel- en accountherstelflows werken correct en veilig
-5. Basale rate limiting bestaat op authenticatie-endpoints om brute-force-pogingen te voorkomen
-6. HTTPS/SSL is correct geconfigureerd over de hele applicatie, niet alleen de homepage
+## Beveiliging (Punten 1 t/m 6)
 
-## Data en Database (Items 7-11)
+1. **Authenticatie is geïmplementeerd met een volwaardige productie-provider**, niet via een tijdelijk placeholder-inlogscherm.
+2. **Row Level Security (of gelijkwaardige tenant-isolatie) is geactiveerd én getest** over elke afzonderlijke datatabel.
+3. **Geen enkele API-sleutel of geheim staat blootgesteld** in de client-side/browser-toegankelijke code.
+4. **Wachtwoordherstel en account-herstelstromen** functioneren correct en veilig via e-mail.
+5. **Basis rate-limiting is actief** op authenticatie-eindpunten om brute-force inlogpogingen te blokkeren.
+6. **HTTPS/SSL is correct geconfigureerd** over de gehele applicatie, en niet alleen op de landingspagina.
 
-7. Databaseback-ups zijn geconfigureerd en je hebt geverifieerd dat een herstel daadwerkelijk werkt
-8. Multi-tenant data-isolatie is expliciet getest met twee aparte accounts
-9. Kritieke databasequery's hebben passende indexen voor verwacht datavolume
-10. Er bestaat een gedefinieerd proces voor het afhandelen van verzoeken tot verwijdering van gebruikersdata
-11. Datavalidatie voorkomt dat misvormde of kwaadaardige invoer je database corrumpeert
+## Data en Database (Punten 7 t/m 11)
 
-## Betalingen (Items 12-16)
+7. **Database-backups zijn ingesteld** en er is daadwerkelijk geverifieerd dat een restore succesvol werkt.
+8. **Multi-tenant data-isolatie is expliciet getest** met twee afzonderlijke testaccounts.
+9. **Kritieke databasequeries zijn voorzien van passende indexen** voor het verwachte datavolume.
+10. **Er is een gedefinieerd en werkend proces** voor het afhandelen van verwijderverzoeken van klantdata (AVG/GDPR).
+11. **Invoervalidatie voorkomt** dat beschadigde of kwaadaardige invoer de database kan corrumperen.
 
-12. Betalingsverwerking (Stripe of Mollie) is volledig geïntegreerd, geen demo-checkout
-13. Webhook-handlers zijn idempotent en zullen dubbele events niet dubbel verwerken
-14. Afhandeling van mislukte betalingen omvat een redelijke respijtperiode, geen directe afsluiting
-15. Abonnementsupgrade-, downgrade- en annuleringsflows werken allemaal correct
-16. Btw-/belastingafhandeling is correct geconfigureerd voor je daadwerkelijke klantenbestand
+## Betalingen (Punten 12 t/m 16)
 
-## AI-specifieke Betrouwbaarheid (Items 17-20)
+12. **Betalingsverwerking (Stripe of Mollie) is volledig geïntegreerd**, niet slechts een statische demo-kassa.
+13. **Webhook-handlers zijn idempotent** en verwerken dubbel verzonden netwerk-events zonder dubbele afschrijvingen.
+14. **De afhandeling van mislukte betalingen bevat een redelijke coulanceperiode** (*grace period*), in plaats van directe blokkade.
+15. **Abonnementsupgrades, downgrades en opzeggingen** werken allemaal correct en synchroniseren met gebruikersrechten.
+16. **Btw- en belastingafhandeling is correct geconfigureerd** voor uw daadwerkelijke klantenbestand (21% btw / btw-verlegd).
 
-17. AI-API-kosten worden per gebruiker/verzoek bijgehouden, niet alleen blindelings geaggregeerd
-18. Een fallback of soepele degradatie bestaat voor uitval of ratelimieten bij de AI-provider
-19. AI-responses zijn getest tegen edge cases (lege invoer, extreme lengte, onverwachte taal)
-20. Gebruikslimieten of kostenbeheersing bestaan om op hol geslagen API-kosten van één gebruiker te voorkomen
+## AI-Specifieke Betrouwbaarheid (Punten 17 t/m 20)
 
-## Monitoring en Support (Items 21-25)
+17. **AI API-kosten worden per gebruiker en per verzoek bijgehouden**, in plaats van blind geaggregeerd.
+18. **Een fallback of geleidelijke degradatie is aanwezig** voor downtime of rate-limits van de AI-provider.
+19. **AI-antwoorden zijn getest tegen randgevallen** (lege invoer, extreme lengte, onverwachte talen of prompt injections).
+20. **Gebruikslimieten of kostenbeperkingen zijn actief** om te voorkomen dat één enkele gebruiker onbeheersbare API-kosten veroorzaakt.
 
-21. Uptime-monitoring is actief met alerts gerouteerd naar ergens waar je ze daadwerkelijk zult zien
-22. Foutregistratie (zoals Sentry) legt applicatiefouten vast en signaleert ze
-23. Een publieke of interne statuspagina bestaat voor incidentcommunicatie
-24. Een supportcontactmethode is duidelijk beschikbaar voor gebruikers wanneer iets misgaat
-25. Je hebt persoonlijk de complete aanmelding-tot-betalende-klant-flow getest zoals een vreemde die zou ervaren
+## Monitoring en Klantenondersteuning (Punten 21 t/m 25)
 
-## Waarom Deze Checklist Meer Doet Ertoe Dan Het Lijkt
+21. **Uptime-monitoring is actief** met alerts die worden doorgestuurd naar een kanaal dat u daadwerkelijk bekijkt.
+22. **Foutopsporing (zoals Sentry) registreert en signaleert** runtime- en serverfouten.
+23. **Een publieke of interne statuspagina bestaat** voor communicatie bij eventuele incidenten.
+24. **Een support-contactoptie is direct en duidelijk vindbaar** voor gebruikers wanneer er iets misgaat.
+25. **U heeft persoonlijk het complete proces van registratie tot betalende klant doorlopen** zoals een vreemde bezoeker dat ervaart.
 
-Elk van deze 25 items lijkt individueel klein. Gezamenlijk vertegenwoordigen ze het verschil tussen een demo die vrienden imponeert en een product dat echte klanten, echte betalingen en echte kritische blik kan overleven zonder crisis in de eerste maand. De meeste door AI gegenereerde prototypes, hoe visueel gepolijst ook, voldoen standaard slechts aan een handvol van deze items.
+## Waarom Deze Checklist Belangrijker Is Dan Hij Lijkt
 
-[LaunchStudio](https://launchstudio.eu/en/) verifieert alle 25 van deze items als standaardpraktijk bij elke productielancering, gesteund door Manifera's 11+ jaar productie-engineeringdiscipline. In plaats van dat founders gaten ontdekken door vallen en opstaan na lancering, bevestigt het team gereedheid systematisch vooraf.
+Elk van deze 25 punten lijkt afzonderlijk wellicht een detail. Gezamenlijk vormen ze het verschil tussen een demonstratie die indruk maakt op bekenden en een commercieel product dat echte klanten, echte betalingen en kritische audits doorstaat zonder een crisis in de eerste maand. De meeste met AI gegenereerde prototypes voldoen standaard aan slechts een handvol van deze eisen.
 
-[Laat je lanceringsgereedheid beoordelen](https://launchstudio.eu/en/#contact) tegen precies deze checklist voordat je je lanceringsdatum aankondigt.
+[LaunchStudio](https://launchstudio.eu/en/) toetst al deze 25 punten standaard af bij elke productie-oplevering, gesteund door Manifera's 11+ jaar ervaring met enterprise-software. In plaats van dat oprichters hiaten proefondervindelijk ontdekken na de lancering, bevestigt het team de productierijpheid vooraf systematisch.
 
-## De Checklist Afstemmen op Jouw Specifieke Product
+[Laat uw lanceergereedheid beoordelen](https://launchstudio.eu/en/#contact) langs deze exacte 25-punten checklist.
 
-De 25 items hierboven vormen een basislijn die vrijwel elk AI SaaS-product geldt, maar hoe diep de verificatie per categorie daadwerkelijk moet gaan, verschuift aanzienlijk afhankelijk van wat je product raakt en wie het gebruikt. Elk item als even zwaarwegend behandelen ongeacht de context is zelf al een fout — een checklist die mechanisch wordt afgevinkt zonder deze kalibratie kan een vals gevoel van zekerheid opleveren.
+## De Checklist Afstemmen op Uw Specifieke Product
 
-**Wanneer je financiële of medische gegevens verwerkt**, verdienen items 7 (back-upverificatie), 10 (verwijderingsverzoeken) en 16 (btw-/belastingafhandeling) aanmerkelijk meer aandacht dan een algemene productiviteitstool nodig zou hebben — een hersteld back-up dat drie dagen aan financiële transactiedata mist, is een heel andere orde probleem dan drie dagen aan takenlijst-bewerkingen kwijtraken. Dennis's AangifteHulp-casus verderop in dit artikel illustreert precies dit: het dataverwijderingsproces en de tenant-isolatie-items wogen onevenredig zwaar mee omdat het om belastingdocumenten ging.
+De 25 bovenstaande punten vormen een universele basis voor vrijwel elke AI-SaaS, maar de diepgang van de verificatie verschuift afhankelijk van wat uw product verwerkt en wie de eindgebruikers zijn:
 
-**Marktplaats- en meerzijdige producten** — waarbij je AI SaaS twee verschillende gebruikerstypen verbindt, zoals klanten en aanbieders — hebben item 8's tenant-isolatietest nodig over rolgrenzen heen, niet alleen tussen twee accounts met dezelfde rol. Een aanbieder die de privéprijzen van een andere aanbieder ziet, of een klant die de boekingsgeschiedenis van een andere klant ziet, zijn beide precies de fouten die item 8 hoort te vangen — maar een simpele test met twee accounts in een product met één rol legt een lek tussen rollen niet bloot.
+**Bij het verwerken van financiële, fiscale of medische gegevens** verdienen punten 7 (backup-restore verificatie), 10 (data-verwijderingsprocessen) en 16 (btw/factuurafhandeling) aanzienlijk zwaardere toetsing dan bij een simpele productiviteitstool — het herstellen van een backup die drie dagen aan financiële transacties mist is een fundamenteel ander probleem dan het kwijtraken van een to-do lijstje.
 
-**Consumentenproducten met veel aanmeldingen** leggen meer gewicht op item 5 (rate limiting) en item 25 (de volledige aanmeld-tot-betaling-flowtest) dan een B2B-tool met laag volume die aan een handvol enterprise-accounts verkoopt — een door bots aangedreven aanmeldvloed is een realistische dreiging voor een viral consumentenapp op een manier die simpelweg niet geldt voor een niche B2B-tool met een handmatig verkoopproces.
+**Marketplaces en multi-sided platforms** (waarbij uw AI-SaaS twee verschillende typen gebruikers verbindt, zoals leveranciers en consumenten) vereisen dat punt 8 (tenant-isolatie) ook over rol-grenzen heen wordt getoetst. Een leverancier die de privétarieven van een concurrerende leverancier kan inzien is een catastrofaal datalek dat een standaard test met twee gelijke accounts niet altijd blootlegt.
 
-**Gereguleerde sectoren** (zorg, financiële dienstverlening, recht) hebben vaak een aangevulde checklist nodig in plaats van een vervangende. Zaken als audit-trail-logging, dataresidentie-eisen en specifieke toestemmingsflows staan helemaal niet op de generieke lijst van 25 items, omdat ze niet universeel zijn — maar ze worden feitelijk verplicht zodra je product gereguleerde datacategorieën raakt.
+**Consumentenproducten met een hoog registratievolume** leggen extra gewicht op punt 5 (rate limiting tegen bot-aanvallen) en punt 25 (de complete registratie-tot-betalingsflow).
 
-Niets hiervan betekent dat de basislijn van 25 items fout is voor een van deze gevallen — elk item blijft van toepassing. Het betekent dat een founder die aanneemt "ik heb alle 25 gehaald, dus ik ben volledig gedekt" zonder na te denken over welke items het meest tellen voor zijn specifieke product, het risico loopt de items die bij een fout het meeste schade zouden aanrichten te onderverifiëren, terwijl hij te veel gewicht geeft aan items die in zijn context minder uitmaken. Een generieke checklist zonder deze lens uitvoeren is beter dan geen checklist, maar een checklist uitvoeren met oprechte aandacht voor het specifieke risicoprofiel van je product is wat de kostbare verrassing daadwerkelijk voorkomt.
-
-Precies hierom beginnen [LaunchStudio's](https://launchstudio.eu/en/) gereedheidsbeoordelingen met het begrijpen van wat je product daadwerkelijk doet en wie het bedient, in plaats van mechanisch 25 vakjes in dezelfde volgorde af te vinken voor elke founder ongeacht de context.
-
-Voor founders die vooraf een deel van de zelfverificatie willen proberen, zijn een handvol van deze aangepaste prioriteiten testbaar zonder technische expertise. Je product openen in twee verschillende browsers, ingelogd als twee verschillende testaccounts, controleert basale tenant-isolatie (item 8) ongeacht producttype. Het netwerktabblad van je browser openen tijdens aanmelding en normaal gebruik controleert op blootgestelde API-sleutels (item 3). En simpelweg de vraag stellen "wat gebeurt er als 50 mensen zich in het komende uur aanmelden" is een bruikbare gut-check om te bepalen of item 5's rate limiting daadwerkelijk relevant is voor jouw specifieke product, zelfs zonder de test zelf uit te voeren. Dit vervangt geen volledige technische review, maar geeft een founder oprecht inzicht in welke categorieën hierboven het meest tellen voor zijn specifieke product, nog voordat die review begint.
+**Gereguleerde sectoren** (zorg, juridische dienstverlening, fintech) vereisen dat de checklist wordt aangevuld met specifieke audit-trail logging, expliciete toestemmingsstromen en data-residency afspraken.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: acht gaten vinden de avond voor een geplande lancering
+### Een AI-native oprichter in actie: Acht ontbrekende punten ontdekt drie dagen voor livegang
 
-Dennis, een boekhouder met een kleine belastingadviespraktijk in Gorinchem, bouwde AangifteHulp, een AI-tool die kleine ondernemers hielp bij het organiseren van documentatie en het genereren van een gestructureerde samenvatting voor hun kwartaal-belastingaangiften, met Lovable. Dennis had een lanceringsdatum aangekondigd aan zijn professionele netwerk en besloot, drie dagen ervoor, een uitgebreide gereedheidschecklist te doorlopen in plaats van aan te nemen dat alles goed was.
+Dennis, accountant in Gorinchem, bouwde met Lovable AangifteHulp: een AI-tool waarmee mkb-ondernemers documenten en bonnen organiseerden voor hun kwartaalaangifte. Dennis had de lanceerdatum al aangekondigd aan zijn zakelijke netwerk en besloot drie dagen voor livegang de complete 25-punten checklist door te nemen.
 
-Terwijl hij de 25 items zo goed mogelijk zelf doorwerkte, identificeerde Dennis acht items die hij niet zelfverzekerd kon verifiëren: hij wist niet of databaseback-ups waren geconfigureerd, had multi-tenant-isolatie niet getest, had geen rate limiting op inlogpogingen, geen gedefinieerd proces voor verzoeken tot dataverwijdering (een bijzondere zorg gezien de gevoelige belastingdocumentafhandeling), geen kostentracking op AI-gebruik, geen fallback voor uitval bij de AI-provider, geen statuspagina, en had de volledige aanmeldflow niet daadwerkelijk getest zoals een vreemde dat zou doen.
+Bij het langslopen van de lijst ontdekte Dennis acht serieuze hiaten die hij niet kon verifiëren: er waren geen geautomatiseerde database-backups ingesteld, multi-tenancy was niet getest, er was geen rate-limiting op inloggen, geen data-verwijderingsproces (zeer riskant bij gevoelige fiscale documenten), geen kosten-monitoring op AI-aanroepen, geen fallback bij storingen, geen statuspagina en hij had de registratiestraat nog nooit zelf als onbekende bezoeker doorlopen.
 
-Dennis nam contact op met LaunchStudio in een oprechte tijdsklem, drie dagen voor zijn aangekondigde lancering. Het Manifera-team prioriteerde eerst de items met het hoogste risico — databaseback-ups, tenant-isolatie en het dataverwijderingsproces, gezien de gevoeligheid van belastingdocumentdata — en werkte de volledige lijst door binnen het gecomprimeerde tijdsbestek.
+Dennis nam met spoed contact op met LaunchStudio. Het engineeringteam van Manifera pakte direct de meest risicovolle punten aan — database-backups, tenant-isolatie en het AVG-verwijderingsproces — en verifieerde de volledige lijst binnen het krappe tijdslot.
 
-**Resultaat:** AangifteHulp lanceerde op de oorspronkelijk aangekondigde datum met alle 25 checklistitems geverifieerd, in plaats van ofwel de lancering uit te stellen ofwel live te gaan met bekende gaten in een product dat gevoelige financiële documenten voor kleine ondernemers afhandelde.
+**Resultaat:** AangifteHulp lanceerde exact op de geplande datum met alle 25 punten geverifieerd, zónder uitstel en met de zekerheid dat gevoelige financiële documenten veilig waren afgeschermd.
 
-> *"Drie dagen voor lancering dacht ik dat ik gewoon paranoïde was door een checklist te doorlopen. Dat was ik niet — ik vond acht echte gaten, inclusief helemaal geen back-ups. LaunchStudio repareerde alles op tijd, wat aanvoelde als een oprechte redding."*
-> — **Dennis Kramer, Founder, AangifteHulp (Gorinchem)**
+> *"Drie dagen voor livegang dacht ik dat ik overdreven paranoïde was door een checklist te pakken. Dat was ik niet: ik vond acht reële gaten, waaronder nul backups. LaunchStudio heeft alles op tijd gerepareerd, wat voelde als een echte redding."*  
+> — **Dennis Kramer, Oprichter AangifteHulp (Gorinchem)**
 
-**Kosten & tijdlijn:** €2.600 (spoed-pre-lanceringsgereedheidssprint) — voltooid in 3 werkdagen.
+**Kosten & tijdlijn:** €2.600 (spoed pre-launch verificatie en reparatiesprint) — binnen 3 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Kan ik realistisch al deze 25 items zelf verifiëren zonder technische expertise?
+### Kan ik al deze 25 punten realistisch zelfstandig controleren zonder technische kennis?
+Sommige punten (zoals het zelfstandig doorlopen van het registratie- en betaalproces) zijn voor elke oprichter direct toegankelijk. Andere punten (zoals het verifiëren van Row Level Security, backup-restores en webhook-idempotentie) vereisen diepgaande technische verificatie die een professionele audit biedt.
 
-Sommige items (zoals het testen van de aanmeldflow als een vreemde) zijn toegankelijk voor elke founder. Andere (zoals het verifiëren van Row Level Security of back-upherstel) vereisen technische verificatie die de meeste niet-technische founders niet zelfverzekerd alleen kunnen uitvoeren — precies het gat dat een professionele gereedheidsbeoordeling dicht.
+### Hoe urgent is het om elk punt vóór de lancering te herstellen, versus enkele kort erna aanpakken?
+De beveiligings- en datapunten (1 t/m 11) brengen het hoogste risico op ernstige schade met zich mee en moeten zonder uitzondering vóór livegang geverifieerd zijn. Bepaalde monitoring- en supportdetails kunnen indien nodig in de eerste dagen na de lancering worden gefinetuned.
 
-### Hoe urgent is het om elk enkel item vóór lancering te repareren, versus sommige die acceptabel zijn om kort erna aan te pakken?
+### Verschilt deze checklist voor B2B- versus B2C-applicaties?
+De 25 basispunten gelden voor beide. B2B-producten krijgen echter vaak te maken met aanvullende inkoop- en privacy-audits (zoals DPA's en documentatie over dataverwerking), waardoor grondige verificatie bij B2B nog zwaarder weegt.
 
-Beveiligings- en dataitems (1-11) dragen het hoogste risico op ernstige schade als ze worden overgeslagen en moeten zonder uitzondering vóór lancering worden geverifieerd. Sommige monitoring- en supportitems kunnen redelijkerwijs worden afgerond in de dagen direct na lancering, hoewel eerder altijd veiliger is.
+### Kan LaunchStudio een complete verificatie uitvoeren onder hoge tijdsdruk zoals bij Dennis?
+Ja, al vereist een spoedtraject een strikte prioritering van de zwaarste beveiligingsrisico's. Oprichters met een vaste lanceerdatum wordt aangeraden de audit ruim voor de slotfase in te plannen.
 
-### Is deze checklist anders voor een B2B versus B2C AI SaaS-product?
+### Blijft deze checklist na de lancering relevant voor doorontwikkeling?
+Jazeker. Punten zoals backup-restores, data-isolatietests en kostenmonitoring vereisen periodieke her-verificatie naarmate uw product groeit en nieuwe features worden toegevoegd.
 
-De kernitems gelden voor beide, hoewel B2B-producten vaak extra kritische blik ondervinden (zoals behandeld in eerdere AVG-compliance-richtlijnen) rond documentatie van gegevensverwerking die de inkoopprocessen van klanten expliciet kunnen vragen, wat grondige verificatie nog consequenter maakt voor B2B-lanceringen.
-
-### Kan LaunchStudio een volledige gereedheidsbeoordeling voltooien op een gecomprimeerde tijdlijn zoals Dennis's drie dagen?
-
-Ja, hoewel gecomprimeerde tijdlijnen vereisen dat eerst de items met het hoogste risico worden geprioriteerd, zoals gebeurde met AangifteHulp's belastingdocumentafhandeling. Founders met een vaste lanceringsdatum worden sterk aangemoedigd om deze beoordeling ruim vóór de laatste dagen te starten voor het meest grondige resultaat.
-
-### Betekent het één keer voltooien van deze checklist dat ik het nooit meer hoef te herzien naarmate mijn product groeit?
-
-Nee — sommige items (back-upverificatie, tenant-isolatietests, kostenmonitoring) profiteren van periodieke herverificatie naarmate je product evolueert en schaalt, niet slechts een eenmalige pre-lanceringscheck, aangezien nieuwe functies nieuwe gaten kunnen introduceren in eerder geverifieerde gebieden.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kan ik alle 25 punten zelfstandig controleren zonder technische kennis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Functionele flows wel; technische diepgang rondom RLS, database-backups en webhooks vraagt om specialistische verificatie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke punten zijn het meest kritiek bij tijdgebrek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De categorieën Beveiliging en Data (punten 1 t/m 11) zijn absoluut verplicht om datalekken en dataverlies te voorkomen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Geldt deze checklist voor B2B en B2C AI-toepassingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, de 25 fundamentele kwaliteits- en stabiliteitseisen gelden voor alle moderne AI-software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan LaunchStudio een spoed-audit uitvoeren bij een naderende deadline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, LaunchStudio kan met spoed binnen enkele werkdagen de meest risicovolle kwetsbaarheden verhelpen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Blijft deze checklist na de lancering geldig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, periodieke her-verificatie bij nieuwe feature-releases voorkomt dat er sluipenderwijs nieuwe gaten ontstaan."
+      }
+    }
+  ]
+}
+</script>

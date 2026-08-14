@@ -1,16 +1,16 @@
-🚨 Open direct je dev tools en controleer je AI-gegenereerde app. 
+🚨 Open nu uw ontwikkelaarstools (DevTools) en controleer uw met AI gebouwde app. 
 
-Als je frontend directe queries naar Supabase stuurt, zoals `.from('users').select('*')`... dan is je database in wezen openbaar. 🔓
+Als uw frontend rechtstreekse Supabase-queries uitvoert zoals `.from('users').select('*')`... dan is uw database in feite openbaar. 🔓
 
-AI-tools genereren dit patroon omdat het snel is voor prototyping. Maar het is het allergevaarlijkste patroon in het AI-database landschap. Elke tabel die je app raakt, is toegankelijk voor iedereen die de browserconsole opent.
+AI-tools kiezen voor dit patroon omdat het snel is voor prototypes. Maar het is het gevaarlijkste ontwerppatroon in het moderne AI-landschap. Iedere bezoeker kan via de console bij al uw tabellen.
 
-Om te voorkomen dat je data lekt, heb je een 3-Lagen Architectuur nodig:
+Om datalekken te voorkomen heeft u een Drielagige Architectuur nodig:
 1️⃣ Frontend (Client)
-2️⃣ API (Server - controleert auth, ontsmet invoer)
-3️⃣ Database (Opslag - met Row Level Security)
+2️⃣ API (Server - verifieert auth, filtert invoer en kolommen)
+3️⃣ Database (Opslag - met strikte Row Level Security)
 
-RLS alleen is niet genoeg om je bedrijfslogica en data op kolomniveau te beschermen. Je hebt een échte backend nodig.
+Alleen RLS is niet genoeg om uw bedrijfslogica en kolomdata te beschermen. U heeft een echte serverlaag nodig.
 
-Stop ermee je frontend rechtstreeks met je database te laten praten. Leer hier hoe je het oplost: [Link]
+Laat uw frontend niet rechtstreeks met uw database praten. Ontdek hoe u dit professioneel oplost: [Link]
 
-#AIDatabase #SoftwareArchitecture #Supabase #DataSecurity #TechFounders #LaunchStudio
+#AIDatabase #SoftwareArchitectuur #Supabase #DataSecurity #TechFounders #LaunchStudio #PostgreSQL

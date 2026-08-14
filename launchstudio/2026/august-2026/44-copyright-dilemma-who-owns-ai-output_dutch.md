@@ -1,139 +1,136 @@
 ---
-Titel: De Fundamenten van Data Security AI voor Oprichters
-Trefwoorden: Day AI, Copyright, Dilemma, Eigendom, AI, Output
+Titel: "Het AI-Auteursrechtdilemma: Wie Bezit de Gegenereerde AI-Output?"
+Trefwoorden: AI generated application, generative AI, AI en softwareontwikkeling, AI-native, AI SaaS, AI security issues, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# De Fundamenten van Data Security AI voor Oprichters
-Als een zakelijk marketingteam uw SaaS-platform gebruikt om een ​​advertentieafbeelding te genereren en een concurrent die afbeelding downloadt en in zijn eigen campagne gebruikt, kan uw klant hem dan aanklagen wegens inbreuk op het auteursrecht? Anno 2026 blijft het intellectueel eigendomsrecht met betrekking tot generatieve AI een van de meest onbegrepen aspecten van de sector. Oprichters moeten de nuances van ‘menselijk auteurschap’ begrijpen om hun B2B-klanten nauwkeurig te kunnen adviseren.
+# Het AI-Auteursrechtdilemma: Wie Bezit de Gegenereerde AI-Output?
 
-## De vereiste van menselijk auteurschap
+Als een zakelijk marketingteam uw SaaS-platform gebruikt om een advertentiebeeld of tekst te genereren, en een concurrent downloadt dat bestand om het in diens eigen campagne te gebruiken: kan uw klant die concurrent dan aanklagen wegens inbreuk op het auteursrecht? In 2026 blijft het intellectueel eigendomsrecht rondom generatieve AI een van de meest misbegrepen onderwerpen in de softwaresector. Oprichters moeten de vereisten rondom "menselijk makerschap" grondig begrijpen, omdat dit direct bepaalt of zakelijke klanten hun gemaakte creaties daadwerkelijk kunnen beschermen.
 
-De basis van de mondiale auteursrechtwetgeving, vooral zoals gehandhaafd door het United States Copyright Office (USCO), is dat auteursrecht alleen de vruchten van *menselijke* creativiteit beschermt. Een machine kan geen auteur zijn.
+## Het vereiste van menselijk makerschap
 
-Daarom mist een onbewerkt beeld gegenereerd door Midjourney, of een onbewerkte paragraaf gegenereerd door GPT-4o, inherent menselijk auteurschap. Zelfs als de gebruiker een ongelooflijk complexe prompt van 500 woorden typt waarin de exacte belichting, compositie en stijl van de afbeelding wordt beschreven, beschouwt de USCO de prompt als slechts een 'instructie'. Omdat de AI de uiteindelijke creatieve expressie uitvoert, kan er geen auteursrecht op het resulterende onbewerkte bestand rusten. Het komt feitelijk onmiddellijk na het genereren in het publieke domein terecht.
+Het fundament van het internationale auteursrecht (zowel in de Verenigde Staten als binnen de Europese Unie) stelt dat auteursrecht uitsluitend toekomt aan creatieve werken van **menselijke oorsprong**. Een machine of algoritme kan juridisch gezien geen auteur zijn.
 
-## De maas in de wet van 'substantiële wijziging'
+Een onbewerkte afbeelding gegenereerd door Midjourney of DALL-E, of een ruwe alinea geschreven door GPT-4o of Claude, ontbeert per definitie menselijk makerschap. Zelfs als een gebruiker een uiterst complexe prompt van 500 woorden heeft ingevoerd, beschouwen auteursrechtinstanties dit louter als een "instructie aan een uitvoerend instrument" (vergelijkbaar met een briefing aan een schilder). Omdat het algoritme de uiteindelijke creatieve keuzes op pixelniveau bepaalt, valt de ruwe output direct in het publieke domein en kan iedereen deze kopiëren.
 
-Dit betekent niet dat AI nutteloos is voor bedrijfs-IP. De sleutel tot het verkrijgen van auteursrechtelijke bescherming is menselijke modificatie.
+## De 'Substantiële Modificatie' route
 
-Als een ontwerper uw AI-tool gebruikt om een ​​basislandschapsafbeelding te genereren en die afbeelding vervolgens naar Photoshop brengt om handmatig tien andere elementen samen te stellen, de kleurcorrectie aan te passen en nieuwe details aan te brengen, *kan* op het laatste stuk auteursrecht rusten. Het auteursrecht beschermt de creatieve aanpassingen en arrangementen van de mens, zelfs als de onderliggende fundamentele laag door AI is gegenereerd.
+Dit betekent niet dat AI onbruikbaar is voor het opbouwen van intellectueel eigendom. De sleutel tot auteursrechtelijke bescherming ligt in **substantiële menselijke bewerking**.
 
-Uw SaaS moet de nadruk leggen op workflows die AI-output als uitgangspunt (een eerste concept) beschouwen in plaats van als een definitief, beschermbaar product.
+Als een ontwerper een AI-beeld als basis gebruikt en dit vervolgens handmatig in Photoshop combineert met andere grafische elementen, kleurlagen aanpast en handmatige retouches uitvoert, ontstaat er wél auteursrecht — maar uitsluitend op de door de mens toegevoegde creatieve elementen. Dit heet een "dun auteursrecht" (thin copyright): het beschermt de specifieke menselijke compositie, maar niet de onderliggende ruwe AI-basislaag.
 
-## Het gevaar voor kernmerkmiddelen
+## Het gevaar voor primaire merkactiva (Logo's en Merken)
 
-U moet uw zakelijke klanten actief adviseren tegen het gebruik van onbewerkte AI-generatie voor kern-IP. Als een bureau uw AI-logogenerator gebruikt om hun primaire bedrijfslogo te maken en dit niet significant wijzigt, zullen ze waarschijnlijk geen handelsmerk of auteursrecht voor dat logo kunnen registreren.
+Adviseer zakelijke klanten altijd om geen onbewerkte AI-generaties te gebruiken voor fundamentele merkactiva. Als een bedrijf een puur met AI gegenereerd logo zonder menselijke nabewerking gebruikt, kan dit logo doorgaans niet exclusief als merk of auteursrechtelijk werk worden geregistreerd. Concurrenten kunnen dan zonder juridische gevolgen exact dezelfde merkstijl overnemen.
 
-Erger nog, omdat AI-modellen probabilistisch zijn, is het heel goed mogelijk dat een andere startup dezelfde prompt gebruikt, een vrijwel identiek logo genereert en dit legaal gebruikt. In uw Servicevoorwaarden moet duidelijk worden vermeld dat outputs niet noodzakelijkerwijs uniek zijn en dat er geen exclusiviteit kan worden gegarandeerd.
+Omdat taal- en beeldmodellen getraind zijn op gedeelde datasets, kan een concurrent die toevallig een vergelijkbare prompt invoert op hetzelfde model bovendien een nagenoeg identieke slogan of afbeelding genereren. Uw Algemene Voorwaarden moeten expliciet vermelden dat uniekheid en exclusiviteit van AI-outputs niet kunnen worden gegarandeerd.
 
-## De rechtszaken over trainingsgegevens
+## Juridische vrijwaring (Copyright Indemnification)
 
-De tweede helft van het dilemma betreft de trainingsgegevens. De New York Times, Getty Images en talloze auteurs zijn verwikkeld in massale rechtszaken tegen OpenAI en Anthropic, met het argument dat het trainen van LLM's op auteursrechtelijk beschermd werk zonder toestemming een inbreuk is.
+De tweede kant van het dilemma betreft de trainingsdata. Grote mediabedrijven en rechthebbenden voeren wereldwijd rechtszaken tegen partijen zoals OpenAI en Midjourney wegens het ongeoorloofd trainen op auteursrechtelijk beschermd materiaal.
 
-Als de rechtbank uiteindelijk oordeelt dat het trainen van modellen op auteursrechtelijk beschermde gegevens illegaal is, kan dit de commerciële bruikbaarheid van de resultaten van die modellen in gevaar brengen. Om uw zakelijke klanten te beschermen, moet u ervoor zorgen dat uw SaaS gebruikmaakt van Enterprise API's (die vaak worden geleverd met vrijwaringsschermen voor auteursrechten van de providers) in plaats van te vertrouwen op juridisch duistere, open-sourcemodellen die van internet zijn geplukt.
+Om uw zakelijke klanten te beschermen, moet uw applicatie gebruikmaken van zakelijke Enterprise API's (van partijen zoals OpenAI, Microsoft of Google) die contractuele **auteursrechtelijke vrijwaring (Copyright Indemnification)** bieden. Mocht een gegenereerd bestand onverhoopt toch inbreuk maken op andermans werk, dan draagt de modelprovider de juridische verdedigingskosten in plaats van uw startup.
+
+Manifera bouwt en integreert schaalbare enterprise-architecturen en beveiligingslagen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
 
 ## Belangrijkste inzichten
 
-- Ruwe AI-uitvoer (tekst, code of afbeeldingen) kan volgens de huidige Amerikaanse wetgeving niet auteursrechtelijk beschermd worden, omdat er geen sprake is van 'menselijk auteurschap'. Op een machine kan geen auteursrecht rusten.
+- Onbewerkte AI-output (tekst, code, beelden) geniet onder huidig recht geen auteursrechtelijke bescherming wegens het ontbreken van menselijk makerschap.
 
-- Het schrijven van een zeer gedetailleerde tekstprompt wordt juridisch gezien als het geven van instructies, niet als het uitvoeren van een creatief werk, en verleent u dus geen auteursrecht op de onbewerkte AI-uitvoer.
+- Een gedetailleerde prompt geldt juridisch als een instructie en geeft de gebruiker geen automatisch auteursrecht op de gegenereerde ruwe uitkomst.
 
-- Om auteursrechtelijke bescherming te verkrijgen, moet een mens de door AI gegenereerde output substantieel wijzigen, ordenen of samenvoegen tot een groter, origineel creatief werk.
+- Auteursrecht ontstaat pas wanneer een mens de AI-output substantieel bewerkt, herschikt of combineert tot een origineel creatief werk.
 
-- Adviseer B2B-klanten om nooit onbewerkte AI-outputs te gebruiken voor kernintellectueel eigendom (zoals officiële bedrijfslogo's), aangezien deze niet exclusief als handelsmerk kunnen worden beschermd of tegen kopiëren kunnen worden beschermd.
+- Gebruik nooit onbewerkte AI-generaties voor primaire merkidentiteiten (zoals officiële bedrijfslogo's), omdat exclusiviteit niet gehandhaafd kan worden.
 
-- Omdat twee gebruikers identieke uitvoer kunnen genereren met dezelfde prompt, moet in de Servicevoorwaarden van uw software expliciet worden vermeld dat exclusiviteit niet kan worden gegarandeerd.
+- Maak gebruik van zakelijke API-tiers met contractuele 'Copyright Indemnification' om uw startup en enterprise-klanten te vrijwaren van inbreukclaims.
 
-## Navigeer door de juridische dubbelzinnigheid
+## Bouw een juridisch zekere AI-architectuur
 
-Zakelijke kopers zijn doodsbang voor inbreuk op intellectuele eigendomsrechten. **LaunchStudio** bouwt AI-architecturen met behulp van bedrijfsmodellen die beschermingsschermen voor auteursrechten omvatten, waardoor het inkoopproces voor uw B2B-klanten wordt verminderd.
+Wilt u uw enterprise-klanten beschermen tegen intellectuele eigendomsrisico's? **LaunchStudio** bouwt geavanceerde AI-workflows met automatische trademark-scans, versie- en auditlogging en enterprise API-koppelingen met volledige copyright-vrijwaring.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht door **Herre Roelevink**. Herre erkende het tekort aan ervaren ontwikkelaars in Europa en richtte ontwikkelingscentra op in **Singapore** en **Ho Chi Minh City, Vietnam**, om hoog-efficiënt technisch talent te benutten. Geleid door de filosofie van het combineren van ‘Nederlands management met Vietnamees meesterschap’, exploiteert Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland** (aan de Herengracht 420). Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze wereldwijde expertise op het gebied van softwareontwikkeling op bedrijfsniveau, zodat hun prototypes in slechts 1 tot 3 weken veilig, schaalbaar en gereed voor lancering zijn. [Ontvang vandaag nog een gratis offerte](https://launchstudio. eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/portfolio](https://www.manifera.com/portfolio/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Bekijk onze diensten](https://launchstudio.eu/en/#packages) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: het bouwen van handelsmerkcontrole voor een Copywriting SaaS
+### Een AI-native oprichter in actie: merknaamfiltering inbouwen voor een copy-generator
 
-Stella, een schrijver, gebruikte **Cursor** om een kopieergenerator te bouwen. Een zakelijke klant klaagde dat de gegenereerde tekst handelsmerkzinnen van concurrenten bevatte.
+Stella, een tekstschrijver, gebruikte **Cursor** om een AI-copywriting generator te bouwen. Een zakelijke klant klaagde dat gegenereerde teksten beschermde merknamen van concurrenten bevatten, wat leidde tot mogelijke inbreukclaims.
 
-Ze werkte samen met **LaunchStudio (door Manifera)** om een ​​filter voor het matchen van handelsmerken te implementeren dat gegenereerde inhoud scande aan de hand van een database met beschermde termen voordat deze werd weergegeven.
+Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implementeerde een real-time merknaamfilter dat gegenereerde content automatisch toetst aan een database van geregistreerde merknamen voordat de tekst aan de gebruiker wordt getoond.
 
-**Resultaat:** Er werd voldaan aan de wettelijke voorschriften, waardoor de startup werd beschermd tegen risico's van inbreuk op het auteursrecht.
+**Resultaat:** Risicovolle merknamen werden automatisch gefilterd, waardoor het platform voldeed aan de juridische compliance-eisen van grote enterprise-klanten.
 
-**Kosten en tijdlijn:** € 1.900 (integratie van copyrightfilter) — klaar voor productie en geïmplementeerd binnen 5 werkdagen.
-
----
+**Kosten & tijdlijn:** €1.900 (Copyright Filter Integratie) — productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-## Veelgestelde vragen
+### Kan een AI-model juridisch auteursrecht bezitten?
 
-### Kan een AI auteursrecht hebben?
+Nee. Zowel volgens het Europese als het Amerikaanse auteursrecht kan uitsluitend een natuurlijk menselijk persoon auteursrechtelijk beschermde werken creëren. Een algoritme kan geen auteur zijn.
 
-Nee. Volgens de huidige uitspraken van het United States Copyright Office is de auteursrechtelijke bescherming strikt beperkt tot werken die door een mens zijn gemaakt. Algoritmen kunnen geen auteurs zijn.
+### Als ik de prompt schrijf, bezit ik dan het gegenereerde beeld?
 
-### Als ik de prompt schrijf, ben ik dan de eigenaar van de AI-afbeelding?
+Nee, in de regel niet. Het schrijven van een prompt wordt juridisch gezien als het geven van een opdracht, vergelijkbaar met een briefing aan een ontwerper. De ruwe gegenereerde output valt direct in het publieke domein.
 
-Nee. Het typen van een prompt wordt juridisch gezien als het geven van instructies aan een artiest in opdracht. Omdat de AI de daadwerkelijke uiteindelijke visuele uitvoering bepaalt, kan er geen auteursrecht op de onbewerkte afbeelding rusten.
+### Hoe kan ik AI-gegenereerde content wel auteursrechtelijk beschermen?
 
-### Hoe kan ik auteursrecht verkrijgen op een door AI gegenereerd werk?
+Door substantiële menselijke creativiteit toe te voegen: het handmatig bewerken, combineren en herstructureren van de AI-output tot een nieuw, origineel geheel.
 
-Je moet significant 'menselijk auteurschap' toevoegen. Als u een AI-basisafbeelding genereert en deze vervolgens urenlang in Photoshop aanpast, komt de uiteindelijke samengestelde afbeelding mogelijk in aanmerking voor auteursrecht.
+### Wat gebeurt er als twee gebruikers identieke output genereren?
 
-### Wat gebeurt er als twee gebruikers exact dezelfde uitvoer genereren?
+Omdat niemand het exclusieve auteursrecht op de ruwe AI-output bezit, kan de ene gebruiker de andere niet aanklagen wegens auteursrechtinbreuk wanneer toevallig dezelfde tekst of visual is gegenereerd.
 
-Omdat geen van beide gebruikers legaal auteursrecht op de onbewerkte uitvoer kan leggen, kan gebruiker A gebruiker B niet aanklagen wegens inbreuk op het auteursrecht als ze allebei dezelfde AI-paragraaf of afbeelding genereren en gebruiken.
+### Hoe helpt LaunchStudio bij het beperken van IP-risico's?
 
-### Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?
-
-LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt.
+LaunchStudio en Manifera implementeren technische filters (zoals trademark-checking), koppelen officiële enterprise-modellen met contractuele vrijwaring en bouwen versielogging in die menselijke bewerkingen vastlegt.
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema. org",
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Kan een AI auteursrecht hebben?",
+      "name": "Kan een AI-model juridisch auteursrecht bezitten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Volgens de huidige uitspraken van het United States Copyright Office is de auteursrechtelijke bescherming strikt beperkt tot werken die door een mens zijn gemaakt. Algoritmen kunnen geen auteurs zijn."
+        "text": "Nee, auteursrechtelijke bescherming is strikt voorbehouden aan creatieve creaties van menselijke makers."
       }
     },
     {
       "@type": "Question",
-      "name": "Als ik de prompt schrijf, ben ik dan de eigenaar van de AI-afbeelding?",
+      "name": "Als ik de prompt schrijf, bezit ik dan het gegenereerde beeld?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Het typen van een prompt wordt juridisch gezien als het geven van instructies aan een artiest in opdracht. Omdat de AI de daadwerkelijke uiteindelijke visuele uitvoering bepaalt, kan er geen auteursrecht op de onbewerkte afbeelding rusten."
+        "text": "Nee, het invoeren van een prompt geldt als instructie; de ruwe gegenereerde output valt direct in het publieke domein."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe kan ik auteursrecht verkrijgen op een door AI gegenereerd werk?",
+      "name": "Hoe kan ik AI-gegenereerde content wel auteursrechtelijk beschermen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Je moet significant 'menselijk auteurschap' toevoegen. Als u een AI-basisafbeelding genereert en deze vervolgens urenlang in Photoshop aanpast, komt de uiteindelijke samengestelde afbeelding mogelijk in aanmerking voor auteursrecht."
+        "text": "Door substantiële menselijke bewerking en handmatige compositie toe te voegen aan de initiële AI-output."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat gebeurt er als twee gebruikers exact dezelfde uitvoer genereren?",
+      "name": "Wat gebeurt er als twee gebruikers identieke output genereren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat geen van beide gebruikers legaal auteursrecht op de onbewerkte uitvoer kan leggen, kan gebruiker A gebruiker B niet aanklagen wegens inbreuk op het auteursrecht als ze allebei dezelfde AI-paragraaf of afbeelding genereren en gebruiken."
+        "text": "Omdat er geen exclusief auteursrecht op ruwe output rust, kunnen gebruikers elkaar niet aanklagen bij identieke generaties."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe zorgt LaunchStudio ervoor dat mijn applicatie veilig schaalt?",
+      "name": "Hoe helpt LaunchStudio bij het beperken van IP-risico's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio, geëxploiteerd door senior engineers van Manifera (opgericht in 2014), implementeert row-level security, rate-limiting, productie-geheimenbeheer en geautomatiseerde monitoring om te zorgen dat uw app veilig schaalt."
+        "text": "Door inzet van enterprise API's met copyright indemnification, trademark-filters en gedetailleerde versielogging van menselijke bewerkingen."
       }
     }
   ]

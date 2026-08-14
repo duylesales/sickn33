@@ -1,99 +1,165 @@
 ---
-Titel: "Hoe LaunchStudio Je Frontend Intact Houdt: Onze Technische Aanpak"
-Trefwoorden: AI-frontend, AI-websites, AI-native, app bouwen met AI, LaunchStudio, Manifera
+Titel: "Hoe LaunchStudio Uw Frontend Intact Houdt: Onze Technische Aanpak"
+Trefwoorden: ai frontend, ai websites, ai native, build app with ai, LaunchStudio, Manifera
 Koperfase: Beslissing
-Doelgroep: AI-Native Founder (niet-technisch)
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Hoe LaunchStudio Je Frontend Intact Houdt: Onze Technische Aanpak
+# Hoe LaunchStudio Uw Frontend Intact Houdt: Onze Technische Aanpak
 
-"We keep your frontend. We fix only what's necessary." Het is een simpele belofte om te maken en een oprecht specifieke engineeringdiscipline om betrouwbaar te leveren. Veel founders die zijn gebrand door een bureau dat "alles goed wilde herbouwen," zijn begrijpelijkerwijs sceptisch de eerste keer dat ze het horen — dus hier is precies hoe het technisch daadwerkelijk werkt.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hoe LaunchStudio Uw Frontend Intact Houdt: Onze Technische Aanpak",
+  "description": "\"Wij behouden uw frontend\" is makkelijk beloofd en vereist technisch vakmanschap om waar te maken. Ontdek de specifieke aanpak waarmee LaunchStudio backend-infrastructuur toevoegt zonder uw interface te verstoren.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/en/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-12-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/en/blog/how-launchstudio-keeps-frontend-intact-technical-approach"
+  }
+}
+</script>
 
-## Het Kernprincipe: Scheiding van Verantwoordelijkheden
+*"Wij behouden uw frontend. Wij repareren uitsluitend wat strikt noodzakelijk is onder de motorkap."* Het is een eenvoudige belofte om uit te spreken, en een zeer specifieke software-engineering discipline om betrouwbaar waar te maken. Veel oprichters die nare ervaringen hebben met traditionele bureaus die *"eerst even alles opnieuw willen bouwen"* zijn begrijpelijkerwijs sceptisch wanneer ze dit voor het eerst horen. Hier leggen we exact uit hoe dit technisch in zijn werk gaat.
 
-Moderne webapplicaties scheiden natuurlijk in lagen: de frontend (wat gebruikers zien en waarmee ze interageren) en de backend (data, logica en infrastructuur die het aandrijft). Een goed gestructureerde applicatie — inclusief de meeste door Lovable, Bolt en v0 gegenereerde codebases — heeft al een zekere mate van deze scheiding, zelfs als onvolledig geïmplementeerd. LaunchStudio's aanpak werkt met deze natuurlijke grens in plaats van ertegen.
+## Het Kernprincipe: Scheiding van Verantwoordelijkheden (Separation of Concerns)
+
+Moderne webapplicaties splitsen zich van nature in twee lagen: de frontend (wat gebruikers zien en waarmee ze communiceren) en de backend (de data, bedrijfslogica en infrastructuur die het aandrijven). Een goed gestructureerde applicatie — inclusief de meeste door Lovable, Bolt en v0 gegenereerde codebases — bezit al enige mate van deze scheiding, ook al is die soms onvolledig geïmplementeerd. LaunchStudio's aanpak werkt mét deze natuurlijke scheidslijn, en niet ertegenin.
 
 ## Stap voor Stap: Hoe de Frontend Onaangeroerd Blijft
 
-### 1. Frontend-code Wordt Behandeld als een Vaste Beperking, Geen Startpunt voor Herontwerp
-In plaats van je interface te beoordelen op wat een engineer persoonlijk anders zou doen, begint de beoordeling met "dit ontwerp staat vast — wat moet de backend ondersteunen om het correct en veilig te laten werken?"
+### 1. Frontend-Code Wordt Behandeld als een Vaste Randvoorwaarde
+In plaats van uw interface te beoordelen op wat een software-engineer persoonlijk anders zou doen, begint onze analyse bij het uitgangspunt: *"Dit visuele ontwerp staat vast — wat heeft de backend nodig om dit correct, veilig en stabiel te ondersteunen?"*
 
-### 2. API-contracten Worden Behouden of Uitgebreid, Niet Gebroken
-Waar je frontend al specifieke API-endpoints aanroept (zelfs losjes gestructureerde vanuit AI-generatie), behoudt het engineeringwerk die contracten waar mogelijk, of breidt ze additief uit, in plaats van te vereisen dat de frontend wordt herschreven om bij een andere backend-ontwerpfilosofie te passen.
+### 2. API-Contracten Worden Behouden of Uitgebreid, Niet Gebroken
+Waar uw frontend reeds specifieke API-endpoints aanroept (zelfs als deze losjes zijn gestructureerd door een AI-tool), behoudt ons engineeringwerk deze datastructuren waar mogelijk, of breidt ze additief uit, in plaats van te eisen dat de frontend wordt herschreven om aan te sluiten op een andere backend-filosofie.
 
-### 3. Authenticatie en Beveiliging Worden Toegevoegd als een Laag, Geen Herontwerp
-Echte authenticatie toevoegen betekent doorgaans het omhullen van bestaande pagina's met toegangscontrolelogica en het verbinden van bestaande formulieren met een veilige authenticatieprovider — wijzigingen die rond je UI-componenten gebeuren, geen wijzigingen in hoe ze eruitzien of zich gedragen voor een geauthenticeerde gebruiker.
+### 3. Authenticatie en Beveiliging Worden Toegevoegd als een Schil
+Het toevoegen van echte authenticatie betekent in de praktijk het omwikkelen van bestaande pagina's met autorisatielogica en het koppelen van bestaande formulieren aan een beveiligde auth-provider — wijzigingen die plaatsvinden *rondom* uw UI-componenten, zonder dat het uiterlijk of gedrag voor een ingelogde gebruiker verandert.
 
-### 4. Styling en Componentcode Blijven Standaard Onaangeroerd
-Tenzij een specifieke bug bestaat in de frontend-code zelf (wat af en toe voorkomt, zelfs in verder behouden projecten), worden CSS, componentstructuur en visueel ontwerp niet gewijzigd als onderdeel van backend-infrastructuurwerk.
+### 4. Styling en Component-Code Blijven Standaard Onaangeroerd
+Tenzij er een specifieke functionele bug in de frontend-code zelf zit, worden CSS, componentstructuren en het visuele ontwerp niet gewijzigd als onderdeel van de backend-inrichting.
 
-## Wanneer de Frontend Wel Kleine Wijzigingen Nodig Heeft
+## Wanneer Zijn Kleine Frontend-Aanpassingen Wél Nodig?
 
-Complete preservatie is niet altijd letterlijk 100% — af en toe is een oprechte frontend-wijziging vereist, zoals het toevoegen van een laadstatus voor een API-oproep die voorheen instant terugkwam vanuit mock-data, of het aanpassen van een formulier om een echte validatiefout van de backend correct af te handelen. Deze wijzigingen zijn nauw afgebakend, duidelijk gecommuniceerd, en gericht op het daadwerkelijk correct laten functioneren van je bestaande ontwerp onder echte omstandigheden, niet het herontwerpen ervan.
+Volledige preservatie is in de praktijk niet altijd letterlijk 100% — incidenteel is een gerichte, kleine frontend-aanpassing noodzakelijk, zoals het toevoegen van een laadstatus (*loading state*) voor een API-aanroep die voorheen direct nepdata toonde, of het aanpassen van een formulier om een foutmelding van de backend netjes weer te geven. Deze wijzigingen zijn uiterst beperkt in omvang, worden vooraf helder afgestemd en zijn er uitsluitend op gericht om uw bestaande ontwerp onder reële productieomstandigheden vlekkeloos te laten functioneren.
 
-## Waarom Deze Discipline Commercieel Belangrijk Is, Niet Alleen Esthetisch
+## Waarom Deze Discipline Commercieel Belangrijk Is
 
-Je frontend-ontwerp vertegenwoordigt vaak een gevalideerd product-market-fit-signaal — gebruikersfeedback, iteratie en ontwerpbeslissingen die je hebt gemaakt op basis van echt gebruik. Dat gevalideerde werk weggooien om te voldoen aan de stilistische voorkeur van een engineer, vernietigt echte waarde, wat precies het faalpatroon is waar traditionele bureaus vatbaar voor zijn en precies wat [LaunchStudio](https://launchstudio.eu/en/) gestructureerd is om te vermijden.
+Uw frontend-ontwerp vertegenwoordigt vaak gevalideerd bewijs van product-market fit — gebruikersfeedback, iteraties en ontwerpkeuzes die u heeft gemaakt op basis van praktijkervaring. Het weggooien van dat gevalideerde werk om te voldoen aan de stilistische voorkeur van een programmeur vernietigt reële bedrijfswaarde. Dat is exact de valkuil van traditionele bureaus, en exact wat [LaunchStudio](https://launchstudio.eu/en/) voorkomt.
 
-Deze discipline wordt afgedwongen via Manifera's bredere engineeringcultuur — 11+ jaar klantwerk heeft versterkt dat het respecteren van bestaande, gevalideerde ontwerpbeslissingen betere commerciële resultaten oplevert dan het opleggen van de persoonlijke voorkeuren van een engineer aan het product van een founder.
+Deze discipline is verankerd in Manifera's bredere engineeringcultuur: 11+ jaar klantprojecten heeft bewezen dat het respecteren van bestaande, gevalideerde ontwerpkeuzes tot aanzienlijk betere commerciële resultaten leidt dan het opleggen van persoonlijke programmeursvoorkeuren.
 
-[Zie deze aanpak toegepast op jouw specifieke prototype](https://launchstudio.eu/en/#contact) — breng je door AI gegenereerde app mee en zie precies wat wel en niet zou veranderen.
+[Bekijk hoe deze aanpak werkt voor uw prototype](https://launchstudio.eu/en/#contact).
 
-## Onder de Motorkap: De Technische Patronen Die Behoud Mogelijk Maken
+## Onder de Motorkap: De Technische Patronen Die Preservatie Mogelijk Maken
 
-Zeggen "de frontend blijft onaangeroerd" is een belofte; het betrouwbaar waarmaken over tientallen verschillende codebases, gegenereerd door vier verschillende AI-tools, vereist specifieke, herhaalbare engineeringpatronen in plaats van improvisatie per geval.
+Het intact houden van de frontend over tientallen verschillende codebases van verschillende AI-tools vereist herhaalbare engineeringpatronen:
 
-**Een adapterlaag tussen frontend-verwachtingen en backend-realiteit.** De meeste door AI gegenereerde frontends zijn gebouwd tegen mock- of lokaal gesimuleerde data, met aanroepen van functies of endpoints met een specifieke vorm. In plaats van de aanroepen van de frontend te herschrijven om bij de gewenste vorm van een nieuwe backend te passen, wordt aan de backend-kant een adapter- of facadelaag ingevoegd die de bestaande requestvorm van de frontend accepteert en deze intern vertaalt naar wat de echte backend (Supabase, een Postgres-instantie, een externe API) daadwerkelijk nodig heeft — de frontend komt nooit te weten dat de backend is veranderd.
+**Een adapter-laag tussen frontend-verwachtingen en backend-realiteit.** Veel AI-gegenereerde frontends zijn gebouwd tegen mock-data met specifieke JSON-structuren. In plaats van de frontend-aanroepen te herschrijven, plaatsen we aan de backend-zijde een adapter- of facade-laag die de bestaande verzoeken van de frontend accepteert en intern vertaalt naar wat de echte database (Supabase, PostgreSQL) nodig heeft. De frontend merkt niet eens dat de onderliggende backend is vervangen.
 
-**Configuratie-injectie op basis van omgeving, geen hardgecodeerde herschrijvingen.** AI-tools coderen configuratiewaarden — API-URL's, feature flags, mock-vertragingen — vaak hard in de frontend-code. Waar mogelijk worden deze geëxtraheerd naar omgevingsvariabelen die de frontend al leest (of minimaal wordt aangepast om te lezen), zodat het overschakelen van een demo-backend naar een productiebackend een configuratiewijziging is, geen codewijziging.
+**Injectie van omgevingsvariabelen in plaats van hardcoded code.** AI-tools coderen configuratiewaarden (API-URL's, mock-vertragingen) vaak rechtstreeks in de frontend. Wij extraheren deze waarden naar beveiligde environment variables, waardoor de overstap van demo naar productie een configuratiewijziging is en geen code-herschrijving.
 
-**Git branch-isolatie met visuele regressiecontroles.** Infrastructuurwerk gebeurt op branches die frontend-bestanden nooit aanraken, programmatisch geverifieerd — een diff tegen de originele frontend-directory hoort nul onbedoelde wijzigingen te tonen. Voor het samenvoegen vangt een visuele regressiecontrole (screenshotvergelijking tegen de baseline van vóór het werk) elke onbedoelde afwijking op voordat deze wordt uitgeleverd, wat is hoe Yara's opdracht met drie ronden hieronder pixel-voor-pixel kon worden geverifieerd in plaats van te vertrouwen op visueel geheugen alleen.
+**Git branch-isolatie met visuele regressie-checkpoints.** Backend-werk vindt plaats op afgeschermde branches die frontend-bestanden niet aanraken. Vóór het mergen controleert een geautomatiseerde visuele regressietest (screenshot-vergelijking via tools zoals Playwright of Percy) of er geen pixels zijn verschoven ten opzichte van de nulmeting.
 
-**Databaseschema-ontwerp dat bestaande UI-vormen bedient, niet andersom.** In plaats van eerst een databaseschema te ontwerpen en de frontend te vragen zich eraan aan te passen, wordt het schema achterwaarts ontworpen vanuit wat de frontend al verwacht te versturen en te ontvangen — wat betekent dat formuliervelden, lijstweergaven en datastructuren die al in de UI zijn ingebouwd, de schemavorm bepalen.
+**Databaseschema's ontworpen naar de bestaande UI.** In plaats van eerst een database te ontwerpen en de frontend te dwingen zich aan te passen, ontwerpen we de databasetabellen 'terugwaarts' vanuit de velden en datastructuren die reeds in uw gebruikersinterface aanwezig zijn.
 
-**Contracttests als permanent vangnet.** Zodra de adapterlaag aanwezig is, bevestigen geautomatiseerde tests dat de verwachte request- en responsvormen van de frontend voortdurend worden voldaan — waardoor elke toekomstige onbedoelde contractbreuk wordt opgevangen, of die nu voortkomt uit latere eigen wijzigingen van een founder of vervolgengineeringwerk, voordat het productie bereikt.
+**Contract-tests als permanent vangnet.** Zodra de adapter-laag staat, garanderen geautomatiseerde contract-tests dat de verwachte in- en uitvoer van de frontend intact blijft bij toekomstige updates.
 
-Samen zijn deze patronen waarom "we houden je frontend intact" een engineeringdiscipline is met verifieerbare controlepunten — branch-diffs, visuele regressie-screenshots en contracttests — in plaats van een belofte die alleen op goede bedoelingen rust. Manifera's engineeringteams passen dezelfde toolkit toe, of de oorspronkelijke tool nu Lovable, Bolt, v0 of Cursor was, omdat de toolkit opereert op het niveau van het API-contract, dat onder de specifieke outputconventies van elke individuele tool ligt.
-
-In de praktijk wordt deze toolkit geïmplementeerd met gewone, gevestigde tooling in plaats van iets exotisch: Playwright of Percy-achtige screenshotvergelijking voor het visuele regressiecontrolepunt, lichtgewicht consumer-driven contracttests voor de adapterlaag, en standaard beheer van omgevingsvariabelen voor configuratie-injectie. Niets hiervan vereist eigen tooling specifiek voor Manifera — het is een gedisciplineerde toepassing van bestaande, goed begrepen engineeringpraktijk op het specifieke probleem van het behouden van door AI gegenereerde frontends, wat precies is waarom het herhaalbaar is over een breed scala aan binnenkomende codebases, in plaats van af te hangen van het geheugen van één engineer over wat niet aangeraakt mag worden.
-
-Deze toolkit is belangrijker voor door AI gegenereerde frontends dan voor traditioneel handgebouwde, precies omdat AI-tools code produceren zonder de stamkennis die een menselijk team opbouwt over waarom iets op een bepaalde manier is gebouwd. Een traditioneel engineeringteam dat een codebase erft, kan de oorspronkelijke auteur vragen waarvoor een specifiek patroon diende; een founder wiens frontend uit een chatgesprek met een AI-tool kwam, kan die vraag zichzelf vaak niet beantwoorden. De adapterlaag- en contracttestaanpak compenseert die ontbrekende stamkennis door de daadwerkelijke gedragsvereisten van de frontend empirisch verifieerbaar te maken — via screenshots en geslaagde tests — in plaats van van iemand te vereisen dat hij intentie uitlegt die nooit volledig werd verwoord.
+**Waarom dit essentieel is voor AI-code:** AI-tools genereren code zonder de 'tribale kennis' die een menselijk team normaal heeft over waarom een keuze is gemaakt. De adapter-laag en contract-tests vangen dit gebrek aan achtergrondkennis op door de feitelijke gedragseisen empirisch te verifiëren via tests en screenshots, waardoor het proces consistent herhaalbaar is voor code uit Lovable, Bolt, v0 en Cursor.
 
 ## Echt voorbeeld
 
-### Een AI-native founder in actie: een frontend die drie ronden infrastructuurwerk overleefde
+### Een AI-native oprichter in actie: Nul pixels verschoven na drie rondes backend-engineering
 
-Yara, een horeca-consultant in Terneuzen, bouwde GastVrij, een AI-tool die gepersonaliseerde welkomstgidsen voor gasten genereerde voor kleine bed-and-breakfast-eigenaren, met v0 voor een oprecht onderscheidend, warm visueel ontwerp waar ze weken aan had besteed te verfijnen met feedback van zes B&B-eigenaar-bètatesters. Ze was specifiek angstig om dit ontwerp te verliezen toen ze contact opnam met ontwikkelingspartners, nadat ze van een andere founder had gehoord dat een bureau hun interface had "verbeterd" tot iets onherkenbaars en slechters.
+Yara, hospitality-adviseur in Terneuzen, bouwde met v0 GastVrij: een AI-tool die gepersonaliseerde welkomstgidsen genereerde voor eigenaren van bed-and-breakfasts. Ze had weken besteed aan een warme, karakteristieke vormgeving die door zes B&B-eigenaren enthousiast was getest en goedgekeurd.
 
-Yara bracht deze zorg direct in bij LaunchStudio's eerste gesprek, en het Manifera-team liep expliciet de laagscheidingsaanpak door voordat enig werk begon, en liet haar zien welke specifieke bestanden en componenten volledig onaangeroerd zouden blijven. Gedurende het toevoegen van authenticatie, Mollie-facturering en veilige hosting doorliep de opdracht drie ronden infrastructuurtoevoegingen — elk beoordeeld door Yara om te bevestigen dat de visuele ervaring oprecht niet was veranderd.
+Ze was bang haar ontwerp kwijt te raken toen ze op zoek ging naar technische ontwikkelpartners, nadat een bevriende ondernemer haar had verteld dat een bureau zijn interface *"onherkenbaar had verbouwd"*.
 
-**Resultaat:** GastVrij lanceerde met het exacte visuele ontwerp dat Yara's zes bèta-B&B-eigenaren al hadden gevalideerd en geliefd, nu gesteund door echte authenticatie, veilige dataopslag voor gastinformatie, en maandelijkse facturering — waarbij Yara via naast-elkaar-geplaatste screenshots bevestigde dat niet één visueel element was verschoven gedurende het hele proces.
+Yara bracht deze zorg direct in tijdens het eerste gesprek met LaunchStudio. Het team van Manifera liep de bestanden en componenten expliciet door en liet zien welke frontend-bestanden 100% onaangeroerd zouden blijven. Gedurende het toevoegen van authenticatie, Mollie-facturatie en beveiligde cloudhosting werden drie opleverrondes uitgevoerd — waarbij Yara telkens verifieerde dat het visuele ontwerp identiek bleef.
 
-> *"Ik had het horrorverhaal gehoord over een bureau dat iemands ontwerp 'verbeterde' tot iets slechters. LaunchStudio liet me precies zien wat zou veranderen voordat ze iets aanraakten, en toen het klaar was, kon ik oprecht geen enkele pixel vinden die was verschoven."*
-> — **Yara Claassen, Founder, GastVrij (Terneuzen)**
+**Resultaat:** GastVrij lanceerde met exact hetzelfde visuele ontwerp dat haar zes testklanten al kenden en waardeerden, nu ondersteund door veilige data-opslag en automatische incasso's. Yara controleerde de voor-en-na screenshots: **er was letterlijk geen enkele pixel verschoven**.
 
-**Kosten & tijdlijn:** €2.050 (Launch Ready Pakket) — live in 10 werkdagen.
+> *"Ik kende de horrorverhalen over bureaus die ontwerpen 'verbeteren' tot er niets meer van over is. LaunchStudio liet me vooraf zien hoe ze te werk gingen, en na afloop kon ik werkelijk geen enkele verschoven pixel vinden."*  
+> — **Yara Claassen, Oprichter GastVrij (Terneuzen)**
+
+**Kosten & tijdlijn:** €2.050 (Launch Ready Pakket) — binnen 10 werkdagen live opgeleverd.
 
 ---
 
 ## Veelgestelde vragen
 
-### Betekent "de frontend intact houden" dat LaunchStudio helemaal nooit frontend-code aanraakt?
+### Betekent 'de frontend intact houden' dat LaunchStudio nooit enige frontend-code aanraakt?
+In het overgrote deel van de gevallen blijft het visuele ontwerp en de componentstructuur 100% onaangeroerd. Waar nodig voegen we uitsluitend functionele statusindicatoren toe (zoals een laadicoontje of formulierfoutmelding), wat altijd vooraf helder wordt afgestemd.
 
-In de grote meerderheid van de gevallen, ja voor visueel ontwerp en componentstructuur. Nauw afgebakende functionele wijzigingen (zoals het toevoegen van een laadstatus voor een nieuw-echte API-oproep) komen af en toe voor, maar deze worden duidelijk gecommuniceerd en zijn gericht op correctheid, nooit herontwerp.
+### Hoe kan ik vooraf controleren of mijn specifieke ontwerp bewaard blijft?
+Vraag tijdens ons intakegesprek om een technische toelichting. Wij laten u exact zien welke backend-adapters worden gebouwd en welke frontend-mappen vergrendeld blijven.
 
-### Hoe kan ik vooraf verifiëren dat mijn specifieke ontwerp daadwerkelijk behouden zal blijven?
+### Wat gebeurt er als er een echte bug in mijn eigen frontend-code zit?
+Als we tijdens het werk een functionele bug in de interface tegenkomen, signaleren we dit direct en stemmen we de oplossing met u af vóórdat er iets wordt gewijzigd. We passen nooit eenzijdig code aan.
 
-Vraag om precies dit soort doorloop tijdens je eerste gesprek — een specifieke, technische uitleg van wat wel en niet zou veranderen voor jouw specifieke codebase, zoals Yara vroeg. Een team dat zelfverzekerd is in deze discipline, zal het concreet demonstreren in plaats van vage geruststelling te bieden.
+### Werkt deze methode voor zowel Lovable, Bolt als v0-gegenereerde interfaces?
+Ja. Het principe — het behandelen van gevalideerd frontend-werk als een vaste randvoorwaarde voor de backend — geldt voor alle AI-prototypetools, omdat onze adapter-architectuur opereert op het niveau van API-contracten.
 
-### Wat gebeurt er als mijn frontend-code zelf een oprechte bug heeft die niet gerelateerd is aan backend-infrastructuur?
+### Is er ooit een situatie waarin LaunchStudio frontend-wijzigingen adviseert?
+Zelden, en uitsluitend als aanbeveling in direct overleg met de oprichter — bijvoorbeeld wanneer een specifiek interactiepatroon een reëel beveiligings- of gebruiksvriendelijkheidsprobleem veroorzaakt. De uiteindelijke beslissing ligt altijd bij u.
 
-Als een echte frontend-bug wordt ontdekt tijdens de opdracht, wordt het gesignaleerd en direct met jou besproken voordat enige wijziging wordt gemaakt — nooit eenzijdig gerepareerd zonder communicatie, aangezien zelfs een "bugfix" gedrag verandert dat je mogelijk bewust zo had ontworpen.
-
-### Geldt deze frontendbehoudsaanpak evenzeer voor door Lovable, Bolt en v0 gegenereerde interfaces?
-
-Ja, het onderliggende principe — gevalideerd frontend-werk behandelen als een vaste beperking voor backend-engineering — geldt ongeacht welke AI-tool de originele interface genereerde, hoewel de specifieke technische implementatiedetails licht variëren op basis van de outputpatronen van elke tool.
-
-### Is er ooit een legitiem geval waarin LaunchStudio frontend-wijzigingen zou aanbevelen?
-
-Zelden, en alleen wanneer expliciet besproken en overeengekomen met de founder — bijvoorbeeld als een specifiek interactiepatroon een oprecht beveiligings- of bruikbaarheidsprobleem creëert waarvan de founder zich niet bewust was. Dit blijft de beslissing van de founder, gepresenteerd als een aanbeveling, nooit als een ongevraagde eenzijdige wijziging.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Raakt LaunchStudio echt geen frontend-code aan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Styling en componenten blijven onaangeroerd; we voegen uitsluitend noodzakelijke functionele laad- en foutmeldingen toe na overleg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe kan ik vooraf controleren of mijn ontwerp bewaard blijft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tijdens de intake lopen we uw mappenstructuur door en bepalen we exact welke bestanden vergrendeld blijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat gebeurt er bij een bug in de frontend-code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eventuele frontend-bugs worden direct gesignaleerd en met u afgestemd, nooit eigenmachtig gewijzigd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werkt dit voor Lovable, Bolt en v0?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, onze adapter-architectuur sluit naadloos aan op elke AI-gegenereerde frontend-interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Adviseert LaunchStudio ooit frontend-wijzigingen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zelden, en uitsluitend als suggestie bij concrete beveiligings- of usability-problemen, altijd ter beoordeling van de oprichter."
+      }
+    }
+  ]
+}
+</script>
