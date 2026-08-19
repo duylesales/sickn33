@@ -1,103 +1,97 @@
 ---
-Titel: "PostgreSQL Optimaliseren voor Vector Search met pgvector"
-Trefwoorden: AI database, AI code ontwikkeling, AI SaaS, AI-native, AI app bouwen, AI deployment, AI software engineering, LaunchStudio, Manifera
+Titel: "Postgres Optimaliseren voor Vector Search met AI-Codeerhulp"
+Trefwoorden: AI database, AI code development, AI SaaS, AI-native, build AI app, AI deployment, AI software engineering, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# PostgreSQL Optimaliseren voor Vector Search met pgvector
+# Postgres Optimaliseren voor Vector Search met AI-Codeerhulp
 
-Tijdens de eerste hausse van generatieve AI was de heersende opvatting dat elke startup die een RAG-pijplijn (Retrieval-Augmented Generation) bouwde, een dure, gespecialiseerde vectordatabase zoals Pinecone of Weaviate nodig had. Inmiddels realiseert de software-industrie zich dat het onderhouden van twee afzonderlijke databases leidt tot een architecturale nachtmerrie van synchronisatiefouten. Voor 95% van de B2B SaaS-applicaties is de meest betrouwbare en veilige vectordatabase de database die u al heeft: **PostgreSQL**.
+Tijdens de eerste piek van de Generatieve AI-hype was het heersende dogma dat elke startup met een RAG-pijplijn (Retrieval-Augmented Generation) een dure, externe vector database nodig had, zoals Pinecone of Weaviate. In 2026 realiseert de software-industrie zich dat het gelijktijdig beheren van twee gescheiden databases leidt tot een architectonische nachtmerrie vol synchronisatiefouten. Voor 95% van de B2B SaaS-toepassingen is de allerbeste vector database de database die u al heeft: **PostgreSQL**.
 
-## De Synchronisatienachtmerrie van Gescheiden Databases
+## De Synchronisatie-Nachtmerrie
 
-Wanneer u een standalone vectordatabase gebruikt, raakt uw systeemarchitectuur versnipperd: gebruikersprofielen, facturatie en documentmetadata staan in uw primaire PostgreSQL-database, terwijl de wiskundige vector-embeddings van diezelfde documenten opgeslagen zijn in een externe vectorstore.
+Wanneer u een externe vector database gebruikt, is uw software-architectuur gesplitst. U bewaart gebruikersprofielen, facturatiegegevens en documentmetadata in uw primaire PostgreSQL-database, terwijl u de eigenlijke vector-embeddings van die documenten opslaat in een extern systeem zoals Pinecone of Weaviate.
 
-Wat gebeurt er als een gebruiker een document verwijdert? Uw backend moet een SQL-query uitvoeren om de rij in PostgreSQL te verwijderen en daarnaast een afzonderlijke API-aanroep doen naar de externe vectorstore. Als die tweede API-aanroep faalt door een netwerktimeout of rate-limit, ontstaat er een "verweesde vector" (orphaned vector). Uw AI blijft daardoor antwoorden genereren op basis van documenten die de gebruiker gewist waant. In een zakelijke B2B-context is dit niet zomaar een programmeerfout, maar een directe overtreding van het AVG/GDPR-vergeetrecht (Artikel 17). Het consolideren van uw architectuur in PostgreSQL elimineert dit risico op transactieniveau: één enkele `DELETE`-opdracht binnen een ACID-transactie verwijdert de metadata en de bijbehorende vector tegelijkertijd en onomkeerbaar.
+Wat gebeurt er wanneer een gebruiker een document verwijdert? U moet een SQL-query uitvoeren om het record in Postgres te wissen, en een afzonderlijke API-aanroep doen om de vector in de externe database te verwijderen. Als die tweede API-aanroep faalt — door een netwerk-timeout, rate limit of een deployment midden in het verzoek — ontstaat een "verweesde vector" (orphaned vector). Uw AI blijft vrolijk antwoorden genereren op basis van documenten die de gebruiker veronderstelt definitief te hebben gewist. In een zakelijke B2B-context is dit geen klein foutje; het is een directe schending van Artikel 17 AVG (het recht op gegevenswissing) met ernstige juridische risico's. Door uw data te centraliseren in PostgreSQL elimineert u dit risico op transactieniveau: één `DELETE`-opdracht binnen één ACID-transactie wist het document én de vector atomair tegelijkertijd.
 
-## De Kracht van pgvector
+## Maak Kennis met pgvector
 
-**pgvector** is een open-source PostgreSQL-extensie die een native `vector` kolomtype toevoegt, inclusief afstandsoperatoren voor L2 (`<->`), cosinus (`<=>`) en inproduct (`<#>`). Uw AI-embeddings en relationele bedrijfsdata leven in exact dezelfde tabel en kunnen via één SQL-query worden opgevraagd.
+**pgvector** is een open-source PostgreSQL-extensie (versie 0.7+) die een native `vector`-kolomtype toevoegt en het opslaan van embeddings direct naast uw relationele tabellen ondersteunt, inclusief afstandsoperatoren voor L2 (`<->`), cosinus (`<=>`) en inproduct (`<#>`). Uw AI-data en uw relationele bedrijfsdata leven in exact dezelfde tabel en zijn opvraagbaar via één enkele `SELECT`-query.
 
-Dankzij decennia aan betrouwbaarheid in de transactionele logging van PostgreSQL garandeert de database-engine zelf absolute data-integriteit, zonder dat u complexe synchronisatielogica in uw applicatiecode hoeft te schrijven.
+Wanneer een gebruiker een record verwijdert, zorgt een standaard SQL `CASCADE DELETE` ervoor dat zowel de metadata als de vector-embedding gelijktijdig worden gewist. Absolute data-integriteit wordt direct gegarandeerd door de database-engine zelf, voortbouwend op decennia aan beproefde Postgres-transactielogica.
 
-## De Sleutel tot Snelheid: HNSW Indexering
+## Het Geheim van Snelheid: HNSW-Indexering
 
-Het voornaamste punt van kritiek op pgvector in de beginjaren was de zoeksnelheid. Bij een tabel met 1 miljoen rijen zonder index voert PostgreSQL een sequentiële scan uit (Exact Nearest Neighbor). De server berekent de afstand voor elke afzonderlijke rij, wat seconden duurt en de gebruikerservaring ondermijnt.
+De voornaamste kritiek op pgvector in de beginfase betrof de zoekprestaties. Heeft u een tabel met 1 miljoen rijen en voert u een vectorzoekopdracht uit zonder index, dan voert Postgres een sequentiële "Exact Nearest Neighbor" scan uit. De database berekent de afstandswiskunde voor elke afzonderlijke rij, wat seconden duurt en de gebruikerservaring volledig ruïneert.
 
-Om PostgreSQL te optimaliseren voor vectorzoekopdrachten, implementeert u een **HNSW-index (Hierarchical Navigable Small World)**. HNSW organiseert uw vectoren in een meerlagige graaf: de bovenste lagen bevatten lange-afstandsverbindingen voor snelle navigatie, terwijl de onderste laag fijnmazige verbindingen bevat voor maximale precisie. In plaats van alle rijen te scannen, navigeert PostgreSQL razendsnel door de graaf om binnen milliseconden de dichtstbijzijnde buren te vinden. Een goed geconfigureerde HNSW-index transformeert een trage zoekopdracht van 3 seconden naar minder dan 30 milliseconden.
+Om Postgres te optimaliseren voor productiesnelheid, moet u een **HNSW (Hierarchical Navigable Small World) Index** implementeren — die in pgvector de oudere IVFFlat-index heeft vervangen als de industriestandaard. HNSW organiseert uw vectoren in een gelaagde graafstructuur met langeafstandsverbindingen in de toplaag voor snelle navigatie en dichte clusters in de onderlaag voor precisie. In plaats van elke rij te scannen, navigeert Postgres binnen milliseconden door de graaf naar de meest overeenkomstige vectoren. Het aanmaken van een HNSW-index op uw pgvector-kolom is het verschil tussen een trage query van 3 seconden en een bliksemsnelle query van 30 milliseconden.
 
-Drie parameters zijn hierbij bepalend:
-- `m`: het aantal verbindingen per graafknooppunt (standaard 16).
-- `ef_construction`: de zoekdiepte tijdens het opbouwen van de index (doorgaans 64 tot 200).
-- `hnsw.ef_search`: de query-tijd parameter die de balans bepaalt tussen precisie en latentie.
+Drie parameters bepalen de prestaties: `m` (aantal verbindingen per node, doorgaans 16), `ef_construction` (zoekdiepte tijdens indexopbouw, meestal 64-200) en `hnsw.ef_search` (zoekdiepte tijdens runtime query's). Een onjuiste afstemming van deze parameters is de voornaamste reden waarom ontwikkelaars soms onterecht klagen dat pgvector te traag zou zijn.
 
-## Relationele Pre-Filtering en Row-Level Security (RLS)
+## De Kracht van Relationele Filtering (Pre-Filtering)
 
-Het grootste voordeel van pgvector is de mogelijkheid om standaard SQL-filtering (**Pre-Filtering**) te combineren met vector-overeenkomsten.
+Het grootste voordeel van pgvector is de mogelijkheid om standaard SQL-filters (Pre-Filtering) naadloos te combineren met vector-zoekopdrachten.
 
-Wanneer een zakelijke klant uw AI raadpleegt, moet strikt worden voorkomen dat data van andere bedrijven wordt opgehaald. Met pgvector dwingt u cryptografisch veilige tenant-isolatie direct af in SQL door een `WHERE tenant_id = $1` clausule te combineren met de vectoroperator, bekrachtigd door PostgreSQL Row-Level Security (RLS). De database filtert miljoenen rijen van andere organisaties eerst weg via een snelle B-tree index op `tenant_id`, en voert het zwaardere vectorrekenwerk uitsluitend uit over de relevante subset data. Aangezien 45% van de AI-gegenereerde code beveiligingsfouten bevat, is RLS op databaseniveau een van de meest effectieve waarborgen tegen datalekken tussen zakelijke klanten.
+Wanneer een zakelijke gebruiker een zoekvraag stelt aan uw AI, moet u 100% kunnen garanderen dat hij nooit documenten van een concurrerend bedrijf te zien krijgt. Met pgvector dwingt u cryptografisch veilige tenant-isolatie direct af in SQL via een `WHERE tenant_id = $1` clausule gecombineerd met de vector-operator in dezelfde query, versterkt door PostgreSQL Row-Level Security (RLS):
 
-## Wanneer is pgvector Niet Meer Toereikend?
+De database filtert met een standaard B-tree index op `tenant_id` eerst miljoenen rijen van andere organisaties weg, en voert de zware vectorberekening uitsluitend uit over de specifieke documenten van de eigen organisatie. Dit is vele malen veiliger en performanter dan het handmatig doorgeven van metadatafilters aan externe vector-API's. Aangezien circa 45% van de AI-gegenereerde code beveiligingsfouten bevat, is RLS-gebaseerde tenant-isolatie op databaseniveau een van de meest essentiële maatregelen.
 
-Voor datasets tot circa 5 à 10 miljoen vectoren presteert pgvector met HNSW buitengewoon snel en stabiel. Pas wanneer u honderden miljoenen vectoren verwerkt met duizenden gelijktijdige queries per seconde bij sub-10ms vereisten, weegt de operationele complexiteit van een gespecialiseerd vectorcluster (zoals Weaviate of Milvus) op tegen de nadelen van een gescheiden architectuur.
+## Wanneer pgvector Niet Meer Voldoet
 
-Herre Roelevink, oprichter en Managing Director van Manifera, legt uit: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera ontwerpt sinds **2014** betrouwbare database-architecturen voor internationale ondernemingen.
+pgvector kent zijn grenzen, en het is cruciaal te weten waar het omslagpunt ligt. Passeert uw database de grens van 5 tot 10 miljoen vectoren, vereist u een p99-latentie onder de 10ms bij duizenden gelijktijdige query's per seconde, of moeten embeddings continu in realtime worden bijgewerkt zonder index-rebuilds, dan pas wegen de operationele kosten van dedicated vector databases zoals Weaviate of Milvus op tegen de complexiteit. De juiste volgorde voor B2B-startups is: start op pgvector wegens de foutloze dataintegriteit, en migreer pas wanneer er meetbaar bewijs is dat de database de bottleneck vormt.
 
-## Belangrijkste inzichten
+Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft dit als volgt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera lost dit type database-architectuurproblemen al op sinds de oprichting in **2014**, met engineeringteams in **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
-- Het onderhouden van een losse vectordatabase naast uw primaire SQL-database veroorzaakt synchronisatiefouten, verweesde vectoren en potentiële AVG/GDPR-inbreuken.
+## Belangrijkste Inzichten
 
-- Met de open-source extensie 'pgvector' functioneert PostgreSQL als een volwaardige, ACID-conforme vectordatabase voor 95% van de B2B AI-toepassingen.
+- Het beheren van een afzonderlijke externe vector database naast uw primaire SQL-database veroorzaakt synchronisatiefouten, verweesde vectoren en potentiële AVG-inbreuken.
+- Voor het overgrote deel van B2B AI-startups biedt de open-source extensie 'pgvector' in PostgreSQL een volwaardige, ACID-conforme vector database.
+- Het opslaan van vectoren en relationele metadata in dezelfde Postgres-tabel garandeert data-integriteit; bij het verwijderen van een rij wordt de vector automatisch atomair mee gewist.
+- Bouw een HNSW-index (met afstemming van `m`, `ef_construction` en `ef_search`) op uw vector-kolom om zoekquery's te versnellen van seconden naar milliseconden.
+- Combineer relationele Pre-Filtering via SQL `WHERE`-clausules met Row-Level Security (RLS) voor waterdichte multi-tenant isolatie.
+- Evalueer een overstap naar gespecialiseerde vector databases pas zodra u meer dan 5 tot 10 miljoen vectoren bij extreme queryvolumes moet verwerken.
 
-- Het opslaan van vectoren en relationele metadata in dezelfde PostgreSQL-tabel garandeert data-integriteit; bij verwijdering van een record verdwijnt de vector direct en atomair.
+## Vereenvoudig Uw AI-Database Architectuur
 
-- HNSW-indexering transformeert vectorzoekopdrachten van trage sequentiële scans (3 seconden) naar razendsnelle graafnavigatie (minder dan 30 ms).
+Zorgen losstaande vector databases voor synchronisatiefouten en onnodig hoge AWS-facturen? **LaunchStudio** ondersteunt founders bij het consolideren van hun RAG-architectuur via geoptimaliseerde, HNSW-geïndexeerde pgvector-pijplijnen direct binnen PostgreSQL. Bereken uw project via de [LaunchStudio prijscalculator](https://launchstudio.eu/en/#calculator) of bekijk onze [dienstenpakketten](https://launchstudio.eu/en/#packages).
 
-- PostgreSQL blinkt uit in Pre-Filtering in combinatie met Row-Level Security (RLS), waarmee multi-tenant data-isolatie op betrouwbare wijze op databaseniveau wordt afgedwongen.
-
-- Evalueer een overstap naar gespecialiseerde vectorclusters pas wanneer uw dataset de grens van 5 tot 10 miljoen embeddings overschrijdt.
-
-## Vereenvoudig uw AI-database-architectuur
-
-Veroorzaken losse vectordatabases synchronisatieproblemen of onnodig hoge hostingkosten? **LaunchStudio** ondersteunt founders bij het consolideren van hun RAG-architectuur door het implementeren van geoptimaliseerde, HNSW-geïndexeerde pgvector-pipelines binnen PostgreSQL. Bereken de kosten met onze [prijscalculator](https://launchstudio.eu/en/#calculator) of bekijk onze [diensten](https://launchstudio.eu/en/#packages).
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM Singapore 079027) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10, Tan Son Hoa Ward). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde maatwerkprojecten voor toonaangevende organisaties zoals Vodafone en CFLW helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact). Bekijk ook Manifera's [maatwerk softwareontwikkeling diensten](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Vectorzoek-indexen optimaliseren voor een juridisch documentenportaal
+### Een AI-Native Oprichter in Actie: Vector-Zoekindexen Optimaliseren voor een Juridisch Documentenportaal
 
-Noah, een legal-tech founder, gebruikte **Cursor** om een AI-contractzoeker te bouwen. De vectorzoekopdrachten in Supabase liepen op tot meer dan 5 seconden naarmate de database groeide naar 50.000 documentfragmenten.
+Noah, oprichter van een legal-tech platform, gebruikte **Cursor** om een AI-contractzoeker te bouwen. De vectorzoekopdrachten in Supabase liepen op tot meer dan 5 seconden naarmate de database groeide naar 50.000 documentfragmenten.
 
-Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam configureerde een op maat gemaakte HNSW-index op de vectorkolommen en optimaliseerde de zoekquery-parameters van pgvector.
+Hij schakelde **LaunchStudio (door Manifera)** in om een maatwerk HNSW-index aan te leggen op de vector-kolommen en de parameters van de pgvector-zoekquery's fijnmazig te kalibreren.
 
-**Resultaat:** De querylatentie daalde van ruim 5 seconden naar minder dan 120 milliseconden, waardoor advocatenkantoren weer direct interactief kunnen zoeken.
+**Resultaat:** De latentie van zoekquery's daalde naar minder dan 120 milliseconden, waardoor de zoekfunctie weer direct en soepel reageerde voor advocatenkantoren.
 
-**Kosten & tijdlijn:** €1.850 (Vector Index Optimization Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.850 (Vector Index Optimalisatie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Wat is pgvector?
+### Wat is pgvector precies?
 
-Een open-source extensie voor PostgreSQL die een native vectorkolomtype, afstandsoperatoren en HNSW-indexen toevoegt aan standaard PostgreSQL.
+Een open-source PostgreSQL-extensie die een native vector-datatype, wiskundige afstandsoperatoren en HNSW/IVFFlat-indexen toevoegt aan standaard Postgres.
 
-### Waarom is PostgreSQL met pgvector veiliger dan een losse vectordatabase?
+### Waarom kiezen voor Postgres in plaats van Pinecone of Weaviate?
 
-Omdat relationele gegevens en vector-embeddings in dezelfde tabel leven en atomair worden bijgewerkt of verwijderd binnen één ACID-transactie, wat data-inconsistenties voorkomt.
+Voor maximale eenvoud en data-integriteit. Het voorkomt verweesde vectoren doordat relationele data en AI-embeddings in dezelfde tabel leven en atomair beheerd worden via één ACID-transactie met Row-Level Security.
 
-### Hoe groot mag een dataset zijn voor pgvector?
+### Schaalt pgvector goed voor grote datasets?
 
-Voor datasets tot circa 5 à 10 miljoen vectoren levert pgvector met een HNSW-index uitstekende prestaties met responstijden onder de 50 ms.
+Ja, voor datasets tot circa 5 à 10 miljoen vectoren levert pgvector met een HNSW-index uitstekende prestaties binnen tientallen milliseconden. Pas bij honderden miljoenen vectoren of extreme QPS-eisen wordt een dedicated engine noodzakelijk.
 
-### Wat doet een HNSW-index?
+### Wat is een HNSW-index?
 
-HNSW structureert vectoren in een meerlagige graafstructuur, waardoor PostgreSQL binnen milliseconden benaderende buren vindt in plaats van de complete tabel sequentieel te doorzoeken.
+Een geavanceerd algoritme dat vectoren structureert in een hiërarchische graaf, waardoor Postgres de meest overeenkomstige resultaten in milliseconden vindt in plaats van de hele tabel sequentieel te doorzoeken.
 
-### Hoe helpt LaunchStudio bij het optimaliseren van pgvector?
+### Hoe adviseert LaunchStudio over de databasekeuze?
 
-LaunchStudio en Manifera richten HNSW-indexen, multi-tenant Row-Level Security policies en geoptimaliseerde SQL-queries in voor schaalbare en AVG-conforme RAG-toepassingen.
+LaunchStudio en Manifera (opgericht in 2014) benchmarken uw feitelijke datavolume, queryfrequentie en updatepatronen. Wij adviseren vrijwel altijd te starten met pgvector wegens de beheersbaarheid en pas te migreren naar zwaardere vector-engines wanneer meetbare benchmarks dat vereisen.
 
 <script type="application/ld+json">
 {
@@ -106,42 +100,42 @@ LaunchStudio en Manifera richten HNSW-indexen, multi-tenant Row-Level Security p
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is pgvector?",
+      "name": "Wat is pgvector precies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een open-source extensie die PostgreSQL uitbreidt met native vectortypen, afstandsoperatoren en krachtige HNSW-indexen voor AI-toepassingen."
+        "text": "Een open-source PostgreSQL-extensie die vector-datatypes, afstandsoperatoren en HNSW-indexen toevoegt aan Postgres."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom is PostgreSQL met pgvector veiliger dan een losse vectordatabase?",
+      "name": "Waarom kiezen voor Postgres in plaats van Pinecone of Weaviate?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat relationele data en embeddings in dezelfde tabel staan en atomair worden verwijderd in één ACID-transactie, wat AVG-schendingen voorkomt."
+        "text": "Voor gegarandeerde data-integriteit: embeddings en relationele records worden atomair gewist via één ACID-transactie."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe groot mag een dataset zijn voor pgvector?",
+      "name": "Schaalt pgvector goed voor grote datasets?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "pgvector schaalt probleemloos tot 5 à 10 miljoen vectoren met milliseconden-responstijden mits correct voorzien van een HNSW-index."
+        "text": "Tot 5-10 miljoen vectoren presteert pgvector met HNSW uitstekend met zoekresponstijden van enkele tientallen milliseconden."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat doet een HNSW-index?",
+      "name": "Wat is een HNSW-index?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het bouwt een meerlagige graafstructuur op waarmee de database binnen milliseconden de meest relevante vectoren vindt zonder sequentiële scans."
+        "text": "Een hiërarchische graaf-index die vector-zoekopdrachten versnelt van trage tabelscans naar milliseconden-navigatie."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe helpt LaunchStudio bij het optimaliseren van pgvector?",
+      "name": "Hoe adviseert LaunchStudio over de databasekeuze?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door HNSW-indexen in te richten, queryparameters te tunen en strikte Row-Level Security policies op te zetten voor multi-tenant databeveiliging."
+        "text": "LaunchStudio adviseert te starten met geoptimaliseerd pgvector en pas te migreren bij extreme enterprise-schaal via Manifera."
       }
     }
   ]

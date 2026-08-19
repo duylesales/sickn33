@@ -1,101 +1,101 @@
 ---
-Titel: Koude E-mail Acquisitie voor B2B SaaS in het AI-Tijdperk
+Titel: "Koude E-mail Outbound voor B2B SaaS in het AI-Tijdperk"
 Trefwoorden: AI SaaS, SaaS AI, app bouwen met AI, AI prototype, AI-native, AI coding, AI for coding, AI deployment, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Koude E-mail Acquisitie voor B2B SaaS in het AI-Tijdperk
+# Koude E-mail Outbound voor B2B SaaS in het AI-Tijdperk
 
-Generatieve AI heeft traditionele uitgaande verkoop (outbound sales) fundamenteel veranderd. Omdat vrijwel elke junior verkoper nu met ChatGPT dagelijks 10.000 generieke e-mails kan versturen, lopen de inboxen van zakelijke beslissers over van AI-gegenereerde ruis. Als reactie hierop hebben Google en Microsoft hun spamfilters drastisch aangescherpt. Wie meer dan 0,3% spammeldingen genereert, ziet diens verzenddomein binnen no-time geblokkeerd worden. Om in 2026 succesvol te zijn met B2B SaaS cold e-mail, moet u AI niet inzetten om *meer* e-mails te sturen, maar om *beter onderbouwde* e-mails te versturen, ondersteund door waterdichte e-mailinfrastructuur.
+Generatieve AI heeft traditionele uitgaande sales fundamenteel ontwricht. Omdat elke beginnende accountmanager nu met ChatGPT 10.000 generieke e-mails per dag kan uitsturen, stromen de inboxen van zakelijke beslissers over van AI-gegenereerde ruis. Als reactie hebben Google en Microsoft hun spamfilters drastisch aangescherpt: Gmail's Postmaster Tools dwingt een spam-klachtenplafond van 0,3% af, waarboven uw complete verzenddomein direct wordt geknepen of geblokkeerd. Om in 2026 succesvol te zijn met B2B cold email, moet u AI niet inzetten om *meer* e-mails te sturen, maar om *beter onderzochte* e-mails te sturen, ondersteund door een robuuste technische infrastructuur.
 
-## Het einde van 'Hagelschieten' (Spray and Pray)
+## Het Einde van 'Hagel Schieten' (Spray and Pray)
 
-Het oude speelboek was eenvoudig: scrape duizenden e-mailadressen, laad ze in een sequencertool, voeg de variabele `{{voornaam}}` in en druk op verzenden. Vandaag de dag leidt deze strategie tot een openingspercentage van 0,1% en een permanente zwarte lijst bij Google Workspace.
+Het oude handboek was simpel: schraap 5.000 e-mailadressen uit Apollo of ZoomInfo, laad ze in een sequencetool, voeg een `{{first_name}}` variabele toe en druk op verzenden. Vandaag de dag levert deze aanpak een openingspercentage van 0,1% op en resulteert het in een permanente zwarte lijst voor uw domein. Een domeinreputatie herstellen op Spamhaus of Google Feedback Loops kost 60 tot 90 dagen van vrijwel nul verzendvolume — een eeuwigheid voor een startup.
 
-Zakelijke beslissers herkennen generieke AI-teksten direct. Woorden als "revolutioneren", "duiken in", "synergie" en "ontgrendelen" fungeren als psychologische spam-triggers. Zodra een e-mail oogt als een ongeïnspireerd AI-sjabloon, wordt deze direct verwijderd of gemarkeerd als spam, wat de verzendreputatie van uw gehele domein structureel beschadigt.
+Enterprise-kopers herkennen een standaard AI-mail direct aan typische clichés zoals "duiken in", "revolutioneren", "ontgrendelen" en "synergie". Ziet een e-mail eruit alsof deze in 2 seconden is gegenereerd, dan verwijdert de ontvanger deze in 1 seconde en markeert hij het bericht als spam, wat uw bezorgbaarheid voor alle toekomstige mails beschadigt.
 
-## De AI-verrijkingspijplijn (Deep Enrichment)
+## De AI-Dataverrijkingspijplijn (Deep Enrichment)
 
-De moderne outbound-strategie leunt op **Diepgaande Dataverrijking (Deep Enrichment)**. U scrapt niet alleen een naam en functie, maar verzamelt diepgaande context en laat een LLM het grondige voorbereidende werk doen:
+De moderne B2B-outboundstrategie draait om **Diepe Dataverrijking (Deep Enrichment)**. U verzamelt niet alleen de naam van de prospect, maar brengt zijn volledige professionele context in kaart via een geautomatiseerde AI-synthese:
 
-1. **Scraping:** Uw pijplijn verzamelt recente LinkedIn-berichten, bedrijfsnieuws, persberichten en eventuele vacatures van de prospect via tools zoals Clay.
-2. **Contextanalyse:** U voedt deze data aan een LLM (zoals Claude 3.5 Sonnet of GPT-4o) met een strikt afgebakende prompt: *"Analyseer deze data. Identificeer de belangrijkste zakelijke focus of een recente mijlpaal van het bedrijf. Formuleer exact één feitelijke zin zonder vleiende bijvoeglijke naamwoorden."*
-3. **Generatie van de IJsbreker:** Het model genereert een uiterst specifieke openingszin: *"Beste Sarah, interessant om uw recente bijdrage te lezen over de latentie-uitdagingen in uw nieuwe React-applicatie..."*
-4. **Feitelijke Verificatie:** Een tweede, snelle validatiestap controleert of de openingszin feitelijk klopt met de brongegevens om hallucinaties uit te sluiten.
-5. **De Waardepropositie:** U sluit direct aan met een korte, door mensen aangescherpte pitch die uw software koppelt aan dat specifieke probleem.
+1. **Scraping:** Uw pijplijn verzamelt het LinkedIn-profiel van de prospect, recente posts, recente bedrijfsblogs, financieringsrondes op Crunchbase en eventuele GitHub-activiteit (via tools zoals Clay of PhantomBuster).
+2. **Analyse:** U voedt deze ruwe data aan een LLM (zoals Claude 3.5 Sonnet of GPT-4o) met een strikte prompt: *"Analyseer deze data. Identificeer de belangrijkste actuele professionele focus of recente mijlpaal van het bedrijf. Formuleer exact één feitelijke zin, zonder complimenten of bijvoeglijke naamwoorden."*
+3. **Generatie van de IJsbreker:** Het LLM genereert een hyper-specifieke openingszin: *"Beste Sarah, met veel interesse las ik je recente LinkedIn-post over de uitdagingen rondom API-latentie in jullie nieuwe React-architectuur..."*
+4. **Verificatie:** Een tweede, lichtgewicht LLM-check controleert de gegenereerde openingszin tegen de bronbestanden om hallucinaties te voorkomen vóórdat de mail in de wachtrij wordt geplaatst.
+5. **De Pitch:** U sluit direct aan met een beknopte, menselijk geformuleerde waardepropositie die exact inspeelt op dat knelpunt.
 
-Deze aanpak kost meer technische voorbereiding, maar resulteert in responspercentages die 30 tot 50 keer hoger liggen dan bij traditionele bulkmailings.
+Deze opzet vergt meer initiële engineering, maar levert een 30 tot 50 keer hogere respons op omdat de mail onomstotelijk bewijst dat u daadwerkelijk onderzoek heeft gedaan.
 
-## Technische e-mailinfrastructuur voor maximale aflevering
+## Technische Infrastructuur voor Maximale Bezorgbaarheid (Deliverability)
 
-Zelfs de perfect geschreven e-mail is waardeloos als deze in de spambox belandt. Afleverbaarheid (deliverability) is een technisch fundament dat niet in de frontend leeft:
+Zelfs de meest perfecte e-mail is waardeloos als deze in de spambox belandt. Bezorgbaarheid is een zuiver technische discipline:
 
-- **Secundaire Domeinen:** Verzend koude acquisitie-e-mails nooit vanaf uw primaire hoofddomein. Raakt een domein beschadigd, dan belanden ook uw normale support-mails en wachtwoordresets in de spam. Gebruik altijd secundaire domeinen (bijvoorbeeld `getbedrijfsnaam.com`).
-- **Authenticatie (SPF, DKIM, DMARC):** Richt uw DNS-records conform de strengste standaarden in. Ontbreken deze records, dan weigeren Gmail en Yahoo uw berichten direct bij de poort.
-- **Domein-opwarming (Warming):** Gebruik gespecialiseerde software (zoals Instantly of Lemlist) om nieuwe verzenddomeinen gedurende 3 tot 4 weken geleidelijk op te warmen voordat u campagnes lanceert.
-- **Mailbox-rotatie:** Verdeel het verzendvolume over 5 tot 10 afzonderlijke postvakken per domein (maximaal 30 tot 50 e-mails per postvak per dag) om natuurlijk verzendgedrag na te bootsen.
+- **Secundaire Domeinen:** Verstuur nooit koude acquisitiemails vanaf uw primaire bedrijfsdomein (bijv. `launchstudio.eu`). Wordt uw domein geflagd, dan belanden ook uw reguliere klantenservice- en wachtwoordreset-mails in de spam. Registreer secundaire domeinen (zoals `getlaunchstudio.com` of `trylaunchstudio.io`) en richt deze exclusief in voor outbound.
+- **Authenticatie (SPF, DKIM, DMARC):** Richt uw DNS-records strikt in. Google en Yahoo handhaven deze authenticatie als harde eis voor alle zakelijke verzenders; ontbreken deze records, dan worden berichten direct geweigerd.
+- **Domein-Opwarming (Domain Warming):** Bouw de verzendreputatie van nieuwe domeinen gedurende 3 tot 4 weken geleidelijk op met tools zoals Instantly of Lemlist.
+- **Mailbox-Rotatie:** Verdeel het dagelijkse volume over 5 tot 10 afzonderlijke postbussen per domein (maximaal 40 tot 50 mails per mailbox per dag) om menselijk verzendgedrag te simuleren.
 
 ## De 'Zachte' Call to Action (Soft CTA)
 
-Sluit een eerste koude e-mail nooit af met de vraag om een Zoom-afspraak van 30 minuten. Een drukke directeur geeft diens kostbare tijd niet zomaar aan een onbekende.
+Sluit een koude e-mail nooit af met de vraag om een Zoom-gesprek van 30 minuten. Een drukke directeur besteedt geen half uur aan een onbekende. Verlaag de frictie naar iets wat in 5 seconden vanaf een smartphone te beantwoorden is:
 
-Gebruik een laagdrempelige, zachte CTA: *"Onderzoekt uw team momenteel oplossingen voor dit specifieke knelpunt?"* of *"Vindt u het goed als ik een korte video van 60 seconden doorstuur waarin we laten zien hoe we dit oplossen?"* Het enige doel van de eerste e-mail is het verkrijgen van een positieve reactie; de daadwerkelijke verkoop vindt plaats in de opvolging.
+Gebruik een zachte, interesse-gedreven CTA: *"Onderzoekt u momenteel oplossingen voor dit knelpunt?"* of *"Vindt u het goed als ik een video van 90 seconden toestuur waarin we laten zien hoe we dit oplossen?"* Het doel van de eerste mail is uitsluitend een eenvoudig "Ja"; het daadwerkelijke verkopen begint pas in de opvolging.
 
-Manifera ontwerpt en versterkt schaalbare backend-infrastructuren en dataverrijkingspijplijnen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor enterprise-klanten zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
+## Meten Wat er Daadwerkelijk Toe Doet
 
-## Belangrijkste inzichten
+Openingspercentages (Open Rates) zijn in 2026 een misleidende vanity-metric door privacy-bescherming in Apple Mail en geautomatiseerde security-scanners. Stuur primair op de **Positieve Responsratio (Positive Reply Rate)** en het **Aantal Geboekte Demo's**, uitgesplitst naar de gebruikte dataverrijkingsbron (LinkedIn vs. bedrijfsnieuws vs. GitHub).
 
-- Generieke AI-bulkmailings leiden tot massale spamblokkades; succesvolle outbound vereist hyperpersonalisatie via diepgaande dataverrijking.
+Het bouwen van deze backend-pijplijnen is exact het soort volwassen software-inrichting dat Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze systemen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
-- Bouw geautomatiseerde pipelines die publieke data en LinkedIn-berichten van prospects analyseren voor feitelijk accurate ijsbrekers.
+## Belangrijkste Inzichten
 
-- Bescherm uw hoofddomein door koude acquisitie uitsluitend uit te voeren via geconfigureerde, opgewarmde secundaire domeinen.
+- AI heeft gezorgd voor een overvloed aan generieke spam; strakke spamfilters bij Google en Microsoft straffen ongerichte campagnes direct af.
+- Gebruik AI voor diepe dataverrijking (scraping van LinkedIn, nieuws en bedrijfsupdates) om hyper-gepersonaliseerde, feitelijke ijsbrekers te formuleren.
+- Verstuur outbound e-mails nooit vanaf uw primaire hoofddomein; gebruik verwarmde secundaire domeinen met strikte SPF-, DKIM- en DMARC-records.
+- Roteer het verzendvolume over meerdere mailboxen om veilige limieten (max. 50 mails/box/dag) te waarborgen.
+- Houd e-mails onder de 100 woorden en hanteer laagdrempelige 'Zachte CTA's' om frictie te minimaliseren.
 
-- Stel SPF-, DKIM- en DMARC-records strikt in om automatische weigeringen door Google en Microsoft te voorkomen.
+## Automatiseer Uw B2B Outbound
 
-- Hanteer beknopte e-mails (onder de 100 woorden) met een laagdrempelige, zachte CTA gericht op interesse in plaats van een direct verkoopgesprek.
+Stop met het versturen van ongerichte spam en start met het boeken van gekwalificeerde demo's. **LaunchStudio** bouwt geavanceerde AI-verrijkingspijplijnen en geharde e-mailinfrastructuur om uw B2B SaaS-outreach op schaal te personaliseren — tegen circa 20% van de tarieven van een traditioneel bureau.
 
-## Bouw een intelligente outbound-motor
-
-Wilt u stoppen met spammen en structureel gekwalificeerde afspraken inplannen? **LaunchStudio** bouwt geavanceerde AI-verrijkingspijplijnen en verzorgt de complete technische inrichting van secundaire e-maildomeinen en deliverability-protocollen.
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Bekijk onze pakketten](https://launchstudio.eu/en/#packages) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact) of ontdek [ons pakkettenoverzicht](https://launchstudio.eu/en/#packages). Zie ook Manifera's [maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/) praktijk.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: e-mailreputatie herstellen voor een recruitment-app
+### Een AI-Native Oprichter in Actie: Domeininfrastructuur Herstellen voor een Recruitment-App
 
-Dylan, een headhunter, gebruikte **Lovable** om een geautomatiseerde outreach-tool te bouwen. Zijn hoofddomein werd echter binnen enkele weken op de zwarte lijst geplaatst wegens een gebrek aan domein-opwarming en ontbrekende DMARC-records.
+Dylan, een headhunter, gebruikte **Lovable** om een koude outbound-tool te bouwen. Zijn primaire domein werd binnen no-time op zwarte lijsten geplaatst door een gebrek aan warming-up en ontbrekende DNS-records.
 
-Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam configureerde secundaire domeinen met geverifieerde SPF-, DKIM- en DMARC-records en zette een geautomatiseerd opwarmingsprotocol op.
+Hij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om secundaire verzenddomeinen te configureren met gevalideerde SPF-, DKIM- en DMARC-records en automatische warming-up in te richten.
 
-**Resultaat:** Het bezorgingspercentage steeg van 40% naar 98%, wat resulteerde in een constante stroom van gekwalificeerde B2B-salesdemo's.
+**Resultaat:** De bezorgbaarheid van zijn e-mails steeg van 40% naar 98%, wat resulteerde in een constante stroom van B2B-salesdemo's.
 
-**Kosten & tijdlijn:** €950 (Domain Configuration Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €950 (Domein & Deliverability Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Is koude e-mailacquisitie nog effectief in 2026?
+### Is koude e-mail dood in 2026?
 
-Ja, mits hyper-gepersonaliseerd en technisch vlekkeloos ingericht. Generieke bulke-mails worden genegeerd en geblokkeerd, maar contextrijke en relevante berichten vallen juist extra positief op.
+Nee. Generiek hagel schieten is dood, maar hyper-gepersonaliseerde en contextrijke e-mails zijn effectiever dan ooit omdat ze direct boven het maaiveld van generieke AI-spam uitsteken.
 
-### Hoe werkt een AI-verrijkingspijplijn (Enrichment Pipeline)?
+### Hoe hyper-personaliseer ik koude e-mails op grote schaal?
 
-De pijplijn verzamelt realtime data van de prospect (zoals recente LinkedIn-activiteit of bedrijfsnieuws) en laat een LLM een specifieke, feitelijke ijsbreker schrijven die direct aansluit op de situatie van de ontvanger.
+Via een geautomatiseerde AI-dataverrijkingspijplijn die actuele LinkedIn-posts en bedrijfsupdates van de prospect analyseert en omzet in een geverifieerde, feitelijke openingszin.
 
-### Waarom mag ik nooit koude e-mails sturen vanaf mijn hoofddomein?
+### Hoe lang mag een B2B koude e-mail maximaal zijn?
 
-Als uw koude e-mails worden gemarkeerd als spam, beschadigt dit de algehele verzendreputatie van uw primaire bedrijfsdomein, waardoor ook reguliere facturen en supportmails niet meer aankomen.
+Minder dan 100 woorden. Zakelijke beslissers lezen e-mails op hun telefoon tussen afspraken door: focus op context, concrete waardepropositie en een laagdrempelige vraag.
 
-### Wat is domein-opwarming (Domain Warming)?
+### Wat is 'Domain Warming' en hoe lang duurt dit proces?
 
-Het geautomatiseerd en stapsgewijs verzenden van een groeiend aantal e-mails tussen gecontroleerde postvakken gedurende 3 tot 4 weken, om bij Google en Microsoft een positieve verzendreputatie op te bouwen.
+Het geleidelijk opbouwen van de verzendreputatie van een nieuw geregistreerd domein door gedurende 3 tot 4 weken geautomatiseerd kleine volumes e-mails uit te wisselen alvorens grote campagnes te starten.
 
-### Richt LaunchStudio complete outbound-infrastructuren in?
+### Richt LaunchStudio alleen e-mailtools in of complete software-architecturen?
 
-Ja. LaunchStudio en Manifera verzorgen de complete technische opzet: registratie van secundaire domeinen, SPF/DKIM/DMARC-configuratie, automatische opwarming en LLM-verrijkingsintegraties via Clay of custom backends.
+LaunchStudio levert de complete backend-pijplijn — inclusief scrapers, LLM-verrijking, DNS-authenticatie en CRM-koppelingen — ondersteund door 11+ jaar software-expertise van Manifera.
 
 <script type="application/ld+json">
 {
@@ -104,42 +104,42 @@ Ja. LaunchStudio en Manifera verzorgen de complete technische opzet: registratie
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is koude e-mailacquisitie nog effectief in 2026?",
+      "name": "Is koude e-mail dood in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, hyper-gepersonaliseerde berichten op basis van diepgaande dataverrijking realiseren 30 tot 50 keer hogere respons dan generieke bulksjablonen."
+        "text": "Generieke bulk-mail is dood; diep gepersonaliseerde outbound gebaseerd op realtime prospectdata converteert juist beter dan ooit."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe werkt een AI-verrijkingspijplijn (Enrichment Pipeline)?",
+      "name": "Hoe hyper-personaliseer ik koude e-mails op grote schaal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door automatisch recente bedrijfsberichten en LinkedIn-activiteit te scrapen en via een LLM om te zetten in feitelijke, relevante ijsbrekers."
+        "text": "Door LLM-dataverrijking die LinkedIn-activiteit en bedrijfsnieuws automatisch omzet in unieke, geverifieerde openingszinnen."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom mag ik nooit koude e-mails sturen vanaf mijn hoofddomein?",
+      "name": "Hoe lang mag een B2B koude e-mail maximaal zijn?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Om te voorkomen dat spammeldingen uw primaire bedrijfsdomein besmetten en belangrijke klant- en transactiemails in spamboxen belanden."
+        "text": "Onder de 100 woorden: beknopt opgebouwd met context, een duidelijke waardepropositie en een zachte call-to-action."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is domein-opwarming (Domain Warming)?",
+      "name": "Wat is 'Domain Warming' en hoe lang duurt dit proces?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een gecontroleerd proces van 3-4 weken waarin een nieuw domein geleidelijk e-mails uitwisselt om een betrouwbare reputatie bij mailservers op te bouwen."
+        "text": "Het 3 tot 4 weken gecontroleerd opbouwen van de verzendreputatie van een nieuw secundair domein via geautomatiseerde interacties."
       }
     },
     {
       "@type": "Question",
-      "name": "Richt LaunchStudio complete outbound-infrastructuren in?",
+      "name": "Richt LaunchStudio alleen e-mailtools in of complete software-architecturen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera leveren complete e-mailinfrastructuur op met SPF/DKIM/DMARC, secundaire domeinen en geautomatiseerde AI-verrijking."
+        "text": "LaunchStudio bouwt de complete backend-architectuur inclusief dataverrijking, DNS-records en veilige verzendsystemen."
       }
     }
   ]

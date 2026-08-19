@@ -1,97 +1,92 @@
 ---
-Titel: "Geheugenlekken Oplossen in Node.js bij LLM Streaming"
-Trefwoorden: AI software engineering, AI deployment, AI-native, AI code ontwikkeling, AI vulnerabilities, coderen met AI, app bouwen met AI, AI code tool, LaunchStudio, Manifera
+Titel: "Geheugenlekken Oplossen bij AI in Software Engineering met Node.js"
+Trefwoorden: AI software engineering, AI deployment, AI-native, AI code development, AI kwetsbaarheden, code with AI, build app with AI, AI code tool, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Geheugenlekken Oplossen in Node.js bij LLM Streaming
+# Geheugenlekken Oplossen bij AI in Software Engineering met Node.js
 
-Een van de meest verraderlijke bedreigingen voor een B2B AI-applicatie is geen plotselinge crash, maar een langzame, stille uitval. U lanceert uw Node.js backend en alles functioneert 12 uur lang vlekkeloos. Vervolgens crasht de server 's middags plotseling met een `JavaScript heap out of memory` fout. Na een herstart herhaalt hetzelfde patroon zich een halve dag later. U bent het slachtoffer van een **geheugenlek (Memory Leak)**. In de wereld van realtime LLM-tokenstreaming zijn geheugenlekken buitengewoon eenvoudig te creëren en uiterst complex om te lokaliseren. Founders die een prototype van Lovable of Bolt direct in productie nemen, testen dit zelden vooraf — het probleem openbaart zich pas onder langdurige operationele belasting.
+Een van de meest verraderlijke en destructieve bedreigingen voor een zakelijke B2B AI-applicatie is geen plotselinge, direct zichtbare fatale crash, maar een langzame, geruisloze verstikking van de servercapaciteit. U rolt uw Node.js backend-server uit naar de productieomgeving. Gedurende 12 uur draait alles ogenschijnlijk vlekkeloos. Vervolgens, midden op de dag om twee uur 's middags tijdens piekbelasting, crasht de server plotseling en onverwacht met een fatale `JavaScript heap out of memory` foutmelding. U herstart de container of instantie. Alles functioneert weer 12 uur naar behoren, waarna de server exact hetzelfde fatale patroon herhaalt en opnieuw crasht. U bent het slachtoffer van een **Geheugenlek (Memory Leak)** — en in de wereld van realtime Large Language Model (LLM) streaming zijn deze lekken opmerkelijk eenvoudig te introduceren en buitengewoon lastig handmatig op te sporen. Oprichters die een prototype van Lovable, Bolt of Cursor direct naar productie brengen testen hun code vrijwel nooit onder langdurige gesimuleerde belasting, waardoor dit probleem zich pas openbaart in het bijzijn van betalende zakelijke enterprise-klanten.
 
-## Hoe Streaming Geheugenlekken Veroorzaakt
+## De Mechanica van een Streaming-Geheugenlek
 
-Node.js gebruikt een Garbage Collector (V8) om niet-langer benodigde data automatisch uit het RAM-geheugen te wissen. De Garbage Collector kan data echter *nooit* vrijgeven zolang uw applicatiecode nog een actieve referentie ernaar vasthoudt — bijvoorbeeld via een closure, een niet-opgeruimde eventlistener of een array die ongecontroleerd groeit.
+Node.js maakt onder de motorkap gebruik van V8's geavanceerde Garbage Collector (een generatie-gebaseerde collector die cyclisch wisselt tussen 'Scavenge' voor kortlevende jonge objecten en 'Mark-Sweep-Compact' voor langlevende objecten in de oude generatie). Wanneer data binnen een functie of scope niet langer in gebruik is, wist het runtime-systeem deze gegevens automatisch om kostbaar RAM-geheugen vrij te maken. De Garbage Collector kan data echter *principieel nooit* opruimen zolang uw applicatiecode ergens nog een actieve referentie ernaartoe vasthoudt — één enkele achtergebleven referentie in een closure, een niet-verwijderde event-listener of een oneindig expanderende array volstaat om een complete objectgraaf permanent in het V8-geheugen te vergrendelen.
 
-Bij het streamen van een LLM-respons via de OpenAI- of Anthropic-SDK opent uw server een continue datastroom (chunked transfer encoding). Wanneer een bezoeker na 2 seconden het browsertabblad sluit, verbreekt de client-HTTP-verbinding. Als uw backend de upstream-aanroep naar OpenAI echter niet expliciet annuleert, blijft de server de binnenkomende tekst in het werkgeheugen bufferen. Op een actieve server die honderden chatsessies per uur verwerkt, hopen honderden verlaten streams zich op, wat resulteert in sluipende geheugengroei en onnodige API-kosten.
+Wanneer u een LLM-response streamt via de officiële OpenAI SDK of Anthropic SDK, opent u een doorlopende datapijplijn — technisch gezien een leesbare stream (readable stream) over een actieve HTTP-verbinding met chunked transfer encoding. Zodra een gebruiker op "Genereren" klikt, opent uw server deze stream. Sluit de gebruiker echter na twee seconden zijn browsertabblad uit ongeduld, dan verbreekt de HTTP-verbinding met de browser. Als u echter geen expliciete code heeft geschreven om de upstream-aanroep naar de AI-provider direct te annuleren (`abort()`), blijft de Node.js-server op de achtergrond rustig doordraaien: hij blijft tokens ontvangen van de externe API en houdt het almaar groeiende tekstobject en alle netwerkbuffers permanent in het geheugen vast voor een gebruiker die allang vertrokken is. Op een drukke server met honderden chatsessies per uur stapelen deze spook-buffers zich razendsnel op, wat resulteert in gigabytes aan nutteloos bezet RAM en torenhoge onnodige API-kosten.
 
-## Het Probleem van 'Ghost Listeners'
+## Het Probleem van 'Spook-Listeners' (Ghost Listeners)
 
-In Node.js koppelen ontwikkelaars eventlisteners aan streams (`stream.on('data', callback)` en `stream.on('end', callback)`). Bij elk chatbericht wordt een nieuwe set listeners geregistreerd.
+In Node.js gebruiken softwareontwikkelaars Event Emitters om binnenkomende streaming-tokens asynchroon af te handelen via listeners zoals `stream.on('data', callback)` of `stream.on('end', callback)`. Elke keer dat een gebruiker een nieuwe chatprompt verzendt, wordt er een nieuwe reeks listeners gekoppeld aan een nieuw stream-object.
 
-Als u nalaat om `stream.removeAllListeners()` aan te roepen of de stream netjes af te sluiten wanneer een generatie stopt of faalt, blijven deze listeners als **"Ghost Listeners"** actief in het geheugen. Zij houden referenties vast naar de complete request-context, databaseverbindingen en gebruikerssessies. Na verloop van tijd bereikt het geheugengebruik 100%, waarna Node.js waarschuwingen zoals `MaxListenersExceededWarning` toont en de server uiteindelijk onvermijdelijk crasht.
+Vergeet u om na afloop van de generatie (of wanneer er een netwerkfout optreedt) expliciet `stream.removeAllListeners()` aan te roepen of de stream definitief te vernietigen (`stream.destroy()`), dan blijven die listeners als **Spook-Listeners (Ghost Listeners)** actief in het geheugen rondspoken. Elk van deze spook-listeners houdt een closure vast over de complete request-context, het response-object en vaak zelfs actieve databaseverbindingen of gebruikerssessies. Verstuurt een intensieve gebruiker 100 berichten tijdens een sessie, dan ontstaan 100 redundante spook-listeners die permanent server-RAM bezetten. Bovendien blijft elke spook-listener technisch gezien "luisteren", waardoor een verdwaald event zomaar 100 keer kan vuren en dubbele database-writes of dubbele facturatie-events kan triggeren. Bij duizenden gebruikers raakt het geheugen binnen enkele uren volledig verzadigd, waarbij Node's EventEmitter waarschuwingen zoals `MaxListenersExceededWarning` begint te loggen in productielogs.
 
-## Het Diagnosticeren van een Geheugenlek: Zaagtand versus Trap
+## Diagnose van het Lek: Het Zaagtand- vs. Het Trapprofiel
 
-Geheugenlekken spoort u niet op door statische code-inspectie, maar door het analyseren van RAM-grafieken in monitoringtools (zoals CloudWatch, Datadog of Grafana):
+U kunt een geheugenlek niet opsporen door simpelweg naar de broncode te staren; u moet kijken naar infrastructurele geheugengrafieken (via AWS CloudWatch, Datadog of Grafana dashboards gevoed door `process.memoryUsage()`), gecombineerd met Chrome DevTools heap-snapshots via de ingebouwde Node `--inspect` flag om te zien welke objecttypen (`Buffer`, `ClientRequest` of closures) accumuleren.
 
-- **Gezonde Server (Zaagtand):** Het geheugengebruik stijgt tijdens piekverkeer en daalt scherp zodra de Garbage Collector voltooide streams opruimt. Dit patroon herhaalt zich continu.
-- **Lekkende Server (Trap):** Het RAM-gebruik stijgt bij pieken, maar daalt nauwelijks. De basislijn kruipt gestaag omhoog totdat het geheugenplafond van de container (bijvoorbeeld 1 GB of 2 GB) wordt bereikt en de server crasht.
-
-Via de `--inspect` vlag van Node.js en Chrome DevTools heap-snapshots kunt u exact vergelijken welke objecten (`Buffer`, `ClientRequest` of closures) in het geheugen achterblijven.
+Een gezonde server vertoont een duidelijk **Zaagtandprofiel (Sawtooth)**: het RAM-gebruik stijgt tijdens piekbelasting en daalt vervolgens scherp en periodiek zodra de Garbage Collector de afgeronde streams opruimt. Een server met een geheugenlek vertoont daarentegen een **Trapprofiel (Staircase)**: het geheugengebruik stijgt, maar de periodieke dalingen zijn minimaal omdat de Garbage Collector de vastgehouden spook-objecten niet mag wissen. De baseline-geheugenlijn stijgt gestaag met enkele megabytes per uur, totdat het geheugenplafond van de container (bijv. 512MB tot 2GB) wordt bereikt en de server crasht met `FATAL ERROR: JavaScript heap out of memory`, wat direct alle lopende verzoeken van andere actieve gebruikers meesleurt in de val.
 
 ## De Oplossing: AbortControllers en Strikte Teardowns
 
-Om een lekvrije streaming-architectuur te bouwen, hanteert u een defensieve aanpak voor elke request-lifecycle:
+Om een gegarandeerd lekvrije streaming-architectuur op te bouwen, moet u de levenscyclus van elk afzonderlijk verzoek defensief en strikt beheren:
 
-1. **Het Abort-Signaal:** Geef een `AbortController.signal` mee aan elke LLM SDK-aanroep. Koppel een listener aan het HTTP-verzoek (`req.on('close')`). Zodra de client de verbinding verbreekt, activeert u direct `controller.abort()`. Dit beëindigt de upstream-verbinding naar OpenAI onmiddellijk en stopt verdere geheugenaccumulatie en tokenkosten.
-2. **Het Finally-Blok:** Wikkel alle streaming-logica in een `try/catch/finally` constructie. Voer in het `finally`-blok altijd expliciet `stream.destroy()` en `stream.removeAllListeners()` uit, ongeacht of de generatie succesvol was, faalde of werd afgebroken.
-3. **Begrensde Buffers:** Voorkom het samenvoegen van tokens in variabelen buiten de scope van de individuele request handler.
+1. **Het Abort-Signaal:** Geef altijd een `AbortController.signal` mee aan elke LLM API-aanroep (zowel de OpenAI als Anthropic SDK accepteren een native `signal`-parameter). Koppel een event-listener aan het HTTP-verzoek van de client (`req.on('close')` in Express). Zodra de client de verbinding verbreekt, triggert u direct `controller.abort()`. Dit sluit de uitgaande verbinding naar OpenAI binnen milliseconden af, wat zowel geheugen als API-credits bespaart.
+2. **Het Finally-Block:** Ga er nooit van uit dat een stream altijd vlekkeloos en netjes eindigt. Netwerkonderbrekingen, timeouts en rate limits komen continu voor. Wikkel alle streaminglogica in een robuust `try/catch/finally` block. In het `finally` block roept u te allen tijde expliciet `stream.destroy()` aan en verwijdert u alle geregistreerde event-listeners via `removeAllListeners()`. Dit garandeert dat het geheugen altijd wordt opgeschoond, ongeacht of het verzoek slaagde, faalde of voortijdig werd afgebroken.
+3. **Beperk Buffers tot de Functiescope:** Vermijd het samenvoegen van tokens in globale of brede variabelen buiten de scope van het verzoek (bijvoorbeeld om "even snel de volledige response te loggen voor debugging"). Beperk elke response-buffer strikt tot de specifieke functie of class van dat verzoek, zodat het geheugen direct na afhandeling kan worden vrijgegeven door V8.
 
-Herre Roelevink, oprichter en Managing Director van Manifera, legt uit: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera voert sinds **2014** diepgaande geheugen- en betrouwbaarheidsaudits uit.
+Aangezien circa 45% van de met AI gegenereerde code kwetsbaarheden bevat rondom resource- en connectiebeheer, is deze defensieve architectuur een absolute noodzaak voor enterprise-applicaties.
 
-## Belangrijkste inzichten
+Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt en auditeert enterprise-backends sinds **2014** vanuit haar Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam** en ontwikkelingshubs in **Singapore** en **Ho Chi Minhstad, Vietnam**. Bekijk meer op de [Manifera Over Ons pagina](https://www.manifera.com/about-us/).
 
-- Geheugenlekken ontstaan wanneer Node.js oude data niet kan opruimen omdat er nog actieve referenties bestaan via closures, openstaande streams of achtergebleven listeners.
+## Belangrijkste Inzichten
 
-- Wanneer een gebruiker het browsertabblad sluit tijdens een AI-generatie, moet de backend de upstream LLM-aanroep direct afbreken via een `AbortController`.
+- Geheugenlekken ontstaan wanneer Node.js data niet kan opruimen via de Garbage Collector doordat er nog verborgen referenties (closures, dode streams, actieve listeners) aanwezig zijn.
+- Sluit een gebruiker zijn browser halverwege een generatie, dan moet uw backend de uitgaande LLM-aanroep direct afbreken via een `AbortController` om RAM- en tokenverspilling direct te stoppen.
+- Het niet verwijderen van event-listeners (`.on('data')`) creëert 'Spook-Listeners' die servergeheugen opeisen en zelfs dubbele database-writes of facturatie-fouten kunnen veroorzaken.
+- Analyseer geheugengrafieken: een gezonde server toont een zaagtandpatroon; een lekkende server toont een gestage opwaartse trap die onverbiddelijk afstevent op een fatale out-of-memory crash.
+- Hanteer defensieve code: gebruik altijd een `finally`-block om streams en listeners definitief te vernietigen (`stream.destroy()`) en beperk buffers strikt tot de request-scope.
 
-- Het niet verwijderen van eventlisteners (`.on('data')`) creëert 'Ghost Listeners' die servergeheugen vasthouden en kunnen leiden tot dubbele database-writes.
+## Bouw een Gegarandeerd Lekvrije AI-Architectuur
 
-- Een gezonde server vertoont een periodiek zaagtandpatroon in RAM-gebruik; een geheugenlek toont een gestage trapstructuur die leidt tot fatale heap-crashes.
+Crasht uw AI-backend regelmatig met onverklaarbare 'Out of Memory' fouten na 12 tot 24 uur in productie? **LaunchStudio** voert diepgaande geheugen- en runtime-audits uit om verborgen lekken op te sporen en implementeert robuuste teardown- en abort-protocollen die uw Node-servers stabiel houden bij extreme schaal. Bekijk onze diensten op het [LaunchStudio procesoverzicht](https://launchstudio.eu/en/#process).
 
-- Pas altijd een `try/catch/finally` structuur toe waarin `stream.destroy()` en `removeAllListeners()` gegarandeerd worden uitgevoerd bij het einde van elke request.
-
-## Bouw een lekvrije en stabiele AI-architectuur
-
-Crasht uw Node.js backend regelmatig met 'Out of Memory' fouten onder productiebelasting? **LaunchStudio** voert diepgaande architectuur- en geheugenaudits uit, elimineert Ghost Listeners en implementeert robuuste teardown-protocollen zodat uw applicatie stabiel blijft schalen. Bekijk onze [werkwijze](https://launchstudio.eu/en/#process) voor meer informatie.
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM Singapore 079027) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10, Tan Son Hoa Ward). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde maatwerkprojecten helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Geheugenlekken oplossen in een AI-logclassificeerder
+### Een AI-Native Oprichter in Actie: Geheugenlekken Oplossen in een AI-Logclassifier
 
-Mia, een devops engineer, bouwde een logclassificeerder met **Lovable**. De Node.js-server crashte elke 12 uur door geheugenuitputting als gevolg van niet-gesloten streaming-verbindingen.
+Mia, een DevOps engineer, gebruikte **Lovable** om een automatische logclassifier te bouwen. De Node.js-server crashte stelselmatig elke 12 uur door geheugenuitputting als gevolg van niet-afgesloten LLM-streamingverbindingen.
 
-Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam voerde heap-profiling uit, identificeerde geheugenlekken in globale eventlisteners en implementeerde correcte connection-teardown logica.
+Zij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)**. Het engineeringteam voerde heap-profiling uit, identificeerde geheugenlekken in globale event-listeners en implementeerde strikte connection-teardown logica.
 
-**Resultaat:** Het geheugengebruik van de server stabiliseerde op 120 MB en willekeurige crashes werden definitief geëlimineerd.
+**Resultaat:** Het servergeheugenverbruik stabiliseerde permanent op een veilige 120MB, waardoor plotselinge servercrashes volledig werden geëlimineerd.
 
-**Kosten & tijdlijn:** €1.600 (Node.js Memory Audit Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.600 (Node.js Geheugenaudit Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Wat veroorzaakt een geheugenlek bij LLM-streaming in Node.js?
+### Wat veroorzaakt geheugenlekken bij Node.js LLM-streaming?
 
-Wanneer een datastroom van een AI-provider wordt geopend maar niet correct wordt gesloten (bijvoorbeeld als een bezoeker halverwege weggaat zonder dat `AbortController.abort()` wordt aangeroepen), blijven de stream-buffers en closures permanent in het RAM-geheugen aanwezig.
+Het openen van persistente datastromen van AI-providers zonder deze expliciet af te sluiten wanneer een gebruiker de verbinding verbreekt, waardoor dode streams en listeners permanent in het RAM-geheugen blijven hangen.
 
-### Waarom zijn AI-applicaties extra vatbaar voor geheugenlekken?
+### Waarom zijn AI-applicaties extra kwetsbaar voor geheugenlekken?
 
-Omdat zij werken met omvangrijke teksten over langdurige HTTP-verbindingen waarbij per interactie meerdere eventlisteners worden geregistreerd. Fouten stapelen zich bij honderden sessies per uur razendsnel op.
+Omdat ze grote tekstvolumes genereren over langdurige HTTP-verbindingen met meerdere actieve event-listeners per sessie. Het niet opruimen van enkele duizenden sessies verbruikt binnen korte tijd gigabytes aan werkgeheugen.
 
-### Hoe herkent u een geheugenlek in productie?
+### Hoe detecteert u een geheugenlek in productie?
 
-Aan een RAM-grafiek die gestaag stijgt in een trapvorm zonder terug te keren naar de basislijn, totdat de container het geheugenlimiet bereikt en crasht.
+Door de RAM-grafiek van uw servers te inspecteren over 24 uur via CloudWatch of Datadog. Een gezond patroon vertoont een zaagtand; een lekkende server toont een constante opwaartse trap tot aan het geheugenplafond.
 
-### Hoe sluit u een OpenAI-stream correct af?
+### Hoe sluit u een OpenAI-stream technisch correct af?
 
-Door een `AbortController` te koppelen aan het request-close event van de client, en in een `finally`-blok altijd `stream.destroy()` en `removeAllListeners()` aan te roepen.
+Gebruik een `AbortController` gekoppeld aan het `req.on('close')` event van de client, gecombineerd met een `finally`-block dat altijd `stream.destroy()` en `removeAllListeners()` aanroept.
 
-### Kan LaunchStudio geheugenproblemen in bestaande codebases opsporen?
+### Lost LaunchStudio bestaande geheugenproblemen op in productiecode?
 
-Ja. De engineers van LaunchStudio en Manifera voeren heap-snapshot analyses uit, traceren Ghost Listeners en implementeren robuuste lifecycle-handlers binnen 1 tot 3 weken.
+Ja. LaunchStudio en Manifera voeren grondige runtime-heap analyses uit, sporen achtergebleven closures en listeners op en leveren binnen enkele werkdagen een geharde, lekvrije backend op.
 
 <script type="application/ld+json">
 {
@@ -100,42 +95,42 @@ Ja. De engineers van LaunchStudio en Manifera voeren heap-snapshot analyses uit,
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat veroorzaakt een geheugenlek bij LLM-streaming in Node.js?",
+      "name": "Wat veroorzaakt geheugenlekken bij Node.js LLM-streaming?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet-afgesloten streaming-verbindingen en achtergebleven eventlisteners die door de Garbage Collector niet kunnen worden gewist."
+        "text": "Niet-afgesloten datastromen en achtergebleven event-listeners die door V8's Garbage Collector niet opgeruimd kunnen worden."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom zijn AI-applicaties extra vatbaar voor geheugenlekken?",
+      "name": "Waarom zijn AI-applicaties extra kwetsbaar voor geheugenlekken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat langdurige streaming-connecties grote tekstbuffers en closures in het RAM-geheugen vasthouden per actieve gebruiker."
+        "text": "Omdat langdurige streamingverbindingen met zware closures en tekstbuffers snel gigabytes aan server-RAM bezetten."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe herkent u een geheugenlek in productie?",
+      "name": "Hoe detecteert u een geheugenlek in productie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aan een continu stijgende trapstructuur in de RAM-monitoringgrafiek die uiteindelijk leidt tot heap out of memory crashes."
+        "text": "Via RAM-monitoring: een constante opwaartse trap in plaats van een periodiek herstellend zaagtandpatroon."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe sluit u een OpenAI-stream correct af?",
+      "name": "Hoe sluit u een OpenAI-stream technisch correct af?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Met een AbortController op req.on('close') gecombineerd met stream.destroy() en removeAllListeners() in een finally-blok."
+        "text": "Met een AbortController op req.on('close') en een finally-block dat stream.destroy() en removeAllListeners() aanroept."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio geheugenproblemen in bestaande codebases opsporen?",
+      "name": "Lost LaunchStudio bestaande geheugenproblemen op in productiecode?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, via heap-profiling en gerichte code-audits lokaliseert en verhelpt het engineeringteam geheugenlekken binnen enkele werkdagen."
+        "text": "Ja, LaunchStudio voert heap-analyses uit en implementeert lekvrije streaming-architecturen via Manifera."
       }
     }
   ]

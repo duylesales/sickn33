@@ -1,93 +1,106 @@
 ---
-Titel: "Verborgen Kosten Overleven voor de Beste AI-Afbeeldingengeneratie"
+Titel: "Verborgen Kosten Overleven bij AI-Beeldgeneratie in SaaS"
 Trefwoorden: Best Of AI, AI image generation, DALL-E 3, Midjourney API, SaaS billing, LaunchStudio, Manifera, custom backend, API costs, Stable Diffusion
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Verborgen Kosten Overleven voor de Beste AI-Afbeeldingengeneratie
+# Verborgen Kosten Overleven bij AI-Beeldgeneratie in SaaS
 
-Als u een AI SaaS bouwt, is tekstgeneratie uitzonderlijk goedkoop: OpenAI's `gpt-4o-mini` kost slechts fracties van een cent per pagina. U kunt uw gebruikers gemakkelijk een vast abonnement van €20 per maand aanbieden met ruime tekstlimieten zonder dat uw winstmarge gevaar loopt.
+Als u een AI SaaS bouwt op basis van tekstgeneratie, zijn de kosten per interactie opvallend laag. OpenAI's `gpt-4o-mini` kost slechts fracties van een cent per pagina gegenereerde tekst. U kunt uw eindgebruikers moeiteloos onbeperkte tekstgeneratie aanbieden voor een vast abonnement van € 20 per maand zónder dat uw winstmarges gevaar lopen.
 
-Zodra u echter **AI-afbeeldingsgeneratie** toevoegt aan uw applicatie, verandert het verdienmodel compleet.
+Zodra u echter **AI-beeldgeneratie** toevoegt aan uw applicatie, veranderen de onderliggende economische wetten van uw onderneming radicaal.
 
-Het genereren van één enkele hoge-resolutie afbeelding via OpenAI's DALL-E 3 API kost al snel $0,08. Als een gebruiker 10 keer op "Genereer Afbeelding" klikt om het perfecte resultaat te vinden, kost die ene sessie u direct $0,80. Heeft u 500 gebruikers die dit dagelijks doen, dan drijft een vast abonnementsmodel uw startup binnen een maand naar een faillissement — circa 80% van de met AI gebouwde projecten bereikt mede hierdoor nooit een stabiele, winstgevende productieomgeving. Dit is waarom afbeeldings-API's marges vernietigen en welke backend-architectuur vereist is om winstgevend te blijven.
+Het genereren van één enkele afbeelding in hoge resolutie via de DALL-E 3 API van OpenAI kost circa **$ 0,08**. Als een gebruiker 10 keer op de knop "Genereer Afbeelding" klikt om het perfecte resultaat te krijgen, kost die ene gebruikerssessie u direct **$ 0,80**. Wanneer 500 actieve gebruikers dit dagelijks doen, zal een traditioneel vast abonnementsmodel uw startup binnen één maand volledig failliet laten gaan — en deze financiële aderlating voltrekt zich geruisloos, omdat u het vaak pas ontdekt wanneer de creditcardafschrijving aan het einde van de maand binnenkomt.
 
-## De Vier Winstmoordenaars van AI-Afbeeldingsgeneratie
+Voor niet-technische oprichters die leunen op no-code app builders is deze "Pixel Valkuil" een van de meest voorkomende oorzaken van een faillissement. Het draagt direct bij aan het feit dat circa **80% van de door AI gebouwde softwareprojecten nooit een winstgevende productiefase bereikt**. Hier leest u waarom beeld-API's uw marges vernietigen en welke geavanceerde software-architectuur u moet implementeren om winstgevend te blijven.
 
-Afbeeldings-API's (zoals DALL-E 3, Midjourney of Stable Diffusion) belasten uw bankrekening via vier mechanismen:
+## De Vier Winstmoordenaars van AI-Beeldgeneratie
 
-### 1. De "Iteratie-Belasting" (*The Iteration Tax*)
-Tekstgeneratie is vaak in één of twee pogingen bruikbaar. Beeld is subjectief: een gebruiker genereert gerust 15 variaties van een marketinglogo voordat hij tevreden is. Zonder een harde, server-side kredietlimiet kost één perfectionistische gebruiker u meer aan API-kosten dan zijn maandelijkse abonnementsgeld oplevert.
+API's voor beeldgeneratie — zoals DALL-E 3, Midjourney of Stable Diffusion — putten uw bankrekening uit via vier verborgen mechanismen:
 
-### 2. Te Hoge Standaard-Resoluties
-Afbeeldings-API's factureren op basis van resolutie: een 1024x1024 DALL-E 3 afbeelding kost $0,04 in standaardkwaliteit en $0,08 in HD-kwaliteit — het dubbele tarief voor een verschil dat een bezoeker op een mobiel scherm nauwelijks waarneemt. Als uw frontend blindelings HD-afbeeldingen opvraagt voor simpele blog-thumbnails, verliest u 50% van uw budget aan onnodige pixels.
+### 1. De Subjectieve Iteratie-Belasting (The Iteration Tax)
 
-### 3. De "Ghost Generation" Lus
-In no-code omgevingen (zoals Zapier of Make) veroorzaakt een time-out op de frontend vaak een automatische retry. De API genereert de afbeelding opnieuw en brengt dubbele kosten in rekening voor een afbeelding die de gebruiker nooit te zien krijgt.
+Tekstgeneratie is doorgaans bij de eerste of tweede poging al bruikbaar. Beeldgeneratie daarentegen is uiterst subjectief. Een gebruiker genereert gemakkelijk vijftien verschillende variaties van een "cyberpunk marketinglogo" voordat hij tevreden is. Als u geen hard gecodeerde limiet op het aantal dagelijkse generaties heeft ingesteld, kost één enkele perfectionistische gebruiker u meer aan API-uitgaven dan zijn gehele maandelijkse abonnementsbedrag oplevert, zonder dat er een natuurlijk plafond is dat hem tegenhoudt.
 
-### 4. Plotselinge Tariefwijzigingen van Leveranciers
-Tarieven voor beeld-API's fluctueren sterk: providers wijzigen resolutietiers of faseren goedkope modellen uit. Als uw facturatielogica uitgaat van een vast bedrag in plaats van dynamische berekeningen, slaat uw winstmarge van de ene op de andere dag stilletjes om in een verliespost.
+### 2. Dure Standaardinstellingen voor Hoge Resolutie
 
-## Architectuur voor Rendement en Winstmarge
+Beeld-API's factureren op basis van de gevraagde resolutie en kwaliteit. Het genereren van een 1024x1024 afbeelding via DALL-E 3 kost bijvoorbeeld $ 0,04 in Standaardkwaliteit en $ 0,08 in HD-kwaliteit — een verdubbeling van de prijs voor een kwaliteitsverschil dat een mobiele gebruiker op een klein scherm nauwelijks waarneemt. Als uw frontend blindelings HD-afbeeldingen opvraagt voor een simpele miniatuurweergave (thumbnail), gooit u letterlijk 50% van uw budget weg aan onzichtbare pixels.
 
-Om rendabel AI-afbeeldingen aan te bieden kunt u niet vertrouwen op vaste flat-rate abonnementen. U heeft een gecontroleerde backend-architectuur nodig.
+### 3. De "Ghost Generation" Foutlus
 
-Dit is de infrastructuur die [LaunchStudio](https://launchstudio.eu/en/) bouwt voor visuele AI-startups. Gesteund door [Manifera's](https://www.manifera.com/) enterprise software-engineers in Amsterdam en Ho Chi Minh-stad, richten wij strikte server-side mechanismen in:
+Wanneer in no-code platformen zoals Zapier of Make de verbinding tussen de frontend en de server een time-out geeft vóórdat de afbeelding volledig is gegenereerd, probeert de workflow de aanroep vaak automatisch opnieuw uit te voeren. De API genereert de afbeelding een tweede (of derde) keer, waardoor u meermalen betaalt voor een afbeelding die de eindgebruiker nooit te zien krijgt.
 
-1. **Creditsysteem (Pre-paid Credits):** We koppelen Stripe Metered Billing direct aan uw Supabase-database. Gebruikers kopen bundels van bijv. 100 "Image Credits". Onze Edge Functions schrijven per generatie atomair exact één credit af in dezelfde transactie als de API-call.
-2. **Dynamische Resolutie-Optimalisatie:** De backend selecteert automatisch de meest voordelige API-resolutie op basis van de use-case (thumbnails versus print-exports), wat uw API-factuur halveert.
-3. **Slimme Afbeeldings-Caching:** Vraagt een gebruiker om een afbeelding, dan slaan we het resultaat en de prompt-hash op in een AWS S3-bucket. Vraagt een andere gebruiker om exact dezelfde prompt, dan levert onze backend direct de gecachete afbeelding af voor €0,00.
-4. **Provider-Agnostische Routering:** We bouwen een routeringslaag die soepel kan uitwijken naar voordeligere modellen (zoals Stable Diffusion of Flux via Replicate) voor lichte taken, en premium modellen alleen inzet wanneer maximale kwaliteit vereist is.
+### 4. Tariefwijzigingen van Leveranciers Zonder Waarschuwing
 
-> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+Prijzen voor beeld-API's fluctueren aanzienlijk sneller dan tekstprijzen. AI-aanbieders passen periodiek hun resolutie-staffels aan of faseren goedkopere modellen uit ten gunste van duurdere standaardmodellen. Als uw facturatielogica een vaste kostprijs per afbeelding hardcoded in de applicatie heeft staan in plaats van deze dynamisch te synchroniseren, kan een tariefwijziging uw winstmarge van de ene op de andere dag negatief maken.
 
-## Belangrijkste inzichten
+## Software-Architectuur voor Maximale Winstgevendheid
 
-- Het genereren van AI-afbeeldingen is vele malen duurder dan tekst en vernietigt flat-rate abonnementsmodellen binnen enkele weken.
-- De subjectieve aard van afbeeldingen leidt tot tientallen generaties per sessie (de Iteratie-Belasting).
-- Vermijd overbodige HD-resoluties en automatische retry-lussen in no-code platformen.
-- Stap over op een strict Pre-paid Creditsysteem met atomaire aftrek en slimme image-caching in S3.
-- LaunchStudio bouwt de maatwerk backend-architectuur om afbeeldings-API's rendabel, schaalbaar en winstgevend te maken.
+Om AI-beeldgeneratie rendabel aan te bieden, kunt u niet vertrouwen op platte abonnementsprijzen en rechtstreekse API-aanroepen vanuit de frontend. U moet een strikt gecontroleerde backend-architectuur opzetten.
 
-[Stop met verlies draaien op elke gegenereerde afbeelding. Werk samen met LaunchStudio voor een winstgevende API-architectuur](https://launchstudio.eu/en/#contact).
+Dit is exact de infrastructuur die [LaunchStudio](https://launchstudio.eu/en/) ontwerpt voor visuele AI-startups. Gesteund door de diepgaande enterprise expertise van [Manifera](https://www.manifera.com/) — met ruim 11 jaar ervaring, 120+ senior ontwikkelaars en 160+ succesvolle projecten vanuit ons hoofdkantoor aan de **Herengracht 420 in Amsterdam (1017 BZ)**, onze vestiging aan **100 Tras Street (#16-01, 100 AM) in Singapore** en ons centrum aan de **Pho Quang Street in Ho Chi Minhstad, Vietnam** — implementeren wij de server-side controles die uw marges beschermen, tegen circa 20% van de kosten van een traditioneel bureau.
+
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+
+Zo ontwerpen wij een winstgevend systeem rond de Pixel Valkuil:
+
+1. **Credit-Based Facturatiesystemen:** We integreren Stripe Metered Billing rechtstreeks in uw PostgreSQL-database. In plaats van "onbeperkt" kopen gebruikers een bundel van bijvoorbeeld 100 "Beeld-Credits". Onze Edge Functions boeken via een atomaire database-transactie exact één credit af op het moment van de API-aanroep, zodat een mislukte generatie de gebruiker nooit onterecht benadeelt en overmatig gebruik direct wordt begrensd.
+2. **Dynamische Resolutie-Optimalisatie:** We programmeren backend-logica die automatisch de goedkoopste API-resolutie selecteert op basis van de specifieke schermcontext (bijv. thumbnails versus drukwerk-downloads), wat uw API-factuur halveert zonder verlies van gebruikerservaring.
+3. **Slimme Image Caching:** Vraagt Gebruiker A om een *"gouden retriever op een skateboard"*, dan slaan we de gegenereerde afbeelding en een hash van de prompt op in een beveiligde Amazon S3-bucket. Vraagt Gebruiker B later om exact dezelfde of een sterk vergelijkbare prompt, dan serveert onze backend direct de gecachte afbeelding voor € 0,00 in plaats van opnieuw DALL-E 3 te betalen.
+4. **Provider-Agnostische Routering:** We bouwen een routeringslaag die actuele API-tarieven uitleest uit een configuratietabel en voor eenvoudige generaties kan uitwijken naar aanzienlijk goedkopere modellen (zoals Stable Diffusion of Flux via Replicate), terwijl premium modellen uitsluitend worden ingeschakeld wanneer uitzonderlijke precisie vereist is. Zie onze [transparante projectprijzen](https://launchstudio.eu/en/#packages) voor een overzicht.
+
+## Belangrijkste Inzichten
+
+- AI-beeldgeneratie is vele malen duurder dan tekst en vernietigt vaste abonnementsmodellen binnen enkele weken.
+- De subjectieve aard van afbeeldingen leidt tot de "Iteratie-Belasting", waarbij gebruikers tientallen variaties genereren op uw kosten.
+- Prijsaanpassingen van API-leveranciers vormen een stil margerisico als kosten niet dynamisch worden beheerd.
+- Een Credit-Based facturatiesysteem met atomaire afschrijving via server-side Edge Functions is essentieel voor gezonde winstmarges.
+- LaunchStudio bouwt de maatwerk backend-architectuur om creditsystemen, beeld-caching en multi-provider routering naadloos te implementeren.
+
+[Stop met verlies draaien op elke gegenereerde afbeelding. Bouw een winstgevende architectuur met LaunchStudio](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: De advertentiegenerator voor e-commerce
+### Een AI-Native Oprichter in Actie: De Advertentie-Generator voor E-Commerce
 
-Tom bouwde een SaaS die automatisch Instagram-advertenties genereerde voor Shopify-webwinkeliers met behulp van Bubble en de DALL-E 3 API. Hij vroeg een vast tarief van $29 per maand voor "Onbeperkte Advertentie-Variaties".
+Tom ontwikkelde een SaaS-platform dat geautomatiseerd Instagram-advertenties genereerde voor webwinkels op Shopify. Met behulp van een no-code app builder koppelde hij de OpenAI DALL-E 3 API. Hij hanteerde een vaste abonnementsprijs van € 29 per maand voor "Onbeperkte Advertentie-Variaties".
 
-De lancering was een hit: 200 gebruikers in de eerste week. Maar in week twee sloeg het noodlot toe: perfectionistische webwinkeliers genereerden honderden variaties per middag voor één enkel product. Toms OpenAI-factuur explodeerde naar $4.500 in 14 dagen. Hij verloor meer dan $10 per actieve abonnee.
+De lancering leek een groot succes: binnen de eerste week sloten 200 webwinkeliers zich aan. In de tweede week voltrok zich een ramp. E-commerce ondernemers bleken uiterst perfectionistisch. Eén enkele gebruiker genereerde op één namiddag meer dan 400 variaties van een schoenenadvertentie om de belichting perfect te krijgen. Toms OpenAI-factuur explodeerde naar **$ 4.500 in 14 dagen**, waardoor zijn abonnementsomzet volledig werd weggevaagd. Hij verloor ruim € 10 per gebruiker per maand.
 
-Tom schakelde **LaunchStudio (door Manifera)** in om de verliezen te stoppen.
+Tom nam met spoed contact op met **LaunchStudio (door Manifera)** om de bloeding te stoppen.
 
-We verwijderden de API-sleutels uit de Bubble-frontend en bouwden een maatwerk Node.js-backend met Supabase en Stripe Metered Billing: gebruikers betaalden voortaan $19/maand voor 100 credits en konden opwaardeerpakketten kopen van 500 credits voor $30.
+Wij verwijderden direct alle DALL-E 3 API-sleutels uit zijn frontend. We bouwden een maatwerk Node.js backend op basis van Supabase en integreerden Stripe Metered Billing. We herstructureerden zijn verdienmodel: gebruikers betaalden voortaan € 19 per maand voor 100 "Generatie-Credits" en konden opwaardeerpakketten van 500 credits bijkopen voor € 30.
 
-Bovendien implementeerden we een slim Image Caching-systeem: omdat veel winkeliers vergelijkbare prompts gebruikten ("minimalistische witte studioachtergrond"), leverde onze backend in 30% van de gevallen direct een gecachete afbeelding af voor $0,00 aan API-kosten.
+Cruciaal was onze implementatie van Image Caching. Omdat veel webwinkeliers vergelijkbare achtergronden aanvroegen (zoals "minimalistische witte studio-achtergrond"), onderschepte onze backend de prompt en leverde in 30% van de gevallen direct een gecacht beeld op voor € 0,00.
 
-**Resultaat:** Binnen 30 dagen transformeerde Toms SaaS van zwaar verlieslatend naar zeer winstgevend. Gebruikers die 400 afbeeldingen per dag wilden, werden zijn meest rendabele klanten in plaats van een financiële bedreiging. *"LaunchStudio heeft het verdienmodel van mijn startup gered. Dankzij hun backend-architectuur verdien ik nu structureel geld aan visuele AI."*
+**Resultaat:** Binnen 30 dagen transformeerde Toms SaaS van een zwaar verlieslatend project naar een uiterst winstgevende onderneming. Dankzij het creditsysteem werden intensieve gebruikers — die honderden beelden per dag genereerden — zijn meest winstgevende klanten in plaats van zijn grootste kostenpost. *"LaunchStudio heeft de economische basis van mijn startup gered. Zij gaven mij de backend-controle om daadwerkelijk winst te maken op visuele AI."*
 
-**Kosten & tijdlijn:** €8.500 (Creditsysteem & Image Caching Architectuur) — binnen 15 werkdagen live.
+**Kosten & Tijdlijn:** €8.500 (Credit-Based Facturatie & Image Caching Architectuur) — binnen 15 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Waarom is AI-afbeeldingengeneratie zoveel duurder dan tekst?
-Taalmodellen voorspellen het volgende woord met relatief lage rekenkracht. Diffusiemodellen voor afbeeldingen moeten tegelijkertijd de kleurwaarden van miljoenen individuele pixels wiskundig berekenen op dure GPU-clusters, wat leidt tot een aanzienlijk hogere kostprijs per aanroep.
+### Waarom is AI-beeldgeneratie zoveel duurder dan tekstgeneratie?
 
-### Wat is Stripe Metered Billing?
-In plaats van een vast maandelijks tarief brengt Metered Billing het daadwerkelijke verbruik in rekening (zoals bij een nutsbedrijf). Klanten betalen een basisbedrag plus een vast tarief (bijv. €0,15) per gegenereerde afbeelding boven hun bundel.
+Tekstmodellen voorspellen het volgende woord met relatief lage rekenkracht. Beeldgeneratiemodellen (Diffusion modellen) moeten daarentegen de kleur en textuur van miljoenen afzonderlijke pixels gelijktijdig berekenen via zware grafische processors (GPU's), wat leidt tot een aanzienlijk hogere kostprijs per aanroep.
 
-### Hoe werkt Image Caching precies?
-Wanneer een afbeelding wordt gegenereerd, slaan we het bestand en de hash van de prompt op in de database. Vraagt een andere gebruiker om een vergelijkbare afbeelding, dan levert onze backend het opgeslagen bestand direct af zonder een cent aan de API te betalen.
+### Wat houdt Stripe Metered Billing precies in?
+
+In plaats van een vast maandelijks bedrag volgt Metered Billing het daadwerkelijke verbruik, vergelijkbaar met een energierekening. U rekent een basisbedrag plus een vast tarief (bijv. € 0,15) per extra verbruikte credit af. Dit vereist maatwerk backend-engineering om uw database nauwkeurig te synchroniseren met Stripe zonder dubbele afschrijvingen.
+
+### Hoe werkt Image Caching in de praktijk?
+
+Wanneer een afbeelding wordt gegenereerd, slaan we het bestand en een wiskundige hash van de prompt op in een database en S3-opslag. Vraagt een andere gebruiker om een identieke prompt, dan levert de backend de reeds opgeslagen afbeelding direct gratis af, waardoor de dure API-aanroep volledig wordt omzeild.
 
 ### Kunnen no-code tools een betrouwbaar creditsysteem beheren?
-No-code tools zijn hiervoor te storingsgevoelig: als een workflow crasht, kan de afbeelding wel gegenereerd worden zonder dat de credit wordt afgeschreven. U heeft atomaire databasetransacties nodig via Supabase Edge Functions om fouten en misbruik uit te sluiten.
 
-### Wat is de voordeligste API voor AI-afbeeldingen?
-Hoewel DALL-E 3 gebruiksvriendelijk is, zijn open-source modellen zoals Stable Diffusion of Flux via platforms als Replicate of RunPod op schaal vaak aanzienlijk goedkoper. LaunchStudio bouwt flexibele backend-routering waarmee u direct tussen leveranciers kunt wisselen.
+Dat is uiterst risicovol. Als een no-code workflow (zoals Zapier) halverwege vastloopt, kan het voorkomen dat de afbeelding wél wordt gegenereerd maar de credit niet wordt afgeboekt. U heeft atomaire database-transacties op serverniveau nodig (zoals Supabase Edge Functions) om te garanderen dat facturatie en generatie 100% synchroon lopen.
+
+### Welke API is het voordeligst voor AI-beeldgeneratie?
+
+Hoewel DALL-E 3 zeer gebruiksvriendelijk is, zijn open-source modellen zoals Stable Diffusion of Flux (gehost via platforms zoals Replicate of RunPod) bij grote volumes aanzienlijk goedkoper. De backend-architectuur van LaunchStudio stelt u in staat om flexibel tussen deze aanbieders te schakelen zonder uw frontend aan te passen.
 
 <script type="application/ld+json">
 {
@@ -96,42 +109,42 @@ Hoewel DALL-E 3 gebruiksvriendelijk is, zijn open-source modellen zoals Stable D
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom is AI-afbeeldingsgeneratie zo kostbaar?",
+      "name": "Waarom is AI-beeldgeneratie zoveel duurder dan tekstgeneratie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beeldgeneratie vereist zware GPU-rekenkracht om miljoenen pixels per aanroep te berekenen, wat resulteert in veel hogere API-kosten dan bij tekstmodellen."
+        "text": "Beeldmodellen moeten miljoenen pixels tegelijkertijd berekenen op zware GPU-clusters, wat vele malen meer rekenkracht en kosten vergt dan tekstgeneratie."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het voordeel van Stripe Metered Billing?",
+      "name": "Wat houdt Stripe Metered Billing precies in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het koppelt omzet direct aan verbruik, waardoor intensieve gebruikers uw brutomarge niet uithollen maar juist extra omzet genereren."
+        "text": "Een facturatiemodel waarbij gebruikers betalen naar werkelijk verbruik via credits, waardoor zware gebruikers uw winstmarges niet kunnen uithollen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe bespaart Image Caching API-kosten?",
+      "name": "Hoe werkt Image Caching in de praktijk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door veelvoorkomende prompts en afbeeldingen op te slaan in S3, kunnen herhaalde verzoeken gratis worden afgehandeld zonder de externe API aan te roepen."
+        "text": "Eerder gegenereerde beelden worden opgeslagen met een prompt-hash; identieke verzoeken worden direct gratis geserveerd zonder nieuwe API-kosten."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom falen no-code tools bij credit-facturatie?",
+      "name": "Kunnen no-code tools een betrouwbaar creditsysteem beheren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No-code platforms missen atomaire databasetransacties, waardoor race conditions ontstaan en gebruikers gratis afbeeldingen kunnen genereren."
+        "text": "Nee, no-code mist atomaire transacties. U heeft server-side Edge Functions nodig om te waarborgen dat credits en API-aanroepen foutloos synchroon lopen."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het goedkoopste alternatief voor DALL-E 3?",
+      "name": "Welke API is het voordeligst voor AI-beeldgeneratie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open-source modellen zoals Stable Diffusion of Flux via Replicate zijn op schaal aanzienlijk goedkoper en eenvoudig in te passen via onze backend-routering."
+        "text": "Open-source modellen zoals Flux en Stable Diffusion via Replicate zijn bij volume aanzienlijk goedkoper dan DALL-E 3 en bieden maximale margebescherming."
       }
     }
   ]

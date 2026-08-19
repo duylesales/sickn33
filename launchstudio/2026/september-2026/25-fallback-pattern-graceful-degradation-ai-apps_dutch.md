@@ -1,95 +1,98 @@
 ---
-Titel: "Graceful Degradation en Fallback-Patronen voor AI in SaaS"
-Trefwoorden: AI deployment, AI software engineering, AI security risk, AI en software ontwikkeling, AI-native, AI app bouwen, AI SaaS platform, AI vulnerabilities, LaunchStudio, Manifera
+Titel: "Graceful Degradation Implementeren voor AI in Software Engineering"
+Trefwoorden: AI deployment, AI software engineering, AI security risk, AI and software development, AI-native, build AI app, AI SaaS platform, AI vulnerabilities, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Graceful Degradation en Fallback-Patronen voor AI in SaaS
+# Graceful Degradation Implementeren voor AI in Software Engineering
 
-Wanneer u een startup bouwt die afhankelijk is van externe AI-providers zoals OpenAI of Anthropic, erft u automatisch hun downtime. Vroeg of laat krijgt u te maken met een `500 Server Error`, een rate-limit of een piek in netwerklatentie. Als uw B2B SaaS-applicatie zo strak om het taalmodel heen is gebouwd dat een externe API-storing uw complete gebruikersinterface blokkeert, verliest u het vertrouwen van enterprise-klanten. Het kenmerk van volwassen software-engineering is ontwerpen op falen via **Graceful Degradation**.
+Wanneer u een software-startup bouwt die fundamenteel afhankelijk is van externe API's zoals OpenAI, Anthropic of Google Gemini, erft u automatisch en onvermijdelijk al hun downtime, netwerkstoringen en operationele problemen. Vroeg of laat krijgt de externe API te maken met een `500 Internal Server Error`, botst uw backend tegen een onverwachte rate limit tijdens een piek, of ontstaat er een forse latentiepiek door een wereldwijd incident bij de cloudprovider. Als uw B2B SaaS-applicatie zó strak en naïef rondom de AI is geconstrueerd dat een externe API-storing uw complete gebruikersinterface laat vastlopen of crashen, verliest u gegarandeerd betalende enterprise-klanten en zakelijke contracten. Het ultieme en onbetwiste kenmerk van volwassen software engineering is het proactief ontwerpen voor onvermijdelijke storingen via **Graceful Degradation (Geleidelijke Degradatie)**.
 
 ## Het Principe van Graceful Degradation
 
-Graceful Degradation is een beproefd ontwerpprincipe uit de distributed systems engineering: als een geavanceerd, complex subsysteem uitvalt, crasht de applicatie niet. Het systeem schakelt gecontroleerd terug naar een eenvoudiger, robuuste basisstatus waarin de gebruiker de kerntaak alsnog kan voltooien, desnoods met iets meer handmatig werk.
+Graceful Degradation is een fundamenteel en beproefd ontwerpprincipe dat stamt uit decennia van onderzoek naar gedistribueerde softwaresystemen, lang vóór de opkomst van moderne Large Language Models. Het principe dicteert dat wanneer een complexe, geavanceerde component in de softwareketen faalt, het totale systeem onder geen beding volledig mag omvallen. In plaats daarvan moet de software gecontroleerd en automatisch terugvallen naar een eenvoudiger, robuuster handmatig niveau, zodat de zakelijke eindgebruiker zijn primaire kerntaak altijd zonder blokkades kan afronden.
 
-In de context van zakelijke software moet AI een **versneller** van een workflow zijn, nooit de enige toegangspoort.
+In de context van moderne AI-software betekent dit heel concreet: de AI fungeert te allen tijde als een *versneller* van een bestaande workflow, nooit en te nimmer als de enige exclusieve toegangspoort ertoe. Deze fundamentele framingkeuze — is de AI een optionele efficiëntielaag bovenop een werkend handmatig proces of de enige manier om iets gedaan te krijgen — bepaalt of een incidentele OpenAI-storing resulteert in een simpele supportvraag of in het vroegtijdig beëindigen van een zakelijk jaarcontract.
 
-## Fallbacks in de Gebruikersinterface Ontwerpen
+## De Gebruikersinterface Ontwerpen met Fallbacks (UI Fallback)
 
-Stel, u bouwt een AI-gestuurd CRM dat automatisch websites van leads analyseert en een gepersonaliseerde e-mail opstelt:
+Neem als sprekend praktijkvoorbeeld een AI-gedreven CRM dat automatisch de website van een potentiële lead analyseert en een uiterst gepersonaliseerde acquisitie-mail opstelt. Wat gebeurt er technisch als de OpenAI API plotseling kampt met een storing?
 
-- **Slechte Architectuur:** De gebruiker klikt op de lead, een laadspinner blijft oneindig draaien, een rode "Error 502" melding verschijnt en de gebruiker kan vandaag geen e-mail versturen. Het hele scherm is onbruikbaar omdat een niet-afgevangen uitzondering de componentenboom breekt.
-- **Graceful Architectuur:** De interface toont standaard een overzichtelijk, handmatig invoerveld. De knop "Automatisch genereren met AI" bevindt zich erboven als hulpmiddel. Faalt de API, dan meldt de interface vriendelijk: *"De AI-assistent is tijdelijk niet beschikbaar. U kunt onderstaand formulier handmatig invullen en versturen."* De gebruiker kan gewoon doorwerken en de bedrijfscontinuïteit blijft gewaarborgd.
+- **De Gebrekkige en Fragiele Architectuur:** De gebruiker klikt op de lead, een laadicoon blijft oneindig draaien, er verschijnt een nietszeggende en lelijke rode "Error 502 Bad Gateway" toast-melding op het scherm en de gebruiker kan op dat moment geen enkele e-mail versturen. De complete functionaliteit — inclusief onderdelen die niets met de AI te maken hadden, zoals de basisteksteditor — is onbereikbaar doordat één enkele ongevalideerde AI-component in de render-tree een fatale runtime error veroorzaakt.
+- **De Graceful Architectuur:** De gebruikersinterface toont standaard een klassiek, overzichtelijk en leeg invoerveld voor handmatige e-mailopmaak. De knop "Magische AI Concept Generatie" is visueel geplaatst als een handig hulpmiddel erboven, duidelijk gepositioneerd als een assistent in plaats van een verplichte sluis. Klikt de gebruiker op de knop en faalt de externe API, dan toont de interface een vriendelijke en transparante melding: *"De AI-assistent is momenteel tijdelijk niet bereikbaar wegens onderhoud bij de provider. U kunt uw bericht hieronder handmatig opstellen en direct verzenden."* De gebruiker moet weliswaar even zelf typen, maar de bedrijfscontinuïteit blijft 100% gewaarborgd en de rest van het platform blijft vlekkeloos interactief dankzij React Error Boundaries.
 
-## Backend Fallbacks: Multi-Provider Routering
+## Backend Fallbacks: Multi-Provider Routering (Multi-Provider Routing)
 
-Graceful degradation hoort ook thuis in de backend-orchestratielaag via **Multi-Provider Routing**:
+Graceful degradation hoort niet uitsluitend in de frontend-laag te leven; het moet diep verankerd zijn in de backend-orchestratielaag. U mag uw architectuur en bedrijfsvoering nooit afhankelijk maken van één enkele modelaanbieder.
 
-1. **Primaire Aanroep:** De server stuurt het verzoek naar het primaire model (zoals GPT-4o).
-2. **Circuit Breaker:** Als de aanroep langer duurt dan 8 tot 10 seconden of een 5xx-fout retourneert, vangt een circuit-breaker patroon (zoals `opossum` in Node.js) de fout op.
-3. **Automatische Fallback:** Zonder dat de frontend er iets van merkt, stuurt de backend dezelfde prompt direct door naar een secundaire provider (zoals Claude 3.5 Sonnet, Google Gemini of een zelf-gehost Llama-model).
+Uw Node.js backend hoort standaard uitgerust te zijn met **Multi-Provider Routering** gecombineerd met een Circuit Breaker patroon (geïmplementeerd via betrouwbare libraries zoals `opossum`). Wanneer een gebruiker een AI-generatie triggert, roept de server eerst het primaire model aan (bijvoorbeeld GPT-4o). Als de API na 8 tot 12 seconden nog geen antwoord heeft gegeven of een 5xx-fout retourneert, vangt de backend dit geruisloos op via een try-catch constructie en routeert exact dezelfde prompt direct door naar een alternatieve provider zoals Anthropic Claude 3.5 Sonnet, Google Gemini of een zelfgehost open-source Llama-3 model. De gebruiker merkt niets van de achterliggende provider-storing en ontvangt binnen enkele seconden alsnog zijn antwoord. In B2B SaaS is een betrouwbare 90% accuratesse vele malen waardevoller dan een haperende 100% accuratesse.
 
-De gebruiker ontvangt wellicht een iets andere formulering, maar het proces slaagt altijd. In zakelijke SaaS is 90% nauwkeurigheid met 100% uptime oneindig veel beter dan 100% nauwkeurigheid met frequente crashes.
+## Retry-Logica en Idempotentie (Idempotency Keys)
 
-## Idempotentie en Veilige Retries
+Een gevaarlijke valkuil bij automatische herhaalpogingen (retries): als een verzoek door een netwerkonderbreking wel succesvol op de server van de provider is verwerkt maar de response verloren ging in het netwerk, kan een automatische herhaalpoging leiden tot dubbele facturatie, dubbele e-mailverzendingen of inconsistente database-records. Om dit te voorkomen, moet elke herhaalbare AI-operatie worden voorzien van een **Idempotentie-Sleutel (Idempotency Key)** — een unieke UUID gegenereerd aan de clientzijde en meegegeven aan de backend. Hierdoor herkent het systeem een herhaalde aanroep direct als exact hetzelfde verzoek en worden dubbele mutaties technisch uitgesloten.
 
-Pas op met blinde retries. Als een AI-aanroep faalt door een netwerkonderbreking terwijl de transactie op de achtergrond wél is verwerkt, kan een automatische herhaalpoging leiden tot dubbele creditcard-afschrijvingen of dubbele e-mails. Geef elke AI-gestuurde schrijfoperatie altijd een unieke **idempotency key** mee om herhalingsfouten uit te sluiten.
+## Transparante en Menselijke Foutmeldingen
 
-Herre Roelevink, oprichter en Managing Director van Manifera, legt uit: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera ontwerpt sinds **2014** veerkrachtige systemen voor opdrachtgevers zoals Vodafone.
+Wanneer werkelijk alle fallbacks falen, bepaalt de wijze van communicatie of een klant afhaakt. Confronteer een zakelijke gebruiker nooit met ruw technisch jargon zoals `429 Rate Limit Exceeded` of `Context Window Overflow`.
 
-## Belangrijkste inzichten
+Vertaal de foutmelding altijd naar begrijpelijke, menselijke taal met een direct handelingsperspectief. Als een geüpload PDF-bestand te groot is voor het contextvenster, meldt de UI: *"Het geüploade document is te omvangrijk om in één keer door de AI geanalyseerd te worden. Splits het bestand in twee delen en probeer het opnieuw."* Bied tevens een optie "Notificeer mij zodra de AI-service hersteld is", zodat de taak automatisch in een achtergrondwachtrij wordt geplaatst en later alsnog wordt uitgevoerd.
 
-- Externe AI-API's krijgen onvermijdelijk te maken met storingen en rate-limits; uw applicatie mag bij provider-uitval nooit volledig vastlopen.
+## Waarom Dit Onderscheid Maakt Tussen Prototypes en Producten
 
-- Pas 'Graceful Degradation' toe: laat de interface bij een AI-storing direct terugvallen op handmatige formulieren zodat de gebruiker zijn werk kan afmaken.
+Oprichters die bouwen via Lovable, Bolt of Cursor houden tijdens de initiële bouwfase begrijpelijkerwijs weinig rekening met provider-uitval en edge-cases. Dit verklaart waarom circa 80% van de met AI gebouwde softwareprojecten strandt vóórdat een stabiele productiestatus wordt bereikt. Een prototype dat lokaal vlekkeloos functioneert tijdens een pitch, kan volledig bezwijken onder wankele bedrijfs-Wi-Fi of een incidentele cloudstoring bij OpenAI.
 
-- Verberg handmatige invoervelden nooit achter AI; houd de basisfunctionaliteit altijd direct toegankelijk.
+Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft de noodzaak van veerkracht: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze uiterst veerkrachtige multi-provider architecturen sinds **2014** vanuit haar Europese hoofdkantoor aan de **Herengracht 420 in Amsterdam**, **Singapore** en **Ho Chi Minhstad, Vietnam** voor bedrijfskritische klanten zoals Vodafone en CFLW Cyber Strategies. Bekijk meer op de [Manifera maatwerk softwareontwikkeling pagina](https://www.manifera.com/services/custom-software-development/).
 
-- Implementeer 'Multi-Provider Routing' met circuit-breakers op de backend om bij storingen geruisloos over te schakelen naar alternatieve modellen (OpenAI, Anthropic, Gemini).
+## Belangrijkste Inzichten
 
-- Gebruik altijd idempotency keys bij geautomatiseerde herhaalpogingen om dubbele acties en dubbele afschrijvingen te voorkomen.
+- AI-API's (OpenAI, Anthropic, Google) krijgen onvermijdelijk te maken met storingen en rate limits; uw software mag hier nooit door crashen.
+- 'Graceful Degradation' zorgt ervoor dat de applicatie bij een AI-uitval automatisch terugschakelt naar een functionele handmatige workflow.
+- Verberg handmatige invulvelden nooit achter een verplichte AI-stap; houd de handmatige invoer altijd direct bereikbaar als alternatief.
+- Implementeer Multi-Provider Routering met Circuit Breakers op de backend: schakel geruisloos over naar Claude of Gemini als OpenAI faalt.
+- Gebruik Idempotentie-Sleutels (Idempotency Keys) bij herhaalpogingen om dubbele database-writes of dubbele betalingen uit te sluiten.
+- Vertaal technische foutcodes altijd naar heldere, actiegerichte instructies voor de eindgebruiker.
 
-## Maak uw AI-applicatie bestand tegen provider-storingen
+## Ontwerp Uw Software voor Maximale Bedrijfscontinuïteit
 
-Veroorzaken externe API-storingen frustratie of uitval bij uw zakelijke klanten? **LaunchStudio** bouwt veerkrachtige architecturen met Multi-Provider Routing, circuit-breakers en Graceful UI Fallbacks, zodat uw software altijd operationeel en betrouwbaar blijft. Bekijk onze [werkwijze en pakketten](https://launchstudio.eu/en/#packages) voor meer informatie.
+Is uw B2B SaaS kwetsbaar voor externe API-storingen? **[LaunchStudio](https://launchstudio.eu/en/)** ontwerpt veerkrachtige applicatie-architecturen met ingebouwde Multi-Provider Routering, Circuit Breakers en Graceful UI Fallbacks, zodat uw software altijd operationeel blijft. Bekijk onze diensten op het [LaunchStudio pakkettenoverzicht](https://launchstudio.eu/en/#packages).
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **[Manifera](https://www.manifera.com/about-us/)**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: LLM-fallback patronen implementeren voor een facturatietool
+### Een AI-Native Oprichter in Actie: LLM-Fallback Patronen Implementeren voor een Facturatietool
 
-Jack, een abonnementsbeheerder, bouwde met **Lovable** een facturatie-assistent. De applicatie crashte volledig toen de Anthropic API een wereldwijde storing ondervond.
+Jack, een subscription manager, gebruikte **Lovable** om een geautomatiseerde facturatie-assistent te bouwen. De complete applicatie crashte toen de Anthropic API werd getroffen door een wereldwijde netwerkstoring.
 
-Hij schakelde **LaunchStudio (door Manifera)** in om een geautomatiseerd fallback-patroon te implementeren dat verzoeken direct doorstuurt naar OpenAI zodra Anthropic niet reageert.
+Hij werkte samen met **LaunchStudio (door Manifera)** om een multi-provider fallback patroon te implementeren dat API-verzoeken automatisch en geruisloos doorzet naar OpenAI zodra Anthropic fouten retourneert.
 
-**Resultaat:** De applicatie behield 100% uptime tijdens daaropvolgende grootschalige provider-storingen.
+**Resultaat:** De applicatie behield 100% uptime en beschikbaarheid tijdens daaropvolgende grootschalige provider-storingen.
 
-**Kosten & tijdlijn:** €1.100 (API Fallback Integration Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.100 (API Fallback Integratie Pakket) — productieklaar en binnen 3 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Wat betekent Graceful Degradation in AI-software?
+### Wat betekent Graceful Degradation bij AI-applicaties?
 
-Het ontwerpprincipe waarbij de applicatie bij een storing van het taalmodel niet crasht, maar gecontroleerd terugschakelt naar een handmatige workflow zodat de gebruiker zijn taak kan volbrengen.
+Een software-ontwerpprincipe waarbij de applicatie bij het uitvallen van een AI-provider niet crasht, maar ordelijk terugschakelt naar een handmatige werkwijze zodat de gebruiker zijn werk kan voltooien.
 
-### Waarom is dit essentieel voor B2B SaaS?
+### Waarom is dit onmisbaar voor B2B SaaS?
 
-Omdat zakelijke gebruikers afhankelijk zijn van uw software voor hun dagelijkse werkzaamheden; een externe API-storing mag de operationele bedrijfsvoering van uw klanten niet platleggen.
+Omdat zakelijke klanten afhankelijk zijn van uw software voor hun dagelijkse bedrijfsvoering. Als de AI tijdelijk uitvalt, moeten facturen en e-mails nog steeds handmatig verstuurd kunnen worden om contractuele uptime te borgen.
 
-### Wat houdt multi-provider routering in?
+### Wat houdt Multi-Provider Routering precies in?
 
-Een backend-architectuur waarin de server bij een time-out of foutmelding van de primaire LLM (zoals OpenAI) de prompt automatisch en ongemerkt doorstuurt naar een reserve-provider (zoals Anthropic of Google).
+Een backend-architectuur die API-storingen bij de primaire LLM-aanbieder (bijv. OpenAI) realtime detecteert via een circuit breaker en de prompt direct doorstuurt naar een reserve-provider (zoals Claude of Gemini).
 
-### Waarom zijn idempotency keys belangrijk bij AI-retries?
+### Hoe communiceert u storingen op een professionele manier naar gebruikers?
 
-Om te voorkomen dat een herhaalde API-aanroep leidt tot dubbele transacties, dubbele facturen of dubbel verzonden e-mails wanneer een eerdere poging op de achtergrond al was geslaagd.
+Toon nooit ruwe foutcodes (zoals 429 of 502). Leg het probleem in begrijpelijke taal uit en bied direct een handmatig alternatief aan.
 
-### Hoe ondersteunt LaunchStudio bij het bouwen van veerkrachtige AI-systemen?
+### Hoe ondersteunt LaunchStudio bij het bouwen van failover-systemen?
 
-LaunchStudio en Manifera implementeren circuit-breakers, multi-provider routers en fallback-interfaces binnen uw bestaande codebase binnen 1 tot 3 weken.
+LaunchStudio en Manifera (opgericht in 2014) implementeren multi-provider routers, circuit breakers en idempotente wachtrijen bovenop uw bestaande software binnen enkele werkdagen.
 
 <script type="application/ld+json">
 {
@@ -98,42 +101,42 @@ LaunchStudio en Manifera implementeren circuit-breakers, multi-provider routers 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat betekent Graceful Degradation in AI-software?",
+      "name": "Wat betekent Graceful Degradation bij AI-applicaties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het automatisch terugschakelen naar een handmatige werkbare modus wanneer een AI-service tijdelijk uitvalt."
+        "text": "Een ontwerpprincipe waarbij de app bij AI-storingen ordelijk terugvalt naar een handmatige workflow zonder te crashen."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom is dit essentieel voor B2B SaaS?",
+      "name": "Waarom is dit onmisbaar voor B2B SaaS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Om zakelijke continuïteit te garanderen en te voorkomen dat externe provider-downtime leidt tot contractbreuk of klantverloop."
+        "text": "Om bedrijfscontinuïteit en uptime te garanderen voor zakelijke klanten, zelfs tijdens wereldwijde provider-storingen."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat houdt multi-provider routering in?",
+      "name": "Wat houdt Multi-Provider Routering precies in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het automatisch routeren van prompts naar alternatieve AI-aanbieders via een backend circuit-breaker bij haperingen."
+        "text": "Het automatisch en geruisloos omleiden van prompts naar een back-up provider (Claude/Gemini) wanneer de primaire API faalt."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom zijn idempotency keys belangrijk bij AI-retries?",
+      "name": "Hoe communiceert u storingen op een professionele manier naar gebruikers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Om duplicate datawijzigingen en dubbele betalingen te voorkomen tijdens automatische herstelpogingen."
+        "text": "Door ruwe foutcodes te vertalen naar duidelijke, menselijke instructies en directe handmatige invulopties."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe ondersteunt LaunchStudio bij het bouwen van veerkrachtige AI-systemen?",
+      "name": "Hoe ondersteunt LaunchStudio bij het bouwen van failover-systemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door circuit-breakers, multi-provider fallbacks en robuuste foutafhandeling in te bouwen binnen 1 tot 3 weken."
+        "text": "LaunchStudio levert kant-en-klare circuit breakers, multi-provider routers en UI fallbacks via Manifera's expertise."
       }
     }
   ]

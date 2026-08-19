@@ -217,6 +217,9 @@
   - Bài 26: Lọc hai giai đoạn sử dụng Vector DB và mô hình Re-ranker (`26-re-ranking-secret-high-accuracy-rag_pic.png`).
 - **22:07**: Tạo ảnh minh họa cho bài viết `21-why-llm-is-hallucinating-rag-architecture-solution.md` (tỷ lệ 16:9, phong cách "Modern flat-ish vector illustration" kết hợp isometric 3D, "corporate tech style", có nhân vật lập trình viên và robot kéo tệp tin từ tủ dữ liệu sang AI dome, tông màu tím/xanh cobalt/neon cyan, nền sáng) và tự động cắt thành kích thước 1024x576, lưu là `21-why-llm-is-hallucinating-rag-architecture-solution_pic.png`.
 - **22:05**: Tạo ảnh minh họa cho bài viết `20-building-custom-tool-chains-niche-industries-ai.md` (tỷ lệ 16:9, phong cách "Modern flat-ish vector illustration", "corporate tech style", có nhân vật nhà phát triển và robot lắp ráp chuỗi API custom, nền sáng tươi sáng) và tự động cắt thành kích thước 1024x576, lưu là `20-building-custom-tool-chains-niche-industries-ai_pic.png`.
-- **22:00**: Kéo các thay đổi mới nhất từ GitHub về (chạy lệnh git pull). Khôi phục thư mục .git bị iCloud đổi tên nhầm thành .git 2 trước khi thực hiện.
+- **09:28**: Tạo ảnh minh họa siêu thực (hyper-realistic photography) cho bài viết số 44 (`44-mobile-app-development-company-near-me.md`) thuộc `manifera/2026/october-2026/`:
+  - **Phong cách & Kỹ thuật nhiếp ảnh**: Góc chụp cận trung hướng từ dưới lên nhẹ trong phòng Lab kiểm thử phần cứng và trung tâm viễn thám tự động hóa di động doanh nghiệp (Enterprise Mobile Device Test Automation Lab & Global Telemetry Hub). Dàn giá đỡ kiểm thử thiết bị đa tầng chạy automated regression testing, cùng đội ngũ kỹ sư DevSecOps và Giám đốc kỹ thuật VP of Engineering người Hà Lan thẩm định chỉ số DORA và CI/CD.
+  - **Quy chuẩn chân thực & Nhận diện**: Tuyệt đối không chứa logo thương hiệu, không dùng hình trừu tượng phi logic, đảm bảo chân thực môi trường công nghệ doanh nghiệp cao cấp.
+  - **Xử lý tỷ lệ & Lưu tệp**: Cắt chuẩn tỷ lệ 16:9 (`1365x768`), lưu file dưới tên [`44-mobile-app-development-company-near-me_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/october-2026/44-mobile-app-development-company-near-me_pic.jpg).
 
 

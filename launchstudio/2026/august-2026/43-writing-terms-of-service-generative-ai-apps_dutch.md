@@ -1,98 +1,102 @@
 ---
-Titel: Gebruiksvoorwaarden Schrijven voor Generatieve AI-Applicaties
-Trefwoorden: AI security issues, AI privacy issues, generative AI, AI SaaS, AI en softwareontwikkeling, AI vulnerabilities, AI-native, LaunchStudio, Manifera
+Titel: "Algemene Voorwaarden Schrijven voor Generatieve AI-Apps"
+Trefwoorden: AI security risico's, AI privacy problemen, generatieve AI, AI SaaS, AI en softwareontwikkeling, AI kwetsbaarheden, AI-native, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Gebruiksvoorwaarden Schrijven voor Generatieve AI-Applicaties
+# Algemene Voorwaarden Schrijven voor Generatieve AI-Apps
 
-Voor veel startende oprichters zijn de Algemene Voorwaarden (Terms of Service - ToS) een gekopieerd sjabloon van het internet. In traditionele software brengt dit al risico's met zich mee, maar bij generatieve AI-toepassingen is dit ronduit gevaarlijk. AI brengt geheel nieuwe juridische aansprakelijkheden met zich mee die in traditionele contracten niet voorkomen: AI-hallucinaties die financiële of reputatieschade veroorzaken, het genereren van schadelijke content en onduidelijkheden rondom intellectueel eigendom van gegenereerde teksten en beelden. Uw voorwaarden vormen uw primaire juridische schild.
+Voor de meeste beginnende oprichters zijn de Algemene Voorwaarden (Terms of Service / ToS) een haastig gekopieerd sluitstuk — men downloadt een generiek SaaS-sjabloon, past de bedrijfsnaam aan en publiceert het. In traditionele software is dit al riskant; in Generatieve AI is dit ronduit desastreus. AI introduceert geheel nieuwe juridische aansprakelijkheden waar een standaard software-sjabloon uit 2019 nooit op berekend is: hallucinaties die financiële of reputatieschade veroorzaken, het genereren van illegale of misleidende content en onduidelijkheid over het auteursrecht op gegenereerde data. Uw algemene voorwaarden zijn uw enige contractuele schild en moeten exact zijn afgestemd op het daadwerkelijke gedrag van uw AI-applicatie.
 
-## De Hallucinatie-Disclaimer: Verantwoordelijkheid bij de Gebruiker
+## De Hallucinatie-Disclaimer: Aansprakelijkheid Uitsluiten
 
-Grote taalmodellen genereren antwoorden op basis van waarschijnlijkheden en kunnen met grote stelligheid feitelijk onjuiste informatie produceren (hallucinaties). Als u een AI-assistent voor de juridische of financiële sector bouwt en het model verzint een niet-bestaand wetsartikel of een foutieve berekening, zoekt de klant direct een schuldige.
+Grote taalmodellen (LLM's) liegen met een overtuigende stelligheid. Dit is geen tijdelijke programmeerfout, maar een inherente eigenschap van probabilistische voorspellingen. Bouwt u een AI-assistent voor juristen en verzint het model een niet-bestaande gerechtelijke uitspraak die een advocaat overneemt in een rechtszaak, dan zal de gedupeerde partij direct uw platform aansprakelijk stellen.
 
-Uw voorwaarden moeten een ondubbelzinnige **Disclaimer inzake Nauwkeurigheid en Verificatie** bevatten:
+Uw voorwaarden moeten daarom een dwingende **Nauwkeurigheids- en Vertrouwensdisclaimer (Accuracy and Reliance Disclaimer)** bevatten die expliciet vastlegt dat:
 
-- De software maakt gebruik van probabilistische modellen en kan inaccurate, onvolledige of verouderde output genereren.
-- De gebruiker draagt de volledige eigen verantwoordelijkheid om alle gegenereerde output zelfstandig te verifiëren alvorens hierop te vertrouwen in een professionele, medische, financiële of juridische context.
-- De software dient uitsluitend ter ondersteuning en vormt geen formeel professioneel advies.
+- De AI gebruikmaakt van probabilistische modellen en onnauwkeurige, verouderde, onvolledige of misleidende uitkomsten kan genereren;
+- De eindgebruiker de volledige verantwoordelijkheid draagt om elke gegenereerde uitkomst zelfstandig op feitelijke juistheid te controleren alvorens hierop te vertrouwen in een zakelijke, medische, financiële of juridische context;
+- De software uitsluitend bedoeld is voor "informatieve doeleinden" en onder geen enkele voorwaarde gekwalificeerd professioneel advies vervangt.
+
+Dit voorkomt dat onvermijdelijke modelhallucinaties uitmonden in existentiële schadeclaims.
 
 ## Het Beleid voor Toegestaan Gebruik (Acceptable Use Policy - AUP)
 
-Als kwaadwillenden uw platform misbruiken voor het genereren van phishing-e-mails, schadelijke scripts of misleidende deepfakes, kunnen toezichthouders en betalingsverwerkers (zoals Stripe) uw account direct bevriezen als u geen strikt beleid voert.
+Generatieve AI kan eenvoudig worden misbruikt door kwaadwillenden. Als een gebruiker uw API misbruikt voor het genereren van grootschalige phishing-e-mails, niet-consensuele deepfakes of malware, en u beschikt niet over een strikt gebruiksbeleid, kunnen betalingsproviders (zoals Stripe) of toezichthouders uw platform direct offline halen.
 
-Uw voorwaarden moeten het genereren van illegale, misleidende, haatdragende of inbreukmakende content expliciet verbieden. Belangrijker nog: u moet uzelf het eenzijdige recht voorbehouden om accounts die deze regels schenden per direct en zonder restitutie te blokkeren.
+Uw voorwaarden moeten het genereren van illegale, misleidende, haatdragende of frauduleuze content expliciet verbieden. Belangrijker nog: u moet uzelf contractueel het eenzijdige recht voorbehouden om accounts bij een vermoeden van misbruik per direct en zonder restitutie te blokkeren en logbestanden te bewaren voor medewerking met opsporingsinstanties.
 
-## Doorgeefluik-aansprakelijkheid voor Externe API-Providers (Pass-Through Terms)
+## Doorgeefluik-Aansprakelijkheid (Pass-Through Liability)
 
-Als AI-applicatie leunt u zwaar op upstream providers zoals OpenAI of Anthropic. Als OpenAI te maken krijgt met een langdurige storing, haar contentfilters plotseling aanscherpt of modelgedrag aanpast waardoor uw app tijdelijk niet functioneert, zullen gebruikers compensatie van ú eisen.
+Als AI-applicatie leunt u zwaar op externe model-providers (zoals OpenAI, Anthropic of Google). Als OpenAI zijn contentfilters aanscherpt en plotseling bepaalde prompts van uw klanten blokkeert, of te maken krijgt met een wereldwijde storing, zullen uw gebruikers compensatie en SLA-boetes van ú eisen.
 
-U moet een **Doorgeefluik-bepaling (Pass-Through Clause)** opnemen. Hierin stemt de gebruiker ermee in dat uw dienst afhankelijk is van externe AI-dienstverleners en dat downtime, modelwijzigingen of restricties van die leveranciers buiten uw invloedssfeer liggen, waardoor u niet aansprakelijk bent voor eventuele gevolgschade.
+U moet daarom een **Pass-Through Bepaling** opnemen. Hierin stemt de gebruiker ermee in dat uw dienst afhankelijk is van externe AI-leveranciers en dat storingen, dataverlies, gewijzigde moderatieregels of model-updates buiten uw invloedssfeer liggen, waardoor u gevrijwaard bent van financiële aansprakelijkheid voor dergelijke externe incidenten.
 
 ## Eigenaarschap van Input en Output
 
-De meest gestelde vraag van zakelijke klanten is: *"Van wie is de gegenereerde content?"*
+De meest gestelde vraag van zakelijke klanten luidt: *"Wie is de eigenaar van de content die ik met jullie AI genereer?"*
 
-Definieer in uw voorwaarden helder het onderscheid tussen "Input" (de prompt en geüploade bestanden van de gebruiker) en "Output" (het antwoord van de AI). De gangbare B2B-standaard is dat u alle rechten op de Output overdraagt aan de gebruiker voor zover wettelijk toegestaan.
+Uw voorwaarden moeten "Input" (de prompts en documenten van de gebruiker) en "Output" (het AI-antwoord) juridisch helder definiëren. De moderne B2B-standaard is dat alle rechten op de Output worden overgedragen aan de gebruiker voor zover wettelijk toegestaan: *"Voor zover toepasselijk recht dit toestaat, dragen wij alle rechten, eigendom en aanspraken op de Output over aan u."*
 
-Koppel hier direct een **Gelijkenis-Disclaimer (Similarity Disclaimer)** aan: omdat taalmodellen bij vergelijkbare prompts vergelijkbare antwoorden formuleren, kan een gebruiker geen exclusief auteursrecht claimen ten opzichte van andere gebruikers die onafhankelijk een soortgelijk AI-antwoord hebben ontvangen.
+Koppel dit altijd aan een **Overeenkomstigheidsdisclaimer (Similarity Disclaimer)**. Omdat LLM's statistisch werken, kunnen twee onafhankelijke gebruikers met vergelijkbare prompts nagenoeg identieke antwoorden ontvangen. Uw voorwaarden moeten expliciet uitsluiten dat een gebruiker exclusieve rechten kan claimen tegenover andere gebruikers die toevallig een vergelijkbare uitkomst hebben ontvangen.
 
-Manifera bouwt en beveiligt enterprise-grade cloudapplicaties en compliance-systemen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
+## Arbitrage, Toepasselijk Recht en Aansprakelijkheidslimieten
 
-## Belangrijkste inzichten
+Twee bepalingen die founders regelmatig over het hoofd zien zijn het toepasselijk recht en de aansprakelijkheidslimiet (Liability Cap). Kies een bevoegde rechtbank en jurisdictie waarin u zich daadwerkelijk kunt verdedigen (zoals Nederland of Delaware).
 
-- Standaard SaaS-voorwaarden beschermen niet tegen de specifieke risico's van generatieve AI zoals hallucinaties, API-downtime en auteursrechtkwesties.
+Stel daarnaast een strikte aansprakelijkheidslimiet in, doorgaans gemaximeerd op het totale abonnementsbedrag dat de klant in de voorafgaande 12 maanden heeft betaald (of een vast bedrag van bijvoorbeeld € 100). Zonder dit plafond stelt een enkele ontevreden klant uw onderneming bloot aan ongecapte gevolgschadeclaims.
 
-- Neem een strikte 'Hallucinatie-Disclaimer' op die de plicht tot verificatie van AI-antwoorden expliciet bij de eindgebruiker legt.
+Ongeveer 45% van de met AI gegenereerde code bevat kwetsbaarheden rondom authenticatie en acceptatie-flows. Het sluitend inrichten van zowel de juridische tekst als de technische click-wrap toestemming is exact wat Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze juridisch en technisch geharde architecturen sinds **2014** vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**.
 
-- Formuleer een waterdicht Acceptable Use Policy (AUP) waarmee u misbruikers per direct kunt uitsluiten om sancties van betaalproviders te voorkomen.
+## Belangrijkste Inzichten
 
-- Sluit aansprakelijkheid voor storingen of beleidswijzigingen van externe modelproviders (zoals OpenAI) contractueel uit via pass-through bepalingen.
+- Generieke SaaS-voorwaarden beschermen niet tegen de specifieke risico's van Generatieve AI.
+- Neem een bindende Hallucinatie-Disclaimer op die de verificatieplicht voor AI-antwoorden volledig bij de gebruiker legt.
+- Formuleer een strikt Beleid voor Toegestaan Gebruik (AUP) waarmee u accounts bij misbruik direct kunt beëindigen.
+- Sluit aansprakelijkheid voor externe API-storingen en gewijzigde modelregels contractueel uit via een Pass-Through clausule.
+- Draag eigendom van de gegenereerde output over aan de gebruiker "voor zover wettelijk toegestaan" en hanteer een aansprakelijkheidsplafond gemaximeerd op de betaalde vergoedingen.
 
-- Draag eigendom van de gegenereerde output over aan de gebruiker, inclusief een disclaimer dat vergelijkbare prompts bij andere gebruikers tot identieke antwoorden kunnen leiden.
+## Bescherm Uw AI-Startup Juridisch en Technisch
 
-## Bouw een juridisch en technisch veilige AI-app
+Wacht niet op een juridisch geschil om te ontdekken dat uw voorwaarden tekortschieten. Hoewel **LaunchStudio** geen formele advocatendiensten verleent, ondersteunen wij oprichters met beproefde B2B best practices en bouwen we de technische handhavingsmechanismen (interactieve toestemmingsmodals, timestamp-logging, AUP-detectie) die uw voorwaarden daadwerkelijk afdwingbaar maken. Zie hoe dit werkt op de [LaunchStudio procespagina](https://launchstudio.eu/en/#process).
 
-Wilt u voorkomen dat ontbrekende voorwaarden of consent-flows uw startup kwetsbaar maken voor claims? **LaunchStudio** helpt oprichters bij het inrichten van de technische randvoorwaarden: interactieve toestemmingsmodals, AUP-detectie en sluitende auditlogs die aansluiten op enterprise-standaarden.
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/about-us](https://www.manifera.com/about-us/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Bekijk onze diensten](https://launchstudio.eu/en/#packages) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: algemene voorwaarden en akkoord-modals inbouwen voor een review-tool
+### Een AI-Native Oprichter in Actie: Algemene Voorwaarden en Toestemmingsmodals Inrichten voor een Review-SaaS
 
-Xavier, een bureau-eigenaar, gebruikte **Lovable** om een app te bouwen voor het automatisch beantwoorden van klantbeoordelingen. Klanten klaagden over onduidelijkheid rondom eigendom van teksten en de app had geen registratieflow voor het vastleggen van akkoord op de voorwaarden.
+Xavier, eigenaar van een marketingbureau, gebruikte **Lovable** om een geautomatiseerde review-beantwoorder te bouwen. Klanten klaagden over onduidelijkheid rondom auteursrechten en de app bevatte geen enkel click-wrap akkoord voor gewijzigde voorwaarden.
 
-Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam richtte interactieve akkoord-modals in met tijdgestempelde registratie van acceptatie, gekoppeld aan het gebruikersaccount.
+Hij schakelde **LaunchStudio (door Manifera)** in om duidelijke AI-clausules op te stellen en interactieve toestemmingsdialogen met geverifieerde tijdstempels in de database te implementeren.
 
-**Resultaat:** Aanmeldingen verliepen met rechtsgeldige acceptatie van de voorwaarden, waardoor juridische risico's direct werden geminimaliseerd.
+**Resultaat:** Registraties verlopen nu met juridisch afdwingbare akkoorden en een waterdichte audittrail, waardoor aansprakelijkheidsrisico's zijn geminimaliseerd.
 
-**Kosten & tijdlijn:** €800 (Legal Compliance Modals) — productieklaar en binnen 2 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €800 (Juridische Compliance Modals Pakket) — productieklaar en binnen 2 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Waarom kan ik geen standaard SaaS-voorwaarden kopiëren voor een AI-app?
+### Waarom kan ik niet volstaan met de algemene voorwaarden van een traditioneel SaaS-bedrijf?
 
-Omdat traditionele sjablonen geen rekening houden met AI-hallucinaties, downtime van externe LLM-providers, intellectueel eigendom van prompts en verboden generatieve use-cases.
+Omdat traditionele software-voorwaarden geen bepalingen bevatten voor AI-hallucinaties, model-afhankelijkheid van derden, auteursrechtelijke onzekerheid over gegenereerde content en AUP-misbruik van taalmodellen.
 
-### Wat houdt een Hallucinatie-Disclaimer precies in?
+### Wat regelt een 'Hallucinatie-Disclaimer'?
 
-Een contractuele bepaling die stelt dat het AI-model fouten kan maken en dat de gebruiker zelf verantwoordelijk is voor het controleren van de uitkomsten vóór zakelijke of professionele toepassing.
+Het stelt contractueel vast dat de AI foutieve of misleidende antwoorden kan genereren en verplicht de gebruiker om alle output zelfstandig te valideren alvorens er zakelijke beslissingen op te baseren.
 
-### Moet ik mijn externe API-providers vermelden in de voorwaarden?
+### Moet ik mijn externe AI-leveranciers vermelden in de voorwaarden?
 
-Ja. Via een pass-through clausule vrijwaart u uzelf van financiële aansprakelijkheid wanneer externe providers (zoals OpenAI) downtime ervaren of modelrestricties doorvoeren.
+Ja. Via een Pass-Through clausule legt u vast dat uw dienst afhankelijk is van externe API-providers (zoals OpenAI) en dat u niet aansprakelijk bent voor storingen of beleidswijzigingen bij die leveranciers.
 
-### Wie is juridisch eigenaar van de AI-gegenereerde output?
+### Wie bezit het auteursrecht op gegenereerde AI-output?
 
-Het is gebruikelijk om alle overdraagbare rechten op de output contractueel aan de gebruiker toe te wijzen, gecombineerd met een waarschuwing dat AI-content niet altijd volledig exclusief auteursrechtelijk beschermd kan worden.
+De industriestandaard is om alle rechten op de output over te dragen aan de gebruiker voor zover wettelijk toegestaan, inclusief de waarschuwing dat AI-content niet altijd auteursrechtelijk beschermd kan worden en niet gegarandeerd uniek is.
 
-### Levert LaunchStudio de technische infrastructuur voor voorwaarden-acceptatie?
+### Schrijft LaunchStudio zelf de juridische documenten?
 
-Ja. LaunchStudio en Manifera bouwen click-wrap toestemmingsmodals, audit-logging van gebruikersakkoorden en geautomatiseerde accountblokkades bij schending van het acceptabele gebruiksbeleid.
+LaunchStudio levert geen advocatenadvies, maar bouwt de technische infrastructuur (click-wrap modals, timestamping in de database, AUP-handhaving) die uw voorwaarden juridisch sluitend en afdwingbaar maakt.
 
 <script type="application/ld+json">
 {
@@ -101,42 +105,42 @@ Ja. LaunchStudio en Manifera bouwen click-wrap toestemmingsmodals, audit-logging
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom kan ik geen standaard SaaS-voorwaarden kopiëren voor een AI-app?",
+      "name": "Waarom kan ik niet volstaan met de algemene voorwaarden van een traditioneel SaaS-bedrijf?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat traditionele contracten geen dekking bieden voor AI-hallucinaties, model-downtime en auteursrechtelijke onzekerheden."
+        "text": "Omdat generieke voorwaarden geen dekking bieden voor AI-hallucinaties, API-storingen van derden en output-auteursrechten."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat houdt een Hallucinatie-Disclaimer precies in?",
+      "name": "Wat regelt een 'Hallucinatie-Disclaimer'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een bepaling die de verantwoordelijkheid voor het verifiëren van feitelijke AI-antwoorden contractueel bij de eindgebruiker legt."
+        "text": "Het legt de verificatieplicht van AI-antwoorden bij de gebruiker en sluit aansprakelijkheid voor feitelijke onjuistheden uit."
       }
     },
     {
       "@type": "Question",
-      "name": "Moet ik mijn externe API-providers vermelden in de voorwaarden?",
+      "name": "Moet ik mijn externe AI-leveranciers vermelden in de voorwaarden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, om aansprakelijkheid uit te sluiten bij storingen of gewijzigde moderatieregels van upstream partijen zoals OpenAI."
+        "text": "Ja, via een pass-through bepaling die u vrijwaart voor storingen en beleidswijzigingen bij externe LLM-providers."
       }
     },
     {
       "@type": "Question",
-      "name": "Wie is juridisch eigenaar van de AI-gegenereerde output?",
+      "name": "Wie bezit het auteursrecht op gegenereerde AI-output?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rechten worden doorgaans aan de gebruiker toegekend, met de disclaimer dat vergelijkbare prompts tot niet-unieke antwoorden kunnen leiden."
+        "text": "Rechten worden voor zover wettelijk mogelijk overgedragen aan de gebruiker, met een disclaimer over niet-gegarandeerde uniciteit."
       }
     },
     {
       "@type": "Question",
-      "name": "Levert LaunchStudio de technische infrastructuur voor voorwaarden-acceptatie?",
+      "name": "Schrijft LaunchStudio zelf de juridische documenten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera implementeren interactieve consent-modals, timestamped logging en AUP-handhavingsmechanismen."
+        "text": "LaunchStudio bouwt de technische handhaving zoals interactieve click-wrap modals en audit-logs voor waterdichte compliance."
       }
     }
   ]

@@ -1,109 +1,123 @@
 ---
-Titel: "Supabase Beveiligingshandleiding voor AI-Native Oprichters"
+Titel: "Supabase Beveiligings- en Setup-Gids voor AI-Native Oprichters"
 Trefwoorden: AI deployment, AI security, secure AI, supabase setup, LaunchStudio, Manifera, Cursor, AI database
 Koperfase: Overweging
 Doelpersona: B (Technische Solo-Oprichter)
 ---
 
-# Supabase Beveiligingshandleiding voor AI-Native Oprichters
+# Supabase Beveiligings- en Setup-Gids voor AI-Native Oprichters
 
-Uw AI-tool heeft een ogenschijnlijk perfect databaseschema gegenereerd. De tabellen zijn genormaliseerd, de foreign keys zijn netjes gekoppeld en de CRUD-bewerkingen werken vlekkeloos in uw lokale ontwikkelomgeving. Het voelt als een enorme overwinning. Hier is de ongemakkelijke waarheid: uw met AI gegenereerde Supabase-backend zal vrijwel zeker bezwijken zodra u de grens van 100 gelijktijdige echte gebruikers overschrijdt, en zal de gegevens van die gebruikers al ver vóór dat moment blootstellen.
+Uw AI-codetool heeft zojuist een op het eerste gezicht perfect databaseschema gegenereerd. De PostgreSQL-tabellen zijn netjes genormaliseerd, de foreign keys zijn logisch gekoppeld en de CRUD-operaties (Create, Read, Update, Delete) functioneren vlekkeloos in uw lokale testomgeving. Het voelt als een enorme technische overwinning.
 
-Technische solo-oprichters die Cursor of Bolt gebruiken, vertrouwen de AI vaak blindelings met de backend-infrastructuur omdat de resultaten aan de frontend zo overtuigend zijn. Maar een AI-codegenerator behandelt een database als een simpele spreadsheet — het optimaliseert puur voor het lezen en schrijven van testdata tijdens een demo. Het negeert beveiligingsbeleid, indexering en connection pooling volledig. Dit is geen klein overzicht; het sluit naadloos aan bij het bredere patroon waarin 45% van de AI-code minstens één exploiteerbaar beveiligingslek bevat, en databaseconfiguraties behoren tot de meest kwetsbare plekken.
+Hier is echter de ongemakkelijke en harde realiteit: uw door AI gegenereerde Supabase-backend zal vrijwel zeker bezwijken zodra u de grens van 100 gelijktijdige actieve gebruikers passeert — en erger nog: het zal vóór die tijd waarschijnlijk gevoelige privégegevens van uw gebruikers lekken naar derden.
 
-Deze handleiding behandelt de vier kritieke Supabase-configuratiefouten in elk AI-gegenereerd prototype en legt exact uit hoe u deze vóór de lancering oplost.
+Technische solo-oprichters die bouwen met Cursor, Bolt of Lovable vertrouwen het AI-model maar al te vaak blindelings met de backend-infrastructuur, simpelweg omdat de frontend-resultaten er zo verbluffend professioneel uitzien. Een AI-codegenerator behandelt een database echter als een eenvoudige statische spreadsheet — het optimaliseert uitsluitend voor het snel lezen en wegschrijven van gegevens tijdens een geïsoleerde demo. Het negeert structureel vitale beveiligingspolicies, database-indexering en connection pooling. Dit is geen klein incidenteel detail; het sluit naadloos aan bij het bredere industriële patroon waarbij 45% van de door AI gegenereerde codebases minimaal één ernstig exploiteerbaar beveiligingslek bevat.
+
+Deze gids analyseert gedetailleerd de vier meest kritieke Supabase-configuratiefouten in met AI gebouwde prototypes en toont exact hoe u deze structureel oplost vóórdat u live gaat.
 
 ## De Illusie van een "Werkende" Database
 
-Wanneer u een AI-tool vraagt om "een SaaS-app te bouwen met een Supabase-backend", genereert deze doorgaans een basisschema en maakt verbinding met uw Supabase-project via de openbare anonieme sleutel (*anon key*). Het werkt direct. U kunt gebruikers aanmaken, records toevoegen en lijsten ophalen.
+Wanneer u een AI-tool prompt met de opdracht *"bouw een SaaS-applicatie met een Supabase-backend"*, genereert het model een standaardschema en maakt het direct verbinding met uw Supabase-project met behulp van de publieke `anon`-sleutel. Dit werkt direct en zonder foutmeldingen. U kunt nieuwe gebruikers registreren, rijen invoegen en dynamische lijsten ophalen.
 
-Deze "werkende" status maskeert echter ernstige architectonische gebreken.
+Onder dit ogenschijnlijk perfect werkende oppervlak schuilen echter vier fundamentele architectuurfouten.
 
-### 1. Het Volledige Ontbreken van Row Level Security (RLS)
+### 1. Het Gevaarlijke Vacuüm van Ontbrekende Row Level Security (RLS)
 
-Dit is het allergevaarlijkste lek. Standaard staat Row Level Security uitgeschakeld wanneer een AI-tool tabellen aanmaakt in Supabase. Dit betekent dat elke gebruiker die beschikt over de publieke anon key (die open en bloot in uw frontend JavaScript-bundel staat) de volledige tabel rechtstreeks kan bevragen via Supabase's REST API, waarbij elke filterlogica in uw React-componenten volledig wordt omzeild.
+Dit is met afstand het meest gevaarlijke en wijdverbreide lek in AI-gegenereerde software. Wanneer een AI-tool automatisch een tabel aanmaakt in Supabase, staat **Row Level Security (RLS)** standaard uitgeschakeld. Dit betekent in de praktijk dat elke willekeurige bezoeker of aanvaller die beschikt over de publieke `anon`-sleutel (die direct zichtbaar is in uw client-side JavaScript-bundel) de complete tabel rechtstreeks kan bevragen via Supabase's openbare REST API — waarbij elke filter- of autorisatielogica in uw React-componenten volledig wordt omzeild.
 
-Als u een projectmanagementtool heeft gebouwd, kan Gebruiker A de vertrouwelijke projecten van Gebruiker B simpelweg opvragen door het API-verzoek in het netwerktabblad van zijn browser aan te passen. De AI schrijft de frontend-code weliswaar zo dat deze alleen de data van Gebruiker A *toont*, maar de backend levert zonder morren alle data van iedereen aan wie er op de juiste manier om vraagt.
+Als u bijvoorbeeld een projectmanagementtool heeft gebouwd, kan Gebruiker A met een eenvoudig aangepast API-verzoek in de browser alle vertrouwelijke projecten, financiële data en offertes van Gebruiker B inzien. De AI schreef immers uitsluitend frontend-code om in het scherm *alleen* de data van Gebruiker A te *tonen*, maar de achterliggende Supabase-database serveert zonder blikken of blozen de data van alle gebruikers aan iedereen die erom vraagt.
 
-**De Oplossing:** U moet handmatig RLS inschakelen op elke tabel en specifieke PostgreSQL-policies schrijven die exact definiëren wie rijen mag `SELECT`en, `INSERT`en, `UPDATE`n en `DELETE`n. Bijvoorbeeld door te controleren op `auth.uid() = user_id`. Voor tabellen met gedeelde toegang (zoals een teamworkspace) moet het beleid het lidmaatschap controleren in een koppeltabel in plaats van een simpele eigenaarscheck — een detail dat AI-tools vrijwel nooit in één keer correct genereren.
+**De Oplossing:** U moet RLS handmatig inschakelen op letterlijk elke afzonderlijke tabel (`ALTER TABLE tabielnaam ENABLE ROW LEVEL SECURITY;`) en specifieke PostgreSQL-policies schrijven die exact definiëren wie rijen mag `SELECT`en, `INSERT`en, `UPDATE`n en `DELETE`n (bijvoorbeeld via `auth.uid() = user_id`). Voor gedeelde team-workspaces moet het beleid bovendien lidmaatschap in een koppeltabel controleren — een complex detail dat AI-tools vrijwel nooit in één keer correct genereren.
 
-### 2. Het Ontbreken van Database-Indexen
+### 2. Het Volledig Ontbreken van Database-Indexen (Missing Indexes)
 
-AI-tools genereren zelden database-indexen buiten de primaire sleutel (*primary key*). Met 20 testrecords merkt u daar niets van. Bij 1.000 records begint uw applicatie merkbaar trager te worden. Zodra u 10.000 records bereikt, schiet het CPU-gebruik van uw Supabase-instantie naar 100% omdat PostgreSQL voor elke afzonderlijke query een volledige tabelscan (*sequential scan*) moet uitvoeren.
+AI-tools genereren zelden database-indexen buiten de primaire sleutel (`id`). Wanneer u tijdens het testen slechts 20 testrecords in de database heeft staan, merkt u hier helemaal niets van. Zodra uw applicatie echter groeit naar 1.000 records, begint het systeem merkbaar te vertragen. Bij 10.000 records zal het CPU-gebruik van uw Supabase-server naar 100% pieken omdat PostgreSQL bij elke afzonderlijke zoekopdracht een volledige **Sequential Scan** (opeenvolgende tabelscan) over de gehele tabel moet uitvoeren.
 
-Als uw dashboard vraagt om "alle actieve abonnementen voor deze gebruiker" en die kolom is niet geïndexeerd, zal uw database onder belasting veel sneller bezwijken dan u verwacht. Omdat RLS-beleidsregels zelf als onderdeel van elke query worden uitgevoerd, versterkt een ongeïndexeerde beleidscheck de vertraging nog verder, aangezien Postgres de beleidsvoorwaarde nu moet evalueren tegen elke rij die het scant.
+Vraagt uw dashboard bijvoorbeeld *"toon alle actieve abonnementen voor deze gebruiker"*, en is de kolom `user_id` of `status` niet geïndexeerd, dan crasht uw database onder reële gebruikersbelasting veel sneller dan u verwacht. Omdat RLS-policies zelf bij elke query worden uitgevoerd, veroorzaakt een niet-geïndexeerde beleidscontrole een exponentiële vertraging, aangezien Postgres de RLS-conditie voor elke gescande rij opnieuw moet evalueren.
 
-**De Oplossing:** U moet uw querypatronen analyseren en handmatig B-tree of Hash indexen toevoegen aan kolommen die veelvuldig worden gebruikt in `WHERE`-clausules, `JOIN`-condities, `ORDER BY`-statements en specifiek aan elke kolom waarnaar wordt verwezen binnen een RLS-beleid.
+**De Oplossing:** Analyseer uw querypatronen en voeg gerichte B-tree of Hash-indexen toe aan kolommen die frequent voorkomen in `WHERE`-clausules, `JOIN`-condities, `ORDER BY`-sorteringen en nadrukkelijk aan alle kolommen die binnen uw RLS-policies worden geraadpleegd.
 
-### 3. Geheimen aan de Clientzijde en Verbindingslekken
+### 3. Geheimen aan de Client-Zijde en Verbindingslekken (Connection Leaks)
 
-AI-generators plaatsen administratieve logica graag direct in de frontend. Als een gebruiker een actie moet uitvoeren waarvoor verhoogde privileges nodig zijn (zoals het verwijderen van een teamworkspace), programmeert de AI soms de Supabase `service_role` sleutel hardcoded in de client, of schrijft een complexe client-side transactie die de databaseverbinding te lang openhoudt. De `service_role` sleutel omzeilt RLS volledig — het lekken hiervan staat gelijk aan het volledig openzetten van uw database zonder enige beveiliging, ongeacht hoe zorgvuldig uw RLS-regels zijn geschreven.
+AI-codegeneratoren hebben de neiging om administratieve en gevoelige logica rechtstreeks in de frontend te plaatsen. Als een gebruiker een actie moet uitvoeren die verhoogde databaserechten vereist (zoals het verwijderen van een complete organisatie of het toekennen van beheerdersrollen), plaatst de AI regelmatig de almachtige `service_role` sleutel van Supabase rechtstreeks in de client-side code.
 
-**De Oplossing:** Verhoogde rechten en complexe transacties moeten worden verplaatst naar Supabase Edge Functions of een dedicated backend-service, zodat uw frontend veilig blijft en uw database-connectiepool gezond functioneert.
+De `service_role` sleutel omzeilt Row Level Security volledig — het lekken van deze sleutel staat gelijk aan het volledig onbeveiligd openbaar maken van uw gehele database voor de buitenwereld, ongeacht hoe zorgvuldig u uw RLS-policies heeft opgesteld.
 
-### 4. Uitputting van de Verbindingspool (*Connection Pooling Exhaustion*)
+**De Oplossing:** Verhoogde rechten en gevoelige datatransacties moeten strikt worden verplaatst naar **Supabase Edge Functions** of een beveiligde serverless microservice, zodat uw frontend veilig blijft en geheime tokens nooit aan de browser worden blootgesteld.
 
-Supabase's directe Postgres-verbinding kent een harde limiet voor gelijktijdige verbindingen — doorgaans enkele tientallen op kleinere pakketten. Door AI gegenereerde backend-code opent regelmatig een nieuwe databaseverbinding per verzoek in plaats van een gepoolde verbinding te hergebruiken. Dit werkt prima wanneer één ontwikkelaar lokaal test, maar faalt catastrofaal zodra tien gebruikers tegelijk de app bezoeken, resulterend in "too many connections" foutmeldingen die niets met uw werkelijke verkeersvolume te maken hebben.
+### 4. Uitputting van de Database Connection Pool (Connection Pooling Exhaustion)
 
-**De Oplossing:** Leid applicatieverkeer via Supabase's connection pooler (PgBouncer, beschikbaar via de pooler-connectiestring) in plaats van de directe database-URL, en zorg dat serverless functies verbindingen netjes sluiten of hergebruiken tussen aanroepen.
+De directe PostgreSQL-verbinding van Supabase kent een harde limiet op het aantal gelijktijdige openstaande databaseverbindingen — op kleinere serverplannen ligt dit limiet vaak op enkele tientallen connecties. Door AI gegenereerde backend-code opent regelmatig bij elk binnenkomend verzoek een geheel nieuwe databaseverbinding in plaats van gebruik te maken van een gedeelde connectiepool.
 
-## Hoe U Test of Uw Database Daadwerkelijk Veilig Is
+Dit werkt prima wanneer één ontwikkelaar lokaal aan het testen is, maar faalt catastrofaal zodra tien gebruikers gelijktijdig de applicatie bezoeken, wat resulteert in fatale *"too many connections"* databasecrashes die niets te maken hebben met de schaalbaarheid van uw servers.
 
-De meeste oprichters nemen aan dat hun database veilig is omdat hun app "goed werkt" — elke gebruiker ziet immers alleen zijn eigen gegevens in de interface. Dit is een gevaarlijke schijnzekerheid. Dat de UI data netjes filtert, zegt niets over de vraag of de database zelf een ongeautoriseerd verzoek zou weigeren. De enige betrouwbare test is een aanvalstest: open de browser DevTools, kopieer een geauthenticeerd API-verzoek dat de Supabase-clientbibliotheek verzendt, en speel dit handmatig opnieuw af met het ID van een andere gebruiker, of geheel zonder authenticatietoken. Als de database gegevens retourneert die niet zichtbaar hadden mogen zijn, staat RLS uitgeschakeld of is het verkeerd geconfigureerd — ongeacht wat de frontend toont. Deze eenvoudige test brengt het overgrote deel van de datalekken aan het licht die LaunchStudio tijdens een audit vindt, en kost minder dan vijf minuten per tabel.
+**De Oplossing:** Routeer al het dataverkeer van uw applicatie via de ingebouwde connection pooler van Supabase (**PgBouncer**, bereikbaar via de pooler-connectiestring op poort 6543) in plaats van de directe database-URL, en zorg ervoor dat serverless functies verbindingen netjes hergebruiken of afsluiten.
 
-## De Kloof Dichten Zonder Herbouw
+## Hoe U Test of Uw Database Werkelijk Veilig Is
 
-Het herkennen van deze gebreken betekent niet dat uw AI-prototype waardeloos is. De frontend en het basisschema zijn waardevolle fundamenten. Wat u nodig heeft is gerichte backend-versteviging — werk dat enkele dagen kost, in plaats van de maanden die een complete herbouw zou vergen.
+Veel oprichters nemen ten onrechte aan dat hun database veilig is omdat de applicatie in de browser "goed werkt" — elke gebruiker ziet immers netjes alleen zijn eigen data in de interface. Dit is een gevaarlijke schijnveiligheid. Dat de frontend data correct filtert, zegt namelijk niets over de vraag of de database zélf een ongeautoriseerd verzoek zou weigeren.
 
-Bij [LaunchStudio](https://launchstudio.eu/en/) zijn we gespecialiseerd in het beveiligen en schalen van AI-gegenereerde backends. Ondersteund door [Manifera's](https://www.manifera.com/) 11+ jaar ervaring in enterprise software-engineering, werken onze teams vanuit Amsterdam, Ho Chi Minh-stad en onze regionale hub aan 100 Tras Street in Singapore.
+De enige betrouwbare test is een doelgerichte aanvalstest: open de DevTools van uw browser, navigeer naar het Network-tabblad, kopieer een geauthenticeerd API-verzoek dat de Supabase-clientbibliotheek verstuurt, en voer dit verzoek handmatig uit via de terminal of Postman met het ID van een andere gebruiker of zónder enig authenticatietoken. Als de database data retourneert die niet toegankelijk zou mogen zijn, is RLS uitgeschakeld of verkeerd geconfigureerd — ongeacht wat uw React-dashboard toont.
 
-> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+## De Productiekloof Dichten Zonder Volledige Herbouw
 
-Wij herschrijven uw frontend niet. Wij nemen uw bestaande Supabase-project, richten sluitende RLS-policies in, voegen gerichte indexen toe, herstellen connection pooling, verplaatsen gevoelige logica naar Edge Functions en zorgen dat uw app 10.000 gebruikers net zo moeiteloos aankan als 10. Een typisch Supabase-hardening project kost tussen €800 en €3.500 en duurt 3 tot 7 werkdagen — een fractie van de €20.000+ die een traditioneel bureau vraagt om de databaselaag vanaf nul opnieuw te bouwen.
+Het signaleren van deze structurele tekortkomingen betekent geenszins dat uw AI-prototype waardeloos is. De frontend en het datamodel zijn waardevolle fundamenten. Wat u nodig heeft is gerichte **backend-hardening** — softwarewerk dat enkele werkdagen vergt, in plaats van de maanden die een volledige herbouw zou kosten.
 
-## Belangrijkste inzichten
+Bij [LaunchStudio](https://launchstudio.eu/en/) zijn we gespecialiseerd in het beveiligen en productieklaar schalen van met AI gebouwde Supabase-backends. Gesteund door [Manifera](https://www.manifera.com/) met ruim 11 jaar enterprise software-ervaring, opereren onze engineeringteams vanuit Amsterdam, Ho Chi Minhstad en onze regionale hub aan 100 Tras Street in Singapore.
 
-- AI-tools genereren databases die geoptimaliseerd zijn voor demo's, waarbij beveiliging, indexering en connection pooling stelselmatig worden genegeerd.
-- Ontbrekende Row Level Security (RLS) betekent dat elke gebruiker standaard toegang kan krijgen tot de data van alle andere gebruikers via de Supabase REST API.
-- Een gebrek aan database-indexering zorgt ervoor dat uw applicatie onder relatief lichte belasting drastisch vertraagt of crasht, verergerd door ongeïndexeerde RLS-checks.
-- LaunchStudio beveiligt en schaalt uw met AI gebouwde Supabase-backend zonder uw frontend-ontwerp aan te raken.
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-[Spreek met een engineer die AI-gegenereerde code begrijpt.](https://launchstudio.eu/en/#contact)
+Wij herschrijven uw frontend niet. Wij nemen uw bestaande Supabase-project over, vergrendelen alle databasetabellen met sluitende RLS-policies, implementeren noodzakelijke PostgreSQL-indexen, lossen connection pooling op, verplaatsen gevoelige logica naar Edge Functions en zorgen dat uw software moeiteloos schaalt van 10 naar 10.000 actieve gebruikers. Een typisch Supabase-hardeningtraject kost tussen **€ 800 en € 3.500** en wordt binnen **3 tot 7 werkdagen** afgerond.
+
+## Belangrijkste Inzichten
+
+- AI-tools genereren databaseschema's die geoptimaliseerd zijn voor eenvoudige demo's, waarbij beveiliging, indexering en connection pooling volledig worden genegeerd.
+- Ontbrekende Row Level Security (RLS) betekent dat elke bezoeker met de publieke `anon`-sleutel direct alle data van alle gebruikers kan uitlezen via de REST API.
+- Het ontbreken van gerichte database-indexen veroorzaakt ernstige prestatieproblemen en servercrashes zodra uw datavolume toeneemt.
+- Het hardcoden van de `service_role` sleutel aan de client-zijde heft alle databasetoegangscontroles direct op.
+- LaunchStudio beveiligt en schaalt uw Supabase-backend binnen enkele dagen zonder dat uw bestaande gebruikersinterface herbouwd hoeft te worden.
+
+[Spreek met een ervaren software-engineer die AI-gegenereerde code begrijpt](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: De EdTech-oprichter
+### Een AI-Native Oprichter in Actie: De EdTech-Oprichter in Singapore
 
-Jun Wei, voormalig docent in Singapore, zag een kans in de manier waarop lokale studiebegeleidingscentra leerlingen koppelden aan gespecialiseerde bijlesdocenten. Met behulp van **Cursor** bouwde hij een geavanceerd matchingplatform, compleet met docentprofielen, voortgangsrapportages en een planningssysteem, allemaal gekoppeld aan Supabase.
+Jun Wei, een voormalig docent in Singapore, zag een duidelijke marktkans in de manier waarop lokale bijlesinstituten studenten koppelden aan gespecialiseerde docenten. Met behulp van **Cursor** bouwde hij een geavanceerd matchingsplatform met gedetailleerde docentprofielen, voortgangsrapportages en een geautomatiseerd lesrooster, volledig aangedreven door een Supabase-backend.
 
-Het prototype functioneerde uitstekend en Jun Wei sloot direct drie instituten aan voor een besloten bètatest. Op de tweede dag van de test meldde een docent een alarmerende bug: hij kon de evaluaties en privégegevens inzien van leerlingen die aan een heel ander instituut waren toegewezen.
+Het prototype functioneerde uitstekend en Jun Wei sloot direct een gesloten bètatest af met drie grote bijlescentra. Op de tweede dag van de test meldde een docent een alarmerende fout: hij kon in zijn dashboard de vertrouwelijke beoordelingen en cijfers inzien van studenten die waren ingeschreven bij een geheel ander bijlesinstituut.
 
-Jun Wei ontdekte dat zijn AI-gegenereerde Supabase-tabellen geen enkele RLS-beveiliging hadden. Bovendien liep de laadtijd van het dashboard op van 1 seconde naar meer dan 12 seconden toen de drie centra duizenden historische leerlingdossiers uploadden, omdat geen van de foreign keys of zoekvelden was geïndexeerd.
+Jun Wei ontdekte dat zijn door AI gegenereerde Supabase-tabellen geen enkel RLS-beleid hadden. Bovendien, toen de drie instituten duizenden historische studentendossiers importeerden, liep de laadtijd van het dashboard op van 1 seconde naar meer dan 12 seconden omdat er geen enkele index op de foreign keys of zoekvelden aanwezig was.
 
-**LaunchStudio (door Manifera)** greep direct in om de bèta veilig te stellen. Het team activeerde RLS over alle 15 tabellen en schreef fijnmazige policies zodat docenten uitsluitend hun eigen leerlingen kunnen inzien en vestigingsmanagers alleen hun eigen centrumdata. Ze analyseerden trage queries en voegden gerichte PostgreSQL-indexen toe, waardoor de laadtijd weer daalde naar minder dan 1 seconde. Daarnaast migreerden ze de app naar Supabase's gepoolde connectiestring en verplaatsten ze de gevoelige docent-uitbetalingslogica van de frontend naar een beveiligde Supabase Edge Function.
+**LaunchStudio (door Manifera)** schoot direct te hulp. Het engineeringteam schakelde onmiddellijk RLS in op alle 15 databasetabellen en stelde fijnmazige policies op zodat docenten uitsluitend hun eigen studenten kunnen inzien en instituutmanagers alleen toegang hebben tot hun eigen vestigingsdata. Ze analyseerden trage queries en voegden gerichte PostgreSQL-indexen toe, waardoor de laadtijd daalde naar minder dan 1 seconde. Daarnaast migreerden ze de directe databaseverbindingen naar PgBouncer connection pooling en verplaatsten ze de gevoelige berekeningslogica voor docentuitbetalingen van de frontend naar een beveiligde Supabase Edge Function.
 
-**Resultaat:** De bètaperiode werd succesvol afgerond zonder datalekken of prestatieproblemen. Jun Wei's platform wordt inmiddels actief gebruikt door 12 instituten in Singapore en beheert meer dan 5.000 leerlingdossiers in een veilige omgeving. *"Cursor hielp me mijn visie te bouwen, maar ik wist niet wat ik niet wist over databasesecurity. LaunchStudio heeft de backend net op tijd kogelvrij gemaakt."*
+**Resultaat:** De bètaperiode werd succesvol afgerond zonder enig datalek of prestatieprobleem. Jun Wei's platform wordt inmiddels actief gebruikt door 12 bijlesinstituten in Singapore en beheert veilig meer dan 5.000 studentendossiers. *"Cursor hielp me mijn visie razendsnel te bouwen, maar ik wist simpelweg niet wat ik niet wist over databaseseurity. LaunchStudio heeft mijn backend net op tijd kogelvrij gemaakt."*
 
-**Kosten & tijdlijn:** €1.900 (Launch Ready Pakket) — afgerond in 6 werkdagen.
+**Kosten & Tijdlijn:** €1.900 (Launch Ready Pakket) — binnen 6 werkdagen productieklaar opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
 ### Waarom schrijven Cursor of Bolt de Row Level Security policies niet automatisch?
-Het schrijven van effectieve RLS-policies vereist een diepgaand begrip van uw specifieke bedrijfslogica — wie mag wat zien, onder welke voorwaarden en welke gebruikersrollen bestaan er (inclusief gedeelde teamtoegang). AI-tools genereren generieke schema's op basis van de gevraagde UI en kunnen deze complexe regels niet betrouwbaar afleiden zonder uiterst gedetailleerde technische prompts.
 
-### Hoe weet ik of mijn Supabase-project indexen mist?
-Als uw applicatie snel aanvoelt met 10 testrecords maar merkbaar vertraagt zodra u enkele honderden records toevoegt, mist u vrijwel zeker indexen. U kunt dit ook controleren in uw Supabase-dashboard onder "Query Performance" om trage queries met sequential scans op te sporen. LaunchStudio gebruikt databaseprofiling om ontbrekende indexen op te sporen vóórdat ze knelpunten worden.
+Het opstellen van effectieve RLS-policies vereist een diepgaand begrip van uw specifieke bedrijfslogica — wie mag welke data inzien, onder welke voorwaarden en welke gebruikersrollen bestaan er binnen teams. AI-tools genereren generieke schema's op basis van oppervlakkige UI-prompts en kunnen deze complexe autorisatieregels niet betrouwbaar zelfstandig afleiden.
 
-### Kan ik niet gewoon de Supabase 'anon' key voor alles gebruiken als mijn app geen gevoelige data bevat?
-Nee. Zelfs als uw gegevens niet strikt vertrouwelijk zijn, stelt een open database kwaadwillenden in staat om geautomatiseerde scripts uit te voeren die uw database volpompen met spam of massaal records verwijderen. Elke applicatie heeft elementaire RLS-policies nodig om misbruik te voorkomen en data-integriteit te waarborgen.
+### Hoe weet ik of mijn Supabase-database essentiële indexen mist?
 
-### Wat zijn Supabase Edge Functions en waarom heb ik ze nodig?
-Edge Functions zijn server-side scripts die wereldwijd dicht bij uw gebruikers draaien. U heeft ze nodig zodra uw app acties uitvoert die verhoogde databaserechten vereisen (zoals het wijzigen van gebruikersrollen), communiceert met externe API's met geheime sleutels (zoals Stripe) of zware berekeningen uitvoert die niet in de browser van de gebruiker mogen plaatsvinden.
+Als uw applicatie met 10 testrecords razendsnel aanvoelt maar merkbaar vertraagt zodra u enkele honderden records toevoegt, ontbreken er vrijwel zeker indexen. U kunt dit ook controleren in uw Supabase-dashboard onder "Query Performance" om trage queries met sequentiële scans op te sporen. LaunchStudio gebruikt geavanceerde profiling-tools om ontbrekende indexen preventief op te lossen.
+
+### Kan ik niet simpelweg de 'anon' sleutel overal voor gebruiken als mijn app geen gevoelige data bevat?
+
+Nee, absoluut niet. Zelfs als uw gegevens op het eerste gezicht niet strikt vertrouwelijk lijken, stelt een open database kwaadwillenden in staat om via geautomatiseerde scripts uw database vol te spammen met rommeldata of massaal records te verwijderen. Elke productie-app vereist basis RLS-policies om misbruik te voorkomen en data-integriteit te waarborgen.
+
+### Wat zijn Supabase Edge Functions en waarom zijn ze noodzakelijk?
+
+Edge Functions zijn serverless scripts die wereldwijd gedistribueerd draaien dichtbij uw gebruikers. U heeft ze nodig voor taken die verhoogde databaserechten vereisen (zoals het wijzigen van gebruikersrollen), interacties met externe API's met geheime sleutels (zoals Stripe-betalingen), of zware berekeningen die niet veilig in de browser van de gebruiker kunnen plaatsvinden.
 
 ### Verandert het beveiligen van mijn database de werking van mijn frontend-code?
-Ideaal gesproken niet. Als uw frontend correct is gebouwd, stuurt deze al bij elk verzoek het authenticatietoken van de gebruiker mee. Wanneer LaunchStudio RLS implementeert, begint de database simpelweg regels af te dwingen op basis van dat token. Wij zorgen voor een naadloze overgang waarbij uw frontend-UI exact behouden blijft, terwijl de backend robuust en veilig wordt.
+
+In principe niet. Als uw frontend correct is opgezet, stuurt deze al bij elk verzoek het authenticatietoken van de ingelogde gebruiker mee. Wanneer LaunchStudio RLS implementeert, begint de database simpelweg automatisch regels af te dwingen op basis van dat token. Uw gebruikersinterface blijft exact hetzelfde, terwijl de achterkant vele malen veiliger en stabieler wordt.
 
 <script type="application/ld+json">
 {
@@ -115,39 +129,39 @@ Ideaal gesproken niet. Als uw frontend correct is gebouwd, stuurt deze al bij el
       "name": "Waarom schrijven Cursor of Bolt de Row Level Security policies niet automatisch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het schrijven van effectieve RLS-policies vereist diepgaand inzicht in specifieke bedrijfslogica en gebruikersrollen, wat AI-tools niet betrouwbaar kunnen afleiden uit UI-prompts."
+        "text": "Het schrijven van effectieve RLS-policies vereist diepgaand inzicht in uw specifieke bedrijfslogica en gebruikersrollen, wat AI niet betrouwbaar kan afleiden uit UI-prompts."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe weet ik of mijn Supabase-project indexen mist?",
+      "name": "Hoe weet ik of mijn Supabase-database essentiële indexen mist?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Als uw app vertraagt bij meer dan een paar honderd records, ontbreken indexen. Dit is zichtbaar in het Supabase Query Performance dashboard via sequential scans."
+        "text": "Wanneer de app vertraagt bij toenemende datavolumes ontbreken er indexen; dit is te controleren via trage queries en sequential scans in het Supabase Query Performance dashboard."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik niet gewoon de Supabase anon key voor alles gebruiken?",
+      "name": "Kan ik niet simpelweg de 'anon' sleutel overal voor gebruiken als mijn app geen gevoelige data bevat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. Zonder RLS kan iedereen met de publieke anon key records direct bevragen, overschrijven of massaal verwijderen via de Supabase REST API."
+        "text": "Nee, zonder RLS kunnen kwaadwillenden via de publieke anon-sleutel ongehinderd data overschrijven, massaal verwijderen of uw tabellen vervuilen met spam."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat zijn Supabase Edge Functions en waarom heb ik ze nodig?",
+      "name": "Wat zijn Supabase Edge Functions en waarom zijn ze noodzakelijk?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Edge Functions zijn server-side scripts voor acties met verhoogde rechten of geheime API-sleutels (zoals Stripe), zodat geheimen nooit in de frontend lekken."
+        "text": "Edge Functions zijn server-side scripts voor operaties die verhoogde rechten of geheime API-sleutels (zoals Stripe) vereisen en niet in de browser mogen draaien."
       }
     },
     {
       "@type": "Question",
-      "name": "Verandert het beveiligen van mijn database de werking van mijn frontend?",
+      "name": "Verandert het beveiligen van mijn database de werking van mijn frontend-code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee. De database dwingt simpelweg autorisatieregels af op basis van bestaande tokens, waardoor uw frontend UI exact hetzelfde blijft functioneren."
+        "text": "Nee, uw frontend UI blijft exact intact; de database controleert voortaan uitsluitend op server-niveau de reeds meegestuurde authenticatietokens."
       }
     }
   ]

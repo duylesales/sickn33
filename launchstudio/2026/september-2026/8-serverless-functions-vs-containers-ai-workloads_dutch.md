@@ -1,95 +1,88 @@
 ---
-Titel: "Serverless Functions vs. Containers voor AI Workloads"
-Trefwoorden: AI deployment, AI coding, app bouwen met AI, AI-native, AI SaaS, AI code ontwikkeling, AI app dev, AI security, LaunchStudio, Manifera
+Titel: "Serverless Functies vs Containers bij het Coderen van AI-Applicaties"
+Trefwoorden: AI deployment, AI coding, build app with AI, AI-native, AI SaaS, AI code development, AI app dev, AI security, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Serverless Functions vs. Containers voor AI Workloads
+# Serverless Functies vs Containers bij het Coderen van AI-Applicaties
 
-De afgelopen vijf jaar was serverless architectuur (zoals Vercel, AWS Lambda en Netlify) de standaardkeuze voor SaaS-startups. Het beloofde oneindige schaalbaarheid zonder enig DevOps-beheer. Generatieve AI doorbreekt echter de basisprincipes van serverless computing. AI-workloads zijn traag, geheugenintensief en vereisen persistente verbindingen. Wie standaard kiest voor serverless bij zware AI-applicaties, krijgt onherroepelijk te maken met time-outcrashes, geheugenlimieten en extreme latentiepieken. Founders die een MVP bouwen met Bolt of Lovable ontdekken dit vaak pas nadat de app live staat en de eerste verkeerspiek de backend platlegt — een van de redenen waarom circa 80% van de AI-prototypes nooit een stabiele productiefase bereikt.
+De afgelopen vijf jaar was Serverless architectuur (Vercel, AWS Lambda, Netlify) de standaardkeuze voor SaaS-startups. Het bood oneindige automatische schaalbaarheid en nagenoeg nul DevOps-overhead. Echter, Generatieve AI doorbreekt fundamenteel alle vuistregels van serverless computing. AI-workloads zijn computationeel traag, uiterst geheugenintensief en vereisen persistente verbindingen. Kiest u standaard voor serverless bij een zware AI-applicatie, dan loopt u gegarandeerd aan tegen timeout-crashes, strikte geheugenlimieten en forse latentiepieken. Oprichters die snel een MVP bouwen via Bolt, Lovable of v0 realiseren zich dit vaak pas wanneer de applicatie live gaat en de eerste echte verkeerspiek de backend onderuit haalt — een belangrijke reden waarom circa 80% van de met AI gebouwde prototypes nooit een stabiele productiestatus bereikt.
 
-## De Time-Out Valstrik van Serverless
+## De Timeout-Valstrik van Serverless (The Timeout Trap)
 
-Serverless architecturen zijn ontworpen voor micro-taken: een AWS Lambda-functie start op, voert binnen 100 milliseconden een database-query uit en sluit af. Om weggelopen kosten te voorkomen, hanteren cloudproviders strikte executie-limieten (10 tot 60 seconden op Vercel, en maximaal 29 seconden achter AWS API Gateway).
+Serverless architecturen zijn fundamenteel ontworpen voor kortstondige taken. Een AWS Lambda-functie start op, voert binnen 100 milliseconden een database-query uit en sluit af. Om weggelopen kosten te voorkomen, hanteren cloudproviders strikte maximale executielimieten. Op Vercel Hobby is dit 10 seconden; op Pro 60 seconden (300 seconden op Enterprise, uitsluitend na handmatige supportaanvraag). Netlify Functions kennen een limiet van 10 tot 26 seconden. AWS Lambda staat technisch 15 minuten toe, maar AWS API Gateway — de laag waar vrijwel alle webapps achter draaien — breekt de verbinding hard af na exact 29 seconden, ongeacht wat de achterliggende Lambda-functie toestaat.
 
-Complexe agent-gebaseerde AI-workflows — waarbij een model een prompt analyseert, een database doorzoekt, code genereert, deze test in een sandbox en het resultaat herformuleert — duren al snel 2 tot 5 minuten. Een serverless functie breekt de uitvoering halverwege meedogenloos af en retourneert een `504 Gateway Timeout` naar de eindgebruiker, zonder dat data of tussenresultaten zijn opgeslagen. Zware AI-agenten en omvangrijke RAG-pipelines vereisen een persistente uitvoeringsomgeving zonder tikkende klok.
+Een complexe AI-agent workflow — waarbij een agent een prompt analyseert, een vectordatabase doorzoekt, externe tools aanroept, een Python-script genereert, dit uitvoert in een sandbox en het resultaat herschrijft — kan gemakkelijk 3 tot 5 minuten in beslag nemen, zeker bij het aaneenschakelen van meerdere LLM-aanroepen (planning, generatie, zelf-kritiek). Een serverless functie breekt uw code halverwege meedogenloos af en retourneert een `504 Gateway Timeout` foutmelding naar de gefrustreerde gebruiker, zonder dat tussenresultaten worden opgeslagen. Langdurige AI-agenten, RAG-pijplijnen met grote documentensets en multi-step LangGraph-workflows vereisen persistente runtime-omgevingen die niet op een aftellende kookwekker draaien.
 
-## De 'Cold Start' Latentiestraf
+## De Latentiestraf van 'Cold Starts'
 
-In AI is "Time to First Token" (TTFT) cruciaal voor de gebruikerservaring. Wanneer een serverless functie 5 tot 15 minuten inactief is geweest, schakelt de cloudprovider de instantie uit. Zodra een bezoeker weer op "Genereren" klikt, ontstaat een zogeheten **Cold Start**: de provider moet de virtuele machine opstarten, de Node.js runtime laden, zware SDK's (`openai`, `langchain`) importeren en databaseverbindingen opnieuw opbouwen.
+Bij interactieve AI-software is "Time to First Token" (TTFT) de meest bepalende metriek voor de gebruikerservaring. Als een serverless functie gedurende 5 tot 15 minuten niet is aangeroepen, schaalt de cloudprovider de instantie af naar nul om servercapaciteit te besparen. Zodra een gebruiker op "Genereren" klikt, moet de server een "Cold Start" uitvoeren: de microVM opstarten (Firecracker op AWS), de Node.js-runtime initialiseren, alle afhankelijkheden inladen — inclusief zware SDK's zoals `openai`, `langchain` of `@anthropic-ai/sdk` — en beveiligde TLS-databaseverbindingen opbouwen naar PostgreSQL of MongoDB.
 
-Deze Cold Start voegt 1 tot 4 seconden pure wachttijd toe *vóórdat* de prompt überhaupt naar de LLM-provider is verzonden. Voor realtime spraak-AI of interactieve chatwidgets voelt een wachttijd van 4 seconden aan alsof de software vastloopt. Containers elimineren Cold Starts volledig omdat de server permanent actief ("warm") blijft, SDK's eenmalig worden geladen en databaseverbindingen continu gepoold blijven.
+Deze Cold Start voegt 1 tot 4 seconden pure latentie toe *vóórdat* de prompt überhaupt naar OpenAI of Anthropic is verzonden. De bestandsgrootte van afhankelijkheden verergert dit: een functie die het volledige `langchain`-pakket importeert voegt honderden milliseconden extra opstarttijd toe. Bij realtime spraak-AI of interactieve chatsystemen ruïneert een vertraging van 4 seconden de complete illusie van instant intelligentie — gebruikers nemen aan dat de app vastloopt en verversen de pagina. Containers daarentegen elimineren Cold Starts volledig doordat de servers continu 'warm' draaien, database-connecties permanent gepoold blijven en SDK's eenmalig bij het opstarten worden geïnitialiseerd.
 
 ## Geheugenlimieten en Documentverwerking
 
-Voordat u data naar een LLM stuurt, moet deze worden voorbereid. Wanneer een zakelijke gebruiker een 200 pagina's tellend financieel PDF-bestand uploadt, moet uw backend het bestand parsen (`pdf-parse`), tekst extraheren, opsplitsen in segmenten en embeddings berekenen.
+Voordat data naar een taalmodel kan worden gestuurd, moet deze worden voorbewerkt. Uploadt een zakelijke gebruiker een omvangrijk financieel rapport van 200 pagina's, dan moet uw backend het PDF-bestand parsen (met `pdf-parse` of `pdfjs-dist`), de ruwe tekst extraheren, deze opknippen in semantische chunks van 500-1000 tokens, embeddings genereren en deze wegschrijven naar Pinecone of pgvector. Serverless functies zijn zwaar beperkt in RAM — AWS Lambda start standaard op 128MB en wordt tegen meerprijs vaak ingesteld op 1GB tot 3GB; Vercel Functions hanteren vergelijkbare plafonds.
 
-Serverless functies zijn strikt begrensd in RAM-geheugen (vaak 128 MB tot 1 GB). Het in het geheugen laden van een zwaar PDF-bestand in combinatie met een omvangrijke DOM-structuur leidt direct tot een `Out of Memory (OOM)` crash, zonder duidelijke foutopsporing. Het verwerken van ongestructureerde bestanden vereist de ruime geheugentoewijzing (4 GB, 8 GB of meer) van dedicated Docker-containers.
+Het inladen van een zware PDF inclusief geparseerde DOM-bomen en duizenden vector-arrays in een 1GB Lambda-functie leidt direct tot een fatale `Out of Memory (OOM)` crash — waarbij Lambda de uitvoering botweg afkapt met een nietszeggende `Runtime.ExitError` zonder enig stacktrace-spoor. Het verwerken van ongestructureerde data (PDF's, video-transcripts, grote CSV-datasets) vereist de royale werkgeheugenallocatie (4GB, 8GB of meer) van dedicated containers, waar bestanden tevens als streaming-pijplijn verwerkt kunnen worden.
 
-## De Oplossing: Docker Containers op AWS ECS of Google Cloud Run
+## De Container-Oplossing: AWS ECS / Google Cloud Run
 
-Om betrouwbare enterprise AI-applicaties te bouwen, migreert u zware taken naar persistente Docker-containers (via AWS Fargate/ECS, Google Cloud Run of Render):
-- De server blijft continu actief en kan achtergrondtaken urenlang uitvoeren zonder time-outs.
-- Persistente WebSocket- en SSE-verbindingen streamen tokens direct en foutloos naar de client.
-- Databaseverbindingen worden gepoold voor maximale querysnelheid.
+Om een robuuste, enterprise-waardige AI-architectuur op te bouwen, moet u zware workloads verplaatsen naar Long-Running Docker Containers (via AWS Fargate/ECS, Google Cloud Run, Render of Railway). In deze architectuur slaapt uw server nooit. Hij onderhoudt permanente WebSocket- of SSE-verbindingen voor realtime tokenstreaming, kan complexe achtergrondtaken urenlang in het geheugen vasthouden zonder timeouts, en houdt databaseverbindingen continu actief via connection pooling. Hoewel dit iets meer DevOps-discipline vraagt dan een simpele klik op Vercel, is het de enige bewezen methode om veerkrachtige AI-systemen te bouwen die bestand zijn tegen echt enterprise-verkeer.
 
-De optimale enterprise-architectuur is een **hybride model**: houd lichte, ultrasnelle verzoeken (zoals authenticatie en eenvoudige CRUD-bewerkingen) op serverless, en delegeer alle zware LLM-aanroepen, documentparsing en agent-ketens naar gecontaineriseerde microservices.
+Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft deze transitie helder: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera, opgericht in **2014** en gevestigd aan de **Herengracht 420 in Amsterdam**, migreert al meer dan een decennium bedrijfskritische workloads van kwetsbare serverless functies naar robuuste containerinfrastructuren voor enterprise-klanten zoals Vodafone en TNO. Bekijk voorbeelden in het [Manifera portfolio](https://www.manifera.com/portfolio/).
 
-Herre Roelevink, oprichter en Managing Director van Manifera, verwoordt dit helder: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera migreert sinds **2014** kwetsbare serverless architecturen naar schaalbare containerinfrastructuren.
+In de praktijk is een hybride model ideaal: behoud lichte, snelle bewerkingen (authenticatie-checks, simpele CRUD-mutaties, webhook-ontvangers) op serverless, en verplaats alles wat LLM-aanroepen, document-parsing of multi-step agentketens raakt naar Docker containers.
 
-## Belangrijkste inzichten
+## Belangrijkste Inzichten
 
-- Serverless functies (zoals Vercel en AWS Lambda) forceren harde executie-timeouts (10 tot 60 seconden), waardoor langdurige AI-agenten halverwege worden afgebroken.
+- Serverless architecturen (Vercel, AWS Lambda) leggen strikte executietimeouts op (10 tot 60 seconden, 29s via API Gateway); complexe AI-agenten die minuten rekenen worden halverwege afgebroken.
+- 'Cold Starts' in serverless omgevingen voegen 1 tot 4 seconden onnodige latentie toe vóór de AI-generatie start, verergerd door zware SDK-imports zoals LangChain.
+- Serverless functies kennen strikte geheugenplafonds; het parsen van zware PDF's of datasets leidt tot plotselinge 'Out of Memory' (OOM) crashes zonder duidelijke foutmeldingen.
+- Verplaats zware AI-processen naar persistente Docker containers (AWS ECS, Google Cloud Run); deze kennen geen timeouts, houden databasepools warm en draaien urenlang door.
+- Hanteer een hybride architectuur: gebruik serverless voor lichte webhooks en edge-validaties, en containers voor alle LLM- en RAG-verwerkingen.
 
-- 'Cold Starts' voegen 1 tot 4 seconden vertraging toe aan AI-aanroepen doordat de runtime en zware AI-bibliotheken telkens opnieuw moeten initialiseren.
+## Ontsnap aan de Timeout-Valstrik
 
-- Serverless functies crashen met 'Out of Memory' fouten bij het parsen van omvangrijke documenten (PDF's, grote datasets) voor vector-ingestie.
+Lopen uw Vercel serverless functies vast met timeouts tijdens het wachten op OpenAI? **LaunchStudio** ondersteunt startups bij het migreren van kwetsbare serverless architecturen naar schaalbare, enterprise-veilige Docker containeromgevingen die optimaal zijn ingericht voor zware AI-workflows. Gebruik de [LaunchStudio prijscalculator](https://launchstudio.eu/en/#calculator) voor een transparante kosteninschatting.
 
-- Persistente Docker-containers (AWS ECS, Google Cloud Run) elimineren time-outs, behouden actieve databaseverbindingen en bieden de benodigde RAM-capaciteit.
-
-- Hanteer een hybride architectuur: gebruik serverless voor lichte webhooks en API-authenticatie, en zet containers in voor LLM-orkestratie en zware AI-verwerking.
-
-## Voorkom serverless time-outs in uw AI-app
-
-Lopen uw Vercel-functies vast met time-outs tijdens het genereren van AI-antwoorden of het verwerken van documenten? **LaunchStudio** helpt founders bij het migreren van kwetsbare serverless setups naar schaalbare, gecontaineriseerde Docker-infrastructuren, specifiek geoptimaliseerd voor zware AI-agenten. Bereken de kosten van een migratie via onze [prijscalculator](https://launchstudio.eu/en/#calculator).
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 opgeleverde maatwerkprojecten voor internationale klanten zoals Vodafone en TNO helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een vrijblijvende offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact). Bekijk ook Manifera's [maatwerk softwareontwikkeling diensten](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Cold Start vertragingen elimineren voor een AI-marketingcopywriter
+### Een AI-Native Oprichter in Actie: Cold Start Vertragingen Elimineren voor een AI-Marketing Copywriter
 
-Isabella, een copywriter, bouwde met **Bolt** een tool voor het automatisch genereren van productomschrijvingen. Cold starts in Vercel serverless functions veroorzaakten een wachttijd van 8 seconden bij de eerste prompt na een periode van inactiviteit.
+Isabella, een copywriter, gebruikte **Bolt** om een automatische productomschrijvings-tool te bouwen. Cold starts van Vercel serverless functies veroorzaakten een vertraging van 8 seconden bij het eerste verzoek na een periode van inactiviteit.
 
-Zij schakelde **LaunchStudio (door Manifera)** in om de API-routes te migreren naar Docker-containers op AWS ECS met permanent gepoolde databaseverbindingen.
+Zij werkte samen met **LaunchStudio (door Manifera)** om de API-routes te migreren naar Docker containers op AWS ECS met vooraf opgewarmde databaseverbindingen.
 
-**Resultaat:** Cold start vertragingen werden volledig geëlimineerd, waardoor alle gebruikers konden rekenen op een constante responstijd van minder dan 0,5 seconde.
+**Resultaat:** Cold start vertragingen werden volledig geëlimineerd, wat resulteerde in een consistente responstijd van 0,5 seconde voor alle gebruikers.
 
-**Kosten & tijdlijn:** €2.600 (Container Migration Pakket) — productieklaar en binnen 7 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.600 (Container Migratie Pakket) — productieklaar en binnen 7 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Wat is het voornaamste knelpunt van serverless voor AI?
+### Wat is het voornaamste probleem van Serverless voor AI?
 
-Executie-timeouts. Serverless functies worden na 10 tot 60 seconden automatisch beëindigd. Als een AI-agent 3 minuten nodig heeft om een juridisch document te verwerken, breekt het proces geforceerd af met een 504-fout.
+Executie-timeouts. Serverless functies sluiten geforceerd af na 10 tot 60 seconden (of 29s achter API Gateway). Als een AI-agent 3 minuten nodig heeft om een juridisch document te verwerken, wordt het proces hard afgebroken met een 504 Gateway Timeout.
 
-### Wat veroorzaakt een 'Cold Start' bij serverless AI?
+### Wat is een 'Cold Start' bij Serverless AI?
 
-Wanneer een functie na inactiviteit opnieuw moet opstarten, kost het laden van de microVM, de Node.js runtime en zware AI-pakketten 1 tot 4 seconden extra vertraging vóórdat de API-aanroep start.
+Wanneer een serverless instantie na enkele minuten inactiviteit ontwaakt, duurt het 1 tot 4 seconden om de runtime op te starten, SDK's te laden en databaseverbindingen op te bouwen, wat leidt tot frustrerende wachttijden voor de gebruiker.
 
-### Waarom zijn Docker-containers beter geschikt voor AI-workloads?
+### Waarom zijn Long-Running Docker Containers superieur voor AI?
 
-Containers blijven permanent actief ("warm"), kennen geen harde time-outlimieten, behouden actieve databaseverbindingen en beschikken over ruim voldoende RAM voor documentverwerking.
+Containers (zoals AWS ECS of Cloud Run) blijven continu actief. Ze hebben geen executietimeouts, behouden actieve connection pools naar databases en beschikken over ruim voldoende RAM (4GB+) om zware bestanden te verwerken zonder OOM-crashes.
 
-### Wanneer is serverless wél de juiste keuze voor AI?
+### Wanneer is Serverless wél de juiste keuze voor AI?
 
-Voor lichte, sub-seconde taken zoals een snelle autocomplete-suggestie van 200 milliseconden of het ontvangen van eenvoudige webhooks.
+Voor snelle, lichte operaties. Het genereren van een 3-woorden autocomplete-suggestie binnen 200 milliseconden of het ontvangen van webhooks schaalt perfect en kosteloos op serverless.
 
-### Hoe ondersteunt LaunchStudio bij de migratie naar containers?
+### Hoe ondersteunt LaunchStudio bij deze container-migratie?
 
-LaunchStudio en Manifera analyseren uw huidige codebase, identificeren routes die tegen time-out- of geheugengrenzen aanlopen, en migreren deze naar geautomatiseerd schaalbare Docker-clusters binnen 1 tot 3 weken.
+LaunchStudio en Manifera (opgericht in 2014) auditen uw softwarestack, identificeren welke API-routes tegen geheugen- of timeout-limieten aanlopen en migreren zware AI-processen binnen 1 tot 3 weken naar stabiele container-infrastructuren.
 
 <script type="application/ld+json">
 {
@@ -98,42 +91,42 @@ LaunchStudio en Manifera analyseren uw huidige codebase, identificeren routes di
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is het voornaamste knelpunt van serverless voor AI?",
+      "name": "Wat is het voornaamste probleem van Serverless voor AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Executie-timeouts van 10 tot 60 seconden die langlopende AI-agenten en complexe RAG-pijplijnen geforceerd beëindigen."
+        "text": "Strikte executie-timeouts (10-60s) die langdurige multi-step AI-agent workflows geforceerd afbreken."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat veroorzaakt een 'Cold Start' bij serverless AI?",
+      "name": "Wat is een 'Cold Start' bij Serverless AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het herstarten van de virtuele machine en het opnieuw laden van zware AI-SDK's na een periode van inactiviteit."
+        "text": "Een vertraging van 1-4 seconden bij het opstarten van inactieve functies door zware SDK's en TLS-handshakes."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom zijn Docker-containers beter geschikt voor AI-workloads?",
+      "name": "Waarom zijn Long-Running Docker Containers superieur voor AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Containers blijven continu actief, ondersteunen langdurige processen zonder time-outs en bieden ruime geheugentoewijzing."
+        "text": "Ze draaien continu zonder timeouts, behouden warme databasepools en bieden ruim RAM voor zware bestanden."
       }
     },
     {
       "@type": "Question",
-      "name": "Wanneer is serverless wél de juiste keuze voor AI?",
+      "name": "Wanneer is Serverless wél de juiste keuze voor AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voor snelle, lichte bewerkingen zoals autocomplete, webhook-ontvangst en authenticatiecontroles."
+        "text": "Voor lichte sub-seconde taken zoals autocomplete, eenvoudige webhooks en snelle edge-validaties."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe ondersteunt LaunchStudio bij de migratie naar containers?",
+      "name": "Hoe ondersteunt LaunchStudio bij deze container-migratie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door zware AI-routes te migreren naar Docker-containers op AWS ECS of Cloud Run, zonder de bestaande frontend aan te tasten."
+        "text": "LaunchStudio migreert zware AI-workloads naar geoptimaliseerde Docker/ECS infrastructuren via Manifera."
       }
     }
   ]

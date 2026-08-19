@@ -7,119 +7,125 @@ Doelpersona: B (Technische Solo-Oprichter)
 
 # 10-Punten Beveiligingsaudit Checklist voor AI-Prototypes
 
-45% van de door AI gegenereerde code bevat beveiligingskwetsbaarheden. Dat cijfer blijkt uit meerdere onafhankelijke code-audits die in 2025 en 2026 zijn uitgevoerd. Dit betekent dat ongeveer de helft van elk prototype dat gebouwd is met Lovable, Bolt of Cursor lekken bevat die een gemiddeld ervaren kwaadwillende binnen enkele minuten kan misbruiken.
+45% van de door AI gegenereerde broncode bevat ernstige beveiligingskwetsbaarheden. Dat alarmerende cijfer blijkt uit meerdere onafhankelijke code-audits en security-onderzoeken die gedurende 2025 en 2026 zijn uitgevoerd. Dit betekent in de praktijk dat ongeveer de helft van elk software-prototype dat gebouwd is met moderne AI-tools zoals Lovable, Bolt of Cursor wordt opgeleverd met beveiligingslekken die een gemiddeld ervaren aanvaller binnen enkele minuten kan identificeren en misbruiken.
 
-Het probleem is niet dat AI opzettelijk slechte code schrijft. Het probleem is dat AI optimaliseert voor snelheid en visuele compleetheid — niet voor enterprise-beveiliging. Het genereert wat er goed uitziet, niet wat fundamenteel veilig is.
+Het fundamentele probleem is niet dat kunstmatige intelligentie opzettelijk slechte of ondeugdelijke code schrijft. Het probleem is dat AI-codegeneratoren primair optimaliseren voor ontwikkelsnelheid, directe werking en visuele compleetheid — en nadrukkelijk niet voor enterprise-beveiliging en defensieve architectuur. AI bouwt wat er op het eerste gezicht goed en werkend uitziet in een demonstratie, niet wat robuust en veilig is onder reële productieomstandigheden.
 
-Deze handleiding biedt een concrete 10-punten beveiligingsaudit checklist die u kunt uitvoeren op uw eigen met AI gebouwde prototype voordat een echte gebruiker ermee in aanraking komt.
+Deze uitgebreide handleiding biedt u een concrete, 10-punten tellende beveiligingsaudit checklist die u direct kunt uitvoeren op uw eigen met AI gebouwde prototype vóórdat u ook maar één echte betalende klant of externe gebruiker toegang geeft tot uw applicatie.
 
-## Waarom AI-Tools Beveiliging Standaard Overslaan
+## Waarom AI-Tools Beveiliging Standaard Overslaan (Why AI Skips Security)
 
-AI-codegeneratoren zijn getraind op miljoenen publieke repositories. Het overgrote deel daarvan bestaat uit tutorials, demo's en proof-of-concept projecten — code die nooit bedoeld was voor productie. Wanneer u Lovable vraagt om "een SaaS-dashboard met gebruikersaccounts te bouwen", genereert het code die deze tutorials weerspiegelt: functioneel, visueel indrukwekkend, maar volstrekt onveilig.
+AI-codegeneratoren zijn getraind op miljoenen publiek toegankelijke software-repositories op platforms zoals GitHub. Het overgrote deel van die trainingsbronnen bestaat uit educatieve tutorials, proof-of-concept projecten en oppervlakkige demo's — codebases die nooit zijn ontworpen of bedoeld voor een zware productieomgeving met enterprise-beveiligingseisen. Wanneer u Lovable, Bolt of Cursor vraagt om *"een B2B SaaS-dashboard met gebruikersaccounts en abonnementsbeheer te bouwen"*, genereert het model code die deze eenvoudige tutorials exact weerspiegelt: functioneel werkend, visueel verbluffend, maar architectonisch volstrekt onveilig.
 
-Drie patronen duiken op in vrijwel elk AI-gegenereerd prototype:
+Drie gevaarlijke beveiligingspatronen duiken op in vrijwel elk AI-gegenereerd prototype:
 
-- **Blootgestelde API-sleutels** — Hardcoded direct in frontend JavaScript-bestanden, zichtbaar voor iedereen die browser DevTools opent.
-- **Ontbrekende Row Level Security (RLS)** — Supabase-tabellen worden aangemaakt zonder toegangsbeleid, waardoor elke ingelogde gebruiker de gegevens van alle andere gebruikers kan inzien.
-- **Geen invoervalidatie** — Formuliervelden accepteren alles, wat de deur openzet voor SQL-injectie en cross-site scripting (XSS).
+- **Blootgestelde API-sleutels (Exposed API Keys):** Geheime tokens en API-sleutels worden rechtstreeks hardcoded in client-side JavaScript-bestanden geplaatst, waardoor ze direct zichtbaar zijn voor iedereen die de browser DevTools opent.
+- **Ontbrekende Row Level Security (RLS):** Supabase- en PostgreSQL-tabellen worden aangemaakt zonder enig strikt autorisatiebeleid, wat betekent dat elke willekeurige ingelogde gebruiker met één API-call de vertrouwelijke data van alle andere klanten kan uitlezen.
+- **Geen server-side invoervalidatie (No Input Validation):** Formuliervelden en zoekbalken accepteren ongefilterd elke willekeurige tekenreeks, wat de deur wagenwijd openzet voor SQL-injecties, NoSQL-injecties en Cross-Site Scripting (XSS).
 
-Dit zijn geen uitzonderingen; het is de standaarduitvoer van de huidige AI-tools.
+Dit zijn geen zeldzame randgevallen of incidentele schoonheidsfoutjes. Het is de structurele standaarduitvoer van de huidige generatie AI-ontwikkeltools.
 
 ## De 10-Punten Beveiligingsaudit Checklist
 
-Doorloop elk punt vóór uw lancering. Faalt uw app op zelfs één onderdeel, dan is deze niet productieklaar.
+Doorloop elk van de onderstaande tien controlepunten nauwgezet vóórdat u uw product lanceert. Als uw applicatie faalt op zelfs maar één enkel onderdeel, is uw software simpelweg nog niet productieklaar en loopt u directe juridische en financiële risico's.
 
-### 1. Scan op Blootgestelde API-Sleutels
+### 1. Scan op Blootgestelde API-Sleutels (API Key Exposure Scan)
 
-Doorzoek uw volledige codebase op hardcoded API-sleutels, tokens en geheimen. Controleer of `.env`-bestanden zijn opgenomen in `.gitignore`. Verifieer dat er geen sleutels voorkomen in client-side JavaScript-bundles.
+Doorzoek uw complete codebase minutieus op hardcoded API-sleutels, private tokens en databasegeheimen. Controleer zorgvuldig of alle `.env`-bestanden correct zijn opgenomen in uw `.gitignore`. Verifieer via een inspectie van uw gecompileerde client-side JavaScript-bundles dat er geen enkele geheime sleutel (zoals OpenAI API keys, Stripe secret keys of database master credentials) aan de browser van de bezoeker wordt geleverd.
 
-### 2. Verificatie van Row Level Security (RLS)
+### 2. Verificatie van Row Level Security (RLS) in Supabase
 
-Open uw Supabase-dashboard en controleer elke tabel. RLS moet ingeschakeld zijn en er moet per tabel minimaal één beleidsregel actief zijn die gegevenstoegang strikt beperkt tot de geauthenticeerde gebruiker die eigenaar is van die rij.
+Open uw Supabase- of PostgreSQL-dashboard en inspecteer handmatig elke afzonderlijke databasetabel. Row Level Security (RLS) moet expliciet ingeschakeld zijn (`ALTER TABLE ... ENABLE ROW LEVEL SECURITY;`). Daarnaast moet er per tabel minimaal één sluitende beleidsregel (policy) actief zijn die gegevenstoegang en mutaties strikt beperkt tot de specifiek geauthenticeerde gebruiker die eigenaar is van de desbetreffende rij (`auth.uid() = user_id`).
 
-### 3. Audit van het Authenticatieproces
+### 3. Volledige Audit van het Authenticatieproces (Authentication Flow Audit)
 
-Test registratie, login, wachtwoordherstel en uitloggen van begin tot eind. Verifieer dat sessietokens tijdig verlopen en dat beveiligde routes niet-geauthenticeerde gebruikers daadwerkelijk omleiden.
+Test het complete registratie-, inlog-, wachtwoordherstel- en uitlogproces van begin tot eind. Verifieer dat sessietokens op veilige wijze verlopen en dat authenticatietokens worden opgeslagen in `httpOnly` cookies in plaats van het kwetsbare `localStorage`. Controleer of beveiligde routes en API-endpoints niet-geauthenticeerde verzoeken onmiddellijk en betrouwbaar omleiden of blokkeren.
 
-### 4. Invoervalidatie en Sanitisatie
+### 4. Server-Side Invoervalidatie en Sanitisatie (Input Validation and Sanitization)
 
-Elk formulierveld, zoekbalk en tekstinvoer moet gebruikersinvoer aan de serverzijde valideren en opschonen — niet alleen aan de clientzijde. Validatie aan de voorkant is een UX-functionaliteit, geen beveiligingsmaatregel.
+Elk formulierveld, zoekbalk, bestandsupload en tekstinvoer moet alle gebruikersinvoer strikt aan de serverzijde valideren, typen en opschonen met behulp van schema-validatiebibliotheken zoals Zod of Joi — en nooit uitsluitend aan de clientzijde. Validatie aan de voorkant in React is louter een UX-functionaliteit voor directe feedback, maar biedt nul bescherming tegen kwaadwillenden die API-endpoints rechtstreeks aanroepen.
 
-### 5. HTTPS en SSL-Certificaat
+### 5. HTTPS en Geldig SSL-Certificaat
 
-Uw applicatie moet via HTTPS worden geserveerd met een geldig SSL-certificaat. Geen uitzonderingen; preview-URL's en localhost gelden niet voor productie.
+Uw volledige webapplicatie en alle achterliggende API-endpoints moeten uitsluitend worden geserveerd via versleutelde HTTPS-verbindingen met een geldig en actueel SSL/TLS-certificaat. Onbeveiligde HTTP-verzoeken moeten automatisch met een 301-redirect worden omgeleid naar HTTPS. Lokale ontwikkelomgevingen en onbeveiligde preview-URL's gelden onder geen enkel beding als productiewaardig.
 
-### 6. Lekken van Foutmeldingen
+### 6. Preventie van Foutmeldings- en Stacktrace-Lekkages (Error Message Leakage)
 
-Roep opzettelijk fouten op. Als uw app ruwe databasefouten, stack traces of interne bestandspaden aan de gebruiker toont, kunnen aanvallers die informatie gebruiken om uw infrastructuur in kaart te brengen.
+Roep opzettelijk fouten en ongeldige parameters op binnen uw applicatie. Als uw applicatie ruwe database-foutmeldingen, SQL-queries, interne serverpaden of volledige stacktraces aan de eindgebruiker toont, kunnen aanvallers die gevoelige diagnostische informatie direct gebruiken om uw interne infrastructuur en databasestructuur nauwkeurig in kaart te brengen voor gerichte aanvallen.
 
-### 7. Status van Betalingsintegratie
+### 7. Status en Beveiliging van Betalingsintegraties (Payment Integration Status)
 
-Als u Stripe of Mollie gebruikt, controleer dan of u in live-modus draait — niet in testmodus. Bevestig dat webhook-endpoints bestaan en webhook-handtekeningen strikt valideren.
+Wanneer u gebruikmaakt van Stripe of Mollie, verifieer dan grondig dat uw betaalintegratie volledig in live-modus draait en niet per abuis nog test-sleutels gebruikt. Bevestig dat er dedicated webhook-endpoints zijn ingericht die de cryptografische webhook-handtekening (`Stripe-Signature`) strikt verifiëren tegen uw `STRIPE_WEBHOOK_SECRET` met behulp van de ruwe request-body vóórdat betaalde rechten worden toegekend.
 
-### 8. Beveiliging van Bestandsuploads
+### 8. Beveiliging en Isolatie van Bestandsuploads (File Upload Security)
 
-Als gebruikers bestanden kunnen uploaden, verifieer dan dat bestandstypevalidatie aan de serverzijde plaatsvindt, bestandsgroottes begrensd zijn en uploads worden opgeslagen in een beveiligde bucket die standaard niet publiek toegankelijk is.
+Als uw applicatie gebruikers toestaat bestanden te uploaden (zoals profielfoto's, PDF-documenten of spreadsheets), verifieer dan dat de mime-type en bestandsgrootte-validatie strikt aan de serverzijde wordt afgedwongen. Zorg ervoor dat geüploade bestanden worden opgeslagen in een afgeschermde private storage bucket met gegenereerde tijdelijke URLs (signed URLs), en dat bestanden niet standaard publiekelijk doorzoekbaar zijn.
 
-### 9. Rate Limiting (Snelheidsbegrenzing)
+### 9. API Rate Limiting en Bescherming tegen Misbruik (Rate Limiting)
 
-Uw API-endpoints moeten snelheidsbegrenzingen hebben om brute-force aanvallen op login-endpoints en misbruik van dure operaties (zoals AI-API-aanroepen) te voorkomen.
+Al uw publieke API-endpoints en backend-routes moeten voorzien zijn van robuuste snelheidsbegrenzingen (rate limiting via Redis of Upstash) om brute-force wachtwoordanvallen op inlogschermen te verijdelen en om misbruik van dure operaties — zoals intensieve OpenAI modelaanroepen die uw creditcard binnen enkele uren kunnen leegtrekken — effectief te blokkeren.
 
-### 10. Scan op Kwetsbare Afhankelijkheden
+### 10. Scan op Kwetsbare Afhankelijkheden (Dependency Vulnerability Scan)
 
-Voer `npm audit` of het equivalent voor uw stack uit. AI-tools installeren regelmatig verouderde pakketten met bekende beveiligingslekken.
+Voer direct `npm audit`, `yarn audit` of `snyk test` uit over uw complete codebase. AI-ontwikkeltools installeren bij het genereren van projecten regelmatig verouderde npm-pakketten met reeds lang bekende en gepubliceerde beveiligingslekken (CVE's). Werk alle verouderde bibliotheken bij naar stabiele, gepatchete versies.
 
-> "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
+> "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en de beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." — Herre Roelevink, Oprichter & Directeur, Manifera
 
-## Wat te Doen als uw Prototype de Audit Faalt
+## Wat te Doen als Uw Prototype de Beveiligingsaudit Faalt
 
-De meeste AI-gegenereerde prototypes falen op 6 of meer punten van deze checklist. Dat betekent niet dat u helemaal opnieuw moet beginnen; het betekent dat u gerichte last-mile engineering nodig heeft.
+Het overgrote deel van de met AI gegenereerde prototypes faalt bij een eerste inspectie op 6 of meer punten van deze checklist. Dat betekent geenszins dat uw idee waardeloos is of dat u uw complete softwareproject vanaf nul opnieuw moet opbouwen. Het betekent simpelweg dat u gerichte, specialistische **last-mile production engineering** nodig heeft om de software productierijp te maken.
 
-[LaunchStudio](https://launchstudio.eu/en/) is gespecialiseerd in precies dit werk. Wij nemen uw met AI gebouwde prototype zoals het is — we blijven van uw frontend en UI af. We repareren uitsluitend wat nodig is: beveiligingsverharding, authenticatie, betalingsintegratie en productie-deployment.
+[LaunchStudio](https://launchstudio.eu/en/) is exact in dit specialistische werkveld gespecialiseerd. Wij nemen uw met AI gebouwde prototype zoals het is over — we blijven volledig van uw bestaande frontend af en gaan uw UI niet onnodig herontwerpen. We repareren uitsluitend wat strikt noodzakelijk is: het dichten van beveiligingslekken, het configureren van waterdichte authenticatie, het implementeren van veilige betalingsgateways en het opzetten van een robuuste productie-deployment.
 
-Achter LaunchStudio staat [Manifera](https://www.manifera.com/), een softwareontwikkelingsbedrijf met ruim 11 jaar ervaring en ontwikkelteams aan de Herengracht 420 in Amsterdam, 100 Tras Street in Singapore en Pho Quangstraat in Ho Chi Minh-stad. Onze engineers hebben meer dan 160 projecten opgeleverd voor enterprise-klanten zoals Vodafone, TNO en CFLW.
+Achter LaunchStudio staat [Manifera](https://www.manifera.com/), een internationaal softwareontwikkelingsbedrijf met ruim 11 jaar ervaring, opgericht in **2014** door **Herre Roelevink**. Met een Europees hoofdkantoor aan de **Herengracht 420 in Amsterdam**, een regionale hub aan 100 Tras Street in **Singapore** en geavanceerde ontwikkelingscentra in **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), hebben onze 120+ engineers meer dan 160 complexe enterprise-projecten opgeleverd voor toonaangevende opdrachtgevers zoals Vodafone, TNO en CFLW. Diezelfde enterprise-expertise zetten we nu in om uw AI-prototype veilig, schaalbaar en succesvol te lanceren.
 
-## Belangrijkste inzichten
+## Belangrijkste Inzichten
 
-- AI-codegeneratoren produceren code die is geoptimaliseerd voor demo's en visuele compleetheid, niet voor enterprise-beveiliging.
-- 45% van de AI-gegenereerde code bevat exploiteerbare kwetsbaarheden — en de drie meest voorkomende (blootgestelde API-sleutels, ontbrekende RLS, geen invoervalidatie) komen in vrijwel elk prototype voor.
-- De 10-punten checklist biedt een concrete audit die u direct kunt uitvoeren op uw eigen codebase.
-- Falen op de checklist vereist geen complete herschrijving; LaunchStudio verhelpt uitsluitend de beveiligingsgaten met behoud van uw frontend.
+- AI-codetools genereren broncode die geoptimaliseerd is voor snelle visuele demo's, niet voor enterprise-beveiliging en productiestabiliteit.
+- 45% van de AI-gegenereerde code bevat direct exploiteerbare beveiligingslekken — en de drie meest voorkomende kwetsbaarheden (blootgestelde API-sleutels, ontbrekende RLS-policies, ontbrekende invoervalidatie) komen in vrijwel elk prototype voor.
+- De 10-punten checklist in dit artikel biedt u een concrete, objectieve pass/fail audit die u direct kunt uitvoeren op uw eigen codebase.
+- Falen op de checklist vereist geen dure en tijdrovende herbouw; LaunchStudio repareert uitsluitend de beveiligingsgaten met behoud van uw frontend.
+- Met professionele hardening lanceert u uw software binnen 3 tot 7 werkdagen veilig voor echte betalende klanten.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: De solo-oprichter in HR-tech
+### Een AI-Native Oprichter in Actie: De Solo-Oprichter in HR-Tech
 
-Elena, voormalig HR-manager bij een middelgroot wervingsbureau in Rotterdam, zag een kans om een betere tool voor medewerkersfeedback te ontwikkelen. Met **Cursor** bouwde ze in drie weekenden een functionele webapplicatie — compleet met anonieme feedbackformulieren, dashboards voor managers en sentimentanalyse via de OpenAI API.
+Elena, een voormalig HR-manager bij een middelgroot wervingsbureau in Rotterdam, zag een uitstekende marktkans om een betere tool voor anonieme medewerkersfeedback te ontwikkelen. Met behulp van **Cursor** bouwde ze gedurende drie opeenvolgende weekenden een complete, functionele webapplicatie — inclusief anonieme feedbackformulieren, dashboards voor leidinggevenden en geautomatiseerde sentimentanalyse via de OpenAI API.
 
-Het prototype zag er professioneel uit en werkte lokaal vlekkeloos. Elena startte een proefperiode met twee pilotbedrijven.
+Het prototype zag er buitengewoon professioneel uit en werkte tijdens lokale tests vlekkeloos. Elena startte vol vertrouwen een proefperiode met twee betalende pilotbedrijven.
 
-Vervolgens ontdekte een van de testgebruikers dat hij feedback van medewerkers van het andere bedrijf kon inzien. Elena's Supabase-tabellen hadden geen Row Level Security-beleid — de standaardinstelling wanneer AI databaseschema's aanmaakt. Erger nog: haar OpenAI API-sleutel stond hardcoded in de frontend JavaScript, zichtbaar voor iedereen in browser DevTools.
+Vervolgens ontdekte een alerte HR-medewerker van een van de pilotbedrijven dat hij via een eenvoudige browserinspectie de vertrouwelijke feedback van medewerkers van het concurrerende pilotbedrijf kon inzien. Elena's Supabase-tabellen hadden geen enkele Row Level Security policy ingeschakeld — de standaardsituatie wanneer AI automatisch databaseschema's genereert. Erger nog: haar persoonlijke OpenAI API-sleutel stond hardcoded in het frontend JavaScript-bestand, direct leesbaar voor iedereen die browser DevTools opende.
 
-**LaunchStudio (door Manifera)** voerde de 10-punten beveiligingsaudit uit op Elena's prototype. Zes punten faalden. In plaats van een volledige herbouw implementeerde het team Supabase RLS-policies, verplaatste alle API-sleutels naar server-side omgevingsvariabelen, voegde invoervalidatie toe en configureerde correcte authenticatiestromen.
+**LaunchStudio (door Manifera)** voerde de 10-punten beveiligingsaudit uit op Elena's prototype. Zes van de tien onderdelen faalden direct. In plaats van het project af te schrijven of opnieuw te beginnen, implementeerde het engineeringteam direct strikte Supabase RLS-policies, verplaatste alle API-sleutels naar beveiligde server-side omgevingsvariabelen, voegde Zod-invoervalidatie toe en configureerde correcte authenticatiestromen met httpOnly cookies.
 
-**Resultaat:** Beide pilotbedrijven zijn live gegaan. Elena's app doorstond een externe penetratietest van een van de pilotklanten. *"Ik had geen idee dat mijn API-sleutel zichtbaar was in de browser. Dat alleen al had het hele project kunnen beëindigen."*
+**Resultaat:** Beide pilotbedrijven gingen binnen enkele dagen veilig live. Elena's applicatie doorstond vervolgens glansrijk een externe penetratietest die door een van de enterprise-klanten werd uitgevoerd. *"Ik had werkelijk geen idee dat mijn API-sleutel zomaar zichtbaar was in de browser. Dat ene lek had mijn bedrijf al vóór de officiële start kunnen vernietigen."*
 
-**Kosten & tijdlijn:** €1.600 (Launch Ready Pakket) — binnen 4 werkdagen productieklaar opgeleverd.
+**Kosten & Tijdlijn:** €1.600 (Launch Ready Pakket) — binnen 4 werkdagen volledig productieklaar opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Waarom produceert AI standaard onveilige code?
-AI-codegeneratoren zijn getraind op miljoenen publieke repositories, voornamelijk tutorials en demoprojecten. Deze leggen de nadruk op eenvoud en snelheid in plaats van productiebeveiliging. De AI repliceert die patronen en slaat essentiële beveiligingsmaatregelen zoals Row Level Security, omgevingsvariabelenbeheer en invoersanitisatie over.
+### Waarom produceren AI-codegeneratoren standaard onveilige code?
+
+AI-codegeneratoren zijn getraind op miljoenen publieke repositories, voornamelijk tutorials en open-source demoprojecten. Deze projecten leggen de nadruk op eenvoud en snelheid in plaats van defensieve productiebeveiliging. De AI repliceert die patronen blindelings en slaat essentiële beveiligingsmaatregelen zoals Row Level Security, geheimbeheer via omgevingsvariabelen en server-side invoervalidatie standaard over.
 
 ### Kan ik beveiligingslekken zelf oplossen zonder een ontwikkelaar in te huren?
-Sommige punten — zoals het toevoegen van uw `.env`-bestand aan `.gitignore` of het aanzetten van RLS in Supabase — kan een technisch onderlegde oprichter zelf uitvoeren. Zaken zoals server-side invoervalidatie, webhook-handtekeningverificatie en robuuste rate limiting vereisen echter professionele software-engineering.
+
+Sommige basale configuraties — zoals het toevoegen van uw `.env`-bestand aan `.gitignore` of het aanzetten van RLS in Supabase — kan een technisch onderlegde oprichter zelfstandig uitvoeren. Complexe zaken zoals server-side invoervalidatie, cryptografische webhook-handtekeningverificatie en robuuste rate limiting vereisen echter specialistische software-engineering om foutloos te functioneren.
 
 ### Hoe verschilt LaunchStudio's beveiligingsaudit van een automatische scanner?
-Geautomatiseerde tools zoals `npm audit` detecteren bekende kwetsbaarheden in pakketten, maar kunnen bedrijfslogica, authenticatiestromen of databasetoegangsbeleid niet beoordelen. De engineers van LaunchStudio en Manifera auditen elk punt handmatig binnen de specifieke context van uw applicatie.
+
+Geautomatiseerde tools zoals `npm audit` detecteren uitsluitend bekende kwetsbaarheden in externe pakketten, maar kunnen uw specifieke bedrijfslogica, authenticatiestromen of databasetoegangsbeleid niet inhoudelijk beoordelen. De engineers van LaunchStudio en Manifera auditen elk punt handmatig binnen de unieke context van uw applicatie en verhelpen direct de gevonden lekken.
 
 ### Wat gebeurt er als mijn prototype faalt op de checklist — moet ik opnieuw beginnen?
-Nee. De kernfilosofie van LaunchStudio is om uw AI-gegenereerde frontend te behouden en alleen de backend-beveiliging, authenticatie en deploymentlaag te versterken. Een typisch beveiligingstraject duurt 3 tot 7 werkdagen en kost tussen 800 en 3.500 euro.
+
+Nee, absoluut niet. De kernfilosofie van LaunchStudio is om uw met AI gebouwde frontend volledig te behouden en uitsluitend de backend-beveiliging, authenticatie en deploymentlaag te versterken. Een typisch beveiligingstraject duurt 3 tot 7 werkdagen en kost tussen €800 en €3.500 — een fractie van een traditionele herbouw vanaf nul.
 
 ### Garandeert het behalen van deze audit dat mijn app 100% veilig is?
-Geen enkele audit garandeert absolute veiligheid. Het succesvol doorlopen van alle 10 punten elimineert echter de meest voorkomende en gevaarlijke kwetsbaarheden in AI-prototypes. Voor risicovolle applicaties (fintech, healthtech) kan LaunchStudio u verbinden met Manifera's enterprise security team voor diepgaande penetratietests.
+
+Geen enkele beveiligingsaudit kan absolute, 100% veiligheid garanderen — dat geldt voor alle software wereldwijd. Het succesvol voltooien van alle 10 checklist-items elimineert echter wel de meest voorkomende en gevaarlijke kwetsbaarheden in AI-prototypes. Voor applicaties in risicosectoren (zoals fintech of healthtech) kan LaunchStudio u direct koppelen met Manifera's enterprise security team voor diepgaande penetratietests.
 
 <script type="application/ld+json">
 {
@@ -128,7 +134,7 @@ Geen enkele audit garandeert absolute veiligheid. Het succesvol doorlopen van al
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom produceert AI standaard onveilige code?",
+      "name": "Waarom produceren AI-codegeneratoren standaard onveilige code?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "AI-modellen zijn getraind op publieke tutorials en demo's die snelheid prioriteren boven enterprise-beveiliging, waardoor RLS en invoervalidatie standaard ontbreken."

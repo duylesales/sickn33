@@ -1,100 +1,94 @@
 ---
-Titel: "Waarom Gratis Proefversies Falen bij AI Software Producten"
+Titel: "Waarom Gratis Proefperiodes Falen bij AI-Softwareproducten"
 Trefwoorden: AI SaaS, SaaS AI, AI SaaS platform, AI security risk, AI vulnerabilities, AI-native, AI in SaaS, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Waarom Gratis Proefversies Falen bij AI Software Producten
+# Waarom Gratis Proefperiodes Falen bij AI-Softwareproducten
 
-Het traditionele draaiboek voor SaaS-groei is Product-Led Growth (PLG) via een gratis proefperiode van 14 dagen. Voor traditionele projectmanagementsoftware werkt dit uitstekend: een extra gratis gebruiker kost nagenoeg nul euro aan marginale servercapaciteit. Voor een AI-startup is een onbeperkte proefperiode van 14 dagen echter financieel fataal. Het trekt grote groepen gratis gebruikers aan, genereert geen omzet en put uw bankrekening direct uit — omdat elke actie van een gratis gebruiker directe tokenkosten veroorzaakt bij uw AI-provider.
+Het klassieke Silicon Valley-handboek voor softwaregroei is Product-Led Growth (PLG), aangedreven door een royale gratis proefperiode van 14 dagen (Free Trial). Voor een traditionele projectmanagement-tool zoals Trello of Asana werkt dit fantastisch; het toevoegen van één extra gratis gebruiker kost u letterlijk nul marginale euro's, aangezien een extra rij in een PostgreSQL-tabel geen factuur genereert. Voor een AI-startup is het aanbieden van een onbeperkte proefperiode van 14 dagen echter het equivalent van het openen van een open bar op een studentenfeest. Het trekt massale menigten aan, genereert nul euro omzet en trekt uw zakelijke bankrekening binnen enkele dagen volledig leeg — omdat elke afzonderlijke handeling die een gratis gebruiker uitvoert een reële, meetbare API-kostenpost vertegenwoordigt zodra de aanroep de servers van uw LLM-provider raakt.
 
-## De Realiteit van Variabele Kosten
+## De Realiteit van Variabele Rekenkrachtkosten (Variable Costs)
 
-Elke keer dat een bezoeker een document analyseert of tekst genereert in uw applicatie, betaalt u per token aan OpenAI, Anthropic of Google. Als u een onbeperkte proefperiode van 14 dagen aanbiedt, kan één actieve gebruiker honderden complexe taken uitvoeren, wat u 15 tot 30 euro aan directe API-kosten oplevert.
+Elke keer dat een bezoeker een essay genereert, code laat schrijven of een PDF analyseert in uw AI-applicatie, betaalt u een externe API-provider (zoals OpenAI, Anthropic of Google) een vast bedrag per token, voor zowel de invoer- als de uitvoerzijde. Als u een onbeperkte proefperiode van 14 dagen aanbiedt, kan een enkele actieve proefgebruiker met gemak 500 zware generatietaken uitvoeren — waarbij elke taak een documentzoekstap, een redeneerstap en een opmaakstap aaneenschakelt — wat u over twee weken tijd al snel € 15 tot € 30 aan directe API-kosten per persoon kost.
 
-Wanneer deze gebruiker na twee weken afhaakt (zoals het overgrote deel van de proefgebruikers doet), lijdt u een hard financieel verlies. In traditionele SaaS is een conversieratio van 2% houdbaar omdat de 98% niet-betalers gratis zijn. In AI SaaS kost die 98% u direct geld op weg naar de uitgang.
+Zegt die gebruiker op dag 14 zijn proefaccount op, zoals de overgrote meerderheid van proefgebruikers doet, dan heeft u niet slechts een verkoopkans gemist; u heeft een hard, gerealiseerd financieel verlies geleden zonder enige compenserende inkomsten. Als 1.000 gebruikers zich in één cohort aanmelden, verliest u € 15.000 tot € 30.000 nog vóórdat uw allereerste betaalde factuur is verstuurd. Traditionele SaaS overleeft een conversieratio van 2% moeiteloos omdat de niet-converterende 98% niets kost. AI-software kan diezelfde conversieratio niet overleven, omdat de niet-converterende 98% uw bedrijfskapitaal actief opbranden op weg naar de uitgang.
 
-## De 'Hit-and-Run' Consument
+## De 'Hit and Run' Consument (Transactiegebruik)
 
-Veel AI-toepassingen zijn transactioneel: gebruikers zoeken een oplossing voor een acute eenmalige taak, zoals het opstellen van een juridische brief of het schrijven van productteksten voor een eenmalige lancering.
+AI-tools worden door gebruikers vaak uiterst transactioneel gebruikt: ze lossen één specifieke, acute behoefte op in plaats van direct een dagelijkse gewoonte te worden. Een zakelijke gebruiker heeft vandaag bijvoorbeeld dringend een formele juridische ingebrekestelling nodig, of moet eenmalig een set productbeschrijvingen genereren voor een lancering van morgen. Zij zoeken op Google, belanden op uw "AI Juridisch Assistent", registreren zich binnen 60 seconden voor de gratis proefperiode, genereren de brief, downloaden deze als PDF en sluiten het browsertabblad direct af — waarna ze het account binnen een uur opzeggen of simpelweg nooit meer terugkeren.
 
-Zij registreren zich voor de gratis proefperiode, genereren het document, downloaden de PDF en zeggen hun account binnen een uur direct weer op. De gebruiker heeft 100% van de waarde uit uw software gehaald zonder ooit een euro te betalen, terwijl uw marketing-dashboard een misleidend hoog aantal "nieuwe aanmeldingen" toont.
+De gebruiker heeft zijn doel 100% bereikt. Hij heeft geen enkele reden om in maand twee te blijven betalen, er is geen teamafhankelijkheid en geen gewoontevorming ontstaan. De gratis proefperiode stelde hem in staat om de volledige bedrijfswaarde van uw software gratis te consumeren zonder een cent te betalen, terwijl uw analytics-dashboard een misleidende piek in "nieuwe registraties" toont die een nagenoeg complete afwezigheid van terugkerende omzet maskeert.
 
-## Kwetsbaarheid voor Botnets en Misbruik
+## De Kwetsbaarheid voor Geautomatiseerde Botnetwerken
 
-Een registratieformulier zonder creditcardverificatie is een magneet voor geautomatiseerde scripts. Aanvallers maken met wegwerp-e-mailadressen duizenden nep-accounts aan om gratis rekenkracht van uw API-sleutel te kapen voor hun eigen grootschalige data- en vertaalworkloads.
+Als u een open registratieformulier heeft waarvoor geen creditcard vereist is, wordt u gegarandeerd aangevallen door geautomatiseerde scripts — vaak al binnen enkele dagen na een Product Hunt lancering of een virale post. Kwaadwillende actoren beheren grootschalige botnetwerken die continu het web scannen op nieuwe AI-apps met royale gratis proefperiodes. Zij maken via scripts 10.000 nepaccounts aan met behulp van wegwerp-e-maildiensten en gebruiken uw backend-servers om hun eigen massale dataverwerkingen gratis uit te voeren — documenten vertalen, content scrapen en herschrijven, of arbitrage plegen — waardoor uw complete API-budget binnen enkele uren in andermans zakken verdwijnt.
 
-## De Oplossing: Strikte Credit-Tegoeden in Plaats van Tijd
+## De Oplossing: Strikte Credit-Limieten (Freemium with Hard Limits)
 
-Vervang op tijd gebaseerde proefperiodes (14 dagen) door een **Freemium-model met een Harde Creditlimiet**:
+U kunt bij AI-producten geen "tijdgebaseerde" proefperiodes (zoals 14 dagen) aanbieden, omdat tijd niet de factor is die u geld kost — feitelijk verbruik is dat wel. U moet overstappen op "waardegebaseerde" proefperiodes die het financiële risico direct begrenzen.
 
-- Geef nieuwe gebruikers bij registratie exact **5 gratis credits**.
-- Verlaag het saldo atomair in de database bij elke generatie.
-- Na 5 acties blokkeert de interface direct met een duidelijke betaalmuur: *"U heeft de kracht van onze AI ervaren. Upgrade naar Pro om onbeperkt door te werken."*
+Het optimale onboardingmodel is **Freemium met Harde Limieten**. Wanneer een gebruiker een account aanmaakt, ontvangt hij exact 5 Gratis Credits, bijgehouden in een `credits`-kolom in de database en atomair verlaagd bij elke generatie via een databasetransactie of Redis `DECR` (wat voorkomt dat gelijktijdige verzoeken meer credits verbruiken dan toegestaan). De gebruiker kan het account voor altijd behouden, maar zodra hij 5 keer op "Genereer" heeft geklikt, vergrendelt de gebruikersinterface permanent. Er verschijnt een duidelijke betaalmuur: *"U heeft de kracht van onze AI ervaren. Upgrade naar Pro om onbeperkt door te gaan."*
 
-Dit stelt de gebruiker in staat om het "Aha!"-moment te ervaren, terwijl uw maximale financiële risico strikt begrensd blijft tot enkele centen per aanmelding.
+Dit model bereikt twee cruciale doelen tegelijkertijd: de gebruiker ervaart het "Aha!" moment van het product en kan de waarde zelf beoordelen, terwijl uw neerwaartse financiële risico strikt begrensd blijft tot maximaal 5 API-aanroepen per gebruiker.
 
-## De Creditcard-Betaalmuur voor B2B SaaS
+## Het Betaalmuur-Filter: Creditcard Verificatie Vooraf (Paywall Filter)
 
-Voor hoogwaardige zakelijke workflows is de **Creditcard-Betaalmuur (Card Upfront)** de meest effectieve filter. Bied een proefperiode van 7 dagen aan, maar vereis vooraf een geldige creditcardverificatie via Stripe (met een 0-euro autorisatie). Zegt de klant niet op, dan wordt op dag 8 automatisch het maandbedrag afgeschreven.
+Voor hoogwaardige B2B-workflows is de meest effectieve groeistrategie de **Creditcard-Betaalmuur (Credit Card Wall)**. U biedt nog steeds een proefperiode van 7 dagen aan, maar de gebruiker moet vooraf een geldige creditcard invoeren via Stripe, waarbij een autorisatie van € 0 wordt uitgevoerd om de geldigheid van de kaart te verifiëren vóórdat toegang wordt verleend. Zegt de gebruiker niet op, dan wordt op dag 8 automatisch het maandbedrag van bijvoorbeeld € 99 geïncasseerd (met een herinneringsmail 48 uur vooraf).
 
-Hoewel dit het aantal oppervlakkige aanmeldingen met circa 80% verlaagt, filtert het bots en eenmalige 'hit-and-run' bezoekers volledig weg. Uw API-budget wordt uitsluitend besteed aan serieuze zakelijke kopers met reële koopintentie.
+Dit verlaagt het totale aantal gratis aanmeldingen aanzienlijk — vaak met 80% ten opzichte van een formulier zonder kaart — maar het fungeert als een perfect kwaliteitsfilter. Het blokkeert nagenoeg 100% van alle geautomatiseerde bots (die immers niet beschikken over duizenden geldige unieke creditcards) en filtert direct alle transactionele 'Hit and Run' gebruikers eruit. Hierdoor weet u zeker dat de enige mensen die tijdens de proefperiode uw API-tokens verbruiken serieuze zakelijke kopers met budget zijn — exact de doelgroep waarvoor uw brutomarges een week aan gratis rekenkracht kunnen subsidiëren.
 
-Herre Roelevink, oprichter en Managing Director van Manifera, legt uit: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera ontwerpt sinds **2014** veilige en winstgevende software-architecturen.
+Manifera — het softwareontwikkelingsbedrijf achter LaunchStudio, opgericht in **2014** — implementeert deze credit-metering en betaalmuur-architecturen standaard voor AI-startups. Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Een onboarding-trechter die uw API-budget laat weglekken is geen groeistrategie, maar een volwassenheidslek. Bekijk meer op de [Manifera web app development pagina](https://www.manifera.com/services/web-app-develop/).
 
-## Belangrijkste inzichten
+## Belangrijkste Inzichten
 
-- Onbeperkte gratis proefperiodes van 14 dagen zijn verlieslatend voor AI-startups vanwege directe variabele tokenkosten per gebruikersactie.
+- De traditionele onbeperkte gratis proefperiode van 14 dagen is dodelijk voor AI-startups vanwege de hoge variabele tokenkosten per individuele gebruikersactie.
+- 'Hit and Run' consumenten gebruiken gratis proefperiodes om eenmalig documenten te genereren en zeggen direct op, wat u wel API-kosten oplevert maar nooit omzet.
+- Open registratieformulieren zonder creditcard trekken geautomatiseerde botnetwerken aan die uw gratis rekenkracht misbruiken voor hun eigen grootschalige projecten.
+- Vervang tijdgebaseerde proefperiodes door strikte 'Credit-Limieten' (bijv. maximaal 5 gratis generaties) om uw financiële risico per gebruiker hard te begrenzen.
+- Eis voor zakelijke B2B SaaS een creditcardverificatie (€ 0 autorisatie) vooraf; dit filtert bots en niet-serieuze gebruikers direct uit uw onboarding-trechter.
 
-- Voorkom 'Hit-and-Run' misbruik waarbij eenmalige gebruikers gratis documenten genereren en direct opzeggen zonder ooit te betalen.
+## Herontwerp Uw Onboarding-Trechter
 
-- Open registraties zonder creditcard trekken geautomatiseerde botnets aan die uw API-budget plunderen voor eigen dataverwerking.
+Verbranden duizenden gratis proefgebruikers uw API-budget zonder ooit te converteren naar een betaald abonnement? **[LaunchStudio](https://launchstudio.eu/en/)** helpt startups bij het herontwerpen van hun onboarding-flows door verlieslatende gratis proefperiodes te vervangen door geoptimaliseerde credit-systemen, bot-verificaties en enterprise betaalmuren. Bekijk onze aanpak op het [LaunchStudio procesoverzicht](https://launchstudio.eu/en/#process).
 
-- Vervang tijdgebonden proefperiodes door strikte credit-limieten (bijv. 5 gratis generaties) om uw financiële risico per gebruiker hard te begrenzen.
-
-- Vraag voor B2B SaaS vooraf creditcardgegevens bij aanmelding (met een 0-euro verificatie) om bots te weren en uitsluitend serieuze kopers toe te laten.
-
-## Bescherm uw conversietrechter en marges
-
-Verbrandt uw startup duizenden euro's aan API-kosten door gratis proefgebruikers die niet converteren? **LaunchStudio** herstructureert uw onboarding-funnel met credit-gebonden betaalmuren, Stripe-autorisaties en geautomatiseerde bot-verificatie om uw marge direct veilig te stellen. Bekijk onze [werkwijze](https://launchstudio.eu/en/#process) voor meer details.
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een gratis offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **[Manifera](https://www.manifera.com/about-us/)**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Gratis credits implementeren voor een lead-finder app
+### Een AI-Native Oprichter in Actie: Gratis Credits en SMS-Verificatie voor een Lead-Generatie Tool
 
-Avery, een consultant, bouwde met **Bolt** een lead-generator. Onbeperkte gratis proefperiodes werden massaal misbruikt door geautomatiseerde bots, waardoor haar API-kosten explodeerden.
+Avery, een B2B consultant, gebruikte **Bolt** om een automatische lead-generator te bouwen. Haar onbeperkte gratis proefperiode werd massaal misbruikt door geautomatiseerde scraping-bots, waardoor haar API-factuur explodeerde.
 
-Zij schakelde **LaunchStudio (door Manifera)** in om de onbeperkte proefperiode te vervangen door een model met 50 gratis credits gekoppeld aan verplichte SMS-telefoonverificatie.
+Zij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om de open proefperiode te vervangen door een strikt model van 50 gratis credits gekoppeld aan Twilio SMS-telefoonverificatie en Stripe creditcardvalidatie.
 
-**Resultaat:** Misbruik door bots daalde met 98%, terwijl de conversie van serieuze proefgebruikers naar betaalde abonnementen sterk toenam.
+**Resultaat:** Misbruik door bots daalde per direct met 98% terwijl de conversie van serieuze proefgebruikers naar betaalde Pro-pakketten met 35% toenam.
 
-**Kosten & tijdlijn:** €1.450 (Trial Credit Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.450 (Trial Credit & Verificatie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Waarom is een gratis proefperiode van 14 dagen riskant voor AI-producten?
+### Waarom is een gratis proefperiode gevaarlijk voor AI-producten?
 
-Omdat traditionele SaaS gratis gebruikers gratis kan hosten, terwijl elke AI-generatie directe variabele kosten veroorzaakt bij de LLM-provider; niet-converterende gebruikers kosten u direct geld.
+In traditionele software kost een gratis gebruiker niets extra. Bij AI kost elke handeling echt geld aan API-tokens. Als duizenden gratis gebruikers niet converteren, ruïneert de API-factuur uw startup.
 
-### Wat betekent 'Hit-and-Run' gedrag?
+### Wat is 'Hit and Run' gebruikersgedrag?
 
-Wanneer een bezoeker uw gratis proefversie gebruikt om eenmalig een acuut probleem op te lossen (zoals een cv of contract opstellen) en direct vertrekt zonder ooit te betalen.
+Wanneer een bezoeker uw AI-tool gebruikt voor een eenmalige acute taak (bijv. eenmalig een cv of brief genereren), het resultaat downloadt en direct opzegt zonder ooit klant te worden.
 
-### Hoe misbruiken botnets gratis AI-proefversies?
+### Hoe misbruiken bots gratis proefperiodes?
 
-Door via scripts duizenden nep-accounts aan te maken en uw servers te gebruiken om gratis zware vertaal- of scrapingopdrachten uit te voeren op uw kosten.
+Geautomatiseerde scripts maken duizenden nepaccounts aan via tijdelijke e-maildiensten om uw gratis rekenkracht te stelen voor grootschalige scraping- en vertaalprojecten.
 
-### Wat is het beste alternatief voor een gratis proefperiode?
+### Wat is het beste alternatief voor een tijdgebaseerde proefperiode?
 
-Een strikt credit-quotum (bijvoorbeeld 5 gratis generaties): de gebruiker ervaart direct de waarde van het product, terwijl uw financiële risico strikt begrensd blijft.
+Geef nieuwe gebruikers een strikt aantal gratis credits (bijv. 5 generaties). Zodra deze verbruikt zijn, vergrendelt de applicatie automatisch achter een betaalmuur.
 
-### Hoe helpt LaunchStudio bij het beveiligen van de onboarding-trechter?
+### Bouwt LaunchStudio deze credit- en betaalmuurlogica in bestaande code?
 
-LaunchStudio en Manifera integreren credit-controles, Stripe pre-autorisaties en SMS-verificaties direct in uw bestaande applicatie binnen 1 tot 3 weken.
+Ja. LaunchStudio en Manifera (opgericht in 2014) implementeren credit-ledgers, database-transacties, SMS-verificaties en Stripe-betaalmuren direct in uw bestaande backend in 1 tot 3 weken.
 
 <script type="application/ld+json">
 {
@@ -103,42 +97,42 @@ LaunchStudio en Manifera integreren credit-controles, Stripe pre-autorisaties en
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom is een gratis proefperiode van 14 dagen riskant voor AI-producten?",
+      "name": "Waarom is een gratis proefperiode gevaarlijk voor AI-producten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat elke AI-generatie directe variabele tokenkosten veroorzaakt, waardoor niet-betalende gebruikers uw bankrekening plunderen."
+        "text": "Omdat elke actie van een gratis gebruiker directe variabele API-kosten met zich meebrengt die bij non-conversie leiden tot verlies."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat betekent 'Hit-and-Run' gedrag?",
+      "name": "Wat is 'Hit and Run' gebruikersgedrag?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het eenmalig gratis oplossen van een acute taak via een proefaccount waarna de gebruiker direct definitief opzegt."
+        "text": "Het eenmalig gratis oplossen van een acute taak tijdens de proefperiode waarna de gebruiker direct vertrekt."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe misbruiken botnets gratis AI-proefversies?",
+      "name": "Hoe misbruiken bots gratis proefperiodes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door geautomatiseerd duizenden accounts aan te maken om gratis rekenkracht van uw API-sleutel te stelen."
+        "text": "Via tienduizenden nepaccounts die gratis tokens leegzuigen voor eigen grootschalige automatiseringsprojecten."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is het beste alternatief voor een gratis proefperiode?",
+      "name": "Wat is het beste alternatief voor een tijdgebaseerde proefperiode?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een harde creditlimiet (zoals 5 gratis generaties) die het 'Aha!'-moment levert met een strikt gemaximeerd financieel risico."
+        "text": "Een credit-gelimiteerd model (bijv. 5 gratis credits) dat hard vergrendelt om uw financiële risico te maximeren."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe helpt LaunchStudio bij het beveiligen van de onboarding-trechter?",
+      "name": "Bouwt LaunchStudio deze credit- en betaalmuurlogica in bestaande code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door credit-registraties, Stripe-autorisaties en bot-filters in te bouwen binnen 1 tot 3 weken."
+        "text": "LaunchStudio levert credit-tracking, Stripe betaalmuren en bot-preventie via Manifera's software-engineers."
       }
     }
   ]

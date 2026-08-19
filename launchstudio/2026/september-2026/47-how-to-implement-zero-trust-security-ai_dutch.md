@@ -1,94 +1,102 @@
 ---
-Titel: "Zero-Trust Beveiliging Implementeren in AI Applicaties"
+Titel: "Hoe U Zero-Trust Beveiliging Implementeert in AI-Software"
 Trefwoorden: AI secure, security AI, AI and security, AI security issues, AI security risk, AI vulnerabilities, AI deployment, AI-native, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Zero-Trust Beveiliging Implementeren in AI Applicaties
+# Hoe U Zero-Trust Beveiliging Implementeert in AI-Software
 
-Het traditionele beveiligingsmodel van "kasteel en slotgracht" — waarbij alles binnen de interne firewall blindelings wordt vertrouwd — is definitief achterhaald. Zodra een aanvaller de slotgracht oversteekt, heeft hij vrij spel in het hele kasteel. In het AI-tijdperk, waarin autonome agents databasetaken uitvoeren en interne API's aanroepen, is blind intern vertrouwen fataal. Een gecompromitteerde agent met gelekte inloggegevens gedraagt zich als een interne aanvaller. Enterprise-veiligheid vereist een **Zero-Trust Architectuur**: ga ervan uit dat het netwerk al gecompromitteerd is, en verifieer elk verzoek continu.
+Het traditionele "Kasteel en Slotgracht" (Castle and Moat) beveiligingsmodel — waarbij alles binnen de bedrijfsfirewall blindelings wordt vertrouwd zodra men binnen is — is definitief dood. Als een hacker de slotgracht oversteekt, is het hele kasteel verloren. In het AI-tijdperk, waarin autonome software-agenten zelfstandig databases doorzoeken en namens gebruikers externe API-aanroepen uitvoeren, is het vertrouwen van een intern netwerk ronduit catastrofaal. Een AI-agent met een uitgelekte service-credential is functioneel identiek aan een kwaadwillende hacker die al een vaste voet binnen uw perimeter heeft. Overleving in het enterprise-landschap vereist een compromisloze **Zero-Trust Architectuur**: ga er altijd vanuit dat een inbreuk al heeft plaatsgevonden, en verifieer elk afzonderlijk verzoek, altijd en overal.
 
-## Het Kernprincipe: Nooit Vertrouwen, Altijd Verifiëren
+Zero-Trust is geen kant-en-klaar product dat u van een plank koopt. Het is een fundamentele architectuurhouding opgebouwd uit elkaar versterkende controles: continue identiteitsverificatie, versleutelde service-naar-service communicatie, professioneel geheimenbeheer en strikt tijdgebonden toegangsrechten. Het overslaan van één element ondermijnt het gehele fundament.
 
-Zero-Trust stelt dat geen enkele entiteit (gebruiker, server of AI-agent) standaard wordt vertrouwd. Elke interactie moet cryptografisch worden geauthenticeerd, geautoriseerd en continu gevalideerd.
+## Het Principe: Vertrouw Niets, Verifieer Alles (Never Trust, Always Verify)
 
-Als uw AI-agent (draaiend op een Node.js-backend) de vectordatabase bevraagt, mag de database het verzoek niet accepteren puur omdat het afkomstig is van een intern IP-adres. De database eist cryptografisch bewijs van de identiteit van de agent via een kortlevend ondertekend token (zoals een scoped JWT of AWS STS sessietoken).
+Zero-Trust dicteert dat geen enkele entiteit (gebruiker, server of AI-agent) standaard wordt vertrouwd, ongeacht of het verzoek van binnen of buiten het netwerk afkomstig is. Elke interactie moet worden geauthenticeerd, geautoriseerd en continu gevalideerd — niet louter eenmalig bij het inloggen, maar bij elke individuele API-aanroep en tool-executie.
 
-## Het AI Service Mesh Beveiligen met mTLS
+Als uw AI-agent (draaiend op een Node.js backend) de Vector Database wil bevragen, mag de database dit verzoek niet accepteren puur omdat het afkomstig is van een intern IP-adres of VPC-peering verbinding. De database moet cryptografisch bewijs eisen van de identiteit van de agent voor die specifieke query, doorgaans via een kortlevend ondertekend JWT-token of AWS STS sessie-token.
 
-In een microservices-architectuur bestaat uw RAG-pipeline uit een frontend, API-gateway, LLM-orchestrator, vectordatabase en zandbak-containers. U moet het interne *East-West*-verkeer (tussen interne servers) net zo zwaar versleutelen als het externe verkeer.
+## De AI Service Mesh Beveiligen met Mutual TLS (mTLS)
 
-Implementeer **Mutual TLS (mTLS)** via een service mesh (zoals Istio of Linkerd):
-Wanneer de orchestrator communiceert met de vectordatabase, moeten beide servers wederzijdse cryptografische certificaten tonen voordat data wordt uitgewisseld. Mocht een hacker één container infiltreren via een kwetsbare library (circa 45% van de AI-gegenereerde code bevat kwetsbaarheden), dan kan hij het interne verkeer niet afluisteren of manipuleren omdat hij niet over een geldig intern certificaat beschikt.
+In een moderne microservices-architectuur bestaat uw RAG-pijplijn vaak uit een frontend, API Gateway, LLM-orkestrator, vector database en een tool-sandbox. Om Zero-Trust te realiseren, moet u het interne **Oost-West verkeer (East-West traffic)** tussen microservices versleutelen, en niet alleen de publieke buitenrand (Noord-Zuid).
 
-## Geheimenbeheer en Sleutelkluizen (Secrets Vaults)
+Implementeer **Mutual TLS (mTLS)** over alle interne microservices via een service mesh (zoals Istio of Linkerd) of sidecar-proxies. Wanneer de LLM-orkestrator met de vector database communiceert, moeten beide servers wederzijdse cryptografische certificaten uitwisselen om hun identiteit te bewijzen vóórdat er data vloeit. Als een aanvaller via een kwetsbare npm-afhankelijkheid — een reëel risico aangezien circa 45% van AI-gegenereerde code beveiligingslekken bevat — een container binnendringt, kan hij interne dataflows niet afluisteren of manipuleren omdat hij niet beschikt over een geldig intern ondertekend certificaat.
 
-Uw API-sleutel van OpenAI of Anthropic is het financiële hart van uw applicatie. Een gelekte sleutel leidt direct tot Denial of Wallet aanvallen. Zero-Trust verbiedt het hardcoderen van API-sleutels in `.env`-bestanden of Git-repositories.
+## Geheimen- en API-Sleutelbeheer via Beveiligde Vaults (Secrets Management)
 
-Gebruik een gecentraliseerde Secrets Manager (zoals AWS Secrets Manager of HashiCorp Vault). De AI-backend haalt de sleutel bij het opstarten tijdelijk op in het werkgeheugen, nooit op schijf. Stel automatische sleutelrotatie in (elke 30 tot 90 dagen) zodat een onopgemerkt lek een harde vervaldatum heeft.
+Uw OpenAI of Anthropic API-sleutel is de financiële levensader van uw bedrijf. Een uitgelekte sleutel leidt direct tot een **Denial of Wallet** aanval, waarbij aanvallers uw account leegtrekken op dure rekenmodellen. Zero-Trust verbiedt categorisch het hardcoden van API-sleutels in `.env`-bestanden, Git-repositories of frontend-bundels — een veelvoorkomende beginnersfout in prototypes van Lovable of Bolt.
 
-## Just-in-Time (JIT) Toegangsbeheer voor Ontwikkelaars
+U moet gebruikmaken van een dedicated Secrets Management systeem (zoals AWS Secrets Manager, HashiCorp Vault of Doppler). De backend-service authenticeert tijdens runtime via kortlevende IAM-rollen om de API-sleutel uitsluitend in het werkgeheugen te laden, nooit op schijf. Herstart de container, dan verdwijnt de sleutel. Koppel hier een automatische rotatiecyclus van 30 tot 90 dagen aan, zodat zelfs een onopgemerkt lek een harde vervaldatum heeft.
 
-Het permanent toekennen van "Root"- of "Admin"-rechten op productiedatabases aan ontwikkelaars is een overtreding van Zero-Trust. Als de laptop van een ontwikkelaar gecompromitteerd raakt via phishing of kwaadaardige plugins, heeft de aanvaller direct toegang tot alle bedrijfsdata.
+## Just-in-Time (JIT) Toegangsbeheer voor Software-Engineers
 
-Implementeer **Just-in-Time (JIT) Toegangsbeheer**:
-Ontwikkelaars hebben standaard geen permanente productietoegang. Wanneer een engineer een probleem moet onderzoeken in de live database, dient hij via Slack een tijdelijk JIT-verzoek in. Na goedkeuring door een beheerder ontvangt hij een tijdelijke IAM-rol die na 60 minuten automatisch verloopt. Dit verkleint het aanvalsoppervlak tot vrijwel nul en genereert een waterdichte audit-trail.
+De zwakste schakel in AI-beveiliging is de menselijke software-engineer. Het geven van permanente "Root"- of "Admin"-toegang aan ontwikkelaars tot de productie-vectordatabase is een directe schending van Zero-Trust. Wordt de laptop van de ontwikkelaar gecompromitteerd via phishing of een malafide VS Code extensie, dan verkrijgt de hacker direct al zijn permanente beheerdersrechten.
 
-Herre Roelevink, oprichter en Managing Director van Manifera, legt uit: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera ontwerpt sinds **2014** Zero-Trust en ISO-gecertificeerde infrastructuren.
+Implementeer **Just-in-Time (JIT) Toegang**. Ontwikkelaars bezitten standaard nul permanente productierechten. Moet een engineer een hallucinerende prompt debuggen in de live-database, dan dient hij via Slack een tijdelijk JIT-verzoek in via AWS IAM Identity Center of Teleport. Na goedkeuring van een manager ontvangt hij een tijdelijke IAM-rol die na exact 60 minuten automatisch vernietigd wordt. Dit verkleint het aanvalsvenster tot vrijwel nul en creëert een vlekkeloze audittrail voor SOC 2 compliance.
 
-## Belangrijkste inzichten
+## AI-Agenten Zelf Authenticeren, Niet Alleen Mensen (Non-Human Identities)
 
-- Zero-Trust gaat ervan uit dat aanvallers al binnen het netwerk aanwezig zijn; elke server, database en agent moet elk verzoek continu cryptografisch verifiëren.
+Zero-Trust moet zich ook uitstrekken tot de AI-agenten zelf. Als uw orkestrator dynamisch sub-agenten opstart voor parallelle tool-calls, moet elke afzonderlijke sub-agentinstantie een eigen kortlevend, strikt afgebakend credential ontvangen in plaats van één generiek gedeeld service-account. Een prompt-injectie die één sub-agent kaapt, kan hierdoor nooit de rechten van de overige agenten overnemen.
 
-- Vertrouw niet op IP-whitelists; gebruik Mutual TLS (mTLS) om al het interne 'East-West' microservice-verkeer versleuteld en geauthenticeerd te laten verlopen.
+## Netwerksegmentatie en het Blast Radius Principe (Network Segmentation)
 
-- Hardcodeer nooit API-sleutels; beheer geheimen via AWS Secrets Manager of HashiCorp Vault met automatische periodieke sleutelrotatie.
+Zelfs met mTLS en JIT-toegang is een plat netwerk waar elke service met elke andere server kan praten een ernstig risico. Segmenteer uw infrastructuur in geïsoleerde VPC-subnetten of Kubernetes namespaces met default-deny netwerkpolicies. Het doel is het minimaliseren van de **Blast Radius (Schaderadius)**: breekt een hacker in op de LLM-orkestrator via een kwaadaardige tool-call, dan verhindert netwerksegmentatie dat hij direct bij de betalingsdatabase of gebruikersgegevens kan komen.
 
-- Hanteer Just-in-Time (JIT) rechten voor ontwikkelaars: geef geen permanente admin-rechten, maar tijdelijke toegangssleutels die na 60 minuten automatisch vervallen.
+## Continue Monitoring en Geautomatiseerde Validatie
 
-- Pas netwerksegmentatie toe om de 'blast radius' te beperken; isoleer AI-agents, databases en betaalsystemen in afzonderlijke subnetten.
+Zero-Trust is geen eenmalige configuratie; het vereist continue geautomatiseerde monitoring. Detecteer afwijkingen in API-aanroepvolumes (zoals een plotse piek van 50x in database-reads om 3 uur 's nachts), monitor mislukte mTLS-handshakes en auditeer actieve JIT-toegangen met tools zoals Datadog Security Monitoring of AWS GuardDuty, direct gekoppeld aan uw incident-response kanalen.
 
-## Beveilig uw AI-architectuur met Zero-Trust principes
+Manifera — het internationale softwarebedrijf achter LaunchStudio, opgericht in **2014** met vestigingen aan de **Herengracht 420 in Amsterdam**, **Singapore** en **Ho Chi Minhstad, Vietnam** — bouwt al ruim elf jaar veilige Zero-Trust architecturen voor internationale klanten zoals Vodafone en TNO. Herre Roelevink, Oprichter & Managing Director van Manifera, benadrukt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Zero-Trust is het ultieme bewijs van die volwassenheid. Bekijk meer op de [Manifera offshore software development pagina](https://www.manifera.com/services/offshore-software-development/).
 
-Vormt uw interne AI-netwerk een potentieel beveiligingsrisico voor enterprise-klanten? **LaunchStudio** ontwerpt veilige Zero-Trust backends, implementeert mTLS-verbindingen, Secrets Vaults en Just-in-Time toegangscontroles om uw SaaS te laten slagen voor de zwaarste enterprise-audits. Bekijk onze [werkwijze](https://launchstudio.eu/en/#process) voor meer details.
+## Belangrijkste Inzichten
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
+- Zero-Trust gaat ervan uit dat indringers al binnen het netwerk aanwezig zijn; elke server, database en AI-agent moet elkaar continu cryptografisch authenticeren.
+- Beveilig intern Oost-West microserviceverkeer met Mutual TLS (mTLS) zodat kwaadwillenden geen interne datastromen kunnen onderscheppen.
+- Hardcodeer nooit OpenAI API-sleutels; gebruik cloud-vaults (zoals AWS Secrets Manager) met automatische rotatiecycli en in-memory loading.
+- Schaf permanente productietoegang voor ontwikkelaars af en vervang dit door Just-in-Time (JIT) toegang die na 60 minuten automatisch verloopt.
+- Beperk de 'Blast Radius' via strikte netwerksegmentatie en geef AI-agenten uitsluitend kortlevende, taakspecifieke autorisaties.
+
+## Vergrendel Uw AI-Architectuur met Zero-Trust
+
+Vormt uw interne AI-netwerk een kwetsbaarheid die wacht om geëxploiteerd te worden? **[LaunchStudio](https://launchstudio.eu/en/)** ontwerpt en implementeert ondoordringbare Zero-Trust backendsystemen met mTLS, beveiligde Secrets Vaults en strikte Just-in-Time toegangscontroles die voldoen aan de strengste enterprise security-audits. Bekijk onze diensten op het [LaunchStudio pakkettenoverzicht](https://launchstudio.eu/en/#packages).
+
+LaunchStudio is een initiatief mogelijk gemaakt door **[Manifera](https://www.manifera.com/about-us/)**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met meer dan 120 software-engineers ondersteunt Manifera AI-native oprichters om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: mTLS microservices implementeren voor een financiële AI-assistent
+### Een AI-Native Oprichter in Actie: mTLS Microservices Implementeren voor een Financiële AI-Analist
 
-John, een financieel analist, bouwde met **Bolt** een trading-assistent. Hij liep vast op compliance-eisen van banken omdat data tussen interne microservices onversleuteld werd verzonden.
+John, een financieel analist, gebruikte **Bolt** om een AI-handelsassistent te bouwen. Hij liep vast bij compliance-reviews van banken omdat data tussen interne microservices onversleuteld over het netwerk werd verstuurd.
 
-Hij werkte samen met **LaunchStudio (door Manifera)** om Mutual TLS (mTLS) certificaten en beveiligde service-to-service communicatiekanalen in te richten.
+Hij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om Mutual TLS (mTLS) certificaten, veilige AWS Secrets Vaults en JIT-toegangscontrole in te richten.
 
-**Resultaat:** De applicatie doorstond de strenge security-audits van kredietunies en startte succesvol met pilot-implementaties.
+**Resultaat:** Het platform slaagde direct voor de strengste bankaudits en sloot binnen 2 weken pilotcontracten met meerdere kredietinstellingen.
 
-**Kosten & tijdlijn:** €3.400 (Zero Trust Infrastructuur Pakket) — productieklaar en binnen 8 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €3.400 (Zero-Trust Infrastructuur Pakket) — productieklaar en binnen 8 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Wat houdt het Zero-Trust beveiligingsmodel in?
+### Wat houdt Zero-Trust Beveiliging in?
 
-Een filosofie gebaseerd op 'Nooit vertrouwen, altijd verifiëren', waarbij elke gebruiker, server en AI-agent zich bij elke afzonderlijke data-aanvraag cryptografisch moet identificeren.
+Een beveiligingsfilosofie gebaseerd op het principe 'Vertrouw niets, verifieer altijd'. Elke gebruiker, elk apparaat en elke interne server moet zich voor elk afzonderlijk verzoek expliciet authenticeren.
 
 ### Waarom is Zero-Trust essentieel voor AI-applicaties?
 
-Omdat AI-systemen gevoelige bedrijfsdata verwerken en autonome tools aanroepen; Zero-Trust voorkomt dat een gecompromitteerde service zich zijwaarts verplaatst naar de centrale database.
+Omdat AI-systemen toegang hebben tot vertrouwelijke data en autonome acties kunnen uitvoeren via tool-calls. Zero-Trust voorkomt dat een gecompromitteerde container leidt tot toegang tot de complete vectordatabase.
 
-### Wat is Mutual TLS (mTLS)?
+### Hoe beveiligt mTLS interne AI-microservices?
 
-Een protocol waarbij zowel de client als de server elkaars cryptografische certificaten controleren voordat data wordt uitgewisseld, waardoor afluisteren en manipulatie intern onmogelijk zijn.
+Mutual TLS dwingt af dat zowel de aanvragende server (bijv. LLM Orchestrator) als de ontvangende database cryptografische certificaten uitwisselen en valideren voordat data wordt uitgewisseld.
 
-### Wat is 'Just-in-Time' (JIT) toegang?
+### Wat is Just-in-Time (JIT) toegang voor engineers?
 
-Het verlenen van tijdelijke, automatisch verlopende beheerdersrechten (bijvoorbeeld voor 60 minuten) aan ontwikkelaars om een specifiek incident op te lossen, zonder permanente admin-wachtwoorden.
+In plaats van permanente beheerdersrechten krijgen ontwikkelaars uitsluitend tijdelijke toegang na goedkeuring van een manager, die na 60 minuten automatisch vervalt en een waterdichte audittrail achterlaat.
 
-### Hoe helpt LaunchStudio bij de implementatie van Zero-Trust voor AI?
+### Hoe helpt LaunchStudio bij Zero-Trust implementatie?
 
-LaunchStudio en Manifera implementeren mTLS service-meshes, AWS Secrets Manager, IAM JIT-rechten en netwerksegmentaties binnen uw bestaande codebase binnen 1 tot 3 weken.
+LaunchStudio en Manifera (opgericht in 2014) bouwen mTLS-verbindingen, cloud-vaults, netwerksegmentatie en JIT-workflows direct binnen uw bestaande codebase in 1 tot 3 weken.
 
 <script type="application/ld+json">
 {
@@ -97,10 +105,10 @@ LaunchStudio en Manifera implementeren mTLS service-meshes, AWS Secrets Manager,
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat houdt het Zero-Trust beveiligingsmodel in?",
+      "name": "Wat houdt Zero-Trust Beveiliging in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een beveiligingskader waarin geen enkele entiteit standaard wordt vertrouwd en elk intern verzoek cryptografisch wordt geverifieerd."
+        "text": "Een beveiligingsmodel waarbij geen enkele interne service standaard wordt vertrouwd en elk verzoek cryptografisch wordt gevalideerd."
       }
     },
     {
@@ -108,31 +116,31 @@ LaunchStudio en Manifera implementeren mTLS service-meshes, AWS Secrets Manager,
       "name": "Waarom is Zero-Trust essentieel voor AI-applicaties?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat AI-agents tools aanroepen en data verwerken; Zero-Trust voorkomt dat aanvallers zijwaarts naar databases bewegen."
+        "text": "Om te voorkomen dat een gehackte applicatieserver zich lateraal kan verspreiden naar gevoelige vectordatabases."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is Mutual TLS (mTLS)?",
+      "name": "Hoe beveiligt mTLS interne AI-microservices?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wederzijdse verificatie met cryptografische certificaten tussen interne microservices om afluisteren te voorkomen."
+        "text": "Door wederzijdse TLS-certificaatverificatie en end-to-end encryptie tussen alle interne microservices af te dwingen."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is 'Just-in-Time' (JIT) toegang?",
+      "name": "Wat is Just-in-Time (JIT) toegang voor engineers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tijdelijke beheerdersrechten die na 60 minuten automatisch vervallen, waardoor permanente admin-sleutels verdwijnen."
+        "text": "Tijdelijke, goedgekeurde productietoegang die na 60 minuten automatisch vervalt om risico's te minimaliseren."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe helpt LaunchStudio bij de implementatie van Zero-Trust voor AI?",
+      "name": "Hoe helpt LaunchStudio bij Zero-Trust implementatie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door mTLS, Secrets Vaults, JIT-toegangsstructuren en netwerksegmentatie in te richten binnen 1 tot 3 weken."
+        "text": "LaunchStudio levert geteste mTLS-architecturen, secrets vaults en JIT-workflows via Manifera's software-expertise."
       }
     }
   ]

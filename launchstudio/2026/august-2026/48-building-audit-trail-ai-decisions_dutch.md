@@ -1,100 +1,101 @@
 ---
-Titel: Een Audittrail Bouwen voor AI-Beslissingen in B2B SaaS
-Trefwoorden: AI security, AI vulnerabilities, AI database, AI SaaS platform, AI en softwareontwikkeling, AI deployment, AI-native, LaunchStudio, Manifera
+Titel: "Een Audittrail Bouwen voor AI-Beslissingen in B2B SaaS"
+Trefwoorden: AI security, AI kwetsbaarheden, AI database, AI SaaS platform, AI en softwareontwikkeling, AI deployment, AI-native, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
 # Een Audittrail Bouwen voor AI-Beslissingen in B2B SaaS
 
-Wanneer traditionele software vastloopt, analyseert een softwareontwikkelaar de stack trace om de foutieve coderegel op te sporen en te verklaren. Als een LLM echter een fictief juridisch precedent verzint, een kredietaanvraag afwijst of een kandidaat verkeerd beoordeelt, zit de verklaring verborgen in miljarden probabilistische neurale gewichten — een volstrekte "Black Box". Zakelijke enterprise-klanten in finance, gezondheidszorg en HR mogen wettelijk geen ondoorgrondelijke black-box systemen gebruiken voor beslissingen die mensen direct raken. Om aan deze sectoren te verkopen, moet u **Uitlegbaarheid (Explainability)** en onwijzigbare audittrails inbouwen in uw architectuur.
+Wanneer traditionele software crasht, inspecteert een softwareontwikkelaar de stack-trace, vindt de exacte regel falende code en legt haarfijn uit waarom de fout optrad. Wanneer een Large Language Model echter een fictieve juridische uitspraak verzint, een kredietaanvraag afwijst of de ene sollicitant boven de andere rangschikt, ligt de verklaring begraven in miljarden probabilistische neurale netwerkgewichten — een onvervalste "Black Box". Enterprise-klanten, met name in de financiële sector, gezondheidszorg en HR, mogen wettelijk geen Black Box-software gebruiken voor beslissingen die de rechten of levens van mensen raken. Om aan deze gereguleerde sectoren te verkopen, moet u **Uitlegbaarheid (Explainability)** direct in uw software-architectuur verankeren via onveranderlijke audittrails, ontworpen vanaf dag één.
 
-## De anatomie van een volwaardige AI-Auditlog
+## De Anatomie van een Volledig AI-Logbestand
 
-Het louter opslaan van de vraag van de gebruiker en het antwoord van de AI biedt vrijwel geen diagnostische waarde bij geschillen; het toont *wat* er is gezegd, maar niet *waarom*. Uw backend moet de volledige "Prompt State" van elke transactie vastleggen:
+U kunt niet simpelweg de gebruikersvraag en het AI-antwoord opslaan. Die combinatie biedt nagenoeg nul diagnostische waarde wanneer er een hallucinatie of een bevooroordeelde beslissing optreedt — het vertelt u uitsluitend *wát* er gebeurde, niet *waarom*. Uw backend-architectuur moet de volledige "Prompt State" voor elke afzonderlijke transactie vastleggen:
 
-- **De Systeemprompt (Gereviseerd):** De exacte versie van de master-instructies die op die specifieke milliseconde actief was.
-- **Specifieke Modelversie:** Log nooit algemeen "GPT-4", maar leg de exacte model-snapshot vast (bijv. `gpt-4-0613` of `claude-3-5-sonnet-20241022`). Als een provider de modelgewichten updatet, verandert het gedrag immers direct.
-- **Opgehaalde RAG-Context:** De exacte tekstblokken (chunks) die uw vector-database heeft aangeleverd, inclusief document-ID's en relevantiescores.
-- **Modelparameters:** De exacte instellingen voor temperatuur, top-p en functiedefinities die tijdens de aanroep zijn meegegeven.
-- **Cryptografische Hashes & Tijdstempels:** Een hash van de volledige payload met een milliseconde-nauwkeurige tijdstempel om latere manipulatie uit te sluiten.
+- **De Geversioneerde Systeemprompt:** De exacte hoofdinstructies die op die specifieke milliseconde actief waren, inclusief versienummer — omdat u prompts regelmatig bijwerkt en toezichthouders of enterprise-klanten exact zullen vragen welke promptversie actief was op het moment van de betwiste beslissing.
+- **De Exacte Modelversie:** Log nooit generiek "GPT-4", maar de exacte model-snapshot (bijv. `gpt-4-0613` of `claude-sonnet-4-5-20250929`). Zodra een provider de onderliggende gewichten bijwerkt, kan het redeneergedrag bij een identieke prompt subtiel of drastisch veranderen.
+- **De Opgehaalde RAG-Context:** De exacte tekstfragmenten die uw vectordatabase heeft opgehaald en aan het model heeft doorgegeven, inclusief de unieke brondocument-ID's en similarity-scores.
+- **Sampling-Parameters:** De exacte instellingen voor `temperature`, `top_p`, maximale tokens en aangeroepen tool-definities tijdens de generatie.
+- **Cryptografische Hashes & Tijdstempels:** Een cryptografische hash van de volledige in- en uitvoer, voorzien van een milliseconde-nauwkeurige tijdstempel, zodat u later onomstotelijk kunt aantonen dat het record niet achteraf is gemanipuleerd.
 
-Als een toezichthouder vraagt: *"Waarom wees de AI deze aanvraag af?"*, moet uw team de exacte toestand van het systeem op dat moment kunnen reconstrueren en verantwoorden.
+Vraagt een zakelijke klant: *"Waarom wees de AI deze sollicitant op dinsdagmiddag af?"*, dan moeten uw engineers de exacte systeemstatus van dat milliseconde-moment foutloos kunnen reconstrueren.
 
-## Bronvermelding afdwingen via RAG (Inline Citaties)
+## Bronvermeldingen (Citations) Afdwingen via RAG
 
-De meest effectieve methode om AI begrijpelijk te maken voor eindgebruikers is het model te verplichten diens bronnen inline te citeren via RAG:
+De meest effectieve methode om AI uitlegbaar te maken voor niet-technische eindgebruikers is het model dwingen om zijn bronnen expliciet te citeren in plaats van beweringen te poneren:
 
-**Systeemprompt:** *"Beantwoord de vraag van de gebruiker UITSLUITEND op basis van de meegeleverde documenten. Voeg achter elke feitelijke bewering een citaatverwijzing toe met het Document ID [DocID: 123]. Als het antwoord niet in de documenten staat, antwoord dan 'Ik weet het niet'."*
+**Systeemprompt Richtlijn:** *"Beantwoord de vraag van de gebruiker UITSLUITEND op basis van de meegeleverde documenten. Plaats achter elke feitelijke bewering direct een bronverwijzing in de vorm [DocID: 123]. Bevatten de documenten niet het antwoord, antwoord dan met 'Dat is op basis van de beschikbare bronnen onbekend' in plaats van te gokken."*
 
-In de frontend rendert u deze tags als klikbare voetnoten. Wanneer de gebruiker op een voetnoot klikt, springt het scherm direct naar de desbetreffende alinea in het brondocument. Dit neemt de vrees voor een 'Black Box' weg en levert tegelijkertijd een zelfdocumenterende audittrail op.
+In uw frontend parseert u deze tags en rendert u ze als interactieve voetnoten. Klikt de gebruiker op een voetnoot, dan springt de interface direct naar de exacte alinea in het brondocument. Dit neemt het "Black Box"-wantrouwen direct weg bij de gebruiker en levert tegelijkertijd een ingebouwde, zelf-documenterende audittrail op voor compliance-doeleinden.
 
-## Onwijzigbare, Append-Only Logopslag
+## Onveranderlijke, Append-Only Dataopslag
 
-In gereguleerde markten zoals het bankwezen hebben logs alleen juridische bewijskracht als toezichthouders kunnen vertrouwen op hun integriteit.
+In zwaar gereguleerde markten zoals het bankwezen zijn logs uitsluitend juridisch bruikbaar als ze standhouden voor een rechter of toezichthouder. Wordt uw startup beschuldigd van algoritmische vooringenomenheid (bias), dan zal een toezichthouder aannemen dat een reguliere SQL-database achteraf aangepast kan zijn om nadelig bewijs te verhullen.
 
-Uw AI-audittrail moet worden opgeslagen in een **onwijzigbare, Append-Only datastore** (zoals AWS QLDB, Azure Immutable Blob Storage met Object Lock of een hash-chained database). Zodra een transactie is gelogd, is deze cryptografisch verzegeld en kan niemand — zelfs een database-beheerder met root-rechten niet — het logbestand achteraf wijzigen of wissen.
+Uw AI-audittrail moet daarom worden opgeslagen in een **Append-Only, tamper-evident store** (zoals AWS QLDB, Azure Immutable Blob Storage met Object Lock, of een architectuur met hash-chains waarbij elk nieuw logrecord de cryptografische hash van het voorgaande record bevat). Eenmaal geregistreerd, is het logbestand permanent verzegeld. Zelfs een lead database-administrator met root-rechten kan de data niet geruisloos aanpassen of wissen.
 
-## Asynchrone Log-Architectuur ter Voorkoming van Vertraging
+## Datavolumes en Kosten Beheersen
 
-Het loggen van volledige promptcontexten voor 100.000 generaties per dag produceert honderden gigabytes aan data per maand. Sla dit nooit rechtstreeks op in uw primaire relationele PostgreSQL-database; de schrijfbelasting zal uw gehele applicatie vertragen.
+Het loggen van de volledige prompt-context voor 100.000 generaties per dag produceert al snel honderden gigabytes aan data per maand. Sla dit nooit op in uw primaire transactionele PostgreSQL-database, omdat de schrijfvolumes en rijgroottes de algehele applicatiesnelheid ernstig vertragen.
 
-Gebruik een **asynchrone architectuur**: zodra een generatie is voltooid, stuurt uw serverless functie een event naar een message queue (zoals AWS SQS of Kafka). Een aparte achtergrondservice verwerkt deze wachtrij en schrijft de zware logbestanden weg naar voordelige, gecomprimeerde objectopslag (S3/Parquet). Hierdoor blijft uw primaire applicatiedatabase razendsnel.
+Gebruik een **asynchrone architectuur**: zodra een generatie voltooid is, stuurt de backend een event naar een message queue (AWS SQS, Kafka of Redis Streams). Een aparte microservice verwerkt de wachtrij en schrijft de zware logbestanden weg naar goedkope cold storage (AWS S3) in gecomprimeerde Parquet-bestanden, gepartitioneerd op datum en klant. Zo blijft uw primaire database snel en licht, terwijl u volledige forensische data behoudt die via tools zoals AWS Athena doorzoekbaar is tijdens audits.
 
-Manifera ontwerpt en versterkt enterprise-grade cloud- en data-infrastructuren sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
+## Samenloop met de Europese AI Act en de AVG
 
-## Belangrijkste inzichten
+Audittrails zijn geen luxe extra: ze zijn een harde wettelijke verplichting onder Artikel 12 van de Europese AI Act voor Hoog Risico systemen en ondersteunen direct de naleving van Artikel 22 van de AVG (recht op uitleg bij geautomatiseerde besluitvorming). Eén goed ontworpen audittrail-infrastructuur beantwoordt beide wettelijke eisen gelijktijdig.
 
-- Enterprise-klanten mogen wettelijk geen onverklaarbare 'Black Box' AI inzetten voor beslissingen met grote impact op mensenlevens of financiën.
+Het bouwen van deze enterprise-klare infrastructuren is exact waar Manifera sinds **2014** in gespecialiseerd is, met 160+ gerealiseerde projecten voor onder meer Vodafone en TNO. Zoals Herre Roelevink, Oprichter & Managing Director van Manifera, stelt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Bekijk Manifera's [maatwerk softwareontwikkeling praktijk](https://www.manifera.com/services/custom-software-development/).
 
-- Een volledige AI-auditlog documenteert niet alleen vraag en antwoord, maar legt ook de systeemprompt-versie, exacte model-snapshot, RAG-context en modelparameters vast.
+## Belangrijkste Inzichten
 
-- Dwing bronvermeldingen (inline citaties) af in RAG-pijplijnen, zodat gebruikers en toezichthouders direct kunnen doorklikken naar de originele brondocumenten.
+- Enterprise-klanten mogen wettelijk geen 'Black Box' AI inzetten voor beslissingen die mensenrechten of financiële posities beïnvloeden; zorg voor volledige herleidbaarheid.
+- Een volwaardig AI-auditlogboek bevat de exacte systeemprompt, modelversie-snapshot, opgehaalde RAG-context, sampling-parameters en cryptografische hashes.
+- Dwing RAG-bronvermeldingen af via het model zodat feitelijke beweringen inline linken naar specifieke brondocumenten.
+- Sla auditlogs op in onveranderlijke (append-only) tamper-evident storage om juridische bewijskracht voor toezichthouders te waarborgen.
+- Verwerk logs asynchroon via message queues naar goedkope cold storage (S3/Parquet) om de operationele databasesnelheid te behouden.
+- Een robuuste audittrail voldoet gelijktijdig aan de loggingseisen van de AI Act en de AVG.
 
-- Sla auditlogs op in cryptografisch verzegelde, onwijzigbare (Append-Only) datastores om juridische bewijskracht te garanderen.
+## Maak Uw AI-Beslissingen Uitlegbaar en Audit-Ready
 
-- Gebruik asynchrone wachtrijen en cold object storage voor zware logdata om de prestaties van uw primaire applicatiedatabase optimaal te houden.
+Black-box AI passeert geen enkele enterprise security audit. **LaunchStudio** ontwerpt asynchrone, cryptografisch beveiligde audittrails en strikte RAG-bronvermeldingssystemen waarmee uw SaaS direct voldoet aan de strengste toezichtnormen. Bereken uw project via de [LaunchStudio prijscalculator](https://launchstudio.eu/en/#calculator).
 
-## Maak uw AI-beslissingen transparant en auditeerbaar
-
-Vereisen uw zakelijke klanten volledige transparantie en verantwoording van AI-beslissingen? **LaunchStudio** bouwt asynchrone, cryptografisch beveiligde audittrail-systemen en RAG-citatie-engines die voldoen aan de strengste toezichtnormen van de EU AI Act en GDPR.
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Bereken uw projectkosten](https://launchstudio.eu/en/#calculator) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: JSON-beslissingsaudits inbouwen voor een retail-voorraadplanner
+### Een AI-Native Oprichter in Actie: Gestructureerde Besluitvormings-Audits Bouwen voor een Retailplanner
 
-Sadie, een winkeleigenaar, gebruikte **Lovable** om een geautomatiseerde inkooptool te bouwen. Zij kon echter niet achterhalen waarom de AI foutieve inkooporders plaatste, omdat de app uitsluitend het uiteindelijke bestelaantal opsloeg — en niet de onderliggende prompt of context.
+Sadie, een winkeleigenaar, gebruikte **Lovable** om een geautomatiseerde inkoopplanner te bouwen. Zij kon niet achterhalen waarom de AI foutieve inkooporders genereerde, omdat de app uitsluitend het uiteindelijke bestelaantal opsloeg — zonder de achterliggende prompt, context of parameters.
 
-Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam implementeerde een gestructureerde JSON-audittrail die voor elke AI-beslissing de invoerprompts, opgehaalde voorraadcontext, temperatuurvariabelen en volledige API-antwoorden registreert.
+Zij schakelde **LaunchStudio (door Manifera)** in om een gestructureerde JSON-audittrail te bouwen die voor elke AI-beslissing de invoerprompts, opgehaalde voorraadcontext, temperatuurvariabelen en volledige API-responses vastlegde.
 
-**Resultaat:** Door de volledige transparantie konden fouten direct worden opgespoord en opgelost, wat €5.000 aan onjuiste bestellingen bespaarde.
+**Resultaat:** Volledige transparantie hersteld, waardoor inkoopfouten binnen 24 uur konden worden opgelost wat € 5.000 aan foute orders bespaarde.
 
-**Kosten & tijdlijn:** €1.600 (Audit Logging Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.600 (Audit Logging Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Waarom is 'Uitlegbaarheid' (Explainability) zo belangrijk bij AI?
+### Waarom is 'Uitlegbaarheid' (Explainability) zo complex bij AI?
 
-Omdat neurale netwerken probabilistisch werken. Als een AI een beslissing neemt over een lening of sollicitatie, moet u tegenover klanten en toezichthouders exact kunnen aantonen op welke data en parameters die beslissing is gebaseerd.
+Omdat diepe neurale netwerken Black Boxes zijn: beslissingen ontstaan uit miljarden probabilistische parameters en zijn niet herleidbaar tot één regel code. Uitlegbaarheid vereist daarom externe logging van alle context en prompts.
 
-### Waarom eisen enterprise-klanten een formele audittrail?
+### Waarom eisen enterprise-klanten een audittrail voor AI?
 
-Vanwege juridische aansprakelijkheid en compliance. Bij geschillen of beschuldigingen van discriminatie moet de organisatie kunnen aantonen dat de AI objectief en volgens goedgekeurde richtlijnen heeft gehandeld.
+Vanwege juridische aansprakelijkheid en compliance. Bij beslissingen over leningen, personeel of medische dossiers moeten bedrijven aan toezichthouders kunnen bewijzen dat er geen sprake was van illegale discriminatie of foutieve data.
 
-### Welke gegevens moeten minimaal in een AI-auditlog worden opgeslagen?
+### Wat moet er minimaal in een AI-auditlog staan?
 
-De exacte systeemprompt-versie, de specifieke model-snapshot, de opgehaalde documentfragmenten uit de vectorstore met hun ID's, de gebruikersinvoer en de gebruikte modelparameters (zoals temperatuur).
+De geversioneerde systeemprompt, de exacte invoer van de gebruiker, de specifieke modelversie-snapshot, de opgehaalde vectorcontext en de gebruikte sampling-parameters.
 
-### Hoe draagt RAG bij aan de uitlegbaarheid van AI?
+### Hoe vergroten RAG-bronvermeldingen het vertrouwen?
 
-Door het model te dwingen klikbare voetnoten en citaties op te nemen. Gebruikers kunnen direct controleren uit welk brondocument en welke alinea de informatie afkomstig is.
+Door het LLM te dwingen klikbare voetnoten naar brondocumenten te genereren, kunnen gebruikers direct controleren op welke data een uitspraak is gebaseerd.
 
-### Kan LaunchStudio asynchrone audit-logging inbouwen zonder mijn app te vertragen?
+### Bouwt LaunchStudio zelf de complete logging-infrastructuur?
 
-Ja. LaunchStudio en Manifera implementeren asynchrone architecturen met SQS/Kafka en S3, waardoor zware auditdata direct buiten uw primaire database wordt verwerkt zonder prestatieverlies voor gebruikers.
+Ja. LaunchStudio en Manifera implementeren de complete asynchrone loggingpijplijn — inclusief message queues, cold storage en tamper-evident archivering — binnen enkele werkdagen.
 
 <script type="application/ld+json">
 {
@@ -103,42 +104,42 @@ Ja. LaunchStudio en Manifera implementeren asynchrone architecturen met SQS/Kafk
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom is 'Uitlegbaarheid' (Explainability) zo belangrijk bij AI?",
+      "name": "Waarom is 'Uitlegbaarheid' (Explainability) zo complex bij AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat enterprise-klanten en toezichthouders inzicht eisen in de exacte context en parameters die leidden tot een AI-beslissing."
+        "text": "Omdat neurale netwerken statistische Black Boxes zijn; herleidbaarheid vereist logging van alle context en parameters rondom de inferentie."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom eisen enterprise-klanten een formele audittrail?",
+      "name": "Waarom eisen enterprise-klanten een audittrail voor AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Om compliance aan de EU AI Act en AVG te bewijzen en juridische aansprakelijkheid bij geautomatiseerde besluiten te verantwoorden."
+        "text": "Om aansprakelijkheid en bias uit te sluiten en verantwoording af te kunnen leggen aan toezichthouders en accountants."
       }
     },
     {
       "@type": "Question",
-      "name": "Welke gegevens moeten minimaal in een AI-auditlog worden opgeslagen?",
+      "name": "Wat moet er minimaal in een AI-auditlog staan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De systeemprompt-versie, de exacte model-snapshot, de opgehaalde RAG-contextblokken, de invoer en modelparameters."
+        "text": "De systeemprompt, de exacte model-snapshot, de RAG-contextdocumenten, sampling-parameters en cryptografische tijdstempels."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe draagt RAG bij aan de uitlegbaarheid van AI?",
+      "name": "Hoe vergroten RAG-bronvermeldingen het vertrouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door het afdwingen van inline bronvermeldingen en klikbare voetnoten die direct verwijzen naar de originele documenten."
+        "text": "Door feitelijke uitspraken direct via klikbare voetnoten te koppelen aan specifieke brondocumenten in de kennisbank."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio asynchrone audit-logging inbouwen zonder mijn app te vertragen?",
+      "name": "Bouwt LaunchStudio zelf de complete logging-infrastructuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera bouwen asynchrone wachtrijen en S3-objectopslag voor zware logs zonder de hoofdapp te belasten."
+        "text": "LaunchStudio levert asynchrone message-queue logging, Parquet-opslag en onveranderlijke audit-architecturen via Manifera."
       }
     }
   ]

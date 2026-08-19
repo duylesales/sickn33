@@ -1,92 +1,96 @@
 ---
-Titel: "Voorbereiden op de Volgende AI-Architectuurverschuiving"
+Titel: "Voorbereiden op de Volgende AI-Architectuurverschuiving met Modulaire Softwareontwikkeling"
 Trefwoorden: AI coding, AI to code, AI for coding, AI code development, AI-native, AI deployment, AI software engineering, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Voorbereiden op de Volgende AI-Architectuurverschuiving
+# Voorbereiden op de Volgende AI-Architectuurverschuiving met Modulaire Softwareontwikkeling
 
-In traditionele softwareontwikkeling blijven standaard architectuurpatronen (zoals REST API's of MVC) gerust een decennium stabiel. In kunstmatige intelligentie verschuiven architectuurparadigma's echter elke zes maanden ingrijpend. Technieken die in 2023 baanbrekend waren — zoals handmatige prompt-chaining en zelfgebouwde document-chunking pipelines — zijn nu achterhaald, stilzwijgend vervangen door native modelcapaciteiten. Als u een B2B SaaS bouwt met een starre, strak gekoppelde AI-backend, maakt de volgende grote modelrelease uw werk niet alleen irrelevant, maar kan het uw product in productie 's nachts actief breken. U moet vanaf dag één bouwen voor maximale wendbaarheid.
+In traditionele softwareontwikkeling blijven gevestigde architectuurpatronen (zoals RESTful API's, MVC-structuren of relationele databases) vaak een decennium lang volkomen stabiel en ongewijzigd. In het dynamische domein van Artificial Intelligence voltrekken fundamentele architectuurverschuivingen zich daarentegen elke zes maanden. Softwaretechnieken die in 2023 nog golden als revolutionaire 'state-of-the-art' doorbraken — zoals complexe handmatige prompt-ketens (prompt chaining) en zelfgebouwde document-chunking algoritmes — zijn vandaag de dag alweer volledig verouderd en geruisloos vervangen door ingebouwde modelcapaciteiten.
 
-## De Dreiging van Native Model-Functionaliteiten
+Als u een B2B SaaS-platform bouwt met een starre, fragiele en strak gekoppelde AI-backend, zal de eerstvolgende grote modelrelease van OpenAI, Google of Anthropic uw eerdere engineering-investeringen niet alleen irrelevant maken, maar kan het uw productie-omgeving van de ene op de andere dag volledig breken. U moet uw software vanaf dag één ontwerpen voor **Extreme Aanpasbaarheid en Modulariteit**.
 
-Startups bouwen vaak complexe infrastructuur uitsluitend om huidige beperkingen van een LLM te omzeilen. In 2023 bouwden teams uitgebreide chunking- en re-ranking-algoritmen — een PDF van 300 pagina's opsplitsen in overlappende vensters van 500 tokens — zodat een model met een contextvenster van 8.000 tokens lange documenten kon analyseren. Toen Anthropic en OpenAI modellen met meer dan 200.000 tokens context uitbrachten, losten zij dat probleem native op en veegden daarmee maanden aan startup-engineering in één klap van tafel.
+## De Reële Dreiging van 'Native' Modelfeatures (The Threat of Native Features)
 
-U kunt geen duurzame slotgracht bouwen door louter tijdelijke tekortkomingen van een model op te lappen. Ga ervan uit dat modellen op elk vlak sneller, slimmer en goedkoper worden. Uw architectuur moet focussen op wat een model *nooit* zelfstandig kan doen: fijnmazige enterprise-gebruikersrechten beheren, veilig koppelen met propriëtaire legacy-databases, bedrijfslogica en goedkeuringsworkflows handhaven, en een gespecialiseerde gebruikersinterface leveren voor een specifieke sector.
+Veel beginnende AI-startups maken de strategische fout om zware, complexe software-infrastructuur te bouwen puur om tijdelijke tekortkomingen van de huidige generatie taalmodellen te omzeilen. In 2023 bouwden talloze teams ingewikkelde chunking-, re-ranking- en overlapping-algoritmes — waarbij een PDF van 300 pagina's werd opgeknipt in overlappende stukjes van 500 tokens — uitsluitend om een LLM met een contextvenster van 8.000 tokens in staat te stellen een lang document te analyseren. Toen Anthropic en OpenAI in 2024 en 2025 modellen lanceerden met contextvensters van meer dan 1.000.000 tokens, werd dat probleem in één klap native opgelost door de modelmakers, waardoor maanden aan specialistisch ontwikkelwerk van tientallen startups in één klap waardeloos werd.
 
-## Modulaire Abstractielagen
+U kunt simpelweg geen duurzame slotgracht bouwen rondom het tijdelijk oplappen van een tekortkoming in een model. Ga er altijd van uit dat de fundamentele modellen continu intelligenter, sneller, goedkoper en capabeler worden. Uw software-architectuur moet zich focussen op de zaken die een model *nooit* zelfstandig kan: het beheren van fijnmazige enterprise-gebruikersrechten (RBAC), het veilig communiceren met verouderde relationele bedrijfsdatabases van de klant, het afdwingen van goedkeuringsworkflows en het bieden van een op maat gemaakte, frictieloze gebruikersinterface voor een specifieke beroepsgroep.
 
-De enige effectieve verdediging tegen snelle ecosysteemverschuivingen is rigoureuze **modulariteit**. Uw backend moet volledig geabstraheerd zijn van het specifieke verzoekformaat van één enkele AI-provider.
+## Modulaire Abstractielagen als Schild Tegen Ecosystem-Verschuivingen
 
-Als u OpenAI's exacte function-calling JSON-schema diep in uw applicatielogica verankert, zit u muurvast. Gebruik routing-middleware (zoals LiteLLM, OpenRouter of een eigen abstractielaag) zodat uw applicatie enkel communiceert met een stabiele interne interface. De middleware vangt de verschillen op tussen OpenAI, Anthropic, Google of een lokaal gehost Llama-model. Hierdoor kunt u modellen A/B-testen op kosten en kwaliteit, overschakelen bij uitval en van motor wisselen terwijl de auto blijft rijden.
+De enige effectieve bescherming tegen de razendsnelle innovatiewedloop is **Radicale Modulariteit**. Uw backend — of deze nu draait op Node.js, Python/FastAPI of Go — moet volledig worden geabstraheerd van de specifieke API-formaten van individuele modelleveranciers.
 
-## 'Shiny Object Syndrome' Voorkomen
+Als u de specifieke JSON-schema's voor OpenAI's function-calling diep verankert in uw kernbedrijfslogica, zit uw applicatie gevangen in een gouden kooi. Zodra een superieur opensource model (zoals Llama 3) of een goedkoper alternatief verschijnt, is uw engineeringteam wekenlang bezig met het ontwarren van leveranciersspecifieke aannames. U moet gebruikmaken van een centrale routeringslaag (zoals LiteLLM, OpenRouter of een eigen custom adapter-patroon). Hierdoor communiceert uw applicatielogica uitsluitend met één stabiele interne interface (`generateCompletion(prompt, tools, config)`). De middleware vertaalt dit verzoek dynamisch naar het specifieke formaat van de gekozen aanbieder. Dit stelt u in staat om modellen continu te A/B-testen op kosten en accuratesse, en bij een serverstoring direct over te schakelen naar een back-up provider zonder één regel bedrijfslogica te wijzigen.
 
-AI-engineers houden van nieuwe frameworks. Elke maand verschijnt er op GitHub een nieuwe orchestratie-bibliotheek die AI-agents belooft te revolutioneren: LangChain, LlamaIndex en talloze lichtgewicht alternatieven.
+## Het Vermijden van het 'Shiny Object Syndrome' in Engineeringteams
 
-Als uw CTO de RAG-pipeline wil herschrijven bij elke trending repository, raakt uw startup verlamd door permanente refactoring in plaats van waarde te leveren aan klanten. Weersta dit 'Shiny Object Syndrome'. Als uw huidige vectorzoeklogica 95% ophaalnauwkeurigheid levert en de enterprise-workflow van de klant bedient, herschrijf deze dan niet enkel voor een nieuwer framework. Stabiele omzet en een betrouwbaar product zijn waardevoller dan theoretische perfectie.
+Software-ontwikkelaars en AI-engineers houden van nieuwe frameworks en experimentele bibliotheken. Vrijwel maandelijks verschijnt er een nieuwe trending library op GitHub die belooft de manier waarop we AI-agenten bouwen compleet te transformeren — LangChain wordt afgelost door LlamaIndex, dat weer wordt opgevolgd door lichtere micro-frameworks.
 
-## De Horizon: Multi-Agent Netwerken
+Als uw technische leiding besluit om de complete RAG-pijplijn te herschrijven telkens wanneer een nieuwe library viraal gaat op social media, verlamt uw startup zichzelf in een permanente staat van refactoring in plaats van betalende klanten te bedienen. U moet waken voor het gevaarlijke **"Shiny Object Syndrome"**. Als uw huidige vectorzoeklogica (in Supabase pgvector of Pinecone) een ophaalaccuratesse van 95% levert en enterprise-klanten tevreden stelt, herschrijf de architectuur dan niet puur uit technologische fascinatie. Stabiele omzet en een betrouwbaar product zijn oneindig veel meer waard dan een theoretisch superieure architectuur die nieuwe bugs introduceert.
 
-De volgende definitieve verschuiving is de overstap van één gigantische 'God Prompt' naar **multi-agent netwerken**.
+## De Toekomst: Samenwerkende Multi-Agent Zwermen (Multi-Agent Swarms)
 
-In plaats van één complexe taak aan één modelcall toe te vertrouwen in de hoop dat het niet hallucineert, ontwerpt u een pijplijn van gespecialiseerde micro-agents. Een 'Planner Agent' splitst de taak op in afzonderlijke stappen. Een 'Research Agent' voert database-queries en tool-calls uit. Een 'Writer Agent' stelt het antwoord op met enkel de opgehaalde feiten. Een 'Critic Agent' controleert het concept op inconsistenties vóór verzending naar de gebruiker. Deze gedistribueerde architectuur is individueel te debuggen en levert enterprise-betrouwbaarheid die één monolithische prompt op schaal niet kan evenaren.
+De volgende definitieve architectuurverschuiving die zich momenteel voltrekt, is het verlaten van de monolithische "God Prompt" — één reusachtige systeemprompt die probeert een complexe taak in één enkele modelaanroep te plannen, uit te voeren en te controleren — ten gunste van **Multi-Agent Zwermen (Multi-Agent Systems)**.
 
-Herre Roelevink, oprichter en Managing Director van Manifera, vat het samen: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt sinds **2014** modulaire productie-architecturen voor enterprise-klanten.
+In plaats van één gigantische taak aan een enkel model toe te vertrouwen en te hopen dat het nergens hallucineert, ontwerpt u een gedistribueerde pijplijn van gespecialiseerde micro-agenten (aangestuurd via LangGraph, CrewAI of een robuuste database-taakwachtrij in Redis/PostgreSQL):
+- Een **Planner Agent** ontleedt de complexe zakelijke opdracht in concrete subtaken.
+- Een **Onderzoeks-Agent** voert de feitelijke database-query's en externe API-aanroepen uit.
+- Een **Schrijf-Agent** formuleert het antwoord uitsluitend op basis van de opgehaalde geverifieerde feiten.
+- Een **Criticus-Agent** toetst het concept kritisch tegen de oorspronkelijke opdracht en onderschept inconsistenties vóórdat de gebruiker het resultaat te zien krijgt.
 
-## Belangrijkste inzichten
+Deze gedistribueerde architectuur vergt weliswaar meer modelaanroepen, maar levert een exponentieel hogere betrouwbaarheid, traceerbaarheid en stabiliteit voor bedrijfskritische enterprise-processen.
 
-- De AI-sector beweegt zo snel dat complexe tijdelijke oplossingen (zoals handmatige document-chunking) binnen zes maanden vaak een gratis native modelfunctie worden.
+Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft dit als de kern van moderne engineering: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Het voorbereiden op de volgende architectuurverschuiving is een puur software-architectuurvraagstuk. Manifera — opgericht in **2014** met hoofdkantoor aan de **Herengracht 420 in Amsterdam**, **Singapore** en **Ho Chi Minhstad, Vietnam** — bouwt al ruim elf jaar stabiele, modulaire infrastructuren voor enterprise-klanten zoals Vodafone en TNO.
 
-- Bouw uw slotgracht niet rond tijdelijke modelbeperkingen, maar rondom propriëtaire bedrijfsdata, legacy-integraties en robuuste toegangscontroles.
+## Belangrijkste Inzichten
 
-- Implementeer strikte modulariteit met routeringslagen als LiteLLM of OpenRouter, zodat u van AI-provider kunt wisselen zonder de applicatie te herschrijven.
+- De AI-sector innoveert razendsnel: complexe tijdelijke workarounds (zoals handmatige chunking) worden binnen zes maanden vaak een gratis ingebouwde modelfeature.
+- Bouw geen slotgracht rondom tijdelijke modelbeperkingen, maar focus op propriëtaire bedrijfsdata, diepe workflow-integraties en strenge autorisatiestructuren.
+- Implementeer een strikt modulaire architectuur met routeringslagen (zoals LiteLLM) zodat u met één druk op de knop van modelprovider kunt wisselen.
+- Behoed uw team voor het 'Shiny Object Syndrome': geef prioriteit aan productstabiliteit en omzet boven het continu herschrijven van code naar de nieuwste GitHub-trends.
+- Bereid u voor op de transitie naar Multi-Agent systemen: verdeel complexe taken over gespecialiseerde micro-agenten (planner, onderzoeker, schrijver, criticus) voor maximale betrouwbaarheid.
 
-- Pas op voor 'Shiny Object Syndrome'; voorkom dat engineeringteams continu overstappen op de nieuwste GitHub-trends en prioriteer stabiele productiewaarde.
+## Maak Uw B2B SaaS-Architectuur Toekomstbestendig
 
-- Bereid u voor op de verschuiving naar multi-agent netwerken: gespecialiseerde micro-agents (planner, researcher, writer, critic) die samenwerken voor maximale betrouwbaarheid en traceerbaarheid.
+Is uw huidige AI-infrastructuur fragiel, strak gekoppeld en kwetsbaar voor de eerstvolgende grote modelupdate van OpenAI of Google? **[LaunchStudio](https://launchstudio.eu/en/)** ontwerpt en implementeert uiterst modulaire, provider-onafhankelijke AI-backends en multi-agent routeringslagen, waardoor uw enterprise SaaS stabiel blijft tijdens elke technologische revolutie — zonder dat uw bestaande frontend herbouwd hoeft te worden. Bekijk onze diensten op het [LaunchStudio procesoverzicht](https://launchstudio.eu/en/#process).
 
-## Maak uw SaaS Toekomstbestendig
-
-Is uw AI-architectuur kwetsbaar voor de volgende grote modelupdate van OpenAI of Anthropic? **LaunchStudio** ontwerpt uiterst modulaire, provider-onafhankelijke AI-backends met geavanceerde multi-agent routering, zodat uw enterprise SaaS stabiel blijft tijdens elke technologische verschuiving — zonder dat u uw frontend hoeft te herbouwen. Bekijk onze [werkwijze](https://launchstudio.eu/en/#process) voor meer informatie.
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een gratis offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **[Manifera](https://www.manifera.com/about-us/)**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met meer dan 120 software-engineers ondersteunt Manifera AI-native oprichters om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. Bekijk het [Manifera portfolio](https://www.manifera.com/portfolio/) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Modulaire achtergrondtaken koppelen voor een retail-AI agent
+### Een AI-Native Oprichter in Actie: Losse Worker-Taken Keten voor een Retail AI-Agent
 
-Christian, een winkelmanager, bouwde met **Cursor** een automatische herbestellingsbot. De bot liep regelmatig vast of produceerde foutieve bestellingen wanneer hij voorraad controleerde, hoeveelheden berekende en leveranciersorders plaatste binnen één enkele monolithische query.
+Christian, een retailmanager, gebruikte **Cursor** om een geautomatiseerde inkoopbot te bouwen. De bot liep echter regelmatig vast en genereerde foutieve bestellingen wanneer voorraadcontroles, herberekeningen en leveranciersbestellingen binnen één enkele monolithische prompt werden uitgevoerd.
 
-Hij schakelde **LaunchStudio (door Manifera)** in om de agent op te splitsen in modulaire achtergrondtaken gekoppeld aan een databasedashboards met een taakwachtrij (job queue), waardoor elke stap afzonderlijk traceerbaar en opnieuw uitvoerbaar werd met eigen foutafhandeling.
+Hij schakelde **LaunchStudio (door Manifera, opgericht in 2014)** in om de agent te herstructureren naar een modulaire architectuur met losse achtergrond-taken gekoppeld aan een robuuste database-jobqueue met automatische foutafhandeling.
 
-**Resultaat:** Het foutpercentage bij automatische bestellingen daalde van 40% naar nul, wat zorgde voor een betrouwbare winkelbevoorrading.
+**Resultaat:** Het storingspercentage bij automatische inkooporders daalde van 40% naar exact nul, waardoor de winkelvoorraad te allen tijde betrouwbaar op peil bleef.
 
-**Kosten & tijdlijn:** €2.100 (Agent Workflow Orchestration Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €2.100 (Agent Workflow Orchestration Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
 ### Waarom raken AI-startups zo snel achterhaald?
 
-Omdat basismodellen exponentieel verbeteren. Als uw enige productfunctie het oplossen van een tijdelijke beperking is (zoals PDF-chunking), verdwijnt uw bestaansrecht zodra een provider die functionaliteit native aanbiedt.
+Omdat de onderliggende modellen exponentieel verbeteren. Als uw enige productwaarde zit in een simpele workaround (zoals 'PDF's leesbaar maken'), wordt uw software overbodig zodra modelleveranciers die capaciteit standaard gratis inbouwen.
 
-### Wat is een modulaire architectuur in AI?
+### Wat houdt een 'Modulaire AI-Architectuur' in?
 
-Een opzet waarbij de AI-componenten geïsoleerd zijn achter een interne interface via routing-middleware, zodat u van model of provider kunt wisselen zonder de rest van de codebase aan te passen.
+Het isoleren van AI-aanroepen achter een centrale abstractielaag (zoals LiteLLM), waardoor u moeiteloos kunt wisselen van modelaanbieder of falende API's kunt omleiden zonder uw applicatielogica aan te passen.
 
-### Hoe overleeft een startup technologische verschuivingen?
+### Hoe overleeft een AI-startup snelle technologische verschuivingen?
 
-Door eigenaar te zijn van de workflow en integraties, niet van het model. Wanneer uw software diep is ingebed in de kernprocessen van de klant, blijft de waarde behouden ongeacht welk AI-model onder de motorkap draait.
+Door eigenaar te zijn van de complete zakelijke workflow en de data-integraties met de klantsystemen, in plaats van te concurreren op ruwe intelligentie.
 
-### Wat is de volgende grote architectuurverschuiving?
+### Wat is de belangrijkste opkomende AI-architectuur?
 
-Multi-agent netwerken: het vervangen van één grote prompt door een keten van gespecialiseerde micro-agents (zoals planners, onderzoekers, schrijvers en beoordelaars) die samenwerken voor hogere betrouwbaarheid.
+Multi-Agent Zwermen (Multi-Agent Swarms), waarbij complexe processen worden opgeknipt en uitgevoerd door samenwerkende micro-agenten (planner, onderzoeker, schrijver, controleur) voor maximale accuratesse.
 
-### Hoe helpt LaunchStudio bij het toekomstbestendig maken van AI-architecturen?
+### Hoe ondersteunt LaunchStudio bij het toekomstbestendig maken van software?
 
-LaunchStudio en Manifera (opgericht in 2014) auditen AI-backends op leveranciersafhankelijkheden en bouwen modulaire routeringslagen en multi-agent pijplijnen als vaste-prijs pakketten van 800 tot 7.500 euro, binnen 1 tot 3 weken.
+LaunchStudio en Manifera (opgericht in 2014) auditeren backends op hardcoded leverancierskoppelingen en herstructureren monolithische prompts naar modulaire multi-agent architecturen in 1 tot 3 weken voor €800 tot €7.500.
 
 <script type="application/ld+json">
 {
@@ -98,39 +102,39 @@ LaunchStudio en Manifera (opgericht in 2014) auditen AI-backends op leveranciers
       "name": "Waarom raken AI-startups zo snel achterhaald?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat basismodellen snel verbeteren en tijdelijke workarounds van startups vaak als gratis native functies integreren."
+        "text": "Omdat modelleveranciers tijdelijke software-workarounds razendsnel gratis inbouwen in nieuwere modelversies."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is een modulaire architectuur in AI?",
+      "name": "Wat houdt een 'Modulaire AI-Architectuur' in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een software-opzet waarbij LLM-aanroepen via routeringsmiddleware lopen, waardoor van provider gewisseld kan worden zonder codeherschrijving."
+        "text": "Het ontkoppelen van modelaanroepen via een abstractielaag zodat u eenvoudig kunt wisselen van AI-leverancier."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe overleeft een startup technologische verschuivingen?",
+      "name": "Hoe overleeft een AI-startup snelle technologische verschuivingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door te focussen op workflow-integraties en domeindata in plaats van louter op modelprompts."
+        "text": "Door te focussen op diepe workflow-integraties en propriëtaire data in plaats van op het taalmodel zelf."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is de volgende grote architectuurverschuiving?",
+      "name": "Wat is de belangrijkste opkomende AI-architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Multi-agent netwerken waarbij gespecialiseerde micro-agents samenwerken in plaats van één monolithische prompt."
+        "text": "Multi-Agent systemen waarbij gespecialiseerde micro-agenten samenwerken om complexe taken betrouwbaar uit te voeren."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe helpt LaunchStudio bij het toekomstbestendig maken van AI-architecturen?",
+      "name": "Hoe ondersteunt LaunchStudio bij het toekomstbestendig maken van software?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door modulaire abstractielagen en multi-agent pijplijnen te implementeren in vaste-prijs pakketten binnen 1 tot 3 weken."
+        "text": "LaunchStudio bouwt modulaire routeringslagen en multi-agent pijplijnen via Manifera's software-expertise."
       }
     }
   ]

@@ -1,99 +1,97 @@
 ---
-Titel: "Casestudy: Hoe Acme Corp Jaarlijks 1 Miljoen Dollar Bespaarde met AI-Documentautomatisering"
-Trefwoorden: AI coding, AI deployment, AI-app bouwen, AI SaaS, AI for coding, AI vulnerabilities, AI code development, LaunchStudio, Manifera
+Titel: "Casestudy: Hoe Acme Corp Jaarlijks $ 1M Bespaarde met AI Document-Automatisering"
+Trefwoorden: AI coding, AI deployment, build AI app, AI SaaS, AI for coding, AI kwetsbaarheden, AI gebruiken voor code, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Casestudy: Hoe Acme Corp Jaarlijks 1 Miljoen Dollar Bespaarde met AI-Documentautomatisering
+# Casestudy: Hoe Acme Corp Jaarlijks $ 1M Bespaarde met AI Document-Automatisering
 
-Voor B2B SaaS-ondernemingen is de meest overtuigende marketingactiviteit geen lijst met functies, maar een bewezen ROI-casestudy. Zakelijke beslissers kijken primair naar concrete kostenbesparingen en efficiëntiewinst. Deze casestudy beschrijft hoe we "Acme Corp" (een pseudoniem voor een toonaangevend Europees logistiek bedrijf) hebben geholpen een handmatige data-invoer-bottleneck te vervangen door een multimodale AI-pijplijn, wat resulteerde in een jaarlijkse besparing van ruim 1 miljoen dollar.
+Voor B2B SaaS-startups is de meest overtuigende marketingtool geen technische lijst met functionaliteiten, maar een bewezen ROI-casestudy met harde cijfers. Zakelijke beslissers geven weinig om de onderliggende neurale netwerkarchitectuur van uw software; zij willen weten hoeveel geld en uren uw oplossing bespaart. Deze casestudy beschrijft hoe wij "Acme Corp" (een pseudoniem voor een middelgrote Europese logistieke dienstverlener) hielpen een handmatige data-invoer-bottleneck te vervangen door een multimodaal AI-verwerkingssysteem, waarmee jaarlijks meer dan **$ 1 miljoen werd bespaard** — een project dat tevens illustreert waarom circa 80% van de met AI gegenereerde prototypes faalt zodra zij in aanraking komen met harde enterprise-productie-eisen.
 
-## Het Knelpunt: Ongestructureerde PDF-Documenten
+## Het Knelpunt: 5.000 Ongestructureerde PDF-Documenten per Dag
 
-Acme Corp verwerkt internationaal vrachtverkeer. Dagelijks ontvangt het bedrijf circa 5.000 e-mails van wereldwijde leveranciers met bijgevoegde PDF-facturen, douaneaangiften, vrachtbrieven en certificaten van oorsprong. Om zendingen te volgen en leveranciers te betalen, moesten deze gegevens handmatig worden ingevoerd in het centrale SAP ERP-systeem.
+Acme Corp coördineert internationaal goederenvervoer. Dagelijks ontvangt de organisatie circa 5.000 e-mails van wereldwijde leveranciers met diverse PDF-bijlagen: facturen, douaneverklaringen, vrachtbrieven en oorsprongscertificaten. Om zendingen realtime te monitoren en leveranciers tijdig te betalen, moesten al deze gegevens handmatig worden overgetypt in Acme's centrale ERP-systeem (een on-premise maatwerk SAP-implementatie).
 
-Hiervoor had Acme een team van 15 fulltime administratieve medewerkers in dienst in drie ploegendiensten (om tijdzones van Rotterdam tot Shanghai te dekken). Hun werk bestond puur uit het overtypen van gegevens — leveranciersnaam, btw-bedragen, HS-tariefcodes en containernummers. Dit proces kostte het bedrijf jaarlijks 1,2 miljoen dollar aan salariskosten en kende een menselijke foutmarge van 4%, wat leidde tot kostbare douanevertragingen.
+Historisch zette Acme hiervoor een team van 15 fulltime administratieve medewerkers in, verdeeld over drie ploegendiensten van Rotterdam tot Shanghai. Hun werk bestond uitsluitend uit het openen van een PDF op het ene scherm en het overtikken van velden — leveranciersnaam, totaalbedrag, btw, HS-douanecodes, containernummers en item-ID's — in het ERP-scherm op de andere monitor. Dit proces kostte het bedrijf jaarlijks $ 1,2 miljoen aan loonkosten en secundaire arbeidsvoorwaarden en kende een menselijke foutmarge van 4%, wat regelmatig leidde tot kostbare zendingsvertragingen en in meerdere gevallen tot douaneboetes van tienduizenden euro's wegens demurrage.
 
-Traditionele OCR-software (zoals ABBYY of Tesseract) faalde omdat de 5.000 dagelijkse PDF's binnenkwamen in meer dan 400 verschillende, voortdurend veranderende sjablonen. Zodra een leverancier diens factuurlay-out wijzigde, liep de traditionele OCR-scanner direct vast.
+Traditionele OCR-software (Optical Character Recognition) faalde categorisch omdat de 5.000 PDF's binnenkwamen in meer dan 400 verschillende, voortdurend veranderende sjablonen. Elke expediteur, douane-expediteur en leverancier hanteert een eigen factuursjabloon, en deze lay-outs wijzigen continu zodra een partij overstapt op nieuwe boekhoudsoftware. OCR-engines zoals Tesseract of ABBYY vereisen rigide x/y-coördinaten en vaste tabelstructuren; zij kunnen niet omgaan met ongestructureerde variatie. Acme's eerdere poging met regelgebaseerde OCR kende een dermate hoog onopgemerkt foutpercentage dat medewerkers het systeem na drie maanden volledig links lieten liggen en terugvielen op handmatig invoerwerk.
 
 ## De Oplossing: Semantische Extractie via Multimodale LLM's
 
-We hebben een volledig geautomatiseerde, serverloze AI-pijplijn ontworpen. De fundamentele innovatie was de overstap van rigide sjabloonherkenning naar **Semantisch Begrip via Multimodale LLM's**: het document wordt gelezen en begrepen zoals een ervaren accountant dat doet, ongeacht waar velden op de pagina staan.
+Wij ontwierpen een volledig geautomatiseerde, serverless AI-pijplijn om deze menselijke bottleneck te elimineren. De kerninnovatie was de verschuiving van rigide "Template Matching" (OCR) naar **Semantisch Begrip (Multimodale LLM's)** — het document begrijpend lezen zoals een getrainde registeraccountant dat doet:
 
-**De Workflow:**
+1. **Inname (Ingestion):** Een script gebouwd op AWS SES (Simple Email Service) monitort continu een dedicated intake-inbox. Zodra een e-mail met PDF-bijlage arriveert, stript een AWS Lambda-functie het bestand, berekent een cryptografische checksum om dubbele verwerking te voorkomen, en slaat het document op in een afgeschermde AWS S3-bucket met een 90-dagen retentiebeleid voor auditdoeleinden.
+2. **Visuele Verwerking:** Een tweede Lambda-trigger activeert op de S3-schrijfactie en stuurt de PDF (geconverteerd naar pagina-afbeeldingen) via een beveiligde API-verbinding naar een multimodaal model (GPT-4o met native vision en gestructureerde JSON-output). De architectuur is model-agnostisch ontworpen, waardoor eenvoudig geschakeld kan worden naar Claude of open-source vision-modellen.
+3. **Rolgebaseerde Systeemprompt:** Het model zoekt niet naar vaste coördinaten, maar leest semantisch: *"Je bent een ervaren registeraccountant. Analyseer dit document. Extraheer de leveranciersnaam, factuurdatum, totaalbedrag en HS-douanecodes. Negeer overige tekst. Retourneer uitsluitend een strikt JSON-object conform dit schema. Is een veld onleesbaar of twijfelachtig, retourneer dan expliciet 'null' in plaats van te gokken."* Deze expliciete toestemming om 'null' te retourneren bij onzekerheid bleek de meest cruciale instructie in de gehele prompt.
+4. **Validatie en Routering:** De JSON-output wordt gevalideerd tegen een strikt schema met Pydantic op de backend. Is de betrouwbaarheidsscore boven de 98%, dan wordt de data via de REST API direct in het ERP-systeem geschreven met een volledige audittrail van de gebruikte modelversie en prompt-hash. Bij lagere betrouwbaarheid of 'null'-waarden wordt het document automatisch gerouteerd naar een menselijke uitzonderingenwachtrij (Human-in-the-Loop) met het originele document en de extractie naast elkaar getoond.
 
-1. **Geautomatiseerde Inname (Ingestion):** Een AWS SES-inbox ontvangt de e-mail. Een serverless AWS Lambda-functie stript de PDF-bijlage, berekent een checksum tegen duplicaten en slaat het bestand beveiligd op in een private S3-bucket.
-2. **Visuele AI-Verwerking:** Een tweede Lambda-functie stuurt de pagina's naar een multimodaal visiemodel via een beveiligde API-route.
-3. **De Gestructureerde Prompt:** Het model krijgt de strikte instructie: *"Je bent een ervaren accountant. Lees dit document. Extraheer de leveranciersnaam, factuurdatum, het totale te betalen bedrag en de HS-goederencodes. Negeer overige tekst. Geef het resultaat uitsluitend als JSON-object conform dit schema. Als een veld onleesbaar of ambigu is, vul dan 'null' in in plaats van te gokken."*
-4. **Validatie en Routering:** De JSON-output wordt gevalideerd via Pydantic. Is de betrouwbaarheid boven de 98%, dan wordt de data via een REST-API direct in het ERP-systeem ingeschoten. Bij twijfel wordt het document gerouteerd naar een menselijke controlewachtrij waar de PDF en de AI-suggestie naast elkaar worden getoond.
+Dit ontwerppatroon ("veilig falen, geruisloos escaleren") is veel waardevoller dan een puur nauwkeurigheidspercentage. Een AI die in 95% van de gevallen accuraat is maar in 5% van de gevallen met stelligheid foute cijfers invoert, is desastreus in een financieel proces; een systeem dat in 90% van de gevallen accuraat is en in de overige 10% veilig meldt "ik weet het niet", corrumpeert nooit de administratie.
 
-## De Zakelijke Impact en Rendement (ROI)
+## De ROI en Zakelijke Resultaten
 
-Het complete systeem werd binnen zes weken ontworpen, getest op 3.000 historische documenten en live in productie genomen:
+Het systeem werd binnen **zes weken** gebouwd, getest tegen een historische steekproef van 3.000 documenten en volledig in productie genomen:
 
-- **Kostenreductie van 93%:** De API- en hostingkosten bedragen gemiddeld 0,02 dollar per pagina, wat neerkomt op circa 85.000 dollar per jaar. Dit leverde een directe jaarlijkse nettobesparing op van meer dan 1,1 miljoen dollar vergeleken met de eerdere salarislasten van 1,2 miljoen dollar.
-- **Verwerkingssnelheid:** Waar een menselijke medewerker gemiddeld 4 minuten per factuur nodig had, verwerkt de AI-pijplijn het document en de ERP-koppeling binnen 3,5 seconden (68x sneller).
-- **Foutreductie:** De foutmarge daalde van 4% naar slechts 0,5% doordat onduidelijke documenten veilig worden geëscaleerd naar menselijke controleurs.
+- **Kostenreductie:** De API-kosten bedragen gemiddeld $ 0,02 per pagina. De totale jaarlijkse exploitatiekosten van de cloudinfrastructuur (API-fees, Lambda, S3 en monitoring) bedragen circa $ 85.000. Dit levert een **directe besparing op van ruim $ 1,1 miljoen per jaar** vergeleken met de eerdere loonsom — een kostenreductie van 93%.
+- **Snelheid:** Waar een menselijke medewerker gemiddeld 4 minuten per document nodig had (inclusief het zoeken naar de juiste ERP-velden), verwerkt de AI-pijplijn een document en update de database binnen **3,5 seconden** (een versnelling van 68x), waarmee tevens piekbelasting-achterstanden tijdens het hoogseizoen verdwenen.
+- **Nauwkeurigheid:** Het foutpercentage daalde van 4% naar **0,5%**, doordat het model bij twijfel veilig escaleert naar menselijke review in plaats van foutieve aannames te doen.
 
-## Menselijk Kapitaal Heroriënteren
+## De Toekomst: Waardecreatie Boven Lopende-Band-Werk
 
-De 15 administratieve medewerkers werden niet ontslagen, maar kregen een waardevollere rol binnen de organisatie. Zij werden omgeschoold naar leveranciersrelatiebeheer, complexe douane-uitzonderingen en logistieke procesoptimalisatie — strategische taken waar menselijke onderhandeling en empathie onmisbaar zijn.
+De 15 administratieve medewerkers werden niet ontslagen, maar omgeschoold. Omdat zij niet langer urenlang handmatig data hoeven over te typen, werden zij ingezet voor leveranciersrelatiebeheer, procesoptimalisatie en de afhandeling van complexe douane-uitzonderingen — werkzaamheden die menselijk inzicht, onderhandeling en strategisch denkvermogen vereisen.
 
-Manifera bouwt en integreert complexe enterprise-infrastructuren en data-pijplijnen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
+Dit patroon toont aan dat AI-automatisering niet synoniem hoeft te staan aan massaontslagen; het stelt professionals in staat te stoppen met concurreren tegen machines op pure data-overdracht en zich te richten op werkzaamheden waar menselijke intelligentie onvervangbaar is.
 
-## Belangrijkste inzichten
+Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft het als volgt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt deze enterprise-systemen sinds **2014** met 120+ engineers vanuit **Amsterdam** (Herengracht 420) en **Ho Chi Minhstad, Vietnam**. Bekijk meer op de [Manifera portfolio pagina](https://www.manifera.com/portfolio/).
 
-- Handmatige overtik-arbeid van ongestructureerde documenten (facturen, PDF's) is een van de duurste verborgen kostenposten in traditionele bedrijfsvoering.
+## Belangrijkste Inzichten
 
-- Traditionele OCR faalt bij wisselende documentlay-outs; multimodale LLM's blinken uit doordat zij tekst semantisch begrijpen zonder sjablonen.
+- Handmatige invoer van ongestructureerde documenten (PDF's, e-mails) is een van de grootste verborgen kostenposten binnen enterprise-organisaties.
+- Traditionele OCR faalt bij variërende lay-outs; multimodale LLM's blinken uit door semantische interpretatie zonder vaste templates.
+- Dwing gestructureerde JSON-outputs af met strikte validatie en laat het model bij twijfel veilig 'null' retourneren in plaats van te gokken.
+- Een doordachte AI-pijplijn verlaagt documentverwerkingskosten met meer dan 90% en versnelt de doorlooptijd van minuten naar seconden.
+- AI stelt organisaties in staat om personeel te promoveren van data-invoer naar strategisch relatiebeheer en kwaliteitscontrole.
 
-- Dwing het model af om gestructureerde JSON-data te leveren en expliciet 'null' te retourneren bij twijfel om vervuiling van ERP-databases te voorkomen.
+## Automatiseer Uw Bedrijfsknelpunten
 
-- Een doordachte AI-pijplijn verlaagt operationele verwerkingskosten met meer dan 90% en versnelt de doorlooptijd van minuten naar seconden.
+Verliezen uw medewerkers dagelijks honderden uren aan repetitieve data-invoer? **LaunchStudio** ontwikkelt multimodale AI-pijplijnen op maat die ongestructureerde PDF's en e-mails direct omzetten in gestructureerde database-records — zonder dat u uw bestaande ERP-architectuur hoeft te vervangen. Bekijk onze diensten op het [LaunchStudio pakkettenoverzicht](https://launchstudio.eu/en/#packages) of bereken uw besparing via de [prijscalculator](https://launchstudio.eu/en/#calculator).
 
-- AI-automatisering stelt organisaties in staat personeel te heroriënteren van repetitieve transcriptie naar waardevolle klant- en procesoptimalisatie.
-
-## Automatiseer uw operationele knelpunten
-
-Verspilt uw organisatie duizenden uren aan handmatige data-invoer? **LaunchStudio** ontwerpt en bouwt multimodale AI-extractiepijplijnen die ongestructureerde documenten en e-mails binnen enkele seconden omzetten in gestructureerde database-records.
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Bekijk onze pakketten](https://launchstudio.eu/en/#packages) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Stripe-metadata herstellen in een facturatie-flow
+### Een AI-Native Oprichter in Actie: Stripe Webhook Metadata Repareren voor een Facturatieportaal
 
-Mason, een productmanager, gebruikte **Lovable** om een facturatiedashboard te bouwen. Door vertragingen in de webhook-afhandeling mislukten betalingsstatussen, waardoor de officiële productlancering stagneerde.
+Mason, een productmanager, gebruikte **Lovable** om een SaaS-facturatiedashboard te bouwen. Door vertragingen in webhook-events faalden betalingsupdates, waardoor gebruikers geen toegang kregen tot hun betaalde functies.
 
-Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam herstructureerde de Stripe payment listeners en optimaliseerde de verwerking van webhook-metadata.
+Hij schakelde **LaunchStudio (door Manifera)** in om de Stripe-betaallisteners te herstructureren en de verwerking van webhook-metadata asynchroon en idempotent in te richten.
 
-**Resultaat:** De facturatie-automatisering functioneerde vlekkeloos, waardoor de lancering naar 2.000 betalende gebruikers succesvol verliep.
+**Resultaat:** Facturatie-automatisering functioneerde vlekkeloos, wat een succesvolle lancering naar 2.000 betalende gebruikers mogelijk maakte.
 
-**Kosten & tijdlijn:** €1.600 (Billing System Repair Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.600 (Facturatiesysteem Reparatie Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Welk operationeel probleem had Acme Corp?
+### Welk specifiek probleem had Acme Corp?
 
-Het bedrijf had 15 medewerkers in dienst om dagelijks 5.000 PDF-facturen en douanedocumenten handmatig over te typen in SAP, wat jaarlijks 1,2 miljoen dollar kostte en een menselijke foutmarge van 4% kende.
+Zij zetten 15 voltijdse medewerkers in om dagelijks 5.000 verschillende logistieke PDF-facturen en douanedocumenten handmatig in te voeren in SAP, wat $ 1,2 miljoen per jaar kostte en een menselijke foutmarge van 4% veroorzaakte.
 
-### Waarom volstond traditionele OCR-software niet?
+### Waarom voldeed traditionele OCR-software niet?
 
-Traditionele OCR vereist vaste x/y-coördinaten en rigide sjablonen. Omdat documenten afkomstig waren van honderden verschillende leveranciers met wisselende opmaken, miste OCR continu cruciale factuurvelden.
+Omdat de binnenkomende documenten afkomstig waren van honderden verschillende internationale leveranciers met wisselende lay-outs. OCR-software leunt op vaste x/y-coördinaten en brak zodra een sjabloon marginaal afweek.
 
-### Hoe loste de multimodale AI-oplossing dit op?
+### Hoe loste het multimodale AI-model dit op?
 
-Door documenten visueel en semantisch te 'lezen' als een accountant. De AI herkent bedragen en data ongeacht waar ze op de pagina staan en retourneert gestructureerde JSON-data direct naar het ERP-systeem.
+Het LLM leest documenten semantisch op inhoud in plaats van visuele coördinaten. Het herkent factuurbedragen en douanecodes ongeacht de positie op de pagina en geeft bij onduidelijkheden direct een veilige 'null'-waarde terug voor handmatige controle.
 
-### Wat waren de definitieve resultaten van het project?
+### Wat waren de definitieve resultaten en ROI?
 
-De operationele kosten daalden met 93% (van $1,2M naar $85k/jaar), de verwerkingstijd per document werd verkort van 4 minuten naar 3,5 seconden en de foutmarge daalde van 4% naar 0,5%.
+Het systeem verwerkte 98% van alle documenten volledig automatisch binnen 3,5 seconden per bestand. De jaarlijkse kosten daalden met 93% van $ 1,2 miljoen naar $ 85.000, en de foutmarge daalde naar 0,5%.
 
-### Kan LaunchStudio vergelijkbare document-extractiepijplijnen bouwen voor mijn bedrijf?
+### Wat is het verband tussen LaunchStudio en Manifera?
 
-Ja. LaunchStudio en Manifera bouwen serverloze extractiepijplijnen op AWS en Azure, inclusief Pydantic-validatie, ERP-koppelingen en menselijke controle-interfaces.
+LaunchStudio is het productontwikkelingsinitiatief van Manifera, een internationaal softwarebedrijf opgericht in 2014 met 120+ engineers. Manifera bouwt en onderhoudt deze enterprise-grade documentverwerkings- en cloudpijplijnen.
 
 <script type="application/ld+json">
 {
@@ -102,42 +100,42 @@ Ja. LaunchStudio en Manifera bouwen serverloze extractiepijplijnen op AWS en Azu
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Welk operationeel probleem had Acme Corp?",
+      "name": "Welk specifiek probleem had Acme Corp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "15 medewerkers moesten dagelijks 5.000 wisselende PDF-facturen overtikken in SAP, wat 1,2 miljoen dollar per jaar kostte met 4% fouten."
+        "text": "15 medewerkers moesten dagelijks 5.000 wisselende PDF-facturen handmatig overtikken in een SAP ERP-systeem."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom volstond traditionele OCR-software niet?",
+      "name": "Waarom voldeed traditionele OCR-software niet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat OCR vaste sjablonen vereist, terwijl leveranciersfacturen honderden verschillende en steeds wijzigende lay-outs hadden."
+        "text": "Omdat OCR leunt op vaste sjablonen en coördinaten, die braken door de honderden wisselende lay-outs van leveranciers."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe loste de multimodale AI-oplossing dit op?",
+      "name": "Hoe loste het multimodale AI-model dit op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door documenten semantisch te analyseren en te converteren naar gestructureerde JSON-data met automatische ERP-koppeling."
+        "text": "Door semantisch begrip toe te passen: het LLM begrijpt de betekenis van velden ongeacht waar ze op de pagina staan."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat waren de definitieve resultaten van het project?",
+      "name": "Wat waren de definitieve resultaten en ROI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een kostenreductie van 93%, versnelling van 4 minuten naar 3,5 seconden per document en een daling van de foutmarge naar 0,5%."
+        "text": "Jaarlijkse kosten daalden met 93% van $ 1,2M naar $ 85k, de verwerkingstijd ging naar 3,5 seconden en fouten daalden naar 0,5%."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio vergelijkbare document-extractiepijplijnen bouwen voor mijn bedrijf?",
+      "name": "Wat is het verband tussen LaunchStudio en Manifera?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera ontwikkelen serverloze AI-extractiesystemen met schema-validatie en directe ERP-integraties."
+        "text": "LaunchStudio levert AI-transformaties ondersteund door 120+ software-engineers en 11+ jaar enterprise-ervaring van Manifera."
       }
     }
   ]

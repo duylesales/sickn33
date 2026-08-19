@@ -1,105 +1,106 @@
 ---
-Titel: "Multi-Agent Architectuur Bouwen voor Enterprise bij het Coderen met AI"
-Trefwoorden: AI coding, AI code ontwikkeling, build AI, AI development, app bouwen met AI, AI software engineering, AI-native, AI deployment, LaunchStudio, Manifera
+Titel: "Multi-Agent Architectuur Bouwen voor Bedrijven bij het Coderen met AI"
+Trefwoorden: AI coding, AI code development, build AI, AI development, build app with AI, AI software engineering, AI-native, AI deployment, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Multi-Agent Architectuur Bouwen voor Enterprise bij het Coderen met AI
+# Multi-Agent Architectuur Bouwen voor Bedrijven bij het Coderen met AI
 
-De eerste reflex van veel beginnende founders is het bouwen van een zogeheten "God Agent". Zij schrijven een gigantische systeemprompt van duizenden woorden, koppelen 40 verschillende API-tools aan één taalmodel (databases, web-scrapers, e-mailservers, kalenderbeheer) en verwachten dat deze alleskunner foutloos elk zakelijk verzoek afhandelt. In een productie-omgeving bezwijkt deze monolithische opzet onherroepelijk onder zijn eigen complexiteit. Om betrouwbare zakelijke B2B-workflows te realiseren, moet u afstappen van de God Agent en overstappen op een **Multi-Agent Architectuur** — vergelijkbaar met de transitie van logge monolieten naar wendbare microservices.
+De natuurlijke neiging van veel beginnende oprichters is het bouwen van een zogeheten "God Agent". Ze schrijven een gigantische systeemprompt van 2.000 woorden, rusten de agent uit met 40 verschillende API-tools (database-toegang, web-scraping, e-mailverzending, agenda-beheer) en verwachten dat deze ene AI-entiteit op magische wijze elke complexe enterprise-taak foutloos afhandelt. Deze monolithische architectuur bezwijkt echter onvermijdelijk onder haar eigen gewicht zodra echte eindgebruikers uitzonderlijke randgevallen (edge cases) invoeren. Om betrouwbare, complexe B2B-workflows te realiseren, moet u de God Agent definitief achter u laten en een **Multi-Agent Architectuur** adopteren — exact dezelfde discipline die de software-industrie twintig jaar geleden deed overstappen van logge monolieten naar modulaire microservices.
 
-## Waarom de Monolithische 'God Agent' Faalt
+## De Onvermijdelijke Val van de 'God Agent'
 
-Taalmodellen raken overvraagd wanneer zij moeten redeneren over tientallen tools tegelijkertijd ("Tool Confusion"). Elk extra gereedschap verbruikt contextruimte en vergroot de kans op verkeerde keuzes, corrupte parameters of oneindige twijfel-lussen.
+Large Language Models hebben structureel moeite met gigantische contexten waarin te veel keuzes gelijktijdig openstaan. Wanneer u één enkele agent voorziet van 40 verschillende tools, treedt er een bekend fenomeen op: **Tool Confusion (Tool-Verwarring)**. Elke tooldefinitie vult het contextvenster met complexe schema's en vertroebelt het redeneerpad van het model. Bij een ogenschijnlijk simpele vraag raakt het model verward: het selecteert de verkeerde tool, geeft corrupte argumenten mee, roept twee conflicterende functies tegelijk aan, of belandt in een oneindige lus waarin het wanhopig probeert te bepalen welke tool van toepassing is.
 
-Bovendien is een monolithische agent nagenoeg onmogelijk te debuggen. Als een complexe taak mislukt, is in een prompt van 3.000 woorden nauwelijks te achterhalen welke instructie de fout veroorzaakte. Evals en geautomatiseerde tests verliezen hun waarde omdat de mogelijke uitvoeringspaden oneindig vertakken.
+Bovendien is het debuggen van een God Agent vrijwel onmogelijk. Faalt de agent bij een taak, dan is het door de omvangrijke prompt van duizenden woorden ondoenlijk om te achterhalen welke specifieke instructie de fout veroorzaakte. Engineeringteams belanden in frustrerende "prompt-archeologie" — stukken tekst uitcommentariëren en opnieuw testen — in plaats van het oplossen van een scherp afgebakende bug. Ook geautomatiseerde evaluatiesets (evals) worden onbetrouwbaar doordat de mogelijke executiepaden exponentieel exploderen.
 
 ## Het Micro-Agent Paradigma
 
-Software-engineering loste dit probleem jaren geleden op met microservices: kleine, geïsoleerde functies die elk één taak perfect uitvoeren en communiceren via heldere interfaces. Binnen moderne AI-ontwikkeling hanteren we hetzelfde principe met **Micro-Agents**:
+Software engineering loste deze schaalbaarheidsproblemen decennia geleden op met microservices: kleine, geïsoleerde functies die exact één specifieke taak perfect uitvoeren, communiceren via strikte interfaces en onafhankelijk van elkaar getest, uitgerold en geschaald kunnen worden. AI-engineering vereist exact dezelfde methodologie via **Micro-Agenten**.
 
-- **De Research Agent:** Beschikt uitsluitend over een zoektool (web search of interne API) en levert een gestructureerde JSON-samenvatting op.
-- **De Data Analyst Agent:** Heeft alleen toegang tot een SQL-read-replica en zet ruwe data om in een consistent schema.
-- **De Copywriter Agent:** Heeft geen tools, maar transformeert gestructureerde data in vloeiende, merkconforme teksten.
-- **De Validator Agent:** Een lichtgewicht, snel model dat uitsluitend controleert of de JSON-uitvoer van andere agents exact aan het schema voldoet vóórdat verdere verwerking plaatsvindt.
+In plaats van één gigantische prompt bouwt u een gespecialiseerd team van compacte agenten, elk voorzien van een minimale toolset en een korte, ondubbelzinnige systeemprompt:
 
-## De Orkestrator (Manager Agent)
+- **De Researcher Agent:** Bezit uitsluitend één tool (web search of een interne document-API). Zijn enige taak is het verzamelen van ruwe feiten en het retourneren van een gestructureerde JSON-samenvatting — niets anders.
+- **De Data Analyst Agent:** Heeft uitsluitend toegang tot een SQL-query tool op een read-replica database (nooit schrijfrechten in productie). Zijn enige taak is het ophalen van interne datametrieken en het formatteren ervan in een vast schema.
+- **De Copywriter Agent:** Bezit géén tools. Zijn enige taak is het ontvangen van gestructureerde JSON-data en het schrijven van een professionele, merkconforme tekst op een iets hogere LLM-temperature.
+- **De Validator Agent:** Een compact, snel model dat als poortwachter controleert of de JSON-uitvoer van de vorige agent 100% voldoet aan het vereiste schema alvorens deze wordt doorgestuurd naar de volgende stap.
 
-Om de micro-agents naadloos te laten samenwerken, stelt u een **Orchestrator Agent** (Manager) aan. Deze ontvangt het initiële gebruikersverzoek en voert zelf geen data-operaties uit; zijn enige taak is planning, delegatie en statusbewaking:
+Elk van deze micro-agenten is eenvoudig te bouwen, individueel te testen via unit-tests en direct te begrijpen voor elke ontwikkelaar.
 
-1. **Stap 1:** De Orchestrator ontvangt de vraag: *"Haal de kwartaalomzet van Klant X op en stuur een statusupdate per e-mail."* Hij delegeert stap 1 naar de Data Analyst Agent met een gerichte instructie.
-2. **Stap 2:** De Data Analyst Agent retourneert een gevalideerde JSON-payload: `{"klant": "Klant X", "omzet": 50000, "kwartaal": "Q2"}`.
-3. **Stap 3:** De Orchestrator controleert de data via de Validator Agent en stuurt uitsluitend de JSON door naar de Copywriter Agent.
-4. **Stap 4:** De Copywriter levert de concepttekst aan, waarna de Orchestrator de Email Agent opdracht geeft het bericht te verzenden.
+## De Orchestrator (Manager Agent)
 
-Doordat de agents uitsluitend communiceren via strikte JSON-payloads in plaats van ongestructureerde vrije tekst, ontstaat een transparante en testbare keten.
+Om de individuele micro-agenten naadloos te laten samenwerken, plaatst u een **Orchestrator Agent** (ook wel Manager of Planner genoemd) aan het hoofd van de workflow. De Orchestrator ontvangt de initiële prompt van de gebruiker. Hij voert zelf géén operationele business-tools uit — zijn enige verantwoordelijkheid is planning, taakdelegatie en het bijhouden van de globale sessie-state via een state machine (zoals LangGraph of een handgeschreven TypeScript state machine).
 
-## Beveiliging tegen Lussen en Tokenverspilling
+Vraagt de gebruiker: *"Haal de omzetcijfers van Acme Corp op over Q2 en mail een statusupdate naar de directie,"* dan voert de Orchestrator dit gestructureerd uit:
 
-In een multi-agent opzet bestaat het risico dat agents elkaar eindeloos blijven bevragen (bijvoorbeeld de analist die herhaaldelijk verificatie vraagt aan de validator). Robuuste productiesystemen hanteren daarom strikte vangrails:
-- Een harde bovengrens voor het aantal stappen per workflow (bijvoorbeeld maximaal 10 tot 15 stappen).
-- Loop-detection middleware die recente agent-aanroepen vergelijkt en herhalende patronen direct afkapt.
-- Gerichte retries met exponential backoff per individuele micro-agent.
+1. De Orchestrator bepaalt dat Stap 1 data-extractie is. Hij roept de Data Analyst Agent aan met een specifieke opdracht.
+2. De Data Analyst Agent retourneert een gevalideerde JSON-payload: `{"account": "Acme Corp", "omzet": 50000, "kwartaal": "Q2"}`.
+3. De Orchestrator valideert de data via de Validator Agent en bepaalt dat Stap 2 het opstellen van de conceptmail is. Hij stuurt uitsluitend de JSON-data door naar de Copywriter Agent.
+4. De Copywriter Agent levert de concepttekst op. De Orchestrator beoordeelt het resultaat, draagt de definitieve tekst over aan de Email Agent voor verzending en logt de complete keten in het auditlogboek.
 
-## Kostenbesparing en Model-Specialisatie
+Door agenten uitsluitend via strikte, gestructureerde JSON-handoffs met elkaar te laten communiceren in plaats van onvoorspelbare vrije tekst, creëert u een volstrekt deterministische en controleerbare softwarepijplijn.
 
-Een God Agent dwingt u om voor elke handeling het duurste frontier-model (zoals GPT-4o) te gebruiken. In een Multi-Agent architectuur draait alleen de overkoepelende Orchestrator op een zwaar redeneermodel, terwijl de specifieke micro-agents (zoals de SQL-analist of validator) draaien op razendsnelle, voordelige open-source modellen (zoals een gefine-tuned Llama 3 8B). Dit verlaagt uw totale API-kosten doorgaans met 60% tot 80%.
+## Foutafhandeling: Retries, Lussen en Circuit Breakers
 
-Herre Roelevink, oprichter en Managing Director van Manifera, benadrukt: "We zien een verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera bouwt sinds **2014** aan complexe, gedistribueerde enterprise-architecturen.
+Wat gebeurt er als een agent in de keten faalt, of erger nog, wanneer twee agenten in een oneindige pingpong-lus belanden (waarbij de Analyst en de Validator elkaar continu om herberekeningen blijven vragen)? Enterprise multi-agent systemen vereisen strikte vangrails: een harde staplimiet per workflow (maximaal 10-15 stappen vóórdat de Orchestrator geforceerd stopt en escaleert naar een mens), een lus-detector (loop detector) die recente tool-aanroepen hasht en herhalingen direct blokkeert, en automatische retries met Exponential Backoff.
 
-## Belangrijkste inzichten
+## Optimalisatie van Kosten en Snelheid
 
-- Een monolithische 'God Agent' met tientallen tools faalt in productie door context-vervuiling, tool-confusion en onmogelijke debugging.
+Multi-Agent architecturen maken drastische kosten- en latentiebesparingen mogelijk die met een monolithische God Agent onhaalbaar zijn. Een God Agent vereist immers bij elke interactie het allerduurste frontier-model (zoals GPT-4o) om over 40 tools tegelijk te redeneren.
 
-- Bouw gespecialiseerde 'Micro-Agents' die elk één afgebakende taak uitvoeren met een minimaal aantal tools en een korte, gerichte prompt.
+In een Multi-Agent systeem draait uitsluitend de Orchestrator op een geavanceerd frontier-model voor complexe redeneertaken. De Data Analyst Agent kan daarentegen draaien op een uiterst voordelig, lokaal gefinetuned open-source model (zoals Llama 3 8B) dat uitsluitend getraind is op uw SQL-schema. Teams die deze architectuur implementeren realiseren gemiddeld een **kostenbesparing van 60% tot 80%** op hun totale LLM API-factuur, doordat de juiste rekenkracht uitsluitend wordt ingezet waar deze strikt noodzakelijk is.
 
-- Gebruik een 'Orchestrator Agent' voor de overkoepelende planning en taakdelegatie via gestructureerde JSON-interfaces.
+Herre Roelevink, Oprichter & Managing Director van Manifera, omschrijft de meerwaarde: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied." Manifera — opgericht in **2014** met vestigingen aan de **Herengracht 420 in Amsterdam**, **Singapore** en **Ho Chi Minhstad, Vietnam** — realiseerde meer dan 160 enterprise software-projecten voor internationale klanten zoals Vodafone en TNO. Bekijk meer op de [Manifera maatwerk softwareontwikkeling pagina](https://www.manifera.com/services/custom-software-development/).
 
-- Implementeer loop-detection middleware en harde stappenlimieten om oneindige communicatielussen tussen agents en weggelopen kosten te voorkomen.
+## Belangrijkste Inzichten
 
-- Verlaag de totale API-kosten met 60% tot 80% door lichte micro-agents te laten draaien op goedkope modellen en alleen de manager op een zwaar redeneermodel in te zetten.
+- Monolithische 'God Agents' met tientallen tools falen in productie door context-overbelasting, tool-verwarring en onmogelijke debugging.
+- Adopteer een 'Multi-Agent Architectuur' met compacte 'Micro-Agenten' die elk exact één taak uitvoeren (SQL-query's, validatie, copywriting).
+- Laat een centrale 'Orchestrator Agent' de planning en delegatie beheren via strikte JSON-dataoverdrachten.
+- Beveilig de agentketen tegen oneindige lussen via loop-detectors, harde staplimieten en exponential backoff.
+- Verlaag API-kosten met 60-80% door lichte micro-agenten op compacte open-source modellen te laten draaien en frontier-modellen uitsluitend te reserveren voor de Orchestrator.
 
-## Schaal uw AI-processen met betrouwbare multi-agent systemen
+## Bouw Betrouwbare en Schaalbare Multi-Agent Systemen
 
-Lopen uw AI-workflows vast door overbelaste agents of onvoorspelbare beslissingslussen? **LaunchStudio** ontwerpt ontkoppelde Multi-Agent architecturen met centrale orchestratie, JSON-dataoverdracht en ingebouwde loop-detectie voor bedrijfskritische B2B-processen. Bekijk onze [dienstpakketten](https://launchstudio.eu/en/#packages) voor meer informatie.
+Bezwijken uw monolithische AI-agenten onder complexe zakelijke bedrijfsworkflows? **[LaunchStudio](https://launchstudio.eu/en/)** ontwerpt ontkoppelde, robuuste Multi-Agent architecturen met centrale orchestratie en ingebouwde lus-detectie voor maximale voorspelbaarheid en stabiliteit. Bekijk onze diensten op het [LaunchStudio pakkettenoverzicht](https://launchstudio.eu/en/#packages).
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01) en **Ho Chi Minh-stad, Vietnam** (Verdieping 11, Blok C, Pho Quangstraat 10). Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Met ruim 160 gerealiseerde projecten voor opdrachtgevers zoals Vodafone en TNO helpt LaunchStudio AI-native founders om prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
+LaunchStudio is een initiatief mogelijk gemaakt door **[Manifera](https://www.manifera.com/about-us/)**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** (100 Tras Street #16-01, 100 AM) en **Ho Chi Minhstad, Vietnam** (Floor 11, Block C, 10 Pho Quang Street), om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Multi-agent routeringslussen oplossen in voorraadbeheer
+### Een AI-Native Oprichter in Actie: Multi-Agent Routinglussen Oplossen in een Voorraadbeheerder
 
-Benjamin, operationeel directeur, bouwde met **Lovable** een supply-chain planner. Twee autonome agents belandden in een oneindige lus waarin zij elkaar continu om validatie van dezelfde voorraadcijfers vroegen, wat 's nachts leidde tot een uitgeput API-budget.
+Benjamin, een operations manager, gebruikte **Lovable** om een geautomatiseerde supply-chain planner te bouwen. Twee autonome agenten raakten verstrikt in een oneindige lus waarin ze elkaar continu om "herbevestiging" van dezelfde voorraadcijfers vroegen, waardoor zijn tokenbudget binnen één nacht volledig verdampte.
 
-Hij schakelde **LaunchStudio (door Manifera)** in om stateful routeringstabellen, een harde staplimiet per workflow en loop-detector middleware te implementeren.
+Hij werkte samen met **LaunchStudio (door Manifera, opgericht in 2014)** om een gestructureerde state-machine met een harde staplimiet en loop-detector middleware te implementeren.
 
-**Resultaat:** Foutlussen daalden naar nul en het tokenbudget bleef perfect beschermd tijdens complexe meerstaps planningstaken.
+**Resultaat:** Oneindige lussen werden direct en permanent geëlimineerd, waardoor het tokenbudget te allen tijde beschermd bleef tijdens complexe planningsprocessen.
 
-**Kosten & tijdlijn:** €1.900 (Multi-Agent Routing Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.900 (Multi-Agent Routing Pakket) — productieklaar en binnen 5 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Waarom functioneert een 'God Agent' niet betrouwbaar?
+### Waarom faalt een enkele 'God Agent' in productieomgevingen?
 
-Wanneer één enkel model 40 verschillende tools en duizenden regels instructies moet verwerken, raakt het verward bij het kiezen van de juiste tool en treden frequente fouten en hallucinaties op.
+Omdat het tegelijkertijd beheren van tientallen tools en enorme prompts leidt tot tool-verwarring, trage responstijden, onvoorspelbare hallucinaties en een codebase die vrijwel onmogelijk te debuggen is.
 
-### Wat is een Multi-Agent Architectuur?
+### Wat is een Multi-Agent Architectuur precies?
 
-Een modulair systeem waarin een team van gespecialiseerde Micro-Agents (elk met een eigen beperkte toolset) wordt aangestuurd door een centrale Orchestrator Agent die de workflow plant en bewaakt.
+Een modulair softwaresysteem waarin meerdere gespecialiseerde AI-agenten (Micro-Agenten) elk één deeltaak uitvoeren onder regie van een centrale Orchestrator Agent.
 
-### Hoe wisselen agents onderling informatie uit?
+### Hoe communiceren micro-agenten onderling?
 
-Via gestructureerde JSON-payloads in plaats van vrije tekst. Dit maakt elke tussenstap meetbaar, testbaar en direct traceerbaar in monitoringtools.
+Via gestructureerde, gevalideerde JSON-payloads in plaats van vrije tekst. Dit maakt de data-overdracht tussen agenten voorspelbaar, transparant en testbaar via unit-tests.
 
-### Hoe voorkomt u dat agents in een oneindige communicatielus raken?
+### Hoe voorkomt u dat agenten elkaar oneindig blijven aanroepen?
 
-Door loop-detection middleware in te bouwen die herhalende taak-hashes herkent en door een hard maximumaantal stappen per workflow in te stellen.
+Door het inbouwen van een harde `max_steps` limiet per taak, gecombineerd met loop-detector middleware die recente tool-aanroepen hasht en herhalende patronen direct afkapt.
 
-### Hoe helpt LaunchStudio bij het opzetten van een multi-agent structuur?
+### Bouwt LaunchStudio multi-agent architecturen vanaf de basis?
 
-LaunchStudio en Manifera ontwerpen en implementeren modulaire agent-architecturen met maatwerk-orchestratie, state-management en foutafhandeling binnen 1 tot 3 weken.
+Ja. LaunchStudio en Manifera (opgericht in 2014) ontwerpen schaalbare Orchestrator- en Micro-Agent architecturen in pure TypeScript en Node.js, volledig afgestemd op uw specifieke bedrijfslogica.
 
 <script type="application/ld+json">
 {
@@ -108,42 +109,42 @@ LaunchStudio en Manifera ontwerpen en implementeren modulaire agent-architecture
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom functioneert een 'God Agent' niet betrouwbaar?",
+      "name": "Waarom faalt een enkele 'God Agent' in productieomgevingen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat een overdaad aan tools en instructies binnen één prompt leidt tot tool-confusion, hallucinaties en onmogelijke foutopsporing."
+        "text": "Omdat tientallen tools en lange prompts leiden tot tool-verwarring, hallucinaties en onmogelijke debugging."
       }
     },
     {
       "@type": "Question",
-      "name": "Wat is een Multi-Agent Architectuur?",
+      "name": "Wat is een Multi-Agent Architectuur precies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een architectuur waarin gespecialiseerde micro-agents afzonderlijke taken uitvoeren onder regie van een centrale Orchestrator Agent."
+        "text": "Een netwerk van gespecialiseerde micro-agenten die onder regie van een centrale Orchestrator specifieke taken uitvoeren."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe wisselen agents onderling informatie uit?",
+      "name": "Hoe communiceren micro-agenten onderling?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Via strikt getypeerde JSON-schema's, waardoor handoffs tussen agents voorspelbaar en direct testbaar zijn."
+        "text": "Uitsluitend via gestructureerde, getypeerde JSON-schema's voor maximale voorspelbaarheid en testbaarheid."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe voorkomt u dat agents in een oneindige communicatielus raken?",
+      "name": "Hoe voorkomt u dat agenten elkaar oneindig blijven aanroepen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door loop-detectors en harde stappenlimieten (bijvoorbeeld maximaal 10-15 stappen per taak) af te dwingen op de orchestrator."
+        "text": "Met strikte staplimieten (max 10-15 stappen) en loop-detector middleware die repeterende aanroepen blokkeert."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe helpt LaunchStudio bij het opzetten van een multi-agent structuur?",
+      "name": "Bouwt LaunchStudio multi-agent architecturen vanaf de basis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door op maat gemaakte orchestratielagen, micro-agents en monitoring-guardrails op te leveren binnen 1 tot 3 weken."
+        "text": "Ja, LaunchStudio ontwerpt complete Orchestrator- en Micro-Agent systemen in Node.js en LangGraph via Manifera."
       }
     }
   ]

@@ -1,95 +1,104 @@
 ---
 Titel: "Web Scraping voor AI-Apps: Firecrawl vs Browserless in 2026"
-Trefwoorden: AI coding, AI code development, AI-app bouwen, AI SaaS, AI deployment, AI-native, AI software engineering, LaunchStudio, Manifera
+Trefwoorden: AI coding, AI code development, AI-app bouwen, AI SaaS, AI-deployment, AI-native, AI software engineering, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
 # Web Scraping voor AI-Apps: Firecrawl vs Browserless in 2026
 
-Een AI-model is slechts zo intelligent als de trainingsdata waarop het is gebaseerd — en trainingsdata is van nature verouderd. Om waardevolle B2B SaaS-applicaties te bouwen (zoals een AI-salesagent die een prospectbedrijf onderzoekt vóór het opstellen van een e-mail, of een dashboard voor concurrentie-prijstracking) moet uw AI toegang hebben tot actuele live internetdata. Het moderne internet is echter actief vijandig tegenover geautomatiseerde bots. Hier leest u hoe u web scraping voor AI in 2026 technisch opzet en hoe de twee leidende benaderingen — Browserless en Firecrawl — zich tot elkaar verhouden.
+Een AI-model is slechts zo intelligent als de trainingsdata waarover het beschikt, en trainingsdata is van nature altijd verouderd. Om waardevolle B2B SaaS-applicaties te bouwen — zoals een AI-salesagent die een bedrijf onderzoekt vóór het opstellen van een gepersonaliseerde e-mail, of een concurrentie-prijsdashboard — moet uw AI toegang hebben tot het live internet. Het moderne internet is echter actief vijandig tegenover geautomatiseerde bots. Hier leest u hoe u web scraping voor AI anno 2026 structureert en hoe Browserless en Firecrawl zich tot elkaar verhouden.
 
-## Het probleem met ruwe HTML
+## Het Probleem met Ruwe HTML
 
-Beginnende ontwikkelaars gebruiken vaak een eenvoudig `fetch()`-verzoek om de HTML van een pagina op te halen en dumpen deze ruwe code direct in een LLM-prompt. Dit is om twee redenen een kostbare fout:
+Beginnende ontwikkelaars gebruiken vaak een simpele `fetch()`-aanroep om de HTML van een webpagina op te halen en deze integraal in een LLM-prompt te injecteren. Dit is een fatale fout om twee elkaar versterkende redenen:
 
-1. **Dynamische Inhoud**: Veel moderne websites zijn gebouwd met React, Vue of client-side rendering in Next.js. Een simpel `fetch()`-verzoek haalt uitsluitend de lege HTML-schil op die de server levert. De eigenlijke data (prijzen, artikelen, productdetails) verschijnt pas nadat client-side JavaScript in de browser is uitgevoerd en de pagina is gehydrateerd.
-2. **Token-verspilling**: Als u een LLM 50.000 karakters aan chaotische HTML `<div>`-tags, inline CSS en tracking-scripts voert om 500 woorden bruikbare tekst te extraheren, verbrandt u uw complete API-budget aan ruis. LLM's factureren per token. Het invoeren van ruwe markup verlaagt bovendien de antwoordnauwkeurigheid van het model aanzienlijk.
+1. **Dynamische Content:** Een groot deel van het moderne web is gebouwd met React, Vue of Next.js met client-side rendering. Een `fetch()`-verzoek haalt uitsluitend het lege HTML-skelet op dat door de server wordt teruggestuurd. De daadwerkelijke data — prijzen, blogs, productlijsten — bestaat simpelweg nog niet totdat client-side JavaScript in de browser is uitgevoerd en de pagina is gehydrateerd.
+2. **Token-Verspilling:** Als u een LLM 50.000 karakters aan chaotische `<div>`-tags, inline CSS en tracking-scripts voert om slechts 500 woorden aan echte tekst te extraheren, verbrandt u uw API-budget aan pure ruis. LLM's rekenen af per token. Het invoeren van opmaakcode in plaats van schone tekst vernietigt uw brutomarges en degradeert direct de antwoordkwaliteit — modellen worden meetbaar minder accuraat naarmate de signaal-ruisverhouding in het context-window verslechtert.
 
-## De oplossing: Headless Browsers & Browserless
+## De Oplossing: Headless Browsers & Browserless
 
-Om moderne websites te scrapen moet u een echte, onzichtbare Chrome-instantie (een headless browser) opstarten met behulp van Puppeteer of Playwright. De browser voert de JavaScript-code uit, wacht tot de pagina volledig is gerenderd en extraheert vervolgens de complete DOM-structuur.
+Om moderne websites betrouwbaar te scrapen, moet u een echte, onzichtbare Chrome-browser (een headless browser) op uw server draaien met tools zoals Puppeteer of Playwright. Deze browser voert de JavaScript uit, wacht tot de pagina volledig gerenderd is (vaak via een specifieke selector of netwerk-idle status), en extraheert vervolgens de complete gehydrateerde DOM.
 
-Het draaien van een zware browser op een serverless omgeving (zoals Vercel Edge Functions) loopt echter snel tegen strikte geheugen- en tijdslimieten aan. Bovendien blokkeren beveiligingssystemen zoals Cloudflare datacenter-IP's direct. De oplossing is een beheerde browserinfrastructuur zoals **Browserless**. U stuurt een API-verzoek naar Browserless, waarna hun infrastructuur een Chrome-instantie opstart — vaak via residentiële proxy-IP's — de JavaScript uitvoert, bot-detectie omzeilt en de gerenderde pagina oplevert. Dit is ideaal voor situaties waarin u volledige programmatorische controle nodig heeft over interacties (zoals inloggen of formulieren invullen).
+Het draaien van Chrome op serverless infrastructuren (zoals Vercel Edge Functions) loopt echter snel tegen strikte resource- en tijdslimieten aan. Bovendien maken doelwebsites steeds vaker gebruik van geavanceerde anti-bot systemen zoals Cloudflare, DataDome of PerimeterX om datacenter-IP's en headless browser-fingerprints direct te blokkeren. De industriestandaard hiervoor is een beheerde browserinfrastructuur zoals **Browserless**. U stuurt een API-verzoek naar Browserless, waarna hun infrastructuur direct een Chrome-sessie start achter roterende residentiële proxy-IP's, de JavaScript uitvoert, anti-bot detectie omzeilt (zoals het maskeren van `navigator.webdriver`), en de volledig gerenderde pagina retourneert. Dit is de ideale laag wanneer u maximale controle nodig heeft: complexe klikpaden, formulierinvoer of data achter een login.
 
-## LLM-geoptimaliseerde scraping: Firecrawl
+## LLM-Geoptimaliseerde Scraping: Firecrawl
 
-Zelfs met een gerenderde pagina blijft het probleem van overbodige markup bestaan. In 2026 zijn gespecialiseerde scraping-API's zoals **Firecrawl** de standaard geworden voor AI-startups omdat ze beide problemen in één enkele API-aanroep oplossen. Firecrawl voert de headless browser uit, omzeilt anti-bot beveiligingen, filtert navigatiemenu's, advertenties en cookiebanners weg, en retourneert de inhoud direct als zuivere, gestructureerde **Markdown** (of JSON).
+Zelfs met een gerenderde pagina blijft het probleem van "Token-Verspilling" bestaan. De HTML moet eerst grondig worden opgeschoond voordat deze naar een LLM gaat, en het bouwen van een eigen HTML-naar-Markdown parser (die navigatiebalken, advertenties en cookiebanners verwijdert) is een omvangrijk engineeringproject op zich.
 
-In plaats van 15.000 tokens aan ruwe HTML voert u nu slechts 2.000 tokens aan schone Markdown in bij OpenAI. Dit verlaagt uw API-kosten aan de ingestiezijde met circa 80% en verhoogt de nauwkeurigheid van het model drastisch.
+In 2026 zijn gespecialiseerde scraping-API's zoals **Firecrawl** de standaard geworden voor AI-startups, omdat zij beide stappen samenvoegen in één enkele API-aanroep. Firecrawl verzorgt de headless browser-sessie, omzeilt anti-bot bescherming en stript automatisch alle overbodige HTML-opmaak, advertenties en navigatiemenu's weg. Het retourneert de webpagina direct als perfect gestructureerde **Markdown** (of platte tekst), optioneel zelfs direct als getypeerde JSON via een extractieschema.
 
-## Kiezen tussen Firecrawl en Browserless
+In plaats van 15.000 tokens aan HTML stuurt u nu slechts 2.000 tokens aan schone Markdown naar OpenAI. Dit verlaagt uw input-tokenkosten met circa 80%, versnelt de generatietijd en verhoogt de nauwkeurigheid van het model aanzienlijk.
 
-Beide tools vullen elkaar uitstekend aan. Browserless is de beste keuze wanneer u geavanceerde interacties nodig heeft (inloggen achter een betaalmuur, klikken op knoppen, screenshots maken). Firecrawl is de superieure keuze wanneer uw primaire doel simpelweg is: "Geef mij schone, direct door een LLM leesbare Markdown-data van deze URL of dit complete domein."
+## Kiezen Tussen Firecrawl en Browserless
 
-## Autonoom crawlen voor RAG-kennisbanken
+Deze twee tools lossen overlappende maar verschillende problemen op, en veel volwassen AI-applicaties combineren beide in productie:
 
-Wanneer een gebruiker een URL van diens bedrijfskennisbank opgeeft ("Bouw een AI-chatbot op basis van mijn website"), gebruikt u de crawl-endpoints van Firecrawl. De API doorzoekt autonoom de sitemap en alle subpagina's en retourneert een gestructureerde array van Markdown-documenten. Uw backend splitst deze teksten op (chunking), genereert vectoren en slaat ze op in Supabase met `pgvector` — waarmee u binnen enkele minuten een complete RAG-kennisbank operationeel heeft.
+- **Browserless** is de beste keuze wanneer u volledige programmatische controle over browserinteracties nodig heeft — inloggen op beveiligde portalen, klikken op "meer laden", invullen van zoekformulieren of het maken van screenshots — omdat het de complete Puppeteer/Playwright API blootstelt.
+- **Firecrawl** is de ideale keuze wanneer uw doel simpelweg is: "geef mij schone, LLM-klare content van deze URL of dit complete domein" zonder zelf browsercode te hoeven schrijven.
 
-Manifera bouwt dit type schaalbare data-ingestiepijplijnen sinds **2014**, met 11+ jaar ervaring en meer dan 160 opgeleverde projecten voor organisaties zoals Vodafone en TNO. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, stelt: "Het draait nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
+Een veelgebruikt productiepatroon is Firecrawl inzetten als standaardroute voor directe content-extractie, en uitsluitend terugvallen op maatwerk Browserless-scripts voor websites die authenticatie of complexe interactiepaden vereisen.
 
-## Belangrijkste inzichten
+## Agentic Crawling en RAG-Kennisbanken
 
-- Eenvoudige HTTP-verzoeken kunnen moderne websites niet betrouwbaar scrapen omdat ze de vereiste client-side JavaScript niet uitvoeren.
+Soms heeft u meer nodig dan één enkele webpagina. Vraagt een gebruiker bijvoorbeeld: "Bouw een AI-chatbot op basis van de complete helpdesk van dit bedrijf", dan moet u het volledige domein scrapen.
 
-- Het voeden van ruwe HTML aan een LLM verspilt tot wel 80% van uw tokenbudget en verslechtert de nauwkeurigheid van het model; converteer HTML altijd eerst naar zuivere Markdown.
+Firecrawl biedt hiervoor **Crawl Endpoints**. U geeft het hoofddomein op, waarna de API autonoom de sitemap volgt, alle subpagina's tot een instelbare diepte bezoekt en een gestructureerde array van Markdown-documenten retourneert. Uw Next.js-backend verdeelt deze documenten in chunks (500–1000 tokens), genereert vector-embeddings en slaat deze op in Supabase met `pgvector` — waarmee binnen enkele minuten een volwaardige RAG-kennisbank operationeel is.
 
-- Gebruik Browserless voor complexe browserinteracties, login-flows en het omzeilen van botdetectie via residentiële proxy's.
+## robots.txt en Juridische Kaders Respecteren
 
-- Gebruik Firecrawl om websites automatisch om te zetten in schone Markdown of gestructureerde JSON voor directe LLM-ingestie.
+Scraping-infrastructuur is dermate krachtig dat men gemakkelijk vergeet dat web scraping niet zonder juridische en ethische grenzen is. Het respecteren van `robots.txt`-richtlijnen, het instellen van rate-limits om doelservers niet te overbelasten en het niet zonder toestemming scrapen van data achter betaalmuren of logins zijn essentiële waarborgen.
 
-- Benut automatische crawling-endpoints om volledige domeinen in bulk in te laden voor RAG-kennisbanken, met inachtneming van robots.txt-richtlijnen.
+Manifera, het moederbedrijf achter LaunchStudio, bouwt al sinds **2014** dit soort compliance- en enterprise-veilige data-pipelines, met 11+ jaar ervaring en 160+ opgeleverde projecten voor organisaties zoals Vodafone en TNO. "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer om goede ideeën om te zetten in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied," aldus Herre Roelevink, Oprichter & Managing Director van Manifera.
 
-## Geef uw AI toegang tot actuele internetdata
+## Belangrijkste Inzichten
 
-Zit uw AI vast achter een statische kennisgrens? **LaunchStudio** bouwt robuuste webscraping-architecturen met headless browsers, proxy-rotatie en Markdown-transformatie om actuele internetdata direct en kostenefficiënt naar uw LLM-pijplijnen te streamen.
+- Eenvoudige HTTP-requests kunnen moderne dynamische websites niet scrapen omdat ze client-side JavaScript niet uitvoeren.
+- Het voeden van ruwe HTML aan een LLM verbrandt uw API-budget en verslechtert de antwoordkwaliteit; converteer HTML altijd eerst naar schone tekst of Markdown.
+- Gebruik managed headless browsers (zoals Browserless) voor complexe interacties zoals logins, formulierinvoer en het omzeilen van Cloudflare.
+- Gebruik AI-specifieke scraping-API's (zoals Firecrawl) om websites met één aanroep om te zetten in schone Markdown (circa 80% lagere tokenkosten).
+- Benut geautomatiseerde crawl-endpoints voor het opbouwen van RAG-databases, maar hanteer altijd een helder compliance-beleid rondom robots.txt.
 
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/custom-software-development](https://www.manifera.com/services/custom-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Bereken uw projectkosten](https://launchstudio.eu/en/#calculator) of [vraag direct een offerte aan](https://launchstudio.eu/en/#contact).
+## Geef Uw AI Direct Toegang tot het Live Internet
+
+Zit uw AI-applicatie gevangen achter een verouderde trainingsdatum? **LaunchStudio** bouwt robuuste web-scraping architecturen die actuele, opgeschoonde internetdata rechtstreeks in uw LLM-pipelines voeden. Bekijk [LaunchStudio](https://launchstudio.eu/en/) om te zien hoe een scraping- en RAG-traject wordt vormgegeven.
+
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minhstad, Vietnam**, om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken. [Vraag vandaag nog een vrijblijvende offerte aan](https://launchstudio.eu/en/#contact) of lees meer over [Manifera's maatwerk softwareontwikkeling](https://www.manifera.com/services/custom-software-development/).
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: scraper-blokkades omzeilen voor een prijstracker
+### Een AI-Native Oprichter in Actie: Anti-Bot Blokkkades Omzeilen voor een Prijsmonitor
 
-Ella, een retail-oprichter, gebruikte **Lovable** om een prijstracking-tool voor concurrenten te bouwen. Doelwebsites blokkeerden haar scrapers echter continu, waardoor er geen actuele prijsdata binnenkwam.
+Ella, oprichter van een e-commerce tool, gebruikte **Lovable** om een concurrentie-prijsmonitor te bouwen. Doelsites blokkeerden haar scrapers echter massaal, wat resulteerde in ontbrekende prijsdata.
 
-Zij schakelde **LaunchStudio (door Manifera)** in. Het team integreerde Firecrawl en configureerde headless browserprofielen met roterende residentiële proxy's.
+Zij schakelde **LaunchStudio (door Manifera)** in. Het team integreerde Firecrawl en configureerde headless browser-profielen met roterende residentiële proxies.
 
-**Resultaat:** Het percentage scraper-blokkades daalde van 85% naar minder dan 2%, waardoor betrouwbare prijsdata continu werd binnengehaald.
+**Resultaat:** Het blokkadepercentage van de scrapers daalde van 85% naar minder dan 2%, wat zorgde voor een continue, betrouwbare datastroom.
 
-**Kosten & tijdlijn:** €1.750 (Scraper Proxy Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
+**Kosten & Tijdlijn:** €1.750 (Scraper Proxy Pakket) — productieklaar en binnen 4 werkdagen live opgeleverd.
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
-### Waarom kan ik geen standaard Python Requests gebruiken om websites te scrapen?
+### Waarom kan ik niet volstaan met een eenvoudige Python Requests-aanroep?
 
-Omdat moderne websites data dynamisch inladen via JavaScript nadat de initiële HTML is geladen. Een simpel HTTP-verzoek haalt slechts een lege HTML-schil op; u heeft een headless browser nodig om de JavaScript daadwerkelijk uit te voeren.
+Moderne websites laden data dynamisch via JavaScript na de initiële HTML-laadstap. Een simpele aanroep haalt alleen het lege HTML-skelet op. U heeft een headless browser nodig om de JavaScript uit te voeren en de pagina te hydrateren.
 
-### Hoe omzeilen scraping-tools geavanceerde Cloudflare-blokkades?
+### Hoe omzeilen scraping-tools Cloudflare en bot-detectie?
 
-Door gebruik te maken van residentiële en ISP-proxy's en het nauwkeurig nabootsen van echte menselijke browser-vingerafdrukken (zoals venstergrootte, headers en muisbewegingen).
+Door gebruik te maken van residentiële IP-proxies en geavanceerde browser-fingerprinting die authentieke Chrome-browsersignalen nauwkeurig nabootst.
 
 ### Wat is het verschil tussen Firecrawl en Browserless?
 
-Firecrawl is specifiek geoptimaliseerd voor AI: het rendert pagina's en converteert deze direct naar schone Markdown. Browserless biedt ruwe programmatorische controle over een headless Chrome-instantie voor complexe navigatie en formulieren.
+Firecrawl is specifiek gebouwd voor AI en retourneert automatisch schone Markdown of gestructureerde JSON. Browserless biedt directe programmatische controle over een Chrome-sessie voor logins, kliksequenties en maatwerk interacties.
 
-### Waarom mag ik geen ruwe HTML aan een LLM voeden?
+### Waarom mag ik nooit ruwe HTML aan een LLM voeden?
 
-Ruwe HTML zit vol met scripts, navigatie-elementen en stijlen. Het voeden van duizenden overbodige HTML-tokens verspilt API-budget en leidt door ruis tot hallucinaties.
+Ruwe HTML zit vol overbodige tags, scripts en styling. 20.000 tokens aan HTML insturen om één alinea te vinden verspilt API-budget en brengt het model in verwarring. Converteer het altijd eerst naar Markdown.
 
-### Kan LaunchStudio complete scraping- en RAG-pijplijnen bouwen?
+### Is web scraping voor AI juridisch toegestaan?
 
-Ja. LaunchStudio en Manifera implementeren volledige scraping-infrastructuren — inclusief Firecrawl-integraties, proxy-rotaties, Markdown-conversie en vectoropslag in Supabase `pgvector`.
+Dit hangt sterk af van de bron en methode. Het respecteren van `robots.txt`, rate-limiting en het niet ongeautoriseerd scrapen van data achter betaalmuren zijn cruciale juridische randvoorwaarden.
 
 <script type="application/ld+json">
 {
@@ -98,18 +107,18 @@ Ja. LaunchStudio en Manifera implementeren volledige scraping-infrastructuren �
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Waarom kan ik geen standaard Python Requests gebruiken om websites te scrapen?",
+      "name": "Waarom kan ik niet volstaan met een eenvoudige Python Requests-aanroep?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat moderne webpagina's JavaScript vereisen om data te hydrateren. Eenvoudige requests halen slechts een lege HTML-basis binnen."
+        "text": "Omdat dynamische JavaScript-applicaties een headless browser vereisen om de pagina volledig te hydrateren alvorens data uit te lezen."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe omzeilen scraping-tools geavanceerde Cloudflare-blokkades?",
+      "name": "Hoe omzeilen scraping-tools Cloudflare en bot-detectie?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door inzet van residentiële proxy-IP's en geavanceerde fingerprint-masking die reëel menselijk browsergedrag nabootst."
+        "text": "Via residentiële proxy-netwerken en geavanceerde fingerprint-maskering die legitieme menselijke Chrome-browsers nabootst."
       }
     },
     {
@@ -117,23 +126,23 @@ Ja. LaunchStudio en Manifera implementeren volledige scraping-infrastructuren �
       "name": "Wat is het verschil tussen Firecrawl en Browserless?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Firecrawl levert direct schone Markdown voor LLM-ingestie; Browserless biedt volledige Puppeteer-aansturing voor complexe login-flows en klikpaden."
+        "text": "Firecrawl levert direct schone Markdown voor LLM's; Browserless biedt diepe programmatische controle voor logins en klikpaden."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom mag ik geen ruwe HTML aan een LLM voeden?",
+      "name": "Waarom mag ik nooit ruwe HTML aan een LLM voeden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat ruwe HTML tot 80% van uw tokenbudget verspilt aan opmaakcode en de modelnauwkeurigheid aantast door overbodige contextuele ruis."
+        "text": "Ruwe HTML verspilt 80%+ van uw token-budget aan styling en tags en verlaagt de redeneernauwkeurigheid van het model."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio complete scraping- en RAG-pijplijnen bouwen?",
+      "name": "Is web scraping voor AI juridisch toegestaan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera bouwen complete web-ingestie pipelines met headless browsers, Firecrawl en pgvector in Supabase."
+        "text": "Ja, mits robots.txt wordt gerespecteerd, servers niet overbelast raken en auteursrechtelijk beschermde data achter logins wordt ontzien."
       }
     }
   ]
