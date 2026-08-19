@@ -1,9 +1,17 @@
-"The EU AI Act won't affect our hiring tools — we only use AI for screening." That's precisely the use case the regulation classifies as high-risk. ⚠️🤖
+🚨 "We're a Small Startup, So the Strictest Rules Don't Apply to Us Yet" — 3 myths that create massive legal and operational liabilities faster than they save budget. 🤖⚠️
 
-The EU AI Act explicitly categorizes AI systems used in employment decisions — including CV screening, ranking, and interview assessment — as high-risk. That means mandatory conformity assessments, human oversight requirements, and transparency obligations. "We're just automating initial screening" is exactly the scenario regulators wrote the rules for.
+**The Pain Points:**
+❌ **Myth 1: "We're a Small Startup, So the Strictest Rules Don't Apply to Us Yet":** AI models produce convincing isolated outputs but hallucinate, misinterpret edge cases, and lack deep domain context.
+❌ **Myth 2: "If Our AI Only Assists Human Recruiters Rather Than Making Final Decisions, We're Exempt":** Human curation, error checking, and compliance verification eliminate most projected raw volume savings.
+❌ **Myth 3: "Compliance Is Primarily a Legal and Policy Task, Not a Product Engineering Task":** Regulatory and civil liability remains 100% on the operator regardless of whether an algorithm generated the output.
 
-**Manifera** builds AI-assisted hiring tools with EU AI Act compliance designed in from the architecture level.
+**The Manifera Solution:**
+✅ **Build meaningful explainability into ranking and screening logic from the start:** not as a retrofit — the ability to articulate why a specific candidate was ranked or filtered a certain way needs to be a genuine product capability, not an assumption that can be satisfied after the fact.
+✅ **Design human oversight as a genuine, substantive control point:** not a nominal review step — the regulation's intent is meaningful human judgment in the loop, and a review interface that technically allows override but is designed to be rubber-stamped in practice doesn't satisfy this requirement in spirit or, likely, in eventual regulatory interpretation.
+✅ **Treat data governance for training and input data as a core engineering requirement:** ensuring the data used to build and operate the system is documented, quality-controlled, and doesn't encode discriminatory patterns that a screening or ranking system could otherwise learn and perpetuate.
 
-[Prepare for the EU AI Act](https://www.manifera.com/contact-us/)
+Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-#HRTech #EUAIAct #AIHiring #Compliance #Recruitment #CTO #SoftwareEngineering #Manifera
+👉 Retire all 3 biggest myths about eu ai act hiring: [Link to article]
+
+#CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera
