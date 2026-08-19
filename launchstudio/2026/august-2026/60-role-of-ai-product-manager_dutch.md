@@ -62,7 +62,7 @@ Bouwen uw engineers AI-functionaliteiten die gebruikers eigenlijk niet vertrouwe
 
 LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren softwareontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minhstad, Vietnam**, om hoogwaardig engineeringtalent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", heeft Manifera haar Europese hoofdkantoor in **Amsterdam, Nederland**, aan de **Herengracht 420, 1017 BZ Amsterdam**, met meer dan 120 engineers verspreid over de drie kantoren. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken, tegen ongeveer 20% van de kosten van een traditioneel bureau. Lees meer over [Manifera's maatwerk softwareontwikkelingsdiensten](https://www.manifera.com/services/custom-software-development/). [Vraag vandaag nog een vrijblijvende offerte aan](https://launchstudio.eu/en/#contact).
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in Actie: Design Tokens Inrichten voor een Sales CRM
 
