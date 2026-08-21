@@ -4,6 +4,14 @@
 
 ### Tháng 08
 
+#### Ngày 21
+
+- **17:03**: Tối ưu hóa tiêu đề (Title SEO Enhancement) cho bài viết số 06 (`06-handling-large-context-windows-efficiently.md`) và bản tiếng Hà Lan (`06-handling-large-context-windows-efficiently_dutch.md`) thuộc `launchstudio/2026/august-2026/`:
+  - Cập nhật tiêu đề tiếng Anh: từ `Handling Large Context Windows Efficiently with RAG` thành `Handling Large Context Windows in AI SaaS Apps with RAG`.
+  - Cập nhật tiêu đề tiếng Hà Lan: từ `Grote Context Windows Efficiënt Beheren met RAG` thành `Grote Context Windows Beheren in AI SaaS-Apps met RAG`.
+  - Tích hợp trực tiếp các từ khóa hạt nhân có lượng tìm kiếm cao (`AI SaaS`, `AI SaaS Apps`, `RAG`) vào tiêu đề chính và thẻ H1 để tối ưu thứ hạng tìm kiếm và đồng bộ chuẩn SEO với hệ thống bài viết tháng 8/2026.
+  - Đồng bộ cập nhật thông tin trong bảng tổng mục nội dung `launchstudio/content_inventory.md`.
+
 #### Ngày 19
 
 - **17:05**: Hoàn thành đồng bộ Git và đẩy toàn bộ thay đổi lên GitHub (`git push origin main`): cập nhật trọn bộ 60 bài viết tiếng Hà Lan tháng 10/2026, các bài viết mở rộng hỗ trợ kỹ thuật, hình ảnh và bài đăng mạng xã hội. Trạng thái working tree sạch hoàn toàn (`clean`).
