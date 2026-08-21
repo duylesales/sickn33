@@ -1,5 +1,5 @@
 ---
-Titel: Hoe weet u of uw door AI gebouwde MVP klaar is voor echte gebruikers
+Titel: "Hoe weet u of uw door AI gebouwde MVP klaar is voor echte gebruikers"
 Trefwoorden: AI To Code, SaaS MVP, AI-built, Echte Gebruikers
 Koperfase: overweging
 ---

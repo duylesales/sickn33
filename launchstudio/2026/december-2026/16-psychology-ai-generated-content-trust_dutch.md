@@ -1,11 +1,11 @@
 ---
-Titel: "De Psychologie van AI-Content: Waarom Gebruikers Het Vaak Niet Vertrouwen"
+Titel: "De Psychologie van AI-Content: Waarom Gebruikers Het Vaak Niet Vertrouwen met ai generated application"
 Trefwoorden: ai generated application, ai websites, ai assist, user ai, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Psychologie van AI-Content: Waarom Gebruikers Het Vaak Niet Vertrouwen
+# De Psychologie van AI-Content: Waarom Gebruikers Het Vaak Niet Vertrouwen met ai generated application
 
 <script type="application/ld+json">
 {

@@ -1,5 +1,5 @@
 ---
-Titel: Waarom uw door AI gebouwde app er geweldig uitziet, maar niet klaar is voor gebruikers
+Titel: "Waarom uw door AI gebouwde app er geweldig uitziet, maar niet klaar is voor gebruikers"
 Trefwoorden: AI For Coding, AI-app, AI-built, Klaar voor lancering
 Koperfase: Bewustzijn
 ---

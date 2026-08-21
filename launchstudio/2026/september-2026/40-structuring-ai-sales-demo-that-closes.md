@@ -1,5 +1,5 @@
 ---
-Title: Structuring a Sales Demo That Closes When You Build An App With AI
+Title: "Structuring a Sales Demo That Closes When You Build An App With AI"
 Keywords: build app with ai, build an app with ai, ai development, ai prototype, ai app dev, dev ai
 Buyer Stage: Awareness
 ---

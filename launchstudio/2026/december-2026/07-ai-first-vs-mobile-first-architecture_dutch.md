@@ -1,11 +1,11 @@
 ---
-Titel: "AI-First versus Mobile-First: Hoe Startup-Architectuur is Veranderd"
+Titel: "AI-First versus Mobile-First: Hoe Startup-Architectuur is Veranderd met ai first architecture"
 Trefwoorden: AI first architecture, mobile first, startup architecture 2027, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# AI-First versus Mobile-First: Hoe Startup-Architectuur is Veranderd
+# AI-First versus Mobile-First: Hoe Startup-Architectuur is Veranderd met ai first architecture
 
 <script type="application/ld+json">
 {

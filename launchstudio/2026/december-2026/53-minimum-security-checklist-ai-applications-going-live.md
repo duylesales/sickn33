@@ -1,11 +1,11 @@
 ---
-Title: "The Minimum Security Checklist for AI Applications Going Live"
+Title: "The Minimum Security Checklist for AI Applications Going Live with ai vulnerabilities"
 Keywords: ai secure, security ai, ai security issues, ai vulnerabilities, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# The Minimum Security Checklist for AI Applications Going Live
+# The Minimum Security Checklist for AI Applications Going Live with ai vulnerabilities
 
 <script type="application/ld+json">
 {

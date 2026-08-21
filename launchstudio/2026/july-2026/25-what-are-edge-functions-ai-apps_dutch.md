@@ -1,5 +1,5 @@
 ---
-Titel: Wat zijn Edge Functions in AI-softwareontwikkeling?
+Titel: "Wat zijn Edge Functions in AI-softwareontwikkeling?"
 Trefwoorden: AI And Software Development, Edge Functions, AI-app, Serverless
 Koperfase: Bewustzijn
 ---

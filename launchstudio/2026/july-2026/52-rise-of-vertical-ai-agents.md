@@ -1,5 +1,5 @@
 ---
-Title: The Rise of Vertical AI Agents in AI Software Engineering
+Title: "The Rise of Vertical AI Agents in AI Software Engineering"
 Keywords: AI SaaS Platform, AI Software Engineering, AI And Software Development, AI Software Developers, Build AI App, AI Development, SaaS AI, AI In SaaS
 Buyer Stage: Awareness
 ---

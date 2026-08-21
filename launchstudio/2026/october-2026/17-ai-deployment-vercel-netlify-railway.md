@@ -1,5 +1,5 @@
 ---
-Title: React App AI Deployment on Vercel vs. Netlify
+Title: "React App AI Deployment on Vercel vs. Netlify"
 Keywords: AI deployment, AI database, AI native, LaunchStudio, Manifera, Cursor, Bolt, Vercel, Railway
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

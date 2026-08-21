@@ -1,11 +1,11 @@
 ---
-Titel: "Supabase vs Firebase vs PlanetScale: De Database-Keuze in 2027"
+Titel: "Supabase vs Firebase vs PlanetScale: De Database-Keuze voor uw Productie AI Database"
 Trefwoorden: ai database, ai in database, ai for db, ai development, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Supabase vs Firebase vs PlanetScale: De Database-Keuze in 2027
+# Supabase vs Firebase vs PlanetScale: De Database-Keuze voor uw Productie AI Database
 
 <script type="application/ld+json">
 {

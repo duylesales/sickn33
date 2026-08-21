@@ -1,10 +1,10 @@
 ---
-Titel: "Waarom de EU AI Act Belangrijk Is voor Amerikaanse Startups Die AI Gebruiken voor Softwareontwikkeling"
+Titel: "Waarom de EU AI Act Belangrijk Is voor Amerikaanse Startups Die AI Gebruiken voor Softwareontwikkeling voor uw AI SaaS-Platform"
 Trefwoorden: AI secure, security AI, AI security issues, AI security risk, AI and software development, AI SaaS platform, AI deployment, AI-native, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Waarom de EU AI Act Belangrijk Is voor Amerikaanse Startups Die AI Gebruiken voor Softwareontwikkeling
+# Waarom de EU AI Act Belangrijk Is voor Amerikaanse Startups Die AI Gebruiken voor Softwareontwikkeling voor uw AI SaaS-Platform
 
 Veel internationale en Amerikaanse software-oprichters beschouwen Europese wet- en regelgeving als het probleem van een ander continent. Zij gaan er naïef vanuit dat hun innovatieve Silicon Valley SaaS-startup, in één nacht in elkaar gezet met een AI-tool en voor het ontbijt gedeployd op Vercel, volledig vrijgesteld is van de bureaucratische reikwijdte van Brussel. Deze aanname is wiskundig en juridisch levensgevaarlijk. De **EU AI Act** bezit namelijk een zogeheten "extraterritoriale werking" — als een enkele gebruiker vanuit Berlijn of Amsterdam inlogt op uw AI-applicatie, of als de *uitvoer* van uw systeem wordt gebruikt door iemand binnen de Europese Unie, bent u onvoorwaardelijk onderworpen aan deze wetgeving. Met torenhoge boetes die kunnen oplopen tot 7% van de wereldwijde jaaromzet (of € 35 miljoen, afhankelijk van welk bedrag hoger is), is inzicht in de EU AI Act een harde voorwaarde voor overleving, geen optionele compliance-taak die u naar sprint twintig kunt doorschuiven.
 

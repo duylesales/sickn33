@@ -1,5 +1,5 @@
 ---
-Title: Setting Up Sentry Error Tracking When You Build an AI App
+Title: "Setting Up Sentry Error Tracking When You Build an AI App"
 Keywords: For You AI, Setting, Error, Tracking, Sentry, Before
 Buyer Stage: Decision
 ---

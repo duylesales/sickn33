@@ -1,5 +1,5 @@
 ---
-Title: Preparing for the Next Architecture Shift Using AI For Coding
+Title: "Preparing for the Next Architecture Shift Using AI For Coding"
 Keywords: ai coding, ai to code, ai for coding, ai code development, ai native, ai deployment, ai software engineering
 Buyer Stage: Awareness
 ---

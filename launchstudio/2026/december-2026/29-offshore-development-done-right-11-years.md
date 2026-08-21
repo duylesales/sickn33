@@ -1,11 +1,11 @@
 ---
-Title: "Offshore Development Done Right: Lessons from 11 Years of Remote Teams"
+Title: "Offshore Development Done Right: Lessons from 11 Years of Remote Teams in AI and Software Development"
 Keywords: ai and software development, ai software development, develop ai software, ai development, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Agency / Freelancer (White-Label Partner)
 ---
 
-# Offshore Development Done Right: Lessons from 11 Years of Remote Teams
+# Offshore Development Done Right: Lessons from 11 Years of Remote Teams in AI and Software Development
 
 <script type="application/ld+json">
 {

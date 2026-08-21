@@ -1,5 +1,5 @@
 ---
-Title: The Technical Debt Timebomb of AI No Code MVPs
+Title: "The Technical Debt Timebomb of AI No Code MVPs"
 Keywords: AI No Code, MVP refactoring, technical debt AI, no-code to custom code, Bubble to Next.js, scaling AI SaaS, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)

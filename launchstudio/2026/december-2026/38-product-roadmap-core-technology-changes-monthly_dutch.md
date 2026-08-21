@@ -1,11 +1,11 @@
 ---
-Titel: "Een Product-Roadmap Bouwen Wanneer Uw Kerntechnologie Maandelijks Verandert"
+Titel: "Een Product-Roadmap Bouwen Wanneer Uw Kerntechnologie Maandelijks Verandert voor AI-Native Applicaties"
 Trefwoorden: ai native, ai development, all ai tools, ai and software engineering, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: SaaS Oprichter Scale-Up
 ---
 
-# Een Product-Roadmap Bouwen Wanneer Uw Kerntechnologie Maandelijks Verandert
+# Een Product-Roadmap Bouwen Wanneer Uw Kerntechnologie Maandelijks Verandert voor AI-Native Applicaties
 
 <script type="application/ld+json">
 {

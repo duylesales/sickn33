@@ -1,5 +1,5 @@
 ---
-Titel: De 20-punten lanceringschecklist voor AI-prototypes
+Titel: "De 20-punten lanceringschecklist voor AI-prototypes"
 Trefwoorden: AI Prototype, Lancering, Checklist, Readiness
 Koperfase: beslissing
 ---

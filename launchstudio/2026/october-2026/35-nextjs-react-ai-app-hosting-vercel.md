@@ -1,5 +1,5 @@
 ---
-Title: How to Host Apps After Using AI To Code
+Title: "How to Host Apps After Using AI To Code"
 Keywords: AI To Code, nextjs AI hosting, vercel deployment, LaunchStudio, Manifera, Bolt.new export, React AI app
 Buyer Stage: Decision
 Target Persona: B (Technical Solo Founder)

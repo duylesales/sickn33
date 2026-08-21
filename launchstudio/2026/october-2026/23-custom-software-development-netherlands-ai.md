@@ -1,5 +1,5 @@
 ---
-Title: Surviving Disruption in AI And Software Development
+Title: "Surviving Disruption in AI And Software Development"
 Keywords: AI And Software Development, custom software development, custom software, LaunchStudio, Manifera, Netherlands, AI coding
 Buyer Stage: Awareness
 Target Persona: D (SaaS Founder Scale-Up)

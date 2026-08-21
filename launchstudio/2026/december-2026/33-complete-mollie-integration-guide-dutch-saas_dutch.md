@@ -1,11 +1,11 @@
 ---
-Titel: "De Complete Mollie Integratiegids voor Nederlandse SaaS-Oprichters"
+Titel: "De Complete Mollie Integratiegids voor Nederlandse SaaS-Oprichters voor uw AI SaaS-Platform"
 Trefwoorden: ai saas, ai software price, ai deployment, ai development, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Complete Mollie Integratiegids voor Nederlandse SaaS-Oprichters
+# De Complete Mollie Integratiegids voor Nederlandse SaaS-Oprichters voor uw AI SaaS-Platform
 
 <script type="application/ld+json">
 {

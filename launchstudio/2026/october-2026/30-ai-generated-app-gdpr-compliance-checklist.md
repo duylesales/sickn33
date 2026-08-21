@@ -1,5 +1,5 @@
 ---
-Title: GDPR Compliance Checklist When You Use AI For Coding
+Title: "GDPR Compliance Checklist When You Use AI For Coding"
 Keywords: AI For Coding, gdpr compliance, AI app, data privacy, LaunchStudio, Manifera, European SaaS
 Buyer Stage: Awareness
 Target Persona: A (AI-Native Founder, Non-Technical)

@@ -1,5 +1,5 @@
 ---
-Title: Fast Frontends and Hardened Backends in AI Native Startups
+Title: "Fast Frontends and Hardened Backends in AI Native Startups"
 Keywords: AI native, AI tech startup, LaunchStudio, Manifera, Cursor, Next.js, architecture
 Buyer Stage: Awareness
 Target Persona: B (Technical Solo Founder)

@@ -1,11 +1,11 @@
 ---
-Title: "How to Negotiate Equity vs Cash When Hiring Development Help"
+Title: "How to Negotiate Equity vs Cash When Hiring Development Help in AI and Software Development"
 Keywords: ai software developers, ai app dev, ai and software development, ai development, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# How to Negotiate Equity vs Cash When Hiring Development Help
+# How to Negotiate Equity vs Cash When Hiring Development Help in AI and Software Development
 
 <script type="application/ld+json">
 {

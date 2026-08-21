@@ -1,5 +1,5 @@
 ---
-Title: Why Supabase Row Level Security is Vital Security For AI
+Title: "Why Supabase Row Level Security is Vital Security For AI"
 Keywords: Security For AI, supabase, postgresql, row level security, rls, LaunchStudio, Manifera, AI saas
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

@@ -1,11 +1,11 @@
 ---
-Title: "The Rise of the Non-Technical CTO: Leading Without Code"
+Title: "The Rise of the Non-Technical CTO: Leading Without Code with non technical cto"
 Keywords: non technical cto, AI leadership, startup leadership, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# The Rise of the Non-Technical CTO: Leading Without Code
+# The Rise of the Non-Technical CTO: Leading Without Code with non technical cto
 
 <script type="application/ld+json">
 {

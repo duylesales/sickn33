@@ -1,11 +1,11 @@
 ---
-Title: "Database Indexing for AI Applications: A Practical Guide"
+Title: "Database Indexing for AI Applications: A Practical Guide in Production AI Deployment"
 Keywords: ai database, ai in database, ai for db, ai deployment, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# Database Indexing for AI Applications: A Practical Guide
+# Database Indexing for AI Applications: A Practical Guide in Production AI Deployment
 
 <script type="application/ld+json">
 {

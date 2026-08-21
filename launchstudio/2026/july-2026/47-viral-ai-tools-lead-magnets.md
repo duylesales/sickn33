@@ -1,5 +1,5 @@
 ---
-Title: Creating Viral Lead Magnets That Beat All AI Tools
+Title: "Creating Viral Lead Magnets That Beat All AI Tools"
 Keywords: All AI Tools, Build App With AI, AI Prototype, AI No Code, AI Generated Application, AI Security Vulnerabilities
 Buyer Stage: Awareness
 ---

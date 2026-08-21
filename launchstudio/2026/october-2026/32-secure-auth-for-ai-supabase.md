@@ -1,5 +1,5 @@
 ---
-Title: Secure Authentication When You Use AI For Coding
+Title: "Secure Authentication When You Use AI For Coding"
 Keywords: AI For Coding, secure auth, supabase authentication, AI SaaS, LaunchStudio, Manifera, Row Level Security, B2B SaaS security
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

@@ -1,5 +1,5 @@
 ---
-Title: Essential AI Data Security for Protecting PII
+Title: "Essential AI Data Security for Protecting PII"
 Keywords: AI data security, AI saas, LaunchStudio, Manifera, Cursor, Bolt, GDPR, PII
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

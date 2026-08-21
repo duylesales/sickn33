@@ -1,5 +1,5 @@
 ---
-Titel: Stripe Webhooks uitgelegd voor oprichters die AI gebruiken om te coderen
+Titel: "Stripe Webhooks uitgelegd voor oprichters die AI gebruiken om te coderen"
 Trefwoorden: AI For Coding, Stripe Webhooks, Niet-technisch, Founders
 Koperfase: Bewustzijn
 ---

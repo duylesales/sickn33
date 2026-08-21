@@ -1,5 +1,5 @@
 ---
-Titel: Van idee tot prototype in 48 uur met behulp van AI-tools
+Titel: "Van idee tot prototype in 48 uur met behulp van AI-tools"
 Trefwoorden: AI Prototype, AI To Code, Prototype, All AI Tools
 Koperfase: Bewustzijn
 ---

@@ -1,5 +1,5 @@
 ---
-Title: Open Source vs. Proprietary AI Models for Your AI SaaS
+Title: "Open Source vs. Proprietary AI Models for Your AI SaaS"
 Keywords: AI SaaS, AI Software Engineering, AI Deployment, AI Data Security, AI Native, Software AI, AI And Software Development
 Buyer Stage: Awareness
 ---

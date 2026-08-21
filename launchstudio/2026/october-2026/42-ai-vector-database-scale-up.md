@@ -1,5 +1,5 @@
 ---
-Title: Scaling Vector Database Infrastructure for AI SaaS
+Title: "Scaling Vector Database Infrastructure for AI SaaS"
 Keywords: vector database, RAG architecture, AI SaaS scale, LaunchStudio, Manifera, Pinecone, pgvector, embeddings
 Buyer Stage: Decision
 Target Persona: D (SaaS Founder Scale-Up)

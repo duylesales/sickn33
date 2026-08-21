@@ -1,11 +1,11 @@
 ---
-Titel: "Hoe AI de Definitie van een MVP Fundamenteel Verandert"
+Titel: "Een App Bouwen met AI: Hoe AI de Definitie van een MVP Fundamenteel Verandert"
 Trefwoorden: ai prototype, build app with ai, ai development, minimum viable product, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Hoe AI de Definitie van een MVP Fundamenteel Verandert
+# Een App Bouwen met AI: Hoe AI de Definitie van een MVP Fundamenteel Verandert
 
 <script type="application/ld+json">
 {

@@ -1,5 +1,5 @@
 ---
-Titel: Een aangepast domein koppelen aan de AI-app die u bouwt
+Titel: "Een aangepast domein koppelen aan de AI-app die u bouwt"
 Trefwoorden: AI To Code, Custom Domain, Vercel, Netlify, DNS
 Koperfase: Bewustzijn
 ---

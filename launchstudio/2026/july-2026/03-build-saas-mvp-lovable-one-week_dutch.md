@@ -1,5 +1,5 @@
 ---
-Titel: Hoe u in minder dan een week een SaaS MVP bouwt met Lovable
+Titel: "Hoe u in minder dan een week een SaaS MVP bouwt met Lovable"
 Trefwoorden: Build App With AI, Lovable, SaaS MVP, AI Software Development
 Koperfase: overweging
 ---

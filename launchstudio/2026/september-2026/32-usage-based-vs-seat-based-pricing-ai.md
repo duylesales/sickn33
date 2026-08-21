@@ -1,5 +1,5 @@
 ---
-Title: Usage-Based vs Seat-Based Pricing When You Provide AI For Coding
+Title: "Usage-Based vs Seat-Based Pricing When You Provide AI For Coding"
 Keywords: ai for coding, ai to code, ai code tool, ai saas, ai saas platform, ai in saas, build ai app, ai native
 Buyer Stage: Consideration
 ---

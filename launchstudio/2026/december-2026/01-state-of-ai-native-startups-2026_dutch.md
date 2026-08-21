@@ -1,11 +1,11 @@
 ---
-Titel: "De Stand van AI-Native Startups: Jaaroverzicht 2026"
+Titel: "De Stand van AI-Native Startups: Jaaroverzicht 2026 met ai native startups 2026"
 Trefwoorden: AI native startups 2026, year review, AI startup ecosystem, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Stand van AI-Native Startups: Jaaroverzicht 2026
+# De Stand van AI-Native Startups: Jaaroverzicht 2026 met ai native startups 2026
 
 <script type="application/ld+json">
 {

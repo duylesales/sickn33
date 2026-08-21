@@ -1,5 +1,5 @@
 ---
-Title: The Agency Guide to Auditing Security AI
+Title: "The Agency Guide to Auditing Security AI"
 Keywords: security AI, AI secure, LaunchStudio, Manifera, Cursor, Bolt, white-label, agency
 Buyer Stage: Consideration
 Target Persona: C (Agency / Freelancer - White-Label Partner)

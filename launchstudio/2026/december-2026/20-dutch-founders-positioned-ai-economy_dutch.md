@@ -1,11 +1,11 @@
 ---
-Titel: "Waarom Nederlandse Oprichters Ideaal Gepositioneerd Zijn voor de AI-Economie"
+Titel: "Waarom Nederlandse Oprichters Ideaal Gepositioneerd Zijn voor de AI-Economie voor AI-Native Applicaties"
 Trefwoorden: ai native, ai development, ai software development, ai and software development, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Waarom Nederlandse Oprichters Ideaal Gepositioneerd Zijn voor de AI-Economie
+# Waarom Nederlandse Oprichters Ideaal Gepositioneerd Zijn voor de AI-Economie voor AI-Native Applicaties
 
 <script type="application/ld+json">
 {

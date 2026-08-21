@@ -1,5 +1,5 @@
 ---
-Title: How Cursor AI Is Changing the Way Founders Write Code
+Title: "How Cursor AI Is Changing the Way Founders Write Code"
 Keywords: AI To Code, Cursor, Changing, Founders, Write
 Buyer Stage: Awareness
 ---

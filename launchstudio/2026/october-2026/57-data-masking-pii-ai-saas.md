@@ -1,5 +1,5 @@
 ---
-Title: Why Your Agency Needs PII Data Masking for AI Data Security
+Title: "Why Your Agency Needs PII Data Masking for AI Data Security"
 Keywords: AI Data Security, Data masking, PII protection, GDPR compliance AI, digital agency, custom AI development, LaunchStudio, Manifera, enterprise security
 Buyer Stage: Consideration
 Target Persona: C (Agency / Freelancer White-Label Partner)

@@ -1,5 +1,5 @@
 ---
-Title: The Backend Partner Dilemma for AI No Code Agencies
+Title: "The Backend Partner Dilemma for AI No Code Agencies"
 Keywords: AI No Code, no code agency, white label partner, LaunchStudio, Manifera, AI app, backend infrastructure
 Buyer Stage: Consideration
 Target Persona: C (Agency / Freelancer - White-Label Partner)

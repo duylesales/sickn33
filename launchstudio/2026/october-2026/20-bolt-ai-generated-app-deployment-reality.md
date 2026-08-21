@@ -1,5 +1,5 @@
 ---
-Title: Real-World Deployment Reality Check for Bolt AI Apps
+Title: "Real-World Deployment Reality Check for Bolt AI Apps"
 Keywords: bolt AI, bolt.new, LaunchStudio, Manifera, AI app, deployment, WebContainers
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)

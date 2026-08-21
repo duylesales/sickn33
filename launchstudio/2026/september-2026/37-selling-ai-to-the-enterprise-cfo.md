@@ -1,10 +1,10 @@
 ---
-Title: Selling AI to the Enterprise CFO When You Use AI To Code
+Title: "Selling AI to the Enterprise CFO for Your AI SaaS Platform"
 Keywords: ai saas, ai saas platform, ai in saas, ai software engineering, ai and software development, build app with ai
 Buyer Stage: Consideration
 ---
 
-# Selling AI to the Enterprise CFO When You Use AI To Code
+# Selling AI to the Enterprise CFO for Your AI SaaS Platform
 Technical founders are obsessed with architecture. When they finally secure a meeting with an Enterprise buyer, they proudly open a slide deck detailing their multi-agent orchestration, pgvector implementation, and sub-second token latency. The Chief Financial Officer (CFO) tunes out within three minutes, and the $100k contract dies quietly in a follow-up email that never gets a reply. To sell AI to the enterprise, you must ruthlessly eliminate technical jargon and speak the only language the C-Suite understands: Return on Investment (ROI). This matters more than most founders realize, because enterprise buyers have watched a wave of AI vendors overpromise and underdeliver — they are actively filtering for founders who understand the business, not just the model.
 
 ## Stop Selling 'Artificial Intelligence'

@@ -1,5 +1,5 @@
 ---
-Title: Cursor AI vs. Bolt AI for Full-Stack SaaS
+Title: "Cursor AI vs. Bolt AI for Full-Stack SaaS"
 Keywords: Bolt AI, cursor AI, cursor coding, bolt.new, LaunchStudio, Manifera, AI app, full-stack
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

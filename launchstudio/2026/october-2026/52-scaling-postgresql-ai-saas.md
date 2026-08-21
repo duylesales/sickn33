@@ -1,5 +1,5 @@
 ---
-Title: Breaking Under Pressure When Scaling PostgreSQL for AI SaaS
+Title: "Breaking Under Pressure When Scaling PostgreSQL for AI SaaS"
 Keywords: Scaling PostgreSQL, AI SaaS, Supabase, database connection pooling, pgvector, LaunchStudio, Manifera, B2B SaaS architecture, HNSW index
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

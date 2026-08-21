@@ -1,5 +1,5 @@
 ---
-Title: Securing Multi-Tenant Architectures for Day AI
+Title: "Securing Multi-Tenant Architectures for Day AI"
 Keywords: Day AI, Multi-Tenant Architecture, Row-Level Security, Supabase RLS, AI database isolation, B2B SaaS security, LaunchStudio, Manifera, RAG security
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)

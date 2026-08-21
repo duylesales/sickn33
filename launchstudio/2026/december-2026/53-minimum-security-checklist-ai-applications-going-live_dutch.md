@@ -1,11 +1,11 @@
 ---
-Titel: "De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan"
+Titel: "De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan met ai vulnerabilities"
 Trefwoorden: ai secure, security ai, ai security issues, ai vulnerabilities, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan
+# De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan met ai vulnerabilities
 
 <script type="application/ld+json">
 {

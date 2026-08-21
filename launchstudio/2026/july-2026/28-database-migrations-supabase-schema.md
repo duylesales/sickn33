@@ -1,5 +1,5 @@
 ---
-Title: Database Migrations Explained for Your Supabase AI Database
+Title: "Database Migrations Explained for Your Supabase AI Database"
 Keywords: AI To Code, Database, Migrations, Explained, Change, Supabase
 Buyer Stage: Consideration
 ---

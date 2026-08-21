@@ -1,5 +1,5 @@
 ---
-Title: Agency Growth Hacks using AI For Software Engineering
+Title: "Agency Growth Hacks using AI For Software Engineering"
 Keywords: AI For Software Engineering, White-label engineering, digital agency, custom AI apps, LaunchStudio, Manifera, B2B SaaS, enterprise software, scaling agencies
 Buyer Stage: Awareness
 Target Persona: C (Agency / Freelancer White-Label Partner)

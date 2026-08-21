@@ -1,5 +1,5 @@
 ---
-Title: How to Pass a SaaS Security Audit When Using AI To Code
+Title: "How to Pass a SaaS Security Audit When Using AI To Code"
 Keywords: AI To Code, enterprise security audit, B2B SaaS, LaunchStudio, Manifera, IT compliance, digital agency, custom software development
 Buyer Stage: Consideration
 Target Persona: C (Agency / Freelancer White-Label Partner)

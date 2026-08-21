@@ -1,5 +1,5 @@
 ---
-Titel: Databasemigraties uitgelegd voor uw Supabase AI-database
+Titel: "Databasemigraties uitgelegd voor uw Supabase AI-database"
 Trefwoorden: AI To Code, Database Migrations, Supabase, Schema
 Koperfase: overweging
 ---

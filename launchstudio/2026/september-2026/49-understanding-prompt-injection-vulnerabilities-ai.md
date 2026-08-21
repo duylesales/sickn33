@@ -1,5 +1,5 @@
 ---
-Title: Understanding Prompt Injection and AI Security Vulnerabilities
+Title: "Understanding Prompt Injection and AI Security Vulnerabilities"
 Keywords: ai security vulnerabilities, ai vulnerabilities, ai secure, security ai, ai security issues, ai security risk, ai data security, ai native
 Buyer Stage: Consideration
 ---

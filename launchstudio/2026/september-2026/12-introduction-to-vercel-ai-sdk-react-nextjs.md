@@ -1,5 +1,5 @@
 ---
-Title: Vercel AI SDK Introduction for AI To Code Projects
+Title: "Vercel AI SDK Introduction for AI To Code Projects"
 Keywords: ai to code, build app with ai, ai deployment, ai frontend, ai native, build ai app, code with ai, ai saas platform
 Buyer Stage: Awareness
 ---

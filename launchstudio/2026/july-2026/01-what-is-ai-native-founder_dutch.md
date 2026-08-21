@@ -1,5 +1,5 @@
 ---
-Titel: Wat is een AI-native oprichter en waarom dit belangrijk is in 2026
+Titel: "Wat is een AI-native oprichter en waarom dit belangrijk is in 2026"
 Trefwoorden: AI-native Founder, AI in IT Security, SaaS MVP, Lovable, Bolt, Cursor, Software Development
 Koperfase: Bewustzijn
 ---

@@ -1,5 +1,5 @@
 ---
-Title: Why Dev Agencies Charge €20k for AI Coding You Do in a Weekend
+Title: "Why Dev Agencies Charge €20k for AI Coding You Do in a Weekend"
 Keywords: AI For Coding, Agencies, Charge, Weekend
 Buyer Stage: Awareness
 ---

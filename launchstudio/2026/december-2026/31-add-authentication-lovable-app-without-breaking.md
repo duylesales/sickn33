@@ -1,11 +1,11 @@
 ---
-Title: "How to Add Authentication to Your Lovable App Without Breaking It"
+Title: "How to Add Authentication to Your Lovable App Without Breaking It in Modern AI Code Development"
 Keywords: ai app dev, ai code development, build ai app, ai development, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# How to Add Authentication to Your Lovable App Without Breaking It
+# How to Add Authentication to Your Lovable App Without Breaking It in Modern AI Code Development
 
 <script type="application/ld+json">
 {

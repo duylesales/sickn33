@@ -1,5 +1,5 @@
 ---
-Titel: Waarom uw AI-prototype zal falen bij de eerste echte gebruikerstest
+Titel: "Waarom uw AI-prototype zal falen bij de eerste echte gebruikerstest"
 Trefwoorden: AI Prototype, User Testing, UX, AI-app
 Koperfase: Bewustzijn
 ---

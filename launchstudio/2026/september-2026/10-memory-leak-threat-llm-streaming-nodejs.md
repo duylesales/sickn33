@@ -1,10 +1,10 @@
 ---
-Title: Solving Memory Leaks in AI In Software Engineering
+Title: "Solving Memory Leaks in AI: Standards in AI Software Engineering"
 Keywords: ai software engineering, ai deployment, ai native, ai code development, ai vulnerabilities, code with ai, build app with ai, ai code tool
 Buyer Stage: Awareness
 ---
 
-# Solving Memory Leaks in AI In Software Engineering
+# Solving Memory Leaks in AI: Standards in AI Software Engineering
 One of the most insidious threats to a B2B AI application is not a catastrophic crash, but a slow, silent death. You deploy your Node.js backend. It runs perfectly for 12 hours. Then, at 2:00 PM, the server randomly crashes with a `JavaScript heap out of memory` error. You reboot it. It runs fine for another 12 hours, then crashes again. You are the victim of a Memory Leak, and in the world of LLM streaming, they are notoriously easy to create and devastatingly hard to find. Founders who ship a prototype from Lovable or Bolt straight to production almost never load-test for this — it only shows up days or weeks later, usually as an unexplained outage that looks completely random until someone pulls the RAM graph.
 
 ## The Mechanics of a Streaming Leak

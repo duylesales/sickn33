@@ -1,5 +1,5 @@
 ---
-Title: How to Build App With AI and Survive API Costs
+Title: "How to Build App With AI and Survive API Costs"
 Keywords: Build App With AI, saas billing, Stripe metered billing, AI tokens, LaunchStudio, Manifera, B2B SaaS architecture, API costs
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

@@ -1,11 +1,11 @@
 ---
-Titel: "Offshore Software-Ontwikkeling Goed Aangepakt: Lessen uit 11 Jaar Gedistribueerde Teams"
+Titel: "Offshore Software-Ontwikkeling Goed Aangepakt: Lessen uit 11 Jaar Gedistribueerde Teams in AI en Softwareontwikkeling"
 Trefwoorden: ai and software development, ai software development, develop ai software, ai development, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Bureau / Freelancer (White-Label Partner)
 ---
 
-# Offshore Software-Ontwikkeling Goed Aangepakt: Lessen uit 11 Jaar Gedistribueerde Teams
+# Offshore Software-Ontwikkeling Goed Aangepakt: Lessen uit 11 Jaar Gedistribueerde Teams in AI en Softwareontwikkeling
 
 <script type="application/ld+json">
 {

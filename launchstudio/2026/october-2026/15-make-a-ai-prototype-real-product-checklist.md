@@ -1,5 +1,5 @@
 ---
-Title: Founder's Checklist to Make a AI Product
+Title: "Founder's Checklist to Make a AI Product"
 Keywords: make a AI, build AI, LaunchStudio, Manifera, Lovable, Bolt, MVP checklist
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)

@@ -1,5 +1,5 @@
 ---
-Title: The Danger of Exposed Keys for API in AI Frontend Code
+Title: "The Danger of Exposed Keys for API in AI Frontend Code"
 Keywords: Api In AI, Danger, Exposed, Frontend
 Buyer Stage: Awareness
 ---

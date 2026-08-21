@@ -1,11 +1,11 @@
 ---
-Title: "Planning Your First 10 Customers: A Tactical Guide for AI Founders"
+Title: "Planning Your First 10 Customers: A Tactical Guide for AI Founders for Your AI SaaS Platform"
 Keywords: ai saas, build ai, ai native, ai prototype, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# Planning Your First 10 Customers: A Tactical Guide for AI Founders
+# Planning Your First 10 Customers: A Tactical Guide for AI Founders for Your AI SaaS Platform
 
 <script type="application/ld+json">
 {

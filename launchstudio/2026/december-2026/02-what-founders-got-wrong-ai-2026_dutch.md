@@ -1,11 +1,11 @@
 ---
-Titel: "Wat Oprichters Verkeerd Begrepen over AI in 2026"
+Titel: "Wat Oprichters Verkeerd Begrepen over AI in 2026 met ai mistakes founders 2026"
 Trefwoorden: AI mistakes founders 2026, lessons learned, AI startup failures, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Wat Oprichters Verkeerd Begrepen over AI in 2026
+# Wat Oprichters Verkeerd Begrepen over AI in 2026 met ai mistakes founders 2026
 
 <script type="application/ld+json">
 {

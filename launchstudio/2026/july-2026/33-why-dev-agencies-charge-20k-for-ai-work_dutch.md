@@ -1,5 +1,5 @@
 ---
-Titel: Waarom ontwikkelingsbureaus €20k rekenen voor AI-codering die u in een weekend doet
+Titel: "Waarom ontwikkelingsbureaus €20k rekenen voor AI-codering die u in een weekend doet"
 Trefwoorden: AI For Coding, Dev Agencies, Kosten, Weekend, AI-ontwikkeling
 Koperfase: Bewustzijn
 ---

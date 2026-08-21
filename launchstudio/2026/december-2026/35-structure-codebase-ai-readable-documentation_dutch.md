@@ -1,11 +1,11 @@
 ---
-Titel: "Hoe U Uw Codebase Structureert voor AI-Leesbare Documentatie"
+Titel: "Hoe U Uw Codebase Structureert voor AI-Leesbare Documentatie voor AI-Native Applicaties"
 Trefwoorden: ai code development, ai native, code with ai, ai code tool, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Hoe U Uw Codebase Structureert voor AI-Leesbare Documentatie
+# Hoe U Uw Codebase Structureert voor AI-Leesbare Documentatie voor AI-Native Applicaties
 
 <script type="application/ld+json">
 {

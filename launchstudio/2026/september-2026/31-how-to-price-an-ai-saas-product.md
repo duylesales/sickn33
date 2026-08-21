@@ -1,5 +1,5 @@
 ---
-Title: How to Price an AI SaaS Product for Maximum Revenue
+Title: "How to Price an AI SaaS Product for Maximum Revenue"
 Keywords: ai saas, ai saas platform, saas ai, ai in saas, ai native, ai software engineering, build ai app, ai deployment
 Buyer Stage: Awareness
 ---

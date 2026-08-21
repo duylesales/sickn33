@@ -1,5 +1,5 @@
 ---
-Titel: De werkelijke kosten om een app met AI te bouwen in 2026
+Titel: "De werkelijke kosten om een app met AI te bouwen in 2026"
 Trefwoorden: Build An App With AI, Launching, Kosten, AI-built, 2026
 Koperfase: overweging
 ---

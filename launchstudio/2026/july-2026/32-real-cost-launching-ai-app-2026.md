@@ -1,5 +1,5 @@
 ---
-Title: The Real Cost to Build an App with AI in 2026
+Title: "The Real Cost to Build an App with AI in 2026"
 Keywords: Build An App With AI, Launching, AIBuilt
 Buyer Stage: Consideration
 ---

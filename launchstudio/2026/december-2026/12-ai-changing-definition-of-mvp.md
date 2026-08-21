@@ -1,11 +1,11 @@
 ---
-Title: "How AI Is Changing the Definition of an MVP"
+Title: "How to Build App with AI: How AI Is Changing the Definition of an MVP"
 Keywords: ai prototype, build app with ai, ai development, minimum viable product, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# How AI Is Changing the Definition of an MVP
+# How to Build App with AI: How AI Is Changing the Definition of an MVP
 
 <script type="application/ld+json">
 {

@@ -1,5 +1,5 @@
 ---
-Title: The Solo Founder's Tech Stack for Scalable AI SaaS in 2026
+Title: "The Solo Founder's Tech Stack for Scalable AI SaaS in 2026"
 Keywords: AI Native, Build App With AI, AI Deployment, AI Frontend, AI Database, AI Prototype, AI SaaS
 Buyer Stage: Awareness
 ---

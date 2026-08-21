@@ -1,5 +1,5 @@
 ---
-Title: Surviving Hidden Costs for the Best Of AI Image Generation
+Title: "Surviving Hidden Costs for the Best Of AI Image Generation"
 Keywords: Best Of AI, AI image generation, DALL-E 3, Midjourney API, SaaS billing, LaunchStudio, Manifera, custom backend, API costs, Stable Diffusion
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

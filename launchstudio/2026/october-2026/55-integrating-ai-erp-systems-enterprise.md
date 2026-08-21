@@ -1,5 +1,5 @@
 ---
-Title: Integrating ERP Systems When You Code With AI
+Title: "Integrating ERP Systems When You Code With AI"
 Keywords: Code With AI, ERP integration, AI SAP integration, Microsoft Dynamics AI, digital agency, enterprise software development, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: C (Agency / Freelancer White-Label Partner)

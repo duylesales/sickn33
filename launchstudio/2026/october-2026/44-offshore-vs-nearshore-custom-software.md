@@ -1,5 +1,5 @@
 ---
-Title: Offshore vs. Nearshore Custom Software Development for AI Startups
+Title: "Offshore vs. Nearshore Custom Software Development for AI Startups"
 Keywords: offshore vs nearshore, custom software development, AI startup backend, LaunchStudio, Manifera, IT outsourcing, technical solo founder, GDPR compliance
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

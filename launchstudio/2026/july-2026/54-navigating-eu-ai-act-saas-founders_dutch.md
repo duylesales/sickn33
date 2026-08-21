@@ -1,12 +1,10 @@
 ---
-Title: "Navigeren door de EU AI Act: Wat AI SaaS-oprichters moeten weten"
+Titel: "Navigeren door de EU AI Act: Wat AI SaaS Oprichters Moeten Weten"
 Keywords: AI In SaaS, EU AI Act, AI Compliance, High-Risk AI, GPAI, AI Regulering, SaaS Founders, AI Governance
 Buyer Stage: Awareness
 ---
 
-# Navigeren door de EU AI Act: Wat AI SaaS-oprichters moeten weten
-
-Tijdens de eerste jaren van de AI-hausse opereerden startups in een soort 'Wilde Westen'. Je kon in een weekend zonder seconde twijfel een AI-cv-screener, een voorspellend kredietmodel of een geautomatiseerd platform voor huurdersbeoordeling lanceren. Dat tijdperk is definitief voorbij.
+# Navigeren door de EU AI Act: Wat AI SaaS Oprichters Moeten Weten
 
 De **Artificial Intelligence Act van de Europese Unie** (Verordening (EU) 2024/1689) — beter bekend als de **EU AI Act** — is op 1 augustus 2024 in werking getreden. Het is 's werelds eerste alomvattende, horizontaal toepasbare wettelijke kader voor kunstmatige intelligentie. Zoals de AVG/GDPR de manier waarop elk technologiebedrijf met persoonsgegevens omgaat fundamenteel heeft veranderd, herschrijft de AI Act de regels voor het ontwerpen, ontwikkelen, uitrollen en monitoren van AI-systemen — niet alleen in Europa, maar wereldwijd voor elk bedrijf waarvan de AI in aanraking komt met inwoners van de EU.
 
@@ -225,7 +223,7 @@ LaunchStudio wordt geëxploiteerd door **Manifera**, een internationaal software
 
 ---
 
-## Praktijkvoorbeeld
+## Echt voorbeeld
 
 ### Een AI-Native Oprichter in actie: AI HR-beoordelingstool
 

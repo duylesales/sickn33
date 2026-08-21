@@ -1,11 +1,11 @@
 ---
-Titel: "Van Nevenproject naar Omzet: Hoe AI-Oprichters de Sprong Maken"
+Titel: "Van Nevenproject naar Omzet: Hoe AI-Oprichters de Sprong Maken voor uw AI SaaS-Platform"
 Trefwoorden: ai native, build ai, ai prototype, ai saas, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Van Nevenproject naar Omzet: Hoe AI-Oprichters de Sprong Maken
+# Van Nevenproject naar Omzet: Hoe AI-Oprichters de Sprong Maken voor uw AI SaaS-Platform
 
 <script type="application/ld+json">
 {
