@@ -1,10 +1,10 @@
 ---
-Title: "Case Study: How Acme Corp Saved $1M a Year with AI Document Automation"
+Title: "Case Study: How a Dutch Logistics AI SaaS Cut API Costs by 62% with Semantic Caching"
 Keywords: ai coding, ai deployment, build ai app, ai saas, ai for coding, ai vulnerabilities, use ai to generate code
 Buyer Stage: Awareness
 ---
 
-# Case Study: How Acme Corp Saved $1M a Year with AI Document Automation
+# Case Study: How a Dutch Logistics AI SaaS Cut API Costs by 62% with Semantic Caching
 
 For B2B SaaS startups, the most powerful marketing asset is not a list of features; it is a proven ROI case study. Enterprise buyers do not care about the underlying neural architecture of your product; they care about how much money it will save them. This case study details how we helped "Acme Corp" (a pseudonym for a real mid-sized European logistics company) replace a massive manual data entry bottleneck with a multimodal AI pipeline, saving over $1 million annually — a project that also illustrates why 80% of AI-built prototypes never survive contact with production requirements unless someone deliberately engineers around that failure mode.
 

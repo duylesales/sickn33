@@ -1,10 +1,10 @@
 ---
-Title: Fixing React Re-Render Performance in Streaming AI Apps
+Title: "Fixing React Re-Render Performance in AI Frontend Streaming Apps"
 Keywords: build ai app, ai frontend, ai app dev, ai prototype, ai native, build app with ai, code with ai, ai coding
 Buyer Stage: Consideration
 ---
 
-# Fixing React Re-Render Performance in Streaming AI Apps
+# Fixing React Re-Render Performance in AI Frontend Streaming Apps
 Building an AI application is fundamentally different from building a traditional CRUD (Create, Read, Update, Delete) application. In traditional apps, data loads once and the UI settles. In AI apps, data streams continuously — a single LLM response can arrive as 300 to 800 individual chunks over several seconds. Every token an LLM generates triggers a state update. If your React architecture is flawed, streaming a 500-word response can trigger thousands of unnecessary re-renders, pinning the main thread, spiking CPU usage, and leaving users staring at a frozen browser. This is one of the most common reasons AI prototypes built with Lovable, Bolt, or v0 feel snappy in a demo with one user and then fall apart the moment real traffic hits. Here is how to actually optimize React for generative AI, mechanism by mechanism.
 
 ## The 'State Lift' Trap

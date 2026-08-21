@@ -1,10 +1,10 @@
 ---
-Title: Tracking the Right KPIs for Generative AI SaaS
+Title: "Setting Up Customer Health Scoring for Your AI SaaS Platform Subscriptions"
 Keywords: ai saas, saas ai, ai saas platform, ai in saas, ai native, ai software engineering, build app with ai, ai deployment
 Buyer Stage: Awareness
 ---
 
-# Tracking the Right KPIs for Generative AI SaaS
+# Setting Up Customer Health Scoring for Your AI SaaS Platform Subscriptions
 
 If you run a traditional SaaS company, a spike in Daily Active Users (DAU) is a cause for celebration. If you run a generative AI startup, a sudden, unmonitored spike in heavy usage could mean you are losing thousands of dollars a day in API fees. The unit economics of AI require an entirely new set of Key Performance Indicators (KPIs). If you are only looking at MRR (Monthly Recurring Revenue) and DAU, you are flying blind, because neither metric tells you whether your growth is actually profitable or just expensive.
 

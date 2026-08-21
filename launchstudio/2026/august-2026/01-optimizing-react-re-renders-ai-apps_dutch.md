@@ -1,10 +1,10 @@
 ---
-Titel: React Re-Render Prestaties Optimaliseren in Streaming AI-Apps
+Titel: "React Re-Render Prestaties Optimaliseren in AI Frontend Streaming-Apps"
 Trefwoorden: AI-app bouwen, AI frontend, AI-app ontwikkeling, AI-prototype, AI-native, app bouwen met AI, coderen met AI, AI coding, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# React Re-Render Prestaties Optimaliseren in Streaming AI-Apps
+# React Re-Render Prestaties Optimaliseren in AI Frontend Streaming-Apps
 
 Het bouwen van een AI-applicatie is fundamenteel anders dan het ontwikkelen van een traditionele CRUD-applicatie (Create, Read, Update, Delete). In traditionele webapplicaties worden gegevens eenmalig geladen waarna de gebruikersinterface (UI) tot rust komt. In AI-applicaties streamen gegevens daarentegen continu binnen — een enkel antwoord van een Large Language Model (LLM) kan bestaan uit 300 tot 800 individuele brokken (chunks) die over meerdere seconden binnenkomen. Elk token dat een LLM genereert, triggert een state-update. Wanneer uw React-architectuur niet optimaal is ingericht, kan het streamen van een antwoord van 500 woorden duizenden onnodige re-renders veroorzaken. Dit belast de main thread maximaal, leidt tot CPU-pieken en resulteert in een bevroren browser voor de gebruiker. Dit is een van de meest voorkomende redenen waarom AI-prototypes die gebouwd zijn met Lovable, Bolt of v0 vlot aanvoelen in een demo met één enkele tester, maar volledig bezwijken zodra er echt gebruikersverkeer op komt. Hier leest u hoe u React stap voor stap optimaliseert voor generatieve AI.
 

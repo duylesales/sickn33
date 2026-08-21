@@ -1,10 +1,10 @@
 ---
-Title: How to Upsell AI Features to Your Existing SaaS Customers
+Title: "The Art of the Upsell: Expanding Your AI SaaS Platform Accounts with New Features"
 Keywords: ai saas, saas ai, ai in saas, ai saas platform, build ai app, ai native, ai deployment, ai and software development
 Buyer Stage: Awareness
 ---
 
-# How to Upsell AI Features to Your Existing SaaS Customers
+# The Art of the Upsell: Expanding Your AI SaaS Platform Accounts with New Features
 If you run an established SaaS platform, integrating AI is a defensive necessity to prevent churn — your competitors are shipping AI copilots, and customers now expect them by default. However, because AI generation carries hard variable costs, giving these features away for free to your entire user base will destroy your margins. You must successfully monetize the new capabilities without alienating a customer base that has been paying you reliably for years. Here is the playbook for upselling AI to your existing customers and increasing your ARPU (Average Revenue Per User).
 
 ## The 'Add-On' vs 'Tier Upgrade' Debate
