@@ -1,10 +1,10 @@
 ---
-Titel: "De dood van Thin Wrappers: overleven in de AI-softwareontwikkeling shakeout: AI Software Engineering Best Practices"
+Titel: "De dood van Thin Wrappers: overleven in de AI-softwareontwikkeling shakeout"
 Trefwoorden: AI Software Engineering, AI And Software Development, AI Native, AI Deployment, AI Database, Build AI App, AI App Dev
 Koperfase: Bewustzijn
 ---
 
-# De dood van Thin Wrappers: overleven in de AI-softwareontwikkeling shakeout: AI Software Engineering Best Practices
+# De dood van Thin Wrappers: overleven in de AI-softwareontwikkeling shakeout
 In 2023 kon je een website bouwen die om het cv van een gebruiker vroeg, dit naar de OpenAI API stuurde met de prompt 'Maak dit beter', en een MRR van € 10.000 genereren. Dat tijdperk is voorbij. De "Thin Wrapper" is dood en wordt systematisch met uitsterven bedreigd doordat OpenAI en Anthropic voortdurend hun eigen consumenteninterfaces upgraden — elke grote modelrelease brengt functies met zich mee die zes maanden eerder nog iemands hele startup vormden. Om in 2026 te overleven, moet u een 'Thick Wrapper' bouwen. Hieronder leest u wat dat betekent en hoe u er stap voor stap, gracht voor gracht, een kunt bouwen.
 
 ## De existentiële dreiging: native upgrades

@@ -1,11 +1,11 @@
 ---
-Titel: "Het Strangler Fig Patroon Met Een AI-Tool Voor Applicatie-Modernisering"
+Titel: "Een AI Tool for Application Modernization Inzetten: Het Strangler Patroon"
 Trefwoorden: AI tool voor applicatie, applicatie modernisering, enterprise AI, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: Enterprise Architect / VP of Engineering
 ---
 
-# Het Strangler Fig Patroon Met Een AI-Tool Voor Applicatie-Modernisering
+# Een AI Tool for Application Modernization Inzetten: Het Strangler Patroon
 
 <script type="application/ld+json">
 {

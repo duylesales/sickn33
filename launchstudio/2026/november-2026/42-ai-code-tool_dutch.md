@@ -1,11 +1,11 @@
 ---
-Titel: "Een Gids Voor CTO's Bij Het Kiezen van De Juiste AI-Codeertool"
+Titel: "Enterprise Compliance en Beveiliging bij het Kiezen van een AI Code Tool"
 Trefwoorden: AI code tool, AI developer tools, AI coding, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: CTO / CISO
 ---
 
-# Een Gids Voor CTO's Bij Het Kiezen van De Juiste AI-Codeertool
+# Enterprise Compliance en Beveiliging bij het Kiezen van een AI Code Tool
 
 <script type="application/ld+json">
 {

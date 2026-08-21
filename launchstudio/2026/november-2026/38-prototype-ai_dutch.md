@@ -1,11 +1,11 @@
 ---
-Titel: "De Verborgen Kosten van Het Naar Productie Brengen van Een AI-Prototype"
+Titel: "Van Prototype AI naar Productie: De Laatste Knelpunten Oplossen"
 Trefwoorden: prototype AI, AI prototype naar productie, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Oprichter / CTO
 ---
 
-# De Verborgen Kosten van Het Naar Productie Brengen van Een AI-Prototype
+# Van Prototype AI naar Productie: De Laatste Knelpunten Oplossen
 
 <script type="application/ld+json">
 {

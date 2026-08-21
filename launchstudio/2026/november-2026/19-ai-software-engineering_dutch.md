@@ -1,11 +1,11 @@
 ---
-Titel: "Discipline Toepassen Op Codegeneratie Met AI Software Engineering"
+Titel: "AI Software Engineering: Strikte Tests en Verificatie voor LLM's"
 Trefwoorden: AI software engineering, AI en software engineering, AI in software engineering, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Discipline Toepassen Op Codegeneratie Met AI Software Engineering
+# AI Software Engineering: Strikte Tests en Verificatie voor LLM's
 
 <script type="application/ld+json">
 {

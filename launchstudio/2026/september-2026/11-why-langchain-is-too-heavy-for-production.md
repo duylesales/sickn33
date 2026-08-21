@@ -1,10 +1,10 @@
 ---
-Title: "Why LangChain is Too Heavy: Standards in AI Software Engineering"
+Title: "Ai coding: Why LangChain is Too Heavy"
 Keywords: ai coding, ai code development, build ai app, ai software engineering, ai deployment, code with ai, ai vulnerabilities, ai native
 Buyer Stage: Consideration
 ---
 
-# Why LangChain is Too Heavy: Standards in AI Software Engineering
+# Ai coding: Why LangChain is Too Heavy
 In the early days of the AI boom, **LangChain** was the undisputed king. It allowed a junior developer to string together a Vector Database, an LLM, and a web scraper in 15 lines of code. It was a miracle for prototyping. But as those prototypes scaled into enterprise B2B applications, the miracle became a nightmare. In 2026, top engineering teams are actively ripping LangChain out of their production environments. Here is why extreme abstraction is killing your AI SaaS, and what a leaner replacement architecture actually looks like.
 
 ## The 'Black Box' Abstraction Problem

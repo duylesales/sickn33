@@ -1,11 +1,11 @@
 ---
-Titel: "Een Gefragmenteerde Bedrijfsstack van All AI Tools Consolideren"
+Titel: "Architectuur en Governance: All AI Tools Consolideren in Bedrijfsstacks"
 Trefwoorden: all AI tools, alle AI tools, enterprise AI, AI tools consolideren, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: CIO / CTO
 ---
 
-# Een Gefragmenteerde Bedrijfsstack van All AI Tools Consolideren
+# Architectuur en Governance: All AI Tools Consolideren in Bedrijfsstacks
 
 <script type="application/ld+json">
 {

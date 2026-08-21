@@ -1,11 +1,11 @@
 ---
-Title: The Definitive Enterprise Tech Stack and Software for AI in 2027
+Title: "The Enterprise Stack: 4 Pillars of Building Software for AI in 2027"
 Keywords: software for AI, AI software products, build AI software, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CTO / Enterprise Architect
 ---
 
-# The Definitive Enterprise Tech Stack and Software for AI in 2027
+# The Enterprise Stack: 4 Pillars of Building Software for AI in 2027
 
 <script type="application/ld+json">
 {

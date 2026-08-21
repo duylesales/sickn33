@@ -1,11 +1,11 @@
 ---
-Titel: "De Gids voor AVG/GDPR Compliance voor AI-Applicaties: Essentiële AI Data Security Architectuur"
+Titel: "De Gids voor AVG/GDPR Compliance voor AI-Applicaties"
 Trefwoorden: ai and privacy issues, ai privacy issues, ai data security, ai secure, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Gids voor AVG/GDPR Compliance voor AI-Applicaties: Essentiële AI Data Security Architectuur
+# De Gids voor AVG/GDPR Compliance voor AI-Applicaties
 
 <script type="application/ld+json">
 {

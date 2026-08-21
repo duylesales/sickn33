@@ -1,11 +1,11 @@
 ---
-Title: Building Resilient Integrations and API in AI
+Title: "Resilient Architecture Patterns for Implementing API in AI Systems"
 Keywords: api in AI, api and AI, AI api architecture, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Backend Developer / Technical Founder
 ---
 
-# Building Resilient Integrations and API in AI
+# Resilient Architecture Patterns for Implementing API in AI Systems
 
 <script type="application/ld+json">
 {

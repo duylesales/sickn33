@@ -1,11 +1,11 @@
 ---
-Titel: "Waarom Uw AI App-Ontwikkeling Een Menselijke Backend Vereist"
+Titel: "AI App Dev Architectuur: Frontend Prompts Loskoppelen van Backends"
 Trefwoorden: AI app ontwikkeling, AI frontend, met AI gegenereerde applicatie, app bouwen met AI, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: AI-Native Oprichter (Technisch & Niet-Technisch)
 ---
 
-# Waarom Uw AI App-Ontwikkeling Een Menselijke Backend Vereist
+# AI App Dev Architectuur: Frontend Prompts Loskoppelen van Backends
 
 <script type="application/ld+json">
 {

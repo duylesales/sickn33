@@ -1,11 +1,11 @@
 ---
-Title: Passing the CISO Audit with AI in IT Security
+Title: "Passing the CISO Audit: Hardening Architecture for AI in IT Security"
 Keywords: AI in it security, AI data security, AI security monitoring, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: B2B SaaS Founder / CTO
 ---
 
-# Passing the CISO Audit with AI in IT Security
+# Passing the CISO Audit: Hardening Architecture for AI in IT Security
 
 <script type="application/ld+json">
 {

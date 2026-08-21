@@ -1,11 +1,11 @@
 ---
-Title: Defending Against Prompt Injection and AI Vulnerabilities
+Title: "Preventing Critical AI Vulnerabilities: Prompt Injection and SSRF Defense"
 Keywords: AI vulnerabilities, AI security risks, AI hack, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Technical Founder
 ---
 
-# Defending Against Prompt Injection and AI Vulnerabilities
+# Preventing Critical AI Vulnerabilities: Prompt Injection and SSRF Defense
 
 <script type="application/ld+json">
 {

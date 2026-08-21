@@ -1,11 +1,11 @@
 ---
-Titel: "Grote Codebases Beheren Tijdens AI Code-Ontwikkeling"
+Titel: "Technische Schuld Beheren in Snelle AI Code Development"
 Trefwoorden: AI code ontwikkeling, coderen met AI, AI software programmering, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Solo-Oprichter / CTO
 ---
 
-# Grote Codebases Beheren Tijdens AI Code-Ontwikkeling
+# Technische Schuld Beheren in Snelle AI Code Development
 
 <script type="application/ld+json">
 {

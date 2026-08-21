@@ -1,11 +1,11 @@
 ---
-Titel: "AVG-Compliance Inrichten In Pipelines Met Privacy Issues With AI"
+Titel: "PII-Anonimisering en AVG-Compliance: Privacy Issues with AI Oplossen"
 Trefwoorden: privacy issues with AI, AI privacy, AI AVG compliance, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: CTO / Data Protection Officer (DPO)
 ---
 
-# AVG-Compliance Inrichten In Pipelines Met Privacy Issues With AI
+# PII-Anonimisering en AVG-Compliance: Privacy Issues with AI Oplossen
 
 <script type="application/ld+json">
 {

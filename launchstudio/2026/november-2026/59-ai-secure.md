@@ -1,11 +1,11 @@
 ---
-Title: Establishing a Zero-Trust Boundary to Keep Your LLM AI Secure
+Title: "Zero-Trust Boundary Architecture: Keeping LLM Applications AI Secure"
 Keywords: AI secure, security AI, AI security risk, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: CISO / Security Architect
 ---
 
-# Establishing a Zero-Trust Boundary to Keep Your LLM AI Secure
+# Zero-Trust Boundary Architecture: Keeping LLM Applications AI Secure
 
 <script type="application/ld+json">
 {

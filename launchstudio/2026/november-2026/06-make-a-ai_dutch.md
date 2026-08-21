@@ -1,11 +1,11 @@
 ---
-Titel: "Hoe U Een AI-Product Maakt Dat Daadwerkelijk Omzet Genereert"
+Titel: "Hoe u een AI-Product Maakt Dat Enterprise Inkooptrajecten Doorstaat"
 Trefwoorden: AI maken, AI bouwen, AI app bouwen, app bouwen met AI, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Hoe U Een AI-Product Maakt Dat Daadwerkelijk Omzet Genereert
+# Hoe u een AI-Product Maakt Dat Enterprise Inkooptrajecten Doorstaat
 
 <script type="application/ld+json">
 {

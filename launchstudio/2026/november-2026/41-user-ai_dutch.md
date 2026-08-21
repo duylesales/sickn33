@@ -1,11 +1,11 @@
 ---
-Titel: "Verder Kijken Dan Het Chatbot-Paradigma Met User AI Interfaces"
+Titel: "Generatieve UI-Componenten Streamen met Geavanceerde User AI Patronen"
 Trefwoorden: user AI, AI gebruikersinterface, AI ux design, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: VP of Product / UX Architect
 ---
 
-# Verder Kijken Dan Het Chatbot-Paradigma Met User AI Interfaces
+# Generatieve UI-Componenten Streamen met Geavanceerde User AI Patronen
 
 <script type="application/ld+json">
 {

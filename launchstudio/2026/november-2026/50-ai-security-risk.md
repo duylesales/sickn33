@@ -1,11 +1,11 @@
 ---
-Title: Auditing and Preventing Data Exfiltration as an AI Security Risk
+Title: "Preventing Data Exfiltration: Mitigating the Critical AI Security Risk"
 Keywords: AI security risk, AI security vulnerabilities, security AI, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: Security Engineer / CISO
 ---
 
-# Auditing and Preventing Data Exfiltration as an AI Security Risk
+# Preventing Data Exfiltration: Mitigating the Critical AI Security Risk
 
 <script type="application/ld+json">
 {

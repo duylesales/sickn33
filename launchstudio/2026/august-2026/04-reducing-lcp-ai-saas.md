@@ -1,10 +1,10 @@
 ---
-Title: "Reducing LCP in Your AI SaaS Platform: A Core Web Vitals Fix"
+Title: "Reducing LCP in Your AI SaaS Platform"
 Keywords: ai saas platform, ai frontend, ai app dev, build app with ai, ai prototype, ai native, ai websites, code with ai
 Buyer Stage: Consideration
 ---
 
-# Reducing LCP in Your AI SaaS Platform: A Core Web Vitals Fix
+# Reducing LCP in Your AI SaaS Platform
 AI prototypes built with auto-generators like Lovable, Bolt, or Cursor often look beautiful in a demo, but under the hood, they can be genuine performance nightmares once they hit the open internet. The most critical performance metric you face post-launch is Largest Contentful Paint (LCP) — one of Google's three Core Web Vitals, alongside Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS). If your app takes longer than 2.5 seconds to paint the main content on the screen, Google will penalize your organic search rankings, and a meaningful share of users will simply abandon your funnel before they ever see what you built. Here is how to actually fix LCP in complex, AI-heavy applications.
 
 ## The Client-Side Rendering Trap

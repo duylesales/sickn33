@@ -1,11 +1,11 @@
 ---
-Titel: "Een Gids Voor Product Managers: Hoe Generatieve AI Werkt"
+Titel: "Transformers en Vector Embeddings: De Architectuur van How AI Works"
 Trefwoorden: AI works, hoe AI werkt, generatieve AI uitgelegd, LaunchStudio, Manifera
 Koperfase: Bewustwording
 Doelpersona: Product Manager / Niet-Technische Oprichter
 ---
 
-# Een Gids Voor Product Managers: Hoe Generatieve AI Werkt
+# Transformers en Vector Embeddings: De Architectuur van How AI Works
 
 <script type="application/ld+json">
 {

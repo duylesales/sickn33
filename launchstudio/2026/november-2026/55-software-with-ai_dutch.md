@@ -1,11 +1,11 @@
 ---
-Titel: "Wanneer Wordt Een Bestaande Applicatie Achterhaald Software With AI?"
+Titel: "Legacy Modernisering: Verouderde Apps Transformeren naar Software with AI"
 Trefwoorden: software with AI, software met AI, AI software producten, AI software app, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: SaaS Oprichter / VP of Product
 ---
 
-# Wanneer Wordt Een Bestaande Applicatie Achterhaald Software With AI?
+# Legacy Modernisering: Verouderde Apps Transformeren naar Software with AI
 
 <script type="application/ld+json">
 {

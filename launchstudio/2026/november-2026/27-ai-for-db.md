@@ -1,11 +1,11 @@
 ---
-Title: Architecting PostgreSQL and Vector Models with AI for DB
+Title: "Optimizing PostgreSQL and Vector Search Using AI for DB Architecture"
 Keywords: AI for db, AI in database, AI database architecture, vector database, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Founder / CTO
 ---
 
-# Architecting PostgreSQL and Vector Models with AI for DB
+# Optimizing PostgreSQL and Vector Search Using AI for DB Architecture
 
 <script type="application/ld+json">
 {

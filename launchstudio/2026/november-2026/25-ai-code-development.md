@@ -1,11 +1,11 @@
 ---
-Title: Managing Large Codebases During AI Code Development
+Title: "Managing Technical Debt in Fast-Paced AI Code Development"
 Keywords: AI code development, code with AI, AI software programming, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / CTO
 ---
 
-# Managing Large Codebases During AI Code Development
+# Managing Technical Debt in Fast-Paced AI Code Development
 
 <script type="application/ld+json">
 {

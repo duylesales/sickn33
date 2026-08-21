@@ -1,11 +1,11 @@
 ---
-Titel: "Waarom Ontwikkelaars AI Gebruiken Om Code Te Genereren Maar Mensen Om Het Te Beheren"
+Titel: "Enterprise Governance Wanneer Ontwikkelaars Use AI to Generate Code"
 Trefwoorden: gebruik AI om code te genereren, AI kan coderen, AI code governance, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: VP of Engineering / CTO
 ---
 
-# Waarom Ontwikkelaars AI Gebruiken Om Code Te Genereren Maar Mensen Om Het Te Beheren
+# Enterprise Governance Wanneer Ontwikkelaars Use AI to Generate Code
 
 <script type="application/ld+json">
 {

@@ -1,11 +1,11 @@
 ---
-Titel: "Bedrijfsdata Beschermen Tegen Prompt Injections Met Security in AI"
+Titel: "Enterprise Threat Modeling en Verdediging voor Security in AI Systemen"
 Trefwoorden: security in AI, AI data security, AI security risk, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: CISO / VP of Engineering
 ---
 
-# Bedrijfsdata Beschermen Tegen Prompt Injections Met Security in AI
+# Enterprise Threat Modeling en Verdediging voor Security in AI Systemen
 
 <script type="application/ld+json">
 {

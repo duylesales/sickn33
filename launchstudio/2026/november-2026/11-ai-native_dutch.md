@@ -1,11 +1,11 @@
 ---
-Titel: "Hoe AI-Native Oprichters Het Startup-Draaiboek Herschrijven"
+Titel: "AI-Native Architectuur: Low-Latency Streaming Systemen Ontwerpen"
 Trefwoorden: AI native, AI no code, no code AI tool, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Hoe AI-Native Oprichters Het Startup-Draaiboek Herschrijven
+# AI-Native Architectuur: Low-Latency Streaming Systemen Ontwerpen
 
 <script type="application/ld+json">
 {

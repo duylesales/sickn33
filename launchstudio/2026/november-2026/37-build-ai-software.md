@@ -1,11 +1,11 @@
 ---
-Title: Transitioning from Prompt Engineering to Build AI Software
+Title: "How to Build AI Software: From Fragile Prompts to Resilient Systems"
 Keywords: build AI software, build AI app, AI engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: CTO / Senior Software Engineer
 ---
 
-# Transitioning from Prompt Engineering to Build AI Software
+# How to Build AI Software: From Fragile Prompts to Resilient Systems
 
 <script type="application/ld+json">
 {

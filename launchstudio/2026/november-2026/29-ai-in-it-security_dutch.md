@@ -1,11 +1,11 @@
 ---
-Titel: "Slagen Voor De CISO-Audit Met AI in IT-Beveiliging"
+Titel: "De CISO-Audit Doorstaan: Architectuur Versterken voor AI in IT Security"
 Trefwoorden: AI in IT beveiliging, AI databeveiliging, AI beveiligingsmonitoring, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: B2B SaaS-Oprichter / CTO
 ---
 
-# Slagen Voor De CISO-Audit Met AI in IT-Beveiliging
+# De CISO-Audit Doorstaan: Architectuur Versterken voor AI in IT Security
 
 <script type="application/ld+json">
 {

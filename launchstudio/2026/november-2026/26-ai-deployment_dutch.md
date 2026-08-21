@@ -1,11 +1,11 @@
 ---
-Titel: "De CI/CD-Pijplijn Voor Niet-Deterministische AI-Deployment"
+Titel: "Zero-Downtime AI Deployment: Geautomatiseerde CI/CD-Pipelines voor LLM's"
 Trefwoorden: AI deployment, AI apps deployen, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Oprichter / DevOps Engineer
 ---
 
-# De CI/CD-Pijplijn Voor Niet-Deterministische AI-Deployment
+# Zero-Downtime AI Deployment: Geautomatiseerde CI/CD-Pipelines voor LLM's
 
 <script type="application/ld+json">
 {

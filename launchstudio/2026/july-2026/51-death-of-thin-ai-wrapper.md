@@ -1,10 +1,10 @@
 ---
-Title: "The Death of Thin Wrappers: Surviving the AI Software Development Shakeout: Best Practices in AI Software Engineering"
+Title: "AI Software Engineering: The Death of Thin Wrappers: Surviving the AI Software Development Shakeout"
 Keywords: AI Software Engineering, AI And Software Development, AI Native, AI Deployment, AI Database, Build AI App, AI App Dev
 Buyer Stage: Awareness
 ---
 
-# The Death of Thin Wrappers: Surviving the AI Software Development Shakeout: Best Practices in AI Software Engineering
+# AI Software Engineering: The Death of Thin Wrappers: Surviving the AI Software Development Shakeout
 In 2023, you could build a website that asked for a user's resume, sent it to the OpenAI API with the prompt "Make this better," and generate $10k MRR. That era is over. The "Thin Wrapper" is dead, systematically hunted to extinction by OpenAI and Anthropic continually upgrading their native consumer interfaces — every major model release ships with features that were, six months earlier, somebody's entire startup. To survive in 2026, you must build a "Thick Wrapper." Here is what that means and how to build one, moat by moat.
 
 ## The Existential Threat: Native Upgrades

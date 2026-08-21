@@ -1,11 +1,11 @@
 ---
-Titel: "Waarom Traditioneel Agile Faalt in Software Engineering Voor AI"
+Titel: "Software Engineering for AI: Gids voor Evaluation-Driven Development"
 Trefwoorden: software engineering voor AI, AI software engineering, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: VP of Engineering / CTO
 ---
 
-# Waarom Traditioneel Agile Faalt in Software Engineering Voor AI
+# Software Engineering for AI: Gids voor Evaluation-Driven Development
 
 <script type="application/ld+json">
 {

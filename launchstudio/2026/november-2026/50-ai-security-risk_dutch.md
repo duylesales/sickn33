@@ -1,11 +1,11 @@
 ---
-Titel: "Data-Exfiltratie Auditen En Voorkomen Als AI Security Risk"
+Titel: "Data-Exfiltratie Voorkomen: Het Kritieke AI Security Risk Beheersen"
 Trefwoorden: AI security risk, AI security vulnerabilities, security AI, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: Security Engineer / CISO
 ---
 
-# Data-Exfiltratie Auditen En Voorkomen Als AI Security Risk
+# Data-Exfiltratie Voorkomen: Het Kritieke AI Security Risk Beheersen
 
 <script type="application/ld+json">
 {
