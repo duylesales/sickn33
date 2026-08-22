@@ -1,11 +1,11 @@
 ---
-Titel: "Datastromen En UI Herontwerpen Voor AI-Native Startups"
+Titel: "De Drie Architectonische Pijlers voor het Schalen van een AI Native Platform"
 Trefwoorden: AI native, AI software, AI architectuur, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Oprichter / Hoofdarchitect
 ---
 
-# Datastromen En UI Herontwerpen Voor AI-Native Startups
+# De Drie Architectonische Pijlers voor het Schalen van een AI Native Platform
 
 <script type="application/ld+json">
 {

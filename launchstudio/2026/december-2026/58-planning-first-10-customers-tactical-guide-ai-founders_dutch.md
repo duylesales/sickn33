@@ -1,11 +1,12 @@
 ---
-Title: "Plannen van Uw Eerste 10 Klanten: Een Tactische Gids voor AI-Oprichters"
-Keywords: ai saas, build ai, ai native, ai prototype, LaunchStudio, Manifera
-Buyer Stage: Awareness
-Target Persona: AI-Native Founder (Non-Technical)
+Titel: "Uw Eerste 10 Betalende Klanten Vinden: Een Tactische Gids voor AI-Oprichters voor uw AI SaaS-Platform"
+Trefwoorden: ai saas, build ai, ai native, ai prototype, LaunchStudio, Manifera
+Koperfase: Bewustzijn
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Plannen van Uw Eerste 10 Klanten: Een Tactische Gids voor AI-Oprichters
+# Uw Eerste 10 Betalende Klanten Vinden: Een Tactische Gids voor AI-Oprichters voor uw AI SaaS-Platform
+
 
 <script type="application/ld+json">
 {

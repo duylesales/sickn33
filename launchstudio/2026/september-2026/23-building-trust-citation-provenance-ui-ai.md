@@ -1,5 +1,5 @@
 ---
-Title: Building Trust with Citation and Provenance UI in AI And Software Development
+Title: "Building Trust with Citation and Provenance UI in AI And Software Development"
 Keywords: ai and software development, ai saas, ai security, ai data security, ai vulnerabilities, build ai app, ai software engineering, ai native
 Buyer Stage: Consideration
 ---

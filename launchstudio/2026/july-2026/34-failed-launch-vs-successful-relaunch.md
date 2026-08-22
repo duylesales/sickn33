@@ -1,10 +1,10 @@
 ---
-Title: "A Tale of Two Launches: Why This AI SaaS Founder Had to Try Twice"
+Title: "How to Build AI App: A Tale of Two Launches: Why This AI SaaS Founder Had to Try Twice"
 Keywords: AI Secure, AI Vulnerabilities, AI Prototype, Build AI App, Row Level Security, Stripe Webhooks, LaunchStudio, Manifera, Herre Roelevink, Cursor
 Buyer Stage: Decision
 ---
 
-# A Tale of Two Launches: Why This AI SaaS Founder Had to Try Twice
+# How to Build AI App: A Tale of Two Launches: Why This AI SaaS Founder Had to Try Twice
 Building a product has never been easier; launching a business has never been more perilous. This is the true story of Marcus, a domain expert in real estate, who used an AI builder to create a revolutionary property management tool. His first launch was a catastrophic failure that nearly ended his company before it began. His second launch, two weeks later, put him on a trajectory toward $10k MRR. Here is exactly what went wrong under the hood, and the specific engineering work it took to fix it.
 
 ## Launch 1: The 'Big Bang' Disaster

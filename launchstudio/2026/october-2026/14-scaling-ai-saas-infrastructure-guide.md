@@ -1,5 +1,5 @@
 ---
-Title: Scaling Your AI SaaS from $10 to $1,000 MRR
+Title: "Scaling Your AI SaaS from $10 to $1,000 MRR"
 Keywords: AI saas, saas AI, LaunchStudio, Manifera, scaling, MVP, infrastructure
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)

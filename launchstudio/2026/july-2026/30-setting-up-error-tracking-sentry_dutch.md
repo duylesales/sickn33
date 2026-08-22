@@ -1,5 +1,5 @@
 ---
-Titel: Sentry Error Tracking instellen wanneer u een AI-app bouwt
+Titel: "Sentry Error Tracking instellen wanneer u een AI-app bouwt"
 Trefwoorden: For You AI, Error Tracking, Sentry, AI-app, Lancering
 Koperfase: beslissing
 ---

@@ -1,11 +1,11 @@
 ---
-Titel: "Een Zero-Trust Perimeter Inrichten Om Uw LLM AI Secure Te Houden"
+Titel: "Zero-Trust Boundary Architectuur: LLM-Applicaties AI Secure Houden"
 Trefwoorden: AI secure, AI beveiligen, security AI, AI security risk, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: CISO / Beveiligingsarchitect
 ---
 
-# Een Zero-Trust Perimeter Inrichten Om Uw LLM AI Secure Te Houden
+# Zero-Trust Boundary Architectuur: LLM-Applicaties AI Secure Houden
 
 <script type="application/ld+json">
 {

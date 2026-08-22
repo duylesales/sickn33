@@ -1,10 +1,10 @@
 ---
-Title: The Death of the Chatbot UI in the Best Of AI Products
+Title: "The Death of the Chatbot UI for Production AI SaaS"
 Keywords: ai native, ai frontend, user ai, ai websites, build app with ai, ai assist, ai saas, ai in saas
 Buyer Stage: Awareness
 ---
 
-# The Death of the Chatbot UI in the Best Of AI Products
+# The Death of the Chatbot UI for Production AI SaaS
 In 2023, every B2B SaaS company copy-pasted the ChatGPT UI into their application. They added a little "Sparkle" icon to the bottom right of the screen, opened a blank chat box, and expected their users to magically become prompt engineers. It failed. The engagement metrics on these embedded chatbots are abysmal, with many teams reporting single-digit weekly active usage among licensed seats. Enterprise users do not want to talk to their software; they want their software to do the work. The era of the blank chat box is over.
 
 ## The Cognitive Load of the Blank Page

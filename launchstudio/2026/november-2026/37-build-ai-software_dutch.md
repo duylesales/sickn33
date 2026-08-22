@@ -1,11 +1,11 @@
 ---
-Titel: "De Overstap van Prompt Engineering Naar Het Bouwen van AI-Software"
+Titel: "Hoe u Build AI Software Realiseert: Van Fragiele Prompts naar Stabiele Systemen"
 Trefwoorden: build AI software, build AI app, AI engineering, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: CTO / Senior Software Engineer
 ---
 
-# De Overstap van Prompt Engineering Naar Het Bouwen van AI-Software
+# Hoe u Build AI Software Realiseert: Van Fragiele Prompts naar Stabiele Systemen
 
 <script type="application/ld+json">
 {

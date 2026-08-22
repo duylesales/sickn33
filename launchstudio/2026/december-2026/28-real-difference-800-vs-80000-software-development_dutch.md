@@ -1,11 +1,11 @@
 ---
-Titel: "Het Echte Verschil Tussen €800 en €80.000 in Software-Ontwikkeling"
+Titel: "Het Echte Verschil Tussen €800 en €80.000 in Software-Ontwikkeling in AI en Softwareontwikkeling"
 Trefwoorden: ai software price, ai development, ai and software development, ai software developers, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Het Echte Verschil Tussen €800 en €80.000 in Software-Ontwikkeling
+# Het Echte Verschil Tussen €800 en €80.000 in Software-Ontwikkeling in AI en Softwareontwikkeling
 
 <script type="application/ld+json">
 {

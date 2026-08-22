@@ -1,11 +1,11 @@
 ---
-Titel: "Uw Lanceerplan voor 2027: Een Maand-voor-Maand Gids voor AI-Oprichters"
+Titel: "Uw Lanceerplan: Een Maand-voor-Maand Gids voor AI-Oprichters voor AI-Native Applicaties"
 Trefwoorden: ai native, ai prototype, build app with ai, ai development, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Uw Lanceerplan voor 2027: Een Maand-voor-Maand Gids voor AI-Oprichters
+# Uw Lanceerplan: Een Maand-voor-Maand Gids voor AI-Oprichters voor AI-Native Applicaties
 
 <script type="application/ld+json">
 {

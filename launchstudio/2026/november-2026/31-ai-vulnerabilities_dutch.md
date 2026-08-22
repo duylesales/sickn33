@@ -1,11 +1,11 @@
 ---
-Titel: "Verdedigen Tegen Prompt-Injectie En AI-Kwetsbaarheden"
+Titel: "Kritieke AI Vulnerabilities Voorkomen: Prompt Injection en SSRF Verdediging"
 Trefwoorden: AI kwetsbaarheden, AI beveiligingsrisico's, AI hack, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: CTO / Technische Oprichter
 ---
 
-# Verdedigen Tegen Prompt-Injectie En AI-Kwetsbaarheden
+# Kritieke AI Vulnerabilities Voorkomen: Prompt Injection en SSRF Verdediging
 
 <script type="application/ld+json">
 {

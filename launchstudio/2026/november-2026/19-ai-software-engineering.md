@@ -1,11 +1,11 @@
 ---
-Title: Applying Rigor to Code Generation with AI Software Engineering
+Title: "AI Software Engineering: Rigorous Testing and Verification for LLMs"
 Keywords: AI software engineering, AI and software engineering, AI in software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# Applying Rigor to Code Generation with AI Software Engineering
+# AI Software Engineering: Rigorous Testing and Verification for LLMs
 
 <script type="application/ld+json">
 {

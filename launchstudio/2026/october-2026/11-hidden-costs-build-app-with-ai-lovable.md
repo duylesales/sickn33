@@ -1,5 +1,5 @@
 ---
-Title: Hidden Costs When You Build App With AI
+Title: "Hidden Costs When You Build App With AI"
 Keywords: build app with AI, AI saas, LaunchStudio, Manifera, Lovable, Bolt, Cursor
 Buyer Stage: Awareness
 Target Persona: A (AI-Native Founder, Non-Technical)

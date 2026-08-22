@@ -1,11 +1,11 @@
 ---
-Title: "The Psychology of AI-Generated Content: Why Users Don't Trust It"
+Title: "The Psychology of AI-Generated Content: Why Users Don't Trust It with ai generated application"
 Keywords: ai generated application, ai websites, ai assist, user ai, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# The Psychology of AI-Generated Content: Why Users Don't Trust It
+# The Psychology of AI-Generated Content: Why Users Don't Trust It with ai generated application
 
 <script type="application/ld+json">
 {

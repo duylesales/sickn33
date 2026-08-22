@@ -1,11 +1,11 @@
 ---
-Titel: "De Complete Gids voor Stripe Betalingen in AI-Producten"
+Titel: "De Complete Gids voor Stripe Betalingen in AI-Producten voor uw AI SaaS-Platform"
 Trefwoorden: ai saas, ai deployment, ai development, ai software price, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# De Complete Gids voor Stripe Betalingen in AI-Producten
+# De Complete Gids voor Stripe Betalingen in AI-Producten voor uw AI SaaS-Platform
 
 <script type="application/ld+json">
 {

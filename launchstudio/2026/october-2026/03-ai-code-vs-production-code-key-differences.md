@@ -1,5 +1,5 @@
 ---
-Title: Transitioning AI To Code Projects into Production
+Title: "Transitioning AI To Code Projects into Production"
 Keywords: AI To Code, AI coding, AI code tool, AI software engineering, code with AI, LaunchStudio, Manifera, Herre Roelevink, Cursor, Lovable
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

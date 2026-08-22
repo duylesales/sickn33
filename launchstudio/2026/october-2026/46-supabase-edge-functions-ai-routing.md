@@ -1,5 +1,5 @@
 ---
-Title: How to Build App With AI and Secure It using Supabase
+Title: "How to Build App With AI and Secure It using Supabase"
 Keywords: Build App With AI, Supabase Edge Functions, LLM routing, AI security, custom backend, LaunchStudio, Manifera, API key security, Next.js, Deno
 Buyer Stage: Decision
 Target Persona: B (Technical Solo Founder)

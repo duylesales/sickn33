@@ -1,11 +1,11 @@
 ---
-Title: "AI-First vs Mobile-First: How Startup Architecture Has Changed"
+Title: "AI-First vs Mobile-First: How Startup Architecture Has Changed with ai first architecture"
 Keywords: AI first architecture, mobile first, startup architecture 2027, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# AI-First vs Mobile-First: How Startup Architecture Has Changed
+# AI-First vs Mobile-First: How Startup Architecture Has Changed with ai first architecture
 
 <script type="application/ld+json">
 {

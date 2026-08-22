@@ -1,10 +1,10 @@
 ---
-Title: How Generative AI Is Rewriting B2B Procurement
+Title: "How Generative AI Is Rewriting Enterprise B2B AI SaaS Procurement"
 Keywords: ai saas, ai software engineering, ai and software development, ai native, ai deployment, build ai app, ai secure
 Buyer Stage: Awareness
 ---
 
-# How Generative AI Is Rewriting B2B Procurement
+# How Generative AI Is Rewriting Enterprise B2B AI SaaS Procurement
 
 Much of the discourse around AI focuses on how software is built. However, a quieter and arguably more consequential revolution is happening in how software is *bought*. The enterprise procurement cycle — historically a grueling, six-month ordeal of spreadsheets, legal redlines, and 200-page Requests for Proposals (RFPs) — is being reshaped end to end by LLM agents sitting on both sides of the table. For B2B founders, you are no longer just selling to a VP of Procurement and a General Counsel. You are also, increasingly, selling to their AI evaluators, and those evaluators read your materials very differently than a human does.
 

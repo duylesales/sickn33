@@ -1,5 +1,5 @@
 ---
-Title: What Are Edge Functions in AI Software Development?
+Title: "What Are Edge Functions in AI Software Development?"
 Keywords: AI And Software Development, Functions
 Buyer Stage: Awareness
 ---

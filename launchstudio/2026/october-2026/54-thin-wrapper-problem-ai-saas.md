@@ -1,5 +1,5 @@
 ---
-Title: The Thin Wrapper Problem Failing AI SaaS Startups
+Title: "The Thin Wrapper Problem Failing AI SaaS Startups"
 Keywords: Thin wrapper, AI SaaS moat, custom data pipelines, RAG architecture, LaunchStudio, Manifera, B2B SaaS defensibility, OpenAI API
 Buyer Stage: Awareness
 Target Persona: A (AI-Native Founder, Non-Technical)

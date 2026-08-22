@@ -1,5 +1,5 @@
 ---
-Title: Escaping Vendor Lock-In in AI SaaS
+Title: "Escaping Vendor Lock-In in AI SaaS"
 Keywords: vendor lock-in, AI startup, cloud-agnostic, LLM routing, LaunchStudio, Manifera, OpenAI API, SaaS architecture, failover
 Buyer Stage: Awareness
 Target Persona: A (AI-Native Founder, Non-Technical)

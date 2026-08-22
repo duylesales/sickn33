@@ -1,10 +1,10 @@
 ---
-Titel: "Casestudy: Klantenservicekosten met 80% Verlagen via een AI RAG-Agent"
+Titel: "Case Study: Multi-Tenant RLS Implementeren om uw Zorg AI Database te Beveiligen"
 Trefwoorden: AI SaaS, AI deployment, AI security, AI kwetsbaarheden, build AI app, AI database, AI gebruiken voor code, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Casestudy: Klantenservicekosten met 80% Verlagen via een AI RAG-Agent
+# Case Study: Multi-Tenant RLS Implementeren om uw Zorg AI Database te Beveiligen
 
 Voor snelgroeiende technologiebedrijven is de klantenservice vaak het slachtoffer van het eigen commerciële succes. Hoe sneller het aantal actieve gebruikers groeit, hoe sneller de support-wachtrij ontploft — wat bedrijven dwingt om continu nieuwe eerstelijns supportmedewerkers aan te nemen om te voorkomen dat de reactietijden instorten. Deze casestudy beschrijft hoe LaunchStudio een Series B FinTech startup ("PayFlow") hielp deze lineaire kostenexplosie te doorbreken door een geavanceerde Retrieval-Augmented Generation (RAG) agent te implementeren, waarmee **62% van de supporttickets volledig autonoom werd opgelost** en jaarlijks **$ 800.000 aan loonkosten werd bespaard**.
 

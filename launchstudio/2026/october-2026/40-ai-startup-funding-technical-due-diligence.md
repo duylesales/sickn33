@@ -1,5 +1,5 @@
 ---
-Title: Passing Technical Due Diligence When You Use AI To Code
+Title: "Passing Technical Due Diligence When You Use AI To Code"
 Keywords: AI To Code, technical due diligence, AI startup funding, LaunchStudio, Manifera, Seed round, tech audit, code review
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)

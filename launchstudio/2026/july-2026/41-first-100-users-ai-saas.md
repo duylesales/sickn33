@@ -1,5 +1,5 @@
 ---
-Title: How to Get the First 100 Paying Users for Your AI SaaS
+Title: "How to Get the First 100 Paying Users for Your AI SaaS"
 Keywords: First, Paying, Users
 Buyer Stage: Consideration
 ---

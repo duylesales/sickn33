@@ -1,5 +1,5 @@
 ---
-Title: Adding Stripe Payments Securely Using AI To Code
+Title: "Adding Stripe Payments Securely Using AI To Code"
 Keywords: AI To Code, AI deployment, build app with AI, AI saas, Stripe payments, LaunchStudio, Manifera, Lovable, Bolt
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)

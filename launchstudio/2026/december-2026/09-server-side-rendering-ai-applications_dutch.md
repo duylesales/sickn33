@@ -1,11 +1,11 @@
 ---
-Titel: "De Terugkeer van Server-Side Rendering in AI-Applicaties"
+Titel: "De Terugkeer van Server-Side Rendering in AI-Applicaties met server side rendering ai"
 Trefwoorden: server side rendering AI, ssr nextjs, AI application performance, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Terugkeer van Server-Side Rendering in AI-Applicaties
+# De Terugkeer van Server-Side Rendering in AI-Applicaties met server side rendering ai
 
 <script type="application/ld+json">
 {

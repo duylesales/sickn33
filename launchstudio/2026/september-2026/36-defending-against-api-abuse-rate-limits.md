@@ -1,10 +1,10 @@
 ---
-Title: Defending Against Abuse When You Combine AI And Api
+Title: "Defending Against Abuse: Hardening Enterprise AI Data Security"
 Keywords: ai secure, security ai, ai security issues, ai security risk, ai vulnerabilities, ai security vulnerabilities, ai data security
 Buyer Stage: Awareness
 ---
 
-# Defending Against Abuse When You Combine AI And Api
+# Defending Against Abuse: Hardening Enterprise AI Data Security
 If you build an unprotected endpoint that connects to an LLM, the internet will find it, and they will drain it. Malicious actors operate massive bot networks specifically designed to hunt down new AI SaaS applications and siphon off their OpenAI API keys. If your backend architecture assumes every user is acting in good faith, you are vulnerable to a catastrophic "Denial of Wallet" attack. This isn't a hypothetical edge case: roughly 45% of AI-generated code ships with security vulnerabilities, and unprotected AI endpoints are one of the most common and most expensive of them. Here is how to lock down your AI infrastructure.
 
 ## The Denial of Wallet Attack

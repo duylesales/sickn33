@@ -1,11 +1,11 @@
 ---
-Title: "Supabase vs Firebase vs PlanetScale: The 2027 Database Decision"
+Title: "Supabase vs Firebase vs PlanetScale: The 2027 Database Decision for Your Production AI Database"
 Keywords: ai database, ai in database, ai for db, ai development, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# Supabase vs Firebase vs PlanetScale: The 2027 Database Decision
+# Supabase vs Firebase vs PlanetScale: The 2027 Database Decision for Your Production AI Database
 
 <script type="application/ld+json">
 {

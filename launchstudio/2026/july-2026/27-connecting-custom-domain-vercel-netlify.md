@@ -1,5 +1,5 @@
 ---
-Title: Connecting a Custom Domain to the AI App You Build
+Title: "Connecting a Custom Domain to the AI App You Build"
 Keywords: AI To Code, Connecting, Custom, Domain, Vercel, Netlify
 Buyer Stage: Awareness
 ---

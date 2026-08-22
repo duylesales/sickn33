@@ -1,10 +1,10 @@
 ---
-Title: Writing Terms of Service for Generative AI Apps
+Title: "Drafting Enterprise Terms of Service for Generative AI SaaS Applications"
 Keywords: ai security issues, ai privacy issues, generative ai, ai saas, ai and software development, ai vulnerabilities, ai native
 Buyer Stage: Awareness
 ---
 
-# Writing Terms of Service for Generative AI Apps
+# Drafting Enterprise Terms of Service for Generative AI SaaS Applications
 
 For most bootstrapped founders, the Terms of Service (ToS) is a copied-and-pasted afterthought — grab a template from a SaaS boilerplate, swap the company name, ship it. In traditional SaaS, this is risky. In Generative AI, it is catastrophic. AI introduces novel legal liabilities that a 2019-era SaaS template was never written to address: hallucinations causing real financial or reputational damage, generation of illegal or non-consensual content, and copyright ambiguity over who owns what the model produces. Your ToS is your only shield against all three, and it needs to be architected specifically for how your product actually behaves — not lifted wholesale from a competitor.
 

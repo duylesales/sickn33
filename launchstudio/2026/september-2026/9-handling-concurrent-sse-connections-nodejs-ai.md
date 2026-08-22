@@ -1,10 +1,10 @@
 ---
-Title: Handling 10k Concurrent SSE Connections for AI In Software Engineering
+Title: "Ai in saas: Handling 10k Concurrent SSE Connections for AI"
 Keywords: ai in saas, ai deployment, ai native, build ai app, ai code development, ai infrastructure, code with ai, ai software engineering
 Buyer Stage: Awareness
 ---
 
-# Handling 10k Concurrent SSE Connections for AI In Software Engineering
+# Ai in saas: Handling 10k Concurrent SSE Connections for AI
 To build a B2B AI product that feels magical, you must stream the LLM response word-by-word to the user interface using Server-Sent Events (SSE). This "typewriter effect" proves the system is working and drops perceived latency to near zero. However, architecturally, SSE is a ticking time bomb. Holding thousands of long-lived HTTP connections open simultaneously will exhaust your Node.js server's memory and connection pools, causing catastrophic crashes during traffic spikes. Most founders shipping a Bolt, Lovable, or Cursor prototype never test this path past a handful of concurrent users — which is exactly when it breaks in front of a real customer.
 
 ## The Connection Pool Exhaustion Problem

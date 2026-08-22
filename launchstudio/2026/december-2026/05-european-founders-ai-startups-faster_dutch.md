@@ -1,11 +1,11 @@
 ---
-Titel: "Waarom Europese Oprichters Sneller AI-Startups Bouwen dan Silicon Valley"
+Titel: "Waarom Europese Oprichters Sneller AI-Startups Bouwen dan Silicon Valley met european ai startups"
 Trefwoorden: european AI startups, eu founders, AI startup speed, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Waarom Europese Oprichters Sneller AI-Startups Bouwen dan Silicon Valley
+# Waarom Europese Oprichters Sneller AI-Startups Bouwen dan Silicon Valley met european ai startups
 
 <script type="application/ld+json">
 {

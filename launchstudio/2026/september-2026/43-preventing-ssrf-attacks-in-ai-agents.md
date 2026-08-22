@@ -1,10 +1,10 @@
 ---
-Title: Preventing Server-Side Request Forgery in Agents for AI In Software Engineering
+Title: "Preventing Server-Side Request Forgery in Agents for AI in Production AI Deployment"
 Keywords: ai security risk, ai vulnerabilities, ai security vulnerabilities, ai deployment, ai native, ai and security, build ai app
 Buyer Stage: Consideration
 ---
 
-# Preventing Server-Side Request Forgery in Agents for AI In Software Engineering
+# Preventing Server-Side Request Forgery in Agents for AI in Production AI Deployment
 Building an autonomous AI agent is easy; securing it is incredibly difficult. When you grant an LLM the ability to interact with the outside world via tools (like a "Web Browser" or "URL Fetcher"), you are handing over the keys to your server's network layer. If you do not explicitly sandbox these tools, hackers will use your helpful AI assistant to execute a catastrophic **Server-Side Request Forgery (SSRF)** attack, breaching your internal cloud infrastructure. This is exactly the class of vulnerability that shows up when AI-generated scaffolding gets shipped without a security pass — one widely cited estimate puts the share of AI-generated code containing exploitable flaws at around 45%, and tool-calling agents are a disproportionate share of that number because the attack surface is the entire internal network, not just a form field.
 
 ## The SSRF Vulnerability Explained

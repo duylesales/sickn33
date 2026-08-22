@@ -1,11 +1,11 @@
 ---
-Title: Architecture Decisions to Build AI Apps That Last
+Title: "How to Build AI Applications: The 2026 Solo Founder Tech Stack"
 Keywords: build AI, build AI app, build app with AI, build an app with AI, build app AI, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# Architecture Decisions to Build AI Apps That Last
+# How to Build AI Applications: The 2026 Solo Founder Tech Stack
 
 <script type="application/ld+json">
 {

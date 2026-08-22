@@ -1,10 +1,10 @@
 ---
-Titel: "Server-Side Request Forgery Voorkomen in AI-Agenten voor Software Engineering"
+Titel: "Server-Side Request Forgery Voorkomen in AI-Agenten in Productie AI Deployment"
 Trefwoorden: AI security risk, AI vulnerabilities, AI security vulnerabilities, AI deployment, AI-native, AI and security, build AI app, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Server-Side Request Forgery Voorkomen in AI-Agenten voor Software Engineering
+# Server-Side Request Forgery Voorkomen in AI-Agenten in Productie AI Deployment
 
 Het bouwen van een autonome AI-agent is tegenwoordig eenvoudig; het waterdicht beveiligen van diezelfde agent is echter buitengewoon complex en uitdagend. Wanneer u een Large Language Model de mogelijkheid geeft om via backend-tools autonoom te communiceren met de buitenwereld (zoals een tool voor "Web Search", "URL Fetching" of "Browser Automation"), overhandigt u in feite de sleutels van de netwerklaag van uw cloudserver aan een probabilistisch neuraal netwerk. Als u deze tools niet expliciet in een geïsoleerde sandbox plaatst, zullen hackers uw behulpzame AI-assistent manipuleren om een verwoestende **Server-Side Request Forgery (SSRF)** aanval uit te voeren, waarmee uw complete interne cloudinfrastructuur wordt gecompromitteerd. Dit is exact de categorie beveiligingskwetsbaarheden die optreedt wanneer met AI gegenereerde code zonder grondige security-audit naar productie wordt gepusht — circa 45% van de AI-gegenereerde code bevat exploiteerbare kwetsbaarheden, en tool-calling agenten vormen daarin het grootste risico omdat het aanvalsoppervlak uw gehele interne netwerk omvat.
 

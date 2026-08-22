@@ -1,11 +1,11 @@
 ---
-Title: Why Subscriptions are Shifting to Outcome-Based Pricing for SaaS AI
+Title: "Outcome-Based Monetization and Unit Economics for Modern SaaS AI"
 Keywords: saas AI, AI saas, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: SaaS Founder / CEO
 ---
 
-# Why Subscriptions are Shifting to Outcome-Based Pricing for SaaS AI
+# Outcome-Based Monetization and Unit Economics for Modern SaaS AI
 
 <script type="application/ld+json">
 {

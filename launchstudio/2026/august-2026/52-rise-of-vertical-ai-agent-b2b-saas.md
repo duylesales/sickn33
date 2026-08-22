@@ -1,10 +1,10 @@
 ---
-Title: The Rise of the Vertical AI Agent in B2B SaaS
+Title: "Case Study: Scaling an AI Legal Assistant on an AI SaaS Platform to 50k DAU"
 Keywords: ai saas, ai saas platform, ai in saas, build ai app, ai native, ai software engineering, ai prototype
 Buyer Stage: Awareness
 ---
 
-# The Rise of the Vertical AI Agent in B2B SaaS
+# Case Study: Scaling an AI Legal Assistant on an AI SaaS Platform to 50k DAU
 
 When OpenAI launched ChatGPT, it created the ultimate "Horizontal" tool — an omniscient assistant that could help a high school student write an essay or help a developer write Python. However, as the initial novelty fades, enterprises are realizing that a generalist tool is not enough to run a business. A hospital does not need a chatbot that writes poetry; it needs a hyper-specialized system to process medical billing. Welcome to the era of the **Vertical AI Agent** — and the reason it is quickly becoming the dominant architecture pattern in B2B SaaS.
 

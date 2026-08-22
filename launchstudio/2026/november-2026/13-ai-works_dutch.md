@@ -1,11 +1,11 @@
 ---
-Titel: "Wat Oprichters Moeten Weten Over Hoe AI Aan De Backend Werkt"
+Titel: "Hoe Productie AI Werkt: Een Architectuurgids voor Product Managers"
 Trefwoorden: AI werking, AI in app, app met AI, gratis AI app, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Wat Oprichters Moeten Weten Over Hoe AI Aan De Backend Werkt
+# Hoe Productie AI Werkt: Een Architectuurgids voor Product Managers
 
 <script type="application/ld+json">
 {

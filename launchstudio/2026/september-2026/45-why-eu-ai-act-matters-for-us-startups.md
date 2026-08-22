@@ -1,10 +1,10 @@
 ---
-Title: Why the EU AI Act Matters for US Startups Using AI For Coding
+Title: "Why the EU AI Act Matters for US Startups Using AI For Coding for Your AI SaaS Platform"
 Keywords: ai secure, security ai, ai security issues, ai security risk, ai and software development, ai saas platform, ai deployment, ai native
 Buyer Stage: Awareness
 ---
 
-# Why the EU AI Act Matters for US Startups Using AI For Coding
+# Why the EU AI Act Matters for US Startups Using AI For Coding for Your AI SaaS Platform
 Many US-based founders view European regulations as somebody else's problem. They assume their Silicon Valley SaaS, vibe-coded overnight with an AI code tool and shipped to Vercel before breakfast, is exempt from the bureaucratic reach of Brussels. This assumption is mathematically dangerous. The **EU AI Act** has "extraterritorial effect"—if a single user from Berlin logs into your AI application, or if the *output* of your system is used by someone in the EU, you are subject to the law. With fines reaching up to 7% of global turnover (or €35 million, whichever is higher), understanding the EU AI Act is mandatory for survival, not a compliance nice-to-have you'll "get to later."
 
 The Act entered into force on August 1, 2024, but it phases in over three years. Prohibited-practice bans became enforceable on February 2, 2025. Obligations for General-Purpose AI (GPAI) models—the foundation models like GPT-4o, Claude, and Gemini that most AI-native startups build on top of—became enforceable on August 2, 2025. The heaviest obligations, covering High-Risk systems, land on August 2, 2026. If your startup is fundraising or closing enterprise deals in the next 18 months, this timeline is not abstract; it is your product roadmap.

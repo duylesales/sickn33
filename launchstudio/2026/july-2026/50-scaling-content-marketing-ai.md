@@ -1,5 +1,5 @@
 ---
-Title: Scaling Content Marketing for Apps You Code with AI
+Title: "Scaling Content Marketing for Apps You Code with AI"
 Keywords: Code With AI, AI To Code, AI Coding, AI Native, AI SaaS, Build App With AI
 Buyer Stage: Awareness
 ---

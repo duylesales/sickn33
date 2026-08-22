@@ -1,5 +1,5 @@
 ---
-Title: Why Supabase is the Perfect AI Database for AI-Native Founders
+Title: "Why Supabase is the Perfect AI Database for AI-Native Founders"
 Keywords: AI For Coding, Supabase, Database, Choice, AINative, Founders
 Buyer Stage: Awareness
 ---

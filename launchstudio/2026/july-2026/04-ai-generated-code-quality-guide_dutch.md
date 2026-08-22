@@ -1,5 +1,5 @@
 ---
-Titel: De complete gids voor de kwaliteit van AI-gegenereerde code
+Titel: "De complete gids voor de kwaliteit van AI-gegenereerde code"
 Trefwoorden: AI To Code, AI Code Development, Kwaliteit, Gids, AI-gegenereerd
 Koperfase: overweging
 ---

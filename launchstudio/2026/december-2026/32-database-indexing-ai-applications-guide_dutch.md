@@ -1,11 +1,11 @@
 ---
-Titel: "Database Indexing voor AI-Applicaties: Een Praktische Gids"
+Titel: "Database Indexing voor AI-Applicaties: Een Praktische Gids in Productie AI Deployment"
 Trefwoorden: ai database, ai in database, ai for db, ai deployment, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Database Indexing voor AI-Applicaties: Een Praktische Gids
+# Database Indexing voor AI-Applicaties: Een Praktische Gids in Productie AI Deployment
 
 <script type="application/ld+json">
 {

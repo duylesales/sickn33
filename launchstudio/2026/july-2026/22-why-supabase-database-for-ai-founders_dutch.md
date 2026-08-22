@@ -1,5 +1,5 @@
 ---
-Titel: Waarom Supabase de perfecte AI-database is voor AI-native oprichters
+Titel: "Waarom Supabase de perfecte AI-database is voor AI-native oprichters"
 Trefwoorden: AI For Coding, Supabase, Database, AI-native Founder
 Koperfase: Bewustzijn
 ---

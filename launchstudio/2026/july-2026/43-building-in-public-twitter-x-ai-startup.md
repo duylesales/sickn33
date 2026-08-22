@@ -1,10 +1,10 @@
 ---
-Title: "Building in Public: Using Twitter to Launch and Build AI Software"
+Title: "Building in Public: Using Twitter to Launch and Build AI Software in AI Native Applications"
 Keywords: Use AI To Generate Code, Build App With AI, AI Prototype, AI Development, Build An App With AI, AI Native
 Buyer Stage: Consideration
 ---
 
-# Building in Public: Using Twitter to Launch and Build AI Software
+# Building in Public: Using Twitter to Launch and Build AI Software in AI Native Applications
 
 If you build a SaaS product in a vacuum, launch it on a Tuesday, and expect the world to care, you will be met with deafening silence. The modern playbook for solo founders requires you to build an audience simultaneously with your product. The most effective framework for doing this is "Building in Public" (BIP) on Twitter/X — the same approach that turned Pieter Levels' Nomad List into a seven-figure business and Marc Lou's ShipFast into one of the best-known boilerplates in the indie hacker world, both grown almost entirely through public, unfiltered posting rather than paid ads. Here is how to use radical transparency to generate a waitlist before you write a single line of code.
 

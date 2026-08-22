@@ -1,10 +1,10 @@
 ---
-Titel: De Juiste KPI's Monitoren voor Generatieve AI SaaS
+Titel: "Customer Health Scoring Inrichten voor uw AI SaaS-Platform Abonnementen"
 Trefwoorden: AI SaaS, SaaS AI, AI SaaS platform, AI in SaaS, AI-native, AI software engineering, app bouwen met AI, AI deployment, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# De Juiste KPI's Monitoren voor Generatieve AI SaaS
+# Customer Health Scoring Inrichten voor uw AI SaaS-Platform Abonnementen
 
 In traditionele SaaS is een explosieve toename van dagelijks actieve gebruikers (DAU) reden voor een feestje. Als u echter een generatieve AI-startup leidt, kan een plotselinge, ongecontroleerde piek in intensief gebruik betekenen dat u dagelijks duizenden euro's verliest aan variabele API-kosten. De unit economics van AI vereisen een volstrekt nieuwe set Key Performance Indicators (KPI's). Wie uitsluitend stuurt op MRR (maandelijks terugkerende omzet) en gebruikersaantallen, stuurt blind.
 

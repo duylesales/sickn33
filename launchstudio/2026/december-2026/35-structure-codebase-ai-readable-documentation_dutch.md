@@ -1,11 +1,12 @@
 ---
-Title: "Uw Codebase Structureren voor AI-Leesbare Documentatie"
-Keywords: ai code development, ai native, code with ai, ai code tool, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: Technical Solo Founder / Indie Hacker
+Titel: "Hoe U Uw Codebase Structureert voor AI-Leesbare Documentatie voor AI-Native Applicaties"
+Trefwoorden: ai code development, ai native, code with ai, ai code tool, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Uw Codebase Structureren voor AI-Leesbare Documentatie
+# Hoe U Uw Codebase Structureert voor AI-Leesbare Documentatie voor AI-Native Applicaties
+
 
 <script type="application/ld+json">
 {

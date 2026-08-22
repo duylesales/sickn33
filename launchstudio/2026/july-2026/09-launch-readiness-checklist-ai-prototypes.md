@@ -1,5 +1,5 @@
 ---
-Title: The 20-Point Launch Readiness Checklist for AI Prototypes
+Title: "The 20-Point Launch Readiness Checklist for AI Prototypes"
 Keywords: Point, Launch, Readiness, Checklist, Prototypes
 Buyer Stage: Decision
 ---

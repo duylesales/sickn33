@@ -1,10 +1,10 @@
 ---
-Titel: "De Opkomst van de Verticale AI-Agent in B2B SaaS"
+Titel: "Case Study: Een Juridische AI-Assistent Schalen op een AI SaaS-Platform naar 50k DAU"
 Trefwoorden: AI SaaS, AI SaaS platform, AI in SaaS, build AI app, AI-native, AI software engineering, AI prototype, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# De Opkomst van de Verticale AI-Agent in B2B SaaS
+# Case Study: Een Juridische AI-Assistent Schalen op een AI SaaS-Platform naar 50k DAU
 
 Toen OpenAI ChatGPT lanceerde, creëerde het de ultieme "Horizontale" tool — een alwetende generieke assistent die zowel een scholier kan helpen met het schrijven van een essay als een softwareontwikkelaar met het genereren van Python-code. Nu de eerste nieuwigheid bezinkt, realiseren enterprise-bedrijven zich dat een algemene tool simpelweg onvoldoende is om complexe bedrijfsprocessen aan te sturen. Een ziekenhuis heeft geen behoefte aan een chatbot die gedichten schrijft; het vereist een hyper-gespecialiseerd systeem dat medische facturatie en declaraties autonoom verwerkt. Welkom in het tijdperk van de **Verticale AI-Agent (Vertical AI Agent)** — en de reden waarom dit snel het dominante architectuurpatroon in B2B SaaS wordt.
 

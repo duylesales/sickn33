@@ -1,11 +1,12 @@
 ---
-Title: Waarom Traditioneel Agile Vastloopt in Software Engineering voor AI
-Keywords: software engineering for AI, AI software engineering, LaunchStudio, Manifera
-Buyer Stage: Decision
-Target Persona: VP of Engineering / CTO
+Titel: "Software Engineering for AI: Gids voor Evaluation-Driven Development"
+Trefwoorden: software engineering voor AI, AI software engineering, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelpersona: VP of Engineering / CTO
 ---
 
-# Waarom Traditioneel Agile Vastloopt in Software Engineering voor AI
+# Software Engineering for AI: Gids voor Evaluation-Driven Development
+
 
 <script type="application/ld+json">
 {

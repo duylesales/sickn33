@@ -1,11 +1,11 @@
 ---
-Titel: "Het Kopen vs. Bouwen Dilemma in Enterprise Software om Build AI Te Realiseren"
+Titel: "Het Enterprise Kopen vs Bouwen Kader: Strategische Keuzes om Build AI te Realiseren"
 Trefwoorden: build AI, AI bouwen, AI software bouwen, build AI software, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: CTO / VP of Engineering
 ---
 
-# Het Kopen vs. Bouwen Dilemma in Enterprise Software om Build AI Te Realiseren
+# Het Enterprise Kopen vs Bouwen Kader: Strategische Keuzes om Build AI te Realiseren
 
 <script type="application/ld+json">
 {

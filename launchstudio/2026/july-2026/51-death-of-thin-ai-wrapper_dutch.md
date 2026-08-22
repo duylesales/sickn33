@@ -117,3 +117,53 @@ RAG doorzoekt veilig de privé-vectordatabase van een bedrijf en stuurt die cont
 ### Is Manifera hetzelfde bedrijf als LaunchStudio, of een aparte leverancier waarmee ik moet afstemmen?
 
 Manifera is het moederbedrijf op het gebied van engineering, opgericht in 2014, en LaunchStudio is de geproductiseerde dienst daarvan voor AI-native oprichters. Er is geen aparte leverancier om mee af te stemmen: wanneer een thick-wrapper-project meer diepgaande RAG-architectuur of beveiligingswerk op bedrijfsniveau vereist dan een LaunchStudio-pakket met vaste scope dekt, wordt dit afgehandeld door dezelfde engineeringteams van Manifera, vanuit dezelfde kantoren in Amsterdam, Singapore en Ho Chi Minh City, zonder overdracht naar een ander bedrijf.
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het belangrijkste voordeel van deze aanpak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het stelt oprichters en engineeringteams in staat om snel schaalbare en veilige AI-oplossingen te leveren met minimale overhead en maximale betrouwbaarheid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe waarborgt u de beveiliging en compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door direct bij de lancering strikte Row Level Security, API-sleutelbeveiliging en zero-trust encryptie te implementeren conform de industrienormen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan een MVP worden omgezet naar een enterprise-ready product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Met de juiste architectuur en gestandaardiseerde pipelines kan een prototype doorgaans binnen 1 tot 2 weken volledig productierijp worden gemaakt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke kosten zijn verbonden aan het schalen van de infrastructuur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door gebruik te maken van geoptimaliseerde serverless componenten en semantische caching blijven de operationele kosten lineair en voorspelbaar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe integreert dit met bestaande systemen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Via gestandaardiseerde REST/GraphQL API-routes en webhooks kan de AI-functionaliteit naadloos worden gekoppeld aan elk modern software-ecosysteem."
+      }
+    }
+  ]
+}
+</script>

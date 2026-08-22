@@ -1,10 +1,10 @@
 ---
-Titel: "De Product-Led Sales Motion voor AI SaaS-Startups"
+Titel: "Product-Led Sales voor AI SaaS-Platform: Gratis Gebruikers Converteren naar Enterprise"
 Trefwoorden: AI SaaS, SaaS AI, AI SaaS platform, AI in SaaS, AI-native, app bouwen met AI, AI software engineering, AI en softwareontwikkeling, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# De Product-Led Sales Motion voor AI SaaS-Startups
+# Product-Led Sales voor AI SaaS-Platform: Gratis Gebruikers Converteren naar Enterprise
 
 Oprichters zijn vaak geobsedeerd door Product-Led Growth (PLG) — de droom om een softwareproduct te bouwen dat zo intuïtief en waardevol is dat duizenden gebruikers zichzelf registreren en betalen terwijl de oprichter slaapt. Maar puur self-service PLG kent een hard omzetplafond. Een multinational of Fortune 500-bedrijf koopt simpelweg geen 1.000 softwarelicenties via een creditcard-checkout op een landingspagina, ongeacht hoe soepel uw Stripe-koppeling is ingericht. Om door te breken naar € 1M+ ARR moet u een proactief salesteam toevoegen bovenop uw self-service instroom. Dit is de **Product-Led Sales (PLS)** methodiek.
 

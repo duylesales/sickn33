@@ -1,11 +1,11 @@
 ---
-Title: AI Website Laten Bouwen Die Bezoekers Omzet in Betalende Klanten
-Keywords: AI websites, AI best website, AI best websites, websites for AI, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: AI-Native Founder (Non-Technical)
+Titel: "Hoog Converteerbare AI Websites: Architectuur, Snelheid en Conversie"
+Trefwoorden: AI websites, AI best website, AI best websites, websites for AI, LaunchStudio, Manifera
+Koperfase: Overweging
 ---
 
-# AI Website Laten Bouwen Die Bezoekers Omzet in Betalende Klanten
+# Hoog Converteerbare AI Websites: Architectuur, Snelheid en Conversie
+
 
 <script type="application/ld+json">
 {

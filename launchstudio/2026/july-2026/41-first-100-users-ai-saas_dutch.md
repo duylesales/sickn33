@@ -1,5 +1,5 @@
 ---
-Titel: Hoe u de eerste 100 betalende gebruikers voor uw AI SaaS krijgt
+Titel: "Hoe u de eerste 100 betalende gebruikers voor uw AI SaaS krijgt"
 Trefwoorden: AI SaaS, First 100 Users, Betalende Gebruikers, Growth
 Koperfase: overweging
 ---

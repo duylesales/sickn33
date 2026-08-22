@@ -1,11 +1,11 @@
 ---
-Titel: "PostgreSQL En Vectormodellen Architectureren Met AI Voor Databases"
+Titel: "PostgreSQL en Vector Search Optimaliseren met AI for DB Architectuur"
 Trefwoorden: AI voor database, AI in database, AI database architectuur, vector database, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Oprichter / CTO
 ---
 
-# PostgreSQL En Vectormodellen Architectureren Met AI Voor Databases
+# PostgreSQL en Vector Search Optimaliseren met AI for DB Architectuur
 
 <script type="application/ld+json">
 {

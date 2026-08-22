@@ -1,5 +1,5 @@
 ---
-Titel: 10 dingen die AI-bouwers niet kunnen doen voor uw startup
+Titel: "10 dingen die AI-bouwers niet kunnen doen voor uw startup"
 Trefwoorden: AI For Coding, AI Builders, Startup, Beperkingen
 Koperfase: Bewustzijn
 ---

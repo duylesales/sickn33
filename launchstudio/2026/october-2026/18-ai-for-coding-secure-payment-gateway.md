@@ -1,5 +1,5 @@
 ---
-Title: Why AI For Coding Fails at Secure Payment Gateways
+Title: "Why AI For Coding Fails at Secure Payment Gateways"
 Keywords: AI for coding, AI code tool, LaunchStudio, Manifera, Stripe, payments, SaaS, webhooks
 Buyer Stage: Consideration
 Target Persona: A (AI-Native Founder, Non-Technical)

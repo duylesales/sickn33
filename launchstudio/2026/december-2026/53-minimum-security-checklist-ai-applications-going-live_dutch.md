@@ -1,11 +1,12 @@
 ---
-Title: "De Minimale Beveiligings-Checklist voor AI-Applicaties Die Live Gaan"
-Keywords: ai secure, security ai, ai security issues, ai vulnerabilities, LaunchStudio, Manifera
-Buyer Stage: Decision
-Target Persona: Technical Solo Founder / Indie Hacker
+Titel: "De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan met ai vulnerabilities"
+Trefwoorden: ai secure, security ai, ai security issues, ai vulnerabilities, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# De Minimale Beveiligings-Checklist voor AI-Applicaties Die Live Gaan
+# De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan met ai vulnerabilities
+
 
 <script type="application/ld+json">
 {

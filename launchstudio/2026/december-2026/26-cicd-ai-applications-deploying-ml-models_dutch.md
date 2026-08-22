@@ -1,11 +1,11 @@
 ---
-Titel: "CI/CD voor AI-Applicaties: Wat Er Anders Is aan het Uitrollen van ML-Modellen"
+Titel: "CI/CD voor AI-Applicaties: Wat Er Anders Is aan het Uitrollen van ML-Modellen in Productie AI Deployment"
 Trefwoorden: ai deployment, deployment of ai, ai development, ai for development, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# CI/CD voor AI-Applicaties: Wat Er Anders Is aan het Uitrollen van ML-Modellen
+# CI/CD voor AI-Applicaties: Wat Er Anders Is aan het Uitrollen van ML-Modellen in Productie AI Deployment
 
 <script type="application/ld+json">
 {

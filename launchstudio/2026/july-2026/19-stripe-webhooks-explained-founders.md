@@ -1,5 +1,5 @@
 ---
-Title: Stripe Webhooks Explained for Founders Using AI for Coding
+Title: "Stripe Webhooks Explained for Founders Using AI for Coding"
 Keywords: AI For Coding, Stripe, Webhooks, Explained, NonTechnical, Founders
 Buyer Stage: Awareness
 ---

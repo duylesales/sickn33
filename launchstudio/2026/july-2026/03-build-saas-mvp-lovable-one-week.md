@@ -1,5 +1,5 @@
 ---
-Title: How to Build a SaaS MVP with Lovable in Under a Week
+Title: "How to Build a SaaS MVP with Lovable in Under a Week"
 Keywords: Build App With AI, Build, Lovable, Under a week, SaaS MVP, LaunchStudio, Manifera, Herre Roelevink, Software Development
 Buyer Stage: Consideration
 ---

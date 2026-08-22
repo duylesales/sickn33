@@ -1,5 +1,5 @@
 ---
-Title: Surviving Technical Debt with AI In Software Engineering
+Title: "Surviving Technical Debt with AI In Software Engineering"
 Keywords: AI In Software Engineering, technical debt, AI MVP, scale-up, LaunchStudio, Manifera, legacy code, software refactoring, tech debt
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)

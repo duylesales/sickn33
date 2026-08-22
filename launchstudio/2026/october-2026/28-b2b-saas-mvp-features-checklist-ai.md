@@ -1,5 +1,5 @@
 ---
-Title: B2B SaaS MVP Features Checklist When Using AI For Coding
+Title: "B2B SaaS MVP Features Checklist When Using AI For Coding"
 Keywords: AI For Coding, b2b saas mvp, b2b saas, LaunchStudio, Manifera, AI app, MVP features
 Buyer Stage: Consideration
 Target Persona: B (Technical Solo Founder)

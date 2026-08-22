@@ -1,5 +1,5 @@
 ---
-Title: The True Cost of High Latency for B2B AI In Saas
+Title: "The True Cost of High Latency for B2B AI In Saas"
 Keywords: ai saas, ai saas platform, ai in saas, ai deployment, ai native, ai software engineering, software ai
 Buyer Stage: Awareness
 ---

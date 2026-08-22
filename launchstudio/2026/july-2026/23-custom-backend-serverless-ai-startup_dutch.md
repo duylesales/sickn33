@@ -1,5 +1,5 @@
 ---
-Titel: Heb je een aangepaste backend nodig voor AI-ontwikkeling?
+Titel: "Heb je een aangepaste backend nodig voor AI-ontwikkeling?"
 Trefwoorden: AI For Coding, Custom Backend, Serverless, AI Startup
 Koperfase: Bewustzijn
 ---

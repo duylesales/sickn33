@@ -1,11 +1,11 @@
 ---
-Title: "How to Build a Product Roadmap When Your Core Technology Changes Monthly"
+Title: "How to Build a Product Roadmap When Your Core Technology Changes Monthly for AI Native Applications"
 Keywords: ai native, ai development, all ai tools, ai and software engineering, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: SaaS Founder Scale-Up
 ---
 
-# How to Build a Product Roadmap When Your Core Technology Changes Monthly
+# How to Build a Product Roadmap When Your Core Technology Changes Monthly for AI Native Applications
 
 <script type="application/ld+json">
 {

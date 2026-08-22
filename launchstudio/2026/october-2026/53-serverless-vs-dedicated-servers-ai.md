@@ -1,5 +1,5 @@
 ---
-Title: Serverless Tax and Cost Optimization for AI SaaS
+Title: "Serverless Tax and Cost Optimization for AI SaaS"
 Keywords: Cost optimization, serverless architecture, dedicated servers, AI inference, AWS EC2, Vercel costs, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: D (SaaS Founder Scale-Up)

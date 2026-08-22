@@ -1,10 +1,10 @@
 ---
-Title: Building Custom Agents with Day AI Technologies
+Title: "Building Custom Agents with Day AI Technologies in Modern AI Code Development"
 Keywords: build ai app, ai app dev, ai prototype, prototype ai, ai development, dev ai, build an app with ai, ai code development
 Buyer Stage: Consideration
 ---
 
-# Building Custom Agents with Day AI Technologies
+# Building Custom Agents with Day AI Technologies in Modern AI Code Development
 The tech industry throws the word "Agent" around loosely. A chatbot that generates an email is not an Agent. An Agent is an autonomous system capable of reasoning through a complex goal, executing multiple sequential actions via APIs, and course-correcting if a step fails. While many founders rely on heavy frameworks like LangChain to build Agents, the underlying architecture is surprisingly simple. Here is how to build a custom, highly reliable AI Agent in Node.js from scratch — the same pattern LaunchStudio's engineering team reaches for when an AI-generated prototype's "chatbot" needs to become a genuinely autonomous piece of production software.
 
 ## The Core Prerequisite: Tool Calling

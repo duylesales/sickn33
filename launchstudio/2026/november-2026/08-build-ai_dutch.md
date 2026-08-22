@@ -1,11 +1,11 @@
 ---
-Titel: "Architectuurbeslissingen Om Duurzame AI-Applicaties Te Bouwen"
+Titel: "Hoe u AI-Applicaties Bouwt: De Tech Stack voor Solo-Oprichters in 2026"
 Trefwoorden: AI bouwen, AI app bouwen, app bouwen met AI, een app bouwen met AI, AI applicatie, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# Architectuurbeslissingen Om Duurzame AI-Applicaties Te Bouwen
+# Hoe u AI-Applicaties Bouwt: De Tech Stack voor Solo-Oprichters in 2026
 
 <script type="application/ld+json">
 {

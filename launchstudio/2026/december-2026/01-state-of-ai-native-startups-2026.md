@@ -1,11 +1,11 @@
 ---
-Title: "The State of AI-Native Startups: 2026 Year in Review"
+Title: "The State of AI-Native Startups: 2026 Year in Review with ai native startups 2026"
 Keywords: AI native startups 2026, year review, AI startup ecosystem, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: AI-Native Founder (Non-Technical)
 ---
 
-# The State of AI-Native Startups: 2026 Year in Review
+# The State of AI-Native Startups: 2026 Year in Review with ai native startups 2026
 
 <script type="application/ld+json">
 {

@@ -1,11 +1,11 @@
 ---
-Title: A Guide for Product Managers on How Generative AI Works
+Title: "Transformers and Vector Embeddings: The Architecture of How AI Works"
 Keywords: AI works, how AI works, generative AI explained, LaunchStudio, Manifera
 Buyer Stage: Awareness
 Target Persona: Product Manager / Non-Technical Founder
 ---
 
-# A Guide for Product Managers on How Generative AI Works
+# Transformers and Vector Embeddings: The Architecture of How AI Works
 
 <script type="application/ld+json">
 {

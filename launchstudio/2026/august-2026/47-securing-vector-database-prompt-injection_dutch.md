@@ -1,10 +1,10 @@
 ---
-Titel: "Uw Vector Database Beveiligen Tegen Prompt Injection"
+Titel: "Uw AI Database Beveiligen Tegen Prompt Injection en Datavergiftiging"
 Trefwoorden: AI security, AI kwetsbaarheden, AI security kwetsbaarheden, AI database, AI security risico, security AI, AI en beveiliging, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Uw Vector Database Beveiligen Tegen Prompt Injection
+# Uw AI Database Beveiligen Tegen Prompt Injection en Datavergiftiging
 
 In 1998 leerden webontwikkelaars voor het eerst over SQL Injection — het pijnlijke besef dat gebruikers kwaadaardige SQL-code in inlogformulieren konden typen om complete databases te manipuleren of te wissen. Het kostte de software-industrie meer dan tien jaar aan ernstige datalekken voordat prepared statements en parameterisatie de standaard werden. In 2026 beleeft de AI-sector exact dezelfde pijnlijke les met **Prompt Injection**. Als u een B2B SaaS bouwt die een LLM koppelt aan een vector-database vol bedrijfsgevoelige data, leidt een geslaagde prompt injection aanval direct tot een geruisloos, catastrofaal datalek — en anders dan bij SQL bestaat er geen simpele codebibliotheek die dit probleem met één `npm install` commando oplost.
 

@@ -1,11 +1,11 @@
 ---
-Titel: "Waarom Fine-Tuning De Duurste Manier Is Om Een Eigen AI Te Maken"
+Titel: "RAG vs Fine-Tuning: De Kostenefficiënte Manier om Make Own AI Systemen te Bouwen"
 Trefwoorden: eigen AI maken, uw AI bouwen, maatwerk AI model, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: CTO / Technische Oprichter
 ---
 
-# Waarom Fine-Tuning De Duurste Manier Is Om Een Eigen AI Te Maken
+# RAG vs Fine-Tuning: De Kostenefficiënte Manier om Make Own AI Systemen te Bouwen
 
 <script type="application/ld+json">
 {

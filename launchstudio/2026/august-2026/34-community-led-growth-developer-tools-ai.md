@@ -1,10 +1,10 @@
 ---
-Title: "Community-Led Growth: The Playbook for AI Developer Tools"
+Title: "Community-Led Growth for Your AI SaaS Platform: From Zero to 10k GitHub Stars"
 Keywords: ai coding, code with ai, dev ai, ai app dev, ai native, ai saas platform, build ai, ai code development
 Buyer Stage: Awareness
 ---
 
-# Community-Led Growth: The Playbook for AI Developer Tools
+# Community-Led Growth for Your AI SaaS Platform: From Zero to 10k GitHub Stars
 
 If you are building an AI tool for developers—like a new code-generation Copilot, a vector database, or an LLM orchestration framework—you must throw away the traditional B2B marketing playbook. Developers use ad-blockers. They ignore cold emails. They mock corporate buzzwords on Twitter and Hacker News in real time. The only way to acquire developers at scale is through **Community-Led Growth (CLG)**.
 

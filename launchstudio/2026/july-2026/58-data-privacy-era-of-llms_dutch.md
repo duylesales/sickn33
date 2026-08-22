@@ -101,3 +101,53 @@ Implementatie van een open-sourcemodel (zoals Llama 3 of Mistral) in een Virtual
 ### Hoe helpt de relatie tussen LaunchStudio en Manifera specifiek bij AI-privacycompliance?
 
 LaunchStudio is Manifera's geproductiseerde aanbod voor AI-native oprichters, maar de privacy- en beveiligingstechniek erachter bouwt rechtstreeks voort op Manifera's ruim tien jaar zakelijke ervaring — inclusief cybersecurityprojecten die in samenwerking met TNO zijn gebouwd. Wanneer LaunchStudio uw RLS-beleid of zero-data-retention-API-configuratie instelt, is dat dezelfde technische discipline die Manifera sinds 2014 toepast bij zakelijke klanten zoals Vodafone.
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het belangrijkste voordeel van deze aanpak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het stelt oprichters en engineeringteams in staat om snel schaalbare en veilige AI-oplossingen te leveren met minimale overhead en maximale betrouwbaarheid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe waarborgt u de beveiliging en compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door direct bij de lancering strikte Row Level Security, API-sleutelbeveiliging en zero-trust encryptie te implementeren conform de industrienormen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe snel kan een MVP worden omgezet naar een enterprise-ready product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Met de juiste architectuur en gestandaardiseerde pipelines kan een prototype doorgaans binnen 1 tot 2 weken volledig productierijp worden gemaakt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welke kosten zijn verbonden aan het schalen van de infrastructuur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Door gebruik te maken van geoptimaliseerde serverless componenten en semantische caching blijven de operationele kosten lineair en voorspelbaar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe integreert dit met bestaande systemen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Via gestandaardiseerde REST/GraphQL API-routes en webhooks kan de AI-functionaliteit naadloos worden gekoppeld aan elk modern software-ecosysteem."
+      }
+    }
+  ]
+}
+</script>

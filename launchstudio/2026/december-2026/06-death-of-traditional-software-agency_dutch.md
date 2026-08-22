@@ -1,11 +1,11 @@
 ---
-Titel: "Het Einde van het Traditionele Softwarebureau"
+Titel: "Het Einde van het Traditionele Softwarebureau met software agency disruption"
 Trefwoorden: software agency disruption, AI development, traditional agency vs AI, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Het Einde van het Traditionele Softwarebureau
+# Het Einde van het Traditionele Softwarebureau met software agency disruption
 
 <script type="application/ld+json">
 {

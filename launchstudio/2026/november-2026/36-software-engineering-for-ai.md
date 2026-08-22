@@ -1,11 +1,11 @@
 ---
-Title: Why Traditional Agile Breaks Down in Software Engineering for AI
+Title: "Software Engineering for AI: Evaluation-Driven Development Guide"
 Keywords: software engineering for AI, AI software engineering, LaunchStudio, Manifera
 Buyer Stage: Decision
 Target Persona: VP of Engineering / CTO
 ---
 
-# Why Traditional Agile Breaks Down in Software Engineering for AI
+# Software Engineering for AI: Evaluation-Driven Development Guide
 
 <script type="application/ld+json">
 {

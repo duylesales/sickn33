@@ -1,10 +1,10 @@
 ---
-Titel: Edge Computing voor Low-Latency AI-Applicaties
+Titel: "Edge Computing voor Low-Latency AI Deployment: Inference Dichter Bij de Gebruiker"
 Trefwoorden: AI deployment, AI-native, AI infrastructuur, AI frontend, AI-app bouwen, AI-app ontwikkeling, edge inference, AI database, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Edge Computing voor Low-Latency AI-Applicaties
+# Edge Computing voor Low-Latency AI Deployment: Inference Dichter Bij de Gebruiker
 
 In de wereld van AI SaaS is waargenomen snelheid (perceived speed) van doorslaggevend belang. Als een gebruiker een vraag stelt en de interface vier seconden bevriest voordat het eerste woord verschijnt, gaat die gebruiker ervan uit dat het product kapot is — ongeacht hoe briljant het uiteindelijke antwoord ook is. Een grote, vaak over het hoofd geziene bron van deze vertraging is geografie. Als uw gebruiker zich in Londen bevindt, uw server in Virginia staat en het OpenAI-datacenter in Californië draait, voegt de fysieke afstand die de data moet afleggen een reële, meetbare vertraging toe bovenop de rekentijd van het model zelf. Licht reist door glasvezelkabels met ongeveer tweederde van de lichtsnelheid in een vacuüm, en elke netwerkhop voegt routeringsvertraging toe — een round-trip tussen Londen en Virginia kost doorgaans al 70 tot 90 milliseconden voordat er überhaupt enige dataverwerking heeft plaatsgevonden. De oplossing hiervoor is de Edge.
 

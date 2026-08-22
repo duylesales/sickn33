@@ -1,11 +1,11 @@
 ---
-Titel: "De Definitieve Enterprise Tech-Stack En Software For AI in 2027"
+Titel: "De Enterprise Stack: 4 Pijlers voor het Bouwen van Software for AI in 2027"
 Trefwoorden: software for AI, software voor AI, AI software producten, build AI software, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: CTO / Enterprise Architect
 ---
 
-# De Definitieve Enterprise Tech-Stack En Software For AI in 2027
+# De Enterprise Stack: 4 Pijlers voor het Bouwen van Software for AI in 2027
 
 <script type="application/ld+json">
 {

@@ -1,5 +1,5 @@
 ---
-Title: Structuring LLM Output with JSON Schema When You Code With AI
+Title: "Structuring LLM Output with JSON Schema When You Code With AI"
 Keywords: code with ai, ai code development, ai vulnerabilities, ai saas platform, ai software engineering, ai database, ai coding, structured llm output
 Buyer Stage: Awareness
 ---

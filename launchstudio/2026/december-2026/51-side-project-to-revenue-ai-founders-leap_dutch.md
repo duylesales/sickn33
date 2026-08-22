@@ -1,11 +1,12 @@
 ---
-Title: "Van Side Project naar Omzet: Hoe AI-Oprichters de Stap Maken"
-Keywords: ai native, build ai, ai prototype, ai saas, LaunchStudio, Manifera
-Buyer Stage: Awareness
-Target Persona: AI-Native Founder (Non-Technical)
+Titel: "Van Nevenproject naar Omzet: Hoe AI-Oprichters de Sprong Maken voor uw AI SaaS-Platform"
+Trefwoorden: ai native, build ai, ai prototype, ai saas, LaunchStudio, Manifera
+Koperfase: Bewustzijn
+Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Van Side Project naar Omzet: Hoe AI-Oprichters de Stap Maken
+# Van Nevenproject naar Omzet: Hoe AI-Oprichters de Sprong Maken voor uw AI SaaS-Platform
+
 
 <script type="application/ld+json">
 {

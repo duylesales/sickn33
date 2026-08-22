@@ -1,11 +1,12 @@
 ---
-Title: "AI-Functies Testen: Waarom Traditionele Unit Tests Niet Volstaan"
-Keywords: ai code tool, ai code development, code with ai, ai secure, LaunchStudio, Manifera
-Buyer Stage: Consideration
-Target Persona: Technical Solo Founder / Indie Hacker
+Titel: "AI-Functies Testen: Waarom Traditionele Unit Tests Niet Voldoen in Moderne AI Code Development"
+Trefwoorden: ai code tool, ai code development, code with ai, ai secure, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelpersona: Technische Solo-Oprichter / Indie Hacker
 ---
 
-# AI-Functies Testen: Waarom Traditionele Unit Tests Niet Volstaan
+# AI-Functies Testen: Waarom Traditionele Unit Tests Niet Voldoen in Moderne AI Code Development
+
 
 <script type="application/ld+json">
 {

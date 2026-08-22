@@ -1,5 +1,5 @@
 ---
-Title: Selling Modernization via AI And Software Development
+Title: "Selling Modernization via AI And Software Development"
 Keywords: AI And Software Development, legacy software modernization, AI integration, digital agency, custom software development, LaunchStudio, Manifera, tech debt, Strangler Fig pattern
 Buyer Stage: Consideration
 Target Persona: C (Agency / Freelancer White-Label Partner)

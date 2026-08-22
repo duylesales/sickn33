@@ -1,5 +1,5 @@
 ---
-Title: Surviving EU AI Act Compliance using AI For Software Engineering
+Title: "Surviving EU AI Act Compliance using AI For Software Engineering"
 Keywords: AI For Software Engineering, EU AI Act compliance, AI regulation, Dutch AI startups, LaunchStudio, Manifera, B2B SaaS compliance, AI transparency, high-risk AI systems
 Buyer Stage: Awareness
 Target Persona: D (SaaS Founder Scale-Up)

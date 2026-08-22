@@ -1,10 +1,10 @@
 ---
-Title: "Monitoring AI App Performance in Production: LLMOps Guide"
+Title: "Monitoring AI Deployment in Production"
 Keywords: ai deployment, ai native, ai security risk, ai app dev, ai saas platform, ai software engineering, ai vulnerabilities, saas ai
 Buyer Stage: Consideration
 ---
 
-# Monitoring AI App Performance in Production: LLMOps Guide
+# Monitoring AI Deployment in Production
 Launching an AI app is only the beginning of the actual engineering work. Once real users start hitting your endpoints, your application enters the wild in ways no amount of local testing or demo prep can fully prepare you for. Traditional monitoring tools like Sentry will faithfully tell you if your server crashes or throws an unhandled exception, but they will not tell you if your AI is confidently generating useless garbage, silently burning thousands of dollars in API credits, or getting manipulated by a user into saying something that damages your brand. To survive in production, you must implement AI-specific observability — commonly called LLMOps — layered on top of your standard application monitoring. Here is what you actually need to track, and why each metric matters.
 
 ## The UX Metric: Time to First Token (TTFT)

@@ -1,5 +1,5 @@
 ---
-Titel: Het gevaar van blootgestelde sleutels voor API in AI frontend-code
+Titel: "Het gevaar van blootgestelde sleutels voor API in AI frontend-code"
 Trefwoorden: API in AI, Gevaar, API Keys, Frontend, Beveiliging
 Koperfase: Bewustzijn
 ---

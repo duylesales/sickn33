@@ -1,11 +1,11 @@
 ---
-Titel: "De Opkomst van de Niet-Technische CTO: Leiden Zonder Code"
+Titel: "De Opkomst van de Niet-Technische CTO: Leiden Zonder Code met non technical cto"
 Trefwoorden: non technical cto, AI leadership, startup leadership, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# De Opkomst van de Niet-Technische CTO: Leiden Zonder Code
+# De Opkomst van de Niet-Technische CTO: Leiden Zonder Code met non technical cto
 
 <script type="application/ld+json">
 {

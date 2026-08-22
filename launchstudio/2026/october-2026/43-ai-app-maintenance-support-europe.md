@@ -1,5 +1,5 @@
 ---
-Title: Why App Maintenance is the Real Cost of AI SaaS
+Title: "Why App Maintenance is the Real Cost of AI SaaS"
 Keywords: app maintenance, AI app support, SaaS maintenance, LaunchStudio, Manifera, legacy code, API deprecation
 Buyer Stage: Awareness
 Target Persona: A (AI-Native Founder, Non-Technical)

@@ -1,11 +1,11 @@
 ---
-Titel: "Diepgaande Gids: Apps Bouwen Met AI Voor De Enterprise Markt"
+Titel: "Een App Bouwen met AI: Enterprise Architectuur en Schaalbaarheidsgids"
 Trefwoorden: app bouwen met AI, een app bouwen met AI, AI app bouwen, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: B2B SaaS-Oprichter / Industrie-Expert
 ---
 
-# Diepgaande Gids: Apps Bouwen Met AI Voor De Enterprise Markt
+# Een App Bouwen met AI: Enterprise Architectuur en Schaalbaarheidsgids
 
 <script type="application/ld+json">
 {

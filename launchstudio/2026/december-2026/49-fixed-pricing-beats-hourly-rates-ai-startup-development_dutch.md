@@ -1,11 +1,11 @@
 ---
-Titel: "Waarom Vaste Prijzen Beter Zijn Dan Uurtarieven voor AI-Startups"
+Titel: "Waarom Vaste Prijzen Beter Zijn Dan Uurtarieven voor AI-Startups met ai app dev"
 Trefwoorden: ai software price, ai development, ai software developers, ai app dev, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Waarom Vaste Prijzen Beter Zijn Dan Uurtarieven voor AI-Startups
+# Waarom Vaste Prijzen Beter Zijn Dan Uurtarieven voor AI-Startups met ai app dev
 
 <script type="application/ld+json">
 {

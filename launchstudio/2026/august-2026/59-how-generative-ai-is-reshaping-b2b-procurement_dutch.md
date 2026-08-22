@@ -1,10 +1,10 @@
 ---
-Titel: "Hoe Generatieve AI B2B-Inkooptrajecten Fundamenteel Verandert"
+Titel: "Hoe Generatieve AI Enterprise B2B AI SaaS Inkoop Transformeert"
 Trefwoorden: AI SaaS, AI software engineering, AI en softwareontwikkeling, AI-native, AI deployment, build AI app, AI beveiligen, LaunchStudio, Manifera
 Koperfase: Bewustzijn
 ---
 
-# Hoe Generatieve AI B2B-Inkooptrajecten Fundamenteel Verandert
+# Hoe Generatieve AI Enterprise B2B AI SaaS Inkoop Transformeert
 
 Het overgrote deel van de publieke discussies rondom AI richt zich op de vraag hoe software wordt *gebouwd*. Echter, een veel stillere en wellicht veel ingrijpendere revolutie voltrekt zich in hoe zakelijke enterprise-software wordt *ingekocht*. Het traditionele enterprise-inkooptraject (Procurement) — historisch een slopend proces van zes maanden vol spreadsheets, juridische redlines en 200 pagina's tellende aanbestedingsdocumenten (Requests for Proposals / RFP's) — wordt van begin tot eind hervormd door LLM-agenten die aan beide zijden van de onderhandelingstafel plaatsnemen. Als B2B-oprichter verkoopt u niet langer uitsluitend aan een Vice President Inkoop of een Chief Legal Counsel. U verkoopt in toenemende mate aan hun **AI-evaluatoren**, en deze AI-systemen analyseren uw verkoopdocumenten op een fundamenteel andere manier dan menselijke inkopers dat doen.
 

@@ -1,10 +1,10 @@
 ---
-Titel: "Data-Exfiltratierisico's in RAG-Pijplijnen voor AI in Software Engineering"
+Titel: "Data-Exfiltratierisico's in RAG-Pijplijnen voor AI voor uw AI SaaS-Platform"
 Trefwoorden: AI data security, AI security risk, AI security issues, AI vulnerabilities, AI SaaS platform, AI-native, AI and software development, LaunchStudio, Manifera
 Koperfase: Overweging
 ---
 
-# Data-Exfiltratierisico's in RAG-Pijplijnen voor AI in Software Engineering
+# Data-Exfiltratierisico's in RAG-Pijplijnen voor AI voor uw AI SaaS-Platform
 
 De ongekende kracht van een RAG-pijplijn (Retrieval-Augmented Generation) is dat het alle versnipperde bedrijfskennis, documenten en interne archieven binnen enkele milliseconden semantisch doorzoekbaar maakt. Het levensgrote beveiligingsgevaar van een RAG-pijplijn is exact hetzelfde. Als u de volledige Google Drive of SharePoint-omgeving van een enterprise-organisatie indexeert in een centrale Vector Database zonder strikte, fijnmazige autorisatiecontroles in te richten, heeft u zojuist de ultieme geautomatiseerde tool voor bedrijfsspionage gebouwd. Het beveiligen van een RAG-pijplijn tegen interne en externe **Data-Exfiltratie (Data Exfiltration)** is absoluut bedrijfskritisch — en het is een van de meest voorkomende en gevaarlijke gaten die wij tegenkomen bij het auditen van haastig gelanceerde AI-prototypes. Aangezien circa 45% van de met AI gegenereerde code ernstige beveiligingslekken bevat en 80% van de met AI gebouwde projecten strandt vóórdat een veilige productiestatus wordt bereikt, is dit geen theoretisch randgeval, maar het directe gevolg van het overslaan van de beveiligingslaag bij document-retrieval.
 

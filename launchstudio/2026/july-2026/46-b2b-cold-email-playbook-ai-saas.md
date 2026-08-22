@@ -1,5 +1,5 @@
 ---
-Title: The B2B Cold Email Playbook for AI SaaS Startups
+Title: "The B2B Cold Email Playbook for AI SaaS Startups"
 Keywords: AI SaaS, AI Software Engineering, Build App With AI, AI Deployment, AI Security, AI SaaS Platform
 Buyer Stage: Awareness
 ---

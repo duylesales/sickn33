@@ -1,11 +1,11 @@
 ---
-Title: "CI/CD for AI Applications: What's Different About Deploying ML Models"
+Title: "CI/CD for AI Applications: What's Different About Deploying ML Models in Production AI Deployment"
 Keywords: ai deployment, deployment of ai, ai development, ai for development, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# CI/CD for AI Applications: What's Different About Deploying ML Models
+# CI/CD for AI Applications: What's Different About Deploying ML Models in Production AI Deployment
 
 <script type="application/ld+json">
 {

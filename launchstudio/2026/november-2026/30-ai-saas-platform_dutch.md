@@ -1,11 +1,11 @@
 ---
-Titel: "Verder Kijken Dan De Thin Wrapper Als AI SaaS-Platform"
+Titel: "Een Verdedigbaar AI SaaS Platform Bouwen: Voorbij de Simpele Wrapper"
 Trefwoorden: AI saas platform, AI in saas, AI saas producten, LaunchStudio, Manifera
 Koperfase: Overweging
 Doelpersona: B2B SaaS-Oprichter / Investeerders
 ---
 
-# Verder Kijken Dan De Thin Wrapper Als AI SaaS-Platform
+# Een Verdedigbaar AI SaaS Platform Bouwen: Voorbij de Simpele Wrapper
 
 <script type="application/ld+json">
 {

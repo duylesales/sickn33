@@ -1,11 +1,12 @@
 ---
-Title: Het Strangler Fig Patroon met een AI-Tool voor Applicatiemodernisering
-Keywords: AI tool for application, application modernization, enterprise AI, LaunchStudio, Manifera
-Buyer Stage: Decision
-Target Persona: Enterprise Architect / VP of Engineering
+Titel: "Een AI Tool for Application Modernization Inzetten: Het Strangler Patroon"
+Trefwoorden: AI tool voor applicatie, applicatie modernisering, enterprise AI, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelpersona: Enterprise Architect / VP of Engineering
 ---
 
-# Het Strangler Fig Patroon met een AI-Tool voor Applicatiemodernisering
+# Een AI Tool for Application Modernization Inzetten: Het Strangler Patroon
+
 
 <script type="application/ld+json">
 {

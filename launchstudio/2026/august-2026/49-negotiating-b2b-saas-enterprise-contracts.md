@@ -1,10 +1,10 @@
 ---
-Title: "Negotiating B2B SaaS Enterprise Contracts: A Founder's Guide"
+Title: "Handling Enterprise Security Questionnaires for Your AI SaaS Platform Startup"
 Keywords: ai saas, ai saas platform, ai and software development, build app with ai, ai native, ai deployment
 Buyer Stage: Awareness
 ---
 
-# Negotiating B2B SaaS Enterprise Contracts: A Founder's Guide
+# Handling Enterprise Security Questionnaires for Your AI SaaS Platform Startup
 
 You have convinced the executive team. They love your software and the $100,000 price tag. But the deal isn't closed — you have merely advanced to the final boss: Procurement. The procurement department's sole job is to protect the enterprise from risk and extract maximum concessions from vendors, and unlike the champion you pitched, they have no emotional investment in your product succeeding. If you do not understand the legal levers of a B2B SaaS contract before you walk into that conversation, you will sign a deal that could bankrupt your startup the first time something goes wrong.
 

@@ -1,11 +1,11 @@
 ---
-Title: "How to Structure Your Codebase for AI-Readable Documentation"
+Title: "How to Structure Your Codebase for AI-Readable Documentation for AI Native Applications"
 Keywords: ai code development, ai native, code with ai, ai code tool, LaunchStudio, Manifera
 Buyer Stage: Consideration
 Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# How to Structure Your Codebase for AI-Readable Documentation
+# How to Structure Your Codebase for AI-Readable Documentation for AI Native Applications
 
 <script type="application/ld+json">
 {

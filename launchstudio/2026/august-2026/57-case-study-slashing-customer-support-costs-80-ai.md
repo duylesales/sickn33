@@ -1,10 +1,10 @@
 ---
-Title: "Case Study: Slashing Customer Support Costs with an AI RAG Agent"
+Title: "Case Study: Implementing Multi-Tenant RLS to Secure Your Healthcare AI Database"
 Keywords: ai saas, ai deployment, ai security, ai vulnerabilities, build ai app, ai database, use ai to generate code
 Buyer Stage: Consideration
 ---
 
-# Case Study: Slashing Customer Support Costs with an AI RAG Agent
+# Case Study: Implementing Multi-Tenant RLS to Secure Your Healthcare AI Database
 
 For high-growth startups, customer support is often a victim of success. The faster you acquire users, the faster your support queue swells, forcing you to hire armies of Tier 1 agents just to keep the queue from collapsing. This case study details how LaunchStudio helped a Series B FinTech startup ("PayFlow") break this linear cost curve by deploying a custom Retrieval-Augmented Generation (RAG) architecture, autonomously resolving 62% of their tickets and saving $800,000 in projected annual payroll.
 

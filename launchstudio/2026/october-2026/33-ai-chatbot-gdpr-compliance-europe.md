@@ -1,5 +1,5 @@
 ---
-Title: How to Use AI To Code a GDPR Compliant Chatbot
+Title: "How to Use AI To Code a GDPR Compliant Chatbot"
 Keywords: AI To Code, AI chatbot gdpr compliance, AI chatbot, GDPR, LaunchStudio, Manifera, European AI law, data privacy
 Buyer Stage: Awareness
 Target Persona: D (SaaS Founder Scale-Up)

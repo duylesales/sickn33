@@ -1,11 +1,11 @@
 ---
-Titel: "Casestudy-Verzameling: 10 AI-Oprichters Die Lanceerden Binnen 2 Weken"
+Titel: "Casestudy-Verzameling: 10 AI-Oprichters Die Lanceerden Binnen 2 Weken voor uw AI SaaS-Platform"
 Trefwoorden: ai prototype, build app with ai, ai native, ai saas, LaunchStudio, Manifera
 Koperfase: Beslissing
 Doelpersona: AI-Native Oprichter (Niet-Technisch)
 ---
 
-# Casestudy-Verzameling: 10 AI-Oprichters Die Lanceerden Binnen 2 Weken
+# Casestudy-Verzameling: 10 AI-Oprichters Die Lanceerden Binnen 2 Weken voor uw AI SaaS-Platform
 
 <script type="application/ld+json">
 {

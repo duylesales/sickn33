@@ -1,10 +1,10 @@
 ---
-Title: Securing Your Vector Database Against Prompt Injection
+Title: "Securing Your AI Database Against Prompt Injection and Data Poisoning"
 Keywords: ai security, ai vulnerabilities, ai security vulnerabilities, ai database, ai security risk, security ai, ai and security
 Buyer Stage: Awareness
 ---
 
-# Securing Your Vector Database Against Prompt Injection
+# Securing Your AI Database Against Prompt Injection and Data Poisoning
 
 In 1998, web developers learned about SQL Injection — the realization that users could type malicious code into login forms to delete entire databases. It took the industry over a decade of breaches before prepared statements became the default. In 2026, the AI industry is living through its own version of that same lesson: **Prompt Injection**. If you are building a B2B SaaS that connects an LLM to a vector database full of enterprise data, a successful prompt injection attack will result in a catastrophic, and often silent, data breach — and unlike SQL injection, there is no single library you can import to make the problem go away.
 

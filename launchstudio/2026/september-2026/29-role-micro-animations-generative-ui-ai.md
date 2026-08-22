@@ -1,5 +1,5 @@
 ---
-Title: The Role of Micro-Animations in Generative UI for AI In Software Engineering
+Title: "The Role of Micro-Animations in Generative UI for AI In Software Engineering"
 Keywords: ai software engineering, ai native, generative ui, build app with ai, ai frontend, ai deployment, ai saas, ai code tool
 Buyer Stage: Consideration
 ---
