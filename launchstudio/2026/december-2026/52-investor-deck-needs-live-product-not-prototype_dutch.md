@@ -1,22 +1,22 @@
 ---
-Titel: "Waarom Uw Investeerdersdeck een Live Product Nodig Heeft, Geen Prototype"
-Trefwoorden: ai prototype, prototype ai, ai native, build app with ai, LaunchStudio, Manifera
-Koperfase: Overweging
-Doelpersona: SaaS Oprichter Scale-Up
+Title: "Waarom Uw Pitch Deck aan Investeerders een Live Product Nodig Heeft, Geen Prototype"
+Keywords: ai prototype, prototype ai, ai native, build app with ai, LaunchStudio, Manifera
+Buyer Stage: Consideration
+Target Persona: SaaS Founder Scale-Up
 ---
 
-# Waarom Uw Investeerdersdeck een Live Product Nodig Heeft, Geen Prototype
+# Waarom Uw Pitch Deck aan Investeerders een Live Product Nodig Heeft, Geen Prototype
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Waarom Uw Investeerdersdeck een Live Product Nodig Heeft, Geen Prototype",
-  "description": "Investeerders hebben al duizenden gelikte AI-demos gezien. Wat een investering écht binnenhaalt is een live product met echte betalende klanten en praktijkdata.",
+  "headline": "Waarom Uw Pitch Deck aan Investeerders een Live Product Nodig Heeft, Geen Prototype",
+  "description": "Investeerders hebben inmiddels honderden indrukwekkende AI-demo's gezien. Wat het verschil maakt tussen een afwijzing en een investering is een live product met echte gebruikers.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,88 +26,89 @@ Doelpersona: SaaS Oprichter Scale-Up
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/investor-deck-needs-live-product-not-prototype"
+    "@id": "https://launchstudio.eu/nl/blog/investor-deck-needs-live-product-not-prototype"
   }
 }
 </script>
 
-Investeerders en durfkapitalisten hebben inmiddels honderden indrukwekkende AI-demo's voorbij zien komen. Een visueel gepolijst AI-prototype, ooit een zeldzame blikvanger, is in 2027 verworden tot de absolute minimumnorm — bijna elke ondernemer die een pitchdeck opstuurt kan zo'n demo in elkaar zetten, simpelweg omdat dezelfde generatieve AI-tools voor iedereen beschikbaar zijn.
-
-Wat een pitch in de huidige markt daadwerkelijk onderscheidt en financierbaar maakt, is hard bewijs dat de demo een echt, operationeel product vertegenwoordigt.
+Investeerders hebben inmiddels honderden indrukwekkende AI-demo's voorbij zien komen. Een strakke AI-gegenereerde prototype-demo, ooit een echte onderscheidende factor, is nu het absolute minimum geworden — vrijwel elke oprichter in 2027 kan er een laten zien. Wat een financierbare pitch nu echt onderscheidt, is het harde bewijs dat de demo een *echt, live product* vertegenwoordigt.
 
 ## Waarom "Het Werkt in de Demo" Geen Indruk Meer Maakt
 
-Ervaren investeerders hebben geleerd om gelikte AI-demo's zwaar te relativeren. Ze hebben er te veel gezien om te weten dat demokwaliteit volledig is losgekoppeld van bedrijfskundige levensvatbaarheid — een prachtige Lovable- of Cursor-interface vertelt niets over of klanten het product willen, ervoor willen betalen of blijven terugkomen. De signaalwaarde van demo's is ingestort doordat AI het bouwen ervan spotgoedkoop heeft gemaakt.
+Professionele investeerders hebben geleerd om AI-demo's met een flinke korrel zout te nemen. Een mooie interface zegt namelijk helemaal niets over de vraag of echte klanten het product willen, ervoor willen betalen, of het blijven gebruiken. De waarde van losse demo's is ingestort doordat AI-tools het bouwen van prototypes voor iedereen extreem goedkoop hebben gemaakt.
 
-## Wat Vandaag de Dag Wél Overtuigt
+## Wat Investeringsbereidheid Tegenwoordig Echt Signaleert
 
-### Echte, Betalende Klanten — Zelfs een Handvol
-Een groepje van 10 tot 20 klanten die uw product vonden, zich registreerden en daadwerkelijk geld overmaakten, is een oneindig veel sterker bewijs dan vijftig doorklik-demo's. Het bewijst dat uw software contact met de echte wereld heeft overleefd: echte betalingen, echte onboarding en echt dagelijks gebruik.
+### Echte, Betalende Klanten — Zelfs een Klein Aantal
+Een handvol klanten die uw product hebben gevonden, zich hebben geregistreerd en echt geld hebben betaald, levert een categorisch sterker signaal op dan honderd demo-presentaties. Het bewijst namelijk dat uw product de confrontatie met de echte wereld heeft overleefd: echte betalingen, echte onboarding, echt gebruik.
 
 ### Retentie- en Gebruiksdata
-Investeerders willen feitelijk gebruikersgedrag zien: komen gebruikers dagelijks terug? Groeit het gebruik per klant? Deze data bestaat simpelweg niet bij een prototype dat nooit publiek is gelanceerd.
+Investeerders willen zien of klanten terugkomen, het product regelmatig gebruiken en hun gebruik uitbreiden. Deze gegevens bestaan simpelweg niet bij een prototype dat nooit live is gegaan.
 
-### Bewijs van Schaalbare en Veilige Infrastructuur
-Een live product dat meerdere gelijktijdige gebruikers bedient zonder te crashen toont operationele volwassenheid. Investeerders die technische audits uitvoeren, vragen specifiek naar dataseparatie en encryptie — zaken waar een prototype doorgaans geen antwoord op heeft.
+### Bewijs dat de Infrastructuur Kan Schalen
+Een live product dat meerdere gelijktijdige gebruikers verwerkt zonder om te vallen, toont operationele kwaliteiten. Bij technische due diligence vragen investeerders door op beveiliging, datalocatie en betrouwbaarheid — vragen waar "we zijn nog niet live" geen overtuigend antwoord op is.
 
-### Een Oprichter Met Echte Operationele Ervaring
-Een oprichter die al een echte klantenservicevraag, een mislukte webhook-betaling of een privacy-vraagstuk heeft opgelost, brengt een geloofwaardigheid aan tafel die hypothetische pitchverhalen overtreft.
+### Een Oprichter Die Echte Operationele Uitdagingen Heeft Doorstaan
+Een oprichter die al te maken heeft gehad met een echte klantondersteuningsvraag, een mislukte betaling of een beveiligingsvraagstuk, straalt een geloofwaardigheid uit die een oprichter met een theoretisch idee mist.
 
-## De Snelste Route van Prototype naar Investeerdersbewijs
+## Het Snelste Pad van Prototype naar Financierbaar Bewijs
 
-Voor AI-oprichters die kapitaal willen ophalen, is de snelste voorbereiding niet nóg meer schaven aan het pitchdeck — het is daadwerkelijk lanceren. Een productielancering, zelfs voor een kleine begingroep, transformeert een vrijblijvende demo in het concrete bewijs dat investeerders zoeken.
+De snelste manier om dit bewijs te verzamelen is niet nóg een maand schaven aan uw pitch deck — het is daadwerkelijk lanceren.
 
-De doorlooptijd van één tot drie weken van [LaunchStudio](https://launchstudio.eu/en/) stelt oprichters in staat om ruim vóór hun investeerdersgesprekken live te gaan en weken aan echte data te verzamelen. Manifera's technische reputatie — vertrouwd door enterprise-klanten zoals Vodafone en TNO — biedt daarnaast extra technische zekerheid tijdens de auditfase.
+Met LaunchStudio's doorlooptijd van één tot drie weken kunnen oprichters hun product lanceren en enkele weken aan echte gebruiks- en omzetgegevens verzamelen vóór hun investeerdersgesprekken. De technische reputatie van Manifera — vertrouwd door enterprise-klanten zoals Vodafone, TNO en CFLW — biedt extra ondersteunende geloofwaardigheid tijdens de technische due diligence.
 
-[Zet uw product live vóór uw volgende investeerderspitch](https://launchstudio.eu/en/#calculator) — echte data verandert het hele gesprek.
+[Maak uw product live vóór uw volgende investeerdersgesprek](https://launchstudio.eu/nl/#calculator) — echte data verandert het gesprek volledig.
 
-## Wat Technische Due Diligence Daadwerkelijk Controleert
+## Wat Technische Due Diligence Werkelijk Controleren
 
-Wanneer investeerders serieuze interesse tonen, volgt de technische inspectie onder de motorkap. Dit is wat er daadwerkelijk wordt getoetst:
+Wanneer investeerders serieus geïnteresseerd raken, kijken ze onder de motorkap:
+- **Bewijs van data-isolatie**: Hoe wordt data van verschillende klanten gescheiden?
+- **Uptime en incidenthistorie**: Hoe is het systeem omgegaan met eventuele storingen?
+- **Afhankelijkheid van leveranciers**: Wat gebeurt er als uw AI-provider zijn prijzen verhoogt?
+- **Kostenstructuur bij schalen**: Blijven de AI API-kosten beheersbaar als het aantal klanten vertienvoudigt?
+- **Eigendom van code**: Is de code uw eigendom en overdraagbaar, of zit u vast aan een no-code platform?
 
-- **Bewezen data-isolatie, geen vage claims.** Investeerders vragen hoe klantdata op databaseniveau strikt gescheiden blijft (Row Level Security en tenant-isolatie).
-- **Uptime en storingshistorie.** Hoe gaat de app om met downtime van OpenAI of netwerkstoringen?
-- **Afhankelijkheid van leveranciers (Vendor Lock-in).** Welke risico's loopt het model bij prijswijzigingen of model-deprecations?
-- **Kostenstructuur bij 10x groei.** Blijven de brutomarges gezond zodra het tokenverbruik vertienvoudigt?
-- **Eigendom van broncode (Code Ownership).** Is de oprichter 100% eigenaar van de broncode in Git, of zit de app vast in een gesloten no-code platform?
+## Belangrijkste inzichten
 
-Oprichters die vóór hun pitch live gaan via een professionele backend-implementatie beantwoorden deze vragen met feiten en rust, terwijl oprichters met een prototype moeten gokken op hypothetische aannames.
+- **Demo's overtuigen niet meer**: AI maakt mooie prototypes goedkoop; investeerders eisen bewijs van echte betalende klanten en retentie.
+- **Lanceer vóór het ophalen van geld**: Een paar weken live data (zelfs van 10-20 klanten) verandert de dynamiek in het investeerdersgesprek radicaal.
+- **Bereid technische due diligence voor**: Zorg voor duidelijke antwoorden over data-isolatie, AI API-kosten bij schalen en code-eigendom.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: Van afwijzing naar een geslaagde investeringsronde
+### Een AI-native oprichter in actie: Van een zwakke pitch naar een succesvolle investeringsronde
 
-Marit, supply chain analist in Winterswijk, bouwde met Lovable VoorraadVoorspel: een AI-tool die voorraadbehoeften voorspelde voor mkb-webwinkels. Ze pitchte haar prototype bij drie informal investors. De reacties waren vriendelijk maar afwijzend: *"Mooi concept, kom terug als je echte tractie hebt."*
+Marit, een supply chain analist in Winterswijk, bouwde VoorraadVoorspel — een AI-tool die voorraadbehoeften voorspelt voor e-commerce verkopers — met behulp van Lovable. Ze had het prototype gepitcht bij drie angel investors, die allemaal vriendelijk afwijzend reageerden met "kom terug als je wat tractie hebt".
 
-In plaats van haar demo verder op te poetsen, schakelde Marit LaunchStudio in om VoorraadVoorspel binnen twee weken productieklaar te maken. Het team van Manifera realiseerde authenticatie, veilige multi-seller data-isolatie en Mollie-betalingen. Marit lanceerde naar 15 bevriende webwinkeliers.
+In plaats van het prototype verder op te poetsen, nam Marit contact op met LaunchStudio om VoorraadVoorspel productieklaar te maken en te lanceren. Het team van Manifera regelde de authenticatie, veilige data-isolatie tussen verkopers en Mollie-facturatie binnen twee weken. Marit lanceerde het product bij 15 webwinkels uit haar netwerk.
 
-Zes weken later keerde Marit terug naar dezelfde drie investeerders met feitelijke cijfers: 15 betalende klanten, 93% retentie in maand twee en wekelijkse actieve analyses.
+Zes weken later keerde Marit terug naar dezelfde drie investeerders met harde data: 15 betalende klanten, 93% retentie in maand twee en wekelijks terugkerend gebruik. Het gesprek veranderde compleet.
 
-**Resultaat:** Een van de oorspronkelijke investeerders stapte direct in, samen met een nieuwe co-investeerder, voor een gecombineerde pre-seed ronde van €150.000.
+**Resultaat:** Een van de oorspronkelijke investeerders en een nieuwe investeerder kenden binnen een maand een seed-investeringsronde toe — een resultaat dat Marit direct toeschrijft aan het vervangen van een mooie demo door echte operationele cijfers.
 
-> *"De eerste pitch had een prachtige demo en kreeg beleefde 'nog niet' reacties. De tweede pitch had echte betalende klanten en retentiecijfers, en dat veranderde alles. LaunchStudio zette me in twee weken live en maakte die tweede pitch mogelijk."*  
-> — **Marit Scholten, Oprichter VoorraadVoorspel (Winterswijk)**
+> *"De eerste pitch had een prachtige demo en kreeg een beleefd 'nog niet'. De tweede pitch had echte klanten en retentiecijfers, en dat kwam volstrekt anders binnen. LaunchStudio's snelle lancering maakte dat mogelijk."*
+> — **Marit Scholten, Oprichter, VoorraadVoorspel (Winterswijk)**
 
-**Kosten & tijdlijn:** €3.300 (Launch & Grow Pakket met investeringsprioriteit) — binnen 13 werkdagen live opgeleverd.
+**Kosten & Doorlooptijd:** € 3.300 (Launch & Grow Pakket, prioriteit op investeerders-planning) — live in 13 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Hoeveel betalende klanten heb ik minimaal nodig om indruk te maken op investeerders?
-Er is geen vast getal, maar zelfs 10 tot 20 echte betalende klanten met hoge tevredenheid en retentie veranderen het gesprek fundamenteel van "hypothese" naar "aantoonbare tractie".
+### Hoeveel betalende klanten heb ik realistisch gezien nodig vóór een pitch?
+Er is geen vast getal, maar zelfs 10 tot 20 betalende klanten met een goede retentie veranderen het gesprek van hypothetisch naar bewezen.
 
-### Is het de moeite waard om een investeringsronde uit te stellen om eerst live te gaan?
-Vrijwel altijd wel. Omdat LaunchStudio de livegang in 1 tot 3 weken afrondt, levert een korte pauze zoveel sterker bewijs op dat uw slagingskans bij pitches spectaculair stijgt.
+### Is het slim om een investeringsronde uit te stellen om eerst live te gaan?
+Als u binnen enkele weken live kunt gaan, weegt het voordeel van echte gebruiksdata ruimschoots op tegen een kort uitstel van uw pitches.
 
-### Vragen investeerders echt naar technische beveiliging en databases?
-Zeker. Nu de markt overspoeld wordt met onbeveiligde AI-prototypes, laten investeerders standaard een technische due diligence uitvoeren naar datalek-risico's en schaalbaarheid.
+### Vragen investeerders echt door op technische infrastructuur en beveiliging?
+Ja, steeds vaker. Zwak beveiligde AI-prototypes zijn een bekend risico geworden; een professioneel geharde infrastructuur voorkomt afwijzingen bij due diligence.
 
-### Kan LaunchStudio technische documentatie leveren voor mijn pitch?
-Ja. Wij leveren een heldere architectuur- en beveiligingsdocumentatie op die u direct als bijlage aan uw investeerdersdossier kunt toevoegen.
+### Kan LaunchStudio helpen bij het voorbereiden van technische documentatie voor investeerders?
+Ja. Het team kan documentatie aanleveren van de gebouwde architectuur en beveiliging die u kunt opnemen in uw due diligence-map.
 
-### Helpt de reputatie van Manifera bij het wekken van vertrouwen?
-Ja. De wetenschap dat de backend is gebouwd door een softwarehuis dat werkt voor instellingen als TNO en Vodafone geeft investeerders directe gemoedsrust over de codekwaliteit.
+### Heeft het gewicht als Manifera achter de techniek staat?
+Manifera's ervaring met enterprise-klanten (zoals Vodafone en TNO) biedt ondersteunende geloofwaardigheid, al blijven uw eigen klantcijfers het belangrijkste.
 
 <script type="application/ld+json">
 {
@@ -116,42 +117,42 @@ Ja. De wetenschap dat de backend is gebouwd door een softwarehuis dat werkt voor
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hoeveel betalende klanten heb ik nodig voor een investeerderspitch?",
+      "name": "Hoeveel betalende klanten heb ik realistisch gezien nodig vóór een pitch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zelfs 10 tot 20 betalende gebruikers veranderen het gesprek kwalitatief van een theorie naar bewezen marktvraag."
+        "text": "Geen vast getal, maar 10 tot 20 betalende klanten veranderen het investeerdersgesprek al van hypothetisch naar bewezen."
       }
     },
     {
       "@type": "Question",
-      "name": "Is het slim om pitches uit te stellen voor een live product?",
+      "name": "Is het slim om een investeringsronde uit te stellen om eerst live te gaan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, een korte pauze van 2 weken voor een echte productielancering verhoogt de slagingskans bij investeerders enorm."
+        "text": "Als u binnen enkele weken live kunt gaan, weegt de meerwaarde van echte gebruiksdata ruimschoots op tegen een kort uitstel."
       }
     },
     {
       "@type": "Question",
-      "name": "Vragen investeerders naar technische beveiliging?",
+      "name": "Vragen investeerders echt door op technische infrastructuur en beveiliging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Steeds vaker; investeerders voeren strenge audits uit op data-isolatie en privacy om datalekken te voorkomen."
+        "text": "Ja. Onbeveiligde AI-prototypes zijn een bekend risico; een professioneel geharde infrastructuur voorkomt afwijzingen."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan LaunchStudio technische documentatie voor investeerders leveren?",
+      "name": "Kan LaunchStudio helpen bij het voorbereiden van technische documentatie voor investeerders?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, wij documenteren de productie-architectuur en beveiligingsmaatregelen direct voor uw due diligence dossier."
+        "text": "Ja. Het team kan documentatie aanleveren van de gebouwde architectuur en beveiligingsmaatregelen."
       }
     },
     {
       "@type": "Question",
-      "name": "Helpt Manifera's ervaring bij investeerdersvertrouwen?",
+      "name": "Heeft het gewicht als Manifera achter de techniek staat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Zeker, Manifera's 11+ jaar ervaring bij partijen als TNO en Vodafone biedt institutionele geloofwaardigheid."
+        "text": "Het biedt solide ondersteunende geloofwaardigheid dankzij Manifera's enterprise-reputatie bij o.a. Vodafone en TNO."
       }
     }
   ]

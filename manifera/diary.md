@@ -4,6 +4,15 @@
 
 ### Tháng 08
 
+#### Ngày 20
+
+- **11:59**: Hoàn thiện toàn bộ 3 thư mục mở rộng còn dang dở trong `manifera/2026-extra/`, đưa `extra-1-local` và `extra-2-random` lên đủ 100/100 bài và bổ sung toàn bộ bài đăng mạng xã hội còn thiếu cho `extra-6-dutchvsvietnam`:
+  - **`extra-6-dutchvsvietnam` (bài 99-100)**: Viết nốt 2 bài cuối cụm "offshore development partner" — bài 99 (`99-offshore-development-partner-netherlands-vs-vietnam.md`, CTO, so sánh chi phí thời gian thực) và bài 100 (`100-offshore-development-partner-board-approval.md`, CFO, checklist 4 câu hỏi cuối cùng trước khi ký hợp đồng), khép lại toàn chuỗi 100 bài với case study Eindhoven (Brainport Machine Vision B.V.) và Utrecht (Domstad Insurance Analytics B.V.). Ghi nhận thư mục vẫn còn thiếu bài 50 và 90 (khoảng trống từ trước, chưa được yêu cầu bổ sung).
+  - **`extra-1-local` (bài 61-100)**: Viết mới 40 bài phân tích theo cụm từ khóa + thành phố Hà Lan (outsourcing, dedicated team, SaaS/full-stack, software engineering/mobile), phủ khắp Zuid-Holland, Noord-Holland/Utrecht, Gelderland/Brabant/Limburg và Overijssel/Groningen, mỗi bài kèm bài đăng mạng xã hội tương ứng — hoàn thiện đủ 100/100 bài + 100/100 bài social.
+  - **`extra-2-random` (bài 71-100)**: Viết mới 30 bài "pain point" kỹ thuật/kinh doanh ngẫu nhiên (API rate limiting, silent job failures, on-call burnout, SOC2 audit trail, GDPR DSAR, SaaS tool sprawl, release cadence decay...), kèm bài social tương ứng, kết bằng bài capstone số 100 tổng kết nguyên nhân gốc rễ chung (thiếu lớp quản trị độc lập) xuyên suốt cả 99 bài trước — hoàn thiện đủ 100/100 bài + 100/100 bài social.
+  - **`extra-6-dutchvsvietnam` (bài social 01-100, trừ 50 và 90)**: Viết bổ sung 98 bài đăng mạng xã hội còn thiếu, theo đúng phong cách bài social của `extra-1-local` (Pain Points / Manifera Solution / hashtag), khớp nội dung với từng bài viết gốc tương ứng.
+  - Toàn bộ nội dung mới đều giữ nguyên chuẩn cấu trúc gốc: front matter, schema JSON-LD Article + FAQPage, 5 FAQ, bảng so sánh, case study công ty châu Âu hư cấu riêng biệt cho từng bài.
+
 #### Ngày 19
 
 - **17:15**: Hoàn thành đồng bộ Git và đẩy toàn bộ cập nhật của Manifera lên GitHub (`git push origin main`):

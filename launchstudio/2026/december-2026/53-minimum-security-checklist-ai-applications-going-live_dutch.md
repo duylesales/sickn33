@@ -1,22 +1,22 @@
 ---
-Titel: "De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan"
-Trefwoorden: ai secure, security ai, ai security issues, ai vulnerabilities, LaunchStudio, Manifera
-Koperfase: Beslissing
-Doelpersona: Technische Solo-Oprichter / Indie Hacker
+Title: "De Minimale Beveiligings-Checklist voor AI-Applicaties Die Live Gaan"
+Keywords: ai secure, security ai, ai security issues, ai vulnerabilities, LaunchStudio, Manifera
+Buyer Stage: Decision
+Target Persona: Technical Solo Founder / Indie Hacker
 ---
 
-# De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan
+# De Minimale Beveiligings-Checklist voor AI-Applicaties Die Live Gaan
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "De Minimale Beveiligingschecklist voor AI-Applicaties die Live Gaan",
-  "description": "Niet elke AI-app heeft enterprise-grade cybersecurity nodig op dag één. Dit is de niet-onderhandelbare ondergrens van 10 beveiligingspunten die elke oprichter moet controleren vóór livegang.",
+  "headline": "De Minimale Beveiligings-Checklist voor AI-Applicaties Die Live Gaan",
+  "description": "Niet elke AI-applicatie heeft vanaf dag één enterprise-grade beveiligingsinfrastructuur nodig. Dit is de echte minimale ondergrens — de niet-onderhandelbare punten voor elke lancering.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
-    "url": "https://launchstudio.eu/en/"
+    "url": "https://launchstudio.eu/nl/"
   },
   "publisher": {
     "@type": "Organization",
@@ -26,94 +26,98 @@ Doelpersona: Technische Solo-Oprichter / Indie Hacker
   "datePublished": "2026-12-31",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://launchstudio.eu/en/blog/minimum-security-checklist-ai-applications-going-live"
+    "@id": "https://launchstudio.eu/nl/blog/minimum-security-checklist-ai-applications-going-live"
   }
 }
 </script>
 
-Niet elke AI-applicatie heeft op dag één enterprise-grade cybersecurity van honderdduizenden euro's nodig. Dit is een wezenlijk onderscheid: over-engineering van beveiliging voor een tool met 10 vroege gebruikers verspilt kostbare middelen.
+Niet elke AI-applicatie heeft op dag één enterprise-grade beveiliging nodig. Dit is een belangrijk onderscheid: het over-engineeren van beveiliging voor een tool met 10 klanten verspilt middelen die een oprichter elders kan inzetten. Maar er is een echte, niet-onderhandelbare minimale ondergrens waaronder *geen enkele* AI-applicatie mag draaien, ongeacht hoe klein het project is. Dit is die ondergrens.
 
-Er bestaat echter een **ononderhandelbare ondergrens** waaronder geen enkele AI-applicatie ooit live mag gaan, ongeacht hoe klein of pril het project is. Dit is die minimale standaard.
+## Waarom "Minimaal" Toch Cruciaal Is bij een Kleine Schaal
 
-## Waarom de "Ondergrens" Cruciaal Is, Zelfs op Kleine Schaal
+Een veelvoorkomende misvatting onder oprichters is dat beveiliging evenredig moet meegroeien met de bedrijfsgrootte. Dat geldt voor uitgebreide investeringen, maar de minimale ondergrens schaalt niet mee omlaag met bedrijfsgrootte. De gevolgen van een basaal beveiligingslek (datalek, accountovername, gelekte API-sleutels) zijn voor 10 klanten net zo schadelijk als voor 10.000 klanten.
 
-Veel oprichters denken ten onrechte dat beveiliging evenredig meegroeit met de bedrijfsgrootte. Hoewel geavanceerde compliance pas later nodig is, geldt dat niet voor de basisbeveiliging. De gevolgen van een basaal datalek, accountovername of uitgelekte API-sleutels zijn voor 10 klanten net zo reëel en reputatievernietigend als voor 10.000 klanten.
+## De 10 Niet-Onderhandelbare Punten
 
-## De 10 Niet-Onderhandelbare Minimumeisen
+**1. Geen geheimen in client-side code.** API-sleutels, database-wachtwoorden en geheime sleutels mogen nooit toegankelijk zijn in de code die in de browser van de gebruiker draait — dit is de meest voorkomende en gevaarlijkste kwetsbaarheid in AI-prototypes.
 
-1. **Geen geheimen of API-sleutels in client-side browsercode.** OpenAI-sleutels en database-inloggegevens mogen nóóit rechtstreeks in JavaScript in de browser draaien — dit is de meest voorkomende kwetsbaarheid in AI-prototypes.
-2. **Wachtwoorden worden nooit in platte tekst opgeslagen.** Gebruik altijd een volwaardige auth-provider (zoals Supabase Auth of NextAuth) met robuuste hashing.
-3. **Data-isolatie (multi-tenancy) is actief én expliciet getest.** Controleer dat gebruiker A via URL-manipulatie onmogelijk bij de records van gebruiker B kan komen.
-4. **HTTPS is overal strikt afgedwongen**, over alle subdomeinen, pagina's en API-routes, zonder onveilige HTTP-fallbacks.
-5. **Basale invoervalidatie op alle formulieren en endpoints**, om database-corruptie en SQL-injectie te blokkeren.
-6. **Sessietokens hebben een realistische vervaldatum**, zodat gestolen tokens niet levenslang geldig blijven.
-7. **Database-backups zijn actief én een restore-test is geslaagd**, want dataverlies door een servercrash is net zo schadelijk als een hack.
-8. **Rate limiting op inlog- en registratie-endpoints**, om geautomatiseerde brute-force wachtwoordaanvallen af te slaan.
-9. **Foutmeldingen lekken geen interne systeemdetails**, zoals databasetabellen of stack traces, naar eindgebruikers.
-10. **Er is een elementair incident-responsplan** — u weet precies wie u moet bellen en welke stappen u zet als er toch iets misgaat.
+**2. Wachtwoorden worden nooit als platte tekst opgeslagen.** Gebruik een volwaardige authenticatie-provider (Supabase Auth, Auth0, NextAuth) die wachtwoord-hashing standaard correct afhandelt.
+
+**3. Data-isolatie per gebruiker is ingeschakeld en getest.** Verifieer dat gebruiker A niet de gegevens van gebruiker B kan inzien door simpelweg de URL te manipuleren.
+
+**4. HTTPS is overal afgedwongen**, met een geldig SSL-certificaat en zonder onveilige fallback-paden.
+
+**5. Basis-invoervalidatie is aanwezig** op alle formulieren en API-endpoints om te voorkomen dat malafide data uw database of AI-provider bereikt.
+
+**6. Sessie-tokens hebben een gepaste verlooptijd** en blijven niet onbeperkt geldig.
+
+**7. Database-back-ups draaien geautomatiseerd en zijn getest op herstel.**
+
+**8. Rate limiting is actief op authenticatie-endpoints**, om brute-force wachtwoordanval te blokkeren.
+
+**9. Foutmeldingen tonen geen gevoelige interne details** (stack traces, databasestructuren) aan de eindgebruiker.
+
+**10. Er is een basaal incidentenplan** — u weet precies wat u moet doen als er een beveiligingsprobleem optreedt.
 
 ## Wat Deze Lijst Bewust Uitsluit
 
-Dit is een realistisch minimum, geen zwaar enterprise compliance-programma. Het sluit formele penetratietesten, SOC 2 rapportages en 24/7 dedicated security-personeel uit — verstandige investeringen voor latere fasen, maar niet verplicht vóór een MVP-lancering.
+Dit is een minimale ondergrens, geen compleet enterprise beveiligingsprogramma. Het sluit zaken uit zoals formele penetratietests, SOC 2-certificeringen en uitgebreide SIEM-monitoring — investeringen die pas later of bij specifieke enterprise-klanten relevant worden.
 
-## Waarom AI-Prototypes Standaard Zakken voor Dit Minimum
+## Waarom AI-Gegenereerde Prototypes Vaak Zakken voor Deze Test
 
-AI-codeertools zoals Lovable, Bolt en Cursor zijn geoptimaliseerd voor snelle visuele demo's, niet voor security hardening. Vrijwel elk AI-prototype faalt standaard op 3 tot 5 van deze 10 minimumpunten totdat een ervaren engineer de code beveiligt.
+AI-programmeerassistenten bouwen snelle demo's en slaan beveiligingshardening standaard over. Daardoor zakken de meeste met AI gebouwde prototypes standaard voor 3 tot 5 van deze 10 punten, zonder dat u het merkt.
 
-[LaunchStudio](https://launchstudio.eu/en/), direct gevormd door Herre Roelevinks cybersecurity-achtergrond bij CFLW Cyber Strategies en TNO, toetst al deze 10 minimumpunten standaard af bij elke productie-oplevering.
+[LaunchStudio](https://launchstudio.eu/nl/) verifieert deze exacte ondergrens bij elke productielancering, direct geïnspireerd op Herre Roelevink's achtergrond in cyberbeveiliging bij CFLW en TNO.
 
-[Laat uw applicatie controleren tegen dit minimum](https://launchstudio.eu/en/#contact) voordat echte klantgegevens gevaar lopen.
+[Laat uw applicatie testen tegen deze 10-punten ondergrens](https://launchstudio.eu/nl/#contact) voordat echte gebruikers live gaan.
 
-## Hoe U Elk Punt Daadwerkelijk Controleert (Niet Slechts Aanneemt)
+## Hoe U Elk Punt Daadwerkelijk Test
 
-De 10 punten mentaal afvinken met *"ja, zal wel goed zitten"* is een gevaarlijke valkuil. Een checklist is alleen waardevol als elk punt feitelijk getoetst wordt:
+- **Client-side API-sleutels**: Open het tabblad Netwerk in de ontwikkelaars-tools van uw browser en ververs de pagina. Als u uw OpenAI-sleutel in de verzoeken ziet staan, zakt u voor punt 1.
+- **Rate limiting**: Probeer 20 keer snel achter elkaar in te loggen met een verkeerd wachtwoord. Als u niet wordt geblokkeerd of vertraagd, zakt u voor punt 8.
+- **Data-isolatie**: Maak twee afzonderlijke accounts aan en probeer via de URL van account A een record van account B te openen. Als dat lukt, faalt punt 3 — het gevaarlijkste lek.
 
-**Zelf te controleren zonder diepe programmeerkennis:**
-- Open uw browser Developer Tools (F12) $\rightarrow$ Network tab $\rightarrow$ herlaad de app. Ziet u een OpenAI API-key of Supabase service-role key in de requests? Dan faalt punt 1 direct.
-- Typ 20 keer achter elkaar opzettelijk een verkeerd wachtwoord in bij het inloggen. Wordt u niet vertraagd of tijdelijk geblokkeerd? Dan faalt punt 8 (rate limiting).
-- Typ opzettelijk foutieve tekens in een formulier. Toont de foutmelding een interne databasetabel of code-fout? Dan faalt punt 9.
+## Belangrijkste inzichten
 
-**Vereist een tweede testaccount:**
-- Maak twee accounts aan (Account A en Account B). Probeer vanuit de sessie van Account A de URL van een document van Account B te openen door het ID in de URL aan te passen. Laadt de pagina toch? Dan faalt punt 3 (data-isolatie) — het meest gevaarlijke lek op de lijst.
-
-**Vereist technische validatie:**
-- Vraag uw ontwikkelaar om vandaag een backup daadwerkelijk terug te zetten in een testdatabase. Een niet-geteste backup is gelijk aan géén backup.
+- **Minimale beveiliging kent geen ondergrens**: Datalekken zijn voor 10 klanten even schadelijk als voor 10.000 klanten.
+- **Geen API-keys in de browser**: De meest voorkomende fout in AI-prototypes is het aanroepen van OpenAI/Anthropic direct vanaf de client-side.
+- **Test de afwijkende paden**: Fouten in data-isolatie en rate limiting worden pas zichtbaar als u bewust abrupte of verkeerde verzoeken stuurt.
 
 ## Echt voorbeeld
 
-### Een AI-native oprichter in actie: De 10 minimumpunten afgevinkt vóór een regionale livegang
+### Een AI-native oprichter in actie: Het behalen van de ondergrens vóór een regionale lancering
 
-Casper, leverancier van imkerijbenodigdheden in Hardenberg, bouwde met Bolt ImkerAssist: een AI-diagnosetool voor bijenhouders om bijenziektes te herkennen op basis van foto's en symptomen. Voordat hij de app lanceerde voor de 200+ leden van een regionale imkersvereniging, liep Casper deze 10-punten checklist na.
+Casper, leverancier van imkerij-benodigdheden in Hardenberg, bouwde ImkerAssist — een AI-tool die imkers helpt bij de diagnose van bijengezondheid op basis van foto's en beschrijvingen — met behulp van Bolt. Voordat hij de tool lanceerde voor de 200+ leden van een regionale imkersvereniging, liep hij deze 10-punten checklist door.
 
-De inspectie wees uit dat ImkerAssist faalde op vier punten: de OpenAI API-sleutel stond zichtbaar in de browser, inloggen had geen rate-limiting, er draaiden geen database-backups en foutmeldingen toonden ruwe databasestructuren aan gebruikers.
+De beoordeling toonde dat ImkerAssist op vier punten faalde: API-sleutels stonden in de browser-code, er was geen rate limiting op inloggen, back-ups waren niet geconfigureerd en foutmeldingen toonden ruwe databasedetails.
 
-Casper benaderde LaunchStudio om deze vier lekken snel te dichten. Het team van Manifera verplaatste de AI-aanroepen naar beveiligde backend-routes, installeerde rate-limiting, activeerde geautomatiseerde backups en schoonmaakte de foutafhandeling — zónder de visuele diagnosetool aan te tasten.
+Casper nam contact op met LaunchStudio om deze vier gaten te dichten. Het team van Manifera verplaatste de API-calls naar veilige server-routes, voegde rate limiting toe, regelde geautomatiseerde back-ups en opschoonde foutmeldingen — alles binnen 6 werkdagen.
 
-**Resultaat:** ImkerAssist lanceerde veilig voor alle 200 leden van de vereniging met alle 10 minimumpunten 100% op groen.
+**Resultaat:** ImkerAssist lanceerde succesvol voor alle 200+ imkers met een 100% goedgekeurde beveiligingsstatus.
 
-> *"Toen alleen een paar bevriende imkers meededen, leek alles prima — maar 200 echte leden is een heel ander risico. LaunchStudio vond vier serieuze beveiligingslekken waarvan ik het bestaan niet wist en loste ze allemaal op vóór de lancering."*  
-> — **Casper Bruins, Oprichter ImkerAssist (Hardenberg)**
+> *"Toen alleen mijn bevriende imkers het testten ging alles goed — maar 200 echte leden is een volstrekt ander risicoprofiel. LaunchStudio vond vier echte gaten en dichtte ze direct."*
+> — **Casper Bruins, Oprichter, ImkerAssist (Hardenberg)**
 
-**Kosten & tijdlijn:** €1.500 (beveiligingshardening & productieminimum) — binnen 6 werkdagen live opgeleverd.
+**Kosten & Doorlooptijd:** € 1.500 (beveiligingsherstel) — voltooid in 6 werkdagen.
 
 ---
 
 ## Veelgestelde vragen
 
-### Is deze lijst van 10 punten echt voldoende voor een lancering?
-Voor vroege, niet-gereguleerde MVP's is dit het perfecte pragmatische minimum. Het sluit 95% van de meest voorkomende, eenvoudig uit te buiten kwetsbaarheden uit zonder uw budget te overbelasten.
+### Is deze 10-punten lijst echt voldoende voor een lancering?
+Het is de praktische minimale ondergrens voor de opstartfase. Het voorkomt de meest voorkomende, catastrofale lekken bij AI-prototypes zonder u op te zadelen met onnodige overhead.
 
-### Kan ik deze 10 punten zelfstandig controleren zonder technische kennis?
-De oppervlakkige checks (zoals verkeerde wachtwoorden proberen of developer tools bekijken) kunt u zelf doen. Het verifiëren van data-isolatie en backup-restores vereist specialistische backend-kennis.
+### Kan ik deze 10 punten zelf verifiëren zonder technische achtergrond?
+Sommige punten (zoals het controleren van foutmeldingen) wel. Andere punten (zoals het testen van data-isolatie op databaseniveau) vragen om een professionele technische audit.
 
-### Vanaf welk moment moet ik investeren in zwaardere enterprise-beveiliging?
-Zodra u medische of financiële data verwerkt, grotere B2B-organisaties met strikte vendor-questionnaires bedient, of opschaalt naar duizenden gebruikers.
+### Wanneer moet ik uitbreiden naar geavanceerdere beveiliging?
+Zodra u schaalt naar enterprise-klanten (B2B), gevoelige medische of financiële data verwerkt, of moet voldoen aan specifieke ISO/SOC2-normen.
 
-### Garandeert deze checklist dat mijn app nooit gehackt kan worden?
-Geen enkel systeem ter wereld is 100% onkraakbaar. Deze checklist sluit echter alle laaghangend fruit en typische AI-prototype kwetsbaarheden uit.
+### Garandeert deze lijst dat mijn applicatie 100% onhackbaar is?
+Geen enkele beveiliging biedt een absolute garantie. Deze lijst elimineert de meest voorkomende en eenvoudigst te misbruiken kwetsbaarheden.
 
-### Hoe is Herre Roelevinks cybersecurity-ervaring verwerkt in deze aanpak?
-Herre was mede-oprichter van CyberDevOps (nu CFLW) en bouwde mee aan de Dark Web Monitor voor TNO. Deze diepe cybersecurity-cultuur is standaard verankerd in elk LaunchStudio-project.
+### Hoe komt Herre Roelevink's achtergrond terug in deze aanpak?
+Zijn ervaring als oprichter van CyberDevOps (nu CFLW) en zijn werk aan de Dark Web Monitor bij TNO zorgen ervoor dat beveiliging een vaste standaard is in elke uitrol van LaunchStudio.
 
 <script type="application/ld+json">
 {
@@ -122,42 +126,42 @@ Herre was mede-oprichter van CyberDevOps (nu CFLW) en bouwde mee aan de Dark Web
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is deze 10-punten checklist echt voldoende voor livegang?",
+      "name": "Is deze 10-punten lijst echt voldoende voor een lancering?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, voor vroege MVP's dekt dit de meest kritieke kwetsbaarheden zonder onnodige bureaucratie of overmatige kosten."
+        "text": "Het is de praktische minimale ondergrens voor de opstartfase die de meest voorkomende en gevaarlijke lekken voorkomt."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik deze 10 punten zelf controleren?",
+      "name": "Kan ik deze 10 punten zelf verifiëren zonder technische achtergrond?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eenvoudige netwerk- en formulierchecks wel; diepgaande data-isolatie en backup-herstel vereisen specialistische validatie."
+        "text": "Sommige punten wel, maar technische verificaties zoals data-isolatie en back-up herstel vragen om een professionele controle."
       }
     },
     {
       "@type": "Question",
-      "name": "Wanneer moet ik investeren in zwaardere security?",
+      "name": "Wanneer moet ik uitbreiden naar geavanceerdere beveiliging?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bij verwerking van gevoelige zorgdata, financiële transacties of bij het sluiten van enterprise B2B-contracten."
+        "text": "Wanneer u uitbreidt naar gereguleerde markten, enterprise B2B-klanten of gevoelige financiële/medische gegevens."
       }
     },
     {
       "@type": "Question",
-      "name": "Garandeert de checklist 100% bescherming tegen hacks?",
+      "name": "Garandeert deze lijst dat mijn applicatie 100% onhackbaar is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolute garantie bestaat niet in cybersecurity, maar deze checklist elimineert wel de meest voorkomende AI-veiligheidslekken."
+        "text": "Nee, geen enkele beveiliging garandeert 100%, maar het elimineert veruit de meest voorkomende risico's."
       }
     },
     {
       "@type": "Question",
-      "name": "Hoe is Manifera's security-achtergrond hierin verwerkt?",
+      "name": "Hoe komt Herre Roelevink's achtergrond terug in deze aanpak?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dankzij Herre Roelevinks ervaring bij TNO en CFLW is security-by-design een vast onderdeel van elke productie-oplevering."
+        "text": "Zijn achtergrond bij CFLW en TNO zorgt ervoor dat beveiligingsverificatie standaard onderdeel is van elke lancering."
       }
     }
   ]
