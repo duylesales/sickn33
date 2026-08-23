@@ -4,6 +4,15 @@
 
 ### Tháng 08
 
+#### Ngày 23
+
+- **Hoàn thiện `extra-8-local` lên đủ 100/100 bài + 100/100 bài social**: Thư mục `extra-8-local` (khởi tạo ngày 22/08, dang dở do hết quota phiên trước, còn 61/100 bài) được viết nốt 39 bài còn thiếu (số 14,15,19,20,29,30,34,35,39,40,43,44,45,48,49,50,54,55,60,63,64,65,69,70,73,74,75,80,84,85,88,89,90,93,94,95,98,99,100), mỗi bài kèm bài đăng mạng xã hội tương ứng:
+  - Đối chiếu cấu trúc chủ đề gốc theo đúng số thứ tự với `extra-1-local` (đã hoàn thiện 100/100 từ trước) để giữ đúng cụm từ khóa/persona/buyer stage cho từng số, tránh lệch mạch nội dung xuyên suốt chuỗi 100 bài.
+  - Chọn 39 gemeente Hà Lan hoàn toàn mới (Lansingerland, Westland, Pijnacker-Nootdorp, Krimpenerwaard, Bunschoten, Montferland, Buren, Neder-Betuwe, Losser, Tubbergen, Dinkelland, Wierden, Hellendoorn, Achtkarspelen, De Fryske Marren, Weststellingwerf, Westerkwartier, Pekela, Westerwolde, Dantumadiel, Tytsjerksteradiel, Ooststellingwerf, Tynaarlo, Westerveld, Tholen, Reimerswaal, Veere, Best, Bergeijk, Son en Breugel, Rucphen, Zundert, Halderberge, Bernheze, Venray, Rijssen-Holten, Brunssum, Maasgouw, Vaals), không trùng với bất kỳ thành phố nào đã dùng ở `extra-1-local` hay `extra-8-local`, mỗi thành phố kèm dữ kiện địa lý/kinh tế thực tế (vùng trồng hoa/rau kính Westland, vùng phô mai Krimpenerwaard, thị trấn than cũ Brunssum, điểm cực nam ba biên giới Vaals khép chuỗi 100 bài...).
+  - Triển khai song song 4 agent nền, mỗi agent phụ trách ~10 chủ đề, dùng 4 quốc tịch công ty case study khác nhau (Bỉ NV / Đức GmbH / Pháp SA-SAS / Bắc Âu AB-AS) để tránh trùng tên xuyên batch.
+  - Rà soát toàn diện sau khi gộp: đủ 100/100 số thứ tự, 179 file .md (không đè file cũ), toàn bộ 39 bài mới đạt 2.000-2.600 từ, schema JSON-LD (Article + FAQPage) hợp lệ 100%, đủ 5 FAQ/bài, không trùng tên file hay tên công ty case study.
+  - Commit và push lên GitHub (`dbf4d4c3`).
+
 #### Ngày 20
 
 - **11:59**: Hoàn thiện toàn bộ 3 thư mục mở rộng còn dang dở trong `manifera/2026-extra/`, đưa `extra-1-local` và `extra-2-random` lên đủ 100/100 bài và bổ sung toàn bộ bài đăng mạng xã hội còn thiếu cho `extra-6-dutchvsvietnam`:
