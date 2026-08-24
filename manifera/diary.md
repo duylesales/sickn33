@@ -4,6 +4,33 @@
 
 ### Tháng 08
 
+#### Ngày 24
+
+- **Hoàn thành toàn bộ ảnh minh họa siêu thực cho tháng 10/2026 (Bài 51 - Bài 60)**:
+  - Tạo mới và cắt chuẩn tỷ lệ 16:9 (`1365x768`, center-crop) cho 10 bài viết còn lại từ bài 51 (`51-mobile-application-company_pic.jpg`) đến bài 60 (`60-outsourcing-software-developers_pic.jpg`) thuộc thư mục `manifera/2026/october-2026/`.
+  - **Quy chuẩn mỹ thuật & Nhiếp ảnh siêu thực**: Đảm bảo 100% không gian doanh nghiệp công nghệ cao cấp (Mobile QA Lab, Boardroom financial audit, Engineering-led design studio, Global engineering workstation, Autonomous Pod standup, AI & Machine Learning research lab, Biophilic tech office, Enterprise CapEx audit desk, Architectural glass whiteboard, DevSecOps & IP governance center).
+  - **Bố cục & Nhân sự**: Đổi mới liên tục góc chụp (eye-level, high-angle diagonal, over-the-shoulder, low-angle wide, side-profile) để tránh trùng lặp bố cục. Nhân sự kết hợp giữa các Kỹ sư / Kiến trúc sư người Việt Nam và Lãnh đạo / Giám đốc người Hà Lan, tuân thủ đúng định vị mảng Hybrid Hub của Manifera (Amsterdam Governance - Vietnam Execution).
+  - Đưa toàn bộ 60/60 bài viết tháng 10/2026 đạt trạng thái 100% đầy đủ cả bài viết `.md`, bài đăng `-social.md` và hình minh họa `_pic.jpg`.
+- **Tạo ảnh minh họa siêu thực cho tháng 11/2026 (Đã hoàn thành Bài 01 - Bài 16)**:
+  - Đã tạo và cắt chuẩn 16:9 (`1365x768`, center-crop) cho 16 bài viết đầu tiên thuộc `manifera/2026/november-2026/`:
+    - [`01-offshore-mobile-app-development_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/01-offshore-mobile-app-development_pic.jpg) (Kỹ sư di động Việt Nam & VP Engineering Hà Lan nhìn ra toàn cảnh sông Sài Gòn).
+    - [`02-ai-driven-software-development_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/02-ai-driven-software-development_pic.jpg) (Góc chụp chéo từ trên xuống bàn đá granite, phân tích schema pipeline đặc trưng & loss curves).
+    - [`03-application-development-outsourcing_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/03-application-development-outsourcing_pic.jpg) (Trung tâm DevSecOps rà soát lỗ hổng SAST & luồng xác thực zero-trust).
+    - [`04-devops-software_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/04-devops-software_pic.jpg) (Trung tâm chỉ huy DevOps & SRE, phân tích đường ống triển khai CI/CD và cụm Kubernetes).
+    - [`05-ai-app-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/05-ai-app-development-company_pic.jpg) (Chụp cận cảnh tablet hiển thị kiến trúc Enterprise RAG và đo lường độ trễ vector benchmark).
+    - [`06-custom-software-development-firms_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/06-custom-software-development-firms_pic.jpg) (Bàn họp phòng điều hành, CFO Hà Lan & Kiến trúc sư Việt Nam kiểm toán mô hình CapEx/OpEx và tốc độ Pod).
+    - [`07-mobile-app-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/07-mobile-app-development-company_pic.jpg) (Phòng chẩn đoán kỹ thuật di động, rà soát lỗi rò rỉ bộ nhớ và đồ thị render UI 60-FPS trên thiết bị thực).
+    - [`08-development-in-cloud_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/08-development-in-cloud_pic.jpg) (Không gian làm việc sinh thái biophilic, phân tích tối ưu chi phí kiến trúc microservices đa vùng).
+    - [`09-ai-software-development-companies_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/09-ai-software-development-companies_pic.jpg) (Studio AI kỹ thuật, phân tích cụm không gian vector đa chiều và độ trễ tìm kiếm tương đồng).
+    - [`10-software-outsourcing_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/10-software-outsourcing_pic.jpg) (Văn phòng quản trị pháp lý & IP, rà soát hợp đồng escrow IP Hà Lan và kiểm toán ký số commit Git).
+    - [`11-mobile-application-development-cost_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/11-mobile-application-development-cost_pic.jpg) (Phòng họp điều hành, CFO Hà Lan & Kiến trúc sư giải pháp phân tích mô hình tài chính TCO vòng đời phần mềm).
+    - [`12-custom-software-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/12-custom-software-company_pic.jpg) (Nhìn xuyên bảng kính trong suốt, Product Owner phác thảo ma trận tác động tính năng và biểu đồ burnup nợ kỹ thuật).
+    - [`13-ai-software-developer_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/13-ai-software-developer_pic.jpg) (Bàn làm việc Pod AI MLOps, giám sát cụm GPU phân tán và nhật ký phiên bản model registry).
+    - [`14-devops-software-development_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/14-devops-software-development_pic.jpg) (Bàn lập trình cặp DevSecOps, rà soát mã nguồn Terraform HCL và triển khai canary tự động).
+    - [`15-cloud-software-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/15-cloud-software-development-company_pic.jpg) (Chụp cận cảnh sổ tay kiến trúc microservices Kubernetes độc lập với nhà cung cấp đám mây).
+    - [`16-dedicated-software-development-team_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/16-dedicated-software-development-team_pic.jpg) (Buổi họp standup Pod tự chủ trước bảng Kanban từ tính và biểu đồ vận tốc sprint).
+  - Tạm dừng tại bài 17 do hệ thống đạt giới hạn quota tạo ảnh native của phiên hiện tại.
+
 #### Ngày 23
 
 - **Hoàn thiện `extra-8-local` lên đủ 100/100 bài + 100/100 bài social**: Thư mục `extra-8-local` (khởi tạo ngày 22/08, dang dở do hết quota phiên trước, còn 61/100 bài) được viết nốt 39 bài còn thiếu (số 14,15,19,20,29,30,34,35,39,40,43,44,45,48,49,50,54,55,60,63,64,65,69,70,73,74,75,80,84,85,88,89,90,93,94,95,98,99,100), mỗi bài kèm bài đăng mạng xã hội tương ứng:
