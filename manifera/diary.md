@@ -4,6 +4,25 @@
 
 ### Tháng 08
 
+#### Ngày 25
+
+- **Tiếp tục tạo ảnh minh họa siêu thực cho tháng 11/2026 (Hoàn thành tiếp Bài 17 - Bài 29, nâng tổng lên 29/60 bài)**:
+  - Tạo mới và center-crop chuẩn 16:9 (`1365x768`) cho 13 bài viết tiếp theo thuộc thư mục `manifera/2026/november-2026/`:
+    - [`17-offshore-software-solutions_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/17-offshore-software-solutions_pic.jpg) (Trung tâm minh bạch kỹ thuật phần mềm, rà soát cổng chất lượng GitOps và đường ống trunk-based).
+    - [`18-software-at-scale_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/18-software-at-scale_pic.jpg) (Phòng tác chiến hệ thống phân tán, phân tích kiến trúc streaming sự kiện và độ trễ hàng đợi Kafka).
+    - [`19-custom-software-application-development_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/19-custom-software-application-development_pic.jpg) (Phòng an ninh mạng DevSecOps, rà soát lỗ hổng container và thực thi chính sách Zero-Trust).
+    - [`20-ai-app-development-services_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/20-ai-app-development-services_pic.jpg) (Cận cảnh tablet hiển thị dashboard Semantic Caching AI với tỷ lệ cache hit 92% và giảm 65% token).
+    - [`21-saas-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/21-saas-development-company_pic.jpg) (Không gian kiến trúc cơ sở dữ liệu, phân tích mô hình bảo mật Row-Level Security RLS đa người thuê trên màn hình 4K dọc).
+    - [`22-saas-app-development_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/22-saas-app-development_pic.jpg) (Bàn làm việc backend SaaS, theo dõi luồng sự kiện webhook thanh toán định kỳ và hàng đợi retry bất biến).
+    - [`23-offshore-software-developers_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/23-offshore-software-developers_pic.jpg) (Trạm kiểm định chất lượng mã nguồn, phân tích bản đồ nhiệt độ phức tạp SonarQube và quy tắc AST linting).
+    - [`24-custom-software-development-solutions_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/24-custom-software-development-solutions_pic.jpg) (Studio tích hợp phần mềm, phác thảo cổng GraphQL Federation và cấu trúc subgraph Apollo trên bảng kính từ tính).
+    - [`25-dedicated-software-developers_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/25-dedicated-software-developers_pic.jpg) (Cận cảnh máy tính khởi tạo môi trường Dev Container Docker tự động hóa 1-click cho lập trình viên mới).
+    - [`26-software-development-team_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/26-software-development-team_pic.jpg) (Không gian Pod tự chủ đa năng, trao đổi trước màn hình vận tốc agile và dashboard release CI/CD).
+    - [`27-mobile-app-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/27-mobile-app-development-company_pic.jpg) (Bàn test hiệu năng di động, đo đạc render GPU 60-FPS và hiệu năng đa nền tảng trên thiết bị thực).
+    - [`28-custom-app-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/28-custom-app-development-company_pic.jpg) (Phòng tư vấn kiến trúc đám mây, phân tích mô hình Strangler Fig phân tách monolith cũ sang microservices).
+    - [`29-ai-app-development-company_pic.jpg`](file:///Users/duyle/sickn33/manifera/2026/november-2026/29-ai-app-development-company_pic.jpg) (Cận cảnh iPad hiển thị báo cáo hiệu năng Advanced RAG với 98,4% độ chính xác và loại bỏ hoàn toàn ảo giác).
+  - Tạm dừng tại bài 30 do hệ thống đạt giới hạn quota tạo ảnh native của chu kỳ sáng 25/08.
+
 #### Ngày 24
 
 - **Hoàn thành toàn bộ ảnh minh họa siêu thực cho tháng 10/2026 (Bài 51 - Bài 60)**:
