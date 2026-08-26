@@ -5,6 +5,13 @@
 ### Tháng 08
 #### Ngày 26
 
+- **11:15**: Cập nhật cấu trúc bảng tổng mục nội dung [`launchstudio/content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/content_inventory.md) cho toàn bộ 520 bài viết thuộc cả 6 tháng (July - December 2026):
+  - Bổ sung các cột theo dõi trạng thái xuất bản (`Posted` và `Posted - Dutch`) ngay bên phải của tất cả các cột liên kết bài viết:
+    - Cột `Posted` ngay sau cột `Bài viết` (English Article).
+    - Cột `Posted - Dutch` ngay sau cột `Bài viết - Dutch` (Dutch Article).
+    - Cột `Posted` ngay sau cột `Bài Social Media` (English Social Post).
+    - Cột `Posted - Dutch` ngay sau cột `Bài Social Media - Dutch` (Dutch Social Post).
+  - Chuẩn hóa toàn bộ 520 hàng dữ liệu và 6 bảng tháng đạt 18 cột đồng nhất, sẵn sàng phục vụ quy trình đánh dấu và kiểm soát xuất bản nội dung lên live CMS.
 - **10:25**: Hoàn thành 100% bản dịch tiếng Hà Lan (Dutch) cho toàn bộ 10 bài viết mở rộng từ Bài 71 đến Bài 80 thuộc Tháng 09/2026 (`launchstudio/2026/september-2026/`), bao gồm trọn bộ 10 bài viết chuyên sâu (`71-..._dutch.md` đến `80-..._dutch.md`) và 10 bài đăng mạng xã hội đồng hành (`71-...-social_dutch.md` đến `80-...-social_dutch.md`):
   - **Đảm bảo tính toàn vẹn 100% nội dung (Full Technical Fidelity)**: Giữ nguyên toàn bộ chiều sâu kỹ thuật, các khái niệm chuyên sâu (Uptime SLA, Managed Queue vs BullMQ, Serverless RAG cold-start, Unbounded LLM retry loops, Multi-Region replication, FinOps vs Architecture audit, Zero-downtime Postgres read-replica migration, Token budget guardrails & race conditions, Row-Level Security vs App-layer authorization, Series B technical due diligence scorecard), bảng so sánh, code snippets, và case study thực tế chi tiết.
   - **Quy chuẩn FAQ & Schema JSON-LD (Tuân thủ triệt để AGENTS.md)**: 100% cả 10 bài viết đều có đúng **5 câu hỏi thường gặp (`## Veelgestelde Vragen`)** và khối mã `<script type="application/ld+json">` (`FAQPage` schema) chuẩn SEO đồng bộ ở cuối bài.
