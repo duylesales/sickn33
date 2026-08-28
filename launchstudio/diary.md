@@ -3,6 +3,13 @@
 ## 2026
 
 ### Tháng 08
+#### Ngày 28
+
+- **09:55**: Dịch lại và chuẩn hóa bản dịch tiếng Hà Lan (Dutch) cho Bài 13 Tháng 8/2026 (`launchstudio/2026/august-2026/13-building-slack-apps-embedded-ai_dutch.md`):
+  - **Khớp chuẩn tiêu đề (Title & H1)**: Điều chỉnh tiêu đề chuẩn xác thành `Slack-Apps Bouwen met Embedded AI SaaS` (loại bỏ subtitle thừa trước đó để khớp 100% với bản tiếng Anh `Building Slack Apps with Embedded AI SaaS`).
+  - **Bổ sung Schema Article & FAQPage JSON-LD**: Tích hợp khối schema `Article` ở đầu bài và duy trì đầy đủ 5 câu hỏi thường gặp (`## Veelgestelde Vragen`) kèm schema `FAQPage` chuẩn SEO ở cuối bài.
+  - **Đồng bộ hóa Content Inventory & Social Post**: Cập nhật tiêu đề tiếng Hà Lan trong [`launchstudio/content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/content_inventory.md) tại hàng 13 Tháng 8/2026 và hoàn thiện bài đăng mạng xã hội đồng hành [`13-building-slack-apps-embedded-ai-social_dutch.md`](file:///Users/duyle/sickn33/launchstudio/2026/august-2026/13-building-slack-apps-embedded-ai-social_dutch.md).
+
 #### Ngày 26
 
 - **16:05**: Hoàn thành 100% bản dịch tiếng Hà Lan (Dutch) cho toàn bộ 20 bài viết thuộc thư mục Decision-Stage Content `extra-8-decision` (`launchstudio/2026-extra/extra-8-decision/`), bao gồm trọn bộ 20 bài viết chuyên sâu (`01-...-dutch.md` đến `20-...-dutch.md`) và 20 bài đăng mạng xã hội đồng hành (`01-...-social-dutch.md` đến `20-...-social-dutch.md`):
