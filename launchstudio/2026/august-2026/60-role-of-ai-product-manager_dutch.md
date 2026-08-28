@@ -1,10 +1,35 @@
 ---
-Titel: "De Cruciale Rol van de AI Product Manager in Moderne Softwareteams"
-Trefwoorden: AI product manager, AI software engineering, AI en softwareontwikkeling, AI SaaS, AI-native, AI-app bouwen, dev AI
+Titel: "De Cruciale Rol van de AI Product Manager in Moderne Software Teams"
+Trefwoorden: AI Product Manager, prompt product management, latency vs cost tradeoffs, AI roadmap, LaunchStudio, Manifera
 Koperfase: Bewustzijn
+Doelgroep: Product Managers / VP Product / Founders
 ---
 
-# De Cruciale Rol van de AI Product Manager in Moderne Softwareteams
+# De Cruciale Rol van de AI Product Manager in Moderne Software Teams
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Cruciale Rol van de AI Product Manager in Moderne Software Teams",
+  "description": "Hoe AI Product Managers balanceren tussen modelnauwkeurigheid, tokenkosten, reactiesnelheid en gebruikersfrictie.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-60",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/role-of-ai-product-manager"
+  }
+}
+</script>
 
 Decennialang was softwareontwikkeling **deterministisch**. Als een gebruiker X invoert, geeft de database elke keer exact Y terug. Productmanagers tekenden gedetailleerde wireframes, formuleerden strikte acceptatiecriteria en software-engineers bouwden exact wat er in het ticket gespecificeerd stond. Generatieve AI heeft dit paradigma vanaf de basis doorbroken. Grote taalmodellen (LLM's) zijn **probabilistisch**: als een gebruiker X invoert, kan het model Y antwoorden, Z genereren of vol zelfvertrouwen een plausibel klinkend maar volstrekt gefabriceerd antwoord verzinnen. Om een geloofwaardig B2B AI SaaS-product te bouwen, moet de rol van de Product Manager evolueren van het beheren van functies naar het managen van onzekerheid zelf — en de meeste traditionele PM-trainingen, ontworpen voor een deterministische wereld, schieten hier simpelweg tekort.
 
@@ -108,7 +133,7 @@ LaunchStudio is een initiatief van Manifera, opgericht in 2014 en met het hoofdk
       "name": "Waarom schieten traditionele Product Management frameworks tekort bij AI-producten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Traditioneel productmanagement vertrouwt op voorspelbaar, deterministisch softwaregedrag. AI is daarentegen probabilistisch — het kan hallucineren of plausibel klinkende maar onjuiste antwoorden verzinnen. Je kunt geen traditionele, statische user story schrijven voor een systeem waarvan de output varieert."
+        "text": "Traditioneel productmanagement vertrouwt op voorspelbaar, deterministisch softwaregedrag. AI is daarentegen probabilistisch — het kan hallucineren of plausibel klinkende maar onjuiste antwoorden verzinnen. Je kunt geen traditionele, statische \"user story\" schrijven voor een systeem waarvan de output van run tot run kan variëren."
       }
     },
     {
@@ -116,7 +141,7 @@ LaunchStudio is een initiatief van Manifera, opgericht in 2014 en met het hoofdk
       "name": "Wat is de primaire taak van een AI Product Manager?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het definiëren van de acceptabele foutmarge voor elke specifieke use-case en het ontwerpen van UX-fallbacks, zoals Human-in-the-Loop controlepoorten, voor wanneer de AI onvermijdelijk fouten maakt."
+        "text": "Het definiëren van de \"acceptabele foutmarge\" voor elke specifieke use-case, aangezien die drempelwaarde per domein enorm verschilt, en het ontwerpen van UX-fallbacks — zoals Human-in-the-Loop controlepoorten — voor de momenten waarop de AI onvermijdelijk een fout maakt."
       }
     },
     {
@@ -124,7 +149,7 @@ LaunchStudio is een initiatief van Manifera, opgericht in 2014 en met het hoofdk
       "name": "Wat houdt 'Evaluation-Driven Development' (Evals) in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In plaats van handmatige steekproeven cureert de AI PM een database van honderden testprompts met ideale antwoorden om model-, prompt- en architectuurwijzigingen geautomatiseerd te benchmarken op kwaliteitsregressies."
+        "text": "In plaats van te vertrouwen op handmatige steekproeven, cureert de AI PM een groeiende database van honderden testprompts met ideale antwoorden. Telkens wanneer engineers de prompt, de architectuur of het onderliggende model wijzigen, wordt het systeem opnieuw getoetst aan deze evals om kwaliteitsregressies te detecteren voordat klanten ermee worden geconfronteerd."
       }
     },
     {
@@ -132,7 +157,7 @@ LaunchStudio is een initiatief van Manifera, opgericht in 2014 en met het hoofdk
       "name": "Moet een AI Product Manager kunnen programmeren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Niet noodzakelijk productiecode schrijven, maar wel een diepgaand begrip hebben van RAG versus fine-tuning, token-limieten, latentie en prompt-injectiebeveiliging."
+        "text": "Zij hoeven zelf geen productiecode te schrijven, maar moeten de architectuur wel door en door begrijpen — het praktische verschil tussen RAG en fine-tuning, hoe token-limieten en latentie in de praktijk werken, en waar prompt-injectierisico's zich in het productoppervlak bevinden."
       }
     },
     {
@@ -140,7 +165,7 @@ LaunchStudio is een initiatief van Manifera, opgericht in 2014 en met het hoofdk
       "name": "Hoe helpt LaunchStudio, als onderdeel van Manifera, AI-productteams om verantwoord te lanceren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio (onderdeel van Manifera, opgericht in 2014 te Amsterdam) helpt AI-native teams prototypes van Lovable, Bolt of Cursor te voorzien van enterprise-grade beveiliging, databasemodellering en Human-in-the-Loop interfaces binnen 1 tot 3 weken."
+        "text": "LaunchStudio is een initiatief van Manifera, opgericht in 2014 en met het hoofdkantoor in Amsterdam. Onze engineers helpen AI-native teams om een veelbelovend Lovable-, Bolt- of Cursor-prototype om te vormen tot een volwaardig product met de beveiligingsarchitectuur, menselijke controlepoorten en databasestructuur die een AI PM nodig heeft om met vertrouwen live te gaan — doorgaans binnen 1 tot 3 weken. Vraag vandaag nog een gratis offerte aan."
       }
     }
   ]

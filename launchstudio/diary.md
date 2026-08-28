@@ -5,6 +5,11 @@
 ### Tháng 08
 #### Ngày 28
 
+- **11:00**: Hoàn thành 100% việc **DỊCH LẠI VÀ CHUẨN HÓA TOÀN BỘ 100 BÀI VIẾT THÁNG 8/2026** (`launchstudio/2026/august-2026/`) sang tiếng Hà Lan (Dutch), giải quyết triệt để sự chênh lệch tiêu đề, thiếu schema và không khớp cấu trúc:
+  - **Khớp chuẩn 100% Tiêu đề (Title & H1)**: Toàn bộ 100 bài viết tiếng Hà Lan (`01-..._dutch.md` đến `100-..._dutch.md`) đã được chuẩn hóa tiêu đề dịch sát nghĩa trực tiếp từ tiêu đề tiếng Anh gốc, loại bỏ hoàn toàn các phụ đề gây lệch nghĩa.
+  - **Cấu trúc 2 Khối Schema JSON-LD Chuẩn SEO**: 100% cả 100 bài viết đều có đầy đủ khối schema `Article` ở đầu bài (hướng tới URL `/nl/blog/...`) và khối schema `FAQPage` ở cuối bài.
+  - **Quy chuẩn 5 FAQs & Real Example (Tuân thủ AGENTS.md)**: 100% bài viết đều có đúng **5 câu hỏi thường gặp (`## Veelgestelde Vragen`)** khớp với 5 thực thể trong schema `FAQPage`, kèm theo đầy đủ phần `## Real example` / `## Echt voorbeeld` với số liệu, bối cảnh thực tế (Amsterdam, Utrecht, Rotterdam, Delft,...), chi phí và thời gian triển khai.
+  - **Đồng bộ hóa Bảng Tổng Mục & Nhật Ký**: Cập nhật toàn bộ tiêu đề tiếng Hà Lan, keywords, stage, tóm tắt của 100 bài trong [`launchstudio/content_inventory.md`](file:///Users/duyle/sickn33/launchstudio/content_inventory.md), duy trì cấu trúc 18 cột chuẩn cho toàn bộ 520 hàng dữ liệu.
 - **09:55**: Dịch lại và chuẩn hóa bản dịch tiếng Hà Lan (Dutch) cho Bài 13 Tháng 8/2026 (`launchstudio/2026/august-2026/13-building-slack-apps-embedded-ai_dutch.md`):
   - **Khớp chuẩn tiêu đề (Title & H1)**: Điều chỉnh tiêu đề chuẩn xác thành `Slack-Apps Bouwen met Embedded AI SaaS` (loại bỏ subtitle thừa trước đó để khớp 100% với bản tiếng Anh `Building Slack Apps with Embedded AI SaaS`).
   - **Bổ sung Schema Article & FAQPage JSON-LD**: Tích hợp khối schema `Article` ở đầu bài và duy trì đầy đủ 5 câu hỏi thường gặp (`## Veelgestelde Vragen`) kèm schema `FAQPage` chuẩn SEO ở cuối bài.

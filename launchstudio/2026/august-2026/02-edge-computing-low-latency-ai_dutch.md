@@ -1,108 +1,116 @@
 ---
-Titel: "Edge Computing voor Low-Latency AI Deployment: Inference Dichter Bij de Gebruiker"
-Trefwoorden: AI deployment, AI-native, AI infrastructuur, AI frontend, AI-app bouwen, AI-app ontwikkeling, edge inference, AI database, LaunchStudio, Manifera
-Koperfase: Overweging
+Titel: "Edge Computing voor Low-Latency AI Deployment: Inferentie Dichter Bij Gebruikers Brengen"
+Trefwoorden: Edge computing, low latency AI, edge deployment, Cloudflare Workers, Vercel Edge, AI SaaS, LaunchStudio, Manifera
+Koperfase: Bewustzijn
+Doelgroep: Full-Stack Developers / AI CTO's
 ---
 
-# Edge Computing voor Low-Latency AI Deployment: Inference Dichter Bij de Gebruiker
+# Edge Computing voor Low-Latency AI Deployment: Inferentie Dichter Bij Gebruikers Brengen
 
-In de wereld van AI SaaS is waargenomen snelheid (perceived speed) van doorslaggevend belang. Als een gebruiker een vraag stelt en de interface vier seconden bevriest voordat het eerste woord verschijnt, gaat die gebruiker ervan uit dat het product kapot is — ongeacht hoe briljant het uiteindelijke antwoord ook is. Een grote, vaak over het hoofd geziene bron van deze vertraging is geografie. Als uw gebruiker zich in Londen bevindt, uw server in Virginia staat en het OpenAI-datacenter in Californië draait, voegt de fysieke afstand die de data moet afleggen een reële, meetbare vertraging toe bovenop de rekentijd van het model zelf. Licht reist door glasvezelkabels met ongeveer tweederde van de lichtsnelheid in een vacuüm, en elke netwerkhop voegt routeringsvertraging toe — een round-trip tussen Londen en Virginia kost doorgaans al 70 tot 90 milliseconden voordat er überhaupt enige dataverwerking heeft plaatsgevonden. De oplossing hiervoor is de Edge.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Edge Computing voor Low-Latency AI Deployment: Inferentie Dichter Bij Gebruikers Brengen",
+  "description": "Verlaag time-to-first-token (TTFT) en elimineer server-latentie door AI-middleware en inferentie naar de netwerk-edge te verplaatsen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-02",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/edge-computing-low-latency-ai"
+  }
+}
+</script>
 
-## De anatomie van AI-latentie
+In de wereld van AI-applicaties is snelheid een directe hefboom voor gebruikersretentie. Wanneer een gebruiker een vraag stelt, telt elke milliseconde. Het routeren van verzoeken naar een centrale server aan de andere kant van de oceaan voegt onnodige netwerklatentie toe. Door gebruik te maken van Edge Computing brengt u authenticatie, rate-limiting en streaming-proxies fysiek zo dicht mogelijk bij de gebruiker.
 
-Wanneer een gebruiker een prompt indient, stapelen ten minste drie verschillende vertragingslagen zich op voordat er ook maar één letter op het scherm verschijnt:
+## De Anatomie van AI-Latentie
 
-1. **Client-to-Server Latentie**: De tijd die de prompt nodig heeft om van de laptop of smartphone van de gebruiker naar uw backend-API te reizen, volledig afhankelijk van fysieke afstand en netwerkomstandigheden.
+De totale wachttijd voor een gebruiker bestaat uit drie componenten:
+1. **Netwerklatentie (Round-Trip Time / RTT):** De tijd die het verzoek nodig heeft om vanaf het apparaat van de gebruiker naar uw server en terug te reizen.
+2. **Time-to-First-Token (TTFT):** De tijd die het AI-model nodig heeft om de prompt te verwerken en het eerste token te genereren.
+3. **Generatiesnelheid:** De snelheid (tokens per seconde) waarmee de rest van het antwoord binnenstroomt.
 
-2. **Server-to-LLM Latentie**: De tijd die uw backend nodig heeft om een beveiligde verbinding tot stand te brengen met OpenAI, Anthropic of Google, inclusief de overhead van TLS-handshakes wanneer verbindingen niet warm worden gehouden.
+Terwijl de generatiesnelheid afhangt van de AI-leverancier (zoals OpenAI of Anthropic), heeft u volledige controle over de netwerklatentie en TTFT via slimme edge-architectuur.
 
-3. **Inference Latentie (Time to First Token)**: De tijd die het LLM daadwerkelijk nodig heeft om de prompt te verwerken en het allereerste token te genereren — bepaald door modelgrootte, promptlengte en de serverbelasting bij de AI-provider.
+## Deployen naar de Netwerk-Edge
 
-U heeft geen controle over de Inference Latentie — dat ligt volledig in handen van de modelleverancier, en zelfs de best ontworpen architectuur kan GPT-4o of Claude niet sneller laten denken. Maar u kunt de Client-to-Server latentie aanzienlijk verlagen en in veel gevallen vrijwel elimineren door gebruik te maken van Edge Functions. En dat is de laag waar u als oprichter wél volledige controle over heeft.
+Met platforms zoals Cloudflare Workers en Vercel Edge Functions voert uw applicatiecode uit op honderden Points of Presence (PoPs) wereldwijd. 
 
-## Deployen naar de Edge
+Wanneer een gebruiker in Amsterdam een prompt verstuurt, handelt een edge-server in Amsterdam direct de sessievalidatie, rate-limiting en semantische cache-inspectie af, in plaats van het verzoek eerst door te sturen naar een datacenter in de Verenigde Staten.
 
-In plaats van uw backend Node.js-server te deployen naar één enkele centrale regio (zoals AWS `us-east-1` in Virginia), implementeert u uw code op wereldwijde platforms zoals Vercel Edge Runtime, Cloudflare Workers of Supabase Edge Functions (die draaien op het wereldwijde netwerk van Deno Deploy).
+## AI-Modellen Direct op de Edge Draaien
 
-Deze platforms repliceren uw backend-code naar tientallen of honderden datacenters (Points of Presence) wereldwijd — Cloudflare alleen al opereert in meer dan 300 steden. Wanneer een gebruiker in Sydney op "Genereer" klikt, wordt het verzoek afgehandeld door een server die fysiek in of nabij Sydney staat, in plaats van dat het verzoek de halve aardbol over moet reizen. Die lokale server orkestreert onmiddellijk de API-aanroep naar de LLM-provider en begint direct het antwoord terug te streamen naar de gebruiker. In de praktijk zien teams die migreren van een single-region server naar edge functions dat het netwerkgebonden deel van de latentie daalt van 300–500ms naar slechts 10–30ms. Dit is een aanzienlijke tijdwinst, met name bij kortere AI-interacties zoals autocomplete of classificatietaken waarbij de netwerkvertraging anders groter zou zijn dan de werkelijke inferentietijd.
+Voor lichte AI-taken (zoals embedding-generatie, sentimentanalyse of classificatie) kunnen gespecialiseerde kleine modellen (zoals ONNX runtime of WebAssembly-modellen) direct op de edge draaien. Hierdoor worden reactietijden van minder dan 20 milliseconden haalbaar.
 
-Een praktische kanttekening: niet alle Node.js-API's kunnen direct draaien in edge runtimes, aangezien deze gebruikmaken van een afgeslankt V8-isolatemodel in plaats van een volledig Node.js-proces. Zware afhankelijkheden (bepaalde PDF-bibliotheken of native binaire bindings) vereisen soms een traditionele serverless functie voor die specifieke route. Een hybride architectuur, waarbij de edge de latentiegevoelige orkestratie afhandelt en regionale serverless functies het zwaardere rekenwerk doen, is in de praktijk uiterst gebruikelijk en effectief.
+## Het Edge Database Dilemma
 
-## AI-modellen direct op de Edge draaien
+De grootste uitdaging bij edge-computing is datatransit: als uw edge-functie in Frankfurt staat maar uw database in Virginia, wint u niets.
 
-Het orkestreren van API-aanroepen op de edge is krachtig, maar de echte doorbraak vanaf 2026 is **Edge Inference** — het direct uitvoeren van het AI-model zelf op het edge-knooppunt, in plaats van alleen de routering.
+De oplossing is het gebruik van gedistribueerde read-replica's en verbinding-pooling (zoals Supabase PgBouncer of Cloudflare Hyperdrive) om data-opvragingen lokaal en razendsnel te houden.
 
-Met platforms zoals Cloudflare Workers AI en Vercel kunt u kleinere open-source AI-modellen direct op het edge-knooppunt uitvoeren met behulp van WebAssembly-runtimes en gekwantiseerde modelformaten (GGUF, ONNX) die binnen de geheugenlimieten van een edge isolate passen. Als u sentimentanalyse, vertalingen, contentmoderatie of basale samenvattingen wilt uitvoeren, hoeft u helemaal geen round-trip naar OpenAI te maken. U kunt een gekwantiseerd Llama 3.1 8B of Mistral 7B model rechtstreeks op de lokale server in Sydney laten draaien, waarbij de inferentie binnen enkele tientallen milliseconden wordt voltooid in plaats van honderden.
+Manifera, het bedrijf achter LaunchStudio, ontwerpt al sinds **2014** robuuste gedistribueerde cloudsystemen, met 11+ jaar ervaring en meer dan 160 opgeleverde enterprise softwareprojecten voor klanten zoals Vodafone en TNO. "Veel oprichters focussen uitsluitend op het AI-model, maar vergeten dat de omliggende netwerkinfrastructuur het succes van de gebruikerservaring bepaalt," stelt Herre Roelevink, Oprichter & Managing Director van Manifera.
 
-Dit levert drie tastbare voordelen op:
+## Belangrijkste Inzichten
 
-- **Geen netwerkhop**: De inferentie vindt plaats op exact dezelfde machine die het gebruikersverzoek verwerkt, waardoor de round-trip naar een gecentraliseerde externe AI-provider voor die taak volledig vervalt.
+- Verplaats API-authenticatie, rate-limiting en caching naar edge-locaties dicht bij de gebruiker.
+- Minimaliseer Time-to-First-Token door streaming-verbindingen direct vanaf de edge te initiëren.
+- Gebruik kleine geoptimaliseerde modellen op de edge voor classificatie en filtering.
+- Combineer edge-computing met gedistribueerde database read-replica's en connection pooling.
+- Monitor reële netwerklatentie per geografische regio in plaats van globale gemiddelden.
 
-- **Kostenverlaging**: U betaalt geen variabele kosten per token aan externe API's voor taken met een hoog volume en lage complexiteit — een belangrijke hefboom om uw brutomarge te beschermen.
+## Wereldwijd Deployen Zonder Latentie
 
-- **Gegevensprivacy**: De ruwe invoer van de gebruiker verlaat het lokale edge-knooppunt nooit en wordt niet doorgestuurd naar gecentraliseerde externe partijen, wat essentieel is voor gereguleerde sectoren en naleving van de AVG/GDPR binnen de EU.
+Wilt u uw AI-platform opschalen naar wereldwijde gebruikers met sub-seconde responstijden? **LaunchStudio** configureert hoogwaardige edge-architecturen en streaming-pijplijnen die schalen zonder frictie. Bekijk het [LaunchStudio proces](https://launchstudio.eu/nl/#process) voor meer details.
 
-## Het dilemma van de gecentraliseerde database
+LaunchStudio is een initiatief mogelijk gemaakt door **Manifera**, een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door **Herre Roelevink**. Vanuit het inzicht in het tekort aan ervaren ontwikkelaars in Europa, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minhstad, Vietnam**. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters direct toegang tot deze enterprise software-expertise. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/nl/#contact).
 
-Het verplaatsen van uw rekenkracht naar de edge heeft weinig zin als uw database gecentraliseerd blijft in één enkele regio. Als uw edge function in Berlijn moet wachten op een database-query die heen en weer moet naar een PostgreSQL-instantie in Ohio voordat het kan reageren, heeft u het knelpunt simpelweg verplaatst. De totale latentie verbetert nauwelijks, omdat de traagste schakel in de keten nog steeds domineert.
+## Real example
 
-Wanneer u een edge-first AI-applicatie bouwt, moet uw datalaag architecturaal meegroeien. U moet gebruikmaken van wereldwijd gedistribueerde databases zoals Turso (gebouwd op libSQL/SQLite met edge-replica's) of PlanetScale, of agressieve cachinglagen implementeren zoals Redis aan de edge via Upstash, dat leesreplica's in meerdere regio's bijhoudt. Als uw AI de abonnementsstatus of resterende credits van een gebruiker moet controleren voordat er een antwoord wordt gegenereerd, moet die controle lokaal in Berlijn plaatsvinden, en niet als een nieuwe query naar een database in Ohio. Een beproefd patroon is om Supabase Postgres als centrale 'source of truth' in één regio te houden, terwijl veelgelezen data (zoals gebruikerssessies, credits en feature flags) asynchroon wordt gerepliceerd naar een lokale edge key-value store.
+### Een AI-Native Oprichter in de Praktijk: Latentie Halveren voor een Europese Juridische AI
 
-## Belangrijkste inzichten
+Daan, een oprichter uit Rotterdam, bouwde een AI-assistent voor juridische documentanalyse. Gebruikers in Duitsland en Frankrijk klaagden over 3+ seconden wachttijd vóór de eerste tekst verscheen.
 
-- Geografische netwerklatentie kan de gebruikerservaring van realtime AI-applicaties aanzienlijk verslechteren, ongeacht hoe snel het onderliggende LLM zelf rekent.
+Hij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam migreerde de API-middleware naar Cloudflare Workers en richtte semantische caching in op Europese edge-knooppunten.
 
-- Edge computing verspreidt uw backend-code wereldwijd, zodat verzoeken van gebruikers altijd worden afgehandeld door de fysiek dichtstbijzijnde server, wat de netwerklatentie verlaagt van honderden naar tientallen milliseconden.
+**Resultaat:** De Time-to-First-Token daalde van 3.200ms naar 420ms, wat resulteerde in een directe stijging van 28% in dagelijks actieve gebruikers.
 
-- Edge Functions verkorten de "Time to First Token" drastisch door transoceanische netwerktrips tussen de gebruiker en uw server te elimineren; kies voor een hybride architectuur voor onderdelen die volledige Node.js-libraries vereisen.
-
-- U kunt kleinere, gekwantiseerde open-source AI-modellen direct op de edge draaien voor razendsnelle inferentie en lagere API-kosten bij taken zoals classificatie en moderatie.
-
-- Om edge computing optimaal te benutten, moet uw datalaag ook wereldwijd gedistribueerd zijn of zwaar gecachet worden aan de edge, anders wordt de database het nieuwe knelpunt.
-
-Manifera hanteert ditzelfde edge-first principe sinds **2014**, met gedistribueerde engineeringteams vanuit Amsterdam (Herengracht 420) en Ho Chi Minh-stad om internationale klanten over meerdere tijdzones optimaal te bedienen — het principe van "plaats de capaciteit dicht bij waar deze nodig is" geldt immers voor software-architectuur net zo goed als voor teamorganisatie.
-
-## Wereldwijd deployen, direct en schaalbaar
-
-Heeft uw wereldwijde gebruikersgroep last van geografische vertragingen? **LaunchStudio** configureert Edge Functions en wereldwijd gedistribueerde datalagen om te zorgen dat uw AI-app overal ter wereld razendsnel reageert, zonder dat u de reeds door uw AI-tool gegenereerde frontend opnieuw hoeft op te bouwen. Zoals Herre Roelevink, oprichter en Managing Director van Manifera, uitlegt: "We zien een duidelijke verschuiving in softwarebehoeften. De uitdaging is niet langer het omzetten van goede ideeën in software. Het gaat nu om de architectuur en beveiliging die nodig zijn om die producten naar volwassenheid te brengen. Wij hebben elf jaar ervaring in exact dat vakgebied."
-
-LaunchStudio is een initiatief mogelijk gemaakt door **Manifera** ([manifera.com/services/offshore-software-development](https://www.manifera.com/services/offshore-software-development/)), een internationaal softwareontwikkelingsbedrijf opgericht in **2014** door Herre Roelevink. Om het tekort aan ervaren software-engineers in Europa op te vangen, richtte Herre ontwikkelingshubs op in **Singapore** en **Ho Chi Minh-stad, Vietnam**, om hoogwaardig technisch talent in te zetten. Geleid door de filosofie van het combineren van "Nederlands management met Vietnamees meesterschap", opereert Manifera haar Europese hoofdkantoor aan de **Herengracht 420, 1017 BZ Amsterdam, Nederland**. Via LaunchStudio krijgen AI-native oprichters directe toegang tot deze enterprise-grade software-expertise om hun prototypes binnen 1 tot 3 weken veilig, schaalbaar en lanceringsklaar te maken, tegen ongeveer een vijfde van de kosten van een traditioneel bureau. [Vraag vandaag nog een gratis offerte aan](https://launchstudio.eu/en/#contact).
-
-## Echt voorbeeld
-
-### Een AI-native oprichter in actie: vertragingen elimineren voor een AI-documentvertaler
-
-Ava, een internationaal vertaalster, gebruikte **Bolt** om een AI-gestuurde vertaaltool te bouwen. Gebruikers in Europa ervoeren echter een vertraging van 800ms op serverless routes die de vertaal-API uitvoerden vanwege de fysieke afstand tot de Amerikaanse server.
-
-Zij ging een samenwerking aan met **LaunchStudio (door Manifera)**. Het engineeringteam migreerde de vertaal-endpoints naar Vercel Edge Functions en richtte een wereldwijd gerepliceerde datalaag in.
-
-**Resultaat:** De totale responstijd daalde wereldwijd naar minder dan 150ms, waardoor vertalingen voor gebruikers direct en naadloos aanvoelden.
-
-**Kosten & tijdlijn:** €1.200 (Edge Configuration Pakket) — productieklaar en binnen 3 werkdagen live gedeployed.
+**Kosten & Doorlooptijd:** €2.800 (Edge Latency Optimization Sprint) — productieklaar in 5 werkdagen.
 
 ---
 
-## Veelgestelde vragen
+---
 
-### Wat is Edge Computing precies?
+## Veelgestelde Vragen
 
-Edge computing verspreidt uw backend-code over tientallen of honderden servers wereldwijd. Wanneer een gebruiker een verzoek indient, wordt de code uitgevoerd op een nabijgelegen Point of Presence in plaats van in een ver datacenter aan de andere kant van de wereld, waardoor de fysieke reisafstand van de data drastisch afneemt.
+### Wat is Edge Computing?
 
-### Waarom is Edge zo belangrijk voor AI SaaS?
+It distributes your backend code to dozens or hundreds of servers globally. When a user makes a request, the code executes on a nearby point of presence rather than a centralized data center halfway across the world, cutting the physical network distance the data has to travel.
 
-Het genereren van antwoorden door een LLM kost van nature al de nodige rekentijd. Als daar ook nog geografische netwerklatentie bovenop komt, voelt de applicatie traag en haperend aan. Door de orkestratielogica op de Edge uit te voeren, wordt de netwerkvertraging weggenomen en start het streamen van het antwoord vrijwel direct.
+### Waarom is Edge important for AI SaaS?
 
-### Kan ik het daadwerkelijke AI-model ook op de Edge draaien?
+AI generation inherently takes time to compute. If you add geographical network latency on top of that, the app feels broken even when the model itself is performing normally. Executing orchestration logic at the Edge eliminates that added network lag, making the start of streaming feel instant.
 
-Ja, maar momenteel voornamelijk kleinere, gekwantiseerde modellen. Geoptimaliseerde open-source modellen zoals Llama 3.1 8B in GGUF-formaat kunnen direct op de Edge worden uitgevoerd via Cloudflare Workers AI voor taken zoals tekstclassificatie, moderatie en vertaling met extreem lage latentie.
+### Kan ik run the actual AI model at the Edge?
 
-### Welke invloed heeft de Edge op mijn database?
+Yes, but typically only smaller, quantized models. Highly optimized models like Llama 3.1 8B in GGUF format can be run directly at the Edge using Cloudflare Workers AI for near-zero latency inference on tasks like classification, moderation, or translation.
 
-Als uw Edge Function lokaal draait maar uw database ver weg staat, behaalt u nauwelijks snelheidswinst omdat de database-roundtrip het nieuwe knelpunt wordt. U moet gebruikmaken van een wereldwijd gedistribueerde database (zoals Turso of PlanetScale) of edge-caching (zoals Upstash Redis) om de snelheid over de gehele keten te waarborgen.
+### Hoe werkt Edge affect my database?
 
-### Verzorgt LaunchStudio zowel de edge-deployment als de database-migratie?
+If your Edge function is local but your database is far away, you gain little to no speed advantage, because the database round trip becomes the new bottleneck. You must use a globally distributed database (like Turso or PlanetScale) or edge-level caching (like Upstash Redis) to maintain speed end to end.
 
-Ja. LaunchStudio, ondersteund door Manifera, verzorgt de complete architectuur: het migreren van backend-routes naar edge runtimes, het herstructureren van de datalaag voor wereldwijde leesoperaties, en het correct routeren van zwaardere Node.js-dependencies naar regionale serverless functies.
+### Does LaunchStudio handle both the edge deployment and the database migration?
+
+Yes. LaunchStudio, powered by Manifera, handles the full stack — migrating backend routes to edge runtimes, restructuring the database layer for global reads, and validating that Node.js dependencies that don't run in edge isolates are correctly routed to regional serverless functions instead.
 
 <script type="application/ld+json">
 {
@@ -111,42 +119,42 @@ Ja. LaunchStudio, ondersteund door Manifera, verzorgt de complete architectuur: 
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is Edge Computing precies?",
+      "name": "Wat is Edge Computing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Edge computing verspreidt backend-code wereldwijd over honderden Points of Presence. Verzoeken worden afgehandeld op de fysiek dichtstbijzijnde server, wat de netwerkafstand en vertraging minimaliseert."
+        "text": "It distributes your backend code to dozens or hundreds of servers globally. When a user makes a request, the code executes on a nearby point of presence rather than a centralized data center halfway across the world, cutting the physical network distance the data has to travel."
       }
     },
     {
       "@type": "Question",
-      "name": "Waarom is Edge zo belangrijk voor AI SaaS?",
+      "name": "Waarom is Edge important for AI SaaS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat LLM-inferentie al rekentijd kost, maakt extra geografische netwerklatentie de app onnodig traag. Edge computing elimineert die netwerkvertraging zodat het streamen van data direct start."
+        "text": "AI generation inherently takes time to compute. If you add geographical network latency on top of that, the app feels broken even when the model itself is performing normally. Executing orchestration logic at the Edge eliminates that added network lag, making the start of streaming feel instant."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ik het daadwerkelijke AI-model ook op de Edge draaien?",
+      "name": "Kan ik run the actual AI model at the Edge?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, kleinere gekwantiseerde open-source modellen (zoals Llama 3.1 8B) kunnen direct op de Edge draaien via Cloudflare Workers AI voor razendsnelle inferentie bij classificatie en moderatie."
+        "text": "Yes, but typically only smaller, quantized models. Highly optimized models like Llama 3.1 8B in GGUF format can be run directly at the Edge using Cloudflare Workers AI for near-zero latency inference on tasks like classification, moderation, or translation."
       }
     },
     {
       "@type": "Question",
-      "name": "Welke invloed heeft de Edge op mijn database?",
+      "name": "Hoe werkt Edge affect my database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Als de database gecentraliseerd blijft, wordt de database-query de nieuwe bottleneck. Gebruik daarom wereldwijd gedistribueerde databases zoals Turso of edge-caching met Upstash Redis."
+        "text": "If your Edge function is local but your database is far away, you gain little to no speed advantage, because the database round trip becomes the new bottleneck. You must use a globally distributed database (like Turso or PlanetScale) or edge-level caching (like Upstash Redis) to maintain speed end to end."
       }
     },
     {
       "@type": "Question",
-      "name": "Verzorgt LaunchStudio zowel de edge-deployment als de database-migratie?",
+      "name": "Does LaunchStudio handle both the edge deployment and the database migration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera verzorgen de volledige stack-migratie naar edge runtimes en optimaliseren de datalaag voor razendsnelle wereldwijde prestaties."
+        "text": "Yes. LaunchStudio, powered by Manifera, handles the full stack — migrating backend routes to edge runtimes, restructuring the database layer for global reads, and validating that Node.js dependencies that don't run in edge isolates are correctly routed to regional serverless functions instead."
       }
     }
   ]

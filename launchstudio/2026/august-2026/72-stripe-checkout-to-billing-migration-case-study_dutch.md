@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: De Facturatie van een AI SaaS-platform Migreren van Stripe Checkout naar Stripe Billing in 6 Dagen"
-Keywords: Stripe Checkout, Stripe Billing, abonnementsmigratie, proratie, dunning, Cursor, LaunchStudio, Manifera, Herre Roelevink, terugkerende omzet
-Buyer Stage: Decision
+Titel: "Case Study: De Facturatie van een AI SaaS Migreren van Stripe Checkout naar Stripe Billing in 6 Dagen"
+Trefwoorden: Case study Stripe billing migratie, Stripe Checkout naar Billing, tegoedbeheer, facturatie architectuur, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: FinOps / Full-Stack Developers / Founders
 ---
 
-# Case Study: De Facturatie van een AI SaaS-platform Migreren van Stripe Checkout naar Stripe Billing in 6 Dagen
+# Case Study: De Facturatie van een AI SaaS Migreren van Stripe Checkout naar Stripe Billing in 6 Dagen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: De Facturatie van een AI SaaS Migreren van Stripe Checkout naar Stripe Billing in 6 Dagen",
+  "description": "Hoe een video-AI SaaS in Delft soepel overstapte naar geavanceerde verbruiksfacturatie zonder ook maar één betaling te missen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-72",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/stripe-checkout-to-billing-migration-case-study"
+  }
+}
+</script>
 
 Stripe Checkout is de snelste manier om een eerste betaling binnen te halen. Het is op zichzelf geen abonnementsfactuursysteem — en de kloof tussen "we kunnen een kaart belasten" en "we kunnen terugkerende omzet draaien" is precies waar een groeiend aantal AI SaaS-founders ontdekt dat ze hun eigen betaalinfrastructuur zijn ontgroeid. Dit is het verhaal van Sofia Marchetti, oprichter van een AI-facturatieplatform gebouwd met Cursor, die besefte dat haar Stripe Checkout-integratie wel een betaling kon verwerken, maar geen abonnement kon beheren — en wat het kostte om haar live, omzetgenererende platform in zes dagen naar Stripe Billing te migreren zonder ook maar één betalende klant te verliezen.
 
@@ -89,6 +114,7 @@ Sofia werkte samen met **LaunchStudio (door Manifera)** om haar live facturering
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Wat is het daadwerkelijke verschil tussen Stripe Checkout en Stripe Billing?

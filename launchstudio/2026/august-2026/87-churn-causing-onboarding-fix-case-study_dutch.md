@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Een Churn-veroorzakende Onboarding Flow Repareren in 7 Dagen"
-Keywords: onboarding flow, churn-reductie, activatiepercentage, gebruikersonboarding, LaunchStudio, Manifera, Herre Roelevink, Lovable, uitval, time to value
-Buyer Stage: Decision
+Titel: "Case Study: Een Churn-Veroorzakende Onboarding Flow Repareren in 7 Dagen"
+Trefwoorden: Case study onboarding flow fix, churn reductie SaaS, time to value optimalisatie, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Product Leads / UX Designers / Founders
 ---
 
-# Case Study: Een Churn-veroorzakende Onboarding Flow Repareren in 7 Dagen
+# Case Study: Een Churn-Veroorzakende Onboarding Flow Repareren in 7 Dagen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Een Churn-Veroorzakende Onboarding Flow Repareren in 7 Dagen",
+  "description": "Hoe een B2B AI-dashboard de 30-dagen retentie verdubbelde door de initiële activatie te versnellen naar minder dan 45 seconden.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-87",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/churn-causing-onboarding-fix-case-study"
+  }
+}
+</script>
 
 Elke SaaS-oprichter komt uiteindelijk een cijfer tegen dat moeilijk is om recht aan te kijken: het percentage betalende klanten dat zich aanmeldt, een paar minuten rondkijkt en nooit meer terugkomt. Wanneer dat cijfer hoog is, is het instinct om het product de schuld te geven — de kernfunctie moet niet waardevol genoeg zijn. Vaak is de echte boosdoener veel specifieker en veel gemakkelijker te repareren: een onboarding-flow die de klant nooit naar het moment brengt waarop het product zijn waarde daadwerkelijk bewijst. Dit is het verhaal van Mateus Silva, oprichter van BudgetBuddy AI, een AI-gedreven persoonlijke budgetteringsapp die hij met Lovable bouwde. Zestig procent van de betalende klanten haakte af voordat ze de installatie voltooiden, en zegde op binnen hun eerste factureringscyclus. Hier leest u precies hoe een zevendaagse engineering-sprint dit oploste.
 
@@ -93,6 +118,7 @@ Mateus werkte samen met **LaunchStudio (door Manifera)** om de flow te diagnosti
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Hoe wist LaunchStudio dat de churn een onboardingprobleem was en geen productprobleem?

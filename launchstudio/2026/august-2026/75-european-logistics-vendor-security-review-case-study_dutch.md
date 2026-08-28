@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Slagen voor een Enterprise Leveranciersbeveiligingsreview voor een Europees Logistiek AI SaaS-platform in 7 Dagen"
-Keywords: NIS2-compliance, logistiek AI SaaS, tenant-isolatie, EDI-beveiliging, leveranciersbeveiligingsreview, LaunchStudio, Manifera, Herre Roelevink, Bolt, supply chain-data
-Buyer Stage: Decision
+Titel: "Case Study: Een Enterprise Vendor Security Review Doorstaan voor een Europees Logistiek AI SaaS Platform in 7 Dagen"
+Trefwoorden: Case study vendor security review, logistieke AI SaaS, enterprise IT audit, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Enterprise Founders / Logistics Tech Leads
 ---
 
-# Case Study: Slagen voor een Enterprise Leveranciersbeveiligingsreview voor een Europees Logistiek AI SaaS-platform in 7 Dagen
+# Case Study: Een Enterprise Vendor Security Review Doorstaan voor een Europees Logistiek AI SaaS Platform in 7 Dagen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Een Enterprise Vendor Security Review Doorstaan voor een Europees Logistiek AI SaaS Platform in 7 Dagen",
+  "description": "Hoe een Rotterdamse logistieke AI een audit van een multinational doorstond door versleutelde backups en role-based access control.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-75",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/european-logistics-vendor-security-review-case-study"
+  }
+}
+</script>
 
 Logistiek is een van de sectoren waar "snel bewegen en een AI-prototype lanceren" het hardst botst met de Europese regelgevingsrealiteit, omdat vracht, opslag en transport nu onder de NIS2-richtlijn van de EU vallen als essentiële of belangrijke entiteiten — wat betekent dat de enterprise-leveranciers waarmee ze werken echte, specifieke beveiligingsverplichtingen erven die een generieke SaaS-vragenlijst niet dekt. Dit is het verhaal van Lukas Bergmann, oprichter van een AI-vrachtmatchingplatform gebouwd met Bolt, die een pilot binnenhaalde bij een groot Europees logistiek netwerk, om vervolgens te ontdekken dat hun leveranciersreview geen standaardchecklist was — het was een op NIS2 gebaseerde supply chain-beveiligingsbeoordeling waar zijn AI-gebouwde prototype bij lange na niet klaar voor was. Hier leest u precies wat die review vereiste en hoe zijn team de kloof in zeven dagen dichtte.
 
@@ -95,6 +120,7 @@ Lukas werkte samen met **LaunchStudio (door Manifera)** om de kloof te dichten. 
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Wat is NIS2 en waarom raakt het een logistiek AI SaaS-leverancier?

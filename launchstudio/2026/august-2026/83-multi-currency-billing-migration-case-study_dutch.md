@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Een AI SaaS-platform Migreren naar Multi-Currency Billing in 5 Dagen"
-Keywords: multi-currency billing, Stripe multi-currency, internationale betalingen, valutaconversie, LaunchStudio, Manifera, Herre Roelevink, Lovable, mislukte betalingen
-Buyer Stage: Decision
+Titel: "Case Study: Een AI SaaS Platform Migreren naar Facturatie in Meerdere Valuta's in 5 Dagen"
+Trefwoorden: Case study multi-currency billing, Stripe valuta migratie, internationale expansie SaaS, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: FinOps / SaaS Founders
 ---
 
-# Case Study: Een AI SaaS-platform Migreren naar Multi-Currency Billing in 5 Dagen
+# Case Study: Een AI SaaS Platform Migreren naar Facturatie in Meerdere Valuta's in 5 Dagen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Een AI SaaS Platform Migreren naar Facturatie in Meerdere Valuta's in 5 Dagen",
+  "description": "Hoe een AI-tool in Amsterdam de internationale verkoop met 35% liet groeien door binnen 5 dagen EUR, USD en GBP te ondersteunen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-83",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/multi-currency-billing-migration-case-study"
+  }
+}
+</script>
 
 Elke AI SaaS-oprichter die in één valuta factureert, loopt uiteindelijk tegen dezelfde muur aan: internationale klanten wier banken USD- of EUR-kosten markeren of weigeren, een prijzenpagina die de verkeerde valuta aan het verkeerde publiek toont, en betalingsfoutpercentages die stilletjes oplopen naarmate het klantenbestand internationaler wordt. Dit is het verhaal van Kwame Mensah, oprichter van InvoiceGenie AI, een AI-gedreven factureringsplatform dat hij met Lovable bouwde. Toen aanmeldingen uit het VK en Noord-Amerika versnelden, begon zijn Stripe-opzet in één valuta ongeveer een kwart van de internationale checkout-pogingen te laten mislukken. Hier leest u precies hoe een vijfdaagse engineering-sprint dit oploste, zonder ook maar één wijziging aan zijn bestaande frontend.
 
@@ -95,6 +120,7 @@ Kwame werkte samen met **LaunchStudio (door Manifera)** om de onderliggende bill
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Hoe wist Kwame dat zijn betalingsfouten een valutaprobleem waren en geen fraude of bug?

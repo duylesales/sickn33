@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: AI-beslissingstraceerbaarheid Realiseren voor een Compliance-zware Fintech in 12 Dagen"
-Keywords: AI-beslissingstraceerbaarheid, verklaarbaarheid, fintech-compliance, DORA, EU AI Act, auditspoor, LaunchStudio, Manifera, Herre Roelevink, Cursor
-Buyer Stage: Decision
+Titel: "Case Study: Traceerbaarheid van AI-Beslissingen Realiseren voor een Zwaar Gereguleerde FinTech in 12 Dagen"
+Trefwoorden: Case study FinTech AI audit, AI besluitvorming traceerbaarheid, DNB compliance, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: FinTech Founders / Compliance Leads
 ---
 
-# Case Study: AI-beslissingstraceerbaarheid Realiseren voor een Compliance-zware Fintech in 12 Dagen
+# Case Study: Traceerbaarheid van AI-Beslissingen Realiseren voor een Zwaar Gereguleerde FinTech in 12 Dagen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Traceerbaarheid van AI-Beslissingen Realiseren voor een Zwaar Gereguleerde FinTech in 12 Dagen",
+  "description": "Hoe een financieel AI-platform in Amsterdam voldeed aan de strenge eisen van toezichthouders door volledige audit logging in te voeren.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-99",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/ai-decision-traceability-fintech-case-study"
+  }
+}
+</script>
 
 Wanneer een AI-model helpt beslissen of iemand wordt goedgekeurd voor een lening, een kredietlimiet of een betalingsplan, is "het model zei nee" geen antwoord dat enige financiële toezichthouder zal accepteren. Van gereguleerde fintechs wordt verwacht dat ze voor elke individuele beslissing precies kunnen uitleggen welke factoren deze aandreven en die redenering op aanvraag kunnen reconstrueren — een vereiste waar de meeste door AI-builders gegenereerde producten nooit voor zijn ontworpen. Dit is het verhaal van Elena Petrova, oprichter van een AI SaaS voor kredietrisicoscoring gebouwd met **Cursor**, en de sprint van 12 dagen die een ondoorzichtig model omzette in een volledig traceerbaar model, net op tijd voor een toezichtsbeoordeling.
 
@@ -93,6 +118,7 @@ Matteo werkte samen met **LaunchStudio (door Manifera)** om de kloof te dichten.
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Wat betekent "AI-beslissingstraceerbaarheid" precies in een compliancecontext?

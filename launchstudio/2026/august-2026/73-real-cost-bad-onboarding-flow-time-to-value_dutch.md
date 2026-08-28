@@ -1,10 +1,35 @@
 ---
-Titel: "De Werkelijke Kosten van een Slechte Onboarding Flow: Sub-60-Seconden Time-to-Value of Niets"
-Keywords: time-to-value, onboarding flow, activatiegraad, AI SaaS-onboarding, Lovable, Bolt, LaunchStudio, Manifera, Herre Roelevink, product-led growth
-Buyer Stage: Decision
+Titel: "De Echte Kosten van een Slechte Onboarding Flow: Time-to-Value Onder 60 Seconden"
+Trefwoorden: Slechte onboarding kosten, time to value TTV, user drop-off SaaS, activatie optimalisatie, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelgroep: Product Managers / Growth Leads / UX Designers
 ---
 
-# De Werkelijke Kosten van een Slechte Onboarding Flow: Sub-60-Seconden Time-to-Value of Niets
+# De Echte Kosten van een Slechte Onboarding Flow: Time-to-Value Onder 60 Seconden
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Echte Kosten van een Slechte Onboarding Flow: Time-to-Value Onder 60 Seconden",
+  "description": "Waarom 60% van nieuwe gebruikers afhaakt vóór hun eerste AI-generatie en hoe u de Time-to-Value terugbrengt naar onder de minuut.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-73",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/real-cost-bad-onboarding-flow-time-to-value"
+  }
+}
+</script>
 
 Een founder kan zes maanden besteden aan het bouwen van een oprecht nuttig AI-product en toch het merendeel van zijn aanmeldingen verliezen in de eerste zestig seconden. Time-to-value — de kloof tussen het aanmaken van een account door een gebruiker en het moment waarop die gebruiker daadwerkelijk ervaart dat uw product doet waarvoor hij zich heeft aangemeld — is een van de minst besproken en duurste statistieken in AI SaaS. Dit artikel legt uit waarom sub-60-seconden time-to-value de echte lat is geworden voor AI-builder-producten, wat het een founder daadwerkelijk kost aan gemiste omzet wanneer onboarding die lat mist, en het specifieke engineeringwerk dat nodig is om de kloof te dichten.
 
@@ -93,6 +118,7 @@ Tobias werkte samen met **LaunchStudio (door Manifera)** om het activatiepad te 
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Waarom is 60 seconden specifiek de maatstaf voor time-to-value?

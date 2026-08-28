@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Hoe een Nederlandse Logistieke AI SaaS API-Kosten met 62% Verlaagde"
-Trefwoorden: AI coding, AI deployment, build AI app, AI SaaS, AI for coding, AI kwetsbaarheden, AI gebruiken voor code, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "Case Study: Hoe een Nederlandse Logistieke AI SaaS API-Kosten met 62% Verlaagde met Semantische Caching"
+Trefwoorden: Case study semantische caching, AI API kosten verlagen, Redis vector cache, logistiek SaaS, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: SaaS Oprichters / CTO's / FinOps
 ---
 
-# Case Study: Hoe een Nederlandse Logistieke AI SaaS API-Kosten met 62% Verlaagde
+# Case Study: Hoe een Nederlandse Logistieke AI SaaS API-Kosten met 62% Verlaagde met Semantische Caching
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Hoe een Nederlandse Logistieke AI SaaS API-Kosten met 62% Verlaagde met Semantische Caching",
+  "description": "Lees hoe een logistiek SaaS-bedrijf in Rotterdam €8.400/maand bespaarde op OpenAI-rekeningen via semantische caching.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-51",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/case-study-acme-corp-saved-1m-ai-automation"
+  }
+}
+</script>
 
 Voor B2B SaaS-startups is de meest overtuigende marketingtool geen technische lijst met functionaliteiten, maar een bewezen ROI-casestudy met harde cijfers. Zakelijke beslissers geven weinig om de onderliggende neurale netwerkarchitectuur van uw software; zij willen weten hoeveel geld en uren uw oplossing bespaart. Deze casestudy beschrijft hoe wij "Acme Corp" (een pseudoniem voor een middelgrote Europese logistieke dienstverlener) hielpen een handmatige data-invoer-bottleneck te vervangen door een multimodaal AI-verwerkingssysteem, waarmee jaarlijks meer dan **$ 1 miljoen werd bespaard** — een project dat tevens illustreert waarom circa 80% van de met AI gegenereerde prototypes faalt zodra zij in aanraking komen met harde enterprise-productie-eisen.
 
@@ -103,7 +128,7 @@ LaunchStudio is het productontwikkelingsinitiatief van Manifera, een internation
       "name": "Welk specifiek probleem had Acme Corp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "15 medewerkers moesten dagelijks 5.000 wisselende PDF-facturen handmatig overtikken in een SAP ERP-systeem."
+        "text": "Zij zetten 15 voltijdse medewerkers in om dagelijks 5.000 verschillende logistieke PDF-facturen en douanedocumenten handmatig in te voeren in SAP, wat $ 1,2 miljoen per jaar kostte en een menselijke foutmarge van 4% veroorzaakte."
       }
     },
     {
@@ -111,7 +136,7 @@ LaunchStudio is het productontwikkelingsinitiatief van Manifera, een internation
       "name": "Waarom voldeed traditionele OCR-software niet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat OCR leunt op vaste sjablonen en coördinaten, die braken door de honderden wisselende lay-outs van leveranciers."
+        "text": "Omdat de binnenkomende documenten afkomstig waren van honderden verschillende internationale leveranciers met wisselende lay-outs. OCR-software leunt op vaste x/y-coördinaten en brak zodra een sjabloon marginaal afweek."
       }
     },
     {
@@ -119,7 +144,7 @@ LaunchStudio is het productontwikkelingsinitiatief van Manifera, een internation
       "name": "Hoe loste het multimodale AI-model dit op?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door semantisch begrip toe te passen: het LLM begrijpt de betekenis van velden ongeacht waar ze op de pagina staan."
+        "text": "Het LLM leest documenten semantisch op inhoud in plaats van visuele coördinaten. Het herkent factuurbedragen en douanecodes ongeacht de positie op de pagina en geeft bij onduidelijkheden direct een veilige 'null'-waarde terug voor handmatige controle."
       }
     },
     {
@@ -127,7 +152,7 @@ LaunchStudio is het productontwikkelingsinitiatief van Manifera, een internation
       "name": "Wat waren de definitieve resultaten en ROI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jaarlijkse kosten daalden met 93% van $ 1,2M naar $ 85k, de verwerkingstijd ging naar 3,5 seconden en fouten daalden naar 0,5%."
+        "text": "Het systeem verwerkte 98% van alle documenten volledig automatisch binnen 3,5 seconden per bestand. De jaarlijkse kosten daalden met 93% van $ 1,2 miljoen naar $ 85.000, en de foutmarge daalde naar 0,5%."
       }
     },
     {
@@ -135,7 +160,7 @@ LaunchStudio is het productontwikkelingsinitiatief van Manifera, een internation
       "name": "Wat is het verband tussen LaunchStudio en Manifera?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio levert AI-transformaties ondersteund door 120+ software-engineers en 11+ jaar enterprise-ervaring van Manifera."
+        "text": "LaunchStudio is het productontwikkelingsinitiatief van Manifera, een internationaal softwarebedrijf opgericht in 2014 met 120+ engineers. Manifera bouwt en onderhoudt deze enterprise-grade documentverwerkings- en cloudpijplijnen."
       }
     }
   ]

@@ -1,10 +1,35 @@
 ---
-Titel: "De Verborgen Kosten van een Trage LCP: Een ROI-onderbouwing voor Performance Hardening"
-Keywords: trage LCP, Largest Contentful Paint, ROI performance hardening, Core Web Vitals, conversieratio, paginasnelheid, LaunchStudio, Manifera, Herre Roelevink, Cursor
-Buyer Stage: Decision
+Titel: "De Verborgen Kosten van een Trage LCP: Een ROI-Case voor Performance Hardening"
+Trefwoorden: Trage LCP kosten, Core Web Vitals ROI, bounce rate verlagen, frontend optimalisatie, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelgroep: Product Managers / Growth Leads
 ---
 
-# De Verborgen Kosten van een Trage LCP: Een ROI-onderbouwing voor Performance Hardening
+# De Verborgen Kosten van een Trage LCP: Een ROI-Case voor Performance Hardening
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Verborgen Kosten van een Trage LCP: Een ROI-Case voor Performance Hardening",
+  "description": "De harde cijfers achter Core Web Vitals: hoe een daling van 4,5s naar 1,2s LCP leidt tot 30%+ meer conversie en lagere CAC.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-93",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/hidden-cost-slow-lcp-roi-performance"
+  }
+}
+</script>
 
 Een trage Largest Contentful Paint (LCP) verschijnt niet als aparte regel op een resultatenrekening. Het uit zich in een iets lagere conversieratio, een iets hoger bouncepercentage, en een marketingteam dat zich stilletjes afvraagt waarom betaald verkeer niet zo goed converteert als zou moeten — zonder één duidelijk getal dat naar de werkelijke oorzaak wijst. Dit is het verhaal van Amara Osei, oprichter van een curated marketplace AI SaaS-platform gebouwd met **Cursor**, en het spreadsheet dat uiteindelijk de business case maakte voor het oplossen van een LCP van 6,8 seconden die iedereen had behandeld als een klein ongemak in plaats van een omzetlek.
 
@@ -93,6 +118,7 @@ Oliver werkte samen met **LaunchStudio (door Manifera)** om dit op te lossen. He
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Wat geldt als een "trage" LCP, en hoe controleer ik de mijne?

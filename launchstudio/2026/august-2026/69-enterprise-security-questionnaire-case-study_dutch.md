@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Slagen voor een Enterprise Beveiligingsvragenlijst in 10 Werkdagen"
-Keywords: Vendor Security Questionnaire, Enterprise Hardening, Row Level Security, SSO, Subprocessor List, LaunchStudio, Manifera, Bolt, Herre Roelevink
-Buyer Stage: Decision
+Titel: "Case Study: Een Enterprise Beveiligingsvragenlijst Doorstaan in 10 Werkdagen"
+Trefwoorden: Case study security questionnaire, enterprise deal acceleration, VSAQ audit, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Enterprise Founders / Sales Engineers
 ---
 
-# Case Study: Slagen voor een Enterprise Beveiligingsvragenlijst in 10 Werkdagen
+# Case Study: Een Enterprise Beveiligingsvragenlijst Doorstaan in 10 Werkdagen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Een Enterprise Beveiligingsvragenlijst Doorstaan in 10 Werkdagen",
+  "description": "Hoe een AI HR-tool uit Utrecht een contract van €120k sloot na het succesvol voltooien van een 250-vragen InfoSec review binnen 10 dagen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-69",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/enterprise-security-questionnaire-case-study"
+  }
+}
+</script>
 
 AI-builders kunnen een werkende SaaS-product sneller dan ooit bij een prospect krijgen. Maar enterprise-kopers geven geen groen licht op basis van een demo — ze geven groen licht op basis van een vragenlijst. Dit is het waargebeurde verhaal van Fatima Al-Sayed, oprichter van een AI-platform voor sales-enablement, die zag hoe een veelbelovende deal met een enterprise-klant, ter waarde van zes cijfers, vastliep in de inkoopprocedure toen haar werd gevraagd schriftelijk te bewijzen dat haar door AI gegenereerde backend vertrouwd kon worden met de gegevens van een Fortune 500-bedrijf. Ze kon slechts 11 van de 40 vragen eerlijk met "ja" beantwoorden. Hier leest u precies wat ze heeft opgelost, in welke volgorde, en hoe ze van een score van 11/40 naar een gesloten deal ging in minder dan drie weken.
 
@@ -103,6 +128,7 @@ Fatima werkte samen met **LaunchStudio (door Manifera)** om het hiaat te dichten
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Waarom falen AI-builder prototypes zo vaak op enterprise beveiligingsvragenlijsten?

@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Een Juridische AI-Assistent Schalen op een AI SaaS-Platform naar 50k DAU"
-Trefwoorden: AI SaaS, AI SaaS platform, AI in SaaS, build AI app, AI-native, AI software engineering, AI prototype, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "Case Study: Een Juridische AI Assistent op een AI SaaS Platform Schalen naar 50k DAU"
+Trefwoorden: Case study juridische AI, schalen naar 50k DAU, PgBouncer optimalisatie, high concurrency, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Scale-up Founders / VP Engineering
 ---
 
-# Case Study: Een Juridische AI-Assistent Schalen op een AI SaaS-Platform naar 50k DAU
+# Case Study: Een Juridische AI Assistent op een AI SaaS Platform Schalen naar 50k DAU
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Een Juridische AI Assistent op een AI SaaS Platform Schalen naar 50k DAU",
+  "description": "Hoe een juridische AI-tool uit Amsterdam schaalde naar 50.000 actieve gebruikers zonder database-crashes of downtime.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-52",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/rise-of-vertical-ai-agent-b2b-saas"
+  }
+}
+</script>
 
 Toen OpenAI ChatGPT lanceerde, creëerde het de ultieme "Horizontale" tool — een alwetende generieke assistent die zowel een scholier kan helpen met het schrijven van een essay als een softwareontwikkelaar met het genereren van Python-code. Nu de eerste nieuwigheid bezinkt, realiseren enterprise-bedrijven zich dat een algemene tool simpelweg onvoldoende is om complexe bedrijfsprocessen aan te sturen. Een ziekenhuis heeft geen behoefte aan een chatbot die gedichten schrijft; het vereist een hyper-gespecialiseerd systeem dat medische facturatie en declaraties autonoom verwerkt. Welkom in het tijdperk van de **Verticale AI-Agent (Vertical AI Agent)** — en de reden waarom dit snel het dominante architectuurpatroon in B2B SaaS wordt.
 
@@ -99,7 +124,7 @@ LaunchStudio en Manifera (opgericht in 2014) bouwen de robuuste backend-architec
       "name": "Wat is het verschil tussen een horizontale en een verticale AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Horizontale AI is een algemene assistent; verticale AI is een gespecialiseerde digitale medewerker voor één specifieke sector."
+        "text": "Horizontale AI is een algemene assistent (zoals ChatGPT) die alles redelijk kan. Verticale AI is een gespecialiseerde software-agent die specifiek gebouwd is om één concrete bedrijfstaak binnen een specifieke industrie autonoom en foutloos uit te voeren."
       }
     },
     {
@@ -107,7 +132,7 @@ LaunchStudio en Manifera (opgericht in 2014) bouwen de robuuste backend-architec
       "name": "Waarom is bedrijfseigen data zo belangrijk voor Verticale AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat exclusieve sector-data het enige duurzame concurrentievoordeel vormt tegenover generieke publieke basismodellen."
+        "text": "Omdat publieke taalmodellen niet kunnen beschikken over interne sectorspecifieke data, zoals vertrouwelijke jurisprudentie of interne logistieke data. Deze private context vormt het enige echte concurrentievoordeel."
       }
     },
     {
@@ -115,7 +140,7 @@ LaunchStudio en Manifera (opgericht in 2014) bouwen de robuuste backend-architec
       "name": "Wat betekent 'Outcome-Based Pricing'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een prijsmodel waarbij u factureert per succesvol afgeronde taak of transactie in plaats van per gebruikerslicentie."
+        "text": "Een verdienmodel waarbij u niet factureert per gebruikersaccount (seat), maar per succesvol opgeleverd resultaat (bijvoorbeeld € 2 per verwerkte factuur of afgeronde claim)."
       }
     },
     {
@@ -123,7 +148,7 @@ LaunchStudio en Manifera (opgericht in 2014) bouwen de robuuste backend-architec
       "name": "Welke tools heeft een Verticale AI-Agent nodig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "API-schrijftoegang, ERP-connectoren, RAG-kennisbanken en geautomatiseerde validatielagen met audittrails."
+        "text": "Actieve API-koppelingen met enterprise-databases, documentenbeheersystemen en ERP's, ondersteund door geautomatiseerde validatiescripts en veilige autorisatielagen."
       }
     },
     {
@@ -131,7 +156,7 @@ LaunchStudio en Manifera (opgericht in 2014) bouwen de robuuste backend-architec
       "name": "Hoe ondersteunt LaunchStudio bij het bouwen van verticale agenten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio levert de complete backend-, database- en API-architectuur ondersteund door 11+ jaar Manifera engineering."
+        "text": "LaunchStudio en Manifera (opgericht in 2014) bouwen de robuuste backend-architectuur, RAG-pijplijnen en veilige API-integraties die prototypes omzetten in enterprise-klare digitale medewerkers."
       }
     }
   ]

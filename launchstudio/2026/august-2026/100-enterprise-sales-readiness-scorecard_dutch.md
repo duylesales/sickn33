@@ -1,10 +1,35 @@
 ---
-Titel: "De Laatste Enterprise-sales Gereedheidsscorekaart: Bent U Klaar om Klanten ter Grootte van Vodafone te Benaderen?"
-Keywords: enterprise sales gereedheidsscorekaart, SSO SAML, SOC 2, uptime SLA, auditlogging, inkoop, LaunchStudio, Manifera, Herre Roelevink, Lovable
-Buyer Stage: Decision
+Titel: "De Definitieve Enterprise-Sales Readiness Scorekaart: Bent U Klaar om te Pitchen bij Klanten van Vodafone-Formaat?"
+Trefwoorden: Enterprise sales readiness scorekaart, B2B procurement audit, enterprise deal sluiten, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Enterprise Founders / VP Sales / CEO's
 ---
 
-# De Laatste Enterprise-sales Gereedheidsscorekaart: Bent U Klaar om Klanten ter Grootte van Vodafone te Benaderen?
+# De Definitieve Enterprise-Sales Readiness Scorekaart: Bent U Klaar om te Pitchen bij Klanten van Vodafone-Formaat?
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Definitieve Enterprise-Sales Readiness Scorekaart: Bent U Klaar om te Pitchen bij Klanten van Vodafone-Formaat?",
+  "description": "Evalueer uw SaaS op 10 kritieke enterprise dimensies: van beveiliging en SLA's tot data-isolatie en betalingsmodellen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-100",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/enterprise-sales-readiness-scorecard"
+  }
+}
+</script>
 
 De meeste AI SaaS-oprichters komen op de harde manier erachter of ze klaar zijn om een klant ter grootte van Vodafone te benaderen — midden in een deal, wanneer inkoop een document stuurt met precies wat er aan het product ontbreekt. Een scorekaart verandert die ontdekking in iets wat een oprichter op eigen voorwaarden kan uitvoeren, vóór de pitch, niet erna. Dit is een gestructureerde zelfbeoordeling die de tien dimensies dekt die enterprise-kopers het meest consequent evalueren, opgebouwd rond het verhaal van Jonas Vermeer, oprichter van een AI SaaS voor personeelsanalyse gebouwd met **Lovable**, en hoe het uitvoeren van precies deze scorekaart de uitkomst van zijn eigen enterprise-pitch veranderde.
 
@@ -106,6 +131,7 @@ Sofia werkte samen met **LaunchStudio (door Manifera)** om de door de scorekaart
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Hoe moet ik mijn eigen product scoren op elk van deze tien dimensies?

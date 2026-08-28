@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Een Verloren Enterprise-klant van een AI SaaS-platform Terugwinnen met een Vertrouwensherstel van 2 Weken"
-Keywords: churn-herstel, terugwinnen van enterprise-account, vertrouwensherstel, incident response, herstel na datalek, LaunchStudio, Manifera, Herre Roelevink, Cursor
-Buyer Stage: Decision
+Titel: "Case Study: Een Verloren Enterprise Account van een AI SaaS Platform Terugwinnen met een 2-Weken Vertrouwensherstel"
+Trefwoorden: Case study enterprise retentie, vertrouwensherstel SaaS, downtime herstel, SLA garantie, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Customer Success Leads / Founders
 ---
 
-# Case Study: Een Verloren Enterprise-klant van een AI SaaS-platform Terugwinnen met een Vertrouwensherstel van 2 Weken
+# Case Study: Een Verloren Enterprise Account van een AI SaaS Platform Terugwinnen met een 2-Weken Vertrouwensherstel
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Een Verloren Enterprise Account van een AI SaaS Platform Terugwinnen met een 2-Weken Vertrouwensherstel",
+  "description": "Hoe een data-AI startup een gechurned enterprise-contract van €80k redde na een complete backend hardening in 14 dagen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-78",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/churned-enterprise-account-trust-rebuild-case-study"
+  }
+}
+</script>
 
 Een kleine klant verliezen doet pijn. Een enterprise-account verliezen dat acht maanden kostte om te sluiten, na een vertrouwensbreukend incident waardoor de opzeg-e-mail als een formele klacht las, voelt als het zien verdampen van een jaar werk in één middag. Dit is het verhaal van Yusuf Demir, oprichter van een AI-klantenserviceplatform gebouwd met Cursor, die precies die e-mail ontving van zijn grootste enterprise-klant — en het specifieke vertrouwensherstel van twee weken dat een geannuleerd contract terugbracht naar een getekende verlenging.
 
@@ -87,6 +112,7 @@ Yusuf werkte samen met **LaunchStudio (door Manifera)** om het door het incident
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Kan een geannuleerd enterprise-contract echt worden teruggedraaid na een beveiligingsincident?

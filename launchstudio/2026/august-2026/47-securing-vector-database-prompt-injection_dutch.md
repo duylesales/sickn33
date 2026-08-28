@@ -1,10 +1,35 @@
 ---
-Titel: "Uw AI Database Beveiligen Tegen Prompt Injection en Datavergiftiging"
-Trefwoorden: AI security, AI kwetsbaarheden, AI security kwetsbaarheden, AI database, AI security risico, security AI, AI en beveiliging, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "Uw AI Database Beveiligen Tegen Prompt Injection en Data Poisoning"
+Trefwoorden: Prompt injection beveiliging, data poisoning preventie, LLM firewall, RAG security, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelgroep: Cybersecurity Engineers / AI Developers
 ---
 
-# Uw AI Database Beveiligen Tegen Prompt Injection en Datavergiftiging
+# Uw AI Database Beveiligen Tegen Prompt Injection en Data Poisoning
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Uw AI Database Beveiligen Tegen Prompt Injection en Data Poisoning",
+  "description": "Bescherm uw vectordatabase en backend tegen indirecte prompt injection, jailbreaks en kwaadaardige context-injecties.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-47",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/securing-vector-database-prompt-injection"
+  }
+}
+</script>
 
 In 1998 leerden webontwikkelaars voor het eerst over SQL Injection — het pijnlijke besef dat gebruikers kwaadaardige SQL-code in inlogformulieren konden typen om complete databases te manipuleren of te wissen. Het kostte de software-industrie meer dan tien jaar aan ernstige datalekken voordat prepared statements en parameterisatie de standaard werden. In 2026 beleeft de AI-sector exact dezelfde pijnlijke les met **Prompt Injection**. Als u een B2B SaaS bouwt die een LLM koppelt aan een vector-database vol bedrijfsgevoelige data, leidt een geslaagde prompt injection aanval direct tot een geruisloos, catastrofaal datalek — en anders dan bij SQL bestaat er geen simpele codebibliotheek die dit probleem met één `npm install` commando oplost.
 
@@ -108,7 +133,7 @@ Ja. LaunchStudio en Manifera voeren gerichte red-team pentesten uit op uw specif
       "name": "Wat is Prompt Injection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een aanval waarbij invoertekst de instructies van een LLM overschrijft om ongeautoriseerde data of tools te ontgrendelen."
+        "text": "Een aanvalsmethode waarbij een gebruiker of extern document kwaadaardige tekstinvoer gebruikt om de kerninstructies van een AI te overschrijven en ongeautoriseerde commando's of data-extracties uit te voeren."
       }
     },
     {
@@ -116,7 +141,7 @@ Ja. LaunchStudio en Manifera voeren gerichte red-team pentesten uit op uw specif
       "name": "Waarom is Prompt Injection moeilijker op te lossen dan SQL Injection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat LLM's geen formele grens kennen tussen programmacode en gebruikersdata binnen het contextvenster."
+        "text": "Omdat taalmodellen geen syntactische scheiding kennen tussen code en data; alle invoer en context wordt verwerkt als één doorlopende stroom natuurlijke taal."
       }
     },
     {
@@ -124,7 +149,7 @@ Ja. LaunchStudio en Manifera voeren gerichte red-team pentesten uit op uw specif
       "name": "Wat is Indirecte Prompt Injection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het kapen van een AI via verborgen instructies in externe bronbestanden zoals e-mails of PDF-documenten."
+        "text": "Een aanval waarbij kwaadaardige instructies verborgen zijn in documenten, e-mails of websites die de AI moet analyseren, waardoor de AI gekaapt wordt zonder dat de eindgebruiker zelf kwaadwillend is."
       }
     },
     {
@@ -132,7 +157,7 @@ Ja. LaunchStudio en Manifera voeren gerichte red-team pentesten uit op uw specif
       "name": "Hoe beveilig ik een RAG-kennisbank effectief?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door data-autorisatiefilters op databaseniveau af te dwingen vóórdat documenten als context naar het LLM worden gestuurd."
+        "text": "Door strikte metadata-filtering op databaseniveau toe te passen vóórdat context naar het model gaat, gecombineerd met een LLM-firewall en het beperken van tools tot read-only acties."
       }
     },
     {
@@ -140,7 +165,7 @@ Ja. LaunchStudio en Manifera voeren gerichte red-team pentesten uit op uw specif
       "name": "Voert LaunchStudio ook penetratietesten uit op AI-apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, LaunchStudio voert red-team AI-testen uit en bouwt geharde LLM-firewalls en rechten-scheidingen in."
+        "text": "Ja. LaunchStudio en Manifera voeren gerichte red-team pentesten uit op uw specifieke RAG-infrastructuur en implementeren direct de benodigde architectonische oplossingen."
       }
     }
   ]

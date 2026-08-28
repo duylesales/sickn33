@@ -1,10 +1,35 @@
 ---
-Titel: "AI Auteursrecht en Intellectueel Eigendom: Uw AI SaaS Assets Beschermen in 2026"
-Trefwoorden: AI gegenereerde applicaties, generatieve AI, AI en softwareontwikkeling, AI-native, AI SaaS, AI security risico's, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "AI Auteursrecht en Intellectueel Eigendom: Uw AI SaaS Bezittingen Beschermen in 2026"
+Trefwoorden: AI auteursrecht, IP eigendom AI code, commerciële licenties, proprietary software, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelgroep: Tech Founders / IP Lawyers / CTO's
 ---
 
-# AI Auteursrecht en Intellectueel Eigendom: Uw AI SaaS Assets Beschermen in 2026
+# AI Auteursrecht en Intellectueel Eigendom: Uw AI SaaS Bezittingen Beschermen in 2026
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI Auteursrecht en Intellectueel Eigendom: Uw AI SaaS Bezittingen Beschermen in 2026",
+  "description": "Bescherm de intellectuele eigendomsrechten van uw AI-applicatie en voorkom dat leveranciers uw data gebruiken voor modeltraining.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-44",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/copyright-dilemma-who-owns-ai-output"
+  }
+}
+</script>
 
 Als een marketingteam van een enterprise-klant uw SaaS-platform gebruikt om een advertentie-afbeelding te genereren, en een concurrent downloadt die afbeelding en gebruikt deze in zijn eigen campagne, kan uw klant die concurrent dan aanklagen wegens inbreuk op het auteursrecht? Anno 2026 blijft het intellectueel eigendomsrecht (IP) rondom Generatieve AI een van de meest misbegrepen — en meest risicovolle — aspecten van de technologiesector. Oprichters moeten het principe van "menselijk auteurschap" begrijpen als een fundamentele pijler van hun productarchitectuur, omdat het direct bepaalt of uw zakelijke klanten hun gegenereerde bezittingen daadwerkelijk wettelijk kunnen beschermen.
 
@@ -101,7 +126,7 @@ LaunchStudio is een engineeringpartner, onderdeel van Manifera (opgericht in 201
       "name": "Kan een AI het auteursrecht op een werk bezitten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, auteursrechtelijke bescherming is wettelijk strikt voorbehouden aan creatieve werken van menselijke makers."
+        "text": "Nee. Zowel in de Verenigde Staten als in Europa geldt dat auteursrecht uitsluitend rust op creatieve werken die door een mens zijn voortgebracht. Een algoritme kan juridisch geen auteur zijn."
       }
     },
     {
@@ -109,7 +134,7 @@ LaunchStudio is een engineeringpartner, onderdeel van Manifera (opgericht in 201
       "name": "Als ik de prompt heb geschreven, bezit ik dan het auteursrecht op de afbeelding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nee, een prompt geldt als een instructie; de AI bepaalt de creatieve expressie waardoor het ruwe bestand niet auteursrechtelijk beschermd is."
+        "text": "Over het algemeen niet. Het opstellen van een prompt wordt juridisch gezien als het geven van een opdracht. Omdat de AI de daadwerkelijke creatieve uitvoering bepaalt, ontbreekt het vereiste menselijke auteurschap op het ruwe bestand."
       }
     },
     {
@@ -117,7 +142,7 @@ LaunchStudio is een engineeringpartner, onderdeel van Manifera (opgericht in 201
       "name": "Hoe kan een AI-gegenereerd werk wél auteursrechtelijk beschermd worden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door substantiële menselijke modificaties, handmatige retouchering of unieke composities toe te voegen aan het basisontwerp."
+        "text": "Door substantiële menselijke creatieve bewerking toe te voegen: het handmatig retoucheren, combineren, herstructureren of toevoegen van originele elementen in een grafisch of tekstueel bewerkingsprogramma."
       }
     },
     {
@@ -125,7 +150,7 @@ LaunchStudio is een engineeringpartner, onderdeel van Manifera (opgericht in 201
       "name": "Wat als twee verschillende gebruikers exact dezelfde AI-output genereren?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat ruwe AI-output niet auteursrechtelijk exclusief is, kunnen gebruikers elkaar in beginsel niet aansprakelijk stellen voor identieke resultaten."
+        "text": "Omdat geen van beiden auteursrecht heeft op de ruwe AI-output, kan Gebruiker A Gebruiker B in de regel niet aanklagen wegens inbreuk als beiden toevallig dezelfde gegenereerde alinea of afbeelding gebruiken."
       }
     },
     {
@@ -133,7 +158,7 @@ LaunchStudio is een engineeringpartner, onderdeel van Manifera (opgericht in 201
       "name": "Is LaunchStudio een advocatenkantoor of een engineeringpartner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio is een software-engineeringpartner die technische filters, logging en enterprise-vrijwaringsmodellen implementeert."
+        "text": "LaunchStudio is een engineeringpartner, onderdeel van Manifera (opgericht in 2014). Wij bouwen de technische waarborgen (vrijwarings-API's, merkrechtenfilters, versietracking) die juridische risico's minimaliseren; voor formele juridische advisering raadpleegt u een gespecialiseerd advocaat."
       }
     }
   ]

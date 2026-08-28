@@ -1,10 +1,35 @@
 ---
-Titel: "De Kunst van Upselling: Uw AI SaaS-Platform Accounts Uitbreiden met Nieuwe Functies"
-Trefwoorden: AI SaaS, SaaS AI, AI in SaaS, AI SaaS platform, AI-app bouwen, AI-native, AI deployment, AI en softwareontwikkeling, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "De Kunst van de Upsell: Uw AI SaaS Platform Accounts Uitbreiden met Nieuwe Features"
+Trefwoorden: SaaS upsell strategie, account expansie, net revenue retention, AI feature tiers, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelgroep: Account Managers / Growth Leads / Founders
 ---
 
-# De Kunst van Upselling: Uw AI SaaS-Platform Accounts Uitbreiden met Nieuwe Functies
+# De Kunst van de Upsell: Uw AI SaaS Platform Accounts Uitbreiden met Nieuwe Features
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Kunst van de Upsell: Uw AI SaaS Platform Accounts Uitbreiden met Nieuwe Features",
+  "description": "Verhoog Net Revenue Retention (NRR) door slimme feature gating, team-seats en AI-verbruikslimieten als upsell-hefboom te gebruiken.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/upselling-ai-features-existing-saas-customers"
+  }
+}
+</script>
 
 Als u een bestaand SaaS-platform exploiteert, is het integreren van AI een defensieve noodzaak geworden om klantverloop (churn) te voorkomen — uw concurrenten lanceren immers aan de lopende band AI-copilots en gebruikers verwachten deze functionaliteiten inmiddels standaard. Omdat AI-generaties echter substantiële variabele kosten met zich meebrengen, vernietigt het permanent gratis weggeven van deze features aan uw gehele gebruikersbestand direct uw marges. U moet de nieuwe AI-mogelijkheden succesvol monetariseren zonder trouwe klanten af te schrikken die u al jaren betalen. Hier leest u het beproefde handboek om AI effectief te upsellen en uw ARPU (Average Revenue Per User) structureel te verhogen.
 
@@ -107,7 +132,7 @@ Ja. LaunchStudio en Manifera integreren regelmatig AI-modules en bijbehorende St
       "name": "Moet ik AI-functionaliteiten gratis aanbieden aan bestaande klanten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alleen tijdelijk tijdens een bèta; door harde variabele API-kosten is langdurig gratis weggeven economisch onhoudbaar."
+        "text": "Alleen tijdelijk, tijdens een afgebakende bètafase. Omdat generatieve AI continue tokenkosten met zich meebrengt, moeten deze functies na een introductieperiode worden gemonetariseerd om uw marges te beschermen."
       }
     },
     {
@@ -115,7 +140,7 @@ Ja. LaunchStudio en Manifera integreren regelmatig AI-modules en bijbehorende St
       "name": "Wat is het voordeel van een 'AI Add-On' model?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het verlaagt de drempel doordat klanten alleen voor de AI betalen zonder direct een duur Enterprise-pakket te moeten afnemen."
+        "text": "Het biedt gebruikers de optie om uitsluitend voor de AI-functionaliteit bij te betalen (bijv. basisplan + € 15/mnd), wat een veel lagere drempel is dan een verplichte overstap naar een duur Enterprise-pakket."
       }
     },
     {
@@ -123,7 +148,7 @@ Ja. LaunchStudio en Manifera integreren regelmatig AI-modules en bijbehorende St
       "name": "Hoe overtuig ik gebruikers om te betalen voor een AI-feature?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door geblurde resultaten van gegenereerde content te tonen op hun eigen bedrijfsdata alvorens om een upgrade te vragen."
+        "text": "Door 'Teasers' in te zetten: laat de AI het echte resultaat op de achtergrond genereren en toon een geblurde preview met een upgradeknop, zodat de klant direct de waarde op zijn eigen data ziet."
       }
     },
     {
@@ -131,7 +156,7 @@ Ja. LaunchStudio en Manifera integreren regelmatig AI-modules en bijbehorende St
       "name": "Hoe reageer ik op klanten die zeggen dat ze al ChatGPT gebruiken?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door te focussen op directe databasecontext en het elimineren van inefficiënt knip- en plakwerk tussen losse tools."
+        "text": "Benadruk dat uw AI direct gekoppeld is aan de interne context en database van uw applicatie, waardoor het tijdrovende handmatige knip- en plakwerk tussen verschillende tabbladen volledig vervalt."
       }
     },
     {
@@ -139,7 +164,7 @@ Ja. LaunchStudio en Manifera integreren regelmatig AI-modules en bijbehorende St
       "name": "Kan LaunchStudio AI integreren in bestaande, niet-AI codebases?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, LaunchStudio bouwt veilige AI-pipelines en add-on facturatielagen in zowel bestaande SaaS-platforms als nieuwe prototypes."
+        "text": "Ja. LaunchStudio en Manifera integreren regelmatig AI-modules en bijbehorende Stripe add-on facturatielogica in gevestigde, traditionele SaaS-platforms."
       }
     }
   ]

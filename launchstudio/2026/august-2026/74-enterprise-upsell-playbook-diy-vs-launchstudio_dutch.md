@@ -1,10 +1,35 @@
 ---
-Titel: "De Enterprise Upsell-beweging: Zelf een Expansion Playbook Bouwen of LaunchStudio Inschakelen?"
-Keywords: enterprise upsell, expansion revenue, seat-based pricing, gebruikslimieten, SSO SCIM, LaunchStudio, Manifera, Herre Roelevink, Bolt, net revenue retention
-Buyer Stage: Decision
+Titel: "De Enterprise Upsell Beweging: Bouw Uw Eigen Expansiedraaiboek of Schakel LaunchStudio In?"
+Trefwoorden: Enterprise upsell playbook, Net Revenue Retention, feature tiering, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Head of Growth / Account Executives / Founders
 ---
 
-# De Enterprise Upsell-beweging: Zelf een Expansion Playbook Bouwen of LaunchStudio Inschakelen?
+# De Enterprise Upsell Beweging: Bouw Uw Eigen Expansiedraaiboek of Schakel LaunchStudio In?
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Enterprise Upsell Beweging: Bouw Uw Eigen Expansiedraaiboek of Schakel LaunchStudio In?",
+  "description": "Ontdek hoe u technische feature gating en seat management inzet om bestaande accounts automatisch te laten groeien naar enterprise tiers.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-74",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/enterprise-upsell-playbook-diy-vs-launchstudio"
+  }
+}
+</script>
 
 Een eerste enterprise-klant binnenhalen voelt als de finishlijn. Dat is het niet — het is het startschot voor een veel moeilijker probleem: dat ene account omzetten in een groeiende relatie die een veelvoud van de oorspronkelijke contractwaarde waard is. Net revenue retention, niet groei in nieuwe logo's, is wat AI SaaS-bedrijven die samengesteld groeien daadwerkelijk onderscheidt van bedrijven die stagneren, en expansieomzet ontstaat alleen wanneer het product zelf de mechanica bevat om dit te triggeren. Dit artikel vergelijkt het intern bouwen van een enterprise upsell-playbook met het inschakelen van LaunchStudio om de onderliggende infrastructuur te bouwen, zodat een founder met één enterprise-logo kan beslissen hoe hij aan de volgende tien stoelen, het volgende team en de volgende afdeling komt.
 
@@ -98,6 +123,7 @@ Amara werkte samen met **LaunchStudio (door Manifera)** om de expansie-infrastru
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Waarom drijft een goed verkoopteam alleen niet de expansieomzet aan?

@@ -1,10 +1,35 @@
 ---
-Titel: "Product-Led Sales voor AI SaaS-Platform: Gratis Gebruikers Converteren naar Enterprise"
-Trefwoorden: AI SaaS, SaaS AI, AI SaaS platform, AI in SaaS, AI-native, app bouwen met AI, AI software engineering, AI en softwareontwikkeling, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "Product-Led Sales voor AI SaaS Platform: Gratis Gebruikers Omzetten in Enterprise Deals"
+Trefwoorden: Product-led sales, PLG naar enterprise, product qualified leads, PQL scoring, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Head of Sales / PLG Oprichters
 ---
 
-# Product-Led Sales voor AI SaaS-Platform: Gratis Gebruikers Converteren naar Enterprise
+# Product-Led Sales voor AI SaaS Platform: Gratis Gebruikers Omzetten in Enterprise Deals
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Product-Led Sales voor AI SaaS Platform: Gratis Gebruikers Omzetten in Enterprise Deals",
+  "description": "Identificeer Product Qualified Leads (PQL's) in uw gratis gebruikersbestand en sluit 5-figure enterprise deals op basis van gebruiksdata.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-37",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/product-led-sales-motion-ai"
+  }
+}
+</script>
 
 Oprichters zijn vaak geobsedeerd door Product-Led Growth (PLG) — de droom om een softwareproduct te bouwen dat zo intuïtief en waardevol is dat duizenden gebruikers zichzelf registreren en betalen terwijl de oprichter slaapt. Maar puur self-service PLG kent een hard omzetplafond. Een multinational of Fortune 500-bedrijf koopt simpelweg geen 1.000 softwarelicenties via een creditcard-checkout op een landingspagina, ongeacht hoe soepel uw Stripe-koppeling is ingericht. Om door te breken naar € 1M+ ARR moet u een proactief salesteam toevoegen bovenop uw self-service instroom. Dit is de **Product-Led Sales (PLS)** methodiek.
 
@@ -113,7 +138,7 @@ Beide. LaunchStudio en Manifera helpen oprichters bepalen welke specifieke gedra
       "name": "Wat is het verschil tussen PLG en PLS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "PLG draait om self-service checkout; PLS benut actieve self-service gebruikers om via een salesteam grote enterprise-deals te sluiten."
+        "text": "Product-Led Growth (PLG) leunt volledig op geautomatiseerde self-service. Product-Led Sales (PLS) zet een menselijk salesteam in om actieve zakelijke gebruikers in die self-service stroom te identificeren en te converteren naar grote enterprise-contracten."
       }
     },
     {
@@ -121,7 +146,7 @@ Beide. LaunchStudio en Manifera helpen oprichters bepalen welke specifieke gedra
       "name": "Wat is een Product Qualified Lead (PQL)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een lead die de software reeds actief gebruikt en aantoonbare koopintentie toont via intensief productgebruik."
+        "text": "Een gebruiker die de software al actief gebruikt en specifieke waardedrempels heeft overschreden (bijv. 50 generaties en 3 teamuitnodigingen), waardoor de koopintentie bewezen is."
       }
     },
     {
@@ -129,7 +154,7 @@ Beide. LaunchStudio en Manifera helpen oprichters bepalen welke specifieke gedra
       "name": "Hoe detecteer ik PQL's in mijn database?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Via telemetrie die zakelijke domeinen monitort op gebruikspieken en limiet-frictie, gekoppeld aan realtime Slack-alerts."
+        "text": "Door telemetrietools zoals PostHog of Segment te koppelen aan webhooks die alerts sturen naar Slack zodra een zakelijk e-maildomein intensief gebruik of limiet-frictie vertoont."
       }
     },
     {
@@ -137,7 +162,7 @@ Beide. LaunchStudio en Manifera helpen oprichters bepalen welke specifieke gedra
       "name": "Hoe benader ik een PQL effectief?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Met een consultatieve e-mail die specifiek inspeelt op het actuele verbruik en een oplossing biedt voor de ervaren restricties."
+        "text": "Via een consultatief bericht dat direct refereert aan het specifieke gebruik en de belemmeringen die de gebruiker ervaart, met een voorstel om de limieten op te heffen via het Enterprise-pakket."
       }
     },
     {
@@ -145,7 +170,7 @@ Beide. LaunchStudio en Manifera helpen oprichters bepalen welke specifieke gedra
       "name": "Helpt LaunchStudio alleen bij de technische tracking of ook bij de signaalkeuze?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio adviseert over relevante koopprikkels en bouwt de complete telemetrie- en webhook-infrastructuur."
+        "text": "Beide. LaunchStudio en Manifera helpen oprichters bepalen welke specifieke gedragssignalen echt correleren met koopintentie en richten de complete achterliggende infrastructuur in."
       }
     }
   ]

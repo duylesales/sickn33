@@ -1,10 +1,35 @@
 ---
-Titel: "De EU AI Act Compliance-sprint: Interne Juristen vs. de Technische Oplossing van LaunchStudio"
-Keywords: EU AI Act compliance, hoogrisico AI-systeem, technische documentatie, menselijk toezicht, interne juristen, LaunchStudio, Manifera, Herre Roelevink, audit-logging, AI-transparantie
-Buyer Stage: Decision
+Titel: "De Europese AI Act Compliance Sprint: Interne Juristen vs. LaunchStudio's Technische Oplossing"
+Trefwoorden: EU AI Act compliance sprint, technische naleving AI, model documentatie, bias logging, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Compliance Officers / CTO's / Founders
 ---
 
-# De EU AI Act Compliance-sprint: Interne Juristen vs. de Technische Oplossing van LaunchStudio
+# De Europese AI Act Compliance Sprint: Interne Juristen vs. LaunchStudio's Technische Oplossing
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Europese AI Act Compliance Sprint: Interne Juristen vs. LaunchStudio's Technische Oplossing",
+  "description": "Waarom juridisch advies alleen beleid schrijft, terwijl LaunchStudio de daadwerkelijke logging en technische safeguards bouwt.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-84",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/eu-ai-act-compliance-sprint-legal-vs-launchstudio"
+  }
+}
+</script>
 
 De EU AI Act vraagt oprichters niet om een beleidsdocument te schrijven en het daarbij te laten — de wet vraagt om specifieke, verifieerbare technische mogelijkheden: audit-logs die vastleggen hoe een AI-systeem tot een beslissing kwam, mechanismen voor menselijk toezicht die daadwerkelijk kunnen ingrijpen, transparantiemeldingen die op het juiste moment verschijnen, en documentatie die overeenkomt met het systeem zoals het daadwerkelijk in productie draait. Voor AI SaaS-oprichters wier product iets raakt dat lijkt op een "hoogrisico"-toepassing — werving, krediet, onderwijs, biometrische verwerking — is dit geen optioneel papierwerk; het is een harde vereiste met echte handhavingstanden. Dit artikel vergelijkt wat een intern juridisch team realistisch gezien kan leveren met wat een technische compliance-sprint van LaunchStudio levert, en waarom oprichters steeds vaker beide nodig hebben, in de juiste volgorde.
 
@@ -90,6 +115,7 @@ Sofia schakelde LaunchStudio in om de kloof te dichten. Het engineeringteam bouw
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Hebben we nog steeds interne of externe juridische bijstand nodig als we LaunchStudio inhuren voor technische compliance?

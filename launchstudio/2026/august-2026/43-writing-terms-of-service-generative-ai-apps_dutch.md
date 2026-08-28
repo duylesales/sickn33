@@ -1,10 +1,35 @@
 ---
-Titel: "Enterprise Gebruiksvoorwaarden Opstellen voor Generatieve AI SaaS-Applicaties"
-Trefwoorden: AI security risico's, AI privacy problemen, generatieve AI, AI SaaS, AI en softwareontwikkeling, AI kwetsbaarheden, AI-native, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "Enterprise Algemene Voorwaarden Opstellen voor Generatieve AI SaaS Applicaties"
+Trefwoorden: Enterprise Algemene Voorwaarden, AI Terms of Service, aansprakelijkheid AI output, SLA contracten, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Legal Counsel / SaaS Oprichters / Enterprise AE's
 ---
 
-# Enterprise Gebruiksvoorwaarden Opstellen voor Generatieve AI SaaS-Applicaties
+# Enterprise Algemene Voorwaarden Opstellen voor Generatieve AI SaaS Applicaties
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Enterprise Algemene Voorwaarden Opstellen voor Generatieve AI SaaS Applicaties",
+  "description": "Stel waterdichte enterprise B2B voorwaarden op die AI-hallucinaties, intellectueel eigendom en uptime SLA's dekken.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-43",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/writing-terms-of-service-generative-ai-apps"
+  }
+}
+</script>
 
 Voor de meeste beginnende oprichters zijn de Algemene Voorwaarden (Terms of Service / ToS) een haastig gekopieerd sluitstuk — men downloadt een generiek SaaS-sjabloon, past de bedrijfsnaam aan en publiceert het. In traditionele software is dit al riskant; in Generatieve AI is dit ronduit desastreus. AI introduceert geheel nieuwe juridische aansprakelijkheden waar een standaard software-sjabloon uit 2019 nooit op berekend is: hallucinaties die financiële of reputatieschade veroorzaken, het genereren van illegale of misleidende content en onduidelijkheid over het auteursrecht op gegenereerde data. Uw algemene voorwaarden zijn uw enige contractuele schild en moeten exact zijn afgestemd op het daadwerkelijke gedrag van uw AI-applicatie.
 
@@ -108,7 +133,7 @@ LaunchStudio levert geen advocatenadvies, maar bouwt de technische infrastructuu
       "name": "Waarom kan ik niet volstaan met de algemene voorwaarden van een traditioneel SaaS-bedrijf?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat generieke voorwaarden geen dekking bieden voor AI-hallucinaties, API-storingen van derden en output-auteursrechten."
+        "text": "Omdat traditionele software-voorwaarden geen bepalingen bevatten voor AI-hallucinaties, model-afhankelijkheid van derden, auteursrechtelijke onzekerheid over gegenereerde content en AUP-misbruik van taalmodellen."
       }
     },
     {
@@ -116,7 +141,7 @@ LaunchStudio levert geen advocatenadvies, maar bouwt de technische infrastructuu
       "name": "Wat regelt een 'Hallucinatie-Disclaimer'?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het legt de verificatieplicht van AI-antwoorden bij de gebruiker en sluit aansprakelijkheid voor feitelijke onjuistheden uit."
+        "text": "Het stelt contractueel vast dat de AI foutieve of misleidende antwoorden kan genereren en verplicht de gebruiker om alle output zelfstandig te valideren alvorens er zakelijke beslissingen op te baseren."
       }
     },
     {
@@ -124,7 +149,7 @@ LaunchStudio levert geen advocatenadvies, maar bouwt de technische infrastructuu
       "name": "Moet ik mijn externe AI-leveranciers vermelden in de voorwaarden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, via een pass-through bepaling die u vrijwaart voor storingen en beleidswijzigingen bij externe LLM-providers."
+        "text": "Ja. Via een Pass-Through clausule legt u vast dat uw dienst afhankelijk is van externe API-providers (zoals OpenAI) en dat u niet aansprakelijk bent voor storingen of beleidswijzigingen bij die leveranciers."
       }
     },
     {
@@ -132,7 +157,7 @@ LaunchStudio levert geen advocatenadvies, maar bouwt de technische infrastructuu
       "name": "Wie bezit het auteursrecht op gegenereerde AI-output?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rechten worden voor zover wettelijk mogelijk overgedragen aan de gebruiker, met een disclaimer over niet-gegarandeerde uniciteit."
+        "text": "De industriestandaard is om alle rechten op de output over te dragen aan de gebruiker voor zover wettelijk toegestaan, inclusief de waarschuwing dat AI-content niet altijd auteursrechtelijk beschermd kan worden en niet gegarandeerd uniek is."
       }
     },
     {
@@ -140,7 +165,7 @@ LaunchStudio levert geen advocatenadvies, maar bouwt de technische infrastructuu
       "name": "Schrijft LaunchStudio zelf de juridische documenten?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio bouwt de technische handhaving zoals interactieve click-wrap modals en audit-logs voor waterdichte compliance."
+        "text": "LaunchStudio levert geen advocatenadvies, maar bouwt de technische infrastructuur (click-wrap modals, timestamping in de database, AUP-handhaving) die uw voorwaarden juridisch sluitend en afdwingbaar maakt."
       }
     }
   ]

@@ -1,10 +1,35 @@
 ---
-Titel: "Customer Health Scoring Inrichten voor uw AI SaaS-Platform Abonnementen"
-Trefwoorden: AI SaaS, SaaS AI, AI SaaS platform, AI in SaaS, AI-native, AI software engineering, app bouwen met AI, AI deployment, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "Customer Health Scoring Inrichten voor Uw AI SaaS Platform Abonnementen"
+Trefwoorden: Customer health score, churn preventie, gebruikersactiviteit, telemetry tracking, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelgroep: Customer Success Leads / Data Analysts
 ---
 
-# Customer Health Scoring Inrichten voor uw AI SaaS-Platform Abonnementen
+# Customer Health Scoring Inrichten voor Uw AI SaaS Platform Abonnementen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Customer Health Scoring Inrichten voor Uw AI SaaS Platform Abonnementen",
+  "description": "Combineer tokenverbruik, inlogfrequentie en supporttickets in een realtime Health Score om proactief retentie te verhogen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-40",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/tracking-right-kpis-generative-saas"
+  }
+}
+</script>
 
 In traditionele SaaS is een explosieve toename van dagelijks actieve gebruikers (DAU) reden voor een feestje. Als u echter een generatieve AI-startup leidt, kan een plotselinge, ongecontroleerde piek in intensief gebruik betekenen dat u dagelijks duizenden euro's verliest aan variabele API-kosten. De unit economics van AI vereisen een volstrekt nieuwe set Key Performance Indicators (KPI's). Wie uitsluitend stuurt op MRR (maandelijks terugkerende omzet) en gebruikersaantallen, stuurt blind.
 
@@ -75,7 +100,7 @@ Zij schakelde **LaunchStudio (door Manifera)** in. Het engineeringteam configure
 
 ---
 
-## Veelgestelde vragen
+## Veelgestelde Vragen
 
 ### Waarom zijn traditionele SaaS-metrics misleidend voor AI-bedrijven?
 
@@ -107,7 +132,7 @@ Ja. LaunchStudio en Manifera implementeren nauwkeurige telemetrie via PostHog, c
       "name": "Waarom zijn traditionele SaaS-metrics misleidend voor AI-bedrijven?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat ze de variabele API- en rekenkosten negeren, waardoor hoge gebruikersactiviteit ongemerkt kan leiden tot negatieve winstmarges."
+        "text": "Omdat traditionele metrics geen rekening houden met de variabele kosten van LLM-tokens. Hoge gebruikersactiviteit kan zonder limieten leiden tot enorme API-facturen die de abonnementsinkomsten overstijgen."
       }
     },
     {
@@ -115,7 +140,7 @@ Ja. LaunchStudio en Manifera implementeren nauwkeurige telemetrie via PostHog, c
       "name": "Wat houdt de AI Brutomarge (AI Gross Margin) in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De totale SaaS-omzet minus directe kosten voor LLM-tokens, embeddings en servercapaciteit, gemeten per gebruiker en cohort."
+        "text": "De abonnementsomzet verminderd met de directe kosten voor AI-aanroepen (tokens, vector-opslag en GPU-servers). Deze marge moet idealiter boven de 70% blijven om een gezond en schaalbaar businessmodel te garanderen."
       }
     },
     {
@@ -123,7 +148,7 @@ Ja. LaunchStudio en Manifera implementeren nauwkeurige telemetrie via PostHog, c
       "name": "Hoe meet ik de Generation Success Rate (GSR)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door impliciet gedrag te registreren: kopiëren en opslaan duiden op succes, terwijl herhaaldelijk regenereren wijst op falende output."
+        "text": "Door bij te houden of gebruikers de gegenereerde tekst daadwerkelijk kopiëren, downloaden of opslaan, versus het direct achter elkaar klikken op 'Regenereer' of het vroegtijdig verlaten van de sessie."
       }
     },
     {
@@ -131,7 +156,7 @@ Ja. LaunchStudio en Manifera implementeren nauwkeurige telemetrie via PostHog, c
       "name": "Wat is Time-to-Value (TTV) en waarom is 60 seconden de norm?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De tijdsduur van registratie tot het eerste bruikbare AI-resultaat; snelle TTV onder de minuut voorkomt vroege uitval van nieuwe gebruikers."
+        "text": "TTV is het aantal seconden tussen registratie en het eerste waardevolle AI-resultaat. Duurt dit langer dan 60 seconden door ingewikkelde onboarding-stappen, dan haken potentiële klanten massaal af."
       }
     },
     {
@@ -139,7 +164,7 @@ Ja. LaunchStudio en Manifera implementeren nauwkeurige telemetrie via PostHog, c
       "name": "Kan LaunchStudio tokentracking en kostenattributie vanaf de start inbouwen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. LaunchStudio en Manifera richten complete telemetrie, token-attributie per gebruiker en real-time marge-dashboards in."
+        "text": "Ja. LaunchStudio en Manifera implementeren nauwkeurige telemetrie via PostHog, custom database-tabellen voor tokenlogging en geautomatiseerde waarschuwingen bij margedalingen."
       }
     }
   ]

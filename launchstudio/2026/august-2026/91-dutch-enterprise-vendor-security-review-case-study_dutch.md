@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Slagen voor de Leveranciersbeveiligingsbeoordeling van een Nederlandse Enterprise-klant in 8 Dagen"
-Keywords: Dutch enterprise vendor security review, NEN 7510, leveranciersbeoordeling, dataresidentie, Row Level Security, LaunchStudio, Manifera, Herre Roelevink, Lovable, Autoriteit Persoonsgegevens
-Buyer Stage: Decision
+Titel: "Case Study: Een Vendor Security Review van een Nederlandse Enterprise Klant Doorstaan in 8 Dagen"
+Trefwoorden: Case study vendor security review Nederland, enterprise SaaS deal, ISO 27001 readiness, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: B2B SaaS Founders / Sales Leads
 ---
 
-# Case Study: Slagen voor de Leveranciersbeveiligingsbeoordeling van een Nederlandse Enterprise-klant in 8 Dagen
+# Case Study: Een Vendor Security Review van een Nederlandse Enterprise Klant Doorstaan in 8 Dagen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Een Vendor Security Review van een Nederlandse Enterprise Klant Doorstaan in 8 Dagen",
+  "description": "Hoe een AI HR-tool uit Utrecht een enterprise-contract van €150k tekende na het succesvol doorstaan van een strikte IT-audit.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-91",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/dutch-enterprise-vendor-security-review-case-study"
+  }
+}
+</script>
 
 Verkopen aan een Nederlandse enterprise-organisatie is een ander spel dan verkopen aan een generieke internationale klant. Nederlandse inkoop- en informatiebeveiligingsteams hanteren hun eigen leveranciersbeoordelingsproces, bovenop de AVG, met specifieke verwachtingen rond dataresidentie, NEN 7510-afstemming voor alles wat gezondheids- of persoonsgegevens raakt, en documentatie geschreven op een niveau dat een Nederlandse ondernemingsraad en juridische afdeling daadwerkelijk accepteren. Dit is het verhaal van Sanne de Wit, oprichter van LogiFlow AI, een tool voor supply chain-zichtbaarheid gebouwd met **Lovable**, en de acht dagen die het kostte om een vastgelopen deal met een Nederlandse enterprise-klant om te zetten in een ondertekende pilot.
 
@@ -87,6 +112,7 @@ Bram werkte samen met **LaunchStudio (door Manifera)** om de kloof te dichten. H
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Hoe verschilt een leveranciersbeveiligingsbeoordeling van een Nederlandse enterprise van een standaard internationale beoordeling?

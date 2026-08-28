@@ -1,10 +1,35 @@
 ---
-Titel: "Prijzen voor uw AI SaaS-Platform: Verbruiksgebaseerd vs Vaste Tiers vs Hybride Facturatie"
-Trefwoorden: AI SaaS, SaaS AI, AI SaaS platform, AI in SaaS, AI deployment, AI-app bouwen, AI software engineering, AI-native, LaunchStudio, Manifera
+Titel: "Prijzen van Uw AI SaaS Platform: Verbruiksgebaseerd vs Vaste Prijzen vs Hybride Facturatie"
+Trefwoorden: AI SaaS prijzen, verbruiksgebaseerde facturatie, fixed pricing, hybride SaaS facturatie, Stripe billing, LaunchStudio, Manifera
 Koperfase: Overweging
+Doelgroep: SaaS Oprichters / FinOps / Product Managers
 ---
 
-# Prijzen voor uw AI SaaS-Platform: Verbruiksgebaseerd vs Vaste Tiers vs Hybride Facturatie
+# Prijzen van Uw AI SaaS Platform: Verbruiksgebaseerd vs Vaste Prijzen vs Hybride Facturatie
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Prijzen van Uw AI SaaS Platform: Verbruiksgebaseerd vs Vaste Prijzen vs Hybride Facturatie",
+  "description": "Kies het ideale prijsmodel voor uw AI SaaS om marge-erosie door tokenkosten te voorkomen met hybride en verbruiksgebaseerde tiers.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/usage-based-pricing-vs-fixed-tiers-ai-saas"
+  }
+}
+</script>
 
 Het bepalen van de prijs voor een traditioneel SaaS-product is een oefening in marketingpsychologie. Het bepalen van de prijs voor een AI SaaS-product is een oefening in strikte financiële wiskunde. Omdat AI-bedrijven bij elke gebruikersactie substantiële variabele kosten maken (API-tokens, GPU-inferentietijd), vernietigt het klakkeloos overnemen van traditionele "Onbeperkt voor € 29/maand" sjablonen direct uw brutomarges. In 2026 moeten oprichters bewust kiezen tussen vaste abonnementsbundels (Fixed Tiers), verbruiksgebaseerde facturatie (Usage-Based Billing) of een hybride model — en die keuze is allerminst cosmetisch. Het bepaalt of uw brutomarges gezond blijven naarmate u schaalt, of dat uw startup implodeert zodra een handvol intensieve power-users ontdekt hoever ze uw product kunnen belasten.
 
@@ -115,7 +140,7 @@ LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 
       "name": "Wat is een Fixed Tier prijsmodel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een vast maandbedrag voor platformtoegang en een vooraf gedefinieerd aantal AI-credits, met strikte databaselimieten om marges te bewaken."
+        "text": "Traditionele SaaS-prijzen waarbij gebruikers een vast bedrag per maand betalen voor toegang tot functies en een afgebakend aantal AI-credits. Voorspelbaar, maar risicovol als limieten niet strikt op databaseniveau worden bewaakt."
       }
     },
     {
@@ -123,7 +148,7 @@ LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 
       "name": "Wat is Verbruiksgebaseerde Facturatie (Metered Pricing)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Achteraf exact afrekenen wat er aan tokens of generaties is verbruikt, wat marges beschermt maar omzetprognoses onzekerder maakt."
+        "text": "Gebruikers betalen achteraf exact voor wat ze daadwerkelijk hebben verbruikt (bijv. € 0,05 per generatie). Dit garandeert gezonde brutomarges, maar vereist geavanceerde facturatie-infrastructuur zoals Stripe Billing Meters."
       }
     },
     {
@@ -131,7 +156,7 @@ LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 
       "name": "Waarom is 'Onbeperkt' een desastreus idee voor AI SaaS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Omdat tokens directe variabele kosten zijn; actieve gebruikers verbruiken snel meer aan API-kosten dan hun maandelijkse abonnementsgeld."
+        "text": "Omdat u als aanbieder betaalt voor elk gegenereerd token. Zonder limieten zorgen intensieve gebruikers voor torenhoge API-rekeningen die de abonnementsopbrengst ruimschoots overstijgen."
       }
     },
     {
@@ -139,7 +164,7 @@ LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 
       "name": "Welk prijsmodel is het meest geschikt voor B2B Enterprise?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het Hybride model: een vast platformabonnement inclusief basisbundel gecombineerd met automatische verbruiksfacturatie bij meerverbruik."
+        "text": "Het Hybride model. Breng een vast maandelijks platformabonnement in rekening inclusief basiscredits, aangevuld met automatische overage-tarieven voor extra verbruik en committed-use kortingen voor grote accounts."
       }
     },
     {
@@ -147,7 +172,7 @@ LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 
       "name": "Hoe verhoudt LaunchStudio zich tot Manifera qua facturatie-architectuur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio levert geharde Stripe- en metering-implementaties voor AI-startups, ondersteund door 11+ jaar software-ervaring van Manifera."
+        "text": "LaunchStudio is Manifera's productized dienst voor AI-startups. Manifera brengt 11+ jaar ervaring in enterprise-architectuur — inclusief Stripe-facturatie, creditledgers en metering — samen in compacte 1-tot-3-weekse lanceringstrajecten."
       }
     }
   ]

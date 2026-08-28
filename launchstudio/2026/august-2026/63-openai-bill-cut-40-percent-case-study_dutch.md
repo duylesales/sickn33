@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: De OpenAI-rekening van een AI SaaS-platform met 40% Verlagen in 2 Weken"
-Keywords: OpenAI API-kosten, prompt caching, GPT-4 model routing, tokengebruik, Bolt, LaunchStudio, Manifera, Herre Roelevink, rate limiting, unit economics
-Buyer Stage: Decision
+Titel: "Case Study: De OpenAI-Rekening van een AI SaaS Platform met 40% Verlagen in 2 Weken"
+Trefwoorden: Case study OpenAI kosten verlagen, semantische caching, prompt compressie, model routing GPT-4o-mini, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: SaaS Oprichters / CTO's / FinOps Leads
 ---
 
-# Case Study: De OpenAI-rekening van een AI SaaS-platform met 40% Verlagen in 2 Weken
+# Case Study: De OpenAI-Rekening van een AI SaaS Platform met 40% Verlagen in 2 Weken
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: De OpenAI-Rekening van een AI SaaS Platform met 40% Verlagen in 2 Weken",
+  "description": "Hoe een AI marketingplatform in Amsterdam zijn maandelijkse OpenAI-kosten verlaagde van €14.200 naar €8.500 in 14 dagen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-63",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/openai-bill-cut-40-percent-case-study"
+  }
+}
+</script>
 
 Elke AI SaaS-oprichter loopt uiteindelijk tegen dezelfde muur aan: het product werkt, klanten betalen, en de groei ziet er eindelijk echt uit — en dan komt de OpenAI-factuur binnen en dreigt die stilletjes het hele bedrijf op te eten. Dit is het verhaal van Amara Chukwu, oprichter van ReplyPilot AI, een AI-aangedreven klantenserviceplatform dat ze met Bolt bouwde. Bij slechts 300 betalende klanten liep haar OpenAI-rekening op tot $4.200 per maand — meer dan een derde van haar totale omzet — en die bleef sneller stijgen dan haar klantenaantal. Dit is precies hoe een engineeringtraject van twee weken die rekening met 40% verlaagde, zonder de responskwaliteit of haar bestaande frontend aan te tasten.
 
@@ -91,6 +116,7 @@ Amara werkte samen met **LaunchStudio (door Manifera)** om de onderliggende arch
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Waarom groeide de OpenAI-rekening sneller dan het klantenaantal?

@@ -1,10 +1,35 @@
 ---
-Titel: "De EU AI Act: Directe Compliance Stappen voor B2B AI SaaS Founders"
-Trefwoorden: AI security risico, AI privacy problemen, AI SaaS, AI-native, AI deployment, AI en softwareontwikkeling, LaunchStudio, Manifera
-Koperfase: Bewustzijn
+Titel: "De Europese AI Act: Concrete Nalevingsstappen voor B2B AI SaaS Oprichters"
+Trefwoorden: EU AI Act naleving, risicoclassificatie AI, transparantieplicht, Europese regelgeving, LaunchStudio, Manifera
+Koperfase: Overweging
+Doelgroep: Europese SaaS Oprichters / Compliance Officers
 ---
 
-# De EU AI Act: Directe Compliance Stappen voor B2B AI SaaS Founders
+# De Europese AI Act: Concrete Nalevingsstappen voor B2B AI SaaS Oprichters
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "De Europese AI Act: Concrete Nalevingsstappen voor B2B AI SaaS Oprichters",
+  "description": "Begrijp uw verplichtingen onder de Europese AI Act: van minimale risicoverplichtingen tot zware audits voor hoog-risico systemen.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-46",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/eu-ai-act-what-b2b-founders-must-know"
+  }
+}
+</script>
 
 Dacht u dat de AVG/GDPR al complex was? Bereid u dan voor op de Europese Artificial Intelligence Act (AI Act). Als 's werelds eerste alomvattende wetgevingskader voor kunstmatige intelligentie, gefaseerd van kracht tussen 2024 en 2027, bepaalt deze wet niet alleen hoe u met data omgaat; het dicteert exact wát u juridisch mag bouwen en hoe u de veiligheid moet aantonen vóórdat u lanceert. Heeft u klanten in Europa — of wordt de output van uw software binnen de EU gebruikt, ongeacht waar uw onderneming is gevestigd — dan moet u het getrapte risicomodel van de AI Act door en door kennen om verlammende boetes te voorkomen.
 
@@ -116,7 +141,7 @@ LaunchStudio en Manifera auditen uw software-architectuur, bepalen uw exacte ris
       "name": "Wat is de Europese AI Act?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Een Europees wetgevingskader dat AI-systemen classificeert en reguleert op basis van vier concrete risicocategorieën."
+        "text": "'s Werelds eerste allesomvattende wetgeving voor AI die verplichtingen en beperkingen oplegt op basis van het maatschappelijk risico van de specifieke AI-toepassing."
       }
     },
     {
@@ -124,7 +149,7 @@ LaunchStudio en Manifera auditen uw software-architectuur, bepalen uw exacte ris
       "name": "Is de AI Act van toepassing op bedrijven buiten Europa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, de wet geldt wereldwijd zodra de software of de AI-output wordt gebruikt door personen of bedrijven binnen de EU."
+        "text": "Ja. Zodra een Amerikaans of Aziatisch bedrijf AI-diensten aanbiedt aan gebruikers in de EU, of de output binnen de EU wordt ingezet, is de wetgeving onverkort van kracht."
       }
     },
     {
@@ -132,7 +157,7 @@ LaunchStudio en Manifera auditen uw software-architectuur, bepalen uw exacte ris
       "name": "Wat valt onder een 'Hoog Risico' AI-systeem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI voor sollicitatieselectie, kredietbeoordeling, examencorrectie en risico-analyses in gereguleerde sectoren."
+        "text": "AI-toepassingen die ingrijpen op essentiële levensgebieden: werving en selectie, krediet- en risicobeoordeling, toelating tot onderwijs en kritieke infrastructuur."
       }
     },
     {
@@ -140,7 +165,7 @@ LaunchStudio en Manifera auditen uw software-architectuur, bepalen uw exacte ris
       "name": "Welke AI-toepassingen zijn categorisch verboden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Social scoring, subliminale gedragsmanipulatie en het ongericht schrapen van gezichten voor biometrische herkenning."
+        "text": "Social scoring door overheden of bedrijven, manipulatieve subliminale gedragsbeïnvloeding en het massaal schrapen van gezichtsafbeeldingen voor biometrische databases."
       }
     },
     {
@@ -148,7 +173,7 @@ LaunchStudio en Manifera auditen uw software-architectuur, bepalen uw exacte ris
       "name": "Hoe ondersteunt LaunchStudio bij de AI Act?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio bouwt de verplichte technische logging, transparantiedialogen en Human-in-the-Loop architecturen."
+        "text": "LaunchStudio en Manifera auditen uw software-architectuur, bepalen uw exacte risicoklasse en bouwen de vereiste databaselogging, transparantielabels en Human-in-the-Loop workflows in."
       }
     }
   ]

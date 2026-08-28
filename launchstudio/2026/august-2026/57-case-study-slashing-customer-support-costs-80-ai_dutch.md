@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Multi-Tenant RLS Implementeren om uw Zorg AI Database te Beveiligen"
-Trefwoorden: AI SaaS, AI deployment, AI security, AI kwetsbaarheden, build AI app, AI database, AI gebruiken voor code, LaunchStudio, Manifera
-Koperfase: Overweging
+Titel: "Case Study: Multi-Tenant RLS Implementeren om Uw Zorg AI Database te Beveiligen"
+Trefwoorden: Case study healthcare AI, Supabase RLS multi-tenant, medische data privacy, NEN 7510, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: HealthTech Founders / Security Engineers
 ---
 
-# Case Study: Multi-Tenant RLS Implementeren om uw Zorg AI Database te Beveiligen
+# Case Study: Multi-Tenant RLS Implementeren om Uw Zorg AI Database te Beveiligen
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Multi-Tenant RLS Implementeren om Uw Zorg AI Database te Beveiligen",
+  "description": "Hoe een medische AI-startup in Utrecht voldeed aan NEN 7510 en AVG door waterdichte Supabase Row Level Security in te voeren.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-57",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/case-study-slashing-customer-support-costs-80-ai"
+  }
+}
+</script>
 
 Voor snelgroeiende technologiebedrijven is de klantenservice vaak het slachtoffer van het eigen commerciële succes. Hoe sneller het aantal actieve gebruikers groeit, hoe sneller de support-wachtrij ontploft — wat bedrijven dwingt om continu nieuwe eerstelijns supportmedewerkers aan te nemen om te voorkomen dat de reactietijden instorten. Deze casestudy beschrijft hoe LaunchStudio een Series B FinTech startup ("PayFlow") hielp deze lineaire kostenexplosie te doorbreken door een geavanceerde Retrieval-Augmented Generation (RAG) agent te implementeren, waarmee **62% van de supporttickets volledig autonoom werd opgelost** en jaarlijks **$ 800.000 aan loonkosten werd bespaard**.
 
@@ -101,7 +126,7 @@ Ja. LaunchStudio en Manifera (opgericht in 2014) koppelen RAG-agenten direct aan
       "name": "Welk probleem loste de RAG-agent op voor de FinTech startup?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Het automatiseren van 1.500 repetitieve eerstelijnstickets per dag en het besparen van $ 800.000 aan support-loonkosten."
+        "text": "Het afhandelen van 1.500 dagelijkse tickets van 100.000 merchants, waardoor een geplande uitbreiding van 12 supportmedewerkers en $ 800.000 aan loonkosten werd voorkomen."
       }
     },
     {
@@ -109,7 +134,7 @@ Ja. LaunchStudio en Manifera (opgericht in 2014) koppelen RAG-agenten direct aan
       "name": "Waarom voldeden traditionele chatbots niet?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beslisbomen breken bij natuurlijke taalvariaties en escaleerden in 95% van de gevallen alsnog naar mensen."
+        "text": "Traditionele beslisboom-bots begrijpen geen natuurlijke taalvariaties en escaleerden in 95% van de gevallen alsnog naar een menselijke medewerker."
       }
     },
     {
@@ -117,7 +142,7 @@ Ja. LaunchStudio en Manifera (opgericht in 2014) koppelen RAG-agenten direct aan
       "name": "Hoe voorkomt de architectuur dat de AI foutieve antwoorden verzint?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Door strikte RAG-grounding en een automatische escalatie naar een menselijke agent bij minder dan 90% zekerheid."
+        "text": "Door strikte context-grounding: de AI mag uitsluitend antwoorden met data uit de opgehaalde documenten en escaleert bij minder dan 90% betrouwbaarheid direct naar een menselijke agent."
       }
     },
     {
@@ -125,7 +150,7 @@ Ja. LaunchStudio en Manifera (opgericht in 2014) koppelen RAG-agenten direct aan
       "name": "Hoe reageerden klanten op de AI-ondersteuning?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Klanttevredenheid steeg met 15% dankzij directe responstijden van 8 seconden met geverifieerde bronverwijzingen."
+        "text": "De klanttevredenheid steeg met 15%, omdat klanten binnen 8 seconden een accuraat antwoord met bronlink kregen in plaats van urenlang te wachten."
       }
     },
     {
@@ -133,7 +158,7 @@ Ja. LaunchStudio en Manifera (opgericht in 2014) koppelen RAG-agenten direct aan
       "name": "Bouwt LaunchStudio koppelingen met bestaande helpdesksystemen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "LaunchStudio integreert RAG-agenten direct in Zendesk, Intercom en maatwerk CRM-omgevingen via Manifera."
+        "text": "Ja. LaunchStudio en Manifera (opgericht in 2014) koppelen RAG-agenten direct aan Zendesk, Intercom, Freshdesk en interne API's."
       }
     }
   ]

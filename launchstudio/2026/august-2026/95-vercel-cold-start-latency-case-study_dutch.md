@@ -1,10 +1,35 @@
 ---
-Titel: "Case Study: Cold-Start Latency van Vercel Functions met 70% Verlagen in Één Sprint"
-Keywords: Vercel cold start, serverless function latency, Vercel functions, edge functions, cold-start latency, LaunchStudio, Manifera, Herre Roelevink, Bolt
-Buyer Stage: Decision
+Titel: "Case Study: Vercel Function Cold-Start Latentie met 70% Verlagen in Eén Sprint"
+Trefwoorden: Case study Vercel cold starts, serverless latency verlagen, bundle size reductie, LaunchStudio, Manifera
+Koperfase: Beslissing
+Doelgroep: Frontend Developers / Tech Leads
 ---
 
-# Case Study: Cold-Start Latency van Vercel Functions met 70% Verlagen in Één Sprint
+# Case Study: Vercel Function Cold-Start Latentie met 70% Verlagen in Eén Sprint
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Vercel Function Cold-Start Latentie met 70% Verlagen in Eén Sprint",
+  "description": "Hoe een B2B AI tool in Rotterdam de initial cold-start vertraging terugbracht van 4,2 seconden naar 1,1 seconde.",
+  "author": {
+    "@type": "Organization",
+    "name": "LaunchStudio",
+    "url": "https://launchstudio.eu/nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Manifera",
+    "url": "https://www.manifera.com"
+  },
+  "datePublished": "2026-08-95",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://launchstudio.eu/nl/blog/vercel-cold-start-latency-case-study"
+  }
+}
+</script>
 
 Serverless functions op Vercel horen onzichtbare infrastructuur te zijn — een request komt binnen, een functie start op, een respons gaat terug, en niemand denkt er nog aan. Voor Noor Al-Sayed, oprichter van een API-intensieve AI SaaS voor planning gebouwd met **Bolt**, werd die infrastructuur zeer zichtbaar, en snel, in de vorm van een vertraging van 2,3 seconden die op ogenschijnlijk willekeurige requests verscheen en stilletjes zowel gebruikers als geloofwaardigheid kostte. Dit is het verhaal van wat een Vercel function cold start eigenlijk is, waarom AI-builder-apps er bijzonder gevoelig voor zijn, en de sprint die het met 70% verlaagde.
 
@@ -93,6 +118,7 @@ Casper werkte samen met **LaunchStudio (door Manifera)** om dit op te lossen. He
 ---
 
 ---
+
 ## Veelgestelde Vragen
 
 ### Wat is een Vercel function cold start precies?
