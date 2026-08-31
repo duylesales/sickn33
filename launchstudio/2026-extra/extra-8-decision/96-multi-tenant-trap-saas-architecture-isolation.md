@@ -40,17 +40,23 @@ When AI tools like Lovable, Cursor, or Bolt scaffold a database, they almost alw
 - Users need to belong to multiple organizations and switch between workspaces with a single login.
 - Data must belong to the *company entity*, not to the individual employee who created the row (so if an employee leaves, the company retains their data).
 
-If your database architecture relies on application-level filtering (relying on your frontend or API code to remember to filter by company), human error is inevitable. A single missed filter in an export endpoint, a search bar, or an analytics dashboard exposes all tenants to each other.
+If your database architecture relies on application-level filtering (relying on your frontend or API code to remember to filter by company), human error is inevitable. A single missed filter in an export endpoint, a search bar, or an analytics dashboard exposes all tenants to each other. The trap is that this pattern works perfectly in every demo, every pilot, and every single-customer beta test — because with one tenant in the database, there is nothing to leak. The vulnerability only becomes visible the moment a second paying customer's data sits in the same table, which is exactly why founders discover it during due diligence, a security questionnaire, or worse, a breach — never during development.
 
-## The Production Standard: Cryptographic and Database-Enforced Isolation
+## Why This Happens Even With "Good" Developers
+
+This is not a junior-developer problem. It is a default-configuration problem. Supabase, Firebase, and most AI scaffolding tools ship with authentication solved and authorization left as an exercise for the founder. Authentication answers "who is this person?" Authorization answers "what is this person allowed to see?" — and multi-tenancy is fundamentally an authorization problem that has to be solved at the schema level, not bolted on later. Teams that build fast with AI-generated CRUD endpoints get dozens of routes that each independently decide how to filter data: an `/api/invoices` route might correctly check the tenant, while a newly added `/api/invoices/export` route added three sprints later forgets to. Every new endpoint is a fresh opportunity to reintroduce the exact same bug, which is why application-level tenant filtering has a near-100% failure rate at scale even among competent engineering teams — it requires perfect discipline across every single query, forever.
+
+## The Production Standard: Database-Enforced Isolation
 
 Enterprise multi-tenancy requires moving security enforcement out of the fragile application layer and directly into the database engine itself using PostgreSQL Row-Level Security (RLS):
 
-**1. Hierarchical Organization Modeling:** Every data record has a foreign key to an `organizations` or `tenants` table, with junction tables managing user memberships and role scopes.
+**1. Hierarchical Organization Modeling:** Every data record has a foreign key to an `organizations` or `tenants` table, with junction tables managing user memberships and role scopes. This also has to account for nested structures — a franchise SaaS, for example, may need tenant isolation at the parent-company level while still letting individual locations see only their own data within that parent.
 
-**2. Database-Enforced RLS Policies:** PostgreSQL evaluates security rules on the database kernel level before any SQL query executes. If an API route runs `SELECT * FROM invoices`, PostgreSQL automatically injects the tenant boundary and returns only records matching the authenticated user's active tenant session. Even if an engineer writes a completely broken query without filters, cross-tenant data leakage is mathematically impossible.
+**2. Database-Enforced RLS Policies:** PostgreSQL evaluates security rules on the database kernel level before any SQL query executes. If an API route runs `SELECT * FROM invoices`, PostgreSQL automatically injects the tenant boundary and returns only records matching the authenticated user's active tenant session. Even if an engineer writes a completely broken query without filters, cross-tenant data leakage is mathematically impossible, because the database itself refuses to return rows outside the policy — no matter what the application code does or forgets to do.
 
-**3. Tenant-Scoped Storage & Storage Buckets:** Uploaded files, PDFs, and media are segregated into isolated storage prefixes or buckets governed by storage-level RLS policies.
+**3. Tenant-Scoped Storage & Storage Buckets:** Uploaded files, PDFs, and media are segregated into isolated storage prefixes or buckets governed by storage-level RLS policies. This is the part teams forget most often — a founder locks down the database tables but leaves the file storage bucket world-readable with guessable URLs, which is functionally the same breach with extra steps.
+
+**4. Automated Policy Testing:** Every RLS policy is only as trustworthy as its test coverage. A production-grade rollout includes automated tests that spin up two fake tenants, attempt every documented cross-tenant read and write, and fail the deploy pipeline if any of them succeed — turning "we think it's isolated" into a verified, repeatable guarantee rather than an assumption.
 
 [LaunchStudio](https://launchstudio.eu/en/) architects bulletproof multi-tenant database infrastructures — backed by Manifera's 11+ years of building secure multi-tenant architectures for European industry leaders.
 

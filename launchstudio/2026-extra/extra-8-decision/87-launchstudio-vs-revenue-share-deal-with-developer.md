@@ -33,13 +33,27 @@ Target Persona: AI-Native Founder (Non-Technical)
 
 When you are bootstrapping a new venture and cash feels tight, the proposition sounds irresistible: find a freelance developer who agrees to harden and deploy your AI prototype in exchange for 15% to 30% of your future monthly recurring revenue. You risk no upfront capital, the developer gets upside, and everyone is aligned. But beneath this surface elegance lies a fundamental economic misalignment that stalls 9 out of 10 rev-share projects within their first three months.
 
-## The Asymmetry of Unpaid Commitment
+The pitch usually comes together over a coffee or a LinkedIn message, framed as a partnership rather than a transaction: "I believe in what you're building, let's both have skin in the game." It feels like the founder-friendly version of raising capital — no dilution, no invoice, just aligned incentives. What that framing obscures is that a revenue-share arrangement asks a developer to accept startup-founder risk (a project that may never generate a euro) while accepting employee-level control (someone else sets the scope, the deadlines, and the priorities). That mismatch between the risk being carried and the control being ceded is the structural fault line that eventually cracks almost every informal rev-share deal.
+
+## Why a Revenue-Share Deal Is Structurally Different From a Fixed-Price Engagement
 
 A developer working for future revenue is, by definition, working for zero euros today. Inevitably, their paying client work, day job, or personal life will demand their attention. When a client offers them €80/hour cash for an urgent project, your rev-share MVP instantly drops to bottom priority.
 
-Because there is no financial transaction, there is no contractual accountability. You cannot demand delivery deadlines, enforce code review standards, or dictate architecture without risking the developer walking away with all the work half-finished. 
+Because there is no financial transaction, there is no contractual accountability. You cannot demand delivery deadlines, enforce code review standards, or dictate architecture without risking the developer walking away with all the work half-finished. There is no invoice to withhold, no deposit to forfeit, no SLA to point to — the only leverage either side has is goodwill, and goodwill erodes fast once a deadline is missed for the third time.
 
-Even worse: if the project does succeed, giving away 20% of top-line revenue forever is the most expensive way to pay for a two-week backend hardening job in the history of your business. If your SaaS reaches €25,000/month, you are paying that developer €5,000 every single month for infrastructure work they completed two years prior.
+Even worse: if the project does succeed, giving away 20% of top-line revenue forever is the most expensive way to pay for a two-week backend hardening job in the history of your business. If your SaaS reaches €25,000/month, you are paying that developer €5,000 every single month for infrastructure work they completed two years prior — and that percentage is calculated on revenue, not profit, so you owe it even in months where your margins are thin or negative.
+
+## The Three Patterns That Cause Revenue-Share Deals to Stall
+
+**Pattern 1: Slow bleed from deprioritization.** The developer doesn't quit outright — they simply respond slower to messages each week, push "I'll get to it this weekend" further into the future, and let a two-week task quietly stretch into two months. There is no single moment to point to as the failure, which makes it hard to know when to cut losses.
+
+**Pattern 2: Renegotiation under leverage.** The moment the founder has real momentum — a pilot customer, a demo day, a term sheet — the developer who has been sitting on unfinished work suddenly has enormous leverage to demand cash upfront or a larger equity slice before finishing what was promised, because the founder now has far more to lose from further delay than the developer does.
+
+**Pattern 3: Undocumented, unclear IP ownership.** Without a signed IP assignment agreement (which most informal rev-share handshake deals never include), the code the developer wrote may legally remain theirs. This becomes a serious problem the moment a founder tries to raise a funding round or sell the company, when a lawyer doing diligence asks a simple question — "who owns this repository?" — that nobody can answer cleanly.
+
+## When Revenue-Share Deals Do Work
+
+To be fair, revenue-share arrangements are not always doomed. They tend to work when both sides treat it as a genuine co-founder relationship rather than a cheap way to outsource development: equity or revenue share is formalized in a written agreement with vesting and IP assignment clauses from day one, the developer is meaningfully involved in product and business decisions rather than just executing a spec, and both sides have the financial runway to work for free for six to twelve months without resentment building. This pattern shows up most often when the developer is effectively becoming a co-founder with a real title and real decision-making power — not when a founder is trying to get €5,000 worth of backend work done for €0 upfront by dangling a percentage that sounds generous only because the business doesn't generate revenue yet.
 
 ## The Clean Alternative: Fixed-Price Clarity
 

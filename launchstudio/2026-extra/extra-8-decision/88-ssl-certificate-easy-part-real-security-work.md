@@ -12,7 +12,7 @@ Target Persona: Technical Solo Founder / Indie Hacker
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The SSL Certificate Is the Easy Part — What Comes After Is the Real Security Work",
-  "description": "A green padlock in the browser address bar only means your connection is encrypted. It does not mean your application is secure. Here is what real production hardening looks like behind the padlock.",
+  "description": "A green padlock in the browser address bar only means your connection is encrypted. It does not mean your application is secure. Here is what real production hardening looks like behind the padlock — CSP, CORS, security headers, rate limiting, RLS, and a pre-launch security checklist.",
   "author": {
     "@type": "Organization",
     "name": "LaunchStudio",
@@ -31,25 +31,40 @@ Target Persona: Technical Solo Founder / Indie Hacker
 }
 </script>
 
-When you deploy a Next.js or Lovable prototype to Vercel, Netlify, or Railway, an automated Let's Encrypt SSL/TLS certificate generates in under ten seconds. The browser displays a comforting green padlock. To non-technical observers and many first-time founders, that padlock is synonymous with "our app is secure." In reality, an SSL certificate only ensures that data in transit cannot be read by someone sniffing Wi-Fi traffic at a coffee shop. It does nothing to protect your database, your API keys, your user permissions, or your application headers from being systematically exploited.
+When you deploy a Next.js or Lovable prototype to Vercel, Netlify, or Railway, an automated Let's Encrypt SSL/TLS certificate generates in under ten seconds. The browser displays a comforting green padlock. To non-technical observers and many first-time founders, that padlock is synonymous with "our app is secure." In reality, an SSL certificate only ensures that data in transit cannot be read by someone sniffing Wi-Fi traffic at a coffee shop. It does nothing to protect your database, your API keys, your user permissions, or your application headers from being systematically exploited. A penetration tester does not care whether your padlock is green — they care whether your `/api/admin` route checks a session token, whether your storage bucket permissions default to private, and whether your login form can survive 10,000 automated password guesses in a minute.
 
 ## The Security Layers AI Tools Routinely Omit
 
 AI-generated code prioritizes getting features on screen quickly. In doing so, it almost always leaves out the standard HTTP security headers and defensive architectural patterns that enterprise penetration testers look for:
 
-**1. Content Security Policy (CSP):** Without a strict CSP header, your application is vulnerable to Cross-Site Scripting (XSS). If a malicious actor injects an inline script into a comment or profile field, the browser will execute it, exposing user session cookies and authentication tokens.
+**1. Content Security Policy (CSP):** Without a strict CSP header, your application is vulnerable to Cross-Site Scripting (XSS). If a malicious actor injects an inline script into a comment or profile field, the browser will execute it, exposing user session cookies and authentication tokens. AI scaffolds almost never generate a CSP because it requires manually enumerating every legitimate script, style, font, and image source your app loads — a tedious, easy-to-skip step when the priority is shipping a demo.
 
-**2. Cross-Origin Resource Sharing (CORS):** Prototype backends often default to `Access-Control-Allow-Origin: *` to avoid pesky local development browser errors. In production, this wildcard allows any malicious website visited by your logged-in user to send authenticated requests directly to your API.
+**2. Cross-Origin Resource Sharing (CORS):** Prototype backends often default to `Access-Control-Allow-Origin: *` to avoid pesky local development browser errors. In production, this wildcard allows any malicious website visited by your logged-in user to send authenticated requests directly to your API, silently exfiltrating data using the victim's own session cookies.
 
-**3. HTTP Security Headers:** Essential headers like `X-Frame-Options: DENY` (preventing clickjacking), `X-Content-Type-Options: nosniff`, and `Strict-Transport-Security` (HSTS) are rarely included in default AI project scaffolds.
+**3. HTTP Security Headers:** Essential headers like `X-Frame-Options: DENY` (preventing clickjacking), `X-Content-Type-Options: nosniff`, and `Strict-Transport-Security` (HSTS, which forces browsers to refuse plain-HTTP connections even if a link is mistyped) are rarely included in default AI project scaffolds. Each one closes a specific, well-documented attack vector that automated scanners check for on the first pass.
 
-**4. Rate Limiting & Brute Force Defenses:** A login endpoint without IP and account-level rate limiting allows automated credential-stuffing bots to test thousands of stolen password combinations every minute.
+**4. Rate Limiting & Brute Force Defenses:** A login endpoint without IP and account-level rate limiting allows automated credential-stuffing bots to test thousands of stolen password combinations every minute, often sourced from unrelated data breaches and replayed against your app hoping for password reuse.
 
-**5. Database Row-Level Security (RLS):** Encrypting the connection to PostgreSQL is pointless if any authenticated user can query `SELECT * FROM invoices` without table-level permission filters.
+**5. Database Row-Level Security (RLS):** Encrypting the connection to PostgreSQL is pointless if any authenticated user can query `SELECT * FROM invoices` without table-level permission filters. Supabase ships RLS disabled by default on new tables specifically so developers can move fast during prototyping — which means it is almost always still disabled the day the app goes live.
+
+**6. Secrets Exposed to the Client Bundle:** AI copilots frequently place API keys directly in `.env` variables prefixed `NEXT_PUBLIC_` or import server-only credentials into client components, which bundlers then ship in plaintext inside the JavaScript any visitor can view via browser dev tools.
 
 ## Real Security Is Multi-Layered Defense
 
-True application security is not a single plugin or certificate — it is a layered defense model where every tier (network, server headers, API gateway, database) assumes the other tiers might be breached and enforces its own boundaries.
+True application security is not a single plugin or certificate — it is a layered defense model where every tier (network, server headers, API gateway, database) assumes the other tiers might be breached and enforces its own boundaries. A penetration tester working through the OWASP Top 10 checklist does not stop looking once they confirm HTTPS is active; they treat the certificate as table stakes and spend the remaining hours probing authorization logic, input validation, and access control — the layers that actually determine whether an attacker who gets past the front door can reach anything valuable. This is why enterprise procurement teams increasingly require a signed vulnerability scan report, not just a screenshot of a padlock icon, before approving a vendor contract.
+
+## A Pre-Launch Security Checklist
+
+Before any AI-built prototype takes real customer data or processes payments, run through this baseline:
+
+1. CSP header configured and tested against every legitimate asset source.
+2. CORS restricted to your exact production domain(s), not a wildcard.
+3. HSTS, `X-Frame-Options`, and `X-Content-Type-Options` headers set at the CDN or reverse-proxy level.
+4. Rate limiting active on authentication, password reset, and billing endpoints.
+5. Row-Level Security enabled and tested on every Supabase or Postgres table holding user data.
+6. Storage buckets audited for accidental public read/write access.
+7. Environment variables audited so no server-side secret is reachable from client bundles.
+8. Dependency scan run for known CVEs in third-party packages.
 
 [LaunchStudio](https://launchstudio.eu/en/) hardens AI prototypes using the enterprise security standards developed over 11+ years at Manifera — trusted by security-sensitive organizations including TNO and CFLW Cyber Strategies.
 
