@@ -353,5 +353,13 @@
 - **11:05**: Cập nhật tệp kiểm kê [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md) — bổ sung cụm **Extra 10: Product Decisions After the Prototype (2026)** với đầy đủ 100 dòng:
   - **Nguồn dữ liệu**: Tiêu đề, từ khóa và giai đoạn mua hàng trích tự động từ frontmatter của từng bài; phần Tóm lược lấy từ trường `description` trong schema JSON-LD Article, đảm bảo khớp tuyệt đối với nội dung bài viết.
   - **Chuẩn cột**: Giữ nguyên cấu trúc 14 cột của bảng Extra 9 (Tiêu đề, Từ khóa, Giai đoạn, Đường dẫn bài viết, Tóm lược song ngữ, Ước tính views/tháng, Bài Social Media), đánh dấu `*(chưa dịch)*` cho các trường tiếng Hà Lan và `*(chưa tạo)*` cho cột bài đăng mạng xã hội chưa sản xuất.
-  - **Kiểm định**: Rà soát tự động 100/100 dòng đủ 14 cột, toàn bộ 100 đường dẫn tệp markdown đều tồn tại thực tế trong thư mục; cập nhật câu mô tả đầu tệp từ "Extra 1 đến Extra 9" thành "Extra 1 đến Extra 10".
   - **Quy mô tổng**: Tệp kiểm kê hiện đạt **760 dòng bài viết** trên 10 cụm nội dung.
+
+- **12:35**: Hoàn tất dịch toàn bộ 100 bài viết (`-dutch.md`) và 100 bài mạng xã hội (`-social-dutch.md`) của cụm [`launchstudio/2026-extra/extra-9-decision/`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-9-decision/) sang tiếng Hà Lan (Dutch) chuẩn văn phong doanh nhân bản địa Hà Lan/Bỉ (Nederlands Zakelijk), tuân thủ nghiêm ngặt quy trình dịch trực tiếp từng bài không dùng script batch tự động:
+  - **Cấu trúc bài viết**: Dịch chuẩn hóa tiêu đề, từ khóa, mô tả meta, nội dung chuyên sâu 6–7 phần, case study thực tế (bản địa hóa đơn vị EUR, các chuẩn GDPR/AVG, iDEAL/Mollie/Stripe), 5 câu hỏi FAQ và schema JSON-LD (`Article` & `FAQPage`).
+  - **Bài đăng Social Media**: Mỗi bài có 1 bài đăng LinkedIn/X tiếng Hà Lan tương ứng cấu trúc hook, bullet points giá trị và CTA dẫn link.
+  - **Kiểm kê**: Cập nhật toàn bộ bảng kiểm kê [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md) cho 100 dòng Extra 9.
+
+- **15:16**: Hoàn tất dịch toàn bộ 100 bài viết (`-dutch.md`) và 100 bài mạng xã hội (`-social-dutch.md`) của cụm [`launchstudio/2026-extra/extra-10-decision/`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/2026-extra/extra-10-decision/) sang tiếng Hà Lan (Dutch):
+  - **Nội dung hoàn tất**: Toàn bộ từ Bài 01 đến Bài 100 của cụm Extra 10 đã có đầy đủ tệp bài viết tiếng Hà Lan và bài social media tiếng Hà Lan.
+  - **Kiểm kê**: Cập nhật toàn diện 100 dòng của cụm Extra 10 trong [`launchstudio/extra_content_inventory.md`](file:///Users/mac/Library/Mobile%20Documents/com~apple~CloudDocs/sickn33/launchstudio/extra_content_inventory.md). Tệp kiểm kê hiện không còn bất kỳ trường nào ghi `*(chưa dịch)*`.
