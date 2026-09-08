@@ -9,6 +9,6 @@ To neutralize this AI security risk, you must build a Defense-in-Depth architect
 
 Don't let your AI become an unprotected database terminal for the entire internet.
 
-Read how LaunchStudio architects military-grade AI security: [Link]
+Read how LaunchStudio architects military-grade AI security: https://launchstudio.eu/en/blog/ai-security-risk
 
 #AISecurity #PromptInjection #CISO #DataExfiltration #CyberSecurity #EnterpriseAI #LaunchStudio

@@ -11,6 +11,6 @@ Bij het bouwen van een AI-app combineert u in werkelijkheid 5 systemen:
 
 Een "snel maar kwetsbaar" prototype ziet er in een demo identiek uit aan een "duurzaam" product. Maar bij echte gebruikers lekt de kwetsbare app data en crasht, terwijl de duurzame variant duizenden gebruikers moeiteloos bedient.
 
-Zelf bouwen of delegeren? Bekijk de beslissingsmatrix voor technische oprichters: [Link]
+Zelf bouwen of delegeren? Bekijk de beslissingsmatrix voor technische oprichters: https://launchstudio.eu/nl/blog/build-ai
 
 #AIBouwen #TechFounders #SoftwareArchitectuur #IndieHackers #LaunchStudio #SaaS #DevOps

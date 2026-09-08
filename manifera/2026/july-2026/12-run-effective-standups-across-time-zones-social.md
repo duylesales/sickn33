@@ -24,6 +24,6 @@ Tools that work: Slack (async), Loom (async video), Linear (tasks), Google Meet 
 
 This is how @Manifera manages 160+ projects across Amsterdam and Vietnam.
 
-→ Full protocol with templates: [Link]
+→ Full protocol with templates: https://www.manifera.com/blog/run-effective-standups-across-time-zones
 
 #DistributedTeams #RemoteWork #EngineeringManagement #AgileAtScale #Manifera

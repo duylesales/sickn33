@@ -22,6 +22,6 @@ After 11 years running Dutch-Vietnamese engineering teams, here's what's actuall
 
 The formula that works: European governance + Vietnamese engineering mastery.
 
-→ Full myth-busting guide with data: [Link]
+→ Full myth-busting guide with data: https://www.manifera.com/blog/offshore-software-development-myths-cost-ctos-millions
 
 #OffshoreDevelopment #CTOInsights #SoftwareOutsourcing #MythBusting #Manifera

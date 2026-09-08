@@ -8,6 +8,6 @@ Gaf uw bot een bezoeker 100% korting na een slimme vraag? Dat is een prompt-inje
 
 U kunt hallucinaties niet oplossen met een "magische prompt". U lost ze op met software-architectuur.
 
-Ontdek hoe u observability, validatiemodellen en fallback-routing inricht voor uw AI-app: [Link]
+Ontdek hoe u observability, validatiemodellen en fallback-routing inricht voor uw AI-app: https://launchstudio.eu/nl/blog/ai-bugs
 
 #AIBugs #SoftwareEngineering #TechFounders #PromptInjection #LLM #LaunchStudio #Hallucinaties

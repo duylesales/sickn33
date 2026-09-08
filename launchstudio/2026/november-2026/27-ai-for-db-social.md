@@ -9,6 +9,6 @@ To survive at scale, you must transition your database architecture:
 ✅ From Sequential Scans to mathematically tuned HNSW Indexes.
 ✅ Implement strict connection pooling to survive AI "fan-out" queries.
 
-Here is a deep dive into architecting high-performance databases specifically built for modern AI applications: [Link]
+Here is a deep dive into architecting high-performance databases specifically built for modern AI applications: https://launchstudio.eu/en/blog/ai-for-db
 
 #AIforDB #VectorDatabases #PostgreSQL #TechStartups #SoftwareEngineering #LaunchStudio

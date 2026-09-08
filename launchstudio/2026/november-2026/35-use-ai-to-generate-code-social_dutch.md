@@ -9,6 +9,6 @@ Onbeheerde AI-codegeneratie leidt tot:
 
 U kunt AI niet verbieden. De enige oplossing is het bouwen van een Internal Developer Portal (IDP) met geautomatiseerde CI/CD-vangrails en veilige templates.
 
-Ontdek hoe LaunchStudio platform engineering vangrails inricht voor schaalbare software-teams: [Link]
+Ontdek hoe LaunchStudio platform engineering vangrails inricht voor schaalbare software-teams: https://launchstudio.eu/nl/blog/use-ai-to-generate-code
 
 #SoftwareEngineering #AI #DevOps #TechStartups #PlatformEngineering #B2BSaaS #LaunchStudio #Governance

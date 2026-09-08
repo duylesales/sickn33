@@ -13,6 +13,6 @@ Wat de tutorial niet vermeldde:
 
 AI-tools zijn fantastisch voor Laag 1 (de UI). Maar als u Laag 3 (productie-infrastructuur) probeert te bouwen zonder DevOps-kennis, loopt u vast. 🪤
 
-Ontdek de 7 zaken die elke tutorial weglaat en hoe slimme oprichters veilig lanceren: [Link]
+Ontdek de 7 zaken die elke tutorial weglaat en hoe slimme oprichters veilig lanceren: https://launchstudio.eu/nl/blog/ai-development
 
 #SoftwareEngineering #AIOntwikkeling #TechStartups #NoCode #SaaS #LaunchStudio #DevOps

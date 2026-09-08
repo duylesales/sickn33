@@ -9,6 +9,6 @@ Waarom falen AI-apps op dag één?
 
 Het live zetten van AI vereist een fundamenteel andere CI/CD-pijplijn die rekening houdt met asynchrone verwerking en strenge beveiliging.
 
-Ontdek hoe LaunchStudio geharde, asynchrone deployment-architecturen bouwt: [Link]
+Ontdek hoe LaunchStudio geharde, asynchrone deployment-architecturen bouwt: https://launchstudio.eu/nl/blog/ai-deployment
 
 #AIDeployment #DevOps #Serverless #TechStartups #SoftwareEngineering #LaunchStudio #CloudArchitecture

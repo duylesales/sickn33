@@ -30,6 +30,6 @@ Here's the autopsy:
 
 The "cheap" option costs **2.3×** more.
 
-→ Full breakdown with prevention checklist: [Link]
+→ Full breakdown with prevention checklist: https://www.manifera.com/blog/hidden-costs-cheap-offshore-development
 
 #SoftwareDevelopment #CTO #OffshoreDevelopment #TechDebt #Manifera

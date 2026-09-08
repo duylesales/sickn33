@@ -27,6 +27,6 @@ Forget geography labels. Focus on 4 factors:
 
 The optimal 2026 answer for most EU companies: **hybrid offshore with European governance.**
 
-→ Full decision matrix: [Link]
+→ Full decision matrix: https://www.manifera.com/blog/nearshore-vs-offshore-vs-onshore-decision-framework
 
 #Outsourcing #OffshoreDevelopment #Nearshore #CTO #Manifera

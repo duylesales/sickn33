@@ -10,6 +10,6 @@ Applying traditional software engineering to AI leads to:
 
 Elite engineering teams have abandoned TDD for Evaluation-Driven Development (EDD). You use an LLM-as-a-Judge to grade outputs statistically in your CI/CD pipeline. 
 
-Here is how LaunchStudio builds EDD pipelines to eliminate flaky AI tests: [Link]
+Here is how LaunchStudio builds EDD pipelines to eliminate flaky AI tests: https://launchstudio.eu/en/blog/software-engineering-for-ai
 
 #SoftwareEngineering #AI #TDD #Agile #MachineLearning #TechStartups #LaunchStudio

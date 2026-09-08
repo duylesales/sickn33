@@ -8,6 +8,6 @@ In 2026, the tech stack debate is settled:
 
 Don't let a wrong framework choice collapse your architecture six months from now.
 
-See how LaunchStudio benchmarks and engineers the optimal AI software stack: [Link]
+See how LaunchStudio benchmarks and engineers the optimal AI software stack: https://launchstudio.eu/en/blog/best-software-for-ai
 
 #BestSoftwareForAI #TechStack #AIEngineering #CTO #pgvector #LlamaIndex #LangChain #LaunchStudio

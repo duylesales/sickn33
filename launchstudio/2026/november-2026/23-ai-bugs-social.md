@@ -8,6 +8,6 @@ Did a user convince your bot to give a 100% discount? That's a prompt injection 
 
 You cannot fix hallucinations with a "magic prompt." You fix them with architecture. 
 
-Here is exactly how to engineer observability, validator models, and fallback routing into your AI application: [Link]
+Here is exactly how to engineer observability, validator models, and fallback routing into your AI application: https://launchstudio.eu/en/blog/ai-bugs
 
 #AIBugs #SoftwareEngineering #TechFounders #PromptInjection #LLM #LaunchStudio

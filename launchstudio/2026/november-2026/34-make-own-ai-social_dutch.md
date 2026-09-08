@@ -9,6 +9,6 @@ Maar getrainde modellen kampen met:
 
 De oplossing? Een RAG-pijplijn (Retrieval-Augmented Generation). Feiten blijven veilig in een vectordatabase en worden realtime aan het model gevoed. Nul hertraining, accurate bronvermelding en strikte toegangscontrole.
 
-Ontdek waarom LaunchStudio RAG-architecturen bouwt in plaats van modellen te trainen: [Link]
+Ontdek waarom LaunchStudio RAG-architecturen bouwt in plaats van modellen te trainen: https://launchstudio.eu/nl/blog/make-own-ai
 
 #AITools #TechStartups #SoftwareEngineering #B2BSaaS #RAG #MachineLearning #LaunchStudio

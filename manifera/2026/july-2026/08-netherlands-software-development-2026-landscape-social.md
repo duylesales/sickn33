@@ -19,6 +19,6 @@ The smartest CTOs aren't choosing between local and offshore. They're combining 
 
 That's exactly the model @Manifera pioneered — Herengracht HQ meets Ho Chi Minh City engineering hub.
 
-→ Full landscape analysis: [Link]
+→ Full landscape analysis: https://www.manifera.com/blog/netherlands-software-development-2026-landscape
 
 #Netherlands #TechTrends #SoftwareDevelopment #Amsterdam #Manifera #2026

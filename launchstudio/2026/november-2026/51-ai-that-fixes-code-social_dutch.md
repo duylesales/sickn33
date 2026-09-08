@@ -9,6 +9,6 @@ In 2026 bouwen enterprise CTO's geautomatiseerde AI-pipelines die:
 
 Stop met het inzetten van senior ontwikkelaars als duurbetaalde schoonmakers voor kleine syntaxisfoutjes.
 
-Ontdek hoe LaunchStudio Auto-Remediation pipelines bouwt om technische schuld te automatiseren: [Link]
+Ontdek hoe LaunchStudio Auto-Remediation pipelines bouwt om technische schuld te automatiseren: https://launchstudio.eu/nl/blog/ai-that-fixes-code
 
 #AIThatFixesCode #AutoRemediation #VPofEngineering #CTO #DevSecOps #LaunchStudio #SoftwareEngineering

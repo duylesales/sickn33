@@ -14,6 +14,6 @@ But there is a trap. AI Native founders move at lightspeed until they hit the "i
 
 You build the interface with AI. You still need professionals to build the infrastructure. 
 
-Read the new startup playbook here: [Link]
+Read the new startup playbook here: https://launchstudio.eu/en/blog/ai-native
 
 #AINativeFounder #Startups #NoCode #TechFounders #LaunchStudio #SoftwareEngineering

@@ -24,6 +24,6 @@ Features work alone, break when combined.
 
 These aren't offshore problems. They're process problems amplified by distance.
 
-→ Full root cause analysis with fix templates: [Link]
+→ Full root cause analysis with fix templates: https://www.manifera.com/blog/why-offshore-team-missing-deadlines-how-to-fix
 
 #ProjectManagement #OffshoreDevelopment #AgileDelivery #EngineeringOps #Manifera

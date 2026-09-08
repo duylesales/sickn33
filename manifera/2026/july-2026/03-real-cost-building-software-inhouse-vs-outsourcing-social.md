@@ -26,6 +26,6 @@ But cost isn't everything. Here's the real framework:
 
 The key: **own your code, always.** Dutch contract law. Your repo. Full IP transfer. Non-negotiable.
 
-→ Full cost model with calculator: [Link]
+→ Full cost model with calculator: https://www.manifera.com/blog/real-cost-building-software-inhouse-vs-outsourcing
 
 #StartupFinance #SoftwareDevelopment #Outsourcing #BuildVsBuy #Manifera

@@ -11,6 +11,6 @@ In 2026 zijn de grootste SaaS-bedreigingen geen SQL-injecties, maar:
 
 Uw AI-app beschermen vereist Row Level Security op databaseniveau, Redis-tokenlimiters en veilige server-proxy's.
 
-Ontdek hoe LaunchStudio kwetsbare AI-prototypes beveiligt tegen moderne cyberdreigingen: [Link]
+Ontdek hoe LaunchStudio kwetsbare AI-prototypes beveiligt tegen moderne cyberdreigingen: https://launchstudio.eu/nl/blog/ai-vulnerabilities
 
 #CyberSecurity #AIVulnerabilities #TechStartups #B2BSaaS #SoftwareEngineering #LaunchStudio #DoW

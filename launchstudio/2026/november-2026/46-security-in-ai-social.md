@@ -6,6 +6,6 @@ To secure enterprise AI, you must architect "Zero Trust" infrastructure:
 2️⃣ Row Level Security (RLS): Physically restricting vector searches based on the user's JWT.
 3️⃣ DLP Proxies: Scrubbing PII and credit cards before they leave your servers.
 
-Learn how to mathematically prevent AI exfiltration and pass SOC2 audits: [Link]
+Learn how to mathematically prevent AI exfiltration and pass SOC2 audits: https://launchstudio.eu/en/blog/security-in-ai
 
 #CyberSecurity #AILaw #DataProtection #CISO #SOC2 #RAGPoisoning #LaunchStudio

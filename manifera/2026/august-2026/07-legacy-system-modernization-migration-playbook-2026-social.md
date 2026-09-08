@@ -42,6 +42,6 @@ Year 7: €600K+ or unavailable developers
 
 As Ward Cunningham said: *"Technical debt is like financial debt. It compounds. Eventually, you go bankrupt."*
 
-→ Full 6-phase playbook with cost calculator: [Link]
+→ Full 6-phase playbook with cost calculator: https://www.manifera.com/blog/legacy-system-modernization-migration-playbook-2026
 
 #LegacyModernization #TechnicalDebt #StranglerFig #SoftwareArchitecture #CTO #Manifera

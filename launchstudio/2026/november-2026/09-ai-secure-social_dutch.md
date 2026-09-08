@@ -13,6 +13,6 @@ De 5 meest voorkomende AI-beveiligingsfouten:
 
 U rijdt ook niet in een auto zonder remmen. Lanceer geen AI-app zonder grondige beveiligingsharding. 🛡️
 
-Bekijk de 8-stappen AI Secure Checklist voor oprichters: [Link]
+Bekijk de 8-stappen AI Secure Checklist voor oprichters: https://launchstudio.eu/nl/blog/ai-secure
 
 #CyberSecurity #AIOntwikkeling #TechFounders #AppSecurity #DataLek #LaunchStudio #SaaS #AVG

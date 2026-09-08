@@ -9,6 +9,6 @@ Om door een zakelijke security-audit van een Functionaris Gegevensbescherming te
 ✅ Tenant-geïsoleerde vectordatabases (voor het Recht op Vergetelheid)
 ✅ Zero Data Retention API-endpoints met een Verwerkersovereenkomst
 
-Ontdek hoe u uw AI-app transformeert naar een AVG-conforme enterprise-architectuur: [Link]
+Ontdek hoe u uw AI-app transformeert naar een AVG-conforme enterprise-architectuur: https://launchstudio.eu/nl/blog/ai-privacy-issues
 
 #GDPR #AVG #AIPrivacy #TechStartups #B2BSaaS #Databeveiliging #LaunchStudio

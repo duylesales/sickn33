@@ -11,6 +11,6 @@ Don't panic. And don't throw your design away to an agency that wants €20k to 
 
 LaunchStudio (by Manifera) takes your exact Bolt frontend and slides enterprise-grade backend infrastructure right underneath it. Real databases. Secure auth. Live payments. Deployed in days, starting at €800.
 
-Build the interface in Bolt. Build the business with LaunchStudio: [Link]
+Build the interface in Bolt. Build the business with LaunchStudio: https://launchstudio.eu/en/blog/bolt-ai
 
 #BoltAI #AIPrototyping #Founders #SaaS #NoCode #LaunchStudio #Manifera

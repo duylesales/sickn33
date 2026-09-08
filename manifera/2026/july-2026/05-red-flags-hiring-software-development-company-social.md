@@ -18,6 +18,6 @@ After reviewing hundreds of failed vendor relationships, these patterns predict 
 
 Spot 2+ of these? Find another partner. Immediately.
 
-→ Full guide with evaluation checklist: [Link]
+→ Full guide with evaluation checklist: https://www.manifera.com/blog/red-flags-hiring-software-development-company
 
 #SoftwareDevelopment #StartupMistakes #TechLeadership #CTO #Manifera

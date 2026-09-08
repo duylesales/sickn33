@@ -14,6 +14,6 @@ Maar pas op voor de valkuil: AI-Native oprichters bewegen razendsnel totdat ze s
 
 U bouwt de interface met AI. Laat professionals de veilige infrastructuur bouwen. 
 
-Lees het nieuwe startup-draaiboek hier: [Link]
+Lees het nieuwe startup-draaiboek hier: https://launchstudio.eu/nl/blog/ai-native
 
 #AINativeFounder #Startups #NoCode #TechFounders #LaunchStudio #SoftwareEngineering #SaaS

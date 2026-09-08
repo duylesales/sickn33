@@ -9,6 +9,6 @@ Om dit AI-security risico te neutraliseren heeft u een Defense-in-Depth architec
 
 Laat uw AI geen openbaar databaseterminal worden voor het hele internet.
 
-Lees hoe LaunchStudio militaire beveiliging inricht voor zakelijke AI: [Link]
+Lees hoe LaunchStudio militaire beveiliging inricht voor zakelijke AI: https://launchstudio.eu/nl/blog/ai-security-risk
 
 #AISecurity #PromptInjection #CISO #DataExfiltration #CyberSecurity #EnterpriseAI #LaunchStudio

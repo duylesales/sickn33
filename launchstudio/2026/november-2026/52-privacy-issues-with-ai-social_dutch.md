@@ -9,6 +9,6 @@ Om privacy-issues met AI structureel op te lossen moet u compliance verankeren i
 
 Als uw AI niet legaal is, maakt het niet uit hoe slim hij is.
 
-Ontdek hoe LaunchStudio AVG-compliance inricht in RAG-pijplijnen: [Link]
+Ontdek hoe LaunchStudio AVG-compliance inricht in RAG-pijplijnen: https://launchstudio.eu/nl/blog/privacy-issues-with-ai
 
 #AIPrivacy #GDPR #AVG #DataProtection #CTO #VectorDatabase #RAG #SaaS #LaunchStudio

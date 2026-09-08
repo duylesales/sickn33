@@ -11,6 +11,6 @@ AI generates "happy path" code. It leaves out:
 
 The Technical Founder's dilemma: You *can* build this infrastructure, but *should* you? Every hour spent configuring Stripe webhooks is an hour you aren't talking to users.
 
-Let LaunchStudio handle the boilerplate backend while you iterate on the frontend at machine speed: [Link]
+Let LaunchStudio handle the boilerplate backend while you iterate on the frontend at machine speed: https://launchstudio.eu/en/blog/ai-software-engineering
 
 #SoftwareEngineering #AICoding #TechFounders #IndieHackers #SaaSArchitecture #LaunchStudio

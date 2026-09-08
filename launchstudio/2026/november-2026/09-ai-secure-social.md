@@ -13,6 +13,6 @@ The 5 most common AI security flaws:
 
 You wouldn't drive a car without brakes. Don't launch an AI app without security hardening. 🛡️
 
-Here is the 8-step AI Secure Checklist every founder needs before going live: [Link]
+Here is the 8-step AI Secure Checklist every founder needs before going live: https://launchstudio.eu/en/blog/ai-secure
 
 #CyberSecurity #AIDevelopment #TechFounders #AppSecurity #DataBreach #LaunchStudio #SaaS

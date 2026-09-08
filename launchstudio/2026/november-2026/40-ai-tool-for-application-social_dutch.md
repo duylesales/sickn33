@@ -9,6 +9,6 @@ Hoe het werkt:
 ⚙️ De LLM-Transpiler (Synchrone code moderniseren naar event-driven TypeScript microservices).
 🔀 De Shadow Router (100% wiskundige nauwkeurigheid bewijzen vóór de definitieve overstap).
 
-Ontdek hoe LaunchStudio AI inzet voor chirurgische, risicoloze applicatiemodernisering zonder downtime: [Link]
+Ontdek hoe LaunchStudio AI inzet voor chirurgische, risicoloze applicatiemodernisering zonder downtime: https://launchstudio.eu/nl/blog/ai-tool-for-application
 
 #EnterpriseArchitecture #ApplicationModernization #LegacyCode #Microservices #AIEngineering #StranglerFig #LaunchStudio

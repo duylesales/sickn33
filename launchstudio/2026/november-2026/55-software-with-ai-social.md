@@ -10,6 +10,6 @@ At what point does a legacy application become obsolete?
 
 You don't need a total rewrite. You need a Strangler Fig modernization.
 
-Learn how LaunchStudio wires AI directly into legacy APIs for true autonomous execution: [Link]
+Learn how LaunchStudio wires AI directly into legacy APIs for true autonomous execution: https://launchstudio.eu/en/blog/software-with-ai
 
 #SoftwareWithAI #AINative #SaaS #VPofProduct #LegacyModernization #GenerativeUI #LaunchStudio

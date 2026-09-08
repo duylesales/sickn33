@@ -6,6 +6,6 @@ Om enterprise-AI te beveiligen heeft u een "Zero Trust" architectuur nodig:
 2️⃣ Row Level Security (RLS): Vectorzoekopdrachten fysiek isoleren op basis van het JWT-token van de gebruiker.
 3️⃣ DLP-Proxies: BSN-nummers en creditcards lokaal maskeren vóór verzending.
 
-Ontdek hoe u data-exfiltratie wiskundig voorkomt en slaagt voor SOC2- en AVG-audits: [Link]
+Ontdek hoe u data-exfiltratie wiskundig voorkomt en slaagt voor SOC2- en AVG-audits: https://launchstudio.eu/nl/blog/security-in-ai
 
 #CyberSecurity #AILaw #DataProtection #CISO #SOC2 #RAGPoisoning #LaunchStudio #SecurityInAI

@@ -9,6 +9,6 @@ In reality, a production AI pipeline requires 7 steps. Your prototype is probabl
 
 Founders over-invest in the interface (what users see) and under-invest in the pipeline (what makes it sustainable). 
 
-Stop bleeding money on OpenAI API calls. Learn how to build a production AI pipeline that cuts costs by up to 60%: [Link]
+Stop bleeding money on OpenAI API calls. Learn how to build a production AI pipeline that cuts costs by up to 60%: https://launchstudio.eu/en/blog/ai-works
 
 #AIDevelopment #TechFounders #SoftwareArchitecture #OpenAI #LaunchStudio #Startups

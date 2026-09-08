@@ -9,6 +9,6 @@ Om op schaal betrouwbaar te blijven, moet u uw database-architectuur transformer
 ✅ Van lineaire scans naar wiskundig afgestemde HNSW-indexen.
 ✅ Connection pooling (PgBouncer) inrichten tegen AI-piekbelasting.
 
-Ontdek hoe u een high-performance database-architectuur inricht voor AI-applicaties: [Link]
+Ontdek hoe u een high-performance database-architectuur inricht voor AI-applicaties: https://launchstudio.eu/nl/blog/ai-for-db
 
 #AIforDB #VectorDatabases #PostgreSQL #TechStartups #SoftwareEngineering #LaunchStudio #pgvector

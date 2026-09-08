@@ -9,6 +9,6 @@ To solve privacy issues with AI, you must architect compliance directly into the
 
 If your AI isn't legal, it doesn't matter how smart it is.
 
-Learn how LaunchStudio engineers GDPR compliance into RAG pipelines: [Link]
+Learn how LaunchStudio engineers GDPR compliance into RAG pipelines: https://launchstudio.eu/en/blog/privacy-issues-with-ai
 
 #AIPrivacy #GDPR #DataProtection #CTO #VectorDatabase #RAG #SaaS #LaunchStudio

@@ -11,6 +11,6 @@ To stop leaking data, you need a 3-Layer Architecture:
 
 RLS alone isn't enough to protect your business logic and column-level data. You need a real backend.
 
-Stop letting your frontend talk directly to your database. Learn how to fix it here: [Link]
+Stop letting your frontend talk directly to your database. Learn how to fix it here: https://launchstudio.eu/en/blog/ai-database
 
 #AIDatabase #SoftwareArchitecture #Supabase #DataSecurity #TechFounders #LaunchStudio

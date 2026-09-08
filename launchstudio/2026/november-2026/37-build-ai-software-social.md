@@ -8,6 +8,6 @@ To build enterprise AI software, you must transition to AI Engineering:
 🔧 Programmatic Compilation: Use DSPy to mathematically compile prompts instead of guessing words.
 🔧 Prompt Registries: Version your prompts outside of Git for A/B testing and instant rollbacks.
 
-Here is how LaunchStudio tears down fragile mega-prompts and replaces them with robust AI Engineering: [Link]
+Here is how LaunchStudio tears down fragile mega-prompts and replaces them with robust AI Engineering: https://launchstudio.eu/en/blog/build-ai-software
 
 #SoftwareEngineering #AIEngineering #TechStartups #B2BSaaS #DSPy #MachineLearning #LaunchStudio

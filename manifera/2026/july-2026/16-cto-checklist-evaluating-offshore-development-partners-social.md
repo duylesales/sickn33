@@ -32,6 +32,6 @@ Score each 0-3. Below 45/60 = risk. Below 35/60 = disaster.
 
 **How to use:** Evaluate 3-5 partners. Pilot the top 2 for 2-4 weeks. Then commit.
 
-→ Download the template: [Link]
+→ Download the template: https://www.manifera.com/blog/cto-checklist-evaluating-offshore-development-partners
 
 #CTO #OffshoreDevelopment #VendorEvaluation #SoftwareOutsourcing #Manifera

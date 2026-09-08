@@ -9,6 +9,6 @@ Waarom?
 
 Om door een SOC2- of CISO-audit te komen heeft u een Zero Data Retention (ZDR) architectuur, DLP-middleware en VPC-netwerkisolatie nodig.
 
-Ontdek hoe LaunchStudio AI-applicaties hardent voor de zakelijke markt: [Link]
+Ontdek hoe LaunchStudio AI-applicaties hardent voor de zakelijke markt: https://launchstudio.eu/nl/blog/ai-in-it-security
 
 #ITSecurity #CyberSecurity #B2BSaaS #TechStartups #SOC2 #SoftwareEngineering #LaunchStudio #CISO

@@ -28,6 +28,6 @@ Most dedicated team engagements fail not because of bad engineers — but becaus
 ❌ Skipping onboarding investment
 ❌ Expecting Day-1 parity with your 3-year veteran
 
-→ Full playbook with templates: [Link]
+→ Full playbook with templates: https://www.manifera.com/blog/building-dedicated-development-team-90-day-playbook
 
 #DedicatedTeam #EngineeringManagement #CTO #OffshoreDevelopment #Manifera

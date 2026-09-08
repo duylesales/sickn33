@@ -10,6 +10,6 @@ The developer gap nobody talks about: Most developers don't know how to read AI-
 
 AI Software Developers are a different breed. They know what to preserve (the frontend) and what to replace (the backend infrastructure).
 
-Find out how to spot a real AI software developer (and avoid the ones who want to rebuild everything from scratch): [Link]
+Find out how to spot a real AI software developer (and avoid the ones who want to rebuild everything from scratch): https://launchstudio.eu/en/blog/ai-software-developers
 
 #SoftwareDevelopment #TechStartups #AICoding #Lovable #Cursor #LaunchStudio

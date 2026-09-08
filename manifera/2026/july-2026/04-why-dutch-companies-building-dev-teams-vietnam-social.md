@@ -21,6 +21,6 @@ Dutch project governance (contracts under Dutch law, Agile discipline, transpare
 
 This isn't theory. It's 160+ projects delivered over 11 years.
 
-→ Full case study with comparison data: [Link]
+→ Full case study with comparison data: https://www.manifera.com/blog/why-dutch-companies-building-dev-teams-vietnam
 
 #Netherlands #Vietnam #OffshoreDevelopment #DedicatedTeam #TechPartnership #Manifera

@@ -26,6 +26,6 @@
 
 For 80% of European enterprise mobile projects: React Native remains the safer bet.
 
-→ Full scorecard with weighted factors: [Link]
+→ Full scorecard with weighted factors: https://www.manifera.com/blog/react-native-vs-flutter-2026-cto-decision-matrix
 
 #ReactNative #Flutter #MobileDevlopment #CrossPlatform #CTO #Manifera

@@ -12,6 +12,6 @@ An AI tool fulfills a prompt. A Software Engineer ensures the system survives th
 
 If you're a non-technical or solo founder, don't risk a GDPR breach or a collapsed server on launch day. Build the UI with AI, and let professionals build the infrastructure. 🏗️
 
-Check out our deep-dive on bridging the gap: [Link]
+Check out our deep-dive on bridging the gap: https://launchstudio.eu/en/blog/ai-assist
 
 #SoftwareEngineering #Startups #AICoding #IndieHacker #SaaS #LaunchStudio

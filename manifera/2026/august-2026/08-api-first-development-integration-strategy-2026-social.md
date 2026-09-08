@@ -39,6 +39,6 @@ REST vs GraphQL vs gRPC?
 
 As Jeff Bezos wrote: *"A company's API is the most honest expression of its architecture."*
 
-→ Full API-first playbook + OpenAPI templates: [Link]
+→ Full API-first playbook + OpenAPI templates: https://www.manifera.com/blog/api-first-development-integration-strategy-2026
 
 #APIFirst #APIs #SoftwareArchitecture #REST #GraphQL #DeveloperExperience #Manifera

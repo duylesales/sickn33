@@ -34,6 +34,6 @@ The key insight: Platform Engineers ≠ DevOps Engineers renamed.
 DevOps Engineer = taxi driver (takes you where you need to go)
 Platform Engineer = subway builder (you never need the taxi)
 
-→ Full maturity assessment + IDP architecture blueprint: [Link]
+→ Full maturity assessment + IDP architecture blueprint: https://www.manifera.com/blog/devops-automation-platform-engineering-enterprise-2026
 
 #DevOps #PlatformEngineering #IDP #DORA #CTO #SoftwareEngineering #Manifera

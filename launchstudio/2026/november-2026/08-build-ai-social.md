@@ -12,6 +12,6 @@ When building AI apps, you are actually assembling 5 interconnected systems:
 A "fast and fragile" prototype looks identical to a "durable" app in a demo. But with real users, the fragile one leaks data and crashes. The durable one handles thousands of users gracefully.
 
 Should you build the infrastructure yourself or delegate it? 
-Read the decision matrix for technical founders here: [Link]
+Read the decision matrix for technical founders here: https://launchstudio.eu/en/blog/build-ai
 
 #BuildAI #TechFounders #SoftwareArchitecture #IndieHackers #LaunchStudio #SaaS

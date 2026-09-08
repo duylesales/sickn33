@@ -15,6 +15,6 @@ Here are the 8 non-negotiable capabilities that separate enterprise-ready dev fi
 
 💡 Pro tip: Ask them to produce a technical architecture proposal for your specific project. If they don't address security, compliance, and scalability unprompted — they're not enterprise-ready.
 
-→ Full checklist with evaluation criteria: [Link]
+→ Full checklist with evaluation criteria: https://www.manifera.com/blog/what-makes-software-company-enterprise-ready
 
 #EnterpriseSoftware #VendorManagement #ITLeadership #GDPR #Manifera

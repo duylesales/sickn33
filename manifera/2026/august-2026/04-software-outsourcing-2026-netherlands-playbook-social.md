@@ -32,6 +32,6 @@ As Werner Vogels (CTO, Amazon) said: *"Outsourcing is not about finding cheap la
 → GDPR-compliant DPA
 → Exit clause with 4-6 week knowledge transfer
 
-→ Full playbook with contract templates: [Link]
+→ Full playbook with contract templates: https://www.manifera.com/blog/software-outsourcing-2026-netherlands-playbook
 
 #SoftwareOutsourcing #DutchTech #Netherlands #OffshoreDevelopment #Vietnam #Manifera #CTO

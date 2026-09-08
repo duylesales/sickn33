@@ -24,6 +24,6 @@ The 2026 twist: AI-assisted coding tools cut boilerplate development by 30-40%. 
 
 As Martin Fowler put it: *"The most expensive software is the software that almost does what you need."*
 
-→ Full 5-year TCO analysis + decision matrix: [Link]
+→ Full 5-year TCO analysis + decision matrix: https://www.manifera.com/blog/custom-software-development-vs-off-the-shelf-2026
 
 #CustomSoftware #BuildVsBuy #CTO #SoftwareDevelopment #TCO #Manifera #TechStrategy

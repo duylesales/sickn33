@@ -33,6 +33,6 @@ Only justified for AR/VR, Bluetooth IoT, or gaming.
 
 As Marty Cagan said: *"The question is never 'How much does an app cost?' The question is 'How much does the wrong app cost?'"*
 
-→ Full cost breakdown + hourly rates by region: [Link]
+→ Full cost breakdown + hourly rates by region: https://www.manifera.com/blog/mobile-app-development-cost-complete-guide-2026
 
 #MobileAppDevelopment #AppCost #CTO #StartupBudget #ReactNative #Manifera

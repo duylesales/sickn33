@@ -29,6 +29,6 @@ Here's what we learned scaling a European SaaS team from 3 to 30 through a Dutch
 3. First non-coding hire > 3 additional developers.
 4. Culture must be intentionally designed at scale.
 
-→ Full case study with org charts: [Link]
+→ Full case study with org charts: https://www.manifera.com/blog/scaling-3-to-30-engineers-dutch-vietnamese-partnership
 
 #EngineeringLeadership #ScaleUp #DedicatedTeam #CTO #Manifera

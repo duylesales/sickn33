@@ -12,6 +12,6 @@ Als uw prototype alleen Laag 1 heeft (de AI-prompt), maar mist:
 
 ...dan heeft u een leuke demo, maar nog geen commercieel bedrijf. 
 
-Zorg dat uw unit economics positief blijven. Ontdek hoe u de 7-lagige AI SaaS-stack professioneel inricht: [Link]
+Zorg dat uw unit economics positief blijven. Ontdek hoe u de 7-lagige AI SaaS-stack professioneel inricht: https://launchstudio.eu/nl/blog/ai-saas
 
 #SaaS #TechFounders #SoftwareArchitectuur #AISaaS #LaunchStudio #IndieHackers #Startups

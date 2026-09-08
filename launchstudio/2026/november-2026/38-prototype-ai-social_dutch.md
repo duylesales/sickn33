@@ -9,6 +9,6 @@ Waarom prototypes falen in productie:
 
 Voor productie heeft u zware engineering nodig: RAG-pijplijnen, Semantische Caching en Asynchrone Wachtrijen.
 
-Ontdek hoe LaunchStudio de Laatste 10% bouwt om uw prototype om te toveren tot enterprise AI-software: [Link]
+Ontdek hoe LaunchStudio de Laatste 10% bouwt om uw prototype om te toveren tot enterprise AI-software: https://launchstudio.eu/nl/blog/prototype-ai
 
 #AIPrototype #TechStartups #DevOps #AIEngineering #B2BSaaS #SoftwareEngineering #LaunchStudio

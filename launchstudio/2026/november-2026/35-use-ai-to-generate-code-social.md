@@ -9,6 +9,6 @@ Unmanaged AI code generation causes:
 
 You can't stop your team from using AI. The only solution is to build an Internal Developer Portal (IDP). Enforce automated CI/CD guardrails, secure scaffolding, and API gateways. 
 
-Here is how LaunchStudio builds platform engineering guardrails for scaling software teams: [Link]
+Here is how LaunchStudio builds platform engineering guardrails for scaling software teams: https://launchstudio.eu/en/blog/use-ai-to-generate-code
 
 #SoftwareEngineering #AI #DevOps #TechStartups #PlatformEngineering #B2BSaaS #LaunchStudio

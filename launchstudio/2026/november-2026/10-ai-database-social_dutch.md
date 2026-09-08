@@ -11,6 +11,6 @@ Om datalekken te voorkomen heeft u een Drielagige Architectuur nodig:
 
 Alleen RLS is niet genoeg om uw bedrijfslogica en kolomdata te beschermen. U heeft een echte serverlaag nodig.
 
-Laat uw frontend niet rechtstreeks met uw database praten. Ontdek hoe u dit professioneel oplost: [Link]
+Laat uw frontend niet rechtstreeks met uw database praten. Ontdek hoe u dit professioneel oplost: https://launchstudio.eu/nl/blog/ai-database
 
 #AIDatabase #SoftwareArchitectuur #Supabase #DataSecurity #TechFounders #LaunchStudio #PostgreSQL

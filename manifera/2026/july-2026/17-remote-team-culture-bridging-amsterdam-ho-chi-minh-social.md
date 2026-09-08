@@ -21,6 +21,6 @@ After 11 years, here are the 5 cultural rituals that actually work:
 
 The result: avg developer tenure 24+ months, clients say "it doesn't feel like outsourcing."
 
-→ Full culture playbook: [Link]
+→ Full culture playbook: https://www.manifera.com/blog/remote-team-culture-bridging-amsterdam-ho-chi-minh
 
 #RemoteTeamCulture #DistributedTeams #EngineeringCulture #Manifera

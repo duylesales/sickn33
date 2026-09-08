@@ -18,6 +18,6 @@ The 6 things I check before signing any contract:
 
 The best partnerships combine European business presence with offshore engineering talent. Best of both worlds.
 
-→ Full guide with the complete checklist: [Link]
+→ Full guide with the complete checklist: https://www.manifera.com/blog/how-to-choose-software-development-partner
 
 #SoftwareDevelopment #StartupTips #Outsourcing #CTOAdvice #Manifera

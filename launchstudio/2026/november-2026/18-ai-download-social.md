@@ -14,6 +14,6 @@ Your ZIP file doesn't contain:
 
 Running it on `localhost` is the biggest illusion in tech right now. It works on your laptop because you are the only user and there are no hackers.
 
-Here's exactly what is missing from your AI download, and how to get it live on the internet in 8 days: [Link]
+Here's exactly what is missing from your AI download, and how to get it live on the internet in 8 days: https://launchstudio.eu/en/blog/ai-download
 
 #AICoding #SaaSFounders #TechStartups #SoftwareDevelopment #Lovable #LaunchStudio

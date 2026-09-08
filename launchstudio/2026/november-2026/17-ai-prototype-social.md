@@ -11,6 +11,6 @@ But if you look under the hood, you're missing:
 Trying to bridge this canyon yourself? 2-6 months.
 Hiring a freelancer who doesn't understand AI code? €15k and 12 weeks of pain.
 
-Here is the exact 5-phase sprint to take your AI prototype to production in 1-3 weeks: [Link]
+Here is the exact 5-phase sprint to take your AI prototype to production in 1-3 weeks: https://launchstudio.eu/en/blog/ai-prototype
 
 #Startups #TechFounders #AICoding #SoftwareDevelopment #SaaS #LaunchStudio

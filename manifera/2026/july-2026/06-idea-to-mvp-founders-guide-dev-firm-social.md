@@ -32,6 +32,6 @@ Simple MVP: €15K-30K (4-8 weeks)
 Medium MVP: €30K-60K (8-14 weeks)
 Complex MVP: €60K-120K (14-24 weeks)
 
-→ Full playbook with budget calculator: [Link]
+→ Full playbook with budget calculator: https://www.manifera.com/blog/idea-to-mvp-founders-guide-dev-firm
 
 #MVP #StartupBuilding #ProductDevelopment #FounderTips #Manifera

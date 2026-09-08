@@ -9,6 +9,6 @@ Why do AI apps crash on Day 1?
 
 Deploying AI requires a fundamentally different CI/CD pipeline built for non-deterministic latency. 
 
-Here is exactly how LaunchStudio builds hardened, async deployment architectures that survive production: [Link]
+Here is exactly how LaunchStudio builds hardened, async deployment architectures that survive production: https://launchstudio.eu/en/blog/ai-deployment
 
 #AIDeployment #DevOps #Serverless #TechStartups #SoftwareEngineering #LaunchStudio

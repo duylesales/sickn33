@@ -32,6 +32,6 @@ Below 1M requests/month: yes. Above 3-5M: containers are 40-70% cheaper.
 
 As Kelsey Hightower said: *"Every company is either in the cloud, moving to the cloud, or lying about moving to the cloud."*
 
-→ Full architecture blueprint + cost comparison: [Link]
+→ Full architecture blueprint + cost comparison: https://www.manifera.com/blog/cloud-development-strategy-european-enterprises-2026
 
 #CloudStrategy #AWS #Azure #GDPR #FinOps #CloudArchitecture #Manifera #CTO

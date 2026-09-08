@@ -11,6 +11,6 @@ Geen paniek. En gooi uw ontwerp niet weg voor een bureau dat €20.000 vraagt om
 
 LaunchStudio (door Manifera) behoudt uw exacte Bolt-frontend en bouwt enterprise-grade backend-infrastructuur er direct onder. Echte databases. Veilige authenticatie. Live betalingen. Live in enkele dagen, vanaf €800.
 
-Bouw de interface in Bolt. Bouw het bedrijf met LaunchStudio: [Link]
+Bouw de interface in Bolt. Bouw het bedrijf met LaunchStudio: https://launchstudio.eu/nl/blog/bolt-ai
 
 #BoltAI #AIPrototyping #Founders #SaaS #NoCode #LaunchStudio #Manifera #TechFounders #StartupOpschalen

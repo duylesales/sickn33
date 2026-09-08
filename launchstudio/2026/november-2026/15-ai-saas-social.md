@@ -12,6 +12,6 @@ If your prototype only has Layer 1 (the AI prompt) but is missing:
 
 ...then you have a demo, not a business. 
 
-Don't let your unit economics flip negative. See how to build the 7-layer AI SaaS stack correctly: [Link]
+Don't let your unit economics flip negative. See how to build the 7-layer AI SaaS stack correctly: https://launchstudio.eu/en/blog/ai-saas
 
 #SaaS #TechFounders #SoftwareArchitecture #AISaaS #LaunchStudio #IndieHackers

@@ -10,6 +10,6 @@ De ontwikkelaarskloof waar niemand over praat: de meeste traditionele programmeu
 
 AI-Softwareontwikkelaars zijn anders: zij weten exact wat ze moeten behouden (de frontend) en wat ze moeten vervangen (de backend-infrastructuur).
 
-Ontdek hoe u een échte AI-softwareontwikkelaar herkent: [Link]
+Ontdek hoe u een échte AI-softwareontwikkelaar herkent: https://launchstudio.eu/nl/blog/ai-software-developers
 
 #SoftwareOntwikkeling #TechStartups #AICoding #Lovable #Cursor #LaunchStudio #DevOps

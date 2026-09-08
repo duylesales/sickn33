@@ -23,6 +23,6 @@ The difference? Matching the model to your growth stage.
 
 💰 Hidden cost difference: Staff aug requires 8-12h/week of YOUR management time. Dedicated teams? 3-5h/week.
 
-→ Full comparison with cost calculator: [Link]
+→ Full comparison with cost calculator: https://www.manifera.com/blog/staff-augmentation-vs-dedicated-teams-growth-stage
 
 #DedicatedTeam #StaffAugmentation #EngineeringLeadership #Startup #Manifera

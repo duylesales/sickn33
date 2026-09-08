@@ -10,6 +10,6 @@ Klassieke software-engineering toepassen op AI leidt tot:
 
 Topteams vervangen TDD door Evaluation-Driven Development (EDD): een Rechter-AI (LLM-as-a-Judge) beoordeelt outputs statistisch in uw CI/CD-pipeline.
 
-Ontdek hoe LaunchStudio EDD-pijplijnen bouwt om onbetrouwbare AI-tests te elimineren: [Link]
+Ontdek hoe LaunchStudio EDD-pijplijnen bouwt om onbetrouwbare AI-tests te elimineren: https://launchstudio.eu/nl/blog/software-engineering-for-ai
 
 #SoftwareEngineering #AI #TDD #Agile #MachineLearning #TechStartups #LaunchStudio #MLOps
