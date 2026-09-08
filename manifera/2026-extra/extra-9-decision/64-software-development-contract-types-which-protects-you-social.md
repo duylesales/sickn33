@@ -12,6 +12,6 @@ Is your contract type protecting you — or is it just the template your procure
 
 The contract type shapes your legal recourse and budget exposure more than most vendor comparisons ever do. ⚖️
 
-👉 Read our full deep dive on which software development contract type protects you most: [Link to article]
+👉 Read our full deep dive on which software development contract type protects you most: https://www.manifera.com/blog/software-development-contract-types-which-protects-you
 
 #ITManager #SoftwareContracts #VendorAgreement #ProcurementStrategy #TechDueDiligence #ContractNegotiation #Manifera

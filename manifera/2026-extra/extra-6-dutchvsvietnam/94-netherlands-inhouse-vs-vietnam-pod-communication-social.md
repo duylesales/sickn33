@@ -12,6 +12,6 @@
 
 A structured cadence forces prioritization an always-available in-house team never has to practice. 🛡️
 
-👉 Read our full deep dive on netherlands inhouse vs vietnam pod communication: [Link to article]
+👉 Read our full deep dive on netherlands inhouse vs vietnam pod communication: https://www.manifera.com/blog/netherlands-inhouse-vs-vietnam-pod-communication
 
 #CTO #Netherlands #Vietnam #TeamCommunication #Manifera

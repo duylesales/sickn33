@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: een storage bucket die 9 dagen openstond werd tijdig ontdekt, binnen 72 uur gemeld en afgedaan zonder klantverlies. 🚀
 
-👉 Beschrijf uw tech-stack en wij vertellen u binnen één werkdag welke risico's openstaan: [Link naar artikel]
+👉 Beschrijf uw tech-stack en wij vertellen u binnen één werkdag welke risico's openstaan: https://launchstudio.eu/nl/blog/what-a-data-breach-would-actually-cost-a-two-person-startup
 
 #SaaS #AVG #CyberSecurity #DataBeveiliging #LaunchStudio #Manifera

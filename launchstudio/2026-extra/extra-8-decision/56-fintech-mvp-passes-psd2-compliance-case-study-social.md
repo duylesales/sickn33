@@ -16,6 +16,6 @@ The prototype worked. The demo was polished. Users had signed up. None of that m
 
 Her result: Stripe unflagged the account, and in the first month SplitWise Pro processed €14,200 across 43 groups at a 97% success rate — 126 SCA authentications, zero user-facing errors. 🚀
 
-👉 Get your payment compliance gaps scoped before your processor finds them: [Link to article]
+👉 Get your payment compliance gaps scoped before your processor finds them: https://launchstudio.eu/en/blog/fintech-mvp-passes-psd2-compliance-case-study
 
 #LaunchStudio #Manifera #PSD2 #FintechCompliance #StripePayments #VibeCoding #SCA

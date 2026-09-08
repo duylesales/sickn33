@@ -15,6 +15,6 @@ Bij **LaunchStudio** implementeren we precies dit soort gekalibreerde ratelimiti
 
 Zijn resultaat: een gekalibreerde ratelimiet geïmplementeerd, normaal coördinatorgebruik onaangetast terwijl bulkverzameling onpraktisch werd. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/you-built-an-app-with-ai-heres-what-launching-it-actually-takes
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #AIPrivacy

@@ -12,6 +12,6 @@ April 2026. April 2027. Those are real DOJ deadlines for WCAG 2.1 AA at public u
 
 A full-conformance claim on a complex product deserves more scrutiny, not less. 🔍
 
-👉 Read our full deep dive on the higher ed WCAG accessibility compliance audit: [Link to article]
+👉 Read our full deep dive on the higher ed WCAG accessibility compliance audit: https://www.manifera.com/blog/higher-education-software-vendors-wcag-accessibility-compliance-audit
 
 #HigherEd #WCAG #AccessibilityCompliance #ADA #ComplianceOfficer #Manifera

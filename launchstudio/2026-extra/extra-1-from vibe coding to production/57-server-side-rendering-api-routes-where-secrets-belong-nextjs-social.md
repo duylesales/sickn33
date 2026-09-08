@@ -16,6 +16,6 @@ At **LaunchStudio**, we specifically review Next.js apps for this server-client 
 
 His result: the exposed key rotated immediately, the call restructured through a proper server-side route. 🚀
 
-👉 Get your Next.js app checked for secrets crossing the server-client boundary: [Link to article]
+👉 Get your Next.js app checked for secrets crossing the server-client boundary: https://launchstudio.eu/en/blog/server-side-rendering-api-routes-secrets-belong-nextjs
 
 #IndieHacker #LaunchStudio #Manifera #NextJS #AISecure

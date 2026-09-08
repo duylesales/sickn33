@@ -17,6 +17,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, beschermen we uw streefdatum me
 
 💡 Zo lanceerde Casper van Dijk van Omzethelder op de geplande datum door 13 nachtelijke ideeën door te schuiven, waardoor hij direct omzet draaide.
 
-👉 Lees hoe u 'nee' zegt tegen uw eigen ideeën vóór livegang: [Link naar artikel]
+👉 Lees hoe u 'nee' zegt tegen uw eigen ideeën vóór livegang: https://launchstudio.eu/nl/blog/saying-no-to-your-own-feature-ideas-before-launch
 
 #SaaSLaunch #StartupStrategy #ScopeCreep #ProductManagement #LaunchStudio #Manifera

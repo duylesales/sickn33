@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See our complete breakdown on house hiring dedicated team: [Link to article]
+👉 See our complete breakdown on house hiring dedicated team: https://www.manifera.com/blog/in-house-hiring-vs-dedicated-team
 
 #DedicatedTeam #OffshoreDevelopment #TechLeadership #SoftwareEngineering #CTO #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichters precies die "waarom"-laag te document
 
 Zijn resultaat: de belangrijkste beslissingen in de codebase van BestelBeheer zijn nu gedocumenteerd, de opnieuw geïntroduceerde oplossing is hersteld, en een lichtgewicht praktijk van "documenteer het waarom" is nu standaard. 🚀
 
-👉 Is uw codebase daadwerkelijk gedocumenteerd, of alleen beschreven? Kom erachter: [Link naar artikel]
+👉 Is uw codebase daadwerkelijk gedocumenteerd, of alleen beschreven? Kom erachter: https://launchstudio.eu/nl/blog/ai-generated-readme-files-not-documentation-you-think
 
 #AINativeFounder #LaunchStudio #Manifera #TechDebt #CodeQuality

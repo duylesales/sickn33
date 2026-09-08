@@ -16,6 +16,6 @@ Bij **LaunchStudio** behouden we uw met AI gebouwde frontend en voegen we exact 
 
 Stop met horen bij die 80%. 🛡️🚀
 
-👉 Lees het complete jaaroverzicht van AI-native startups in 2026: [Link naar artikel]
+👉 Lees het complete jaaroverzicht van AI-native startups in 2026: https://launchstudio.eu/nl/blog/state-of-ai-native-startups-2026
 
 #AINativeFounder #LaunchStudio #StartupFailure #SaaS #AIStartups #TechLeadership #MVP #Manifera #Lovable #Cursor

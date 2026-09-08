@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the works council approved a scaled-back rollout within two weeks, and the disabled module was switched on eight months later after a proper consultation process. 🚀
 
-👉 See what your HR product needs before the works council asks: [Link to article]
+👉 See what your HR product needs before the works council asks: https://launchstudio.eu/en/blog/hr-tech-prototypes-employee-data-is-not-ordinary-data
 
 #HRTech #GDPR #StartupFounders #Compliance #LaunchStudio #Manifera

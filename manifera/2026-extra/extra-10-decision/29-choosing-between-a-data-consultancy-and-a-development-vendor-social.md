@@ -12,6 +12,6 @@ A data consultancy just quoted €180K for a 12-week strategy engagement. The de
 
 Paying for strategy and paying for execution are two different purchases — know which one you're actually buying. 🎯
 
-👉 Read our full deep dive on data consultancy vs. development vendor: [Link to article]
+👉 Read our full deep dive on data consultancy vs. development vendor: https://www.manifera.com/blog/choosing-between-a-data-consultancy-and-a-development-vendor
 
 #DataStrategy #CFO #VendorSelection #DataEngineering #ROI #TechSpend #Manifera

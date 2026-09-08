@@ -16,6 +16,6 @@ At **LaunchStudio**, we build the AI-first architecture your prototype is missin
 
 Don't let your AI bill become your biggest competitor. 🛡️🚀
 
-👉 Read the full AI-first architecture checklist: [Link to article]
+👉 Read the full AI-first architecture checklist: https://launchstudio.eu/en/blog/ai-first-vs-mobile-first-architecture
 
 #AIFirst #LaunchStudio #Manifera #AINativeFounder #SaaS #StartupArchitecture

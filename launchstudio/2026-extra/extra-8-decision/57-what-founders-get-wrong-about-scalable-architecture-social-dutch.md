@@ -16,6 +16,6 @@ Bij **LaunchStudio** bouwen we geen architectuur voor problemen die u nog niet h
 
 Femkes resultaat: gerichte fixes live in 7 werkdagen voor €1.400 — zes maanden later 89 winkels op het platform, met échte data om de volgende stap te bepalen. 🚀
 
-👉 Ontdek wat uw huidige fase daadwerkelijk vereist: [Link naar artikel]
+👉 Ontdek wat uw huidige fase daadwerkelijk vereist: https://launchstudio.eu/nl/blog/what-founders-get-wrong-about-scalable-architecture
 
 #LaunchStudio #Architectuur #VibeCoding #Manifera #SaaS #Schaalbaarheid #Startup

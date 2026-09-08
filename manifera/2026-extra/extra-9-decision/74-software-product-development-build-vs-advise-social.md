@@ -12,6 +12,6 @@
 
 Pick the partner role that matches how much product uncertainty you're really carrying. 🎯
 
-👉 Read our full deep dive on build-vs-advise vendor models: [Link to article]
+👉 Read our full deep dive on build-vs-advise vendor models: https://www.manifera.com/blog/software-product-development-build-vs-advise
 
 #CEO #SoftwareProductDevelopment #MVPDevelopment #StartupFounders #VendorSelection #Manifera

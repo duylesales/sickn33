@@ -15,6 +15,6 @@ Bij **LaunchStudio** verzorgen we precies deze overdracht — meer dan 11 jaar p
 
 Haar resultaat: MindGarden doorstond de due-diligencereviews van beide consultancies en tekende binnen drie weken haar eerste white-labelcontract. 🚀
 
-👉 Binnenkort uw AI-native product pitchen aan een partner? Boek eerst een gratis introductiegesprek van 15 minuten: [Link naar artikel]
+👉 Binnenkort uw AI-native product pitchen aan een partner? Boek eerst een gratis introductiegesprek van 15 minuten: https://launchstudio.eu/nl/blog/ai-native-zeist
 
 #AINativeFounder #LaunchStudio #Manifera #AINative #Zeist

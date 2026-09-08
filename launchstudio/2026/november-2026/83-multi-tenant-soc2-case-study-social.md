@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Ledgerly passed its SOC 2 Type I audit with no exceptions, five days ahead of deadline, and Dorian signed the €140,000 annual contract. (€6,400 (Enterprise Hardening Package) — audit-ready in 19 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/multi-tenant-soc2-case-study
 
 #LaunchStudio #Manifera #AISaaS #SOC2 #MultiTenantSecurity

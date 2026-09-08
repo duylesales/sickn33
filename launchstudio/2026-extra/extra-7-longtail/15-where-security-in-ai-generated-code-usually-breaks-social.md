@@ -14,6 +14,6 @@ At **LaunchStudio**, white-label security reviews for agencies inheriting AI-bui
 
 Lukas's result: the fix shipped under his agency's own branding — his client never knew a specialist partner had been involved. 🚀
 
-👉 Taking on client AI prototypes under your own agency's name? Know this checklist first: [Link to article]
+👉 Taking on client AI prototypes under your own agency's name? Know this checklist first: https://launchstudio.eu/en/blog/where-security-in-ai-generated-code-usually-breaks-down-first
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AppSecurity

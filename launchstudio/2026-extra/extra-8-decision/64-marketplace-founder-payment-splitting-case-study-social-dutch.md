@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's ervaring met enterprise meerpa
 
 Joris' resultaat: HulpMarkt verwerkte €23.400 aan klusbetalingen in twee maanden, met 91% onboarding-voltooiing. 🚀
 
-👉 Ontdek hoe uw marketplace-betalingsflow eruit zou moeten zien: [Link naar artikel]
+👉 Ontdek hoe uw marketplace-betalingsflow eruit zou moeten zien: https://launchstudio.eu/nl/blog/marketplace-founder-payment-splitting-case-study
 
 #LaunchStudio #StripeConnect #Marketplace #Manifera #SaaS #Fintech #AIApp

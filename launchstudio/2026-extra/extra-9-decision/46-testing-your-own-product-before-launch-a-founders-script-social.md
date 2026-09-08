@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the leaking PDF endpoint was found and fixed in half a day, two more export endpoints closed before launch. 🚀
 
-👉 Run the script, then send us your list — we'll tell you what's genuinely launch-blocking, free: [Link to article]
+👉 Run the script, then send us your list — we'll tell you what's genuinely launch-blocking, free: https://launchstudio.eu/en/blog/testing-your-own-product-before-launch-a-founders-script
 
 #AINativeFounder #QATesting #LaunchStudio #Manifera #GDPR #FounderLife

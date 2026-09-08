@@ -15,6 +15,6 @@ Bij **LaunchStudio** verifiëren wij UTC-first tijdstempelverwerking als standaa
 
 Zijn resultaat: de tijdstempelgegevens van AfspraakPlan zijn gemigreerd naar correcte UTC-opslag, waardoor de kloof permanent is gedicht en toekomstige klokveranderingen niet meer voor dezelfde verwarring kunnen zorgen. 🚀
 
-👉 Laat uw tijdstempelverwerking controleren voordat het een echt migratieprobleem wordt: [Link naar artikel]
+👉 Laat uw tijdstempelverwerking controleren voordat het een echt migratieprobleem wordt: https://launchstudio.eu/nl/blog/choosing-timezone-default-ai-product-database
 
 #AINativeFounder #LaunchStudio #Manifera #DatabaseDesign #ProductionReady

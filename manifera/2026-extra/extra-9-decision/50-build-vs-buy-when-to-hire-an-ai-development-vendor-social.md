@@ -12,6 +12,6 @@ A founder built her AI onboarding flow in a weekend on a no-code tool, hit €40
 
 Off-the-shelf gets you to launch. Custom gets you to defensible. 🚀
 
-👉 Read our full deep dive on build vs. buy for AI development vendors: [Link to article]
+👉 Read our full deep dive on build vs. buy for AI development vendors: https://www.manifera.com/blog/build-vs-buy-when-to-hire-an-ai-development-vendor
 
 #Founder #BuildVsBuy #AIDevelopment #StartupTech #ProductStrategy #CustomAI #Manifera

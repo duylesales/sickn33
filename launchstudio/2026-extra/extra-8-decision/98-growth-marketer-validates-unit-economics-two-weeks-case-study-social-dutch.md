@@ -16,6 +16,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's 11+ jaar enterprise-engin
 
 Pims resultaat: CAC van €31,25, 64 betalende klanten, en binnen 3 weken €250.000 seedfinanciering opgehaald. 🚀
 
-👉 Lanceer uw omzetklare MVP in weken, niet maanden: [Link naar artikel]
+👉 Lanceer uw omzetklare MVP in weken, niet maanden: https://launchstudio.eu/nl/blog/growth-marketer-validates-unit-economics-two-weeks-case-study
 
 #LaunchStudio #SaaS #UnitEconomics #GrowthMarketing #Seedronde #Manifera #StripeBilling

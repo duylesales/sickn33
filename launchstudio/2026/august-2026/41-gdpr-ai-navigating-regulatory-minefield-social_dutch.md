@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type compliance-architectuur en vectors
 
 Dominics portal werd 100% compliant: Het platform slaagde glansrijk voor alle externe Europese privacy-audits. (€2.200 (GDPR Compliance Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/gdpr-ai-navigating-regulatory-minefield
 
 #LaunchStudio #Manifera #AISaaS #GDPR #AVG #Privacy #VectorDatabase #RAG #AIAcquisition #TechFounders #StartupOpschalen

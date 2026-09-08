@@ -16,6 +16,6 @@ Bij **LaunchStudio** is verkennend adversarieel testen standaard in onze product
 
 Zijn resultaat: correcte toestandsafhandeling toegevoegd, data behoudend ongeacht navigatiepatroon — een gat dat zijn eigen testen structureel nooit had kunnen vinden. 🚀
 
-👉 Laat jouw app testen zoals echte gebruikers het daadwerkelijk gebruiken: [Link naar artikel]
+👉 Laat jouw app testen zoals echte gebruikers het daadwerkelijk gebruiken: https://launchstudio.eu/nl/blog/hidden-workflow-problem-ai-code-passes-tests-fails-real-use
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: launched on savings seven weeks before the subsidy decision, at €2,200 — nearly half her budget. 🚀
 
-👉 Describe your project — we'll reply within one business day with a realistic price range: [Link to article]
+👉 Describe your project — we'll reply within one business day with a realistic price range: https://launchstudio.eu/en/blog/funding-a-launch-budget-for-nl-founders
 
 #EUStartups #FounderLife #LaunchStudio #Manifera #AINativeFounder #DutchStartups

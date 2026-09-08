@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Luuk lanceerde naar zijn wachtlijst en converteerde 70 betalende diëtisten in zijn eerste week, goed voor direct €2.030 MRR. (€2.500 (Launch & Grow Pakket) — binnen 10 werkdagen opgeleverd). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/from-prototype-to-paying-customers-roadmap
 
 #LaunchStudio #Manifera #AISaaS #LaunchRoadmap #TechFounders #BoltAI #Supabase #StripePayments

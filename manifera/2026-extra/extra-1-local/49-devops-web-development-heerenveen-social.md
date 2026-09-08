@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on devops web development heerenveen: [Link to article]
+👉 Read our full deep dive on devops web development heerenveen: https://www.manifera.com/blog/devops-web-development-heerenveen
 
 #Heerenveen #Friesland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

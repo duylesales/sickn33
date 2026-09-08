@@ -14,6 +14,6 @@ Bij **LaunchStudio** zijn domein- en infrastructuurmigraties een standaardonderd
 
 Zijn resultaat: de daaropvolgende infrastructuurwijzigingen van ReisPlanner, inclusief een latere hostingmigratie, verliepen zonder enige downtime voor bezoekers. 🚀
 
-👉 Staat uw domeinswitch nog voor de deur? Bespreek eerst uw migratieplan met een ingenieur: [Link naar artikel]
+👉 Staat uw domeinswitch nog voor de deur? Bespreek eerst uw migratieplan met een ingenieur: https://launchstudio.eu/nl/blog/dns-domain-migration-zero-downtime-ai-founders
 
 #AINativeFounder #LaunchStudio #Manifera #DNS #ZeroDowntime

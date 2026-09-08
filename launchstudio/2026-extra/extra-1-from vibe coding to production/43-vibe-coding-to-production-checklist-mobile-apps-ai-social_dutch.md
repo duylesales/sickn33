@@ -16,6 +16,6 @@ Bij **LaunchStudio** verharden we AI-gegenereerde mobiele apps tegen precies dez
 
 Haar resultaat: doorstond App Store-review bij herindiening — en patiëntfoto's oprecht beschermd, niet alleen oppervlakkig compliant. 🚀
 
-👉 Laat jouw mobiele app testen tegen echte apparaatomstandigheden: [Link naar artikel]
+👉 Laat jouw mobiele app testen tegen echte apparaatomstandigheden: https://launchstudio.eu/nl/blog/vibe-coding-to-production-checklist-mobile-apps-ai
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #MobileApp

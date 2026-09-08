@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we a
 
 💡 Zo ontdekte Iris van Kampen van Dossierlijn dat er 2.400 gegenereerde zorgsamenvattingen onherkenbaar tussen officiële jeugdzorgverslagen stonden. Binnen 3 dagen splitsten we het datamodel en voegden we volledige provenance en bronkoppelingen toe.
 
-👉 Kan uw software over een jaar nog bewijzen welke alinea door een mens en welke door AI is geschreven? [Link naar artikel]
+👉 Kan uw software over een jaar nog bewijzen welke alinea door een mens en welke door AI is geschreven? https://launchstudio.eu/nl/blog/storing-ai-outputs-provenance-and-showing-your-work
 
 #AIEthics #EUAIAct #Compliance #SaaS #DataProvenance #HealthTech #LaunchStudio #Manifera

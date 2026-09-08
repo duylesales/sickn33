@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit een van de meest voorkomende beveiligingslekken die 
 
 Het resultaat voor Lieke: premium inhoud is niet langer toegankelijk via een gedeelde of geraden URL — elk verzoek wordt nu aan de serverzijde geautoriseerd, onafhankelijk van wat de frontend weergeeft. 🚀
 
-👉 Wilt u een technische audit van uw toegangscontrolelogica vóór uw volgende contentlancering? Neem contact op met LaunchStudio: [Link naar artikel]
+👉 Wilt u een technische audit van uw toegangscontrolelogica vóór uw volgende contentlancering? Neem contact op met LaunchStudio: https://launchstudio.eu/nl/blog/creator-membership-ai-platform-content-gating-bypass
 
 #AINativeFounder #LaunchStudio #Manifera #AppSec #IndieHacker

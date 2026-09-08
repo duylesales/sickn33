@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Casewise's documentbeoordelingen hervatten nu automatisch vanaf de laatst voltooide stap, en de supporttickets over verloren beoordelingen daalden naar nul. (€2.200 (Launch & Grow Pakket) — productieklaar en uitgerold in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/langgraph-vs-custom-agent-orchestration
 
 #LaunchStudio #Manifera #AISaaS #LangGraph #AgentOrchestration

@@ -12,6 +12,6 @@ Do you rebuild your insurance platform with a vendor who's never touched a ratin
 
 Insurance domain expertise isn't a nice-to-have on this decision — it's the line between a platform and a liability. 🎯
 
-👉 Read our full deep dive on choosing an insurtech development vendor: [Link to article]
+👉 Read our full deep dive on choosing an insurtech development vendor: https://www.manifera.com/blog/choosing-a-vendor-for-insurtech-platform-development
 
 #Insurtech #COO #InsuranceSoftware #SolvencyII #DORA #PolicyAdministration #Manifera

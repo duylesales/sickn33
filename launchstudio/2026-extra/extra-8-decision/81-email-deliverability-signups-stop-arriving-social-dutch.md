@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, weten we dat 
 
 Priya's resultaat: bevestigingspercentage van 38% naar 89% voor €400 — 108 extra klanten die er al die tijd al waren. 🚀
 
-👉 Check of uw transactionele e-mails daadwerkelijk aankomen: [Link naar artikel]
+👉 Check of uw transactionele e-mails daadwerkelijk aankomen: https://launchstudio.eu/nl/blog/email-deliverability-signups-stop-arriving
 
 #LaunchStudio #EmailDeliverability #VibeCoding #Manifera #SaaS #DMARC #AIApp

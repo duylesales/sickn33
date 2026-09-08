@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on bezos api mandate integration: [Link to article]
+👉 Read our deep dive on bezos api mandate integration: https://www.manifera.com/blog/bezos-api-mandate-integration
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

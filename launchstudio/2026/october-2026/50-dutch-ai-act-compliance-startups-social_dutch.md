@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Lars slaagde glansrijk voor de herbeoordeling, sloot de deal van €500k en profileerde zijn SaaS als officieel EU AI Act compliant. (€18.500 (Compliance Architectuur & HITL) — binnen 35 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/dutch-ai-act-compliance-startups
 
 #LaunchStudio #Manifera #AISaaS #EUAIAct #AIRegulation #Compliance #HRTech #CyberSecurity #DutchTech #TechFounders

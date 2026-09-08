@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, vinden we blo
 
 Kaspers resultaat: KenMerk herbouwd zonder blootgestelde credentials voor €900 — live in 3 werkdagen. 🚀
 
-👉 Check of uw API-sleutels nu zichtbaar zijn voor iedereen: [Link naar artikel]
+👉 Check of uw API-sleutels nu zichtbaar zijn voor iedereen: https://launchstudio.eu/nl/blog/environment-variable-mistake-exposes-api-keys
 
 #LaunchStudio #APIBeveiliging #VibeCoding #Manifera #SaaS #CyberSecurity #AIApp

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type zero-retention architectuur en VPC
 
 Skylars platform werd goedgekeurd door bancaire security-teams: Drie grote commerciële banken tekenden direct voor de tool vanwege de waterdichte gegevensbeveiliging. (€3.500 (Zero Retention Pakket) — productieklaar en binnen 8 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/implementing-zero-data-retention-architecture-ai
 
 #LaunchStudio #Manifera #AISaaS #ZeroDataRetention #CloudSecurity #VPC #Fintech #EnterpriseAI #CISOAudit #TechFounders #StartupOpschalen

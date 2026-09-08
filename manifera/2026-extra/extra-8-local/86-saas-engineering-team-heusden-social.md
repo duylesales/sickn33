@@ -12,6 +12,6 @@ What if your SaaS platform's slowing velocity has nothing to do with the code �
 
 Team topology is an architecture decision. Start treating it like one. 🏗️
 
-👉 Read our full deep dive on saas engineering team heusden: [Link to article]
+👉 Read our full deep dive on saas engineering team heusden: https://www.manifera.com/blog/saas-engineering-team-heusden
 
 #Heusden #NoordBrabant #SaaSEngineering #TeamTopology #CTO #Manifera

@@ -15,6 +15,6 @@ Zelfde topkwaliteit. Zelfde Manifera enterprise-standaarden vertrouwd door Vodaf
 
 Zijn resultaat: gelanceerd voor 5% van de bureau-offerte, zonder ook maar één knop te herontwerpen. 🚀
 
-👉 Lees het echte verschil tussen €800 en €80.000 in software-ontwikkeling: [Link naar artikel]
+👉 Lees het echte verschil tussen €800 en €80.000 in software-ontwikkeling: https://launchstudio.eu/nl/blog/real-difference-800-vs-80000-software-development
 
 #LaunchStudio #Manifera #AINativeFounder #SaaS #StartupCosts #SoftwareDevelopment #TechFounders #StartupOpschalen #Lovable

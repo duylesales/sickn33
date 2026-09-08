@@ -12,6 +12,6 @@
 
 Your production line shouldn't depend on one person's vacation schedule. ⚙️
 
-👉 Read our full deep dive on software engineering team Boekel: [Link to article]
+👉 Read our full deep dive on software engineering team Boekel: https://www.manifera.com/blog/software-engineering-team-boekel
 
 #Boekel #NoordBrabant #Manufacturing #Peelland #IoT #VPEngineering #Manifera

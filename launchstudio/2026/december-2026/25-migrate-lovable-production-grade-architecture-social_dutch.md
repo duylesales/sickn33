@@ -19,6 +19,6 @@ Het enige dat NOOIT verandert: uw frontend. Geen enkele pixel. 🛡️
 
 Bij **LaunchStudio**, ondersteund door Manifera's 120+ engineers, duurt dit 1–3 weken, vanaf €800 — vergeleken met €20k–€100k voor een traditioneel bureau. 🚀
 
-👉 Lees de complete migratiegids voor Lovable: [Link naar artikel]
+👉 Lees de complete migratiegids voor Lovable: https://launchstudio.eu/nl/blog/migrate-lovable-production-grade-architecture
 
 #Lovable #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductionReady #NextJS #Supabase #TechFounders #StartupOpschalen

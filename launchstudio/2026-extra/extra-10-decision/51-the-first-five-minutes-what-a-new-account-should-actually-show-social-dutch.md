@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), testen we p
 
 💡 Zo ontdekte Fleur Vermeulen van Voorraadje dat 63 potentiële klanten afhaakten omdat haar dashboard `NaN` toonde. Na 1 dag werk steeg haar terugkeerpercentage van 11% naar 47%!
 
-👉 Hoe ziet uw lege account er vandaag uit? Test het zelf: [Link naar artikel]
+👉 Hoe ziet uw lege account er vandaag uit? Test het zelf: https://launchstudio.eu/nl/blog/the-first-five-minutes-what-a-new-account-should-actually-show
 
 #SaaSOnboarding #ProductDesign #EmptyState #UserActivation #LaunchStudio #Manifera

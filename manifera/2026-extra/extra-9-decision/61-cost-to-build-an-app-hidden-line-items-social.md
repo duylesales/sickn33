@@ -12,6 +12,6 @@ Fewer than half of fixed-price app quotes hold their original number by the time
 
 The cheapest bid in a stack of three usually scoped the least, not the smartest. 🔍
 
-👉 Read our full deep dive on the hidden line items behind app development costs: [Link to article]
+👉 Read our full deep dive on the hidden line items behind app development costs: https://www.manifera.com/blog/cost-to-build-an-app-hidden-line-items
 
 #Founder #AppDevelopment #SoftwareBudget #VendorQuotes #TechDueDiligence #CostTransparency #Manifera

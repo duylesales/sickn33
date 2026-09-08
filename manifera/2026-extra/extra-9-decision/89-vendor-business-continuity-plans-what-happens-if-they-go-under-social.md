@@ -12,6 +12,6 @@ The question that got a CFO to finally sign a vendor contract wasn't about price
 
 Price the counterparty risk. Contract around it. Then sign. 📝
 
-👉 Read our full deep dive on vendor business continuity planning: [Link to article]
+👉 Read our full deep dive on vendor business continuity planning: https://www.manifera.com/blog/vendor-business-continuity-plans-what-happens-if-they-go-under
 
 #CFO #VendorRiskManagement #BusinessContinuity #SoftwareVendor #DueDiligence #Manifera

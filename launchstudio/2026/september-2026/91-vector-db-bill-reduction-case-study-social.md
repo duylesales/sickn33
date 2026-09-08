@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Priya's platform got its costs back under control: her Pinecone bill dropped from $4,200 to $1,890 a month — a 55% reduction — with zero measurable loss in search quality. (€2,200 (Launch & Grow Package) — 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/vector-db-bill-reduction-case-study
 
 #LaunchStudio #Manifera #AISaaS #VectorDatabase #RAGCosts

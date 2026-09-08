@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies het soort matching- en risicologica dat ons 
 
 Haar resultaat: Charlotte heeft de pilot opnieuw gelanceerd met de conflictcheck live, en beide kantoren noemen dit nu de reden dat ze de tool voldoende vertrouwen om verder te gaan dan de pilot. 🚀
 
-👉 Bouwt u intakesoftware voor een gereguleerde sector? Ontdek wat een compliance-beoordeling daadwerkelijk kost: [Link naar artikel]
+👉 Bouwt u intakesoftware voor een gereguleerde sector? Ontdek wat een compliance-beoordeling daadwerkelijk kost: https://launchstudio.eu/nl/blog/legal-intake-ai-tool-conflict-of-interest-checks
 
 #AINativeFounder #LaunchStudio #Manifera #LegalTech #ComplianceByDesign

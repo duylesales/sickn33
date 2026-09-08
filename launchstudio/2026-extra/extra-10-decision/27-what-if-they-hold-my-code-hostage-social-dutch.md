@@ -18,6 +18,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, garanderen we dat uw code en ac
 
 💡 Zo voorkwam oprichter Femke Aarts dat haar e-commerce platform afhankelijk werd van een freelancer, en ging ze binnen 12 dagen veilig live.
 
-👉 Lees hoe u software-eigenaarschap vanaf dag één waterdicht regelt: [Link naar artikel]
+👉 Lees hoe u software-eigenaarschap vanaf dag één waterdicht regelt: https://launchstudio.eu/nl/blog/what-if-they-hold-my-code-hostage
 
 #CodeOwnership #GitHub #SaaSFounders #StartupLegal #LaunchStudio #Manifera

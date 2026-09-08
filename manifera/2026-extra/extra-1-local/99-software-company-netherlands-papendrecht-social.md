@@ -12,6 +12,6 @@
 
 Hold your software vendor to the same rigor you hold everyone else. 🛡️
 
-👉 Read our full deep dive on software company netherlands papendrecht: [Link to article]
+👉 Read our full deep dive on software company netherlands papendrecht: https://www.manifera.com/blog/software-company-netherlands-papendrecht
 
 #Papendrecht #ZuidHolland #Drechtsteden #MaritimeEngineering #CFO #SoftwareVendorStandard #Manifera

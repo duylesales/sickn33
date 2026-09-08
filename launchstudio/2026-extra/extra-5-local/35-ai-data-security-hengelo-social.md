@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers run this exact data security audi
 
 Zorgrooster passed its regional care organization's data protection review on the first submission, and now schedules over sixty nurses across Hengelo and Twente. 🚀
 
-👉 Handling patient data in Hengelo? Check your RLS policies before your next pilot: [Link to article]
+👉 Handling patient data in Hengelo? Check your RLS policies before your next pilot: https://launchstudio.eu/en/blog/ai-data-security-hengelo
 
 #AINativeFounder #LaunchStudio #Manifera #Hengelo #GDPR

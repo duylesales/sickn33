@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in het bouwe
 
 Het resultaat: de enterprise-deal werd direct hervat zodra het menselijk toezicht was gedocumenteerd, en risicoclassificatie werd een vast onderdeel van elk salesgesprek. 🚀
 
-👉 Plan een introductiegesprek van 15 minuten om de werkelijke risicocategorie van uw AI-functionaliteit te bepalen: [Link naar artikel]
+👉 Plan een introductiegesprek van 15 minuten om de werkelijke risicocategorie van uw AI-functionaliteit te bepalen: https://launchstudio.eu/nl/blog/the-eu-ai-act-and-your-small-ai-product
 
 #SaaS #EUAIAct #KunstmatigeIntelligentie #ScaleUp #LaunchStudio #Manifera

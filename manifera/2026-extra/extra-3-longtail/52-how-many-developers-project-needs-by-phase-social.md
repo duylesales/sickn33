@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on many developers project needs by phase: [Link to article]
+👉 Read our full guide on many developers project needs by phase: https://www.manifera.com/blog/how-many-developers-project-needs-by-phase
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

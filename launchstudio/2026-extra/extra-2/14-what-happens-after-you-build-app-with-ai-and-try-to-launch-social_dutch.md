@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze uploadharding onderdeel van onze standaardreview. G
 
 Haar resultaat: server-side groottelimieten, typebeperkingen, en ratelimiting over elke uploadfunctie — legitieme fotouploads ongewijzigd. 🚀
 
-👉 Deel de link naar jouw prototype — we nemen een gratis kijkje: [Link naar artikel]
+👉 Deel de link naar jouw prototype — we nemen een gratis kijkje: https://launchstudio.eu/nl/blog/what-happens-after-you-build-app-with-ai-and-try-to-launch
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #ProductionReady

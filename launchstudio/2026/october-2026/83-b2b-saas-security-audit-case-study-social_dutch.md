@@ -14,6 +14,6 @@ Bij **LaunchStudio** dichten wij precies dit soort hiaten al sinds 2014 via Mani
 
 Radu diende een vragenlijst opnieuw in die het beveiligingsteam van de prospect goedkeurde, en de deal van $ 60.000 ARR sloot op schema. (€ 3.200 — Launch & Grow Pakket, verholpen en gedocumenteerd in 6 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/b2b-saas-security-audit-case-study
 
 #LaunchStudio #Manifera #AISaaS #B2BSecurity #EnterpriseSales

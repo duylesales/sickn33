@@ -18,6 +18,6 @@ You don't need a unicorn. You need 100 happy customers. 🛡️🚀
 
 💡 Pricing math: €80k/year ÷ 100 customers = ~€67/month per customer (before churn). Not the €15-20 your consumer-app instincts scream at you.
 
-👉 Read the full micro-SaaS math: [Link to article]
+👉 Read the full micro-SaaS math: https://launchstudio.eu/en/blog/micro-saas-ai-100-customers
 
 #MicroSaaS #LaunchStudio #Manifera #AINativeFounder #SaaS #Bootstrapped

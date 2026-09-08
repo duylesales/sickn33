@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineers — the same team behind 160+ delivere
 
 Her result: AfspraakGrip now has a working password reset flow, confirmed automated backups, and a documented list of what her chosen tool does and doesn't cover by default. 🚀
 
-👉 Still comparing AI coding tools? Book a free 15-minute intro call before you commit: [Link to article]
+👉 Still comparing AI coding tools? Book a free 15-minute intro call before you commit: https://launchstudio.eu/en/blog/ai-for-coding-founder-questions
 
 #AINativeFounder #LaunchStudio #Manifera #AIForCoding #FounderChecklist

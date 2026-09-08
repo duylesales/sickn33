@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Looproute kept the feature that made it useful for training feedback, removed the accidental broadcast of injury notes to entire groups, and saw feeling-log usage increase once it was private by default. 🚀
 
-👉 Audit which of your fields are quietly health data: [Link to article]
+👉 Audit which of your fields are quietly health data: https://launchstudio.eu/en/blog/fitness-and-wellness-apps-when-your-data-becomes-health-data
 
 #WellnessApp #GDPR #FitnessTech #StartupFounders #LaunchStudio #Manifera

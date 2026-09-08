@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: account-scoped unique constraints, double-submit protection, fuzzy warnings on similar names, and a merge tool that cleaned 747 duplicate records over two days. 🚀
 
-👉 Find out what's actually inflating your customer count: [Link to article]
+👉 Find out what's actually inflating your customer count: https://launchstudio.eu/en/blog/duplicate-records-and-the-cleanup-you-will-eventually-need
 
 #SaaS #DataQuality #IndieHacker #FounderLife #LaunchStudio #Manifera

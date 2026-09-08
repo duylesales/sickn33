@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years building accessible systems 
 
 Her result: contrast fixed, keyboard support rebuilt, focus states restored in under a week — the review passed next try. 🚀
 
-👉 Use the price calculator to see what an accessibility pass costs at launch: [Link to article]
+👉 Use the price calculator to see what an accessibility pass costs at launch: https://launchstudio.eu/en/blog/accessibility-what-eu-founders-need-at-launch
 
 #AINativeFounder #Accessibility #LaunchStudio #Manifera #WCAG #EUStartups

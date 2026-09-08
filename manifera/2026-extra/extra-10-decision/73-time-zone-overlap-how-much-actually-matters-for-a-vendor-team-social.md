@@ -12,6 +12,6 @@
 
 The right question isn't how much overlap you can get — it's which specific moments in the work genuinely need it. 🎯
 
-👉 Read our full breakdown of how much timezone overlap a vendor team actually needs: [Link to article]
+👉 Read our full breakdown of how much timezone overlap a vendor team actually needs: https://www.manifera.com/blog/time-zone-overlap-how-much-actually-matters-for-a-vendor-team
 
 #OffshoreDevelopment #CTO #RemoteTeams #TimezoneManagement #TechLeadership #Manifera

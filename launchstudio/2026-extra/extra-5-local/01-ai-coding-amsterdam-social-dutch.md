@@ -15,6 +15,6 @@ Bij **LaunchStudio** bouwen we voort op de meer dan 11 jaar ervaring van Manifer
 
 Ledgerly werd negen dagen later opnieuw gelanceerd met correcte gegevensisolatie en doorstond een vervolg-penetratietest zonder kritieke bevindingen. 🚀
 
-👉 Bouwt u momenteel met AI in Amsterdam? Laat vóór de lancering een gratis beveiligingscheck uitvoeren: [Link naar artikel]
+👉 Bouwt u momenteel met AI in Amsterdam? Laat vóór de lancering een gratis beveiligingscheck uitvoeren: https://launchstudio.eu/nl/blog/ai-coding-amsterdam
 
 #AINativeFounder #LaunchStudio #Manifera #AICoding #Amsterdam

@@ -12,6 +12,6 @@ A roadmap with forty items and no stated trade-offs isn't a strategy — it's a 
 
 Companies without a real strategy often waste a third of their engineering budget on features nobody adopts twice. 🎯
 
-👉 Read our full deep dive on digital product strategy: [Link to article]
+👉 Read our full deep dive on digital product strategy: https://www.manifera.com/blog/digital-product-strategy
 
 #ProductStrategy #CEO #ProductRoadmap #Manifera

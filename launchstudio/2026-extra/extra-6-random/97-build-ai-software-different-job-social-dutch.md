@@ -15,6 +15,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's meer dan 11 jaar software
 
 Zijn resultaat: SmaakGids bracht zijn aanbevelingsfunctie uit in minder dan twee weken na de omschakeling, gelijk aan twee maanden custom-modelinspanning. 🚀
 
-👉 Weet u niet zeker of u een custom model nodig heeft of gewoon een goed gebruikte API? Praat met ons: [Link naar artikel]
+👉 Weet u niet zeker of u een custom model nodig heeft of gewoon een goed gebruikte API? Praat met ons: https://launchstudio.eu/nl/blog/build-ai-software-different-job
 
 #AINativeFounder #LaunchStudio #Manifera #AIProductDevelopment #BuildVsBuy

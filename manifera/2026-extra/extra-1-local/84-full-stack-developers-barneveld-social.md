@@ -12,6 +12,6 @@
 
 Depth beats breadth. Every time it actually matters. 🛡️
 
-👉 Read our full deep dive on full-stack developers barneveld: [Link to article]
+👉 Read our full deep dive on full-stack developers barneveld: https://www.manifera.com/blog/full-stack-developers-barneveld
 
 #Barneveld #Gelderland #AgriTech #CTO #FullStackHiring #TechnicalVetting #Manifera

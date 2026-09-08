@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been architecting exactly this kind of auditable, pro
 
 Carter passed his SOC 2 compliance audit and signed up 3 new healthcare clinics. 🚀
 
-👉 See how we get you audit-ready: [Link to article]
+👉 See how we get you audit-ready: https://launchstudio.eu/en/blog/soc-2-compliance-for-ai-startups
 
 #AINativeFounder #LaunchStudio #Manifera #SOC2Compliance #AISecurity

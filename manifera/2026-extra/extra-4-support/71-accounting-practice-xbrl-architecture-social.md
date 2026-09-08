@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on accounting practice xbrl: [Link to article]
+👉 Read our full architectural deep dive on accounting practice xbrl: https://www.manifera.com/blog/accounting-practice-xbrl-architecture
 
 #Fintech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

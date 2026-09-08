@@ -15,6 +15,6 @@ Bij **LaunchStudio** beoordelen wij marketingsites met precies dit risicoprofiel
 
 Het resultaat voor Iris: de marketingsite heeft nu dezelfde belastbaarheid als de app altijd al had — het gat gedicht voordat het nog een eerste indruk kan kosten. 🚀
 
-👉 Laat uw marketingsite met dezelfde ernst beoordelen als uw app: [Link naar artikel]
+👉 Laat uw marketingsite met dezelfde ernst beoordelen als uw app: https://launchstudio.eu/nl/blog/websites-for-ai-products-different-standards-than-app
 
 #AINativeFounder #LaunchStudio #Manifera #WebsitePerformance #LaunchReadiness

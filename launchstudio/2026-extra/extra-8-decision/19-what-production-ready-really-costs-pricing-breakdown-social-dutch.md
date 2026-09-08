@@ -15,6 +15,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Dennis' resultaat: Live in 9 werkdagen voor exact €2.400, €2.600 marketingbudget overgehouden en 20 vastgoedklanten geworven. 🚀
 
-👉 Bekijk de complete prijzen-breakdown voor uw prototype: [Link naar artikel]
+👉 Bekijk de complete prijzen-breakdown voor uw prototype: https://launchstudio.eu/nl/blog/what-production-ready-really-costs-pricing-breakdown
 
 #PricingBreakdown #LaunchStudio #Manifera #SaaS #VibeCoding #FixedPrice #StartupBudget

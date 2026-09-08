@@ -15,6 +15,6 @@ Bij **LaunchStudio** hebben onze technici 160+ projecten opgeleverd voor enterpr
 
 Zijn resultaat: MenuKaarts chatbot antwoordt nu vanuit het echte, actuele menu, en Niels kan gerechten bijwerken zonder zich zorgen te maken dat het "AI"-deel van zijn site stilletjes tegen klanten liegt. 🚀
 
-👉 Ooit getest of de chatbot van uw "AI-website" daadwerkelijk weet wat er gisteren in uw bedrijf is veranderd: [Link naar artikel]
+👉 Ooit getest of de chatbot van uw "AI-website" daadwerkelijk weet wat er gisteren in uw bedrijf is veranderd: https://launchstudio.eu/nl/blog/ai-websites-chatbot-bolted-on
 
 #AINativeFounder #LaunchStudio #Manifera #AIWebsites #ProductionReady

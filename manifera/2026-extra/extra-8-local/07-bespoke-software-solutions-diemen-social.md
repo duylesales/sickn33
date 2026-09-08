@@ -12,6 +12,6 @@
 
 Get your product roadmap back from your own configuration debt. 🚀
 
-👉 Read our full deep dive on bespoke software solutions Diemen: [Link to article]
+👉 Read our full deep dive on bespoke software solutions Diemen: https://www.manifera.com/blog/bespoke-software-solutions-diemen
 
 #Diemen #NoordHolland #SaaS #ProductManagement #SoftwareEngineering #HeadOfProduct #Manifera

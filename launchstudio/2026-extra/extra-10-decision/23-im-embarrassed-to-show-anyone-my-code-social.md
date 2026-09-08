@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the real fixes — key rotation and access control — closed in 8 business days at the lower end of the Launch Ready range, and Petra's marketplace launched to her 40-designer waitlist the following week. 🚀
 
-👉 Send your repo exactly as it is: [Link to article]
+👉 Send your repo exactly as it is: https://launchstudio.eu/en/blog/im-embarrassed-to-show-anyone-my-code
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

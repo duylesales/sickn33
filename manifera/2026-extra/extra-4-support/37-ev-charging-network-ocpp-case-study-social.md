@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the ev charging network ocpp case study: [Link to article]
+👉 See the ev charging network ocpp case study: https://www.manifera.com/blog/ev-charging-network-ocpp-case-study
 
 #Telecom #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

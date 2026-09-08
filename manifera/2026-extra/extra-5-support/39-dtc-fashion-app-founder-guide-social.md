@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a dtc fashion app app: [Link to article]
+👉 Read the non-technical founder's guide to building a dtc fashion app app: https://www.manifera.com/blog/dtc-fashion-app-founder-guide
 
 #FashionTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -16,6 +16,6 @@ Achter **LaunchStudio** staat Manifera's team van 120+ engineers — 160+ projec
 
 Haar resultaat: een beknopt analyserapport met twee screenshots zorgde dat de oprichter de herziene scope binnen het uur zonder discussie goedkeurde. 🚀
 
-👉 Ontvang concrete bewoordingen en argumenten voor uw volgende klantgesprek: [Link naar artikel]
+👉 Ontvang concrete bewoordingen en argumenten voor uw volgende klantgesprek: https://launchstudio.eu/nl/blog/klantverwachtingen-managen-rondom-hun-met-ai-gebouwde-code
 
 #BureauLeven #WhiteLabel #AICoding #Klantcommunicatie #LaunchStudio #Manifera

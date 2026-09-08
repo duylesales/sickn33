@@ -12,6 +12,6 @@ Two vendors score nearly identically on price and capability. One sends a status
 
 What you see during vendor evaluation is usually the best version of the relationship you'll get. Evaluate accordingly. 🔍
 
-👉 Read our full deep dive on what separates good vendor communication from bad: [Link to article]
+👉 Read our full deep dive on what separates good vendor communication from bad: https://www.manifera.com/blog/vendor-communication-cadence-what-separates-good-partners
 
 #HeadOfProduct #VendorCommunication #AgileDelivery #ProductManagement #SoftwareVendor #RemoteTeams #Manifera

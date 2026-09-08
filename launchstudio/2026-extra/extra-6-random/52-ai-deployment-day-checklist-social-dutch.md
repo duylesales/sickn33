@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengen de in Singapore gevestigde technici van Manifera 11
 
 Zijn resultaat: de API-aanroepen van MeldStroom gebeuren nu volledig server-side, waarbij de sleutel nooit aanwezig is in naar de browser verzonden code, plus ratelimietmonitoring om toekomstig misbruik op te vangen. 🚀
 
-👉 Staat u op het punt uw eerste productiedeployment te pushen? Praat eerst met een engineer: [Link naar artikel]
+👉 Staat u op het punt uw eerste productiedeployment te pushen? Praat eerst met een engineer: https://launchstudio.eu/nl/blog/ai-deployment-day-checklist
 
 #AINativeFounder #LaunchStudio #Manifera #AIDeployment #APISecurity

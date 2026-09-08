@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: handmatige betaalrondes op vrijdag verdwenen, beide geschillen werden gedekt uit gereserveerde gelden, en de onboarding werd een selfservice-flow van 15 minuten die de maand erna 90 nieuwe vakmensen opleverde. 🚀
 
-👉 Deel uw prototype voor vrijblijvende feedback: [Link naar artikel]
+👉 Deel uw prototype voor vrijblijvende feedback: https://launchstudio.eu/nl/blog/tweezijdige-marktplaats-de-lanceringsbeslissingen-die-u-niet-kunt-uitstellen
 
 #Marketplace #SaaS #LaunchStudio #Manifera #ProductionReady #Fintech

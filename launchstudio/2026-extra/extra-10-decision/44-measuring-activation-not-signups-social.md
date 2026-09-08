@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: real activation rose from 24% to 43% in six weeks, and 90-day retention improved by roughly a third — delivered in 6 business days alongside an ongoing plan. 🚀
 
-👉 Check whether your "activation" number is measuring anything: [Link to article]
+👉 Check whether your "activation" number is measuring anything: https://launchstudio.eu/en/blog/measuring-activation-not-signups
 
 #ActivationMetric #SaaSGrowth #ProductAnalytics #FounderLife #LaunchStudio #Manifera

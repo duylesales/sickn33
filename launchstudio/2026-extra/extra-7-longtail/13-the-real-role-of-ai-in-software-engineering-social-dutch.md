@@ -14,6 +14,6 @@ Bij **LaunchStudio** is het vangen van de bedrijfslogica die een AI-tool nooit e
 
 Thijs' resultaat: een facturatiestroom die nu het exacte scenario opvangt dat hij "helemaal niet had bedacht" om te testen — want waarom zou hij het op zichzelf hebben getest? 🚀
 
-👉 Benieuwd welk deel van "software engineering" uw AI-tool eigenlijk heeft overgeslagen? Lees het 5-stappen overzicht: [Link naar artikel]
+👉 Benieuwd welk deel van "software engineering" uw AI-tool eigenlijk heeft overgeslagen? Lees het 5-stappen overzicht: https://launchstudio.eu/nl/blog/the-real-role-of-ai-in-software-engineering-teams-today
 
 #AINativeFounder #LaunchStudio #Manifera #LovableAI #SoftwareEngineering

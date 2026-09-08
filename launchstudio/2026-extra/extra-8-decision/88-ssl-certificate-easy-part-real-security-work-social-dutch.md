@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gebouwd op Manifera's 11+ jaar beveiligingservaring, gaat 
 
 Lennarts resultaat: OfferteGenie behaalde een schone A+-beoordeling en sloot een enterprise-contract van €14.400 per jaar. 🚀
 
-👉 Ontdek wat er nog moet gebeuren ná het SSL-certificaat: [Link naar artikel]
+👉 Ontdek wat er nog moet gebeuren ná het SSL-certificaat: https://launchstudio.eu/nl/blog/ssl-certificate-easy-part-real-security-work
 
 #LaunchStudio #Cybersecurity #SaaS #CSP #WebBeveiliging #IndieHacker #Manifera

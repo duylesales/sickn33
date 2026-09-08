@@ -14,6 +14,6 @@ Bij **LaunchStudio** is de architectuur van betalingsstromen een van de eerste d
 
 Zijn resultaat: WinkelKassa sloot de zakelijke retaildeal af met nalevingsdocumentatie die een dag in beslag nam in plaats van maanden. 🚀
 
-👉 Weet u niet zeker in welke PCI-categorie uw kassa valt? Vraag een beveiligingsbeoordeling met vast bereik aan: [Link naar artikel]
+👉 Weet u niet zeker in welke PCI-categorie uw kassa valt? Vraag een beveiligingsbeoordeling met vast bereik aan: https://launchstudio.eu/nl/blog/pci-scope-stripe-elements-ai-checkout
 
 #AINativeFounder #LaunchStudio #Manifera #PCIDSS #StripeElements

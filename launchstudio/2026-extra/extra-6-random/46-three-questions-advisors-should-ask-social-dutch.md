@@ -15,6 +15,6 @@ Bij **LaunchStudio** worden we mogelijk gemaakt door Manifera — meer dan 11 ja
 
 Zijn resultaat: het partnerschapsgesprek werd hervat met gedocumenteerde, door de oprichter beheerde infrastructuur, en Ties stelt deze drie vragen nu aan elke adviseur voordat hij op hun begeleiding vertrouwt. 🚀
 
-👉 Boek een gratis intakegesprek van 15 minuten om uw eigen antwoorden te checken: [Link naar artikel]
+👉 Boek een gratis intakegesprek van 15 minuten om uw eigen antwoorden te checken: https://launchstudio.eu/nl/blog/three-questions-advisors-should-ask
 
 #AINativeFounder #LaunchStudio #Manifera #InfrastructureOwnership #DueDiligence

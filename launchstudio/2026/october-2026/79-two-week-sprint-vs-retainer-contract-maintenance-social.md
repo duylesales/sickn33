@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Anders switched models and the math changed fast: Anders cleared his full backlog in one sprint at roughly a fifth of what six more months of the retainer would have cost. (€2,300 (Launch & Grow Package) — sprint scoped and delivered in 10 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/two-week-sprint-vs-retainer-contract-maintenance
 
 #LaunchStudio #Manifera #AISaaS #EngineeringOps #StartupCosts

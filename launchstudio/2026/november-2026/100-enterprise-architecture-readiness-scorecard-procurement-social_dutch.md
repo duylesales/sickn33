@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Eén founder zakte voor vier van de zes scorekaartcategorieën, drie weken voor een inkoopdeadline — wij dichtten elk hiaat en de review werd bij de eerste indiening goedgekeurd, waardoor de deal op tijd werd gesloten. (€5.400, Enterprise Hardening Pakket — 13 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-architecture-readiness-scorecard-procurement
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseReadiness #TechFounders

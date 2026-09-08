@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a volunteer coordination: [Link to article]
+👉 Read the founder's guide to building a volunteer coordination: https://www.manifera.com/blog/volunteer-coordination-app-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

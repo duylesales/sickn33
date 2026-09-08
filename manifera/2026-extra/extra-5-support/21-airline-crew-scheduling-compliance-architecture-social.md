@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on airline crew scheduling compliance: [Link to article]
+👉 Read our full architectural deep dive on airline crew scheduling compliance: https://www.manifera.com/blog/airline-crew-scheduling-compliance-architecture
 
 #AviationTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

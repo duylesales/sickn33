@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Huiswerkmaatje passed the school's procurement review on its second submission, and reused the same documentation to pass its next school pilot without rework. 🚀
 
-👉 Get ready for the questionnaire before a school sends it: [Link to article]
+👉 Get ready for the questionnaire before a school sends it: https://launchstudio.eu/en/blog/edtech-prototypes-launching-into-schools-and-the-minors-problem
 
 #EdTech #GDPR #StartupFounders #Compliance #LaunchStudio #Manifera

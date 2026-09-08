@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar enterprise delivery), 
 
 💡 Zo hielp Wouter Aalders van Deelgereedschap zijn tweede feature binnen 8 werkdagen live te zetten door uitsluitend te sturen op het resultaat.
 
-👉 Lees hoe u als Product Owner het maximale uit uw softwarepartner haalt: [Link naar artikel]
+👉 Lees hoe u als Product Owner het maximale uit uw softwarepartner haalt: https://launchstudio.eu/nl/blog/be-the-product-owner-not-the-project-manager
 
 #ProductManagement #ProductOwner #StartupFounders #SoftwareDevelopment #LaunchStudio #Manifera

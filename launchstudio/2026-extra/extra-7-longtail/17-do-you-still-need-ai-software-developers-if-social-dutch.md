@@ -14,6 +14,6 @@ Bij **LaunchStudio** is het plaatsen van de juiste deployment-infrastructuur ron
 
 Pieter's resultaat: toen weken later een tweede, niet-gerelateerde bug opdook, isoleerde hij binnen enkele minuten de exacte implementatie die deze veroorzaakte — puur giswerk onder zijn oude proces. 🚀
 
-👉 Implementeert u nog steeds met de hand en hoopt u op het beste? Dit is wat er daadwerkelijk verandert: [Link naar artikel]
+👉 Implementeert u nog steeds met de hand en hoopt u op het beste? Dit is wat er daadwerkelijk verandert: https://launchstudio.eu/nl/blog/do-you-still-need-ai-software-developers-if-a-prompt-built-your-app
 
 #AINativeFounder #LaunchStudio #Manifera #DevOps #CursorAI

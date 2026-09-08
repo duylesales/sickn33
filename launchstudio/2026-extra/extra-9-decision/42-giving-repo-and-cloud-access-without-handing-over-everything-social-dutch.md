@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: alle drie de beveiligingslekken gedicht vóór de start, gebouwd op strikt afgebakende rollen, en een definitieve offboarding in slechts elf minuten. 🚀
 
-👉 Spar met een engineer die dagelijks AI-code doorlicht — leg uw repository en rechtenstructuur aan ons voor: [Link naar artikel]
+👉 Spar met een engineer die dagelijks AI-code doorlicht — leg uw repository en rechtenstructuur aan ons voor: https://launchstudio.eu/nl/blog/giving-repo-and-cloud-access-without-handing-over-everything
 
 #IndieHacker #SupabaseSecurity #SoftwareBeveiliging #DevSecOps #LaunchStudio #Manifera

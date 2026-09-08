@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen wij deze technische basis voor AI-compliance al sind
 
 Het contract van Ingrid werd gesloten zonder tweede ronde: haar advocaat stelde AI-specifieke voorwaarden op binnen dagen in plaats van weken, en het juridische team van de retailketen keurde het herziene contract goed zonder verdere bijgehouden wijzigingen. (€ 2.900 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-partner-enterprise-tos-ai-copyright
 
 #LaunchStudio #Manifera #AISaaS #AICompliance #EUAIAct

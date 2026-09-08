@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a healthtech mobile compliant: [Link to article]
+👉 Read the founder's guide to building a healthtech mobile compliant: https://www.manifera.com/blog/healthtech-mobile-app-mvp-compliant
 
 #HealthTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

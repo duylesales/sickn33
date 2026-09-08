@@ -12,6 +12,6 @@
 
 Find the gap in a review — not in a breach notification. 🛡️
 
-👉 Read our full deep dive on homegrown authentication security debt: [Link to article]
+👉 Read our full deep dive on homegrown authentication security debt: https://www.manifera.com/blog/homegrown-authentication-security-debt
 
 #AppSec #Authentication #CTO #SecurityAudit #SoftwareArchitecture #Manifera

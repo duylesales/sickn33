@@ -14,6 +14,6 @@ Bij **LaunchStudio** benchmarken en migreren we sinds 2014 enterprise database-i
 
 Ava's vectorzoeksnelheid verviervoudigde, terwijl de CPU-belasting op haar primaire database met 50% daalde. (€2.500 (Vector DB Benchmarking & Migratie Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
-👉 Kies de juiste vectordatabase voor enterprise-schaal: [Link naar artikel]
+👉 Kies de juiste vectordatabase voor enterprise-schaal: https://launchstudio.eu/nl/blog/real-time-vector-databases-pinecone-vs-weaviate-vs-milvus
 
 #AINativeFounder #LaunchStudio #Manifera #VectorDatabase #RAGArchitecture #Pinecone #Weaviate #Milvus #pgvector #StartupOpschalen

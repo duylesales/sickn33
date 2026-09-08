@@ -15,6 +15,6 @@ Bij **LaunchStudio** wordt Manifera's decennium-lange ervaring met beveiligingsb
 
 Haar resultaat: blootstelling opgemerkt en gesloten voordat het elders bevestigd gelekt was, plus een governancestructuur voor de toekomst. 🚀
 
-👉 Weet u niet zeker waartoe de AI-tools van uw team daadwerkelijk toegang hebben? Stel deze vijf vragen eerst: [Link naar artikel]
+👉 Weet u niet zeker waartoe de AI-tools van uw team daadwerkelijk toegang hebben? Stel deze vijf vragen eerst: https://launchstudio.eu/nl/blog/before-you-trust-any-ai-tool-download-ask
 
 #AINativeFounder #LaunchStudio #Manifera #SupplyChainSecurity #SaaSSecurity

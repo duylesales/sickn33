@@ -16,6 +16,6 @@ At **LaunchStudio**, we verify authentication at exactly this level on every Lau
 
 His result: server-side ownership verification closed the highest-consequence gap of the entire review, before beta launch. 🚀
 
-👉 Get your API-level access control actually tested: [Link to article]
+👉 Get your API-level access control actually tested: https://launchstudio.eu/en/blog/authentication-looks-done-demo-api-level
 
 #AISecure #IDOR #LaunchStudio #Manifera #IndieHacker #AppSecurity

@@ -15,6 +15,6 @@ Bij **LaunchStudio** herleiden onze technici in Amsterdam precies dit soort geli
 
 Haar resultaat: dubbel geboekte diensten daalden naar nul bij drie retailketens die RoosterKoppel gebruiken, en Bente voegde een vaste reviewstap toe voor elke functie die gedeelde staat raakt. 🚀
 
-👉 Benieuwd of uw AI-build zo'n gelijktijdigheidsgat heeft? Bekijk ons proces: [Link naar artikel]
+👉 Benieuwd of uw AI-build zo'n gelijktijdigheidsgat heeft? Bekijk ons proces: https://launchstudio.eu/nl/blog/ai-and-software-engineering-overlap
 
 #AINativeFounder #LaunchStudio #Manifera #ConcurrencyBugs #SoftwareEngineering

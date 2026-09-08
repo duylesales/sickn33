@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on property management multi tenancy: [Link to article]
+👉 Read our full architectural deep dive on property management multi tenancy: https://www.manifera.com/blog/property-management-multi-tenancy-architecture
 
 #PropTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

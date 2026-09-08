@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on t shaped skills specialist generalist: [Link to article]
+👉 Read our full guide on t shaped skills specialist generalist: https://www.manifera.com/blog/t-shaped-skills-specialist-generalist
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

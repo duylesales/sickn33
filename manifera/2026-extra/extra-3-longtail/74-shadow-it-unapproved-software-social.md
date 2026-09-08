@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on shadow it unapproved software: [Link to article]
+👉 Read our full guide on shadow it unapproved software: https://www.manifera.com/blog/shadow-it-unapproved-software
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

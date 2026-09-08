@@ -14,6 +14,6 @@ At **LaunchStudio**, Manifera has been making exactly this call for founders sin
 
 Layla's document retrieval became highly accurate, cutting her search times by 80%. 🚀
 
-👉 Run your buy-vs-build numbers with our calculator: [Link to article]
+👉 Run your buy-vs-build numbers with our calculator: https://launchstudio.eu/en/blog/buy-vs-build-decision-ai-infrastructure
 
 #AINativeFounder #LaunchStudio #Manifera #AIInfrastructure #BuyVsBuild

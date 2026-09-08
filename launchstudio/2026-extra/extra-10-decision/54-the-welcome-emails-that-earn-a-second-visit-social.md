@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: audit, authentication, and a triggered sequence delivered in 2 business days — second-session return rate rose from 6% to 29% over six weeks. 🚀
 
-👉 Find out if your onboarding emails are actually arriving: [Link to article]
+👉 Find out if your onboarding emails are actually arriving: https://launchstudio.eu/en/blog/the-welcome-emails-that-earn-a-second-visit
 
 #SaaS #EmailMarketing #Onboarding #Deliverability #LaunchStudio #Manifera

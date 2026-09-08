@@ -12,6 +12,6 @@
 
 Ask "what would you design differently" — the question most vendor screens never ask. 🛡️
 
-👉 Read our full deep dive on outsourcing software developers vietnam execution: [Link to article]
+👉 Read our full deep dive on outsourcing software developers vietnam execution: https://www.manifera.com/blog/outsourcing-software-developers-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #Amsterdam #TechnicalVetting #Manifera

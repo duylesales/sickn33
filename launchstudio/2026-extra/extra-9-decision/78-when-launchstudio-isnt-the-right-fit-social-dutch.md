@@ -16,6 +16,6 @@ We besteden liever een kwartier om te vertellen dat **LaunchStudio** niet past, 
 
 Het resultaat: Yusuf testte 6 weken een eenvoudige versie in Bolt, haalde toezeggingen op bij 2 praktijken, en startte pas daarna de medische maatwerkbouw. 🚀
 
-👉 Beschrijf uw project en fase — we reageren binnen één werkdag, ook als het advies "niet met ons" luidt: [Link naar artikel]
+👉 Beschrijf uw project en fase — we reageren binnen één werkdag, ook als het advies "niet met ons" luidt: https://launchstudio.eu/nl/blog/when-launchstudio-isnt-the-right-fit
 
 #AINativeFounder #StartupAdvice #LaunchStudio #Manifera #FounderLife #HealthTech

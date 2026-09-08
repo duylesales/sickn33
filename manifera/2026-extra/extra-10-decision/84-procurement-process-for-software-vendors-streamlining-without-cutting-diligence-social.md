@@ -12,6 +12,6 @@ Engineering wants a vendor onboarded in six weeks. Your standard procurement pro
 
 Streamlining procurement is about sequencing and scope discipline — not doing less checking. 🎯
 
-👉 Read our full guide to compressing procurement timelines without cutting diligence: [Link to article]
+👉 Read our full guide to compressing procurement timelines without cutting diligence: https://www.manifera.com/blog/procurement-process-for-software-vendors-streamlining-without-cutting-diligence
 
 #Procurement #VendorSelection #RFPProcess #SoftwareVendors #ProcurementStrategy #Manifera

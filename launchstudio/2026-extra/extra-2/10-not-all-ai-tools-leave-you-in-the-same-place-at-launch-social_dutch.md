@@ -15,6 +15,6 @@ Bij **LaunchStudio** werken we als een stille productiepartner over de output va
 
 Haar resultaat: de onafhankelijke review die de app nooit had, onder haar agentschapbranding — en een accurate scope om de klant correct te offreren. 🚀
 
-👉 Freelancer of agentschap? We werken ook als jouw stille productiepartner: [Link naar artikel]
+👉 Freelancer of agentschap? We werken ook als jouw stille productiepartner: https://launchstudio.eu/nl/blog/not-all-ai-tools-leave-you-in-the-same-place-at-launch
 
 #Agency #Freelancer #LaunchStudio #Manifera #WhiteLabel

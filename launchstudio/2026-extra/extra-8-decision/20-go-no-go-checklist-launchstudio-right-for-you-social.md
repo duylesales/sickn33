@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 Her result: her client avoided paying to harden a version that would've needed rework — then came back 6 weeks later for the real engagement. 🔁
 
-👉 Run your own project through the 5-signal checklist: [Link to article]
+👉 Run your own project through the 5-signal checklist: https://launchstudio.eu/en/blog/go-no-go-checklist-launchstudio-right-for-you
 
 #Agency #WhiteLabel #FreelancerLife #LaunchStudio #Manifera #AINativeFounder

@@ -12,6 +12,6 @@
 
 We kept renegotiating scope for a "project" that was never going to finish. Once we admitted that, the friction disappeared. 🛡️
 
-👉 Read our full deep dive on software services: [Link to article]
+👉 Read our full deep dive on software services: https://www.manifera.com/blog/software-services
 
 #SoftwareServices #CEO #VendorSelection #Manifera

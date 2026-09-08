@@ -12,6 +12,6 @@
 
 The moment a live commerce event lives or dies for is the one most vendor demos never simulate. ⚡
 
-👉 Read our full deep dive on live commerce vendor latency requirements: [Link to article]
+👉 Read our full deep dive on live commerce vendor latency requirements: https://www.manifera.com/blog/live-commerce-and-social-selling-platform-vendors-latency-requirements
 
 #LiveCommerce #SocialSelling #Ecommerce #CTO #StreamingTech #Manifera

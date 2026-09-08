@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, lood
 
 Milans resultaat: AuditTrail slaagde met twee dagen marge, de betaalde trial met de vrachtmakelaar startte op schema, voor €3.200 in 6 werkdagen. 🚀
 
-👉 Stuur ons uw vragenlijst en ontdek hoe dicht u al bij slagen zit: [Link naar artikel]
+👉 Stuur ons uw vragenlijst en ontdek hoe dicht u al bij slagen zit: https://launchstudio.eu/nl/blog/solo-indie-hacker-soc2-lite-case-study
 
 #LaunchStudio #SOC2Lite #IndieHacker #Manifera #SaaS #Compliance #EnterpriseReady

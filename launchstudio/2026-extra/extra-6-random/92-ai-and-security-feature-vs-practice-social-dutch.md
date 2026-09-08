@@ -15,6 +15,6 @@ Bij **LaunchStudio** zet onze hub in Singapore "we hebben een beveiligingsfuncti
 
 Zijn resultaat: VeiligMeld draait nu een gedocumenteerde maandelijkse reviewcyclus, en Levi behandelt de AI-functie als één input naast andere, niet als bewijs van beveiliging. 🚀
 
-👉 Vraagt u zich af of uw beveiligingsfunctie eigenlijk een praktijk is? Vraag ons gratis advies aan: [Link naar artikel]
+👉 Vraagt u zich af of uw beveiligingsfunctie eigenlijk een praktijk is? Vraag ons gratis advies aan: https://launchstudio.eu/nl/blog/ai-and-security-feature-vs-practice
 
 #AINativeFounder #LaunchStudio #Manifera #AppSecurity #SecurityPractice

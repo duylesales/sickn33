@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: akkoord op het traject van € 3.600 na het doorrekenen van haar wachtlijst, live in 12 werkdagen en quitte gespeeld binnen twee weken na haar prognose. 🚀
 
-👉 Plan een gesprek om uw specifieke terugverdientijd samen met een engineer door te rekenen: [Link naar artikel]
+👉 Plan een gesprek om uw specifieke terugverdientijd samen met een engineer door te rekenen: https://launchstudio.eu/nl/blog/calculating-the-payback-period-on-your-launch-investment
 
 #SaaS #UnitEconomics #StartupGroei #SoftwareInvestering #LaunchStudio #Manifera

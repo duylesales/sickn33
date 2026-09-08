@@ -12,6 +12,6 @@ A polished GitHub repo tells you nothing about whether a candidate can operate d
 
 Stop hiring the portfolio. Start hiring the person who actually built it. 🎯
 
-👉 Read our full deep dive on vetting AI software developer portfolios: [Link to article]
+👉 Read our full deep dive on vetting AI software developer portfolios: https://www.manifera.com/blog/vetting-ai-software-developer-portfolio-questions
 
 #ITManager #AIHiring #TeamAugmentation #TechVetting #SoftwareOutsourcing #TalentDueDiligence #Manifera

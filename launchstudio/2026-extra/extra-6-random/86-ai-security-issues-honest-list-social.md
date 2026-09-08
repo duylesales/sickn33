@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers, including the Singapore-based team, run this
 
 Her result: MeldGrip passed its pre-rollout review with all three issues closed before the wider release Iris had planned. 🚀
 
-👉 Want a plain check against this exact list? Send us your prototype link for free advice: [Link to article]
+👉 Want a plain check against this exact list? Send us your prototype link for free advice: https://launchstudio.eu/en/blog/ai-security-issues-honest-list
 
 #AINativeFounder #LaunchStudio #Manifera #AppSecurity #SecurityReview

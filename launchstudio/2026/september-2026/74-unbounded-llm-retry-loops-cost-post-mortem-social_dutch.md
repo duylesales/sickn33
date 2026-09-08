@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 Niels' OpenAI-uitgaven daalden terug naar een voorspelbare $150-220/maand, en het volgende corrupte bestand kostte minder dan $2 (€1.900 (Launch & Grow Pakket) — geïmplementeerd in 7 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/unbounded-llm-retry-loops-cost-post-mortem
 
 #LaunchStudio #Manifera #AISaaS #LLMCosts #RetryLoop

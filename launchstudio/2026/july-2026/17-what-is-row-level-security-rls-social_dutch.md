@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Mason's applicatie behaalde productie-gereedheid: Mason secured all client records and verified strict data isolation under rigorous multi-user tests. (€1,200 (Security Hardening Package) — production-ready and deployed in 4 business days.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/what-is-row-level-security-rls
 
 #LaunchStudio #Manifera #AISaaS #AIandSecurityWhyYour #TechFounders

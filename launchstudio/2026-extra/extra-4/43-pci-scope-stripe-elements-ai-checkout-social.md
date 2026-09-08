@@ -14,6 +14,6 @@ At **LaunchStudio**, payment flow architecture is one of the first things we aud
 
 His result: WinkelKassa closed the enterprise retail deal with compliance documentation that took a day to complete instead of months. 🚀
 
-👉 Not sure which PCI category your checkout falls into? Get a fixed-scope security review: [Link to article]
+👉 Not sure which PCI category your checkout falls into? Get a fixed-scope security review: https://launchstudio.eu/en/blog/pci-scope-stripe-elements-ai-checkout
 
 #AINativeFounder #LaunchStudio #Manifera #PCIDSS #StripeElements

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Haar resultaat: PawPortal lanceerde drie weken later met elf betalende aanbieders, factureerde handmatig en financierde een vervolgtraject van € 2.400 voor betalingen direct uit de kwartaalomzet. 🚀
 
-👉 Bereken uw project met onze transparante prijscalculator: [Link naar artikel]
+👉 Bereken uw project met onze transparante prijscalculator: https://launchstudio.eu/nl/blog/under-1000-euro-what-you-can-and-cant-fix-before-launch
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

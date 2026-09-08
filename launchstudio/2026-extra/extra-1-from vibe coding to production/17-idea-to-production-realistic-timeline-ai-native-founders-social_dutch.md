@@ -16,6 +16,6 @@ Bij **LaunchStudio** vertaalt onze audit de specifieke gaten van jouw prototype 
 
 Haar resultaat: een prototype van 4 dagen dat 17 werkdagen verharding nodig had — patiëntdata, twee inconsistente integraties, sms-naleving. Live en klaar. 🚀
 
-👉 Krijg een tijdlijn gebaseerd op jouw daadwerkelijke prototype: [Link naar artikel]
+👉 Krijg een tijdlijn gebaseerd op jouw daadwerkelijke prototype: https://launchstudio.eu/nl/blog/idea-to-production-realistic-timeline-ai-native-founders
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #StartupTijdlijn

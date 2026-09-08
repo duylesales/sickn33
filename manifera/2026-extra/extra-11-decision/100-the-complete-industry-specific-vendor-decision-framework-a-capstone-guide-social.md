@@ -12,6 +12,6 @@ Two CEOs signed near-identical vendor contracts the same quarter. One needed PCI
 
 100 articles, one underlying discipline: specificity beats generic reassurance, every time. 📘
 
-👉 Read our full capstone deep dive on the industry-specific vendor decision framework: [Link to article]
+👉 Read our full capstone deep dive on the industry-specific vendor decision framework: https://www.manifera.com/blog/the-complete-industry-specific-vendor-decision-framework-a-capstone-guide
 
 #VendorSelection #CEO #SoftwareProcurement #DueDiligence #BusinessStrategy #Manifera

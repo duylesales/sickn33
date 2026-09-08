@@ -12,6 +12,6 @@
 
 An SLA that only reads well is worse than no SLA — it creates false confidence. 🔐
 
-👉 Read our full deep dive on SLAs for software development: [Link to article]
+👉 Read our full deep dive on SLAs for software development: https://www.manifera.com/blog/sla-for-software-development
 
 #SLA #SoftwareDevelopment #VendorManagement #CFO #Manifera

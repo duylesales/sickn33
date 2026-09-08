@@ -15,6 +15,6 @@ Bij **LaunchStudio** is het standaardiseren van omgevingsconfiguratie als code e
 
 Zijn resultaat: Levi heeft sindsdien geen staging-versus-productie-verrassing meer gehad, omdat drift nu automatisch wordt opgevangen voordat het ooit een lancering bereikt. 🚀
 
-👉 Praat met ons over uw implementatie-instellingen voordat uw volgende functielancering u verrast: [Link naar artikel]
+👉 Praat met ons over uw implementatie-instellingen voordat uw volgende functielancering u verrast: https://launchstudio.eu/nl/blog/environment-parity-ai-prototype-staging-drift
 
 #AINativeFounder #LaunchStudio #Manifera #StagingDrift #ConfigAsCode

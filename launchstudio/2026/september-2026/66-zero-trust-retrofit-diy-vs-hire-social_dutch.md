@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De retrofit van Nadia sloot het gat voordat het een datalek werd: LaunchStudio sloot het ontbrekende UPDATE-beleid, voegde gelijkwaardige dekking toe voor INSERT en DELETE, verving de te breed toegestane service-role-sleutel en leverde een schriftelijke samenvatting van het toegangscontrolemodel voor het IT-team van de prospect. (€4.100 (Enterprise Hardening Pakket) — retrofit en documentatie voltooid in 13 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/zero-trust-retrofit-diy-vs-hire
 
 #LaunchStudio #Manifera #AISaaS #ZeroTrust #AISecurity

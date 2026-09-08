@@ -12,6 +12,6 @@
 
 A fleet platform is only as good as the data feed under the dashboard. Test the SLA before you test the UI. 🎯
 
-👉 Read our full deep dive on fleet management vendor SLAs: [Link to article]
+👉 Read our full deep dive on fleet management vendor SLAs: https://www.manifera.com/blog/choosing-a-fleet-management-software-vendor-real-time-tracking-sla
 
 #FleetManagement #Telematics #Logistics #ELD #ITManager #Manifera

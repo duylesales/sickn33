@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen wij foutmeldingen als een echte ontwerpoverwegin
 
 Haar resultaat: foutmeldingen herschreven voor elk storingspunt, zodat ze overeenkomen met dezelfde warme, behulpzame stem die al overal elders in het product aanwezig was. 🚀
 
-👉 Weet u wat uw app daadwerkelijk zegt als er iets misgaat? Laat uw foutmeldingen ontwerpen met dezelfde zorg als de rest van uw product: [Link naar artikel]
+👉 Weet u wat uw app daadwerkelijk zegt als er iets misgaat? Laat uw foutmeldingen ontwerpen met dezelfde zorg als de rest van uw product: https://launchstudio.eu/nl/blog/error-messages-part-of-brand-not-just-backend
 
 #AINativeFounder #LaunchStudio #Manifera #CX #ProductDesign

@@ -15,6 +15,6 @@ At **LaunchStudio**, payment retry, donor notifications, and reconciliation trai
 
 Willem's result: two of the three lapsed gifts were recovered within a week of donors getting the update-your-card email, and GavenBeheer now catches failures on the first attempt instead of the third missed month. 🚀
 
-👉 Running a donation or membership platform? Send us your prototype link for a free read: [Link to article]
+👉 Running a donation or membership platform? Send us your prototype link for a free read: https://launchstudio.eu/en/blog/church-donation-ai-app-recurring-gift-failures
 
 #AINativeFounder #LaunchStudio #Manifera #NonprofitTech #Fintech

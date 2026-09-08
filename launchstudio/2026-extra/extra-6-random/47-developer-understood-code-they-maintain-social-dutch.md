@@ -15,6 +15,6 @@ Bij **LaunchStudio** stapt ons Amsterdamse team, gesteund door de 120+ engineers
 
 Haar resultaat: TicketVolgs routeringslogica gedraagt zich nu voorspelbaar en is duidelijk genoeg gedocumenteerd zodat elke toekomstige developer op dezelfde manier getest kan worden als Fien haar nieuwe aanwinst testte. 🚀
 
-👉 Ooit uw developer een simpele vraag gesteld en een vaag antwoord gekregen? Dit kan het betekenen: [Link naar artikel]
+👉 Ooit uw developer een simpele vraag gesteld en een vaag antwoord gekregen? Dit kan het betekenen: https://launchstudio.eu/nl/blog/developer-understood-code-they-maintain
 
 #AINativeFounder #LaunchStudio #Manifera #CodeComprehension #ProductionReady

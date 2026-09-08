@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the timing-out view went from 40 seconds to under 300 milliseconds, and the review caught an export job that would've taken the database down at 5 AM. 🚀
 
-👉 Send your schema for a free performance read: [Link to article]
+👉 Send your schema for a free performance read: https://launchstudio.eu/en/blog/dashboards-and-analytics-products-when-it-loads-isnt-enough
 
 #IndieHacker #SaaS #LaunchStudio #Manifera #DataEngineering #AICoding

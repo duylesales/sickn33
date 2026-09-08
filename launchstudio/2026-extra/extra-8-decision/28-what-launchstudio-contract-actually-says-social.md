@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: signed with full confidence, zero scope or payment disputes across the entire engagement. 🚀
 
-👉 Ask to see a sample contract before your scoping call: [Link to article]
+👉 Ask to see a sample contract before your scoping call: https://launchstudio.eu/en/blog/what-launchstudio-contract-actually-says
 
 #ContractTerms #IPOwnership #LaunchStudio #Manifera #SaaSFounder #StartupLegal

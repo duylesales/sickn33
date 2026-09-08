@@ -15,6 +15,6 @@ At **LaunchStudio**, this is the exact review our engineers run for AI-built app
 
 Her result: ZorgMatch now passes a full data access audit, with every care record accessible only to the client, their caregiver, and authorized staff. 🚀
 
-👉 Handling sensitive personal data in an AI-built app? Talk through what you might be missing: [Link to article]
+👉 Handling sensitive personal data in an AI-built app? Talk through what you might be missing: https://launchstudio.eu/en/blog/ai-privacy-issues-hoogezand
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrivacy #GDPR

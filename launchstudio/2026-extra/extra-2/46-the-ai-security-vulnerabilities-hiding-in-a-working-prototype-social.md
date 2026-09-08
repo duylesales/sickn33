@@ -15,6 +15,6 @@ At **LaunchStudio**, we check for exactly this pattern across file-handling feat
 
 His result: strict path validation implemented, every request confined to the intended folder — legitimate uploads and downloads unchanged. 🚀
 
-👉 Forward us your prototype link for a free assessment: [Link to article]
+👉 Forward us your prototype link for a free assessment: https://launchstudio.eu/en/blog/the-ai-security-vulnerabilities-hiding-in-a-working-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #WebSecurity

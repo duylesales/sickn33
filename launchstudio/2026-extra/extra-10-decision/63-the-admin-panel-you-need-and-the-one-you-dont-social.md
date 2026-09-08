@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a minimal admin panel covering the six standard operations, with database access restricted to a written emergency procedure — no repeat incidents since. 🚀
 
-👉 Find out which six operations you actually need first: [Link to article]
+👉 Find out which six operations you actually need first: https://launchstudio.eu/en/blog/the-admin-panel-you-need-and-the-one-you-dont
 
 #SaaS #AdminTools #IndieHacker #FounderLife #LaunchStudio #Manifera

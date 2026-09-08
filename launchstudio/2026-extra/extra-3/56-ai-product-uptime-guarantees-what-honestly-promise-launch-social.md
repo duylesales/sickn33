@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders determine a genuinely honest, achievable u
 
 Her result: future contracts renegotiated around a conservative, genuinely achievable uptime figure, plus the observability practices to track and report it accurately. 🚀
 
-👉 Not sure your uptime promise matches your actual infrastructure? Get an honest figure you can actually support: [Link to article]
+👉 Not sure your uptime promise matches your actual infrastructure? Get an honest figure you can actually support: https://launchstudio.eu/en/blog/ai-product-uptime-guarantees-what-honestly-promise-launch
 
 #AINativeFounder #LaunchStudio #Manifera #SaaS #UptimeSLA

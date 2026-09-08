@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on strangler fig legacy modernization: [Link to article]
+👉 Read our deep dive on strangler fig legacy modernization: https://www.manifera.com/blog/strangler-fig-legacy-modernization
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

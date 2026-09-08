@@ -15,6 +15,6 @@ Bij **LaunchStudio** beschouwen we dit als de 80% die de tutorials nooit laten z
 
 Kasper's resultaat: een werkende deploymentpijplijn, een herstelde webhook-handler en echte CI/CD op zijn plek — geleverd in 9 werkdagen in plaats van nog eens zes weekenden van giswerk. 🚀
 
-👉 Denkt u dat uw door AI gebouwde app slechts "een weekendje" productieversteviging nodig heeft? Krijg eerst een eerlijke scope: [Link naar artikel]
+👉 Denkt u dat uw door AI gebouwde app slechts "een weekendje" productieversteviging nodig heeft? Krijg eerst een eerlijke scope: https://launchstudio.eu/nl/blog/why-software-engineering-for-ai-built-apps-looks
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareEngineering #AICodingTools

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Veldnota went live in eleven business days with the processing agreement signed, and Sander added two more cooperatives without touching the data model. 🚀
 
-👉 Send your repository or prototype link and get a fixed scope back: [Link to article]
+👉 Send your repository or prototype link and get a fixed scope back: https://launchstudio.eu/en/blog/one-customer-waiting-to-pay-how-that-changes-the-math
 
 #IndieHacker #AICoding #ProductionReady #LaunchStudio #Manifera #GDPR

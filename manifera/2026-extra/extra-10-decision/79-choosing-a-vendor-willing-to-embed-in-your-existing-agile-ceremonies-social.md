@@ -12,6 +12,6 @@ Ask any vendor if they "follow agile" and every single one says yes. Ask if thei
 
 The gap between "we do agile" and "we'll embed in your ceremonies" is where roadmaps quietly stall. 🎯
 
-👉 Read our full guide on evaluating vendors for real agile integration: [Link to article]
+👉 Read our full guide on evaluating vendors for real agile integration: https://www.manifera.com/blog/choosing-a-vendor-willing-to-embed-in-your-existing-agile-ceremonies
 
 #VPEngineering #AgileDevelopment #DedicatedDevelopmentTeam #ScrumTeams #SoftwareOutsourcing #Manifera

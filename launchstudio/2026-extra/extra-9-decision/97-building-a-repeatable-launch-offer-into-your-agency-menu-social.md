@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 160+ delivered projects, our fixed-cos
 
 Her result: Lotte's time from inquiry to signed proposal dropped from nine days to under three, and her studio closed six launch engagements next quarter, up from four. 🚀
 
-👉 Talk to us about building your fixed-tier menu: [Link to article]
+👉 Talk to us about building your fixed-tier menu: https://launchstudio.eu/en/blog/building-a-repeatable-launch-offer-into-your-agency-menu
 
 #AgencyLife #WhiteLabel #AgencyOwner #ProductizedServices #LaunchStudio #Manifera

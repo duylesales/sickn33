@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar aan het leveren aan b
 
 Rosannes resultaat: ReceptRijk live voor €1.900 — en Nienkes werk volledig behouden. 🚀
 
-👉 Laat uw vriend weer gewoon uw vriend zijn: [Link naar artikel]
+👉 Laat uw vriend weer gewoon uw vriend zijn: https://launchstudio.eu/nl/blog/launchstudio-vs-developer-friend-free-help
 
 #LaunchStudio #Vibecoding #Vriendenhulp #Manifera #SaaS #Lovable #AIApp

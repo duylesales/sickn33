@@ -15,6 +15,6 @@ At **LaunchStudio**, this default-credential check is included in our standard L
 
 His result: the default account disabled immediately, unique credentials established, commission rates restored. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/where-ai-in-database-design-quietly-cuts-corners
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #VibeCoding

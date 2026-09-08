@@ -16,6 +16,6 @@ At **LaunchStudio**, we test RBAC at exactly this architectural level — not ju
 
 His result: role verification rearchitected to check the authenticated session server-side, before launch to clients handling real tenant data. 🚀
 
-👉 Get your role-based access control tested where it actually matters: [Link to article]
+👉 Get your role-based access control tested where it actually matters: https://launchstudio.eu/en/blog/role-based-access-control-gap-ai-tools-miss
 
 #RBAC #AISecure #LaunchStudio #Manifera #IndieHacker

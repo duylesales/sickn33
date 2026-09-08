@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 realtime, hoog-gelijktijdige Node.j
 
 Masons tekststream werd vloeiend gerenderd in realtime, wat zorgde voor een directe typemachine-ervaring voor alle actieve gebruikers. (€950 (SSE Configuration Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
-👉 Schaal uw SSE-datastromen: [Link naar artikel]
+👉 Schaal uw SSE-datastromen: https://launchstudio.eu/nl/blog/handling-concurrent-sse-connections-nodejs-ai
 
 #AINativeFounder #LaunchStudio #Manifera #ServerSentEvents #NodeJS #TokenStreaming #BackendEngineering #RealtimeWeb #AISaaS #StartupOpschalen

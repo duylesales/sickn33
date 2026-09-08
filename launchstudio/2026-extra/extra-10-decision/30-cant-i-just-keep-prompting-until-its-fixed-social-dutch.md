@@ -17,6 +17,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, diagnosticeren onze senior engi
 
 💡 Zo hielpen we Sanne Duijvestein na 41 mislukte prompts binnen 90 minuten van haar haperende horeca-roosters af.
 
-👉 Ontdek de 4 signalen dat doorprompten u geld kost: [Link naar artikel]
+👉 Ontdek de 4 signalen dat doorprompten u geld kost: https://launchstudio.eu/nl/blog/cant-i-just-keep-prompting-until-its-fixed
 
 #AIPrototypes #VibeCoding #Lovable #CursorAI #SoftwareEngineering #LaunchStudio #Manifera

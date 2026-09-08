@@ -14,6 +14,6 @@ Bij **LaunchStudio** draaien wij deze exacte structuur over drie steden al sinds
 
 Freya werd de meeste ochtenden wakker bij een build die 's nachts al was vooruitgegaan — elke feedbackronde dezelfde dag opgelost. (€3.100 Launch & Grow-pakket — 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-manifera-amsterdam-singapore-hcmc-teams
 
 #LaunchStudio #Manifera #AISaaS #GlobaleEngineering #StartupOprichters

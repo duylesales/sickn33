@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, auditen onze senior engineers u
 
 💡 Zo hield hardloop-app Looproute haar populaire evaluatiefunctie overeind zónder dat blessurenotities nog per ongeluk door hele hardloopclubs werden ingezien.
 
-👉 Ontdek hoe u uw fitness- of wellness-app AVG-proof maakt: [Link naar artikel]
+👉 Ontdek hoe u uw fitness- of wellness-app AVG-proof maakt: https://launchstudio.eu/nl/blog/fitness-and-wellness-apps-when-your-data-becomes-health-data
 
 #FitnessTech #Wellness #AVG #Gezondheidsdata #LaunchStudio #Manifera

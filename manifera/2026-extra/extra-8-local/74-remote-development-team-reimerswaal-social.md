@@ -12,6 +12,6 @@
 
 Incident-diagnosis time typically drops by more than half within two quarters of adopting this structure.
 
-👉 Read our full deep dive on remote development team Reimerswaal: [Link to article]
+👉 Read our full deep dive on remote development team Reimerswaal: https://www.manifera.com/blog/remote-development-team-reimerswaal
 
 #Reimerswaal #Zeeland #VPEngineering #RemoteTeam #Aquaculture #OffshoreDevelopment #TechAccountability #Manifera

@@ -12,6 +12,6 @@ A €25K website redesign quote finishes at €68K. No single change request loo
 
 Read the scope document, not just the quote. 📄
 
-👉 Read our full deep dive on avoiding website redesign scope creep: [Link to article]
+👉 Read our full deep dive on avoiding website redesign scope creep: https://www.manifera.com/blog/the-website-redesign-vendor-trap-scope-creep-in-contracts
 
 #Founder #WebsiteRedesign #ScopeCreep #VendorContract #WebDevelopment #Manifera

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: he hired the cheaper vendor at €3,400, added the missing permissions for €900, and launched in eleven days with every account in his name. 🚀
 
-👉 Get a sanity-check number with the price calculator: [Link to article]
+👉 Get a sanity-check number with the price calculator: https://launchstudio.eu/en/blog/comparing-two-quotes-when-you-cant-judge-the-detail
 
 #AIFounder #NoCode #LaunchStudio #Manifera #HiringADeveloper #StartupTips

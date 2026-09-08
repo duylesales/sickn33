@@ -12,6 +12,6 @@
 
 Built to respect the legacy system it has to live alongside. 🛡️
 
-👉 Read our full deep dive on full-stack software development uden: [Link to article]
+👉 Read our full deep dive on full-stack software development uden: https://www.manifera.com/blog/full-stack-software-development-uden
 
 #Uden #NoordBrabant #LogisticsTech #VPEngineering #LegacyIntegration #FullStackDevelopment #Manifera

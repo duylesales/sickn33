@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on food traceability gs1 supply chain: [Link to article]
+👉 Read our full guide on food traceability gs1 supply chain: https://www.manifera.com/blog/food-traceability-gs1-supply-chain
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

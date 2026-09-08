@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: an append-only audit trail with before-and-after values, database-level triggers, and customer-facing history — audit capability became a standard answer in every enterprise questionnaire since. 🚀
 
-👉 See what an audit entry actually needs to be worth anything: [Link to article]
+👉 See what an audit entry actually needs to be worth anything: https://launchstudio.eu/en/blog/audit-trails-who-changed-what-and-when
 
 #SaaS #AuditTrail #Compliance #FounderLife #LaunchStudio #Manifera

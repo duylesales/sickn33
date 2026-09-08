@@ -14,6 +14,6 @@ Bij LaunchStudio auditen en herstellen we geërfde softwarebases zodat oprichter
 
 Sofia herwon 100% controle en onboardde direct 12 nieuwe studio's. (€ 3.400 (Audit & Hardening) — 8 werkdagen.) 🚀
 
-👉 Lees het herstelplan voor geërfde code: [Link naar artikel]
+👉 Lees het herstelplan voor geërfde code: https://launchstudio.eu/nl/blog/choosing-partner-audit-inherited-cofounder-code
 
 #LaunchStudio #Manifera #AISaaS #CofounderExit #CodeAudit

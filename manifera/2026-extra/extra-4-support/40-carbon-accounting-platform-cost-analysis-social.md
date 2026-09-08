@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full carbon accounting cost breakdown: [Link to article]
+👉 Read the full carbon accounting cost breakdown: https://www.manifera.com/blog/carbon-accounting-platform-cost-analysis
 
 #ClimateTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the mvno billing tmforum case study: [Link to article]
+👉 See the mvno billing tmforum case study: https://www.manifera.com/blog/mvno-billing-tmforum-case-study
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

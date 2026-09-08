@@ -12,6 +12,6 @@ Most teams don't skip user research because they don't value it — they skip it
 
 A third to half of shipped features see low adoption — most of that is preventable with a week of conversations. 🎯
 
-👉 Read our full deep dive on user research for software products: [Link to article]
+👉 Read our full deep dive on user research for software products: https://www.manifera.com/blog/user-research-for-software-products
 
 #UserResearch #ProductDiscovery #VPEngineering #Manifera

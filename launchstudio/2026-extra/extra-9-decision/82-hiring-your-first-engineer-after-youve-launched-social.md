@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 120+ engineers, we sit in on technical
 
 Her result: the stronger resume was the weaker fit — the candidate she hired shipped a real feature solo within five weeks, no issues traced back. 🚀
 
-👉 Talk to an engineer about sitting in on your next technical interview: [Link to article]
+👉 Talk to an engineer about sitting in on your next technical interview: https://launchstudio.eu/en/blog/hiring-your-first-engineer-after-youve-launched
 
 #SaaS #Hiring #TechTalent #FounderLife #LaunchStudio #Manifera

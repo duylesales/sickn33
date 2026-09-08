@@ -12,6 +12,6 @@ Two sprints of architecture decisions, made by someone who never appeared in the
 
 Verify the seats, not just the resume. 📋
 
-👉 Read our full deep dive on auditing vendor staffing seniority: [Link to article]
+👉 Read our full deep dive on auditing vendor staffing seniority: https://www.manifera.com/blog/software-engineer-stages-vendor-staffing-audit
 
 #ITManager #VendorStaffingAudit #DedicatedDevelopmentTeam #OffshoreSoftwareDevelopment #TechDueDiligence #Manifera

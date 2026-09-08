@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on hofstede cultural dimensions offshore: [Link to article]
+👉 Read our full guide on hofstede cultural dimensions offshore: https://www.manifera.com/blog/hofstede-cultural-dimensions-offshore
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

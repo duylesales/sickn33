@@ -15,6 +15,6 @@ Bij **LaunchStudio**, gesteund door Manifera's team van 120+ engineers, beoordel
 
 LaunchStudio bevestigde dat de herbouwde versie functioneel gelijkwaardig was aan wat een gerichte reparatie in dagen had opgeleverd, niet zes weken. 🚀
 
-👉 Midden in een discussie met uw technische medeoprichter? Krijg een gerichte beoordeling voordat een van beide partijen zich vastlegt: [Link naar artikel]
+👉 Midden in een discussie met uw technische medeoprichter? Krijg een gerichte beoordeling voordat een van beide partijen zich vastlegt: https://launchstudio.eu/nl/blog/technical-cofounder-objection
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalCofounder #CodeReview

@@ -15,6 +15,6 @@ Bij **LaunchStudio** beoordelen we precies dit soort bouwen-of-uitbesteden-besli
 
 Zijn resultaat: TransportGrip lanceerde met authenticatie die de IT-afdelingen van vlootbeheerders zonder tweede blik goedkeurden, en Guus richtte zijn tijd om naar de papierwerkautomatisering die TransportGrip daadwerkelijk onderscheidt. 🚀
 
-👉 Niet zeker in welk kwadrant uw build valt: [Link naar artikel]
+👉 Niet zeker in welk kwadrant uw build valt: https://launchstudio.eu/nl/blog/build-yourself-vs-delegate-framework
 
 #AINativeFounder #LaunchStudio #Manifera #BuildVsBuy #TechnicalFounder

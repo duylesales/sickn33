@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Herre Roelevink's cybersecurity-roots en 
 
 Haar resultaat: privacy-audit glansrijk doorstaan, grootste klant getekend! 🚀
 
-👉 Lees de complete gids over AVG/GDPR compliance voor AI-apps: [Link naar artikel]
+👉 Lees de complete gids over AVG/GDPR compliance voor AI-apps: https://launchstudio.eu/nl/blog/founders-guide-gdpr-compliance-ai-applications
 
 #GDPR #AVG #LaunchStudio #Manifera #AINativeFounder #DataPrivacy #SaaS #Compliance #Bolt #TechFounders #StartupOpschalen

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Renata's application achieved production readiness: With a working erasure process, an enforced retention policy, and DPA documentation in hand, Renata reopened the conversation with the stalled enterprise prospect and unblocked the deal. (€2,100 (Launch & Grow Package) — 8 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/gdpr-fix-now-vs-later-cost
 
 #LaunchStudio #Manifera #AISaaS #GDPR #DataCompliance

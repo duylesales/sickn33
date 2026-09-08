@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, zorgen onze engineers voor robu
 
 💡 Zo draaide lokaal bezorgplatform Buurtmaaltijd in Rotterdam direct storingsvrij tijdens de zaterdagspits, zelfs bij haperende restaurant-wifi.
 
-👉 Ontdek hoe u uw food-ordering prototype productierijp maakt voor de horeca: [Link naar artikel]
+👉 Ontdek hoe u uw food-ordering prototype productierijp maakt voor de horeca: https://launchstudio.eu/nl/blog/food-ordering-prototypes-allergens-timing-and-orders-you-cant-lose
 
 #FoodTech #Horeca #Allergenen #SaaS #LaunchStudio #Manifera

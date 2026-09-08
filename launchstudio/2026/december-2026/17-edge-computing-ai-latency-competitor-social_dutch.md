@@ -17,6 +17,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's hubs in Amsterdam, Singapore e
 
 ⏱️ Latency telt exponentieel op: 3 opeenvolgende AI-stappen van 800ms voelen niet als 800ms — maar als 2,4 seconden doodse stilte tenzij u directe voortgang toont.
 
-👉 Ontdek waarom latency uw grootste concurrent is: [Link naar artikel]
+👉 Ontdek waarom latency uw grootste concurrent is: https://launchstudio.eu/nl/blog/edge-computing-ai-latency-competitor
 
 #EdgeComputing #LaunchStudio #Manifera #AINativeFounder #Performance #SaaS #TechFounders #StartupOpschalen

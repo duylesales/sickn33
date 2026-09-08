@@ -15,6 +15,6 @@ At **LaunchStudio**, we handle exactly this transition — real integrations, re
 
 Iris's result: a working open banking integration with proper error handling — completed in 8 business days. 🚀
 
-👉 Not sure if your next feature is still inside the sandbox or already past it? Find out: [Link to article]
+👉 Not sure if your next feature is still inside the sandbox or already past it? Find out: https://launchstudio.eu/en/blog/the-real-role-of-ai-in-development-once
 
 #AINativeFounder #LaunchStudio #Manifera #AIinDevelopment #OpenBanking

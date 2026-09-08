@@ -12,6 +12,6 @@ An English toggle to machine-translated Spanish isn't multi-language support —
 
 Accessibility and localization are architecture decisions, not late-stage features. ♿🗣️
 
-👉 Read our full deep dive on civic tech vendor accessibility and multi-language support: [Link to article]
+👉 Read our full deep dive on civic tech vendor accessibility and multi-language support: https://www.manifera.com/blog/choosing-a-civic-tech-vendor-accessibility-and-multi-language-support
 
 #CivicTech #Accessibility #GovTech #Localization #ITManager #Manifera

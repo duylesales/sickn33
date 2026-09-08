@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on multi market site architecture cmo: [Link to article]
+👉 Read our full deep dive on multi market site architecture cmo: https://www.manifera.com/blog/multi-market-site-architecture-cmo
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

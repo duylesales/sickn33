@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), ontwerpen w
 
 💡 Zo ontving Anouk Steenbergen van Praktijkplan 60 woedende tickets en 2 opzeggingen na een gedwongen kalender-redesign. Binnen 48 uur herstelden we de vertrouwde sneltoetsen en richtten we een gefaseerde uitrolstraat met switch-back in. Sindsdien is het verloop nul.
 
-👉 Kunnen uw gebruikers bij een grote release tijdelijk terugschakelen naar de vertrouwde versie? [Link naar artikel]
+👉 Kunnen uw gebruikers bij een grote release tijdelijk terugschakelen naar de vertrouwde versie? https://launchstudio.eu/nl/blog/shipping-a-big-change-to-customers-who-depend-on-you
 
 #ProductManagement #UXDesign #SaaS #CustomerSuccess #DevOps #LaunchStudio #Manifera

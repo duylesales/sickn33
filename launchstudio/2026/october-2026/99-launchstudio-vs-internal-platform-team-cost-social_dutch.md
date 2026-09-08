@@ -14,6 +14,6 @@ Bij **LaunchStudio** leveren wij precies deze omvang van werk als projectgebasee
 
 Tobias' beveiligings- en infrastructuurhiaten werden binnen twee weken gedicht, en hij herbestemde zijn wervingsbudget naar productontwikkeling, waarbij hij LaunchStudio in retainer hield in plaats van een fulltime salaris te dragen dat zijn gebruik nog niet rechtvaardigde. (€ 4.100, Relaunch & Scale Pakket — opgeleverd in 9 werkdagen, tegenover een geschatte eerstejaarskosten van meer dan € 75.000 voor de aanwerving.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-internal-platform-team-cost
 
 #LaunchStudio #Manifera #AISaaS #StartupWerving #PlatformEngineering

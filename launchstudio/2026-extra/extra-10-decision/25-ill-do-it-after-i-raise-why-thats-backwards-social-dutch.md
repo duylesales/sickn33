@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, maken onze senior engineers uw 
 
 💡 Zo hielpen we Lukas Bergström een multi-tenancy vraagstuk binnen 9 dagen op te lossen, waarna zijn €900k ronde zonder waarderingskorting sloot.
 
-👉 Ontdek waarom u backend-hardening vóór uw financieringsronde plant: [Link naar artikel]
+👉 Ontdek waarom u backend-hardening vóór uw financieringsronde plant: https://launchstudio.eu/nl/blog/ill-do-it-after-i-raise-why-thats-backwards
 
 #Fundraising #TechnicalDueDiligence #VentureCapital #SaaSFounders #LaunchStudio #Manifera

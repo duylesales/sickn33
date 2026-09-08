@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 160+ delivered projects, our fixed €
 
 His result: Koen added an explicit scoping line item, raised his baseline price 15%, and now flags high-touch clients for a separate margin tier. 🚀
 
-👉 Book a 15-minute call to see your real margin: [Link to article]
+👉 Book a 15-minute call to see your real margin: https://launchstudio.eu/en/blog/the-margin-math-behind-a-productized-launch-service
 
 #AgencyLife #WhiteLabel #AgencyOwner #ProductizedServices #LaunchStudio #Manifera

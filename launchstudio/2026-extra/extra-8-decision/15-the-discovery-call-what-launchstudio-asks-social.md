@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 Her result: a fixed quote that held exactly through delivery, zero scope surprises. ✅
 
-👉 See exactly what gets asked before you're quoted: [Link to article]
+👉 See exactly what gets asked before you're quoted: https://launchstudio.eu/en/blog/the-discovery-call-what-launchstudio-asks
 
 #AINativeFounder #StartupEngineering #FixedPriceQuote #LaunchStudio #Manifera #VibeCoding

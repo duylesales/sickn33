@@ -16,6 +16,6 @@ Bij **LaunchStudio** krijgt tenant-isolatie zijn eigen toegewijde test voor elke
 
 Zijn resultaat: een lek dat maanden bestaan had, alleen gevonden door een toegewijde hertest — niet door te testen of de functie simpelweg werkte. 🚀
 
-👉 Laat jouw multi-tenant-isolatie expliciet testen, niet alleen aangenomen: [Link naar artikel]
+👉 Laat jouw multi-tenant-isolatie expliciet testen, niet alleen aangenomen: https://launchstudio.eu/nl/blog/multi-tenant-data-isolation-explicit-enforcement
 
 #SaaSFounder #LaunchStudio #Manifera #AISecure #B2BSaaS

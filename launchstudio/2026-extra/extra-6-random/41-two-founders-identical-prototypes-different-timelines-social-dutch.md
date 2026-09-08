@@ -15,6 +15,6 @@ Bij **LaunchStudio** is ons in Amsterdam gevestigde team gespecialiseerd in prec
 
 Haar resultaat: ProefPlan lanceerde met de eerste drie labklanten probleemloos aan boord, en Noor voert nu een beveiligingsreview uit als vast controlepunt vóór elke nieuwe klantintegratie. 🚀
 
-👉 Benieuwd of uw prototype dezelfde verborgen lacune heeft: [Link naar artikel]
+👉 Benieuwd of uw prototype dezelfde verborgen lacune heeft: https://launchstudio.eu/nl/blog/two-founders-identical-prototypes-different-timelines
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityReview #AIDevelopment

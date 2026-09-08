@@ -12,6 +12,6 @@
 
 Picking the payment provider felt easy. It turned out to be one of three decisions that actually mattered. 🛡️
 
-👉 Read our full deep dive on software design: [Link to article]
+👉 Read our full deep dive on software design: https://www.manifera.com/blog/software-design
 
 #SoftwareDesign #CTO #SystemArchitecture #Manifera

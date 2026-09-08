@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we precies dit soort proactieve audit uit — gesteu
 
 Zijn resultaat: 2 echte gaten gedicht op zijn eigen voorwaarden — voordat het beveiligingsteam van een partner ze vond, of erger. 🚀
 
-👉 Dicht dit gat tegen de voorspelbare kosten, niet de onvoorspelbare: [Link naar artikel]
+👉 Dicht dit gat tegen de voorspelbare kosten, niet de onvoorspelbare: https://launchstudio.eu/nl/blog/real-cost-skipping-security-audit-ai-generated-code
 
 #AIBeveiliging #LaunchStudio #Manifera #SaaS #Gegevensbescherming

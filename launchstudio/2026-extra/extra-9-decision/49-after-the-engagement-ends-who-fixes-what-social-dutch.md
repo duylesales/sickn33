@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat in de praktijk: een simpele agenda-herinnering redde een platform van acute downtime door een SSL-verlengingsfout drie weken vóór de deadline te signaleren. 🚀
 
-👉 Vertel ons wat er nog openstaat in uw applicatie — binnen één werkdag ontvangt u een passend overdrachtsvoorstel: [Link naar artikel]
+👉 Vertel ons wat er nog openstaat in uw applicatie — binnen één werkdag ontvangt u een passend overdrachtsvoorstel: https://launchstudio.eu/nl/blog/after-the-engagement-ends-who-fixes-what
 
 #IndieHacker #TechnischeOprichter #SaaSArchitectuur #CodeOverdracht #LaunchStudio #Manifera

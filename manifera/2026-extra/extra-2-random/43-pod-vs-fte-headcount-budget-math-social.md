@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on pod fte headcount budget math: [Link to article]
+👉 Read our full deep dive on pod fte headcount budget math: https://www.manifera.com/blog/pod-vs-fte-headcount-budget-math
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

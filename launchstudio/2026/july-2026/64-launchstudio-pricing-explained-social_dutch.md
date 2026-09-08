@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Felix' applicatie behaalde productie-gereedheid: Felix verwerkte zijn eerste 200 abonnementsverlengingen zonder één betalingsgeschil, en geen enkele klant ondervond een verlopen abonnement door een gemiste betalingsbevestiging. (€2.400 (Launch & Grow Pakket) — 8 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-pricing-explained
 
 #LaunchStudio #Manifera #AISaaS #PricingTransparency #StripeWebhooks

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: client delivered a production-ready product on schedule, credited it entirely to the agency's own process. 🚀
 
-👉 Discuss a white-label arrangement for your client roster: [Link to article]
+👉 Discuss a white-label arrangement for your client roster: https://launchstudio.eu/en/blog/agency-white-label-client-never-knows-case-study
 
 #AgencyLife #WhiteLabel #FreelanceAgency #LaunchStudio #Manifera #AICoding

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on software development devops hoogezand: [Link to article]
+👉 Read our full deep dive on software development devops hoogezand: https://www.manifera.com/blog/software-development-devops-hoogezand
 
 #Hoogezand #Groningen #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

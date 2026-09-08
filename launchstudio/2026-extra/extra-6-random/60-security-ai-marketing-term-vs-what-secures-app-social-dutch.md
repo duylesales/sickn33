@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengen we Manifera's enterprise-grade engineering — meer
 
 Zijn resultaat: GroeiKompas handhaaft nu autorisatie op tenant-niveau op elk analyse-eindpunt, geverifieerd met tests die specifiek de cross-tenant-toegang proberen die eerder was geslaagd. 🚀
 
-👉 Vertrouwt u op een "Security AI"-badge waarvan u de reikwijdte nog niet daadwerkelijk heeft geverifieerd: [Link naar artikel]
+👉 Vertrouwt u op een "Security AI"-badge waarvan u de reikwijdte nog niet daadwerkelijk heeft geverifieerd: https://launchstudio.eu/nl/blog/security-ai-marketing-term-vs-what-secures-app
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityAI #ProductionReady

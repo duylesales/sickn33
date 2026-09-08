@@ -15,6 +15,6 @@ Bij **LaunchStudio** implementeren we precies dit soort uitnodigingsverificatie 
 
 Haar resultaat: een geschiktheidsverificatiestap toegevoegd aan het uitnodigingsproces — de eenvoudige ervaring voor geschikte buren ongewijzigd. 🚀
 
-👉 Boek een gratis gesprek van 15 minuten om het door te nemen: [Link naar artikel]
+👉 Boek een gratis gesprek van 15 minuten om het door te nemen: https://launchstudio.eu/nl/blog/you-can-build-your-ai-prototype-solo-launching-it-less-so
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

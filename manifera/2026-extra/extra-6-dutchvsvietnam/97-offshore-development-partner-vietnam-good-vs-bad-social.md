@@ -12,6 +12,6 @@
 
 Ask about engineer tenure by team, not company-wide averages — a churning junior bench can hide behind a stable senior core. 🛡️
 
-👉 Read our full deep dive on offshore development partner vietnam good vs bad: [Link to article]
+👉 Read our full deep dive on offshore development partner vietnam good vs bad: https://www.manifera.com/blog/offshore-development-partner-vietnam-good-vs-bad
 
 #VietnamSoftwareDevelopment #VPEngineering #OffshoreDevelopmentPartner #Amsterdam #Manifera

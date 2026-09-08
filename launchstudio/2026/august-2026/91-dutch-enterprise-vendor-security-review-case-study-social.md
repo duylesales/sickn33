@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been closing exactly this gap for founders since 2014
 
 Sanne's product cleared the review with two days to spare and the deal moved straight into contract negotiation. (€2,600 (Launch & Grow Package) — 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/dutch-enterprise-vendor-security-review-case-study
 
 #LaunchStudio #Manifera #AISaaS #DutchTech #EnterpriseSales

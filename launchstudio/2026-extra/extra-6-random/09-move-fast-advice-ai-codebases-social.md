@@ -15,6 +15,6 @@ At **LaunchStudio**, we're backed by Manifera, an engineering group with 11+ yea
 
 His result: all three bugs resolved from their common root cause instead of three separate patches, and CodeVolg gained a five-minute pre-ship review habit. 🚀
 
-👉 Still shipping AI-generated code straight to production with no second set of eyes: [Link to article]
+👉 Still shipping AI-generated code straight to production with no second set of eyes: https://launchstudio.eu/en/blog/move-fast-advice-ai-codebases
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalDebt #ProductionReady

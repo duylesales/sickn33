@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in Europese 
 
 Zijn resultaat: de Franse lancering stond binnen 18 werkdagen live in plaats van drie maanden, waardoor het contract met de retailgroep ruim op tijd werd binnengehaald. 🚀
 
-👉 Plan een kort adviesgesprek over de architectuur voor uw internationale expansie: [Link naar artikel]
+👉 Plan een kort adviesgesprek over de architectuur voor uw internationale expansie: https://launchstudio.eu/nl/blog/going-multi-language-the-decision-point-for-eu-expansion
 
 #SaaS #Internationalisering #SoftwareArchitectuur #ScaleUp #LaunchStudio #Manifera

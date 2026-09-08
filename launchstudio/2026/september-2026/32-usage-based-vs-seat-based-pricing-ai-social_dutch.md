@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 metered billing architecturen via Mani
 
 LaunchStudio integreerde Stripe Metered Billing gekoppeld aan Victoria's ElevenLabs logs — facturatie werd volledig geautomatiseerd en factuurdisputen daalden naar nul. (€1.950 (Metered Billing Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe het hybride prijsmodel werkt: [Link naar artikel]
+👉 Ontdek hoe het hybride prijsmodel werkt: https://launchstudio.eu/nl/blog/usage-based-vs-seat-based-pricing-ai
 
 #AINativeFounder #LaunchStudio #Manifera #UsageBasedPricing #MeteredBilling #HybridPricing #SaaSMetrics #StripeBilling #AISaaS #StartupOpschalen

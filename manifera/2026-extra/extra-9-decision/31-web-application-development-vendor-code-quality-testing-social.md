@@ -12,6 +12,6 @@ What if the demo that impressed your leadership team was built by a completely d
 
 The vendors who welcome this scrutiny are the ones with nothing to hide. 🛡️
 
-👉 Read our full deep dive on testing vendor code quality before signing: [Link to article]
+👉 Read our full deep dive on testing vendor code quality before signing: https://www.manifera.com/blog/web-application-development-vendor-code-quality-testing
 
 #CTO #WebApplicationDevelopment #TechnicalDueDiligence #VendorSelection #SoftwareOutsourcing #Manifera

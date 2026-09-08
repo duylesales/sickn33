@@ -12,6 +12,6 @@ Your vendor relationship started as one fixed-bid project 18 months ago. Now the
 
 Neither model is universally right — but "renew as fixed bid" shouldn't be your default without asking the question. 📊
 
-👉 Read our full deep dive on fixed bid vs. retainer pricing for long-term vendor relationships: [Link to article]
+👉 Read our full deep dive on fixed bid vs. retainer pricing for long-term vendor relationships: https://www.manifera.com/blog/fixed-bid-vs-retainer-pricing-for-long-term-vendor-relationships
 
 #CFO #VendorPricing #SoftwareContracts #FinanceLeadership #TCOAnalysis #VendorManagement #Manifera

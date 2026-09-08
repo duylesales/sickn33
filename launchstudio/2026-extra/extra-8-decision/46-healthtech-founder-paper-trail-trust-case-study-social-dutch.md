@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Haar resultaat: gestagneerde deal vrijgegeven binnen een week na het overhandigen van het bestand. 🚀
 
-👉 Ontdek hoe het papieren spoor haar deal sloot: [Link naar artikel]
+👉 Ontdek hoe het papieren spoor haar deal sloot: https://launchstudio.eu/nl/blog/healthtech-founder-paper-trail-trust-case-study
 
 #HealthTech #SaaS #LaunchStudio #Manifera #ComplianceReady #StartupVertrouwen

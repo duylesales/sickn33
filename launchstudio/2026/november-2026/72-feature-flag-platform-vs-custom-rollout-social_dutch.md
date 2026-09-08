@@ -14,6 +14,6 @@ Bij LaunchStudio bouwen we rollout-systemen die exact aansluiten op uw fase, zon
 
 Priya rolde uit naar 5%, ving direct een valutafout op en zette de feature binnen 9 dagen live voor 100% van haar klanten zonder supporttickets. (€ 1.900 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
 
-👉 Bekijk onze aanpak: [Link naar artikel]
+👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/feature-flag-platform-vs-custom-rollout
 
 #LaunchStudio #Manifera #AISaaS #FeatureFlags #ProductEngineering

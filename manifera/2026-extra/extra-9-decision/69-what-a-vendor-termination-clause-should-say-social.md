@@ -12,6 +12,6 @@ Three months into a vendor relationship that isn't working, a founder opens the 
 
 The cheapest insurance in your contract is the clause you never intend to use. 🛡️
 
-👉 Read our full deep dive on what a vendor termination clause should actually say: [Link to article]
+👉 Read our full deep dive on what a vendor termination clause should actually say: https://www.manifera.com/blog/what-a-vendor-termination-clause-should-say
 
 #Founder #VendorContract #StartupLegal #ContractNegotiation #ExitClause #SoftwareVendor #Manifera

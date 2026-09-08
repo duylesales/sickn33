@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a video captioning: [Link to article]
+👉 Read the founder's guide to building a video captioning: https://www.manifera.com/blog/video-platform-captioning-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

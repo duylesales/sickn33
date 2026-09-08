@@ -15,6 +15,6 @@ At **LaunchStudio**, this is one of the most common security gaps we find in AI-
 
 Lieke's result: premium content can no longer be accessed via a shared or guessed URL — every request is now authorized server-side, independent of what the frontend displays. 🚀
 
-👉 Want a technical audit of your access-control logic before your next content drop? Reach out to LaunchStudio: [Link to article]
+👉 Want a technical audit of your access-control logic before your next content drop? Reach out to LaunchStudio: https://launchstudio.eu/en/blog/creator-membership-ai-platform-content-gating-bypass
 
 #AINativeFounder #LaunchStudio #Manifera #AppSec #IndieHacker

@@ -12,6 +12,6 @@ Every vendor portfolio page looks impressive by design. The skill isn't admiring
 
 Ask "what would you not put on your portfolio page, and why." The answer tells you more than the page itself. 🎯
 
-👉 Read our full deep dive on separating real work from marketing case studies: [Link to article]
+👉 Read our full deep dive on separating real work from marketing case studies: https://www.manifera.com/blog/portfolio-review-checklist-real-work-vs-marketing-case-studies
 
 #HeadOfProduct #VendorVetting #PortfolioReview #ProductLeadership #SoftwareVendorSelection #Manifera

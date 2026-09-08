@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on manufacturing predictive maintenance data: [Link to article]
+👉 Read our full architectural deep dive on manufacturing predictive maintenance data: https://www.manifera.com/blog/manufacturing-predictive-maintenance-data-architecture
 
 #IndustrialTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

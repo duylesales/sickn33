@@ -15,6 +15,6 @@ The fix — AI-aware CI/CD: ✅
 
 At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we build this pipeline in. His result: 2 regressions caught before they ever reached a customer. 🛡️🚀
 
-👉 Read what's different about deploying AI: [Link to article]
+👉 Read what's different about deploying AI: https://launchstudio.eu/en/blog/cicd-ai-applications-deploying-ml-models
 
 #CICD #LaunchStudio #Manifera #AINativeFounder #DevOps #SaaS

@@ -15,6 +15,6 @@ Bij **LaunchStudio** werken we stilletjes achter bureaus en freelancers als hun 
 
 Haar resultaat: een boekingsapp die degelijk live ging, met betalingen die correct werken, zelfs wanneer ze mislukken. 🚀
 
-👉 Bureau of freelancer met een door AI gebouwde app van een klant om te lanceren? Bekijk hoe de laatste mijl werkt: [Link naar artikel]
+👉 Bureau of freelancer met een door AI gebouwde app van een klant om te lanceren? Bekijk hoe de laatste mijl werkt: https://launchstudio.eu/nl/blog/launching-an-app-with-ai-the-last-mile
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AgencyPartner

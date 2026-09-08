@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: both workshops signed within five weeks at €480 a month each, invoiced quarterly, funding self-serve and Stripe eleven months later. 🚀
 
-👉 Price both paths in the calculator before you commit to either: [Link to article]
+👉 Price both paths in the calculator before you commit to either: https://launchstudio.eu/en/blog/first-paying-customer-or-first-100-users-build-budget
 
 #SaaS #StartupGrowth #LaunchStudio #Manifera #ProductionReady #AICoding

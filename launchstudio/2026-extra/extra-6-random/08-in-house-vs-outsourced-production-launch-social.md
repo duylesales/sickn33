@@ -15,6 +15,6 @@ At **LaunchStudio**, we're Manifera's team of 120+ engineers — the same group 
 
 Her result: LabRooster relaunched to its three pilot labs eight days later than planned, but with a documented, stable codebase and a paper trail her next contractor would never have to reconstruct from scratch. 🚀
 
-👉 Handed your codebase to a single freelancer with no backup plan? See what a structural handoff looks like instead: [Link to article]
+👉 Handed your codebase to a single freelancer with no backup plan? See what a structural handoff looks like instead: https://launchstudio.eu/en/blog/in-house-vs-outsourced-production-launch
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionLaunch #ProductionReady

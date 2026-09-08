@@ -15,6 +15,6 @@ At **LaunchStudio**, every engagement is scoped and quoted as an itemized breakd
 
 Her result: Femke picked the vendor whose itemization actually matched her scope, then used the breakdown to negotiate two unnecessary line items out of the final price. 🚀
 
-👉 Staring at three wildly different quotes for the same job? Here's how to actually compare them: [Link to article]
+👉 Staring at three wildly different quotes for the same job? Here's how to actually compare them: https://launchstudio.eu/en/blog/fixed-price-quote-actually-fair
 
 #AINativeFounder #LaunchStudio #Manifera #FixedPriceQuote #ProductionReady

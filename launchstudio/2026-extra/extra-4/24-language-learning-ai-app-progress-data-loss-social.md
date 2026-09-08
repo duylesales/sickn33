@@ -15,6 +15,6 @@ At **LaunchStudio**, our audits specifically probe data ownership and sync behav
 
 Fien's result: progress data now survives device switches, logouts, and reinstalls — and she's already re-onboarded two of the three subscribers who churned. 🚀
 
-👉 Worried your app has the same gap? Send us the link for a free look: [Link to article]
+👉 Worried your app has the same gap? Send us the link for a free look: https://launchstudio.eu/en/blog/language-learning-ai-app-progress-data-loss
 
 #AINativeFounder #LaunchStudio #Manifera #EdTech #AIApp

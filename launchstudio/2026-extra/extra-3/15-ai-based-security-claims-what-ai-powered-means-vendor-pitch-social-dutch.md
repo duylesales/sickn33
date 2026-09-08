@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichters marketingtaal van leveranciers te ver
 
 Het resultaat voor Job: hij liet de AI-premie links liggen en koos voor een transparantere leverancier tegen lagere kosten voor vergelijkbare bescherming. 🚀
 
-👉 Krijg hulp bij het evalueren van de AI-claims van een beveiligingsleverancier voordat u tekent: [Link naar artikel]
+👉 Krijg hulp bij het evalueren van de AI-claims van een beveiligingsleverancier voordat u tekent: https://launchstudio.eu/nl/blog/ai-based-security-claims-what-ai-powered-means-vendor-pitch
 
 #AINativeFounder #LaunchStudio #Manifera #VendorDueDiligence #SecurityTools

@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 enterprise data-isolatie via Manifera,
 
 LaunchStudio implementeerde metadata-filtering en invoervalidaties voor Zoey — prompt-injecties werden geneutraliseerd en document-isolatie is nu 100% gegarandeerd. (€1.950 (Vector Security Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw RAG-architectuur beveiligt: [Link naar artikel]
+👉 Ontdek hoe u uw RAG-architectuur beveiligt: https://launchstudio.eu/nl/blog/data-exfiltration-risks-rag-pipelines-ai
 
 #AINativeFounder #LaunchStudio #Manifera #RAGSecurity #DataExfiltration #VectorDatabase #PromptInjection #CyberSecurity #AISaaS #StartupOpschalen

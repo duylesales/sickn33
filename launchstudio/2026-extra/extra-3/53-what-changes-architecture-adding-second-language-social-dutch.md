@@ -15,6 +15,6 @@ Bij **LaunchStudio** ontwerpen wij echte meertalige ondersteuning op database- e
 
 Zijn resultaat: een volledige databasemigratie naar een juiste meertalige inhoudsstructuur, plus echte promptarchitectuur per taal, wat Wouters Engelse expansie mogelijk maakte — een project aanzienlijk groter dan de vroege beslissing ooit was geweest. 🚀
 
-👉 Van plan later een taal toe te voegen? Maak uw architectuur klaar voordat de inhoud zich rond slechts één taal ophoopt: [Link naar artikel]
+👉 Van plan later een taal toe te voegen? Maak uw architectuur klaar voordat de inhoud zich rond slechts één taal ophoopt: https://launchstudio.eu/nl/blog/what-changes-architecture-adding-second-language
 
 #AINativeFounder #LaunchStudio #Manifera #AIArchitecture #Internationalization

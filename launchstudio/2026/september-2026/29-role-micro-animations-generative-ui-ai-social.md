@@ -14,6 +14,6 @@ At **LaunchStudio**, we've delivered premium frontend work across 160+ projects 
 
 For David, user engagement improved, with users spending 25% more time in the app. 🚀
 
-👉 Check out how: [Link to article]
+👉 Check out how: https://launchstudio.eu/en/blog/role-micro-animations-generative-ui-ai
 
 #AINativeFounder #LaunchStudio #Manifera #MicroAnimations #FramerMotion

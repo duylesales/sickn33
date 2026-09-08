@@ -15,6 +15,6 @@ At **LaunchStudio**, backed by Manifera's team of 120+ engineers, we review this
 
 LaunchStudio confirmed the rebuilt version was functionally equivalent to what a scoped fix would have delivered in days, not six weeks. 🚀
 
-👉 Mid-argument with your technical co-founder right now? Get a scoped assessment before either side commits: [Link to article]
+👉 Mid-argument with your technical co-founder right now? Get a scoped assessment before either side commits: https://launchstudio.eu/en/blog/technical-cofounder-objection
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalCofounder #CodeReview

@@ -13,6 +13,6 @@ Experienced CISOs know the real evaluation starts after the clean checkbox quest
 
 A clean questionnaire is the start of due diligence, not the end. 🛡️
 
-👉 Read our full deep dive on what CISOs actually probe for in vendor security reviews: [Link to article]
+👉 Read our full deep dive on what CISOs actually probe for in vendor security reviews: https://www.manifera.com/blog/vendor-security-questionnaires-what-cisos-actually-ask
 
 #CISO #VendorRiskManagement #SecurityDueDiligence #CAIQ #SIG #Manifera

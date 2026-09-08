@@ -12,6 +12,6 @@
 
 Match the model to the problem — not to whichever a vendor defaults to pitching. 🛡️
 
-👉 Read our full deep dive on software development outsourcing models in house or offshore: [Link to article]
+👉 Read our full deep dive on software development outsourcing models in house or offshore: https://www.manifera.com/blog/software-development-outsourcing-models-in-house-or-offshore
 
 #OutsourcingModels #Amsterdam #Vietnam #CTO #EngineeringStrategy #Manifera

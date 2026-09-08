@@ -12,6 +12,6 @@
 
 Ask who owns the coordination burden. That answer tells you the real risk. 🛡️
 
-👉 Read our full deep dive on software development outsourcing models vietnam execution: [Link to article]
+👉 Read our full deep dive on software development outsourcing models vietnam execution: https://www.manifera.com/blog/software-development-outsourcing-models-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #OutsourcingModels #Amsterdam #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Het resultaat: na één weekend toegangsrechten auditeren loste Ilse een betalingsblokkade binnen twintig minuten zelf op tijdens een 9-daagse afwezigheid van haar partner. 🚀
 
-👉 Plan een gesprek van 15 minuten om een overdrachtsdocument voor uw stack te bespreken: [Link naar artikel]
+👉 Plan een gesprek van 15 minuten om een overdrachtsdocument voor uw stack te bespreken: https://launchstudio.eu/nl/blog/when-one-person-understands-your-whole-stack
 
 #SaaS #KeyPersonRisk #LaunchStudio #Manifera #StartupGrowth #FounderLife

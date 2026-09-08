@@ -15,6 +15,6 @@ At **LaunchStudio**, we review marketing claims against actual product capabilit
 
 Esmee's result: copy rewritten to accurately describe her well-tuned prompt template, with real adaptive learning scoped separately as a future build. 🚀
 
-👉 Get your AI claims checked against what your product actually does: [Link to article]
+👉 Get your AI claims checked against what your product actually does: https://launchstudio.eu/en/blog/actual-ai-vs-marketing-language-product-copy
 
 #AINativeFounder #LaunchStudio #Manifera #ProductCopy #TrustAndSafety

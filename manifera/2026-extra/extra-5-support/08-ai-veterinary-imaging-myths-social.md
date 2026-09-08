@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai veterinary imaging: [Link to article]
+👉 Retire all 3 biggest myths about ai veterinary imaging: https://www.manifera.com/blog/ai-veterinary-imaging-myths
 
 #VetTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

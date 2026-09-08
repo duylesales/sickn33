@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Elena verlaagde haar maandelijkse databasekosten van €4.000 naar €450 en sloot direct drie nieuwe advocatenkantoren aan. (€12.500 (Vectormigratie & pgvector) — binnen 25 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-vector-database-scale-up
 
 #LaunchStudio #Manifera #AISaaS #VectorDatabase #pgvector #RAGArchitecture #HNSW #PostgreSQL #LegalTech #TechFounders

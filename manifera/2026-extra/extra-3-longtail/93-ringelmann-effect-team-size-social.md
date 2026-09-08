@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on ringelmann effect team size: [Link to article]
+👉 Read our full guide on ringelmann effect team size: https://www.manifera.com/blog/ringelmann-effect-team-size
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

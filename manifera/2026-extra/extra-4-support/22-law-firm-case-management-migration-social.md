@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the law firm management case study: [Link to article]
+👉 See the law firm management case study: https://www.manifera.com/blog/law-firm-case-management-migration
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

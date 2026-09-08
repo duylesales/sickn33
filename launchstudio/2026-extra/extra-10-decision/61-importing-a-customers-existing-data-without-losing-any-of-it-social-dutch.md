@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo voorkwam Pieter Vandenberghe van Ledenlijst dat een sportclub na 11 mislukte pogingen en 3.000 dubbele records opzegde. Na onze herbouw verliep de import van 1.240 leden vlekkeloos in 2 minuten!
 
-👉 Kunt u een rommelig Excel-bestand van een klant vandaag importeren zonder bugs? [Link naar artikel]
+👉 Kunt u een rommelig Excel-bestand van een klant vandaag importeren zonder bugs? https://launchstudio.eu/nl/blog/importing-a-customers-existing-data-without-losing-any-of-it
 
 #CSVImport #SaaSOnboarding #DataEngineering #ProductDesign #LaunchStudio #Manifera

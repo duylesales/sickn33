@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen we door AI gegenereerde producten specifiek op echte
 
 Zijn resultaat: LaunchStudio stemde de onderliggende prompting-aanpak van RecensieHulp opnieuw af op echte Nederlandse horecarecensies, waardoor de kloof tussen de volledig gelokaliseerde interface en de eerder in het Engels geteste AI-logica werd gedicht. 🚀
 
-👉 Interface volledig vertaald, maar uw AI-prompts nooit getest in de doeltaal? Dit is de kloof die dan openblijft: [Link naar artikel]
+👉 Interface volledig vertaald, maar uw AI-prompts nooit getest in de doeltaal? Dit is de kloof die dan openblijft: https://launchstudio.eu/nl/blog/multi-language-ai-products-prompts-not-all-english
 
 #Localization #MultiLanguageAI #AINativeFounder #LaunchStudio #Manifera

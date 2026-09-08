@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building exactly this class of sovereign, VPC-is
 
 Rasmus's deal closed on the first review: the hospital network's security board approved the deployment on first review, and the multi-year contract closed without further technical objections. (€6,400 (Enterprise Hardening Package) — 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/self-hosted-llms-data-sovereignty-diy-vs-managed
 
 #LaunchStudio #Manifera #AISaaS #DataSovereignty #GDPR

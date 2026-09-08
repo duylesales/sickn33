@@ -15,6 +15,6 @@ At **LaunchStudio**, code ownership documentation is a standard item in our prod
 
 His result: LaunchStudio retrieved the archived terms and confirmed both tiers carried identical ownership language — resolving the acquirer's question in two days instead of stalling the deal for weeks. 🚀
 
-👉 Selling or raising soon? Get your code ownership documentation in order before someone asks: [Link to article]
+👉 Selling or raising soon? Get your code ownership documentation in order before someone asks: https://launchstudio.eu/en/blog/ai-terms-and-conditions-who-actually-owns-your-code
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #CodeOwnership

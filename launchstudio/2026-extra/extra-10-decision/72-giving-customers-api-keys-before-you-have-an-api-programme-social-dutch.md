@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we e
 
 💡 Zo ontdekte Daan Verhoeven van Voorraadsync dat een haperend script van één klant al drie weken lang 40.000 requests per uur afvuurde via een onbeperkte platte-tekst sleutel. Na onze Redis rate-limiting en token-hashing verdwenen de mysterieuze serververtragingen direct.
 
-👉 Hoe veilig zijn de API-sleutels die u aan klanten verstrekt? [Link naar artikel]
+👉 Hoe veilig zijn de API-sleutels die u aan klanten verstrekt? https://launchstudio.eu/nl/blog/giving-customers-api-keys-before-you-have-an-api-programme
 
 #APIDesign #CyberSecurity #SaaSArchitecture #NodeJS #LaunchStudio #Manifera

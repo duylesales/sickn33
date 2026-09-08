@@ -12,6 +12,6 @@ A city launched an online permit portal promising 70% faster processing. Six wee
 
 A G2C platform is only as good as the residents it was never built for can still use. ✅
 
-👉 Read our full deep dive on government-to-citizen digital services vendor selection: [Link to article]
+👉 Read our full deep dive on government-to-citizen digital services vendor selection: https://www.manifera.com/blog/choosing-a-vendor-for-government-to-citizen-digital-services
 
 #GovTech #PublicSector #DigitalGovernment #Accessibility #ProcurementLead #Manifera

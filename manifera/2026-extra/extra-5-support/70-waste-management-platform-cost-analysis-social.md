@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real waste management platform platform cost breakdown: [Link to article]
+👉 See the real waste management platform platform cost breakdown: https://www.manifera.com/blog/waste-management-platform-cost-analysis
 
 #Cleantech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

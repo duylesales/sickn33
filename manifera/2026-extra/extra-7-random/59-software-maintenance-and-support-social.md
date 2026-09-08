@@ -12,6 +12,6 @@
 
 We budgeted off a rule of thumb that had nothing to do with our actual system. Once we budgeted for what we actually had, the surprises stopped. 🛡️
 
-👉 Read our full deep dive on software maintenance and support: [Link to article]
+👉 Read our full deep dive on software maintenance and support: https://www.manifera.com/blog/software-maintenance-and-support
 
 #SoftwareMaintenance #CFO #ITBudgeting #Manifera

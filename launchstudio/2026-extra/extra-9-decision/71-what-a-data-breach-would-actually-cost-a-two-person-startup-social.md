@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a public bucket exposed nine days was caught, notified within 72 hours, closed with zero lost customers. 🚀
 
-👉 Describe your setup and we'll tell you what's exposed within one business day: [Link to article]
+👉 Describe your setup and we'll tell you what's exposed within one business day: https://launchstudio.eu/en/blog/what-a-data-breach-would-actually-cost-a-two-person-startup
 
 #SaaS #GDPR #LaunchStudio #Manifera #DataSecurity #StartupGrowth

@@ -12,6 +12,6 @@ Your engineering team gets a Figma link two weeks before the sprint starts — f
 
 A €15,000 discount on design that costs you three extra sprints of rework isn't a discount at all. 🎯
 
-👉 Read our full deep dive on design-development handoff questions that prevent rework: [Link to article]
+👉 Read our full deep dive on design-development handoff questions that prevent rework: https://www.manifera.com/blog/design-development-handoff-vendor-questions-that-prevent-rework
 
 #CTO #DesignHandoff #FigmaDevMode #DesignTokens #ProductEngineering #Manifera

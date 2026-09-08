@@ -15,6 +15,6 @@ Bij **LaunchStudio** beoordelen wij interne AI-tools met dezelfde onderliggende 
 
 Haar resultaat: juiste rolgerichte toegang beschermt nu het dashboard van BoekingsBoost, waarmee een authenticatiekloof werd gedicht die niemand bewust had geaccepteerd. 🚀
 
-👉 Heeft u een interne tool die stilletjes zijn oorspronkelijke reikwijdte is ontgroeid? Laten we het uitzoeken: [Link naar artikel]
+👉 Heeft u een interne tool die stilletjes zijn oorspronkelijke reikwijdte is ontgroeid? Laten we het uitzoeken: https://launchstudio.eu/nl/blog/internal-ai-tools-still-need-production-standards
 
 #AINativeFounder #LaunchStudio #Manifera #AccessControl #InternalTools

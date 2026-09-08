@@ -12,6 +12,6 @@ Most pipeline postmortems find the failure that caused the outage was never on a
 
 Design for the failure you haven't had yet — not just the one you already fixed. ⚙️
 
-👉 Read our full deep dive on data pipeline architecture: [Link to article]
+👉 Read our full deep dive on data pipeline architecture: https://www.manifera.com/blog/data-pipeline-architecture
 
 #DataPipeline #DataEngineering #Reliability #VPEngineering #Manifera

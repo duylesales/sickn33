@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies de categorie van gaten die Manifera's 120+ t
 
 Mikko's resultaat: invoervalidatie, afhandeling van randgevallen en duidelijke foutsignalering toegevoegd aan de routing-engine — voltooid in 9 werkdagen. 🚀
 
-👉 Vraagt u zich af waar AI in SaaS-producten ophoudt op zichzelf voldoende te zijn? Bekijk de voor-en-na: [Link naar artikel]
+👉 Vraagt u zich af waar AI in SaaS-producten ophoudt op zichzelf voldoende te zijn? Bekijk de voor-en-na: https://launchstudio.eu/nl/blog/where-ai-in-saas-products-still-needs-a
 
 #AINativeFounder #LaunchStudio #Manifera #AIinSaaS #EdgeCaseHandling

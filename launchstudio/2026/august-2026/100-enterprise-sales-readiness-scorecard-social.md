@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been closing exactly this class of enterprise-readine
 
 Jonas's score jumped from 23 to 84 out of 100, and his third pitch closed in under three weeks. (€5,400 (Enterprise Hardening Package) — 13 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/enterprise-sales-readiness-scorecard
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #SecurityReview

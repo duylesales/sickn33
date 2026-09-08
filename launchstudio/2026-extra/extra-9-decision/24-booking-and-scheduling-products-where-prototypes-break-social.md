@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: zero double bookings across four months, including two newsletter sends bigger than the one that caused the mess. 🚀
 
-👉 Book a 15-minute call to walk through your booking flow: [Link to article]
+👉 Book a 15-minute call to walk through your booking flow: https://launchstudio.eu/en/blog/booking-and-scheduling-products-where-prototypes-break
 
 #BookingApp #AIFounder #LaunchStudio #Manifera #ProductionReady #NoCode

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Bij één founder bleef een stille fallback-storing 11 dagen onopgemerkt — wij bouwden een geünificeerde router en het nieuwe kostendashboard bracht aan het licht dat 30% van de aanroepen een onnodig duur model raakte, wat de maandelijkse AI-uitgaven met 22% verlaagde. (€3.600, Launch & Grow Pakket — 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/llm-provider-consolidation-router-case-study
 
 #LaunchStudio #Manifera #AISaaS #LLMRouter #TechFounders

@@ -17,6 +17,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years adapting architecture to shi
 
 His result: shipped 2 months early, a fraction of the budgeted cost. 🚀
 
-👉 Read how to roadmap in a fast-moving landscape: [Link to article]
+👉 Read how to roadmap in a fast-moving landscape: https://launchstudio.eu/en/blog/product-roadmap-core-technology-changes-monthly
 
 #ProductRoadmap #LaunchStudio #Manifera #AINativeFounder #SaaS #TechStrategy

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: all timestamps converted to UTC with originating timezone retained, reporting fixed per account, and 14 months of entries corrected through a verified backfill. 🚀
 
-👉 Find out where your product's dates are quietly lying: [Link to article]
+👉 Find out where your product's dates are quietly lying: https://launchstudio.eu/en/blog/time-zones-and-dates-the-quiet-source-of-wrong-answers
 
 #SaaS #Engineering #IndieHacker #FounderLife #LaunchStudio #Manifera

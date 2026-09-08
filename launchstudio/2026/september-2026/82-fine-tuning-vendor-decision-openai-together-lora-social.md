@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Kwame's real problem was inconsistent training data, not missing knowledge: LaunchStudio standardized the labeling schema and re-trained on OpenAI. Classification accuracy rose from 71% to 94% (€1,900, Launch & Grow Package — 7 business days). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/fine-tuning-vendor-decision-openai-together-lora
 
 #LaunchStudio #Manifera #AISaaS #FineTuning #LLMOps

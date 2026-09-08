@@ -12,6 +12,6 @@
 
 Ask for the defect-escape rate directly. Don't assume it. 🛡️
 
-👉 Read our full deep dive on outsourcing software development vietnam execution: [Link to article]
+👉 Read our full deep dive on outsourcing software development vietnam execution: https://www.manifera.com/blog/outsourcing-software-development-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #SoftwareOutsourcing #DeliveryRisk #Manifera

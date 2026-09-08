@@ -12,6 +12,6 @@ Your full-stack app demo looked perfect. Then it met your on-premise ERP, and th
 
 Build the integration layer like it's the project — because it is. 🧭
 
-👉 Read our full deep dive on full-stack software development Rucphen: [Link to article]
+👉 Read our full deep dive on full-stack software development Rucphen: https://www.manifera.com/blog/full-stack-software-development-rucphen
 
 #Rucphen #WestBrabant #NoordBrabant #FullStackDevelopment #LegacyIntegration #Manifera

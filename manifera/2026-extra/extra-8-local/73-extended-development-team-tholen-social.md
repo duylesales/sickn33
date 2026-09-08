@@ -12,6 +12,6 @@ A harvest doesn't wait for a sprint planning meeting. Neither should your launch
 
 Avoiding one degraded launch week roughly covers the entire eight-week engagement.
 
-👉 Read our full deep dive on extended development team Tholen: [Link to article]
+👉 Read our full deep dive on extended development team Tholen: https://www.manifera.com/blog/extended-development-team-tholen
 
 #Tholen #Zeeland #CMO #Ecommerce #RetailTech #ExtendedTeam #OffshoreDevelopment #Manifera

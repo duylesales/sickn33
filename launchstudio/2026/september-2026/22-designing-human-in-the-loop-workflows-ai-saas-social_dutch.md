@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 dit soort goedkeurings- en audit-archi
 
 Voor Madison daalden foutieve terugbetalingen naar nul, terwijl 80% van de supportaanvragen nog steeds volautomatisch werd voorbereid. (€1.800 (Human-in-the-Loop Setup Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u Human-in-the-Loop workflows ontwerpt: [Link naar artikel]
+👉 Ontdek hoe u Human-in-the-Loop workflows ontwerpt: https://launchstudio.eu/nl/blog/designing-human-in-the-loop-workflows-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #HumanInTheLoop #AIGovernance #WorkflowDesign #BackendEngineering #AISaaS #StartupOpschalen

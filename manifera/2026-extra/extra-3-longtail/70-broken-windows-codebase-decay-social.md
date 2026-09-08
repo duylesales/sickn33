@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on broken windows codebase decay: [Link to article]
+👉 Read our full guide on broken windows codebase decay: https://www.manifera.com/blog/broken-windows-codebase-decay
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Renata's follow-up call included a live audit log demo instead of a defensive explanation, and the client advanced to contract review the same week. (€3,400 (Relaunch & Scale Package) — production-ready and deployed in 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/governance-framework-internal-policy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #AIGovernance #DataCompliance

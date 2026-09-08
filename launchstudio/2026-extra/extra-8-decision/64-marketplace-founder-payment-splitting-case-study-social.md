@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's experience with enterprise multi-party
 
 His result: €23,400 processed, €2,808 in platform fees, three refunds handled automatically — in the first two months. 🚀
 
-👉 Describe your marketplace and how money should flow: [Link to article]
+👉 Describe your marketplace and how money should flow: https://launchstudio.eu/en/blog/marketplace-founder-payment-splitting-case-study
 
 #LaunchStudio #Manifera #StripeConnect #MarketplacePayments #VibeCoding #SaaSFounders #FixedPrice

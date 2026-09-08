@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Saskia's resultaat: PrepDeck live voor €1.550 in 9 werkdagen, twee webhook- en dataproblemen gedicht ruim vóór haar vakbeurs. 🚀
 
-👉 Ontdek wat je écht moet voorbereiden vóór je eerste gesprek: [Link naar artikel]
+👉 Ontdek wat je écht moet voorbereiden vóór je eerste gesprek: https://launchstudio.eu/nl/blog/what-founder-should-prepare-before-first-call
 
 #LaunchStudio #ScopingCall #VibeCoding #Manifera #SaaS #Oprichters #ProductionReady

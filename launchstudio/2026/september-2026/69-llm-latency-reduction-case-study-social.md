@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Wouter's latency dropped 65%: average generation time went from 11 seconds to 3.9 seconds, and time-to-first-token dropped from 11 seconds to under 900 milliseconds — without touching his Cursor-built frontend or CRM integration. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/llm-latency-reduction-case-study
 
 #LaunchStudio #Manifera #AISaaS #LLMLatency #B2BSaaS

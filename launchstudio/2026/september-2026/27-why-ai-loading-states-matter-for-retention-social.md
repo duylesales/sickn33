@@ -14,6 +14,6 @@ At **LaunchStudio**, we've spent over a decade building latency-sensitive, produ
 
 For Samuel, page abandonment dropped by 75% because users could finally see the app was working. 🚀
 
-👉 Read the case study: [Link to article]
+👉 Read the case study: https://launchstudio.eu/en/blog/why-ai-loading-states-matter-for-retention
 
 #AINativeFounder #LaunchStudio #Manifera #LoadingStates #AIUX

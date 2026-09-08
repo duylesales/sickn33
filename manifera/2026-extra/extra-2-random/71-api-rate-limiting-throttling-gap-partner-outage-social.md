@@ -12,6 +12,6 @@
 
 One partner's bad day shouldn't be every customer's outage. 🛡️
 
-👉 Read our full deep dive on api rate limiting throttling gap partner outage: [Link to article]
+👉 Read our full deep dive on api rate limiting throttling gap partner outage: https://www.manifera.com/blog/api-rate-limiting-throttling-gap-partner-outage
 
 #APIGovernance #SoftwareArchitecture #CTO #Reliability #OffshoreDevelopment #Manifera

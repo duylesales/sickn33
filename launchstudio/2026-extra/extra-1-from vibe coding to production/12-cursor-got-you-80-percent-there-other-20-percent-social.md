@@ -15,6 +15,6 @@ At **LaunchStudio**, we review Cursor-built codebases specifically for the adver
 
 His result: an unmaintained PDF-parsing dependency with a real vulnerability replaced before launch — his own careful review had no reason to catch it. 🚀
 
-👉 Find your specific remaining 20%: [Link to article]
+👉 Find your specific remaining 20%: https://launchstudio.eu/en/blog/cursor-got-you-80-percent-there-other-20-percent
 
 #CursorAI #IndieHacker #LaunchStudio #Manifera #CodeReview

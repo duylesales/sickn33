@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar software development),
 
 💡 Zo hielp Yara Bosman van Verzeker.io haar commerciële beloften te beschermen zónder de database-architectuur in gevaar te brengen.
 
-👉 Ontdek het besliskader voor meningsverschillen met developers: [Link naar artikel]
+👉 Ontdek het besliskader voor meningsverschillen met developers: https://launchstudio.eu/nl/blog/when-to-trust-the-engineer-over-your-own-instinct
 
 #StartupFounders #TechLeadership #SoftwareEngineering #ProductStrategy #LaunchStudio #Manifera

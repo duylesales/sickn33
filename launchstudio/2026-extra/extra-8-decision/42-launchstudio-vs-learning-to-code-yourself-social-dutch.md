@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Haar resultaat: webhookverificatie gesloten binnen 4 werkdagen, wervingsronde ononderbroken. 🚀
 
-👉 Maak uw eigen eerlijke tijdskostenberekening: [Link naar artikel]
+👉 Maak uw eigen eerlijke tijdskostenberekening: https://launchstudio.eu/nl/blog/launchstudio-vs-learning-to-code-yourself
 
 #IndieHacker #TechnischeOprichter #LaunchStudio #Manifera #Opportuniteitskosten #StartupTijd

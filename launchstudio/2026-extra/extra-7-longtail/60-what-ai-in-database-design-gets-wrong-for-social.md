@@ -15,6 +15,6 @@ At **LaunchStudio**, database-layer tenant isolation is one of the most common f
 
 Sofie's result: tenant ID enforcement and row-level security implemented across every table — completed in 9 business days. 🚀
 
-👉 Multi-tenant app running fine so far? Run the one-table test before your next feature ships: [Link to article]
+👉 Multi-tenant app running fine so far? Run the one-table test before your next feature ships: https://launchstudio.eu/en/blog/what-ai-in-database-design-gets-wrong-for
 
 #AINativeFounder #LaunchStudio #Manifera #AIinDatabase #MultiTenant

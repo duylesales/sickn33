@@ -14,6 +14,6 @@ At **LaunchStudio**, we've built this kind of component architecture across 160+
 
 For Grace, app interaction rates rose 150%, and conversions to affiliate booking links jumped 40%. 🚀
 
-👉 Check out the breakdown: [Link to article]
+👉 Check out the breakdown: https://launchstudio.eu/en/blog/generative-ui-streaming-react-components-llm
 
 #AINativeFounder #LaunchStudio #Manifera #GenerativeUI #VercelAISDK

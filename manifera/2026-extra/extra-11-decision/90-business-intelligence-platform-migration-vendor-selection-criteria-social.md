@@ -12,6 +12,6 @@
 
 A migrated dashboard that looks right and calculates wrong is the most expensive kind of "done." ⚠️
 
-👉 Read our full deep dive on BI platform migration vendor selection: [Link to article]
+👉 Read our full deep dive on BI platform migration vendor selection: https://www.manifera.com/blog/business-intelligence-platform-migration-vendor-selection-criteria
 
 #BusinessIntelligence #DataMigration #PowerBI #ITManager #DataGovernance #Manifera

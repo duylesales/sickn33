@@ -14,6 +14,6 @@ At **LaunchStudio**, we've delivered this kind of complex orchestration work sin
 
 Benjamin's loop errors dropped to zero, protecting his API budget during complex multi-step planning tasks. 🚀
 
-👉 See the fix in detail: [Link to article]
+👉 See the fix in detail: https://launchstudio.eu/en/blog/building-multi-agent-architecture-enterprise
 
 #AINativeFounder #LaunchStudio #Manifera #MultiAgent #AIOrchestration

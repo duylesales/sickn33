@@ -12,6 +12,6 @@
 
 We paid bespoke price for a template with our logo on it. The second time, we knew to actually ask what "bespoke" meant. 🛡️
 
-👉 Read our full deep dive on bespoke software development services: [Link to article]
+👉 Read our full deep dive on bespoke software development services: https://www.manifera.com/blog/bespoke-software-development-services
 
 #BespokeSoftware #CEO #CustomDevelopment #Manifera

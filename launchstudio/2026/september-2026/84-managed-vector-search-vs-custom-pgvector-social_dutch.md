@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Het resultaat van Elif: de maandelijkse vector search-kosten daalden van €340 naar effectief nul, met de kandidatenpool van elk bureau nu cryptografisch geïsoleerd op databaseniveau (€2.300, Launch & Grow Pakket — 8 werkdagen). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/managed-vector-search-vs-custom-pgvector
 
 #LaunchStudio #Manifera #AISaaS #VectorSearch #RAGArchitecture

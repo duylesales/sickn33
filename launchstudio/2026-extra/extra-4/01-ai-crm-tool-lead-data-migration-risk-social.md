@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat this as a checklist item on every AI-built CRM or 
 
 His result: Daan re-ran the full 3,000-record migration two days later with zero silent merges, and the client demo went ahead with accurate pipeline numbers. 🚀
 
-👉 Migrating real data into an AI-built CRM soon? Get a fixed-scope check first: [Link to article]
+👉 Migrating real data into an AI-built CRM soon? Get a fixed-scope check first: https://launchstudio.eu/en/blog/ai-crm-tool-lead-data-migration-risk
 
 #AINativeFounder #LaunchStudio #Manifera #AICRM #DataMigration

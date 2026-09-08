@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full fintech custom software compliance cost breakdown: [Link to article]
+👉 Read the full fintech custom software compliance cost breakdown: https://www.manifera.com/blog/fintech-custom-software-compliance-cost
 
 #Fintech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

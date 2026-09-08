@@ -12,6 +12,6 @@
 
 Match the sourcing model to the actual problem — not to a single company-wide policy. 🛡️
 
-👉 Read our full deep dive on software outsourcing in house or offshore: [Link to article]
+👉 Read our full deep dive on software outsourcing in house or offshore: https://www.manifera.com/blog/software-outsourcing-in-house-or-offshore
 
 #SoftwareOutsourcing #Amsterdam #Vietnam #CTO #StartupEngineering #Manifera

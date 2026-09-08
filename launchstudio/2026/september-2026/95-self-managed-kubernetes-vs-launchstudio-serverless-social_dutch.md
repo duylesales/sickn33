@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Marco's team liet de contractant volledig los: infrastructuuruitgaven daalden met ongeveer 40%, en onvoorspelbare taakfouten verdwenen voorgoed. (€3.600 (Relaunch & Scale Pakket) — 12 werkdagen, voor een vergelijkbaar traject.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/self-managed-kubernetes-vs-launchstudio-serverless
 
 #LaunchStudio #Manifera #AISaaS #Kubernetes #Serverless

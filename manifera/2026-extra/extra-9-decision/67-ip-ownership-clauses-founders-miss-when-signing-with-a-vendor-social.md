@@ -12,6 +12,6 @@ Your term sheet is signed. Then the investor's lawyer asks for "evidence of clea
 
 Clean IP isn't a negotiation you want to have during a term sheet deadline. 🔍
 
-👉 Read our full deep dive on the IP clauses founders miss before signing: [Link to article]
+👉 Read our full deep dive on the IP clauses founders miss before signing: https://www.manifera.com/blog/ip-ownership-clauses-founders-miss-when-signing-with-a-vendor
 
 #Founder #StartupIP #IntellectualProperty #VendorContract #StartupLegal #DueDiligence #Manifera

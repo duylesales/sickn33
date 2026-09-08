@@ -14,6 +14,6 @@ Bij LaunchStudio bouwen we geautomatiseerde testsuites direct op uw Lovable-, Bo
 
 Dennis bracht zijn testtijd terug van een halve dag naar <10 minuten per release, met 0 regressie-incidenten. (€ 2.600 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
 
-👉 Ontdek hoe wij dit aanpakken: [Link naar artikel]
+👉 Ontdek hoe wij dit aanpakken: https://launchstudio.eu/nl/blog/launchstudio-vs-qa-automation-engineer
 
 #LaunchStudio #Manifera #AISaaS #QAAutomation #Regressietesten

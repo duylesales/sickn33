@@ -17,6 +17,6 @@ At **LaunchStudio**, we're the engineering partner every non-technical CTO needs
 
 You don't need to become a developer. You need the right team behind you. 🛡️🚀
 
-👉 Read the 5 competencies every non-technical CTO needs: [Link to article]
+👉 Read the 5 competencies every non-technical CTO needs: https://launchstudio.eu/en/blog/rise-of-non-technical-cto
 
 #NonTechnicalCTO #LaunchStudio #AINativeFounder #StartupLeadership #Manifera #SaaS

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's CI/CD-expertise over 160+ prod
 
 Stijns resultaat: 16 functie-updates in 3 maanden en 40% meer wekelijks actieve gebruikers bij VrachtSlim. 📊
 
-👉 Ontdek wat wekelijks lanceren van uw infrastructuur vraagt: [Link naar artikel]
+👉 Ontdek wat wekelijks lanceren van uw infrastructuur vraagt: https://launchstudio.eu/nl/blog/founders-ship-weekly-outperform-plan-monthly
 
 #LaunchStudio #CICD #SaaS #StartupNL #ProductOntwikkeling #Manifera

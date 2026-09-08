@@ -17,6 +17,6 @@ At **LaunchStudio**, every launch includes what you actually need for the first 
 
 Launch day is exciting. Day 15 is when you find out if you're ready. 🚀
 
-👉 Read the full 90-day survival guide: [Link to article]
+👉 Read the full 90-day survival guide: https://launchstudio.eu/en/blog/first-90-days-saas-launch
 
 #SaaSLaunch #LaunchStudio #Manifera #AINativeFounder #StartupJourney #ProductLaunch

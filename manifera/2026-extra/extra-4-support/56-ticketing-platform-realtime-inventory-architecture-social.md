@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on ticketing realtime inventory: [Link to article]
+👉 Read our full architectural deep dive on ticketing realtime inventory: https://www.manifera.com/blog/ticketing-platform-realtime-inventory-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

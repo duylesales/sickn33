@@ -15,6 +15,6 @@ Bij **LaunchStudio** doorlopen we precies deze zespuntenchecklist bij elke AI-ge
 
 Vluchtplan lanceerde zijn pilot met beide logistieke bedrijven die in de eerste week echte vrachtboekingen verwerkten, zonder incidenten van gegevensblootstelling of dubbele boekingen. 🚀
 
-👉 Lanceert u een logistieke tool nabij Lelystad Airport? Doorloop eerst deze checklist: [Link naar artikel]
+👉 Lanceert u een logistieke tool nabij Lelystad Airport? Doorloop eerst deze checklist: https://launchstudio.eu/nl/blog/ai-generated-application-lelystad
 
 #AINativeFounder #LaunchStudio #Manifera #Lelystad #LaunchReady

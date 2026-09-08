@@ -15,6 +15,6 @@ At **LaunchStudio**, we architect genuine multi-language support at the database
 
 His result: a full database migration to proper multi-language content structure, plus real per-language prompt architecture, enabling Wouter's English expansion — a project meaningfully bigger than the early decision would ever have been. 🚀
 
-👉 Planning to add a language later? Get your architecture ready before content piles up around just one: [Link to article]
+👉 Planning to add a language later? Get your architecture ready before content piles up around just one: https://launchstudio.eu/en/blog/what-changes-architecture-adding-second-language
 
 #AINativeFounder #LaunchStudio #Manifera #AIArchitecture #Internationalization

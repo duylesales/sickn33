@@ -15,6 +15,6 @@ At **LaunchStudio**, we're backed by Manifera's 11+ years building production sy
 
 Ledgerly relaunched with proper data isolation nine days later and passed a follow-up penetration check with no critical findings. 🚀
 
-👉 Building on AI in Amsterdam right now? Get a free security check before launch: [Link to article]
+👉 Building on AI in Amsterdam right now? Get a free security check before launch: https://launchstudio.eu/en/blog/ai-coding-amsterdam
 
 #AINativeFounder #LaunchStudio #Manifera #AICoding #Amsterdam

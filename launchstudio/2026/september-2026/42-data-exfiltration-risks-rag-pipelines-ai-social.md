@@ -14,6 +14,6 @@ At **LaunchStudio**, we've architected this exact tenant-isolated infrastructure
 
 Zoey's prompt injection attempts were blocked, and her users' document isolation is now fully secured. 🚀
 
-👉 Run the numbers on your RAG security: [Link to article]
+👉 Run the numbers on your RAG security: https://launchstudio.eu/en/blog/data-exfiltration-risks-rag-pipelines-ai
 
 #AINativeFounder #LaunchStudio #Manifera #RAGSecurity #DataExfiltration

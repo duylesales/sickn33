@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building metered billing infrastructure since 20
 
 LaunchStudio integrated Stripe Metered Billing linked to Victoria's ElevenLabs API logs — invoicing became fully automated, and client disputes over bill accuracy dropped to zero. 🚀
 
-👉 See how the hybrid model works: [Link to article]
+👉 See how the hybrid model works: https://launchstudio.eu/en/blog/usage-based-vs-seat-based-pricing-ai
 
 #AINativeFounder #LaunchStudio #Manifera #UsageBasedPricing #MeteredBilling

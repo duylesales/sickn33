@@ -15,6 +15,6 @@ At **LaunchStudio**, we build exactly this kind of consent and audit logging as 
 
 His result: an append-only audit log capturing every grant, change, and revocation going forward — closing the compliance gap without touching how the feature worked. 🚀
 
-👉 Schedule a free 15-minute introduction call: [Link to article]
+👉 Schedule a free 15-minute introduction call: https://launchstudio.eu/en/blog/security-and-ai-why-the-second-word-needs-the-first-ones-help
 
 #IndieHacker #LaunchStudio #Manifera #GDPR #AIPrivacy

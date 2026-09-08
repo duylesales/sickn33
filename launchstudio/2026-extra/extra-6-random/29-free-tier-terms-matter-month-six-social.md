@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers draw on Manifera's main engineering center in
 
 Her result: PlanStroom's outages stopped within hours of the migration, and the app handled its second launch push the following month without any rate-limit incidents. 🚀
 
-👉 Still running your app's core feature on a free-tier AI model with real customers on the way: [Link to article]
+👉 Still running your app's core feature on a free-tier AI model with real customers on the way: https://launchstudio.eu/en/blog/free-tier-terms-matter-month-six
 
 #AINativeFounder #LaunchStudio #Manifera #FreeTierRisk #ProductionReady

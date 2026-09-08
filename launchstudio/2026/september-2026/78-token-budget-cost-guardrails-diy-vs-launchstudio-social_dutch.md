@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 Abonnementslimieten worden nu strikt gehandhaafd met nul overschrijding, ongeacht het aantal geopende tabbladen (€2.000 (Launch & Grow Pakket) — afgerond in 6 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/token-budget-cost-guardrails-diy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #TokenBudget #LLMCostControl

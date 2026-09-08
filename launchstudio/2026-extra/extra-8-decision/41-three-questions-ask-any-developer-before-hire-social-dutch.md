@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Zijn resultaat: twee echte gaten gesloten in 8 dagen, tegen een fractie van de herbouwofferte die hij bijna accepteerde. 🚀
 
-👉 Ontvang de vragen die daadwerkelijk een veilige inhuur voorspellen: [Link naar artikel]
+👉 Ontvang de vragen die daadwerkelijk een veilige inhuur voorspellen: https://launchstudio.eu/nl/blog/three-questions-ask-any-developer-before-hire
 
 #TechnischeDueDiligence #IndieHacker #LaunchStudio #Manifera #OntwikkelaarsInhuren #ProductieKlaar

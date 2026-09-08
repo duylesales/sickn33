@@ -12,6 +12,6 @@ A VC-backed founder spends someone else's money against a runway clock. A bootst
 
 Cash-flow-safe doesn't mean cheap — it means payment timing that matches how your business actually makes money. 📊
 
-👉 Read our full deep dive on bootstrapped vendor contracts: [Link to article]
+👉 Read our full deep dive on bootstrapped vendor contracts: https://www.manifera.com/blog/bootstrapped-startup-vendor-decisions-cash-flow-safe-contract-structures
 
 #Bootstrapped #StartupFounders #CashFlow #IndieHackers #RevenueFunded #Manifera

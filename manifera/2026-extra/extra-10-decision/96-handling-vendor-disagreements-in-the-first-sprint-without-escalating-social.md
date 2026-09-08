@@ -12,6 +12,6 @@ The vendor's technical lead pushes back on your data-layer approach in sprint on
 
 Disagreement in week one isn't the red flag — an engagement with zero early friction usually is. 🎯
 
-👉 Read our full guide to resolving first-sprint vendor disagreements without escalating: [Link to article]
+👉 Read our full guide to resolving first-sprint vendor disagreements without escalating: https://www.manifera.com/blog/handling-vendor-disagreements-in-the-first-sprint-without-escalating
 
 #VPEngineering #ConflictResolution #TeamManagement #OffshoreDevelopment #SoftwareDelivery #Manifera

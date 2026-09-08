@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 11+ years of production engineering experience m
 
 Mattias's result: his database now runs on production-grade infrastructure with connection pooling, ready for the next traffic spike instead of broken by it. 🚀
 
-👉 Still running your AI app on free-tier infrastructure?: [Link to article]
+👉 Still running your AI app on free-tier infrastructure?: https://launchstudio.eu/en/blog/why-free-ai-software-gets-expensive-the-moment
 
 #AINativeFounder #LaunchStudio #Manifera #FreeTierFail #SaaSInfrastructure

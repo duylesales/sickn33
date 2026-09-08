@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Anders hief de risicomarkering op vóór de verlengde deadline, en de ronde sloot negen dagen later tegen de oorspronkelijke waardering. (€1.600 (Launch & Grow Pakket) — productieklaar en uitgerold in 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/real-cost-skipping-cicd-series-a
 
 #LaunchStudio #Manifera #AISaaS #CICD #SeriesA

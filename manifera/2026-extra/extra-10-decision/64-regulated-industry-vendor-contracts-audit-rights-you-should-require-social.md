@@ -12,6 +12,6 @@ If your regulator asked to see your software vendor's audit clause tomorrow, wou
 
 A weak audit clause isn't a legal formality gap — it's a finding waiting to happen. 🎯
 
-👉 Read our full deep dive on the audit rights regulated industry vendor contracts require: [Link to article]
+👉 Read our full deep dive on the audit rights regulated industry vendor contracts require: https://www.manifera.com/blog/regulated-industry-vendor-contracts-audit-rights-you-should-require
 
 #ComplianceOfficer #DORA #VendorRiskManagement #ThirdPartyRisk #RegTech #GDPR #Manifera

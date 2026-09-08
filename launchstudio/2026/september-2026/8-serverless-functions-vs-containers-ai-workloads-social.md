@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been migrating brittle serverless stacks to productio
 
 Isabella's cold start delays were eliminated entirely, delivering a silky smooth 0.5s response time for all users. 🚀
 
-👉 Escape the timeout trap: [Link to article]
+👉 Escape the timeout trap: https://launchstudio.eu/en/blog/serverless-functions-vs-containers-ai-workloads
 
 #AINativeFounder #LaunchStudio #Manifera #DockerContainers #ServerlessAI

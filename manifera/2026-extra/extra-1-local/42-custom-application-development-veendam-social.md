@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on custom application development veendam: [Link to article]
+👉 Read our full deep dive on custom application development veendam: https://www.manifera.com/blog/custom-application-development-veendam
 
 #Veendam #Groningen #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

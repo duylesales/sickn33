@@ -17,6 +17,6 @@ Bij **LaunchStudio** produceert elke audit standaard precies deze vijf artefacte
 
 Haar resultaat: twee echte gaten gevonden en gedicht waar een eerdere "review" nooit daadwerkelijk voor testte. 🚀
 
-👉 Krijg een audit die je echt bewijs geeft, geen geruststelling: [Link naar artikel]
+👉 Krijg een audit die je echt bewijs geeft, geen geruststelling: https://launchstudio.eu/nl/blog/non-technical-founders-guide-auditing-ai-code-security
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

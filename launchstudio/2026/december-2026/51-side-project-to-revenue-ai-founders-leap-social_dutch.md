@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring, voeren we e
 
 Zijn resultaat: 11 van zijn ~40 actieve gebruikers betaalden binnen 2 weken. Zijn eerste omzet ooit na 2 jaar gratis hobby! 🚀
 
-👉 Lees hoe u de sprong maakt van nevenproject naar omzet: [Link naar artikel]
+👉 Lees hoe u de sprong maakt van nevenproject naar omzet: https://launchstudio.eu/nl/blog/side-project-to-revenue-ai-founders-leap
 
 #SideProject #LaunchStudio #Manifera #AINativeFounder #SaaS #IndieHacker #Bolt #Mollie #TechFounders #StartupOpschalen

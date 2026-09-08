@@ -15,6 +15,6 @@ At **LaunchStudio** voeren we doelbewust verkeerd gevormde, grens- en lokaal-gev
 
 Haar resultaat: expliciete validatie wijst niet-numerieke velden nu af met een duidelijke foutmelding — een gerichte oplossing, zonder enige wijziging aan de interface of kernberekening van FactuurTel. 🚀
 
-👉 Laat uw app testen aan de hand van de input die uw eigen tests nooit bevatten: [Link naar artikel]
+👉 Laat uw app testen aan de hand van de input die uw eigen tests nooit bevatten: https://launchstudio.eu/nl/blog/ai-bugs-that-dont-show-up-until-someone-else-uses-app
 
 #AINativeFounder #LaunchStudio #Manifera #InputValidation #AIBugs

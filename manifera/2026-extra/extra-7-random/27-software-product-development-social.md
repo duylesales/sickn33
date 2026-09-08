@@ -12,6 +12,6 @@
 
 We shipped it, called it done, and moved the team on. A year later it barely reflected the market anymore. 🛡️
 
-👉 Read our full deep dive on software product development: [Link to article]
+👉 Read our full deep dive on software product development: https://www.manifera.com/blog/software-product-development
 
 #SoftwareProduct #CEO #ProductDevelopment #Manifera

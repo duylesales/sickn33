@@ -15,6 +15,6 @@ At **LaunchStudio**, we work quietly behind agencies and freelancers as their pr
 
 Her result: a booking app that went live properly, with payments that work correctly even when they fail. 🚀
 
-👉 Agency or freelancer with a client's AI-built app to launch? See how the last mile works: [Link to article]
+👉 Agency or freelancer with a client's AI-built app to launch? See how the last mile works: https://launchstudio.eu/en/blog/launching-an-app-with-ai-the-last-mile
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AgencyPartner

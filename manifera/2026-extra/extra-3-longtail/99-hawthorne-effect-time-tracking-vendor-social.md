@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on hawthorne effect time tracking vendor: [Link to article]
+👉 Read our full guide on hawthorne effect time tracking vendor: https://www.manifera.com/blog/hawthorne-effect-time-tracking-vendor
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

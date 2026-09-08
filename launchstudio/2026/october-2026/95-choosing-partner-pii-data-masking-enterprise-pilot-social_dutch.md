@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen wij PII-masking-pijplijnen voor enterprise-pilots al
 
 Fatima's pilot verliep volgens de oorspronkelijke planning, met haar dashboard-uitgavenpatroonanalyse die identiek functioneerde op gemaskeerde data, en de methodologie wordt nu hergebruikt voor elk volgend enterprise-prospect. (€ 4.200, Enterprise Hardening Pakket — masking-pijplijn gebouwd en gedocumenteerd in 6 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-partner-pii-data-masking-enterprise-pilot
 
 #LaunchStudio #Manifera #AISaaS #DataPrivacy #EnterpriseSales

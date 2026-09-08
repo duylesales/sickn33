@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Haar resultaat: gedupliceerde queries samengevoegd in één accessor binnen zes werkdagen, waarna Nadia een grote enterprise-klant wist binnen te halen. 🚀
 
-👉 Vertel ons wat u heeft gebouwd — ontvang nog deze week een helder voorstel en tijdlijn: [Link naar artikel]
+👉 Vertel ons wat u heeft gebouwd — ontvang nog deze week een helder voorstel en tijdlijn: https://launchstudio.eu/nl/blog/een-met-windsurf-gebouwd-project-opleveren-waar-de-gaten-zich-schuilhouden
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #SaaS

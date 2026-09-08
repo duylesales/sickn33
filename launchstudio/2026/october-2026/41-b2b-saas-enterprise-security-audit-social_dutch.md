@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 De CISO van de bank keurde de documentatie binnen 48 uur goed en het bureau sloot het contract van €120.000 af. (€8.000 (Enterprise Backend & IT Audit) — binnen 15 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/b2b-saas-enterprise-security-audit
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSecurityAudit #VSAQ #CISO #WhiteLabel #DigitalAgencies #CyberSecurity #Fintech

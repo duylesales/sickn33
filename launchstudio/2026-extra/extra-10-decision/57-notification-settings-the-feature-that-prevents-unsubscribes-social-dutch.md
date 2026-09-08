@@ -23,6 +23,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we p
 
 💡 Zo voorkwam Marloes Hendriks van Projectlijn dat 5 architecten buitengesloten raakten na 19 e-mails op 1 middag. Volume daalde met 80%!
 
-👉 Hoeveel onnodige mails stuurt uw software vandaag? [Link naar artikel]
+👉 Hoeveel onnodige mails stuurt uw software vandaag? https://launchstudio.eu/nl/blog/notification-settings-the-feature-that-prevents-unsubscribes
 
 #SaaSNotifications #EmailEngineering #ProductDesign #CustomerExperience #LaunchStudio #Manifera

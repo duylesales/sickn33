@@ -15,6 +15,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years closing exactly this categor
 
 Her result: CSRF tokens added to every state-changing form — same design, same workflow, exposure closed. 🚀
 
-👉 Get a cost estimate with our pricing calculator: [Link to article]
+👉 Get a cost estimate with our pricing calculator: https://launchstudio.eu/en/blog/building-an-ai-saas-product-part-lovable-doesnt-finish
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #SaaS

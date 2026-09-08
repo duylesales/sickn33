@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of infrastructure prob
 
 Felix cut his effective inference cost by roughly 60% versus his original API bill — with zero unplanned downtime. (€3,400 (Relaunch & Scale Package) — 11 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/self-hosting-open-source-models-diy-vs-managed
 
 #LaunchStudio #Manifera #AISaaS #OpenSourceAI #MLOps

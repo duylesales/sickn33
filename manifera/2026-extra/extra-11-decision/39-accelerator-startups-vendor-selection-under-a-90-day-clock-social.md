@@ -12,6 +12,6 @@
 
 A 90-day clock should compress your process, never your diligence. ✅
 
-👉 Read our full deep dive on accelerator startup vendor selection: [Link to article]
+👉 Read our full deep dive on accelerator startup vendor selection: https://www.manifera.com/blog/accelerator-startups-vendor-selection-under-a-90-day-clock
 
 #AcceleratorLife #StartupFounders #DemoDay #MVPDevelopment #YCombinator #Manifera

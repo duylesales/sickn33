@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 His result: the real gap closed in 14 business days, he passed his customer's technical review on schedule, and resumed his co-founder search stress-free afterward. 🚀
 
-👉 Figure out which category your gap actually is: [Link to article]
+👉 Figure out which category your gap actually is: https://launchstudio.eu/en/blog/solo-founder-or-team-engineering-help
 
 #SoloFounder #TechnicalCofounder #AINativeFounder #LaunchStudio #Manifera #StartupEngineering

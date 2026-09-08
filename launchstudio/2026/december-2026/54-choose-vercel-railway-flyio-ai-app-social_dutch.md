@@ -18,6 +18,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, stemmen we het
 
 Haar oplossing: de frontend bleef lekker op Vercel, alleen de zware nachtelijke batch-job ging naar Railway. Nul verstoring, probleem definitief opgelost! 🚀
 
-👉 Lees het complete hosting-besliskader: [Link naar artikel]
+👉 Lees het complete hosting-besliskader: https://launchstudio.eu/nl/blog/choose-vercel-railway-flyio-ai-app
 
 #Vercel #Railway #Flyio #LaunchStudio #Manifera #AINativeFounder #DevOps #SaaS #NextJS #Supabase

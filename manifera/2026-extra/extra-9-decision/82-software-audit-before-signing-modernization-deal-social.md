@@ -12,6 +12,6 @@ A signed letter of intent, six figures, ready for signature — based on a two-h
 
 A two- to four-week audit is cheap insurance against a 40% scope surprise. 💡
 
-👉 Read our full deep dive on commissioning a software audit before signing: [Link to article]
+👉 Read our full deep dive on commissioning a software audit before signing: https://www.manifera.com/blog/software-audit-before-signing-modernization-deal
 
 #COO #SoftwareAudit #TechDueDiligence #SoftwareModernization #VendorSelection #Manifera

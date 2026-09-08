@@ -17,6 +17,6 @@ At **LaunchStudio**, we answer these 5 questions concretely — not with reassur
 
 Her result: one freelancer gave vague reassurance again, the other admitted he'd need to research it. She got specific answers from us instead. 🚀
 
-👉 Ask us these 5 questions about your prototype: [Link to article]
+👉 Ask us these 5 questions about your prototype: https://launchstudio.eu/en/blog/non-technical-founders-field-guide-vibe-coding-to-production
 
 #AINativeFounder #LaunchStudio #Manifera #NonTechnicalFounder #VibeCoding

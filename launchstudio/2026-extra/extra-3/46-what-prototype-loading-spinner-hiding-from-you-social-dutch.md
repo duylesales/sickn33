@@ -15,6 +15,6 @@ Bij **LaunchStudio** implementeren wij monitoring van de responstijdverdeling en
 
 Zijn resultaat: een laadstatus die daadwerkelijk de verwachte wachttijd communiceert, plus een echte time-out voor uitschieters — waardoor een kloof werd gedicht die ongeveer één op de twintig echte gebruikers onzichtbaar frustreerde. 🚀
 
-👉 Ontdek hoe uw werkelijke responstijdverdeling eruitziet: [Link naar artikel]
+👉 Ontdek hoe uw werkelijke responstijdverdeling eruitziet: https://launchstudio.eu/nl/blog/what-prototype-loading-spinner-hiding-from-you
 
 #AINativeFounder #LaunchStudio #Manifera #Observability #ProductPerformance

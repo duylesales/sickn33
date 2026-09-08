@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been executing exactly this kind of zero-downtime mig
 
 Ines's migration completed with zero login failures, zero missed webhooks, and no customer-visible downtime. (€1,400 — Launch Ready Package, migrated and verified in 5 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/bolt-prototype-custom-domain-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #ZeroDowntime #Bolt

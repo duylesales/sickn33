@@ -14,6 +14,6 @@ At LaunchStudio, we've hardened AI agent authorization layers for teams heading 
 
 Farid's freight broker account moved from stalled security review to signed contract in 3 weeks. (€4,200 (Enterprise Hardening Package) — 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-agent-tool-calling-permissions-case-study
 
 #LaunchStudio #Manifera #AISaaS #AIAgents #EnterpriseSecurity

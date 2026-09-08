@@ -14,6 +14,6 @@ At **LaunchStudio**, we've made exactly this kind of RAG-versus-fine-tuning call
 
 Harper's diagnostic suggestion accuracy rose from 68% to 94%, matching senior specialist evaluation standards. 🚀
 
-👉 Read the full architecture breakdown: [Link to article]
+👉 Read the full architecture breakdown: https://launchstudio.eu/en/blog/fine-tuning-vs-rag-which-one-do-you-need
 
 #AINativeFounder #LaunchStudio #Manifera #RAG #FineTuning

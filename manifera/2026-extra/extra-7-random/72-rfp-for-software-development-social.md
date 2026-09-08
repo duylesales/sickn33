@@ -12,6 +12,6 @@
 
 Comparable bids don't happen by accident — they happen by RFP design. 🎯
 
-👉 Read our full deep dive on RFPs for software development: [Link to article]
+👉 Read our full deep dive on RFPs for software development: https://www.manifera.com/blog/rfp-for-software-development
 
 #RFP #SoftwareDevelopment #VendorManagement #CFO #Manifera

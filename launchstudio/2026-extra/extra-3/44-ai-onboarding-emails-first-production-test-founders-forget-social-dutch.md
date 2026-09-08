@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen wij onboarding-e-mailreeksen tegen echte, onvolmaakt
 
 Haar resultaat: correcte statuscontrole vóór elke herinnering, plus tests voor randgevallen zoals snelle voltooiing en annulering — waardoor een kloof werd gedicht die stilletjes eerste indrukken had beschadigd. 🚀
 
-👉 Laat uw onboarding-reeks stresstesten voordat echte klanten de gaten ontdekken: [Link naar artikel]
+👉 Laat uw onboarding-reeks stresstesten voordat echte klanten de gaten ontdekken: https://launchstudio.eu/nl/blog/ai-onboarding-emails-first-production-test-founders-forget
 
 #AINativeFounder #LaunchStudio #Manifera #CustomerOnboarding #SaaSFounder

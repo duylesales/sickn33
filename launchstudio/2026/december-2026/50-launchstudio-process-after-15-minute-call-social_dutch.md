@@ -16,6 +16,6 @@ Wat er NOOIT gebeurt: ongevraagde redesigns, uurtje-factuurtje verrassingen of o
 
 Haar resultaat: 3 dagen vóór haar deadline live, exact conform afspraak — nul verrassingen! 🚀
 
-👉 Bekijk het complete, transparante LaunchStudio proces: [Link naar artikel]
+👉 Bekijk het complete, transparante LaunchStudio proces: https://launchstudio.eu/nl/blog/launchstudio-process-after-15-minute-call
 
 #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductLaunch #Transparency #v0 #NextJS #TechFounders #StartupOpschalen

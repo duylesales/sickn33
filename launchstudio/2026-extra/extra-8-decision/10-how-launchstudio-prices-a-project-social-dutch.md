@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Anouks resultaat: €3.600 voor Relaunch & Scale, zes multi-tenant datalekken gedicht in 13 werkdagen — een gevaar waarvan ze voor de call niet eens wist dat het bestond. 🚀
 
-👉 Ontdek de echte wiskunde achter uw eigen offerte: [Link naar artikel]
+👉 Ontdek de echte wiskunde achter uw eigen offerte: https://launchstudio.eu/nl/blog/how-launchstudio-prices-a-project
 
 #LaunchStudio #Manifera #SaaSPricing #VibeCoding #VastePrijs #MVPSecurity

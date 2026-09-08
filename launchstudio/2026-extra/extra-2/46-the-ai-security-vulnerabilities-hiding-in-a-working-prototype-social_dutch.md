@@ -15,6 +15,6 @@ Bij **LaunchStudio** controleren we op precies dit patroon over bestandsafhandel
 
 Zijn resultaat: strikte padvalidatie geïmplementeerd, elk verzoek beperkt tot de bedoelde map — legitieme uploads en downloads ongewijzigd. 🚀
 
-👉 Stuur ons jouw prototypelink voor een gratis beoordeling: [Link naar artikel]
+👉 Stuur ons jouw prototypelink voor een gratis beoordeling: https://launchstudio.eu/nl/blog/the-ai-security-vulnerabilities-hiding-in-a-working-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #WebSecurity

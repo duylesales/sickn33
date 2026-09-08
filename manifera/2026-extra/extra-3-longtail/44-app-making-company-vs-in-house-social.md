@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See our complete breakdown on app making company house: [Link to article]
+👉 See our complete breakdown on app making company house: https://www.manifera.com/blog/app-making-company-vs-in-house
 
 #DedicatedTeam #OffshoreDevelopment #TechLeadership #SoftwareEngineering #CTO #Manifera

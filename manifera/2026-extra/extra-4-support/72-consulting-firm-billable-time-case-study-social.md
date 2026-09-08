@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the consulting firm billable time case study: [Link to article]
+👉 See the consulting firm billable time case study: https://www.manifera.com/blog/consulting-firm-billable-time-case-study
 
 #ConsultingTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

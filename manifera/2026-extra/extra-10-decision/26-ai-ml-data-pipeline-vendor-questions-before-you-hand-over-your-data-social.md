@@ -12,6 +12,6 @@ Your AI vendor's sales deck says "enterprise-grade security." Their sub-processo
 
 Certifications tell you the vendor passed someone else's bar — your own questions tell you if it's high enough for your data. 🎯
 
-👉 Read our full deep dive on vetting AI/ML data pipeline vendors: [Link to article]
+👉 Read our full deep dive on vetting AI/ML data pipeline vendors: https://www.manifera.com/blog/ai-ml-data-pipeline-vendor-questions-before-you-hand-over-your-data
 
 #DataSecurity #GDPR #AIVendorVetting #DataGovernance #MLOps #CISO #Manifera

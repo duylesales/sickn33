@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Ingrids platform behaalde productie-gereedheid: haar sourcingworkers draaiden 96 uur aan één stuk onder volledige gesimuleerde belasting met vlak geheugengebruik en nul herstarts, en ze presenteerde de oplossing als afgehandeld agendapunt tijdens haar bestuursvergadering. (€ 2.600 (Launch & Grow Pakket) — memory leak gediagnosticeerd en opgelost in 8 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vertical-ai-agent-memory-leak-case-study
 
 #LaunchStudio #Manifera #AISaaS #NodeJS #ProductionReliability

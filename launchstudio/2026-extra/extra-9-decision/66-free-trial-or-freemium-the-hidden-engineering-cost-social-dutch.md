@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: het daadwerkelijk afdwingen van de limiet halveerde SketchSyncs AI-kosten voor gratis accounts in één maand, zonder voorwaarden aan te passen. 🚀
 
-👉 Plan een gesprek van 15 minuten om het model te vinden dat bij uw kostenstructuur past: [Link naar artikel]
+👉 Plan een gesprek van 15 minuten om het model te vinden dat bij uw kostenstructuur past: https://launchstudio.eu/nl/blog/free-trial-or-freemium-the-hidden-engineering-cost
 
 #SaaS #Freemium #SoftwareOntwikkeling #StartupGroei #LaunchStudio #Manifera

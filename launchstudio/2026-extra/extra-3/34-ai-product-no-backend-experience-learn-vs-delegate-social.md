@@ -15,6 +15,6 @@ At **LaunchStudio**, we translate findings and decisions to whatever level of te
 
 Her result: Renske delegated the actual hardening to LaunchStudio while staying genuinely, informedly involved in every decision — real engagement, without the unrealistic time investment full technical competency would have required. 🚀
 
-👉 Not sure whether to learn backend basics or delegate entirely? Figure out the right mix for you: [Link to article]
+👉 Not sure whether to learn backend basics or delegate entirely? Figure out the right mix for you: https://launchstudio.eu/en/blog/ai-product-no-backend-experience-learn-vs-delegate
 
 #NonTechnicalFounder #LearnVsDelegate #AINativeFounder #LaunchStudio #Manifera

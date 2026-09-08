@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full construction management cost breakdown: [Link to article]
+👉 Read the full construction management cost breakdown: https://www.manifera.com/blog/construction-management-platform-cost-analysis
 
 #ConTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

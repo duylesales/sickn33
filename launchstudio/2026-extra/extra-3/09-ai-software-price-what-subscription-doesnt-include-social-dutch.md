@@ -15,6 +15,6 @@ At **LaunchStudio** nemen we oprichters tijdens het eerste verkennende gesprek m
 
 Zijn resultaat: Ruben paste zijn startbaanplan vooraf aan met het echte getal in de hand, en stelde de lancering ongeveer zes weken uit om financiering veilig te stellen die specifiek bestemd was voor de werkelijke totale kosten. 🚀
 
-👉 Krijg een compleet beeld van de kosten voordat u een lanceringstijdlijn vastlegt: [Link naar artikel]
+👉 Krijg een compleet beeld van de kosten voordat u een lanceringstijdlijn vastlegt: https://launchstudio.eu/nl/blog/ai-software-price-what-subscription-doesnt-include
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSPricing #StartupBudgeting

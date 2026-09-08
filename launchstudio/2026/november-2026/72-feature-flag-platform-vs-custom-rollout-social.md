@@ -14,6 +14,6 @@ At LaunchStudio, we've been building rollout systems sized to where founders act
 
 Priya rolled out to 5% first, caught a multi-currency edge case before it spread, then hit 100% of customers in 9 days with zero support tickets. (€1,900 (Launch & Grow Package) — 7 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/feature-flag-platform-vs-custom-rollout
 
 #LaunchStudio #Manifera #AISaaS #FeatureFlags #ProductEngineering

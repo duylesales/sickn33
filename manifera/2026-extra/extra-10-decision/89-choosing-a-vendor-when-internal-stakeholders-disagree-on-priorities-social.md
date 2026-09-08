@@ -12,6 +12,6 @@ Engineering wants deep Kubernetes expertise. Finance wants the lowest rate. Prod
 
 The best vendor decision isn't the one the loudest stakeholder wanted — it's the one the weighting process actually earned. 🎯
 
-👉 Read our full framework for resolving stakeholder disagreement in vendor selection: [Link to article]
+👉 Read our full framework for resolving stakeholder disagreement in vendor selection: https://www.manifera.com/blog/choosing-a-vendor-when-internal-stakeholders-disagree-on-priorities
 
 #COO #VendorSelection #StakeholderManagement #ProcurementStrategy #DecisionMaking #Manifera

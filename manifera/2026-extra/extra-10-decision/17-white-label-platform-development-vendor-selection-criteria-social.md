@@ -12,6 +12,6 @@ A reseller partner wants their own branded domain, logo, and completely isolated
 
 White-label and themeable are not the same platform — the difference shows up exactly when a reseller partner tests the isolation. 🎯
 
-👉 Read our full deep dive on white-label platform vendor selection criteria: [Link to article]
+👉 Read our full deep dive on white-label platform vendor selection criteria: https://www.manifera.com/blog/white-label-platform-development-vendor-selection-criteria
 
 #WhiteLabel #COO #MultiTenantSaaS #ResellerPlatform #SaaSArchitecture #Manifera

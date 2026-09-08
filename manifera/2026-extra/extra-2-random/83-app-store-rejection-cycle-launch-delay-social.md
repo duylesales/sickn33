@@ -12,6 +12,6 @@
 
 Stop letting App Store review be a coin flip on your launch date. 🛡️
 
-👉 Read our full deep dive on app store rejection cycle launch delay: [Link to article]
+👉 Read our full deep dive on app store rejection cycle launch delay: https://www.manifera.com/blog/app-store-rejection-cycle-launch-delay
 
 #MobileAppDevelopment #CMO #AppStoreReview #LaunchPlanning #Manifera

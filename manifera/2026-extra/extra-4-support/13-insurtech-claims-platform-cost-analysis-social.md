@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full insurtech claims cost breakdown: [Link to article]
+👉 Read the full insurtech claims cost breakdown: https://www.manifera.com/blog/insurtech-claims-platform-cost-analysis
 
 #InsurTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

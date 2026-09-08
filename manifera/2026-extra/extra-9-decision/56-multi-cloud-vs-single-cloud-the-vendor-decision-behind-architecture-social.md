@@ -12,6 +12,6 @@ Two DevOps vendors, two proposals. One pushed multi-cloud "for resilience." Only
 
 Sophisticated-sounding isn't the same as right-sized. 🎯
 
-👉 Read our full deep dive on multi-cloud vs. single-cloud vendor decisions: [Link to article]
+👉 Read our full deep dive on multi-cloud vs. single-cloud vendor decisions: https://www.manifera.com/blog/multi-cloud-vs-single-cloud-the-vendor-decision-behind-architecture
 
 #CTO #CloudArchitecture #MultiCloud #DevOps #CloudStrategy #InfrastructureDecisions #Manifera

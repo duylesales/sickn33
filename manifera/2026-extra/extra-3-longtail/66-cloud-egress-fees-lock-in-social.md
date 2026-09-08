@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on cloud egress fees lock: [Link to article]
+👉 Read our deep dive on cloud egress fees lock: https://www.manifera.com/blog/cloud-egress-fees-lock-in
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

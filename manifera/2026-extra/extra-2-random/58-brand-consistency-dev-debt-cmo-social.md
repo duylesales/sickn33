@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on brand consistency dev debt cmo: [Link to article]
+👉 Read our full deep dive on brand consistency dev debt cmo: https://www.manifera.com/blog/brand-consistency-dev-debt-cmo
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

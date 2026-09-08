@@ -15,6 +15,6 @@ At **LaunchStudio**, we review AI features added to already-live products with t
 
 Her result: the broader permission scope was caught before general release, tightened to match BoekhoudGemak's existing data access rules — closing a gap that would have sat against several hundred live customers' financial data. 🚀
 
-👉 Get your new AI feature reviewed before it touches customers you already have: [Link to article]
+👉 Get your new AI feature reviewed before it touches customers you already have: https://launchstudio.eu/en/blog/ai-in-app-bolt-on-feature-vs-ai-native-product
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #AIFeatures

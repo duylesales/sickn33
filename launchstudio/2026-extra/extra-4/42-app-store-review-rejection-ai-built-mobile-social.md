@@ -14,6 +14,6 @@ At **LaunchStudio**, our pre-submission compliance pass checks for exactly this 
 
 Her result: HuisdierZorg passed App Store review on resubmission with no further compliance flags. 🚀
 
-👉 About to submit your AI-built app? Get a pre-submission compliance check first: [Link to article]
+👉 About to submit your AI-built app? Get a pre-submission compliance check first: https://launchstudio.eu/en/blog/app-store-review-rejection-ai-built-mobile
 
 #AINativeFounder #LaunchStudio #Manifera #AppStoreReady #MobileApp

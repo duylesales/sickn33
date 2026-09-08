@@ -12,6 +12,6 @@
 
 The cheapest quote became the most expensive project once every excluded item came back as a separate bill. 🛡️
 
-👉 Read our full deep dive on mobile app development company: [Link to article]
+👉 Read our full deep dive on mobile app development company: https://www.manifera.com/blog/mobile-app-development-company-guide
 
 #MobileAppDevelopment #CFO #VendorComparison #Manifera

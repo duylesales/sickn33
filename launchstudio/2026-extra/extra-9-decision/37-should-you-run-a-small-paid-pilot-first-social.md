@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the €650 audits resized a €9,000 project to €11,200, and the winning partner ran the seven-week engagement under her own branding. 🚀
 
-👉 Bring one real client project as a paid pilot: [Link to article]
+👉 Bring one real client project as a paid pilot: https://launchstudio.eu/en/blog/should-you-run-a-small-paid-pilot-first
 
 #AgencyLife #WhiteLabel #LaunchStudio #Manifera #ProductionReady #AICoding

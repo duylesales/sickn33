@@ -12,6 +12,6 @@
 
 The story wasn't true. It was 90 minutes of flaky tests and 11 manual steps nobody went back to fix. 🛡️
 
-👉 Read our full deep dive on release cadence velocity decay shipping slowdown: [Link to article]
+👉 Read our full deep dive on release cadence velocity decay shipping slowdown: https://www.manifera.com/blog/release-cadence-velocity-decay-shipping-slowdown
 
 #VPEngineering #DevOps #ReleaseVelocity #EngineeringExcellence #Manifera

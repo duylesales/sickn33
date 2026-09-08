@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real str management platform platform cost breakdown: [Link to article]
+👉 See the real str management platform platform cost breakdown: https://www.manifera.com/blog/str-management-platform-cost-analysis
 
 #PropTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

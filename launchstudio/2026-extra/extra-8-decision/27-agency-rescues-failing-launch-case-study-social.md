@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: cause identified in 40 minutes, ticket sale completed same-day — client retained for three more annual events. 🚀
 
-👉 Set up your emergency escalation path before you need it: [Link to article]
+👉 Set up your emergency escalation path before you need it: https://launchstudio.eu/en/blog/agency-rescues-failing-launch-case-study
 
 #AgencyLife #LaunchDay #LaunchStudio #Manifera #WhiteLabel #SaaS

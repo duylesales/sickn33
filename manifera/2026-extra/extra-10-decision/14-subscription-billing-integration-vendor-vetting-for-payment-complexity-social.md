@@ -12,6 +12,6 @@ Your finance team closes the books on the 5th — except the month a dunning cas
 
 The billing platform is the easy part — the integration work is where revenue accuracy actually gets decided. 🎯
 
-👉 Read our full deep dive on vetting subscription billing vendors for payment complexity: [Link to article]
+👉 Read our full deep dive on vetting subscription billing vendors for payment complexity: https://www.manifera.com/blog/subscription-billing-integration-vendor-vetting-for-payment-complexity
 
 #CFO #SubscriptionBilling #RevenueOperations #PCIDSS #EUVAT #SaaSFinance #Manifera

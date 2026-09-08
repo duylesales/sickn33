@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on legaltech ediscovery data edrm: [Link to article]
+👉 Read our full architectural deep dive on legaltech ediscovery data edrm: https://www.manifera.com/blog/legaltech-ediscovery-data-architecture-edrm
 
 #LegalTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

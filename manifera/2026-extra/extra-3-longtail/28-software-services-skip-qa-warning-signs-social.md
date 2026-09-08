@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on software services skip qa warning signs: [Link to article]
+👉 Read our deep dive on software services skip qa warning signs: https://www.manifera.com/blog/software-services-skip-qa-warning-signs
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

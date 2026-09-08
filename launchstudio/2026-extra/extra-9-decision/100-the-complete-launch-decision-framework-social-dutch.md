@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering 
 
 Zijn resultaat: Daan bracht zijn kaders en boekingsconcurrency vooraf scherp in kaart — Ritmo lanceerde in twaalf dagen met veilige Mollie-betalingen en sluitende AVG-compliance. 🚀
 
-👉 Start bij Fase 1 — plan een introductiegesprek van 15 minuten: [Link naar artikel]
+👉 Start bij Fase 1 — plan een introductiegesprek van 15 minuten: https://launchstudio.eu/nl/blog/het-complete-launch-besliskader
 
 #StartupFramework #AINativeFounder #SaaS #ProductieKlaar #LaunchStudio #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** voeren we sinds 2014 unit-economics audits uit via Manifera
 
 LaunchStudio bouwde voor Sofia NestJS middleware die tokenkosten realtime vastlegt — waardoor marges direct inzichtelijk werden en zij haar abonnementen kon optimaliseren met feitelijke data. (€1.600 (NestJS Middleware Setup Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Reken uw eigen marges en unit economics door: [Link naar artikel]
+👉 Reken uw eigen marges en unit economics door: https://launchstudio.eu/nl/blog/mathematics-openai-profit-margins-saas
 
 #AINativeFounder #LaunchStudio #Manifera #UnitEconomics #ProfitMargins #CostPerQuery #NestJS #SaaSMetrics #AISaaS #StartupOpschalen

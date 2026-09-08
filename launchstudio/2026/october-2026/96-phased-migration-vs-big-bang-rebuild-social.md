@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been planning migrations around real usage risk, not 
 
 Nadia's migration completed with zero subscriber-facing downtime and zero data loss, catching two data inconsistencies during validation that would have broken recommendations under a big-bang cutover. (€3,900, Relaunch & Scale Package — phased migration completed across 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/phased-migration-vs-big-bang-rebuild
 
 #LaunchStudio #Manifera #AISaaS #DatabaseMigration #TechFounders

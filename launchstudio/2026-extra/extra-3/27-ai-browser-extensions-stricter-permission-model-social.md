@@ -15,6 +15,6 @@ At **LaunchStudio**, we review AI browser extensions specifically for permission
 
 His result: PaginaSamenvatter passed store review on resubmission, with a permission model that's clearer for privacy-conscious users too. 🚀
 
-👉 About to submit your extension? Let's scope its permissions before a store review flags them: [Link to article]
+👉 About to submit your extension? Let's scope its permissions before a store review flags them: https://launchstudio.eu/en/blog/ai-browser-extensions-stricter-permission-model
 
 #AINativeFounder #LaunchStudio #Manifera #BrowserExtensions #PrivacyByDesign

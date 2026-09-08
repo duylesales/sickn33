@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders sequence their testing data strategy — s
 
 Her result: the underlying display bug fixed, and real, anonymized usage patterns built directly into DierenAfspraak's ongoing test suite going forward. 🚀
 
-👉 Curious what pattern your synthetic test data is quietly missing? Get your testing strategy reviewed: [Link to article]
+👉 Curious what pattern your synthetic test data is quietly missing? Get your testing strategy reviewed: https://launchstudio.eu/en/blog/ai-generated-test-data-not-substitute-real-data-patterns
 
 #AINativeFounder #LaunchStudio #Manifera #QAtesting #DataStrategy

@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam team, backed by Manifera's 120+ engineers, re
 
 Her result: TicketVolg's routing logic now behaves predictably and is documented clearly enough that any future developer can be tested against it the same way Fien tested her new hire. 🚀
 
-👉 Ever asked your developer a simple question and gotten a vague answer? Here's what that might mean: [Link to article]
+👉 Ever asked your developer a simple question and gotten a vague answer? Here's what that might mean: https://launchstudio.eu/en/blog/developer-understood-code-they-maintain
 
 #AINativeFounder #LaunchStudio #Manifera #CodeComprehension #ProductionReady

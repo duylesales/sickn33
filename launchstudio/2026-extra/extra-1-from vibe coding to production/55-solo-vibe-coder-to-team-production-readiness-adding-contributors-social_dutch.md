@@ -16,6 +16,6 @@ Bij **LaunchStudio** helpen we oprichtende teams precies deze teamschaal-praktij
 
 Zijn resultaat: het herintroduceerde gat gevangen vóór productie, en geformaliseerde praktijken vastgesteld om herhaling te voorkomen. 🚀
 
-👉 Laat jouw teamschaal-productiepraktijken formaliseren voordat jouw volgende medewerker aansluit: [Link naar artikel]
+👉 Laat jouw teamschaal-productiepraktijken formaliseren voordat jouw volgende medewerker aansluit: https://launchstudio.eu/nl/blog/solo-vibe-coder-to-team-production-readiness-adding-contributors
 
 #SaaSFounder #LaunchStudio #Manifera #VibeCoding #ProductionReady

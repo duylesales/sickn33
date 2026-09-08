@@ -12,6 +12,6 @@
 
 Some roles are worth the local premium. Most aren't. Know which is which. 🛡️
 
-👉 Read our full deep dive on outsourcing software development netherlands vs vietnam: [Link to article]
+👉 Read our full deep dive on outsourcing software development netherlands vs vietnam: https://www.manifera.com/blog/outsourcing-software-development-netherlands-vs-vietnam
 
 #Netherlands #Vietnam #CTO #SoftwareOutsourcing #TeamStructure #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we close exactly this gap — Manifera's 11+ years of produ
 
 Her result: StudyLoop now runs securely for 200+ active student users across three Utrecht study programs, with no unauthorized data access since the fix. 🚀
 
-👉 Downloaded your AI prototype and wondering what's still missing? Get the full breakdown: [Link to article]
+👉 Downloaded your AI prototype and wondering what's still missing? Get the full breakdown: https://launchstudio.eu/en/blog/ai-download-utrecht
 
 #AINativeFounder #LaunchStudio #Manifera #AIDownload #Utrecht

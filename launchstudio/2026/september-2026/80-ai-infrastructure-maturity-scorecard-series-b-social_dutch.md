@@ -14,6 +14,6 @@ Bij **LaunchStudio** dichten we exact dit type productie- en infrastructuurklove
 
 Caspers due diligence sloot af met nul materiële bevindingen op alle aangepakte onderdelen (€5.900 (Enterprise Hardening Pakket) — voltooid in 15 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/ai-infrastructure-maturity-scorecard-series-b
 
 #LaunchStudio #Manifera #AISaaS #SeriesB #TechnicalDueDiligence

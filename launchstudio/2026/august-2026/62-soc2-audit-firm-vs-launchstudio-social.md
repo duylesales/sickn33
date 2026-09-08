@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Tomas brought LaunchStudio in instead: all 23 findings resolved, and he passed his SOC 2 Type I audit on the next attempt, closing the enterprise deal that had been waiting on it. (€6,200 (Enterprise Hardening Package) — 15 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/soc2-audit-firm-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #SOC2 #Compliance

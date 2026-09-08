@@ -12,6 +12,6 @@
 
 We were paying for a dedicated team and running it like a task queue. Once we brought them into planning, we finally got what we were paying for. 🛡️
 
-👉 Read our full deep dive on dedicated development team: [Link to article]
+👉 Read our full deep dive on dedicated development team: https://www.manifera.com/blog/dedicated-development-team
 
 #DedicatedTeam #CTO #Outsourcing #Manifera

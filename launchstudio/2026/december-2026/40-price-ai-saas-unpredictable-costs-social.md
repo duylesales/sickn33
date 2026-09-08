@@ -19,6 +19,6 @@ At **LaunchStudio**, backed by Manifera's engineering experience, we build the u
 
 His result: 6 of 8 heavy users upgraded happily. +18% revenue, zero new customers. 🚀
 
-👉 Read how to price under cost uncertainty: [Link to article]
+👉 Read how to price under cost uncertainty: https://launchstudio.eu/en/blog/price-ai-saas-unpredictable-costs
 
 #SaaSPricing #LaunchStudio #Manifera #AINativeFounder #SaaS #UnitEconomics

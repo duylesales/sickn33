@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on queueing theory backlog never shrinks: [Link to article]
+👉 Read our full guide on queueing theory backlog never shrinks: https://www.manifera.com/blog/queueing-theory-backlog-never-shrinks
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

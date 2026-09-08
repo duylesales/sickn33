@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers de
 
 💡 Zo voorkwam kamerverhuurplatform Kamerbasis escalerende huurgeschillen door haar waarborgsomadministratie tijdig te isoleren.
 
-👉 Lees hoe u uw proptech-platform veilig en huurrecht-proof lanceert: [Link naar artikel]
+👉 Lees hoe u uw proptech-platform veilig en huurrecht-proof lanceert: https://launchstudio.eu/nl/blog/proptech-prototypes-tenant-data-deposits-and-what-must-be-right
 
 #PropTech #Vastgoed #Waarborgsom #AVG #LaunchStudio #Manifera

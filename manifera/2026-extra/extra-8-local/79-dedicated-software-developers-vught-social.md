@@ -12,6 +12,6 @@ What if the reason your last dedicated-developer engagement underperformed had n
 
 A German maritime software firm nearly ruled out the model after one bad engagement. The rebuilt one reached independent module ownership by week five — and expanded to two more developers the next quarter. ⚓
 
-👉 Read our full deep dive on dedicated software developers serving Vught: [Link to article]
+👉 Read our full deep dive on dedicated software developers serving Vught: https://www.manifera.com/blog/dedicated-software-developers-vught
 
 #Vught #NoordBrabant #DedicatedDevelopers #CTO #EngineeringTeams #OffshoreDevelopment #Manifera

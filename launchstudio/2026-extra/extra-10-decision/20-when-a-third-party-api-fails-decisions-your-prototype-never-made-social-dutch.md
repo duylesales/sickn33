@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineer
 
 💡 Zo voorkwam boekhandels-SaaS Shelfmark dat een storing in een externe AI-aanbevelingswidget het gehele voorraaddashboard platlegde.
 
-👉 Lees hoe u uw SaaS beschermt tegen externe API-storingen: [Link naar artikel]
+👉 Lees hoe u uw SaaS beschermt tegen externe API-storingen: https://launchstudio.eu/nl/blog/when-a-third-party-api-fails-decisions-your-prototype-never-made
 
 #SaaSArchitecture #APIResilience #CircuitBreaker #CloudInfrastructure #LaunchStudio #Manifera

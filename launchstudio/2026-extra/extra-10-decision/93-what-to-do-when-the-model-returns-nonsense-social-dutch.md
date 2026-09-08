@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo ontdekte Kasper Lund van Bonnetjesbox dat zijn AI-tool bij 47 administraties verzonnen bedragen had ingediend bij de Belastingdienst. Binnen 3 dagen implementeerden we kruisvalidatie en automatische broncontrole.
 
-👉 Wat doet uw software als het AI-model morgen een bedrag van €10.000 verzint? [Link naar artikel]
+👉 Wat doet uw software als het AI-model morgen een bedrag van €10.000 verzint? https://launchstudio.eu/nl/blog/what-to-do-when-the-model-returns-nonsense
 
 #ArtificialIntelligence #GenerativeAI #SaaS #DataValidation #Fintech #LaunchStudio #Manifera

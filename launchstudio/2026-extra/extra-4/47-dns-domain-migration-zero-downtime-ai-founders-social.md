@@ -14,6 +14,6 @@ At **LaunchStudio**, domain and infrastructure migrations are a standard part of
 
 His result: ReisPlanner's subsequent infrastructure changes, including a later hosting migration, completed with zero visitor-facing downtime. 🚀
 
-👉 Domain switch still ahead of you? Talk to an engineer about your migration plan first: [Link to article]
+👉 Domain switch still ahead of you? Talk to an engineer about your migration plan first: https://launchstudio.eu/en/blog/dns-domain-migration-zero-downtime-ai-founders
 
 #AINativeFounder #LaunchStudio #Manifera #DNS #ZeroDowntime

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production security work,
 
 His result: the field either removed or properly encrypted, and a schema he could describe field by field in review. 🚀
 
-👉 Send us your prototype link for free feedback on what your schema is storing: [Link to article]
+👉 Send us your prototype link for free feedback on what your schema is storing: https://launchstudio.eu/en/blog/sensitive-data-deciding-what-not-to-store
 
 #IndieHacker #DataMinimisation #LaunchStudio #Manifera #GDPR #AICoding

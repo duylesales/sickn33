@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type performance-probleem al sinds 2014 op v
 
 Cold-start-latency daalde van 2,1s naar 630ms — een verlaging van 70% — en aan lag gerelateerde tickets verdwenen bijna volledig. (€ 1.700 (Launch & Grow Pakket) — 6 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vercel-cold-start-latency-case-study
 
 #LaunchStudio #Manifera #AISaaS #Vercel #Serverless

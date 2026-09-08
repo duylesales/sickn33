@@ -15,6 +15,6 @@ At **LaunchStudio**, we architect genuine offline-first capability for AI tools 
 
 His result: farmers now record field observations entirely offline, with automatic syncing and a working risk model even without connectivity. 🚀
 
-👉 Building for users your own testing environment doesn't represent? Let's find out where the mismatch is: [Link to article]
+👉 Building for users your own testing environment doesn't represent? Let's find out where the mismatch is: https://launchstudio.eu/en/blog/ai-agricultural-businesses-offline-first-problem
 
 #AINativeFounder #LaunchStudio #Manifera #OfflineFirst #AgTech

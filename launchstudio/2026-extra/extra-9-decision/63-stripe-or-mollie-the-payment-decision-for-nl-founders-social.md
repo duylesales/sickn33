@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: reordering checkout to lead with iDEAL and SEPA lifted completion rate noticeably in two weeks, nothing else touched. 🚀
 
-👉 Send us your prototype link and we'll tell you, for free, if your checkout fits your market: [Link to article]
+👉 Send us your prototype link and we'll tell you, for free, if your checkout fits your market: https://launchstudio.eu/en/blog/stripe-or-mollie-the-payment-decision-for-nl-founders
 
 #IndieHacker #iDEAL #LaunchStudio #Manifera #EUStartups #AICoding

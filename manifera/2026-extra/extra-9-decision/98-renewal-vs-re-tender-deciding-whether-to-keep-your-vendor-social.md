@@ -12,6 +12,6 @@ The relationship was fine. Not great, not troubled — just steadily adequate. T
 
 Ask the harder question: would we choose this vendor again today, at today's rate? 💭
 
-👉 Read our full deep dive on renewal vs. re-tender: [Link to article]
+👉 Read our full deep dive on renewal vs. re-tender: https://www.manifera.com/blog/renewal-vs-re-tender-deciding-whether-to-keep-your-vendor
 
 #CFO #VendorManagement #ContractRenewal #ProcurementStrategy #CostOptimization #Manifera

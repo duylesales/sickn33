@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: launched for a fraction of the app quote, seven weeks earlier, kept the full price, and picked up users through Google search no app listing would send. 🚀
 
-👉 Run the numbers with the price calculator: [Link to article]
+👉 Run the numbers with the price calculator: https://launchstudio.eu/en/blog/mobile-app-or-responsive-web-the-budget-decision
 
 #NoCode #AIFounder #LaunchStudio #Manifera #MobileApp #ProductionReady

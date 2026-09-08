@@ -12,6 +12,6 @@ The first engineer hired after a €10M Series A usually spends two weeks just r
 
 Keep, expand, or replace — it's an engineering leadership decision, not a default to inertia. ⚙️
 
-👉 Read our full deep dive on Series A vendor selection: [Link to article]
+👉 Read our full deep dive on Series A vendor selection: https://www.manifera.com/blog/series-a-software-vendor-selection-scaling-beyond-the-founders-first-build
 
 #SeriesA #CTO #TechnicalDebt #EngineeringLeadership #StartupScaling #Manifera

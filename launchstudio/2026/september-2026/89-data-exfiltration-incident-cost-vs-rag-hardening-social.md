@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Felix's platform achieved production readiness: he launched with zero tenant-isolation findings in his pre-launch penetration test, and now cites the hardened architecture directly in enterprise security questionnaires. (€4,200 (Relaunch & Scale Package) — RAG pipeline hardened and verified in 11 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/data-exfiltration-incident-cost-vs-rag-hardening
 
 #LaunchStudio #Manifera #AISaaS #RAGSecurity #DataProtection

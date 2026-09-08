@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Eén founder gokte 3 weken lang naar de oorzaak van een "soms trage" klacht — wij instrumenteerden juiste observability en vonden binnen enkele uren een niet-geïndexeerde query, waardoor de responstijden daalden van 4,2s naar 180ms. (€2.200, Launch Ready Pakket — 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/managed-observability-vs-custom-logging-stack
 
 #LaunchStudio #Manifera #AISaaS #Observability #TechFounders

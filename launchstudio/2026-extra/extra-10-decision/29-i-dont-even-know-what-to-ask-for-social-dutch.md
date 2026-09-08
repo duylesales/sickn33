@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, vertalen onze senior engineers 
 
 💡 Zo hielpen we Anneke Voss haar boekingsplatform binnen 10 dagen veilig live te brengen met enkel een notitieblokje met 3 concrete zorgen.
 
-👉 Ontdek hoe u een app kunt scopen zónder technisch jargon: [Link naar artikel]
+👉 Ontdek hoe u een app kunt scopen zónder technisch jargon: https://launchstudio.eu/nl/blog/i-dont-even-know-what-to-ask-for
 
 #NonTechnicalFounder #AIStartup #ProductScoping #VibeCoding #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam-based team routinely handles exactly this kin
 
 Her result: BloemBestel now runs entirely on infrastructure Fleur controls, with a clear understanding of the retained-rights clause going forward. 🚀
 
-👉 Mid-export and want a second read on what you're agreeing to? Describe your project through our process: [Link to article]
+👉 Mid-export and want a second read on what you're agreeing to? Describe your project through our process: https://launchstudio.eu/en/blog/ai-tool-download-export-fine-print
 
 #AINativeFounder #LaunchStudio #Manifera #AIToolTerms #CodeExport

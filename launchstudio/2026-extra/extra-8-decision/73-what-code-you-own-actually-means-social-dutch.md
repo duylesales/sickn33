@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, betekent "u bezit de code" dat 
 
 Iris' resultaat: volledig praktisch eigendom teruggewonnen voor €2.600 in 9 werkdagen — van stuk papier naar echt product. 🚀
 
-👉 Vraag elke ontwikkelpartner om aan deze 10-punts checklist te voldoen: [Link naar artikel]
+👉 Vraag elke ontwikkelpartner om aan deze 10-punts checklist te voldoen: https://launchstudio.eu/nl/blog/what-code-you-own-actually-means
 
 #LaunchStudio #Manifera #CodeOwnership #IPRights #AINativeFounder #SaaS

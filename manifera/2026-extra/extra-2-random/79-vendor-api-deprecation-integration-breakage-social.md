@@ -12,6 +12,6 @@
 
 Turn every future API sunset into a scheduled project — not a production incident. 🛡️
 
-👉 Read our full deep dive on vendor api deprecation integration breakage: [Link to article]
+👉 Read our full deep dive on vendor api deprecation integration breakage: https://www.manifera.com/blog/vendor-api-deprecation-integration-breakage
 
 #SoftwareArchitecture #CTO #ThirdPartyRisk #VendorManagement #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the creator tax withholding compliance case study: [Link to article]
+👉 See the creator tax withholding compliance case study: https://www.manifera.com/blog/creator-tax-withholding-case-study
 
 #CreatorEconomy #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

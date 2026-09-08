@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam team runs exactly this kind of access audit a
 
 Her result: DataToegang now has a fully documented, current list of every integration with access to customer data, with the unused test key permanently revoked. 🚀
 
-👉 Not sure what still has access to your app? Calculate what a full audit would cost: [Link to article]
+👉 Not sure what still has access to your app? Calculate what a full audit would cost: https://launchstudio.eu/en/blog/ai-access-who-has-it
 
 #AINativeFounder #LaunchStudio #Manifera #AIAccess #DataSecurity

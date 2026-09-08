@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's decade-plus of work for research-standard client
 
 The data protection officer approved LabLoop for continued use across three additional labs after the fix. 🚀
 
-👉 Building an AI development project with research data? Check your encryption before a DPO does: [Link to article]
+👉 Building an AI development project with research data? Check your encryption before a DPO does: https://launchstudio.eu/en/blog/ai-development-leiden
 
 #AINativeFounder #LaunchStudio #Manifera #AIDevelopment #Leiden

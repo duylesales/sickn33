@@ -12,6 +12,6 @@
 
 Test the relationship before you commit to it, not after. 🔍
 
-👉 Read our full deep dive on how to choose a software development vendor: [Link to article]
+👉 Read our full deep dive on how to choose a software development vendor: https://www.manifera.com/blog/how-to-choose-a-software-development-vendor
 
 #VendorSelection #SoftwareDevelopment #CEO #OutsourcingDoneRight #Manifera

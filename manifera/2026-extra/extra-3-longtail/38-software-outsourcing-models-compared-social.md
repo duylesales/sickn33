@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on software outsourcing models compared: [Link to article]
+👉 Read our full guide on software outsourcing models compared: https://www.manifera.com/blog/software-outsourcing-models-compared
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

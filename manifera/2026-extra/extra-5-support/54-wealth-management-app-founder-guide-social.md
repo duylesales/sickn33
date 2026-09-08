@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a wealth management app app: [Link to article]
+👉 Read the non-technical founder's guide to building a wealth management app app: https://www.manifera.com/blog/wealth-management-app-founder-guide
 
 #WealthTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

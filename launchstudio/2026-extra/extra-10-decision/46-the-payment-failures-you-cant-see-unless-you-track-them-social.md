@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years building production payment 
 
 Her result: the webhook was fixed, daily reconciliation went live, and proactive card-expiry emails lifted the update-before-renewal rate to 68% within a month — delivered in 8 business days. 🚀
 
-👉 Check whether your billing dashboard actually matches reality: [Link to article]
+👉 Check whether your billing dashboard actually matches reality: https://launchstudio.eu/en/blog/the-payment-failures-you-cant-see-unless-you-track-them
 
 #PaymentFailures #InvoluntaryChurn #StripeTips #SaaSBilling #LaunchStudio #Manifera

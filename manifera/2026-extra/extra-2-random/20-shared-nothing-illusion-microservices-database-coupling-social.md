@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on shared nothing illusion microservices database coupling: [Link to article]
+👉 Read our full deep dive on shared nothing illusion microservices database coupling: https://www.manifera.com/blog/shared-nothing-illusion-microservices-database-coupling
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

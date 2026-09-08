@@ -15,6 +15,6 @@ At **LaunchStudio**, we help wellness founders think through exactly this line �
 
 Fleur's result: output language revised toward general, clearly-framed wellness suggestion, resolved before it became an issue with the gym partnership. 🚀
 
-👉 Get clarity on where your wellness product's output actually sits: [Link to article]
+👉 Get clarity on where your wellness product's output actually sits: https://launchstudio.eu/en/blog/ai-wellness-apps-line-helpful-regulated-health-advice
 
 #AINativeFounder #LaunchStudio #Manifera #HealthTech #RegulatoryCompliance

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Joris verhardde eerst, nam daarna aan: de beveiligingsbeoordeling van de zevende klant slaagde zonder problemen, de scoringstijd voor cv-batches daalde van 4,2 seconden naar 600 milliseconden, en zijn eerste engineeringaanname was binnen haar eerste week productief. (€3.300 (Relaunch & Scale Pakket) — verharding en documentatie voltooid in 12 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/buy-vs-build-scorecard-ai-infrastructure
 
 #LaunchStudio #Manifera #AISaaS #BuyVsBuild #StartupEngineering

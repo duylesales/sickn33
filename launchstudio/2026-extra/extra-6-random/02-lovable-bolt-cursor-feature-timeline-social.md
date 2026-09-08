@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineering team — trusted by enterprise clien
 
 His result: RouteMeter's multi-role login now has automated coverage that would have caught the original break before a client ever did. 🚀
 
-👉 Switched AI coding tools mid-project recently? Get a free prototype review before you find out what broke: [Link to article]
+👉 Switched AI coding tools mid-project recently? Get a free prototype review before you find out what broke: https://launchstudio.eu/en/blog/lovable-bolt-cursor-feature-timeline
 
 #AINativeFounder #LaunchStudio #Manifera #AICodingTools #ToolMigration

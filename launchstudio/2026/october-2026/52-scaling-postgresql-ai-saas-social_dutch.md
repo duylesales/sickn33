@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Binnen 24 uur stond het platform weer live voor 15.000 studenten met een stabiele CPU-belasting van 30%. (€5.500 (Spoed Database Optimalisatie & Pooling) — binnen 3 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/scaling-postgresql-ai-saas
 
 #LaunchStudio #Manifera #AISaaS #ScalingPostgreSQL #pgvector #HNSW #Supabase #ConnectionPooling #EdTech #TechFounders

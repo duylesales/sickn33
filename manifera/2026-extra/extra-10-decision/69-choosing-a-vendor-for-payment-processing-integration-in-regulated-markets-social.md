@@ -12,6 +12,6 @@ Every failed payment integration lands on a CFO's desk as one of three problems:
 
 The cheapest-looking payment vendor almost never turns out to be the cheapest once scope, conversion, and reconciliation costs are priced in. 🎯
 
-👉 Read our full deep dive on choosing a vendor for payment processing integration: [Link to article]
+👉 Read our full deep dive on choosing a vendor for payment processing integration: https://www.manifera.com/blog/choosing-a-vendor-for-payment-processing-integration-in-regulated-markets
 
 #CFO #PaymentProcessing #PSD2 #PCIDSS #FinTech #OpenBanking #Manifera

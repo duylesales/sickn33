@@ -15,6 +15,6 @@ Bij **LaunchStudio** besteden onze engineers — waaronder het team in Singapore
 
 Zijn resultaat: de onderhoudsstroom van HerstelBot verwerkt nu elke verzoekcategorie correct, met logging die de oorspronkelijke bug binnen minuten in plaats van weken had opgemerkt. 🚀
 
-👉 Wilt u een tweede paar ogen op een fix die een AI-tool u heeft gegeven? Beschrijf uw project via ons proces: [Link naar artikel]
+👉 Wilt u een tweede paar ogen op een fix die een AI-tool u heeft gegeven? Beschrijf uw project via ons proces: https://launchstudio.eu/nl/blog/ai-that-fixes-code-hide-not-fix
 
 #AINativeFounder #LaunchStudio #Manifera #AICodeReview #BugFixing

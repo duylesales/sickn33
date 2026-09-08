@@ -14,6 +14,6 @@ Bij **LaunchStudio** controleren wij vóór indiening precies op dit soort hiate
 
 Haar resultaat: HuisdierZorg doorstond de App Store-beoordeling bij herindiening zonder verdere nalevingsvlaggen. 🚀
 
-👉 Staat u op het punt uw AI-gebouwde app in te dienen? Laat eerst een pre-submission compliancecheck uitvoeren: [Link naar artikel]
+👉 Staat u op het punt uw AI-gebouwde app in te dienen? Laat eerst een pre-submission compliancecheck uitvoeren: https://launchstudio.eu/nl/blog/app-store-review-rejection-ai-built-mobile
 
 #AINativeFounder #LaunchStudio #Manifera #AppStoreReady #MobileApp

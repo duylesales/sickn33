@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a charter flight booking app app: [Link to article]
+👉 Read the non-technical founder's guide to building a charter flight booking app app: https://www.manifera.com/blog/charter-flight-booking-app-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

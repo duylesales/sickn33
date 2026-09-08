@@ -14,6 +14,6 @@ Bij **LaunchStudio** migreren we sinds 2014 kwetsbare serverless setups naar ent
 
 Isabella's cold start vertragingen werden volledig geëlimineerd, wat resulteerde in een stabiele responstijd van 0,5s voor alle gebruikers. (€2.600 (Container Migration Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
-👉 Ontsnap aan de serverless time-out valstrik: [Link naar artikel]
+👉 Ontsnap aan de serverless time-out valstrik: https://launchstudio.eu/nl/blog/serverless-functions-vs-containers-ai-workloads
 
 #AINativeFounder #LaunchStudio #Manifera #DockerContainers #ServerlessAI #AWS #CloudRun #BackendArchitecture #AISaaS #StartupOpschalen

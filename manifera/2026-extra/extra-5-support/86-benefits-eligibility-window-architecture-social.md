@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on benefits eligibility window: [Link to article]
+👉 Read our full architectural deep dive on benefits eligibility window: https://www.manifera.com/blog/benefits-eligibility-window-architecture
 
 #HRTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

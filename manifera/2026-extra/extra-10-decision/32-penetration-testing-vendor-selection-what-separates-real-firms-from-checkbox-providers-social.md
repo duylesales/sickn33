@@ -12,6 +12,6 @@ Last year's pentest report had 12 findings, all "low" or "informational," and co
 
 A vendor willing to test "everything" without pushing back on scope isn't being accommodating — it's a red flag. 🎯
 
-👉 Read our full deep dive on separating real pentest firms from checkbox providers: [Link to article]
+👉 Read our full deep dive on separating real pentest firms from checkbox providers: https://www.manifera.com/blog/penetration-testing-vendor-selection-what-separates-real-firms-from-checkbox-providers
 
 #PenetrationTesting #CyberSecurity #InfoSec #SecurityTesting #CREST #VendorVetting #Manifera

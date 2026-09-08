@@ -14,6 +14,6 @@ At **LaunchStudio**, we've engineered layered prompt injection defenses since 20
 
 Luke's prompt injection attempts were blocked, and his document separation is now fully secured. 🚀
 
-👉 Harden your prompt architecture today: [Link to article]
+👉 Harden your prompt architecture today: https://launchstudio.eu/en/blog/understanding-prompt-injection-vulnerabilities-ai
 
 #AINativeFounder #LaunchStudio #Manifera #PromptInjection #LLMSecurity

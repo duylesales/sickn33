@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Rotaflow can now kill any account's access within 20 minutes worst case instead of 30 days, and adding a read-only accountant role next quarter is a one-line addition instead of an audit of every route. 🚀
 
-👉 Find out what your auth model is actually doing: [Link to article]
+👉 Find out what your auth model is actually doing: https://launchstudio.eu/en/blog/the-authentication-decision-your-prototype-quietly-deferred
 
 #IndieHacker #AICoding #ProductionReady #SaaS #LaunchStudio #Manifera

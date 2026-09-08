@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Zijn resultaat: hij koos de partner wiens referent openhartig sprak over een eerdere engineer-wissel, nam een clausule met vaste ontwikkelaars op, en leverde datascheiding en Stripe op binnen veertien dagen. 🚀
 
-👉 Plan een kennismaking van 15 minuten en vraag om de referenties die u werkelijk wilt spreken: [Link naar artikel]
+👉 Plan een kennismaking van 15 minuten en vraag om de referenties die u werkelijk wilt spreken: https://launchstudio.eu/nl/blog/referentiegesprekken-die-u-werkelijk-iets-vertellen-over-een-ontwikkelpartner
 
 #SaaS #StartupGrowth #DueDiligence #SoftwareDevelopment #LaunchStudio #Manifera

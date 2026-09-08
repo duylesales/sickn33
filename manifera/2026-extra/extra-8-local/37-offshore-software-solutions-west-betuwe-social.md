@@ -12,6 +12,6 @@ Two senior engineering roles, open for eight months, zero relocatable candidates
 
 A senior engineer here runs €85,000-€105,000/year loaded, plus €12,000-€18,000 in recruiting costs for an eight-month vacant role. A four-person Pod runs €32,000-€38,000/month — and starts shipping in weeks, not two quarters. 📊
 
-👉 Read our full deep dive on offshore software solutions for West Betuwe: [Link to article]
+👉 Read our full deep dive on offshore software solutions for West Betuwe: https://www.manifera.com/blog/offshore-software-solutions-west-betuwe
 
 #WestBetuwe #Gelderland #OffshoreDevelopment #AgriTech #CTO #TalentGap #Manifera

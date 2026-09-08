@@ -12,6 +12,6 @@ Most vendor negotiations spend 90% of their energy on the day rate and 10% on ev
 
 The leverage that shifts total cost over a contract's life isn't the rate — it's the five clauses everyone rushes past. 🎯
 
-👉 Read our full guide to vendor negotiation leverage points buyers miss: [Link to article]
+👉 Read our full guide to vendor negotiation leverage points buyers miss: https://www.manifera.com/blog/negotiating-software-vendor-contracts-leverage-points-buyers-miss
 
 #Procurement #VendorNegotiation #ContractManagement #SoftwareOutsourcing #ProcurementLeadership #Manifera

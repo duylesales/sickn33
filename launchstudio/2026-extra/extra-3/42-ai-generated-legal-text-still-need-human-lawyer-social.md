@@ -15,6 +15,6 @@ At **LaunchStudio**, we flag exactly this mismatch between legal claims and tech
 
 Her result: a corrected privacy policy matching TeamCheck's real deletion process, plus scoped technical work to build the faster deletion capability the policy now promises. 🚀
 
-👉 Does your privacy policy actually match what your product can do? Send us your link: [Link to article]
+👉 Does your privacy policy actually match what your product can do? Send us your link: https://launchstudio.eu/en/blog/ai-generated-legal-text-still-need-human-lawyer
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #DueDiligence

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on premature scaling startup trap: [Link to article]
+👉 Read our full guide on premature scaling startup trap: https://www.manifera.com/blog/premature-scaling-startup-trap
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

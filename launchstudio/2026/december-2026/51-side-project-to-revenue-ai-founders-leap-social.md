@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years, we handle exactly Step 2 �
 
 His result: 11 of his ~40 existing users paid within 2 weeks. First-ever revenue from a 2-year unpaid hobby. 🚀
 
-👉 Read how to make the leap: [Link to article]
+👉 Read how to make the leap: https://launchstudio.eu/en/blog/side-project-to-revenue-ai-founders-leap
 
 #SideProject #LaunchStudio #Manifera #AINativeFounder #SaaS #IndieHacker

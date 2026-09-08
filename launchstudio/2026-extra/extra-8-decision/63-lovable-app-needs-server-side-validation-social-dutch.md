@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software-
 
 Wouters resultaat: BeweegBoek's boekingsgaten gedicht voor €1.100 — live in 4 werkdagen. 🚀
 
-👉 Ontdek welke invoer in uw app niet server-side wordt gecontroleerd: [Link naar artikel]
+👉 Ontdek welke invoer in uw app niet server-side wordt gecontroleerd: https://launchstudio.eu/nl/blog/lovable-app-needs-server-side-validation
 
 #LaunchStudio #Lovable #Databeveiliging #Manifera #SaaS #ServerSideValidatie #AIApp

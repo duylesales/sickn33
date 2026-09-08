@@ -12,6 +12,6 @@ Two vendors quoted your mobile redesign: €80K/14 weeks and €280K/8 months �
 
 The vendor question that matters isn't "how good does the mockup look" — it's "what's the time-to-interactive on a mid-tier Android phone." 🎯
 
-👉 Read our full deep dive on choosing a vendor for a mobile-first redesign: [Link to article]
+👉 Read our full deep dive on choosing a vendor for a mobile-first redesign: https://www.manifera.com/blog/choosing-a-vendor-for-mobile-first-redesign-projects
 
 #MobileFirst #ReactNative #Flutter #ProductRedesign #MobilePerformance #CTO #Manifera

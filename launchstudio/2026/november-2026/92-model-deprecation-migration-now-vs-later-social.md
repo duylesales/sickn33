@@ -14,6 +14,6 @@ At **LaunchStudio**, we've migrated AI SaaS platforms off deprecated models sinc
 
 One founder opened her deprecation notice with 31 days left, found a 40% cost spike and degraded output — we fixed both and shipped 6 days ahead of sunset. (€3,400, Launch & Grow Package — 13 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/model-deprecation-migration-now-vs-later
 
 #LaunchStudio #Manifera #AISaaS #LLMMigration #TechnicalDebt

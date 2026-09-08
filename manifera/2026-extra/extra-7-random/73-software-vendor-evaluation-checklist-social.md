@@ -12,6 +12,6 @@
 
 The questions you skip in evaluation are the ones that cost you later. 📋
 
-👉 Read our full deep dive on the software vendor evaluation checklist: [Link to article]
+👉 Read our full deep dive on the software vendor evaluation checklist: https://www.manifera.com/blog/software-vendor-evaluation-checklist
 
 #VendorEvaluation #DueDiligence #SoftwareDevelopment #CTO #Manifera

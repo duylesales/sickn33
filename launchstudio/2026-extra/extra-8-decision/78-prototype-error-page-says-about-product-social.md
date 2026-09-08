@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, e
 
 Lieke Jansen's identical LinkedIn campaign went from a 14% drop-off at the assessment step to just 2% — a 12-point improvement from error handling alone. 🚀
 
-👉 Get your prototype's error states reviewed before they cost you signups: [Link to article]
+👉 Get your prototype's error states reviewed before they cost you signups: https://launchstudio.eu/en/blog/prototype-error-page-says-about-product
 
 #LaunchStudio #Manifera #ErrorHandling #UXDesign #VibeCoding #ProductionReady #SaaSFounders

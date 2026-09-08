@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 enterprise-beveiligingen via Manifera,
 
 LaunchStudio implementeerde roterende proxy's en domeinfilters voor Owen — het succespercentage van zijn scrapers steeg naar 98% en leverde betrouwbare data op. (€1.400 (Scraper Security Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u agent-tools veilig isoleert: [Link naar artikel]
+👉 Ontdek hoe u agent-tools veilig isoleert: https://launchstudio.eu/nl/blog/preventing-ssrf-attacks-in-ai-agents
 
 #AINativeFounder #LaunchStudio #Manifera #SSRFPrevention #AIAgentSecurity #CyberSecurity #CloudSecurity #AWSLambda #AISaaS #StartupOpschalen

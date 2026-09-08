@@ -12,6 +12,6 @@ What does it cost a Leidschendam-Voorburg CTO to lose a full quarter to one open
 
 Stop bidding against IOs for engineers you'll never win. Build the pod instead. 🛡️
 
-👉 Read our full deep dive on offshore software development company Leidschendam-Voorburg: [Link to article]
+👉 Read our full deep dive on offshore software development company Leidschendam-Voorburg: https://www.manifera.com/blog/offshore-software-development-company-leidschendam-voorburg
 
 #LeidschendamVoorburg #DenHaag #ZuidHolland #OffshoreDevelopment #CTO #GovTech #Manifera

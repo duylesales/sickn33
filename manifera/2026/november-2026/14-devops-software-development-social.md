@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on devops software development: [Link to article]
+👉 Read our full deep dive on devops software development: https://www.manifera.com/blog/devops-software-development
 
 #DevOps #CloudEngineering #SoftwareArchitecture #TechLeadership #CTO #Manifera

@@ -14,6 +14,6 @@ Bij LaunchStudio versterken we AI-producten en geven we oprichters een eerlijk, 
 
 Nadia's score steeg van 6 naar 16/20 — haar lead investor noemde het het verschil tussen "riskant" en "investeringswaardig." (€ 4.800 (Enterprise Hardening Pakket) — 15 werkdagen.) 🚀
 
-👉 Bekijk onze aanpak: [Link naar artikel]
+👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/platform-engineering-maturity-scorecard
 
 #LaunchStudio #Manifera #AISaaS #PlatformEngineering #Fundraising

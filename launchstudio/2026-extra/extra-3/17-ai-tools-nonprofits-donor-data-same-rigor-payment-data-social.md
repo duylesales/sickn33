@@ -15,6 +15,6 @@ At **LaunchStudio**, we apply the same rigor to nonprofit AI tools as any commer
 
 Marijke's result: proper access segmentation now restricts sensitive beneficiary details to coordinators, closing exposure to dozens of volunteers who never needed it. 🚀
 
-👉 Get your nonprofit's AI tool reviewed with the rigor its data actually deserves: [Link to article]
+👉 Get your nonprofit's AI tool reviewed with the rigor its data actually deserves: https://launchstudio.eu/en/blog/ai-tools-nonprofits-donor-data-same-rigor-payment-data
 
 #AINativeFounder #LaunchStudio #Manifera #NonprofitTech #DataPrivacy

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've threat-modeled and hardened AI-native platforms built
 
 One founder's law firm pilot nearly stalled on an unanswered security questionnaire — until a fixed-scope threat model found and fixed a live prompt-injection path and an unthrottled API key. Result: pilot approved with zero follow-up questions. (€3,200, Enterprise Hardening Package — 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-threat-modeling-ai-platform
 
 #LaunchStudio #Manifera #AISaaS #ThreatModeling #AppSec

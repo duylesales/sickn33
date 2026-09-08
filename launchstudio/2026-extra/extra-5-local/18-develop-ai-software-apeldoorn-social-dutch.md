@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we eerst een audit uit en lossen we op wat daadwerke
 
 Zijn resultaat: RouteWise verwerkt nu trackingdata van meer dan 40 wagenparkvoertuigen met querytijden die ruwweg 90% korter zijn, tegen een fractie van de herbouwofferte die hij overwoog. 🚀
 
-👉 Op het punt een dure herbouwofferte te tekenen? Laat eerst een audit uitvoeren: [Link naar artikel]
+👉 Op het punt een dure herbouwofferte te tekenen? Laat eerst een audit uitvoeren: https://launchstudio.eu/nl/blog/develop-ai-software-apeldoorn
 
 #AINativeFounder #LaunchStudio #Manifera #AISoftware #Apeldoorn

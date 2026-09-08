@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera-engineers die audits uitvoeren o
 
 Niels' resultaat: TeamPulse doorstond een enterprise-beveiligingsreview zonder bevindingen, in 4 werkdagen voor €1.400. 🚀
 
-👉 Test of uw prototype autorisatie heeft, niet alleen authenticatie: [Link naar artikel]
+👉 Test of uw prototype autorisatie heeft, niet alleen authenticatie: https://launchstudio.eu/nl/blog/authentication-vs-authorization-prototype-confusion
 
 #LaunchStudio #Cybersecurity #Supabase #Manifera #SaaS #IDOR #AIApp

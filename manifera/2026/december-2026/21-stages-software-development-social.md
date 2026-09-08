@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on stages software development: [Link to article]
+👉 Read our full deep dive on stages software development: https://www.manifera.com/blog/stages-software-development
 
 #SoftwareArchitecture #TechLeadership #CTO #Manifera

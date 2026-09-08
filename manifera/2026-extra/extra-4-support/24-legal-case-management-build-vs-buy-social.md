@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Explore the full build vs buy analysis for legal management: [Link to article]
+👉 Explore the full build vs buy analysis for legal management: https://www.manifera.com/blog/legal-case-management-build-vs-buy
 
 #LegalTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

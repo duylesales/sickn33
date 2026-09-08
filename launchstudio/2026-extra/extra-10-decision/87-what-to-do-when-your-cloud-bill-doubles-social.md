@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: three indexes added, the dashboard aggregation precomputed, staging resized to sleep outside hours, and log retention capped at 30 days — next month's bill came in at €185, below the original figure, with three more customers. 🚀
 
-👉 Find out what's actually driving your cloud bill: [Link to article]
+👉 Find out what's actually driving your cloud bill: https://launchstudio.eu/en/blog/what-to-do-when-your-cloud-bill-doubles
 
 #SaaS #CloudCosts #DevOps #FounderLife #LaunchStudio #Manifera

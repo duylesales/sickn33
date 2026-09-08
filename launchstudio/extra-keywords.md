@@ -1,12 +1,8 @@
 "AI prototype to production"
 
-               "AI app to production"
-
-               "AI prototype to production"
+"AI app to production"
 
 "AI code to production"
-
-"AI generated code production"
 
 "AI generated code production"
 
@@ -15,18 +11,6 @@
 "productionize AI app"
 
 "make AI generated app production ready"
-
-| "AI code to production" |     |
-| ----------------------- | --- |
-
-| "AI generated code production" |     |
-| ------------------------------ | --- |
-
-| "productionize AI application" |     |
-| ------------------------------ | --- |
-
-| "productionize AI app" |     |
-| ---------------------- | --- |
 
 **"AI prototype to production"**
 

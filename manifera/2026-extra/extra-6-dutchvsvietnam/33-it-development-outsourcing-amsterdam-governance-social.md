@@ -12,6 +12,6 @@
 
 A single unmanaged incident like this typically costs €50,000-€90,000. Governance is designed to prevent it, not clean it up. 🛡️
 
-👉 Read our full deep dive on it development outsourcing amsterdam governance: [Link to article]
+👉 Read our full deep dive on it development outsourcing amsterdam governance: https://www.manifera.com/blog/it-development-outsourcing-amsterdam-governance
 
 #Amsterdam #CFO #RiskManagement #ITOutsourcing #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we review mixed-origin codebases from mid-project tool swit
 
 His result: authentication handling standardized across both the original and newly-added sections to a single, consistent, verified pattern. 🚀
 
-👉 Switched tools mid-build? Get your mixed-tool codebase checked for consistency, not just functionality: [Link to article]
+👉 Switched tools mid-build? Get your mixed-tool codebase checked for consistency, not just functionality: https://launchstudio.eu/en/blog/founders-checklist-switching-ai-coding-tools-mid-project
 
 #AINativeFounder #LaunchStudio #Manifera #DevTools #CodeReview

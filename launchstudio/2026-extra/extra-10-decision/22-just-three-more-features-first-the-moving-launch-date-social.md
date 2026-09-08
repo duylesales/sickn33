@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: with the list cut to the one real issue, Iris's platform launched 11 business days later, six tutors onboarded in week one, and every deferred feature shipped afterward — funded by subscriptions instead of delaying them. 🚀
 
-👉 Get your own launch list reality-checked: [Link to article]
+👉 Get your own launch list reality-checked: https://launchstudio.eu/en/blog/just-three-more-features-first-the-moving-launch-date
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

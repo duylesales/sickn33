@@ -15,6 +15,6 @@ At **LaunchStudio** ontwerpen en verstevigen we extern gerichte API's specifiek 
 
 Zijn resultaat: snelheidslimieten per integrator en gedocumenteerde foutafhandeling dichtten het gat voordat het zich opnieuw kon voordoen — bij deze of een toekomstige integrator. 🚀
 
-👉 Maak uw API klaar voor mensen wier code u nooit zult zien: [Link naar artikel]
+👉 Maak uw API klaar voor mensen wier code u nooit zult zien: https://launchstudio.eu/nl/blog/api-and-ai-designing-interface-other-systems-call
 
 #AINativeFounder #LaunchStudio #Manifera #APIDesign #RateLimiting

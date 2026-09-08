@@ -12,6 +12,6 @@ Twenty-six weeks from RFP to signature. Only eleven were real evaluation work. T
 
 Twelve to sixteen weeks is achievable without cutting a single hour of real diligence. 🎯
 
-👉 Read our full deep dive on where enterprise RFP timelines actually go: [Link to article]
+👉 Read our full deep dive on where enterprise RFP timelines actually go: https://www.manifera.com/blog/enterprise-procurement-why-software-vendor-rfps-take-six-months
 
 #Procurement #RFP #EnterpriseIT #VendorSelection #ProcessImprovement #Manifera

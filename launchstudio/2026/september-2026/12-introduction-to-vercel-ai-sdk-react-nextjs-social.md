@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building production frontend systems since 2014 
 
 Charlotte's flickering was resolved, and her resume suggestions now stream in a clean, word-by-word animation. 🚀
 
-👉 Get the integration breakdown: [Link to article]
+👉 Get the integration breakdown: https://launchstudio.eu/en/blog/introduction-to-vercel-ai-sdk-react-nextjs
 
 #AINativeFounder #LaunchStudio #Manifera #VercelAISDK #StreamingUI

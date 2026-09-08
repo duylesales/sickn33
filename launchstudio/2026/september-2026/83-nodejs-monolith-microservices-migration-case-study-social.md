@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Before: a 300-document batch crashed the shared process within 2-3 minutes, taking every session down. After: the same batch completes in ~18 minutes with zero impact on other users (€2,600, Launch & Grow Package — 3 weeks). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/nodejs-monolith-microservices-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #NodeJS #Microservices

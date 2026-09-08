@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's ervaring met PostgreSQL, MySQL
 
 Zijn datalek: binnen 48 uur permanent gedicht. 🚀
 
-👉 Lees de complete database-vergelijking voor 2027: [Link naar artikel]
+👉 Lees de complete database-vergelijking voor 2027: https://launchstudio.eu/nl/blog/supabase-vs-firebase-vs-planetscale-2027
 
 #Supabase #Firebase #LaunchStudio #Manifera #DatabaseSecurity #AINativeFounder #PostgreSQL #SaaS #TechFounders #StartupOpschalen

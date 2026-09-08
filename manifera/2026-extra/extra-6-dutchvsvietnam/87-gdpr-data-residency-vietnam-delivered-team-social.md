@@ -12,6 +12,6 @@
 
 The compliance question isn't "is Vietnam safe." It's "does our contract include SCCs, a proper DPA, and a rehearsed breach chain." 🛡️
 
-👉 Read our full deep dive on gdpr data residency vietnam delivered team: [Link to article]
+👉 Read our full deep dive on gdpr data residency vietnam delivered team: https://www.manifera.com/blog/gdpr-data-residency-vietnam-delivered-team
 
 #GDPR #CFO #DataResidency #Amsterdam #Vietnam #Manifera

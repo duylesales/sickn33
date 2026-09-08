@@ -18,6 +18,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), richten we 
 
 💡 Zo voorkwam Bram Hendricks van Vintra dat hij een winnende Google Ads-campagne stilzette, toen de boosdoener een trage query van 4 seconden bleek te zijn.
 
-👉 Ontdek de 5 stappen vóórdat u gaat adverteren: [Link naar artikel]
+👉 Ontdek de 5 stappen vóórdat u gaat adverteren: https://launchstudio.eu/nl/blog/funnel-instrumentation-before-you-spend-a-euro-on-ads
 
 #SaaSMarketing #FunnelOptimization #CAC #StartupGrowth #LaunchStudio #Manifera

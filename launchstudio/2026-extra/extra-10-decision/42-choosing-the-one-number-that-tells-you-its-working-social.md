@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: first-invoice conversion rose from 12.7% to 21% in two months, and MRR growth accelerated for the first time in a quarter, redefined in one week alongside an existing engagement. 🚀
 
-👉 Find the one number your dashboard is hiding: [Link to article]
+👉 Find the one number your dashboard is hiding: https://launchstudio.eu/en/blog/choosing-the-one-number-that-tells-you-its-working
 
 #NorthStarMetric #SaaSMetrics #FounderLife #StartupAnalytics #LaunchStudio #Manifera

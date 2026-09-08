@@ -12,6 +12,6 @@
 
 IP protection specific enough to survive the deal that actually matters. 🛡️
 
-👉 Read our full deep dive on product development outsourcing waalwijk: [Link to article]
+👉 Read our full deep dive on product development outsourcing waalwijk: https://www.manifera.com/blog/product-development-outsourcing-waalwijk
 
 #Waalwijk #NoordBrabant #FootwearTech #CTO #IPProtection #ProductDevelopment #Manifera

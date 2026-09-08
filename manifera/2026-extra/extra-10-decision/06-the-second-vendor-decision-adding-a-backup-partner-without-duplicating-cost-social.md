@@ -12,6 +12,6 @@ Your board's risk committee wants to know what happens to delivery if your prima
 
 The activation clause, priced and agreed in advance, is the actual insurance product — everything else just keeps it credible. 🎯
 
-👉 Read our full deep dive on adding a backup vendor without duplicating cost: [Link to article]
+👉 Read our full deep dive on adding a backup vendor without duplicating cost: https://www.manifera.com/blog/the-second-vendor-decision-adding-a-backup-partner-without-duplicating-cost
 
 #COO #BusinessContinuity #VendorManagement #RiskMitigation #OperationalResilience #Manifera

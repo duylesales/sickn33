@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 160+ delivered projects for clients like Vodafon
 
 Dockflow has had zero unplanned downtime in the four months since the fix. 🚀
 
-👉 Using dev AI tools to launch fast? Budget for the production layer before it goes down: [Link to article]
+👉 Using dev AI tools to launch fast? Budget for the production layer before it goes down: https://launchstudio.eu/en/blog/dev-ai-dordrecht
 
 #AINativeFounder #LaunchStudio #Manifera #DevAI #Dordrecht

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on web development devops assen: [Link to article]
+👉 Read our full deep dive on web development devops assen: https://www.manifera.com/blog/web-development-devops-assen
 
 #Assen #DrentheTech #Drenthe #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we implement exactly this kind of content-verification chec
 
 Her result: proper content-type verification implemented on every upload, closing the gap before it could be exploited by anyone less benign. 🚀
 
-👉 Get a free look at your prototype — just send the link: [Link to article]
+👉 Get a free look at your prototype — just send the link: https://launchstudio.eu/en/blog/the-ai-vulnerabilities-nobody-checks-until-something-breaks
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #WebSecurity

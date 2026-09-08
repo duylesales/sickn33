@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on devops business leeuwarden: [Link to article]
+👉 Read our full deep dive on devops business leeuwarden: https://www.manifera.com/blog/devops-business-leeuwarden
 
 #Leeuwarden #WaterCampus #Friesland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

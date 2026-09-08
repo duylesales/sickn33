@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 120+ engineers, zorgen we dat 
 
 Het resultaat: een aangescherpt privacybeleid en een heldere toestemmingsflow rondden de enterprise-deal binnen drie weken af, en feature-updates triggeren nu standaard een beleidscheck. 🚀
 
-👉 Beschrijf uw project en ontvang binnen één werkdag gericht advies over wat uw voorwaarden moeten dekken: [Link naar artikel]
+👉 Beschrijf uw project en ontvang binnen één werkdag gericht advies over wat uw voorwaarden moeten dekken: https://launchstudio.eu/nl/blog/terms-and-privacy-policy-what-you-can-write-yourself
 
 #SaaS #AlgemeneVoorwaarden #Privacyverklaring #StartupLegal #LaunchStudio #Manifera

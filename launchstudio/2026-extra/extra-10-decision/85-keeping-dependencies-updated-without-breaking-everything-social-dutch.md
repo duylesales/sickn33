@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), helpen we s
 
 💡 Zo zat Sam Verhagen van Zaalplanner na 2 jaar stilstand klem tegen een Node.js-deadline: 9 dagen paniek en kapotte bibliotheken. Na onze opschoning en testsuite kost het onderhoud hem nu slechts 1 uur per maand.
 
-👉 Wanneer heeft u voor het laatst de dependencies van uw SaaS geüpdatet? [Link naar artikel]
+👉 Wanneer heeft u voor het laatst de dependencies van uw SaaS geüpdatet? https://launchstudio.eu/nl/blog/keeping-dependencies-updated-without-breaking-everything
 
 #OpenSource #DevOps #JavaScript #SaaSArchitecture #LaunchStudio #Manifera

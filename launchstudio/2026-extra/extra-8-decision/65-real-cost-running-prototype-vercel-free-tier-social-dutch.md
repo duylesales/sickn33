@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera-engineers die op Vercel, AWS, Di
 
 Brams resultaat: StudiePlanner draaide 1.200+ actieve gebruikers zonder uitval voor €22/maand. 🚀
 
-👉 Check of uw prototype klaar is voor echte gebruikersaantallen: [Link naar artikel]
+👉 Check of uw prototype klaar is voor echte gebruikersaantallen: https://launchstudio.eu/nl/blog/real-cost-running-prototype-vercel-free-tier
 
 #LaunchStudio #Vercel #Hosting #Manifera #SaaS #IndieHacker #AIApp

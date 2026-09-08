@@ -12,6 +12,6 @@ Your AI vendor's contract says nothing about what happens to your data once the 
 
 Ask for the clause before you need it in a data subject access request. 📋
 
-👉 Read our full deep dive on AI data privacy clauses vendors don't volunteer: [Link to article]
+👉 Read our full deep dive on AI data privacy clauses vendors don't volunteer: https://www.manifera.com/blog/ai-data-privacy-clauses-vendors-dont-volunteer
 
 #ComplianceOfficer #GDPR #AIDataPrivacy #DataProtection #AIVendorRisk #EUAIAct #Manifera

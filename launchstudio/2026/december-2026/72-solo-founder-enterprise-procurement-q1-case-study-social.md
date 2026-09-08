@@ -14,6 +14,6 @@ At LaunchStudio, we've been closing exactly this procurement gap since 2014 thro
 
 Priya resubmitted the questionnaire with 3 days to spare and closed a contract larger than her entire existing customer base. (€6,200 Enterprise Hardening Package — 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/solo-founder-enterprise-procurement-q1-case-study
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #SOC2

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on devops as a service explained: [Link to article]
+👉 Read our deep dive on devops as a service explained: https://www.manifera.com/blog/devops-as-a-service-explained
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

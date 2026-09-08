@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichters precies deze voortdurende waakzaamhei
 
 Haar resultaat: de prompts van SchrijfAssist opnieuw afgestemd op het bijgewerkte model om de verwachte toon te herstellen, plus een doorlopend beoordelingsproces dat wordt geactiveerd door toekomstige updates. 🚀
 
-👉 Wanneer heeft u voor het laatst gecontroleerd of uw AI-provider stilletjes heeft veranderd wat "werken" oplevert? Krijg een doorlopend proces om afwijkingen op te vangen voordat klanten dat doen: [Link naar artikel]
+👉 Wanneer heeft u voor het laatst gecontroleerd of uw AI-provider stilletjes heeft veranderd wat "werken" oplevert? Krijg een doorlopend proces om afwijkingen op te vangen voordat klanten dat doen: https://launchstudio.eu/nl/blog/ai-native-not-set-and-forget-model-updates-change
 
 #AINativeFounder #LaunchStudio #Manifera #AIOps #ModelDrift

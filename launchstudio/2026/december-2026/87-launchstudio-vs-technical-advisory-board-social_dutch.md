@@ -14,6 +14,6 @@ Bij LaunchStudio leveren we de daadwerkelijke executiekracht die uw AI-prototype
 
 Ingrid liet haar platform binnen 8 dagen harden en sloot direct een contract van € 32k ARR af. (€ 2.900 (Launch & Grow) — 8 werkdagen.) 🚀
 
-👉 Ontdek het verschil tussen advies en executie: [Link naar artikel]
+👉 Ontdek het verschil tussen advies en executie: https://launchstudio.eu/nl/blog/launchstudio-vs-technical-advisory-board
 
 #LaunchStudio #Manifera #AISaaS #StartupAdvisors #SoftwareEngineering

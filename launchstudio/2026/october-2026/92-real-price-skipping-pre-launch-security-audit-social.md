@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been catching exactly this class of AI-generated vuln
 
 Priya's audit found her RLS policies let any freelancer query other accounts' invoice data, and her OpenAI key was exposed in the client bundle. Both fixed before launch: Priya launched on schedule at the conference with zero incidents. (€1,200, Launch Ready Package — audit and fixes completed in 3 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/real-price-skipping-pre-launch-security-audit
 
 #LaunchStudio #Manifera #AISaaS #SecurityAudit #StartupSecurity

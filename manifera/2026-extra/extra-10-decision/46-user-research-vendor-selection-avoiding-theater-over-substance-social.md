@@ -12,6 +12,6 @@ Five users, a highlight reel, and a slide that says "users loved it." That's the
 
 Research theater produces confidence without insight — which is worse than no research at all, because it gets treated as validated when it isn't. 🎯
 
-👉 Read our full deep dive on avoiding research theater when selecting a user research vendor: [Link to article]
+👉 Read our full deep dive on avoiding research theater when selecting a user research vendor: https://www.manifera.com/blog/user-research-vendor-selection-avoiding-theater-over-substance
 
 #ProductManager #UXResearch #UserResearch #ProductDecisions #VendorSelection #Manifera

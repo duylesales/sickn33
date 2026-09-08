@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers bring 11+ years of payment and bi
 
 Oogstplanner onboarded all six pilot farmers as paying subscribers, with automatic access granted immediately after payment for the first time. 🚀
 
-👉 Charging farmers in Dronten for your AI tool? Verify this before your next invoice: [Link to article]
+👉 Charging farmers in Dronten for your AI tool? Verify this before your next invoice: https://launchstudio.eu/en/blog/ai-generated-tool-dronten
 
 #AINativeFounder #LaunchStudio #Manifera #Dronten #PaymentReady

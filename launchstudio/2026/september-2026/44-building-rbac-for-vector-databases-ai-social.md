@@ -14,6 +14,6 @@ At **LaunchStudio**, we've designed this exact granular access architecture sinc
 
 Penelope's customer data became fully isolated, passing enterprise security standards. 🚀
 
-👉 Explore our fixed-scope hardening packages: [Link to article]
+👉 Explore our fixed-scope hardening packages: https://launchstudio.eu/en/blog/building-rbac-for-vector-databases-ai
 
 #AINativeFounder #LaunchStudio #Manifera #RBAC #VectorDatabaseSecurity

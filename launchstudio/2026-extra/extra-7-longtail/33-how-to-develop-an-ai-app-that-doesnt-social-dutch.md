@@ -15,6 +15,6 @@ Bij **LaunchStudio** putten onze technici uit Manifera's enterprise engineering-
 
 Niklas' resultaat: ShiftSwap verwerkt nu de volledige ochtendspits zonder te vertragen, opgelost in één dag zonder de app te veranderen die zijn ploegleiders al hadden geleerd. 🚀
 
-👉 Vraagt u zich af of uw AI-app 100 gelijktijdige gebruikers zou overleven?: [Link naar artikel]
+👉 Vraagt u zich af of uw AI-app 100 gelijktijdige gebruikers zou overleven?: https://launchstudio.eu/nl/blog/how-to-develop-an-ai-app-that-doesnt
 
 #AINativeFounder #LaunchStudio #Manifera #ScalingIssues #AIAppDev

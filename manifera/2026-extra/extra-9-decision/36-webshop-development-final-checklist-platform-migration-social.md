@@ -12,6 +12,6 @@
 
 Rehearsal beats documentation every time real customers are on the line. ✅
 
-👉 Read our full deep dive on the final checklist before a webshop platform migration go-live: [Link to article]
+👉 Read our full deep dive on the final checklist before a webshop platform migration go-live: https://www.manifera.com/blog/webshop-development-final-checklist-platform-migration
 
 #ITManager #WebshopDevelopment #PlatformMigration #EcommerceGoLive #TechnicalDueDiligence #Manifera

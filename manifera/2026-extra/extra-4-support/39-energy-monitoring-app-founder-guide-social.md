@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a energy monitoring: [Link to article]
+👉 Read the founder's guide to building a energy monitoring: https://www.manifera.com/blog/energy-monitoring-app-founder-guide
 
 #EnergyTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

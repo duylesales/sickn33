@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural comparison on native cross platform mobile app: [Link to article]
+👉 Read our full architectural comparison on native cross platform mobile app: https://www.manifera.com/blog/native-vs-cross-platform-mobile-app
 
 #MobileDevelopment #AppArchitecture #Flutter #CustomSoftware #TechLeadership #Manifera

@@ -12,6 +12,6 @@
 
 A gate engineers trust catches more risk than a gate engineers route around. 🔐
 
-👉 Read our full deep dive on DevSecOps implementation: [Link to article]
+👉 Read our full deep dive on DevSecOps implementation: https://www.manifera.com/blog/devsecops-implementation
 
 #DevSecOps #CICD #AppSec #VPEngineering #Manifera

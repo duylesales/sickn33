@@ -15,6 +15,6 @@ At **LaunchStudio**, we harden property management AI tools with exactly this la
 
 Sanne's result: a genuinely layered permission model now scopes owners, staff, and contractors to exactly what their role requires. 🚀
 
-👉 Get your property management tool reviewed against what this vertical actually requires: [Link to article]
+👉 Get your property management tool reviewed against what this vertical actually requires: https://launchstudio.eu/en/blog/real-estate-ai-tool-before-touches-tenant-data
 
 #AINativeFounder #LaunchStudio #Manifera #AccessControl #PropTech

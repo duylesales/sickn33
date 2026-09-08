@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Clarifox shipped without a second infrastructure bill — search response time dropped to under 15ms at the target 8,000-article volume, with relevance ranking Algolia would have needed separate configuration to match. 🚀
 
-👉 Find out which branch of the search decision tree you're actually on: [Link to article]
+👉 Find out which branch of the search decision tree you're actually on: https://launchstudio.eu/en/blog/search-when-a-database-query-stops-being-enough
 
 #IndieHacker #Postgres #ProductionReady #SaaS #LaunchStudio #Manifera

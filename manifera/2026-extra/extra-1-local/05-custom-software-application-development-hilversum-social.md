@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on custom software application development hilversum: [Link to article]
+👉 Read our full deep dive on custom software application development hilversum: https://www.manifera.com/blog/custom-software-application-development-hilversum
 
 #Hilversum #MediaPark #NoordHolland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

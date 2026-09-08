@@ -15,6 +15,6 @@ At **LaunchStudio**, backed by Manifera's engineers based in Amsterdam and beyon
 
 ArchiefKoppel now has one authoritative source for permission logic instead of eight, and Nina has a repeatable process for catching this pattern going forward. 🚀
 
-👉 Suspect your AI-built product has hidden duplication? Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Suspect your AI-built product has hidden duplication? Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/technical-debt-means-different-ai-wrote-it
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalDebt #CodeQuality

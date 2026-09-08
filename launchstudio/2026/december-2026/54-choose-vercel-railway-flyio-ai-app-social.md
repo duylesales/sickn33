@@ -18,6 +18,6 @@ At **LaunchStudio**, backed by Manifera's DevOps experience across 160+ projects
 
 Her fix: kept the frontend on Vercel, moved just the nightly job to Railway. Zero disruption, problem solved. 🚀
 
-👉 Read the full hosting decision guide: [Link to article]
+👉 Read the full hosting decision guide: https://launchstudio.eu/en/blog/choose-vercel-railway-flyio-ai-app
 
 #Vercel #Railway #LaunchStudio #Manifera #AINativeFounder #DevOps

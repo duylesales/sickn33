@@ -12,6 +12,6 @@ Nobody wakes up one morning to a failed vendor relationship. It's a demo that sl
 
 Most drift caught early is a fifteen-minute conversation. Caught late, it's a formal escalation with a paper trail. 🎯
 
-👉 Read our full framework for running vendor relationship health checks: [Link to article]
+👉 Read our full framework for running vendor relationship health checks: https://www.manifera.com/blog/vendor-relationship-health-checks-catching-drift-before-it-becomes-a-crisis
 
 #VPEngineering #VendorManagement #EngineeringLeadership #VendorPerformance #TechLeadership #Manifera

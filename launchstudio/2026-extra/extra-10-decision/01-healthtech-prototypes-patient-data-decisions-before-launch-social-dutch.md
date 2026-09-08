@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, zorgen onze senior engineers er
 
 💡 Zo tekende fysiotherapie-app RouteToRecovery binnen 4 weken na onze revisie haar eerste contract met drie zorgpraktijken.
 
-👉 Ontdek hoe u uw healthtech-prototype veilig en AVG-proof lanceert: [Link naar artikel]
+👉 Ontdek hoe u uw healthtech-prototype veilig en AVG-proof lanceert: https://launchstudio.eu/nl/blog/healthtech-prototypes-patient-data-decisions-before-launch
 
 #Healthtech #AVG #GDPR #Patiëntdata #LaunchStudio #Manifera

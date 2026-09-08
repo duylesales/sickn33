@@ -15,6 +15,6 @@ At **LaunchStudio**, this is the exact category of gap Manifera's 120-plus engin
 
 Mikko's result: input validation, edge-case handling, and clear error surfacing added to the routing engine — completed in 9 business days. 🚀
 
-👉 Wondering where AI in saas products stops being enough on its own? See the before-and-after: [Link to article]
+👉 Wondering where AI in saas products stops being enough on its own? See the before-and-after: https://launchstudio.eu/en/blog/where-ai-in-saas-products-still-needs-a
 
 #AINativeFounder #LaunchStudio #Manifera #AIinSaaS #EdgeCaseHandling

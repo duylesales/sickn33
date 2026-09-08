@@ -12,6 +12,6 @@
 
 Engineering risk is business risk for a SaaS company — underwrite it like the revenue risk it actually is. 🛡️
 
-👉 Read our full deep dive on saas development outsourcing amsterdam governance: [Link to article]
+👉 Read our full deep dive on saas development outsourcing amsterdam governance: https://www.manifera.com/blog/saas-development-outsourcing-amsterdam-governance
 
 #Amsterdam #CFO #SaaSDevelopment #RiskManagement #Manifera

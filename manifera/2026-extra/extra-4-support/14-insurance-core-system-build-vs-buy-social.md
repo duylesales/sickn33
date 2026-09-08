@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Explore the full build vs buy analysis for insurance core system: [Link to article]
+👉 Explore the full build vs buy analysis for insurance core system: https://www.manifera.com/blog/insurance-core-system-build-vs-buy
 
 #InsurTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

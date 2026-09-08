@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been optimizing RAG and vector infrastructure since 2
 
 LaunchStudio compressed Emily's vector embedding structures and set up metadata indexing — her monthly Pinecone hosting fees dropped by 65% while search accuracy stayed high. 🚀
 
-👉 See how to cut your vector bill: [Link to article]
+👉 See how to cut your vector bill: https://launchstudio.eu/en/blog/hidden-costs-of-vector-databases-rag
 
 #AINativeFounder #LaunchStudio #Manifera #VectorDatabases #RAGCosts

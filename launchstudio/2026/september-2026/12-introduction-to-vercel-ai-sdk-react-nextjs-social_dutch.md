@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 enterprise frontend- en streamingsyste
 
 Charlottes weergaveproblemen werden direct opgelost, waardoor cv-verbeteringen nu woord voor woord vloeiend animeren. (€1.300 (Frontend SDK Integration Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek de voordelen van de Vercel AI SDK: [Link naar artikel]
+👉 Ontdek de voordelen van de Vercel AI SDK: https://launchstudio.eu/nl/blog/introduction-to-vercel-ai-sdk-react-nextjs
 
 #AINativeFounder #LaunchStudio #Manifera #VercelAISDK #StreamingUI #NextJS #React #GenerativeUI #AISaaS #StartupOpschalen

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Lars lanceerde zijn app twee weken later en sloot direct zijn 50 klanten aan, goed voor €750 MRR. (€2.200 (Launch Ready Pakket met Mollie-integratie) — binnen 10 werkdagen opgeleverd). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/make-a-ai-prototype-real-product-checklist
 
 #LaunchStudio #Manifera #AISaaS #MVPChecklist #TechFounders #LovableAI #Mollie #FitnessApp #StartupLaunch

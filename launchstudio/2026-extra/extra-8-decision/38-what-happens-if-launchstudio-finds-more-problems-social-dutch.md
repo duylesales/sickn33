@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar engineeringpraktijk, 
 
 Zijn resultaat: aangepaste scope binnen het uur goedgekeurd, live in 13 dagen, volledig inzicht de hele weg. 🚀
 
-👉 Vraag ons direct hoe wij scopewijzigingen afhandelen voordat u zich vastlegt: [Link naar artikel]
+👉 Vraag ons direct hoe wij scopewijzigingen afhandelen voordat u zich vastlegt: https://launchstudio.eu/nl/blog/what-happens-if-launchstudio-finds-more-problems
 
 #SaaSOprichter #EngineeringTransparantie #ScopeCreep #LaunchStudio #Manifera #ProductieKlaar

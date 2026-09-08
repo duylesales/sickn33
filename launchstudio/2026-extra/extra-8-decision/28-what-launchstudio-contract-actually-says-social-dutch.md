@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, is t
 
 Sems resultaat: getekend met volledig vertrouwen, geen enkel geschil tijdens de opdracht, ContractPilot live in 10 werkdagen voor €2.900. 🚀
 
-👉 Vraag een voorbeeldcontract op voor uw scopinggesprek: [Link naar artikel]
+👉 Vraag een voorbeeldcontract op voor uw scopinggesprek: https://launchstudio.eu/nl/blog/what-launchstudio-contract-actually-says
 
 #LaunchStudio #Contract #IPEigendom #Manifera #SaaS #ScaleUp #Transparantie

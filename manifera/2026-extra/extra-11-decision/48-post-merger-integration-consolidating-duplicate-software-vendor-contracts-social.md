@@ -12,6 +12,6 @@ Two CRMs, three project management tools, two dev vendors — combined software 
 
 Consolidation savings are real — but only if the sequencing respects the contracts, not the board deck. 📄
 
-👉 Read our full deep dive on consolidating duplicate vendor contracts after a merger: [Link to article]
+👉 Read our full deep dive on consolidating duplicate vendor contracts after a merger: https://www.manifera.com/blog/post-merger-integration-consolidating-duplicate-software-vendor-contracts
 
 #PostMergerIntegration #MergersAndAcquisitions #CFO #ITRationalization #PMI #Manifera

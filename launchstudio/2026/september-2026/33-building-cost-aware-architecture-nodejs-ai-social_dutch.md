@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 kostenbewuste backend-architecturen vi
 
 LaunchStudio bouwde database-afgedwongen dagelijkse tokenlimieten per organisatie in Next.js — waardoor budgetuitputting werd voorkomen en Alexanders maandelijkse serverkosten stabiliseerden. (€1.200 (API Guardrail Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u een kostenbewuste AI-architectuur bouwt: [Link naar artikel]
+👉 Ontdek hoe u een kostenbewuste AI-architectuur bouwt: https://launchstudio.eu/nl/blog/building-cost-aware-architecture-nodejs-ai
 
 #AINativeFounder #LaunchStudio #Manifera #CostAwareArchitecture #NodeJS #SemanticCaching #ModelRouting #NextJS #AISaaS #StartupOpschalen

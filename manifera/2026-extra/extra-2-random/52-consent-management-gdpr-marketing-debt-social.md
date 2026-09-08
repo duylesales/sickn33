@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on consent management gdpr marketing debt: [Link to article]
+👉 Read our full deep dive on consent management gdpr marketing debt: https://www.manifera.com/blog/consent-management-gdpr-marketing-debt
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we precies dit framework uit — dezelfde 6 dimensie
 
 Zijn resultaat: doorstond de technische review van een grote klant 2 weken later — de reviewer noemde specifiek de CI-pijplijn en toegangscontrole als onderscheidende factoren. 🚀
 
-👉 Vraag een afgebakende schatting aan voor JOUW specifieke gaten: [Link naar artikel]
+👉 Vraag een afgebakende schatting aan voor JOUW specifieke gaten: https://launchstudio.eu/nl/blog/weekend-framework-six-things-prototype-launch
 
 #IndieHacker #VibeCoding #LaunchStudio #Manifera #CI #AIBeveiliging

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type design-tokensystemen, HITL-archite
 
 Sadies CRM werd consistent en professioneel: De verfijnde workflow verkortte prototyping-iteraties met 60% dankzij gestructureerde design-tokens. (€1.100 (Design Token Setup Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/role-of-ai-product-manager
 
 #LaunchStudio #Manifera #AISaaS #AIProductManager #Evals #HumanInTheLoop #DesignTokens #DesignSystems #TechFounders #StartupOpschalen

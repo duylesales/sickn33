@@ -12,6 +12,6 @@ At **Manifera**, we build native and cross-platform apps without limits via our 
 ✅ Scalable backend architectures designed by senior Tech Leads. 🧠
 
 Stop buying toys. Start building enterprise-grade engines! 🚀🛡️
-👉 The hidden dangers of Low-Code platforms for enterprise apps: [Link to article]
+👉 The hidden dangers of Low-Code platforms for enterprise apps: https://www.manifera.com/blog/mobile-app-making-company
 
 #TechLeadership #MobileAppDevelopment #EnterpriseArchitecture #LowCode #CTO #VietnamTech #AmsterdamBusiness #SoftwareEngineering #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengen wij de enterprise-grade engineeringdiscipline van M
 
 Haar resultaat: ZorgKoppel werd gelanceerd met de beveiligingsgaten gedicht en zonder illusies dat het rapport iets anders had gevalideerd dan veiligheid en stabiliteit. 🚀
 
-👉 Een productiegereedheidsscore teruggekregen en niet zeker wat die daadwerkelijk dekt: [Link naar artikel]
+👉 Een productiegereedheidsscore teruggekregen en niet zeker wat die daadwerkelijk dekt: https://launchstudio.eu/nl/blog/production-readiness-score-measures
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReadiness #ProductionReady

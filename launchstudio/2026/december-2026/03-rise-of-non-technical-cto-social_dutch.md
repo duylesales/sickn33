@@ -17,6 +17,6 @@ Bij **LaunchStudio** fungeren we als de betrouwbare engineering-partner voor nie
 
 U hoeft geen software-ontwikkelaar te worden. U heeft het juiste team achter u nodig. 🛡️🚀
 
-👉 Lees de 5 competenties voor elke niet-technische CTO: [Link naar artikel]
+👉 Lees de 5 competenties voor elke niet-technische CTO: https://launchstudio.eu/nl/blog/rise-of-non-technical-cto
 
 #NonTechnicalCTO #LaunchStudio #AINativeFounder #StartupLeadership #Manifera #SaaS #TechFounders #StartupOpschalen

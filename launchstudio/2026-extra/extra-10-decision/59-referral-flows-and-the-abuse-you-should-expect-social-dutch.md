@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we f
 
 💡 Zo zag Sander de Wit van Bonnetje in 11 dagen €2.400 aan spooktegoed verdwijnen door 40 nep-accounts van 1 persoon. Na onze ledger- en antifraudebouw leverde het 34 échte betalende klanten op zonder een cent aan fraude.
 
-👉 Is uw referral-flow waterdicht tegen misbruik? [Link naar artikel]
+👉 Is uw referral-flow waterdicht tegen misbruik? https://launchstudio.eu/nl/blog/referral-flows-and-the-abuse-you-should-expect
 
 #SaaSGrowth #ReferralProgram #FraudPrevention #Webhooks #LaunchStudio #Manifera

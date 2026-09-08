@@ -12,6 +12,6 @@ Contract drafted. Kickoff date set. Then Security raised a blocking objection th
 
 Alignment done early is faster than alignment skipped and paid for later. 🤝
 
-👉 Read our full deep dive on stakeholder alignment before choosing a vendor: [Link to article]
+👉 Read our full deep dive on stakeholder alignment before choosing a vendor: https://www.manifera.com/blog/stakeholder-alignment-before-choosing-a-software-vendor
 
 #HeadOfProduct #StakeholderAlignment #VendorSelection #CrossFunctional #ProductLeadership #Manifera

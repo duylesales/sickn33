@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on when walk away from software vendor: [Link to article]
+👉 Read our full guide on when walk away from software vendor: https://www.manifera.com/blog/when-to-walk-away-from-software-vendor
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

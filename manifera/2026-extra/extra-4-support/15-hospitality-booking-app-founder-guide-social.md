@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a hospitality booking: [Link to article]
+👉 Read the founder's guide to building a hospitality booking: https://www.manifera.com/blog/hospitality-booking-app-founder-guide
 
 #HospitalityTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

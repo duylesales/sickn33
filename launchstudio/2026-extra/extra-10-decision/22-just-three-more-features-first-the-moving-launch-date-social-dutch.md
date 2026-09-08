@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, helpen onze senior engineers u 
 
 💡 Zo brachten we bijlesplatform van Iris Dekker na 4 maanden uitstel binnen 11 dagen live, met 6 betalende docenten in week 1.
 
-👉 Lees hoe u de valkuil van de verschuivende lanceringsdatum definitief doorbreekt: [Link naar artikel]
+👉 Lees hoe u de valkuil van de verschuivende lanceringsdatum definitief doorbreekt: https://launchstudio.eu/nl/blog/just-three-more-features-first-the-moving-launch-date
 
 #StartupFounder #ProductLaunch #ScopeCreep #MVP #LaunchStudio #Manifera

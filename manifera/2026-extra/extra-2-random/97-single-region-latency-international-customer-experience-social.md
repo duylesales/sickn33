@@ -12,6 +12,6 @@
 
 Close a 280ms tax your local team can't feel but your customers experience on every single click. 🛡️
 
-👉 Read our full deep dive on single region latency international customer experience: [Link to article]
+👉 Read our full deep dive on single region latency international customer experience: https://www.manifera.com/blog/single-region-latency-international-customer-experience
 
 #CTO #CloudArchitecture #Latency #GlobalScale #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, this full route inventory is a standard part of our Launch 
 
 His result: the debug route removed entirely, the full route set audited, an exposed credential rotated as a precaution. 🚀
 
-👉 Send over a description of your project — expect a reply within a business day: [Link to article]
+👉 Send over a description of your project — expect a reply within a business day: https://launchstudio.eu/en/blog/ai-data-security-what-your-prototype-assumes-youll-add-later
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

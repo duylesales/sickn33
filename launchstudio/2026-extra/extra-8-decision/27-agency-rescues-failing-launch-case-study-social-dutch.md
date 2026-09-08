@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, zijn
 
 Floors resultaat: oorzaak gevonden in 40 minuten, TicketFlow dezelfde dag gestabiliseerd voor €3.800 — en de klant behouden voor de volgende drie festivaledities. 🚀
 
-👉 Zet uw escalatiepad op voordat u het nodig heeft: [Link naar artikel]
+👉 Zet uw escalatiepad op voordat u het nodig heeft: https://launchstudio.eu/nl/blog/agency-rescues-failing-launch-case-study
 
 #LaunchStudio #Bureau #WhiteLabel #Manifera #SaaS #LaunchDayCrisis #Noodhulp

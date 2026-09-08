@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Svens resultaat: de data-beveiligingsverklaring van zijn klant in één keer goedgekeurd, en het grootste contract in de geschiedenis van zijn bureau. 🚀
 
-👉 Breng ons de backend-vereisten van uw volgende klant: [Link naar artikel]
+👉 Breng ons de backend-vereisten van uw volgende klant: https://launchstudio.eu/nl/blog/white-label-agency-partner-enterprise-work-case-study
 
 #WhiteLabel #BureauGroei #LaunchStudio #Manifera #NoCode #Enterprise #Backend

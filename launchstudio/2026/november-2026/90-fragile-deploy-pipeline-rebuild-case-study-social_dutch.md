@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De eerstvolgende vergelijkbare deploy werd uitgerold zonder voor klanten zichtbare downtime, en ving binnen 90 seconden een niet-gerelateerde bug op. (€3.100 (Relaunch & Scale Pakket) — productieklaar en uitgerold in 12 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/fragile-deploy-pipeline-rebuild-case-study
 
 #LaunchStudio #Manifera #AISaaS #DeployPipeline #ZeroDowntime

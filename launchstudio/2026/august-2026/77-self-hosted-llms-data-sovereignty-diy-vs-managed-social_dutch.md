@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen wij dit type soevereine, VPC-geïsoleerde implementa
 
 De deal van Rasmus werd bij de eerste review gesloten: de beveiligingsraad van het ziekenhuisnetwerk keurde de implementatie goed bij de eerste review, en het meerjarige contract werd gesloten zonder verdere technische bezwaren. (€ 6.400 (Enterprise Hardening Pakket) — 12 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/self-hosted-llms-data-sovereignty-diy-vs-managed
 
 #LaunchStudio #Manifera #AISaaS #DataSovereignty #GDPR

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building exactly this kind of technical evidence
 
 The dispute resolved through a negotiated licensing adjustment instead of litigation, backed by real evidence. (€4,600 (Enterprise Hardening Package) — 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/legal-technical-help-ai-copyright-ip-disputes
 
 #LaunchStudio #Manifera #AISaaS #AICopyright #IPLaw

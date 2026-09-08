@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Marco's team dropped the contractor entirely: infrastructure spend fell roughly 40%, and unpredictable job failures disappeared for good. (€3,600 (Relaunch & Scale Package) — 12 business days, for a comparable engagement.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/self-managed-kubernetes-vs-launchstudio-serverless
 
 #LaunchStudio #Manifera #AISaaS #Kubernetes #Serverless

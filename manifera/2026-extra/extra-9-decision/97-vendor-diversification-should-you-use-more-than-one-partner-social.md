@@ -12,6 +12,6 @@ A CTO split her dev work across three agencies so no single failure could take d
 
 Before splitting your next engagement across vendors, make sure the boundary is genuinely clean — not just reassuring on a slide. 🔍
 
-👉 Read our full deep dive on vendor diversification: [Link to article]
+👉 Read our full deep dive on vendor diversification: https://www.manifera.com/blog/vendor-diversification-should-you-use-more-than-one-partner
 
 #CTO #VendorRisk #SoftwareDevelopment #TechStrategy #DedicatedTeam #Manifera

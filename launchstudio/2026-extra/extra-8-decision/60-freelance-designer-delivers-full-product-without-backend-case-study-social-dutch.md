@@ -16,6 +16,6 @@ Bij **LaunchStudio** is Manifera's engineeringteam uw stille productiepartner �
 
 Nina's resultaat: €8.500 gefactureerd aan haar klant, €2.800 aan LaunchStudio besteed, geleverd in 11 werkdagen. 🚀
 
-👉 Vertel ons over uw volgende klantproject: [Link naar artikel]
+👉 Vertel ons over uw volgende klantproject: https://launchstudio.eu/nl/blog/freelance-designer-delivers-full-product-without-backend
 
 #LaunchStudio #WhiteLabel #Freelancer #Manifera #UXDesign #SaaS #Ontwerpbureau

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, starten we fixed-scope projecte
 
 💡 Zo hielpen we Marit Hendriks van Groenteboxen binnen 9 dagen live te gaan in plaats van 2,5 week, puur door 1 avond voorbereiding.
 
-👉 Ontdek wat u moet opschrijven vóór de software-overdracht: [Link naar artikel]
+👉 Ontdek wat u moet opschrijven vóór de software-overdracht: https://launchstudio.eu/nl/blog/what-to-write-down-before-you-hand-your-product-to-anyone
 
 #StartupFounders #KnowledgeTransfer #ProductHandover #SaaSLaunch #LaunchStudio #Manifera

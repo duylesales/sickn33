@@ -14,6 +14,6 @@ At LaunchStudio, we prioritize fixes by what a technical reviewer actually check
 
 Felix's due diligence call closed with no material technical concerns flagged by the investor's advisor. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/due-diligence-prep-10-days-case-study
 
 #LaunchStudio #Manifera #AISaaS #DueDiligence #Fundraising

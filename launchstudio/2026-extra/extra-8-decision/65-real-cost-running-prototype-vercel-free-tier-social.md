@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera engineers who've deployed across Vercel,
 
 His result: 1,200+ active users during exam season, zero limit-related outages, €22/month total hosting cost. 🚀
 
-👉 Tell us about your app and expected traffic: [Link to article]
+👉 Tell us about your app and expected traffic: https://launchstudio.eu/en/blog/real-cost-running-prototype-vercel-free-tier
 
 #LaunchStudio #Manifera #VercelLimits #IndieHacker #VibeCoding #SaaSHosting #StartupTech

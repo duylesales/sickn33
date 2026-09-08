@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, bouwen we de 
 
 Sophies resultaat: RBAC live in 8 werkdagen voor €2.400 — het contract met Blokker werd op dag 10 getekend. 🚀
 
-👉 Ontdek hoe u enterprise-klanten scoort zonder uw frontend te herbouwen: [Link naar artikel]
+👉 Ontdek hoe u enterprise-klanten scoort zonder uw frontend te herbouwen: https://launchstudio.eu/nl/blog/b2b-saas-role-based-access-control-case-study
 
 #LaunchStudio #RBAC #EnterpriseSaaS #Manifera #SaaS #Supabase #AIApp

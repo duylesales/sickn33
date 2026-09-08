@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Het resultaat: een Redis-job queue en één toegevoegde index losten beide problemen op in 4 dagen — een volgende verkeerspiek verliep zonder een seconde vertraging. 🚀
 
-👉 Vraag een gratis scope-analyse van uw prototype aan: [Link naar artikel]
+👉 Vraag een gratis scope-analyse van uw prototype aan: https://launchstudio.eu/nl/blog/infrastructure-decisions-between-user-1-and-user-100
 
 #SaaS #ScaleUp #ProductionReady #StartupGrowth #LaunchStudio #Manifera

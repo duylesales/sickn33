@@ -15,6 +15,6 @@ Bij **LaunchStudio** nemen we de app die een oprichter al met AI heeft gebouwd e
 
 Haar resultaat: HeritageStay lanceerde op schema met correct geïsoleerde gastgegevens en live werkende betalingen, vlak vóór Middelburg's zomertoeristenseizoen. 🚀
 
-👉 Ziet uw demo er af uit? Laten we uitzoeken of dat ook echt zo is: [Link naar artikel]
+👉 Ziet uw demo er af uit? Laten we uitzoeken of dat ook echt zo is: https://launchstudio.eu/nl/blog/app-with-ai-middelburg
 
 #AINativeFounder #LaunchStudio #Manifera #AppWithAI #Middelburg

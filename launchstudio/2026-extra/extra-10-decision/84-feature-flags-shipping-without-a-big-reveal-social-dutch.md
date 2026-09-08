@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), implementer
 
 💡 Zo lekte Lotte Vermeer van Studiolijn financiële uurtarieven tijdens een ongecontroleerde 'Big Bang' release. Na onze feature flag-inrichting zette ze bij een latere release een haperende update binnen 20 seconden uit vanaf haar telefoon, waardoor slechts 3 accounts er iets van merkten.
 
-👉 Kunt u een falende feature vandaag binnen 10 seconden uitschakelen zonder te deployen? [Link naar artikel]
+👉 Kunt u een falende feature vandaag binnen 10 seconden uitschakelen zonder te deployen? https://launchstudio.eu/nl/blog/feature-flags-shipping-without-a-big-reveal
 
 #SaaS #FeatureFlags #DevOps #ProductManagement #LaunchStudio #Manifera

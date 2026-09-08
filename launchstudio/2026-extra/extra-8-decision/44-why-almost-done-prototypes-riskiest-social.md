@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 Her result: multi-tenant authorization fixed in 8 days, before the next practice demo. 🚀
 
-👉 Find out how "almost done" you actually are: [Link to article]
+👉 Find out how "almost done" you actually are: https://launchstudio.eu/en/blog/why-almost-done-prototypes-riskiest
 
 #AINativeFounder #StartupRisk #LaunchStudio #Manifera #ProductionReady #SaaS

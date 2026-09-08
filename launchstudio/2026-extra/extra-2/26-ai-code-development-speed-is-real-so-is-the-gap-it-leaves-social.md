@@ -15,6 +15,6 @@ At **LaunchStudio**, this dependency audit is part of our production-readiness p
 
 Her result: the affected dependency updated, the rest of the tree audited — closed before the partnership's due diligence concluded. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/ai-code-development-speed-is-real-so-is-the-gap-it-leaves
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SoftwareEngineering

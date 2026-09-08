@@ -14,6 +14,6 @@ Bij **LaunchStudio** optimaliseren we sinds 2014 enterprise database-architectur
 
 Noahs querylatentie daalde van 5.000 ms naar minder dan 120 ms, waardoor advocatenkantoren direct interactief kunnen zoeken. (€1.850 (Vector Index Optimization Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Vereenvoudig uw AI-database-architectuur: [Link naar artikel]
+👉 Vereenvoudig uw AI-database-architectuur: https://launchstudio.eu/nl/blog/optimizing-postgres-for-vector-search-pgvector
 
 #AINativeFounder #LaunchStudio #Manifera #PostgreSQL #pgvector #VectorSearch #RAG #DatabaseOptimization #AISaaS #StartupOpschalen

@@ -16,6 +16,6 @@ Bij **LaunchStudio** kunnen we precies deze score voor jouw app verifiëren of p
 
 Zijn resultaat: een eerlijke score bracht het ene gat naar boven dat hij nooit daadwerkelijk getest had — gedicht in 4 dagen. 🚀
 
-👉 Laat jouw app professioneel scoren tegen precies dit framework: [Link naar artikel]
+👉 Laat jouw app professioneel scoren tegen precies dit framework: https://launchstudio.eu/nl/blog/production-readiness-score-grade-your-own-ai-built-app
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

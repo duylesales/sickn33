@@ -14,6 +14,6 @@ Bij **LaunchStudio** herbouwen wij dit type enterprise-vertrouwen al sinds 2014 
 
 Het account van Yusuf kwam terug: het fintech-bedrijf draaide zijn opzegging terug en tekende een vernieuwd jaarcontract met toegevoegde kwartaalbeveiligingsreviewvereisten, twaalf werkdagen na de oorspronkelijke opzegbrief. (€ 4.700 (Enterprise Hardening Pakket) — 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/churned-enterprise-account-trust-rebuild-case-study
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #ChurnRecovery

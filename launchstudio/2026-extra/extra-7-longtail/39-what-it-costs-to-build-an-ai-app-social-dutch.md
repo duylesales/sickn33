@@ -15,6 +15,6 @@ Bij **LaunchStudio** zorgt Manifera's 11+ jaar ervaring in productie-engineering
 
 Sebastian's resultaat: een volledige productiebouw — boeking, betalingen, accounts, deployment — voor een fractie van de offerte van de freelancer, opgeleverd in 11 werkdagen. 🚀
 
-👉 Benieuwd wat het daadwerkelijk kost om uw AI-app naar productie te brengen?: [Link naar artikel]
+👉 Benieuwd wat het daadwerkelijk kost om uw AI-app naar productie te brengen?: https://launchstudio.eu/nl/blog/what-it-costs-to-build-an-ai-app
 
 #AINativeFounder #LaunchStudio #Manifera #BuildCosts #AIFounder

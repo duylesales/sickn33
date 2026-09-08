@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on kano model feature prioritization: [Link to article]
+👉 Read our full guide on kano model feature prioritization: https://www.manifera.com/blog/kano-model-feature-prioritization
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

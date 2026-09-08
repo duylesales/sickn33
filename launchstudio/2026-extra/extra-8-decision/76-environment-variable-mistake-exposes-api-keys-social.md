@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera engineers who've found exposed keys in t
 
 His result: $340 in OpenAI charges was the total cost of the lesson — zero credentials left exposed after the restructure. 🚀
 
-👉 Send us your repository and we'll tell you which credentials are visible right now: [Link to article]
+👉 Send us your repository and we'll tell you which credentials are visible right now: https://launchstudio.eu/en/blog/environment-variable-mistake-exposes-api-keys
 
 #LaunchStudio #Manifera #APIKeySecurity #VibeCoding #IndieHacker #MVPSecurity #CursorAI

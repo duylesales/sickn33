@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the import was rebuilt with encoding detection, validate-then-write, and undo — the customer who had asked to cancel migrated successfully on the second attempt and stayed. 🚀
 
-👉 See what a production-grade import actually requires: [Link to article]
+👉 See what a production-grade import actually requires: https://launchstudio.eu/en/blog/importing-a-customers-existing-data-without-losing-any-of-it
 
 #SaaS #DataMigration #IndieHacker #FounderLife #LaunchStudio #Manifera

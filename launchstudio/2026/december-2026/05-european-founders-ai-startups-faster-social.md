@@ -12,6 +12,6 @@ At **LaunchStudio**, powered by Manifera's 120+ engineers (11 years, 160+ enterp
 
 Your prototype + our engineering = a European founder who can outcompete a $12M-funded startup. 🚀
 
-👉 Read why European founders are winning: [Link to article]
+👉 Read why European founders are winning: https://launchstudio.eu/en/blog/european-founders-ai-startups-faster
 
 #EuropeanStartups #LaunchStudio #Manifera #GDPR #AINativeFounder #SaaS #Amsterdam

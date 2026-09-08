@@ -12,6 +12,6 @@ A "unified" supply chain dashboard can be quietly stitching together a real-time
 
 Visibility is only as real as the EDI layer underneath it. Test that layer before you trust the dashboard. 🎯
 
-👉 Read our full deep dive on EDI due diligence for visibility platforms: [Link to article]
+👉 Read our full deep dive on EDI due diligence for visibility platforms: https://www.manifera.com/blog/supply-chain-visibility-platform-vendors-edi-integration-due-diligence
 
 #SupplyChain #EDI #CTO #LogisticsTech #DataIntegration #Manifera

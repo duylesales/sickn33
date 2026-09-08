@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit soort audit van de gegevensstroom een kwestie van ee
 
 Zijn resultaat: de analyses van LeerVolg bevatten nu geen persoonlijk identificeerbare leerlinggegevens meer, en Tygo heeft documentatie klaarliggen voor de gegevensbeschermingsbeoordeling van elke school. 🚀
 
-👉 Wilt u weten wat uw analysetool daadwerkelijk ontvangt? Vraag het ons: [Link naar artikel]
+👉 Wilt u weten wat uw analysetool daadwerkelijk ontvangt? Vraag het ons: https://launchstudio.eu/nl/blog/usage-analytics-privacy-safe-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #DataPrivacy #EdTech

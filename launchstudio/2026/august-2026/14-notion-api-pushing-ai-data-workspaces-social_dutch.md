@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type API- en integratieproblemen op sin
 
 Logans applicatie werd vlekkeloos: Document-exports slaagden in 100% van de gevallen, zelfs tijdens zware bulk-overdrachten. (€1.450 (API Queuing Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/notion-api-pushing-ai-data-workspaces
 
 #LaunchStudio #Manifera #AISaaS #NotionAPI #Productiviteit #APIIntegratie #TechFounders #StartupOpschalen

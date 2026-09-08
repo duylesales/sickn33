@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the practice group re-engaged the following quarter and signed, after data minimisation and documentation delivered in 4 business days. 🚀
 
-👉 Get ready for the procurement questionnaire before it costs you a deal: [Link to article]
+👉 Get ready for the procurement questionnaire before it costs you a deal: https://launchstudio.eu/en/blog/customer-data-and-third-party-models-what-leaves-your-system
 
 #GDPR #DataPrivacy #HealthTech #SaaS #LaunchStudio #Manifera

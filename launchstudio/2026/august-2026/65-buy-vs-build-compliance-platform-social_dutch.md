@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Elins compliance-dashboard ging van 31 open bevindingen naar 2 binnen de opdracht, en ze hield haar compliance-platformabonnement daarna aan puur voor doorlopende bewijsverzameling. (€3.200 (Relaunch & Scale Pakket) — 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/buy-vs-build-compliance-platform
 
 #LaunchStudio #Manifera #AISaaS #SOC2 #ComplianceAutomation

@@ -12,6 +12,6 @@ A $40M acquisition closes. Week two: the sole contractor who built the core plat
 
 Vendor risk in M&A isn't a legal footnote — it's sitting in the data room, waiting to be read. 📄
 
-👉 Read our full deep dive on vendor contracts that survive an acquisition: [Link to article]
+👉 Read our full deep dive on vendor contracts that survive an acquisition: https://www.manifera.com/blog/m-and-a-technical-due-diligence-vendor-contracts-that-survive-an-acquisition
 
 #MergersAndAcquisitions #DueDiligence #CFO #DealRisk #PrivateEquity #Manifera

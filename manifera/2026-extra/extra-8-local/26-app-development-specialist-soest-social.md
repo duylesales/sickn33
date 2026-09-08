@@ -12,6 +12,6 @@
 
 Stop testing "specialist" claims after the contract is signed. 🛡️
 
-👉 Read our full deep dive on app development specialist Soest: [Link to article]
+👉 Read our full deep dive on app development specialist Soest: https://www.manifera.com/blog/app-development-specialist-soest
 
 #Soest #Utrecht #HeadOfProduct #AppDevelopment #MediaTech #Manifera

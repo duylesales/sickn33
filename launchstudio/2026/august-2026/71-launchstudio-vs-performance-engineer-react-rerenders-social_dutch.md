@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type React-performanceprobleem al sinds 2014
 
 Het dashboard van Kenji ging van haperend naar instantaan: de tabel met 5.000 rijen rendert nu in minder dan 50ms tijdens scrollen en filteren, zonder waarneembare vertraging op desktop of mobiel. (€ 1.900 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-performance-engineer-react-rerenders
 
 #LaunchStudio #Manifera #AISaaS #ReactPerformance #WebDev

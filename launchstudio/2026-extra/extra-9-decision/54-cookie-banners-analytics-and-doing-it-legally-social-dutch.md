@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 120+ senior engineers, control
 
 Het resultaat in de praktijk: 100% inzicht in websitebezoekers via Plausible, plus een werkende toestemmingspoort voor de ene advertentiepixel die écht nodig was. 🚀
 
-👉 Stuur ons uw prototype — wij vertellen u direct of uw cookie-inrichting juridisch en technisch deugt: [Link naar artikel]
+👉 Stuur ons uw prototype — wij vertellen u direct of uw cookie-inrichting juridisch en technisch deugt: https://launchstudio.eu/nl/blog/cookie-banners-analytics-and-doing-it-legally
 
 #CookieConsent #WebAnalytics #AVGCompliance #SaaSOntwikkeling #LaunchStudio #Manifera

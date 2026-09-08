@@ -15,6 +15,6 @@ At **LaunchStudio**, a full secrets audit — codebase + complete git history �
 
 Her result: exposed key rotated same day, zero unauthorized usage, CI scanning now blocks it from ever happening again. 🚀
 
-👉 Get your repo history audited before you regret not checking: [Link to article]
+👉 Get your repo history audited before you regret not checking: https://launchstudio.eu/en/blog/hardcoded-secrets-problem-nobody-notices
 
 #AISecure #LaunchStudio #Manifera #IndieHacker #GitSecurity

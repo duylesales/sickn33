@@ -12,6 +12,6 @@
 
 Not in-house versus offshore in the abstract — a governed pod versus a team still filling its second seat. 🛡️
 
-👉 Read our full deep dive on outsourcing app development in house or offshore: [Link to article]
+👉 Read our full deep dive on outsourcing app development in house or offshore: https://www.manifera.com/blog/outsourcing-app-development-in-house-or-offshore
 
 #AppDevelopment #Amsterdam #Vietnam #CTO #Brainport #Manifera

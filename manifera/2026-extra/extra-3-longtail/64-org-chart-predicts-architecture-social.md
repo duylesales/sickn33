@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on org chart predicts architecture: [Link to article]
+👉 Read our full guide on org chart predicts architecture: https://www.manifera.com/blog/org-chart-predicts-architecture
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

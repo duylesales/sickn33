@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo ontdekte Nienke Bakker van Afsprakenlijn dat 11 fysiotherapiepraktijken al sinds maart dubbele boekingen hadden doordat een Google-koppeling geruisloos was uitgevallen. Na onze automatische storingsmonitoring en tokenversleuteling liep de synchronisatie weer vlekkeloos.
 
-👉 Hoe veilig bewaart uw software de OAuth-tokens van uw klanten? [Link naar artikel]
+👉 Hoe veilig bewaart uw software de OAuth-tokens van uw klanten? https://launchstudio.eu/nl/blog/connecting-to-a-customers-other-tools-the-oauth-decisions
 
 #OAuth #GoogleWorkspace #SaaSIntegrations #CyberSecurity #LaunchStudio #Manifera

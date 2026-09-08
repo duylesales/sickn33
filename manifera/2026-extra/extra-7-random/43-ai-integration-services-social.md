@@ -12,6 +12,6 @@
 
 We spent weeks comparing AI models and about two days thinking about our own data. It should have been the other way around. 🛡️
 
-👉 Read our full deep dive on ai integration services: [Link to article]
+👉 Read our full deep dive on ai integration services: https://www.manifera.com/blog/ai-integration-services
 
 #AIIntegration #CTO #DataStrategy #Manifera

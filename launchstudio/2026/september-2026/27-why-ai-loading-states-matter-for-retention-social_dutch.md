@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we al meer dan een decennium latency-gevoelige enter
 
 Voor Samuel daalde het vroegtijdig verlaten van de app met 75% omdat gebruikers direct zagen dat het systeem actief werkte. (€950 (UX Loading Optimization Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
-👉 Ontdek waarom AI-laadstatussen het verschil maken: [Link naar artikel]
+👉 Ontdek waarom AI-laadstatussen het verschil maken: https://launchstudio.eu/nl/blog/why-ai-loading-states-matter-for-retention
 
 #AINativeFounder #LaunchStudio #Manifera #LoadingStates #AIUX #LaborIllusion #FrontendDesign #VercelAISDK #AISaaS #StartupOpschalen

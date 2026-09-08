@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of enterprise data engineeri
 
 Ruben migrated 12,400 profiles and 38,000 tickets with zero downtime — dashboard queries dropped from 12.4 seconds to 85 milliseconds and hosting fell from €450/month to €25/month, in 8 business days for €2,600. 🚀
 
-👉 Plan your seamless database migration with our engineering team: [Link to article]
+👉 Plan your seamless database migration with our engineering team: https://launchstudio.eu/en/blog/non-technical-founder-migrates-firebase-supabase-case-study
 
 #LaunchStudio #Manifera #DatabaseMigration #Supabase #Firebase #PostgreSQL #ZeroDowntime

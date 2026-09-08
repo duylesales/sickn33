@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type compliance-architectuur en content
 
 Stella's generator werd enterprise-proof: Risicovolle merknamen werden automatisch geblokkeerd en het platform voldeed aan alle compliance-eisen van grote klanten. (€1.900 (Copyright Filter Integratie) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/copyright-dilemma-who-owns-ai-output
 
 #LaunchStudio #Manifera #AISaaS #Copyright #IntellectualProperty #Auteursrecht #AICompliance #TrademarkProtection #TechFounders #StartupOpschalen

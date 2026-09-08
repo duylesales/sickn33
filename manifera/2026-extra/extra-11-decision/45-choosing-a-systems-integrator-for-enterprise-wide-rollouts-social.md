@@ -12,6 +12,6 @@ The pitch team has twenty years of experience and a dozen comparable rollouts. S
 
 The gap between the pitch and the delivery team is almost always contractual — close it before you sign. 📝
 
-👉 Read our full deep dive on choosing a systems integrator for enterprise rollouts: [Link to article]
+👉 Read our full deep dive on choosing a systems integrator for enterprise rollouts: https://www.manifera.com/blog/choosing-a-systems-integrator-for-enterprise-wide-rollouts
 
 #SystemsIntegrator #EnterpriseIT #ITManager #ChangeManagement #DigitalTransformation #Manifera

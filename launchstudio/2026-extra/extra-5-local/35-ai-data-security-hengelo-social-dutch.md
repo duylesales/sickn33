@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren de 120+ technici van Manifera precies deze databevei
 
 Zorgrooster doorstond de gegevensbeschermingsbeoordeling van de regionale zorgorganisatie bij de eerste indiening, en verzorgt nu de planning voor meer dan zestig verpleegkundigen in Hengelo en Twente. 🚀
 
-👉 Verwerkt u patiëntgegevens in Hengelo? Controleer uw RLS-beleid vóór uw volgende pilot: [Link naar artikel]
+👉 Verwerkt u patiëntgegevens in Hengelo? Controleer uw RLS-beleid vóór uw volgende pilot: https://launchstudio.eu/nl/blog/ai-data-security-hengelo
 
 #AINativeFounder #LaunchStudio #Manifera #Hengelo #GDPR

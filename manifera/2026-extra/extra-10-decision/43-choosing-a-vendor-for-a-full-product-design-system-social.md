@@ -12,6 +12,6 @@ Eighteen months after your design system "shipped," your team is still building 
 
 The component showcase is the easy 20% of this work. Governance, documentation, and adoption are the other 80% — and where most systems actually die. 🎯
 
-👉 Read our full deep dive on choosing a vendor for a full product design system: [Link to article]
+👉 Read our full deep dive on choosing a vendor for a full product design system: https://www.manifera.com/blog/choosing-a-vendor-for-a-full-product-design-system
 
 #HeadOfProduct #DesignSystems #DesignTokens #ComponentLibrary #ProductDesign #Manifera

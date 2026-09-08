@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on software development firm: [Link to article]
+👉 Read our full deep dive on software development firm: https://www.manifera.com/blog/software-development-firm
 
 #SoftwareArchitecture #TechLeadership #CTO #Manifera

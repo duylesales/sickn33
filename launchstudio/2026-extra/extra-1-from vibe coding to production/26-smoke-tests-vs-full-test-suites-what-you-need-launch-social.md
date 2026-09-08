@@ -16,6 +16,6 @@ At **LaunchStudio**, we implement exactly this right-sized coverage as standard 
 
 His result: launched 3 weeks earlier, without meaningfully increasing his real risk. 🚀
 
-👉 Get the right amount of testing for where you actually are: [Link to article]
+👉 Get the right amount of testing for where you actually are: https://launchstudio.eu/en/blog/smoke-tests-vs-full-test-suites-what-you-need-launch
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

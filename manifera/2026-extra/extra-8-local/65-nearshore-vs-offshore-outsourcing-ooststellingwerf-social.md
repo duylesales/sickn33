@@ -12,6 +12,6 @@ Every outsourcing pitch opens with a day rate. Every CFO who's run a full-year e
 
 Properly governed offshore engagements typically run 30-45% below equivalent nearshore total cost — savings that actually hold up at month eighteen.
 
-👉 Read our full deep dive on nearshore vs offshore outsourcing Ooststellingwerf: [Link to article]
+👉 Read our full deep dive on nearshore vs offshore outsourcing Ooststellingwerf: https://www.manifera.com/blog/nearshore-vs-offshore-outsourcing-ooststellingwerf
 
 #Ooststellingwerf #Friesland #CFO #OffshoreDevelopment #NearshoreVsOffshore #TotalCostOfOwnership #TechFinance #Manifera

@@ -12,6 +12,6 @@ Three colleagues, three finalists, three confident opinions — one liked the sa
 
 Structure doesn't remove judgment. It makes judgment explicit. ⚖️
 
-👉 Read our full deep dive on building a weighted vendor scorecard: [Link to article]
+👉 Read our full deep dive on building a weighted vendor scorecard: https://www.manifera.com/blog/weighted-scorecard-templates-comparing-software-vendors-objectively
 
 #VendorSelection #ITManagement #ProcurementStrategy #DecisionFramework #SoftwareVendor #Manifera

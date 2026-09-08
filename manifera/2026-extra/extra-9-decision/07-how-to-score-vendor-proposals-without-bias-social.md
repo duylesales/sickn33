@@ -12,6 +12,6 @@ One of your three vendor proposals just looks better — cleaner layout, slicker
 
 Tabulate the weighted totals before the final meeting. Discuss the numbers — don't generate them live. 🧮
 
-👉 Read our full deep dive on scoring vendor proposals without bias: [Link to article]
+👉 Read our full deep dive on scoring vendor proposals without bias: https://www.manifera.com/blog/how-to-score-vendor-proposals-without-bias
 
 #ITManager #VendorSelection #RFPEvaluation #ProcurementScorecard #VendorComparison #Manifera

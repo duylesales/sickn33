@@ -15,6 +15,6 @@ At **LaunchStudio**, we harden exactly this billing-and-scale transition for gro
 
 Isabelle's result: PayRail's billing now behaves like a real subscription system instead of a payment button that happened to work most of the time. 🚀
 
-👉 Scaling past MVP with real billing on the line: check whether your Stripe setup can take it: [Link to article]
+👉 Scaling past MVP with real billing on the line: check whether your Stripe setup can take it: https://launchstudio.eu/en/blog/what-it-really-means-to-code-with-ai
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSBilling #StripeIntegration

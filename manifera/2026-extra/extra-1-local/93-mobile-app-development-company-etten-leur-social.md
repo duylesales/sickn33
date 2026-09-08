@@ -12,6 +12,6 @@
 
 Adoption is the only metric that actually matters. 🛡️
 
-👉 Read our full deep dive on mobile app development company etten-leur: [Link to article]
+👉 Read our full deep dive on mobile app development company etten-leur: https://www.manifera.com/blog/mobile-app-development-company-etten-leur
 
 #EttenLeur #NoordBrabant #FieldService #CMO #MobileAppDevelopment #WorkerAdoption #Manifera

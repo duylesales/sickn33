@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai occupancy prediction: [Link to article]
+👉 Retire all 3 biggest myths about ai occupancy prediction: https://www.manifera.com/blog/ai-occupancy-prediction-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

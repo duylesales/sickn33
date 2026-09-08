@@ -12,6 +12,6 @@ What happens to your release calendar the week your only engineer who understand
 
 Scale the architecture first. The headcount will actually work then. 🧩
 
-👉 Read our full deep dive on app dev team Hillegom: [Link to article]
+👉 Read our full deep dive on app dev team Hillegom: https://www.manifera.com/blog/app-dev-team-hillegom
 
 #Hillegom #Bollenstreek #ZuidHolland #CTO #ScaleUp #Manifera

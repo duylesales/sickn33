@@ -15,6 +15,6 @@ Bij **LaunchStudio** verharden wij AI-tools voor vastgoedbeheer met precies dit 
 
 Het resultaat voor Sanne: een echt gelaagd toestemmingsmodel scoped nu eigenaren, personeel en aannemers exact op wat hun rol vereist. 🚀
 
-👉 Laat uw tool voor vastgoedbeheer beoordelen aan de hand van wat deze branche daadwerkelijk vereist: [Link naar artikel]
+👉 Laat uw tool voor vastgoedbeheer beoordelen aan de hand van wat deze branche daadwerkelijk vereist: https://launchstudio.eu/nl/blog/real-estate-ai-tool-before-touches-tenant-data
 
 #AINativeFounder #LaunchStudio #Manifera #AccessControl #PropTech

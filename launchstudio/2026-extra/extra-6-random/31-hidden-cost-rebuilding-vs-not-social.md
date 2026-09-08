@@ -15,6 +15,6 @@ At **LaunchStudio**, we walk founders through exactly this framework before any 
 
 Her result: the refactor Anouk delayed for eight months ended up far cheaper than the cumulative cost of avoiding it, and she closed one of the two stalled deals within a month of the fix landing. 🚀
 
-👉 Wondering if your "someday" fix is actually costing you every month: [Link to article]
+👉 Wondering if your "someday" fix is actually costing you every month: https://launchstudio.eu/en/blog/hidden-cost-rebuilding-vs-not
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalDebt #SaaSFounders

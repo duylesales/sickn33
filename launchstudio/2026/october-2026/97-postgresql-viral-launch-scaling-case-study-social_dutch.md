@@ -14,6 +14,6 @@ Bij **LaunchStudio** schalen wij PostgreSQL onder echte virale belasting al sind
 
 Elena's app absorbeerde de volledige piek van 15.000 bezoekers zonder downtime, waarbij een aanzienlijk deel van dat verkeer werd omgezet in nieuwe geregistreerde gebruikers die actief bleven ruim nadat de post stopte met trenden. (€ 2.900, Relaunch & Scale Pakket — live gestabiliseerd binnen 4 uur, vervolgverharding voltooid in 6 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/postgresql-viral-launch-scaling-case-study
 
 #LaunchStudio #Manifera #AISaaS #PostgreSQL #ViraleLancering

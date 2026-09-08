@@ -12,6 +12,6 @@ A 200-microsecond gap means nothing to a portfolio rebalancer. It's the whole ed
 
 Buy the connectivity. Build the edge. Know the difference before you sign anything. 🎯
 
-👉 Read our full deep dive on the trading platform build vs buy decision: [Link to article]
+👉 Read our full deep dive on the trading platform build vs buy decision: https://www.manifera.com/blog/build-vs-buy-a-trading-platform-the-latency-vendor-decision
 
 #TradingTechnology #FinTech #CTO #AlgoTrading #MiFIDII #Manifera

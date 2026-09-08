@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Zijn resultaat: Rick eist nu altijd gedocumenteerde data-afspraken en wees twee risicovolle projecten af die meer aan schadebeheersing hadden gekost dan de factuur opbracht. 🚀
 
-👉 Twijfelt u over een project? Leg het aan ons voor: [Link naar artikel]
+👉 Twijfelt u over een project? Leg het aan ons voor: https://launchstudio.eu/nl/blog/wanneer-u-het-prototype-project-van-een-klant-moet-weigeren
 
 #BureauLeven #WhiteLabel #Klantbeheer #AgencyOwner #LaunchStudio #Manifera

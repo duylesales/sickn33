@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we dit soort geavanceerde component-architecturen vi
 
 Voor Grace steeg de interactie met haar app met 150% en namen affiliate-boekingen met 40% toe. (€2.400 (Generative UI Integration Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek de kracht van Generative UI: [Link naar artikel]
+👉 Ontdek de kracht van Generative UI: https://launchstudio.eu/nl/blog/generative-ui-streaming-react-components-llm
 
 #AINativeFounder #LaunchStudio #Manifera #GenerativeUI #VercelAISDK #React #NextJS #FrontendEngineering #AISaaS #StartupOpschalen

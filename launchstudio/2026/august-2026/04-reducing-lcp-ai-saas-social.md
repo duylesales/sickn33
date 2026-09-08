@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Sophia's application achieved silky-smooth performance: LCP dropped to 1.4s, boosting SEO rankings and user retention. (€2,100 (Core Web Vitals Package) — production-ready and deployed in 6 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/reducing-lcp-ai-saas
 
 #LaunchStudio #Manifera #AISaaS #ReducingLCPinAISaaSA #TechFounders

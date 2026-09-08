@@ -12,6 +12,6 @@ Eleven months after a contractor left, their root-adjacent AWS access was still 
 
 Independent audit logging on your side, always. Trust, but verify. 🔍
 
-👉 Read our full deep dive on vendor access controls before handing over cloud credentials: [Link to article]
+👉 Read our full deep dive on vendor access controls before handing over cloud credentials: https://www.manifera.com/blog/vendor-access-controls-before-handing-over-cloud-credentials
 
 #SecurityLead #CloudSecurity #IAM #VendorRisk #AccessControl #CyberSecurity #Manifera

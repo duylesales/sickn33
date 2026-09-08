@@ -12,6 +12,6 @@ A vendor's website shows an ISO 27001 badge and a SOC 2 logo. Neither tells you 
 
 A badge on a website is marketing. The scope statement and the actual report are evidence. 🎯
 
-👉 Read our full vendor certification checklist for regulated software projects: [Link to article]
+👉 Read our full vendor certification checklist for regulated software projects: https://www.manifera.com/blog/vendor-certification-checklist-for-regulated-software-projects-iso-soc2
 
 #ComplianceOfficer #ISO27001 #SOC2 #VendorDueDiligence #SecurityCompliance #RegTech #Manifera

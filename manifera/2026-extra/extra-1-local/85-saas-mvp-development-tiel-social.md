@@ -12,6 +12,6 @@
 
 Speed and discipline aren't actually in conflict. 🛡️
 
-👉 Read our full deep dive on saas mvp development tiel: [Link to article]
+👉 Read our full deep dive on saas mvp development tiel: https://www.manifera.com/blog/saas-mvp-development-tiel
 
 #Tiel #Gelderland #Betuwe #Foodtech #CMO #SaaSMVP #TechnicalDebt #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, wrapping proper deployment infrastructure around code that 
 
 Pieter's result: when a second, unrelated bug surfaced weeks later, he isolated the exact deploy that caused it within minutes — pure guesswork under his old process. 🚀
 
-👉 Still deploying by hand and hoping for the best? Here's what actually changes: [Link to article]
+👉 Still deploying by hand and hoping for the best? Here's what actually changes: https://launchstudio.eu/en/blog/do-you-still-need-ai-software-developers-if-a-prompt-built-your-app
 
 #AINativeFounder #LaunchStudio #Manifera #DevOps #CursorAI

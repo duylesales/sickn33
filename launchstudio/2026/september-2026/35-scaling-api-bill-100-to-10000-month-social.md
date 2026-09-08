@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been architecting for scale under real cost constrain
 
 LaunchStudio implemented strict Redis rate-limits and database credit checks for Michael — bot registrations were blocked, protecting his API margins and server resources. 🚀
 
-👉 Get the scaling playbook: [Link to article]
+👉 Get the scaling playbook: https://launchstudio.eu/en/blog/scaling-api-bill-100-to-10000-month
 
 #AINativeFounder #LaunchStudio #Manifera #APICosts #LLMOptimization

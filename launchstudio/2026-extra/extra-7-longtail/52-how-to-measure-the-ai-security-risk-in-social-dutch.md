@@ -15,6 +15,6 @@ Bij **LaunchStudio** beschouwen we "ik kan de code lezen" en "de code is geaudit
 
 Niamh's resultaat: blootgestelde sleutel geroteerd, geheimen verplaatst naar de serverzijde en een schone controle over elke andere integratie — afgerond in 6 werkdagen. 🚀
 
-👉 Technisch genoeg om uw door AI gegenereerde code te lezen? Dat is niet hetzelfde als het risico ervan hebben gemeten: [Link naar artikel]
+👉 Technisch genoeg om uw door AI gegenereerde code te lezen? Dat is niet hetzelfde als het risico ervan hebben gemeten: https://launchstudio.eu/nl/blog/how-to-measure-the-ai-security-risk-in
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #SecretsManagement

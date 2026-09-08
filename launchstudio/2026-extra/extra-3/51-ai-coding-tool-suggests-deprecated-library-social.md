@@ -15,6 +15,6 @@ At **LaunchStudio**, we check both the currency of AI-suggested dependencies at 
 
 His result: the deprecated library was replaced with the actively-maintained alternative before launch — closing a gap that would've meant RouteCalc's core routing depended on an unmaintained package from version one. 🚀
 
-👉 Wondering what your AI tool quietly recommended that's already outdated? Send us your prototype link: [Link to article]
+👉 Wondering what your AI tool quietly recommended that's already outdated? Send us your prototype link: https://launchstudio.eu/en/blog/ai-coding-tool-suggests-deprecated-library
 
 #AINativeFounder #LaunchStudio #Manifera #DependencyRisk #IndieHacker

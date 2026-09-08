@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies de kloof die we dichten voor niet-technische
 
 Lotte's resultaat: PetPass werd gelanceerd met een volledig werkende backend, echte betalingen en accounts die daadwerkelijk op haar naam staan. 🚀
 
-👉 Voer dezelfde checklist met zeven punten uit op uw eigen door AI gebouwde app voordat u iemand uitnodigt: [Link naar artikel]
+👉 Voer dezelfde checklist met zeven punten uit op uw eigen door AI gebouwde app voordat u iemand uitnodigt: https://launchstudio.eu/nl/blog/how-to-make-an-ai-app-without-learning
 
 #AINativeFounder #LaunchStudio #Manifera #NoCodeApp #StripePayments

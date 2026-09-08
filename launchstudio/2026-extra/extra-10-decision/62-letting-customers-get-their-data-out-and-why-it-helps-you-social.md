@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: export rebuilt as a background job with expiring links and automatic cleanup — the stalled deal completed the following quarter, and the same export later satisfied two GDPR access requests with zero manual work. 🚀
 
-👉 See what a genuinely complete export requires: [Link to article]
+👉 See what a genuinely complete export requires: https://launchstudio.eu/en/blog/letting-customers-get-their-data-out-and-why-it-helps-you
 
 #SaaS #GDPR #DataPortability #IndieHacker #LaunchStudio #Manifera

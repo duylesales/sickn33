@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen onze technici in Singapore scheiding van omgevin
 
 Haar resultaat: VoorraadKoppel draait nu test en productie op volledig gescheiden infrastructuur, met een gedocumenteerd goedkeuringsproces voordat een toekomstige migratie livegegevens raakt. 🚀
 
-👉 Niet zeker of uw test- en productiegegevens daadwerkelijk gescheiden zijn: [Link naar artikel]
+👉 Niet zeker of uw test- en productiegegevens daadwerkelijk gescheiden zijn: https://launchstudio.eu/nl/blog/prototype-production-never-share-schema
 
 #AINativeFounder #LaunchStudio #Manifera #DatabaseSchema #AIDevelopment

@@ -12,6 +12,6 @@
 
 Cheap on the invoice isn't the same as cheap on the shop floor. 🛡️
 
-👉 Read our full deep dive on saas product development zutphen: [Link to article]
+👉 Read our full deep dive on saas product development zutphen: https://www.manifera.com/blog/saas-product-development-zutphen
 
 #Zutphen #Gelderland #ManufacturingTech #CFO #BuildVsBuy #SaaSDevelopment #Manifera

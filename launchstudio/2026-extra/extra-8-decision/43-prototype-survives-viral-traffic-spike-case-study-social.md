@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 His result: all 1,200 keynote voters handled live, zero failed requests. 🚀
 
-👉 Find out where your prototype would break first: [Link to article]
+👉 Find out where your prototype would break first: https://launchstudio.eu/en/blog/prototype-survives-viral-traffic-spike-case-study
 
 #SaaS #ScaleUp #LaunchStudio #Manifera #ViralGrowth #ProductionReady

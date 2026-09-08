@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Jonas' vernieuwingsaudit werd afgesloten zonder openstaande bevindingen op toegangscontrole, en zijn team onderhoudt geen enkel handmatig toegangslogboek meer. (€ 5.400 (Enterprise Hardening Pakket) — audit trail herbouwd en geverifieerd in 13 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/soc2-type-ii-renewal-in-house-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #SOC2Compliance #AuditReadiness

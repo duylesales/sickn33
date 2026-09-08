@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type compliance-architectuur en audit-l
 
 Lincolns recruitment-platform werd volledig conform: De app voldeed aan alle documentatie-eisen van de EU AI Act en kon veilig uitrollen in Europa. (€2.400 (AI Act Audit Trail Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/eu-ai-act-what-b2b-founders-must-know
 
 #LaunchStudio #Manifera #AISaaS #EUAIAct #AICompliance #AILaw #RiskManagement #AuditTrail #TechFounders #StartupOpschalen

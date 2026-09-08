@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam-based team runs exactly this kind of maintena
 
 Her result: PlantRooster now has a daily automated checkout check and a monthly dependency review on the calendar, so the next break gets caught in hours, not weeks. 🚀
 
-👉 Haven't written a maintenance plan for your AI-built tool yet? See what a maintenance pass would cost: [Link to article]
+👉 Haven't written a maintenance plan for your AI-built tool yet? See what a maintenance pass would cost: https://launchstudio.eu/en/blog/ai-generated-tool-maintenance-plan
 
 #AINativeFounder #LaunchStudio #Manifera #ProductMaintenance #AIBuiltApps

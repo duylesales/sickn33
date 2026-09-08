@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on software quality metrics production incidents: [Link to article]
+👉 Read our full guide on software quality metrics production incidents: https://www.manifera.com/blog/software-quality-metrics-production-incidents
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

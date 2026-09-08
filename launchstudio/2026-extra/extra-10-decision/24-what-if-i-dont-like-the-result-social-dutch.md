@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, werken we uitsluitend met fixed
 
 💡 Zo hielpen we abonnementsbox-platform van Tomas Novak met een glashelder scope-document binnen 13 werkdagen live — inclusief tussentijdse add-on zonder discussie.
 
-👉 Lees hoe een scope-document uw investering beschermt: [Link naar artikel]
+👉 Lees hoe een scope-document uw investering beschermt: https://launchstudio.eu/nl/blog/what-if-i-dont-like-the-result
 
 #FixedScope #SoftwareOutsourcing #TechStartup #NoCodeToPro #LaunchStudio #Manifera

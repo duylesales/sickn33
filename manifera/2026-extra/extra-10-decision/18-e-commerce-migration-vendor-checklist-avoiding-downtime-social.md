@@ -12,6 +12,6 @@ Launch morning, checkout works, the new platform is live — and organic traffic
 
 The checkout flow is the easy 20% of a migration — data integrity and cutover risk are where revenue actually gets protected. 🎯
 
-👉 Read our full deep dive on the e-commerce migration vendor checklist for avoiding downtime: [Link to article]
+👉 Read our full deep dive on the e-commerce migration vendor checklist for avoiding downtime: https://www.manifera.com/blog/e-commerce-migration-vendor-checklist-avoiding-downtime
 
 #EcommerceMigration #ITManager #SEO #PlatformMigration #Ecommerce #Manifera

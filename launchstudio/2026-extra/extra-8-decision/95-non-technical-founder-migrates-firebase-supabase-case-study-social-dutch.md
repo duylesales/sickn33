@@ -16,6 +16,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's 11+ jaar data-engineering
 
 Rubens resultaat: 12.400 profielen en 38.000 tickets gemigreerd met nul downtime — queries van 12,4s naar 85ms, kosten van €450 naar €25/maand. 🚀
 
-👉 Plan uw naadloze databasemigratie: [Link naar artikel]
+👉 Plan uw naadloze databasemigratie: https://launchstudio.eu/nl/blog/non-technical-founder-migrates-firebase-supabase-case-study
 
 #LaunchStudio #Supabase #Firebase #DatabaseMigratie #SaaS #PostgreSQL #Manifera

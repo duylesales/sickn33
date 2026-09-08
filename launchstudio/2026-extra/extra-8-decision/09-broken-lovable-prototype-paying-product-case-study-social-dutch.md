@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Arjens resultaat: 4 nieuwe betalende pro-abonnees geconverteerd in week 1 — 6 maanden nadat de app voor het eerst werd gebouwd. 🚀
 
-👉 Ontdek wat er werkelijk hapert in uw prototype: [Link naar artikel]
+👉 Ontdek wat er werkelijk hapert in uw prototype: https://launchstudio.eu/nl/blog/broken-lovable-prototype-paying-product-case-study
 
 #Lovable #VibeCoding #LaunchStudio #Manifera #Stripe #SaaS #Betaalsystemen

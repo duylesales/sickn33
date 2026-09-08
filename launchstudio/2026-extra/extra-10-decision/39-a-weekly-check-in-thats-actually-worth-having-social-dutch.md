@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar software-ervaring), is
 
 💡 Zo ontdekte Lotte Faassen van Weekmenu een naderende rate limit 6 weken vóórdat het een ramp kon worden.
 
-👉 Bekijk de 30-minuten risico-agenda voor uw software-overleg: [Link naar artikel]
+👉 Bekijk de 30-minuten risico-agenda voor uw software-overleg: https://launchstudio.eu/nl/blog/a-weekly-check-in-thats-actually-worth-having
 
 #AgileScrum #StartupLeadership #ProductManagement #ProjectManagement #LaunchStudio #Manifera

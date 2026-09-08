@@ -11,6 +11,6 @@ At **Manifera**, we don't just build apps; we architect agility. Through our Hyb
 ✅ Your mobile team can release weekly, completely independent of the legacy monolith's glacial pace! 🚀
 
 Stop suffocating your mobile team. Start unbundling your architecture! 🛡️💎
-👉 The CTO's playbook for decoupling mobile apps from legacy backends: [Link to article]
+👉 The CTO's playbook for decoupling mobile apps from legacy backends: https://www.manifera.com/blog/mobile-app-services
 
 #Microservices #EnterpriseArchitecture #MobileAppDevelopment #TechLeadership #CTO #SoftwareEngineering #VietnamTech #AmsterdamBusiness #Manifera

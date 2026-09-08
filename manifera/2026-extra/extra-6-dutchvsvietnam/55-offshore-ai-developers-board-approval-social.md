@@ -12,6 +12,6 @@
 
 The board isn't approving outsourcing to Vietnam. They're approving a Netherlands-governed initiative that executes efficiently offshore. 🛡️
 
-👉 Read our full deep dive on offshore ai developers board approval: [Link to article]
+👉 Read our full deep dive on offshore ai developers board approval: https://www.manifera.com/blog/offshore-ai-developers-board-approval
 
 #CFO #BoardApproval #AIDevelopment #RiskManagement #Manifera

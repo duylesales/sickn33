@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: live tegen een fractie van de app-offerte, zeven weken eerder, 100% van het abonnementsgeld behouden en direct vindbaar via Google-zoekopdrachten. 🚀
 
-👉 Reken beide opties door met onze prijscalculator: [Link naar artikel]
+👉 Reken beide opties door met onze prijscalculator: https://launchstudio.eu/nl/blog/mobiele-app-of-responsive-web-de-beslissing-die-uw-budget-bepaalt
 
 #NoCode #AIFounder #LaunchStudio #Manifera #MobileApp #ProductionReady

@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers apply the same access-control dis
 
 MediaFlow's storage is now fully locked down, with no further exposure detected in a follow-up scan. 🚀
 
-👉 Building a media platform with AI for coding? Lock down your storage before it leaks: [Link to article]
+👉 Building a media platform with AI for coding? Lock down your storage before it leaks: https://launchstudio.eu/en/blog/ai-for-coding-hilversum
 
 #AINativeFounder #LaunchStudio #Manifera #AIforCoding #Hilversum

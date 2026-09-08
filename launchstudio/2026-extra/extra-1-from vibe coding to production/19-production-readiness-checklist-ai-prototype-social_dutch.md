@@ -16,6 +16,6 @@ Bij **LaunchStudio** draaien we precies deze checklist tegen jouw specifieke pro
 
 Haar resultaat: het echte risico werd eerst gerepareerd — nice-to-haves wachtten tot omzet ze kon financieren. 🚀
 
-👉 Laat jouw prototype controleren tegen precies deze checklist: [Link naar artikel]
+👉 Laat jouw prototype controleren tegen precies deze checklist: https://launchstudio.eu/nl/blog/production-readiness-checklist-ai-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #ProductieKlaar #VibeCoding

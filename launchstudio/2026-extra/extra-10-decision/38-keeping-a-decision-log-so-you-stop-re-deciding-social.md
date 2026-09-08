@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 His result: a disagreement that had cost roughly two hours across three prior rounds was resolved permanently in one lookup, and the log went on to capture eleven more decisions over the following quarter. 🚀
 
-👉 Start your own five-column decision log today: [Link to article]
+👉 Start your own five-column decision log today: https://launchstudio.eu/en/blog/keeping-a-decision-log-so-you-stop-re-deciding
 
 #SaaS #FounderLife #ProductDevelopment #StartupTips #LaunchStudio #Manifera

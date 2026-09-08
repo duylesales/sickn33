@@ -15,6 +15,6 @@ Bij **LaunchStudio** is het decennialange werk van Manifera voor klanten met ond
 
 De data protection officer keurde LabLoop na de reparatie goed voor voortgezet gebruik bij drie extra labs. 🚀
 
-👉 Bouwt u een AI-ontwikkelingsproject met onderzoeksgegevens? Controleer uw versleuteling voordat een DPO dat doet: [Link naar artikel]
+👉 Bouwt u een AI-ontwikkelingsproject met onderzoeksgegevens? Controleer uw versleuteling voordat een DPO dat doet: https://launchstudio.eu/nl/blog/ai-development-leiden
 
 #AINativeFounder #LaunchStudio #Manifera #AIDevelopment #Leiden

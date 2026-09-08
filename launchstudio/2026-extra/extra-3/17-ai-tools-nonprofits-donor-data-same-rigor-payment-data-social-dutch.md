@@ -15,6 +15,6 @@ Bij **LaunchStudio** passen wij dezelfde nauwgezetheid toe op AI-tools van non-p
 
 Het resultaat voor Marijke: juiste toegangssegmentatie beperkt gevoelige gegevens van begunstigden nu tot coördinatoren, waardoor blootstelling aan tientallen vrijwilligers die het nooit nodig hadden, is gedicht. 🚀
 
-👉 Laat de AI-tool van uw non-profitorganisatie beoordelen met de nauwkeurigheid die de gegevens daadwerkelijk verdienen: [Link naar artikel]
+👉 Laat de AI-tool van uw non-profitorganisatie beoordelen met de nauwkeurigheid die de gegevens daadwerkelijk verdienen: https://launchstudio.eu/nl/blog/ai-tools-nonprofits-donor-data-same-rigor-payment-data
 
 #AINativeFounder #LaunchStudio #Manifera #NonprofitTech #DataPrivacy

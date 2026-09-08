@@ -16,6 +16,6 @@ Bij **LaunchStudio** is uitgebreide invoervalidatie — zowel beveiligings- als 
 
 Zijn resultaat: bedrijfsregelvalidatie dichtte een gat dat generieke framework-bescherming nooit ontworpen was te vangen. 🚀
 
-👉 Laat jouw invoervalidatie controleren tegen echte vereisten: [Link naar artikel]
+👉 Laat jouw invoervalidatie controleren tegen echte vereisten: https://launchstudio.eu/nl/blog/input-validation-first-line-defense-ai-tools-skip
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #AISecure

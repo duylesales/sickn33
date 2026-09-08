@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on integration test suite nobody runs e2e testing: [Link to article]
+👉 Read our full deep dive on integration test suite nobody runs e2e testing: https://www.manifera.com/blog/integration-test-suite-nobody-runs-e2e-testing
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

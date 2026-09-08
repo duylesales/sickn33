@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full practice management cost breakdown: [Link to article]
+👉 Read the full practice management cost breakdown: https://www.manifera.com/blog/practice-management-platform-cost-analysis
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

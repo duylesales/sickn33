@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Het engineeringteam van de overnemer herbeoordeelde de fixes en trok hun voorgestelde verlaging van 20% volledig in — de deal sloot op de oorspronkelijk besproken waardering. (€4.200 (Enterprise Hardening Pakket) — volledig herstel en reconciliatie voltooid binnen 13 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/technical-due-diligence-failure-cost
 
 #LaunchStudio #Manifera #AISaaS #DueDiligence #StartupFinanciering

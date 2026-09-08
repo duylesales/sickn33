@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-ervaring, w
 
 Jeroens resultaat: sindsdien drie problemen opgevangen vóór een gebruiker ze meldde, voor €600. 🚀
 
-👉 Zet monitoring op voordat uw volgende gebruiker iets ontdekt dat u had kunnen opvangen: [Link naar artikel]
+👉 Zet monitoring op voordat uw volgende gebruiker iets ontdekt dat u had kunnen opvangen: https://launchstudio.eu/nl/blog/monitoring-setup-nobody-thinks-about
 
 #LaunchStudio #Monitoring #VibeCoding #Manifera #SaaS #Sentry #AIApp

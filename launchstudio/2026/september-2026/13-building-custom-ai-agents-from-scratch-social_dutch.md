@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 betrouwbare enterprise AI-agents vi
 
 Elijahs succespercentage voor boekingsverzameling steeg van 40% naar 95%, doordat de AI gebruikers nu gestructureerd om ontbrekende gegevens vraagt. (€2.400 (Custom Agent Development Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u betrouwbare AI-agents bouwt: [Link naar artikel]
+👉 Ontdek hoe u betrouwbare AI-agents bouwt: https://launchstudio.eu/nl/blog/building-custom-ai-agents-from-scratch
 
 #AINativeFounder #LaunchStudio #Manifera #AIAgents #ToolCalling #ReAct #NodeJS #TypeScript #AISaaS #StartupOpschalen

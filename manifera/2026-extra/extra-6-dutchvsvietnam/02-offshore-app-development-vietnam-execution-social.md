@@ -12,6 +12,6 @@
 
 Vet past the deck. Ask the five questions that actually separate reliability from a good pitch. 🛡️
 
-👉 Read our full deep dive on offshore app development vietnam execution: [Link to article]
+👉 Read our full deep dive on offshore app development vietnam execution: https://www.manifera.com/blog/offshore-app-development-vietnam-execution
 
 #VietnamSoftwareDevelopment #Amsterdam #VPEngineering #OffshoreDevelopment #VendorDiligence #Manifera

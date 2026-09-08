@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: full access ready at 09:00 on day one, Mollie tested live four days early, launched right on the quoted date. 🚀
 
-👉 Send us your prototype link for free feedback on what's connected and what's missing: [Link to article]
+👉 Send us your prototype link for free feedback on what's connected and what's missing: https://launchstudio.eu/en/blog/what-your-engineering-partner-needs-from-you-day-one
 
 #AINativeFounder #LovableToProduction #LaunchStudio #Manifera #FounderLife #StartupOps

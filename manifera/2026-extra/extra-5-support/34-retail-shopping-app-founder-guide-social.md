@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a retail shopping app app: [Link to article]
+👉 Read the non-technical founder's guide to building a retail shopping app app: https://www.manifera.com/blog/retail-shopping-app-founder-guide
 
 #RetailTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

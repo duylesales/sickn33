@@ -14,6 +14,6 @@ At **LaunchStudio**, we've architected Zero-Trust systems since 2014 through Man
 
 John passed his security reviews and moved into pilot deployments with local credit unions. 🚀
 
-👉 See our Zero-Trust architecture playbook: [Link to article]
+👉 See our Zero-Trust architecture playbook: https://launchstudio.eu/en/blog/how-to-implement-zero-trust-security-ai
 
 #AINativeFounder #LaunchStudio #Manifera #ZeroTrust #AISecurity

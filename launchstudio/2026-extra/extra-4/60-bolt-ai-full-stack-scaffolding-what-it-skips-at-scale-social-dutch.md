@@ -15,6 +15,6 @@ Bij **LaunchStudio** komen we een versie van dit verbindingsplafond tegen bij ee
 
 Haar resultaat: AgendaKoppel verwerkt nu meerdere keren de eerdere gelijktijdige belasting zonder één verbindingsfout, en Elin heeft inzicht voordat het weer een probleem wordt. 🚀
 
-👉 Gaat u binnenkort verder groeien dan uw bètagebruikers? Laat eerst uw infrastructuur checken: [Link naar artikel]
+👉 Gaat u binnenkort verder groeien dan uw bètagebruikers? Laat eerst uw infrastructuur checken: https://launchstudio.eu/nl/blog/bolt-ai-full-stack-scaffolding-what-it-skips-at-scale
 
 #AINativeFounder #LaunchStudio #Manifera #BoltAI #ScalingUp

@@ -12,6 +12,6 @@
 
 Do the roadmap audit before the org chart gets built. 🛡️
 
-👉 Read our full deep dive on outsourcing software development in house or offshore: [Link to article]
+👉 Read our full deep dive on outsourcing software development in house or offshore: https://www.manifera.com/blog/outsourcing-software-development-in-house-or-offshore
 
 #SoftwareOutsourcing #Amsterdam #Vietnam #CTO #ProductStrategy #Manifera

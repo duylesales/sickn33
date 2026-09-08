@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on martech api sprawl integration debt: [Link to article]
+👉 Read our full deep dive on martech api sprawl integration debt: https://www.manifera.com/blog/martech-api-sprawl-integration-debt
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

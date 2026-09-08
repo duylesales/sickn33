@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of engineering practice, the
 
 His result: added a new feature to the same payment code three weeks later, without asking a single clarifying question. 🚀
 
-👉 See what a real handoff process looks like: [Link to article]
+👉 See what a real handoff process looks like: https://launchstudio.eu/en/blog/the-handoff-document-what-you-get
 
 #IndieHacker #SoloFounder #TechnicalDocumentation #LaunchStudio #Manifera #MVP

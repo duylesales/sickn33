@@ -12,6 +12,6 @@ A cap rate hadn't moved in four months. The dashboard looked current. It wasn't 
 
 A current-looking number and a current number are not the same thing in CRE. ✅
 
-👉 Read our full deep dive on commercial real estate analytics vendor data freshness: [Link to article]
+👉 Read our full deep dive on commercial real estate analytics vendor data freshness: https://www.manifera.com/blog/commercial-real-estate-analytics-vendors-the-data-freshness-test
 
 #CommercialRealEstate #PropTech #DataQuality #CRE #HeadOfProduct #Manifera

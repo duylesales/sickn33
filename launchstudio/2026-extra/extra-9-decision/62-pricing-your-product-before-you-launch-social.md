@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: tier enforcement and proration went live in 11 days, and four over-using accounts upgraded within a month — revenue the page promised but never collected. 🚀
 
-👉 Use the price calculator to see what your pricing model adds to the build: [Link to article]
+👉 Use the price calculator to see what your pricing model adds to the build: https://launchstudio.eu/en/blog/pricing-your-product-before-you-launch
 
 #SaaS #PricingStrategy #LaunchStudio #Manifera #StartupGrowth #ProductionReady

@@ -15,6 +15,6 @@ Bij **LaunchStudio** zien onze in Amsterdam gevestigde technici deze exacte kloo
 
 Haar resultaat: KlantWacht handhaaft nu eigendomscontroles bij elke query, geverifieerd met geautomatiseerde tests die precies de cross-account toegang proberen die eerder werkte. 🚀
 
-👉 Niet zeker of uw door AI gebouwde app dit gat heeft? Beschrijf uw project en wij vertellen u eerlijk wat er ontbreekt: [Link naar artikel]
+👉 Niet zeker of uw door AI gebouwde app dit gat heeft? Beschrijf uw project en wij vertellen u eerlijk wat er ontbreekt: https://launchstudio.eu/nl/blog/security-means-different-things
 
 #AINativeFounder #LaunchStudio #Manifera #AppSecurity #Authorization

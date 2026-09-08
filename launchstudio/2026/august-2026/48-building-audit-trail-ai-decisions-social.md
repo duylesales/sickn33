@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Sadie's application achieved silky-smooth performance: System transparency enabled quick debugging, saving €5,000 in ordering mistakes. (€1,600 (Audit Logging Package) — production-ready and deployed in 4 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/building-audit-trail-ai-decisions
 
 #LaunchStudio #Manifera #AISaaS #BuildinganAuditTrail #TechFounders

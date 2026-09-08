@@ -12,6 +12,6 @@
 
 One fix cut checkout load time 68% and let the team downgrade their database instance. Not upgrade — downgrade. 📉
 
-👉 Read our full deep dive on performance optimization services: [Link to article]
+👉 Read our full deep dive on performance optimization services: https://www.manifera.com/blog/performance-optimization-services
 
 #PerformanceOptimization #CTO #ApplicationPerformance #Manifera

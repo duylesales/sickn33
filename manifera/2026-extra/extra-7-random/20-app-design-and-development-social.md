@@ -12,6 +12,6 @@
 
 One team designing and building together never had that argument to have in the first place. 🛡️
 
-👉 Read our full deep dive on app design and development: [Link to article]
+👉 Read our full deep dive on app design and development: https://www.manifera.com/blog/app-design-and-development
 
 #AppDesign #CMO #ProductDevelopment #Manifera

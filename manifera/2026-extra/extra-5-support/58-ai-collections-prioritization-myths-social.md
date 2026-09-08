@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai collections prioritization: [Link to article]
+👉 Retire all 3 biggest myths about ai collections prioritization: https://www.manifera.com/blog/ai-collections-prioritization-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

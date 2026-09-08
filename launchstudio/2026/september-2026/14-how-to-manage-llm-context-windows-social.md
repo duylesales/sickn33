@@ -14,6 +14,6 @@ At **LaunchStudio**, we've architected optimized RAG pipelines since 2014 throug
 
 Amelia's average prompt size dropped by 50%, and her API cost per search was halved while accuracy stayed high. 🚀
 
-👉 Get the full context-pruning playbook: [Link to article]
+👉 Get the full context-pruning playbook: https://launchstudio.eu/en/blog/how-to-manage-llm-context-windows
 
 #AINativeFounder #LaunchStudio #Manifera #ContextWindow #RAG

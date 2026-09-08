@@ -20,6 +20,6 @@ Bij **LaunchStudio** bent u in 1 tot 3 weken live, zodat u echte data meeneemt n
 
 Haar resultaat: pitch #1 kreeg beleefde afwijzingen. Pitch #2 (met echte klanten) haalde een seed-ronde van €150.000 op! 🚀
 
-👉 Lees waarom een live product altijd wint van een demo: [Link naar artikel]
+👉 Lees waarom een live product altijd wint van een demo: https://launchstudio.eu/nl/blog/investor-deck-needs-live-product-not-prototype
 
 #Fundraising #LaunchStudio #Manifera #AINativeFounder #SaaS #StartupFunding #Lovable #NextJS #TechFounders #StartupOpschalen

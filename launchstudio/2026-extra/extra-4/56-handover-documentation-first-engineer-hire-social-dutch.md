@@ -15,6 +15,6 @@ Bij **LaunchStudio** is het opstellen van precies dit soort overdrachtsdocumenta
 
 Zijn resultaat: Ricks volgende aanwerving was in minder dan drie dagen productief met de documentatie van LaunchStudio — in plaats van de twee weken die zijn eerste medewerker nodig had zonder iets om mee te werken. 🚀
 
-👉 Staat u op het punt uw eerste engineer aan te nemen? Laat de codebase eerst documenteren: [Link naar artikel]
+👉 Staat u op het punt uw eerste engineer aan te nemen? Laat de codebase eerst documenteren: https://launchstudio.eu/nl/blog/handover-documentation-first-engineer-hire
 
 #AINativeFounder #LaunchStudio #Manifera #FirstHire #EngineeringOnboarding

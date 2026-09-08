@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: 4 premium subscriptions converted in the first week — 6 months after the feature was first built. 🚀
 
-👉 Find out what's actually broken in your prototype: [Link to article]
+👉 Find out what's actually broken in your prototype: https://launchstudio.eu/en/blog/broken-lovable-prototype-paying-product-case-study
 
 #Lovable #VibeCoding #LaunchStudio #Manifera #Stripe #SaaS

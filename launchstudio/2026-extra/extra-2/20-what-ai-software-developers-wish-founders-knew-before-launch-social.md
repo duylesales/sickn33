@@ -15,6 +15,6 @@ At **LaunchStudio**, this authentication hardening is a standard part of our sec
 
 Her result: failed-attempt tracking and temporary lockout implemented, closing the brute-force exposure with zero added friction. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/what-ai-software-developers-wish-founders-knew-before-launch
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #Authentication

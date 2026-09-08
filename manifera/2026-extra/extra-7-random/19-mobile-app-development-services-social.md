@@ -12,6 +12,6 @@
 
 We found out the app had no way to measure our launch campaign 10 days before launch. That's not a gap you close calmly. 🛡️
 
-👉 Read our full deep dive on mobile app development services: [Link to article]
+👉 Read our full deep dive on mobile app development services: https://www.manifera.com/blog/mobile-app-development-services
 
 #MobileAppDevelopment #CMO #LaunchPlanning #Manifera

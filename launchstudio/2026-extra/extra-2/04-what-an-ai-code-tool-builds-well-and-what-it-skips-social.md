@@ -15,6 +15,6 @@ At **LaunchStudio**, this route-by-route access review is part of our Launch Rea
 
 Her result: independent server-side role verification added to every admin route, closing public reachability entirely. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/what-an-ai-code-tool-builds-well-and-what-it-skips
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #VibeCoding

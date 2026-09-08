@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the partial-payment feature and reactivation path shipped in 4 business days — eleven hand-written emails recovered roughly €5,800 in annualised recurring revenue. 🚀
 
-👉 Find out which of your churned customers are worth calling back: [Link to article]
+👉 Find out which of your churned customers are worth calling back: https://launchstudio.eu/en/blog/winning-back-a-customer-who-left-and-when-not-to-try
 
 #SaaS #CustomerWinBack #RetentionMarketing #FounderLife #LaunchStudio #Manifera

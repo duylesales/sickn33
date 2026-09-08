@@ -15,6 +15,6 @@ At **LaunchStudio**, we run exactly this kind of full-path authentication audit.
 
 Her result: every account-creation path audited and hashed consistently, plaintext passwords safely migrated — before a client's own audit found it first. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/security-ai-tools-dont-build-in-on-their-own
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #VibeCoding

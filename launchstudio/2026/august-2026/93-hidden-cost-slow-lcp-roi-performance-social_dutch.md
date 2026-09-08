@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type performance-probleem al sinds 2014 op v
 
 Amara's mobiele LCP daalde van 6,8s naar 1,9s, en het bouncepercentage van haar kernpagina daalde van 61% naar 38%. (€ 1.900 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/hidden-cost-slow-lcp-roi-performance
 
 #LaunchStudio #Manifera #AISaaS #CoreWebVitals #PageSpeed

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar ervaring met het verhard
 
 Haar resultaat: correcte server-side authenticatie geïmplementeerd vóór het vervolggesprek — ze beantwoordde de beveiligingsvraag met specifieke details en won de opdracht. 🚀
 
-👉 Ontdek precies wat er tussen jouw prototype en productie in staat: [Link naar artikel]
+👉 Ontdek precies wat er tussen jouw prototype en productie in staat: https://launchstudio.eu/nl/blog/what-vibe-coding-to-production-actually-means
 
 #VibeCoding #AINativeFounder #LaunchStudio #Manifera #ProductionReady #SaaS

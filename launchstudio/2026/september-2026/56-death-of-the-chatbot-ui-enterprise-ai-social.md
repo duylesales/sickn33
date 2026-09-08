@@ -14,6 +14,6 @@ At **LaunchStudio**, we've spent eleven years through Manifera designing exactly
 
 Document editing cycles were halved for Audrey's users, and retention rose 35%. 🚀
 
-👉 See why the chatbot UI is dead: [Link to article]
+👉 See why the chatbot UI is dead: https://launchstudio.eu/en/blog/death-of-the-chatbot-ui-enterprise-ai
 
 #AINativeFounder #LaunchStudio #Manifera #InvisibleAI #ProductUX

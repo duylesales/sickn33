@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai classroom safety: [Link to article]
+👉 Retire all 3 biggest myths about ai classroom safety: https://www.manifera.com/blog/ai-classroom-safety-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

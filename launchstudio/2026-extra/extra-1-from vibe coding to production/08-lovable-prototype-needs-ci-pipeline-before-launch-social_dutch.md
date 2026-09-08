@@ -16,6 +16,6 @@ Bij **LaunchStudio** zetten we CI-pijplijnen en preview-omgevingen op, precies a
 
 Haar resultaat: de nieuwe pijplijn ving de volgende maand nog 2 checkout-brekende wijzigingen op — stilletjes, voordat ook maar één klant het merkte. 🚀
 
-👉 Krijg een CI-pijplijn die problemen opvangt vóór verzending: [Link naar artikel]
+👉 Krijg een CI-pijplijn die problemen opvangt vóór verzending: https://launchstudio.eu/nl/blog/lovable-prototype-needs-ci-pipeline-before-launch
 
 #CI #IndieHacker #LaunchStudio #Manifera #VibeCoding #DevOps

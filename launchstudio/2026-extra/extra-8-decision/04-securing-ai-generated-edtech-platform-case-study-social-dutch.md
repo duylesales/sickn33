@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Daans resultaat: De IT-audit van 14 scholen vlekkeloos doorstaan en een contract van €45.000 binnengehaald. 🚀
 
-👉 Lees de volledige case study en bescherm uw enterprise deals: [Link naar artikel]
+👉 Lees de volledige case study en bescherm uw enterprise deals: https://launchstudio.eu/nl/blog/securing-ai-generated-edtech-platform-case-study
 
 #EdTech #LaunchStudio #Manifera #CaseStudy #AVG #GDPR #EnterpriseSales

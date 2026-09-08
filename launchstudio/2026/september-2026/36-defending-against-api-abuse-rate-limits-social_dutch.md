@@ -14,6 +14,6 @@ Bij **LaunchStudio** beveiligen we sinds 2014 AI- en API-infrastructuren via Man
 
 LaunchStudio integreerde Upstash Rate Limiting middleware in Elizabeths Vercel Edge routes — geautomatiseerd API-misbruik daalde naar nul en servercapaciteit bleef behouden voor betalende klanten. (€950 (Rate Limiting Integratie Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw endpoints beveiligt: [Link naar artikel]
+👉 Ontdek hoe u uw endpoints beveiligt: https://launchstudio.eu/nl/blog/defending-against-api-abuse-rate-limits
 
 #AINativeFounder #LaunchStudio #Manifera #APIAbuse #RateLimiting #DenialOfWallet #CyberSecurity #Upstash #AISaaS #StartupOpschalen

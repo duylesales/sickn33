@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we precies dit soort volledig-pad-authenticatieaudit
 
 Haar resultaat: elk accountaanmaakpad geauditeerd en consistent gehasht, platte-tekst-wachtwoorden veilig gemigreerd — vóórdat de eigen audit van een klant het vond. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/security-ai-tools-dont-build-in-on-their-own
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #VibeCoding

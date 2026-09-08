@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we o
 
 💡 Zo verloor Karel Boonstra van Prijslijst een distributeur toen €31.000 aan marge verdampte door een anonieme prijsverlaging. Na onze append-only database triggers slaagt Prijslijst voor elke zakelijke security-audit.
 
-👉 Kan uw software aantonen wie wat gewijzigd heeft? [Link naar artikel]
+👉 Kan uw software aantonen wie wat gewijzigd heeft? https://launchstudio.eu/nl/blog/audit-trails-who-changed-what-and-when
 
 #AuditTrail #EnterpriseSaaS #Compliance #DatabaseTriggers #LaunchStudio #Manifera

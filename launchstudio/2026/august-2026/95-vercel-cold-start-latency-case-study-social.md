@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of performance problem
 
 Cold-start latency dropped from 2.1s to 630ms — a 70% reduction — and lag-related tickets nearly vanished. (€1,700 (Launch & Grow Package) — 6 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/vercel-cold-start-latency-case-study
 
 #LaunchStudio #Manifera #AISaaS #Vercel #Serverless

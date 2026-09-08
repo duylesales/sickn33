@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat this exact gap — the invisible layer under a pol
 
 Circuo's result: it went live with both pilot manufacturers within the month, and Ilona signed a third client after passing their security questionnaire outright. 🚀
 
-👉 Built an IoT or SaaS dashboard with an AI tool? Get a fixed-scope review before your next pilot: [Link to article]
+👉 Built an IoT or SaaS dashboard with an AI tool? Get a fixed-scope review before your next pilot: https://launchstudio.eu/en/blog/21-all-ai-tools-eindhoven
 
 #AINativeFounder #LaunchStudio #Manifera #RowLevelSecurity #Eindhoven

@@ -15,6 +15,6 @@ At **LaunchStudio**, we specifically test AI-generated products for genuine mult
 
 His result: LaunchStudio re-tuned RecensieHulp's underlying prompting approach against real Dutch hospitality reviews, closing the gap between the fully-localized interface and the previously English-tested AI logic underneath. 🚀
 
-👉 Fully translated your interface but never tested your AI prompts in the target language? Here's the gap that leaves open: [Link to article]
+👉 Fully translated your interface but never tested your AI prompts in the target language? Here's the gap that leaves open: https://launchstudio.eu/en/blog/multi-language-ai-products-prompts-not-all-english
 
 #Localization #MultiLanguageAI #AINativeFounder #LaunchStudio #Manifera

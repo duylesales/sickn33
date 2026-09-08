@@ -12,6 +12,6 @@ Your MVP vendor shipped in 11 weeks. 18 months and 40x the traffic later, they'r
 
 The right time to switch is before the misfit becomes an outage. 🧭
 
-👉 Read our full deep dive on startup vendor switching costs: [Link to article]
+👉 Read our full deep dive on startup vendor switching costs: https://www.manifera.com/blog/startup-vendor-switching-costs-when-outgrowing-your-first-dev-partner
 
 #StartupCTO #TechnicalDebt #ScalingStartups #DevPartner #EngineeringLeadership #Manifera

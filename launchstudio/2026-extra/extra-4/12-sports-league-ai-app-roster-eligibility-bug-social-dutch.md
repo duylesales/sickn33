@@ -15,6 +15,6 @@ Bij **LaunchStudio** beoordelen we de daadwerkelijke gegevensstroom tussen uw da
 
 Het resultaat voor Kaylee: CompetitieBeheer blokkeert nu niet-geschikte spelers op het moment van indiening in al zijn pilotcompetities, en geen enkele club heeft sinds de oplossing te maken gekregen met een verbeurdverklaring door een geschiktheidsfout. 🚀
 
-👉 Bouwt u competitie- of roostersoftware? Praat met een ingenieur die door AI gegenereerde code begrijpt voordat uw competitie het gat voor u ontdekt: [Link naar artikel]
+👉 Bouwt u competitie- of roostersoftware? Praat met een ingenieur die door AI gegenereerde code begrijpt voordat uw competitie het gat voor u ontdekt: https://launchstudio.eu/nl/blog/sports-league-ai-app-roster-eligibility-bug
 
 #AINativeFounder #LaunchStudio #Manifera #SportsTech #BuiltWithCursor

@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we precies dit soort systematische verificatiemechan
 
 Haar resultaat: pogingbeperking, een redelijk verloopvenster, en consistente falingsresponses — nul extra frictie voor legitieme deelnemers. 🚀
 
-👉 Controleer de prijs met onze projectcalculator: [Link naar artikel]
+👉 Controleer de prijs met onze projectcalculator: https://launchstudio.eu/nl/blog/the-most-common-ai-security-issues-in-founder-built-prototypes
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

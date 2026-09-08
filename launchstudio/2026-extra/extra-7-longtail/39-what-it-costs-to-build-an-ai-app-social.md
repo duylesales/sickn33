@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 11+ years of production engineering experience o
 
 Sebastian's result: a full production build — booking, payments, accounts, deployment — for a fraction of the freelancer quote, delivered in 11 business days. 🚀
 
-👉 Wondering what it actually costs to take your AI app to production?: [Link to article]
+👉 Wondering what it actually costs to take your AI app to production?: https://launchstudio.eu/en/blog/what-it-costs-to-build-an-ai-app
 
 #AINativeFounder #LaunchStudio #Manifera #BuildCosts #AIFounder

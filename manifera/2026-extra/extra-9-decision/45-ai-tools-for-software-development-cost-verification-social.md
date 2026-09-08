@@ -12,6 +12,6 @@ Your vendor just billed you €1,200/month for "AI tooling." The actual cost beh
 
 Don't let "AI enablement" become the line item nobody questions. 🔍
 
-👉 Read our full deep dive on verifying AI tooling costs in software vendor contracts: [Link to article]
+👉 Read our full deep dive on verifying AI tooling costs in software vendor contracts: https://www.manifera.com/blog/ai-tools-for-software-development-cost-verification
 
 #VPEngineering #AITools #VendorBilling #SoftwareOutsourcing #TechDueDiligence #CostTransparency #Manifera

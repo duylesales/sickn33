@@ -15,6 +15,6 @@ At **LaunchStudio**, deposit-and-escrow logic is one of the most common gaps our
 
 His result: deposit releases went from an unpredictable multi-day wait to confirmed within minutes of return, with automatic recovery if either party never clicked confirm. 🚀
 
-👉 Not sure if your "release deposit" button actually calls Stripe? Get a fixed-scope estimate: [Link to article]
+👉 Not sure if your "release deposit" button actually calls Stripe? Get a fixed-scope estimate: https://launchstudio.eu/en/blog/equipment-rental-marketplace-ai-deposit-holds
 
 #AINativeFounder #LaunchStudio #Manifera #Marketplace #FinTech

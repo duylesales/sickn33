@@ -14,6 +14,6 @@ Bij LaunchStudio versterken we de autorisatielaag van AI-agents vóór enterpris
 
 Farids vastgelopen contract werd binnen 3 weken alsnog ondertekend. (€ 4.200 (Enterprise Hardening Pakket) — 12 werkdagen.) 🚀
 
-👉 Ontdek onze aanpak: [Link naar artikel]
+👉 Ontdek onze aanpak: https://launchstudio.eu/nl/blog/ai-agent-tool-calling-permissions-case-study
 
 #LaunchStudio #Manifera #AISaaS #AIAgents #EnterpriseSecurity

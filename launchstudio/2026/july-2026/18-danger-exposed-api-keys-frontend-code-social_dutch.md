@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Isabella's applicatie behaalde productie-gereedheid: Isabella secured the API keys, preventing unauthorized access and locking down LLM request limits. (€800 (Secrets Security Package) — production-ready and deployed in 3 business days.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/danger-exposed-api-keys-frontend-code
 
 #LaunchStudio #Manifera #AISaaS #TheDangerofExposedKe #TechFounders

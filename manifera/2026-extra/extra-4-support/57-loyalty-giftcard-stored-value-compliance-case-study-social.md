@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the loyalty giftcard stored value compliance case study: [Link to article]
+👉 See the loyalty giftcard stored value compliance case study: https://www.manifera.com/blog/loyalty-giftcard-stored-value-compliance-case-study
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

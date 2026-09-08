@@ -10,6 +10,6 @@ At **Manifera**, we front-load our investments into automation!
 ✅ Save 80% on QA maintenance costs over the next 5 years. ⚡
 
 Stop buying quotes. Start buying TCO stability! 🛡️🚀
-👉 The enterprise formula for calculating true app TCO: [Link to article]
+👉 The enterprise formula for calculating true app TCO: https://www.manifera.com/blog/cost-of-making-a-mobile-app
 
 #CFO #MobileAppCost #EnterpriseFinance #TechLeadership #DevSecOps #VietnamTech #AmsterdamBusiness #Manifera

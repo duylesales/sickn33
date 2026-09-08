@@ -15,6 +15,6 @@ At **LaunchStudio**, we bring Manifera's enterprise-grade engineering discipline
 
 Her result: ZorgKoppel launched with its security gaps closed and no illusions about the report having validated anything beyond safety and stability. 🚀
 
-👉 Got a production-readiness score back and not sure what it actually covers: [Link to article]
+👉 Got a production-readiness score back and not sure what it actually covers: https://launchstudio.eu/en/blog/production-readiness-score-measures
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReadiness #ProductionReady

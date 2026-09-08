@@ -12,6 +12,6 @@ What if your biggest roadmap risk isn't a competitor — it's a dev partner who 
 
 Core-workflow engineering time can go from a fifth of sprint capacity to over half once the filter is real. 📈
 
-👉 Read our full deep dive on saas product development geldrop-mierlo: [Link to article]
+👉 Read our full deep dive on saas product development geldrop-mierlo: https://www.manifera.com/blog/saas-product-development-geldrop-mierlo
 
 #GeldropMierlo #NoordBrabant #MetropoolregioEindhoven #SaaS #ProductManagement #Manifera

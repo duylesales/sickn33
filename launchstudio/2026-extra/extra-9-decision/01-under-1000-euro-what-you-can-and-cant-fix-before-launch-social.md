@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: PawPortal launched with eleven paying providers three weeks later, invoicing manually, funding a €2,400 payments engagement from that quarter's revenue. 🚀
 
-👉 Run your project through the price calculator: [Link to article]
+👉 Run your project through the price calculator: https://launchstudio.eu/en/blog/under-1000-euro-what-you-can-and-cant-fix-before-launch
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** herstructureren we betalingsdatamodellen — zonder de inte
 
 Het resultaat voor Amber: de planners van BruidsBudget kunnen nu binnen een minuut de volledige leveranciersbetalingsstatus voor elke bruiloft bevestigen, en de tool heeft sindsdien leveranciersbetalingen gecoördineerd zonder een enkele handmatige afstemmingsoproep. 🚀
 
-👉 Verwerkt uw app echt geld tussen meerdere partijen? Bekijk hoe LaunchStudio dit soort backend-herstructurering aanpakt: [Link naar artikel]
+👉 Verwerkt uw app echt geld tussen meerdere partijen? Bekijk hoe LaunchStudio dit soort backend-herstructurering aanpakt: https://launchstudio.eu/nl/blog/wedding-planning-ai-tool-vendor-payment-splits
 
 #AINativeFounder #LaunchStudio #Manifera #WeddingTech #Fintech

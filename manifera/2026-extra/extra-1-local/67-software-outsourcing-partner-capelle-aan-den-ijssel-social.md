@@ -12,6 +12,6 @@
 
 Choose for year three, not just for the first sprint. 🛡️
 
-👉 Read our full deep dive on software outsourcing partner capelle aan den ijssel: [Link to article]
+👉 Read our full deep dive on software outsourcing partner capelle aan den ijssel: https://www.manifera.com/blog/software-outsourcing-partner-capelle-aan-den-ijssel
 
 #CapelleAanDenIJssel #ZuidHolland #VPEngineering #SoftwareOutsourcing #LongTermPartner #Manifera

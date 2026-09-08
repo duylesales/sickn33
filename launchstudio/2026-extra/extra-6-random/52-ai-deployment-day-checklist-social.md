@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's Singapore-based engineers bring 11+ years of pro
 
 His result: MeldStroom's API calls now happen entirely server-side, with the key never present in any browser-shipped code, plus rate-limit monitoring to catch future misuse. 🚀
 
-👉 About to push your first production deploy? Talk to an engineer first: [Link to article]
+👉 About to push your first production deploy? Talk to an engineer first: https://launchstudio.eu/en/blog/ai-deployment-day-checklist
 
 #AINativeFounder #LaunchStudio #Manifera #AIDeployment #APISecurity

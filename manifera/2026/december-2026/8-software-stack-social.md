@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on software stack: [Link to article]
+👉 Read our full deep dive on software stack: https://www.manifera.com/blog/software-stack
 
 #SoftwareArchitecture #TechLeadership #CTO #Manifera

@@ -12,6 +12,6 @@ Ask three mobile agencies "native or cross-platform?" and you'll get three confi
 
 Score it before you sit through another confident, biased pitch. 🧮
 
-👉 Read our full deep dive on the native vs. cross-platform vendor decision: [Link to article]
+👉 Read our full deep dive on the native vs. cross-platform vendor decision: https://www.manifera.com/blog/native-vs-cross-platform-the-vendor-decision-explained
 
 #CTO #MobileAppDevelopment #Flutter #CrossPlatformDevelopment #NativeApp #Manifera

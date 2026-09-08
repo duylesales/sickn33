@@ -12,6 +12,6 @@
 
 Ask directly. Don't infer from a changing sprint roster. 🛡️
 
-👉 Read our full deep dive on software companies netherlands vietnam delivery shift: [Link to article]
+👉 Read our full deep dive on software companies netherlands vietnam delivery shift: https://www.manifera.com/blog/software-companies-netherlands-vietnam-delivery-shift
 
 #SoftwareCompaniesNetherlands #CFO #Vietnam #VendorTransparency #Manifera

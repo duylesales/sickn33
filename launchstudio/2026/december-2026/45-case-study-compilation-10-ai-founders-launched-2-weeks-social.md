@@ -14,6 +14,6 @@ Bonus: Ivo had just 9 DAYS before a make-or-break wine conference demo. LaunchSt
 
 At **LaunchStudio**, backed by Manifera's 120+ engineers and 160+ delivered projects, the process is industry-agnostic — it's the infrastructure layer that's consistent, not your business domain. 🛡️🚀
 
-👉 Read all 10 (plus Ivo's full story): [Link to article]
+👉 Read all 10 (plus Ivo's full story): https://launchstudio.eu/en/blog/case-study-compilation-10-ai-founders-launched-2-weeks
 
 #CaseStudy #LaunchStudio #Manifera #AINativeFounder #SaaS #StartupLaunch

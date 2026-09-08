@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type Slack-integratie en beveiligingsvr
 
 Harpers resultaat: Enterprise data van zakelijke klanten 100% beveiligd, waardoor corporate security-audits glansrijk werden behaald (€2.300, live in 6 werkdagen). 🚀
 
-👉 Ontdek hoe u een veilige AI Slack-app bouwt: [Link naar artikel]
+👉 Ontdek hoe u een veilige AI Slack-app bouwt: https://launchstudio.eu/nl/blog/building-slack-apps-embedded-ai
 
 #LaunchStudio #Manifera #AISaaS #SlackBot #InvisibleSaaS #OAuth #EnterpriseSecurity #VibeCoding #SaaS

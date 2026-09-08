@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on development outsourcing arnhem: [Link to article]
+👉 Read our full deep dive on development outsourcing arnhem: https://www.manifera.com/blog/development-outsourcing-arnhem
 
 #Arnhem #EnergyTech #Gelderland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

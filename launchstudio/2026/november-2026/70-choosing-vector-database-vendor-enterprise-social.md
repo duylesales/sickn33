@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 ClauseBank passed the enterprise client's security review with the vulnerability fully documented as remediated, and Nadia closed the firm's largest contract to date — a 200-seat enterprise deployment. (€1,700 (Launch & Grow Package) — secured and verified in 6 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-vector-database-vendor-enterprise
 
 #LaunchStudio #Manifera #AISaaS #VectorDatabase #RAGSecurity

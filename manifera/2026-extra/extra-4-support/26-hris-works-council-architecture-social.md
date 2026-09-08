@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on hris works council: [Link to article]
+👉 Read our full architectural deep dive on hris works council: https://www.manifera.com/blog/hris-works-council-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

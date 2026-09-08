@@ -15,6 +15,6 @@ Bij **LaunchStudio** stappen onze technici, werkend vanuit Ho Chi Minh-stad, rou
 
 Milans resultaat: KustBeheer ondersteunt nu meerdere vastgoedbeheerders per account, en de tweede klant werd dezelfde week aan boord gebracht als waarin de reparatie werd uitgeleverd. 🚀
 
-👉 Benieuwd welke van de drie vaardigheden uw product mogelijk mist? Praat met een technicus die door AI gegenereerde code begrijpt: [Link naar artikel]
+👉 Benieuwd welke van de drie vaardigheden uw product mogelijk mist? Praat met een technicus die door AI gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/ai-software-programming-three-skills
 
 #AINativeFounder #LaunchStudio #Manifera #DataArchitecture #AICoding

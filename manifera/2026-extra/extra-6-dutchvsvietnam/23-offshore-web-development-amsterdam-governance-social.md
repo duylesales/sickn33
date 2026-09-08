@@ -12,6 +12,6 @@
 
 A governance premium of 8-15% against a €40,000-€90,000 exposure isn't a marginal decision. 🛡️
 
-👉 Read our full deep dive on offshore web development amsterdam governance: [Link to article]
+👉 Read our full deep dive on offshore web development amsterdam governance: https://www.manifera.com/blog/offshore-web-development-amsterdam-governance
 
 #Amsterdam #CFO #RiskManagement #GDPR #WebDevelopment #Manifera

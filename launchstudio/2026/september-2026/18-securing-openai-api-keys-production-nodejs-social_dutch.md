@@ -14,6 +14,6 @@ Bij **LaunchStudio** voeren we sinds 2014 diepgaande security-audits uit via Man
 
 Evelyns blootgestelde sleutel werd direct geroteerd en beveiligd, waardoor toekomstige financiële lekken definitief werden afgesloten. (€850 (Secrets Security Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
-👉 Bekijk de complete beveiligingschecklist: [Link naar artikel]
+👉 Bekijk de complete beveiligingschecklist: https://launchstudio.eu/nl/blog/securing-openai-api-keys-production-nodejs
 
 #AINativeFounder #LaunchStudio #Manifera #APISecurity #LLMSecurity #CyberSecurity #NextJS #NodeJS #AISaaS #StartupOpschalen

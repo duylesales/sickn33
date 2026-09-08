@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 120+ engineers, naming the partnership
 
 His result: Bram's studio closed three fintech-adjacent engagements after adopting a named-partner posture, with clients citing technical confidence as why they chose him. 🚀
 
-👉 Book a 15-minute intro call to work out your disclosure posture: [Link to article]
+👉 Book a 15-minute intro call to work out your disclosure posture: https://launchstudio.eu/en/blog/how-to-present-a-technical-partner-to-your-client
 
 #AgencyLife #WhiteLabel #ClientTrust #AgencyOwner #LaunchStudio #Manifera

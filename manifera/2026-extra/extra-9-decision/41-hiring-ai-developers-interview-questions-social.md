@@ -12,6 +12,6 @@ A candidate can talk fluently about transformers and RAG pipelines for 45 minute
 
 Stop hiring for vocabulary. Start hiring for the 2 a.m. debugging story. 🌙
 
-👉 Read our full deep dive on interview questions that reveal real AI experience: [Link to article]
+👉 Read our full deep dive on interview questions that reveal real AI experience: https://www.manifera.com/blog/hiring-ai-developers-interview-questions
 
 #VPEngineering #AIDevelopers #HiringAITalent #ProductionAI #TechnicalDueDiligence #Manifera

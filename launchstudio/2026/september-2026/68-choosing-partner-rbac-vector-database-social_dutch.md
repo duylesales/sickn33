@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Het kantoor van Femke kreeg aantoonbare tenant-isolatie: medewerkers en praktijkleiders zien nu alleen de dossiers van hun praktijkgebied, partners behouden kantoorbrede toegang precies zoals bedoeld, en adversariële tests bevestigden geen lekkage tussen praktijkgebieden, zelfs niet via randgeval-query's. (€4.600 (Enterprise Hardening Pakket) — RBAC-ontwerp, implementatie en testen voltooid in 14 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-partner-rbac-vector-database
 
 #LaunchStudio #Manifera #AISaaS #RBAC #VectorDatabase

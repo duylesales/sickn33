@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Felix's application achieved production readiness: Felix processed his first 200 subscription renewals with zero billing disputes, and no customer experienced a lapsed subscription due to a missed payment confirmation. (€2,400 (Launch & Grow Package) — 8 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-pricing-explained
 
 #LaunchStudio #Manifera #AISaaS #PricingTransparency #StripeWebhooks

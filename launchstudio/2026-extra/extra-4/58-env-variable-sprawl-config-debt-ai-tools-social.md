@@ -15,6 +15,6 @@ At **LaunchStudio**, configuration audits like this are one of the more common "
 
 Her result: Sophie now has a single source of truth for every credential FactuurKoppel depends on — rotation is a five-minute task instead of a stressful afternoon. 🚀
 
-👉 Could you rotate a compromised key in five minutes today? Find out: [Link to article]
+👉 Could you rotate a compromised key in five minutes today? Find out: https://launchstudio.eu/en/blog/env-variable-sprawl-config-debt-ai-tools
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #AppSecurity

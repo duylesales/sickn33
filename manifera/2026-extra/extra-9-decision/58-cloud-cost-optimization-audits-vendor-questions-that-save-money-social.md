@@ -12,6 +12,6 @@ A cloud audit found 41% potential savings. Eight months later, less than a third
 
 An audit is only worth what gets implemented. 📊
 
-👉 Read our full deep dive on cloud cost optimization audit vendor questions: [Link to article]
+👉 Read our full deep dive on cloud cost optimization audit vendor questions: https://www.manifera.com/blog/cloud-cost-optimization-audits-vendor-questions-that-save-money
 
 #CFO #CloudCostOptimization #FinOps #CloudSpend #VendorAudit #CostSavings #Manifera

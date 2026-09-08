@@ -12,6 +12,6 @@
 
 Closing this risk now costs far less than discovering it during a term sheet negotiation. 📉
 
-👉 Read our full deep dive on devops for software development Weststellingwerf: [Link to article]
+👉 Read our full deep dive on devops for software development Weststellingwerf: https://www.manifera.com/blog/devops-for-software-development-weststellingwerf
 
 #Weststellingwerf #Friesland #DevOps #KeyPersonRisk #CFO #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Het echte probleem van Kwame was inconsistente trainingsdata, geen ontbrekende kennis: LaunchStudio standaardiseerde het labelschema en trainde opnieuw op OpenAI. De classificatienauwkeurigheid steeg van 71% naar 94% (€1.900, Launch & Grow Pakket — 7 werkdagen). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/fine-tuning-vendor-decision-openai-together-lora
 
 #LaunchStudio #Manifera #AISaaS #FineTuning #LLMOps

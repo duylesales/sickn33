@@ -16,6 +16,6 @@ At **LaunchStudio**, we verify session and token lifecycle as part of every auth
 
 His result: server-side invalidation implemented before it became a real problem on shared devices. 🚀
 
-👉 Find out if your logout actually logs anyone out: [Link to article]
+👉 Find out if your logout actually logs anyone out: https://launchstudio.eu/en/blog/session-expiration-token-handling-silent-gap-ai-auth
 
 #AISecure #LaunchStudio #Manifera #VibeCoding #IndieHacker

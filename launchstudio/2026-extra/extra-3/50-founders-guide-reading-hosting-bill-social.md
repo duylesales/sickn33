@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders read their own hosting bills in plain lang
 
 Her result: a misconfigured caching setting that was repeatedly re-transferring the same large image assets got found and fixed — closing a cost leak that had nothing to do with real customer growth. 🚀
 
-👉 Not sure what your hosting bill is actually telling you? Let's find out: [Link to article]
+👉 Not sure what your hosting bill is actually telling you? Let's find out: https://launchstudio.eu/en/blog/founders-guide-reading-hosting-bill
 
 #AINativeFounder #LaunchStudio #Manifera #CloudCosts #SaaSFounder

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type document-extractie en ERP-integrat
 
 Acme Corps operatie werd een gestroomlijnde machine: De kosten daalden met 93%, de verwerkingssnelheid steeg met een factor 68 en de foutmarge daalde naar 0,5%. (€1.600 (Billing & Data Pipeline Repair) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/case-study-acme-corp-saved-1m-ai-automation
 
 #LaunchStudio #Manifera #AISaaS #CaseStudy #DocumentAutomation #MultimodalAI #SAPIntegration #AWSLambda #LogisticsTech #TechFounders #StartupOpschalen

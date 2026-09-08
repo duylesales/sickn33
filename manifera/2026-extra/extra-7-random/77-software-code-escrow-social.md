@@ -12,6 +12,6 @@ Owning your source code on paper and actually being able to access a working cop
 
 Protection that's never been tested isn't protection. 🛡️
 
-👉 Read our full deep dive on software code escrow: [Link to article]
+👉 Read our full deep dive on software code escrow: https://www.manifera.com/blog/software-code-escrow
 
 #CodeEscrow #IPProtection #CFO #VendorRisk #Manifera

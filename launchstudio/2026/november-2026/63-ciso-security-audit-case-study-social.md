@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 CarePath passed the CISO's re-submitted security questionnaire with all eight flagged categories fully remediated and verified under the network's own penetration test, and Amara signed an 18-month pilot-to-scale contract worth approximately €180,000 in annual recurring revenue. (€6,800 (Enterprise Hardening Package) — audit-ready and resubmitted in 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/ciso-security-audit-case-study
 
 #LaunchStudio #Manifera #AISaaS #CISOAudit #HealthTechSecurity

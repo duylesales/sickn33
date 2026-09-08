@@ -12,6 +12,6 @@ You ran a rigorous six-week vendor evaluation, walked into the board meeting, an
 
 Boards don't need convincing the vendor is good — they need to see you know exactly what you're getting into. 🎯
 
-👉 Read our full guide to getting a vendor decision approved in one board meeting: [Link to article]
+👉 Read our full guide to getting a vendor decision approved in one board meeting: https://www.manifera.com/blog/presenting-a-vendor-decision-to-the-board-what-they-actually-want-to-see
 
 #CEO #BoardApproval #CorporateGovernance #VendorManagement #ExecutiveLeadership #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 One founder failed four of six scorecard categories three weeks before a procurement deadline — we closed every gap and the review passed on the first submission, closing the deal on time. (€5,400, Enterprise Hardening Package — 13 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/enterprise-architecture-readiness-scorecard-procurement
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseReadiness #TechFounders

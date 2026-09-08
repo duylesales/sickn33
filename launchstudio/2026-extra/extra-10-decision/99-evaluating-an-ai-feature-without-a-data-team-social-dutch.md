@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we C
 
 💡 Zo zag Daria Ivanova van Klachtclassificatie dat een snelle prompt-update monteursstoringen massaal naar de debiteurenadministratie stuurde. Binnen 2 dagen richtten we een vaste testset van 45 echte klachten in: de nauwkeurigheid steeg direct naar 94% over de hele linie.
 
-👉 Weet u zeker dat uw laatste prompt-update gisteren geen andere functies heeft beschadigd? [Link naar artikel]
+👉 Weet u zeker dat uw laatste prompt-update gisteren geen andere functies heeft beschadigd? https://launchstudio.eu/nl/blog/evaluating-an-ai-feature-without-a-data-team
 
 #PromptEngineering #ArtificialIntelligence #SoftwareTesting #SaaS #ProductDevelopment #LaunchStudio #Manifera

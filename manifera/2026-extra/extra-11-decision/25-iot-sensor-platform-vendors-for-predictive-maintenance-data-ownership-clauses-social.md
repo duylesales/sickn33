@@ -12,6 +12,6 @@ Three years of vibration and thermal data connecting sensor readings to real equ
 
 Sensor accuracy is the visible spec. Data ownership is the clause that decides who actually keeps years of equipment intelligence. 🎯
 
-👉 Read our full deep dive on IoT predictive maintenance data ownership: [Link to article]
+👉 Read our full deep dive on IoT predictive maintenance data ownership: https://www.manifera.com/blog/iot-sensor-platform-vendors-for-predictive-maintenance-data-ownership-clauses
 
 #IndustrialIoT #PredictiveMaintenance #Manufacturing #DataOwnership #CTO #Manifera

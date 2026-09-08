@@ -15,6 +15,6 @@ Bij **LaunchStudio** geven Manifera's 160+ opgeleverde projecten onze technici r
 
 Het resultaat voor GrensVracht: het Duitse vervoerderssegment groeide van één naar zeven klanten over de volgende twee maanden, waarbij twee van hen compliante facturering rechtstreeks noemden als voorwaarde voor ondertekening. 🚀
 
-👉 Bedient u klanten aan beide kanten van een grens? Laat uw facturatielogica controleren voordat het u een handtekening kost: [Link naar artikel]
+👉 Bedient u klanten aan beide kanten van een grens? Laat uw facturatielogica controleren voordat het u een handtekening kost: https://launchstudio.eu/nl/blog/27-build-an-app-with-ai-venlo
 
 #AINativeFounder #LaunchStudio #Manifera #CrossBorderVAT #Venlo

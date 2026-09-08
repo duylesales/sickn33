@@ -15,6 +15,6 @@ At **LaunchStudio**, this is a textbook example of what our CEO Herre Roelevink 
 
 His result: MonteurPlanner has run without a single double-dispatch incident since, across a technician team that's grown from four to nine. 🚀
 
-👉 Got a manual-override path in your scheduling tool? Get a scoped review before it finds your busiest technician: [Link to article]
+👉 Got a manual-override path in your scheduling tool? Get a scoped review before it finds your busiest technician: https://launchstudio.eu/en/blog/field-service-ai-scheduling-app-double-dispatch
 
 #AINativeFounder #LaunchStudio #Manifera #FieldService #AIScheduling

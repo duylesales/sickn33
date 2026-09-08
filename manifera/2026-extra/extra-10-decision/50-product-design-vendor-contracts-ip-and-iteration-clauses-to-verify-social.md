@@ -12,6 +12,6 @@ You paid €40K for your design system. Eighteen months later you find out you o
 
 Read the contract for one question before you sign: what happens if I need to leave this vendor in a year? ⚖️
 
-👉 Read our full deep dive on the IP and iteration clauses to verify in a design vendor contract: [Link to article]
+👉 Read our full deep dive on the IP and iteration clauses to verify in a design vendor contract: https://www.manifera.com/blog/product-design-vendor-contracts-ip-and-iteration-clauses-to-verify
 
 #FounderTips #IPOwnership #VendorContracts #ProductDesign #StartupLegal #Founder #Manifera

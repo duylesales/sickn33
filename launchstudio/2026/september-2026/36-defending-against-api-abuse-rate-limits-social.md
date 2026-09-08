@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been hardening AI infrastructure against abuse since 
 
 LaunchStudio integrated Upstash Rate Limiting middleware into Elizabeth's Vercel Edge routes — scripted API abuse dropped to zero, protecting server capacity for her paying users. 🚀
 
-👉 Lock down your endpoints: [Link to article]
+👉 Lock down your endpoints: https://launchstudio.eu/en/blog/defending-against-api-abuse-rate-limits
 
 #AINativeFounder #LaunchStudio #Manifera #APIAbuse #RateLimiting

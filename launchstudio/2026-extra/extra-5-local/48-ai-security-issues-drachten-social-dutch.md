@@ -15,6 +15,6 @@ Bij **LaunchStudio** is precies dit patroon — het vertrouwen van door de clien
 
 Zijn resultaat: ShiftHub handhaaft nu rolgebaseerde toegang volledig server-side, waarmee het escalatiepad werd gedicht voordat het een levende productieklant bereikte. 🚀
 
-👉 Voer een tien-minutencontrole uit op uw eigen app, en laat ons de rest verifiëren: [Link naar artikel]
+👉 Voer een tien-minutencontrole uit op uw eigen app, en laat ons de rest verifiëren: https://launchstudio.eu/nl/blog/ai-security-issues-drachten
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityIssues #Drachten

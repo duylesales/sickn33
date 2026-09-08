@@ -12,6 +12,6 @@
 
 Answer every question on this checklist before a CTO has to ask twice. 🛡️
 
-👉 Read our full deep dive on offshore development partner netherlands checklist: [Link to article]
+👉 Read our full deep dive on offshore development partner netherlands checklist: https://www.manifera.com/blog/offshore-development-partner-netherlands-checklist
 
 #Amsterdam #Vietnam #CTO #OffshoreDevelopmentPartner #DueDiligence #Manifera

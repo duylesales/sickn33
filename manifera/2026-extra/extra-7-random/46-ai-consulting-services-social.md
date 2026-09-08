@@ -12,6 +12,6 @@
 
 The first deck could have been written for any company in Europe. The second one actually looked at our own data. 🛡️
 
-👉 Read our full deep dive on ai consulting services: [Link to article]
+👉 Read our full deep dive on ai consulting services: https://www.manifera.com/blog/ai-consulting-services
 
 #AIConsulting #CEO #AIStrategy #Manifera

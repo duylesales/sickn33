@@ -12,6 +12,6 @@ Eleven of your forty locations quietly switched point-of-sale systems on their o
 
 One brand, one system, zero royalty disputes. 🏬
 
-👉 Read our full deep dive on franchise software vendor selection: [Link to article]
+👉 Read our full deep dive on franchise software vendor selection: https://www.manifera.com/blog/franchise-software-vendor-selection-one-system-across-multiple-locations
 
 #Franchise #MultiLocation #FranchiseTech #RetailOps #FounderLed #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineers — with 11+ years across 160+ project
 
 His result: KoppelPunt now runs on a geocoding provider Job selected deliberately, with documented outbound calls and no remaining unreviewed third-party dependencies. 🚀
 
-👉 Want to know what your own app is quietly calling? Calculate what a full audit would cost: [Link to article]
+👉 Want to know what your own app is quietly calling? Calculate what a full audit would cost: https://launchstudio.eu/en/blog/ai-and-api-quiet-calls
 
 #AINativeFounder #LaunchStudio #Manifera #AIandAPI #HiddenCosts

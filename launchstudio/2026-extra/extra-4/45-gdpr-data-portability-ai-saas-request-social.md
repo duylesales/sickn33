@@ -14,6 +14,6 @@ At **LaunchStudio**, we map data flows and build the export path before the firs
 
 His result: Hugo fulfilled the original request three days before the legal deadline, and every request since has taken under ten minutes. 🚀
 
-👉 Never tested what happens if a user asks for their data tomorrow? Talk to an engineer about your schema: [Link to article]
+👉 Never tested what happens if a user asks for their data tomorrow? Talk to an engineer about your schema: https://launchstudio.eu/en/blog/gdpr-data-portability-ai-saas-request
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #DataPortability

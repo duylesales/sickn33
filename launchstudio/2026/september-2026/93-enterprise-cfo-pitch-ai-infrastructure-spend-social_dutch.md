@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Elena's tweede pitch landde direct: haar CFO keurde het budget voor de eerste fase binnen dezelfde vergadering goed, met toekomstige fasen vooraf goedgekeurd tegen groeitriggers. (€2.400 (Launch & Grow Pakket) — 10 werkdagen, voor een vergelijkbaar traject.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-cfo-pitch-ai-infrastructure-spend
 
 #LaunchStudio #Manifera #AISaaS #CFO #AIInfrastructure

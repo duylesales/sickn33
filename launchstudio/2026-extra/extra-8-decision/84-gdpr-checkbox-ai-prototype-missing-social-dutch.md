@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar engineering voor Euro
 
 Klaas-Jans resultaat: unanieme goedkeuring van de schoolFG, 12 scholen live voor €18.400 ARR, gefixt in 5 werkdagen voor €1.500. 🚀
 
-👉 Vraag een volledige GDPR-architectuurbeoordeling aan voor uw prototype: [Link naar artikel]
+👉 Vraag een volledige GDPR-architectuurbeoordeling aan voor uw prototype: https://launchstudio.eu/nl/blog/gdpr-checkbox-ai-prototype-missing
 
 #LaunchStudio #GDPR #VibeCoding #Manifera #SaaS #Privacy #AIApp

@@ -12,6 +12,6 @@ Two weeks is short enough that a vendor can't fake it with polish, and long enou
 
 A trial that surfaces problems isn't wasted spend — it's a fraction of the cost of discovering the same gaps six sprints into a signed contract. 🎯
 
-👉 Read our full deep dive on the two-week trial sprint before signing a vendor: [Link to article]
+👉 Read our full deep dive on the two-week trial sprint before signing a vendor: https://www.manifera.com/blog/the-trial-sprint-two-week-test-before-signing-a-vendor
 
 #CTO #VendorEvaluation #TrialSprint #SoftwareDueDiligence #AgileDelivery #Manifera

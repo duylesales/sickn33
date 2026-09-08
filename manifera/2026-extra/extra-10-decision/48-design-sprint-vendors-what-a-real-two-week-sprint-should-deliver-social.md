@@ -12,6 +12,6 @@ Your team just spent two weeks in a design sprint and came out with a nice proto
 
 The second week only earns its cost if it tells you whether the fix actually worked, not just what was wrong. 🎯
 
-👉 Read our full deep dive on what a real two-week design sprint should deliver: [Link to article]
+👉 Read our full deep dive on what a real two-week design sprint should deliver: https://www.manifera.com/blog/design-sprint-vendors-what-a-real-two-week-sprint-should-deliver
 
 #HeadOfProduct #DesignSprint #ProductDiscovery #UXValidation #RapidPrototyping #Manifera

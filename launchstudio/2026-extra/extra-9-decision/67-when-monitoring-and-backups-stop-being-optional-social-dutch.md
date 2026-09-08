@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: de meeste data werd hersteld via transactielogs en de pipeline werd herbouwd met alarmering — de grootste crisissituatie voor zijn startup werd afgewend. 🚀
 
-👉 Stuur ons uw prototypelink en wij vertellen u kosteloos welke hiaten in uw monitoring zitten: [Link naar artikel]
+👉 Stuur ons uw prototypelink en wij vertellen u kosteloos welke hiaten in uw monitoring zitten: https://launchstudio.eu/nl/blog/when-monitoring-and-backups-stop-being-optional
 
 #IndieHacker #SaaS #DatabaseBackups #Foutmonitoring #LaunchStudio #Manifera

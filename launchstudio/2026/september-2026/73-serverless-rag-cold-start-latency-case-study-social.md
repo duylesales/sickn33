@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Worst-case cold-path response time dropped 60%, from 9-11 seconds to 3.6-4.2 seconds (€2,100 (Launch & Grow Package) — completed in 6 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/serverless-rag-cold-start-latency-case-study
 
 #LaunchStudio #Manifera #AISaaS #ServerlessRAG #ColdStart

@@ -16,6 +16,6 @@ At **LaunchStudio**, calibrated rate limiting across auth and cost-sensitive end
 
 His result: per-user limits implemented on both the refinement endpoint and login — no more surprise bills. 🚀
 
-👉 Confirm your app can't be abused at unlimited volume: [Link to article]
+👉 Confirm your app can't be abused at unlimited volume: https://launchstudio.eu/en/blog/rate-limiting-missing-layer-between-api-and-abuse
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #AISecure

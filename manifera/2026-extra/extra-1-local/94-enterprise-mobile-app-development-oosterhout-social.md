@@ -12,6 +12,6 @@
 
 Frictionless access. Adoption that actually happens. 🛡️
 
-👉 Read our full deep dive on enterprise mobile app development oosterhout: [Link to article]
+👉 Read our full deep dive on enterprise mobile app development oosterhout: https://www.manifera.com/blog/enterprise-mobile-app-development-oosterhout
 
 #Oosterhout #NoordBrabant #EnterpriseIT #CTO #MobileAppDevelopment #SSO #Manifera

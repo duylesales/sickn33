@@ -14,6 +14,6 @@ At LaunchStudio, we've been building production eval infrastructure since 2014 t
 
 We finished what Priya's two months of nights and weekends couldn't: BriefWell's new eval suite caught a fabrication-prone prompt variant in week two — before a single customer saw it. (€2,400 — Launch & Grow Package, 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/llm-eval-harness-build-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #LLMEval #AIQuality

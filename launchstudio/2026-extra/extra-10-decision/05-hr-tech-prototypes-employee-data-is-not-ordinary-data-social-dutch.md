@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineer
 
 💡 Zo redde feedbackplatform Feedbackloop haar contract met een logistiek bedrijf van 200 medewerkers door monitoringfuncties tijdig modulair en uitlegbaar te maken.
 
-👉 Ontdek hoe u uw HR-tech prototype soepel door de ondernemingsraad en security-audits loodst: [Link naar artikel]
+👉 Ontdek hoe u uw HR-tech prototype soepel door de ondernemingsraad en security-audits loodst: https://launchstudio.eu/nl/blog/hr-tech-prototypes-employee-data-is-not-ordinary-data
 
 #HRTech #AVG #Ondernemingsraad #Privacy #LaunchStudio #Manifera

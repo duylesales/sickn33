@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's team of 120+ engineers, with a hub in Singapore,
 
 His result: MeldPunt's reporting form was fixed across all account types and re-tested under each role, with no further submission failures reported. 🚀
 
-👉 Said "it works" about a feature recently, but only tested it as yourself: [Link to article]
+👉 Said "it works" about a feature recently, but only tested it as yourself: https://launchstudio.eu/en/blog/three-types-of-ai-works-claims
 
 #AINativeFounder #LaunchStudio #Manifera #RoleBasedTesting #ProductionReady

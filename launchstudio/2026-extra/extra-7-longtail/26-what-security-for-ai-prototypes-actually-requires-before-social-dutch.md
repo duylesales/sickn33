@@ -15,6 +15,6 @@ Bij **LaunchStudio** leidt ons team elk door AI gebouwd prototype langs dezelfde
 
 Wouter's resultaat: versleutelde gevoelige data, rate limiting op zijn plek en degelijke eigendomscontroles toegevoegd — met de interface van PetPals volledig ongewijzigd. 🚀
 
-👉 Denkt u dat HTTPS en een inlogscherm betekenen dat uw AI-prototype veilig is? Dit is wat er daadwerkelijk ontbreekt: [Link naar artikel]
+👉 Denkt u dat HTTPS en een inlogscherm betekenen dat uw AI-prototype veilig is? Dit is wat er daadwerkelijk ontbreekt: https://launchstudio.eu/nl/blog/what-security-for-ai-prototypes-actually-requires-before
 
 #AINativeFounder #LaunchStudio #Manifera #DataEncryption #AISecurity

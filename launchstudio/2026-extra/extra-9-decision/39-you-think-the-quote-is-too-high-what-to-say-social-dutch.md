@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: fase één lanceerde voor €1.900 in acht werkdagen, draaide het hele seizoen op handmatige betaallinks met 41 boekingen, en voegde vier maanden later geautomatiseerde facturatie toe. 🚀
 
-👉 Vraag elke partner om een driestappen-offerte inclusief het verantwoorde minimum: [Link naar artikel]
+👉 Vraag elke partner om een driestappen-offerte inclusief het verantwoorde minimum: https://launchstudio.eu/nl/blog/you-think-the-quote-is-too-high-what-to-say
 
 #AIOprichter #SoftwareOntwikkeling #StartupTips #Bootstrapped #LaunchStudio #Manifera

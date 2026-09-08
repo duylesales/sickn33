@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 His result: Omzethelder launched on its original date with the payment-retry bug fixed and none of the fourteen deferred ideas included — the two ideas actually built in week one shipped faster because real usage replaced speculation. 🚀
 
-👉 Get the four-question filter for your own launch list: [Link to article]
+👉 Get the four-question filter for your own launch list: https://launchstudio.eu/en/blog/saying-no-to-your-own-feature-ideas-before-launch
 
 #SaaS #FounderLife #ProductLaunch #StartupTips #LaunchStudio #Manifera

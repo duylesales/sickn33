@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on ai assisted development terneuzen: [Link to article]
+👉 Read our full deep dive on ai assisted development terneuzen: https://www.manifera.com/blog/ai-assisted-development-terneuzen
 
 #Terneuzen #NorthSeaPort #Zeeland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

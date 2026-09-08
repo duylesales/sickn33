@@ -15,6 +15,6 @@ Bij **LaunchStudio** controleren wij zowel de actualiteit van door AI voorgestel
 
 Zijn resultaat: de verouderde bibliotheek werd vóór de lancering vervangen door het actief onderhouden alternatief — waarmee een gat werd gedicht dat RouteCalc's kernroutering vanaf versie één afhankelijk zou hebben gemaakt van een pakket zonder enig onderhoud. 🚀
 
-👉 Benieuwd wat uw AI-tool stilletjes heeft aanbevolen dat al verouderd is? Stuur ons de link naar uw prototype: [Link naar artikel]
+👉 Benieuwd wat uw AI-tool stilletjes heeft aanbevolen dat al verouderd is? Stuur ons de link naar uw prototype: https://launchstudio.eu/nl/blog/ai-coding-tool-suggests-deprecated-library
 
 #AINativeFounder #LaunchStudio #Manifera #DependencyRisk #IndieHacker

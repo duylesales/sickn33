@@ -12,6 +12,6 @@ Four vendors gave nearly identical RFP answers about "agile delivery" and "senio
 
 The question that predicts relationship longevity best isn't technical — it's how a vendor communicates bad news. 📣
 
-👉 Read our full deep dive on the RFP questions that reveal vendors: [Link to article]
+👉 Read our full deep dive on the RFP questions that reveal vendors: https://www.manifera.com/blog/bespoke-software-development-rfps-questions-vendors
 
 #ITManager #RFPQuestions #BespokeSoftwareDevelopment #VendorDueDiligence #SoftwareOutsourcing #Manifera

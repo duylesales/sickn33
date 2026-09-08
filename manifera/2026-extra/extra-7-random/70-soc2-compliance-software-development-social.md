@@ -12,6 +12,6 @@
 
 Compliance that's just how you work beats compliance you perform once a year. ✅
 
-👉 Read our full deep dive on SOC 2 compliance software development: [Link to article]
+👉 Read our full deep dive on SOC 2 compliance software development: https://www.manifera.com/blog/soc2-compliance-software-development
 
 #SOC2 #Compliance #EnterpriseSaaS #CFO #Manifera

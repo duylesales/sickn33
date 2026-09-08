@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: waterdichte data-isolatie in de database opgeleverd bij de cutover, en een enterprise security-vragenlijst beantwoord met feitelijke architectuur. 🚀
 
-👉 Ontvang een vaste offerte inclusief een gedetailleerd week-voor-week stappenplan: [Link naar artikel]
+👉 Ontvang een vaste offerte inclusief een gedetailleerd week-voor-week stappenplan: https://launchstudio.eu/nl/blog/inside-a-three-week-hardening-engagement-week-by-week
 
 #SaaS #SoftwareOntwikkeling #StartupGroei #LaunchStudio #Manifera #ProductieKlaar

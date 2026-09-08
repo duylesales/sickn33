@@ -12,6 +12,6 @@
 
 One avoided incident during peak season can cover the whole investment. 💶
 
-👉 Read our full deep dive on devops web development De Fryske Marren: [Link to article]
+👉 Read our full deep dive on devops web development De Fryske Marren: https://www.manifera.com/blog/devops-web-development-de-fryske-marren
 
 #DeFryskeMarren #Friesland #DevOps #BlueGreenDeployment #TourismTech #Manifera

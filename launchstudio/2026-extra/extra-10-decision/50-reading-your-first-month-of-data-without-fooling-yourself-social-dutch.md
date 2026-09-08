@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), zorgen we d
 
 💡 Zo voorkwam Joris Hendrikx van Klaarstaan een overhaaste verbouwing van 6 weken, toen bleek dat een "conversiedaling van 40%" veroorzaakt werd door één dubbel tellend analytics-event.
 
-👉 Hoe leest u uw eerste maand data zonder uzelf voor de gek te houden? [Link naar artikel]
+👉 Hoe leest u uw eerste maand data zonder uzelf voor de gek te houden? https://launchstudio.eu/nl/blog/reading-your-first-month-of-data-without-fooling-yourself
 
 #StartupData #SaaSAnalytics #EarlyStage #FounderMistakes #LaunchStudio #Manifera

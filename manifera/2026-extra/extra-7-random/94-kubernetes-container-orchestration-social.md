@@ -12,6 +12,6 @@ A team adopts Kubernetes to fix a real deployment problem. 18 months later: a do
 
 One audit took eleven clusters down to four and cut Kubernetes spend 41% with zero lost capability. ⚙️
 
-👉 Read our full deep dive on Kubernetes container orchestration: [Link to article]
+👉 Read our full deep dive on Kubernetes container orchestration: https://www.manifera.com/blog/kubernetes-container-orchestration
 
 #Kubernetes #CTO #ContainerOrchestration #Manifera

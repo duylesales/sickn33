@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat every bug report as a security report until proven
 
 Lukas's result: ownership checks and ID hardening across every document endpoint — completed in 6 business days, before it could surface through another bug report. 🚀
 
-👉 Got a bug report that "looked wrong" but seemed minor? Here's how to tell if it's actually this: [Link to article]
+👉 Got a bug report that "looked wrong" but seemed minor? Here's how to tell if it's actually this: https://launchstudio.eu/en/blog/the-ai-security-issues-founders-only-discover-from
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #Authorization

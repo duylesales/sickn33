@@ -12,6 +12,6 @@
 
 Report velocity in Q1 — not hiring progress. 🛡️
 
-👉 Read our full deep dive on offshore dedicated development team in house or offshore: [Link to article]
+👉 Read our full deep dive on offshore dedicated development team in house or offshore: https://www.manifera.com/blog/offshore-dedicated-development-team-in-house-or-offshore
 
 #DedicatedDevelopmentTeam #Amsterdam #Vietnam #CTO #StartupEngineering #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on fhir healthcare interoperability: [Link to article]
+👉 Read our full architectural deep dive on fhir healthcare interoperability: https://www.manifera.com/blog/fhir-healthcare-interoperability-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

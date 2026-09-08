@@ -16,6 +16,6 @@ Bij **LaunchStudio** beoordelen we hoe de bestaande gaten van jouw MVP zich zull
 
 Zijn resultaat: een gelijktijdigheidsbug gerepareerd vóór een partnerschapslancering — een bug die 8 incidentvrije maanden nooit naar boven bracht. 🚀
 
-👉 Laat beoordelen voor de groei die je daadwerkelijk nastreeft: [Link naar artikel]
+👉 Laat beoordelen voor de groei die je daadwerkelijk nastreeft: https://launchstudio.eu/nl/blog/mvp-to-saas-production-gap-scale-up-founders-underestimate
 
 #SaaSFounder #LaunchStudio #Manifera #ScaleUp #VibeCoding

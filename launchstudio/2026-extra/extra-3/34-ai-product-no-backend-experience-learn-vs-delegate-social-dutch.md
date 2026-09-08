@@ -15,6 +15,6 @@ Bij **LaunchStudio** vertalen we bevindingen en beslissingen naar het niveau van
 
 Haar resultaat: Renske delegeerde de daadwerkelijke verharding aan LaunchStudio, terwijl ze oprecht en goed geïnformeerd betrokken bleef bij elke beslissing — echte betrokkenheid, zonder de onrealistische tijdsinvestering die volledige technische competentie zou hebben gevergd. 🚀
 
-👉 Twijfelt u of u backend-basiskennis moet leren of alles moet delegeren? Ontdek de juiste mix voor u: [Link naar artikel]
+👉 Twijfelt u of u backend-basiskennis moet leren of alles moet delegeren? Ontdek de juiste mix voor u: https://launchstudio.eu/nl/blog/ai-product-no-backend-experience-learn-vs-delegate
 
 #NonTechnicalFounder #LearnVsDelegate #AINativeFounder #LaunchStudio #Manifera

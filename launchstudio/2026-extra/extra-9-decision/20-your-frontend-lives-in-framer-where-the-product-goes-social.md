@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the programme became a real app with per-client isolation and Mollie subscriptions, while Iris kept editing her site herself. 🚀
 
-👉 Book a 15-minute call and describe what a logged-in user should do: [Link to article]
+👉 Book a 15-minute call and describe what a logged-in user should do: https://launchstudio.eu/en/blog/your-frontend-lives-in-framer-where-the-product-goes
 
 #NoCode #AICoding #LaunchStudio #Manifera #ProductionReady #FounderLife

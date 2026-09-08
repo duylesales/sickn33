@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founding teams build exactly this kind of continuit
 
 Their result: proper shared access, plain-language operational documentation, and an independent support relationship Sanne can reach on her own — a gap closed that had existed invisibly since day one. 🚀
 
-👉 Could your non-technical cofounder keep things running tomorrow if you couldn't? Make sure your product doesn't depend on one person's availability: [Link to article]
+👉 Could your non-technical cofounder keep things running tomorrow if you couldn't? Make sure your product doesn't depend on one person's availability: https://launchstudio.eu/en/blog/ai-product-non-technical-cofounder-can-maintain-alone
 
 #AINativeFounder #LaunchStudio #Manifera #BusinessContinuity #Cofounders

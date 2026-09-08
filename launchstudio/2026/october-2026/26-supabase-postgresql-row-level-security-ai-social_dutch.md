@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 David sloot het datalek definitief, doorstond een enterprise security-audit en tekende een contract van €3.000 MRR. (€2.800 (Launch Ready Pakket) — binnen 5 werkdagen opgeleverd). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/supabase-postgresql-row-level-security-ai
 
 #LaunchStudio #Manifera #AISaaS #Supabase #RowLevelSecurity #PostgreSQL #pgvector #TechFounders #LegalTech

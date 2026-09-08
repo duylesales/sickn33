@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Ingrid's platform achieved production readiness: her sourcing workers ran 96 hours straight under full simulated load with flat memory usage and zero restarts, and she presented the fix as a resolved item at her board meeting. (€2,600 (Launch & Grow Package) — memory leak diagnosed and resolved in 8 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/vertical-ai-agent-memory-leak-case-study
 
 #LaunchStudio #Manifera #AISaaS #NodeJS #ProductionReliability

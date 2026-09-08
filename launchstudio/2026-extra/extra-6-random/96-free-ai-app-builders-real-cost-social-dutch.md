@@ -15,6 +15,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's meer dan 11 jaar software
 
 Haar resultaat: BuurtBezorg verwerkte het bezorgvolume van het volgende feestdagenseizoen zonder één enkel vertragingsincident. 🚀
 
-👉 Staat er een druk seizoen aan te komen? Reken het uit met onze prijscalculator: [Link naar artikel]
+👉 Staat er een druk seizoen aan te komen? Reken het uit met onze prijscalculator: https://launchstudio.eu/nl/blog/free-ai-app-builders-real-cost
 
 #AINativeFounder #LaunchStudio #Manifera #AIAppBuilder #ScalingUp

@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera brings 120+ engineers and 160+ delivered projects 
 
 Her result: Anne now reviews AI-generated changes in the cycle they're created rather than in a two-week pileup, and the review load has dropped to something one person can sustainably carry. 🚀
 
-👉 Sprint cadence not keeping up with your AI output? See what a proper review structure would cost: [Link to article]
+👉 Sprint cadence not keeping up with your AI output? See what a proper review structure would cost: https://launchstudio.eu/en/blog/vibe-agile-sprint-cadence
 
 #AINativeFounder #LaunchStudio #Manifera #AgileForAI #CodeReview

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Zijn resultaat: hij koos de voordeligere partij voor € 3.400 vast, voegde de ontbrekende autorisaties toe voor € 900, en lanceerde binnen elf dagen met alle accounts op eigen naam. 🚀
 
-👉 Bereken vooraf een realistisch ijkpunt met onze prijscalculator: [Link naar artikel]
+👉 Bereken vooraf een realistisch ijkpunt met onze prijscalculator: https://launchstudio.eu/nl/blog/twee-software-offertes-goed-vergelijken-zonder-technische-kennis
 
 #AIFounder #NoCode #HiringDevelopers #SoftwareDevelopment #LaunchStudio #Manifera

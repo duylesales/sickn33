@@ -12,6 +12,6 @@ Most CTOs spend the warehouse decision comparing Snowflake vs. BigQuery vs. Reds
 
 The architecture decisions inside the warehouse matter more than the platform logo on it. 🗄️
 
-👉 Read our full deep dive on data warehouse development: [Link to article]
+👉 Read our full deep dive on data warehouse development: https://www.manifera.com/blog/data-warehouse-development
 
 #DataWarehouse #CloudDataWarehouse #DataArchitecture #CTO #Manifera

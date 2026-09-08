@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been running transparent, fixed-price engagements sin
 
 Lars traded a lower-priority feature for the multi-location support his beta clinics actually wanted — same budget, same timeline: €2,900 (Launch & Grow Package), delivered in 13 business days. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/founders-guide-negotiating-scope-changes
 
 #LaunchStudio #Manifera #AISaaS #ScopeCreep #FounderTips

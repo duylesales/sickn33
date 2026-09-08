@@ -12,6 +12,6 @@ A vendor offers 15% off for a three-year commitment instead of annual renewal. O
 
 Price the option value you're giving up as explicitly as you price the discount you're gaining. 🎯
 
-👉 Read our full breakdown of when multi-year vendor lock-in is actually worth it: [Link to article]
+👉 Read our full breakdown of when multi-year vendor lock-in is actually worth it: https://www.manifera.com/blog/multi-year-vendor-commitments-when-discounts-are-worth-the-lock-in
 
 #CFO #VendorManagement #ContractNegotiation #ITBudget #ProcurementStrategy #Manifera

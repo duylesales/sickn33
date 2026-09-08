@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Connor's application achieved production readiness: Connor onboarded 100+ European businesses without a single billing configuration error. (€1,600 (SaaS Tax Integration Package) — production-ready and deployed in 5 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/first-100-users-ai-saas
 
 #LaunchStudio #Manifera #AISaaS #HowtoGettheFirst100P #TechFounders

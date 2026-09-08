@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on qa testing debt production risk: [Link to article]
+👉 Read our full deep dive on qa testing debt production risk: https://www.manifera.com/blog/qa-testing-debt-production-risk
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we precies deze beveiligingsaudit uit voordat een Bo
 
 Resultaat: geen enkel incident met data-isolatie tijdens de proef in het TT-weekend, en RaceGrid tekende een derde team voor het volgende seizoen. 🚀
 
-👉 Bouwt u met Bolt of Lovable en weet u niet zeker wat er onder de motorkap schuilgaat? Laat een beveiligingsaudit met vaste prijsopgave uitvoeren: [Link naar artikel]
+👉 Bouwt u met Bolt of Lovable en weet u niet zeker wat er onder de motorkap schuilgaat? Laat een beveiligingsaudit met vaste prijsopgave uitvoeren: https://launchstudio.eu/nl/blog/ai-security-vulnerabilities-assen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityVulnerabilities #Assen

@@ -12,6 +12,6 @@
 
 Ask a vendor to show you the evaluation dashboard. If they can't, they're not doing this. 🛡️
 
-👉 Read our full deep dive on offshore ai developers vietnam execution: [Link to article]
+👉 Read our full deep dive on offshore ai developers vietnam execution: https://www.manifera.com/blog/offshore-ai-developers-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #AIDevelopment #MLOps #Manifera

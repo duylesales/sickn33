@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on offshore software development team doetinchem: [Link to article]
+👉 Read our full deep dive on offshore software development team doetinchem: https://www.manifera.com/blog/offshore-software-development-team-doetinchem
 
 #Doetinchem #Achterhoek #Gelderland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

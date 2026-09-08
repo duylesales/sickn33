@@ -12,6 +12,6 @@
 
 Six days and 340 customers, or four minutes and eleven. The difference is whether someone's watching. 🛡️
 
-👉 Read our full deep dive on message queue backlog silent job failures: [Link to article]
+👉 Read our full deep dive on message queue backlog silent job failures: https://www.manifera.com/blog/message-queue-backlog-silent-job-failures
 
 #SoftwareReliability #Observability #CTO #BackgroundJobs #SoftwareArchitecture #Manifera

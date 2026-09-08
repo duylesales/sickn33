@@ -12,6 +12,6 @@ Six months of monthly invoices, all paid in full, all on schedule. The product s
 
 The goal of a milestone structure isn't leverage extraction — it's incentive alignment on both sides of the table. 🎯
 
-👉 Read our full guide to structuring vendor payment milestones: [Link to article]
+👉 Read our full guide to structuring vendor payment milestones: https://www.manifera.com/blog/vendor-payment-milestones-structuring-payouts-to-protect-both-sides
 
 #CFO #VendorContracts #SoftwareProcurement #PaymentMilestones #ContractNegotiation #Manifera

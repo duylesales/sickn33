@@ -14,6 +14,6 @@ Bij LaunchStudio repareren we niet alleen beveiligingslekken — we herstellen d
 
 Julian beperkte churn tot <1% en zag zijn nieuwe aanmeldingen de maand erna met 40% stijgen. (€ 4.100 (Emergency Hardening) — 9 werkdagen.) 🚀
 
-👉 Lees de volledige case study: [Link naar artikel]
+👉 Lees de volledige case study: https://launchstudio.eu/nl/blog/reputation-rebuild-security-incident-case-study
 
 #LaunchStudio #Manifera #AISaaS #CyberSecurity #IncidentResponse

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years building compliant systems, 
 
 His result: a defensible consent record and a deletion path that worked end to end, before his first enterprise call. 🚀
 
-👉 Describe your project — a reply within one day on what your signup flow is missing: [Link to article]
+👉 Describe your project — a reply within one day on what your signup flow is missing: https://launchstudio.eu/en/blog/gdpr-decisions-before-your-first-eu-user
 
 #AINativeFounder #GDPR #LaunchStudio #Manifera #EUStartups #FounderLife

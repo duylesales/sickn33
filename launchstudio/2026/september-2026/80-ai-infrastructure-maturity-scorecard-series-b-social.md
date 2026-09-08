@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been closing exactly this class of production enginee
 
 Casper's diligence process closed with zero material findings in all three areas addressed (€5,900 (Enterprise Hardening Package) — completed in 15 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-infrastructure-maturity-scorecard-series-b
 
 #LaunchStudio #Manifera #AISaaS #SeriesB #TechnicalDueDiligence

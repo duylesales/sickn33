@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on precision agriculture isobus data: [Link to article]
+👉 Read our full architectural deep dive on precision agriculture isobus data: https://www.manifera.com/blog/precision-agriculture-isobus-data-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

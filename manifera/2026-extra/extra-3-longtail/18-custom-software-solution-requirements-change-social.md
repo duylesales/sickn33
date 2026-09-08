@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural comparison on custom software solution requirements change: [Link to article]
+👉 Read our full architectural comparison on custom software solution requirements change: https://www.manifera.com/blog/custom-software-solution-requirements-change
 
 #MobileDevelopment #AppArchitecture #Flutter #CustomSoftware #TechLeadership #Manifera

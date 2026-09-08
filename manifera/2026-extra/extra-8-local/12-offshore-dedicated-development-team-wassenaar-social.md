@@ -12,6 +12,6 @@
 
 Stop paying to relearn what you already knew last year. 🛡️
 
-👉 Read our full deep dive on offshore dedicated development team Wassenaar: [Link to article]
+👉 Read our full deep dive on offshore dedicated development team Wassenaar: https://www.manifera.com/blog/offshore-dedicated-development-team-wassenaar
 
 #Wassenaar #DenHaag #ZuidHolland #DedicatedTeam #Insurtech #VPEngineering #Manifera

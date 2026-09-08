@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai logistics demand forecasting: [Link to article]
+👉 Retire all 3 biggest myths about ai logistics demand forecasting: https://www.manifera.com/blog/ai-logistics-demand-forecasting-myths
 
 #LogisticsTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

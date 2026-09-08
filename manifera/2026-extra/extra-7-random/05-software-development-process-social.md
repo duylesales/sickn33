@@ -12,6 +12,6 @@
 
 Our process looked perfect in the wiki. It just wasn't the process we were actually running. 🛡️
 
-👉 Read our full deep dive on software development process: [Link to article]
+👉 Read our full deep dive on software development process: https://www.manifera.com/blog/software-development-process
 
 #SoftwareDevelopmentProcess #VPEngineering #AgileProcess #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on dunning kruger vendor confidence: [Link to article]
+👉 Read our full guide on dunning kruger vendor confidence: https://www.manifera.com/blog/dunning-kruger-vendor-confidence
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

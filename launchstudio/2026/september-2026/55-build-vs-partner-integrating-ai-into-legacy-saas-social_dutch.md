@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 precies dit soort Bouwen-versus-Partne
 
 Joshua's AI-widget werd naadloos weergegeven in het PHP-dashboard met volledig gesynchroniseerde sessies. (€2.600 (Legacy Integration Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
-👉 Ontdek het integratie-draaiboek: [Link naar artikel]
+👉 Ontdek het integratie-draaiboek: https://launchstudio.eu/nl/blog/build-vs-partner-integrating-ai-into-legacy-saas
 
 #AINativeFounder #LaunchStudio #Manifera #LegacySaaS #AIIntegration #WhiteLabel #EnterpriseSoftware #AISaaS #StartupOpschalen

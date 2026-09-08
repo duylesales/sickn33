@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring met zakelijk
 
 Zijn resultaat: Joris stapte over op een vaste overeenkomst met IP-overdracht, relatiebeding en publicatieprotocol — nul incidenten bij elf projecten sindsdien. 🚀
 
-👉 Plan een gesprek van 15 minuten en ontvang onze modelvoorwaarden als startpunt: [Link naar artikel]
+👉 Plan een gesprek van 15 minuten en ontvang onze modelvoorwaarden als startpunt: https://launchstudio.eu/nl/blog/wie-bezit-wat-klantrelaties-code-en-portfolio-credits-in-white-label-samenwerkingen
 
 #BureauLeven #WhiteLabel #AgencyOwner #ContractenRecht #LaunchStudio #Manifera

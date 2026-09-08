@@ -12,6 +12,6 @@ What if your cloud bill growing 15% a quarter has nothing to do with usage — a
 
 A French energy-monitoring platform discovered growth explained less than half its cloud bill — in five weeks, not two years. 💡
 
-👉 Read our full deep dive on DevOps software development in Borne: [Link to article]
+👉 Read our full deep dive on DevOps software development in Borne: https://www.manifera.com/blog/devops-software-development-borne
 
 #Borne #Overijssel #DevOps #CTO #CloudCostOptimization #InfrastructureAsCode #Manifera

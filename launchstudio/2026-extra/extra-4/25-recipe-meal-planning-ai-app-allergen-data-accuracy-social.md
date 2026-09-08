@@ -15,6 +15,6 @@ At **LaunchStudio**, our audits for consumer food and health apps specifically t
 
 Iris's result: MaaltijdPlan now enforces allergen rules at one shared layer instead of per-feature, closing the gap for good. 🚀
 
-👉 Building a food, health, or safety-critical app with AI? Get a free cross-feature check: [Link to article]
+👉 Building a food, health, or safety-critical app with AI? Get a free cross-feature check: https://launchstudio.eu/en/blog/recipe-meal-planning-ai-app-allergen-data-accuracy
 
 #AINativeFounder #LaunchStudio #Manifera #FoodTech #AISecure

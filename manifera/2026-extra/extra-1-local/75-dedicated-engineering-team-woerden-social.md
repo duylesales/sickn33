@@ -12,6 +12,6 @@
 
 Engineering discipline built for a supply chain that doesn't pause. 🛡️
 
-👉 Read our full deep dive on dedicated engineering team woerden: [Link to article]
+👉 Read our full deep dive on dedicated engineering team woerden: https://www.manifera.com/blog/dedicated-engineering-team-woerden
 
 #Woerden #Utrecht #DairyTech #CTO #DedicatedTeam #OperationalUptime #Manifera

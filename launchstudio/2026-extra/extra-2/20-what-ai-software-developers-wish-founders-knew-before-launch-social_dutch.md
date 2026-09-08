@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze authenticatieharding standaardonderdeel van onze be
 
 Haar resultaat: mislukte-poging-tracking en tijdelijke vergrendeling geïmplementeerd, brute-force-blootstelling gedicht met nul extra frictie. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/what-ai-software-developers-wish-founders-knew-before-launch
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #Authentication

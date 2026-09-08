@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on mobile app developers wish clients knew: [Link to article]
+👉 Read our full guide on mobile app developers wish clients knew: https://www.manifera.com/blog/what-mobile-app-developers-wish-clients-knew
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio** verifiëren we sessie- en tokenlevenscyclus als onderdeel v
 
 Zijn resultaat: server-side ongeldigverklaring geïmplementeerd voordat het een echt probleem werd op gedeelde apparaten. 🚀
 
-👉 Ontdek of jouw uitlog daadwerkelijk iemand uitlogt: [Link naar artikel]
+👉 Ontdek of jouw uitlog daadwerkelijk iemand uitlogt: https://launchstudio.eu/nl/blog/session-expiration-token-handling-silent-gap-ai-auth
 
 #AISecure #LaunchStudio #Manifera #VibeCoding #IndieHacker

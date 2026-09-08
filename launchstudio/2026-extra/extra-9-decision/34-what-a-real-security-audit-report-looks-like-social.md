@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 His result: a second review found eleven real findings, including a forged-webhook path and disabled RLS, and passed his hotel's vendor review with a reproducible report. 🚀
 
-👉 Send us a report you've received, we'll grade it free: [Link to article]
+👉 Send us a report you've received, we'll grade it free: https://launchstudio.eu/en/blog/what-a-real-security-audit-report-looks-like
 
 #IndieHacker #CyberSecurity #LaunchStudio #Manifera #AICoding #InfoSec

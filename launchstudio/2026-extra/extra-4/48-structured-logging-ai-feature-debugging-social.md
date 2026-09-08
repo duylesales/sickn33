@@ -14,6 +14,6 @@ At **LaunchStudio**, structured observability is a standard part of preparing an
 
 Her result: the next batch of bad-output complaints were fully reproducible — she found the pattern and fixed the prompt template within a day instead of guessing. 🚀
 
-👉 Shipped an AI feature with no logging behind it? Get a quote before the next complaint lands: [Link to article]
+👉 Shipped an AI feature with no logging behind it? Get a quote before the next complaint lands: https://launchstudio.eu/en/blog/structured-logging-ai-feature-debugging
 
 #AINativeFounder #LaunchStudio #Manifera #AIObservability #IndieHacker

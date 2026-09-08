@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders think through this proportionate naming ri
 
 Her result: Kirsten worked with LaunchStudio to plan and execute a rebrand under a properly-checked new name — this time verified against both domain and trademark risk, minimizing further disruption. 🚀
 
-👉 Named your product based on domain availability alone? That's not the same question as trademark safety: [Link to article]
+👉 Named your product based on domain availability alone? That's not the same question as trademark safety: https://launchstudio.eu/en/blog/ai-product-names-trademark-risk-quick-check
 
 #Trademark #Branding #AINativeFounder #LaunchStudio #Manifera

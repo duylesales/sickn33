@@ -15,6 +15,6 @@ At **LaunchStudio**, powered by Manifera and its 120+ engineers, we check exactl
 
 PlanPilot now degrades gracefully instead of failing outright, and Wouter has visibility into API cost trends before they become emergencies. 🚀
 
-👉 Not sure if your "AI SaaS" is really just an AI feature in costume? Get a second opinion: [Link to article]
+👉 Not sure if your "AI SaaS" is really just an AI feature in costume? Get a second opinion: https://launchstudio.eu/en/blog/ai-saas-feature-in-costume
 
 #AINativeFounder #LaunchStudio #Manifera #AISaaS #ProductArchitecture

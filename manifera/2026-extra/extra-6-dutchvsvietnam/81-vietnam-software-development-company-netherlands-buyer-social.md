@@ -12,6 +12,6 @@
 
 A vendor that hedges on any one of these four is telling you exactly where the risk sits. 🛡️
 
-👉 Read our full deep dive on vietnam software development company netherlands buyer: [Link to article]
+👉 Read our full deep dive on vietnam software development company netherlands buyer: https://www.manifera.com/blog/vietnam-software-development-company-netherlands-buyer
 
 #VietnamSoftwareDevelopment #CTO #Amsterdam #VendorDueDiligence #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, this secrets and repository audit is a standard first step 
 
 Her result: exposed key rotated immediately, secrets migrated, repository set to private — zero changes to actual features. 🚀
 
-👉 Let's get moving — prototype to production in weeks, not months: [Link to article]
+👉 Let's get moving — prototype to production in weeks, not months: https://launchstudio.eu/en/blog/you-can-build-an-app-with-ai-in-a-weekend-heres-week-two
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

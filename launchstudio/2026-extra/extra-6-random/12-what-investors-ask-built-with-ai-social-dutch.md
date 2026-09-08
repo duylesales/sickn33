@@ -15,6 +15,6 @@ Bij **LaunchStudio**, gesteund door Manifera — vertrouwd door zakelijke klante
 
 Lottes volgende investeerdersgesprek bevatte dezelfde architectuurvraag — deze keer beantwoordde ze die in minder dan twee minuten, zonder notities. 🚀
 
-👉 Binnenkort pitchen? Boek een gratis intro-gesprek van 15 minuten voordat u de kamer binnenstapt: [Link naar artikel]
+👉 Binnenkort pitchen? Boek een gratis intro-gesprek van 15 minuten voordat u de kamer binnenstapt: https://launchstudio.eu/nl/blog/what-investors-ask-built-with-ai
 
 #AINativeFounder #LaunchStudio #Manifera #InvestorReady #StartupPitch

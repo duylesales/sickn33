@@ -15,6 +15,6 @@ At **LaunchStudio**, we've rebuilt evidence-handling logic like this across seve
 
 Julia's result: every condition-report photo is now permanently tied to a verifiable timestamp and booking record, giving both renter and owner evidence neither side can dispute. 🚀
 
-👉 Two-sided marketplace handling physical handoffs? Get a fixed-scope estimate for tamper-proof evidence: [Link to article]
+👉 Two-sided marketplace handling physical handoffs? Get a fixed-scope estimate for tamper-proof evidence: https://launchstudio.eu/en/blog/car-rental-ai-app-damage-dispute-evidence
 
 #AINativeFounder #LaunchStudio #Manifera #CarRental #MarketplaceTrust

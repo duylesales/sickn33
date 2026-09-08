@@ -12,6 +12,6 @@
 
 Seller and buyer onboarding are two different design problems — solving them as one produces a marketplace that serves neither side well. 🎯
 
-👉 Read our full deep dive on choosing a vendor for two-sided marketplace onboarding: [Link to article]
+👉 Read our full deep dive on choosing a vendor for two-sided marketplace onboarding: https://www.manifera.com/blog/choosing-a-vendor-for-marketplace-two-sided-onboarding-flows
 
 #MarketplaceUX #ProductManagement #TwoSidedMarketplace #Onboarding #ColdStart #Manifera

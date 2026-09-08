@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Jeroen's platform verwerkt nu moeiteloos honderden gebruikers en schaalde binnen twee maanden door naar €1.200 MRR. (€2.800 (Launch & Grow Pakket) + €49/maand hosting — binnen 10 werkdagen opgeleverd). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/scaling-ai-saas-infrastructure-guide
 
 #LaunchStudio #Manifera #AISaaS #ScalingSaaS #TechFounders #Cursor #MRRGroei #CloudInfrastructure

@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen we dit als een vast controlepunt bij elke door A
 
 Zijn resultaat: Daan voerde de volledige migratie van 3.000 records twee dagen later opnieuw uit, zonder stille samenvoegingen, en de klantdemo ging door met nauwkeurige pijplijncijfers. 🚀
 
-👉 Binnenkort echte data migreren naar een door AI gebouwde CRM? Laat het vooraf checken met een vaste prijsopgave: [Link naar artikel]
+👉 Binnenkort echte data migreren naar een door AI gebouwde CRM? Laat het vooraf checken met een vaste prijsopgave: https://launchstudio.eu/nl/blog/ai-crm-tool-lead-data-migration-risk
 
 #AINativeFounder #LaunchStudio #Manifera #AICRM #DataMigration

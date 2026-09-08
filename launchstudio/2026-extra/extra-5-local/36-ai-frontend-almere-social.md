@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers bring the same backend rigor they
 
 Groeiplan launched its municipal pilot with three planning teams working simultaneously and zero data-loss incidents, leading directly to a second pilot conversation with a regional sustainability office. 🚀
 
-👉 Built a slick AI frontend in Almere? Here's what's probably not behind it: [Link to article]
+👉 Built a slick AI frontend in Almere? Here's what's probably not behind it: https://launchstudio.eu/en/blog/ai-frontend-almere
 
 #AINativeFounder #LaunchStudio #Manifera #Almere #AIFrontend

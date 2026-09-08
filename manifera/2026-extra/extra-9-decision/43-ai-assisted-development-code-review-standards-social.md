@@ -12,6 +12,6 @@ Everyone assumes that once a vendor says "we use AI coding assistants," the hard
 
 You don't need to read code to use this checklist — you need to hear how confidently they answer it. 📋
 
-👉 Read our full deep dive on the code review standards to demand from AI-assisted vendors: [Link to article]
+👉 Read our full deep dive on the code review standards to demand from AI-assisted vendors: https://www.manifera.com/blog/ai-assisted-development-code-review-standards
 
 #Founder #AIAssistedDevelopment #CodeReviewStandards #VendorDueDiligence #SoftwareOutsourcing #Manifera

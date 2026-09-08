@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a voip call quality: [Link to article]
+👉 Read the founder's guide to building a voip call quality: https://www.manifera.com/blog/voip-app-call-quality-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -14,6 +14,6 @@ At LaunchStudio, we've stabilized CI pipelines for AI-native teams where rapid L
 
 Sanne's CI pass rate on unchanged code went from ~67% to over 98%, and her team dropped the re-run habit within a week. (€2,100 (Launch & Grow Package) — 8 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/real-cost-flaky-tests-ci-pipeline
 
 #LaunchStudio #Manifera #AISaaS #CICD #FlakyTests

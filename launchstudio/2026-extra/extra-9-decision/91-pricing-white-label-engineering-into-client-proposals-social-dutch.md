@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-ervaring, bi
 
 Haar resultaat: Studio Vermaas sloot de volgende twee white-label voorstellen zonder enige prijsonderhandeling, en halveerde de offertetijd. 🚀
 
-👉 Bereken direct uw inkoopkosten en marges met onze prijscalculator: [Link naar artikel]
+👉 Bereken direct uw inkoopkosten en marges met onze prijscalculator: https://launchstudio.eu/nl/blog/pricing-white-label-engineering-into-client-proposals
 
 #BureauLeven #WhiteLabel #AgencyOwner #KlantOffertes #LaunchStudio #Manifera

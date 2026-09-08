@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, auditen onze senior engineers u
 
 💡 Zo herstelde therapeutenplatform Ferndesk 14 verdwenen afspraken en werden toekomstige data-corrupties permanent geblokkeerd.
 
-👉 Lees hoe u uw databaseschema optimaliseert vóór de lancering: [Link naar artikel]
+👉 Lees hoe u uw databaseschema optimaliseert vóór de lancering: https://launchstudio.eu/nl/blog/database-schema-decisions-that-outlive-your-prototype
 
 #DatabaseDesign #PostgreSQL #Supabase #SoftwareArchitecture #LaunchStudio #Manifera

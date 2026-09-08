@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers run the same review checklist on 
 
 Kenniswijzer launched to 400 University of Twente students in week one with zero data exposure incidents — and Sanne didn't have to change a single line of her UI. 🚀
 
-👉 Building in Enschede? Get a launch-readiness review before day one: [Link to article]
+👉 Building in Enschede? Get a launch-readiness review before day one: https://launchstudio.eu/en/blog/ai-software-developers-enschede
 
 #AINativeFounder #LaunchStudio #Manifera #Enschede #ProductionReady

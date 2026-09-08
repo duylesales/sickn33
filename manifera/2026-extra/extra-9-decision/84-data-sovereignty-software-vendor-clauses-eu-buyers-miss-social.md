@@ -12,6 +12,6 @@ If your vendor says "we're GDPR compliant," does that actually tell you where yo
 
 A vendor's compliance claim at signing is a snapshot — build your contract for what happens after. 📋
 
-👉 Read our full deep dive on data sovereignty clauses EU buyers miss: [Link to article]
+👉 Read our full deep dive on data sovereignty clauses EU buyers miss: https://www.manifera.com/blog/data-sovereignty-software-vendor-clauses-eu-buyers-miss
 
 #CTO #DataSovereignty #GDPRCompliance #TechDueDiligence #EUCloud #Manifera

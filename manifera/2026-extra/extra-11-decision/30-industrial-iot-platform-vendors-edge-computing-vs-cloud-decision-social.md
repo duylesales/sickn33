@@ -12,6 +12,6 @@ A stamping press needs a stop decision in under 10 milliseconds. A maintenance t
 
 Edge vs. cloud isn't a single architectural choice — it's a per-use-case engineering judgment call. Make sure your vendor can make it. 🎯
 
-👉 Read our full deep dive on the edge computing vs cloud decision for IIoT: [Link to article]
+👉 Read our full deep dive on the edge computing vs cloud decision for IIoT: https://www.manifera.com/blog/industrial-iot-platform-vendors-edge-computing-vs-cloud-decision
 
 #IndustrialIoT #EdgeComputing #CloudArchitecture #Manufacturing #CTO #Manifera

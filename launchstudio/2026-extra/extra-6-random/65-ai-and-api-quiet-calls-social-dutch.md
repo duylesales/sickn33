@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen de technici van Manifera — met 11+ jaar ervari
 
 Zijn resultaat: KoppelPunt draait nu op een geocoderingsaanbieder die Job bewust heeft geselecteerd, met gedocumenteerde uitgaande aanroepen en geen resterende ongecontroleerde externe afhankelijkheden. 🚀
 
-👉 Wilt u weten wat uw eigen app stilletjes aanroept? Bereken wat een volledige audit zou kosten: [Link naar artikel]
+👉 Wilt u weten wat uw eigen app stilletjes aanroept? Bereken wat een volledige audit zou kosten: https://launchstudio.eu/nl/blog/ai-and-api-quiet-calls
 
 #AINativeFounder #LaunchStudio #Manifera #AIandAPI #HiddenCosts

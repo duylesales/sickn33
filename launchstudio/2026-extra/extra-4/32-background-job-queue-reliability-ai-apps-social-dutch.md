@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen we retry-logica, wachtrijen voor dode letters en
 
 Haar resultaat: Femke komt nu binnen enkele minuten achter een vastzittende batch, in plaats van dat ze dit dagen later van een klant te weten komt. 🚀
 
-👉 Benieuwd wat uw taakwachtrij stilletjes laat vallen? Stuur ons uw prototypelink voor gratis advies: [Link naar artikel]
+👉 Benieuwd wat uw taakwachtrij stilletjes laat vallen? Stuur ons uw prototypelink voor gratis advies: https://launchstudio.eu/nl/blog/background-job-queue-reliability-ai-apps
 
 #AINativeFounder #LaunchStudio #Manifera #BackgroundJobs #ReliabilityEngineering

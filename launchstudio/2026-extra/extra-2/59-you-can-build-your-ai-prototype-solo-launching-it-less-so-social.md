@@ -15,6 +15,6 @@ At **LaunchStudio**, we implement exactly this kind of invite verification as pa
 
 Her result: an eligibility verification step added to the invite process — the straightforward experience for genuinely eligible neighbors unchanged. 🚀
 
-👉 Book a free 15-minute call to talk it through: [Link to article]
+👉 Book a free 15-minute call to talk it through: https://launchstudio.eu/en/blog/you-can-build-your-ai-prototype-solo-launching-it-less-so
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

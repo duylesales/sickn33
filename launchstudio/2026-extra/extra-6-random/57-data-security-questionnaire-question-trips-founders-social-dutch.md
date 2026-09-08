@@ -15,6 +15,6 @@ Bij **LaunchStudio** hebben onze technici, werkend vanuit Amsterdam, AI-native S
 
 Haar resultaat: DataKoppel heeft nu een gedocumenteerd incident-responseproces klaar voor elke toekomstige vragenlijst, en Charlotte sloot de vastgelopen deal binnen een week na indiening ervan. 🚀
 
-👉 Ooit gevraagd naar een incident-responseplan dat u nog niet op schrift had staan: [Link naar artikel]
+👉 Ooit gevraagd naar een incident-responseplan dat u nog niet op schrift had staan: https://launchstudio.eu/nl/blog/data-security-questionnaire-question-trips-founders
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #ProductionReady

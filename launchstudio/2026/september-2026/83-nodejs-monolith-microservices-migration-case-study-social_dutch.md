@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Voor: een batch van 300 documenten liet het gedeelde proces binnen 2-3 minuten crashen en sleurde elke sessie mee. Erna: dezelfde batch is voltooid in ~18 minuten zonder enige impact op andere gebruikers (€2.600, Launch & Grow Pakket — 3 weken). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/nodejs-monolith-microservices-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #NodeJS #Microservices

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've spent eleven years through Manifera building exactly 
 
 Swapping AI models now takes Natalie minutes of config instead of a rewrite, eliminating vendor lock-in for good. 🚀
 
-👉 See what model-agnostic architecture looks like: [Link to article]
+👉 See what model-agnostic architecture looks like: https://launchstudio.eu/en/blog/commoditization-of-the-llm-layer
 
 #AINativeFounder #LaunchStudio #Manifera #ModelAgnostic #LLMCommoditization

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 CarePath slaagde voor de opnieuw ingediende beveiligingsvragenlijst van de CISO, met alle acht gemarkeerde categorieën volledig verholpen en geverifieerd onder de eigen penetratietest van het netwerk, en Amara tekende een pilot-naar-schaal-contract van 18 maanden ter waarde van ongeveer € 180.000 aan jaarlijkse terugkerende omzet. (€ 6.800 (Enterprise Hardening Pakket) — audit-klaar en opnieuw ingediend binnen 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/ciso-security-audit-case-study
 
 #LaunchStudio #Manifera #AISaaS #CISOAudit #HealthTechSecurity

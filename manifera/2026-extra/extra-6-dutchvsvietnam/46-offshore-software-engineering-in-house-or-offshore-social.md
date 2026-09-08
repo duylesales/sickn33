@@ -12,6 +12,6 @@
 
 Get the engineering practices without personally having to build or police them from scratch. 🛡️
 
-👉 Read our full deep dive on offshore software engineering in house or offshore: [Link to article]
+👉 Read our full deep dive on offshore software engineering in house or offshore: https://www.manifera.com/blog/offshore-software-engineering-in-house-or-offshore
 
 #SoftwareEngineering #Amsterdam #Vietnam #CTO #EngineeringCulture #Manifera

@@ -14,6 +14,6 @@ Bij LaunchStudio leveren we directe senior engineeringkracht voor uw kernfundame
 
 Owen liet zijn backend in 7 dagen repareren en lanceerde vlekkeloos. (€ 2.800 (Audit & Hardening) — 7 werkdagen.) 🚀
 
-👉 Lees de vergelijking tussen juniors en een senior partner: [Link naar artikel]
+👉 Lees de vergelijking tussen juniors en een senior partner: https://launchstudio.eu/nl/blog/two-juniors-vs-one-senior-partner-decision
 
 #LaunchStudio #Manifera #AISaaS #HiringStrategy #SeniorEngineers

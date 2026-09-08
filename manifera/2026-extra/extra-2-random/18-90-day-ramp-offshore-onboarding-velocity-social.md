@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on 90 day ramp offshore onboarding velocity: [Link to article]
+👉 Read our full deep dive on 90 day ramp offshore onboarding velocity: https://www.manifera.com/blog/90-day-ramp-offshore-onboarding-velocity
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

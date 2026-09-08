@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Alexander's applicatie behaalde productie-gereedheid: Alexander secured the portal with HTTPS, resolving browser security warning alerts for visitors. (€800 (Domain Configuration Package) — production-ready and deployed in 2 business days.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/connecting-custom-domain-vercel-netlify
 
 #LaunchStudio #Manifera #AISaaS #ConnectingaCustomDom #TechFounders

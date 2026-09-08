@@ -12,6 +12,6 @@
 
 Turn the compliance review from a scramble into a formality. 🛡️
 
-👉 Read our full deep dive on audit trail gap soc2 change history: [Link to article]
+👉 Read our full deep dive on audit trail gap soc2 change history: https://www.manifera.com/blog/audit-trail-gap-soc2-change-history
 
 #SOC2 #CTO #Compliance #AuditLogging #SecurityArchitecture #Manifera

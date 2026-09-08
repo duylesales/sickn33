@@ -12,6 +12,6 @@
 
 We built the API exactly the way our first user needed it. The second user broke that assumption immediately. The third time, we designed it to not care who was asking. 🛡️
 
-👉 Read our full deep dive on api development: [Link to article]
+👉 Read our full deep dive on api development: https://www.manifera.com/blog/api-development
 
 #APIDevelopment #CTO #SoftwareArchitecture #Manifera

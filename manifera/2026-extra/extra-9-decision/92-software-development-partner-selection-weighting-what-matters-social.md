@@ -12,6 +12,6 @@ Three finalist proposals, all claiming strong Agile process, all with polished p
 
 Build the weighted scorecard before the final call, not after. 🎯
 
-👉 Read our full deep dive on weighting what matters in partner selection: [Link to article]
+👉 Read our full deep dive on weighting what matters in partner selection: https://www.manifera.com/blog/software-development-partner-selection-weighting-what-matters
 
 #ITManager #VendorEvaluation #SoftwareDevelopmentPartner #DedicatedDevelopmentTeam #VendorSelection #Manifera

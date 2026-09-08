@@ -16,6 +16,6 @@ At **LaunchStudio**, observability setup usually takes under an hour — the fas
 
 Her result: 4 minutes to alert, issue resolved before a single studio owner noticed anything. 🚀
 
-👉 Find out about your next production issue before your customers do: [Link to article]
+👉 Find out about your next production issue before your customers do: https://launchstudio.eu/en/blog/observability-production-step-vibe-coders-forget
 
 #Observability #IndieHacker #LaunchStudio #Manifera #DevOps #VibeCoding

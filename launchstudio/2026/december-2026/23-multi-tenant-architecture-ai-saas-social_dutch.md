@@ -17,6 +17,6 @@ De 5-punten controle voor multi-tenancy: ✅
 
 Bij **LaunchStudio**, ondersteund door Manifera's 160+ enterprise-projecten, maken we data-isolatie standaard onderdeel van elke lancering. 🛡️🚀
 
-👉 Lees de complete gids over multi-tenant architectuur: [Link naar artikel]
+👉 Lees de complete gids over multi-tenant architectuur: https://launchstudio.eu/nl/blog/multi-tenant-architecture-ai-saas
 
 #MultiTenant #LaunchStudio #Manifera #DataSecurity #AINativeFounder #SaaS #PostgreSQL #TechFounders #StartupOpschalen

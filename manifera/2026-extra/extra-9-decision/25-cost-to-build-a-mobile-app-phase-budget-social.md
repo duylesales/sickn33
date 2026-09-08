@@ -12,6 +12,6 @@ A single lump-sum number is the weakest thing you can walk into a board meeting 
 
 Bring the phases, not just the total, to your next board update. 📋
 
-👉 Read our full deep dive on budgeting the cost to build a mobile app: [Link to article]
+👉 Read our full deep dive on budgeting the cost to build a mobile app: https://www.manifera.com/blog/cost-to-build-a-mobile-app-phase-budget
 
 #COO #MobileAppDevelopment #AppDevelopmentCost #StartupBudgeting #VendorSelection #Manifera

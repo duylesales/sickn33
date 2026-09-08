@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), richten we 
 
 💡 Zo herstelde Nadia el Amrani van Voorschot €5.800 aan ARR door slechts 7 aannemers een persoonlijk mailtje te sturen toen hun gevraagde deelfacturatie live ging. 4 keerden binnen 2 weken terug!
 
-👉 Hoe gaat u om met vertrokken klanten? [Link naar artikel]
+👉 Hoe gaat u om met vertrokken klanten? https://launchstudio.eu/nl/blog/winning-back-a-customer-who-left-and-when-not-to-try
 
 #SaaSRetention #CustomerWinBack #ChurnRecovery #B2BSaaS #LaunchStudio #Manifera

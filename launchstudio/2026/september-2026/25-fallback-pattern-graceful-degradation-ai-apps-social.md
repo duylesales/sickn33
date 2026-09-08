@@ -14,6 +14,6 @@ At **LaunchStudio**, we've built resilient, multi-provider systems for clients l
 
 For Jack, the app maintained 100% availability through subsequent major Anthropic outages. 🚀
 
-👉 See how it's built: [Link to article]
+👉 See how it's built: https://launchstudio.eu/en/blog/fallback-pattern-graceful-degradation-ai-apps
 
 #AINativeFounder #LaunchStudio #Manifera #GracefulDegradation #MultiProviderAI

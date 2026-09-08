@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full dating backend cost breakdown: [Link to article]
+👉 Read the full dating backend cost breakdown: https://www.manifera.com/blog/dating-app-backend-platform-cost-analysis
 
 #MobileTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, our Ho Chi Minh City engineering center treats automated al
 
 His result: RisicoScore now has automated alerting on the login endpoint and other sensitive routes, with notifications reaching Daan directly. 🚀
 
-👉 Not sure your app has any alerting configured? Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Not sure your app has any alerting configured? Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/ai-security-monitoring-nobody-watching
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityMonitoring #CredentialStuffing

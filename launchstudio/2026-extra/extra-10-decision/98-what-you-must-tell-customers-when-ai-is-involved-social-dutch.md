@@ -23,6 +23,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), helpen we s
 
 💡 Zo hielpen we Eline Vos van Huurhulp toen haar chatbot en geautomatiseerde urgentiesortering botsten met de AVG en AI Act. Binnen 3 werkdagen richtten we transparantielabels, escalatieroutes en menselijke accordering in.
 
-👉 Vertelt uw SaaS-applicatie vandaag al eerlijk tegen gebruikers dat er AI achter de knoppen zit? [Link naar artikel]
+👉 Vertelt uw SaaS-applicatie vandaag al eerlijk tegen gebruikers dat er AI achter de knoppen zit? https://launchstudio.eu/nl/blog/what-you-must-tell-customers-when-ai-is-involved
 
 #EUAIAct #Compliance #GDPR #ArtificialIntelligence #Chatbots #SaaS #LaunchStudio #Manifera

@@ -14,6 +14,6 @@ At LaunchStudio, we don't just design disaster recovery architecture — we run 
 
 Oskar's live failover drill completed in 2h 40m, comfortably inside his hospital customer's 4-hour requirement. (€5,400 (Enterprise Hardening Package) — 14 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-multi-cloud-disaster-recovery
 
 #LaunchStudio #Manifera #AISaaS #DisasterRecovery #CloudInfrastructure

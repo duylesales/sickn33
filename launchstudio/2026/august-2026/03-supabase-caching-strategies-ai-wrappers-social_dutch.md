@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type database-engineeringproblemen op s
 
 Ethans applicatie bleef rotsvast overeind: De database bleef 100% stabiel onder 4.000 gelijktijdige gebruikers en de query-latentie daalde met 75%. (€1.900 (Database Scale Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/supabase-caching-strategies-ai-wrappers
 
 #LaunchStudio #Manifera #AISaaS #Supabase #PostgreSQL #DatabaseScaling #TechFounders #StartupOpschalen

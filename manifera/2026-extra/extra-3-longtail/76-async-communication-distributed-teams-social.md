@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on async communication distributed teams: [Link to article]
+👉 Read our full guide on async communication distributed teams: https://www.manifera.com/blog/async-communication-distributed-teams
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

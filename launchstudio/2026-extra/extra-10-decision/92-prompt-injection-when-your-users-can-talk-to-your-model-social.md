@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the injection risk was contained rather than filtered away, model calls logged for review, and the rebuild delivered in 4 business days. 🚀
 
-👉 See if your AI feature can be manipulated by what it reads: [Link to article]
+👉 See if your AI feature can be manipulated by what it reads: https://launchstudio.eu/en/blog/prompt-injection-when-your-users-can-talk-to-your-model
 
 #PromptInjection #AISecurity #SaaS #IndieHacker #LaunchStudio #Manifera

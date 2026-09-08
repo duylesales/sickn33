@@ -12,6 +12,6 @@ Someone in the leadership meeting just floated "what if we just built our own." 
 
 Most mid-market merchants don't need custom. They need to know which specific limitation is actually worth solving. 🎯
 
-👉 Read our full deep dive on Shopify Plus vs. custom e-commerce builds: [Link to article]
+👉 Read our full deep dive on Shopify Plus vs. custom e-commerce builds: https://www.manifera.com/blog/e-commerce-platform-vendor-decision-shopify-plus-vs-custom-build
 
 #Ecommerce #ShopifyPlus #HeadlessCommerce #ProductLeadership #Manifera

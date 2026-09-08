@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the ats candidate data case study: [Link to article]
+👉 See the ats candidate data case study: https://www.manifera.com/blog/ats-migration-candidate-data-case-study
 
 #HRTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Victoria's application achieved production readiness: Victoria identified and fixed a third-party API timeout within 20 minutes of integration, saving potential clients. (€950 (Error Monitoring Package) — production-ready and deployed in 3 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/setting-up-error-tracking-sentry
 
 #LaunchStudio #Manifera #AISaaS #SettingUpSentryError #TechFounders

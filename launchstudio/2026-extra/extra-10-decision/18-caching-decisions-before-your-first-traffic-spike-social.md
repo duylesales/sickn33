@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the leak was closed within hours with no evidence of financial or competitive harm, and the two-account test now runs automatically on every deploy touching the caching layer. 🚀
 
-👉 Check whether your caching layer knows whose data it's serving: [Link to article]
+👉 Check whether your caching layer knows whose data it's serving: https://launchstudio.eu/en/blog/caching-decisions-before-your-first-traffic-spike
 
 #IndieHacker #Redis #ProductionReady #SaaS #LaunchStudio #Manifera

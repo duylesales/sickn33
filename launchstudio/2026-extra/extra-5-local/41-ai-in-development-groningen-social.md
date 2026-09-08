@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat this as standard practice on every AI-built produc
 
 His result: zero downtime during the following exam period, with over 600 concurrent student sign-ups handled without a single data conflict. 🚀
 
-👉 Building fast with AI and about to push a schema change live? Get a free 15-minute review first: [Link to article]
+👉 Building fast with AI and about to push a schema change live? Get a free 15-minute review first: https://launchstudio.eu/en/blog/ai-in-development-groningen
 
 #AINativeFounder #LaunchStudio #Manifera #AIinDevelopment #Groningen

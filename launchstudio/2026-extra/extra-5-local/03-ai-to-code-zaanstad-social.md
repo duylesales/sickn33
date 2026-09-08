@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers and 11+ years of production exper
 
 MillOps now runs with a 30-day recovery window and has processed two further schema changes with zero data loss. 🚀
 
-👉 Using AI to code your MVP? Get a fixed-scope production check before you scale: [Link to article]
+👉 Using AI to code your MVP? Get a fixed-scope production check before you scale: https://launchstudio.eu/en/blog/ai-to-code-zaanstad
 
 #AINativeFounder #LaunchStudio #Manifera #AItoCode #Zaanstad

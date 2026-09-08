@@ -22,6 +22,6 @@ At **LaunchStudio**, informed directly by Herre Roelevink's cybersecurity backgr
 
 His fix: 4 gaps closed before 200 real members joined. 🚀
 
-👉 Get the full minimum security checklist: [Link to article]
+👉 Get the full minimum security checklist: https://launchstudio.eu/en/blog/minimum-security-checklist-ai-applications-going-live
 
 #AISecurity #LaunchStudio #Manifera #AINativeFounder #Cybersecurity #SaaS

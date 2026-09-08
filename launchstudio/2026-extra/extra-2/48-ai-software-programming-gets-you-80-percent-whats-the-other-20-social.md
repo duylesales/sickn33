@@ -15,6 +15,6 @@ At **LaunchStudio**, we test exactly this pattern as part of our access-control 
 
 His result: server-side permission verification added to every document-update request — sharing configuration for coaches unchanged. 🚀
 
-👉 Walk us through what you built — we'll respond within a business day: [Link to article]
+👉 Walk us through what you built — we'll respond within a business day: https://launchstudio.eu/en/blog/ai-software-programming-gets-you-80-percent-whats-the-other-20
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

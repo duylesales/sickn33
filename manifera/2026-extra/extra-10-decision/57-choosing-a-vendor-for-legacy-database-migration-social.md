@@ -12,6 +12,6 @@ Your database has run the same commercial engine for 15 years, the license renew
 
 Migrated correctly and migrated well aren't the same thing — performance regressions are still a failed migration. 🎯
 
-👉 Read our full deep dive on choosing a vendor for legacy database migration: [Link to article]
+👉 Read our full deep dive on choosing a vendor for legacy database migration: https://www.manifera.com/blog/choosing-a-vendor-for-legacy-database-migration
 
 #CTO #DatabaseMigration #LegacyModernization #DataIntegrity #CloudMigration #Manifera

@@ -23,6 +23,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo voorkwam Ilse Broekhuizen van Bureaubox creditcard-blokkades en behield ze 4 bureaus dankzij een simpele pauzefunctie.
 
-👉 Hoe verlaten klanten uw software? [Link naar artikel]
+👉 Hoe verlaten klanten uw software? https://launchstudio.eu/nl/blog/the-cancellation-flow-you-should-build-before-you-need-it
 
 #SaaSRetention #CustomerSuccess #Chargebacks #GDPR #LaunchStudio #Manifera

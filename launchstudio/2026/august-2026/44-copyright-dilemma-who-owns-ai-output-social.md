@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Stella's application achieved silky-smooth performance: Legal compliance was achieved, protecting the startup from copyright and trademark infringement risks. (€1,900 (Copyright Filter integration) — production-ready and deployed in 5 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/copyright-dilemma-who-owns-ai-output
 
 #LaunchStudio #Manifera #AISaaS #TheAICopyrightDilemm #TechFounders

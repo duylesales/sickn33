@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze eigendomscontroleaudit een kernonderdeel van onze p
 
 Zijn resultaat: expliciete eigendomsverificatie toegevoegd aan elke per-gebruiker-resource, en dicht het gat over de hele applicatie. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/ai-and-software-engineering-two-different-jobs-one-prototype
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SoftwareEngineering

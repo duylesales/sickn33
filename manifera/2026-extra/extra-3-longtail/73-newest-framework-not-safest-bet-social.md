@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on newest framework not safest bet: [Link to article]
+👉 Read our full guide on newest framework not safest bet: https://www.manifera.com/blog/newest-framework-not-safest-bet
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

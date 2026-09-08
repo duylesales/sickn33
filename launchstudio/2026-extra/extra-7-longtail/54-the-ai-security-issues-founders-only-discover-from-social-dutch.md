@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen we elk foutenrapport als een beveiligingsrapport
 
 Lukas' resultaat: eigendomscontroles en ID-versteviging over elk document-eindpunt — voltooid in 6 werkdagen, voordat het via een ander bugrapport naar voren kon komen. 🚀
 
-👉 Hebt u een bugrapport ontvangen dat "er vreemd uitzag" maar klein leek? Zo ontdekt u of het eigenlijk dit is: [Link naar artikel]
+👉 Hebt u een bugrapport ontvangen dat "er vreemd uitzag" maar klein leek? Zo ontdekt u of het eigenlijk dit is: https://launchstudio.eu/nl/blog/the-ai-security-issues-founders-only-discover-from
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #Authorization

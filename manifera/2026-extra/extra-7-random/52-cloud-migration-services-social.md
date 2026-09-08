@@ -12,6 +12,6 @@
 
 We moved to the cloud expecting the bill to go down and watched it go up instead. Nobody told us you have to redesign to actually save money. 🛡️
 
-👉 Read our full deep dive on cloud migration services: [Link to article]
+👉 Read our full deep dive on cloud migration services: https://www.manifera.com/blog/cloud-migration-services
 
 #CloudMigration #CTO #CloudCosts #Manifera

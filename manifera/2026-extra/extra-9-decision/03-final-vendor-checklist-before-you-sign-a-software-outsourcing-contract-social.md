@@ -12,6 +12,6 @@ A Rotterdam CEO once called us three weeks after signing with another vendor, as
 
 The negotiating leverage you have before signing is the most leverage you'll ever have. ⚖️
 
-👉 Read our full deep dive on the final vendor checklist before you sign: [Link to article]
+👉 Read our full deep dive on the final vendor checklist before you sign: https://www.manifera.com/blog/final-vendor-checklist-before-you-sign-a-software-outsourcing-contract
 
 #CEO #SoftwareOutsourcing #VendorDueDiligence #IPOwnership #OutsourcingContract #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a debt recovery app app: [Link to article]
+👉 Read the non-technical founder's guide to building a debt recovery app app: https://www.manifera.com/blog/debt-recovery-app-founder-guide
 
 #Fintech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

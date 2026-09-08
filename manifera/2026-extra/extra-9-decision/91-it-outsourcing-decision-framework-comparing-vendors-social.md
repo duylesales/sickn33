@@ -12,6 +12,6 @@
 
 Score seven criteria, weight them to your risk tolerance, and bring a scorecard to your board — not a gut feeling. 📋
 
-👉 Read our full deep dive on the IT outsourcing decision framework: [Link to article]
+👉 Read our full deep dive on the IT outsourcing decision framework: https://www.manifera.com/blog/it-outsourcing-decision-framework-comparing-vendors
 
 #CTO #ITOutsourcing #VendorComparison #OffshoreSoftwareDevelopment #TechDueDiligence #Manifera

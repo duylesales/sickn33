@@ -14,6 +14,6 @@ Bij **LaunchStudio** auditen wij precies deze bouwen-vs-kopen-beslissing al sind
 
 De auth van Femke slaagde voor een vervolgbeveiligingsbeoordeling zonder bevindingen — en ze vermeed de terugkerende Clerk-kost volledig. (€ 1.300 — Launch Ready Pakket, geaudit en gehard in 6 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/custom-auth-vs-auth0-clerk-decision
 
 #LaunchStudio #Manifera #AISaaS #Authentication #BuildVsBuy

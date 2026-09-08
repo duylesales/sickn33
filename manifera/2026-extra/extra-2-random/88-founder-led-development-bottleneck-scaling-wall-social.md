@@ -12,6 +12,6 @@
 
 The real test: can the team ship confidently while the founder is on vacation? 🛡️
 
-👉 Read our full deep dive on founder led development bottleneck scaling wall: [Link to article]
+👉 Read our full deep dive on founder led development bottleneck scaling wall: https://www.manifera.com/blog/founder-led-development-bottleneck-scaling-wall
 
 #CEO #FounderLed #TechnicalDebt #ScalingEngineering #Manifera

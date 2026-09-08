@@ -12,6 +12,6 @@
 
 The tools were never the problem. Trusting what they told us was. 🛡️
 
-👉 Read our full deep dive on devops: [Link to article]
+👉 Read our full deep dive on devops: https://www.manifera.com/blog/devops
 
 #DevOps #VPEngineering #CICD #SoftwareDeployment #Manifera

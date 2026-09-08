@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo ontdekte Marijke Sanders van Offertepro dat 60% van haar 1.847 klanten duplicaten waren door mobiele dubbelklikken. Na onze database constraints en merge-tooling kloppen haar bedrijfsstatistieken weer exact.
 
-👉 Hoe voorkomt uw applicatie dat iemand twee keer op 'Opslaan' klikt? [Link naar artikel]
+👉 Hoe voorkomt uw applicatie dat iemand twee keer op 'Opslaan' klikt? https://launchstudio.eu/nl/blog/duplicate-records-and-the-cleanup-you-will-eventually-need
 
 #DataHygiene #DatabaseDesign #SaaSArchitecture #PostgreSQL #LaunchStudio #Manifera

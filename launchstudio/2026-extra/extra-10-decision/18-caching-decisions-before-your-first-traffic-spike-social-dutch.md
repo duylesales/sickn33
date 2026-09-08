@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, auditen en beveiligen onze seni
 
 💡 Zo hielpen we e-commerce platform Metrivue een accuut dashboard-datalek binnen enkele uren permanent te dichten en structureel te voorkomen.
 
-👉 Lees hoe u uw cachingstrategie vóór uw eerste verkeerspiek beveiligt: [Link naar artikel]
+👉 Lees hoe u uw cachingstrategie vóór uw eerste verkeerspiek beveiligt: https://launchstudio.eu/nl/blog/caching-decisions-before-your-first-traffic-spike
 
 #Caching #Redis #CyberSecurity #SoftwareArchitecture #LaunchStudio #Manifera

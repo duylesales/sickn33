@@ -12,6 +12,6 @@ A middleware ledger failure once froze ~100,000 users out of their deposits for 
 
 The API is what your engineers touch daily. The sponsor bank is what protects your customers' money. 🎯
 
-👉 Read our full deep dive on BaaS vendor selection and the sponsor bank question: [Link to article]
+👉 Read our full deep dive on BaaS vendor selection and the sponsor bank question: https://www.manifera.com/blog/banking-as-a-service-vendor-selection-the-sponsor-bank-question
 
 #BaaS #EmbeddedFinance #CTO #FintechInfrastructure #SponsorBank #Manifera

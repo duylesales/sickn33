@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we precies dit soort volledige infrastructuurinventa
 
 Haar resultaat: correcte authenticatie toegevoegd aan de blootgestelde functie, een volledige inventarisatie die bevestigde dat geen andere het gat deelde. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/understanding-your-apps-ai-security-risk-before-a-user-finds-it
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #CloudSecurity

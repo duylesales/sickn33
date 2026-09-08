@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on ab testing infra reliability cmo: [Link to article]
+👉 Read our full deep dive on ab testing infra reliability cmo: https://www.manifera.com/blog/ab-testing-infra-reliability-cmo
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

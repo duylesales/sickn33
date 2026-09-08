@@ -24,6 +24,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo wiste een recruiter bij Adresboek Pro van Tomas Rietveld per ongeluk 214 kandidaten door een paginafout. Na onze herbouw met duidelijke selecties en batch-undo is onbedoeld dataverlies uitgesloten.
 
-👉 Wat gebeurt er als een klant vandaag op 'Alles selecteren' klikt in uw app? [Link naar artikel]
+👉 Wat gebeurt er als een klant vandaag op 'Alles selecteren' klikt in uw app? https://launchstudio.eu/nl/blog/bulk-actions-and-the-undo-that-should-come-with-them
 
 #SaaSProductDesign #DataSafety #UXDesign #DatabaseArchitecture #LaunchStudio #Manifera

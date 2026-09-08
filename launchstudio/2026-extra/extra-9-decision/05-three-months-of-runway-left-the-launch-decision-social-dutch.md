@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Haar resultaat: Zorgrooster stond in negen werkdagen live, de zorgorganisatie tekende voor vier teams en Ilse factureerde direct € 2.400 met nog vijf weken runway als buffer. 🚀
 
-👉 Spreek met een senior engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Spreek met een senior engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/three-months-of-runway-left-the-launch-decision
 
 #FounderLife #StartupGrowth #LaunchStudio #Manifera #AICoding #ProductionReady

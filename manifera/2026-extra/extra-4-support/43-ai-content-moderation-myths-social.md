@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai content moderation: [Link to article]
+👉 Retire all 3 biggest myths about ai content moderation: https://www.manifera.com/blog/ai-content-moderation-myths
 
 #MediaTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam-based engineers see this exact gap on almost 
 
 Her result: KlantWacht now enforces ownership checks on every query, verified with automated tests that attempt the exact cross-account access that used to work. 🚀
 
-👉 Not sure your AI-built app has this gap? Describe your project and we'll tell you plainly what's missing: [Link to article]
+👉 Not sure your AI-built app has this gap? Describe your project and we'll tell you plainly what's missing: https://launchstudio.eu/en/blog/security-means-different-things
 
 #AINativeFounder #LaunchStudio #Manifera #AppSecurity #Authorization

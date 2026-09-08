@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Iris' resultaat: row-level security over het hele systeem — veertien nieuwe restaurantlocaties zonder nog één datalek. 🚀
 
-👉 Beschrijf wat er echt niet werkt: [Link naar artikel]
+👉 Beschrijf wat er echt niet werkt: https://launchstudio.eu/nl/blog/launchstudio-vs-no-code-consultant
 
 #NoCode #VibeCoding #LaunchStudio #Manifera #Bolt #ProductionReady #SaaS

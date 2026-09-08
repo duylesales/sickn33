@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's enterprise-leveringscentrum, w
 
 Studio Koppels resultaat: project geleverd in 6 weken, €30.000+ brutomarge, 100% klanteigenaarschap behouden. 🚀
 
-👉 Ga in partnerschap met LaunchStudio en pitch grotere scopes zonder aannemerisico: [Link naar artikel]
+👉 Ga in partnerschap met LaunchStudio en pitch grotere scopes zonder aannemerisico: https://launchstudio.eu/nl/blog/creative-agency-uses-launchstudio-as-backend-department
 
 #LaunchStudio #CreativeAgency #WhiteLabel #Manifera #SaaS #DesignStudio #AIApp

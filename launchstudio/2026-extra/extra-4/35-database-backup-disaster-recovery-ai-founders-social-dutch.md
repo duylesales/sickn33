@@ -15,6 +15,6 @@ Bij **LaunchStudio** is een geplande hersteltest een van de eerste dingen die we
 
 Zijn resultaat: Stijn heeft nu back-ups waarvan is bewezen dat ze werken, niet alleen gepland zijn om te draaien — en zou binnen enkele uren, niet weken, weten als dat ooit zou veranderen. 🚀
 
-👉 Beschrijf uw project en we reageren binnen één werkdag: [Link naar artikel]
+👉 Beschrijf uw project en we reageren binnen één werkdag: https://launchstudio.eu/nl/blog/database-backup-disaster-recovery-ai-founders
 
 #AINativeFounder #LaunchStudio #Manifera #DisasterRecovery #DataBackup

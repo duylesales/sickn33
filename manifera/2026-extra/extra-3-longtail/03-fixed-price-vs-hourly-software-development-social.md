@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on fixed price hourly software development: [Link to article]
+👉 Read our full guide on fixed price hourly software development: https://www.manifera.com/blog/fixed-price-vs-hourly-software-development
 
 #SoftwareCosts #AppDevelopment #TechBudget #CustomSoftware #CTO #Manifera

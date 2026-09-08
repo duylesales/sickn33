@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers run this same schema audit for da
 
 Perceelbeheer now handles over 3,000 land parcels with query response times under 100ms, and Gijs pushes schema updates with confidence. 🚀
 
-👉 Let AI design your database schema in Emmeloord? Audit it before you scale: [Link to article]
+👉 Let AI design your database schema in Emmeloord? Audit it before you scale: https://launchstudio.eu/en/blog/ai-in-database-emmeloord
 
 #AINativeFounder #LaunchStudio #Manifera #Emmeloord #DatabaseDesign

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a subscription commerce dunning: [Link to article]
+👉 Read the founder's guide to building a subscription commerce dunning: https://www.manifera.com/blog/subscription-commerce-dunning-founder-guide
 
 #SaaS #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

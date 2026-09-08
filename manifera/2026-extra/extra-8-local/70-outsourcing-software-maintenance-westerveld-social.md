@@ -12,6 +12,6 @@ One engineer understands your 15-year-old revenue engine. He just mentioned reti
 
 Avoiding one chaotic handoff typically covers four to six months of the ongoing maintenance engagement outright.
 
-👉 Read our full deep dive on outsourcing software maintenance Westerveld: [Link to article]
+👉 Read our full deep dive on outsourcing software maintenance Westerveld: https://www.manifera.com/blog/outsourcing-software-maintenance-westerveld
 
 #Westerveld #Drenthe #VPEngineering #LegacySystems #SoftwareMaintenance #OffshoreDevelopment #TechContinuity #Manifera

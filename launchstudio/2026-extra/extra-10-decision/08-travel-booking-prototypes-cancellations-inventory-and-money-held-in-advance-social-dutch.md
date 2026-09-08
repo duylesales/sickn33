@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers ro
 
 💡 Zo verwerkte ervaringsplatform Weekendje ruim 900 boekingen zonder een enkele dubbele reservering of uitbetalingsconflict.
 
-👉 Lees hoe u uw boekingsplatform technisch en juridisch productierijp maakt: [Link naar artikel]
+👉 Lees hoe u uw boekingsplatform technisch en juridisch productierijp maakt: https://launchstudio.eu/nl/blog/travel-booking-prototypes-cancellations-inventory-and-money-held-in-advance
 
 #TravelTech #Boekingsplatform #Concurrency #RaceCondition #LaunchStudio #Manifera

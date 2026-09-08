@@ -15,6 +15,6 @@ At **LaunchStudio**, this data-sensitivity review is part of our production-read
 
 Her result: field-level encryption applied specifically to medical history and owner contact data — scheduling logic and interface untouched. 🚀
 
-👉 Book a free 15-minute intro call: [Link to article]
+👉 Book a free 15-minute intro call: https://launchstudio.eu/en/blog/ai-and-software-development-where-the-two-diverge
 
 #IndieHacker #LaunchStudio #Manifera #AIPrivacy #GDPR

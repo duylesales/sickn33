@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), richten we 
 
 💡 Zo had Timo van Loon van Abonnee 100% groene uptime, terwijl er 11 dagen lang 340 facturen niet waren verstuurd door een gecrashte cronjob. Na onze heartbeat-inrichting worden achtergrondfouten binnen 30 minuten gesignaleerd.
 
-👉 Weet u zeker dat uw nachtelijke achtergrondtaken vannacht wél hebben gedraaid? [Link naar artikel]
+👉 Weet u zeker dat uw nachtelijke achtergrondtaken vannacht wél hebben gedraaid? https://launchstudio.eu/nl/blog/monitoring-and-the-alerts-worth-waking-up-for
 
 #DevOps #Monitoring #SaaS #Uptime #Sentry #LaunchStudio #Manifera

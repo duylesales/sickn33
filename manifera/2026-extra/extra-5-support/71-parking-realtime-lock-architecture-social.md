@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on parking realtime lock: [Link to article]
+👉 Read our full architectural deep dive on parking realtime lock: https://www.manifera.com/blog/parking-realtime-lock-architecture
 
 #PropTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

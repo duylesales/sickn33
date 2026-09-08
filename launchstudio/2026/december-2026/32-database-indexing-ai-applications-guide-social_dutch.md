@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten met PostgreSQL,
 
 Zijn resultaat: van 6–8 seconden naar onder de 200ms. Opgelost in 1 dag. Nul aanpassingen aan het scherm. 🚀
 
-👉 Lees de praktische gids over database-indexing voor AI-apps: [Link naar artikel]
+👉 Lees de praktische gids over database-indexing voor AI-apps: https://launchstudio.eu/nl/blog/database-indexing-ai-applications-guide
 
 #DatabasePerformance #LaunchStudio #Manifera #AINativeFounder #SaaS #PostgreSQL #pgvector #Cursor #TechFounders #StartupOpschalen

@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers run exactly this kind of secrets, dependency,
 
 His result: VaartRooster now runs a documented pre-migration checklist, and no credential has shipped in source code since. 🚀
 
-👉 About to migrate an AI-generated codebase? Send it our way first: [Link to article]
+👉 About to migrate an AI-generated codebase? Send it our way first: https://launchstudio.eu/en/blog/ai-code-download-what-to-check
 
 #AINativeFounder #LaunchStudio #Manifera #CodeSecurity #AIMigration

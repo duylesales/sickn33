@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on str channel sync: [Link to article]
+👉 Read our full architectural deep dive on str channel sync: https://www.manifera.com/blog/str-channel-sync-architecture
 
 #PropTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

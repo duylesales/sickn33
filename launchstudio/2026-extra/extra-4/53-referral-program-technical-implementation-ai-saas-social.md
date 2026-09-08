@@ -15,6 +15,6 @@ At **LaunchStudio**, tracing exactly this kind of silent attribution failure bac
 
 Her result: GroeiBoost's referral program now attributes and credits automatically — Anne-Fleur no longer reconciles rewards by hand. 🚀
 
-👉 If your referral numbers feel off, get an attribution audit: [Link to article]
+👉 If your referral numbers feel off, get an attribution audit: https://launchstudio.eu/en/blog/referral-program-technical-implementation-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSGrowth #ReferralProgram

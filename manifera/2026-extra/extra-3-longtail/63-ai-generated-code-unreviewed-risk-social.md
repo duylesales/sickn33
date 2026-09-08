@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire the biggest myths about ai generated code unreviewed risk: [Link to article]
+👉 Retire the biggest myths about ai generated code unreviewed risk: https://www.manifera.com/blog/ai-generated-code-unreviewed-risk
 
 #AIinTech #SoftwareEngineering #TechLeadership #DevOps #CustomSoftware #Manifera

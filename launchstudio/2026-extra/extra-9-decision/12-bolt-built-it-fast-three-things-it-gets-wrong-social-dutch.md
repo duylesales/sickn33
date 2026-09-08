@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Zijn resultaat: alle LLM-calls verhuisd naar een Edge Function met rate limiting, RLS-beleid gecorrigeerd en een gesigneerde webhook gekoppeld — gereed binnen vier dagen. 🚀
 
-👉 Deel uw repository met ons en ontvang een concrete lijst met bevindingen in plaats van een verkooppraatje: [Link naar artikel]
+👉 Deel uw repository met ons en ontvang een concrete lijst met bevindingen in plaats van een verkooppraatje: https://launchstudio.eu/nl/blog/bolt-bouwde-het-snel-drie-dingen-die-het-vrijwel-nooit-goed-inricht
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #StartupGrowth

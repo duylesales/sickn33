@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Hun resultaat: Rondje lanceerde 18 dagen later met negen betalende sportverenigingen, en Tim paste de patronen de maand erna zelfstandig en foutloos toe. 🚀
 
-👉 Stuur ons uw prototypelink voor een gratis eerste blik: [Link naar artikel]
+👉 Stuur ons uw prototypelink voor een gratis eerste blik: https://launchstudio.eu/nl/blog/when-your-co-founder-says-we-can-build-it-ourselves
 
 #IndieHacker #FounderLife #LaunchStudio #Manifera #AICoding #StartupGrowth

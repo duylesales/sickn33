@@ -16,6 +16,6 @@ At **LaunchStudio**, this kind of database and endpoint hardening is standard in
 
 His result: rate limiting and abuse-pattern monitoring added across every sensitive route, without touching onboarding logic. 🚀
 
-👉 Calculate what your project costs: [Link to article]
+👉 Calculate what your project costs: https://launchstudio.eu/en/blog/your-ai-database-isnt-as-persistent-as-it-looks-in-demo
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #ProductionReady

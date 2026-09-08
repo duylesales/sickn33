@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's engineers who've optimized database ar
 
 His result: dashboard load time dropped from 4.2 seconds to 180 milliseconds, and the Lovable frontend he'd already built stayed completely untouched. 🚀
 
-👉 Get your schema assessed before your next hundred users arrive: [Link to article]
+👉 Get your schema assessed before your next hundred users arrive: https://launchstudio.eu/en/blog/why-prototype-database-schema-breaks-at-1000-users
 
 #LaunchStudio #Manifera #DatabaseSchema #Supabase #VibeCoding #ScalingStartups #MVPPerformance

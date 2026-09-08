@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen wij deze compliance-laag al sinds 2014 in via Manife
 
 De prospect van Astrid keurde de leveranciersbeoordeling goed bij de eerste indiening — geen gestagneerde deal, geen paniek. (€ 2.400 — Launch & Grow Pakket, verholpen en gedocumenteerd in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/real-cost-ignoring-gdpr-eu-launch
 
 #LaunchStudio #Manifera #AISaaS #GDPR #DataProtection

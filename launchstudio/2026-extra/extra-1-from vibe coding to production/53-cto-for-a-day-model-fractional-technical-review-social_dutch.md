@@ -16,6 +16,6 @@ Bij **LaunchStudio** is deze fractionele review onderdeel van onze scoping- en a
 
 Haar resultaat: maanden laaggradige onzekerheid opgelost in één sessie — inclusief één architectuurrichting omgebogen voordat er tijd verspild werd. 🚀
 
-👉 Krijg de technische oordelen die een medeoprichter normaal zou maken: [Link naar artikel]
+👉 Krijg de technische oordelen die een medeoprichter normaal zou maken: https://launchstudio.eu/nl/blog/cto-for-a-day-model-fractional-technical-review
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #StartupAdvice

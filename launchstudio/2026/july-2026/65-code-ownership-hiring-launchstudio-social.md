@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Sofia's application achieved production readiness: she retained 100% ownership and admin access to every part of her stack throughout the entire engagement, and later showed investors a clean, fully-documented codebase during due diligence with no ownership questions to explain away. (€3,400 (Relaunch & Scale) — 11 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/code-ownership-hiring-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #CodeOwnership #StartupFounders

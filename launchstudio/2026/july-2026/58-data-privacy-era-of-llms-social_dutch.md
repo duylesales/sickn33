@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Skylar's applicatie behaalde productie-gereedheid: Skylar passed strict enterprise privacy standards during vendor security review, closing 3 enterprise annual contracts that had previously stalled at the security audit stage. (€6,500 (Enterprise Privacy Package) — production-ready and deployed in 18 business days.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/data-privacy-era-of-llms
 
 #LaunchStudio #Manifera #AISaaS #DataPrivacyintheErao #TechFounders

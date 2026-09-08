@@ -16,6 +16,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's 11+ jaar in veilige multi
 
 Liesbeths resultaat: VlootSlim doorstond de enterprise-audit zonder bevindingen en sloot een contract van €32.000 per jaar. 🚀
 
-👉 Laat uw multi-tenant beveiliging auditen vóór uw volgende enterprise-klant: [Link naar artikel]
+👉 Laat uw multi-tenant beveiliging auditen vóór uw volgende enterprise-klant: https://launchstudio.eu/nl/blog/multi-tenant-trap-saas-architecture-isolation
 
 #LaunchStudio #SaaS #RowLevelSecurity #DataBeveiliging #MultiTenant #Supabase #Manifera

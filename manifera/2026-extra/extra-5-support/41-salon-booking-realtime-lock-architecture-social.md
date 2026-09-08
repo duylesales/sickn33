@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on salon booking realtime lock: [Link to article]
+👉 Read our full architectural deep dive on salon booking realtime lock: https://www.manifera.com/blog/salon-booking-realtime-lock-architecture
 
 #SalonTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

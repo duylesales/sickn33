@@ -12,6 +12,6 @@
 
 We fixed the complaint about slow reviews by making them fast, and it turned out fast reviews were barely reviews at all. 🛡️
 
-👉 Read our full deep dive on code review best practices: [Link to article]
+👉 Read our full deep dive on code review best practices: https://www.manifera.com/blog/code-review-best-practices
 
 #CodeReview #VPEngineering #EngineeringPractices #Manifera

@@ -14,6 +14,6 @@ Bonus: Ivo had slechts 9 DAGEN voor een cruciaal wijnbouwcongres. LaunchStudio b
 
 Bij **LaunchStudio**, ondersteund door Manifera's 120+ software-engineers en 160+ projecten, is ons proces universeel — de software-fundamenten zijn hetzelfde, ongeacht uw niche! 🛡️🚀
 
-👉 Lees alle 10 praktijkverhalen (plus Ivo's complete casus): [Link naar artikel]
+👉 Lees alle 10 praktijkverhalen (plus Ivo's complete casus): https://launchstudio.eu/nl/blog/case-study-compilation-10-ai-founders-launched-2-weeks
 
 #CaseStudy #LaunchStudio #Manifera #AINativeFounder #SaaS #StartupLaunch #NextJS #Lovable #Bolt #TechFounders #StartupOpschalen

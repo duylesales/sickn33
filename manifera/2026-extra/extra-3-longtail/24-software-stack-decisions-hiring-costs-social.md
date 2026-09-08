@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on software stack decisions hiring costs: [Link to article]
+👉 Read our full guide on software stack decisions hiring costs: https://www.manifera.com/blog/software-stack-decisions-hiring-costs
 
 #SoftwareCosts #AppDevelopment #TechBudget #CustomSoftware #CTO #Manifera

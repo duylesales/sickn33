@@ -15,6 +15,6 @@ At **LaunchStudio**, we check for exactly this pattern as part of our authentica
 
 His result: password hashing upgraded to a modern algorithm, existing accounts safely migrated — zero disruptive resets. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/where-ai-in-software-engineering-still-needs-a-human-second-look
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #Authentication

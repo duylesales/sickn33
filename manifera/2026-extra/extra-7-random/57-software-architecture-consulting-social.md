@@ -12,6 +12,6 @@
 
 We built the architecture that would have made sense for a team five times our size. Once we right-sized it, we stopped fighting our own infrastructure. 🛡️
 
-👉 Read our full deep dive on software architecture consulting: [Link to article]
+👉 Read our full deep dive on software architecture consulting: https://www.manifera.com/blog/software-architecture-consulting
 
 #SoftwareArchitecture #CTO #TechStrategy #Manifera

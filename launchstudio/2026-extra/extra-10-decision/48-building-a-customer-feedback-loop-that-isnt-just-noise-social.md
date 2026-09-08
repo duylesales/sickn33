@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of engineering experience, w
 
 Her result: three of twelve WhatsApp group members independently flagged the same delivery-confirmation gap within one week, a two-day fix cut repeat-message complaints roughly in half — delivered in 5 business days. 🚀
 
-👉 Turn your feedback pile into three weekly decisions: [Link to article]
+👉 Turn your feedback pile into three weekly decisions: https://launchstudio.eu/en/blog/building-a-customer-feedback-loop-that-isnt-just-noise
 
 #CustomerFeedback #ProductManagement #FounderLife #SaaSFeedback #LaunchStudio #Manifera

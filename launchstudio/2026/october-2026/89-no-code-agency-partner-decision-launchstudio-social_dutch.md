@@ -14,6 +14,6 @@ Bij **LaunchStudio** zijn wij de partner achter precies dit soort bureau-overdra
 
 De klant van Marloes keurde de lancering goed op schema, en haar vertrouwen bij het aannemen van fintech-aanverwant werk groeide in plaats van te stagneren. (€ 2.300 — Launch & Grow Pakket, gehard en gedocumenteerd in 8 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/no-code-agency-partner-decision-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #AgencyPartner #WhiteLabel

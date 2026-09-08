@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the day view and shortcut restored within a week; her next major change rolled out via flag to 9 volunteers, then 20%, then everyone, with the old version kept for six weeks and a switch-back rate that fell under 1% by week three. 🚀
 
-👉 See how to ship a big change without losing customers: [Link to article]
+👉 See how to ship a big change without losing customers: https://launchstudio.eu/en/blog/shipping-a-big-change-to-customers-who-depend-on-you
 
 #SaaS #ProductManagement #ScaleUp #ChangeManagement #LaunchStudio #Manifera

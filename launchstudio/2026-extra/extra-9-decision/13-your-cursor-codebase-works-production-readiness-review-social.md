@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: authorization consolidated into one layer across all twenty-three routes, six days, plus a findings document for his customers' IT contacts. 🚀
 
-👉 Book a 15-minute call and bring your worst gate: [Link to article]
+👉 Book a 15-minute call and bring your worst gate: https://launchstudio.eu/en/blog/your-cursor-codebase-works-production-readiness-review
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #SaaS

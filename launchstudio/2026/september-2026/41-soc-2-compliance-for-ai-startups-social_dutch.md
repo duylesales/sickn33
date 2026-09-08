@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 auditeerbare enterprise-infrastruct
 
 LaunchStudio configureerde AWS KMS kolom-encryptie en audit-logging — Carter slaagde voor de SOC 2 audit en sloot 3 nieuwe zorgklinieken aan. (€4.800 (Security Hardening Pakket) — productieklaar en binnen 12 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw AI-startup audit-klaar maakt: [Link naar artikel]
+👉 Ontdek hoe u uw AI-startup audit-klaar maakt: https://launchstudio.eu/nl/blog/soc-2-compliance-for-ai-startups
 
 #AINativeFounder #LaunchStudio #Manifera #SOC2Compliance #AISecurity #HealthcareIT #AWSKMS #AuditTrail #AISaaS #StartupOpschalen

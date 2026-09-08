@@ -14,6 +14,6 @@ At **LaunchStudio**, our security lineage runs through CFLW Cyber Strategies, wh
 
 For Chloe, the audit trail enabled accurate organization billing, raising her SaaS profitability by 20%. 🚀
 
-👉 Read the full write-up: [Link to article]
+👉 Read the full write-up: https://launchstudio.eu/en/blog/auditing-ai-workflows-transparent-activity-log
 
 #AINativeFounder #LaunchStudio #Manifera #AIAuditLog #EnterpriseAI

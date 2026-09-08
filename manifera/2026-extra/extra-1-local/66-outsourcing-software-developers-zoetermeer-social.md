@@ -12,6 +12,6 @@
 
 Vet for production. Not for whiteboards. 🛡️
 
-👉 Read our full deep dive on outsourcing software developers zoetermeer: [Link to article]
+👉 Read our full deep dive on outsourcing software developers zoetermeer: https://www.manifera.com/blog/outsourcing-software-developers-zoetermeer
 
 #Zoetermeer #ZuidHolland #Insurtech #CTO #SoftwareOutsourcing #TechnicalVetting #Manifera

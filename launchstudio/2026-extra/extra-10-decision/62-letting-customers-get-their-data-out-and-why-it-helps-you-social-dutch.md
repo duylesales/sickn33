@@ -26,6 +26,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we A
 
 💡 Zo liep Ceren Yılmaz van Klachtlijn een grote aanbesteding mis omdat woningcorporaties geen foto's en bijlagen konden exporteren. Na onze achtergrond-engine tekende de corporatie alsnog een 3-jarig contract!
 
-👉 Is uw software bestand tegen een AVG-dataportabiliteitsaudit? [Link naar artikel]
+👉 Is uw software bestand tegen een AVG-dataportabiliteitsaudit? https://launchstudio.eu/nl/blog/letting-customers-get-their-data-out-and-why-it-helps-you
 
 #SaaSCompliance #DataPortability #GDPR #ProductEngineering #LaunchStudio #Manifera

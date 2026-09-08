@@ -15,6 +15,6 @@ At **LaunchStudio**, this logging audit is part of our security review process. 
 
 Her result: every logging statement audited, sensitive fields masked, a retention policy applied — before the banking-partner conversation went further. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/ai-and-security-the-conversation-founders-have-too-late
 
 #IndieHacker #LaunchStudio #Manifera #AIPrivacy #AISecure

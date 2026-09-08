@@ -15,6 +15,6 @@ Bij **LaunchStudio** passen de 120+ technici van Manifera dezelfde beoordelingsc
 
 Kenniswijzer werd in de eerste week gelanceerd voor 400 studenten van de Universiteit Twente zonder enig incident van gegevensblootstelling — en Sanne hoefde geen enkele regel van haar UI aan te passen. 🚀
 
-👉 Bouwt u in Enschede? Laat uw lanceringsgereedheid controleren vóór dag één: [Link naar artikel]
+👉 Bouwt u in Enschede? Laat uw lanceringsgereedheid controleren vóór dag één: https://launchstudio.eu/nl/blog/ai-software-developers-enschede
 
 #AINativeFounder #LaunchStudio #Manifera #Enschede #ProductionReady

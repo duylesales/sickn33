@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on esim provisioning gsma: [Link to article]
+👉 Read our full architectural deep dive on esim provisioning gsma: https://www.manifera.com/blog/esim-provisioning-gsma-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

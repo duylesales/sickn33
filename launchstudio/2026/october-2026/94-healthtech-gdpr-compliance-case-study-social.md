@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been hardening AI-generated healthtech prototypes for
 
 Owen's platform passed the therapy network's compliance review on resubmission and onboarded all 40 therapists within the month, with a documented audit trail now serving as a standing credibility asset. (€5,800, Enterprise Hardening Package — compliance remediation completed in 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/healthtech-gdpr-compliance-case-study
 
 #LaunchStudio #Manifera #AISaaS #HealthTech #GDPRCompliance

@@ -15,6 +15,6 @@ At **LaunchStudio**, powered by Manifera's 11+ years of software development exp
 
 Her result: BuurtBezorg handled the following holiday season's delivery volume without a single throttling incident. 🚀
 
-👉 Got a busy season coming? Run the numbers with our pricing calculator: [Link to article]
+👉 Got a busy season coming? Run the numbers with our pricing calculator: https://launchstudio.eu/en/blog/free-ai-app-builders-real-cost
 
 #AINativeFounder #LaunchStudio #Manifera #AIAppBuilder #ScalingUp

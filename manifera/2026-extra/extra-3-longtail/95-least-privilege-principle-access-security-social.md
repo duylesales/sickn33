@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on least privilege principle access security: [Link to article]
+👉 Read our full guide on least privilege principle access security: https://www.manifera.com/blog/least-privilege-principle-access-security
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

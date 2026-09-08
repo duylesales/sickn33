@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of engineering practice, eve
 
 Her result: answered a funding body's security questionnaire herself, three weeks later, no engineer needed. 🚀
 
-👉 Get an audit you can actually read: [Link to article]
+👉 Get an audit you can actually read: https://launchstudio.eu/en/blog/non-technical-founder-reads-security-audit-case-study
 
 #AINativeFounder #SecurityAudit #NonTechnicalFounder #LaunchStudio #Manifera #SaaS

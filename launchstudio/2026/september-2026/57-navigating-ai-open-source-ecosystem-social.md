@@ -14,6 +14,6 @@ At **LaunchStudio**, we've spent eleven years through Manifera building this kin
 
 Grace's tool achieved 100% local data sovereignty and passed its financial security review. 🚀
 
-👉 Learn how to navigate open-source AI: [Link to article]
+👉 Learn how to navigate open-source AI: https://launchstudio.eu/en/blog/navigating-ai-open-source-ecosystem
 
 #AINativeFounder #LaunchStudio #Manifera #OpenSourceAI #DataSovereignty

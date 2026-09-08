@@ -12,6 +12,6 @@ Picking the best vendor isn't enough on a public sector tender — you also have
 
 The procedural weight of public procurement isn't overhead — it's what protects the award from being unwound months into delivery. 🎯
 
-👉 Read our full deep dive on choosing a vendor for government and public sector projects: [Link to article]
+👉 Read our full deep dive on choosing a vendor for government and public sector projects: https://www.manifera.com/blog/choosing-a-vendor-for-government-and-public-sector-software-projects
 
 #PublicSector #Procurement #GovTech #EUProcurement #Accessibility #GovernmentIT #Manifera

@@ -12,6 +12,6 @@
 
 A governance gap is a financial risk long before it becomes a financial event. 🛡️
 
-👉 Read our full deep dive on offshore development partner amsterdam governance: [Link to article]
+👉 Read our full deep dive on offshore development partner amsterdam governance: https://www.manifera.com/blog/offshore-development-partner-amsterdam-governance
 
 #CFO #Amsterdam #RiskManagement #OffshoreDevelopmentPartner #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the utility tariff compliance compliance case study: [Link to article]
+👉 See the utility tariff compliance compliance case study: https://www.manifera.com/blog/utility-tariff-compliance-case-study
 
 #EnergyTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

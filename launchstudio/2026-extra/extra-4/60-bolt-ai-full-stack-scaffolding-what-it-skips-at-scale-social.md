@@ -15,6 +15,6 @@ At **LaunchStudio**, we run into some version of this connection ceiling on a me
 
 Her result: AgendaKoppel now handles several times its previous concurrent load without a single connection error, and Elin has visibility before it becomes a problem again. 🚀
 
-👉 Scaling past your beta users soon? Get your infrastructure checked first: [Link to article]
+👉 Scaling past your beta users soon? Get your infrastructure checked first: https://launchstudio.eu/en/blog/bolt-ai-full-stack-scaffolding-what-it-skips-at-scale
 
 #AINativeFounder #LaunchStudio #Manifera #BoltAI #ScalingUp

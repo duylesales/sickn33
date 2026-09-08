@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Jonas herlanceerde binnen een week, slaagde voor de privacy-audit van een ziekenhuisnetwerk en sloot een contract van €40.000 af. (€3.500 (Edge Function Routing & PII Sanitization) — binnen 8 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/supabase-edge-functions-ai-routing
 
 #LaunchStudio #Manifera #AISaaS #Supabase #EdgeFunctions #Deno #HealthTech #CyberSecurity #APIKeySecurity #TechFounders

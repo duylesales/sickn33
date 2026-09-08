@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Joris hardened first, hired second: the seventh client's security review passed without issue, resume-batch scoring time dropped from 4.2 seconds to 600 milliseconds, and his first engineering hire was productive within her first week. (€3,300 (Relaunch & Scale Package) — hardening and documentation completed in 12 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/buy-vs-build-scorecard-ai-infrastructure
 
 #LaunchStudio #Manifera #AISaaS #BuyVsBuild #StartupEngineering

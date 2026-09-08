@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam team works with founders regardless of which 
 
 His result: ReserveerNu launched with the isolation and rate-limiting gaps closed, and Sem now evaluates tools by production track record instead of leaderboard position. 🚀
 
-👉 Picked your AI coding tool from a ranking list? Here's what the list didn't tell you: [Link to article]
+👉 Picked your AI coding tool from a ranking list? Here's what the list didn't tell you: https://launchstudio.eu/en/blog/best-ai-app-rankings-uncomfortable-truth
 
 #AINativeFounder #LaunchStudio #Manifera #AIToolChoice #ProductionReady

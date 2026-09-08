@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on custom app development company amsterdam: [Link to article]
+👉 Read our full deep dive on custom app development company amsterdam: https://www.manifera.com/blog/custom-app-development-company-amsterdam
 
 #Amsterdam #NoordHolland #Zuidas #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

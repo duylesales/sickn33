@@ -14,6 +14,6 @@ At LaunchStudio, we've been closing exactly this freelancer-to-production gap si
 
 MRR grew from €640 to roughly €10,200 across 340 paying accounts within four months of the fix. (€2,700 Launch & Grow package — 13 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/freelancer-to-launchstudio-10k-mrr-case-study
 
 #LaunchStudio #Manifera #AISaaS #MRRGrowth #StartupFounders

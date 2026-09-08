@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: lockfile committed, runtime and framework brought current, the abandoned library replaced, an 8-flow test suite added, and a monthly update routine established — nine days of work that an hour a month would have avoided. 🚀
 
-👉 See what a healthy update routine actually looks like: [Link to article]
+👉 See what a healthy update routine actually looks like: https://launchstudio.eu/en/blog/keeping-dependencies-updated-without-breaking-everything
 
 #SaaS #IndieHacker #DevOps #SoftwareMaintenance #LaunchStudio #Manifera

@@ -25,6 +25,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, garanderen we dat alle intellec
 
 💡 Zo hielpen we Ruben Verhoeven van Toolwissel een bijna verlopen domein net op tijd terug te claimen vóór de technische lancering.
 
-👉 Bekijk welke accounts u vandaag moet auditen: [Link naar artikel]
+👉 Bekijk welke accounts u vandaag moet auditen: https://launchstudio.eu/nl/blog/what-to-keep-control-of-and-what-to-hand-over
 
 #TechStartup #CodeOwnership #SaaSFounder #CyberSecurity #LaunchStudio #Manifera

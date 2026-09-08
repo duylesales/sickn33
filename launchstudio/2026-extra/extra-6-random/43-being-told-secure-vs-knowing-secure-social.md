@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers spend real time turning "it says it's secure"
 
 Her result: KliniekAfspraak now handles patient data with encryption at both stages, and Julia has a written explanation she can hand to any clinic's IT contact. 🚀
 
-👉 Curious what "secure" actually covers in your build: [Link to article]
+👉 Curious what "secure" actually covers in your build: https://launchstudio.eu/en/blog/being-told-secure-vs-knowing-secure
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #AISecure

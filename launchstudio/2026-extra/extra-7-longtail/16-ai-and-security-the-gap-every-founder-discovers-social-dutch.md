@@ -14,6 +14,6 @@ Bij **LaunchStudio** is het behandelen van invoervalidatie als een afzonderlijk 
 
 Esmée's resultaat: een gepolijste, merkconforme boekingsstroom die eindelijk de cijfers controleert die het al die tijd stilletjes had vertrouwd. 🚀
 
-👉 Vertrouwt uw boekings- of betaalstroom de prijs die de browser ernaartoe stuurt? Ontdek het hier: [Link naar artikel]
+👉 Vertrouwt uw boekings- of betaalstroom de prijs die de browser ernaartoe stuurt? Ontdek het hier: https://launchstudio.eu/nl/blog/ai-and-security-the-gap-every-founder-discovers-too-late
 
 #AINativeFounder #LaunchStudio #Manifera #InputValidation #AISecurity

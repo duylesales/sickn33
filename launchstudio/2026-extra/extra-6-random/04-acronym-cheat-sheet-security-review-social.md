@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers run through exactly this checklist — RLS, R
 
 His result: every data table in FactuurGrip now enforces row-level ownership checks at the database itself, independent of what the frontend chooses to display. 🚀
 
-👉 Not sure which of these five terms apply to your app? Book a free 15-minute intro call: [Link to article]
+👉 Not sure which of these five terms apply to your app? Book a free 15-minute intro call: https://launchstudio.eu/en/blog/acronym-cheat-sheet-security-review
 
 #AINativeFounder #LaunchStudio #Manifera #RowLevelSecurity #AppSecurity

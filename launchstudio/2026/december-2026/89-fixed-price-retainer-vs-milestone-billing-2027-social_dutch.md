@@ -14,6 +14,6 @@ Bij LaunchStudio structureren we jaarplanningen rondom concrete, geteste mijlpal
 
 Rutger bespaarde € 30.000 op zijn jaarbegroting en investeerde het overgebleven budget in sales. (€ 8.300 totaal over 2 sprints.) 🚀
 
-👉 Ontdek het mijlpaal-model: [Link naar artikel]
+👉 Ontdek het mijlpaal-model: https://launchstudio.eu/nl/blog/fixed-price-retainer-vs-milestone-billing-2027
 
 #LaunchStudio #Manifera #AISaaS #MilestoneBilling #BudgetPlanning2027

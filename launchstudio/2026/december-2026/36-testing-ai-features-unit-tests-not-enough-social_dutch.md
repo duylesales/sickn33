@@ -17,6 +17,6 @@ Belangrijk: beheer prompts in Git net als broncode en test elke promptwijziging 
 
 Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, bouwen we deze gelaagde teststrategie standaard in. Zijn resultaat: 2 echte promptbugs afgevangen vóórdat makelaars er ooit last van hadden. 🛡️🚀
 
-👉 Lees waarom traditionele unit tests niet voldoen voor AI: [Link naar artikel]
+👉 Lees waarom traditionele unit tests niet voldoen voor AI: https://launchstudio.eu/nl/blog/testing-ai-features-unit-tests-not-enough
 
 #AITesting #LaunchStudio #Manifera #AINativeFounder #SaaS #QA #Cursor #NextJS #TechFounders #StartupOpschalen

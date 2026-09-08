@@ -15,6 +15,6 @@ Bij **LaunchStudio** besteden onze technici echte tijd aan het omzetten van "er 
 
 Haar resultaat: KliniekAfspraak verwerkt patiëntgegevens nu met versleuteling in beide fasen, en Julia heeft een schriftelijke uitleg die ze aan elke IT-contactpersoon van een kliniek kan overhandigen. 🚀
 
-👉 Benieuwd wat "veilig" daadwerkelijk dekt in uw build: [Link naar artikel]
+👉 Benieuwd wat "veilig" daadwerkelijk dekt in uw build: https://launchstudio.eu/nl/blog/being-told-secure-vs-knowing-secure
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #AISecure

@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founding teams calibrate their own speed-and-verifi
 
 His result: a reframed cultural shift that preserved fast iteration on reversible decisions while adding real rigor where it mattered — met with far less internal resistance than a blanket "be more careful" would have caused. 🚀
 
-👉 Is your team's speed culture actually built for your team's actual stakes? Find out: [Link to article]
+👉 Is your team's speed culture actually built for your team's actual stakes? Find out: https://launchstudio.eu/en/blog/what-move-fast-break-things-actually-costs-founder
 
 #AINativeFounder #LaunchStudio #Manifera #StartupCulture #ProductionReady

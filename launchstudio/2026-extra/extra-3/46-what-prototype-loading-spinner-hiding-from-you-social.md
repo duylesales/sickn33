@@ -15,6 +15,6 @@ At **LaunchStudio**, we implement response-time distribution monitoring and info
 
 His result: a loading state that actually communicates expected wait time, plus a proper timeout for outliers — closing a gap that had been invisibly frustrating roughly one in twenty real users. 🚀
 
-👉 Find out what your actual response-time distribution looks like: [Link to article]
+👉 Find out what your actual response-time distribution looks like: https://launchstudio.eu/en/blog/what-prototype-loading-spinner-hiding-from-you
 
 #AINativeFounder #LaunchStudio #Manifera #Observability #ProductPerformance

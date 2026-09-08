@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real veterinary practice platform platform cost breakdown: [Link to article]
+👉 See the real veterinary practice platform platform cost breakdown: https://www.manifera.com/blog/veterinary-practice-platform-cost-analysis
 
 #VetTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

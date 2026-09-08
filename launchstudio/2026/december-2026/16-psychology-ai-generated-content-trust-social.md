@@ -17,6 +17,6 @@ His conversion went from 2% to 11% in six weeks — just by making it feel real.
 
 🧠 The psychology: "trusted by businesses worldwide" = zero trust. "Used by 87 physio practices in Overijssel" = trust, because specificity implies it could be checked.
 
-👉 Read the psychology behind AI content distrust: [Link to article]
+👉 Read the psychology behind AI content distrust: https://launchstudio.eu/en/blog/psychology-ai-generated-content-trust
 
 #AINativeFounder #LaunchStudio #Manifera #TrustSignals #ConversionRate #SaaS

@@ -15,6 +15,6 @@ Bij **LaunchStudio** doorlopen de technici van Manifera — hetzelfde team achte
 
 Haar resultaat: AfspraakGrip heeft nu een werkende stroom voor wachtwoordherstel, bevestigde automatische back-ups, en een gedocumenteerde lijst van wat haar gekozen tool standaard wel en niet dekt. 🚀
 
-👉 Nog aan het vergelijken van AI-codeertools? Boek een gratis intakegesprek van 15 minuten voordat u zich vastlegt: [Link naar artikel]
+👉 Nog aan het vergelijken van AI-codeertools? Boek een gratis intakegesprek van 15 minuten voordat u zich vastlegt: https://launchstudio.eu/nl/blog/ai-for-coding-founder-questions
 
 #AINativeFounder #LaunchStudio #Manifera #AIForCoding #FounderChecklist

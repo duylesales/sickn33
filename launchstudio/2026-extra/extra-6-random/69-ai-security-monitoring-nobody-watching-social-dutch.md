@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelt ons engineeringcentrum in Ho Chi Minhstad geautom
 
 Zijn resultaat: RisicoScore heeft nu geautomatiseerde waarschuwingen op de loginpagina en andere gevoelige routes, met meldingen die rechtstreeks bij Daan terechtkomen. 🚀
 
-👉 Niet zeker of uw app enige waarschuwing heeft geconfigureerd? Praat met een engineer die door AI gegenereerde code begrijpt: [Link naar artikel]
+👉 Niet zeker of uw app enige waarschuwing heeft geconfigureerd? Praat met een engineer die door AI gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/ai-security-monitoring-nobody-watching
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityMonitoring #CredentialStuffing

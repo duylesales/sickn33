@@ -12,6 +12,6 @@ A broken button gets noticed in minutes. A broken data pipeline can quietly feed
 
 The pipeline that works on day one with no tests and no observability isn't a deliverable — it's a liability wearing a demo's costume. 🎯
 
-👉 Read our full technical due diligence checklist for choosing a data engineering vendor: [Link to article]
+👉 Read our full technical due diligence checklist for choosing a data engineering vendor: https://www.manifera.com/blog/choosing-a-data-engineering-vendor-the-technical-due-diligence-checklist
 
 #DataEngineering #CTO #dbt #DataQuality #GDPR #TechnicalDueDiligence #Manifera

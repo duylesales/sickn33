@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gebouwd op Manifera's 11+ jaar productie-engineering, draa
 
 Reiniers resultaat: ShiftDesk bedrijfsbreed uitgerold in 14 werkdagen, zonder één interne engineering-uur van de ERP-migratie af te halen. 🚀
 
-👉 Ontdek hoe u een vastgelopen prototype vrijmaakt zonder IT's achterstand te vergroten: [Link naar artikel]
+👉 Ontdek hoe u een vastgelopen prototype vrijmaakt zonder IT's achterstand te vergroten: https://launchstudio.eu/nl/blog/launchstudio-vs-overloaded-internal-it-department
 
 #LaunchStudio #InterneIT #ScaleUp #Manifera #SaaS #ShadowIT #ProductieKlaar

@@ -15,6 +15,6 @@ Bij **LaunchStudio** worden we mogelijk gemaakt door Manifera — 11+ jaar produ
 
 Boekhouding Buddy werd gelanceerd voor alle acht bèta-gebruikers plus twintig extra aanmeldingen van een lokaal bedrijvenevenement, met nul downtime in de eerste zes weken. 🚀
 
-👉 Heeft u een AI-app-ontwikkelingsprototype in Deventer uitgebracht? Dit ontbreekt er waarschijnlijk nog: [Link naar artikel]
+👉 Heeft u een AI-app-ontwikkelingsprototype in Deventer uitgebracht? Dit ontbreekt er waarschijnlijk nog: https://launchstudio.eu/nl/blog/ai-app-dev-deventer
 
 #AINativeFounder #LaunchStudio #Manifera #Deventer #AIAppDev

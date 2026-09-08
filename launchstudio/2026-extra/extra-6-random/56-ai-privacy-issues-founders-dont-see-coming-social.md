@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's Ho Chi Minh City-based engineers routinely help 
 
 His result: WerkAgenda now runs on a plan with confirmed no-retention terms, and Wesley has a documented answer ready for the next customer who asks. 🚀
 
-👉 Send us your prototype link for free advice on what to check first: [Link to article]
+👉 Send us your prototype link for free advice on what to check first: https://launchstudio.eu/en/blog/ai-privacy-issues-founders-dont-see-coming
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrivacy #DataRetention

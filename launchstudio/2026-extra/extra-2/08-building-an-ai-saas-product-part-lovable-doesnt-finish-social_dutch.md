@@ -15,6 +15,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar het dichten van precies 
 
 Haar resultaat: CSRF-tokens toegevoegd aan elk statusveranderend formulier — zelfde ontwerp, zelfde workflow, blootstelling gedicht. 🚀
 
-👉 Krijg een kostenschatting met onze prijscalculator: [Link naar artikel]
+👉 Krijg een kostenschatting met onze prijscalculator: https://launchstudio.eu/nl/blog/building-an-ai-saas-product-part-lovable-doesnt-finish
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #SaaS

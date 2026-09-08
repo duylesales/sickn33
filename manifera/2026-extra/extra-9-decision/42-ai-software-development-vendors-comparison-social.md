@@ -12,6 +12,6 @@ Six AI vendor demos, all equally impressive on screen. The deciding factor turne
 
 Treat any vendor's resistance to these questions as data in itself. 📊
 
-👉 Read our full deep dive on comparing AI software development vendors: [Link to article]
+👉 Read our full deep dive on comparing AI software development vendors: https://www.manifera.com/blog/ai-software-development-vendors-comparison
 
 #ITManager #AISoftwareDevelopment #VendorComparison #TechDueDiligence #ProductionAI #Manifera

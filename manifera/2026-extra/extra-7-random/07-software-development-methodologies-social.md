@@ -12,6 +12,6 @@
 
 We were doing sprint planning for a plan that hadn't changed in 4 months. Admitting that freed up real capacity. 🛡️
 
-👉 Read our full deep dive on software development methodologies: [Link to article]
+👉 Read our full deep dive on software development methodologies: https://www.manifera.com/blog/software-development-methodologies
 
 #Agile #Waterfall #VPEngineering #SoftwareMethodology #Manifera

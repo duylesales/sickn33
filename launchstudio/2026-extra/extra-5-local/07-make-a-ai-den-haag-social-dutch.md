@@ -15,6 +15,6 @@ Bij **LaunchStudio** vormt het werk van Manifera voor institutionele klanten zoa
 
 Hetzelfde IT-team dat het probleem signaleerde, keurde PolicyPilot na de reparatie goed voor volledige uitrol. 🚀
 
-👉 Maakt u een AI-product voor institutionele klanten? Laat eerst uw backend beoordelen: [Link naar artikel]
+👉 Maakt u een AI-product voor institutionele klanten? Laat eerst uw backend beoordelen: https://launchstudio.eu/nl/blog/make-a-ai-den-haag
 
 #AINativeFounder #LaunchStudio #Manifera #MakeAnAIProduct #DenHaag

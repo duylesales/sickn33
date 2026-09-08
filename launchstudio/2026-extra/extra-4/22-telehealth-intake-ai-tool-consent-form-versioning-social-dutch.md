@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen we toestemming met versiebeheer gekoppeld aan ee
 
 Het resultaat voor Merel: ConsultVoor kan nu voor elke patiënt op elk moment exact aantonen met welke beleidsversie hij of zij heeft ingestemd — en geen enkele update gaat live zonder dat bestaande patiënten opnieuw worden gevraagd. 🚀
 
-👉 Werkt u met een telezorg- of intaketool die met AI is gebouwd? Laat ons gratis naar uw toestemmingsflow kijken: [Link naar artikel]
+👉 Werkt u met een telezorg- of intaketool die met AI is gebouwd? Laat ons gratis naar uw toestemmingsflow kijken: https://launchstudio.eu/nl/blog/telehealth-intake-ai-tool-consent-form-versioning
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #HealthTech

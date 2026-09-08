@@ -15,6 +15,6 @@ Bij **LaunchStudio** bouwen we precies dit soort uitrolveiligheidsnet standaard 
 
 Zijn resultaat: Wessel verzendt nu wekelijks nieuwe planningslogica in plaats van elk kwartaal, omdat een slechte implementatie hem een vlagwissel kost, en geen incident. 🚀
 
-👉 Weet u zeker dat uw app een kill switch heeft? Kom erachter voordat uw volgende functie live gaat: [Link naar artikel]
+👉 Weet u zeker dat uw app een kill switch heeft? Kom erachter voordat uw volgende functie live gaat: https://launchstudio.eu/nl/blog/feature-flags-ai-prototype-rollout-risk
 
 #AINativeFounder #LaunchStudio #Manifera #FeatureFlags #RolloutRisk

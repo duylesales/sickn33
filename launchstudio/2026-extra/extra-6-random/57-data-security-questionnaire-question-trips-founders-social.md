@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers working out of Amsterdam have helped AI-nativ
 
 Her result: DataKoppel now has a documented incident-response process ready for any future questionnaire, and Charlotte closed the stalled deal within a week of submitting it. 🚀
 
-👉 Ever been asked for an incident-response plan you didn't have written down yet: [Link to article]
+👉 Ever been asked for an incident-response plan you didn't have written down yet: https://launchstudio.eu/en/blog/data-security-questionnaire-question-trips-founders
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #ProductionReady

@@ -17,6 +17,6 @@ Bij **LaunchStudio** bevat elke lancering exact wat u nodig heeft voor de eerste
 
 De dag van lancering is mooi. Op dag 15 blijkt of u er écht klaar voor bent. 🚀
 
-👉 Lees de complete overlevingsgids voor de eerste 90 dagen: [Link naar artikel]
+👉 Lees de complete overlevingsgids voor de eerste 90 dagen: https://launchstudio.eu/nl/blog/first-90-days-saas-launch
 
 #SaaSLaunch #LaunchStudio #Manifera #AINativeFounder #StartupJourney #ProductLaunch #TechFounders #StartupOpschalen

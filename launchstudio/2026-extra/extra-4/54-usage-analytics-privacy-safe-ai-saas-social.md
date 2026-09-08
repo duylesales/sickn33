@@ -15,6 +15,6 @@ At **LaunchStudio**, this kind of data-flow audit is a few hours of focused work
 
 His result: LeerVolg's analytics now carry zero personally identifiable student data, and Tygo has documentation ready for any school's data protection review. 🚀
 
-👉 Want to know what your analytics tool is actually receiving? Ask us: [Link to article]
+👉 Want to know what your analytics tool is actually receiving? Ask us: https://launchstudio.eu/en/blog/usage-analytics-privacy-safe-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #DataPrivacy #EdTech

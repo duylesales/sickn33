@@ -15,6 +15,6 @@ At **LaunchStudio**, we test exactly this scenario as part of our authentication
 
 Her result: proper server-side session invalidation implemented, confirmed a captured token genuinely stops working immediately. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/your-ai-software-app-passed-every-demo-has-it-passed-a-real-audit
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #Authentication

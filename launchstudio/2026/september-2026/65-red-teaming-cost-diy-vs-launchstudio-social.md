@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Dario's vulnerability was caught days before a growth campaign would have exposed it: LaunchStudio rebuilt the prompt architecture with strict input/output boundaries, isolated each session's context window, and added an output filter blocking system-prompt leaks. (€3,200 (Relaunch & Scale Package) — red-teaming pass and remediation completed in 9 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/red-teaming-cost-diy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #RedTeaming #AISecurity

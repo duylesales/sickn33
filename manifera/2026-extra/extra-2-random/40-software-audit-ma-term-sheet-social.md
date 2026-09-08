@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on software audit ma term sheet: [Link to article]
+👉 Read our full deep dive on software audit ma term sheet: https://www.manifera.com/blog/software-audit-ma-term-sheet
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

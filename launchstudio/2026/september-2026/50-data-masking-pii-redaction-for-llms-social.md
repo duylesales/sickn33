@@ -14,6 +14,6 @@ At **LaunchStudio**, we've built exactly this kind of compliance-grade pipeline 
 
 Julian passed his HIPAA compliance reviews, securing hospital deployments for his product. 🚀
 
-👉 Get your data masking pipeline built: [Link to article]
+👉 Get your data masking pipeline built: https://launchstudio.eu/en/blog/data-masking-pii-redaction-for-llms
 
 #AINativeFounder #LaunchStudio #Manifera #PIIRedaction #DataMasking

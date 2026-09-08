@@ -12,6 +12,6 @@ Your freelancer went on a two-week holiday and a payment integration broke while
 
 Outgrowing a freelancer isn't a verdict on their skill — it's a structural ceiling your business just hit. 📈
 
-👉 Read our full deep dive on when a freelancer isn't enough anymore: [Link to article]
+👉 Read our full deep dive on when a freelancer isn't enough anymore: https://www.manifera.com/blog/sme-vendor-decisions-when-a-freelancer-isnt-enough-anymore
 
 #SmallBusiness #SMEFounder #Freelancer #DevelopmentTeam #ScalingUp #Manifera

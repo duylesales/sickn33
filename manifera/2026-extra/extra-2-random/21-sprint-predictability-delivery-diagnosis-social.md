@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on sprint predictability delivery diagnosis: [Link to article]
+👉 Read our full deep dive on sprint predictability delivery diagnosis: https://www.manifera.com/blog/sprint-predictability-delivery-diagnosis
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on streaming cmaf: [Link to article]
+👉 Read our full architectural deep dive on streaming cmaf: https://www.manifera.com/blog/streaming-platform-cmaf-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

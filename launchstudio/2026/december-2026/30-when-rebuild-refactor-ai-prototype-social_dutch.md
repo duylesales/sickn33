@@ -18,6 +18,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, geven we een e
 
 Resultaat: herlanceerd in 9 werkdagen tegen 1/5 van de herbouw-offerte. 🚀
 
-👉 Lees het complete besliskader voor herbouwen versus refactoren: [Link naar artikel]
+👉 Lees het complete besliskader voor herbouwen versus refactoren: https://launchstudio.eu/nl/blog/when-rebuild-refactor-ai-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #TechDebt #SaaS #StartupTips #Bolt #Lovable #TechFounders #StartupOpschalen

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, weten we dat 
 
 Liekes resultaat: uitval bij de assessment-stap daalde van 14% naar 2% — alleen door foutafhandeling, voor €800. 🚀
 
-👉 Laat uw prototype checken op onzichtbare gaten in foutafhandeling: [Link naar artikel]
+👉 Laat uw prototype checken op onzichtbare gaten in foutafhandeling: https://launchstudio.eu/nl/blog/prototype-error-page-says-about-product
 
 #LaunchStudio #ErrorHandling #VibeCoding #Manifera #SaaS #UX #AIApp

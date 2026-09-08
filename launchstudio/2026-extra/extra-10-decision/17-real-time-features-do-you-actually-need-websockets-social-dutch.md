@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, auditen en implementeren onze s
 
 💡 Zo bespaarde wagenparkplatform Fleetnest duizenden euro's aan Ably-licenties door live bestelwagenstatussen via Server-Sent Events te serveren.
 
-👉 Ontdek welke real-time technologie uw SaaS-product écht nodig heeft: [Link naar artikel]
+👉 Ontdek welke real-time technologie uw SaaS-product écht nodig heeft: https://launchstudio.eu/nl/blog/real-time-features-do-you-actually-need-websockets
 
 #WebSockets #RealTime #ServerSentEvents #SaaSArchitecture #LaunchStudio #Manifera

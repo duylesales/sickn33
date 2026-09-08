@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: point-in-time recovery enabled, 90-day retention, an off-platform weekly copy, and a documented restore procedure tested end to end in 35 minutes. 🚀
 
-👉 Find out if your backups would actually survive a restore: [Link to article]
+👉 Find out if your backups would actually survive a restore: https://launchstudio.eu/en/blog/backups-you-have-never-restored-are-not-backups
 
 #SaaS #DataBackup #IndieHacker #FounderLife #LaunchStudio #Manifera

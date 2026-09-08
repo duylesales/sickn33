@@ -14,6 +14,6 @@ Bij LaunchStudio harden we AI-prototypes direct op de bestaande code, zodat solo
 
 Priya's dossier werd binnen 4 dagen goedgekeurd door de CISO — contract getekend vóór 31 december. (€ 4.500 (Enterprise Hardening Pakket) — 14 werkdagen.) 🚀
 
-👉 Ontdek het stappenplan: [Link naar artikel]
+👉 Ontdek het stappenplan: https://launchstudio.eu/nl/blog/solo-founder-enterprise-procurement-q1-case-study
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseProcurement #SOC2

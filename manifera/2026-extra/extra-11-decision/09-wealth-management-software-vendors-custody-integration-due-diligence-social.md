@@ -12,6 +12,6 @@ A client's portfolio value is off by a few hundred euros vs. the custodian's own
 
 The dashboard is the least revealing part of this evaluation. The custody layer underneath it is where the fiduciary risk actually lives. 🎯
 
-👉 Read our full deep dive on wealth management custody integration due diligence: [Link to article]
+👉 Read our full deep dive on wealth management custody integration due diligence: https://www.manifera.com/blog/wealth-management-software-vendors-custody-integration-due-diligence
 
 #WealthTech #ComplianceOfficer #CustodyIntegration #AssetManagement #FiduciaryRisk #Manifera

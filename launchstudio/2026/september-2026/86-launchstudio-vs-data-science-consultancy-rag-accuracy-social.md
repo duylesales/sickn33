@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Felix's result: citation accuracy rose from 61% to 93%, and the evaluation pipeline caught an embedding-model regression three weeks later before any customer noticed (€3,100, Relaunch & Scale Package — 10 business days). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-data-science-consultancy-rag-accuracy
 
 #LaunchStudio #Manifera #AISaaS #RAG #LLMOps

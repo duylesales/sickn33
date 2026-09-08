@@ -23,6 +23,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), helpen we s
 
 💡 Zo zag Marek Novotny van Inzichtbord zijn factuur stijgen naar €640 door 1 grote klant met 1,4M records. Na onze database-indexen en staging-optimalisatie daalde zijn rekening direct naar **€185 per maand** (lager dan voorheen!).
 
-👉 Hoeveel betaalt u per actieve klant aan serverkosten? [Link naar artikel]
+👉 Hoeveel betaalt u per actieve klant aan serverkosten? https://launchstudio.eu/nl/blog/what-to-do-when-your-cloud-bill-doubles
 
 #CloudArchitecture #AWS #SaaS #DatabaseOptimization #DevOps #LaunchStudio #Manifera

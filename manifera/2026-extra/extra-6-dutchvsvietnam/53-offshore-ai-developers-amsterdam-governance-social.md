@@ -12,6 +12,6 @@
 
 Not a compromise between cost and control — the only structure that gives you both. 🛡️
 
-👉 Read our full deep dive on offshore ai developers amsterdam governance: [Link to article]
+👉 Read our full deep dive on offshore ai developers amsterdam governance: https://www.manifera.com/blog/offshore-ai-developers-amsterdam-governance
 
 #Amsterdam #CFO #GDPR #AIGovernance #RiskManagement #Manifera

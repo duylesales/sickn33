@@ -12,6 +12,6 @@
 
 PCI compliance is a signature and a date, not an adjective. ✅
 
-👉 Read our full deep dive on fintech vendor PCI DSS due diligence: [Link to article]
+👉 Read our full deep dive on fintech vendor PCI DSS due diligence: https://www.manifera.com/blog/choosing-a-fintech-software-vendor-pci-dss-compliance-non-negotiables
 
 #PCIDSS #FintechCompliance #PaymentSecurity #ComplianceOfficer #VendorDueDiligence #Manifera

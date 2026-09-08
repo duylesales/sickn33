@@ -15,6 +15,6 @@ Bij **LaunchStudio** signaleren wij precies deze discrepantie tussen juridische 
 
 Haar resultaat: een gecorrigeerd privacybeleid dat overeenkomt met het echte verwijderproces van TeamCheck, plus technisch werk dat nu wordt uitgevoerd om de snellere verwijdering waar te maken die het beleid belooft. 🚀
 
-👉 Komt uw privacybeleid daadwerkelijk overeen met wat uw product kan? Stuur ons uw link: [Link naar artikel]
+👉 Komt uw privacybeleid daadwerkelijk overeen met wat uw product kan? Stuur ons uw link: https://launchstudio.eu/nl/blog/ai-generated-legal-text-still-need-human-lawyer
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #DueDiligence

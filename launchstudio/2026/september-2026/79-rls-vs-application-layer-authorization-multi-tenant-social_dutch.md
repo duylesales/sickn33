@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 Adversarial testing bevestigde nul ongeautoriseerde toegang over kliniekgrenzen heen (€4.100 (Enterprise Hardening Pakket) — voltooid in 13 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/rls-vs-application-layer-authorization-multi-tenant
 
 #LaunchStudio #Manifera #AISaaS #RowLevelSecurity #MultiTenant

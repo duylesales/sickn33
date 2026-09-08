@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Tessa's resultaat: Haar klant bespaarde duizenden euro's aan voorbarig herstelwerk — en kwam 6 weken later terug voor een vlekkeloze livegang. 🚀
 
-👉 Loop uw eigen project door de 5 Go / No-Go signalen: [Link naar artikel]
+👉 Loop uw eigen project door de 5 Go / No-Go signalen: https://launchstudio.eu/nl/blog/go-no-go-checklist-launchstudio-right-for-you
 
 #Agency #WhiteLabel #StartupChecklist #LaunchStudio #Manifera #AINativeFounder #SaaS

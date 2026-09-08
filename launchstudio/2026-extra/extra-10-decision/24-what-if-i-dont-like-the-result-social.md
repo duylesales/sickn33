@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, e
 
 His result: the pause-subscription request surfaced at the day-6 staging checkpoint became a small, separately priced addition instead of a dispute, and Tomas's platform launched live in 13 business days. 🚀
 
-👉 Ask for a written scope document on your first call: [Link to article]
+👉 Ask for a written scope document on your first call: https://launchstudio.eu/en/blog/what-if-i-dont-like-the-result
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

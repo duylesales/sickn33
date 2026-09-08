@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 HireScope AI slaagde bij de eerste herindiening voor de enterprise compliance-audit. (€ 5.800 (Enterprise Hardening Pakket) — 12 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/eu-ai-act-compliance-sprint-legal-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #EUAIAct #AICompliance

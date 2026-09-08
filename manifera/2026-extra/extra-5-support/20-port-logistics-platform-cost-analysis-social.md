@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real port logistics platform platform cost breakdown: [Link to article]
+👉 See the real port logistics platform platform cost breakdown: https://www.manifera.com/blog/port-logistics-platform-cost-analysis
 
 #MaritimeTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

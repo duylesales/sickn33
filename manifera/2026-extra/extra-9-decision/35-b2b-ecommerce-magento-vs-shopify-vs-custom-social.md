@@ -12,6 +12,6 @@ A brilliant development team building on the wrong B2B commerce platform will st
 
 Stress-test the platform against your three-year volume, not just today's SKU count. 📈
 
-👉 Read our full deep dive on Magento vs Shopify vs custom B2B ecommerce builds: [Link to article]
+👉 Read our full deep dive on Magento vs Shopify vs custom B2B ecommerce builds: https://www.manifera.com/blog/b2b-ecommerce-magento-vs-shopify-vs-custom
 
 #COO #B2BEcommerce #WebshopDevelopment #VendorSelection #EcommercePlatform #Manifera

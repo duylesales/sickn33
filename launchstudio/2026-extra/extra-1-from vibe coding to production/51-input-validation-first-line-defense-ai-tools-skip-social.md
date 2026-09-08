@@ -16,6 +16,6 @@ At **LaunchStudio**, comprehensive input validation — security AND business-ru
 
 His result: business-rule validation closed a gap generic framework protection was never designed to catch. 🚀
 
-👉 Get your input validation checked against real requirements: [Link to article]
+👉 Get your input validation checked against real requirements: https://launchstudio.eu/en/blog/input-validation-first-line-defense-ai-tools-skip
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #AISecure

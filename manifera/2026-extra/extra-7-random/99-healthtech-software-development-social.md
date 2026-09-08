@@ -12,6 +12,6 @@ A product can pass every item on a HIPAA checklist and still make a breach far m
 
 One re-architected platform closed a hospital deal that had been stuck for five months — in weeks. ⚡
 
-👉 Read our full deep dive on healthtech software development: [Link to article]
+👉 Read our full deep dive on healthtech software development: https://www.manifera.com/blog/healthtech-software-development
 
 #Healthtech #HIPAA #CEO #HealthcareSoftware #Manifera

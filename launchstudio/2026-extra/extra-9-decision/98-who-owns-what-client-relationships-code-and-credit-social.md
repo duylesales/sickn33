@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years running this kind of commerc
 
 His result: Joris moved to a written agreement covering ownership, a two-year non-solicitation term, and a sign-off policy on credit — zero recurrence across the eleven engagements since. 🚀
 
-👉 Book a 15-minute call to get our standard subcontractor terms: [Link to article]
+👉 Book a 15-minute call to get our standard subcontractor terms: https://launchstudio.eu/en/blog/who-owns-what-client-relationships-code-and-credit
 
 #AgencyLife #WhiteLabel #AgencyOwner #ContractLaw #LaunchStudio #Manifera

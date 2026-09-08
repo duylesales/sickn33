@@ -16,6 +16,6 @@ Bij **LaunchStudio** verhelpen we exact deze uitdagingen dankzij Manifera's 11+ 
 
 De Time-to-First-Token van Daans juridische AI daalde van 3.2s naar 420ms met LaunchStudio edge routing (€2.800, live in 5 werkdagen). 🚀
 
-👉 Lees de volledige gids: [Link naar artikel]
+👉 Lees de volledige gids: https://launchstudio.eu/nl/blog/edge-computing-low-latency-ai
 
 #LaunchStudio #Manifera #AISaaS #SoftwareEngineering #TechFounders #Nextjs #AIArchitecture #StartupOpschalen

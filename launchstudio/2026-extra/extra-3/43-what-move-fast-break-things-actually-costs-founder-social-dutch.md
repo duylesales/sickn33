@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichtende teams hun eigen cultuur rond snelhei
 
 Zijn resultaat: een geherformuleerde culturele verschuiving die snelle iteratie op omkeerbare beslissingen behield, terwijl er echte striktheid werd toegevoegd waar het ertoe deed — met aanzienlijk minder interne weerstand dan een algehele oproep om "voorzichtiger te zijn" zou hebben veroorzaakt. 🚀
 
-👉 Is de snelheidscultuur van uw team echt afgestemd op de werkelijke inzet van uw team? Kom erachter: [Link naar artikel]
+👉 Is de snelheidscultuur van uw team echt afgestemd op de werkelijke inzet van uw team? Kom erachter: https://launchstudio.eu/nl/blog/what-move-fast-break-things-actually-costs-founder
 
 #AINativeFounder #LaunchStudio #Manifera #StartupCulture #ProductionReady

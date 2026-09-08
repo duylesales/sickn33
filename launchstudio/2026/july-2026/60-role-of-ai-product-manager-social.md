@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Sadie's application achieved production readiness: Sadie launched her retail SaaS platform successfully, securing her first 5 pilot store customers on a foundation that could scale past the prototype stage. (€3,000 (SaaS MVP Launch Package) — production-ready and deployed in 9 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/role-of-ai-product-manager
 
 #LaunchStudio #Manifera #AISaaS #TheRoleoftheAIProduc #TechFounders

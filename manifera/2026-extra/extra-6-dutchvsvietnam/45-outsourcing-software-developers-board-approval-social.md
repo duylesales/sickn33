@@ -12,6 +12,6 @@
 
 Convert a stalled discussion into a fifteen-minute approval. 🛡️
 
-👉 Read our full deep dive on outsourcing software developers board approval: [Link to article]
+👉 Read our full deep dive on outsourcing software developers board approval: https://www.manifera.com/blog/outsourcing-software-developers-board-approval
 
 #CFO #BoardApproval #OutsourcingDevelopers #RiskManagement #Manifera

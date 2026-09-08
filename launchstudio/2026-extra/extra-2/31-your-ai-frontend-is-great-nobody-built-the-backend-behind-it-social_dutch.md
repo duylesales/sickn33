@@ -15,6 +15,6 @@ Bij **LaunchStudio** implementeren we precies dit soort server-side prijsverific
 
 Zijn resultaat: prijsberekeningsautoriteit volledig naar de server verplaatst — de soepele, instant-aanvoelende prijsweergave bleef precies hetzelfde. 🚀
 
-👉 Bekijk wat jouw project zou kosten met onze calculator: [Link naar artikel]
+👉 Bekijk wat jouw project zou kosten met onze calculator: https://launchstudio.eu/nl/blog/your-ai-frontend-is-great-nobody-built-the-backend-behind-it
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #Payments

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See our complete breakdown on questions ask software development firm: [Link to article]
+👉 See our complete breakdown on questions ask software development firm: https://www.manifera.com/blog/questions-to-ask-software-development-firm
 
 #DedicatedTeam #OffshoreDevelopment #TechLeadership #SoftwareEngineering #CTO #Manifera

@@ -12,6 +12,6 @@ Most "software for AI development" is built by teams who've never had to explain
 
 Industrial AI needs an architecture built for provenance, not just prediction. ⚙️
 
-👉 Read our full deep dive on software for AI development in Eemsdelta: [Link to article]
+👉 Read our full deep dive on software for AI development in Eemsdelta: https://www.manifera.com/blog/software-for-ai-development-eemsdelta
 
 #Eemsdelta #Groningen #IndustrialAI #ChemportEurope #CTO #Manifera

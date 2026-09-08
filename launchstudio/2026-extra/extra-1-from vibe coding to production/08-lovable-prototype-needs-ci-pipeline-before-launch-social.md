@@ -16,6 +16,6 @@ At **LaunchStudio**, we set up CI pipelines and preview environments matched to 
 
 Her result: the new pipeline caught 2 more checkout-breaking changes the following month — quietly, before a single customer ever noticed. 🚀
 
-👉 Get a CI pipeline that catches problems before they ship: [Link to article]
+👉 Get a CI pipeline that catches problems before they ship: https://launchstudio.eu/en/blog/lovable-prototype-needs-ci-pipeline-before-launch
 
 #CI #IndieHacker #LaunchStudio #Manifera #VibeCoding #DevOps

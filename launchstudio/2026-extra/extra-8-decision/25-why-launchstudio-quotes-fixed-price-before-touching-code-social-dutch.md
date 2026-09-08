@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, word
 
 Naomi's resultaat: ShiftBoard voltooid binnen de gequoteerde prijs, geen extra facturen, drie gaten gedicht in 11 werkdagen voor €2.700. 🚀
 
-👉 Ontdek hoe een scopinggesprek een betrouwbaar getal oplevert, geen gok: [Link naar artikel]
+👉 Ontdek hoe een scopinggesprek een betrouwbaar getal oplevert, geen gok: https://launchstudio.eu/nl/blog/why-launchstudio-quotes-fixed-price-before-touching-code
 
 #LaunchStudio #VastePrijs #ScopingCall #Manifera #SaaS #Transparantie #AIApp

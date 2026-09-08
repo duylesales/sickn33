@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengen de 120+ technici van Manifera dezelfde backendnauwk
 
 Groeiplan lanceerde zijn gemeentelijke pilot met drie planningsteams die tegelijkertijd werkten en zonder incidenten van gegevensverlies, wat direct leidde tot een tweede pilotgesprek met een regionaal duurzaamheidsbureau. 🚀
 
-👉 Heeft u een strakke AI-frontend gebouwd in Almere? Dit zit er waarschijnlijk niet achter: [Link naar artikel]
+👉 Heeft u een strakke AI-frontend gebouwd in Almere? Dit zit er waarschijnlijk niet achter: https://launchstudio.eu/nl/blog/ai-frontend-almere
 
 #AINativeFounder #LaunchStudio #Manifera #Almere #AIFrontend

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on robo advisory trade execution: [Link to article]
+👉 Read our full architectural deep dive on robo advisory trade execution: https://www.manifera.com/blog/robo-advisory-trade-execution-architecture
 
 #WealthTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

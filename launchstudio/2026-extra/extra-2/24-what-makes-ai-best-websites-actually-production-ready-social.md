@@ -15,6 +15,6 @@ At **LaunchStudio**, we check for this systematically across an entire codebase 
 
 Her result: consistent output escaping applied sitewide, closing the vulnerability and confirming no malicious content had actually been submitted. 🚀
 
-👉 Run your project through our pricing calculator: [Link to article]
+👉 Run your project through our pricing calculator: https://launchstudio.eu/en/blog/what-makes-ai-best-websites-actually-production-ready
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #WebSecurity

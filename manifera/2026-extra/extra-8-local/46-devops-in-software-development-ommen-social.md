@@ -12,6 +12,6 @@
 
 A weekend deployment ritual isn't a tooling gap. It's an architecture gap. 🛠️
 
-👉 Read our full deep dive on devops in software development ommen: [Link to article]
+👉 Read our full deep dive on devops in software development ommen: https://www.manifera.com/blog/devops-in-software-development-ommen
 
 #Ommen #Overijssel #DevOps #PublicSectorIT #SoftwareDevelopment #Manifera

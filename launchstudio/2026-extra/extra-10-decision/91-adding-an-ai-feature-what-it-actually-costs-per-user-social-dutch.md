@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we s
 
 💡 Zo ontving Lena Fischer van Vergaderpunt een OpenAI-factuur van **€1.240** op slechts €1.560 omzet. Door prompt caching, chunking en model-routing brachten we haar AI-kosten terug naar slechts **€1,90 per klant per maand**.
 
-👉 Weet u exact wat uw AI-feature kost als een klant morgen 300 documenten uploadt? [Link naar artikel]
+👉 Weet u exact wat uw AI-feature kost als een klant morgen 300 documenten uploadt? https://launchstudio.eu/nl/blog/adding-an-ai-feature-what-it-actually-costs-per-user
 
 #ArtificialIntelligence #SaaS #OpenAI #UnitEconomics #PromptEngineering #LaunchStudio #Manifera

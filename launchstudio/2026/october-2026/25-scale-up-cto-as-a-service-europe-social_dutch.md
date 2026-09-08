@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 David doorstond de enterprise security-audit glansrijk, sloot de deal en schaalde door naar €65k MRR met gezonde marges. (€4.500 (Launch & Grow Fractional CTO Pakket) — binnen 15 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/scale-up-cto-as-a-service-europe
 
 #LaunchStudio #Manifera #AISaaS #FractionalCTO #CTOasaService #ScaleUp #ECommerce #TechLeadership #StartupOpschalen

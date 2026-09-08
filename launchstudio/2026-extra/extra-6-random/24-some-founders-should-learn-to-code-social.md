@@ -15,6 +15,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: OogstData's import feature was fully repaired with proper error visibility, and the pilot relationship was salvaged after a rescheduled demo went smoothly two weeks later. 🚀
 
-👉 App breaking in front of a customer right now? Book a free 15-minute intro call before you open a tutorial: [Link to article]
+👉 App breaking in front of a customer right now? Book a free 15-minute intro call before you open a tutorial: https://launchstudio.eu/en/blog/some-founders-should-learn-to-code
 
 #AINativeFounder #LaunchStudio #Manifera #LearnToCode #ProductionSupport

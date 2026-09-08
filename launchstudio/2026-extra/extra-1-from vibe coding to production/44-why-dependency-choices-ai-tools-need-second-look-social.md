@@ -16,6 +16,6 @@ At **LaunchStudio**, dependency audits — maintenance, vulnerabilities, licensi
 
 His result: the improperly-licensed dependency swapped out in days — blocker resolved before it delayed funding. 🚀
 
-👉 Get your dependencies checked for risks invisible in normal use: [Link to article]
+👉 Get your dependencies checked for risks invisible in normal use: https://launchstudio.eu/en/blog/why-dependency-choices-ai-tools-need-second-look
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

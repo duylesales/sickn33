@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai credit scoring: [Link to article]
+👉 Retire all 3 biggest myths about ai credit scoring: https://www.manifera.com/blog/ai-credit-scoring-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

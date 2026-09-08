@@ -12,6 +12,6 @@ Two founders build the same clinical decision support feature. One burns 18 mont
 
 Regulatory runway isn't a legal afterthought — it's a product decision. 🧭
 
-👉 Read our full deep dive on digital health startup vendor selection: [Link to article]
+👉 Read our full deep dive on digital health startup vendor selection: https://www.manifera.com/blog/digital-health-startup-vendor-selection-regulatory-runway-before-product-market-fit
 
 #DigitalHealth #HealthTech #FDACompliance #StartupFounders #MedTech #Manifera

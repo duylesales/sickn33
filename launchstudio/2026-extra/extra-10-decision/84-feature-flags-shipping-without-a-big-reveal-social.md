@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: server-side flags with per-account stability rolled out founder-first, then volunteers, then 10%, then all — her next major change caught a similar bug in 11 minutes for 3 accounts instead of 90 minutes for everyone. 🚀
 
-👉 Learn which flags actually earn their complexity: [Link to article]
+👉 Learn which flags actually earn their complexity: https://launchstudio.eu/en/blog/feature-flags-shipping-without-a-big-reveal
 
 #SaaS #IndieHacker #DevOps #FeatureFlags #LaunchStudio #Manifera

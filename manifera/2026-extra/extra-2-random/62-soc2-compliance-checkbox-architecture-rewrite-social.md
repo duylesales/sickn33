@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on soc2 compliance checkbox architecture rewrite: [Link to article]
+👉 Read our full deep dive on soc2 compliance checkbox architecture rewrite: https://www.manifera.com/blog/soc2-compliance-architecture-rewrite
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

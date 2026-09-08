@@ -15,6 +15,6 @@ Bij **LaunchStudio** hebben we dit soort logica voor bewijsafhandeling al bij me
 
 Het resultaat voor Julia: elke foto van het conditierapport is nu permanent gekoppeld aan een verifieerbaar tijdstempel en boekingsrecord, waardoor zowel huurder als eigenaar bewijsmateriaal krijgen dat geen van beiden kan betwisten. 🚀
 
-👉 Tweezijdige marktplaats met fysieke overdrachten? Vraag een schatting met een vast bereik aan voor fraudebestendig bewijsmateriaal: [Link naar artikel]
+👉 Tweezijdige marktplaats met fysieke overdrachten? Vraag een schatting met een vast bereik aan voor fraudebestendig bewijsmateriaal: https://launchstudio.eu/nl/blog/car-rental-ai-app-damage-dispute-evidence
 
 #AINativeFounder #LaunchStudio #Manifera #CarRental #MarketplaceTrust

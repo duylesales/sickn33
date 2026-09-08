@@ -14,6 +14,6 @@ Bij **LaunchStudio** beschermen wij oprichters al sinds 2014 tegen precies dit o
 
 Yusufs platform werd gelanceerd voor exact de geoffreerde prijs, met elke oplevering geverifieerd vóór de eindbetaling. (€2.200 Launch & Grow-pakket — 9 werkdagen, zonder afwijking.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/refund-policy-fixed-scope-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #VastePrijsOntwikkeling #StartupOprichters

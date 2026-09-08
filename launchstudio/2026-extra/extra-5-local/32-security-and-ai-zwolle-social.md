@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers — the same team behind projects
 
 Handelspunt processed its first 200 real transactions with zero fraudulent orders, and Thijs onboarded twelve wholesalers in his first month. 🚀
 
-👉 Processing payments in Zwolle? Verify your webhooks before you take real money: [Link to article]
+👉 Processing payments in Zwolle? Verify your webhooks before you take real money: https://launchstudio.eu/en/blog/security-and-ai-zwolle
 
 #AINativeFounder #LaunchStudio #Manifera #Zwolle #PaymentSecurity

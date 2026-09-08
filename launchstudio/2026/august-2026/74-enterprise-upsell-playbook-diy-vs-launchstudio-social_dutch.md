@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen wij dit type enterprise-expansie-infrastructuur al s
 
 Het account van Amara ging van stagnerend naar schalend: het account van de retailer breidde binnen zes weken na livegang van de infrastructuur uit van 25 naar 90 stoelen, waarbij IT de uitrol dezelfde week goedkeurde als waarin SSO bevestigd werkte. (€ 2.600 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-upsell-playbook-diy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #NetRevenueRetention

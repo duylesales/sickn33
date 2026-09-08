@@ -12,6 +12,6 @@
 
 The first vendor gave us one number and we built our whole launch plan around it. It was the best case dressed up as the plan. 🛡️
 
-👉 Read our full deep dive on custom software development timeline: [Link to article]
+👉 Read our full deep dive on custom software development timeline: https://www.manifera.com/blog/custom-software-development-timeline
 
 #SoftwareDevelopment #CFO #ProjectTimeline #Manifera

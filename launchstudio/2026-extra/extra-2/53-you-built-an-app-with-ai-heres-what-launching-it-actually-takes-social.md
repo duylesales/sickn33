@@ -15,6 +15,6 @@ At **LaunchStudio**, we implement exactly this kind of calibrated rate limiting 
 
 His result: a calibrated rate limit implemented, normal coordinator use unaffected while bulk collection became impractical. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/you-built-an-app-with-ai-heres-what-launching-it-actually-takes
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #AIPrivacy

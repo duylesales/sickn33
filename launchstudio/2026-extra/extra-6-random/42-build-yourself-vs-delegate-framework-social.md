@@ -15,6 +15,6 @@ At **LaunchStudio**, we review exactly this kind of build-vs-delegate decision o
 
 His result: TransportGrip launched with authentication fleet operators' IT departments approved without a second look, and Guus redirected his time to the paperwork automation that actually sets TransportGrip apart. 🚀
 
-👉 Not sure which quadrant your build sits in: [Link to article]
+👉 Not sure which quadrant your build sits in: https://launchstudio.eu/en/blog/build-yourself-vs-delegate-framework
 
 #AINativeFounder #LaunchStudio #Manifera #BuildVsBuy #TechnicalFounder

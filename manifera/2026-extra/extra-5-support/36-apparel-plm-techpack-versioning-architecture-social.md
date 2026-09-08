@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on apparel plm techpack versioning: [Link to article]
+👉 Read our full architectural deep dive on apparel plm techpack versioning: https://www.manifera.com/blog/apparel-plm-techpack-versioning-architecture
 
 #FashionTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

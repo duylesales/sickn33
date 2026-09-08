@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers in Singapore, alongside teams in Amsterdam an
 
 His result: KassaKoppel now handles transaction retries correctly across all supported hardware, and Owen keeps building purely by description, with periodic reviews as a standing checkpoint. 🚀
 
-👉 Building entirely by describing outcomes, never reading the code? Here's what to check before you scale: [Link to article]
+👉 Building entirely by describing outcomes, never reading the code? Here's what to check before you scale: https://launchstudio.eu/en/blog/short-history-vibe-coding-term
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #ProductionReady

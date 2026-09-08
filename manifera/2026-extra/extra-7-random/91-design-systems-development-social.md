@@ -12,6 +12,6 @@
 
 Teams without a design system often lose a quarter of front-end capacity to rebuilding things that already exist. ⚙️
 
-👉 Read our full deep dive on design systems development: [Link to article]
+👉 Read our full deep dive on design systems development: https://www.manifera.com/blog/design-systems-development
 
 #DesignSystems #CTO #ComponentLibrary #Manifera

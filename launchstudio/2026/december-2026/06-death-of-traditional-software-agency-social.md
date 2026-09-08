@@ -17,6 +17,6 @@ At **LaunchStudio**, we keep your frontend exactly as-is and build ONLY what's m
 
 Fire your agency. Keep your prototype. 🛡️🚀
 
-👉 Read why the traditional agency is dying: [Link to article]
+👉 Read why the traditional agency is dying: https://launchstudio.eu/en/blog/death-of-traditional-software-agency
 
 #SoftwareAgency #LaunchStudio #Manifera #AINativeFounder #SaaS #StartupCosts

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering 
 
 Renate's lanceringscohort liep schade op: 60 van haar eerste 400 aanmeldingen ontvingen nooit een welkomstmail voordat het probleem werd gecorrigeerd. 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/botched-dns-migration-custom-domain-cost
 
 #LaunchStudio #Manifera #AISaaS #DNS #CustomDomain

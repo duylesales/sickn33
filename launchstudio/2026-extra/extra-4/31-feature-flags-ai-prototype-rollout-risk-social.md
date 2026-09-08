@@ -15,6 +15,6 @@ At **LaunchStudio**, we build exactly this kind of rollout safety net into a fou
 
 His result: Wessel now ships new scheduling logic weekly instead of quarterly, because a bad rollout costs him a flag flip, not an incident. 🚀
 
-👉 Not sure your app has a kill switch? Find out before your next feature ships: [Link to article]
+👉 Not sure your app has a kill switch? Find out before your next feature ships: https://launchstudio.eu/en/blog/feature-flags-ai-prototype-rollout-risk
 
 #AINativeFounder #LaunchStudio #Manifera #FeatureFlags #RolloutRisk

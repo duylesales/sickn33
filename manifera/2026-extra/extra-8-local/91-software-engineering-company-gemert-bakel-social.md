@@ -12,6 +12,6 @@ Your entire engineering function runs on two people's memory — and one resigna
 
 Stop betting operational continuity on two people's vacation schedule. 🛡️
 
-👉 Read our full deep dive on software engineering company Gemert-Bakel: [Link to article]
+👉 Read our full deep dive on software engineering company Gemert-Bakel: https://www.manifera.com/blog/software-engineering-company-gemert-bakel
 
 #GemertBakel #NoordBrabant #SoftwareEngineering #Peelland #CTO #TeamTopology #Manifera

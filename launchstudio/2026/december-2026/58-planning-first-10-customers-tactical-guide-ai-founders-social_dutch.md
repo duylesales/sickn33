@@ -19,6 +19,6 @@ Bij **LaunchStudio** zorgen we dat uw software deze persoonlijke inspectie glans
 
 Zijn resultaat: 10 betalende klanten in 3 weken, uit één lijst van 40 namen, met €0 advertentiekosten! 🚀
 
-👉 Ontdek het complete tactische draaiboek: [Link naar artikel]
+👉 Ontdek het complete tactische draaiboek: https://launchstudio.eu/nl/blog/planning-first-10-customers-tactical-guide-ai-founders
 
 #StartupGrowth #FirstCustomers #LaunchStudio #Manifera #AINativeFounder #SaaS #Bolt #Mollie #TechFounders #StartupOpschalen

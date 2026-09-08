@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on a portfolio actually tells you: [Link to article]
+👉 Read our full guide on a portfolio actually tells you: https://www.manifera.com/blog/what-a-portfolio-actually-tells-you
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

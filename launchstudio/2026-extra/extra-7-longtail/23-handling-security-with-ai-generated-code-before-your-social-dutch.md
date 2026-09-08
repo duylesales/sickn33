@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies het patroon dat onze technici signaleren bij
 
 Aurélie's resultaat: elke sleutel verplaatst naar de serverzijde, rate limiting toegevoegd, en een openbare wachtlijst gelanceerd zonder dat haar gebruikers er ooit iets van hebben gemerkt. 🚀
 
-👉 Opent u binnenkort registraties voor uw door AI gebouwde app? Controleer dit vóór de lanceringsdag, niet erna: [Link naar artikel]
+👉 Opent u binnenkort registraties voor uw door AI gebouwde app? Controleer dit vóór de lanceringsdag, niet erna: https://launchstudio.eu/nl/blog/handling-security-with-ai-generated-code-before-your
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #APIKeyExposure

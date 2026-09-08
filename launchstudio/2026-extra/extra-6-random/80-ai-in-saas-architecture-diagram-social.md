@@ -15,6 +15,6 @@ An AI call sharing the same request path as a core transaction inherits its upti
 
 Her result: SoftwareBouw's booking flow now completes independently of the AI summary, verified under a simulated spike with the provider intentionally slowed. 🚀
 
-👉 Got an AI feature sitting inside a critical request path? Talk to an engineer: [Link to article]
+👉 Got an AI feature sitting inside a critical request path? Talk to an engineer: https://launchstudio.eu/en/blog/ai-in-saas-architecture-diagram
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSArchitecture #AIatScale

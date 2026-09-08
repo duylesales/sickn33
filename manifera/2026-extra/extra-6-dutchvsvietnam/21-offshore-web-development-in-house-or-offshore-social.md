@@ -12,6 +12,6 @@
 
 Ask about Core Web Vitals, WCAG 2.1 AA, and data residency before you sign anything. 🛡️
 
-👉 Read our full deep dive on offshore web development in house or offshore: [Link to article]
+👉 Read our full deep dive on offshore web development in house or offshore: https://www.manifera.com/blog/offshore-web-development-in-house-or-offshore
 
 #WebDevelopment #Amsterdam #Vietnam #CTO #StartupEngineering #Manifera

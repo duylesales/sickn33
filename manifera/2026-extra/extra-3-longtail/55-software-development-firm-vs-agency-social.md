@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on software development firm agency: [Link to article]
+👉 Read our full guide on software development firm agency: https://www.manifera.com/blog/software-development-firm-vs-agency
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

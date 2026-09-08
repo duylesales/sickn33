@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 precies dit soort diepe legacy-integra
 
 Levi tekende 15 tandartspraktijken in de eerste maand. (€3.100 (PMS Integratie Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe verticale integratie werkt: [Link naar artikel]
+👉 Ontdek hoe verticale integratie werkt: https://launchstudio.eu/nl/blog/vertical-ai-dominating-niche-markets
 
 #AINativeFounder #LaunchStudio #Manifera #VerticalAI #LegacyIntegration #DentalTech #AISaaS #StartupOpschalen

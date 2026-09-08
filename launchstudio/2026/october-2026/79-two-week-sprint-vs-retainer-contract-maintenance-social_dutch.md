@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering 
 
 Anders werkte zijn hele backlog weg in 1 sprint: Anders loste zijn openstaande taken op voor een fractie van zijn eerdere retainerkosten en boekt nu alleen een sprint wanneer er een concrete aanleiding is. (€2.300 (Launch & Grow Pakket) — 10 werkdagen). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/two-week-sprint-vs-retainer-contract-maintenance
 
 #LaunchStudio #Manifera #AISaaS #SoftwareMaintenance #DevSprints

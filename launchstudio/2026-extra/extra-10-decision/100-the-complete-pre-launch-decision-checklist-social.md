@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the assessment passed on the second submission and the contract signed six weeks later, at roughly nine times the value of the three pilots combined — delivered in 9 business days, fixed price agreed upfront. 🚀
 
-👉 Run your product through the full pre-launch checklist: [Link to article]
+👉 Run your product through the full pre-launch checklist: https://launchstudio.eu/en/blog/the-complete-pre-launch-decision-checklist
 
 #ProductionReady #SaaS #GovTech #FounderLife #LaunchStudio #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on no code internal tool marketing engineering conflict: [Link to article]
+👉 Read our full deep dive on no code internal tool marketing engineering conflict: https://www.manifera.com/blog/no-code-internal-tool-marketing-engineering-conflict
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

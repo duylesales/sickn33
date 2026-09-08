@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we b
 
 💡 Zo ontdekte Femke van Dijk van Roosterly dat haar "61% activatie" in werkelijkheid maar 24% was. Met 1 nieuwe onboarding-wizard verdubbelde ze haar retentie.
 
-👉 Ontdek hoe u echte activatie meet in plaats van vanity metrics: [Link naar artikel]
+👉 Ontdek hoe u echte activatie meet in plaats van vanity metrics: https://launchstudio.eu/nl/blog/measuring-activation-not-signups
 
 #SaaSMetrics #UserActivation #ProductLedGrowth #StartupStrategy #LaunchStudio #Manifera

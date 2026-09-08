@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: system rebuilt in 3 business days — email volume per account fell roughly 80%, unsubscribes fell to near zero, and no billing notice has been silently suppressed since. 🚀
 
-👉 Check what your unsubscribe link is actually switching off: [Link to article]
+👉 Check what your unsubscribe link is actually switching off: https://launchstudio.eu/en/blog/notification-settings-the-feature-that-prevents-unsubscribes
 
 #SaaS #EmailDeliverability #ProductEngineering #CustomerExperience #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers spend their days reading exactly this kind of
 
 Bram's result: query hardening and validation across the app, completed in 5 business days, with the exact malformed-input attack now caught before it reaches the database. 🚀
 
-👉 Tested your own app a hundred times but never tried to break it? Here's what that misses: [Link to article]
+👉 Tested your own app a hundred times but never tried to break it? Here's what that misses: https://launchstudio.eu/en/blog/the-ai-security-vulnerabilities-hiding-in-your-working
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #InputValidation

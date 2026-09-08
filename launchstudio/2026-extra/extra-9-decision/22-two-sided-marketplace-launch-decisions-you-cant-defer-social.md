@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Friday payout runs disappeared, both disputes resolved from held funds, and onboarding went from a three-day back-and-forth to a fifteen-minute flow that added 90 suppliers the next month. 🚀
 
-👉 Send your prototype link for free feedback: [Link to article]
+👉 Send your prototype link for free feedback: https://launchstudio.eu/en/blog/two-sided-marketplace-launch-decisions-you-cant-defer
 
 #Marketplace #SaaS #LaunchStudio #Manifera #ProductionReady #Fintech

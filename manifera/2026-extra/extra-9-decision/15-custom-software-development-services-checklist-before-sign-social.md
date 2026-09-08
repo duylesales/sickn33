@@ -12,6 +12,6 @@ Manifera's founder wrote every statement of work as a document engineers would a
 
 Read your SOW with the same scrutiny you'd apply to a system design document. 🔎
 
-👉 Read our full deep dive on the checklist to run before you sign: [Link to article]
+👉 Read our full deep dive on the checklist to run before you sign: https://www.manifera.com/blog/custom-software-development-services-checklist-before-sign
 
 #CTO #StatementOfWork #CustomSoftwareDevelopment #VendorContract #SoftwareOutsourcing #Manifera

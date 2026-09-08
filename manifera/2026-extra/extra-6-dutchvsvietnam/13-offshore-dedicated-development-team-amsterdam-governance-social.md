@@ -12,6 +12,6 @@
 
 Ask who signs off on quality — and whether they're the same party being paid for it. 🛡️
 
-👉 Read our full deep dive on offshore dedicated development team amsterdam governance: [Link to article]
+👉 Read our full deep dive on offshore dedicated development team amsterdam governance: https://www.manifera.com/blog/offshore-dedicated-development-team-amsterdam-governance
 
 #Amsterdam #CFO #RiskManagement #GDPR #DedicatedTeam #Manifera

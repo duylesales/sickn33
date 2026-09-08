@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: beide gaten werden binnen het traject gedicht en de ingevulde questionnaire lag binnen twee weken bij de klant, waardoor het zorgcontract volgens planning werd gesloten. 🚀
 
-👉 Breng uw compliance-vragenlijst mee naar een verkennend gesprek van 15 minuten: [Link naar artikel]
+👉 Breng uw compliance-vragenlijst mee naar een verkennend gesprek van 15 minuten: https://launchstudio.eu/nl/blog/verifying-a-partner-can-handle-your-compliance-needs
 
 #SaaS #AVG #GDPR #SoftwareBeveiliging #LaunchStudio #Manifera

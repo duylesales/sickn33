@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we b
 
 💡 Zo liep de complete orderstraat van Bestelbon (Sofie Maes) vast op vrijdagochtend omdat een traag extern ERP-systeem alle checkout-requests blokkeerde. Na onze asynchrone herinrichting bleef Bestelbon razendsnel draaien (200ms) ongeacht storingen bij klanten.
 
-👉 Hoe betrouwbaar zijn de webhooks die uw applicatie verstuurt? [Link naar artikel]
+👉 Hoe betrouwbaar zijn de webhooks die uw applicatie verstuurt? https://launchstudio.eu/nl/blog/webhooks-you-send-and-the-promises-they-make
 
 #Webhooks #DistributedSystems #SaaSArchitecture #NodeJS #LaunchStudio #Manifera

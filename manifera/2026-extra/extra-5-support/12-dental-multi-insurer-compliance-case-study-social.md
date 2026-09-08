@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the dental multi insurer compliance compliance case study: [Link to article]
+👉 See the dental multi insurer compliance compliance case study: https://www.manifera.com/blog/dental-multi-insurer-compliance-case-study
 
 #DentalTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

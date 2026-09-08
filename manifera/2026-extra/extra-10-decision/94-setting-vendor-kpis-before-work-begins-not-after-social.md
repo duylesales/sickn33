@@ -12,6 +12,6 @@ Three months in, delivery feels slower and quality feels worse — but you never
 
 KPIs set before a problem emerges are early-warning infrastructure. KPIs set after are just a negotiating tactic. 🎯
 
-👉 Read our full framework for setting vendor KPIs before the first sprint: [Link to article]
+👉 Read our full framework for setting vendor KPIs before the first sprint: https://www.manifera.com/blog/setting-vendor-kpis-before-work-begins-not-after
 
 #CTO #VendorManagement #SLA #PerformanceMetrics #SoftwareDelivery #Manifera

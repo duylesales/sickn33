@@ -12,6 +12,6 @@
 
 Our first MVP took nine months and we still couldn't say what we'd learned. The second took six weeks and gave us an answer we could act on. 🛡️
 
-👉 Read our full deep dive on mvp software development: [Link to article]
+👉 Read our full deep dive on mvp software development: https://www.manifera.com/blog/mvp-software-development
 
 #MVP #CEO #ProductDevelopment #Manifera

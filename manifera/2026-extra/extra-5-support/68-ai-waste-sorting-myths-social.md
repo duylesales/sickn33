@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai waste sorting: [Link to article]
+👉 Retire all 3 biggest myths about ai waste sorting: https://www.manifera.com/blog/ai-waste-sorting-myths
 
 #Cleantech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

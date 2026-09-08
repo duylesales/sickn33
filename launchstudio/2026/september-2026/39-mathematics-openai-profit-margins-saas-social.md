@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been running unit-economics audits since 2014 through
 
 LaunchStudio built Sofia NestJS middleware that calculates token usage from headers and stores it in the database — real-time margin metrics became visible, letting her optimize pricing tiers with real data. 🚀
 
-👉 Run your own margin math: [Link to article]
+👉 Run your own margin math: https://launchstudio.eu/en/blog/mathematics-openai-profit-margins-saas
 
 #AINativeFounder #LaunchStudio #Manifera #UnitEconomics #ProfitMargins

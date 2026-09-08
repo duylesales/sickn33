@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Simon verhoogde zijn feature-ontwikkelsnelheid met 300% terwijl zijn bedrijf tijdens de refactoring ongestoord doordraaide. (€8.500 (Code Refactoring & Test Automatisering) — binnen 25 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/technical-debt-ai-mvp-scaleup
 
 #LaunchStudio #Manifera #AISaaS #TechnicalDebt #CodeRefactoring #SpaghettiCode #StranglerFig #TechFounders #ScaleUp #Shopify

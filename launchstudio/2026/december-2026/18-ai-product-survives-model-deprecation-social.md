@@ -17,6 +17,6 @@ At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we build this
 
 His migration: zero downtime, 5 days ahead of the deadline. 🚀
 
-👉 Read how to architect for model change: [Link to article]
+👉 Read how to architect for model change: https://launchstudio.eu/en/blog/ai-product-survives-model-deprecation
 
 #AIArchitecture #LaunchStudio #Manifera #AINativeFounder #SaaS #TechDebt

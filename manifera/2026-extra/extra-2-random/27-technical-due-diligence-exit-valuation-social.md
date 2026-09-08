@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on technical due diligence exit valuation: [Link to article]
+👉 Read our full deep dive on technical due diligence exit valuation: https://www.manifera.com/blog/technical-due-diligence-exit-valuation
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Nora's application achieved silky-smooth performance: User churn dropped to 8.5% within 30 days of implementing the updates. (€1,800 (Onboarding Optimization) — production-ready and deployed in 4 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/reducing-churn-generative-ai-products
 
 #LaunchStudio #Manifera #AISaaS #ReducingChurninGener #TechFounders

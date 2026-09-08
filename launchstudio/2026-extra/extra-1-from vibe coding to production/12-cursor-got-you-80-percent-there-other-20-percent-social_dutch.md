@@ -15,6 +15,6 @@ Bij **LaunchStudio** beoordelen we Cursor-gebouwde codebases specifiek op de adv
 
 Zijn resultaat: een niet-onderhouden PDF-parsing-dependency met een echte kwetsbaarheid vervangen vóór lancering — zijn eigen zorgvuldige review had geen reden om het op te vangen. 🚀
 
-👉 Vind jouw specifieke resterende 20%: [Link naar artikel]
+👉 Vind jouw specifieke resterende 20%: https://launchstudio.eu/nl/blog/cursor-got-you-80-percent-there-other-20-percent
 
 #CursorAI #IndieHacker #LaunchStudio #Manifera #CodeReview

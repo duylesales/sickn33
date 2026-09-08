@@ -12,6 +12,6 @@ Most of what gets sold as "AI for agribusiness" is a dashboard with a chatbot bo
 
 A German cooperative had paid for "AI pest prediction" that was a chatbot reading a static PDF. The rebuilt model's flags matched field-scout observations closely enough that farms changed spraying schedules. 🐛
 
-👉 Read our full deep dive on AI development services for Het Hogeland agribusiness: [Link to article]
+👉 Read our full deep dive on AI development services for Het Hogeland agribusiness: https://www.manifera.com/blog/ai-development-services-het-hogeland
 
 #HetHogeland #Groningen #AgriTech #CTO #AIDevelopment #SeedPotato #Manifera

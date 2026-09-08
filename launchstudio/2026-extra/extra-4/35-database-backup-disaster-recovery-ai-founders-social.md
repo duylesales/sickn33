@@ -15,6 +15,6 @@ At **LaunchStudio**, a scheduled restore test is one of the first things we add 
 
 His result: Stijn now has backups that have been proven to work, not just scheduled to run — and would know within hours, not weeks, if that ever changed. 🚀
 
-👉 Describe your project and we'll respond within one business day: [Link to article]
+👉 Describe your project and we'll respond within one business day: https://launchstudio.eu/en/blog/database-backup-disaster-recovery-ai-founders
 
 #AINativeFounder #LaunchStudio #Manifera #DisasterRecovery #DataBackup

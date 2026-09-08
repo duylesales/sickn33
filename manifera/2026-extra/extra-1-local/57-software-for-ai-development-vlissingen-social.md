@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on software ai development vlissingen: [Link to article]
+👉 Read our full deep dive on software ai development vlissingen: https://www.manifera.com/blog/software-for-ai-development-vlissingen
 
 #Vlissingen #MarineTech #Zeeland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

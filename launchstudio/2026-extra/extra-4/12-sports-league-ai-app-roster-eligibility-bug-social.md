@@ -15,6 +15,6 @@ At **LaunchStudio**, we review the actual data flow between your database and yo
 
 Kaylee's result: CompetitieBeheer now blocks ineligible players at the point of roster submission across every pilot league, and no club has faced a forfeit due to eligibility oversight since the fix shipped. 🚀
 
-👉 Building league or roster software? Talk to an engineer who understands AI-generated code before your league finds the gap for you: [Link to article]
+👉 Building league or roster software? Talk to an engineer who understands AI-generated code before your league finds the gap for you: https://launchstudio.eu/en/blog/sports-league-ai-app-roster-eligibility-bug
 
 #AINativeFounder #LaunchStudio #Manifera #SportsTech #BuiltWithCursor

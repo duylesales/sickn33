@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen onze technici, gevestigd in Ho Chi Minh-stad als
 
 Haar resultaat: RegistratieHub houdt nu een volledig, met tijdstempel voorzien dossier bij van elke indiening en bewerking, wat de gemeente een definitief antwoord geeft de volgende keer dat een vergelijkbaar geschil zich voordoet. 🚀
 
-👉 Heeft uw app enig dossier van wie wat wanneer heeft veranderd: [Link naar artikel]
+👉 Heeft uw app enig dossier van wie wat wanneer heeft veranderd: https://launchstudio.eu/nl/blog/ai-generated-application-no-audit-trail
 
 #AINativeFounder #LaunchStudio #Manifera #AuditTrail #ProductionReady

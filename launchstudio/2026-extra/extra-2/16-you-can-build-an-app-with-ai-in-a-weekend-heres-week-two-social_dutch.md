@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze geheimen- en repositoryaudit een standaard eerste s
 
 Haar resultaat: blootgestelde sleutel onmiddellijk geroteerd, geheimen gemigreerd, repository op privé gezet — nul wijzigingen aan daadwerkelijke functies. 🚀
 
-👉 Laten we in beweging komen — prototype naar productie in weken, niet maanden: [Link naar artikel]
+👉 Laten we in beweging komen — prototype naar productie in weken, niet maanden: https://launchstudio.eu/nl/blog/you-can-build-an-app-with-ai-in-a-weekend-heres-week-two
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

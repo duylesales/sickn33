@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 private, data-soevereine infrastructur
 
 James doorstond alle medische privacy-audits en sloot direct 5 regionale klinieken succesvol aan als klant. (€4.500 (Self-Hosted LLM Setup Pakket) — productieklaar en binnen 10 werkdagen gedeployed). 🚀
 
-👉 Ontdek de economie van open-source AI: [Link naar artikel]
+👉 Ontdek de economie van open-source AI: https://launchstudio.eu/nl/blog/economics-of-open-source-models-vs-api-providers
 
 #AINativeFounder #LaunchStudio #Manifera #OpenSourceAI #LLMInfrastructure #Llama3 #HealthTech #DataPrivacy #AISaaS #StartupOpschalen

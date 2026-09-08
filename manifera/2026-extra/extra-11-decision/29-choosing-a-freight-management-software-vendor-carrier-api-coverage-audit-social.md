@@ -12,6 +12,6 @@
 
 The coverage number on the homepage tells you almost nothing. The carrier-by-carrier audit tells you everything. 🎯
 
-👉 Read our full deep dive on TMS carrier API coverage audits: [Link to article]
+👉 Read our full deep dive on TMS carrier API coverage audits: https://www.manifera.com/blog/choosing-a-freight-management-software-vendor-carrier-api-coverage-audit
 
 #FreightManagement #TMS #SupplyChain #Procurement #Logistics #Manifera

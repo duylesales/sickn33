@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a freight marketplace carrier verification: [Link to article]
+👉 Read the founder's guide to building a freight marketplace carrier verification: https://www.manifera.com/blog/freight-marketplace-carrier-verification-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

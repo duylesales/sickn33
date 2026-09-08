@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: he hired the partner whose reference revealed a transparent engineer swap, added a named-engineer clause, and shipped billing and isolation in 14 days, same team. 🚀
 
-👉 Book a 15-minute call and ask for the awkward reference: [Link to article]
+👉 Book a 15-minute call and ask for the awkward reference: https://launchstudio.eu/en/blog/reference-checks-that-tell-you-something-real
 
 #SaaS #StartupGrowth #LaunchStudio #Manifera #DueDiligence #AgencyLife

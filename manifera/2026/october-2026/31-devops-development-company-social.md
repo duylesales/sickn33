@@ -11,6 +11,6 @@ At **Manifera**, we eradicate silos via our **Autonomous Pod** model.
 ✅ End-to-end accountability: "You build it, you run it." 🛡️
 
 Stop building walls between Dev and Ops. Empower your engineers! ⚡
-👉 Why DevOps departments are obsolete in modern enterprise architecture: [Link to article]
+👉 Why DevOps departments are obsolete in modern enterprise architecture: https://www.manifera.com/blog/devops-development-company
 
 #DevSecOps #DevOps #TechLeadership #SoftwareEngineering #CTO #AgileDevelopment #VietnamTech #AmsterdamBusiness #Manifera

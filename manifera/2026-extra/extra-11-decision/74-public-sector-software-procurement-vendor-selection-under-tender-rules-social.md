@@ -12,6 +12,6 @@ A mid-size EU tender runs a minimum 35 days from publication to submission — a
 
 The procedure isn't paperwork overhead — it's what makes the award stick. 📋
 
-👉 Read our full deep dive on public sector software procurement under tender rules: [Link to article]
+👉 Read our full deep dive on public sector software procurement under tender rules: https://www.manifera.com/blog/public-sector-software-procurement-vendor-selection-under-tender-rules
 
 #PublicProcurement #GovTech #EUProcurement #ProcurementLead #PublicSector #Manifera

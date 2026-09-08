@@ -12,6 +12,6 @@
 
 We saved 4 days by rushing testing. We spent 3x that cleaning up the mess. 🛡️
 
-👉 Read our full deep dive on software development lifecycle: [Link to article]
+👉 Read our full deep dive on software development lifecycle: https://www.manifera.com/blog/software-development-lifecycle
 
 #SDLC #CTO #SoftwareDevelopment #EngineeringDiscipline #Manifera

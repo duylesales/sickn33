@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera engineers who audit for IDOR in every en
 
 His result: passed his first enterprise prospect's security review with zero authorization findings. 🚀
 
-👉 Send your prototype and ask us to check the authorization layer: [Link to article]
+👉 Send your prototype and ask us to check the authorization layer: https://launchstudio.eu/en/blog/authentication-vs-authorization-prototype-confusion
 
 #LaunchStudio #Manifera #IDOR #RLS #VibeCoding #MVPSecurity #SupabaseSecurity

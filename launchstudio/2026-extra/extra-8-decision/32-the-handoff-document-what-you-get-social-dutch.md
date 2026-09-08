@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar engineeringpraktijk, is 
 
 Casimirs resultaat: drie weken later zelf een nieuwe functie gebouwd op dezelfde betaalcode, zonder één verduidelijkende vraag — ShiftLedger live in 11 werkdagen voor €1.900. 🚀
 
-👉 Zie hoe scoping en overdracht eruitzien voor uw codebase: [Link naar artikel]
+👉 Zie hoe scoping en overdracht eruitzien voor uw codebase: https://launchstudio.eu/nl/blog/the-handoff-document-what-you-get
 
 #LaunchStudio #Overdrachtsdocument #IndieHacker #Manifera #SaaS #Documentatie #Onderhoud

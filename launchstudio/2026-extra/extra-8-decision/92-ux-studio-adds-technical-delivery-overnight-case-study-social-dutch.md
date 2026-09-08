@@ -16,6 +16,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's 11+ jaar engineering-expe
 
 Marloes' resultaat: MediConnect NL live in 22 werkdagen, €21.600 brutomarge — een stijging van 140% ten opzichte van design-only werk. 🚀
 
-👉 Ontdek hoe uw designstudio technische oplevering toevoegt zonder te hoeven werven: [Link naar artikel]
+👉 Ontdek hoe uw designstudio technische oplevering toevoegt zonder te hoeven werven: https://launchstudio.eu/nl/blog/ux-studio-adds-technical-delivery-overnight-case-study
 
 #LaunchStudio #UXDesign #WhiteLabel #Bureaupartner #Manifera #SaaS #Productlancering

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: referral logic, ledger, and abuse controls rebuilt in 4 business days — the relaunched programme produced 34 paying customers over the next four months with no material abuse. 🚀
 
-👉 Treat your referral programme like the payments system it is: [Link to article]
+👉 Treat your referral programme like the payments system it is: https://launchstudio.eu/en/blog/referral-flows-and-the-abuse-you-should-expect
 
 #SaaS #GrowthEngineering #FraudPrevention #IndieHacker #LaunchStudio #Manifera

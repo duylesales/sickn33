@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Tessa's resultaat: Eén eerlijke vraag over bankgegevens, een vaste prijs de volgende dag en live in 9 werkdagen. 🚀
 
-👉 Ontdek zelf hoe eenvoudig en transparant het werkt: [Link naar artikel]
+👉 Ontdek zelf hoe eenvoudig en transparant het werkt: https://launchstudio.eu/nl/blog/what-happens-after-free-quote-launchstudio
 
 #StartupTips #LaunchStudio #Manifera #VibeCoding #MVP #Transparantie #SaaS

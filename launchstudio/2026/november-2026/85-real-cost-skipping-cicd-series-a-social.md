@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Anders cleared the risk flag before the extended deadline, and the round closed nine days later at the original valuation. (€1,600 (Launch & Grow Package) — production-ready and deployed in 7 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/real-cost-skipping-cicd-series-a
 
 #LaunchStudio #Manifera #AISaaS #CICD #SeriesA

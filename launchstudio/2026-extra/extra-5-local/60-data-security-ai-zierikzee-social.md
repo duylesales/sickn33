@@ -15,6 +15,6 @@ At **LaunchStudio**, we verify exactly these four points before any prototype go
 
 Her result: TideStay launched its full summer season with guest data properly isolated across a dozen-plus host properties and zero reported data incidents. 🚀
 
-👉 Launching a seasonal booking app? Verify it before the season starts, not during: [Link to article]
+👉 Launching a seasonal booking app? Verify it before the season starts, not during: https://launchstudio.eu/en/blog/data-security-ai-zierikzee
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurityAI #Zierikzee

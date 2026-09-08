@@ -14,6 +14,6 @@ Bij LaunchStudio werken we uitsluitend met heldere, meetbare fixed-scope SOW's. 
 
 Kwame wist exact wat hij kreeg: oplevering binnen 10 dagen zonder één cent meerwerk. (€ 2.900 (Launch Ready) — 10 werkdagen.) 🚀
 
-👉 Ontdek hoe u een SOW scherp beoordeelt: [Link naar artikel]
+👉 Ontdek hoe u een SOW scherp beoordeelt: https://launchstudio.eu/nl/blog/founders-guide-reading-statement-of-work
 
 #LaunchStudio #Manifera #AISaaS #StatementOfWork #StartupContracts

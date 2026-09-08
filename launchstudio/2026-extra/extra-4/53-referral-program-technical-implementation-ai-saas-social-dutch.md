@@ -15,6 +15,6 @@ Bij **LaunchStudio** is het traceren van precies dit soort stille toeschrijvings
 
 Haar resultaat: het verwijzingsprogramma van GroeiBoost kent nu automatisch attributies en credits toe — Anne-Fleur stemt beloningen niet langer handmatig af. 🚀
 
-👉 Voelen uw verwijzingscijfers niet kloppend? Laat een attributie-audit uitvoeren: [Link naar artikel]
+👉 Voelen uw verwijzingscijfers niet kloppend? Laat een attributie-audit uitvoeren: https://launchstudio.eu/nl/blog/referral-program-technical-implementation-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSGrowth #ReferralProgram

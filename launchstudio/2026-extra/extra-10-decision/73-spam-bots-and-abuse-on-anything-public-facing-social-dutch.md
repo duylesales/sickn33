@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), harden we p
 
 💡 Zo zag Ahmed Bensaid van Sameninkopen zijn OpenAI-rekening in één weekend oplopen tot €1.900 door 4.000 bot-aanmeldingen. Na onze honeypots, rate-limits en verificatie-gate daalde het botverkeer direct naar nul en herstelde zijn e-mailreputatie.
 
-👉 Is uw registratieformulier klaar voor geautomatiseerd botverkeer? [Link naar artikel]
+👉 Is uw registratieformulier klaar voor geautomatiseerd botverkeer? https://launchstudio.eu/nl/blog/spam-bots-and-abuse-on-anything-public-facing
 
 #BotProtection #CyberSecurity #SaaSLaunch #EmailDeliverability #LaunchStudio #Manifera

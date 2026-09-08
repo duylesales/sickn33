@@ -15,6 +15,6 @@ Bij **LaunchStudio** houdt ons team — inclusief engineers gevestigd in Singapo
 
 Haar resultaat: het boekingsformulier van BoekingsHub verwerkt de nieuwe validatie nu correct, en Elin heeft een geautomatiseerde melding in plaats van te vertrouwen op het onthouden om een inbox te controleren. 🚀
 
-👉 Archiveert u de release notes van uw AI-coderingstool nog steeds zonder ze te openen: [Link naar artikel]
+👉 Archiveert u de release notes van uw AI-coderingstool nog steeds zonder ze te openen: https://launchstudio.eu/nl/blog/reading-ai-coding-tool-changelog
 
 #AINativeFounder #LaunchStudio #Manifera #ChangelogMonitoring #ProductionReady

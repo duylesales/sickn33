@@ -12,6 +12,6 @@ A vendor promises 99.9% uptime, a four-hour outage costs six figures in lost rev
 
 The percentage in the contract means nothing without the methodology behind it. 🎯
 
-👉 Read our full deep dive on enforceable uptime SLAs in enterprise vendor contracts: [Link to article]
+👉 Read our full deep dive on enforceable uptime SLAs in enterprise vendor contracts: https://www.manifera.com/blog/enterprise-vendor-contracts-uptime-slas-that-are-actually-enforceable
 
 #Procurement #VendorManagement #SLA #EnterpriseIT #ContractNegotiation #Manifera

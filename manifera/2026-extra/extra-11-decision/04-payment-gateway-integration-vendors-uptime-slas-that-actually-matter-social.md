@@ -12,6 +12,6 @@
 
 The uptime number on the sales page is the least useful number in the whole evaluation. 🎯
 
-👉 Read our full deep dive on payment gateway SLAs that actually matter: [Link to article]
+👉 Read our full deep dive on payment gateway SLAs that actually matter: https://www.manifera.com/blog/payment-gateway-integration-vendors-uptime-slas-that-actually-matter
 
 #PaymentsEngineering #CTO #FintechInfrastructure #Checkout #PSD2 #Manifera

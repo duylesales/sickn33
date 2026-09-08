@@ -14,6 +14,6 @@ At LaunchStudio, we migrate teams off manual QA without ever leaving them withou
 
 Wouter's team cut QA time from 3 hours to 8 minutes and moved to a daily release cadence within a month. (€2,900 (Launch & Grow Package) — 14 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/manual-qa-to-automated-e2e-testing-case-study
 
 #LaunchStudio #Manifera #AISaaS #E2ETesting #EngineeringTeams

@@ -12,6 +12,6 @@ The board approved €400,000 for engineering this year. Not "roughly 400" — a
 
 A fixed budget doesn't eliminate vendor choice — it changes which criteria actually matter. 🎯
 
-👉 Read our full framework for choosing a vendor within a fixed annual budget: [Link to article]
+👉 Read our full framework for choosing a vendor within a fixed annual budget: https://www.manifera.com/blog/choosing-a-vendor-within-a-fixed-annual-software-budget
 
 #CFO #SoftwareBudget #VendorSelection #ITProcurement #FinancialPlanning #Manifera

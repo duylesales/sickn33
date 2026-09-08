@@ -15,6 +15,6 @@ Bij **LaunchStudio** bouwen we dit als een expliciete regellaag bovenop uw besta
 
 Het resultaat voor Sanne: no-shows van docenten activeren nu automatisch een terugbetalingstraject in plaats van stilzwijgend te worden afgerond als een betaalde sessie, waarmee precies het gat wordt gedicht dat nooit was getest. 🚀
 
-👉 Runt u een tweezijdige boekingsmarktplaats? Beschrijf uw project en wij reageren binnen één werkdag: [Link naar artikel]
+👉 Runt u een tweezijdige boekingsmarktplaats? Beschrijf uw project en wij reageren binnen één werkdag: https://launchstudio.eu/nl/blog/tutoring-marketplace-ai-app-session-no-show-refunds
 
 #AINativeFounder #LaunchStudio #Manifera #EdTech #Marketplace

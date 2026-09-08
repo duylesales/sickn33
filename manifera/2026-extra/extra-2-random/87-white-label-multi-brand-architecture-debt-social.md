@@ -12,6 +12,6 @@
 
 Make your next brand launch faster than your last — not slower. 🛡️
 
-👉 Read our full deep dive on white label multi brand architecture debt: [Link to article]
+👉 Read our full deep dive on white label multi brand architecture debt: https://www.manifera.com/blog/white-label-multi-brand-architecture-debt
 
 #CEO #SaaSArchitecture #MultiTenant #ProductStrategy #Manifera

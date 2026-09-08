@@ -16,6 +16,6 @@ Bij **LaunchStudio** identificeren en testen we grondig jouw specifieke kritieke
 
 Zijn resultaat: de test voor gelijktijdig boeken ving een echte dubbele-boeking-bug op voordat een enkele echte restaurantklant er ooit tegenaan liep. 🚀
 
-👉 Ontdek welke flows in jouw app daadwerkelijk dit niveau van testen nodig hebben: [Link naar artikel]
+👉 Ontdek welke flows in jouw app daadwerkelijk dit niveau van testen nodig hebben: https://launchstudio.eu/nl/blog/three-to-five-user-flows-worth-testing-before-you-ship
 
 #TestingMatters #IndieHacker #LaunchStudio #Manifera #QA #VibeCoding

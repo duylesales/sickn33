@@ -12,6 +12,6 @@ You have one quarter to prove an offshore team works, or the budget goes back to
 
 Companies following this phased structure typically reach steady-state offshore productivity within 90-120 days.
 
-👉 Read our full deep dive on build offshore team Best: [Link to article]
+👉 Read our full deep dive on build offshore team Best: https://www.manifera.com/blog/build-offshore-team-best
 
 #Best #NoordBrabant #BrainportEindhoven #VPEngineering #OffshoreTeam #OffshoreDevelopment #TechLeadership #Manifera

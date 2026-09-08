@@ -15,6 +15,6 @@ Bij **LaunchStudio**, ondersteund door de 120+ engineers en 160+ opgeleverde pro
 
 Haar resultaat: de functie van WebshopFix werd correct herbouwd en stresstest over de edge cases die de oorspronkelijke freelancer had gemist, en werd zonder verdere incidenten uitgerold. 🚀
 
-👉 Screent u momenteel freelancers voor productiewerk? Boek een gratis intro-gesprek van 15 minuten voor een tweede mening: [Link naar artikel]
+👉 Screent u momenteel freelancers voor productiewerk? Boek een gratis intro-gesprek van 15 minuten voor een tweede mening: https://launchstudio.eu/nl/blog/spot-bad-freelancer-before-deposit
 
 #AINativeFounder #LaunchStudio #Manifera #HiringFreelancers #BuildWithAI

@@ -12,6 +12,6 @@
 
 Fixed price only means something with a milestone structure underneath it. 🛡️
 
-👉 Read our full deep dive on outsourcing it projects ridderkerk: [Link to article]
+👉 Read our full deep dive on outsourcing it projects ridderkerk: https://www.manifera.com/blog/outsourcing-it-projects-ridderkerk
 
 #Ridderkerk #ZuidHolland #CFO #ITOutsourcing #ProjectGovernance #Manifera

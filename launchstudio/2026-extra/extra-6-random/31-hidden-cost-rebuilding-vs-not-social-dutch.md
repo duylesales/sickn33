@@ -15,6 +15,6 @@ Bij **LaunchStudio** leggen we oprichters precies dit kader voor voordat er een 
 
 Haar resultaat: de refactoring die Anouk acht maanden uitstelde, bleek uiteindelijk veel goedkoper dan de cumulatieve kosten van het vermijden ervan, en ze sloot een van de twee vastgelopen deals binnen een maand na afronding van de oplossing. 🚀
 
-👉 Vraagt u zich af of uw "ooit-oplossing" u elke maand geld kost: [Link naar artikel]
+👉 Vraagt u zich af of uw "ooit-oplossing" u elke maand geld kost: https://launchstudio.eu/nl/blog/hidden-cost-rebuilding-vs-not
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalDebt #SaaSFounders

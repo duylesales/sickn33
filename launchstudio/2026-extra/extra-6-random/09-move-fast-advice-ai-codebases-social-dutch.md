@@ -15,6 +15,6 @@ Bij **LaunchStudio** worden we ondersteund door Manifera, een engineeringgroep m
 
 Zijn resultaat: alle drie de bugs opgelost vanuit hun gemeenschappelijke hoofdoorzaak in plaats van drie afzonderlijke patches, en CodeVolg kreeg een reviewgewoonte van vijf minuten voor het verzenden. 🚀
 
-👉 Verzendt u nog steeds door AI gegenereerde code rechtstreeks naar productie zonder tweede paar ogen: [Link naar artikel]
+👉 Verzendt u nog steeds door AI gegenereerde code rechtstreeks naar productie zonder tweede paar ogen: https://launchstudio.eu/nl/blog/move-fast-advice-ai-codebases
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalDebt #ProductionReady

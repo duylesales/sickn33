@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Sanne's result: dashboard load time dropped from 6.8 seconds to 340 milliseconds at the same data volume, and connection errors stopped entirely (€2,100, Launch & Grow Package — fixed in 6 business days). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-data-engineer-postgres-performance
 
 #LaunchStudio #Manifera #AISaaS #PostgreSQL #DatabasePerformance

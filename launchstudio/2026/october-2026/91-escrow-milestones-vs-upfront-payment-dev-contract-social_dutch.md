@@ -14,6 +14,6 @@ Bij **LaunchStudio** structureren wij elk verhardingstraject al sinds 2014 rond 
 
 Daniel vermeed een vooruitbetalingsverplichting van € 6.200 aan een niet-geverifieerde leverancier, betaalde in plaats daarvan in vier tranches gekoppeld aan geteste opleverwaarden, en ving een scopingfout op bij mijlpaal twee — voordat het een meerwerkopdracht werd op een volledig betaald contract. (€ 3.400, Relaunch & Scale Pakket — opgeleverd over vier mijlpalen in 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/escrow-milestones-vs-upfront-payment-dev-contract
 
 #LaunchStudio #Manifera #AISaaS #Ontwikkelcontracten #StartupOprichters

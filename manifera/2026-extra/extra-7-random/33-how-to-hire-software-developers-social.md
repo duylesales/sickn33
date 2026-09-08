@@ -12,6 +12,6 @@
 
 We were rejecting people who couldn't invert a binary tree from memory, then wondering why our code quality wasn't improving. 🛡️
 
-👉 Read our full deep dive on how to hire software developers: [Link to article]
+👉 Read our full deep dive on how to hire software developers: https://www.manifera.com/blog/how-to-hire-software-developers
 
 #Hiring #CTO #SoftwareDevelopers #Manifera

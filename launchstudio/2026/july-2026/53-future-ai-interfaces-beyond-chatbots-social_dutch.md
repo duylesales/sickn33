@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Xavier's applicatie behaalde productie-gereedheid: Xavier boosted task completion rates by 48% and decreased input errors by medical staff. (€3,100 (UX Refactoring Package) — production-ready and deployed in 9 business days.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/future-ai-interfaces-beyond-chatbots
 
 #LaunchStudio #Manifera #AISaaS #MovingBeyondtheChatb #TechFounders

@@ -15,6 +15,6 @@ Bij **LaunchStudio**, onderdeel van Manifera's team van 120+ engineers werkzaam 
 
 De reactietijden van TaakSlim onder echte klantbelasting verbeterden, en het team van Job scoped nieuwe functies nu vanaf het begin tegen de juiste categorie. 🚀
 
-👉 Niet zeker of uw product AI assist of AI native is? Laat het eerlijk in kaart brengen: [Link naar artikel]
+👉 Niet zeker of uw product AI assist of AI native is? Laat het eerlijk in kaart brengen: https://launchstudio.eu/nl/blog/ai-assist-vs-ai-native-roadmap
 
 #AINativeFounder #LaunchStudio #Manifera #ProductRoadmap #TechArchitecture

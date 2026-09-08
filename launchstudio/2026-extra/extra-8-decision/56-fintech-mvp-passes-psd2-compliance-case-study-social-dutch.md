@@ -16,6 +16,6 @@ Bij **LaunchStudio** behandelt Manifera's team betalingscompliance zoals enterpr
 
 Lottes resultaat: €14.200 verwerkt bij 43 freelancergroepen, 97% succespercentage, live in 12 werkdagen voor €3.200. 🚀
 
-👉 Vertel ons waarvoor u factureert en waar uw klanten zitten: [Link naar artikel]
+👉 Vertel ons waarvoor u factureert en waar uw klanten zitten: https://launchstudio.eu/nl/blog/fintech-mvp-passes-psd2-compliance-case-study
 
 #LaunchStudio #PSD2 #Fintech #Manifera #SCA #Stripe #Compliance

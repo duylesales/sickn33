@@ -12,6 +12,6 @@ What if the €48,000 quote and the €125,000 quote in your inbox aren't pricin
 
 The lowest number on the page is rarely the lowest actual cost. 📉
 
-👉 Read our full deep dive on what a real custom software development quote includes: [Link to article]
+👉 Read our full deep dive on what a real custom software development quote includes: https://www.manifera.com/blog/custom-software-development-cost-real-quote
 
 #CEO #CustomSoftwareDevelopmentCost #TotalCostOfOwnership #SoftwareBudget #VendorQuote #Manifera

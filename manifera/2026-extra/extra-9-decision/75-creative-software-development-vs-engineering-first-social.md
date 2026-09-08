@@ -12,6 +12,6 @@ A beautifully designed product that can't survive a traffic spike. A technically
 
 The products that win rarely succeed on architecture or interface alone. 🏆
 
-👉 Read our full deep dive on creative vs. engineering-first vendor models: [Link to article]
+👉 Read our full deep dive on creative vs. engineering-first vendor models: https://www.manifera.com/blog/creative-software-development-vs-engineering-first
 
 #VPEngineering #CTO #WebAppDevelopment #CustomSoftwareDevelopment #VendorSelection #Manifera

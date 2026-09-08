@@ -12,6 +12,6 @@
 
 We thought our whole warehouse process was special. One piece of it actually was — the rest was just how we'd always done it. 🛡️
 
-👉 Read our full deep dive on custom software: [Link to article]
+👉 Read our full deep dive on custom software: https://www.manifera.com/blog/custom-software
 
 #CustomSoftware #CEO #BuildVsBuy #Manifera

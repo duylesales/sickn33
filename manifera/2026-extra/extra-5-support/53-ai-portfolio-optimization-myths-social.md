@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai portfolio optimization: [Link to article]
+👉 Retire all 3 biggest myths about ai portfolio optimization: https://www.manifera.com/blog/ai-portfolio-optimization-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

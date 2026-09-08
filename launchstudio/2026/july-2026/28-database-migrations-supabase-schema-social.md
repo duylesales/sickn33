@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Scarlett's application achieved production readiness: Scarlett established a safe, version-controlled database schema upgrade process for all future features. (€1,850 (Migration & Schema Package) — production-ready and deployed in 6 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/database-migrations-supabase-schema
 
 #LaunchStudio #Manifera #AISaaS #DatabaseMigrationsEx #TechFounders

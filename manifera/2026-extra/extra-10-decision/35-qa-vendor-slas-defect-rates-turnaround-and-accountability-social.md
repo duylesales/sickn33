@@ -12,6 +12,6 @@
 
 A penalty clause nobody ever enforces because it's too painful to invoke is the same as having no penalty clause at all. 🎯
 
-👉 Read our full deep dive on writing enforceable QA vendor SLAs: [Link to article]
+👉 Read our full deep dive on writing enforceable QA vendor SLAs: https://www.manifera.com/blog/qa-vendor-slas-defect-rates-turnaround-and-accountability
 
 #QAManagement #SLA #ITManager #QualityAssurance #VendorManagement #DefectRate #Manifera

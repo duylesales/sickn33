@@ -12,6 +12,6 @@
 
 Hire for month eight — not just week one. 🛡️
 
-👉 Read our full deep dive on hire dedicated developers ijsselstein: [Link to article]
+👉 Read our full deep dive on hire dedicated developers ijsselstein: https://www.manifera.com/blog/hire-dedicated-developers-ijsselstein
 
 #IJsselstein #Utrecht #VPEngineering #DedicatedDevelopers #HiringStandard #Manifera

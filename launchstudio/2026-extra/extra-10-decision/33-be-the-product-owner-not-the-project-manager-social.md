@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the second, more complex deposit-and-claims feature shipped in 8 business days against the same engineer's original 9-day estimate, with far less founder attention than the simpler first build had taken. 🚀
 
-👉 Find out which role you're actually playing in your own build: [Link to article]
+👉 Find out which role you're actually playing in your own build: https://launchstudio.eu/en/blog/be-the-product-owner-not-the-project-manager
 
 #FounderLife #ProductOwner #SaaS #StartupTips #LaunchStudio #Manifera

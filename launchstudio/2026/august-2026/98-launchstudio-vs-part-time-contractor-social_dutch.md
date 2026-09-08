@@ -14,6 +14,6 @@ Bij **LaunchStudio** ronden wij dit soort vastgelopen trajecten al sinds 2014 af
 
 LaunchStudio dichtte het RLS-gat en leverde in 9 werkdagen, voor minder dan de negen weken uurfacturering van de contractor. (€ 2.000 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-part-time-contractor
 
 #LaunchStudio #Manifera #AISaaS #FreelanceRisk #ProductionSecurity

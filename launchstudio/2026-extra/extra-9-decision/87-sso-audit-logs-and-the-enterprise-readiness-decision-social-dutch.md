@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's enterprise-ervaring voor parti
 
 Haar resultaat: OIDC SSO stond binnen negen werkdagen live voor een logistieke klant met 3.000 medewerkers, waarna SCIM en audit logging de zes weken daarna rustig volgden. 🚀
 
-👉 Beschrijf uw huidige enterprise-deal en knelpunten: [Link naar artikel]
+👉 Beschrijf uw huidige enterprise-deal en knelpunten: https://launchstudio.eu/nl/blog/sso-audit-logs-and-the-enterprise-readiness-decision
 
 #SaaS #EnterpriseSales #B2BSaaS #ScaleUp #LaunchStudio #Manifera

@@ -12,6 +12,6 @@ Can your prospective dedicated team produce an actual pull request thread — re
 
 Once you sign, your leverage to demand process changes drops sharply — gather the evidence now, while you still can. 🛡️
 
-👉 Read our full deep dive on running technical due diligence: [Link to article]
+👉 Read our full deep dive on running technical due diligence: https://www.manifera.com/blog/how-to-run-technical-due-diligence-dedicated-software-development-team
 
 #VPEngineering #TechnicalDueDiligence #CodeQuality #CICD #DedicatedDevelopmentTeam #Manifera

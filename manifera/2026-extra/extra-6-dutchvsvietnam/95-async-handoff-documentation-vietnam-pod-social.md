@@ -12,6 +12,6 @@
 
 A ticket isn't complete if it required a decision and that decision isn't logged. Full stop. 🛡️
 
-👉 Read our full deep dive on async handoff documentation vietnam pod: [Link to article]
+👉 Read our full deep dive on async handoff documentation vietnam pod: https://www.manifera.com/blog/async-handoff-documentation-vietnam-pod
 
 #VPEngineering #AsyncWork #Vietnam #Documentation #Manifera

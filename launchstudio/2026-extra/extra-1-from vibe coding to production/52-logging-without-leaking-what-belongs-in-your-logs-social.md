@@ -16,6 +16,6 @@ At **LaunchStudio**, we review and harden logging specifically for sensitive dat
 
 His result: months of plain-text password attempts purged, proper redaction implemented — a gap that never showed up anywhere in normal use. 🚀
 
-👉 Get your logs checked for what shouldn't be sitting in them: [Link to article]
+👉 Get your logs checked for what shouldn't be sitting in them: https://launchstudio.eu/en/blog/logging-without-leaking-what-belongs-in-your-logs
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #AISecure

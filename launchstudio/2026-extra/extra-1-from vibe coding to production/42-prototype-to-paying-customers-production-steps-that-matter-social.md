@@ -16,6 +16,6 @@ At **LaunchStudio**, we scope engagements around exactly this practical first-cu
 
 Her result: 3 paying practices onboarded within 3 weeks of a 2-month stall. 🚀
 
-👉 Get scoped for what your first paying customer actually needs: [Link to article]
+👉 Get scoped for what your first paying customer actually needs: https://launchstudio.eu/en/blog/prototype-to-paying-customers-production-steps-that-matter
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #FirstCustomer

@@ -15,6 +15,6 @@ Bij **LaunchStudio** lopen beoordelingen zoals deze doorgaans via Manifera's bre
 
 Haar resultaat: BuurtHulp lanceerde publiekelijk op schema, met de hele klasse van niet-geëscapeerde-invoerrisico's gesloten, niet alleen het ene geval dat toevallig als eerste werd opgemerkt. 🚀
 
-👉 Vraagt u zich af of uw door AI gegenereerde codebase dezelfde fout op twaalf andere plekken heeft: [Link naar artikel]
+👉 Vraagt u zich af of uw door AI gegenereerde codebase dezelfde fout op twaalf andere plekken heeft: https://launchstudio.eu/nl/blog/reviewing-ai-generated-pull-requests
 
 #AINativeFounder #LaunchStudio #Manifera #PullRequestReview #ProductionReady

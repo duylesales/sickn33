@@ -16,6 +16,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's 11+ jaar in bedrijfskriti
 
 Diederiks resultaat: foute migratie hersteld in 4 minuten — nul dataverlies, nul downtime voor zijn 450 klanten. 🚀
 
-👉 Laat een gratis back-upaudit zien wat er écht ontbreekt: [Link naar artikel]
+👉 Laat een gratis back-upaudit zien wat er écht ontbreekt: https://launchstudio.eu/nl/blog/supabase-backup-strategy-your-project-missing
 
 #LaunchStudio #Supabase #DisasterRecovery #PostgreSQL #IndieHacker #DataBeveiliging #Manifera

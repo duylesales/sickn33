@@ -12,6 +12,6 @@ A logistics platform that can't tell a warehouse manager, a port operator, and a
 
 An Irish healthtech firm's data consistency complaints dropped more than 90% within two months once the integration layer, not the interface, got fixed first. 🏥
 
-👉 Read our full deep dive on product development outsourcing in Moerdijk's logistics hub: [Link to article]
+👉 Read our full deep dive on product development outsourcing in Moerdijk's logistics hub: https://www.manifera.com/blog/product-development-outsourcing-moerdijk
 
 #Moerdijk #NoordBrabant #ProductDevelopment #VPEngineering #LogisticsTech #PortOfMoerdijk #Manifera

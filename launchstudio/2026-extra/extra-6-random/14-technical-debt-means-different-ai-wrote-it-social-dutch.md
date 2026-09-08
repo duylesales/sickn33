@@ -15,6 +15,6 @@ Bij **LaunchStudio**, gesteund door de engineers van Manifera gevestigd in Amste
 
 ArchiefKoppel heeft nu één gezaghebbende bron voor toegangslogica in plaats van acht, en Nina heeft een herhaalbaar proces om dit patroon voortaan op te sporen. 🚀
 
-👉 Vermoedt u dat uw door AI gebouwde product verborgen duplicatie heeft? Praat met een engineer die door AI gegenereerde code begrijpt: [Link naar artikel]
+👉 Vermoedt u dat uw door AI gebouwde product verborgen duplicatie heeft? Praat met een engineer die door AI gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/technical-debt-means-different-ai-wrote-it
 
 #AINativeFounder #LaunchStudio #Manifera #TechnicalDebt #CodeQuality

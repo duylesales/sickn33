@@ -12,6 +12,6 @@
 
 The lowest bid rarely wins once you normalize for real scope — it usually just moves the real cost to a later invoice. 🎯
 
-👉 Read our full guide to comparing vendor quotes without falling for the lowest bid: [Link to article]
+👉 Read our full guide to comparing vendor quotes without falling for the lowest bid: https://www.manifera.com/blog/comparing-vendor-quotes-why-the-lowest-bid-rarely-wins
 
 #Procurement #VendorRFP #SoftwareProcurement #CostComparison #ProcurementLead #Manifera

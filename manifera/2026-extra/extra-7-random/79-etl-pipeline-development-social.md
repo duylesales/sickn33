@@ -12,6 +12,6 @@ ETL vs. ELT isn't a modernization question with one right answer — it's a per-
 
 The right pipeline pattern depends on the source, not the trend. ⚙️
 
-👉 Read our full deep dive on ETL pipeline development: [Link to article]
+👉 Read our full deep dive on ETL pipeline development: https://www.manifera.com/blog/etl-pipeline-development
 
 #ETL #ELT #DataPipeline #DataEngineering #Manifera

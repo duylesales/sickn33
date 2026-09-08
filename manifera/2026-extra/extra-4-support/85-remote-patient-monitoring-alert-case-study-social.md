@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the remote patient monitoring alert case study: [Link to article]
+👉 See the remote patient monitoring alert case study: https://www.manifera.com/blog/remote-patient-monitoring-alert-case-study
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

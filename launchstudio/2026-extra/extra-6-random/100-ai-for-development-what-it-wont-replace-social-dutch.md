@@ -15,6 +15,6 @@ AI voor ontwikkeling vervangt het typewerk. Het heeft het oordeel niet vervangen
 
 Zijn resultaat: WeideBeheer ging van een snel maar oordeelsarm prototype naar een productietool waarop meerdere melkveebedrijven nu hun echte bedrijfsvoering draaien. 🚀
 
-👉 Snel iets gebouwd met AI en niet zeker waar de oordeelslacunes zitten? Vraag ons gratis advies aan: [Link naar artikel]
+👉 Snel iets gebouwd met AI en niet zeker waar de oordeelslacunes zitten? Vraag ons gratis advies aan: https://launchstudio.eu/nl/blog/ai-for-development-what-it-wont-replace
 
 #AINativeFounder #LaunchStudio #Manifera #AIForDevelopment #ProductionReady

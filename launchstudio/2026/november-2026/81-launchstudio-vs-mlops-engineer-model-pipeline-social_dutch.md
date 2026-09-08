@@ -14,6 +14,6 @@ Bij LaunchStudio verharden we al sinds 2014 modelpipelines van AI-builders via M
 
 De ML Ops-vacature van één oprichter stond 4 maanden open. Wij dichtten de kritieke hiaten in plaats daarvan in 10 werkdagen: de nieuwe evaluatiepoort van ClauseCheck ving en verwierp twee promptregressies voordat ze ooit productie bereikten. (€2.600 — Launch & Grow Pakket, 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-mlops-engineer-model-pipeline
 
 #LaunchStudio #Manifera #AISaaS #MLOps #AIInfrastructure

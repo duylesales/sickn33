@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been closing exactly this class of regulation-specifi
 
 Lukas's pilot launched on schedule: the compliance team approved RouteMatch AI as a vendor without a follow-up call, and all 40 carrier partners onboarded in the first week. (€5,800 (Enterprise Hardening Package) — 7 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/european-logistics-vendor-security-review-case-study
 
 #LaunchStudio #Manifera #AISaaS #NIS2 #LogisticsTech

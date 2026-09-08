@@ -21,6 +21,6 @@ The framework: get a REAL cash quote first, then calculate what the equity % is 
 
 At **LaunchStudio**, fixed pricing from €800 means founders can compare real numbers before giving away their company. 🛡️🚀
 
-👉 Read the honest equity-vs-cash math: [Link to article]
+👉 Read the honest equity-vs-cash math: https://launchstudio.eu/en/blog/negotiate-equity-vs-cash-hiring-development-help
 
 #Equity #LaunchStudio #Manifera #AINativeFounder #StartupFunding #SaaS

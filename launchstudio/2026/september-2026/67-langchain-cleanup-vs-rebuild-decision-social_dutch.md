@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De stack van Tomás werd drastisch eenvoudiger: dezelfde urgentiescoringswijziging die twee dagen en vijf bestanden had gekost, werd in negen regels code geïmplementeerd in minder dan twintig minuten, en een nieuwe engineer begreep de volledige AI-pijplijn in één zitting. (€2.600 (Launch & Grow Pakket) — opschoning voltooid en uitgerold in 10 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/langchain-cleanup-vs-rebuild-decision
 
 #LaunchStudio #Manifera #AISaaS #LangChain #LLMEngineering

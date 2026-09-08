@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelt ons team in Ho Chi Minh City — het belangrijkst
 
 Haar resultaat: de gespecificeerde lijst van elf problemen kostte negen werkdagen om af te ronden, en Iris lanceerde opnieuw bij haar pilotklant met een opleverdatum die ze daadwerkelijk haalde. 🚀
 
-👉 Zegt u al voor de derde maand op rij "over twee weken": [Link naar artikel]
+👉 Zegt u al voor de derde maand op rij "over twee weken": https://launchstudio.eu/nl/blog/founders-underestimate-almost-done
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrototype #ProductionReady

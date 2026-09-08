@@ -12,6 +12,6 @@ A routine Tuesday afternoon release took a client's order-tracking module offlin
 
 Deployment risk doesn't disappear when it's left out of the contract — it just becomes uninsured. 🛡️
 
-👉 Read our full deep dive on what your SLA should say about deployment downtime: [Link to article]
+👉 Read our full deep dive on what your SLA should say about deployment downtime: https://www.manifera.com/blog/deployment-in-software-contracts-sla-downtime
 
 #VPEngineering #SLA #SoftwareContracts #VendorManagement #TechDueDiligence #Downtime #Manifera

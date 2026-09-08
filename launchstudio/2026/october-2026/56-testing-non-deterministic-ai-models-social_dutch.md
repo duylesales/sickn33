@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Dr. Aris slaagde glansrijk voor de ziekenhuisaudit en sloot een pilotcontract van €180.000 af met een 100% betrouwbare CI/CD-pijplijn. (€12.500 (QA Pijplijn & LLM-as-a-Judge) — binnen 18 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/testing-non-deterministic-ai-models
 
 #LaunchStudio #Manifera #AISaaS #TestingAI #TDD #LLMEvaluation #StructuredOutputs #HealthTech #DevOps #TechFounders

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: her backend hardened in nine days for €2,650, candidate visibility moved into database policies, and a data processing agreement joined the contract. 🚀
 
-👉 Send your access practice request and compare answers: [Link to article]
+👉 Send your access practice request and compare answers: https://launchstudio.eu/en/blog/sharing-your-prototype-safely-ndas-and-repo-access
 
 #AIFounder #NoCode #LaunchStudio #Manifera #GDPR #CyberSecurity

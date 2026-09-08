@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Elena's applicatie ging succesvol live bij beide pilotbedrijven en doorstond een externe penetratietest. (€1.600 (Launch Ready Pakket) — binnen 4 werkdagen productieklaar opgeleverd). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-prototype-security-audit-guide
 
 #LaunchStudio #Manifera #AISaaS #10PointAISecureProto #TechFounders #AISecurity #Cursor #Supabase #StartupOpschalen

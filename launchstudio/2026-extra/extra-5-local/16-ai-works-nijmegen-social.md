@@ -15,6 +15,6 @@ At **LaunchStudio**, we've shipped 160+ projects for enterprise clients as part 
 
 His result: ZorgConnect launched on schedule and has logged data accurately across 300+ patients with multiple concurrent conditions since the fix. 🚀
 
-👉 Setting a launch date soon? Get a structured review first, while there's still time to fix what it finds: [Link to article]
+👉 Setting a launch date soon? Get a structured review first, while there's still time to fix what it finds: https://launchstudio.eu/en/blog/ai-works-nijmegen
 
 #AINativeFounder #LaunchStudio #Manifera #HealthTech #Nijmegen

@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we m
 
 💡 Zo ontdekte Ravi Kumar van Cliëntlijn dat een assistent per ongeluk de data van álle concurrerende accountantskantoren kon inzien. Na onze RLS-beveiliging is elk dossier 100% geïsoleerd.
 
-👉 Is uw software klaar voor een tweede gebruiker? [Link naar artikel]
+👉 Is uw software klaar voor een tweede gebruiker? https://launchstudio.eu/nl/blog/invite-and-team-accounts-what-breaks-when-a-second-person-logs-in
 
 #MultiTenant #SaaSArchitecture #TeamAccounts #B2BSaaS #LaunchStudio #Manifera

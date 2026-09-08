@@ -15,6 +15,6 @@ At **LaunchStudio**, we bring Manifera's enterprise-grade engineering — the sa
 
 Wessel's result: all three products now have documented, current security reviews, and the shared login system enforces per-product token scoping — the exact gap the advisor flagged. 🚀
 
-👉 Heading into diligence? Calculate the scope of a portfolio-wide review before an advisor finds the gaps first: [Link to article]
+👉 Heading into diligence? Calculate the scope of a portfolio-wide review before an advisor finds the gaps first: https://launchstudio.eu/en/blog/ai-saas-products-portfolio-audit
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #SaaSPortfolio

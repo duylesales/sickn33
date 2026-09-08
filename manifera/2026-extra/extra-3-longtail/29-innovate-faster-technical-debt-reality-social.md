@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on innovate faster technical debt reality: [Link to article]
+👉 Read our deep dive on innovate faster technical debt reality: https://www.manifera.com/blog/innovate-faster-technical-debt-reality
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

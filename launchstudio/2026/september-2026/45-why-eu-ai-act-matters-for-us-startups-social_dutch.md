@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 compliancy-architecturen via Manifera,
 
 Wyatt voldoet nu volledig aan de EU AI Act documentatie-eisen, waardoor zijn Europese verkoopkanalen succesvol werden geopend. (€2.400 (Compliance Auditing Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw software compliant maakt voor de EU AI Act: [Link naar artikel]
+👉 Ontdek hoe u uw software compliant maakt voor de EU AI Act: https://launchstudio.eu/nl/blog/why-eu-ai-act-matters-for-us-startups
 
 #AINativeFounder #LaunchStudio #Manifera #EUAIAct #AICompliance #HRTech #CyberSecurity #GDPR #AISaaS #StartupOpschalen

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, mogelijk gemaakt door Manifera's 11+ jaar engineering-expe
 
 Merkvasts resultaat: €92.000 projectomzet, €72.600 brutowinst — 68% marge over drie client-MVP's in één kwartaal. 🚀
 
-👉 Ontdek hoe uw bureau technische oplevering toevoegt aan het dienstenaanbod: [Link naar artikel]
+👉 Ontdek hoe uw bureau technische oplevering toevoegt aan het dienstenaanbod: https://launchstudio.eu/nl/blog/brand-agency-ships-three-client-mvps-one-quarter-case-study
 
 #LaunchStudio #Bureaupartner #WhiteLabel #Branding #SaaS #Manifera #Productlancering

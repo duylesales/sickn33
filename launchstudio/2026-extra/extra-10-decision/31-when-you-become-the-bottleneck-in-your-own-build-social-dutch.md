@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, werken we met heldere beslisstr
 
 💡 Zo hielp Femke Dijkstra van Klantloket haar project weer op stoom met 1 vast kwartier per dag, waarna ze binnen 13 dagen live ging.
 
-👉 Lees hoe u voorkomt dat u de flessenhals van uw eigen lancering wordt: [Link naar artikel]
+👉 Lees hoe u voorkomt dat u de flessenhals van uw eigen lancering wordt: https://launchstudio.eu/nl/blog/when-you-become-the-bottleneck-in-your-own-build
 
 #StartupFounders #SaaSLaunch #ProductManagement #AgileWorkflow #LaunchStudio #Manifera

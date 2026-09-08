@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on cost build software delft: [Link to article]
+👉 Read our full deep dive on cost build software delft: https://www.manifera.com/blog/cost-to-build-software-delft
 
 #Delft #TUDelft #ZuidHolland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

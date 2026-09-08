@@ -15,6 +15,6 @@ At **LaunchStudio**, we test booking and reservation flows specifically for this
 
 Lars's result: database-level locking closed the race condition, verified by firing simultaneous test bookings until exactly one succeeds every time. 🚀
 
-👉 Get your booking flow tested against the condition your own testing can't reproduce: [Link to article]
+👉 Get your booking flow tested against the condition your own testing can't reproduce: https://launchstudio.eu/en/blog/ai-booking-tool-double-booking-bug-survives-demo
 
 #AINativeFounder #LaunchStudio #Manifera #ConcurrencyBug #BookingTech

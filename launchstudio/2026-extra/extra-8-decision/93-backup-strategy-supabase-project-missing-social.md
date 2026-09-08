@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years securing mission-critical en
 
 Diederik's dropped invoice records were restored in 4 minutes with zero data loss and zero downtime — included in the €49/month Launch & Grow plan. 🚀
 
-👉 Protect your customer data with an automated backup audit: [Link to article]
+👉 Protect your customer data with an automated backup audit: https://launchstudio.eu/en/blog/supabase-backup-strategy-your-project-missing
 
 #LaunchStudio #Manifera #Supabase #DisasterRecovery #DataBackup #PostgreSQL #SaaSInfrastructure

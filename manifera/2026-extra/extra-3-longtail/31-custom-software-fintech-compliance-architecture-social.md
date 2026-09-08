@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on custom software fintech compliance architecture: [Link to article]
+👉 Read our full guide on custom software fintech compliance architecture: https://www.manifera.com/blog/custom-software-fintech-compliance-architecture
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

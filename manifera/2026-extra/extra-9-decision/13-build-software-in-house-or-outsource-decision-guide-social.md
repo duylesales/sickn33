@@ -12,6 +12,6 @@
 
 The founders quietly building with a partner for their first 18 months rarely talk about it — but plenty are ahead of the ones still recruiting one senior hire. 🎯
 
-👉 Read our full deep dive on building in-house vs. outsourcing: [Link to article]
+👉 Read our full deep dive on building in-house vs. outsourcing: https://www.manifera.com/blog/build-software-in-house-or-outsource-decision-guide
 
 #Founder #StartupCTO #InHouseVsOutsourcing #CustomSoftwareDevelopment #SoftwareTeamDecision #Manifera

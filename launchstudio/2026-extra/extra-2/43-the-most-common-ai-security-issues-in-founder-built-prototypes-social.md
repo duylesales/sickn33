@@ -15,6 +15,6 @@ At **LaunchStudio**, we run exactly this kind of systematic verification-mechani
 
 Her result: attempt limiting, a reasonable expiration window, and consistent failure responses — zero added friction for legitimate attendees. 🚀
 
-👉 Check the price with our project calculator: [Link to article]
+👉 Check the price with our project calculator: https://launchstudio.eu/en/blog/the-most-common-ai-security-issues-in-founder-built-prototypes
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

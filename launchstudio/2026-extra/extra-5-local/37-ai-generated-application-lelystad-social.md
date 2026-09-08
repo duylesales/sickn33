@@ -15,6 +15,6 @@ At **LaunchStudio**, we run this exact six-point checklist on every AI generated
 
 Vluchtplan launched its pilot with both logistics companies processing real cargo bookings in week one, with zero data exposure or double-booking incidents. 🚀
 
-👉 Launching a logistics tool near Lelystad Airport? Run this checklist first: [Link to article]
+👉 Launching a logistics tool near Lelystad Airport? Run this checklist first: https://launchstudio.eu/en/blog/ai-generated-application-lelystad
 
 #AINativeFounder #LaunchStudio #Manifera #Lelystad #LaunchReady

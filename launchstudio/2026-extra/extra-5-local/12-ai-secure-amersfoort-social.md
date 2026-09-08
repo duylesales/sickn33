@@ -15,6 +15,6 @@ At **LaunchStudio**, we run this exact five-point audit on AI-generated apps —
 
 His result: FietsFlow passed its prospective client's security review and signed both logistics contracts within a month of the fix. 🚀
 
-👉 Pitching a security-conscious client soon? Run the checklist first: [Link to article]
+👉 Pitching a security-conscious client soon? Run the checklist first: https://launchstudio.eu/en/blog/ai-secure-amersfoort
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #Amersfoort

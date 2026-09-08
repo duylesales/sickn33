@@ -12,6 +12,6 @@
 
 We were choosing between two extremes that both felt wrong. Nobody had told us there was a real middle option. 🛡️
 
-👉 Read our full deep dive on off the shelf vs custom software: [Link to article]
+👉 Read our full deep dive on off the shelf vs custom software: https://www.manifera.com/blog/off-the-shelf-vs-custom-software
 
 #CustomSoftware #CEO #OffTheShelf #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on iceberg ignorance engineering visibility: [Link to article]
+👉 Read our full guide on iceberg ignorance engineering visibility: https://www.manifera.com/blog/iceberg-of-ignorance-engineering-visibility
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

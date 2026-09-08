@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: tracing the invite flow surfaced a plain-text patient ID in the URL, missed by two rebuild-first candidates who never read the code. 🚀
 
-👉 Send your prototype link, we'll trace your signup path in writing, free: [Link to article]
+👉 Send your prototype link, we'll trace your signup path in writing, free: https://launchstudio.eu/en/blog/how-to-tell-if-a-developer-understands-ai-generated-code
 
 #AIFounder #NoCode #LaunchStudio #Manifera #HiringADeveloper #AICoding

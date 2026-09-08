@@ -26,6 +26,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we c
 
 💡 Zo kostte een vergeten `WHERE`-filter Joost Nieuwenhuis van Wachtlijst 11 uur paniek toen alle 180 dierenartsenpraktijken op hetzelfde abonnement sprongen. Na ons beheerportaal zijn foute queries fysiek onmogelijk.
 
-👉 Hoe lost u vandaag een supportvraag van een klant op? [Link naar artikel]
+👉 Hoe lost u vandaag een supportvraag van een klant op? https://launchstudio.eu/nl/blog/the-admin-panel-you-need-and-the-one-you-dont
 
 #AdminPanel #InternalTools #SaaSDevelopment #DatabaseSecurity #LaunchStudio #Manifera

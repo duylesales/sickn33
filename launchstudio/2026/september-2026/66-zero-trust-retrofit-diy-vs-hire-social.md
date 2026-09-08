@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Nadia's retrofit closed the gap before it became a breach: LaunchStudio closed the missing UPDATE policy, added equivalent coverage for INSERT and DELETE, replaced the over-scoped service-role key, and delivered a written access-control summary for the prospect's IT team. (€4,100 (Enterprise Hardening Package) — retrofit and documentation completed in 13 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/zero-trust-retrofit-diy-vs-hire
 
 #LaunchStudio #Manifera #AISaaS #ZeroTrust #AISecurity

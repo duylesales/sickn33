@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen we dit als standaardpraktijk bij elk door AI geb
 
 Zijn resultaat: nul downtime tijdens de daaropvolgende examenperiode, met meer dan 600 gelijktijdige aanmeldingen van studenten verwerkt zonder een enkel gegevensconflict. 🚀
 
-👉 Bouwt u snel met AI en staat u op het punt een schemawijziging live te zetten? Vraag eerst een gratis introductiegesprek van 15 minuten aan: [Link naar artikel]
+👉 Bouwt u snel met AI en staat u op het punt een schemawijziging live te zetten? Vraag eerst een gratis introductiegesprek van 15 minuten aan: https://launchstudio.eu/nl/blog/ai-in-development-groningen
 
 #AINativeFounder #LaunchStudio #Manifera #AIinDevelopment #Groningen

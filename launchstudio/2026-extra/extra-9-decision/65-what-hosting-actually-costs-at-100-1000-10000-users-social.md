@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, L
 
 His result: routing document delivery through a CDN cut Notarize's bandwidth cost over half in one cycle, no product changes needed. 🚀
 
-👉 Describe your project, get a realistic infrastructure estimate within a day: [Link to article]
+👉 Describe your project, get a realistic infrastructure estimate within a day: https://launchstudio.eu/en/blog/what-hosting-actually-costs-at-100-1000-10000-users
 
 #IndieHacker #SaaS #LaunchStudio #Manifera #ProductionReady #AICoding

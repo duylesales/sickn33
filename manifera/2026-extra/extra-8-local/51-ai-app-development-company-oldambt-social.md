@@ -12,6 +12,6 @@ Fewer than 1 in 5 enterprise generative AI pilots ever reach production — and 
 
 A Portuguese healthtech pilot stalled for six months. The rebuilt version shipped to a pilot ward in nine weeks — and the compliance officer signed off on the first submission. 🏥
 
-👉 Read our full deep dive on AI app development company Oldambt: [Link to article]
+👉 Read our full deep dive on AI app development company Oldambt: https://www.manifera.com/blog/ai-app-development-company-oldambt
 
 #Oldambt #Groningen #AIDevelopment #CTO #EUAIAct #HealthTech #Manifera

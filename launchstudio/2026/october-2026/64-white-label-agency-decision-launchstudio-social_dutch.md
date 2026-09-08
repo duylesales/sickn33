@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 In tien maanden leverde Sophie's studio elf klantprojecten via de samenwerking, elk voltooid in 5 tot 12 werkdagen, met stijgende klantretentie omdat levering voorspelbaar werd in plaats van afhankelijk van freelancers. 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/white-label-agency-decision-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #WhiteLabelBureau #BureauSchalen

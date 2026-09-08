@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on offshore nearshore software development: [Link to article]
+👉 Read our full guide on offshore nearshore software development: https://www.manifera.com/blog/offshore-vs-nearshore-software-development
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

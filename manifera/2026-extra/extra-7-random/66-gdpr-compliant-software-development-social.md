@@ -12,6 +12,6 @@
 
 Compliance built into architecture beats compliance bolted onto a policy PDF. 🔐
 
-👉 Read our full deep dive on GDPR compliant software development: [Link to article]
+👉 Read our full deep dive on GDPR compliant software development: https://www.manifera.com/blog/gdpr-compliant-software-development
 
 #GDPR #DataProtection #PrivacyByDesign #CFO #Manifera

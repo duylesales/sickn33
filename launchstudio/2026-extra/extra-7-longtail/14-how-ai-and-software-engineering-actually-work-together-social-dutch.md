@@ -15,6 +15,6 @@ Bij **LaunchStudio** stemmen we reparaties af op wat er daadwerkelijk ontbreekt,
 
 Ingrid's resultaat: wat Voorraadslim daadwerkelijk nodig had kostte een tiende van de oorspronkelijke offerte, en ze hoeft nog steeds niet na te denken over hosting. 🚀
 
-👉 Zit u vast aan een beangstigende offerte van vijf cijfers voor een app die voor het grootste deel al werkt? Bekijk de echte kostenanalyse: [Link naar artikel]
+👉 Zit u vast aan een beangstigende offerte van vijf cijfers voor een app die voor het grootste deel al werkt? Bekijk de echte kostenanalyse: https://launchstudio.eu/nl/blog/how-ai-and-software-engineering-actually-work-together-at-launchstudio
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSPricing #InventoryTech

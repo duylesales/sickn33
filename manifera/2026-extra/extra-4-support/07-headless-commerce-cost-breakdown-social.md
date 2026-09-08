@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full headless commerce cost breakdown: [Link to article]
+👉 Read the full headless commerce cost breakdown: https://www.manifera.com/blog/headless-commerce-cost-breakdown
 
 #ECommerce #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

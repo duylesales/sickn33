@@ -15,6 +15,6 @@ At **LaunchStudio**, we bring Manifera's enterprise-grade engineering — 11+ ye
 
 His result: GroeiKompas now enforces tenant-level authorization on every analytics endpoint, verified with tests that specifically attempt the cross-tenant access that had previously succeeded. 🚀
 
-👉 Trusting a "Security AI" badge you haven't actually verified the scope of: [Link to article]
+👉 Trusting a "Security AI" badge you haven't actually verified the scope of: https://launchstudio.eu/en/blog/security-ai-marketing-term-vs-what-secures-app
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityAI #ProductionReady

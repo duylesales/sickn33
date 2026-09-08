@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat "I can read the code" and "the code has been audit
 
 Niamh's result: exposed key rotated, secrets moved server-side, and a clean pass across every other integration — completed in 6 business days. 🚀
 
-👉 Technical enough to read your AI-generated code? That's not the same as having measured its risk: [Link to article]
+👉 Technical enough to read your AI-generated code? That's not the same as having measured its risk: https://launchstudio.eu/en/blog/how-to-measure-the-ai-security-risk-in
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #SecretsManagement

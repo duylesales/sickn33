@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Haar app werd een onkopieerbare voorspellende risicomachine met unieke jurisprudentie-verwijzingen. (€16.500 (RAG Datapijplijn & pgvector) — binnen 30 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/thin-wrapper-problem-ai-saas
 
 #LaunchStudio #Manifera #AISaaS #ThinWrapper #DataMoat #RAGArchitecture #LegalTech #pgvector #TechFounders #OpenAI

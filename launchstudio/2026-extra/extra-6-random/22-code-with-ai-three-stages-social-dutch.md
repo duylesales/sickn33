@@ -15,6 +15,6 @@ Bij **LaunchStudio**, ondersteund door de 120+ engineers van Manifera, behandele
 
 Zijn resultaat: de klantintegratie van FactuurBot werd op schema gelanceerd, en Bas labelt nu elke module met de maturiteitsfase voordat hij iets aan externe hulp overdraagt. 🚀
 
-👉 Schakelt u externe hulp in voor een door AI gebouwde codebase? Zorg dat helder is in welke fase u écht zit: [Link naar artikel]
+👉 Schakelt u externe hulp in voor een door AI gebouwde codebase? Zorg dat helder is in welke fase u écht zit: https://launchstudio.eu/nl/blog/code-with-ai-three-stages
 
 #AINativeFounder #LaunchStudio #Manifera #AICoding #TechnicalFounders

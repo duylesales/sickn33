@@ -12,6 +12,6 @@ Design brought in after requirements are locked can only decorate a decision tha
 
 Built exactly to spec, barely touched by customers — because the spec was never tested. 🧭
 
-👉 Read our full deep dive on product design consulting: [Link to article]
+👉 Read our full deep dive on product design consulting: https://www.manifera.com/blog/product-design-consulting
 
 #ProductDesign #DesignStrategy #CEO #ProductStrategy #Manifera

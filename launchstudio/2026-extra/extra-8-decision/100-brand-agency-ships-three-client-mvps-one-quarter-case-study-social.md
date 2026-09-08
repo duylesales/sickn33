@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by 11+ years of delivery through Manifera. 🔍
 
 Merkvast billed €92,000 across the three launches against €19,400 in LaunchStudio costs — €72,600 gross profit, plus €4,500/month in new recurring retainers, all in 90 days. 🚀
 
-👉 Explore an agency partnership with LaunchStudio today: [Link to article]
+👉 Explore an agency partnership with LaunchStudio today: https://launchstudio.eu/en/blog/brand-agency-ships-three-client-mvps-one-quarter-case-study
 
 #LaunchStudio #Manifera #AgencyPartner #WhiteLabel #BrandAgency #MVPLaunch #ProductStudio

@@ -15,6 +15,6 @@ At **LaunchStudio**, we run this exact framework — same 6 dimensions, same seq
 
 His result: passed enterprise technical review 2 weeks later — the reviewer specifically flagged the CI pipeline and access control as differentiators. 🚀
 
-👉 Get a scoped estimate for YOUR specific gaps: [Link to article]
+👉 Get a scoped estimate for YOUR specific gaps: https://launchstudio.eu/en/blog/weekend-framework-six-things-prototype-launch
 
 #IndieHacker #VibeCoding #LaunchStudio #Manifera #CI #AISecurity

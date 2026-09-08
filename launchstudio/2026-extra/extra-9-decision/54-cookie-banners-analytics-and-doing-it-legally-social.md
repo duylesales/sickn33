@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 120+ engineers, we check whether a con
 
 Her result: analytics visibility into effectively all traffic through Plausible, plus a functioning gate on the one tool that genuinely needed it. 🚀
 
-👉 Send us your prototype link — we'll tell you if your cookie setup actually works: [Link to article]
+👉 Send us your prototype link — we'll tell you if your cookie setup actually works: https://launchstudio.eu/en/blog/cookie-banners-analytics-and-doing-it-legally
 
 #AINativeFounder #CookieConsent #LaunchStudio #Manifera #GDPR #NoCode

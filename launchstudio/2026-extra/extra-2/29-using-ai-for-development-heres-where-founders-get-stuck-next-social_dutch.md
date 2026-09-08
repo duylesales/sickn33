@@ -15,6 +15,6 @@ Bij **LaunchStudio** auditeren we precies dit patroon over een hele codebase. Ge
 
 Zijn resultaat: een expliciete allow-list geïmplementeerd op elk update-eindpunt, en dicht het rechtenescalatierisico platformbreed. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/using-ai-for-development-heres-where-founders-get-stuck-next
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #SoftwareEngineering

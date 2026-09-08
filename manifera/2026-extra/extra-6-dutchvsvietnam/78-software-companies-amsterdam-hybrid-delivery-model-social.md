@@ -12,6 +12,6 @@
 
 Ask: does someone review architecture before it's built, or only after, in a status report? That one question separates the two categories fast. 🛡️
 
-👉 Read our full deep dive on software companies amsterdam hybrid delivery model: [Link to article]
+👉 Read our full deep dive on software companies amsterdam hybrid delivery model: https://www.manifera.com/blog/software-companies-amsterdam-hybrid-delivery-model
 
 #SoftwareCompaniesAmsterdam #CFO #HybridDelivery #RiskManagement #Manifera

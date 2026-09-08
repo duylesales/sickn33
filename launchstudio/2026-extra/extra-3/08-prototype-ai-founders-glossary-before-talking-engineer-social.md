@@ -15,6 +15,6 @@ At **LaunchStudio**, we build founder conversations around exactly this vocabula
 
 Her result: the sharper conversation let LaunchStudio scope EventCheck's engagement more accurately on the very first call, since Nadia could confirm exactly which features touched sensitive guest data. 🚀
 
-👉 Bring your prototype AI to a conversation you can actually follow: [Link to article]
+👉 Bring your prototype AI to a conversation you can actually follow: https://launchstudio.eu/en/blog/prototype-ai-founders-glossary-before-talking-engineer
 
 #AINativeFounder #LaunchStudio #Manifera #FounderGlossary #TechLiteracy

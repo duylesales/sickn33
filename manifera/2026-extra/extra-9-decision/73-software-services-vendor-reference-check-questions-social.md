@@ -12,6 +12,6 @@ The reference call your shortlisted vendor arranged was handpicked for one reaso
 
 The reference check is the highest-leverage hour before you sign. 🔎
 
-👉 Read our full deep dive on running a real vendor reference check: [Link to article]
+👉 Read our full deep dive on running a real vendor reference check: https://www.manifera.com/blog/software-services-vendor-reference-check-questions
 
 #Founder #SoftwareOutsourcing #VendorDueDiligence #CustomSoftwareDevelopment #VendorSelection #Manifera

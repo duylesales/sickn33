@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, optimaliseren onze senior engin
 
 💡 Zo bracht kennisbankplatform Clarifox haar zoektijd terug van 340ms naar onder de 15ms puur met een GIN-index op Postgres, zónder dure Algolia-facturen.
 
-👉 Ontdek welke zoekarchitectuur het beste bij uw prototype past: [Link naar artikel]
+👉 Ontdek welke zoekarchitectuur het beste bij uw prototype past: https://launchstudio.eu/nl/blog/search-when-a-database-query-stops-being-enough
 
 #PostgreSQL #Elasticsearch #FullTextSearch #SoftwareArchitecture #LaunchStudio #Manifera

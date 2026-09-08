@@ -12,6 +12,6 @@ Every LMS vendor says "yes" when you ask about SCORM support. That's not a real 
 
 Standards compliance on paper and standards compliance in a working sandbox are two very different things. 🧪
 
-👉 Read our full deep dive on LMS vendor SCORM/xAPI compatibility: [Link to article]
+👉 Read our full deep dive on LMS vendor SCORM/xAPI compatibility: https://www.manifera.com/blog/choosing-a-learning-management-system-vendor-scorm-xapi-compatibility
 
 #EdTech #LMS #SCORM #xAPI #ITManager #Manifera

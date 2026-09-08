@@ -15,6 +15,6 @@ Bij **LaunchStudio** fungeert ons Amsterdamse team routinematig als precies dit 
 
 Zijn resultaat: de daadwerkelijke gaten werden geïdentificeerd en binnen twee weken gedicht, en de CTO herfocuste zich op het groeiwerk waarvoor hij eigenlijk was aangenomen. 🚀
 
-👉 Staat u op het punt een fulltime CTO aan te nemen zonder eerst een diagnose: [Link naar artikel]
+👉 Staat u op het punt een fulltime CTO aan te nemen zonder eerst een diagnose: https://launchstudio.eu/nl/blog/fractional-cto-before-full-time
 
 #AINativeFounder #LaunchStudio #Manifera #FractionalCTO #TechHiring

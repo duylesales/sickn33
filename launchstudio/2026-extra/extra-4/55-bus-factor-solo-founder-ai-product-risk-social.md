@@ -15,6 +15,6 @@ At **LaunchStudio**, treating access continuity as seriously as the code itself 
 
 Her result: RittenLog now has two verified admins on every critical system, and a documented access list Marit updates as she goes. 🚀
 
-👉 Who else could log in if you couldn't, today? Find out: [Link to article]
+👉 Who else could log in if you couldn't, today? Find out: https://launchstudio.eu/en/blog/bus-factor-solo-founder-ai-product-risk
 
 #AINativeFounder #LaunchStudio #Manifera #SoloFounder #BusinessContinuity

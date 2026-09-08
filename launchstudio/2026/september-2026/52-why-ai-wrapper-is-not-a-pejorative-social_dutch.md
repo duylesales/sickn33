@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 precies dit soort workflow-first archi
 
 Het voltooiingspercentage van Stella's boekingen steeg met 45%. (€2.400 (Workflow Design Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Lees de volledige analyse: [Link naar artikel]
+👉 Lees de volledige analyse: https://launchstudio.eu/nl/blog/why-ai-wrapper-is-not-a-pejorative
 
 #AINativeFounder #LaunchStudio #Manifera #AIWrapper #VerticalAI #DentalTech #WorkflowAutomation #AISaaS #StartupOpschalen

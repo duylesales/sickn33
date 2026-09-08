@@ -15,6 +15,6 @@ At **LaunchStudio**, we build exactly this kind of auditable, versioned record-k
 
 Bas's result: OffertePlan customers can now settle pricing disagreements by pointing to a specific, timestamped version of the bid — no more relying on memory or trust. 🚀
 
-👉 Built a bid, quoting, or contract tool with AI? Send us the link — free advice: [Link to article]
+👉 Built a bid, quoting, or contract tool with AI? Send us the link — free advice: https://launchstudio.eu/en/blog/construction-bid-ai-tool-version-control-disputes
 
 #AINativeFounder #LaunchStudio #Manifera #ConstructionTech #AIDatabase

@@ -10,6 +10,6 @@ At **Manifera**, our Elite Architects in Vietnam (governed from Amsterdam) will:
 ✅ Enforce Infrastructure as Code (IaC) with Terraform 🏗️
 
 Optimize your cloud costs with actual engineering, not just server rentals! 🛡️🚀
-👉 The definitive guide to migrating legacy systems to the Cloud: [Link to article]
+👉 The definitive guide to migrating legacy systems to the Cloud: https://www.manifera.com/blog/cloud-software-developer
 
 #CloudComputing #CloudNative #AWS #Azure #TechLeadership #VietnamTech #AmsterdamBusiness #EnterpriseArchitecture #Manifera

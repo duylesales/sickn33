@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers de
 
 💡 Zo haalde contractreview-tool Clausio binnen 3 weken na onze interventie de veiligheidsgoedkeuring bij meerdere advocatenkantoren.
 
-👉 Lees hoe u uw legaltech-product klaarmaakt voor de zwaarste enterprise-audits: [Link naar artikel]
+👉 Lees hoe u uw legaltech-product klaarmaakt voor de zwaarste enterprise-audits: https://launchstudio.eu/nl/blog/legaltech-prototypes-confidentiality-before-your-first-firm
 
 #LegalTech #Advocatuur #Verschoningsrecht #Cybersecurity #LaunchStudio #Manifera

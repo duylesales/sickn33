@@ -12,6 +12,6 @@
 
 We copied a structure that worked beautifully elsewhere. Once we matched our teams to our own architecture instead, half our coordination problems disappeared. 🛡️
 
-👉 Read our full deep dive on software development team structure: [Link to article]
+👉 Read our full deep dive on software development team structure: https://www.manifera.com/blog/software-development-team-structure
 
 #DevTeam #VPEngineering #TeamStructure #Manifera

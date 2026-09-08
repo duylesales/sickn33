@@ -16,6 +16,6 @@ Bij **LaunchStudio** zijn dependency-audits — onderhoud, kwetsbaarheden, licen
 
 Zijn resultaat: de onjuist-gelicentieerde dependency binnen dagen vervangen — blokkade opgelost voordat het financiering vertraagde. 🚀
 
-👉 Laat jouw dependencies controleren op risico's onzichtbaar bij normaal gebruik: [Link naar artikel]
+👉 Laat jouw dependencies controleren op risico's onzichtbaar bij normaal gebruik: https://launchstudio.eu/nl/blog/why-dependency-choices-ai-tools-need-second-look
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

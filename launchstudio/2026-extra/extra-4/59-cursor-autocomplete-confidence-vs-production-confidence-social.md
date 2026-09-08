@@ -15,6 +15,6 @@ At **LaunchStudio**, we apply exactly this kind of targeted review to Cursor-bui
 
 His result: TicketVolg's permission system now correctly handles every realistic role combination, and Twan has an actual test matrix instead of a quick manual check. 🚀
 
-👉 Building access control with Cursor? Get the role combinations tested: [Link to article]
+👉 Building access control with Cursor? Get the role combinations tested: https://launchstudio.eu/en/blog/cursor-autocomplete-confidence-vs-production-confidence
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #CursorAI

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Diego's result: the enterprise client's security review passed, and re-testing confirmed the metadata endpoint and all internal addresses were no longer reachable (€2,400, Relaunch & Scale Package — 6 business days). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/ssrf-retrofit-diy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #SSRF #AppSec

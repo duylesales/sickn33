@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), voeren we A
 
 💡 Zo ontdekte Pim de Rooij van Sollicitatiebox dat kandidaten hun eigen sollicitatie manipuleerden via witte tekst in PDF-cv's. Binnen 4 dagen isoleerden we de prompt-pijplijn en elimineerden we automatische schrijfbevoegdheden.
 
-👉 Weet u 100% zeker dat een kwaadaardige PDF uw AI-model morgen niet kaapt? [Link naar artikel]
+👉 Weet u 100% zeker dat een kwaadaardige PDF uw AI-model morgen niet kaapt? https://launchstudio.eu/nl/blog/prompt-injection-when-your-users-can-talk-to-your-model
 
 #AISecurity #PromptInjection #CyberSecurity #SaaS #GenerativeAI #LaunchStudio #Manifera

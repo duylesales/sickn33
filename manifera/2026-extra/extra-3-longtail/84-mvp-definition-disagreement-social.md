@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Learn how to overcome mvp definition disagreement in software projects: [Link to article]
+👉 Learn how to overcome mvp definition disagreement in software projects: https://www.manifera.com/blog/mvp-definition-disagreement
 
 #TechLeadership #ProductManagement #SoftwareEngineering #Agile #CTO #Manifera

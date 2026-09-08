@@ -14,6 +14,6 @@ At LaunchStudio, we've been giving founders exactly this kind of independent rea
 
 Marieke switched for year two with a fixed price and a hardened database instead of another year of uncertainty. (€2,900 Launch & Grow Package — 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/contract-renewal-vs-switching-dev-partners
 
 #LaunchStudio #Manifera #AISaaS #VendorReview #StartupFounders

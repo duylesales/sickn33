@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on stages software development explained: [Link to article]
+👉 Read our full guide on stages software development explained: https://www.manifera.com/blog/stages-of-software-development-explained
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

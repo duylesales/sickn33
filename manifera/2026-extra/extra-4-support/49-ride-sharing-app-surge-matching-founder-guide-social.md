@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a ride sharing surge matching: [Link to article]
+👉 Read the founder's guide to building a ride sharing surge matching: https://www.manifera.com/blog/ride-sharing-app-surge-matching-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

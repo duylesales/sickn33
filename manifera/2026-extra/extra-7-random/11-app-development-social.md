@@ -12,6 +12,6 @@
 
 We'd built 4 months of features for a user who barely existed. The fix wasn't more features — it was answering who we were building for. 🛡️
 
-👉 Read our full deep dive on app development: [Link to article]
+👉 Read our full deep dive on app development: https://www.manifera.com/blog/app-development
 
 #AppDevelopment #CEO #ProductStrategy #Manifera

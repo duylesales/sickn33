@@ -12,6 +12,6 @@ One developer. Twenty-two years. Zero documentation. Eighteen months until he re
 
 A €30,000–€45,000 knowledge-transfer program that prevents an €80,000–€150,000 emergency recovery — and retains 80%+ of critical system knowledge. Don't wait for the retirement notice. 🛡️
 
-👉 Read our full deep dive on offshore software engineering and bus factor risk for Losser companies: [Link to article]
+👉 Read our full deep dive on offshore software engineering and bus factor risk for Losser companies: https://www.manifera.com/blog/offshore-software-engineering-losser
 
 #Losser #Twente #Overijssel #LegacySystems #BusFactor #SoftwareEngineering #Manifera

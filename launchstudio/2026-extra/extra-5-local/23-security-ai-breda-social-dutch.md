@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen de technici van Manifera — vertrouwd door Voda
 
 Het resultaat voor TableTuned: de tool werd opnieuw gelanceerd met geverifieerde tenant-isolatie, en Elise leidt haar verkoopgesprekken nu met haar beveiligingsaudit in plaats van te hopen dat het onderwerp niet ter sprake komt. 🚀
 
-👉 Werkt u met boekings- of gastgegevens in een door AI gebouwde app? Laat de audit uitvoeren voordat een nieuwsgierige gebruiker het gat vindt: [Link naar artikel]
+👉 Werkt u met boekings- of gastgegevens in een door AI gebouwde app? Laat de audit uitvoeren voordat een nieuwsgierige gebruiker het gat vindt: https://launchstudio.eu/nl/blog/23-security-ai-breda
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityAudit #Breda

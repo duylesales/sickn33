@@ -12,6 +12,6 @@ Three outsourcing quotes. Three wildly different day rates. Almost none of that 
 
 A "cheaper" rate that hides rework can behave like a 40% higher effective cost by month four.
 
-👉 Read our full deep dive on software outsourcing rates Tynaarlo: [Link to article]
+👉 Read our full deep dive on software outsourcing rates Tynaarlo: https://www.manifera.com/blog/software-outsourcing-rates-tynaarlo
 
 #Tynaarlo #Drenthe #CTO #SoftwareOutsourcing #OffshoreDevelopment #TechLeadership #EngineeringCost #Manifera

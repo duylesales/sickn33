@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Charlottes resultaat: ReviewFlow live in 9 werkdagen, direct €14.400 ARR getekend en 100% aandelen in eigen hand. 🚀
 
-👉 Ontdek hoe u lanceert zonder eerste developer aan te nemen: [Link naar artikel]
+👉 Ontdek hoe u lanceert zonder eerste developer aan te nemen: https://launchstudio.eu/nl/blog/marketing-founder-first-technical-hire-case-study
 
 #NonTechnicalFounder #SaaS #LaunchStudio #Manifera #Lovable #VibeCoding #Bootstrap

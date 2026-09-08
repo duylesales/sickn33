@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies de beoordeling die onze engineers uitvoeren 
 
 Haar resultaat: ZorgMatch doorstaat nu een volledige gegevenstoegangsaudit, waarbij elk zorgdossier alleen toegankelijk is voor de cliënt, zijn zorgverlener en bevoegd personeel. 🚀
 
-👉 Verwerkt u gevoelige persoonsgegevens in een door AI gebouwde app? Bespreek wat u mogelijk mist: [Link naar artikel]
+👉 Verwerkt u gevoelige persoonsgegevens in een door AI gebouwde app? Bespreek wat u mogelijk mist: https://launchstudio.eu/nl/blog/ai-privacy-issues-hoogezand
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrivacy #GDPR

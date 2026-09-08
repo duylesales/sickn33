@@ -12,6 +12,6 @@
 
 An unsubscribe should mean unsubscribed. Everywhere. Immediately. 🛡️
 
-👉 Read our full deep dive on notification system chaos unsubscribe risk: [Link to article]
+👉 Read our full deep dive on notification system chaos unsubscribe risk: https://www.manifera.com/blog/notification-system-chaos-unsubscribe-risk
 
 #CMO #EmailDeliverability #GDPR #SaaSArchitecture #CustomerExperience #Manifera

@@ -12,6 +12,6 @@
 
 The right architecture follows the evidence, not the sales deck. 📊
 
-👉 Read our full deep dive on ai development services Westerkwartier: [Link to article]
+👉 Read our full deep dive on ai development services Westerkwartier: https://www.manifera.com/blog/ai-development-services-westerkwartier
 
 #Westerkwartier #Groningen #AIDevelopment #RAG #AgriTech #Manifera

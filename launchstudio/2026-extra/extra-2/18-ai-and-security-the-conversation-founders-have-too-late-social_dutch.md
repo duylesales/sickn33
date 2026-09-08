@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze loggingaudit onderdeel van ons beveiligingsreviewpr
 
 Haar resultaat: elke logstatement geauditeerd, gevoelige velden gemaskeerd, een bewaarbeleid toegepast — vóórdat het bankpartnergesprek verder ging. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/ai-and-security-the-conversation-founders-have-too-late
 
 #IndieHacker #LaunchStudio #Manifera #AIPrivacy #AISecure

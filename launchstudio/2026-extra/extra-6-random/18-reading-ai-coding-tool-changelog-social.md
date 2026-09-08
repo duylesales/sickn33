@@ -15,6 +15,6 @@ At **LaunchStudio**, our team — including engineers based in Singapore coverin
 
 Her result: BoekingsHub's booking form now handles the new validation correctly, and Elin has an automated flag instead of relying on remembering to check an inbox. 🚀
 
-👉 Still archiving your AI coding tool's release notes without opening them: [Link to article]
+👉 Still archiving your AI coding tool's release notes without opening them: https://launchstudio.eu/en/blog/reading-ai-coding-tool-changelog
 
 #AINativeFounder #LaunchStudio #Manifera #ChangelogMonitoring #ProductionReady

@@ -15,6 +15,6 @@ Bij **LaunchStudio** beschouwen we AVG-gereedheid als standaard productieverstev
 
 Nora's resultaat: een conforme toestemmingsstroom, werkende functies voor gegevensrechten en bevestigde EU-hosting — voltooid in 7 werkdagen vóór haar openbare lancering. 🚀
 
-👉 Bouwt u een AI-app die gezondheids-, financiële of andere gevoelige data raakt? Controleer deze lijst vóór de lancering: [Link naar artikel]
+👉 Bouwt u een AI-app die gezondheids-, financiële of andere gevoelige data raakt? Controleer deze lijst vóór de lancering: https://launchstudio.eu/nl/blog/the-privacy-issues-with-ai-apps-that-gdpr
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #DataPrivacy

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineer
 
 💡 Zo zorgde roosterplatform Rotaflow dat ex-medewerkers binnen 20 minuten definitief werden buitengesloten in plaats van nog 30 dagen toegang te houden.
 
-👉 Ontdek hoe u de authenticatie van uw prototype vóór de lancering beveiligt: [Link naar artikel]
+👉 Ontdek hoe u de authenticatie van uw prototype vóór de lancering beveiligt: https://launchstudio.eu/nl/blog/the-authentication-decision-your-prototype-quietly-deferred
 
 #Cybersecurity #Authentication #JWT #WebSecurity #LaunchStudio #Manifera

@@ -12,6 +12,6 @@
 
 Stop pricing the easy 80% of the decision. Price the whole thing. 🛡️
 
-👉 Read our full deep dive on software outsourcing company gouda: [Link to article]
+👉 Read our full deep dive on software outsourcing company gouda: https://www.manifera.com/blog/software-outsourcing-company-gouda
 
 #Gouda #ZuidHolland #SoftwareOutsourcing #CFO #OffshoreDevelopment #ITGovernance #Manifera

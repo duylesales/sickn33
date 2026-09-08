@@ -16,6 +16,6 @@ We'd rather spend fifteen minutes telling you **LaunchStudio** isn't the fit tha
 
 His result: spent six weeks validating a simpler version, confirmed interest from two clinics, then opened a conversation about the regulated build. 🚀
 
-👉 Describe your project honestly — we'll reply within one business day, even if that's "not us": [Link to article]
+👉 Describe your project honestly — we'll reply within one business day, even if that's "not us": https://launchstudio.eu/en/blog/when-launchstudio-isnt-the-right-fit
 
 #AINativeFounder #StartupAdvice #LaunchStudio #Manifera #FounderLife #HealthTech

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the carsharing liability compliance compliance case study: [Link to article]
+👉 See the carsharing liability compliance compliance case study: https://www.manifera.com/blog/carsharing-liability-compliance-case-study
 
 #MobilityTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

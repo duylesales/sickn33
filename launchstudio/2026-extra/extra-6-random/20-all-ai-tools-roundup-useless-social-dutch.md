@@ -15,6 +15,6 @@ Bij **LaunchStudio** zijn we de productietak van Manifera, een 11 jaar oud softw
 
 Haar resultaat: de messaging van WerkVolg verwerkt nu betrouwbaar echt freelancer-bedrijfsverkeer, op infrastructuur die daadwerkelijk past bij hoe het product wordt gebruikt. 🚀
 
-👉 Een tool gekozen omdat een overzichtsartikel zei dat die "het beste" was: [Link naar artikel]
+👉 Een tool gekozen omdat een overzichtsartikel zei dat die "het beste" was: https://launchstudio.eu/nl/blog/all-ai-tools-roundup-useless
 
 #AINativeFounder #LaunchStudio #Manifera #ToolFit #ProductionReady

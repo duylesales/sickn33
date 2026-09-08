@@ -18,6 +18,6 @@ U heeft geen unicorn nodig. U heeft 100 tevreden klanten nodig. 🛡️🚀
 
 💡 Prijscalculatie: €80.000/jaar ÷ 100 klanten = ~€67/maand per klant (vóór churn). Niet de €15 van een consumenten-app.
 
-👉 Lees de complete micro-SaaS strategie: [Link naar artikel]
+👉 Lees de complete micro-SaaS strategie: https://launchstudio.eu/nl/blog/micro-saas-ai-100-customers
 
 #MicroSaaS #LaunchStudio #Manifera #AINativeFounder #SaaS #Bootstrapped #TechFounders #StartupOpschalen #Lovable

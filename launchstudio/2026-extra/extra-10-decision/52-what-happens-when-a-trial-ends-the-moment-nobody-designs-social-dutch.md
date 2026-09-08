@@ -17,6 +17,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), testen we d
 
 💡 Zo ontdekte Wouter Claessens van Dossierly dat 9 betalende advocatenkantoren buitengesloten waren door haperende incasso's. Na onze fixes steeg zijn conversie van 9% naar 21%!
 
-👉 Wat gebeurt er als uw proefperiode afloopt? Ontdek het besliskader: [Link naar artikel]
+👉 Wat gebeurt er als uw proefperiode afloopt? Ontdek het besliskader: https://launchstudio.eu/nl/blog/what-happens-when-a-trial-ends-the-moment-nobody-designs
 
 #SaaSGサース #TrialConversion #SubscriptionDesign #BillingEngineering #LaunchStudio #Manifera

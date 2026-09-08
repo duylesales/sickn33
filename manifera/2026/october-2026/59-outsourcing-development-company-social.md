@@ -12,6 +12,6 @@ At **Manifera**, we foster a culture of profound intellectual honesty:
 ✅ We rigorously push back against flawed requirements and propose mathematically superior architectures. 💡
 
 Stop hiring blind order-takers. Start partnering with Engineering Peers! 🚀
-👉 Read the deep dive on the massive dangers of the "Yes" culture: [Link to article]
+👉 Read the deep dive on the massive dangers of the "Yes" culture: https://www.manifera.com/blog/outsourcing-development-company
 
 #TechLeadership #SoftwareEngineering #CTO #OffshoreDevelopment #VietnamTech #AmsterdamBusiness #EnterpriseArchitecture #Manifera

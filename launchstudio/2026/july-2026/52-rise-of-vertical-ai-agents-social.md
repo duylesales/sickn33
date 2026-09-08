@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Hazel's application achieved production readiness: Hazel automated scheduling for 8 dental clinics, saving receptionist resources. (€4,800 (Vertical Integration Package) — production-ready and deployed in 14 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/rise-of-vertical-ai-agents
 
 #LaunchStudio #Manifera #AISaaS #TheRiseofVerticalAIA #TechFounders

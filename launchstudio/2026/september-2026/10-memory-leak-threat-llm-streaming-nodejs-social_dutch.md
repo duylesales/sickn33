@@ -14,6 +14,6 @@ Bij **LaunchStudio** voeren we sinds 2014 diepgaande Node.js geheugenanalyses en
 
 Mia's servergeheugengebruik stabiliseerde op een strakke 120 MB, waardoor willekeurige crashes definitief tot het verleden behoorden. (€1.600 (Node.js Memory Audit Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Bouw een lekvrije en stabiele AI-architectuur: [Link naar artikel]
+👉 Bouw een lekvrije en stabiele AI-architectuur: https://launchstudio.eu/nl/blog/memory-leak-threat-llm-streaming-nodejs
 
 #AINativeFounder #LaunchStudio #Manifera #NodeJS #MemoryLeaks #BackendEngineering #GarbageCollection #LLMStreaming #AISaaS #StartupOpschalen

@@ -16,6 +16,6 @@ Bij **LaunchStudio** is deze database- en eindpunt-harding standaard in onze pro
 
 Zijn resultaat: ratelimiting en misbruikpatroonmonitoring toegevoegd over elke gevoelige route, zonder onboardinglogica aan te raken. 🚀
 
-👉 Bereken wat jouw project kost: [Link naar artikel]
+👉 Bereken wat jouw project kost: https://launchstudio.eu/nl/blog/your-ai-database-isnt-as-persistent-as-it-looks-in-demo
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #ProductionReady

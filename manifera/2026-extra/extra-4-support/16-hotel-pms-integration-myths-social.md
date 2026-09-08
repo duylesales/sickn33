@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about hotel pms integration: [Link to article]
+👉 Retire all 3 biggest myths about hotel pms integration: https://www.manifera.com/blog/hotel-pms-integration-myths
 
 #HospitalityTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

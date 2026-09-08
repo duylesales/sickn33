@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Dario's platform behaalde productie-gereedheid: zijn platform absorbeerde de daaropvolgende gebruikersgroei zonder prestatieverslechtering en met een gedocumenteerde gereedheidsbeoordeling die hij aan zijn bestuur kon tonen. (€ 3.400 (Relaunch & Scale Pakket) — infrastructuuraudit voltooid en prioritaire oplossingen geverifieerd in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/infrastructure-readiness-scorecard-10k-users
 
 #LaunchStudio #Manifera #AISaaS #ScalingInfrastructure #ProductionReady

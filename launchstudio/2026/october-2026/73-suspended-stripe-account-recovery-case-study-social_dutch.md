@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering 
 
 Daniel's account werd in 4 dagen hersteld: Daniel herstelde zijn uitbetalingen en behield al zijn bestaande abonnees na implementatie van de juiste webhook-architectuur en een gestructureerd bezwaarschrift. 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/suspended-stripe-account-recovery-case-study
 
 #LaunchStudio #Manifera #AISaaS #Stripe #PaymentInfrastructure

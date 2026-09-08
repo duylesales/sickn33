@@ -12,6 +12,6 @@ Gross salary on one side, vendor rate on the other — the spreadsheet every CFO
 
 The goal isn't proving outsourcing always wins — it's a comparison honest enough that the board sees the real economics. ⚖️
 
-👉 Read our full deep dive on what CFOs miss in the in-house cost calculation: [Link to article]
+👉 Read our full deep dive on what CFOs miss in the in-house cost calculation: https://www.manifera.com/blog/in-house-team-cost-calculator-what-cfos-miss-vs-outsourcing
 
 #CFO #TotalCostOfOwnership #EngineeringBudget #SoftwareOutsourcing #FinanceLeadership #Manifera

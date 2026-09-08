@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 David herlanceerde met pay-as-you-go facturatie en ontving van hetzelfde bureau direct €2.400 vooraf voor 400 uur video. (€2.800 (Stripe Metered Billing) — binnen 7 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/saas-billing-stripe-metered-ai-tokens
 
 #LaunchStudio #Manifera #AISaaS #StripeBilling #MeteredBilling #PrepaidCredits #TechFounders #OpenAI #UnitEconomics

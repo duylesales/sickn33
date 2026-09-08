@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of integration problem
 
 Automated resolution coverage jumped from 15% to 52% of repetitive tickets — more than 3x the in-house attempt. (€2,100 (Launch & Grow Package) — 8 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/intercom-automation-in-house-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #Intercom #CustomerSupport

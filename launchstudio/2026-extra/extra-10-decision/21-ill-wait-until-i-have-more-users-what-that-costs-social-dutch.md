@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, helpen onze senior engineers u 
 
 💡 Zo hielpen we een fysiotherapie-app een openstaand patiëntendossier-lek op te lossen vóórdat 340 patiëntenrecords publiek werden.
 
-👉 Ontdek wat wachten uw startup écht kost: [Link naar artikel]
+👉 Ontdek wat wachten uw startup écht kost: https://launchstudio.eu/nl/blog/ill-wait-until-i-have-more-users-what-that-costs
 
 #StartupStrategy #TechnicalDebt #CyberSecurity #SaaSLaunch #LaunchStudio #Manifera

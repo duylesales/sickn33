@@ -12,6 +12,6 @@ Your sprint velocity has dropped for the third straight month, and the vendor's 
 
 Switching isn't a verdict on the vendor — it's a comparison between the cost of staying broken and the cost of a clean transition. 🎯
 
-👉 Read our full deep dive on when to switch software vendors mid-project: [Link to article]
+👉 Read our full deep dive on when to switch software vendors mid-project: https://www.manifera.com/blog/when-to-switch-software-vendors-mid-project
 
 #CTO #VendorManagement #SoftwareOutsourcing #VendorTransition #TechLeadership #Manifera

@@ -12,6 +12,6 @@ Forty dashboards built. Three still open a year later. That's not an unusual BI 
 
 A dashboard nobody opens twice was never really finished. 🖥️
 
-👉 Read our full deep dive on business intelligence development: [Link to article]
+👉 Read our full deep dive on business intelligence development: https://www.manifera.com/blog/business-intelligence-development
 
 #BusinessIntelligence #BIDashboards #DataDriven #CEO #Manifera

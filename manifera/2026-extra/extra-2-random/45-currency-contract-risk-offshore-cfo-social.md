@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on currency contract risk offshore cfo: [Link to article]
+👉 Read our full deep dive on currency contract risk offshore cfo: https://www.manifera.com/blog/currency-contract-risk-offshore-cfo
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

@@ -12,6 +12,6 @@
 
 Count everything the failed search actually cost before running it a fourth time. 💶
 
-👉 Read our full deep dive on offshore ai developers Westerwolde: [Link to article]
+👉 Read our full deep dive on offshore ai developers Westerwolde: https://www.manifera.com/blog/offshore-ai-developers-westerwolde
 
 #Westerwolde #Groningen #AITalent #OffshoreDevelopment #CFO #Manifera

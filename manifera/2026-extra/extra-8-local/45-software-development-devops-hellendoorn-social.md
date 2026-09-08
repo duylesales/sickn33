@@ -12,6 +12,6 @@
 
 A readable config diff beats a two-day investigation every time. 📊
 
-👉 Read our full deep dive on software development devops Hellendoorn: [Link to article]
+👉 Read our full deep dive on software development devops Hellendoorn: https://www.manifera.com/blog/software-development-devops-hellendoorn
 
 #Hellendoorn #Overijssel #DevOps #InfrastructureAsCode #SoftwareEngineering #Manifera

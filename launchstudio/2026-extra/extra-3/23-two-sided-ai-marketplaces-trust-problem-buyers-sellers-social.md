@@ -15,6 +15,6 @@ At **LaunchStudio**, we design and harden two-sided marketplace access control w
 
 Her result: a redesigned disclosure flow that keeps contact details protected until a deal is confirmed — fee protected, communication still frictionless. 🚀
 
-👉 Running a marketplace? Let's check what your disclosure flow is quietly costing you: [Link to article]
+👉 Running a marketplace? Let's check what your disclosure flow is quietly costing you: https://launchstudio.eu/en/blog/two-sided-ai-marketplaces-trust-problem-buyers-sellers
 
 #AINativeFounder #LaunchStudio #Manifera #Marketplace #TrustAndSafety

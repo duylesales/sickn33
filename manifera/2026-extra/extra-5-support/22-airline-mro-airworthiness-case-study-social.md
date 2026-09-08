@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the airline mro airworthiness compliance case study: [Link to article]
+👉 See the airline mro airworthiness compliance case study: https://www.manifera.com/blog/airline-mro-airworthiness-case-study
 
 #AviationTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

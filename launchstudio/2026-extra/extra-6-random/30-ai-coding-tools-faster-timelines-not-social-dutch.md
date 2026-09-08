@@ -15,6 +15,6 @@ Bij **LaunchStudio** besteedt het team van meer dan 120 engineers van Manifera, 
 
 Zijn resultaat: de voorraadaanpassingsfunctie van VoorraadZicht ging live voor het voltallige magazijnpersoneel met correcte foutafhandeling en gelijktijdigheidsveiligheid, en heeft sindsdien zonder één enkel incident gedraaid. 🚀
 
-👉 Een functie in een middag laten bouwen en u afvragen waarom "het netjes afmaken" niet in hetzelfde tempo gaat: [Link naar artikel]
+👉 Een functie in een middag laten bouwen en u afvragen waarom "het netjes afmaken" niet in hetzelfde tempo gaat: https://launchstudio.eu/nl/blog/ai-coding-tools-faster-timelines-not
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionHardening #ProductionReady

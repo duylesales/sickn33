@@ -15,6 +15,6 @@ At **LaunchStudio**, we add the multi-tenancy and metering layer underneath the 
 
 Aleksandra's result: tenant-scoped queries and automated usage-based billing now running across all accounts — completed in 2 weeks. 🚀
 
-👉 Demo working great with one customer? Here's what actually breaks at customer two: [Link to article]
+👉 Demo working great with one customer? Here's what actually breaks at customer two: https://launchstudio.eu/en/blog/what-an-ai-saas-platform-needs-beyond-the
 
 #AINativeFounder #LaunchStudio #Manifera #AISaaSPlatform #MultiTenant

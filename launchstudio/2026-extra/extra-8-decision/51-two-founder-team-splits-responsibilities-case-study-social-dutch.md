@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-engineering bi
 
 Coopr's resultaat: boekingsconcurrency opgelost in 12 werkdagen voor €3.100 — en drie nieuwe zakelijke hosts zonder nog een incident. 🚀
 
-👉 Ontdek wie bij u eigenlijk het backend-risico draagt: [Link naar artikel]
+👉 Ontdek wie bij u eigenlijk het backend-risico draagt: https://launchstudio.eu/nl/blog/two-founder-team-splits-responsibilities-case-study
 
 #LaunchStudio #Medeoprichters #VibeCoding #Manifera #SaaS #Startup #Coworking

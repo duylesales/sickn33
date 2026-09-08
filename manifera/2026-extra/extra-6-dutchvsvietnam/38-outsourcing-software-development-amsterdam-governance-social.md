@@ -12,6 +12,6 @@
 
 Turn financial governance from a reactive scramble into a standing capability. 🛡️
 
-👉 Read our full deep dive on outsourcing software development amsterdam governance: [Link to article]
+👉 Read our full deep dive on outsourcing software development amsterdam governance: https://www.manifera.com/blog/outsourcing-software-development-amsterdam-governance
 
 #Amsterdam #CFO #FinancialGovernance #SoftwareOutsourcing #Manifera

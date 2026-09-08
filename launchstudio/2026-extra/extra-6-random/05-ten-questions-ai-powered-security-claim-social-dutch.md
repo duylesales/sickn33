@@ -15,6 +15,6 @@ Bij **LaunchStudio** combineren de 120+ technici van Manifera geautomatiseerde c
 
 Haar resultaat: ZorgMeld handhaaft nu autorisatiecontroles afgebakend tot de caseload van elke coördinator, waarmee een gat werd gedicht dat de oorspronkelijke "AI-gestuurde" scan nooit was gebouwd om te vinden. 🚀
 
-👉 Een beveiligingsscan gedraaid en een schoon resultaat gekregen? Stuur ons de link naar uw prototype en wij vertellen u eerlijk wat een echte beoordeling zou vinden: [Link naar artikel]
+👉 Een beveiligingsscan gedraaid en een schoon resultaat gekregen? Stuur ons de link naar uw prototype en wij vertellen u eerlijk wat een echte beoordeling zou vinden: https://launchstudio.eu/nl/blog/ten-questions-ai-powered-security-claim
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityScanning #Authorization

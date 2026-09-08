@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: verification completion rates across all providers, including Outlook and Hotmail, matched Gmail's within a week — recovering an estimated quarter of previously lost signups. 🚀
 
-👉 Test whether your emails are actually arriving: [Link to article]
+👉 Test whether your emails are actually arriving: https://launchstudio.eu/en/blog/transactional-email-the-decisions-that-determine-whether-it-arrives
 
 #IndieHacker #Deliverability #ProductionReady #SaaS #LaunchStudio #Manifera

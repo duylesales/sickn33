@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Femke's firm got provable tenant isolation: associates and practice leads now see only their practice area's case files, partners retain firm-wide access exactly as intended, and adversarial testing confirmed no cross-practice-area leakage even through edge-case queries. (€4,600 (Enterprise Hardening Package) — RBAC design, implementation, and testing completed in 14 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-rbac-vector-database
 
 #LaunchStudio #Manifera #AISaaS #RBAC #VectorDatabase

@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers spend real time distinguishing to
 
 Milo's result: he replaced the linter-dressed-as-security-tool with a real review process and closed both gaps before VeiligPunt's public launch. 🚀
 
-👉 Not sure if your "AI-powered" security tool is actually doing the job: [Link to article]
+👉 Not sure if your "AI-powered" security tool is actually doing the job: https://launchstudio.eu/en/blog/skeptics-guide-ai-powered-marketing-claims
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #DevTools

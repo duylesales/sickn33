@@ -12,6 +12,6 @@
 
 Agree on the words before anyone touches a keyboard. 🛡️
 
-👉 Read our full deep dive on software development: [Link to article]
+👉 Read our full deep dive on software development: https://www.manifera.com/blog/software-development
 
 #SoftwareDevelopment #CTO #EngineeringLeadership #Manifera

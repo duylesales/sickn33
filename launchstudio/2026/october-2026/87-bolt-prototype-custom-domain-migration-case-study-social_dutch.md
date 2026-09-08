@@ -14,6 +14,6 @@ Bij **LaunchStudio** voeren wij precies dit soort zero-downtime migraties al sin
 
 De migratie van Ines werd voltooid zonder inlogfouten, zonder gemiste webhooks, en zonder voor klanten zichtbare downtime. (€ 1.400 — Launch Ready Pakket, gemigreerd en geverifieerd in 5 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/bolt-prototype-custom-domain-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #ZeroDowntime #Bolt

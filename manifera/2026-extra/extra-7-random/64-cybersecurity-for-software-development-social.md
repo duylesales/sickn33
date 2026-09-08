@@ -12,6 +12,6 @@
 
 Secure by default beats secure by audit, every time. 🔐
 
-👉 Read our full deep dive on cybersecurity for software development: [Link to article]
+👉 Read our full deep dive on cybersecurity for software development: https://www.manifera.com/blog/cybersecurity-for-software-development
 
 #CyberSecurity #ApplicationSecurity #SecureCoding #CTO #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** ontwerpen wij echte offline-first mogelijkheden voor AI-too
 
 Zijn resultaat: boeren registreren nu veldobservaties volledig offline, met automatische synchronisatie en een werkend risicomodel, zelfs zonder connectiviteit. 🚀
 
-👉 Bouwt u voor gebruikers die uw eigen testomgeving niet weerspiegelt? Laten we ontdekken waar de mismatch zit: [Link naar artikel]
+👉 Bouwt u voor gebruikers die uw eigen testomgeving niet weerspiegelt? Laten we ontdekken waar de mismatch zit: https://launchstudio.eu/nl/blog/ai-agricultural-businesses-offline-first-problem
 
 #AINativeFounder #LaunchStudio #Manifera #OfflineFirst #AgTech

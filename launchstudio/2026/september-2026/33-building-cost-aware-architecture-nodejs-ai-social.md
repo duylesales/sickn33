@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building cost-aware backend architecture since 2
 
 The LaunchStudio team built database-enforced daily token usage limits per organization in Next.js — preventing API budget depletion and stabilizing Alexander's monthly server overhead costs. 🚀
 
-👉 Learn how to cost-proof your backend: [Link to article]
+👉 Learn how to cost-proof your backend: https://launchstudio.eu/en/blog/building-cost-aware-architecture-nodejs-ai
 
 #AINativeFounder #LaunchStudio #Manifera #CostAwareArchitecture #NodeJS

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering 
 
 Owen's fixes werden eindelijk opgeleverd: Owen sloot alle 15 wachtende inspectiebedrijven binnen twee weken aan na afronding van de sprint, zonder datalekken tussen accounts en zonder haperende betalingen. (€2.600 (Launch & Grow Pakket) — productie-gereed en live in 9 werkdagen). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/no-code-retainer-agency-vs-one-time-sprint
 
 #LaunchStudio #Manifera #AISaaS #NoCode #ProductionReady

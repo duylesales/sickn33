@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren we precies deze checklist met vijf punten uit op AI-
 
 Zijn resultaat: FietsFlow doorstond de beveiligingsreview van de potentiële klant en tekende binnen een maand na de oplossing beide logistieke contracten. 🚀
 
-👉 Binnenkort pitchen bij een klant die veel om beveiliging geeft? Doorloop eerst de checklist: [Link naar artikel]
+👉 Binnenkort pitchen bij een klant die veel om beveiliging geeft? Doorloop eerst de checklist: https://launchstudio.eu/nl/blog/ai-secure-amersfoort
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #Amersfoort

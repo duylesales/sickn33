@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 Responstijden voor Amerikaanse gebruikers daalden van 2–3 seconden naar minder dan 450ms, gelijk aan de Europese ervaring (€3.800 (Relaunch & Scale Pakket) — ontworpen, geïmplementeerd en getest in 12 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/choosing-partner-multi-region-database-replication
 
 #LaunchStudio #Manifera #AISaaS #DatabaseReplication #GlobalSaaS

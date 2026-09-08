@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on mobile app development cost: [Link to article]
+👉 Read our full deep dive on mobile app development cost: https://www.manifera.com/blog/mobile-app-development-cost
 
 #MobileAppDevelopment #MobileDev #AppDevelopment #SoftwareArchitecture #TechLeadership #CTO #Manifera

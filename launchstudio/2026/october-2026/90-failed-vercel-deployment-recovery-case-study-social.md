@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been recovering platforms from exactly this failure m
 
 Jasper's platform was fully recovered with verified data integrity, and the next deploy of the same feature ran without incident. (€3,400 — Relaunch & Scale Package, recovered and process-hardened in 48 hours.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/failed-vercel-deployment-recovery-case-study
 
 #LaunchStudio #Manifera #AISaaS #IncidentResponse #Vercel

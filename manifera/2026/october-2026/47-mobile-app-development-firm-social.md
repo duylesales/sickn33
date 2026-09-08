@@ -11,6 +11,6 @@ At **Manifera**, we provide massive, predictable velocity through our **Autonomo
 ✅ Strict Confluence documentation ensures shared memory. 🧠
 
 Stop hunting for 10x developers. Start scaling with systems! 🛡️🚀
-👉 The CTO's guide to the Autonomous Pod model: [Link to article]
+👉 The CTO's guide to the Autonomous Pod model: https://www.manifera.com/blog/mobile-app-development-firm
 
 #SoftwareEngineering #TechLeadership #OffshoreDevelopment #VietnamTech #AmsterdamBusiness #CTO #AgileDevelopment #Manifera

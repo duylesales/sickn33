@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the feature shipped in under a week instead of the several weeks scoped for a WebSocket rewrite, with no new monthly infrastructure cost, and dispatchers say the dashboard feels instant. 🚀
 
-👉 Find out if your "real-time" feature actually needs WebSockets: [Link to article]
+👉 Find out if your "real-time" feature actually needs WebSockets: https://launchstudio.eu/en/blog/real-time-features-do-you-actually-need-websockets
 
 #IndieHacker #SaaS #ProductionReady #ScaleUp #LaunchStudio #Manifera

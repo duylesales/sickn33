@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of backend engineering, dunn
 
 Result: 81 of 114 failed payments (71%) recovered automatically, preserving €2,800/month in MRR — built in 6 business days for €1,800. 🚀
 
-👉 Plug the leaks in your subscription billing before you scale: [Link to article]
+👉 Plug the leaks in your subscription billing before you scale: https://launchstudio.eu/en/blog/subscription-box-dunning-retry-logic-case-study
 
 #LaunchStudio #Manifera #SaaSBilling #Dunning #StripeIntegration #ChurnPrevention #SubscriptionBusiness

@@ -12,6 +12,6 @@
 
 Ask about mutation testing in your next vendor call. The answer tells you more than any coverage number will. 📊
 
-👉 Read our full deep dive on verifying whether a vendor's QA process is real: [Link to article]
+👉 Read our full deep dive on verifying whether a vendor's QA process is real: https://www.manifera.com/blog/test-coverage-claims-how-to-verify-a-vendors-qa-process
 
 #CTO #QAProcess #TestCoverage #SoftwareQuality #TechDueDiligence #CICD #Manifera

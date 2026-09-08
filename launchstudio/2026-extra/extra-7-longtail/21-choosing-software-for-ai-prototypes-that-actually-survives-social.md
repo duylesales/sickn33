@@ -15,6 +15,6 @@ At **LaunchStudio**, this is exactly the gap our engineers look for first: the s
 
 Thibault's result: WerfPlan now runs on a backed-up production database with connection pooling, and the scheduling calendar he designed himself didn't change a single pixel. 🚀
 
-👉 Not sure your AI-built prototype's software choices will survive launch? Get a specific read before you find out the hard way: [Link to article]
+👉 Not sure your AI-built prototype's software choices will survive launch? Get a specific read before you find out the hard way: https://launchstudio.eu/en/blog/choosing-software-for-ai-prototypes-that-actually-survives
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareForAI #ProductionReady

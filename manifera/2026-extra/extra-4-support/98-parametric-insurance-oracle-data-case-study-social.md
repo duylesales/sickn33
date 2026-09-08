@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the parametric insurance oracle data case study: [Link to article]
+👉 See the parametric insurance oracle data case study: https://www.manifera.com/blog/parametric-insurance-oracle-data-case-study
 
 #InsurTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

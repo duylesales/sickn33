@@ -15,6 +15,6 @@ Bij **LaunchStudio** bouwen we precies dit soort toestemmings- en auditlogging a
 
 Zijn resultaat: een append-only auditlog die elke verlening, wijziging, en intrekking voortaan vastlegt — sluit het compliancegat zonder de functie aan te raken. 🚀
 
-👉 Plan een gratis introductiegesprek van 15 minuten: [Link naar artikel]
+👉 Plan een gratis introductiegesprek van 15 minuten: https://launchstudio.eu/nl/blog/security-and-ai-why-the-second-word-needs-the-first-ones-help
 
 #IndieHacker #LaunchStudio #Manifera #GDPR #AIPrivacy

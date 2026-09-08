@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about machine translation quality: [Link to article]
+👉 Retire all 3 biggest myths about machine translation quality: https://www.manifera.com/blog/machine-translation-quality-myths
 
 #Localization #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Lottes resultaat: Volgende project opgeleverd binnen 10 dagen voor exact de vaste inkoopprijs van €2.200, met €2.600 beschermde marge. 🚀
 
-👉 Vraag een vaste prijs aan voor uw volgende klantproject: [Link naar artikel]
+👉 Vraag een vaste prijs aan voor uw volgende klantproject: https://launchstudio.eu/nl/blog/fixed-price-vs-hourly-launchstudio
 
 #AgencyLife #WhiteLabel #LaunchStudio #Manifera #Freelance #VastePrijs #ScopeCreep

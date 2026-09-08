@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: interactive Slack components retired, an in-app notification centre and daily digest email built in two days, adopted by 41 of 60 accounts within a month. 🚀
 
-👉 Work out the cheapest version of "send this to Slack": [Link to article]
+👉 Work out the cheapest version of "send this to Slack": https://launchstudio.eu/en/blog/where-notifications-should-go-slack-teams-and-email
 
 #SaaS #Slack #ProductStrategy #IndieHacker #LaunchStudio #Manifera

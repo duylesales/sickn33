@@ -12,6 +12,6 @@ A vendor selection reaches month nine, scored and ready to sign — then Interna
 
 A framework built after the fact is a list of people who got annoyed. A framework built before the fact is governance. 📋
 
-👉 Read our full deep dive on multi-stakeholder vendor sign-off frameworks: [Link to article]
+👉 Read our full deep dive on multi-stakeholder vendor sign-off frameworks: https://www.manifera.com/blog/enterprise-software-vendor-selection-multi-stakeholder-sign-off-frameworks
 
 #Procurement #EnterpriseIT #VendorManagement #Governance #B2BSaaS #Manifera

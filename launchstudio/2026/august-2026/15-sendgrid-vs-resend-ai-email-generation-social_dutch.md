@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type e-mailarchitectuur- en deliverabil
 
 Mia's applicatie behaalde maximale bezorging: De deliverability steeg naar 99,8%, waardoor klanten hun rapporten direct in de inbox ontvingen. (€950 (Email Delivery Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/sendgrid-vs-resend-ai-email-generation
 
 #LaunchStudio #Manifera #AISaaS #Resend #ReactEmail #Deliverability #NextJS #TechFounders #StartupOpschalen

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of engineering experience, w
 
 His result: the six weeks of unmasked recordings were deleted, the original postcode-lookup bug was found within two weeks of the fix, and the whole privacy review was completed in 1 business day. 🚀
 
-👉 Check what your session replay tool is actually capturing: [Link to article]
+👉 Check what your session replay tool is actually capturing: https://launchstudio.eu/en/blog/session-replay-and-support-tooling-helpful-or-creepy
 
 #SessionReplay #GDPRCompliance #DataPrivacy #SaaSPrivacy #LaunchStudio #Manifera

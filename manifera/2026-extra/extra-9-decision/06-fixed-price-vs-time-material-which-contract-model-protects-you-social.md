@@ -12,6 +12,6 @@ A vendor proposal lands with two pricing options attached. Your engineer wants t
 
 The right model isn't a preference — it's a risk-allocation decision matched to how much of your scope is actually known today. 🎯
 
-👉 Read our full deep dive on fixed price vs. time and materials contracts: [Link to article]
+👉 Read our full deep dive on fixed price vs. time and materials contracts: https://www.manifera.com/blog/fixed-price-vs-time-material-which-contract-model-protects-you
 
 #CFO #SoftwareProcurement #ContractNegotiation #VendorManagement #TimeAndMaterials #FixedPriceContract #Manifera

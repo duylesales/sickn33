@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 Her result: the scoping call produced a written plan addressing all three fears, the missing migration was completed first, and Anneke's booking platform launched live in 10 business days. 🚀
 
-👉 Describe your product exactly as you'd tell a friend: [Link to article]
+👉 Describe your product exactly as you'd tell a friend: https://launchstudio.eu/en/blog/i-dont-even-know-what-to-ask-for
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

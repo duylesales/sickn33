@@ -15,6 +15,6 @@ At **LaunchStudio**, backed by Manifera's 160+ delivered projects for clients li
 
 OutletOps's result: it launched across all seven retailers ahead of the autumn season without a single scheduling conflict — something Iris credits directly to catching the bug in testing, not during the actual rush. 🚀
 
-👉 Building something that needs to survive a Saturday rush? Load-test it before launch: [Link to article]
+👉 Building something that needs to survive a Saturday rush? Load-test it before launch: https://launchstudio.eu/en/blog/30-ai-prototype-roermond
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrototype #Roermond

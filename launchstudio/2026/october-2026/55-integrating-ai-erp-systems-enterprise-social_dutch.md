@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Marcus' bureau leverde de AI Copilot succesvol op en sloot het contract van €200.000 definitief af. (€35.000 (White-Label ERP Middleware) — binnen 40 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/integrating-ai-erp-systems-enterprise
 
 #LaunchStudio #Manifera #AISaaS #ERPIntegration #SAP #MicrosoftDynamics #DigitalAgencies #EnterpriseAI #ProcurementTech #WhiteLabel

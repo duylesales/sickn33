@@ -12,6 +12,6 @@
 
 A Swedish manufacturer had three different internal versions of "customer" reconciled nightly by a script nobody trusted. Six weeks after consolidation, the script had nothing left to reconcile. 🔧
 
-👉 Read our full deep dive on software product engineering in Echt-Susteren: [Link to article]
+👉 Read our full deep dive on software product engineering in Echt-Susteren: https://www.manifera.com/blog/software-product-engineering-echt-susteren
 
 #EchtSusteren #Limburg #ProductEngineering #CTO #DomainModeling #Chemelot #Manifera

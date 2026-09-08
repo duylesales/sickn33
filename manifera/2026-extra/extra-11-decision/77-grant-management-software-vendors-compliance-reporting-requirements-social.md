@@ -12,6 +12,6 @@ $750,000 in federal awards in one fiscal year triggers a Single Audit. If your g
 
 A platform that looks great in a sales demo but can't survive an auditor's document request two years later isn't actually compliant. 🧾
 
-👉 Read our full deep dive on grant management software compliance reporting requirements: [Link to article]
+👉 Read our full deep dive on grant management software compliance reporting requirements: https://www.manifera.com/blog/grant-management-software-vendors-compliance-reporting-requirements
 
 #GrantManagement #ComplianceOfficer #NonProfit #SingleAudit #UniformGuidance #Manifera

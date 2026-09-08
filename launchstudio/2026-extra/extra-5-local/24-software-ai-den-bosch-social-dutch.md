@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengen de technici van Manifera 160+ opgeleverde projecten
 
 Het resultaat voor CivicDesk: de tool doorstond de volgende gemeentelijke aanbestedingsbeoordeling, waarbij het auditspoor specifiek werd genoemd als voldoend aan hun vastleggingsvereiste. 🚀
 
-👉 Technische oprichter die vertrouwt op code die u kunt lezen maar nog niet heeft stresstest? Laat een tweede ronde uitvoeren: [Link naar artikel]
+👉 Technische oprichter die vertrouwt op code die u kunt lezen maar nog niet heeft stresstest? Laat een tweede ronde uitvoeren: https://launchstudio.eu/nl/blog/24-software-ai-den-bosch
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareArchitecture #DenBosch

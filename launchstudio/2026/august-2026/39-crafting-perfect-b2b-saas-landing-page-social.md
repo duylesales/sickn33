@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Alexander's application achieved silky-smooth performance: Page load times dropped to 0.7 seconds, raising Lighthouse performance scores to 98/100. (€950 (Lighthouse Optimization) — production-ready and deployed in 2 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/crafting-perfect-b2b-saas-landing-page
 
 #LaunchStudio #Manifera #AISaaS #CraftingthePerfectB2 #TechFounders

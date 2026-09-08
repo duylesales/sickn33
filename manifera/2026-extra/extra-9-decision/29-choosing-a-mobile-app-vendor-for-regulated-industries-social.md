@@ -12,6 +12,6 @@ A generalist agency can ship a beautiful health or fintech app in 12 weeks. What
 
 Ask for the technical walkthrough, not the reassurance. 🔍
 
-👉 Read our full deep dive on choosing a mobile app vendor for regulated industries: [Link to article]
+👉 Read our full deep dive on choosing a mobile app vendor for regulated industries: https://www.manifera.com/blog/choosing-a-mobile-app-vendor-for-regulated-industries
 
 #CTO #HealthTech #Fintech #HIPAA #DataCompliance #Manifera

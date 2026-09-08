@@ -14,6 +14,6 @@ Bij LaunchStudio transformeren we AI-prototypes in enterprise-ready MVP's via tr
 
 Kwame lanceerde binnen 8 dagen na de overstap en stopte zijn retainer-bloeden direct. (€ 2.400 (Launch Ready) — 8 werkdagen.) 🚀
 
-👉 Ontdek het prijsverschil: [Link naar artikel]
+👉 Ontdek het prijsverschil: https://launchstudio.eu/nl/blog/retainer-vs-project-based-pricing-ai-saas
 
 #LaunchStudio #Manifera #AISaaS #SoftwarePricing #FixedScope

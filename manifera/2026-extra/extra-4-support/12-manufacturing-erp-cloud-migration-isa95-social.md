@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on manufacturing erp cloud isa95: [Link to article]
+👉 Read our full architectural deep dive on manufacturing erp cloud isa95: https://www.manifera.com/blog/manufacturing-erp-cloud-migration-isa95
 
 #IndustrialTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

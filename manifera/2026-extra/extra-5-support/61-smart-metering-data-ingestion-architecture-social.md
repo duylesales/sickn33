@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on smart metering data ingestion: [Link to article]
+👉 Read our full architectural deep dive on smart metering data ingestion: https://www.manifera.com/blog/smart-metering-data-ingestion-architecture
 
 #Cleantech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

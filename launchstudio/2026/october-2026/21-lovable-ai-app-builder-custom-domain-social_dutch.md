@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Thomas's app stond binnen 48 uur veilig live op `snelwaarderen.nl` en hij kan in Lovable blijven itereren zonder ooit een server aan te raken. (€900 (Basis Launch Ready Pakket) — binnen 2 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/lovable-ai-app-builder-custom-domain
 
 #LaunchStudio #Manifera #AISaaS #LovableAI #CustomDomain #Vercel #DNSConfig #TechFounders #PropTech

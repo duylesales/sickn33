@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), zorgen we d
 
 💡 Zo ontdekte Ruben Aerts van Bloomcart net op tijd dat toegangscodes van kantoorpanden al 6 weken ongemaskeerd werden opgenomen in Hotjar.
 
-👉 Is uw sessie-replay veilig of een datalek? Check de checklist: [Link naar artikel]
+👉 Is uw sessie-replay veilig of een datalek? Check de checklist: https://launchstudio.eu/nl/blog/session-replay-and-support-tooling-helpful-or-creepy
 
 #GDPR #Privacy #SessionReplay #Hotjar #SaaSCompliance #LaunchStudio #Manifera

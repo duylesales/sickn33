@@ -12,6 +12,6 @@
 
 We cut testing and hired cheaper to save money, and ended up spending more fixing what broke after launch than we'd saved. 🛡️
 
-👉 Read our full deep dive on how to reduce software development costs: [Link to article]
+👉 Read our full deep dive on how to reduce software development costs: https://www.manifera.com/blog/how-to-reduce-software-development-costs
 
 #SoftwareDevelopment #CFO #CostReduction #Manifera

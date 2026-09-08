@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 The next comparable deploy shipped with zero customer-visible downtime, catching an unrelated bug within 90 seconds. (€3,100 (Relaunch & Scale Package) — production-ready and deployed in 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/fragile-deploy-pipeline-rebuild-case-study
 
 #LaunchStudio #Manifera #AISaaS #DeployPipeline #ZeroDowntime

@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen de in Ho Chi Minhstad gevestigde technici van Manife
 
 Zijn resultaat: WerkAgenda draait nu op een abonnement met bevestigde no-retention-voorwaarden, en Wesley heeft een gedocumenteerd antwoord klaarliggen voor de volgende klant die ernaar vraagt. 🚀
 
-👉 Stuur ons de link naar uw prototype voor gratis advies over wat u eerst moet controleren: [Link naar artikel]
+👉 Stuur ons de link naar uw prototype voor gratis advies over wat u eerst moet controleren: https://launchstudio.eu/nl/blog/ai-privacy-issues-founders-dont-see-coming
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrivacy #DataRetention

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 Her result: accurate scope same-call, both gaps closed two weeks ahead of deadline. 🚀
 
-👉 See what to bring to your own first call: [Link to article]
+👉 See what to bring to your own first call: https://launchstudio.eu/en/blog/what-founder-should-prepare-before-first-call
 
 #StartupPrep #AINativeFounder #LaunchStudio #Manifera #FirstCall #ProductionReady

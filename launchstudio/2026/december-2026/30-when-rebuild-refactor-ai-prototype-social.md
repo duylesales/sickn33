@@ -18,6 +18,6 @@ At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we give an ho
 
 Result: relaunched in 9 days at 1/5 the rebuild quote. 🚀
 
-👉 Read the rebuild-vs-refactor framework: [Link to article]
+👉 Read the rebuild-vs-refactor framework: https://launchstudio.eu/en/blog/when-rebuild-refactor-ai-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #TechDebt #SaaS #StartupTips

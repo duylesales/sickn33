@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on app idea actually ships: [Link to article]
+👉 Read our full guide on app idea actually ships: https://www.manifera.com/blog/app-idea-vs-what-actually-ships
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

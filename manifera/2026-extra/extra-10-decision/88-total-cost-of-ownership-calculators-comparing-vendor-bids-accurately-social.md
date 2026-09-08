@@ -12,6 +12,6 @@ Three vendor bids land on your desk: €340K, €410K, and €480K for the same 
 
 The cheapest headline rate and the cheapest actual project are frequently two different bids. 🎯
 
-👉 Read our full deep dive on building a real TCO comparison for vendor bids: [Link to article]
+👉 Read our full deep dive on building a real TCO comparison for vendor bids: https://www.manifera.com/blog/total-cost-of-ownership-calculators-comparing-vendor-bids-accurately
 
 #CFO #TotalCostOfOwnership #VendorSelection #SoftwareOutsourcing #ProcurementStrategy #Manifera

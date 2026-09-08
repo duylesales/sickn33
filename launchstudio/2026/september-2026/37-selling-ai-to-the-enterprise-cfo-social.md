@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been helping technical founders sell into the enterpr
 
 LaunchStudio built William an automated ROI calculator panel that exports PDF reports for CFO approvals — his enterprise sales cycles decreased from 6 weeks to 10 days, closing 4 new deals. 🚀
 
-👉 Read the full ROI framework: [Link to article]
+👉 Read the full ROI framework: https://launchstudio.eu/en/blog/selling-ai-to-the-enterprise-cfo
 
 #AINativeFounder #LaunchStudio #Manifera #EnterpriseSales #CFOSelling

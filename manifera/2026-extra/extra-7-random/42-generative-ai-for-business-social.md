@@ -12,6 +12,6 @@
 
 We were about to spend our AI budget on the thing that would look best in a board presentation. The boring one was the better bet. 🛡️
 
-👉 Read our full deep dive on generative ai for business: [Link to article]
+👉 Read our full deep dive on generative ai for business: https://www.manifera.com/blog/generative-ai-for-business
 
 #GenerativeAI #CEO #AIStrategy #Manifera

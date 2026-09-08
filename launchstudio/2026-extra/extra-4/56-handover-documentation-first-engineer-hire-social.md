@@ -15,6 +15,6 @@ At **LaunchStudio**, producing exactly this kind of handover documentation is ro
 
 His result: Rick's next hire ramped up in under three days using LaunchStudio's documentation — instead of the two weeks his first hire needed with nothing to work from. 🚀
 
-👉 About to bring on your first engineer? Get the codebase documented first: [Link to article]
+👉 About to bring on your first engineer? Get the codebase documented first: https://launchstudio.eu/en/blog/handover-documentation-first-engineer-hire
 
 #AINativeFounder #LaunchStudio #Manifera #FirstHire #EngineeringOnboarding

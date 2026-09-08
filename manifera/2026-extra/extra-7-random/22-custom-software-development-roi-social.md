@@ -12,6 +12,6 @@
 
 Our first number only counted the build cost and one problem. The real number was almost double. 🛡️
 
-👉 Read our full deep dive on custom software development roi: [Link to article]
+👉 Read our full deep dive on custom software development roi: https://www.manifera.com/blog/custom-software-development-roi
 
 #CustomSoftware #CFO #ROI #BusinessCase #Manifera

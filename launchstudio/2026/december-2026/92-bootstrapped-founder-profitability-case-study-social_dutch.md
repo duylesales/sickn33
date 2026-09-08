@@ -14,6 +14,6 @@ Bij LaunchStudio transformeren we prototypes in veilige, winstgevende bedrijven.
 
 Tomas lanceerde officieel, onboardde 110 betalende freelancers en werd winstgevend in maand 4. (€ 2.400 (Launch Ready) — 7 werkdagen.) 🚀
 
-👉 Lees de bootstrapped case study: [Link naar artikel]
+👉 Lees de bootstrapped case study: https://launchstudio.eu/nl/blog/bootstrapped-founder-profitability-case-study
 
 #LaunchStudio #Manifera #AISaaS #Bootstrapped #SaaSProfitability

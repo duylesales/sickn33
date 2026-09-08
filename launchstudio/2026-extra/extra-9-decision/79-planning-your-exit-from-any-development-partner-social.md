@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, e
 
 His result: when his freelancer's pace fell behind, Milan switched developers in six days with zero disruption. 🚀
 
-👉 Talk to an engineer about a clean handoff structure for your stack: [Link to article]
+👉 Talk to an engineer about a clean handoff structure for your stack: https://launchstudio.eu/en/blog/planning-your-exit-from-any-development-partner
 
 #IndieHacker #SaaS #LaunchStudio #Manifera #AICoding #FounderLife

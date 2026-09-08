@@ -12,6 +12,6 @@ Renewal is in six weeks. If your honest answer to "why renew?" is "the team seem
 
 A renewal decision built on trend data is defensible. A gut call with documentation attached is not. 🎯
 
-👉 Read our full deep dive on what to measure before a vendor renewal: [Link to article]
+👉 Read our full deep dive on what to measure before a vendor renewal: https://www.manifera.com/blog/vendor-performance-reviews-what-to-measure-before-renewal
 
 #VPEngineering #VendorManagement #SoftwareOutsourcing #EngineeringLeadership #VendorScorecard #Manifera

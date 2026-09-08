@@ -14,6 +14,6 @@ Bij LaunchStudio stabiliseren we CI-pijplijnen voor AI-teams waar snelle Lovable
 
 Sanne's CI-slagingspercentage steeg van ~67% naar >98%, en haar team stopte direct met het blindelings herstarten van builds. (€ 2.100 (Launch & Grow Pakket) — 8 werkdagen.) 🚀
 
-👉 Bekijk onze aanpak: [Link naar artikel]
+👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/real-cost-flaky-tests-ci-pipeline
 
 #LaunchStudio #Manifera #AISaaS #CICD #FlakyTests

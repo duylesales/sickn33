@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen onze technici — werkzaam vanuit onder andere het e
 
 Haar resultaat: MeldBrug heeft nu gedocumenteerde architectuurduidelijkheid die de AI-chatfunctie scheidt van de rest van de applicatie, klaar voor het volgende due-diligencegesprek. 🚀
 
-👉 Bereidt u zich voor op een due-diligencegesprek? Beschrijf uw project en wij reageren binnen één werkdag: [Link naar artikel]
+👉 Bereidt u zich voor op een due-diligencegesprek? Beschrijf uw project en wij reageren binnen één werkdag: https://launchstudio.eu/nl/blog/ai-in-app-vs-app-built-by-ai
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #AIClaims

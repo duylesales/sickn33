@@ -15,6 +15,6 @@ Bij **LaunchStudio** doorlopen onze technici, waaronder het in Singapore gevesti
 
 Haar resultaat: MeldGrip doorstond zijn beoordeling vóór uitrol met alle drie de problemen opgelost vóór de bredere release die Iris had gepland. 🚀
 
-👉 Wilt u een eerlijke controle tegen precies deze lijst? Stuur ons uw prototypelink voor gratis advies: [Link naar artikel]
+👉 Wilt u een eerlijke controle tegen precies deze lijst? Stuur ons uw prototypelink voor gratis advies: https://launchstudio.eu/nl/blog/ai-security-issues-honest-list
 
 #AINativeFounder #LaunchStudio #Manifera #AppSecurity #SecurityReview

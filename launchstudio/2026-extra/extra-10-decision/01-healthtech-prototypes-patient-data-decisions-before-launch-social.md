@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: RouteToRecovery signed its first clinic contract four weeks later, after the clinic's privacy officer reviewed the sub-processor list and access logs directly. 🚀
 
-👉 Find out what your patient data actually requires: [Link to article]
+👉 Find out what your patient data actually requires: https://launchstudio.eu/en/blog/healthtech-prototypes-patient-data-decisions-before-launch
 
 #HealthTech #GDPR #StartupFounders #DataPrivacy #LaunchStudio #Manifera

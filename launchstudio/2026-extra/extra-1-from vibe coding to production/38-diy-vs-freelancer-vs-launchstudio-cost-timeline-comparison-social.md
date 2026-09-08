@@ -16,6 +16,6 @@ At **LaunchStudio**, we're path three — specific, demonstrated depth in AI-gen
 
 Her result: a fixed €2,400 quote, 9-day timeline, beating both freelancer quotes on cost AND clarity. 🚀
 
-👉 Get a scoped estimate to compare against your other options: [Link to article]
+👉 Get a scoped estimate to compare against your other options: https://launchstudio.eu/en/blog/diy-vs-freelancer-vs-launchstudio-cost-timeline-comparison
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #StartupDecisions

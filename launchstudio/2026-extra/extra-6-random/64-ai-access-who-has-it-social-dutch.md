@@ -15,6 +15,6 @@ Bij **LaunchStudio** voert ons Amsterdamse team precies dit soort toegangsaudit 
 
 Haar resultaat: DataToegang heeft nu een volledig gedocumenteerde, actuele lijst van elke integratie met toegang tot klantgegevens, met de ongebruikte testsleutel permanent ingetrokken. 🚀
 
-👉 Niet zeker wat er nog allemaal toegang heeft tot uw app? Bereken wat een volledige audit zou kosten: [Link naar artikel]
+👉 Niet zeker wat er nog allemaal toegang heeft tot uw app? Bereken wat een volledige audit zou kosten: https://launchstudio.eu/nl/blog/ai-access-who-has-it
 
 #AINativeFounder #LaunchStudio #Manifera #AIAccess #DataSecurity

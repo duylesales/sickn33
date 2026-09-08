@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's engineers who know which API shortcuts
 
 His result: Ruben shipped a webhook and a scheduled export in four days combined, versus the two-to-three weeks a full API would've taken — no obligation, no solo support queue. 🚀
 
-👉 Talk to an engineer who reads AI-generated code about your API options: [Link to article]
+👉 Talk to an engineer who reads AI-generated code about your API options: https://launchstudio.eu/en/blog/should-you-open-an-api-to-your-customers
 
 #IndieHacker #SaaS #APIs #SoloFounder #LaunchStudio #Manifera

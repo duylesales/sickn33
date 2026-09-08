@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a Redis-backed job queue and one added index fixed both issues in a four-day engagement — the next similarly-sized traffic spike caused no slowdown at all. 🚀
 
-👉 Get a free scope review of your prototype: [Link to article]
+👉 Get a free scope review of your prototype: https://launchstudio.eu/en/blog/infrastructure-decisions-between-user-1-and-user-100
 
 #SaaS #ScaleUp #ProductionReady #StartupGrowth #LaunchStudio #Manifera

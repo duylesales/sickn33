@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on custom software development cost breakdown: [Link to article]
+👉 Read our full guide on custom software development cost breakdown: https://www.manifera.com/blog/custom-software-development-cost-breakdown
 
 #SoftwareCosts #AppDevelopment #TechBudget #CustomSoftware #CTO #Manifera

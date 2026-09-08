@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit een schoolvoorbeeld van wat onze CEO Herre Roelevink
 
 Zijn resultaat: MonteurPlanner heeft sindsdien geen enkel incident met dubbele verzending meer gehad, bij een techniciteam dat is gegroeid van vier naar negen. 🚀
 
-👉 Heeft uw planningstool een pad voor handmatige overschrijvingen? Laat het vooraf beoordelen voordat het uw drukste technicus vindt: [Link naar artikel]
+👉 Heeft uw planningstool een pad voor handmatige overschrijvingen? Laat het vooraf beoordelen voordat het uw drukste technicus vindt: https://launchstudio.eu/nl/blog/field-service-ai-scheduling-app-double-dispatch
 
 #AINativeFounder #LaunchStudio #Manifera #FieldService #AIScheduling

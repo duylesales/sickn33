@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been making exactly this kind of infrastructure call 
 
 Truncated AI responses dropped from 15% to effectively zero, and Sanne's app handled a 6,000-visitor spike without a single timeout. (€1,600 — Launch & Grow Package, migrated and deployed in 7 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/vercel-vs-netlify-expert-decision
 
 #LaunchStudio #Manifera #AISaaS #Vercel #Netlify

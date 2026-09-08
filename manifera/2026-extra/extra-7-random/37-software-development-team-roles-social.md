@@ -12,6 +12,6 @@
 
 We had every role on paper. What we didn't have was anyone whose job was keeping the thread connected. 🛡️
 
-👉 Read our full deep dive on software development team roles: [Link to article]
+👉 Read our full deep dive on software development team roles: https://www.manifera.com/blog/software-development-team-roles
 
 #DevTeam #CTO #TeamRoles #Manifera

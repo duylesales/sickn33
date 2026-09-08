@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in het ontwi
 
 Het resultaat: contrastverhoudingen hersteld, toetsenbordinteracties herbouwd en focusstijlen geactiveerd binnen een week — de partneraudit werd direct behaald. 🚀
 
-👉 Gebruik onze prijscalculator om direct te zien wat een toegankelijkheidsaudit kost bij uw lancering: [Link naar artikel]
+👉 Gebruik onze prijscalculator om direct te zien wat een toegankelijkheidsaudit kost bij uw lancering: https://launchstudio.eu/nl/blog/accessibility-what-eu-founders-need-at-launch
 
 #SaaS #Toegankelijkheid #WCAG #WebDevelopment #LaunchStudio #Manifera

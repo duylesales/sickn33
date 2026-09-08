@@ -16,6 +16,6 @@ Bij **LaunchStudio** scopen we opdrachten rond precies deze praktische eerste-kl
 
 Haar resultaat: 3 betalende praktijken onboardden binnen 3 weken na een stagnatie van 2 maanden. 🚀
 
-👉 Laat scopen voor wat jouw eerste betalende klant daadwerkelijk nodig heeft: [Link naar artikel]
+👉 Laat scopen voor wat jouw eerste betalende klant daadwerkelijk nodig heeft: https://launchstudio.eu/nl/blog/prototype-to-paying-customers-production-steps-that-matter
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #EersteKlant

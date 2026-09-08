@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a farm management offline first: [Link to article]
+👉 Read the founder's guide to building a farm management offline first: https://www.manifera.com/blog/farm-management-app-offline-first-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

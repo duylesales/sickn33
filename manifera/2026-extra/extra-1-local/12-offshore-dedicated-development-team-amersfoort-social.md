@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on offshore dedicated development team amersfoort: [Link to article]
+👉 Read our full deep dive on offshore dedicated development team amersfoort: https://www.manifera.com/blog/offshore-dedicated-development-team-amersfoort
 
 #Amersfoort #Utrecht #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

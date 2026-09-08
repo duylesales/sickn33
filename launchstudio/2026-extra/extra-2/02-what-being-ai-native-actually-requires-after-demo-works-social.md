@@ -15,6 +15,6 @@ At **LaunchStudio**, closing exactly this kind of gap is standard in our Launch 
 
 Her result: every document query now rejects requests outside the requesting firm's own scope — closed across every existing and future account. 🚀
 
-👉 Describe your project — we respond within 1 business day: [Link to article]
+👉 Describe your project — we respond within 1 business day: https://launchstudio.eu/en/blog/what-being-ai-native-actually-requires-after-demo-works
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SaaS

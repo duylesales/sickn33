@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's compliance work for clients like CFLW Cyber Stra
 
 CargoLane passed the shipping company's vendor review on the second submission and has since used the same documentation to close two more enterprise logistics clients. 🚀
 
-👉 Launching an AI website for B2B clients? Run a compliance pass before procurement does: [Link to article]
+👉 Launching an AI website for B2B clients? Run a compliance pass before procurement does: https://launchstudio.eu/en/blog/ai-websites-rotterdam
 
 #AINativeFounder #LaunchStudio #Manifera #AIWebsites #Rotterdam

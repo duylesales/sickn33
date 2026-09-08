@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Zijn resultaat: Veldnota stond in elf werkdagen live met een getekende verwerkersovereenkomst, en Sander voegde twee nieuwe coöperaties toe zónder zijn datamodel ooit aan te raken. 🚀
 
-👉 Stuur uw repository of prototypelink en ontvang een vaste scope: [Link naar artikel]
+👉 Stuur uw repository of prototypelink en ontvang een vaste scope: https://launchstudio.eu/nl/blog/one-customer-waiting-to-pay-how-that-changes-the-math
 
 #IndieHacker #AICoding #ProductionReady #LaunchStudio #Manifera #GDPR

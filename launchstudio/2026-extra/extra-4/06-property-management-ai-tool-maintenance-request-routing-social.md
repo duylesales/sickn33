@@ -15,6 +15,6 @@ At **LaunchStudio**, this is precisely the kind of gap we look for before an app
 
 Her result: Roos caught two more unassigned-property requests the following month before they became complaints, both resolved within a day. 🚀
 
-👉 Managing real tenants on an AI-built tool? See what a routing and notification audit involves: [Link to article]
+👉 Managing real tenants on an AI-built tool? See what a routing and notification audit involves: https://launchstudio.eu/en/blog/property-management-ai-tool-maintenance-request-routing
 
 #AINativeFounder #LaunchStudio #Manifera #PropTech #AILandlordTools

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on agency lock marketing site cmo: [Link to article]
+👉 Read our full deep dive on agency lock marketing site cmo: https://www.manifera.com/blog/agency-lock-in-marketing-site-cmo
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

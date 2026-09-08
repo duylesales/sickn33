@@ -19,6 +19,6 @@ At **LaunchStudio**, we close this exact gap — without touching a single butto
 
 🧪 5-second gut check: hard-refresh mid-session. Data vanish or get logged out? That's not a bug — that's your "MVP" telling you it has no real database.
 
-👉 Read how AI redefined "viable": [Link to article]
+👉 Read how AI redefined "viable": https://launchstudio.eu/en/blog/ai-changing-definition-of-mvp
 
 #MVP #AINativeFounder #LaunchStudio #Manifera #SaaS #StartupBuilding

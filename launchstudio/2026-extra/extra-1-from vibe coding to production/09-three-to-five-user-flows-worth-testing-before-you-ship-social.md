@@ -16,6 +16,6 @@ At **LaunchStudio**, we identify and thoroughly test your specific critical flow
 
 His result: the concurrent-booking test caught a real double-booking bug before a single real restaurant customer ever hit it. 🚀
 
-👉 Find out which flows in your app actually need this level of testing: [Link to article]
+👉 Find out which flows in your app actually need this level of testing: https://launchstudio.eu/en/blog/three-to-five-user-flows-worth-testing-before-you-ship
 
 #TestingMatters #IndieHacker #LaunchStudio #Manifera #QA #VibeCoding

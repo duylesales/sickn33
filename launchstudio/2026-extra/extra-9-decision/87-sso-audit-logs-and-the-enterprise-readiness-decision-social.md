@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's enterprise delivery for Vodafone and T
 
 Her result: OIDC SSO shipped in nine business days, keeping a 3,000-employee logistics deal on schedule, with SCIM and audit logging following calmly over the next six weeks. 🚀
 
-👉 Describe your current enterprise deal and its blockers: [Link to article]
+👉 Describe your current enterprise deal and its blockers: https://launchstudio.eu/en/blog/sso-audit-logs-and-the-enterprise-readiness-decision
 
 #SaaS #EnterpriseSales #ScaleUp #B2BSaaS #LaunchStudio #Manifera

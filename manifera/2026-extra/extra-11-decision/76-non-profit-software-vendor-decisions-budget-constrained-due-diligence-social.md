@@ -12,6 +12,6 @@ A funder capping overhead at 15% doesn't care that your program needs custom sof
 
 The cheapest quote and the most affordable relationship are rarely the same number. 🔍
 
-👉 Read our full deep dive on budget-constrained nonprofit vendor due diligence: [Link to article]
+👉 Read our full deep dive on budget-constrained nonprofit vendor due diligence: https://www.manifera.com/blog/non-profit-software-vendor-decisions-budget-constrained-due-diligence
 
 #NonProfit #NonprofitTech #Founder #DigitalTransformation #TechForGood #Manifera

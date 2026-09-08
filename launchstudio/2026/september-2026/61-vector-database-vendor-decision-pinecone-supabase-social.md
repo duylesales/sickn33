@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Priya's application achieved production readiness: query latency dropped from 9 seconds to 180 milliseconds, with every law firm's documents cryptographically isolated at the database layer. (€2,400 (Launch & Grow Package) — production-ready and deployed in 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/vector-database-vendor-decision-pinecone-supabase
 
 #LaunchStudio #Manifera #AISaaS #VectorDatabase #RAGArchitecture

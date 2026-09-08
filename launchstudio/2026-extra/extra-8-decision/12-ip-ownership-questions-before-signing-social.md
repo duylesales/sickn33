@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 Her result: she declined the risky contract, got full ownership terms instead, and had a clean IP position ready for investor due diligence three weeks later. ✅
 
-👉 Know exactly which 6 questions to ask before you sign anything: [Link to article]
+👉 Know exactly which 6 questions to ask before you sign anything: https://launchstudio.eu/en/blog/ip-ownership-questions-before-signing
 
 #StartupIP #FounderContracts #IndieHacker #LaunchStudio #Manifera #DueDiligence

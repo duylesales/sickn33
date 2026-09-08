@@ -15,6 +15,6 @@ At **LaunchStudio**, license compliance reviews are a standard part of preparing
 
 His result: RouteBoard's codebase passed a subsequent informal license review with no flags — clean footing for any future acquisition conversation. 🚀
 
-👉 Planning to raise or sell? Check your codebase's license posture first: [Link to article]
+👉 Planning to raise or sell? Check your codebase's license posture first: https://launchstudio.eu/en/blog/open-source-license-compliance-ai-generated-code
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #DueDiligence

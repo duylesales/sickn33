@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a maintenance-calendar check caught a failed SSL renewal three weeks before it would have taken the site down. 🚀
 
-👉 Describe what's still open on your build — a reply within one day: [Link to article]
+👉 Describe what's still open on your build — a reply within one day: https://launchstudio.eu/en/blog/after-the-engagement-ends-who-fixes-what
 
 #IndieHacker #TechnicalFounder #LaunchStudio #Manifera #AICoding #SaaS

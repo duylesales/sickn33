@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Zijn resultaat: 214 aanmeldingen binnen 90 minuten na de pitch, nul crashes, nul datalekken en twee serieuze term-sheet gesprekken. 🚀
 
-👉 Plan een kennismakingsgesprek van 15 minuten voordat de klok verder wegtikt: [Link naar artikel]
+👉 Plan een kennismakingsgesprek van 15 minuten voordat de klok verder wegtikt: https://launchstudio.eu/nl/blog/four-weeks-to-demo-day-what-to-harden-first
 
 #SaaS #StartupGrowth #LaunchStudio #Manifera #ProductionReady #AICoding

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Kasper's two-person team never had to learn Redis operations to get there (€2,600 (Launch & Grow Package) — architecture implemented and deployed in 9 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/managed-message-queue-vs-custom-event-bus
 
 #LaunchStudio #Manifera #AISaaS #MessageQueue #EventDrivenArchitecture

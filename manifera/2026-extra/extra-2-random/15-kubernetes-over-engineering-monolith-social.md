@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on kubernetes over engineering monolith: [Link to article]
+👉 Read our full deep dive on kubernetes over engineering monolith: https://www.manifera.com/blog/kubernetes-over-engineering-monolith
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

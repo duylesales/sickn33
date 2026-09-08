@@ -15,6 +15,6 @@ Bij **LaunchStudio** implementeren we precies dit soort inhoudsverificatiecontro
 
 Haar resultaat: correcte inhoudstypeverificatie geïmplementeerd op elke upload, en dicht het gat voordat het geëxploiteerd kon worden door iemand minder goedaardig. 🚀
 
-👉 Krijg een gratis blik op jouw prototype — stuur gewoon de link: [Link naar artikel]
+👉 Krijg een gratis blik op jouw prototype — stuur gewoon de link: https://launchstudio.eu/nl/blog/the-ai-vulnerabilities-nobody-checks-until-something-breaks
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #WebSecurity

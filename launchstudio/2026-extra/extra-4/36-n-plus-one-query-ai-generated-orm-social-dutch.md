@@ -15,6 +15,6 @@ Bij **LaunchStudio** is prestatieprofilering op basis van een realistisch datavo
 
 Haar resultaat: hetzelfde dashboard dat 14 seconden duurde bij 4.000 records, laadt nu in minder dan 400 milliseconden. 🚀
 
-👉 Gebruik onze rekenmachine om een prestatie- en databasebeoordeling voor uw app te bepalen: [Link naar artikel]
+👉 Gebruik onze rekenmachine om een prestatie- en databasebeoordeling voor uw app te bepalen: https://launchstudio.eu/nl/blog/n-plus-one-query-ai-generated-orm
 
 #AINativeFounder #LaunchStudio #Manifera #DatabasePerformance #ORMOptimization

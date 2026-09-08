@@ -15,6 +15,6 @@ De oplossing — AI-vriendelijke CI/CD: ✅
 
 Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, bouwen we deze pipeline standaard in. Zijn resultaat: 2 grote promptfouten afgevangen vóórdat ze ooit een klant bereikten. 🛡️🚀
 
-👉 Lees wat er anders is aan het uitrollen van AI-applicaties: [Link naar artikel]
+👉 Lees wat er anders is aan het uitrollen van AI-applicaties: https://launchstudio.eu/nl/blog/cicd-ai-applications-deploying-ml-models
 
 #CICD #LaunchStudio #Manifera #AINativeFounder #DevOps #SaaS #Cursor #NextJS #TechFounders #StartupOpschalen

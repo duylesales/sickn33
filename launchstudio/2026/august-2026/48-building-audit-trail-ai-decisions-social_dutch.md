@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type audit-architectuur en RAG-transpar
 
 Sadies bestelplatform werd volledig transparant: Fouten konden direct worden geanalyseerd en verholpen, wat €5.000 aan onjuiste bestellingen bespaarde. (€1.600 (Audit Logging Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/building-audit-trail-ai-decisions
 
 #LaunchStudio #Manifera #AISaaS #AuditTrail #ExplainableAI #RAG #EUAIAct #Compliance #EnterpriseAI #TechFounders #StartupOpschalen

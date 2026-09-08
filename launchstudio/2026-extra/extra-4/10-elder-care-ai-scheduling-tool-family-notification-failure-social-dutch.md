@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies wat onze CEO Herre Roelevink bedoelt als hij
 
 Zijn resultaat: gezinnen ontvangen nu een melding voor elke materiële wijziging in een gepland bezoek, waardoor de kloof wordt gedicht tussen wat de kalender laat zien en wat er daadwerkelijk is gebeurd. 🚀
 
-👉 Bouwt u vertrouwenskritische planningssoftware? Bekijk hoe ons beoordelingsproces werkt: [Link naar artikel]
+👉 Bouwt u vertrouwenskritische planningssoftware? Bekijk hoe ons beoordelingsproces werkt: https://launchstudio.eu/nl/blog/elder-care-ai-scheduling-tool-family-notification-failure
 
 #AINativeFounder #LaunchStudio #Manifera #ElderCareTech #AITrust

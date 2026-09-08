@@ -12,6 +12,6 @@
 
 "In God we trust; all others must bring data." Bring data, not anecdotes. 📊
 
-👉 Read our full deep dive on outsourced engineering teams for Boxtel companies: [Link to article]
+👉 Read our full deep dive on outsourced engineering teams for Boxtel companies: https://www.manifera.com/blog/outsourced-engineering-team-boxtel
 
 #Boxtel #NoordBrabant #VPEngineering #OutsourcedEngineering #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about eu ai act hiring: [Link to article]
+👉 Retire all 3 biggest myths about eu ai act hiring: https://www.manifera.com/blog/eu-ai-act-hiring-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

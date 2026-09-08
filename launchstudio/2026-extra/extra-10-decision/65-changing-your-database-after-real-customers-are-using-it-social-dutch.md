@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), begeleiden 
 
 💡 Zo lag Rittenboek van Lieke Groothuis 9 minuten plat omdat een index op 2,4 miljoen ritten de database vergrendelde. Na onze gefaseerde aanpak migreerden 3.100 afwijkende adressen geruisloos zonder 1 seconde downtime.
 
-👉 Hoe veilig rolt u vandaag een database-wijziging uit? [Link naar artikel]
+👉 Hoe veilig rolt u vandaag een database-wijziging uit? https://launchstudio.eu/nl/blog/changing-your-database-after-real-customers-are-using-it
 
 #DatabaseMigration #PostgreSQL #ZeroDowntime #DevOps #LaunchStudio #Manifera

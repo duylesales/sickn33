@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on app development specialist maastricht: [Link to article]
+👉 Read our full deep dive on app development specialist maastricht: https://www.manifera.com/blog/app-development-specialist-maastricht
 
 #Maastricht #Brightlands #Limburg #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

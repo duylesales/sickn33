@@ -15,6 +15,6 @@ Bij **LaunchStudio** volgt het engineeringteam van Manifera — vertrouwd door z
 
 Zijn resultaat: RouteMeters multi-rol-login heeft nu geautomatiseerde testdekking die de oorspronkelijke breuk zou hebben opgevangen voordat een klant dat deed. 🚀
 
-👉 Onlangs halverwege een project van AI-codeertool gewisseld? Laat uw prototype gratis beoordelen voordat u erachter komt wat er kapot is: [Link naar artikel]
+👉 Onlangs halverwege een project van AI-codeertool gewisseld? Laat uw prototype gratis beoordelen voordat u erachter komt wat er kapot is: https://launchstudio.eu/nl/blog/lovable-bolt-cursor-feature-timeline
 
 #AINativeFounder #LaunchStudio #Manifera #AICodingTools #ToolMigration

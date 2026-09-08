@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen wij btw-bepaling als een vaste checklist, geen g
 
 Zijn resultaat: FactuurFlow factureert nu correct in elk EU-land waarin het actief is, met een audittrail die een accountant daadwerkelijk kan ondertekenen. 🚀
 
-👉 Verkoopt u over EU-grenzen heen? Laat uw factureringslogica beoordelen vóór de volgende driemaandelijkse aangifte: [Link naar artikel]
+👉 Verkoopt u over EU-grenzen heen? Laat uw factureringslogica beoordelen vóór de volgende driemaandelijkse aangifte: https://launchstudio.eu/nl/blog/multi-currency-vat-ai-saas-eu
 
 #AINativeFounder #LaunchStudio #Manifera #EUVAT #SaaSFounder

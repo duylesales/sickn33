@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: twee audits van €650 herschaalden een project van €9.000 naar een realistische scope van €11.200, waarna de winnende partner het zevengewekenstraject naadloos uitvoerde onder haar eigen bureaumerk. 🚀
 
-👉 Breng één echt klantproject in als betaalde pilot: [Link naar artikel]
+👉 Breng één echt klantproject in als betaalde pilot: https://launchstudio.eu/nl/blog/moet-u-eerst-een-kleine-betaalde-pilot-draaien-voor-het-volledige-traject
 
 #SoftwareOntwikkeling #WhiteLabel #AgencyGroei #CodeAudit #LaunchStudio #Manifera

@@ -12,6 +12,6 @@ Your site went down for 40 minutes on Black Friday. You pulled the contract for 
 
 Read the SLA like you'll need to enforce it — because eventually, you will. 📋
 
-👉 Read our full deep dive on what web app performance SLAs should measure: [Link to article]
+👉 Read our full deep dive on what web app performance SLAs should measure: https://www.manifera.com/blog/web-app-performance-slas-what-to-actually-measure
 
 #ITManager #SLA #WebPerformance #Uptime #WebDevelopment #Manifera

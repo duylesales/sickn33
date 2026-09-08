@@ -14,6 +14,6 @@ At **LaunchStudio**, we've guided 160+ delivered projects through this exact arc
 
 For Lily, her non-technical team now updates prompts in real time, cutting testing cycles from days to seconds. 🚀
 
-👉 Get the full story: [Link to article]
+👉 Get the full story: https://launchstudio.eu/en/blog/designing-prompts-as-code-configuration-pattern
 
 #AINativeFounder #LaunchStudio #Manifera #PromptEngineering #ConfigAsCode

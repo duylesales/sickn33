@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on when cms stops being enough: [Link to article]
+👉 Read our full guide on when cms stops being enough: https://www.manifera.com/blog/when-cms-stops-being-enough
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

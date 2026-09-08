@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See our complete breakdown on single meeting predicts partnership success: [Link to article]
+👉 See our complete breakdown on single meeting predicts partnership success: https://www.manifera.com/blog/single-meeting-predicts-partnership-success
 
 #DedicatedTeam #OffshoreDevelopment #TechLeadership #SoftwareEngineering #CTO #Manifera

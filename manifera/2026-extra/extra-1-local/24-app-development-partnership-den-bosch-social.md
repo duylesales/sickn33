@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on app development partnership den bosch: [Link to article]
+👉 Read our full deep dive on app development partnership den bosch: https://www.manifera.com/blog/app-development-partnership-den-bosch
 
 #DenBosch #DataCity #NoordBrabant #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

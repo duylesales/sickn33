@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Their result: Rondje launched eighteen days later with nine paying clubs, and Tim reused the patterns himself the next month unprompted. 🚀
 
-👉 Send your prototype link for a free look: [Link to article]
+👉 Send your prototype link for a free look: https://launchstudio.eu/en/blog/when-your-co-founder-says-we-can-build-it-ourselves
 
 #IndieHacker #FounderLife #LaunchStudio #Manifera #AICoding #StartupGrowth

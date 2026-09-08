@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen onze in Amsterdam gevestigde technici — gesteu
 
 Zijn resultaat: GebruikersGrip handhaaft nu autorisatiecontroles aan de serverzijde bij elk lid- en betalingsrecord, specifiek getest tegen de directe-verzoek-omzeiling die sinds de lancering open had gestaan. 🚀
 
-👉 Benieuwd of de rollen in uw app worden afgedwongen of alleen anders worden weergegeven? Boek een gratis kennismakingsgesprek: [Link naar artikel]
+👉 Benieuwd of de rollen in uw app worden afgedwongen of alleen anders worden weergegeven? Boek een gratis kennismakingsgesprek: https://launchstudio.eu/nl/blog/user-ai-vs-ai-user-management
 
 #AINativeFounder #LaunchStudio #Manifera #UserManagement #AccessControl

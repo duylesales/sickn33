@@ -14,6 +14,6 @@ Bij **LaunchStudio** passen we sinds 2014 deze discipline toe — dynamische tem
 
 Charlottes factuurclassificatie werd 100% deterministisch, volledig conform handmatige boekhoudregels. (€800 (API Prompt Tuning Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw LLM-temperatuur optimaal instelt: [Link naar artikel]
+👉 Ontdek hoe u uw LLM-temperatuur optimaal instelt: https://launchstudio.eu/nl/blog/managing-llm-temperature-predictable-outputs
 
 #AINativeFounder #LaunchStudio #Manifera #LLMTemperature #AIReliability #PromptEngineering #DataExtraction #Zod #AISaaS #StartupOpschalen

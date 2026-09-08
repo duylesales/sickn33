@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Renata's platform behaalde productie-gereedheid: haar prompt-loggingcontrole slaagde bij de steekproef van haar auditor bij de eerste review, zonder vervolgbewijsverzoeken. (€ 4.800 (Enterprise Hardening Pakket) — compliance-klare logging gebouwd en geverifieerd in 12 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-partner-soc2-prompt-logging-audit-trails
 
 #LaunchStudio #Manifera #AISaaS #SOC2Compliance #AuditTrail

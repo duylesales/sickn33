@@ -15,6 +15,6 @@ Bij **LaunchStudio** besteden onze technici hun dagen aan het lezen van precies 
 
 Bram's resultaat: queryversteviging en validatie over de hele app, voltooid in 5 werkdagen, waarbij de exacte aanval met misvormde invoer nu wordt opgevangen voordat deze de database bereikt. 🚀
 
-👉 Hebt u uw eigen app honderd keer getest maar nooit geprobeerd hem te breken? Dit is wat dat mist: [Link naar artikel]
+👉 Hebt u uw eigen app honderd keer getest maar nooit geprobeerd hem te breken? Dit is wat dat mist: https://launchstudio.eu/nl/blog/the-ai-security-vulnerabilities-hiding-in-your-working
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #InputValidation

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type AI-architectuurprobleem al sinds 2014 o
 
 De resultaten van ClauseIQ na de herbouw: ClauseIQ citeert nu voor 100% van de gegenereerde clausules het exacte bronsjabloon en verlaagde de gemiddelde kosten per query met 61% ten opzichte van het fine-getunede model. (€ 3.200, Launch & Grow Pakket — uitgerold in 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/rag-vs-fine-tuning-cto-decision-framework
 
 #LaunchStudio #Manifera #AISaaS #RAGvsFineTuning #LegalTech

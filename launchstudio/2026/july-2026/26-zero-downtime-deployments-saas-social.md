@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Ella's application achieved production readiness: Ella allowed daily updates without disrupting active client sessions. (€1,400 (CI/CD Pipeline Package) — production-ready and deployed in 5 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/zero-downtime-deployments-saas
 
 #LaunchStudio #Manifera #AISaaS #ZeroDowntimeDeployme #TechFounders

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 120+ engineers, we make sure the under
 
 His result: an updated policy and consent flow closed the deal three weeks later, with every new feature now triggering a check. 🚀
 
-👉 Describe your project — a reply within one day on what your policy needs: [Link to article]
+👉 Describe your project — a reply within one day on what your policy needs: https://launchstudio.eu/en/blog/terms-and-privacy-policy-what-you-can-write-yourself
 
 #AINativeFounder #PrivacyPolicy #LaunchStudio #Manifera #StartupLegal #FounderLife

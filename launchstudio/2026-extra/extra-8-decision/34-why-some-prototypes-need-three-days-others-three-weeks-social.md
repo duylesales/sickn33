@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: budgeted for 3 weeks based on a friend's app, actually needed 3 days. 🚀
 
-👉 Get your real timeline, not a guess: [Link to article]
+👉 Get your real timeline, not a guess: https://launchstudio.eu/en/blog/why-some-prototypes-need-three-days-others-three-weeks
 
 #SaaSFounder #MVP #ProductionReady #LaunchStudio #Manifera #AICoding

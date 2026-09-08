@@ -15,6 +15,6 @@ Bij **LaunchStudio** zorgt Manifera's 11+ jaar ervaring in productie-engineering
 
 Mattias' resultaat: zijn database draait nu op productiekwaliteit infrastructuur met connection pooling, klaar voor de volgende verkeerspiek in plaats van erdoor gebroken te worden. 🚀
 
-👉 Draait u uw AI-app nog steeds op gratis tier infrastructuur?: [Link naar artikel]
+👉 Draait u uw AI-app nog steeds op gratis tier infrastructuur?: https://launchstudio.eu/nl/blog/why-free-ai-software-gets-expensive-the-moment
 
 #AINativeFounder #LaunchStudio #Manifera #FreeTierFail #SaaSInfrastructure

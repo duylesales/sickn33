@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: a 45-complaint test set across all 8 categories, staged rollout at 10% of volume, and the evaluation workflow delivered in 2 business days. 🚀
 
-👉 Find out if your last prompt change actually helped: [Link to article]
+👉 Find out if your last prompt change actually helped: https://launchstudio.eu/en/blog/evaluating-an-ai-feature-without-a-data-team
 
 #AIEval #PromptEngineering #SaaS #IndieHacker #LaunchStudio #Manifera

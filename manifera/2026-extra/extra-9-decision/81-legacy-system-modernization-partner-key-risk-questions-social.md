@@ -12,6 +12,6 @@ Gartner has repeatedly flagged that most large-scale legacy modernization initia
 
 The architecture of the migration matters more than the tech stack on the slide. 🧭
 
-👉 Read our full deep dive on choosing a legacy modernization partner: [Link to article]
+👉 Read our full deep dive on choosing a legacy modernization partner: https://www.manifera.com/blog/legacy-system-modernization-partner-key-risk-questions
 
 #Founder #LegacySystemModernization #SoftwareModernization #TechDueDiligence #VendorSelection #Manifera

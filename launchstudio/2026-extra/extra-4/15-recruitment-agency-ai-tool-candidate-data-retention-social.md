@@ -15,6 +15,6 @@ At **LaunchStudio**, data governance work like this is a recurring theme across 
 
 Pepijn's result: KandidaatBeheer now automatically manages retention across its entire candidate database, and the agency passed its subsequent data protection review with the retention system cited as a specific strength. 🚀
 
-👉 Not sure what your candidate database is actually holding onto? Send us your prototype link for an honest read: [Link to article]
+👉 Not sure what your candidate database is actually holding onto? Send us your prototype link for an honest read: https://launchstudio.eu/en/blog/recruitment-agency-ai-tool-candidate-data-retention
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #RecruitmentTech

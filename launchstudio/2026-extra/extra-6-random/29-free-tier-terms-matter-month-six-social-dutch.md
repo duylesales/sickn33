@@ -15,6 +15,6 @@ Bij **LaunchStudio** putten onze engineers uit het belangrijkste engineeringcent
 
 Haar resultaat: de storingen van PlanStroom stopten binnen enkele uren na de migratie, en de app verwerkte zijn tweede lanceerpush de volgende maand zonder enig incident met rate limits. 🚀
 
-👉 Draait de kernfunctie van uw app nog steeds op een AI-model met een gratis laag, terwijl echte klanten eraan komen: [Link naar artikel]
+👉 Draait de kernfunctie van uw app nog steeds op een AI-model met een gratis laag, terwijl echte klanten eraan komen: https://launchstudio.eu/nl/blog/free-tier-terms-matter-month-six
 
 #AINativeFounder #LaunchStudio #Manifera #FreeTierRisk #ProductionReady

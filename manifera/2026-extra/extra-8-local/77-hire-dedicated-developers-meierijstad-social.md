@@ -12,6 +12,6 @@
 
 Stop competing with Eindhoven for the same eleven candidates. 🎯
 
-👉 Read our full deep dive on hiring dedicated developers in Meierijstad: [Link to article]
+👉 Read our full deep dive on hiring dedicated developers in Meierijstad: https://www.manifera.com/blog/hire-dedicated-developers-meierijstad
 
 #Meierijstad #NoordBrabant #Brainport #CTO #DedicatedDevelopers #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 160+ delivered projects give our engineers regul
 
 GrensVracht's result: its German carrier segment grew from one to seven customers over the following two months, with compliant invoicing cited directly by two of them as a condition of signing. 🚀
 
-👉 Serving customers on both sides of a border? Get your invoicing logic checked before it costs you a signature: [Link to article]
+👉 Serving customers on both sides of a border? Get your invoicing logic checked before it costs you a signature: https://launchstudio.eu/en/blog/27-build-an-app-with-ai-venlo
 
 #AINativeFounder #LaunchStudio #Manifera #CrossBorderVAT #Venlo

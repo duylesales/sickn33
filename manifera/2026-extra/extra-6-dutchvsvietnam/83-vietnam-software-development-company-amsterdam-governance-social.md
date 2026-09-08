@@ -12,6 +12,6 @@
 
 These risks don't show up on the initial proposal. They show up 18 months in, when you have the least budget flexibility to fix them. 🛡️
 
-👉 Read our full deep dive on vietnam software development company amsterdam governance: [Link to article]
+👉 Read our full deep dive on vietnam software development company amsterdam governance: https://www.manifera.com/blog/vietnam-software-development-company-amsterdam-governance
 
 #Amsterdam #CFO #VietnamSoftwareDevelopment #RiskManagement #Manifera

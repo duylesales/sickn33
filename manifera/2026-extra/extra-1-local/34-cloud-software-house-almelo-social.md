@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on cloud software house almelo: [Link to article]
+👉 Read our full deep dive on cloud software house almelo: https://www.manifera.com/blog/cloud-software-house-almelo
 
 #Almelo #Twente #Overijssel #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

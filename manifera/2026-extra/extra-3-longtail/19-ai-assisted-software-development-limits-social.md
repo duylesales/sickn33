@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire the biggest myths about ai assisted software development limits: [Link to article]
+👉 Retire the biggest myths about ai assisted software development limits: https://www.manifera.com/blog/ai-assisted-software-development-limits
 
 #AIinTech #SoftwareEngineering #TechLeadership #DevOps #CustomSoftware #Manifera

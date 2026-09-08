@@ -12,6 +12,6 @@
 
 The contract model isn't paperwork — it's the operating structure your team lives inside for the next several quarters. 🧭
 
-👉 Read our full deep dive on dedicated teams vs. staff augmentation: [Link to article]
+👉 Read our full deep dive on dedicated teams vs. staff augmentation: https://www.manifera.com/blog/dedicated-development-team-or-staff-augmentation-choosing-the-right-contract-model
 
 #ITManager #StaffAugmentation #DedicatedDevelopmentTeam #SoftwareOutsourcing #ITTeamScaling #Manifera

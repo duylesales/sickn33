@@ -12,6 +12,6 @@ A buyer on your marketplace needs to see contract pricing negotiated six months 
 
 The storefront is the easy 20% — the pricing, payments, and verification logic is where B2B marketplace builds actually succeed or fail. 🎯
 
-👉 Read our full deep dive on choosing a vendor for a B2B marketplace platform: [Link to article]
+👉 Read our full deep dive on choosing a vendor for a B2B marketplace platform: https://www.manifera.com/blog/choosing-a-vendor-for-a-b2b-marketplace-platform
 
 #B2BMarketplace #MarketplaceDevelopment #Founders #StripeConnect #SaaS #Manifera

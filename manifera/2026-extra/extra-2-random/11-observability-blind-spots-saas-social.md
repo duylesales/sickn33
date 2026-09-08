@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on observability blind spots saas: [Link to article]
+👉 Read our full deep dive on observability blind spots saas: https://www.manifera.com/blog/observability-blind-spots-saas
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders document exactly the "why" layer AI-genera
 
 His result: the key decisions across BestelBeheer's codebase are now documented, the reintroduced fix was restored, and a lightweight "document the why" practice is now standard going forward. 🚀
 
-👉 Is your codebase actually documented, or just described? Find out: [Link to article]
+👉 Is your codebase actually documented, or just described? Find out: https://launchstudio.eu/en/blog/ai-generated-readme-files-not-documentation-you-think
 
 #AINativeFounder #LaunchStudio #Manifera #TechDebt #CodeQuality

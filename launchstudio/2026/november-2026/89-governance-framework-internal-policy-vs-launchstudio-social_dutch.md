@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Renata's vervolggesprek omvatte een live demo van audit-logs in plaats van een verdedigende uitleg, en de klant ging dezelfde week door naar contractbeoordeling. (€3.400 (Relaunch & Scale Pakket) — productieklaar en uitgerold in 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/governance-framework-internal-policy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #AIGovernance #DataCompliance

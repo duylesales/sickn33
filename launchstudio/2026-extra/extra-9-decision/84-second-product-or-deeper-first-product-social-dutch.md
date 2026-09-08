@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ succesvol opgeleverde pro
 
 Haar resultaat: Femke stelde haar aankondiging vijf weken uit, ontkoppelde de backend en lanceerde vlekkeloos — haar dérde product stond acht maanden later binnen twee weken live. 🚀
 
-👉 Deel uw prototype voor een kosteloze architectuurbeoordeling: [Link naar artikel]
+👉 Deel uw prototype voor een kosteloze architectuurbeoordeling: https://launchstudio.eu/nl/blog/second-product-or-deeper-first-product
 
 #SaaS #ProductStrategie #ScaleUp #SoftwareArchitectuur #LaunchStudio #Manifera

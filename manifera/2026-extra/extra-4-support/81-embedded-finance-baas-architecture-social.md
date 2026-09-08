@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on embedded finance baas: [Link to article]
+👉 Read our full architectural deep dive on embedded finance baas: https://www.manifera.com/blog/embedded-finance-baas-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

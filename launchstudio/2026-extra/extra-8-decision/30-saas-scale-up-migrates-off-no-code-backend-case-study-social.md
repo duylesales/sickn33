@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ac
 
 His result: single planned cutover under two hours, faster dashboards immediately, data isolation approved on the next review. 🚀
 
-👉 Tell us where your current backend is starting to strain: [Link to article]
+👉 Tell us where your current backend is starting to strain: https://launchstudio.eu/en/blog/saas-scale-up-migrates-off-no-code-backend-case-study
 
 #SaaSScaleUp #TechnicalDebt #LaunchStudio #Manifera #BackendMigration #SaaS

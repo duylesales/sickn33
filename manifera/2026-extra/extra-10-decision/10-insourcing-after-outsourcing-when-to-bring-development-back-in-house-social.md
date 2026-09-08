@@ -12,6 +12,6 @@ Two years into an outsourced engagement, someone on your leadership team asks wh
 
 Insourcing is right when scale, IP risk, or work stability actually changed — not when the driver is optics or an unexamined cost comparison. 🎯
 
-👉 Read our full deep dive on when to bring development back in-house: [Link to article]
+👉 Read our full deep dive on when to bring development back in-house: https://www.manifera.com/blog/insourcing-after-outsourcing-when-to-bring-development-back-in-house
 
 #CTO #Insourcing #SoftwareOutsourcing #TechLeadership #EngineeringTeams #Manifera

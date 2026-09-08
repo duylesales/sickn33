@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on recruitment realistic job preview: [Link to article]
+👉 Read our full guide on recruitment realistic job preview: https://www.manifera.com/blog/recruitment-app-realistic-job-preview
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

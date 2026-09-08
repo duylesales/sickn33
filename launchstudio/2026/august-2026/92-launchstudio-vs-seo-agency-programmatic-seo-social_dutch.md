@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type technische SEO-kloof al sinds 2014 op v
 
 Tobias' al geschreven contentstrategie werd eindelijk uitvoerbaar: 1.200+ pagina's geïndexeerd binnen zes weken, tegenover ongeveer 40 daarvoor. (€ 2.200 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-seo-agency-programmatic-seo
 
 #LaunchStudio #Manifera #AISaaS #TechnicalSEO #ProgrammaticSEO

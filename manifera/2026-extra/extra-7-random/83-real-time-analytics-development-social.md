@@ -12,6 +12,6 @@ Built a full streaming platform because "real-time" sounded like the obviously b
 
 Real-time is a requirement for some decisions and an expensive default for most others. ⚙️
 
-👉 Read our full deep dive on real-time analytics development: [Link to article]
+👉 Read our full deep dive on real-time analytics development: https://www.manifera.com/blog/real-time-analytics-development
 
 #RealTimeAnalytics #StreamingAnalytics #DataEngineering #CTO #Manifera

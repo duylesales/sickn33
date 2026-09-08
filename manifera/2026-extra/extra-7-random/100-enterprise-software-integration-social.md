@@ -12,6 +12,6 @@ Every integration project starts with a diagram: two clean boxes, one arrow. The
 
 Integration projects run over budget 50%+ of the time — almost always in the parts nobody scoped. 📊
 
-👉 Read our full deep dive on enterprise software integration: [Link to article]
+👉 Read our full deep dive on enterprise software integration: https://www.manifera.com/blog/enterprise-software-integration
 
 #EnterpriseIntegration #CTO #APIIntegration #Manifera

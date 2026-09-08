@@ -14,6 +14,6 @@ Bij **LaunchStudio** optimaliseren we sinds 2014 RAG- en data-infrastructuren vi
 
 LaunchStudio comprimeerde Emily's vectorstructuren en optimaliseerde metadata-indexen — haar maandelijkse Pinecone-kosten daalden met 65% terwijl de zoekkwaliteit hoog bleef. (€2.200 (Vector DB Tuning Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw vectordatabase-kosten verlaagt: [Link naar artikel]
+👉 Ontdek hoe u uw vectordatabase-kosten verlaagt: https://launchstudio.eu/nl/blog/hidden-costs-of-vector-databases-rag
 
 #AINativeFounder #LaunchStudio #Manifera #VectorDatabases #RAGCosts #pgvector #Pinecone #DatabaseOptimization #AISaaS #StartupOpschalen

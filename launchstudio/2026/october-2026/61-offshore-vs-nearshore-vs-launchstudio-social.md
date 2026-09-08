@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Amara's exact dashboard, map view, and driver onboarding flow shipped unchanged — RLS now scopes every shipment query to the authenticated carrier's own fleet. (€3,200 (Launch & Grow Package) — production-ready and deployed in 11 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/offshore-vs-nearshore-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #OffshoreVsNearshore #CustomSoftwareDevelopment

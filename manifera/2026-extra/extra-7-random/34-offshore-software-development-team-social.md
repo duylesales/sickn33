@@ -12,6 +12,6 @@
 
 We thought we had a skills problem. We actually had a decision-rights problem. Once we defined what they could decide, the same team moved twice as fast. 🛡️
 
-👉 Read our full deep dive on offshore software development team: [Link to article]
+👉 Read our full deep dive on offshore software development team: https://www.manifera.com/blog/offshore-software-development-team
 
 #OffshoreTeam #VPEngineering #Outsourcing #Manifera

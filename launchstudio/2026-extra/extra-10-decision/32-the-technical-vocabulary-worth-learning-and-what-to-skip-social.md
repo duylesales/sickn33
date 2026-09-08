@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Bram's post-launch update calls dropped from thirty minutes of clarifying questions to under ten, and the multi-location migration shipped without incident. 🚀
 
-👉 Get the only glossary you actually need: [Link to article]
+👉 Get the only glossary you actually need: https://launchstudio.eu/en/blog/the-technical-vocabulary-worth-learning-and-what-to-skip
 
 #NonTechnicalFounder #SaaS #ProductDevelopment #FounderLife #LaunchStudio #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 GPU utilization rose to 74% during peak hours and transcription latency dropped by more than half. (€4,200 (Relaunch & Scale Package) — production-ready and deployed in 11 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/gpu-infrastructure-reserved-instances-vs-managed
 
 #LaunchStudio #Manifera #AISaaS #GPUInfrastructure #AIInference

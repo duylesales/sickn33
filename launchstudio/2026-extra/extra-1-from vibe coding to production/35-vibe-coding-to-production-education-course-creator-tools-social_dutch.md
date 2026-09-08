@@ -16,6 +16,6 @@ Bij **LaunchStudio** verharden we onderwijsplatforms met specifieke focus op con
 
 Zijn resultaat: een gat gedicht dat zijn hele betaalde product gratis had weggegeven. 🚀
 
-👉 Laat testen tegen wat daadwerkelijk jouw omzetmodel beschermt: [Link naar artikel]
+👉 Laat testen tegen wat daadwerkelijk jouw omzetmodel beschermt: https://launchstudio.eu/nl/blog/vibe-coding-to-production-education-course-creator-tools
 
 #EdTech #LaunchStudio #Manifera #AINativeFounder #VibeCoding

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 GPU-benutting steeg naar 74% tijdens piekuren en de transcriptielatentie daalde met meer dan de helft. (€4.200 (Relaunch & Scale Pakket) — productieklaar en uitgerold in 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/gpu-infrastructure-reserved-instances-vs-managed
 
 #LaunchStudio #Manifera #AISaaS #GPUInfrastructure #AIInference

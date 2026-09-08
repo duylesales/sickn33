@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Adversarial testing confirmed zero cross-clinic data access under any tested query pattern (€4,100 (Enterprise Hardening Package) — completed in 13 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/rls-vs-application-layer-authorization-multi-tenant
 
 #LaunchStudio #Manifera #AISaaS #RowLevelSecurity #MultiTenant

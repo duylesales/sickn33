@@ -16,6 +16,6 @@ Bij **LaunchStudio** reviewen en verharden we logging specifiek voor gevoelige-d
 
 Zijn resultaat: maanden platte-tekst-wachtwoordpogingen gezuiverd, correcte redactie geïmplementeerd — een gat dat nooit ergens zichtbaar was bij normaal gebruik. 🚀
 
-👉 Laat jouw logs controleren op wat er niet in zou moeten zitten: [Link naar artikel]
+👉 Laat jouw logs controleren op wat er niet in zou moeten zitten: https://launchstudio.eu/nl/blog/logging-without-leaking-what-belongs-in-your-logs
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #AISecure

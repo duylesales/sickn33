@@ -12,6 +12,6 @@
 
 Get the right architecture decisions reviewed faster than an under-staffed in-house team making them alone. 🛡️
 
-👉 Read our full deep dive on saas development outsourcing in house or offshore: [Link to article]
+👉 Read our full deep dive on saas development outsourcing in house or offshore: https://www.manifera.com/blog/saas-development-outsourcing-in-house-or-offshore
 
 #SaaSDevelopment #Amsterdam #Vietnam #CTO #MultiTenant #Manifera

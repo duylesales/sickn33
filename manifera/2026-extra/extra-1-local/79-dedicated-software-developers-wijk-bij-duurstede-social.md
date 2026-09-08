@@ -12,6 +12,6 @@
 
 Small team. Real math. Simple decision. 🛡️
 
-👉 Read our full deep dive on dedicated software developers wijk bij duurstede: [Link to article]
+👉 Read our full deep dive on dedicated software developers wijk bij duurstede: https://www.manifera.com/blog/dedicated-software-developers-wijk-bij-duurstede
 
 #WijkBijDuurstede #Utrecht #CFO #SmallTeamROI #DedicatedDevelopers #Manifera

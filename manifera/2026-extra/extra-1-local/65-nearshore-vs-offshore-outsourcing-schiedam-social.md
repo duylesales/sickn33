@@ -12,6 +12,6 @@
 
 Geography is the wrong first question. Governance is the right one. 🛡️
 
-👉 Read our full deep dive on nearshore vs offshore outsourcing schiedam: [Link to article]
+👉 Read our full deep dive on nearshore vs offshore outsourcing schiedam: https://www.manifera.com/blog/nearshore-vs-offshore-outsourcing-schiedam
 
 #Schiedam #ZuidHolland #Nearshore #OffshoreDevelopment #CFO #OutsourcingStrategy #Manifera

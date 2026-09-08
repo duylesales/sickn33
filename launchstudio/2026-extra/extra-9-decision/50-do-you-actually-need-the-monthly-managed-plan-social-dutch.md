@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat in de praktijk: na één kostbare nachtelijke storing stapte een oprichter over — een volgende verkeerspiek werd automatisch opgevangen voordat ook maar één klant er iets van merkte. 🚀
 
-👉 Maak de nuchtere vergelijking met de LaunchStudio prijscalculator: [Link naar artikel]
+👉 Maak de nuchtere vergelijking met de LaunchStudio prijscalculator: https://launchstudio.eu/nl/blog/do-you-actually-need-the-monthly-managed-plan
 
 #SaaS #ScaleUp #ManagedHosting #StartupGroei #LaunchStudio #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on bus factor code review risk: [Link to article]
+👉 Read our full deep dive on bus factor code review risk: https://www.manifera.com/blog/bus-factor-code-review-risk
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

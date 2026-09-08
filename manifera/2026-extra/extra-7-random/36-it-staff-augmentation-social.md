@@ -12,6 +12,6 @@
 
 We kept adding people to a stretched team, and it kept making things worse. What we needed was a team that could own something end to end. 🛡️
 
-👉 Read our full deep dive on it staff augmentation: [Link to article]
+👉 Read our full deep dive on it staff augmentation: https://www.manifera.com/blog/it-staff-augmentation
 
 #StaffAugmentation #VPEngineering #ITStaffing #Manifera

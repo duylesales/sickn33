@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type integratieprobleem al sinds 2014 op via
 
 De geautomatiseerde oplossingsdekking steeg van 15% naar 52% van de repetitieve tickets — meer dan 3x de interne poging. (€ 2.100 (Launch & Grow Pakket) — 8 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/intercom-automation-in-house-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #Intercom #CustomerSupport

@@ -12,6 +12,6 @@
 
 The people who built it took all the "why" with them. We spent months reconstructing what an afternoon of writing would have preserved. 🛡️
 
-👉 Read our full deep dive on web application development: [Link to article]
+👉 Read our full deep dive on web application development: https://www.manifera.com/blog/web-application-development
 
 #WebApplicationDevelopment #CTO #SoftwareArchitecture #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Tomas schakelde in plaats daarvan LaunchStudio in: alle 23 bevindingen opgelost, en hij slaagde bij de volgende poging voor zijn SOC 2 Type I-audit, waarmee hij de enterprise-deal sloot die erop had gewacht. (€ 6.200 (Enterprise Hardening Pakket) — 15 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/soc2-audit-firm-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #SOC2 #Compliance

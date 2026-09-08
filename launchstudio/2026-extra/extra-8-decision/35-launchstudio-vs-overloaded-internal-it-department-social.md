@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: company-wide rollout live in 2 weeks, zero internal engineering hours pulled from the migration already on fire. 🚀
 
-👉 Get a scope your IT team can review before anything starts: [Link to article]
+👉 Get a scope your IT team can review before anything starts: https://launchstudio.eu/en/blog/launchstudio-vs-overloaded-internal-it-department
 
 #SaaSFounder #InternalIT #EngineeringBacklog #LaunchStudio #Manifera #ScaleUp

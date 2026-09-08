@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a written retention policy per data type, soft deletion with a 30-day window, and a monitored purge job — storage fell roughly 70% and list queries returned to well under a second. 🚀
 
-👉 Find out what your product is holding onto for no reason: [Link to article]
+👉 Find out what your product is holding onto for no reason: https://launchstudio.eu/en/blog/archiving-versus-deleting-what-to-do-with-old-data
 
 #SaaS #DataRetention #GDPR #FounderLife #LaunchStudio #Manifera

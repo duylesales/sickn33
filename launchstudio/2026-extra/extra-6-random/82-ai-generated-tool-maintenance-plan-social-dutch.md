@@ -15,6 +15,6 @@ Bij **LaunchStudio** voert ons Amsterdamse team precies dit soort onderhoudsrond
 
 Haar resultaat: PlantRooster heeft nu een dagelijkse geautomatiseerde checkout-controle en een maandelijkse afhankelijkheidsbeoordeling op de kalender, zodat de volgende storing binnen uren wordt opgemerkt, niet weken. 🚀
 
-👉 Nog geen onderhoudsplan geschreven voor uw door AI gebouwde tool? Bekijk wat een onderhoudsronde zou kosten: [Link naar artikel]
+👉 Nog geen onderhoudsplan geschreven voor uw door AI gebouwde tool? Bekijk wat een onderhoudsronde zou kosten: https://launchstudio.eu/nl/blog/ai-generated-tool-maintenance-plan
 
 #AINativeFounder #LaunchStudio #Manifera #ProductMaintenance #AIBuiltApps

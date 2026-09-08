@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 11+ years of production engineering means we rev
 
 MarketWeigh now processes all payments through a secured backend with zero client-exposed credentials, verified in a follow-up scan. 🚀
 
-👉 Built your SaaS with Bolt AI? Scan for exposed keys before a stranger finds them: [Link to article]
+👉 Built your SaaS with Bolt AI? Scan for exposed keys before a stranger finds them: https://launchstudio.eu/en/blog/bolt-ai-alkmaar
 
 #AINativeFounder #LaunchStudio #Manifera #BoltAI #Alkmaar

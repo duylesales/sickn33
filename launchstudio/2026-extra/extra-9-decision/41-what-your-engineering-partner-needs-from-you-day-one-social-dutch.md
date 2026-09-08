@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: volledige toegang paraat om 09:00 uur op dag één, Mollie vier dagen eerder live getest, en livegang exact op de geplande datum. 🚀
 
-👉 Stuur ons uw prototype-link voor gratis feedback over wat al gekoppeld is en wat nog ontbreekt: [Link naar artikel]
+👉 Stuur ons uw prototype-link voor gratis feedback over wat al gekoppeld is en wat nog ontbreekt: https://launchstudio.eu/nl/blog/what-your-engineering-partner-needs-from-you-day-one
 
 #AIOprichter #LovableNaarProductie #LaunchStudio #Manifera #StartupOps #SaaSLaunch

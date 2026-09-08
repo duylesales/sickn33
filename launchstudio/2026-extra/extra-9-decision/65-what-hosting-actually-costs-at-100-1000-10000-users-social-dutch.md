@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: het routeren van documentlevering via een CDN halveerde de bandbreedtekosten van Notarize in één cyclus, zonder enige productaanpassing. 🚀
 
-👉 Beschrijf uw project en ontvang binnen één dag een realistische infrastructuurinschatting: [Link naar artikel]
+👉 Beschrijf uw project en ontvang binnen één dag een realistische infrastructuurinschatting: https://launchstudio.eu/nl/blog/what-hosting-actually-costs-at-100-1000-10000-users
 
 #IndieHacker #SaaS #HostingKosten #CloudInfrastructuur #LaunchStudio #Manifera

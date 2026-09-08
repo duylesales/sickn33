@@ -14,6 +14,6 @@ At **LaunchStudio**, search quality is a standard usability check when preparing
 
 Her result: store staff searching under real, messy, time-pressured conditions now reliably find what's actually in stock. 🚀
 
-👉 Never typed a deliberate typo into your own app's search bar? See what a proper fix costs: [Link to article]
+👉 Never typed a deliberate typo into your own app's search bar? See what a proper fix costs: https://launchstudio.eu/en/blog/search-autocomplete-ai-generated-app-relevance
 
 #AINativeFounder #LaunchStudio #Manifera #SearchUX #ProductQuality

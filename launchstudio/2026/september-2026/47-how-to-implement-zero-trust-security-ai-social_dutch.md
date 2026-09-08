@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 Zero-Trust infrastructuren via Mani
 
 LaunchStudio configureerde mTLS en beveiligde kanalen voor John — hij doorstond de security-audits en sloot succesvolle pilots met kredietunies. (€3.400 (Zero Trust Infrastructuur Pakket) — productieklaar en binnen 8 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u een Zero-Trust architectuur bouwt: [Link naar artikel]
+👉 Ontdek hoe u een Zero-Trust architectuur bouwt: https://launchstudio.eu/nl/blog/how-to-implement-zero-trust-security-ai
 
 #AINativeFounder #LaunchStudio #Manifera #ZeroTrust #AISecurity #mTLS #CyberSecurity #CloudSecurity #AISaaS #StartupOpschalen

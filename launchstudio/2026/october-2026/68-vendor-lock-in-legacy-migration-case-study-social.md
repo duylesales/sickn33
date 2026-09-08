@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Adebayo migrated three clinics off the legacy vendor with zero data loss and launched a companion mobile app the old proprietary system could never have supported. (€4,200 (Relaunch & Scale Package) — migrated and launched in 15 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/vendor-lock-in-legacy-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #VendorLockIn #LegacyMigration

@@ -15,6 +15,6 @@ Bij **LaunchStudio** voegen we de multi-tenancy- en meetlaag toe onder de fronte
 
 Aleksandra's resultaat: tenant-afgebakende queries en geautomatiseerde verbruiksgebaseerde facturatie draaien nu over alle accounts — voltooid in 2 weken. 🚀
 
-👉 Werkt de demo geweldig bij één klant? Dit is wat er daadwerkelijk breekt bij klant twee: [Link naar artikel]
+👉 Werkt de demo geweldig bij één klant? Dit is wat er daadwerkelijk breekt bij klant twee: https://launchstudio.eu/nl/blog/what-an-ai-saas-platform-needs-beyond-the
 
 #AINativeFounder #LaunchStudio #Manifera #AISaaSPlatform #MultiTenant

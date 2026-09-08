@@ -12,6 +12,6 @@ Ask a vendor how they test for accessibility. "We run it through our scanner and
 
 The right signal isn't a zero-defect claim — it's a credible, documented process for finding and fixing defects. 🎯
 
-👉 Read our full deep dive on distinguishing real WCAG expertise from claimed expertise: [Link to article]
+👉 Read our full deep dive on distinguishing real WCAG expertise from claimed expertise: https://www.manifera.com/blog/accessibility-compliance-vendor-decision-wcag-expertise-thats-real-vs-claimed
 
 #ComplianceOfficer #WCAG22 #EuropeanAccessibilityAct #Accessibility #VendorSelection #Manifera

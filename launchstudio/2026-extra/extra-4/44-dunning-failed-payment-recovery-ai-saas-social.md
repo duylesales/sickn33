@@ -14,6 +14,6 @@ At **LaunchStudio**, dunning logic is one of the most common gaps we find auditi
 
 Her result: PlanPro recovered a substantial share of previously-lost renewals within the first month of the new dunning flow going live. 🚀
 
-👉 Never calculated how much of your churn is silent card failure? See what a billing resilience review covers: [Link to article]
+👉 Never calculated how much of your churn is silent card failure? See what a billing resilience review covers: https://launchstudio.eu/en/blog/dunning-failed-payment-recovery-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSBilling #ChurnPrevention

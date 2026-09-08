@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Niels's OpenAI spend returned to a predictable $150-220/month, and the next malformed document cost under $2 instead of a five-figure risk (€1,900 (Launch & Grow Package) — implemented in 7 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/unbounded-llm-retry-loops-cost-post-mortem
 
 #LaunchStudio #Manifera #AISaaS #LLMCosts #RetryLoop

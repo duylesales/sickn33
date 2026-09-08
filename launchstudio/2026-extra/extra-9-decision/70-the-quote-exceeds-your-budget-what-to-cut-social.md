@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 His result: launched on the essential scope for €2,850, within budget, and funded the deferred polish three months later. 🚀
 
-👉 Send us your quote from elsewhere and we'll show you, free, what's optional in it: [Link to article]
+👉 Send us your quote from elsewhere and we'll show you, free, what's optional in it: https://launchstudio.eu/en/blog/the-quote-exceeds-your-budget-what-to-cut
 
 #AINativeFounder #StartupBudget #LaunchStudio #Manifera #FounderLife #NoCode

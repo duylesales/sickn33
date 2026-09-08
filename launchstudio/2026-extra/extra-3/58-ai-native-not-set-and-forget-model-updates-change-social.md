@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders establish exactly this ongoing vigilance a
 
 Her result: SchrijfAssist's prompts re-tuned against the updated model to restore the expected tone, plus an ongoing review process triggered by future updates. 🚀
 
-👉 When did you last check whether your AI provider quietly changed what "working" produces? Get an ongoing process for catching drift before customers do: [Link to article]
+👉 When did you last check whether your AI provider quietly changed what "working" produces? Get an ongoing process for catching drift before customers do: https://launchstudio.eu/en/blog/ai-native-not-set-and-forget-model-updates-change
 
 #AINativeFounder #LaunchStudio #Manifera #AIOps #ModelDrift

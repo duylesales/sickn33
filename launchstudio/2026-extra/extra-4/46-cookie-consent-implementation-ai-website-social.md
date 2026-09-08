@@ -14,6 +14,6 @@ At **LaunchStudio**, we check cookie consent at the network level, not just the 
 
 Her result: StudioLicht's site now matches, at the network level, exactly what its banner promises. 🚀
 
-👉 Checked your own site's network requests against what your banner claims lately? See how we review it: [Link to article]
+👉 Checked your own site's network requests against what your banner claims lately? See how we review it: https://launchstudio.eu/en/blog/cookie-consent-implementation-ai-website
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #CookieConsent

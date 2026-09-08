@@ -16,6 +16,6 @@ Bij **LaunchStudio** slaan we de brug tussen het gemak van vibe coding en de har
 
 Martijns resultaat: Live in 8 werkdagen, €33.000 bespaard en 8 betalende vastgoedklanten aangesloten in maand 1. 🚀
 
-👉 Ontdek waarom wij uw prototype niet weggooien: [Link naar artikel]
+👉 Ontdek waarom wij uw prototype niet weggooien: https://launchstudio.eu/nl/blog/why-we-built-launchstudio
 
 #LaunchStudio #Manifera #VibeCoding #SoftwareAgency #SaaS #BuildInPublic

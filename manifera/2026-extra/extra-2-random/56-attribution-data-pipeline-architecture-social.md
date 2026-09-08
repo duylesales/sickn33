@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on attribution data pipeline architecture: [Link to article]
+👉 Read our full deep dive on attribution data pipeline architecture: https://www.manifera.com/blog/attribution-data-pipeline-architecture
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

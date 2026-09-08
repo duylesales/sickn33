@@ -12,6 +12,6 @@
 
 Push past the logo on the website to the report language that actually protects you. 📄
 
-👉 Read our full deep dive on the SOC2 vendor compliance checklist: [Link to article]
+👉 Read our full deep dive on the SOC2 vendor compliance checklist: https://www.manifera.com/blog/soc2-compliance-vendor-checklist-it-managers
 
 #ITManager #SOC2Compliance #VendorDueDiligence #TechDueDiligence #DataSecurity #Manifera

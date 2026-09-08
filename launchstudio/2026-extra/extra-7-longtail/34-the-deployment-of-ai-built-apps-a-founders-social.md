@@ -15,6 +15,6 @@ At **LaunchStudio**, deployment hardening is one of the most contained pieces of
 
 Elke's result: ClauseCheck now runs on a hardened, properly deployed setup, with her pilot firms never noticing anything had changed except that it was finally safe. 🚀
 
-👉 Think your "live" app is actually deployed? Check the six things that matter: [Link to article]
+👉 Think your "live" app is actually deployed? Check the six things that matter: https://launchstudio.eu/en/blog/the-deployment-of-ai-built-apps-a-founders
 
 #AINativeFounder #LaunchStudio #Manifera #AppDeployment #SecretsManagement

@@ -12,6 +12,6 @@
 
 A fast RFP and a rigorous RFP aren't in tension — if the pressure lands on the right stages. 🎯
 
-👉 Read our full deep dive on how long vendor selection should actually take: [Link to article]
+👉 Read our full deep dive on how long vendor selection should actually take: https://www.manifera.com/blog/the-rfp-process-how-long-vendor-selection-should-actually-take
 
 #Procurement #RFPProcess #VendorSelection #SoftwareProcurement #ProcurementStrategy #Manifera

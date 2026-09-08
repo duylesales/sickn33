@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Dario's oplossing hield stand in productie: dezelfde dataruimte met 340 documenten voltooit ingestie nu betrouwbaar op de achtergrond, waarbij het dashboard live voortgang per bestand toont in plaats van een stille fout, en dataruimtes met 1.000+ documenten zijn sindsdien succesvol verwerkt. 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/serverless-vs-containers-ai-architecture-decision
 
 #LaunchStudio #Manifera #AISaaS #ServerlessVsContainers #AIArchitecture

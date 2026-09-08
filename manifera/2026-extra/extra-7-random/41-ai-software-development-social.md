@@ -12,6 +12,6 @@
 
 The demo worked so well we assumed we were most of the way there. We were maybe twenty percent of the way there. 🛡️
 
-👉 Read our full deep dive on ai software development: [Link to article]
+👉 Read our full deep dive on ai software development: https://www.manifera.com/blog/ai-software-development
 
 #AIDevelopment #CTO #ProductionAI #Manifera

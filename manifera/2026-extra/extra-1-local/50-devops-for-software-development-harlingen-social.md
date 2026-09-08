@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on devops software development harlingen: [Link to article]
+👉 Read our full deep dive on devops software development harlingen: https://www.manifera.com/blog/devops-for-software-development-harlingen
 
 #Harlingen #MaritimeTech #Friesland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

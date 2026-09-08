@@ -12,6 +12,6 @@ A Series A diligence call is not the place to discover your multi-tenant databas
 
 Scalability isn't retrofitted under investor pressure — it's decided months earlier in the architecture. 🎯
 
-👉 Read our full deep dive on SaaS vendor scalability before your Series A: [Link to article]
+👉 Read our full deep dive on SaaS vendor scalability before your Series A: https://www.manifera.com/blog/saas-vendor-scalability-what-to-verify-before-your-series-a
 
 #SeriesA #SaaS #TechnicalDueDiligence #VPEngineering #StartupScaling #Manifera

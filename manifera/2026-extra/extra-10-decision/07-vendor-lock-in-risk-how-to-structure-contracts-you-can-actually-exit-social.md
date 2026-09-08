@@ -12,6 +12,6 @@ If your development vendor disappeared next month, could a different team pick u
 
 Lock-in isn't one bad clause — it's an accumulation of things nobody checked until the exit became urgent. Check them at signature, when your leverage is highest. 🎯
 
-👉 Read our full deep dive on structuring vendor contracts you can actually exit: [Link to article]
+👉 Read our full deep dive on structuring vendor contracts you can actually exit: https://www.manifera.com/blog/vendor-lock-in-risk-how-to-structure-contracts-you-can-actually-exit
 
 #Founder #VendorLockIn #StartupTech #SoftwareContracts #IPOwnership #Manifera

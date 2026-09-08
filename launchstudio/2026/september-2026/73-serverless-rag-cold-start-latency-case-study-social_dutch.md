@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 De maximale responstijd op het koude pad daalde met 60%, van 9–11 seconden naar 3,6–4,2 seconden (€2.100 (Launch & Grow Pakket) — voltooid in 6 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/serverless-rag-cold-start-latency-case-study
 
 #LaunchStudio #Manifera #AISaaS #ServerlessRAG #ColdStart

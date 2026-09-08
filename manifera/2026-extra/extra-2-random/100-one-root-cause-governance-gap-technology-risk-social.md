@@ -12,6 +12,6 @@
 
 Not "how do we fix this one thing" — "who's accountable for noticing the next hundred before they happen." 🛡️
 
-👉 Read our full deep dive on one root cause governance gap technology risk: [Link to article]
+👉 Read our full deep dive on one root cause governance gap technology risk: https://www.manifera.com/blog/one-root-cause-governance-gap-technology-risk
 
 #CEO #EngineeringGovernance #TechnicalDebt #Manifera

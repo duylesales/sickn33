@@ -14,6 +14,6 @@ Bij **LaunchStudio** migreren wij dit type betaalinfrastructuur al sinds 2014 vi
 
 De migratie van Sofia was onzichtbaar voor haar klanten: de 140 abonnees van InvoiceIQ gingen over naar Stripe Billing zonder herhaalde belastingen, zonder verloren verlengingsdatums, en wekelijkse facturatiesupportmails daalden binnen de eerste maand van 15-20 naar bijna nul. (€ 3.100 (Launch & Grow Pakket) — 6 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/stripe-checkout-to-billing-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #StripeBilling #SaaSRevenue

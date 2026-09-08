@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on we build apps that different promises: [Link to article]
+👉 Read our full guide on we build apps that different promises: https://www.manifera.com/blog/we-build-apps-for-that-different-promises
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

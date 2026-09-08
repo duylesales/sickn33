@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: verification documents are no longer publicly reachable under any URL, and the portfolio upload — genuinely fine to keep public — was left completely untouched. 🚀
 
-👉 Check whether your upload flow is quietly public: [Link to article]
+👉 Check whether your upload flow is quietly public: https://launchstudio.eu/en/blog/file-uploads-the-feature-that-looks-simple-and-isnt
 
 #IndieHacker #AICoding #ProductionReady #SaaS #LaunchStudio #Manifera

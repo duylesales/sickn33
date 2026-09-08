@@ -16,6 +16,6 @@ At **LaunchStudio**, we harden AI-generated mobile apps against exactly these pl
 
 Her result: passed App Store review on resubmission — and patient photos genuinely protected, not just superficially compliant. 🚀
 
-👉 Get your mobile app tested against real device conditions: [Link to article]
+👉 Get your mobile app tested against real device conditions: https://launchstudio.eu/en/blog/vibe-coding-to-production-checklist-mobile-apps-ai
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #MobileApp

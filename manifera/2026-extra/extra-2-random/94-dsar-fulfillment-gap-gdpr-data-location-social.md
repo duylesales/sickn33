@@ -12,6 +12,6 @@
 
 Six days with an audit trail — not thirty days of guessing. 🛡️
 
-👉 Read our full deep dive on dsar fulfillment gap gdpr data location: [Link to article]
+👉 Read our full deep dive on dsar fulfillment gap gdpr data location: https://www.manifera.com/blog/dsar-fulfillment-gap-gdpr-data-location
 
 #GDPR #CFO #DataPrivacy #Compliance #Manifera

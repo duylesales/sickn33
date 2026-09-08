@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers in Ho Chi Minh City specialize in exactly thi
 
 Nova's result: TuinRooster now runs with production-grade authentication, tested backups, active monitoring, and a real support process, on the exact frontend she built in a weekend. 🚀
 
-👉 Just shipped a weekend build? Calculate roughly what your hardening pass would cost: [Link to article]
+👉 Just shipped a weekend build? Calculate roughly what your hardening pass would cost: https://launchstudio.eu/en/blog/build-app-with-ai-easy-20-percent
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReady #AIStartup

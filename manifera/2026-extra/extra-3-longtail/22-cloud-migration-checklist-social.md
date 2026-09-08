@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on cloud migration checklist: [Link to article]
+👉 Read our deep dive on cloud migration checklist: https://www.manifera.com/blog/cloud-migration-checklist
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

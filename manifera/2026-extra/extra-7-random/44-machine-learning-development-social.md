@@ -12,6 +12,6 @@
 
 We planned like the model was the project and the data was a preliminary step. The data was almost the whole project. 🛡️
 
-👉 Read our full deep dive on machine learning development: [Link to article]
+👉 Read our full deep dive on machine learning development: https://www.manifera.com/blog/machine-learning-development
 
 #MachineLearning #CTO #DataEngineering #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** voeren onze technici precies dit soort controle op geheimen
 
 Zijn resultaat: VaartRooster hanteert nu een gedocumenteerde checklist voorafgaand aan migraties, en er is sindsdien geen enkele credential meer meegegaan in broncode. 🚀
 
-👉 Staat u op het punt een door AI gegenereerde codebase te migreren? Stuur hem eerst naar ons: [Link naar artikel]
+👉 Staat u op het punt een door AI gegenereerde codebase te migreren? Stuur hem eerst naar ons: https://launchstudio.eu/nl/blog/ai-code-download-what-to-check
 
 #AINativeFounder #LaunchStudio #Manifera #CodeSecurity #AIMigration

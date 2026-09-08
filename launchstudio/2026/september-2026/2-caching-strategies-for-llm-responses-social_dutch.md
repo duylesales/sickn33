@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 kostenbewuste, hoogwaardige backend-in
 
 Sophia's gemiddelde responstijd daalde van 2,5s naar 80ms voor gecachete queries, waardoor haar maandelijkse OpenAI API-kosten met 60% daalden. (€1.500 (API Caching Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Stop met het verbranden van API-budget: [Link naar artikel]
+👉 Stop met het verbranden van API-budget: https://launchstudio.eu/nl/blog/caching-strategies-for-llm-responses
 
 #AINativeFounder #LaunchStudio #Manifera #LLMCaching #BackendArchitecture #SemanticCache #AISaaS #TokenOptimization #StartupOpschalen

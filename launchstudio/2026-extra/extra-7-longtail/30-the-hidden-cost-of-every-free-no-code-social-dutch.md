@@ -15,6 +15,6 @@ Bij **LaunchStudio** handelen we precies dit migratietraject regelmatig af — w
 
 Tobias' resultaat: een voltooide migratie naar infrastructuur die hij zelf beheert, waarbij de facturatiegeschiedenis van elke klant intact is geverifieerd, afgerond in 9 werkdagen. 🚀
 
-👉 Haalt de prijs van de gratis tier uw no-code AI-app in? Maak eerst de echte migratieberekening: [Link naar artikel]
+👉 Haalt de prijs van de gratis tier uw no-code AI-app in? Maak eerst de echte migratieberekening: https://launchstudio.eu/nl/blog/the-hidden-cost-of-every-free-no-code
 
 #AINativeFounder #LaunchStudio #Manifera #NoCodeAI #PlatformMigration

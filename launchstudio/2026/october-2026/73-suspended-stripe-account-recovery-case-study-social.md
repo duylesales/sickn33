@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Daniel's account came back fast: Stripe lifted the suspension, restored payout access, and confirmed the account would remain under a temporary rolling reserve while it rebuilt a clean processing history. (Recovered and reinstated in 4 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/suspended-stripe-account-recovery-case-study
 
 #LaunchStudio #Manifera #AISaaS #Stripe #PaymentInfrastructure

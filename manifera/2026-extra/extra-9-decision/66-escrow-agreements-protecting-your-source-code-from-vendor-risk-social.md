@@ -12,6 +12,6 @@ A CTO paid her escrow fee faithfully for three years. When the vendor collapsed 
 
 An untested escrow deposit is a promise, not a plan. 📄
 
-👉 Read our full deep dive on source code escrow agreements and vendor risk: [Link to article]
+👉 Read our full deep dive on source code escrow agreements and vendor risk: https://www.manifera.com/blog/escrow-agreements-protecting-your-source-code-from-vendor-risk
 
 #CTO #SourceCodeEscrow #VendorRisk #SoftwareContracts #ITRiskManagement #BusinessContinuity #Manifera

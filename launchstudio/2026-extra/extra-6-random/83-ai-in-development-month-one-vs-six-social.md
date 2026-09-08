@@ -15,6 +15,6 @@ At **LaunchStudio**, our Singapore-based engineers run exactly this kind of cons
 
 Ruben's result: DevReplace's data layer now follows one consistent pattern instead of three, and the next feature after consolidation took a single afternoon again. 🚀
 
-👉 Codebase feeling slower than month one? Book a free 15-minute intro call: [Link to article]
+👉 Codebase feeling slower than month one? Book a free 15-minute intro call: https://launchstudio.eu/en/blog/ai-in-development-month-one-vs-six
 
 #AINativeFounder #LaunchStudio #Manifera #CodeConsolidation #TechnicalDebt

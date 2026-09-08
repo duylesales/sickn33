@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on cloud development team deventer: [Link to article]
+👉 Read our full deep dive on cloud development team deventer: https://www.manifera.com/blog/cloud-development-team-deventer
 
 #Deventer #Overijssel #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 11+ years building production systems for client
 
 Ingrid's result: BudgetBuddy now actually protects what she'd always assumed it already did, with tokens encrypted and credentials off the frontend entirely. 🚀
 
-👉 Not sure if your AI app encrypts data at rest? Ask the question that gets a real answer: [Link to article]
+👉 Not sure if your AI app encrypts data at rest? Ask the question that gets a real answer: https://launchstudio.eu/en/blog/ai-data-security-basics-every-non-technical-founder
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #FinTech

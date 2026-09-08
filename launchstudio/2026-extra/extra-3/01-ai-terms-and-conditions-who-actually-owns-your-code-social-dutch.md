@@ -15,6 +15,6 @@ At **LaunchStudio** is documentatie over code-eigendom een standaard onderdeel v
 
 Zijn resultaat: LaunchStudio haalde de gearchiveerde voorwaarden op en bevestigde dat beide lagen identieke eigendomstaal hanteerden — waardoor de vraag van de overnamekandidaat binnen twee dagen werd opgelost in plaats van het gesprek wekenlang te vertragen. 🚀
 
-👉 Gaat u binnenkort verkopen of investering ophalen? Zorg dat uw documentatie over code-eigendom op orde is voordat iemand ernaar vraagt: [Link naar artikel]
+👉 Gaat u binnenkort verkopen of investering ophalen? Zorg dat uw documentatie over code-eigendom op orde is voordat iemand ernaar vraagt: https://launchstudio.eu/nl/blog/ai-terms-and-conditions-who-actually-owns-your-code
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #CodeOwnership

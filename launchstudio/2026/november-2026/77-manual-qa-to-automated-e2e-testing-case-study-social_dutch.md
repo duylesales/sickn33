@@ -14,6 +14,6 @@ Bij LaunchStudio migreren we teams van handmatige QA naar geautomatiseerde tests
 
 Wouter's team bracht de testtijd terug van 3 uur naar 8 minuten en schakelde binnen een maand over op dagelijkse releases. (€ 2.900 (Launch & Grow Pakket) — 14 werkdagen.) 🚀
 
-👉 Bekijk onze aanpak: [Link naar artikel]
+👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/manual-qa-to-automated-e2e-testing-case-study
 
 #LaunchStudio #Manifera #AISaaS #E2ETesting #EngineeringTeams

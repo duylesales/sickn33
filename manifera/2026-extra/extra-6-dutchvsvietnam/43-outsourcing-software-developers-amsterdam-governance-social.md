@@ -12,6 +12,6 @@
 
 "Enforceable in practice" and "written in the contract" are two different things. Only one matters when something breaks. 🛡️
 
-👉 Read our full deep dive on outsourcing software developers amsterdam governance: [Link to article]
+👉 Read our full deep dive on outsourcing software developers amsterdam governance: https://www.manifera.com/blog/outsourcing-software-developers-amsterdam-governance
 
 #Amsterdam #CFO #GDPR #RiskManagement #OutsourcingDevelopers #Manifera

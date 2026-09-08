@@ -17,6 +17,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's Amsterdamse team met directe k
 
 Haar resultaat: checkout-conversie MEER DAN VERDUBBELD — van 8% naar 19% bij exact hetzelfde aantal bezoekers! 🚀
 
-👉 Lees de complete Mollie-integratiegids voor Nederlandse SaaS: [Link naar artikel]
+👉 Lees de complete Mollie-integratiegids voor Nederlandse SaaS: https://launchstudio.eu/nl/blog/complete-mollie-integration-guide-dutch-saas
 
 #Mollie #iDEAL #LaunchStudio #Manifera #DutchSaaS #AINativeFounder #SaaS #Payments #Bolt #TechFounders #StartupOpschalen

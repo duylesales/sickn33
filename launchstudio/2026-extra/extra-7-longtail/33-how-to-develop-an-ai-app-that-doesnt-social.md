@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers draw on Manifera's enterprise engineering bac
 
 Niklas's result: ShiftSwap now handles the full morning rush without slowing down, fixed in a day without altering the app his crew leads had already learned. 🚀
 
-👉 Wondering if your AI app would survive 100 concurrent users?: [Link to article]
+👉 Wondering if your AI app would survive 100 concurrent users?: https://launchstudio.eu/en/blog/how-to-develop-an-ai-app-that-doesnt
 
 #AINativeFounder #LaunchStudio #Manifera #ScalingIssues #AIAppDev

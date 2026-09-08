@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Adebayo migreerde drie klinieken weg van de legacy-leverancier zonder enig dataverlies en lanceerde een mobiele companion-app die het oude proprietaire systeem nooit had kunnen ondersteunen. (€4.200 (Relaunch & Scale Pakket) — gemigreerd en gelanceerd binnen 15 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vendor-lock-in-legacy-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #VendorLockIn #LegacyMigratie

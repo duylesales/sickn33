@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Renata's applicatie behaalde productie-gereedheid: Met een werkend verwijderproces, een afgedwongen bewaarbeleid en DPA-documentatie in de hand, heropende Renata het gesprek met de vastgelopen enterprise-prospect en ontgrendelde de deal. (€2.100 (Launch & Grow Pakket) — 8 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/gdpr-fix-now-vs-later-cost
 
 #LaunchStudio #Manifera #AISaaS #GDPR #DataCompliance

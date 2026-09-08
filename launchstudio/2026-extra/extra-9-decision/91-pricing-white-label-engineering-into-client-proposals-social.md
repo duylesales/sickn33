@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 Her result: Tessa's studio closed the next two proposals with no pricing objection, cutting proposal-prep time roughly in half once she stopped guessing. 🚀
 
-👉 Use the price calculator to sanity-check your markup: [Link to article]
+👉 Use the price calculator to sanity-check your markup: https://launchstudio.eu/en/blog/pricing-white-label-engineering-into-client-proposals
 
 #AgencyLife #WhiteLabel #AgencyOwner #ClientProposals #LaunchStudio #Manifera

@@ -12,6 +12,6 @@ Your company just started acquisition diligence, and one checklist line sounds a
 
 Roughly 1 in 5 vendor codebases we've reviewed showed shared-account patterns that made authorship unverifiable. Don't find that out during diligence. 📋
 
-👉 Read our full deep dive on auditing a vendor's code ownership and provenance: [Link to article]
+👉 Read our full deep dive on auditing a vendor's code ownership and provenance: https://www.manifera.com/blog/code-ownership-audits-verifying-a-vendor-team-wrote-the-code
 
 #CTO #CodeAudit #TechDueDiligence #SoftwareVendor #DevOps #MandA #Manifera

@@ -12,6 +12,6 @@
 
 Due diligence eighteen months later should be a formality, not a fire drill. 🛡️
 
-👉 Read our full deep dive on outsourcing app development amsterdam governance: [Link to article]
+👉 Read our full deep dive on outsourcing app development amsterdam governance: https://www.manifera.com/blog/outsourcing-app-development-amsterdam-governance
 
 #Amsterdam #CFO #RiskManagement #AppDevelopment #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 Rubens maandelijkse factuur daalde van €2.900 naar €640 — zonder dat hij ooit een FinOps-bureau hoefde in te schakelen (€2.400 (Launch & Grow Pakket) — voltooid in 8 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/launchstudio-vs-cloud-cost-optimization-firm
 
 #LaunchStudio #Manifera #AISaaS #CloudCosts #FinOps

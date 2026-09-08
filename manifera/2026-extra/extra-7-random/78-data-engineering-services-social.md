@@ -12,6 +12,6 @@ Hired a data scientist expecting predictive models, got someone spending 70% of 
 
 Insight is only as reliable as the pipeline underneath it. ⚙️
 
-👉 Read our full deep dive on data engineering services: [Link to article]
+👉 Read our full deep dive on data engineering services: https://www.manifera.com/blog/data-engineering-services
 
 #DataEngineering #DataInfrastructure #CTO #Analytics #Manifera

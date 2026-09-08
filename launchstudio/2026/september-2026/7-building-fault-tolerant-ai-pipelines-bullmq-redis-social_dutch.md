@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 veerkrachtige, ontkoppelde wachtrij-ar
 
 Lucas' time-outfouten daalden naar nul, en het platform verwerkt moeiteloos audiobestanden van 2 uur zonder enige hapering. (€1.950 (BullMQ Infrastructure Setup Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Bouw fouttolerante AI-pipelines: [Link naar artikel]
+👉 Bouw fouttolerante AI-pipelines: https://launchstudio.eu/nl/blog/building-fault-tolerant-ai-pipelines-bullmq-redis
 
 #AINativeFounder #LaunchStudio #Manifera #BullMQ #AsyncArchitecture #Redis #MessageQueue #BackendEngineering #AISaaS #StartupOpschalen

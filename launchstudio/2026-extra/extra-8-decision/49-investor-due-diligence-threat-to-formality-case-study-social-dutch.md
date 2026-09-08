@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Wolfgangs resultaat: LedgerTrust doorstond due diligence zonder één openstaande bevinding — binnen 11 werkdagen gedicht. 🚀
 
-👉 Ontdek hoe je due diligence van bedreiging naar formaliteit maakt: [Link naar artikel]
+👉 Ontdek hoe je due diligence van bedreiging naar formaliteit maakt: https://launchstudio.eu/nl/blog/investor-due-diligence-threat-to-formality-case-study
 
 #LaunchStudio #DueDiligence #Fundraising #Manifera #SaaS #VCReady #Beveiliging

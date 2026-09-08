@@ -15,6 +15,6 @@ At **LaunchStudio**, we implement exactly this kind of URL validation as part of
 
 His result: strict validation added, only fetching from verified public addresses — legitimate product photo imports unchanged. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/ai-in-development-workflows-what-changes-what-doesnt
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SoftwareEngineering

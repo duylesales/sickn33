@@ -12,6 +12,6 @@ A pricing change broke inventory allocation three weeks later, in a module nobod
 
 A €35,000–€55,000 rescue instead of a €150,000–€250,000 rewrite — at a fraction of the cost and timeline. Stop guessing what your own code does. 🔧
 
-👉 Read our full deep dive on legacy code rescue for Neder-Betuwe companies: [Link to article]
+👉 Read our full deep dive on legacy code rescue for Neder-Betuwe companies: https://www.manifera.com/blog/custom-software-application-development-company-neder-betuwe
 
 #NederBetuwe #Betuwe #Gelderland #LegacyCode #SoftwareEngineering #TechnicalDebt #Manifera

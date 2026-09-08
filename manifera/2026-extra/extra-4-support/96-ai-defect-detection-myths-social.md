@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai defect detection: [Link to article]
+👉 Retire all 3 biggest myths about ai defect detection: https://www.manifera.com/blog/ai-defect-detection-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

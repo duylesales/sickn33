@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen we specifiek op gedrag tijdens aanhoudende providers
 
 Zijn resultaat: detectie van uitvalpatronen en een duidelijk, eerlijk statusbericht — zodat een echte storing enkele maanden later één duidelijke uitleg opleverde in plaats van twee uur herhaalde, verwarrende fouten. 🚀
 
-👉 Al eens getest wat uw product daadwerkelijk doet tijdens een echte storing bij uw AI-provider? De meeste oprichters niet: [Link naar artikel]
+👉 Al eens getest wat uw product daadwerkelijk doet tijdens een echte storing bij uw AI-provider? De meeste oprichters niet: https://launchstudio.eu/nl/blog/what-happens-ai-model-provider-outage
 
 #Uptime #ErrorHandling #AINativeFounder #LaunchStudio #Manifera

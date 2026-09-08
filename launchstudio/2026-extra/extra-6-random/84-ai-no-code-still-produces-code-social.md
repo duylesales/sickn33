@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers, including colleagues based in Ho Chi Minh Ci
 
 Her result: the scheduling bug is fixed, and Sanne now has a plain-language explanation of her own app's core logic for the first time. 🚀
 
-👉 Is your own product's logic a black box, even to you? Send us your prototype link for free advice: [Link to article]
+👉 Is your own product's logic a black box, even to you? Send us your prototype link for free advice: https://launchstudio.eu/en/blog/ai-no-code-still-produces-code
 
 #AINativeFounder #LaunchStudio #Manifera #NoCode #ProductOwnership

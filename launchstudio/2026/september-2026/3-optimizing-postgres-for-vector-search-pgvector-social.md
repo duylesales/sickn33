@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been optimizing enterprise database architectures sin
 
 Noah's query latency dropped from 5,000ms to under 120ms, restoring instant search responses for active legal clients. 🚀
 
-👉 Simplify your AI database: [Link to article]
+👉 Simplify your AI database: https://launchstudio.eu/en/blog/optimizing-postgres-for-vector-search-pgvector
 
 #AINativeFounder #LaunchStudio #Manifera #PostgreSQL #pgvector

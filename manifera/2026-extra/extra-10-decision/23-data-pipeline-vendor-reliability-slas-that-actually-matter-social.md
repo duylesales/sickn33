@@ -12,6 +12,6 @@ A data pipeline can be "up" 99.9% of the time and still be useless — twelve ho
 
 The gap between "the pipeline ran" and "the pipeline produced correct, timely data" is exactly where reliability problems hide. 🎯
 
-👉 Read our full deep dive on data pipeline SLAs that actually matter: [Link to article]
+👉 Read our full deep dive on data pipeline SLAs that actually matter: https://www.manifera.com/blog/data-pipeline-vendor-reliability-slas-that-actually-matter
 
 #DataEngineering #VPEngineering #DataReliability #SLA #DataPipelines #Manifera

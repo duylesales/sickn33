@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De volgende storing was een non-event: geen verloren notities, geen supporttickets, en Nadia's proefklant werd twee weken later omgezet in een volledige bedrijfsbrede uitrol. (€1.400 (Launch Ready Pakket) — 5 werkdagen, voor een vergelijkbaar traject.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/graceful-degradation-llm-outage-case-study
 
 #LaunchStudio #Manifera #AISaaS #LLMOutage #GracefulDegradation

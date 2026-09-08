@@ -15,6 +15,6 @@ Bij **LaunchStudio**, ondersteund door Manifera — vertrouwd door Vodafone, TNO
 
 Het resultaat voor PensioPortal: de tool werd opnieuw gelanceerd met geverifieerde toegangscontroles en heeft sindsdien twee beveiligingsbeoordelingen van werkgevers doorstaan zonder vervolgvraag. 🚀
 
-👉 Verwerkt u gevoelige data met een door AI gebouwde app? Voer het beveiligingsgesprek vóór lancering, niet erna: [Link naar artikel]
+👉 Verwerkt u gevoelige data met een door AI gebouwde app? Voer het beveiligingsgesprek vóór lancering, niet erna: https://launchstudio.eu/nl/blog/29-ai-and-security-heerlen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityRisk #Heerlen

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: fake accounts removed, spend capped at the code level, and the sending domain's reputation recovered over about a month. 🚀
 
-👉 Check what your unauthenticated endpoints are exposed to: [Link to article]
+👉 Check what your unauthenticated endpoints are exposed to: https://launchstudio.eu/en/blog/spam-bots-and-abuse-on-anything-public-facing
 
 #SaaS #CyberSecurity #IndieHacker #AICoding #LaunchStudio #Manifera

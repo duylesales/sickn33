@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Learn how to overcome hindsight bias failed software projects in software projects: [Link to article]
+👉 Learn how to overcome hindsight bias failed software projects in software projects: https://www.manifera.com/blog/hindsight-bias-failed-software-projects
 
 #TechLeadership #ProductManagement #SoftwareEngineering #Agile #CTO #Manifera

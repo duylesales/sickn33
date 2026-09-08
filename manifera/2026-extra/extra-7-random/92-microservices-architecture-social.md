@@ -12,6 +12,6 @@ A 10-person team and a 200-person team running the same monolith are not solving
 
 Migrations without operational maturity in place often make deployment frequency worse for a year or more. 📉
 
-👉 Read our full deep dive on microservices architecture: [Link to article]
+👉 Read our full deep dive on microservices architecture: https://www.manifera.com/blog/microservices-architecture
 
 #Microservices #CTO #SoftwareArchitecture #Manifera

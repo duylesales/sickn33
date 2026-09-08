@@ -12,6 +12,6 @@ $18M committed. Year three, the vendor got acquired by PE, the account team got 
 
 A multi-year vendor relationship needs a contract built for the vendor changing shape — because eventually, it will. 🧭
 
-👉 Read our full deep dive on choosing a vendor for a multi-year transformation program: [Link to article]
+👉 Read our full deep dive on choosing a vendor for a multi-year transformation program: https://www.manifera.com/blog/choosing-a-vendor-for-a-multi-year-digital-transformation-program
 
 #DigitalTransformation #CTO #VendorManagement #EnterpriseIT #SystemsIntegrator #Manifera

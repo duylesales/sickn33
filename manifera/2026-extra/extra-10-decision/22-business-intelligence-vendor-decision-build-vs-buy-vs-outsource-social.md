@@ -12,6 +12,6 @@ Customer success wants self-service dashboards. Product wants embedded analytics
 
 There's no universally right answer — the right mix depends on whether analytics is core to your product or a supporting capability. 🎯
 
-👉 Read our full deep dive on the BI vendor decision — build vs. buy vs. outsource: [Link to article]
+👉 Read our full deep dive on the BI vendor decision — build vs. buy vs. outsource: https://www.manifera.com/blog/business-intelligence-vendor-decision-build-vs-buy-vs-outsource
 
 #BusinessIntelligence #HeadOfProduct #DataStrategy #PowerBI #Looker #Analytics #Manifera

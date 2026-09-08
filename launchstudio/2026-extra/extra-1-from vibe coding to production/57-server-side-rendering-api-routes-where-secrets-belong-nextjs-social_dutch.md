@@ -16,6 +16,6 @@ Bij **LaunchStudio** reviewen we Next.js-apps specifiek op dit server-client-gre
 
 Zijn resultaat: de blootgestelde sleutel direct geroteerd, de aanroep geherstructureerd via een correcte server-side route. 🚀
 
-👉 Laat jouw Next.js-app controleren op geheimen die de server-client-grens overschrijden: [Link naar artikel]
+👉 Laat jouw Next.js-app controleren op geheimen die de server-client-grens overschrijden: https://launchstudio.eu/nl/blog/server-side-rendering-api-routes-secrets-belong-nextjs
 
 #IndieHacker #LaunchStudio #Manifera #NextJS #AISecure

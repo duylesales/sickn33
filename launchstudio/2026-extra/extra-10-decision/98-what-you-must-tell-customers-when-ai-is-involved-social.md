@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the assistant's self-identification, labelling, human-reviewed ranking, and a compliance-ready AI inventory all shipped in 3 business days. 🚀
 
-👉 Check what your AI feature is legally required to disclose: [Link to article]
+👉 Check what your AI feature is legally required to disclose: https://launchstudio.eu/en/blog/what-you-must-tell-customers-when-ai-is-involved
 
 #AIAct #Compliance #GovTech #SaaS #LaunchStudio #Manifera

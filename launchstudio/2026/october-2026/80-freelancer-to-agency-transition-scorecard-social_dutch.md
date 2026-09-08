@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering 
 
 Yusuf sloot zijn financieringsronde succesvol: Yusuf liet LaunchStudio RLS en audit-logging implementeren, waardoor zijn technische due diligence zonder bevindingen werd goedgekeurd. (€4.800 (Enterprise Hardening Pakket) — 13 werkdagen). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/freelancer-to-agency-transition-scorecard
 
 #LaunchStudio #Manifera #AISaaS #DueDiligence #TeamScaling

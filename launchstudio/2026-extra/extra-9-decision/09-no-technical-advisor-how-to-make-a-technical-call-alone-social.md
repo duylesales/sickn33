@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Kastlijn launched with eleven stylists at €29 a month, and Rosanne later switched providers without difficulty on the cheap-to-reverse calls. 🚀
 
-👉 Talk to an engineer who will read your actual code: [Link to article]
+👉 Talk to an engineer who will read your actual code: https://launchstudio.eu/en/blog/no-technical-advisor-how-to-make-a-technical-call-alone
 
 #FounderLife #AICoding #LaunchStudio #Manifera #ProductionReady #IndieHacker

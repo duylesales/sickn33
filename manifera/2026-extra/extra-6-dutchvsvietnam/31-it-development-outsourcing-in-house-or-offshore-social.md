@@ -12,6 +12,6 @@
 
 Scaling capacity should never mean scaling risk. 🛡️
 
-👉 Read our full deep dive on it development outsourcing in house or offshore: [Link to article]
+👉 Read our full deep dive on it development outsourcing in house or offshore: https://www.manifera.com/blog/it-development-outsourcing-in-house-or-offshore
 
 #ITOutsourcing #Amsterdam #Vietnam #CTO #EngineeringScaling #Manifera

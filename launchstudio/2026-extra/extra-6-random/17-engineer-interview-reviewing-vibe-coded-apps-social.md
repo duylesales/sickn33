@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera brings 11+ years of production engineering experie
 
 His result: KlantStroom now processes retried webhooks safely, with duplicate creation structurally impossible rather than merely unlikely. 🚀
 
-👉 Confident your vibe-coded app is production-ready because it passed every test you thought to run: [Link to article]
+👉 Confident your vibe-coded app is production-ready because it passed every test you thought to run: https://launchstudio.eu/en/blog/engineer-interview-reviewing-vibe-coded-apps
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #ProductionReady

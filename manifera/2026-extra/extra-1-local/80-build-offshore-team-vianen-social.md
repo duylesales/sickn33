@@ -12,6 +12,6 @@
 
 A launch plan with checkpoints — not an open-ended promise. 🛡️
 
-👉 Read our full deep dive on build offshore team vianen: [Link to article]
+👉 Read our full deep dive on build offshore team vianen: https://www.manifera.com/blog/build-offshore-team-vianen
 
 #Vianen #Utrecht #LogisticsTech #VPEngineering #OffshoreTeam #90DayPlan #Manifera

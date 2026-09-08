@@ -12,6 +12,6 @@
 
 Convert an unenforceable, diffuse offshore risk into a named accountability your audit committee can actually engage with. 🛡️
 
-👉 Read our full deep dive on software development outsourcing models amsterdam governance: [Link to article]
+👉 Read our full deep dive on software development outsourcing models amsterdam governance: https://www.manifera.com/blog/software-development-outsourcing-models-amsterdam-governance
 
 #Amsterdam #CFO #RiskManagement #OutsourcingModels #Manifera

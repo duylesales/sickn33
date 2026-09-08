@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers — 11+ years handling deployment
 
 StofStroom now ships multiple times a week with automatic rollback on failed health checks, and hasn't had an unplanned outage since. 🚀
 
-👉 Deploying solo in Almelo? Don't skip this infrastructure checklist: [Link to article]
+👉 Deploying solo in Almelo? Don't skip this infrastructure checklist: https://launchstudio.eu/en/blog/ai-deployment-almelo
 
 #AINativeFounder #LaunchStudio #Manifera #Almelo #AIDeployment

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've built exactly this kind of VPC-isolated, data-soverei
 
 James passed his medical data privacy audits and successfully onboarded 5 clinics. 🚀
 
-👉 See how the migration worked: [Link to article]
+👉 See how the migration worked: https://launchstudio.eu/en/blog/economics-of-open-source-models-vs-api-providers
 
 #AINativeFounder #LaunchStudio #Manifera #OpenSourceAI #LLMInfrastructure

@@ -14,6 +14,6 @@ At LaunchStudio, we bring senior engineering judgment to exactly the foundationa
 
 Owen avoided a data-isolation incident between competing organizers and put his junior developers back on feature work with confidence. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/two-juniors-vs-one-senior-partner-decision
 
 #LaunchStudio #Manifera #AISaaS #HiringDecisions #StartupFounders

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on definition done contract dispute: [Link to article]
+👉 Read our full guide on definition done contract dispute: https://www.manifera.com/blog/definition-of-done-contract-dispute
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

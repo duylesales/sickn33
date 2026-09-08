@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on spa ssr migration conversion: [Link to article]
+👉 Read our full deep dive on spa ssr migration conversion: https://www.manifera.com/blog/spa-to-ssr-migration-conversion
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

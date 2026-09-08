@@ -15,6 +15,6 @@ Bij **LaunchStudio** vormt het compliancewerk van Manifera voor klanten zoals CF
 
 CargoLane doorstond de leveranciersbeoordeling van het verscheepbedrijf bij de tweede indiening en heeft sindsdien dezelfde documentatie gebruikt om twee extra zakelijke logistieke klanten binnen te halen. 🚀
 
-👉 Lanceert u een AI-website voor B2B-klanten? Laat een compliancecheck uitvoeren voordat inkoop dat doet: [Link naar artikel]
+👉 Lanceert u een AI-website voor B2B-klanten? Laat een compliancecheck uitvoeren voordat inkoop dat doet: https://launchstudio.eu/nl/blog/ai-websites-rotterdam
 
 #AINativeFounder #LaunchStudio #Manifera #AIWebsites #Rotterdam

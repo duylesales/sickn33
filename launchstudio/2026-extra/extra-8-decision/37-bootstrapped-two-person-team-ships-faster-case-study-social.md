@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Their result: access control gap closed in 9 days, first paying cohort onboarded on the original date — plus the fix they didn't see coming. 🚀
 
-👉 Keep your roadmap while we handle the hardening: [Link to article]
+👉 Keep your roadmap while we handle the hardening: https://launchstudio.eu/en/blog/bootstrapped-two-person-team-ships-faster-case-study
 
 #Bootstrapped #IndieHacker #StartupTeam #LaunchStudio #Manifera #MVP

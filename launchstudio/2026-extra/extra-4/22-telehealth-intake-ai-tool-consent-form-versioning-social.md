@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat versioned consent tied to a gating check as a stan
 
 Merel's result: ConsultVoor can now show exactly which policy version any patient agreed to, at any point in time — and no update goes live without existing patients being re-prompted. 🚀
 
-👉 Running a telehealth or intake tool built with AI? Get a free look at your consent flow: [Link to article]
+👉 Running a telehealth or intake tool built with AI? Get a free look at your consent flow: https://launchstudio.eu/en/blog/telehealth-intake-ai-tool-consent-form-versioning
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #HealthTech

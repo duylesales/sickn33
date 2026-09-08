@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type datapijplijn- en extractieprobleme
 
 James's applicatie werd uiterst accuraat: De extractienauwkeurigheid steeg naar 97% voor alle documenttypen, inclusief verfrommelde bonnetjes. (€1.950 (OCR Integration Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/extracting-structured-data-pdfs-ai
 
 #LaunchStudio #Manifera #AISaaS #PDFExtraction #VisionAI #DocumentIntelligence #TechFounders #StartupOpschalen

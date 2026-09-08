@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Geen enkele dubbele belasting in de zes weken na de fix, en Tomasz heeft nu gedocumenteerde infrastructuur die elke toekomstige engineer kan onderhouden. (€2.100 (Launch & Grow Pakket) — voltooid in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/when-to-fire-freelancer-hire-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #FreelancerVsBureau #ProductionHardening

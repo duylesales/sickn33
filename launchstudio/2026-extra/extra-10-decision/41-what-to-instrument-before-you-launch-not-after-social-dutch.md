@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we s
 
 💡 Zo ontdekte Wouter Dijkstra van Ferra dat 6 van de 11 klinieken vastliepen op 1 kalenderstap, waardoor hij direct de partnerinstructies kon corrigeren.
 
-👉 Bekijk de 6 onmisbare events vóór uw SaaS-lancering: [Link naar artikel]
+👉 Bekijk de 6 onmisbare events vóór uw SaaS-lancering: https://launchstudio.eu/nl/blog/what-to-instrument-before-you-launch-not-after
 
 #SaaSAnalytics #ProductManagement #PostHog #StartupMetrics #LaunchStudio #Manifera

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years building compliant systems f
 
 His result: the deal resumed once human-oversight design was documented, and classification became standard in every sales call. 🚀
 
-👉 Book a 15-minute call to walk through your feature's actual risk tier: [Link to article]
+👉 Book a 15-minute call to walk through your feature's actual risk tier: https://launchstudio.eu/en/blog/the-eu-ai-act-and-your-small-ai-product
 
 #SaaS #EUAIAct #LaunchStudio #Manifera #AICoding #ScaleUp

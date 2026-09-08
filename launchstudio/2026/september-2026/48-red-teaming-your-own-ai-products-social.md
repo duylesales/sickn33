@@ -14,6 +14,6 @@ At **LaunchStudio**, Manifera's 11+ years of engineering practice since 2014 bac
 
 Lillian's discount exploit prompts were blocked, protecting her business margins from bot abuse. 🚀
 
-👉 Stress-test your AI before a stranger does: [Link to article]
+👉 Stress-test your AI before a stranger does: https://launchstudio.eu/en/blog/red-teaming-your-own-ai-products
 
 #AINativeFounder #LaunchStudio #Manifera #RedTeaming #AISaaS

@@ -12,6 +12,6 @@ Every vendor on your shortlist claims financial services experience. Half mean "
 
 Domain experience isn't a nice-to-have here — it's the difference between a system and a liability. 🎯
 
-👉 Read our full deep dive on choosing a vendor with real financial services experience: [Link to article]
+👉 Read our full deep dive on choosing a vendor with real financial services experience: https://www.manifera.com/blog/choosing-a-vendor-with-prior-financial-services-delivery-experience
 
 #FinTech #CTO #FinancialServices #PSD2 #SoftwareVendor #PaymentSystems #Manifera

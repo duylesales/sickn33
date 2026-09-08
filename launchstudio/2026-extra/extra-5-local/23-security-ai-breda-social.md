@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineers — trusted by Vodafone, TNO, and CFLW
 
 TableTuned's result: it relaunched with verified tenant isolation, and Elise now leads sales conversations with her security audit instead of hoping the topic doesn't come up. 🚀
 
-👉 Handling booking or guest data with an AI-built app? Get the audit before a curious user finds the gap: [Link to article]
+👉 Handling booking or guest data with an AI-built app? Get the audit before a curious user finds the gap: https://launchstudio.eu/en/blog/23-security-ai-breda
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityAudit #Breda

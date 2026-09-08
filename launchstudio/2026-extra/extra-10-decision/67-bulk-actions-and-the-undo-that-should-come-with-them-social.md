@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: soft delete with a 30-day recovery window, explicit page-versus-filter selection with the count stated, and one-click undo on any bulk operation. 🚀
 
-👉 See what a safe bulk delete actually needs: [Link to article]
+👉 See what a safe bulk delete actually needs: https://launchstudio.eu/en/blog/bulk-actions-and-the-undo-that-should-come-with-them
 
 #SaaS #ProductSafety #IndieHacker #FounderLife #LaunchStudio #Manifera

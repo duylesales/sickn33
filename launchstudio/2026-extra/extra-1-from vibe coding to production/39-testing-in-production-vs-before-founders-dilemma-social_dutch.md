@@ -16,6 +16,6 @@ Bij **LaunchStudio** helpen we founders precies deze lijn te trekken voor hun sp
 
 Zijn resultaat: het gat gedicht, zijn roadmap opnieuw gesorteerd naar het juiste onderscheid — niet langer vertrouwend op geluk. 🚀
 
-👉 Krijg hulp bij het trekken van de lijn voor jouw specifieke product: [Link naar artikel]
+👉 Krijg hulp bij het trekken van de lijn voor jouw specifieke product: https://launchstudio.eu/nl/blog/testing-in-production-vs-before-founders-dilemma
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

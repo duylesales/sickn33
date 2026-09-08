@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers in Amsterdam, Singapore, and Ho Chi Minh City
 
 His result: BouwPlan launched with its original frontend intact, its actual security gaps closed, at a fraction of what the abandoned rebuild would have cost. 🚀
 
-👉 Been pitched a "full rebuild" you haven't verified yet? Get a second opinion first: [Link to article]
+👉 Been pitched a "full rebuild" you haven't verified yet? Get a second opinion first: https://launchstudio.eu/en/blog/reading-between-lines-agency-pitch
 
 #AINativeFounder #LaunchStudio #Manifera #SecondOpinion #ProductionReady

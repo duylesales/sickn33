@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichters bij het opzetten van een toegangsbele
 
 Zijn resultaat: taakgerichte toegang voor elke toekomstige aannemer, plus een offboarding-checklist die de kloof sluit zodra een opdracht eindigt. 🚀
 
-👉 Weet u zeker wie er nog toegang heeft tot uw systemen? Wij bekijken het gratis voor u: [Link naar artikel]
+👉 Weet u zeker wie er nog toegang heeft tot uw systemen? Wij bekijken het gratis voor u: https://launchstudio.eu/nl/blog/contractor-vs-employee-who-should-own-codebase-access
 
 #AINativeFounder #LaunchStudio #Manifera #AccessControl #SaaSFounder

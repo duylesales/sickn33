@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real employee benefits platform platform cost breakdown: [Link to article]
+👉 See the real employee benefits platform platform cost breakdown: https://www.manifera.com/blog/employee-benefits-platform-cost-analysis
 
 #HRTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

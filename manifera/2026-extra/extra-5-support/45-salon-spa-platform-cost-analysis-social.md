@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real salon spa platform platform cost breakdown: [Link to article]
+👉 See the real salon spa platform platform cost breakdown: https://www.manifera.com/blog/salon-spa-platform-cost-analysis
 
 #SalonTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

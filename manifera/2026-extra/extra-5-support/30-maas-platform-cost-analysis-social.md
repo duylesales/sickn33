@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real maas platform platform cost breakdown: [Link to article]
+👉 See the real maas platform platform cost breakdown: https://www.manifera.com/blog/maas-platform-cost-analysis
 
 #TransitTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

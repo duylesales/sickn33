@@ -15,6 +15,6 @@ At **LaunchStudio**, this upload hardening is part of our standard review. Backe
 
 Her result: server-side size limits, type restrictions, and rate limiting across every upload feature — legitimate photo uploads unchanged. 🚀
 
-👉 Share your prototype link — we'll take a free look: [Link to article]
+👉 Share your prototype link — we'll take a free look: https://launchstudio.eu/en/blog/what-happens-after-you-build-app-with-ai-and-try-to-launch
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #ProductionReady

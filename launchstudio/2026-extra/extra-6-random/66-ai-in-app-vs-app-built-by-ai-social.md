@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers — working out of Manifera's Ho Chi Minh Cit
 
 Her result: MeldBrug now has documented architecture clarity separating the AI chat feature from the rest of the application, ready for the next due diligence conversation. 🚀
 
-👉 Preparing for a due diligence conversation? Describe your project and we'll respond within one business day: [Link to article]
+👉 Preparing for a due diligence conversation? Describe your project and we'll respond within one business day: https://launchstudio.eu/en/blog/ai-in-app-vs-app-built-by-ai
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #AIClaims

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Zijn resultaat: een tweede audit bracht elf reële risico's aan het licht — inclusief een onbeveiligde webhook en uitgeschakelde databaseregels — en hij doorstond de inkoopreview van de hotelketen glansrijk. 🚀
 
-👉 Ontvangt u een auditrapport? Stuur het op en wij beoordelen kosteloos of het echt is: [Link naar artikel]
+👉 Ontvangt u een auditrapport? Stuur het op en wij beoordelen kosteloos of het echt is: https://launchstudio.eu/nl/blog/hoe-een-echte-security-audit-er-uitziet-en-hoe-een-nep-rapport-er-uitziet
 
 #IndieHacker #CyberSecurity #InfoSec #AICoding #LaunchStudio #Manifera

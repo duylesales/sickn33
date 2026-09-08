@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we A
 
 💡 Zo stuurde Jelle Doornbos van Herinnering per ongeluk 412 test-SMS'jes naar echte patiënten vanaf een ongeïsoleerde staging-server. Na onze Mailtrap-integratie en geanonimiseerde database-pipeline kan zijn team zonder enig risico testen.
 
-👉 Weet u zeker dat uw testomgeving vandaag géén echte e-mails kan versturen? [Link naar artikel]
+👉 Weet u zeker dat uw testomgeving vandaag géén echte e-mails kan versturen? https://launchstudio.eu/nl/blog/staging-environments-what-they-are-actually-for
 
 #DevOps #Staging #SaaSArchitecture #GDPR #Testing #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam team routinely acts as exactly this kind of f
 
 His result: the actual gaps were identified and closed in under two weeks, and the CTO refocused on the growth work he'd actually been hired for. 🚀
 
-👉 About to hire a full-time CTO without a diagnosis first: [Link to article]
+👉 About to hire a full-time CTO without a diagnosis first: https://launchstudio.eu/en/blog/fractional-cto-before-full-time
 
 #AINativeFounder #LaunchStudio #Manifera #FractionalCTO #TechHiring

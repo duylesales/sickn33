@@ -12,6 +12,6 @@
 
 We wanted budget certainty so badly we paid for a fixed number on something nobody could have specified yet. The hybrid approach cost us less and gave us more real visibility. 🛡️
 
-👉 Read our full deep dive on software development pricing models: [Link to article]
+👉 Read our full deep dive on software development pricing models: https://www.manifera.com/blog/software-development-pricing-models
 
 #SoftwarePricing #CFO #ProjectBudgeting #Manifera

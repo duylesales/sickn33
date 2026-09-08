@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type database-architectuur en telemetri
 
 Scarletts platform schaalt nu soepel: Dashboard-laadtijden daalden naar minder dan 300ms terwijl de primaire schrijfsnelheid optimaal bleef. (€1.850 (DB Scaling Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/tracking-right-kpis-generative-saas
 
 #LaunchStudio #Manifera #AISaaS #SaaSMetrics #PostHog #AIGrossMargin #Supabase #DatabaseScaling #TechFounders #StartupOpschalen

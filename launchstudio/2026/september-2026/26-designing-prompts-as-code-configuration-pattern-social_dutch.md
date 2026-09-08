@@ -14,6 +14,6 @@ Bij **LaunchStudio** hebben we meer dan 160 enterprise-projecten door deze groei
 
 Voor Lily past haar team prompts nu realtime aan, waardoor testcycli werden verkort van dagen naar seconden. (€1.250 (Prompt Management Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u prompts beheert als configuratie: [Link naar artikel]
+👉 Ontdek hoe u prompts beheert als configuratie: https://launchstudio.eu/nl/blog/designing-prompts-as-code-configuration-pattern
 
 #AINativeFounder #LaunchStudio #Manifera #PromptEngineering #ConfigAsCode #Supabase #NextJS #AISaaS #StartupOpschalen

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type RAG-integratie, safety-dashboardin
 
 Noahs supportbot werd betrouwbaar en effectief: De oplosgraad steeg naar 82% met een foutmarge van nul dankzij een Human-in-the-Loop safety dashboard. (€1.800 (Support Safety Dashboard Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/case-study-slashing-customer-support-costs-80-ai
 
 #LaunchStudio #Manifera #AISaaS #CaseStudy #CustomerSupport #RAG #Pinecone #ZendeskIntegration #Fintech #TechFounders #StartupOpschalen

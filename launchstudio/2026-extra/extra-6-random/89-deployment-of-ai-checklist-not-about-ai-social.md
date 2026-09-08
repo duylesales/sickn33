@@ -15,6 +15,6 @@ At **LaunchStudio**, our Singapore-based engineers run this exact infrastructure
 
 Joran's result: BolTraject now runs with a properly sized connection pool and active monitoring, and the outage has never repeated. 🚀
 
-👉 Approaching a launch date? Book a free 15-minute intro call before deployment day, not after: [Link to article]
+👉 Approaching a launch date? Book a free 15-minute intro call before deployment day, not after: https://launchstudio.eu/en/blog/deployment-of-ai-checklist-not-about-ai
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReady #DeploymentChecklist

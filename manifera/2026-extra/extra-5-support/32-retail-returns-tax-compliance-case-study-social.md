@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the retail returns tax compliance compliance case study: [Link to article]
+👉 See the retail returns tax compliance compliance case study: https://www.manifera.com/blog/retail-returns-tax-compliance-case-study
 
 #RetailTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

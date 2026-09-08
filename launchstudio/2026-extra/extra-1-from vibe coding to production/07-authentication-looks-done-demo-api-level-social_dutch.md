@@ -16,6 +16,6 @@ Bij **LaunchStudio** verifiëren we authenticatie op precies dit niveau bij elke
 
 Zijn resultaat: server-side eigendomsverificatie dichtte het gat met de hoogste gevolgen van de hele review, vóór bètalancering. 🚀
 
-👉 Laat je API-niveau-toegangscontrole daadwerkelijk testen: [Link naar artikel]
+👉 Laat je API-niveau-toegangscontrole daadwerkelijk testen: https://launchstudio.eu/nl/blog/authentication-looks-done-demo-api-level
 
 #AISecure #IDOR #LaunchStudio #Manifera #IndieHacker #AppBeveiliging

@@ -12,6 +12,6 @@ Twenty beautiful screenshots tell you nothing about whether that vendor will sti
 
 Fifteen minutes of verification saves months of regret. 🔍
 
-👉 Read our full deep dive on mobile app vendor portfolio red flags: [Link to article]
+👉 Read our full deep dive on mobile app vendor portfolio red flags: https://www.manifera.com/blog/mobile-app-vendor-portfolio-red-flags-screenshots-dont-show
 
 #Founder #StartupCTO #AppDevelopment #VendorDueDiligence #MobileApp #Manifera

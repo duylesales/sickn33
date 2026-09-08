@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: overgestapt op beheerde hosting voor € 49/maand, € 290/maand ingezet voor een medewerker en twee korte storingen binnen 25 minuten verholpen. 🚀
 
-👉 Gebruik de prijscalculator om te zien wat betrouwbare hosting voor u kost: [Link naar artikel]
+👉 Gebruik de prijscalculator om te zien wat betrouwbare hosting voor u kost: https://launchstudio.eu/nl/blog/how-much-uptime-do-you-actually-need-to-pay-for
 
 #SaaS #UptimeSLA #CloudHosting #Betrouwbaarheid #LaunchStudio #Manifera

@@ -12,6 +12,6 @@
 
 You don't lose engineers to salary. You lose them to 2 AM pages for bugs everyone already knew about. 🛡️
 
-👉 Read our full deep dive on on-call burnout engineer attrition reliability: [Link to article]
+👉 Read our full deep dive on on-call burnout engineer attrition reliability: https://www.manifera.com/blog/on-call-burnout-engineer-attrition-reliability
 
 #EngineeringCulture #VPEngineering #OnCall #Retention #SRE #Manifera

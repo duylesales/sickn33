@@ -16,6 +16,6 @@ Bij **LaunchStudio** pakken we specifiek de productiegereedheidsgat-subset van d
 
 Zijn resultaat: een begrensde, repareerbare set gaten gedicht in 9 dagen — geen bewijs dat hij voorbestemd was voor de 80%. 🚀
 
-👉 Ontdek of jouw specifieke stagnatie aanpakbaar is: [Link naar artikel]
+👉 Ontdek of jouw specifieke stagnatie aanpakbaar is: https://launchstudio.eu/nl/blog/what-80-percent-ai-prototypes-never-reach-production-means
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #StartupRealiteit

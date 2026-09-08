@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type facturatie- en software-integratie
 
 Lily's platform zag een enorme stijging: 28% van de bestaande gebruikersbasis activeerde en betaalde de AI-add-on binnen de eerste maand. (€1.900 (Stripe Refactoring Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/upselling-ai-features-existing-saas-customers
 
 #LaunchStudio #Manifera #AISaaS #SaaSMonetization #StripeAddon #ARPU #SaaSGroei #TechFounders #StartupOpschalen

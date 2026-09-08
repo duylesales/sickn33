@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's enterprise-grade migration discipline,
 
 His result: connection pooling and one fixed query cut Niels's bill to roughly €180 and eliminated the errors entirely — no migration, no downtime risk, no lost weekend. 🚀
 
-👉 Send us your prototype link for free feedback on your hosting bill: [Link to article]
+👉 Send us your prototype link for free feedback on your hosting bill: https://launchstudio.eu/en/blog/outgrowing-managed-hosting-when-and-how-to-move
 
 #IndieHacker #SaaS #DevOps #Hosting #LaunchStudio #Manifera

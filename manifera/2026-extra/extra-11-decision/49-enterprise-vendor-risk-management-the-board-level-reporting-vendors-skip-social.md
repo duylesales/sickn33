@@ -12,6 +12,6 @@
 
 DORA didn't invent this reporting gap — it just made ignoring it a compliance risk too. 📑
 
-👉 Read our full deep dive on the board-level vendor risk reporting most organizations skip: [Link to article]
+👉 Read our full deep dive on the board-level vendor risk reporting most organizations skip: https://www.manifera.com/blog/enterprise-vendor-risk-management-the-board-level-reporting-vendors-skip
 
 #VendorRiskManagement #ThirdPartyRisk #DORA #BoardGovernance #CFO #Manifera

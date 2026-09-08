@@ -12,6 +12,6 @@ The vendor's DPA is nine pages of standard language legal has seen a hundred tim
 
 The clauses that protect you were negotiated, not accepted. 🎯
 
-👉 Read our full deep dive on data governance clauses to require in vendor contracts: [Link to article]
+👉 Read our full deep dive on data governance clauses to require in vendor contracts: https://www.manifera.com/blog/data-governance-in-vendor-contracts-what-to-require
 
 #DataGovernance #GDPR #ComplianceOfficer #VendorRisk #DataProcessingAgreement #Manifera

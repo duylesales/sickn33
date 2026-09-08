@@ -14,6 +14,6 @@ At **LaunchStudio**, we've spent eleven years through Manifera solving exactly t
 
 The AI widget rendered seamlessly inside Joshua's PHP dashboard, with user sessions staying fully synced. 🚀
 
-👉 Get the integration playbook: [Link to article]
+👉 Get the integration playbook: https://launchstudio.eu/en/blog/build-vs-partner-integrating-ai-into-legacy-saas
 
 #AINativeFounder #LaunchStudio #Manifera #LegacySaaS #AIIntegration

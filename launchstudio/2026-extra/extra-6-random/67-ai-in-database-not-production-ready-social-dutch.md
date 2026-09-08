@@ -15,6 +15,6 @@ Bij **LaunchStudio** beoordeelt ons Amsterdamse team — gesteund door de 11+ ja
 
 Zijn resultaat: de AI-zoekfunctie van SchemaWacht draait nu tegen een correct geïndexeerde vectorkolom zonder meetbare impact op de beschikbaarheid van boekingen, geverifieerd onder gesimuleerde gelijktijdige belasting. 🚀
 
-👉 Nog geen belasttest gedaan op uw AI-zoekfunctie tegen echte gelijktijdigheid? Bereken wat een databasebeoordeling zou kosten: [Link naar artikel]
+👉 Nog geen belasttest gedaan op uw AI-zoekfunctie tegen echte gelijktijdigheid? Bereken wat een databasebeoordeling zou kosten: https://launchstudio.eu/nl/blog/ai-in-database-not-production-ready
 
 #AINativeFounder #LaunchStudio #Manifera #VectorSearch #DatabasePerformance

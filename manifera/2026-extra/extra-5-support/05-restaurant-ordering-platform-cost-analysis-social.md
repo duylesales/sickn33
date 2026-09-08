@@ -12,6 +12,6 @@
 
 Stop under-budgeting your engineering. Get an honest, layer-by-layer architectural cost scope from the start! ⚙️
 
-👉 See the real cost breakdown of custom restaurant ordering platforms: [Link to article]
+👉 See the real cost breakdown of custom restaurant ordering platforms: https://www.manifera.com/blog/restaurant-ordering-platform-cost-analysis
 
 #RestaurantTech #CustomSoftware #PlatformCost #OrderManagement #CTO #SoftwareEngineering #Manifera

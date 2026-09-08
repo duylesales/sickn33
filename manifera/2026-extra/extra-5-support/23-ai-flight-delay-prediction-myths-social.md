@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai flight delay prediction: [Link to article]
+👉 Retire all 3 biggest myths about ai flight delay prediction: https://www.manifera.com/blog/ai-flight-delay-prediction-myths
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

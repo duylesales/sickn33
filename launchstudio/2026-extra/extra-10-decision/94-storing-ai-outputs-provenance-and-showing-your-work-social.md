@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: historical entries were identified via generation timestamps in application logs and flagged for review, with the full provenance model delivered in 3 business days. 🚀
 
-👉 Find out what your AI outputs would tell an auditor: [Link to article]
+👉 Find out what your AI outputs would tell an auditor: https://launchstudio.eu/en/blog/storing-ai-outputs-provenance-and-showing-your-work
 
 #AIProvenance #SaaS #RegTech #FounderLife #LaunchStudio #Manifera

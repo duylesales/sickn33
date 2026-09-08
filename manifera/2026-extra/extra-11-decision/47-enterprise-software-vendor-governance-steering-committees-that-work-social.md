@@ -12,6 +12,6 @@ Every status slide was green for two straight quarters. Then a milestone slipped
 
 Governance that only meets on schedule isn't governance — it's a calendar invite. 📅
 
-👉 Read our full deep dive on building a vendor steering committee that actually works: [Link to article]
+👉 Read our full deep dive on building a vendor steering committee that actually works: https://www.manifera.com/blog/enterprise-software-vendor-governance-steering-committees-that-work
 
 #VendorManagement #ITGovernance #EnterpriseIT #ITManager #ProjectGovernance #Manifera

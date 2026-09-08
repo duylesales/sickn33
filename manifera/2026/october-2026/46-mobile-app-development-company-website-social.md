@@ -13,6 +13,6 @@ At **Manifera**, we build your enterprise moat on open standards (React Native, 
 ✅ Zero proprietary lock-in. You own every single line of code. 🚀
 
 Stop renting your software. Start owning your architecture! ⚡
-👉 The CTO's guide to identifying Vendor Lock-in traps: [Link to article]
+👉 The CTO's guide to identifying Vendor Lock-in traps: https://www.manifera.com/blog/mobile-app-development-company-website
 
 #TechLeadership #VendorLockIn #MobileAppDevelopment #EnterpriseSoftware #CTO #VietnamTech #AmsterdamBusiness #Manifera

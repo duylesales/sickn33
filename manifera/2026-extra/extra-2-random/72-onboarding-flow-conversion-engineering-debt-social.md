@@ -12,6 +12,6 @@
 
 Stop paying full price for a broken funnel. 🛡️
 
-👉 Read our full deep dive on onboarding flow conversion engineering debt: [Link to article]
+👉 Read our full deep dive on onboarding flow conversion engineering debt: https://www.manifera.com/blog/onboarding-flow-conversion-engineering-debt
 
 #CMO #ConversionOptimization #MarketingEngineering #ProductGrowth #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Michael behaalt nu een gegarandeerde brutomarge van 60% op elke video en schaalde veilig door naar $8.000 MRR. (€3.800 (Launch Ready Pakket met metered billing) — binnen 12 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-saas-pricing-strategy-freemium-vs-paid
 
 #LaunchStudio #Manifera #AISaaS #PricingStrategy #MeteredBilling #StripeBilling #TechFounders #CursorAI #UnitEconomics

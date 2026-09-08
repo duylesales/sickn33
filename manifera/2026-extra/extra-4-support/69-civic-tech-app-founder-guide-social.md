@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a civic tech: [Link to article]
+👉 Read the founder's guide to building a civic tech: https://www.manifera.com/blog/civic-tech-app-founder-guide
 
 #GovTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

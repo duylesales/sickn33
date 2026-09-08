@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Het resultaat: toen de freelancer de groei niet meer kon bijbenen, wisselde Milan binnen zes dagen van ontwikkelaar zonder enige downtime. 🚀
 
-👉 Bespreek met een engineer hoe een zuivere overdrachtsstructuur voor uw stack eruitziet: [Link naar artikel]
+👉 Bespreek met een engineer hoe een zuivere overdrachtsstructuur voor uw stack eruitziet: https://launchstudio.eu/nl/blog/planning-your-exit-from-any-development-partner
 
 #IndieHacker #SaaS #LaunchStudio #Manifera #AICoding #FounderLife

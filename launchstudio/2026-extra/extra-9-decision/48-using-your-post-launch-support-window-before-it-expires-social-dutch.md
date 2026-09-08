@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat in de praktijk: alle negen openstaande frictiepunten werden binnen drie uur opgelost, inclusief een datumfout die anders het hele hoogseizoen voor no-shows had gezorgd. 🚀
 
-👉 Stuur ons uw lijst met kleine punten die u bewaarde onder "niet de moeite" — wij vertellen u welke binnen twintig minuten zijn verholpen: [Link naar artikel]
+👉 Stuur ons uw lijst met kleine punten die u bewaarde onder "niet de moeite" — wij vertellen u welke binnen twintig minuten zijn verholpen: https://launchstudio.eu/nl/blog/using-your-post-launch-support-window-before-it-expires
 
 #SoftwareLancering #SaaSOnderhoud #Bugfixes #ProductieSupport #LaunchStudio #Manifera

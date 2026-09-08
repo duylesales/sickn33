@@ -12,6 +12,6 @@
 
 If you're already juggling seven vendor conversations, the fix isn't finishing them all — it's cutting the field now. ✂️
 
-👉 Read our full deep dive on how many vendors to shortlist before deciding: [Link to article]
+👉 Read our full deep dive on how many vendors to shortlist before deciding: https://www.manifera.com/blog/how-many-vendors-to-shortlist-before-deciding
 
 #Founder #VendorSelection #StartupAdvice #ProcurementStrategy #DecisionMaking #Manifera

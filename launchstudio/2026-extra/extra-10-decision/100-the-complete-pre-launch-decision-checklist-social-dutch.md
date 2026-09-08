@@ -28,6 +28,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), helpen we s
 
 💡 Zo hielpen we Bram Kooij van Wachtrij: een pilot bij 3 gemeenten leek vlekkeloos, totdat een grote centrumgemeente een security-audit eiste. In 9 werkdagen dichtten we autorisatielekken en richtten we audit trails en RLS in: de gemeente tekende een meerjarig enterprise-contract!
 
-👉 Is uw software écht klaar voor betalende klanten, of weet u niet wat er gebeurt op de paden die u nog niet heeft bewandeld? [Link naar artikel]
+👉 Is uw software écht klaar voor betalende klanten, of weet u niet wat er gebeurt op de paden die u nog niet heeft bewandeld? https://launchstudio.eu/nl/blog/the-complete-pre-launch-decision-checklist
 
 #SaaS #ProductLaunch #Startup #ArtificialIntelligence #SoftwareEngineering #LaunchStudio #Manifera

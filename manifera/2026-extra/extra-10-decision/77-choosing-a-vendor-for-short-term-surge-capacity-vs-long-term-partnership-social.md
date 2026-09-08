@@ -12,6 +12,6 @@ You have a launch date in eleven weeks and a backlog that needs six more enginee
 
 The right vendor for a sprint is rarely the right vendor for a roadmap — define the horizon before you evaluate proposals. 🎯
 
-👉 Read our full comparison of surge capacity vs. long-term partnership vendors: [Link to article]
+👉 Read our full comparison of surge capacity vs. long-term partnership vendors: https://www.manifera.com/blog/choosing-a-vendor-for-short-term-surge-capacity-vs-long-term-partnership
 
 #COO #VendorSelection #DedicatedDevelopmentTeam #StaffAugmentation #SoftwareOutsourcing #Manifera

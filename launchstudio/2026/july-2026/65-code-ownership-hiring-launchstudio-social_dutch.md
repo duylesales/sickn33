@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Sofia's applicatie behaalde productie-gereedheid: ze behield gedurende het volledige traject 100% eigendom en beheerderstoegang tot elk onderdeel van haar stack, en toonde later tijdens due diligence een schone, volledig gedocumenteerde codebase aan investeerders zonder eigendomsvragen te hoeven wegwuiven. (€ 3.400 (Relaunch & Scale) — 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/code-ownership-hiring-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #CodeOwnership #StartupFounders

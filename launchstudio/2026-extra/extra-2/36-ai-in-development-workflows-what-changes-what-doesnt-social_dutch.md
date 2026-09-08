@@ -15,6 +15,6 @@ Bij **LaunchStudio** implementeren we precies dit soort URL-validatie als onderd
 
 Zijn resultaat: strikte validatie toegevoegd, alleen ophalend van geverifieerde publieke adressen — legitieme productfoto-imports ongewijzigd. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/ai-in-development-workflows-what-changes-what-doesnt
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SoftwareEngineering

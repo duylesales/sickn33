@@ -12,6 +12,6 @@
 
 Green scan results don't mean secure. They mean untested logic. 🎯
 
-👉 Read our full deep dive on penetration testing services: [Link to article]
+👉 Read our full deep dive on penetration testing services: https://www.manifera.com/blog/penetration-testing-services
 
 #PenetrationTesting #AppSec #CyberSecurity #CTO #Manifera

@@ -12,6 +12,6 @@
 
 We built something that looked great to the department head who commissioned it. The people using it daily had quietly given up. 🛡️
 
-👉 Read our full deep dive on enterprise application development: [Link to article]
+👉 Read our full deep dive on enterprise application development: https://www.manifera.com/blog/enterprise-application-development
 
 #EnterpriseSoftware #CTO #InternalTools #Manifera

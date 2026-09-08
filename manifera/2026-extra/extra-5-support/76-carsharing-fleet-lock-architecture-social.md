@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on carsharing fleet lock: [Link to article]
+👉 Read our full architectural deep dive on carsharing fleet lock: https://www.manifera.com/blog/carsharing-fleet-lock-architecture
 
 #MobilityTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -12,6 +12,6 @@
 
 Ask for the named engineers, not the company-level pitch. 🛡️
 
-👉 Read our full deep dive on offshore web development vietnam execution: [Link to article]
+👉 Read our full deep dive on offshore web development vietnam execution: https://www.manifera.com/blog/offshore-web-development-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #WebDevelopment #Amsterdam #Manifera

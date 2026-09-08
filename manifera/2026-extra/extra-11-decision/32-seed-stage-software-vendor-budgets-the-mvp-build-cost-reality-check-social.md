@@ -12,6 +12,6 @@
 
 The right budget isn't the cheapest one — it's the one that gets you a product real enough to earn a Series A. 🎯
 
-👉 Read our full deep dive on seed-stage MVP budgets: [Link to article]
+👉 Read our full deep dive on seed-stage MVP budgets: https://www.manifera.com/blog/seed-stage-software-vendor-budgets-the-mvp-build-cost-reality-check
 
 #SeedStage #StartupBudget #MVPCost #FounderFinance #ProductDevelopment #Manifera

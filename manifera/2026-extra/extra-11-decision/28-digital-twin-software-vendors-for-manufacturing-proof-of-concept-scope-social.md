@@ -12,6 +12,6 @@
 
 A tightly scoped POC produces a real go/no-go decision. A vague one produces an impressive demo and nothing else. 🎯
 
-👉 Read our full deep dive on scoping digital twin proofs of concept: [Link to article]
+👉 Read our full deep dive on scoping digital twin proofs of concept: https://www.manifera.com/blog/digital-twin-software-vendors-for-manufacturing-proof-of-concept-scope
 
 #DigitalTwin #ManufacturingTech #IndustrialAI #CTO #SmartFactory #Manifera

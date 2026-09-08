@@ -12,6 +12,6 @@ Two engineers pick up tickets from the same sprint board. One sits three desks a
 
 The blended model doesn't fail on the org chart — it fails on the small mechanics of the sprint board. 🎯
 
-👉 Read our full framework on structuring blended in-house and vendor teams: [Link to article]
+👉 Read our full framework on structuring blended in-house and vendor teams: https://www.manifera.com/blog/blended-team-models-combining-in-house-and-vendor-engineers-on-one-sprint-board
 
 #VPEngineering #EngineeringLeadership #DedicatedDevelopmentTeam #HybridTeams #SoftwareTeamStructure #Manifera

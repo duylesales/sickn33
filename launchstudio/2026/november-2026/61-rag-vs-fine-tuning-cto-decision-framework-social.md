@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of AI architecture pro
 
 ClauseIQ's results after the rebuild: ClauseIQ now cites the exact source template for 100% of generated clauses and cut average response cost per query by 61% compared to the fine-tuned model. (€3,200, Launch & Grow Package — deployed in 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/rag-vs-fine-tuning-cto-decision-framework
 
 #LaunchStudio #Manifera #AISaaS #RAGvsFineTuning #LegalTech

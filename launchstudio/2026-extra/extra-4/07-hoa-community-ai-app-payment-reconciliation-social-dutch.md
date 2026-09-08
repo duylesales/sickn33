@@ -15,6 +15,6 @@ Bij **LaunchStudio** is afstemmingslogica als deze een terugkerende oplossing vo
 
 Zijn resultaat: de volgende factureringscyclus van VvEKas kwam overeen met nul verkeerd toegeschreven betalingen, en de ongeëvenaarde wachtrij werd binnen 48 uur weggewerkt in plaats van zich wekenlang op te stapelen. 🚀
 
-👉 Heeft uw tool te maken met echt geld en echte bankgegevens? Vraag eerst een schatting met een vast bereik aan: [Link naar artikel]
+👉 Heeft uw tool te maken met echt geld en echte bankgegevens? Vraag eerst een schatting met een vast bereik aan: https://launchstudio.eu/nl/blog/hoa-community-ai-app-payment-reconciliation
 
 #AINativeFounder #LaunchStudio #Manifera #FinTech #PaymentReconciliation

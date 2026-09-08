@@ -12,6 +12,6 @@
 
 Stop assembling a team and building an app at the same time. 🛡️
 
-👉 Read our full deep dive on offshore mobile app development in house or offshore: [Link to article]
+👉 Read our full deep dive on offshore mobile app development in house or offshore: https://www.manifera.com/blog/offshore-mobile-app-development-in-house-or-offshore
 
 #MobileAppDevelopment #Amsterdam #Vietnam #CTO #iOSDevelopment #Manifera

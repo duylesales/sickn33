@@ -12,6 +12,6 @@ Most "let's rewrite it from scratch" legacy modernization projects never hit the
 
 Stop betting the whole system on one scary weekend. 🧭
 
-👉 Read our full deep dive on legacy system modernization Gennep: [Link to article]
+👉 Read our full deep dive on legacy system modernization Gennep: https://www.manifera.com/blog/legacy-system-modernization-gennep
 
 #Gennep #LandVanCuijk #Limburg #LegacyModernization #CIO #Manifera

@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), richten we 
 
 💡 Zo ontdekte Tomasz Nowicki van Ledgerly waarom 34% van zijn Safari-gebruikers vastliepen op bankkoppelingen, terwijl Sentry al weken zweeg.
 
-👉 Lees hoe u Sentry en PostHog slim combineert: [Link naar artikel]
+👉 Lees hoe u Sentry en PostHog slim combineert: https://launchstudio.eu/nl/blog/error-tracking-vs-product-analytics-you-need-both
 
 #IndieHacker #SaaSDevelopment #ErrorTracking #PostHog #Sentry #LaunchStudio #Manifera

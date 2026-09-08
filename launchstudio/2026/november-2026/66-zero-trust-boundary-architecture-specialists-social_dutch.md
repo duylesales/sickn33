@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 AuditPilot slaagde voor de technische beveiligingsbeoordeling van de bank bij de eerste indiening, met alle 7 interne servicegrenzen gedocumenteerd en onafhankelijk verifieerbaar, en sloot vijf weken later de grootste deal in de geschiedenis van het bedrijf. (€ 6.400 (Enterprise Hardening Pakket) — voltooid in 12 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/zero-trust-boundary-architecture-specialists
 
 #LaunchStudio #Manifera #AISaaS #ZeroTrust #EnterpriseSecurity

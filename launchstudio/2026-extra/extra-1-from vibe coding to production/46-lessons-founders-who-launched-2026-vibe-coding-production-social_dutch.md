@@ -14,6 +14,6 @@ Bij **LaunchStudio** hebben we precies deze patronen geobserveerd over 160+ opge
 
 Haar resultaat: lezen dat andere founders exact haar angst hadden — en dat het ook voor hen ongegrond was — was wat haar eindelijk deed handelen na 6 maanden. 🚀
 
-👉 Ontdek wat deze terugkerende patronen betekenen voor jouw prototype: [Link naar artikel]
+👉 Ontdek wat deze terugkerende patronen betekenen voor jouw prototype: https://launchstudio.eu/nl/blog/lessons-founders-who-launched-2026-vibe-coding-production
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #StartupLessen

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineer
 
 💡 Zo voorkwam facturatietool Ledgerly dubbele uitbetalingen aan freelancers door idempotente webhook-verwerking in te voeren.
 
-👉 Lees hoe u uw achtergrondtaken en webhooks productierijp maakt: [Link naar artikel]
+👉 Lees hoe u uw achtergrondtaken en webhooks productierijp maakt: https://launchstudio.eu/nl/blog/background-jobs-what-should-never-happen-during-a-web-request
 
 #BackgroundJobs #Webhooks #Stripe #Idempotency #LaunchStudio #Manifera

@@ -14,6 +14,6 @@ Bij LaunchStudio richten we professionele API-versioning in vóórdat de eerste 
 
 Ben lanceerde 4 updates (inclusief schemamigratie) zonder incidenten — contract-tests vingen 2 fouten vooraf op. (€ 2.700 (Launch & Grow Pakket) — 10 werkdagen.) 🚀
 
-👉 Bekijk onze aanpak: [Link naar artikel]
+👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/api-versioning-diy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #APIDesign #EngineeringStrategy

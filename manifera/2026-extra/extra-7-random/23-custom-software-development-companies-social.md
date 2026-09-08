@@ -12,6 +12,6 @@
 
 The first vendor agreed with literally everything in discovery. It felt great. It also meant nobody caught the one thing that actually needed catching. 🛡️
 
-👉 Read our full deep dive on custom software development companies: [Link to article]
+👉 Read our full deep dive on custom software development companies: https://www.manifera.com/blog/custom-software-development-companies
 
 #CustomSoftware #CTO #VendorSelection #Manifera

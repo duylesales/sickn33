@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on mobile app maintenance costs: [Link to article]
+👉 Read our full guide on mobile app maintenance costs: https://www.manifera.com/blog/mobile-app-maintenance-costs
 
 #SoftwareCosts #AppDevelopment #TechBudget #CustomSoftware #CTO #Manifera

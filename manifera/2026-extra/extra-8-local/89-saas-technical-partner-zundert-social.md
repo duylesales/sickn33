@@ -12,6 +12,6 @@ Two vendors quote the same SaaS platform. Eighteen months later, one costs 60% m
 
 Judge the cost model before you judge the code. 🧭
 
-👉 Read our full deep dive on SaaS technical partner Zundert: [Link to article]
+👉 Read our full deep dive on SaaS technical partner Zundert: https://www.manifera.com/blog/saas-technical-partner-zundert
 
 #Zundert #NoordBrabant #Boomkwekerij #SaaSDevelopment #CFO #Manifera

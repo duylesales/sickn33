@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat in de praktijk: vastgepinde EU-functies, een vervangen Amerikaanse webhook-koppeling en een technisch sluitend overzicht waarmee een enterprise-contract binnen twee weken werd gesloten. 🚀
 
-👉 Bereken wat een volledige data-residentie audit voor uw stack inhoudt met de LaunchStudio prijscalculator: [Link naar artikel]
+👉 Bereken wat een volledige data-residentie audit voor uw stack inhoudt met de LaunchStudio prijscalculator: https://launchstudio.eu/nl/blog/where-your-data-actually-lives-eu-hosting-decision
 
 #SaaS #EUHosting #DataResidentie #AVG #LaunchStudio #Manifera

@@ -12,6 +12,6 @@
 
 A reference call done right stops being a formality and becomes one of the most useful steps in vendor selection. 🔍
 
-👉 Read our full deep dive on reference calls that actually reveal vendor quality: [Link to article]
+👉 Read our full deep dive on reference calls that actually reveal vendor quality: https://www.manifera.com/blog/reference-calls-that-reveal-vendor-quality-what-to-ask
 
 #ITManager #VendorDueDiligence #ReferenceChecks #VendorSelection #SoftwareProcurement #Manifera

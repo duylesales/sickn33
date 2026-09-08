@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), richten we 
 
 💡 Zo verloor Sanne Bosman van Planbord twee grote transportklanten door 4 uur stilte tijdens een crash. Na onze inrichting van uptime-alerts en een statuspagina verliep een latere storing van 90 minuten zó transparant dat ze er zelfs bedankjes voor kreeg.
 
-👉 Wat zien uw klanten als uw database over 10 minuten uitvalt? [Link naar artikel]
+👉 Wat zien uw klanten als uw database over 10 minuten uitvalt? https://launchstudio.eu/nl/blog/telling-customers-when-something-is-broken
 
 #IncidentManagement #SaaS #CustomerRetention #DevOps #LaunchStudio #Manifera

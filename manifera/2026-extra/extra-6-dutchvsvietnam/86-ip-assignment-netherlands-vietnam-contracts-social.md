@@ -12,6 +12,6 @@
 
 Upon creation, not upon completion — the distinction that closes the ambiguity gap. 🛡️
 
-👉 Read our full deep dive on ip assignment netherlands vietnam contracts: [Link to article]
+👉 Read our full deep dive on ip assignment netherlands vietnam contracts: https://www.manifera.com/blog/ip-assignment-netherlands-vietnam-contracts
 
 #CFO #IPProtection #Amsterdam #Vietnam #ContractLaw #Manifera

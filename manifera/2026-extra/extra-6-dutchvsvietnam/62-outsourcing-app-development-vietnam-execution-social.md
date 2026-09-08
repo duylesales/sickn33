@@ -12,6 +12,6 @@
 
 These four variables are visible within the first two weeks — well before a release date is at risk. 🛡️
 
-👉 Read our full deep dive on outsourcing app development vietnam execution: [Link to article]
+👉 Read our full deep dive on outsourcing app development vietnam execution: https://www.manifera.com/blog/outsourcing-app-development-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #AppDevelopment #Amsterdam #Manifera

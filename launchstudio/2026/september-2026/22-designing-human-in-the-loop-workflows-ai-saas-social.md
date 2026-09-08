@@ -14,6 +14,6 @@ At **LaunchStudio**, we've built this exact class of approval-gated architecture
 
 For Madison, automated refund errors dropped to zero, while 80% of support cases still resolved automatically. 🚀
 
-👉 Read the full case: [Link to article]
+👉 Read the full case: https://launchstudio.eu/en/blog/designing-human-in-the-loop-workflows-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #HumanInTheLoop #AIGovernance

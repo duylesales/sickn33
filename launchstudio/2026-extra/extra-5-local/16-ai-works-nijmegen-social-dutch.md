@@ -15,6 +15,6 @@ Bij **LaunchStudio** hebben we meer dan 160 projecten opgeleverd voor zakelijke 
 
 Zijn resultaat: ZorgConnect lanceerde op schema en heeft sinds de oplossing data nauwkeurig geregistreerd bij meer dan 300 patiënten met meerdere gelijktijdige aandoeningen. 🚀
 
-👉 Binnenkort een lanceringsdatum vaststellen? Laat eerst een gestructureerde review uitvoeren, terwijl er nog tijd is om te herstellen wat eruit komt: [Link naar artikel]
+👉 Binnenkort een lanceringsdatum vaststellen? Laat eerst een gestructureerde review uitvoeren, terwijl er nog tijd is om te herstellen wat eruit komt: https://launchstudio.eu/nl/blog/ai-works-nijmegen
 
 #AINativeFounder #LaunchStudio #Manifera #HealthTech #Nijmegen

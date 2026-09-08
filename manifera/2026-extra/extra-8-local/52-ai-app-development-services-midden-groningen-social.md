@@ -12,6 +12,6 @@ A Head of Product ships one AI feature a year versus one every quarter — usual
 
 A Polish logistics platform's first AI feature took eight months. Its second, built on shared infrastructure, shipped in five weeks. ⚡
 
-👉 Read our full deep dive on AI app development services in Midden-Groningen: [Link to article]
+👉 Read our full deep dive on AI app development services in Midden-Groningen: https://www.manifera.com/blog/ai-app-development-services-midden-groningen
 
 #MiddenGroningen #Groningen #AIDevelopment #HeadOfProduct #ProductLed #LogisticsTech #Manifera

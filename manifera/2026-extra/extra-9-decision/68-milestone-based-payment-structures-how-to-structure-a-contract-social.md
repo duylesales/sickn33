@@ -12,6 +12,6 @@ How much of a €400K build should leave your account before a single feature ac
 
 A milestone schedule is a governance tool, not just a payment plan. 📊
 
-👉 Read our full deep dive on structuring milestone-based software contracts: [Link to article]
+👉 Read our full deep dive on structuring milestone-based software contracts: https://www.manifera.com/blog/milestone-based-payment-structures-how-to-structure-a-contract
 
 #CFO #SoftwareContracts #PaymentTerms #VendorManagement #FinanceLeadership #ContractNegotiation #Manifera

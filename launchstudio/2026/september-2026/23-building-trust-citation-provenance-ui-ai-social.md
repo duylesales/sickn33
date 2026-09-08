@@ -14,6 +14,6 @@ At **LaunchStudio**, we've applied this same rigor to research-heavy clients lik
 
 For Daniel, answers now show clickable citations linking directly to PDF pages, raising user trust scores by 90%. 🚀
 
-👉 Dive into the details: [Link to article]
+👉 Dive into the details: https://launchstudio.eu/en/blog/building-trust-citation-provenance-ui-ai
 
 #AINativeFounder #LaunchStudio #Manifera #CitationUI #RAG

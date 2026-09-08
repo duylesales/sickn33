@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Zorgrooster launched in nine business days, the provider signed for four teams, and Ilse invoiced €2,400 with five weeks of runway left. 🚀
 
-👉 Talk to an engineer who reads AI-generated code: [Link to article]
+👉 Talk to an engineer who reads AI-generated code: https://launchstudio.eu/en/blog/three-months-of-runway-left-the-launch-decision
 
 #FounderLife #StartupGrowth #LaunchStudio #Manifera #AICoding #ProductionReady

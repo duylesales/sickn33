@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a translation marketplace app app: [Link to article]
+👉 Read the non-technical founder's guide to building a translation marketplace app app: https://www.manifera.com/blog/translation-marketplace-app-founder-guide
 
 #Localization #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

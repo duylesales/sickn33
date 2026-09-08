@@ -12,6 +12,6 @@ Specifying "cleared personnel required" for a citizen portal that touches zero c
 
 Getting the tier wrong in either direction costs you — overshoot and you overpay, undershoot and you're exposed. ⚖️
 
-👉 Read our full deep dive on government digital services vendor security clearance requirements: [Link to article]
+👉 Read our full deep dive on government digital services vendor security clearance requirements: https://www.manifera.com/blog/choosing-a-government-digital-services-vendor-security-clearance-requirements
 
 #GovTech #SecurityLead #PublicSector #DataProtection #GovernmentIT #Manifera

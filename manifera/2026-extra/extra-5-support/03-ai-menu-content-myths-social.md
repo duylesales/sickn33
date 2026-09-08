@@ -12,6 +12,6 @@
 
 Accelerate menu creation without risking food safety or customer trust! 🛡️
 
-👉 Retire the 3 biggest myths about AI menu content: [Link to article]
+👉 Retire the 3 biggest myths about AI menu content: https://www.manifera.com/blog/ai-menu-content-myths
 
 #RestaurantTech #FoodSafety #AllergenCompliance #AIContent #CustomSoftware #HospitalityTech #Manifera

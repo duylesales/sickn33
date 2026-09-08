@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 precies dit soort UX-first AI-archi
 
 Audrey's documentbewerkingscycli werden gehalveerd en de retentie steeg met 35%. (€2.200 (UI Canvas Herontwerp) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek waarom de chatbot-UI dood is: [Link naar artikel]
+👉 Ontdek waarom de chatbot-UI dood is: https://launchstudio.eu/nl/blog/death-of-the-chatbot-ui-enterprise-ai
 
 #AINativeFounder #LaunchStudio #Manifera #InvisibleAI #ProductUX #Copilot #LegalTech #AISaaS #StartupOpschalen

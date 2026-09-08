@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies het soort hiaat waar we naar zoeken voordat 
 
 Haar resultaat: Roos ving de volgende maand nog twee niet-toegewezen verzoeken op voordat ze klachten werden, beide binnen een dag opgelost. 🚀
 
-👉 Beheert u echte huurders op een door AI gebouwde tool? Ontdek wat een routing- en meldingsaudit inhoudt: [Link naar artikel]
+👉 Beheert u echte huurders op een door AI gebouwde tool? Ontdek wat een routing- en meldingsaudit inhoudt: https://launchstudio.eu/nl/blog/property-management-ai-tool-maintenance-request-routing
 
 #AINativeFounder #LaunchStudio #Manifera #PropTech #AILandlordTools

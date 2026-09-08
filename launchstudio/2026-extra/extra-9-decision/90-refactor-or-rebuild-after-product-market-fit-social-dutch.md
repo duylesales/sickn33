@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's team van 120+ engineers, voork
 
 Zijn resultaat: Casper schrapte de zes maanden nieuwbouw voor een refactor van zeven weken op twee probleemmodules, zónder productiestop, en zette het budget in voor sales en support. 🚀
 
-👉 Plan een kort adviesgesprek voor een second opinion over refactor vs. herbouw: [Link naar artikel]
+👉 Plan een kort adviesgesprek voor een second opinion over refactor vs. herbouw: https://launchstudio.eu/nl/blog/refactor-or-rebuild-after-product-market-fit
 
 #SaaS #TechnischeSchuld #ScaleUp #SoftwareArchitectuur #LaunchStudio #Manifera

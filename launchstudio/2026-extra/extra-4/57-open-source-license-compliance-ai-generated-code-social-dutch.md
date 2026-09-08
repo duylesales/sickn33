@@ -15,6 +15,6 @@ Bij **LaunchStudio** zijn beoordelingen van licentienaleving een standaardonderd
 
 Zijn resultaat: de codebase van RouteBoard doorstond een daaropvolgende informele licentiebeoordeling zonder vlaggen — een schone basis voor elk toekomstig overnamegesprek. 🚀
 
-👉 Van plan om kapitaal op te halen of te verkopen? Laat eerst de licentiestatus van uw codebase checken: [Link naar artikel]
+👉 Van plan om kapitaal op te halen of te verkopen? Laat eerst de licentiestatus van uw codebase checken: https://launchstudio.eu/nl/blog/open-source-license-compliance-ai-generated-code
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #DueDiligence

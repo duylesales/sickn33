@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, communiceren onze senior engine
 
 💡 Zo hielpen we Bram Kuiper van Fysioplan met een risicovrije databasemigratie binnen 12 werkdagen live te gaan.
 
-👉 Bekijk de 12 tech-termen die u wél moet kennen: [Link naar artikel]
+👉 Bekijk de 12 tech-termen die u wél moet kennen: https://launchstudio.eu/nl/blog/the-technical-vocabulary-worth-learning-and-what-to-skip
 
 #TechForFounders #NonTechnicalFounder #StartupStrategy #ProductManagement #LaunchStudio #Manifera

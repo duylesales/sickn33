@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: live product with real municipal partners using it, before he ever signed an equity agreement. 🚀
 
-👉 Find out if you actually need a cofounder or just need a scoping call: [Link to article]
+👉 Find out if you actually need a cofounder or just need a scoping call: https://launchstudio.eu/en/blog/launchstudio-vs-waiting-for-technical-cofounder
 
 #AINativeFounder #TechnicalCofounder #LaunchStudio #Manifera #StartupAdvice #MVP

@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 slanke, enterprise AI-architecturen
 
 Olivers API-responsgrootte daalde met 60% en de onderhoudbaarheid van de code verbeterde aanzienlijk. (€1.800 (Framework Migration Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek waarom minder abstractie leidt tot betere AI-software: [Link naar artikel]
+👉 Ontdek waarom minder abstractie leidt tot betere AI-software: https://launchstudio.eu/nl/blog/why-langchain-is-too-heavy-for-production
 
 #AINativeFounder #LaunchStudio #Manifera #LangChain #AIArchitecture #OpenAI #Anthropic #VercelAISDK #AISaaS #StartupOpschalen

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 Kaspers tweekoppige team hoefde geen Redis-beheer te leren om dit te realiseren (€2.600 (Launch & Grow Pakket) — architectuur geïmplementeerd en uitgerold in 9 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/managed-message-queue-vs-custom-event-bus
 
 #LaunchStudio #Manifera #AISaaS #MessageQueue #EventDrivenArchitecture

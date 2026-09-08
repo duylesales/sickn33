@@ -14,6 +14,6 @@ At **LaunchStudio**, we've architected reliable production AI agents since 2014 
 
 Elijah's booking collection success rate rose from 40% to 95%, with the AI now prompting users sequentially for missing details. 🚀
 
-👉 Read the full build breakdown: [Link to article]
+👉 Read the full build breakdown: https://launchstudio.eu/en/blog/building-custom-ai-agents-from-scratch
 
 #AINativeFounder #LaunchStudio #Manifera #AIAgents #ToolCalling

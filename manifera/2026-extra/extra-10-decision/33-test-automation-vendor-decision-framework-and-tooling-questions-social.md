@@ -12,6 +12,6 @@
 
 Test automation rarely fails loudly — it fails quietly, as debt that erodes trust until engineers start ignoring red results entirely. 🎯
 
-👉 Read our full deep dive on the test automation vendor decision framework: [Link to article]
+👉 Read our full deep dive on the test automation vendor decision framework: https://www.manifera.com/blog/test-automation-vendor-decision-framework-and-tooling-questions
 
 #TestAutomation #Playwright #CTO #CI_CD #QualityEngineering #SoftwareTesting #Manifera

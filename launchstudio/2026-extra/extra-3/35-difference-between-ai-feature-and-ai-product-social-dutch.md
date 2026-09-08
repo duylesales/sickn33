@@ -15,6 +15,6 @@ Bij **LaunchStudio** maken we deze afweging al vroeg in het scopinggesprek — m
 
 Zijn resultaat: een gerichte beoordeling specifiek rond de AI-shiftsuggestiefunctie, zonder onnodige herbeoordeling van de stabiele kern van WerkPlanner — wat Thomas echte kosten en tijd bespaarde ten opzichte van het hele product als nieuw AI-native behandelen. 🚀
 
-👉 Heeft u een AI-functie toegevoegd aan een bestaand product? Ontdek hoeveel ervan daadwerkelijk AI-specifieke controle nodig heeft: [Link naar artikel]
+👉 Heeft u een AI-functie toegevoegd aan een bestaand product? Ontdek hoeveel ervan daadwerkelijk AI-specifieke controle nodig heeft: https://launchstudio.eu/nl/blog/difference-between-ai-feature-and-ai-product
 
 #AIFeature #ScopingReview #AINativeFounder #LaunchStudio #Manifera

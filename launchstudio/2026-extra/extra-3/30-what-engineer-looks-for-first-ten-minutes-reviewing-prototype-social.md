@@ -15,6 +15,6 @@ At **LaunchStudio**, we apply exactly this consistent, blast-radius-ordered firs
 
 His result: the exposed key was rotated the same day, closing a real, active exposure that had existed since VrachtVolger's earliest commits. 🚀
 
-👉 Curious what the first ten minutes would find in your codebase? Let's look: [Link to article]
+👉 Curious what the first ten minutes would find in your codebase? Let's look: https://launchstudio.eu/en/blog/what-engineer-looks-for-first-ten-minutes-reviewing-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #CodeReview #SecretsManagement

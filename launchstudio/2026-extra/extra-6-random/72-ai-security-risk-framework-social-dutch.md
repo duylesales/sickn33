@@ -15,6 +15,6 @@ Bij **LaunchStudio** voert ons team in Ho Chi Minhstad — ondersteund door de m
 
 Haar resultaat: RisicoGrip handhaaft nu serverzijdige accountisolatie bij elke query, en het team van Anne herscoorde hun volledige backlog met dit kader. 🚀
 
-👉 Benieuwd wat het sluiten van uw hoogst scorende gaten zou kosten? Bereken het hier: [Link naar artikel]
+👉 Benieuwd wat het sluiten van uw hoogst scorende gaten zou kosten? Bereken het hier: https://launchstudio.eu/nl/blog/ai-security-risk-framework
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityDebt #SaaSFounders

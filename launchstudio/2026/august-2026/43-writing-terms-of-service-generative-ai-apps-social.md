@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Xavier's application achieved silky-smooth performance: App registrations proceeded with clear user agreements, reducing legal liability. (€800 (Legal Compliance Modals) — production-ready and deployed in 2 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/writing-terms-of-service-generative-ai-apps
 
 #LaunchStudio #Manifera #AISaaS #WritingTermsofServic #TechFounders

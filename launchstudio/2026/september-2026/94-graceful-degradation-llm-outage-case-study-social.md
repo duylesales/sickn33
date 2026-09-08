@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 The next outage was a non-event: zero lost notes, zero support tickets, and Nadia's trial customer converted to a full company-wide rollout two weeks later. (€1,400 (Launch Ready Package) — 5 business days, for a comparable engagement.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/graceful-degradation-llm-outage-case-study
 
 #LaunchStudio #Manifera #AISaaS #LLMOutage #GracefulDegradation

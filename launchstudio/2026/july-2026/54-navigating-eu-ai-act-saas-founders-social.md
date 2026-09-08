@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Stella's application achieved production readiness: Stella launched in full compliance with the EU AI Act High-Risk requirements, securing contracts with French and German corporations that required demonstrable regulatory compliance from their HR technology vendors. (€5,200 (EU Compliance Package) — production-ready and deployed in 16 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/navigating-eu-ai-act-saas-founders
 
 #LaunchStudio #Manifera #AISaaS #NavigatingtheEUAIAct #TechFounders

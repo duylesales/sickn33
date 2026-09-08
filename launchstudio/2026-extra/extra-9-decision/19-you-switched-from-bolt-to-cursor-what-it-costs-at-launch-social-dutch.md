@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: de verouderde deployment verwijderd, policies herschreven, de exporttaak verplaatst naar een echte wachtrij — vijf dagen werk, nul wijzigingen aan de interface, 240 betalende gebruikers. 🚀
 
-👉 Ontdek hoe codebases met gemengde tools succesvol live gingen en stuur die van u door: [Link naar artikel]
+👉 Ontdek hoe codebases met gemengde tools succesvol live gingen en stuur die van u door: https://launchstudio.eu/nl/blog/u-bent-tussentijds-overgestapt-van-bolt-naar-cursor-wat-dat-kost-bij-de-lancering
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #StartupGrowth

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See our complete breakdown on best software development company rankings: [Link to article]
+👉 See our complete breakdown on best software development company rankings: https://www.manifera.com/blog/best-software-development-company-rankings
 
 #DedicatedTeam #OffshoreDevelopment #TechLeadership #SoftwareEngineering #CTO #Manifera

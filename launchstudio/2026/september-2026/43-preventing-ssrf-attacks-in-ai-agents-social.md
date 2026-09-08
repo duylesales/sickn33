@@ -14,6 +14,6 @@ At **LaunchStudio**, Manifera has spent 11+ years since 2014 hardening exactly t
 
 Owen's scraper success rate reached 98%, securing reliable pricing data for his business. 🚀
 
-👉 See how we sandbox agent tool calls: [Link to article]
+👉 See how we sandbox agent tool calls: https://launchstudio.eu/en/blog/preventing-ssrf-attacks-in-ai-agents
 
 #AINativeFounder #LaunchStudio #Manifera #SSRFPrevention #AIAgentSecurity

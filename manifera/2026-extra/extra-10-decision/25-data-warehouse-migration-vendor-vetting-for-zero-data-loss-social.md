@@ -13,6 +13,6 @@ A warehouse migration doesn't fail loudly like an app migration. It fails quietl
 
 "Zero data loss" should be a proven commitment, not an assumption baked into the timeline. 🔍
 
-👉 Read our full deep dive on vetting a data warehouse migration vendor: [Link to article]
+👉 Read our full deep dive on vetting a data warehouse migration vendor: https://www.manifera.com/blog/data-warehouse-migration-vendor-vetting-for-zero-data-loss
 
 #DataEngineering #DataWarehouse #Snowflake #BigQuery #ITManager #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** passen wij precies deze standaard op praktijkniveau toe bij
 
 Het resultaat voor Stijn: twee echte hiaten gedicht, en een concreet raamwerk dat meer opleverde dan welk certificaat dan ook. 🚀
 
-👉 Er bestaat nog geen officiële standaard — maar wij weten precies waar een echte beoordeling naar kijkt: [Link naar artikel]
+👉 Er bestaat nog geen officiële standaard — maar wij weten precies waar een echte beoordeling naar kijkt: https://launchstudio.eu/nl/blog/code-of-ai-is-there-actually-a-coding-standard
 
 #AINativeFounder #LaunchStudio #Manifera #CodeQuality #ProductionReady

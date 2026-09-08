@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ac
 
 Her result: the enterprise attestation passed on first submission — and it became her agency's largest contract yet. 🚀
 
-👉 Bring us your next client's backend requirements: [Link to article]
+👉 Bring us your next client's backend requirements: https://launchstudio.eu/en/blog/white-label-agency-partner-enterprise-work-case-study
 
 #WhiteLabel #AgencyGrowth #LaunchStudio #Manifera #BackendEngineering #NoCode

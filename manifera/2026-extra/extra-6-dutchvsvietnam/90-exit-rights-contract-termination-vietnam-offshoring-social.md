@@ -12,6 +12,6 @@ Every offshore contract negotiation obsesses over how the relationship starts �
 
 A Helsinki retailer's undocumented handover cost €95,000 and eleven weeks of reconstruction. The next contract negotiated exit terms first — before anything else. 🔑
 
-👉 Read our full deep dive on exit rights and contract termination in Vietnam offshoring: [Link to article]
+👉 Read our full deep dive on exit rights and contract termination in Vietnam offshoring: https://www.manifera.com/blog/exit-rights-contract-termination-vietnam-offshoring
 
 #CFO #ContractNegotiation #VietnamOffshoring #ExitRights #RiskManagement #Manifera

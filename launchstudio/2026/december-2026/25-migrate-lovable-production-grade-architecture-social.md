@@ -21,6 +21,6 @@ The one thing that NEVER changes: your frontend. Not one pixel. 🛡️
 
 At **LaunchStudio**, backed by Manifera's 120+ engineers, this takes 1-3 weeks, from €800 — vs €20k-€500k for a traditional rebuild. 🚀
 
-👉 Read the full migration guide: [Link to article]
+👉 Read the full migration guide: https://launchstudio.eu/en/blog/migrate-lovable-production-grade-architecture
 
 #Lovable #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductionReady

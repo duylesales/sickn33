@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai management consulting: [Link to article]
+👉 Retire all 3 biggest myths about ai management consulting: https://www.manifera.com/blog/ai-management-consulting-myths
 
 #ConsultingTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

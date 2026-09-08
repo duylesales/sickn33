@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera engineers who design systems to avoid ho
 
 His result: 187 tenant verifications for 34 landlords across three cities in three months — zero sensitive documents ever stored on his infrastructure. 🚀
 
-👉 Tell us what sensitive data your prototype handles and we'll show you what doesn't need to be stored: [Link to article]
+👉 Tell us what sensitive data your prototype handles and we'll show you what doesn't need to be stored: https://launchstudio.eu/en/blog/proptech-tenant-verification-case-study
 
 #LaunchStudio #Manifera #GDPR #DataMinimization #VibeCoding #PropTech #SaaSFounders

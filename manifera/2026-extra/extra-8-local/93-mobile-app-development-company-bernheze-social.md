@@ -12,6 +12,6 @@ Your field app looked great in the boardroom demo. Then technicians went back to
 
 Apps that field technicians actually keep open typically pay for themselves in 12-18 months through reclaimed paperwork hours alone.
 
-👉 Read our full deep dive on mobile app development company Bernheze: [Link to article]
+👉 Read our full deep dive on mobile app development company Bernheze: https://www.manifera.com/blog/mobile-app-development-company-bernheze
 
 #Bernheze #Heesch #NoordBrabant #FieldService #MobileAppDevelopment #Manifera

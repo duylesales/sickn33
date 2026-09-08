@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies de kloof die onze technici elke week dichten
 
 Sofie's resultaat: haar verhuurders merkten het verschil nooit — behalve dat het eindelijk werkte, waarbij elk huurdersrecord nu behouden blijft over apparaten en sessies heen. 🚀
 
-👉 Hebt u een werkend AI-prototype gebouwd maar weet u niet zeker of het productierijp is?: [Link naar artikel]
+👉 Hebt u een werkend AI-prototype gebouwd maar weet u niet zeker of het productierijp is?: https://launchstudio.eu/nl/blog/how-to-make-your-own-ai-app-production
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReady #AIPrototype

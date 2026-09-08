@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, versterken onze senior engineer
 
 💡 Zo haalde huiswerkhulp Huiswerkmaatje binnen 14 dagen de formele goedkeuring van een Rotterdamse scholengemeenschap.
 
-👉 Ontdek hoe u uw edtech-prototype succesvol door de inkooptoets van scholen loodst: [Link naar artikel]
+👉 Ontdek hoe u uw edtech-prototype succesvol door de inkooptoets van scholen loodst: https://launchstudio.eu/nl/blog/edtech-prototypes-launching-into-schools-and-the-minors-problem
 
 #Edtech #Onderwijs #AVG #GDPR #LaunchStudio #Manifera

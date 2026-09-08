@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Priya's dashboard achieved production readiness: median query response time dropped from 4.2 seconds to under 850 milliseconds — an 80% reduction — with database CPU usage falling from over 90% to 20-30%. (Query optimization completed and verified in days, no frontend rebuild required.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/postgres-query-latency-case-study
 
 #LaunchStudio #Manifera #AISaaS #PostgreSQL #DatabasePerformance

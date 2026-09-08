@@ -15,6 +15,6 @@ Bij **LaunchStudio** implementeren we precies dit soort uitgebreide dataverwijde
 
 Zijn resultaat: elke datalocatie in kaart gebracht, een uitgebreid verwijderingsproces geïmplementeerd en getest tegen echte accounts. 🚀
 
-👉 Pak een gratis intro-slot van 15 minuten: [Link naar artikel]
+👉 Pak een gratis intro-slot van 15 minuten: https://launchstudio.eu/nl/blog/the-ai-privacy-issues-founders-dont-notice-until-a-user-asks
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #AIPrivacy

@@ -15,6 +15,6 @@ At **LaunchStudio**, we add exactly this review-and-hardening layer on top of AI
 
 Casper's result: ShiftSync now fails safely and visibly instead of silently, with both clinics back to trusting the schedule. 🚀
 
-👉 Confident your AI-built app is solid because you reviewed every line yourself: read why that's not the same as engineering: [Link to article]
+👉 Confident your AI-built app is solid because you reviewed every line yourself: read why that's not the same as engineering: https://launchstudio.eu/en/blog/ai-software-engineering-vs-prompting-where-the-line
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareEngineering #QATesting

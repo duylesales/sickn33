@@ -16,6 +16,6 @@ Bij **LaunchStudio** implementeren we precies deze juist-gemaate dekking standaa
 
 Zijn resultaat: 3 weken eerder gelanceerd, zonder zijn echte risico betekenisvol te verhogen. 🚀
 
-👉 Krijg de juiste hoeveelheid testen voor waar je daadwerkelijk staat: [Link naar artikel]
+👉 Krijg de juiste hoeveelheid testen voor waar je daadwerkelijk staat: https://launchstudio.eu/nl/blog/smoke-tests-vs-full-test-suites-what-you-need-launch
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

@@ -12,6 +12,6 @@ Two vendors pitched a clean-slate rewrite, cut over in one weekend. The third pi
 
 The differentiator isn't confidence — it's whether the vendor can describe what happens if module three doesn't go as planned. 🧩
 
-👉 Read our full deep dive on avoiding the big bang rewrite trap: [Link to article]
+👉 Read our full deep dive on avoiding the big bang rewrite trap: https://www.manifera.com/blog/legacy-migration-vendor-selection-avoiding-the-big-bang-rewrite
 
 #LegacyModernization #CTO #SoftwareMigration #TechDueDiligence #DigitalTransformation #Manifera

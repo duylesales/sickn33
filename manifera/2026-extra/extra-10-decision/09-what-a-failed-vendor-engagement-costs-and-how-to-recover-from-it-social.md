@@ -12,6 +12,6 @@ The vendor relationship ended badly — over budget, behind schedule, a codebase
 
 Recovery starts with an honest audit, not a rushed replacement. The failure is uncomfortable, useful information about what your process missed. 🎯
 
-👉 Read our full deep dive on the true cost of a failed vendor engagement and how to recover: [Link to article]
+👉 Read our full deep dive on the true cost of a failed vendor engagement and how to recover: https://www.manifera.com/blog/what-a-failed-vendor-engagement-costs-and-how-to-recover-from-it
 
 #CEO #VendorManagement #SoftwareOutsourcing #BusinessRecovery #TechLeadership #Manifera

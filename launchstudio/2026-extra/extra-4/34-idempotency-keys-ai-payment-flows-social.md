@@ -15,6 +15,6 @@ At **LaunchStudio**, payment-path review is a standard part of every pre-launch 
 
 Her result: Britt hasn't had a single duplicate-charge support ticket since the fix shipped. 🚀
 
-👉 Book a free 15-minute intro call before your first real customer hits this bug: [Link to article]
+👉 Book a free 15-minute intro call before your first real customer hits this bug: https://launchstudio.eu/en/blog/idempotency-keys-ai-payment-flows
 
 #AINativeFounder #LaunchStudio #Manifera #PaymentReliability #NoDoubleCharge

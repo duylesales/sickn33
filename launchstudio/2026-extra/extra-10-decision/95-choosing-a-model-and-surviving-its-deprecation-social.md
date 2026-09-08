@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a 50-application comparison set for future migrations, deprecation dates on a monitored review list, and the abstraction work delivered in 3 business days. 🚀
 
-👉 Check whether your AI feature is running on a version you actually control: [Link to article]
+👉 Check whether your AI feature is running on a version you actually control: https://launchstudio.eu/en/blog/choosing-a-model-and-surviving-its-deprecation
 
 #LLMOps #ModelDeprecation #SaaS #IndieHacker #LaunchStudio #Manifera

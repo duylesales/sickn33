@@ -12,6 +12,6 @@ Everyone internally loved the new design. Three months later, conversion hadn't 
 
 A demo that impresses a room isn't evidence a product works for the person using it alone. 🖱️
 
-👉 Read our full deep dive on UX/UI design services: [Link to article]
+👉 Read our full deep dive on UX/UI design services: https://www.manifera.com/blog/ux-ui-design-services
 
 #UXDesign #UIDesign #ProductDesign #CEO #Manifera

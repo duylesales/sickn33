@@ -14,6 +14,6 @@ Bij LaunchStudio ontwerpen we niet alleen herstelarchitecturen — we voeren de 
 
 Oskar voltooide zijn live failover in 2u 40m, ruim binnen de 4-uurs eis van het ziekenhuis. (€ 5.400 (Enterprise Hardening Pakket) — 14 werkdagen.) 🚀
 
-👉 Bekijk onze aanpak: [Link naar artikel]
+👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/choosing-partner-multi-cloud-disaster-recovery
 
 #LaunchStudio #Manifera #AISaaS #DisasterRecovery #CloudInfrastructure

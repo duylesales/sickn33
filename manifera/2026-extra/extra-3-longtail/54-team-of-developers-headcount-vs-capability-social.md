@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on team developers headcount capability: [Link to article]
+👉 Read our full guide on team developers headcount capability: https://www.manifera.com/blog/team-of-developers-headcount-vs-capability
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

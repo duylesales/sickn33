@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See our complete breakdown on evaluate custom software development company: [Link to article]
+👉 See our complete breakdown on evaluate custom software development company: https://www.manifera.com/blog/evaluate-custom-software-development-company
 
 #DedicatedTeam #OffshoreDevelopment #TechLeadership #SoftwareEngineering #CTO #Manifera

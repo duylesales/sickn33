@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on veterinary offline record sync: [Link to article]
+👉 Read our full architectural deep dive on veterinary offline record sync: https://www.manifera.com/blog/veterinary-offline-record-sync-architecture
 
 #VetTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Logan's application achieved silky-smooth performance: Document exports succeeded 100% of the time, even during peak bulk transfers. (€1,450 (API Queuing Package) — production-ready and deployed in 4 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/notion-api-pushing-ai-data-workspaces
 
 #LaunchStudio #Manifera #AISaaS #PushingAIGeneratedDa #TechFounders

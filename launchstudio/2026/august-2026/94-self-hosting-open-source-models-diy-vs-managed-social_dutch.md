@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type infrastructuurprobleem al sinds 2014 op
 
 Felix verlaagde zijn effectieve inferentiekosten met ongeveer 60% ten opzichte van zijn oorspronkelijke API-rekening — met nul ongeplande downtime. (€ 3.400 (Relaunch & Scale Pakket) — 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/self-hosting-open-source-models-diy-vs-managed
 
 #LaunchStudio #Manifera #AISaaS #OpenSourceAI #MLOps

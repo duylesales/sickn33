@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on business software development emmeloord: [Link to article]
+👉 Read our full deep dive on business software development emmeloord: https://www.manifera.com/blog/business-software-development-emmeloord
 
 #Emmeloord #Noordoostpolder #Flevoland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

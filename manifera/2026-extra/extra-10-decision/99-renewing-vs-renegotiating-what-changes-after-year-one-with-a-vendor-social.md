@@ -12,6 +12,6 @@ The renewal notice lands 30 days before the anniversary date, rate up 6% "per st
 
 The renewal notice isn't a bill to sign — it's the best negotiating moment you'll get after the original vendor selection. 🎯
 
-👉 Read our full guide to renewing vs. renegotiating a vendor contract after year one: [Link to article]
+👉 Read our full guide to renewing vs. renegotiating a vendor contract after year one: https://www.manifera.com/blog/renewing-vs-renegotiating-what-changes-after-year-one-with-a-vendor
 
 #CFO #VendorContracts #ContractRenewal #VendorManagement #Procurement #Manifera

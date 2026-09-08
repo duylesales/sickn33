@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full donor crm cost breakdown: [Link to article]
+👉 Read the full donor crm cost breakdown: https://www.manifera.com/blog/donor-crm-platform-cost-analysis
 
 #NonprofitTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

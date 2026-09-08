@@ -12,6 +12,6 @@ There's no such thing as a "FERPA-certified" vendor — no agency issues that ba
 
 Reading the DPA clause by clause beats trusting a badge that doesn't exist. 📋
 
-👉 Read our full deep dive on FERPA and student data privacy vendor due diligence: [Link to article]
+👉 Read our full deep dive on FERPA and student data privacy vendor due diligence: https://www.manifera.com/blog/edtech-software-vendors-ferpa-and-student-data-privacy-compliance
 
 #EdTech #FERPA #StudentDataPrivacy #ComplianceOfficer #K12Software #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 enterprise-compliance pipelines via Ma
 
 LaunchStudio integreerde Presidio PII-redactie voor Julian — hij doorstond de HIPAA- en AVG-audits en sloot succesvolle ziekenhuiscontracten. (€3.200 (PII Protection Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u een veilige datamaskerings-pipeline bouwt: [Link naar artikel]
+👉 Ontdek hoe u een veilige datamaskerings-pipeline bouwt: https://launchstudio.eu/nl/blog/data-masking-pii-redaction-for-llms
 
 #AINativeFounder #LaunchStudio #Manifera #PIIRedaction #DataMasking #GDPR #HIPAA #AISecurity #AISaaS #StartupOpschalen

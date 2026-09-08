@@ -12,6 +12,6 @@ Rates, stack, time zones, references — most IT Managers ask all of it. Almost 
 
 Well-run teams report 8-15% annual voluntary attrition. If a vendor can't give you their number, that's the answer. 📊
 
-👉 Read our full deep dive on the vendor turnover question buyers forget to ask: [Link to article]
+👉 Read our full deep dive on the vendor turnover question buyers forget to ask: https://www.manifera.com/blog/vendor-team-turnover-rates-the-question-buyers-forget-to-ask
 
 #ITManager #VendorEvaluation #OffshoreTeam #StaffAugmentation #TechDueDiligence #DedicatedTeam #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, our Ho Chi Minh City team — Manifera's main engineering c
 
 Her result: the itemized list of eleven issues took nine business days to close, and Iris relaunched to her pilot customer with a completion date she actually hit. 🚀
 
-👉 Stuck saying "two weeks" for the third month in a row: [Link to article]
+👉 Stuck saying "two weeks" for the third month in a row: https://launchstudio.eu/en/blog/founders-underestimate-almost-done
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrototype #ProductionReady

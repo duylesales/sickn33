@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 160+ delivered projects, we review thi
 
 Her result: Femke postponed her announcement five weeks, refactored the shared layer, launched on top of it — her third product, eight months later, took under two weeks. 🚀
 
-👉 Send us your prototype link for free feedback on your architecture: [Link to article]
+👉 Send us your prototype link for free feedback on your architecture: https://launchstudio.eu/en/blog/second-product-or-deeper-first-product
 
 #SaaS #ProductStrategy #ScaleUp #StartupGrowth #LaunchStudio #Manifera

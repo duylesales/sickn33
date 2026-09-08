@@ -12,6 +12,6 @@
 
 We automated exactly what we had, assuming it was fine because it had always worked. It turned out our staff were quietly fixing a mistake for years. 🛡️
 
-👉 Read our full deep dive on ai automation for business: [Link to article]
+👉 Read our full deep dive on ai automation for business: https://www.manifera.com/blog/ai-automation-for-business
 
 #AIAutomation #CFO #ProcessAudit #Manifera

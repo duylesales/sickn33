@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichtersteams precies dit soort continuïteits
 
 Hun resultaat: correct gedeelde toegang, operationele documentatie in eenvoudige taal, en een onafhankelijke ondersteuningsrelatie die Sanne zelfstandig kan bereiken — een gat gedicht dat sinds dag één onzichtbaar had bestaan. 🚀
 
-👉 Kan uw niet-technische medeoprichter morgen alles draaiende houden als u dat niet kunt? Zorg dat uw product niet afhankelijk is van de beschikbaarheid van één persoon: [Link naar artikel]
+👉 Kan uw niet-technische medeoprichter morgen alles draaiende houden als u dat niet kunt? Zorg dat uw product niet afhankelijk is van de beschikbaarheid van één persoon: https://launchstudio.eu/nl/blog/ai-product-non-technical-cofounder-can-maintain-alone
 
 #AINativeFounder #LaunchStudio #Manifera #BusinessContinuity #Cofounders

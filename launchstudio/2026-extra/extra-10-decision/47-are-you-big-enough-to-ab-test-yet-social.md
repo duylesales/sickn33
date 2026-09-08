@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the guardrail metric held steady, five customer calls surfaced a genuinely confusing plan-comparison table, and trial-to-paid conversion lifted by a clearer, more durable margin over two months — power analysis completed in 3 business days. 🚀
 
-👉 Find out if your traffic actually supports A/B testing yet: [Link to article]
+👉 Find out if your traffic actually supports A/B testing yet: https://launchstudio.eu/en/blog/are-you-big-enough-to-ab-test-yet
 
 #ABTesting #StatisticalSignificance #SaaSGrowth #ProductAnalytics #LaunchStudio #Manifera

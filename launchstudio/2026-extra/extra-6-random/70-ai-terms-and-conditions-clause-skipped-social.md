@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineers — 11+ years across 160+ delivered pr
 
 Her result: ContractCheck no longer sends customer-uploaded contracts to the model provider for training, with the setting confirmed disabled and documented. 🚀
 
-👉 Haven't read your AI tool's terms closely? Describe your project and we'll respond within one business day: [Link to article]
+👉 Haven't read your AI tool's terms closely? Describe your project and we'll respond within one business day: https://launchstudio.eu/en/blog/ai-terms-and-conditions-clause-skipped
 
 #AINativeFounder #LaunchStudio #Manifera #DataPrivacy #TermsOfService

@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers based in Ho Chi Minh City, part of Manifera's
 
 Her result: RegistratieHub now maintains a complete, timestamped record of every submission and edit, giving the municipality a definitive answer the next time a similar dispute arises. 🚀
 
-👉 Does your app have any record of who changed what and when: [Link to article]
+👉 Does your app have any record of who changed what and when: https://launchstudio.eu/en/blog/ai-generated-application-no-audit-trail
 
 #AINativeFounder #LaunchStudio #Manifera #AuditTrail #ProductionReady

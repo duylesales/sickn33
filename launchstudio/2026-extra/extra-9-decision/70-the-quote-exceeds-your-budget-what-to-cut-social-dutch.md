@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: gelanceerd met de essentiële scope voor € 2.850, keurig binnen budget, en de uitgestelde features drie maanden later gefinancierd. 🚀
 
-👉 Stuur ons uw externe offerte en wij laten u kosteloos zien welke onderdelen puur optioneel zijn: [Link naar artikel]
+👉 Stuur ons uw externe offerte en wij laten u kosteloos zien welke onderdelen puur optioneel zijn: https://launchstudio.eu/nl/blog/the-quote-exceeds-your-budget-what-to-cut
 
 #StartupBudget #SoftwareOntwikkeling #ProjectScope #LaunchStudio #Manifera #NoCode

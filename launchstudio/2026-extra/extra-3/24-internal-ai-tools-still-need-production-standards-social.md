@@ -15,6 +15,6 @@ At **LaunchStudio**, we review internal AI tools with the same underlying catego
 
 Her result: proper role-scoped access now protects BoekingsBoost's dashboard, closing an authentication gap nobody had specifically decided to accept. 🚀
 
-👉 Got an internal tool that's quietly outgrown its original scope? Let's find out: [Link to article]
+👉 Got an internal tool that's quietly outgrown its original scope? Let's find out: https://launchstudio.eu/en/blog/internal-ai-tools-still-need-production-standards
 
 #AINativeFounder #LaunchStudio #Manifera #AccessControl #InternalTools

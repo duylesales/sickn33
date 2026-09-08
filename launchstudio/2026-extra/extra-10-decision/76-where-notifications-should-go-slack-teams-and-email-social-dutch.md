@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we s
 
 💡 Zo besteedde Roos Hendriksen van Werkbon 6 weken aan een complexe Slack-app die door 2 klanten werd gebruikt. Na onze omvorming naar universele webhooks, een in-app notificatiebel en een ochtend-digest werd het systeem door 41 van de 60 bedrijven actief omarmd.
 
-👉 Waar verwachten uw zakelijke klanten hun notificaties te ontvangen? [Link naar artikel]
+👉 Waar verwachten uw zakelijke klanten hun notificaties te ontvangen? https://launchstudio.eu/nl/blog/where-notifications-should-go-slack-teams-and-email
 
 #Slack #MicrosoftTeams #SaaSArchitecture #ProductManagement #LaunchStudio #Manifera

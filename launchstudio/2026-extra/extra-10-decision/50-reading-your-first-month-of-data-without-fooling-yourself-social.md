@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the duplicate event was fixed in under an hour, the six-week rewrite was cancelled, and that time went into club outreach instead — the whole audit completed in 1 business day. 🚀
 
-👉 Make sure your first month of data isn't lying to you: [Link to article]
+👉 Make sure your first month of data isn't lying to you: https://launchstudio.eu/en/blog/reading-your-first-month-of-data-without-fooling-yourself
 
 #StartupMetrics #DataLiteracy #SaaSAnalytics #FounderLife #LaunchStudio #Manifera

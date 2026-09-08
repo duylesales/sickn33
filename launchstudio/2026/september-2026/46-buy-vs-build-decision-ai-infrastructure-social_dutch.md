@@ -14,6 +14,6 @@ Bij **LaunchStudio** adviseren en bouwen we sinds 2014 enterprise-architecturen 
 
 LaunchStudio integreerde managed vector search voor Layla — zoekopdrachten werden uiterst accuraat en zoektijden daalden met 80%. (€2.200 (Vector Search Integratie Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Bereken uw Kopen versus Bouwen-opties met onze prijscalculator: [Link naar artikel]
+👉 Bereken uw Kopen versus Bouwen-opties met onze prijscalculator: https://launchstudio.eu/nl/blog/buy-vs-build-decision-ai-infrastructure
 
 #AINativeFounder #LaunchStudio #Manifera #AIInfrastructure #BuyVsBuild #RAGPipeline #VectorSearch #CloudArchitecture #AISaaS #StartupOpschalen

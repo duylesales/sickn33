@@ -12,6 +12,6 @@ A warehouse error shipped the wrong pallet twice last quarter — because order 
 
 You don't need a CTO to run a smart digital transformation — you need a vendor who fills that gap honestly. 🧭
 
-👉 Read our full deep dive on SME digital transformation without an IT department: [Link to article]
+👉 Read our full deep dive on SME digital transformation without an IT department: https://www.manifera.com/blog/sme-digital-transformation-choosing-a-vendor-without-an-it-department
 
 #SmallBusiness #DigitalTransformation #SMEFounder #NoITDepartment #BusinessOwner #Manifera

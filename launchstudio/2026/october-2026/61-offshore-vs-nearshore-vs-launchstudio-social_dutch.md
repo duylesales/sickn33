@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Amara's exacte dashboard, kaartweergave en chauffeur-onboardingflow werden ongewijzigd gelanceerd — RLS beperkt nu elke zendingsquery tot de eigen vloot van de geauthenticeerde vervoerder. (€3.200 (Launch & Grow Pakket) — productieklaar en uitgerold in 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/offshore-vs-nearshore-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #OffshoreVsNearshore #MaatwerkSoftware

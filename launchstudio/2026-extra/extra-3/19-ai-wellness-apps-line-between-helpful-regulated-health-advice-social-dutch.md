@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij wellness-oprichters precies deze grens te doorde
 
 Het resultaat voor Fleur: de output-taal herzien richting algemene, duidelijk omkaderde welzijnssuggesties, opgelost voordat het een probleem werd bij het sportschoolpartnerschap. 🚀
 
-👉 Krijg duidelijkheid over waar de output van uw welzijnsproduct daadwerkelijk zit: [Link naar artikel]
+👉 Krijg duidelijkheid over waar de output van uw welzijnsproduct daadwerkelijk zit: https://launchstudio.eu/nl/blog/ai-wellness-apps-line-helpful-regulated-health-advice
 
 #AINativeFounder #LaunchStudio #Manifera #HealthTech #RegulatoryCompliance

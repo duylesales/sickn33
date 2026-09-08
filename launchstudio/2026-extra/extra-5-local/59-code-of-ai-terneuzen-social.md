@@ -15,6 +15,6 @@ At **LaunchStudio**, we apply Manifera's 160+-project enterprise review standard
 
 His result: DockFlow passed its first serious procurement review and signed its first logistics client from Terneuzen's port sector. 🚀
 
-👉 Facing a procurement question you can't answer yet? Get a documented review first: [Link to article]
+👉 Facing a procurement question you can't answer yet? Get a documented review first: https://launchstudio.eu/en/blog/code-of-ai-terneuzen
 
 #AINativeFounder #LaunchStudio #Manifera #CodeOfAI #Terneuzen

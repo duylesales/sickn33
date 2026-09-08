@@ -15,6 +15,6 @@ At **LaunchStudio** is interne toegangscontrole een standaardcontrolepunt op het
 
 Haar resultaat: individuele, op rollen afgestemde accounts, volledige rotatie van de inloggegevens en een doorlopend proces voor het verlenen en intrekken van toegang — een gat gedicht dat onzichtbaar bestond sinds haar allereerste aanstelling. 🚀
 
-👉 Laat uw interne toegang beoordelen voordat uw team de gedeelde login ontgroeit: [Link naar artikel]
+👉 Laat uw interne toegang beoordelen voordat uw team de gedeelde login ontgroeit: https://launchstudio.eu/nl/blog/ai-access-control-not-just-about-your-customers
 
 #AINativeFounder #LaunchStudio #Manifera #AccessControl #DataSecurity

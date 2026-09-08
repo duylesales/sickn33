@@ -15,6 +15,6 @@ Bij **LaunchStudio** specialiseren onze technici in Ho Chi Minh-stad zich precie
 
 Nova's resultaat: TuinRooster draait nu met productiewaardige authenticatie, geteste back-ups, actieve monitoring en een echt supportproces, op precies de frontend die ze in een weekend bouwde. 🚀
 
-👉 Net een weekendbouw uitgeleverd? Bereken ruwweg wat uw hardeningsronde zou kosten: [Link naar artikel]
+👉 Net een weekendbouw uitgeleverd? Bereken ruwweg wat uw hardeningsronde zou kosten: https://launchstudio.eu/nl/blog/build-app-with-ai-easy-20-percent
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReady #AIStartup

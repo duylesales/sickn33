@@ -12,6 +12,6 @@
 
 Resilience engineered as a named requirement — not assumed. 🛡️
 
-👉 Read our full deep dive on digital transformation partner appingedam: [Link to article]
+👉 Read our full deep dive on digital transformation partner appingedam: https://www.manifera.com/blog/digital-transformation-partner-appingedam
 
 #Appingedam #Groningen #DigitalTransformation #CTO #OperationalResilience #DisasterRecovery #Manifera

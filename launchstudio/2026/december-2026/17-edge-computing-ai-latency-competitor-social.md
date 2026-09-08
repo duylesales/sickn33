@@ -17,6 +17,6 @@ At **LaunchStudio**, backed by Manifera's offices in Amsterdam, Singapore & Ho C
 
 ⏱️ Latency compounds, it doesn't add: 3 chained AI calls at 800ms each doesn't feel like 800ms — it feels like 2.4 seconds of dead air unless you show progress.
 
-👉 Read why latency is your biggest competitor: [Link to article]
+👉 Read why latency is your biggest competitor: https://launchstudio.eu/en/blog/edge-computing-ai-latency-competitor
 
 #EdgeComputing #LaunchStudio #Manifera #AINativeFounder #Performance #SaaS

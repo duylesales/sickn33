@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), helpen we s
 
 💡 Zo zat Jasper Middelkoop van Bonnenbox vast in 3 dagen support per week. 61% bleek terug te voeren op 4 simpele interfacefouten. Binnen 4 dagen losten we dit op en daalde zijn supportdruk direct met **66%**.
 
-👉 Hoeveel uur per week besteedt u aan vragen die voorkomen hadden kunnen worden door een betere knop? [Link naar artikel]
+👉 Hoeveel uur per week besteedt u aan vragen die voorkomen hadden kunnen worden door een betere knop? https://launchstudio.eu/nl/blog/support-when-you-are-the-only-person-answering
 
 #SaaS #ProductManagement #CustomerSupport #FounderLife #UXDesign #LaunchStudio #Manifera

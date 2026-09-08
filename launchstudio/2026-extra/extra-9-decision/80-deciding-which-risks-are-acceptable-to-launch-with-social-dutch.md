@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Het resultaat: drie blokkades opgelost in negen dagen voor € 2.900, live gegaan met de rest gemonitord — één uitgesteld item is inmiddels gefaseerd aangepakt. 🚀
 
-👉 Vraag een vaste prijsopgave en risico-analyse aan voor uw product: [Link naar artikel]
+👉 Vraag een vaste prijsopgave en risico-analyse aan voor uw product: https://launchstudio.eu/nl/blog/deciding-which-risks-are-acceptable-to-launch-with
 
 #SaaS #RiskManagement #LaunchStudio #Manifera #StartupGrowth #ProductionReady

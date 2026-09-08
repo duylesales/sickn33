@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring over 
 
 Quirijns resultaat: FactuurFlow live in 3 werkdagen voor €950 — een fractie van wat hij had begroot op basis van andermans project. 🚀
 
-👉 Krijg uw daadwerkelijke tijdlijn, geen gok: [Link naar artikel]
+👉 Krijg uw daadwerkelijke tijdlijn, geen gok: https://launchstudio.eu/nl/blog/why-some-prototypes-need-three-days-others-three-weeks
 
 #LaunchStudio #ScopingCall #SaaS #Manifera #ScaleUp #AIPrototype #Tijdlijn

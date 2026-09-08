@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type AI-infrastructuur en GPU-migratiev
 
 Stella's platform werd hyper-winstgevend: Haar maandelijkse hostingkosten daalden naar €350 en de brutomarge steeg van 20% naar maar liefst 85%. (€3.800 (GPU Hosting Migratie) — productieklaar en binnen 9 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/economics-open-source-vs-api-models-ai
 
 #LaunchStudio #Manifera #AISaaS #OpenSourceAI #Llama3 #GPUHosting #vLLM #SaaSMarges #TechFounders #StartupOpschalen

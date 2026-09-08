@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: enforcement rebuilt in 3 business days — three of the five over-limit accounts upgraded, and invoice creation got measurably faster for her largest customers. 🚀
 
-👉 Check whether your plan limits would survive a bulk import: [Link to article]
+👉 Check whether your plan limits would survive a bulk import: https://launchstudio.eu/en/blog/plan-limits-and-what-happens-when-someone-hits-one
 
 #SaaS #Pricing #ProductEngineering #IndieHacker #LaunchStudio #Manifera

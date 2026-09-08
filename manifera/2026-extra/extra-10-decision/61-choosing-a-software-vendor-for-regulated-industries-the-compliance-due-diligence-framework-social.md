@@ -12,6 +12,6 @@
 
 A vendor confident in their compliance posture produces this evidence in days — one who stalls just told you something a deck never would. 🎯
 
-👉 Read our full compliance due diligence framework for regulated-industry vendors: [Link to article]
+👉 Read our full compliance due diligence framework for regulated-industry vendors: https://www.manifera.com/blog/choosing-a-software-vendor-for-regulated-industries-the-compliance-due-diligence-framework
 
 #RegulatedIndustries #ComplianceDueDiligence #SOC2 #VendorRiskManagement #CTO #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Het resultaat: in drie weken herbouwd naar maatwerkcode voor € 6.800, hostingkosten daalden van € 449 naar € 49, en de enterprise-deal werd getekend. 🚀
 
-👉 Laat ons uw no-code app zien en we vertellen u exact hoe sterk uw lock-in is: [Link naar artikel]
+👉 Laat ons uw no-code app zien en we vertellen u exact hoe sterk uw lock-in is: https://launchstudio.eu/nl/blog/no-code-lock-in-deciding-when-to-get-out
 
 #NoCode #AINativeFounder #LaunchStudio #Manifera #FounderLife #StartupGrowth

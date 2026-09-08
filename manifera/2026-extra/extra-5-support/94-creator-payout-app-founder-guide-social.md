@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a creator payout app app: [Link to article]
+👉 Read the non-technical founder's guide to building a creator payout app app: https://www.manifera.com/blog/creator-payout-app-founder-guide
 
 #CreatorEconomy #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

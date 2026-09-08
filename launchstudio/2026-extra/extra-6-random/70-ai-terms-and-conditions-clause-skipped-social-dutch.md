@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengen de technici van Manifera — 11+ jaar ervaring over
 
 Haar resultaat: ContractCheck stuurt niet langer door klanten geüploade contracten naar de modelaanbieder voor training, met de instelling bevestigd uitgeschakeld en gedocumenteerd. 🚀
 
-👉 Nog niet grondig de voorwaarden van uw AI-tool gelezen? Beschrijf uw project en wij reageren binnen één werkdag: [Link naar artikel]
+👉 Nog niet grondig de voorwaarden van uw AI-tool gelezen? Beschrijf uw project en wij reageren binnen één werkdag: https://launchstudio.eu/nl/blog/ai-terms-and-conditions-clause-skipped
 
 #AINativeFounder #LaunchStudio #Manifera #DataPrivacy #TermsOfService

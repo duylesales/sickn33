@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gebouwd op Manifera's 11+ jaar backend-ervaring, engineere
 
 Anouks resultaat: 71% van de mislukte betalingen automatisch hersteld, €2.800 MRR behouden, en KaasKist groeide van 85 naar 480 abonnees zonder een lekkende emmer. 🚀
 
-👉 Ontdek hoe u uw abonnementsfacturatie waterdicht maakt vóórdat u opschaalt: [Link naar artikel]
+👉 Ontdek hoe u uw abonnementsfacturatie waterdicht maakt vóórdat u opschaalt: https://launchstudio.eu/nl/blog/subscription-box-dunning-retry-logic-case-study
 
 #LaunchStudio #Dunning #SaaS #Stripe #AbonnementenBox #Retentie #Manifera

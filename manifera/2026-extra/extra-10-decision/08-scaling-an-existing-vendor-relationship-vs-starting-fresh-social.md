@@ -12,6 +12,6 @@ Headcount approval just came through for a bigger build. Your current vendor has
 
 The verification gate — proving the new capability before committing full scope — protects the decision more than which path you pick. 🎯
 
-👉 Read our full deep dive on scaling an existing vendor vs. starting fresh: [Link to article]
+👉 Read our full deep dive on scaling an existing vendor vs. starting fresh: https://www.manifera.com/blog/scaling-an-existing-vendor-relationship-vs-starting-fresh
 
 #CTO #VendorManagement #TechScaling #SoftwareOutsourcing #EngineeringLeadership #Manifera

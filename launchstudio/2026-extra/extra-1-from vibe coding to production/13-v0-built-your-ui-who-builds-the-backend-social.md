@@ -16,6 +16,6 @@ At **LaunchStudio**, we build the complete backend layer around your existing v0
 
 Her result: launched 6 weeks later with the identical design, now genuinely functional behind every screen. 🚀
 
-👉 Bring us your v0 interface and describe what it needs to actually do: [Link to article]
+👉 Bring us your v0 interface and describe what it needs to actually do: https://launchstudio.eu/en/blog/v0-built-your-ui-who-builds-the-backend
 
 #v0 #AINativeFounder #LaunchStudio #Manifera #Backend

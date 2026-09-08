@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on maas realtime feed degradation: [Link to article]
+👉 Read our full architectural deep dive on maas realtime feed degradation: https://www.manifera.com/blog/maas-realtime-feed-degradation-architecture
 
 #TransitTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

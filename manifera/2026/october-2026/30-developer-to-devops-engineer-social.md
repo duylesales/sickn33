@@ -12,6 +12,6 @@ At **Manifera**, our Hybrid Hub (Amsterdam - Vietnam) enforces full-stack accoun
 ✅ The entire Pod owns the code from local development all the way to Production! 🛡️
 
 Stop building operational silos. Start empowering your engineering pods! ⚡
-👉 Why the dedicated DevOps role is becoming obsolete: [Link to article]
+👉 Why the dedicated DevOps role is becoming obsolete: https://www.manifera.com/blog/developer-to-devops-engineer
 
 #DevSecOps #DevOps #SoftwareEngineering #TechLeadership #CTO #CloudNative #VietnamTech #AmsterdamBusiness #Manifera

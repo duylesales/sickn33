@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies het soort stille logische hiaat waar de meer
 
 Haar resultaat: elke nieuwe boeking wordt nu gevalideerd aan de hand van actuele, niet-verlopen vaccinatiegegevens, wat exploitanten van kinderopvang een realtime nalevingsoverzicht geeft in plaats van een statische momentopname van de aanmeldingsdag. 🚀
 
-👉 Weet u niet zeker of uw boekingsapp tijdgevoelige gegevens opnieuw controleert? Loop eerst een technische beoordeling door: [Link naar artikel]
+👉 Weet u niet zeker of uw boekingsapp tijdgevoelige gegevens opnieuw controleert? Loop eerst een technische beoordeling door: https://launchstudio.eu/nl/blog/pet-care-ai-booking-app-vaccination-record-liability
 
 #AINativeFounder #LaunchStudio #Manifera #PetTech #AILiability

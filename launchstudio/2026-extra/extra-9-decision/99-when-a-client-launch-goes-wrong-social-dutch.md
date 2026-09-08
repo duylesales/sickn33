@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring voor geregul
 
 Zijn resultaat: Niels handelde een webhook-storing zó kalm en transparant af dat de klant, die aanvankelijk twijfelde, zijn bureau behield voor nog twee vervolglanceringen. 🚀
 
-👉 Laat direct een ervaren engineer meekijken bij een actueel incident: [Link naar artikel]
+👉 Laat direct een ervaren engineer meekijken bij een actueel incident: https://launchstudio.eu/nl/blog/wanneer-een-klantlancering-misgaat
 
 #BureauLeven #WhiteLabel #Klantvertrouwen #IncidentResponse #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat bias testing as a standard consideration for hirin
 
 Koen's result: the pattern driving factor identified and adjusted, re-verified with the same test — concrete, tested proof of fairness for the enterprise client. 🚀
 
-👉 Get your hiring tool tested for the pattern your own use of it would never surface: [Link to article]
+👉 Get your hiring tool tested for the pattern your own use of it would never surface: https://launchstudio.eu/en/blog/ai-hiring-tools-bias-testing-production-readiness-item
 
 #AINativeFounder #LaunchStudio #Manifera #ResponsibleAI #HRTech

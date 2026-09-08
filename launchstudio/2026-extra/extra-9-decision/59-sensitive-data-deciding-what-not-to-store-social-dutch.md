@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Het resultaat: overbodige velden gesaneerd, actieve dossiers conform versleuteld en een databaseschema dat glansrijk door de zakelijke veiligheidsaudit kwam. 🚀
 
-👉 Stuur ons uw prototypelink voor kosteloze feedback over wat uw database ongemerkt opslaat: [Link naar artikel]
+👉 Stuur ons uw prototypelink voor kosteloze feedback over wat uw database ongemerkt opslaat: https://launchstudio.eu/nl/blog/sensitive-data-deciding-what-not-to-store
 
 #IndieHacker #Dataminimalisatie #CyberSecurity #SaaS #LaunchStudio #Manifera

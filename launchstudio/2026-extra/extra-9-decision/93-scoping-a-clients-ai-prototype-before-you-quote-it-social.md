@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years turning AI prototypes into p
 
 Her result: Sanne requoted at €4,200 instead of €1,800, explained the specific security gap plainly, and her client approved the revised number without pushback. 🚀
 
-👉 Send us the prototype link before you quote your client: [Link to article]
+👉 Send us the prototype link before you quote your client: https://launchstudio.eu/en/blog/scoping-a-clients-ai-prototype-before-you-quote-it
 
 #AgencyLife #WhiteLabel #AICoding #ClientProposals #LaunchStudio #Manifera

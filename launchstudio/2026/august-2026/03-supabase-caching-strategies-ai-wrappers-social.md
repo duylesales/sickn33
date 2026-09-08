@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Ethan's application achieved silky-smooth performance: The database remained stable under 4,000 concurrent sessions, and query latency dropped by 75%. (€1,900 (Database Scale Package) — production-ready and deployed in 5 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/supabase-caching-strategies-ai-wrappers
 
 #LaunchStudio #Manifera #AISaaS #SupabaseCachingStrat #TechFounders

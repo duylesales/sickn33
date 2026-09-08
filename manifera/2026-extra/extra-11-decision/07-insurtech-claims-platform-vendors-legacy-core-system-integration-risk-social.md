@@ -12,6 +12,6 @@ The claims platform demo was flawless. Then someone asked how it writes back to 
 
 Integration risk doesn't show up in the demo. It shows up in the gap between the vendor's assumptions and your core system's reality. 🎯
 
-👉 Read our full deep dive on claims platform legacy integration risk: [Link to article]
+👉 Read our full deep dive on claims platform legacy integration risk: https://www.manifera.com/blog/insurtech-claims-platform-vendors-legacy-core-system-integration-risk
 
 #InsurTech #ClaimsManagement #ITManager #LegacySystems #SystemIntegration #Manifera

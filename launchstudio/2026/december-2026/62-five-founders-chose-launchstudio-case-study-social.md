@@ -14,6 +14,6 @@ At LaunchStudio, we've been closing exactly this agency-fit gap since 2014 throu
 
 Priya's platform launched production-ready with her original Lovable UI unchanged — at roughly 6% of the agency's quoted cost. (€2,900 Launch & Grow package — 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/five-founders-chose-launchstudio-case-study
 
 #LaunchStudio #Manifera #AISaaS #FixedPriceDev #StartupFounders

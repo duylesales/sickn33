@@ -12,6 +12,6 @@
 
 The first time a better model came out, switching cost us almost as much as building the product. The second time, it took two weeks. 🛡️
 
-👉 Read our full deep dive on how to build an ai product: [Link to article]
+👉 Read our full deep dive on how to build an ai product: https://www.manifera.com/blog/how-to-build-an-ai-product
 
 #AIProduct #CEO #AIArchitecture #Manifera

@@ -24,6 +24,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we A
 
 💡 Zo zag Ruben Aarts van Zorgnotitie een enterprise-deal met 11 fysiotherapiepraktijken stranden op AVG-vragen. Binnen 4 dagen richtten we automatische redactie in, sloten een zakelijke DPA af en bouwden een opt-out toggle: de zorggroep tekende alsnog!
 
-👉 Weet u exact wat uw antwoord is als een enterprise-klant morgen vraagt waar zijn data belandt? [Link naar artikel]
+👉 Weet u exact wat uw antwoord is als een enterprise-klant morgen vraagt waar zijn data belandt? https://launchstudio.eu/nl/blog/customer-data-and-third-party-models-what-leaves-your-system
 
 #GDPR #AVG #Privacy #AISecurity #SaaS #HealthTech #LaunchStudio #Manifera

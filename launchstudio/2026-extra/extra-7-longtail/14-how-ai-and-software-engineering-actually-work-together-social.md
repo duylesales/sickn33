@@ -15,6 +15,6 @@ At **LaunchStudio**, we scope fixes to what's actually missing, not what a rebui
 
 Ingrid's result: what Voorraadslim actually needed cost a tenth of the original quote, and she still doesn't have to think about hosting. 🚀
 
-👉 Sitting on a scary five-figure quote for an app that mostly already works? See the real cost breakdown: [Link to article]
+👉 Sitting on a scary five-figure quote for an app that mostly already works? See the real cost breakdown: https://launchstudio.eu/en/blog/how-ai-and-software-engineering-actually-work-together-at-launchstudio
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSPricing #InventoryTech

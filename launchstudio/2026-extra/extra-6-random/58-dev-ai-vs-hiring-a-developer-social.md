@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineers working out of Singapore exist specifi
 
 His result: ToegangsPoort now runs on infrastructure sized correctly for its actual growth curve, avoiding both the original over-commitment and a costly second migration. 🚀
 
-👉 Calling your AI coding tool "basically my developer"? Find out where that stops being true: [Link to article]
+👉 Calling your AI coding tool "basically my developer"? Find out where that stops being true: https://launchstudio.eu/en/blog/dev-ai-vs-hiring-a-developer
 
 #AINativeFounder #LaunchStudio #Manifera #DevAI #ProductionReady

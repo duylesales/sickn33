@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Zijn resultaat: autorisatie geconsolideerd achter één uniforme toegangslaag over alle 31 endpoints binnen vijf dagen, met behoud van frontend en workflow. 🚀
 
-👉 Geef ons alleen-lezen toegang tot uw repository — bevindingen eerst, offerte daarna: [Link naar artikel]
+👉 Geef ons alleen-lezen toegang tot uw repository — bevindingen eerst, offerte daarna: https://launchstudio.eu/nl/blog/wanneer-een-ai-agent-uw-backend-heeft-geschreven-hoe-beoordeelt-u-wat-u-niet-kunt-lezen
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #SaaS

@@ -12,6 +12,6 @@ The dashboard is live. The vendor called it a success. Your unified customer pro
 
 A unified profile is worthless if your marketing team doesn't trust it enough to build a campaign on. 🎯
 
-👉 Read our full deep dive on choosing a CDP implementation vendor: [Link to article]
+👉 Read our full deep dive on choosing a CDP implementation vendor: https://www.manifera.com/blog/choosing-a-vendor-for-customer-data-platform-implementation
 
 #CDP #CustomerDataPlatform #MarTech #CMO #DataStrategy #FirstPartyData #Manifera

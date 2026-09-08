@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen we precies dit patroon als onderdeel van onze toegan
 
 Zijn resultaat: server-side rechtenverificatie toegevoegd aan elk documentupdate-verzoek — delingsconfiguratie voor coaches ongewijzigd. 🚀
 
-👉 Loop met ons door wat je gebouwd hebt — we reageren binnen een werkdag: [Link naar artikel]
+👉 Loop met ons door wat je gebouwd hebt — we reageren binnen een werkdag: https://launchstudio.eu/nl/blog/ai-software-programming-gets-you-80-percent-whats-the-other-20
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

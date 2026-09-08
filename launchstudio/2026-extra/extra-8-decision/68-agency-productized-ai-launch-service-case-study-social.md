@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's engineering team, agencies get invisib
 
 His result: three new retainer clients and a service line that didn't exist six months earlier, now his highest-margin offering. 🚀
 
-👉 Tell us about your agency and the clients asking for launch services: [Link to article]
+👉 Tell us about your agency and the clients asking for launch services: https://launchstudio.eu/en/blog/agency-productized-ai-launch-service-case-study
 
 #LaunchStudio #Manifera #WhiteLabel #AgencyPartner #VibeCoding #ProductizedService #FixedPrice

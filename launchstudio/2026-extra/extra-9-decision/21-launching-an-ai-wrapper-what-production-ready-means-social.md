@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: cost per contract review fell about 70%, and four unprofitable accounts became the four most profitable. 🚀
 
-👉 Run your token math with the price calculator: [Link to article]
+👉 Run your token math with the price calculator: https://launchstudio.eu/en/blog/launching-an-ai-wrapper-what-production-ready-means
 
 #SaaS #AIWrapper #LaunchStudio #Manifera #ProductionReady #StartupGrowth

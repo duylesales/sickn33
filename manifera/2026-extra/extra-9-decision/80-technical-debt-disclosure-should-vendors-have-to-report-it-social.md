@@ -12,6 +12,6 @@ The feature shipped on time. The demo worked. Eighteen months later, a new hire 
 
 Undocumented handovers took 30-45% longer to reach full productivity in codebases we've reviewed. Disclosure isn't a courtesy — it's a cost-of-ownership issue. 📉
 
-👉 Read our full deep dive on whether vendors should have to disclose technical debt: [Link to article]
+👉 Read our full deep dive on whether vendors should have to disclose technical debt: https://www.manifera.com/blog/technical-debt-disclosure-should-vendors-have-to-report-it
 
 #CTO #TechnicalDebt #SoftwareQuality #VendorTransparency #EngineeringLeadership #CodeQuality #Manifera

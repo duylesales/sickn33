@@ -12,6 +12,6 @@
 
 The gap exists whether or not anyone schedules it. It only gets used if someone commits to it. 🛡️
 
-👉 Read our full deep dive on timezone overlap netherlands vietnam: [Link to article]
+👉 Read our full deep dive on timezone overlap netherlands vietnam: https://www.manifera.com/blog/timezone-overlap-netherlands-vietnam
 
 #VPEngineering #Amsterdam #Vietnam #RemoteTeams #Manifera

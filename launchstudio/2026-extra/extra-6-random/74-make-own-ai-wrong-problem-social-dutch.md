@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengt ons team — waaronder engineers gevestigd in Singap
 
 Haar resultaat: de ticketroutering van EigenModel versloeg haar eigen trainingspogingen, gebouwd in dagen in plaats van de al bestede zes weken. 🚀
 
-👉 Staat u op het punt uw eigen model te gaan trainen? Boek eerst een gratis intro-gesprek van 15 minuten: [Link naar artikel]
+👉 Staat u op het punt uw eigen model te gaan trainen? Boek eerst een gratis intro-gesprek van 15 minuten: https://launchstudio.eu/nl/blog/make-own-ai-wrong-problem
 
 #AINativeFounder #LaunchStudio #Manifera #PromptEngineering #AIStrategy

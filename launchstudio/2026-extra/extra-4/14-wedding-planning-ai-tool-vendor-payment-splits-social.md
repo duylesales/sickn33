@@ -15,6 +15,6 @@ At **LaunchStudio**, restructuring payment data models — without touching the 
 
 Amber's result: BruidsBudget's planners can now confirm full vendor payment status for any wedding in under a minute, and the tool has since coordinated wedding vendor payments without a single manual reconciliation call. 🚀
 
-👉 Handling real money across multiple parties in your app? See how LaunchStudio scopes backend restructuring like this: [Link to article]
+👉 Handling real money across multiple parties in your app? See how LaunchStudio scopes backend restructuring like this: https://launchstudio.eu/en/blog/wedding-planning-ai-tool-vendor-payment-splits
 
 #AINativeFounder #LaunchStudio #Manifera #WeddingTech #Fintech

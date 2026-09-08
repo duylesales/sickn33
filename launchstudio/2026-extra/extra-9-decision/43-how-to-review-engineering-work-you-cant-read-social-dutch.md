@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: een checklist-item dat de oprichtster zelf formuleerde bracht een datalek op de routebriefjes aan het licht, binnen een dag gerepareerd. 🚀
 
-👉 Plan een kennismaking van 15 minuten en ontvang direct een concept-acceptatielijst voor uw product: [Link naar artikel]
+👉 Plan een kennismaking van 15 minuten en ontvang direct een concept-acceptatielijst voor uw product: https://launchstudio.eu/nl/blog/how-to-review-engineering-work-you-cant-read
 
 #AIOprichter #SoftwareOntwikkeling #LaunchStudio #Manifera #NoCode #StartupSucces

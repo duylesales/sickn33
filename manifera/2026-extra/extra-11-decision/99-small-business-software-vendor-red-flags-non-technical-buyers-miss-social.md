@@ -12,6 +12,6 @@ $22,000 paid. Every milestone approved. Then she asked for the source code to sw
 
 You don't need to code to protect yourself — you need the right five questions. ✅
 
-👉 Read our full deep dive on small business vendor red flags: [Link to article]
+👉 Read our full deep dive on small business vendor red flags: https://www.manifera.com/blog/small-business-software-vendor-red-flags-non-technical-buyers-miss
 
 #SmallBusiness #FounderTips #SoftwareVendor #DueDiligence #SMB #Manifera

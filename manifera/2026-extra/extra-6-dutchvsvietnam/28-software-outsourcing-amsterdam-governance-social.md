@@ -12,6 +12,6 @@
 
 A 8-15% governance premium against a €50,000-€100,000 exposure is one of the easier line items to approve. 🛡️
 
-👉 Read our full deep dive on software outsourcing amsterdam governance: [Link to article]
+👉 Read our full deep dive on software outsourcing amsterdam governance: https://www.manifera.com/blog/software-outsourcing-amsterdam-governance
 
 #Amsterdam #CFO #RiskManagement #SoftwareOutsourcing #GDPR #Manifera

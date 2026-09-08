@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on port logistics vessel scheduling: [Link to article]
+👉 Read our full architectural deep dive on port logistics vessel scheduling: https://www.manifera.com/blog/port-logistics-vessel-scheduling-architecture
 
 #MaritimeTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

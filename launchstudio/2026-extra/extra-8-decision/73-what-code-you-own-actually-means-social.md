@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's team, "you own the code" means you can
 
 Her result: full practical ownership across repo, database, and deployment — plus the production hardening she'd been waiting three months for — in 9 business days. 🚀
 
-👉 Ask any development partner to meet this checklist before you sign: [Link to article]
+👉 Ask any development partner to meet this checklist before you sign: https://launchstudio.eu/en/blog/what-code-you-own-actually-means
 
 #LaunchStudio #Manifera #CodeOwnership #VibeCoding #AINativeFounder #ProductionReady #StartupAdvice

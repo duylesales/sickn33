@@ -15,6 +15,6 @@ Bij **LaunchStudio** gebruiken wij precies dit raamwerk van drie vragen tijdens 
 
 Haar resultaat: een gerichte beoordeling voltooid voordat de pilot begon, waarmee twee hiaten werden gedicht voordat de echte gegevens en gebruikers van het bureau ze ooit raakten. 🚀
 
-👉 Beantwoord drie eerlijke vragen en ontdek waar uw prototype daadwerkelijk staat: [Link naar artikel]
+👉 Beantwoord drie eerlijke vragen en ontdek waar uw prototype daadwerkelijk staat: https://launchstudio.eu/nl/blog/three-questions-decide-security-review-now
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityReview #StartupFounders

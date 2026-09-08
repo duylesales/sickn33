@@ -14,6 +14,6 @@ Bij **LaunchStudio** controleren wij cookietoestemming op netwerkniveau, niet al
 
 Haar resultaat: de site van StudioLicht komt nu, op netwerkniveau, precies overeen met wat de banner belooft. 🚀
 
-👉 Onlangs de netwerkverzoeken van uw eigen site gecontroleerd tegenover wat uw banner belooft? Ontdek hoe wij dit beoordelen: [Link naar artikel]
+👉 Onlangs de netwerkverzoeken van uw eigen site gecontroleerd tegenover wat uw banner belooft? Ontdek hoe wij dit beoordelen: https://launchstudio.eu/nl/blog/cookie-consent-implementation-ai-website
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #CookieConsent

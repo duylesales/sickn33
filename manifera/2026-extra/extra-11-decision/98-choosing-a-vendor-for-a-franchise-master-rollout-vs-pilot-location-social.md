@@ -12,6 +12,6 @@ Pilot succeeded at 3 flagship locations. Four locations into the 60-site rollout
 
 A pilot only earns its name if it's designed to fail informatively. ✅
 
-👉 Read our full deep dive on franchise master rollout vs. pilot vendor selection: [Link to article]
+👉 Read our full deep dive on franchise master rollout vs. pilot vendor selection: https://www.manifera.com/blog/choosing-a-vendor-for-a-franchise-master-rollout-vs-pilot-location
 
 #FranchiseTech #MultiLocation #Rollout #FounderLife #RetailTech #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a waste pickup app app: [Link to article]
+👉 Read the non-technical founder's guide to building a waste pickup app app: https://www.manifera.com/blog/waste-pickup-app-founder-guide
 
 #Cleantech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

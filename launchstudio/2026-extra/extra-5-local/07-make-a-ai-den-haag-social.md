@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's work for institutional clients like TNO shapes t
 
 The same IT team that flagged the issue signed off on PolicyPilot for full deployment after the fix. 🚀
 
-👉 Making an AI product for institutional clients? Get your backend reviewed first: [Link to article]
+👉 Making an AI product for institutional clients? Get your backend reviewed first: https://launchstudio.eu/en/blog/make-a-ai-den-haag
 
 #AINativeFounder #LaunchStudio #Manifera #MakeAnAIProduct #DenHaag

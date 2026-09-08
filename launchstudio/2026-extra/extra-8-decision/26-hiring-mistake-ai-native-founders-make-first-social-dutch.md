@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, herk
 
 Twans resultaat: drie gaten in het beheer van geheimen gedicht in 7 werkdagen voor €1.900 — en de junior developer eindelijk ingezet waar hij wél goed in is. 🚀
 
-👉 Beschrijf uw probleem voordat u een vacature plaatst: [Link naar artikel]
+👉 Beschrijf uw probleem voordat u een vacature plaatst: https://launchstudio.eu/nl/blog/hiring-mistake-ai-native-founders-make-first
 
 #LaunchStudio #Werving #AINative #Manifera #SaaS #TechnischeSchuld #Oprichters

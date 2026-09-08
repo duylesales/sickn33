@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: order creation returned to well under a second regardless of endpoint health, with a customer-facing delivery log, manual replay, and automatic disabling after sustained failure. 🚀
 
-👉 See what your integrations are actually promising: [Link to article]
+👉 See what your integrations are actually promising: https://launchstudio.eu/en/blog/webhooks-you-send-and-the-promises-they-make
 
 #WebDev #API #SaaS #IndieHacker #LaunchStudio #Manifera

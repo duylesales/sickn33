@@ -12,6 +12,6 @@
 
 Modernization that reduces risk instead of concentrating it. 🛡️
 
-👉 Read our full deep dive on legacy system modernization hardenberg: [Link to article]
+👉 Read our full deep dive on legacy system modernization hardenberg: https://www.manifera.com/blog/legacy-system-modernization-hardenberg
 
 #Hardenberg #Overijssel #ManufacturingTech #VPEngineering #LegacyModernization #StranglerPattern #Manifera

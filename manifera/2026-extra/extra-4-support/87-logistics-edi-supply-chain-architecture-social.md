@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on logistics edi supply chain: [Link to article]
+👉 Read our full architectural deep dive on logistics edi supply chain: https://www.manifera.com/blog/logistics-edi-supply-chain-architecture
 
 #LogisticsTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** zijn configuratie-audits zoals deze een van de meest voorko
 
 Haar resultaat: Sophie heeft nu één bron van waarheid voor elk credential waar FactuurKoppel van afhankelijk is — rotatie is nu een taak van vijf minuten in plaats van een stressvolle middag. 🚀
 
-👉 Zou u vandaag een gecompromitteerde sleutel binnen vijf minuten kunnen vervangen? Kom erachter: [Link naar artikel]
+👉 Zou u vandaag een gecompromitteerde sleutel binnen vijf minuten kunnen vervangen? Kom erachter: https://launchstudio.eu/nl/blog/env-variable-sprawl-config-debt-ai-tools
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #AppSecurity

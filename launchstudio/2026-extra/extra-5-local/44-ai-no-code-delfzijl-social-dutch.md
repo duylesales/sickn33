@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies het type gat waar de engineers van Manifera 
 
 Zijn resultaat: PortPulse verwerkt nu veilig dagelijkse uploads van meer dan een dozijn lokale leveranciers, zonder blootstelling aan kwaadaardige bestanden. 🚀
 
-👉 Heeft u een no-code AI-product dat bestandsuploads verwerkt? Beschrijf uw project, wij reageren binnen een dag: [Link naar artikel]
+👉 Heeft u een no-code AI-product dat bestandsuploads verwerkt? Beschrijf uw project, wij reageren binnen een dag: https://launchstudio.eu/nl/blog/ai-no-code-delfzijl
 
 #AINativeFounder #LaunchStudio #Manifera #AINoCode #Delfzijl

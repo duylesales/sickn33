@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Haar resultaat: Studiobalans lanceerde met een relationeel datamodel voor multi-tenant freelancers, database-permissies en Mollie-abonnementen — interface volledig intact. 🚀
 
-👉 Bereken binnen negentig seconden een reële prijsindicatie via onze prijscalculator: [Link naar artikel]
+👉 Bereken binnen negentig seconden een reële prijsindicatie via onze prijscalculator: https://launchstudio.eu/nl/blog/van-v0-ui-naar-daadwerkelijk-product-wat-er-tussenin-zit
 
 #AICoding #NoCode #LaunchStudio #Manifera #ProductionReady #FounderLife

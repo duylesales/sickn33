@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam-based engineers spend a significant part of e
 
 Her result: EthiekGids passed its client's security questionnaire on the next attempt, with permissions matching actual need instead of build speed. 🚀
 
-👉 Curious what LaunchStudio actually does before your own app needs this pass? Explore here: [Link to article]
+👉 Curious what LaunchStudio actually does before your own app needs this pass? Explore here: https://launchstudio.eu/en/blog/code-of-ai-unwritten-rules
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #AIDefaults

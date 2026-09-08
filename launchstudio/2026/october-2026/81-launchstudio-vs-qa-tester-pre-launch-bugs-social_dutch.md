@@ -14,6 +14,6 @@ Bij **LaunchStudio** vangen wij dit type bug al sinds 2014 via Manifera, over 16
 
 Tobias lanceerde op schema met nul incidenten van data-blootstelling en een slagingspercentage voor betalingen van 99,6% in de eerste maand. (€ 1.900 — Launch & Grow Pakket, opgelost en gedeployed in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-qa-tester-pre-launch-bugs
 
 #LaunchStudio #Manifera #AISaaS #QATesting #ProductionSecurity

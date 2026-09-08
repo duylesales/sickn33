@@ -20,6 +20,6 @@ Bij **LaunchStudio** deelt het team van Manifera deze last voor slechts €49/ma
 
 Zijn resultaat: van "ik ontdek fouten per toeval" naar "ik krijg direct een seintje vóórdat een klant het merkt". 🚀
 
-👉 Bekijk de complete SaaS nazorg-checklist: [Link naar artikel]
+👉 Bekijk de complete SaaS nazorg-checklist: https://launchstudio.eu/nl/blog/complete-post-launch-support-checklist-ai-saas
 
 #AISaaS #PostLaunch #LaunchStudio #Manifera #DevOps #SaaSFounders #Cursor #NextJS #TechFounders #StartupOpschalen

@@ -19,6 +19,6 @@ At **LaunchStudio**, backed by Manifera's database expertise across PostgreSQL, 
 
 His fix: 6-8 seconds → under 200ms. One day of work. Zero frontend changes. 🚀
 
-👉 Read the practical indexing guide: [Link to article]
+👉 Read the practical indexing guide: https://launchstudio.eu/en/blog/database-indexing-ai-applications-guide
 
 #DatabasePerformance #LaunchStudio #Manifera #AINativeFounder #SaaS #PostgreSQL

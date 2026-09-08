@@ -14,6 +14,6 @@ At **LaunchStudio**, powered by Manifera since 2014, we've built exactly this ki
 
 Wyatt's app now meets EU AI Act documentation requirements, unlocking his European sales channels. 🚀
 
-👉 Audit your AI Act exposure: [Link to article]
+👉 Audit your AI Act exposure: https://launchstudio.eu/en/blog/why-eu-ai-act-matters-for-us-startups
 
 #AINativeFounder #LaunchStudio #Manifera #EUAIAct #AICompliance

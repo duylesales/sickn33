@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Rick now requires a documented answer to data-handling questions before quoting, and has declined two engagements that would've cost more in fallout than the fee. 🚀
 
-👉 Describe the project giving you pause: [Link to article]
+👉 Describe the project giving you pause: https://launchstudio.eu/en/blog/when-to-turn-down-a-clients-prototype-project
 
 #AgencyLife #WhiteLabel #ClientManagement #AgencyOwner #LaunchStudio #Manifera

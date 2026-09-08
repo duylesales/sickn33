@@ -15,6 +15,6 @@ Bij **LaunchStudio** zijn logica voor opnieuw proberen, donormeldingen en verzoe
 
 Het resultaat voor Willem: twee van de drie verlopen giften werden binnen een week teruggevonden nadat donateurs de e-mail kregen om hun kaart bij te werken, en GavenBeheer signaleert mislukte betalingen nu bij de eerste poging in plaats van bij de derde gemiste maand. 🚀
 
-👉 Runt u een donatie- of lidmaatschapsplatform? Stuur ons uw prototypelink voor gratis advies: [Link naar artikel]
+👉 Runt u een donatie- of lidmaatschapsplatform? Stuur ons uw prototypelink voor gratis advies: https://launchstudio.eu/nl/blog/church-donation-ai-app-recurring-gift-failures
 
 #AINativeFounder #LaunchStudio #Manifera #NonprofitTech #Fintech

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the apparel labeling compliance compliance case study: [Link to article]
+👉 See the apparel labeling compliance compliance case study: https://www.manifera.com/blog/apparel-labeling-compliance-case-study
 
 #FashionTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

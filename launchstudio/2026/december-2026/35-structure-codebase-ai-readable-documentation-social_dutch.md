@@ -17,6 +17,6 @@ Bij **LaunchStudio** leveren we alle code standaard AI-leesbaar en modulair op �
 
 Haar resultaat: Cursor-suggesties werden direct weer scherp en foutloos. 3 nieuwe functies zelfstandig gebouwd in 2 maanden! 🚀
 
-👉 Lees hoe u uw codebase structureert voor AI-assistenten: [Link naar artikel]
+👉 Lees hoe u uw codebase structureert voor AI-assistenten: https://launchstudio.eu/nl/blog/structure-codebase-ai-readable-documentation
 
 #Cursor #LaunchStudio #Manifera #AINativeFounder #SaaS #CodeDocs #Lovable #NextJS #TechFounders #StartupOpschalen

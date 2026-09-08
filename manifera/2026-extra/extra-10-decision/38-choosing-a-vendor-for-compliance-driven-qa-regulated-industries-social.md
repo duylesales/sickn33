@@ -12,6 +12,6 @@ An auditor asks your QA vendor for signed test evidence from eight months ago, t
 
 Compliance-grade QA costs 20-40% more per cycle than generic testing — and vendors quoting at parity are underpricing the documentation burden. 🎯
 
-👉 Read our full deep dive on choosing a compliance-driven QA vendor: [Link to article]
+👉 Read our full deep dive on choosing a compliance-driven QA vendor: https://www.manifera.com/blog/choosing-a-vendor-for-compliance-driven-qa-regulated-industries
 
 #ComplianceOfficer #RegulatedIndustries #QAValidation #IEC62304 #GxP #ISO13485 #Manifera

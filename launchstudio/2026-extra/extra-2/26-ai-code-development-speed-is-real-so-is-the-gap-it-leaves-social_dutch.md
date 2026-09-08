@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze dependency-audit onderdeel van ons productiegereedh
 
 Haar resultaat: de getroffen dependency bijgewerkt, de rest van de boom geauditeerd — gedicht voordat de due diligence van het partnerschap afgerond werd. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/ai-code-development-speed-is-real-so-is-the-gap-it-leaves
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SoftwareEngineering

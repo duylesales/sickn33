@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the domain was re-registered under Toolwissel's own business account with Ruben as the verified owner, and the hardening engagement started on schedule five days before the renewal deadline. 🚀
 
-👉 Run the five-minute ownership audit on your own accounts: [Link to article]
+👉 Run the five-minute ownership audit on your own accounts: https://launchstudio.eu/en/blog/what-to-keep-control-of-and-what-to-hand-over
 
 #FounderLife #StartupTips #SaaS #DataSecurity #LaunchStudio #Manifera

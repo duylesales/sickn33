@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on retail inventory conflict: [Link to article]
+👉 Read our full architectural deep dive on retail inventory conflict: https://www.manifera.com/blog/retail-inventory-conflict-architecture
 
 #RetailTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

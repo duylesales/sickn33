@@ -14,6 +14,6 @@ Bij **LaunchStudio** leveren we hoogwaardige frontend-architecturen via Manifera
 
 Voor David verbeterde de betrokkenheid en brachten gebruikers 25% meer tijd door in de applicatie. (€1.200 (UI Motion Design Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe micro-animaties uw AI-interface transformeren: [Link naar artikel]
+👉 Ontdek hoe micro-animaties uw AI-interface transformeren: https://launchstudio.eu/nl/blog/role-micro-animations-generative-ui-ai
 
 #AINativeFounder #LaunchStudio #Manifera #MicroAnimations #FramerMotion #GenerativeUI #FrontendDesign #React #AISaaS #StartupOpschalen

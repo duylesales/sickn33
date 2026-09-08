@@ -15,6 +15,6 @@ Bij **LaunchStudio** wordt enterprise SSO-integratie één keer goed opgezet, zo
 
 Haar resultaat: de deal werd op tijd gesloten en TeamDocs vermeldt SSO nu als standaardmogelijkheid in plaats van een reactief gedoe. 🚀
 
-👉 Gebruik onze rekenmachine om vóór uw volgende inkoopgesprek een ondernemingsbereidheidspas te bepalen: [Link naar artikel]
+👉 Gebruik onze rekenmachine om vóór uw volgende inkoopgesprek een ondernemingsbereidheidspas te bepalen: https://launchstudio.eu/nl/blog/sso-enterprise-readiness-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #EnterpriseReady #SAMLSSO

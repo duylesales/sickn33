@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), ontwerpen w
 
 💡 Zo ontdekte Mert Yıldız van Aanvraagfilter dat een onaangekondigde modelupdate 11 dagen lang subsidieaanvragen naar de verkeerde commissieleden stuurde. Binnen 3 dagen implementeerden we model-pinning en een vaste regressietestsuite.
 
-👉 Weet u exact welke modelversie er op dit moment in uw productieomgeving draait? [Link naar artikel]
+👉 Weet u exact welke modelversie er op dit moment in uw productieomgeving draait? https://launchstudio.eu/nl/blog/choosing-a-model-and-surviving-its-deprecation
 
 #ArtificialIntelligence #SaaS #ModelDeprecation #OpenAI #SoftwareEngineering #LaunchStudio #Manifera

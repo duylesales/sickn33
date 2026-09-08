@@ -17,6 +17,6 @@ Resultaat: **nul pixels verschoven.** Haar gevalideerde ontwerp — getest met 6
 
 Gesteund door Manifera's engineeringcultuur: respect voor gevalideerd gebruikersontwerp wint het altijd van de persoonlijke smaak van een developer.
 
-👉 Lees onze technische aanpak voor frontend-behoud: [Link naar artikel]
+👉 Lees onze technische aanpak voor frontend-behoud: https://launchstudio.eu/nl/blog/how-launchstudio-keeps-frontend-intact-technical-approach
 
 #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductDesign #v0 #Lovable #NextJS #TechFounders #StartupOpschalen

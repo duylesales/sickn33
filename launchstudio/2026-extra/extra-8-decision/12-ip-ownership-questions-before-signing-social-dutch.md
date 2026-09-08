@@ -16,6 +16,6 @@ Bij **LaunchStudio** is uw code vanaf dag één 100% uw exclusieve eigendom — 
 
 Jaspers resultaat: Betwiste code vervangen, formele IP-overdracht geregeld en de investering van €150.000 succesvol binnengehaald. 🚀
 
-👉 Lees de 5 IP-vragen die elke oprichter moet kennen: [Link naar artikel]
+👉 Lees de 5 IP-vragen die elke oprichter moet kennen: https://launchstudio.eu/nl/blog/ip-ownership-questions-before-signing
 
 #IntellectualProperty #StartupLegal #LaunchStudio #Manifera #DueDiligence #SaaS #VibeCoding

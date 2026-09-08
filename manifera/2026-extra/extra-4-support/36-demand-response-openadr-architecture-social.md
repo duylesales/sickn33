@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on demand response openadr: [Link to article]
+👉 Read our full architectural deep dive on demand response openadr: https://www.manifera.com/blog/demand-response-openadr-architecture
 
 #EnergyTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

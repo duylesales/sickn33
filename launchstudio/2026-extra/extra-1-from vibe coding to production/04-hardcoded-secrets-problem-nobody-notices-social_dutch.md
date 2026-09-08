@@ -15,6 +15,6 @@ Bij **LaunchStudio** is een volledige geheimenaudit — codebase + complete git-
 
 Haar resultaat: blootgestelde sleutel dezelfde dag geroteerd, nul ongeautoriseerd gebruik, CI-scanning voorkomt nu dat dit ooit weer gebeurt. 🚀
 
-👉 Laat je repogeschiedenis auditen voordat je spijt krijgt dat je niet hebt gecontroleerd: [Link naar artikel]
+👉 Laat je repogeschiedenis auditen voordat je spijt krijgt dat je niet hebt gecontroleerd: https://launchstudio.eu/nl/blog/hardcoded-secrets-problem-nobody-notices
 
 #AISecure #LaunchStudio #Manifera #IndieHacker #GitBeveiliging

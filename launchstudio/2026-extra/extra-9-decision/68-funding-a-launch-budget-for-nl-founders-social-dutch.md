@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: gelanceerd vanuit spaargeld zeven weken vóór het subsidiebesluit, voor € 2.200 — bijna de helft van haar budget. 🚀
 
-👉 Beschrijf uw project — wij reageren binnen één werkdag met een realistische prijsindicatie: [Link naar artikel]
+👉 Beschrijf uw project — wij reageren binnen één werkdag met een realistische prijsindicatie: https://launchstudio.eu/nl/blog/funding-a-launch-budget-for-nl-founders
 
 #StartupFinanciering #WBSO #Qredits #Bootstrapping #LaunchStudio #Manifera

@@ -12,6 +12,6 @@ Roughly 70% of your web app's total cost gets locked in before a single feature 
 
 Get the architecture conversation right before you spend the budget that would have covered doing it correctly. 🎯
 
-👉 Read our full deep dive on SPA vs PWA vs traditional web app development: [Link to article]
+👉 Read our full deep dive on SPA vs PWA vs traditional web app development: https://www.manifera.com/blog/spa-vs-pwa-vs-traditional-web-app-development
 
 #VPEngineering #WebAppDevelopment #SoftwareArchitecture #TechnicalDueDiligence #VendorSelection #Manifera

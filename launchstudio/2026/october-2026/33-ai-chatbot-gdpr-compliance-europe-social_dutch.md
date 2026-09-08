@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Sarah slaagde glansrijk voor de Duitse compliance-audit en sloot direct de enterprise-deal van €10.000 MRR. (€5.000 (Enterprise Compliance & Middleware) — binnen 15 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-chatbot-gdpr-compliance-europe
 
 #LaunchStudio #Manifera #AISaaS #AIChatbot #GDPRCompliance #AVG #PIIMasking #DataPrivacy #TechFounders #HRTech

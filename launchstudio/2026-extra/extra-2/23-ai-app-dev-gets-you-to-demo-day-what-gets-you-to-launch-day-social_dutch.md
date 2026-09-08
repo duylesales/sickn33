@@ -15,6 +15,6 @@ Bij **LaunchStudio** werken we als een white-label technische partner voor agent
 
 Zijn resultaat: de admin-API beveiligd vóór publieke lancering, en beschermde zowel de lancering van de klant als de eigen reputatie van het agentschap. 🚀
 
-👉 Run je een agentschap? We kunnen jouw stille productiepartner achter de schermen zijn: [Link naar artikel]
+👉 Run je een agentschap? We kunnen jouw stille productiepartner achter de schermen zijn: https://launchstudio.eu/nl/blog/ai-app-dev-gets-you-to-demo-day-what-gets-you-to-launch-day
 
 #Agency #Freelancer #LaunchStudio #Manifera #WhiteLabel

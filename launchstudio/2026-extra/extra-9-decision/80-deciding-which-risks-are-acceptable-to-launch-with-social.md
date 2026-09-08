@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 Her result: three blockers fixed in nine days for €2,900, launched with the rest tracked monthly — one deferred item has crossed into must-fix. 🚀
 
-👉 Get a fixed-price quote and a risk breakdown: [Link to article]
+👉 Get a fixed-price quote and a risk breakdown: https://launchstudio.eu/en/blog/deciding-which-risks-are-acceptable-to-launch-with
 
 #SaaS #RiskManagement #LaunchStudio #Manifera #StartupGrowth #ProductionReady

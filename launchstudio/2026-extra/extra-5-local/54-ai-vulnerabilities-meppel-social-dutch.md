@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit precies de categorie AI-kwetsbaarheden waarop onze t
 
 Haar resultaat: RailDock lanceerde met geverifieerde betalingsverwerking en correct geïsoleerde vervoerdergegevens, waarmee een gat werd gedicht dat iedereen gratis vracht had kunnen laten boeken. 🚀
 
-👉 Verwerkt u echte betalingen via een door AI gebouwde app? Laat de webhooklaag eerst controleren: [Link naar artikel]
+👉 Verwerkt u echte betalingen via een door AI gebouwde app? Laat de webhooklaag eerst controleren: https://launchstudio.eu/nl/blog/ai-vulnerabilities-meppel
 
 #AINativeFounder #LaunchStudio #Manifera #AIVulnerabilities #Meppel

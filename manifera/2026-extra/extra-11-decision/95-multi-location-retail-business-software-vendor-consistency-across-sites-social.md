@@ -12,6 +12,6 @@ Every Sunday night, this 14-store owner reconciles three spreadsheets from three
 
 Stop reconciling three systems. Build the one that never needed reconciling. 🧮
 
-👉 Read our full deep dive on vendor consistency across multi-location retail: [Link to article]
+👉 Read our full deep dive on vendor consistency across multi-location retail: https://www.manifera.com/blog/multi-location-retail-business-software-vendor-consistency-across-sites
 
 #RetailTech #MultiLocationRetail #RetailOps #SmallBusinessOwner #InventoryManagement #Manifera

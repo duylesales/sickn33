@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 precies dit soort veerkrachtige, model
 
 Het wisselen van AI-model kost Natalie nu minuten configuratie in plaats van een herschrijving — vendor lock-in definitief geëlimineerd. (€1.500 (API Adapter Integratie) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe een model-agnostische architectuur eruitziet: [Link naar artikel]
+👉 Ontdek hoe een model-agnostische architectuur eruitziet: https://launchstudio.eu/nl/blog/commoditization-of-the-llm-layer
 
 #AINativeFounder #LaunchStudio #Manifera #ModelAgnostic #LLMCommoditization #OpenSource #AISaaS #StartupOpschalen

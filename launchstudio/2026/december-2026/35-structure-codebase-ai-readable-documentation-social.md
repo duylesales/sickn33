@@ -17,6 +17,6 @@ At **LaunchStudio**, all code ships documented and AI-readable — because most 
 
 Her result: Cursor suggestions got noticeably more accurate. 3 new features, self-built, in 2 months. 🚀
 
-👉 Read how to structure for AI-readable docs: [Link to article]
+👉 Read how to structure for AI-readable docs: https://launchstudio.eu/en/blog/structure-codebase-ai-readable-documentation
 
 #Cursor #LaunchStudio #Manifera #AINativeFounder #SaaS #CodeDocs

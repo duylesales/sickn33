@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Renate's launch-day cohort was the hardest part to recover: 60 of her first 400 signups never received a working welcome email before the issue was caught and corrected. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/botched-dns-migration-custom-domain-cost
 
 #LaunchStudio #Manifera #AISaaS #DNS #CustomDomain

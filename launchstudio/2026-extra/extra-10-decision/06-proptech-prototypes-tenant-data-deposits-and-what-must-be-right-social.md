@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Kamerbasis's landlords could see their deposit obligations clearly through the platform for the first time, fixed before any dispute ever forced the issue. 🚀
 
-👉 Check whether your deposit handling would survive a landlord's question: [Link to article]
+👉 Check whether your deposit handling would survive a landlord's question: https://launchstudio.eu/en/blog/proptech-prototypes-tenant-data-deposits-and-what-must-be-right
 
 #PropTech #StartupFounders #GDPR #RentalTech #LaunchStudio #Manifera

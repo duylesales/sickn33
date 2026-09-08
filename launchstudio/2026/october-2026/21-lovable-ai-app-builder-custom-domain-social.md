@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Thomas's application achieved production readiness: Within 48 hours, Thomas's app was live at `https://snelwaarderen.nl`. Furthermore, because we set up a continuous deployment pipeline, Thomas was able to use Lovable a week later to add a new Contact Agent button. As soon as he clicked save in Lovable, the button magically appeared on his live custom domain 30 seconds later. I was pulling my hair out over DNS records. LaunchStudio made my app real in two days, and now I just focus on my business. (€900 (Basic Launch Ready package for frontend deployment) — completed in 2 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/lovable-ai-app-builder-custom-domain
 
 #LaunchStudio #Manifera #AISaaS #UsingAIToCodefromSan #TechFounders

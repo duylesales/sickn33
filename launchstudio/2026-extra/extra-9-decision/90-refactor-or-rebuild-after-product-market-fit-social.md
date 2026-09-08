@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 120+ engineers, our whole approach res
 
 His result: Casper scrapped the six-month rewrite for a seven-week refactor of two problem modules, zero feature freeze, redirecting the saved budget into sales and support hiring instead. 🚀
 
-👉 Book a 15-minute call for a second opinion on refactor vs. rebuild: [Link to article]
+👉 Book a 15-minute call for a second opinion on refactor vs. rebuild: https://launchstudio.eu/en/blog/refactor-or-rebuild-after-product-market-fit
 
 #SaaS #TechDebt #ScaleUp #ProductionReady #LaunchStudio #Manifera

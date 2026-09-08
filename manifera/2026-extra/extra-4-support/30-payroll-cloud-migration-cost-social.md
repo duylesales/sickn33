@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the full payroll cloud cost breakdown: [Link to article]
+👉 Read the full payroll cloud cost breakdown: https://www.manifera.com/blog/payroll-cloud-migration-cost
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

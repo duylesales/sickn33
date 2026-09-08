@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on web app development: [Link to article]
+👉 Read our full deep dive on web app development: https://www.manifera.com/blog/web-app-development
 
 #WebDevelopment #SoftwareEngineering #AppDevelopment #MobileDev #SoftwareArchitecture #TechLeadership #CTO #Manifera

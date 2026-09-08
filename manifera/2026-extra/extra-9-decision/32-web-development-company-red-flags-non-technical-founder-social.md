@@ -12,6 +12,6 @@ Uncomfortable truth: the vendor who gives you the most confidence in a sales cal
 
 You can't code-review a vendor — but you can spot these five patterns before you sign. 🧭
 
-👉 Read our full deep dive on web development company red flags: [Link to article]
+👉 Read our full deep dive on web development company red flags: https://www.manifera.com/blog/web-development-company-red-flags-non-technical-founder
 
 #Founder #WebDevelopmentCompany #VendorRedFlags #SoftwareOutsourcing #NonTechnicalFounder #Manifera

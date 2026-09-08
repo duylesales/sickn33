@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Skylar's application achieved silky-smooth performance: Signed up 3 commercial banking clients who required strict on-premise-style data security. (€3,500 (Zero Retention Package) — production-ready and deployed in 8 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/implementing-zero-data-retention-architecture-ai
 
 #LaunchStudio #Manifera #AISaaS #ImplementingZeroData #TechFounders

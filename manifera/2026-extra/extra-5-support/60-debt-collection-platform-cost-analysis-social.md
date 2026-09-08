@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real debt collection platform platform cost breakdown: [Link to article]
+👉 See the real debt collection platform platform cost breakdown: https://www.manifera.com/blog/debt-collection-platform-cost-analysis
 
 #Fintech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

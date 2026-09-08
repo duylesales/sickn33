@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat GDPR readiness as standard production hardening, n
 
 Nora's result: a compliant consent flow, working data rights functions, and confirmed EU hosting — completed in 7 business days ahead of her public launch. 🚀
 
-👉 Building an AI app that touches health, financial, or other sensitive data? Check this list before you launch: [Link to article]
+👉 Building an AI app that touches health, financial, or other sensitive data? Check this list before you launch: https://launchstudio.eu/en/blog/the-privacy-issues-with-ai-apps-that-gdpr
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #DataPrivacy

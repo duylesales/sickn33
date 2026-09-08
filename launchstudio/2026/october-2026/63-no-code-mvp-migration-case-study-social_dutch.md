@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De gemiddelde paginalaadtijd tijdens drukke uren daalde van 4,8 seconden naar 640 milliseconden, en supporttickets over trage laadtijden daalden naar nul. (€1.900 (Launch & Grow Pakket) — voltooid in 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/no-code-mvp-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #NoCodeMigratie #ProductieArchitectuur

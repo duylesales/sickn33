@@ -12,6 +12,6 @@ Ask a vendor where your data lives and most say "the cloud" like that settles it
 
 "The cloud" isn't an answer — the subprocessor list is. 🎯
 
-👉 Read our full deep dive on data residency vendor vetting for EU regulated industries: [Link to article]
+👉 Read our full deep dive on data residency vendor vetting for EU regulated industries: https://www.manifera.com/blog/data-residency-requirements-vendor-vetting-for-eu-regulated-industries
 
 #DataResidency #GDPR #SchremsII #SecurityLead #DataSovereignty #EUCompliance #Manifera

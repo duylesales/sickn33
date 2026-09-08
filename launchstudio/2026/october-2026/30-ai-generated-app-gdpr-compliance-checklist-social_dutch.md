@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Dr. Visser slaagde met vlag en wimpel voor de ziekenhuisaudit en sloot een zorgcontract van €6.000 MRR. (€4.500 (Enterprise Compliance Hardening Pakket) — binnen 15 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-generated-app-gdpr-compliance-checklist
 
 #LaunchStudio #Manifera #AISaaS #GDPRCompliance #AVG #HealthTech #DataPrivacy #TechFounders #BoltAI

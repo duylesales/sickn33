@@ -15,6 +15,6 @@ Bij **LaunchStudio** werken we rechtstreeks samen met adviseurs en mentoren van 
 
 Zijn resultaat: die ene vraag bracht Niels naar LaunchStudio voor de externe beoordeling die zijn eigen tests nooit hadden geboden — twee echte hiaten werden blootgelegd en gedicht vóór de lancering van OnderhoudsPlan bij de eerste betalende klanten. 🚀
 
-👉 Adviseur of mentor van een AI-native oprichter? Neem deze vijf vragen mee naar uw volgende gesprek: [Link naar artikel]
+👉 Adviseur of mentor van een AI-native oprichter? Neem deze vijf vragen mee naar uw volgende gesprek: https://launchstudio.eu/nl/blog/what-advisors-should-ask-ai-native-founder
 
 #DueDiligence #StartupAdvisors #AINativeFounder #LaunchStudio #Manifera

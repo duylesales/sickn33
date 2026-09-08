@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), helpen we o
 
 💡 Zo verving Jasmijn Verstraete van Huisly haar 211 rijen door een WhatsApp-klankbordgroep en loste ze binnen 48 uur een cruciaal afleverprobleem op.
 
-👉 Ontdek hoe u een echte feedbackloop bouwt: [Link naar artikel]
+👉 Ontdek hoe u een echte feedbackloop bouwt: https://launchstudio.eu/nl/blog/building-a-customer-feedback-loop-that-isnt-just-noise
 
 #CustomerFeedback #ProductManagement #SaaSStrategy #StartupGrowth #LaunchStudio #Manifera

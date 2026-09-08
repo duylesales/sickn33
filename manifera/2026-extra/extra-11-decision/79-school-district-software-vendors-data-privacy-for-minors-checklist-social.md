@@ -12,6 +12,6 @@
 
 The gap that damages trust with parents is rarely a breach — it's a disclosure nobody read. 🔍
 
-👉 Read our full deep dive on school district vendor data privacy for minors: [Link to article]
+👉 Read our full deep dive on school district vendor data privacy for minors: https://www.manifera.com/blog/school-district-software-vendors-data-privacy-for-minors-checklist
 
 #EdTech #StudentDataPrivacy #FERPA #K12 #ComplianceOfficer #Manifera

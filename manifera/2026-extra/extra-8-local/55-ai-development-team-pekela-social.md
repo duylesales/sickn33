@@ -12,6 +12,6 @@
 
 Hiring more data scientists doesn't fix a productionization gap. 🎯
 
-👉 Read our full deep dive on ai development team Pekela: [Link to article]
+👉 Read our full deep dive on ai development team Pekela: https://www.manifera.com/blog/ai-development-team-pekela
 
 #Pekela #Groningen #AIDevelopment #MLOps #TechLeadership #Manifera

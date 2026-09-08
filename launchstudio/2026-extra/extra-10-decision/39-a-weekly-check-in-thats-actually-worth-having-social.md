@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, t
 
 Her result: the original launch date held after a two-day adjustment once the email issue was properly surfaced, and a recipe-image hosting rate limit was caught six weeks early instead of becoming an unplanned outage. 🚀
 
-👉 Get the exact 30-minute agenda that surfaces risk early: [Link to article]
+👉 Get the exact 30-minute agenda that surfaces risk early: https://launchstudio.eu/en/blog/a-weekly-check-in-thats-actually-worth-having
 
 #FounderLife #SaaS #ProductDevelopment #StartupTips #LaunchStudio #Manifera

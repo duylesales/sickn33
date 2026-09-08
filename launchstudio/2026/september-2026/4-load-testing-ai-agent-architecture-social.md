@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been running production load testing and resiliency e
 
 Olivia's duplicate message errors dropped to zero, successfully handling 1,000 concurrent support chats without a single drop. 🚀
 
-👉 Bulletproof your AI architecture: [Link to article]
+👉 Bulletproof your AI architecture: https://launchstudio.eu/en/blog/load-testing-ai-agent-architecture
 
 #AINativeFounder #LaunchStudio #Manifera #LoadTesting #AIAgents

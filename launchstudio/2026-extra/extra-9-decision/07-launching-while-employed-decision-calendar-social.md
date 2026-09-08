@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Nadia hit €740 monthly recurring against a €600 threshold, negotiated a three-day week, and the support layer caught an issue at her desk job. 🚀
 
-👉 Book a short call and get a quote you can decide on in one evening: [Link to article]
+👉 Book a short call and get a quote you can decide on in one evening: https://launchstudio.eu/en/blog/launching-while-employed-decision-calendar
 
 #FounderLife #IndieHacker #LaunchStudio #Manifera #SaaS #ProductionReady

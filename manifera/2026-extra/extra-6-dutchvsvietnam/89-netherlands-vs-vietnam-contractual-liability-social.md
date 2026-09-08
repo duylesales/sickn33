@@ -12,6 +12,6 @@
 
 Ask for evidence of insurance. A liability cap with no balance sheet behind it may not survive an actual claim. 🛡️
 
-👉 Read our full deep dive on netherlands vs vietnam contractual liability: [Link to article]
+👉 Read our full deep dive on netherlands vs vietnam contractual liability: https://www.manifera.com/blog/netherlands-vs-vietnam-contractual-liability
 
 #CTO #ContractualLiability #Netherlands #Vietnam #RiskManagement #Manifera

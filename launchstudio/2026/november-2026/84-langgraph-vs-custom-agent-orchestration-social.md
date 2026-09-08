@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Casewise's document reviews now resume automatically from the last completed step, and support tickets about lost reviews dropped to zero. (€2,200 (Launch & Grow Package) — production-ready and deployed in 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/langgraph-vs-custom-agent-orchestration
 
 #LaunchStudio #Manifera #AISaaS #LangGraph #AgentOrchestration

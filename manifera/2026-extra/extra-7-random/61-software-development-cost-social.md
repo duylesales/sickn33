@@ -12,6 +12,6 @@
 
 We picked the cheaper quote and thought we were saving money. We were buying a smaller project and didn't know it. 🛡️
 
-👉 Read our full deep dive on software development cost: [Link to article]
+👉 Read our full deep dive on software development cost: https://www.manifera.com/blog/software-development-cost
 
 #SoftwareDevelopment #CFO #CostComparison #Manifera

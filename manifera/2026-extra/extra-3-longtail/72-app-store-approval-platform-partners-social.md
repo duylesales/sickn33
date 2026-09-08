@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See our complete breakdown on app store approval platform partners: [Link to article]
+👉 See our complete breakdown on app store approval platform partners: https://www.manifera.com/blog/app-store-approval-platform-partners
 
 #DedicatedTeam #OffshoreDevelopment #TechLeadership #SoftwareEngineering #CTO #Manifera

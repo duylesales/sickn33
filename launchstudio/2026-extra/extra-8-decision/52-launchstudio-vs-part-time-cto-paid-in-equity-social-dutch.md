@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar engineeringervaring bij 
 
 Noor's resultaat: Coachdesk productieklaar in 14 werkdagen voor €2.400 — nul procent aandelen weggegeven. 🚀
 
-👉 Vraag een vaste prijs op voordat u iemand aandelen aanbiedt: [Link naar artikel]
+👉 Vraag een vaste prijs op voordat u iemand aandelen aanbiedt: https://launchstudio.eu/nl/blog/launchstudio-vs-part-time-cto-paid-in-equity
 
 #LaunchStudio #FractioneleCTO #VibeCoding #Manifera #SaaS #Aandelen #Oprichters

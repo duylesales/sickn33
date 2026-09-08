@@ -15,6 +15,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ opgeleverde projecten voo
 
 Het resultaat voor OutletOps: de tool lanceerde bij alle zeven retailers vóór het najaarsseizoen zonder één enkel planningsconflict — iets wat Iris rechtstreeks toeschrijft aan het opsporen van de bug tijdens het testen, niet tijdens de daadwerkelijke drukte. 🚀
 
-👉 Bouwt u iets dat een drukke zaterdag moet overleven? Belasttest het vóór lancering: [Link naar artikel]
+👉 Bouwt u iets dat een drukke zaterdag moet overleven? Belasttest het vóór lancering: https://launchstudio.eu/nl/blog/30-ai-prototype-roermond
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrototype #Roermond

@@ -14,6 +14,6 @@ Bij **LaunchStudio** dichten wij dit type regelgevingsspecifiek enterprise-gat a
 
 De pilot van Lukas ging volgens planning van start: het compliance-team keurde RouteMatch AI goed als leverancier zonder vervolggesprek, en alle 40 vervoerderspartners werden geonboard in de eerste week. (€ 5.800 (Enterprise Hardening Pakket) — 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/european-logistics-vendor-security-review-case-study
 
 #LaunchStudio #Manifera #AISaaS #NIS2 #LogisticsTech

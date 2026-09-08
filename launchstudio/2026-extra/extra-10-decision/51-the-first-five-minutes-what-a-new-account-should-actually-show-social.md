@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: a day's work fixed all three cards, added one primary action and a persistent checklist — second-session return rate went from 11% to 47% over the following month. 🚀
 
-👉 See what your new customers actually see: [Link to article]
+👉 See what your new customers actually see: https://launchstudio.eu/en/blog/the-first-five-minutes-what-a-new-account-should-actually-show
 
 #SaaS #Onboarding #ProductLed #IndieHacker #LaunchStudio #Manifera

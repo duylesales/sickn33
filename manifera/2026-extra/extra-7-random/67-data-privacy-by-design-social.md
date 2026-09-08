@@ -12,6 +12,6 @@
 
 Privacy that lives in the architecture doesn't need anyone to remember to keep the promise. 🛡️
 
-👉 Read our full deep dive on data privacy by design: [Link to article]
+👉 Read our full deep dive on data privacy by design: https://www.manifera.com/blog/data-privacy-by-design
 
 #PrivacyByDesign #PrivacyEngineering #DataProtection #CTO #Manifera

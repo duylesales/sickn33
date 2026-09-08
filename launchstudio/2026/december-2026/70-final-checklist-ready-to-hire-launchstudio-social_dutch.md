@@ -14,6 +14,6 @@ Bij **LaunchStudio** zetten wij "er klopt iets niet" al sinds 2014 om in een vas
 
 Naledi's terugkerende inlogbug bleek herleidbaar tot een RLS-gat en een verouderde credential — beide opgelost vóór haar conferentie-deadline. (€1.700 Launch Ready-pakket — 8 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/final-checklist-ready-to-hire-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #ProductieKlaar #StartupOprichters

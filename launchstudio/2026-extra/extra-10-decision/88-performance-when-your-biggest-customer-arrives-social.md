@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the N+1 pattern replaced with two queries, pagination added at 50 per page, indexes added, and dashboard totals precomputed nightly — load time dropped from 38 seconds to 400 milliseconds. 🚀
 
-👉 Find out what your product does at 50x your current data: [Link to article]
+👉 Find out what your product does at 50x your current data: https://launchstudio.eu/en/blog/performance-when-your-biggest-customer-arrives
 
 #SaaS #DevOps #Performance #ScaleUp #LaunchStudio #Manifera

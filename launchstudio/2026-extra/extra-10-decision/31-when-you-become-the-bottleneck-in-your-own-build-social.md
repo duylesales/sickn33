@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Klantloket's engagement finished nine days after the process change, matching the original estimate almost exactly, instead of the four-week drift the first four days had suggested. 🚀
 
-👉 See how a 15-minute daily window keeps your build on schedule: [Link to article]
+👉 See how a 15-minute daily window keeps your build on schedule: https://launchstudio.eu/en/blog/when-you-become-the-bottleneck-in-your-own-build
 
 #FounderLife #SaaS #ProductDevelopment #StartupTips #LaunchStudio #Manifera

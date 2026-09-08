@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring, vestigingen 
 
 💡 Zo hielpen we oprichter Marit Andersen met geverifieerde referenties en heldere contracten binnen 9 werkdagen live te gaan.
 
-👉 Lees hoe u een remote engineering-team objectief toetst: [Link naar artikel]
+👉 Lees hoe u een remote engineering-team objectief toetst: https://launchstudio.eu/nl/blog/ive-never-met-them-in-person-judging-a-remote-team
 
 #RemoteEngineering #Outsourcing #TechStartup #SoftwareDevelopment #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we make this exact determination early in scoping — focus
 
 His result: a focused review specifically around the AI shift-suggestion feature, skipping unnecessary re-review of WerkPlanner's stable core — saving Thomas real cost and time versus treating the whole product as newly AI-native. 🚀
 
-👉 Added an AI feature to an existing product? Find out how much of it actually needs AI-specific scrutiny: [Link to article]
+👉 Added an AI feature to an existing product? Find out how much of it actually needs AI-specific scrutiny: https://launchstudio.eu/en/blog/difference-between-ai-feature-and-ai-product
 
 #AIFeature #ScopingReview #AINativeFounder #LaunchStudio #Manifera

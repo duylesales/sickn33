@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on web app development company checklist scale ups: [Link to article]
+👉 Read our full guide on web app development company checklist scale ups: https://www.manifera.com/blog/web-app-development-company-checklist-scale-ups
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

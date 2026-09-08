@@ -16,6 +16,6 @@ Bij **LaunchStudio**, aangedreven door Manifera's 11+ jaar enterprise software-e
 
 Mariekes resultaat: Vaste offerte van €1.900 die exact standhield, live in 9 dagen, nul scope-verrassingen. ✅
 
-👉 Bekijk exact wat we vragen vóór we offreren: [Link naar artikel]
+👉 Bekijk exact wat we vragen vóór we offreren: https://launchstudio.eu/nl/blog/the-discovery-call-what-launchstudio-asks
 
 #AINativeFounder #StartupEngineering #VastePrijs #LaunchStudio #Manifera #VibeCoding #DiscoveryCall

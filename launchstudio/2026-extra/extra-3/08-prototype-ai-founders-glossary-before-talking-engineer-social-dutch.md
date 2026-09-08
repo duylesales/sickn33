@@ -15,6 +15,6 @@ At **LaunchStudio** bouwen we onze gesprekken met oprichters rond precies deze w
 
 Haar resultaat: het scherpere gesprek liet LaunchStudio de opdracht voor EventCheck al bij het eerste gesprek nauwkeuriger inschatten, omdat Nadia precies kon bevestigen welke functies gevoelige gastgegevens raakten. 🚀
 
-👉 Breng uw prototype-AI naar een gesprek dat u daadwerkelijk kunt volgen: [Link naar artikel]
+👉 Breng uw prototype-AI naar een gesprek dat u daadwerkelijk kunt volgen: https://launchstudio.eu/nl/blog/prototype-ai-founders-glossary-before-talking-engineer
 
 #AINativeFounder #LaunchStudio #Manifera #FounderGlossary #TechLiteracy

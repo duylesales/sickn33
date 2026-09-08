@@ -15,6 +15,6 @@ Bij **LaunchStudio** bouwen we precies dit soort controleerbare, versiebeheerde 
 
 Het resultaat voor Bas: klanten van OffertePlan kunnen nu prijsgeschillen oplossen door te verwijzen naar een specifieke, van een tijdstempel voorziene versie van het bod — niet langer afhankelijk van geheugen of vertrouwen. 🚀
 
-👉 Een bied-, offerte- of contracttool met AI gebouwd? Stuur ons de link — gratis advies: [Link naar artikel]
+👉 Een bied-, offerte- of contracttool met AI gebouwd? Stuur ons de link — gratis advies: https://launchstudio.eu/nl/blog/construction-bid-ai-tool-version-control-disputes
 
 #AINativeFounder #LaunchStudio #Manifera #ConstructionTech #AIDatabase

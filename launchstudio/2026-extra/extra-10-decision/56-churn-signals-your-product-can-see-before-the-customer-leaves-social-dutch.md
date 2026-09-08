@@ -24,6 +24,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we d
 
 💡 Zo ontdekte Timo Baars van Wisselplan dat een klant van €480/mnd al 6 weken afgleed door een CSV-importbug. Na onze monitoring behield hij 2 vergelijkbare grote klanten.
 
-👉 Kunt u zien welke klant volgende maand opzegt? [Link naar artikel]
+👉 Kunt u zien welke klant volgende maand opzegt? https://launchstudio.eu/nl/blog/churn-signals-your-product-can-see-before-the-customer-leaves
 
 #SaaSChurn #CustomerRetention #ProductTelemetry #SaaSGrowth #LaunchStudio #Manifera

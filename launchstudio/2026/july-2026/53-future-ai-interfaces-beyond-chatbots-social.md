@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Xavier's application achieved production readiness: Xavier boosted task completion rates by 48% and decreased input errors by medical staff. (€3,100 (UX Refactoring Package) — production-ready and deployed in 9 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/future-ai-interfaces-beyond-chatbots
 
 #LaunchStudio #Manifera #AISaaS #MovingBeyondtheChatb #TechFounders

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, e
 
 Her result: Femke declined the risky arrangement and launched with a partner who set up GitHub, Supabase, and Stripe under her own ownership — live in 12 business days, the hostage scenario structurally impossible rather than merely unlikely. 🚀
 
-👉 Ask any partner to describe their ownership model before discussing price: [Link to article]
+👉 Ask any partner to describe their ownership model before discussing price: https://launchstudio.eu/en/blog/what-if-they-hold-my-code-hostage
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

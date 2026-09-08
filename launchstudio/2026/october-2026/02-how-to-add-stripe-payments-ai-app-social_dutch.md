@@ -14,6 +14,6 @@ Bij **LaunchStudio** verhelpen we sinds 2014 via Manifera exact dit soort backen
 
 Daan verkocht zijn netwerkevenement volledig uit — 200 tickets van 25 euro vlekkeloos verwerkt via live Stripe. (€2.200 (Launch & Grow Pakket) + €49/maand hosting — binnen 6 werkdagen live). 🚀
 
-👉 Lees hoe wij betalingen productieklaar maken: [Link naar artikel]
+👉 Lees hoe wij betalingen productieklaar maken: https://launchstudio.eu/nl/blog/how-to-add-stripe-payments-ai-app
 
 #LaunchStudio #Manifera #AISaaS #StripePayments #Bolt #Mollie #iDEAL #FinTech #StartupOpschalen

@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen de technici van Manifera — met 160+ opgeleverd
 
 Het resultaat voor Vracht360: de tool doorstond de beveiligingsvragen van de volgende prospect zonder aarzeling, allemaal zonder de bestaande, door Bolt gebouwde interface te wijzigen. 🚀
 
-👉 Snel gecodeerd, maar niet zeker wat er gebeurt als het uitvalt? Kom er achter vóór uw volgende demo: [Link naar artikel]
+👉 Snel gecodeerd, maar niet zeker wat er gebeurt als het uitvalt? Kom er achter vóór uw volgende demo: https://launchstudio.eu/nl/blog/22-code-with-ai-tilburg
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #Tilburg

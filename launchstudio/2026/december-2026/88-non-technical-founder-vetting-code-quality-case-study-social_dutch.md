@@ -14,6 +14,6 @@ Bij LaunchStudio bewijzen we senioriteit met transparante code, geautomatiseerde
 
 Mei's proef-sprint slaagde met vlag en wimpel; ze lanceerde met 28 boetieks zonder één bug. (€ 2.950 totaal — 11 werkdagen.) 🚀
 
-👉 Ontdek hoe u een dev partner scherp toetst: [Link naar artikel]
+👉 Ontdek hoe u een dev partner scherp toetst: https://launchstudio.eu/nl/blog/non-technical-founder-vetting-code-quality-case-study
 
 #LaunchStudio #Manifera #AISaaS #NonTechnicalFounder #CodeQuality

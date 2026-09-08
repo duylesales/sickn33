@@ -14,6 +14,6 @@ At LaunchStudio, we've helped self-funded founders like Priya go from prototype 
 
 Priya converted all five testers to paying customers the same week the fix shipped, and covered her former salary from product revenue within two months. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/bootstrapped-founder-profitability-case-study
 
 #LaunchStudio #Manifera #AISaaS #BootstrappedFounder #SoloFounder

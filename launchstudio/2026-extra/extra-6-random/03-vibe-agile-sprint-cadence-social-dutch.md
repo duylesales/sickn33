@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengt Manifera de procesdiscipline van 120+ technici en 16
 
 Haar resultaat: Anne beoordeelt door AI gegenereerde wijzigingen nu in de cyclus waarin ze zijn gemaakt in plaats van in een tweewekelijkse stapel, en de beoordelingslast is gedaald tot iets wat één persoon duurzaam kan dragen. 🚀
 
-👉 Houdt uw sprintcadans geen gelijke tred met uw AI-output? Bekijk wat een goede beoordelingsstructuur zou kosten: [Link naar artikel]
+👉 Houdt uw sprintcadans geen gelijke tred met uw AI-output? Bekijk wat een goede beoordelingsstructuur zou kosten: https://launchstudio.eu/nl/blog/vibe-agile-sprint-cadence
 
 #AINativeFounder #LaunchStudio #Manifera #AgileForAI #CodeReview

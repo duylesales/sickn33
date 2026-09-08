@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, werken we met vaste prijzen, va
 
 💡 Zo hielpen we Marieke Boersma na een eerdere mislukte poging binnen 10 dagen veilig live te gaan met haar trainers-app — zonder scope-discussies.
 
-👉 Lees wat u dit keer concreet anders inricht: [Link naar artikel]
+👉 Lees wat u dit keer concreet anders inricht: https://launchstudio.eu/nl/blog/ive-been-burned-before-what-to-do-differently
 
 #SoftwareDevelopment #TechStartup #Outsourcing #FounderLessons #LaunchStudio #Manifera

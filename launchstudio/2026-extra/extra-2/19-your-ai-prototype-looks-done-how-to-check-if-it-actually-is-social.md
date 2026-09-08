@@ -15,6 +15,6 @@ At **LaunchStudio**, this systematic key-and-secrets audit is a standard first s
 
 His result: exposed key rotated, publishable/secret usage correctly separated — donation flow completely untouched. 🚀
 
-👉 Describe what you're building — we reply within one business day: [Link to article]
+👉 Describe what you're building — we reply within one business day: https://launchstudio.eu/en/blog/your-ai-prototype-looks-done-how-to-check-if-it-actually-is
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #Payments

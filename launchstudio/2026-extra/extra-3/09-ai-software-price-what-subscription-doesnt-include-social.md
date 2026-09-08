@@ -15,6 +15,6 @@ At **LaunchStudio**, we walk founders through the complete cost picture during t
 
 His result: Ruben adjusted his runway plan upfront with the real number in hand, delaying launch by roughly six weeks to secure funding earmarked against the actual total cost. 🚀
 
-👉 Get the complete cost picture before you commit to a launch timeline: [Link to article]
+👉 Get the complete cost picture before you commit to a launch timeline: https://launchstudio.eu/en/blog/ai-software-price-what-subscription-doesnt-include
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSPricing #StartupBudgeting

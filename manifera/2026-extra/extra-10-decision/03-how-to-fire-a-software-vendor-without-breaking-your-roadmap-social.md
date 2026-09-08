@@ -12,6 +12,6 @@ You've made the decision — the vendor relationship is ending. The question tha
 
 Firing a vendor well isn't a courage problem — it's a sequencing problem. 🎯
 
-👉 Read our full deep dive on firing a software vendor without breaking your roadmap: [Link to article]
+👉 Read our full deep dive on firing a software vendor without breaking your roadmap: https://www.manifera.com/blog/how-to-fire-a-software-vendor-without-breaking-your-roadmap
 
 #CTO #VendorManagement #SoftwareOutsourcing #VendorTermination #TechLeadership #Manifera

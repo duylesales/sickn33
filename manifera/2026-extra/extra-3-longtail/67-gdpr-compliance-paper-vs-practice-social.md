@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on gdpr compliance paper practice: [Link to article]
+👉 Read our full guide on gdpr compliance paper practice: https://www.manifera.com/blog/gdpr-compliance-paper-vs-practice
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

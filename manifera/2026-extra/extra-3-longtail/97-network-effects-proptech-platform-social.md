@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on network effects proptech platform: [Link to article]
+👉 Read our full guide on network effects proptech platform: https://www.manifera.com/blog/network-effects-proptech-platform
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

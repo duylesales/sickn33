@@ -12,6 +12,6 @@
 
 The difference between an 8-12 week ramp and a 2-4 week ramp is almost never talent. It's whether onboarding was designed as a project. 🛡️
 
-👉 Read our full deep dive on onboarding vietnam offshore pod 30 60 90: [Link to article]
+👉 Read our full deep dive on onboarding vietnam offshore pod 30 60 90: https://www.manifera.com/blog/onboarding-vietnam-offshore-pod-30-60-90
 
 #VPEngineering #OffshoreTeam #Onboarding #Vietnam #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, our team — including engineers based in Singapore — bri
 
 Her result: EigenModel's ticket routing beat her custom training attempts, built in days instead of the six weeks already spent. 🚀
 
-👉 About to start training your own model? Book a free 15-minute intro call first: [Link to article]
+👉 About to start training your own model? Book a free 15-minute intro call first: https://launchstudio.eu/en/blog/make-own-ai-wrong-problem
 
 #AINativeFounder #LaunchStudio #Manifera #PromptEngineering #AIStrategy

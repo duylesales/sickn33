@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: cost per customer fell from that €1,240 monthly bill to about €1.90, the heaviest user moved to a higher tier, and the fix shipped in 3 business days. 🚀
 
-👉 Estimate your AI feature's real cost per user: [Link to article]
+👉 Estimate your AI feature's real cost per user: https://launchstudio.eu/en/blog/adding-an-ai-feature-what-it-actually-costs-per-user
 
 #AIStartup #SaaS #LLMCosts #FounderLife #LaunchStudio #Manifera

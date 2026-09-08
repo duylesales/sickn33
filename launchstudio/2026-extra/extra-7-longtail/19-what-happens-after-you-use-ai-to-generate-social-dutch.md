@@ -14,6 +14,6 @@ Bij **LaunchStudio** gaan we op zoek naar de foutpaden die een vriendelijke bêt
 
 Bastiaan's resultaat: de exacte storing die vijf vriendelijke testers na nul pogingen misten, wordt nu opgemerkt, gelogd en verholpen voordat een vreemde het ooit merkt. 🚀
 
-👉 Hebt u uw app alleen ooit getest met mensen die u mogen? Dit is wat dat verbergt: [Link naar artikel]
+👉 Hebt u uw app alleen ooit getest met mensen die u mogen? Dit is wat dat verbergt: https://launchstudio.eu/nl/blog/what-happens-after-you-use-ai-to-generate-code-for-a-real-product
 
 #AINativeFounder #LaunchStudio #Manifera #LovableAI #ProductionReady

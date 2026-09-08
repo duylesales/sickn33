@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 One founder's silent fallback failure went undetected for 11 days — we built a unified router and the new cost dashboard revealed 30% of calls were hitting an unnecessarily expensive model, cutting monthly AI spend by 22%. (€3,600, Launch & Grow Package — 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/llm-provider-consolidation-router-case-study
 
 #LaunchStudio #Manifera #AISaaS #LLMRouter #TechFounders

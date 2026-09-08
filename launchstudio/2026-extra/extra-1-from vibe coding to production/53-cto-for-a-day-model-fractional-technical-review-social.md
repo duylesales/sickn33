@@ -16,6 +16,6 @@ At **LaunchStudio**, this fractional review is part of our scoping and advisory 
 
 Her result: months of low-grade uncertainty resolved in one session — including one architecture direction redirected before wasted time. 🚀
 
-👉 Get the technical judgment calls a cofounder would normally make: [Link to article]
+👉 Get the technical judgment calls a cofounder would normally make: https://launchstudio.eu/en/blog/cto-for-a-day-model-fractional-technical-review
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #StartupAdvice

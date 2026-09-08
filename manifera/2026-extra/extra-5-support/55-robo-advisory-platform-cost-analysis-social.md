@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real robo advisory platform platform cost breakdown: [Link to article]
+👉 See the real robo advisory platform platform cost breakdown: https://www.manifera.com/blog/robo-advisory-platform-cost-analysis
 
 #WealthTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio**, ondersteund door de 120+ engineers van Manifera met direct
 
 Haar resultaat: PersoneelsPortaal doorstond de zakelijke beveiligingsbeoordeling bij de tweede indiening en sloot zijn eerste zescijferige contract in de logistieksector. 🚀
 
-👉 Deal vastgelopen in beveiligingsbeoordeling om redenen zoals deze? Beschrijf uw project en wij reageren binnen één werkdag: [Link naar artikel]
+👉 Deal vastgelopen in beveiligingsbeoordeling om redenen zoals deze? Beschrijf uw project en wij reageren binnen één werkdag: https://launchstudio.eu/nl/blog/rejected-enterprise-deal-not-production-ready
 
 #AINativeFounder #LaunchStudio #Manifera #EnterpriseSales #SaaSFounder

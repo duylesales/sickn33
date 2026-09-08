@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: orders moved to a proper database with real logins, payment became a signed webhook, and Airtable stayed as his packing view. 🚀
 
-👉 Draw up your stack and send it over for the three verdicts: [Link to article]
+👉 Draw up your stack and send it over for the three verdicts: https://launchstudio.eu/en/blog/half-no-code-half-ai-generated-what-to-keep
 
 #NoCode #AICoding #LaunchStudio #Manifera #ProductionReady #FounderLife

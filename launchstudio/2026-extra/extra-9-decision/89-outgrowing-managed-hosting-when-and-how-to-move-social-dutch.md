@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's jarenlange ervaring met enterp
 
 Zijn resultaat: PgBouncer en één database-index brachten Niels' factuur terug naar €180 en elimineerden alle fouten — geen migratie, geen uitval, geen verloren weekend. 🚀
 
-👉 Deel uw prototype of hostingfactuur voor een kosteloze beoordeling: [Link naar artikel]
+👉 Deel uw prototype of hostingfactuur voor een kosteloze beoordeling: https://launchstudio.eu/nl/blog/outgrowing-managed-hosting-when-and-how-to-move
 
 #IndieHacker #SaaS #DevOps #Hosting #CloudMigratie #LaunchStudio #Manifera

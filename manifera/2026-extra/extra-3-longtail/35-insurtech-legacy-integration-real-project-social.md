@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on insurtech legacy integration real project: [Link to article]
+👉 Read our deep dive on insurtech legacy integration real project: https://www.manifera.com/blog/insurtech-legacy-integration-real-project
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

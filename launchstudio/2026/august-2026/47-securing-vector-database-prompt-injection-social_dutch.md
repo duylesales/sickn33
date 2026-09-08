@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type AI-beveiligingsarchitectuur en vec
 
 Ryders kennisbank werd hermetisch afgesloten: Prompt-injectieaanvallen werden tijdens opvolgende penetratietests in 100% van de gevallen geblokkeerd. (€2.100 (Vector Security Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/securing-vector-database-prompt-injection
 
 #LaunchStudio #Manifera #AISaaS #PromptInjection #AIBeveiliging #CyberSecurity #VectorDatabase #RAG #Pinecone #TechFounders #StartupOpschalen

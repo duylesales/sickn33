@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen we precies dit scenario als onderdeel van onze authe
 
 Haar resultaat: correcte server-side sessieongeldigmaking geïmplementeerd, bevestigd dat een vastgelegd token oprecht onmiddellijk stopt te werken. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/your-ai-software-app-passed-every-demo-has-it-passed-a-real-audit
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #Authentication

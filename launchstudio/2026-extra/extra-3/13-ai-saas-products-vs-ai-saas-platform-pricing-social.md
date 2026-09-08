@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders make this distinction concretely during sc
 
 Daniël's result: usage-based pricing for his heaviest segment, flat pricing preserved for everyone else — a growing margin problem resolved. 🚀
 
-👉 Get clear on which one you're actually building before you price it: [Link to article]
+👉 Get clear on which one you're actually building before you price it: https://launchstudio.eu/en/blog/ai-saas-products-vs-ai-saas-platform-pricing
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSPricing #APIDesign

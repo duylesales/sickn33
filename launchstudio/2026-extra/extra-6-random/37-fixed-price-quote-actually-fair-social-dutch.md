@@ -15,6 +15,6 @@ Bij **LaunchStudio** wordt elke opdracht afgebakend en geprijsd als een gespecif
 
 Haar resultaat: Femke koos de leverancier wiens specificatie daadwerkelijk overeenkwam met haar scope, en gebruikte de uitsplitsing om twee onnodige regelposten uit de uiteindelijke prijs te onderhandelen. 🚀
 
-👉 Staart u naar drie sterk uiteenlopende offertes voor dezelfde klus? Zo vergelijkt u ze daadwerkelijk: [Link naar artikel]
+👉 Staart u naar drie sterk uiteenlopende offertes voor dezelfde klus? Zo vergelijkt u ze daadwerkelijk: https://launchstudio.eu/nl/blog/fixed-price-quote-actually-fair
 
 #AINativeFounder #LaunchStudio #Manifera #FixedPriceQuote #ProductionReady

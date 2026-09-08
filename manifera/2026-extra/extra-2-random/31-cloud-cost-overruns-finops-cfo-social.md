@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on cloud cost overruns finops cfo: [Link to article]
+👉 Read our full deep dive on cloud cost overruns finops cfo: https://www.manifera.com/blog/cloud-cost-overruns-finops-cfo
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

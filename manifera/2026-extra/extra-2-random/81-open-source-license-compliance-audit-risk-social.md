@@ -12,6 +12,6 @@
 
 Find it in a routine scan — not in your investors' due diligence report. 🛡️
 
-👉 Read our full deep dive on open source license compliance audit risk: [Link to article]
+👉 Read our full deep dive on open source license compliance audit risk: https://www.manifera.com/blog/open-source-license-compliance-audit-risk
 
 #OpenSourceCompliance #CFO #DueDiligence #TechRisk #Manifera

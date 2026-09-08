@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the wealth management suitability compliance case study: [Link to article]
+👉 See the wealth management suitability compliance case study: https://www.manifera.com/blog/wealth-management-suitability-case-study
 
 #WealthTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

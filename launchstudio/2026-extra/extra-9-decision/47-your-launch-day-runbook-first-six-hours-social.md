@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a DNS mismatch rejecting every Outlook confirmation got fixed in twenty minutes instead of found hours later. 🚀
 
-👉 Book a call before launch week, not during it — your runbook is worth more in advance: [Link to article]
+👉 Book a call before launch week, not during it — your runbook is worth more in advance: https://launchstudio.eu/en/blog/your-launch-day-runbook-first-six-hours
 
 #SaaS #LaunchDay #LaunchStudio #Manifera #StartupGrowth #ScaleUp

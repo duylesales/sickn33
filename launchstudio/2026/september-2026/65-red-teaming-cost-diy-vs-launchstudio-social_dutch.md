@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De kwetsbaarheid van Dario werd ontdekt dagen voordat een groeicampagne deze had blootgelegd: LaunchStudio herbouwde de promptarchitectuur met strikte input/output-grenzen, isoleerde het contextvenster van elke sessie en voegde een outputfilter toe dat lekken van de systeemprompt blokkeert. (€3.200 (Relaunch & Scale Pakket) — red-teaming-ronde en herstel voltooid in 9 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/red-teaming-cost-diy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #RedTeaming #AISecurity

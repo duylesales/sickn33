@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Mark's application achieved production readiness: Mark launched his logistics SaaS to his first paying customers just two weeks later. Lovable helped me build the car, but LaunchStudio built the engine and the brakes so I could safely drive it on the highway. (€1,800 (Scale Package) — production-ready and deployed in 8 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/build-saas-mvp-lovable-one-week
 
 #LaunchStudio #Manifera #AISaaS #HowtoBuildaSaaSMVPwi #TechFounders

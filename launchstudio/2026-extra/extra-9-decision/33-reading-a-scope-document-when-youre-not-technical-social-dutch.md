@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Haar resultaat: een aangescherpte scope verhoogde de prijs met € 600, bracht de hosting naar haar eigen accounts en verlaagde de maandelijkse operationele kosten van € 140 naar € 46. 🚀
 
-👉 Omschrijf uw project en ontvang binnen één werkdag een heldere scope inclusief acceptatiecriteria: [Link naar artikel]
+👉 Omschrijf uw project en ontvang binnen één werkdag een heldere scope inclusief acceptatiecriteria: https://launchstudio.eu/nl/blog/een-scope-document-lezen-zonder-technische-kennis
 
 #AIFounder #NoCode #HiringDevelopers #StartupTips #LaunchStudio #Manifera

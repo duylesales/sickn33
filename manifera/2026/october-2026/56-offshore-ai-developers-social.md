@@ -12,6 +12,6 @@ At **Manifera**, we provide Tier-1 architectural talent to build true proprietar
 ✅ Fine-tuning open-source SLMs (Llama 3) entirely behind your firewall! 🛡️
 
 Stop paying for fragile API wrappers. Start architecting a proprietary AI fortress! 🚀
-👉 The CTO's guide to offshore AI engineering: [Link to article]
+👉 The CTO's guide to offshore AI engineering: https://www.manifera.com/blog/offshore-ai-developers
 
 #ArtificialIntelligence #MachineLearning #RAG #EnterpriseSoftware #TechLeadership #OffshoreDevelopment #VietnamTech #AmsterdamBusiness #Manifera

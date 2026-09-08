@@ -12,6 +12,6 @@
 
 The pool of genuinely reliable companies is smaller than the pool that writes a good RFP response. 🛡️
 
-👉 Read our full deep dive on offshore software development company vietnam execution: [Link to article]
+👉 Read our full deep dive on offshore software development company vietnam execution: https://www.manifera.com/blog/offshore-software-development-company-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #Amsterdam #VendorEvaluation #Manifera

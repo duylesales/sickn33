@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De latency van Wouter daalde met 65%: de gemiddelde generatietijd ging van 11 seconden naar 3,9 seconden, en time-to-first-token daalde van 11 seconden naar minder dan 900 milliseconden — zonder zijn met Cursor gebouwde frontend of CRM-integratie aan te raken. 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/llm-latency-reduction-case-study
 
 #LaunchStudio #Manifera #AISaaS #LLMLatency #B2BSaaS

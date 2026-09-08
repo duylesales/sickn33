@@ -14,6 +14,6 @@ Bij LaunchStudio voegen we repositories niet simpelweg samen — we richten de p
 
 Karim's team bracht cross-repo updates terug van 2 dagen afstemming naar 1 pull request op dezelfde dag. (€ 3.300 (Relaunch & Scale Pakket) — 11 werkdagen.) 🚀
 
-👉 Bekijk onze aanpak: [Link naar artikel]
+👉 Bekijk onze aanpak: https://launchstudio.eu/nl/blog/monorepo-vs-polyrepo-ai-saas-architecture
 
 #LaunchStudio #Manifera #AISaaS #Monorepo #EngineeringArchitecture

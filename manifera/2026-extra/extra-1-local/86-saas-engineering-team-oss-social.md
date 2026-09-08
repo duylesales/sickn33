@@ -12,6 +12,6 @@
 
 Compliance-grade engineering, priced honestly from the start. 🛡️
 
-👉 Read our full deep dive on saas engineering team oss: [Link to article]
+👉 Read our full deep dive on saas engineering team oss: https://www.manifera.com/blog/saas-engineering-team-oss
 
 #Oss #NoordBrabant #PharmaTech #CFO #SaaSEngineering #GxPCompliance #Manifera

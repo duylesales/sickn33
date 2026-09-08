@@ -12,6 +12,6 @@
 
 Turn a breaking change into a routine migration — not a trust event. 🛡️
 
-👉 Read our full deep dive on api versioning chaos breaking changes: [Link to article]
+👉 Read our full deep dive on api versioning chaos breaking changes: https://www.manifera.com/blog/api-versioning-chaos-breaking-changes
 
 #APIDesign #CTO #IntegrationPartners #SoftwareArchitecture #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Hun resultaat: toegangscontrolegat gedicht binnen 9 werkdagen, eerste betalende cohort onboarded op de oorspronkelijke datum — plus de fix die ze niet hadden zien aankomen. 🚀
 
-👉 Behoud uw roadmap terwijl wij het hardeningswerk afhandelen: [Link naar artikel]
+👉 Behoud uw roadmap terwijl wij het hardeningswerk afhandelen: https://launchstudio.eu/nl/blog/bootstrapped-two-person-team-ships-faster-case-study
 
 #Bootstrapped #IndieHacker #StartupTeam #LaunchStudio #Manifera #MVP

@@ -15,6 +15,6 @@ Bij **LaunchStudio** beoordelen wij AI-browserextensies specifiek op de evenredi
 
 Zijn resultaat: PaginaSamenvatter kwam bij opnieuw indienen door de winkelbeoordeling, met een toestemmingsmodel dat ook voor privacybewuste gebruikers duidelijker is. 🚀
 
-👉 Staat u op het punt uw extensie in te dienen? Laten we de rechten bepalen voordat een winkelbeoordeling ze markeert: [Link naar artikel]
+👉 Staat u op het punt uw extensie in te dienen? Laten we de rechten bepalen voordat een winkelbeoordeling ze markeert: https://launchstudio.eu/nl/blog/ai-browser-extensions-stricter-permission-model
 
 #AINativeFounder #LaunchStudio #Manifera #BrowserExtensions #PrivacyByDesign

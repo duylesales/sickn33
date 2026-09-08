@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on donor management pci dss: [Link to article]
+👉 Read our full architectural deep dive on donor management pci dss: https://www.manifera.com/blog/donor-management-pci-dss-architecture
 
 #NonprofitTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

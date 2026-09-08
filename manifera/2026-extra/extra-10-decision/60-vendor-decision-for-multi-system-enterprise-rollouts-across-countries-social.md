@@ -13,6 +13,6 @@ A multi-country rollout isn't one project run in several places — it's several
 
 The right vendor treats each country as its own body of legal requirement — not a copy-paste. 🎯
 
-👉 Read our full deep dive on choosing a vendor for multi-country enterprise rollouts: [Link to article]
+👉 Read our full deep dive on choosing a vendor for multi-country enterprise rollouts: https://www.manifera.com/blog/vendor-decision-for-multi-system-enterprise-rollouts-across-countries
 
 #MultiCountryRollout #ERP #COO #GlobalExpansion #EnterpriseIT #Manifera

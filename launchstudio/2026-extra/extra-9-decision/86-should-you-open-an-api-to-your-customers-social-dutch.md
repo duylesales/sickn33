@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's software-engineers met jarenla
 
 Zijn resultaat: Ruben bouwde in vier dagen een webhook en een geplande export in plaats van drie weken te zwoegen op een complete API — zonder versioneringslast of solo-supportrij. 🚀
 
-👉 Bespreek met een ervaren engineer welke integratie-optie voor uw SaaS het beste past: [Link naar artikel]
+👉 Bespreek met een ervaren engineer welke integratie-optie voor uw SaaS het beste past: https://launchstudio.eu/nl/blog/should-you-open-an-api-to-your-customers
 
 #IndieHacker #SaaS #API #SoloOprichter #LaunchStudio #Manifera

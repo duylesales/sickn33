@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, e
 
 Her result: €3,600 for Relaunch & Scale, six tenant-isolation gaps closed in 13 business days — a problem she didn't even know existed before the call. 🚀
 
-👉 See the real math behind your specific quote: [Link to article]
+👉 See the real math behind your specific quote: https://launchstudio.eu/en/blog/how-launchstudio-prices-a-project
 
 #LaunchStudio #Manifera #SaaSPricing #VibeCoding #FixedPrice #MVPSecurity

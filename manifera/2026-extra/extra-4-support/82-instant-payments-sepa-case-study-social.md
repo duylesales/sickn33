@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the instant payments sepa case study: [Link to article]
+👉 See the instant payments sepa case study: https://www.manifera.com/blog/instant-payments-sepa-case-study
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

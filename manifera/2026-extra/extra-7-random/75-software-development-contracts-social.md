@@ -12,6 +12,6 @@
 
 The clause you skim today is the clause a due diligence lawyer reads word by word tomorrow. 🔍
 
-👉 Read our full deep dive on software development contracts: [Link to article]
+👉 Read our full deep dive on software development contracts: https://www.manifera.com/blog/software-development-contracts
 
 #SoftwareContracts #IPRights #LegalTech #CEO #Manifera

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), auditen en 
 
 💡 Zo ontdekte Wietse de Groot van Uurloon dat een 1-cent afwijking op facturen voortkwam uit een bug die bij een andere klant al eens € 14,50 had afgeschreven in plaats van € 1.450,00. Na onze integer-migratie en btw-reconciliatie klopten alle facturen weer tot op de cent.
 
-👉 Sluit uw facturatie al naadloos aan op de normen van Europese accountants? [Link naar artikel]
+👉 Sluit uw facturatie al naadloos aan op de normen van Europese accountants? https://launchstudio.eu/nl/blog/currencies-numbers-and-formats-for-a-european-product
 
 #FinTech #SaaSArchitecture #Billing #Accounting #LaunchStudio #Manifera

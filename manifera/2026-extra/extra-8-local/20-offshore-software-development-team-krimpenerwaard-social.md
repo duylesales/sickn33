@@ -12,6 +12,6 @@ Salary versus day rate is the wrong comparison. It's the one number that makes i
 
 An eighteen-month comparison showing roughly €150,000-€180,000 in savings once attrition and ramp time are priced in correctly. Stop re-hiring the same role every year. 💶
 
-👉 Read our full deep dive on offshore software development teams for Krimpenerwaard companies: [Link to article]
+👉 Read our full deep dive on offshore software development teams for Krimpenerwaard companies: https://www.manifera.com/blog/offshore-software-development-team-krimpenerwaard
 
 #Krimpenerwaard #ZuidHolland #CFO #TotalCostOfOwnership #OffshoreTeam #TechStaffing #Manifera

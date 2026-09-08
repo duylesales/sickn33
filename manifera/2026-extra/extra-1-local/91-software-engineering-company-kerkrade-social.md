@@ -12,6 +12,6 @@
 
 The constraint was never distance. It was market size. 🛡️
 
-👉 Read our full deep dive on software engineering company kerkrade: [Link to article]
+👉 Read our full deep dive on software engineering company kerkrade: https://www.manifera.com/blog/software-engineering-company-kerkrade
 
 #Kerkrade #Limburg #Parkstad #CTO #SoftwareEngineering #CrossBorderTalent #Manifera

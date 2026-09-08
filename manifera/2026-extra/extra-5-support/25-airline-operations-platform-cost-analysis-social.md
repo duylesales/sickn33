@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real airline operations platform platform cost breakdown: [Link to article]
+👉 See the real airline operations platform platform cost breakdown: https://www.manifera.com/blog/airline-operations-platform-cost-analysis
 
 #AviationTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

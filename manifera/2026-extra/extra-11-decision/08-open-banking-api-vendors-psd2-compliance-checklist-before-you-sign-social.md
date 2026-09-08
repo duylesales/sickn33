@@ -12,6 +12,6 @@ Every 90 days, PSD2 forces your users to reauthenticate account access. Handle t
 
 The vendor's sandbox demo isn't your production environment. Test against the banks you'll actually connect to. 🎯
 
-👉 Read our full deep dive on PSD2 compliance for open banking vendors: [Link to article]
+👉 Read our full deep dive on PSD2 compliance for open banking vendors: https://www.manifera.com/blog/open-banking-api-vendors-psd2-compliance-checklist-before-you-sign
 
 #OpenBanking #PSD2 #CTO #FintechCompliance #APIIntegration #Manifera

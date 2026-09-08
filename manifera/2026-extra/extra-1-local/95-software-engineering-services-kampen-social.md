@@ -12,6 +12,6 @@
 
 Cutover discipline that protects order fulfillment through the transition. 🛡️
 
-👉 Read our full deep dive on software engineering services kampen: [Link to article]
+👉 Read our full deep dive on software engineering services kampen: https://www.manifera.com/blog/software-engineering-services-kampen
 
 #Kampen #Overijssel #FurnitureManufacturing #CTO #ERPCutover #SoftwareEngineering #Manifera

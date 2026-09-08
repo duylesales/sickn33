@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat this as the 80% the tutorials never show — archi
 
 Kasper's result: a working deployment pipeline, a fixed webhook handler, and real CI/CD in place — delivered in 9 business days instead of another six weekends of guessing. 🚀
 
-👉 Think your AI-built app just needs "a weekend" of production hardening? Get an honest scope first: [Link to article]
+👉 Think your AI-built app just needs "a weekend" of production hardening? Get an honest scope first: https://launchstudio.eu/en/blog/why-software-engineering-for-ai-built-apps-looks
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareEngineering #AICodingTools

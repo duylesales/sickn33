@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been migrating exactly this class of payment infrastr
 
 Sofia's migration was invisible to her customers: InvoiceIQ's 140 subscribers moved to Stripe Billing with zero re-charges, zero lost renewal dates, and weekly billing support emails dropped from 15-20 to nearly zero within the first month. (€3,100 (Launch & Grow Package) — 6 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/stripe-checkout-to-billing-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #StripeBilling #SaaSRevenue

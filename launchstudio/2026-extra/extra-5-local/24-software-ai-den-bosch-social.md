@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineers bring 160+ delivered projects and clie
 
 CivicDesk's result: it passed its next municipal procurement review, with the audit trail specifically cited as meeting their record-keeping requirement. 🚀
 
-👉 Technical founder relying on code you can read but haven't stress-tested? Get a second pass: [Link to article]
+👉 Technical founder relying on code you can read but haven't stress-tested? Get a second pass: https://launchstudio.eu/en/blog/24-software-ai-den-bosch
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareArchitecture #DenBosch

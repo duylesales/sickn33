@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's trackrecord van 160+ opgelever
 
 Zijn resultaat: Koen voegde een expliciete post toe voor scoping, verhoogde zijn basisprijzen met 15% en hanteert nu een aparte margestaffel voor intensieve klanten. 🚀
 
-👉 Plan een gesprek van 15 minuten om uw werkelijke marge door te rekenen: [Link naar artikel]
+👉 Plan een gesprek van 15 minuten om uw werkelijke marge door te rekenen: https://launchstudio.eu/nl/blog/de-margerekening-achter-een-productized-launch-service
 
 #BureauLeven #WhiteLabel #AgencyOwner #ProductizedServices #LaunchStudio #Manifera

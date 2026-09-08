@@ -12,6 +12,6 @@
 
 We kept hiring good people and getting less out of each one. It wasn't the people — we never restructured while we grew. 🛡️
 
-👉 Read our full deep dive on how to scale a development team: [Link to article]
+👉 Read our full deep dive on how to scale a development team: https://www.manifera.com/blog/how-to-scale-a-development-team
 
 #EngineeringTeam #CTO #Scaling #Manifera

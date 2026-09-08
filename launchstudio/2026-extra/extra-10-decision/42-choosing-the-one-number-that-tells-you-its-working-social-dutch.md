@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar software ervaring), bo
 
 💡 Zo hielpen we Lars Bakker van Ordis ontdekken dat zijn stijgende aanmeldingen verdoezelden dat de echte facturatie daalde. Door te sturen op activatie schoot zijn MRR omhoog.
 
-👉 Ontdek hoe u uw stuurgetal kiest: [Link naar artikel]
+👉 Ontdek hoe u uw stuurgetal kiest: https://launchstudio.eu/nl/blog/choosing-the-one-number-that-tells-you-its-working
 
 #SaaSGrowth #StartupMetrics #NorthStarMetric #ProductManagement #LaunchStudio #Manifera

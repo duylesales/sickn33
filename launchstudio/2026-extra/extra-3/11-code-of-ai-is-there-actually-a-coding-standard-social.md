@@ -15,6 +15,6 @@ At **LaunchStudio**, we apply exactly this practitioner-level standard on every 
 
 Stijn's result: two genuine gaps closed, and a concrete framework that did more for him than any certificate would have. 🚀
 
-👉 No official standard exists yet — but we know exactly what a real review checks for: [Link to article]
+👉 No official standard exists yet — but we know exactly what a real review checks for: https://launchstudio.eu/en/blog/code-of-ai-is-there-actually-a-coding-standard
 
 #AINativeFounder #LaunchStudio #Manifera #CodeQuality #ProductionReady

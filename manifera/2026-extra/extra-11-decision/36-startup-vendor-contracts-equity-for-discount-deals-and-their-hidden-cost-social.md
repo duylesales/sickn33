@@ -12,6 +12,6 @@ A dev shop offers to build your MVP for half price in exchange for 5% equity. It
 
 If cash is the real constraint, there's a structure that solves it without a permanent stake in your company. 🔑
 
-👉 Read our full deep dive on equity-for-services vendor risk: [Link to article]
+👉 Read our full deep dive on equity-for-services vendor risk: https://www.manifera.com/blog/startup-vendor-contracts-equity-for-discount-deals-and-their-hidden-cost
 
 #CapTable #StartupFounders #VendorContracts #Fundraising #EquityRisk #Manifera

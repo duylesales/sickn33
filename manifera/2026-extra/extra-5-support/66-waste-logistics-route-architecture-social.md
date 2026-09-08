@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on waste logistics route: [Link to article]
+👉 Read our full architectural deep dive on waste logistics route: https://www.manifera.com/blog/waste-logistics-route-architecture
 
 #Cleantech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type framework- en architectuurkeuzes o
 
 Chloe's applicatie werd vederlicht: De laadtijd daalde van 5,0s naar 0,8s en de JavaScript-bundelgrootte werd met 70% verminderd. (€2.200 (Framework Migration Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/vercel-ai-sdk-vs-langchain-frameworks
 
 #LaunchStudio #Manifera #AISaaS #VercelAISDK #LangChain #React #NextJS #TechFounders #StartupOpschalen

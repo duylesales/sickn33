@@ -12,6 +12,6 @@ Nobody signs a vendor contract planning to fire the vendor. That's exactly why t
 
 The exit clause is insurance you negotiate when you don't need it, hoping you never do. That's the whole point of insurance. 🛡️
 
-👉 Read our full deep dive on negotiating a vendor exit clause before you sign: [Link to article]
+👉 Read our full deep dive on negotiating a vendor exit clause before you sign: https://www.manifera.com/blog/choosing-a-vendor-exit-clause-before-you-ever-need-it
 
 #Founder #VendorContract #StartupLegal #IPOwnership #Manifera

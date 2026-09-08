@@ -12,6 +12,6 @@ An SLA promised "priority response within 4 hours." What it didn't say: the cloc
 
 Read the SLA before you sign, not during the eleven-hour outage it's supposed to prevent. 📄
 
-👉 Read our full deep dive on reading a web software development vendor's maintenance SLA: [Link to article]
+👉 Read our full deep dive on reading a web software development vendor's maintenance SLA: https://www.manifera.com/blog/web-software-development-vendor-maintenance-sla
 
 #ITManager #MaintenanceSLA #VendorDueDiligence #OffshoreSoftwareDevelopment #WebSoftwareDevelopment #Manifera

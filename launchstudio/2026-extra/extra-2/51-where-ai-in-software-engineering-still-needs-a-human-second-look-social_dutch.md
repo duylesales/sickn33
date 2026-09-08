@@ -15,6 +15,6 @@ Bij **LaunchStudio** controleren we op precies dit patroon als onderdeel van onz
 
 Zijn resultaat: wachtwoordhashing geüpgraded naar een modern algoritme, bestaande accounts veilig gemigreerd — nul verstorende resets. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/where-ai-in-software-engineering-still-needs-a-human-second-look
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #Authentication

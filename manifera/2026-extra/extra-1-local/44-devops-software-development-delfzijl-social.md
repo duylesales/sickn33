@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on devops software development delfzijl: [Link to article]
+👉 Read our full deep dive on devops software development delfzijl: https://www.manifera.com/blog/devops-software-development-delfzijl
 
 #Delfzijl #Eemsdelta #Groningen #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

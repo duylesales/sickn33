@@ -16,6 +16,6 @@ At **LaunchStudio**, we run this exact checklist with the same executable rigor 
 
 His result: knew exactly which 2 tests carried his own blind spot, delegated those, found a real gap. 🚀
 
-👉 Get this exact checklist run against your codebase: [Link to article]
+👉 Get this exact checklist run against your codebase: https://launchstudio.eu/en/blog/technical-indie-hackers-checklist-vibe-coding-to-production
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

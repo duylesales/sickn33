@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the index rebuilt concurrently, migrations moved into version control, and the address change re-planned as expand-and-contract — the backfill caught 3,100 addresses the naive transformation would have gotten wrong. 🚀
 
-👉 Learn the pattern that makes schema changes safe on live data: [Link to article]
+👉 Learn the pattern that makes schema changes safe on live data: https://launchstudio.eu/en/blog/changing-your-database-after-real-customers-are-using-it
 
 #SaaS #DatabaseMigration #IndieHacker #FounderLife #LaunchStudio #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Jun Wei's application achieved production readiness: The beta concluded successfully without any further data leaks or performance issues. Jun Wei's platform is now actively used by 12 tutoring centers across Singapore, handling over 5,000 student records securely. Cursor helped me build the vision, but I didn't know what I didn't know about database security. LaunchStudio bulletproofed the backend just in time. (€1,900 (Launch Ready package) — completed in 6 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-database-setup-supabase-founders
 
 #LaunchStudio #Manifera #AISaaS #SupabaseSecuritySetu #TechFounders

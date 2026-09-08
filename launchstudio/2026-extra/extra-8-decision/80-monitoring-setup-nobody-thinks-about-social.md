@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, m
 
 Jeroen Smit's monitoring stack has since caught three issues before a single user reported them — including a certificate warning that would have made his site look unsafe within 72 hours. 🚀
 
-👉 Set up monitoring before your next user discovers a problem you could have caught: [Link to article]
+👉 Set up monitoring before your next user discovers a problem you could have caught: https://launchstudio.eu/en/blog/monitoring-setup-nobody-thinks-about
 
 #LaunchStudio #Manifera #Monitoring #Observability #IndieHacker #ProductionReady #SaaSFounders

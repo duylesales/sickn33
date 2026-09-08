@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 De bank keurde Jan's herbouwde backend direct goed dankzij het Nederlandse contract en de robuuste architectuur. (€12.000 (Hybride Enterprise Rebuild) — binnen 20 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/offshore-vs-nearshore-custom-software
 
 #LaunchStudio #Manifera #AISaaS #OffshoreVsNearshore #HybridEngineering #GDPRCompliance #DutchTech #HRTech #TechFounders #Outsourcing

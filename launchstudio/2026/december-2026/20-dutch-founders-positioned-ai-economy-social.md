@@ -18,6 +18,6 @@ At **LaunchStudio**, HQ'd at Herengracht 420 Amsterdam, we close that gap in Dut
 
 His result: 11 manufacturing clients, €645/month, sourced entirely through his network. 🚀
 
-👉 Read why the timing and geography line up: [Link to article]
+👉 Read why the timing and geography line up: https://launchstudio.eu/en/blog/dutch-founders-positioned-ai-economy
 
 #DutchStartups #LaunchStudio #Manifera #AINativeFounder #BNI #SaaS

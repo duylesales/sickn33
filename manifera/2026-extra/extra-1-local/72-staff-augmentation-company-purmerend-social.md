@@ -12,6 +12,6 @@
 
 The invoice looks fine every month. Check what it's not showing you. 🛡️
 
-👉 Read our full deep dive on staff augmentation company purmerend: [Link to article]
+👉 Read our full deep dive on staff augmentation company purmerend: https://www.manifera.com/blog/staff-augmentation-company-purmerend
 
 #Purmerend #NoordHolland #CFO #StaffAugmentation #HiddenCosts #Manifera

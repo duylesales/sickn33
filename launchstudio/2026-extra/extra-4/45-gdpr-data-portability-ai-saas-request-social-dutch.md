@@ -14,6 +14,6 @@ Bij **LaunchStudio** brengen wij gegevensstromen in kaart en bouwen wij het expo
 
 Zijn resultaat: Hugo voldeed drie dagen vóór de wettelijke deadline aan het oorspronkelijke verzoek, en elk volgend verzoek kostte sindsdien minder dan tien minuten. 🚀
 
-👉 Nooit getest wat er gebeurt als een gebruiker morgen om zijn gegevens vraagt? Praat met een ingenieur over uw schema: [Link naar artikel]
+👉 Nooit getest wat er gebeurt als een gebruiker morgen om zijn gegevens vraagt? Praat met een ingenieur over uw schema: https://launchstudio.eu/nl/blog/gdpr-data-portability-ai-saas-request
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #DataPortability

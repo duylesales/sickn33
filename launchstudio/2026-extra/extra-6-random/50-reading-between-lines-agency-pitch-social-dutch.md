@@ -15,6 +15,6 @@ Bij **LaunchStudio** zijn onze technici in Amsterdam, Singapore en Ho Chi Minh-s
 
 Zijn resultaat: BouwPlan lanceerde met zijn originele frontend intact, zijn daadwerkelijke beveiligingslacunes gedicht, tegen een fractie van wat de gestaakte herbouw zou hebben gekost. 🚀
 
-👉 Kreeg u een "volledige herbouw" voorgesteld die u nog niet heeft geverifieerd? Vraag eerst een tweede mening: [Link naar artikel]
+👉 Kreeg u een "volledige herbouw" voorgesteld die u nog niet heeft geverifieerd? Vraag eerst een tweede mening: https://launchstudio.eu/nl/blog/reading-between-lines-agency-pitch
 
 #AINativeFounder #LaunchStudio #Manifera #SecondOpinion #ProductionReady

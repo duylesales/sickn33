@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Daniels platform behaalde productie-gereedheid: zijn eerste live batch echte transacties werd verwerkt met elke betaling geverifieerd door een ondertekende webhook en zonder incidenten van datablootstelling — afgerond in slechts 9 werkdagen. 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/fintech-stripe-payments-case-study
 
 #LaunchStudio #Manifera #AISaaS #FintechSecurity #StripeConnect

@@ -12,6 +12,6 @@
 
 Add the three missing rows before the spreadsheet tells you the truth. 🛡️
 
-👉 Read our full deep dive on offshore development partner netherlands vs vietnam: [Link to article]
+👉 Read our full deep dive on offshore development partner netherlands vs vietnam: https://www.manifera.com/blog/offshore-development-partner-netherlands-vs-vietnam
 
 #Netherlands #Vietnam #CTO #OffshoreDevelopmentPartner #CapacityPlanning #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 ClauseCheck AI slaagde bij de eerste indiening voor de technische beveiligingsbeoordeling van de bank, en de pilot werd omgezet in een getekend enterprise-contract. (€ 5.200 (Enterprise Hardening Pakket) — 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-partner-zero-data-retention-retrofit
 
 #LaunchStudio #Manifera #AISaaS #ZeroDataRetention #EnterpriseSecurity

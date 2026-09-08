@@ -16,6 +16,6 @@ Bij **LaunchStudio** geven we solo-oprichters de technische slagkracht van een s
 
 Tims resultaat: Live in 9 werkdagen voor €2.100, 100% aandelen behouden en direct €18.000 aan B2B-contracten getekend. 🚀
 
-👉 Ontdek wanneer het tijd is om engineering te delegeren: [Link naar artikel]
+👉 Ontdek wanneer het tijd is om engineering te delegeren: https://launchstudio.eu/nl/blog/solo-founder-or-team-engineering-help
 
 #SoloFounder #IndieHacker #LaunchStudio #Manifera #VibeCoding #SaaSGrowth

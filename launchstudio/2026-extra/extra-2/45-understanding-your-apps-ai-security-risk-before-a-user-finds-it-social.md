@@ -15,6 +15,6 @@ At **LaunchStudio**, we perform exactly this kind of full infrastructure invento
 
 Her result: proper authentication added to the exposed function, a full inventory confirming no others shared the gap. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/understanding-your-apps-ai-security-risk-before-a-user-finds-it
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #CloudSecurity

@@ -12,6 +12,6 @@
 
 Our coverage number looked great for years right up until it didn't stop the bug that actually mattered. 🛡️
 
-👉 Read our full deep dive on software testing services: [Link to article]
+👉 Read our full deep dive on software testing services: https://www.manifera.com/blog/software-testing-services
 
 #SoftwareTesting #VPEngineering #QA #Manifera

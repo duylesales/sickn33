@@ -12,6 +12,6 @@
 
 The entity structure around delivery is what your risk assessment should actually scrutinize. 🛡️
 
-👉 Read our full deep dive on offshore software development company amsterdam governance: [Link to article]
+👉 Read our full deep dive on offshore software development company amsterdam governance: https://www.manifera.com/blog/offshore-software-development-company-amsterdam-governance
 
 #Amsterdam #CFO #RiskManagement #GDPR #OffshoreSoftwareDevelopment #Manifera

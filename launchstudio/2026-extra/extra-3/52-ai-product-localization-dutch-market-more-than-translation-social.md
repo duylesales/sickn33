@@ -15,6 +15,6 @@ At **LaunchStudio**, we specifically verify Dutch-market localization completene
 
 Her result: iDEAL support implemented through Mollie alongside KlusPlanner's existing options — the actual payment friction gone, not just the language around it. 🚀
 
-👉 Building for Dutch customers? Get your product checked against what they actually expect, not just translated text: [Link to article]
+👉 Building for Dutch customers? Get your product checked against what they actually expect, not just translated text: https://launchstudio.eu/en/blog/ai-product-localization-dutch-market-more-than-translation
 
 #AINativeFounder #LaunchStudio #Manifera #DutchMarket #iDEAL

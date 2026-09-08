@@ -12,6 +12,6 @@ Two Edam-Volendam CFOs budgeting for nearly identical software projects can land
 
 A €95,000-€135,000 build against a €20,000-€30,000/year manual-process cost typically breaks even in 18-24 months. Run the real numbers, not a rule of thumb. 🧮
 
-👉 Read our full deep dive on custom software development cost in Edam-Volendam: [Link to article]
+👉 Read our full deep dive on custom software development cost in Edam-Volendam: https://www.manifera.com/blog/custom-software-development-cost-edam-volendam
 
 #EdamVolendam #NoordHolland #SoftwareCost #CFO #CustomSoftware #Budgeting #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Ryder's application achieved silky-smooth performance: Prompt injection attacks were blocked 100% of the time in follow-up penetration testing, protecting sensitive data. (€2,100 (Vector Security Package) — production-ready and deployed in 5 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/securing-vector-database-prompt-injection
 
 #LaunchStudio #Manifera #AISaaS #SecuringYourVectorDa #TechFounders

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: multi-tenant restructure delivered in 5 business days, fixed price — every account migrated to organisation-scoped ownership with no data loss. 🚀
 
-👉 Find the placeholder rule before a customer's colleague does: [Link to article]
+👉 Find the placeholder rule before a customer's colleague does: https://launchstudio.eu/en/blog/invite-and-team-accounts-what-breaks-when-a-second-person-logs-in
 
 #SaaS #DataSecurity #MultiTenant #ProductEngineering #LaunchStudio #Manifera

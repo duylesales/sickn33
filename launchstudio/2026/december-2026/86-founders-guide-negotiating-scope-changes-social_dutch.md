@@ -14,6 +14,6 @@ Bij LaunchStudio combineren we vaste prijsgaranties met wendbaarheid voor verand
 
 Lars lanceerde op tijd binnen zijn budget van € 2.800 en sloot direct een kliniek met 3 vestigingen aan. (€ 2.800 (Launch & Grow) — 10 werkdagen.) 🚀
 
-👉 Leer hoe u professioneel onderhandelt over scope: [Link naar artikel]
+👉 Leer hoe u professioneel onderhandelt over scope: https://launchstudio.eu/nl/blog/founders-guide-negotiating-scope-changes
 
 #LaunchStudio #Manifera #AISaaS #ProjectManagement #ScopeCreep

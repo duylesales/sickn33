@@ -12,6 +12,6 @@ Your third successful project with the same vendor just wrapped. Should you keep
 
 The right structure isn't about commitment anxiety — it's about which financial risk you're willing to hold. 🎯
 
-👉 Read our full deep dive on retainer vs. project-by-project vendor structuring: [Link to article]
+👉 Read our full deep dive on retainer vs. project-by-project vendor structuring: https://www.manifera.com/blog/long-term-retainer-vs-project-by-project-structuring-an-ongoing-partnership
 
 #CFO #VendorManagement #SoftwareBudgeting #ITProcurement #FinanceLeadership #Manifera

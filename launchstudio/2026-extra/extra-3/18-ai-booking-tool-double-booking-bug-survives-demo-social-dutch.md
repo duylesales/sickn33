@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen wij boekings- en reserveringsstromen specifiek op de
 
 Het resultaat voor Lars: vergrendeling op databaseniveau sloot de raceconditie, geverifieerd door gelijktijdige testboekingen af te vuren tot precies één er telkens doorheen komt. 🚀
 
-👉 Laat uw boekingsproces testen op de voorwaarde die uw eigen tests niet kunnen reproduceren: [Link naar artikel]
+👉 Laat uw boekingsproces testen op de voorwaarde die uw eigen tests niet kunnen reproduceren: https://launchstudio.eu/nl/blog/ai-booking-tool-double-booking-bug-survives-demo
 
 #AINativeFounder #LaunchStudio #Manifera #ConcurrencyBug #BookingTech

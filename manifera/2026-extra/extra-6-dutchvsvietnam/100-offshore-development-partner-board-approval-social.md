@@ -12,6 +12,6 @@
 
 The final article in this series — closing the loop from Amsterdam's Zuidas to a board table anywhere in Europe. 🛡️
 
-👉 Read our full deep dive on offshore development partner board approval: [Link to article]
+👉 Read our full deep dive on offshore development partner board approval: https://www.manifera.com/blog/offshore-development-partner-board-approval
 
 #CFO #BoardApproval #OffshoreDevelopmentPartner #RiskManagement #Manifera

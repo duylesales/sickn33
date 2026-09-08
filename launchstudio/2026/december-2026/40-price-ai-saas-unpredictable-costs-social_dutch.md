@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, bouwen we zowe
 
 Zijn resultaat: 6 van de 8 grootverbruikers stapten met een glimlach over naar Pro (€79/m). +18% totale omzet, nul nieuwe klanten nodig. 🚀
 
-👉 Lees hoe u uw AI-SaaS winstgevend prijst: [Link naar artikel]
+👉 Lees hoe u uw AI-SaaS winstgevend prijst: https://launchstudio.eu/nl/blog/price-ai-saas-unpredictable-costs
 
 #SaaSPricing #LaunchStudio #Manifera #AINativeFounder #SaaS #UnitEconomics #Lovable #Stripe #Mollie #TechFounders #StartupOpschalen

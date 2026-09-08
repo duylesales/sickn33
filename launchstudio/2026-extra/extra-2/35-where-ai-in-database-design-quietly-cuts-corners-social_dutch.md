@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze standaardcredentialcontrole opgenomen in onze stand
 
 Zijn resultaat: het standaardaccount onmiddellijk uitgeschakeld, unieke credentials vastgesteld, commissietarieven hersteld. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/where-ai-in-database-design-quietly-cuts-corners
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #VibeCoding

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, a
 
 Sophie de Wit's InzichtPro landed the Blokker pilot across 40 stores, and the contract was signed on day 10. 🚀
 
-👉 Tell us about the access control your next enterprise client needs: [Link to article]
+👉 Tell us about the access control your next enterprise client needs: https://launchstudio.eu/en/blog/b2b-saas-role-based-access-control-case-study
 
 #LaunchStudio #Manifera #RBAC #B2BSaaS #EnterpriseSales #Supabase #VibeCoding

@@ -12,6 +12,6 @@ Vendor A: credentials trickled in over two weeks, first commit landed at week fi
 
 The fix for a messy onboarding is rarely a better vendor. It's a more deliberate first thirty days. 📋
 
-👉 Read our full deep dive on the 30-day vendor onboarding plan: [Link to article]
+👉 Read our full deep dive on the 30-day vendor onboarding plan: https://www.manifera.com/blog/post-decision-vendor-onboarding-the-30-day-plan-after-signing
 
 #CTO #VendorOnboarding #SoftwareDevelopment #ProjectKickoff #TechLeadership #Manifera

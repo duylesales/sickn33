@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years working with clients like Vo
 
 Her result: honest answers with concrete remediation timelines got follow-up questions instead of rejection, and the deal closed six weeks later. 🚀
 
-👉 Book a 15-minute call to talk through your gaps before your next questionnaire lands: [Link to article]
+👉 Book a 15-minute call to talk through your gaps before your next questionnaire lands: https://launchstudio.eu/en/blog/your-first-enterprise-security-questionnaire
 
 #SaaS #SecurityQuestionnaire #LaunchStudio #Manifera #EnterpriseSales #ScaleUp

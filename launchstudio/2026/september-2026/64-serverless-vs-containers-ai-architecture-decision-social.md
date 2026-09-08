@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Dario's fix held up in production: the same 340-document data room now completes ingestion reliably in the background, with the dashboard showing live per-file progress instead of a silent failure, and data rooms up to 1,000+ documents have processed successfully since. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/serverless-vs-containers-ai-architecture-decision
 
 #LaunchStudio #Manifera #AISaaS #ServerlessVsContainers #AIArchitecture

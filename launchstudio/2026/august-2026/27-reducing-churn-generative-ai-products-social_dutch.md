@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type software-architectuur en retentiev
 
 Nora's platform werd een blijvend succes: Het maandelijkse verloop daalde binnen 30 dagen van 28% naar 8,5%. (€1.800 (Onboarding Optimization Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/reducing-churn-generative-ai-products
 
 #LaunchStudio #Manifera #AISaaS #ChurnReduction #SystemOfRecord #RAG #UserRetention #TechFounders #StartupOpschalen

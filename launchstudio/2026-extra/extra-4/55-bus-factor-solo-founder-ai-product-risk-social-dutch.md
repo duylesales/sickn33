@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen wij de continuïteit van toegang net zo serieus 
 
 Haar resultaat: RittenLog heeft nu twee geverifieerde beheerders op elk kritiek systeem, en een gedocumenteerde toegangslijst die Marit bijhoudt. 🚀
 
-👉 Wie zou er vandaag nog kunnen inloggen als u het zelf niet kon? Kom erachter: [Link naar artikel]
+👉 Wie zou er vandaag nog kunnen inloggen als u het zelf niet kon? Kom erachter: https://launchstudio.eu/nl/blog/bus-factor-solo-founder-ai-product-risk
 
 #AINativeFounder #LaunchStudio #Manifera #SoloFounder #BusinessContinuity

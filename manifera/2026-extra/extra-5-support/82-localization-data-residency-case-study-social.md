@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the localization data residency compliance case study: [Link to article]
+👉 See the localization data residency compliance case study: https://www.manifera.com/blog/localization-data-residency-case-study
 
 #Localization #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

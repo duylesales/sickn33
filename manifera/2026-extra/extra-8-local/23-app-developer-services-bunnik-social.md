@@ -12,6 +12,6 @@ A founder's demo worked in every rehearsal — then crashed live in front of the
 
 Your MVP can be scrappy. Your core paths can't. 🧱
 
-👉 Read our full deep dive on app developer services Bunnik: [Link to article]
+👉 Read our full deep dive on app developer services Bunnik: https://www.manifera.com/blog/app-developer-services-bunnik
 
 #Bunnik #Utrecht #StartupFounders #MVP #AppDevelopment #Manifera

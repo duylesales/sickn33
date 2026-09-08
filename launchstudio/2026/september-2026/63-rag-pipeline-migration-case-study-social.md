@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Kofi's pipeline transformed: average cost per query dropped from roughly €0.34 to €0.09, latency dropped from 6.2s to 2.8s, and retrieval accuracy against his 50-question test set rose from 61% to 89% — all without rebuilding his Lovable frontend. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/rag-pipeline-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #RAGPipeline #LLMEngineering

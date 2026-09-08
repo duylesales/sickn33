@@ -15,6 +15,6 @@ Bij **LaunchStudio** besteden onze engineers in Amsterdam een aanzienlijk deel v
 
 Haar resultaat: EthiekGids doorstond de beveiligingsvragenlijst van de klant bij de volgende poging, met toestemmingen die overeenkomen met de daadwerkelijke behoefte in plaats van bouwsnelheid. 🚀
 
-👉 Benieuwd wat LaunchStudio daadwerkelijk doet voordat uw eigen app deze controle nodig heeft? Verken het hier: [Link naar artikel]
+👉 Benieuwd wat LaunchStudio daadwerkelijk doet voordat uw eigen app deze controle nodig heeft? Verken het hier: https://launchstudio.eu/nl/blog/code-of-ai-unwritten-rules
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #AIDefaults

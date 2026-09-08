@@ -12,6 +12,6 @@
 
 Fund it like the product it actually is. 🛡️
 
-👉 Read our full deep dive on software product engineering stadskanaal: [Link to article]
+👉 Read our full deep dive on software product engineering stadskanaal: https://www.manifera.com/blog/software-product-engineering-stadskanaal
 
 #Stadskanaal #Groningen #RenewableEnergy #CFO #SoftwareProductEngineering #EnergyTransition #Manifera

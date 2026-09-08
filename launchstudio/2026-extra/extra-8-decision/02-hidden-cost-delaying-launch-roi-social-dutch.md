@@ -16,6 +16,6 @@ Bij **LaunchStudio**, aangedreven door Manifera's 11+ jaar software-engineering 
 
 Lisannes resultaat: Live in 10 dagen voor €2.500, direct 5 pilotklanten geactiveerd en binnen 2 maanden geschaald naar 19 betalende accounts. 🚀
 
-👉 Bereken wat uitstel u werkelijk kost: [Link naar artikel]
+👉 Bereken wat uitstel u werkelijk kost: https://launchstudio.eu/nl/blog/hidden-cost-delaying-launch-roi
 
 #SaaS #LaunchStudio #Manifera #TimeKey #VibeCoding #ROI #StartupLife

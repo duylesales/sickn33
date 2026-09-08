@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on trendy framework hype cycle risk: [Link to article]
+👉 Read our full guide on trendy framework hype cycle risk: https://www.manifera.com/blog/trendy-framework-hype-cycle-risk
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

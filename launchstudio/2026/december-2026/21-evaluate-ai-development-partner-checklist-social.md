@@ -19,6 +19,6 @@ At **LaunchStudio**, every one of these 15 questions has a clear, public answer:
 
 Get the checklist before you commit. 🛡️🚀
 
-👉 Read the full 15-point checklist: [Link to article]
+👉 Read the full 15-point checklist: https://launchstudio.eu/en/blog/evaluate-ai-development-partner-checklist
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #SaaS #StartupTips

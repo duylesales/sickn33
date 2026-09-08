@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type datapijplijnproblemen op sinds 201
 
 Elena's applicatie werd uiterst efficiënt: Het aantal time-outs daalde naar nul en de API-kosten per document daalden met 40%. (€2.450 (API Optimization Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/handling-large-context-windows-efficiently
 
 #LaunchStudio #Manifera #AISaaS #RAG #pgvector #ContextWindow #TechFounders #StartupOpschalen

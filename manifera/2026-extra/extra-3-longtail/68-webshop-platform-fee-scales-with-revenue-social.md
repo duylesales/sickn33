@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on webshop platform fee scales with revenue: [Link to article]
+👉 Read our full guide on webshop platform fee scales with revenue: https://www.manifera.com/blog/webshop-platform-fee-scales-with-revenue
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

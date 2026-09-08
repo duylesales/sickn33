@@ -14,6 +14,6 @@ Bij LaunchStudio auditen en versterken we bestaande codebases met vaste sprintpr
 
 Marieke bespaarde € 1.800/maand en kreeg een geharde, geteste architectuur binnen 10 dagen. (€ 3.200 (Relaunch & Scale Pakket) — 10 werkdagen.) 🚀
 
-👉 Lees het besliskader: [Link naar artikel]
+👉 Lees het besliskader: https://launchstudio.eu/nl/blog/contract-renewal-vs-switching-dev-partners
 
 #LaunchStudio #Manifera #AISaaS #DevPartners #CodeAudit

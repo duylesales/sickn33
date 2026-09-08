@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been closing exactly these gaps since 2014 through Ma
 
 Radu resubmitted a questionnaire the prospect's security team approved, and the $60,000 ARR deal closed on schedule. (€3,200 — Launch & Grow Package, remediated and documented in 6 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/b2b-saas-security-audit-case-study
 
 #LaunchStudio #Manifera #AISaaS #B2BSecurity #EnterpriseSales

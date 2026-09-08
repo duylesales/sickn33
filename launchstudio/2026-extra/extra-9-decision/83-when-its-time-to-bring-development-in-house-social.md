@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's engineering team, we're often the part
 
 His result: Bram held off eight months until workload was consistently full, then hired — using his existing partner to run interviews and cut ramp-up time roughly in half. 🚀
 
-👉 Describe your current engineering workload for a straight answer within one business day: [Link to article]
+👉 Describe your current engineering workload for a straight answer within one business day: https://launchstudio.eu/en/blog/when-its-time-to-bring-development-in-house
 
 #SaaS #ScaleUp #Hiring #StartupGrowth #LaunchStudio #Manifera

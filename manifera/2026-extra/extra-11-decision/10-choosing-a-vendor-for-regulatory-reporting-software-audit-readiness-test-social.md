@@ -12,6 +12,6 @@ A bank refiled to the Fed 11 months late. Why? A reporting platform quietly chan
 
 A polished dashboard isn't audit-ready. A reconstructable trail is. 🔍
 
-👉 Read our full deep dive on regulatory reporting vendor audit readiness: [Link to article]
+👉 Read our full deep dive on regulatory reporting vendor audit readiness: https://www.manifera.com/blog/choosing-a-vendor-for-regulatory-reporting-software-audit-readiness-test
 
 #RegTech #RegulatoryReporting #CFO #ComplianceOfficer #FinancialServices #Manifera

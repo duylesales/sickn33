@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type frontend-architectuur en Lighthous
 
 Alexanders landingspagina werd een conversiekanon: De laadtijd daalde naar 0,7 seconden en de Lighthouse-score steeg naar 98/100, wat leidde tot een verdubbeling van de aanmeldconversie. (€950 (Lighthouse Optimization Pakket) — productieklaar en binnen 2 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/crafting-perfect-b2b-saas-landing-page
 
 #LaunchStudio #Manifera #AISaaS #LandingPageDesign #B2BSaaS #NextJS #FrontendEngineering #LighthouseScore #TechFounders #StartupOpschalen

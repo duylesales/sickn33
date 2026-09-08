@@ -12,6 +12,6 @@ At **Manifera**, we design our financial structures for enterprise survival:
 ✅ Predictable, fixed-velocity billing governed safely from Amsterdam 🇳🇱.
 
 Stop buying fragile code. Procure predictable, secure OpEx! 🚀
-👉 Why CFOs are changing how they calculate Mobile App TCO: [Link to article]
+👉 Why CFOs are changing how they calculate Mobile App TCO: https://www.manifera.com/blog/mobile-app-cost
 
 #CFO #MobileAppCost #EnterpriseFinance #TechLeadership #SoftwareEngineering #CTO #VietnamTech #AmsterdamBusiness #Manifera

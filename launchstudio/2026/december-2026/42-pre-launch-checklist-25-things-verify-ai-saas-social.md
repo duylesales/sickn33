@@ -14,6 +14,6 @@ Most polished AI prototypes satisfy only a HANDFUL of these 25 by default. 📉
 
 At **LaunchStudio**, backed by Manifera's 11+ years of production discipline, we verify all 25 as standard — before you announce a launch date, not after a crisis. 🛡️🚀
 
-👉 Get the full 25-point checklist: [Link to article]
+👉 Get the full 25-point checklist: https://launchstudio.eu/en/blog/pre-launch-checklist-25-things-verify-ai-saas
 
 #PreLaunch #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductLaunch

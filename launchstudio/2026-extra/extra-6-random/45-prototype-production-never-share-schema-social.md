@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers in Singapore treat environment separation as 
 
 Her result: VoorraadKoppel now runs test and production on fully separated infrastructure, with a documented sign-off process before any future migration touches live data. 🚀
 
-👉 Not sure if your test and production data are actually separated: [Link to article]
+👉 Not sure if your test and production data are actually separated: https://launchstudio.eu/en/blog/prototype-production-never-share-schema
 
 #AINativeFounder #LaunchStudio #Manifera #DatabaseSchema #AIDevelopment

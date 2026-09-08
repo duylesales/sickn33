@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: the fourteen missing appointments were recovered and reassigned within a day, and the same constraint has since silently blocked three further attempted deletes-with-dependents. 🚀
 
-👉 Get your schema reviewed before it has real data to protect: [Link to article]
+👉 Get your schema reviewed before it has real data to protect: https://launchstudio.eu/en/blog/database-schema-decisions-that-outlive-your-prototype
 
 #IndieHacker #Postgres #ProductionReady #SaaS #LaunchStudio #Manifera

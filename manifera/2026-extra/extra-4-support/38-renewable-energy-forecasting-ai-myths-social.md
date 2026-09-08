@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about renewable energy forecasting ai: [Link to article]
+👉 Retire all 3 biggest myths about renewable energy forecasting ai: https://www.manifera.com/blog/renewable-energy-forecasting-ai-myths
 
 #EnergyTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

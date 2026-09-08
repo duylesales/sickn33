@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Kofi's pijplijn transformeerde: de gemiddelde kosten per query daalden van ongeveer €0,34 naar €0,09, de latency daalde van 6,2s naar 2,8s, en de retrieval-nauwkeurigheid ten opzichte van zijn testset van 50 vragen steeg van 61% naar 89% — allemaal zonder zijn Lovable-frontend te herbouwen. 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/rag-pipeline-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #RAGPipeline #LLMEngineering

@@ -15,6 +15,6 @@ At **LaunchStudio**, this is exactly the kind of silent logic gap Manifera's 120
 
 Her result: every new booking is now validated against current, non-expired vaccination records, giving daycare operators a real-time compliance view instead of a static signup-day snapshot. 🚀
 
-👉 Not sure if your booking app re-checks time-sensitive credentials? Walk through a technical review first: [Link to article]
+👉 Not sure if your booking app re-checks time-sensitive credentials? Walk through a technical review first: https://launchstudio.eu/en/blog/pet-care-ai-booking-app-vaccination-record-liability
 
 #AINativeFounder #LaunchStudio #Manifera #PetTech #AILiability

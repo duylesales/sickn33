@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a trades offline photo: [Link to article]
+👉 Read the founder's guide to building a trades offline photo: https://www.manifera.com/blog/trades-app-offline-photo-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

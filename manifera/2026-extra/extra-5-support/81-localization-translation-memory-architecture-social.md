@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on localization translation memory: [Link to article]
+👉 Read our full architectural deep dive on localization translation memory: https://www.manifera.com/blog/localization-translation-memory-architecture
 
 #Localization #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

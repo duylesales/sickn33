@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been closing exactly this gap since 2014 through Mani
 
 Sten's platform delivered 99.7% uptime over the following two months, verified against a dashboard he handed straight to procurement (€3,600 (Relaunch & Scale Package) — completed in 10 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-sre-uptime-sla
 
 #LaunchStudio #Manifera #AISaaS #UptimeSLA #SiteReliability

@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat trust and safety features like block, report, and 
 
 Lotte's result: MatchLokaal's block action is now fully instant and complete across every part of the app, with regression tests to keep it that way. 🚀
 
-👉 Running a dating, community, or social app with block/report features? Get a free safety-surface audit: [Link to article]
+👉 Running a dating, community, or social app with block/report features? Get a free safety-surface audit: https://launchstudio.eu/en/blog/dating-app-ai-tool-report-block-latency
 
 #AINativeFounder #LaunchStudio #Manifera #TrustAndSafety #DatingApp

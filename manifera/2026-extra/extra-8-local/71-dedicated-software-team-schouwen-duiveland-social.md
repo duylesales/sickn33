@@ -12,6 +12,6 @@ Every May, the same three engineers on Schouwen-Duiveland start dreading a seaso
 
 Stop rebuilding your team's memory every spring. Build capacity that scales with your actual season. 🌊
 
-👉 Read our full deep dive on dedicated software team Schouwen-Duiveland: [Link to article]
+👉 Read our full deep dive on dedicated software team Schouwen-Duiveland: https://www.manifera.com/blog/dedicated-software-team-schouwen-duiveland
 
 #SchouwenDuiveland #Zeeland #DedicatedTeam #SoftwareEngineering #TechLeadership #OffshoreDevelopment #Manifera

@@ -12,6 +12,6 @@ A flawless AI demo tells you nothing about prompt four thousand — the one nobo
 
 Ask to see the harness before you sign. If it doesn't exist, neither does the rigor. 📊
 
-👉 Read our full deep dive on evaluating an AI vendor's model evaluation process: [Link to article]
+👉 Read our full deep dive on evaluating an AI vendor's model evaluation process: https://www.manifera.com/blog/evaluating-an-ai-vendors-model-evaluation-process
 
 #CTO #AIDevelopment #ModelEvaluation #LLM #AIQualityAssurance #VendorDueDiligence #Manifera

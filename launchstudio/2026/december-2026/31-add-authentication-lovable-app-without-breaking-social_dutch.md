@@ -17,6 +17,6 @@ Vergeet ook niet: knoppen verbergen in de frontend biedt nul bescherming als de 
 
 Bij **LaunchStudio**, ondersteund door Manifera's cybersecurity-roots (CFLW, TNO), krijgt authenticatie de grondige controle die het verdient — vóórdat echte gebruikers accounts aanmaken. 🛡️🚀
 
-👉 Lees hoe u authenticatie toevoegt zonder uw app te breken: [Link naar artikel]
+👉 Lees hoe u authenticatie toevoegt zonder uw app te breken: https://launchstudio.eu/nl/blog/add-authentication-lovable-app-without-breaking
 
 #Authentication #LaunchStudio #Manifera #AINativeFounder #Cybersecurity #SaaS #Supabase #Lovable #TechFounders #StartupOpschalen

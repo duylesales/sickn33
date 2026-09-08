@@ -12,6 +12,6 @@
 
 Convert a binary yes/no into a lower-stakes first approval. 🛡️
 
-👉 Read our full deep dive on outsourcing app development board approval: [Link to article]
+👉 Read our full deep dive on outsourcing app development board approval: https://www.manifera.com/blog/outsourcing-app-development-board-approval
 
 #CFO #BoardApproval #AppDevelopment #RiskManagement #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat in de praktijk: een lekkend PDF-endpoint werd binnen een halve dag opgespoord en gerepareerd, plus twee andere kwetsbare exportroutes gedicht vóór de lancering. 🚀
 
-👉 Doorloop het script en stuur ons uw lijst — wij vertellen u kosteloos welke punten échte lanceerblokkades zijn: [Link naar artikel]
+👉 Doorloop het script en stuur ons uw lijst — wij vertellen u kosteloos welke punten échte lanceerblokkades zijn: https://launchstudio.eu/nl/blog/testing-your-own-product-before-launch-a-founders-script
 
 #SoftwareLancering #SaaSTesten #ProductieKlaar #LaunchStudio #Manifera #TechOprichter

@@ -15,6 +15,6 @@ At **LaunchStudio**, this ownership-check audit is a core part of our production
 
 His result: explicit ownership verification added to every per-user resource, closing the gap across the entire application. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/ai-and-software-engineering-two-different-jobs-one-prototype
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SoftwareEngineering

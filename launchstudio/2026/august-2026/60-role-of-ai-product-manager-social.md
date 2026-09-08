@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Sadie's application achieved silky-smooth performance: Refined workflow reduced prototyping iteration cycles by 60%. (€1,100 (Design Token Setup) — production-ready and deployed in 3 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/role-of-ai-product-manager
 
 #LaunchStudio #Manifera #AISaaS #TheRoleoftheAIProduc #TechFounders

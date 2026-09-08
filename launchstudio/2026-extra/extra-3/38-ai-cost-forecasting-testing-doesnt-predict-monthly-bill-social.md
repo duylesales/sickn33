@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders build realistic, usage-based cost forecast
 
 Her result: a genuinely realistic usage forecast built from actual post-launch submission patterns, informing restructured pricing tiers that matched cost to real usage — resolving her margin problem without an abrupt price change to existing customers. 🚀
 
-👉 Priced your AI product based on your own dev testing? That number is probably wrong: [Link to article]
+👉 Priced your AI product based on your own dev testing? That number is probably wrong: https://launchstudio.eu/en/blog/ai-cost-forecasting-testing-doesnt-predict-monthly-bill
 
 #SaaSPricing #CostForecasting #AINativeFounder #LaunchStudio #Manifera

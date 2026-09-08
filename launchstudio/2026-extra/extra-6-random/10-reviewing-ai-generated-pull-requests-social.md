@@ -15,6 +15,6 @@ At **LaunchStudio**, reviews like this typically run through Manifera's broader 
 
 Her result: BuurtHulp launched publicly on schedule with the entire class of unescaped-input risk closed, not just the one instance that happened to get noticed first. 🚀
 
-👉 Wondering if your AI-generated codebase has the same mistake sitting in twelve other files: [Link to article]
+👉 Wondering if your AI-generated codebase has the same mistake sitting in twelve other files: https://launchstudio.eu/en/blog/reviewing-ai-generated-pull-requests
 
 #AINativeFounder #LaunchStudio #Manifera #PullRequestReview #ProductionReady

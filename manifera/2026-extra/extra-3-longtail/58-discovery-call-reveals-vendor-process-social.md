@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on discovery call reveals vendor process: [Link to article]
+👉 Read our full guide on discovery call reveals vendor process: https://www.manifera.com/blog/discovery-call-reveals-vendor-process
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

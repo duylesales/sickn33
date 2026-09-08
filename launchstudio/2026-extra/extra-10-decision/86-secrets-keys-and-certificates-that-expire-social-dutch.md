@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), voeren we c
 
 💡 Zo ontdekte Youssef Hamdi van Wachtkamer na een verlopen SSL-certificaat dat zijn geheime Stripe-sleutel al 14 maanden in zijn Git-historie stond. Na onze audit en Git-sanering draait zijn medische app veilig en compliant.
 
-👉 Weet u zeker dat uw Git-commitgeschiedenis géén database-wachtwoorden of Stripe-sleutels bevat? [Link naar artikel]
+👉 Weet u zeker dat uw Git-commitgeschiedenis géén database-wachtwoorden of Stripe-sleutels bevat? https://launchstudio.eu/nl/blog/secrets-keys-and-certificates-that-expire
 
 #CyberSecurity #SaaSArchitecture #DevOps #GDPR #Git #LaunchStudio #Manifera

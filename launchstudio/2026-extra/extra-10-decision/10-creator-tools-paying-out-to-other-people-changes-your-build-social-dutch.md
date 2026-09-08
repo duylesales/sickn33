@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, bouwen onze senior engineers ro
 
 💡 Zo loste digitaal template-platform Twórcy complexe geschillen en chargebacks binnen 10 minuten op dankzij een gesplitste grootboekarchitectuur.
 
-👉 Lees hoe u uw creator-platform technisch klaarmaakt voor betrouwbare uitbetalingen: [Link naar artikel]
+👉 Lees hoe u uw creator-platform technisch klaarmaakt voor betrouwbare uitbetalingen: https://launchstudio.eu/nl/blog/creator-tools-paying-out-to-other-people-changes-your-build
 
 #CreatorEconomy #StripeConnect #Marketplace #DAC7 #LaunchStudio #Manifera

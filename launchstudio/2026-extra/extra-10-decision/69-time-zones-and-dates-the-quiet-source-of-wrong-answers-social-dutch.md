@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), zorgen we d
 
 💡 Zo ontdekte Fatima Zahra van Uurtje dat haar consultancy-klant in Dubai 14 maanden lang foute facturen kreeg doordat uren na 20:00 uur in de volgende maand vielen. Na onze UTC-standaardisatie klopt elke declaratie op de minuut.
 
-👉 Hoe test u tijdzones in uw app vóór uw klanten dat doen? [Link naar artikel]
+👉 Hoe test u tijdzones in uw app vóór uw klanten dat doen? https://launchstudio.eu/nl/blog/time-zones-and-dates-the-quiet-source-of-wrong-answers
 
 #TimeZones #SaaSDevelopment #BackendArchitecture #PostgreSQL #LaunchStudio #Manifera

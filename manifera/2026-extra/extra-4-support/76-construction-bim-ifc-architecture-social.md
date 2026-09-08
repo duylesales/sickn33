@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on construction bim ifc: [Link to article]
+👉 Read our full architectural deep dive on construction bim ifc: https://www.manifera.com/blog/construction-bim-ifc-architecture
 
 #ConTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

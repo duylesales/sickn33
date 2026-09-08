@@ -12,6 +12,6 @@
 
 Trust in a tight-knit customer base is earned slowly and lost in one missed update. 🌱
 
-👉 Read our full deep dive on devops in software development Achtkarspelen: [Link to article]
+👉 Read our full deep dive on devops in software development Achtkarspelen: https://www.manifera.com/blog/devops-in-software-development-achtkarspelen
 
 #Achtkarspelen #Friesland #DevOps #Observability #AgTech #Manifera

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we e
 
 💡 Zo ontdekte Milan Novak van Boekmoment dat zijn boekingswidget bij 65% van de mobiele bezoekers (Safari op iOS) crashte door cookie-blokkades. Na onze hybride iframe-loader en sessie-tokenisatie daalde de uitval direct naar nul.
 
-👉 Draait uw boekingsmodule of widget al betrouwbaar op iPhones en Safari? [Link naar artikel]
+👉 Draait uw boekingsmodule of widget al betrouwbaar op iPhones en Safari? https://launchstudio.eu/nl/blog/embedding-your-product-somewhere-else-widgets-and-iframes
 
 #WebDevelopment #Frontend #SaaSArchitecture #Widgets #LaunchStudio #Manifera

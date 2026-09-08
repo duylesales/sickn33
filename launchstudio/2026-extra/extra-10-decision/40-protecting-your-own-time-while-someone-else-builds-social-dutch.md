@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar software-ontwikkeling)
 
 💡 Zo tekende Sander Kremer van Dossierklaar tijdens de bouwfase 3 nieuwe klanten door Slack te muten en vol op sales te gaan.
 
-👉 Lees hoe u uw tijd beschermt tijdens een software-build: [Link naar artikel]
+👉 Lees hoe u uw tijd beschermt tijdens een software-build: https://launchstudio.eu/nl/blog/protecting-your-own-time-while-someone-else-builds
 
 #StartupFounders #TimeManagement #SalesMomentum #DeepWork #LaunchStudio #Manifera

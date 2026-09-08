@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat payment state machines as a first-class audit item
 
 Tobias's result: SteunProject's payout flow now guarantees funds stay available through the entire refund window, and he no longer carries personal financial exposure if a campaign cancels post-funding. 🚀
 
-👉 Indie hacker running money through your own platform? Get a free escrow-logic review: [Link to article]
+👉 Indie hacker running money through your own platform? Get a free escrow-logic review: https://launchstudio.eu/en/blog/crowdfunding-ai-platform-payout-escrow-timing
 
 #AINativeFounder #LaunchStudio #Manifera #Fintech #IndieHacker

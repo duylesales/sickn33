@@ -15,6 +15,6 @@ Bij **LaunchStudio** ondersteunen we bureaus zoals dat van Elke met Manifera's t
 
 Elke's resultaat: een veilige app op tijd geleverd onder de eigen branding van haar bureau, zonder dat haar klant wist wie de engineering uitvoerde. 🚀
 
-👉 Neemt uw bureau door AI gebouwde klantprojecten aan zonder interne beveiligingsspecialist? Bekijk hoe white-label werkt: [Link naar artikel]
+👉 Neemt uw bureau door AI gebouwde klantprojecten aan zonder interne beveiligingsspecialist? Bekijk hoe white-label werkt: https://launchstudio.eu/nl/blog/the-most-common-security-issues-with-ai-built
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AISecurity

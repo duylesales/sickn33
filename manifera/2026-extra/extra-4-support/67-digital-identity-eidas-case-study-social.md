@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the digital identity eidas case study: [Link to article]
+👉 See the digital identity eidas case study: https://www.manifera.com/blog/digital-identity-eidas-case-study
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

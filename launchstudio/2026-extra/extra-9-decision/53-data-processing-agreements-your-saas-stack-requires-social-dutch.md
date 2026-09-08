@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring met zakelijk
 
 Het resultaat in de praktijk: de stagnerende deal werd getekend en met dezelfde documentenset werden de volgende twee enterprise-klanten binnen een week gesloten. 🚀
 
-👉 Plan een gesprek met een software-engineer die direct in kaart brengt welke DPA's u nog mist: [Link naar artikel]
+👉 Plan een gesprek met een software-engineer die direct in kaart brengt welke DPA's u nog mist: https://launchstudio.eu/nl/blog/data-processing-agreements-your-saas-stack-requires
 
 #SaaS #Verwerkersovereenkomst #DPA #AVGCompliance #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we help founders build employment-status-aware access polic
 
 His result: task-scoped access for every future contractor, plus an offboarding checklist that closes the gap the moment any engagement ends. 🚀
 
-👉 Not sure who still has access to your systems? We'll review it for free: [Link to article]
+👉 Not sure who still has access to your systems? We'll review it for free: https://launchstudio.eu/en/blog/contractor-vs-employee-who-should-own-codebase-access
 
 #AINativeFounder #LaunchStudio #Manifera #AccessControl #SaaSFounder

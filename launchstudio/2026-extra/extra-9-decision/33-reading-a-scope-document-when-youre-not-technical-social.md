@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: a revised scope raised the price by €600, moved hosting into her accounts, and cut her monthly cost from €140 to €46. 🚀
 
-👉 Describe your project, get a written scope back within a day: [Link to article]
+👉 Describe your project, get a written scope back within a day: https://launchstudio.eu/en/blog/reading-a-scope-document-when-youre-not-technical
 
 #AIFounder #NoCode #LaunchStudio #Manifera #StartupTips #HiringADeveloper

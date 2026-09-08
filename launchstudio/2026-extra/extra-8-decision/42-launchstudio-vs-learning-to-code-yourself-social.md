@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 Her result: webhook verification closed in 4 business days, hiring push uninterrupted. 🚀
 
-👉 Run your own honest time-cost math: [Link to article]
+👉 Run your own honest time-cost math: https://launchstudio.eu/en/blog/launchstudio-vs-learning-to-code-yourself
 
 #IndieHacker #TechnicalFounder #LaunchStudio #Manifera #OpportunityCost #StartupTime

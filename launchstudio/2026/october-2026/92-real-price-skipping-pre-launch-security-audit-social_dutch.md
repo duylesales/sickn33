@@ -14,6 +14,6 @@ Bij **LaunchStudio** vangen wij dit type AI-gegenereerde kwetsbaarheid al sinds 
 
 Priya's audit bracht aan het licht dat haar RLS-beleid elke freelancer factuurgegevens van andere accounts liet opvragen, en dat haar OpenAI-sleutel was blootgesteld in de client-bundle. Beide opgelost vóór lancering: Priya lanceerde op schema op de conferentie zonder incidenten. (€ 1.200, Launch Ready Pakket — audit en oplossingen voltooid in 3 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/real-price-skipping-pre-launch-security-audit
 
 #LaunchStudio #Manifera #AISaaS #Beveiligingsaudit #StartupBeveiliging

@@ -12,6 +12,6 @@
 
 Read the fine print before the outage teaches it to you. 📄
 
-👉 Read our full deep dive on incident response SLAs — promise vs. delivery: [Link to article]
+👉 Read our full deep dive on incident response SLAs — promise vs. delivery: https://www.manifera.com/blog/incident-response-slas-what-devops-vendors-promise-vs-deliver
 
 #ITManager #DevOps #SLA #IncidentResponse #VendorManagement #Uptime #Manifera

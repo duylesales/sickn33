@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a utility customer portal app: [Link to article]
+👉 Read the non-technical founder's guide to building a utility customer portal app: https://www.manifera.com/blog/utility-customer-portal-founder-guide
 
 #EnergyTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

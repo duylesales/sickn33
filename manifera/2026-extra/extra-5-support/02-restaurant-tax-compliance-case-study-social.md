@@ -12,6 +12,6 @@
 
 Scale your restaurant chain with 100% tax compliance across every store! 📊
 
-👉 See the multi-jurisdiction restaurant sales tax case study: [Link to article]
+👉 See the multi-jurisdiction restaurant sales tax case study: https://www.manifera.com/blog/restaurant-tax-compliance-case-study
 
 #RestaurantTech #POS #SalesTax #Compliance #MultiLocation #CustomSoftware #CTO #Manifera

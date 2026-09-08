@@ -12,6 +12,6 @@
 
 Same look for users. A completely different compliance posture. 🛡️
 
-👉 Read our full deep dive on custom checkout pci compliance scope gap: [Link to article]
+👉 Read our full deep dive on custom checkout pci compliance scope gap: https://www.manifera.com/blog/custom-checkout-pci-compliance-scope-gap
 
 #PCICompliance #CFO #PaymentArchitecture #SoftwareGovernance #Manifera

@@ -12,6 +12,6 @@
 
 A three-week pilot tells you more than three months of sales calls. 🔍
 
-👉 Read our full deep dive on outsourcing software development Dantumadiel: [Link to article]
+👉 Read our full deep dive on outsourcing software development Dantumadiel: https://www.manifera.com/blog/outsourcing-software-development-dantumadiel
 
 #Dantumadiel #Friesland #OutsourcingSoftware #VendorVetting #EngineeringLeadership #Manifera

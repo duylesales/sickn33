@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat security at scale as a posture that needs re-valid
 
 Wouter's result: authorization review, access monitoring, and managed hosting in place before signing the larger clinic, not after. 🚀
 
-👉 Passed your security checks early on? Here's why that doesn't mean you're still covered: [Link to article]
+👉 Passed your security checks early on? Here's why that doesn't mean you're still covered: https://launchstudio.eu/en/blog/understanding-ai-in-it-security-before-you-trust
 
 #AINativeFounder #LaunchStudio #Manifera #AIinITSecurity #DataSecurity

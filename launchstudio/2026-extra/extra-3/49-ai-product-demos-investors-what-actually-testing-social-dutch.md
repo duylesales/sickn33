@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichters de voorbereiding voor investeerders i
 
 Haar resultaat: de specifieke hiaten in authenticatie en gegevensverwerking werden gedicht tussen de demo en het technische gesprek, waardoor het fondsenwervingsproces kon doorgaan in plaats van te stagneren. 🚀
 
-👉 Bereidt u zich voor op gesprekken met investeerders? Zorg dat de technische kant ook op orde is: [Link naar artikel]
+👉 Bereidt u zich voor op gesprekken met investeerders? Zorg dat de technische kant ook op orde is: https://launchstudio.eu/nl/blog/ai-product-demos-investors-what-actually-testing
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #Fundraising

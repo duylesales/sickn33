@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 gelaagde beveiligingsarchitecturen via
 
 LaunchStudio blokkeerde prompt-injecties voor Luke en document-isolatie is nu 100% gegarandeerd. (€2.100 (PDF Security Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw prompt-architectuur versterkt: [Link naar artikel]
+👉 Ontdek hoe u uw prompt-architectuur versterkt: https://launchstudio.eu/nl/blog/understanding-prompt-injection-vulnerabilities-ai
 
 #AINativeFounder #LaunchStudio #Manifera #PromptInjection #LLMSecurity #CyberSecurity #DataProtection #LeastPrivilege #AISaaS #StartupOpschalen

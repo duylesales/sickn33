@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), voeren we s
 
 💡 Zo liep het dashboard van Elif Demir (Verzuimlijn) 38 seconden vast bij haar eerste enterprise-klant door een N+1 loop van 1.401 queries. Binnen 3 werkdagen brachten we de laadtijd terug naar **400 milliseconden**.
 
-👉 Hoe snel laadt uw belangrijkste dashboard als een klant morgen 50.000 records importeert? [Link naar artikel]
+👉 Hoe snel laadt uw belangrijkste dashboard als een klant morgen 50.000 records importeert? https://launchstudio.eu/nl/blog/performance-when-your-biggest-customer-arrives
 
 #SaaSArchitecture #PostgreSQL #Performance #SoftwareScaling #DevOps #LaunchStudio #Manifera

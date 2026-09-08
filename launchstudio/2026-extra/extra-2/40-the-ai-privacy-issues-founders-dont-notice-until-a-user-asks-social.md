@@ -15,6 +15,6 @@ At **LaunchStudio**, we implement exactly this kind of comprehensive data-erasur
 
 His result: every data location mapped, a comprehensive deletion process implemented and tested against real accounts. 🚀
 
-👉 Grab a free 15-minute intro slot: [Link to article]
+👉 Grab a free 15-minute intro slot: https://launchstudio.eu/en/blog/the-ai-privacy-issues-founders-dont-notice-until-a-user-asks
 
 #AINativeFounder #LaunchStudio #Manifera #GDPR #AIPrivacy

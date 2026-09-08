@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Ledgerly slaagde voor de SOC 2 Type I-audit zonder uitzonderingen, vijf dagen vóór de deadline, en Dorian tekende het jaarcontract van €140.000. (€6.400 (Enterprise Hardening Pakket) — auditklaar in 19 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/multi-tenant-soc2-case-study
 
 #LaunchStudio #Manifera #AISaaS #SOC2 #MultiTenantSecurity

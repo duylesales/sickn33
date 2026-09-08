@@ -15,6 +15,6 @@ Bij **LaunchStudio** bouwen wij precies deze tweelaagse moderatiearchitectuur st
 
 Haar resultaat: BuurtBord behield de AI-hoogtepuntfunctie — maar niets bereikt nog een buurtfeed zonder eerst een beleidscontrole te doorstaan. 🚀
 
-👉 Een app gebouwd waarin zowel gebruikers als uw AI content publiceren? Laat het controleren: [Link naar artikel]
+👉 Een app gebouwd waarin zowel gebruikers als uw AI content publiceren? Laat het controleren: https://launchstudio.eu/nl/blog/content-moderation-ai-generated-user-content
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #ContentModeration

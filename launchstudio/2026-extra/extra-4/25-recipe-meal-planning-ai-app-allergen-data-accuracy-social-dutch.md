@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen onze audits voor consumentenapps op het gebied van v
 
 Het resultaat voor Iris: MaaltijdPlan dwingt allergeenregels nu af op één gedeelde laag in plaats van per functie, waardoor het gat definitief is gedicht. 🚀
 
-👉 Bouwt u een voedings-, gezondheids- of veiligheidskritische app met AI? Laat ons gratis een cross-feature check doen: [Link naar artikel]
+👉 Bouwt u een voedings-, gezondheids- of veiligheidskritische app met AI? Laat ons gratis een cross-feature check doen: https://launchstudio.eu/nl/blog/recipe-meal-planning-ai-app-allergen-data-accuracy
 
 #AINativeFounder #LaunchStudio #Manifera #FoodTech #AISecure

@@ -12,6 +12,6 @@
 
 Ask the reference: was the specific team promised the team that stayed? Not "was the company good." 🛡️
 
-👉 Read our full deep dive on software companies amsterdam delivery risk: [Link to article]
+👉 Read our full deep dive on software companies amsterdam delivery risk: https://www.manifera.com/blog/software-companies-amsterdam-delivery-risk
 
 #SoftwareCompaniesAmsterdam #CTO #VendorSelection #DeliveryRisk #Manifera

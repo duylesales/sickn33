@@ -15,6 +15,6 @@ Bij **LaunchStudio** stemmen we reparaties af op de twee of drie dingen die daad
 
 Aurelie's resultaat: de daadwerkelijke reparatie kostte een achtste van haar oorspronkelijke offerte, en echte klanten betalen er vandaag de dag nog steeds voor. 🚀
 
-👉 Eén angstaanjagende offerte verwijderd van het stopzetten van een product waar mensen al voor willen betalen? Lees dit eerst: [Link naar artikel]
+👉 Eén angstaanjagende offerte verwijderd van het stopzetten van een product waar mensen al voor willen betalen? Lees dit eerst: https://launchstudio.eu/nl/blog/building-software-with-ai-where-founders-get-stuck-after-the-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #EcommerceTech

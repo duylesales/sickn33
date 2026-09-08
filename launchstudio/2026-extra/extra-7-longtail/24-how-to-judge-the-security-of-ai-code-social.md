@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers run every AI-generated codebase through the s
 
 Lukas's result: a rewritten, injection-safe search feature and a clean dependency audit, delivered before StudyStack opened to his university's student body. 🚀
 
-👉 Technical founder auditing your own AI-generated code? Here's the framework we use: [Link to article]
+👉 Technical founder auditing your own AI-generated code? Here's the framework we use: https://launchstudio.eu/en/blog/how-to-judge-the-security-of-ai-code
 
 #AINativeFounder #LaunchStudio #Manifera #SQLInjection #CodeSecurity

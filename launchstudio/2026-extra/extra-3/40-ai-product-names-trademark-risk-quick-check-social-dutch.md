@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen we oprichters nadenken over deze evenredige naamgevi
 
 Haar resultaat: Kirsten werkte samen met LaunchStudio om een rebranding te plannen en uit te voeren onder een goed gecontroleerde nieuwe naam — deze keer geverifieerd op zowel domein- als handelsmerkrisico, waardoor verdere verstoring tot een minimum werd beperkt. 🚀
 
-👉 Uw product genoemd op basis van alleen domeinbeschikbaarheid? Dat is niet dezelfde vraag als handelsmerkveiligheid: [Link naar artikel]
+👉 Uw product genoemd op basis van alleen domeinbeschikbaarheid? Dat is niet dezelfde vraag als handelsmerkveiligheid: https://launchstudio.eu/nl/blog/ai-product-names-trademark-risk-quick-check
 
 #Trademark #Branding #AINativeFounder #LaunchStudio #Manifera

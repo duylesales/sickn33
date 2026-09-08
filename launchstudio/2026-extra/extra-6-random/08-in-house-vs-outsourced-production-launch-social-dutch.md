@@ -15,6 +15,6 @@ Bij **LaunchStudio** zijn we Manifera's team van 120+ technici — dezelfde groe
 
 Haar resultaat: LabRooster relanceerde acht dagen later dan gepland naar zijn drie pilotlabs, maar met een gedocumenteerde, stabiele codebase en een papieren spoor dat haar volgende contractor nooit meer helemaal opnieuw hoeft te reconstrueren. 🚀
 
-👉 Uw codebase toevertrouwd aan één freelancer zonder back-upplan? Bekijk hoe een structurele overdracht er wel uitziet: [Link naar artikel]
+👉 Uw codebase toevertrouwd aan één freelancer zonder back-upplan? Bekijk hoe een structurele overdracht er wel uitziet: https://launchstudio.eu/nl/blog/in-house-vs-outsourced-production-launch
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionLaunch #ProductionReady

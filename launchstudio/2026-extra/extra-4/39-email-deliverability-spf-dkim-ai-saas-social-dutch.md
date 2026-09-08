@@ -15,6 +15,6 @@ Bij **LaunchStudio** is e-mailauthenticatie een standaard checklistitem vóór l
 
 Zijn resultaat: de bevestigingsmails van Sem komen nu in de primaire inbox van grote providers terecht, en ondersteuningsgesprekken met de vraag "is mijn boeking doorgegaan" zijn tot bijna nul gedaald. 🚀
 
-👉 Nog nooit uw e-mails tegen een spamscoretool gecontroleerd? Praat met een ingenieur die dat wel deed: [Link naar artikel]
+👉 Nog nooit uw e-mails tegen een spamscoretool gecontroleerd? Praat met een ingenieur die dat wel deed: https://launchstudio.eu/nl/blog/email-deliverability-spf-dkim-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #EmailDeliverability #SPFDKIM

@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat error messaging as a genuine design consideration 
 
 Her result: error messaging rewritten across every failure point to match the same warm, helpful voice already established everywhere else in the product. 🚀
 
-👉 Know what your app actually says when something breaks? Get your error messages designed with the same care as the rest of your product: [Link to article]
+👉 Know what your app actually says when something breaks? Get your error messages designed with the same care as the rest of your product: https://launchstudio.eu/en/blog/error-messages-part-of-brand-not-just-backend
 
 #AINativeFounder #LaunchStudio #Manifera #CX #ProductDesign

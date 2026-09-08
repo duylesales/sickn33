@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on public choice theory govtech procurement: [Link to article]
+👉 Read our full guide on public choice theory govtech procurement: https://www.manifera.com/blog/public-choice-theory-govtech-procurement
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

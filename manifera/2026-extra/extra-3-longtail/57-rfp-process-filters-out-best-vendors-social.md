@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on rfp process filters out best vendors: [Link to article]
+👉 Read our full guide on rfp process filters out best vendors: https://www.manifera.com/blog/rfp-process-filters-out-best-vendors
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

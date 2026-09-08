@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: LLM calls moved behind an Edge Function with rate limiting, RLS rewritten, and a signed webhook took over subscription state — four days. 🚀
 
-👉 Send over the repo and get the findings list, not a sales deck: [Link to article]
+👉 Send over the repo and get the findings list, not a sales deck: https://launchstudio.eu/en/blog/bolt-built-it-fast-three-things-it-gets-wrong
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #StartupGrowth

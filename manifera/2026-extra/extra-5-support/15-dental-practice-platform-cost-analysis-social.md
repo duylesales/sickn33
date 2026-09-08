@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the real dental practice platform platform cost breakdown: [Link to article]
+👉 See the real dental practice platform platform cost breakdown: https://www.manifera.com/blog/dental-practice-platform-cost-analysis
 
 #DentalTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

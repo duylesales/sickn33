@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 geautomatiseerde testsuites via Manife
 
 LaunchStudio blokkeerde kortings-exploits voor Lillian en beschermde haar operationele marges tegen bot-misbruik. (€1.900 (Bot Testing Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw AI aanvalt vóórdat een hacker dat doet: [Link naar artikel]
+👉 Ontdek hoe u uw AI aanvalt vóórdat een hacker dat doet: https://launchstudio.eu/nl/blog/red-teaming-your-own-ai-products
 
 #AINativeFounder #LaunchStudio #Manifera #RedTeaming #AISaaS #CyberSecurity #PromptInjection #Jailbreak #AISecurity #StartupOpschalen

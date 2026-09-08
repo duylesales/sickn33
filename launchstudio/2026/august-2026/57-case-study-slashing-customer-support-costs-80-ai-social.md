@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Noah's application achieved silky-smooth performance: Support resolution rose to 82% while keeping error rates at zero. (€1,800 (Support Safety Dashboard) — production-ready and deployed in 4 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/case-study-slashing-customer-support-costs-80-ai
 
 #LaunchStudio #Manifera #AISaaS #CaseStudySlashingCus #TechFounders

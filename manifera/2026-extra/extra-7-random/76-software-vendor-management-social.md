@@ -12,6 +12,6 @@ Most companies manage every outsourced vendor with the exact same weekly call an
 
 A vendor relationship shouldn't depend on any one person staying in their job. 🛠️
 
-👉 Read our full deep dive on software vendor management: [Link to article]
+👉 Read our full deep dive on software vendor management: https://www.manifera.com/blog/software-vendor-management
 
 #SoftwareVendorManagement #VendorManagement #EngineeringLeadership #Outsourcing #Manifera

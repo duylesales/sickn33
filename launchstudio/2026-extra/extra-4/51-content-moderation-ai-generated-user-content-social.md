@@ -15,6 +15,6 @@ At **LaunchStudio**, we build exactly this two-layer moderation architecture int
 
 Her result: BuurtBord kept its AI highlight feature — but nothing reaches a neighborhood feed anymore without passing a policy check first. 🚀
 
-👉 Built an app where users AND your AI both publish content? Get it checked: [Link to article]
+👉 Built an app where users AND your AI both publish content? Get it checked: https://launchstudio.eu/en/blog/content-moderation-ai-generated-user-content
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #ContentModeration

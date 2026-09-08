@@ -12,6 +12,6 @@
 
 A hundred articles, one arc: the vendor decision that matters most isn't the signature — it's everything you build around it after. 🎯
 
-👉 Read the complete vendor relationship playbook, from selection to renewal: [Link to article]
+👉 Read the complete vendor relationship playbook, from selection to renewal: https://www.manifera.com/blog/the-complete-vendor-relationship-playbook-from-selection-to-renewal
 
 #CEO #VendorManagement #SoftwareOutsourcing #VendorRelationship #TechLeadership #Manifera

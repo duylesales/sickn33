@@ -15,6 +15,6 @@ At **LaunchStudio**, we treat retry logic, dead-letter queues, and alerting as o
 
 Her result: Femke now finds out about a stuck batch in minutes instead of finding out from a customer days later. 🚀
 
-👉 Curious what your job queue is quietly dropping? Send us your prototype link for free advice: [Link to article]
+👉 Curious what your job queue is quietly dropping? Send us your prototype link for free advice: https://launchstudio.eu/en/blog/background-job-queue-reliability-ai-apps
 
 #AINativeFounder #LaunchStudio #Manifera #BackgroundJobs #ReliabilityEngineering

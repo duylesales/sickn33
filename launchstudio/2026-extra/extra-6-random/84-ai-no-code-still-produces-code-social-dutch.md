@@ -15,6 +15,6 @@ Bij **LaunchStudio** besteden onze technici, waaronder collega's gebaseerd in Ho
 
 Haar resultaat: de planningsbug is opgelost, en Sanne heeft nu voor het eerst een uitleg in gewone taal van de kernlogica van haar eigen app. 🚀
 
-👉 Is de logica van uw eigen product een black box, zelfs voor uzelf? Stuur ons uw prototypelink voor gratis advies: [Link naar artikel]
+👉 Is de logica van uw eigen product een black box, zelfs voor uzelf? Stuur ons uw prototypelink voor gratis advies: https://launchstudio.eu/nl/blog/ai-no-code-still-produces-code
 
 #AINativeFounder #LaunchStudio #Manifera #NoCode #ProductOwnership

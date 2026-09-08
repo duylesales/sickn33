@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Harper's applicatie behaalde productie-gereedheid: Harper reduced database response times from 7.2 seconds down to 180 milliseconds under load. (€1,300 (Database Tuning Package) — production-ready and deployed in 4 business days.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/why-supabase-database-for-ai-founders
 
 #LaunchStudio #Manifera #AISaaS #WhySupabaseisthePerf #TechFounders

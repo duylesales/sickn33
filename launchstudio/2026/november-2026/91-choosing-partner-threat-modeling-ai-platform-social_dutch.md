@@ -14,6 +14,6 @@ Bij **LaunchStudio** threat modelen en verharden wij AI-native platforms gebouwd
 
 De pilot van een advocatenkantoor van één oprichter dreigde vast te lopen op een onbeantwoorde beveiligingsvragenlijst — tot een traject met vaste scope een actief prompt injection-pad en een onbeperkte API-sleutel vond én oploste. Resultaat: pilot goedgekeurd zonder vervolgvragen. (€ 3.200, Enterprise Hardening Pakket — 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/choosing-partner-threat-modeling-ai-platform
 
 #LaunchStudio #Manifera #AISaaS #ThreatModeling #AppSec

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we precies deze categorie van productie-engineering 
 
 Tomasz's app werd in 5 dagen gered: Tomasz migreerde naar een schaalbare cloud-infrastructuur die na load testing moeiteloos standhield bij toekomstige verkeerspieken. 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/cursor-prototype-shared-hosting-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #CloudMigration #DevOps

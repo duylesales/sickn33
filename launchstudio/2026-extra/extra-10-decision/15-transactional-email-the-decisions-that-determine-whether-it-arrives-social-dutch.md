@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, verzorgen onze senior engineers
 
 💡 Zo herstelde abonnementsdienst Bloomtrail direct de registratieflow voor Outlook- en Hotmail-gebruikers, waarmee een kwart van de voorheen verloren klanten werd teruggewonnen.
 
-👉 Lees hoe u uw e-mailbezorgbaarheid vóór de lancering garandeert: [Link naar artikel]
+👉 Lees hoe u uw e-mailbezorgbaarheid vóór de lancering garandeert: https://launchstudio.eu/nl/blog/transactional-email-the-decisions-that-determine-whether-it-arrives
 
 #Deliverability #EmailSecurity #DNS #SPF #DKIM #LaunchStudio #Manifera

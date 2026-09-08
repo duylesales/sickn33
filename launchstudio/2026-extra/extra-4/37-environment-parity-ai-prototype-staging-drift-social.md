@@ -15,6 +15,6 @@ At **LaunchStudio**, standardizing environment configuration as code is one of t
 
 His result: Levi hasn't had a staging-versus-production surprise since, because drift is now caught automatically before it ever reaches a launch. 🚀
 
-👉 Talk to us about your deployment setup before your next feature launch surprises you: [Link to article]
+👉 Talk to us about your deployment setup before your next feature launch surprises you: https://launchstudio.eu/en/blog/environment-parity-ai-prototype-staging-drift
 
 #AINativeFounder #LaunchStudio #Manifera #StagingDrift #ConfigAsCode

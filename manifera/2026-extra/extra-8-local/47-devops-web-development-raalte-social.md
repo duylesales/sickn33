@@ -12,6 +12,6 @@
 
 A six-week release cycle isn't caution. It's undiagnosed risk with a calendar attached. 🛠️
 
-👉 Read our full deep dive on devops web development raalte: [Link to article]
+👉 Read our full deep dive on devops web development raalte: https://www.manifera.com/blog/devops-web-development-raalte
 
 #Raalte #Overijssel #DevOps #WebDevelopment #AviationTech #Manifera

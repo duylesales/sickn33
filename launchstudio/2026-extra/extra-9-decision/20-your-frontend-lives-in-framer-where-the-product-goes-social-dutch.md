@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: het programma werd een volwaardige app met datascheiding per cliënt en Mollie-abonnementen, terwijl Iris haar website zelf blijft beheren. 🚀
 
-👉 Plan een gesprek van 15 minuten en beschrijf wat een ingelogde gebruiker moet kunnen doen: [Link naar artikel]
+👉 Plan een gesprek van 15 minuten en beschrijf wat een ingelogde gebruiker moet kunnen doen: https://launchstudio.eu/nl/blog/uw-frontend-leeft-in-framer-of-webflow-waar-het-echte-product-moet-staan
 
 #NoCode #AICoding #LaunchStudio #Manifera #ProductionReady #FounderLife

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: an enterprise pilot's security questionnaire, which specifically asked about logging practices, could be answered accurately and favorably instead of triggering a scramble under a prospect's deadline. 🚀
 
-👉 Find out what your logs are actually recording: [Link to article]
+👉 Find out what your logs are actually recording: https://launchstudio.eu/en/blog/logging-what-to-record-and-what-you-must-never-write-down
 
 #IndieHacker #AppSec #ProductionReady #SaaS #LaunchStudio #Manifera

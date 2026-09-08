@@ -12,6 +12,6 @@
 
 Our first assessment checked all the infrastructure boxes and told us we were ready. We were ready on paper and nowhere close in practice. 🛡️
 
-👉 Read our full deep dive on ai readiness assessment: [Link to article]
+👉 Read our full deep dive on ai readiness assessment: https://www.manifera.com/blog/ai-readiness-assessment
 
 #AIReadiness #CTO #DataQuality #Manifera

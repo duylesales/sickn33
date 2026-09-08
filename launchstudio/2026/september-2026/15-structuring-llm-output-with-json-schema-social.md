@@ -14,6 +14,6 @@ At **LaunchStudio**, we've built zero-trust, schema-validated data pipelines sin
 
 Logan's JSON parsing errors dropped to zero, ensuring reliable, automated database imports. 🚀
 
-👉 See exactly how they fixed it: [Link to article]
+👉 See exactly how they fixed it: https://launchstudio.eu/en/blog/structuring-llm-output-with-json-schema
 
 #AINativeFounder #LaunchStudio #Manifera #JSONSchema #StructuredOutputs

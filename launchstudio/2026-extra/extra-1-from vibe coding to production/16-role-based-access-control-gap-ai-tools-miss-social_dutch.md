@@ -16,6 +16,6 @@ Bij **LaunchStudio** testen we RBAC op precies dit architectuurniveau — niet a
 
 Zijn resultaat: rolverificatie herstructureerd om de geauthenticeerde sessie server-side te controleren, vóór lancering naar klanten die echte huurderdata verwerken. 🚀
 
-👉 Laat jouw rolgebaseerde toegangscontrole testen waar het daadwerkelijk toe doet: [Link naar artikel]
+👉 Laat jouw rolgebaseerde toegangscontrole testen waar het daadwerkelijk toe doet: https://launchstudio.eu/nl/blog/role-based-access-control-gap-ai-tools-miss
 
 #RBAC #AISecure #LaunchStudio #Manifera #IndieHacker

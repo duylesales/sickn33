@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's 120+ engineers combine automated checks with rea
 
 Her result: ZorgMeld now enforces authorization checks scoped to each coordinator's caseload, closing a gap the original "AI-powered" scan was never built to find. 🚀
 
-👉 Ran a security scan and got a clean result? Send us your prototype link and we'll tell you honestly what a real review would find: [Link to article]
+👉 Ran a security scan and got a clean result? Send us your prototype link and we'll tell you honestly what a real review would find: https://launchstudio.eu/en/blog/ten-questions-ai-powered-security-claim
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityScanning #Authorization

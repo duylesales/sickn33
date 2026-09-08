@@ -14,6 +14,6 @@ At **LaunchStudio**, we go looking for the failure paths a friendly beta test ne
 
 Bastiaan's result: the exact failure that five friendly testers took zero tries to miss now gets caught, logged, and fixed before a stranger ever notices. 🚀
 
-👉 Only ever tested your app with people who like you? Here's what that hides: [Link to article]
+👉 Only ever tested your app with people who like you? Here's what that hides: https://launchstudio.eu/en/blog/what-happens-after-you-use-ai-to-generate-code-for-a-real-product
 
 #AINativeFounder #LaunchStudio #Manifera #LovableAI #ProductionReady

@@ -15,6 +15,6 @@ At **LaunchStudio**, this is exactly the kind of structured risk assessment Mani
 
 His result: EilandGo now issues tickets that can't be predicted or forged, verified against real payment records at boarding. 🚀
 
-👉 Check your own app's ticket, order, or booking IDs today — can you guess the next one? Explore LaunchStudio's approach: [Link to article]
+👉 Check your own app's ticket, order, or booking IDs today — can you guess the next one? Explore LaunchStudio's approach: https://launchstudio.eu/en/blog/ai-security-risk-harlingen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityRisk #Harlingen

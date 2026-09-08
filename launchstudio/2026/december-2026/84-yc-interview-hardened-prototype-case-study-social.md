@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been hardening exactly this class of production risk 
 
 Sanne advanced past the interview stage, crediting verified technical confidence — not just her pitch — for the outcome: €3,100 (Launch & Grow Package), hardened and interview-ready in 9 business days. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/yc-interview-hardened-prototype-case-study
 
 #LaunchStudio #Manifera #AISaaS #YCombinator #StartupFunding

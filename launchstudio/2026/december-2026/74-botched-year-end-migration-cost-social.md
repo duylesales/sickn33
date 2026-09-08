@@ -14,6 +14,6 @@ At LaunchStudio, we've been managing exactly this class of migration risk since 
 
 Dmitri's platform was fully restored with under 4 hours of additional downtime and a properly documented rollback plan going forward. (€3,400 Relaunch & Scale Package — 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/botched-year-end-migration-cost
 
 #LaunchStudio #Manifera #AISaaS #DataMigration #TechFounders

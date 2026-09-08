@@ -12,6 +12,6 @@ If the founder disappeared tomorrow, could anyone else log into your order syste
 
 Succession-proofing your stack is a governance decision, not an IT ticket. 🏢
 
-👉 Read our full deep dive on succession-proofing a family business's technology stack: [Link to article]
+👉 Read our full deep dive on succession-proofing a family business's technology stack: https://www.manifera.com/blog/family-owned-business-software-vendor-decisions-succession-proofing-the-stack
 
 #FamilyBusiness #SuccessionPlanning #SMEFounder #DigitalTransformation #BusinessContinuity #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Dev's applicatie behaalde productie-gereedheid: Dev doorstond de technische beoordeling van de enterprise en ging rechtstreeks van pilotgesprek naar contractonderhandeling. (€5.800 (Enterprise Hardening Pakket) — 12 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-readiness-checklist-ai-saas
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseReady #SSO

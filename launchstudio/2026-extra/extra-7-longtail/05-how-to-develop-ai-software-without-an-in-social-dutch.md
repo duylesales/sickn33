@@ -15,6 +15,6 @@ Bij **LaunchStudio** krijgen bureaus Manifera's engineeringcapaciteit achter hun
 
 Elise's resultaat: haar bureau haalde de deadline, en de klant heeft nooit geweten dat er een tweede team bij betrokken was. 🚀
 
-👉 Kwam een klant binnen met een AI-prototype en een deadline die uw team niet alleen aankan: [Link naar artikel]
+👉 Kwam een klant binnen met een AI-prototype en een deadline die uw team niet alleen aankan: https://launchstudio.eu/nl/blog/how-to-develop-ai-software-without-an-in
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AgencyLife

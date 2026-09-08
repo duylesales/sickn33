@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: consistent role-based access control across every endpoint, district approval unlocked in 15 business days. 🚀
 
-👉 Get ready before your next school procurement call: [Link to article]
+👉 Get ready before your next school procurement call: https://launchstudio.eu/en/blog/securing-ai-generated-edtech-platform-case-study
 
 #EdTech #DataPrivacy #LaunchStudio #Manifera #GDPR #AINativeFounder

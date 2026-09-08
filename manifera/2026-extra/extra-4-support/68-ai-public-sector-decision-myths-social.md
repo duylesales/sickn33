@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai public sector decision: [Link to article]
+👉 Retire all 3 biggest myths about ai public sector decision: https://www.manifera.com/blog/ai-public-sector-decision-myths
 
 #GovTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

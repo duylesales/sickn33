@@ -15,6 +15,6 @@ At **LaunchStudio**, Manifera's engineers — trusted by clients including Vodaf
 
 Her result: VeiligheidsFeed now has exportable audit logs meeting the enterprise prospect's stated requirements, along with a documented incident response process ready for future reviews. 🚀
 
-👉 Heading into an enterprise security review? Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Heading into an enterprise security review? Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/ai-in-it-security-enterprise-vs-reality
 
 #AINativeFounder #LaunchStudio #Manifera #EnterpriseSales #AuditLogging

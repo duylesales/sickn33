@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been solving exactly this kind of interaction-design 
 
 For Henry, the team replaced the chatbot screen with an interactive table dashboard, and user registration and retention grew by 35%. 🚀
 
-👉 See how we did it: [Link to article]
+👉 See how we did it: https://launchstudio.eu/en/blog/why-chatbots-are-terrible-ux-for-b2b-saas
 
 #AINativeFounder #LaunchStudio #Manifera #InvisibleAI #ChatbotUX

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-engineering,
 
 Koens resultaat: Rate limiting en RLS waterdicht ingericht, bewezen via een schone PR, en 80+ databases stabiel gemonitord. 🚀
 
-👉 Vraag een vaste offerte aan met ingebouwde garanties: [Link naar artikel]
+👉 Vraag een vaste offerte aan met ingebouwde garanties: https://launchstudio.eu/nl/blog/launchstudio-guarantee-explained
 
 #IndieHacker #BuildInPublic #LaunchStudio #Manifera #Garantie #SaaS #TechFounder

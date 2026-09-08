@@ -12,6 +12,6 @@
 
 Total the weighted scores before the final call, sleep on it, then decide. 😴✅
 
-👉 Read our full deep dive on building a vendor scorecard that removes bias: [Link to article]
+👉 Read our full deep dive on building a vendor scorecard that removes bias: https://www.manifera.com/blog/software-vendor-scorecard-removes-final-decision-bias
 
 #Founder #SoftwareVendorScorecard #VendorEvaluation #OffshoreSoftwareDevelopment #VendorSelection #Manifera

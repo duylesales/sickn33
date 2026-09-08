@@ -12,6 +12,6 @@ Four acquisitions in eighteen months. Four ERPs, three support platforms, eleven
 
 Standardization is a real lever — but only when it's sequenced against switching economics, not slide-deck tidiness. 🎯
 
-👉 Read our full deep dive on vendor standardization across PE portfolio companies: [Link to article]
+👉 Read our full deep dive on vendor standardization across PE portfolio companies: https://www.manifera.com/blog/pe-backed-portfolio-companies-vendor-standardization-across-acquisitions
 
 #PrivateEquity #PortfolioCompany #CFO #ITDueDiligence #ValueCreation #Manifera

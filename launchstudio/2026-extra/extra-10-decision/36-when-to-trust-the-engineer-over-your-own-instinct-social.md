@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 Her result: one recommendation was accepted because it protected a commitment she hadn't yet made, the other was overridden because it would have broken one she already had — Verzeker.io shipped in 15 business days, including the 2-day delay she personally approved. 🚀
 
-👉 Get the framework for knowing which disagreements are actually yours to win: [Link to article]
+👉 Get the framework for knowing which disagreements are actually yours to win: https://launchstudio.eu/en/blog/when-to-trust-the-engineer-over-your-own-instinct
 
 #FounderLife #SaaS #ProductDevelopment #StartupTips #LaunchStudio #Manifera

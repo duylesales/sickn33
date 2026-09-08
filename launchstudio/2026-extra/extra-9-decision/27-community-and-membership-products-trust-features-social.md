@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: median time from report to action fell from hours to under ten minutes, and two corporate partners asked about her guidelines before referring staff. 🚀
 
-👉 Grab 15 minutes to review your community's moderation gaps: [Link to article]
+👉 Grab 15 minutes to review your community's moderation gaps: https://launchstudio.eu/en/blog/community-and-membership-products-trust-features
 
 #Community #AIFounder #LaunchStudio #Manifera #NoCode #TrustAndSafety

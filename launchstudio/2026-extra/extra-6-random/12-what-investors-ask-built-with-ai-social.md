@@ -15,6 +15,6 @@ At **LaunchStudio**, backed by Manifera — trusted by enterprise clients includ
 
 Lotte's next investor conversation included the same architecture question — this time she answered it in under two minutes, without notes. 🚀
 
-👉 Pitching soon? Book a free 15-minute intro call before you're in the room: [Link to article]
+👉 Pitching soon? Book a free 15-minute intro call before you're in the room: https://launchstudio.eu/en/blog/what-investors-ask-built-with-ai
 
 #AINativeFounder #LaunchStudio #Manifera #InvestorReady #StartupPitch

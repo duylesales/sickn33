@@ -12,6 +12,6 @@ Week two: every standup attended, questions answered within the hour. Month four
 
 The cadence that matters isn't the one in week two — it's the one still functioning honestly in month six. 🎯
 
-👉 Read our full guide to building a vendor communication cadence that lasts: [Link to article]
+👉 Read our full guide to building a vendor communication cadence that lasts: https://www.manifera.com/blog/choosing-a-vendor-communication-cadence-that-survives-the-honeymoon-phase
 
 #ProductManagement #RemoteTeams #OffshoreDevelopment #TeamCommunication #AgileWorkflow #Manifera

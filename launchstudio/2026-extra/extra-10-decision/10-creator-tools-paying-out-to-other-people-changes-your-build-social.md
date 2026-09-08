@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Twórcy's next dispute, three months later, resolved in under ten minutes by reversing one traceable ledger entry instead of days of manual reconciliation. 🚀
 
-👉 See what your payout system is missing before the first refund hits: [Link to article]
+👉 See what your payout system is missing before the first refund hits: https://launchstudio.eu/en/blog/creator-tools-paying-out-to-other-people-changes-your-build
 
 #CreatorEconomy #Marketplace #StartupFounders #FinTech #LaunchStudio #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the warehouse management cloud case study: [Link to article]
+👉 See the warehouse management cloud case study: https://www.manifera.com/blog/warehouse-management-cloud-migration
 
 #SupplyChain #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

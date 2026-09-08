@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: all amounts migrated to integer cents, per-line VAT rounding fixed, and a 14-month reconciliation that found and reissued 40 invoices with a one-cent discrepancy. 🚀
 
-👉 Check what your money handling is actually doing: [Link to article]
+👉 Check what your money handling is actually doing: https://launchstudio.eu/en/blog/currencies-numbers-and-formats-for-a-european-product
 
 #SaaS #FinTech #Invoicing #IndieHacker #LaunchStudio #Manifera

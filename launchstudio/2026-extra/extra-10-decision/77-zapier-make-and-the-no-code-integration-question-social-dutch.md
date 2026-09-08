@@ -22,6 +22,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo ontdekte Guusje van Dam van Aanmelder dat 11 verschillende koppelverzoeken opgelost konden worden met 1 Zapier-app. Na onze API-herinrichting en instant webhooks waren 10 van de 11 klanten binnen enkele minuten geholpen.
 
-👉 Is uw backend-API klaar voor een publicatie op Zapier of Make? [Link naar artikel]
+👉 Is uw backend-API klaar voor een publicatie op Zapier of Make? https://launchstudio.eu/nl/blog/zapier-make-and-the-no-code-integration-question
 
 #Zapier #Make #NoCode #SaaSArchitecture #APIDesign #LaunchStudio #Manifera

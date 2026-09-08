@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: phase one launched for €1,900 in eight days, ran the season on manual payment links, 41 bookings, and added automated billing four months later. 🚀
 
-👉 Ask any partner for the three-tier version, minimum included: [Link to article]
+👉 Ask any partner for the three-tier version, minimum included: https://launchstudio.eu/en/blog/you-think-the-quote-is-too-high-what-to-say
 
 #AIFounder #NoCode #LaunchStudio #Manifera #StartupTips #BootstrappedFounder

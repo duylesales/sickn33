@@ -14,6 +14,6 @@ Bij LaunchStudio harden we AI-codebases voor veeleisende Series A en institution
 
 Oskar's audit werd binnen 48 uur goedgekeurd — ronde van € 2,5M succesvol gesloten. (€ 4.800 (Due Diligence Hardening) — 12 werkdagen.) 🚀
 
-👉 Ontdek hoe u uw due diligence voorbereidt: [Link naar artikel]
+👉 Ontdek hoe u uw due diligence voorbereidt: https://launchstudio.eu/nl/blog/real-cost-missing-series-a-deadline-tech-debt
 
 #LaunchStudio #Manifera #AISaaS #SeriesA #TechnicalDueDiligence

@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengen wij Manifera's enterprise-grade engineering — dez
 
 Wessels resultaat: alle drie de producten hebben nu gedocumenteerde, actuele beveiligingsbeoordelingen, en het gedeelde inlogsysteem handhaaft tokenscoping per product — precies het gat dat de adviseur signaleerde. 🚀
 
-👉 Op weg naar due diligence? Bereken de omvang van een portfoliobrede beoordeling voordat een adviseur de gaten zelf vindt: [Link naar artikel]
+👉 Op weg naar due diligence? Bereken de omvang van een portfoliobrede beoordeling voordat een adviseur de gaten zelf vindt: https://launchstudio.eu/nl/blog/ai-saas-products-portfolio-audit
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #SaaSPortfolio

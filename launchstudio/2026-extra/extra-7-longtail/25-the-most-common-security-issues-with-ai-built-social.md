@@ -15,6 +15,6 @@ At **LaunchStudio**, we back agencies exactly like Elke's with Manifera's engine
 
 Elke's result: a secure app delivered on time under her agency's own branding, with her client none the wiser about who did the engineering. 🚀
 
-👉 Agency taking on AI-built client projects without a security specialist in-house? See how white-label works: [Link to article]
+👉 Agency taking on AI-built client projects without a security specialist in-house? See how white-label works: https://launchstudio.eu/en/blog/the-most-common-security-issues-with-ai-built
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AISecurity

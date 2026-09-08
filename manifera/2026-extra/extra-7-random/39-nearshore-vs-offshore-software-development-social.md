@@ -12,6 +12,6 @@
 
 We paid the nearshore premium because it felt safer. We were paying for something we barely needed. 🛡️
 
-👉 Read our full deep dive on nearshore vs offshore software development: [Link to article]
+👉 Read our full deep dive on nearshore vs offshore software development: https://www.manifera.com/blog/nearshore-vs-offshore-software-development
 
 #Nearshore #Offshore #CFO #SoftwareDevelopment #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: de pipeline telt nu uitsluitend afgeleverde resultaten, live in 13 werkdagen, waarmee de fout die een factuur verdrievoudigde definitief werd verholpen. 🚀
 
-👉 Bespreek met een engineer die AI-gegenereerde code doorgrondt: [Link naar artikel]
+👉 Bespreek met een engineer die AI-gegenereerde code doorgrondt: https://launchstudio.eu/nl/blog/subscriptions-one-time-or-usage-based-choosing-before-you-build
 
 #SaaS #FacturatieArchitectuur #StripeIntegratie #SoftwareOntwikkeling #LaunchStudio #Manifera

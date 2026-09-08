@@ -14,6 +14,6 @@ Bij **LaunchStudio** verharden wij AI-gegenereerde healthtech-prototypes voor na
 
 Owens platform slaagde bij hernieuwde indiening voor de nalevingsbeoordeling van het therapienetwerk en onboardde binnen de maand alle 40 therapeuten, met een gedocumenteerd auditspoor dat nu dient als blijvende geloofwaardigheidstroef. (€ 5.800, Enterprise Hardening Pakket — nalevingsherstel voltooid in 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/healthtech-gdpr-compliance-case-study
 
 #LaunchStudio #Manifera #AISaaS #HealthTech #AVGNaleving

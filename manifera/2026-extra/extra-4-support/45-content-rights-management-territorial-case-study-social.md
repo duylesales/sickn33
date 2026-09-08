@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the content rights management territorial case study: [Link to article]
+👉 See the content rights management territorial case study: https://www.manifera.com/blog/content-rights-management-territorial-case-study
 
 #MediaTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

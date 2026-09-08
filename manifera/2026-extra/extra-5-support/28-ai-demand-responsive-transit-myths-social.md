@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai demand responsive transit: [Link to article]
+👉 Retire all 3 biggest myths about ai demand responsive transit: https://www.manifera.com/blog/ai-demand-responsive-transit-myths
 
 #TransitTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

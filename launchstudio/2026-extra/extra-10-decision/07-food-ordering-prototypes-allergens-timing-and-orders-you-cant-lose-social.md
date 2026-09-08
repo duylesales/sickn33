@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Buurtmaaltijd ran its next four Saturday services, including two WiFi interruptions at different restaurants, without a single lost paid order. 🚀
 
-👉 Find out what your ordering flow does when the WiFi drops: [Link to article]
+👉 Find out what your ordering flow does when the WiFi drops: https://launchstudio.eu/en/blog/food-ordering-prototypes-allergens-timing-and-orders-you-cant-lose
 
 #FoodTech #StartupFounders #ProductionReady #DeliveryApps #LaunchStudio #Manifera

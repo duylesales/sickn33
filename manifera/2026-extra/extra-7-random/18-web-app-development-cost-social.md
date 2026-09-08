@@ -12,6 +12,6 @@
 
 The first number felt precise and turned out to be almost meaningless. The second came with its assumptions attached. 🛡️
 
-👉 Read our full deep dive on web app development cost: [Link to article]
+👉 Read our full deep dive on web app development cost: https://www.manifera.com/blog/web-app-development-cost
 
 #WebAppDevelopment #CFO #CostEstimation #Manifera

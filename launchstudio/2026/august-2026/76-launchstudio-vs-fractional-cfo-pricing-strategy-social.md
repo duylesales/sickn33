@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been turning validated pricing strategy into working 
 
 Elena's strategy finally shipped: MetricForge's average revenue per account increased within the first billing cycle after launch, as agency customers moved to the higher tier that actually matched their usage. (€2,200 (Launch & Grow Package) — 8 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-fractional-cfo-pricing-strategy
 
 #LaunchStudio #Manifera #AISaaS #SaaSPricing #FractionalCFO

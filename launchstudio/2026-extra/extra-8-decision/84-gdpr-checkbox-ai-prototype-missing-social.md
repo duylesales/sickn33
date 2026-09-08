@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years engineering for European ent
 
 Klaas-Jan Veenstra's LeerkrachtLiaison won unanimous DPO approval, securing a 12-school rollout worth €18,400 in annual recurring revenue. 🚀
 
-👉 Get a full privacy and GDPR architecture review for your prototype: [Link to article]
+👉 Get a full privacy and GDPR architecture review for your prototype: https://launchstudio.eu/en/blog/gdpr-checkbox-ai-prototype-missing
 
 #LaunchStudio #Manifera #GDPR #DataPrivacy #EUCompliance #VibeCoding #SaaSFounders

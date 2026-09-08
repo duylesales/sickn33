@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the stale deployment removed, policies rewritten, the export job moved onto a real queue — five days, no interface changes, 240 paying users. 🚀
 
-👉 See how mixed-tool codebases went live, then send yours over: [Link to article]
+👉 See how mixed-tool codebases went live, then send yours over: https://launchstudio.eu/en/blog/you-switched-from-bolt-to-cursor-what-it-costs-at-launch
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #StartupGrowth

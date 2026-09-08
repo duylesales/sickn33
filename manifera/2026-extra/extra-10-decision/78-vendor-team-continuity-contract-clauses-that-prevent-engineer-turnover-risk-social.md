@@ -12,6 +12,6 @@ Your lead vendor engineer gives two weeks' notice. Does your contract guarantee 
 
 Turnover isn't preventable through contract language alone — but its cost to you almost entirely is. 🎯
 
-👉 Read our full breakdown of continuity clauses that prevent turnover risk: [Link to article]
+👉 Read our full breakdown of continuity clauses that prevent turnover risk: https://www.manifera.com/blog/vendor-team-continuity-contract-clauses-that-prevent-engineer-turnover-risk
 
 #CTO #VendorManagement #DedicatedDevelopmentTeam #ContractNegotiation #OffshoreDevelopment #Manifera

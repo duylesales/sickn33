@@ -12,6 +12,6 @@
 
 Fast and consistent. Not fast instead of consistent. 🛡️
 
-👉 Read our full deep dive on extended development team hoorn: [Link to article]
+👉 Read our full deep dive on extended development team hoorn: https://www.manifera.com/blog/extended-development-team-hoorn
 
 #Hoorn #NoordHolland #Westfriesland #RetailTech #CMO #ExtendedTeam #Manifera

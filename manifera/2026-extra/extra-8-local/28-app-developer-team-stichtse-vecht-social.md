@@ -12,6 +12,6 @@ Four months into a senior React Native search with two interviews and zero offer
 
 A Belgian logistics firm's freelance lead departed with ten days' notice. Manifera's pod reconstructed the routing logic in two weeks, not six months. 🛡️
 
-👉 Read our full deep dive on building an app developer team in Stichtse Vecht: [Link to article]
+👉 Read our full deep dive on building an app developer team in Stichtse Vecht: https://www.manifera.com/blog/app-developer-team-stichtse-vecht
 
 #StichtseVecht #Utrecht #AppDevelopment #VPEngineering #TechTeam #OffshoreDevelopment #Manifera

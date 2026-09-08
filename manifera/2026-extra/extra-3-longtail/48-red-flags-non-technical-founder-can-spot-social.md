@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on red flags non technical founder can spot: [Link to article]
+👉 Read our full guide on red flags non technical founder can spot: https://www.manifera.com/blog/red-flags-non-technical-founder-can-spot
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

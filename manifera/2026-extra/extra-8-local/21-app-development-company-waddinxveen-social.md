@@ -12,6 +12,6 @@ Roughly half of app projects that blow their launch date were doomed by a vendor
 
 The vendor you pick in week one decides whether month three is smooth or a dispute. 🎯
 
-👉 Read our full deep dive on app development company Waddinxveen: [Link to article]
+👉 Read our full deep dive on app development company Waddinxveen: https://www.manifera.com/blog/app-development-company-waddinxveen
 
 #Waddinxveen #ZuidHolland #AppDevelopment #HeadOfProduct #SaaS #Manifera

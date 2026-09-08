@@ -15,6 +15,6 @@ At **LaunchStudio**, this is exactly what our CEO Herre Roelevink means when he 
 
 His result: families now receive a notification for every material change to a scheduled visit, closing the gap between what the calendar shows and what actually happened. 🚀
 
-👉 Building trust-critical scheduling software? See how our review process works: [Link to article]
+👉 Building trust-critical scheduling software? See how our review process works: https://launchstudio.eu/en/blog/elder-care-ai-scheduling-tool-family-notification-failure
 
 #AINativeFounder #LaunchStudio #Manifera #ElderCareTech #AITrust

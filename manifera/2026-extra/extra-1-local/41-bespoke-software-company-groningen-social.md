@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on bespoke software company groningen: [Link to article]
+👉 Read our full deep dive on bespoke software company groningen: https://www.manifera.com/blog/bespoke-software-company-groningen
 
 #Groningen #DigitalGroningen #NorthTech #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

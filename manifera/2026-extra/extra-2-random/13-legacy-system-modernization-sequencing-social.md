@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on legacy system modernization sequencing: [Link to article]
+👉 Read our full deep dive on legacy system modernization sequencing: https://www.manifera.com/blog/legacy-system-modernization-sequencing
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

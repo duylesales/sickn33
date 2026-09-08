@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on app store compliance release cadence: [Link to article]
+👉 Read our full deep dive on app store compliance release cadence: https://www.manifera.com/blog/app-store-compliance-release-cadence
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Lucas herlanceerde zijn app veilig binnen 6 dagen, slaagde voor een strenge data-privacy audit en schaalde op naar 15 tandartspraktijken met €3.000 MRR. (€2.500 (Launch Ready Pakket) — binnen 6 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/secure-auth-for-ai-supabase
 
 #LaunchStudio #Manifera #AISaaS #SupabaseAuth #RowLevelSecurity #PostgreSQL #DataPrivacy #TechFounders #NextJS #HealthTech

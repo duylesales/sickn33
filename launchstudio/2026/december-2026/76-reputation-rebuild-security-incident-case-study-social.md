@@ -14,6 +14,6 @@ At LaunchStudio, we've been closing exactly this class of vulnerability since 20
 
 Signups recovered to pre-incident levels within two months, with churn among retained users slightly better than baseline. (€3,900 Relaunch & Scale Package — 11 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/reputation-rebuild-security-incident-case-study
 
 #LaunchStudio #Manifera #AISaaS #SecurityIncident #DataPrivacy

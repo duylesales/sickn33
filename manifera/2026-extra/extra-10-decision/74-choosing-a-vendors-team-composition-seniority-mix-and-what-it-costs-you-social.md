@@ -12,6 +12,6 @@ Two proposals, same blended rate: €58/hour. One team is two seniors and two mi
 
 The blended rate tells you the average. It's the unbundled numbers that tell you what you're actually buying. 🎯
 
-👉 Read our full guide to evaluating a vendor's team composition and seniority mix: [Link to article]
+👉 Read our full guide to evaluating a vendor's team composition and seniority mix: https://www.manifera.com/blog/choosing-a-vendors-team-composition-seniority-mix-and-what-it-costs-you
 
 #VPEngineering #SoftwareOutsourcing #TeamComposition #VendorManagement #EngineeringLeadership #Manifera

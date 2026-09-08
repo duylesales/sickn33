@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), ontwerpen w
 
 💡 Zo ontdekte Bas Kuipers van Klantbeeld dat een simpele 2-wegs sync over het weekend 90.000 API-calls afvuurde in een oneindige lus. Na onze herinrichting naar veld-eigenaarschap en herkomst-tags liep de koppeling stabiel en zonder storingen.
 
-👉 Heeft uw klant écht 2-wegs sync nodig, of volstaat een slimme 1-wegs koppeling? [Link naar artikel]
+👉 Heeft uw klant écht 2-wegs sync nodig, of volstaat een slimme 1-wegs koppeling? https://launchstudio.eu/nl/blog/two-way-sync-and-who-wins-when-both-sides-change
 
 #SaaSIntegrations #DataArchitecture #APIDesign #SystemDesign #LaunchStudio #Manifera

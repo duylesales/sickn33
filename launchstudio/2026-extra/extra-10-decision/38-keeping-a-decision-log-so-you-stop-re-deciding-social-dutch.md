@@ -23,6 +23,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, registreren we trade-offs struc
 
 💡 Zo bespaarde Niels Andriessen van Planbaas uren vergadertijd over spoedboekingen door 1 duidelijke herbeoordelingsvoorwaarde vast te leggen.
 
-👉 Bekijk het 5-kolommen besluitenlogboek voor SaaS-founders: [Link naar artikel]
+👉 Bekijk het 5-kolommen besluitenlogboek voor SaaS-founders: https://launchstudio.eu/nl/blog/keeping-a-decision-log-so-you-stop-re-deciding
 
 #SaaSGrowth #StartupFounders #DecisionMaking #AgileLeadership #LaunchStudio #Manifera

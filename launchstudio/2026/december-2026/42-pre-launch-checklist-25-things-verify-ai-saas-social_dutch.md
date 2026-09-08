@@ -14,6 +14,6 @@ De meeste visueel prachtige prototypes voldoen standaard aan slechts een HANDVOL
 
 Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-ervaring, verifiëren we alle 25 punten standaard — vóórdat u de datum aankondigt, niet na een incident. 🛡️🚀
 
-👉 Bekijk de complete 25-punten pre-launch checklist: [Link naar artikel]
+👉 Bekijk de complete 25-punten pre-launch checklist: https://launchstudio.eu/nl/blog/pre-launch-checklist-25-things-verify-ai-saas
 
 #PreLaunch #LaunchStudio #Manifera #AINativeFounder #SaaS #ProductLaunch #Lovable #NextJS #TechFounders #StartupOpschalen

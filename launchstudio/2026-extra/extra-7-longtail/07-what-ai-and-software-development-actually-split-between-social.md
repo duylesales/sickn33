@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers review exactly these seams as routine practic
 
 Nikolai's result: CodeCrate now handles concurrent rotations safely, with two other latent inconsistencies caught before they became incidents. 🚀
 
-👉 Mixing AI-generated and hand-written code in your own project: find out where your seams are: [Link to article]
+👉 Mixing AI-generated and hand-written code in your own project: find out where your seams are: https://launchstudio.eu/en/blog/what-ai-and-software-development-actually-split-between
 
 #AINativeFounder #LaunchStudio #Manifera #AICoding #RaceCondition

@@ -12,6 +12,6 @@
 
 We spent all our attention on the download. Nobody spent enough on the 90 seconds after that. 🛡️
 
-👉 Read our full deep dive on mobile app development: [Link to article]
+👉 Read our full deep dive on mobile app development: https://www.manifera.com/blog/mobile-app-development
 
 #MobileAppDevelopment #CEO #UserRetention #Manifera

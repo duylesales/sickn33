@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 Her result: approved the €3,600 engagement after running the math on her waitlist, launched in 12 days, hit payback within two weeks of her estimate. 🚀
 
-👉 Book a call to run your specific payback numbers with an engineer: [Link to article]
+👉 Book a call to run your specific payback numbers with an engineer: https://launchstudio.eu/en/blog/calculating-the-payback-period-on-your-launch-investment
 
 #SaaS #UnitEconomics #LaunchStudio #Manifera #StartupGrowth #FounderLife

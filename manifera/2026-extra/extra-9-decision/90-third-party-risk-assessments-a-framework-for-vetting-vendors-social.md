@@ -12,6 +12,6 @@ Nothing was breached. But the incident review found a contractor on a low-priori
 
 A static spreadsheet from onboarding isn't a risk program. Build one that scales. 🛡️
 
-👉 Read our full deep dive on the third-party risk assessment framework: [Link to article]
+👉 Read our full deep dive on the third-party risk assessment framework: https://www.manifera.com/blog/third-party-risk-assessments-a-framework-for-vetting-vendors
 
 #ThirdPartyRisk #VendorSecurity #CISO #RiskManagement #SecureDevelopment #Manifera

@@ -12,6 +12,6 @@
 
 Outsourced doesn't have to mean inconsistent. 🛡️
 
-👉 Read our full deep dive on outsourcing software development spijkenisse: [Link to article]
+👉 Read our full deep dive on outsourcing software development spijkenisse: https://www.manifera.com/blog/outsourcing-software-development-spijkenisse
 
 #Spijkenisse #ZuidHolland #SoftwareOutsourcing #EngineeringStandards #VPEngineering #Manifera

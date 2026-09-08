@@ -12,6 +12,6 @@ Your ERP doesn't talk to your CRM, and every month-end your finance team rebuild
 
 The cheapest bid on paper is frequently the most expensive one to maintain by year two. 🎯
 
-👉 Read our full deep dive on choosing a vendor for enterprise system integration: [Link to article]
+👉 Read our full deep dive on choosing a vendor for enterprise system integration: https://www.manifera.com/blog/choosing-a-vendor-for-enterprise-system-integration
 
 #CIO #EnterpriseIntegration #ITStrategy #SystemsIntegration #EnterpriseArchitecture #Manifera

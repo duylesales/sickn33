@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: het lek definitief en aantoonbaar gedicht, onboarding teruggebracht van twee dagen naar minder dan een uur, en een security-audit van 40 vragen doorstaan zonder één keer te hoeven gokken. 🚀
 
-👉 Ga in gesprek met een engineer die AI-gegenereerde code doorgrondt: [Link naar artikel]
+👉 Ga in gesprek met een engineer die AI-gegenereerde code doorgrondt: https://launchstudio.eu/nl/blog/van-interne-tool-naar-verkoopbaar-product-de-stappen-die-u-moet-zetten
 
 #IndieHacker #SaaS #LaunchStudio #Manifera #MultiTenancy #AICoding

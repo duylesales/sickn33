@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a professional services marketplace: [Link to article]
+👉 Read the founder's guide to building a professional services marketplace: https://www.manifera.com/blog/professional-services-marketplace-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

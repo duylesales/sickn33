@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Ruben's monthly bill dropped from €2,900 to €640 — without ever engaging a cost optimization firm (€2,400 (Launch & Grow Package) — completed in 8 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-cloud-cost-optimization-firm
 
 #LaunchStudio #Manifera #AISaaS #CloudCosts #FinOps

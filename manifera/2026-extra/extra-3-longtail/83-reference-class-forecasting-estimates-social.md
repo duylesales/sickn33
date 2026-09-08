@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on reference class forecasting estimates: [Link to article]
+👉 Read our full guide on reference class forecasting estimates: https://www.manifera.com/blog/reference-class-forecasting-estimates
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

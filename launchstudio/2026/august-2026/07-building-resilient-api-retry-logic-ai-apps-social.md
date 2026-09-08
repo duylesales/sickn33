@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Thomas's application achieved silky-smooth performance: API failure rate dropped to zero, and user sessions remained uninterrupted during outages. (€1,400 (Resilient API Package) — production-ready and deployed in 3 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/building-resilient-api-retry-logic-ai-apps
 
 #LaunchStudio #Manifera #AISaaS #BuildingResilientAPI #TechFounders

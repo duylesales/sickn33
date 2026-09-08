@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: authorization consolidated behind one access layer across thirty-one endpoints, five days, frontend and workflow untouched. 🚀
 
-👉 Send us read-only access to the repo — findings first, quote second: [Link to article]
+👉 Send us read-only access to the repo — findings first, quote second: https://launchstudio.eu/en/blog/when-an-ai-agent-wrote-your-backend-how-to-review-it
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #SaaS

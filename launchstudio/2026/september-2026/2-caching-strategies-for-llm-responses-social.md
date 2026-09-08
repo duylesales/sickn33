@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building cost-conscious, high-performance backen
 
 Sophia's average response time dropped from 2.5s to 80ms for cached queries, cutting her monthly OpenAI API costs by 60%. 🚀
 
-👉 Stop burning API credits: [Link to article]
+👉 Stop burning API credits: https://launchstudio.eu/en/blog/caching-strategies-for-llm-responses
 
 #AINativeFounder #LaunchStudio #Manifera #LLMCaching #BackendArchitecture

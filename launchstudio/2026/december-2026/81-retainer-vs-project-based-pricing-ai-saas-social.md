@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been delivering fixed-price, outcome-defined engageme
 
 Kwame switched from an open-ended retainer to a fixed-price scope and got the same production-ready result the retainer never delivered: production-ready and delivered in 10 business days for €2,600 (Launch & Grow Package). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/retainer-vs-project-based-pricing-ai-saas
 
 #LaunchStudio #Manifera #AISaaS #StartupPricing #FounderFinance

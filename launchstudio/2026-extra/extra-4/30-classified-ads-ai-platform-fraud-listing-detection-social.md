@@ -15,6 +15,6 @@ At **LaunchStudio**, we build this kind of lightweight trust-and-safety layer in
 
 Ruben's result: TweedehandsLokaal now catches roughly a dozen suspicious listings a month before they ever go live, with zero repeats of the below-market scam pattern since. 🚀
 
-👉 Built a marketplace or classifieds platform with AI? Get a free trust-and-safety review: [Link to article]
+👉 Built a marketplace or classifieds platform with AI? Get a free trust-and-safety review: https://launchstudio.eu/en/blog/classified-ads-ai-platform-fraud-listing-detection
 
 #AINativeFounder #LaunchStudio #Manifera #Marketplace #AISecure

@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam-based engineers — backed by Manifera's team
 
 His result: GebruikersGrip now enforces server-side ownership checks on every member and payment record, tested specifically against the direct-request bypass that had been open since launch. 🚀
 
-👉 Curious whether your app's roles are enforced or just displayed differently? Book a free intro call: [Link to article]
+👉 Curious whether your app's roles are enforced or just displayed differently? Book a free intro call: https://launchstudio.eu/en/blog/user-ai-vs-ai-user-management
 
 #AINativeFounder #LaunchStudio #Manifera #UserManagement #AccessControl

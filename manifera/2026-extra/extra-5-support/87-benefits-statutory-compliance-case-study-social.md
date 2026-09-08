@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the benefits statutory compliance compliance case study: [Link to article]
+👉 See the benefits statutory compliance compliance case study: https://www.manifera.com/blog/benefits-statutory-compliance-case-study
 
 #HRTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

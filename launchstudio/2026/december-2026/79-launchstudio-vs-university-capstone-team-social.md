@@ -14,6 +14,6 @@ At LaunchStudio, we've been finishing exactly this kind of unfinished student-bu
 
 Sofia launched a fully hardened payment flow to her campus community, avoiding the silent failures the unfinished build would have carried into real use. (€2,600 Launch & Grow Package — 8 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-university-capstone-team
 
 #LaunchStudio #Manifera #AISaaS #StartupFounders #ProductionReady

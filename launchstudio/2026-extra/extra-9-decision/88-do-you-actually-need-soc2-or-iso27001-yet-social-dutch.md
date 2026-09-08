@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in het bevei
 
 Zijn resultaat: vijf weken documenteren en een pentest, tegen een tiende van de geplande auditkosten — de volgende twee enterprise-deals sloten zonder dat iemand om een certificering vroeg. 🚀
 
-👉 Bereken via onze prijscalculator wat een gerichte security readiness pass kost: [Link naar artikel]
+👉 Bereken via onze prijscalculator wat een gerichte security readiness pass kost: https://launchstudio.eu/nl/blog/do-you-actually-need-soc2-or-iso27001-yet
 
 #SaaS #Compliance #SOC2 #ISO27001 #LaunchStudio #Manifera

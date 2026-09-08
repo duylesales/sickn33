@@ -12,6 +12,6 @@
 
 The war room isn't a tradition worth keeping — it's a pipeline gap. 🔧
 
-👉 Read our full deep dive on devops software development Wierden: [Link to article]
+👉 Read our full deep dive on devops software development Wierden: https://www.manifera.com/blog/devops-software-development-wierden
 
 #Wierden #Overijssel #DevOps #ReleaseManagement #Twente #Manifera

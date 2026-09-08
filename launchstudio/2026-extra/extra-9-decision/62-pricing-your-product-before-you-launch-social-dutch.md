@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: staffelhandhaving en prorering binnen 11 dagen live, en vier actieve accounts upgrade-den binnen een maand — structurele omzet die de prijspagina beloofde maar nooit inde. 🚀
 
-👉 Gebruik de prijscalculator om direct te zien wat uw prijsmodel toevoegt aan de ontwikkelingsscope: [Link naar artikel]
+👉 Gebruik de prijscalculator om direct te zien wat uw prijsmodel toevoegt aan de ontwikkelingsscope: https://launchstudio.eu/nl/blog/pricing-your-product-before-you-launch
 
 #SaaS #Prijsstrategie #SaaSGroei #SoftwareOntwikkeling #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze validatieaudit standaardpraktijk. Gesteund door Man
 
 Zijn resultaat: consistente server-side validatie over elk bestelgerelateerd eindpunt, en dicht wat veel langer onopgemerkt had kunnen blijven. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/ai-software-engineering-principles-your-prototype-skipped
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SoftwareEngineering

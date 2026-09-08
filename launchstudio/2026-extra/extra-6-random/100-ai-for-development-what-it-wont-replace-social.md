@@ -15,6 +15,6 @@ AI for development replaces the typing. It hasn't replaced the judgment. That's 
 
 His result: WeideBeheer moved from a fast, judgment-thin prototype to a production tool multiple dairy farms now run their real operations on. 🚀
 
-👉 Built something fast with AI and not sure where the judgment gaps are? Get our free advice: [Link to article]
+👉 Built something fast with AI and not sure where the judgment gaps are? Get our free advice: https://launchstudio.eu/en/blog/ai-for-development-what-it-wont-replace
 
 #AINativeFounder #LaunchStudio #Manifera #AIForDevelopment #ProductionReady

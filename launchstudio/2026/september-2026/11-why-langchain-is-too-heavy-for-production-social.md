@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been architecting lean production AI systems since 20
 
 Oliver's API response size dropped 60%, and code maintainability improved dramatically. 🚀
 
-👉 See the full migration playbook: [Link to article]
+👉 See the full migration playbook: https://launchstudio.eu/en/blog/why-langchain-is-too-heavy-for-production
 
 #AINativeFounder #LaunchStudio #Manifera #LangChain #AIArchitecture

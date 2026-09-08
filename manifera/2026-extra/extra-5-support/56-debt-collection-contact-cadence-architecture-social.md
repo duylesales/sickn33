@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on debt collection contact cadence: [Link to article]
+👉 Read our full architectural deep dive on debt collection contact cadence: https://www.manifera.com/blog/debt-collection-contact-cadence-architecture
 
 #Fintech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

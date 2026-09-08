@@ -14,6 +14,6 @@ Bij **LaunchStudio** adviseren en bouwen we sinds 2014 RAG- en fine-tuning archi
 
 Harpers diagnostische nauwkeurigheid steeg van 68% naar 94%, volledig conform medische standaarden. (€4.800 (LLM Fine-Tuning Pakket) — productieklaar en binnen 12 werkdagen gedeployed). 🚀
 
-👉 Ontdek welke AI-architectuur past bij uw product: [Link naar artikel]
+👉 Ontdek welke AI-architectuur past bij uw product: https://launchstudio.eu/nl/blog/fine-tuning-vs-rag-which-one-do-you-need
 
 #AINativeFounder #LaunchStudio #Manifera #RAG #FineTuning #Llama3 #VectorSearch #AISaaS #HealthTech #StartupOpschalen

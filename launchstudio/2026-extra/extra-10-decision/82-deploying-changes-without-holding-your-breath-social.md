@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: automated tests and build checks, ordered migrations, post-deploy verification, and a one-command rollback tested at 90 seconds — deploy frequency went from weekly to several times a week. 🚀
 
-👉 See what a boring deploy actually requires: [Link to article]
+👉 See what a boring deploy actually requires: https://launchstudio.eu/en/blog/deploying-changes-without-holding-your-breath
 
 #SaaS #IndieHacker #DevOps #CICD #LaunchStudio #Manifera

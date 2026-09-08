@@ -12,6 +12,6 @@ Your ERP was implemented 12 years ago, three consultants built custom modules no
 
 The question isn't customize versus replace in the abstract — it's whether your platform's core can still carry where the business is going. 🎯
 
-👉 Read our full deep dive on ERP customization vs. replacement: [Link to article]
+👉 Read our full deep dive on ERP customization vs. replacement: https://www.manifera.com/blog/choosing-a-vendor-for-erp-customization-vs-replacement
 
 #COO #ERP #DigitalTransformation #LegacyModernization #SAP #Manifera

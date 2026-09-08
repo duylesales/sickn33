@@ -15,6 +15,6 @@ At **LaunchStudio**, we deliberately feed AI-generated logic the malformed, boun
 
 Her result: explicit validation now rejects non-numeric fields with a clear error — a targeted fix, with zero change to FactuurTel's interface or core calculation logic. 🚀
 
-👉 Get your app tested against the inputs your own testing never included: [Link to article]
+👉 Get your app tested against the inputs your own testing never included: https://launchstudio.eu/en/blog/ai-bugs-that-dont-show-up-until-someone-else-uses-app
 
 #AINativeFounder #LaunchStudio #Manifera #InputValidation #AIBugs

@@ -12,6 +12,6 @@
 
 Walk in with specific answers — not confidence that the vendor is good. 🛡️
 
-👉 Read our full deep dive on it development outsourcing board approval: [Link to article]
+👉 Read our full deep dive on it development outsourcing board approval: https://www.manifera.com/blog/it-development-outsourcing-board-approval
 
 #CFO #BoardApproval #ITOutsourcing #RiskManagement #Manifera

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door meer dan 11 jaar productie-ervaring van M
 
 💡 Zo herlanceerde vakliedenplatform Vakwerk binnen 3 weken met een veilige escrow- en BaaS-architectuur.
 
-👉 Lees de complete gids voor het productierijp maken van fintech-prototypes: [Link naar artikel]
+👉 Lees de complete gids voor het productierijp maken van fintech-prototypes: https://launchstudio.eu/nl/blog/fintech-prototypes-what-changes-when-youre-moving-real-money
 
 #Fintech #PSD2 #Safeguarding #SCA #LaunchStudio #Manifera

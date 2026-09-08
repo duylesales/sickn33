@@ -14,6 +14,6 @@ At **LaunchStudio**, we welcome exactly this kind of scrutiny — we've been sta
 
 Mei's trial scope came back clean, and the team proactively flagged an unrelated gap outside it. Full engagement delivered: €3,000 (Launch & Grow Package), 12 business days. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/non-technical-founder-vetting-code-quality-case-study
 
 #LaunchStudio #Manifera #AISaaS #NonTechnicalFounder #DueDiligence

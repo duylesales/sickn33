@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Tomasz's app came back stronger than before: load tests confirmed the new environment could handle sustained concurrent load well above the original Product Hunt spike, with zero process kills. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/cursor-prototype-shared-hosting-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #ProductHunt #Hosting

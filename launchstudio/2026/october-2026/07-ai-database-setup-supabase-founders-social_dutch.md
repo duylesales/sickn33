@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Jun Wei's platform wordt nu actief en veilig gebruikt door 12 instituten in Singapore voor meer dan 5.000 leerlingdossiers. (€1.900 (Launch Ready Pakket) — binnen 6 werkdagen productieklaar opgeleverd). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/ai-database-setup-supabase-founders
 
 #LaunchStudio #Manifera #AISaaS #SupabaseSecurity #TechFounders #Cursor #DatabaseSecurity #PostgreSQL

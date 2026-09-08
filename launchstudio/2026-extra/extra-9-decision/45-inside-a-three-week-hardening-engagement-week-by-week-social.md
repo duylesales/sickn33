@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering �
 
 Her result: database-enforced tenant isolation shipped at cutover, and an enterprise questionnaire got answered with a real model. 🚀
 
-👉 Get a fixed-price quote with a full week-by-week plan attached: [Link to article]
+👉 Get a fixed-price quote with a full week-by-week plan attached: https://launchstudio.eu/en/blog/inside-a-three-week-hardening-engagement-week-by-week
 
 #SaaS #StartupGrowth #LaunchStudio #Manifera #ScaleUp #ProductionReady

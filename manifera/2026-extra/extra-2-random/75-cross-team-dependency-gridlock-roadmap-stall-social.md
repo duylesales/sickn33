@@ -12,6 +12,6 @@
 
 Two healthy teams can still stall a roadmap neither can see. 🛡️
 
-👉 Read our full deep dive on cross-team dependency gridlock roadmap stall: [Link to article]
+👉 Read our full deep dive on cross-team dependency gridlock roadmap stall: https://www.manifera.com/blog/cross-team-dependency-gridlock-roadmap-stall
 
 #EngineeringManagement #VPEngineering #TeamStructure #AgileDelivery #Manifera

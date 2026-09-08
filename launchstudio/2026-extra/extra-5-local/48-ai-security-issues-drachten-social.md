@@ -15,6 +15,6 @@ At **LaunchStudio**, this exact pattern — trusting client-sent data — is the
 
 His result: ShiftHub now enforces role-based access entirely server-side, closing the escalation path before it reached any live manufacturing client. 🚀
 
-👉 Run a ten-minute self-check on your own app, then let us verify the rest: [Link to article]
+👉 Run a ten-minute self-check on your own app, then let us verify the rest: https://launchstudio.eu/en/blog/ai-security-issues-drachten
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityIssues #Drachten

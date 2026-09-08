@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De data-isolatie van InvoiceLoop werd volledig gedicht, taken voor grote bestanden die eerder de browser 90 seconden bevroren, draaien nu op de achtergrond, en Jonas behield zijn hele product terwijl hij slechts een fractie van het rebuild-budget van € 55.000 uitgaf. (€ 2.900 (Launch & Grow Pakket) — gemoderniseerd en uitgerold in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/strangler-pattern-vs-full-rewrite-decision
 
 #LaunchStudio #Manifera #AISaaS #StranglerPattern #TechFounders

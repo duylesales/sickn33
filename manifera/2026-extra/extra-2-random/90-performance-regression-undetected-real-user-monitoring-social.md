@@ -12,6 +12,6 @@
 
 Catch it in one deploy cycle — not six weeks of support tickets. 🛡️
 
-👉 Read our full deep dive on performance regression undetected real user monitoring: [Link to article]
+👉 Read our full deep dive on performance regression undetected real user monitoring: https://www.manifera.com/blog/performance-regression-undetected-real-user-monitoring
 
 #WebPerformance #VPEngineering #Observability #RUM #SoftwareQuality #Manifera

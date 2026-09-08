@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze systematische sleutel- en geheimenaudit een standaa
 
 Zijn resultaat: blootgestelde sleutel geroteerd, publiceerbaar/geheim-gebruik correct gescheiden — donatieflow volledig onaangeraakt. 🚀
 
-👉 Beschrijf wat je bouwt — we reageren binnen één werkdag: [Link naar artikel]
+👉 Beschrijf wat je bouwt — we reageren binnen één werkdag: https://launchstudio.eu/nl/blog/your-ai-prototype-looks-done-how-to-check-if-it-actually-is
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #Payments

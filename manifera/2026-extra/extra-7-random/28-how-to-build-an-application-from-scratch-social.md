@@ -12,6 +12,6 @@
 
 I was ready to spend six figures building the application in my head. Two weeks of talking to real people showed me I had the wrong problem. 🛡️
 
-👉 Read our full deep dive on how to build an application from scratch: [Link to article]
+👉 Read our full deep dive on how to build an application from scratch: https://www.manifera.com/blog/how-to-build-an-application-from-scratch
 
 #AppDevelopment #CEO #Validation #Manifera

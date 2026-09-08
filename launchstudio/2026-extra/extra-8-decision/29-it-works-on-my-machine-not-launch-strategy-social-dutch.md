@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar productie-ervaring, vang
 
 Yara's resultaat: cachelogica gecorrigeerd, stagingomgeving live, PulseMetrics gehardeerd in 8 werkdagen voor €2.500. 🚀
 
-👉 Vertel ons wat uw lokale tests nog niet hebben gedekt: [Link naar artikel]
+👉 Vertel ons wat uw lokale tests nog niet hebben gedekt: https://launchstudio.eu/nl/blog/it-works-on-my-machine-not-launch-strategy
 
 #LaunchStudio #ItWorksOnMyMachine #IndieHacker #Manifera #SaaS #Staging #ProductieKlaar

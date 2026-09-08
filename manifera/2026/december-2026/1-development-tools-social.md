@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on development tools: [Link to article]
+👉 Read our full deep dive on development tools: https://www.manifera.com/blog/development-tools
 
 #DeveloperTools #PlatformEngineering #SoftwareArchitecture #TechLeadership #CTO #Manifera

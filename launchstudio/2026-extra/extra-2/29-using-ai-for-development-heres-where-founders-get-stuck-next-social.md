@@ -15,6 +15,6 @@ At **LaunchStudio**, we audit exactly this pattern across an entire codebase. Ba
 
 His result: an explicit allow-list implemented on every update endpoint, closing the privilege-escalation risk platform-wide. 🚀
 
-👉 Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/using-ai-for-development-heres-where-founders-get-stuck-next
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #SoftwareEngineering

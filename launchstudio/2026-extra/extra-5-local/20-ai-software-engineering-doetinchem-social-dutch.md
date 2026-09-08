@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen onze audits authenticatie, database-integriteit, blo
 
 Zijn resultaat: WerkVloer doorstond de technische review van de productieklant en draait nu bij vier werkplaatsen met een volledig compliant onderhoudsauditspoor. 🚀
 
-👉 Vraagt een klant binnenkort om "een basale technische review"? Weet wat ze daadwerkelijk zullen controleren: [Link naar artikel]
+👉 Vraagt een klant binnenkort om "een basale technische review"? Weet wat ze daadwerkelijk zullen controleren: https://launchstudio.eu/nl/blog/ai-software-engineering-doetinchem
 
 #AINativeFounder #LaunchStudio #Manifera #AIAudit #Doetinchem

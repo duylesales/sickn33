@@ -16,6 +16,6 @@ Bij **LaunchStudio** repareren we exact wat er onder de motorkap knelt, zonder a
 
 Thijs' resultaat: laadtijd van 4,2 seconden naar 180 milliseconden, live in 5 werkdagen voor €1.800. 🚀
 
-👉 Krijg een schema-assessment voordat uw volgende honderd gebruikers arriveren: [Link naar artikel]
+👉 Krijg een schema-assessment voordat uw volgende honderd gebruikers arriveren: https://launchstudio.eu/nl/blog/why-prototype-database-schema-breaks-at-1000-users
 
 #LaunchStudio #Supabase #VibeCoding #Manifera #SaaS #Database #AIApp

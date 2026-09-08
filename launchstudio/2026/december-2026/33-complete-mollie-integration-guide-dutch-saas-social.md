@@ -17,6 +17,6 @@ At **LaunchStudio**, backed by Manifera's Amsterdam-based team's direct familiar
 
 Her result: checkout conversion MORE THAN DOUBLED — 8% → 19%, same traffic. 🚀
 
-👉 Read the complete Mollie integration guide: [Link to article]
+👉 Read the complete Mollie integration guide: https://launchstudio.eu/en/blog/complete-mollie-integration-guide-dutch-saas
 
 #Mollie #iDEAL #LaunchStudio #Manifera #DutchSaaS #AINativeFounder

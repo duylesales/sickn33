@@ -12,6 +12,6 @@ Every UX agency deck opens the same way: gorgeous screens, a case study titled "
 
 The best portfolio review isn't about admiring pixels — it's about interrogating process. 🎯
 
-👉 Read our full deep dive on choosing a UX design vendor and the red flags to watch for: [Link to article]
+👉 Read our full deep dive on choosing a UX design vendor and the red flags to watch for: https://www.manifera.com/blog/choosing-a-ux-design-vendor-portfolio-red-flags-to-watch-for
 
 #HeadOfProduct #UXDesign #VendorSelection #ProductDesign #DesignAgency #Manifera

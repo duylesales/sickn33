@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelt ons Amsterdamse team routinematig precies dit soo
 
 Haar resultaat: BloemBestel draait nu volledig op infrastructuur die Fleur beheert, met een duidelijk begrip van de clausule over behouden rechten voor de toekomst. 🚀
 
-👉 Midden in een export en wilt u een tweede blik op waar u mee instemt? Beschrijf uw project via ons proces: [Link naar artikel]
+👉 Midden in een export en wilt u een tweede blik op waar u mee instemt? Beschrijf uw project via ons proces: https://launchstudio.eu/nl/blog/ai-tool-download-export-fine-print
 
 #AINativeFounder #LaunchStudio #Manifera #AIToolTerms #CodeExport

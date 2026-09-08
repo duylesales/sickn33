@@ -12,6 +12,6 @@ An IT manager rejected a strong dev vendor over one line on a checklist: "ISO 27
 
 A badge is a floor, not the whole evaluation. Read the report. 📄
 
-👉 Read our full deep dive on ISO 27001 vs. SOC2 for vendor selection: [Link to article]
+👉 Read our full deep dive on ISO 27001 vs. SOC2 for vendor selection: https://www.manifera.com/blog/iso-27001-vs-soc2-which-certification-actually-matters
 
 #ITSecurity #VendorDueDiligence #ISO27001 #SOC2 #Compliance #Manifera

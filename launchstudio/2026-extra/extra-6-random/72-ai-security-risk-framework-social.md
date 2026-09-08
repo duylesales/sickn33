@@ -15,6 +15,6 @@ At **LaunchStudio**, our team based in Ho Chi Minh City — backed by Manifera's
 
 Her result: RisicoGrip now enforces server-side account isolation on every query, and Anne's team re-scored their whole backlog with this framework. 🚀
 
-👉 Ready to see what closing your highest-scoring gaps would cost? Calculate it here: [Link to article]
+👉 Ready to see what closing your highest-scoring gaps would cost? Calculate it here: https://launchstudio.eu/en/blog/ai-security-risk-framework
 
 #AINativeFounder #LaunchStudio #Manifera #SecurityDebt #SaaSFounders

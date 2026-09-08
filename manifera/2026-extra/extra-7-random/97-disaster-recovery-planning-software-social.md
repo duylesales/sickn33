@@ -12,6 +12,6 @@ Most disaster recovery plans exist as a document. Most have never once been test
 
 One untested plan promised a 4-hour recovery. The real, tested number was 11 hours. Now it's 3.5. ⏱️
 
-👉 Read our full deep dive on disaster recovery planning software: [Link to article]
+👉 Read our full deep dive on disaster recovery planning software: https://www.manifera.com/blog/disaster-recovery-planning-software
 
 #DisasterRecovery #BusinessContinuity #VPEngineering #Manifera

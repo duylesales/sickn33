@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 The insurer's security team re-tested the original attack plus four new variants — all five were blocked — and resumed the pilot. (€6,100 (Enterprise Hardening Package) — pilot-ready in 15 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/prompt-injection-hardening-enterprise-pilot-case-study
 
 #LaunchStudio #Manifera #AISaaS #PromptInjection #AISecurity

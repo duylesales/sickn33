@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: nul dubbele boekingen in vier maanden tijd, zelfs bij twee nieuwsbrieven die groter waren dan de campagne die de initiële chaos veroorzaakte. 🚀
 
-👉 Plan een gesprek van 15 minuten om uw boekingsstroom door te lichten: [Link naar artikel]
+👉 Plan een gesprek van 15 minuten om uw boekingsstroom door te lichten: https://launchstudio.eu/nl/blog/boekings-en-planningsproducten-waar-prototypes-als-eerste-breken
 
 #BookingApp #AIFounder #LaunchStudio #Manifera #ProductionReady #NoCode

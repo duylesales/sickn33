@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Haar resultaat: Nadia behaalde € 740 maandomzet tegenover haar doel van € 600, onderhandelde een 3-daagse werkweek en de supportlaag ving een serverstoring op terwijl zij op haar kantoorbaan zat. 🚀
 
-👉 Plan een kort gesprek en ontvang een offerte waar u in één avond over kunt beslissen: [Link naar artikel]
+👉 Plan een kort gesprek en ontvang een offerte waar u in één avond over kunt beslissen: https://launchstudio.eu/nl/blog/launching-while-employed-decision-calendar
 
 #FounderLife #IndieHacker #LaunchStudio #Manifera #SaaS #ProductionReady

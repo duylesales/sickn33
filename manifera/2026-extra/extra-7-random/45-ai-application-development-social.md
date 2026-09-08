@@ -12,6 +12,6 @@
 
 We budgeted the build carefully and guessed at the running cost. The guess was wrong by a lot. 🛡️
 
-👉 Read our full deep dive on ai application development: [Link to article]
+👉 Read our full deep dive on ai application development: https://www.manifera.com/blog/ai-application-development
 
 #AIApplication #CEO #AICosts #Manifera

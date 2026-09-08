@@ -12,6 +12,6 @@
 
 Build your restaurant ordering app for long-term growth, not just launch day! 🚀
 
-👉 Read the non-technical founder's guide to building a restaurant ordering app: [Link to article]
+👉 Read the non-technical founder's guide to building a restaurant ordering app: https://www.manifera.com/blog/restaurant-ordering-app-founder-guide
 
 #RestaurantApp #MobileAppDevelopment #StartupFounders #OrderFunnel #FoodTech #Manifera

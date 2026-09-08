@@ -14,6 +14,6 @@ Bij **LaunchStudio** passen we deze methodiek toe voor onderzoeksintensieve orga
 
 Voor Daniel tonen antwoorden nu klikbare bronlinks die direct naar PDF-pagina's verwijzen, waardoor het gebruikersvertrouwen met 90% steeg. (€1.550 (Citation Rendering Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u vertrouwen bouwt met een Citation UI: [Link naar artikel]
+👉 Ontdek hoe u vertrouwen bouwt met een Citation UI: https://launchstudio.eu/nl/blog/building-trust-citation-provenance-ui-ai
 
 #AINativeFounder #LaunchStudio #Manifera #CitationUI #RAG #DataProvenance #UXDesign #HealthTech #AISaaS #StartupOpschalen

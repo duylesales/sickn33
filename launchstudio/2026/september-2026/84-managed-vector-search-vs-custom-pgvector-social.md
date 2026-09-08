@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Elif's result: monthly vector search cost dropped from €340 to effectively zero, with each agency's candidate pool now cryptographically isolated at the database layer (€2,300, Launch & Grow Package — 8 business days). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/managed-vector-search-vs-custom-pgvector
 
 #LaunchStudio #Manifera #AISaaS #VectorSearch #RAGArchitecture

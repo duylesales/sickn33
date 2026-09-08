@@ -12,6 +12,6 @@
 
 Stop taking a bundled number to your board. Take a breakdown. 💼
 
-👉 Read our full deep dive on cost to build custom software Aalsmeer: [Link to article]
+👉 Read our full deep dive on cost to build custom software Aalsmeer: https://www.manifera.com/blog/cost-to-build-custom-software-aalsmeer
 
 #Aalsmeer #NoordHolland #CFO #SoftwareCost #CustomSoftware #FinanceLeadership #Manifera

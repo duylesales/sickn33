@@ -12,6 +12,6 @@
 
 The original analysis only compared the numbers that made building look good. All four variables, run honestly, told a different story. 🛡️
 
-👉 Read our full deep dive on build vs buy software: [Link to article]
+👉 Read our full deep dive on build vs buy software: https://www.manifera.com/blog/build-vs-buy-software
 
 #BuildVsBuy #CFO #SoftwareStrategy #Manifera

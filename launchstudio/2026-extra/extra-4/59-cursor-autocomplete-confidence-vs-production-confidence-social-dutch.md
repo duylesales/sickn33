@@ -15,6 +15,6 @@ Bij **LaunchStudio** passen we precies dit soort gerichte beoordeling toe op doo
 
 Zijn resultaat: het toestemmingssysteem van TicketVolg verwerkt nu elke realistische rolcombinatie correct, en Twan heeft een echte testmatrix in plaats van een snelle handmatige controle. 🚀
 
-👉 Bouwt u toegangscontrole met Cursor? Laat de rolcombinaties testen: [Link naar artikel]
+👉 Bouwt u toegangscontrole met Cursor? Laat de rolcombinaties testen: https://launchstudio.eu/nl/blog/cursor-autocomplete-confidence-vs-production-confidence
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #CursorAI

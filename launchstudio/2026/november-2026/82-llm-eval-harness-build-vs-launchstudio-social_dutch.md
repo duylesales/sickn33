@@ -14,6 +14,6 @@ Bij LaunchStudio bouwen we al sinds 2014 productie-evaluatie-infrastructuur via 
 
 Wij maakten af wat Priya's twee maanden avonden en weekenden niet konden: de nieuwe evaluatiesuite van BriefWell ving in week twee een fabricatiegevoelige promptvariant op — voordat ook maar één klant het zag. (€2.400 — Launch & Grow Pakket, 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/llm-eval-harness-build-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #LLMEval #AIQuality

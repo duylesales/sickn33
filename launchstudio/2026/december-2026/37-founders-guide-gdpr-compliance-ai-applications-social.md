@@ -19,6 +19,6 @@ At **LaunchStudio**, backed by Herre Roelevink's cybersecurity background and Ma
 
 Her result: passed the review, signed her biggest client. 🚀
 
-👉 Read the founder's GDPR guide: [Link to article]
+👉 Read the founder's GDPR guide: https://launchstudio.eu/en/blog/founders-guide-gdpr-compliance-ai-applications
 
 #GDPR #LaunchStudio #Manifera #AINativeFounder #DataPrivacy #SaaS

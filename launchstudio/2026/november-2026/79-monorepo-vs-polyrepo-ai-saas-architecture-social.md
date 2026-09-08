@@ -14,6 +14,6 @@ At LaunchStudio, we don't just merge folders — we impose the package boundarie
 
 Karim's team cut a change touching both API contract and frontend from ~2 days of coordination to a single same-day PR. (€3,300 (Relaunch & Scale Package) — 11 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/monorepo-vs-polyrepo-ai-saas-architecture
 
 #LaunchStudio #Manifera #AISaaS #Monorepo #EngineeringArchitecture

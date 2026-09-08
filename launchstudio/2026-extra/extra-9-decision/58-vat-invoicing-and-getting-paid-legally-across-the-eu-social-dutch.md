@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in het begel
 
 Het resultaat: OSS-registratie binnen no-time afgerond, Stripe Tax geconfigureerd voor automatische btw-verlegging en een factuurlayout waar de accountant direct mee akkoord ging. 🚀
 
-👉 Spreek met een engineer die uw facturatieconfiguratie toetst aan de btw-regels: [Link naar artikel]
+👉 Spreek met een engineer die uw facturatieconfiguratie toetst aan de btw-regels: https://launchstudio.eu/nl/blog/vat-invoicing-and-getting-paid-legally-across-the-eu
 
 #SaaS #BtwCompliance #Facturatie #ScaleUp #LaunchStudio #Manifera

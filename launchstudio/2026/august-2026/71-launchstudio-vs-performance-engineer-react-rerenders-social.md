@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of React performance p
 
 Kenji's dashboard went from laggy to instant: the 5,000-row table now renders in under 50ms during scroll and filtering, with no perceptible lag on desktop or mobile. (€1,900 (Launch & Grow Package) — 7 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-performance-engineer-react-rerenders
 
 #LaunchStudio #Manifera #AISaaS #ReactPerformance #WebDev

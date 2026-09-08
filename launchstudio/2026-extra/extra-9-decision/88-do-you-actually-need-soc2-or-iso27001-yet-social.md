@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years securing systems for TNO and
 
 His result: five weeks of documentation and a pen test, roughly a tenth of the planned audit cost — the next two enterprise deals closed without either buyer requesting certification. 🚀
 
-👉 Use the price calculator to see what a security readiness pass costs: [Link to article]
+👉 Use the price calculator to see what a security readiness pass costs: https://launchstudio.eu/en/blog/do-you-actually-need-soc2-or-iso27001-yet
 
 #SaaS #Compliance #SOC2 #EnterpriseReady #LaunchStudio #Manifera

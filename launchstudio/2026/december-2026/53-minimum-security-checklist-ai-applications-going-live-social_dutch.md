@@ -22,6 +22,6 @@ Bij **LaunchStudio**, geleid door Herre Roelevinks cybersecurity-ervaring (CFLW,
 
 Zijn resultaat: 4 kritieke gaten gedicht vóórdat 200 leden toegang kregen. 🚀
 
-👉 Bekijk de complete 10-punten beveiligingschecklist: [Link naar artikel]
+👉 Bekijk de complete 10-punten beveiligingschecklist: https://launchstudio.eu/nl/blog/minimum-security-checklist-ai-applications-going-live
 
 #AISecurity #LaunchStudio #Manifera #AINativeFounder #Cybersecurity #SaaS #Bolt #NextJS #TechFounders #StartupOpschalen

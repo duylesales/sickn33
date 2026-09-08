@@ -15,6 +15,6 @@ At **LaunchStudio**, stale-state bugs like this are exactly what our structured 
 
 His result: TafelScan ran its next three Friday services with zero price-mismatch tickets, and the pilot restaurant signed on for a second location. 🚀
 
-👉 Putting QR codes on real tables soon? Check what a pre-launch review costs first: [Link to article]
+👉 Putting QR codes on real tables soon? Check what a pre-launch review costs first: https://launchstudio.eu/en/blog/restaurant-qr-ordering-ai-app-menu-sync-bug
 
 #AINativeFounder #LaunchStudio #Manifera #RestaurantTech #AIApps

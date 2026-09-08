@@ -16,6 +16,6 @@ At **LaunchStudio**, we run this exact checklist against your specific prototype
 
 Her result: the real risk got fixed first — nice-to-haves waited until revenue could fund them. 🚀
 
-👉 Get your prototype checked against this exact checklist: [Link to article]
+👉 Get your prototype checked against this exact checklist: https://launchstudio.eu/en/blog/production-readiness-checklist-ai-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReady #VibeCoding

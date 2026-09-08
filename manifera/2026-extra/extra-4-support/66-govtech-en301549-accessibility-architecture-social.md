@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on govtech en301549 accessibility: [Link to article]
+👉 Read our full architectural deep dive on govtech en301549 accessibility: https://www.manifera.com/blog/govtech-en301549-accessibility-architecture
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -12,6 +12,6 @@ Four months of vendor research. Scorecard done, references checked, technical in
 
 Their second attempt at this meeting took 40 minutes. Same vendor, same evidence — just a meeting built to actually close it. 📋
 
-👉 Read our full deep dive on the final vendor decision meeting: [Link to article]
+👉 Read our full deep dive on the final vendor decision meeting: https://www.manifera.com/blog/the-final-vendor-decision-meeting-a-framework-for-consensus
 
 #Founder #VendorSelection #DecisionMaking #Leadership #StartupAdvice #Manifera

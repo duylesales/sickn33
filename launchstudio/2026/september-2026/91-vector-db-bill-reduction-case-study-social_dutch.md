@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Priya's platform kreeg de kosten weer onder controle: haar Pinecone-rekening daalde van $4.200 naar $1.890 per maand — een verlaging van 55% — zonder meetbaar verlies aan zoekkwaliteit. (€2.200 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vector-db-bill-reduction-case-study
 
 #LaunchStudio #Manifera #AISaaS #VectorDatabase #RAGCosts

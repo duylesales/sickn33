@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years architecting systems for EU 
 
 Her result: pinned EU functions, a replaced US webhook relay, and a precise answer that closed the deal two weeks later. 🚀
 
-👉 Use the price calculator to scope a residency audit for your stack: [Link to article]
+👉 Use the price calculator to scope a residency audit for your stack: https://launchstudio.eu/en/blog/where-your-data-actually-lives-eu-hosting-decision
 
 #SaaS #EUHosting #LaunchStudio #Manifera #ScaleUp #GDPR

@@ -14,6 +14,6 @@ At LaunchStudio, we've been fixing exactly this class of production engineering 
 
 Tobias's timezone-display bug was traced and fixed the same day it was reported — at zero additional cost. (€1,200 Launch Ready package — 5 business days, guarantee fix included.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-guarantee-bugs-after-launch
 
 #LaunchStudio #Manifera #AISaaS #ProductionHardening #StartupGuarantee

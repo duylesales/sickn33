@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen we vertrouwens- en veiligheidsfuncties zoals blo
 
 Het resultaat voor Lotte: de blokkeeractie van MatchLokaal is nu volledig direct en compleet in elk deel van de app, met regressietests om dat zo te houden. 🚀
 
-👉 Werkt u aan een dating-, community- of sociale app met blokkeer-/rapportfuncties? Laat ons gratis uw veiligheidsoppervlak auditen: [Link naar artikel]
+👉 Werkt u aan een dating-, community- of sociale app met blokkeer-/rapportfuncties? Laat ons gratis uw veiligheidsoppervlak auditen: https://launchstudio.eu/nl/blog/dating-app-ai-tool-report-block-latency
 
 #AINativeFounder #LaunchStudio #Manifera #TrustAndSafety #DatingApp

@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ projecten, kiezen we dire
 
 Haar resultaat: 40% lagere hostingkosten, nul verschil voor de eindgebruiker. 🚀
 
-👉 Lees de complete gids over WebSockets versus SSE voor AI-apps: [Link naar artikel]
+👉 Lees de complete gids over WebSockets versus SSE voor AI-apps: https://launchstudio.eu/nl/blog/websocket-vs-server-sent-events-realtime-ai
 
 #RealTimeAI #LaunchStudio #Manifera #AINativeFounder #SaaS #WebDev #SSE #WebSockets #Bolt #TechFounders #StartupOpschalen

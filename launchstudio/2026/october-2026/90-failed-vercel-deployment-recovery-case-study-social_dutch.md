@@ -14,6 +14,6 @@ Bij **LaunchStudio** herstellen wij platforms van precies dit soort storing al s
 
 Het platform van Jasper werd volledig hersteld met geverifieerde data-integriteit, en de volgende deploy van dezelfde functie verliep zonder incident. (€ 3.400 — Relaunch & Scale Pakket, hersteld en procesmatig verhard in 48 uur.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/failed-vercel-deployment-recovery-case-study
 
 #LaunchStudio #Manifera #AISaaS #IncidentResponse #Vercel

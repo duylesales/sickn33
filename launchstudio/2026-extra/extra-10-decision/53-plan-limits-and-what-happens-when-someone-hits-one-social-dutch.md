@@ -24,6 +24,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), zorgen we d
 
 💡 Zo ontdekte Anouk Verstraeten van Factuurly dat een klant 340 facturen importeerde op een 100-facturen pakket. Na onze database-teller en 80%-waarschuwingsmail upgradede 60% direct naar het duurdere plan.
 
-👉 Hoe werken uw abonnementslimieten écht onder belasting? [Link naar artikel]
+👉 Hoe werken uw abonnementslimieten écht onder belasting? https://launchstudio.eu/nl/blog/plan-limits-and-what-happens-when-someone-hits-one
 
 #SaaSPricing #SoftwareEngineering #PlanLimits #Concurrency #LaunchStudio #Manifera

@@ -14,6 +14,6 @@ Bij LaunchStudio werken we uitsluitend met transparante, bindende fixed-scope SO
 
 Ahmed stapte over en ontving binnen 9 dagen een vlekkeloze, geteste MVP zonder één cent meerwerk. (€ 2.700 (Launch Ready) — 9 werkdagen.) 🚀
 
-👉 Ontdek hoe u scope creep vooraf signaleert: [Link naar artikel]
+👉 Ontdek hoe u scope creep vooraf signaleert: https://launchstudio.eu/nl/blog/founders-guide-spotting-scope-creep
 
 #LaunchStudio #Manifera #AISaaS #ScopeCreep #SoftwareContracts

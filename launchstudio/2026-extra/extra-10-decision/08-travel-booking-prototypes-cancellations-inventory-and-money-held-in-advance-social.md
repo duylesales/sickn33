@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Weekendje has processed over 900 bookings since the fix with zero double-bookings, and the payout change ended a recurring dispute with hosts. 🚀
 
-👉 See what your booking platform does under real concurrent traffic: [Link to article]
+👉 See what your booking platform does under real concurrent traffic: https://launchstudio.eu/en/blog/travel-booking-prototypes-cancellations-inventory-and-money-held-in-advance
 
 #TravelTech #Marketplace #StartupFounders #ProductionReady #LaunchStudio #Manifera

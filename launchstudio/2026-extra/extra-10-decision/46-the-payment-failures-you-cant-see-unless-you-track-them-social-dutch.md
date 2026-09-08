@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we d
 
 💡 Zo ontdekte Mira Verhoeven van Klaro dat 23 klanten al 6 weken gratis haar app gebruikten door één haperende webhook.
 
-👉 Lees hoe u stille betaalstoringen opspoort en oplost: [Link naar artikel]
+👉 Lees hoe u stille betaalstoringen opspoort en oplost: https://launchstudio.eu/nl/blog/the-payment-failures-you-cant-see-unless-you-track-them
 
 #SaaSBilling #Stripe #ChurnPrevention #InvoluntaryChurn #LaunchStudio #Manifera

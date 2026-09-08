@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen wij dit soort technische bewijsinfrastructuur al sin
 
 Het geschil werd opgelost via een onderhandelde licentieaanpassing in plaats van een rechtszaak, onderbouwd met echt bewijs. (€ 4.600 (Enterprise Hardening Pakket) — 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/legal-technical-help-ai-copyright-ip-disputes
 
 #LaunchStudio #Manifera #AISaaS #AICopyright #IPLaw

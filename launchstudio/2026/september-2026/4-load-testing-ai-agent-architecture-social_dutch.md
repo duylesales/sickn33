@@ -14,6 +14,6 @@ Bij **LaunchStudio** voeren we sinds 2014 enterprise belastingtests en veerkrach
 
 Olivia's foutpercentage daalde naar nul, en het systeem verwerkte moeiteloos 1.000 gelijktijdige supportgesprekken zonder enige storing. (€2.200 (Load Testing & Hardening Pakket) — productieklaar en binnen 6 werkdagen gedeployed). 🚀
 
-👉 Maak uw AI-architectuur bestand tegen piekbelasting: [Link naar artikel]
+👉 Maak uw AI-architectuur bestand tegen piekbelasting: https://launchstudio.eu/nl/blog/load-testing-ai-agent-architecture
 
 #AINativeFounder #LaunchStudio #Manifera #LoadTesting #AIAgents #BackendEngineering #CircuitBreaker #RateLimiting #AISaaS #StartupOpschalen

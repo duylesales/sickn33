@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 geoptimaliseerde RAG- en data-archi
 
 Amelia's gemiddelde promptgrootte daalde met 50% en haar API-kosten per zoekopdracht werden gehalveerd bij behoud van maximale precisie. (€1.750 (Context Pruning Integration Pakket) — productieklaar en binnen 4 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u uw tokenkosten halveert met context-pruning: [Link naar artikel]
+👉 Ontdek hoe u uw tokenkosten halveert met context-pruning: https://launchstudio.eu/nl/blog/how-to-manage-llm-context-windows
 
 #AINativeFounder #LaunchStudio #Manifera #ContextWindow #RAG #Reranking #TokenOptimization #AISaaS #StartupOpschalen

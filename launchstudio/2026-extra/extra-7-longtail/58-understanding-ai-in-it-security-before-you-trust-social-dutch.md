@@ -15,6 +15,6 @@ Bij **LaunchStudio** beschouwen we beveiliging op schaal als een houding die opn
 
 Wouter's resultaat: autorisatiereview, toegangsmonitoring en beheerde hosting op hun plek vóór het ondertekenen van de grotere kliniek, niet erna. 🚀
 
-👉 Vroeg geslaagd voor uw beveiligingscontroles? Dit is waarom dat niet betekent dat u nog steeds gedekt bent: [Link naar artikel]
+👉 Vroeg geslaagd voor uw beveiligingscontroles? Dit is waarom dat niet betekent dat u nog steeds gedekt bent: https://launchstudio.eu/nl/blog/understanding-ai-in-it-security-before-you-trust
 
 #AINativeFounder #LaunchStudio #Manifera #AIinITSecurity #DataSecurity

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: cancellation, pause, and deletion flows delivered in 3 business days — chargebacks dropped to zero the following quarter, and pause retained four subscriptions that would otherwise have ended. 🚀
 
-👉 Build the exit before you need it: [Link to article]
+👉 Build the exit before you need it: https://launchstudio.eu/en/blog/the-cancellation-flow-you-should-build-before-you-need-it
 
 #SaaS #CustomerRetention #GDPR #FounderLife #LaunchStudio #Manifera

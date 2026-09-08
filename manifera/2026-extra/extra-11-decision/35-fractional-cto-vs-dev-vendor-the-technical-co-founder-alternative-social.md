@@ -12,6 +12,6 @@
 
 Most founders don't need a technical co-founder. They need someone technical in the room before they sign a vendor contract. 🎯
 
-👉 Read our full deep dive on fractional CTO vs. dev vendor: [Link to article]
+👉 Read our full deep dive on fractional CTO vs. dev vendor: https://www.manifera.com/blog/fractional-cto-vs-dev-vendor-the-technical-co-founder-alternative
 
 #FractionalCTO #NonTechnicalFounder #StartupAdvice #TechLeadership #FounderTips #Manifera

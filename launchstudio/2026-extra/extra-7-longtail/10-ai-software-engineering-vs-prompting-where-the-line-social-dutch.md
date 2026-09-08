@@ -15,6 +15,6 @@ Bij **LaunchStudio** voegen we precies deze laag van review en versteviging toe 
 
 Casper's resultaat: ShiftSync faalt nu veilig en zichtbaar in plaats van geruisloos, waardoor beide klinieken weer volledig op het rooster kunnen vertrouwen. 🚀
 
-👉 Erover uit dat uw door AI gebouwde app solide is omdat u elke regel zelf hebt gecontroleerd: lees waarom dat niet hetzelfde is als engineering: [Link naar artikel]
+👉 Erover uit dat uw door AI gebouwde app solide is omdat u elke regel zelf hebt gecontroleerd: lees waarom dat niet hetzelfde is als engineering: https://launchstudio.eu/nl/blog/ai-software-engineering-vs-prompting-where-the-line
 
 #AINativeFounder #LaunchStudio #Manifera #SoftwareEngineering #QATesting

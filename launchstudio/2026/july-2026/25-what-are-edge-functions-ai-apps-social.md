@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 William's application achieved production readiness: William eliminated user-facing timeout errors and supported PDF generation of up to 200 pages. (€1,750 (Edge Architecture Package) — production-ready and deployed in 6 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/what-are-edge-functions-ai-apps
 
 #LaunchStudio #Manifera #AISaaS #WhatAreEdgeFunctions #TechFounders

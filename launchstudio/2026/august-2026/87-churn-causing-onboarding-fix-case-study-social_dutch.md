@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 De voltooiing van onboarding steeg van 40% naar 87%, en opzeggingen binnen de eerste 30 dagen daalden met meer dan de helft. (€ 1.900 (Launch & Grow Pakket) — 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/churn-causing-onboarding-fix-case-study
 
 #LaunchStudio #Manifera #AISaaS #ChurnReduction #Onboarding

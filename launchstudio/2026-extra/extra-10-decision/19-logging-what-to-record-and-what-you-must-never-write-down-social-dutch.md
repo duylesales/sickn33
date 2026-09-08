@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, auditen en saneren onze senior 
 
 💡 Zo hielpen we e-signature platform Notarize gelekte inlogwachtwoorden tijdig te saneren en met succes een enterprise-contract binnen te halen.
 
-👉 Lees de complete logging-gids voor SaaS-oprichters: [Link naar artikel]
+👉 Lees de complete logging-gids voor SaaS-oprichters: https://launchstudio.eu/nl/blog/logging-what-to-record-and-what-you-must-never-write-down
 
 #Logging #CyberSecurity #GDPR #SaaSArchitecture #LaunchStudio #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on custom software cost dordrecht: [Link to article]
+👉 Read our full deep dive on custom software cost dordrecht: https://www.manifera.com/blog/custom-software-cost-dordrecht
 
 #Dordrecht #ZuidHolland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

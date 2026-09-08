@@ -12,6 +12,6 @@ A system built on one dependency looks stable right up until that dependency dis
 
 Structural resilience adds €25,000-€45,000 upfront — an unplanned forced vendor transition costs €80,000-€150,000 in a scramble.
 
-👉 Read our full deep dive on digital transformation partner Brunssum: [Link to article]
+👉 Read our full deep dive on digital transformation partner Brunssum: https://www.manifera.com/blog/digital-transformation-partner-brunssum
 
 #Brunssum #ParkstadLimburg #Limburg #DigitalTransformation #CTO #Manifera

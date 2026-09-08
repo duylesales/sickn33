@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Renata's platform achieved production readiness: her prompt logging control passed her auditor's sample on the first review, with zero follow-up evidence requests. (€4,800 (Enterprise Hardening Package) — compliance-grade logging built and verified in 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-soc2-prompt-logging-audit-trails
 
 #LaunchStudio #Manifera #AISaaS #SOC2Compliance #AuditTrail

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type productieproblemen al sinds 2014 o
 
 De querylatentie tijdens piekuren daalde van 2,1s naar 310ms, met nul downtime tijdens de migratie (€2.900 (Relaunch & Scale Pakket) — voltooid in 7 werkdagen). 🚀
 
-👉 Ontdek hoe we dit hebben opgelost: [Link to article]
+👉 Ontdek hoe we dit hebben opgelost: https://launchstudio.eu/nl/blog/postgres-read-replicas-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #PostgreSQL #DatabaseScaling

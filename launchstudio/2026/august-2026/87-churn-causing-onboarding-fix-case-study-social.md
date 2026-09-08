@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Onboarding completion rose from 40% to 87%, and first-30-day cancellations dropped by more than half. (€1,900 (Launch & Grow Package) — 7 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/churn-causing-onboarding-fix-case-study
 
 #LaunchStudio #Manifera #AISaaS #ChurnReduction #Onboarding

@@ -10,6 +10,6 @@ At **Manifera**, our entire Hybrid Hub (Amsterdam - Vietnam) operates on a "Shif
 ✅ The result? Zero deployment bottlenecks and mathematically perfect rollbacks. 🚀
 
 Stop separating code from infrastructure. Unite them! ⚡
-👉 The CTO's framework for building T-Shaped DevSecOps engineers: [Link to article]
+👉 The CTO's framework for building T-Shaped DevSecOps engineers: https://www.manifera.com/blog/devops-for-developers
 
 #DevSecOps #DevOps #CloudNative #TechLeadership #CTO #SoftwareEngineering #VietnamTech #AmsterdamBusiness #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** zijn verouderde-statusbugs als deze precies waar onze gestr
 
 Zijn resultaat: TafelScan draaide de volgende drie vrijdagdiensten zonder één kaartje met een prijsverschil, en het pilotrestaurant tekende voor een tweede locatie. 🚀
 
-👉 Binnenkort QR-codes op echte tafels? Controleer eerst wat een pre-lanceringsbeoordeling kost: [Link naar artikel]
+👉 Binnenkort QR-codes op echte tafels? Controleer eerst wat een pre-lanceringsbeoordeling kost: https://launchstudio.eu/nl/blog/restaurant-qr-ordering-ai-app-menu-sync-bug
 
 #AINativeFounder #LaunchStudio #Manifera #RestaurantTech #AIApps

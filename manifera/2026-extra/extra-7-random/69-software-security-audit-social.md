@@ -12,6 +12,6 @@
 
 A report that holds up when someone else checks your work — that's the actual bar. 🎯
 
-👉 Read our full deep dive on software security audits: [Link to article]
+👉 Read our full deep dive on software security audits: https://www.manifera.com/blog/software-security-audit
 
 #SecurityAudit #ApplicationSecurity #CyberSecurity #CTO #Manifera

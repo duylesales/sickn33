@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Het resultaat: beveiligingshiaten gedicht, polis afgesloten en de geblokkeerde enterprise-deal werd zes weken later getekend. 🚀
 
-👉 Gebruik de prijscalculator om te zien wat het dichten van uw security-gaten kost: [Link naar artikel]
+👉 Gebruik de prijscalculator om te zien wat het dichten van uw security-gaten kost: https://launchstudio.eu/nl/blog/liability-insurance-and-what-happens-if-your-product-causes-harm
 
 #SaaS #Insurance #LaunchStudio #Manifera #GDPR #StartupGrowth

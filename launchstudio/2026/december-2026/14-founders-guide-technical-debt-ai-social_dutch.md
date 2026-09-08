@@ -18,6 +18,6 @@ Wacht niet op een crisis. Los de schuld tijdig op. 🛡️🚀
 
 🔍 Het typische signaal: `userId` in het ene bestand, `user_id` in het andere. Twee AI-sessies zonder historisch besef — en uw data koppelt stilvallend niet meer.
 
-👉 Lees de complete gids over technische schuld in AI-apps: [Link naar artikel]
+👉 Lees de complete gids over technische schuld in AI-apps: https://launchstudio.eu/nl/blog/founders-guide-technical-debt-ai
 
 #TechnicalDebt #LaunchStudio #Manifera #AINativeFounder #Cursor #SaaS #TechFounders #StartupOpschalen #Lovable

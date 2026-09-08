@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on mobile application platform: [Link to article]
+👉 Read our full deep dive on mobile application platform: https://www.manifera.com/blog/mobile-application-platform
 
 #MobileAppDevelopment #MobileDev #PlatformEngineering #SoftwareArchitecture #TechLeadership #CTO #Manifera

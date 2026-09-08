@@ -16,6 +16,6 @@ Bij **LaunchStudio** is gekalibreerde ratelimitering over auth- en kostengevoeli
 
 Zijn resultaat: per-gebruiker-limieten geïmplementeerd op zowel het verfijningsendpoint als inloggen — geen verrassingsrekeningen meer. 🚀
 
-👉 Bevestig dat jouw app niet misbruikt kan worden bij onbeperkt volume: [Link naar artikel]
+👉 Bevestig dat jouw app niet misbruikt kan worden bij onbeperkt volume: https://launchstudio.eu/nl/blog/rate-limiting-missing-layer-between-api-and-abuse
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #AISecure

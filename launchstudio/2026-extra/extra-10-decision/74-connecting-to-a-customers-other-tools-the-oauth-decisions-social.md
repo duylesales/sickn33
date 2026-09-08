@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: connection health now shown in-product with failure alerts, tokens encrypted, and narrowed scopes that also lifted the stricter verification requirement. 🚀
 
-👉 See what your OAuth connections are quietly holding: [Link to article]
+👉 See what your OAuth connections are quietly holding: https://launchstudio.eu/en/blog/connecting-to-a-customers-other-tools-the-oauth-decisions
 
 #OAuth #SaaS #API #IndieHacker #LaunchStudio #Manifera

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Zijn resultaat: beide metaalbedrijven tekenden binnen vijf weken voor € 480/maand per stuk, en financierden de latere toevoeging van Stripe en openbare registratie volledig uit eigen winst. 🚀
 
-👉 Vergelijk beide paden transparant in onze prijscalculator vóórdat u kiest: [Link naar artikel]
+👉 Vergelijk beide paden transparant in onze prijscalculator vóórdat u kiest: https://launchstudio.eu/nl/blog/first-paying-customer-or-first-100-users-build-budget
 
 #SaaS #StartupGrowth #LaunchStudio #Manifera #ProductionReady #AICoding

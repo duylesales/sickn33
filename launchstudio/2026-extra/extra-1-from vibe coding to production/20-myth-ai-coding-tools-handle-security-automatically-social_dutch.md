@@ -16,6 +16,6 @@ Bij **LaunchStudio** bieden we precies die verificatielaag. Gesteund door Manife
 
 Haar resultaat: ontdekte dat haar app het medicatieschema van elke patiënt teruggaf aan iedereen met alleen hun ID — gedicht vóór lancering. 🚀
 
-👉 Krijg de beveiligingscheck die jouw AI-tool nooit daadwerkelijk deed: [Link naar artikel]
+👉 Krijg de beveiligingscheck die jouw AI-tool nooit daadwerkelijk deed: https://launchstudio.eu/nl/blog/myth-ai-coding-tools-handle-security-automatically
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

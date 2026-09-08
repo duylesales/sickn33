@@ -12,6 +12,6 @@
 
 Stop paying to bring high-intent visitors to a search box that fails them. 🛡️
 
-👉 Read our full deep dive on site search technical debt conversion loss: [Link to article]
+👉 Read our full deep dive on site search technical debt conversion loss: https://www.manifera.com/blog/site-search-technical-debt-conversion-loss
 
 #Ecommerce #CMO #SiteSearch #ConversionOptimization #Manifera

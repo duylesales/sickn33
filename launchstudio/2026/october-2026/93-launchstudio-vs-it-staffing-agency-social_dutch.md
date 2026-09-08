@@ -14,6 +14,6 @@ Bij **LaunchStudio** leveren wij vast afgebakende verhardingstrajecten al sinds 
 
 Karim beëindigde het open-eindige uitzendtraject en stapte over op een vast Launch & Grow-pakket: zijn app lanceerde op een bevestigde datum tegen een vaste eindprijs, nadat het uurtraject al over budget was gegaan zonder een oplossing. (€ 2.600, Launch & Grow Pakket — opgeleverd in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-it-staffing-agency
 
 #LaunchStudio #Manifera #AISaaS #ITUitzendbureau #TechOprichters

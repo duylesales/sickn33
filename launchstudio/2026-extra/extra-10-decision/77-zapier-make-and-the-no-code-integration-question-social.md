@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: 10 of 11 integration requests satisfied by the finished listing, with the eleventh handled directly by that customer's own developer using the same webhooks. 🚀
 
-👉 Find out what your Zapier request is really asking for: [Link to article]
+👉 Find out what your Zapier request is really asking for: https://launchstudio.eu/en/blog/zapier-make-and-the-no-code-integration-question
 
 #Zapier #API #SaaS #NoCode #LaunchStudio #Manifera

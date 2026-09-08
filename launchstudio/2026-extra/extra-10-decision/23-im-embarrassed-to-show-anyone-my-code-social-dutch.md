@@ -17,6 +17,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, oordelen onze senior engineers 
 
 💡 Zo hielp een audit interieurmarktplaats-oprichter Petra Lindqvist na 4 maanden twijfel binnen 8 werkdagen veilig live te gaan naar 40 designers.
 
-👉 Ontdek waarom u zich nooit hoeft te schamen voor werkende AI-code: [Link naar artikel]
+👉 Ontdek waarom u zich nooit hoeft te schamen voor werkende AI-code: https://launchstudio.eu/nl/blog/im-embarrassed-to-show-anyone-my-code
 
 #VibeCoding #IndieHacker #CodeReview #AIPrototypes #LaunchStudio #Manifera

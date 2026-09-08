@@ -12,6 +12,6 @@
 
 The variable that predicts success has never been the country. It's the structure. 🛡️
 
-👉 Read our full deep dive on software outsourcing vietnam execution: [Link to article]
+👉 Read our full deep dive on software outsourcing vietnam execution: https://www.manifera.com/blog/software-outsourcing-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #SoftwareOutsourcing #Amsterdam #Manifera

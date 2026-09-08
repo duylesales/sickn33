@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 Her result: all nine issues fixed inside the window in under three hours, closing a bug that risked wrong-day arrivals all season. 🚀
 
-👉 Send us the things filed under "not worth mentioning" — we'll flag the twenty-minute fixes: [Link to article]
+👉 Send us the things filed under "not worth mentioning" — we'll flag the twenty-minute fixes: https://launchstudio.eu/en/blog/using-your-post-launch-support-window-before-it-expires
 
 #AINativeFounder #LaunchDay #LaunchStudio #Manifera #FounderLife #NoCode

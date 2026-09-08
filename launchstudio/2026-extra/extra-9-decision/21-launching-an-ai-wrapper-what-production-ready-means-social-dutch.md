@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Zijn resultaat: kosten per contractanalyse daalden met circa 70%, en vier verlieslatende accounts werden de meest winstgevende klanten. 🚀
 
-👉 Bereken uw tokenkosten met onze prijscalculator: [Link naar artikel]
+👉 Bereken uw tokenkosten met onze prijscalculator: https://launchstudio.eu/nl/blog/een-ai-wrapper-lanceren-wat-productierijp-betekent-wanneer-uw-kern-de-api-van-een-ander-is
 
 #SaaS #AIWrapper #LaunchStudio #Manifera #ProductionReady #StartupGrowth

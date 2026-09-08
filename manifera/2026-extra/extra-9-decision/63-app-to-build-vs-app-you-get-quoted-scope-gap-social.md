@@ -12,6 +12,6 @@ The gap between the app in your head and the app in your quote isn't a communica
 
 A vendor who welcomes a detailed scoping conversation is telling you they intend to be held to what they build. 🎯
 
-👉 Read our full deep dive on closing the app scope gap before you sign: [Link to article]
+👉 Read our full deep dive on closing the app scope gap before you sign: https://www.manifera.com/blog/app-to-build-vs-app-you-get-quoted-scope-gap
 
 #CEO #ScopeCreep #SoftwareSpecification #VendorSelection #AppDevelopment #TechDueDiligence #Manifera

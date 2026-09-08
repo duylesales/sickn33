@@ -12,6 +12,6 @@
 
 Build it right the first time: €10,000-€20,000 extra upfront vs. €35,000-€55,000 to retrofit — before counting the cost of an actual incident.
 
-👉 Read our full deep dive on enterprise mobile app development Venray: [Link to article]
+👉 Read our full deep dive on enterprise mobile app development Venray: https://www.manifera.com/blog/enterprise-mobile-app-development-venray
 
 #Venray #NoordLimburg #AgriFood #Logistics #EnterpriseMobile #Manifera

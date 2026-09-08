@@ -12,6 +12,6 @@
 
 Hires under this model reach expected depth within six months at a meaningfully higher rate than under generic breadth-focused hiring.
 
-👉 Read our full deep dive on hiring full-stack developers Bergeijk: [Link to article]
+👉 Read our full deep dive on hiring full-stack developers Bergeijk: https://www.manifera.com/blog/hiring-full-stack-developers-bergeijk
 
 #Bergeijk #NoordBrabant #Kempen #CTO #TechHiring #FullStackDevelopers #OffshoreDevelopment #Manifera

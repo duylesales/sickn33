@@ -12,6 +12,6 @@
 
 Name all four functions before you sign. Most vendors can only describe one. 🛡️
 
-👉 Read our full deep dive on full stack development outsourcing amsterdam governance: [Link to article]
+👉 Read our full deep dive on full stack development outsourcing amsterdam governance: https://www.manifera.com/blog/full-stack-development-outsourcing-amsterdam-governance
 
 #Amsterdam #VPEngineering #RiskManagement #FullStackDevelopment #Manifera

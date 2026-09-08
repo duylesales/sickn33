@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen onze engineers in Amsterdam precies deze overgan
 
 Zijn resultaat: LanceerApp logt nu elke inspectieactie en kan binnen enkele minuten herstellen vanaf een geverifieerde back-up. 🚀
 
-👉 Bekijk welk pakket past bij waar uw app vandaag staat: [Link naar artikel]
+👉 Bekijk welk pakket past bij waar uw app vandaag staat: https://launchstudio.eu/nl/blog/build-ai-app-after-paying-customers
 
 #AINativeFounder #LaunchStudio #Manifera #ProductionReady #SupportableSoftware

@@ -14,6 +14,6 @@ Bij **LaunchStudio** zetten wij gevalideerde prijsstrategie al sinds 2014 om in 
 
 De strategie van Elena werd eindelijk uitgevoerd: de gemiddelde omzet per account van MetricForge steeg binnen de eerste factureringscyclus na lancering, toen bureau-klanten overstapten naar de hogere tier die daadwerkelijk bij hun gebruik paste. (€ 2.200 (Launch & Grow Pakket) — 8 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-fractional-cfo-pricing-strategy
 
 #LaunchStudio #Manifera #AISaaS #SaaSPricing #FractionalCFO

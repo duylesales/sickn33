@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 His result: zero open findings, diligence closed in under a week instead of stalling the round. 🚀
 
-👉 See how he turned a threat into a formality: [Link to article]
+👉 See how he turned a threat into a formality: https://launchstudio.eu/en/blog/investor-due-diligence-threat-to-formality-case-study
 
 #Fundraising #DueDiligence #LaunchStudio #Manifera #SaaS #StartupFunding

@@ -14,6 +14,6 @@ Bij **LaunchStudio** migreren wij AI SaaS-platforms al sinds 2014 weg van gedepr
 
 Een oprichter opende haar deprecation-melding met nog 31 dagen te gaan, vond een kostenstijging van 40% en gedegradeerde output — wij losten beide op en leverden 6 dagen vóór de sunset-datum. (€ 3.400, Launch & Grow Pakket — 13 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/model-deprecation-migration-now-vs-later
 
 #LaunchStudio #Manifera #AISaaS #LLMMigration #TechnicalDebt

@@ -15,6 +15,6 @@ At **LaunchStudio**, we check exactly this kind of storage configuration as stan
 
 Her result: authenticated, signed access required for every document, all public URLs replaced, exposure closed platform-wide. 🚀
 
-👉 Send over your prototype's link for a free review: [Link to article]
+👉 Send over your prototype's link for a free review: https://launchstudio.eu/en/blog/security-in-ai-generated-code-is-opt-in-not-automatic
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #AIPrivacy

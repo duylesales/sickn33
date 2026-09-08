@@ -12,6 +12,6 @@ A generalist vendor can build a polished fintech app on a normal timeline. That'
 
 One re-architected platform closed a 4-month-stalled banking partnership in just six weeks. 🚀
 
-👉 Read our full deep dive on fintech software development: [Link to article]
+👉 Read our full deep dive on fintech software development: https://www.manifera.com/blog/fintech-software-development
 
 #Fintech #CEO #FinancialSoftware #Manifera

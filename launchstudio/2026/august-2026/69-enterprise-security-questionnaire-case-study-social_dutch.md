@@ -14,6 +14,6 @@ Bij **LaunchStudio** dichten wij dit type enterprise-gereedheidshiaat al sinds 2
 
 De vragenlijst van Fatima veranderde van een dode deal in een gesloten deal: ze ging van 11/40 naar 37/40 eerlijke "ja"-antwoorden, slaagde voor de technische beoordeling en sloot de enterprise-deal 3 weken later. (€ 5.400 (Enterprise Hardening Pakket) — 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-security-questionnaire-case-study
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #VendorSecurity

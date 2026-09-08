@@ -12,6 +12,6 @@ A security questionnaire just came back with 19 questions your dev vendor can't 
 
 For a one-time need, bolting on a consultant is the pragmatic choice. For an ongoing product with real security requirements, the coordination tax compounds every quarter. 🎯
 
-👉 Read our full deep dive on DevSecOps partner vs. bolted-on security: [Link to article]
+👉 Read our full deep dive on DevSecOps partner vs. bolted-on security: https://www.manifera.com/blog/choosing-a-devsecops-partner-vs-bolting-security-onto-an-existing-vendor
 
 #DevSecOps #ShiftLeft #CTO #AppSec #SecureSDLC #SoftwareSecurity #Manifera

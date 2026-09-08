@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years across EU and Southeast Asia
 
 His result: the French rollout shipped in eighteen business days instead of the three months Joris had quoted, closing the retail group's contract ahead of their internal deadline. 🚀
 
-👉 Book a 15-minute call to talk through your first non-English market: [Link to article]
+👉 Book a 15-minute call to talk through your first non-English market: https://launchstudio.eu/en/blog/going-multi-language-the-decision-point-for-eu-expansion
 
 #SaaS #EUExpansion #Internationalization #ScaleUp #LaunchStudio #Manifera

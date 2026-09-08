@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on cdp misconfiguration bad segments marketing: [Link to article]
+👉 Read our full deep dive on cdp misconfiguration bad segments marketing: https://www.manifera.com/blog/cdp-misconfiguration-bad-segments-marketing
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

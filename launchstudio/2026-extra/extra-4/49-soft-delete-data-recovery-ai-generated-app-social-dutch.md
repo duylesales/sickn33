@@ -14,6 +14,6 @@ Bij **LaunchStudio** beoordelen wij de semantiek van verwijderen aan de hand van
 
 Zijn resultaat: de eerstvolgende onbedoelde verwijdering, weken later, werd door de gebruiker zelf binnen een minuut hersteld — zonder enige technische tussenkomst. 🚀
 
-👉 Niet zeker welke verwijderfuncties in uw app harde verwijderingen zijn die wachten om te gebeuren? Laat uw datamodel beoordelen door ons team: [Link naar artikel]
+👉 Niet zeker welke verwijderfuncties in uw app harde verwijderingen zijn die wachten om te gebeuren? Laat uw datamodel beoordelen door ons team: https://launchstudio.eu/nl/blog/soft-delete-data-recovery-ai-generated-app
 
 #AINativeFounder #LaunchStudio #Manifera #DataRecovery #IndieHacker

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera, beveiligen onze senior engineer
 
 💡 Zo voorkwam marktplaats Craftlink dat paspoorten van vakmensen openbaar vindbaar werden door verificatiedocumenten direct te isoleren.
 
-👉 Lees hoe u uw bestandsuploads productierijp en veilig inricht: [Link naar artikel]
+👉 Lees hoe u uw bestandsuploads productierijp en veilig inricht: https://launchstudio.eu/nl/blog/file-uploads-the-feature-that-looks-simple-and-isnt
 
 #CloudSecurity #S3 #Bestandsuploads #WebSecurity #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelen we precies dit gat — de onzichtbare laag onder
 
 Het resultaat voor Circuo: het ging binnen dezelfde maand live bij beide pilotfabrikanten, en Ilona tekende een derde klant nadat ze diens beveiligingsvragenlijst probleemloos doorstond. 🚀
 
-👉 Een IoT- of SaaS-dashboard gebouwd met een AI-tool? Laat het vooraf checken met een vaste scope: [Link naar artikel]
+👉 Een IoT- of SaaS-dashboard gebouwd met een AI-tool? Laat het vooraf checken met een vaste scope: https://launchstudio.eu/nl/blog/21-all-ai-tools-eindhoven
 
 #AINativeFounder #LaunchStudio #Manifera #RowLevelSecurity #Eindhoven

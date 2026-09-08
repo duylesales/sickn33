@@ -12,6 +12,6 @@ Your supervisor asks you to trace one number in last quarter's SCR back to sourc
 
 If the number can't be traced, it isn't compliant — it's a guess with a dashboard. 🎯
 
-👉 Read our full deep dive on Solvency II audit trail requirements: [Link to article]
+👉 Read our full deep dive on Solvency II audit trail requirements: https://www.manifera.com/blog/insurance-software-vendors-solvency-ii-audit-trail-requirements
 
 #SolvencyII #InsurTech #ComplianceOfficer #RegulatoryReporting #AuditTrail #Manifera

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: the Safari-specific failure was fixed within a day of becoming visible, and bank-connection completion recovered from 66% to 91% the following week — diagnosed in 2 days. 🚀
 
-👉 Find out what your Sentry setup still can't see: [Link to article]
+👉 Find out what your Sentry setup still can't see: https://launchstudio.eu/en/blog/error-tracking-vs-product-analytics-you-need-both
 
 #ErrorTracking #ProductAnalytics #IndieHacker #DebuggingTools #LaunchStudio #Manifera

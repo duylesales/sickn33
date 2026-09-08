@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the fleet telematics driver privacy case study: [Link to article]
+👉 See the fleet telematics driver privacy case study: https://www.manifera.com/blog/fleet-telematics-driver-privacy-case-study
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

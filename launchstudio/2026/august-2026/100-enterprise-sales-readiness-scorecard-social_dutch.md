@@ -14,6 +14,6 @@ Bij **LaunchStudio** dichten wij dit soort enterprise-gereedheidsgaten al sinds 
 
 Jonas' score steeg van 23 naar 84 van de 100, en zijn derde pitch werd binnen drie weken gesloten. (€ 5.400 (Enterprise Hardening Pakket) — 13 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/enterprise-sales-readiness-scorecard
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #SecurityReview

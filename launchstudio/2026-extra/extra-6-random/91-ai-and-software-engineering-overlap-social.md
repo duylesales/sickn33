@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam-based engineers trace exactly this class of c
 
 Her result: double-booked shifts dropped to zero across three retail chains running RoosterKoppel, and Bente added a standing review step for any feature touching shared state. 🚀
 
-👉 Curious whether your AI build has a concurrency gap like this one? See our process: [Link to article]
+👉 Curious whether your AI build has a concurrency gap like this one? See our process: https://launchstudio.eu/en/blog/ai-and-software-engineering-overlap
 
 #AINativeFounder #LaunchStudio #Manifera #ConcurrencyBugs #SoftwareEngineering

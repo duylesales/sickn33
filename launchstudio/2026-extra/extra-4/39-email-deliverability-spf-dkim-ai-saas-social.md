@@ -15,6 +15,6 @@ At **LaunchStudio**, email authentication is a standard pre-launch checklist ite
 
 His result: Sem's confirmation emails now land in the primary inbox at major providers, and support calls asking "did my booking go through" have dropped to nearly zero. 🚀
 
-👉 Never checked your emails against a spam-scoring tool? Talk to an engineer who has: [Link to article]
+👉 Never checked your emails against a spam-scoring tool? Talk to an engineer who has: https://launchstudio.eu/en/blog/email-deliverability-spf-dkim-ai-saas
 
 #AINativeFounder #LaunchStudio #Manifera #EmailDeliverability #SPFDKIM

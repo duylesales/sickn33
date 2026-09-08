@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a fitness engagement data: [Link to article]
+👉 Read the founder's guide to building a fitness engagement data: https://www.manifera.com/blog/fitness-app-engagement-data-founder-guide
 
 #CustomSoftware #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

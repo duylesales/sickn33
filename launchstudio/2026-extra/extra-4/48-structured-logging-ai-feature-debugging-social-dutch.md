@@ -14,6 +14,6 @@ Bij **LaunchStudio** is gestructureerde observability een standaardonderdeel bij
 
 Haar resultaat: de volgende reeks klachten over slechte uitvoer was volledig reproduceerbaar — ze vond het patroon en repareerde het promptsjabloon binnen een dag in plaats van te gokken. 🚀
 
-👉 Een AI-functie gelanceerd zonder logboekregistratie erachter? Vraag een offerte aan vóór de volgende klacht binnenkomt: [Link naar artikel]
+👉 Een AI-functie gelanceerd zonder logboekregistratie erachter? Vraag een offerte aan vóór de volgende klacht binnenkomt: https://launchstudio.eu/nl/blog/structured-logging-ai-feature-debugging
 
 #AINativeFounder #LaunchStudio #Manifera #AIObservability #IndieHacker

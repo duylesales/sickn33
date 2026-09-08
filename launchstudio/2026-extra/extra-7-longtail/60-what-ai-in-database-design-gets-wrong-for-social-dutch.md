@@ -15,6 +15,6 @@ Bij **LaunchStudio** is huurdersisolatie op databaseniveau een van de meest voor
 
 Sofie's resultaat: tenant-ID-handhaving en row-level security geïmplementeerd over elke tabel — voltooid in 9 werkdagen. 🚀
 
-👉 Draait uw multi-tenant app tot nu toe prima? Voer de test met één tabel uit voordat uw volgende functie wordt uitgerold: [Link naar artikel]
+👉 Draait uw multi-tenant app tot nu toe prima? Voer de test met één tabel uit voordat uw volgende functie wordt uitgerold: https://launchstudio.eu/nl/blog/what-ai-in-database-design-gets-wrong-for
 
 #AINativeFounder #LaunchStudio #Manifera #AIinDatabase #MultiTenant

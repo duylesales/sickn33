@@ -15,6 +15,6 @@ At **LaunchStudio**, we run this exact security audit before any Bolt, Lovable, 
 
 Result: zero data-isolation incidents during the TT weekend trial, and RaceGrid signed a third team for the following season. 🚀
 
-👉 Building on Bolt or Lovable and not sure what's hiding under the hood? Get a fixed-scope security audit: [Link to article]
+👉 Building on Bolt or Lovable and not sure what's hiding under the hood? Get a fixed-scope security audit: https://launchstudio.eu/en/blog/ai-security-vulnerabilities-assen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityVulnerabilities #Assen

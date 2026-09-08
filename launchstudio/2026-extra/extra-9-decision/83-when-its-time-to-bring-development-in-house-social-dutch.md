@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's team van 120+ engineers, zijn 
 
 Zijn resultaat: Bram stelde werving acht maanden uit tot de agenda structureel vol was, en halveerde de inwerktijd door zijn vaste partner de interviews en onboarding te laten leiden. 🚀
 
-👉 Beschrijf uw huidige software-werklast en ontvang binnen één werkdag een eerlijk advies: [Link naar artikel]
+👉 Beschrijf uw huidige software-werklast en ontvang binnen één werkdag een eerlijk advies: https://launchstudio.eu/nl/blog/when-its-time-to-bring-development-in-house
 
 #SaaS #ScaleUp #SoftwareOntwikkeling #Ondernemerschap #LaunchStudio #Manifera

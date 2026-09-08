@@ -16,6 +16,6 @@ Bij **LaunchStudio** kost observability-opzet meestal minder dan een uur — de 
 
 Haar resultaat: 4 minuten tot waarschuwing, probleem opgelost voordat één studio-eigenaar iets merkte. 🚀
 
-👉 Kom je volgende productieprobleem te weten vóór je klanten dat doen: [Link naar artikel]
+👉 Kom je volgende productieprobleem te weten vóór je klanten dat doen: https://launchstudio.eu/nl/blog/observability-production-step-vibe-coders-forget
 
 #Observability #IndieHacker #LaunchStudio #Manifera #DevOps #VibeCoding

@@ -12,6 +12,6 @@ Anyone can present a polished portfolio and speak confidently about "agile" and 
 
 Technical due diligence is harder to fix after signing than before. 🔧
 
-👉 Read our full deep dive on the technical due diligence checklist before approval: [Link to article]
+👉 Read our full deep dive on the technical due diligence checklist before approval: https://www.manifera.com/blog/technical-due-diligence-software-vendor-checklist
 
 #Founder #TechDueDiligence #SoftwareVendorEvaluation #VendorSelection #CustomSoftwareDevelopment #Manifera

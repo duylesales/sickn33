@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years supporting EU software compa
 
 His result: OSS registration completed, Stripe Tax reconfigured for automatic reverse charge, and a template his accountant could finally stand behind. 🚀
 
-👉 Talk to an engineer who can review your billing setup against VAT rules: [Link to article]
+👉 Talk to an engineer who can review your billing setup against VAT rules: https://launchstudio.eu/en/blog/vat-invoicing-and-getting-paid-legally-across-the-eu
 
 #SaaS #VATCompliance #LaunchStudio #Manifera #EUStartups #ScaleUp

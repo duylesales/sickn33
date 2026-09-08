@@ -12,6 +12,6 @@
 
 The variable that protects you isn't where the engineers sit — it's who owns the architecture end-to-end. 🛡️
 
-👉 Read our full deep dive on full stack development outsourcing in house or offshore: [Link to article]
+👉 Read our full deep dive on full stack development outsourcing in house or offshore: https://www.manifera.com/blog/full-stack-development-outsourcing-in-house-or-offshore
 
 #FullStackDevelopment #Amsterdam #Vietnam #CTO #EngineeringStrategy #Manifera

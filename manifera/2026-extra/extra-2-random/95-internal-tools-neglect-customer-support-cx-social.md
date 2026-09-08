@@ -12,6 +12,6 @@
 
 Fix the tool. The customer experience follows. 🛡️
 
-👉 Read our full deep dive on internal tools neglect customer support cx: [Link to article]
+👉 Read our full deep dive on internal tools neglect customer support cx: https://www.manifera.com/blog/internal-tools-neglect-customer-support-cx
 
 #VPEngineering #InternalTools #CustomerExperience #SupportOps #Manifera

@@ -12,6 +12,6 @@
 
 The right model isn't the cheapest rate — it's the one structured to capture the advantage it claims. 🎯
 
-👉 Read our full framework on nearshore vs. offshore vs. onshore development: [Link to article]
+👉 Read our full framework on nearshore vs. offshore vs. onshore development: https://www.manifera.com/blog/nearshore-vs-offshore-vs-onshore-the-real-decision-framework
 
 #CFO #OffshoreDevelopment #Nearshore #SoftwareOutsourcing #TotalCostOfOwnership #TechStrategy #Manifera

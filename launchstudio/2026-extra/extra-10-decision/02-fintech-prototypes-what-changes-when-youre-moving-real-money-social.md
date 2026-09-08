@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Vakwerk relaunched on a payment partner that handled safeguarding and reporting, freeing Bram to focus on marketplace growth instead of an accidental compliance burden. 🚀
 
-👉 Find out if your product is quietly becoming a payment institution: [Link to article]
+👉 Find out if your product is quietly becoming a payment institution: https://launchstudio.eu/en/blog/fintech-prototypes-what-changes-when-youre-moving-real-money
 
 #FinTech #PSD2 #StartupFounders #Marketplace #LaunchStudio #Manifera

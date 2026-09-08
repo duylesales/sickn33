@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by 11+ years of enterprise engineering through Manif
 
 Pim's €2,000 ad test produced 64 paying customers, €3,136 MRR, and a €31.25 CAC with a sub-21-day payback — closing a €250,000 seed round in 3 weeks, built in 10 business days for €2,200. 🚀
 
-👉 Launch your revenue-ready MVP in weeks, not months: [Link to article]
+👉 Launch your revenue-ready MVP in weeks, not months: https://launchstudio.eu/en/blog/growth-marketer-validates-unit-economics-two-weeks-case-study
 
 #LaunchStudio #Manifera #SaaSMetrics #SeedFunding #UnitEconomics #StripeBilling #GrowthMarketing

@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, e
 
 Her result: Coachdesk shipped production-ready in 3 weeks with zero equity given away — and one real quote made the "free" offer look like the most expensive option on the table. 🚀
 
-👉 See what a part-time CTO's equity would actually cost you: [Link to article]
+👉 See what a part-time CTO's equity would actually cost you: https://launchstudio.eu/en/blog/launchstudio-vs-part-time-cto-paid-in-equity
 
 #LaunchStudio #Manifera #StartupEquity #FractionalCTO #FixedPrice #VibeCoding #FounderTips

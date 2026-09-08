@@ -12,6 +12,6 @@ Is it actually cheaper to build a cloud team in-house — or does that math only
 
 A Swedish agri-tech company was eight months into a hiring plan when Manifera's pod started migrating in three weeks — and doubled peak load capacity before the original hires would've even started. 🌾
 
-👉 Read our full deep dive on development in the cloud for Duiven businesses: [Link to article]
+👉 Read our full deep dive on development in the cloud for Duiven businesses: https://www.manifera.com/blog/development-in-the-cloud-duiven
 
 #Duiven #Gelderland #CloudDevelopment #CTO #DevOps #A12Corridor #Manifera

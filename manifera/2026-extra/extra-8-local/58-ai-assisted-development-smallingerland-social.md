@@ -12,6 +12,6 @@ Four months of AI-assisted development on the team, zero shared rules for how to
 
 Speed and discipline aren't a trade-off if you sequence the rollout right. 🛠️
 
-👉 Read our full deep dive on AI-assisted development for Smallingerland businesses: [Link to article]
+👉 Read our full deep dive on AI-assisted development for Smallingerland businesses: https://www.manifera.com/blog/ai-assisted-development-smallingerland
 
 #Smallingerland #Drachten #Friesland #AIAssistedDevelopment #EngineeringLeadership #Manifera

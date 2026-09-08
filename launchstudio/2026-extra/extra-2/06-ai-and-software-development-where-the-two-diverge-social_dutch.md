@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze datagevoeligheidsreview onderdeel van ons productie
 
 Haar resultaat: veld-niveau-versleuteling specifiek toegepast op medische geschiedenis en eigenaarcontactdata — planninglogica en interface onveranderd. 🚀
 
-👉 Boek een gratis intro-gesprek van 15 minuten: [Link naar artikel]
+👉 Boek een gratis intro-gesprek van 15 minuten: https://launchstudio.eu/nl/blog/ai-and-software-development-where-the-two-diverge
 
 #IndieHacker #LaunchStudio #Manifera #AIPrivacy #GDPR

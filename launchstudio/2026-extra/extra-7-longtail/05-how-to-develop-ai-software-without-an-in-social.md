@@ -15,6 +15,6 @@ At **LaunchStudio**, agencies get Manifera's engineering capacity behind their o
 
 Elise's result: her agency hit the deadline, and the client never knew a second team was involved. 🚀
 
-👉 Client showed up with an AI prototype and a deadline your team can't cover alone: [Link to article]
+👉 Client showed up with an AI prototype and a deadline your team can't cover alone: https://launchstudio.eu/en/blog/how-to-develop-ai-software-without-an-in
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AgencyLife

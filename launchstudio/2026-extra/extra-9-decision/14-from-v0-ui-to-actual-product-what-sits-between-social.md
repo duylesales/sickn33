@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Studiobalans went live with a real data model for cross-studio freelancers, database-enforced permissions, and Mollie subscriptions — interface unchanged. 🚀
 
-👉 Get a real number from the price calculator in ninety seconds: [Link to article]
+👉 Get a real number from the price calculator in ninety seconds: https://launchstudio.eu/en/blog/from-v0-ui-to-actual-product-what-sits-between
 
 #AICoding #NoCode #LaunchStudio #Manifera #ProductionReady #FounderLife

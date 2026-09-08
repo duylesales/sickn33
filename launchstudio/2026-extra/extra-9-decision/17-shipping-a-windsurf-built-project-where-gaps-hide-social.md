@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: duplicate query paths collapsed into one accessor, six days, and Nadia closed a larger client's contract weeks after sending the findings. 🚀
 
-👉 Tell us what you've built — get the number and timeline the same week: [Link to article]
+👉 Tell us what you've built — get the number and timeline the same week: https://launchstudio.eu/en/blog/shipping-a-windsurf-built-project-where-gaps-hide
 
 #IndieHacker #AICoding #LaunchStudio #Manifera #ProductionReady #SaaS

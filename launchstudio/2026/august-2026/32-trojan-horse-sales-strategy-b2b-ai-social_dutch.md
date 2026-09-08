@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type micro-tool architectuur en client-
 
 Maya's platform werd goedgekeurd: Door client-side verwerking met WebGPU slaagden alle enterprise security-audits, wat resulteerde in pilotcontracten van €60.000. (€3.200 (Client-side Inference Pakket) — productieklaar en binnen 7 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/trojan-horse-sales-strategy-b2b-ai
 
 #LaunchStudio #Manifera #AISaaS #TrojanHorse #EnterpriseSales #B2BSales #WebGPU #ShadowIT #TechFounders #StartupOpschalen

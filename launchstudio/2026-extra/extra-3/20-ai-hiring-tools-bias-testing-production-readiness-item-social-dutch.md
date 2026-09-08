@@ -15,6 +15,6 @@ Bij **LaunchStudio** beschouwen wij bias-testen als een standaardoverweging voor
 
 Het resultaat voor Koen: de bepalende factor achter het patroon geïdentificeerd en aangepast, opnieuw geverifieerd met dezelfde test — concreet, getest bewijs van eerlijkheid voor de zakelijke klant. 🚀
 
-👉 Laat uw wervingstool testen op het patroon dat uw eigen gebruik ervan nooit zou blootleggen: [Link naar artikel]
+👉 Laat uw wervingstool testen op het patroon dat uw eigen gebruik ervan nooit zou blootleggen: https://launchstudio.eu/nl/blog/ai-hiring-tools-bias-testing-production-readiness-item
 
 #AINativeFounder #LaunchStudio #Manifera #ResponsibleAI #HRTech

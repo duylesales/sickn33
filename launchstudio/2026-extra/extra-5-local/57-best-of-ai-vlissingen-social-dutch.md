@@ -15,6 +15,6 @@ Bij **LaunchStudio** pakken we precies aan waar de "best of AI"-ranglijsten stop
 
 Zijn resultaat: PortWatch bedient nu meerdere scheepvaartagenten met correct geïsoleerde gegevens en stabiele prestaties onder echte havenplanningsbelasting. 🚀
 
-👉 Al een AI-tool gekozen? Laten we nu checken wat er daadwerkelijk is opgeleverd: [Link naar artikel]
+👉 Al een AI-tool gekozen? Laten we nu checken wat er daadwerkelijk is opgeleverd: https://launchstudio.eu/nl/blog/best-of-ai-vlissingen
 
 #AINativeFounder #LaunchStudio #Manifera #BestOfAI #Vlissingen

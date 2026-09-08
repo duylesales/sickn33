@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on offshore software solutions lelystad: [Link to article]
+👉 Read our full deep dive on offshore software solutions lelystad: https://www.manifera.com/blog/offshore-software-solutions-lelystad
 
 #Lelystad #Flevoland #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

@@ -12,6 +12,6 @@
 
 Compliance isn't a bullet point on a slide — it only exists once the agreement is signed and the controls are operating. 🎯
 
-👉 Read our full guide to healthtech vendor compliance under HIPAA and GDPR: [Link to article]
+👉 Read our full guide to healthtech vendor compliance under HIPAA and GDPR: https://www.manifera.com/blog/healthtech-vendor-compliance-hipaa-and-gdpr-health-data-requirements
 
 #Healthtech #HIPAA #GDPR #ComplianceOfficer #HealthData #Manifera

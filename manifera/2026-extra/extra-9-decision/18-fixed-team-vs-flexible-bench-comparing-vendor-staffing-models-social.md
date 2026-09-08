@@ -12,6 +12,6 @@ Two finalist proposals, nearly tied on cost and seniority. The real difference: 
 
 Ask any vendor their real rotation rate — not their staffing model's label. The operational answer tells you more. 🔍
 
-👉 Read our full deep dive on fixed team vs. flexible bench staffing models: [Link to article]
+👉 Read our full deep dive on fixed team vs. flexible bench staffing models: https://www.manifera.com/blog/fixed-team-vs-flexible-bench-comparing-vendor-staffing-models
 
 #CTO #StaffingModel #DedicatedTeam #VendorSelection #SoftwareDelivery #TechLeadership #Manifera

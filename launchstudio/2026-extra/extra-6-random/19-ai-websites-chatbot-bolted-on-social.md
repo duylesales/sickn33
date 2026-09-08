@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers have shipped 160+ projects for enterprise cli
 
 His result: MenuKaart's chatbot now answers from the real, current menu, and Niels can update dishes without worrying that the "AI" part of his site is quietly lying to customers. 🚀
 
-👉 Ever tested whether your "AI website" chatbot actually knows what changed in your business yesterday: [Link to article]
+👉 Ever tested whether your "AI website" chatbot actually knows what changed in your business yesterday: https://launchstudio.eu/en/blog/ai-websites-chatbot-bolted-on
 
 #AINativeFounder #LaunchStudio #Manifera #AIWebsites #ProductionReady

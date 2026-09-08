@@ -15,6 +15,6 @@ Bij **LaunchStudio** verifiëren wij specifiek de volledigheid van lokalisatie v
 
 Haar resultaat: iDEAL-ondersteuning geïmplementeerd via Mollie naast de bestaande opties van KlusPlanner — de daadwerkelijke betalingswrijving weg, niet alleen de taal eromheen. 🚀
 
-👉 Bouwt u voor Nederlandse klanten? Laat uw product controleren op wat zij daadwerkelijk verwachten, niet alleen op vertaalde tekst: [Link naar artikel]
+👉 Bouwt u voor Nederlandse klanten? Laat uw product controleren op wat zij daadwerkelijk verwachten, niet alleen op vertaalde tekst: https://launchstudio.eu/nl/blog/ai-product-localization-dutch-market-more-than-translation
 
 #AINativeFounder #LaunchStudio #Manifera #DutchMarket #iDEAL

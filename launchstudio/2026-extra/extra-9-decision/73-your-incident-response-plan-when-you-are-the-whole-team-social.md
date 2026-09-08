@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: a leaked-key incident cost €340; with a runbook, a second incident resolved in under twenty minutes. 🚀
 
-👉 Talk to an engineer who reads AI-generated code: [Link to article]
+👉 Talk to an engineer who reads AI-generated code: https://launchstudio.eu/en/blog/your-incident-response-plan-when-you-are-the-whole-team
 
 #IndieHacker #SaaS #LaunchStudio #Manifera #AICoding #ProductionReady

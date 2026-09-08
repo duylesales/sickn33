@@ -14,6 +14,6 @@ Bij **LaunchStudio** voeren wij precies deze scorekaart vóór lancering uit al 
 
 Simone lanceerde één week later dan gepland met elke categorie scorend Groen, en ervoer nul beveiligingsincidenten, nul betalingsstoringen, en volledige zichtbaarheid op de twee kleine bugs die Sentry opving in haar eerste week live. (€ 1.900, Launch Ready Pakket — volledig scorekaartherstel voltooid in 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/pre-launch-security-deployment-scorecard
 
 #LaunchStudio #Manifera #AISaaS #Lanceringschecklist #StartupBeveiliging

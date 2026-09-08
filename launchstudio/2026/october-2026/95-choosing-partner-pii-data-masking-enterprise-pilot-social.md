@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building PII masking pipelines for enterprise pi
 
 Fatima's pilot proceeded on the original timeline, with her dashboard's expense-pattern analytics functioning identically on masked data, and the methodology now reused for every subsequent enterprise prospect. (€4,200, Enterprise Hardening Package — masking pipeline built and documented in 6 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-pii-data-masking-enterprise-pilot
 
 #LaunchStudio #Manifera #AISaaS #DataPrivacy #EnterpriseSales

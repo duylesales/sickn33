@@ -12,6 +12,6 @@
 
 Compress diligence from weeks back to days. 🛡️
 
-👉 Read our full deep dive on fundraising technical diligence prep gap: [Link to article]
+👉 Read our full deep dive on fundraising technical diligence prep gap: https://www.manifera.com/blog/fundraising-technical-diligence-prep-gap
 
 #CEO #Fundraising #TechnicalDueDiligence #StartupGrowth #Manifera

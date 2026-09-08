@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in productie
 
 Haar resultaat: de gemiddelde responstijd daalde van uren naar minder dan tien minuten, en twee zakelijke partners vroegen haar richtlijnen op vóórdat zij hun personeel doorverwezen. 🚀
 
-👉 Plan 15 minuten in om de moderatielacunes van uw community door te lichten: [Link naar artikel]
+👉 Plan 15 minuten in om de moderatielacunes van uw community door te lichten: https://launchstudio.eu/nl/blog/community-en-ledensiteproducten-de-vertrouwensfuncties-die-u-niet-mag-overslaan
 
 #Community #AIFounder #LaunchStudio #Manifera #NoCode #TrustAndSafety

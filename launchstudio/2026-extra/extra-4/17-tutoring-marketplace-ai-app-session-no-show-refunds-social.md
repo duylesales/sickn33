@@ -15,6 +15,6 @@ At **LaunchStudio**, we build this as an explicit rules layer on top of your exi
 
 Sanne's result: tutor no-shows now trigger an automatic refund path instead of silently completing as a paid session, closing the exact gap that had gone untested. 🚀
 
-👉 Running a two-sided booking marketplace? Describe your project and we'll respond within one business day: [Link to article]
+👉 Running a two-sided booking marketplace? Describe your project and we'll respond within one business day: https://launchstudio.eu/en/blog/tutoring-marketplace-ai-app-session-no-show-refunds
 
 #AINativeFounder #LaunchStudio #Manifera #EdTech #Marketplace

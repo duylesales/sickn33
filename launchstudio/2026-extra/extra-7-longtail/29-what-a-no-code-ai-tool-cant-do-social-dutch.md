@@ -15,6 +15,6 @@ Bij **LaunchStudio** testen we door AI gebouwde no-code apps op precies deze ran
 
 Hannelore's resultaat: degelijke slot-locking en een wachtlijst-terugval live vóór haar volgende promotiecampagne, terwijl de interface van de boekingskalender onaangetast bleef. 🚀
 
-👉 Plant u een lanceringsmail of persbericht voor uw no-code AI-app? Test hier eerst op: [Link naar artikel]
+👉 Plant u een lanceringsmail of persbericht voor uw no-code AI-app? Test hier eerst op: https://launchstudio.eu/nl/blog/what-a-no-code-ai-tool-cant-do
 
 #AINativeFounder #LaunchStudio #Manifera #NoCodeAI #ConcurrencyBugs

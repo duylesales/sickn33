@@ -12,6 +12,6 @@
 
 A supply problem needs a bigger supply — not a bigger local budget. 🌊
 
-👉 Read our full deep dive on team augmentation services for Borsele's energy sector: [Link to article]
+👉 Read our full deep dive on team augmentation services for Borsele's energy sector: https://www.manifera.com/blog/team-augmentation-services-borsele
 
 #Borsele #Zeeland #EnergyTech #OffshoreWind #CTO #TeamAugmentation #Manifera

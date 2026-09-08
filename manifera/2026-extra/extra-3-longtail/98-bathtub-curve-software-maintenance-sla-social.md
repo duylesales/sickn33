@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on bathtub curve software maintenance sla: [Link to article]
+👉 Read our full guide on bathtub curve software maintenance sla: https://www.manifera.com/blog/bathtub-curve-software-maintenance-sla
 
 #SoftwareCosts #AppDevelopment #TechBudget #CustomSoftware #CTO #Manifera

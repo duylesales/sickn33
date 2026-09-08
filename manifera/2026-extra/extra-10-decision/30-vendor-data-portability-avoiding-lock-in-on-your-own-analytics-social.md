@@ -12,6 +12,6 @@ Try exporting the actual business logic behind "active customer" out of your BI 
 
 The goal isn't zero lock-in everywhere — it's knowing which parts of your stack are portable by design. 🎯
 
-👉 Read our full deep dive on avoiding vendor lock-in on your analytics: [Link to article]
+👉 Read our full deep dive on avoiding vendor lock-in on your analytics: https://www.manifera.com/blog/vendor-data-portability-avoiding-lock-in-on-your-own-analytics
 
 #DataPortability #VendorLockIn #CTO #DataWarehouse #Analytics #DataStrategy #Manifera

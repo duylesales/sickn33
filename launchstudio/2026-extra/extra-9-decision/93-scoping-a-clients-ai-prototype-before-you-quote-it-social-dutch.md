@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in het omzet
 
 Haar resultaat: Sanne offerreerde €4.200 in plaats van €1.800, legde het kritieke datalek helder uit en de klant ging direct en zonder onderhandeling akkoord. 🚀
 
-👉 Stuur ons het prototype vóórdat u uw klant offrereert: [Link naar artikel]
+👉 Stuur ons het prototype vóórdat u uw klant offrereert: https://launchstudio.eu/nl/blog/het-ai-prototype-van-een-klant-scopen-voordat-u-offerte-uitbrengt
 
 #BureauLeven #WhiteLabel #AICoding #KlantOffertes #LaunchStudio #Manifera

@@ -17,6 +17,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar software-ervaring, bo
 
 Zijn resultaat: 2 maanden eerder live, voor een fractie van het begrote budget! 🚀
 
-👉 Lees hoe u plant wanneer kerntechnologie maandelijks verandert: [Link naar artikel]
+👉 Lees hoe u plant wanneer kerntechnologie maandelijks verandert: https://launchstudio.eu/nl/blog/product-roadmap-core-technology-changes-monthly
 
 #ProductRoadmap #LaunchStudio #Manifera #AINativeFounder #SaaS #TechStrategy #Lovable #Cursor #TechFounders #StartupOpschalen

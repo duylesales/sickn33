@@ -12,6 +12,6 @@
 
 Eleven weeks for a bug that should take nine days is not a technology problem. It's a support-structure problem. 🛠️
 
-👉 Read our full deep dive on app development support Leusden: [Link to article]
+👉 Read our full deep dive on app development support Leusden: https://www.manifera.com/blog/app-development-support-leusden
 
 #Leusden #Utrecht #CTO #AppSupport #SoftwareMaintenance #Manifera

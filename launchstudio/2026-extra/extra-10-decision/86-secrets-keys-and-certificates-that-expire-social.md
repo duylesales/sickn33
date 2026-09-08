@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: every credential rotated, a full inventory built, expiry monitoring added, uploads reworked off the embedded key, and secret scanning enabled — delivered in 2 business days. 🚀
 
-👉 Find out what's hiding in your repository history: [Link to article]
+👉 Find out what's hiding in your repository history: https://launchstudio.eu/en/blog/secrets-keys-and-certificates-that-expire
 
 #SaaS #IndieHacker #DevOps #CyberSecurity #LaunchStudio #Manifera

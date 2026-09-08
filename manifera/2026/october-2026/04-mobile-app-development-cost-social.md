@@ -12,6 +12,6 @@ At **Manifera**, we eliminate financial risk through **Autonomous Pods** via our
 ✅ Protecting your profit margins throughout the app's 5-year lifecycle 📈
 
 Stop getting exploited by hourly billing. Start controlling your TCO! 🚀
-👉 The CFO's financial guide to mobile app valuation: [Link to article]
+👉 The CFO's financial guide to mobile app valuation: https://www.manifera.com/blog/mobile-app-development-cost
 
 #CFO #MobileAppCost #EnterpriseFinance #SoftwareEngineering #TechLeadership #OpEx #VietnamTech #AmsterdamBusiness #Manifera

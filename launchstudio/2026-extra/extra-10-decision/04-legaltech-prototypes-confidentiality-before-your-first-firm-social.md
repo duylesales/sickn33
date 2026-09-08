@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: Clausio passed its first full firm security review on resubmission, then reused the same documentation package to pass its next two firm reviews without extra engineering work. 🚀
 
-👉 See what a law firm's security review will actually ask you: [Link to article]
+👉 See what a law firm's security review will actually ask you: https://launchstudio.eu/en/blog/legaltech-prototypes-confidentiality-before-your-first-firm
 
 #LegalTech #DataSecurity #StartupFounders #GDPR #LaunchStudio #Manifera

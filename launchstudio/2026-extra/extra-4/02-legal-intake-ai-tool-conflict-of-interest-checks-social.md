@@ -15,6 +15,6 @@ At **LaunchStudio**, this is exactly the kind of matching and risk logic our tea
 
 Her result: Charlotte relaunched the pilot with the conflict check live, and both firms now cite it as the reason they trust the tool enough to expand beyond the pilot. 🚀
 
-👉 Building intake software for a regulated industry? See what a compliance review actually costs: [Link to article]
+👉 Building intake software for a regulated industry? See what a compliance review actually costs: https://launchstudio.eu/en/blog/legal-intake-ai-tool-conflict-of-interest-checks
 
 #AINativeFounder #LaunchStudio #Manifera #LegalTech #ComplianceByDesign

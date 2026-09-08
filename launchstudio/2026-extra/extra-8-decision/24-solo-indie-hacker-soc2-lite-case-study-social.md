@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: passed his freight brokerage's security review with two days to spare — trial started on schedule. 🚀
 
-👉 Send us your buyer's questionnaire: [Link to article]
+👉 Send us your buyer's questionnaire: https://launchstudio.eu/en/blog/solo-indie-hacker-soc2-lite-case-study
 
 #IndieHacker #SOC2 #LaunchStudio #Manifera #SoloFounder #SaaS

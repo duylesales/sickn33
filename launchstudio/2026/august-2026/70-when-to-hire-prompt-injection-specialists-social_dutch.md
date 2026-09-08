@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Ingrid's applicatie behaalde productie-gereedheid: LexBrief AI doorstond een vervolgtest met dezelfde techniek van ingebedde instructies, en Ingrid breidde uit van bèta naar algemene beschikbaarheid met een gedocumenteerde, geteste verdediging op zijn plaats. (€3.100 (Relaunch & Scale Pakket) — 10 werkdagen.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/when-to-hire-prompt-injection-specialists
 
 #LaunchStudio #Manifera #AISaaS #PromptInjection #AISecurity

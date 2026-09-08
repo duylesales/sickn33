@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the lms gdpr case study: [Link to article]
+👉 See the lms gdpr case study: https://www.manifera.com/blog/lms-migration-gdpr-case-study
 
 #EdTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

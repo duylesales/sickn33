@@ -19,6 +19,6 @@ Bij **LaunchStudio** heeft elk van deze 15 punten een helder, openbaar antwoord:
 
 Stel de juiste vragen vóórdat u tekent. 🛡️🚀
 
-👉 Bekijk de complete 15-punten checklist: [Link naar artikel]
+👉 Bekijk de complete 15-punten checklist: https://launchstudio.eu/nl/blog/evaluate-ai-development-partner-checklist
 
 #AINativeFounder #LaunchStudio #Manifera #DueDiligence #SaaS #StartupTips #TechFounders #StartupOpschalen

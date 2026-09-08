@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on development cloud zwolle: [Link to article]
+👉 Read our full deep dive on development cloud zwolle: https://www.manifera.com/blog/development-in-cloud-zwolle
 
 #Zwolle #Overijssel #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #OffshoreDevelopment #Manifera

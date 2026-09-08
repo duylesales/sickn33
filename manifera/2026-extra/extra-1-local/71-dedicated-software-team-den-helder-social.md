@@ -12,6 +12,6 @@
 
 Dedicated should mean reliable — not just assigned. 🛡️
 
-👉 Read our full deep dive on dedicated software team den helder: [Link to article]
+👉 Read our full deep dive on dedicated software team den helder: https://www.manifera.com/blog/dedicated-software-team-den-helder
 
 #DenHelder #NoordHolland #MaritimeTech #CTO #DedicatedTeam #Reliability #Manifera

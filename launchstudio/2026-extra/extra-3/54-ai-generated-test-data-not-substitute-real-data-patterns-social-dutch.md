@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichters hun testdatastrategie op de juiste ma
 
 Haar resultaat: de onderliggende weergavefout opgelost, en echte, geanonimiseerde gebruikspatronen rechtstreeks opgenomen in de doorlopende testsuite van DierenAfspraak. 🚀
 
-👉 Benieuwd welk patroon uw synthetische testdata stilletjes mist? Laat uw teststrategie beoordelen: [Link naar artikel]
+👉 Benieuwd welk patroon uw synthetische testdata stilletjes mist? Laat uw teststrategie beoordelen: https://launchstudio.eu/nl/blog/ai-generated-test-data-not-substitute-real-data-patterns
 
 #AINativeFounder #LaunchStudio #Manifera #QAtesting #DataStrategy

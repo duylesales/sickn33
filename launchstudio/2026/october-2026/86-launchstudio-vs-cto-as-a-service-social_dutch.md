@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij precies dit afgebakende engineeringprobleem al s
 
 Willem lanceerde vier weken later dan gepland, maar met een geverifieerd veilige app, en bespaarde de retainer voor een fase waar hij nog niet is. (€ 2.600 — Launch & Grow Pakket, gehard en gedeployed in 10 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-cto-as-a-service
 
 #LaunchStudio #Manifera #AISaaS #FractionalCTO #TechFounders

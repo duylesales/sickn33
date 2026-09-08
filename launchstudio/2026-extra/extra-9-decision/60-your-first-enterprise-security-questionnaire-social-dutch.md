@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring met zakelijk
 
 Het resultaat: eerlijke antwoorden met een concreet herstelplan leidden tot constructieve vervolgvragen in plaats van een afwijzing, en de deal met zes cijfers werd zes weken later getekend. 🚀
 
-👉 Plan een kennismakingsgesprek van 15 minuten om uw beveiligingsopzet door te lichten vóór uw volgende vragenlijst binnenkomt: [Link naar artikel]
+👉 Plan een kennismakingsgesprek van 15 minuten om uw beveiligingsopzet door te lichten vóór uw volgende vragenlijst binnenkomt: https://launchstudio.eu/nl/blog/your-first-enterprise-security-questionnaire
 
 #SaaS #CyberSecurity #EnterpriseSales #ScaleUp #LaunchStudio #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** werken we met oprichters in en rond Ho Chi Minh-stad om gra
 
 Haar resultaat: BloemVeiling draaide het volgende piekveilingseizoen zonder één enkel incident met gedeelde infrastructuur. 🚀
 
-👉 Wilt u weten wat een migratie van uw gratis laag zou kosten? Bekijk onze prijscalculator: [Link naar artikel]
+👉 Wilt u weten wat een migratie van uw gratis laag zou kosten? Bekijk onze prijscalculator: https://launchstudio.eu/nl/blog/no-code-ai-free-tier-real-costs
 
 #AINativeFounder #LaunchStudio #Manifera #NoCodeAI #Infrastructure

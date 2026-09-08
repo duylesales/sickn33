@@ -14,6 +14,6 @@ Bij **LaunchStudio** dichten wij dit soort hiaten al sinds 2014 via Manifera, va
 
 Sannes product doorstond de beoordeling met twee dagen speling en de deal ging direct door naar contractonderhandeling. (€ 2.600 (Launch & Grow Pakket) — 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/dutch-enterprise-vendor-security-review-case-study
 
 #LaunchStudio #Manifera #AISaaS #DutchTech #EnterpriseSales

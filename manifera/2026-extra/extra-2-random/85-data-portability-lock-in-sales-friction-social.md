@@ -12,6 +12,6 @@
 
 Turn a silent blocker into a closed deal. 🛡️
 
-👉 Read our full deep dive on data portability lock-in sales friction: [Link to article]
+👉 Read our full deep dive on data portability lock-in sales friction: https://www.manifera.com/blog/data-portability-lock-in-sales-friction
 
 #SaaS #CFO #EnterpriseSales #DataPortability #Procurement #Manifera

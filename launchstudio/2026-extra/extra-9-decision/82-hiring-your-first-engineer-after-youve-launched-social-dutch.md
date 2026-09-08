@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's team van 120+ software-enginee
 
 Haar resultaat: de kandidaat met het mooiste cv bleek de slechtste match — de aangenomen engineer leverde binnen vijf weken zelfstandig een volwaardige feature op zonder storingen. 🚀
 
-👉 Bespreek met een engineer hoe wij kunnen aanschuiven bij uw volgende sollicitatieronde: [Link naar artikel]
+👉 Bespreek met een engineer hoe wij kunnen aanschuiven bij uw volgende sollicitatieronde: https://launchstudio.eu/nl/blog/hiring-your-first-engineer-after-youve-launched
 
 #SaaS #Werving #TechTalent #Ondernemerschap #LaunchStudio #Manifera

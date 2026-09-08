@@ -12,6 +12,6 @@
 
 A vendor confident in their process welcomes the scrutiny. One who deflects it just told you how the relationship goes. 🧩
 
-👉 Read our full deep dive on auditing a DevOps software partner's pipeline: [Link to article]
+👉 Read our full deep dive on auditing a DevOps software partner's pipeline: https://www.manifera.com/blog/choosing-a-devops-software-partner-pipeline-audit
 
 #CEO #DevOps #CICD #VendorSelection #TechDueDiligence #ScaleUp #Manifera

@@ -12,6 +12,6 @@
 
 15-30% of software spend is often genuinely redundant. Find it before it finds your budget review. 🛡️
 
-👉 Read our full deep dive on saas tool sprawl shadow it budget waste: [Link to article]
+👉 Read our full deep dive on saas tool sprawl shadow it budget waste: https://www.manifera.com/blog/saas-tool-sprawl-shadow-it-budget-waste
 
 #CFO #SaaSManagement #ShadowIT #BudgetOptimization #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on iron triangle scope time budget: [Link to article]
+👉 Read our full guide on iron triangle scope time budget: https://www.manifera.com/blog/iron-triangle-scope-time-budget
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

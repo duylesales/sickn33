@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on zero trust security model: [Link to article]
+👉 Read our full guide on zero trust security model: https://www.manifera.com/blog/zero-trust-security-model
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

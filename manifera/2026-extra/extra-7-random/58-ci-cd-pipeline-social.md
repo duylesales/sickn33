@@ -12,6 +12,6 @@
 
 Our pipeline was automated, which we thought meant it was done. It just meant nobody had to click a button. 🛡️
 
-👉 Read our full deep dive on ci cd pipeline: [Link to article]
+👉 Read our full deep dive on ci cd pipeline: https://www.manifera.com/blog/ci-cd-pipeline
 
 #CICD #VPEngineering #DeveloperProductivity #Manifera

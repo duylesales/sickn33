@@ -12,6 +12,6 @@
 
 Our formal process was fine. What we were missing was everything that used to happen by accident in the hallway. 🛡️
 
-👉 Read our full deep dive on remote software development team: [Link to article]
+👉 Read our full deep dive on remote software development team: https://www.manifera.com/blog/remote-software-development-team
 
 #RemoteTeam #VPEngineering #RemoteWork #Manifera

@@ -15,6 +15,6 @@ At **LaunchStudio**, we verify UTC-first timestamp handling as a standard part o
 
 His result: AfspraakPlan's timestamp data migrated to proper UTC storage, permanently closing the gap and preventing any future clock change from causing the same confusion. 🚀
 
-👉 Get your timestamp handling checked before it becomes a real migration problem: [Link to article]
+👉 Get your timestamp handling checked before it becomes a real migration problem: https://launchstudio.eu/en/blog/choosing-timezone-default-ai-product-database
 
 #AINativeFounder #LaunchStudio #Manifera #DatabaseDesign #ProductionReady

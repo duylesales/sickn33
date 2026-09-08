@@ -18,6 +18,6 @@ Don't wait for the crisis. Get ahead of the debt. 🛡️🚀
 
 🔍 The tell: `userId` in one part of your app, `user_id` in another. Two AI sessions, zero memory of each other — and your data silently stops connecting.
 
-👉 Read the founder's guide to AI technical debt: [Link to article]
+👉 Read the founder's guide to AI technical debt: https://launchstudio.eu/en/blog/founders-guide-technical-debt-ai
 
 #TechnicalDebt #LaunchStudio #Manifera #AINativeFounder #Cursor #SaaS

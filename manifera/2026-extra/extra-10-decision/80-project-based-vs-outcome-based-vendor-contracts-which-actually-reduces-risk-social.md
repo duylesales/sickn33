@@ -12,6 +12,6 @@ A vendor pitches an "outcome-based" contract as risk transfer: you only pay when
 
 Neither model reduces risk categorically — the CFO's job is checking which conditions your engagement actually meets. 🎯
 
-👉 Read our full breakdown of project-based vs. outcome-based vendor contracts: [Link to article]
+👉 Read our full breakdown of project-based vs. outcome-based vendor contracts: https://www.manifera.com/blog/project-based-vs-outcome-based-vendor-contracts-which-actually-reduces-risk
 
 #CFO #VendorContracts #ContractNegotiation #SoftwareProcurement #RiskManagement #Manifera

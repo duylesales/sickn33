@@ -12,6 +12,6 @@
 
 Catch it in hours — not five months, by accident, during an unrelated audit. 🛡️
 
-👉 Read our full deep dive on cron job silent failure scheduled task risk: [Link to article]
+👉 Read our full deep dive on cron job silent failure scheduled task risk: https://www.manifera.com/blog/cron-job-silent-failure-scheduled-task-risk
 
 #VPEngineering #Observability #SRE #DataIntegrity #Manifera

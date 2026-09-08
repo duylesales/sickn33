@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Priya's applicatie behaalde productie-gereedheid: queryvertraging daalde van 9 seconden naar 180 milliseconden, met de documenten van elk advocatenkantoor cryptografisch geïsoleerd op databaseniveau. (€2.400 (Launch & Grow Pakket) — productieklaar en uitgerold in 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vector-database-vendor-decision-pinecone-supabase
 
 #LaunchStudio #Manifera #AISaaS #VectorDatabase #RAGArchitectuur

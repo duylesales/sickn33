@@ -12,6 +12,6 @@ A Nijkerk CIO described her cloud project in one sentence: three vendors, three 
 
 An Austrian SaaS platform shipped on schedule for the first time in three cycles after replacing three vendors with one Manifera pod — bugs that took weeks to diagnose started getting fixed in days. 🎯
 
-👉 Read our full deep dive on building a cloud development team serving Nijkerk: [Link to article]
+👉 Read our full deep dive on building a cloud development team serving Nijkerk: https://www.manifera.com/blog/cloud-development-team-nijkerk
 
 #Nijkerk #Gelderland #CloudDevelopment #CIO #ConwaysLaw #SupplyChainTech #Manifera

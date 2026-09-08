@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 David sloot het contract van €120.000 af en zijn bureau streek alle eer op voor de geslaagde modernisering. (€45.000 (Legacy API Schil & AI) — binnen 45 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/legacy-software-modernization-ai
 
 #LaunchStudio #Manifera #AISaaS #LegacyModernization #StranglerFig #DigitalAgencies #LogisticsTech #EnterpriseIT #TechFounders #WhiteLabel

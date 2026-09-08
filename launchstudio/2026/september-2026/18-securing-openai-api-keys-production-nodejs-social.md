@@ -14,6 +14,6 @@ At **LaunchStudio**, we've run this exact security audit since 2014 through Mani
 
 Evelyn's exposed keys were rotated and secured, closing the door on future billing leaks. 🚀
 
-👉 Get the security checklist: [Link to article]
+👉 Get the security checklist: https://launchstudio.eu/en/blog/securing-openai-api-keys-production-nodejs
 
 #AINativeFounder #LaunchStudio #Manifera #APIsecurity #LLMSecurity

@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's engineering-team, ontwerpen we
 
 Toms resultaat: 187 huurderverificaties voor 34 verhuurders — nul gevoelige documenten ooit opgeslagen op zijn infrastructuur. 🚀
 
-👉 Ontdek welke gevoelige data uw prototype niet hoeft op te slaan: [Link naar artikel]
+👉 Ontdek welke gevoelige data uw prototype niet hoeft op te slaan: https://launchstudio.eu/nl/blog/proptech-tenant-verification-case-study
 
 #LaunchStudio #Manifera #PropTech #AVG #GDPR #DataMinimalisatie #SaaS

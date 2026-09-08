@@ -12,6 +12,6 @@ Your product's core AI feature is wired directly to one model provider's API. Ei
 
 Don't let your roadmap be hostage to someone else's pricing page. 🔓
 
-👉 Read our full deep dive on avoiding LLM vendor lock-in: [Link to article]
+👉 Read our full deep dive on avoiding LLM vendor lock-in: https://www.manifera.com/blog/llm-vendor-lock-in-questions-before-you-build-on-one-model
 
 #CTO #AIDevelopment #LLM #VendorLockIn #AIArchitecture #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Nova's applicatie behaalde productie-gereedheid: Nova supported audio uploads up to 500MB, expanding the service addressable market. (€2,900 (Large File Processing Package) — production-ready and deployed in 9 business days.). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/multi-modal-ai-workflows-saas
 
 #LaunchStudio #Manifera #AISaaS #MultiModalAIWorkflow #TechFounders

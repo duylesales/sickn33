@@ -15,6 +15,6 @@ At **LaunchStudio**, performance profiling against realistic data volume is a st
 
 Her result: the same dashboard that took 14 seconds against 4,000 records now loads in under 400 milliseconds. 🚀
 
-👉 Use our calculator to scope a performance and database review for your app: [Link to article]
+👉 Use our calculator to scope a performance and database review for your app: https://launchstudio.eu/en/blog/n-plus-one-query-ai-generated-orm
 
 #AINativeFounder #LaunchStudio #Manifera #DatabasePerformance #ORMOptimization

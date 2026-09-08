@@ -12,6 +12,6 @@
 
 Communication cadence is a leading indicator of financial risk — long before it becomes a financial event. 🛡️
 
-👉 Read our full deep dive on amsterdam governed communication cadence: [Link to article]
+👉 Read our full deep dive on amsterdam governed communication cadence: https://www.manifera.com/blog/amsterdam-governed-communication-cadence
 
 #CFO #Amsterdam #CommunicationCadence #RiskManagement #Manifera

@@ -14,6 +14,6 @@ At **LaunchStudio**, we review delete semantics against the actual blast radius 
 
 His result: the very next accidental deletion, weeks later, was restored by the user themselves in under a minute — no engineering involvement at all. 🚀
 
-👉 Not sure which of your delete functions are hard deletes waiting to happen? Review your data model with our team: [Link to article]
+👉 Not sure which of your delete functions are hard deletes waiting to happen? Review your data model with our team: https://launchstudio.eu/en/blog/soft-delete-data-recovery-ai-generated-app
 
 #AINativeFounder #LaunchStudio #Manifera #DataRecovery #IndieHacker

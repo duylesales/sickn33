@@ -12,6 +12,6 @@
 
 Real partnership is structural, not a word in the pitch deck. 📋
 
-👉 Read our full deep dive on app development partnership De Bilt: [Link to article]
+👉 Read our full deep dive on app development partnership De Bilt: https://www.manifera.com/blog/app-development-partnership-de-bilt
 
 #DeBilt #Utrecht #CEO #SoftwarePartnership #KNMI #Manifera

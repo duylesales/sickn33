@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Bij één founder werden drie batches toegangsbeoordelingsbewijs achter elkaar afgewezen, waardoor een getekende enterprise-deal in gevaar kwam — wij automatiseerden het traject en de audit sloot 9 dagen vóór de herziene deadline af. (€3.200, Launch & Grow Pakket — 9 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/soc2-evidence-collection-manual-vs-automated
 
 #LaunchStudio #Manifera #AISaaS #SOC2Compliance #TechFounders

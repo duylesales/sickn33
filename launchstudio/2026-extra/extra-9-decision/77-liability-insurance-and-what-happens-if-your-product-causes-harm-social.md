@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, t
 
 His result: closed the security gaps found, secured coverage, and the stalled deal closed six weeks later. 🚀
 
-👉 Use the price calculator to see what closing your security gaps costs: [Link to article]
+👉 Use the price calculator to see what closing your security gaps costs: https://launchstudio.eu/en/blog/liability-insurance-and-what-happens-if-your-product-causes-harm
 
 #SaaS #Insurance #LaunchStudio #Manifera #GDPR #StartupGrowth

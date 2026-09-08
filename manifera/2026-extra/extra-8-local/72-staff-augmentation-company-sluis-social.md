@@ -12,6 +12,6 @@ More engineers will not fix a broken roadmap. That's been public knowledge for o
 
 An Austrian insurer's contractors were productive in month one and still there in month nine. Coordination overhead dropped from hours a day to less than an hour a week. 🛡️
 
-👉 Read our full deep dive on the staff augmentation company serving Sluis: [Link to article]
+👉 Read our full deep dive on the staff augmentation company serving Sluis: https://www.manifera.com/blog/staff-augmentation-company-sluis
 
 #Sluis #ZeeuwsVlaanderen #StaffAugmentation #CTO #EngineeringTeams #CrossBorderRetail #Manifera

@@ -12,6 +12,6 @@
 
 Maintenance that reduces risk over time — not just hourly coverage. 🛡️
 
-👉 Read our full deep dive on outsourcing software maintenance gorinchem: [Link to article]
+👉 Read our full deep dive on outsourcing software maintenance gorinchem: https://www.manifera.com/blog/outsourcing-software-maintenance-gorinchem
 
 #Gorinchem #ZuidHolland #Alblasserwaard #MaritimeTech #VPEngineering #SoftwareMaintenance #Manifera

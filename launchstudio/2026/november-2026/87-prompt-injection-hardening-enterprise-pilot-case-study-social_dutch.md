@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Het beveiligingsteam van de verzekeraar hertestte de originele aanval plus vier nieuwe varianten — alle vijf werden geblokkeerd — en hervatte de pilot. (€6.100 (Enterprise Hardening Pakket) — pilotklaar in 15 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/prompt-injection-hardening-enterprise-pilot-case-study
 
 #LaunchStudio #Manifera #AISaaS #PromptInjection #AISecurity

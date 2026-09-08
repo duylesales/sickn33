@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on gdpr fine database schema decision: [Link to article]
+👉 Read our full deep dive on gdpr fine database schema decision: https://www.manifera.com/blog/gdpr-fine-database-schema-decision
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

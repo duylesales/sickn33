@@ -15,6 +15,6 @@ At **LaunchStudio**, our Amsterdam team — backed by Manifera's 11+ years of pr
 
 His result: SchemaWacht's AI search now runs on a properly indexed vector column with no measurable impact on booking availability, verified under simulated concurrent load. 🚀
 
-👉 Haven't load-tested your AI search feature against real concurrency? Calculate what a database review would cost: [Link to article]
+👉 Haven't load-tested your AI search feature against real concurrency? Calculate what a database review would cost: https://launchstudio.eu/en/blog/ai-in-database-not-production-ready
 
 #AINativeFounder #LaunchStudio #Manifera #VectorSearch #DatabasePerformance

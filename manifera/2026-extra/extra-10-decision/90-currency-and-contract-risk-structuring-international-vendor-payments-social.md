@@ -12,6 +12,6 @@ Your dev contract is priced in USD. Your budget is approved in EUR. Nobody asked
 
 A board-approved budget shouldn't drift because of a currency market neither side controls. 🎯
 
-👉 Read our full guide to structuring currency-safe international vendor contracts: [Link to article]
+👉 Read our full guide to structuring currency-safe international vendor contracts: https://www.manifera.com/blog/currency-and-contract-risk-structuring-international-vendor-payments
 
 #CFO #CurrencyRisk #InternationalContracts #VendorManagement #FinanceLeadership #Manifera

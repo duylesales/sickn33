@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Het resultaat van Sanne: de laadtijd van het dashboard daalde van 6,8 seconden naar 340 milliseconden bij hetzelfde datavolume, en de connectiefouten stopten volledig (€2.100, Launch & Grow Pakket — opgelost in 6 werkdagen). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-data-engineer-postgres-performance
 
 #LaunchStudio #Manifera #AISaaS #PostgreSQL #DatabasePerformance

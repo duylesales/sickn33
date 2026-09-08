@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, L
 
 Her result: moved to managed hosting at €49/month, redirected €290/month to a hire, logged two outages in six months, both resolved in 25 minutes. 🚀
 
-👉 Use the price calculator to see what reliable hosting costs: [Link to article]
+👉 Use the price calculator to see what reliable hosting costs: https://launchstudio.eu/en/blog/how-much-uptime-do-you-actually-need-to-pay-for
 
 #SaaS #Uptime #LaunchStudio #Manifera #StartupGrowth #ProductionReady

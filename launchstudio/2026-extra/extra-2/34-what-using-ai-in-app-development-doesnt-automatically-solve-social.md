@@ -15,6 +15,6 @@ At **LaunchStudio**, we check for exactly this kind of open redirect vulnerabili
 
 Her result: redirect destinations restricted to a verified allow-list, closing the open redirect entirely and notifying affected members. 🚀
 
-👉 Send your prototype link — free advice, no obligation: [Link to article]
+👉 Send your prototype link — free advice, no obligation: https://launchstudio.eu/en/blog/what-using-ai-in-app-development-doesnt-automatically-solve
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #Phishing

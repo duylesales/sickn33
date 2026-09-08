@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Amara's platform doorstond de security review van haar eerste enterprise-kliniek in één keer, zonder vervolgverzoeken tot herstel. (€4.100 (Enterprise Hardening) — 12 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/ai-development-partner-vetting-checklist
 
 #LaunchStudio #Manifera #AISaaS #HealthTech #DueDiligence

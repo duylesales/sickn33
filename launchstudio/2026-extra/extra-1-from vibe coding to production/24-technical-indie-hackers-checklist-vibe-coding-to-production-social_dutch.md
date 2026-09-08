@@ -16,6 +16,6 @@ Bij **LaunchStudio** draaien we precies deze checklist met dezelfde uitvoerbare 
 
 Zijn resultaat: wist precies welke 2 tests zijn eigen blinde vlek droegen, delegeerde die, vond een echt gat. 🚀
 
-👉 Laat precies deze checklist draaien tegen jouw codebase: [Link naar artikel]
+👉 Laat precies deze checklist draaien tegen jouw codebase: https://launchstudio.eu/nl/blog/technical-indie-hackers-checklist-vibe-coding-to-production
 
 #IndieHacker #LaunchStudio #Manifera #VibeCoding #TechFounder

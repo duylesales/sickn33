@@ -12,6 +12,6 @@ Three vendors, all polished portfolios, all quoting within 10% of each other, al
 
 The absence of a straight answer on any one criterion is itself the scorecard result. 🔍
 
-👉 Read our full deep dive on the scorecard for shortlisting mobile app vendors: [Link to article]
+👉 Read our full deep dive on the scorecard for shortlisting mobile app vendors: https://www.manifera.com/blog/best-mobile-app-development-companies-scorecard
 
 #ITManager #MobileAppDevelopmentCompany #VendorScorecard #SoftwareCompliance #SLA #Manifera

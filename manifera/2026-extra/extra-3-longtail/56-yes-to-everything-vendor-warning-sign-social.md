@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on yes everything vendor warning sign: [Link to article]
+👉 Read our full guide on yes everything vendor warning sign: https://www.manifera.com/blog/yes-to-everything-vendor-warning-sign
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

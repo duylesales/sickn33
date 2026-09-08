@@ -12,6 +12,6 @@ Your annual pentest report is dated November. It's August. The app has shipped 4
 
 Continuous testing without SLA tracking and noise reduction generates more alert volume than annual pentesting ever did — with no more security benefit. 🎯
 
-👉 Read our full deep dive on choosing a continuous security testing vendor: [Link to article]
+👉 Read our full deep dive on choosing a continuous security testing vendor: https://www.manifera.com/blog/choosing-a-vendor-for-continuous-security-testing
 
 #ContinuousSecurity #SOC2 #ISO27001 #ComplianceOfficer #AppSec #DevSecOps #Manifera

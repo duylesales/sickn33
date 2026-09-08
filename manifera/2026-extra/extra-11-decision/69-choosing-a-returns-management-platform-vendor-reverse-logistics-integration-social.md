@@ -12,6 +12,6 @@ A returned item doesn't become sellable inventory the second a customer drops it
 
 Returns management is a systems integration decision wearing a customer-experience costume. 🧵
 
-👉 Read our full deep dive on returns management platform vendor selection: [Link to article]
+👉 Read our full deep dive on returns management platform vendor selection: https://www.manifera.com/blog/choosing-a-returns-management-platform-vendor-reverse-logistics-integration
 
 #ReverseLogistics #Ecommerce #RetailTech #ITManager #SupplyChain #Manifera

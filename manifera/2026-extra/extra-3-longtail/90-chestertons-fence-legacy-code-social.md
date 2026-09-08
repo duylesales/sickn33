@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our deep dive on chestertons fence legacy code: [Link to article]
+👉 Read our deep dive on chestertons fence legacy code: https://www.manifera.com/blog/chestertons-fence-legacy-code
 
 #CloudEngineering #DevOps #SoftwareArchitecture #TechnicalDebt #CTO #Manifera

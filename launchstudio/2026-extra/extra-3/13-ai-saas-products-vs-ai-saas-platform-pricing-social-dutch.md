@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen wij oprichters dit onderscheid concreet te maken tij
 
 Het resultaat voor Daniël: op gebruik gebaseerde prijzen voor zijn zwaarste segment, vaste prijzen behouden voor de rest — een groeiend margeprobleem opgelost. 🚀
 
-👉 Maak duidelijk welke van de twee u eigenlijk bouwt voordat u er een prijs voor bepaalt: [Link naar artikel]
+👉 Maak duidelijk welke van de twee u eigenlijk bouwt voordat u er een prijs voor bepaalt: https://launchstudio.eu/nl/blog/ai-saas-products-vs-ai-saas-platform-pricing
 
 #AINativeFounder #LaunchStudio #Manifera #SaaSPricing #APIDesign

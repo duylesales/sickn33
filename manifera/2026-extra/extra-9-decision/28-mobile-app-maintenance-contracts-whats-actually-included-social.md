@@ -12,6 +12,6 @@ Six weeks post-launch, an iOS point release breaks your push notification flow. 
 
 Read the maintenance contract as carefully as you read the build contract. 📄
 
-👉 Read our full deep dive on what mobile app maintenance contracts should include: [Link to article]
+👉 Read our full deep dive on what mobile app maintenance contracts should include: https://www.manifera.com/blog/mobile-app-maintenance-contracts-whats-actually-included
 
 #HeadOfProduct #MobileAppMaintenance #SLA #AppSupport #ProductManagement #Manifera

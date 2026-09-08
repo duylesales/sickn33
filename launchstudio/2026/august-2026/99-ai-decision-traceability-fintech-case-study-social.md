@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been building exactly this kind of compliance infrast
 
 The regulatory review closed without escalation, a day ahead of the 12-day deadline. (€5,200 (Enterprise Hardening Package) — 13 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/ai-decision-traceability-fintech-case-study
 
 #LaunchStudio #Manifera #AISaaS #FintechCompliance #EUAIAct

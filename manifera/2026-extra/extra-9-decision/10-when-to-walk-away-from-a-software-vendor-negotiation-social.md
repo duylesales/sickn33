@@ -12,6 +12,6 @@ Six weeks into vendor evaluation, runway clock louder than ever, and the vendor 
 
 A negotiation's final stretch is the cheapest, most honest preview you'll get of how a vendor behaves once the leverage shifts. Trust the signal, not the sunk cost. ⚖️
 
-👉 Read our full deep dive on when to walk away from a software vendor negotiation: [Link to article]
+👉 Read our full deep dive on when to walk away from a software vendor negotiation: https://www.manifera.com/blog/when-to-walk-away-from-a-software-vendor-negotiation
 
 #Founder #VendorNegotiation #SoftwareOutsourcing #StartupAdvice #DueDiligence #ContractTerms #Manifera

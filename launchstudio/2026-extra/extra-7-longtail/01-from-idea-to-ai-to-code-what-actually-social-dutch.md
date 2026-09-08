@@ -15,6 +15,6 @@ Bij **LaunchStudio** voltooien we precies dit traject — de onzichtbare laag tu
 
 Sanne's resultaat: het volledige planningssysteem verwerkt gelijktijdige bewerkingen nu veilig, en haar pilotrestaurants verloren nooit meer een dienst. 🚀
 
-👉 Denkt u dat uw door AI gebouwde demo verder van productie afstaat dan het lijkt: [Link naar artikel]
+👉 Denkt u dat uw door AI gebouwde demo verder van productie afstaat dan het lijkt: https://launchstudio.eu/nl/blog/from-idea-to-ai-to-code-what-actually
 
 #AINativeFounder #LaunchStudio #Manifera #AIPrototype #ProductionReady

@@ -18,6 +18,6 @@ Bij **LaunchStudio**, met het Europese hoofdkantoor aan de Herengracht 420 in Am
 
 Zijn resultaat: 11 productiebedrijven als klant, €645/maand, volledig geworven via zijn netwerk. 🚀
 
-👉 Lees waarom timing en geografie nu perfect samenvallen: [Link naar artikel]
+👉 Lees waarom timing en geografie nu perfect samenvallen: https://launchstudio.eu/nl/blog/dutch-founders-positioned-ai-economy
 
 #DutchStartups #LaunchStudio #Manifera #AINativeFounder #BNI #SaaS #TechFounders #StartupOpschalen #AmsterdamTech

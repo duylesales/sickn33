@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Zijn resultaat: alle 1.200 keynote-stemmers live afgehandeld, nul mislukte verzoeken. 🚀
 
-👉 Ontdek waar uw prototype als eerste zou breken: [Link naar artikel]
+👉 Ontdek waar uw prototype als eerste zou breken: https://launchstudio.eu/nl/blog/prototype-survives-viral-traffic-spike-case-study
 
 #SaaS #ScaleUp #LaunchStudio #Manifera #ViraleGroei #ProductieKlaar

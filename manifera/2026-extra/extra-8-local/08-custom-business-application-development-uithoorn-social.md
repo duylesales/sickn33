@@ -12,6 +12,6 @@
 
 Stop exporting a spreadsheet by hand every evening to keep three systems in sync. 🛡️
 
-👉 Read our full deep dive on custom business application development Uithoorn: [Link to article]
+👉 Read our full deep dive on custom business application development Uithoorn: https://www.manifera.com/blog/custom-business-application-development-uithoorn
 
 #Uithoorn #NoordHolland #BusinessAutomation #COO #WorkflowAutomation #CustomSoftware #Manifera

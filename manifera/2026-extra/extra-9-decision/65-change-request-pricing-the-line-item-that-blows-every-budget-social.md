@@ -12,6 +12,6 @@ A €280K fixed-price contract became €412K. Not one dramatic failure — 23 i
 
 Budget for change before it becomes an overrun. 💶
 
-👉 Read our full deep dive on change request pricing and software budgets: [Link to article]
+👉 Read our full deep dive on change request pricing and software budgets: https://www.manifera.com/blog/change-request-pricing-the-line-item-that-blows-every-budget
 
 #CFO #SoftwareBudget #ChangeRequest #ContractManagement #VendorManagement #ITFinance #Manifera

@@ -12,6 +12,6 @@
 
 Ask for the artifact, not the assurance. 🛡️
 
-👉 Read our full deep dive on offshore software engineering vietnam execution: [Link to article]
+👉 Read our full deep dive on offshore software engineering vietnam execution: https://www.manifera.com/blog/offshore-software-engineering-vietnam-execution
 
 #VietnamSoftwareDevelopment #VPEngineering #CodeQuality #Amsterdam #Manifera

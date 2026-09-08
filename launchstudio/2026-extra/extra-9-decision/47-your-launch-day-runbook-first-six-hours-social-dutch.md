@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat in de praktijk: een DNS-fout die alle activatiemails naar Outlook-adressen blokkeerde werd binnen twintig minuten hersteld in plaats van uren later ontdekt. 🚀
 
-👉 Plan een voorbereidend gesprek vóór uw lanceringsweek in plaats van halverwege de chaos: [Link naar artikel]
+👉 Plan een voorbereidend gesprek vóór uw lanceringsweek in plaats van halverwege de chaos: https://launchstudio.eu/nl/blog/your-launch-day-runbook-first-six-hours
 
 #SaaSLancering #StartupGroei #ProductieMonitoring #SoftwareDraaiboek #LaunchStudio #Manifera

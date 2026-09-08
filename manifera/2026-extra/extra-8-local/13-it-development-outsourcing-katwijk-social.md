@@ -12,6 +12,6 @@
 
 A Polish manufacturer's second attempt shipped two weeks early with zero requirements disputes, after a first attempt that ran eight months over. 🔍
 
-👉 Read our full deep dive on IT development outsourcing in Katwijk: [Link to article]
+👉 Read our full deep dive on IT development outsourcing in Katwijk: https://www.manifera.com/blog/it-development-outsourcing-katwijk
 
 #Katwijk #ZuidHolland #ITOutsourcing #CIO #OffshoreDevelopment #RiskManagement #Manifera

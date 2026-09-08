@@ -12,6 +12,6 @@
 
 Accountability that ends in Amsterdam — not in a WhatsApp group with five freelancers. 🛡️
 
-👉 Read our full deep dive on outsourcing software developers in house or offshore: [Link to article]
+👉 Read our full deep dive on outsourcing software developers in house or offshore: https://www.manifera.com/blog/outsourcing-software-developers-in-house-or-offshore
 
 #OutsourcingDevelopers #Amsterdam #Vietnam #CTO #WetDBA #Manifera

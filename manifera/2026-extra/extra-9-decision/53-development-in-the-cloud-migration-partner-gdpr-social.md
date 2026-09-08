@@ -12,6 +12,6 @@
 
 Choosing a cloud partner isn't a technical decision you can hand off — it's a business risk decision with your name on it. 🔐
 
-👉 Read our full deep dive on choosing a GDPR-aware cloud migration partner: [Link to article]
+👉 Read our full deep dive on choosing a GDPR-aware cloud migration partner: https://www.manifera.com/blog/development-in-the-cloud-migration-partner-gdpr
 
 #Founder #GDPR #CloudMigration #DataSovereignty #TechDueDiligence #VendorSelection #Manifera

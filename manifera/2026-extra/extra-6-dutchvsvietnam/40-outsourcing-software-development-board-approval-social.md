@@ -12,6 +12,6 @@
 
 Address every objection in the deck — before it surfaces mid-meeting. 🛡️
 
-👉 Read our full deep dive on outsourcing software development board approval: [Link to article]
+👉 Read our full deep dive on outsourcing software development board approval: https://www.manifera.com/blog/outsourcing-software-development-board-approval
 
 #CFO #BoardApproval #SoftwareOutsourcing #EmployeeRelations #Manifera

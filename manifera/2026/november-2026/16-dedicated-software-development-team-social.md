@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on dedicated software development team: [Link to article]
+👉 Read our full deep dive on dedicated software development team: https://www.manifera.com/blog/dedicated-software-development-team
 
 #DedicatedTeam #EngineeringLeadership #SoftwareArchitecture #TechLeadership #CTO #Manifera

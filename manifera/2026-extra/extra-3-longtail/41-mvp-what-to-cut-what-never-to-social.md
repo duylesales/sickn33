@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Learn how to overcome mvp cut never in software projects: [Link to article]
+👉 Learn how to overcome mvp cut never in software projects: https://www.manifera.com/blog/mvp-what-to-cut-what-never-to
 
 #TechLeadership #ProductManagement #SoftwareEngineering #Agile #CTO #Manifera

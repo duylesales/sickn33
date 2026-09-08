@@ -12,6 +12,6 @@ The vendor you sign with this quarter is quietly deciding how easily your compan
 
 The contract you sign now is the stack your successor will either thank you for or curse you over. 🧭
 
-👉 Read our full deep dive on avoiding software stack lock-in in vendor decisions: [Link to article]
+👉 Read our full deep dive on avoiding software stack lock-in in vendor decisions: https://www.manifera.com/blog/software-stack-lock-in-vendor-decision
 
 #ITManager #VendorLockIn #SoftwareArchitecture #LegacyModernization #TechDueDiligence #VendorSelection #Manifera

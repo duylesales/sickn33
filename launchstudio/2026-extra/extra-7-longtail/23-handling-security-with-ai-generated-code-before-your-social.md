@@ -15,6 +15,6 @@ At **LaunchStudio**, this is the exact pattern our engineers flag on close to ha
 
 Aurélie's result: every key moved server-side, rate limiting added, and a public waitlist launched with none of it visible to her users. 🚀
 
-👉 Opening signups to your AI-built app soon? Check for this before launch day, not after: [Link to article]
+👉 Opening signups to your AI-built app soon? Check for this before launch day, not after: https://launchstudio.eu/en/blog/handling-security-with-ai-generated-code-before-your
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #APIKeyExposure

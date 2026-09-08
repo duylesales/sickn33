@@ -12,6 +12,6 @@ A 15-year-old monolith runs your core business logic, and the last engineer who 
 
 The right pattern depends on your system's actual coupling, not which one sounds cleaner in a pitch deck. 🎯
 
-👉 Read our full deep dive on strangler-fig vs. big-bang rewrite for legacy modernization: [Link to article]
+👉 Read our full deep dive on strangler-fig vs. big-bang rewrite for legacy modernization: https://www.manifera.com/blog/legacy-modernization-vendor-strangler-fig-vs-big-bang-rewrite-decision
 
 #CTO #LegacyModernization #TechnicalDebt #SoftwareArchitecture #StranglerFig #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** helpen onze technici, ondersteund door Manifera's meer dan 
 
 Zijn resultaat: het team van TeamGrip werkt nu volgens één expliciete, gedeelde definitie van waar hun AI-tooling voor dient. 🚀
 
-👉 Heeft uw team stilletjes zijn AI-workflow geherdefinieerd zonder het u te vertellen? Bekijk ons proces: [Link naar artikel]
+👉 Heeft uw team stilletjes zijn AI-workflow geherdefinieerd zonder het u te vertellen? Bekijk ons proces: https://launchstudio.eu/nl/blog/ai-for-software-engineering-teams-redefining
 
 #AINativeFounder #LaunchStudio #Manifera #EngineeringTeams #CodeReview

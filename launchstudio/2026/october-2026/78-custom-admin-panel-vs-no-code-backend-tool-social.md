@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Jonas's team got faster and cheaper at the same time: Jonas's support team resolved disputes 40% faster with the workflow built to match their actual process, and eliminated roughly €8,400 in annual per-seat licensing costs. (€3,100 (Relaunch & Scale Package) — custom panel built and deployed in 11 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/custom-admin-panel-vs-no-code-backend-tool
 
 #LaunchStudio #Manifera #AISaaS #InternalTools #BuildVsBuy

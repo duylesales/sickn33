@@ -19,6 +19,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we s
 
 💡 Zo bewaarde Bezorgd van Hugo Willemsen 4 jaar aan afleverfoto's van voordeuren. Na onze geautomatiseerde batch-purge kromp de database met 70% en daalde de zoektijd van 5 seconden naar 300 milliseconden.
 
-👉 Hoe lang bewaart uw software de data van een ex-klant? [Link naar artikel]
+👉 Hoe lang bewaart uw software de data van een ex-klant? https://launchstudio.eu/nl/blog/archiving-versus-deleting-what-to-do-with-old-data
 
 #DataRetention #GDPR #SaaSArchitecture #DevOps #LaunchStudio #Manifera

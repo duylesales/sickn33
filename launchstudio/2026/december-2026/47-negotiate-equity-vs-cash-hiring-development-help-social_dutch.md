@@ -19,6 +19,6 @@ Bij **LaunchStudio** hanteren we vaste projectprijzen vanaf €800, zodat u reë
 
 Zijn resultaat: €3.000 contant betaald, binnen 11 dagen live en 100% eigenaar gebleven! 🚀
 
-👉 Lees de eerlijke rekensom van aandelen versus contant geld: [Link naar artikel]
+👉 Lees de eerlijke rekensom van aandelen versus contant geld: https://launchstudio.eu/nl/blog/negotiate-equity-vs-cash-hiring-development-help
 
 #Equity #LaunchStudio #Manifera #AINativeFounder #StartupFunding #SaaS #Lovable #TechFounders #StartupOpschalen

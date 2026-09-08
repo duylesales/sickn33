@@ -15,6 +15,6 @@ Bij **LaunchStudio** werken we met output van Lovable, Bolt, Cursor en v0 — we
 
 Haar resultaat: DocuTrack doorstond een vervolgbeveiligingsreview van haar eerste betalende logistieke klant en wordt nu gebruikt door vier bedrijven in de regio Nieuwegein. 🚀
 
-👉 Middenin het bouwproces en benieuwd wat het dichten van de productiekloof voor uw stack kost? Bekijk ons proces: [Link naar artikel]
+👉 Middenin het bouwproces en benieuwd wat het dichten van de productiekloof voor uw stack kost? Bekijk ons proces: https://launchstudio.eu/nl/blog/ai-code-tool-nieuwegein
 
 #AINativeFounder #LaunchStudio #Manifera #AICodeTool #Nieuwegein

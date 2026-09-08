@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in enterpris
 
 Het resultaat: een gelekte API-sleutel kostte € 340; met een runbook was een tweede incident binnen twintig minuten verholpen. 🚀
 
-👉 Bespreek uw architectuur met een engineer die AI-code doorgrondt: [Link naar artikel]
+👉 Bespreek uw architectuur met een engineer die AI-code doorgrondt: https://launchstudio.eu/nl/blog/your-incident-response-plan-when-you-are-the-whole-team
 
 #IndieHacker #SaaS #LaunchStudio #Manifera #AICoding #ProductionReady

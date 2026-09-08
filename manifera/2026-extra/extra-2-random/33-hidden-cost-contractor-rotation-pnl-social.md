@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on hidden cost contractor rotation pnl: [Link to article]
+👉 Read our full deep dive on hidden cost contractor rotation pnl: https://www.manifera.com/blog/hidden-cost-contractor-rotation-pnl
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

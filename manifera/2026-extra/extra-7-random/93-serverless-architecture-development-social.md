@@ -12,6 +12,6 @@
 
 Half of one platform's system was quietly on the wrong architecture — fixing it cut compute costs 46%. ⚙️
 
-👉 Read our full deep dive on serverless architecture development: [Link to article]
+👉 Read our full deep dive on serverless architecture development: https://www.manifera.com/blog/serverless-architecture-development
 
 #Serverless #AWSLambda #CloudArchitecture #Manifera

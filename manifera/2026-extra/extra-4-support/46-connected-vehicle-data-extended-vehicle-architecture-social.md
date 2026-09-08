@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on connected vehicle data extended vehicle: [Link to article]
+👉 Read our full architectural deep dive on connected vehicle data extended vehicle: https://www.manifera.com/blog/connected-vehicle-data-extended-vehicle-architecture
 
 #AutoTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

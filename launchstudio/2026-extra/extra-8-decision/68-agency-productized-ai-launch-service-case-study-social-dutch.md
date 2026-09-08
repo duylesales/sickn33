@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's engineeringteam, wordt uw bure
 
 Luuks resultaat: 5 lanceertrajecten in 3 maanden — €27.200 omzet, €16.000 nettomarge. 🚀
 
-👉 Ontdek hoe uw bureau een AI-lanceerdienst kan aanbieden zonder engineers aan te nemen: [Link naar artikel]
+👉 Ontdek hoe uw bureau een AI-lanceerdienst kan aanbieden zonder engineers aan te nemen: https://launchstudio.eu/nl/blog/agency-productized-ai-launch-service-case-study
 
 #LaunchStudio #Bureau #WhiteLabel #Manifera #SaaS #AIApp #Freelancers

@@ -12,6 +12,6 @@ Three vendors pitch you the same project. All three sound confident. Two of them
 
 You don't need to read code to make a good vendor decision — you need evidence, not confidence. 🔍
 
-👉 Read our full deep dive on the trust verification framework for non-technical founders: [Link to article]
+👉 Read our full deep dive on the trust verification framework for non-technical founders: https://www.manifera.com/blog/choosing-a-vendor-as-a-non-technical-founder-the-trust-verification-framework
 
 #NonTechnicalFounder #StartupAdvice #VendorDueDiligence #SmallBusinessTech #FounderTips #Manifera

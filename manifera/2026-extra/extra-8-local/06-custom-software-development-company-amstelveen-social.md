@@ -12,6 +12,6 @@
 
 Stop paying postcode premiums for architecture decisions made by whoever happened to answer the phone. 🛡️
 
-👉 Read our full deep dive on custom software development company Amstelveen: [Link to article]
+👉 Read our full deep dive on custom software development company Amstelveen: https://www.manifera.com/blog/custom-software-development-company-amstelveen
 
 #Amstelveen #NoordHolland #CustomSoftware #CTO #SoftwareDevelopment #TechLeadership #Manifera

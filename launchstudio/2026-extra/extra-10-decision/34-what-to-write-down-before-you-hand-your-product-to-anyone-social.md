@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: what Marit budgeted as a two-and-a-half-week engagement finished in 9 business days, because the discovery questions that usually eat week one were already answered on paper. 🚀
 
-👉 Get the handover template before your next build starts: [Link to article]
+👉 Get the handover template before your next build starts: https://launchstudio.eu/en/blog/what-to-write-down-before-you-hand-your-product-to-anyone
 
 #FounderLife #ProductDevelopment #SaaS #StartupTips #LaunchStudio #Manifera

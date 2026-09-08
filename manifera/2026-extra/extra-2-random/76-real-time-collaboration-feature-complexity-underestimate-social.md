@@ -12,6 +12,6 @@
 
 Nine weeks with the right architecture. Not six months patching the wrong one. 🛡️
 
-👉 Read our full deep dive on real-time collaboration feature complexity underestimate: [Link to article]
+👉 Read our full deep dive on real-time collaboration feature complexity underestimate: https://www.manifera.com/blog/real-time-collaboration-feature-complexity-underestimate
 
 #DistributedSystems #SoftwareArchitecture #CTO #RealTimeCollaboration #CRDT #Manifera

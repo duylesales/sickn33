@@ -19,6 +19,6 @@ Bij **LaunchStudio** dichten we exact deze kloof — zonder ook maar één knop 
 
 🧪 5-seconden test: ververs uw browsertabblad hard. Is de data weg of bent u uitgelogd? Dat is geen bug — dat is uw "MVP" die u vertelt dat er nog geen echte database onder zit.
 
-👉 Lees hoe AI de definitie van een MVP heeft veranderd: [Link naar artikel]
+👉 Lees hoe AI de definitie van een MVP heeft veranderd: https://launchstudio.eu/nl/blog/ai-changing-definition-of-mvp
 
 #MVP #AINativeFounder #LaunchStudio #Manifera #SaaS #StartupBuilding #TechFounders #Lovable #Cursor

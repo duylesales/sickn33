@@ -12,6 +12,6 @@ One-hour kickoff, everyone introduces themselves, engineers start coding Monday.
 
 Whatever happens in week one becomes the default the team reverts to under pressure for the rest of the engagement. 🎯
 
-👉 Read our full guide to structuring a vendor kickoff that sets the right precedent: [Link to article]
+👉 Read our full guide to structuring a vendor kickoff that sets the right precedent: https://www.manifera.com/blog/choosing-a-vendor-kickoff-structure-that-sets-the-right-precedent
 
 #VPEngineering #ProjectKickoff #SprintZero #SoftwareDelivery #TeamManagement #Manifera

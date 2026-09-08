@@ -12,6 +12,6 @@ Standard vendor onboarding is a checklist: sign, provision, kickoff. Regulated o
 
 Every extra diligence step exists because a specific failure mode has actually happened to someone who skipped it. 🎯
 
-👉 Read our full deep dive on what regulated industry vendor onboarding actually requires: [Link to article]
+👉 Read our full deep dive on what regulated industry vendor onboarding actually requires: https://www.manifera.com/blog/regulated-industry-vendor-onboarding-what-extra-diligence-actually-requires
 
 #ITManager #VendorOnboarding #DORA #ThirdPartyRisk #DataProtection #RegTech #Manifera

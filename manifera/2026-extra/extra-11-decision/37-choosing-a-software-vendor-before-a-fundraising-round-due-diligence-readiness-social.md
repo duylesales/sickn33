@@ -12,6 +12,6 @@ A Series A term sheet got re-priced 15% down and delayed six weeks — because a
 
 The cheapest time to fix a diligence gap is 12 months before your raise. The most expensive time is during it. ⏱️
 
-👉 Read our full deep dive on fundraising-ready vendor decisions: [Link to article]
+👉 Read our full deep dive on fundraising-ready vendor decisions: https://www.manifera.com/blog/choosing-a-software-vendor-before-a-fundraising-round-due-diligence-readiness
 
 #DueDiligence #Fundraising #SeriesA #StartupFounders #CapTable #Manifera

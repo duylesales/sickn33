@@ -12,6 +12,6 @@ If your development vendor closed its doors tomorrow, could you deploy a fix to 
 
 Vendor exit planning isn't distrust — it's the same category of thinking as a backup policy. 🎯
 
-👉 Read our full deep dive on SaaS vendor exit strategy and platform continuity: [Link to article]
+👉 Read our full deep dive on SaaS vendor exit strategy and platform continuity: https://www.manifera.com/blog/saas-vendor-exit-strategy-what-happens-to-your-platform-if-they-disappear
 
 #CEO #BusinessContinuity #VendorRisk #SourceCodeEscrow #SaaS #Manifera

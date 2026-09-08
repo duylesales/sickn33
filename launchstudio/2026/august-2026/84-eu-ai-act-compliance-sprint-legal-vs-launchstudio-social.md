@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 HireScope AI passed the enterprise compliance audit on the first resubmission. (€5,800 (Enterprise Hardening Package) — 12 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/eu-ai-act-compliance-sprint-legal-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #EUAIAct #AICompliance

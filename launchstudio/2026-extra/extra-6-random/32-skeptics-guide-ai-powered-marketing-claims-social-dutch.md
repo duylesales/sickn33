@@ -15,6 +15,6 @@ Bij **LaunchStudio** besteden de meer dan 120 technici van Manifera echt tijd aa
 
 Milo's resultaat: hij verving de linter-vermomd-als-beveiligingstool door een echt beoordelingsproces en dichtte beide gaten vóór de publieke lancering van VeiligPunt. 🚀
 
-👉 Weet u niet zeker of uw "AI-powered" beveiligingstool daadwerkelijk zijn werk doet: [Link naar artikel]
+👉 Weet u niet zeker of uw "AI-powered" beveiligingstool daadwerkelijk zijn werk doet: https://launchstudio.eu/nl/blog/skeptics-guide-ai-powered-marketing-claims
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurity #DevTools

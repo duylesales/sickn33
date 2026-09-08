@@ -12,6 +12,6 @@
 
 We had all the modern tools and none of the actual DevOps culture. Once we changed how incidents got reviewed, things started genuinely improving. 🛡️
 
-👉 Read our full deep dive on devops consulting: [Link to article]
+👉 Read our full deep dive on devops consulting: https://www.manifera.com/blog/devops-consulting
 
 #DevOps #VPEngineering #EngineeringCulture #Manifera

@@ -12,6 +12,6 @@
 
 The real risk isn't a missed match. It's a system nobody can explain when the examiner asks. 🎯
 
-👉 Read our full deep dive on KYC/AML vendor selection: [Link to article]
+👉 Read our full deep dive on KYC/AML vendor selection: https://www.manifera.com/blog/kyc-aml-vendor-selection-what-compliance-officers-must-verify
 
 #KYCAML #ComplianceOfficer #FinancialCrime #RegTech #DueDiligence #Manifera

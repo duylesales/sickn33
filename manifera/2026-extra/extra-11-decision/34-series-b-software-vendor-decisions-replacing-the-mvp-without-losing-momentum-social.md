@@ -12,6 +12,6 @@ A three-year-old monolith. A "quick" four-month rewrite. Eighteen months later: 
 
 Your MVP straining under 10x growth is real. A full rewrite is almost never the fix. 🔧
 
-👉 Read our full deep dive on Series B replatforming decisions: [Link to article]
+👉 Read our full deep dive on Series B replatforming decisions: https://www.manifera.com/blog/series-b-software-vendor-decisions-replacing-the-mvp-without-losing-momentum
 
 #SeriesB #CTO #Replatforming #TechnicalDebt #ScaleUp #Manifera

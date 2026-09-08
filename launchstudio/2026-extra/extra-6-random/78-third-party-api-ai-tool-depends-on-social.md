@@ -15,6 +15,6 @@ At **LaunchStudio**, our Ho Chi Minh City-based engineers map this exact hidden 
 
 Her result: DependsOp now fails over to a backup provider automatically, with any failure surfaced immediately instead of vanishing. 🚀
 
-👉 Curious what a dependency audit for your app would cost? Calculate it here: [Link to article]
+👉 Curious what a dependency audit for your app would cost? Calculate it here: https://launchstudio.eu/en/blog/third-party-api-ai-tool-depends-on
 
 #AINativeFounder #LaunchStudio #Manifera #HiddenDependencies #AICodingTools

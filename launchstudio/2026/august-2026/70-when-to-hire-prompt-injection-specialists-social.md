@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Ingrid's application achieved production readiness: LexBrief AI passed a follow-up adversarial test using the same embedded-instruction technique, and Ingrid expanded from beta to general availability with a documented, tested defense in place. (€3,100 (Relaunch & Scale Package) — 10 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/when-to-hire-prompt-injection-specialists
 
 #LaunchStudio #Manifera #AISaaS #PromptInjection #AISecurity

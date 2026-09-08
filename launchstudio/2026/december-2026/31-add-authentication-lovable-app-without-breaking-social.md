@@ -17,6 +17,6 @@ That URL-parameter test isn't even the whole checklist — hidden admin buttons,
 
 At **LaunchStudio**, backed by Manifera's cybersecurity roots (CFLW, TNO), authentication gets the scrutiny it needs — before real users create real accounts. 🛡️🚀
 
-👉 Read how to add auth without breaking everything: [Link to article]
+👉 Read how to add auth without breaking everything: https://launchstudio.eu/en/blog/add-authentication-lovable-app-without-breaking
 
 #Authentication #LaunchStudio #Manifera #AINativeFounder #Cybersecurity #SaaS

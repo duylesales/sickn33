@@ -12,6 +12,6 @@
 
 We spent weeks perfecting the prompt and assumed that was the reliability work. The prompt was maybe half the job. 🛡️
 
-👉 Read our full deep dive on llm integration: [Link to article]
+👉 Read our full deep dive on llm integration: https://www.manifera.com/blog/llm-integration
 
 #LLM #CTO #AIReliability #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on building software healthcare compliance: [Link to article]
+👉 Read our full guide on building software healthcare compliance: https://www.manifera.com/blog/building-software-for-healthcare-compliance
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

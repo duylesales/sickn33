@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Michael's application achieved production readiness: Michael stabilized the system, allowing the widget to handle 10,000+ requests per hour effortlessly. (€2,600 (Scaling & Optimization Package) — production-ready and deployed in 9 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/scaling-supabase-real-traffic
 
 #LaunchStudio #Manifera #AISaaS #ScalingSupabaseWhatt #TechFounders

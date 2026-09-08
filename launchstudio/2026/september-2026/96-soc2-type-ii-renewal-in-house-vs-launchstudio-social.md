@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 Jonas's renewal audit closed with zero open findings on access control, and his team no longer maintains any manual access log. (€5,400 (Enterprise Hardening Package) — audit trail rebuilt and verified in 13 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/soc2-type-ii-renewal-in-house-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #SOC2Compliance #AuditReadiness

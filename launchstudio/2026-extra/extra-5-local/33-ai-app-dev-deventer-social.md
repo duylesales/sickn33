@@ -15,6 +15,6 @@ At **LaunchStudio**, we're powered by Manifera — 11+ years of production engin
 
 Boekhouding Buddy launched to all eight beta users plus twenty more signups from a local business event, with zero downtime in its first six weeks. 🚀
 
-👉 Shipped an AI app dev prototype in Deventer? Here's what's probably still missing: [Link to article]
+👉 Shipped an AI app dev prototype in Deventer? Here's what's probably still missing: https://launchstudio.eu/en/blog/ai-app-dev-deventer
 
 #AINativeFounder #LaunchStudio #Manifera #Deventer #AIAppDev

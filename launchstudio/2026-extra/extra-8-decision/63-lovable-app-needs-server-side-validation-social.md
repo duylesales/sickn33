@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, t
 
 A Delft physiotherapy founder found "SQL Injection Test" and a 1970 appointment in her database — LaunchStudio locked down every endpoint for €1,100, live in 4 business days. 🚀
 
-👉 Find out which of your inputs aren't validated on the server: [Link to article]
+👉 Find out which of your inputs aren't validated on the server: https://launchstudio.eu/en/blog/lovable-app-needs-server-side-validation
 
 #LaunchStudio #Manifera #ServerSideValidation #VibeCoding #SupabaseSecurity #MVPSecurity #LovableApp

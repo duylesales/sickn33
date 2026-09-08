@@ -19,6 +19,6 @@ At **LaunchStudio**, we make sure your product can survive this personal, high-s
 
 His result: 10 customers, 3 weeks, one list of 40 names, zero ad spend. 🚀
 
-👉 Get the full tactical playbook: [Link to article]
+👉 Get the full tactical playbook: https://launchstudio.eu/en/blog/planning-first-10-customers-tactical-guide-ai-founders
 
 #StartupGrowth #FirstCustomers #LaunchStudio #Manifera #AINativeFounder

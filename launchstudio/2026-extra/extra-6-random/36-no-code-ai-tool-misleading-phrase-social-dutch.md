@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelt ons engineeringcentrum in Ho Chi Minh-stad precie
 
 Zijn resultaat: de offertefunctie werd hersteld, en OfferteSnel faalt nu netjes met een duidelijke melding in plaats van stilzwijgend, mocht dezelfde afhankelijkheid opnieuw verschuiven. 🚀
 
-👉 Aangenomen dat "no code" "niets te onderhouden" betekende: [Link naar artikel]
+👉 Aangenomen dat "no code" "niets te onderhouden" betekende: https://launchstudio.eu/nl/blog/no-code-ai-tool-misleading-phrase
 
 #AINativeFounder #LaunchStudio #Manifera #NoCodeMaintenance #ProductionReady

@@ -15,6 +15,6 @@ Bij **LaunchStudio** is het team van meer dan 120 engineers van Manifera, met ee
 
 Zijn resultaat: het meldingsformulier van MeldPunt werd hersteld voor alle accounttypes en opnieuw getest onder elke rol, zonder verdere gemelde indienfouten. 🚀
 
-👉 Recent "het werkt" gezegd over een functie, maar alleen getest als uzelf: [Link naar artikel]
+👉 Recent "het werkt" gezegd over een functie, maar alleen getest als uzelf: https://launchstudio.eu/nl/blog/three-types-of-ai-works-claims
 
 #AINativeFounder #LaunchStudio #Manifera #RoleBasedTesting #ProductionReady

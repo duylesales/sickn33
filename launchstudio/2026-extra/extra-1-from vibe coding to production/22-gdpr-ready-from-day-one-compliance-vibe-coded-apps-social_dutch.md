@@ -16,6 +16,6 @@ Bij **LaunchStudio** bouwen we AVG-bewuste architectuur standaard in bij elke op
 
 Haar resultaat: een volledige dataarchitectuurmigratie over 12 organisaties — werk dat een jaar eerder een kleine ontwerpbeslissing was geweest. 🚀
 
-👉 Bouw compliance in voordat de data van jouw eerste echte gebruiker bestaat: [Link naar artikel]
+👉 Bouw compliance in voordat de data van jouw eerste echte gebruiker bestaat: https://launchstudio.eu/nl/blog/gdpr-ready-from-day-one-compliance-vibe-coded-apps
 
 #AVG #LaunchStudio #Manifera #AINativeFounder #DataPrivacy

@@ -15,6 +15,6 @@ At **LaunchStudio**, we scope fixes to the two or three things actually broken, 
 
 Aurelie's result: the actual fix cost an eighth of her original quote, and real customers are still paying for it today. 🚀
 
-👉 One scary quote away from shelving a product people already want to pay for? Read this first: [Link to article]
+👉 One scary quote away from shelving a product people already want to pay for? Read this first: https://launchstudio.eu/en/blog/building-software-with-ai-where-founders-get-stuck-after-the-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #IndieHacker #EcommerceTech

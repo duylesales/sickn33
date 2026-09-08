@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the non-technical founder's guide to building a veterinary clinic app app: [Link to article]
+👉 Read the non-technical founder's guide to building a veterinary clinic app app: https://www.manifera.com/blog/veterinary-clinic-app-founder-guide
 
 #VetTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

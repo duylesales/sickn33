@@ -12,6 +12,6 @@
 
 Your organization carries the regulatory liability even when the processor mishandles the data. Review the DPA like it's the most important document in the stack — because it is. 🔍
 
-👉 Read our full deep dive on what a GDPR-compliant vendor DPA must include: [Link to article]
+👉 Read our full deep dive on what a GDPR-compliant vendor DPA must include: https://www.manifera.com/blog/gdpr-data-processing-agreements-what-a-vendor-contract-must-include
 
 #ComplianceOfficer #GDPR #DataProtection #DPA #VendorContract #DataPrivacy #Manifera

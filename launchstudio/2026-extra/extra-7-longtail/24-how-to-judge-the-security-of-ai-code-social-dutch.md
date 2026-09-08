@@ -15,6 +15,6 @@ Bij **LaunchStudio** halen onze technici elke door AI gegenereerde codebase door
 
 Lukas' resultaat: een herschreven, injectieveilige zoekfunctie en een schone dependency-audit, opgeleverd voordat StudyStack openging voor de studentenpopulatie van zijn universiteit. 🚀
 
-👉 Technische oprichter die uw eigen door AI gegenereerde code audit? Dit is het kader dat wij gebruiken: [Link naar artikel]
+👉 Technische oprichter die uw eigen door AI gegenereerde code audit? Dit is het kader dat wij gebruiken: https://launchstudio.eu/nl/blog/how-to-judge-the-security-of-ai-code
 
 #AINativeFounder #LaunchStudio #Manifera #SQLInjection #CodeSecurity

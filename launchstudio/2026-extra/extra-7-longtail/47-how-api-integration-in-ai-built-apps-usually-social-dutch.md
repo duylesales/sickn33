@@ -15,6 +15,6 @@ Bij **LaunchStudio** is API-veerkracht een van de eerste dingen die we controler
 
 Haar resultaat: drie marktplaatssynchronisaties die nu standhouden onder echt, gelijktijdig verkeer van winkeliers. 🚀
 
-👉 Hebt u uw API-integratie alleen maar één verzoek tegelijk getest? Dit is wat gelijktijdigheid blootlegt: [Link naar artikel]
+👉 Hebt u uw API-integratie alleen maar één verzoek tegelijk getest? Dit is wat gelijktijdigheid blootlegt: https://launchstudio.eu/nl/blog/how-api-integration-in-ai-built-apps-usually
 
 #AINativeFounder #LaunchStudio #Manifera #APIIntegration #EcommerceTech

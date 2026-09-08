@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera-engineers die API-integraties op
 
 Viktors resultaat: WoningWijs verwerkte 400+ dagelijkse gebruikers zonder fouten, en 55% lagere OpenAI-kosten. 🚀
 
-👉 Ontdek welke API's in uw app risico lopen op rate limits: [Link naar artikel]
+👉 Ontdek welke API's in uw app risico lopen op rate limits: https://launchstudio.eu/nl/blog/no-code-backend-first-api-rate-limit
 
 #LaunchStudio #API #OpenAI #Manifera #SaaS #RateLimiting #AIApp

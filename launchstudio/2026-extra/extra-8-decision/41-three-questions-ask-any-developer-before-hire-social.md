@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ac
 
 His result: two real gaps closed in 8 days, at a fraction of the rebuild quote he almost accepted. 🚀
 
-👉 Get the questions that actually predict a safe hire: [Link to article]
+👉 Get the questions that actually predict a safe hire: https://launchstudio.eu/en/blog/three-questions-ask-any-developer-before-hire
 
 #TechnicalDueDiligence #IndieHacker #LaunchStudio #Manifera #HiringDevelopers #ProductionReady

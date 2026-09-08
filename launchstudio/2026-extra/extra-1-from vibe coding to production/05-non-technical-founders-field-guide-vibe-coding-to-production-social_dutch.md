@@ -17,6 +17,6 @@ Bij **LaunchStudio** beantwoorden we deze 5 vragen concreet — niet met gerusts
 
 Haar resultaat: één freelancer gaf opnieuw vage geruststelling, de ander gaf toe dat hij het zou moeten uitzoeken. Bij ons kreeg ze in plaats daarvan specifieke antwoorden. 🚀
 
-👉 Stel ons deze 5 vragen over jouw prototype: [Link naar artikel]
+👉 Stel ons deze 5 vragen over jouw prototype: https://launchstudio.eu/nl/blog/non-technical-founders-field-guide-vibe-coding-to-production
 
 #AINativeFounder #LaunchStudio #Manifera #NietTechnischeFounder #VibeCoding

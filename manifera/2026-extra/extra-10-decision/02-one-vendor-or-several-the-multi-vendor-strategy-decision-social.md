@@ -12,6 +12,6 @@ If your single development vendor disappeared tomorrow, how many weeks of delive
 
 The question isn't how many vendors feels safe — it's whether your system boundaries can absorb the seam a second vendor introduces. 🎯
 
-👉 Read our full deep dive on the single-vendor vs. multi-vendor strategy decision: [Link to article]
+👉 Read our full deep dive on the single-vendor vs. multi-vendor strategy decision: https://www.manifera.com/blog/one-vendor-or-several-the-multi-vendor-strategy-decision
 
 #ITManagement #VendorStrategy #VendorRiskManagement #ITProcurement #DORA #NIS2 #Manifera

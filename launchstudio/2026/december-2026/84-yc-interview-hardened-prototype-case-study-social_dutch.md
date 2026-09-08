@@ -14,6 +14,6 @@ Bij LaunchStudio harden we AI-prototypes voor zware investor demo's en accelerat
 
 Sanne beantwoordde alle technische vragen foutloos en werd toegelaten tot YC ($ 500k investering). (€ 3.200 (Investor Hardening) — 8 werkdagen.) ✨
 
-👉 Ontdek het YC hardening stappenplan: [Link naar artikel]
+👉 Ontdek het YC hardening stappenplan: https://launchstudio.eu/nl/blog/yc-interview-hardened-prototype-case-study
 
 #LaunchStudio #Manifera #AISaaS #YCombinator #StartupFunding

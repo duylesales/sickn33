@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 veerkrachtige, enterprise-grade Nod
 
 Nathans platform behaalde een systeembeschikbaarheid van 99,99%, met een event loop vertraging van minder dan 10 ms, zelfs bij 5.000 gelijktijdige beelduploads. (€3.200 (Microservices Scaling Pakket) — productieklaar en binnen 8 werkdagen gedeployed). 🚀
 
-👉 Schaal uw Node.js AI-backend: [Link naar artikel]
+👉 Schaal uw Node.js AI-backend: https://launchstudio.eu/nl/blog/scaling-nodejs-microservices-ai-workloads
 
 #AINativeFounder #LaunchStudio #Manifera #NodeJS #Microservices #AISaaS #WebDevelopment #BackendArchitecture #StartupOpschalen

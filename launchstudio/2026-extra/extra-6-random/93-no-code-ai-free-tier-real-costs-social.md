@@ -15,6 +15,6 @@ At **LaunchStudio**, we work with founders across Ho Chi Minh City to give free-
 
 Her result: BloemVeiling ran through the next peak auction season without a single shared-infrastructure incident. 🚀
 
-👉 Want to know what a migration off your free tier would cost? Check our pricing calculator: [Link to article]
+👉 Want to know what a migration off your free tier would cost? Check our pricing calculator: https://launchstudio.eu/en/blog/no-code-ai-free-tier-real-costs
 
 #AINativeFounder #LaunchStudio #Manifera #NoCodeAI #Infrastructure

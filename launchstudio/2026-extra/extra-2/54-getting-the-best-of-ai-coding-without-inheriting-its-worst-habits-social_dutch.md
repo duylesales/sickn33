@@ -15,6 +15,6 @@ Bij **LaunchStudio** verifiëren we cookiebeveiligingsconfiguratie als standaard
 
 Haar resultaat: sessiecookieconfiguratie gecorrigeerd om alle standaard beschermende vlaggen op te nemen — een gat dat nooit in functionele tests verscheen. 🚀
 
-👉 Freelancer of kleine studio? Wij zijn het engineeringteam achter jouw merk: [Link naar artikel]
+👉 Freelancer of kleine studio? Wij zijn het engineeringteam achter jouw merk: https://launchstudio.eu/nl/blog/getting-the-best-of-ai-coding-without-inheriting-its-worst-habits
 
 #Agency #Freelancer #LaunchStudio #Manifera #WhiteLabel

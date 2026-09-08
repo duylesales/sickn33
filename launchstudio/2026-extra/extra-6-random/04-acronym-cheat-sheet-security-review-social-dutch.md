@@ -15,6 +15,6 @@ Bij **LaunchStudio** doorlopen onze technici precies deze checklist — RLS, RBA
 
 Zijn resultaat: elke datatabel in FactuurGrip handhaaft nu controles op rijniveau-eigendom rechtstreeks in de database zelf, onafhankelijk van wat de frontend ervoor kiest weer te geven. 🚀
 
-👉 Niet zeker welke van deze vijf termen op uw app van toepassing zijn? Boek een gratis intakegesprek van 15 minuten: [Link naar artikel]
+👉 Niet zeker welke van deze vijf termen op uw app van toepassing zijn? Boek een gratis intakegesprek van 15 minuten: https://launchstudio.eu/nl/blog/acronym-cheat-sheet-security-review
 
 #AINativeFounder #LaunchStudio #Manifera #RowLevelSecurity #AppSecurity

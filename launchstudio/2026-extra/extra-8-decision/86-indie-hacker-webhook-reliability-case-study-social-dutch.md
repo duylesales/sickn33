@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door 11+ jaar enterprise software-levering via
 
 Tims resultaat: 68 betalende klanten in 12 uur, 100% succes, nul duplicaten, voor €900. 🚀
 
-👉 Laat uw webhook- en betaalarchitectuur auditen vóór lancering: [Link naar artikel]
+👉 Laat uw webhook- en betaalarchitectuur auditen vóór lancering: https://launchstudio.eu/nl/blog/indie-hacker-webhook-reliability-case-study
 
 #LaunchStudio #Webhooks #Stripe #Manifera #SaaS #IndieHacker #AIApp

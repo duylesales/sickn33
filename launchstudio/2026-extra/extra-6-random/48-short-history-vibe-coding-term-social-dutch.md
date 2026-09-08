@@ -15,6 +15,6 @@ Bij **LaunchStudio** werken onze technici in Singapore, samen met teams in Amste
 
 Zijn resultaat: KassaKoppel verwerkt transactieherhalingen nu correct op alle ondersteunde hardware, en Owen blijft puur door beschrijving bouwen, met periodieke beoordelingen als vast controlepunt. 🚀
 
-👉 Bouwt u volledig door resultaten te beschrijven, zonder ooit de code te lezen? Dit moet u controleren voordat u opschaalt: [Link naar artikel]
+👉 Bouwt u volledig door resultaten te beschrijven, zonder ooit de code te lezen? Dit moet u controleren voordat u opschaalt: https://launchstudio.eu/nl/blog/short-history-vibe-coding-term
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #ProductionReady

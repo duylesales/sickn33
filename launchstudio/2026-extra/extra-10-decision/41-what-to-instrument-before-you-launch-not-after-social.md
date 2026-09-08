@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 His result: 6 of Ferra's first 11 clinics had never completed the real activation step — all from the same referral partner — turning a mystery into a two-day fix, delivered in 9 business days. 🚀
 
-👉 See what your pre-launch event set is missing: [Link to article]
+👉 See what your pre-launch event set is missing: https://launchstudio.eu/en/blog/what-to-instrument-before-you-launch-not-after
 
 #SaaSAnalytics #ProductInstrumentation #IndieHacker #StartupMetrics #LaunchStudio #Manifera

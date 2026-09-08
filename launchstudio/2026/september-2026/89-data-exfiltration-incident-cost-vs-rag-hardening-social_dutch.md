@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Felix's platform behaalde productie-gereedheid: hij lanceerde met nul bevindingen over tenant-isolatie in zijn pre-launch penetratietest, en verwijst nu rechtstreeks naar de geharde architectuur in enterprise-beveiligingsvragenlijsten. (€ 4.200 (Relaunch & Scale Pakket) — RAG-pijplijn geharden en geverifieerd in 11 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/data-exfiltration-incident-cost-vs-rag-hardening
 
 #LaunchStudio #Manifera #AISaaS #RAGSecurity #DataProtection

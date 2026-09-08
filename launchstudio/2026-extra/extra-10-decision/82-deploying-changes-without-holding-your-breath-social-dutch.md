@@ -21,6 +21,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we p
 
 💡 Zo had Ilja Pietersen van Contractbeheer bij elke update 90 seconden downtime door handmatige migraties. Na onze CI/CD-pipeline en one-click rollback steeg haar release-frequentie naar meerdere keren per dag, zónder ook maar 1 seconde storing.
 
-👉 Durft u op elk willekeurig moment met een gerust hart naar productie te deployen? [Link naar artikel]
+👉 Durft u op elk willekeurig moment met een gerust hart naar productie te deployen? https://launchstudio.eu/nl/blog/deploying-changes-without-holding-your-breath
 
 #DevOps #CICD #SoftwareEngineering #SaaS #LaunchStudio #Manifera

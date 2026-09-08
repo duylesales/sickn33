@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Beveiliging verplaatst van kwetsbare code naar de database waar het thuishoort. (€10.500 (Multi-Tenant Audit & RLS Engineering) — binnen 15 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/multi-tenant-architecture-rls-ai
 
 #LaunchStudio #Manifera #AISaaS #MultiTenant #RowLevelSecurity #Supabase #PostgreSQL #RAGSecurity #DataPrivacy #TechFounders

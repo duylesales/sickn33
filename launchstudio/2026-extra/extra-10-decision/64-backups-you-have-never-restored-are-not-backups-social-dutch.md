@@ -24,6 +24,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we b
 
 💡 Zo ontdekte Emre Kaplan van Loonstrook dat zijn S3-bestanden nooit werden meegenomen toen metadata verdween. Na onze PITR-inrichting en gedocumenteerde herstelprocedure duurt een volledige restore slechts 35 minuten.
 
-👉 Heeft u uw back-up ooit één keer écht hersteld? [Link naar artikel]
+👉 Heeft u uw back-up ooit één keer écht hersteld? https://launchstudio.eu/nl/blog/backups-you-have-never-restored-are-not-backups
 
 #DisasterRecovery #SaaSBackups #DevOps #PointInTimeRecovery #LaunchStudio #Manifera

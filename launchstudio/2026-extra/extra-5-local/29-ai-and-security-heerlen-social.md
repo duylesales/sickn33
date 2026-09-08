@@ -15,6 +15,6 @@ At **LaunchStudio**, backed by Manifera — trusted by Vodafone, TNO, and CFLW C
 
 PensioPortal's result: it relaunched with verified access controls and has since passed two employer security reviews without a follow-up question. 🚀
 
-👉 Handling sensitive data with an AI-built app? Have the security conversation before launch, not after: [Link to article]
+👉 Handling sensitive data with an AI-built app? Have the security conversation before launch, not after: https://launchstudio.eu/en/blog/29-ai-and-security-heerlen
 
 #AINativeFounder #LaunchStudio #Manifera #AISecurityRisk #Heerlen

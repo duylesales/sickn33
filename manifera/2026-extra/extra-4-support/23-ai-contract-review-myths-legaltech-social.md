@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Retire all 3 biggest myths about ai contract review legaltech: [Link to article]
+👉 Retire all 3 biggest myths about ai contract review legaltech: https://www.manifera.com/blog/ai-contract-review-myths-legaltech
 
 #LegalTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

@@ -15,6 +15,6 @@ Bij **LaunchStudio** is dit gat dichten standaard in ons Launch Ready-pakket. Ge
 
 Haar resultaat: elke documentquery weigert nu verzoeken buiten de eigen scope van het aanvragende kantoor — gedicht over elk bestaand en toekomstig account. 🚀
 
-👉 Beschrijf jouw project — we reageren binnen 1 werkdag: [Link naar artikel]
+👉 Beschrijf jouw project — we reageren binnen 1 werkdag: https://launchstudio.eu/nl/blog/what-being-ai-native-actually-requires-after-demo-works
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #SaaS

@@ -12,6 +12,6 @@
 
 The lowest number on the page is rarely the lowest total cost. 🧮
 
-👉 Read our full deep dive on the mobile app cost breakdown vendors skip: [Link to article]
+👉 Read our full deep dive on the mobile app cost breakdown vendors skip: https://www.manifera.com/blog/mobile-app-development-cost-line-item-breakdown
 
 #CEO #MobileAppDevelopmentCost #AppDevelopment #TotalCostOfOwnership #VendorQuote #Manifera

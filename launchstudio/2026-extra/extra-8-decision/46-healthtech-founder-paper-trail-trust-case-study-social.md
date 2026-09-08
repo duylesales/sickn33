@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering ex
 
 Her result: stalled deal unblocked within a week of handing over the file. 🚀
 
-👉 See how the paper trail closed her deal: [Link to article]
+👉 See how the paper trail closed her deal: https://launchstudio.eu/en/blog/healthtech-founder-paper-trail-trust-case-study
 
 #HealthTech #SaaS #LaunchStudio #Manifera #ComplianceReady #StartupTrust

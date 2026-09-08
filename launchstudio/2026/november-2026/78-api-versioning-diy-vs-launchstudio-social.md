@@ -14,6 +14,6 @@ At LaunchStudio, we build API versioning strategy before the first breaking chan
 
 Ben shipped his next 4 backend changes, including a major schema change, with zero partner incidents — contract tests caught 2 would-be breaks first. (€2,700 (Launch & Grow Package) — 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/api-versioning-diy-vs-launchstudio
 
 #LaunchStudio #Manifera #AISaaS #APIDesign #EngineeringStrategy

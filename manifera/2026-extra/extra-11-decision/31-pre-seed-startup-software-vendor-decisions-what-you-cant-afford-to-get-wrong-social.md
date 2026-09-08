@@ -12,6 +12,6 @@ Six weeks post-close on a €320K pre-seed round, one founder had burned 40% of 
 
 Runway and time are the two things you can't get back once a bad vendor decision spends them. 🕐
 
-👉 Read our full deep dive on pre-seed vendor decisions: [Link to article]
+👉 Read our full deep dive on pre-seed vendor decisions: https://www.manifera.com/blog/pre-seed-startup-software-vendor-decisions-what-you-cant-afford-to-get-wrong
 
 #PreSeed #StartupFounders #MVPDevelopment #TechDueDiligence #EarlyStageStartup #Manifera

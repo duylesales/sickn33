@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on monolith microservices migration mandate: [Link to article]
+👉 Read our full deep dive on monolith microservices migration mandate: https://www.manifera.com/blog/monolith-to-microservices-migration-mandate
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

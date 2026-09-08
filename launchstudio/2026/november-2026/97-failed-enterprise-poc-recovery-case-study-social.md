@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been fixing exactly this class of production engineer
 
 One founder's demo froze in front of a 12-person buying committee — we diagnosed the table locks within a day, rebuilt the query layer, and the second demo closed the deal. (€4,200, Relaunch & Scale Package — 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/failed-enterprise-poc-recovery-case-study
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #TechFounders

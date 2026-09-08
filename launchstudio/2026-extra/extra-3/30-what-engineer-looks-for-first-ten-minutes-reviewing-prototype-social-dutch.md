@@ -15,6 +15,6 @@ Bij **LaunchStudio** passen wij precies deze consistente, op explosieradius geor
 
 Zijn resultaat: de blootgestelde sleutel werd dezelfde dag geroteerd, waarmee een echte, actieve blootstelling werd gedicht die had bestaan sinds de vroegste commits van VrachtVolger. 🚀
 
-👉 Benieuwd wat de eerste tien minuten in uw codebase zouden vinden? Laten we kijken: [Link naar artikel]
+👉 Benieuwd wat de eerste tien minuten in uw codebase zouden vinden? Laten we kijken: https://launchstudio.eu/nl/blog/what-engineer-looks-for-first-ten-minutes-reviewing-prototype
 
 #AINativeFounder #LaunchStudio #Manifera #CodeReview #SecretsManagement

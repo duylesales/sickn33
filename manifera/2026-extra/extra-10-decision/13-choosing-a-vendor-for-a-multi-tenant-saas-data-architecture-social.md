@@ -12,6 +12,6 @@ Tenant #41 signs a 50,000-seat deal, runs a heavy nightly report against your sh
 
 The vendor who asks about your tenant growth curve before proposing an architecture is the one who's actually built this before. 🎯
 
-👉 Read our full deep dive on choosing a vendor for multi-tenant SaaS architecture: [Link to article]
+👉 Read our full deep dive on choosing a vendor for multi-tenant SaaS architecture: https://www.manifera.com/blog/choosing-a-vendor-for-a-multi-tenant-saas-data-architecture
 
 #SaaS #CTO #SoftwareArchitecture #MultiTenant #DataArchitecture #Manifera

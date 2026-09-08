@@ -16,6 +16,6 @@ Bij **LaunchStudio**, gesteund door Manifera's 11+ jaar ervaring met niet-techni
 
 Ilses resultaat: volledig begrip van haar eigen rapport, zelfstandig een financieringsvragenlijst beantwoord, PleegNet live in 12 werkdagen voor €2.300. 🚀
 
-👉 Krijg een audit die u zelf daadwerkelijk kunt lezen: [Link naar artikel]
+👉 Krijg een audit die u zelf daadwerkelijk kunt lezen: https://launchstudio.eu/nl/blog/non-technical-founder-reads-security-audit-case-study
 
 #LaunchStudio #Beveiligingsaudit #AINative #Manifera #SaaS #Oprichters #Cybersecurity

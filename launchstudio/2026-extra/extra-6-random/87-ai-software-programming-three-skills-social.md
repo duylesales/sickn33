@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers, working from Ho Chi Minh City, routinely ste
 
 Milan's result: KustBeheer now supports multiple property managers per account, and the second customer was onboarded the same week the fix shipped. 🚀
 
-👉 Wondering which of the three skills your product might be missing? Talk to an engineer who understands AI-generated code: [Link to article]
+👉 Wondering which of the three skills your product might be missing? Talk to an engineer who understands AI-generated code: https://launchstudio.eu/en/blog/ai-software-programming-three-skills
 
 #AINativeFounder #LaunchStudio #Manifera #DataArchitecture #AICoding

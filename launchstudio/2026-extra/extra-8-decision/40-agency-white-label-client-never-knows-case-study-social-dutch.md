@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar productie-engineering
 
 Zijn resultaat: klant leverde een productieklaar product op schema, schreef het volledig toe aan het eigen proces van het bureau. 🚀
 
-👉 Bespreek een white-label regeling voor uw klantenbestand: [Link naar artikel]
+👉 Bespreek een white-label regeling voor uw klantenbestand: https://launchstudio.eu/nl/blog/agency-white-label-client-never-knows-case-study
 
 #BureauLeven #WhiteLabel #FreelanceBureau #LaunchStudio #Manifera #AICoding

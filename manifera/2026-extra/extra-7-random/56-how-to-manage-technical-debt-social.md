@@ -12,6 +12,6 @@
 
 We spent a year paying down the biggest, most visible debt and could barely tell the difference in how fast we were moving. 🛡️
 
-👉 Read our full deep dive on how to manage technical debt: [Link to article]
+👉 Read our full deep dive on how to manage technical debt: https://www.manifera.com/blog/how-to-manage-technical-debt
 
 #TechnicalDebt #CTO #EngineeringVelocity #Manifera

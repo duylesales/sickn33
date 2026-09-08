@@ -14,6 +14,6 @@ Bij **LaunchStudio** plannen wij migraties al sinds 2014 rond werkelijk gebruiks
 
 Nadia's migratie werd voltooid zonder downtime voor abonnees en zonder gegevensverlies, waarbij twee data-inconsistenties werden opgevangen tijdens validatie die onder een big-bang overschakeling aanbevelingen zouden hebben gebroken. (€ 3.900, Relaunch & Scale Pakket — gefaseerde migratie voltooid over 12 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/phased-migration-vs-big-bang-rebuild
 
 #LaunchStudio #Manifera #AISaaS #Databasemigratie #TechOprichters

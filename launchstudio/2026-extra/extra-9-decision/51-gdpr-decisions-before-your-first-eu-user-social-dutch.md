@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in het bouwe
 
 Het resultaat in de praktijk: een auditeerbare toestemmingsregistratie en een werkend verwijderproces, nog vóór het eerste gesprek met een enterprise-klant. 🚀
 
-👉 Vertel ons over uw project — binnen één werkdag hoort u wat uw aanmeldflow nog mist voor volledige AVG-compliance: [Link naar artikel]
+👉 Vertel ons over uw project — binnen één werkdag hoort u wat uw aanmeldflow nog mist voor volledige AVG-compliance: https://launchstudio.eu/nl/blog/gdpr-decisions-before-your-first-eu-user
 
 #AVG #GDPR #PrivacyVoorStartups #SaaSCompliance #LaunchStudio #Manifera

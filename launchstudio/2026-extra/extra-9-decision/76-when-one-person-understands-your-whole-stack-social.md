@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, o
 
 Her result: after one weekend auditing access, Ilse resolved a billing issue herself in twenty minutes during her co-founder's nine-day unreachable stretch. 🚀
 
-👉 Book a 15-minute call to talk through a handoff document for your stack: [Link to article]
+👉 Book a 15-minute call to talk through a handoff document for your stack: https://launchstudio.eu/en/blog/when-one-person-understands-your-whole-stack
 
 #SaaS #KeyPersonRisk #LaunchStudio #Manifera #StartupGrowth #FounderLife

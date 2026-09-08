@@ -16,6 +16,6 @@ Behind **LaunchStudio** is Manifera's team of 120+ engineers — 160+ delivered 
 
 Her result: a short findings document with two screenshots got the founder to approve the revised scope within the hour — no further negotiation. 🚀
 
-👉 Describe the project and get language you can use with your client: [Link to article]
+👉 Describe the project and get language you can use with your client: https://launchstudio.eu/en/blog/managing-client-expectations-about-ai-built-code
 
 #AgencyLife #WhiteLabel #AICoding #ClientCommunication #LaunchStudio #Manifera

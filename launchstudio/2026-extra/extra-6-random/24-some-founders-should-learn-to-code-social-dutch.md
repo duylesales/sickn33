@@ -15,6 +15,6 @@ Bij **LaunchStudio**, ondersteund door meer dan 11 jaar productie-engineeringerv
 
 Zijn resultaat: de importfunctie van OogstData werd volledig hersteld met correcte foutzichtbaarheid, en de pilotrelatie werd gered nadat een verzette demo twee weken later vlekkeloos verliep. 🚀
 
-👉 Gaat uw app nu kapot voor een klant? Boek een gratis intro-gesprek van 15 minuten voordat u een tutorial opent: [Link naar artikel]
+👉 Gaat uw app nu kapot voor een klant? Boek een gratis intro-gesprek van 15 minuten voordat u een tutorial opent: https://launchstudio.eu/nl/blog/some-founders-should-learn-to-code
 
 #AINativeFounder #LaunchStudio #Manifera #LearnToCode #ProductionSupport

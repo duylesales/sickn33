@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the transit fare capping compliance case study: [Link to article]
+👉 See the transit fare capping compliance case study: https://www.manifera.com/blog/transit-fare-capping-case-study
 
 #TransitTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

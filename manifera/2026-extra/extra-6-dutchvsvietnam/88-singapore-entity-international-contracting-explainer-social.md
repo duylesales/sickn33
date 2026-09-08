@@ -12,6 +12,6 @@
 
 The structure that answers your due diligence questions clearly is a convenience. The one that can't is the actual red flag. 🛡️
 
-👉 Read our full deep dive on singapore entity international contracting explainer: [Link to article]
+👉 Read our full deep dive on singapore entity international contracting explainer: https://www.manifera.com/blog/singapore-entity-international-contracting-explainer
 
 #CFO #ContractStructure #Amsterdam #Vietnam #DueDiligence #Manifera

@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), helpen we S
 
 💡 Zo voorkwam Sander Kuipers van Verso dat hij een toevalstreffer uitrolde en ontdekte hij via 5 telefoontjes dat zijn prijstabel verwarrend was. Conversie steeg daarna met 28%.
 
-👉 Bent u groot genoeg om te A/B-testen? Bereken het zelf: [Link naar artikel]
+👉 Bent u groot genoeg om te A/B-testen? Bereken het zelf: https://launchstudio.eu/nl/blog/are-you-big-enough-to-ab-test-yet
 
 #ABTesting #SaaSGrowth #ConversionRateOptimization #StartupMetrics #LaunchStudio #Manifera

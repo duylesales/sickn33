@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers in Ho Chi Minh City treat schema review as a 
 
 The result: SchemaGrip's billing tables now reject duplicate charges at the database layer, and the treasurer got her refund within the day. 🚀
 
-👉 Not sure your AI-generated schema has this gap? Get a plain-spoken answer through our process: [Link to article]
+👉 Not sure your AI-generated schema has this gap? Get a plain-spoken answer through our process: https://launchstudio.eu/en/blog/ai-for-db-schema-design
 
 #AINativeFounder #LaunchStudio #Manifera #DatabaseDesign #AISaaS

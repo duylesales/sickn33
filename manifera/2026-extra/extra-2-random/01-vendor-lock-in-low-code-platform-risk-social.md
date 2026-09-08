@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full deep dive on vendor lock low code platform risk: [Link to article]
+👉 Read our full deep dive on vendor lock low code platform risk: https://www.manifera.com/blog/vendor-lock-in-low-code-platform-risk
 
 #CustomSoftware #SoftwareEngineering #TechLeadership #CTO #SoftwareArchitecture #Manifera

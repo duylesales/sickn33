@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of enterprise delivery, with
 
 Sjoerd spent €8,441 total over 10 months versus an estimated €82,000+ for a full-time hire — funding a sales rep instead and growing HuurVast to €14,500 MRR. 🚀
 
-👉 Compare the cost of your next technical hire against a LaunchStudio proposal: [Link to article]
+👉 Compare the cost of your next technical hire against a LaunchStudio proposal: https://launchstudio.eu/en/blog/launchstudio-vs-full-time-hire
 
 #LaunchStudio #Manifera #StartupHiring #SaaSFounders #FractionalEngineering #FixedPrice #Runway

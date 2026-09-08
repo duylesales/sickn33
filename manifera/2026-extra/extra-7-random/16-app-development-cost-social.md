@@ -12,6 +12,6 @@
 
 The first quote looked like a bargain because it quietly assumed the easy version of a problem that was never easy. 🛡️
 
-👉 Read our full deep dive on app development cost: [Link to article]
+👉 Read our full deep dive on app development cost: https://www.manifera.com/blog/app-development-cost
 
 #AppDevelopment #CFO #CostComparison #Manifera

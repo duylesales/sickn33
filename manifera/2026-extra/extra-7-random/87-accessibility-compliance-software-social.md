@@ -12,6 +12,6 @@ A dashboard showing zero accessibility errors for over a year — and it turned 
 
 A clean scan and real accessibility are not the same thing. ✅
 
-👉 Read our full deep dive on accessibility compliance software: [Link to article]
+👉 Read our full deep dive on accessibility compliance software: https://www.manifera.com/blog/accessibility-compliance-software
 
 #Accessibility #WCAG #ADACompliance #CMO #Manifera

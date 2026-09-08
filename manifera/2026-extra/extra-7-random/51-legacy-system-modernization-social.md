@@ -12,6 +12,6 @@
 
 We tried to rewrite everything at once and got fourteen months in with nothing to show. The second approach gave us something working in weeks. 🛡️
 
-👉 Read our full deep dive on legacy system modernization: [Link to article]
+👉 Read our full deep dive on legacy system modernization: https://www.manifera.com/blog/legacy-system-modernization
 
 #LegacyModernization #CTO #TechnicalDebt #Manifera

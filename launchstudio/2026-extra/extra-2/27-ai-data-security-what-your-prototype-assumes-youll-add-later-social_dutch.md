@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze volledige route-inventarisatie standaard in ons Lau
 
 Zijn resultaat: de debugroute volledig verwijderd, de volledige routeset geauditeerd, een blootgestelde credential uit voorzorg geroteerd. 🚀
 
-👉 Stuur een beschrijving van jouw project — verwacht een reactie binnen een werkdag: [Link naar artikel]
+👉 Stuur een beschrijving van jouw project — verwacht een reactie binnen een werkdag: https://launchstudio.eu/nl/blog/ai-data-security-what-your-prototype-assumes-youll-add-later
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #VibeCoding

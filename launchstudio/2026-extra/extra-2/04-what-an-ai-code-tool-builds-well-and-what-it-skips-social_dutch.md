@@ -15,6 +15,6 @@ Bij **LaunchStudio** is deze route-voor-route-toegangsreview onderdeel van ons L
 
 Haar resultaat: onafhankelijke server-side rolverificatie toegevoegd aan elke adminroute, en dicht publieke bereikbaarheid volledig. 🚀
 
-👉 Praat met een engineer die AI-gegenereerde code begrijpt: [Link naar artikel]
+👉 Praat met een engineer die AI-gegenereerde code begrijpt: https://launchstudio.eu/nl/blog/what-an-ai-code-tool-builds-well-and-what-it-skips
 
 #IndieHacker #LaunchStudio #Manifera #AISecure #VibeCoding

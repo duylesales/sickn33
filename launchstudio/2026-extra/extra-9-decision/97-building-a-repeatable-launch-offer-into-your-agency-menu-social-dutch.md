@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 160+ opgeleverde softwareproje
 
 Haar resultaat: Lotte's doorlooptijd van aanvraag naar getekende offerte daalde van negen naar minder dan drie dagen, en haar bureau sloot zes projecten in plaats van vier. 🚀
 
-👉 Spar met ons over het inrichten van uw vaste dienstenmenu: [Link naar artikel]
+👉 Spar met ons over het inrichten van uw vaste dienstenmenu: https://launchstudio.eu/nl/blog/een-schaalbaar-launch-aanbod-opnemen-in-uw-bureaudiensten
 
 #BureauLeven #WhiteLabel #AgencyOwner #ProductizedServices #LaunchStudio #Manifera

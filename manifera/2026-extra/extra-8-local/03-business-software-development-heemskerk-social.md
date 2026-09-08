@@ -12,6 +12,6 @@ A Heemskerk CFO lines up three vendor quotes for tailored business software — 
 
 The real question isn't your day rate. It's what's driving the total. 🧮
 
-👉 Read our full deep dive on business software development Heemskerk: [Link to article]
+👉 Read our full deep dive on business software development Heemskerk: https://www.manifera.com/blog/business-software-development-heemskerk
 
 #Heemskerk #IJmond #NoordHolland #CFO #SoftwareCosts #BusinessSoftware #Manifera

@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we exact dit type audio-architectuur en streamingpro
 
 Nora's spraakbot werd vederlicht en natuurlijk: De audiolatentie daalde naar minder dan 600ms, waardoor gesprekken direct natuurlijk aanvoelden. (€2.100 (Voice Streaming Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe wij dit hebben opgelost: [Link naar artikel]
+👉 Ontdek hoe wij dit hebben opgelost: https://launchstudio.eu/nl/blog/voice-ai-integrating-elevenlabs-saas
 
 #LaunchStudio #Manifera #AISaaS #VoiceAI #ElevenLabs #WebSockets #WebRTC #TechFounders #StartupOpschalen

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 See the recycling reporting compliance compliance case study: [Link to article]
+👉 See the recycling reporting compliance compliance case study: https://www.manifera.com/blog/recycling-reporting-compliance-case-study
 
 #CircularEconomy #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

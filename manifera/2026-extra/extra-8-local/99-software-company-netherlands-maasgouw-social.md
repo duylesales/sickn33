@@ -12,6 +12,6 @@ Two vendor proposals look identical on price and features. The terms that actual
 
 A few thousand euros of due diligence protects against a €50,000-€100,000 recovery bill if a vendor relationship collapses mid-build.
 
-👉 Read our full deep dive on software company Netherlands Maasgouw: [Link to article]
+👉 Read our full deep dive on software company Netherlands Maasgouw: https://www.manifera.com/blog/software-company-netherlands-maasgouw
 
 #Maasgouw #Limburg #InlandShipping #VendorDueDiligence #CFO #Manifera

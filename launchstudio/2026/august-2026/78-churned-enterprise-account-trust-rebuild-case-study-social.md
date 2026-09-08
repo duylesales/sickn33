@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been rebuilding exactly this kind of enterprise trust
 
 Yusuf's account came back: the fintech company reversed its cancellation and signed a renewed annual contract with added quarterly security review requirements, twelve business days after the original cancellation notice. (€4,700 (Enterprise Hardening Package) — 10 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/churned-enterprise-account-trust-rebuild-case-study
 
 #LaunchStudio #Manifera #AISaaS #EnterpriseSales #ChurnRecovery

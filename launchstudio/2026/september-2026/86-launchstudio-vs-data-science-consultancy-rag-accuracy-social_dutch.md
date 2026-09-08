@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen wij dit type productie-engineeringprobleem al sinds 
 
 Het resultaat van Felix: de verwijzingsnauwkeurigheid steeg van 61% naar 93%, en de evaluatiepijplijn ving drie weken later een embedding-modelregressie op voordat een klant het opmerkte (€3.100, Relaunch & Scale Pakket — 10 werkdagen). 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/launchstudio-vs-data-science-consultancy-rag-accuracy
 
 #LaunchStudio #Manifera #AISaaS #RAG #LLMOps

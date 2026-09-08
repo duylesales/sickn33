@@ -15,6 +15,6 @@ At **LaunchStudio**, our team walks every AI-built prototype past the same launc
 
 Wouter's result: encrypted sensitive data, rate limiting in place, and proper ownership checks added — with PetPals' interface completely unchanged. 🚀
 
-👉 Think HTTPS and a login screen mean your AI prototype is secure? Here's what's actually missing: [Link to article]
+👉 Think HTTPS and a login screen mean your AI prototype is secure? Here's what's actually missing: https://launchstudio.eu/en/blog/what-security-for-ai-prototypes-actually-requires-before
 
 #AINativeFounder #LaunchStudio #Manifera #DataEncryption #AISecurity

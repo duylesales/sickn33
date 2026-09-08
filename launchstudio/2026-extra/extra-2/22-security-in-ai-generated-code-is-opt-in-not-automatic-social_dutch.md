@@ -15,6 +15,6 @@ Bij **LaunchStudio** controleren we precies dit soort opslagconfiguratie als sta
 
 Haar resultaat: geauthenticeerde, ondertekende toegang vereist voor elk document, alle publieke URL's vervangen, blootstelling platformbreed gedicht. 🚀
 
-👉 Stuur de link van jouw prototype voor een gratis review: [Link naar artikel]
+👉 Stuur de link van jouw prototype voor een gratis review: https://launchstudio.eu/nl/blog/security-in-ai-generated-code-is-opt-in-not-automatic
 
 #AINativeFounder #LaunchStudio #Manifera #AISecure #AIPrivacy

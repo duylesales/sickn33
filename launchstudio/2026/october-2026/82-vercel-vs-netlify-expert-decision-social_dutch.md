@@ -14,6 +14,6 @@ Bij **LaunchStudio** maken wij precies dit soort infrastructuurbeslissingen al s
 
 Afgekapte AI-antwoorden daalden van 15% naar vrijwel nul, en de app van Sanne verwerkte een piek van 6.000 bezoekers zonder één timeout. (€ 1.600 — Launch & Grow Pakket, gemigreerd en gedeployed in 7 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/vercel-vs-netlify-expert-decision
 
 #LaunchStudio #Manifera #AISaaS #Vercel #Netlify

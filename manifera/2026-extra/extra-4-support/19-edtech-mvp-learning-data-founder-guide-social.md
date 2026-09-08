@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read the founder's guide to building a edtech learning data: [Link to article]
+👉 Read the founder's guide to building a edtech learning data: https://www.manifera.com/blog/edtech-mvp-learning-data-founder-guide
 
 #EdTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

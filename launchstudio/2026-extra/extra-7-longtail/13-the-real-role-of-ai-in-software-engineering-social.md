@@ -14,6 +14,6 @@ At **LaunchStudio**, catching the business logic an AI tool was never explicitly
 
 Thijs's result: an invoicing flow that now catches the exact scenario he "hadn't even thought about" testing — because why would he have tested it on himself? 🚀
 
-👉 Curious what part of "software engineering" your AI tool actually skipped? Read the five-step breakdown: [Link to article]
+👉 Curious what part of "software engineering" your AI tool actually skipped? Read the five-step breakdown: https://launchstudio.eu/en/blog/the-real-role-of-ai-in-software-engineering-teams-today
 
 #AINativeFounder #LaunchStudio #Manifera #LovableAI #SoftwareEngineering

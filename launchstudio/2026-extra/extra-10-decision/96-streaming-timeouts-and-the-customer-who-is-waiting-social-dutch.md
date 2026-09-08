@@ -23,6 +23,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), bouwen we r
 
 💡 Zo zag Nora Bakkali van Contractlens dat 1 op de 5 contractanalyses vastliep op serverless time-outs terwijl ze 4x betaalde voor dezelfde documenten. Binnen 3 dagen bouwden we een asynchrone worker-queue met progress tracking: storingen daalden direct naar exact nul.
 
-👉 Loopt uw AI-functie overmorgen vast als een klant een PDF van 40 pagina's uploadt? [Link naar artikel]
+👉 Loopt uw AI-functie overmorgen vast als een klant een PDF van 40 pagina's uploadt? https://launchstudio.eu/nl/blog/streaming-timeouts-and-the-customer-who-is-waiting
 
 #ArtificialIntelligence #CloudComputing #SaaS #UXDesign #WebDevelopment #LaunchStudio #Manifera

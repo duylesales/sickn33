@@ -14,6 +14,6 @@ Bij **LaunchStudio** dichten wij precies deze freelancer-naar-productie-kloof al
 
 De MRR groeide van €640 naar ongeveer €10.200 over 340 betalende accounts binnen vier maanden na de fix. (€2.700 Launch & Grow-pakket — 13 werkdagen.) 🚀
 
-👉 Bekijk hoe wij het oplosten: [Link naar artikel]
+👉 Bekijk hoe wij het oplosten: https://launchstudio.eu/nl/blog/freelancer-to-launchstudio-10k-mrr-case-study
 
 #LaunchStudio #Manifera #AISaaS #MRRGroei #StartupOprichters

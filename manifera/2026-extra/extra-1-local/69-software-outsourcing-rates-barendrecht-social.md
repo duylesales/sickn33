@@ -12,6 +12,6 @@
 
 Similar day rate. Not the same engagement. Ask what's underneath. 🛡️
 
-👉 Read our full deep dive on software outsourcing rates barendrecht: [Link to article]
+👉 Read our full deep dive on software outsourcing rates barendrecht: https://www.manifera.com/blog/software-outsourcing-rates-barendrecht
 
 #Barendrecht #ZuidHolland #CTO #SoftwareOutsourcing #RateTransparency #Manifera

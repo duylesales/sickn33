@@ -20,6 +20,6 @@ Bij **LaunchStudio**, ondersteund door Manifera (11+ jaar ervaring), richten we 
 
 💡 Zo ontdekte Bram Oosterhuis van Trainly dat zijn welkomstmails bij 71% van zijn gebruikers in de spambox belandden door een ontbrekend DKIM-record. Na 2 dagen werk steeg zijn terugkeerpercentage van 6% naar 29%!
 
-👉 Belanden uw onboarding-mails in de inbox of in de spam? [Link naar artikel]
+👉 Belanden uw onboarding-mails in de inbox of in de spam? https://launchstudio.eu/nl/blog/the-welcome-emails-that-earn-a-second-visit
 
 #SaaSEmail #EmailDeliverability #DKIM #UserOnboarding #LaunchStudio #Manifera

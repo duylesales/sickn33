@@ -12,6 +12,6 @@ She inherited the contracts, the lease, and the bank relationships in an orderly
 
 A generational handover is the cleanest opportunity you'll get to reset vendor relationships onto a professional footing. 🔄
 
-👉 Read our full deep dive on choosing a vendor during a family business handover: [Link to article]
+👉 Read our full deep dive on choosing a vendor during a family business handover: https://www.manifera.com/blog/choosing-a-vendor-for-a-family-business-generational-handover
 
 #FamilyBusiness #GenerationalHandover #SuccessionPlanning #NextGenLeadership #SMEFounder #Manifera

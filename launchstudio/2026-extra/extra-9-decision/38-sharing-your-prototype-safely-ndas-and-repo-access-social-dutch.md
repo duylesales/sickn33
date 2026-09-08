@@ -16,6 +16,6 @@ Bij **LaunchStudio**, ondersteund door Manifera's 11+ jaar ervaring in software 
 
 Het resultaat: haar backend werd in negen dagen gehard voor €2.650, kandidaatzichtbaarheid werd verankerd in database policies, en het contract werd aangevuld met een AVG-verwerkersovereenkomst. 🚀
 
-👉 Vraag het toegangs- en beveiligingsbeleid op en vergelijk de antwoorden: [Link naar artikel]
+👉 Vraag het toegangs- en beveiligingsbeleid op en vergelijk de antwoorden: https://launchstudio.eu/nl/blog/sharing-your-prototype-safely-ndas-and-repo-access
 
 #AIOprichter #SoftwareBeveiliging #AVG #CodeAudit #LaunchStudio #Manifera

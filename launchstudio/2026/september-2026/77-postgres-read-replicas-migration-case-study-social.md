@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been solving exactly this class of production enginee
 
 Peak-hour query latency dropped from 2.1 seconds to 310 milliseconds, with zero downtime during the migration (€2,900 (Relaunch & Scale Package) — completed in 7 business days.). 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/postgres-read-replicas-migration-case-study
 
 #LaunchStudio #Manifera #AISaaS #PostgreSQL #DatabaseScaling

@@ -15,6 +15,6 @@ Bij **LaunchStudio** passen we Manifera's beoordelingsstandaard van meer dan 160
 
 Zijn resultaat: DockFlow doorstond zijn eerste serieuze inkoopbeoordeling en tekende zijn eerste logistieke klant uit de havensector van Terneuzen. 🚀
 
-👉 Staat u voor een inkoopvraag die u nog niet kunt beantwoorden? Laat eerst een gedocumenteerde beoordeling uitvoeren: [Link naar artikel]
+👉 Staat u voor een inkoopvraag die u nog niet kunt beantwoorden? Laat eerst een gedocumenteerde beoordeling uitvoeren: https://launchstudio.eu/nl/blog/code-of-ai-terneuzen
 
 #AINativeFounder #LaunchStudio #Manifera #CodeOfAI #Terneuzen

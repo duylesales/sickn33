@@ -12,6 +12,6 @@
 
 The code always worked. Engineering it to still work well a year later is the part that actually costs something. 🛡️
 
-👉 Read our full deep dive on software engineering: [Link to article]
+👉 Read our full deep dive on software engineering: https://www.manifera.com/blog/software-engineering
 
 #SoftwareEngineering #CTO #TechnicalDebt #EngineeringDiscipline #Manifera

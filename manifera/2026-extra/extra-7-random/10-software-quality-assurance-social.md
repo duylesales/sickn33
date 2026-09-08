@@ -12,6 +12,6 @@
 
 We'd been told "comprehensive coverage" for two years. It meant almost nothing about the 15% of the codebase that actually mattered. 🛡️
 
-👉 Read our full deep dive on software quality assurance: [Link to article]
+👉 Read our full deep dive on software quality assurance: https://www.manifera.com/blog/software-quality-assurance
 
 #QualityAssurance #VPEngineering #SoftwareTesting #Manifera

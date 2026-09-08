@@ -14,6 +14,6 @@ At **LaunchStudio**, we've been architecting real-time, high-concurrency Node.js
 
 Mason's text stream rendered smoothly in real-time, providing an instantaneous typewriter experience for all active users. 🚀
 
-👉 Scale your SSE streams: [Link to article]
+👉 Scale your SSE streams: https://launchstudio.eu/en/blog/handling-concurrent-sse-connections-nodejs-ai
 
 #AINativeFounder #LaunchStudio #Manifera #ServerSentEvents #NodeJS

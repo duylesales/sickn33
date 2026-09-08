@@ -17,6 +17,6 @@ Zijn conversie steeg van 2% naar 11% in zes weken — puur door tastbaar en auth
 
 🧠 De psychologie: "vertrouwd door bedrijven wereldwijd" = nul vertrouwen. "Gebruikt door 87 fysiotherapeuten in Overijssel" = direct vertrouwen, omdat het controleerbaar klinkt.
 
-👉 Lees meer over de psychologie achter AI-vertrouwen: [Link naar artikel]
+👉 Lees meer over de psychologie achter AI-vertrouwen: https://launchstudio.eu/nl/blog/psychology-ai-generated-content-trust
 
 #AINativeFounder #LaunchStudio #Manifera #TrustSignals #ConversionRate #SaaS #TechFounders #StartupOpschalen

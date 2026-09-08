@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: Marieke's second attempt — payment integration and access control, fixed scope agreed in writing before work began — launched in 10 business days on the original quoted price, with zero scope disputes. 🚀
 
-👉 Describe exactly what went wrong last time: [Link to article]
+👉 Describe exactly what went wrong last time: https://launchstudio.eu/en/blog/ive-been-burned-before-what-to-do-differently
 
 #IndieHacker #ProductionReady #SaaS #FounderLife #LaunchStudio #Manifera

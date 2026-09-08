@@ -14,6 +14,6 @@ Bij **LaunchStudio** zijn white-label beveiligingsbeoordelingen voor bureaus die
 
 Lukas' resultaat: de fix werd opgeleverd onder de eigen branding van zijn bureau — zijn klant heeft nooit geweten dat er een gespecialiseerde partner bij betrokken was. 🚀
 
-👉 Neemt u AI-prototypes van klanten aan onder de naam van uw eigen bureau? Ken deze checklist vooraf: [Link naar artikel]
+👉 Neemt u AI-prototypes van klanten aan onder de naam van uw eigen bureau? Ken deze checklist vooraf: https://launchstudio.eu/nl/blog/where-security-in-ai-generated-code-usually-breaks-down-first
 
 #AINativeFounder #LaunchStudio #Manifera #WhiteLabel #AppSecurity

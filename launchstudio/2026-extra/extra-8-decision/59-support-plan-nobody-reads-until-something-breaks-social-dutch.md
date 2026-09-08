@@ -16,6 +16,6 @@ Bij **LaunchStudio** verdwijnt Manifera's team niet na de deployment. €49/maan
 
 Maaikes resultaat: storing opgelost binnen 90 minuten na contact — en sindsdien twee problemen opgevangen vóórdat ze incidenten werden. 🚀
 
-👉 Vraag naar het Launch & Grow Package bij uw offerte: [Link naar artikel]
+👉 Vraag naar het Launch & Grow Package bij uw offerte: https://launchstudio.eu/nl/blog/support-plan-nobody-reads-until-something-breaks
 
 #LaunchStudio #Support #VibeCoding #Manifera #SaaS #Uptime #Monitoring

@@ -12,6 +12,6 @@
 
 Real-time reliability engineered for genuine peak tempo. 🛡️
 
-👉 Read our full deep dive on software engineering team roosendaal: [Link to article]
+👉 Read our full deep dive on software engineering team roosendaal: https://www.manifera.com/blog/software-engineering-team-roosendaal
 
 #Roosendaal #NoordBrabant #RailFreight #VPEngineering #RealTimeData #SoftwareEngineering #Manifera

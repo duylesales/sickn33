@@ -15,6 +15,6 @@ Bij **LaunchStudio** bestaat ons white-label partnerschap precies hiervoor — b
 
 Frederik's resultaat: MedNote draait nu met versleutelde notities, volledige toegangslogging en geverifieerde autorisatie — en zijn klant heeft nooit geweten dat de kloof had bestaan. 🚀
 
-👉 Ondertekent u de lancering van een door AI gebouwde app van een klant? Doorloop deze checklist eerst: [Link naar artikel]
+👉 Ondertekent u de lancering van een door AI gebouwde app van een klant? Doorloop deze checklist eerst: https://launchstudio.eu/nl/blog/data-security-using-ai-tools-what-they-handle
 
 #AINativeFounder #LaunchStudio #Manifera #DataSecurity #WhiteLabel

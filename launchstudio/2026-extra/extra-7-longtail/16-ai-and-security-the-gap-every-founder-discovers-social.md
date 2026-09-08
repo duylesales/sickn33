@@ -14,6 +14,6 @@ At **LaunchStudio**, treating input validation as its own checklist item — dis
 
 Esmée's result: a polished, on-brand booking flow that finally checks the numbers it had been quietly trusting all along. 🚀
 
-👉 Does your booking or checkout flow trust the price your browser sends it? Find out here: [Link to article]
+👉 Does your booking or checkout flow trust the price your browser sends it? Find out here: https://launchstudio.eu/en/blog/ai-and-security-the-gap-every-founder-discovers-too-late
 
 #AINativeFounder #LaunchStudio #Manifera #InputValidation #AISecurity

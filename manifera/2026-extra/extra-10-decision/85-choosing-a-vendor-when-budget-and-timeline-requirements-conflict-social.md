@@ -12,6 +12,6 @@ The board wants it live before the next fundraising round closes. Finance capped
 
 Vendor honesty about this trade-off is a leading indicator of how they'll handle pressure later. Weight it heavily. 🎯
 
-👉 Read our full deep dive on choosing a vendor when budget and timeline conflict: [Link to article]
+👉 Read our full deep dive on choosing a vendor when budget and timeline conflict: https://www.manifera.com/blog/choosing-a-vendor-when-budget-and-timeline-requirements-conflict
 
 #COO #ProjectManagement #VendorSelection #SoftwareDelivery #Manifera

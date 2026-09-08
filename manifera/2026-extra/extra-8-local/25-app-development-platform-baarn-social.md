@@ -12,6 +12,6 @@ Manifera's founder has said the most expensive mistake he's watched growth compa
 
 A Portuguese manufacturer's third app came in faster than its second — because the platform, not luck, did the work. ⚡
 
-👉 Read our full deep dive on app development platform for Baarn businesses: [Link to article]
+👉 Read our full deep dive on app development platform for Baarn businesses: https://www.manifera.com/blog/app-development-platform-baarn
 
 #Baarn #Utrecht #AppDevelopment #CTO #PlatformArchitecture #TGooi #Manifera

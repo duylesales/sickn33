@@ -12,6 +12,6 @@ A schema that's worked fine for two years isn't proof the design was right — i
 
 The migration that takes a quarter was usually a decision made in five minutes two years earlier. 🛠️
 
-👉 Read our full deep dive on database design consulting: [Link to article]
+👉 Read our full deep dive on database design consulting: https://www.manifera.com/blog/database-design-consulting
 
 #DatabaseDesign #ScalableArchitecture #CTO #SoftwareEngineering #Manifera

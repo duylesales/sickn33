@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 via Manifera exact dit soort enterpris
 
 Drie maanden later vervingen we de frontend door Next.js en voltooide David de transformatie naar een volwaardige enterprise SaaS. (€18.500 (Backend Extractie & PostgreSQL) — binnen 25 werkdagen live). 🚀
 
-👉 Ontdek hoe wij dit oplossen: [Link naar artikel]
+👉 Ontdek hoe wij dit oplossen: https://launchstudio.eu/nl/blog/technical-debt-ai-mvp-refactoring
 
 #LaunchStudio #Manifera #AISaaS #TechnicalDebt #NoCodeToCode #MVPRefactoring #Bubble #Nextjs #PropTech #TechFounders

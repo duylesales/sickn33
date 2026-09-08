@@ -15,6 +15,6 @@ At **LaunchStudio**, our engineers, backed by Manifera's 120+ engineers and 160+
 
 His result: TeamGrip's team now operates on one explicit, shared definition of what their AI tooling is for. 🚀
 
-👉 Has your team quietly redefined its AI workflow without telling you? See our process: [Link to article]
+👉 Has your team quietly redefined its AI workflow without telling you? See our process: https://launchstudio.eu/en/blog/ai-for-software-engineering-teams-redefining
 
 #AINativeFounder #LaunchStudio #Manifera #EngineeringTeams #CodeReview

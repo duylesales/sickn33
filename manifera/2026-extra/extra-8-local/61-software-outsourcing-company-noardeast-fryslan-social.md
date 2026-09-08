@@ -12,6 +12,6 @@
 
 Your last software invoice shouldn't have been a surprise. The next one doesn't have to be. 📊
 
-👉 Read our full deep dive on software outsourcing company Noardeast-Fryslân: [Link to article]
+👉 Read our full deep dive on software outsourcing company Noardeast-Fryslân: https://www.manifera.com/blog/software-outsourcing-company-noardeast-fryslan
 
 #NoardeastFryslan #Friesland #SoftwareOutsourcing #CFO #ManufacturingIT #OffshoreDevelopment #Manifera

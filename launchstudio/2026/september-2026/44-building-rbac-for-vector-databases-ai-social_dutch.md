@@ -14,6 +14,6 @@ Bij **LaunchStudio** bouwen we sinds 2014 fijnmazige autorisatie-architecturen v
 
 LaunchStudio implementeerde Supabase RLS en pgvector metadata-filtering voor Penelope — klantdata werd 100% geïsoleerd en voldeed aan enterprise-beveiligingsnormen. (€2.100 (Database Tenancy Tuning Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u RBAC inricht op uw vectordatabase: [Link naar artikel]
+👉 Ontdek hoe u RBAC inricht op uw vectordatabase: https://launchstudio.eu/nl/blog/building-rbac-for-vector-databases-ai
 
 #AINativeFounder #LaunchStudio #Manifera #RBAC #VectorDatabaseSecurity #DataIsolation #Supabase #pgvector #AISaaS #StartupOpschalen

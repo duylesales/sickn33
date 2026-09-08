@@ -16,6 +16,6 @@ At **LaunchStudio**, backed by Manifera's 11+ years of production engineering, w
 
 Her result: a second outage two months later lasted 90 minutes with a status post within eight minutes and three updates — support messages that time: two, both saying thank you. 🚀
 
-👉 Get your incident communication plan in place before you need it: [Link to article]
+👉 Get your incident communication plan in place before you need it: https://launchstudio.eu/en/blog/telling-customers-when-something-is-broken
 
 #SaaS #CustomerSuccess #IncidentResponse #IndieHacker #LaunchStudio #Manifera

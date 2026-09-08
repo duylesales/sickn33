@@ -14,6 +14,6 @@ Bij **LaunchStudio** ontwerpen we sinds 2014 zero-trust, met schema's gevalideer
 
 Logans JSON-parsefouten daalden naar nul, wat zorgde voor vlekkeloze geautomatiseerde database-imports. (€1.100 (Structured Data Pakket) — productieklaar en binnen 3 werkdagen gedeployed). 🚀
 
-👉 Ontdek hoe u deterministische data uit taalmodellen haalt: [Link naar artikel]
+👉 Ontdek hoe u deterministische data uit taalmodellen haalt: https://launchstudio.eu/nl/blog/structuring-llm-output-with-json-schema
 
 #AINativeFounder #LaunchStudio #Manifera #JSONSchema #StructuredOutputs #Zod #TypeScript #NodeJS #AISaaS #StartupOpschalen

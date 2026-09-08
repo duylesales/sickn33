@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on logistics real time tracking digital twin: [Link to article]
+👉 Read our full guide on logistics real time tracking digital twin: https://www.manifera.com/blog/logistics-real-time-tracking-digital-twin
 
 #LogisticsTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

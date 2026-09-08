@@ -11,6 +11,6 @@ At **Manifera**, we eradicate Key-Person Risk through our **Autonomous Pod** mod
 ✅ Zero friction if a team member transitions—the Pod absorbs the knowledge! 🛡️
 
 Stop relying on heroes. Start scaling with structurally sound engineering units! 🚀
-👉 The architecture of the Autonomous Pod model: [Link to article]
+👉 The architecture of the Autonomous Pod model: https://www.manifera.com/blog/custom-software-developer
 
 #SoftwareEngineering #TechLeadership #OffshoreDevelopment #CTO #EnterpriseArchitecture #VietnamTech #AmsterdamBusiness #Manifera

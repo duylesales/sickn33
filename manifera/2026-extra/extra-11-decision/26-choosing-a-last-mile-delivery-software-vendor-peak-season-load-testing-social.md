@@ -12,6 +12,6 @@ Every last-mile delivery platform looks great at 200 orders an hour. The questio
 
 The vendor that wins a calm pilot isn't automatically the vendor that survives December. Load-test before you sign. 🎯
 
-👉 Read our full deep dive on peak-season load testing for last-mile vendors: [Link to article]
+👉 Read our full deep dive on peak-season load testing for last-mile vendors: https://www.manifera.com/blog/choosing-a-last-mile-delivery-software-vendor-peak-season-load-testing
 
 #LastMileDelivery #Logistics #PeakSeason #ProductManagement #Ecommerce #Manifera

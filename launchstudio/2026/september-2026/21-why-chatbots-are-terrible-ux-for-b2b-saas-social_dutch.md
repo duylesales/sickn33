@@ -14,6 +14,6 @@ Bij **LaunchStudio** lossen we sinds 2014 dit soort interactie-uitdagingen op vi
 
 Voor Henry verving het team het chatscherm door een interactief dashboard, waardoor gebruikersregistratie en retentie met 35% stegen. (€2.200 (Dashboard Refactoring Pakket) — productieklaar en binnen 5 werkdagen gedeployed). 🚀
 
-👉 Ontdek waarom "Onzichtbare AI" de toekomst is: [Link naar artikel]
+👉 Ontdek waarom "Onzichtbare AI" de toekomst is: https://launchstudio.eu/nl/blog/why-chatbots-are-terrible-ux-for-b2b-saas
 
 #AINativeFounder #LaunchStudio #Manifera #InvisibleAI #ChatbotUX #ProductDesign #UIDesign #AISaaS #StartupOpschalen

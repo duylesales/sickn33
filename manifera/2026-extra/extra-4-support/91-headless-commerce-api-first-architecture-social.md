@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on headless commerce api first: [Link to article]
+👉 Read our full architectural deep dive on headless commerce api first: https://www.manifera.com/blog/headless-commerce-api-first-architecture
 
 #ECommerce #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

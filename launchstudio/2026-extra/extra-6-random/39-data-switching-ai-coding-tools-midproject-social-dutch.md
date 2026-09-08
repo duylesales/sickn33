@@ -15,6 +15,6 @@ Bij **LaunchStudio** behandelt ons engineeringcentrum in Ho Chi Minh-stad een ge
 
 Haar resultaat: LaunchStudio herstelde het merendeel van Liekes verloren historische records uit haar originele back-ups en corrigeerde de schema-mismatch die het verlies veroorzaakte. 🚀
 
-👉 Overweegt u halverwege een build van AI-codeertool te wisselen? Lees dit eerst: [Link naar artikel]
+👉 Overweegt u halverwege een build van AI-codeertool te wisselen? Lees dit eerst: https://launchstudio.eu/nl/blog/data-switching-ai-coding-tools-midproject
 
 #AINativeFounder #LaunchStudio #Manifera #DataMigration #ProductionReady

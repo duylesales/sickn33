@@ -16,6 +16,6 @@ Bij **LaunchStudio** zijn we een white-label-productiepartner voor precies dit �
 
 Zijn resultaat: won de opdracht tegen een eerlijke prijs, en leidt nu elke AI-native klant door audit-eerst. 🚀
 
-👉 Verken een white-label-partnerschap voor jouw AI-native klanten: [Link naar artikel]
+👉 Verken een white-label-partnerschap voor jouw AI-native klanten: https://launchstudio.eu/nl/blog/agency-playbook-taking-client-vibe-coded-apps-live
 
 #Agency #LaunchStudio #Manifera #WhiteLabel #VibeCoding

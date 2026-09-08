@@ -12,6 +12,6 @@ Your MES sits at the exact boundary between your production floor and your corpo
 
 MES selection isn't just a feature comparison — it's a decision about how much OT/IT risk you're willing to accept. 🎯
 
-👉 Read our full deep dive on MES OT/IT integration risk: [Link to article]
+👉 Read our full deep dive on MES OT/IT integration risk: https://www.manifera.com/blog/manufacturing-execution-system-vendors-ot-it-integration-risk
 
 #ManufacturingTech #MES #OTSecurity #IndustrialIoT #CTO #Manifera

@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full architectural deep dive on manufacturing opcua connectivity: [Link to article]
+👉 Read our full architectural deep dive on manufacturing opcua connectivity: https://www.manifera.com/blog/manufacturing-opcua-connectivity-architecture
 
 #IndustrialTech #CustomSoftware #SoftwareArchitecture #CTO #SoftwareEngineering #TechLeadership #Manifera

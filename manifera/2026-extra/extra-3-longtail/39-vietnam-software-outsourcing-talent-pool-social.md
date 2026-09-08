@@ -12,6 +12,6 @@
 
 Stop compromising on engineering rigor. Build software designed for production from day one! 🛡️
 
-👉 Read our full guide on vietnam software outsourcing talent pool: [Link to article]
+👉 Read our full guide on vietnam software outsourcing talent pool: https://www.manifera.com/blog/vietnam-software-outsourcing-talent-pool
 
 #CustomSoftware #SoftwareEngineering #CTO #TechLeadership #SoftwareDevelopment #Manifera

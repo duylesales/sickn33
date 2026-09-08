@@ -16,6 +16,6 @@ Bij **LaunchStudio** is gestructureerde, dienstspecifieke foutafhandeling standa
 
 Zijn resultaat: een bevroren scherm werd "synchronisatie is tijdelijk traag, opgeslagen en synchroniseert automatisch" — stille storing veranderd in vertrouwenbehoudende transparantie. 🚀
 
-👉 Laat je foutpaden testen, niet alleen je happy path: [Link naar artikel]
+👉 Laat je foutpaden testen, niet alleen je happy path: https://launchstudio.eu/nl/blog/structured-error-handling-what-ai-coding-tool-skipped
 
 #Foutafhandeling #IndieHacker #LaunchStudio #Manifera #VibeCoding #SaaS

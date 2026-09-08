@@ -14,6 +14,6 @@ At LaunchStudio, we treat missing context as a finding worth reporting, not a ga
 
 Sofia regained full, verified ownership of every critical account and closed three unknown security gaps before any client was affected. 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/choosing-partner-audit-inherited-cofounder-code
 
 #LaunchStudio #Manifera #AISaaS #CodeAudit #StartupFounders

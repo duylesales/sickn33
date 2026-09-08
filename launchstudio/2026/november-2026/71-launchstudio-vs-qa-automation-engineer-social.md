@@ -14,6 +14,6 @@ At LaunchStudio, we've built regression suites against Lovable, Bolt, and Cursor
 
 Dennis's next three releases shipped with zero regression incidents, cutting pre-release testing from half a day to under ten minutes. (€2,600 (Launch & Grow Package) — 9 business days.) 🚀
 
-👉 See how we fixed it: [Link to article]
+👉 See how we fixed it: https://launchstudio.eu/en/blog/launchstudio-vs-qa-automation-engineer
 
 #LaunchStudio #Manifera #AISaaS #QAAutomation #RegressionTesting

@@ -12,6 +12,6 @@ Five months. That's the median time a Noord-Holland scale-up spends trying to fi
 
 Stop losing sprints to empty seats. Fill the capacity, not just the headcount. ⚙️
 
-👉 Read our full deep dive on bespoke application development company Velsen: [Link to article]
+👉 Read our full deep dive on bespoke application development company Velsen: https://www.manifera.com/blog/bespoke-application-development-company-velsen
 
 #Velsen #IJmuiden #NoordHolland #ScaleUp #VPEngineering #SoftwareDevelopment #Manifera

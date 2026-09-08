@@ -15,6 +15,6 @@ Bij **LaunchStudio** ondersteunen de meer dan 160 opgeleverde projecten van Mani
 
 Dockflow heeft in de vier maanden sinds de reparatie geen enkele ongeplande downtime meer gehad. 🚀
 
-👉 Gebruikt u dev AI-tools om snel te lanceren? Begroot de productielaag voordat deze uitvalt: [Link naar artikel]
+👉 Gebruikt u dev AI-tools om snel te lanceren? Begroot de productielaag voordat deze uitvalt: https://launchstudio.eu/nl/blog/dev-ai-dordrecht
 
 #AINativeFounder #LaunchStudio #Manifera #DevAI #Dordrecht

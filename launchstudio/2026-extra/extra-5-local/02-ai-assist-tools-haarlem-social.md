@@ -15,6 +15,6 @@ At **LaunchStudio**, we're backed by Manifera's 120+ engineers and 160+ delivere
 
 Bloomroute switched to live payment keys, added the missing email pipeline, and reprocessed every missed order within four business days, with zero payment failures since. 🚀
 
-👉 Non-technical founder about to launch on Lovable? Have us check the plumbing first: [Link to article]
+👉 Non-technical founder about to launch on Lovable? Have us check the plumbing first: https://launchstudio.eu/en/blog/ai-assist-tools-haarlem
 
 #AINativeFounder #LaunchStudio #Manifera #AIAssist #Haarlem

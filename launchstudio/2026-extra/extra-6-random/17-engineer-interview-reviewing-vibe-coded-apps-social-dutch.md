@@ -15,6 +15,6 @@ Bij **LaunchStudio** brengt Manifera meer dan 11 jaar productie-engineeringervar
 
 Zijn resultaat: KlantStroom verwerkt nu opnieuw geleverde webhooks veilig, waarbij het aanmaken van duplicaten structureel onmogelijk is in plaats van slechts onwaarschijnlijk. 🚀
 
-👉 Zeker dat uw vibe-coded app productieklaar is omdat het elke test doorstond die u bedacht: [Link naar artikel]
+👉 Zeker dat uw vibe-coded app productieklaar is omdat het elke test doorstond die u bedacht: https://launchstudio.eu/nl/blog/engineer-interview-reviewing-vibe-coded-apps
 
 #AINativeFounder #LaunchStudio #Manifera #VibeCoding #ProductionReady

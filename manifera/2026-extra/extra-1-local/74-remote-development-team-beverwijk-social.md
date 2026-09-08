@@ -12,6 +12,6 @@
 
 Accountability that scales — without consuming your calendar. 🛡️
 
-👉 Read our full deep dive on remote development team beverwijk: [Link to article]
+👉 Read our full deep dive on remote development team beverwijk: https://www.manifera.com/blog/remote-development-team-beverwijk
 
 #Beverwijk #NoordHolland #IJmond #IndustrialTech #VPEngineering #RemoteTeams #Manifera
